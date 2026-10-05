@@ -710,7 +710,10 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {(lesson.lesson_key === "bhw-benefits" || lesson.lesson_key === "bhw-legal-role" || lesson.lesson_key === "bhs-resources" || lesson.lesson_key === "bhs-improvement") ? ui(
+              {lesson.lesson_key === "bhw-benefits" ? ui(
+                "Tinatayang 10–12 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at hiwalay ang gabay na pagsasanay.",
+                "Estimated 10–12 minutes for independent study; the optional story is additional and facilitated practice is separate.",
+              ) : (lesson.lesson_key === "bhw-legal-role" || lesson.lesson_key === "bhs-resources" || lesson.lesson_key === "bhs-improvement") ? ui(
                 "Tinatayang 10 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at hiwalay ang gabay na pagsasanay.",
                 "Estimated 10 minutes for independent study; the optional story is additional and facilitated practice is separate.",
               ) : ui(

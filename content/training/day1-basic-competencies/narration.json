@@ -12059,134 +12059,962 @@
     "bhw-benefits": {
       "module": "04-ra7883",
       "sections": {
-        "section-3": {
+        "benefit-verification": {
           "en": {
-            "src": "/training/audio/04-ra7883/bhw-benefits/section-3.en.eb3060b56c9b.mp3",
+            "src": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.en.b914c725592c.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "eb3060b56c9b2933eca5cfa69131ab5bb1301dcb6b2a20496b4614311dcb0cce",
-            "sha256": "91c1553e2f17d23e85de08e89cbb71273fbb5f39f1a3d0cd87678f027c842ac2",
-            "duration_seconds": 96.496,
+            "content_hash": "b914c725592cb3f908a9dfbb32f8468f3d49193464ee822b237717969a2eebf4",
+            "sha256": "00856e25238b12ae6d0d3f6f229359fb3523df9542dc47a1f341e25137203fcc",
+            "duration_seconds": 74.005,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "The benefits under RA 7883",
+                "text": "Demi’s specific verification question",
                 "start_ms": 0,
-                "end_ms": 3920
+                "end_ms": 2920
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "RA 7883 names specific benefits a BHW may receive: hazard allowance, subsistence allowance (for BHWs who serve at isolated barangay health stations), training and career enrichment programs, civil service eligibility, free legal services, and priority access to loans.",
-                "start_ms": 4220,
-                "end_ms": 29020
+                "text": "Demi explains: “RA 7883 has six categories with different conditions.",
+                "start_ms": 3220,
+                "end_ms": 9300
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "The amounts are set locally: the hazard allowance by the local health board and the local peace and order council, and the subsistence allowance by the LGU.",
-                "start_ms": 29320,
-                "end_ms": 39960
+                "text": "Registration where service is rendered is required, and one credential does not establish qualification for every benefit.”",
+                "start_ms": 9600,
+                "end_ms": 18400
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "There is a condition before becoming eligible for these: a BHW must be registered with the local health board of the city or municipality where they render service.",
-                "start_ms": 40260,
-                "end_ms": 52260
+                "text": "She asks her supervisor or RHU: “For hazard allowance, who is the right contact to verify accreditation and registration, the required exposure evidence, validation by proper authorities, and local review and approval?”",
+                "start_ms": 18700,
+                "end_ms": 34780
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "There is also a limit: the total number of BHWs nationwide must not exceed one percent (1%) of the country's population, and the DOH sets the ideal number of BHWs per household — so registration is not simply given to anyone, and getting it right matters.",
-                "start_ms": 52560,
-                "end_ms": 72920
+                "text": "The RHU can help identify the contact; it does not replace the statutory authorities.",
+                "start_ms": 35080,
+                "end_ms": 41680
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "These benefits have specific conditions and administrative procedures.",
-                "start_ms": 73220,
-                "end_ms": 78380
+                "text": "For legal services, the case must connect with BHW duties and PAO is the named provider; for eligibility, CSC is the relevant office.",
+                "start_ms": 41980,
+                "end_ms": 52580
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Confirm eligibility, documentation and any locally funded allowance with the local health board; do not promise automatic or uniform payment.",
-                "start_ms": 78680,
-                "end_ms": 89840
+                "text": "Demi uses only a blank question sheet.",
+                "start_ms": 52880,
+                "end_ms": 55920
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "It is not an official form, application, approval or proof of her status.",
+                "start_ms": 56220,
+                "end_ms": 61900
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Use fictional cases in practice; no one needs to share private records or a personal benefit-receipt history.",
+                "start_ms": 62200,
+                "end_ms": 69120
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "These benefits aren't automatic — they depend on proper registration with the local health board.",
-                "start_ms": 90140,
-                "end_ms": 96420
+                "text": "Ask a specific question without promising money or an outcome.",
+                "start_ms": 69420,
+                "end_ms": 73940
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/04-ra7883/bhw-benefits/section-3.fil.08b382f14bc6.mp3",
+            "src": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.fil.27ba61e0b912.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "08b382f14bc6ab431f2f0c3cc5cfe5c016557584c1e73a219c004fa93b847b6a",
-            "sha256": "66e0b316cf3f48ca4dd4c20aa4d2e2f4b1582733328008684561cb374571c1e0",
-            "duration_seconds": 107.964,
+            "content_hash": "27ba61e0b912325d85cbc32f40c60a45e7e03c91eef465f65c0a526c8670b6f0",
+            "sha256": "75d80f048872d194dcf2ec56a404296ee24eef408f1d6e23fba6661d2b8bad85",
+            "duration_seconds": 77.845,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Ang mga benepisyo sa ilalim ng RA 7883",
+                "text": "Ang tiyak na tanong ni Demi",
                 "start_ms": 0,
-                "end_ms": 4720
+                "end_ms": 2000
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Kasama sa RA 7883 ang mga partikular na benepisyong maaaring matanggap ng isang BHW: hazard allowance, subsistence allowance (para sa BHW na naglilingkod sa isolated o liblib na barangay health station), mga programa sa pagsasanay at career enrichment, civil service eligibility, libreng legal services, at priority access sa mga loan o pautang.",
-                "start_ms": 5020,
-                "end_ms": 34900
+                "text": "Ipinaliwanag ni Demi: “May anim na kategorya sa RA 7883, pero magkakaiba ang kondisyon.",
+                "start_ms": 2300,
+                "end_ms": 9820
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Lokal na itinatakda ang halaga: ang hazard allowance ng local health board at ng local peace and order council, at ang subsistence allowance ng LGU.",
-                "start_ms": 35200,
-                "end_ms": 46320
+                "text": "Kailangan ang rehistrasyon kung saan naglilingkod, at hindi sapat ang isang credential para sa lahat ng benepisyo.”",
+                "start_ms": 10120,
+                "end_ms": 17920
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "May kondisyon bago maging eligible dito: kailangang rehistrado ang BHW sa local health board ng lungsod o munisipyo kung saan siya nagbibigay ng serbisyo.",
-                "start_ms": 46620,
-                "end_ms": 58620
+                "text": "Tanong niya sa supervisor o RHU: “Para sa hazard allowance, sino ang tamang contact upang matiyak ang akreditasyon at rehistrasyon, ang kailangang ebidensiya ng exposure, ang validation ng tamang awtoridad, at ang lokal na review at pag-apruba?”",
+                "start_ms": 18220,
+                "end_ms": 35260
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "May limitasyon din: ang kabuuang bilang ng mga BHW sa buong bansa ay hindi dapat lumampas sa isang porsiyento (1%) ng populasyon ng bansa, at ang DOH ang nagtatakda ng angkop na bilang ng BHW kada dami ng sambahayan — kaya't hindi basta-basta tinatanggap ang lahat, at mahalaga ang tamang rehistrasyon.",
-                "start_ms": 58920,
-                "end_ms": 82040
+                "text": "Maaaring tumulong ang RHU sa pag-alam ng contact; hindi nito pinapalitan ang mga awtoridad sa batas.",
+                "start_ms": 35560,
+                "end_ms": 42600
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "May tiyak na kondisyon at prosesong administratibo ang mga benepisyong ito.",
-                "start_ms": 82340,
-                "end_ms": 87380
+                "text": "Kung legal services ang tanong, kaugnay ng tungkulin ang kaso at PAO ang tinutukoy na provider; kung eligibility, CSC ang kaugnay na tanggapan.",
+                "start_ms": 42900,
+                "end_ms": 53700
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Tiyakin sa local health board ang pagiging kwalipikado, dokumento, at allowance na lokal ang pondo; huwag mangako ng awtomatiko o pare-parehong bayad.",
-                "start_ms": 87680,
-                "end_ms": 98440
+                "text": "Blankong question sheet lamang ang ginagamit ni Demi.",
+                "start_ms": 54000,
+                "end_ms": 57520
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hindi ito opisyal na form, aplikasyon, approval o patunay ng kaniyang katayuan.",
+                "start_ms": 57820,
+                "end_ms": 63700
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Gumamit ng kathang-isip na kaso sa pagsasanay; hindi kailangang magbahagi ng pribadong rekord o kasaysayan ng pagtanggap ng benepisyo.",
+                "start_ms": 64000,
+                "end_ms": 73200
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang mga benepisyong ito ay hindi awtomatiko — nakasalalay ito sa tamang rehistrasyon sa local health board.",
-                "start_ms": 98740,
-                "end_ms": 107900
+                "text": "Magtanong nang tiyak at walang pangakong pera o resulta.",
+                "start_ms": 73500,
+                "end_ms": 77780
+              }
+            ]
+          }
+        },
+        "benefits-application-check": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.en.247d74cb5442.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "247d74cb544255e0c63fa1af2fc04e47c8915d21fe735a07cf54c0bfc6a50f64",
+            "sha256": "27d3169fdde2c0f3f054986d2501298e415b253446240c4bc1ab7ce3e370d5c9",
+            "duration_seconds": 42.397,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Choose an explanation with an appropriate step",
+                "start_ms": 0,
+                "end_ms": 3240
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Demi hears that every BHW receives the same allowance.",
+                "start_ms": 3540,
+                "end_ms": 8260
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Someone asks about hazard allowance, but status, exposure and local approval are still unverified.",
+                "start_ms": 8560,
+                "end_ms": 15600
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "What explanation and first step fit best?",
+                "start_ms": 15900,
+                "end_ms": 19420
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Choose the answer naming the benefit, its specific conditions and appropriate verification.",
+                "start_ms": 19720,
+                "end_ms": 27000
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Then explain why the other two choices are insufficient.",
+                "start_ms": 27300,
+                "end_ms": 30860
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Finishing the online lesson is separate from a facilitator observing this competency.",
+                "start_ms": 31160,
+                "end_ms": 37320
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Explain the condition and choose an appropriate verification step.",
+                "start_ms": 37620,
+                "end_ms": 42340
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.fil.5d42dd79acc1.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "5d42dd79acc134bbcd02a6cf76e8d21b031be9278bf151f886cd3477f64b0f9c",
+            "sha256": "55dfcc76d4b82e2a736553f86b392f9b51ddec8f0cf430652dfdf9823c8d98af",
+            "duration_seconds": 44.8,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Piliin ang paliwanag na may angkop na hakbang",
+                "start_ms": 0,
+                "end_ms": 3320
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Narinig ni Demi na pare-pareho raw ang allowance ng lahat ng BHW.",
+                "start_ms": 3620,
+                "end_ms": 8540
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May nagtanong tungkol sa hazard allowance, pero hindi pa verified ang katayuan, exposure o lokal na pag-apruba.",
+                "start_ms": 8840,
+                "end_ms": 17240
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ano ang pinakamainam na paliwanag at unang hakbang?",
+                "start_ms": 17540,
+                "end_ms": 21540
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Piliin ang sagot na may benepisyo, tiyak na kondisyon at tamang verification.",
+                "start_ms": 21840,
+                "end_ms": 28000
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Pagkatapos, ipaliwanag kung bakit hindi sapat ang dalawang ibang pagpipilian.",
+                "start_ms": 28300,
+                "end_ms": 33540
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Hiwalay ang pagtatapos ng online lesson sa pagmamasid ng facilitator sa kakayahang ito.",
+                "start_ms": 33840,
+                "end_ms": 39800
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ipaliwanag ang kondisyon at piliin ang naaangkop na verification.",
+                "start_ms": 40100,
+                "end_ms": 44740
+              }
+            ]
+          }
+        },
+        "benefits-question": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/benefits-question.en.a64e75cf9fee.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "a64e75cf9fee09c9d701efb3ef7cfa1f61b03a450f083150d828ce5ba40b957a",
+            "sha256": "8b63d4e0b64ea568e41c2a88521c4f24ca59dd79ce71676cb509ceeac6f5d80c",
+            "duration_seconds": 45.897,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Are allowances automatically identical?",
+                "start_ms": 0,
+                "end_ms": 3360
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "In this fictional story, someone tells Demi: “Every BHW gets the same allowance automatically.”",
+                "start_ms": 3660,
+                "end_ms": 10820
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "She does not know whether this is correct.",
+                "start_ms": 11120,
+                "end_ms": 13800
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Her accreditation and registration have not been verified either.",
+                "start_ms": 14100,
+                "end_ms": 18060
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Instead of promising money, she asks which benefit they mean and which conditions need checking.",
+                "start_ms": 18360,
+                "end_ms": 25040
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "RA 7883 provides six categories of benefits.",
+                "start_ms": 25340,
+                "end_ms": 30260
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "They have different purposes, conditions and responsible authorities.",
+                "start_ms": 30560,
+                "end_ms": 35040
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "The story video is optional; you can complete Read or Slides without watching it.",
+                "start_ms": 35340,
+                "end_ms": 40940
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Name the benefit and verify its conditions before promising anything.",
+                "start_ms": 41240,
+                "end_ms": 45840
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/benefits-question.fil.c6d00b3bfd9d.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "c6d00b3bfd9df06323c3850b31b0220b2a3e6dbfe6ed08e131ebfe7e86bf34a7",
+            "sha256": "72227bdbd3465fd3369165e706f8ac7dd9d099cfae0c6395acf77c32c7c29256",
+            "duration_seconds": 48.013,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Awtomatiko bang pare-pareho ang allowance?",
+                "start_ms": 0,
+                "end_ms": 3360
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa kathang-isip na kuwento, may nagsabi kay Demi: “Pare-pareho at awtomatiko ang allowance ng lahat ng BHW.”",
+                "start_ms": 3660,
+                "end_ms": 11140
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Hindi niya alam kung tama ito.",
+                "start_ms": 11440,
+                "end_ms": 13680
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi pa rin natitiyak ang kaniyang akreditasyon at rehistrasyon.",
+                "start_ms": 13980,
+                "end_ms": 18100
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Sa halip na mangako ng pera, itinanong niya kung anong benepisyo ang tinutukoy at anong kondisyon ang dapat alamin.",
+                "start_ms": 18400,
+                "end_ms": 25840
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ang RA 7883 ay may anim na kategorya ng benepisyo.",
+                "start_ms": 26140,
+                "end_ms": 31180
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Magkakaiba ang layunin, kondisyon at awtoridad na kaugnay ng mga ito.",
+                "start_ms": 31480,
+                "end_ms": 37000
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Opsyonal ang kuwentong video; maaari mong tapusin ang Read o Slides nang hindi ito pinapanood.",
+                "start_ms": 37300,
+                "end_ms": 43500
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Pangalanan ang benepisyo at tiyakin ang kondisyon bago mangako.",
+                "start_ms": 43800,
+                "end_ms": 47960
+              }
+            ]
+          }
+        },
+        "compare-allowances": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.en.07bda07be88f.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "07bda07be88fa523d70a40b0753e57ae68a9d464213ec828a8f76e6a29e6b653",
+            "sha256": "57a93243a65bfe921017cfa421db80883317fafd87dd4308621e0ea88f93c9a4",
+            "duration_seconds": 75.99,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Different conditions for two allowances",
+                "start_ms": 0,
+                "end_ms": 2960
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Card A: a fictional volunteer BHW may face risk in the workplace while performing duties.",
+                "start_ms": 3260,
+                "end_ms": 9700
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Under section 6(a), hazard allowance concerns foreseeable but unavoidable danger affecting health or life during duty, validated by the proper authorities.",
+                "start_ms": 10000,
+                "end_ms": 21800
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "The local health board and local peace and order council of the LGU determine the amount.",
+                "start_ms": 22100,
+                "end_ms": 27100
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Calling a place “dangerous” does not let us validate the exposure or set payment ourselves.",
+                "start_ms": 27400,
+                "end_ms": 34280
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Card B: a fictional BHW serves within an isolated barangay health station to make services available at any and all times.",
+                "start_ms": 34580,
+                "end_ms": 44500
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Under section 6(b), subsistence allowance is equivalent to meals taken during duty, computed according to prevailing circumstances determined by the LGU.",
+                "start_ms": 44800,
+                "end_ms": 55280
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "A distant home alone is not the statutory condition.",
+                "start_ms": 55580,
+                "end_ms": 59380
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "A and B need different verification questions.",
+                "start_ms": 59680,
+                "end_ms": 63400
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Their status, validation and approved local amounts are unknown; we promise no receipt of benefits.",
+                "start_ms": 63700,
+                "end_ms": 69940
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Check the specific service and conditions; do not assume one fixed amount.",
+                "start_ms": 70240,
+                "end_ms": 75920
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.fil.6fb8f0acff78.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "6fb8f0acff780316eba891d766af36fdd6799521b37cf7df9c4662c7c50da3be",
+            "sha256": "0199e16bd55897daf884534bc564ce3fe2f1312d5f2edd1b1ae9a519a69468ca",
+            "duration_seconds": 89.078,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Magkaibang kondisyon ng dalawang allowance",
+                "start_ms": 0,
+                "end_ms": 3240
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Card A: isang kathang-isip na boluntaryong BHW ang maaaring malantad sa panganib sa lugar ng trabaho habang ginagampanan ang tungkulin.",
+                "start_ms": 3540,
+                "end_ms": 13260
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Sa seksiyon 6(a), ang hazard allowance ay para sa foreseeable ngunit unavoidable na panganib na makaaapekto sa kalusugan o buhay habang nagtatrabaho, na dapat i-validate ng tamang awtoridad.",
+                "start_ms": 13560,
+                "end_ms": 27680
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Local health board at local peace and order council ng LGU ang magtatakda ng halaga.",
+                "start_ms": 27980,
+                "end_ms": 34300
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Hindi sapat ang label na “mapanganib” upang tayo ang magpatunay o magtakda ng bayad.",
+                "start_ms": 34600,
+                "end_ms": 41040
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Card B: isang kathang-isip na BHW ang naglilingkod sa loob ng isolated barangay health station upang maibigay ang serbisyo anumang oras.",
+                "start_ms": 41340,
+                "end_ms": 52020
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Sa seksiyon 6(b), ang subsistence allowance ay katumbas ng mga pagkaing kinakain sa panahon ng tungkulin, na kinukuwenta ayon sa umiiral na kalagayang itinatakda ng LGU.",
+                "start_ms": 52320,
+                "end_ms": 65840
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Ang “malayo ang bahay” lamang ay hindi ang kondisyon sa batas.",
+                "start_ms": 66140,
+                "end_ms": 70180
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Magkaibang tanong sa verification ang kailangan ng A at B.",
+                "start_ms": 70480,
+                "end_ms": 74560
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Hindi natin alam ang kanilang katayuan, validation o aprubadong lokal na halaga; walang pangako ng pagtanggap.",
+                "start_ms": 74860,
+                "end_ms": 83900
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Tingnan ang tiyak na serbisyo at kondisyon; huwag magtakda ng iisang halaga.",
+                "start_ms": 84200,
+                "end_ms": 89000
+              }
+            ]
+          }
+        },
+        "registration-and-conditions": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.en.7447399efe22.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "7447399efe229802fa196aa4c7058a37f84a5b868811201ff1363fc71e582e33",
+            "sha256": "db9ba7d7168e873297e16a501476c7b55ceb505634583704c80a0a0f647b7d60",
+            "duration_seconds": 77.087,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Registration and further conditions",
+                "start_ms": 0,
+                "end_ms": 3040
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Section 4 requires registration with the local health board of the city or municipality where service is rendered to receive the Act’s benefits and incentives.",
+                "start_ms": 3340,
+                "end_ms": 14500
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "It also provides appropriate proof of accreditation.",
+                "start_ms": 14800,
+                "end_ms": 18280
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Accreditation and registration are related but distinct.",
+                "start_ms": 18580,
+                "end_ms": 23020
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Section 6 refers to accredited BHWs actively and regularly performing their duties, alongside the conditions of each benefit.",
+                "start_ms": 23320,
+                "end_ms": 32400
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Under section 5, DOH determines the ideal ratio of BHWs to households.",
+                "start_ms": 32700,
+                "end_ms": 39780
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "The total number of BHWs nationwide must not exceed one percent of the total population.",
+                "start_ms": 40080,
+                "end_ms": 46360
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "This gives us no basis to invent a barangay quota or decide Demi’s qualification.",
+                "start_ms": 46660,
+                "end_ms": 53220
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Section 7 requires local health board review and approval for benefits using local funds.",
+                "start_ms": 53520,
+                "end_ms": 60120
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Not receiving a benefit does not prove that a BHW did something wrong or failed to register.",
+                "start_ms": 60420,
+                "end_ms": 66980
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Check the applicable conditions and local implementation without blame.",
+                "start_ms": 67280,
+                "end_ms": 72200
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Registration is required; it does not guarantee every benefit.",
+                "start_ms": 72500,
+                "end_ms": 77020
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.fil.9f9fcafea029.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "9f9fcafea029ab53771e404db4ba89e8bba8db642c4a2f132b453b19bae91278",
+            "sha256": "c59b1784d1d33d977c5c040ce3e112b64b70e7ee6892aef23f723d06fa3c95f6",
+            "duration_seconds": 86.962,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Rehistrasyon at mga karagdagang kondisyon",
+                "start_ms": 0,
+                "end_ms": 3800
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa seksiyon 4, kailangang magparehistro sa local health board ng lungsod o munisipyo kung saan naglilingkod upang makinabang sa mga benepisyo at insentibo ng batas.",
+                "start_ms": 4100,
+                "end_ms": 15380
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May angkop na patunay ng akreditasyon.",
+                "start_ms": 15680,
+                "end_ms": 18760
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Magkaugnay ngunit hindi mapagpapalit ang akreditasyon at rehistrasyon.",
+                "start_ms": 19060,
+                "end_ms": 24620
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ang seksiyon 6 ay tumutukoy sa mga akreditadong BHW na aktibo at regular na gumaganap ng kanilang tungkulin, kasama ang partikular na kondisyon ng bawat benepisyo.",
+                "start_ms": 24920,
+                "end_ms": 36240
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Sa seksiyon 5, DOH ang magtatakda ng ideal na ratio ng BHW sa bilang ng mga sambahayan.",
+                "start_ms": 36540,
+                "end_ms": 43700
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ang kabuuang bilang ng BHW sa buong bansa ay hindi dapat lumampas sa isang porsiyento ng kabuuang populasyon.",
+                "start_ms": 44000,
+                "end_ms": 51720
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hindi ito batayan upang gumawa tayo ng quota sa isang barangay o hulaan kung kwalipikado si Demi.",
+                "start_ms": 52020,
+                "end_ms": 58460
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Sa seksiyon 7, ang benepisyong gagamit ng lokal na pondo ay kailangang repasuhin at aprubahan ng local health board.",
+                "start_ms": 58760,
+                "end_ms": 67480
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Kung hindi pa natatanggap ang benepisyo, hindi nito pinatutunayang nagkamali o hindi nagparehistro ang BHW.",
+                "start_ms": 67780,
+                "end_ms": 75780
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Alamin ang naaangkop na kondisyon at lokal na pagpapatupad nang walang pagsisi.",
+                "start_ms": 76080,
+                "end_ms": 81440
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Kailangan ang rehistrasyon; hindi nito ginagarantiya ang bawat benepisyo.",
+                "start_ms": 81740,
+                "end_ms": 86900
+              }
+            ]
+          }
+        },
+        "section-3": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/section-3.en.2a1065f7d96c.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "2a1065f7d96c18afc5756edb1540eb421c96b12d726b6ceeb6c787cea2ab3449",
+            "sha256": "129e18c1e368a528ccc25d20d811f20954f53c40df96ae855d096da4ffb88e2f",
+            "duration_seconds": 74.998,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Six benefit categories",
+                "start_ms": 0,
+                "end_ms": 2520
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Section 6 of RA 7883 includes hazard allowance and subsistence allowance.",
+                "start_ms": 2820,
+                "end_ms": 9460
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Each has its own conditions; we will compare them on a later screen.",
+                "start_ms": 9760,
+                "end_ms": 13920
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "It also includes training, education and career enrichment programs: opportunities for continuing education, training and other educational support.",
+                "start_ms": 14220,
+                "end_ms": 24860
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "The Act also provides tuition scholarship benefits in state colleges for one child of a BHW unable to use those programs.",
+                "start_ms": 25160,
+                "end_ms": 33800
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Civil service eligibility is a separate category with its own CSC qualifications and application; lesson 1.4.3 covers it.",
+                "start_ms": 34100,
+                "end_ms": 43740
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Free legal representation and consultation through the Public Attorney’s Office cover cases arising from or connected with BHW duties, including coercion or interference.",
+                "start_ms": 44040,
+                "end_ms": 55200
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Preferential access to loans concerns organized BHW groups with community-based income-generating projects supporting health programs.",
+                "start_ms": 55500,
+                "end_ms": 65580
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "It is not a promise of a loan to every individual.",
+                "start_ms": 65880,
+                "end_ms": 69760
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "There are six categories; they are not all monthly payments or personal loans.",
+                "start_ms": 70060,
+                "end_ms": 74940
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-benefits/section-3.fil.ab61c1531cf7.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "ab61c1531cf71c46c27cd17ec54ee5fa428bb41990e0c046c837013fac8378c4",
+            "sha256": "9d2a3d1e09b89be35048781c6b3ac2dc69ac249d9bfa3119967b82303c769c3c",
+            "duration_seconds": 86.256,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Anim na kategorya ng benepisyo",
+                "start_ms": 0,
+                "end_ms": 2760
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa seksiyon 6 ng RA 7883, kabilang ang hazard allowance at subsistence allowance.",
+                "start_ms": 3060,
+                "end_ms": 10300
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May sariling kondisyon ang bawat isa; ihahambing natin ang mga ito sa susunod na screen.",
+                "start_ms": 10600,
+                "end_ms": 16640
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Kasama rin ang training, education at career enrichment programs: mga pagkakataon sa patuloy na pag-aaral, pagsasanay at iba pang suportang pang-edukasyon.",
+                "start_ms": 16940,
+                "end_ms": 29260
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "May nakasaad ding scholarship sa tuition sa state colleges para sa isang anak ng BHW na hindi makikinabang sa mga programang iyon.",
+                "start_ms": 29560,
+                "end_ms": 39160
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ang civil service eligibility ay hiwalay na kategorya na may sariling kwalipikasyon at aplikasyon sa CSC; tatalakayin ito sa aralin 1.4.3.",
+                "start_ms": 39460,
+                "end_ms": 50580
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ang libreng legal representation at consultation ng Public Attorney’s Office ay para sa mga kasong kaugnay ng pagganap ng tungkulin bilang BHW, kabilang ang coercion o interference.",
+                "start_ms": 50880,
+                "end_ms": 64040
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Ang preferential access sa loans ay para sa organisadong mga grupo ng BHW na may community-based income-generating projects na sumusuporta sa mga programang pangkalusugan.",
+                "start_ms": 64340,
+                "end_ms": 76460
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Hindi ito pangako ng pautang sa bawat indibidwal.",
+                "start_ms": 76760,
+                "end_ms": 80240
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Anim ang kategorya; hindi lahat ay buwanang bayad o personal na pautang.",
+                "start_ms": 80540,
+                "end_ms": 86180
               }
             ]
           }
@@ -94913,6 +95741,145 @@
                   "text": "May legal na batayan ang tungkulin ng BHW — hindi lang ito kagustuhan, kundi bahagi ng RA 7883.",
                   "start_ms": 58180,
                   "end_ms": 67220
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "bhw-benefits": [
+      {
+        "module": "04-ra7883",
+        "sections": {
+          "section-3": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-benefits/section-3.en.eb3060b56c9b.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "eb3060b56c9b2933eca5cfa69131ab5bb1301dcb6b2a20496b4614311dcb0cce",
+              "sha256": "91c1553e2f17d23e85de08e89cbb71273fbb5f39f1a3d0cd87678f027c842ac2",
+              "duration_seconds": 96.496,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "The benefits under RA 7883",
+                  "start_ms": 0,
+                  "end_ms": 3920
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "RA 7883 names specific benefits a BHW may receive: hazard allowance, subsistence allowance (for BHWs who serve at isolated barangay health stations), training and career enrichment programs, civil service eligibility, free legal services, and priority access to loans.",
+                  "start_ms": 4220,
+                  "end_ms": 29020
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The amounts are set locally: the hazard allowance by the local health board and the local peace and order council, and the subsistence allowance by the LGU.",
+                  "start_ms": 29320,
+                  "end_ms": 39960
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "There is a condition before becoming eligible for these: a BHW must be registered with the local health board of the city or municipality where they render service.",
+                  "start_ms": 40260,
+                  "end_ms": 52260
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "There is also a limit: the total number of BHWs nationwide must not exceed one percent (1%) of the country's population, and the DOH sets the ideal number of BHWs per household — so registration is not simply given to anyone, and getting it right matters.",
+                  "start_ms": 52560,
+                  "end_ms": 72920
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "These benefits have specific conditions and administrative procedures.",
+                  "start_ms": 73220,
+                  "end_ms": 78380
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Confirm eligibility, documentation and any locally funded allowance with the local health board; do not promise automatic or uniform payment.",
+                  "start_ms": 78680,
+                  "end_ms": 89840
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "These benefits aren't automatic — they depend on proper registration with the local health board.",
+                  "start_ms": 90140,
+                  "end_ms": 96420
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-benefits/section-3.fil.08b382f14bc6.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "08b382f14bc6ab431f2f0c3cc5cfe5c016557584c1e73a219c004fa93b847b6a",
+              "sha256": "66e0b316cf3f48ca4dd4c20aa4d2e2f4b1582733328008684561cb374571c1e0",
+              "duration_seconds": 107.964,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Ang mga benepisyo sa ilalim ng RA 7883",
+                  "start_ms": 0,
+                  "end_ms": 4720
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Kasama sa RA 7883 ang mga partikular na benepisyong maaaring matanggap ng isang BHW: hazard allowance, subsistence allowance (para sa BHW na naglilingkod sa isolated o liblib na barangay health station), mga programa sa pagsasanay at career enrichment, civil service eligibility, libreng legal services, at priority access sa mga loan o pautang.",
+                  "start_ms": 5020,
+                  "end_ms": 34900
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Lokal na itinatakda ang halaga: ang hazard allowance ng local health board at ng local peace and order council, at ang subsistence allowance ng LGU.",
+                  "start_ms": 35200,
+                  "end_ms": 46320
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "May kondisyon bago maging eligible dito: kailangang rehistrado ang BHW sa local health board ng lungsod o munisipyo kung saan siya nagbibigay ng serbisyo.",
+                  "start_ms": 46620,
+                  "end_ms": 58620
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "May limitasyon din: ang kabuuang bilang ng mga BHW sa buong bansa ay hindi dapat lumampas sa isang porsiyento (1%) ng populasyon ng bansa, at ang DOH ang nagtatakda ng angkop na bilang ng BHW kada dami ng sambahayan — kaya't hindi basta-basta tinatanggap ang lahat, at mahalaga ang tamang rehistrasyon.",
+                  "start_ms": 58920,
+                  "end_ms": 82040
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "May tiyak na kondisyon at prosesong administratibo ang mga benepisyong ito.",
+                  "start_ms": 82340,
+                  "end_ms": 87380
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Tiyakin sa local health board ang pagiging kwalipikado, dokumento, at allowance na lokal ang pondo; huwag mangako ng awtomatiko o pare-parehong bayad.",
+                  "start_ms": 87680,
+                  "end_ms": 98440
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang mga benepisyong ito ay hindi awtomatiko — nakasalalay ito sa tamang rehistrasyon sa local health board.",
+                  "start_ms": 98740,
+                  "end_ms": 107900
                 }
               ]
             }

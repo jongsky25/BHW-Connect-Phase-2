@@ -1,0 +1,1255 @@
+{
+  "method": "Decoded PCM per-zone signal and exact committed bytes; not human listening",
+  "read": [
+    {
+      "lesson": "bhw-benefits",
+      "section": "benefit-verification",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.en.b914c725592c.mp3",
+      "sha256": "00856e25238b12ae6d0d3f6f229359fb3523df9542dc47a1f341e25137203fcc",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 74.005,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2920,
+          "rms_dbfs": -18.21,
+          "peak_dbfs": -1.1
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3220,
+          "end_ms": 9300,
+          "rms_dbfs": -17.07,
+          "peak_dbfs": -1.6
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9600,
+          "end_ms": 18400,
+          "rms_dbfs": -17.89,
+          "peak_dbfs": -0.94
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 18700,
+          "end_ms": 34780,
+          "rms_dbfs": -18.05,
+          "peak_dbfs": -2.34
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 35080,
+          "end_ms": 41680,
+          "rms_dbfs": -16.57,
+          "peak_dbfs": -0.76
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 41980,
+          "end_ms": 52580,
+          "rms_dbfs": -16.51,
+          "peak_dbfs": -2.1
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 52880,
+          "end_ms": 55920,
+          "rms_dbfs": -16.75,
+          "peak_dbfs": -2.85
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 56220,
+          "end_ms": 61900,
+          "rms_dbfs": -18.17,
+          "peak_dbfs": -2.64
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 62200,
+          "end_ms": 69120,
+          "rms_dbfs": -16.41,
+          "peak_dbfs": -1.13
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 69420,
+          "end_ms": 73940,
+          "rms_dbfs": -18.3,
+          "peak_dbfs": -1.14
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "benefit-verification",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.fil.27ba61e0b912.mp3",
+      "sha256": "75d80f048872d194dcf2ec56a404296ee24eef408f1d6e23fba6661d2b8bad85",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 77.845,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2000,
+          "rms_dbfs": -18.77,
+          "peak_dbfs": -1.65
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2300,
+          "end_ms": 9820,
+          "rms_dbfs": -18.21,
+          "peak_dbfs": -1.83
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 10120,
+          "end_ms": 17920,
+          "rms_dbfs": -17.87,
+          "peak_dbfs": -2.25
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 18220,
+          "end_ms": 35260,
+          "rms_dbfs": -17.02,
+          "peak_dbfs": -1.75
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 35560,
+          "end_ms": 42600,
+          "rms_dbfs": -16.58,
+          "peak_dbfs": -1.33
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 42900,
+          "end_ms": 53700,
+          "rms_dbfs": -17.21,
+          "peak_dbfs": -1.56
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 54000,
+          "end_ms": 57520,
+          "rms_dbfs": -17.29,
+          "peak_dbfs": -1.42
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 57820,
+          "end_ms": 63700,
+          "rms_dbfs": -16.87,
+          "peak_dbfs": -0.95
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 64000,
+          "end_ms": 73200,
+          "rms_dbfs": -18.35,
+          "peak_dbfs": -1.17
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 73500,
+          "end_ms": 77780,
+          "rms_dbfs": -18.49,
+          "peak_dbfs": -1.35
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "benefits-application-check",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.en.247d74cb5442.mp3",
+      "sha256": "27d3169fdde2c0f3f054986d2501298e415b253446240c4bc1ab7ce3e370d5c9",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 42.397,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3240,
+          "rms_dbfs": -17.52,
+          "peak_dbfs": -3.27
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3540,
+          "end_ms": 8260,
+          "rms_dbfs": -16.65,
+          "peak_dbfs": -1.09
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 8560,
+          "end_ms": 15600,
+          "rms_dbfs": -18.36,
+          "peak_dbfs": -0.59
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 15900,
+          "end_ms": 19420,
+          "rms_dbfs": -18.96,
+          "peak_dbfs": -2.73
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 19720,
+          "end_ms": 27000,
+          "rms_dbfs": -18.22,
+          "peak_dbfs": -2.21
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 27300,
+          "end_ms": 30860,
+          "rms_dbfs": -17.94,
+          "peak_dbfs": -2.07
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 31160,
+          "end_ms": 37320,
+          "rms_dbfs": -17.71,
+          "peak_dbfs": -0.61
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 37620,
+          "end_ms": 42340,
+          "rms_dbfs": -17.34,
+          "peak_dbfs": -1.81
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "benefits-application-check",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.fil.5d42dd79acc1.mp3",
+      "sha256": "55dfcc76d4b82e2a736553f86b392f9b51ddec8f0cf430652dfdf9823c8d98af",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 44.8,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3320,
+          "rms_dbfs": -18.16,
+          "peak_dbfs": -1.68
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3620,
+          "end_ms": 8540,
+          "rms_dbfs": -15.26,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 8840,
+          "end_ms": 17240,
+          "rms_dbfs": -14.85,
+          "peak_dbfs": -0.4
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 17540,
+          "end_ms": 21540,
+          "rms_dbfs": -17.24,
+          "peak_dbfs": -1.01
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 21840,
+          "end_ms": 28000,
+          "rms_dbfs": -17.64,
+          "peak_dbfs": -1.25
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 28300,
+          "end_ms": 33540,
+          "rms_dbfs": -16.15,
+          "peak_dbfs": -1.13
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 33840,
+          "end_ms": 39800,
+          "rms_dbfs": -18.08,
+          "peak_dbfs": -1.39
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 40100,
+          "end_ms": 44740,
+          "rms_dbfs": -16.76,
+          "peak_dbfs": -1.98
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "benefits-question",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-benefits/benefits-question.en.a64e75cf9fee.mp3",
+      "sha256": "8b63d4e0b64ea568e41c2a88521c4f24ca59dd79ce71676cb509ceeac6f5d80c",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 45.897,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3360,
+          "rms_dbfs": -14.74,
+          "peak_dbfs": -0.97
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3660,
+          "end_ms": 10820,
+          "rms_dbfs": -16.87,
+          "peak_dbfs": -0.81
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 11120,
+          "end_ms": 13800,
+          "rms_dbfs": -15.78,
+          "peak_dbfs": -2.2
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 14100,
+          "end_ms": 18060,
+          "rms_dbfs": -17.51,
+          "peak_dbfs": -1.94
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 18360,
+          "end_ms": 25040,
+          "rms_dbfs": -16.74,
+          "peak_dbfs": -1.42
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 25340,
+          "end_ms": 30260,
+          "rms_dbfs": -16.58,
+          "peak_dbfs": -1.42
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 30560,
+          "end_ms": 35040,
+          "rms_dbfs": -19.97,
+          "peak_dbfs": -2.24
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 35340,
+          "end_ms": 40940,
+          "rms_dbfs": -15.18,
+          "peak_dbfs": -0.2
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 41240,
+          "end_ms": 45840,
+          "rms_dbfs": -17.22,
+          "peak_dbfs": -0.04
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "benefits-question",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-benefits/benefits-question.fil.c6d00b3bfd9d.mp3",
+      "sha256": "72227bdbd3465fd3369165e706f8ac7dd9d099cfae0c6395acf77c32c7c29256",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 48.013,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3360,
+          "rms_dbfs": -15.73,
+          "peak_dbfs": -0.55
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3660,
+          "end_ms": 11140,
+          "rms_dbfs": -17.22,
+          "peak_dbfs": -3.05
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 11440,
+          "end_ms": 13680,
+          "rms_dbfs": -16.66,
+          "peak_dbfs": -1.33
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 13980,
+          "end_ms": 18100,
+          "rms_dbfs": -18.59,
+          "peak_dbfs": -3.52
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 18400,
+          "end_ms": 25840,
+          "rms_dbfs": -16.38,
+          "peak_dbfs": -0.79
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 26140,
+          "end_ms": 31180,
+          "rms_dbfs": -16.76,
+          "peak_dbfs": -0.35
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 31480,
+          "end_ms": 37000,
+          "rms_dbfs": -17.36,
+          "peak_dbfs": -1.74
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 37300,
+          "end_ms": 43500,
+          "rms_dbfs": -17.51,
+          "peak_dbfs": -1.44
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 43800,
+          "end_ms": 47960,
+          "rms_dbfs": -14.61,
+          "peak_dbfs": -0.54
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "compare-allowances",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.en.07bda07be88f.mp3",
+      "sha256": "57a93243a65bfe921017cfa421db80883317fafd87dd4308621e0ea88f93c9a4",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 75.99,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2960,
+          "rms_dbfs": -14.44,
+          "peak_dbfs": -0.15
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3260,
+          "end_ms": 9700,
+          "rms_dbfs": -18.4,
+          "peak_dbfs": -1.29
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 10000,
+          "end_ms": 21800,
+          "rms_dbfs": -17.63,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 22100,
+          "end_ms": 27100,
+          "rms_dbfs": -15.87,
+          "peak_dbfs": -1.53
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 27400,
+          "end_ms": 34280,
+          "rms_dbfs": -19.05,
+          "peak_dbfs": -2.39
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 34580,
+          "end_ms": 44500,
+          "rms_dbfs": -17.11,
+          "peak_dbfs": -1.34
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 44800,
+          "end_ms": 55280,
+          "rms_dbfs": -18.24,
+          "peak_dbfs": -1.48
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 55580,
+          "end_ms": 59380,
+          "rms_dbfs": -15.55,
+          "peak_dbfs": -0.34
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 59680,
+          "end_ms": 63400,
+          "rms_dbfs": -15.93,
+          "peak_dbfs": -1.94
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 63700,
+          "end_ms": 69940,
+          "rms_dbfs": -17.87,
+          "peak_dbfs": -0.73
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 70240,
+          "end_ms": 75920,
+          "rms_dbfs": -17.33,
+          "peak_dbfs": -1.18
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "compare-allowances",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.fil.6fb8f0acff78.mp3",
+      "sha256": "0199e16bd55897daf884534bc564ce3fe2f1312d5f2edd1b1ae9a519a69468ca",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 89.078,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3240,
+          "rms_dbfs": -16.75,
+          "peak_dbfs": -3.14
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3540,
+          "end_ms": 13260,
+          "rms_dbfs": -17.85,
+          "peak_dbfs": -1.21
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 13560,
+          "end_ms": 27680,
+          "rms_dbfs": -16.62,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 27980,
+          "end_ms": 34300,
+          "rms_dbfs": -15.15,
+          "peak_dbfs": -1.7
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 34600,
+          "end_ms": 41040,
+          "rms_dbfs": -17.55,
+          "peak_dbfs": -2.85
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 41340,
+          "end_ms": 52020,
+          "rms_dbfs": -20.66,
+          "peak_dbfs": -2.65
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 52320,
+          "end_ms": 65840,
+          "rms_dbfs": -17.5,
+          "peak_dbfs": -1.73
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 66140,
+          "end_ms": 70180,
+          "rms_dbfs": -15.9,
+          "peak_dbfs": -1.11
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 70480,
+          "end_ms": 74560,
+          "rms_dbfs": -17.62,
+          "peak_dbfs": -3.54
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 74860,
+          "end_ms": 83900,
+          "rms_dbfs": -17.61,
+          "peak_dbfs": -1.05
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 84200,
+          "end_ms": 89000,
+          "rms_dbfs": -17.32,
+          "peak_dbfs": -1.81
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "registration-and-conditions",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.en.7447399efe22.mp3",
+      "sha256": "db9ba7d7168e873297e16a501476c7b55ceb505634583704c80a0a0f647b7d60",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 77.087,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3040,
+          "rms_dbfs": -19.46,
+          "peak_dbfs": -2.8
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3340,
+          "end_ms": 14500,
+          "rms_dbfs": -17.29,
+          "peak_dbfs": -1.29
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 14800,
+          "end_ms": 18280,
+          "rms_dbfs": -17.09,
+          "peak_dbfs": -1.48
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 18580,
+          "end_ms": 23020,
+          "rms_dbfs": -18.16,
+          "peak_dbfs": -1.27
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 23320,
+          "end_ms": 32400,
+          "rms_dbfs": -17.87,
+          "peak_dbfs": -1.41
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 32700,
+          "end_ms": 39780,
+          "rms_dbfs": -17.8,
+          "peak_dbfs": -1.27
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 40080,
+          "end_ms": 46360,
+          "rms_dbfs": -17.28,
+          "peak_dbfs": -1.0
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 46660,
+          "end_ms": 53220,
+          "rms_dbfs": -17.82,
+          "peak_dbfs": -1.1
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 53520,
+          "end_ms": 60120,
+          "rms_dbfs": -18.52,
+          "peak_dbfs": -1.34
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 60420,
+          "end_ms": 66980,
+          "rms_dbfs": -17.37,
+          "peak_dbfs": -3.0
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 67280,
+          "end_ms": 72200,
+          "rms_dbfs": -16.95,
+          "peak_dbfs": -1.59
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 72500,
+          "end_ms": 77020,
+          "rms_dbfs": -18.21,
+          "peak_dbfs": -1.34
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "registration-and-conditions",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.fil.9f9fcafea029.mp3",
+      "sha256": "c59b1784d1d33d977c5c040ce3e112b64b70e7ee6892aef23f723d06fa3c95f6",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 86.962,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3800,
+          "rms_dbfs": -17.9,
+          "peak_dbfs": -2.22
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 4100,
+          "end_ms": 15380,
+          "rms_dbfs": -16.07,
+          "peak_dbfs": -1.4
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 15680,
+          "end_ms": 18760,
+          "rms_dbfs": -16.38,
+          "peak_dbfs": -2.47
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 19060,
+          "end_ms": 24620,
+          "rms_dbfs": -16.92,
+          "peak_dbfs": -1.03
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 24920,
+          "end_ms": 36240,
+          "rms_dbfs": -17.94,
+          "peak_dbfs": -1.27
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 36540,
+          "end_ms": 43700,
+          "rms_dbfs": -16.35,
+          "peak_dbfs": -0.59
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 44000,
+          "end_ms": 51720,
+          "rms_dbfs": -17.77,
+          "peak_dbfs": -1.29
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 52020,
+          "end_ms": 58460,
+          "rms_dbfs": -16.13,
+          "peak_dbfs": -1.23
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 58760,
+          "end_ms": 67480,
+          "rms_dbfs": -17.33,
+          "peak_dbfs": -1.18
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 67780,
+          "end_ms": 75780,
+          "rms_dbfs": -17.98,
+          "peak_dbfs": -3.22
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 76080,
+          "end_ms": 81440,
+          "rms_dbfs": -15.1,
+          "peak_dbfs": 0.0
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 81740,
+          "end_ms": 86900,
+          "rms_dbfs": -17.19,
+          "peak_dbfs": -1.34
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "section-3",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-benefits/section-3.en.2a1065f7d96c.mp3",
+      "sha256": "129e18c1e368a528ccc25d20d811f20954f53c40df96ae855d096da4ffb88e2f",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 74.998,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2520,
+          "rms_dbfs": -19.7,
+          "peak_dbfs": -4.36
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2820,
+          "end_ms": 9460,
+          "rms_dbfs": -17.61,
+          "peak_dbfs": -0.26
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9760,
+          "end_ms": 13920,
+          "rms_dbfs": -15.57,
+          "peak_dbfs": -0.99
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 14220,
+          "end_ms": 24860,
+          "rms_dbfs": -18.07,
+          "peak_dbfs": -0.05
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 25160,
+          "end_ms": 33800,
+          "rms_dbfs": -17.4,
+          "peak_dbfs": -1.38
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 34100,
+          "end_ms": 43740,
+          "rms_dbfs": -17.97,
+          "peak_dbfs": -1.41
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 44040,
+          "end_ms": 55200,
+          "rms_dbfs": -18.11,
+          "peak_dbfs": -1.3
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 55500,
+          "end_ms": 65580,
+          "rms_dbfs": -17.9,
+          "peak_dbfs": -0.55
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 65880,
+          "end_ms": 69760,
+          "rms_dbfs": -15.87,
+          "peak_dbfs": -1.17
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 70060,
+          "end_ms": 74940,
+          "rms_dbfs": -18.25,
+          "peak_dbfs": -1.7
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-benefits",
+      "section": "section-3",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-benefits/section-3.fil.ab61c1531cf7.mp3",
+      "sha256": "9d2a3d1e09b89be35048781c6b3ac2dc69ac249d9bfa3119967b82303c769c3c",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 86.256,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2760,
+          "rms_dbfs": -14.2,
+          "peak_dbfs": -0.73
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3060,
+          "end_ms": 10300,
+          "rms_dbfs": -18.2,
+          "peak_dbfs": -1.03
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 10600,
+          "end_ms": 16640,
+          "rms_dbfs": -17.11,
+          "peak_dbfs": -0.48
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 16940,
+          "end_ms": 29260,
+          "rms_dbfs": -16.34,
+          "peak_dbfs": -0.79
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 29560,
+          "end_ms": 39160,
+          "rms_dbfs": -16.85,
+          "peak_dbfs": -1.44
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 39460,
+          "end_ms": 50580,
+          "rms_dbfs": -16.6,
+          "peak_dbfs": -0.86
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 50880,
+          "end_ms": 64040,
+          "rms_dbfs": -17.46,
+          "peak_dbfs": -1.14
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 64340,
+          "end_ms": 76460,
+          "rms_dbfs": -18.21,
+          "peak_dbfs": -1.63
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 76760,
+          "end_ms": 80240,
+          "rms_dbfs": -17.11,
+          "peak_dbfs": -0.5
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 80540,
+          "end_ms": 86180,
+          "rms_dbfs": -16.31,
+          "peak_dbfs": -1.37
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "language": "fil",
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-be0ad0574ae9.mp4",
+      "sha256": "be0ad0574ae952d3c72277b55466103f2ad5ded1dcab9154d093e49565497a21",
+      "bytes": 1161940,
+      "duration_seconds": 84.181333,
+      "stream_video": {
+        "codec_name": "h264",
+        "width": 854,
+        "height": 480,
+        "r_frame_rate": "30/1"
+      },
+      "stream_audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "caption_path": "/training/bhw-1-4/bhw-benefits-gemini-fil-f55ea0ba5050.vtt",
+      "caption_hash": "f55ea0ba5050bf0bc9b1b565612aad6f48ff3e0f412a8e8c6d64a76b71e58c51",
+      "decoded_duration_seconds": 84.181,
+      "zones": [
+        {
+          "zone": "question",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 11360,
+          "rms_dbfs": -20.54,
+          "peak_dbfs": -4.27
+        },
+        {
+          "zone": "categories",
+          "index": 1,
+          "start_ms": 11660,
+          "end_ms": 26820,
+          "rms_dbfs": -18.85,
+          "peak_dbfs": -3.89
+        },
+        {
+          "zone": "conditions",
+          "index": 2,
+          "start_ms": 27120,
+          "end_ms": 40280,
+          "rms_dbfs": -19.4,
+          "peak_dbfs": -3.49
+        },
+        {
+          "zone": "comparison",
+          "index": 3,
+          "start_ms": 40580,
+          "end_ms": 54260,
+          "rms_dbfs": -21.32,
+          "peak_dbfs": -3.61
+        },
+        {
+          "zone": "verification",
+          "index": 4,
+          "start_ms": 54560,
+          "end_ms": 68240,
+          "rms_dbfs": -20.47,
+          "peak_dbfs": -4.25
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "start_ms": 68540,
+          "end_ms": 82940,
+          "rms_dbfs": -20.68,
+          "peak_dbfs": -3.89
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-en-6a207010c1d6.mp4",
+      "sha256": "6a207010c1d6bcaef641f2c835b41fbfc291e83c574b5e0f186ba85cd5ef551e",
+      "bytes": 1062903,
+      "duration_seconds": 77.354667,
+      "stream_video": {
+        "codec_name": "h264",
+        "width": 854,
+        "height": 480,
+        "r_frame_rate": "30/1"
+      },
+      "stream_audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "caption_path": "/training/bhw-1-4/bhw-benefits-gemini-en-fb1e0a5db943.vtt",
+      "caption_hash": "fb1e0a5db94351fe032c1001124c47b488542014c0f555c0bd0983b4067c6ebc",
+      "decoded_duration_seconds": 77.355,
+      "zones": [
+        {
+          "zone": "question",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 8440,
+          "rms_dbfs": -20.05,
+          "peak_dbfs": -2.76
+        },
+        {
+          "zone": "categories",
+          "index": 1,
+          "start_ms": 8740,
+          "end_ms": 23100,
+          "rms_dbfs": -21.31,
+          "peak_dbfs": -3.56
+        },
+        {
+          "zone": "conditions",
+          "index": 2,
+          "start_ms": 23400,
+          "end_ms": 37040,
+          "rms_dbfs": -20.62,
+          "peak_dbfs": -3.06
+        },
+        {
+          "zone": "comparison",
+          "index": 3,
+          "start_ms": 37340,
+          "end_ms": 52900,
+          "rms_dbfs": -20.84,
+          "peak_dbfs": -3.42
+        },
+        {
+          "zone": "verification",
+          "index": 4,
+          "start_ms": 53200,
+          "end_ms": 64880,
+          "rms_dbfs": -19.15,
+          "peak_dbfs": -4.14
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "start_ms": 65180,
+          "end_ms": 76140,
+          "rms_dbfs": -20.21,
+          "peak_dbfs": -3.59
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "demi-benefits-conditions",
+      "path": "/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png",
+      "sha256": "2f0be96fe3d80d36c4a1dc9f4d5ff2442731f05c5f66eda999109fd7eac23a1b",
+      "review_status": "draft"
+    },
+    {
+      "id": "bhw-benefits-story",
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+      "sha256": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de",
+      "review_status": "draft"
+    }
+  ]
+}

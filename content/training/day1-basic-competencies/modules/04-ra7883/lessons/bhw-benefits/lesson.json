@@ -216,6 +216,46 @@
       "caption_en": "Benefit · Conditions · Verification. Draft scene awaiting owner review.",
       "provenance": "Original built-in image_gen illustration, 5 October 2026, derived from the owner-approved fictional Demi reference with SHA-256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. Exact prompt: Use case: identity-preserve. Create an original landscape draft educational illustration for lesson 1.4.2 Benefits and conditions. Input image is an approved identity and style reference. Preserve Demi, the woman on the left: fictional Filipina adult about 35, medium brown skin, oval face, short slightly wavy dark bob tucked behind ears, plain teal collared blouse, dark trousers, no badge. Preserve her recognizable face and natural proportions. Create a different moment of the same nonclinical discussion: Demi thoughtfully gestures with an open hand toward two separate entirely blank question/planning sheets on a wooden table while the adult Filipina colleague in a cream blouse listens. Show both complete faces and all visible hands fully inside frame with generous margins. Airy Philippine community meeting room, daylight, modest shelves and plants, realistic painterly educational illustration matching reference. Wide composition suitable for contained phone display. No certificates, actual payments, coins, cash, readable forms, records, logos, official seals, badges, signs, text, watermark or clinical procedure. This is a planning question; accreditation and entitlement remain unverified.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-benefits-story",
+      "alt_fil": "Kuwentong may salaysay: ipinaliliwanag ni Demi ang benepisyo at kondisyon at nagtatanong tungkol sa verification.",
+      "alt_en": "Narrated story: Demi distinguishes benefits and conditions and asks a useful verification question.",
+      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson 1.4.2; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. New media are draft; no owner or independent policy SME approval.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-be0ad0574ae9.mp4",
+          "content_hash": "be0ad0574ae952d3c72277b55466103f2ad5ded1dcab9154d093e49565497a21",
+          "duration_s": 84,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-f55ea0ba5050.vtt",
+            "content_hash": "f55ea0ba5050bf0bc9b1b565612aad6f48ff3e0f412a8e8c6d64a76b71e58c51"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+            "content_hash": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-4/bhw-benefits-gemini-en-6a207010c1d6.mp4",
+          "content_hash": "6a207010c1d6bcaef641f2c835b41fbfc291e83c574b5e0f186ba85cd5ef551e",
+          "duration_s": 77,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-benefits-gemini-en-fb1e0a5db943.vtt",
+            "content_hash": "fb1e0a5db94351fe032c1001124c47b488542014c0f555c0bd0983b4067c6ebc"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-benefits-gemini-en-dbcf24125f91-poster.jpg",
+            "content_hash": "dbcf24125f91bd4a2b49e41af2fe89e76aaa538d0f5fc16066075087d37d8bbf"
+          }
+        }
+      },
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+      "content_hash": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-benefits-story"
 }

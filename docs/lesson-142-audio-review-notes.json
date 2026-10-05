@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-05T04:41:14.381Z",
+  "method": "Gemini model-mediated review of actual MP3 bytes; not human listening, owner approval or policy SME review",
+  "source_commit": "64e1c37dccc653d482e4c91b3a5d98d8e0e0e6aa",
+  "status": "All 14 model reviews report speech and unclipped endings. Flags remain for owner listening.",
+  "records": [
+    {
+      "id": "read-bhw-benefits-benefits-question-fil",
+      "language": "fil",
+      "sha256": "72227bdbd3465fd3369165e706f8ac7dd9d099cfae0c6395acf77c32c7c29256",
+      "delivery": {
+        "pacing": "Well-paced, calm, and clear, suited for educational or instructional content.",
+        "natural_pitch_variation": true,
+        "questions_natural_expression": true,
+        "overall_quality": "High. The opening question has authentic Tagalog interrogative inflection, and subsequent statements flow smoothly with appropriate sentence-boundary pauses."
+      },
+      "pronunciation_flags": [
+        {
+          "timestamp": "00:05 - 00:06",
+          "target": "Demi",
+          "observation": "Pronounced clearly as /ˈdɛmi/ without hesitation."
+        },
+        {
+          "timestamp": "00:09 - 00:10",
+          "target": "BHW",
+          "observation": "Spelled out naturally in standard Philippine English/Tagalog initialism phonology ('B-H-W')."
+        },
+        {
+          "timestamp": "00:26 - 00:28",
+          "target": "RA 7883",
+          "observation": "Read smoothly as 'R-A seven eight eight three', which is standard colloquial/administrative usage in Filipino contexts."
+        }
+      ],
+      "other_flags": [],
+      "transcript": "Awtomatiko bang pare-pareho ang allowance? Sa kathang-isip na kwento, may nagsabi kay Demi: Pare-pareho at awtomatiko ang allowance ng lahat ng BHW. Hindi niya alam kung tama ito. Hindi pa rin natitiyak ang kanyang akreditasyon at rehistrasyon. Sa halip na mangako ng pera, itinanong niya kung anong benepisyo ang tinutukoy at anong kondisyon ang dapat alamin. Ang RA 7883 ay may anim na kategorya ng benepisyo. Magkakaiba ang layunin, kondisyon, at awtoridad na kaugnay ng mga ito. Opsyonal ang kwentong video. Maaari mong tapusin ang Read o slides nang hindi ito pinapanood. Pangalanan ang benepisyo at tiyakin ang kondisyon bago mangako."
+    },
+    {
+      "id": "read-bhw-benefits-benefits-question-en",
+      "language": "en",
+      "sha256": "8b63d4e0b64ea568e41c2a88521c4f24ca59dd79ce71676cb509ceeac6f5d80c",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, clear, and evenly measured educational instructional pace.",
+        "pitch_and_pace_variation": "Demonstrates natural inflection and appropriate phrasing pauses across sentences, though characteristic of polished neutral/TTS educational narration.",
+        "question_expression": "The introductory question ('Are allowances automatically identical?') has a natural rising question inflection. The reported indirect questions at 00:21–00:24 ('she asks which benefit they mean and which conditions need checking') are read smoothly as narrative statements rather than direct interrogatives."
+      },
+      "pronunciation_flags": [
+        {
+          "timestamp": "00:06",
+          "word_or_phrase": "Demi",
+          "note": "Pronounced with a short 'e' (/ˈdɛmi/). Depending on local preferences, some speakers may pronounce this /dəˈmiː/ or /ˈdeɪmi/."
+        },
+        {
+          "timestamp": "00:07 - 00:08",
+          "word_or_phrase": "BHW",
+          "note": "Lettered clearly as B-H-W (/biː eɪtʃ ˈdʌbəl.juː/) without slurring."
+        },
+        {
+          "timestamp": "00:26 - 00:28",
+          "word_or_phrase": "RA 7883",
+          "note": "Read as 'R-A seven-eight-eight-three', which is clear and standard."
+        }
+      ],
+      "other_flags": [
+        {
+          "timestamp": "00:38 - 00:39",
+          "word_or_phrase": "complete read or slides",
+          "note": "Phrasing reflects shorthand UI module names ('Read' or 'Slides') rather than standard colloquial syntax, but it is articulated clearly."
+        }
+      ],
+      "transcript": "Are allowances automatically identical? In this fictional story, someone tells Demi, \"Every BHW gets the same allowance automatically.\" She does not know whether this is correct. Her accreditation and registration have not been verified either. Instead of promising money, she asks which benefit they mean and which conditions need checking. RA 7883 provides six categories of benefits. They have different purposes, conditions, and responsible authorities. The story video is optional. You can complete read or slides without watching it. Name the benefit and verify its conditions before promising anything."
+    },
+    {
+      "id": "read-bhw-benefits-section-3-fil",
+      "language": "fil",
+      "sha256": "9d2a3d1e09b89be35048781c6b3ac2dc69ac249d9bfa3119967b82303c769c3c",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Moderate, steady, and appropriate for modular/e-learning educational narration.",
+        "naturalness": "High naturalness with appropriate pitch contours and pause intervals across topical transitions."
+      },
+      "pronunciation_flags": [],
+      "other_flags": [],
+      "transcript": "Anim na kategorya ng benepisyo. Sa Section 6 ng RA 7883, kabilang ang hazard allowance at subsistence allowance. May sariling kondisyon ang bawat isa. Ihahambing natin ang mga ito sa susunod na screen. Kasama rin ang training, education, at career enrichment programs. Mga pagkakataon sa patuloy na pag-aaral, pagsasanay, at iba pang suportang pang-edukasyon. May nakasaad ding scholarship sa tuition sa state colleges para sa isang anak ng BHW na hindi makikinabang sa mga programang iyon. Ang Civil Service Eligibility ay hiwalay na kategorya na may sariling kwalipikasyon at aplikasyon sa CSC. Tatalakayin ito sa Aralin 1.4.3. Ang libreng legal representation at consultation ng Public Attorney's Office ay para sa mga kasong kaugnay ng pagganap ng tungkulin bilang BHW, kabilang ang coercion o interference. Ang preferential access sa loans ay para sa organisadong mga grupo ng BHW na may community-based income-generating projects na sumusuporta sa mga programang pangkalusugan. Hindi ito pangako ng pautang sa bawat indibidwal. Anim ang kategorya. Hindi lahat ay buwanang bayad o personal na pautang."
+    },
+    {
+      "id": "read-bhw-benefits-section-3-en",
+      "language": "en",
+      "sha256": "129e18c1e368a528ccc25d20d811f20954f53c40df96ae855d096da4ffb88e2f",
+      "delivery": "The delivery is clear, well-paced, and typical of professional educational narration in Philippine English. Pitch contour and emphasis sound natural and appropriately varied for modular training. There are no observation or coordination questions in this excerpt; all statements are declarative.",
+      "pronunciation_flags": [],
+      "other_flags": [],
+      "transcript": "Six benefit categories. Section 6 of RA 7883 includes hazard allowance and subsistence allowance. Each has its own conditions. We will compare them on a later screen. It also includes training, education, and career enrichment programs: opportunities for continuing education, training, and other educational support. The act also provides tuition scholarship benefits in state colleges for one child of a BHW unable to use those programs. Civil service eligibility is a separate category, with its own CSC qualifications and application. Lesson 1.4.3 covers it. Free legal representation and consultation through the Public Attorney's Office cover cases arising from or connected with BHW duties, including coercion or interference. Preferential access to loans concerns organized BHW groups with community-based, income-generating projects supporting health programs. It is not a promise of a loan to every individual. There are six categories. They're not all monthly payments or personal loans."
+    },
+    {
+      "id": "read-bhw-benefits-registration-and-conditions-fil",
+      "language": "fil",
+      "sha256": "c59b1784d1d33d977c5c040ce3e112b64b70e7ee6892aef23f723d06fa3c95f6",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate and clear instructional pacing, though slightly rigid and characteristic of automated narration.",
+        "pitch_and_pace_variation": "Moderate pitch variation; cadence has a slightly synthetic, formulaic rise and fall at sentence boundaries, but remains easy to follow.",
+        "questions_expression": "The script consists entirely of declarative statements and instructional guidelines; no coordination or observation questions are present."
+      },
+      "pronunciation_flags": [],
+      "other_flags": [
+        {
+          "timestamp": "01:19 - 01:21",
+          "detail": "The phrasing 'nang walang pagsisisi' (without regret) sounds slightly unnatural or atypical in a formal procedural health training context, though cleanly articulated."
+        }
+      ],
+      "transcript": "Rehistrasyon at mga karagdagang kondisyon. Sa Section 4, kailangang magparehistro sa Local Health Board ng lungsod o munisipyo kung saan naglilingkod upang makinabang sa mga benepisyo at insentibo ng batas. May angkop na patunay ng akreditasyon. Magkaugnay, ngunit hindi mapagpapalit ang akreditasyon at rehistrasyon. Ang Section 6 ay tumutukoy sa mga akreditadong BHW na aktibo at regular na gumaganap ng kanilang tungkulin, kasama ang partikular na kondisyon ng bawat benepisyo. Sa Section 5, DOH ang magtatakda ng ideal na ratio ng BHW sa bilang ng mga sambahayan. Ang kabuuang bilang ng BHW sa buong bansa ay hindi dapat lumampas sa isang porsyento ng kabuuang populasyon. Hindi ito batayan upang gumawa tayo ng quota sa isang barangay o hulaan kung kwalipikado si Demi. Sa Section 7, ang benepisyong gagamit ng lokal na pondo ay kailangang repasuhin at aprobahin ng Local Health Board. Kung hindi pa natatanggap ang benepisyo, hindi nito pinapatunayang nagkamali o hindi nagpaparehistro ang BHW. Alamin ang naaangkop na kondisyon at lokal na pagpapatupad nang walang pagsisisi. Kailangan ang rehistrasyon, hindi nito ginagarantiya ang bawat benepisyo."
+    },
+    {
+      "id": "read-bhw-benefits-registration-and-conditions-en",
+      "language": "en",
+      "sha256": "db9ba7d7168e873297e16a501476c7b55ceb505634583704c80a0a0f647b7d60",
+      "delivery": "The narration is clear, intelligible, and maintains steady, deliberate pacing suitable for educational material. Natural pauses separate statutory references and clauses. No observation or coordination questions are present in this specific audio script.",
+      "pronunciation_flags": [],
+      "other_flags": [],
+      "transcript": "Registration and further conditions. Section 4 requires registration with the local health board of the city or municipality where service is rendered, to receive the Act's benefits and incentives. It also provides appropriate proof of accreditation. Accreditation and registration are related, but distinct. Section 6 refers to accredited BHWs actively and regularly performing their duties alongside the conditions of each benefit. Under Section 5, DOH determines the ideal ratio of BHWs to households. The total number of BHWs nationwide must not exceed 1% of the total population. This gives us no basis to invent a barangay quota, or decide Demi's qualification. Section 7 requires local health board review and approval for benefits using local funds. Not receiving a benefit does not prove that a BHW did something wrong, or failed to register. Check the applicable conditions and local implementation without blame. Registration is required. It does not guarantee every benefit."
+    },
+    {
+      "id": "read-bhw-benefits-compare-allowances-fil",
+      "language": "fil",
+      "sha256": "0199e16bd55897daf884534bc564ce3fe2f1312d5f2edd1b1ae9a519a69468ca",
+      "delivery": "The narration is clear, intelligible, and audible throughout with no background noise or distortion. Pacing is steady and measured for educational training purposes, with appropriate pauses between sections. Pitch and tone sound natural, and statements conveying guidance or caution are delivered with clear emphasis.",
+      "pronunciation_flags": [],
+      "other_flags": [],
+      "transcript": "Magkaibang kondisyon ng dalawang allowance. Card A: Isang kathang-isip na boluntaryong BHW ang maaaring malantad sa panganib sa lugar ng trabaho habang ginagampanan ang tungkulin. Sa Section 6A, ang hazard allowance ay para sa foreseeable, ngunit unavoidable na panganib na makaaapekto sa kalusugan o buhay habang nagtatrabaho, na dapat i-validate ng tamang awtoridad. Local Health Board at Local Peace and Order Council ng LGU ang magtatakda ng halaga. Hindi sapat ang label na mapanganib upang tayo ang magpatunay o magtakda ng bayad. Card B: Isang kathang-isip na BHW ang naglilingkod sa loob ng isolated Barangay Health Station upang maibigay ang serbisyo anumang oras. Sa Section 6B, ang subsistence allowance ay katumbas ng mga pagkaing kinakain sa panahon ng tungkulin, na kinukuwenta ayon sa umiiral na kalagayang itinatakda ng LGU. Ang malayo ang bahay lamang ay hindi ang kondisyon sa batas. Magkaibang tanong sa verification ang kailangan ng A at B. Hindi natin alam ang kanilang katayuan, validation, o aprobadong lokal na halaga. Walang pangako ng pagtanggap. Tingnan ang tiyak na serbisyo at kondisyon. Huwag magtakda ng iisang halaga."
+    },
+    {
+      "id": "read-bhw-benefits-compare-allowances-en",
+      "language": "en",
+      "sha256": "57a93243a65bfe921017cfa421db80883317fafd87dd4308621e0ea88f93c9a4",
+      "delivery": {
+        "pacing": "Deliberate, steady educational pacing throughout, well-suited for instructional content.",
+        "natural_pitch_pace_variation": "Consistent and clear text-to-speech cadence with natural sentence-level intonation, though slightly uniform across transitions.",
+        "question_expression": "No observation or coordination questions are present in this segment; all sentences are delivered as declarative statements or directives with appropriate falling final contours."
+      },
+      "pronunciation_flags": [],
+      "other_flags": [
+        {
+          "timestamp": "00:00 - 00:03",
+          "note": "Title is read by a male voice ('Different conditions for two allowances'), transitioning immediately at 00:03 to a female narrator for the remainder of the clip."
+        },
+        {
+          "timestamp": "00:39 - 00:40",
+          "note": "'barangay health station' is fully articulated rather than spoken as the initialism 'BHS'."
+        }
+      ],
+      "transcript": "Different conditions for two allowances. Card A. A fictional volunteer BHW may face risk in the workplace while performing duties. Under Section 6(a), hazard allowance concerns foreseeable but unavoidable danger affecting health or life during duty, validated by the proper authorities. The local health board and local peace and order council of the LGU determine the amount. Calling a place dangerous does not let us validate the exposure or set payment ourselves. Card B. A fictional BHW serves within an isolated barangay health station to make services available at any and all times. Under Section 6(b), subsistence allowance is equivalent to meals taken during duty, computed according to prevailing circumstances determined by the LGU. A distant home alone is not the statutory condition. A and B need different verification questions. Their status, validation, and approved local amounts are unknown. We promise no receipt of benefits. Check the specific service and conditions. Do not assume one fixed amount."
+    },
+    {
+      "id": "read-bhw-benefits-benefit-verification-fil",
+      "language": "fil",
+      "sha256": "75d80f048872d194dcf2ec56a404296ee24eef408f1d6e23fba6661d2b8bad85",
+      "delivery": "The delivery is clear, well-paced, and audible throughout with natural phrasing typical of professional educational narration. The long inquiry question (00:21–00:35) is delivered smoothly with appropriate pauses across coordinating clauses, though slightly measured/reading-style in tone.",
+      "pronunciation_flags": [],
+      "other_flags": [
+        {
+          "timestamp": "00:05-00:07",
+          "note": "RA 7883 is read as English letters and digits ('R-A seven-eight-eight-three'), which is standard in Philippine administrative contexts."
+        },
+        {
+          "timestamp": "N/A",
+          "note": "Acronyms BHW and BHS were not mentioned in this segment."
+        }
+      ],
+      "transcript": "Ang tiyak na tanong ni Demi. Ipinaliwanag ni Demi, may anim na kategorya sa RA 7883 pero magkakaibang kondisyon. Kailangan ang rehistrasyon kung saan naglilingkod, at hindi sapat ang isang kredensyal para sa lahat ng benepisyo. Tanong niya sa supervisor o RHU, Para sa hazard allowance, sino ang tamang contact upang matiyak ang akreditasyon at rehistrasyon, ang kailangang ebidensya ng exposure, ang balidasyon ng tamang awtoridad, at ang lokal na review at pag-aproba? Maaaring tumulong ang RHU sa pag-alam ng contact. Hindi nito pinapalitan ang mga awtoridad sa batas. Kung legal services ang tanong, kaugnay ng tungkulin ang kaso, at PAO ang tinutukoy na provider. Kung eligibility, CSC ang kaugnay na tanggapan. Blankong question sheet lamang ang ginagamit ni Demi. Hindi ito opisyal na form, aplikasyon, approval, o patunay ng kanyang katayuan. Gumamit ng kathang-isip na kaso sa pagsasanay. Hindi kailangang magbahagi ng pribadong rekord o kasaysayan ng pagtanggap ng benepisyo. Magtanong nang tiyak, at walang pangakong pera o resulta."
+    },
+    {
+      "id": "read-bhw-benefits-benefit-verification-en",
+      "language": "en",
+      "sha256": "00856e25238b12ae6d0d3f6f229359fb3523df9542dc47a1f341e25137203fcc",
+      "delivery": {
+        "pacing": "Moderate, steady, and well-regulated for instructional narration.",
+        "naturalness": "Clear synthetic voice with appropriate list cadence, distinct pauses at clause boundaries, and natural interrogative pitch contour on the coordination question (00:22 - 00:34).",
+        "question_expression": "The coordination question from 00:22 to 00:34 carries appropriate rising list intonation and natural inquisitive phrasing."
+      },
+      "pronunciation_flags": [],
+      "other_flags": [],
+      "transcript": "Demi's specific verification question. Demi explains RA 7883 has six categories with different conditions. Registration where service is rendered is required, and one credential does not establish qualification for every benefit. She asks her supervisor or RHU, 'For hazard allowance, who is the right contact to verify accreditation and registration, the required exposure evidence, validation by proper authorities, and local review and approval?' The RHU can help identify the contact; it does not replace the statutory authorities. For legal services, the case must connect with BHW duties, and PAO is the named provider. For eligibility, CSC is the relevant office. Demi uses only a blank question sheet. It is not an official form, application, approval, or proof of her status. Use fictional cases in practice. No one needs to share private records or a personal benefit receipt history. Ask a specific question without promising money or an outcome."
+    },
+    {
+      "id": "read-bhw-benefits-benefits-application-check-fil",
+      "language": "fil",
+      "sha256": "55dfcc76d4b82e2a736553f86b392f9b51ddec8f0cf430652dfdf9823c8d98af",
+      "delivery": {
+        "audibility": "Speech is completely audible, crisp, and clear throughout.",
+        "pacing": "Pacing is measured, deliberate, and appropriate for instructional/assessment material.",
+        "pitch_and_intonation": "Displays natural pitch modulation and phrasing. The question at 00:17–00:21 ('Ano ang pinakamainam na paliwanag at unang hakbang?') carries an appropriate inquisitive inflection.",
+        "naturalness": "Smooth, professional educational voiceover with clear phrase boundaries."
+      },
+      "pronunciation_flags": [],
+      "other_flags": [],
+      "transcript": "Piliin ang paliwanag na may angkop na hakbang. Narinig ni Demi na pare-pareho raw ang allowance ng lahat ng BHW. May nagtanong tungkol sa hazard allowance, pero hindi pa verified ang katayuan, exposure, o lokal na pag-apruba. Ano ang pinakamainam na paliwanag at unang hakbang? Piliin ang sagot na may benepisyo, tiyak na kondisyon, at tamang verification. Pagkatapos, ipaliwanag kung bakit hindi sapat ang dalawang ibang pagpipilian. Hiwalay ang pagtatapos ng online lesson sa pagmamasid ng facilitator sa kakayahang ito. Ipaliwanag ang kondisyon at piliin ang naaangkop na verification."
+    },
+    {
+      "id": "read-bhw-benefits-benefits-application-check-en",
+      "language": "en",
+      "sha256": "27d3169fdde2c0f3f054986d2501298e415b253446240c4bc1ab7ce3e370d5c9",
+      "delivery": {
+        "pacing": "Moderate and articulate overall, though synthetic and segmented across distinct speaker voices.",
+        "natural_pitch_pace_variation": "Moderate; the narration consists of spliced synthetic/TTS lines with shifting pitch profiles between sentences, creating an unnatural discontinuity across prompts.",
+        "question_expression": "The interrogative sentence ('What explanation and first step fit best?' at 0:15–0:19) carries adequate inflection, though somewhat mechanical in cadence."
+      },
+      "pronunciation_flags": [],
+      "other_flags": [
+        {
+          "timestamp": "0:03 - 0:08",
+          "description": "Noticeable voice switch / acoustic timbre change from the opening sentence to a lower-pitched voice, then switching again at 0:08, indicating concatenated/spliced audio clips."
+        }
+      ],
+      "transcript": "Choose an explanation with an appropriate step. Demi hears that every BHW receives the same allowance. Someone asks about hazard allowance, but status, exposure, and local approval are still unverified. What explanation and first step fit best? Choose the answer naming the benefit, its specific conditions, and appropriate verification. Then explain why the other two choices are insufficient. Finishing the online lesson is separate from a facilitator observing this competency. Explain the condition and choose an appropriate verification step."
+    },
+    {
+      "id": "story-fil",
+      "language": "fil",
+      "sha256": "8637582132df018c8fdb6d8b0502c0511d8624b94c0424ee80e6bdec1507310b",
+      "delivery": {
+        "audibility": "The speaker's voice is clearly audible, crisp, and well-balanced throughout the entire recording.",
+        "pacing": "The pace is steady, deliberate, and appropriate for educational narration, with clear pauses separating list items and sections.",
+        "naturalness": "Pitch contour and dynamic stress sound natural and engaging. The rhetorical/direct questions (at 00:08–00:10 and 00:57–01:03) carry appropriate inquisitive intonation."
+      },
+      "pronunciation_flags": [],
+      "other_flags": [],
+      "transcript": "Sabi ng kakilala ni Demi, pare-pareho raw at awtomatiko ang allowance ng lahat ng BHW. Nagtanong siya, 'Anong benepisyo at anong kondisyon?' Anim ang kategorya: hazard at subsistence allowance, training, education, at career enrichment, civil service eligibility, libreng legal services, at preferential access sa loans para sa organisadong grupo. Kailangan ang rehistrasyon kung saan naglilingkod. Saklaw ang akreditadong BHW na aktibo at regular ang tungkulin. May kondisyon pa ang bawat benepisyo at review kapag lokal ang pondo. Hazard: exposure sa panganib na validated ng tamang awtoridad. Subsistence: serbisyo sa isolated station para available anumang oras. Magkaiba ang kondisyon, huwag mag-imbento ng halaga. Tanong ni Demi sa RHU, 'Sino ang tamang contact para matiyak ang katayuan, ebidensya, validation, at lokal na approval?' Tanong pa lamang ito, hindi pa alam ang kanyang entitlement. Ipaliwanag ang benepisyo at kondisyon, saka piliin ang verification. Walang pangakong awtomatikong bayad, at walang pagsisisi sa hindi nakatanggap. Magsanay gamit ang kathang-isip na kaso."
+    },
+    {
+      "id": "story-en",
+      "language": "en",
+      "sha256": "7f3ff1735b61917f7cb0c71a0cdd9a486bb0575543874751736eed10620c0396",
+      "delivery": {
+        "pacing": "Deliberate, steady instructional pace appropriate for educational modules.",
+        "pitch_and_pace_variation": "Contains adequate modulation across list items, declarative statements, and questions, though exhibiting the consistent cadence typical of synthetic or formal educational narration.",
+        "question_intonation": "The embedded questions at 00:05–00:08 ('Which benefit in which conditions?') and 00:55–01:00 ('Who can help verify status, evidence, validation, and local approval?') carry natural inquiry inflection."
+      },
+      "pronunciation_flags": [],
+      "other_flags": [],
+      "transcript": "Demi hears that every BHW gets the same allowance automatically. She asks, which benefit in which conditions? Six categories: hazard and subsistence allowances, training, education, and career enrichment, civil service eligibility, free legal services, and preferential loan access for organized groups. Registration where service is rendered is required. The act covers accredited BHWs actively and regularly performing duties. Each benefit has conditions, with board review when local funds are used. Hazard: risk exposure, validated by proper authorities. Subsistence: service within an isolated station for availability at all times. Different conditions. Do not invent an amount. Demi asks the RHU, who can help verify status, evidence, validation, and local approval? This is only a question. Her entitlement remains unverified. Explain the benefit and conditions, then choose verification. Promise no automatic payment, and do not blame non-recipients. Practice with a fictional case."
+    }
+  ],
+  "interpretation": [
+    "The model reports segmented synthetic cadence/timbre variation in the English application check around 0:03–0:08. All synthesis requests use Kore; a second speaker is not established.",
+    "The Filipino conditions recording around 01:19–01:21 and story summary transcript render authored pagsisi (blame) as pagsisisi (regret). Transcription alone cannot resolve this distinction. The surrounding statements explicitly reject blaming non-recipients; retain this timestamp for human listening rather than silently claiming exact pronunciation.",
+    "English story opening transcribed which benefit in which conditions instead of authored and: possible recognition or articulation ambiguity; the meaning remains an inquiry into the benefit and conditions.",
+    "Model assessments and timestamps are fallible and are not human listening, independent SME review or owner approval. No naturalness guarantee is inferred from the speech-style prompt."
+  ]
+}
