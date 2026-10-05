@@ -1,11 +1,6 @@
 name: Lesson 1.4.2 draft Gemini media
 
 on:
-  push:
-    branches: [codex/lesson-142-demi-proposal]
-    paths:
-      - .github/workflows/lesson142-media.yml
-      - scripts/lesson-142-media-build.mjs
   workflow_dispatch:
 
 permissions:
