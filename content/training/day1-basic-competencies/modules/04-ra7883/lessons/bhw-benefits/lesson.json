@@ -14,33 +14,101 @@
   },
   "sections": [
     {
+      "id": "benefits-question",
+      "concept_ids": [
+        "m4.benefits",
+        "m4.registration-requirement"
+      ],
+      "asset_ids": [
+        "demi-benefits-conditions"
+      ],
+      "takeaway_fil": "Pangalanan ang benepisyo at tiyakin ang kondisyon bago mangako.",
+      "takeaway_en": "Name the benefit and verify its conditions before promising anything.",
+      "check": null
+    },
+    {
       "id": "section-3",
+      "concept_ids": [
+        "m4.benefits"
+      ],
+      "asset_ids": [
+        "demi-benefits-conditions"
+      ],
+      "takeaway_fil": "Anim ang kategorya; hindi lahat ay buwanang bayad o personal na pautang.",
+      "takeaway_en": "There are six categories; they are not all monthly payments or personal loans.",
+      "check": null
+    },
+    {
+      "id": "registration-and-conditions",
       "concept_ids": [
         "m4.benefits",
         "m4.registration-requirement",
         "m4.bhw-cap"
       ],
       "asset_ids": [
-        "practice-map"
+        "demi-benefits-conditions"
       ],
-      "takeaway_fil": "Ang mga benepisyong ito ay hindi awtomatiko — nakasalalay ito sa tamang rehistrasyon sa local health board.",
-      "takeaway_en": "These benefits aren't automatic — they depend on proper registration with the local health board.",
+      "takeaway_fil": "Kailangan ang rehistrasyon; hindi nito ginagarantiya ang bawat benepisyo.",
+      "takeaway_en": "Registration is required; it does not guarantee every benefit.",
+      "check": null
+    },
+    {
+      "id": "compare-allowances",
+      "concept_ids": [
+        "m4.benefits",
+        "m4.registration-requirement"
+      ],
+      "asset_ids": [
+        "demi-benefits-conditions"
+      ],
+      "takeaway_fil": "Tingnan ang tiyak na serbisyo at kondisyon; huwag magtakda ng iisang halaga.",
+      "takeaway_en": "Check the specific service and conditions; do not assume one fixed amount.",
+      "check": null
+    },
+    {
+      "id": "benefit-verification",
+      "concept_ids": [
+        "m4.benefits",
+        "m4.registration-requirement"
+      ],
+      "asset_ids": [
+        "demi-benefits-conditions"
+      ],
+      "takeaway_fil": "Magtanong nang tiyak at walang pangakong pera o resulta.",
+      "takeaway_en": "Ask a specific question without promising money or an outcome.",
+      "check": null
+    },
+    {
+      "id": "benefits-application-check",
+      "concept_ids": [
+        "m4.benefits",
+        "m4.registration-requirement"
+      ],
+      "asset_ids": [
+        "demi-benefits-conditions"
+      ],
+      "takeaway_fil": "Ipaliwanag ang kondisyon at piliin ang naaangkop na verification.",
+      "takeaway_en": "Explain the condition and choose an appropriate verification step.",
       "check": {
-        "prompt_fil": "Paano ipapaliwanag ang benepisyo?",
-        "prompt_en": "How should a benefit be explained?",
+        "prompt_fil": "Ano ang pinakamainam na tugon ni Demi tungkol sa hazard allowance?",
+        "prompt_en": "What is Demi’s best response about hazard allowance?",
         "options": [
           {
-            "fil": "May itinakdang kondisyon at proseso; alamin ang naaangkop na patakaran.",
-            "en": "It has defined conditions and procedures; check the applicable rules."
+            "fil": "Ipaliwanag na kailangan ang katayuan at rehistrasyon, validated na exposure sa tungkulin at naaangkop na local review; itanong sa RHU ang tamang contact para sa ebidensiya at awtoridad bago mangako.",
+            "en": "Explain status and registration, validated duty-related exposure and applicable local review; ask the RHU for the appropriate evidence and authority contact before promising anything."
           },
           {
-            "fil": "Awtomatikong pare-pareho ang lahat ng allowance.",
-            "en": "All allowances are automatically identical."
+            "fil": "Ipangako ang awtomatikong pare-parehong allowance sa lahat; iisa naman ang benepisyo ng BHW.",
+            "en": "Promise the same automatic allowance to everyone; all BHW benefits are the same."
+          },
+          {
+            "fil": "Sapat ang rehistrasyon o isang credential para sa lahat ng allowance, CSC eligibility at personal na loan; hindi na kailangan ang ibang kondisyon.",
+            "en": "Registration or one credential is enough for all allowances, CSC eligibility and a personal loan; no other conditions need checking."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "May itinakdang kondisyon at proseso; alamin ang naaangkop na patakaran. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "It has defined conditions and procedures; check the applicable rules. Explain why using the lesson situation."
+        "feedback_fil": "Una: tama. May shared status/registration requirements at specific conditions ang hazard allowance, kabilang ang validation ng tamang awtoridad; kailangan din ang board review/approval kapag lokal na pondo. Makatwirang contact question ang RHU, hindi kapalit ng awtoridad. Ikalawa: mali. Magkakaiba ang kondisyon at awtoridad; walang batayan ang awtomatikong pantay na bayad. Ikatlo: mali. Hindi pinapalitan ng isang credential ang exposure, kondisyon ng bawat benepisyo, local review o hiwalay na CSC application; para sa organisadong grupo at qualifying projects ang loan access, hindi personal na garantiya.",
+        "feedback_en": "First: correct. Hazard allowance has shared status/registration requirements and specific conditions, including proper-authority validation; local funds also require board review/approval. Asking the RHU for a contact is reasonable, without replacing the authorities. Second: incorrect. Conditions and authorities differ; automatic identical payment is unsupported. Third: incorrect. One credential cannot replace exposure, each benefit’s conditions, local review or a separate CSC application; loan access concerns organized groups and qualifying projects, not a personal guarantee."
       }
     }
   ],
@@ -48,35 +116,49 @@
     {
       "id": "m4.benefits",
       "read_ids": [
-        "section-3"
+        "benefits-question",
+        "section-3",
+        "registration-and-conditions",
+        "compare-allowances",
+        "benefit-verification",
+        "benefits-application-check"
       ],
       "slide_ids": [
-        "slide-section-3"
+        "slide-benefits-question",
+        "slide-section-3",
+        "slide-registration-and-conditions",
+        "slide-compare-allowances",
+        "slide-benefit-verification",
+        "slide-benefits-application-check"
       ],
       "source_ids": [
         "m4.benefits-source",
-        "m4.benefits-irr-source"
+        "ra7883-benefits",
+        "csc-bhwe"
       ]
     },
     {
       "id": "m4.registration-requirement",
       "read_ids": [
-        "section-3"
+        "registration-and-conditions",
+        "benefit-verification"
       ],
       "slide_ids": [
-        "slide-section-3"
+        "slide-registration-and-conditions",
+        "slide-benefit-verification"
       ],
       "source_ids": [
-        "m4.registration-requirement-source"
+        "m4.registration-requirement-source",
+        "ra7883-benefits"
       ]
     },
     {
       "id": "m4.bhw-cap",
       "read_ids": [
-        "section-3"
+        "registration-and-conditions"
       ],
       "slide_ids": [
-        "slide-section-3"
+        "slide-registration-and-conditions"
       ],
       "source_ids": [
         "m4.bhw-cap-source"
@@ -86,45 +168,48 @@
   "sources": [
     {
       "id": "m4.benefits-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "DOH Facilitator Guide (2022), original PDF25–26 / printed16–17: timing and benefit-source recommendations",
       "pdf_pages": [
-        13
+        25,
+        26
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf"
     },
     {
       "id": "m4.registration-requirement-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "DOH Facilitator Guide (2022), original PDF27 / printed18: board responsibilities",
       "pdf_pages": [
-        13
+        27
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf"
     },
     {
       "id": "m4.bhw-cap-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
-      "pdf_pages": [
-        13
-      ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "title": "RA7883 section5: DOH household ratio and nationwide cap; accessed5 October2026",
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html"
     },
     {
-      "id": "m4.benefits-irr-source",
-      "title": "RA 7883 Implementing Rules and Regulations — DOH summary of BHW incentives and benefits",
-      "url": "https://web.archive.org/web/20220504133955/https://doh.gov.ph/faqs/What-are-the-incentives-and-benefits-of-BHWs-under-the-Implementing-Rules-and-Regulations-IRR-of-R.A.-7883"
+      "id": "ra7883-benefits",
+      "title": "RA7883 sections4,6(a–f),7: registration, benefit-specific conditions and local-fund review; accessed5 October2026",
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html"
+    },
+    {
+      "id": "csc-bhwe",
+      "title": "CSC Barangay Health Worker Eligibility: separate qualifications and application; accessed5 October2026",
+      "url": "https://www.csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "demi-benefits-conditions",
+      "path": "/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png",
+      "content_hash": "2f0be96fe3d80d36c4a1dc9f4d5ff2442731f05c5f66eda999109fd7eac23a1b",
+      "alt_fil": "Tinatalakay ni Demi at ng kasamahan ang tanong tungkol sa benepisyo gamit ang dalawang blankong question sheets.",
+      "alt_en": "Demi and a colleague discuss a benefits question using two blank question sheets.",
+      "caption_fil": "Benepisyo · Kondisyon · Verification. Draft na eksena; hinihintay ang owner review.",
+      "caption_en": "Benefit · Conditions · Verification. Draft scene awaiting owner review.",
+      "provenance": "Original built-in image_gen illustration, 5 October 2026, derived from the owner-approved fictional Demi reference with SHA-256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. Exact prompt: Use case: identity-preserve. Create an original landscape draft educational illustration for lesson 1.4.2 Benefits and conditions. Input image is an approved identity and style reference. Preserve Demi, the woman on the left: fictional Filipina adult about 35, medium brown skin, oval face, short slightly wavy dark bob tucked behind ears, plain teal collared blouse, dark trousers, no badge. Preserve her recognizable face and natural proportions. Create a different moment of the same nonclinical discussion: Demi thoughtfully gestures with an open hand toward two separate entirely blank question/planning sheets on a wooden table while the adult Filipina colleague in a cream blouse listens. Show both complete faces and all visible hands fully inside frame with generous margins. Airy Philippine community meeting room, daylight, modest shelves and plants, realistic painterly educational illustration matching reference. Wide composition suitable for contained phone display. No certificates, actual payments, coins, cash, readable forms, records, logos, official seals, badges, signs, text, watermark or clinical procedure. This is a planning question; accreditation and entitlement remain unverified.",
+      "review_status": "draft"
     }
   ]
 }

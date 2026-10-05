@@ -1,3 +1,4 @@
+import {BhwBenefitsStory, calculateBhwBenefitsMetadata, BENEFITS_FPS, BENEFITS_FALLBACK_DURATION} from "./bhw-benefits/BhwBenefitsStory";
 import {BhwLegalRoleStory, calculateBhwLegalRoleMetadata, LEGAL_ROLE_FPS, LEGAL_ROLE_FALLBACK_DURATION} from "./bhw-legal-role/BhwLegalRoleStory";
 import {BhsImprovementStory, calculateBhsImprovementMetadata, IMPROVEMENT_FPS, IMPROVEMENT_FALLBACK_DURATION} from "./bhs-improvement/BhsImprovementStory";
 import {BhsResourcesStory, calculateBhsResourcesMetadata, RESOURCES_FPS, RESOURCES_FALLBACK_DURATION} from "./bhs-resources/BhsResourcesStory";
@@ -294,6 +295,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`bhw-legal-role-${language}`} id={language === "fil" ? "BhwLegalRoleStoryFil" : "BhwLegalRoleStoryEn"}
           component={BhwLegalRoleStory} calculateMetadata={calculateBhwLegalRoleMetadata}
           durationInFrames={LEGAL_ROLE_FALLBACK_DURATION} fps={LEGAL_ROLE_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhw-benefits-${language}`} id={language === "fil" ? "BhwBenefitsStoryFil" : "BhwBenefitsStoryEn"}
+          component={BhwBenefitsStory} calculateMetadata={calculateBhwBenefitsMetadata}
+          durationInFrames={BENEFITS_FALLBACK_DURATION} fps={BENEFITS_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

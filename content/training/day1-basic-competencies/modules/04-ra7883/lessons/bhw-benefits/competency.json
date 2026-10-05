@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor.",
-      "observable_en": "Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.",
-      "not_yet_fil": "Hindi pa maipaliwanag ang punto o nangangako nang hindi tinitiyak ang kondisyon.",
-      "not_yet_en": "Cannot yet explain the point or makes promises without checking conditions.",
+      "observable_fil": "Naipapangalan at naipapaliwanag ang anim na kategorya gamit ang listahan; naihihiwalay ang katayuan/rehistrasyon at specific conditions; nakapipili ng verification sa tamang awtoridad/contact nang walang garantiya, imbentong quota o pagsisi.",
+      "observable_en": "Names and explains the six categories using the reference list; distinguishes status/registration and specific conditions; chooses verification with the proper authority/contact without guarantees, invented quotas or blame.",
+      "not_yet_fil": "Nangangako pa rin ng awtomatikong pantay na bayad o credential-only entitlement, nag-iimbento ng quota o naninisi, o hindi maiugnay ang benepisyo sa verification.",
+      "not_yet_en": "Still promises automatic equal payment or credential-only entitlement, invents quotas or blames non-recipients, or cannot connect the benefit with verification.",
       "levels": {
-        "kaya_na_fil": "Tamang paliwanag at hakbang, nang walang untag.",
-        "kaya_na_en": "Accurate explanation and action without prompting.",
-        "kailangan_practice_fil": "Tamang direksiyon ngunit kailangan ng gabay sa detalye.",
-        "kailangan_practice_en": "Correct direction but needs guidance on details.",
-        "hindi_pa_fil": "Hindi pa angkop ang paliwanag o hakbang.",
-        "hindi_pa_en": "Explanation or action is not yet appropriate."
+        "kaya_na_fil": "Tamang kategorya, shared at specific conditions, at tiyak na verification nang walang untag o pangako.",
+        "kaya_na_en": "Accurate categories, shared and specific conditions, and specific verification without prompts or promises.",
+        "kailangan_practice_fil": "Tama ang direksiyon ngunit kailangan ng untag sa kondisyon, provider o ebidensiya.",
+        "kailangan_practice_en": "Correct direction but needs prompts for conditions, provider or evidence.",
+        "hindi_pa_fil": "Hindi pa maiugnay ang benepisyo sa kondisyon at verification, o nagpapatuloy ang garantiya, imbentong quota o pagsisi.",
+        "hindi_pa_en": "Cannot yet connect benefits with conditions and verification, or persists with guarantees, invented quotas or blame."
       }
     }
   ]
