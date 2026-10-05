@@ -52,7 +52,7 @@ function Scene({index, language}: {index: number; language: "fil" | "en"}) {
     <div style={{position: "absolute", top: 28, right: 40, fontSize: 16, fontWeight: 800}}>{String(index + 1).padStart(2, "0")} / 06</div>
     <Graphic index={index} language={language} frame={frame}/>
     <div style={{position: "absolute", top: 96, left: 42, width: framed ? 345 : 770, opacity: enter, transform: `translateY(${(1 - enter) * 15}px)`}}>
-      <div style={{fontSize: 16, fontWeight: 800, color: gold, marginBottom: 10}}>{index === 0 ? "BHW Demi" : language === "fil" ? "Legal na batayan" : "Legal basis"}</div>
+      <div style={{fontSize: 16, fontWeight: 800, color: gold, marginBottom: 10}}>{index === 0 ? "Demi" : language === "fil" ? "Legal na batayan" : "Legal basis"}</div>
       <div style={{fontSize: framed ? 33 : 39, fontWeight: 900, lineHeight: 1.08}}>{beat[`title_${language}`]}</div>
       <div style={{fontSize: 21, marginTop: 15, lineHeight: 1.28}}>{beat[`detail_${language}`]}</div>
     </div>

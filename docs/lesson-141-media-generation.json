@@ -58,8 +58,8 @@
         }
       ],
       "video": {
-        "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-453eff668ead.mp4",
-        "content_hash": "453eff668ead2d53f001f1d397438ebf220f685b1be4b606a2c094a1544a6f7b",
+        "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-41631ff8f4fd.mp4",
+        "content_hash": "41631ff8f4fdc2b3f3108bf9153f9b98c3af2ea5dc7cb6ab62cafecdb7d367fa",
         "duration_s": 79,
         "captions": {
           "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-ad668b8cda77.vtt",
@@ -126,21 +126,21 @@
         }
       ],
       "video": {
-        "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-24d846e6d582.mp4",
-        "content_hash": "24d846e6d58253c3431d7c4e07374ef726bd2ad42eead016daeb3d616a0426d1",
+        "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-66fe85800653.mp4",
+        "content_hash": "66fe858006535aff9fb53da30b8278db51cfbf77f4ef0cfc83aec22841d8e027",
         "duration_s": 73,
         "captions": {
           "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-a6dae5eba731.vtt",
           "content_hash": "a6dae5eba731a534b70907c383b431b778b811e49d70063a86128244bad10be3"
         },
         "poster": {
-          "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-a0a8e004a8d7-poster.jpg",
-          "content_hash": "a0a8e004a8d734beb1fc24c6398928c6ebf6a1e3650cd2fea7f1b876c8d961ed"
+          "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-8bfa7ba565fc-poster.jpg",
+          "content_hash": "8bfa7ba565fc7f7247b83ae088bb55bcbee54f5012261d69bdda9c9cb9c9773c"
         }
       },
       "poster": {
-        "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-a0a8e004a8d7-poster.jpg",
-        "content_hash": "a0a8e004a8d734beb1fc24c6398928c6ebf6a1e3650cd2fea7f1b876c8d961ed"
+        "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-8bfa7ba565fc-poster.jpg",
+        "content_hash": "8bfa7ba565fc7f7247b83ae088bb55bcbee54f5012261d69bdda9c9cb9c9773c"
       }
     }
   ],
@@ -148,6 +148,15 @@
     "date": "2026-10-05T02:53:21.349Z",
     "reason": "Translate final verification footer into Filipino; unchanged synthesized narration and measured captions",
     "log": "lesson141-render-fil-final.log",
+    "platform": "Windows local Remotion"
+  },
+  "final_visual_rerender": {
+    "date": "2026-10-05T03:14:53.509Z",
+    "reason": "Opening tag uses Demi without presupposing BHW status. Filipino summary footer translated; unchanged synthesized narration and measured captions.",
+    "logs": [
+      "lesson141-render-fil-final.log",
+      "lesson141-render-en-final.log"
+    ],
     "platform": "Windows local Remotion"
   }
 }
