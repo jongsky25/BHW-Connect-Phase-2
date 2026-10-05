@@ -69,4 +69,9 @@ describe('lesson 1.4.4 Demi accreditation draft',()=>{
   for(const lang of ['fil','en']){const notes=readFileSync(path.join(leaf,`facilitator.${lang}.md`),'utf8');expect([...notes.matchAll(/^## \[([^\]]+)\]/gm)].map(m=>m[1])).toEqual(FACILITATOR_SECTION_IDS);for(const card of ['Card A','Card B','Card C'])expect(notes).toContain(card);expect(notes).toContain('30');expect(notes).toContain('180');}
   expect(authored.notes.observation_indicators).toHaveLength(1);expect(authored.notes.observation_indicators[0].objective_index).toBe(0);expect(Object.keys(authored.notes.observation_indicators[0].levels)).toHaveLength(6);
  });
+ it('retains every non-target shared QA/activity row and the complete non-target module guide text',()=>{
+  const qa=json(path.join(dir,'qa-entries.json')).entries.filter(r=>!['d1m4-accreditation','d1m4-board-duties'].includes(r.id));expect(qa.map(r=>r.id).sort()).toEqual(Object.keys(baseline.shared_non_target_qa_hashes).sort());for(const row of qa)expect(sha(JSON.stringify(row))).toBe(baseline.shared_non_target_qa_hashes[row.id]);
+  const activity=json(path.join(dir,'activities.json'));const rows=Array.isArray(activity)?activity:activity.activities??activity.entries;expect(rows.map(r=>r.id).sort()).toEqual(Object.keys(baseline.shared_all_activity_hashes).sort());for(const row of rows)expect(sha(JSON.stringify(row))).toBe(baseline.shared_all_activity_hashes[row.id]);
+  for(const p of json(path.join(root,'docs/lesson-144-shared-scope-baseline.json')).protectedGuides){const t=readFileSync(path.join(dir,`facilitator-notes.${p.language}.md`),'utf8').replaceAll('\r\n','\n').replace(/^5\. [\s\S]*?(?=^6\. )/m,'').split('\n3. **Lesson 1.4.4:')[0];expect(t).toBe(p.original_non_target_text.replaceAll('\r\n','\n'));}
+ });
 });

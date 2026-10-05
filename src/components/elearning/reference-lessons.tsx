@@ -714,7 +714,7 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {lesson.lesson_key === "bhw-accreditation" ? ui(
+              {lesson.lesson_key === "bhw-accreditation" && lesson.revision.assets.some(asset => asset.id === "demi-accreditation-question") ? ui(
                 "Tinatayang 8–10 minuto para sa sariling pag-aaral; hindi kasama ang opsyonal na kuwento at audio replay. Hiwalay ang guided practice.",
                 "Estimated 8–10 minutes for independent study, excluding the optional story and audio replay. Guided practice is separate.",
               ) : lesson.lesson_key === "bhw-eligibility" ? ui(

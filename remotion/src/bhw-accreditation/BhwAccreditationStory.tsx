@@ -7,7 +7,7 @@ import {BHW_ACCREDITATION_BEATS} from "./narration";
 export const ACCREDITATION_FPS = 30;
 export const ACCREDITATION_FALLBACK_DURATION = 75 * ACCREDITATION_FPS;
 export type BhwAccreditationStoryProps = {language: "fil" | "en"; beatFrames?: number[]; audioSrc?: string};
-type Timings = {language: string; durationSeconds: number; beats: {zone: string; start_ms: number; end_ms: number}[]};
+type Timings = {language: string; durationSeconds: number; beats: {zone: string; index: number; text: string; start_ms: number; end_ms: number}[]};
 
 export const calculateBhwAccreditationMetadata: CalculateMetadataFunction<BhwAccreditationStoryProps> = async ({props}) => {
   const response = await fetch(staticFile(`bhw-accreditation/narration-${props.language}.json`));
@@ -16,7 +16,8 @@ export const calculateBhwAccreditationMetadata: CalculateMetadataFunction<BhwAcc
   if (timing.language !== props.language || !Number.isFinite(timing.durationSeconds) || timing.durationSeconds <= 0 ||
     timing.durationSeconds + 1.1 > 90 || timing.beats.length !== BHW_ACCREDITATION_BEATS.length ||
     timing.beats[0].start_ms !== 0 || timing.beats.some((b, i) =>
-      b.zone !== BHW_ACCREDITATION_BEATS[i].id || !Number.isFinite(b.start_ms) || !Number.isFinite(b.end_ms) ||
+      b.zone !== BHW_ACCREDITATION_BEATS[i].id || b.index !== i || b.text !== BHW_ACCREDITATION_BEATS[i][props.language] ||
+      !Number.isFinite(b.start_ms) || !Number.isFinite(b.end_ms) ||
       b.end_ms <= b.start_ms || b.end_ms > timing.durationSeconds * 1000 + 50 ||
       (i > 0 && b.start_ms < timing.beats[i - 1].end_ms)))
     throw new Error("BhwAccreditation scene timing mismatch");
