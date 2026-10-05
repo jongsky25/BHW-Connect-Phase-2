@@ -255,7 +255,7 @@ export function ReferenceLessons(props: Props) {
             alt: ui("Magalang na nakikinig si BHW Mimi sa magulang na may kargang sanggol sa health station.", "BHW Mimi respectfully listens to a parent holding an infant at the health station."),
             caption: ui("Makinig · kumpirmahin · umalalay", "Listen · confirm · support"),
           }
-      : lesson?.lesson_key === "bhw-legal-role"
+      : lesson?.lesson_key === "bhw-legal-role" && lesson.revision.assets.some(asset => asset.id === "demi-legal-basis")
         ? {src: "/training/bhw-1-4/demi-legal-basis-032a985f9c33.png", alt: ui("Nagtatanong si Demi sa health-team support person sa mesa ng health station; blanko ang learning sheet.", "Demi asks a health-team support person a question at a health-station desk; the learning sheet is blank."), caption: ui("Unawain ang batayan. Tiyakin ang katayuan.", "Understand the basis. Verify status.")}
       : lesson?.lesson_key === "bhs-improvement"
         ? {src: "/training/bhw-1-3/mimi-workable-suggestion-8e880add36c1.png", alt: ui("Tinatalakay ni BHW Mimi ang isang mungkahing checklist kasama ang lokal na responsable sa meeting area.", "BHW Mimi discusses a proposed checklist with the local person responsible for the meeting area."), caption: ui("Isang mungkahi · Tiyakin ang saklaw · Magkasundo sa follow-up", "One proposal · Check authority · Agree on follow-up")}

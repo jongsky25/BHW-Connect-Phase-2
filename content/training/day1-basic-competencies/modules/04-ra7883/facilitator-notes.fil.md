@@ -56,8 +56,7 @@ kundi karapatan.
   ito?"
 - "May pagkakataon na ba kayong naghintay nang matagal sa isang
   proseso nang walang follow-up? Ano ang nangyari?"
-- "Paano ninyo maipapaliwanag sa isang bagong BHW kung bakit may
-  proseso ng akreditasyon bago sila makapagsimula?"
+- "Paano ipaliliwanag ang depinisyon sa RA 7883 at isang hakbang para matiyak ang ebidensiya ng pagsasanay at akreditasyon?"
 
 ## Susi sa sagot ng mga retrieval check
 

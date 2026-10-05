@@ -165,6 +165,46 @@
       "caption_en": "Understand the basis. Verify status.",
       "provenance": "Original built-in imagegen, 5 October 2026 Asia/Manila. New fictional Demi identity; draft awaiting owner approval. Model identifier not returned. Exact prompt: Use case: illustration-story. Asset type: original fictional character reference and lesson scene for Philippine BHW training lesson 1.4.1. Create a warm polished editorial illustration, landscape 3:2. Demi is a fictional adult Filipina around 35, medium brown skin, oval face, short slightly wavy dark bob hair tucked behind ears, teal plain collared blouse, dark trousers, no badge. She sits at a modest barangay health station desk in a nonclinical discussion with an adult Filipina health-team support person in a plain cream blouse. Demi asks an attentive thoughtful question, one hand open in a natural gesture; the support person listens. A blank learning sheet and pencil on desk. Spacious bright clean room with window and simple shelving, warm daylight, natural believable anatomy. Frame both entire faces, upper bodies and all visible hands with safe margins. No patients, clinical actions, medicines, certificate presentation, seal, official credential, name tag, readable text, logos or watermarks. Demi must be a new distinctive face, not a renamed prior character. Calm supportive learning mood, clear readable faces, tasteful teal and warm sand palette. This is a draft fictional educational illustration.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-legal-role-story",
+      "alt_fil": "Kuwentong may salaysay: ipinaliliwanag ni Demi ang legal na batayan at nagtatanong tungkol sa pag-verify ng ebidensiya.",
+      "alt_en": "Narrated story: Demi explains the legal basis, distinguishes board authority and asks how to verify evidence.",
+      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson 1.4.1; original built-in imagegen illustration generated 2026-10-05, establishing a new fictional draft Demi identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. New media are draft; no owner or independent policy SME approval.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-453eff668ead.mp4",
+          "content_hash": "453eff668ead2d53f001f1d397438ebf220f685b1be4b606a2c094a1544a6f7b",
+          "duration_s": 79,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-ad668b8cda77.vtt",
+            "content_hash": "ad668b8cda77033cde29d0e83f043bd7ff5ae6e6374b5aff0da0a77e70de6247"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-5cf40e107789-poster.jpg",
+            "content_hash": "5cf40e107789fbcfec55b0fa90458e175093017b4ce2ba6e0529b6a989e35b88"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-24d846e6d582.mp4",
+          "content_hash": "24d846e6d58253c3431d7c4e07374ef726bd2ad42eead016daeb3d616a0426d1",
+          "duration_s": 73,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-a6dae5eba731.vtt",
+            "content_hash": "a6dae5eba731a534b70907c383b431b778b811e49d70063a86128244bad10be3"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-a0a8e004a8d7-poster.jpg",
+            "content_hash": "a0a8e004a8d734beb1fc24c6398928c6ebf6a1e3650cd2fea7f1b876c8d961ed"
+          }
+        }
+      },
+      "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-5cf40e107789-poster.jpg",
+      "content_hash": "5cf40e107789fbcfec55b0fa90458e175093017b4ce2ba6e0529b6a989e35b88"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-legal-role-story"
 }

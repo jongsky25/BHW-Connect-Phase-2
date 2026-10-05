@@ -55,7 +55,7 @@ function Scene({index, language}: {index: number; language: "fil" | "en"}) {
       <div style={{fontSize: framed ? 33 : 39, fontWeight: 900, lineHeight: 1.08}}>{beat[`title_${language}`]}</div>
       <div style={{fontSize: 21, marginTop: 15, lineHeight: 1.28}}>{beat[`detail_${language}`]}</div>
     </div>
-    {index === 5 && <div style={{position: "absolute", bottom: 58, left: 42, display: "flex", gap: 12, fontWeight: 800, fontSize: 18}}><span>{language === "fil" ? "Batayan + awtoridad" : "Basis + authority"}</span><span>•</span><span>{language === "fil" ? "Verify evidence" : "Verify evidence"}</span></div>}
+    {index === 5 && <div style={{position: "absolute", bottom: 58, left: 42, display: "flex", gap: 12, fontWeight: 800, fontSize: 18}}><span>{language === "fil" ? "Batayan + awtoridad" : "Basis + authority"}</span><span>•</span><span>{language === "fil" ? "Tiyakin ang ebidensiya" : "Verify evidence"}</span></div>}
     <div style={{position: "absolute", left: 42, right: 42, bottom: 25, height: 4, background: "#ffffff33", borderRadius: 4}}><div style={{height: "100%", background: gold, width: `${Math.min(100, frame / Math.max(1, durationInFrames - 1) * 100)}%`}}/></div>
   </AbsoluteFill>;
 }

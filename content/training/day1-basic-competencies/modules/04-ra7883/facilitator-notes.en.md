@@ -2,8 +2,7 @@
 
 ## Timing
 
-TESDA Training Regulations set **3 hours** for the competency *Develop
-Life and Career Decisions* (facilitator-guide PDF 23).
+The DOH Facilitator Guide reports a **3-hour minimum** for *Develop Life and Career Decisions* (original PDF 25 / printed 16, verified 5 October 2026). The table is an authored split; sibling durations remain unchanged.
 
 Suggested split:
 
@@ -55,8 +54,7 @@ asking about them isn't greed, it's a right.
   it?"
 - "Have you ever waited a long time on a process with no follow-up?
   What happened?"
-- "How would you explain to a new BHW why an accreditation process
-  exists before they can start?"
+- "How would you explain the RA 7883 definition and choose one step to verify training and accreditation evidence?"
 
 ## Answer key to the retrieval checks
 
