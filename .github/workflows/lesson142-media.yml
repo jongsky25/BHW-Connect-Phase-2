@@ -11,6 +11,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  draft-media143:
+    if: github.ref == 'refs/heads/codex/lesson-143-demi-proposal'
+    uses: ./.github/workflows/lesson143-media.yml
+    secrets: inherit
   draft-media:
     if: github.ref == 'refs/heads/codex/lesson-142-demi-proposal'
     runs-on: ubuntu-latest

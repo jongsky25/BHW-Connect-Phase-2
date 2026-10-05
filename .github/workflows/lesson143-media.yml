@@ -2,6 +2,7 @@ name: Lesson 1.4.3 draft Gemini media
 
 on:
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: read
