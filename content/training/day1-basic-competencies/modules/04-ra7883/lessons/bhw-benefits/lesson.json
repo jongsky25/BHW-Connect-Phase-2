@@ -140,12 +140,18 @@
     {
       "id": "m4.registration-requirement",
       "read_ids": [
+        "benefits-question",
         "registration-and-conditions",
-        "benefit-verification"
+        "compare-allowances",
+        "benefit-verification",
+        "benefits-application-check"
       ],
       "slide_ids": [
+        "slide-benefits-question",
         "slide-registration-and-conditions",
-        "slide-benefit-verification"
+        "slide-compare-allowances",
+        "slide-benefit-verification",
+        "slide-benefits-application-check"
       ],
       "source_ids": [
         "m4.registration-requirement-source",
