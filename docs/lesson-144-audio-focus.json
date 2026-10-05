@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-05T10:16:21.921Z",
-  "source_commit": "d902aaf55d9c0887f650bcddca69bf3ae357d68f",
+  "date": "2026-10-05T10:26:48.291Z",
+  "source_commit": "a6427a16e1135990aa82a09a0c4360039021603f",
   "model": "gemini-3.8-flash",
   "method": "Focused model review of decoded actual MP3 excerpts; first-pass responses retained separately. No human listening or owner approval.",
   "records": [
@@ -11,10 +11,10 @@
       "start": 0,
       "end": 12,
       "question": "Transcribe speech and assess whether opening and following body differ in pitch/register or clearly different speakers. Do not infer gender solely from pitch. State acoustic evidence and uncertainty.",
-      "source_path": "/training/audio/04-ra7883/bhw-accreditation/section-5.fil.62489f505b2d.mp3",
-      "source_sha256": "6c816b9dd1fd903fd02be6894fb3a41203218b378b851a5f8ecbc6125f3b561c",
-      "excerpt_sha256": "e0cc8fbe15016ad1d44c78efab7bdb330b8d28ff64ba8b8cd30353598e93dbbc",
-      "model_response": "```json\n{\n  \"transcript\": \"Tungkulin sa proseso. May tiyak na pananagutan ang Local Health Board. Inilista ng magkasanib na circular ng DILG at DOH noong 2023 ang\",\n  \"observations\": \"The audio contains clear speaker and register transitions. The opening phrase ('Tungkulin sa proseso.', 00:00–00:01.6) is spoken in a higher pitch/register with an estimated fundamental frequency (F0) around 200–220 Hz. The immediately following sentence ('May tiyak na pananagutan ang Local Health Board', 00:02.0–00:05.5) shifts sharply to a clearly different speaker with a significantly lower pitch (F0 around 100–115 Hz) and deeper resonance. At 00:05.8–00:11.3, the speech switches back to a higher pitch (F0 around 210–230 Hz), matching the register of the opening voice.\",\n  \"uncertainty\": \"None regarding the presence of distinct speakers and major pitch shifts. There is slight uncertainty as to whether the first and third segments are the exact same individual or two acoustically similar speakers.\"\n}\n```"
+      "source_path": "/training/audio/04-ra7883/bhw-accreditation/section-5.fil.a0cdaaff0484.mp3",
+      "source_sha256": "b713462498e648c4ec57c1a9a1adb660d63829cba7c9086d23a3da0aef6150f6",
+      "excerpt_sha256": "86389b1ea7cfc15330096c2ac9a63c4f9e3141c29e6ddfca4b8ccb9d25a36374",
+      "model_response": "```json\n{\n  \"transcript\": \"Tungkulin sa proseso. May tiyak na pananagutan ang Local Health Board. Inilista ng magkasanib na circular ng DILG at DOH noong 2023\",\n  \"observations\": {\n    \"opening\": {\n      \"text\": \"Tungkulin sa proseso.\",\n      \"time_range\": \"00:00 - 00:01.8\",\n      \"characteristics\": \"Read as a section heading with a slightly formal, steady declarative cadence. Fundamental frequency averages around 200–220 Hz.\"\n    },\n    \"body\": {\n      \"text\": \"May tiyak na pananagutan ang Local Health Board. Inilista ng magkasanib na circular ng DILG at DOH noong 2023\",\n      \"time_range\": \"00:02.0 - 00:11.7\",\n      \"characteristics\": \"Narrative pacing with continuous prosodic variation between approximately 190 Hz and 240 Hz.\"\n    },\n    \"comparison\": \"The acoustic profile, including vocal timbre, formant resonance, background noise profile, and recording environment, remains consistent between the opening heading and the following body. The minor difference in intonation reflects a shift from reading a title to delivering expository body sentences rather than a change in speaker or register.\"\n  },\n  \"uncertainty\": \"Low. The acoustic evidence strongly suggests the entire segment is spoken by a single speaker.\"\n}\n```"
     },
     {
       "id": "board-voice-fil-middle",
@@ -23,10 +23,10 @@
       "start": 24,
       "end": 36,
       "question": "Transcribe speech and assess vocal consistency. Distinguish expressive pitch/register from a clearly different speaker; state uncertainty.",
-      "source_path": "/training/audio/04-ra7883/bhw-accreditation/section-5.fil.62489f505b2d.mp3",
-      "source_sha256": "6c816b9dd1fd903fd02be6894fb3a41203218b378b851a5f8ecbc6125f3b561c",
-      "excerpt_sha256": "62721a9a8d2682127d8d020d972a7166583e519c3fa4af664047d59b3297d68d",
-      "model_response": "```json\n{\n \"transcript\": \"labas ng sertipiko sa mga kwalipikadong BHW, suriin at aprubahan ang mga benepisyong gagamit ng pondong lokal, magrekomenda ng benepisyo at paglalaan ng pondo, magbigay ng\",\n \"observations\": \"The audio features a single female voice speaking clearly in Tagalog with a steady pace and consistent vocal timbre throughout the entire excerpt.\",\n \"uncertainty\": \"none\"\n}\n```"
+      "source_path": "/training/audio/04-ra7883/bhw-accreditation/section-5.fil.a0cdaaff0484.mp3",
+      "source_sha256": "b713462498e648c4ec57c1a9a1adb660d63829cba7c9086d23a3da0aef6150f6",
+      "excerpt_sha256": "c1e79085828bb7cf555b8dce15081075bb50098c871597dfdbfdd9cfed524c1a",
+      "model_response": "```json\n{\n \"transcript\": \"minutes ng pulong. Maglabas ng sertipiko sa mga kwalipikadong BHW. Suriin at aprubahan ang mga benepisyong gagamit ng pondong lokal. Magrekomenda\",\n \"observations\": \"The audio features a single, steady male voice speaking clearly with consistent pacing, tone, and acoustic characteristics throughout the excerpt.\",\n \"uncertainty\": \"\"\n}\n```"
     },
     {
       "id": "board-voice-fil-ending",
@@ -34,12 +34,12 @@
       "language": "fil",
       "ending": true,
       "question": "Transcribe speech and assess whether body and takeaway clearly differ in speaker or only register. Is the final syllable complete? Do not infer gender solely from pitch.",
-      "start": 61.009,
-      "end": 77.009,
-      "source_path": "/training/audio/04-ra7883/bhw-accreditation/section-5.fil.62489f505b2d.mp3",
-      "source_sha256": "6c816b9dd1fd903fd02be6894fb3a41203218b378b851a5f8ecbc6125f3b561c",
-      "excerpt_sha256": "9ae74998002d072c803f2fb1633f6382bce2768afe35646ae621844099f35761",
-      "model_response": "```json\n{\n  \"transcript\": \"at pag-aayos ng registry bilang mga tungkuling pantulong ng komite. Hindi katumbas ng opisyal na pasya ng board ang rekomendasyon lamang. May pananagutan ang board, pantulong ang komite, at may opisyal na tala ang pasya.\",\n  \"observations\": {\n    \"speaker_difference\": \"The body and takeaway segments do not clearly differ in speaker identity; both are spoken by the same synthetic (TTS) voice, differing primarily in prosody/register and pacing.\",\n    \"final_syllable_completeness\": \"The final syllable ('-sya' in 'pasya') is complete and fully audible without clipping.\"\n  },\n  \"uncertainty\": \"None\"\n}\n```"
+      "start": 64.327,
+      "end": 80.327,
+      "source_path": "/training/audio/04-ra7883/bhw-accreditation/section-5.fil.a0cdaaff0484.mp3",
+      "source_sha256": "b713462498e648c4ec57c1a9a1adb660d63829cba7c9086d23a3da0aef6150f6",
+      "excerpt_sha256": "59e20d86f2e36ec3e1881074634a92235b92d003a9e04a5f4db167010506f138",
+      "model_response": "```json\n{\n  \"transcript\": \"at pag-aayos ng registry bilang mga tungkuling pantulong ng komite. Hindi katumbas ng opisyal na pasya ng board ang rekomendasyon lamang. May pananagutan ang board, pantulong ang komite, at may opisyal na tala ang pasya.\",\n  \"observations\": {\n    \"speaker_difference\": \"The audio features two distinct speakers rather than a mere shift in register. The first segment (0:00–0:04) and the final takeaway segment (0:10–0:15) are spoken by Speaker 1 (a higher-pitched speaker with distinct vocal resonance and cadence), whereas the middle segment (0:04–0:09) is delivered by Speaker 2 (a lower-pitched voice with different formant structures and speech rhythm).\",\n    \"final_syllable_completeness\": \"The final syllable ('-sya' in 'pasya') is fully and clearly articulated without truncation.\"\n  },\n  \"uncertainty\": \"Low\"\n}\n```"
     },
     {
       "id": "roles-fil-last-sentence",
@@ -52,7 +52,7 @@
       "source_path": "/training/audio/04-ra7883/bhw-accreditation/roles-and-records.fil.af8e730e444f.mp3",
       "source_sha256": "d59d505508779e733951882de1b6a25c277d5983b698ab531fea9231d563821a",
       "excerpt_sha256": "e415041088e41fea6a1b04cf41cf91bf390fcac33e9d7196506e2d38beb34bdd",
-      "model_response": "```json\n{\n  \"transcript\": \"at ang RHU o Municipal o City Health Office. Hindi kapalit ng opisyal na pasya ang kanilang tulong, isang panayam o isang training certificate. Tiyakin kung sino ang tumutulong at saan nakatala ang pasya ng board.\",\n  \"observations\": \"The negation ('Hindi') and the distinction between assistance and an official decision ('kapalit ng opisyal na pasya ang kanilang tulong') are clearly articulated and fully intelligible. The delivery is fluent and natural, with no false starts, stutters, or grammatical breaks.\",\n  \"uncertainty\": \"None. The audio is clear and unambiguous throughout.\"\n}\n```"
+      "model_response": "```json\n{\n  \"transcript\": \"at ang RHU o Municipal o City Health Office. Hindi kapalit ng opisyal na pasya ang kanilang tulong, isang panayam, o isang training certificate. Tiyakin kung sino ang tumutulong, at saan nakatala ang pasya ng board.\",\n  \"observations\": \"The distinction between assistance ('tulong' / 'tumutulong') and official decision ('opisyal na pasya' / 'pasya ng board'), along with the negation ('Hindi kapalit...'), is clearly and intelligibly articulated between 00:03 and 00:15. The delivery is fluent and clear, with no false starts, stutters, or grammatical breaks.\",\n  \"uncertainty\": \"Low uncertainty. The audio is clear and fully intelligible throughout the excerpt.\"\n}\n```"
     },
     {
       "id": "citation-en",
@@ -64,7 +64,7 @@
       "source_path": "/training/audio/04-ra7883/bhw-accreditation/section-5.en.04768183e365.mp3",
       "source_sha256": "70e81bc8f45cb275749d8826681f8f53c5f9fbebd27d24fc48b1d08e610db754",
       "excerpt_sha256": "8cf46d3265b9aa1fb31cbe3c50ef5232f40ff5f96eac85370a55a7fd8782af86",
-      "model_response": "```json\n{\n  \"transcript\": \"Joint DILG and DOH circular, issued in 2023\",\n  \"observations\": \"The speaker cites a 'Joint DILG and DOH circular, issued in 2023' at 00:07–00:12. 'DILG' and 'DOH' are pronounced as initialisms (D-I-L-G and D-O-H). No specific circular/memorandum number is provided in the spoken text.\",\n  \"uncertainty\": \"None regarding the spoken text. The specific formal citation number (e.g., Joint Memorandum Circular number) is omitted in the audio.\"\n}\n```"
+      "model_response": "```json\n{\n  \"transcript\": \"Responsibilities in the process? The Local Health Board has specific responsibilities. The Joint DILG and DOH circular, issued in 2023, lists its duties: safeguard registration and accreditation, evaluate and act on applications, record decisions in a board resolution or meeting minutes, issue...\",\n  \"observations\": \"The citation mentioned is 'Joint DILG and DOH circular, issued in 2023', referring to a joint policy circular from the Department of the Interior and Local Government (DILG) and the Department of Health (DOH). Pronunciation of acronyms 'DILG' and 'DOH' is standard (spelled out or pronounced naturally as D-I-L-G and D-O-H).\",\n  \"uncertainty\": \"None regarding the spoken words; a specific circular number is not stated beyond the issuing year (2023).\"\n}\n```"
     },
     {
       "id": "card-b-en",
@@ -76,7 +76,7 @@
       "source_path": "/training/audio/04-ra7883/bhw-accreditation/accreditation-application-check.en.7629c6df5b3d.mp3",
       "source_sha256": "5eed7464ff6cf87b968ed7b9154912e044a5bd2f176d510963ff76531b7a7cf2",
       "excerpt_sha256": "4984afef68dc624b8dfb34298193a342bd875b2a3ee5f49cee5c4d122dd5e9ac",
-      "model_response": "```json\n{\n  \"transcript\": \"Choose the supported explanation. Return to Card B. There is a committee recommendation, but no verified official decision. What should Demi explain? Distinguish the recommendation from the board's decision, name the missing information,\",\n  \"observations\": {\n    \"fictional_card_name\": \"Card B\",\n    \"known_versus_missing_decision_facts\": \"There is a committee recommendation (known fact), but no verified official decision (missing fact). Later instructions specify to distinguish the recommendation from the board's decision and name the missing information.\",\n    \"intelligibility\": {\n      \"card_b\": \"Clearly intelligible at approximately 00:02–00:04 ('Return to Card B.').\",\n      \"question\": \"The question 'What should Demi explain?' is clearly intelligible at approximately 00:09–00:11.\",\n      \"negation\": \"The negation 'no' in 'but no verified official decision' is clear and distinctly audible at approximately 00:07–00:09.\"\n    }\n  },\n  \"uncertainty\": \"None; the spoken English is clean synthesized speech with no background noise or competing audio.\"\n}\n```"
+      "model_response": "```json\n{\n  \"transcript\": {\n    \"fictional_card_name\": \"Card B\",\n    \"known_versus_missing_decision_facts\": \"There is a committee recommendation, but no verified official decision.\"\n  },\n  \"observations\": {\n    \"card_b_intelligible\": true,\n    \"question_intelligible\": true,\n    \"question_text\": \"What should Demi explain?\",\n    \"negation_intelligible\": true,\n    \"negation_phrase\": \"no verified official decision\"\n  },\n  \"uncertainty\": \"The audio is clear text-to-speech with virtually no acoustic ambiguity. A minor uncertainty is the exact spelling of the proper noun 'Demi' (could alternate with 'Demy').\"\n}\n```"
     },
     {
       "id": "check-voice-fil-opening",
@@ -85,10 +85,10 @@
       "start": 0,
       "end": 16,
       "question": "Transcribe speech and assess whether vocal changes are pitch variation or clearly different speakers. Do not infer gender solely from pitch.",
-      "source_path": "/training/audio/04-ra7883/bhw-accreditation/accreditation-application-check.fil.22c9b4f22e26.mp3",
-      "source_sha256": "ac516d170002c9343f5398226217668a371ce0bfbc8fdaf7040ba7a5883768f4",
-      "excerpt_sha256": "30bc7c580f7866a2bf65b9cd5c43354ebe191265c7f526eed82d302f724796a8",
-      "model_response": "```json\n{\n \"transcript\": \"Piliin ang tamang paliwanag. Balikan ang card B. May rekomendasyon ang komite, ngunit wala pang natiyak na opisyal na pasya. Anong dapat ipaliwanag ni Demi? Ihiwalay ang rekomendasyon sa pasya ng board, sabihin ang\",\n \"observations\": \"There is a distinct speaker change between the prompt line at 00:00-00:02 and the narrative voice from 00:02 onward, distinguished by significant differences in resonance, acoustic timbre, and vocal profile.\",\n \"uncertainty\": false\n}\n```"
+      "source_path": "/training/audio/04-ra7883/bhw-accreditation/accreditation-application-check.fil.13e8dc534e39.mp3",
+      "source_sha256": "3349ac10bc8f14714acb224350fd22145680df3960e1d8278819dbf42c667714",
+      "excerpt_sha256": "00ec7190d820a7d6aebd07e5548f23b635830b7274c0be59bd777d60dcbd6764",
+      "model_response": "```json\n{\n \"transcript\": \"Piliin ang tamang paliwanag. Balikan ang card B. May rekomendasyon ang komite ngunit wala pang natiyak na opisyal na pasya. Ano ang dapat ipaliwanag ni Demi? Ihiwalay ang rekomendasyon sa pas-\",\n \"observations\": \"The audio consists of a single speaker reading prompts and text in Tagalog with a clear, consistent instructional tone and steady vocal characteristics throughout.\",\n \"uncertainty\": false\n}\n```"
     },
     {
       "id": "check-voice-fil-ending",
@@ -96,12 +96,12 @@
       "language": "fil",
       "ending": true,
       "question": "Transcribe the complete final speech. Assess whether final syllables are complete and the narrator timbre remains consistent; state uncertainty.",
-      "start": 33.737,
-      "end": 49.737,
-      "source_path": "/training/audio/04-ra7883/bhw-accreditation/accreditation-application-check.fil.22c9b4f22e26.mp3",
-      "source_sha256": "ac516d170002c9343f5398226217668a371ce0bfbc8fdaf7040ba7a5883768f4",
-      "excerpt_sha256": "3b5a744b4d732a1301b1472eb4a4a41b1eb5d236afccb8073ee944e6f4342715",
-      "model_response": "```json\n{\n  \"transcript\": \"Lahat ng pagpipilian. Ang pagkumpleto sa online lesson ay hiwalay sa obserbasyon ng kasanayan at hindi nagbibigay ng akreditasyon. Ipaliwanag ang mga papel. Tukuyin ang kulang at tiyakin ang opisyal na pasya.\",\n  \"observations\": {\n    \"final_syllables_complete\": true,\n    \"narrator_timbre_consistent\": false,\n    \"details\": \"All final syllables across each sentence are fully articulated without clipping or abrupt termination. However, the vocal timbre does not remain consistent across the recording; the first sentence (0:00–0:01) and third section (0:10–0:15) feature a natural female voice, whereas the middle segment (0:02–0:09) shifts to a lower, flatter, noticeably distinct voice.\"\n  },\n  \"uncertainty\": \"Low. The speech is clearly enunciated and easily transcribed; the shift in vocal quality between segments is distinct.\"\n}\n```"
+      "start": 35.566,
+      "end": 51.566,
+      "source_path": "/training/audio/04-ra7883/bhw-accreditation/accreditation-application-check.fil.13e8dc534e39.mp3",
+      "source_sha256": "3349ac10bc8f14714acb224350fd22145680df3960e1d8278819dbf42c667714",
+      "excerpt_sha256": "381d6c8ef662122a7d2a619f0be3ffe6b11d0de4d3cdfe609bdbb848093b3da7",
+      "model_response": "```json\n{\n  \"transcript\": \"Ipaliwanag ang mga papel, tukuyin ang kulang, at tiyakin ang opisyal na pasya.\",\n  \"observations\": \"The final speech segment begins at approximately 00:10 and is delivered by a male narrator. The final syllables ('pasya') are articulated clearly and fully, with no premature cut-off. The narrator's vocal timbre, pace, and recording quality remain steady and consistent throughout this utterance.\",\n  \"uncertainty\": \"None\"\n}\n```"
     },
     {
       "id": "follow-up-en-ending",
@@ -114,7 +114,7 @@
       "source_path": "/training/audio/04-ra7883/bhw-accreditation/accreditation-follow-up.en.0448219b69d2.mp3",
       "source_sha256": "9e07d0c448a47e0fa0130a1d877dc804bdbbf9d06badd6b87a9d8918af53551e",
       "excerpt_sha256": "1a5eb5b0c8cfb551ecd5cc5c3e2f7bbcda2ab7f170637fe7ca4b0e87b0add9a3",
-      "model_response": "```json\n{\n  \"transcript\": {\n    \"full_excerpt\": \"submits no actual application or private documents. Proof of registration, proof of accreditation, and a training certificate should not be treated as interchangeable. Connect the question to the process, known fact, and official record.\",\n    \"ending\": \"Connect the question to the process, known fact, and official record.\"\n  },\n  \"observations\": {\n    \"local_contact_question\": \"No bounded local-contact question is present in this excerpt. Instead, the final sentence is an instructional statement referring to connecting 'the question to the process, known fact, and official record.'\",\n    \"final_words_intelligibility\": \"The final phrase 'Connect the question to the process, known fact, and official record' is clearly articulated, fully intelligible, and grammatically complete.\",\n    \"audio_quality\": \"Clear synthetic/TTS voice with no clipping, dropouts, or background distortion.\"\n  },\n  \"uncertainty\": \"None; speech is clear and unambiguous throughout the excerpt.\"\n}\n```"
+      "model_response": "```json\n{\n  \"transcript\": \"Connect the question to the process, known fact, and official record.\",\n  \"observations\": \"The final statement ('Connect the question to the process, known fact, and official record.') is fully intelligible, clear, and complete with no audio truncation. However, no 'bounded local-contact question' is present in this audio excerpt; the speech consists entirely of declarative procedural guidance.\",\n  \"uncertainty\": \"None. The speech is clear synthesized audio.\"\n}\n```"
     }
   ]
 }

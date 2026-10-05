@@ -7,6 +7,9 @@ const ffmpeg=getExecutablePath({indent:false,logLevel:'error',type:'ffmpeg',bina
 const mf=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/narration.json','utf8'));
 const tracks=mf.lessons['bhw-accreditation'].sections;
 const requests=[
+ {id:'monitoring-verb-fil',section:'section-5',language:'fil',start:39.2,end:45.5,question:'Transcribe every spoken word exactly, without correcting grammar or a verb from context. Is the verb before “ang serbisyo” clearly articulated? Describe the audible consonants and any uncertainty.'},
+ {id:'different-decisions-fil',section:'section-5',language:'fil',start:45.5,end:50.98,question:'Transcribe the entire short sentence exactly, without normalizing colloquial words. Are the words after “Magkaiba” clear, and are accreditation and benefit review distinguished intelligibly?'},
+ {id:'eligibility-initialism-fil',section:'accreditation-application-check',language:'fil',start:24.64,end:31.68,question:'Transcribe every word and every spelled letter in this excerpt. Which letters are spoken after “training certificate”? State any ambiguity or clipping; do not infer the acronym from policy context.'},
  {id:'board-voice-fil-opening',section:'section-5',language:'fil',start:0,end:12,question:'Transcribe speech and assess whether opening and following body differ in pitch/register or clearly different speakers. Do not infer gender solely from pitch. State acoustic evidence and uncertainty.'},
  {id:'board-voice-fil-middle',section:'section-5',language:'fil',start:24,end:36,question:'Transcribe speech and assess vocal consistency. Distinguish expressive pitch/register from a clearly different speaker; state uncertainty.'},
  {id:'board-voice-fil-ending',section:'section-5',language:'fil',ending:true,question:'Transcribe speech and assess whether body and takeaway clearly differ in speaker or only register. Is the final syllable complete? Do not infer gender solely from pitch.'},
