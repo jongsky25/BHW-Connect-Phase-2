@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-05",
+  "timezone": "Asia/Manila",
+  "recorded_at_utc": "2026-10-05T05:17:58.824889+00:00",
+  "authorization": "1.4.2 is approved. merge and deploy",
+  "request_context": "provide a detailed handoff to do 1.4.3 and start a new chat executing that handoff. 1.4.2 is approved. merge and deploy",
+  "reviewed_head": "e9c5434b3569151879368b2f32929fc4f2fcaf8b",
+  "reviewed_package_hashes": {
+    "lesson-1.4.2-demi-review.html": "27dc33d23ad80a5689698b9db3e1b1080ae41eb2ba624b4b1f0b48f796f4d34f",
+    "lesson-1.4.2-demi-review.zip": "88ea26881f6b00d5e812dfaa6f6107915ed3af39e65aaa569283e00dc65fa6a9"
+  },
+  "pr": "https://github.com/jongsky25/BHW-Connect-Phase-2/pull/252",
+  "scope": "Only lesson1.4.2 / bhw-benefits and its reviewed assets/media",
+  "approved_asset_ids": [
+    "demi-benefits-conditions",
+    "bhw-benefits-story"
+  ],
+  "approved_media": [
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.en.b914c725592c.mp3",
+      "sha256": "00856e25238b12ae6d0d3f6f229359fb3523df9542dc47a1f341e25137203fcc"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.fil.27ba61e0b912.mp3",
+      "sha256": "75d80f048872d194dcf2ec56a404296ee24eef408f1d6e23fba6661d2b8bad85"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.en.247d74cb5442.mp3",
+      "sha256": "27d3169fdde2c0f3f054986d2501298e415b253446240c4bc1ab7ce3e370d5c9"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.fil.5d42dd79acc1.mp3",
+      "sha256": "55dfcc76d4b82e2a736553f86b392f9b51ddec8f0cf430652dfdf9823c8d98af"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefits-question.en.a64e75cf9fee.mp3",
+      "sha256": "8b63d4e0b64ea568e41c2a88521c4f24ca59dd79ce71676cb509ceeac6f5d80c"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefits-question.fil.c6d00b3bfd9d.mp3",
+      "sha256": "72227bdbd3465fd3369165e706f8ac7dd9d099cfae0c6395acf77c32c7c29256"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.en.07bda07be88f.mp3",
+      "sha256": "57a93243a65bfe921017cfa421db80883317fafd87dd4308621e0ea88f93c9a4"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.fil.6fb8f0acff78.mp3",
+      "sha256": "0199e16bd55897daf884534bc564ce3fe2f1312d5f2edd1b1ae9a519a69468ca"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.en.7447399efe22.mp3",
+      "sha256": "db9ba7d7168e873297e16a501476c7b55ceb505634583704c80a0a0f647b7d60"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.fil.9f9fcafea029.mp3",
+      "sha256": "c59b1784d1d33d977c5c040ce3e112b64b70e7ee6892aef23f723d06fa3c95f6"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/section-3.en.2a1065f7d96c.mp3",
+      "sha256": "129e18c1e368a528ccc25d20d811f20954f53c40df96ae855d096da4ffb88e2f"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/section-3.fil.ab61c1531cf7.mp3",
+      "sha256": "9d2a3d1e09b89be35048781c6b3ac2dc69ac249d9bfa3119967b82303c769c3c"
+    },
+    {
+      "path": "/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png",
+      "sha256": "2f0be96fe3d80d36c4a1dc9f4d5ff2442731f05c5f66eda999109fd7eac23a1b"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+      "sha256": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-be0ad0574ae9.mp4",
+      "sha256": "be0ad0574ae952d3c72277b55466103f2ad5ded1dcab9154d093e49565497a21"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-f55ea0ba5050.vtt",
+      "sha256": "f55ea0ba5050bf0bc9b1b565612aad6f48ff3e0f412a8e8c6d64a76b71e58c51"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-en-6a207010c1d6.mp4",
+      "sha256": "6a207010c1d6bcaef641f2c835b41fbfc291e83c574b5e0f186ba85cd5ef551e"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-en-fb1e0a5db943.vtt",
+      "sha256": "fb1e0a5db94351fe032c1001124c47b488542014c0f555c0bd0983b4067c6ebc"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-en-dbcf24125f91-poster.jpg",
+      "sha256": "dbcf24125f91bd4a2b49e41af2fe89e76aaa538d0f5fc16066075087d37d8bbf"
+    }
+  ],
+  "limits": "Approval does not assert human listening, independent policy SME review or authenticated production learner checks. Timestamped model listening flags and source gaps remain. Reviewed Read, Slides, audio/video/image/caption and HTML/ZIP bytes are preserved."
+}

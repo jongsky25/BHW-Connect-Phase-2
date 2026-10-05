@@ -1,7 +1,7 @@
 import {AbsoluteFill, Audio, Img, Series, spring, staticFile, useCurrentFrame, useVideoConfig, type CalculateMetadataFunction} from "remotion";
 import {BHW_BENEFITS_BEATS} from "./narration";
 
-// New lesson 1.4.2 draft; owner review pending.
+// Lesson 1.4.2 owner-approved 5 October 2026; reviewed media bytes preserved.
 // Each language uses measured narration boundaries, including its final summary.
 
 export const BENEFITS_FPS = 30;

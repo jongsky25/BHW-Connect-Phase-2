@@ -11,3 +11,6 @@ Original manual PDF pages 25/printed16, 26/printed17 and 27/printed18 were reope
 The review package includes fresh final-head CI/build/disposable-Supabase E2E, whole-library Remotion artifact verification and a target-only Linux dry run, with results recorded in the separate verification report. Browser checks use the actual component, compiled CSS and media with explicit navigation/progress adapters. They do not establish authenticated production learner behavior.
 
 This is a draft PR and offline review package. It does not authorize merge, production deployment or publication. Separate explicit lesson 1.4.2 approval is required before those release actions.
+
+
+Owner approved the reviewed package on 5 October 2026: “1.4.2 is approved. merge and deploy”. The draft record above is historical. Approval is limited to the reviewed source/package/media hashes in lesson-142-owner-approval.json. Read, Slides, narration manifest and all media/HTML/ZIP bytes remain unchanged. Fresh approval-head CI, 56-composition render artifacts and target-only Linux dry run are required before merge, exact Production deployment/alias verification before publication, and post-main CI/Lighthouse verification after merge. No human listening or SME approval is inferred.
