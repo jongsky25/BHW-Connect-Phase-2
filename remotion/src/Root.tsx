@@ -1,3 +1,4 @@
+import {BhwAccreditationStory, calculateBhwAccreditationMetadata, ACCREDITATION_FPS, ACCREDITATION_FALLBACK_DURATION} from "./bhw-accreditation/BhwAccreditationStory";
 import {BhwEligibilityStory, calculateBhwEligibilityMetadata, ELIGIBILITY_FPS, ELIGIBILITY_FALLBACK_DURATION} from "./bhw-eligibility/BhwEligibilityStory";
 import {BhwBenefitsStory, calculateBhwBenefitsMetadata, BENEFITS_FPS, BENEFITS_FALLBACK_DURATION} from "./bhw-benefits/BhwBenefitsStory";
 import {BhwLegalRoleStory, calculateBhwLegalRoleMetadata, LEGAL_ROLE_FPS, LEGAL_ROLE_FALLBACK_DURATION} from "./bhw-legal-role/BhwLegalRoleStory";
@@ -308,6 +309,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`bhw-eligibility-${language}`} id={language === "fil" ? "BhwEligibilityStoryFil" : "BhwEligibilityStoryEn"}
           component={BhwEligibilityStory} calculateMetadata={calculateBhwEligibilityMetadata}
           durationInFrames={ELIGIBILITY_FALLBACK_DURATION} fps={ELIGIBILITY_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhw-accreditation-${language}`} id={language === "fil" ? "BhwAccreditationStoryFil" : "BhwAccreditationStoryEn"}
+          component={BhwAccreditationStory} calculateMetadata={calculateBhwAccreditationMetadata}
+          durationInFrames={ACCREDITATION_FALLBACK_DURATION} fps={ACCREDITATION_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

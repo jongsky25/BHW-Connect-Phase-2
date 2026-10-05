@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-05T09:28:40.015Z",
+  "tool": "image_gen.imagegen",
+  "model_id": null,
+  "model_id_note": "Tool returned image_url and output_hint only; model identifier not provided and not inferred.",
+  "prompt": "Use case: illustration-story. Create a genuinely NEW original landscape 16:9 educational scene for BHW Connect lesson 1.4.4, Demi and the accreditation process. Input Image 1 is ONLY the approved 1.4.1 identity and visual style reference. Demi is the adult Filipina on the LEFT in that reference, with medium-brown skin, the same recognizable face, eyes and nose, short wavy dark bob, and a plain teal collared blouse. Preserve her fictional identity closely, but create a distinct new scene, camera framing, poses and environment. Scene: a quiet, modest Philippine rural health unit consultation corner. A wider camera shows Demi seated at the LEFT end of a simple discussion table, looking thoughtfully toward a supportive adult Filipina staff member on the RIGHT in a plain pale terracotta blouse. Demi holds one edge of an open, entirely blank manila folder resting on the table, and gently gestures with her other hand while asking a question. The staff member points at two separate blank cream process cards with one hand, with her other hand relaxed on the table. This illustrates preparing a question about the responsible office and the official decision record; it does not depict approval or certify anyone. A plain mint wall, modest window, simple shelf and small unlettered bulletin board create a NEW clinic setting; no old framed village picture. Exactly two main participants, no other people or human pictures. Match the reference's warm, natural, softly rendered editorial realism, credible Philippine adult faces, natural proportions and clean textures. Generous breathing room: the entire heads, faces, shoulders, all four hands, folder and cards must remain within at least 12 percent safe margins on every side, suitable for object-fit contain on phones. Pull the camera back; no cropped hair or fingertips. Blank folder and blank cards only. No words, numbers, seals, badges, logos, watermarks, credential/certificate/form text, private records, approval stamp, appointment promise or official status claim. Natural anatomy with no extra fingers, hands or limbs. Calm, respectful and welcoming atmosphere. Demi remains the focal participant on the left.",
+  "input_identity": {
+    "lesson": "Approved1.4.1 Demi",
+    "path": "/training/bhw-1-4/demi-legal-basis-032a985f9c33.png",
+    "sha256": "032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2"
+  },
+  "supporting_reference_inspected": {
+    "lesson": "Released1.4.3",
+    "path": "/training/bhw-1-4/demi-bhwe-discussion-cce21d6a934d.png",
+    "sha256": "cce21d6a934d7e0e729ef9961e4ba2bad52d7db3080e3b5a7b1087c3a3765d4b",
+    "used_as_generation_input": false
+  },
+  "output": {
+    "original_tool_path": "C:/Users/Rae Jane/.codex/generated_images/01a10b3c-f933-78f2-b975-a402eb69d2ec/exec-bf4d3287-e29c-4f6b-8f53-d8e03f9dd4e3.png",
+    "path": "/training/bhw-1-4/demi-accreditation-question-b2dfcb212dff.png",
+    "sha256": "b2dfcb212dffe176b22ca911dd2085668c078065cb44057911e0706ed3d4cc54",
+    "bytes": 1994424,
+    "width": 1672,
+    "height": 941,
+    "animation_copy": "remotion/public/bhw-accreditation/scene.png"
+  },
+  "review_status": "draft",
+  "visual_inspection": "Actual generated pixels inspected. New clinic corner, open blank folder and two blank process cards; exactly two main adult participants. Demi left retains recognizable face, medium-brown skin, short wavy dark bob and plain teal collared blouse. Complete heads/faces and visible hands remain contained; no obvious anatomy defect, seal, certificate, private record or approval claim. Folder-side hand of Demi is partially occluded by the folder. The requested12percent safe margin is not uniformly achieved, but all important content is in frame; verify object-fit contain in the actual phone/landscape fixture.",
+  "uncertainty": "Visual inspection is model-mediated, not owner approval. New scene remains draft pending separate1.4.4 approval."
+}

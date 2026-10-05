@@ -56,7 +56,11 @@ describe('lesson 1.4.3 Demi BHWE conditions',()=>{
   for(const options of [{},{provider:'gemini'}]){const plan=planReferenceNarration(modules,manifest,fileHash,options);expect(plan).toHaveLength(12);for(const i of plan){expect(i.action).toBe('skip');expect(i.voice).toBe('gemini:gemini-3.8-flash-tts:Kore');expect(i.existing.timings.map(({zone,index,text})=>({zone,index,text}))).toEqual(i.zones);const frames=mp3AudioFrames(bytes(i.src)),duration=frames.reduce((n,f)=>n+f.samples/f.sampleRate,0);expect(i.existing.duration_seconds).toBeCloseTo(duration,3);for(const t of i.existing.timings)expect(t.end_ms).toBeGreaterThan(t.start_ms);expect(i.existing.timings.at(-1).end_ms).toBeLessThanOrEqual(duration*1000+1);}}
  });
  it('protects every non-target mapping and selects both historical exact-text sections',()=>{
-  const baseline=json(path.join(root,'docs/lesson-143-narration-baseline.json'));for(const [key,hash] of Object.entries(baseline.sibling_mapping_hashes))expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);
+  const baseline=json(path.join(root,'docs/lesson-143-narration-baseline.json'));for(const [key,hash] of Object.entries(baseline.sibling_mapping_hashes)){
+   // Only 1.4.4 changes: retain exact old mapping and every referenced byte.
+   if(key==='bhw-accreditation'){const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);}
+   else expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);
+  }
   expect(manifest.history['bhw-eligibility'].some(h=>JSON.stringify(h)===JSON.stringify(baseline.target))).toBe(true);
   for(const lang of ['fil','en'])for(const id of ['section-4']){const old=baseline.target.sections[id][lang],section={id,[`heading_${lang}`]:old.timings.filter(t=>t.zone==='heading').map(t=>t.text).join(' '),[`body_${lang}`]:old.timings.filter(t=>t.zone==='body').map(t=>t.text).join(' '),[`takeaway_${lang}`]:old.timings.filter(t=>t.zone==='takeaway').map(t=>t.text).join(' ')};expect(narrationForLesson(manifest,'bhw-eligibility',lang,[section])[id].src).toBe(old.src);}
   for(const lang of ['fil','en'])expect(Object.keys(narrationForLesson(manifest,'bhw-eligibility',lang,authored.revision.read_sections))).toEqual(ids);for(const [src,hash] of Object.entries(baseline.all_original_track_hashes))expect(fileHash(src)).toBe(hash);

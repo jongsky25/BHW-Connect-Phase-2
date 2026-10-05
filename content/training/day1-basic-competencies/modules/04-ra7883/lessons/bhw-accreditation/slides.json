@@ -1,37 +1,133 @@
 [
   {
+    "id": "slide-accreditation-question",
+    "concept_ids": [
+      "m4.accreditation-body"
+    ],
+    "layout": "scene",
+    "heading_fil": "Tanong ni Demi",
+    "heading_en": "Demi’s question",
+    "display_fil": "Sino ang may tungkulin?\nPaano matitiyak ang opisyal na pasya?",
+    "display_en": "Who is responsible?\nHow can the official decision be verified?",
+    "asset_ids": [
+      "demi-accreditation-question"
+    ],
+    "check": null,
+    "narration_fil": "Naghahanda si Demi ng tanong tungkol sa rehistrasyon at akreditasyon. ‘Sino ang tumitingin sa aplikasyon, at paano ko matitiyak ang opisyal na pasya?’ Kathang-isip ang sitwasyong ito; hindi pa natin alam kung may aplikasyon, rehistrasyon o akreditasyon si Demi. Sa RA 7883, nakaugnay ang akreditasyon sa local health board, ayon sa gabay ng DOH. Magkaugnay ngunit magkaibang hakbang ang rehistrasyon at akreditasyon. Ang pagtatanong, pagdalo sa pagsasanay o pagkakaroon ng titulo ay hindi patunay na tapos na ang proseso.",
+    "narration_en": "Demi prepares a question about registration and accreditation. ‘Who reviews an application, and how can I verify the official decision?’ This is a fictional situation; we have not established that Demi has an application, registration or accreditation. RA 7883 places accreditation with the local health board under DOH guidelines. Registration and accreditation are related but distinct steps. Asking a question, attending training or holding a title does not prove that the process is complete."
+  },
+  {
     "id": "slide-section-5",
     "concept_ids": [
       "m4.accreditation-body",
       "m4.board-duties",
       "m4.registration-committee"
     ],
-    "layout": "decision",
-    "heading_fil": "Kung sino ang bumubuo sa proseso ng akreditasyon",
-    "heading_en": "Who makes up the accreditation process",
-    "display_fil": "Local health board: pagsusuri at desisyon sa itinakdang proseso.\nRegistration/accreditation committee: tumutulong sa pagsusuri at registry.\nPanatilihin ang dokumento at alamin ang susunod na hakbang.",
-    "display_en": "Local health board: review and decisions through the required process.\nRegistration/accreditation committee: supports review and registry work.\nKeep documents and clarify the next step.",
+    "layout": "process",
+    "heading_fil": "Tungkulin sa proseso",
+    "heading_en": "Responsibilities in the process",
+    "display_fil": "Local health board: suriin, magpasya, magtala\nCertificate • registry • pagmamanman\nMaaaring may komiteng tumutulong.",
+    "display_en": "Local health board: review, decide, record\nCertificate • registry • monitoring\nA committee may assist.",
     "asset_ids": [
-      "practice-map"
+      "demi-accreditation-question"
+    ],
+    "check": null,
+    "narration_fil": "May tiyak na pananagutan ang local health board. Inililista ng magkasanib na circular ng DILG at DOH noong 2023 ang mga tungkulin nito: pangalagaan ang proseso ng rehistrasyon at akreditasyon; suriin at aksiyunan ang mga aplikasyon; itala ang pasya sa board resolution o minutes ng pulong; maglabas ng sertipiko sa mga kwalipikadong BHW; suriin at aprubahan ang mga benepisyong gagamit ng pondong lokal; magrekomenda ng benepisyo at paglalaan ng pondo; magbigay ng kopya ng BHW registry sa DOH; at subaybayan ang serbisyo. Magkaiba ang pasya sa akreditasyon at pagsusuri ng benepisyong may lokal na pondo. Maaari ring bumuo ang board ng BHW Registration and Accreditation Committee. Inilalarawan ng facilitator guide ang pagsusuri, panayam, rekomendasyon sa board at pag-aayos ng registry bilang mga tungkuling pantulong ng komite. Hindi katumbas ng opisyal na pasya ng board ang rekomendasyon lamang.",
+    "narration_en": "The local health board has specific responsibilities. The joint DILG and DOH circular issued in 2023 lists its duties: safeguard registration and accreditation; evaluate and act on applications; record decisions in a board resolution or meeting minutes; issue certificates to qualified BHWs; review and approve benefits using local funds; recommend benefits and fund allocation; provide a copy of the BHW registry to DOH; and monitor services. An accreditation decision and review of a benefit using local funds are different decisions. The board may also create a BHW Registration and Accreditation Committee. The facilitator guide describes screening, interviews, recommendations to the board and registry preparation as supporting committee tasks. A recommendation alone is not the board’s official decision."
+  },
+  {
+    "id": "slide-roles-and-records",
+    "concept_ids": [
+      "m4.accreditation-body",
+      "m4.board-duties",
+      "m4.registration-committee"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Rekomendasyon o pasya?",
+    "heading_en": "Recommendation or decision?",
+    "display_fil": "Komite: suriin → magrekomenda\nBoard: aksiyunan → itala ang pasya\nTiyakin ang lokal na tanggapan at tala.",
+    "display_en": "Committee: screen → recommend\nBoard: act → record the decision\nVerify the local office and record.",
+    "asset_ids": [
+      "demi-accreditation-question"
+    ],
+    "check": null,
+    "narration_fil": "Ihambing ang dalawang papel. Tumutulong ang komite sa pagsusuri at rekomendasyon; pananagutan ng board ang pag-aksiyon at opisyal na pagtatala ng pasya. Hinihikayat ng circular ang mga municipal at city health board na bumuo ng komite. Kapag wala pa nito o habang binubuo ito, nananatili sa board ang tungkuling padaliin ang rehistrasyon at akreditasyon. Kaya dapat alamin ang aktuwal na lokal na ayos, sa halip na ipagpalagay na pare-pareho ang komite at opisina sa lahat ng lugar. Makapagtuturo ng tamang contact ang RHU o municipal o city health office. Hindi sila, isang panayam, o isang training certificate ang kapalit ng opisyal na pasya.",
+    "narration_en": "Compare the two roles. A committee helps screen applications and recommend action; the board is responsible for acting and officially recording its decision. The circular encourages municipal and city health boards to create a committee. If none exists yet or creation is pending, the board remains responsible for facilitating registration and accreditation. Find out the actual local arrangement rather than assume every locality has the same committee and office. The RHU or municipal or city health office can help identify the proper contact. Their assistance, an interview or a training certificate does not replace an official decision."
+  },
+  {
+    "id": "slide-fictional-process-cards",
+    "concept_ids": [
+      "m4.accreditation-body",
+      "m4.board-duties",
+      "m4.registration-committee"
+    ],
+    "layout": "process",
+    "heading_fil": "Ano ang alam at kulang?",
+    "heading_en": "What is known and missing?",
+    "display_fil": "A: training certificate lamang\nB: rekomendasyon lamang\nC: may binanggit na resolution; hindi pa natiyak\nWalang tunay na personal na record.",
+    "display_en": "A: training certificate only\nB: recommendation only\nC: a resolution is mentioned; unverified\nNo actual personal records.",
+    "asset_ids": [
+      "demi-accreditation-question"
+    ],
+    "check": null,
+    "narration_fil": "Tatlong kathang-isip na practice card ang ginagamit ni Demi. Sa A, may training certificate lamang; hindi nito pinatutunayan ang akreditasyon. Sa B, may rekomendasyon ng komite ngunit walang natiyak na pasya ng board. Sa C, may binanggit na board resolution ngunit hindi pa natiyak kung para sa anong proseso, sino ang saklaw at saan ito makukumpirma. Walang card na nagpapasya sa status ng tao. Itapat ang bawat alam na detalye sa kulang na impormasyon: anong susunod na hakbang sa A, may opisyal na pasya na ba sa B, at aling opisyal na tala ang dapat tiyakin sa C? Huwag mag-imbento ng lokal na form, bayad, deadline o resulta.",
+    "narration_en": "Demi uses three fictional practice cards. A has only a training certificate; it does not prove accreditation. B has a committee recommendation but no verified board decision. C mentions a board resolution, but its process, scope and verification contact remain unclear. None of the cards decides a person’s status. Match each known fact to the missing information: what is the next step for A, is there an official decision for B, and which official record should be checked for C? Do not invent a local form, fee, deadline or result."
+  },
+  {
+    "id": "slide-accreditation-follow-up",
+    "concept_ids": [
+      "m4.accreditation-body",
+      "m4.board-duties"
+    ],
+    "layout": "process",
+    "heading_fil": "Isang tanong tungkol sa proseso",
+    "heading_en": "A question about the process",
+    "display_fil": "Para sa Card B:\nMay opisyal na pasya na ba?\nSaan ito matitiyak? Ano ang susunod na hakbang?",
+    "display_en": "For Card B:\nIs there an official decision?\nWhere can it be verified? What comes next?",
+    "asset_ids": [
+      "demi-accreditation-question"
+    ],
+    "check": null,
+    "narration_fil": "Pinili ni Demi ang Card B. Sa blankong planning sheet, isinulat niya: ‘Para sa halimbawang may rekomendasyon ng komite, aling tanggapan ang makapagsasabi kung may opisyal na pasya na ang local health board, saan ito matitiyak, at ano ang susunod na hakbang kung wala pa?’ Tiyak ang tanong: pangalan ng proseso, alam na detalye, kulang na impormasyon at tamang contact. Makipag-ugnayan sa locally confirmed na RHU, municipal o city health office, o board contact para sa kasalukuyang gabay. Walang tunay na aplikasyon o pribadong dokumentong isusumite sa pagsasanay. Ang katibayan ng rehistrasyon, katibayan ng akreditasyon at training certificate ay hindi dapat ipagpalit sa isa’t isa.",
+    "narration_en": "Demi chooses Card B. On a blank planning sheet, she writes: ‘For this example with a committee recommendation, which office can confirm whether the local health board has made an official decision, where can it be verified, and what is the next step if none has been made?’ The question names the process, known fact, missing information and proper contact. Ask the locally confirmed RHU, municipal or city health office, or board contact for current guidance. This practice submits no actual application or private documents. Proof of registration, proof of accreditation and a training certificate should not be treated as interchangeable."
+  },
+  {
+    "id": "slide-accreditation-application-check",
+    "concept_ids": [
+      "m4.accreditation-body",
+      "m4.board-duties",
+      "m4.registration-committee"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang tamang paliwanag",
+    "heading_en": "Choose the supported explanation",
+    "display_fil": "Card B: rekomendasyon; walang natiyak na pasya\nPaliwanag + kulang na impormasyon + tanong",
+    "display_en": "Card B: recommendation; no verified decision\nExplanation + missing information + question",
+    "asset_ids": [
+      "demi-accreditation-question"
     ],
     "check": {
-      "prompt_fil": "Ano ang dapat dalhin sa follow-up sa akreditasyon?",
-      "prompt_en": "What should you bring to an accreditation follow-up?",
+      "prompt_fil": "Sa Card B, may rekomendasyon ng komite ngunit walang natiyak na opisyal na pasya. Ano ang pinakamainam na paliwanag at susunod na tanong ni Demi?",
+      "prompt_en": "Card B has a committee recommendation but no verified official decision. What is Demi’s best explanation and next question?",
       "options": [
         {
-          "fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang.",
-          "en": "Documents and specific questions about status or missing requirements."
+          "fil": "Pantulong ang rekomendasyon. Tiyakin sa tamang lokal na contact kung may pasya na ang board, saan ito makukumpirma at ano ang susunod na hakbang.",
+          "en": "The recommendation is a supporting step. Ask the proper local contact whether the board has decided, where it can be verified and what comes next."
         },
         {
-          "fil": "Pangakong hindi kailangan ang proseso.",
-          "en": "A promise that no process is needed."
+          "fil": "Automatic nang accredited dahil nagrekomenda ang komite; hindi na kailangang tiyakin ang pasya o tala ng board.",
+          "en": "The committee recommendation automatically grants accreditation; the board’s decision or record need not be checked."
+        },
+        {
+          "fil": "Sapat na ang training certificate, BHWE o job title bilang kapalit ng rehistrasyon at akreditasyon.",
+          "en": "A training certificate, BHWE or job title is enough to replace registration and accreditation."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "Documents and specific questions about status or missing requirements. Explain why using the lesson situation."
+      "feedback_fil": "Una: tama. Magkaiba ang rekomendasyon ng komite at opisyal na pasya ng local health board. Hindi pa natiyak ang pasya at tala sa card; tinutugunan ng tanong ang kulang na impormasyon at susunod na hakbang nang walang pag-aangkin ng status. Ikalawa: mali. Hindi automatic approval ang pagsusuri o rekomendasyon lamang. Hindi nito pinatutunayang umaksiyon ang board, nagtala ng pasya o naglabas ng naaangkop na sertipiko. Ikatlo: mali. Magkakaiba ang gamit ng training certificate, BHWE, job title, rehistrasyon at akreditasyon. Hindi kapalit ng accreditation process ang mga label o credential na iyon at hindi nila pinatutunayan ang opisyal na pasya sa card. Hindi rin nagbibigay ng akreditasyon ang online lesson completion.",
+      "feedback_en": "First: correct. A committee recommendation and the local health board’s official decision are different. The decision and record remain unverified in the card; the question addresses the missing information and next step without asserting status. Second: incorrect. Screening or recommendation alone is not automatic approval. It does not establish that the board acted, recorded a decision or issued the appropriate certificate. Third: incorrect. Training certificates, BHWE, job titles, registration and accreditation serve different purposes. Those labels or credentials cannot replace the accreditation process or establish the card’s official decision. Completing the online lesson does not grant accreditation either."
     },
-    "narration_fil": "Hindi basta-basta pumapayag ang local health board sa akreditasyon — may hanay ng responsibilidad ito ayon sa Section 5 ng RA 7883 IRR: pangalagaan ang proseso ng rehistrasyon at akreditasyon, suriin ang mga aplikasyon, itala ang desisyon sa isang board resolution o minutes ng pulong, maglabas ng certificate of registration o accreditation, suriin at aprubahan ang bawat benepisyong gagamit ng pondong lokal, magrekomenda ng benepisyo at pondo, magbigay ng opisyal na kopya ng BHW registry sa DOH, at bantayan ang serbisyong ibinibigay ng mga rehistradong BHW.\n\nMaaari ring lumikha ang local health board ng isang BHW Registration and Accreditation Committee na susuri ng mga aplikasyon, kakapanayamin ang mga aplikante, magrerekomenda sa local health board, at mag-uupdate ng BHW registry.",
-    "narration_en": "The local health board does not simply grant accreditation on a whim — it carries a set of responsibilities under Section 5 of the RA 7883 IRR: safeguard the registration and accreditation process, evaluate applications, record decisions in a board resolution or meeting minutes, issue certificates of registration or accreditation, review and approve any benefit that would use local funds, recommend benefits and fund appropriation, provide an official copy of the BHW registry to the DOH, and monitor the service registered BHWs provide.\n\nThe local health board may also create a BHW Registration and Accreditation Committee to evaluate applications, interview applicants, recommend action to the board, and keep the BHW registry updated."
+    "narration_fil": "Balikan ang Card B: may rekomendasyon ng komite, ngunit wala pang natiyak na opisyal na pasya. Ano ang dapat ipaliwanag ni Demi? Ihiwalay ang rekomendasyon sa pasya ng board, sabihin ang kulang na impormasyon, at pumili ng tanong na magpapalinaw sa proseso at opisyal na tala. Hindi ipinapalit ang training certificate, BHWE o job title sa akreditasyon. Piliin ang sagot, saka basahin ang dahilan para sa lahat ng pagpipilian. Ang pagkumpleto sa online lesson ay hiwalay sa obserbasyon ng kasanayan at hindi nagbibigay ng akreditasyon.",
+    "narration_en": "Return to Card B: there is a committee recommendation, but no verified official decision. What should Demi explain? Distinguish the recommendation from the board’s decision, name the missing information, and choose a question about the process and official record. A training certificate, BHWE or job title does not replace accreditation. Choose an answer, then read the reasons for all options. Completing the online lesson is separate from observed competency and does not grant accreditation."
   }
 ]

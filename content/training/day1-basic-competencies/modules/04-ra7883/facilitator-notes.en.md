@@ -23,9 +23,7 @@ Suggested split:
    easily missed in a rush.
 3. **On benefits,** group the six categories and use Demi’s fictional Card A/Card B to distinguish validated hazard exposure from service within an isolated station. Explain registration, active regular duties and local-fund review. Ask which benefit, evidence and authority/contact need verification. Personal benefit history is optional; no private records are requested.
 4. **On BHWE,** use Demi’s fictional Cards A–C and four teaching groups. Compare total service with qualifying continuous accredited service, check education and voluntary/full-time/satisfactory service evidence, and form a specific CSC question about uncertainty or a JO/COS arrangement. Accreditation is not CSC approval or appointment. No private learner records or personal eligibility assessment are requested.
-5. **On the registration process,** remind them they aren't waiting
-   alone — there's a system, and a responsible person or committee
-   behind it.
+5. **On accreditation,** compare the board’s decision/record with committee screening/recommendation and registry assistance. Use Demi’s fictional Cards A–C to name known facts, missing information and one specific local process/record question. Confirm the actual local arrangement; recommendation, training, BHWE or a job title does not establish accreditation. No private records or personal status disclosure.
 6. **On the follow-up exercise,** turn it into a role-play: one
    participant plays a BHW following up, another plays local health
    board staff. Show the difference between a calm question and a
@@ -58,3 +56,5 @@ asking about them isn't greed, it's a right.
 
 1. **Lesson 1.4.1: Demi’s best response** → Choice 1: connect training, voluntary service and local health board accreditation; ask the RHU for the appropriate evidence-verification contact. Choice 2 mistakes experience for accreditation; choice 3 promises an allowance/appointment without checking separate conditions.
 2. **Lesson 1.4.3: Demi’s careful BHWE explanation** → First: correct. Only three years are described under accredited status; pre-accreditation service cannot be added. Degree-related college education and all continuity, active/full-time, voluntary and satisfactory service conditions and evidence must be checked. Specific CSC verification comes next, not a promise of approval or a job. Second: incorrect. Accreditation is only one teaching group; it cannot replace education/service requirements, CSC application approval or a separate appointment. Third: incorrect. Pre-accreditation service is not counted. A JO/COS worker may still qualify, but the label is no guarantee. First-level exceptions and other position qualifications remain; BHWE does not qualify someone for every government post.
+
+3. **Lesson 1.4.4: recommendation versus official decision** → Choice 1 is correct: identify the unverified board decision/record and ask the proper local contact about verification and the next step. Choice 2 wrongly makes committee recommendation automatic approval. Choice 3 wrongly substitutes training, BHWE or a job title for registration/accreditation. Use fictional cards only. Preserve the 30-minute share; online completion is separate from observed competency.
