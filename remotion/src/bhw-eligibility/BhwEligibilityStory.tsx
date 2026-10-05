@@ -1,7 +1,7 @@
 import {AbsoluteFill, Audio, Img, Series, spring, staticFile, useCurrentFrame, useVideoConfig, type CalculateMetadataFunction} from "remotion";
 import {BHW_ELIGIBILITY_BEATS} from "./narration";
 
-// New lesson1.4.3 draft; separate owner review required.
+// Lesson 1.4.3 owner-approved 5 October 2026; reviewed media bytes preserved.
 // Each language uses measured narration boundaries, including its final summary.
 
 export const ELIGIBILITY_FPS = 30;
