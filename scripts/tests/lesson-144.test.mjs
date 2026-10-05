@@ -18,7 +18,7 @@ const source=json(path.join(leaf,'lesson.json')),manifest=json(path.join(root,'c
 const baseline=json(path.join(root,'docs/lesson-144-start-baseline.json')),audioBaseline=json(path.join(root,'docs/lesson-144-narration-baseline.json'));
 const authored=loadReferenceModule(dir,path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhw-accreditation'),modules=[{key:'04-ra7883',lessons:[authored]}];
 const ids=['accreditation-question','section-5','roles-and-records','fictional-process-cards','accreditation-follow-up','accreditation-application-check'];
-describe('lesson 1.4.4 Demi accreditation draft',()=>{
+describe('lesson 1.4.4 Demi accreditation release',()=>{
  it('preserves the complete immutable manifest and full bilingual Read/Slide parity',()=>{
   expect(source.manifest).toEqual(baseline.immutable_manifest);expect(source.sections.map(s=>s.id)).toEqual(ids);expect(authored.revision.slides.map(s=>s.id)).toEqual(ids.map(id=>'slide-'+id));
   for(const lang of ['fil','en']){const read=parseReferenceRead(readFileSync(path.join(leaf,`read.${lang}.md`),'utf8'));expect(read.map(s=>s.id)).toEqual(ids);for(const [i,s]of read.entries())expect(authored.revision.slides[i][`narration_${lang}`]).toBe(s.body);expect(read[0].body).toContain('Demi');}
@@ -57,12 +57,12 @@ describe('lesson 1.4.4 Demi accreditation draft',()=>{
   for(const [p,hash]of Object.entries(baseline.sibling_lesson_git_blob_hashes)){const blob=execFileSync('git',['show',`HEAD:${p}`],{cwd:root});expect(sha(blob)).toBe(hash);}
   for(const m of baseline.approved141_142_143_media)expect(fileHash(m.path)).toBe(m.sha256);
  });
- it('uses genuinely new draft art with the approved Demi identity and identical animation bytes',()=>{
-  const art=source.assets.find(a=>a.id==='demi-accreditation-question');expect(fileHash(art.path)).toBe(art.content_hash);expect(sha(readFileSync(path.join(root,'remotion/public/bhw-accreditation/scene.png')))).toBe(art.content_hash);expect(art.review_status).toBe('draft');
+ it('uses genuinely new owner-approved art with the approved Demi identity and identical animation bytes',()=>{
+  const art=source.assets.find(a=>a.id==='demi-accreditation-question');expect(fileHash(art.path)).toBe(art.content_hash);expect(sha(readFileSync(path.join(root,'remotion/public/bhw-accreditation/scene.png')))).toBe(art.content_hash);expect(art.review_status).toBe('approved');const approval=json(path.join(root,'docs/lesson-144-owner-approval.json'));expect(approval.authorization).toBe('approved. merge and deploy to live');expect(approval.reviewed_head).toBe('530f8431b003c437d733e0806bc1cabdac657f9b');expect(approval.approved_asset_ids).toEqual(['demi-accreditation-question','bhw-accreditation-story']);expect(approval.approved_media).toHaveLength(19);for(const m of approval.approved_media)expect(fileHash(m.path)).toBe(m.sha256);
   const p=json(path.join(root,'docs/lesson-144-art-provenance.json'));expect(p.input_identity.sha256).toBe('032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2');expect(p.output.sha256).toBe(art.content_hash);expect(p.output.sha256).not.toBe(p.input_identity.sha256);expect(p.model_id).toBeNull();
  });
  it('ships two measured six-beat captioned stories with hash protection and complete ending hold',()=>{
-  const asset=source.assets.find(a=>a.id===source.featured_asset_id);expect(asset.review_status).toBe('draft');expect(fileHash(asset.path)).toBe(asset.content_hash);
+  const asset=source.assets.find(a=>a.id===source.featured_asset_id);expect(asset.review_status).toBe('approved');expect(fileHash(asset.path)).toBe(asset.content_hash);
   for(const lang of ['fil','en']){const v=asset.videos[lang];for(const m of [v,v.poster,v.captions])expect(fileHash(m.path)).toBe(m.content_hash);const t=json(path.join(root,`remotion/public/bhw-accreditation/narration-${lang}.json`));expect(t).toMatchObject({language:lang,provider:'gemini',model:'gemini-3.8-flash-tts',voice:'Kore'});expect(t.beats.map(b=>b.zone)).toEqual(BHW_ACCREDITATION_BEATS.map(b=>b.id));expect(t.beats.map(b=>b.text)).toEqual(BHW_ACCREDITATION_BEATS.map(b=>b[lang]));expect(bytes(v.captions.path).toString('utf8').replaceAll('\r','')).toBe(toWebVtt(t));expect(v.duration_s).toBeGreaterThan(t.durationSeconds);expect(v.duration_s).toBeLessThanOrEqual(90);expect(sha(readFileSync(path.join(root,`remotion/public/bhw-accreditation/narration-${lang}.mp3`)))).toBe(t.audio_sha256);}
  });
  it('provides twelve facilitator headings and one six-level single-objective indicator',()=>{
