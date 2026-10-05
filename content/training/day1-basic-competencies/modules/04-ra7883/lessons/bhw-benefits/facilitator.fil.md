@@ -1,83 +1,68 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na isa-isahin ang mga benepisyong nakalista sa RA 7883 at ipaliwanag ang kondisyon nito: rehistrasyon sa local health board ng lungsod o munisipyo kung saan siya nagseserbisyo. Kapag may nagtanong tungkol sa isang benepisyo, kaya niyang sabihin kung ano ang dapat tiyakin sa local health board sa halip na mangako ng awtomatiko o pare-parehong bayad.
+Ipaliwanag at ilapat ang benepisyo at kondisyon sa kathang-isip na kaso ni Demi. Pangalanan ang anim na kategorya, ihiwalay ang rehistrasyon/akreditasyon at kondisyon ng bawat benepisyo, at pumili ng angkop na verification nang walang pangakong pera. Iisa ang objective ng aralin, index 0.
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** mga 30 minuto sa harapang sesyon. Ito ang bahaging "Mga benepisyo sa ilalim ng RA 7883" sa 3 oras na plano sa gabay ng subchapter. Mga 5 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** manila paper na nakasulat ang anim na benepisyo, may dalawang bakanteng hanay na "Alam na?" at "Natanggap na?"; marker; ang slide ng aralin; ang papel na "Mga tanong na nahiya tayong itanong" mula sa naunang aralin, kung ginamit ninyo ito.
+Panatilihin ang 30 minuto sa kasalukuyang 180-minutong plano ng module: opening 3, paliwanag na may halimbawa 8, Card A/B practice 10, check at feedback 5, observation at re-practice 4. Authored ang hatian. Tinatayang 10–12 minuto ang self-study, hindi kasama ang opsyonal na kuwento o replay. Para sa buong competency ang tatlong oras sa manual, hindi bawat aralin. Kagamitan: listahan ng anim na kategorya, kathang-isip na Card A/Card B sa ibaba, blankong question sheets, markers at Read/Slides. Walang kailangang personal na rekord o checklist ng natanggap na benepisyo.
 
 ## [prepare] Paghahanda
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Alamin sa inyong RHU, LGU o local health board kung alin sa mga benepisyong ito ang kasalukuyang natatanggap ng mga BHW sa inyong lungsod o munisipyo at paano. Alamin din kung anong papeles sa rehistrasyon ang kailangan at kung may allowance na lokal ang pondo. Isulat lang ang natiyak mo na. Kung may hindi mo natiyak, sabihin ito nang tapat sa sesyon.
-- Kabisaduhin ang anim na benepisyo ayon mismo sa aralin: hazard allowance, subsistence allowance (para lamang sa BHW na naglilingkod sa isolated na barangay health station), mga programa sa pagsasanay at career enrichment, civil service eligibility, libreng legal services, at priority access sa mga loan o pautang.
-- Saklaw ng araling ito ang **kung ano ang mga benepisyo at ang mga kondisyon nito**. Huwag magbigay ng halaga, iskedyul, o tuntunin sa pagbabayad. Wala nito sa aralin, at sinasabi ng Facilitator Guide na nasa RA 7883 IRR ang detalye. Huwag kuwentahin kung ilang BHW ang puwede sa isang barangay batay sa 1% na limitasyon. Ang local health board ang naglalapat nito. Sa susunod na aralin pa ang mga kondisyon ng BHWE.
+Basahin ang dalawang wika at ang na-audit na seksiyon 4–7 ng RA 7883. Bago magturo, tiyakin ang kasalukuyang pagpapatupad at contact sa local health board/LGU at kaugnay na provider. Itala lamang ang verified; sabihing hindi pa alam ang hindi natitiyak. Kasama ang board at peace and order council sa hazard amount; LGU sa subsistence computation. Independiyenteng tiyakin ang kasalukuyang national implementing rules at lokal na proseso; summary lamang ang lumang DOH FAQ, hindi buong IRR. Huwag kumuwenta ng barangay slots mula sa nationwide cap o mangopya ng form ng ibang LGU. Panatilihin ang oras ng ibang aralin.
 
-## [opening] Pambungad
+## [opening] Panimula
 
-Ituro ang listahan ng anim na benepisyo at itanong: *"Bago tayo magbasa, lagyan ng tsek ang 'Alam na?' sa bawat benepisyong narinig n'yo na."* Hayaang lumapit ang mga BHW para mag-tsek, o ikaw ang mag-tsek batay sa taas ng kamay. Huwag munang itanong kung sino ang nakatanggap ng ano.
+Basahin ang kathang-isip na narinig ni Demi: “Awtomatiko at pare-pareho ang allowance ng lahat ng BHW.” Anyayahan silang pag-usapan ang pahayag, nang hindi tinatanong ang personal na rehistrasyon o kasaysayan ng benepisyo. Sabihin: “Igalang natin ang tanong at tingnan ang kondisyon. Hindi patunay ng pagkakamali ang hindi pagtanggap.”
 
 ## [steps] Mga hakbang
 
-1. **Ang listahan (Read "Ang mga benepisyo sa ilalim ng RA 7883", unang talata; ang slide).** Basahin nang dahan-dahan ang listahan. Pagkatapos ng bawat benepisyo, itanong: *"Alam n'yo na ba ito? Natanggap n'yo na ba ito?"* Huwag ipagpalagay na alam na nila ang lahat. Sa hanay na "Natanggap na?", mag-tsek lang para sa BHW na gustong sumagot.
-2. **Ang kondisyon.** Basahin: kailangang rehistrado ang BHW sa local health board ng lungsod o munisipyo kung saan siya nagbibigay ng serbisyo. Itanong: *"Saan kayo rehistrado? Pareho ba ito sa lungsod o munisipyo kung saan kayo nagseserbisyo?"*
-3. **Ang limitasyon.** Basahin: ang kabuuang bilang ng mga BHW sa buong bansa ay hindi dapat lumampas sa isang porsiyento (1%) ng populasyon ng bansa, at ang DOH ang nagtatakda ng angkop na bilang ng BHW kada dami ng sambahayan. Itanong: *"Ano ang ibig sabihin ng limitasyong ito para sa rehistrasyon?"* Pakinggan ang punto ng aralin: hindi basta-basta tinatanggap ang lahat, kaya mahalaga ang tamang rehistrasyon.
-4. **Mga kondisyon at proseso.** Basahin nang eksakto ang huling dalawang pangungusap ng seksyon. Itanong: *"Tinanong ka ng bagong BHW, 'Magkano ang hazard allowance?' Ano ang isasagot mo?"* Gabayan sila patungo sa: may tiyak na kondisyon at proseso ang mga benepisyo, tiyakin sa local health board, at huwag mangako.
-5. **Ang sinasabi ng slide.** Nakasulat din sa slide: *"Rehistrasyon at aktibong serbisyo: mahahalagang kondisyon."* Kung may magtanong tungkol sa "aktibong serbisyo," sabihing titiyakin mo ang eksaktong tuntunin sa local health board. Rehistrasyon ang kondisyong binabanggit sa Read ng araling ito.
-6. **Self-check.** Ibigay ang tanong ng check (*"Paano ipapaliwanag ang benepisyo?"*). Hayaang mag-usap ang grupo bago ibigay ang sagot.
+1. Ipakita ang anim na kategorya sa section-3: hazard, subsistence, training/education/career enrichment, civil service eligibility, libreng legal services at preferential loan access. Igrupo bilang allowance, pag-unlad at suporta. Ipaliwanag ang pagkakataong pang-edukasyon, conditional tuition scholarship ng anak, PAO services para sa kasong kaugnay ng tungkulin, at loan access ng organisadong grupo para sa proyektong sumusuporta sa kalusugan. Hindi ito anim na buwanang cash payment.
+2. Ipaliwanag ang seksiyon 4: rehistrasyon sa board ng lungsod/munisipyo kung saan naglilingkod at angkop na patunay ng akreditasyon. Sa seksiyon 6, saklaw ang akreditadong BHW na aktibo at regular ang tungkulin, kasama ang kondisyon ng bawat benepisyo. Hindi sapat ang isang credential para sa lahat. Sa seksiyon 7, kailangan ang board review/approval kapag lokal na pondo ang gagamitin.
+3. Sa seksiyon 5, DOH ang magtatakda ng ideal na ratio ng BHW sa sambahayan; nationwide ang one-percent population cap. Hindi ito imbentong barangay quota o personal na desisyon sa eligibility.
+4. I-model ang Card A: ang posibleng foreseeable ngunit unavoidable na panganib sa tungkulin ay kailangang i-validate ng tamang awtoridad. Board at peace and order council ang magtatakda ng halaga. Itanong kung sino ang contact para sa kasalukuyang ebidensiya at validation. Huwag tayo ang mag-validate ng exposure.
+5. I-model ang Card B: serbisyo sa loob ng isolated BHS upang available anumang oras; katumbas ng pagkain sa tungkulin ang allowance, kinukuwenta ng LGU ayon sa umiiral na kalagayan. Hindi sapat ang malayong bahay. Itanong ang service evidence at lokal na computation.
+6. I-model ang tanong ni Demi tungkol sa benepisyo, katayuan/ebidensiya, kondisyon at awtoridad. Maaaring ituro ng RHU/supervisor ang contact ngunit hindi nito pinapalitan ang statutory authority. Ituro ang CSC eligibility sa 1.4.3. Opsyonal ang kuwentong video.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Inaasahang sagot at supportive feedback
 
-- **"Wala pa akong natatanggap sa mga iyan."** Tanggapin ito nang walang awa o paninisi: *"Salamat sa pagsabi. Marami ring BHW ang ganyan. Tingnan natin ang kondisyon, kasi iyon ang unang dapat tiyakin."* Ituro ang rehistrasyon.
-- **"Sa barangay namin, may nakatakdang halaga kada buwan."** Huwag kumpirmahin o itama ang halaga. Sabihin: *"Ganyan sa inyo. Maaaring iba sa ibang LGU. Kaya sinasabi ng aralin na tiyakin sa local health board ang allowance na lokal ang pondo."*
-- **"Si Kapitan ang nagpapasya kung sino ang may allowance."** Huwag makipagtalo tungkol sa lokal na pulitika. Ibalik sa aralin: *"Ayon sa aralin, nakasalalay ang benepisyo sa rehistrasyon sa local health board. Alamin natin sa kanila kung paano ito dito."*
-- **Dalawa o tatlo lang ang naaalala.** Normal ito sa unang dinig. Ituro muli ang listahan at itanong kung alin ang pinakagusto nilang tiyakin para sa sarili.
+“Magkaiba ang hazard at subsistence; validation ang tingnan sa A at serbisyo sa isolated station sa B.” Tugon: “Naipagkaiba mo ang benepisyo at kondisyon. Pangalanan ngayon ang contact at dapat i-verify.”
 
-## [misconception] Karaniwang maling akala
+“Sapat na ang rehistrasyon para sa lahat.” Tugon: “Kailangan ang rehistrasyon. Idagdag ang aktibo at regular na tungkulin, tiyak na kondisyon ng benepisyo, at local-fund review kung naaangkop.”
 
-**"Kapag BHW ka na, awtomatiko nang darating ang lahat ng benepisyo, at pare-pareho ang halaga para sa lahat."** Kadalasan, naririnig ito sa kapwa BHW, kaya hindi ito kasalanan ninuman. Itama ito gamit ang mismong salita ng aralin: hindi awtomatiko ang mga benepisyong ito. Nakasalalay ang mga ito sa tamang rehistrasyon sa local health board, at may tiyak na kondisyon at prosesong administratibo. Sabihin: *"Iyan ang naririnig ng marami sa atin. Ang totoo, iniuugnay ng batas ang benepisyo sa rehistrasyon, at lokal na inaasikaso ang detalye. Kaya ang ligtas na sagot palagi: alamin natin sa local health board."*
+“Hindi nagparehistro ang hindi nakatanggap.” Tugon: “Hindi natin mahihinuha iyon. Tiyakin ang facts at pagpapatupad nang walang pagsisi.”
 
-## [practice] Gawaing pagsasanay
+“Lahat ng unrelated cases ay saklaw ng PAO” o “bawat indibidwal ay may loan.” Tugon: “Iugnay ang kaso sa tungkulin bilang BHW; ang loan access sa organisadong grupo at qualifying health-supporting projects.” Hindi kailangang kabisado agad ang bawat clause; maaaring gamitin ang listahan.
 
-Magkapares, tig-2 minuto, saka magpalit:
+## [misconception] Karaniwang maling pagkaunawa
 
-- Gaganap na bagong BHW ang isa at sasabihin: *"Narinig ko, pare-pareho raw ang allowance natin kada buwan at kusa na lang dumarating. Totoo ba? Ano ang kailangan kong gawin?"*
-- Sasagot ang isa sa sariling salita. Kailangan niyang (1) banggitin ang ilan sa mga benepisyong nakalista sa RA 7883, (2) ipaliwanag ang kondisyon, rehistrasyon sa local health board ng lungsod o munisipyo kung saan nagseserbisyo, (3) magbigay ng unang hakbang, halimbawa alamin ang status ng rehistrasyon at ang papeles sa local health board o sa supervisor, at (4) huwag mangako ng awtomatiko o pare-parehong bayad.
+Awtomatiko at pare-parehong allowance ang lahat ng benepisyo. Akreditasyon/rehistrasyon lamang ang sapat para sa bawat bayad. National cap ang nagtatakda ng lokal na slots. Itama gamit ang kaugnay na seksiyon at ebidensiya nang hindi nag-iimbento ng pera, quota o approval. Magkaiba ang enacted law at panukalang Magna Carta; hindi itinuturo bilang entitlement ang proposed amounts.
 
-Dalawa o tatlong pares ang magpepresenta. Magbibigay ang grupo ng isang kalakasan at isang mungkahi.
+## [practice] Kathang-isip na Card A/Card B
 
-## [answer-key] Susi sa self-check
+Card A: may boluntaryong BHW na nag-ulat ng posibleng panganib sa trabaho. Hindi pa alam ang akreditasyon, rehistrasyon, tamang validation at lokal na approval. Card B: may BHW na naglilingkod sa loob ng isolated BHS upang available anumang oras. Hindi pa alam ang katayuan, pagkain sa tungkulin at lokal na computation/approval. Hindi patunay ng entitlement ang alinmang card.
 
-Isa ang check sa araling ito. Lumalabas ito pagkatapos ng Read section na "Ang mga benepisyo sa ilalim ng RA 7883" at muli sa slide ng seksyong iyon. Iisang check ito, kaya isang beses lang itong sasagutin dito.
+Sa pares, pumili ng card. Pangalanan ng speaker ang benepisyo, ipaliwanag ang shared at specific conditions, at magtanong ng isang useful verification question. Tingnan ng listener kung may unsupported promise. Magpalit ng card at papel; mag-present ang dalawang pares. Blankong question sheets lamang. Tunay na opsyonal ang personal na karanasan; walang hihinging pribadong application, payment o benefit records.
 
-- **"Paano ipapaliwanag ang benepisyo?"** → **May itinakdang kondisyon at proseso; alamin ang naaangkop na patakaran.** Sinasabi ng aralin na nakasalalay ang benepisyo sa rehistrasyon sa local health board, at dapat tiyakin sa local health board ang pagiging kwalipikado, dokumento, at allowance na lokal ang pondo.
-  - Mali ang *"Awtomatikong pare-pareho ang lahat ng allowance."* Sinasabi ng aralin na hindi awtomatiko ang benepisyo, at huwag mangako ng awtomatiko o pare-parehong bayad. Lokal na tinitiyak ang allowance na gumagamit ng pondong lokal.
+## [answer-key] Application check at lahat ng dahilan
 
-## [observe] Ano ang oobserbahan
+Tama ang una: kailangan sa hazard allowance ang validated exposure na kaugnay ng tungkulin, kasama ang katayuan/rehistrasyon at applicable board review. Makatwirang unang hakbang ang pagtanong sa RHU ng contact para sa ebidensiya at awtoridad; hindi RHU ang pumapalit sa validation at approval authorities.
 
-Gamitin ang observation indicator ng aralin habang ginagawa ang gawaing pagsasanay. Ang indicator: *"Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor."*
+Mali ang ikalawa: hindi ginagawang awtomatiko o pare-pareho ng batas ang lahat ng allowance. Magkakaiba ang kondisyon at awtoridad na nagtatakda nito; walang known amount na ibinigay.
 
-- **Kaya na:** nang walang untag, nababanggit ng BHW ang mga benepisyo mula sa listahan, naipapaliwanag na nakasalalay ang mga ito sa rehistrasyon sa local health board, at nasasabi kung ano ang dapat tiyakin (pagiging kwalipikado, dokumento, allowance na lokal ang pondo) sa halip na mangako.
-- **Kailangan pa ng practice:** tama ang direksiyon ng BHW, halimbawa "itanong muna sa health board", pero kailangan pa ng untag mo bago niya mabanggit ang kondisyong rehistrasyon o kung ano mismo ang dapat tiyakin.
-- **Hindi pa:** sinasabi ng BHW sa "bagong BHW" na pare-pareho at awtomatiko ang allowance ng lahat, nagbabanggit ng halaga na parang tiyak na ito, o hindi maiugnay ang benepisyo sa rehistrasyon.
+Mali ang ikatlo: hindi napapatunayan ng rehistrasyon o isang credential ang exposure, lahat ng kondisyon, local review, CSC eligibility o personal na loan entitlement. Hindi nito pinapalitan ang tiyak na verification.
 
-Para sa mas detalyadong batayan, puwede ring tingnan ang objective 2 sa mga indicator ng kakayahan ng subchapter (nailalarawan ang hindi bababa sa apat na benepisyo at ang rehistrasyong kailangan). Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+## [observe] Pagmamasid at competency
 
-## [support] Kung kailangan ng dagdag na suporta
+Gamitin ang iisang objective-index-0 indicator sa Card A/B. Obserbahan ang grouped actions: pangalanan/ipaliwanag ang anim na kategorya na maaaring tingnan sa listahan; ihiwalay ang shared status/registration at kondisyon ng napiling benepisyo; pangalanan ang awtoridad/contact at verification question; umiwas sa garantiya, imbentong local quota at pagsisi. Hiwalay ang online completion sa observed competency.
 
-- Ibigay ang listahan sa papel at ipapaliwanag muna ang isang benepisyo lang at ang kondisyong rehistrasyon. Dagdagan kapag kaya na niya iyon.
-- Magbigay ng pangungusap na pupunan: *"Kasama sa RA 7883 ang mga benepisyong gaya ng ___. Para maging eligible, kailangang ___. Bago ako mangako, titiyakin ko muna ang ___ sa local health board."*
-- Ipares sila sa BHW na **Kaya na** at hayaan silang sumagot nang pangalawa.
-- Obserbahan muli sa susunod na sesyon gamit ang parehong tanong ng "bagong BHW," hindi bagong sitwasyon.
+Kaya na: tamang paliwanag at tiyak na verification nang walang untag. Kailangan pa ng practice: tama ang direksiyon pero kailangan ng untag sa kondisyon, provider o ebidensiya. Hindi pa: nagpapatuloy ang awtomatikong/pantay na bayad, credential-only entitlement, imbentong quota o pagsisi, o hindi maiugnay ang benepisyo sa verification. Magbigay ng isang lakas at isang actionable next step.
 
-## [sources-review] Sanggunian at tala sa pagrepaso
+## [support] Suporta at muling pagsasanay
 
-- Sanggunian ng aralin: BHW Reference Manual PDF 13 para sa listahan ng benepisyo, sa kondisyong rehistrasyon, at sa 1% na limitasyon (minanang page reference; nakabinbin pa ang huling audit). Setyembre 2026: sinuri laban sa RA 7883 §§4–7 — pambansa ang 1% na limitasyon (§5), para lamang sa serbisyo sa isolated na barangay health station ang subsistence allowance (§6b), at ang local health board at local peace and order council ang nagtatakda ng halaga ng hazard allowance (§6a). Ganito na ang sinasabi ng aralin.
-- Dagdag na batayan: binabanggit ng Facilitator Guide PDF 23 na maraming BHW ang hindi alam ang ibinibigay ng batas. Sinasabi rin nito na nasa IRR (Rule VII, Parts 1 hanggang 6, Benefits and Incentives) ang mas detalyadong pagpapatupad ng benepisyo, at puwedeng bigyan ng kopya ang mga BHW. Nakalista sa PDF 24 ang isang DOH FAQ tungkol sa benepisyo sa ilalim ng IRR. Ayon sa PDF 25, sinusuri at inaaprubahan ng local health board ang bawat benepisyong gumagamit ng pondong lokal.
-- Nakasulat sa slide ang "Rehistrasyon at aktibong serbisyo: mahahalagang kondisyon." Rehistrasyon lang ang binabanggit sa Read ng araling ito. Sa mga kondisyon ng BHWE lumalabas ang "aktibong serbisyo." Suriin ang wording na ito sa pagrepaso.
-- Oras: 3 oras ang itinatakda ng TESDA Training Regulations para sa *Develop Life and Career Decisions* (Facilitator Guide PDF 23). Ang 30 minuto sa itaas ay bahagi ng araling ito sa talahanayan ng module. Panatilihin ang kabuuang oras ng competency sa gabay ng subchapter. Huwag ulitin ang buong oras sa bawat maikling aralin. Para sa self-study ang hating ito, hindi bagong training-hour allocation.
-- Pangkalahatang indicator ang observation indicator ng aralin at pare-pareho ito sa lahat ng aralin sa module. Draft pa ang visual na "unawain, tiyakin, isagawa" at hindi pa aprubado ng may-ari.
-- Kailangan pang repasuhin bago ilathala: kasalukuyang legal at policy wording, bilingual parity, at observation indicator.
+Sentence frame: “Kasama sa RA 7883 ang ___. Kailangan ang rehistrasyon kung saan naglilingkod, at kailangan din sa benepisyong ito ang ___. Itatanong ko sa ___ kung paano matitiyak ang ___; hindi ko maipapangako ang ___.” Magsimula sa isang kategorya at kondisyon, saka idagdag ang iba gamit ang listahan. Magbigay ng supportive paired practice at muling obserbahan sa contrasting card. Maaaring ulitin ang maling unang sagot; walang kailangang personal na disclosure.
 
-Draft para sa pagrepaso.
+## [sources-review] Sanggunian at review notes
+
+Primary basis: RA 7883 seksiyon 4, 5, 6(a–f), 7, accessed 5 October 2026: https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html . CSC BHWE qualification/provider distinction: https://www.csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility . Orihinal na DOH Facilitator Guide: PDF 25/printed 16 para sa whole-competency timing at IRR-reading recommendations; PDF 26/printed 17 review questions at suggested references; PDF 27/printed 18 board responsibilities. SHA-256 ng orihinal na PDF: 041a0d63fab9f23235b927b029118159709f612f67889708398c75fada096837. Hindi sumusuporta sa mga claim na ito ang inherited PDF 13/23/24 references at inalis ang mga iyon.
+
+Authored ang bilingual paraphrase, timing split, mga tanong, cards at art. Hindi pa verified ang full current national IRR, target LGU procedures at independent current TESDA regulations. Walang claim ng independent legal/policy SME o human listening approval. Hiwalay ang source at model-mediated audio review limits. Inaprubahan ng owner ang reviewed package noong 5 Oktubre 2026; tingnan ang docs/lesson-142-owner-approval.json.

@@ -1,83 +1,68 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can name the benefits RA 7883 lists and explain the condition attached to them: registration with the local health board of the city or municipality where they serve. When someone asks about a benefit, the BHW can say what to confirm with the local health board instead of promising automatic or identical payment.
+Explain and apply benefits and conditions using Demi’s fictional case. Name the six statutory categories, distinguish registration/accreditation and benefit-specific conditions, and choose a proportionate verification step without promising money. There is one lesson objective, index 0.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 30 minutes in a face-to-face session. This is the "Benefits under RA 7883" part of the 3-hour plan in the subchapter guide. Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** manila paper with the six benefits written as a list, with two empty columns headed "Knew this?" and "Received it?"; markers; the lesson slide; the "Questions we were shy to ask" sheet from the previous lesson, if you used it.
+Retain 30 minutes from the existing module’s 180-minute plan: opening 3, worked explanation 8, Card A/B practice 10, check and feedback 5, observation and re-practice 4. This split is authored. Self-study is an authored 10–12-minute estimate, excluding optional story/replay time. The manual recommends three hours for the whole competency, not each lesson. Materials: six-category list, fictional Card A/Card B below, blank question sheets, markers and Read/Slides. No personal records or receipt checklist is required.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- Ask your RHU, LGU or local health board which of these benefits BHWs in your city or municipality currently receive and how. Ask what registration papers they need and whether any allowance is funded locally. Write down only what you have confirmed. If you could not confirm something, say so in the session.
-- Know the six benefits exactly as the lesson names them: hazard allowance, subsistence allowance (only for BHWs serving at isolated barangay health stations), training and career enrichment programs, civil service eligibility, free legal services, and priority access to loans.
-- This lesson covers **what the benefits are and the conditions attached to them**. Do not give amounts, schedules or payment rules. The lesson states none, and the Facilitator Guide says the details are in the RA 7883 IRR. Do not work out how many BHW slots a barangay has from the 1% limit. The local health board applies that limit. BHWE conditions come in the next lesson.
+Read both languages and the audited RA 7883 sections 4–7. Confirm current implementation and appropriate contacts with the local health board/LGU and relevant provider before delivery. Record only verified information; label unknown procedures as unknown. Hazard amount involves the board and peace and order council; subsistence computation involves the LGU. Verify current national implementing rules and local procedures independently; the old DOH FAQ is a summary, not the complete IRR. Do not calculate barangay slots from the nationwide cap or transplant another LGU’s forms. Keep sibling lesson times unchanged.
 
 ## [opening] Opening
 
-Point to the list of six benefits and ask: *"Before we read anything, put a check under 'Knew this?' for every benefit you had already heard of."* Let BHWs come up and mark it, or mark it for them by show of hands. Do not ask who has received what yet.
+Read Demi’s fictional claim: “Every BHW gets the same allowance automatically.” Invite a response about the claim, without asking anyone’s registration or benefit history. Say: “We can respect the question and check the conditions. Not receiving a benefit proves no fault.”
 
 ## [steps] Steps
 
-1. **The list (Read "The benefits under RA 7883", first paragraph; the slide).** Read the list slowly. After each benefit ask: *"Did you already know this? Have you received it?"* Do not assume they already know all of it. Mark the "Received it?" column only for BHWs who want to answer.
-2. **The condition.** Read: a BHW must be registered with the local health board of the city or municipality where they render service. Ask: *"Where are you registered? Is it the same city or municipality where you serve?"*
-3. **The limit.** Read: the total number of BHWs nationwide must not exceed one percent (1%) of the country's population, and the DOH sets the ideal number of BHWs per household. Ask: *"What does this limit mean for registration?"* Listen for the lesson's point: registration is not simply given to anyone, so getting it right matters.
-4. **Conditions and procedures.** Read the last two sentences of the section exactly. Ask: *"A new BHW asks you, 'How much is the hazard allowance?' What do you say?"* Guide them towards: benefits have specific conditions and procedures, confirm with the local health board, and do not promise.
-5. **The slide's wording.** The slide also says *"Registration and active service are important conditions."* If a BHW asks about "active service", say you will confirm the exact rule with the local health board. The Read text for this lesson names registration as the condition.
-6. **Self-check.** Give the check question (*"How should a benefit be explained?"*). Let the group discuss before you reveal the answer.
+1. Show the six categories in section-3: hazard, subsistence, training/education/career enrichment, civil service eligibility, free legal services and preferential loan access. Group as allowances, development and support. Explain education opportunities, the conditional child tuition scholarship, duty-connected PAO services and organized-group health-supporting projects for loans. These are not six monthly cash payments.
+2. Explain section 4 registration with the city/municipal board where service is rendered and appropriate proof of accreditation. Section 6 covers accredited BHWs actively and regularly performing duties plus each benefit’s conditions. One credential is insufficient for all benefits. Section 7 adds board review/approval where local funds are spent.
+3. Explain section 5: DOH sets the ideal BHW-to-household ratio; the one-percent population cap is nationwide. It is no invented barangay quota or personal eligibility decision.
+4. Work Card A: possible foreseeable but unavoidable risk during duty requires proper-authority validation; amount is determined by the local health board and peace and order council. Ask who can identify current evidence and validation contacts. Do not validate exposure yourself.
+5. Work Card B: service within an isolated BHS to be available at any and all times; allowance corresponds to meals during duty, computed by the LGU according to prevailing circumstances. A distant home alone is insufficient. Ask which service evidence and local computation apply.
+6. Model Demi’s question about benefit, status/evidence, conditions and authority. RHU/supervisor can identify a contact, without replacing statutory authorities. Signpost CSC eligibility to 1.4.3. Offer the story as optional.
 
-## [expected-answers] Expected answers and how to respond
+## [expected-answers] Expected answers and supportive feedback
 
-- **"I've never received any of these."** Receive this without pity or blame: *"Thank you for saying that. Many BHWs haven't. Let's look at the condition, because that is the first thing to check."* Point to registration.
-- **"In our barangay we get a fixed amount every month."** Do not confirm or correct the amount. Say: *"That is how it works where you are. Other LGUs may be different. That's why the lesson says to confirm locally funded allowances with the local health board."*
-- **"The captain decides who gets the allowance."** Do not argue about local politics. Bring it back to the lesson: *"The lesson says the benefits depend on registration with the local health board. Let's check with them how it works here."*
-- **They only remember two or three benefits.** That is normal on first hearing. Point back to the list and ask which one they would most want to check for themselves.
+“Hazard and subsistence have different conditions; check validation for A and isolated-station service for B.” Respond: “You distinguished the benefit and condition. Now name the appropriate contact and what to verify.”
+
+“Registration is enough for everything.” Respond: “Registration is required. Add active, regular duties, the specific benefit condition and local-fund review where applicable.”
+
+“A non-recipient must have failed to register.” Respond: “We cannot infer that. Check facts and implementation without blame.”
+
+“PAO handles every unrelated case” or “every individual gets a loan.” Respond: “Connect the case with BHW duties; connect loan access with organized groups and qualifying health-supporting projects.” Do not demand recall of every clause on first attempt; allow the list as a reference.
 
 ## [misconception] Common misconception
 
-**"Once you are a BHW, every benefit comes automatically, and everyone gets the same amount."** People usually hear this from other BHWs, so it isn't anyone's fault. Correct it with the lesson's own words: these benefits are not automatic. They depend on proper registration with the local health board, and they have specific conditions and administrative procedures. Say: *"That's what a lot of us hear. The law actually ties the benefits to registration, and the details are handled locally. So the safe answer is always: let's check with the local health board."*
+All benefits are automatic, identical allowances. Registration/accreditation alone establishes every payment. A national cap determines local slots. Correct with the relevant sections and evidence, without inventing money, quotas or approval. Enacted law and a proposed Magna Carta are different; proposed amounts are not taught as entitlements.
 
-## [practice] Practice activity
+## [practice] Fictional Card A/Card B practice
 
-Pairs, 2 minutes each, then swap:
+Card A: a volunteer BHW reports possible work-related danger. Accreditation, registration, proper validation and local approval are unknown. Card B: a BHW serves within an isolated BHS for service availability at all times. Status, meals during duty and local computation/approval are unknown. Neither card establishes entitlement.
 
-- One BHW plays a new BHW and says: *"I heard we all get the same allowance every month automatically. Is that true? What do I need to do?"*
-- The other answers in their own words. They (1) name some of the benefits RA 7883 lists, (2) explain the condition, registration with the local health board of the city or municipality where you serve, (3) give a first action, for example checking registration status and papers with the local health board or the supervisor, and (4) avoid promising automatic or identical payment.
+In pairs, choose a card. Speaker names the relevant benefit, explains shared and specific conditions, and asks one useful verification question. Listener checks for unsupported promises. Swap cards and roles, then two pairs present. Use blank question sheets only. Personal experiences are genuinely optional; no private application, payment or benefit records are requested.
 
-Two or three pairs present. The group gives one strength and one suggestion.
+## [answer-key] Application check and all rationales
 
-## [answer-key] Self-check answer key
+First choice is correct: hazard allowance depends on properly validated duty-related exposure alongside status/registration and applicable board review. Asking the RHU for the appropriate evidence/authority contact is a reasonable first step; the RHU does not itself replace validation or approval authorities.
 
-This lesson has one check. It appears after the Read section "The benefits under RA 7883" and again on that section's slide. It is the same check, so it is covered once here.
+Second choice is incorrect: the law does not make all allowances automatic or identical. Different conditions and authorities determine the allowances; no known amount is provided.
 
-- **"How should a benefit be explained?"** → **It has defined conditions and procedures; check the applicable rules.** The lesson says the benefits depend on registration with the local health board, and that eligibility, documentation and locally funded allowances must be confirmed with the local health board.
-  - *"All allowances are automatically identical"* is wrong. The lesson says the benefits are not automatic, and it tells BHWs not to promise automatic or uniform payment. Allowances that use local funds are confirmed locally.
+Third choice is incorrect: registration or one credential does not establish exposure, every benefit condition, local review, CSC eligibility or a personal loan entitlement. A credential cannot replace the specific verification.
 
-## [observe] What to observe
+## [observe] Observation and competency
 
-Use the lesson's observation indicator during the practice activity. The indicator is: *"Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor."*
+Use the single objective-index-0 indicator during Card A/B practice. Observe grouped actions: name/explain the six categories with the list available; distinguish shared status/registration and the chosen benefit’s conditions; identify the appropriate authority/contact and verification question; avoid guarantees, local quota inventions and blame. Online completion is separate from observed competency.
 
-- **Kaya na:** without prompting, the BHW names benefits from the list, explains that they depend on registration with the local health board, and says what to confirm (eligibility, documents, any locally funded allowance) instead of promising.
-- **Kailangan pa ng practice:** the BHW has the right direction, for example "ask the health board first", but needs your prompting to mention the registration condition or what exactly to check.
-- **Hindi pa:** the BHW tells the "new BHW" that everyone gets the same allowance automatically, quotes an amount as if it were certain, or cannot connect the benefits to registration.
+Kaya na: accurate explanation and specific verification without prompting. Kailangan pa ng practice: correct direction but needs prompts for conditions, provider or evidence. Hindi pa: persists with automatic/equal payment, credential-only entitlement, invented quota or blame, or cannot connect the benefit with a verification step. Give one strength and one actionable next step.
 
-For more detail you can also look at the subchapter's competency indicators, objective 2 (describing at least four benefits and the registration required). Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+## [support] Support and re-practice
 
-## [support] If a BHW needs more support
-
-- Give them the list on paper and ask them to explain only one benefit plus the registration condition. Add more benefits once that is solid.
-- Give a sentence frame: *"RA 7883 lists benefits like ___. To be eligible you need to be ___. Before I promise anything, I'll check ___ with the local health board."*
-- Pair them with a BHW rated **Kaya na** and let them answer second.
-- Re-observe at the next session with the same "new BHW" question, not a new scenario.
+Sentence frame: “RA 7883 includes ___. Registration where service is rendered is required, and this benefit also needs ___. I will ask ___ to identify how to verify ___; I cannot promise ___.” Start with one category and its condition, then use the reference list to add the others. Provide supportive paired practice and re-observe the contrasting card. An incorrect first attempt can be practised again; no personal disclosure is required.
 
 ## [sources-review] Sources and review notes
 
-- Lesson sources: BHW Reference Manual PDF 13 for the benefits list, the registration requirement and the 1% limit (inherited page references; final audit pending). September 2026: checked against RA 7883 §§4–7 — the 1% limit is nationwide (§5), the subsistence allowance applies only to service at isolated barangay health stations (§6b), and the hazard allowance amount is set by the local health board and the local peace and order council (§6a). The lesson now says so.
-- Background: the Facilitator Guide PDF 23 notes that many BHWs are not aware of what the law provides. It says the IRR (Rule VII, Parts 1 to 6, Benefits and Incentives) has more detail on how benefits are implemented, and that copies can be given to BHWs. PDF 24 lists a DOH FAQ on the benefits under the IRR. PDF 25 says the local health board reviews and approves every benefit that uses local funds.
-- The slide says "Registration and active service are important conditions." The Read text for this lesson names registration only. "Active service" appears in the BHWE conditions. Check this wording during review.
-- Timing: TESDA Training Regulations set 3 hours for *Develop Life and Career Decisions* (Facilitator Guide PDF 23). The 30 minutes above is this lesson's share of the module table. Keep the total competency time in the subchapter guide. Do not repeat that full allocation for each short lesson. This split supports self-study and does not create a new training-hour allocation.
-- The lesson's observation indicator is the generic one shared by every lesson in this module. The "understand, verify, practice" visual is a draft and is not owner-approved.
-- Still to review before publication: current legal and policy wording, bilingual parity, and the observation indicator.
+Primary claim basis: RA 7883 sections 4, 5, 6(a–f), 7, accessed 5 October 2026: https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html . CSC BHWE qualification/provider distinction: https://www.csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility . Original DOH Facilitator Guide: PDF 25/printed 16 whole-competency timing and IRR-reading recommendations, PDF 26/printed 17 review questions and suggested references, PDF 27/printed 18 board responsibilities. Original PDF SHA-256 041a0d63fab9f23235b927b029118159709f612f67889708398c75fada096837. Inherited PDF 13/23/24 references do not support these claims and are removed.
 
-Draft for review.
+This bilingual paraphrase, timing split, questions, cards and art are authored material. Full current national IRR, target LGU procedures and independent current TESDA regulations remain unverified. No independent legal/policy SME or human listening approval is claimed. Source and model-mediated audio review limitations are recorded separately. Owner approved the reviewed package on 5 October 2026; see docs/lesson-142-owner-approval.json. Source and listening gaps above remain.

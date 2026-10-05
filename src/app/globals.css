@@ -730,3 +730,24 @@ body {
   margin-inline: auto;
   object-fit: contain;
 }
+
+/* Demi benefits scene and optional story: keep faces and the whole video visible. */
+.reference-story-art img[src*="demi-benefits-conditions"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-benefits"] {
+  border: 0;
+  padding: 0;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-benefits"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-benefits"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-benefits"] details {
+  display: none;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-benefits"] figure { margin: 0; }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-benefits"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}

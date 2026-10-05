@@ -21,9 +21,7 @@ Panukalang hati:
 2. **Sa seksyong legal na batayan,** bigyang-diin na hindi lang
    "kusang-loob" ang batayan ng gawain — may batas. Ito ang
    pinakamadaling bahaging nakakaligtaan sa madalian.
-3. **Sa mga benepisyo,** basahin ang listahan nang dahan-dahan at
-   itanong pagkatapos ng bawat isa: "Alam n'yo na ba ito? Natanggap na
-   ba ninyo ito?" — huwag ipagpalagay na alam na nila ang lahat.
+3. **Sa mga benepisyo,** igrupo ang anim na kategorya at gamitin ang kathang-isip na Card A/Card B ni Demi upang ihiwalay ang validated hazard exposure sa serbisyo sa loob ng isolated station. Ipaliwanag ang rehistrasyon, aktibo at regular na tungkulin, at local-fund review. Itanong ang benepisyo, ebidensiya at tamang awtoridad/contact. Opsyonal ang personal na kasaysayan; walang hihinging pribadong rekord.
 4. **Sa BHWE,** gamitin ang apat na kondisyon bilang checklist na
    personal na susuriin ng bawat kalahok — hayaan silang tahimik na
    suriin ang sarili bago talakayin sa grupo.
@@ -52,13 +50,15 @@ kundi karapatan.
 
 ## Mga tanong para sa talakayan
 
-- "May benepisyo ba kayong hindi pa alam kung para rin sa inyo? Ano
-  ito?"
+- "Sa kathang-isip na kaso ni Demi, anong benepisyo at kondisyon ang dapat tiyakin, at sino ang makapagtuturo ng tamang contact?"
 - "May pagkakataon na ba kayong naghintay nang matagal sa isang
   proseso nang walang follow-up? Ano ang nangyari?"
 - "Paano ipaliliwanag ang depinisyon sa RA 7883 at isang hakbang para matiyak ang ebidensiya ng pagsasanay at akreditasyon?"
 
 ## Susi sa sagot ng mga retrieval check
+
+**Aralin 1.4.2: benepisyo at kondisyon** → Choice 1: ipaliwanag ang katayuan/rehistrasyon, validated hazard exposure at local review; itanong sa RHU ang tamang evidence/authority contact. Choice 2: awtomatikong pantay na allowance. Choice 3: isang credential para sa lahat ng kondisyon, CSC eligibility at personal na loan. Panatilihin ang authored 30 minuto; hiwalay ang online completion sa observed competency.
+
 
 1. **Aralin 1.4.1: pinakamainam na tugon ni Demi** → Choice 1: iugnay ang pagsasanay, boluntaryong serbisyo at akreditasyon ng local health board; itanong sa RHU ang contact para matiyak ang ebidensiya. Choice 2: karanasan ang ginawang akreditasyon. Choice 3: pangako ng allowance/appointment nang hindi tinitiyak ang hiwalay na kondisyon.
 2. **"Alin sa mga sumusunod ang HINDI kailangan para sa BHWE..."** →

@@ -1,0 +1,52 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural conversational Filipino (Tagalog) as a warm, expressive Philippine community health trainer. Give Demi’s opening question curious intonation; emphasize the different benefits, registration, active regular duties, validation and local review. Contrast hazard exposure with isolated-station service clearly. Vary pitch and pace naturally with brief clause pauses. Maintain one consistent adult female Kore narrator timbre throughout headings, body, quotations and takeaway; no character voices. Pronounce Demi as DEH-mee. Say RA as separate letters; say 7883 as seven thousand eight hundred eighty-three. Keep every negation and condition intelligible and finish word endings. Read exact words; do not translate, add fillers or guarantee any benefit.",
+  "durationSeconds": 83.017,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Sabi ng kakilala ni Demi, pare-pareho raw at awtomatiko ang allowance ng lahat ng BHW. Nagtanong siya: anong benepisyo, at anong kondisyon?",
+      "start_ms": 0,
+      "end_ms": 11360
+    },
+    {
+      "zone": "categories",
+      "index": 1,
+      "text": "Anim ang kategorya: hazard at subsistence allowance; training, education at career enrichment; civil service eligibility; libreng legal services; at preferential access sa loans para sa organisadong grupo.",
+      "start_ms": 11660,
+      "end_ms": 26820
+    },
+    {
+      "zone": "conditions",
+      "index": 2,
+      "text": "Kailangan ang rehistrasyon kung saan naglilingkod. Saklaw ang akreditadong BHW na aktibo at regular ang tungkulin. May kondisyon pa ang bawat benepisyo at review kapag lokal ang pondo.",
+      "start_ms": 27120,
+      "end_ms": 40280
+    },
+    {
+      "zone": "comparison",
+      "index": 3,
+      "text": "Hazard: exposure sa panganib na validated ng tamang awtoridad. Subsistence: serbisyo sa isolated station para available anumang oras. Magkaiba ang kondisyon; huwag mag-imbento ng halaga.",
+      "start_ms": 40580,
+      "end_ms": 54260
+    },
+    {
+      "zone": "verification",
+      "index": 4,
+      "text": "Tanong ni Demi sa RHU: sino ang tamang contact para matiyak ang katayuan, ebidensiya, validation at lokal na approval? Tanong pa lamang ito; hindi pa alam ang kaniyang entitlement.",
+      "start_ms": 54560,
+      "end_ms": 68240
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Ipaliwanag ang benepisyo at kondisyon, saka piliin ang verification. Walang pangakong awtomatikong bayad at walang pagsisi sa hindi nakatanggap. Magsanay gamit ang kathang-isip na kaso.",
+      "start_ms": 68540,
+      "end_ms": 82940
+    }
+  ]
+}

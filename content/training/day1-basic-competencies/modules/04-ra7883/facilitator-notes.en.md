@@ -21,9 +21,7 @@ Suggested split:
 2. **On the legal-basis section,** emphasize that the basis for the
    work is not just "goodwill" — it is law. This is the detail most
    easily missed in a rush.
-3. **On benefits,** read the list slowly and ask after each one: "Did
-   you already know this? Have you received it?" — don't assume they
-   already know all of it.
+3. **On benefits,** group the six categories and use Demi’s fictional Card A/Card B to distinguish validated hazard exposure from service within an isolated station. Explain registration, active regular duties and local-fund review. Ask which benefit, evidence and authority/contact need verification. Personal benefit history is optional; no private records are requested.
 4. **On BHWE,** use the four conditions as a personal checklist each
    participant reviews — let them quietly assess themselves before
    discussing as a group.
@@ -50,13 +48,15 @@ asking about them isn't greed, it's a right.
 
 ## Discussion prompts
 
-- "Is there a benefit you weren't sure applied to you too? What was
-  it?"
+- "In Demi’s fictional case, which benefit and conditions need checking, and who can identify the proper contact?"
 - "Have you ever waited a long time on a process with no follow-up?
   What happened?"
 - "How would you explain the RA 7883 definition and choose one step to verify training and accreditation evidence?"
 
 ## Answer key to the retrieval checks
+
+**Lesson 1.4.2: benefits and conditions** → Choice 1: explain shared status/registration, validated hazard exposure and local review; ask the RHU for the appropriate evidence/authority contact. Choice 2 promises automatic identical allowances. Choice 3 mistakes one credential for all conditions, CSC eligibility and a personal loan. Retain the authored 30-minute allocation; online completion is separate from observed competency.
+
 
 1. **Lesson 1.4.1: Demi’s best response** → Choice 1: connect training, voluntary service and local health board accreditation; ask the RHU for the appropriate evidence-verification contact. Choice 2 mistakes experience for accreditation; choice 3 promises an allowance/appointment without checking separate conditions.
 2. **"Which of the following is NOT required for BHWE..."** → A

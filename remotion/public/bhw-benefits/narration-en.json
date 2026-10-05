@@ -1,0 +1,52 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm, expressive community health trainer. Give Demi’s opening question curious intonation; emphasize the different benefits, registration, active regular duties, validation and local review. Contrast hazard exposure with isolated-station service clearly. Vary pitch and pace naturally with brief clause pauses. Maintain one consistent adult female Kore narrator timbre throughout headings, body, quotations and takeaway; no character voices. Pronounce Demi as DEH-mee. Say RA as separate letters; say 7883 as seven thousand eight hundred eighty-three. Keep every negation and condition intelligible and finish word endings. Read exact words; do not translate, add fillers or guarantee any benefit.",
+  "durationSeconds": 76.199,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Demi hears that every BHW gets the same allowance automatically. She asks: which benefit, and which conditions?",
+      "start_ms": 0,
+      "end_ms": 8440
+    },
+    {
+      "zone": "categories",
+      "index": 1,
+      "text": "Six categories: hazard and subsistence allowances; training, education and career enrichment; civil service eligibility; free legal services; and preferential loan access for organized groups.",
+      "start_ms": 8740,
+      "end_ms": 23100
+    },
+    {
+      "zone": "conditions",
+      "index": 2,
+      "text": "Registration where service is rendered is required. The Act covers accredited BHWs actively and regularly performing duties. Each benefit has conditions, with board review when local funds are used.",
+      "start_ms": 23400,
+      "end_ms": 37040
+    },
+    {
+      "zone": "comparison",
+      "index": 3,
+      "text": "Hazard: risk exposure validated by proper authorities. Subsistence: service within an isolated station for availability at all times. Different conditions; do not invent an amount.",
+      "start_ms": 37340,
+      "end_ms": 52900
+    },
+    {
+      "zone": "verification",
+      "index": 4,
+      "text": "Demi asks the RHU: who can help verify status, evidence, validation and local approval? This is only a question; her entitlement remains unverified.",
+      "start_ms": 53200,
+      "end_ms": 64880
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Explain the benefit and conditions, then choose verification. Promise no automatic payment and do not blame non-recipients. Practice with a fictional case.",
+      "start_ms": 65180,
+      "end_ms": 76140
+    }
+  ]
+}

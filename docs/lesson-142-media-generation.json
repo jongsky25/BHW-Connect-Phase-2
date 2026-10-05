@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-05T04:37:41.516Z",
+  "source_commit": "64e1c37dccc653d482e4c91b3a5d98d8e0e0e6aa",
+  "owner_review": "approved; exact reviewed hashes in lesson-142-owner-approval.json",
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 83.017,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "Sabi ng kakilala ni Demi, pare-pareho raw at awtomatiko ang allowance ng lahat ng BHW. Nagtanong siya: anong benepisyo, at anong kondisyon?",
+          "start_ms": 0,
+          "end_ms": 11360
+        },
+        {
+          "zone": "categories",
+          "index": 1,
+          "text": "Anim ang kategorya: hazard at subsistence allowance; training, education at career enrichment; civil service eligibility; libreng legal services; at preferential access sa loans para sa organisadong grupo.",
+          "start_ms": 11660,
+          "end_ms": 26820
+        },
+        {
+          "zone": "conditions",
+          "index": 2,
+          "text": "Kailangan ang rehistrasyon kung saan naglilingkod. Saklaw ang akreditadong BHW na aktibo at regular ang tungkulin. May kondisyon pa ang bawat benepisyo at review kapag lokal ang pondo.",
+          "start_ms": 27120,
+          "end_ms": 40280
+        },
+        {
+          "zone": "comparison",
+          "index": 3,
+          "text": "Hazard: exposure sa panganib na validated ng tamang awtoridad. Subsistence: serbisyo sa isolated station para available anumang oras. Magkaiba ang kondisyon; huwag mag-imbento ng halaga.",
+          "start_ms": 40580,
+          "end_ms": 54260
+        },
+        {
+          "zone": "verification",
+          "index": 4,
+          "text": "Tanong ni Demi sa RHU: sino ang tamang contact para matiyak ang katayuan, ebidensiya, validation at lokal na approval? Tanong pa lamang ito; hindi pa alam ang kaniyang entitlement.",
+          "start_ms": 54560,
+          "end_ms": 68240
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Ipaliwanag ang benepisyo at kondisyon, saka piliin ang verification. Walang pangakong awtomatikong bayad at walang pagsisi sa hindi nakatanggap. Magsanay gamit ang kathang-isip na kaso.",
+          "start_ms": 68540,
+          "end_ms": 82940
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-be0ad0574ae9.mp4",
+        "content_hash": "be0ad0574ae952d3c72277b55466103f2ad5ded1dcab9154d093e49565497a21",
+        "duration_s": 84,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-f55ea0ba5050.vtt",
+          "content_hash": "f55ea0ba5050bf0bc9b1b565612aad6f48ff3e0f412a8e8c6d64a76b71e58c51"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+          "content_hash": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+        "content_hash": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 76.199,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "Demi hears that every BHW gets the same allowance automatically. She asks: which benefit, and which conditions?",
+          "start_ms": 0,
+          "end_ms": 8440
+        },
+        {
+          "zone": "categories",
+          "index": 1,
+          "text": "Six categories: hazard and subsistence allowances; training, education and career enrichment; civil service eligibility; free legal services; and preferential loan access for organized groups.",
+          "start_ms": 8740,
+          "end_ms": 23100
+        },
+        {
+          "zone": "conditions",
+          "index": 2,
+          "text": "Registration where service is rendered is required. The Act covers accredited BHWs actively and regularly performing duties. Each benefit has conditions, with board review when local funds are used.",
+          "start_ms": 23400,
+          "end_ms": 37040
+        },
+        {
+          "zone": "comparison",
+          "index": 3,
+          "text": "Hazard: risk exposure validated by proper authorities. Subsistence: service within an isolated station for availability at all times. Different conditions; do not invent an amount.",
+          "start_ms": 37340,
+          "end_ms": 52900
+        },
+        {
+          "zone": "verification",
+          "index": 4,
+          "text": "Demi asks the RHU: who can help verify status, evidence, validation and local approval? This is only a question; her entitlement remains unverified.",
+          "start_ms": 53200,
+          "end_ms": 64880
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Explain the benefit and conditions, then choose verification. Promise no automatic payment and do not blame non-recipients. Practice with a fictional case.",
+          "start_ms": 65180,
+          "end_ms": 76140
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-en-6a207010c1d6.mp4",
+        "content_hash": "6a207010c1d6bcaef641f2c835b41fbfc291e83c574b5e0f186ba85cd5ef551e",
+        "duration_s": 77,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-benefits-gemini-en-fb1e0a5db943.vtt",
+          "content_hash": "fb1e0a5db94351fe032c1001124c47b488542014c0f555c0bd0983b4067c6ebc"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-benefits-gemini-en-dbcf24125f91-poster.jpg",
+          "content_hash": "dbcf24125f91bd4a2b49e41af2fe89e76aaa538d0f5fc16066075087d37d8bbf"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-en-dbcf24125f91-poster.jpg",
+        "content_hash": "dbcf24125f91bd4a2b49e41af2fe89e76aaa538d0f5fc16066075087d37d8bbf"
+      }
+    }
+  ],
+  "owner_approval": "lesson-142-owner-approval.json",
+  "review_status": "approved"
+}

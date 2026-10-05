@@ -1,0 +1,53 @@
+name: Lesson 1.4.2 draft Gemini media
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lesson142-draft-media-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  draft-media:
+    if: github.ref == 'refs/heads/codex/lesson-142-demi-proposal'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Generate lesson 1.4.2 media
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-142-media-build.mjs
+      - name: Model-mediated audio review of actual completed tracks
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-142-audio-review.mjs
+      - name: Save review artifacts, including completed partial tracks on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lesson142-draft-media
+          retention-days: 14
+          path: |
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/lesson.json
+            public/training/audio/04-ra7883/bhw-benefits/
+            public/training/bhw-1-4/bhw-benefits-gemini-*
+            remotion/public/bhw-benefits/
+            remotion/src/Root.tsx
+            docs/lesson-142-media-generation.json
+            docs/lesson-142-audio-review.json
+          if-no-files-found: error
