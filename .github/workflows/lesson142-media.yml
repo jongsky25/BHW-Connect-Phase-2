@@ -20,6 +20,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  draft-media145:
+    if: github.ref == 'refs/heads/codex/lesson-145-demi-proposal'
+    uses: ./.github/workflows/lesson145-media.yml
+    secrets: inherit
+    with:
+      review_only: ${{ inputs.lesson144_review_only || false }}
   draft-media144:
     if: github.ref == 'refs/heads/codex/lesson-144-demi-proposal'
     uses: ./.github/workflows/lesson144-media.yml

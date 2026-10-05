@@ -1,88 +1,52 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na mag-follow-up nang kalmado at may tiyak na tanong sa mabagal na rehistrasyon o benepisyo. Sa isang role-play, itinatanong niya ang status, ang kulang na dokumento, at ang susunod na hakbang, sa halip na manahimik o magreklamo nang walang tiyak na hinihingi.
+Mailapat ang iisang objective, index 0: ipaliwanag at isagawa ang maayos na follow-up. Sa fictional practice, ihiwalay ang alam sa hula, magtanong nang tiyak sa tamang contact, makinig at linawin, at pumili ng angkop na susunod na hakbang. Ang self-management at reflection ay suporta sa kilos, hindi paghatol sa personalidad.
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** mga 45 minuto sa harapang sesyon. Ito ang bahaging "Pagsasanay: pag-follow-up nang kalmado + CSC Form 101-H demo" sa 3 oras na plano sa gabay ng subchapter. Mga 5 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** ang dalawang slide ng aralin; mga role-play card para sa gaganap na "staff ng local health board" (tingnan ang Gawaing pagsasanay); manila paper at marker; kung gagawin ang demo, kopya ng CSC Form 101-H (revised 2011) para sa mga BHW. Ayon sa Facilitator Guide, puwede itong i-download sa website ng CSC. Tiyaking kasalukuyang bersiyon ang hawak mo.
+45 minutong authored facilitated share: pambungad 5; question demonstration 5; Card A/B/C analysis 5; rotating role-play 15; observer feedback at re-practice 10; application check at reflection 5. Kabuuan 45. Ang optional form-and-follow-up activity na 30 minuto ay nasa loob ng huling 30 minuto, hindi dagdag na compulsory time. Panatilihin ang module 180 minuto: 15 + apat na 30 + 45. Hindi hiwalay na TESDA minimum para sa follow-up ang 45 minuto. Self-study estimate: ilalapat mula sa aktuwal na encoded narration duration bago final delivery; dagdag ang optional stories at replay. Gumamit ng anim na screen, fictional cards, blangkong notebook at panulat; walang pribadong dokumento.
 
-## [prepare] Paghahanda
+## [prepare] Maghanda
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Alamin kung aling opisina ang dapat pag-follow-upan ng mga BHW sa inyong LGU tungkol sa rehistrasyon, akreditasyon, o benepisyo. Tiyakin ito sa inyong RHU o LGU.
-- Kung gagawin mo ang demo ng CSC Form 101-H, subukan mo munang punan ang isang blangkong kopya para maipakita mo ito nang may kumpiyansa. Laktawan ang demo kung wala kang form o hindi ka sigurado kung paano ito punan. Ang role-play ang uunahin.
-- Saklaw ng araling ito ang **paraan ng pag-follow-up**, hindi ang mga patakaran. Halimbawa lang mula sa aralin ang pag-follow-up ni Josie "tuwing dalawang buwan." Hindi ito takdang pagitan. Huwag mangakong tiyak na may sagot o benepisyo kapag nag-follow-up.
+Basahin ang bilingual Read/Slides at source audit. Tiyakin sa lokal na health team ang contact at accessible na channel; markahan ang hindi alam, huwag mag-imbento ng opisina o deadline. Ihanda ang tatlong learner card at tatlong staff card sa practice. Walang compelled disclosure ng accreditation, benepisyo o personal distress. Adapted follow-up-only ang form activity sa package: verified ang CSC website reference sa CS Form 101-H revised Dec.2011 ngunit hindi pa natiyak ang download bytes; walang official form demo o submission dito.
 
 ## [opening] Pambungad
 
-Itanong sa grupo: *"May pagkakataon na ba kayong naghintay nang matagal sa isang proseso nang walang follow-up? Ano ang nangyari?"* Kumuha ng dalawa o tatlong kuwento. Pasalamatan ang bawat isa. Huwag munang sabihin kung ano sana ang dapat nilang ginawa.
+Sa 5 minuto, ipakita ang kathang-isip na Demi na nagbigay ng aplikasyon ngunit walang nakumpirmang update. Itanong: “Ano ang alam? Ano ang hindi pa tiyak?” Tanggapin ang pag-aalala nang hindi sinisisi ang pananahimik. Hindi kailangang magbahagi ng sariling pagkaantala. Maaaring sumagot sa card, sariling wika o kasama ang katuwang.
 
 ## [steps] Mga hakbang
 
-1. **Ang tanong (Read "Kapag mabagal ang proseso", unang slide).** Basahin: *"Alam mo na ngayon ang buong proseso — pero ano ang gagawin mo kung inabot ito ng ilang buwan nang walang balita?"* Itanong sa grupo kung ano ang karaniwan nilang ginagawa.
-2. **Malabo laban sa tiyak.** Isulat sa manila paper ang dalawang tanong mula sa aralin: *"Kailan pa ba ito matatapos?"* at *"Ano pong status ng aking aplikasyon, at may kailangan pa po ba akong ibigay?"* Itanong: *"Alin ang mas madaling sagutin ng staff? Bakit?"*
-3. **Kumalma muna.** Ituro ang slide: kumalma bago mag-follow-up, itanong ang status at kulang na dokumento, linawin ang susunod na hakbang. Itanong: *"Ano ang ginagawa ninyo para kumalma bago kayo pumasok?"*
-4. **Mali (Read "Mali kumpara sa tama: humingi ng nararapat", ikalawang slide).** Basahin ang kuwentong Mali. Itanong: *"Ano ang naging kapalit ng pananahimik ni Josie?"* Ang sagot: anim na buwan, at isang nawawalang dokumento na mahuhuli sana kung nag-follow-up siya nang maaga.
-5. **Tama.** Basahin ang kuwentong Tama. Itanong: *"Ano ang ginawa ni Josie na iba?"* Regular siyang nag-follow-up na may tiyak na tanong, kalmadong nagpaalala, at agad na naibigay muli ang nawawalang dokumento. Ipaalala na ginawa lang ni Josie ang "tuwing dalawang buwan." Hindi ito patakaran.
-6. **Self-check.** Ibigay ang tanong ng check (*"Ano ang maayos na follow-up?"*). Hayaang mag-usap ang grupo bago ibigay ang sagot.
-7. **Role-play** (tingnan ang Gawaing pagsasanay). Ipakita ang pagkakaiba ng kalmadong tanong at reklamo.
-8. **Kung may oras,** ipakita ang aktwal na CSC Form 101-H at ipakita kung paano ito pupunan. Kaugnay ito ng seksyon tungkol sa dokumentasyon sa Modyul 1.
+1. Pambungad at known/unknown (5 minuto).
+2. I-model ang pause kung helpful, pakay at tanong sa section-6 (5). Ipakita ang magalang at matatag na paraan, walang guarantee.
+3. Ihambing ang Cards A/B/C (5).
+4. Tatlong role-play rounds: learner, contact at observer; 5 minuto bawat round kasama ang maikling paglilinaw (15).
+5. Observer feedback, reflection at ulitin ang tanong sa bagong staff card (10).
+6. Application check, lahat ng rationale at isang realistic next-contact note (5). Hindi kailangan ang optional video sa online completion.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Inaasahang sagot
 
-- **"Kapag nag-follow-up ako, iisipin nilang naiinip ako."** Ganito mismo ang inisip ni Josie. Sabihin: *"Ganyan din ang inisip ni Josie, at anim na buwan ang naging kapalit. Hindi pagkainip ang kalmado at tiyak na tanong."*
-- **"Minsan kailangan mo munang magalit bago sila kumilos."** Huwag magsermon. Itanong: *"Kapag may nagagalit sa inyo sa health station, gaano kadaling tulungan siya?"* Saka ituro ang aralin: mas malamang masagot ang malinaw at kalmadong tanong.
-- **"Hindi ko alam kung kanino magtatanong."** Ibigay ang opisinang natiyak mo sa Paghahanda. Kung hindi mo alam, sabihin ito at isulat para alamin.
-- **Iminumungkahing sumulat o dumaan sa supervisor.** Tanggapin ito. Ang punto ng aralin ay ang tiyak na tanong, hindi ang daanan.
+Alam: nagbigay ng fictional application. Hindi alam: receipt, completeness, status, sanhi, responsable at petsa. Card A: tulungang linawin ang application at pakay; hindi masamang tao ang nagtatanong nang malabo. Card B: may tiyak na pakay at verification question. Card C: hula ang lost document at requirement; itanong muna kung may dapat tiyakin. Kapag “nakakainis,” tanggapin ang damdamin at tulungang bumuo ng tanong. Kapag hindi alam ang contact, itala bilang unknown at kumpirmahin sa health team; huwag imbentuhin.
 
 ## [misconception] Karaniwang maling akala
 
-**"Ang pananahimik habang naghihintay ang magalang at tamang gawin."** Maraming BHW ang pinalaking maghintay ng kanilang pagkakataon, kaya galing ito sa magandang asal, hindi sa katamaran. Itama ito gamit ang takeaway ng aralin: ang katahimikan sa harap ng pagkaantala ay hindi pagiging magalang. Madalas, pinahahaba lang nito ang problemang naayos sana nang maaga. Sabihin: *"Hindi magkasalungat ang paggalang at ang pag-follow-up. Puwede ninyong gawin pareho sa iisang pangungusap: 'Magandang umaga po, ano po ang status ng aplikasyon ko, at may kulang pa po ba?'"*
+“Kapag matagal, aprubado na.” Hindi patunay ng pasya ang tagal. “Tiyak na nawala ang dokumento.” Hindi alam ang sanhi hangga’t hindi nakumpirma. “Dapat walang emosyon para pumasa.” Hindi accent, damdamin, tahimik na personalidad o assertiveness ang skill score. Ang obserbasyon ay specific question, facts/unknowns, clarification at bounded next step. Hindi garantiya ng sagot o benepisyo ang calmness.
 
-## [practice] Gawaing pagsasanay
+## [practice] Pagsasanay
 
-Role-play nang tatluhan: isang **BHW**, isang **staff ng local health board**, at isang **tagamasid**. Magpalitan para lahat ay makaganap na BHW nang isang beses, mga 3 minuto bawat ikot.
-
-Bigyan ang staff ng card na may isa sa mga sitwasyong ito:
-
-- *"Sinusuri pa ang aplikasyon. Wala pang petsa."*
-- *"May isang dokumentong kulang sa file."*
-- *"Abala ka at sa una ay 'Balik ka na lang sa susunod' lang ang isasagot mo."*
-
-Ilang buwan nang naghihintay ang BHW nang walang balita. Kailangan niyang kalmadong bumati, itanong ang status, itanong kung may kulang, at itanong ang susunod na hakbang. Itatala ng tagamasid kung tiyak ang tanong ng BHW at kung nanatili siyang kalmado. Pagkatapos, uulitin ng isa o dalawang grupo ang role-play sa harap ng lahat. Itanong sa buong grupo: *"Tanong ba iyon o reklamo?"*
+Learner cards: A malabong tanong; B specific verification question; C hula sa lost document (buong teksto nasa screen 3). Staff card 1: “Sinusuri pa. Wala pang petsa.” Staff card 2: “May item na kailangang i-verify; linawin natin kung ano at paano.” Staff card 3: “Hindi ko matiyak kung sino ang responsable.” Mga fictional response lang ito. Magpalitan ng role sa tatlong round. Learner: pakay, known/unknown, specific question, ulitin ang sagot, linawin ang next contact. Observer: itala ang aktuwal na narinig at isang suggestion. Re-practice matapos ang feedback. Worksheet: fictional pakay / confirmed response / natitirang tanong / agreed next contact. Walang real ID o dokumento.
 
 ## [answer-key] Susi sa self-check
 
-Isa ang check sa araling ito. Lumalabas ito pagkatapos ng Read section na "Mali kumpara sa tama: humingi ng nararapat" at muli sa slide ng seksyong iyon. Iisang check ito, kaya isang beses lang itong sasagutin dito. Walang check ang unang seksyon, ang "Kapag mabagal ang proseso."
+Iisang three-choice check sa huling Read at Slide screen. Una: tama, kinukumpirma ang receipt/status, nakikinig at nililinaw ang next step sa tamang contact. Ikalawa: walang batayan ang automatic approval dahil matagal nang naghihintay. Ikatlo: hula ang lost document at requirement; hindi muna dapat ipasa muli lahat. Ipaliwanag ang bawat dahilan; tanggapin ang katumbas na sariling salita. Hiwalay ang online correct answer sa observed skill.
 
-- **"Ano ang maayos na follow-up?"** → **Kalmadong itanong ang status, kulang na dokumento, at susunod na hakbang.** Ito ang itinuturo ng aralin: pakalmahin muna ang sarili, saka magtanong nang tiyak. Ito rin ang nakatipid ng panahon sa kuwentong "Tama" ni Josie.
-  - Mali ang *"Magalit agad bago alamin ang dahilan."* Sinasabi ng aralin na pakalmahin muna ang sarili bago sumulpot ang galit. Mas malamang na hindi masagot ang reklamong walang tiyak na hinihingi, at madalas kayang ayusin ang dahilan ng pagkaantala, gaya ng nawawalang dokumento.
+## [observe] Dapat obserbahan
 
-## [observe] Ano ang oobserbahan
+Gamitin ang isang objective_index 0 indicator. Kaya na: walang prompt na naihihiwalay ang facts/unknowns, may specific question, nauulit/nalilinaw ang staff response at bounded next step sa dalawang staff card. Kailangan practice: nasa tamang direksiyon ngunit may prompt sa isa sa mga kilos. Hindi pa: patuloy na hula ang sanhi/approval o walang specific question/clarification pagkatapos ng suporta; magmodelo at ulitin. Hindi nangangahulugan ng incompetence ang accent, kaba, galit o paggamit ng written question. Walang score sa administrative result.
 
-Gamitin ang observation indicator ng aralin habang ginagawa ang role-play. Ang indicator: *"Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor."*
+## [support] Kung kailangan ng suporta
 
-- **Kaya na:** nang walang untag, nananatiling kalmado ang BHW, tiyak na itinatanong ang status, kulang na dokumento, at susunod na hakbang, at ginagawa pa rin ito kahit sa una ay hindi siya pinansin ng staff.
-- **Kailangan pa ng practice:** tama ang direksiyon ng BHW pero malabo ang tanong, gaya ng "kailan ba matatapos?", o medyo nagiging emosyonal at kailangan pa ng untag mo para itanong ang kulang na dokumento o ang susunod na hakbang.
-- **Hindi pa:** nananahimik ang BHW, sumusuko matapos ang unang "balik ka na lang," o galit na nagrereklamo nang walang tiyak na hinihingi.
+Magbigay ng four-part cue card: alam at unknown / tanong / naunawaan at paglilinaw / next contact. Puwedeng basahin, isulat, pakinggan o idikta ang tanong. Pair sa supportive partner, hayaang maging observer muna, at i-model ang staff card 1. Humingi ng preferred language at accessible method. Bawasan ang prompt sa ikalawang practice at muling obserbahan. Huwag piliting magkuwento ng totoong pagkaantala o personal distress.
 
-Para sa mas detalyadong batayan, puwede ring tingnan ang objective 4 sa mga indicator ng kakayahan ng subchapter (kalmado at tiyak na tanong sa halip na reklamo kapag may pagkaantala). Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+## [sources-review] Sanggunian at review notes
 
-## [support] Kung kailangan ng dagdag na suporta
-
-- Isulat sa card ang tiyak na tanong mula sa aralin at hayaan siyang basahin ito sa unang subok. Sa ikalawang subok, sasabihin na niya ito sa sariling salita.
-- Ibigay muna ang pinakamadaling card ng staff (ang kulang na dokumento), saka ang card na "balik ka na lang."
-- Ipares sila sa BHW na **Kaya na** at hayaan muna silang manood bilang tagamasid sa isang ikot bago gumanap na BHW.
-- Obserbahan muli sa susunod na sesyon gamit ang parehong mga role-play card, hindi bago.
-
-## [sources-review] Sanggunian at tala sa pagrepaso
-
-- Sanggunian ng aralin: Facilitator Guide PDF 23 para sa competency (minanang page reference; nakabinbin pa ang huling audit).
-- Dagdag na batayan: nakalista sa Facilitator Guide PDF 23 ang inaasahang learning outcomes ng competency na ito: pamamahala sa sariling emosyon, pagbuo ng reflective practices, at pagpapalakas ng tiwala sa sarili at self-regulation. Sinasabi rin nitong puwedeng ipakita sa training ang CSC Form 101-H (revised 2011) para sa mga BHW, at may link ito sa CSC para i-download. Nakalista sa Day 1 presentation (slide 25) ang "Filling up of CSC Form 101-H, revised 2011 for BHWs" bilang learning activity. Tiyaking kasalukuyan pa ang bersiyon ng form at ang link.
-- Sariling halimbawa ng aralin ang kuwento ni Josie (anim na buwang pananahimik, follow-up tuwing dalawang buwan), hindi patakaran mula sa mga sanggunian.
-- Oras: 3 oras ang itinatakda ng TESDA Training Regulations para sa *Develop Life and Career Decisions* (Facilitator Guide PDF 23). Ang 45 minuto sa itaas ay bahagi ng araling ito sa talahanayan ng module. Panatilihin ang kabuuang oras ng competency sa gabay ng subchapter. Huwag ulitin ang buong oras sa bawat maikling aralin. Para sa self-study ang hating ito, hindi bagong training-hour allocation.
-- Isinulat para sa pagsasanay ang mga role-play card ng staff at hindi galing sa mga sanggunian. Pangkalahatang indicator ang observation indicator ng aralin at pare-pareho ito sa lahat ng aralin sa module. Draft pa ang visual na "unawain, tiyakin, isagawa" at hindi pa aprubado ng may-ari.
-- Kailangan pang repasuhin bago ilathala: kasalukuyang legal at policy wording, bilingual parity, at observation indicator.
-
-Draft para sa pagrepaso.
+Audit 5 Oktubre 2026: original DOH Facilitator Guide PDF23/printed16 (126-page file, exact SHA sa audit); TESDA BHS NCII Revision01, unit400311213 PDF19–20/printed15–16 at PDF86–87/printed82–83. Suportado ang emotion management, reflective practice, communication/self-regulation at tatlong oras para sa buong competency. Authored application ang Demi, lahat ng cards, specific questions, contact planning at 45-minute split; hindi statutory interval o empirical promise. Original Day1 PDF25 walang printed slide number: optional CSC form activity. Website reference lang ang current CSC form evidence; download bytes hindi verified, kaya adapted/omitted ang demo. Walang verified target LGU procedure, full national IRR/amendment history, independent policy SME approval o human listening. New lesson/media draft para sa separate owner review.

@@ -1,0 +1,9 @@
+# Lesson 1.4.5 draft review
+
+Replaces the inherited delayed-application story with six bilingual Demi screens: known/unknown facts, a specific question, fictional Cards A/B/C, listening/clarification, a bounded next-contact plan and a three-choice application check. Both old Read/Slide IDs and the lesson UUID/single objective remain. Full Read and Slide narration are equivalent. The guide uses a 45-minute authored share within the existing 180-minute module allocation.
+
+New illustration uses the approved 1.4.1 Demi identity as an actual imagegen input; all new media are draft. Twelve actual Gemini/Kore tracks and two measured six-beat stories are being built through the existing repository secret. No pilot app development, migration, learner lookup or publication is performed. Bounded published baseline is retained in lesson-145-start-baseline.json; every starting audio byte and all non-target mappings/history remain protected.
+
+The only shared content edits are target QA attribution, the optional activity retaining module objective index3/indicator4, guide steps6/7/follow-up discussion and answer key, a corrected original manual PDF page label and one appended source. Form demonstration is adapted/omitted because the official download bytes remain unverified. No statutory follow-up interval, diagnosed delay cause, guarantee or judgment of a learner’s emotions is taught.
+
+Source audit, generation provenance and raw verification evidence are recorded separately. Current draft is incomplete until media, audio review, final-head CI/render/dry-loader, browser and offline-package verification finish. No human listening, policy SME review, target LGU procedure or owner approval is claimed. Merge/deployment/publication require separate owner authorization for this exact lesson.

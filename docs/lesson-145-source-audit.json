@@ -1,0 +1,145 @@
+{
+  "audited_date": "2026-10-05",
+  "sources": [
+    {
+      "file": "tesda-bhs-ncii-revision01.pdf",
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+      "status": 200,
+      "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa"
+    },
+    {
+      "file": "csc-bhwe.html",
+      "url": "https://www.csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "tesda-catalogue.html",
+      "url": "https://www.tesda.gov.ph/Download/Training_Regulations",
+      "error": "[Errno 10053] An established connection was aborted by the software in your host machine"
+    },
+    {
+      "file": "supabase-changelog.md",
+      "url": "https://supabase.com/changelog.md",
+      "status": 200,
+      "sha256": "8a9b9cc29618b6988edcec0de74725028c031fce4f5638c93efd90a75ce88f0d"
+    },
+    {
+      "file": "facilitator-drive-original.pdf",
+      "pages": 126,
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "inspected_pdf_pages": [
+        23,
+        25
+      ]
+    },
+    {
+      "file": "tesda-bhs-ncii-revision01.pdf",
+      "pages": 140,
+      "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+      "inspected_pdf_pages": [
+        19,
+        20,
+        86,
+        87
+      ]
+    },
+    {
+      "file": "day1-presentation.pdf",
+      "pages": 78,
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "inspected_pdf_pages": [
+        25
+      ]
+    }
+  ],
+  "claim_map": [
+    {
+      "claim": "Self-management, barriers and handling workplace frustration",
+      "authority": "TESDA official Revision01, promulgated 11 January2019, unit400311213",
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+      "pdf_pages": [
+        19,
+        86
+      ],
+      "printed_pages": [
+        15,
+        82
+      ],
+      "support": "Emotion management and workplace self-management strategies; supports an authored pause/support exercise, not guaranteed responses."
+    },
+    {
+      "claim": "Reflective practice, feedback, self-regulation and communication",
+      "authority": "TESDA unit400311213",
+      "pdf_pages": [
+        20,
+        87
+      ],
+      "printed_pages": [
+        16,
+        83
+      ],
+      "support": "Reflection, feedback and effective reading/writing/conversing; application to clear questions and re-practice is authored."
+    },
+    {
+      "claim": "Three-hour whole-competency allocation",
+      "authority": "TESDA + original DOH Facilitator Guide",
+      "pdf_pages": {
+        "tesda": [
+          86,
+          87
+        ],
+        "original_guide": [
+          23
+        ]
+      },
+      "printed_pages": {
+        "tesda": [
+          82,
+          83
+        ],
+        "original_guide": [
+          16
+        ]
+      },
+      "support": "Three TESDA outcomes of one hour each; original guide states minimum3hours. 45-minute lesson split and self-study estimate are authored."
+    },
+    {
+      "claim": "Local processes and optional CSC form practice",
+      "authority": "Original DOH Facilitator Guide; original Day1 deck",
+      "pdf_pages": {
+        "guide": [
+          23
+        ],
+        "deck": [
+          25
+        ]
+      },
+      "printed_pages": {
+        "guide": [
+          16
+        ],
+        "deck": []
+      },
+      "support": "Local processes may be presented; optional form demonstration. Deck PDF25 has no printed slide number. Form is separate CSC BHWE, not accreditation."
+    },
+    {
+      "claim": "Current CSC Form101-H website reference",
+      "url": "https://www.csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility",
+      "observed": "Fresh web read lists CS Form101-H Revised Dec.2011 and links official PDF. Download/screenshot retrieval failed; package omits/adapts demo."
+    },
+    {
+      "claim": "Demi, delays, all cards/questions/contact arrangements and administrative outcomes",
+      "authority": "Authored fictional learning application",
+      "support": "No claim of local procedure, diagnosed delay cause, prescribed follow-up interval, legal response clock or guaranteed approval/payment/appointment."
+    }
+  ],
+  "current_catalogue_check": "Official TESDA PDF retrieved fresh with exact 578bb1... hash, Revision01/2019; official search results include qualification/revision. Full catalogue request failed; not proof that no later revision exists.",
+  "review_limits": [
+    "Target LGU process/contact not verified",
+    "Full national IRR, full amendment/enactment history and ONAR/publication filing unverified; no new legal procedural claims",
+    "No independent policy SME review",
+    "No human listening or owner approval of new media"
+  ],
+  "visual_review": "Fresh rendered PDF23 guide; PDF19,20,86,87 TESDA; PDF25 deck inspected as images and text.",
+  "shared_scope": "Only d1m4-follow-up QA, form-and-follow-up activity v2 retaining module objective_indices[3] and indicator4, guide steps6/7/follow-up discussion/appended target answer key, exact originalPDF25→23 timing citation, one appended source. All sibling timings and rows preserved."
+}

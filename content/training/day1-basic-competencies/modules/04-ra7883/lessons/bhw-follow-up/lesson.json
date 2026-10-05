@@ -14,15 +14,39 @@
   },
   "sections": [
     {
+      "id": "follow-up-question",
+      "concept_ids": [
+        "m4.competency"
+      ],
+      "asset_ids": [
+        "demi-follow-up"
+      ],
+      "takeaway_fil": "Ihiwalay ang alam sa hindi pa nakukumpirma.",
+      "takeaway_en": "Separate known facts from what is unconfirmed.",
+      "check": null
+    },
+    {
       "id": "section-6",
       "concept_ids": [
         "m4.competency"
       ],
       "asset_ids": [
-        "practice-map"
+        "demi-follow-up"
       ],
-      "takeaway_fil": "Ang pag-follow-up nang kalmado at may tiyak na tanong ay mas epektibo kaysa sa reklamong walang tiyak na hinihingi.",
-      "takeaway_en": "Following up calmly and with a specific question works better than a complaint with no specific ask.",
+      "takeaway_fil": "Sabihin ang pakay, itanong ang status at linawin ang susunod na hakbang.",
+      "takeaway_en": "State your purpose, ask about status and clarify the next step.",
+      "check": null
+    },
+    {
+      "id": "known-and-unknown",
+      "concept_ids": [
+        "m4.competency"
+      ],
+      "asset_ids": [
+        "demi-follow-up"
+      ],
+      "takeaway_fil": "Card B ay nagtatanong; hindi nito ginagawang fact ang hula.",
+      "takeaway_en": "Card B asks; it does not turn a guess into a fact.",
       "check": null
     },
     {
@@ -30,25 +54,55 @@
       "concept_ids": [
         "m4.competency"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang katahimikan sa harap ng pagkaantala ay hindi pagiging magalang — madalas itong nagpapahaba lang ng problemang kaya sanang naayos nang maaga.",
-      "takeaway_en": "Staying silent in the face of a delay isn't politeness — it often just lets a problem drag on that could have been fixed much sooner.",
+      "asset_ids": [
+        "demi-follow-up"
+      ],
+      "takeaway_fil": "Ulitin ang naunawaan at itanong ang hindi pa malinaw.",
+      "takeaway_en": "Repeat what you understood and ask about what remains unclear.",
+      "check": null
+    },
+    {
+      "id": "next-contact-plan",
+      "concept_ids": [
+        "m4.competency"
+      ],
+      "asset_ids": [
+        "demi-follow-up"
+      ],
+      "takeaway_fil": "Tiyakin ang contact at napagkasunduan; huwag mag-imbento ng deadline.",
+      "takeaway_en": "Confirm the contact and arrangement; do not invent a deadline.",
+      "check": null
+    },
+    {
+      "id": "follow-up-application-check",
+      "concept_ids": [
+        "m4.competency"
+      ],
+      "asset_ids": [
+        "demi-follow-up"
+      ],
+      "takeaway_fil": "Alam · tiyak na tanong · paglilinaw · angkop na susunod na hakbang.",
+      "takeaway_en": "Facts · specific question · clarification · appropriate next step.",
       "check": {
-        "prompt_fil": "Ano ang maayos na follow-up?",
-        "prompt_en": "What is a constructive follow-up?",
+        "prompt_fil": "Ano ang maayos na follow-up sa kasong ito?",
+        "prompt_en": "What is a constructive follow-up in this case?",
         "options": [
           {
-            "fil": "Kalmadong itanong ang status, kulang na dokumento, at susunod na hakbang.",
-            "en": "Calmly ask about status, missing documents and the next step."
+            "fil": "Itanong ang pagtanggap at status sa tamang contact; makinig, linawin ang sagot at magkasundo sa susunod na hakbang.",
+            "en": "Ask the appropriate contact about receipt and status; listen, clarify the response and agree on the next step."
           },
           {
-            "fil": "Magalit agad bago alamin ang dahilan.",
-            "en": "Become angry before checking the reason."
+            "fil": "Sabihing aprubado na dahil matagal nang naghihintay.",
+            "en": "Declare approval because the wait has been long."
+          },
+          {
+            "fil": "Ipagpalagay na nawala ang dokumento at ipasa muli lahat nang hindi nagtatanong.",
+            "en": "Assume a document was lost and resubmit everything without asking."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Kalmadong itanong ang status, kulang na dokumento, at susunod na hakbang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Calmly ask about status, missing documents and the next step. Explain why using the lesson situation."
+        "feedback_fil": "Una: tama. Hindi pa tiyak ang pagtanggap at status, kaya nagtatanong at nakikinig muna; ang susunod na hakbang ay dapat linawin sa tamang contact. Ikalawa: walang batayan. Hindi patunay ng approval ang tagal ng paghihintay. Ikatlo: hula ang sanhi at requirement. Linawin muna kung may item na kailangang tiyakin at ang tamang paraan; huwag ipasa muli lahat batay sa hula.",
+        "feedback_en": "First: correct. Receipt and status remain unconfirmed, so ask and listen first; clarify the next step with the appropriate contact. Second: unsupported. A long wait does not prove approval. Third: it guesses the cause and requirement. First clarify whether an item needs verification and the proper method; do not resubmit everything based on a guess."
       }
     }
   ],
@@ -56,39 +110,59 @@
     {
       "id": "m4.competency",
       "read_ids": [
+        "follow-up-question",
         "section-6",
-        "section-7"
+        "known-and-unknown",
+        "section-7",
+        "next-contact-plan",
+        "follow-up-application-check"
       ],
       "slide_ids": [
+        "slide-follow-up-question",
         "slide-section-6",
-        "slide-section-7"
+        "slide-known-and-unknown",
+        "slide-section-7",
+        "slide-next-contact-plan",
+        "slide-follow-up-application-check"
       ],
       "source_ids": [
-        "m4.competency-source"
+        "m4.competency-source",
+        "m4.tesda-life-decisions"
       ]
     }
   ],
   "sources": [
     {
       "id": "m4.competency-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "DOH BHW Facilitator Guide (2022), original PDF p.23 / printed p.16: training recommendations; authored fictional application",
       "pdf_pages": [
         23
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "url": "https://drive.google.com/file/d/1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W/view"
+    },
+    {
+      "id": "m4.tesda-life-decisions",
+      "title": "TESDA Barangay Health Services NC II, Revision 01 (11 January 2019): unit 400311213; PDF pp.19–20 and 86–87 / printed pp.15–16 and 82–83",
+      "pdf_pages": [
+        19,
+        20,
+        86,
+        87
+      ],
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "demi-follow-up",
+      "path": "/training/bhw-1-4/demi-follow-up-d1babc774185.png",
+      "content_hash": "d1babc7741852c3bf59153f3590a10dc778b4a6010d9e629ae98f071cb8cdca9",
+      "alt_fil": "Inihahanda ni Demi at ng kasamahan ang isang follow-up question gamit ang blangkong card at notebook.",
+      "alt_en": "Demi and a colleague prepare a follow-up question using a blank card and notebook.",
+      "caption_fil": "Kathang-isip na paghahanda: alam, tanong at susunod na contact. Draft para sa review.",
+      "caption_en": "Fictional preparation: facts, question and next contact. Draft for review.",
+      "provenance": "Original built-in imagegen, 5 October 2026. Supplied approved 1.4.1 Demi identity reference SHA256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. New scene; model identifier not returned. Exact prompt/input/output evidence: docs/lesson-145-art-provenance.json. No owner approval of new media.",
+      "review_status": "draft"
     }
   ]
 }

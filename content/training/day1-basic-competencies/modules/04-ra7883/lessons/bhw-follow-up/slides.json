@@ -1,50 +1,124 @@
 [
   {
-    "id": "slide-section-6",
+    "id": "slide-follow-up-question",
     "concept_ids": [
       "m4.competency"
     ],
     "layout": "scene",
-    "heading_fil": "Kapag mabagal ang proseso",
-    "heading_en": "When the process is slow",
-    "display_fil": "Kumalma bago mag-follow-up.\nItanong ang status at kulang na dokumento.\nLinawin ang susunod na hakbang.",
-    "display_en": "Pause before following up.\nAsk about status and missing documents.\nClarify the next step.",
+    "heading_fil": "Ano ang alam ni Demi?",
+    "heading_en": "What does Demi know?",
+    "display_fil": "Nagbigay ng aplikasyon\nPagtanggap at status: hindi pa tiyak\nMaghanda ng tanong at suporta",
+    "display_en": "Application provided\nReceipt and status: unconfirmed\nPrepare a question and support",
     "asset_ids": [
-      "practice-map"
+      "demi-follow-up"
     ],
     "check": null,
-    "narration_fil": "Alam mo na ngayon ang buong proseso — pero ano ang gagawin mo kung inabot ito ng ilang buwan nang walang balita?\n\nAng pinakamahusay na hakbang: pakalmahin muna ang sarili bago sumulpot sa galit, saka mag-follow-up nang may tiyak na tanong — hindi \"kailan pa ba ito matatapos?\" kundi \"ano pong status ng aking aplikasyon, at may kailangan pa po ba akong ibigay?\" Ang malinaw at kalmadong tanong ay mas malamang na masagot kaysa sa reklamong walang tiyak na hinihingi.",
-    "narration_en": "You now know the whole process — but what do you do if months pass with no word?\n\nThe best move: calm yourself first before frustration takes over, then follow up with a specific question — not \"when will this be done?\" but \"what's the status of my application, and is there anything else I need to submit?\" A clear, calm question is more likely to get answered than a complaint with no specific ask."
+    "narration_fil": "Sa kathang-isip na pagpapatuloy, naghihintay si Demi ng balita tungkol sa kaniyang aplikasyon sa akreditasyon. Alam niyang nagbigay siya ng aplikasyon. Hindi pa niya nakukumpirma kung natanggap at kumpleto ito, sino ang humahawak, o kung may pasya na. Hindi niya alam ang dahilan ng pagkaantala.\n\nSa planning corner, tinutulungan siya ng kasamahan na ihanda ang tanong. Maaaring may pangamba, gastos o hirap sa pagpunta at pakikipag-usap. Puwedeng humingi ng suporta at pumili ng angkop na paraan. Opsyonal ang kuwentong video; maaaring tapusin ang Read o Slides nang hindi ito pinapanood.",
+    "narration_en": "In this fictional continuation, Demi is waiting for news about her accreditation application. She knows she provided an application. She has not confirmed whether it was received and complete, who is handling it, or whether a decision exists. She does not know the cause of the delay.\n\nAt the planning corner, a colleague helps her prepare a question. Fear, cost or difficulty travelling and communicating may be barriers. She can seek support and choose an appropriate way to ask. The story video is optional; you can complete Read or Slides without watching it."
+  },
+  {
+    "id": "slide-section-6",
+    "concept_ids": [
+      "m4.competency"
+    ],
+    "layout": "process",
+    "heading_fil": "Huminto sandali at magtanong nang tiyak",
+    "heading_en": "Pause and ask a specific question",
+    "display_fil": "Huminto kung makatutulong\nIsang malinaw na pakay\nStatus · tamang contact · susunod na hakbang",
+    "display_en": "Pause if helpful\nOne clear purpose\nStatus · responsible contact · next step",
+    "asset_ids": [
+      "demi-follow-up"
+    ],
+    "check": null,
+    "narration_fil": "Kung makatutulong, huminto sandali at huminga bago magtanong. Maaaring magalang at matatag ang follow-up kahit nakakaramdam ng pagkabahala o inis. Hindi kailangang itago ang damdamin upang makabuo ng malinaw na tanong.\n\nSa locally confirmed na contact, maaaring sabihin ni Demi: “Magandang araw po. Nais ko pong magtanong tungkol sa aplikasyon ko sa akreditasyon. Natanggap na po ba ito, at may kailangan pa bang linawin upang matiyak kung kumpleto? Sino po ang tamang kausap, at ano ang susunod na hakbang?” Kathang-isip na halimbawa ito. Tiyakin ang tamang opisina at channel sa lokal na health team; huwag ipagpalagay na lahat ng staff ay may parehong tungkulin.",
+    "narration_en": "If helpful, pause and breathe before asking. Follow-up can be respectful and firm even when you feel worried or frustrated. You do not need to hide your feelings to form a clear question.\n\nWith a locally confirmed contact, Demi might say: “Good day. I would like to ask about my accreditation application. Has it been received, and is anything still unclear when checking completeness? Who is the appropriate person to ask, and what is the next step?” This is a fictional example. Confirm the office and channel with the local health team; do not assume every staff member has the same responsibility."
+  },
+  {
+    "id": "slide-known-and-unknown",
+    "concept_ids": [
+      "m4.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Aling card ang may malinaw na tanong?",
+    "heading_en": "Which card asks clearly?",
+    "display_fil": "A: kulang sa tiyak na pakay\nB: malinaw na verification question\nC: hula sa sanhi at requirement",
+    "display_en": "A: purpose unclear\nB: specific verification question\nC: guessed cause and requirement",
+    "asset_ids": [
+      "demi-follow-up"
+    ],
+    "check": null,
+    "narration_fil": "Card A: “Kailan pa ba ito?” May pag-aalala, ngunit hindi malinaw kung aling aplikasyon o impormasyon ang hinihingi. Tulungang tukuyin ang pakay. Card B: “Tungkol po sa kathang-isip na aplikasyon ko sa akreditasyon: natanggap na po ba ito, at paano ko matitiyak ang status at susunod na hakbang?” Tiyak ang pakay at humihingi ng impormasyong hindi pa nakukumpirma.\n\nCard C: “Tiyak na may nawawalang dokumento; ipapasa ko na lang muli lahat.” Hula ang sanhi at requirement. Hindi patunay ng pagkawala ang paghihintay. Itanong muna kung may item na kailangang tiyakin, ano mismo iyon at paano ligtas na magbigay sa tamang channel. Walang totoong dokumentong gagamitin sa pagsasanay.",
+    "narration_en": "Card A: “When will this happen?” It expresses concern but does not identify the application or information requested. Help make the purpose specific. Card B: “About my fictional accreditation application: has it been received, and how can I verify the status and next step?” It names the purpose and asks for unconfirmed information.\n\nCard C: “A document must be lost; I will submit everything again.” It guesses the cause and requirement. Waiting does not prove loss. First ask whether an item needs verification, exactly which item and how to provide it safely through the appropriate channel. Practice uses no real documents."
   },
   {
     "id": "slide-section-7",
     "concept_ids": [
       "m4.competency"
     ],
+    "layout": "process",
+    "heading_fil": "Makinig, ulitin at linawin",
+    "heading_en": "Listen, repeat and clarify",
+    "display_fil": "Bago: hula sa approval\nPagkatapos: sinusuri pa, walang petsa\nUlitin · linawin · walang pangako",
+    "display_en": "Before: assumed approval\nAfter: still under review, no date\nRepeat · clarify · no promise",
+    "asset_ids": [
+      "demi-follow-up"
+    ],
+    "check": null,
+    "narration_fil": "Bago: iniisip ni Demi na “baka aprubado na dahil matagal na.” Hindi niya pa ito nakukumpirma. Pagkatapos: sa kathang-isip na usapan, sinabi ng tamang contact na sinusuri pa ang aplikasyon at wala pang petsang maibibigay. Ito ang sagot sa halimbawa, hindi pambansang proseso o takdang oras.\n\nUlit ni Demi: “Ang pagkaunawa ko po ay sinusuri pa at wala pang petsa. Tama po ba? May kailangan po ba akong gawin ngayon? Saang channel at kanino ko maaaring itanong ang susunod na update?” Pinakikinggan niya ang paglilinaw at sinasabi kung may hindi pa malinaw. Walang natiyak na approval o kulang na dokumento sa sagot. Ang maayos na follow-up ay hindi garantiya ng sagot, akreditasyon, benepisyo o appointment.",
+    "narration_en": "Before: Demi thinks, “Perhaps it is approved because it has been a long time.” She has not confirmed this. After: in the fictional conversation, the appropriate contact says the application is still being reviewed and no date can be given. This is the example’s response, not a national procedure or timetable.\n\nDemi repeats: “I understand it is still under review and there is no date yet. Is that right? Is there anything I should do now? Through which channel and with whom can I ask for the next update?” She listens to clarification and names any remaining uncertainty. The response establishes neither approval nor a missing document. Constructive follow-up does not guarantee an answer, accreditation, a benefit or an appointment."
+  },
+  {
+    "id": "slide-next-contact-plan",
+    "concept_ids": [
+      "m4.competency"
+    ],
+    "layout": "process",
+    "heading_fil": "Pumili ng makatotohanang susunod na contact",
+    "heading_en": "Plan a realistic next contact",
+    "display_fil": "Walang petsa: magtanong sa next contact\nMay item: linawin muna\nTala · suporta · re-practice",
+    "display_en": "No date: ask about next contact\nAn item: clarify first\nNote · support · re-practice",
+    "asset_ids": [
+      "demi-follow-up"
+    ],
+    "check": null,
+    "narration_fil": "Kung walang petsa, itanong kung paano magkakasundo sa angkop na susunod na contact. Kung may item na kailangang tiyakin, linawin ang eksaktong item at tamang paraan bago kumilos. Kung hindi malinaw kung sino ang responsable, humingi ng tulong sa lokal na health team upang matukoy ang contact. Walang iisang itinakdang pagitan para sa lahat.\n\nSa practice note, isulat lamang ang kathang-isip na pakay, nakumpirmang sagot, natitirang tanong at napagkasunduang susunod na contact o channel. Walang pribadong detalye o patient record. Maaaring humingi ng katuwang, written question o iba pang accessible na paraan. Balikan kung naging malinaw ang tanong at subukang muli matapos ang feedback. Kapaki-pakinabang ang nakumpirmang susunod na tanong kahit wala pang resulta.",
+    "narration_en": "If there is no date, ask how to agree on an appropriate next contact. If an item needs verification, clarify the exact item and proper method before acting. If responsibility is unclear, ask the local health team to help identify the contact. There is no single prescribed interval for everyone.\n\nIn a practice note, write only the fictional purpose, confirmed response, remaining question and agreed next contact or channel. Use no private details or patient record. A support person, written question or another accessible method may help. Reflect on whether the question was clear and try again after feedback. A confirmed next question is useful even without an outcome."
+  },
+  {
+    "id": "slide-follow-up-application-check",
+    "concept_ids": [
+      "m4.competency"
+    ],
     "layout": "decision",
-    "heading_fil": "Mali kumpara sa tama: humingi ng nararapat",
-    "heading_en": "Wrong versus right: following up on a benefit",
-    "display_fil": "Iwasan ang galit o panghuhula.\nMaghanda ng tiyak na tanong at tala.\nMag-follow-up nang magalang at may malinaw na layunin.",
-    "display_en": "Avoid anger or guesses.\nPrepare a specific question and records.\nFollow up respectfully with a clear purpose.",
-    "asset_ids": [],
+    "heading_fil": "Ano ang angkop na tugon ni Demi?",
+    "heading_en": "What response fits Demi’s situation?",
+    "display_fil": "Ano ang alam? Ano ang hindi pa tiyak?\nKanino at paano magtatanong?\nAno ang angkop na susunod na hakbang?",
+    "display_en": "What is known or unconfirmed?\nWho and how will you ask?\nWhat is an appropriate next step?",
+    "asset_ids": [
+      "demi-follow-up"
+    ],
     "check": {
-      "prompt_fil": "Ano ang maayos na follow-up?",
-      "prompt_en": "What is a constructive follow-up?",
+      "prompt_fil": "Ano ang maayos na follow-up sa kasong ito?",
+      "prompt_en": "What is a constructive follow-up in this case?",
       "options": [
         {
-          "fil": "Kalmadong itanong ang status, kulang na dokumento, at susunod na hakbang.",
-          "en": "Calmly ask about status, missing documents and the next step."
+          "fil": "Itanong ang pagtanggap at status sa tamang contact; makinig, linawin ang sagot at magkasundo sa susunod na hakbang.",
+          "en": "Ask the appropriate contact about receipt and status; listen, clarify the response and agree on the next step."
         },
         {
-          "fil": "Magalit agad bago alamin ang dahilan.",
-          "en": "Become angry before checking the reason."
+          "fil": "Sabihing aprubado na dahil matagal nang naghihintay.",
+          "en": "Declare approval because the wait has been long."
+        },
+        {
+          "fil": "Ipagpalagay na nawala ang dokumento at ipasa muli lahat nang hindi nagtatanong.",
+          "en": "Assume a document was lost and resubmit everything without asking."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Kalmadong itanong ang status, kulang na dokumento, at susunod na hakbang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "Calmly ask about status, missing documents and the next step. Explain why using the lesson situation."
+      "feedback_fil": "Una: tama. Hindi pa tiyak ang pagtanggap at status, kaya nagtatanong at nakikinig muna; ang susunod na hakbang ay dapat linawin sa tamang contact. Ikalawa: walang batayan. Hindi patunay ng approval ang tagal ng paghihintay. Ikatlo: hula ang sanhi at requirement. Linawin muna kung may item na kailangang tiyakin at ang tamang paraan; huwag ipasa muli lahat batay sa hula.",
+      "feedback_en": "First: correct. Receipt and status remain unconfirmed, so ask and listen first; clarify the next step with the appropriate contact. Second: unsupported. A long wait does not prove approval. Third: it guesses the cause and requirement. First clarify whether an item needs verification and the proper method; do not resubmit everything based on a guess."
     },
-    "narration_fil": "**Mali**: Anim na buwan nang naghihintay si Josie sa kanyang akreditasyon, pero hindi siya nagtanong kahit kailan dahil \"baka mukhang naiinip ako.\" Sa kalaunan, nalaman niyang nawala pala ang isa sa kanyang mga dokumento sa opisina — anim na buwang pagkaantala na naiwasan sana kung nag-follow-up siya nang maaga.\n\n**Tama**: Nag-follow-up si Josie tuwing dalawang buwan, may tiyak na tanong tungkol sa status ng aplikasyon, at kalmadong nagpaalala tuwing kailangan. Nang matuklasan ang nawawalang dokumento, agad itong naibigay muli.",
-    "narration_en": "**Wrong**: Josie waited six months for her accreditation but never asked, because \"maybe I'll look impatient.\" She eventually found out one of her documents had gone missing at the office — a six-month delay that could have been avoided with an earlier follow-up.\n\n**Right**: Josie followed up every two months, with a specific question about her application's status, and reminded them calmly whenever needed. When the missing document was discovered, it was resubmitted right away."
+    "narration_fil": "Sa kathang-isip na kaso, nagbigay si Demi ng aplikasyon ngunit hindi pa nakukumpirma ang pagtanggap, status o sanhi ng pagkaantala. Ano ang maayos na follow-up?\n\nPiliin ang tugon na naghihiwalay ng alam sa hula, nagtatanong nang tiyak sa locally confirmed na contact, at nagpaplanong linawin ang sagot at susunod na hakbang. Ipaliwanag kung bakit hindi sapat ang dalawang ibang pagpipilian. Online self-check ito; hiwalay ang aktuwal na observed practice at administratibong resulta.",
+    "narration_en": "In the fictional case, Demi provided an application but receipt, status and the cause of delay are unconfirmed. What is a constructive follow-up?\n\nChoose the response that separates facts from guesses, asks a specific question through a locally confirmed contact, and plans to clarify the answer and next step. Explain why the other two options are insufficient. This is an online self-check; observed practice and administrative outcomes are separate."
   }
 ]

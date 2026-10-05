@@ -365,3 +365,8 @@ export const BHW_ACCREDITATION_STORY_STYLES = {
 
 // Only two Filipino Read tracks need a stricter delivery after actual audio review.
 export const BHW_ACCREDITATION_FIL_STEADY_STYLE = " Keep a steady medium-high adult female Kore vocal register and the same light, warm resonance across this entire clip. This is one continuous trainer narration, including short headings, standalone sentences and summary. Do not drop into a deep announcer register, imitate another speaker, or perform quoted characters. Use gentle emphasis and pauses without a sudden change of resonance. The first syllable and final syllable must use the same narrator identity.";
+
+export const BHW_FOLLOW_UP_STORY_STYLES = {
+  "fil": "Speak in natural Filipino (Tagalog), as one calm, confident community health narrator. Read exact words with respectful firmness, curious rising intonation for questions, measured clarity for unknown facts and negation, and a complete encouraging ending. Maintain one consistent vocal timbre throughout. Pronounce Demi naturally. Do not add, omit, translate or change words.",
+  "en": "Speak in natural Philippine English, as one calm, confident community health narrator. Read exact words with respectful firmness, curious question intonation, measured clarity for unknown facts and negation, and a complete encouraging ending. Maintain one consistent vocal timbre throughout. Pronounce Demi naturally. Do not add, omit, translate or change words."
+};
