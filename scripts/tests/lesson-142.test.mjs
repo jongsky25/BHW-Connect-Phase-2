@@ -23,7 +23,7 @@ describe('lesson 1.4.2 Demi benefits and conditions',()=>{
   expect(source.coverage[0].id).toBe('m4.benefits');expect(source.coverage[0].read_ids).toEqual(ids);expect(source.coverage[0].source_ids).toContain('m4.benefits-source');
   for(const lang of ['fil','en']){const read=parseReferenceRead(readFileSync(path.join(lessonDir,`read.${lang}.md`),'utf8'));expect(read.map(s=>s.id)).toEqual(ids);for(const [i,s] of read.entries())expect(authored.revision.slides[i][`narration_${lang}`]).toBe(s.body);expect(read[0].body).toContain('Demi');expect(read.map(s=>s.body).join(' ')).not.toMatch(/Josie|Mimi|Corazon|Riza|Vlanche/);}
  });
- it('resumes both old sections in both modes and preserves completion identity',()=>{
+ it('resumes the preserved benefits section in both modes and preserves completion identity',()=>{
   const lesson={...authored.manifest,id:'84abb8a8-9d6b-4e09-8936-998738d3ff37',revision:{...authored.revision,id:'new-draft'}};
   for(const mode of ['read','slides'])for(const id of ['section-3']){const position=mode==='read'?id:'slide-'+id;expect(lessonPosition(lesson,mode,{lesson_id:lesson.id,revision_id:'old-published',position_key:position,concept_id:'m4.benefits',modality:mode}).id).toBe(position);}
   expect(continueLesson([lesson],[{lesson_id:lesson.id}],[])).toBeNull();
