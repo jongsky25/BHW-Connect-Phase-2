@@ -23,7 +23,7 @@ describe('lesson 1.4.3 Demi BHWE conditions',()=>{
   expect(source.coverage[0].id).toBe('m4.bhwe');expect(source.coverage[0].read_ids).toEqual(ids);expect(source.coverage[0].source_ids).toContain('m4.bhwe-source');
   for(const lang of ['fil','en']){const read=parseReferenceRead(readFileSync(path.join(lessonDir,`read.${lang}.md`),'utf8'));expect(read.map(s=>s.id)).toEqual(ids);for(const [i,s] of read.entries())expect(authored.revision.slides[i][`narration_${lang}`]).toBe(s.body);expect(read[0].body).toContain('Demi');expect(read.map(s=>s.body).join(' ')).not.toMatch(/Josie|Mimi|Corazon|Riza|Vlanche/);}
  });
- it('resumes the preserved benefits section in both modes and preserves completion identity',()=>{
+ it('resumes the preserved BHWE section in both modes and preserves completion identity',()=>{
   const lesson={...authored.manifest,id:'f1f527f1-aec9-48a8-933b-79fecf63bfb4',revision:{...authored.revision,id:'new-draft'}};
   for(const mode of ['read','slides'])for(const id of ['section-4']){const position=mode==='read'?id:'slide-'+id;expect(lessonPosition(lesson,mode,{lesson_id:lesson.id,revision_id:'old-published',position_key:position,concept_id:'m4.bhwe',modality:mode}).id).toBe(position);}
   expect(continueLesson([lesson],[{lesson_id:lesson.id}],[])).toBeNull();
@@ -60,6 +60,12 @@ describe('lesson 1.4.3 Demi BHWE conditions',()=>{
   expect(manifest.history['bhw-eligibility'].some(h=>JSON.stringify(h)===JSON.stringify(baseline.target))).toBe(true);
   for(const lang of ['fil','en'])for(const id of ['section-4']){const old=baseline.target.sections[id][lang],section={id,[`heading_${lang}`]:old.timings.filter(t=>t.zone==='heading').map(t=>t.text).join(' '),[`body_${lang}`]:old.timings.filter(t=>t.zone==='body').map(t=>t.text).join(' '),[`takeaway_${lang}`]:old.timings.filter(t=>t.zone==='takeaway').map(t=>t.text).join(' ')};expect(narrationForLesson(manifest,'bhw-eligibility',lang,[section])[id].src).toBe(old.src);}
   for(const lang of ['fil','en'])expect(Object.keys(narrationForLesson(manifest,'bhw-eligibility',lang,authored.revision.read_sections))).toEqual(ids);for(const [src,hash] of Object.entries(baseline.all_original_track_hashes))expect(fileHash(src)).toBe(hash);
+ });
+ it('selects recovered original bytes for the actual unchanged published Read',()=>{
+  const old=json(path.join(root,'docs/lesson-143-start-baseline.json')).published_rows.find(r=>r.lesson_key==='bhw-eligibility');
+  const recovery=json(path.join(root,'docs/lesson-143-historical-audio-recovery.json'));
+  expect(recovery.source_commit).toBe('1711c9a964ef1a0de610091021d9de99d59cf0b8');
+  for(const lang of ['en','fil']){const selected=narrationForLesson(manifest,'bhw-eligibility',lang,old.read_sections);expect(Object.keys(selected)).toEqual(['section-4']);const restored=recovery.tracks.find(t=>t.language===lang);expect(selected['section-4'].src).toBe(restored.src);expect(fileHash(restored.src)).toBe(restored.sha256);}
  });
  it('preserves exact original draft art, input identity and prompt provenance',()=>{
   const art=source.assets.find(a=>a.id==='demi-bhwe-discussion');expect(fileHash(art.path)).toBe(art.content_hash);
