@@ -709,3 +709,24 @@ body {
   margin-inline: auto;
   object-fit: contain;
 }
+
+/* Demi legal-basis scene and optional story: keep faces and the whole video visible. */
+.reference-story-art img[src*="demi-legal-basis"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-legal-role"] {
+  border: 0;
+  padding: 0;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-legal-role"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-legal-role"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-legal-role"] details {
+  display: none;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-legal-role"] figure { margin: 0; }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-legal-role"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}

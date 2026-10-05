@@ -338,3 +338,9 @@ export async function synthesizeWithGemini(zones, language, options) {
     charCount: zones.reduce((sum, zone) => sum + zone.text.length, 0),
   };
 }
+
+// Target-only delivery for the new Demi legal-basis lesson.
+export const BHW_LEGAL_ROLE_STORY_STYLES = {
+  "fil": "Speak in natural conversational Filipino (Tagalog) as a warm, expressive Philippine community health trainer. Give Demi’s opening question curious rising intonation; slow slightly at training, voluntary service and local health board accreditation, and emphasize their distinct roles. Vary pitch, emphasis and pace naturally with brief clause pauses. Maintain exactly one consistent adult female Kore narrator timbre for headings, body, quotations and takeaway, without character voices. Pronounce Demi as DEH-mee. Say RA as separate letters and 7883 as seven thousand eight hundred eighty-three. Keep every negation and condition clear, finish word endings, never add fillers, translate or change the exact words.",
+  "en": "Speak in natural Philippine English as a warm, expressive community health trainer. Give Demi’s opening question curious rising intonation; slow slightly at training, voluntary service and local health board accreditation, and emphasize their distinct roles. Vary pitch, emphasis and pace naturally with brief clause pauses. Maintain exactly one consistent adult female Kore narrator timbre for headings, body, quotations and takeaway, without character voices. Pronounce Demi as DEH-mee. Say RA as separate letters and 7883 as seven thousand eight hundred eighty-three. Keep every negation and condition clear, finish word endings, never add fillers, translate or change the exact words."
+};

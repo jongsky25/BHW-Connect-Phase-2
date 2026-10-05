@@ -1,0 +1,52 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm, expressive community health trainer. Give Demi’s opening question curious rising intonation; slow slightly at training, voluntary service and local health board accreditation, and emphasize their distinct roles. Vary pitch, emphasis and pace naturally with brief clause pauses. Maintain exactly one consistent adult female Kore narrator timbre for headings, body, quotations and takeaway, without character voices. Pronounce Demi as DEH-mee. Say RA as separate letters and 7883 as seven thousand eight hundred eighty-three. Keep every negation and condition clear, finish word endings, never add fillers, translate or change the exact words.",
+  "durationSeconds": 72.124,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Demi has experience helping. An acquaintance says that is enough. She wonders: what really establishes BHW status under the law?",
+      "start_ms": 0,
+      "end_ms": 10360
+    },
+    {
+      "zone": "definition",
+      "index": 1,
+      "text": "RA 7883 connects training under an accredited organization, voluntary community primary health care and local health board accreditation under DOH guidelines.",
+      "start_ms": 10660,
+      "end_ms": 24020
+    },
+    {
+      "zone": "authority",
+      "index": 2,
+      "text": "A supervisor or RHU can help identify the contact. The local health board is the accreditation authority. Demi does not accredit herself.",
+      "start_ms": 24320,
+      "end_ms": 34720
+    },
+    {
+      "zone": "distinctions",
+      "index": 3,
+      "text": "Benefit registration and CSC eligibility are separate, with conditions. BHW accreditation does not automatically provide an allowance, appointment or clinical licence.",
+      "start_ms": 35020,
+      "end_ms": 48180
+    },
+    {
+      "zone": "verification",
+      "index": 4,
+      "text": "Demi asks the RHU: who is the right contact to verify the training record and proof of board accreditation? Her status is still unverified.",
+      "start_ms": 48480,
+      "end_ms": 59080
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Practice: explain the basis, name the authority and choose a verification step. Avoid unsupported claims. Observed competency is separate from online completion.",
+      "start_ms": 59380,
+      "end_ms": 72060
+    }
+  ]
+}

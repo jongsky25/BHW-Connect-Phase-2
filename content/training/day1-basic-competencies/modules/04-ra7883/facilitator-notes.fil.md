@@ -2,15 +2,13 @@
 
 ## Oras
 
-**3 oras** ang itinatakda ng TESDA Training Regulations para sa
-competency na *Develop Life and Career Decisions* (facilitator-guide
-PDF 23).
+Iniulat ng DOH Facilitator Guide ang **3-oras na minimum** para sa *Develop Life and Career Decisions* (original PDF 25 / printed 16, verified 5 Oktubre 2026). Authored split ang table; pinanatili ang oras ng mga sibling.
 
 Panukalang hati:
 
 | Bahagi | Oras |
 |---|---|
-| Pambungad: "Naranasan n'yo na bang mahiyang magtanong?" | 15 min |
+| Pambungad: tanong ni Demi sa batayan ng katayuan | 15 min |
 | Legal na batayan at akreditasyon | 30 min |
 | Mga benepisyo sa ilalim ng RA 7883 | 30 min |
 | BHW Eligibility (BHWE) sa Civil Service | 30 min |
@@ -19,10 +17,7 @@ Panukalang hati:
 
 ## Script ng paghahatid (sunod sa mga seksyon ng aralin)
 
-1. **Buksan sa tanong ni Josie.** Itanong sa grupo: "May narinig na ba
-   kayong benepisyo na hindi ninyo alam kung para rin sa inyo?
-   Nahihiya ba kayong magtanong?" Gamitin ito bilang pambungad bago
-   ipakilala ang RA 7883.
+1. **Buksan sa tanong ni Demi sa katayuan.** Ihiwalay ang karanasan at paanyaya sa pagsasanay, boluntaryong primary health care at akreditasyon ng local health board. Walang ipinapalagay na katayuan o benepisyo.
 2. **Sa seksyong legal na batayan,** bigyang-diin na hindi lang
    "kusang-loob" ang batayan ng gawain — may batas. Ito ang
    pinakamadaling bahaging nakakaligtaan sa madalian.
@@ -61,13 +56,11 @@ kundi karapatan.
   ito?"
 - "May pagkakataon na ba kayong naghintay nang matagal sa isang
   proseso nang walang follow-up? Ano ang nangyari?"
-- "Paano ninyo maipapaliwanag sa isang bagong BHW kung bakit may
-  proseso ng akreditasyon bago sila makapagsimula?"
+- "Paano ipaliliwanag ang depinisyon sa RA 7883 at isang hakbang para matiyak ang ebidensiya ng pagsasanay at akreditasyon?"
 
 ## Susi sa sagot ng mga retrieval check
 
-1. **"Sino ang nagbibigay ng akreditasyon..."** → Ang local health
-   board sa ilalim ng RA 7883 (hindi ang midwife o kapwa BHW).
+1. **Aralin 1.4.1: pinakamainam na tugon ni Demi** → Choice 1: iugnay ang pagsasanay, boluntaryong serbisyo at akreditasyon ng local health board; itanong sa RHU ang contact para matiyak ang ebidensiya. Choice 2: karanasan ang ginawang akreditasyon. Choice 3: pangako ng allowance/appointment nang hindi tinitiyak ang hiwalay na kondisyon.
 2. **"Alin sa mga sumusunod ang HINDI kailangan para sa BHWE..."** →
    Hindi kailangan ang four-year college degree — dalawang taon lamang
    sa kolehiyo ang hinihingi.

@@ -1,0 +1,52 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural conversational Filipino (Tagalog) as a warm, expressive Philippine community health trainer. Give Demi’s opening question curious rising intonation; slow slightly at training, voluntary service and local health board accreditation, and emphasize their distinct roles. Vary pitch, emphasis and pace naturally with brief clause pauses. Maintain exactly one consistent adult female Kore narrator timbre for headings, body, quotations and takeaway, without character voices. Pronounce Demi as DEH-mee. Say RA as separate letters and 7883 as seven thousand eight hundred eighty-three. Keep every negation and condition clear, finish word endings, never add fillers, translate or change the exact words.",
+  "durationSeconds": 78.08,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "May karanasan si Demi sa pagtulong. Sabi ng kakilala, sapat na raw iyon. Napaisip siya: ano talaga ang legal na batayan ng BHW?",
+      "start_ms": 0,
+      "end_ms": 11640
+    },
+    {
+      "zone": "definition",
+      "index": 1,
+      "text": "Sa RA 7883, magkaugnay ang pagsasanay sa akreditadong organisasyon, boluntaryong primary health care sa komunidad at akreditasyon ng local health board ayon sa gabay ng DOH.",
+      "start_ms": 11940,
+      "end_ms": 26700
+    },
+    {
+      "zone": "authority",
+      "index": 2,
+      "text": "Maaaring tumulong ang supervisor o RHU sa pag-alam ng contact. Ngunit local health board ang awtoridad sa akreditasyon. Hindi inaakreditahan ni Demi ang sarili.",
+      "start_ms": 27000,
+      "end_ms": 38560
+    },
+    {
+      "zone": "distinctions",
+      "index": 3,
+      "text": "Iba ang rehistrasyon para sa benepisyo at ang CSC eligibility. May mga kondisyon. Hindi awtomatikong allowance, appointment o clinical licence ang akreditasyon bilang BHW.",
+      "start_ms": 38860,
+      "end_ms": 52260
+    },
+    {
+      "zone": "verification",
+      "index": 4,
+      "text": "Tanong ni Demi sa RHU: sino ang tamang contact para matiyak ang training record at patunay ng akreditasyon ng board? Hindi pa alam ang kaniyang katayuan.",
+      "start_ms": 52560,
+      "end_ms": 64320
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Magsanay: ipaliwanag ang batayan, pangalanan ang awtoridad at pumili ng hakbang sa pag-verify. Walang unsupported claim. Hiwalay ang observed competency sa online completion.",
+      "start_ms": 64620,
+      "end_ms": 78020
+    }
+  ]
+}

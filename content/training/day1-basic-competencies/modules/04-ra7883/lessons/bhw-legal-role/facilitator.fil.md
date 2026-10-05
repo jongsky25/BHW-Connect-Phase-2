@@ -1,83 +1,47 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na ipaliwanag sa sariling salita, gamit ang sitwasyon ni Josie, na may legal na batayan ang tungkulin ng BHW sa RA 7883 at na sa local health board nanggagaling ang akreditasyon. Kaya rin niyang sabihin ang isang unang hakbang para kay Josie at kung ano ang dapat niyang itanong sa supervisor sa halip na manghula.
+Ipaliwanag at ilapat ang legal na batayan gamit ang kathang-isip na kaso ni Demi: iugnay ang pagsasanay sa akreditadong organisasyon, boluntaryong primary health care sa komunidad at akreditasyon ng local health board ayon sa gabay ng DOH; pangalanan ang awtoridad at isang hakbang sa pag-verify. Ito pa rin ang iisang layunin sa index 0.
 
-## [time-materials] Oras at kagamitan
+## [time-materials] Oras at materyales
 
-- **Oras:** mga 45 minuto sa harapang sesyon. Ito ang pambungad (15 min) at ang bahaging "Legal na batayan at akreditasyon" (30 min) sa 3 oras na plano sa gabay ng subchapter. Mga 5 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** manila paper at marker; ang dalawang slide ng aralin (kasama ang draft na visual na "unawain, tiyakin, isagawa"); kung mayroon, kopya ng RA 7883 at ng Implementing Rules and Regulations (IRR) nito para maipakita sa grupo (ayon sa Facilitator Guide, puwedeng bigyan ng kopya ang mga BHW); maliliit na papel para sa mga tanong na walang pangalan.
+45 minuto: pambungad at distinction exercise 15; depinisyon/awtoridad 10; halimbawa 5; paired practice at feedback 10; check at re-practice 5. Authored allocation ito: pinanatili ang 15 + 30 sa 180-minutong plano ng modyul. Tatlong oras ang minimum na rekomendasyon ng DOH Facilitator Guide para sa buong Develop Life and Career Decisions competency (original PDF 25, printed 16), hindi sa araling ito lamang. Anim na screen: tinatayang 8–10 minuto sa self-study; dagdag na oras ang opsyonal na kuwento at replay. Materyales: anim na bilingual screen, sipi/link ng RA 7883, kathang-isip na Card A/B, blankong cue cards at locally verified na contact.
 
 ## [prepare] Paghahanda
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Alamin sa inyong RHU o LGU kung sino ang humahawak ng rehistrasyon at akreditasyon ng BHW para sa local health board ng inyong lungsod o munisipyo, at kung kanino dapat magtanong ang BHW tungkol sa kanyang status. Ihanda ang pangalan o opisinang iyon.
-- Kabisaduhin ang iisang linya ng batas na sinisipi ng aralin. Ayon sa RA 7883, ang BHW ay "boluntaryong nagbibigay ng primary health care services sa komunidad" matapos makatanggap ng tamang pagsasanay at akreditasyon mula sa local health board. Basahin ito nang eksakto. Huwag itong palakasin o dagdagan.
-- Saklaw ng araling ito ang **pinanggagalingan ng tungkulin at kung sino ang nag-a-accredit**. Sa mga susunod na aralin pa ang listahan ng benepisyo, ang mga kondisyon ng BHWE, at ang mga tungkulin ng local health board. Huwag muna itong ituro nang detalyado rito. Huwag magbanggit ng halaga ng allowance, at huwag mangakong makatatanggap ng benepisyo ang sinuman. Walang halagang binabanggit ang aralin, at may mga kondisyon ito.
+Basahin ang seksiyon 3–4 ng RA 7883 at ang dalawang wika ng aralin. Tiyakin ang kasalukuyang batas at DOH/LGU implementation bago magturo. Kumpirmahin sa RHU/LGU ang tanggapang sumusuporta sa proseso ng local health board; huwag mag-imbento ng pangalan, form, deadline o resulta. Iba ang akreditadong training organization sa akreditasyon ng tao. Inaprubahan ng owner ang bagong art/media noong 5 Oktubre 2026; walang ipinapakitang credential. Gumamit ng fictional cases, hindi pribadong rekord. Sa susunod na aralin ang benepisyo, BHWE at detalyadong aplikasyon.
 
 ## [opening] Pambungad
 
-Itanong sa grupo: *"May narinig na ba kayong benepisyo na hindi ninyo alam kung para rin sa inyo? Nahihiya ba kayong magtanong?"* Magpataas muna ng kamay. Saka anyayahan ang sinumang handa na isulat ang kanilang tanong sa maliit na papel nang walang pangalan. Idikit ang mga papel sa manila paper na may pamagat na "Mga tanong na nahiya tayong itanong." Iwanan itong nakadikit. Masasagot ng mga susunod na aralin sa module ang marami rito.
+Gamitin ang section-1: sabi ng kakilala, patunay na ng katayuan ang matagal na pagtulong at paanyaya. Itanong: “Ano ang alam? Ano ang kailangan pa ng ebidensiya?” Tanggapin ang anonymous na tanong; huwag obligahing ibahagi ang personal na katayuan. Ihiwalay ang tatlong card: kagustuhan/karanasan, training record, akreditasyon ng board. Malugod na tinatanggap ang malinaw na tanong; hindi pa natitiyak ang allowance o katayuan sa kuwento.
 
 ## [steps] Mga hakbang
 
-1. **Eksena (Read "Ang tanong na hindi maitanong ni BHW Josie", unang slide).** Basahin nang malakas ang naisip ni Josie: *"Boluntaryo lang naman ako, baka mukhang mataray ako kung magtatanong ako tungkol sa pera."* Itanong: *"Bakit hindi nagtanong si Josie? Naramdaman n'yo na rin ba ito?"*
-2. **Hindi kasakiman ang magtanong.** Ituro ang linya ng aralin na hindi lang kabutihang-loob ang batayan ng gawain ni Josie, at karapatan niyang malaman ang nararapat sa kanya. Itanong: *"Pareho ba ang pagtatanong tungkol sa nararapat sa inyo at ang pagiging sakim?"* Hayaang sumagot muna ang grupo bago mo ibigay ang takeaway.
-3. **Saan galing ang tungkulin (Read "Saan nanggagaling ang tungkulin ng BHW", ikalawang slide).** Basahin nang eksakto ang linya ng RA 7883. Itanong: *"Ayon dito, ano ang kailangang mangyari bago magsimula ang BHW sa gawain?"* Ang sagot: tamang pagsasanay at akreditasyon mula sa local health board.
-4. **Primary health care at barangay health station.** Ipaliwanag na iniuugnay ng aralin ang parehong legal na batayan sa Primary Health Care Approach at sa barangay health station bilang sentro ng serbisyo. Itanong: *"Saan kayo nagseserbisyo? Sino ang supervisor ninyo roon?"*
-5. **Higit pa sa karaniwang "boluntir".** Ipatapos nang malakas sa bawat BHW ang pangungusap na ito: *"BHW ako hindi lang dahil gusto kong tumulong, kundi dahil din ..."* Pakinggan kung mababanggit ang batas (RA 7883) at ang akreditasyon.
-6. **Self-check.** Ibigay ang tanong ng check (*"Sino ang may papel sa akreditasyon ng BHW?"*). Hayaang mag-usap ang grupo bago ibigay ang sagot.
+1. Basahin ang section-2 at iugnay ang tatlong bahagi; paraphrase ito ng seksiyon 3, hindi direktang sipi. 2. Sa roles-and-authority, ihiwalay ang kalahok, training provider, tulong ng supervisor/RHU at awtoridad ng local health board. 3. Maikling ihiwalay ang akreditasyon, rehistrasyon para sa benepisyo sa seksiyon 4 at CSC eligibility sa status-and-other-processes. Walang awtomatikong benepisyo, appointment o professional licence. 4. Imodelo ang explain-and-verify. 5. Ipraktis sa pares ang dalawang fictional card at magbigay ng feedback. 6. Sagutan ang legal-basis-check, ipaliwanag ang lahat ng rationale at ulitin nang mas kaunti ang prompt. Dagdag-tulong ang opsyonal na video; hindi kailangan para sa completion.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Halimbawa at inaasahang sagot
 
-- **"Pero boluntir lang naman talaga kami."** Totoo ito, at hindi ito itinatanggi ng aralin. Ituro ang salitang "boluntaryong" sa batas: *"Oo, boluntaryo ang gawain. At may legal na batayan din ito. Parehong totoo."*
-- **"Ang midwife (o si Kapitan) ang nag-a-accredit sa amin."** Huwag sabihing mali sila tungkol sa kung sino ang tumutulong sa kanila sa lugar. Sabihin: *"Maaaring tumulong ang midwife o RHU sa mga papel. Ang sabi ng aralin, sa local health board nanggagaling ang akreditasyon."* Tiyakin sa inyong RHU o LGU ang lokal na mga hakbang.
-- **Tinatanong kung magkano ang hazard allowance.** Huwag magbigay o manghula ng halaga. Sabihin: *"Sa susunod na aralin ang mga benepisyo, at may kondisyon at proseso ang bawat isa. Isulat natin ang tanong mo para matiyak natin nang maayos."* Idagdag ito sa manila paper.
-- **"Hindi ko alam kung akreditado ako."** Karaniwan ito at hindi dapat ikahiya. Sabihin: *"Ganyan mismong tanong ang dapat dalhin sa supervisor mo o sa local health board. Pagsasanayan natin kung paano ito itanong sa aralin tungkol sa follow-up."*
+Demi: “Sa RA 7883, magkaugnay ang pagsasanay sa akreditadong organisasyon, boluntaryong primary health care sa komunidad at akreditasyon ng local health board ayon sa gabay ng DOH. Itatanong ko sa RHU ang tamang contact para matiyak ang training record at patunay ng akreditasyon ng board.” Kung midwife ang sinagot, kilalaning maaari siyang tumulong; ibalik ang paliwanag sa awtoridad ng board. Kung hindi alam ang contact, ang pag-alam dito ay unang hakbang. Itala ang tanong sa allowance para sa susunod na aralin at tiyakin ang kondisyon; huwag mangako ng bayad.
 
 ## [misconception] Karaniwang maling akala
 
-**"Boluntaryo lang naman ako, kaya hindi ko dapat pag-usapan ang tungkol sa benepisyo o pera."** Ito ang karaniwang dahilan kung bakit hindi humihingi ng nararapat ang mga BHW, lalo na ang mga bago pa lang. Huwag itong itama sa pagsasabing *"dapat maging matapang ka."* Inilalagay nito ang problema sa tao. Sa halip, balikan ang legal na batayan. Nasa batas mismo ang mga benepisyong ito. Hindi ito kagandahang-loob ng sinuman. Kaya hindi kasakiman ang magtanong tungkol dito. Karapatan ito. Puwede mong sabihin: *"Ganito rin ang naramdaman ni Josie, kahit anim na buwan na siyang BHW. Karaniwang pakiramdam ito. Nasa panig ninyo ang batas."*
+“Matagal na akong tumutulong, kaya karanasan na mismo ang patunay ng akreditasyon.” Igalang ang serbisyo habang nililinaw ang legal na bahagi at ebidensiya. “Garantisado na ang lahat ng benepisyo at trabaho kapag accredited.” Balikan ang seksiyon 4, kondisyon ng benepisyo at hiwalay na CSC requirements. Hindi nito pinagpapasyahan ang totoong katayuan o universal clinical permission. Huwag palitan ang hindi alam ng imbentong credential.
 
-## [practice] Gawaing pagsasanay
+## [practice] Pagsasanay
 
-Magkapares, tig-2 minuto, saka magpalit:
-
-- Gaganap na Josie ang isang BHW at magtatanong: *"Puwede ko bang itanong ang tungkol sa hazard allowance? Boluntir lang naman ako."*
-- Gaganap namang kapwa BHW ang isa. Sa sariling salita, ipapaliwanag niya (1) kung saan nanggagaling ang tungkulin ni Josie, (2) kung sino ang nag-a-accredit sa BHW, (3) isang unang hakbang na puwedeng gawin ni Josie, halimbawa isulat ang tanong niya at itanong sa supervisor o sa opisina ng local health board, at (4) kung ano ang dapat munang tiyakin bago mangako ang sinuman, gaya ng kung rehistrado at akreditado siya at kung saklaw siya ng allowance.
-
-Dalawa o tatlong pares ang magpepresenta sa grupo. Magbibigay ang grupo ng isang kalakasan at isang mungkahi.
+Card A: dumalo si Demi sa training at inanyayahang tumulong; hindi alam ang ebidensiya ng akreditasyon. Ipaliwanag ang tatlong bahagi, pangalanan ang local health board at magtanong tungkol sa pag-verify sa RHU o locally confirmed na contact. Card B: sabi ng kakilala, patunay ng akreditasyon ang matagal na serbisyo at garantisado ang allowance at appointment. Itama at pumili ng hakbang sa pag-verify nang walang pangako. Ipaliwanag ng bawat kapareha ang dalawang kaso, tumanggap ng isang lakas at isang pagwawasto, magpalit ng role at ulitin. Fictional records lamang; walang aplikasyon, pribadong rekord o clinical task.
 
 ## [answer-key] Susi sa self-check
 
-Isa ang check sa araling ito. Lumalabas ito pagkatapos ng Read section na "Saan nanggagaling ang tungkulin ng BHW" at muli sa slide ng seksyong iyon. Iisang check ito, kaya isang beses lang itong sasagutin dito.
+Tama ang choice 1: pinag-uugnay ang pagsasanay, boluntaryong primary health care at akreditasyon ng local health board ayon sa gabay ng DOH, saka inaalam ang contact at ebidensiya. Choice 2: ipinapalagay na patunay ang karanasan at paanyaya. Choice 3: nangangako ng allowance at government appointment bago tiyakin ang hiwalay na kondisyon sa rehistrasyon at eligibility. Pareho ang buong rationale sa Read at Slides. Humingi ng paliwanag, hindi numero lamang ng batas.
 
-- **"Sino ang may papel sa akreditasyon ng BHW?"** → **Ang local health board sa itinakdang proseso.** Sinisipi ng aralin ang RA 7883: nagseserbisyo ang BHW matapos ang pagsasanay at akreditasyon mula sa local health board.
-  - Mali ang *"Ang BHW mismo lang."* May bahagi ang BHW sa pagsasanay at pag-aaplay, pero hindi niya maa-accredit ang sarili. Sa local health board inilalagay ng aralin ang akreditasyon, kaya may proseso bago simulan ang gawain.
+## [observe] Dapat obserbahan
 
-## [observe] Ano ang oobserbahan
-
-Gamitin ang observation indicator ng aralin habang ginagawa ang gawaing pagsasanay. Ang indicator: *"Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor."*
-
-- **Kaya na:** nang walang untag, naipapaliwanag ng BHW na may legal na batayan ang tungkulin sa RA 7883, na ang local health board ang nag-a-accredit, at nabibigyan si Josie ng angkop na unang hakbang at ng dapat tiyakin sa supervisor.
-- **Kailangan pa ng practice:** tama ang direksiyon ng BHW, halimbawa "may batas para sa atin, puwede kang magtanong", pero kailangan pa ng tanong mo bago niya mabanggit ang RA 7883, ang local health board, o kung ano ang dapat tiyakin ni Josie.
-- **Hindi pa:** nananatili ang paliwanag sa "boluntir lang kami kasi gusto naming tumulong", nang walang legal na batayan o akreditasyon. O kaya nangangako ang BHW kay Josie na makatatanggap siya ng allowance nang hindi tinitiyak ang kondisyon.
-
-Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Iisang indicator sa objective_index 0: sa dalawang card, ipaliwanag ang magkakaugnay na legal na bahagi; pangalanan ang local health board at ihiwalay ang support; pumili ng contact/ebidensiya para sa pag-verify nang walang unsupported claim. Kaya na: lahat nang walang prompt. Kailangan practice: tama ang direksiyon ngunit kulang ang paliwanag o kailangan ng prompt sa contact/ebidensiya. Hindi pa: ginagawang akreditasyon ang karanasan, nangangako ng benepisyo/appointment, o kulang ang batayan, awtoridad at pag-verify. Hiwalay ang observed practice sa online completion/check correctness.
 
 ## [support] Kung kailangan ng dagdag na suporta
 
-- Magbigay ng pangungusap na pupunan at ipasubok ito nang isang beses: *"Galing ang tungkulin ko sa ___. Ang nag-a-accredit sa BHW ay ang ___. Bago mangako, titiyakin ko muna ang ___ kay/sa ___."*
-- Basahin nang sabay nang malakas ang ikalawang talata ng "Saan nanggagaling ang tungkulin ng BHW," saka ipasabi sa sariling salita ang linya ng RA 7883.
-- Ipares sila sa BHW na **Kaya na** at hayaan silang gumanap na kapwa BHW nang pangalawa.
-- Obserbahan muli sa susunod na sesyon gamit ang parehong role-play ni Josie, hindi bagong sitwasyon. Isa pang pagkakataon ang role-play sa aralin tungkol sa follow-up para makita ang parehong paliwanag.
+Sentence frame: “Sa RA 7883, magkaugnay ang ___, ___ at akreditasyon ng ___. Para matiyak ang ebidensiya, itatanong ko sa ___ ang ___.” Imodelo, ipaulit sa gustong wika at bawasan ang prompt. Pangalanan ang kulang, balikan ang section-2 o roles-and-authority at ulitin ang Card A at Card B. Muling obserbahan matapos ang feedback; hindi sapat ang tamang click. Tiyakin sa health team ang lokal na contact.
 
-## [sources-review] Sanggunian at tala sa pagrepaso
+## [sources-review] Sanggunian at review notes
 
-- Sanggunian ng aralin: BHW Reference Manual PDF 13 (minanang page reference; nakabinbin pa ang huling audit).
-- Dagdag na batayan: sinisipi rin ang depinisyon ng BHW ayon sa RA 7883 sa BHW Reference Manual (PDF 11) at sa bahagi ng Facilitator Guide tungkol sa papel ng mga BHW. Sinasabi ng Facilitator Guide PDF 23 na inaasahang alam ng BHW supervisor at trainer ang batas at ang IRR nito, at puwedeng bigyan ng kopya ang mga BHW.
-- Oras: 3 oras ang itinatakda ng TESDA Training Regulations para sa *Develop Life and Career Decisions* (Facilitator Guide PDF 23). Ang 45 minuto sa itaas ay bahagi ng araling ito sa talahanayan ng module (pambungad 15 min + legal na batayan at akreditasyon 30 min). Panatilihin ang kabuuang oras ng competency sa gabay ng subchapter. Huwag ulitin ang buong oras sa bawat maikling aralin. Para sa self-study ang hating ito, hindi bagong training-hour allocation.
-- Ang susi sa sagot sa gabay ng subchapter (bilang 1, "Sino ang nagbibigay ng akreditasyon...", na may midwife at kapwa BHW bilang maling sagot) ay para sa mas lumang bersiyon ng check na ito. Dalawa lang ang pagpipilian sa kasalukuyang check. Pagtugmain ito sa pagrepaso.
-- Pangkalahatang indicator ang observation indicator ng aralin at pare-pareho ito sa lahat ng aralin sa module. Draft pa ang visual na "unawain, tiyakin, isagawa" at hindi pa aprubado ng may-ari.
-- Kailangan pang repasuhin bago ilathala: kasalukuyang legal at policy wording, bilingual parity, at observation indicator.
-
-Draft para sa pagrepaso.
+Na-audit noong 5 Oktubre 2026: RA 7883 seksiyon 3–4, 6–7 sa Lawphil; official CSC BHWE guidance; muling binuksan, ni-hash at ni-render ang original DOH Facilitator Guide (2022): PDF 10/printed 2 depinisyon, PDF 25/printed 16 training, PDF 27/printed 18 board/committee. Manual ang nag-uulat ng tatlong-oras na TESDA recommendation; hindi ito fresh independent TESDA regulation audit. Bills ang nakita sa official Senate/House search; walang natukoy na enacted replacement. 403 ang full status page ng Senate Bill 1905; hindi nabuksan ang Supreme Court statute page at lumang DOH FAQ. Hindi independently verified ang buong kasalukuyang national IRR at target LGU procedure; walang itinurong lokal na proseso o halaga. Halimbawa lamang ng lokal na committee support ang 2026 Camalaniugan order. Authored ang paraphrase at kaso ni Demi; walang bagong clinical scope rule. Inaprubahan ng owner ang reviewed package noong 5 Oktubre 2026 (docs/lesson-141-owner-approval.json); walang independent legal/policy SME review o human listening claim. Tingnan ang docs/lesson-141-source-audit.json.

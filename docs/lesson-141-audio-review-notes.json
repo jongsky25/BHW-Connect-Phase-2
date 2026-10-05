@@ -1,0 +1,32 @@
+{
+  "review_status": "draft; owner listening and policy SME review pending",
+  "method": "Gemini model review of fourteen actual encoded MP3 files, with exact byte hashes in lesson-141-audio-review.json; no human listening claimed",
+  "decoded_verification": "Twelve Read recordings and both stories decoded with signal in all expected zones/beats; no clipped ending reported by audio reviewer",
+  "concerns": [
+    {
+      "track": "section-2.fil",
+      "times": "00:01–00:03, 00:05–00:06, 00:51–00:53",
+      "finding": "RA 7883 is spoken as separate English digits despite the whole-number style direction. Model judged it intelligible; owner should assess suitability."
+    },
+    {
+      "track": "roles-and-authority.fil",
+      "times": "00:23–00:24",
+      "finding": "Section 3 is spoken with English three within Filipino narration; retain as a disclosed code-switch pronunciation choice."
+    },
+    {
+      "track": "section-2.en; status-and-other-processes.en",
+      "finding": "Model describes slightly didactic or segmented synthetic cadence in some clauses."
+    },
+    {
+      "track": "legal-basis-check.en",
+      "times": "00:00–00:03",
+      "finding": "Model flags a flatter opening and possible timbre/EQ shift relative to the body. Actual metadata uses the same Gemini/Kore model and voice; model speculation about multiple voices is unverified."
+    },
+    {
+      "track": "explain-and-verify.fil",
+      "finding": "Model transcript suggests minor inflection/word variants; automated transcription alone does not establish a spoken text defect."
+    }
+  ],
+  "stories": "Both story narrations were reported clear, with expressive question delivery and no pronunciation or clipped-ending concern. This does not establish perfection.",
+  "approval": "All new media remain draft pending explicit owner approval of this package."
+}
