@@ -1,0 +1,227 @@
+{
+  "lesson": "1.4.4 / bhw-accreditation",
+  "audit_date_local": "2026-10-05 Asia/Manila",
+  "status": "Fresh source audit complete; independently verified1.4.3 release gate passed before fresh main clone and authoring.",
+  "documents": [
+    {
+      "id": "ra7883",
+      "title": "Republic Act No. 7883: Barangay Health Workers’ Benefits and Incentives Act of 1995",
+      "version": "Approved 20 February 1995",
+      "authority": "National statute, official PCW reproduction",
+      "url": "https://pcw.gov.ph/republic-act-7883-barangay-health-workers-benefits-and-incentives-act-of-1995/",
+      "access": "Fresh web-search full text; direct HTTP retrieval returned 403"
+    },
+    {
+      "id": "jmc2023",
+      "title": "DILG–DOH Joint Memorandum Circular No. 2023-001: Retention and Continued Service of Barangay Health Workers",
+      "version": "24 August 2023",
+      "authority": "Signed national administrative circular, official DILG-hosted scan",
+      "url": "https://www.dilg.gov.ph/PDF_File/issuances/joint_circulars/dilg-joincircular-2023829_8a3dec8214.pdf",
+      "file": "dilg-doh-jmc2023-001.pdf",
+      "sha256": "7be0db79f35cbde44c7aaead44dce04e2acc96b39de4eb06859520e51461b451",
+      "pdf_pages": 8,
+      "visual_review": "All eight complete pages inspected",
+      "gap": "Publication date, ONAR filing and complete subsequent amendment history not independently established. Issuance existence and official dissemination verified; no claim of exhaustive current legal review."
+    },
+    {
+      "id": "guide-drive",
+      "title": "BHW Reference Manual Facilitator Guide, original Drive version",
+      "authority": "Training guidance summarizing IRR, not the full IRR",
+      "file": "C:/Users/Rae Jane/Documents/Codex/2026-10-05/lesson-143/work/audit/facilitator-drive-original.pdf",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "pdf_pages": 126,
+      "relevant_pages": {
+        "pdf_23": "printed 16, competency timing and recommended sources",
+        "pdf_24": "printed 17, references",
+        "pdf_25": "printed 18, BHW Registration and Accreditation"
+      }
+    },
+    {
+      "id": "guide-tci",
+      "title": "BHW Reference Manual 2022 Facilitator Guide, TCI-hosted version",
+      "authority": "Training guidance, supporting version comparison",
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf",
+      "sha256": "041a0d63fab9f23235b927b029118159709f612f67889708398c75fada096837",
+      "pdf_pages": 150,
+      "relevant_pages": {
+        "pdf_25": "printed 16",
+        "pdf_26": "printed 17",
+        "pdf_27": "printed 18"
+      },
+      "finding": "Printed page 18 visually matches original Drive PDF25. Original page citation is valid; offsets differ by version."
+    },
+    {
+      "id": "reference-original",
+      "title": "BHW Reference Manual, distinct original Filipino reference manual",
+      "authority": "Training reference",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "pdf_pages": 150,
+      "relevant_pages": {
+        "pdf_13": "printed 5, RA7883/BHWE summary",
+        "pdf_16": "printed 8, city/municipal local health board role"
+      }
+    },
+    {
+      "id": "roxas2025",
+      "title": "Roxas City Executive Order No. 8, series of 2025",
+      "authority": "LGU executive order; Roxas only",
+      "url": "https://roxascity.gov.ph/wp-content/uploads/2026/01/RXSEO-8-2025.pdf",
+      "sha256": "3c0c897a9596e3d1092c997a1237674f915a73f34e30621224d241e00a9785e8",
+      "visual_review": "All six pages inspected",
+      "gap": "Cannot substitute for full national IRR or target LGU procedure. Printed timing anomaly on PDF5 (word sixty with numeral 6) is retained as uncertainty; do not borrow deadlines."
+    },
+    {
+      "id": "marilao62",
+      "title": "Marilao Executive Order JS2025-62, adopting IRR",
+      "authority": "LGU adoption order; Marilao only",
+      "url": "https://marilao.gov.ph/wp-content/uploads/2025/12/EO-NO-JS2025-62.pdf",
+      "sha256": "4168aada2af4f80147e10a89f8894c0cb9ed56a0c35f7073cea19e5d7e5acfca",
+      "finding": "One page adoption order; complete IRR attachment absent. Web listing date 17 December 2025 differs from signed document 8 September 2025."
+    },
+    {
+      "id": "marilao60",
+      "title": "Marilao Executive Order JS2025-60, reorganizing BHW-RAC",
+      "authority": "LGU executive order; Marilao only",
+      "url": "https://marilao.gov.ph/wp-content/uploads/2025/12/EO-NO-JS2025-60.pdf",
+      "sha256": "da9129366bd8ec12039907a05511eb91979f053d2d6a275561a500d533820916",
+      "relevant_pages": {
+        "pdf_2": "committee evaluates, interviews, recommends to LHB, updates registry and acts as secretariat"
+      }
+    },
+    {
+      "id": "tesda2019",
+      "title": "Training Regulations: Barangay Health Services NC II",
+      "version": "Revision 01, promulgated 11 January 2019",
+      "authority": "Official TESDA training regulations; listed as current BHS NC II on the official download catalogue at audit time",
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+      "catalogue_url": "https://www.tesda.gov.ph/Download?SearchTitle=&Searchcat=Training+Regulations",
+      "file": "tesda-bhs-ncii-revision01.pdf",
+      "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+      "pdf_pages": 140,
+      "relevant_pages": {
+        "pdf_19": "printed 15, unit 400311213 Develop Career and Life Decisions",
+        "pdf_20": "printed 16, remaining performance criteria",
+        "pdf_86": "printed 82, manage emotions: 1 hour",
+        "pdf_87": "printed 83, reflective practice: 1 hour; self-confidence/self-regulation: 1 hour"
+      },
+      "visual_review": "PDF19,20,86,87 independently inspected from freshly downloaded official PDF",
+      "finding": "Three hours covers the whole competency. Regulations do not independently assign 30 minutes to accreditation; that share remains the existing course allocation."
+    }
+  ],
+  "claims": [
+    {
+      "id": "accreditation-authority",
+      "paraphrase": "RA7883 defines BHW status through training and voluntary primary care service after local health board accreditation under DOH guidelines.",
+      "support": [
+        "ra7883 section 3",
+        "jmc2023 III.A PDF2/printed2"
+      ],
+      "use": "m4.accreditation-body; do not establish fictional Demi’s eligibility/status"
+    },
+    {
+      "id": "registration-distinct",
+      "paraphrase": "RA7883 requires registration with the city/municipality local health board for benefits under the Act, provides for registry transmission to DOH and appropriate proof of accreditation.",
+      "support": [
+        "ra7883 section 4",
+        "jmc2023 V.D–F PDF3–4/printed3–4"
+      ],
+      "use": "Registration and accreditation have distinct qualifications and supporting documents; not interchangeable course certificates"
+    },
+    {
+      "id": "board-duties",
+      "paraphrase": "The board safeguards the process, evaluates and acts on applications, records decisions in resolutions/minutes, issues certificates to qualified BHWs, reviews benefits using local funds, recommends benefits/funds, sends registry copies and monitors services.",
+      "support": [
+        "jmc2023 VI.D.1–8 PDF5–6/printed5–6",
+        "guide-drive PDF25/printed18",
+        "guide-tci PDF27/printed18"
+      ],
+      "use": "m4.board-duties; cite JMC directly, identify guide’s IRR attribution as secondary"
+    },
+    {
+      "id": "local-fund-review",
+      "paraphrase": "Benefits requiring expenditure of local funds are reviewed and approved by the local health board.",
+      "support": [
+        "ra7883 section 7",
+        "jmc2023 VI.D.5 PDF5/printed5"
+      ],
+      "use": "Keep benefits review distinct from accreditation decision"
+    },
+    {
+      "id": "committee-may",
+      "paraphrase": "The circular defines BHW-RAC as a committee that may be created by LHB. Its specific guidance encourages municipal/city boards to create one; absence or pending creation does not remove the board’s facilitation responsibility.",
+      "support": [
+        "jmc2023 III.C PDF2/printed2",
+        "jmc2023 V.C PDF3/printed3"
+      ],
+      "use": "Do not convert may/encouragement into universal mandatory local existence. Palanan’s shall wording is LGU-specific."
+    },
+    {
+      "id": "committee-screening",
+      "paraphrase": "The guide describes committee evaluation/interview, recommendation to the board and registry preparation/update. Official Roxas and Marilao orders independently assign those functions within those localities.",
+      "support": [
+        "guide-drive PDF25/printed18",
+        "guide-tci PDF27/printed18",
+        "roxas2025 article I section3 PDF2/printed2",
+        "marilao60 section2 PDF2"
+      ],
+      "use": "m4.registration-committee; preserve attribution, never treat recommendation as automatic board approval"
+    },
+    {
+      "id": "office-followup",
+      "paraphrase": "Municipal/city health offices facilitate registration/accreditation and prepare/maintain the local registry; RHU provides technical guidance.",
+      "support": [
+        "jmc2023 VI.G.1,5,6 PDF6–7/printed6–7"
+      ],
+      "use": "Bounded fictional question to RHU/municipal or city health office about responsible office, next step, missing information or official board status record"
+    },
+    {
+      "id": "accreditation-evidence",
+      "paraphrase": "JMC V.F states registration under V.D and at least three immediately preceding years of active voluntary primary care service; it lists an accreditation application form, current-year registration certificate and certified three-year accomplishment report.",
+      "support": [
+        "jmc2023 V.F PDF4/printed4"
+      ],
+      "use": "Verified circular guidance, not invented universal local form/fee/deadline. Avoid collecting private documents; fictional blank cards only. Confirm local implementation."
+    },
+    {
+      "id": "no-title-bypass",
+      "paraphrase": "The circular directs assistance for barangay-appointed workers to undergo registration/accreditation; the label or appointment does not itself bypass the process.",
+      "support": [
+        "jmc2023 VI.D.9 PDF6/printed6",
+        "jmc2023 VII.2,6.1 PDF7/printed7"
+      ],
+      "use": "Application distractor rationale"
+    },
+    {
+      "id": "training-not-board-decision",
+      "paraphrase": "Training is a qualification in the circular, while evaluation, decision and certificate issuance are further process steps.",
+      "support": [
+        "jmc2023 V.D PDF3–4/printed3–4",
+        "jmc2023 VI.D.2–4 PDF5/printed5"
+      ],
+      "use": "Training certificate alone does not establish completed accreditation"
+    },
+    {
+      "id": "competency-time",
+      "paraphrase": "The original facilitator guide recommends three hours for the whole competency. Official TESDA Revision 01 independently allocates one hour to each of its three outcomes, also totaling three hours.",
+      "support": [
+        "guide-drive PDF23/printed16",
+        "guide-tci PDF25/printed16",
+        "tesda2019 PDF19–20/printed15–16; PDF86–87/printed82–83"
+      ],
+      "use": "Whole competency only; preserve existing 30-minute lesson share and 180-minute module total, label authored teaching splits separately."
+    }
+  ],
+  "remaining_gaps": [
+    "Full national IRR not retrieved; FOI success listing is not actual document access.",
+    "Complete current amendment/repeal and legislative enactment status not established.",
+    "Target LGU forms, fees, timelines, registry access, authorized contact and delegation unknown.",
+    "Circular publication/ONAR filing not independently established."
+  ],
+  "authoring_constraints": [
+    "Preserve section-5 substantive roles/process with three coverage concepts.",
+    "Keep national statute, national circular, training summary and specific LGU implementation distinct.",
+    "Use no real private records or actual application submission.",
+    "No eligibility/status finding for Demi.",
+    "Retain exact immutable lesson objective and 30-minute share after release baseline verification."
+  ]
+}

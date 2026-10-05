@@ -1,0 +1,175 @@
+{
+  "checked_at": "2026-10-05T09:31:08.149Z",
+  "stage": "Actual published text selection before target-content edits",
+  "source_head": "258bd93089490c47b73f4d9669b184fde3a6debd",
+  "published_revision": "f04d4c13-5e71-4863-99ce-a5de1d376c89",
+  "published_content_hash": "c991799838a61579434e2a052a0476b95bd6931973ec949bedf314e3196987d0",
+  "method": "Actual production TypeScript selector and narration-zones TypeScript dependency transpiled without mocks, against actual database Read. Exact timing/text match; no relaxed matching or resynthesis.",
+  "before_selection_counts": {
+    "fil": 1,
+    "en": 1
+  },
+  "history_commit": "258bd93089490c47b73f4d9669b184fde3a6debd",
+  "total_narration_commits": 0,
+  "commits_actually_searched": 0,
+  "recovered_version": {
+    "module": "04-ra7883",
+    "sections": {
+      "section-5": {
+        "en": {
+          "src": "/training/audio/04-ra7883/bhw-accreditation/section-5.en.be4c59ec599f.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "be4c59ec599f569ff3ec1ea374ddb71e563ed0a1d5cb99a93166f68b80a722fb",
+          "sha256": "4042d6ef0808ca3ccb5444562eb04142aedccacc2d1d6d77df53e8b4c0f48bef",
+          "duration_seconds": 73.326,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Who makes up the accreditation process",
+              "start_ms": 0,
+              "end_ms": 3160
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "The local health board does not simply grant accreditation on a whim — it carries a set of responsibilities under Section 5 of the RA 7883 IRR: safeguard the registration and accreditation process, evaluate applications, record decisions in a board resolution or meeting minutes, issue certificates of registration or accreditation, review and approve any benefit that would use local funds, recommend benefits and fund appropriation, provide an official copy of the BHW registry to the DOH, and monitor the service registered BHWs provide.",
+              "start_ms": 3460,
+              "end_ms": 46500
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "The local health board may also create a BHW Registration and Accreditation Committee to evaluate applications, interview applicants, recommend action to the board, and keep the BHW registry updated.",
+              "start_ms": 46800,
+              "end_ms": 62560
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Accreditation isn't decided by one person alone — it runs through a system, with assigned responsibility and a registry that's kept up to date.",
+              "start_ms": 62860,
+              "end_ms": 73260
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/04-ra7883/bhw-accreditation/section-5.fil.08886de82378.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "08886de82378477abf6592592ebc053ac98e9e88ef7b436aad32f7d851f0a870",
+          "sha256": "4752451000df07ff28e301415c7b2f626d980ace74007cf1cd38cd8a1713c80d",
+          "duration_seconds": 81.816,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Kung sino ang bumubuo sa proseso ng akreditasyon",
+              "start_ms": 0,
+              "end_ms": 4120
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Hindi basta-basta pumapayag ang local health board sa akreditasyon — may hanay ng responsibilidad ito ayon sa Section 5 ng RA 7883 IRR: pangalagaan ang proseso ng rehistrasyon at akreditasyon, suriin ang mga aplikasyon, itala ang desisyon sa isang board resolution o minutes ng pulong, maglabas ng certificate of registration o accreditation, suriin at aprubahan ang bawat benepisyong gagamit ng pondong lokal, magrekomenda ng benepisyo at pondo, magbigay ng opisyal na kopya ng BHW registry sa DOH, at bantayan ang serbisyong ibinibigay ng mga rehistradong BHW.",
+              "start_ms": 4420,
+              "end_ms": 51780
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Maaari ring lumikha ang local health board ng isang BHW Registration and Accreditation Committee na susuri ng mga aplikasyon, kakapanayamin ang mga aplikante, magrerekomenda sa local health board, at mag-uupdate ng BHW registry.",
+              "start_ms": 52080,
+              "end_ms": 71160
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Hindi iisang tao lang ang nagpapasya sa akreditasyon — may sistema ito, may itinalagang responsibilidad, at may talaang pinapanatili.",
+              "start_ms": 71460,
+              "end_ms": 81740
+            }
+          ]
+        }
+      }
+    }
+  },
+  "tracks": [
+    {
+      "language": "fil",
+      "section": "section-5",
+      "src": "/training/audio/04-ra7883/bhw-accreditation/section-5.fil.08886de82378.mp3",
+      "sha256": "4752451000df07ff28e301415c7b2f626d980ace74007cf1cd38cd8a1713c80d",
+      "bytes": 327262,
+      "existed_at_baseline": true,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Kung sino ang bumubuo sa proseso ng akreditasyon",
+          "start_ms": 0,
+          "end_ms": 4120
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Hindi basta-basta pumapayag ang local health board sa akreditasyon — may hanay ng responsibilidad ito ayon sa Section 5 ng RA 7883 IRR: pangalagaan ang proseso ng rehistrasyon at akreditasyon, suriin ang mga aplikasyon, itala ang desisyon sa isang board resolution o minutes ng pulong, maglabas ng certificate of registration o accreditation, suriin at aprubahan ang bawat benepisyong gagamit ng pondong lokal, magrekomenda ng benepisyo at pondo, magbigay ng opisyal na kopya ng BHW registry sa DOH, at bantayan ang serbisyong ibinibigay ng mga rehistradong BHW.",
+          "start_ms": 4420,
+          "end_ms": 51780
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Maaari ring lumikha ang local health board ng isang BHW Registration and Accreditation Committee na susuri ng mga aplikasyon, kakapanayamin ang mga aplikante, magrerekomenda sa local health board, at mag-uupdate ng BHW registry.",
+          "start_ms": 52080,
+          "end_ms": 71160
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Hindi iisang tao lang ang nagpapasya sa akreditasyon — may sistema ito, may itinalagang responsibilidad, at may talaang pinapanatili.",
+          "start_ms": 71460,
+          "end_ms": 81740
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "section": "section-5",
+      "src": "/training/audio/04-ra7883/bhw-accreditation/section-5.en.be4c59ec599f.mp3",
+      "sha256": "4042d6ef0808ca3ccb5444562eb04142aedccacc2d1d6d77df53e8b4c0f48bef",
+      "bytes": 293303,
+      "existed_at_baseline": true,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Who makes up the accreditation process",
+          "start_ms": 0,
+          "end_ms": 3160
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "The local health board does not simply grant accreditation on a whim — it carries a set of responsibilities under Section 5 of the RA 7883 IRR: safeguard the registration and accreditation process, evaluate applications, record decisions in a board resolution or meeting minutes, issue certificates of registration or accreditation, review and approve any benefit that would use local funds, recommend benefits and fund appropriation, provide an official copy of the BHW registry to the DOH, and monitor the service registered BHWs provide.",
+          "start_ms": 3460,
+          "end_ms": 46500
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "The local health board may also create a BHW Registration and Accreditation Committee to evaluate applications, interview applicants, recommend action to the board, and keep the BHW registry updated.",
+          "start_ms": 46800,
+          "end_ms": 62560
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Accreditation isn't decided by one person alone — it runs through a system, with assigned responsibility and a registry that's kept up to date.",
+          "start_ms": 62860,
+          "end_ms": 73260
+        }
+      ]
+    }
+  ],
+  "status": "passed"
+}

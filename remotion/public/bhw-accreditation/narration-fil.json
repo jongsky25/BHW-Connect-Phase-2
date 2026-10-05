@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural conversational Filipino (Tagalog) as a warm, expressive Philippine community health trainer. Give Demi’s opening question curious rising intonation. Contrast board decision with committee screening and recommendation, and known facts with missing local information, through gentle pitch, emphasis and pace changes. Keep every negation and conditional rule audible. Maintain exactly one consistent adult female Kore narrator timbre from first word to last, including headings, quotations and takeaway; no character voices. Pronounce Demi as DEH-mee and initialisms as individual letters. Say RA as letters and 7883 as seven thousand eight hundred eighty-three. Read the circular number 2023-001 as twenty twenty-three, zero zero one. Finish every syllable and word ending with natural clause pauses; no fillers, clipped words, added connectors or repeated starts. Read the exact authored words, without translation or a promise of accreditation, benefits, eligibility or a job.",
+  "durationSeconds": 63.451,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Sino ang magpapasya sa akreditasyon? Tanong ni Demi ito. Hindi pa napatutunayan ang kaniyang katayuan.",
+      "start_ms": 0,
+      "end_ms": 7040
+    },
+    {
+      "zone": "board",
+      "index": 1,
+      "text": "Ang Local Health Board ang may tungkulin sa akreditasyon. Suriin ang aplikasyon at opisyal na tala ng pasya; hindi sapat ang sabi-sabi.",
+      "start_ms": 7340,
+      "end_ms": 16620
+    },
+    {
+      "zone": "committee",
+      "index": 2,
+      "text": "Maaaring bumuo ng komite para sa pagsusuri at rekomendasyon. Kapag walang komite, board ang magpapadaloy. Ang rekomendasyon ay hindi awtomatikong pag-apruba.",
+      "start_ms": 16920,
+      "end_ms": 28040
+    },
+    {
+      "zone": "cards",
+      "index": 3,
+      "text": "Sa kathang-isip na Card B, may rekomendasyon ngunit walang natiyak na pasya ng board. Alamin ang kulang; huwag magpahayag na aprubado.",
+      "start_ms": 28340,
+      "end_ms": 39660
+    },
+    {
+      "zone": "follow-up",
+      "index": 4,
+      "text": "Itatanong ni Demi: saan matitiyak ang opisyal na tala ng pasya at susunod na hakbang? Sa lokal na health office tiyakin ang tamang contact.",
+      "start_ms": 39960,
+      "end_ms": 50520
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Ipaliwanag ang papel, ihiwalay ang alam sa kulang, saka magtanong. Ang training certificate, BHWE o trabaho ay hindi kapalit ng akreditasyon.",
+      "start_ms": 50820,
+      "end_ms": 63380
+    }
+  ],
+  "audio_sha256": "50feaaf82bb10a35348b9f6965284c832687c080c2248d17c055a2f1d2b1bf47"
+}

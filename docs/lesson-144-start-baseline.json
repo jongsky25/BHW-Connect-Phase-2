@@ -1,0 +1,1113 @@
+{
+  "captured_at": "2026-10-05T09:25:08.598Z",
+  "main_sha": "258bd93089490c47b73f4d9669b184fde3a6debd",
+  "release_gate": "Independently verified before clone; work/release-gate144-verified.json",
+  "lesson_uuid": "648d2168-74dd-4451-958c-e4e5d8724a17",
+  "immutable_manifest": {
+    "lesson_key": "bhw-accreditation",
+    "position": 3,
+    "title_fil": "Proseso ng akreditasyon",
+    "title_en": "The accreditation process",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: proseso ng akreditasyon."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: the accreditation process."
+    ],
+    "required": true
+  },
+  "published_rows": [
+    {
+      "id": "cf99b391-efbf-4efd-9588-59a7136567fc",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-legal-role",
+      "position": 0,
+      "title_fil": "Legal na batayan ng tungkulin",
+      "title_en": "The legal basis of the role",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: legal na batayan ng tungkulin."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: the legal basis of the role."
+      ],
+      "required": true,
+      "published_revision_id": "5f9cb97b-9e02-4da5-abf2-c0f0d1e8d303",
+      "created_at": "2026-09-24 23:37:58.312907+00",
+      "content_hash": "7a4880da236ea31a78647bb447ba6ff66eb7be701eb442059c3fabf77eddc57e",
+      "read_sections": null,
+      "slides": null,
+      "coverage": null,
+      "sources": null,
+      "assets": null,
+      "featured_asset_id": null,
+      "notes_fil": null,
+      "notes_en": null,
+      "observation_indicators": null
+    },
+    {
+      "id": "84abb8a8-9d6b-4e09-8936-998738d3ff37",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-benefits",
+      "position": 1,
+      "title_fil": "Benepisyo at mga kondisyon",
+      "title_en": "Benefits and conditions",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: benepisyo at mga kondisyon."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: benefits and conditions."
+      ],
+      "required": true,
+      "published_revision_id": "2bf6aaf1-3c70-431f-996e-04866144d1a7",
+      "created_at": "2026-09-24 23:37:58.911385+00",
+      "content_hash": "e752f4f342bd75badfec60d392a19fa09f40bcb43fd6aa077f052f6871898236",
+      "read_sections": null,
+      "slides": null,
+      "coverage": null,
+      "sources": null,
+      "assets": null,
+      "featured_asset_id": null,
+      "notes_fil": null,
+      "notes_en": null,
+      "observation_indicators": null
+    },
+    {
+      "id": "f1f527f1-aec9-48a8-933b-79fecf63bfb4",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-eligibility",
+      "position": 2,
+      "title_fil": "Pag-unawa sa BHWE",
+      "title_en": "Understanding BHWE",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: pag-unawa sa bhwe."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: understanding bhwe."
+      ],
+      "required": true,
+      "published_revision_id": "57f3cb9c-1bdc-44ef-ac81-991166e9ed3e",
+      "created_at": "2026-09-24 23:37:59.500304+00",
+      "content_hash": "10756a7a4d1cbd6459aa5c6982adc9c51bc94c83b2cafcf748f6ab0427243a1e",
+      "read_sections": [
+        {
+          "id": "bhwe-question",
+          "check": null,
+          "body_en": "Demi hears that accreditation or long BHW service automatically brings BHWE and a government job. She asks, ‘Are accreditation, civil service eligibility and appointment the same?’ They are different. This is a fictional situation; Demi's education and qualifying service are not established. First understand the conditions and evidence before making a promise.",
+          "body_fil": "May narinig si Demi: kapag accredited o matagal nang BHW, may BHWE at trabaho na raw agad. Nagtanong siya, ‘Pareho ba ang akreditasyon, civil service eligibility at appointment?’ Magkakaibang bagay ang mga ito. Kathang-isip ang sitwasyon; hindi pa natin alam ang edukasyon o qualifying service ni Demi. Unawain muna ang mga kondisyon at ebidensiya bago gumawa ng pangako.",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "heading_en": "Demi's question",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "heading_fil": "Tanong ni Demi",
+          "takeaway_en": "Accreditation, BHWE approval and appointment are different.",
+          "takeaway_fil": "Magkaiba ang akreditasyon, BHWE approval at appointment."
+        },
+        {
+          "id": "section-4",
+          "check": null,
+          "body_en": "RA 7883 section six, paragraph d, provides the statutory basis for second-grade eligibility after five years of continuous service. CSC implementing conditions are more detailed. Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record. Accreditation must precede the qualifying service. Service before 20 February 1995 is not counted. Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.",
+          "body_fil": "Ang seksiyon 6(d) ng RA 7883 ay nagbibigay ng batayan para sa second-grade eligibility matapos ang limang taong tuloy-tuloy na serbisyo. May mas detalyadong implementing conditions ang CSC. Gamitin ang apat na pangkat na ito: akreditasyon ng Local Health Board; hindi bababa sa dalawang taon sa kolehiyo tungo sa isang degree; hindi bababa sa limang taong tuloy-tuloy, aktibo, full-time at boluntaryong serbisyo bilang accredited BHW; at satisfactory service record. Dapat accredited na bago magsimula ang qualifying service. Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995. Hindi sapat ang akreditasyon lamang; kailangang matugunan at mapatunayan ang naaangkop na kondisyon, at CSC ang nagpapasya sa application.",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "heading_en": "BHWE conditions",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "heading_fil": "Mga kondisyon ng BHWE",
+          "takeaway_en": "Verify accreditation, education, qualifying service and a satisfactory record.",
+          "takeaway_fil": "Tiyakin ang akreditasyon, edukasyon, qualifying service at satisfactory record."
+        },
+        {
+          "id": "service-count",
+          "check": null,
+          "body_en": "All service in these fictional cards is after 20 February 1995. Card A has eight years of total service but only three under accredited status; the first five years before accreditation cannot be included. Card B reports five years of continuous, active, full-time, voluntary and satisfactory service while already accredited, plus school evidence of two college years leading to a degree. B supports checking the conditions, but it is not CSC approval. Unclear dates, an interruption or missing records require a CSC question, not an invented ruling.",
+          "body_fil": "Lahat ng serbisyo sa mga kathang-isip na card na ito ay matapos ang 20 Pebrero 1995. Sa Card A, walong taon ang kabuuang serbisyo ngunit tatlo lamang ang nasa accredited status; hindi maisasama ang unang limang taon bago ang akreditasyon. Sa Card B, may limang taong tuloy-tuloy, aktibo, full-time, boluntaryo at satisfactory na serbisyo habang accredited na, at school evidence para sa dalawang taon sa kolehiyo tungo sa degree. May batayan para suriin ang mga kondisyon sa B, ngunit hindi ito CSC approval. Kung malabo ang petsa, may interruption o kulang ang record, magtanong sa CSC; huwag hulaan ang ruling.",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "heading_en": "Which service can be counted?",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "heading_fil": "Aling serbisyo ang mabibilang?",
+          "takeaway_en": "Total service and qualifying accredited service are not always the same.",
+          "takeaway_fil": "Kabuuang serbisyo at qualifying accredited service ay hindi laging pareho."
+        },
+        {
+          "id": "evidence-and-scope",
+          "check": null,
+          "body_en": "The two college years must lead toward a degree. Voluntary BHW service means no salary or compensation except honorarium throughout the five-year service period. CSC clarifies no government appointment or salary from government plantilla payroll; meal and transport allowances are excluded from salary/compensation. A Job Order or Contract of Service worker may still qualify; the label alone proves neither qualification nor disqualification. Verify the actual arrangement and all conditions with CSC. BHWE is appropriate for first-level positions with exceptions: TESDA trade-test positions, positions requiring licenses, stenographer positions, and board-exam or special-law positions. It is not a professional license or an appointment guarantee; a position also has other qualification requirements.",
+          "body_fil": "Dapat tungo sa degree ang dalawang taon sa kolehiyo. Sa buong limang-taong service period, voluntary ang BHW service: walang salary/compensation maliban sa honorarium. Nililinaw ng CSC ang kawalan ng government appointment at salary mula sa government plantilla payroll; hindi kabilang sa salary/compensation ang meal at transport allowances. Maaaring maging kwalipikado pa rin ang nasa Job Order o Contract of Service; hindi sapat ang label para sabihing pasado o disqualified. Tiyakin ang aktuwal na arrangement at lahat ng kondisyon sa CSC. Ang BHWE ay para sa naaangkop na first-level positions, may mga exception: TESDA trade-test positions, mga nangangailangan ng license, stenographer positions, at board-exam o special-law positions. Hindi ito professional license o garantiya ng appointment; may iba pang qualification requirements ang posisyon.",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "heading_en": "One label is not enough",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "heading_fil": "Hindi sapat ang isang label",
+          "takeaway_en": "Check evidence and scope; do not decide from a label alone.",
+          "takeaway_fil": "Suriin ang ebidensiya at saklaw; huwag magpasya batay sa label lamang."
+        },
+        {
+          "id": "bhwe-verification",
+          "check": null,
+          "body_en": "Using a blank planning sheet, Demi asks, ‘For this fictional record, which accredited-service period and education and service evidence should be verified, including the JO/COS arrangement?’ The RHU and Local Health Board help identify records and contacts; they do not replace CSC approval. Ask the CSC Regional or Field Office with jurisdiction over the barangay of service. BHWE takes effect on approval by the responsible CSC Regional Office. Confirm current documentary and form guidance there; this practice submits no actual application or private record.",
+          "body_fil": "Gumawa si Demi ng tanong gamit ang blankong planning sheet: ‘Para sa kathang-isip na record na ito, aling panahon ng accredited service at anong education at service evidence ang dapat tiyakin, kasama ang JO/COS arrangement?’ Tumutulong ang RHU at Local Health Board sa records at contact; hindi nila pinapalitan ang CSC approval. Magtanong sa CSC Regional o Field Office na may sakop sa barangay ng serbisyo. Ang effectivity ng BHWE ay nakabatay sa approval ng kaukulang CSC Regional Office. Tiyakin doon ang kasalukuyang documentary at form guidance; walang tunay na application o pribadong record na isusumite sa practice na ito.",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "heading_en": "A specific question for CSC",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "heading_fil": "Isang tiyak na tanong sa CSC",
+          "takeaway_en": "Connect the question to records, conditions and the proper CSC office.",
+          "takeaway_fil": "Iugnay ang tanong sa record, kondisyon at tamang CSC office."
+        },
+        {
+          "id": "bhwe-application-check",
+          "check": {
+            "options": [
+              {
+                "en": "Distinguish the three accredited years from the total eight, check education and all service conditions/evidence, and ask CSC a specific question; promise neither approval nor a job.",
+                "fil": "Ihiwalay ang tatlong accredited years sa kabuuang walo, suriin ang edukasyon at lahat ng service conditions/evidence, at magtanong nang tiyak sa CSC; huwag mangako ng approval o trabaho."
+              },
+              {
+                "en": "Accreditation is already enough for BHWE approval and a guaranteed government appointment.",
+                "fil": "Accredited na, kaya sapat na iyon para sa BHWE approval at garantisadong government appointment."
+              },
+              {
+                "en": "Count all eight years; a JO/COS label automatically qualifies the worker for any government post.",
+                "fil": "Bilangin ang lahat ng walong taon; automatic na kwalipikado ang may JO/COS label at puwede na sa anumang government post."
+              }
+            ],
+            "prompt_en": "What is Demi’s best explanation for Card A with eight total years and three accredited years?",
+            "prompt_fil": "Ano ang pinakamainam na paliwanag ni Demi para sa Card A na may walong total years at tatlong accredited years?",
+            "feedback_en": "First: correct. Only three years are described under accredited status; pre-accreditation service cannot be added. Degree-related college education and all continuity, active/full-time, voluntary and satisfactory service conditions and evidence must be checked. Specific CSC verification comes next, not a promise of approval or a job. Second: incorrect. Accreditation is only one teaching group; it cannot replace education/service requirements, CSC application approval or a separate appointment. Third: incorrect. Pre-accreditation service is not counted. A JO/COS worker may still qualify, but the label is no guarantee. First-level exceptions and other position qualifications remain; BHWE does not qualify someone for every government post.",
+            "feedback_fil": "Una: tama. Tatlong taon lamang ang inilalarawang nasa accredited status; hindi dapat idagdag ang pre-accreditation service. Kailangang suriin ang degree-related college education at lahat ng continuity, active/full-time, voluntary at satisfactory service conditions at ebidensiya. Tiyak na CSC verification ang susunod, hindi pangako ng approval o trabaho. Ikalawa: mali. Isa lamang sa mga pangkat ang accreditation; hindi nito pinapalitan ang education/service requirements, CSC application approval o hiwalay na appointment. Ikatlo: mali. Hindi binibilang ang pre-accreditation service. Maaaring kwalipikado pa rin ang JO/COS worker, ngunit hindi garantiya ang label. May first-level exceptions at iba pang position qualifications; hindi BHWE ang pahintulot sa anumang government post.",
+            "correct_option_index": 0
+          },
+          "body_en": "In fictional example A, the worker has eight years of service but only three years under accreditation. Which explanation is best? Connect the count to accredited status, check education and the other service conditions, and form a specific CSC question. Demi should promise neither BHWE nor a job. After choosing, read the reasons for all three answers and explain to a partner what needs verification.",
+          "body_fil": "Sinabi sa kathang-isip na Card A na walong taon na ang serbisyo at tatlong taon pa lamang ang accreditation. Aling paliwanag ang pinakamainam? Iugnay ang bilang sa accredited status, suriin ang edukasyon at iba pang service conditions, at bumuo ng tiyak na tanong sa CSC. Hindi dapat mangako si Demi ng BHWE o trabaho. Pagkatapos pumili, basahin ang dahilan para sa lahat ng tatlong sagot at ipaliwanag sa kapareha kung ano ang dapat tiyakin.",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "heading_en": "Choose a careful explanation",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "heading_fil": "Piliin ang maingat na paliwanag",
+          "takeaway_en": "Explain conditions and evidence, then verify with CSC.",
+          "takeaway_fil": "Ipaliwanag ang kondisyon at ebidensiya, saka tiyakin sa CSC."
+        }
+      ],
+      "slides": [
+        {
+          "id": "slide-bhwe-question",
+          "check": null,
+          "layout": "scene",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "display_en": "Accreditation ≠ BHWE approval ≠ appointment\nWhat needs verification?",
+          "heading_en": "Demi's question",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "display_fil": "Akreditasyon ≠ BHWE approval ≠ appointment\nAno ang dapat tiyakin?",
+          "heading_fil": "Tanong ni Demi",
+          "narration_en": "Demi hears that accreditation or long BHW service automatically brings BHWE and a government job. She asks, ‘Are accreditation, civil service eligibility and appointment the same?’ They are different. This is a fictional situation; Demi's education and qualifying service are not established. First understand the conditions and evidence before making a promise.",
+          "narration_fil": "May narinig si Demi: kapag accredited o matagal nang BHW, may BHWE at trabaho na raw agad. Nagtanong siya, ‘Pareho ba ang akreditasyon, civil service eligibility at appointment?’ Magkakaibang bagay ang mga ito. Kathang-isip ang sitwasyon; hindi pa natin alam ang edukasyon o qualifying service ni Demi. Unawain muna ang mga kondisyon at ebidensiya bago gumawa ng pangako."
+        },
+        {
+          "id": "slide-section-4",
+          "check": null,
+          "layout": "process",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "display_en": "Four groups: accreditation • education • qualifying service • satisfactory record\nAccredited before service starts; no counting before 20 February 1995.",
+          "heading_en": "BHWE conditions",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "display_fil": "Apat na pangkat: akreditasyon • edukasyon • qualifying service • satisfactory record\nAccredited na bago magsimula; walang bilang bago20 Pebrero 1995.",
+          "heading_fil": "Mga kondisyon ng BHWE",
+          "narration_en": "RA 7883 section six, paragraph d, provides the statutory basis for second-grade eligibility after five years of continuous service. CSC implementing conditions are more detailed. Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record. Accreditation must precede the qualifying service. Service before 20 February 1995 is not counted. Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.",
+          "narration_fil": "Ang seksiyon 6(d) ng RA 7883 ay nagbibigay ng batayan para sa second-grade eligibility matapos ang limang taong tuloy-tuloy na serbisyo. May mas detalyadong implementing conditions ang CSC. Gamitin ang apat na pangkat na ito: akreditasyon ng Local Health Board; hindi bababa sa dalawang taon sa kolehiyo tungo sa isang degree; hindi bababa sa limang taong tuloy-tuloy, aktibo, full-time at boluntaryong serbisyo bilang accredited BHW; at satisfactory service record. Dapat accredited na bago magsimula ang qualifying service. Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995. Hindi sapat ang akreditasyon lamang; kailangang matugunan at mapatunayan ang naaangkop na kondisyon, at CSC ang nagpapasya sa application."
+        },
+        {
+          "id": "slide-service-count",
+          "check": null,
+          "layout": "process",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "display_en": "Card A: 8 years total → 3 while accredited\nCard B: 5 qualifying years + other conditions\nA practice card is not approval.",
+          "heading_en": "Which service can be counted?",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "display_fil": "Card A: 8 taon lahat → 3 habang accredited\nCard B: 5 qualifying years + ibang kondisyon\nHindi pa approval ang practice card.",
+          "heading_fil": "Aling serbisyo ang mabibilang?",
+          "narration_en": "All service in these fictional cards is after 20 February 1995. Card A has eight years of total service but only three under accredited status; the first five years before accreditation cannot be included. Card B reports five years of continuous, active, full-time, voluntary and satisfactory service while already accredited, plus school evidence of two college years leading to a degree. B supports checking the conditions, but it is not CSC approval. Unclear dates, an interruption or missing records require a CSC question, not an invented ruling.",
+          "narration_fil": "Lahat ng serbisyo sa mga kathang-isip na card na ito ay matapos ang 20 Pebrero 1995. Sa Card A, walong taon ang kabuuang serbisyo ngunit tatlo lamang ang nasa accredited status; hindi maisasama ang unang limang taon bago ang akreditasyon. Sa Card B, may limang taong tuloy-tuloy, aktibo, full-time, boluntaryo at satisfactory na serbisyo habang accredited na, at school evidence para sa dalawang taon sa kolehiyo tungo sa degree. May batayan para suriin ang mga kondisyon sa B, ngunit hindi ito CSC approval. Kung malabo ang petsa, may interruption o kulang ang record, magtanong sa CSC; huwag hulaan ang ruling."
+        },
+        {
+          "id": "slide-evidence-and-scope",
+          "check": null,
+          "layout": "process",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "display_en": "Degree-related college education\nJO/COS: may qualify; assessment needed\nBHWE ≠ license or guaranteed job",
+          "heading_en": "One label is not enough",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "display_fil": "Degree-related college education\nJO/COS: maaaring kwalipikado; kailangan ng pagsusuri\nBHWE ≠ license o garantisadong trabaho",
+          "heading_fil": "Hindi sapat ang isang label",
+          "narration_en": "The two college years must lead toward a degree. Voluntary BHW service means no salary or compensation except honorarium throughout the five-year service period. CSC clarifies no government appointment or salary from government plantilla payroll; meal and transport allowances are excluded from salary/compensation. A Job Order or Contract of Service worker may still qualify; the label alone proves neither qualification nor disqualification. Verify the actual arrangement and all conditions with CSC. BHWE is appropriate for first-level positions with exceptions: TESDA trade-test positions, positions requiring licenses, stenographer positions, and board-exam or special-law positions. It is not a professional license or an appointment guarantee; a position also has other qualification requirements.",
+          "narration_fil": "Dapat tungo sa degree ang dalawang taon sa kolehiyo. Sa buong limang-taong service period, voluntary ang BHW service: walang salary/compensation maliban sa honorarium. Nililinaw ng CSC ang kawalan ng government appointment at salary mula sa government plantilla payroll; hindi kabilang sa salary/compensation ang meal at transport allowances. Maaaring maging kwalipikado pa rin ang nasa Job Order o Contract of Service; hindi sapat ang label para sabihing pasado o disqualified. Tiyakin ang aktuwal na arrangement at lahat ng kondisyon sa CSC. Ang BHWE ay para sa naaangkop na first-level positions, may mga exception: TESDA trade-test positions, mga nangangailangan ng license, stenographer positions, at board-exam o special-law positions. Hindi ito professional license o garantiya ng appointment; may iba pang qualification requirements ang posisyon."
+        },
+        {
+          "id": "slide-bhwe-verification",
+          "check": null,
+          "layout": "process",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "display_en": "Which period? Which evidence?\nCSC office for the barangay of service\nPlanning question only; no application.",
+          "heading_en": "A specific question for CSC",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "display_fil": "Anong panahon? Anong ebidensiya?\nCSC office na may sakop sa barangay ng serbisyo\nPlanning question lamang; walang application.",
+          "heading_fil": "Isang tiyak na tanong sa CSC",
+          "narration_en": "Using a blank planning sheet, Demi asks, ‘For this fictional record, which accredited-service period and education and service evidence should be verified, including the JO/COS arrangement?’ The RHU and Local Health Board help identify records and contacts; they do not replace CSC approval. Ask the CSC Regional or Field Office with jurisdiction over the barangay of service. BHWE takes effect on approval by the responsible CSC Regional Office. Confirm current documentary and form guidance there; this practice submits no actual application or private record.",
+          "narration_fil": "Gumawa si Demi ng tanong gamit ang blankong planning sheet: ‘Para sa kathang-isip na record na ito, aling panahon ng accredited service at anong education at service evidence ang dapat tiyakin, kasama ang JO/COS arrangement?’ Tumutulong ang RHU at Local Health Board sa records at contact; hindi nila pinapalitan ang CSC approval. Magtanong sa CSC Regional o Field Office na may sakop sa barangay ng serbisyo. Ang effectivity ng BHWE ay nakabatay sa approval ng kaukulang CSC Regional Office. Tiyakin doon ang kasalukuyang documentary at form guidance; walang tunay na application o pribadong record na isusumite sa practice na ito."
+        },
+        {
+          "id": "slide-bhwe-application-check",
+          "check": {
+            "options": [
+              {
+                "en": "Distinguish the three accredited years from the total eight, check education and all service conditions/evidence, and ask CSC a specific question; promise neither approval nor a job.",
+                "fil": "Ihiwalay ang tatlong accredited years sa kabuuang walo, suriin ang edukasyon at lahat ng service conditions/evidence, at magtanong nang tiyak sa CSC; huwag mangako ng approval o trabaho."
+              },
+              {
+                "en": "Accreditation is already enough for BHWE approval and a guaranteed government appointment.",
+                "fil": "Accredited na, kaya sapat na iyon para sa BHWE approval at garantisadong government appointment."
+              },
+              {
+                "en": "Count all eight years; a JO/COS label automatically qualifies the worker for any government post.",
+                "fil": "Bilangin ang lahat ng walong taon; automatic na kwalipikado ang may JO/COS label at puwede na sa anumang government post."
+              }
+            ],
+            "prompt_en": "What is Demi’s best explanation for Card A with eight total years and three accredited years?",
+            "prompt_fil": "Ano ang pinakamainam na paliwanag ni Demi para sa Card A na may walong total years at tatlong accredited years?",
+            "feedback_en": "First: correct. Only three years are described under accredited status; pre-accreditation service cannot be added. Degree-related college education and all continuity, active/full-time, voluntary and satisfactory service conditions and evidence must be checked. Specific CSC verification comes next, not a promise of approval or a job. Second: incorrect. Accreditation is only one teaching group; it cannot replace education/service requirements, CSC application approval or a separate appointment. Third: incorrect. Pre-accreditation service is not counted. A JO/COS worker may still qualify, but the label is no guarantee. First-level exceptions and other position qualifications remain; BHWE does not qualify someone for every government post.",
+            "feedback_fil": "Una: tama. Tatlong taon lamang ang inilalarawang nasa accredited status; hindi dapat idagdag ang pre-accreditation service. Kailangang suriin ang degree-related college education at lahat ng continuity, active/full-time, voluntary at satisfactory service conditions at ebidensiya. Tiyak na CSC verification ang susunod, hindi pangako ng approval o trabaho. Ikalawa: mali. Isa lamang sa mga pangkat ang accreditation; hindi nito pinapalitan ang education/service requirements, CSC application approval o hiwalay na appointment. Ikatlo: mali. Hindi binibilang ang pre-accreditation service. Maaaring kwalipikado pa rin ang JO/COS worker, ngunit hindi garantiya ang label. May first-level exceptions at iba pang position qualifications; hindi BHWE ang pahintulot sa anumang government post.",
+            "correct_option_index": 0
+          },
+          "layout": "decision",
+          "asset_ids": [
+            "demi-bhwe-discussion"
+          ],
+          "display_en": "Card A: 8 total, 3 accredited\nChoose conditions, evidence and CSC verification.",
+          "heading_en": "Choose a careful explanation",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "display_fil": "Card A: 8 total, 3 accredited\nPiliin ang paliwanag na may kondisyon, ebidensiya at CSC verification.",
+          "heading_fil": "Piliin ang maingat na paliwanag",
+          "narration_en": "In fictional example A, the worker has eight years of service but only three years under accreditation. Which explanation is best? Connect the count to accredited status, check education and the other service conditions, and form a specific CSC question. Demi should promise neither BHWE nor a job. After choosing, read the reasons for all three answers and explain to a partner what needs verification.",
+          "narration_fil": "Sinabi sa kathang-isip na Card A na walong taon na ang serbisyo at tatlong taon pa lamang ang accreditation. Aling paliwanag ang pinakamainam? Iugnay ang bilang sa accredited status, suriin ang edukasyon at iba pang service conditions, at bumuo ng tiyak na tanong sa CSC. Hindi dapat mangako si Demi ng BHWE o trabaho. Pagkatapos pumili, basahin ang dahilan para sa lahat ng tatlong sagot at ipaliwanag sa kapareha kung ano ang dapat tiyakin."
+        }
+      ],
+      "coverage": [
+        {
+          "id": "m4.bhwe",
+          "read_ids": [
+            "bhwe-question",
+            "section-4",
+            "service-count",
+            "evidence-and-scope",
+            "bhwe-verification",
+            "bhwe-application-check"
+          ],
+          "slide_ids": [
+            "slide-bhwe-question",
+            "slide-section-4",
+            "slide-service-count",
+            "slide-evidence-and-scope",
+            "slide-bhwe-verification",
+            "slide-bhwe-application-check"
+          ],
+          "source_ids": [
+            "m4.bhwe-source",
+            "m4.bhwe-csc-source",
+            "m4.bhwe-guidelines-2011",
+            "m4.bhwe-statute",
+            "m4.bhwe-csc-2024",
+            "m4.bhwe-facilitation"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "m4.bhwe-source",
+          "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view",
+          "title": "DOH BHW Reference Manual2022, original150-page Drive PDF13/printed5: four-condition teaching summary; hash verified5 October2026",
+          "pdf_pages": [
+            13
+          ]
+        },
+        {
+          "id": "m4.bhwe-csc-source",
+          "url": "https://csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility",
+          "title": "CSC Barangay Health Worker Eligibility: official summary published1 June2021, accessed5 October2026; not the complete1999 resolution"
+        },
+        {
+          "id": "m4.bhwe-guidelines-2011",
+          "url": "https://www.csc.gov.ph/phocadownload/userupload/irmo/policy%20resolutions/2011/CSC%20Resolution%20No.%201101645.pdf",
+          "title": "CSC Resolution1101645: full revised2011 guidelines; BHWE PDF12–14/printed8–10, historical evidence PDF25/printed21; accessed5 October2026",
+          "pdf_pages": [
+            12,
+            13,
+            14,
+            25
+          ]
+        },
+        {
+          "id": "m4.bhwe-statute",
+          "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html",
+          "title": "RA7883 sections3–4 and6(d): accreditation/registration and statutory eligibility basis; accessed5 October2026"
+        },
+        {
+          "id": "m4.bhwe-csc-2024",
+          "url": "https://csc.gov.ph/barangay-health-workers-may-apply-for-eligibility-csc",
+          "title": "CSC31 July2024 official corroboration of qualifications, scope and JO/COS; accessed5 October2026"
+        },
+        {
+          "id": "m4.bhwe-facilitation",
+          "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf",
+          "title": "DOH Facilitator Guide2022:150-page TCI original PDF25–27/printed16–18;126-page Drive version PDF23–25 matches; authored lesson timing differs from whole competency",
+          "pdf_pages": [
+            25,
+            26,
+            27
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "id": "demi-bhwe-discussion",
+          "path": "/training/bhw-1-4/demi-bhwe-discussion-cce21d6a934d.png",
+          "alt_en": "Demi and a facilitator discuss BHWE using blank planning sheets and practice cards.",
+          "alt_fil": "Tinatalakay ni Demi at ng facilitator ang BHWE gamit ang blankong planning sheets at practice cards.",
+          "caption_en": "Conditions · Evidence · CSC verification. Fictional discussion.",
+          "provenance": "Original built-in image_gen.imagegen illustration,5 October2026, using owner-approved1.4.1 Demi identity reference SHA256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. No model identifier returned. Exact prompt: Create a genuinely NEW original landscape 16:9 educational illustration for BHW Connect lesson1.4.3, Demi and understanding Barangay Health Worker Eligibility (BHWE). Use the attached approved1.4.1 illustration ONLY as the explicit visual identity and style reference for Demi: the adult Filipina woman on the LEFT with medium-brown skin, recognizable same face and eyes/nose, short wavy dark bob and plain teal collared blouse. Preserve that fictional identity closely. New scene and poses: Demi sits at a simple community health discussion table, thoughtfully pointing with one hand at blank cream question sheets and three blank colored practice cards, while a calm adult Filipina facilitator in a plain warm coral blouse listens with open, supportive posture. This is a fictional planning conversation about what must be verified with CSC, not a credential or application approval. Show exactly two people, natural adult anatomy/proportions, complete faces, heads and all four visible hands clearly and safely inside the image; no cropped faces/hands, no extra fingers or limbs. Place the whole tabletop and both participants within generous12percent safe margins on every side for phone containment. Clear separate silhouettes; Demi remains the focal person on the left, facilitator on the right. Warm hand-painted editorial illustration, softly textured clean shapes, attractive muted teal/cream/coral palette, gentle afternoon light, modest uncluttered barangay health-room background, small potted plant and blank wall. New visual composition, not a relabel of the reference. All sheets/cards MUST be blank, no legible text, no letters/numbers/labels. No certificate, ID, seal, official logo, flag, filled form, school transcript, appointment, uniform, payment, eligibility approval or government-job guarantee. No speech bubbles or infographic text. Opaque background. Leave generous breathing room around the people and their hands; use containment-friendly composition. Owner approved the exact reviewed package on 5 October 2026; hashes in docs/lesson-143-owner-approval.json. No human listening or independent policy SME approval is inferred.",
+          "caption_fil": "Kondisyon · Ebidensiya · CSC verification. Kathang-isip na talakayan.",
+          "content_hash": "cce21d6a934d7e0e729ef9961e4ba2bad52d7db3080e3b5a7b1087c3a3765d4b",
+          "review_status": "approved"
+        },
+        {
+          "id": "bhw-eligibility-story",
+          "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7ae68197f709-poster.jpg",
+          "alt_en": "Narrated story: Demi distinguishes BHWE conditions and accredited-service counts and asks a specific CSC question.",
+          "videos": {
+            "en": {
+              "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-5b27d9fc14de.mp4",
+              "poster": {
+                "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-95f794f724a5-poster.jpg",
+                "content_hash": "95f794f724a5cdba695274140493aa0a723a4f6ff8a976c2038c7578eaed7c2d"
+              },
+              "captions": {
+                "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-315abb2958c2.vtt",
+                "content_hash": "315abb2958c25d6def99d8024c53cf8c56bf8b8e105f78dbd51f3e624f9003db"
+              },
+              "duration_s": 78,
+              "content_hash": "5b27d9fc14deafc0f04419aae367cfdda324c9dca473123df92b7955f156e817"
+            },
+            "fil": {
+              "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7963ff6962eb.mp4",
+              "poster": {
+                "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7ae68197f709-poster.jpg",
+                "content_hash": "7ae68197f709ae2bb6069d88ac2e5ae9ed966e97bc3de8b457f8ee7219f630c5"
+              },
+              "captions": {
+                "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-0ddc480c6e6e.vtt",
+                "content_hash": "0ddc480c6e6e621631261875b279ba14e0c88ed0e2dd9704d080a5ea393472ed"
+              },
+              "duration_s": 77,
+              "content_hash": "7963ff6962eb79f667ef35f751190ed8907f5a726666ed589ebf6b526c2d08c0"
+            }
+          },
+          "alt_fil": "Kuwentong may salaysay: ipinaliliwanag ni Demi ang BHWE conditions, accredited-service count at tiyak na CSC verification.",
+          "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+          "provenance": "Original Remotion animation for lesson 1.4.3; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed media on 5 October 2026; independent policy SME review is not claimed. Owner approved the exact reviewed package on 5 October 2026; hashes in docs/lesson-143-owner-approval.json. No human listening or independent policy SME approval is inferred.",
+          "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+          "content_hash": "7ae68197f709ae2bb6069d88ac2e5ae9ed966e97bc3de8b457f8ee7219f630c5",
+          "review_status": "approved"
+        }
+      ],
+      "featured_asset_id": "bhw-eligibility-story",
+      "notes_fil": "## [purpose] Layunin\n\nSuportahan ang hindi binagong objective: ‘Maipaliwanag at mailapat sa isang sitwasyon: pag-unawa sa bhwe.’ Ipaliliwanag ang apat na pangkat ng kondisyon, ihihiwalay ang kabuuang serbisyo sa qualifying accredited service, at bubuo ng tiyak na CSC verification question nang walang pangako ng eligibility o appointment. Kathang-isip si Demi at lahat ng profile card. Pag-unawa sa kondisyon ang aralin; hindi ito paghatol sa learner o pagsumite ng application.\n\n## [time-materials] Oras at materyales\n\nPanatilihin ang kasalukuyang 30-minutong bahagi sa 180-minutong module. Authored na hati: opening 3, paliwanag 7, worked profiles 6, evidence/question practice 5, check/talakayan 6, observation/re-practice 3 minuto. Ayon sa orihinal na Facilitator Guide, tatlong oras ang buong competency: 126-page Drive copy PDF 23/printed 16, katumbas ng150-page TCI copy PDF 25/printed 16. Attribution ito sa manual, hindi hiwalay na verification ng kasalukuyang TESDA rules. Authored estimate ang 8–12 minutong self-study; hindi kasama ang optional story at audio replay.\n\nGamitin ang anim na bilingual screen, four-condition reference sheet, kathang-isip na Cards A–C sa ibaba, blankong question cards at opisyal na CSC links. Walang hihinging transcript, pay record, accreditation certificate o ibang pribadong dokumento ng learner.\n\n## [prepare] Paghahanda\n\nBasahin ang parehong wika, lahat ng tatlong check rationale at full narration na mabubuksan sa Slides. Balikan ang RA 7883 section 6(d), opisyal na2011 CSC guidelines PDF 12–14/printed 8–10 at kasalukuyang naaabot na CSC BHWE summary. Ihiwalay ang batas sa implementing conditions at ang teaching grouping sa opisyal na numbered checklist. Balikan ang degree-related college education, serbisyo habang accredited na, cutoff na20 Pebrero 1995, continuity/full-time/voluntary/satisfactory service, at JO/COS at payroll clarification. Magkaiba ang contractual government appointment at Contract of Service arrangement; aktuwal na detalye ang sinusuri ng CSC. Tiyakin ang angkop na local contact kung available; kung wala, ituro ang jurisdiction question nang walang imbentong contact o proseso.\n\n## [opening] Panimula\n\nBasahin ang kathang-isip na tanong ni Demi: ‘Kapag accredited o matagal nang BHW, may BHWE at trabaho na ba agad?’ Ipapaliwanag sa magkapareha ang pagkakaiba ng akreditasyon, CSC approval at appointment. Huwag itanong kung sino ang may college education, salary, interruption o karanasan sa application. Mahinahong tumugon sa maling sagot: ‘Subukan natin ang paliwanag gamit ang mga kondisyon.’\n\n## [steps] Mga hakbang\n\n1. Gamitin ang ‘Tanong ni Demi’ upang tukuyin ang misconception nang hindi ipinapalagay ang kaniyang qualifications.\n2. Sa pinanatiling section-4, maglagay ng apat na kahon: akreditasyon, edukasyon, qualifying service, satisfactory record. Ipaliwanag na RA 7883 ang statutory basis at CSC ang may detalyadong implementing conditions. Dapat accredited na bago ang qualifying service; hindi binibilang ang serbisyo bago20 Pebrero 1995.\n3. Ipaliwanag nang malakas ang Card A: sa walong kabuuang taon, lima ang bago accreditation at tatlo ang habang accredited. Hindi maidaragdag ang unang lima. Hindi ipinapakita ng card ang limang accredited years; huwag itong gawing ruling tungkol sa tunay na tao. Sa Card B, may batayan ang mga nakasaad na facts para suriin ang apat na pangkat, ngunit kailangan pa rin ang ebidensiya at CSC approval.\n4. Talakayin ang Card C at ‘Hindi sapat ang isang label.’ Kailangan ng tanong tungkol sa unclear continuity at aktuwal na JO/COS arrangement. Excepted ang honorarium; hindi kasama sa salary/compensation ang meal/transport allowances sa paglilinaw ng CSC, at hiwalay ang government appointment/plantilla payroll. Hindi sapat ang label o isang bayad upang magpasya sa buong kaso. Ipaliwanag ang first-level exceptions at hiwalay na licensing at appointment.\n5. Sa ‘Isang tiyak na tanong sa CSC,’ magsusulat ang magkapareha ng tanong na may panahon, ebidensiya at uncertainty. Tumutulong ang RHU/board sa records/contact; sakop ng CSC Regional o Field Office ang barangay ng serbisyo. Approval ng kaukulang Regional Office ang batayan ng effectivity. Tiyakin doon ang kasalukuyang documents/forms; walang isusumiteng practice application.\n6. Sa ‘Piliin ang maingat na paliwanag,’ talakayin ang lahat ng options at rationales, saka ipapaliwanag sa kapareha ang isang card. Gamitin ang observation indicator at mag-alok ng re-practice.\n\n## [expected-answers] Inaasahang sagot at mahinahong tugon\n\nCard A: ‘Tatlong taon lamang ang nakasaad na nasa accredited status, hindi walo. Tiyakin sa CSC ang petsa at ibang kondisyon.’ Card B: ‘May batayan ang nakasaad na five-year service at degree-related school evidence para suriin ang kondisyon, ngunit hindi nito pinatutunayan ang CSC approval o appointment.’ Card C: ‘Kailangan ng CSC assessment sa unclear interruption/arrangement; hindi automatic qualification o disqualification ang JO/COS label.’\n\nKung degree ang tanong: hindi bababa sa dalawang college years tungo sa degree; huwag palitan ng imbentong four-year-degree requirement. Kung honorarium: excepted ito sa service rule; hindi kasama sa salary/compensation ang meal/transport allowances sa paglilinaw ng CSC. Kailangan ng context at assessment sa ibang arrangement. Sa break o kulang na record, tukuyin ang hindi alam at magtanong sa CSC; huwag mag-imbento ng continuity ruling. Sa trabaho o license, ipaliwanag ang naaangkop na first-level scope/exceptions, iba pang qualifications ng posisyon at hiwalay na appointment. Kilalanin ang mabuting tanong nang hindi nagce-certify ng eligibility.\n\n## [misconception] Maling akala\n\n‘Accreditation lang ay BHWE na,’ ‘lahat ng naunang serbisyo ay counted,’ at ‘garantisado ang trabaho dahil sa BHWE’ ay may inaalis na kondisyon o decision. Ituro ang angkop na kahon o timeline at itanong kung anong ebidensiya ang kulang. Huwag kutyain, rangguhan ayon sa edukasyon, o hingin ang sariling records ng learner.\n\n## [practice] Kathang-isip na profile at question practice\n\nLahat ng card service ay matapos20 Pebrero 1995. Card A: walong kabuuang taon, unang lima bago Local Health Board accreditation at huling tatlo habang accredited; dapat tiyakin ang ibang education/service details. Card B: certificate of accreditation bago ang limang tuloy-tuloy, aktibo, full-time, boluntaryo at satisfactory na taon; honorarium lamang; school evidence para sa dalawang college years tungo sa degree; walang nakasaad na CSC approval. Card C: limang calendar years mula accreditation, unclear interruption at JO/COS label; hindi malinaw ang continuity, aktuwal na arrangement, education evidence at certified service. Authored teaching examples ang mga ito, hindi source cases o eligibility decisions.\n\nPumili ng card ang magkapareha, ipaliwanag ang established at uncertain facts, at isulat: ‘Para sa kathang-isip na record, aling accredited-service period at ebidensiya ang dapat tiyakin, kasama ang [uncertainty]?’ Magbigay ang bawat kapareha ng isang lakas at isang detalye pang dapat tiyakin. Walang personal na disclosure. Maaaring gumamit ng reference sheet at sumubok muli nang mas kaunti ang untag.\n\n## [answer-key] Tatlong pagpipilian at buong rationale\n\nIisang assessment ang check sa Read/Slides; talakayin nang isang beses. Tama ang option 1: qualifying service habang accredited na lamang ang bilangin, suriin ang edukasyon at lahat ng service conditions/evidence, at magtanong nang tiyak sa CSC nang walang pangako ng approval o trabaho. Hindi pinatutunayan ng walong kabuuang taon sa Card A ang limang accredited years. Iginagalang ng sagot ang kondisyon at decision ng CSC.\n\nMali ang option 2: hindi sapat ang accreditation lamang para sa education/service requirements o CSC application approval. Hindi rin nito maipapangako ang appointment. Mali ang option 3: kasama sa walong taon ang pre-accreditation service na hindi dapat idagdag; walang garantiya mula sa JO/COS label, at hindi BHWE ang eligibility para sa lahat ng government posts o garantisadong trabaho. May first-level exceptions at iba pang qualification requirements. Ipaayos ang bawat maling paliwanag gamit ang apat na kahon at tiyak na tanong.\n\n## [observe] Obserbahan\n\nGamitin ang isang indicator na nakaayon sa lesson objective. Kaya na: walang untag na ipinapaliwanag ang apat na pangkat, accredited-service count at uncertainty, at tiyak na CSC verification nang walang pangako. Kailangan pa ng practice: tama ang direksiyon ngunit kailangan ng untag sa edukasyon, service period, arrangement o ebidensiya/contact. Hindi pa: sapat na raw ang accreditation o total years, nagpapasya batay sa label, o nangangako ng eligibility/appointment. Gamitin ang tatlong observation levels sa napiling wika ng learner. Hiwalay ang online completion sa observed explanation at practice; hindi sapat na ebidensiya ng competency ang tamang click.\n\n## [support] Suporta at re-practice\n\nSentence frame: ‘Itinatag ng card ang __. Hindi nito itinatag ang __. Magsisimula ang service count sa __. Itatanong ko sa CSC ang __; hindi ito approval o appointment.’ I-model ang A, saka ipasubok ang B o C. Magbigay ng isang helpful prompt, mag-alok ng reference sheet, at mag-anyaya ng bagong attempt nang walang pressure na magbahagi ng pribadong sitwasyon. Obserbahan muli ang parehong skill gamit ang ibang fictional card at training observation lamang ang itala ayon sa established local procedures.\n\n## [sources-review] Sources at review\n\nFresh access 5 Oktubre 2026: RA 7883 sections 3–4 at 6(d), https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html ; buong 2011 CSC guidelines, https://www.csc.gov.ph/phocadownload/userupload/irmo/policy%20resolutions/2011/CSC%20Resolution%20No.%201101645.pdf (BHWE PDF 12–14/printed 8–10; historical evidence categories PDF 25/printed 21); opisyal na BHWE summary, https://csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility ; opisyal na2024 corroboration, https://csc.gov.ph/barangay-health-workers-may-apply-for-eligibility-csc . Huwag tawaging buong 1999 resolution ang summary.\n\nAng150-page original Reference Manual Drive PDF 13/printed 5 ang may four-condition summary. Freshly inspected ang dalawang Facilitator Guide originals: 126-page Drive PDF 23–25 at 150-page TCI PDF 25–27, parehong printed 16–18. Legacy form demonstration at experience recount ang mungkahi ng original Day1 slide 25, hindi buong rule. Fictional practice ang gamit dito; walang pangakong Form 101-H workflow sa lesson 1.4.4. Nasa docs/lesson-143-source-audit.json at lesson-143-source-claim-map.json ang exact hashes/version mapping at source-to-screen audit.\n\nWala ang detailed 1999 annex sa nakuhang original 2000 MC1 PDF at E-Library text; buong later 2011 guidelines ang sumusuporta sa audited provisions. Hindi pa established ang current full national IRR, target LGU procedures at independent current TESDA rules. Partly inaccessible ang Senate replacement-bill status; hindi patunay ng kawalan ang walang natukoy na enacted replacement. Walang authored current form/fee/version/certificate-format advice dito. Walang independent policy SME review o human listening na inaangkin. Draft ang bagong 1.4.3 illustration, audio at story hanggang sa hiwalay na owner approval.\n\nInaprubahan ng owner ang eksaktong reviewed package noong 5 Oktubre 2026: docs/lesson-143-owner-approval.json. Historikal ang naunang draft/review wording; nananatili ang source at listening limitations.\n",
+      "notes_en": "## [purpose] Purpose\n\nSupport the unchanged objective, ‘Explain and apply in a situation: understanding bhwe.’ Learners explain the four teaching groups, distinguish total service from qualifying accredited service, and form a bounded CSC verification question without promising eligibility or appointment. Demi and all profile cards are fictional. This lesson understands conditions; it does not adjudicate a learner or submit an application.\n\n## [time-materials] Time and materials\n\nKeep the existing 30-minute lesson share within the 180-minute module. Authored facilitation split: opening 3, explanation 7, worked profiles 6, evidence/question practice 5, check/discussion 6, observation/re-practice 3 minutes. The original Facilitator Guide attributes three hours to the whole competency: 126-page Drive copy PDF 23/printed 16, corresponding to 150-page TCI copy PDF 25/printed 16. This is manual attribution, not independent current TESDA verification. An authored 8–12-minute self-study estimate excludes the optional story and audio replay.\n\nUse the six bilingual screens, four-condition reference sheet, fictional Cards A–C below, blank question cards and official CSC links. No school transcript, pay record, accreditation certificate or other private learner document is requested.\n\n## [prepare] Prepare\n\nRead both languages, all three check rationales and the full narration accessible in Slides. Review RA 7883 section 6(d), the official 2011 CSC guidelines PDF 12–14/printed 8–10 and the currently reachable CSC BHWE summary. Distinguish the statute from implementing conditions and the teaching grouping from an official numbered checklist. Review education toward a degree, service under prior accreditation, the 20 February 1995 cutoff, continuity/full-time/voluntary/satisfactory service, and the JO/COS and payroll clarification. A contractual government appointment is not the same label as Contract of Service; CSC assesses the actual arrangement. Confirm the appropriate office/contact locally if available; otherwise teach the jurisdiction question without inventing a contact or process.\n\n## [opening] Opening\n\nRead Demi's fictional question: ‘Does accreditation or long service automatically mean BHWE and a government job?’ Invite partners to explain the difference among accreditation, CSC approval and appointment. Do not ask who has college education, salary, a service interruption or experience applying. Receive a mistaken answer calmly: ‘Let's test that explanation against the conditions.’\n\n## [steps] Steps\n\n1. Use ‘Demi's question’ to name the misconception without claiming anything about Demi's qualifications.\n2. At the preserved section-4, place four boxes: accreditation, education, qualifying service, satisfactory record. Explain that RA 7883 gives the statutory basis and CSC supplies detailed implementing conditions. Accreditation must precede qualifying service; pre-20 February 1995 service is not counted.\n3. Work Card A aloud: eight total years include five before accreditation and three while accredited. The pre-accreditation five cannot be added. The card therefore does not demonstrate five accredited years; do not turn the count into a ruling about a real person. Then work Card B: its reported facts support checking the four groups, but evidence and CSC approval still matter.\n4. Discuss Card C and ‘One label is not enough.’ Unknown continuity and the actual JO/COS arrangement need questions. Honorarium is excepted; CSC's clarification excludes meal/transport allowances from salary/compensation and distinguishes government appointments/plantilla payroll. A label or one payment is insufficient to decide the whole case. Explain first-level exceptions and that eligibility is separate from licensing and appointment.\n5. At ‘A specific question for CSC,’ pairs write one question naming the period, evidence and uncertainty. RHU/board can help locate records/contact; CSC Regional or Field Office jurisdiction follows the barangay of service. Effectivity follows the responsible Regional Office's approval. Confirm current documents/forms there; no practice application is sent.\n6. At ‘Choose a careful explanation,’ discuss all three options and rationales, then let each learner explain one card to a partner. Use the observation indicator and offer re-practice.\n\n## [expected-answers] Expected answers and supportive response\n\nCard A: ‘Only three years are described under accredited status, not eight. Check the dates and the other conditions with CSC.’ Card B: ‘Its reported five-year service and degree-related college evidence support checking the conditions, but do not prove CSC approval or appointment.’ Card C: ‘The uncertain interruption/arrangement needs CSC assessment; a JO/COS label is neither automatic qualification nor disqualification.’\n\nIf asked about a degree: at least two college years must lead toward a degree; do not replace this with an invented four-year-degree requirement. If asked about an honorarium: it is excepted in the service rule; meal/transport allowances are excluded from salary/compensation in CSC's clarification. Other arrangements need context and assessment. If asked about breaks or incomplete records, identify what is unknown and ask CSC; invent no continuity ruling. If asked whether BHWE means a job or license, explain appropriate first-level scope and exceptions, other position qualifications and separate appointment decisions. Affirm a useful question without certifying a person's eligibility.\n\n## [misconception] Misconception\n\n‘Accreditation alone is BHWE,’ ‘all earlier service counts,’ and ‘BHWE guarantees a job’ omit conditions or decisions. Point to the relevant box or timeline and ask what evidence is missing. Do not ridicule an answer, rank learners by education, or request their own records.\n\n## [practice] Fictional profile and question practice\n\nAll card service is after 20 February 1995. Card A: eight total years, first five before Local Health Board accreditation and last three while accredited; other education/service details require verification. Card B: certificate of accreditation issued before five continuous, active, full-time, voluntary and satisfactory years; only honorarium; school evidence of two college years leading to a degree; no CSC approval stated. Card C: five calendar years since accreditation, an unclear interruption and a JO/COS label; continuity, actual arrangement, education evidence and certified service remain unclear. These are authored teaching examples, not source cases or eligibility decisions.\n\nPairs select a card, explain which facts are established and uncertain, and write: ‘For this fictional record, which accredited-service period and evidence should be verified, including [uncertainty]?’ Each partner gives one strength and one next detail to check. No personal disclosure is needed. Learners may use the reference sheet and then try again with less prompting.\n\n## [answer-key] Three-choice check and full rationales\n\nThe Read/Slides check is the same assessment, discussed once. Correct option 1: count only qualifying service while already accredited, check education and all service conditions/evidence, and ask CSC a specific verification question without promising approval or a job. Card A's eight total years do not establish five accredited years. This answer respects the conditions and CSC's decision.\n\nOption 2 is incorrect: accreditation alone does not meet the education/service requirements or establish CSC application approval. It also cannot promise appointment. Option 3 is incorrect: counting all eight years improperly includes pre-accreditation service; a JO/COS label does not guarantee qualification, and BHWE is not eligibility for every government post or a guaranteed job. First-level exceptions and other position qualifications remain. Ask partners to repair each incorrect explanation using the four boxes and a bounded question.\n\n## [observe] Observe\n\nUse the single indicator aligned with the lesson objective. Kaya na: independently explains the four groups, the accredited-service count and uncertainty, and a specific CSC verification step, without promises. Kailangan pa ng practice: correct direction but needs prompts for education, service period, arrangement or evidence/contact. Hindi pa: still treats accreditation or total years as sufficient, decides from a label, or promises eligibility/appointment. Use the three observation levels in the learner’s chosen language. Online completion is separate from observed explanation and practice; a correct click alone does not establish competency.\n\n## [support] Support and re-practice\n\nSentence frame: ‘The card establishes __. It does not establish __. The service count begins __. I would ask CSC __; this is not an approval or appointment.’ Model Card A once, then let the learner explain B or C. Ask one helpful prompt, offer the reference sheet, and invite another attempt without pressure to disclose private circumstances. Re-observe the same skill with a different fictional card and record only the training observation, using established local procedures.\n\n## [sources-review] Sources and review\n\nFreshly accessed 5 October 2026: RA 7883 sections 3–4 and 6(d), https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html ; CSC 2011 full guidelines, https://www.csc.gov.ph/phocadownload/userupload/irmo/policy%20resolutions/2011/CSC%20Resolution%20No.%201101645.pdf (BHWE PDF 12–14/printed 8–10; historical evidence categories PDF 25/printed 21); official BHWE summary, https://csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility ; official 2024 corroboration, https://csc.gov.ph/barangay-health-workers-may-apply-for-eligibility-csc . Do not call the summary the complete 1999 resolution.\n\nOriginal Reference Manual 150-page Drive PDF 13/printed 5 supplies the four-condition summary. Both Facilitator Guide originals were freshly inspected: 126-page Drive PDF 23–25 and 150-page TCI PDF 25–27 correspond to printed 16–18. Original Day1 slide 25 recommends a legacy form demonstration and experience recount, not the full rule. This lesson instead uses fictional practice; no promise that lesson 1.4.4 teaches Form 101-H. Exact source hashes/version mapping and source-to-screen audit are in docs/lesson-143-source-audit.json and lesson-143-source-claim-map.json.\n\nThe recovered original 2000 MC1 PDF and E-Library text omit the detailed 1999 annex; later full 2011 guidelines support the audited provisions. Current full national IRR, target LGU procedures and independent current TESDA rules remain unestablished. Senate replacement-bill status was partly inaccessible; no enacted replacement identified is not proof of absence. Current form/fee/version/certificate-format advice is not authored here. No independent policy SME review or human listening is claimed. New 1.4.3 illustration, audio and story remain draft pending separate owner approval.\n\nOwner approved the exact reviewed package on 5 October 2026; see docs/lesson-143-owner-approval.json. Earlier draft/review wording is historical; source and listening limitations remain.\n",
+      "observation_indicators": [
+        {
+          "levels": {
+            "kaya_na_en": "Accurate conditions, accredited-service count and uncertainty, and specific CSC verification without prompts or promises.",
+            "hindi_pa_en": "Cannot yet distinguish conditions and service, decides from a label, or persists with promises of approval/appointment.",
+            "kaya_na_fil": "Tamang kondisyon, accredited-service count at uncertainty, at tiyak na CSC verification nang walang untag o pangako.",
+            "hindi_pa_fil": "Hindi pa naihihiwalay ang kondisyon at serbisyo, nagpapasya mula sa label, o nagpapatuloy ang pangako ng approval/appointment.",
+            "kailangan_practice_en": "Correct direction but needs prompts for education, service period, arrangement or evidence/contact.",
+            "kailangan_practice_fil": "Tama ang direksiyon ngunit kailangan ng untag sa edukasyon, service period, arrangement o ebidensiya/contact."
+          },
+          "not_yet_en": "Still treats accreditation, total years or a JO/COS label as sufficient, or promises BHWE/a job without conditions and verification.",
+          "not_yet_fil": "Itinuturing pa rin na sapat ang accreditation, total years o JO/COS label, o nangangako ng BHWE/trabaho nang walang kondisyon at verification.",
+          "observable_en": "Explains the four BHWE condition groups, distinguishes total service from qualifying accredited service, and forms a specific CSC question about evidence/uncertainty without promising eligibility or appointment.",
+          "observable_fil": "Naipapaliwanag ang apat na pangkat ng BHWE conditions, naihihiwalay ang kabuuang serbisyo sa qualifying accredited service, at nakabubuo ng tiyak na CSC verification question tungkol sa ebidensiya/uncertainty nang walang pangako ng eligibility o appointment.",
+          "objective_index": 0
+        }
+      ]
+    },
+    {
+      "id": "648d2168-74dd-4451-958c-e4e5d8724a17",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-accreditation",
+      "position": 3,
+      "title_fil": "Proseso ng akreditasyon",
+      "title_en": "The accreditation process",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: proseso ng akreditasyon."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: the accreditation process."
+      ],
+      "required": true,
+      "published_revision_id": "f04d4c13-5e71-4863-99ce-a5de1d376c89",
+      "created_at": "2026-09-24 23:38:00.090752+00",
+      "content_hash": "c991799838a61579434e2a052a0476b95bd6931973ec949bedf314e3196987d0",
+      "read_sections": [
+        {
+          "id": "section-5",
+          "check": {
+            "options": [
+              {
+                "en": "Documents and specific questions about status or missing requirements.",
+                "fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang."
+              },
+              {
+                "en": "A promise that no process is needed.",
+                "fil": "Pangakong hindi kailangan ang proseso."
+              }
+            ],
+            "prompt_en": "What should you bring to an accreditation follow-up?",
+            "prompt_fil": "Ano ang dapat dalhin sa follow-up sa akreditasyon?",
+            "feedback_en": "Documents and specific questions about status or missing requirements. Explain why using the lesson situation.",
+            "feedback_fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+            "correct_option_index": 0
+          },
+          "body_en": "The local health board does not simply grant accreditation on a whim — it carries a set of responsibilities under Section 5 of the RA 7883 IRR: safeguard the registration and accreditation process, evaluate applications, record decisions in a board resolution or meeting minutes, issue certificates of registration or accreditation, review and approve any benefit that would use local funds, recommend benefits and fund appropriation, provide an official copy of the BHW registry to the DOH, and monitor the service registered BHWs provide.\n\nThe local health board may also create a BHW Registration and Accreditation Committee to evaluate applications, interview applicants, recommend action to the board, and keep the BHW registry updated.",
+          "body_fil": "Hindi basta-basta pumapayag ang local health board sa akreditasyon — may hanay ng responsibilidad ito ayon sa Section 5 ng RA 7883 IRR: pangalagaan ang proseso ng rehistrasyon at akreditasyon, suriin ang mga aplikasyon, itala ang desisyon sa isang board resolution o minutes ng pulong, maglabas ng certificate of registration o accreditation, suriin at aprubahan ang bawat benepisyong gagamit ng pondong lokal, magrekomenda ng benepisyo at pondo, magbigay ng opisyal na kopya ng BHW registry sa DOH, at bantayan ang serbisyong ibinibigay ng mga rehistradong BHW.\n\nMaaari ring lumikha ang local health board ng isang BHW Registration and Accreditation Committee na susuri ng mga aplikasyon, kakapanayamin ang mga aplikante, magrerekomenda sa local health board, at mag-uupdate ng BHW registry.",
+          "asset_ids": [
+            "practice-map"
+          ],
+          "heading_en": "Who makes up the accreditation process",
+          "concept_ids": [
+            "m4.accreditation-body",
+            "m4.board-duties",
+            "m4.registration-committee"
+          ],
+          "heading_fil": "Kung sino ang bumubuo sa proseso ng akreditasyon",
+          "takeaway_en": "Accreditation isn't decided by one person alone — it runs through a system, with assigned responsibility and a registry that's kept up to date.",
+          "takeaway_fil": "Hindi iisang tao lang ang nagpapasya sa akreditasyon — may sistema ito, may itinalagang responsibilidad, at may talaang pinapanatili."
+        }
+      ],
+      "slides": [
+        {
+          "id": "slide-section-5",
+          "check": {
+            "options": [
+              {
+                "en": "Documents and specific questions about status or missing requirements.",
+                "fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang."
+              },
+              {
+                "en": "A promise that no process is needed.",
+                "fil": "Pangakong hindi kailangan ang proseso."
+              }
+            ],
+            "prompt_en": "What should you bring to an accreditation follow-up?",
+            "prompt_fil": "Ano ang dapat dalhin sa follow-up sa akreditasyon?",
+            "feedback_en": "Documents and specific questions about status or missing requirements. Explain why using the lesson situation.",
+            "feedback_fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+            "correct_option_index": 0
+          },
+          "layout": "decision",
+          "asset_ids": [
+            "practice-map"
+          ],
+          "display_en": "Local health board: review and decisions through the required process.\nRegistration/accreditation committee: supports review and registry work.\nKeep documents and clarify the next step.",
+          "heading_en": "Who makes up the accreditation process",
+          "concept_ids": [
+            "m4.accreditation-body",
+            "m4.board-duties",
+            "m4.registration-committee"
+          ],
+          "display_fil": "Local health board: pagsusuri at desisyon sa itinakdang proseso.\nRegistration/accreditation committee: tumutulong sa pagsusuri at registry.\nPanatilihin ang dokumento at alamin ang susunod na hakbang.",
+          "heading_fil": "Kung sino ang bumubuo sa proseso ng akreditasyon",
+          "narration_en": "The local health board does not simply grant accreditation on a whim — it carries a set of responsibilities under Section 5 of the RA 7883 IRR: safeguard the registration and accreditation process, evaluate applications, record decisions in a board resolution or meeting minutes, issue certificates of registration or accreditation, review and approve any benefit that would use local funds, recommend benefits and fund appropriation, provide an official copy of the BHW registry to the DOH, and monitor the service registered BHWs provide.\n\nThe local health board may also create a BHW Registration and Accreditation Committee to evaluate applications, interview applicants, recommend action to the board, and keep the BHW registry updated.",
+          "narration_fil": "Hindi basta-basta pumapayag ang local health board sa akreditasyon — may hanay ng responsibilidad ito ayon sa Section 5 ng RA 7883 IRR: pangalagaan ang proseso ng rehistrasyon at akreditasyon, suriin ang mga aplikasyon, itala ang desisyon sa isang board resolution o minutes ng pulong, maglabas ng certificate of registration o accreditation, suriin at aprubahan ang bawat benepisyong gagamit ng pondong lokal, magrekomenda ng benepisyo at pondo, magbigay ng opisyal na kopya ng BHW registry sa DOH, at bantayan ang serbisyong ibinibigay ng mga rehistradong BHW.\n\nMaaari ring lumikha ang local health board ng isang BHW Registration and Accreditation Committee na susuri ng mga aplikasyon, kakapanayamin ang mga aplikante, magrerekomenda sa local health board, at mag-uupdate ng BHW registry."
+        }
+      ],
+      "coverage": [
+        {
+          "id": "m4.accreditation-body",
+          "read_ids": [
+            "section-5"
+          ],
+          "slide_ids": [
+            "slide-section-5"
+          ],
+          "source_ids": [
+            "m4.accreditation-body-source"
+          ]
+        },
+        {
+          "id": "m4.board-duties",
+          "read_ids": [
+            "section-5"
+          ],
+          "slide_ids": [
+            "slide-section-5"
+          ],
+          "source_ids": [
+            "m4.board-duties-source"
+          ]
+        },
+        {
+          "id": "m4.registration-committee",
+          "read_ids": [
+            "section-5"
+          ],
+          "slide_ids": [
+            "slide-section-5"
+          ],
+          "source_ids": [
+            "m4.registration-committee-source"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "m4.accreditation-body-source",
+          "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+          "title": "Facilitator Guide — inherited page reference; final audit pending",
+          "pdf_pages": [
+            25
+          ]
+        },
+        {
+          "id": "m4.board-duties-source",
+          "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+          "title": "Facilitator Guide — inherited page reference; final audit pending",
+          "pdf_pages": [
+            25
+          ]
+        },
+        {
+          "id": "m4.registration-committee-source",
+          "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+          "title": "Facilitator Guide — inherited page reference; final audit pending",
+          "pdf_pages": [
+            25
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "id": "practice-map",
+          "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+          "alt_en": "Three steps: understand, verify and practice.",
+          "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+          "caption_en": "Draft discussion guide; review required.",
+          "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+          "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+          "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+          "review_status": "approved"
+        }
+      ],
+      "featured_asset_id": null,
+      "notes_fil": "## [purpose] Layunin\n\nSa pagtatapos ng maikling araling ito, kaya ng BHW na ipaliwanag na may sistema ang akreditasyon: ang local health board, na may mga responsibilidad ayon sa Section 5 ng RA 7883 IRR, at posibleng isang BHW Registration and Accreditation Committee. Kaya rin niyang sabihin kung ano ang dadalhin sa follow-up sa akreditasyon: ang kanyang mga dokumento at isang tiyak na tanong tungkol sa status o kulang na requirement.\n\n## [time-materials] Oras at kagamitan\n\n- **Oras:** mga 30 minuto sa harapang sesyon. Ito ang bahaging \"Proseso ng rehistrasyon (local health board, committee)\" sa 3 oras na plano sa gabay ng subchapter. Mga 5 minuto ang sariling pag-aaral ng aralin.\n- **Kagamitan:** ang slide ng aralin (kasama ang draft na visual na \"unawain, tiyakin, isagawa\"); walong card, bawat isa may isang responsibilidad ng local health board ayon sa aralin; manila paper at marker; kung mayroon sa inyong LGU, halimbawa ng certificate of registration o accreditation at ang pangalan ng komite o opisinang humahawak ng aplikasyon.\n\n## [prepare] Paghahanda\n\n- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.\n- Alamin sa inyong RHU o LGU: may BHW Registration and Accreditation Committee ba ang inyong local health board? Kanino dapat magtanong ang BHW tungkol sa aplikasyon? Anong dokumento ang hinihingi ng inyong LGU? Walang listahan ng dokumento o takdang panahon ang aralin. Gamitin lang ang kinumpirma ng inyong LGU. Ayon sa Facilitator Guide, puwedeng ipakita sa training ang lokal na proseso ng rehistrasyon at akreditasyon. Kung kaya, imbitahan ang taga-RHU o taga-secretariat ng local health board nang sampung minuto.\n- Saklaw ng araling ito ang **kung sino ang bahagi ng proseso ng akreditasyon at ano ang ginagawa nila**. Huwag mag-imbento ng listahan ng dokumento, tagal ng proseso, o bayad. Huwag mangako sa sinuman na maaaprubahan ang aplikasyon niya.\n\n## [opening] Pambungad\n\nItanong sa grupo: *\"Paano n'yo ipapaliwanag sa isang bagong BHW kung bakit may proseso ng akreditasyon bago siya makapagsimula?\"* Kumuha ng dalawa o tatlong sagot. Saka itanong: *\"At sino sa tingin n'yo ang nagpapasya — iisang tao, o isang grupo?\"* Isulat ang mga sagot sa manila paper at balikan ito sa hakbang 3.\n\n## [steps] Mga hakbang\n\n1. **Mga responsibilidad ng local health board (Read \"Kung sino ang bumubuo sa proseso ng akreditasyon\", unang talata; ang slide).** Basahin na galing ang mga responsibilidad na ito sa Section 5 ng RA 7883 IRR. Ipamigay ang walong card. Ipabasa nang malakas sa bawat may hawak ng card ang kanya, nang sunud-sunod.\n2. **Ano ang nag-iiwan ng tala.** Itanong: *\"Alin sa mga responsibilidad na ito ang nag-iiwan ng papel na puwede ninyong itanong sa susunod?\"* Pakinggan ang board resolution o minutes ng pulong, ang certificate of registration o accreditation, at ang BHW registry na ibinibigay sa DOH. Ito ang puwedeng balikan sa follow-up.\n3. **Hindi iisang tao.** Balikan ang mga sagot sa pambungad. Basahin ang takeaway: hindi iisang tao lang ang nagpapasya sa akreditasyon. May sistema ito, may itinalagang responsibilidad, at may talaang pinapanatili. Sabihin, gaya ng script ng module: *\"Hindi kayo nag-iisa sa paghihintay. May sistema, at may responsableng tao o komite sa likod nito.\"*\n4. **Ang komite (ikalawang talata).** Basahin na *maaaring* lumikha ang local health board ng BHW Registration and Accreditation Committee na sumusuri ng aplikasyon, kumakapanayam sa aplikante, nagrerekomenda sa board, at nag-a-update ng registry. Itanong: *\"Mayroon ba tayo nito rito? Sino ang kasapi?\"* Kung hindi mo alam, sabihin ito at isulat bilang dapat tiyakin.\n5. **Ano ang dadalhin.** Ituro ang linya sa slide na *\"Panatilihin ang dokumento at alamin ang susunod na hakbang.\"* Itanong: *\"Kung pupunta kayo para magtanong tungkol sa akreditasyon ninyo, ano ang dadalhin ninyo at ano ang itatanong?\"*\n6. **Self-check.** Ibigay ang tanong ng check (*\"Ano ang dapat dalhin sa follow-up sa akreditasyon?\"*). Hayaang mag-usap ang grupo bago ibigay ang sagot.\n\n## [expected-answers] Inaasahang sagot at paano tumugon\n\n- **\"Ang midwife (o si Kapitan) ang nagpapasya.\"** Kilalanin na madalas silang tumutulong sa lugar. Saka ituro ang mga card: *\"Ayon sa aralin, ang local health board ang sumusuri, nagtatala ng desisyon, at naglalabas ng certificate. Maaaring may tumutulong, pero ang board ang nagtatala ng desisyon.\"*\n- **\"Wala akong certificate. Hindi ba ako akreditado?\"** Huwag husgahan ang status niya. Sabihin: *\"Magandang tiyak na tanong iyan na dalhin sa local health board o sa supervisor mo: 'Ano po ang status ng akreditasyon ko, at may certificate na po ba ako?'\"*\n- **\"Anong mga dokumento ang kailangan?\"** Ibigay lang ang kinumpirma ng inyong LGU. Kung hindi mo alam, sabihin: *\"Wala ito sa aralin, at maaaring iba-iba sa bawat LGU. Alamin natin sa local health board.\"*\n- **\"Ang tagal-tagal na at walang nagsasabi sa amin.\"** Tanggapin ang inis. Sabihin: *\"Iyan mismo ang susunod na aralin: kung paano mag-follow-up nang kalmado at may tiyak na tanong.\"*\n\n## [misconception] Karaniwang maling akala\n\n**\"Nakasalalay sa pag-apruba ng iisang tao ang akreditasyon, kaya kung malapit ka sa tamang tao, makukuha mo ito.\"** Sinasabi ito ng mga tao dahil madalas hindi nila nakikita ang proseso. Huwag kontrahin ang karanasan ng sinuman. Ipakita na lang ang sistema. Ilatag ang walong card at itanong: *\"Ilan dito ang tungkol sa gusto o ayaw ng iisang tao?\"* Wala. Sumusuri ang board, itinatala ang desisyon sa resolution o minutes, naglalabas ng certificate, at nag-iingat ng registry. Sabihin: *\"Dahil nakasulat, puwede ninyo itong itanong.\"*\n\n## [practice] Gawaing pagsasanay\n\nMagkapares, tig-2 minuto, saka magpalit:\n\n- Gaganap na bagong BHW ang isa at sasabihin: *\"Ilang buwan na mula nang magpasa ako ng papeles. Kanino ba ako magtatanong? Nasa midwife lang ba iyon?\"*\n- Ipapaliwanag ng isa sa sariling salita: (1) kung sino ang humahawak ng akreditasyon, ang local health board at posibleng ang registration and accreditation committee nito; (2) isang talaang umiiral, gaya ng board resolution o minutes, ang certificate, o ang registry; (3) ang unang hakbang, ang pumunta na may kopya ng mga dokumento at may tiyak na tanong tungkol sa status o kulang na requirement; at (4) kung ano ang dapat tiyakin sa lugar, gaya ng kung aling opisina o komite ang pupuntahan.\n\nDalawa o tatlong pares ang magpepresenta. Magbibigay ang grupo ng isang kalakasan at isang mungkahi.\n\n## [answer-key] Susi sa self-check\n\nIsa ang check sa araling ito. Lumalabas ito pagkatapos ng Read section na \"Kung sino ang bumubuo sa proseso ng akreditasyon\" at muli sa slide ng seksyong iyon. Iisang check ito, kaya isang beses lang itong sasagutin dito.\n\n- **\"Ano ang dapat dalhin sa follow-up sa akreditasyon?\"** → **Mga dokumento at tiyak na tanong tungkol sa status o kulang.** Sinusuri ng board ang mga aplikasyon at itinatala ang desisyon, kaya mas epektibo ang follow-up kapag may maipapakita kang papeles at may tiyak kang tanong. Sabi ng slide: panatilihin ang dokumento at alamin ang susunod na hakbang.\n  - Mali ang *\"Pangakong hindi kailangan ang proseso.\"* May prosesong inilalarawan ang aralin na dapat pangalagaan ng local health board: pagsusuri ng aplikasyon, pagtatala ng desisyon, at paglalabas ng certificate. Walang makapangangakong lalaktawan ito.\n\n## [observe] Ano ang oobserbahan\n\nGamitin ang observation indicator ng aralin habang ginagawa ang gawaing pagsasanay. Ang indicator: *\"Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor.\"*\n\n- **Kaya na:** nang walang untag, naipapaliwanag ng BHW na ang local health board, at posibleng ang komite nito, ang humahawak ng akreditasyon. Nababanggit niyang unang hakbang ang pagdadala ng dokumento at tiyak na tanong tungkol sa status, at nasasabi kung ano ang dapat tiyakin sa lugar.\n- **Kailangan pa ng practice:** tama ang direksiyon ng BHW, halimbawa \"itanong sa health board\", pero kailangan pa ng untag mo bago niya mabanggit ang dokumento, ang tiyak na tanong, o kung aling opisina ang titiyakin.\n- **Hindi pa:** sinasabi ng BHW na nasa iisang tao ang lahat, iminumungkahing pumunta nang walang dokumento para lang magtanong ng \"kailan,\" o nangangako sa bagong BHW na darating ang akreditasyon niya.\n\nHiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.\n\n## [support] Kung kailangan ng dagdag na suporta\n\n- Paliitin ang gawain. Ipasabi muna ang unang hakbang lang: ano ang dadalhin at isang tiyak na tanong. Idagdag ang \"sino ang humahawak\" kapag kaya na niya iyon.\n- Magbigay ng pangungusap na pupunan: *\"Ang humahawak ng akreditasyon ay ang ___. Dadalhin ko ang ___ at itatanong ko, 'Ano po ang status ng ___, at may kulang pa po ba?'\"*\n- Ipares sila sa BHW na **Kaya na** at hayaan silang sumunod.\n- Obserbahan muli sa susunod na sesyon gamit ang parehong sitwasyon ng bagong BHW. Isa pang pagkakataon ang role-play sa aralin tungkol sa follow-up para makita ito.\n\n## [sources-review] Sanggunian at tala sa pagrepaso\n\n- Sanggunian ng aralin: Facilitator Guide PDF 25, para sa nag-a-accredit, sa mga tungkulin ng board, at sa registration and accreditation committee (minanang page reference; nakabinbin pa ang huling audit).\n- Dagdag na batayan: sinasabi rin ng Facilitator Guide PDF 25 na isa sa mga requirement para sa civil service eligibility ang patunay ng akreditasyon. Sinasabi ng PDF 23 na puwedeng ipakita sa training ang lokal na proseso ng rehistrasyon at akreditasyon, at iminumungkahi nitong basahin ang Registration (Rule III) at Accreditation (Rule IV) ng IRR. Inilalarawan ng BHW Reference Manual PDF 16 ang local health board bilang namamahala sa rehistrasyon at akreditasyon ng BHW at nagsisiguradong protektado ang BHW sa politikal na impluwensya (ginamit lang sa itaas bilang batayan sa maling akala). Binabanggit ng README ng source material na \"register with the local health board\" lang ang sinasabi ng Day 1 deck.\n- Oras: 3 oras ang itinatakda ng TESDA Training Regulations para sa *Develop Life and Career Decisions* (Facilitator Guide PDF 23). Ang 30 minuto sa itaas ay bahagi ng araling ito sa talahanayan ng module. Panatilihin ang kabuuang oras ng competency sa gabay ng subchapter. Huwag ulitin ang buong oras sa bawat maikling aralin. Para sa self-study ang hating ito, hindi bagong training-hour allocation.\n- Iba-iba sa bawat LGU ang lokal na dokumento, komite, at takdang panahon. Tiyakin ito sa inyong RHU o LGU. Pangkalahatang indicator ang observation indicator ng aralin at pare-pareho ito sa lahat ng aralin sa module. Draft pa ang visual na \"unawain, tiyakin, isagawa\" at hindi pa aprubado ng may-ari.\n- Kailangan pang repasuhin bago ilathala: kasalukuyang legal at policy wording, bilingual parity, at observation indicator.\n\nDraft para sa pagrepaso.\n",
+      "notes_en": "## [purpose] Purpose\n\nBy the end of this short lesson the BHW can explain that accreditation runs through a system: the local health board, with responsibilities under Section 5 of the RA 7883 IRR, and possibly a BHW Registration and Accreditation Committee. They can also say what to bring to an accreditation follow-up: their documents and a specific question about status or missing requirements.\n\n## [time-materials] Time and materials\n\n- **Time:** about 30 minutes in a face-to-face session. This is \"The registration process (local health board, committee)\" part of the 3-hour plan in the subchapter guide. Self-study of the lesson alone takes about 5 minutes.\n- **Materials:** the lesson slide (with the draft \"understand, verify, practice\" visual); eight cards, each with one of the local health board's responsibilities as the lesson lists them; manila paper and markers; if your LGU has them, a sample certificate of registration or accreditation and the name of the committee or office that handles applications.\n\n## [prepare] Prepare\n\n- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.\n- Ask your RHU or LGU: does your local health board have a BHW Registration and Accreditation Committee? Who should BHWs ask about their application? What documents does your LGU require? The lesson does not list documents or timelines. Use only what your LGU confirms. The Facilitator Guide says local registration and accreditation processes may be presented during training. If you can, invite someone from the RHU or the local health board secretariat for ten minutes.\n- This lesson covers **who is part of the accreditation process and what they do**. Do not invent document lists, processing times or fees. Do not promise anyone that their application will be approved.\n\n## [opening] Opening\n\nAsk the group: *\"How would you explain to a new BHW why there's an accreditation process before they can start?\"* Take two or three answers. Then ask: *\"And who do you think decides — one person, or a group?\"* Write the answers on manila paper and come back to them at step 3.\n\n## [steps] Steps\n\n1. **The local health board's responsibilities (Read \"Who makes up the accreditation process\", first paragraph; the slide).** Read that these responsibilities come from Section 5 of the RA 7883 IRR. Hand out the eight cards. Ask each card-holder to read theirs aloud in order.\n2. **What leaves a record.** Ask: *\"Which of these responsibilities leaves a paper you could ask about later?\"* Listen for the board resolution or meeting minutes, the certificate of registration or accreditation, and the BHW registry given to the DOH. These are what a follow-up can point to.\n3. **Not one person.** Go back to the opening answers. Read the takeaway: accreditation isn't decided by one person alone. It runs through a system, with assigned responsibility and a registry that's kept up to date. Say, as in the module script: *\"You aren't waiting alone. There's a system, and a responsible person or committee behind it.\"*\n4. **The committee (second paragraph).** Read that the local health board *may* create a BHW Registration and Accreditation Committee, which evaluates applications, interviews applicants, recommends action to the board and keeps the registry updated. Ask: *\"Do we have one here? Who is in it?\"* If you don't know, say so and write it down as something to confirm.\n5. **What to bring.** Point to the slide line *\"Keep documents and clarify the next step.\"* Ask: *\"If you went to ask about your accreditation, what would you bring and what would you ask?\"*\n6. **Self-check.** Give the check question (*\"What should you bring to an accreditation follow-up?\"*). Let the group discuss before you reveal the answer.\n\n## [expected-answers] Expected answers and how to respond\n\n- **\"The midwife (or the captain) is the one who decides.\"** Acknowledge that these people often help locally. Then point to the cards: *\"The lesson says the local health board evaluates, records the decision and issues the certificate. Others may help, but the decision is recorded by the board.\"*\n- **\"I don't have a certificate. Am I not accredited?\"** Do not judge their status. Say: *\"That is a good specific question to bring to the local health board or your supervisor: 'What is the status of my accreditation, and do I have a certificate?'\"*\n- **\"What documents do we need?\"** Give only what your LGU has confirmed. If you don't know, say: *\"The lesson doesn't list them, and it can differ by LGU. Let's find out from the local health board.\"*\n- **\"It's taking forever and no one tells us anything.\"** Accept the frustration. Say: *\"That's exactly what the next lesson is about: how to follow up calmly and specifically.\"*\n\n## [misconception] Common misconception\n\n**\"Accreditation depends on one person's approval, so if you're on good terms with the right person you'll get it.\"** People say this because the process is often invisible to them. Do not challenge anyone's experience. Show the system instead. Lay out the eight cards and ask: *\"How many of these are about one person's feelings?\"* None of them are. The board evaluates, records the decision in a resolution or minutes, issues a certificate and keeps a registry. Say: *\"Because it's written down, you can ask about it.\"*\n\n## [practice] Practice activity\n\nPairs, 2 minutes each, then swap:\n\n- One BHW plays a new BHW who says: *\"I submitted my papers months ago. Who do I even ask? Is it just up to the midwife?\"*\n- The other explains in their own words: (1) who handles accreditation, the local health board and possibly its registration and accreditation committee; (2) one record that exists, such as the board resolution or minutes, the certificate or the registry; (3) the first action, which is to go with copies of their documents and a specific question about status or missing requirements; and (4) what they should confirm locally, such as which office or committee to go to.\n\nTwo or three pairs present. The group gives one strength and one suggestion.\n\n## [answer-key] Self-check answer key\n\nThis lesson has one check. It appears after the Read section \"Who makes up the accreditation process\" and again on that section's slide. It is the same check, so it is covered once here.\n\n- **\"What should you bring to an accreditation follow-up?\"** → **Documents and specific questions about status or missing requirements.** The board evaluates applications and records its decisions, so a follow-up works best when you can show your papers and ask a specific question. The slide says: keep documents and clarify the next step.\n  - *\"A promise that no process is needed\"* is wrong. The lesson describes a process the local health board must safeguard: evaluating applications, recording decisions and issuing certificates. No one can promise to skip it.\n\n## [observe] What to observe\n\nUse the lesson's observation indicator during the practice activity. The indicator is: *\"Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.\"*\n\n- **Kaya na:** without prompting, the BHW explains that the local health board, and possibly its committee, handles accreditation. They name bringing documents and a specific status question as the first action, and say what to confirm locally.\n- **Kailangan pa ng practice:** the BHW points in the right direction, for example \"ask the health board\", but needs your prompting to mention the documents, a specific question, or which office to confirm.\n- **Hindi pa:** the BHW says it all depends on one person, suggests going without documents just to \"ask when\", or promises the new BHW their accreditation will come through.\n\nObserving this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.\n\n## [support] If a BHW needs more support\n\n- Narrow the task. Ask them only for the first action: what to bring and one specific question. Add the \"who handles it\" part once that is solid.\n- Give a sentence frame: *\"Accreditation is handled by ___. I'll bring ___ and ask, 'What is the status of ___, and is anything missing?'\"*\n- Pair them with a BHW rated **Kaya na** and let them go second.\n- Re-observe at the next session using the same new-BHW scenario. The follow-up lesson's role-play gives another chance to see it.\n\n## [sources-review] Sources and review notes\n\n- Lesson sources: Facilitator Guide PDF 25, covering the accreditation body, the board's duties and the registration and accreditation committee (inherited page references; final audit pending).\n- Background: the Facilitator Guide PDF 25 also says proof of accreditation is one of the requirements for civil service eligibility. PDF 23 says local registration and accreditation processes may be presented during training, and suggests reading the IRR's Registration (Rule III) and Accreditation (Rule IV). The BHW Reference Manual PDF 16 describes the local health board as managing BHW registration and accreditation and protecting BHWs from political influence (used above only as background for the misconception). The source-material README notes that the Day 1 deck says only \"register with the local health board\".\n- Timing: TESDA Training Regulations set 3 hours for *Develop Life and Career Decisions* (Facilitator Guide PDF 23). The 30 minutes above is this lesson's share of the module table. Keep the total competency time in the subchapter guide. Do not repeat that full allocation for each short lesson. This split supports self-study and does not create a new training-hour allocation.\n- Local documents, committees and timelines vary by LGU. Confirm them with your RHU or LGU. The lesson's observation indicator is the generic one shared by every lesson in this module. The \"understand, verify, practice\" visual is a draft and is not owner-approved.\n- Still to review before publication: current legal and policy wording, bilingual parity, and the observation indicator.\n\nDraft for review.\n",
+      "observation_indicators": [
+        {
+          "levels": {
+            "kaya_na_en": "Accurate explanation and action without prompting.",
+            "hindi_pa_en": "Explanation or action is not yet appropriate.",
+            "kaya_na_fil": "Tamang paliwanag at hakbang, nang walang untag.",
+            "hindi_pa_fil": "Hindi pa angkop ang paliwanag o hakbang.",
+            "kailangan_practice_en": "Correct direction but needs guidance on details.",
+            "kailangan_practice_fil": "Tamang direksiyon ngunit kailangan ng gabay sa detalye."
+          },
+          "not_yet_en": "Cannot yet explain the point or makes promises without checking conditions.",
+          "not_yet_fil": "Hindi pa maipaliwanag ang punto o nangangako nang hindi tinitiyak ang kondisyon.",
+          "observable_en": "Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.",
+          "observable_fil": "Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor.",
+          "objective_index": 0
+        }
+      ]
+    },
+    {
+      "id": "1a2029ac-c29c-471f-b492-9307be567959",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-follow-up",
+      "position": 4,
+      "title_fil": "Maayos na follow-up",
+      "title_en": "Following up constructively",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: maayos na follow-up."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: following up constructively."
+      ],
+      "required": true,
+      "published_revision_id": "406c7c1f-b375-420d-bd8a-5bdc6555f406",
+      "created_at": "2026-09-24 23:38:00.681775+00",
+      "content_hash": "17d5d300481cb12648e8d32e142c869079a26793619b03a2dd8c5d1c32a892e1",
+      "read_sections": null,
+      "slides": null,
+      "coverage": null,
+      "sources": null,
+      "assets": null,
+      "featured_asset_id": null,
+      "notes_fil": null,
+      "notes_en": null,
+      "observation_indicators": null
+    },
+    {
+      "id": "83ae2910-d953-4ce1-a2da-c47dd838920a",
+      "module_id": "ffcfba33-3690-47c9-bebd-a6a5240ec39f",
+      "lesson_key": "bhs-improvement",
+      "position": 4,
+      "title_fil": "Isang mungkahing maisasagawa",
+      "title_en": "One workable suggestion",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: isang mungkahing maisasagawa."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: one workable suggestion."
+      ],
+      "required": true,
+      "published_revision_id": "11e382fe-5872-4b63-9f85-9a78e32aeb9c",
+      "created_at": "2026-09-24 23:37:57.710415+00",
+      "content_hash": "b3b856d651b4f7bf9bbc17d786d9f88dfde0b6d26ba6f7e0b62288248444f7bc",
+      "read_sections": null,
+      "slides": null,
+      "coverage": null,
+      "sources": null,
+      "assets": null,
+      "featured_asset_id": null,
+      "notes_fil": null,
+      "notes_en": null,
+      "observation_indicators": null
+    }
+  ],
+  "original_target_leaf_file_hashes": {
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/competency.json": "944ffdce811b43e32fe2be6ceb5cdff3e0f026a887adaf34d3fde89c6541807f",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/facilitator.en.md": "562210669c3c1a79cb3a63cf286eb34b05c84580dcd3f9c01ffd1c4e2f353c62",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/facilitator.fil.md": "37d669273f8b547d056bc4e0161b84fc1be3118f8e8b354e553412989cada5c6",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/lesson.json": "e837ab51d4bb300fbd2b885dee375ef75b237cc5d6bea49bcb55b3f18d1a0ef2",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/read.en.md": "8e6280ad6ebf607dfa44c8af2e1fc6cc44158e8737f3102897e9983ec4061ae2",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/read.fil.md": "a7619382dae4f8533631b33c136d4c4c8c7084505378a132bb59015818cd02a7",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/slides.json": "b1b697a69f001cd01e3556f3a2253d19d6855f84ce94016e95537a93fccc4a8a"
+  },
+  "sibling_lesson_file_hashes": {
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/competency.json": "3c011ca4606e442f61b8617dd604ca3f5a787d8a560f9bdad37b2937f1977a6e",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/facilitator.en.md": "7d881e4c9d370abbd0e5d8e1938564438fbc4475b3a84d1f5b3cbbee1445916b",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/facilitator.fil.md": "4c7e5af6df95cc1b10d54ce12de0f5d38d990aa778d30168255bd81a100c8ad5",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/lesson.json": "7629c0c12a85bda071455fbe964533e836a5e2875c0d71b221ce06906effb818",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/read.en.md": "f64325c4c22a64a20e3d0bfa0213b9fecacfbafadac47509dd6d2883eb29e4af",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/read.fil.md": "8b4d702bb796d76fbccd892fdbceed6d6b73b577d14d1d0a7a91c50bc8a1ee34",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/slides.json": "bdd3ea20e568714af20f51c8d8d486c905ff91e99c403270729e58ec03e8339c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/competency.json": "61647aad460b8a42853b3a5cc0a2da3f5044e85d5e1107219f81d8210766ccd6",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/facilitator.en.md": "393ec90f2473e33ed7c778d551b2cb0f4059d389daeedd9d4d988bd49af6875a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/facilitator.fil.md": "620fffbc1a4de04715b9a1bd5a512258966107be8dca3b2b74b12b8852eabab5",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/lesson.json": "427483092d270c23e35eee2d4f1c881b59c50fac73db12624b5ee6b266f0786a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/read.en.md": "d26aa67c56f75ddb290529ed0d509d949009cf95eb82a550dae8525bc1305bd7",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/read.fil.md": "aa03cac819f7538db18759fc5ebdf392bf174cb78b75d992a625b828be8f1c9b",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/slides.json": "deb2a30c9842d1a40c3dbd9a2c2109a8178211e2aefc499c72157787e4509ddf",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/competency.json": "944ffdce811b43e32fe2be6ceb5cdff3e0f026a887adaf34d3fde89c6541807f",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/facilitator.en.md": "67a902eca094faac3ef715c700bc9e3d990abb595c68ba49ba8c2ff26241e685",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/facilitator.fil.md": "848decb0b85ffed9ab77368124a777d62674c427ed3efeb9c816a680417aceea",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/lesson.json": "5ff594173039e2e3f15439bca638c42bda649168419ca5da029a1495ec105f1c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/read.en.md": "7f56dc65d75095dd061236f9c7380fe71edb963517795b6f9893d2953be6138a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/read.fil.md": "d5e0f5283555b1e9d2da5d2e47e80fc8c043bde8f2e6fb85101d22673da90a7e",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/slides.json": "6a2d087dc84066f0b550ab3ddb7d3b7e2b35fa1d38eb592a0293ac41c490448c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/competency.json": "2fb3e47c5e807535e81e7898a7f19cacdaf033238ad3c1c18f7620574b1a6b74",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/facilitator.en.md": "56180038e7a7db02ed95e3e8f70b5e6238c64c08e48fe8ca8d4d15551c81a33b",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/facilitator.fil.md": "df67cbd1bf38b3f71a35abaffd699156d3d7ad57cd5391fb533ae72ed95f092a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/lesson.json": "30afeb3f8f56fd9e9ed305c82cdae44203589eaa934ce9ac116dade6f9fc388c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/read.en.md": "3fa5ec88ae058524fd105f90ce80f3937daed8670bba069c3f7242fbf7dd29e3",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/read.fil.md": "1c8e1129711aa57605c95aab5a90a58883bff18d13ea177918ba3a6e252e042d",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/slides.json": "25c0ec966778e8fc528a3bdea75ca60660e6f73be4c7f085367bf9ee15c5562f"
+  },
+  "sibling_lesson_git_blob_hashes": {
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/competency.json": "4bd1fd476d26acdf9c9d31648cb932175e42c6c6b131eee2b65e940d503c3b42",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/facilitator.en.md": "594b0ddc9a2d76d232307875a11aa50d6385eeecf4fb4cf6659c3110544270aa",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/facilitator.fil.md": "2b8cad1f31a7e4088e23c8018f2285f16ab460fa81b58fa2ebe257ac4c7c6c1c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/lesson.json": "69dc06f5b78420837afd2f2c2f056fcb97522ba9edde9a03859873dac94af53e",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/read.en.md": "94e6a2f9e33ecd03b2e574829ea9f0c530330d2606ece1b27d28c0c11aa5c184",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/read.fil.md": "96b09bedda2cb49352134252aa998472682235a750bd98cc59aa0de3698b9741",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/slides.json": "adcccb95e18e10f0c99eb904e1ef57aa032e2a5b393a8aaf0589813d90cd28a7",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/competency.json": "336ea19b4df0a47bb1128d574d8f73107e935d68add7431fd6266041b7339a0f",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/facilitator.en.md": "3a229e29e88df0902ad82a38238f4ba3d25ee918a153ac7af1b2b0dddcb5f2f9",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/facilitator.fil.md": "5bd9f28a636d4b64c81d33ee1164d6e70c46f14014feff2227be1401fcb89e7b",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/lesson.json": "fd8f47dfbda6b555c0d2d607561b37558128d69a63c41299fae23eb96cf8f17c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/read.en.md": "cb959ebac2dfa4d324a9a100df8988d96e56806e0a75214381397db2350bb494",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/read.fil.md": "824cd19f2511785b758a729c37ea15800c3f10724ed6bd25201cf3083f9fcf55",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/slides.json": "f1590732d2d09a7a6288dd4d7b968e15ad5d36d67aad330baf14a86d5e0f261b",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/competency.json": "5c1d834b33d8eaada9ec2d090c1f7d973faad9944d5b93ed544feaf30cc1565a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/facilitator.en.md": "1309ec6391122f78314fb1db039eaa9aee9eba73d333fdf5bcd0b4604718e5f6",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/facilitator.fil.md": "c2e3404b781d1266ecde09c9d8362d2beefda9cfe1a6c95355cca94d64ccc997",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/lesson.json": "d54320a14f8853369e7bcb5bd271000c2f15343e57cb0b4b3f663416bc46062e",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/read.en.md": "348209460b77776fd64ed356345600f906576de9c6775d2d6a8930fd442a5912",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/read.fil.md": "7277733a3c29bfb8b5e0d4490b0eee292d66696b9a29d5565a1e1810215a9966",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/slides.json": "96bed4ed41f212477dc2e7e2083f0cba8d43a9cc8eaad4e7f49f95ce7fb65a2f",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/competency.json": "82ea9e2cd95ca6a8846c7b99be2454a8a3df3c0895705f6b29a596df3d1ba38b",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/facilitator.en.md": "1cd5d75f7726f081e1b3d5a1dd68228eb08c88a7f64897550b2ba41955da49b9",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/facilitator.fil.md": "ea45b63590078cab144fff4633599f082b2db0802d31baf74d1200540f62ec99",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/lesson.json": "cd57b666f5139ca7e5c5ce7cadcd2f6adcec6446731f91762cbe927f477fcb72",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/read.en.md": "039243a518d180a521c67906aeece18f98d3ca0bd521fb93a46eeb4bd172ff84",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/read.fil.md": "67212fc51c929466569663232a4ea750ca856b0d92c6d62c61c458c75e1fc93d",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/slides.json": "3d730880985f8e5ec74a4509cc3c8cd6e6e8374abc0d0082a185e44268697cfd"
+  },
+  "approved141_142_143_media": [
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/explain-and-verify.en.07116e94c57f.mp3",
+      "sha256": "a36f29d23d8161ef5df14b7bda9efd5dfaf297709265f62275d3f65d131ffa74",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/explain-and-verify.fil.32263ce0f4d2.mp3",
+      "sha256": "2f8e088151da5bd51dc91608f579385946f7de2b1db5ca443609a74be7092f23",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/legal-basis-check.en.57efeac9a42a.mp3",
+      "sha256": "b433bb9d23cac14a991d32266d2fb6ce1d341d6c91ea014c432bf9e438ff7b6f",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/legal-basis-check.fil.f687a5ccdf0c.mp3",
+      "sha256": "9f4416b566f7a2637657752d9584372bc5b59b45fbecfeee568a0e4668c51e32",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/roles-and-authority.en.f428f1493157.mp3",
+      "sha256": "99914b3d07b049b3f56d1991ac8027912aafa88d1365e774383111ed24d29a30",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/roles-and-authority.fil.c27036056879.mp3",
+      "sha256": "57adf8686399c9dac98053e8eb6faddc9571a945c9582603db5ff4df0ef239b3",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/section-1.en.f486f984b89b.mp3",
+      "sha256": "afc2cd1a89b58311a42c735d1928656cf1f98199d0d7ffb20789e0d1809a2d3b",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/section-1.fil.7bc2e38e5766.mp3",
+      "sha256": "a6c15a9c2b128aebce4e09feaed0c168dfa24586ac9f6bd89d958118711182dc",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/section-2.en.8994e4123c83.mp3",
+      "sha256": "d4ed81cdc5dced6c5198d358fb637d149bb87f0ba2a635d842c7bcfb71912b99",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/section-2.fil.7150e4dff4eb.mp3",
+      "sha256": "6a35f7c8ff2b70f73beafc5bfe4e2b1d589e689e0611eda1b16bb34f13003774",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/status-and-other-processes.en.20a2ddfb5585.mp3",
+      "sha256": "de1c05a7e7bff66d2492673cea017976a8f844284ea45ec3a4b2dafa5e32a490",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-legal-role/status-and-other-processes.fil.0f2c3de2c317.mp3",
+      "sha256": "e8b3c883b1b3135cdce1fc13ade6287068799ccde1672108a39d58ac9b6166b8",
+      "lesson": 141
+    },
+    {
+      "path": "/training/bhw-1-4/demi-legal-basis-032a985f9c33.png",
+      "sha256": "032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2",
+      "lesson": 141
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-5cf40e107789-poster.jpg",
+      "sha256": "5cf40e107789fbcfec55b0fa90458e175093017b4ce2ba6e0529b6a989e35b88",
+      "lesson": 141
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-41631ff8f4fd.mp4",
+      "sha256": "41631ff8f4fdc2b3f3108bf9153f9b98c3af2ea5dc7cb6ab62cafecdb7d367fa",
+      "lesson": 141
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-ad668b8cda77.vtt",
+      "sha256": "ad668b8cda77033cde29d0e83f043bd7ff5ae6e6374b5aff0da0a77e70de6247",
+      "lesson": 141
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-66fe85800653.mp4",
+      "sha256": "66fe858006535aff9fb53da30b8278db51cfbf77f4ef0cfc83aec22841d8e027",
+      "lesson": 141
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-a6dae5eba731.vtt",
+      "sha256": "a6dae5eba731a534b70907c383b431b778b811e49d70063a86128244bad10be3",
+      "lesson": 141
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-8bfa7ba565fc-poster.jpg",
+      "sha256": "8bfa7ba565fc7f7247b83ae088bb55bcbee54f5012261d69bdda9c9cb9c9773c",
+      "lesson": 141
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.en.b914c725592c.mp3",
+      "sha256": "00856e25238b12ae6d0d3f6f229359fb3523df9542dc47a1f341e25137203fcc",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.fil.27ba61e0b912.mp3",
+      "sha256": "75d80f048872d194dcf2ec56a404296ee24eef408f1d6e23fba6661d2b8bad85",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.en.247d74cb5442.mp3",
+      "sha256": "27d3169fdde2c0f3f054986d2501298e415b253446240c4bc1ab7ce3e370d5c9",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.fil.5d42dd79acc1.mp3",
+      "sha256": "55dfcc76d4b82e2a736553f86b392f9b51ddec8f0cf430652dfdf9823c8d98af",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefits-question.en.a64e75cf9fee.mp3",
+      "sha256": "8b63d4e0b64ea568e41c2a88521c4f24ca59dd79ce71676cb509ceeac6f5d80c",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/benefits-question.fil.c6d00b3bfd9d.mp3",
+      "sha256": "72227bdbd3465fd3369165e706f8ac7dd9d099cfae0c6395acf77c32c7c29256",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.en.07bda07be88f.mp3",
+      "sha256": "57a93243a65bfe921017cfa421db80883317fafd87dd4308621e0ea88f93c9a4",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.fil.6fb8f0acff78.mp3",
+      "sha256": "0199e16bd55897daf884534bc564ce3fe2f1312d5f2edd1b1ae9a519a69468ca",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.en.7447399efe22.mp3",
+      "sha256": "db9ba7d7168e873297e16a501476c7b55ceb505634583704c80a0a0f647b7d60",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.fil.9f9fcafea029.mp3",
+      "sha256": "c59b1784d1d33d977c5c040ce3e112b64b70e7ee6892aef23f723d06fa3c95f6",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/section-3.en.2a1065f7d96c.mp3",
+      "sha256": "129e18c1e368a528ccc25d20d811f20954f53c40df96ae855d096da4ffb88e2f",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-benefits/section-3.fil.ab61c1531cf7.mp3",
+      "sha256": "9d2a3d1e09b89be35048781c6b3ac2dc69ac249d9bfa3119967b82303c769c3c",
+      "lesson": 142
+    },
+    {
+      "path": "/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png",
+      "sha256": "2f0be96fe3d80d36c4a1dc9f4d5ff2442731f05c5f66eda999109fd7eac23a1b",
+      "lesson": 142
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+      "sha256": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de",
+      "lesson": 142
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-be0ad0574ae9.mp4",
+      "sha256": "be0ad0574ae952d3c72277b55466103f2ad5ded1dcab9154d093e49565497a21",
+      "lesson": 142
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-f55ea0ba5050.vtt",
+      "sha256": "f55ea0ba5050bf0bc9b1b565612aad6f48ff3e0f412a8e8c6d64a76b71e58c51",
+      "lesson": 142
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-en-6a207010c1d6.mp4",
+      "sha256": "6a207010c1d6bcaef641f2c835b41fbfc291e83c574b5e0f186ba85cd5ef551e",
+      "lesson": 142
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-en-fb1e0a5db943.vtt",
+      "sha256": "fb1e0a5db94351fe032c1001124c47b488542014c0f555c0bd0983b4067c6ebc",
+      "lesson": 142
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-en-dbcf24125f91-poster.jpg",
+      "sha256": "dbcf24125f91bd4a2b49e41af2fe89e76aaa538d0f5fc16066075087d37d8bbf",
+      "lesson": 142
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.en.03c8abe269ad.mp3",
+      "sha256": "6dcf16b91634ec231b5bf2c84a517d1c4ff13dd5cc6095b7274b0088c6a48373",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.fil.6a7358ba3748.mp3",
+      "sha256": "75762cb30c08452efe7d483b3b6ad3cd051134896da62092fff3198e936a309b",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-question.en.ccebf4e77f16.mp3",
+      "sha256": "91535175a0afeb33348c14ded73dee1abdc2932607f9b18dbb5690a8436fed59",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-question.fil.c1bc7e73a262.mp3",
+      "sha256": "362fb276e59091c0d40c74289c4337025b3d44da287a64de088e2a0ead358487",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-verification.en.f0d27a0c7131.mp3",
+      "sha256": "21c3ab0b13f10322b77483eddc693ccfa9ad98e97bc044c634fafce354400535",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-verification.fil.6672b25a27c6.mp3",
+      "sha256": "896b97ab205fec27a3c86de9b02ab94f6c80e73fd08133f31460d82c98d8bfa0",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/evidence-and-scope.en.eb3242833134.mp3",
+      "sha256": "b2450bb259910d576c990deab3f5e79d3db0454751b3dc2e134183fd1f5e9d06",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/evidence-and-scope.fil.5f0b5df3be44.mp3",
+      "sha256": "ba53fc181fa90e2d25aff354f106795119a0b69d8ffb2f8432b4809a6c48da63",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/section-4.en.26782f2dfc22.mp3",
+      "sha256": "7e949e3510358d3fe451882c3c75074ecd0bdb065ee2603426ea11582b3e4ee0",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/section-4.fil.2dcc5bce3636.mp3",
+      "sha256": "b80ff04f41f97891d7654c40527bc3895df4c054262d8cfc545a421a4aa9a65b",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/service-count.en.77dec67ecd61.mp3",
+      "sha256": "6c74d9f51ce93006c4de1d55a14f92aa3780df8b5771340b9928b29c91a98836",
+      "lesson": 143
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-eligibility/service-count.fil.df122545f599.mp3",
+      "sha256": "fb1e541b3bb46ca041b7a0c9ff48bb292c6cf747da47d5301afa1297d0fc0457",
+      "lesson": 143
+    },
+    {
+      "path": "/training/bhw-1-4/demi-bhwe-discussion-cce21d6a934d.png",
+      "sha256": "cce21d6a934d7e0e729ef9961e4ba2bad52d7db3080e3b5a7b1087c3a3765d4b",
+      "lesson": 143
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7ae68197f709-poster.jpg",
+      "sha256": "7ae68197f709ae2bb6069d88ac2e5ae9ed966e97bc3de8b457f8ee7219f630c5",
+      "lesson": 143
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7963ff6962eb.mp4",
+      "sha256": "7963ff6962eb79f667ef35f751190ed8907f5a726666ed589ebf6b526c2d08c0",
+      "lesson": 143
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-0ddc480c6e6e.vtt",
+      "sha256": "0ddc480c6e6e621631261875b279ba14e0c88ed0e2dd9704d080a5ea393472ed",
+      "lesson": 143
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-5b27d9fc14de.mp4",
+      "sha256": "5b27d9fc14deafc0f04419aae367cfdda324c9dca473123df92b7955f156e817",
+      "lesson": 143
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-315abb2958c2.vtt",
+      "sha256": "315abb2958c25d6def99d8024c53cf8c56bf8b8e105f78dbd51f3e624f9003db",
+      "lesson": 143
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-95f794f724a5-poster.jpg",
+      "sha256": "95f794f724a5cdba695274140493aa0a723a4f6ff8a976c2038c7578eaed7c2d",
+      "lesson": 143
+    }
+  ],
+  "approved_review_packages": [
+    {
+      "lesson": "143",
+      "name": "lesson-1.4.3-demi-review.html",
+      "sha256": "acb7af77f7fcbed93fd74e4a2db2ef57c765eac7f928d2b4fc35c0409981457d"
+    },
+    {
+      "lesson": "143",
+      "name": "lesson-1.4.3-demi-review.zip",
+      "sha256": "ec18df9250a798e052f60e042fa559aac6562ef543145d0935a32d6338c956ea"
+    },
+    {
+      "lesson": "142",
+      "name": "lesson-1.4.2-demi-review.html",
+      "sha256": "27dc33d23ad80a5689698b9db3e1b1080ae41eb2ba624b4b1f0b48f796f4d34f"
+    },
+    {
+      "lesson": "142",
+      "name": "lesson-1.4.2-demi-review.zip",
+      "sha256": "88ea26881f6b00d5e812dfaa6f6107915ed3af39e65aaa569283e00dc65fa6a9"
+    }
+  ],
+  "shared_non_target_qa_hashes": {
+    "d1m4-legal-basis": "349a1036f15414096e6c10487669ee45ac0a42a0f783698042654ad5f280c64e",
+    "d1m4-benefits": "ca91aae7fe34dda48a555c03f985dccd62bd7473753a69f72fff3fcbdbd01a35",
+    "d1m4-bhwe": "7e115d7e0bd3f56837e7cfc095377c722d1b92c87d0d57669eefd1c99188307b",
+    "d1m4-follow-up": "4bc18debb37583bfecf01d0da9fa8e12b4c4cc7e2946fcd249d483eb2d538fe6"
+  },
+  "shared_all_activity_hashes": {
+    "bhwe-experience": "c0b8917c38702312de387ceb44176c1526685b433e7754483fecf5c1373952f3",
+    "form-and-follow-up": "90c407065a7898ce504e39a4f339b4bca9f271588cf2b4006bc607b4b801237f"
+  },
+  "cross_platform_note": "Windows byte hashes retained separately from original Git blob bytes. Protected files must not be rewritten for line ending normalization."
+}

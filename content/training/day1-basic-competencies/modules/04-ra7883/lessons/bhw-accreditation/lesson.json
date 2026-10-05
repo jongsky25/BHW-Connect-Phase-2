@@ -14,6 +14,18 @@
   },
   "sections": [
     {
+      "id": "accreditation-question",
+      "concept_ids": [
+        "m4.accreditation-body"
+      ],
+      "asset_ids": [
+        "demi-accreditation-question"
+      ],
+      "takeaway_fil": "Unawain ang tungkulin at tiyakin ang pasya; huwag ipagpalagay ang status.",
+      "takeaway_en": "Understand the roles and verify the decision; do not assume status.",
+      "check": null
+    },
+    {
       "id": "section-5",
       "concept_ids": [
         "m4.accreditation-body",
@@ -21,26 +33,85 @@
         "m4.registration-committee"
       ],
       "asset_ids": [
-        "practice-map"
+        "demi-accreditation-question"
       ],
-      "takeaway_fil": "Hindi iisang tao lang ang nagpapasya sa akreditasyon — may sistema ito, may itinalagang responsibilidad, at may talaang pinapanatili.",
-      "takeaway_en": "Accreditation isn't decided by one person alone — it runs through a system, with assigned responsibility and a registry that's kept up to date.",
+      "takeaway_fil": "May pananagutan ang board; pantulong ang komite at may opisyal na tala ang pasya.",
+      "takeaway_en": "The board is responsible; the committee assists and decisions have official records.",
+      "check": null
+    },
+    {
+      "id": "roles-and-records",
+      "concept_ids": [
+        "m4.accreditation-body",
+        "m4.board-duties",
+        "m4.registration-committee"
+      ],
+      "asset_ids": [
+        "demi-accreditation-question"
+      ],
+      "takeaway_fil": "Tiyakin kung sino ang tumutulong at saan nakatala ang pasya ng board.",
+      "takeaway_en": "Verify who assists and where the board’s decision is recorded.",
+      "check": null
+    },
+    {
+      "id": "fictional-process-cards",
+      "concept_ids": [
+        "m4.accreditation-body",
+        "m4.board-duties",
+        "m4.registration-committee"
+      ],
+      "asset_ids": [
+        "demi-accreditation-question"
+      ],
+      "takeaway_fil": "Ihiwalay ang alam na detalye sa kailangang tiyakin; walang hulang approval.",
+      "takeaway_en": "Separate known facts from what needs verification; do not guess approval.",
+      "check": null
+    },
+    {
+      "id": "accreditation-follow-up",
+      "concept_ids": [
+        "m4.accreditation-body",
+        "m4.board-duties"
+      ],
+      "asset_ids": [
+        "demi-accreditation-question"
+      ],
+      "takeaway_fil": "Iugnay ang tanong sa proseso, alam na detalye at opisyal na tala.",
+      "takeaway_en": "Connect the question to the process, known fact and official record.",
+      "check": null
+    },
+    {
+      "id": "accreditation-application-check",
+      "concept_ids": [
+        "m4.accreditation-body",
+        "m4.board-duties",
+        "m4.registration-committee"
+      ],
+      "asset_ids": [
+        "demi-accreditation-question"
+      ],
+      "takeaway_fil": "Ipaliwanag ang mga papel, tukuyin ang kulang at tiyakin ang opisyal na pasya.",
+      "takeaway_en": "Explain the roles, identify the gap and verify the official decision.",
       "check": {
-        "prompt_fil": "Ano ang dapat dalhin sa follow-up sa akreditasyon?",
-        "prompt_en": "What should you bring to an accreditation follow-up?",
+        "prompt_fil": "Sa Card B, may rekomendasyon ng komite ngunit walang natiyak na opisyal na pasya. Ano ang pinakamainam na paliwanag at susunod na tanong ni Demi?",
+        "prompt_en": "Card B has a committee recommendation but no verified official decision. What is Demi’s best explanation and next question?",
         "options": [
           {
-            "fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang.",
-            "en": "Documents and specific questions about status or missing requirements."
+            "fil": "Pantulong ang rekomendasyon. Tiyakin sa tamang lokal na contact kung may pasya na ang board, saan ito makukumpirma at ano ang susunod na hakbang.",
+            "en": "The recommendation is a supporting step. Ask the proper local contact whether the board has decided, where it can be verified and what comes next."
           },
           {
-            "fil": "Pangakong hindi kailangan ang proseso.",
-            "en": "A promise that no process is needed."
+            "fil": "Automatic nang accredited dahil nagrekomenda ang komite; hindi na kailangang tiyakin ang pasya o tala ng board.",
+            "en": "The committee recommendation automatically grants accreditation; the board’s decision or record need not be checked."
+          },
+          {
+            "fil": "Sapat na ang training certificate, BHWE o job title bilang kapalit ng rehistrasyon at akreditasyon.",
+            "en": "A training certificate, BHWE or job title is enough to replace registration and accreditation."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Documents and specific questions about status or missing requirements. Explain why using the lesson situation."
+        "feedback_fil": "Una: tama. Magkaiba ang rekomendasyon ng komite at opisyal na pasya ng local health board. Hindi pa natiyak ang pasya at tala sa card; tinutugunan ng tanong ang kulang na impormasyon at susunod na hakbang nang walang pag-aangkin ng status. Ikalawa: mali. Hindi automatic approval ang pagsusuri o rekomendasyon lamang. Hindi nito pinatutunayang umaksiyon ang board, nagtala ng pasya o naglabas ng naaangkop na sertipiko. Ikatlo: mali. Magkakaiba ang gamit ng training certificate, BHWE, job title, rehistrasyon at akreditasyon. Hindi kapalit ng accreditation process ang mga label o credential na iyon at hindi nila pinatutunayan ang opisyal na pasya sa card. Hindi rin nagbibigay ng akreditasyon ang online lesson completion.",
+        "feedback_en": "First: correct. A committee recommendation and the local health board’s official decision are different. The decision and record remain unverified in the card; the question addresses the missing information and next step without asserting status. Second: incorrect. Screening or recommendation alone is not automatic approval. It does not establish that the board acted, recorded a decision or issued the appropriate certificate. Third: incorrect. Training certificates, BHWE, job titles, registration and accreditation serve different purposes. Those labels or credentials cannot replace the accreditation process or establish the card’s official decision. Completing the online lesson does not grant accreditation either."
       }
     }
   ],
@@ -48,22 +119,41 @@
     {
       "id": "m4.accreditation-body",
       "read_ids": [
-        "section-5"
+        "accreditation-question",
+        "section-5",
+        "roles-and-records",
+        "fictional-process-cards",
+        "accreditation-follow-up",
+        "accreditation-application-check"
       ],
       "slide_ids": [
-        "slide-section-5"
+        "slide-accreditation-question",
+        "slide-section-5",
+        "slide-roles-and-records",
+        "slide-fictional-process-cards",
+        "slide-accreditation-follow-up",
+        "slide-accreditation-application-check"
       ],
       "source_ids": [
-        "m4.accreditation-body-source"
+        "m4.accreditation-body-source",
+        "m4.health-office-source"
       ]
     },
     {
       "id": "m4.board-duties",
       "read_ids": [
-        "section-5"
+        "section-5",
+        "roles-and-records",
+        "fictional-process-cards",
+        "accreditation-follow-up",
+        "accreditation-application-check"
       ],
       "slide_ids": [
-        "slide-section-5"
+        "slide-section-5",
+        "slide-roles-and-records",
+        "slide-fictional-process-cards",
+        "slide-accreditation-follow-up",
+        "slide-accreditation-application-check"
       ],
       "source_ids": [
         "m4.board-duties-source"
@@ -72,53 +162,137 @@
     {
       "id": "m4.registration-committee",
       "read_ids": [
-        "section-5"
+        "section-5",
+        "roles-and-records",
+        "fictional-process-cards",
+        "accreditation-application-check"
       ],
       "slide_ids": [
-        "slide-section-5"
+        "slide-section-5",
+        "slide-roles-and-records",
+        "slide-fictional-process-cards",
+        "slide-accreditation-application-check"
       ],
       "source_ids": [
-        "m4.registration-committee-source"
+        "m4.registration-committee-source",
+        "m4.committee-guidance-source",
+        "m4.guide-version-source"
       ]
     }
   ],
   "sources": [
     {
       "id": "m4.accreditation-body-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
-      "pdf_pages": [
-        25
-      ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "title": "Republic Act No.7883, approved 20 February 1995, sections 3–4: accreditation authority, registration and appropriate proof; official PCW text freshly checked 5 October 2026",
+      "url": "https://pcw.gov.ph/republic-act-7883-barangay-health-workers-benefits-and-incentives-act-of-1995/"
     },
     {
       "id": "m4.board-duties-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "Signed DILG–DOH JMC No.2023-001, Retention and Continued Service of Barangay Health Workers,24 August 2023, VI.D.1–8; PDF 5–6/printed 5–6; all 8 pages visually inspected 5 October 2026",
       "pdf_pages": [
-        25
+        5,
+        6
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "url": "https://www.dilg.gov.ph/PDF_File/issuances/joint_circulars/dilg-joincircular-2023829_8a3dec8214.pdf"
     },
     {
       "id": "m4.registration-committee-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "BHW Reference Manual Facilitator Guide, original 126-page Drive version, PDF 25/printed 18: board/committee training summary; visually inspected; not complete national IRR",
       "pdf_pages": [
         25
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "url": "https://drive.google.com/file/d/1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W/view"
+    },
+    {
+      "id": "m4.committee-guidance-source",
+      "title": "DILG–DOH JMC No.2023-001 III.C and V.C; PDF 2–3/printed 2–3: committee may be created, encouraged creation, board responsibility if absent/pending; verified 5 October 2026",
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "url": "https://www.dilg.gov.ph/PDF_File/issuances/joint_circulars/dilg-joincircular-2023829_8a3dec8214.pdf"
+    },
+    {
+      "id": "m4.health-office-source",
+      "title": "DILG–DOH JMC No.2023-001 III.A, IV.B and VI.G; PDF 2,6–7/printed 2,6–7: accreditation and health-office/RHU assistance; verified 5 October 2026",
+      "pdf_pages": [
+        2,
+        6,
+        7
+      ],
+      "url": "https://www.dilg.gov.ph/PDF_File/issuances/joint_circulars/dilg-joincircular-2023829_8a3dec8214.pdf"
+    },
+    {
+      "id": "m4.guide-version-source",
+      "title": "BHW Reference Manual 2022 Facilitator Guide,150-page TCI version PDF 27/printed 18; visually matches original Drive guide PDF 25/printed 18; version comparison only",
+      "pdf_pages": [
+        27
+      ],
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf"
+    },
+    {
+      "id": "m4.competency-time-source",
+      "title": "Official TESDA Barangay Health Services NC II, Revision 01 promulgated 11 January 2019, unit 400311213; PDF 19–20/printed 15–16 and PDF 86–87/printed 82–83: three hours for whole competency, not lesson share; verified 5 October 2026",
+      "pdf_pages": [
+        19,
+        20,
+        86,
+        87
+      ],
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "demi-accreditation-question",
+      "path": "/training/bhw-1-4/demi-accreditation-question-b2dfcb212dff.png",
+      "content_hash": "b2dfcb212dffe176b22ca911dd2085668c078065cb44057911e0706ed3d4cc54",
+      "alt_fil": "Nagtatanong si Demi sa RHU discussion table gamit ang blankong folder at process cards.",
+      "alt_en": "Demi asks a question at an RHU discussion table using a blank folder and process cards.",
+      "caption_fil": "Kathang-isip na talakayan: papel, kulang na impormasyon at opisyal na pasya.",
+      "caption_en": "Fictional discussion: roles, missing information and the official decision.",
+      "provenance": "Original built-in image_gen.imagegen scene, 5 October 2026; approved1.4.1 Demi identity input SHA256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. Exact prompt: Use case: illustration-story. Create a genuinely NEW original landscape 16:9 educational scene for BHW Connect lesson 1.4.4, Demi and the accreditation process. Input Image 1 is ONLY the approved 1.4.1 identity and visual style reference. Demi is the adult Filipina on the LEFT in that reference, with medium-brown skin, the same recognizable face, eyes and nose, short wavy dark bob, and a plain teal collared blouse. Preserve her fictional identity closely, but create a distinct new scene, camera framing, poses and environment. Scene: a quiet, modest Philippine rural health unit consultation corner. A wider camera shows Demi seated at the LEFT end of a simple discussion table, looking thoughtfully toward a supportive adult Filipina staff member on the RIGHT in a plain pale terracotta blouse. Demi holds one edge of an open, entirely blank manila folder resting on the table, and gently gestures with her other hand while asking a question. The staff member points at two separate blank cream process cards with one hand, with her other hand relaxed on the table. This illustrates preparing a question about the responsible office and the official decision record; it does not depict approval or certify anyone. A plain mint wall, modest window, simple shelf and small unlettered bulletin board create a NEW clinic setting; no old framed village picture. Exactly two main participants, no other people or human pictures. Match the reference's warm, natural, softly rendered editorial realism, credible Philippine adult faces, natural proportions and clean textures. Generous breathing room: the entire heads, faces, shoulders, all four hands, folder and cards must remain within at least 12 percent safe margins on every side, suitable for object-fit contain on phones. Pull the camera back; no cropped hair or fingertips. Blank folder and blank cards only. No words, numbers, seals, badges, logos, watermarks, credential/certificate/form text, private records, approval stamp, appointment promise or official status claim. Natural anatomy with no extra fingers, hands or limbs. Calm, respectful and welcoming atmosphere. Demi remains the focal participant on the left.. No model identifier returned. New asset remains draft pending separate1.4.4 owner approval.",
+      "review_status": "draft"
+    },
+    {
+      "id": "bhw-accreditation-story",
+      "alt_fil": "Kuwentong may salaysay: ipinaliliwanag ni Demi ang papel ng board at komite at nagtatanong tungkol sa opisyal na tala ng pasya.",
+      "alt_en": "Narrated story: Demi distinguishes board and committee roles and asks about the official decision record.",
+      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson 1.4.4; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. New media are draft; no owner or independent policy SME approval.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-4/bhw-accreditation-gemini-fil-eb6f171aa690.mp4",
+          "content_hash": "eb6f171aa690693afca8f79fb2c598e545cdf75576a7e9a771e55b9b307d94b2",
+          "duration_s": 65,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-accreditation-gemini-fil-45f0c89b709e.vtt",
+            "content_hash": "45f0c89b709ef09d0e634dc7975a2c592df5831dbe332a6a6237d0e742b427f5"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-accreditation-gemini-fil-d079df44be22-poster.jpg",
+            "content_hash": "d079df44be224faf42b472a2cbebfa90140975c79219d7428237e289a9ddf3b5"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-4/bhw-accreditation-gemini-en-49d2fff98ed8.mp4",
+          "content_hash": "49d2fff98ed817715e434757189c4552c0ff291cf644c8fe210b883b3fecd581",
+          "duration_s": 59,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-accreditation-gemini-en-516365accd4a.vtt",
+            "content_hash": "516365accd4a224504e644b77977fb7a56fbf7346f95f6d94ac70f5e26dd97e9"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-accreditation-gemini-en-a5f7be96fd89-poster.jpg",
+            "content_hash": "a5f7be96fd8949ba45265828316f88e1a56bca434d1a2fe5733bbb3cc5ddec48"
+          }
+        }
+      },
+      "path": "/training/bhw-1-4/bhw-accreditation-gemini-fil-d079df44be22-poster.jpg",
+      "content_hash": "d079df44be224faf42b472a2cbebfa90140975c79219d7428237e289a9ddf3b5"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-accreditation-story"
 }
