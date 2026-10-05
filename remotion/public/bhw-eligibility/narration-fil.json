@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural conversational Filipino (Tagalog) as a warm, expressive Philippine community health trainer. Give Demi’s question curious rising intonation; slow at accreditation, degree-related education, qualifying continuous full-time voluntary service and satisfactory record. Make total versus accredited service, the conditional JO/COS rule and CSC verification clear through gentle pitch, emphasis and pace changes. Keep every negation and condition audible. Maintain exactly one consistent adult female Kore narrator timbre from first word to last, including headings, quotations and takeaway; no male voice acting or character voices. Pronounce Demi as DEH-mee and initialisms as individual letters. Say RA as letters and 7883 as seven thousand eight hundred eighty-three. Finish every syllable and word ending, with natural clause pauses; no fillers, clipped words, added connectors or repeated starts. Read the exact authored words, without translation or a promise of eligibility, license or appointment.",
+  "durationSeconds": 75.807,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "May BHWE at trabaho na ba dahil accredited? Tanong ni Demi ito, hindi patunay ng kaniyang qualifications.",
+      "start_ms": 0,
+      "end_ms": 8840
+    },
+    {
+      "zone": "conditions",
+      "index": 1,
+      "text": "Apat na pangkat: akreditasyon, edukasyon tungo sa degree, limang qualifying years ng voluntary, continuous at full-time service, at satisfactory record. May detalyadong CSC conditions.",
+      "start_ms": 9140,
+      "end_ms": 25340
+    },
+    {
+      "zone": "service-count",
+      "index": 2,
+      "text": "Sa fictional Card A, walong total years ngunit tatlo lamang habang accredited. Hindi idinadagdag ang pre-accreditation service. Huwag gawing approval ang practice card.",
+      "start_ms": 25640,
+      "end_ms": 39960
+    },
+    {
+      "zone": "arrangement",
+      "index": 3,
+      "text": "Maaaring kwalipikado pa rin ang JO/COS worker; hindi sapat ang label. Ihiwalay ang honorarium at allowances sa salary, at itanong ang aktuwal na arrangement sa CSC.",
+      "start_ms": 40260,
+      "end_ms": 52260
+    },
+    {
+      "zone": "verification",
+      "index": 4,
+      "text": "Tanong ni Demi: aling accredited-service period at education at service evidence ang dapat tiyakin? Sa CSC office na may sakop sa barangay ng serbisyo magtanong.",
+      "start_ms": 52560,
+      "end_ms": 64000
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Ipaliwanag ang kondisyon, saka tiyakin sa CSC. May first-level exceptions ang BHWE; hindi ito license o garantisadong appointment. Magsanay, huwag mangako.",
+      "start_ms": 64300,
+      "end_ms": 75740
+    }
+  ],
+  "audio_sha256": "2c778e02d52a6a9cd772593d9ea37e017eba6346ad4a916f43cf240ae40d27ff"
+}

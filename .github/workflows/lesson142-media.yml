@@ -2,6 +2,11 @@ name: Lesson 1.4.2 draft Gemini media
 
 on:
   workflow_dispatch:
+    inputs:
+      lesson143_review_only:
+        description: "Review committed lesson 1.4.3 audio excerpts without synthesis"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -11,6 +16,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  draft-media143:
+    if: github.ref == 'refs/heads/codex/lesson-143-demi-proposal'
+    uses: ./.github/workflows/lesson143-media.yml
+    secrets: inherit
+    with:
+      review_only: ${{ inputs.lesson143_review_only || false }}
   draft-media:
     if: github.ref == 'refs/heads/codex/lesson-142-demi-proposal'
     runs-on: ubuntu-latest

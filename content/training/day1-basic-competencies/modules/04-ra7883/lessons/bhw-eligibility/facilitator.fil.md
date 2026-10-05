@@ -1,95 +1,66 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na sabihin ang apat na kondisyon ng BHW Eligibility (BHWE) sa Civil Service at ipaliwanag na hindi ito pareho sa akreditasyon. Kapag binigyan ng sitwasyon ng isang BHW, kaya niyang sabihin kung aling kondisyon ang mukhang natugunan na at alin ang hindi pa, at na sa CSC at sa kaukulang tanggapan tinitiyak ang mga requirement.
+Suportahan ang hindi binagong objective: ‘Maipaliwanag at mailapat sa isang sitwasyon: pag-unawa sa bhwe.’ Ipaliliwanag ang apat na pangkat ng kondisyon, ihihiwalay ang kabuuang serbisyo sa qualifying accredited service, at bubuo ng tiyak na CSC verification question nang walang pangako ng eligibility o appointment. Kathang-isip si Demi at lahat ng profile card. Pag-unawa sa kondisyon ang aralin; hindi ito paghatol sa learner o pagsumite ng application.
 
-## [time-materials] Oras at kagamitan
+## [time-materials] Oras at materyales
 
-- **Oras:** mga 30 minuto sa harapang sesyon. Ito ang bahaging "BHW Eligibility (BHWE) sa Civil Service" sa 3 oras na plano sa gabay ng subchapter. Mga 5 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** ang slide ng aralin; manila paper na nakasulat ang apat na kondisyon sa apat na kahon; isang pribadong checklist para sa bawat BHW na may parehong apat na kondisyon; ang limang profile card para sa pagsasanay (tingnan ang Gawaing pagsasanay); kung mayroon, printout ng BHWE page ng CSC. Nakalista ito sa Facilitator Guide sa http://www.csc.gov.ph/barangay-health-worker-eligibility-bhwe.html. Tiyaking gumagana pa ang link bago i-print.
+Panatilihin ang kasalukuyang 30-minutong bahagi sa 180-minutong module. Authored na hati: opening 3, paliwanag 7, worked profiles 6, evidence/question practice 5, check/talakayan 6, observation/re-practice 3 minuto. Ayon sa orihinal na Facilitator Guide, tatlong oras ang buong competency: 126-page Drive copy PDF 23/printed 16, katumbas ng150-page TCI copy PDF 25/printed 16. Attribution ito sa manual, hindi hiwalay na verification ng kasalukuyang TESDA rules. Authored estimate ang 8–12 minutong self-study; hindi kasama ang optional story at audio replay.
+
+Gamitin ang anim na bilingual screen, four-condition reference sheet, kathang-isip na Cards A–C sa ibaba, blankong question cards at opisyal na CSC links. Walang hihinging transcript, pay record, accreditation certificate o ibang pribadong dokumento ng learner.
 
 ## [prepare] Paghahanda
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Kabisaduhin ang apat na kondisyon ayon mismo sa aralin: akreditado ng local health board; nakatapos ng minimum na dalawang (2) taon sa kolehiyo tungo sa isang degree; aktibo at boluntaryong naglilingkod nang tuloy-tuloy at full time sa loob ng limang (5) taon o higit pa bilang accredited BHW; at may satisfactory service bilang accredited BHW sa komunidad.
-- Alamin kung paano binibilang ang limang taon (CSC Resolution No. 99-2845): serbisyo lamang mula nang maakreditado ang BHW; kung walang bayad maliban sa honorarium sa buong panahon; walang binibilang bago ang 20 Pebrero 1995. Maaari pa ring mag-qualify ang BHW na naka-job order o contract of service.
-- Alamin sa inyong RHU o LGU kung aling opisina ang tumutulong sa mga BHW na mag-apply ng BHWE at kung saan ang pinakamalapit na tanggapan ng CSC. Ihanda ito.
-- Saklaw ng araling ito ang **mga hinihingi ng BHWE at ang pagkakaiba nito sa akreditasyon**. Sa aralin tungkol sa follow-up ipapakita ang pagpuno ng CSC Form 101-H, hindi rito. Huwag sabihin sa sinumang BHW na kwalipikado siya o hindi. Sila ang susuri sa sarili, at ang CSC ang magkukumpirma. Personal na bagay ang pag-aaral at taon ng serbisyo. Panatilihing pribado ang mga checklist.
+Basahin ang parehong wika, lahat ng tatlong check rationale at full narration na mabubuksan sa Slides. Balikan ang RA 7883 section 6(d), opisyal na2011 CSC guidelines PDF 12–14/printed 8–10 at kasalukuyang naaabot na CSC BHWE summary. Ihiwalay ang batas sa implementing conditions at ang teaching grouping sa opisyal na numbered checklist. Balikan ang degree-related college education, serbisyo habang accredited na, cutoff na20 Pebrero 1995, continuity/full-time/voluntary/satisfactory service, at JO/COS at payroll clarification. Magkaiba ang contractual government appointment at Contract of Service arrangement; aktuwal na detalye ang sinusuri ng CSC. Tiyakin ang angkop na local contact kung available; kung wala, ituro ang jurisdiction question nang walang imbentong contact o proseso.
 
-## [opening] Pambungad
+## [opening] Panimula
 
-Itanong sa grupo: *"May nakapag-apply na ba rito ng BHWE, o may kilala kayong BHW na nag-apply? Ano ang nangyari?"* Kung mayroon, hayaan siyang magkuwento nang maikli. Kung wala, itanong na lang: *"Pareho ba ang akreditasyong natanggap n'yo mula sa local health board at ang civil service eligibility? Magtaas ng kamay kung sa tingin n'yo ay oo."* Huwag munang ibigay ang sagot.
+Basahin ang kathang-isip na tanong ni Demi: ‘Kapag accredited o matagal nang BHW, may BHWE at trabaho na ba agad?’ Ipapaliwanag sa magkapareha ang pagkakaiba ng akreditasyon, CSC approval at appointment. Huwag itanong kung sino ang may college education, salary, interruption o karanasan sa application. Mahinahong tumugon sa maling sagot: ‘Subukan natin ang paliwanag gamit ang mga kondisyon.’
 
 ## [steps] Mga hakbang
 
-1. **Ang apat na kondisyon (Read "Ang BHW Eligibility (BHWE) sa Civil Service", unang talata; ang slide).** Basahin nang dahan-dahan ang apat na kondisyon at isulat ang bawat isa sa sariling kahon sa manila paper. Itanong: *"Alin sa apat ang sa tingin n'yo ay madalas kulang sa mga BHW?"*
-2. **Paano binibilang ang limang taon (ikalawang talata).** Isulat ang tatlong tala sa ilalim ng kahon ng limang taon: *mula nang maakreditado*, *honorarium lang*, *full time*. Itanong: *"Kung walong taon nang naglilingkod ang isang BHW pero tatlong taon pa lang siyang akreditado, ilang taon ang bibilangin?"* Pakinggan: tatlo. Idagdag na maaari pa ring mag-qualify ang BHW na naka-job order o contract of service.
-3. **Tahimik na pagsusuri sa sarili.** Ipamigay ang mga pribadong checklist. Ipamarka sa bawat BHW nang tahimik ang bawat kondisyon para sa sarili: "oo," "hindi pa," o "hindi sigurado." Sabihin nang malinaw: *"Hindi ko ito ipapakita o ipapabasa."*
-4. **Hindi pareho sa akreditasyon (ikatlong talata).** Basahin: *"Hindi ito parehong bagay sa pangkalahatang akreditasyon — mas mataas ang hinihingi nito."* Itanong: *"Ano ang hinihingi ng BHWE bukod sa akreditasyon?"* Pakinggan: dalawang taon sa kolehiyo, limang taon ng tuloy-tuloy at aktibong serbisyo, at satisfactory service. Isa lang sa apat ang akreditasyon, hindi lahat.
-5. **Saan titiyakin.** Ituro ang linya sa slide: *"Tiyakin sa CSC ang dokumento at lahat ng kondisyon."* Itanong: *"Kung 'hindi sigurado' ang minarkahan n'yo sa anumang kondisyon, saan kayo pupunta para tiyakin?"*
-6. **Self-check.** Ibigay ang tanong ng check (*"Saan titiyakin ang BHWE requirements?"*). Hayaang mag-usap ang grupo bago ibigay ang sagot.
+1. Gamitin ang ‘Tanong ni Demi’ upang tukuyin ang misconception nang hindi ipinapalagay ang kaniyang qualifications.
+2. Sa pinanatiling section-4, maglagay ng apat na kahon: akreditasyon, edukasyon, qualifying service, satisfactory record. Ipaliwanag na RA 7883 ang statutory basis at CSC ang may detalyadong implementing conditions. Dapat accredited na bago ang qualifying service; hindi binibilang ang serbisyo bago20 Pebrero 1995.
+3. Ipaliwanag nang malakas ang Card A: sa walong kabuuang taon, lima ang bago accreditation at tatlo ang habang accredited. Hindi maidaragdag ang unang lima. Hindi ipinapakita ng card ang limang accredited years; huwag itong gawing ruling tungkol sa tunay na tao. Sa Card B, may batayan ang mga nakasaad na facts para suriin ang apat na pangkat, ngunit kailangan pa rin ang ebidensiya at CSC approval.
+4. Talakayin ang Card C at ‘Hindi sapat ang isang label.’ Kailangan ng tanong tungkol sa unclear continuity at aktuwal na JO/COS arrangement. Excepted ang honorarium; hindi kasama sa salary/compensation ang meal/transport allowances sa paglilinaw ng CSC, at hiwalay ang government appointment/plantilla payroll. Hindi sapat ang label o isang bayad upang magpasya sa buong kaso. Ipaliwanag ang first-level exceptions at hiwalay na licensing at appointment.
+5. Sa ‘Isang tiyak na tanong sa CSC,’ magsusulat ang magkapareha ng tanong na may panahon, ebidensiya at uncertainty. Tumutulong ang RHU/board sa records/contact; sakop ng CSC Regional o Field Office ang barangay ng serbisyo. Approval ng kaukulang Regional Office ang batayan ng effectivity. Tiyakin doon ang kasalukuyang documents/forms; walang isusumiteng practice application.
+6. Sa ‘Piliin ang maingat na paliwanag,’ talakayin ang lahat ng options at rationales, saka ipapaliwanag sa kapareha ang isang card. Gamitin ang observation indicator at mag-alok ng re-practice.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Inaasahang sagot at mahinahong tugon
 
-- **"Kailangan ba ng college degree?"** Ang sabi ng aralin, minimum na dalawang taon sa kolehiyo. Walang nakasulat na four-year degree. Basahin muli ang kondisyon sa halip na dagdagan ito.
-- **"Higit limang taon na ako, pero huminto ako nang ilang panahon."** Huwag ikaw ang magpasya. Sabihin: *"'Tuloy-tuloy' ang sabi ng aralin. Kung pasok ang pagtigil mo, iyan mismo ang dapat tiyakin sa CSC."*
-- **"Akreditado na ako, kaya may eligibility na ako."** Tumugon nang mahinahon: *"Ang akreditasyon ang una sa apat na kondisyon. Mas marami pa ang hinihingi ng BHWE."* Ituro ang tatlo pang kahon.
-- **"Hindi ako nakapag-kolehiyo, kaya hindi ito para sa akin."** Tanggapin ito nang may paggalang. Sabihin: *"Isa lang ang BHWE sa ilang benepisyo. Mahalaga pa rin ang akreditasyon at rehistrasyon mo para sa iba pang napag-usapan natin."* Huwag nang pahabain ito sa harap ng grupo.
-- **"May honorarium ako. Ibig bang sabihin hindi na ako boluntaryo?"** Hindi. Ang sabi ng aralin, walang sahod o ibang bayad *maliban* sa honorarium. Kung may iba pa siyang natatanggap, halimbawa sahod mula sa ibang posisyon sa gobyerno, ang CSC ang susuri roon.
-- **"Naka-job order ako sa munisipyo. Puwede pa ba akong mag-apply?"** Ang sabi ng aralin, maaari pa ring mag-qualify ang BHW na naka-job order o contract of service. Tiyakin ang detalye sa CSC.
-- **"Ilang taon na akong naglilingkod bago pa ako naakreditado."** Ang mga taon lamang mula nang maakreditado ang binibilang. Tulungan siyang magbilang mula sa petsa ng kanyang akreditasyon, saka tiyakin sa CSC.
+Card A: ‘Tatlong taon lamang ang nakasaad na nasa accredited status, hindi walo. Tiyakin sa CSC ang petsa at ibang kondisyon.’ Card B: ‘May batayan ang nakasaad na five-year service at degree-related school evidence para suriin ang kondisyon, ngunit hindi nito pinatutunayan ang CSC approval o appointment.’ Card C: ‘Kailangan ng CSC assessment sa unclear interruption/arrangement; hindi automatic qualification o disqualification ang JO/COS label.’
 
-## [misconception] Karaniwang maling akala
+Kung degree ang tanong: hindi bababa sa dalawang college years tungo sa degree; huwag palitan ng imbentong four-year-degree requirement. Kung honorarium: excepted ito sa service rule; hindi kasama sa salary/compensation ang meal/transport allowances sa paglilinaw ng CSC. Kailangan ng context at assessment sa ibang arrangement. Sa break o kulang na record, tukuyin ang hindi alam at magtanong sa CSC; huwag mag-imbento ng continuity ruling. Sa trabaho o license, ipaliwanag ang naaangkop na first-level scope/exceptions, iba pang qualifications ng posisyon at hiwalay na appointment. Kilalanin ang mabuting tanong nang hindi nagce-certify ng eligibility.
 
-**"Kapag akreditado na ako ng local health board, may civil service eligibility na ako."** Madaling mapagkamalan ito, kasi parehong may kinalaman ang local health board at parehong nasa RA 7883. Itama ito nang walang itinuturong tao. Pagtabi-tabihin ang apat na kahon at kulayan lang ang unang kahon ("akreditado"). Itanong sa grupo kung ano pa ang kulang. Sabihin: *"Ang akreditasyon ang nagbubukas ng pinto. Tatlo pa ang hinihingi ng BHWE bukod dito."*
+## [misconception] Maling akala
 
-## [practice] Gawaing pagsasanay
+‘Accreditation lang ay BHWE na,’ ‘lahat ng naunang serbisyo ay counted,’ at ‘garantisado ang trabaho dahil sa BHWE’ ay may inaalis na kondisyon o decision. Ituro ang angkop na kahon o timeline at itanong kung anong ebidensiya ang kulang. Huwag kutyain, rangguhan ayon sa edukasyon, o hingin ang sariling records ng learner.
 
-Maghanda ng limang profile card. Gawa-gawang halimbawa lang ang mga ito para sa pagsasanay, hindi totoong tao:
+## [practice] Kathang-isip na profile at question practice
 
-- **Card A:** akreditado; nakatapos ng dalawang taon sa kolehiyo; anim na taon ng tuloy-tuloy at aktibong serbisyo; satisfactory ang record.
-- **Card B:** akreditado; nakatapos ng high school; pitong taon ng tuloy-tuloy na serbisyo; satisfactory ang record.
-- **Card C:** akreditado; nakatapos ng dalawang taon sa kolehiyo; tatlong taon ng serbisyo; satisfactory ang record.
-- **Card D:** akreditado; nakatapos ng dalawang taon sa kolehiyo; limang taon ng serbisyo pero may isang taong pagtigil sa gitna; satisfactory ang record.
-- **Card E:** nakatapos ng dalawang taon sa kolehiyo; walong taon ng tuloy-tuloy at full-time na serbisyo, pero tatlong taon pa lang na akreditado ng local health board; honorarium lang ang natatanggap; satisfactory ang record.
+Lahat ng card service ay matapos20 Pebrero 1995. Card A: walong kabuuang taon, unang lima bago Local Health Board accreditation at huling tatlo habang accredited; dapat tiyakin ang ibang education/service details. Card B: certificate of accreditation bago ang limang tuloy-tuloy, aktibo, full-time, boluntaryo at satisfactory na taon; honorarium lamang; school evidence para sa dalawang college years tungo sa degree; walang nakasaad na CSC approval. Card C: limang calendar years mula accreditation, unclear interruption at JO/COS label; hindi malinaw ang continuity, aktuwal na arrangement, education evidence at certified service. Authored teaching examples ang mga ito, hindi source cases o eligibility decisions.
 
-Magkapares, bubunot ang bawat BHW ng card at ipapaliwanag sa kapareha sa loob ng 1 minuto: aling kondisyon ang natugunan ng BHW sa card, alin ang hindi pa o hindi malinaw, at ang unang hakbang, ang tiyakin ang dokumento at lahat ng kondisyon sa CSC at sa kaukulang tanggapan. Dalawa o tatlong pares ang magpepresenta. Magbibigay ang grupo ng isang kalakasan at isang mungkahi.
+Pumili ng card ang magkapareha, ipaliwanag ang established at uncertain facts, at isulat: ‘Para sa kathang-isip na record, aling accredited-service period at ebidensiya ang dapat tiyakin, kasama ang [uncertainty]?’ Magbigay ang bawat kapareha ng isang lakas at isang detalye pang dapat tiyakin. Walang personal na disclosure. Maaaring gumamit ng reference sheet at sumubok muli nang mas kaunti ang untag.
 
-Ang pakikinggan: mukhang pasok ang A sa apat, pero kailangan pa ring tiyakin sa CSC at hindi agad sasabihing "eligible ka na." Kulang ang B sa dalawang taon sa kolehiyo. Kulang ang C sa limang taon. Hindi malinaw ang D pagdating sa "tuloy-tuloy" kaya kailangang tiyakin. Tatlong taon lang ang bibilangin sa E, dahil hindi binibilang ang mga taon bago ang akreditasyon; hindi problema ang honorarium.
+## [answer-key] Tatlong pagpipilian at buong rationale
 
-## [answer-key] Susi sa self-check
+Iisang assessment ang check sa Read/Slides; talakayin nang isang beses. Tama ang option 1: qualifying service habang accredited na lamang ang bilangin, suriin ang edukasyon at lahat ng service conditions/evidence, at magtanong nang tiyak sa CSC nang walang pangako ng approval o trabaho. Hindi pinatutunayan ng walong kabuuang taon sa Card A ang limang accredited years. Iginagalang ng sagot ang kondisyon at decision ng CSC.
 
-Isa ang check sa araling ito. Lumalabas ito pagkatapos ng Read section na "Ang BHW Eligibility (BHWE) sa Civil Service" at muli sa slide ng seksyong iyon. Iisang check ito, kaya isang beses lang itong sasagutin dito.
+Mali ang option 2: hindi sapat ang accreditation lamang para sa education/service requirements o CSC application approval. Hindi rin nito maipapangako ang appointment. Mali ang option 3: kasama sa walong taon ang pre-accreditation service na hindi dapat idagdag; walang garantiya mula sa JO/COS label, at hindi BHWE ang eligibility para sa lahat ng government posts o garantisadong trabaho. May first-level exceptions at iba pang qualification requirements. Ipaayos ang bawat maling paliwanag gamit ang apat na kahon at tiyak na tanong.
 
-- **"Saan titiyakin ang BHWE requirements?"** → **Sa opisyal na CSC guidance at kaukulang tanggapan.** Nasa ilalim ng Civil Service Commission ang BHWE, at sinasabi ng slide na tiyakin sa CSC ang dokumento at lahat ng kondisyon.
-  - Mali ang *"Sa sabi-sabi lamang."* Maaaring luma na ang sinasabi ng kapwa BHW o kulang ng isa sa apat na kondisyon. Kapag kulang ang isa, hindi pa ito natutugunan.
+## [observe] Obserbahan
 
-## [observe] Ano ang oobserbahan
+Gamitin ang isang indicator na nakaayon sa lesson objective. Kaya na: walang untag na ipinapaliwanag ang apat na pangkat, accredited-service count at uncertainty, at tiyak na CSC verification nang walang pangako. Kailangan pa ng practice: tama ang direksiyon ngunit kailangan ng untag sa edukasyon, service period, arrangement o ebidensiya/contact. Hindi pa: sapat na raw ang accreditation o total years, nagpapasya batay sa label, o nangangako ng eligibility/appointment. Gamitin ang tatlong observation levels sa napiling wika ng learner. Hiwalay ang online completion sa observed explanation at practice; hindi sapat na ebidensiya ng competency ang tamang click.
 
-Gamitin ang observation indicator ng aralin habang ginagawa ang gawaing pagsasanay. Ang indicator: *"Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor."*
+## [support] Suporta at re-practice
 
-- **Kaya na:** nang walang untag, naisa-isa ng BHW ang apat na kondisyon para sa kanyang card, tama ang sinasabi kung alin ang natugunan o hindi, at nababanggit na unang hakbang ang pagtiyak sa CSC o sa kaukulang tanggapan. Sa Card A, sinasabi pa rin niyang tiyakin muna sa halip na ideklarang eligible na.
-- **Kailangan pa ng practice:** tama ang direksiyon ng BHW pero kailangan pa ng untag mo para sa isa o dalawang kondisyon, o nakakalimutang sabihin kung saan titiyakin.
-- **Hindi pa:** itinuturing ng BHW na BHWE na ang akreditasyon lang, hindi maisa-isa ang mga kondisyon, o tiyak na sinasabi sa BHW sa card na eligible siya, o hindi, nang hindi tinitiyak.
+Sentence frame: ‘Itinatag ng card ang __. Hindi nito itinatag ang __. Magsisimula ang service count sa __. Itatanong ko sa CSC ang __; hindi ito approval o appointment.’ I-model ang A, saka ipasubok ang B o C. Magbigay ng isang helpful prompt, mag-alok ng reference sheet, at mag-anyaya ng bagong attempt nang walang pressure na magbahagi ng pribadong sitwasyon. Obserbahan muli ang parehong skill gamit ang ibang fictional card at training observation lamang ang itala ayon sa established local procedures.
 
-Para sa mas detalyadong batayan, puwede ring tingnan ang objective 3 sa mga indicator ng kakayahan ng subchapter (tama ang apat na kondisyon at may tapat na pagsusuri sa sarili). Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+## [sources-review] Sources at review
 
-## [support] Kung kailangan ng dagdag na suporta
+Fresh access 5 Oktubre 2026: RA 7883 sections 3–4 at 6(d), https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html ; buong 2011 CSC guidelines, https://www.csc.gov.ph/phocadownload/userupload/irmo/policy%20resolutions/2011/CSC%20Resolution%20No.%201101645.pdf (BHWE PDF 12–14/printed 8–10; historical evidence categories PDF 25/printed 21); opisyal na BHWE summary, https://csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility ; opisyal na2024 corroboration, https://csc.gov.ph/barangay-health-workers-may-apply-for-eligibility-csc . Huwag tawaging buong 1999 resolution ang summary.
 
-- Sabay ninyong suriin ang Card C, isa-isang kahon, saka hayaan siyang subukan nang mag-isa ang Card B.
-- Hayaang nakikita niya ang manila paper na may apat na kahon habang nagpapaliwanag, saka subukan muli nang wala ito.
-- Ipares sila sa BHW na **Kaya na** at hayaan silang magpresenta nang pangalawa.
-- Obserbahan muli sa susunod na sesyon gamit ang parehong mga profile card, hindi bago.
+Ang150-page original Reference Manual Drive PDF 13/printed 5 ang may four-condition summary. Freshly inspected ang dalawang Facilitator Guide originals: 126-page Drive PDF 23–25 at 150-page TCI PDF 25–27, parehong printed 16–18. Legacy form demonstration at experience recount ang mungkahi ng original Day1 slide 25, hindi buong rule. Fictional practice ang gamit dito; walang pangakong Form 101-H workflow sa lesson 1.4.4. Nasa docs/lesson-143-source-audit.json at lesson-143-source-claim-map.json ang exact hashes/version mapping at source-to-screen audit.
 
-## [sources-review] Sanggunian at tala sa pagrepaso
+Wala ang detailed 1999 annex sa nakuhang original 2000 MC1 PDF at E-Library text; buong later 2011 guidelines ang sumusuporta sa audited provisions. Hindi pa established ang current full national IRR, target LGU procedures at independent current TESDA rules. Partly inaccessible ang Senate replacement-bill status; hindi patunay ng kawalan ang walang natukoy na enacted replacement. Walang authored current form/fee/version/certificate-format advice dito. Walang independent policy SME review o human listening na inaangkin. Draft ang bagong 1.4.3 illustration, audio at story hanggang sa hiwalay na owner approval.
 
-- Sanggunian ng aralin: BHW Reference Manual PDF 13, mga kondisyon ng BHWE (minanang page reference; nakabinbin pa ang huling audit).
-- Pagsusuri, Setyembre 2026: ang RA 7883 §6d mismo ay nagbibigay ng "second grade eligibility" matapos ang limang taon ng tuloy-tuloy na serbisyo at walang binabanggit na kondisyon sa pag-aaral. Galing ang iba pang kondisyon sa CSC Resolution No. 99-2845 (29 Disyembre 1999), *Implementing Guidelines in the Grant of BHW Eligibility* (`sources.json`: `csc-res-99-2845`), ayon sa buod sa BHWE page ng CSC. Ibinibigay ang BHWE sa BHW na akreditado ng local health board, nakatapos ng hindi bababa sa dalawang taon sa kolehiyo tungo sa isang degree, at boluntaryong naglingkod nang hindi bababa sa limang taon nang tuloy-tuloy, aktibo at satisfactory bilang accredited BHW.
-- May dagdag na kondisyon ang CSC guidelines na hindi binabanggit sa apat ng Reference Manual. (1) *Boluntaryo*: walang sahod o kompensasyon maliban sa honorarium sa buong limang taon. Maaari pa ring mag-qualify ang BHW na naka-job order o contract of service. (2) *Full time* dapat ang serbisyo. (3) Dapat akreditado na ang BHW *bago* magsimula ang limang taon. (4) Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995. Sa kahilingan ng may-ari ng proyekto (25 Setyembre 2026), itinuturo na ito ng aralin bilang mga tuntunin sa pagbilang ng limang taon, habang pinananatili ang apat na kondisyon. Sabay-sabay na binago ang Read, slide, narration, chatbot entry at module coverage. Tama pa rin at hindi binago ang test item (HINDI kailangan ang four-year degree).
-- Dagdag na batayan: itinuturo ng Facilitator Guide PDF 23–24 ang BHWE page ng CSC (http://www.csc.gov.ph/barangay-health-worker-eligibility-bhwe.html). Sinasabi ng Facilitator Guide PDF 25 na isa sa mga requirement ang patunay ng akreditasyon ng local health board kapag nag-a-apply ang BHW ng civil service eligibility. Iminumungkahi ng Day 1 presentation (slide 25) na may magkuwento ng karanasan sa pag-apply ng CSC BHWE. Ito ang ginamit sa pambungad.
-- Ang susi sa sagot sa gabay ng subchapter (bilang 2, "Alin sa mga sumusunod ang HINDI kailangan para sa BHWE...": four-year college degree) ay para sa mas lumang check na wala sa araling ito. Kung saan titiyakin ang requirements ang tanong ng kasalukuyang check. Pagtugmain ang susi ng module sa pagrepaso. Nasa Inaasahang sagot sa itaas ang punto tungkol sa four-year degree.
-- Gawa-gawa para sa pagsasanay ang mga profile card at hindi galing sa mga sanggunian.
-- Oras: 3 oras ang itinatakda ng TESDA Training Regulations para sa *Develop Life and Career Decisions* (Facilitator Guide PDF 23). Ang 30 minuto sa itaas ay bahagi ng araling ito sa talahanayan ng module. Panatilihin ang kabuuang oras ng competency sa gabay ng subchapter. Huwag ulitin ang buong oras sa bawat maikling aralin. Para sa self-study ang hating ito, hindi bagong training-hour allocation.
-- Pangkalahatang indicator ang observation indicator ng aralin at pare-pareho ito sa lahat ng aralin sa module. Draft pa ang visual na "unawain, tiyakin, isagawa" at hindi pa aprubado ng may-ari.
-- Kailangan pang repasuhin bago ilathala: kasalukuyang legal at policy wording (kasama ang kasalukuyang requirement ng CSC), bilingual parity, at observation indicator.
-
-Draft para sa pagrepaso.
+Inaprubahan ng owner ang eksaktong reviewed package noong 5 Oktubre 2026: docs/lesson-143-owner-approval.json. Historikal ang naunang draft/review wording; nananatili ang source at listening limitations.

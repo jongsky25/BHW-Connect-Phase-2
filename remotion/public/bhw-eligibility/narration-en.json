@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm, expressive community health trainer. Give Demi’s question curious rising intonation; slow at accreditation, degree-related education, qualifying continuous full-time voluntary service and satisfactory record. Make total versus accredited service, the conditional JO/COS rule and CSC verification clear through gentle pitch, emphasis and pace changes. Keep every negation and condition audible. Maintain exactly one consistent adult female Kore narrator timbre from first word to last, including headings, quotations and takeaway; no male voice acting or character voices. Pronounce Demi as DEH-mee and initialisms as individual letters. Say RA as letters and 7883 as seven thousand eight hundred eighty-three. Finish every syllable and word ending, with natural clause pauses; no fillers, clipped words, added connectors or repeated starts. Read the exact authored words, without translation or a promise of eligibility, license or appointment.",
+  "durationSeconds": 76.408,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Does accreditation already mean BHWE and a job? Demi asks; her qualifications are not established.",
+      "start_ms": 0,
+      "end_ms": 9720
+    },
+    {
+      "zone": "conditions",
+      "index": 1,
+      "text": "Four groups: accreditation, education toward a degree, five qualifying years of voluntary, continuous full-time service, and a satisfactory record. CSC conditions provide the detail.",
+      "start_ms": 10020,
+      "end_ms": 25460
+    },
+    {
+      "zone": "service-count",
+      "index": 2,
+      "text": "Fictional Card A has eight total years but only three while accredited. Pre-accreditation service cannot be added. A practice card is not approval.",
+      "start_ms": 25760,
+      "end_ms": 38600
+    },
+    {
+      "zone": "arrangement",
+      "index": 3,
+      "text": "A JO/COS worker may still qualify; the label is insufficient. Distinguish honorarium and allowances from salary, and ask CSC about the actual arrangement.",
+      "start_ms": 38900,
+      "end_ms": 50660
+    },
+    {
+      "zone": "verification",
+      "index": 4,
+      "text": "Demi asks which accredited-service period and education and service evidence need verification. Ask the CSC office responsible for the barangay of service.",
+      "start_ms": 50960,
+      "end_ms": 63360
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Explain conditions, then verify with CSC. BHWE has first-level exceptions; it is not a license or guaranteed appointment. Practice without promises.",
+      "start_ms": 63660,
+      "end_ms": 76340
+    }
+  ],
+  "audio_sha256": "7f6d6c0d4564c91de4c9f1c54ecab04e8313895cf2678f6acab88fa98c33744a"
+}

@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-05T07:03:18.911Z",
+  "source_commit": "28a8af5f448afc451bf371a116477511addb84ca",
+  "owner_review": "pending",
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 75.807,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "May BHWE at trabaho na ba dahil accredited? Tanong ni Demi ito, hindi patunay ng kaniyang qualifications.",
+          "start_ms": 0,
+          "end_ms": 8840
+        },
+        {
+          "zone": "conditions",
+          "index": 1,
+          "text": "Apat na pangkat: akreditasyon, edukasyon tungo sa degree, limang qualifying years ng voluntary, continuous at full-time service, at satisfactory record. May detalyadong CSC conditions.",
+          "start_ms": 9140,
+          "end_ms": 25340
+        },
+        {
+          "zone": "service-count",
+          "index": 2,
+          "text": "Sa fictional Card A, walong total years ngunit tatlo lamang habang accredited. Hindi idinadagdag ang pre-accreditation service. Huwag gawing approval ang practice card.",
+          "start_ms": 25640,
+          "end_ms": 39960
+        },
+        {
+          "zone": "arrangement",
+          "index": 3,
+          "text": "Maaaring kwalipikado pa rin ang JO/COS worker; hindi sapat ang label. Ihiwalay ang honorarium at allowances sa salary, at itanong ang aktuwal na arrangement sa CSC.",
+          "start_ms": 40260,
+          "end_ms": 52260
+        },
+        {
+          "zone": "verification",
+          "index": 4,
+          "text": "Tanong ni Demi: aling accredited-service period at education at service evidence ang dapat tiyakin? Sa CSC office na may sakop sa barangay ng serbisyo magtanong.",
+          "start_ms": 52560,
+          "end_ms": 64000
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Ipaliwanag ang kondisyon, saka tiyakin sa CSC. May first-level exceptions ang BHWE; hindi ito license o garantisadong appointment. Magsanay, huwag mangako.",
+          "start_ms": 64300,
+          "end_ms": 75740
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7963ff6962eb.mp4",
+        "content_hash": "7963ff6962eb79f667ef35f751190ed8907f5a726666ed589ebf6b526c2d08c0",
+        "duration_s": 77,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-0ddc480c6e6e.vtt",
+          "content_hash": "0ddc480c6e6e621631261875b279ba14e0c88ed0e2dd9704d080a5ea393472ed"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7ae68197f709-poster.jpg",
+          "content_hash": "7ae68197f709ae2bb6069d88ac2e5ae9ed966e97bc3de8b457f8ee7219f630c5"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7ae68197f709-poster.jpg",
+        "content_hash": "7ae68197f709ae2bb6069d88ac2e5ae9ed966e97bc3de8b457f8ee7219f630c5"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 76.408,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "Does accreditation already mean BHWE and a job? Demi asks; her qualifications are not established.",
+          "start_ms": 0,
+          "end_ms": 9720
+        },
+        {
+          "zone": "conditions",
+          "index": 1,
+          "text": "Four groups: accreditation, education toward a degree, five qualifying years of voluntary, continuous full-time service, and a satisfactory record. CSC conditions provide the detail.",
+          "start_ms": 10020,
+          "end_ms": 25460
+        },
+        {
+          "zone": "service-count",
+          "index": 2,
+          "text": "Fictional Card A has eight total years but only three while accredited. Pre-accreditation service cannot be added. A practice card is not approval.",
+          "start_ms": 25760,
+          "end_ms": 38600
+        },
+        {
+          "zone": "arrangement",
+          "index": 3,
+          "text": "A JO/COS worker may still qualify; the label is insufficient. Distinguish honorarium and allowances from salary, and ask CSC about the actual arrangement.",
+          "start_ms": 38900,
+          "end_ms": 50660
+        },
+        {
+          "zone": "verification",
+          "index": 4,
+          "text": "Demi asks which accredited-service period and education and service evidence need verification. Ask the CSC office responsible for the barangay of service.",
+          "start_ms": 50960,
+          "end_ms": 63360
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Explain conditions, then verify with CSC. BHWE has first-level exceptions; it is not a license or guaranteed appointment. Practice without promises.",
+          "start_ms": 63660,
+          "end_ms": 76340
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-5b27d9fc14de.mp4",
+        "content_hash": "5b27d9fc14deafc0f04419aae367cfdda324c9dca473123df92b7955f156e817",
+        "duration_s": 78,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-315abb2958c2.vtt",
+          "content_hash": "315abb2958c25d6def99d8024c53cf8c56bf8b8e105f78dbd51f3e624f9003db"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-95f794f724a5-poster.jpg",
+          "content_hash": "95f794f724a5cdba695274140493aa0a723a4f6ff8a976c2038c7578eaed7c2d"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-95f794f724a5-poster.jpg",
+        "content_hash": "95f794f724a5cdba695274140493aa0a723a4f6ff8a976c2038c7578eaed7c2d"
+      }
+    }
+  ],
+  "owner_approval": "lesson-143-owner-approval.json",
+  "review_status": "approved"
+}

@@ -1,94 +1,66 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can state the four conditions for BHW Eligibility (BHWE) in the Civil Service and explain that BHWE is not the same as accreditation. Given a BHW's situation, they can say which conditions look met and which are not yet, and that the requirements are confirmed with the CSC and the responsible office.
+Support the unchanged objective, ‘Explain and apply in a situation: understanding bhwe.’ Learners explain the four teaching groups, distinguish total service from qualifying accredited service, and form a bounded CSC verification question without promising eligibility or appointment. Demi and all profile cards are fictional. This lesson understands conditions; it does not adjudicate a learner or submit an application.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 30 minutes in a face-to-face session. This is the "BHW Eligibility (BHWE) in the Civil Service" part of the 3-hour plan in the subchapter guide. Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** the lesson slide; manila paper with the four conditions written as four boxes; one private checklist sheet per BHW with the same four conditions; the five practice profile cards (see Practice activity); if you have it, a printout of the CSC's BHWE page. The Facilitator Guide lists it at http://www.csc.gov.ph/barangay-health-worker-eligibility-bhwe.html. Check that the link still works before printing.
+Keep the existing 30-minute lesson share within the 180-minute module. Authored facilitation split: opening 3, explanation 7, worked profiles 6, evidence/question practice 5, check/discussion 6, observation/re-practice 3 minutes. The original Facilitator Guide attributes three hours to the whole competency: 126-page Drive copy PDF 23/printed 16, corresponding to 150-page TCI copy PDF 25/printed 16. This is manual attribution, not independent current TESDA verification. An authored 8–12-minute self-study estimate excludes the optional story and audio replay.
+
+Use the six bilingual screens, four-condition reference sheet, fictional Cards A–C below, blank question cards and official CSC links. No school transcript, pay record, accreditation certificate or other private learner document is requested.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- Know the four conditions exactly as the lesson states them: accredited by the local health board; completed a minimum of two (2) years of college leading to a degree; actively and voluntarily serving continuously, full time, for five (5) years or more as an accredited BHW; and a satisfactory service record as an accredited BHW in the community.
-- Know how the five years are counted (CSC Resolution No. 99-2845): only service after the BHW was accredited; only if unpaid except for an honorarium for the whole period; nothing before 20 February 1995. A BHW on a job order or contract of service can still qualify.
-- Find out, from your RHU or LGU, which office helps BHWs apply for BHWE and where the nearest CSC office is. Have that ready.
-- This lesson covers **what BHWE requires and how it differs from accreditation**. Filling in CSC Form 101-H is demonstrated in the follow-up lesson, not here. Do not tell any BHW that they qualify or do not qualify. They assess themselves, and the CSC confirms. Schooling and years of service are personal. Keep the self-checklists private.
+Read both languages, all three check rationales and the full narration accessible in Slides. Review RA 7883 section 6(d), the official 2011 CSC guidelines PDF 12–14/printed 8–10 and the currently reachable CSC BHWE summary. Distinguish the statute from implementing conditions and the teaching grouping from an official numbered checklist. Review education toward a degree, service under prior accreditation, the 20 February 1995 cutoff, continuity/full-time/voluntary/satisfactory service, and the JO/COS and payroll clarification. A contractual government appointment is not the same label as Contract of Service; CSC assesses the actual arrangement. Confirm the appropriate office/contact locally if available; otherwise teach the jurisdiction question without inventing a contact or process.
 
 ## [opening] Opening
 
-Ask the group: *"Has anyone here applied for BHWE, or does anyone know a BHW who did? What happened?"* If someone has, let them tell the story briefly. If no one has, ask instead: *"Is the accreditation you got from the local health board the same as civil service eligibility? Raise your hand if you think yes."* Do not reveal the answer yet.
+Read Demi's fictional question: ‘Does accreditation or long service automatically mean BHWE and a government job?’ Invite partners to explain the difference among accreditation, CSC approval and appointment. Do not ask who has college education, salary, a service interruption or experience applying. Receive a mistaken answer calmly: ‘Let's test that explanation against the conditions.’
 
 ## [steps] Steps
 
-1. **The four conditions (Read "BHW Eligibility (BHWE) in the Civil Service", first paragraph; the slide).** Read the four conditions slowly and write each in its own box on the manila paper. Ask: *"Which of these four do you think BHWs most often miss?"*
-2. **How the five years count (second paragraph).** Write three notes under the five-year box: *after accreditation*, *honorarium only*, *full time*. Ask: *"If a BHW has served eight years but was accredited only three years ago, how many years count?"* Listen for: three. Add that job-order and contract-of-service BHWs can still qualify.
-3. **Quiet self-check.** Hand out the private checklists. Ask each BHW to quietly mark each condition "yes", "not yet" or "not sure" for themselves. Say clearly: *"You won't be asked to share this."*
-4. **Not the same as accreditation (third paragraph).** Read: *"This is not the same thing as general accreditation — it asks for more."* Ask: *"What does BHWE ask for on top of accreditation?"* Listen for: two years of college, five years of continuous active service, and a satisfactory record. Accreditation is one of the four, not all of them.
-5. **Where to confirm.** Point to the slide line *"Confirm documentation and all conditions with CSC."* Ask: *"If you marked 'not sure' on any condition, where would you go to check?"*
-6. **Self-check.** Give the check question (*"Where should BHWE requirements be confirmed?"*). Let the group discuss before you reveal the answer.
+1. Use ‘Demi's question’ to name the misconception without claiming anything about Demi's qualifications.
+2. At the preserved section-4, place four boxes: accreditation, education, qualifying service, satisfactory record. Explain that RA 7883 gives the statutory basis and CSC supplies detailed implementing conditions. Accreditation must precede qualifying service; pre-20 February 1995 service is not counted.
+3. Work Card A aloud: eight total years include five before accreditation and three while accredited. The pre-accreditation five cannot be added. The card therefore does not demonstrate five accredited years; do not turn the count into a ruling about a real person. Then work Card B: its reported facts support checking the four groups, but evidence and CSC approval still matter.
+4. Discuss Card C and ‘One label is not enough.’ Unknown continuity and the actual JO/COS arrangement need questions. Honorarium is excepted; CSC's clarification excludes meal/transport allowances from salary/compensation and distinguishes government appointments/plantilla payroll. A label or one payment is insufficient to decide the whole case. Explain first-level exceptions and that eligibility is separate from licensing and appointment.
+5. At ‘A specific question for CSC,’ pairs write one question naming the period, evidence and uncertainty. RHU/board can help locate records/contact; CSC Regional or Field Office jurisdiction follows the barangay of service. Effectivity follows the responsible Regional Office's approval. Confirm current documents/forms there; no practice application is sent.
+6. At ‘Choose a careful explanation,’ discuss all three options and rationales, then let each learner explain one card to a partner. Use the observation indicator and offer re-practice.
 
-## [expected-answers] Expected answers and how to respond
+## [expected-answers] Expected answers and supportive response
 
-- **"Do you need a college degree?"** The lesson says a minimum of two years of college. A four-year degree is not listed. Read the condition again rather than adding to it.
-- **"I've served more than five years, but I stopped for a while."** Do not decide this for them. Say: *"The lesson says 'continuously'. Whether your break counts is exactly the kind of thing to confirm with the CSC."*
-- **"I'm already accredited, so I have eligibility."** Respond gently: *"Accreditation is the first of the four conditions. BHWE asks for more."* Point to the other three boxes.
-- **"I didn't go to college, so this isn't for me."** Receive it respectfully. Say: *"BHWE is one benefit among several. Your accreditation and registration still matter for the others we discussed."* Do not linger on it in front of the group.
-- **"I get an honorarium. Does that mean I'm not voluntary?"** No. The lesson says no salary or other pay *except* an honorarium. If they receive anything else, for example a salary from another government post, that is for the CSC to assess.
-- **"I'm on a job order at the municipal hall. Can I still apply?"** The lesson says a BHW on a job order or contract of service can still qualify. Confirm the details with the CSC.
-- **"I served for years before I was accredited."** Only the years after accreditation count. Help them count from their accreditation date, then confirm with the CSC.
+Card A: ‘Only three years are described under accredited status, not eight. Check the dates and the other conditions with CSC.’ Card B: ‘Its reported five-year service and degree-related college evidence support checking the conditions, but do not prove CSC approval or appointment.’ Card C: ‘The uncertain interruption/arrangement needs CSC assessment; a JO/COS label is neither automatic qualification nor disqualification.’
 
-## [misconception] Common misconception
+If asked about a degree: at least two college years must lead toward a degree; do not replace this with an invented four-year-degree requirement. If asked about an honorarium: it is excepted in the service rule; meal/transport allowances are excluded from salary/compensation in CSC's clarification. Other arrangements need context and assessment. If asked about breaks or incomplete records, identify what is unknown and ask CSC; invent no continuity ruling. If asked whether BHWE means a job or license, explain appropriate first-level scope and exceptions, other position qualifications and separate appointment decisions. Affirm a useful question without certifying a person's eligibility.
 
-**"Once I'm accredited by the local health board, I already have civil service eligibility."** It is an easy mix-up, because both involve the local health board and both appear in RA 7883. Correct it without singling anyone out. Put the four boxes next to one another and colour only the first box ("accredited"). Ask the group what is still missing. Say: *"Accreditation opens the door. BHWE asks for three more things on top of it."*
+## [misconception] Misconception
 
-## [practice] Practice activity
+‘Accreditation alone is BHWE,’ ‘all earlier service counts,’ and ‘BHWE guarantees a job’ omit conditions or decisions. Point to the relevant box or timeline and ask what evidence is missing. Do not ridicule an answer, rank learners by education, or request their own records.
 
-Prepare five profile cards. These are made-up examples for practice, not real people:
+## [practice] Fictional profile and question practice
 
-- **Card A:** accredited; finished two years of college; six years of continuous active service; satisfactory record.
-- **Card B:** accredited; finished high school; seven years of continuous service; satisfactory record.
-- **Card C:** accredited; finished two years of college; three years of service; satisfactory record.
-- **Card D:** accredited; finished two years of college; five years of service with a one-year break in the middle; satisfactory record.
-- **Card E:** finished two years of college; eight years of continuous, full-time service, but accredited by the local health board only three years ago; receives only an honorarium; satisfactory record.
+All card service is after 20 February 1995. Card A: eight total years, first five before Local Health Board accreditation and last three while accredited; other education/service details require verification. Card B: certificate of accreditation issued before five continuous, active, full-time, voluntary and satisfactory years; only honorarium; school evidence of two college years leading to a degree; no CSC approval stated. Card C: five calendar years since accreditation, an unclear interruption and a JO/COS label; continuity, actual arrangement, education evidence and certified service remain unclear. These are authored teaching examples, not source cases or eligibility decisions.
 
-In pairs, each BHW draws a card and explains to their partner in 1 minute: which of the four conditions this BHW meets, which are not yet met or unclear, and the first action, which is to confirm documents and all conditions with the CSC and the responsible office. Two or three pairs present. The group gives one strength and one suggestion.
+Pairs select a card, explain which facts are established and uncertain, and write: ‘For this fictional record, which accredited-service period and evidence should be verified, including [uncertainty]?’ Each partner gives one strength and one next detail to check. No personal disclosure is needed. Learners may use the reference sheet and then try again with less prompting.
 
-What to listen for: A appears to meet all four, but still confirms with the CSC and does not declare "you're eligible". B is missing the two years of college. C is missing the five years. D is unclear on "continuously" and needs confirming. E has only three years that count, because the years before accreditation do not count; the honorarium is not a problem.
+## [answer-key] Three-choice check and full rationales
 
-## [answer-key] Self-check answer key
+The Read/Slides check is the same assessment, discussed once. Correct option 1: count only qualifying service while already accredited, check education and all service conditions/evidence, and ask CSC a specific verification question without promising approval or a job. Card A's eight total years do not establish five accredited years. This answer respects the conditions and CSC's decision.
 
-This lesson has one check. It appears after the Read section "BHW Eligibility (BHWE) in the Civil Service" and again on that section's slide. It is the same check, so it is covered once here.
+Option 2 is incorrect: accreditation alone does not meet the education/service requirements or establish CSC application approval. It also cannot promise appointment. Option 3 is incorrect: counting all eight years improperly includes pre-accreditation service; a JO/COS label does not guarantee qualification, and BHWE is not eligibility for every government post or a guaranteed job. First-level exceptions and other position qualifications remain. Ask partners to repair each incorrect explanation using the four boxes and a bounded question.
 
-- **"Where should BHWE requirements be confirmed?"** → **In official CSC guidance and with the responsible office.** BHWE is granted under the Civil Service Commission, and the slide says to confirm documentation and all conditions with the CSC.
-  - *"Only through hearsay"* is wrong. What other BHWs say may be out of date or may leave out one of the four conditions. Missing even one means the requirement isn't met yet.
+## [observe] Observe
 
-## [observe] What to observe
+Use the single indicator aligned with the lesson objective. Kaya na: independently explains the four groups, the accredited-service count and uncertainty, and a specific CSC verification step, without promises. Kailangan pa ng practice: correct direction but needs prompts for education, service period, arrangement or evidence/contact. Hindi pa: still treats accreditation or total years as sufficient, decides from a label, or promises eligibility/appointment. Use the three observation levels in the learner’s chosen language. Online completion is separate from observed explanation and practice; a correct click alone does not establish competency.
 
-Use the lesson's observation indicator during the practice activity. The indicator is: *"Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor."*
+## [support] Support and re-practice
 
-- **Kaya na:** without prompting, the BHW goes through all four conditions for their card, says correctly which are met or not, and names confirming with the CSC or the responsible office as the first action. On Card A they still say to confirm rather than declaring eligibility.
-- **Kailangan pa ng practice:** the BHW gets the direction right but needs your prompting for one or two of the conditions, or forgets to say where to confirm.
-- **Hindi pa:** the BHW treats accreditation alone as BHWE, cannot name the conditions, or tells the card's BHW for certain that they are, or are not, eligible without confirming.
+Sentence frame: ‘The card establishes __. It does not establish __. The service count begins __. I would ask CSC __; this is not an approval or appointment.’ Model Card A once, then let the learner explain B or C. Ask one helpful prompt, offer the reference sheet, and invite another attempt without pressure to disclose private circumstances. Re-observe the same skill with a different fictional card and record only the training observation, using established local procedures.
 
-For more detail you can also look at the subchapter's competency indicators, objective 3 (all four conditions stated correctly with an honest self-assessment). Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+## [sources-review] Sources and review
 
-## [support] If a BHW needs more support
+Freshly accessed 5 October 2026: RA 7883 sections 3–4 and 6(d), https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html ; CSC 2011 full guidelines, https://www.csc.gov.ph/phocadownload/userupload/irmo/policy%20resolutions/2011/CSC%20Resolution%20No.%201101645.pdf (BHWE PDF 12–14/printed 8–10; historical evidence categories PDF 25/printed 21); official BHWE summary, https://csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility ; official 2024 corroboration, https://csc.gov.ph/barangay-health-workers-may-apply-for-eligibility-csc . Do not call the summary the complete 1999 resolution.
 
-- Go through Card C with them together, one box at a time, then let them try Card B alone.
-- Let them keep the four-box manila paper in view while they explain, then try once without it.
-- Pair them with a BHW rated **Kaya na** and let them present second.
-- Re-observe at the next session using the same profile cards, not new ones.
+Original Reference Manual 150-page Drive PDF 13/printed 5 supplies the four-condition summary. Both Facilitator Guide originals were freshly inspected: 126-page Drive PDF 23–25 and 150-page TCI PDF 25–27 correspond to printed 16–18. Original Day1 slide 25 recommends a legacy form demonstration and experience recount, not the full rule. This lesson instead uses fictional practice; no promise that lesson 1.4.4 teaches Form 101-H. Exact source hashes/version mapping and source-to-screen audit are in docs/lesson-143-source-audit.json and lesson-143-source-claim-map.json.
 
-## [sources-review] Sources and review notes
+The recovered original 2000 MC1 PDF and E-Library text omit the detailed 1999 annex; later full 2011 guidelines support the audited provisions. Current full national IRR, target LGU procedures and independent current TESDA rules remain unestablished. Senate replacement-bill status was partly inaccessible; no enacted replacement identified is not proof of absence. Current form/fee/version/certificate-format advice is not authored here. No independent policy SME review or human listening is claimed. New 1.4.3 illustration, audio and story remain draft pending separate owner approval.
 
-- Lesson source: BHW Reference Manual PDF 13, BHWE conditions (inherited page reference; final audit pending).
-- September 2026 check: RA 7883 §6d itself grants "second grade eligibility" after five years of continuous service and names no education requirement. The other conditions come from CSC Resolution No. 99-2845 (29 December 1999), *Implementing Guidelines in the Grant of BHW Eligibility* (`sources.json`: `csc-res-99-2845`), as summarised on the CSC's BHWE page. It grants BHWE to a local-health-board-accredited BHW who has completed at least two years of college leading to a degree and has voluntarily rendered at least five years of continuous, active and satisfactory service as an accredited BHW.
-- The CSC guidelines add conditions the Reference Manual's four do not state. (1) *Voluntary*: no salary or compensation other than honorarium for the whole five years. A BHW hired under a job order or contract of service can still qualify. (2) The service must be *full time*. (3) The BHW must already be accredited *before* the five-year period starts. (4) Service before 20 February 1995 does not count. At the project owner's request (25 September 2026), the lesson now teaches these as rules for how the five years count, keeping the four-condition structure. The Read text, slide, narration, chatbot entry and module coverage were updated together. The test item (a four-year degree is NOT required) is still correct and is unchanged.
-- Background: the Facilitator Guide PDFs 23–24 point to the CSC's BHWE page (http://www.csc.gov.ph/barangay-health-worker-eligibility-bhwe.html). Facilitator Guide PDF 25 says proof of accreditation by the local health board is one of the requirements when a BHW applies for civil service eligibility. The Day 1 presentation (slide 25) suggests having someone recount their experience applying for CSC BHWE. The opening uses this.
-- The answer key in the subchapter guide (item 2, "Which of the following is NOT required for BHWE...": a four-year college degree) describes an older check that is not in this lesson. The current check asks where requirements are confirmed. Reconcile the module answer key during review. The four-year degree point is kept above under Expected answers.
-- Timing: TESDA Training Regulations set 3 hours for *Develop Life and Career Decisions* (Facilitator Guide PDF 23). The 30 minutes above is this lesson's share of the module table. Keep the total competency time in the subchapter guide. Do not repeat that full allocation for each short lesson. This split supports self-study and does not create a new training-hour allocation.
-- The practice profile cards are invented for practice and are not taken from the sources. The lesson's observation indicator is the generic one shared by every lesson in this module. The "understand, verify, practice" visual is a draft and is not owner-approved.
-- Still to review before publication: current legal and policy wording (including current CSC requirements), bilingual parity, and the observation indicator.
-
-Draft for review.
+Owner approved the exact reviewed package on 5 October 2026; see docs/lesson-143-owner-approval.json. Earlier draft/review wording is historical; source and listening limitations remain.

@@ -13653,148 +13653,752 @@
     "bhw-eligibility": {
       "module": "04-ra7883",
       "sections": {
-        "section-4": {
+        "bhwe-application-check": {
           "en": {
-            "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.en.b66ac55ebd3f.mp3",
+            "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.en.03c8abe269ad.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "b66ac55ebd3fa814a01a83ae06c23d3e52f147bc0edd4288b7604069b79375ce",
-            "sha256": "91a3e22071a4eac23ac60cc5d77112aff36b3a834903ef7e1c52cf64b7afd09d",
-            "duration_seconds": 103.706,
+            "content_hash": "03c8abe269ad09fe81dc5505b833fa876fd10dbf0e4aa135755e32c23ebd8d8e",
+            "sha256": "6dcf16b91634ec231b5bf2c84a517d1c4ff13dd5cc6095b7274b0088c6a48373",
+            "duration_seconds": 40.229,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "BHW Eligibility (BHWE) in the Civil Service",
+                "text": "Choose a careful explanation",
                 "start_ms": 0,
-                "end_ms": 5920
+                "end_ms": 2520
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "There is a separate qualification for BHW Eligibility under the Civil Service Commission (CSC Resolution No.",
-                "start_ms": 6220,
-                "end_ms": 14460
+                "text": "In fictional example A, the worker has eight years of service but only three years under accreditation.",
+                "start_ms": 2820,
+                "end_ms": 9500
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "99-2845).",
-                "start_ms": 14760,
-                "end_ms": 18400
+                "text": "Which explanation is best?",
+                "start_ms": 9800,
+                "end_ms": 11880
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Four conditions are required: accredited by the local health board; completed a minimum of two (2) years of college leading to a degree; actively and voluntarily serving continuously, full time, for five (5) years or more as an accredited BHW; and having a satisfactory service record as an accredited BHW in the community.",
-                "start_ms": 18700,
-                "end_ms": 44380
+                "text": "Connect the count to accredited status, check education and the other service conditions, and form a specific CSC question.",
+                "start_ms": 12180,
+                "end_ms": 21900
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "The five years count only if the service was voluntary — no salary or other pay except an honorarium for the whole period — and only from the time the BHW was already accredited.",
-                "start_ms": 44680,
-                "end_ms": 58880
+                "text": "Demi should promise neither BHWE nor a job.",
+                "start_ms": 22200,
+                "end_ms": 27280
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Service before 20 February 1995, when RA 7883 was approved, does not count.",
-                "start_ms": 59180,
-                "end_ms": 66900
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "A BHW hired under a job order or contract of service can still qualify.",
-                "start_ms": 67200,
-                "end_ms": 73880
-              },
-              {
-                "zone": "body",
-                "index": 6,
-                "text": "This is not the same thing as general accreditation — it asks for more, and it is for BHWs who want official eligibility in the civil service.",
-                "start_ms": 74180,
-                "end_ms": 85180
+                "text": "After choosing, read the reasons for all three answers and explain to a partner what needs verification.",
+                "start_ms": 27580,
+                "end_ms": 35740
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "BHWE needs four conditions — accreditation, two years of college, five years of continuous, full-time voluntary service as an accredited BHW, and a satisfactory record. Missing even one means it isn't met yet.",
-                "start_ms": 85480,
-                "end_ms": 103640
+                "text": "Explain conditions and evidence, then verify with CSC.",
+                "start_ms": 36040,
+                "end_ms": 40160
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.fil.f700ccb44f55.mp3",
+            "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.fil.6a7358ba3748.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "f700ccb44f5503e83f96b28965db4052e4daa2cffe3ef03d3221bda138738a43",
-            "sha256": "78d020ed6e359cf3c54d5923839f674e8b38db16dade068133c50b49c49be34f",
-            "duration_seconds": 111.987,
+            "content_hash": "6a7358ba3748df6a80805160d6b67d650774347f824dbb27195844fa6352c69f",
+            "sha256": "75762cb30c08452efe7d483b3b6ad3cd051134896da62092fff3198e936a309b",
+            "duration_seconds": 44.513,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Ang BHW Eligibility (BHWE) sa Civil Service",
+                "text": "Piliin ang maingat na paliwanag",
                 "start_ms": 0,
-                "end_ms": 6280
+                "end_ms": 2760
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "May hiwalay na kwalipikasyon para sa BHW Eligibility sa ilalim ng Civil Service Commission (CSC Resolution No.",
-                "start_ms": 6580,
-                "end_ms": 15940
+                "text": "Sinabi sa kathang-isip na Card A na walong taon na ang serbisyo at tatlong taon pa lamang ang accreditation.",
+                "start_ms": 3060,
+                "end_ms": 10820
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "99-2845).",
-                "start_ms": 16240,
-                "end_ms": 19240
+                "text": "Aling paliwanag ang pinakamainam?",
+                "start_ms": 11120,
+                "end_ms": 14400
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Apat na kondisyon ang kailangan: akreditado ng local health board; nakatapos ng minimum na dalawang (2) taon sa kolehiyo tungo sa isang degree; aktibo at boluntaryong naglilingkod nang tuloy-tuloy at full time sa loob ng limang (5) taon o higit pa bilang accredited BHW; at may satisfactory service bilang accredited BHW sa komunidad.",
-                "start_ms": 19540,
-                "end_ms": 46900
+                "text": "Iugnay ang bilang sa accredited status, suriin ang edukasyon at iba pang service conditions, at bumuo ng tiyak na tanong sa CSC.",
+                "start_ms": 14700,
+                "end_ms": 23620
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Bibilangin lang ang limang taon kung boluntaryo ang serbisyo — walang sahod o ibang bayad maliban sa honorarium sa buong panahon — at mula lamang nang akreditado na ang BHW.",
-                "start_ms": 47200,
-                "end_ms": 61240
+                "text": "Hindi dapat mangako si Demi ng BHWE o trabaho.",
+                "start_ms": 23920,
+                "end_ms": 29160
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995, nang maaprubahan ang RA 7883.",
-                "start_ms": 61540,
-                "end_ms": 70020
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "Maaari pa ring mag-qualify ang BHW na naka-job order o contract of service.",
-                "start_ms": 70320,
-                "end_ms": 76720
-              },
-              {
-                "zone": "body",
-                "index": 6,
-                "text": "Hindi ito parehong bagay sa pangkalahatang akreditasyon — mas mataas ang hinihingi nito, at para ito sa mga BHW na nais magkaroon ng opisyal na eligibility sa serbisyo sibil.",
-                "start_ms": 77020,
-                "end_ms": 90500
+                "text": "Pagkatapos pumili, basahin ang dahilan para sa lahat ng tatlong sagot at ipaliwanag sa kapareha kung ano ang dapat tiyakin.",
+                "start_ms": 29460,
+                "end_ms": 38860
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Apat na kondisyon ang kailangan sa BHWE — akreditasyon, dalawang taon sa kolehiyo, limang taon ng tuloy-tuloy, full-time at boluntaryong serbisyo bilang accredited BHW, at satisfactory service. Kulang ang isa, hindi pa ito matutugunan.",
-                "start_ms": 90800,
-                "end_ms": 111920
+                "text": "Ipaliwanag ang kondisyon at ebidensiya, saka tiyakin sa CSC.",
+                "start_ms": 39160,
+                "end_ms": 44440
+              }
+            ]
+          }
+        },
+        "bhwe-question": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-question.en.ccebf4e77f16.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "ccebf4e77f166efaf3cfb5076c736dd3f5a1edfa0e893da32bfe8bd4d3ac028f",
+            "sha256": "91535175a0afeb33348c14ded73dee1abdc2932607f9b18dbb5690a8436fed59",
+            "duration_seconds": 39.262,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Demi's question",
+                "start_ms": 0,
+                "end_ms": 2320
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Demi hears that accreditation or long BHW service automatically brings BHWE and a government job.",
+                "start_ms": 2620,
+                "end_ms": 12300
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "She asks, ‘Are accreditation, civil service eligibility and appointment the same?’",
+                "start_ms": 12600,
+                "end_ms": 19440
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "They are different.",
+                "start_ms": 19740,
+                "end_ms": 21420
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "This is a fictional situation; Demi's education and qualifying service are not established.",
+                "start_ms": 21720,
+                "end_ms": 28360
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "First understand the conditions and evidence before making a promise.",
+                "start_ms": 28660,
+                "end_ms": 33300
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Accreditation, BHWE approval and appointment are different.",
+                "start_ms": 33600,
+                "end_ms": 39200
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-question.fil.c1bc7e73a262.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "c1bc7e73a262d8602cb13a2180121e781c487481af8f8f8322b7cea318196884",
+            "sha256": "362fb276e59091c0d40c74289c4337025b3d44da287a64de088e2a0ead358487",
+            "duration_seconds": 39.549,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Tanong ni Demi",
+                "start_ms": 0,
+                "end_ms": 1520
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "May narinig si Demi: kapag accredited o matagal nang BHW, may BHWE at trabaho na raw agad.",
+                "start_ms": 1820,
+                "end_ms": 11420
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Nagtanong siya, ‘Pareho ba ang akreditasyon, civil service eligibility at appointment?’",
+                "start_ms": 11720,
+                "end_ms": 18520
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Magkakaibang bagay ang mga ito.",
+                "start_ms": 18820,
+                "end_ms": 21340
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Kathang-isip ang sitwasyon; hindi pa natin alam ang edukasyon o qualifying service ni Demi.",
+                "start_ms": 21640,
+                "end_ms": 28000
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Unawain muna ang mga kondisyon at ebidensiya bago gumawa ng pangako.",
+                "start_ms": 28300,
+                "end_ms": 33620
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Magkaiba ang akreditasyon, BHWE approval at appointment.",
+                "start_ms": 33920,
+                "end_ms": 39480
+              }
+            ]
+          }
+        },
+        "bhwe-verification": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-verification.en.f0d27a0c7131.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "f0d27a0c71310e3b559aa982948e186b573bd3a467ff3e71af798fcd017da30e",
+            "sha256": "21c3ab0b13f10322b77483eddc693ccfa9ad98e97bc044c634fafce354400535",
+            "duration_seconds": 55.536,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "A specific question for CSC",
+                "start_ms": 0,
+                "end_ms": 3280
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Using a blank planning sheet, Demi asks, ‘For this fictional record, which accredited-service period and education and service evidence should be verified, including the JO/COS arrangement?’",
+                "start_ms": 3580,
+                "end_ms": 19340
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "The RHU and Local Health Board help identify records and contacts; they do not replace CSC approval.",
+                "start_ms": 19640,
+                "end_ms": 27680
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ask the CSC Regional or Field Office with jurisdiction over the barangay of service.",
+                "start_ms": 27980,
+                "end_ms": 34140
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "BHWE takes effect on approval by the responsible CSC Regional Office.",
+                "start_ms": 34440,
+                "end_ms": 41080
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Confirm current documentary and form guidance there; this practice submits no actual application or private record.",
+                "start_ms": 41380,
+                "end_ms": 49340
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Connect the question to records, conditions and the proper CSC office.",
+                "start_ms": 49640,
+                "end_ms": 55480
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-verification.fil.6672b25a27c6.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "6672b25a27c6a71903881c8fb6c14ff2a36a6f6ed2cc9db0ef818df0c0117ff5",
+            "sha256": "896b97ab205fec27a3c86de9b02ab94f6c80e73fd08133f31460d82c98d8bfa0",
+            "duration_seconds": 57.783,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Isang tiyak na tanong sa CSC",
+                "start_ms": 0,
+                "end_ms": 2640
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Gumawa si Demi ng tanong gamit ang blankong planning sheet: ‘Para sa kathang-isip na record na ito, aling panahon ng accredited service at anong education at service evidence ang dapat tiyakin, kasama ang JO/COS arrangement?’",
+                "start_ms": 2940,
+                "end_ms": 21860
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Tumutulong ang RHU at Local Health Board sa records at contact; hindi nila pinapalitan ang CSC approval.",
+                "start_ms": 22160,
+                "end_ms": 29240
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Magtanong sa CSC Regional o Field Office na may sakop sa barangay ng serbisyo.",
+                "start_ms": 29540,
+                "end_ms": 35300
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ang effectivity ng BHWE ay nakabatay sa approval ng kaukulang CSC Regional Office.",
+                "start_ms": 35600,
+                "end_ms": 42520
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Tiyakin doon ang kasalukuyang documentary at form guidance; walang tunay na application o pribadong record na isusumite sa practice na ito.",
+                "start_ms": 42820,
+                "end_ms": 51820
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Iugnay ang tanong sa record, kondisyon at tamang CSC office.",
+                "start_ms": 52120,
+                "end_ms": 57720
+              }
+            ]
+          }
+        },
+        "evidence-and-scope": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/evidence-and-scope.en.eb3242833134.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "eb324283313454bcbc1fc7e378ca422c5ec8299b034fcc68554b8e2c33a53c7a",
+            "sha256": "b2450bb259910d576c990deab3f5e79d3db0454751b3dc2e134183fd1f5e9d06",
+            "duration_seconds": 74.58,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "One label is not enough",
+                "start_ms": 0,
+                "end_ms": 2720
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "The two college years must lead toward a degree.",
+                "start_ms": 3020,
+                "end_ms": 6940
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Voluntary BHW service means no salary or compensation except honorarium throughout the five-year service period.",
+                "start_ms": 7240,
+                "end_ms": 17040
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "CSC clarifies no government appointment or salary from government plantilla payroll; meal and transport allowances are excluded from salary/compensation.",
+                "start_ms": 17340,
+                "end_ms": 29420
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "A Job Order or Contract of Service worker may still qualify; the label alone proves neither qualification nor disqualification.",
+                "start_ms": 29720,
+                "end_ms": 40000
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Verify the actual arrangement and all conditions with CSC.",
+                "start_ms": 40300,
+                "end_ms": 44940
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "BHWE is appropriate for first-level positions with exceptions: TESDA trade-test positions, positions requiring licenses, stenographer positions, and board-exam or special-law positions.",
+                "start_ms": 45240,
+                "end_ms": 60720
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "It is not a professional license or an appointment guarantee; a position also has other qualification requirements.",
+                "start_ms": 61020,
+                "end_ms": 69740
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Check evidence and scope; do not decide from a label alone.",
+                "start_ms": 70040,
+                "end_ms": 74520
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/evidence-and-scope.fil.5f0b5df3be44.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "5f0b5df3be44b06b705fe4278f0a381dba61c3cfd1b9b932242daa4acda140c3",
+            "sha256": "ba53fc181fa90e2d25aff354f106795119a0b69d8ffb2f8432b4809a6c48da63",
+            "duration_seconds": 72.542,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Hindi sapat ang isang label",
+                "start_ms": 0,
+                "end_ms": 2720
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Dapat tungo sa degree ang dalawang taon sa kolehiyo.",
+                "start_ms": 3020,
+                "end_ms": 6580
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Sa buong limang-taong service period, voluntary ang BHW service: walang salary/compensation maliban sa honorarium.",
+                "start_ms": 6880,
+                "end_ms": 15920
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Nililinaw ng CSC ang kawalan ng government appointment at salary mula sa government plantilla payroll; hindi kabilang sa salary/compensation ang meal at transport allowances.",
+                "start_ms": 16220,
+                "end_ms": 28580
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Maaaring maging kwalipikado pa rin ang nasa Job Order o Contract of Service; hindi sapat ang label para sabihing pasado o disqualified.",
+                "start_ms": 28880,
+                "end_ms": 37880
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Tiyakin ang aktuwal na arrangement at lahat ng kondisyon sa CSC.",
+                "start_ms": 38180,
+                "end_ms": 43020
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ang BHWE ay para sa naaangkop na first-level positions, may mga exception: TESDA trade-test positions, mga nangangailangan ng license, stenographer positions, at board-exam o special-law positions.",
+                "start_ms": 43320,
+                "end_ms": 59320
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hindi ito professional license o garantiya ng appointment; may iba pang qualification requirements ang posisyon.",
+                "start_ms": 59620,
+                "end_ms": 67300
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Suriin ang ebidensiya at saklaw; huwag magpasya batay sa label lamang.",
+                "start_ms": 67600,
+                "end_ms": 72480
+              }
+            ]
+          }
+        },
+        "section-4": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.en.26782f2dfc22.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "26782f2dfc226ac61e47efd9a9356762d2051861fd49cc3daeca60d4073324ea",
+            "sha256": "7e949e3510358d3fe451882c3c75074ecd0bdb065ee2603426ea11582b3e4ee0",
+            "duration_seconds": 68.65,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "BHWE conditions",
+                "start_ms": 0,
+                "end_ms": 2680
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "RA 7883 section six, paragraph d, provides the statutory basis for second-grade eligibility after five years of continuous service.",
+                "start_ms": 2980,
+                "end_ms": 15100
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "CSC implementing conditions are more detailed.",
+                "start_ms": 15400,
+                "end_ms": 19280
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record.",
+                "start_ms": 19580,
+                "end_ms": 41100
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Accreditation must precede the qualifying service.",
+                "start_ms": 41400,
+                "end_ms": 45040
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Service before 20 February 1995 is not counted.",
+                "start_ms": 45340,
+                "end_ms": 50660
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.",
+                "start_ms": 50960,
+                "end_ms": 61000
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Verify accreditation, education, qualifying service and a satisfactory record.",
+                "start_ms": 61300,
+                "end_ms": 68580
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.fil.2dcc5bce3636.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "2dcc5bce36365dfbeed5e231cae7d2825962983b9221a6f756e0222e27de4023",
+            "sha256": "b80ff04f41f97891d7654c40527bc3895df4c054262d8cfc545a421a4aa9a65b",
+            "duration_seconds": 72.96,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Mga kondisyon ng BHWE",
+                "start_ms": 0,
+                "end_ms": 3280
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Ang seksiyon 6(d) ng RA 7883 ay nagbibigay ng batayan para sa second-grade eligibility matapos ang limang taong tuloy-tuloy na serbisyo.",
+                "start_ms": 3580,
+                "end_ms": 15420
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May mas detalyadong implementing conditions ang CSC.",
+                "start_ms": 15720,
+                "end_ms": 19840
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Gamitin ang apat na pangkat na ito: akreditasyon ng Local Health Board; hindi bababa sa dalawang taon sa kolehiyo tungo sa isang degree; hindi bababa sa limang taong tuloy-tuloy, aktibo, full-time at boluntaryong serbisyo bilang accredited BHW; at satisfactory service record.",
+                "start_ms": 20140,
+                "end_ms": 42460
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Dapat accredited na bago magsimula ang qualifying service.",
+                "start_ms": 42760,
+                "end_ms": 47160
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995.",
+                "start_ms": 47460,
+                "end_ms": 54060
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Hindi sapat ang akreditasyon lamang; kailangang matugunan at mapatunayan ang naaangkop na kondisyon, at CSC ang nagpapasya sa application.",
+                "start_ms": 54360,
+                "end_ms": 64680
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Tiyakin ang akreditasyon, edukasyon, qualifying service at satisfactory record.",
+                "start_ms": 64980,
+                "end_ms": 72900
+              }
+            ]
+          }
+        },
+        "service-count": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/service-count.en.77dec67ecd61.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "77dec67ecd61edbd8a16cade3933f8a415a624937349d8b99f4c9954b3e063b1",
+            "sha256": "6c74d9f51ce93006c4de1d55a14f92aa3780df8b5771340b9928b29c91a98836",
+            "duration_seconds": 56.111,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Which service can be counted?",
+                "start_ms": 0,
+                "end_ms": 2120
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "All service in these fictional cards is after 20 February 1995.",
+                "start_ms": 2420,
+                "end_ms": 8380
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Card A has eight years of total service but only three under accredited status; the first five years before accreditation cannot be included.",
+                "start_ms": 8680,
+                "end_ms": 20160
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Card B reports five years of continuous, active, full-time, voluntary and satisfactory service while already accredited, plus school evidence of two college years leading to a degree.",
+                "start_ms": 20460,
+                "end_ms": 35420
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "B supports checking the conditions, but it is not CSC approval.",
+                "start_ms": 35720,
+                "end_ms": 40280
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Unclear dates, an interruption or missing records require a CSC question, not an invented ruling.",
+                "start_ms": 40580,
+                "end_ms": 49020
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Total service and qualifying accredited service are not always the same.",
+                "start_ms": 49320,
+                "end_ms": 56040
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-eligibility/service-count.fil.df122545f599.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "df122545f59941c30091b56fb953f99bacfdc4f9d8f19b75a1130fc6c8c50532",
+            "sha256": "fb1e541b3bb46ca041b7a0c9ff48bb292c6cf747da47d5301afa1297d0fc0457",
+            "duration_seconds": 60.212,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Aling serbisyo ang mabibilang?",
+                "start_ms": 0,
+                "end_ms": 2320
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Lahat ng serbisyo sa mga kathang-isip na card na ito ay matapos ang 20 Pebrero 1995.",
+                "start_ms": 2620,
+                "end_ms": 12460
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Sa Card A, walong taon ang kabuuang serbisyo ngunit tatlo lamang ang nasa accredited status; hindi maisasama ang unang limang taon bago ang akreditasyon.",
+                "start_ms": 12760,
+                "end_ms": 24320
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Sa Card B, may limang taong tuloy-tuloy, aktibo, full-time, boluntaryo at satisfactory na serbisyo habang accredited na, at school evidence para sa dalawang taon sa kolehiyo tungo sa degree.",
+                "start_ms": 24620,
+                "end_ms": 39860
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "May batayan para suriin ang mga kondisyon sa B, ngunit hindi ito CSC approval.",
+                "start_ms": 40160,
+                "end_ms": 45760
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Kung malabo ang petsa, may interruption o kulang ang record, magtanong sa CSC; huwag hulaan ang ruling.",
+                "start_ms": 46060,
+                "end_ms": 54180
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Kabuuang serbisyo at qualifying accredited service ay hindi laging pareho.",
+                "start_ms": 54480,
+                "end_ms": 60160
               }
             ]
           }
@@ -95880,6 +96484,1009 @@
                   "text": "Ang mga benepisyong ito ay hindi awtomatiko — nakasalalay ito sa tamang rehistrasyon sa local health board.",
                   "start_ms": 98740,
                   "end_ms": 107900
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "bhw-eligibility": [
+      {
+        "module": "04-ra7883",
+        "sections": {
+          "section-4": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.en.b66ac55ebd3f.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "b66ac55ebd3fa814a01a83ae06c23d3e52f147bc0edd4288b7604069b79375ce",
+              "sha256": "91a3e22071a4eac23ac60cc5d77112aff36b3a834903ef7e1c52cf64b7afd09d",
+              "duration_seconds": 103.706,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "BHW Eligibility (BHWE) in the Civil Service",
+                  "start_ms": 0,
+                  "end_ms": 5920
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "There is a separate qualification for BHW Eligibility under the Civil Service Commission (CSC Resolution No.",
+                  "start_ms": 6220,
+                  "end_ms": 14460
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "99-2845).",
+                  "start_ms": 14760,
+                  "end_ms": 18400
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Four conditions are required: accredited by the local health board; completed a minimum of two (2) years of college leading to a degree; actively and voluntarily serving continuously, full time, for five (5) years or more as an accredited BHW; and having a satisfactory service record as an accredited BHW in the community.",
+                  "start_ms": 18700,
+                  "end_ms": 44380
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "The five years count only if the service was voluntary — no salary or other pay except an honorarium for the whole period — and only from the time the BHW was already accredited.",
+                  "start_ms": 44680,
+                  "end_ms": 58880
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Service before 20 February 1995, when RA 7883 was approved, does not count.",
+                  "start_ms": 59180,
+                  "end_ms": 66900
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "A BHW hired under a job order or contract of service can still qualify.",
+                  "start_ms": 67200,
+                  "end_ms": 73880
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "This is not the same thing as general accreditation — it asks for more, and it is for BHWs who want official eligibility in the civil service.",
+                  "start_ms": 74180,
+                  "end_ms": 85180
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "BHWE needs four conditions — accreditation, two years of college, five years of continuous, full-time voluntary service as an accredited BHW, and a satisfactory record. Missing even one means it isn't met yet.",
+                  "start_ms": 85480,
+                  "end_ms": 103640
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.fil.f700ccb44f55.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "f700ccb44f5503e83f96b28965db4052e4daa2cffe3ef03d3221bda138738a43",
+              "sha256": "78d020ed6e359cf3c54d5923839f674e8b38db16dade068133c50b49c49be34f",
+              "duration_seconds": 111.987,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Ang BHW Eligibility (BHWE) sa Civil Service",
+                  "start_ms": 0,
+                  "end_ms": 6280
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "May hiwalay na kwalipikasyon para sa BHW Eligibility sa ilalim ng Civil Service Commission (CSC Resolution No.",
+                  "start_ms": 6580,
+                  "end_ms": 15940
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "99-2845).",
+                  "start_ms": 16240,
+                  "end_ms": 19240
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Apat na kondisyon ang kailangan: akreditado ng local health board; nakatapos ng minimum na dalawang (2) taon sa kolehiyo tungo sa isang degree; aktibo at boluntaryong naglilingkod nang tuloy-tuloy at full time sa loob ng limang (5) taon o higit pa bilang accredited BHW; at may satisfactory service bilang accredited BHW sa komunidad.",
+                  "start_ms": 19540,
+                  "end_ms": 46900
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Bibilangin lang ang limang taon kung boluntaryo ang serbisyo — walang sahod o ibang bayad maliban sa honorarium sa buong panahon — at mula lamang nang akreditado na ang BHW.",
+                  "start_ms": 47200,
+                  "end_ms": 61240
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995, nang maaprubahan ang RA 7883.",
+                  "start_ms": 61540,
+                  "end_ms": 70020
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Maaari pa ring mag-qualify ang BHW na naka-job order o contract of service.",
+                  "start_ms": 70320,
+                  "end_ms": 76720
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Hindi ito parehong bagay sa pangkalahatang akreditasyon — mas mataas ang hinihingi nito, at para ito sa mga BHW na nais magkaroon ng opisyal na eligibility sa serbisyo sibil.",
+                  "start_ms": 77020,
+                  "end_ms": 90500
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Apat na kondisyon ang kailangan sa BHWE — akreditasyon, dalawang taon sa kolehiyo, limang taon ng tuloy-tuloy, full-time at boluntaryong serbisyo bilang accredited BHW, at satisfactory service. Kulang ang isa, hindi pa ito matutugunan.",
+                  "start_ms": 90800,
+                  "end_ms": 111920
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "module": "04-ra7883",
+        "sections": {
+          "section-4": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.en.6ad7e08fd201.mp3",
+              "voice": "en-PH-RosaNeural",
+              "content_hash": "6ad7e08fd2014c1693d822110854c262e4f6e396685522c93564e8fc854fddb1",
+              "sha256": "a14802641a869817190ef3b772b7acb7176b93c71b9a7f4ba8e68b17ad85f2ca",
+              "duration_seconds": 55.608,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "BHW Eligibility (BHWE) in the Civil Service",
+                  "start_ms": 0,
+                  "end_ms": 5688
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "There is a separate qualification for BHW Eligibility under the Civil Service Commission.",
+                  "start_ms": 5688,
+                  "end_ms": 12288
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Four conditions are required: accredited by the local health board; completed a minimum of two (2) years of college; actively and voluntarily serving continuously for five (5) years or more; and having a satisfactory service record as an accredited BHW in the community.",
+                  "start_ms": 12288,
+                  "end_ms": 31392
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "This is not the same thing as general accreditation — it asks for more, and it is for BHWs who want official eligibility in the civil service.",
+                  "start_ms": 31392,
+                  "end_ms": 41808
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "BHWE needs four conditions — accreditation, two years of college, five years of continuous service, and a satisfactory record. Missing even one means it isn't met yet.",
+                  "start_ms": 41808,
+                  "end_ms": 55608
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.fil.b745906b23da.mp3",
+              "voice": "fil-PH-BlessicaNeural",
+              "content_hash": "b745906b23dab5b6f01fd907ade98fac7123897eebdbbc51792c29794ac1a0b4",
+              "sha256": "0d3b8d394629b3ba582ee979fa5ed9b61b2926cdf8aaac0bbe38ee7bd630aaa6",
+              "duration_seconds": 55.632,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Ang BHW Eligibility (BHWE) sa Civil Service",
+                  "start_ms": 0,
+                  "end_ms": 5184
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "May hiwalay na kwalipikasyon para sa BHW Eligibility sa ilalim ng Civil Service Commission.",
+                  "start_ms": 5184,
+                  "end_ms": 11856
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Apat na kondisyon ang kailangan: akreditado ng local health board; nakatapos ng minimum na dalawang (2) taon sa kolehiyo; aktibo at boluntaryong naglilingkod nang tuloy-tuloy sa loob ng limang (5) taon o higit pa; at may satisfactory service bilang accredited BHW sa komunidad.",
+                  "start_ms": 11856,
+                  "end_ms": 30480
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Hindi ito parehong bagay sa pangkalahatang akreditasyon — mas mataas ang hinihingi nito, at para ito sa mga BHW na nais magkaroon ng opisyal na eligibility sa serbisyo sibil.",
+                  "start_ms": 30480,
+                  "end_ms": 42024
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Apat na kondisyon ang kailangan sa BHWE — akreditasyon, dalawang taon sa kolehiyo, limang taon ng tuloy-tuloy na serbisyo, at satisfactory service. Kulang ang isa, hindi pa ito matutugunan.",
+                  "start_ms": 42024,
+                  "end_ms": 55632
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "module": "04-ra7883",
+        "sections": {
+          "bhwe-application-check": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.en.2256997127b1.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "2256997127b10697fd89c2ee9b77c12764ab2686f85425ddb1e7287f26d6de5f",
+              "sha256": "b0da820707db768147f1211a753ab11fe10d6eca458b814676f637ac7e3f80e5",
+              "duration_seconds": 40.542,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Choose a careful explanation",
+                  "start_ms": 0,
+                  "end_ms": 2360
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Fictional Card A reports eight years of service but only three years under accreditation.",
+                  "start_ms": 2660,
+                  "end_ms": 9060
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Which explanation is best?",
+                  "start_ms": 9360,
+                  "end_ms": 11840
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Connect the count to accredited status, check education and the other service conditions, and form a specific CSC question.",
+                  "start_ms": 12140,
+                  "end_ms": 21460
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Demi should promise neither BHWE nor a job.",
+                  "start_ms": 21760,
+                  "end_ms": 26680
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "After choosing, read the reasons for all three answers and explain to a partner what needs verification.",
+                  "start_ms": 26980,
+                  "end_ms": 34340
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Explain conditions and evidence, then verify with CSC.",
+                  "start_ms": 34640,
+                  "end_ms": 40480
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.fil.6a7358ba3748.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "6a7358ba3748df6a80805160d6b67d650774347f824dbb27195844fa6352c69f",
+              "sha256": "75762cb30c08452efe7d483b3b6ad3cd051134896da62092fff3198e936a309b",
+              "duration_seconds": 44.513,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Piliin ang maingat na paliwanag",
+                  "start_ms": 0,
+                  "end_ms": 2760
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Sinabi sa kathang-isip na Card A na walong taon na ang serbisyo at tatlong taon pa lamang ang accreditation.",
+                  "start_ms": 3060,
+                  "end_ms": 10820
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Aling paliwanag ang pinakamainam?",
+                  "start_ms": 11120,
+                  "end_ms": 14400
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Iugnay ang bilang sa accredited status, suriin ang edukasyon at iba pang service conditions, at bumuo ng tiyak na tanong sa CSC.",
+                  "start_ms": 14700,
+                  "end_ms": 23620
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Hindi dapat mangako si Demi ng BHWE o trabaho.",
+                  "start_ms": 23920,
+                  "end_ms": 29160
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Pagkatapos pumili, basahin ang dahilan para sa lahat ng tatlong sagot at ipaliwanag sa kapareha kung ano ang dapat tiyakin.",
+                  "start_ms": 29460,
+                  "end_ms": 38860
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ipaliwanag ang kondisyon at ebidensiya, saka tiyakin sa CSC.",
+                  "start_ms": 39160,
+                  "end_ms": 44440
+                }
+              ]
+            }
+          },
+          "bhwe-question": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-question.en.ccebf4e77f16.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "ccebf4e77f166efaf3cfb5076c736dd3f5a1edfa0e893da32bfe8bd4d3ac028f",
+              "sha256": "91535175a0afeb33348c14ded73dee1abdc2932607f9b18dbb5690a8436fed59",
+              "duration_seconds": 39.262,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Demi's question",
+                  "start_ms": 0,
+                  "end_ms": 2320
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Demi hears that accreditation or long BHW service automatically brings BHWE and a government job.",
+                  "start_ms": 2620,
+                  "end_ms": 12300
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "She asks, ‘Are accreditation, civil service eligibility and appointment the same?’",
+                  "start_ms": 12600,
+                  "end_ms": 19440
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "They are different.",
+                  "start_ms": 19740,
+                  "end_ms": 21420
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "This is a fictional situation; Demi's education and qualifying service are not established.",
+                  "start_ms": 21720,
+                  "end_ms": 28360
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "First understand the conditions and evidence before making a promise.",
+                  "start_ms": 28660,
+                  "end_ms": 33300
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Accreditation, BHWE approval and appointment are different.",
+                  "start_ms": 33600,
+                  "end_ms": 39200
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-question.fil.c1bc7e73a262.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "c1bc7e73a262d8602cb13a2180121e781c487481af8f8f8322b7cea318196884",
+              "sha256": "362fb276e59091c0d40c74289c4337025b3d44da287a64de088e2a0ead358487",
+              "duration_seconds": 39.549,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Tanong ni Demi",
+                  "start_ms": 0,
+                  "end_ms": 1520
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "May narinig si Demi: kapag accredited o matagal nang BHW, may BHWE at trabaho na raw agad.",
+                  "start_ms": 1820,
+                  "end_ms": 11420
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Nagtanong siya, ‘Pareho ba ang akreditasyon, civil service eligibility at appointment?’",
+                  "start_ms": 11720,
+                  "end_ms": 18520
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Magkakaibang bagay ang mga ito.",
+                  "start_ms": 18820,
+                  "end_ms": 21340
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Kathang-isip ang sitwasyon; hindi pa natin alam ang edukasyon o qualifying service ni Demi.",
+                  "start_ms": 21640,
+                  "end_ms": 28000
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Unawain muna ang mga kondisyon at ebidensiya bago gumawa ng pangako.",
+                  "start_ms": 28300,
+                  "end_ms": 33620
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Magkaiba ang akreditasyon, BHWE approval at appointment.",
+                  "start_ms": 33920,
+                  "end_ms": 39480
+                }
+              ]
+            }
+          },
+          "bhwe-verification": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-verification.en.f0d27a0c7131.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "f0d27a0c71310e3b559aa982948e186b573bd3a467ff3e71af798fcd017da30e",
+              "sha256": "21c3ab0b13f10322b77483eddc693ccfa9ad98e97bc044c634fafce354400535",
+              "duration_seconds": 55.536,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "A specific question for CSC",
+                  "start_ms": 0,
+                  "end_ms": 3280
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Using a blank planning sheet, Demi asks, ‘For this fictional record, which accredited-service period and education and service evidence should be verified, including the JO/COS arrangement?’",
+                  "start_ms": 3580,
+                  "end_ms": 19340
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The RHU and Local Health Board help identify records and contacts; they do not replace CSC approval.",
+                  "start_ms": 19640,
+                  "end_ms": 27680
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Ask the CSC Regional or Field Office with jurisdiction over the barangay of service.",
+                  "start_ms": 27980,
+                  "end_ms": 34140
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "BHWE takes effect on approval by the responsible CSC Regional Office.",
+                  "start_ms": 34440,
+                  "end_ms": 41080
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Confirm current documentary and form guidance there; this practice submits no actual application or private record.",
+                  "start_ms": 41380,
+                  "end_ms": 49340
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Connect the question to records, conditions and the proper CSC office.",
+                  "start_ms": 49640,
+                  "end_ms": 55480
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-verification.fil.6672b25a27c6.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "6672b25a27c6a71903881c8fb6c14ff2a36a6f6ed2cc9db0ef818df0c0117ff5",
+              "sha256": "896b97ab205fec27a3c86de9b02ab94f6c80e73fd08133f31460d82c98d8bfa0",
+              "duration_seconds": 57.783,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Isang tiyak na tanong sa CSC",
+                  "start_ms": 0,
+                  "end_ms": 2640
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Gumawa si Demi ng tanong gamit ang blankong planning sheet: ‘Para sa kathang-isip na record na ito, aling panahon ng accredited service at anong education at service evidence ang dapat tiyakin, kasama ang JO/COS arrangement?’",
+                  "start_ms": 2940,
+                  "end_ms": 21860
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Tumutulong ang RHU at Local Health Board sa records at contact; hindi nila pinapalitan ang CSC approval.",
+                  "start_ms": 22160,
+                  "end_ms": 29240
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Magtanong sa CSC Regional o Field Office na may sakop sa barangay ng serbisyo.",
+                  "start_ms": 29540,
+                  "end_ms": 35300
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang effectivity ng BHWE ay nakabatay sa approval ng kaukulang CSC Regional Office.",
+                  "start_ms": 35600,
+                  "end_ms": 42520
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Tiyakin doon ang kasalukuyang documentary at form guidance; walang tunay na application o pribadong record na isusumite sa practice na ito.",
+                  "start_ms": 42820,
+                  "end_ms": 51820
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Iugnay ang tanong sa record, kondisyon at tamang CSC office.",
+                  "start_ms": 52120,
+                  "end_ms": 57720
+                }
+              ]
+            }
+          },
+          "evidence-and-scope": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/evidence-and-scope.en.eb3242833134.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "eb324283313454bcbc1fc7e378ca422c5ec8299b034fcc68554b8e2c33a53c7a",
+              "sha256": "b2450bb259910d576c990deab3f5e79d3db0454751b3dc2e134183fd1f5e9d06",
+              "duration_seconds": 74.58,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "One label is not enough",
+                  "start_ms": 0,
+                  "end_ms": 2720
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "The two college years must lead toward a degree.",
+                  "start_ms": 3020,
+                  "end_ms": 6940
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Voluntary BHW service means no salary or compensation except honorarium throughout the five-year service period.",
+                  "start_ms": 7240,
+                  "end_ms": 17040
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "CSC clarifies no government appointment or salary from government plantilla payroll; meal and transport allowances are excluded from salary/compensation.",
+                  "start_ms": 17340,
+                  "end_ms": 29420
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "A Job Order or Contract of Service worker may still qualify; the label alone proves neither qualification nor disqualification.",
+                  "start_ms": 29720,
+                  "end_ms": 40000
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Verify the actual arrangement and all conditions with CSC.",
+                  "start_ms": 40300,
+                  "end_ms": 44940
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "BHWE is appropriate for first-level positions with exceptions: TESDA trade-test positions, positions requiring licenses, stenographer positions, and board-exam or special-law positions.",
+                  "start_ms": 45240,
+                  "end_ms": 60720
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "It is not a professional license or an appointment guarantee; a position also has other qualification requirements.",
+                  "start_ms": 61020,
+                  "end_ms": 69740
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Check evidence and scope; do not decide from a label alone.",
+                  "start_ms": 70040,
+                  "end_ms": 74520
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/evidence-and-scope.fil.5f0b5df3be44.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "5f0b5df3be44b06b705fe4278f0a381dba61c3cfd1b9b932242daa4acda140c3",
+              "sha256": "ba53fc181fa90e2d25aff354f106795119a0b69d8ffb2f8432b4809a6c48da63",
+              "duration_seconds": 72.542,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Hindi sapat ang isang label",
+                  "start_ms": 0,
+                  "end_ms": 2720
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Dapat tungo sa degree ang dalawang taon sa kolehiyo.",
+                  "start_ms": 3020,
+                  "end_ms": 6580
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Sa buong limang-taong service period, voluntary ang BHW service: walang salary/compensation maliban sa honorarium.",
+                  "start_ms": 6880,
+                  "end_ms": 15920
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Nililinaw ng CSC ang kawalan ng government appointment at salary mula sa government plantilla payroll; hindi kabilang sa salary/compensation ang meal at transport allowances.",
+                  "start_ms": 16220,
+                  "end_ms": 28580
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Maaaring maging kwalipikado pa rin ang nasa Job Order o Contract of Service; hindi sapat ang label para sabihing pasado o disqualified.",
+                  "start_ms": 28880,
+                  "end_ms": 37880
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Tiyakin ang aktuwal na arrangement at lahat ng kondisyon sa CSC.",
+                  "start_ms": 38180,
+                  "end_ms": 43020
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Ang BHWE ay para sa naaangkop na first-level positions, may mga exception: TESDA trade-test positions, mga nangangailangan ng license, stenographer positions, at board-exam o special-law positions.",
+                  "start_ms": 43320,
+                  "end_ms": 59320
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Hindi ito professional license o garantiya ng appointment; may iba pang qualification requirements ang posisyon.",
+                  "start_ms": 59620,
+                  "end_ms": 67300
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Suriin ang ebidensiya at saklaw; huwag magpasya batay sa label lamang.",
+                  "start_ms": 67600,
+                  "end_ms": 72480
+                }
+              ]
+            }
+          },
+          "section-4": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.en.6c14f7da5fe8.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "6c14f7da5fe8c2a190331d0fbfe4999fb44d629098e47fe1b0b0d145177d7a03",
+              "sha256": "2f497b7f62a7ae214df88ae0dfcf669b0f11e504499b5b6eff64672fdfb8dc92",
+              "duration_seconds": 69.538,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "BHWE conditions",
+                  "start_ms": 0,
+                  "end_ms": 2960
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "RA 7883 section 6(d) provides the statutory basis for second-grade eligibility after five years of continuous service.",
+                  "start_ms": 3260,
+                  "end_ms": 15180
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "CSC implementing conditions are more detailed.",
+                  "start_ms": 15480,
+                  "end_ms": 19320
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record.",
+                  "start_ms": 19620,
+                  "end_ms": 42260
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Accreditation must precede the qualifying service.",
+                  "start_ms": 42560,
+                  "end_ms": 46320
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Service before 20 February 1995 is not counted.",
+                  "start_ms": 46620,
+                  "end_ms": 51180
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.",
+                  "start_ms": 51480,
+                  "end_ms": 60560
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Verify accreditation, education, qualifying service and a satisfactory record.",
+                  "start_ms": 60860,
+                  "end_ms": 69460
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.fil.2dcc5bce3636.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "2dcc5bce36365dfbeed5e231cae7d2825962983b9221a6f756e0222e27de4023",
+              "sha256": "b80ff04f41f97891d7654c40527bc3895df4c054262d8cfc545a421a4aa9a65b",
+              "duration_seconds": 72.96,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Mga kondisyon ng BHWE",
+                  "start_ms": 0,
+                  "end_ms": 3280
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Ang seksiyon 6(d) ng RA 7883 ay nagbibigay ng batayan para sa second-grade eligibility matapos ang limang taong tuloy-tuloy na serbisyo.",
+                  "start_ms": 3580,
+                  "end_ms": 15420
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "May mas detalyadong implementing conditions ang CSC.",
+                  "start_ms": 15720,
+                  "end_ms": 19840
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Gamitin ang apat na pangkat na ito: akreditasyon ng Local Health Board; hindi bababa sa dalawang taon sa kolehiyo tungo sa isang degree; hindi bababa sa limang taong tuloy-tuloy, aktibo, full-time at boluntaryong serbisyo bilang accredited BHW; at satisfactory service record.",
+                  "start_ms": 20140,
+                  "end_ms": 42460
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Dapat accredited na bago magsimula ang qualifying service.",
+                  "start_ms": 42760,
+                  "end_ms": 47160
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995.",
+                  "start_ms": 47460,
+                  "end_ms": 54060
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Hindi sapat ang akreditasyon lamang; kailangang matugunan at mapatunayan ang naaangkop na kondisyon, at CSC ang nagpapasya sa application.",
+                  "start_ms": 54360,
+                  "end_ms": 64680
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Tiyakin ang akreditasyon, edukasyon, qualifying service at satisfactory record.",
+                  "start_ms": 64980,
+                  "end_ms": 72900
+                }
+              ]
+            }
+          },
+          "service-count": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/service-count.en.77dec67ecd61.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "77dec67ecd61edbd8a16cade3933f8a415a624937349d8b99f4c9954b3e063b1",
+              "sha256": "6c74d9f51ce93006c4de1d55a14f92aa3780df8b5771340b9928b29c91a98836",
+              "duration_seconds": 56.111,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Which service can be counted?",
+                  "start_ms": 0,
+                  "end_ms": 2120
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "All service in these fictional cards is after 20 February 1995.",
+                  "start_ms": 2420,
+                  "end_ms": 8380
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Card A has eight years of total service but only three under accredited status; the first five years before accreditation cannot be included.",
+                  "start_ms": 8680,
+                  "end_ms": 20160
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Card B reports five years of continuous, active, full-time, voluntary and satisfactory service while already accredited, plus school evidence of two college years leading to a degree.",
+                  "start_ms": 20460,
+                  "end_ms": 35420
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "B supports checking the conditions, but it is not CSC approval.",
+                  "start_ms": 35720,
+                  "end_ms": 40280
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Unclear dates, an interruption or missing records require a CSC question, not an invented ruling.",
+                  "start_ms": 40580,
+                  "end_ms": 49020
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Total service and qualifying accredited service are not always the same.",
+                  "start_ms": 49320,
+                  "end_ms": 56040
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-eligibility/service-count.fil.df122545f599.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "df122545f59941c30091b56fb953f99bacfdc4f9d8f19b75a1130fc6c8c50532",
+              "sha256": "fb1e541b3bb46ca041b7a0c9ff48bb292c6cf747da47d5301afa1297d0fc0457",
+              "duration_seconds": 60.212,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Aling serbisyo ang mabibilang?",
+                  "start_ms": 0,
+                  "end_ms": 2320
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Lahat ng serbisyo sa mga kathang-isip na card na ito ay matapos ang 20 Pebrero 1995.",
+                  "start_ms": 2620,
+                  "end_ms": 12460
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Sa Card A, walong taon ang kabuuang serbisyo ngunit tatlo lamang ang nasa accredited status; hindi maisasama ang unang limang taon bago ang akreditasyon.",
+                  "start_ms": 12760,
+                  "end_ms": 24320
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Sa Card B, may limang taong tuloy-tuloy, aktibo, full-time, boluntaryo at satisfactory na serbisyo habang accredited na, at school evidence para sa dalawang taon sa kolehiyo tungo sa degree.",
+                  "start_ms": 24620,
+                  "end_ms": 39860
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "May batayan para suriin ang mga kondisyon sa B, ngunit hindi ito CSC approval.",
+                  "start_ms": 40160,
+                  "end_ms": 45760
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Kung malabo ang petsa, may interruption o kulang ang record, magtanong sa CSC; huwag hulaan ang ruling.",
+                  "start_ms": 46060,
+                  "end_ms": 54180
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Kabuuang serbisyo at qualifying accredited service ay hindi laging pareho.",
+                  "start_ms": 54480,
+                  "end_ms": 60160
                 }
               ]
             }

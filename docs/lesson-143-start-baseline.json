@@ -1,0 +1,871 @@
+{
+  "captured_at": "2026-10-05T06:08:30.303Z",
+  "main_sha": "cdae02a603d8c984ff5c7c568d5dedcfd0143ea8",
+  "release_gate": "Verified independently before clone; work/release-gate143-verified.json",
+  "lesson_uuid": "f1f527f1-aec9-48a8-933b-79fecf63bfb4",
+  "immutable_manifest": {
+    "lesson_key": "bhw-eligibility",
+    "position": 2,
+    "title_fil": "Pag-unawa sa BHWE",
+    "title_en": "Understanding BHWE",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: pag-unawa sa bhwe."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: understanding bhwe."
+    ],
+    "required": true
+  },
+  "published_rows": [
+    {
+      "id": "cf99b391-efbf-4efd-9588-59a7136567fc",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-legal-role",
+      "position": 0,
+      "title_fil": "Legal na batayan ng tungkulin",
+      "title_en": "The legal basis of the role",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: legal na batayan ng tungkulin."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: the legal basis of the role."
+      ],
+      "required": true,
+      "created_at": "2026-09-24 23:37:58.312907+00",
+      "published_revision_id": "5f9cb97b-9e02-4da5-abf2-c0f0d1e8d303",
+      "content_hash": "7a4880da236ea31a78647bb447ba6ff66eb7be701eb442059c3fabf77eddc57e",
+      "read_sections": null,
+      "slides": null,
+      "coverage": null,
+      "sources": null,
+      "assets": null,
+      "featured_asset_id": null
+    },
+    {
+      "id": "84abb8a8-9d6b-4e09-8936-998738d3ff37",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-benefits",
+      "position": 1,
+      "title_fil": "Benepisyo at mga kondisyon",
+      "title_en": "Benefits and conditions",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: benepisyo at mga kondisyon."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: benefits and conditions."
+      ],
+      "required": true,
+      "created_at": "2026-09-24 23:37:58.911385+00",
+      "published_revision_id": "2bf6aaf1-3c70-431f-996e-04866144d1a7",
+      "content_hash": "e752f4f342bd75badfec60d392a19fa09f40bcb43fd6aa077f052f6871898236",
+      "read_sections": [
+        {
+          "id": "benefits-question",
+          "check": null,
+          "body_en": "In this fictional story, someone tells Demi: “Every BHW gets the same allowance automatically.” She does not know whether this is correct. Her accreditation and registration have not been verified either. Instead of promising money, she asks which benefit they mean and which conditions need checking.\n\nRA 7883 provides six categories of benefits. They have different purposes, conditions and responsible authorities. The story video is optional; you can complete Read or Slides without watching it.",
+          "body_fil": "Sa kathang-isip na kuwento, may nagsabi kay Demi: “Pare-pareho at awtomatiko ang allowance ng lahat ng BHW.” Hindi niya alam kung tama ito. Hindi pa rin natitiyak ang kaniyang akreditasyon at rehistrasyon. Sa halip na mangako ng pera, itinanong niya kung anong benepisyo ang tinutukoy at anong kondisyon ang dapat alamin.\n\nAng RA 7883 ay may anim na kategorya ng benepisyo. Magkakaiba ang layunin, kondisyon at awtoridad na kaugnay ng mga ito. Opsyonal ang kuwentong video; maaari mong tapusin ang Read o Slides nang hindi ito pinapanood.",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "heading_en": "Are allowances automatically identical?",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement"
+          ],
+          "heading_fil": "Awtomatiko bang pare-pareho ang allowance?",
+          "takeaway_en": "Name the benefit and verify its conditions before promising anything.",
+          "takeaway_fil": "Pangalanan ang benepisyo at tiyakin ang kondisyon bago mangako."
+        },
+        {
+          "id": "section-3",
+          "check": null,
+          "body_en": "Section 6 of RA 7883 includes hazard allowance and subsistence allowance. Each has its own conditions; we will compare them on a later screen.\n\nIt also includes training, education and career enrichment programs: opportunities for continuing education, training and other educational support. The Act also provides tuition scholarship benefits in state colleges for one child of a BHW unable to use those programs. Civil service eligibility is a separate category with its own CSC qualifications and application; lesson 1.4.3 covers it.\n\nFree legal representation and consultation through the Public Attorney’s Office cover cases arising from or connected with BHW duties, including coercion or interference. Preferential access to loans concerns organized BHW groups with community-based income-generating projects supporting health programs. It is not a promise of a loan to every individual.",
+          "body_fil": "Sa seksiyon 6 ng RA 7883, kabilang ang hazard allowance at subsistence allowance. May sariling kondisyon ang bawat isa; ihahambing natin ang mga ito sa susunod na screen.\n\nKasama rin ang training, education at career enrichment programs: mga pagkakataon sa patuloy na pag-aaral, pagsasanay at iba pang suportang pang-edukasyon. May nakasaad ding scholarship sa tuition sa state colleges para sa isang anak ng BHW na hindi makikinabang sa mga programang iyon. Ang civil service eligibility ay hiwalay na kategorya na may sariling kwalipikasyon at aplikasyon sa CSC; tatalakayin ito sa aralin 1.4.3.\n\nAng libreng legal representation at consultation ng Public Attorney’s Office ay para sa mga kasong kaugnay ng pagganap ng tungkulin bilang BHW, kabilang ang coercion o interference. Ang preferential access sa loans ay para sa organisadong mga grupo ng BHW na may community-based income-generating projects na sumusuporta sa mga programang pangkalusugan. Hindi ito pangako ng pautang sa bawat indibidwal.",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "heading_en": "Six benefit categories",
+          "concept_ids": [
+            "m4.benefits"
+          ],
+          "heading_fil": "Anim na kategorya ng benepisyo",
+          "takeaway_en": "There are six categories; they are not all monthly payments or personal loans.",
+          "takeaway_fil": "Anim ang kategorya; hindi lahat ay buwanang bayad o personal na pautang."
+        },
+        {
+          "id": "registration-and-conditions",
+          "check": null,
+          "body_en": "Section 4 requires registration with the local health board of the city or municipality where service is rendered to receive the Act’s benefits and incentives. It also provides appropriate proof of accreditation. Accreditation and registration are related but distinct. Section 6 refers to accredited BHWs actively and regularly performing their duties, alongside the conditions of each benefit.\n\nUnder section 5, DOH determines the ideal ratio of BHWs to households. The total number of BHWs nationwide must not exceed one percent of the total population. This gives us no basis to invent a barangay quota or decide Demi’s qualification.\n\nSection 7 requires local health board review and approval for benefits using local funds. Not receiving a benefit does not prove that a BHW did something wrong or failed to register. Check the applicable conditions and local implementation without blame.",
+          "body_fil": "Sa seksiyon 4, kailangang magparehistro sa local health board ng lungsod o munisipyo kung saan naglilingkod upang makinabang sa mga benepisyo at insentibo ng batas. May angkop na patunay ng akreditasyon. Magkaugnay ngunit hindi mapagpapalit ang akreditasyon at rehistrasyon. Ang seksiyon 6 ay tumutukoy sa mga akreditadong BHW na aktibo at regular na gumaganap ng kanilang tungkulin, kasama ang partikular na kondisyon ng bawat benepisyo.\n\nSa seksiyon 5, DOH ang magtatakda ng ideal na ratio ng BHW sa bilang ng mga sambahayan. Ang kabuuang bilang ng BHW sa buong bansa ay hindi dapat lumampas sa isang porsiyento ng kabuuang populasyon. Hindi ito batayan upang gumawa tayo ng quota sa isang barangay o hulaan kung kwalipikado si Demi.\n\nSa seksiyon 7, ang benepisyong gagamit ng lokal na pondo ay kailangang repasuhin at aprubahan ng local health board. Kung hindi pa natatanggap ang benepisyo, hindi nito pinatutunayang nagkamali o hindi nagparehistro ang BHW. Alamin ang naaangkop na kondisyon at lokal na pagpapatupad nang walang pagsisi.",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "heading_en": "Registration and further conditions",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement",
+            "m4.bhw-cap"
+          ],
+          "heading_fil": "Rehistrasyon at mga karagdagang kondisyon",
+          "takeaway_en": "Registration is required; it does not guarantee every benefit.",
+          "takeaway_fil": "Kailangan ang rehistrasyon; hindi nito ginagarantiya ang bawat benepisyo."
+        },
+        {
+          "id": "compare-allowances",
+          "check": null,
+          "body_en": "Card A: a fictional volunteer BHW may face risk in the workplace while performing duties. Under section 6(a), hazard allowance concerns foreseeable but unavoidable danger affecting health or life during duty, validated by the proper authorities. The local health board and local peace and order council of the LGU determine the amount. Calling a place “dangerous” does not let us validate the exposure or set payment ourselves.\n\nCard B: a fictional BHW serves within an isolated barangay health station to make services available at any and all times. Under section 6(b), subsistence allowance is equivalent to meals taken during duty, computed according to prevailing circumstances determined by the LGU. A distant home alone is not the statutory condition.\n\nA and B need different verification questions. Their status, validation and approved local amounts are unknown; we promise no receipt of benefits.",
+          "body_fil": "Card A: isang kathang-isip na boluntaryong BHW ang maaaring malantad sa panganib sa lugar ng trabaho habang ginagampanan ang tungkulin. Sa seksiyon 6(a), ang hazard allowance ay para sa foreseeable ngunit unavoidable na panganib na makaaapekto sa kalusugan o buhay habang nagtatrabaho, na dapat i-validate ng tamang awtoridad. Local health board at local peace and order council ng LGU ang magtatakda ng halaga. Hindi sapat ang label na “mapanganib” upang tayo ang magpatunay o magtakda ng bayad.\n\nCard B: isang kathang-isip na BHW ang naglilingkod sa loob ng isolated barangay health station upang maibigay ang serbisyo anumang oras. Sa seksiyon 6(b), ang subsistence allowance ay katumbas ng mga pagkaing kinakain sa panahon ng tungkulin, na kinukuwenta ayon sa umiiral na kalagayang itinatakda ng LGU. Ang “malayo ang bahay” lamang ay hindi ang kondisyon sa batas.\n\nMagkaibang tanong sa verification ang kailangan ng A at B. Hindi natin alam ang kanilang katayuan, validation o aprubadong lokal na halaga; walang pangako ng pagtanggap.",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "heading_en": "Different conditions for two allowances",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement"
+          ],
+          "heading_fil": "Magkaibang kondisyon ng dalawang allowance",
+          "takeaway_en": "Check the specific service and conditions; do not assume one fixed amount.",
+          "takeaway_fil": "Tingnan ang tiyak na serbisyo at kondisyon; huwag magtakda ng iisang halaga."
+        },
+        {
+          "id": "benefit-verification",
+          "check": null,
+          "body_en": "Demi explains: “RA 7883 has six categories with different conditions. Registration where service is rendered is required, and one credential does not establish qualification for every benefit.”\n\nShe asks her supervisor or RHU: “For hazard allowance, who is the right contact to verify accreditation and registration, the required exposure evidence, validation by proper authorities, and local review and approval?” The RHU can help identify the contact; it does not replace the statutory authorities. For legal services, the case must connect with BHW duties and PAO is the named provider; for eligibility, CSC is the relevant office.\n\nDemi uses only a blank question sheet. It is not an official form, application, approval or proof of her status. Use fictional cases in practice; no one needs to share private records or a personal benefit-receipt history.",
+          "body_fil": "Ipinaliwanag ni Demi: “May anim na kategorya sa RA 7883, pero magkakaiba ang kondisyon. Kailangan ang rehistrasyon kung saan naglilingkod, at hindi sapat ang isang credential para sa lahat ng benepisyo.”\n\nTanong niya sa supervisor o RHU: “Para sa hazard allowance, sino ang tamang contact upang matiyak ang akreditasyon at rehistrasyon, ang kailangang ebidensiya ng exposure, ang validation ng tamang awtoridad, at ang lokal na review at pag-apruba?” Maaaring tumulong ang RHU sa pag-alam ng contact; hindi nito pinapalitan ang mga awtoridad sa batas. Kung legal services ang tanong, kaugnay ng tungkulin ang kaso at PAO ang tinutukoy na provider; kung eligibility, CSC ang kaugnay na tanggapan.\n\nBlankong question sheet lamang ang ginagamit ni Demi. Hindi ito opisyal na form, aplikasyon, approval o patunay ng kaniyang katayuan. Gumamit ng kathang-isip na kaso sa pagsasanay; hindi kailangang magbahagi ng pribadong rekord o kasaysayan ng pagtanggap ng benepisyo.",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "heading_en": "Demi’s specific verification question",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement"
+          ],
+          "heading_fil": "Ang tiyak na tanong ni Demi",
+          "takeaway_en": "Ask a specific question without promising money or an outcome.",
+          "takeaway_fil": "Magtanong nang tiyak at walang pangakong pera o resulta."
+        },
+        {
+          "id": "benefits-application-check",
+          "check": {
+            "options": [
+              {
+                "en": "Explain status and registration, validated duty-related exposure and applicable local review; ask the RHU for the appropriate evidence and authority contact before promising anything.",
+                "fil": "Ipaliwanag na kailangan ang katayuan at rehistrasyon, validated na exposure sa tungkulin at naaangkop na local review; itanong sa RHU ang tamang contact para sa ebidensiya at awtoridad bago mangako."
+              },
+              {
+                "en": "Promise the same automatic allowance to everyone; all BHW benefits are the same.",
+                "fil": "Ipangako ang awtomatikong pare-parehong allowance sa lahat; iisa naman ang benepisyo ng BHW."
+              },
+              {
+                "en": "Registration or one credential is enough for all allowances, CSC eligibility and a personal loan; no other conditions need checking.",
+                "fil": "Sapat ang rehistrasyon o isang credential para sa lahat ng allowance, CSC eligibility at personal na loan; hindi na kailangan ang ibang kondisyon."
+              }
+            ],
+            "prompt_en": "What is Demi’s best response about hazard allowance?",
+            "prompt_fil": "Ano ang pinakamainam na tugon ni Demi tungkol sa hazard allowance?",
+            "feedback_en": "First: correct. Hazard allowance has shared status/registration requirements and specific conditions, including proper-authority validation; local funds also require board review/approval. Asking the RHU for a contact is reasonable, without replacing the authorities. Second: incorrect. Conditions and authorities differ; automatic identical payment is unsupported. Third: incorrect. One credential cannot replace exposure, each benefit’s conditions, local review or a separate CSC application; loan access concerns organized groups and qualifying projects, not a personal guarantee.",
+            "feedback_fil": "Una: tama. May shared status/registration requirements at specific conditions ang hazard allowance, kabilang ang validation ng tamang awtoridad; kailangan din ang board review/approval kapag lokal na pondo. Makatwirang contact question ang RHU, hindi kapalit ng awtoridad. Ikalawa: mali. Magkakaiba ang kondisyon at awtoridad; walang batayan ang awtomatikong pantay na bayad. Ikatlo: mali. Hindi pinapalitan ng isang credential ang exposure, kondisyon ng bawat benepisyo, local review o hiwalay na CSC application; para sa organisadong grupo at qualifying projects ang loan access, hindi personal na garantiya.",
+            "correct_option_index": 0
+          },
+          "body_en": "Demi hears that every BHW receives the same allowance. Someone asks about hazard allowance, but status, exposure and local approval are still unverified. What explanation and first step fit best?\n\nChoose the answer naming the benefit, its specific conditions and appropriate verification. Then explain why the other two choices are insufficient. Finishing the online lesson is separate from a facilitator observing this competency.",
+          "body_fil": "Narinig ni Demi na pare-pareho raw ang allowance ng lahat ng BHW. May nagtanong tungkol sa hazard allowance, pero hindi pa verified ang katayuan, exposure o lokal na pag-apruba. Ano ang pinakamainam na paliwanag at unang hakbang?\n\nPiliin ang sagot na may benepisyo, tiyak na kondisyon at tamang verification. Pagkatapos, ipaliwanag kung bakit hindi sapat ang dalawang ibang pagpipilian. Hiwalay ang pagtatapos ng online lesson sa pagmamasid ng facilitator sa kakayahang ito.",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "heading_en": "Choose an explanation with an appropriate step",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement"
+          ],
+          "heading_fil": "Piliin ang paliwanag na may angkop na hakbang",
+          "takeaway_en": "Explain the condition and choose an appropriate verification step.",
+          "takeaway_fil": "Ipaliwanag ang kondisyon at piliin ang naaangkop na verification."
+        }
+      ],
+      "slides": [
+        {
+          "id": "slide-benefits-question",
+          "check": null,
+          "layout": "scene",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "display_en": "Demi’s question\nWhich benefit?\nWhich condition needs checking?",
+          "heading_en": "Are allowances automatically identical?",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement"
+          ],
+          "display_fil": "Tanong ni Demi\nAno ang benepisyo?\nAnong kondisyon ang dapat tiyakin?",
+          "heading_fil": "Awtomatiko bang pare-pareho ang allowance?",
+          "narration_en": "In this fictional story, someone tells Demi: “Every BHW gets the same allowance automatically.” She does not know whether this is correct. Her accreditation and registration have not been verified either. Instead of promising money, she asks which benefit they mean and which conditions need checking.\n\nRA 7883 provides six categories of benefits. They have different purposes, conditions and responsible authorities. The story video is optional; you can complete Read or Slides without watching it.",
+          "narration_fil": "Sa kathang-isip na kuwento, may nagsabi kay Demi: “Pare-pareho at awtomatiko ang allowance ng lahat ng BHW.” Hindi niya alam kung tama ito. Hindi pa rin natitiyak ang kaniyang akreditasyon at rehistrasyon. Sa halip na mangako ng pera, itinanong niya kung anong benepisyo ang tinutukoy at anong kondisyon ang dapat alamin.\n\nAng RA 7883 ay may anim na kategorya ng benepisyo. Magkakaiba ang layunin, kondisyon at awtoridad na kaugnay ng mga ito. Opsyonal ang kuwentong video; maaari mong tapusin ang Read o Slides nang hindi ito pinapanood."
+        },
+        {
+          "id": "slide-section-3",
+          "check": null,
+          "layout": "process",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "display_en": "Allowances: hazard and subsistence\nDevelopment: training, education, career enrichment and civil service eligibility\nSupport: free legal services and preferential access to loans",
+          "heading_en": "Six benefit categories",
+          "concept_ids": [
+            "m4.benefits"
+          ],
+          "display_fil": "Allowance: hazard at subsistence\nPag-unlad: training, education, career enrichment at civil service eligibility\nSuporta: libreng legal services at preferential access sa loans",
+          "heading_fil": "Anim na kategorya ng benepisyo",
+          "narration_en": "Section 6 of RA 7883 includes hazard allowance and subsistence allowance. Each has its own conditions; we will compare them on a later screen.\n\nIt also includes training, education and career enrichment programs: opportunities for continuing education, training and other educational support. The Act also provides tuition scholarship benefits in state colleges for one child of a BHW unable to use those programs. Civil service eligibility is a separate category with its own CSC qualifications and application; lesson 1.4.3 covers it.\n\nFree legal representation and consultation through the Public Attorney’s Office cover cases arising from or connected with BHW duties, including coercion or interference. Preferential access to loans concerns organized BHW groups with community-based income-generating projects supporting health programs. It is not a promise of a loan to every individual.",
+          "narration_fil": "Sa seksiyon 6 ng RA 7883, kabilang ang hazard allowance at subsistence allowance. May sariling kondisyon ang bawat isa; ihahambing natin ang mga ito sa susunod na screen.\n\nKasama rin ang training, education at career enrichment programs: mga pagkakataon sa patuloy na pag-aaral, pagsasanay at iba pang suportang pang-edukasyon. May nakasaad ding scholarship sa tuition sa state colleges para sa isang anak ng BHW na hindi makikinabang sa mga programang iyon. Ang civil service eligibility ay hiwalay na kategorya na may sariling kwalipikasyon at aplikasyon sa CSC; tatalakayin ito sa aralin 1.4.3.\n\nAng libreng legal representation at consultation ng Public Attorney’s Office ay para sa mga kasong kaugnay ng pagganap ng tungkulin bilang BHW, kabilang ang coercion o interference. Ang preferential access sa loans ay para sa organisadong mga grupo ng BHW na may community-based income-generating projects na sumusuporta sa mga programang pangkalusugan. Hindi ito pangako ng pautang sa bawat indibidwal."
+        },
+        {
+          "id": "slide-registration-and-conditions",
+          "check": null,
+          "layout": "process",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "display_en": "Accreditation and proof\nRegistration where service is rendered\nActive, regular duties + benefit conditions\nNational cap: no invented local quota",
+          "heading_en": "Registration and further conditions",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement",
+            "m4.bhw-cap"
+          ],
+          "display_fil": "Akreditasyon at patunay\nRehistrasyon kung saan naglilingkod\nAktibo at regular na tungkulin + kondisyon ng benepisyo\nNational cap: hindi imbentong lokal na quota",
+          "heading_fil": "Rehistrasyon at mga karagdagang kondisyon",
+          "narration_en": "Section 4 requires registration with the local health board of the city or municipality where service is rendered to receive the Act’s benefits and incentives. It also provides appropriate proof of accreditation. Accreditation and registration are related but distinct. Section 6 refers to accredited BHWs actively and regularly performing their duties, alongside the conditions of each benefit.\n\nUnder section 5, DOH determines the ideal ratio of BHWs to households. The total number of BHWs nationwide must not exceed one percent of the total population. This gives us no basis to invent a barangay quota or decide Demi’s qualification.\n\nSection 7 requires local health board review and approval for benefits using local funds. Not receiving a benefit does not prove that a BHW did something wrong or failed to register. Check the applicable conditions and local implementation without blame.",
+          "narration_fil": "Sa seksiyon 4, kailangang magparehistro sa local health board ng lungsod o munisipyo kung saan naglilingkod upang makinabang sa mga benepisyo at insentibo ng batas. May angkop na patunay ng akreditasyon. Magkaugnay ngunit hindi mapagpapalit ang akreditasyon at rehistrasyon. Ang seksiyon 6 ay tumutukoy sa mga akreditadong BHW na aktibo at regular na gumaganap ng kanilang tungkulin, kasama ang partikular na kondisyon ng bawat benepisyo.\n\nSa seksiyon 5, DOH ang magtatakda ng ideal na ratio ng BHW sa bilang ng mga sambahayan. Ang kabuuang bilang ng BHW sa buong bansa ay hindi dapat lumampas sa isang porsiyento ng kabuuang populasyon. Hindi ito batayan upang gumawa tayo ng quota sa isang barangay o hulaan kung kwalipikado si Demi.\n\nSa seksiyon 7, ang benepisyong gagamit ng lokal na pondo ay kailangang repasuhin at aprubahan ng local health board. Kung hindi pa natatanggap ang benepisyo, hindi nito pinatutunayang nagkamali o hindi nagparehistro ang BHW. Alamin ang naaangkop na kondisyon at lokal na pagpapatupad nang walang pagsisi."
+        },
+        {
+          "id": "slide-compare-allowances",
+          "check": null,
+          "layout": "process",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "display_en": "Hazard: duty-related risk + validation\nAmount: local health board and peace and order council\nSubsistence: isolated BHS + availability at all times\nMeals during duty: LGU determination",
+          "heading_en": "Different conditions for two allowances",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement"
+          ],
+          "display_fil": "Hazard: panganib sa tungkulin + validation\nHalaga: local health board at peace and order council\nSubsistence: isolated BHS + availability anumang oras\nPagkain sa tungkulin: LGU determination",
+          "heading_fil": "Magkaibang kondisyon ng dalawang allowance",
+          "narration_en": "Card A: a fictional volunteer BHW may face risk in the workplace while performing duties. Under section 6(a), hazard allowance concerns foreseeable but unavoidable danger affecting health or life during duty, validated by the proper authorities. The local health board and local peace and order council of the LGU determine the amount. Calling a place “dangerous” does not let us validate the exposure or set payment ourselves.\n\nCard B: a fictional BHW serves within an isolated barangay health station to make services available at any and all times. Under section 6(b), subsistence allowance is equivalent to meals taken during duty, computed according to prevailing circumstances determined by the LGU. A distant home alone is not the statutory condition.\n\nA and B need different verification questions. Their status, validation and approved local amounts are unknown; we promise no receipt of benefits.",
+          "narration_fil": "Card A: isang kathang-isip na boluntaryong BHW ang maaaring malantad sa panganib sa lugar ng trabaho habang ginagampanan ang tungkulin. Sa seksiyon 6(a), ang hazard allowance ay para sa foreseeable ngunit unavoidable na panganib na makaaapekto sa kalusugan o buhay habang nagtatrabaho, na dapat i-validate ng tamang awtoridad. Local health board at local peace and order council ng LGU ang magtatakda ng halaga. Hindi sapat ang label na “mapanganib” upang tayo ang magpatunay o magtakda ng bayad.\n\nCard B: isang kathang-isip na BHW ang naglilingkod sa loob ng isolated barangay health station upang maibigay ang serbisyo anumang oras. Sa seksiyon 6(b), ang subsistence allowance ay katumbas ng mga pagkaing kinakain sa panahon ng tungkulin, na kinukuwenta ayon sa umiiral na kalagayang itinatakda ng LGU. Ang “malayo ang bahay” lamang ay hindi ang kondisyon sa batas.\n\nMagkaibang tanong sa verification ang kailangan ng A at B. Hindi natin alam ang kanilang katayuan, validation o aprubadong lokal na halaga; walang pangako ng pagtanggap."
+        },
+        {
+          "id": "slide-benefit-verification",
+          "check": null,
+          "layout": "process",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "display_en": "Which benefit?\nWhich status, evidence and conditions?\nWhich authority or contact?",
+          "heading_en": "Demi’s specific verification question",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement"
+          ],
+          "display_fil": "Anong benepisyo?\nAnong katayuan, ebidensiya at kondisyon?\nSino ang tamang awtoridad o contact?",
+          "heading_fil": "Ang tiyak na tanong ni Demi",
+          "narration_en": "Demi explains: “RA 7883 has six categories with different conditions. Registration where service is rendered is required, and one credential does not establish qualification for every benefit.”\n\nShe asks her supervisor or RHU: “For hazard allowance, who is the right contact to verify accreditation and registration, the required exposure evidence, validation by proper authorities, and local review and approval?” The RHU can help identify the contact; it does not replace the statutory authorities. For legal services, the case must connect with BHW duties and PAO is the named provider; for eligibility, CSC is the relevant office.\n\nDemi uses only a blank question sheet. It is not an official form, application, approval or proof of her status. Use fictional cases in practice; no one needs to share private records or a personal benefit-receipt history.",
+          "narration_fil": "Ipinaliwanag ni Demi: “May anim na kategorya sa RA 7883, pero magkakaiba ang kondisyon. Kailangan ang rehistrasyon kung saan naglilingkod, at hindi sapat ang isang credential para sa lahat ng benepisyo.”\n\nTanong niya sa supervisor o RHU: “Para sa hazard allowance, sino ang tamang contact upang matiyak ang akreditasyon at rehistrasyon, ang kailangang ebidensiya ng exposure, ang validation ng tamang awtoridad, at ang lokal na review at pag-apruba?” Maaaring tumulong ang RHU sa pag-alam ng contact; hindi nito pinapalitan ang mga awtoridad sa batas. Kung legal services ang tanong, kaugnay ng tungkulin ang kaso at PAO ang tinutukoy na provider; kung eligibility, CSC ang kaugnay na tanggapan.\n\nBlankong question sheet lamang ang ginagamit ni Demi. Hindi ito opisyal na form, aplikasyon, approval o patunay ng kaniyang katayuan. Gumamit ng kathang-isip na kaso sa pagsasanay; hindi kailangang magbahagi ng pribadong rekord o kasaysayan ng pagtanggap ng benepisyo."
+        },
+        {
+          "id": "slide-benefits-application-check",
+          "check": {
+            "options": [
+              {
+                "en": "Explain status and registration, validated duty-related exposure and applicable local review; ask the RHU for the appropriate evidence and authority contact before promising anything.",
+                "fil": "Ipaliwanag na kailangan ang katayuan at rehistrasyon, validated na exposure sa tungkulin at naaangkop na local review; itanong sa RHU ang tamang contact para sa ebidensiya at awtoridad bago mangako."
+              },
+              {
+                "en": "Promise the same automatic allowance to everyone; all BHW benefits are the same.",
+                "fil": "Ipangako ang awtomatikong pare-parehong allowance sa lahat; iisa naman ang benepisyo ng BHW."
+              },
+              {
+                "en": "Registration or one credential is enough for all allowances, CSC eligibility and a personal loan; no other conditions need checking.",
+                "fil": "Sapat ang rehistrasyon o isang credential para sa lahat ng allowance, CSC eligibility at personal na loan; hindi na kailangan ang ibang kondisyon."
+              }
+            ],
+            "prompt_en": "What is Demi’s best response about hazard allowance?",
+            "prompt_fil": "Ano ang pinakamainam na tugon ni Demi tungkol sa hazard allowance?",
+            "feedback_en": "First: correct. Hazard allowance has shared status/registration requirements and specific conditions, including proper-authority validation; local funds also require board review/approval. Asking the RHU for a contact is reasonable, without replacing the authorities. Second: incorrect. Conditions and authorities differ; automatic identical payment is unsupported. Third: incorrect. One credential cannot replace exposure, each benefit’s conditions, local review or a separate CSC application; loan access concerns organized groups and qualifying projects, not a personal guarantee.",
+            "feedback_fil": "Una: tama. May shared status/registration requirements at specific conditions ang hazard allowance, kabilang ang validation ng tamang awtoridad; kailangan din ang board review/approval kapag lokal na pondo. Makatwirang contact question ang RHU, hindi kapalit ng awtoridad. Ikalawa: mali. Magkakaiba ang kondisyon at awtoridad; walang batayan ang awtomatikong pantay na bayad. Ikatlo: mali. Hindi pinapalitan ng isang credential ang exposure, kondisyon ng bawat benepisyo, local review o hiwalay na CSC application; para sa organisadong grupo at qualifying projects ang loan access, hindi personal na garantiya.",
+            "correct_option_index": 0
+          },
+          "layout": "decision",
+          "asset_ids": [
+            "demi-benefits-conditions"
+          ],
+          "display_en": "Benefit + condition\nAppropriate contact and verification\nNo automatic identical payment",
+          "heading_en": "Choose an explanation with an appropriate step",
+          "concept_ids": [
+            "m4.benefits",
+            "m4.registration-requirement"
+          ],
+          "display_fil": "Benepisyo + kondisyon\nTamang contact at verification\nWalang awtomatikong pantay na bayad",
+          "heading_fil": "Piliin ang paliwanag na may angkop na hakbang",
+          "narration_en": "Demi hears that every BHW receives the same allowance. Someone asks about hazard allowance, but status, exposure and local approval are still unverified. What explanation and first step fit best?\n\nChoose the answer naming the benefit, its specific conditions and appropriate verification. Then explain why the other two choices are insufficient. Finishing the online lesson is separate from a facilitator observing this competency.",
+          "narration_fil": "Narinig ni Demi na pare-pareho raw ang allowance ng lahat ng BHW. May nagtanong tungkol sa hazard allowance, pero hindi pa verified ang katayuan, exposure o lokal na pag-apruba. Ano ang pinakamainam na paliwanag at unang hakbang?\n\nPiliin ang sagot na may benepisyo, tiyak na kondisyon at tamang verification. Pagkatapos, ipaliwanag kung bakit hindi sapat ang dalawang ibang pagpipilian. Hiwalay ang pagtatapos ng online lesson sa pagmamasid ng facilitator sa kakayahang ito."
+        }
+      ],
+      "coverage": [
+        {
+          "id": "m4.benefits",
+          "read_ids": [
+            "benefits-question",
+            "section-3",
+            "registration-and-conditions",
+            "compare-allowances",
+            "benefit-verification",
+            "benefits-application-check"
+          ],
+          "slide_ids": [
+            "slide-benefits-question",
+            "slide-section-3",
+            "slide-registration-and-conditions",
+            "slide-compare-allowances",
+            "slide-benefit-verification",
+            "slide-benefits-application-check"
+          ],
+          "source_ids": [
+            "m4.benefits-source",
+            "ra7883-benefits",
+            "csc-bhwe"
+          ]
+        },
+        {
+          "id": "m4.registration-requirement",
+          "read_ids": [
+            "benefits-question",
+            "registration-and-conditions",
+            "compare-allowances",
+            "benefit-verification",
+            "benefits-application-check"
+          ],
+          "slide_ids": [
+            "slide-benefits-question",
+            "slide-registration-and-conditions",
+            "slide-compare-allowances",
+            "slide-benefit-verification",
+            "slide-benefits-application-check"
+          ],
+          "source_ids": [
+            "m4.registration-requirement-source",
+            "ra7883-benefits"
+          ]
+        },
+        {
+          "id": "m4.bhw-cap",
+          "read_ids": [
+            "registration-and-conditions"
+          ],
+          "slide_ids": [
+            "slide-registration-and-conditions"
+          ],
+          "source_ids": [
+            "m4.bhw-cap-source"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "m4.benefits-source",
+          "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf",
+          "title": "DOH Facilitator Guide (2022), original PDF25–26 / printed16–17: timing and benefit-source recommendations",
+          "pdf_pages": [
+            25,
+            26
+          ]
+        },
+        {
+          "id": "m4.registration-requirement-source",
+          "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf",
+          "title": "DOH Facilitator Guide (2022), original PDF27 / printed18: board responsibilities",
+          "pdf_pages": [
+            27
+          ]
+        },
+        {
+          "id": "m4.bhw-cap-source",
+          "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html",
+          "title": "RA7883 section5: DOH household ratio and nationwide cap; accessed5 October2026"
+        },
+        {
+          "id": "ra7883-benefits",
+          "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html",
+          "title": "RA7883 sections4,6(a–f),7: registration, benefit-specific conditions and local-fund review; accessed5 October2026"
+        },
+        {
+          "id": "csc-bhwe",
+          "url": "https://www.csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility",
+          "title": "CSC Barangay Health Worker Eligibility: separate qualifications and application; accessed5 October2026"
+        }
+      ],
+      "assets": [
+        {
+          "id": "demi-benefits-conditions",
+          "path": "/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png",
+          "alt_en": "Demi and a colleague discuss a benefits question using two blank question sheets.",
+          "alt_fil": "Tinatalakay ni Demi at ng kasamahan ang tanong tungkol sa benepisyo gamit ang dalawang blankong question sheets.",
+          "caption_en": "Benefit · Conditions · Verification.",
+          "provenance": "Original built-in image_gen illustration, 5 October 2026, derived from the owner-approved fictional Demi reference with SHA-256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. Exact prompt: Use case: identity-preserve. Create an original landscape draft educational illustration for lesson 1.4.2 Benefits and conditions. Input image is an approved identity and style reference. Preserve Demi, the woman on the left: fictional Filipina adult about 35, medium brown skin, oval face, short slightly wavy dark bob tucked behind ears, plain teal collared blouse, dark trousers, no badge. Preserve her recognizable face and natural proportions. Create a different moment of the same nonclinical discussion: Demi thoughtfully gestures with an open hand toward two separate entirely blank question/planning sheets on a wooden table while the adult Filipina colleague in a cream blouse listens. Show both complete faces and all visible hands fully inside frame with generous margins. Airy Philippine community meeting room, daylight, modest shelves and plants, realistic painterly educational illustration matching reference. Wide composition suitable for contained phone display. No certificates, actual payments, coins, cash, readable forms, records, logos, official seals, badges, signs, text, watermark or clinical procedure. This is a planning question; accreditation and entitlement remain unverified. Owner approved the exact reviewed package on 5 October 2026; exact hashes in docs/lesson-142-owner-approval.json. No human listening or independent policy SME approval is asserted.",
+          "caption_fil": "Benepisyo · Kondisyon · Verification.",
+          "content_hash": "2f0be96fe3d80d36c4a1dc9f4d5ff2442731f05c5f66eda999109fd7eac23a1b",
+          "review_status": "approved"
+        },
+        {
+          "id": "bhw-benefits-story",
+          "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+          "alt_en": "Narrated story: Demi distinguishes benefits and conditions and asks a useful verification question.",
+          "videos": {
+            "en": {
+              "path": "/training/bhw-1-4/bhw-benefits-gemini-en-6a207010c1d6.mp4",
+              "poster": {
+                "path": "/training/bhw-1-4/bhw-benefits-gemini-en-dbcf24125f91-poster.jpg",
+                "content_hash": "dbcf24125f91bd4a2b49e41af2fe89e76aaa538d0f5fc16066075087d37d8bbf"
+              },
+              "captions": {
+                "path": "/training/bhw-1-4/bhw-benefits-gemini-en-fb1e0a5db943.vtt",
+                "content_hash": "fb1e0a5db94351fe032c1001124c47b488542014c0f555c0bd0983b4067c6ebc"
+              },
+              "duration_s": 77,
+              "content_hash": "6a207010c1d6bcaef641f2c835b41fbfc291e83c574b5e0f186ba85cd5ef551e"
+            },
+            "fil": {
+              "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-be0ad0574ae9.mp4",
+              "poster": {
+                "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+                "content_hash": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de"
+              },
+              "captions": {
+                "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-f55ea0ba5050.vtt",
+                "content_hash": "f55ea0ba5050bf0bc9b1b565612aad6f48ff3e0f412a8e8c6d64a76b71e58c51"
+              },
+              "duration_s": 84,
+              "content_hash": "be0ad0574ae952d3c72277b55466103f2ad5ded1dcab9154d093e49565497a21"
+            }
+          },
+          "alt_fil": "Kuwentong may salaysay: ipinaliliwanag ni Demi ang benepisyo at kondisyon at nagtatanong tungkol sa verification.",
+          "caption_en": "Six fictional scenes with Gemini narration and captions.",
+          "provenance": "Original Remotion animation for lesson 1.4.2; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed media on 5 October 2026; independent policy SME review is not claimed. Owner approved the exact reviewed package on 5 October 2026; exact hashes in docs/lesson-142-owner-approval.json. No human listening or independent policy SME approval is asserted.",
+          "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions.",
+          "content_hash": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de",
+          "review_status": "approved"
+        }
+      ],
+      "featured_asset_id": "bhw-benefits-story"
+    },
+    {
+      "id": "f1f527f1-aec9-48a8-933b-79fecf63bfb4",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-eligibility",
+      "position": 2,
+      "title_fil": "Pag-unawa sa BHWE",
+      "title_en": "Understanding BHWE",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: pag-unawa sa bhwe."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: understanding bhwe."
+      ],
+      "required": true,
+      "created_at": "2026-09-24 23:37:59.500304+00",
+      "published_revision_id": "7146719b-b829-45c1-bddd-87b58a96ed76",
+      "content_hash": "3a2be55f35143fa9294a7224ac506c0d5aaff425c52645a8c4805bac57a4b8c5",
+      "read_sections": [
+        {
+          "id": "section-4",
+          "check": {
+            "options": [
+              {
+                "en": "In official CSC guidance and with the responsible office.",
+                "fil": "Sa opisyal na CSC guidance at kaukulang tanggapan."
+              },
+              {
+                "en": "Only through hearsay.",
+                "fil": "Sa sabi-sabi lamang."
+              }
+            ],
+            "prompt_en": "Where should BHWE requirements be confirmed?",
+            "prompt_fil": "Saan titiyakin ang BHWE requirements?",
+            "feedback_en": "In official CSC guidance and with the responsible office. Explain why using the lesson situation.",
+            "feedback_fil": "Sa opisyal na CSC guidance at kaukulang tanggapan. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+            "correct_option_index": 0
+          },
+          "body_en": "There is a separate qualification for BHW Eligibility under the Civil Service Commission. Four conditions are required: accredited by the local health board; completed a minimum of two (2) years of college; actively and voluntarily serving continuously for five (5) years or more; and having a satisfactory service record as an accredited BHW in the community.\n\nThis is not the same thing as general accreditation — it asks for more, and it is for BHWs who want official eligibility in the civil service.",
+          "body_fil": "May hiwalay na kwalipikasyon para sa BHW Eligibility sa ilalim ng Civil Service Commission. Apat na kondisyon ang kailangan: akreditado ng local health board; nakatapos ng minimum na dalawang (2) taon sa kolehiyo; aktibo at boluntaryong naglilingkod nang tuloy-tuloy sa loob ng limang (5) taon o higit pa; at may satisfactory service bilang accredited BHW sa komunidad.\n\nHindi ito parehong bagay sa pangkalahatang akreditasyon — mas mataas ang hinihingi nito, at para ito sa mga BHW na nais magkaroon ng opisyal na eligibility sa serbisyo sibil.",
+          "asset_ids": [
+            "practice-map"
+          ],
+          "heading_en": "BHW Eligibility (BHWE) in the Civil Service",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "heading_fil": "Ang BHW Eligibility (BHWE) sa Civil Service",
+          "takeaway_en": "BHWE needs four conditions — accreditation, two years of college, five years of continuous service, and a satisfactory record. Missing even one means it isn't met yet.",
+          "takeaway_fil": "Apat na kondisyon ang kailangan sa BHWE — akreditasyon, dalawang taon sa kolehiyo, limang taon ng tuloy-tuloy na serbisyo, at satisfactory service. Kulang ang isa, hindi pa ito matutugunan."
+        }
+      ],
+      "slides": [
+        {
+          "id": "slide-section-4",
+          "check": {
+            "options": [
+              {
+                "en": "In official CSC guidance and with the responsible office.",
+                "fil": "Sa opisyal na CSC guidance at kaukulang tanggapan."
+              },
+              {
+                "en": "Only through hearsay.",
+                "fil": "Sa sabi-sabi lamang."
+              }
+            ],
+            "prompt_en": "Where should BHWE requirements be confirmed?",
+            "prompt_fil": "Saan titiyakin ang BHWE requirements?",
+            "feedback_en": "In official CSC guidance and with the responsible office. Explain why using the lesson situation.",
+            "feedback_fil": "Sa opisyal na CSC guidance at kaukulang tanggapan. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+            "correct_option_index": 0
+          },
+          "layout": "decision",
+          "asset_ids": [
+            "practice-map"
+          ],
+          "display_en": "BHWE: accreditation; at least two years of college; five years of continuous, active, satisfactory voluntary service.\nConfirm documentation and all conditions with CSC.",
+          "heading_en": "BHW Eligibility (BHWE) in the Civil Service",
+          "concept_ids": [
+            "m4.bhwe"
+          ],
+          "display_fil": "BHWE: akreditasyon; hindi bababa sa dalawang taon ng kolehiyo; limang taon ng tuloy-tuloy, aktibo at satisfactory na boluntaryong serbisyo.\nTiyakin sa CSC ang dokumento at lahat ng kondisyon.",
+          "heading_fil": "Ang BHW Eligibility (BHWE) sa Civil Service",
+          "narration_en": "There is a separate qualification for BHW Eligibility under the Civil Service Commission. Four conditions are required: accredited by the local health board; completed a minimum of two (2) years of college; actively and voluntarily serving continuously for five (5) years or more; and having a satisfactory service record as an accredited BHW in the community.\n\nThis is not the same thing as general accreditation — it asks for more, and it is for BHWs who want official eligibility in the civil service.",
+          "narration_fil": "May hiwalay na kwalipikasyon para sa BHW Eligibility sa ilalim ng Civil Service Commission. Apat na kondisyon ang kailangan: akreditado ng local health board; nakatapos ng minimum na dalawang (2) taon sa kolehiyo; aktibo at boluntaryong naglilingkod nang tuloy-tuloy sa loob ng limang (5) taon o higit pa; at may satisfactory service bilang accredited BHW sa komunidad.\n\nHindi ito parehong bagay sa pangkalahatang akreditasyon — mas mataas ang hinihingi nito, at para ito sa mga BHW na nais magkaroon ng opisyal na eligibility sa serbisyo sibil."
+        }
+      ],
+      "coverage": [
+        {
+          "id": "m4.bhwe",
+          "read_ids": [
+            "section-4"
+          ],
+          "slide_ids": [
+            "slide-section-4"
+          ],
+          "source_ids": [
+            "m4.bhwe-source"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "m4.bhwe-source",
+          "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+          "title": "BHW Reference Manual — inherited page reference; final audit pending",
+          "pdf_pages": [
+            13
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "id": "practice-map",
+          "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+          "alt_en": "Three steps: understand, verify and practice.",
+          "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+          "caption_en": "Draft discussion guide; review required.",
+          "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+          "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+          "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+          "review_status": "approved"
+        }
+      ],
+      "featured_asset_id": null
+    },
+    {
+      "id": "648d2168-74dd-4451-958c-e4e5d8724a17",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-accreditation",
+      "position": 3,
+      "title_fil": "Proseso ng akreditasyon",
+      "title_en": "The accreditation process",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: proseso ng akreditasyon."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: the accreditation process."
+      ],
+      "required": true,
+      "created_at": "2026-09-24 23:38:00.090752+00",
+      "published_revision_id": "f04d4c13-5e71-4863-99ce-a5de1d376c89",
+      "content_hash": "c991799838a61579434e2a052a0476b95bd6931973ec949bedf314e3196987d0",
+      "read_sections": null,
+      "slides": null,
+      "coverage": null,
+      "sources": null,
+      "assets": null,
+      "featured_asset_id": null
+    },
+    {
+      "id": "1a2029ac-c29c-471f-b492-9307be567959",
+      "module_id": "5b638e25-76e2-4bc7-a997-8ce47531fa60",
+      "lesson_key": "bhw-follow-up",
+      "position": 4,
+      "title_fil": "Maayos na follow-up",
+      "title_en": "Following up constructively",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: maayos na follow-up."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: following up constructively."
+      ],
+      "required": true,
+      "created_at": "2026-09-24 23:38:00.681775+00",
+      "published_revision_id": "406c7c1f-b375-420d-bd8a-5bdc6555f406",
+      "content_hash": "17d5d300481cb12648e8d32e142c869079a26793619b03a2dd8c5d1c32a892e1",
+      "read_sections": null,
+      "slides": null,
+      "coverage": null,
+      "sources": null,
+      "assets": null,
+      "featured_asset_id": null
+    },
+    {
+      "id": "83ae2910-d953-4ce1-a2da-c47dd838920a",
+      "module_id": "ffcfba33-3690-47c9-bebd-a6a5240ec39f",
+      "lesson_key": "bhs-improvement",
+      "position": 4,
+      "title_fil": "Isang mungkahing maisasagawa",
+      "title_en": "One workable suggestion",
+      "objectives_fil": [
+        "Maipaliwanag at mailapat sa isang sitwasyon: isang mungkahing maisasagawa."
+      ],
+      "objectives_en": [
+        "Explain and apply in a situation: one workable suggestion."
+      ],
+      "required": true,
+      "created_at": "2026-09-24 23:37:57.710415+00",
+      "published_revision_id": "11e382fe-5872-4b63-9f85-9a78e32aeb9c",
+      "content_hash": "b3b856d651b4f7bf9bbc17d786d9f88dfde0b6d26ba6f7e0b62288248444f7bc",
+      "read_sections": null,
+      "slides": null,
+      "coverage": null,
+      "sources": null,
+      "assets": null,
+      "featured_asset_id": null
+    }
+  ],
+  "sibling_lesson_file_hashes": {
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/competency.json": "944ffdce811b43e32fe2be6ceb5cdff3e0f026a887adaf34d3fde89c6541807f",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/facilitator.en.md": "562210669c3c1a79cb3a63cf286eb34b05c84580dcd3f9c01ffd1c4e2f353c62",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/facilitator.fil.md": "37d669273f8b547d056bc4e0161b84fc1be3118f8e8b354e553412989cada5c6",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/lesson.json": "e837ab51d4bb300fbd2b885dee375ef75b237cc5d6bea49bcb55b3f18d1a0ef2",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/read.en.md": "8e6280ad6ebf607dfa44c8af2e1fc6cc44158e8737f3102897e9983ec4061ae2",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/read.fil.md": "a7619382dae4f8533631b33c136d4c4c8c7084505378a132bb59015818cd02a7",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/slides.json": "b1b697a69f001cd01e3556f3a2253d19d6855f84ce94016e95537a93fccc4a8a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/competency.json": "3c011ca4606e442f61b8617dd604ca3f5a787d8a560f9bdad37b2937f1977a6e",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/facilitator.en.md": "7d881e4c9d370abbd0e5d8e1938564438fbc4475b3a84d1f5b3cbbee1445916b",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/facilitator.fil.md": "4c7e5af6df95cc1b10d54ce12de0f5d38d990aa778d30168255bd81a100c8ad5",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/lesson.json": "7629c0c12a85bda071455fbe964533e836a5e2875c0d71b221ce06906effb818",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/read.en.md": "f64325c4c22a64a20e3d0bfa0213b9fecacfbafadac47509dd6d2883eb29e4af",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/read.fil.md": "8b4d702bb796d76fbccd892fdbceed6d6b73b577d14d1d0a7a91c50bc8a1ee34",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/slides.json": "bdd3ea20e568714af20f51c8d8d486c905ff91e99c403270729e58ec03e8339c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/competency.json": "944ffdce811b43e32fe2be6ceb5cdff3e0f026a887adaf34d3fde89c6541807f",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/facilitator.en.md": "67a902eca094faac3ef715c700bc9e3d990abb595c68ba49ba8c2ff26241e685",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/facilitator.fil.md": "848decb0b85ffed9ab77368124a777d62674c427ed3efeb9c816a680417aceea",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/lesson.json": "5ff594173039e2e3f15439bca638c42bda649168419ca5da029a1495ec105f1c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/read.en.md": "7f56dc65d75095dd061236f9c7380fe71edb963517795b6f9893d2953be6138a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/read.fil.md": "d5e0f5283555b1e9d2da5d2e47e80fc8c043bde8f2e6fb85101d22673da90a7e",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/slides.json": "6a2d087dc84066f0b550ab3ddb7d3b7e2b35fa1d38eb592a0293ac41c490448c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/competency.json": "2fb3e47c5e807535e81e7898a7f19cacdaf033238ad3c1c18f7620574b1a6b74",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/facilitator.en.md": "56180038e7a7db02ed95e3e8f70b5e6238c64c08e48fe8ca8d4d15551c81a33b",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/facilitator.fil.md": "df67cbd1bf38b3f71a35abaffd699156d3d7ad57cd5391fb533ae72ed95f092a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/lesson.json": "30afeb3f8f56fd9e9ed305c82cdae44203589eaa934ce9ac116dade6f9fc388c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/read.en.md": "3fa5ec88ae058524fd105f90ce80f3937daed8670bba069c3f7242fbf7dd29e3",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/read.fil.md": "1c8e1129711aa57605c95aab5a90a58883bff18d13ea177918ba3a6e252e042d",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/slides.json": "25c0ec966778e8fc528a3bdea75ca60660e6f73be4c7f085367bf9ee15c5562f"
+  },
+  "released_lesson142": {
+    "id": "84abb8a8-9d6b-4e09-8936-998738d3ff37",
+    "published_revision_id": "2bf6aaf1-3c70-431f-996e-04866144d1a7",
+    "content_hash": "e752f4f342bd75badfec60d392a19fa09f40bcb43fd6aa077f052f6871898236",
+    "approved_media": [
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.en.b914c725592c.mp3",
+        "sha256": "00856e25238b12ae6d0d3f6f229359fb3523df9542dc47a1f341e25137203fcc",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 296020
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/benefit-verification.fil.27ba61e0b912.mp3",
+        "sha256": "75d80f048872d194dcf2ec56a404296ee24eef408f1d6e23fba6661d2b8bad85",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 311380
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.en.247d74cb5442.mp3",
+        "sha256": "27d3169fdde2c0f3f054986d2501298e415b253446240c4bc1ab7ce3e370d5c9",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 169587
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/benefits-application-check.fil.5d42dd79acc1.mp3",
+        "sha256": "55dfcc76d4b82e2a736553f86b392f9b51ddec8f0cf430652dfdf9823c8d98af",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 179200
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/benefits-question.en.a64e75cf9fee.mp3",
+        "sha256": "8b63d4e0b64ea568e41c2a88521c4f24ca59dd79ce71676cb509ceeac6f5d80c",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 183589
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/benefits-question.fil.c6d00b3bfd9d.mp3",
+        "sha256": "72227bdbd3465fd3369165e706f8ac7dd9d099cfae0c6395acf77c32c7c29256",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 192052
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.en.07bda07be88f.mp3",
+        "sha256": "57a93243a65bfe921017cfa421db80883317fafd87dd4308621e0ea88f93c9a4",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 303961
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/compare-allowances.fil.6fb8f0acff78.mp3",
+        "sha256": "0199e16bd55897daf884534bc564ce3fe2f1312d5f2edd1b1ae9a519a69468ca",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 356310
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.en.7447399efe22.mp3",
+        "sha256": "db9ba7d7168e873297e16a501476c7b55ceb505634583704c80a0a0f647b7d60",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 308349
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/registration-and-conditions.fil.9f9fcafea029.mp3",
+        "sha256": "c59b1784d1d33d977c5c040ce3e112b64b70e7ee6892aef23f723d06fa3c95f6",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 347847
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/section-3.en.2a1065f7d96c.mp3",
+        "sha256": "129e18c1e368a528ccc25d20d811f20954f53c40df96ae855d096da4ffb88e2f",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 299990
+      },
+      {
+        "path": "/training/audio/04-ra7883/bhw-benefits/section-3.fil.ab61c1531cf7.mp3",
+        "sha256": "9d2a3d1e09b89be35048781c6b3ac2dc69ac249d9bfa3119967b82303c769c3c",
+        "status": 200,
+        "content_type": "audio/mpeg",
+        "bytes": 345025
+      },
+      {
+        "path": "/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png",
+        "sha256": "2f0be96fe3d80d36c4a1dc9f4d5ff2442731f05c5f66eda999109fd7eac23a1b",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 2143988
+      },
+      {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+        "sha256": "cf79ce818f0ced3de8cb1ff81568126e0dc607b32aa5301d0985d890bb70a8de",
+        "status": 200,
+        "content_type": "image/jpeg",
+        "bytes": 55878
+      },
+      {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-be0ad0574ae9.mp4",
+        "sha256": "be0ad0574ae952d3c72277b55466103f2ad5ded1dcab9154d093e49565497a21",
+        "status": 200,
+        "content_type": "video/mp4",
+        "bytes": 1161940
+      },
+      {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-f55ea0ba5050.vtt",
+        "sha256": "f55ea0ba5050bf0bc9b1b565612aad6f48ff3e0f412a8e8c6d64a76b71e58c51",
+        "status": 200,
+        "content_type": "text/vtt; charset=utf-8",
+        "bytes": 1290
+      },
+      {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-en-6a207010c1d6.mp4",
+        "sha256": "6a207010c1d6bcaef641f2c835b41fbfc291e83c574b5e0f186ba85cd5ef551e",
+        "status": 200,
+        "content_type": "video/mp4",
+        "bytes": 1062903
+      },
+      {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-en-fb1e0a5db943.vtt",
+        "sha256": "fb1e0a5db94351fe032c1001124c47b488542014c0f555c0bd0983b4067c6ebc",
+        "status": 200,
+        "content_type": "text/vtt; charset=utf-8",
+        "bytes": 1195
+      },
+      {
+        "path": "/training/bhw-1-4/bhw-benefits-gemini-en-dbcf24125f91-poster.jpg",
+        "sha256": "dbcf24125f91bd4a2b49e41af2fe89e76aaa538d0f5fc16066075087d37d8bbf",
+        "status": 200,
+        "content_type": "image/jpeg",
+        "bytes": 54359
+      }
+    ]
+  },
+  "approved142_package_hashes": [
+    {
+      "name": "lesson-1.4.2-demi-review.html",
+      "sha256": "27dc33d23ad80a5689698b9db3e1b1080ae41eb2ba624b4b1f0b48f796f4d34f"
+    },
+    {
+      "name": "lesson-1.4.2-demi-review.zip",
+      "sha256": "88ea26881f6b00d5e812dfaa6f6107915ed3af39e65aaa569283e00dc65fa6a9"
+    }
+  ],
+  "sibling_lesson_git_blob_hashes": {
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/competency.json": "5c1d834b33d8eaada9ec2d090c1f7d973faad9944d5b93ed544feaf30cc1565a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/facilitator.en.md": "3b41d1e715b052cd251598852e927ec23a4a77779697f9de9fb0dc7f12f4fd86",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/facilitator.fil.md": "f663b563fe6d7d214ea25f45f776aca1ce31584e82c3208e174724542f90c2d3",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/lesson.json": "7ddde5e3b6132f6437aeed607c21415cea582847ef68053b71ac3ee7888264bd",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/read.en.md": "2a3ae1be2e70aafbb320c7890e14966c6377d5ea4ed1437f3fae3e75cf67775f",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/read.fil.md": "2d73f21c1d4751264b28538643409df435c99d8f58be98888ad032c6eebaa597",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/slides.json": "2a597ecd42a46d4eadf794e1758c038af536a98b2506d8669198f26fbe7dd5ce",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/competency.json": "4bd1fd476d26acdf9c9d31648cb932175e42c6c6b131eee2b65e940d503c3b42",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/facilitator.en.md": "594b0ddc9a2d76d232307875a11aa50d6385eeecf4fb4cf6659c3110544270aa",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/facilitator.fil.md": "2b8cad1f31a7e4088e23c8018f2285f16ab460fa81b58fa2ebe257ac4c7c6c1c",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/lesson.json": "69dc06f5b78420837afd2f2c2f056fcb97522ba9edde9a03859873dac94af53e",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/read.en.md": "94e6a2f9e33ecd03b2e574829ea9f0c530330d2606ece1b27d28c0c11aa5c184",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/read.fil.md": "96b09bedda2cb49352134252aa998472682235a750bd98cc59aa0de3698b9741",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/slides.json": "adcccb95e18e10f0c99eb904e1ef57aa032e2a5b393a8aaf0589813d90cd28a7",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/competency.json": "5c1d834b33d8eaada9ec2d090c1f7d973faad9944d5b93ed544feaf30cc1565a",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/facilitator.en.md": "1309ec6391122f78314fb1db039eaa9aee9eba73d333fdf5bcd0b4604718e5f6",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/facilitator.fil.md": "c2e3404b781d1266ecde09c9d8362d2beefda9cfe1a6c95355cca94d64ccc997",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/lesson.json": "d54320a14f8853369e7bcb5bd271000c2f15343e57cb0b4b3f663416bc46062e",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/read.en.md": "348209460b77776fd64ed356345600f906576de9c6775d2d6a8930fd442a5912",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/read.fil.md": "7277733a3c29bfb8b5e0d4490b0eee292d66696b9a29d5565a1e1810215a9966",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/slides.json": "96bed4ed41f212477dc2e7e2083f0cba8d43a9cc8eaad4e7f49f95ce7fb65a2f",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/competency.json": "82ea9e2cd95ca6a8846c7b99be2454a8a3df3c0895705f6b29a596df3d1ba38b",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/facilitator.en.md": "1cd5d75f7726f081e1b3d5a1dd68228eb08c88a7f64897550b2ba41955da49b9",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/facilitator.fil.md": "ea45b63590078cab144fff4633599f082b2db0802d31baf74d1200540f62ec99",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/lesson.json": "cd57b666f5139ca7e5c5ce7cadcd2f6adcec6446731f91762cbe927f477fcb72",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/read.en.md": "039243a518d180a521c67906aeece18f98d3ca0bd521fb93a46eeb4bd172ff84",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/read.fil.md": "67212fc51c929466569663232a4ea750ca856b0d92c6d62c61c458c75e1fc93d",
+    "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/slides.json": "3d730880985f8e5ec74a4509cc3c8cd6e6e8374abc0d0082a185e44268697cfd"
+  },
+  "cross_platform_note": "Original sibling_lesson_file_hashes retain the before-authoring Windows working-copy byte snapshot, including existing CRLF. Supplemental sibling_lesson_git_blob_hashes are exact original release-commit Git blob bytes, usable on Linux. No protected sibling file has been edited."
+}
