@@ -6,7 +6,7 @@ import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {planReferenceNarration,mp3AudioFrames} from '../lib/reference-narration.mjs';
-import {BHW_ACCREDITATION_STORY_STYLES} from '../lib/tts-providers/gemini.mjs';
+import {BHW_ACCREDITATION_FIL_STEADY_STYLE,BHW_ACCREDITATION_STORY_STYLES} from '../lib/tts-providers/gemini.mjs';
 import {BHW_ACCREDITATION_BEATS} from '../../remotion/src/bhw-accreditation/narration.ts';
 import {lessonPosition,continueLesson} from '../../src/lib/elearning/reference-navigation.ts';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
@@ -35,7 +35,7 @@ describe('lesson 1.4.4 Demi accreditation draft',()=>{
   const check=source.sections.at(-1).check;expect(check).toEqual(authored.revision.slides.at(-1).check);expect(check.options).toHaveLength(3);expect(check.correct_option_index).toBe(0);expect(check.feedback_en).toMatch(/First:.*Second:.*Third:/);expect(check.feedback_fil).toMatch(/Una:.*Ikalawa:.*Ikatlo:/);
  });
  it('uses only target Gemini styles and invalidates exact text/style/byte caches',()=>{
-  const fresh=planReferenceNarration(modules,{lessons:{}},()=>null);expect(fresh).toHaveLength(12);expect(fresh.every(i=>i.provider==='gemini'&&i.speechStyle===BHW_ACCREDITATION_STORY_STYLES[i.language])).toBe(true);
+  const fresh=planReferenceNarration(modules,{lessons:{}},()=>null);expect(fresh).toHaveLength(12);expect(fresh.every(i=>i.provider==='gemini'&&i.speechStyle===BHW_ACCREDITATION_STORY_STYLES[i.language]+(i.language==='fil'&&['section-5','accreditation-application-check'].includes(i.sectionId)?BHW_ACCREDITATION_FIL_STEADY_STYLE:''))).toBe(true);
   const changed=structuredClone(modules);changed[0].lessons[0].revision.read_sections[0].body_en+=' Verify the record.';expect(planReferenceNarration(changed,manifest,fileHash).find(i=>i.sectionId===ids[0]&&i.language==='en').action).toBe('render');
   const old=BHW_ACCREDITATION_STORY_STYLES.en;try{BHW_ACCREDITATION_STORY_STYLES.en+=' Pause.';expect(planReferenceNarration(modules,manifest,fileHash).find(i=>i.language==='en').action).toBe('render');}finally{BHW_ACCREDITATION_STORY_STYLES.en=old;}
   expect(planReferenceNarration(modules,manifest,()=> 'wrong').every(i=>i.action==='render')).toBe(true);

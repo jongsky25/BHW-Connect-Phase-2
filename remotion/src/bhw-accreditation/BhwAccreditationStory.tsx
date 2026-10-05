@@ -13,8 +13,12 @@ export const calculateBhwAccreditationMetadata: CalculateMetadataFunction<BhwAcc
   const response = await fetch(staticFile(`bhw-accreditation/narration-${props.language}.json`));
   if (!response.ok) throw new Error("BhwAccreditation story requires measured narration timings");
   const timing: Timings = await response.json();
-  if (timing.language !== props.language || timing.beats.length !== BHW_ACCREDITATION_BEATS.length ||
-    timing.beats.some((b, i) => b.zone !== BHW_ACCREDITATION_BEATS[i].id || b.end_ms <= b.start_ms))
+  if (timing.language !== props.language || !Number.isFinite(timing.durationSeconds) || timing.durationSeconds <= 0 ||
+    timing.durationSeconds + 1.1 > 90 || timing.beats.length !== BHW_ACCREDITATION_BEATS.length ||
+    timing.beats[0].start_ms !== 0 || timing.beats.some((b, i) =>
+      b.zone !== BHW_ACCREDITATION_BEATS[i].id || !Number.isFinite(b.start_ms) || !Number.isFinite(b.end_ms) ||
+      b.end_ms <= b.start_ms || b.end_ms > timing.durationSeconds * 1000 + 50 ||
+      (i > 0 && b.start_ms < timing.beats[i - 1].end_ms)))
     throw new Error("BhwAccreditation scene timing mismatch");
   const boundaries = [...timing.beats.map(b => b.start_ms), timing.durationSeconds * 1000 + 1100];
   const beatFrames = timing.beats.map((_, i) => Math.round(boundaries[i + 1] * ACCREDITATION_FPS / 1000) - Math.round(boundaries[i] * ACCREDITATION_FPS / 1000));
