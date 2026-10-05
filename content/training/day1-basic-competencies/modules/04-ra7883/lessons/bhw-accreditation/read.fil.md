@@ -1,6 +1,6 @@
 ## [accreditation-question] Tanong ni Demi
 
-Naghahanda si Demi ng tanong tungkol sa rehistrasyon at akreditasyon. ‘Sino ang tumitingin sa aplikasyon, at paano ko matitiyak ang opisyal na pasya?’ Kathang-isip ang sitwasyong ito; hindi pa natin alam kung may aplikasyon, rehistrasyon o akreditasyon si Demi. Sa RA 7883, nakaugnay ang akreditasyon sa local health board, ayon sa gabay ng DOH. Magkaugnay ngunit magkaibang hakbang ang rehistrasyon at akreditasyon. Ang pagtatanong, pagdalo sa pagsasanay o pagkakaroon ng titulo ay hindi patunay na tapos na ang proseso.
+Naghahanda si Demi ng tanong tungkol sa rehistrasyon at akreditasyon. ‘Sino ang tumitingin sa aplikasyon, at saan ko makikita ang opisyal na tala ng pasya?’ Kathang-isip ang sitwasyong ito; hindi pa natin alam kung may aplikasyon, rehistrasyon o akreditasyon si Demi. Sa RA 7883, nakaugnay ang akreditasyon sa local health board, ayon sa gabay ng DOH. Magkaugnay ngunit magkaibang hakbang ang rehistrasyon at akreditasyon. Ang pagtatanong, pagdalo sa pagsasanay o pagkakaroon ng titulo ay hindi patunay na tapos na ang proseso.
 
 ## [section-5] Tungkulin sa proseso
 

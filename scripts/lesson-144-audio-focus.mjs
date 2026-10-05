@@ -7,6 +7,7 @@ const ffmpeg=getExecutablePath({indent:false,logLevel:'error',type:'ffmpeg',bina
 const mf=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/narration.json','utf8'));
 const tracks=mf.lessons['bhw-accreditation'].sections;
 const requests=[
+ {id:'opener-question-fil',section:'accreditation-question',language:'fil',start:0,end:19,question:'Transcribe the question completely without correcting speech from context. Is the question about where to see the official decision record clear, grammatically intact and intelligible? State uncertainty.'},
  {id:'monitoring-verb-fil',section:'section-5',language:'fil',start:39.2,end:45.5,question:'Transcribe every spoken word exactly, without correcting grammar or a verb from context. Is the verb before “ang serbisyo” clearly articulated? Describe the audible consonants and any uncertainty.'},
  {id:'different-decisions-fil',section:'section-5',language:'fil',start:45.5,end:50.98,question:'Transcribe the entire short sentence exactly, without normalizing colloquial words. Are the words after “Magkaiba” clear, and are accreditation and benefit review distinguished intelligibly?'},
  {id:'eligibility-initialism-fil',section:'accreditation-application-check',language:'fil',start:24.64,end:31.68,question:'Transcribe every word and every spelled letter in this excerpt. Which letters are spoken after “training certificate”? State any ambiguity or clipping; do not infer the acronym from policy context.'},
@@ -22,6 +23,9 @@ const requests=[
 ];
 const report={date:new Date().toISOString(),source_commit:process.env.GITHUB_SHA??null,model,method:'Focused model review of decoded actual MP3 excerpts; first-pass responses retained separately. No human listening or owner approval.',records:[]};
 for(const q of requests){const t=tracks[q.section][q.language],file=root+'/public'+t.src;
+ if(q.id==='monitoring-verb-fil'){const sentence=t.timings.find(x=>x.text.includes('monitoring sa serbisyo'));if(!sentence)throw Error('Monitoring sentence missing');q.start=Math.max(0,sentence.end_ms/1000-15);q.end=sentence.end_ms/1000;}
+ if(q.id==='different-decisions-fil'){const sentence=t.timings.find(x=>x.text.startsWith('Magkahiwalay'));if(!sentence)throw Error('Decision sentence missing');q.start=sentence.start_ms/1000;q.end=sentence.end_ms/1000;}
+ if(q.id==='eligibility-initialism-fil'){const sentence=t.timings.find(x=>x.text.includes('Barangay Health Worker Eligibility'));if(!sentence)throw Error('Eligibility sentence missing');q.start=sentence.start_ms/1000;q.end=sentence.end_ms/1000;}
  if(q.ending){q.start=Math.max(0,t.duration_seconds-16);q.end=t.duration_seconds;}
  const excerpt=execFileSync(ffmpeg,['-v','error','-ss',String(q.start),'-i',file,'-t',String(q.end-q.start),'-f','wav','-acodec','pcm_s16le','-ac','1','-ar','24000','pipe:1'],{maxBuffer:8e6});
  // Admin-authored fictional training media only, never learner/patient data.
