@@ -1,7 +1,7 @@
 import {AbsoluteFill, Audio, Img, Series, spring, staticFile, useCurrentFrame, useVideoConfig, type CalculateMetadataFunction} from "remotion";
 import {BHW_LEGAL_ROLE_BEATS} from "./narration";
 
-// New lesson 1.4.1 draft; explicit owner approval pending.
+// Lesson 1.4.1 package owner-approved on 5 October 2026; reviewed media bytes preserved.
 // Each language uses measured narration boundaries, including its final summary.
 
 export const LEGAL_ROLE_FPS = 30;
