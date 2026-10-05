@@ -1,0 +1,58 @@
+name: Lesson 1.4.1 draft Gemini media
+
+on:
+  push:
+    branches: [codex/lesson-141-demi-proposal]
+    paths:
+      - .github/workflows/lesson141-media.yml
+      - scripts/lesson-141-media-build.mjs
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lesson141-draft-media-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  draft-media:
+    if: github.ref == 'refs/heads/codex/lesson-141-demi-proposal'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Generate lesson 1.4.1 media
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-141-media-build.mjs
+      - name: Model-mediated audio review of actual completed tracks
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-141-audio-review.mjs
+      - name: Save review artifacts, including completed partial tracks on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lesson141-draft-media
+          retention-days: 14
+          path: |
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/lesson.json
+            public/training/audio/04-ra7883/bhw-legal-role/
+            public/training/bhw-1-4/bhw-legal-role-gemini-*
+            remotion/public/bhw-legal-role/
+            remotion/src/Root.tsx
+            docs/lesson-141-media-generation.json
+            docs/lesson-141-audio-review.json
+          if-no-files-found: error

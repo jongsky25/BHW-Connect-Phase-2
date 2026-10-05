@@ -19,10 +19,10 @@
         "m4.legal-basis"
       ],
       "asset_ids": [
-        "practice-map"
+        "demi-legal-basis"
       ],
-      "takeaway_fil": "Ang pagtatanong tungkol sa nararapat matanggap ay hindi kasakiman — ito ay bahagi ng pagiging responsableng BHW.",
-      "takeaway_en": "Asking about your benefits isn't greed — it's part of being a responsible BHW.",
+      "takeaway_fil": "Magtanong tungkol sa legal na batayan; huwag ipagpalagay ang katayuan.",
+      "takeaway_en": "Ask about the legal basis; do not assume status.",
       "check": null
     },
     {
@@ -30,25 +30,79 @@
       "concept_ids": [
         "m4.legal-basis"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "May legal na batayan ang tungkulin ng BHW — hindi lang ito kagustuhan, kundi bahagi ng RA 7883.",
-      "takeaway_en": "The BHW's duty has a legal basis — it is not just goodwill, it is part of RA 7883.",
+      "asset_ids": [
+        "demi-legal-basis"
+      ],
+      "takeaway_fil": "Magkaugnay ang pagsasanay, boluntaryong serbisyo at akreditasyon sa depinisyon.",
+      "takeaway_en": "Training, voluntary service and accreditation belong together in the definition.",
+      "check": null
+    },
+    {
+      "id": "roles-and-authority",
+      "concept_ids": [
+        "m4.legal-basis"
+      ],
+      "asset_ids": [
+        "demi-legal-basis"
+      ],
+      "takeaway_fil": "Iba ang tumutulong sa proseso sa awtoridad na nag-aakredita.",
+      "takeaway_en": "Process support and accreditation authority are different roles.",
+      "check": null
+    },
+    {
+      "id": "status-and-other-processes",
+      "concept_ids": [
+        "m4.legal-basis"
+      ],
+      "asset_ids": [
+        "demi-legal-basis"
+      ],
+      "takeaway_fil": "Huwag gawing awtomatikong benepisyo o appointment ang akreditasyon.",
+      "takeaway_en": "Do not turn accreditation into automatic benefits or an appointment.",
+      "check": null
+    },
+    {
+      "id": "explain-and-verify",
+      "concept_ids": [
+        "m4.legal-basis"
+      ],
+      "asset_ids": [
+        "demi-legal-basis"
+      ],
+      "takeaway_fil": "Magbigay ng paliwanag at isang makatwirang unang hakbang sa pag-verify.",
+      "takeaway_en": "Give an explanation and one reasonable first verification step.",
+      "check": null
+    },
+    {
+      "id": "legal-basis-check",
+      "concept_ids": [
+        "m4.legal-basis"
+      ],
+      "asset_ids": [
+        "demi-legal-basis"
+      ],
+      "takeaway_fil": "Batayan, awtoridad, ebidensiya: ipaliwanag nang hindi nanghuhula.",
+      "takeaway_en": "Basis, authority, evidence: explain without guessing.",
       "check": {
-        "prompt_fil": "Sino ang may papel sa akreditasyon ng BHW?",
-        "prompt_en": "Who has a role in BHW accreditation?",
+        "prompt_fil": "Ano ang pinakamainam na tugon ni Demi?",
+        "prompt_en": "What is Demi’s best response?",
         "options": [
           {
-            "fil": "Ang local health board sa itinakdang proseso.",
-            "en": "The local health board through the defined process."
+            "fil": "Iugnay ang pagsasanay, boluntaryong serbisyo at akreditasyon ng local health board sa RA 7883; itanong sa RHU ang tamang contact para matiyak ang training record at patunay ng akreditasyon.",
+            "en": "Connect training, voluntary service and local health board accreditation under RA 7883; ask the RHU for the appropriate contact to verify the training record and proof of accreditation."
           },
           {
-            "fil": "Ang BHW mismo lang.",
-            "en": "Only the BHW themself."
+            "fil": "Sapat na ang matagal na pagtulong at paanyaya; ang karanasan mismo ang patunay ng akreditasyon.",
+            "en": "Long service and an invitation are enough; experience itself proves accreditation."
+          },
+          {
+            "fil": "Dahil tumutulong na siya, ipangako na ang allowance at government appointment; saka na tingnan ang mga rekord.",
+            "en": "Because she already helps, promise the allowance and government appointment; check the records later."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ang local health board sa itinakdang proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "The local health board through the defined process. Explain why using the lesson situation."
+        "feedback_fil": "Una: tama. Kasama sa depinisyon ang pagsasanay, boluntaryong primary health care at akreditasyon ng local health board ayon sa gabay ng DOH; makatwirang unang hakbang ang pag-alam sa contact at ebidensiya. Ikalawa: hindi sapat ang karanasan o paanyaya upang patunayan ang akreditasyon. Ikatlo: may hiwalay na rehistrasyon at mga kondisyon sa benepisyo at CSC eligibility; walang batayan ang pangako ng allowance o appointment.",
+        "feedback_en": "First: correct. The definition includes training, voluntary primary health care and local health board accreditation under DOH guidelines; identifying the contact and evidence is a reasonable first step. Second: experience or an invitation is insufficient proof of accreditation. Third: benefit registration, benefit conditions and CSC eligibility are separate; promising an allowance or appointment is unsupported."
       }
     }
   ],
@@ -57,38 +111,60 @@
       "id": "m4.legal-basis",
       "read_ids": [
         "section-1",
-        "section-2"
+        "section-2",
+        "roles-and-authority",
+        "status-and-other-processes",
+        "explain-and-verify",
+        "legal-basis-check"
       ],
       "slide_ids": [
         "slide-section-1",
-        "slide-section-2"
+        "slide-section-2",
+        "slide-roles-and-authority",
+        "slide-status-and-other-processes",
+        "slide-explain-and-verify",
+        "slide-legal-basis-check"
       ],
       "source_ids": [
-        "m4.legal-basis-source"
+        "m4.legal-basis-source",
+        "ra7883-definition",
+        "csc-bhwe"
       ]
     }
   ],
   "sources": [
     {
       "id": "m4.legal-basis-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "DOH BHW Facilitator Guide (2022): definition PDF 10 / printed 2; training PDF 25 / printed 16; accreditation PDF 27 / printed 18",
       "pdf_pages": [
-        13
+        10,
+        25,
+        27
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf"
+    },
+    {
+      "id": "ra7883-definition",
+      "title": "Republic Act 7883, sections 3–4; conditions in sections 6–7 (accessed 5 October 2026)",
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html"
+    },
+    {
+      "id": "csc-bhwe",
+      "title": "CSC Barangay Health Worker Eligibility: separate application and conditions (accessed 5 October 2026)",
+      "url": "https://www.csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "demi-legal-basis",
+      "path": "/training/bhw-1-4/demi-legal-basis-032a985f9c33.png",
+      "content_hash": "032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2",
+      "alt_fil": "Nagtatanong si Demi sa health-team support person sa mesa ng health station; blanko ang learning sheet.",
+      "alt_en": "Demi asks a health-team support person a question at a health-station desk; the learning sheet is blank.",
+      "caption_fil": "Unawain ang batayan. Tiyakin ang katayuan.",
+      "caption_en": "Understand the basis. Verify status.",
+      "provenance": "Original built-in imagegen, 5 October 2026 Asia/Manila. New fictional Demi identity; draft awaiting owner approval. Model identifier not returned. Exact prompt: Use case: illustration-story. Asset type: original fictional character reference and lesson scene for Philippine BHW training lesson 1.4.1. Create a warm polished editorial illustration, landscape 3:2. Demi is a fictional adult Filipina around 35, medium brown skin, oval face, short slightly wavy dark bob hair tucked behind ears, teal plain collared blouse, dark trousers, no badge. She sits at a modest barangay health station desk in a nonclinical discussion with an adult Filipina health-team support person in a plain cream blouse. Demi asks an attentive thoughtful question, one hand open in a natural gesture; the support person listens. A blank learning sheet and pencil on desk. Spacious bright clean room with window and simple shelving, warm daylight, natural believable anatomy. Frame both entire faces, upper bodies and all visible hands with safe margins. No patients, clinical actions, medicines, certificate presentation, seal, official credential, name tag, readable text, logos or watermarks. Demi must be a new distinctive face, not a renamed prior character. Calm supportive learning mood, clear readable faces, tasteful teal and warm sand palette. This is a draft fictional educational illustration.",
+      "review_status": "draft"
     }
   ]
 }

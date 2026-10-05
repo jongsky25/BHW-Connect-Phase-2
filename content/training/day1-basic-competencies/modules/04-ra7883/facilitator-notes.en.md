@@ -9,7 +9,7 @@ Suggested split:
 
 | Part | Time |
 |---|---|
-| Opening: "Have you ever been too shy to ask?" | 15 min |
+| Opening: Demi asks what establishes BHW status | 15 min |
 | Legal basis and accreditation | 30 min |
 | Benefits under RA 7883 | 30 min |
 | BHW Eligibility (BHWE) in the Civil Service | 30 min |
@@ -18,9 +18,7 @@ Suggested split:
 
 ## Delivery script (follows the lesson's sections)
 
-1. **Open with Josie's question.** Ask the group: "Have you heard of a
-   benefit you weren't sure applied to you too? Were you too shy to
-   ask?" Use this to open before introducing RA 7883.
+1. **Open with Demi’s status question.** Ask what experience and an invitation prove, then distinguish training, voluntary primary health care and local health board accreditation. No status or benefit is assumed.
 2. **On the legal-basis section,** emphasize that the basis for the
    work is not just "goodwill" — it is law. This is the detail most
    easily missed in a rush.
@@ -62,8 +60,7 @@ asking about them isn't greed, it's a right.
 
 ## Answer key to the retrieval checks
 
-1. **"Who accredits a BHW..."** → The local health board under RA 7883
-   (not the midwife or a fellow BHW).
+1. **Lesson 1.4.1: Demi’s best response** → Choice 1: connect training, voluntary service and local health board accreditation; ask the RHU for the appropriate evidence-verification contact. Choice 2 mistakes experience for accreditation; choice 3 promises an allowance/appointment without checking separate conditions.
 2. **"Which of the following is NOT required for BHWE..."** → A
    four-year college degree is not required — BHWE only asks for two
    years of college.

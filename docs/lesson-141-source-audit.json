@@ -1,0 +1,134 @@
+{
+  "access_date": "2026-10-05",
+  "timezone": "Asia/Manila",
+  "review_status": "draft; model source review, not independent legal/policy SME review",
+  "manual": {
+    "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf",
+    "cached_original": "C:/Users/Rae Jane/Documents/Codex/2026-10-03/e-2/work/facilitator133.pdf",
+    "sha256": "041a0d63fab9f23235b927b029118159709f612f67889708398c75fada096837",
+    "pages": 150,
+    "reopened_and_rendered": [
+      {
+        "pdf": 10,
+        "printed": 2,
+        "claims": [
+          "Statutory BHW definition",
+          "BHWs support nurses and midwives; accreditation is not a professional licence"
+        ]
+      },
+      {
+        "pdf": 25,
+        "printed": 16,
+        "claims": [
+          "Three-hour whole-competency training recommendation",
+          "Read RA 7883 and IRR; present local processes"
+        ]
+      },
+      {
+        "pdf": 27,
+        "printed": 18,
+        "claims": [
+          "Local health board accreditation and registration responsibility",
+          "Committee evaluates/recommends to board; evidence of decisions and certificates"
+        ]
+      }
+    ],
+    "page_identity": "Original PDF page, printed page and repository transcription page are distinct."
+  },
+  "sources": [
+    {
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html",
+      "opened": true,
+      "sections": [
+        "3",
+        "4",
+        "6",
+        "7"
+      ],
+      "claims": [
+        "Training programs under accredited government/nongovernment organization, voluntary community primary health care and local health board accreditation under DOH guidelines",
+        "Registration with city/municipal local health board for benefits; appropriate proof of accreditation",
+        "Individual benefit conditions and board review for local expenditure"
+      ],
+      "limitations": "Section 3 definition is not a universal clinical permission rule. Section 2 supports primary health care approach but no claim that the Act created every BHS. Learner text is paraphrase, not quotation."
+    },
+    {
+      "url": "https://www.csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility",
+      "opened": true,
+      "claims": [
+        "BHWE has conditions and application",
+        "Accredited service, education and continuous service requirements; approval by CSC Regional Office",
+        "Eligibility excludes positions requiring professional licences/board examinations"
+      ],
+      "limitations": "Used to distinguish processes, not teach full BHWE requirements or guarantee employment."
+    },
+    {
+      "url": "https://camalaniugan.gov.ph/wp-content/uploads/2026/04/EO-25-updating-BHW-RAC.pdf",
+      "opened": true,
+      "claims": [
+        "A current LGU creates/updates a registration/accreditation committee linked to the board"
+      ],
+      "limitations": "Local example only; target jurisdiction not specified. Do not transplant forms/committee composition into the lesson."
+    },
+    {
+      "url": "https://legacy.senate.gov.ph/lis/committee_rpt.aspx?congress=20&q=35",
+      "search_retrieved": true,
+      "claims": [
+        "Committee Report 35 proposes SBN-1905 in substitution for earlier bills"
+      ],
+      "limitations": "A bill and committee report are not enacted replacement law."
+    },
+    {
+      "url": "https://congress.gov.ph/committees/committee/view/0522",
+      "search_retrieved": true,
+      "claims": [
+        "2026 committee listings contain pending BHW amendment bills"
+      ],
+      "limitations": "No enacted replacement located; absence in search is not conclusive proof of current law."
+    }
+  ],
+  "retrieval_failures": [
+    {
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/2888",
+      "reason": "Full page failed; search excerpt only"
+    },
+    {
+      "url": "https://legacy.senate.gov.ph/lis/bill_res.aspx?congress=20&q=SBN-1905",
+      "reason": "403 on direct fetch; latest full legislative history unverified"
+    },
+    {
+      "url": "https://doh.gov.ph/faqs/What-are-the-incentives-and-benefits-of-BHWs-under-the-Implementing-Rules-and-Regulations-IRR-of-R.A.-7883",
+      "reason": "Failed old URL; not treated as completed audit"
+    }
+  ],
+  "timing": {
+    "whole_competency_minutes": 180,
+    "authority": "DOH manual reporting TESDA recommendations; not independent current TESDA TR audit",
+    "lesson_minutes": 45,
+    "lesson_split": [
+      15,
+      10,
+      5,
+      10,
+      5
+    ],
+    "self_study": "8–10 minutes, authored estimate; optional video/replay additional",
+    "sibling_minutes_unchanged": true
+  },
+  "limits": [
+    "Full current national IRR and target LGU process not independently verified; facilitation requires local confirmation before delivery.",
+    "No clinical procedure or profession-specific scope rule taught.",
+    "No allowance amounts or guaranteed benefit/appointment taught.",
+    "Demi, scenarios, verification questions and bilingual paraphrases are authored."
+  ],
+  "shared_materials": {
+    "reconciled": [
+      "Module-04 guide target opening, page/timing attribution, legal-basis discussion question and target answer key",
+      "d1m4-legal-basis shared QA entry"
+    ],
+    "deferred": [
+      "Legacy module lesson.*.md and accreditation QA/other sibling passages retain Josie and broader before-work wording. They belong to separate legacy/sibling review; no sibling lesson rewrite/publication."
+    ],
+    "historical_practice_map": "Omitted from new revision; historical SVG retained."
+  }
+}
