@@ -22,9 +22,7 @@ Panukalang hati:
    "kusang-loob" ang batayan ng gawain — may batas. Ito ang
    pinakamadaling bahaging nakakaligtaan sa madalian.
 3. **Sa mga benepisyo,** igrupo ang anim na kategorya at gamitin ang kathang-isip na Card A/Card B ni Demi upang ihiwalay ang validated hazard exposure sa serbisyo sa loob ng isolated station. Ipaliwanag ang rehistrasyon, aktibo at regular na tungkulin, at local-fund review. Itanong ang benepisyo, ebidensiya at tamang awtoridad/contact. Opsyonal ang personal na kasaysayan; walang hihinging pribadong rekord.
-4. **Sa BHWE,** gamitin ang apat na kondisyon bilang checklist na
-   personal na susuriin ng bawat kalahok — hayaan silang tahimik na
-   suriin ang sarili bago talakayin sa grupo.
+4. **Sa BHWE,** gamitin ang kathang-isip na Cards A–C ni Demi at apat na teaching groups. Ihiwalay ang total service sa qualifying continuous accredited service, suriin ang edukasyon at voluntary/full-time/satisfactory service evidence, at bumuo ng tiyak na CSC question tungkol sa uncertainty o JO/COS arrangement. Hindi CSC approval o appointment ang accreditation. Walang hihinging pribadong learner records o personal na eligibility assessment.
 5. **Sa proseso ng rehistrasyon,** ipaalala na hindi sila nag-iisa sa
    paghihintay — may sistema at may responsableng tao/komite sa likod
    nito.
@@ -61,6 +59,4 @@ kundi karapatan.
 
 
 1. **Aralin 1.4.1: pinakamainam na tugon ni Demi** → Choice 1: iugnay ang pagsasanay, boluntaryong serbisyo at akreditasyon ng local health board; itanong sa RHU ang contact para matiyak ang ebidensiya. Choice 2: karanasan ang ginawang akreditasyon. Choice 3: pangako ng allowance/appointment nang hindi tinitiyak ang hiwalay na kondisyon.
-2. **"Alin sa mga sumusunod ang HINDI kailangan para sa BHWE..."** →
-   Hindi kailangan ang four-year college degree — dalawang taon lamang
-   sa kolehiyo ang hinihingi.
+2. **Aralin 1.4.3: maingat na BHWE explanation ni Demi** → Una: tama. Tatlong taon lamang ang inilalarawang nasa accredited status; hindi dapat idagdag ang pre-accreditation service. Kailangang suriin ang degree-related college education at lahat ng continuity, active/full-time, voluntary at satisfactory service conditions at ebidensiya. Tiyak na CSC verification ang susunod, hindi pangako ng approval o trabaho. Ikalawa: mali. Isa lamang sa mga pangkat ang accreditation; hindi nito pinapalitan ang education/service requirements, CSC application approval o hiwalay na appointment. Ikatlo: mali. Hindi binibilang ang pre-accreditation service. Maaaring kwalipikado pa rin ang JO/COS worker, ngunit hindi garantiya ang label. May first-level exceptions at iba pang position qualifications; hindi BHWE ang pahintulot sa anumang government post.

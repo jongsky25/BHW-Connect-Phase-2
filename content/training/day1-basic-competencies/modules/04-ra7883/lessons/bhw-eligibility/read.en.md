@@ -1,7 +1,23 @@
-## [section-4] BHW Eligibility (BHWE) in the Civil Service
+## [bhwe-question] Demi's question
 
-There is a separate qualification for BHW Eligibility under the Civil Service Commission (CSC Resolution No. 99-2845). Four conditions are required: accredited by the local health board; completed a minimum of two (2) years of college leading to a degree; actively and voluntarily serving continuously, full time, for five (5) years or more as an accredited BHW; and having a satisfactory service record as an accredited BHW in the community.
+Demi hears that accreditation or long BHW service automatically brings BHWE and a government job. She asks, ‘Are accreditation, civil service eligibility and appointment the same?’ They are different. This is a fictional situation; Demi's education and qualifying service are not established. First understand the conditions and evidence before making a promise.
 
-The five years count only if the service was voluntary — no salary or other pay except an honorarium for the whole period — and only from the time the BHW was already accredited. Service before 20 February 1995, when RA 7883 was approved, does not count. A BHW hired under a job order or contract of service can still qualify.
+## [section-4] BHWE conditions
 
-This is not the same thing as general accreditation — it asks for more, and it is for BHWs who want official eligibility in the civil service.
+RA 7883 section 6(d) provides the statutory basis for second-grade eligibility after five years of continuous service. CSC implementing conditions are more detailed. Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record. Accreditation must precede the qualifying service. Service before 20 February 1995 is not counted. Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.
+
+## [service-count] Which service can be counted?
+
+All service in these fictional cards is after 20 February 1995. Card A has eight years of total service but only three under accredited status; the first five years before accreditation cannot be included. Card B reports five years of continuous, active, full-time, voluntary and satisfactory service while already accredited, plus school evidence of two college years leading to a degree. B supports checking the conditions, but it is not CSC approval. Unclear dates, an interruption or missing records require a CSC question, not an invented ruling.
+
+## [evidence-and-scope] One label is not enough
+
+The two college years must lead toward a degree. Voluntary BHW service means no salary or compensation except honorarium throughout the five-year service period. CSC clarifies no government appointment or salary from government plantilla payroll; meal and transport allowances are excluded from salary/compensation. A Job Order or Contract of Service worker may still qualify; the label alone proves neither qualification nor disqualification. Verify the actual arrangement and all conditions with CSC. BHWE is appropriate for first-level positions with exceptions: TESDA trade-test positions, positions requiring licenses, stenographer positions, and board-exam or special-law positions. It is not a professional license or an appointment guarantee; a position also has other qualification requirements.
+
+## [bhwe-verification] A specific question for CSC
+
+Using a blank planning sheet, Demi asks, ‘For this fictional record, which accredited-service period and education and service evidence should be verified, including the JO/COS arrangement?’ The RHU and Local Health Board help identify records and contacts; they do not replace CSC approval. Ask the CSC Regional or Field Office with jurisdiction over the barangay of service. BHWE takes effect on approval by the responsible CSC Regional Office. Confirm current documentary and form guidance there; this practice submits no actual application or private record.
+
+## [bhwe-application-check] Choose a careful explanation
+
+Fictional Card A reports eight years of service but only three years under accreditation. Which explanation is best? Connect the count to accredited status, check education and the other service conditions, and form a specific CSC question. Demi should promise neither BHWE nor a job. After choosing, read the reasons for all three answers and explain to a partner what needs verification.

@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T06:11:42.055Z",
+  "tool": "image_gen.imagegen",
+  "model_id": null,
+  "model_id_note": "Built-in image generation returned no model identifier; none inferred.",
+  "prompt": "Create a genuinely NEW original landscape 16:9 educational illustration for BHW Connect lesson1.4.3, Demi and understanding Barangay Health Worker Eligibility (BHWE). Use the attached approved1.4.1 illustration ONLY as the explicit visual identity and style reference for Demi: the adult Filipina woman on the LEFT with medium-brown skin, recognizable same face and eyes/nose, short wavy dark bob and plain teal collared blouse. Preserve that fictional identity closely. New scene and poses: Demi sits at a simple community health discussion table, thoughtfully pointing with one hand at blank cream question sheets and three blank colored practice cards, while a calm adult Filipina facilitator in a plain warm coral blouse listens with open, supportive posture. This is a fictional planning conversation about what must be verified with CSC, not a credential or application approval. Show exactly two people, natural adult anatomy/proportions, complete faces, heads and all four visible hands clearly and safely inside the image; no cropped faces/hands, no extra fingers or limbs. Place the whole tabletop and both participants within generous12percent safe margins on every side for phone containment. Clear separate silhouettes; Demi remains the focal person on the left, facilitator on the right. Warm hand-painted editorial illustration, softly textured clean shapes, attractive muted teal/cream/coral palette, gentle afternoon light, modest uncluttered barangay health-room background, small potted plant and blank wall. New visual composition, not a relabel of the reference. All sheets/cards MUST be blank, no legible text, no letters/numbers/labels. No certificate, ID, seal, official logo, flag, filled form, school transcript, appointment, uniform, payment, eligibility approval or government-job guarantee. No speech bubbles or infographic text. Opaque background. Leave generous breathing room around the people and their hands; use containment-friendly composition.",
+  "prompt_sha256": "c93d8be61fe285664bc8523a9f2585c59a57f435b66a1f387b8dea5749bb3b38",
+  "reference_image": {
+    "selected_identity": "Owner-approved1.4.1 Demi",
+    "path": "/training/bhw-1-4/demi-legal-basis-032a985f9c33.png",
+    "sha256": "032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2"
+  },
+  "supporting_reference_inspected": {
+    "path": "/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png",
+    "sha256": "2f0be96fe3d80d36c4a1dc9f4d5ff2442731f05c5f66eda999109fd7eac23a1b",
+    "used_as_generation_input": false
+  },
+  "output": {
+    "original_tool_path": "C:/Users/Rae Jane/.codex/generated_images/01a10a84-5741-7bc3-8313-19334bc5808e/exec-b3da45e1-610d-4c2e-a7f9-9f443fc9efa2.png",
+    "path": "/training/bhw-1-4/demi-bhwe-discussion-cce21d6a934d.png",
+    "sha256": "cce21d6a934d7e0e729ef9961e4ba2bad52d7db3080e3b5a7b1087c3a3765d4b",
+    "bytes": 1976610,
+    "animation_copy": "remotion/public/bhw-eligibility/scene.png"
+  },
+  "review_status": "draft",
+  "visual_inspection": "Actual generated PNG visually inspected. Two main adult Filipina figures at a discussion table. Demi left retains recognizable face, short wavy dark bob, teal plain collared blouse and medium-brown complexion. Full heads/faces and all four visible hands are contained with no obvious anatomy defect. Blank cream sheets and three blank colored cards; no credential, seal, form text, appointment or job promise. Background contains a small framed community illustration, not additional participants. Top breathing room is smaller than the12percent requested in the prompt; complete heads/hands remain in frame and phone containment will be verified with object-fit:contain.",
+  "uncertainty": "Visual identity/anatomy inspection is model-mediated, not owner approval or independent human review. Draft remains subject to separate1.4.3 approval."
+}

@@ -1,35 +1,124 @@
 [
   {
+    "id": "slide-bhwe-question",
+    "concept_ids": [
+      "m4.bhwe"
+    ],
+    "layout": "scene",
+    "heading_fil": "Tanong ni Demi",
+    "heading_en": "Demi's question",
+    "display_fil": "Akreditasyon ≠ BHWE approval ≠ appointment\nAno ang dapat tiyakin?",
+    "display_en": "Accreditation ≠ BHWE approval ≠ appointment\nWhat needs verification?",
+    "asset_ids": [
+      "demi-bhwe-discussion"
+    ],
+    "check": null,
+    "narration_fil": "May narinig si Demi: kapag accredited o matagal nang BHW, may BHWE at trabaho na raw agad. Nagtanong siya, ‘Pareho ba ang akreditasyon, civil service eligibility at appointment?’ Magkakaibang bagay ang mga ito. Kathang-isip ang sitwasyon; hindi pa natin alam ang edukasyon o qualifying service ni Demi. Unawain muna ang mga kondisyon at ebidensiya bago gumawa ng pangako.",
+    "narration_en": "Demi hears that accreditation or long BHW service automatically brings BHWE and a government job. She asks, ‘Are accreditation, civil service eligibility and appointment the same?’ They are different. This is a fictional situation; Demi's education and qualifying service are not established. First understand the conditions and evidence before making a promise."
+  },
+  {
     "id": "slide-section-4",
     "concept_ids": [
       "m4.bhwe"
     ],
-    "layout": "decision",
-    "heading_fil": "Ang BHW Eligibility (BHWE) sa Civil Service",
-    "heading_en": "BHW Eligibility (BHWE) in the Civil Service",
-    "display_fil": "BHWE: akreditasyon; hindi bababa sa dalawang taon ng kolehiyo; limang taon ng tuloy-tuloy, aktibo at full-time na boluntaryong serbisyo; satisfactory na record.\nBibilangin lang ang limang taon mula nang maakreditado, at kung walang bayad maliban sa honorarium.\nTiyakin sa CSC ang dokumento at lahat ng kondisyon.",
-    "display_en": "BHWE: accreditation; at least two years of college; five years of continuous, active, full-time voluntary service; a satisfactory record.\nThe five years count only after accreditation, and only if unpaid except for an honorarium.\nConfirm documentation and all conditions with CSC.",
+    "layout": "process",
+    "heading_fil": "Mga kondisyon ng BHWE",
+    "heading_en": "BHWE conditions",
+    "display_fil": "Apat na pangkat: akreditasyon • edukasyon • qualifying service • satisfactory record\nAccredited na bago magsimula; walang bilang bago20 Pebrero 1995.",
+    "display_en": "Four groups: accreditation • education • qualifying service • satisfactory record\nAccredited before service starts; no counting before 20 February 1995.",
     "asset_ids": [
-      "practice-map"
+      "demi-bhwe-discussion"
+    ],
+    "check": null,
+    "narration_fil": "Ang seksiyon 6(d) ng RA 7883 ay nagbibigay ng batayan para sa second-grade eligibility matapos ang limang taong tuloy-tuloy na serbisyo. May mas detalyadong implementing conditions ang CSC. Gamitin ang apat na pangkat na ito: akreditasyon ng Local Health Board; hindi bababa sa dalawang taon sa kolehiyo tungo sa isang degree; hindi bababa sa limang taong tuloy-tuloy, aktibo, full-time at boluntaryong serbisyo bilang accredited BHW; at satisfactory service record. Dapat accredited na bago magsimula ang qualifying service. Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995. Hindi sapat ang akreditasyon lamang; kailangang matugunan at mapatunayan ang naaangkop na kondisyon, at CSC ang nagpapasya sa application.",
+    "narration_en": "RA 7883 section 6(d) provides the statutory basis for second-grade eligibility after five years of continuous service. CSC implementing conditions are more detailed. Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record. Accreditation must precede the qualifying service. Service before 20 February 1995 is not counted. Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application."
+  },
+  {
+    "id": "slide-service-count",
+    "concept_ids": [
+      "m4.bhwe"
+    ],
+    "layout": "process",
+    "heading_fil": "Aling serbisyo ang mabibilang?",
+    "heading_en": "Which service can be counted?",
+    "display_fil": "Card A: 8 taon lahat →3 habang accredited\nCard B: 5 qualifying years + ibang kondisyon\nHindi pa approval ang practice card.",
+    "display_en": "Card A: 8 years total →3 while accredited\nCard B: 5 qualifying years + other conditions\nA practice card is not approval.",
+    "asset_ids": [
+      "demi-bhwe-discussion"
+    ],
+    "check": null,
+    "narration_fil": "Lahat ng serbisyo sa mga kathang-isip na card na ito ay matapos ang 20 Pebrero 1995. Sa Card A, walong taon ang kabuuang serbisyo ngunit tatlo lamang ang nasa accredited status; hindi maisasama ang unang limang taon bago ang akreditasyon. Sa Card B, may limang taong tuloy-tuloy, aktibo, full-time, boluntaryo at satisfactory na serbisyo habang accredited na, at school evidence para sa dalawang taon sa kolehiyo tungo sa degree. May batayan para suriin ang mga kondisyon sa B, ngunit hindi ito CSC approval. Kung malabo ang petsa, may interruption o kulang ang record, magtanong sa CSC; huwag hulaan ang ruling.",
+    "narration_en": "All service in these fictional cards is after 20 February 1995. Card A has eight years of total service but only three under accredited status; the first five years before accreditation cannot be included. Card B reports five years of continuous, active, full-time, voluntary and satisfactory service while already accredited, plus school evidence of two college years leading to a degree. B supports checking the conditions, but it is not CSC approval. Unclear dates, an interruption or missing records require a CSC question, not an invented ruling."
+  },
+  {
+    "id": "slide-evidence-and-scope",
+    "concept_ids": [
+      "m4.bhwe"
+    ],
+    "layout": "process",
+    "heading_fil": "Hindi sapat ang isang label",
+    "heading_en": "One label is not enough",
+    "display_fil": "Degree-related college education\nJO/COS: maaaring kwalipikado; kailangan ng pagsusuri\nBHWE ≠ license o garantisadong trabaho",
+    "display_en": "Degree-related college education\nJO/COS: may qualify; assessment needed\nBHWE ≠ license or guaranteed job",
+    "asset_ids": [
+      "demi-bhwe-discussion"
+    ],
+    "check": null,
+    "narration_fil": "Dapat tungo sa degree ang dalawang taon sa kolehiyo. Sa buong limang-taong service period, voluntary ang BHW service: walang salary/compensation maliban sa honorarium. Nililinaw ng CSC ang kawalan ng government appointment at salary mula sa government plantilla payroll; hindi kabilang sa salary/compensation ang meal at transport allowances. Maaaring maging kwalipikado pa rin ang nasa Job Order o Contract of Service; hindi sapat ang label para sabihing pasado o disqualified. Tiyakin ang aktuwal na arrangement at lahat ng kondisyon sa CSC. Ang BHWE ay para sa naaangkop na first-level positions, may mga exception: TESDA trade-test positions, mga nangangailangan ng license, stenographer positions, at board-exam o special-law positions. Hindi ito professional license o garantiya ng appointment; may iba pang qualification requirements ang posisyon.",
+    "narration_en": "The two college years must lead toward a degree. Voluntary BHW service means no salary or compensation except honorarium throughout the five-year service period. CSC clarifies no government appointment or salary from government plantilla payroll; meal and transport allowances are excluded from salary/compensation. A Job Order or Contract of Service worker may still qualify; the label alone proves neither qualification nor disqualification. Verify the actual arrangement and all conditions with CSC. BHWE is appropriate for first-level positions with exceptions: TESDA trade-test positions, positions requiring licenses, stenographer positions, and board-exam or special-law positions. It is not a professional license or an appointment guarantee; a position also has other qualification requirements."
+  },
+  {
+    "id": "slide-bhwe-verification",
+    "concept_ids": [
+      "m4.bhwe"
+    ],
+    "layout": "process",
+    "heading_fil": "Isang tiyak na tanong sa CSC",
+    "heading_en": "A specific question for CSC",
+    "display_fil": "Anong panahon? Anong ebidensiya?\nCSC office na may sakop sa barangay ng serbisyo\nPlanning question lamang; walang application.",
+    "display_en": "Which period? Which evidence?\nCSC office for the barangay of service\nPlanning question only; no application.",
+    "asset_ids": [
+      "demi-bhwe-discussion"
+    ],
+    "check": null,
+    "narration_fil": "Gumawa si Demi ng tanong gamit ang blankong planning sheet: ‘Para sa kathang-isip na record na ito, aling panahon ng accredited service at anong education at service evidence ang dapat tiyakin, kasama ang JO/COS arrangement?’ Tumutulong ang RHU at Local Health Board sa records at contact; hindi nila pinapalitan ang CSC approval. Magtanong sa CSC Regional o Field Office na may sakop sa barangay ng serbisyo. Ang effectivity ng BHWE ay nakabatay sa approval ng kaukulang CSC Regional Office. Tiyakin doon ang kasalukuyang documentary at form guidance; walang tunay na application o pribadong record na isusumite sa practice na ito.",
+    "narration_en": "Using a blank planning sheet, Demi asks, ‘For this fictional record, which accredited-service period and education and service evidence should be verified, including the JO/COS arrangement?’ The RHU and Local Health Board help identify records and contacts; they do not replace CSC approval. Ask the CSC Regional or Field Office with jurisdiction over the barangay of service. BHWE takes effect on approval by the responsible CSC Regional Office. Confirm current documentary and form guidance there; this practice submits no actual application or private record."
+  },
+  {
+    "id": "slide-bhwe-application-check",
+    "concept_ids": [
+      "m4.bhwe"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang maingat na paliwanag",
+    "heading_en": "Choose a careful explanation",
+    "display_fil": "Card A: 8 total,3 accredited\nPiliin ang paliwanag na may kondisyon, ebidensiya at CSC verification.",
+    "display_en": "Card A: 8 total,3 accredited\nChoose conditions, evidence and CSC verification.",
+    "asset_ids": [
+      "demi-bhwe-discussion"
     ],
     "check": {
-      "prompt_fil": "Saan titiyakin ang BHWE requirements?",
-      "prompt_en": "Where should BHWE requirements be confirmed?",
+      "prompt_fil": "Ano ang pinakamainam na paliwanag ni Demi para sa Card A na may walong total years at tatlong accredited years?",
+      "prompt_en": "What is Demi’s best explanation for Card A with eight total years and three accredited years?",
       "options": [
         {
-          "fil": "Sa opisyal na CSC guidance at kaukulang tanggapan.",
-          "en": "In official CSC guidance and with the responsible office."
+          "fil": "Ihiwalay ang tatlong accredited years sa kabuuang walo, suriin ang edukasyon at lahat ng service conditions/evidence, at magtanong nang tiyak sa CSC; huwag mangako ng approval o trabaho.",
+          "en": "Distinguish the three accredited years from the total eight, check education and all service conditions/evidence, and ask CSC a specific question; promise neither approval nor a job."
         },
         {
-          "fil": "Sa sabi-sabi lamang.",
-          "en": "Only through hearsay."
+          "fil": "Accredited na, kaya sapat na iyon para sa BHWE approval at garantisadong government appointment.",
+          "en": "Accreditation is already enough for BHWE approval and a guaranteed government appointment."
+        },
+        {
+          "fil": "Bilangin ang lahat ng walong taon; automatic na kwalipikado ang may JO/COS label at puwede na sa anumang government post.",
+          "en": "Count all eight years; a JO/COS label automatically qualifies the worker for any government post."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Sa opisyal na CSC guidance at kaukulang tanggapan. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "In official CSC guidance and with the responsible office. Explain why using the lesson situation."
+      "feedback_fil": "Una: tama. Tatlong taon lamang ang inilalarawang nasa accredited status; hindi dapat idagdag ang pre-accreditation service. Kailangang suriin ang degree-related college education at lahat ng continuity, active/full-time, voluntary at satisfactory service conditions at ebidensiya. Tiyak na CSC verification ang susunod, hindi pangako ng approval o trabaho. Ikalawa: mali. Isa lamang sa mga pangkat ang accreditation; hindi nito pinapalitan ang education/service requirements, CSC application approval o hiwalay na appointment. Ikatlo: mali. Hindi binibilang ang pre-accreditation service. Maaaring kwalipikado pa rin ang JO/COS worker, ngunit hindi garantiya ang label. May first-level exceptions at iba pang position qualifications; hindi BHWE ang pahintulot sa anumang government post.",
+      "feedback_en": "First: correct. Only three years are described under accredited status; pre-accreditation service cannot be added. Degree-related college education and all continuity, active/full-time, voluntary and satisfactory service conditions and evidence must be checked. Specific CSC verification comes next, not a promise of approval or a job. Second: incorrect. Accreditation is only one teaching group; it cannot replace education/service requirements, CSC application approval or a separate appointment. Third: incorrect. Pre-accreditation service is not counted. A JO/COS worker may still qualify, but the label is no guarantee. First-level exceptions and other position qualifications remain; BHWE does not qualify someone for every government post."
     },
-    "narration_fil": "May hiwalay na kwalipikasyon para sa BHW Eligibility sa ilalim ng Civil Service Commission (CSC Resolution No. 99-2845). Apat na kondisyon ang kailangan: akreditado ng local health board; nakatapos ng minimum na dalawang (2) taon sa kolehiyo tungo sa isang degree; aktibo at boluntaryong naglilingkod nang tuloy-tuloy at full time sa loob ng limang (5) taon o higit pa bilang accredited BHW; at may satisfactory service bilang accredited BHW sa komunidad.\n\nBibilangin lang ang limang taon kung boluntaryo ang serbisyo — walang sahod o ibang bayad maliban sa honorarium sa buong panahon — at mula lamang nang akreditado na ang BHW. Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995, nang maaprubahan ang RA 7883. Maaari pa ring mag-qualify ang BHW na naka-job order o contract of service.\n\nHindi ito parehong bagay sa pangkalahatang akreditasyon — mas mataas ang hinihingi nito, at para ito sa mga BHW na nais magkaroon ng opisyal na eligibility sa serbisyo sibil.",
-    "narration_en": "There is a separate qualification for BHW Eligibility under the Civil Service Commission (CSC Resolution No. 99-2845). Four conditions are required: accredited by the local health board; completed a minimum of two (2) years of college leading to a degree; actively and voluntarily serving continuously, full time, for five (5) years or more as an accredited BHW; and having a satisfactory service record as an accredited BHW in the community.\n\nThe five years count only if the service was voluntary — no salary or other pay except an honorarium for the whole period — and only from the time the BHW was already accredited. Service before 20 February 1995, when RA 7883 was approved, does not count. A BHW hired under a job order or contract of service can still qualify.\n\nThis is not the same thing as general accreditation — it asks for more, and it is for BHWs who want official eligibility in the civil service."
+    "narration_fil": "Sinabi sa kathang-isip na Card A na walong taon na ang serbisyo at tatlong taon pa lamang ang accreditation. Aling paliwanag ang pinakamainam? Iugnay ang bilang sa accredited status, suriin ang edukasyon at iba pang service conditions, at bumuo ng tiyak na tanong sa CSC. Hindi dapat mangako si Demi ng BHWE o trabaho. Pagkatapos pumili, basahin ang dahilan para sa lahat ng tatlong sagot at ipaliwanag sa kapareha kung ano ang dapat tiyakin.",
+    "narration_en": "Fictional Card A reports eight years of service but only three years under accreditation. Which explanation is best? Connect the count to accredited status, check education and the other service conditions, and form a specific CSC question. Demi should promise neither BHWE nor a job. After choosing, read the reasons for all three answers and explain to a partner what needs verification."
   }
 ]

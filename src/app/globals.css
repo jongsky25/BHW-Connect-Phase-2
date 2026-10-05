@@ -751,3 +751,24 @@ body {
   margin-inline: auto;
   object-fit: contain;
 }
+
+/* Demi BHWE scene and optional story: keep faces and the whole video visible. */
+.reference-story-art img[src*="demi-bhwe-discussion"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-eligibility"] {
+  border: 0;
+  padding: 0;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-eligibility"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-eligibility"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-eligibility"] details {
+  display: none;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-eligibility"] figure { margin: 0; }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-eligibility"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}

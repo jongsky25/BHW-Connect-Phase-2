@@ -1,0 +1,366 @@
+{
+  "access_date": "2026-10-05",
+  "timezone": "Asia/Manila",
+  "stage": "Fresh source audit completed; independently verified1.4.2 release gate passed before implementation clone.",
+  "manuals": [
+    {
+      "name": "DOH Facilitator Guide, 2022",
+      "sha256": "041a0d63fab9f23235b927b029118159709f612f67889708398c75fada096837",
+      "pages": 150,
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf",
+      "verified_pdf_pages": [
+        13,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "relevant": {
+        "25": "printed16: three-hour whole competency, CSC BHWE reading and legacy Form101-H demonstration suggestion",
+        "26": "printed17: image table includes five-year review question; extraction omitted table, visual inspected",
+        "27": "printed18: local board accreditation/registration responsibilities"
+      },
+      "timing_scope": "Manual attribution only. Not independent current TESDA verification.",
+      "same_page_numbers_in_this_version": {
+        "13": "TESDA competencies, printed5",
+        "23": "UHC training, printed14",
+        "24": "other station policies, printed15"
+      },
+      "version_note": "Inherited pages23-25 are valid in the distinct126-page Drive original, freshly downloaded and visually verified. In this150-page TCI copy the corresponding printed16-18 occur at PDF25-27. Do not call the inherited citations unsupported without identifying the file version."
+    },
+    {
+      "name": "DOH BHW Reference Manual, 2022",
+      "path": "C:/Users/Rae Jane/Documents/Codex/2026-10-03/e-2/work/manual.pdf",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "pages": 150,
+      "relevant_pdf_page": 13,
+      "printed_page": 5,
+      "verified": "Extracted and visually inspected original; four-condition BHWE summary exists. Distinguish this manual from Facilitator Guide.",
+      "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view",
+      "fresh_download": {
+        "file": "work/audit/reference-manual-original.pdf",
+        "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+        "cached_bytes_match": true
+      }
+    },
+    {
+      "name": "DOH Facilitator Guide,2022; course Drive original",
+      "url": "https://drive.google.com/file/d/1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W/view",
+      "downloaded_file": "work/audit/facilitator-drive-original.pdf",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "pages": 126,
+      "verified_pdf_pages": [
+        23,
+        24,
+        25
+      ],
+      "printed_pages": [
+        16,
+        17,
+        18
+      ],
+      "visual_inspection": "Original pages rendered and visually inspected. Same training/review/board content as150-page TCI copy PDF25-27. PDF13 is adult-learning guidance, not BHWE conditions."
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html",
+      "role": "Full statute reopened through web and saved HTML. Section6(d) statutory second-grade/five-year provision; sections3/4 accreditation and registration differ."
+    },
+    {
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/38163",
+      "role": "CSC MC1 s2000 plus Resolution992845 full preamble retrieved through PowerShell after web timeout. Page omits the attached detailed implementing guidelines; do not claim recovered complete original annex. MC adopted11Jan2000, resolution29Dec1999."
+    },
+    {
+      "url": "https://www.csc.gov.ph/phocadownload/userupload/irmo/policy%20resolutions/2011/CSC%20Resolution%20No.%201101645.pdf",
+      "role": "Full54-page official scanned guidelines retrieved, rendered. BHWE PDF12-14/printed8-10; JO/COS explanatory grounds PDF13. No selectable text.",
+      "additional_documentary_page": "PDF25/printed21 original BHWE evidence categories visually verified; historical2011 checklist is not asserted as current submission requirements.",
+      "resolution_pages": "Original PDF1-2 resolution visually read: adopts attached revised2011 guidelines, repeals specified older office memoranda and amends OM38s2011. Complete54-page file retained."
+    },
+    {
+      "url": "https://csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility",
+      "role": "Current reachable official summary reopened. Published1June2021. Qualifying accredited status; two college years toward degree; voluntary five-year continuous active/full-time satisfactory accredited service; cutoff20Feb1995. Detailed affidavit distinguishes government appointments/plantilla payroll from honorarium and allowances. Application approval effectivity and first-level exclusions. Legacy form/NSO language not presented as a current checklist."
+    },
+    {
+      "url": "https://csc.gov.ph/barangay-health-workers-may-apply-for-eligibility-csc",
+      "role": "31July2024 official corroboration of qualifications, cutoff, JO/COS and first-level exclusions. Does not replace full rule."
+    },
+    {
+      "url": "https://csc.gov.ph/certificates-of-eligibility-to-be-printed-in-csc-letterhead",
+      "role": "17Oct2025 news of Resolution2500911,20Aug2025, effective1Oct2025: certificate format changed. Full resolution not yet recovered. Avoid certificate-format teaching in this understanding lesson."
+    },
+    {
+      "url": "https://www.csc.gov.ph/phocadownload/userupload/irmo/mc/2000/mc1s2000.pdf",
+      "role": "Original two-page MC1 s2000 and Resolution992845 preamble visually read. Official PDF also omits attached detailed guidelines; not a complete original annex."
+    }
+  ],
+  "instructional_decisions": [
+    "Keep four-condition structure as a teaching grouping of accredited status, education, qualifying service and satisfactory record. Explain statute and CSC implementing requirements separately.",
+    "Count only service already under accredited status and no earlier than20Feb1995. Five-year requirement continuous active satisfactory/full-time. Unknown interruptions or incomplete records are verification questions, not invented rulings.",
+    "JO/COS may qualify under grounds in2011 guideline; a job label alone establishes neither qualification nor disqualification. Honorarium/allowance is not automatically government salary.",
+    "BHWE is separate from board accreditation, CSC application approval, government appointment, professional licensing, and universal eligibility for all posts. First-level exclusions include TESDA trade-test/license/special-skill/board/special-law positions.",
+    "Use fictional profiles without requesting private education/pay/service records. RHU and board help identify local records/contact; CSC evaluates BHWE.",
+    "Do not repeat inherited promise of a Form101-H workflow in1.4.4: actual sibling covers accreditation.",
+    "Retain30-minute target and180-minute module; authored split/self-study estimate excludes optional story/replay."
+  ],
+  "gaps": [
+    "Complete original1999 implementing annex not recovered from E-Library. Later full2011 official guidelines inspected for relevant BHWE provisions.",
+    "Current full national RA7883 IRR, target LGU procedures, independent current TESDA regulations not established.",
+    "Enactment search found Senate committee report35 and proposedSBN1905. Exact current SBN1905 status endpoint inaccessible; no enacted replacement identified, not proof of absence.",
+    "No independent human SME review or human listening asserted."
+  ],
+  "retrieval_limits": [
+    "Python requests/bs4 unavailable; used standard library/Powershell. Direct CSC summary HTTP403/Cloudflare while web readable. E-Library web timeout but PowerShell retrieved. Senate1905 full status web inaccessible. Supabase changelog web inaccessible."
+  ],
+  "demi_reference": {
+    "selected": "/training/bhw-1-4/demi-legal-basis-032a985f9c33.png",
+    "sha256": "032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2",
+    "supporting_reference": "/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png",
+    "supporting_sha256": "2f0be96fe3d80d36c4a1dc9f4d5ff2442731f05c5f66eda999109fd7eac23a1b",
+    "visual_inspection": "Both actual PNGs inspected. Demi left: adult Filipina, short wavy dark bob, teal plain collared blouse, medium-brown complexion. Recognizable face consistent in1.4.2. Full faces and visible hands contained, blank sheets, no credentials. Reference provenance and owner approval read. No new media generated before gate."
+  },
+  "day1_presentation": {
+    "original_url": "https://drive.google.com/file/d/1ZDIJiTltEzJVFcy-XSA0NivWNvfAKfhY/view",
+    "downloaded_sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+    "pages": 78,
+    "slide25": "Extracted and visually inspected original: legacy2011 form demonstration and BHWE-experience sharing, not four-condition rule. New practice uses fictional profiles without compelled disclosure."
+  },
+  "current_search": {
+    "date": "2026-10-05",
+    "queries": [
+      "site:csc.gov.ph BHWE 2026",
+      "site:csc.gov.ph Barangay Health Worker Eligibility amendment requirements",
+      "site:officialgazette.gov.ph Magna Carta Barangay Health 2026",
+      "site:lawphil.net Barangay Health Workers 2026"
+    ],
+    "finding": "Reachable official CSC summary and2024 corroboration retain the audited qualifications. No enacted replacement identified in this search; inaccessible Senate status limits conclusion. Historical2023 citizen charter result confirms101-H revised2011 but no real submission workflow authored."
+  },
+  "downloaded_files": [
+    {
+      "file": "work/audit/csc-bhwe.html",
+      "bytes": 44246,
+      "sha256": "9c7e6958a0cfb80f3fdea10976730f52e554a169741ac18e57eab3833a8403f8"
+    },
+    {
+      "file": "work/audit/csc-bhwe.txt",
+      "bytes": 10946,
+      "sha256": "1c823e9ab07daaf32e91b72f0788e502ae906a8d8b23a801156cf2b9b88495e3"
+    },
+    {
+      "file": "work/audit/csc-mc1-2000.html",
+      "bytes": 29803,
+      "sha256": "172f82eae80674fe137d643b4a3e9ee949167adf6d0bfaa85c1c986fa245d5f8"
+    },
+    {
+      "file": "work/audit/csc-mc1-2000.pdf",
+      "bytes": 395144,
+      "sha256": "89b60eac86c7a821f2ff27af91aadfb6b299aa3f3c06a904d53f9b2efebb032a"
+    },
+    {
+      "file": "work/audit/csc-mc1-2000.txt",
+      "bytes": 11279,
+      "sha256": "d1f0b2c6cf330bf579374ec846db79e7cb5b56c47fb357ae0bb7013e740c6766"
+    },
+    {
+      "file": "work/audit/csc-mc1-original-1.png",
+      "bytes": 515937,
+      "sha256": "177f08137ffa23dcbf3765e2420aee29be7db9a38fe8b1c60c756112d068bb9c"
+    },
+    {
+      "file": "work/audit/csc-mc1-original-2.png",
+      "bytes": 511383,
+      "sha256": "63e7afa697c77840bbed530d7c4b711f9c8fd398f134fef88294610a8643111e"
+    },
+    {
+      "file": "work/audit/csc1101645-contact.png",
+      "bytes": 1323842,
+      "sha256": "6b0ffe3ce8429fff13a5f068b7a63066f7b312a2564a2a758eb334a706de93ad"
+    },
+    {
+      "file": "work/audit/csc1101645-page-1.png",
+      "bytes": 282719,
+      "sha256": "61902850efbfd33ac5e372edc847d82d25d66144d243c01272ea8b97b938383b"
+    },
+    {
+      "file": "work/audit/csc1101645-page-11.png",
+      "bytes": 286487,
+      "sha256": "befd94828093b610f202e376e63e7bc36e0f3923efcc14c07b65033352588551"
+    },
+    {
+      "file": "work/audit/csc1101645-page-12.png",
+      "bytes": 281965,
+      "sha256": "92a48ffbfecd66dbca316e900771b8548d35972bfb59dad1230f6aadc6b3b40f"
+    },
+    {
+      "file": "work/audit/csc1101645-page-13.png",
+      "bytes": 272238,
+      "sha256": "d97fc2b1cef199021fca9eba4c3ad7e2ad4bb83f9bb2d8a6c242b28e16bce746"
+    },
+    {
+      "file": "work/audit/csc1101645-page-14.png",
+      "bytes": 250845,
+      "sha256": "2d745b7fa21d5daa69c1d376c71094ca7eda734c0b19ae995df341e3515db41c"
+    },
+    {
+      "file": "work/audit/csc1101645-page-2.png",
+      "bytes": 273716,
+      "sha256": "a592c29437364f1401895c82d2548e3a17cc7af140265172db27f99a175534d4"
+    },
+    {
+      "file": "work/audit/csc1101645-page-22.png",
+      "bytes": 233723,
+      "sha256": "7d59b4a9f28f89203d92010e0e170377ed19ef2a78d65c6bc23f8a601827a552"
+    },
+    {
+      "file": "work/audit/csc1101645-page-23.png",
+      "bytes": 221881,
+      "sha256": "70c931f066b827ce7252e1ea2cd04bcc9da4eb59b4e5f3fe472495b0a4b5b6d8"
+    },
+    {
+      "file": "work/audit/csc1101645-page-25.png",
+      "bytes": 219172,
+      "sha256": "b8bfe3667e5db5945f6fef77f0f84468c6d3eccde8a85d27ad7d674142deb1fe"
+    },
+    {
+      "file": "work/audit/csc1101645-page-26.png",
+      "bytes": 158670,
+      "sha256": "f1299261cbaccfbf8c0bb6eb8f6a3ddba12c5448157758370bfce297a5e654b5"
+    },
+    {
+      "file": "work/audit/csc1101645-page-27.png",
+      "bytes": 199273,
+      "sha256": "c5f4480124cf6e207f6a0298c1a0ea24fe5a1e37872083140cd3c30b2fcc491b"
+    },
+    {
+      "file": "work/audit/csc1101645-page-28.png",
+      "bytes": 208169,
+      "sha256": "41ddf5301690edecc8a1bd8eceeab417775a9ed8dd81b0fb5d26e8d9864b8164"
+    },
+    {
+      "file": "work/audit/csc1101645-page-29.png",
+      "bytes": 201591,
+      "sha256": "712f9eb905b179d5eb9fbba80e1e8c6cfb0a73f08f9697c7a2838a872fe1d33f"
+    },
+    {
+      "file": "work/audit/csc1101645-page-3.png",
+      "bytes": 203185,
+      "sha256": "0e004cdc89c92ae13943762caefdbb02ac7fe83380e222611f5bb2c17a9222aa"
+    },
+    {
+      "file": "work/audit/csc1101645-page-30.png",
+      "bytes": 237290,
+      "sha256": "4b59201553a8d0a98b101944893068b4b9edd591bdd1d46475b84f84e4c13985"
+    },
+    {
+      "file": "work/audit/csc1101645-page-4.png",
+      "bytes": 123711,
+      "sha256": "f1285f577884f00330e2980b45751a9b809d1c3a5bfdfe0cc892e22422fbceaa"
+    },
+    {
+      "file": "work/audit/csc1101645.pdf",
+      "bytes": 1750086,
+      "sha256": "0c8a77a615f1d16904f457ab925f0c5b411d8dff8d9cdc381bfd78e0e8dea928"
+    },
+    {
+      "file": "work/audit/day1-presentation.pdf",
+      "bytes": 1627258,
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8"
+    },
+    {
+      "file": "work/audit/day1-slide25.png",
+      "bytes": 90015,
+      "sha256": "7978545e909e146e5ab9b62a617cd5405117138bcc348767e59c5164d971d38a"
+    },
+    {
+      "file": "work/audit/facilitator-drive-original.pdf",
+      "bytes": 26505934,
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc"
+    },
+    {
+      "file": "work/audit/facilitator-drive-page-23.png",
+      "bytes": 151209,
+      "sha256": "f03c80ce56ce167eb6c8b62089e0e2c7f1098e61c934c9cd827d58dacaf63349"
+    },
+    {
+      "file": "work/audit/facilitator-drive-page-24.png",
+      "bytes": 188064,
+      "sha256": "1fa253f8fab44a5b8af4620e21b9cd0d73aed9ae483b56c57f1a8e8e5d81b640"
+    },
+    {
+      "file": "work/audit/facilitator-drive-page-25.png",
+      "bytes": 106432,
+      "sha256": "405b3dfe5d7b468b09fa318d6fa521323615e237f4988cbe6bd1632d0857f9a5"
+    },
+    {
+      "file": "work/audit/manual-hits.txt",
+      "bytes": 4152,
+      "sha256": "33731d3605ee908204a0e2b2048c2221abdd1a560c5342b1d4008645a53b537e"
+    },
+    {
+      "file": "work/audit/manual-inherited-pages.txt",
+      "bytes": 4709,
+      "sha256": "07b5c34d2070b3e5cd88a6325bc372e9ce81a2cd3fe1908c2263a640aa7ac5fc"
+    },
+    {
+      "file": "work/audit/manual-page-13.png",
+      "bytes": 110800,
+      "sha256": "8e6c1f91ac08bbac4b6c5b5c41263dd513ab331f116eee01e41a6bb5527186cd"
+    },
+    {
+      "file": "work/audit/manual-page-23.png",
+      "bytes": 96621,
+      "sha256": "73135117d3f3143fd3362b081838471f13333327b5c9c2ac736230dac69c92ca"
+    },
+    {
+      "file": "work/audit/manual-page-24.png",
+      "bytes": 135846,
+      "sha256": "6c452971c245eeb89b987663c639053cd6addbcf12a7c46c0b1e7e096528006a"
+    },
+    {
+      "file": "work/audit/manual-page-25.png",
+      "bytes": 178418,
+      "sha256": "cacc9589cdef00af5165f85eea6e30bdcaa3668a66b17a31104a3574dbc5f2ef"
+    },
+    {
+      "file": "work/audit/manual-page-26.png",
+      "bytes": 241190,
+      "sha256": "6660e811a5ffb7e4ba7dcee271ddd0547d41b3d42e480c46818bd645fbc13222"
+    },
+    {
+      "file": "work/audit/manual-page-27.png",
+      "bytes": 127494,
+      "sha256": "0cf92456580b248107800367206ba05d7c741bcd036fdb62e5221765a9c313d6"
+    },
+    {
+      "file": "work/audit/ra7883.html",
+      "bytes": 11577,
+      "sha256": "f7d90710320a8be5a4fb6a645bffa089a438ebb1adea7f83becf21c4b97ffa12"
+    },
+    {
+      "file": "work/audit/reference-manual-hits.txt",
+      "bytes": 5267,
+      "sha256": "47fb77ab4262d614521f3b3ecfce248d258ba76fa85a9cc60e1803bd366c3c39"
+    },
+    {
+      "file": "work/audit/reference-manual-original.pdf",
+      "bytes": 41537642,
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296"
+    },
+    {
+      "file": "work/audit/reference-manual-page-13.png",
+      "bytes": 214891,
+      "sha256": "18cd057eedc03152530a35b50ac3410b9df0674a096ee5ce6ac2dd224ae89862"
+    },
+    {
+      "file": "work/audit/reference-manual-page-8.png",
+      "bytes": 179600,
+      "sha256": "e2e3740c004b7d59f54efc2948b4995e4a98faf7d561dc5ba981cdecb2fae803"
+    },
+    {
+      "file": "work/audit/source-claim-map.json",
+      "bytes": 3184,
+      "sha256": "7522d685907dc6f931d74c66c5282b2ce0d6d0d275e1fe3f4445842770fe659d"
+    }
+  ]
+}

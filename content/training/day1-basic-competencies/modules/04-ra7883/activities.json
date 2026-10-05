@@ -1,10 +1,10 @@
 [
   {
     "id": "bhwe-experience",
-    "version": 1,
+    "version": 2,
     "title": {
-      "en": "Learning from an application",
-      "fil": "Pagkatuto sa karanasan sa aplikasyon"
+      "en": "Fictional BHWE profiles and verification questions",
+      "fil": "Kathang-isip na BHWE profiles at verification questions"
     },
     "lesson_keys": [
       "bhw-eligibility"
@@ -14,12 +14,14 @@
     ],
     "kind": "discussion",
     "minutes": 15,
-    "objective_indices": [],
+    "objective_indices": [
+      0
+    ],
     "optional": true,
     "choice_group": null,
     "purpose": {
-      "en": "Separate personal experience from verified requirements.",
-      "fil": "Ihiwalay ang personal na karanasan sa natiyak na requirement."
+      "en": "Explain conditions and service-count distinctions using fictional records, without adjudicating a learner.",
+      "fil": "Ipaliwanag ang kondisyon at service-count distinctions gamit ang fictional records, nang walang paghatol sa learner."
     },
     "group_size": {
       "en": "Pairs or groups of 3–5; observe individuals.",
@@ -27,44 +29,48 @@
     },
     "materials": [
       {
-        "en": "Paper and markers",
-        "fil": "Papel at panulat"
+        "en": "Fictional Cards A–C from the lesson guide, four-condition sheet and blank question cards; no private documents.",
+        "fil": "Fictional Cards A–C sa lesson guide, four-condition sheet at blankong question cards; walang private documents."
       }
     ],
     "steps": [
       {
-        "en": "Invite a volunteer to describe an application experience without personal identifiers.",
-        "fil": "Anyayahan ang boluntaryong magbahagi ng karanasan nang walang personal na detalye."
+        "en": "Compare Card A’s eight total years with three accredited years, then Card B’s reported qualifying facts; neither card is CSC approval.",
+        "fil": "Ihambing ang walong total years at tatlong accredited years sa A, saka ang reported qualifying facts sa B; hindi CSC approval ang mga card."
       },
       {
-        "en": "List steps and questions to check against current official guidance.",
-        "fil": "Ilista ang hakbang at tanong na titiyakin sa kasalukuyang opisyal na gabay."
+        "en": "Use Card C’s uncertainty to ask about continuity, evidence and the actual JO/COS arrangement; invent no ruling.",
+        "fil": "Gamitin ang uncertainty sa C upang itanong ang continuity, evidence at aktuwal na JO/COS arrangement; huwag mag-imbento ng ruling."
+      },
+      {
+        "en": "Explain one card to a partner and write one bounded CSC question naming the period, evidence and uncertainty.",
+        "fil": "Ipaliwanag ang isang card sa kapareha at sumulat ng tiyak na CSC question na may panahon, ebidensiya at uncertainty."
       }
     ],
     "debrief": [
       {
-        "en": "Which details are personal experience, and which need checking?",
-        "fil": "Alin ang personal na karanasan at alin ang dapat tiyakin?"
+        "en": "Which facts are stated, which need verification, and why is eligibility separate from appointment?",
+        "fil": "Anong facts ang nakasaad, ano ang dapat tiyakin, at bakit hiwalay ang eligibility sa appointment?"
       }
     ],
     "observe": [
       {
-        "en": "Use for discussion, not a competency rating by itself.",
-        "fil": "Para sa talakayan, hindi tanging batayan ng rating."
+        "en": "Use the aligned lesson indicator for the explanation; activity participation or an online click alone does not establish competency.",
+        "fil": "Gamitin ang aligned lesson indicator sa paliwanag; hindi sapat na competency evidence ang participation o online click lamang."
       }
     ],
     "output": {
-      "en": "Questions for the coordinator.",
-      "fil": "Mga tanong sa coordinator."
+      "en": "One explanation and a specific question for the responsible CSC office.",
+      "fil": "Isang paliwanag at tiyak na tanong sa kaukulang CSC office."
     },
     "alternative": {
-      "en": "Use a fictional application story if nobody wishes to share.",
-      "fil": "Gumamit ng kathang kuwento kung walang nais magbahagi."
+      "en": "Facilitator models Card A, then pairs explain B or C with a reference sheet; no personal disclosure.",
+      "fil": "I-model ng facilitator ang A, saka ipaliwanag ng magkapareha ang B o C gamit ang reference sheet; walang personal disclosure."
     },
     "worksheet": [
       {
-        "en": "Reported step / question to verify",
-        "fil": "Ibinahaging hakbang / tanong na titiyakin"
+        "en": "Stated facts / accredited-service period / evidence or uncertainty / CSC question",
+        "fil": "Nakasaad na facts / accredited-service period / ebidensiya o uncertainty / CSC question"
       }
     ]
   },
