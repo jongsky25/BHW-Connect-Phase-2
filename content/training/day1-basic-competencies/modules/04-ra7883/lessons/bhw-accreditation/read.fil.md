@@ -8,7 +8,7 @@ May tiyak na pananagutan ang local health board. Inililista ng magkasanib na cir
 
 ## [roles-and-records] Rekomendasyon o pasya?
 
-Ihambing ang dalawang papel. Tumutulong ang komite sa pagsusuri at rekomendasyon; pananagutan ng board ang pag-aksiyon at opisyal na pagtatala ng pasya. Hinihikayat ng circular ang mga municipal at city health board na bumuo ng komite. Kapag wala pa nito o habang binubuo ito, nananatili sa board ang tungkuling padaliin ang rehistrasyon at akreditasyon. Kaya dapat alamin ang aktuwal na lokal na ayos, sa halip na ipagpalagay na pare-pareho ang komite at opisina sa lahat ng lugar. Makapagtuturo ng tamang contact ang RHU o municipal o city health office. Hindi sila, isang panayam, o isang training certificate ang kapalit ng opisyal na pasya.
+Ihambing ang dalawang papel. Tumutulong ang komite sa pagsusuri at rekomendasyon; pananagutan ng board ang pag-aksiyon at opisyal na pagtatala ng pasya. Hinihikayat ng circular ang mga municipal at city health board na bumuo ng komite. Kapag wala pa nito o habang binubuo ito, nananatili sa board ang tungkuling padaliin ang rehistrasyon at akreditasyon. Kaya dapat alamin ang aktuwal na lokal na ayos, sa halip na ipagpalagay na pare-pareho ang komite at opisina sa lahat ng lugar. Makapagtuturo ng tamang contact ang RHU o municipal o city health office. Hindi kapalit ng opisyal na pasya ang kanilang tulong, isang panayam o isang training certificate.
 
 ## [fictional-process-cards] Ano ang alam at kulang?
 

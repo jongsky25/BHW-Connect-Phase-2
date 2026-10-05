@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm, expressive Philippine community health trainer. Give Demi’s opening question curious rising intonation. Contrast board decision with committee screening and recommendation, and known facts with missing local information, through gentle pitch, emphasis and pace changes. Keep every negation and conditional rule audible. Maintain exactly one consistent adult female Kore narrator timbre from first word to last, including headings, quotations and takeaway; no character voices. Pronounce Demi as DEH-mee and initialisms as individual letters. Say RA as letters and 7883 as seven thousand eight hundred eighty-three. Read the circular number 2023-001 as twenty twenty-three, zero zero one. Finish every syllable and word ending with natural clause pauses; no fillers, clipped words, added connectors or repeated starts. Read the exact authored words, without translation or a promise of accreditation, benefits, eligibility or a job.",
+  "durationSeconds": 57.809,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Who decides accreditation? Demi asks this question. Her status has not been established.",
+      "start_ms": 0,
+      "end_ms": 7240
+    },
+    {
+      "zone": "board",
+      "index": 1,
+      "text": "The Local Health Board has the accreditation responsibility. Check the application and official decision record; hearsay is insufficient.",
+      "start_ms": 7540,
+      "end_ms": 16900
+    },
+    {
+      "zone": "committee",
+      "index": 2,
+      "text": "A committee may handle screening and recommendations. Without a committee, the board facilitates the process. A recommendation is not automatic approval.",
+      "start_ms": 17200,
+      "end_ms": 27080
+    },
+    {
+      "zone": "cards",
+      "index": 3,
+      "text": "Fictional Card B has a recommendation but no verified board decision. Identify what is missing; do not declare approval.",
+      "start_ms": 27380,
+      "end_ms": 35660
+    },
+    {
+      "zone": "follow-up",
+      "index": 4,
+      "text": "Demi asks where to verify the official decision record and next step. Confirm the responsible contact with the local health office.",
+      "start_ms": 35960,
+      "end_ms": 44880
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Explain roles, distinguish known facts from missing information, then ask. A training certificate, BHWE or job is not a substitute for accreditation.",
+      "start_ms": 45180,
+      "end_ms": 57740
+    }
+  ],
+  "audio_sha256": "e2fbac1d6e5a9434d86e5743ceb8b7415975457fb3cdf78dc90d3953a6335806"
+}

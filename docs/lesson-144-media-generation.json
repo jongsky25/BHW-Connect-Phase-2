@@ -1,0 +1,147 @@
+{
+  "generated_date": "2026-10-05T10:02:48.211Z",
+  "source_commit": "ff6bf361666234cab9ee34557138ea1abddb331c",
+  "owner_review": "pending",
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 63.451,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "Sino ang magpapasya sa akreditasyon? Tanong ni Demi ito. Hindi pa napatutunayan ang kaniyang katayuan.",
+          "start_ms": 0,
+          "end_ms": 7040
+        },
+        {
+          "zone": "board",
+          "index": 1,
+          "text": "Ang Local Health Board ang may tungkulin sa akreditasyon. Suriin ang aplikasyon at opisyal na tala ng pasya; hindi sapat ang sabi-sabi.",
+          "start_ms": 7340,
+          "end_ms": 16620
+        },
+        {
+          "zone": "committee",
+          "index": 2,
+          "text": "Maaaring bumuo ng komite para sa pagsusuri at rekomendasyon. Kapag walang komite, board ang magpapadaloy. Ang rekomendasyon ay hindi awtomatikong pag-apruba.",
+          "start_ms": 16920,
+          "end_ms": 28040
+        },
+        {
+          "zone": "cards",
+          "index": 3,
+          "text": "Sa kathang-isip na Card B, may rekomendasyon ngunit walang natiyak na pasya ng board. Alamin ang kulang; huwag magpahayag na aprubado.",
+          "start_ms": 28340,
+          "end_ms": 39660
+        },
+        {
+          "zone": "follow-up",
+          "index": 4,
+          "text": "Itatanong ni Demi: saan matitiyak ang opisyal na tala ng pasya at susunod na hakbang? Sa lokal na health office tiyakin ang tamang contact.",
+          "start_ms": 39960,
+          "end_ms": 50520
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Ipaliwanag ang papel, ihiwalay ang alam sa kulang, saka magtanong. Ang training certificate, BHWE o trabaho ay hindi kapalit ng akreditasyon.",
+          "start_ms": 50820,
+          "end_ms": 63380
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-4/bhw-accreditation-gemini-fil-eb6f171aa690.mp4",
+        "content_hash": "eb6f171aa690693afca8f79fb2c598e545cdf75576a7e9a771e55b9b307d94b2",
+        "duration_s": 65,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-accreditation-gemini-fil-45f0c89b709e.vtt",
+          "content_hash": "45f0c89b709ef09d0e634dc7975a2c592df5831dbe332a6a6237d0e742b427f5"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-accreditation-gemini-fil-d079df44be22-poster.jpg",
+          "content_hash": "d079df44be224faf42b472a2cbebfa90140975c79219d7428237e289a9ddf3b5"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-4/bhw-accreditation-gemini-fil-d079df44be22-poster.jpg",
+        "content_hash": "d079df44be224faf42b472a2cbebfa90140975c79219d7428237e289a9ddf3b5"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 57.809,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "Who decides accreditation? Demi asks this question. Her status has not been established.",
+          "start_ms": 0,
+          "end_ms": 7240
+        },
+        {
+          "zone": "board",
+          "index": 1,
+          "text": "The Local Health Board has the accreditation responsibility. Check the application and official decision record; hearsay is insufficient.",
+          "start_ms": 7540,
+          "end_ms": 16900
+        },
+        {
+          "zone": "committee",
+          "index": 2,
+          "text": "A committee may handle screening and recommendations. Without a committee, the board facilitates the process. A recommendation is not automatic approval.",
+          "start_ms": 17200,
+          "end_ms": 27080
+        },
+        {
+          "zone": "cards",
+          "index": 3,
+          "text": "Fictional Card B has a recommendation but no verified board decision. Identify what is missing; do not declare approval.",
+          "start_ms": 27380,
+          "end_ms": 35660
+        },
+        {
+          "zone": "follow-up",
+          "index": 4,
+          "text": "Demi asks where to verify the official decision record and next step. Confirm the responsible contact with the local health office.",
+          "start_ms": 35960,
+          "end_ms": 44880
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Explain roles, distinguish known facts from missing information, then ask. A training certificate, BHWE or job is not a substitute for accreditation.",
+          "start_ms": 45180,
+          "end_ms": 57740
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-4/bhw-accreditation-gemini-en-49d2fff98ed8.mp4",
+        "content_hash": "49d2fff98ed817715e434757189c4552c0ff291cf644c8fe210b883b3fecd581",
+        "duration_s": 59,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-accreditation-gemini-en-516365accd4a.vtt",
+          "content_hash": "516365accd4a224504e644b77977fb7a56fbf7346f95f6d94ac70f5e26dd97e9"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-accreditation-gemini-en-a5f7be96fd89-poster.jpg",
+          "content_hash": "a5f7be96fd8949ba45265828316f88e1a56bca434d1a2fe5733bbb3cc5ddec48"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-4/bhw-accreditation-gemini-en-a5f7be96fd89-poster.jpg",
+        "content_hash": "a5f7be96fd8949ba45265828316f88e1a56bca434d1a2fe5733bbb3cc5ddec48"
+      }
+    }
+  ]
+}

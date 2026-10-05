@@ -4,7 +4,7 @@ Suportahan ang iisang layunin ng lesson: maipaliwanag at mailapat sa isang sitwa
 
 ## [time-materials] Oras at kagamitan
 
-Panatilihin ang kasalukuyang 30-minutong bahagi ng lesson sa 180-minutong module. Authored teaching split: pagbubukas 3 minuto; papel at tala 8; fictional cards 6; pagsasanay sa tanong 5; application check 5; suportadong re-practice 3. Hiwalay dito ang optional story at replays. Sukatin ang self-study estimate batay sa kumpletong encoded narration bago ang final packaging; authored estimate ito, hindi TESDA accreditation requirement.
+Panatilihin ang kasalukuyang 30-minutong bahagi ng lesson sa 180-minutong module. Authored teaching split: pagbubukas 3 minuto; papel at tala 8; fictional cards 6; pagsasanay sa tanong 5; application check 5; suportadong re-practice 3. Hiwalay dito ang optional story at replays. Authored estimate ang 8–10 minuto para sa sariling pag-aaral: humigit-kumulang 6 minuto ang anim na encoded Read narration, dagdag ang 2–4 minuto para sa pag-iisip at lahat ng application rationales. Hindi kasama ang optional story at audio replays; hindi ito TESDA accreditation requirement.
 
 Gamitin ang anim na screen, blankong papel, tatlong malinaw na fictional cards, role cards at source sheet. Sa role cards: “komite: suriin, kapanayamin, magrekomenda, tumulong sa registry” at “board: aksiyunan, itala ang pasya, maglabas ng sertipiko sa kwalipikadong BHW.” Huwag humingi ng tunay na sertipiko, personal na service record, accreditation status o pinunang aplikasyon. Gamit sa talakayan ang blankong folder sa illustration.
 
@@ -43,11 +43,11 @@ Huwag ipahiya ang learner dahil may hindi pa alam. Huwag gawing personal na asse
 
 ## [practice] Kathang role at process cards
 
-Gumamit ng blankong sheet na may apat na column: alam na detalye / may tungkulin / kulang na impormasyon / tiyak na tanong. Worked A: “training certificate / proseso ng board, gabay ng health office / susunod na registration o accreditation step / aling tanggapan ang magtitiyak ng kasalukuyang proseso at ebidensiya?”
+Gumamit ng blankong sheet na may apat na column: alam na detalye / may tungkulin / kulang na impormasyon / tiyak na tanong. Worked Card A: “training certificate / proseso ng board, gabay ng health office / susunod na registration o accreditation step / aling tanggapan ang magtitiyak ng kasalukuyang proseso at ebidensiya?”
 
-Worked B: “rekomendasyon ng komite / tumutulong ang komite, umaaksiyon ang board / opisyal na pasya at tala / aling tanggapan ang magtitiyak kung may pasya, saan ito makukumpirma at ano ang susunod?”
+Worked Card B: “rekomendasyon ng komite / tumutulong ang komite, umaaksiyon ang board / opisyal na pasya at tala / aling tanggapan ang magtitiyak kung may pasya, saan ito makukumpirma at ano ang susunod?”
 
-Worked C: “may binanggit na resolution / tala ng board, authorized local contact / proseso at saklaw / aling opisyal na tala ang magtitiyak sa naging pasya at kung sino ang saklaw?” Hindi patunay ng approval o refusal ang pagbanggit lamang. Walang tunay na record na hinihingi.
+Worked Card C: “may binanggit na resolution / tala ng board, authorized local contact / proseso at saklaw / aling opisyal na tala ang magtitiyak sa naging pasya at kung sino ang saklaw?” Hindi patunay ng approval o refusal ang pagbanggit lamang. Walang tunay na record na hinihingi.
 
 Magpalitan ng papel: magpaliwanag ang isa, magtanong tungkol sa kulang ang isa. Palitan ang card at ulitin. Manatiling fictional ang nakasulat na output; observation level at maikling puna lamang ang itala.
 

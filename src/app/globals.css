@@ -772,3 +772,24 @@ body {
   margin-inline: auto;
   object-fit: contain;
 }
+
+/* Demi accreditation scene and optional story: keep faces and the whole video visible. */
+.reference-story-art img[src*="demi-accreditation-question"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-accreditation"] {
+  border: 0;
+  padding: 0;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-accreditation"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-accreditation"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-accreditation"] details {
+  display: none;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-accreditation"] figure { margin: 0; }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-accreditation"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}

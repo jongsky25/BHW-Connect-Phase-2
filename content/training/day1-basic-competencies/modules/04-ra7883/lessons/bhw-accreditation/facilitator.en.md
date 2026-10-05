@@ -43,11 +43,11 @@ Do not shame a learner for uncertainty. Do not turn a fictional card into a pers
 
 ## [practice] Fictional role and process cards
 
-Use a four-column blank sheet: known fact / responsible role / missing information / specific question. Worked A: “training certificate / local board process, health office guidance / next registration or accreditation step / which office confirms the current process and evidence?”
+Use a four-column blank sheet: known fact / responsible role / missing information / specific question. Worked Card A: “training certificate / local board process, health office guidance / next registration or accreditation step / which office confirms the current process and evidence?”
 
-Worked B: “committee recommendation / committee assists, board acts / official decision and record / which office confirms whether the board decided, where it can be verified and what comes next?”
+Worked Card B: “committee recommendation / committee assists, board acts / official decision and record / which office confirms whether the board decided, where it can be verified and what comes next?”
 
-Worked C: “resolution mentioned / board record, authorized local contact / process and scope / which official record confirms what decision was made and whom it covers?” A mention alone proves neither approval nor refusal. No actual records are requested.
+Worked Card C: “resolution mentioned / board record, authorized local contact / process and scope / which official record confirms what decision was made and whom it covers?” A mention alone proves neither approval nor refusal. No actual records are requested.
 
 Partners exchange roles: one explains, the other asks for the missing information. Swap cards and repeat. Keep written output fictional; record only the observation level and brief feedback.
 

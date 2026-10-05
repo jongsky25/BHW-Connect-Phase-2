@@ -41,8 +41,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-144-audio-review.mjs
-      - name: Focused review of committed audio excerpts
-        if: inputs.review_only == true
+      - name: Focused review of actual audio excerpts
+        if: always()
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-144-audio-focus.mjs
