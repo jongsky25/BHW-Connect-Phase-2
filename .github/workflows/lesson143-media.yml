@@ -3,6 +3,10 @@ name: Lesson 1.4.3 draft Gemini media
 on:
   workflow_dispatch:
   workflow_call:
+    inputs:
+      review_only:
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -28,14 +32,20 @@ jobs:
       - run: npx remotion browser ensure
         working-directory: remotion
       - name: Generate lesson 1.4.3 media
+        if: inputs.review_only != true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-143-media-build.mjs
       - name: Model-mediated audio review of actual completed tracks
-        if: always()
+        if: always() && inputs.review_only != true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-143-audio-review.mjs
+      - name: Focused review of committed audio excerpts
+        if: inputs.review_only == true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-143-audio-focus.mjs
       - name: Save review artifacts, including completed partial tracks on failure
         if: always()
         uses: actions/upload-artifact@v4
@@ -51,4 +61,5 @@ jobs:
             remotion/src/Root.tsx
             docs/lesson-143-media-generation.json
             docs/lesson-143-audio-review.json
+            docs/lesson-143-audio-focus.json
           if-no-files-found: error

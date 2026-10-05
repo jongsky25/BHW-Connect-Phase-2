@@ -192,6 +192,46 @@
       "caption_en": "Conditions · Evidence · CSC verification. Fictional draft awaiting owner review.",
       "provenance": "Original built-in image_gen.imagegen illustration,5 October2026, using owner-approved1.4.1 Demi identity reference SHA256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. No model identifier returned. Exact prompt: Create a genuinely NEW original landscape 16:9 educational illustration for BHW Connect lesson1.4.3, Demi and understanding Barangay Health Worker Eligibility (BHWE). Use the attached approved1.4.1 illustration ONLY as the explicit visual identity and style reference for Demi: the adult Filipina woman on the LEFT with medium-brown skin, recognizable same face and eyes/nose, short wavy dark bob and plain teal collared blouse. Preserve that fictional identity closely. New scene and poses: Demi sits at a simple community health discussion table, thoughtfully pointing with one hand at blank cream question sheets and three blank colored practice cards, while a calm adult Filipina facilitator in a plain warm coral blouse listens with open, supportive posture. This is a fictional planning conversation about what must be verified with CSC, not a credential or application approval. Show exactly two people, natural adult anatomy/proportions, complete faces, heads and all four visible hands clearly and safely inside the image; no cropped faces/hands, no extra fingers or limbs. Place the whole tabletop and both participants within generous12percent safe margins on every side for phone containment. Clear separate silhouettes; Demi remains the focal person on the left, facilitator on the right. Warm hand-painted editorial illustration, softly textured clean shapes, attractive muted teal/cream/coral palette, gentle afternoon light, modest uncluttered barangay health-room background, small potted plant and blank wall. New visual composition, not a relabel of the reference. All sheets/cards MUST be blank, no legible text, no letters/numbers/labels. No certificate, ID, seal, official logo, flag, filled form, school transcript, appointment, uniform, payment, eligibility approval or government-job guarantee. No speech bubbles or infographic text. Opaque background. Leave generous breathing room around the people and their hands; use containment-friendly composition.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-eligibility-story",
+      "alt_fil": "Kuwentong may salaysay: ipinaliliwanag ni Demi ang BHWE conditions, accredited-service count at tiyak na CSC verification.",
+      "alt_en": "Narrated story: Demi distinguishes BHWE conditions and accredited-service counts and asks a specific CSC question.",
+      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson 1.4.3; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. New media are draft; no owner or independent policy SME approval.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7963ff6962eb.mp4",
+          "content_hash": "7963ff6962eb79f667ef35f751190ed8907f5a726666ed589ebf6b526c2d08c0",
+          "duration_s": 77,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-0ddc480c6e6e.vtt",
+            "content_hash": "0ddc480c6e6e621631261875b279ba14e0c88ed0e2dd9704d080a5ea393472ed"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7ae68197f709-poster.jpg",
+            "content_hash": "7ae68197f709ae2bb6069d88ac2e5ae9ed966e97bc3de8b457f8ee7219f630c5"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-5b27d9fc14de.mp4",
+          "content_hash": "5b27d9fc14deafc0f04419aae367cfdda324c9dca473123df92b7955f156e817",
+          "duration_s": 78,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-315abb2958c2.vtt",
+            "content_hash": "315abb2958c25d6def99d8024c53cf8c56bf8b8e105f78dbd51f3e624f9003db"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-eligibility-gemini-en-95f794f724a5-poster.jpg",
+            "content_hash": "95f794f724a5cdba695274140493aa0a723a4f6ff8a976c2038c7578eaed7c2d"
+          }
+        }
+      },
+      "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7ae68197f709-poster.jpg",
+      "content_hash": "7ae68197f709ae2bb6069d88ac2e5ae9ed966e97bc3de8b457f8ee7219f630c5"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-eligibility-story"
 }
