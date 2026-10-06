@@ -129,5 +129,20 @@
     "inline_media_equal_zip_and_source": true,
     "source_content_equal_review_package": true
   },
-  "limits": "Owner approval does not establish human listening, original PDF page verification, independent policy SME signoff or authenticated production playback. Historical evidence remains unchanged."
+  "limits": "Owner approval does not establish human listening, original PDF page verification, independent policy SME signoff or authenticated production playback. Historical evidence remains unchanged.",
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/competency.json": "9582e24d5062c32c6e5433daab7472f4bb8933d5bc10692dd0a1598b517acf18",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/facilitator.en.md": "b5798d0d46a808d828e9f30f17a146803b364e39216769eb968ef743dab65b91",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/facilitator.fil.md": "6fd93f8a7b0d3001c0092690779e1d4018866ae1c38c0b98acd6366dfcf93a2c",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/lesson.json": "92dd2ab3b62314359c5709bd0739a51342bcb9e6bab7279617ba9b568a5606ac",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/read.en.md": "e7afcbcc242203e770a49fb5344bcf63c6eedf91861966d3ea851d76f389f00b",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/read.fil.md": "2a6a74ba3b6e8c4e5998fd9adae0e1988e26fc70804acf5b82bfffe74e8e2ba5",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/slides.json": "38eadff9ef0dd806194c7a066de469f881abb3dfad203b0f5d898c0fd7218507",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.en.md": "d4603b12797f15955af9de8bb75d9437d18669b54bdcd4bf17fbd4be6c2f6243",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.fil.md": "e9a3f541800716ed9d707a3f0366cd3afc4e49d3d0a3d523bb49ba4786fb7b39",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/qa-entries.json": "b90c145c7370c7584ceab40610fd86475e4de1a82b231efce126ba366a9222de",
+    "content/training/day1-basic-competencies/narration.json": "eafb64badf2d679ebbdb374e1dc974dbf7b7ee31c5bf6bcdc4ce05ff1d3f7aa4",
+    "remotion/src/Root.tsx": "00d0cabae3aac4f54b9ee8bc62e986e2ad6f6142676e94b34bc659ff18b0c00f"
+  },
+  "historical_guard_note": "Exact source hashes pin the approved lesson 1.5.3 successor state while earlier 1.5.1/1.5.2 baselines remain immutable."
 }
