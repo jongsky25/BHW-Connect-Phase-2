@@ -184,6 +184,46 @@
       "caption_en": "A fictional example of respectful planning and handoff. New draft image for review.",
       "provenance": "Built-in imagegen with approved Malou identity reference; original teamwork scene, no real officials or personal records. See docs/lesson-154-scene-brief.json.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-teamwork-story",
+      "alt_fil": "Anim na salaysay na hakbang ng malinaw na pagtutulungan at handoff ni Malou.",
+      "alt_en": "Six narrated steps showing Malou’s clear teamwork and handoff.",
+      "caption_fil": "Kathang-isip na kuwentong draft; hiwalay na pagrepaso ang kailangan.",
+      "caption_en": "Fictional draft story; separate review required.",
+      "provenance": "Original lesson1.5.4 teamwork story using new built-in imagegen scene with approved Malou identity as input. Gemini gemini-3.8-flash-tts Kore; measured encoded audio boundaries, varied framing and animated task labels. No real records, human listening, owner approval or SME signoff claimed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-8b90259ba1b1.mp4",
+          "content_hash": "8b90259ba1b14044e3790ec9af3e6d4b901e9cf7f90ca61ef645072ca56f0bf0",
+          "duration_s": 65,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-4dcd763b01ad.vtt",
+            "content_hash": "4dcd763b01ade4b168db3ec76a260767fb1ef185b99b553373e23e2ce0d374bd"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-fbee3b6fc714-poster.jpg",
+            "content_hash": "fbee3b6fc714c5218fe2b5ad602aff2871bf1c9010a798360cc78e7ae19f3f96"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-teamwork-gemini-en-27fedbe2af4d.mp4",
+          "content_hash": "27fedbe2af4d6dcfe198129b272b448a577170f246dc0e4741c37cb004f88faa",
+          "duration_s": 57,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-teamwork-gemini-en-d9fc45de8faa.vtt",
+            "content_hash": "d9fc45de8faa711714a1addf969b09a8143c8e1a20afc6de40e16da3b129dd8d"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-teamwork-gemini-en-fb3860fd4540-poster.jpg",
+            "content_hash": "fb3860fd4540e2ae90cf75734db1eae3e95e78ac8d415501840433789d583ff1"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-fbee3b6fc714-poster.jpg",
+      "content_hash": "fbee3b6fc714c5218fe2b5ad602aff2871bf1c9010a798360cc78e7ae19f3f96"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-teamwork-story"
 }

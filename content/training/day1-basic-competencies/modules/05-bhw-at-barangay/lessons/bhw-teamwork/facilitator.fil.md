@@ -6,7 +6,7 @@ Gamitin ang nag-iisang layunin ng aralin: “Maipaliwanag at mailapat sa isang s
 
 Ang buong pinadadaloy na talakayan at role-play ay 30 minuto: pambungad 3, limang gawi 6, kasunduan 5, halimbawa at role-play 8, feedback at check 5, buod 3. Opsyonal ang hiwalay na 30 minutong accessible team activity: paghahanda at pagpili 5, pagtutulungan 10, pagtalakay 10, paglalapat 5. Kung kapwa gagamitin, 60 minuto ang dalawa sa anim na tig-30 minutong bahagi ng umiiral na 180-minutong module. Hindi ito dagdag na 60 minuto sa module. Ang 30 minutong pangunahing aralin ay maaari ring mag-isa.
 
-SELF_STUDY_TIMING_PENDING
+Ginawang pagtataya ng sariling pag-aaral: 10–13 minuto. Aktuwal na salaysay ng anim na screen: 334.39 segundo sa English at 375.85 segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 Kagamitan: papel o task cards at panulat kung mayroon; maaaring pasalita lamang o gumamit ng assistive communication. Hindi kailangan ng larong pisikal, biniling materyales, video o sariling gadget.
 

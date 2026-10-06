@@ -16,7 +16,7 @@ permissions:
   actions: read
 concurrency:
   group: lesson154-media-${{ github.event.pull_request.number }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   draft:
     if: github.head_ref == 'codex/lesson-154-malou-proposal' || github.event_name == 'workflow_dispatch'
@@ -62,6 +62,26 @@ jobs:
           LESSON154_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-154-record-fetch.mjs'
         run: node scripts/lesson-154-audio-focus.mjs
+      - name: Build self-contained actual-component review
+        if: success()
+        run: node scripts/lesson-154-review-build.mjs
+      - name: Install playback-test browser
+        if: success()
+        run: npx playwright install --with-deps chromium
+      - name: Verify desktop, mobile and true offline playback
+        if: success()
+        run: node scripts/lesson-154-browser-check.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson154-browser-review
+          path: |
+            docs/lesson-154-browser-verification.json
+            .preview/lesson154/lesson-1.5.4-malou-review.html
+            .preview/lesson154/inline-media-manifest.json
+            .preview/lesson154/*.png
+          include-hidden-files: true
+          retention-days: 30
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -76,6 +96,8 @@ jobs:
             docs/lesson-154-media-generation.json
             docs/lesson-154-audio-review.json
             docs/lesson-154-audio-focus.json
+            docs/lesson-154-browser-verification.json
+            .preview/lesson154/
             .preview/lesson154-raw/
             .preview/lesson154-excerpts/
           include-hidden-files: true

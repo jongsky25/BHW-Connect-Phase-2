@@ -1,0 +1,67 @@
+{
+  "collected_at": "2026-10-06T11:50:24.848Z",
+  "source_commit": "4aaac6636beaad41310bc1f6dd23c18dc492d0c9",
+  "baseline_commit": "e962d4263eae525bca38679a218df623d6eb286f",
+  "baseline_bytes_sha256": "5dded195f5a91b9b2e2eac60768a54979deab6b609d8e4a2b167aa35a16b47fc",
+  "tracked_files": 6939,
+  "starting_public_mp3s": 2541,
+  "protected_sibling_files": 35,
+  "approved_media": 133,
+  "changed_existing_files": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/remotion.yml",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/facilitator-notes.en.md",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/facilitator-notes.fil.md",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.en.md",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.fil.md",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/competency.json",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/facilitator.en.md",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/facilitator.fil.md",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/lesson.json",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/read.en.md",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/read.fil.md",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/slides.json",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/qa-entries.json",
+    "content/training/day1-basic-competencies/narration.json",
+    "remotion/src/Root.tsx",
+    "scripts/lib/reference-narration.mjs",
+    "scripts/lib/tts-providers/gemini.mjs",
+    "src/components/elearning/reference-lessons.tsx"
+  ],
+  "unexpected_changes": [],
+  "missing_files": [],
+  "non_target_mapping_changes": [],
+  "non_target_history_changes": [],
+  "shared_passages": [
+    {
+      "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.fil.md",
+      "changed_section_indexes": [
+        7
+      ],
+      "only_teamwork": true
+    },
+    {
+      "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.en.md",
+      "changed_section_indexes": [
+        7
+      ],
+      "only_teamwork": true
+    }
+  ],
+  "changed_qa_rows": [
+    "d1m5-teamwork-practices"
+  ],
+  "qa_order_preserved": true,
+  "published_snapshot": {
+    "captured_at": "2026-10-06T11:25:59.131Z",
+    "source_commit": "e9a0702c3019bbb22e0d5492d77fa410974430f7",
+    "row_count": 12,
+    "changed_since_prior_capture": []
+  },
+  "limitations": [
+    "Historical package receipts are retained as historical evidence, not fabricated current audits.",
+    "No learner identities or progress queried.",
+    "No merge, production deployment or publication performed."
+  ],
+  "status": "passed"
+}

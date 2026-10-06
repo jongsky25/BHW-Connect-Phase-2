@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Draft review artifacts only, with the existing repository Gemini secret.
-// Target-only bilingual relationships story, with measured duration.
+// Target-only bilingual teamwork story, with measured duration.
 // No database, deployment, approval, commit or publication operations.
 import {execFileSync} from 'node:child_process';
 import {existsSync, readFileSync, writeFileSync, readdirSync} from 'node:fs';

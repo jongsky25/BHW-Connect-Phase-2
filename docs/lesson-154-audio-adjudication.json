@@ -1,0 +1,19 @@
+{
+  "decision": "One bounded target-only retry for two Filipino Read tracks; no other track or story regenerated.",
+  "tracks": [
+    "teamwork-five-practices/fil",
+    "teamwork-role-agreement/fil"
+  ],
+  "basis": [
+    "Five-practices full and focused reviews both flag unexpected voice/register changes.",
+    "Role-agreement full and focused ending transcripts both render authored Gawain as Gagawin; full/focused critical excerpt also differs in napahintulutan phrasing."
+  ],
+  "retained_uncertainties": [
+    "Full five-practices review transcribes privacy as pasya while focused ending transcribes pribasya; do not call loss of privacy corroborated.",
+    "English application full review reports exact intelligible text; focused excerpts report Apply/voice artifacts. Disagreement is retained, not silently treated as proof of a defect.",
+    "Other isolated timbre/speaker reports conflict with full reviews or concern deliberate sentence boundaries; not human listening or SME approval."
+  ],
+  "prior_full_report": "docs/lesson-154-audio-review-initial.json",
+  "prior_focused_report": "docs/lesson-154-audio-focus-initial.json",
+  "owner_review": "pending"
+}

@@ -291,6 +291,8 @@ export function ReferenceLessons(props: Props) {
     : undefined;
   const featuredVideo = featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined;
   const narratedStory = Boolean(featuredVideo?.videos);
+  const teamworkTracks = lesson?.lesson_key === "bhw-teamwork" ? Object.values(props.narration?.[lesson.id] ?? {}) : [];
+  const teamworkMinutes = teamworkTracks.length === 6 ? Math.ceil(teamworkTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
   const videoLabel = narratedStory
     ? ui("Kuwentong may salaysay", "Narrated story")
@@ -568,7 +570,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {revealSummary && !storyLayout && figures}
+            {(revealSummary || (lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && !storyLayout && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -741,7 +743,13 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {lesson.lesson_key === "bhw-relationships" && lesson.revision.assets.some(asset => asset.id === "malou-courtyard") ? ui(
+              {lesson.lesson_key === "bhw-teamwork" && lesson.revision.assets.some(asset => asset.id === "malou-teamwork") ? (teamworkMinutes === null ? ui(
+                "Maglaan ng oras sa pagbasa, pagsasanay at pagninilay; hiwalay ang 30-minutong guided practice.",
+                "Allow time for reading, practice and reflection; the 30-minute guided practice is separate.",
+              ) : ui(
+                `Tinatayang ${teamworkMinutes}–${teamworkMinutes + 3} minuto ayon sa audio sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 30-minutong guided practice.`,
+                `Estimated ${teamworkMinutes}–${teamworkMinutes + 3} minutes from this language’s audio plus 3–6 minutes of practice. The optional story is additional; the 30-minute guided practice is separate.`,
+              )) : lesson.lesson_key === "bhw-relationships" && lesson.revision.assets.some(asset => asset.id === "malou-courtyard") ? ui(
                 "Tinatayang 10–13 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang 30-minutong guided practice.",
                 "Estimated 10–13 minutes for independent study; optional story and audio replay are additional. The 30-minute guided practice is separate.",
               ) : lesson.lesson_key === "bhw-barangay-partners" && lesson.revision.assets.some(asset => asset.id === "malou-meeting") ? ui(

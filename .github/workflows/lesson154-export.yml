@@ -1,14 +1,14 @@
 name: Lesson 1.5.4 read-only evidence transport
 on:
-  pull_request:
-    branches: [main]
+  push:
+    branches: ['codex/lesson-154-malou-proposal']
     paths: ['.github/workflows/lesson154-export.yml']
 permissions:
   contents: read
   actions: read
 jobs:
   plan:
-    if: github.head_ref == 'codex/lesson-154-malou-proposal'
+    if: github.ref_name == 'codex/lesson-154-malou-proposal'
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
@@ -18,7 +18,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SOURCE_RUN: '37456063929'
           KIND: 'media'
-          TARGET_BRANCH: ${{ github.head_ref }}
+          TARGET_BRANCH: ${{ github.ref_name }}
         shell: python
         run: |
           import urllib.request,os,json,math
