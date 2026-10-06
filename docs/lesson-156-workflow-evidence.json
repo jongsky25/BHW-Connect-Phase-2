@@ -31,6 +31,20 @@
       "crc": "passed",
       "unique_safe_members": 184,
       "note": "Four bounded Read voice corrections, all14 full/56focused reviews succeeded; offline harness synchronous-process/server deadlock fixed before final verification."
+    },
+    {
+      "run_id": 37462192277,
+      "source_commit": "bfa65325209bd74bbf15994400c31c7504fa158c",
+      "conclusion": "success",
+      "artifact_id": 11414235021,
+      "api_zip_sha256": "82d14e9c77e45f3fc1d9660974a9af130dcb76c9ff7eee8240a4157d4760b8e8",
+      "zip_bytes": 90985868,
+      "crc": "passed",
+      "unique_safe_members": 148,
+      "full_model_reviews": 14,
+      "focused_model_excerpts": 56,
+      "browser_cases": 66,
+      "human_listening": false
     }
   ],
   "retry": "One bounded correction for four corroborated voice continuity cases; initial selected tracks/reviews preserved."

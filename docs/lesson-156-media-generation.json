@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-10-06T12:08:39.767Z",
-  "source_commit": "ce92d6e0c1eee04e147a2f38ca71c3bb81edd8fa",
+  "generated_date": "2026-10-06T12:21:39.376Z",
+  "source_commit": "bfa65325209bd74bbf15994400c31c7504fa158c",
   "owner_review": "pending",
-  "render_input_sha256": "17e79d2f01c6063605aca486d46f859f59872abe516c74abe86e5d5d60856869",
-  "render_cached": true,
+  "render_input_sha256": "1e65307f75258bf273fec92d78c77eaa5d36901070af76834ffce97c4d1c60bd",
+  "render_cached": false,
   "target_read_tracks": 12,
   "pending_read_tracks": [],
   "read_generation_error": null,
@@ -75,8 +75,7 @@
       "poster": {
         "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-4206b4e8c385-poster.jpg",
         "content_hash": "4206b4e8c385d3127505c32534d8124f4d6d407b6c38a2fd8092bdf9f9e315ee"
-      },
-      "render_reused_exact_input_hash": true
+      }
     },
     {
       "language": "en",
@@ -144,8 +143,7 @@
       "poster": {
         "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-146f95145292-poster.jpg",
         "content_hash": "146f95145292cd6a027cd6590984b1af904a5d2049157e549338ce300bc4d4d2"
-      },
-      "render_reused_exact_input_hash": true
+      }
     }
   ]
 }

@@ -22,7 +22,7 @@ try{
  await run('npx',['--yes','agent-browser','--session','lesson156','screenshot',dir+'/agent-browser-desktop.png'],{env});
  await run('npx',['--yes','agent-browser','--session','lesson156','close'],{env});
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
-  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));await page.goto('http://127.0.0.1:4176/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
+  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));await page.goto('http://127.0.0.1:4176/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();assert(await page.getByText(/8–11/).isVisible());await context.setOffline(true);
   const next=lang==='en'?'Next':'Susunod',complete=lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin';
   for(let i=0;i<6;i++){
    const section=lesson.sections[i],slide=mode==='slides';await page.locator('article[data-scene="'+(slide?'slide-':'')+section.id+'"]').waitFor();
@@ -33,7 +33,7 @@ try{
    if(slide)await page.getByText(lang==='en'?'Full narration and audio':'Buong salaysay at audio',{exact:true}).click();
    assert.equal(await page.locator('audio').count(),1);await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.readyState>=2&&a.currentTime>0;});
    const timings=manifest.lessons['bhw-right-contact'].sections[section.id][lang].timings;caseRecord.highlight_zones=[];
-   for(const zone of ['heading','body','takeaway']){const t=timings.find(t=>t.zone===zone);await page.locator('audio').evaluate((a,time)=>{a.currentTime=time},(t.start_ms+t.end_ms)/2000);await page.waitForTimeout(120);assert(await page.locator('[data-active="true"]').count()>0);caseRecord.highlight_zones.push(zone);}
+   for(const zone of ['heading','body','takeaway']){const t=timings.find(t=>t.zone===zone);await page.locator('audio').evaluate((a,time)=>{a.currentTime=time},(t.start_ms+t.end_ms)/2000);await page.waitForFunction(expected=>Array.from(document.querySelectorAll('[data-active="true"]')).some(el=>el.textContent.replace(/\*\*/g,'').replace(/\s+/g,' ').trim()===expected),t.text.replace(/\*\*/g,'').replace(/\s+/g,' ').trim());caseRecord.highlight_zones.push({zone,expected_text:t.text,matched:true});}
    await page.locator('audio').evaluate(a=>{window.__previousAudio=a});report.cases.push(caseRecord);save();
    if(i<5){await page.getByRole('button',{name:next,exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));}
   }
@@ -48,7 +48,7 @@ try{
  for(const lang of ['fil','en']){
   const context=await browser.newContext();const page=await context.newPage();await page.goto('http://127.0.0.1:4176/?lang='+lang);await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();await context.setOffline(true);
   await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});
-  const cues=await page.locator('video').evaluate(v=>({muted:v.muted,cues:v.textTracks[0]?.cues?.length??0,duration:v.duration}));assert.equal(cues.muted,false);assert.equal(cues.cues,6);await page.locator('video').evaluate(v=>{v.currentTime=v.duration-0.5});await page.waitForFunction(()=>document.querySelector('video').ended,{timeout:10000});report.cases.push({language:lang,unmuted_story:true,six_cues:true,complete_ending:true,offline:true,duration:cues.duration});await context.close();
+  const cues=await page.locator('video').evaluate(v=>({muted:v.muted,cues:v.textTracks[0]?.cues?.length??0,duration:v.duration}));assert.equal(cues.muted,false);assert.equal(cues.cues,6);await page.locator('video').evaluate(v=>{v.currentTime=v.duration-0.5});await page.waitForFunction(()=>document.querySelector('video').ended,null,{timeout:10000});report.cases.push({language:lang,unmuted_story:true,six_cues:true,complete_ending:true,offline:true,duration:cues.duration});await context.close();
  }
  assert.equal(report.errors.length,0);report.status='passed';report.actual_case_count=report.cases.length;save();
 }catch(error){report.status='failed';report.error=String(error.stack??error);save();throw error;}finally{await browser.close();await new Promise(r=>server.close(r));}
