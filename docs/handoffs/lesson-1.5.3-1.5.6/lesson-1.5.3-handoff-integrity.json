@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "collected_at_utc": "2026-10-06T10:17:13.613941+00:00",
+  "lesson": "1.5.3",
+  "source_commit": "e962d4263eae525bca38679a218df623d6eb286f",
+  "handoff": {
+    "path": "/workspace/outputs/handoff-lesson-1.5.3.txt",
+    "bytes": 19241,
+    "sha256": "d96e2351af0809be86579b186f35cf83ae95941039dbc6b5239267d93b91aa32"
+  },
+  "zip": {
+    "path": "/workspace/outputs/lesson-1.5.3-handoff.zip",
+    "bytes": 6865370,
+    "sha256": "eb4d71b654d08a88d91872a09c14ca0baa7d6f197bae49a93af174dc0b6b82ff",
+    "members": 34
+  },
+  "checks": [
+    "ZIP CRC",
+    "unique safe member paths",
+    "every member SHA equals staged original",
+    "standalone handoff equals ZIP copy",
+    "old audio equals current actual source",
+    "all 133 approved prior media actual SHA",
+    "four prior available frozen packages actual SHA"
+  ],
+  "member_hashes": {
+    "START-HERE.txt": "97e4841a1548d3a80abafabd5f29257adbeab9e91f4406119df518c78fc42962",
+    "baseline.json": "72cea82b17bb437cc76b2361cfe294e05dd59856fbc8037c2ba08cdad70d3e67",
+    "file-index.json": "02546b4e6a100c1c123fec307f06aa8522543aa24b95253746c5678c2d22b95c",
+    "handoff-lesson-1.5.3.txt": "d96e2351af0809be86579b186f35cf83ae95941039dbc6b5239267d93b91aa32",
+    "old-audio/section-6.en.ffda51e86c2a.mp3": "6aa07ec4a6efefd948ccacc3c8c36ead49b90c36b439493d2706624755bb1a25",
+    "old-audio/section-6.fil.a2ecb51c8408.mp3": "3a1c3d8ccdad61373dd1abf708ab6265168f5b78c0eeb035665fbfc43a16dedc",
+    "old-audio/section-7.en.73b7ff198455.mp3": "207a9e097275fcb7d735e739026a47c26a5366846b7bdbf191a95e0aa5b602fe",
+    "old-audio/section-7.fil.329db6b8f186.mp3": "057edd509b88f351dabbd4a404fccc44a2d6817270583cd4c4fd8b5435129289",
+    "original-source-integrity.json": "bf47bf825d24d186f729be484ed967d69d6f26775c63782ce3d332be177e64c2",
+    "references/lesson-1.5.1-live-release.json": "fe577312ce0b2b1f886ab17d30a047eb5269bd6090ffb6c7abce1e43e4fe09d9",
+    "references/lesson-1.5.2-live-release.json": "5d3d9b986e062d662eabf95bdd19c05863bc78a129dbab9db619a254d64c98db",
+    "references/lesson-151-malou-series-brief.json": "b38d8f2942cc7016da73a4f327ca4361d1a43cbd66f21290e517a4380e6ee833",
+    "references/lesson-151-owner-approval.json": "fa04c4a13c0081649b1ed86020535206dc5e00859fb829ef59a79e30161ca4f2",
+    "references/lesson-152-owner-approval.json": "a96f599b1fad044b390222965786986004e8e9c646166c3a9b85b7a5bd028462",
+    "references/lesson-152-scene-brief.json": "9bf267007821845cef24d7a70fd7d05ec6ffc8b0f74dec4d47982a68bbfe9aa8",
+    "references/lesson-152-source-audit.json": "50d2d87fafe088f2fa28ffa2fb38a903af7b0ea86bc8cdbfc9b8ac0b5cbdb2b7",
+    "references/malou-courtyard-f6b2d754af39.png": "f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545",
+    "references/malou-meeting-7adc8aacd4e1.png": "7adc8aacd4e169fe06ca357d2a3ed119d9f14ba3e9bccc58509ed815ec446e2c",
+    "shared/activities.json": "cf1bc4cae25be798b2c0c734f4c6c8d168b2c75f696ff71677fa4b999d1a5c0e",
+    "shared/competency.json": "4880b381b2eeef39043b9876cf9da9cfe809c8fc8f4a679368f96054560a6aad",
+    "shared/coverage.json": "793e4be369e2f19d54f51ce13b90ff8a396256fdb2dfe52c0e1d659430c18339",
+    "shared/facilitator-notes.en.md": "b02dea3b373a2bccec3889ca35eb03bb010a998942acb6c875eb2588c85f785a",
+    "shared/facilitator-notes.fil.md": "ba53d3c7a3c07d97ac4f27fda5051c06b947702c91406b3690046c6c5e4cf822",
+    "shared/lesson.en.md": "c6de185beffe4545028b0787a2e5615a7d8d19dedd46d9df7f93c704c65bd93b",
+    "shared/lesson.fil.md": "498e3a79d3f89bd7140a26a44f6bf762e77e931cbb48d427d6f56190c32a3039",
+    "shared/module.json": "2e7061b5e77700c16f8b022d3d2823d527be67b27a22acc7046bfa27b3cd6e22",
+    "shared/qa-entries.json": "9856112cb9979566181be95251bf597b960ff69f804f2398795af6fbb79fb5b0",
+    "source/competency.json": "5c1d834b33d8eaada9ec2d090c1f7d973faad9944d5b93ed544feaf30cc1565a",
+    "source/facilitator.en.md": "bb98038b6db25970500e66961ea1f40019a6d17805e7c399c39200f8048a72cd",
+    "source/facilitator.fil.md": "e148ec54c8eeb660d1f87dd23985167d000249a8a2c6d6ad18483864d9fca478",
+    "source/lesson.json": "999756c2192a780e7494ee8efc8d0c48f35c8d3d2a28df2464f6bea6a0087916",
+    "source/read.en.md": "1559a357ecb566a127456787c87b0b3b78d1eb965385ebab24a86ddf7c7391f8",
+    "source/read.fil.md": "9ea71e3521e35ac49217029113a750d3ff370ad4dd8ca79a5e97aa98e421220e",
+    "source/slides.json": "5055f054b38903d2e4046cc7846fdf89bf2d380df506d67950b6e112f29fbc4e"
+  }
+}

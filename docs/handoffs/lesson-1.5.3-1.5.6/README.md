@@ -1,0 +1,18 @@
+# Lesson 1.5.3–1.5.6 execution handoffs
+
+Four separate future execution handoffs using the released lesson 1.5.2 standard. This directory stores planning documents and portable source bundles; it does not approve or publish these lessons.
+
+Attach one ZIP in the task chat and say **“Implement this handoff here.”** Each handoff calls for one complete bilingual narrated draft, one draft PR, and a frozen review HTML/ZIP. Separate owner approval is required before merging, deploying or publishing each lesson. Execute in lesson order and refresh main and protected baselines between releases.
+
+| Lesson | Instructions | Portable bundle | Integrity receipt |
+|---|---|---|---|
+| 1.5.3 — City or municipal partners | [Text](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/handoff-lesson-1.5.3.txt) | [ZIP](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/lesson-1.5.3-handoff.zip) | [SHA/CRC receipt](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/lesson-1.5.3-handoff-integrity.json) |
+| 1.5.4 — Working well as a team | [Text](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/handoff-lesson-1.5.4.txt) | [ZIP](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/lesson-1.5.4-handoff.zip) | [SHA/CRC receipt](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/lesson-1.5.4-handoff-integrity.json) |
+| 1.5.5 — Managing your own work | [Text](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/handoff-lesson-1.5.5.txt) | [ZIP](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/lesson-1.5.5-handoff.zip) | [SHA/CRC receipt](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/lesson-1.5.5-handoff-integrity.json) |
+| 1.5.6 — Choose the right contact | [Text](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/handoff-lesson-1.5.6.txt) | [ZIP](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/lesson-1.5.6-handoff.zip) | [SHA/CRC receipt](https://github.com/jongsky25/BHW-Connect-Phase-2/blob/docs/lesson-153-156-handoffs/docs/handoffs/lesson-1.5.3-1.5.6/lesson-1.5.6-handoff-integrity.json) |
+
+Creation baseline: `e962d4263eae525bca38679a218df623d6eb286f` (released 1.5.2, PR #259). Each bundle includes its seven target source files, existing selected audio, approved Malou references, release receipts, protection baselines and a launch prompt. Original source PDFs and large prior review packages are not embedded; the handoffs explain retrieval and provenance limits.
+
+All four bundles passed ZIP CRC, unique/safe member paths, every member SHA and standalone handoff equality. Repository application files remain unchanged.
+
+Future agents: fetch branch `docs/lesson-153-156-handoffs` and read `docs/handoffs/lesson-1.5.3-1.5.6/README.md`. Download the desired ZIP using GitHub’s Download raw file button or retrieve it from the branch. Verify its integrity receipt, then refresh main and release baselines before execution. Treat this branch as handoff storage; create implementation branches from latest main, not from this storage branch.

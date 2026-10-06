@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "collected_at_utc": "2026-10-06T10:17:13.613941+00:00",
+  "lesson": "1.5.4",
+  "source_commit": "e962d4263eae525bca38679a218df623d6eb286f",
+  "handoff": {
+    "path": "/workspace/outputs/handoff-lesson-1.5.4.txt",
+    "bytes": 19132,
+    "sha256": "80ccbd9695f8011ae0e3f5b8ca056b539b7b2948d7ce36b38e59a4e02157a72d"
+  },
+  "zip": {
+    "path": "/workspace/outputs/lesson-1.5.4-handoff.zip",
+    "bytes": 6128506,
+    "sha256": "79be6c2e20d08f272716f32a702e331215e749be600878acf406b3db405256fd",
+    "members": 32
+  },
+  "checks": [
+    "ZIP CRC",
+    "unique safe member paths",
+    "every member SHA equals staged original",
+    "standalone handoff equals ZIP copy",
+    "old audio equals current actual source",
+    "all 133 approved prior media actual SHA",
+    "four prior available frozen packages actual SHA"
+  ],
+  "member_hashes": {
+    "START-HERE.txt": "f43f857b085408944c732f5331957f13bfd380b0e109a3f894e0457b05a5751a",
+    "baseline.json": "5dded195f5a91b9b2e2eac60768a54979deab6b609d8e4a2b167aa35a16b47fc",
+    "file-index.json": "dda9cc38e1d295ef8371ca0c3f4a4ffdff3e17d4a55ceee262e5741127e0b5b5",
+    "handoff-lesson-1.5.4.txt": "80ccbd9695f8011ae0e3f5b8ca056b539b7b2948d7ce36b38e59a4e02157a72d",
+    "old-audio/section-8.en.422876760efa.mp3": "1b118bb253e67978842c7bc10cc66fb9010eab10ea39d063210ea8aa9783ef8d",
+    "old-audio/section-8.fil.b0e1abe61189.mp3": "b93fb6dba8720204f1dd9e2e23db9e85db6c732a03d8e8fe99312330ded9f317",
+    "original-source-integrity.json": "bf47bf825d24d186f729be484ed967d69d6f26775c63782ce3d332be177e64c2",
+    "references/lesson-1.5.1-live-release.json": "fe577312ce0b2b1f886ab17d30a047eb5269bd6090ffb6c7abce1e43e4fe09d9",
+    "references/lesson-1.5.2-live-release.json": "5d3d9b986e062d662eabf95bdd19c05863bc78a129dbab9db619a254d64c98db",
+    "references/lesson-151-malou-series-brief.json": "b38d8f2942cc7016da73a4f327ca4361d1a43cbd66f21290e517a4380e6ee833",
+    "references/lesson-151-owner-approval.json": "fa04c4a13c0081649b1ed86020535206dc5e00859fb829ef59a79e30161ca4f2",
+    "references/lesson-152-owner-approval.json": "a96f599b1fad044b390222965786986004e8e9c646166c3a9b85b7a5bd028462",
+    "references/lesson-152-scene-brief.json": "9bf267007821845cef24d7a70fd7d05ec6ffc8b0f74dec4d47982a68bbfe9aa8",
+    "references/lesson-152-source-audit.json": "50d2d87fafe088f2fa28ffa2fb38a903af7b0ea86bc8cdbfc9b8ac0b5cbdb2b7",
+    "references/malou-courtyard-f6b2d754af39.png": "f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545",
+    "references/malou-meeting-7adc8aacd4e1.png": "7adc8aacd4e169fe06ca357d2a3ed119d9f14ba3e9bccc58509ed815ec446e2c",
+    "shared/activities.json": "cf1bc4cae25be798b2c0c734f4c6c8d168b2c75f696ff71677fa4b999d1a5c0e",
+    "shared/competency.json": "4880b381b2eeef39043b9876cf9da9cfe809c8fc8f4a679368f96054560a6aad",
+    "shared/coverage.json": "793e4be369e2f19d54f51ce13b90ff8a396256fdb2dfe52c0e1d659430c18339",
+    "shared/facilitator-notes.en.md": "b02dea3b373a2bccec3889ca35eb03bb010a998942acb6c875eb2588c85f785a",
+    "shared/facilitator-notes.fil.md": "ba53d3c7a3c07d97ac4f27fda5051c06b947702c91406b3690046c6c5e4cf822",
+    "shared/lesson.en.md": "c6de185beffe4545028b0787a2e5615a7d8d19dedd46d9df7f93c704c65bd93b",
+    "shared/lesson.fil.md": "498e3a79d3f89bd7140a26a44f6bf762e77e931cbb48d427d6f56190c32a3039",
+    "shared/module.json": "2e7061b5e77700c16f8b022d3d2823d527be67b27a22acc7046bfa27b3cd6e22",
+    "shared/qa-entries.json": "9856112cb9979566181be95251bf597b960ff69f804f2398795af6fbb79fb5b0",
+    "source/competency.json": "5c1d834b33d8eaada9ec2d090c1f7d973faad9944d5b93ed544feaf30cc1565a",
+    "source/facilitator.en.md": "2225b2fbf3028f6ebdbad0dc247be129dda248404d1ac380076076b071b2fb64",
+    "source/facilitator.fil.md": "aec231dc8f623db76be5fbcfb72fbf0ffd3a056e6b2054a82bc679daf62d106e",
+    "source/lesson.json": "3e890f966392eb0e8031c37e5e05c6771c110b6e79b6bd0d6f4c26d2fe018003",
+    "source/read.en.md": "e658c661d678dacf3eecb5da3d20e9387983122163a0ebf0a55daf5d6b7ce183",
+    "source/read.fil.md": "91bd1a2f50fa40056349ea4cb50e845e76c26e1b55dd09c34653f5566e2c5ed5",
+    "source/slides.json": "f0847416b4388391a3d8b9bbe30a807f76c1fc12734044b78e58b19f07374744"
+  }
+}
