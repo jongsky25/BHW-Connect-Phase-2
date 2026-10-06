@@ -1,0 +1,88 @@
+{
+  "audited_at": "2026-10-06T10:39:17.264612+00:00",
+  "original_pdfs": [
+    {
+      "file": "facilitator-original.pdf",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "bytes": 26505934,
+      "retrieval": "available workspace original copy; hash matches released 1.5.2 original receipt"
+    },
+    {
+      "file": "tesda-bhs-ncii.pdf",
+      "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+      "bytes": 1495226,
+      "retrieval": "available workspace original copy; hash matches released 1.5.2 original receipt"
+    },
+    {
+      "file": "reference-original.pdf",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "bytes": 41537642,
+      "retrieval": "available workspace original copy; hash matches released 1.5.2 original receipt"
+    },
+    {
+      "file": "deck-original.pdf",
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "bytes": 1627258,
+      "retrieval": "available workspace original copy; hash matches released 1.5.2 original receipt"
+    }
+  ],
+  "inspected_original_page_images": [
+    {
+      "file": "deck-original-p43.png",
+      "sha256": "544363644e9d4ccc1ff46850e8cfde352d7fd56a8259d1b060062f166f8f6bc3"
+    },
+    {
+      "file": "facilitator-original-p26.png",
+      "sha256": "4bb77b78ba2bf640c9d4ad6faa948e883fc59a99da30cc264b946ce67df8fbe3"
+    },
+    {
+      "file": "deck-original-p44.png",
+      "sha256": "c515bb6a7e66f0e7a4b9e9e53f35bff61979bc56e1ecd97b7264c74bb8fa3637"
+    },
+    {
+      "file": "deck-original-p42.png",
+      "sha256": "fa2de9435da3543f8bb8de584ea624d8169045c71277276e27f2ff729606a40c"
+    },
+    {
+      "file": "tesda-bhs-ncii-p11.png",
+      "sha256": "80f7826c95526024a17008bd9ce0b7de5d4e85522b440815de4c8ba4aef7675b"
+    },
+    {
+      "file": "reference-original-p15.png",
+      "sha256": "b453743f15503a0ae4b33bfccbda83605226edd15812341246eb8571e40fd212"
+    },
+    {
+      "file": "reference-original-p16.png",
+      "sha256": "4f3a4e4e55b6315a1714b23b87ccd8b133330d4a707e00b374de8916c3a8688f"
+    },
+    {
+      "file": "facilitator-original-p27.png",
+      "sha256": "6f041f3fe3a12d626335305f277fe60311f6213f235019078e8a43918e179a26"
+    },
+    {
+      "file": "tesda-bhs-ncii-p12.png",
+      "sha256": "60daca2eb900421daa19108dd5c52646965edddaada8c2f13fb81fb80bfd9cbe"
+    },
+    {
+      "file": "tesda-bhs-ncii-p84.png",
+      "sha256": "8ffa1f185b0bdce6e702fabdb8c0d150aa27301d2bd3ed79cc85cd981b1b15be"
+    },
+    {
+      "file": "tesda-bhs-ncii-p85.png",
+      "sha256": "b5f6e12ce69d3a392169dd6a621f8f900c2d517695b44fdf181981ac3543ed6f"
+    }
+  ],
+  "claims": {
+    "reference_pdf15_print7": "role distinctions, reporting and technical supervision; universal hierarchy narrowed",
+    "reference_pdf16_print8": "locally variable PHN supervision; nonclinical partner support separated",
+    "facilitator_pdf26_27_print19_20": "communication, local policies, joint minimum three hours",
+    "deck_pdf44": "clarify team responsibilities",
+    "tesda_pdf11_12_print7_8": "team roles and reporting protocols",
+    "tesda_pdf84_85_print80_81": "three one-hour outcomes"
+  },
+  "latest_tesda_status": "not verified",
+  "authored": "Fictional peer report example, cough contact-choice contrast, safety boundaries, three options and activity split. No diagnosis, dose, emergency number or universal legal authority claim.",
+  "inherited_asset_discrepancy": "practice-map approved flag conflicts with draft/not-owner-approved caption; old public bytes retained",
+  "sibling_release_status": "Only 151 and152 released at current main; drafts153-155 preserved without approval claims",
+  "timing": "final exercise/summary30min within shared180min;152standalone20min and integrated10min preserved; inherited city-partner25/40 discrepancy not changed"
+}

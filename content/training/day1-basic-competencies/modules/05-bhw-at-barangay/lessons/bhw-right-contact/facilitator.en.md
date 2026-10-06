@@ -1,75 +1,56 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can work through a new situation on their own — identify the need, choose the right partner (including a fellow BHW for everyday work questions), and say how they will confirm the local contact and follow up — and can show the difference between approaching the wrong person and the right one.
+Use the unchanged single lesson objective. Ask the learner to identify a need and urgency, select the appropriate role, and explain local verification and follow-up. The fictional examples teach contact choice, not diagnosis, medicine or report-form completion.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 30 minutes in a face-to-face session (the "Exercise and summary" part of the plan in the subchapter guide). Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** manila paper and markers; the lesson's slides; the module's hub-and-spoke visual of the four relationships (`01-apat-na-ugnayan.svg`) for the summary; two role-play cards (Wrong and Right, see below).
+Standalone facilitated plan: 30 minutes — opening 3, six screens 8, paired practice 10, all-option feedback 4, observation and consolidation 5. SELF_STUDY_TIMING_PENDING
 
-## [prepare] Prepare
+This is the shared module’s final 30-minute exercise/summary segment within six segments totaling 180 minutes, not six additional standalone allocations. Keep the released 1.5.2 standalone 20-minute plan and selected integrated 10-minute core in its separate contacts segment. Protected city-partner timing inconsistencies remain disclosed, not silently corrected. Use blank cards, this lesson’s slides and an accessible printed or spoken alternative. Story viewing is optional.
 
-- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- This lesson closes the module, so skim the other five lessons' takeaways; you will ask the group to summarize them.
-- Know whether your area has a formal procedure for filing BHW reports, and who the supervisor is. The slide says to confirm formal procedures with the supervisor.
-- This lesson is about **choosing and following up with the right person**. Do not teach how to fill in any report form, and do not teach anything about the cough itself.
+## [prepare] Preparation
+
+Confirm the current supervisor, reporting procedure, on-duty clinical contact, backup and local referral/emergency process privately before facilitating. Do not invent contact numbers. Read all six screens and the latest approved sibling takeaways. Only 1.5.1 and 1.5.2 are released at this baseline; do not present draft siblings as approved. Check consent and minimum necessary information rules. Use no actual patient record or sick child.
 
 ## [opening] Opening
 
-Ask the group: *"Has it happened to you that you weren't sure who to actually approach? What did you do?"* Take two or three stories. Write on manila paper who they went to first, and who they ended up needing.
+Ask: “When have you been unsure whom to approach?” Invite a fictional example; do not require personal health disclosure. Ask what need and urgency should guide the choice. Accept different local arrangements; verify rather than rank job titles.
 
-## [steps] Steps
+## [steps] Teaching steps
 
-1. **Try it: one more situation (Read "Try it: one more situation", first slide).** Read the situation about the newly accredited BHW who is confused about filing their first report. Ask the group to answer before you show the rest: *"Who is the most fitting person to approach — not the midwife, not barangay officials?"*
-2. **Why a fellow BHW.** Stress the lesson's reason: not because it is a lesser concern, but because the everyday, practical know-how of the work lives with experienced fellow BHWs. Then point to the slide's last line: formal procedures are confirmed with the supervisor.
-3. **Wrong versus right (Read "Wrong versus right: approaching the right person", second slide).** Read the Wrong version, then ask: *"What did it cost — for the barangay captain and for Aling Nena's child?"* Read the Right version, then ask: *"When did barangay officials come in, and why only then?"*
-4. **The three steps.** Put the slide's three lines on manila paper: identify the need, choose the right partner, confirm the local contact and follow up on the result. Check the stories from the opening against these three steps.
-5. **Self-check.** Give the check (who can help with an ordinary question about filing a report) and let the group discuss before revealing the answer.
-6. **Summary.** Using the hub-and-spoke visual, ask one BHW per relationship to say, in one sentence, when they would approach it.
+1. Classify the two fictional requests with Malou.
+2. At section-11, rehearse competent peer help and supervisor confirmation for the first report.
+3. Distinguish authorized professional guidance from clinical decisions outside BHW scope.
+4. At section-12, contrast choosing the familiar captain for a clinical decision with appropriate professional help; coordinate resources without delaying immediate assistance.
+5. Verify an on-duty contact, backup, next action and follow-up, sharing only necessary information.
+6. Give the three-choice application, discuss every rationale, and consolidate relationships without republishing siblings.
 
-## [expected-answers] Expected answers and how to respond
+## [expected-answers] Expected answers
 
-- **"The midwife — she handles our reports."** Reasonable, since the midwife sets BHWs' tasks such as reporting. Accept it, then ask: *"For an ordinary 'how do I fill this in' question, who is closer and has done it many times?"* Keep the midwife/supervisor for formal procedures.
-- **"I'd be embarrassed to ask another BHW."** Acknowledge the feeling. Use the lesson's words: it is not a lesser concern; that is simply where the practical know-how lives. Ask who in the room would be glad to be asked.
-- **"The Wrong version isn't so bad — the captain can pass it on."** Do not argue. Ask: *"How much time passed before the child reached the midwife? Whose time was used on something outside their role?"*
+“Our midwife receives reports”: this may be the designated local arrangement; accept it and confirm official instructions. Peer help is an option within competence, never mandatory. “The captain can help with transport”: accept resource coordination, distinguish clinical authority and verify availability without a promise. “The first contact is absent”: use the confirmed alternative and local urgent-help process; do not wait for a perfect person.
 
 ## [misconception] Common misconception
 
-**"Asking a fellow BHW is not the 'proper' channel — real questions should go to officials."** Some BHWs feel a question only counts if it goes up to the midwife or an official. The lesson says that for everyday work questions an experienced fellow BHW is the right first contact, with the supervisor for formal procedures. Correct it without embarrassing anyone: ask the experienced BHWs in the room to raise their hands if they have helped a new BHW with a report — let the group see how normal it is.
+Familiarity or seniority alone does not make someone the correct contact. A peer’s practical experience does not replace official instructions. A midwife is not sufficient for every clinical need, and local officials’ resource support does not confer clinical authority.
 
-## [practice] Practice activity
+## [practice] Practice
 
-Closing role-play in pairs. **Round 1 (Wrong):** one BHW plays BHW Marites, the other plays Aling Nena; Marites takes the cough straight to the barangay captain "because he's the one I usually talk to." **Round 2 (Right):** the same pair replays it the right way. After Round 2, the BHW playing Marites explains in their own words: the main point (what kind of need this is), the first action (who she approaches first), and what she would confirm with the midwife or RHU and follow up on. Swap roles and repeat with the new-BHW report situation from the first slide.
+In pairs, use blank fictional cards. Round 1: a new BHW needs filing help; state a competent peer option and what to confirm officially. Round 2: Aling Nena asks about a child’s cough; explain the appropriate professional/local referral route and avoid a clinical decision. The facilitator then says immediate help is needed: the learner states prompt local urgent action while arranging coordination, without invented numbers or guaranteed transport. Swap roles, state an unavailable-contact alternative and a follow-up question. For an accessible alternative, respond orally, in writing or by pointing to role cards; give equivalent time and prompts. No role-play of an actual sick child.
 
-## [answer-key] Self-check answer key
+## [answer-key] Answer key
 
-The section check in Read "Wrong versus right: approaching the right person" and the check on the second slide are the same question; it is covered once here.
+First: Competent peer help is appropriate for practical steps; confirm the official form, method, deadline and recipient with the supervisor. Second: Familiarity is insufficient, and the barangay captain does not automatically own official reporting procedures. Third: Guessing can cause errors; clarify rather than submit while unsure.
 
-- **"Who can help with an ordinary question about filing a report?"** → **An experienced fellow BHW, and the supervisor when needed.** Everyday, practical know-how of the work lives with experienced fellow BHWs; formal procedures are confirmed with the supervisor.
-  - *"Nobody should be asked"* is wrong because staying stuck delays the report and the service. A BHW never works alone — asking the right person is part of the work, not a weakness.
+Ask why and what must be confirmed. A correct online answer alone is not observed competence.
 
-## [observe] What to observe
+## [observe] Observation
 
-Use the lesson's observation indicator (explains the main point and an appropriate first action, including what must be checked with the supervisor) during the role-play:
+Use the single objective-index-0 indicator and its six bilingual level fields. Independent appropriate need/contact/verification/follow-up and timely urgent help: kaya na. Appropriate direction needing a scope/backup/follow-up prompt: needs practice. Inappropriate contact/action, unsupported promise or delayed immediate help: not yet. Give specific feedback and retry. Never grade personality, accent, political connections or local resource availability.
 
-- **Kaya na:** after the Right round, the BHW names the kind of need, approaches the right person first, and says what to confirm with the midwife, RHU or supervisor and how they will follow up — without prompting.
-- **Kailangan pa ng practice:** the BHW plays the Right round correctly but needs your follow-up question to explain why, or to name the follow-up step.
-- **Hindi pa:** the explanation or action does not fit — for example, the "Right" round still goes to the usual person first, or the BHW promises Aling Nena transport before anything is confirmed.
+## [support] Additional support
 
-Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+Provide a three-step card: identify need and urgency; match the authorized role; verify and follow up. Model one example, let the learner explain in a preferred language or accessible mode, then change the fictional request and reassess with the same indicator. The optional story is not a completion prerequisite.
 
-## [support] If a BHW needs more support
+## [sources-review] Sources and review limits
 
-- Give them the slide's three steps on a card — identify the need, choose the right partner, confirm and follow up — and ask them to say each step out loud during the role-play.
-- Let them play Aling Nena first and watch a partner rated **Kaya na** play Marites, then swap.
-- Re-observe with the same two situations at the next session, not new ones.
-
-## [sources-review] Sources and review notes
-
-- BHW Reference Manual PDF 15 (lesson source, marked "inherited page reference; final audit pending"). The source-material README maps "Ang BHW at ang Kanyang Barangay" to Reference Manual pp. 7–8 (PDF 15–16), Facilitator Guide p. 19 (PDF 26) and Day 1 presentation slides 29–44.
-- The Wrong/Right closing role-play and the opening question come from the subchapter guide (script step 8 and discussion prompts). The Aling Nena and new-BHW situations are the lesson's own teaching devices, not source text.
-- Timing: the module keeps TESDA's 3 hours for *Work in a Team Environment* (Facilitator Guide PDF 26–27 says "at least 3 hours", shared with the "Pagganap ng Tungkulin bilang Miyembro ng Team" topic). The 30 minutes above is this lesson's share of that plan. Do not repeat the whole allocation for each short lesson; this split supports self-study and does not create a new training-hour allocation.
-- This lesson's observation indicator is generic; the subchapter's competency indicators include a more specific indicator for choosing the right relationship. Reviewers may want to align them.
-- The lesson's `practice-map` visual is a draft discussion guide, not owner-approved.
-- Review current legal/policy wording, bilingual parity and the observation indicator before publication.
-- Draft for review
+Original Reference Manual PDF 15–16 / printed 7–8 supports role distinctions and variable local supervision; Facilitator Manual PDF 26–27 / printed 19–20 supports communication procedures and combined three-hour teamwork training. Day 1 deck PDF 44 supports clarifying team assignments. TESDA BHS NC II Revision 01, promulgated 11 January 2019, PDF 11–12 / printed 7–8 and PDF 84–85 / printed 80–81 supports roles, reporting protocols and three one-hour outcomes; latest status is not verified. Fictional requests, three options, local-verification safeguards and the 30-minute activity split are authored applications. The inherited practice-map has an approved flag conflicting with draft provenance; its old bytes are retained, and new Malou art is draft. Source audit and media evidence accompany the review. Model reviews are not human listening, owner approval or independent policy SME signoff. Draft pending separate owner approval. No production publication is authorized.
