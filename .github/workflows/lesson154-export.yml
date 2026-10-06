@@ -16,22 +16,23 @@ jobs:
       - id: plan
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SOURCE_RUN: '37456063929'
+          SOURCE_RUN: '37460697685'
           KIND: 'media'
           TARGET_BRANCH: ${{ github.ref_name }}
         shell: python
         run: |
           import urllib.request,os,json,math
           source=os.environ['SOURCE_RUN'];assert source.isdecimal()
-          runurl='https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs/'+source
-          with urllib.request.urlopen(urllib.request.Request(runurl,headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']})) as response: run=json.load(response)
-          assert run['head_branch']=='codex/lesson-154-malou-proposal'
-          base=runurl+'/artifacts'
-          req=urllib.request.Request(base,headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']})
-          with urllib.request.urlopen(req) as r: data=json.load(r)
-          prefixes={'render':'remotion-renders-','dry':'training-load-','media':('lesson154-draft-evidence')}
-          artifacts=[a for a in data['artifacts'] if a['name'].startswith(prefixes[os.environ['KIND']]) and not a['expired']]
-          assert len(artifacts)==(4 if os.environ['KIND']=='render' else 1)
+          artifacts=[]
+          for source_run in ['37459629261',source]:
+            runurl='https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs/'+source_run
+            with urllib.request.urlopen(urllib.request.Request(runurl,headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']})) as response: run=json.load(response)
+            assert run['head_branch']=='codex/lesson-154-malou-proposal'
+            req=urllib.request.Request(runurl+'/artifacts',headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']})
+            with urllib.request.urlopen(req) as r: data=json.load(r)
+            selected=[a for a in data['artifacts'] if a['name']=='lesson154-draft-evidence' and not a['expired']]
+            assert len(selected)==1
+            artifacts.extend(selected)
           jobs=[]
           for a in artifacts:
             assert a['size_in_bytes']<=512*1024*1024
@@ -72,7 +73,7 @@ jobs:
           with open('receipt.json','w') as f:json.dump({'artifact_id':meta['id'],'index':index,'zip_bytes':len(data),'zip_sha256':digest,'chunk_bytes':len(chunk),'chunk_sha256':hashlib.sha256(chunk).hexdigest()},f)
       - uses: actions/upload-artifact@v4
         with:
-          name: lesson154-verified-part-${{ matrix.chunk }}
+          name: lesson154-verified-part-${{ matrix.artifact_id }}-${{ matrix.chunk }}
           path: |
             part.bin
             receipt.json
