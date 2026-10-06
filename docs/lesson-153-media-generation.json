@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-10-06T10:59:55.485Z",
-  "source_commit": "1e5589ae319be92735d1adea5014addaee98c4de",
+  "generated_date": "2026-10-06T11:29:39.932Z",
+  "source_commit": "13c2068cc5e507913aee718b7e8bfcc264602c14",
   "owner_review": "pending",
   "render_input_sha256": "1ef41600bbda8d29da135d3f99b2b71235e1540399ed20281e87fa1f9b41ded2",
-  "render_cached": false,
+  "render_cached": true,
   "target_read_tracks": 12,
   "pending_read_tracks": [],
   "read_generation_error": null,
@@ -75,7 +75,8 @@
       "poster": {
         "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-4b97f512a36c-poster.jpg",
         "content_hash": "4b97f512a36ca7b7c290670190f4b1a8a61f15dace940a22e0862b6817b97046"
-      }
+      },
+      "render_reused_exact_input_hash": true
     },
     {
       "language": "en",
@@ -143,7 +144,8 @@
       "poster": {
         "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-ea7dc8170547-poster.jpg",
         "content_hash": "ea7dc8170547545b6f019a5aced7429e714805d8e69305628d4283fabcec4a92"
-      }
+      },
+      "render_reused_exact_input_hash": true
     }
   ]
 }
