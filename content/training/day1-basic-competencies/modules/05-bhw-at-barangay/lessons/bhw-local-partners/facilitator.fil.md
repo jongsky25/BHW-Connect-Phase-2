@@ -4,7 +4,7 @@ Natutukoy ng mag-aaral ang angkop na contact sa lungsod o munisipyo ayon sa pang
 
 ## [time-materials] Oras at kagamitan
 
-Ang pinagsamang contacts segment ay **30 minuto** sa anim na segment na **180 minuto**: ang pinaikling barangay core ng inilabas na 1.5.2 ay **10 minuto**, kaya may napiling **20 minutong** city/municipal core. Ang buong standalone practice ay maaaring tumagal ng 25–30 minuto; hindi ito idinaragdag sa pinagsamang segment. SELF_STUDY_TIMING_PENDING. Kukumpletuhin mula sa aktuwal na MP3 ng dalawang wika at 3–5 minuto ng pagsasanay. Gamitin ang anim na larawan sa slide, blankong local contact card at opsiyong sagot na pasulat o pasalita.
+Ang pinagsamang contacts segment ay **30 minuto** sa anim na segment na **180 minuto**: ang pinaikling barangay core ng inilabas na 1.5.2 ay **10 minuto**, kaya may napiling **20 minutong** city/municipal core. Ang buong standalone practice ay maaaring tumagal ng 25–30 minuto; hindi ito idinaragdag sa pinagsamang segment. Ginawang pagtataya ng sariling pag-aaral: 9–12 minuto. Aktuwal na salaysay ng anim na screen: 258.69 segundo sa English at 303.41 segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit. Gamitin ang anim na larawan sa slide, blankong local contact card at opsiyong sagot na pasulat o pasalita.
 
 ## [prepare] Paghahanda
 

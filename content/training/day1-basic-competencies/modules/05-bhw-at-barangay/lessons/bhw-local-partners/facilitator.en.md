@@ -4,7 +4,7 @@ The learner identifies suitable city or municipal contacts for a stated need, ch
 
 ## [time-materials] Time and materials
 
-The combined contacts segment remains **30 minutes** within the six-segment **180-minute** module: released lesson 1.5.2 uses an abbreviated **10-minute** barangay core, leaving a selected **20-minute** city/municipal core. The full standalone lesson practice may take about 25–30 minutes; this is not additive to the combined segment. SELF_STUDY_TIMING_PENDING. Finalize from encoded Filipino and English narration plus at least 3–5 minutes of choice and reflection. Use six slide visuals, blank local contact cards and an accessible written or oral response route.
+The combined contacts segment remains **30 minutes** within the six-segment **180-minute** module: released lesson 1.5.2 uses an abbreviated **10-minute** barangay core, leaving a selected **20-minute** city/municipal core. The full standalone lesson practice may take about 25–30 minutes; this is not additive to the combined segment. Authored independent estimate: 9–12 minutes. Actual six-screen narration is 258.69 seconds in English and 303.41 seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional. Use six slide visuals, blank local contact cards and an accessible written or oral response route.
 
 ## [prepare] Prepare
 

@@ -278,6 +278,46 @@
       "caption_en": "Choose → explain",
       "provenance": "Original code-authored language-neutral SVG, 2026-10-06; draft lesson 1.5.3.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-local-partners-story",
+      "alt_fil": "Kuwentong may salaysay: tinitiyak ni Malou ang tamang lokal na contact, pahintulot at susunod na hakbang.",
+      "alt_en": "Narrated story: Malou verifies the local contact, consent and next step.",
+      "caption_fil": "Anim na kathang-isip na beat na may captions; draft para sa hiwalay na owner review.",
+      "caption_en": "Six fictional captioned beats; draft pending separate owner review.",
+      "provenance": "Lesson 1.5.3 Remotion animation with built-in imagegen RHU coordination scene preserving Malou identity. Gemini TTS gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-1bbabb633918.mp4",
+          "content_hash": "1bbabb633918747c3ffce6100b1290fa9d75e4f2e8a667dad813a07ea0896d35",
+          "duration_s": 74,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-2576c15c2727.vtt",
+            "content_hash": "2576c15c272769fe6df569b15353232fabc7b0a6908bedc169cdeefecc31feab"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-4b97f512a36c-poster.jpg",
+            "content_hash": "4b97f512a36ca7b7c290670190f4b1a8a61f15dace940a22e0862b6817b97046"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-5c3599020246.mp4",
+          "content_hash": "5c35990202461dde725fbf4b672d7e94a3d1d35c114e7c147be59f4af509d2d8",
+          "duration_s": 66,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-55cf108fbffc.vtt",
+            "content_hash": "55cf108fbffcfd5ca077f8ff3dce81054964d1de47e5ac29981b005fbd557958"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-ea7dc8170547-poster.jpg",
+            "content_hash": "ea7dc8170547545b6f019a5aced7429e714805d8e69305628d4283fabcec4a92"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-4b97f512a36c-poster.jpg",
+      "content_hash": "4b97f512a36ca7b7c290670190f4b1a8a61f15dace940a22e0862b6817b97046"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-local-partners-story"
 }

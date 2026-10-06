@@ -49,15 +49,18 @@ for(const record of records){
   const wav=fs.readFileSync(excerptFile),excerptHash=sha(wav),old=prior?.model===model?prior.records?.find(r=>r.id===record.id&&r.source_sha256===sourceHash)?.excerpts?.find(e=>e.kind===q.kind&&e.excerpt_sha256===excerptHash&&e.start===q.start&&e.end===q.end):null;
   const excerptSamples=pcm(wav).length/2;
   if(decodeOnly){reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,decoded_sample_count:excerptSamples,model_response:null});save();continue;}
-  if(old?.model_response){reviewed.excerpts.push({...old,decoded_sample_count:excerptSamples,reused_exact_encoded_bytes:true});save();console.log('Reused focused review for exact bytes '+record.id+' '+q.kind);continue;}
+  if(old?.model_response&&old?.raw_request&&old?.raw_response){reviewed.excerpts.push({...old,decoded_sample_count:excerptSamples,reused_exact_encoded_bytes:true});save();console.log('Reused focused review for exact bytes '+record.id+' '+q.kind);continue;}
 
   const prompt=`This is ${record.language==='fil'?'Filipino/Tagalog':'Philippine English'} fictional educational audio. The excerpt begins on a measured speech-zone boundary. Transcribe every audible word without guessing. Assess Malou pronunciation (mah-LOO), negation, role distinctions, ending completeness, audible speech, clipped words and unexpected voice changes. Report concrete timestamps relative to this excerpt and uncertainty. Do not presume previous analysis. Return JSON with transcript, observations, possible_defects and uncertainty. This is model assessment, not human approval.`;
   // Fictional authored training audio only, never learner/patient data.
+  const requestBody=JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:wav.toString('base64'),mime_type:'audio/wav'}],generation_config:{temperature:0}});
+  // Admin-authored fictional training media only; no learner or patient input.
   // eslint-disable-next-line no-restricted-syntax
-  const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:wav.toString('base64'),mime_type:'audio/wav'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
+  const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:requestBody,signal:AbortSignal.timeout(180000)});
+  const responseBody=await response.text();
   if(!response.ok)throw Error('Focused model review HTTP '+response.status);
-  const result=await response.json();
+  const result=JSON.parse(responseBody);
   const text=(result.steps??[]).filter(s=>s.type==='model_output').flatMap(s=>s.content??[]).filter(c=>c.type==='text').map(c=>c.text).join('\n');if(!text)throw Error('Focused review has no text');
-  reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,decoded_sample_count:excerptSamples,expected_context:record.timings.filter(t=>t.end_ms>=q.start*1000&&t.start_ms<=q.end*1000).map(t=>t.text).join(' '),model_response:text});save();console.log('Decoded and focused-reviewed '+record.id+' '+q.kind);
+  reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,decoded_sample_count:excerptSamples,expected_context:record.timings.filter(t=>t.end_ms>=q.start*1000&&t.start_ms<=q.end*1000).map(t=>t.text).join(' '),model_response:text,raw_request:requestBody,raw_response:responseBody,http_status:response.status,request_sha256:sha(Buffer.from(requestBody)),response_sha256:sha(Buffer.from(responseBody))});save();console.log('Decoded and focused-reviewed '+record.id+' '+q.kind);
  }
 }

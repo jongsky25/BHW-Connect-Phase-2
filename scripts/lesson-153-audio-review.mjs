@@ -39,18 +39,22 @@ function outputText(value){if(typeof value==='string')return value;if(Array.isAr
 const priorPath=path.join(root,"docs/lesson-153-audio-review.json");
 const prior=existsSync(priorPath)?JSON.parse(readFileSync(priorPath,"utf8")):null;
 for(const record of records){
- const reusable=prior?.prompt_revision===promptRevision&&prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response&&!r.model_response.startsWith("Review unavailable"));
+ const reusable=prior?.prompt_revision===promptRevision&&prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response&&r.raw_request&&r.raw_response&&!r.model_response.startsWith("Review unavailable"));
  if(reusable){report.records.push({...reusable,source_video:record.source_video??null,source_video_sha256:record.source_video_sha256??null,reused_exact_decoded_audio:true});save();console.log("Reused exact-byte review "+record.id);continue;}
  const prompt=`Analyze the attached actual ${record.language==='fil'?'Filipino (Tagalog)':'Philippine English'} educational narration. First transcribe what you hear completely, without inventing words. Report whether speech is audible throughout, any truncated words or clipped ending, awkward initialism/name pronunciation (Malou, BHW and RHU), pacing, natural pitch/pace variation and whether the participant preferences, barangay partner roles, clear support requests, local verification and professional-versus-administrative distinctions have natural expression; note any changed negation, condition or ambiguous number, and any apparent narrator timbre change. Flag concrete timestamps for concerns and uncertainty. Return a JSON object with transcript, speech_present, clipped_ending, delivery, pronunciation_concerns, other_concerns. Do not claim human listening or approval. This audio is fictional training material with no real patient data.`;
- let reviewed;
+ let reviewed,rawExchange;
  for(let attempt=0;attempt<3;attempt++){
   // Build-time review of fictional, admin-authored training media only; follows the existing TTS provider exception. Never learner input or patient data.
+  const requestBody=JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:readFileSync(record.file).toString('base64'),mime_type:record.file.endsWith('.wav')?'audio/wav':'audio/mp3'}],generation_config:{temperature:0}});
+  // Admin-authored fictional training media only; no learner or patient input.
   // eslint-disable-next-line no-restricted-syntax
-  const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:readFileSync(record.file).toString('base64'),mime_type:record.file.endsWith('.wav')?'audio/wav':'audio/mp3'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
-  if(response.ok){const result=await response.json();reviewed=outputText(result);if(!reviewed)throw new Error('No model review text');break;}
+  const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:requestBody,signal:AbortSignal.timeout(180000)});
+  const responseBody=await response.text();
+  rawExchange={requestBody,responseBody,status:response.status};
+  if(response.ok){const result=JSON.parse(responseBody);reviewed=outputText(result);if(!reviewed)throw new Error('No model review text');break;}
   if(attempt<2&&(response.status===429||response.status>=500)){await new Promise(r=>setTimeout(r,4000*(attempt+1)));continue;}
   reviewed=`Review unavailable: HTTP ${response.status}`;break;
  }
- report.records.push({reviewed_at:new Date().toISOString(),id:record.id,language:record.language,source_video:record.source_video??null,source_video_sha256:record.source_video_sha256??null,sha256:sha(record.file),expected_text:record.expected,model_response:reviewed});save();console.log('Model-reviewed '+record.id);
+ report.records.push({reviewed_at:new Date().toISOString(),id:record.id,language:record.language,source_video:record.source_video??null,source_video_sha256:record.source_video_sha256??null,sha256:sha(record.file),expected_text:record.expected,model_response:reviewed,raw_request:rawExchange?.requestBody??null,raw_response:rawExchange?.responseBody??null,http_status:rawExchange?.status??null,request_sha256:rawExchange?createHash('sha256').update(rawExchange.requestBody).digest('hex'):null,response_sha256:rawExchange?createHash('sha256').update(rawExchange.responseBody).digest('hex'):null});save();console.log('Model-reviewed '+record.id);
 }
 save();
