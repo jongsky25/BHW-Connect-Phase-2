@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural Philippine English as one settled adult female Kore community trainer. Pronounce Malou mah-LOO. Keep the same warm female register for heading, body and takeaway. Clearly distinguish roles, requests, unknowns, local approval and availability. Natural curious question intonation, complete negation and encouraging endings. Read exact text, no omissions, additions or character voices.",
+  "durationSeconds": 60.839,
+  "beats": [
+    {
+      "zone": "meeting",
+      "index": 0,
+      "text": "At a fictional meeting, Malou clarifies the need: space and ten chairs for an agreed activity on Saturday.",
+      "start_ms": 0,
+      "end_ms": 7720
+    },
+    {
+      "zone": "request",
+      "index": 1,
+      "text": "She states the purpose and time. She asks who is responsible and what steps or approval are needed. Support is not confirmed yet.",
+      "start_ms": 8020,
+      "end_ms": 16340
+    },
+    {
+      "zone": "roles",
+      "index": 2,
+      "text": "The punong barangay is a partner in local leadership and administrative coordination. The health kagawad advocates policy in the council. Confirm local responsibilities.",
+      "start_ms": 16640,
+      "end_ms": 27600
+    },
+    {
+      "zone": "limits",
+      "index": 3,
+      "text": "Knowing an official does not mean approval. Malou does not promise funds or equipment. Authorized professional health guidance has a separate role.",
+      "start_ms": 27900,
+      "end_ms": 37660
+    },
+    {
+      "zone": "follow-through",
+      "index": 4,
+      "text": "Malou records the next step and when to ask again. She tells the group what is confirmed and unconfirmed, and listens to their preferences.",
+      "start_ms": 37960,
+      "end_ms": 47360
+    },
+    {
+      "zone": "closing",
+      "index": 5,
+      "text": "Explain the role. Make a specific request. Ask about the local process and available support. Practise without promising unconfirmed arrangements.",
+      "start_ms": 47660,
+      "end_ms": 60780
+    }
+  ],
+  "audio_sha256": "19e88bdcadf769b1baedc0cdf9c35cea8d38a29542e93e8367ebb66d8ab5e597"
+}

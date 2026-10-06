@@ -30,6 +30,6 @@ She checks actual availability and approval before saying arrangements are ready
 
 ## [barangay-partners-application-check] Explain your choice
 
-The space and ten chairs for Saturday are still unconfirmed. What is Malou’s appropriate next step? Choose and explain your answer in the check.
+The space and ten chairs for Saturday are still unconfirmed. What is Malou’s appropriate next step? Choose and explain your answer to the practice question.
 
 Then form one question to confirm the local contact and approval. You may say it, write it or practise with a partner. What matters is explaining the role, making a clear request and verifying arrangements, rather than whether support is actually granted. The story is optional and is not required to complete the lesson.

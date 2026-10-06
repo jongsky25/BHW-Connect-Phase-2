@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural conversational Filipino as one settled adult female Kore community trainer. Pronounce Malou mah-LOO. Keep the same warm mid-pitched female register for heading, body and takeaway. Clearly distinguish roles, requests, unknowns, local approval and availability. Natural curious question intonation, complete negation and encouraging endings. Read exact text, no omissions, additions or character voices.",
+  "durationSeconds": 70.165,
+  "beats": [
+    {
+      "zone": "meeting",
+      "index": 0,
+      "text": "Sa kathang-isip na pulong, nililinaw ni Malou ang kailangan: lugar at sampung upuan para sa napagkasunduang aktibidad sa Sabado.",
+      "start_ms": 0,
+      "end_ms": 9160
+    },
+    {
+      "zone": "request",
+      "index": 1,
+      "text": "Sinasabi niya ang layunin at oras. Itinatanong niya kung sino ang responsable at anong hakbang o pahintulot ang kailangan. Hindi pa kumpirmado ang suporta.",
+      "start_ms": 9460,
+      "end_ms": 21020
+    },
+    {
+      "zone": "roles",
+      "index": 2,
+      "text": "Ang punong barangay ay katuwang sa lokal na pamumuno at administratibong koordinasyon. Ang kagawad sa kalusugan ay nagtataguyod ng polisiya sa konseho. Tiyakin ang lokal na saklaw.",
+      "start_ms": 21320,
+      "end_ms": 34760
+    },
+    {
+      "zone": "limits",
+      "index": 3,
+      "text": "Hindi katumbas ng pag-apruba ang pagiging kakilala. Hindi nangangako si Malou ng pondo o kagamitan. Hiwalay ang awtorisadong propesyonal na gabay pangkalusugan.",
+      "start_ms": 35060,
+      "end_ms": 45780
+    },
+    {
+      "zone": "follow-through",
+      "index": 4,
+      "text": "Itinatala ni Malou ang susunod na hakbang at kailan magtatanong muli. Sinasabi niya sa grupo ang kumpirmado at hindi pa kumpirmado, at pinakikinggan ang kanilang nais.",
+      "start_ms": 46080,
+      "end_ms": 57000
+    },
+    {
+      "zone": "closing",
+      "index": 5,
+      "text": "Ipaliwanag ang papel. Bumuo ng tiyak na kahilingan. Itanong ang lokal na proseso at pagkakaroon ng suporta. Magsanay nang walang pangakong hindi pa kumpirmado.",
+      "start_ms": 57300,
+      "end_ms": 70100
+    }
+  ],
+  "audio_sha256": "b10777a3ecc742f505199fad7136b1e1a4f671c154e8b7348e704f0edcb1a6ed"
+}

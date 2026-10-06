@@ -104,7 +104,7 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
    const suffix=s=>s.slice([...s.matchAll(/^## /gm)][5].index);expect(suffix(fs.readFileSync(dir+`lesson.${lang}.md`,'utf8'))).toBe(suffix(shared[base+`lesson.${lang}.md`]));
    const t=fs.readFileSync(dir+`facilitator-notes.${lang}.md`,'utf8'),table=[...t.matchAll(/\|[^\n]+\| (\d+) min \|/g)].map(m=>+m[1]);expect(table).toHaveLength(6);expect(table.reduce((s,n)=>s+n,0)).toBe(180);
   }
-  const oldSources=JSON.parse(shared['content/training/day1-basic-competencies/sources.json']).sources,currentSources=j('content/training/day1-basic-competencies/sources.json').sources;for(const [k,v]of Object.entries(oldSources))expect(currentSources[k]).toEqual(v);expect(Object.keys(currentSources).filter(k=>!oldSources[k])).toEqual(['bhw-relationships-training']);
+  const oldSources=JSON.parse(shared['content/training/day1-basic-competencies/sources.json']).sources,currentSources=j('content/training/day1-basic-competencies/sources.json').sources;for(const [k,v]of Object.entries(oldSources))expect(currentSources[k]).toEqual(v);expect(Object.keys(currentSources).filter(k=>!oldSources[k])).toEqual(['bhw-relationships-training','bhw-barangay-partners-training']);
  });
 });
 

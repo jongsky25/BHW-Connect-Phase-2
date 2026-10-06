@@ -36,9 +36,9 @@ for(const record of records){
  const question=reviewZones.find(z=>/[?？]/.test(z.text))??reviewZones[0];
  const qi=record.timings.indexOf(question),endIndex=record.timings.findIndex(z=>z.end_ms>=record.duration*1000-15000);
  const requests=[{kind:'decisive',start:record.timings[Math.max(0,qi-1)].start_ms/1000,end:record.timings[Math.min(record.timings.length-1,qi+1)].end_ms/1000},{kind:'ending',start:record.timings[Math.max(0,endIndex)].start_ms/1000,end:full.seconds}];
- if(record.id==='read-relationships-application-check-fil')requests.push({kind:'opening-voice',start:0,end:record.timings[Math.min(2,record.timings.length-1)].end_ms/1000});
- if(record.id==='read-community-listening-en'){
-  const at=record.timings.findIndex(t=>t.text.startsWith('Known:')||t.text.startsWith('Malou knows'));
+ if(record.id==='read-barangay-partners-application-check-fil')requests.push({kind:'opening-voice',start:0,end:record.timings[Math.min(2,record.timings.length-1)].end_ms/1000});
+ if(record.id==='read-barangay-support-request-en'){
+  const at=record.timings.findIndex(t=>t.text.includes('unconfirmed')||t.text.includes('known facts'));
   if(at>=0)requests.push({kind:'facts-versus-unknowns',start:record.timings[Math.max(0,at-1)].start_ms/1000,end:record.timings[Math.min(record.timings.length-1,at+1)].end_ms/1000});
  }
  const reviewed={id:record.id,language:record.language,source_path:record.source_path,source_sha256:sourceHash,decoded_pcm_sha256:sha(decoded),full_audio_metrics:full,zones,excerpts:[]};

@@ -12,7 +12,7 @@ const ffmpeg=getExecutablePath({indent:false,logLevel:'error',type:'ffmpeg',bina
 import {loadReferenceModule} from './lib/reference-content.mjs';
 import {planReferenceNarration} from './lib/reference-narration.mjs';
 const root=path.resolve(import.meta.dirname,'..');
-const model='gemini-3.8-flash';
+const model='gemini-3.8-flash',promptRevision='barangay-partners-v1';
 if(!process.env.GEMINI_API_KEY)throw new Error('Existing repository Gemini secret unavailable for audio review');
 const sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const key='05-bhw-at-barangay';
@@ -33,15 +33,15 @@ for(const language of ['fil','en']){
   records.push({id:`story-${language}`,language,file:wav,source_video:asset.videos[language].path,source_video_sha256:sha(video),expected:timing.beats.map(b=>b.text).join(' ')});
  }
 }
-const report={date:new Date().toISOString(),method:'Gemini model-mediated review of actual Read MP3 bytes and WAV decoded from shipped MP4 AAC; not human listening, owner approval or policy SME review',model,source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),pending_read_tracks:plan.filter(i=>i.lessonKey==='bhw-barangay-partners'&&i.action!=='skip').map(i=>`${i.lessonKey}/${i.sectionId}/${i.language}`),records:[]};
+const report={date:new Date().toISOString(),prompt_revision:promptRevision,method:'Gemini model-mediated review of actual Read MP3 bytes and WAV decoded from shipped MP4 AAC; not human listening, owner approval or policy SME review',model,source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),pending_read_tracks:plan.filter(i=>i.lessonKey==='bhw-barangay-partners'&&i.action!=='skip').map(i=>`${i.lessonKey}/${i.sectionId}/${i.language}`),records:[]};
 function save(){writeFileSync(path.join(root,'docs/lesson-152-audio-review.json'),JSON.stringify(report,null,2)+'\n');}
 function outputText(value){if(typeof value==='string')return value;if(Array.isArray(value))return value.map(outputText).filter(Boolean).join('\n');if(!value||typeof value!=='object')return '';if(typeof value.output_text==='string')return value.output_text;if(value.type==='text'&&typeof value.text==='string')return value.text;return outputText(value.outputs??value.output??value.content??value.steps?.filter(s=>s.type==='model_output')??[]);}
 const priorPath=path.join(root,"docs/lesson-152-audio-review.json");
 const prior=existsSync(priorPath)?JSON.parse(readFileSync(priorPath,"utf8")):null;
 for(const record of records){
- const reusable=prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response&&!r.model_response.startsWith("Review unavailable"));
+ const reusable=prior?.prompt_revision===promptRevision&&prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response&&!r.model_response.startsWith("Review unavailable"));
  if(reusable){report.records.push(reusable);save();console.log("Reused exact-byte review "+record.id);continue;}
- const prompt=`Analyze the attached actual ${record.language==='fil'?'Filipino (Tagalog)':'Philippine English'} educational narration. First transcribe what you hear completely, without inventing words. Report whether speech is audible throughout, any truncated words or clipped ending, awkward initialism/name pronunciation (Malou, BHW and RHU), pacing, natural pitch/pace variation and whether the resident preferences, four relationship roles and professional-versus-administrative distinctions have natural expression; note any changed negation, condition or ambiguous number, and any apparent narrator timbre change. Flag concrete timestamps for concerns and uncertainty. Return a JSON object with transcript, speech_present, clipped_ending, delivery, pronunciation_concerns, other_concerns. Do not claim human listening or approval. This audio is fictional training material with no real patient data.`;
+ const prompt=`Analyze the attached actual ${record.language==='fil'?'Filipino (Tagalog)':'Philippine English'} educational narration. First transcribe what you hear completely, without inventing words. Report whether speech is audible throughout, any truncated words or clipped ending, awkward initialism/name pronunciation (Malou, BHW and RHU), pacing, natural pitch/pace variation and whether the participant preferences, barangay partner roles, clear support requests, local verification and professional-versus-administrative distinctions have natural expression; note any changed negation, condition or ambiguous number, and any apparent narrator timbre change. Flag concrete timestamps for concerns and uncertainty. Return a JSON object with transcript, speech_present, clipped_ending, delivery, pronunciation_concerns, other_concerns. Do not claim human listening or approval. This audio is fictional training material with no real patient data.`;
  let reviewed;
  for(let attempt=0;attempt<3;attempt++){
   // Build-time review of fictional, admin-authored training media only; follows the existing TTS provider exception. Never learner input or patient data.

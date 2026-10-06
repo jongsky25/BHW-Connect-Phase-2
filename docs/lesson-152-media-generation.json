@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-06T06:15:59.679Z",
+  "source_commit": "d637850efec87407f18f8e2bdb7e6a592613412f",
+  "owner_review": "pending",
+  "render_input_sha256": "515df4536cc02a33a74242d526ccfbb9685a270a1140a4c7b705d1d5dd52facb",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 70.165,
+      "beats": [
+        {
+          "zone": "meeting",
+          "index": 0,
+          "text": "Sa kathang-isip na pulong, nililinaw ni Malou ang kailangan: lugar at sampung upuan para sa napagkasunduang aktibidad sa Sabado.",
+          "start_ms": 0,
+          "end_ms": 9160
+        },
+        {
+          "zone": "request",
+          "index": 1,
+          "text": "Sinasabi niya ang layunin at oras. Itinatanong niya kung sino ang responsable at anong hakbang o pahintulot ang kailangan. Hindi pa kumpirmado ang suporta.",
+          "start_ms": 9460,
+          "end_ms": 21020
+        },
+        {
+          "zone": "roles",
+          "index": 2,
+          "text": "Ang punong barangay ay katuwang sa lokal na pamumuno at administratibong koordinasyon. Ang kagawad sa kalusugan ay nagtataguyod ng polisiya sa konseho. Tiyakin ang lokal na saklaw.",
+          "start_ms": 21320,
+          "end_ms": 34760
+        },
+        {
+          "zone": "limits",
+          "index": 3,
+          "text": "Hindi katumbas ng pag-apruba ang pagiging kakilala. Hindi nangangako si Malou ng pondo o kagamitan. Hiwalay ang awtorisadong propesyonal na gabay pangkalusugan.",
+          "start_ms": 35060,
+          "end_ms": 45780
+        },
+        {
+          "zone": "follow-through",
+          "index": 4,
+          "text": "Itinatala ni Malou ang susunod na hakbang at kailan magtatanong muli. Sinasabi niya sa grupo ang kumpirmado at hindi pa kumpirmado, at pinakikinggan ang kanilang nais.",
+          "start_ms": 46080,
+          "end_ms": 57000
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Ipaliwanag ang papel. Bumuo ng tiyak na kahilingan. Itanong ang lokal na proseso at pagkakaroon ng suporta. Magsanay nang walang pangakong hindi pa kumpirmado.",
+          "start_ms": 57300,
+          "end_ms": 70100
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-4ac1e4acb7c3.mp4",
+        "content_hash": "4ac1e4acb7c3c1668943a0e8f2e958e9ce863bc4aa170d16368f86c608f5892e",
+        "duration_s": 71,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-adaa149c9a35.vtt",
+          "content_hash": "adaa149c9a359dd4847ecf9b5ea81f479b1a62b832277cd11bd01d2d4813174c"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-03a3b09a8f43-poster.jpg",
+          "content_hash": "03a3b09a8f432c11237632e855fd2eac7cc85e04ddc9798bdfa788e5b9631194"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-03a3b09a8f43-poster.jpg",
+        "content_hash": "03a3b09a8f432c11237632e855fd2eac7cc85e04ddc9798bdfa788e5b9631194"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 60.839,
+      "beats": [
+        {
+          "zone": "meeting",
+          "index": 0,
+          "text": "At a fictional meeting, Malou clarifies the need: space and ten chairs for an agreed activity on Saturday.",
+          "start_ms": 0,
+          "end_ms": 7720
+        },
+        {
+          "zone": "request",
+          "index": 1,
+          "text": "She states the purpose and time. She asks who is responsible and what steps or approval are needed. Support is not confirmed yet.",
+          "start_ms": 8020,
+          "end_ms": 16340
+        },
+        {
+          "zone": "roles",
+          "index": 2,
+          "text": "The punong barangay is a partner in local leadership and administrative coordination. The health kagawad advocates policy in the council. Confirm local responsibilities.",
+          "start_ms": 16640,
+          "end_ms": 27600
+        },
+        {
+          "zone": "limits",
+          "index": 3,
+          "text": "Knowing an official does not mean approval. Malou does not promise funds or equipment. Authorized professional health guidance has a separate role.",
+          "start_ms": 27900,
+          "end_ms": 37660
+        },
+        {
+          "zone": "follow-through",
+          "index": 4,
+          "text": "Malou records the next step and when to ask again. She tells the group what is confirmed and unconfirmed, and listens to their preferences.",
+          "start_ms": 37960,
+          "end_ms": 47360
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Explain the role. Make a specific request. Ask about the local process and available support. Practise without promising unconfirmed arrangements.",
+          "start_ms": 47660,
+          "end_ms": 60780
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-b10344cb1f93.mp4",
+        "content_hash": "b10344cb1f939da142a83ad09a09495b8ec4978d12074dda4c1ddf06ef364e47",
+        "duration_s": 62,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-23b45c109f7d.vtt",
+          "content_hash": "23b45c109f7d096bf7c78bb42983b3fd3e754400320b8aa7294268831e13e423"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-c77676fbc0c0-poster.jpg",
+          "content_hash": "c77676fbc0c0e6d49ea2267aad245bf04e7acdd6704a1309945881158bca4bd4"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-c77676fbc0c0-poster.jpg",
+        "content_hash": "c77676fbc0c0e6d49ea2267aad245bf04e7acdd6704a1309945881158bca4bd4"
+      }
+    }
+  ]
+}

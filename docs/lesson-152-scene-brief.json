@@ -7,5 +7,17 @@
   "model_identifier": null,
   "review_status": "draft",
   "identity": "Preserve exact Malou face, age, hair, glasses, ochre blouse and shoulder bag from approved151reference.",
-  "scene": "Different covered meeting room, blank request sheet, two fictional barangay contacts, no records/signs/seals; new scene not owner-approved."
+  "scene": "Different covered meeting room, blank request sheet, two fictional barangay contacts, no records/signs/seals; new scene not owner-approved.",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "prompt": "Create a new photorealistic educational scene preserving the EXACT recognizable identity of Malou, the ochre-blouse woman with thin rectangular glasses, fuller oval face, natural smile lines, low bun with subtle gray, late forties/early fifties and dark shoulder bag in the supplied reference. Same fictional Filipina person, facial proportions, age, hair and glasses; do not redesign her. Entirely different setting and composition: modest covered barangay multipurpose meeting room with pale walls, open window, plain plastic chairs and simple wooden table. Malou seated on the right in three-quarter view attentively presenting a blank request sheet to two fictional Filipino adult barangay contacts seated left, one woman and one man in neutral everyday clothing. Calm respectful discussion of chairs and room scheduling for an agreed community health activity. All three faces visible, Malou face clear and naturally same identity. Wide landscape 1536x1024 composition, room context, soft daylight. No courtyard bench, no gate, no medical assessment, no patient, no real official, no uniform, no logo, no seal, no readable text or signs. Blank papers only. Natural hands, credible proportions. New scene is for draft owner review.",
+  "supplied_inputs": [
+    {
+      "path": "public/training/bhw-1-5/malou-courtyard-f6b2d754af39.png",
+      "sha256": "f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545"
+    }
+  ],
+  "human_identity_review": "Visual inspection against approved reference: consistent face, age, glasses and hairstyle; new scene still draft, not owner-approved."
 }

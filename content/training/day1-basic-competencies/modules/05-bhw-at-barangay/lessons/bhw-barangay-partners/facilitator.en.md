@@ -4,7 +4,7 @@ Apply the unchanged single objective: explain and apply barangay partners in a s
 
 ## [time-materials] Time Materials
 
-Authored standalone facilitated estimate: 20 minutes: opening 2; roles 4; request demonstration 4; coordination and verification 3; paired practice 4; check and feedback 3. The current shared module has six 30-minute segments, total 180. Its combined barangay and city/municipal contacts segment is 30 minutes. For that integrated segment select a shorter 10-minute core of this lesson (role map 3, worked request 4, check 3), reserving 20 for selected city/municipal work; full standalone exercises are not additive. Protected lesson1.5.3 still contains inherited 25-of-40 wording; it is not rewritten or claimed reconciled here. SELF_STUDY_TIMING_PENDING
+Authored standalone facilitated estimate: 20 minutes: opening 2; roles 4; request demonstration 4; coordination and verification 3; paired practice 4; check and feedback 3. The current shared module has six 30-minute segments, total 180. Its combined barangay and city/municipal contacts segment is 30 minutes. For that integrated segment select a shorter 10-minute core of this lesson (role map 3, worked request 4, check 3), reserving 20 for selected city/municipal work; full standalone exercises are not additive. Protected lesson1.5.3 still contains inherited 25-of-40 wording; it is not rewritten or claimed reconciled here. Authored independent estimate: 8–11 minutes. Actual six-screen narration is 233.82 seconds in English and 275.51 seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.
 
 Materials: six bilingual screens, fictional meeting art, blank request cards, paper and pens; optional headphones. Use no patient records.
 

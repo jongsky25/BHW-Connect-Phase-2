@@ -30,6 +30,6 @@ Tinitiyak niya ang aktuwal na pagkakaroon ng suporta at pahintulot bago sabihing
 
 ## [barangay-partners-application-check] Ipaliwanag ang iyong pagpili
 
-Hindi pa kumpirmado ang lugar at sampung upuan para sa Sabado. Ano ang angkop na susunod na hakbang ni Malou? Piliin at ipaliwanag ang sagot sa check.
+Hindi pa kumpirmado ang lugar at sampung upuan para sa Sabado. Ano ang angkop na susunod na hakbang ni Malou? Piliin at ipaliwanag ang sagot sa tanong sa pagsasanay.
 
 Pagkatapos, bumuo ng isang tanong upang tiyakin ang lokal na contact at pahintulot. Maaari itong sabihin, isulat o subukan kasama ang kapareha. Ang mahalaga ay ang paliwanag ng papel, malinaw na kahilingan at pagtitiyak, hindi kung talagang naibigay ang suporta. Opsyonal ang kuwento at hindi kailangan upang matapos ang aralin.

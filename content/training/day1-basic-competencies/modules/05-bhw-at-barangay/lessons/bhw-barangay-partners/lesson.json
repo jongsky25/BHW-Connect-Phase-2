@@ -142,6 +142,46 @@
       "caption_en": "New draft scene preserving Malou’s approved identity.",
       "provenance": "Built-in imagegen, 6 October 2026, with approved Malou courtyard PNG as preserve-person reference. Fictional neutral meeting; new scene awaits separate owner approval.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-barangay-partners-story",
+      "alt_fil": "Kuwentong may salaysay: nililinaw ni Malou ang lugar at sampung upuan sa kathang-isip na pulong, pinipili ang katuwang at tinitiyak ang lokal na proseso.",
+      "alt_en": "Narrated story: Malou clarifies space and ten chairs at a fictional meeting, chooses a partner and checks the local process.",
+      "caption_fil": "Anim na kathang-isip na beat na may salaysay at captions. Draft; hinihintay ang hiwalay na owner review.",
+      "caption_en": "Six fictional narrated beats with captions. Draft awaiting separate owner review.",
+      "provenance": "Original lesson1.5.2 Remotion animation with new built-in imagegen meeting scene preserving approved151Malou identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Reframed meeting view and animated role/limit cards. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-4ac1e4acb7c3.mp4",
+          "content_hash": "4ac1e4acb7c3c1668943a0e8f2e958e9ce863bc4aa170d16368f86c608f5892e",
+          "duration_s": 71,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-adaa149c9a35.vtt",
+            "content_hash": "adaa149c9a359dd4847ecf9b5ea81f479b1a62b832277cd11bd01d2d4813174c"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-03a3b09a8f43-poster.jpg",
+            "content_hash": "03a3b09a8f432c11237632e855fd2eac7cc85e04ddc9798bdfa788e5b9631194"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-b10344cb1f93.mp4",
+          "content_hash": "b10344cb1f939da142a83ad09a09495b8ec4978d12074dda4c1ddf06ef364e47",
+          "duration_s": 62,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-23b45c109f7d.vtt",
+            "content_hash": "23b45c109f7d096bf7c78bb42983b3fd3e754400320b8aa7294268831e13e423"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-c77676fbc0c0-poster.jpg",
+            "content_hash": "c77676fbc0c0e6d49ea2267aad245bf04e7acdd6704a1309945881158bca4bd4"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-03a3b09a8f43-poster.jpg",
+      "content_hash": "03a3b09a8f432c11237632e855fd2eac7cc85e04ddc9798bdfa788e5b9631194"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-barangay-partners-story"
 }

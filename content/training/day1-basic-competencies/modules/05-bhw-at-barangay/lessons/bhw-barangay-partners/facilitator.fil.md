@@ -4,7 +4,7 @@ Ilapat ang iisang layunin: ipaliwanag at ilapat ang mga katuwang sa barangay. Ip
 
 ## [time-materials] Oras at Kagamitan
 
-Ginawang hiwalay na facilitated estimate: 20 minuto: pambungad 2; mga papel 4; halimbawa ng kahilingan 4; koordinasyon at pagtitiyak 3; pares na pagsasanay 4; check at feedback 3. Ang kasalukuyang module ay may anim na 30-minutong bahagi, kabuuang 180. Ang pinagsamang barangay at city/municipal contacts ay 30 minuto. Para rito, pumili ng 10-minutong core dito (papel 3, halimbawa 4, check 3), at 20 para sa piniling city/municipal work; hindi pinagsasama ang buong hiwalay na pagsasanay. Nananatili sa protektadong 1.5.3 ang lumang 25-of-40 na salita; hindi ito binago o ipinapakitang naitama na. SELF_STUDY_TIMING_PENDING
+Ginawang hiwalay na facilitated estimate: 20 minuto: pambungad 2; mga papel 4; halimbawa ng kahilingan 4; koordinasyon at pagtitiyak 3; pares na pagsasanay 4; check at feedback 3. Ang kasalukuyang module ay may anim na 30-minutong bahagi, kabuuang 180. Ang pinagsamang barangay at city/municipal contacts ay 30 minuto. Para rito, pumili ng 10-minutong core dito (papel 3, halimbawa 4, check 3), at 20 para sa piniling city/municipal work; hindi pinagsasama ang buong hiwalay na pagsasanay. Nananatili sa protektadong 1.5.3 ang lumang 25-of-40 na salita; hindi ito binago o ipinapakitang naitama na. Ginawang pagtataya ng sariling pag-aaral: 8–11 minuto. Aktuwal na salaysay ng anim na screen: 233.82 segundo sa English at 275.51 segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 Kagamitan: anim na bilingual screen, kathang-isip na larawan, blankong request card, papel at panulat; opsyonal na headphones. Walang patient records.
 
