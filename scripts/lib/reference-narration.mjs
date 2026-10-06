@@ -201,7 +201,7 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
           const voice = PROVIDER_VOICES[provider][language];
           const speechStyle = provider === "gemini"
             ? lessonKey === "bhw-relationships"
-              ? BHW_RELATIONSHIPS_STORY_STYLES[language] + (language === 'en' && ['section-1', 'community-listening'].includes(section.id) ? ' Pronounce Nena as NEH-nah, with the same narrator voice throughout.' : '')
+              ? BHW_RELATIONSHIPS_STORY_STYLES[language] + (language === 'en' && ['section-1', 'community-listening'].includes(section.id) ? ' Pronounce Nena as NEH-nah, with the same narrator voice throughout.' : '') + (language === 'fil' && section.id === 'relationships-application-check' ? ' Use a settled adult Filipina woman narrator in a warm mid-pitched register. Read the heading and short opening instruction in that same female register as the scenario and ending; do not lower them to a male or baritone voice. Every separate heading, body and takeaway request belongs to this single narrator. Keep register steady, with gentle instructional cadence and no speaker switching.' : '')
               : lessonKey === "bhw-follow-up"
               ? BHW_FOLLOW_UP_STORY_STYLES[language]
               : lessonKey === "bhw-accreditation"

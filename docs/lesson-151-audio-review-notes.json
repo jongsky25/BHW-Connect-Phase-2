@@ -975,11 +975,91 @@
   "revised_generation_and_review_run": 37404527156,
   "recovery_transport_run": 37405425658,
   "recovery_method": "Read-only Actions download of original artifact followed by bounded log transport; archive SHA256 and all extracted member SHA256 verified locally. Direct original ZIP download was denied at its new storage hostname.",
-  "revised_review_disposition": "The revised full and focused transcripts preserve reading/slide-mode instructions, resident choice, clinical/administrative distinctions, negation and complete endings. Focused reviews continue to infer voice/timbre/accent changes, including the Filipino application opening; some whole-file reviews contradict those inferences. Nena is transcribed with alternate vowel spellings in some English excerpts despite pronunciation directions. These model findings remain unresolved listening questions, rather than a claim of uniform voice or flawless pronunciation. No further blind regeneration is treated as proof of quality. Human listening and owner review are required before release.",
+  "revised_review_disposition": "The three clarity revisions preserve mode instructions and facts-versus-unknowns wording. Other full/focused voice and name-vowel observations conflict or remain uncertain, and remain listening questions. The specifically corroborated Filipino application opening is being retried; the prior bytes and every review are retained. No model finding is presented as human listening or owner approval.",
   "story_original_render_run": 37401264688,
   "story_cached_bytes_verified_in_runs": [
     37402311143,
     37403043909,
     37404527156
-  ]
+  ],
+  "pre_voice_retry_track": {
+    "src": "/training/audio/05-bhw-at-barangay/bhw-relationships/relationships-application-check.fil.48a85170d003.mp3",
+    "voice": "gemini:gemini-3.8-flash-tts:Kore",
+    "content_hash": "48a85170d003b7a7100cc26a8689ed11cf60d1c8d1de939314fe3d33fd7e2db6",
+    "sha256": "a54c45052435385185dadd1d4672d634762277cdbdb30ac09539468667f70a17",
+    "duration_seconds": 66.09,
+    "timings": [
+      {
+        "zone": "heading",
+        "index": 0,
+        "text": "Ipaliwanag at gamitin ang mga ugnayan",
+        "start_ms": 0,
+        "end_ms": 3760
+      },
+      {
+        "zone": "body",
+        "index": 0,
+        "text": "Subukan ang tanong sa ibaba.",
+        "start_ms": 4060,
+        "end_ms": 6220
+      },
+      {
+        "zone": "body",
+        "index": 1,
+        "text": "Sa kathang-isip na sitwasyon ni Nena, ipaliwanag ang maitutulong ng bawat ugnayan at ang hindi nito maaaring pagpasyahan.",
+        "start_ms": 6520,
+        "end_ms": 14800
+      },
+      {
+        "zone": "body",
+        "index": 2,
+        "text": "Magbigay ng dahilan sa piniling contact at isang tanong upang tiyakin ang papel niya.",
+        "start_ms": 15100,
+        "end_ms": 20900
+      },
+      {
+        "zone": "body",
+        "index": 3,
+        "text": "Para sa katumbas na pasulat o magkapares na pagsasanay, gumawa ng apat na card: alalahanin at pagpili ng residente; propesyonal na tanong; hiling na suportang administratibo; gawain ng kapwa BHW.",
+        "start_ms": 21200,
+        "end_ms": 38360
+      },
+      {
+        "zone": "body",
+        "index": 4,
+        "text": "Itugma sa angkop na papel na tiniyak sa lokalidad, saka ipaliwanag ang hangganan.",
+        "start_ms": 38660,
+        "end_ms": 44260
+      },
+      {
+        "zone": "body",
+        "index": 5,
+        "text": "Maaaring itanong ng kapareha: \u201cAno pa ang kailangan mong linawin?\u201d",
+        "start_ms": 44560,
+        "end_ms": 49320
+      },
+      {
+        "zone": "body",
+        "index": 6,
+        "text": "Gumamit ng kathang-isip na detalye, tumanggap ng puna at umulit.",
+        "start_ms": 49620,
+        "end_ms": 54900
+      },
+      {
+        "zone": "body",
+        "index": 7,
+        "text": "Paliwanag ang suriin, hindi punto ng pagsasalita o personalidad.",
+        "start_ms": 55200,
+        "end_ms": 59800
+      },
+      {
+        "zone": "takeaway",
+        "index": 0,
+        "text": "Ipaliwanag ang pagpili, tiyakin ang papel at igalang ang nais ng residente.",
+        "start_ms": 60100,
+        "end_ms": 66020
+      }
+    ]
+  },
+  "corroborated_voice_issue": "The Filipino application opening is reported as a male-to-female timbre switch in its whole-file review, decisive excerpt, and added opening excerpt. This is not merely a whole-versus-focused conflict. A bounded retry of only that track adds stronger settled female-register directions for headings, short instructions, body and takeaway."
 }
