@@ -27,16 +27,52 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
       - name: Bounded read-only published-state snapshot
         env:
           KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
           KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
           KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
         run: node scripts/lesson-151-published-snapshot.mjs
+      - name: Generate actual target-only draft media
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON151_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=./scripts/lesson-151-record-fetch.mjs'
+        run: node scripts/lesson-151-media-build.mjs
+      - name: Full audio model review
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON151_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=./scripts/lesson-151-record-fetch.mjs'
+        run: node scripts/lesson-151-audio-review.mjs
+      - name: Decode and focused-review shipped media
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON151_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=./scripts/lesson-151-record-fetch.mjs'
+        run: node scripts/lesson-151-audio-focus.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: lesson151-draft-evidence
-          path: lesson-151-published-snapshot.json
+          path: |
+            lesson-151-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/
+            public/training/audio/05-bhw-at-barangay/bhw-relationships/
+            public/training/bhw-1-5/
+            remotion/public/bhw-relationships/
+            docs/lesson-151-media-generation.json
+            docs/lesson-151-audio-review.json
+            docs/lesson-151-audio-focus.json
+            .preview/lesson151-raw/
+            .preview/lesson151-excerpts/
+          include-hidden-files: true
           if-no-files-found: error
           retention-days: 30

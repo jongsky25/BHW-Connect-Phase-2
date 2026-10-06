@@ -14,6 +14,7 @@ import { applyWordPronunciations } from "./narration-pronunciation.mjs";
 import { createHash } from "node:crypto";
 import { buildNarrationZones } from "./narration-zones.mjs";
 import { computeContentHash } from "./tts-render-core.mjs";
+import { BHW_RELATIONSHIPS_STORY_STYLES } from "./tts-providers/gemini.mjs";
 import { BHW_FOLLOW_UP_STORY_STYLES, BHW_ACCREDITATION_FIL_STEADY_STYLE, BHW_ACCREDITATION_STORY_STYLES, BHW_ELIGIBILITY_STORY_STYLES, BHW_BENEFITS_STORY_STYLES, BHW_LEGAL_ROLE_STORY_STYLES, geminiVoiceId, BHS_IMPROVEMENT_STORY_STYLES, BHS_RESOURCES_STORY_STYLES, BHS_DECLINE_STORY_STYLES, BHS_SUPPORT_ENVIRONMENT_STORY_STYLES, BHS_PROMOTIONS_STORY_STYLES, LOCAL_SYSTEM_STORY_STYLES, UHC_IMPROVEMENT_STORY_STYLES, PRIMARY_CARE_STORY_STYLES, ROLES_APPLICATION_STORY_STYLES, ORGANIZER_STORY_STYLES, RECORDS_STORY_STYLES, SERVICE_PROVIDER_STORY_STYLES, UHC_COVERAGE_STORY_STYLES } from "./tts-providers/gemini.mjs";
 
 export const NARRATION_VOICES = { fil: "fil-PH-BlessicaNeural", en: "en-PH-RosaNeural" };
@@ -196,10 +197,12 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
           if (!zones.length) continue;
           const existing = manifest.lessons?.[lessonKey]?.sections?.[section.id]?.[language];
           // New sections of these Gemini stories must preserve their target provider.
-          const provider = chosen ?? (["bhw-follow-up", "bhw-accreditation", "bhw-eligibility", "bhw-benefits", "bhw-legal-role", "bhs-improvement", "bhs-resources", "bhs-decline", "bhs-support-environment", "bhs-promotions", "uhc-local-system", "uhc-improvement"].includes(lessonKey) ? "gemini" : providerOfVoice(existing?.voice));
+          const provider = chosen ?? (["bhw-relationships", "bhw-follow-up", "bhw-accreditation", "bhw-eligibility", "bhw-benefits", "bhw-legal-role", "bhs-improvement", "bhs-resources", "bhs-decline", "bhs-support-environment", "bhs-promotions", "uhc-local-system", "uhc-improvement"].includes(lessonKey) ? "gemini" : providerOfVoice(existing?.voice));
           const voice = PROVIDER_VOICES[provider][language];
           const speechStyle = provider === "gemini"
-            ? lessonKey === "bhw-follow-up"
+            ? lessonKey === "bhw-relationships"
+              ? BHW_RELATIONSHIPS_STORY_STYLES[language]
+              : lessonKey === "bhw-follow-up"
               ? BHW_FOLLOW_UP_STORY_STYLES[language]
               : lessonKey === "bhw-accreditation"
               ? BHW_ACCREDITATION_STORY_STYLES[language] + (language === "fil" && ["section-5", "accreditation-application-check"].includes(section.id) ? BHW_ACCREDITATION_FIL_STEADY_STYLE : "")

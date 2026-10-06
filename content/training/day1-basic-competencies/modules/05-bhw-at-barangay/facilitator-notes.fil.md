@@ -13,18 +13,18 @@ Panukalang hati:
 
 | Bahagi | Oras |
 |---|---|
-| Pambungad: sitwasyon ni Aling Nena + apat na ugnayan | 30 min |
-| Karagdagang kakilala sa barangay, lungsod, munisipyo | 40 min |
+| Pambungad: kathang-isip na tanong nina Malou at Nena + apat na ugnayan | 30 min |
+| Karagdagang kakilala sa barangay, lungsod, munisipyo | 30 min |
 | Ano ang mabuting teamwork | 30 min |
 | Team-building activity (sinking vessel o marshmallow tower) | 30 min |
-| Self-management: kasanayan at pagpapaunlad | 40 min |
+| Self-management: kasanayan at pagpapaunlad | 30 min |
 | Pagsasanay at buod | 30 min |
 
 ## Script ng paghahatid (sunod sa mga seksyon ng aralin)
 
 1. **Buksan sa tanong, hindi sa listahan.** Basahin nang malakas ang
-   sitwasyon ni Aling Nena bago ipakita ang anumang slide o listahan.
-   Itanong sa grupo: "Kung kayo si BHW Marites, sino muna ang uunahin
+   kathang-isip na tanong nina Malou at Nena bago ipakita ang anumang slide o listahan.
+   Itanong sa grupo: "Kung kayo si BHW Malou, sino muna ang uunahin
    ninyong isipin?"
 2. **Sa hub-spoke na visual (apat na ugnayan),** ituro ang bawat spoke
    habang binabanggit ang pangalan nito.
@@ -71,9 +71,12 @@ na ugali — hindi katangiang taglay ka na o wala.
 
 ## Susi sa sagot ng mga retrieval check
 
-1. **"May residenteng may matagal nang ubo..."** → Ang midwife o RHU
-   (klinikal na usapin, hindi administratibo).
+1. **"May tanong si Nena sa lugar at personal na kalusugan."** → Linawin ang kaniyang nais; tiyakin ang propesyonal na contact para sa kalusugan at responsableng coordinator para sa lugar. Hindi kapalit ng pagtatasa ang posisyon o karanasan ng kapwa BHW.
 2. **"Sa isang koponan ng mga BHW, ano ang pinakaunang dapat gawin..."**
    → Agad itong pag-usapan bilang koponan bago pa ito lumalim (hindi
    balewalain, hindi rin agad iulat nang hindi muna kinakausap ang
    miyembro).
+
+## Pagtutugma ng oras at saklaw ng 1.5.1
+
+Tatlong oras na pinagsamang competency ang nasa na-audit na original guide PDF26–27 / nakalimbag19–20 at TESDA PDF84–85 / nakalimbag80–81. Dating200 minuto ang kabuuan ng table sa kabila ng180-minutong pahayag. Dalawang40-minutong bahagi lamang ang ginawang30; ang sariling hati ay30 +30 +30 +30 +30 +30 =180, kasama ang opsyonal na gawain. Hindi ito anim na opisyal na minimum ng aralin.30 minuto ang target1.5.1. Walang pagbabago sa sibling content, guides, activity IDs o pagtuturo. Malou ang pangalan habang binubuo ang susunod na1.5lessons, hindi sa malawak na pagbabago ng lumang nilalaman.

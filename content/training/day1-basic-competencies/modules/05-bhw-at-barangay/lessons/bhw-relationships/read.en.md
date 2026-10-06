@@ -1,19 +1,41 @@
-## [section-1] The question at Aling Nena's house
+## [section-1] Malou listens in the courtyard
 
-Aling Nena, 34 years old and a mother of three, came to BHW Marites' house because her eldest child had had a persistent cough. It had been going on for three weeks, and Aling Nena was starting to worry.
+In this fictional learning situation, BHW Malou meets Aling Nena in a shaded barangay courtyard. Nena asks about a planned community health activity: “Where will it be held? I also want to ask a health professional whether it is suitable for me.”
 
-As she listened, BHW Marites realized this wasn't just a question about a cough. She needed to work out who she should actually talk to about it — and it turned out more than one person was involved.
+Malou listens and asks which question Nena wants help with first. The venue question and the personal health question need different kinds of support. Nena's preferences matter; Malou does not decide what she needs without asking. Read or Slides can be completed without the optional story.
 
-## [section-2] Four relationships of a BHW
+## [section-2] Four relationships, different purposes
 
-A BHW's work does not revolve around just one person. Four relationships shape the day-to-day work:
+This lesson uses four relationships as an authored teaching organizer, not an official four-category chain of command.
 
-The **community** — families like Aling Nena's, where the first step of care happens. The **midwife or Rural Health Unit (RHU)** — the technical support the BHW turns to for referrals or clinical questions. The **barangay officials** — the partner for support and facilities like the barangay health station. (Accreditation itself comes from the local health board of the city or municipality, as Module 4 explains.) And **fellow BHWs** — the peers who share experience and correct practice.
+Community: residents and families contribute their concerns, information and choices. Listen and clarify with them rather than treating them as passive recipients.
 
-These are four distinct relationships, but they are always present together in an ordinary BHW day.
+Designated midwife or Rural Health Unit health professional: seek authorized professional guidance for health questions, following locally confirmed arrangements. A BHW or peer does not replace professional assessment.
 
-## [section-3] Who is the right person to approach?
+Barangay officials: ask the responsible local contact about administrative support, facilities or activity arrangements. Support depends on local roles and available resources; it is not guaranteed.
 
-Back to BHW Marites. She now knows the four relationships — the next step is choosing which one actually fits Aling Nena's situation.
+Fellow BHWs: share routine work experience, coordinate agreed tasks and help identify questions to clarify. Peer advice does not become clinical authority.
 
-Not every situation calls for the same person. The right first question is: "What kind of support does this need — clinical, administrative, or the experience of a fellow BHW?" In Aling Nena's case, a three-week cough is a clinical concern — so the midwife or RHU is the right first stop, not the barangay captain.
+## [community-listening] Listen before assuming
+
+Malou repeats what she heard: “You want to confirm the venue and speak with a health professional. Have I understood correctly?” Nena can correct that summary and explain what matters to her.
+
+Known: Nena has two questions. Unknown: the confirmed venue, the locally designated professional contact, and Nena's preferred way to ask. Malou does not assume that Nena needs transport or has a particular illness. She asks, “What information would help you, and how would you prefer to receive it?” Use fictional details only during practice.
+
+## [section-3] Choose a contact for the concern
+
+For Nena's personal health question, Malou helps clarify the locally designated midwife or authorized health professional and how to contact them. She explains: “This question needs professional guidance; I should not answer it through a guess.” The exact local arrangement must be confirmed.
+
+For the venue, Malou checks the activity's verified information and asks the responsible local coordinator if anything remains unclear. Ask a contact, “Is this within your role? If not, who is responsible?” Position or familiarity alone does not establish the right role. This is an organizational example, not medical triage or a universal referral sequence.
+
+## [shared-support] Coordinate support without replacing roles
+
+Malou keeps the questions separate while coordinating support. With Nena's agreement, she helps identify a suitable channel for the professional question. Separately, the responsible barangay contact may clarify the venue or a request for practical support. A fellow BHW can help Malou organize an agreed routine task and check what remains unclear.
+
+Nena contributes her preferences throughout. Malou confirms what was actually agreed and what is still unknown. An official or peer cannot replace the health professional's assessment. No relationship guarantees transport, supplies, a response time or a successful outcome.
+
+## [relationships-application-check] Explain and apply the relationships
+
+Try the application check below. In Nena's fictional situation, explain what each relationship can contribute and what it cannot decide. Give a reason for the contact you choose and one question you would use to verify that person's role.
+
+For equivalent written or paired practice, make four cards: resident's concern and choice; professional question; administrative support request; peer task. Match each to an appropriate locally confirmed role, then explain the limits. Your partner can ask, “What do you still need to clarify?” Use invented details, receive feedback and try again. Judge the explanation, not the person's accent or personality.
