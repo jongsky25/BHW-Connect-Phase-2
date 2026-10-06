@@ -15,5 +15,14 @@
   ],
   "prior_full_report": "docs/lesson-154-audio-review-initial.json",
   "prior_focused_report": "docs/lesson-154-audio-focus-initial.json",
-  "owner_review": "pending"
+  "owner_review": "pending",
+  "selected_media_run": 37460697685,
+  "selected_source_commit": "7032d654a41aa5e32ea1524a477d59fd13eec63e",
+  "operational_history": "A single scoped speech-style correction was introduced. Run 37459629261 generated an intermediate retry but was cancelled during focused review after the story-label correction; its original ZIP is retained. Run 37460697685 provides the selected retry bytes and complete review. Other superseded CI runs are not selected evidence.",
+  "retry_result": [
+    "Both final full transcripts retain the exact five practices/privacy wording and role-agreement Gawain/gawaing napahintulutan phrasing. Focused critical and ending transcripts corroborate these corrections.",
+    "Both final full reviews report audible complete speech and steady timbre. All eight focused excerpts report clear complete text; one role-agreement ending excerpt still flags a voice transition.",
+    "Focused role-agreement head and overlapping body excerpts disagree on male/female characterization; five-practices ending says male while head/body say female and the full review says consistent. These are retained uncertainties, not claimed human voice verification."
+  ],
+  "further_synthesis": "No further quality retry requested after this bounded correction; owner listening remains pending."
 }

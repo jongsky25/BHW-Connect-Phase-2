@@ -548,6 +548,9 @@ export function ReferenceLessons(props: Props) {
             <h2 tabIndex={-1} ref={heading} className={storyLayout ? "reference-story-title" : "text-xl font-semibold"}>
               {en ? item.heading_en : item.heading_fil}
             </h2>
+            {lesson.lesson_key === "bhw-teamwork" && item.check && item.asset_ids.includes("malou-teamwork") && (
+              <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
+            )}
             {practice}
             {revealSummary && <div
               className={storyLayout ? "reference-story-lines" :

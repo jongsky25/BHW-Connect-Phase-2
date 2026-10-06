@@ -1,0 +1,626 @@
+{
+  "source_commit": "7032d654a41aa5e32ea1524a477d59fd13eec63e",
+  "fixture": "Actual production components, strict selector and local-only resume/completion callbacks; no authenticated production claim",
+  "http_loads": 1,
+  "offline_after_initial_load": true,
+  "records": [
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "read",
+      "screen": "section-8",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-five-practices",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-role-agreement",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-early-handoff",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-feedback-completion",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-application-check",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": true,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "section-8",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-five-practices",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-role-agreement",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-early-handoff",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-feedback-completion",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-application-check",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": true,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "story": true,
+      "unmuted": true,
+      "captions": 6,
+      "ending": true,
+      "duration": 65.045333,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "pane": "Facilitator guide",
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "fil",
+      "pane": "Evidence",
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "read",
+      "screen": "section-8",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-five-practices",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-role-agreement",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-early-handoff",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-feedback-completion",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-application-check",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": true,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "slides",
+      "screen": "section-8",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-five-practices",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-role-agreement",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-early-handoff",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-feedback-completion",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-application-check",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": true,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "story": true,
+      "unmuted": true,
+      "captions": 6,
+      "ending": true,
+      "duration": 57.450667,
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "pane": "Facilitator guide",
+      "offline": true
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "pane": "Evidence",
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "read",
+      "screen": "section-8",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-five-practices",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-role-agreement",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-early-handoff",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-feedback-completion",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "read",
+      "screen": "teamwork-application-check",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": true,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "section-8",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-five-practices",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-role-agreement",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-early-handoff",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-feedback-completion",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "mode": "slides",
+      "screen": "teamwork-application-check",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": true,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "story": true,
+      "unmuted": true,
+      "captions": 6,
+      "ending": true,
+      "duration": 65.045333,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "pane": "Facilitator guide",
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "fil",
+      "pane": "Evidence",
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "read",
+      "screen": "section-8",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-five-practices",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-role-agreement",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-early-handoff",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-feedback-completion",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "read",
+      "screen": "teamwork-application-check",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": true,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "slides",
+      "screen": "section-8",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-five-practices",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-role-agreement",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-early-handoff",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-feedback-completion",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": false,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "mode": "slides",
+      "screen": "teamwork-application-check",
+      "image": true,
+      "one_audio": true,
+      "head_body_end_highlight": true,
+      "all_choices": true,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "story": true,
+      "unmuted": true,
+      "captions": 6,
+      "ending": true,
+      "duration": 57.450667,
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "pane": "Facilitator guide",
+      "offline": true
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "pane": "Evidence",
+      "offline": true
+    }
+  ],
+  "errors": [],
+  "status": "passed"
+}

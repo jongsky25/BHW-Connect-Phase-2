@@ -88,8 +88,8 @@ lesson.assets=lesson.assets.filter(a=>a.id!==story.id).concat(story);
 save(lessonPath,lesson);
 if(!pending.length){
   const durations=Object.fromEntries(['fil','en'].map(lang=>[lang,plan.filter(i=>i.lessonKey==='bhw-teamwork'&&i.language===lang).reduce((sum,i)=>sum+i.existing.duration_seconds,0)]));
-  const low=Math.ceil(Math.max(...Object.values(durations))/60+3),high=low+3;
   for(const lang of ['fil','en']){
+    const low=Math.ceil(durations[lang]/60+3),high=low+3;
     const guide=path.join(root,path.dirname(lessonPath),`facilitator.${lang}.md`);
     const estimate=lang==='en'?`Authored independent estimate: ${low}–${high} minutes. Actual six-screen narration is ${durations.en.toFixed(2)} seconds in English and ${durations.fil.toFixed(2)} seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.`:`Ginawang pagtataya ng sariling pag-aaral: ${low}–${high} minuto. Aktuwal na salaysay ng anim na screen: ${durations.en.toFixed(2)} segundo sa English at ${durations.fil.toFixed(2)} segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.`;
     writeFileSync(guide,readFileSync(guide,'utf8').replace(/SELF_STUDY_TIMING_PENDING|Authored independent estimate:[^\n]+|Ginawang pagtataya ng sariling pag-aaral:[^\n]+/g,estimate));

@@ -17,17 +17,17 @@ try{
     const id=['section-8','teamwork-five-practices','teamwork-role-agreement','teamwork-early-handoff','teamwork-feedback-completion','teamwork-application-check'][i];
     const img=page.locator('main figure img');assert(await img.count()===1,'Exactly one screen image');await img.evaluate(el=>el.decode());
     assert(await img.evaluate(el=>el.naturalWidth===1536),'New scene loads offline');
-    if(i===5)await page.locator('fieldset button').first().click();
+    if(i===5){assert(await page.locator('article').innerText().then(t=>t.includes(lang==='en'?'There is no immediate danger':'Hindi ito agarang panganib')),'Application context visible before answering');await page.locator('fieldset button').first().click();}
     if(mode==='slides'){const panel=page.locator('details').filter({has:page.getByText(lang==='en'?'Full narration and audio':'Buong salaysay at audio',{exact:true})});if(await panel.count())await panel.evaluate(el=>el.open=true);}
     const audio=page.locator('audio');assert(await audio.count()===1,'One exact-match audio player on every screen');
     const timings=await page.evaluate(({lang,id})=>window.reviewTimings[lang][id],{lang,id});assert(timings?.length>2,'Real timing zones available');
     const selected=[timings[0],timings.find(t=>t.zone==='body'),timings.at(-1)];
-    for(const t of selected){await audio.evaluate(async(el,time)=>{el.currentTime=time;await el.play();},(t.start_ms+Math.min(350,(t.end_ms-t.start_ms)/2))/1000);await page.waitForFunction(()=>document.querySelector('[data-active="true"]'));await page.waitForTimeout(120);const active=await page.locator('[data-active="true"]').allTextContents();assert(active.some(v=>v.includes(t.text)||t.text.includes(v)),'Measured zone highlighting '+id+' '+t.zone);await audio.evaluate(el=>el.pause());}
+    for(const t of selected){await audio.evaluate(async(el,time)=>{el.currentTime=time;await el.play();},(t.start_ms+Math.min(350,(t.end_ms-t.start_ms)/2))/1000);await page.waitForFunction(text=>[...document.querySelectorAll('[data-active="true"]')].some(el=>el.textContent.includes(text)||text.includes(el.textContent)),t.text);const active=await page.locator('[data-active="true"]').allTextContents();assert(active.some(v=>v.includes(t.text)||t.text.includes(v)),'Measured zone highlighting '+id+' '+t.zone);await audio.evaluate(el=>el.pause());}
     if(i===5){const check=page.locator('fieldset');for(const option of [0,1,2]){await check.locator('button').nth(option).click();const text=await check.locator('[role="status"]').innerText();assert(['A','B','C'].every(l=>text.includes(l)),'All-choice rationale');}}
     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'No horizontal page overflow');
     records.push({width,language:lang,mode,screen:id,image:true,one_audio:true,head_body_end_highlight:true,all_choices:i===5,offline:true});
     if(i===0||i===5)await page.screenshot({path:out+`/screen-${width}-${lang}-${mode}-${i}.png`,fullPage:true});
-    if(i<5){await audio.evaluate(el=>{window.previousAudio=el;});await page.getByRole('button',{name:lang==='en'?'Next':'Susunod',exact:true}).click();assert(await page.evaluate(()=>window.previousAudio.paused),'Pause on transition');}
+    if(i<5){await audio.evaluate(async el=>{window.previousAudio=el;el.currentTime=0;await el.play();});assert(await audio.evaluate(el=>!el.paused),'Audio playing before transition');await page.getByRole('button',{name:lang==='en'?'Next':'Susunod',exact:true}).click();assert(await page.evaluate(()=>window.previousAudio.paused),'Pause on transition');}
    }
    if(mode==='read'){await page.evaluate(()=>{window.reviewEvents=[];});await page.getByRole('button',{name:lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin',exact:true}).click();assert(await page.evaluate(()=>window.reviewEvents.some(e=>e.type==='complete')),'Completion without watching story');}
   }

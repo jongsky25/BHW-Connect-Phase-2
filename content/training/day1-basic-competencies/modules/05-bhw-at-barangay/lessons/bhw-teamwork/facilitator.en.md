@@ -6,7 +6,7 @@ Use the single lesson objective: “Explain and apply in a situation: working we
 
 The full facilitated discussion and role-play take 30 minutes: opening 3, five practices 6, agreement 5, example and role-play 8, feedback and check 5, summary 3. A separate accessible team activity is optional and takes 30 minutes: preparation and choice 5, cooperation 10, debrief 10, transfer 5. If both are selected, these 60 minutes occupy two of the existing module’s six 30-minute segments within 180 minutes. They do not add 60 minutes to the module. The 30-minute core lesson can also stand alone.
 
-Authored independent estimate: 10–13 minutes. Actual six-screen narration is 334.39 seconds in English and 375.85 seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.
+Authored independent estimate: 9–12 minutes. Actual six-screen narration is 334.39 seconds in English and 378.72 seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.
 
 Materials: paper or task cards and a pen if available; oral responses or assistive communication are equally valid. No physical game, purchased supplies, video or personal device is required.
 
