@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
+import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 const root=path.resolve(import.meta.dirname,'../..');
 const base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay';
 const leaf=`${base}/lessons/bhw-local-partners`;
@@ -12,6 +13,24 @@ const lesson=json(`${leaf}/lesson.json`);
 const slides=json(`${leaf}/slides.json`);
 const hash=p=>createHash('sha256').update(file(p)).digest('hex');
 describe('lesson 1.5.3 content draft',()=>{
+ it('binds approval to exact selected bytes and preserves old published audio selection',()=>{
+  const approval=json('docs/lesson-153-owner-approval.json');
+  expect(approval.authorization).toBe('approved. merge and deploy to live');
+  expect(approval.approved_media).toHaveLength(25);
+  for(const media of approval.approved_media)expect(hash('public'+media.path)).toBe(media.sha256);
+  const manifest=json('content/training/day1-basic-competencies/narration.json');
+  const old=json('docs/lesson-153-preapproval-published-snapshot.json').rows.find(r=>r.lesson.lesson_key==='bhw-local-partners').revision;
+  const prior=json('docs/lesson-152-current-baseline.json').non_target_mappings['bhw-local-partners'];
+  const authored=loadReferenceModule(path.join(root,base),path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhw-local-partners').revision;
+  for(const lang of ['fil','en']){
+   const selected=narrationForLesson(manifest,'bhw-local-partners',lang,old.read_sections);
+   expect(Object.keys(selected)).toEqual(['section-6','section-7']);
+   for(const id of Object.keys(selected))expect(selected[id].src).toBe(prior.sections[id][lang].src);
+   const current=narrationForLesson(manifest,'bhw-local-partners',lang,authored.read_sections);
+   expect(Object.keys(current)).toEqual(authored.read_sections.map(s=>s.id));
+   for(const id of Object.keys(current))expect(current[id].src).toBe(manifest.lessons['bhw-local-partners'].sections[id][lang].src);
+  }
+ });
  it('retains original resume anchors, full bilingual read/slide narration parity and a visible picture on all six slides',()=>{
   const loaded=loadReferenceModule(path.join(root,base),path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhw-local-partners');
   expect(loaded.revision.read_sections).toHaveLength(6);expect(loaded.revision.slides).toHaveLength(6);

@@ -19,26 +19,42 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+      - name: Keep owner-approved media and package frozen
+        id: approval
+        run: |
+          if test -f docs/lesson-153-owner-approval.json; then
+            echo "frozen=true" >> "$GITHUB_OUTPUT"
+            echo "Owner-approved package: generation and re-freezing are disabled."
+          else
+            echo "frozen=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-node@v4
+        if: steps.approval.outputs.frozen != 'true'
         with:
           node-version: 22
           cache: npm
       - run: npm ci
+        if: steps.approval.outputs.frozen != 'true'
       - run: npm ci
+        if: steps.approval.outputs.frozen != 'true'
         working-directory: remotion
       - run: npx remotion browser ensure
+        if: steps.approval.outputs.frozen != 'true'
         working-directory: remotion
       - name: Generate only lesson 1.5.3 Read and story media
+        if: steps.approval.outputs.frozen != 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-153-media-build.mjs
       - name: Review actual selected MP3 and shipped AAC tracks
+        if: steps.approval.outputs.frozen != 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           node scripts/lesson-153-audio-review.mjs
           node scripts/lesson-153-audio-focus.mjs
       - name: Package generated target files and raw review records
+        if: steps.approval.outputs.frozen != 'true'
         run: |
           set -euo pipefail
           test "$(node -e "const x=require('./docs/lesson-153-audio-review.json');process.stdout.write(String(x.records.length))")" = 14
@@ -56,6 +72,7 @@ jobs:
             docs/lesson-153-media-generation.json docs/lesson-153-audio-review.json docs/lesson-153-audio-focus.json
           sha256sum lesson153-generated-media.tar > lesson153-generated-media.sha256
       - uses: actions/upload-artifact@v4
+        if: steps.approval.outputs.frozen != 'true'
         with:
           name: lesson153-generated-media-${{ github.event.pull_request.head.sha }}
           path: |

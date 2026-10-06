@@ -1,0 +1,133 @@
+{
+  "recorded_at_utc": "2026-10-06T15:27:06.096935+00:00",
+  "authorization": "approved. merge and deploy to live",
+  "reviewed_head": "d54bda8e7382807dbc7cb516d6c6f55a313fe8c1",
+  "reviewed_package_hashes": {
+    "lesson-1.5.3-malou-review.html": "d2c8073ac6fae2d195c7f1e71952c9c9d385b2bb89d16a5587a07f2740d6d965",
+    "lesson-1.5.3-malou-review.zip": "f9cc150876deefb0f52a89617adfe72cb4bc550a8eada83301814938c8a07c9b"
+  },
+  "review_artifact_api_zip_sha256": "217484072fbc5b845ce13906079ccf169ab8779ce2e6c4d226b6cdde843e2df0",
+  "pr": "https://github.com/jongsky25/BHW-Connect-Phase-2/pull/260",
+  "scope": "Lesson 1.5.3 / bhw-local-partners only; merge, production deployment and scoped publication after required release gates.",
+  "approved_asset_ids": [
+    "malou-local-coordination",
+    "local-partners-clarify",
+    "local-partners-health-team",
+    "local-partners-partners",
+    "local-partners-verify",
+    "local-partners-close-loop",
+    "local-partners-apply",
+    "bhw-local-partners-story"
+  ],
+  "approved_media": [
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/city-role-map.en.c887c3bef423.mp3",
+      "sha256": "102a0de7e2364e9b39c7cb156d04c9dc4e5d7a06d0ebe5596ff3a110d2281426"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/city-role-map.fil.ea72a67086bb.mp3",
+      "sha256": "194e5494d1fe2370b8c65033d48ab4982cc5401d82f56254ae5003d0178a5cd4"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/close-loop.en.7ab039e9b03c.mp3",
+      "sha256": "8f566fa90ff8da560e2c9d05e7e62d0cb3cfbdf8059d32bd12ce446f1884f0cb"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/close-loop.fil.847c35dcde7b.mp3",
+      "sha256": "027618724795b0b0c438455262343722fab57c84529a8e42753bdf7babf8f734"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-partners-application-check.en.81000fa0cab5.mp3",
+      "sha256": "729360c0fb477513afca57bb1834b293dd4c6ff7dacd253946719c67b56b7db4"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-partners-application-check.fil.577f3b0590a2.mp3",
+      "sha256": "543c43ff156440e0ded91708ec3e44b74ad85097527aa5d5bd521ada547f9eca"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-request.en.ebc131d0ffd3.mp3",
+      "sha256": "118f50fdaf8d8b78522b801e931d6b48e2650a69cab2dfd0a06fc7e3af019709"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-request.fil.bb34a9c147ab.mp3",
+      "sha256": "3386cca0c639f2861e92f4304d91440485df7c4e388111ab139b495c56548afc"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.en.a465c2c6aa12.mp3",
+      "sha256": "1927000eb17739d2b3e425e3a1e63edcd1747ade3612c48fd6a8195ec60408b2"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.fil.a837f60e7947.mp3",
+      "sha256": "85e6fe98990481271c651e0e0337f36e4f798ed06818b55f8f56088dbcf61a9a"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.en.424c04856008.mp3",
+      "sha256": "620769172244923e1192e1580b9d099eca2dca38a4cf851d1d1795138ccf83ca"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.fil.344bf64b4d9f.mp3",
+      "sha256": "691e2abcdac70240b13700d0b124360f8ad0865c59c521f28e6263c17b371363"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-55cf108fbffc.vtt",
+      "sha256": "55cf108fbffcfd5ca077f8ff3dce81054964d1de47e5ac29981b005fbd557958"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-5c3599020246.mp4",
+      "sha256": "5c35990202461dde725fbf4b672d7e94a3d1d35c114e7c147be59f4af509d2d8"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-ea7dc8170547-poster.jpg",
+      "sha256": "ea7dc8170547545b6f019a5aced7429e714805d8e69305628d4283fabcec4a92"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-1bbabb633918.mp4",
+      "sha256": "1bbabb633918747c3ffce6100b1290fa9d75e4f2e8a667dad813a07ea0896d35"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-2576c15c2727.vtt",
+      "sha256": "2576c15c272769fe6df569b15353232fabc7b0a6908bedc169cdeefecc31feab"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-4b97f512a36c-poster.jpg",
+      "sha256": "4b97f512a36ca7b7c290670190f4b1a8a61f15dace940a22e0862b6817b97046"
+    },
+    {
+      "path": "/training/bhw-1-5/local-partners-apply-b7ddf656ba4d.svg",
+      "sha256": "b7ddf656ba4d2b584d4270a873b83550274170f19d804ffd266eca0760607fdc"
+    },
+    {
+      "path": "/training/bhw-1-5/local-partners-clarify-a35d7d21c09e.svg",
+      "sha256": "a35d7d21c09e887b6df3775740d870d1cea02b4b804341f79b22c3941bddd90b"
+    },
+    {
+      "path": "/training/bhw-1-5/local-partners-close-loop-1031c1491266.svg",
+      "sha256": "1031c14912660e75ed549cb8e1b6950226f469d7b578bf0d4443661a450c40ee"
+    },
+    {
+      "path": "/training/bhw-1-5/local-partners-health-team-e9294c55d068.svg",
+      "sha256": "e9294c55d0683bafffbb0bc000a2a193aa4c6c0cf88edae1ed976cf2e7c8a28d"
+    },
+    {
+      "path": "/training/bhw-1-5/local-partners-partners-03870e561424.svg",
+      "sha256": "03870e561424912ce4e1c5b4030e841cfdab635adb5e1c9ce1e19788b5ce1e30"
+    },
+    {
+      "path": "/training/bhw-1-5/local-partners-verify-25b3c9238634.svg",
+      "sha256": "25b3c9238634dc97c3b7ca06ba64ec413281bd8e66ac213cb9ccc3eb240f2438"
+    },
+    {
+      "path": "/training/bhw-1-5/malou-local-coordination-f4a63e007784.jpg",
+      "sha256": "f4a63e007784c43bee9c4cc0e6e60f5299732cafb623d41b7b6af6d47700c72e"
+    }
+  ],
+  "render_input_sha256": "1ef41600bbda8d29da135d3f99b2b71235e1540399ed20281e87fa1f9b41ded2",
+  "verification": {
+    "zip_crc": true,
+    "unique_safe_members": 59,
+    "all_member_hashes": true,
+    "inline_media_equal_zip_and_source": true,
+    "source_content_equal_review_package": true
+  },
+  "limits": "Owner approval does not establish human listening, original PDF page verification, independent policy SME signoff or authenticated production playback. Historical evidence remains unchanged."
+}
