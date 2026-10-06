@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as one warm mature Filipina community health educator. Explain Malou's locally verified RHU contact, consent and the difference between budget advice and an individual decision with clear phrasing. Read every supplied word exactly; retain the same voice on the application screen, with no announcer switch or added words.",
+  "durationSeconds": 64.601,
+  "beats": [
+    {
+      "zone": "need",
+      "index": 0,
+      "text": "A family asks Malou about help with medicine. She clarifies the need and whether urgent health referral is required.",
+      "start_ms": 0,
+      "end_ms": 8280
+    },
+    {
+      "zone": "team",
+      "index": 1,
+      "text": "At the RHU, Malou asks the midwife who is currently responsible. The midwife and PHN may guide BHWs according to local assignments.",
+      "start_ms": 8580,
+      "end_ms": 18860
+    },
+    {
+      "zone": "roles",
+      "index": 2,
+      "text": "The mayor chairs the local health board and the CHO or MHO is vice-chair. It proposes budget allocations and advises, but has not approved this family's request.",
+      "start_ms": 19160,
+      "end_ms": 31520
+    },
+    {
+      "zone": "limits",
+      "index": 3,
+      "text": "The BHW president may help coordinate. For possible social assistance, ask for the local contact and procedure; social support is separate from clinical decisions.",
+      "start_ms": 31820,
+      "end_ms": 43700
+    },
+    {
+      "zone": "consent",
+      "index": 4,
+      "text": "Malou seeks consent and shares only necessary information with the verified contact. She does not send a full health record to an arbitrary official.",
+      "start_ms": 44000,
+      "end_ms": 54640
+    },
+    {
+      "zone": "close",
+      "index": 5,
+      "text": "Malou records the agreed next step and follows up with the family. She promises neither funding nor an outcome while the proper assessment is pending.",
+      "start_ms": 54940,
+      "end_ms": 64540
+    }
+  ],
+  "audio_sha256": "bc68d8f50e98509c2ae3b83075b915d92b8e120c698839e6f3c35a91c4418872"
+}

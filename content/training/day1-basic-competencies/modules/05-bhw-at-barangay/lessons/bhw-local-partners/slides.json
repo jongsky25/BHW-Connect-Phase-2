@@ -5,46 +5,126 @@
       "m5.stakeholders-city"
     ],
     "layout": "scene",
-    "heading_fil": "Karagdagang kakilala sa lungsod o munisipyo",
-    "heading_en": "Additional contacts at the city or municipal level",
-    "display_fil": "CHO/MHO at PHN: pamamahala at teknikal na suporta.\nMidwife: direktang katuwang sa gawain.\nHEPO: health promotion.\nLocal health board: lokal na pagpaplano at pag-ugnay.",
-    "display_en": "CHO/MHO and PHN: management and technical support.\nMidwife: a direct work partner.\nHEPO: health promotion.\nLocal health board: local planning and coordination.",
+    "heading_fil": "Linawin ang pangangailangan",
+    "heading_en": "Clarify the need",
+    "display_fil": "Linawin: klinikal, health promotion, tulong panlipunan, o kalinisan?\nAgarang usaping medikal → lokal na health protocol.\nPondo → huwag mangako.\nPahintulot → bago ibahagi ang impormasyon.",
+    "display_en": "Clarify: clinical, health promotion, social support, or sanitation?\nUrgent medical concern → local health protocol.\nFunding → do not promise.\nConsent → before sharing information.",
     "asset_ids": [
-      "practice-map"
+      "malou-local-coordination",
+      "local-partners-clarify"
     ],
     "check": null,
-    "narration_fil": "Lumalabas ang barangay patungo sa mas malawak na network kapag umaabot na sa antas ng lungsod o munisipyo.\n\nAng **City o Municipal Health Officer (CHO/MHO)** ang pangkalahatang namamahala sa kalusugan ng buong lungsod o bayan, at pangkalahatang supervisor ng mga health worker kasama ang mga BHW. Ang **midwife**, na naitatalaga sa barangay health station, ang nagtatakda ng mga gawain ng BHW at kanilang technical supervisor. Ang **Public Health Nurse (PHN)** naman ang nangangasiwa sa mga midwife, at kung minsan ay itinatalagang supervisor ng lahat ng BHW sa buong lungsod.\n\nMay bagong antas ding kikilalanin: ang **HEPO sa antas ng lungsod o munisipyo** — hindi ito ang tungkuling HEPO ng BHW mismo (natutunan mo na ito sa Modyul 1), kundi ang opisinang namamahala sa pagpaplano ng health promotion sa buong lokalidad at nag-mo-monitor ng kasanayan ng mga BHW dito. At ang **local health board**, na nagbibigay ng rekomendasyong pangkalusugan sa local government at namamahala sa budget — ang mayor ang chairperson nito, ang CHO/MHO ang vice-chairperson.",
-    "narration_en": "The barangay opens up into a wider network once you reach the city or municipal level.\n\nThe **City or Municipal Health Officer (CHO/MHO)** is the overall manager of health for the whole city or town, and the general supervisor of health workers including BHWs. The **midwife**, assigned to the barangay health station, sets the BHW's tasks and is their technical supervisor. The **Public Health Nurse (PHN)** supervises the midwives, and is sometimes assigned as supervisor of all BHWs citywide.\n\nThere is a new level to meet as well: the **city or municipal-level HEPO office** — not the same as a BHW's own HEPO designation (which you already learned in Module 1), but the office that plans health promotion for the whole locality and monitors BHWs' skill at it. And the **local health board**, which gives health recommendations to the LGU and manages the budget — the mayor chairs it, the CHO/MHO is vice-chair."
+    "narration_fil": "Si Malou ay may tanong mula sa isang pamilya tungkol sa posibleng tulong para sa gamot. Bago tumawag sa kahit sino, nililinaw niya kung klinikal na tanong ba ito, tanong sa health promotion, pangangailangang panlipunan, o suliranin sa kalinisan. Kung may agarang kondisyong pangkalusugan, sinusunod niya ang lokal na emergency o referral protocol at humihingi ng gabay sa health team. Ang tanong tungkol sa pondo ay hindi niya ginagawang pangako. Itinatala niya lamang ang kinakailangang impormasyon at nagtatanong kung pumapayag ang pamilya sa angkop na referral.",
+    "narration_en": "Malou hears a family ask about possible help with medicine. Before contacting anyone, she clarifies whether the need is clinical, health promotion, social support, or environmental sanitation. For an urgent health concern, she follows the local emergency or referral protocol and seeks guidance from the health team. She does not turn a funding question into a promise. She records only what is needed and asks whether the family agrees to an appropriate referral."
+  },
+  {
+    "id": "slide-city-role-map",
+    "concept_ids": [
+      "m5.stakeholders-city"
+    ],
+    "layout": "relationship-map",
+    "heading_fil": "Mga tungkulin ng health team",
+    "heading_en": "Health team roles",
+    "display_fil": "CHO/MHO: pamunuan ng lokal na health office.\nMidwife / PHN: teknikal na gabay ayon sa pagtatalaga.\nHEPO: health promotion sa lokalidad.\nKlinikal na desisyon: awtorisadong health professional.",
+    "display_en": "CHO/MHO: local health office leadership.\nMidwife / PHN: technical guidance as assigned locally.\nHEPO: locality-wide health promotion.\nClinical decision: authorized health professional.",
+    "asset_ids": [
+      "malou-local-coordination",
+      "local-partners-health-team"
+    ],
+    "check": null,
+    "narration_fil": "Sa RHU, ang city o municipal health officer, CHO o MHO, ang namumuno sa lokal na serbisyong pangkalusugan at sa mga tauhan ng tanggapan. Ang midwife at public health nurse, PHN, ay maaaring maging teknikal na katuwang ng BHW ayon sa aktuwal na pagtatalaga sa kanilang lugar; kinukumpirma ni Malou kung sino ang responsable sa tanong o referral. Ang HEPO sa antas ng lungsod o munisipyo ay katuwang sa health promotion; iba ito sa HEPO na tungkulin ng BHW. Ang tanong sa pangangalaga ng isang tao ay dinadala sa awtorisadong health professional, hindi sa board na nagbabalangkas ng badyet.",
+    "narration_en": "At the RHU, the city or municipal health officer, CHO or MHO, leads the local health service and its office staff. The midwife and public health nurse, PHN, may provide technical support to BHWs according to actual local assignments; Malou confirms who handles the question or referral there. The city or municipal HEPO supports health promotion, a different role from a BHW’s own HEPO designation. A decision about one person’s care belongs with an authorized health professional, not a board that discusses budgets."
   },
   {
     "id": "slide-section-7",
     "concept_ids": [
       "m5.stakeholders-other"
     ],
+    "layout": "comparison",
+    "heading_fil": "Iba pang katuwang at hangganan",
+    "heading_en": "Other partners and boundaries",
+    "display_fil": "Mayor + board: pamumuno, mungkahi at payo sa badyet.\nBHW president: koordinasyon ayon sa lokal na kaayusan.\nSocial welfare: alamin ang posibleng tulong.\nSanitary inspector: isyu ng kalinisan.",
+    "display_en": "Mayor + board: leadership, budget proposal and advice.\nBHW president: coordination under local arrangements.\nSocial welfare: explore possible assistance.\nSanitary inspector: sanitation concern.",
+    "asset_ids": [
+      "malou-local-coordination",
+      "local-partners-partners"
+    ],
+    "check": null,
+    "narration_fil": "Ang mayor ay namumuno sa lokal na pamahalaan at chair ng city o municipal local health board; ang CHO o MHO ang vice-chair. Ang board ay nagmumungkahi ng pondo para sa serbisyong pangkalusugan at nagpapayo sa sanggunian. Hindi nito kusang inaprubahan ang hiling ng isang pamilya at hindi ito ang gumagawa ng indibidwal na klinikal na pasya. Ang BHW president ay makatutulong sa koordinasyon ng mga BHW ayon sa lokal na kaayusan. Maaaring makatulong ang social welfare o development officer sa pag-alam sa angkop na social assistance, at ang sanitary inspector sa isyu ng kalinisan. Tiyakin ang tamang tao at saklaw ng gawain bago lumapit.",
+    "narration_en": "The mayor leads the local government and chairs the city or municipal local health board; the CHO or MHO is vice-chair. The board proposes health service funding and advises the sanggunian. It does not automatically approve a family’s request or make an individual clinical decision. A BHW president may help coordinate BHWs according to local arrangements. A social welfare or development officer can help identify suitable social assistance, while a sanitary inspector handles sanitation concerns. Verify the right person and scope before approaching anyone."
+  },
+  {
+    "id": "slide-local-request",
+    "concept_ids": [
+      "m5.stakeholders-other"
+    ],
+    "layout": "process",
+    "heading_fil": "Halimbawa: tiyaking lokal na hiling",
+    "heading_en": "Example: a locally verified request",
+    "display_fil": "1. Sabihin ang kaya mong tiyakin; huwag mangako.\n2. Pahintulot ng pamilya.\n3. Midwife/RHU: contact at proseso.\n4. Social welfare: posibleng suporta, ayon sa assessment.",
+    "display_en": "1. Explain what you can check; make no promise.\n2. Seek family consent.\n3. Midwife/RHU: verify contact and process.\n4. Social welfare: possible support, subject to assessment.",
+    "asset_ids": [
+      "malou-local-coordination",
+      "local-partners-verify"
+    ],
+    "check": null,
+    "narration_fil": "Tinanong ng pamilya si Malou kung may tulong sa gamot. Ipinaliwanag niyang maaari niyang alamin ang wastong proseso ngunit hindi niya maipapangako ang halaga o pag-apruba. Sa pahintulot ng pamilya, tinanong niya ang midwife sa RHU kung sino ang kasalukuyang contact at anong impormasyon ang kailangan. Nalaman niyang dapat munang sa itinalagang social welfare contact itanong ang posibleng suporta. Ang pamilya o awtorisadong kausap ang magbibigay ng hinihinging dokumento sa tamang tanggapan; hindi ipinadadala ni Malou ang buong health record.",
+    "narration_en": "The family asks Malou whether medicine support is available. She explains that she can check the proper process but cannot promise an amount or approval. With the family’s consent, she asks the RHU midwife who the current contact is and what information is needed. She learns to ask the designated social welfare contact about possible support. The family or an authorized person provides requested documents through the proper office; Malou does not send the whole health record."
+  },
+  {
+    "id": "slide-close-loop",
+    "concept_ids": [
+      "m5.stakeholders-other"
+    ],
+    "layout": "process",
+    "heading_fil": "Kumpirmahin at balikan ang pamilya",
+    "heading_en": "Confirm and close the loop",
+    "display_fil": "Sino ang nakausap?\nAno ang napagkasunduang hakbang?\nKailan ang follow-up?\nAno lang ang may pahintulot na ibahagi?",
+    "display_en": "Who was contacted?\nWhat next step was agreed?\nWhen is the follow-up?\nWhat information may be shared?",
+    "asset_ids": [
+      "malou-local-coordination",
+      "local-partners-close-loop"
+    ],
+    "check": null,
+    "narration_fil": "Pagkatapos ng pag-ugnay, tinatandaan ni Malou kung sino ang nakausap, anong hakbang ang napagkasunduan, at kailan dapat bumalik para sa sagot, ayon sa lokal na patakaran. Ipinababatid niya sa pamilya ang na-verify na susunod na hakbang nang hindi ipinangangako ang resulta. Kung kailangan ng klinikal na payo, ibinabalik niya ito sa health professional; kung usapin ng kalinisan, tinatanong niya ang itinalagang sanitary contact. Sa kapartner na hindi health worker, ibinabahagi lamang niya ang impormasyong may pahintulot at talagang kailangan.",
+    "narration_en": "After making contact, Malou records whom she reached, the agreed next step, and when to follow up under local rules. She tells the family the verified next step without guaranteeing an outcome. If clinical advice is needed, she returns the question to a health professional; for sanitation, she checks the designated sanitary contact. With a nonhealth partner, she shares only information the family has agreed to share and that is truly needed."
+  },
+  {
+    "id": "slide-local-partners-application-check",
+    "concept_ids": [
+      "m5.stakeholders-other"
+    ],
     "layout": "decision",
-    "heading_fil": "Iba pang kapartner",
-    "heading_en": "Other partners",
-    "display_fil": "Mayor: lokal na pamumuno.\nBHW President: koordinasyon ng mga BHW.\nSocial welfare officer: angkop na tulong panlipunan.\nSanitary inspector: environmental sanitation.",
-    "display_en": "Mayor: local leadership.\nBHW President: BHW coordination.\nSocial welfare officer: appropriate social assistance.\nSanitary inspector: environmental sanitation.",
-    "asset_ids": [],
+    "heading_fil": "Subukan: piliin ang unang hakbang",
+    "heading_en": "Try it: choose the first step",
+    "display_fil": "Tiyakin ang contact + pahintulot + minimum na impormasyon.\nHuwag ipadala ang buong tala kung hindi kailangan.\nHuwag mangako ng pondo o klinikal na pasya.",
+    "display_en": "Verify contact + consent + minimum information.\nDo not send a full record without need.\nDo not promise funding or a clinical decision.",
+    "asset_ids": [
+      "malou-local-coordination",
+      "local-partners-apply"
+    ],
     "check": {
-      "prompt_fil": "Ano ang gagawin kung hindi tiyak ang lokal na referral contact?",
-      "prompt_en": "What if you are unsure of the local referral contact?",
+      "prompt_fil": "May pamilyang nagtatanong tungkol sa tulong sa gamot. Hindi mo alam ang kasalukuyang lokal na contact. Ano ang pinakamainam na unang hakbang?",
+      "prompt_en": "A family asks about help with medicine. You do not know the current local contact. What is the best first step?",
       "options": [
         {
-          "fil": "Tiyakin sa midwife o RHU ang kasalukuyang contact at proseso.",
-          "en": "Confirm the current contact and procedure with the midwife or RHU."
+          "fil": "Alamin ang pahintulot ng pamilya, tiyakin sa midwife o RHU ang contact at proseso, saka ibahagi lamang ang kailangang impormasyon.",
+          "en": "Ask the family’s consent, confirm the contact and process with the midwife or RHU, then share only necessary information."
         },
         {
-          "fil": "Gumawa ng sariling proseso nang walang pag-ugnay.",
-          "en": "Invent a procedure without coordination."
+          "fil": "Ipadala agad ang kumpletong tala ng kalusugan sa sinumang nasa munisipyo upang mapabilis ang tulong.",
+          "en": "Send the complete health record to anyone at the municipal office to speed up help."
+        },
+        {
+          "fil": "Ipangako ang pondo dahil nasa local health board ang badyet.",
+          "en": "Promise funding because the local health board has the budget."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Tiyakin sa midwife o RHU ang kasalukuyang contact at proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "Confirm the current contact and procedure with the midwife or RHU. Explain why using the lesson situation."
+      "feedback_fil": "Una: Tama. May pahintulot, lokal na pagtiyak, at pinakamaliit na kailangang impormasyon. Ikalawa: Hindi. Ang buong tala sa hindi pa tiyak na tao ay labis na pagbabahagi; alamin muna ang wastong daan. Ikatlo: Hindi. Nagmumungkahi at nagpapayo ang local health board tungkol sa badyet; walang awtomatikong pag-apruba ng tulong.",
+      "feedback_en": "First: Correct. Seek consent, verify the local route, and share only necessary information. Second: No. A complete record sent to an unverified person shares too much; confirm the route first. Third: No. The local health board proposes and advises on budgets; it cannot guarantee assistance."
     },
-    "narration_fil": "Apat pang kapartner ang dapat kilalanin ni BHW Marites.\n\nAng **mayor** ang pangkalahatang chief executive ng lungsod o munisipyo at direktang supervisor ng CHO/MHO. Ang **BHW President** ay ang nahalal o itinalagang lider ng lahat ng BHW sa isang lungsod o bayan — tumutulong siya sa pag-update ng BHW registry at nagbibigay ng impormasyon tungkol sa mga oportunidad para sa kapwa BHW. Ang **municipal social work and development officer** ang namamahala sa financial assistance para sa mga nangangailangan ng tulong medikal (AICS). At ang **sanitary inspector** ang nangunguna sa promosyon ng kalinisan, at kasama ng BHW sa paghahanap ng mga kabahayang nangangailangan ng environmental sanitation intervention.",
-    "narration_en": "Four more partners round out BHW Marites' network.\n\nThe **mayor** is the overall chief executive of the city or municipality and the CHO/MHO's direct supervisor. The **BHW President** is the elected or appointed leader of all BHWs in a city or town — helping update the BHW registry and sharing opportunities with fellow BHWs. The **municipal social work and development officer** manages financial assistance for people needing medical help (AICS). And the **sanitary inspector** leads cleanliness promotion, and works with BHWs to find households needing environmental sanitation help."
+    "narration_fil": "Sa susunod na tanong tungkol sa tulong sa gamot, hindi pa alam ni Malou ang kasalukuyang contact. May tatlong posibleng hakbang: tiyakin ang pahintulot at ang lokal na proseso sa midwife o RHU bago ibahagi ang kailangan lamang na impormasyon; ipadala ang buong tala sa sinumang kawani; o ipangako ang pondo dahil may local health board. Piliin ang hakbang na may pahintulot at pagtiyak. Ang dalawang iba pa ay lumalampas sa kinakailangang pagbabahagi o nangangako ng desisyong hindi saklaw ng BHW.",
+    "narration_en": "On the next question about medicine support, Malou still does not know the current contact. She sees three possible actions: seek consent and verify the local process with the midwife or RHU before sharing only necessary information; send a full record to any official; or promise funding because a local health board exists. Choose the action that checks consent and the process. The other two overshare information or promise a decision beyond a BHW’s role."
   }
 ]

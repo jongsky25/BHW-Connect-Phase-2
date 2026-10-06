@@ -1,0 +1,81 @@
+{
+  "lesson_key": "bhw-local-partners",
+  "audited_at_utc": "2026-10-06",
+  "scope": "Draft lesson 1.5.3 only; six bilingual screens, locally verified role examples and shared module correction limited to this lesson's two concepts.",
+  "original_document_status": "The three Google Drive originals and original page images were not accessible in this workspace. Repository transcriptions and the 1.5.2 audit give navigation leads, not a new inspection of originals. No claim of an exact original-PDF comparison is made.",
+  "original_hashes_from_inherited_receipt_not_reverified": {
+    "reference_pdf": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+    "facilitator_pdf": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+    "deck_pdf": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+    "tesda_pdf": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa"
+  },
+  "navigation_leads": [
+    {
+      "source": "BHW Reference Manual 2022",
+      "pdf_pages": [
+        15,
+        16,
+        17
+      ],
+      "printed_pages": [
+        7,
+        8,
+        9
+      ],
+      "status": "inherited page lead, original pages unavailable"
+    },
+    {
+      "source": "Facilitator Manual 2022",
+      "pdf_pages": [
+        26,
+        27
+      ],
+      "printed_pages": [
+        19,
+        20
+      ],
+      "status": "inherited page lead, original pages unavailable"
+    },
+    {
+      "source": "Day 1 deck",
+      "slides": [
+        29,
+        44
+      ],
+      "status": "repository transcription lead, original pages unavailable"
+    }
+  ],
+  "primary_legal_and_service_sources": [
+    {
+      "url": "https://officialgazette.gov.ph/1991/10/10/republic-act-no-7160/",
+      "sections": [
+        102,
+        478
+      ],
+      "supported": "Mayor chairs city/municipal health board, CHO/MHO vice-chair; board proposes annual health facility/service allocations and advises sanggunian; health officer leads office staff. Does not establish an individual funding guarantee."
+    },
+    {
+      "url": "https://aics.dswd.gov.ph/wp-content/uploads/2023/03/MC_2022-016.pdf",
+      "supported": "AICS assistance is subject to social-worker assessment; referrals may involve local social welfare offices. No guaranteed award is implied."
+    }
+  ],
+  "authored_application": "Fictional Malou medicine-support request is an instructional application, not a universal local pathway. Local assignment, consent, minimum necessary information, emergency handling and follow-up require local confirmation.",
+  "visual": {
+    "reference_sha256": "f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "date": "2026-10-06",
+    "model_id": null,
+    "prompt": "Identity-preserving edit of approved Malou portrait to a fictional RHU/municipal coordination desk with a female staff member; retain Malou's fuller oval face, smile lines, low gray-streaked bun, thin glasses, ochre blouse and dark shoulder bag; no actual official, seal, readable form or private health data.",
+    "review_status": "draft",
+    "generated_png_sha256": "4fee94a71c7662fa4d8080905544a91b6c81d1d7523e2c6c8d8b8b6ecd366334",
+    "committed_optimized_jpeg_sha256": "f4a63e007784c43bee9c4cc0e6e60f5299732cafb623d41b7b6af6d47700c72e"
+  },
+  "known_limits": [
+    "No original PDF page images included or independently reverified here.",
+    "The prior practice-map SVG retains an approved flag that conflicts with its draft/not-owner-approved provenance; its bytes and metadata have not been changed.",
+    "No owner approval, independent policy SME signoff or human listening has occurred."
+  ]
+}

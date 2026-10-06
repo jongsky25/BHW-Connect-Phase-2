@@ -10,6 +10,7 @@ import {BHW_ELIGIBILITY_BEATS} from '../../remotion/src/bhw-eligibility/narratio
 import {lessonPosition,continueLesson} from '../../src/lib/elearning/reference-navigation.ts';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {toWebVtt} from '../lib/webvtt.mjs';
+import {approved153HistoricalMapping} from './lesson-153-release-compat.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),dir=path.join(root,'content/training/day1-basic-competencies/modules/04-ra7883'),lessonDir=path.join(dir,'lessons/bhw-eligibility');
 const json=p=>JSON.parse(readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
 const bytes=src=>readFileSync(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
@@ -58,7 +59,8 @@ describe('lesson 1.4.3 Demi BHWE conditions',()=>{
  it('protects every non-target mapping and selects both historical exact-text sections',()=>{
   const baseline=json(path.join(root,'docs/lesson-143-narration-baseline.json'));for(const [key,hash] of Object.entries(baseline.sibling_mapping_hashes)){
    // Only 1.4.4 changes: retain exact old mapping and every referenced byte.
-   if(key==='bhw-accreditation'||key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'){const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);}
+   if(key==='bhw-local-partners'){approved153HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}
+   else if(key==='bhw-accreditation'||key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'){const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);}
    else expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);
   }
   expect(manifest.history['bhw-eligibility'].some(h=>JSON.stringify(h)===JSON.stringify(baseline.target))).toBe(true);

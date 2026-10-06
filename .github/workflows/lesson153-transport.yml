@@ -1,0 +1,56 @@
+name: Lesson 1.5.3 artifact transport
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/lesson153-transport.yml
+permissions:
+  actions: read
+  contents: read
+jobs:
+  exact-artifact-chunks:
+    if: github.head_ref == 'codex/lesson-153-malou-proposal'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch and verify exact existing artifact archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 3 \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/artifacts/11410865698/zip" \
+            -o /tmp/lesson153-original.zip
+          echo "1becabb9de1ddf58091f50c0afbfafab0d2ba45d183f5efdb012c146d2c9850a  /tmp/lesson153-original.zip" | sha256sum --check
+          split -b 12000000 -d -a 1 /tmp/lesson153-original.zip /tmp/lesson153-part-
+          test "$(find /tmp -maxdepth 1 -name 'lesson153-part-*' | wc -l)" -eq 4
+          mkdir -p transport
+          cp /tmp/lesson153-part-* transport/
+          sha256sum transport/* > transport/chunks.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson153-exact-part-0
+          path: transport/lesson153-part-0
+          retention-days: 14
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson153-exact-part-1
+          path: transport/lesson153-part-1
+          retention-days: 14
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson153-exact-part-2
+          path: transport/lesson153-part-2
+          retention-days: 14
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson153-exact-part-3
+          path: |
+            transport/lesson153-part-3
+            transport/chunks.sha256
+          retention-days: 14
+          compression-level: 0
