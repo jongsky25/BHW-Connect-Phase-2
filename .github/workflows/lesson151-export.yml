@@ -55,11 +55,20 @@ jobs:
           CHUNK: ${{ matrix.chunk }}
         shell: python
         run: |
-          import urllib.request,os,json,hashlib,base64,zipfile,io
+          import urllib.request,urllib.error,os,json,hashlib,base64,zipfile,io
           base='https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/artifacts/'+os.environ['ARTIFACT_ID']
           headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']}
           with urllib.request.urlopen(urllib.request.Request(base,headers=headers)) as r:meta=json.load(r)
-          with urllib.request.urlopen(urllib.request.Request(base+'/zip',headers=headers)) as r:data=r.read()
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+            def redirect_request(self,*args):return None
+          try:
+            urllib.request.build_opener(NoRedirect).open(urllib.request.Request(base+'/zip',headers=headers))
+            raise RuntimeError('Expected artifact redirect')
+          except urllib.error.HTTPError as e:
+            if e.code!=302:raise
+            location=e.headers['Location']
+          # The signed storage request carries no GitHub authorization header.
+          with urllib.request.urlopen(location) as r:data=r.read()
           digest=hashlib.sha256(data).hexdigest();assert meta['digest']=='sha256:'+digest
           with zipfile.ZipFile(io.BytesIO(data)) as z:assert z.testzip() is None
           index=int(os.environ['CHUNK']);chunk=data[index*8*1024*1024:(index+1)*8*1024*1024];assert chunk
