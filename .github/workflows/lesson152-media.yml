@@ -42,21 +42,21 @@ jobs:
           KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
         run: node scripts/lesson-152-published-snapshot.mjs
       - name: Generate actual target-only draft media
-        if: github.event_name != 'workflow_dispatch'
+        if: github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-152-owner-approval.json') == ''
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON152_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-152-record-fetch.mjs'
         run: node scripts/lesson-152-media-build.mjs
       - name: Full audio model review
-        if: always() && github.event_name != 'workflow_dispatch'
+        if: always() && github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-152-owner-approval.json') == ''
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON152_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-152-record-fetch.mjs'
         run: node scripts/lesson-152-audio-review.mjs
       - name: Decode and focused-review shipped media
-        if: always() && github.event_name != 'workflow_dispatch'
+        if: always() && github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-152-owner-approval.json') == ''
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON152_RAW_EVIDENCE: '1'
