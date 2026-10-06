@@ -45,26 +45,27 @@ Nena contributes her preferences throughout. Malou confirms what was actually ag
 Coordinate distinct roles without promising resources or replacing assessment.
 :::
 
-## [concept/core] Additional contacts within the barangay {m5.stakeholders-barangay}
+## [concept/core] Barangay partners: a clear request {m5.stakeholders-barangay}
 
-Beyond the four relationships, there are two more contacts within the
-barangay itself that BHW Marites should know.
+At a fictional meeting, Malou helps prepare an agreed community health activity. The group needs a space and ten chairs on Saturday morning. She first checks the number, time and participants’ preferences. The space and chairs are not yet confirmed.
 
-The **punong barangay** is the BHW's partner in carrying out the
-barangay's mandate to provide basic health services, and oversees BHWs
-administratively — for the health work itself, the midwife remains the
-BHW's technical supervisor. They also decide how the barangay budget is
-used — including BHW honoraria.
+A clear need guides the choice of partner. Knowing an official does not automatically give Malou equipment or permission.
 
-The **Kagawad sa Kalusugan** advocates health policies and resolutions
-in the barangay council, and is also a member of the barangay planning
-team for health. They push for budget for health-related activities,
-facilities, and materials.
+The DOH manual describes the punong barangay as a partner in health services, local leadership and administrative oversight. The health kagawad advocates health policies and resolutions in the council. Some barangays assign additional health-activity responsibilities.
 
-:::takeaway
-The punong barangay holds the budget; the Kagawad sa Kalusugan
-advocates for policy. Different roles, both worth knowing.
-:::
+Malou can ask the responsible barangay contact about space and equipment. She confirms who handles the request and which local process applies. Technical or personal health questions belong with the designated authorized health professional; an official’s position does not replace that role.
+
+Malou explains: “We have an agreed activity on Saturday morning. We need a space and ten chairs. Who should we contact, and what steps or approval are needed?”
+
+The purpose, time and requested support are clear. She separates known facts from what is unconfirmed: there is a request, but no approval or confirmed equipment yet. This request does not need a resident’s name or personal health information.
+
+For a proposed health policy or program support, the health kagawad may be a partner in advocating it in the council. That differs from simply asking who manages a space for an activity.
+
+Malou does not promise that one official can provide funding, payment or equipment alone. She asks what decisions, approvals and local arrangements are needed. This lesson does not give legal rules about budget appropriation or honoraria.
+
+Malou records the responsible contact, next step and when to ask again. If the space is unconfirmed, she tells the group. She listens to their preferences and discusses another appropriate plan if needed.
+
+She checks actual availability and approval before saying arrangements are ready. A personal health question goes separately to an authorized professional under local arrangements. A guess or personal acquaintance is not confirmation.
 
 ## [concept/core] Additional contacts at the city or municipal level {m5.stakeholders-city}
 

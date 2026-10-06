@@ -1,3 +1,4 @@
+import {BhwBarangayPartnersStory, calculateBhwBarangayPartnersMetadata, BARANGAY_PARTNERS_FPS, BARANGAY_PARTNERS_FALLBACK_DURATION} from "./bhw-barangay-partners/BhwBarangayPartnersStory";
 import {BhwRelationshipsStory, calculateBhwRelationshipsMetadata, RELATIONSHIPS_FPS, RELATIONSHIPS_FALLBACK_DURATION} from "./bhw-relationships/BhwRelationshipsStory";
 import {BhwFollowUpStory, calculateBhwFollowUpMetadata, FOLLOW_UP_FPS, FOLLOW_UP_FALLBACK_DURATION} from "./bhw-follow-up/BhwFollowUpStory";
 import {BhwAccreditationStory, calculateBhwAccreditationMetadata, ACCREDITATION_FPS, ACCREDITATION_FALLBACK_DURATION} from "./bhw-accreditation/BhwAccreditationStory";
@@ -329,6 +330,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`bhw-relationships-${language}`} id={language === "fil" ? "BhwRelationshipsStoryFil" : "BhwRelationshipsStoryEn"}
           component={BhwRelationshipsStory} calculateMetadata={calculateBhwRelationshipsMetadata}
           durationInFrames={RELATIONSHIPS_FALLBACK_DURATION} fps={RELATIONSHIPS_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhw-barangay-partners-${language}`} id={language === "fil" ? "BhwBarangayPartnersStoryFil" : "BhwBarangayPartnersStoryEn"}
+          component={BhwBarangayPartnersStory} calculateMetadata={calculateBhwBarangayPartnersMetadata}
+          durationInFrames={BARANGAY_PARTNERS_FALLBACK_DURATION} fps={BARANGAY_PARTNERS_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

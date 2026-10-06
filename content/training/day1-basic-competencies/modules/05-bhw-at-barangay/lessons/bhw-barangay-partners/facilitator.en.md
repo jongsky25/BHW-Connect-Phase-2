@@ -1,73 +1,54 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can explain why each of the four relationships has its own purpose, say what the punong barangay and the Kagawad sa Kalusugan each do for health in the barangay, and, given a need, choose the barangay partner whose role fits it — without promising anything before the local procedure is confirmed.
+Apply the unchanged single objective: explain and apply barangay partners in a situation. Explain role and limit, justify a contact, make a clear support request and ask how to verify local arrangements.
 
-## [time-materials] Time and materials
+## [time-materials] Time Materials
 
-- **Time:** about 15 minutes in a face-to-face session. This is this lesson's share of the 40-minute "Additional contacts at the barangay, city, municipal level" part of the plan in the subchapter guide; the other 25 minutes go to City or municipal partners. Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** manila paper and markers; the lesson's slides; if available, the names and photos of your barangay's actual punong barangay and Kagawad sa Kalusugan; four need cards for the practice activity (see below).
+Authored standalone facilitated estimate: 20 minutes: opening 2; roles 4; request demonstration 4; coordination and verification 3; paired practice 4; check and feedback 3. The current shared module has six 30-minute segments, total 180. Its combined barangay and city/municipal contacts segment is 30 minutes. For that integrated segment select a shorter 10-minute core of this lesson (role map 3, worked request 4, check 3), reserving 20 for selected city/municipal work; full standalone exercises are not additive. Protected lesson1.5.3 still contains inherited 25-of-40 wording; it is not rewritten or claimed reconciled here. SELF_STUDY_TIMING_PENDING
+
+Materials: six bilingual screens, fictional meeting art, blank request cards, paper and pens; optional headphones. Use no patient records.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- Find out, for your own barangay, who the punong barangay and the Kagawad sa Kalusugan are, and how requests for health funds or support are actually made locally. The slide says to confirm local funding and decision procedures — you should know them or know who to ask.
-- This lesson is about **matching a need to a partner's role**. Do not promise or explain amounts of honoraria, budgets or benefits; they are decided locally and are outside this lesson.
+Read all screens and rationales. Verify local responsible contacts, reporting channels and approval procedures with the health team. Mark unknowns, not invented answers. Prepare large-print and written alternatives. Explain that the picture and case are fictional.
 
 ## [opening] Opening
 
-Ask the group: *"When your barangay health station needed something — supplies, transport, repairs — who did you go to? Did it work?"* Write the names or titles on manila paper, with a check or a cross beside each for "it worked" or "it didn't".
+Introduce Malou’s agreed activity and unconfirmed space and ten chairs. Ask which facts are known and which need checking. Invite participants’ preferences without asking for a personal health story.
 
 ## [steps] Steps
 
-1. **Why each relationship matters (Read "Why each relationship matters", first slide).** Read the three "if" sentences about Marites: always going to the midwife, never building a relationship with barangay officials, never connecting with fellow BHWs. Ask: *"Which of these three have you seen happen? What slowed down?"*
-2. **Match the partner to the need.** Go back to the opening list. For each cross, ask: *"Was this the right partner for that need, or the one we usually talk to?"*
-3. **Additional contacts within the barangay (Read "Additional contacts within the barangay", second slide).** Introduce the two contacts. If you have them, show the names and photos of your own punong barangay and Kagawad sa Kalusugan. Ask: *"Which of these two decides how the barangay budget is used? Which one pushes health policies and resolutions in the barangay council?"*
-4. **Confirm local procedures.** Point to the last line of the slide. Ask: *"Before telling a family 'the barangay will help,' what do you need to check first?"*
-5. **Self-check.** Give the check (how to choose a barangay partner) and let the group discuss before revealing the answer.
+1. Clarify need and preferences (2 minutes).
+2. Explain punong barangay and health kagawad roles and professional limits (4).
+3. Model the Saturday request: purpose, timing, number, contact and approval question (4).
+4. Distinguish coordination from confirmed approval and report unknowns accurately (3).
+5. Paired request/observer practice, switch roles (4).
+6. Check all three rationales and reflect (3). Optional story is additional and not needed for completion.
 
-## [expected-answers] Expected answers and how to respond
+## [expected-answers] Expected Answers
 
-- **"I just go to the captain for everything."** Honest and common. Ask: *"For a health resolution in the council or budget for health materials, who does the lesson say pushes for that?"* Show that the Kagawad sa Kalusugan is a second, specific ally.
-- **"The kagawad and the captain do the same thing."** Acknowledge that both are barangay officials, then use the takeaway: the punong barangay holds the budget; the Kagawad sa Kalusugan advocates for policy. Different roles, both worth knowing.
-- **"The barangay will pay for it."** Do not argue about whether it will. Ask: *"Who decides that, and how do we confirm it before we tell the family?"*
+Known: agreed activity, Saturday morning, ten chairs and a space needed. Unknown: responsible contact, availability and approval. Punong barangay: health-service partnership and administrative coordination; health kagawad: council health-policy advocacy, with additional locally assigned roles to verify. An authorized health professional handles technical/personal health guidance. A clear request asks who is responsible and what approval is needed; it does not promise resources.
 
-## [misconception] Common misconception
+## [misconception] Misconception
 
-**"The midwife handles everything."** Many BHWs send every concern to the midwife because she is their supervisor. The lesson shows that this slows everything down and fills the midwife's time with things that were never clinical. Correct it without embarrassing anyone: ask the group to name one recent request that was not clinical at all, then ask which barangay partner's role it fits.
+Knowing an official is not approval. Rank does not establish clinical authority. Advocacy does not mean one person can grant every resource or payment. This lesson teaches a bounded request, not legal budget or honorarium rules.
 
-## [practice] Practice activity
+## [practice] Practice
 
-Prepare four need cards drawn from the lesson: (1) a family needs transport to the facility; (2) the barangay health station needs supplies or materials; (3) BHWs want a health resolution raised in the barangay council; (4) a child's cough has lasted three weeks. In pairs, a BHW draws a card, retells the need in their own words, then says: which partner's role fits (punong barangay, Kagawad sa Kalusugan, or — for the clinical card — the midwife or RHU), their first action, and what they must confirm locally before promising anything to the family. Listen for whether the BHW promises help before checking.
+Use fictional card A: ten chairs and space Saturday morning; B: space unavailable, group prefers another date. Learner explains the appropriate contact and limit, makes a request, and asks a verification question. Observer identifies a known fact and an assumption, offers one specific suggestion; switch and retry. Equivalent written practice is accepted. No actual official response or personal data is required.
 
-## [answer-key] Self-check answer key
+## [answer-key] Answer Key
 
-The section check in Read "Additional contacts within the barangay" and the check on the second slide are the same question; it is covered once here.
+Choice 1 is appropriate: match the request to a responsible contact and verify process and availability. Choice 2 is inappropriate: personal acquaintance cannot confirm permission or chairs. Choice 3 is inappropriate: technical health responsibility does not automatically include all equipment and funding decisions. Ask for a reason and a local-verification question; a correct click alone is not observed competence.
 
-- **"How do you choose a barangay partner?"** → **Match the need to the partner's role.** Each partner has a different role — the punong barangay decides on the barangay budget, the Kagawad sa Kalusugan advocates health policy and budget in the council — so the need decides who to approach.
-  - *"Send every issue to the same person"* is wrong because it slows service down: in the lesson, sending everything to the midwife fills her time with non-clinical matters, and never approaching barangay officials makes it hard to get transport or supplies.
+## [observe] Observe
 
-## [observe] What to observe
+Use the one objective_index 0 indicator. Kaya na: independently explains roles and limits, justifies the contact, gives a clear request and verification question. Kailangan practice: sound direction needing a cue. Hindi pa: after support, still mismatches the role or promises unconfirmed resources; model and retry. Observe explanations, not accent, confidence, political influence or whether support is granted.
 
-Use the lesson's observation indicator (explains the main point and an appropriate first action, including what must be checked with the supervisor) during the practice activity:
+## [support] Support
 
-- **Kaya na:** the BHW retells the need, names the partner whose role fits and why, gives a first action, and says what must be confirmed locally before promising — without prompting.
-- **Kailangan pa ng practice:** the BHW picks the right partner but needs your follow-up question to explain the partner's role or what to confirm first.
-- **Hindi pa:** the explanation or action does not fit — for example, the BHW sends every card to the same person, or tells the family "the barangay will pay" without checking.
+Offer a cue card: need / purpose / time / role / request / what to confirm. Read aloud or accept dictation, writing and the learner’s preferred language. Model one request, practise with prompts, then repeat with less support using an equivalent fictional activity.
 
-Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+## [sources-review] Sources Review
 
-## [support] If a BHW needs more support
-
-- Write the takeaway on a card for them: *punong barangay = budget; Kagawad sa Kalusugan = policy and resolutions.* Let them use it during a second try.
-- Narrow the practice to two cards (transport and a council resolution) before adding the clinical card.
-- Re-observe with the same need cards during the "Exercise and summary" part of the module, or at the next session.
-
-## [sources-review] Sources and review notes
-
-- BHW Reference Manual PDF 15 (lesson source, marked "inherited page reference; final audit pending"). The punong barangay and Kagawad sa Kalusugan descriptions are on Reference Manual p. 7 (PDF 15). The source-material README maps "Ang BHW at ang Kanyang Barangay" to Reference Manual pp. 7–8 (PDF 15–16), Facilitator Guide p. 19 (PDF 26) and Day 1 presentation slides 29–44.
-- Facilitator Guide PDF 26 recommends presenting the names and pictures of the barangay's stakeholders so BHWs know them.
-- Timing: the module keeps TESDA's 3 hours for *Work in a Team Environment* (Facilitator Guide PDF 26–27 says "at least 3 hours", shared with the "Pagganap ng Tungkulin bilang Miyembro ng Team" topic). The 15 minutes above is a suggested share of the module's 40-minute "Additional contacts" block; the split between this lesson and City or municipal partners is not in the source. Do not repeat the whole allocation for each short lesson; this split supports self-study and does not create a new training-hour allocation.
-- This lesson's observation indicator is generic; reviewers may want a more specific indicator for matching needs to barangay partners.
-- The lesson's `practice-map` visual is a draft discussion guide, not owner-approved.
-- Review current legal/policy wording (especially budget and honoraria), bilingual parity and the observation indicator before publication.
-- Draft for review
+Original source audit, 6 October 2026 (Asia/Manila): DOH Reference PDF15–16 / printed7–8; Facilitator PDF26–27 / printed19–20; deck PDF29–30; TESDA Revision01 promulgated11 January2019, unit400311211, PDF11–12 / printed7–8 and84–85 / printed80–81. Roles, source verification and combined three-hour competency supported. Legal site retrieval unavailable; no claim of verified appropriation/honorarium law or universal local procedure. Malou’s case, six screens, request and minute allocations are authored. New art/media draft pending separate owner review; no human listening or independent policy SME approval. Inherited practice-map had approved status but draft provenance; historical bytes preserved. Protected1.5.3 timing remains as disclosed above.
