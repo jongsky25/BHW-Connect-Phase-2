@@ -1,7 +1,8 @@
 // Actual production React components in the frozen inline review.
 // Next navigation/image/link adapters and save callbacks are explicit local fixtures.
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';
-import {createRequire} from 'node:module';import {execFileSync} from 'node:child_process';import {chromium} from '@playwright/test';
+import {createRequire} from 'node:module';import {execFileSync,execFile} from 'node:child_process';import {promisify} from 'node:util';import {chromium} from '@playwright/test';
+const run=promisify(execFile);
 const root=path.resolve(import.meta.dirname,'..'),dir=root+'/.preview/lesson156-deliverables';
 const html=fs.readFileSync(dir+'/lesson-1.5.6-malou-review.html');
 const require=createRequire(root+'/remotion/package.json');const {ensureBrowser}=require('@remotion/renderer');
@@ -15,11 +16,11 @@ const save=()=>fs.writeFileSync(dir+'/lesson-1.5.6-browser-verification.json',JS
 try{
  // Required agent-browser initial gut-check, using the already verified repository executable.
  const env={...process.env,AGENT_BROWSER_EXECUTABLE_PATH:status.path};
- execFileSync('npx',['--yes','agent-browser','--session','lesson156','open','http://127.0.0.1:4176'],{env,stdio:'inherit'});
- execFileSync('npx',['--yes','agent-browser','--session','lesson156','wait','--load','networkidle'],{env,stdio:'inherit'});
- const snapshot=execFileSync('npx',['--yes','agent-browser','--session','lesson156','snapshot','-i'],{env,encoding:'utf8'});assert(snapshot.includes('Filipino')&&snapshot.includes('Slides'));fs.writeFileSync(dir+'/agent-browser-snapshot.txt',snapshot);
- execFileSync('npx',['--yes','agent-browser','--session','lesson156','screenshot',dir+'/agent-browser-desktop.png'],{env,stdio:'inherit'});
- execFileSync('npx',['--yes','agent-browser','--session','lesson156','close'],{env,stdio:'inherit'});
+ await run('npx',['--yes','agent-browser','--session','lesson156','open','http://127.0.0.1:4176'],{env});
+ await run('npx',['--yes','agent-browser','--session','lesson156','wait','--load','networkidle'],{env});
+ const {stdout:snapshot}=await run('npx',['--yes','agent-browser','--session','lesson156','snapshot','-i'],{env,encoding:'utf8'});assert(snapshot.includes('Filipino')&&snapshot.includes('Slides'));fs.writeFileSync(dir+'/agent-browser-snapshot.txt',snapshot);
+ await run('npx',['--yes','agent-browser','--session','lesson156','screenshot',dir+'/agent-browser-desktop.png'],{env});
+ await run('npx',['--yes','agent-browser','--session','lesson156','close'],{env});
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
   const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));await page.goto('http://127.0.0.1:4176/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
   const next=lang==='en'?'Next':'Susunod',complete=lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin';

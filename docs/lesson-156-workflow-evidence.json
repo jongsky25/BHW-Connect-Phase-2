@@ -20,6 +20,17 @@
       "full_model_reviews": 14,
       "focused_model_excerpts": 56,
       "human_listening": false
+    },
+    {
+      "run_id": 37460756693,
+      "source_commit": "ce92d6e0c1eee04e147a2f38ca71c3bb81edd8fa",
+      "conclusion": "failure",
+      "artifact_id": 11411478927,
+      "api_zip_sha256": "70ec293078f9e31dde5842401be2bddde36c37ec4242884a32f6aa40b695baf5",
+      "zip_bytes": 102045770,
+      "crc": "passed",
+      "unique_safe_members": 184,
+      "note": "Four bounded Read voice corrections, all14 full/56focused reviews succeeded; offline harness synchronous-process/server deadlock fixed before final verification."
     }
   ],
   "retry": "One bounded correction for four corroborated voice continuity cases; initial selected tracks/reviews preserved."

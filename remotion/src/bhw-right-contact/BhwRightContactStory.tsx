@@ -27,7 +27,7 @@ export const calculateBhwRightContactMetadata: CalculateMetadataFunction<BhwRigh
   return {durationInFrames: beatFrames.reduce((sum, n) => sum + n, 0), props: {...props, beatFrames, audioSrc: staticFile(`bhw-right-contact/narration-${props.language}.mp3`)}};
 };
 
-const cream = "#fffaf2", gold = "#ffe5a3", ink = "#203f3b";
+const cream = "#fffaf2", gold = "#ffe5a3";
 function Graphic({index}: {index: number; language: "fil" | "en"; frame: number}) {
   const origins = ["50% 50%", "80% 48%", "14% 35%", "45% 40%", "52% 40%", "50% 50%"];
   return <div style={{position: "absolute", right: 32, top: 105, width: 395, height: 264, background: cream, borderRadius: 20, overflow: "hidden"}}>

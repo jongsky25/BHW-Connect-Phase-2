@@ -4,7 +4,7 @@ Use the unchanged single lesson objective. Ask the learner to identify a need an
 
 ## [time-materials] Time and materials
 
-Standalone facilitated plan: 30 minutes — opening 3, six screens 8, paired practice 10, all-option feedback 4, observation and consolidation 5. Authored independent estimate: 8–11 minutes. Actual six-screen narration is 243.17 seconds in English and 272.80 seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.
+Standalone facilitated plan: 30 minutes — opening 3, six screens 8, paired practice 10, all-option feedback 4, observation and consolidation 5. Authored independent estimate: 8–11 minutes. Actual six-screen narration is 242.00 seconds in English and 272.22 seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.
 
 This is the shared module’s final 30-minute exercise/summary segment within six segments totaling 180 minutes, not six additional standalone allocations. Keep the released 1.5.2 standalone 20-minute plan and selected integrated 10-minute core in its separate contacts segment. Protected city-partner timing inconsistencies remain disclosed, not silently corrected. Use blank cards, this lesson’s slides and an accessible printed or spoken alternative. Story viewing is optional.
 
