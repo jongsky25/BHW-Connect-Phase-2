@@ -50,7 +50,12 @@ function render(){controls();if(mode==='slides'||mode==='read'){current();return
 html_path=OUT/'lesson-1.5.3-malou-review.html';html_path.write_text(page)
 files={'lesson-1.5.3-malou-review.html':html_path.read_bytes()}
 for rel in sorted(set(selected)):files[rel]=raw(rel)
-for p in [*sorted(LEAF.glob('*')),ROOT/'docs/lesson-153-source-audit.json',ROOT/'docs/lesson-153-media-generation.json',ROOT/'docs/lesson-153-audio-review.json',ROOT/'docs/lesson-153-audio-focus.json',ROOT/'content/training/day1-basic-competencies/narration.json']:
+snapshot=[*sorted(LEAF.glob('*')),*sorted((ROOT/'docs').glob('lesson-153-*.json')),
+ ROOT/'content/training/day1-basic-competencies/narration.json',
+ *[ROOT/'content/training/day1-basic-competencies/modules/05-bhw-at-barangay'/name for name in ('lesson.en.md','lesson.fil.md','qa-entries.json')],
+ *[ROOT/name for name in ('remotion/src/Root.tsx','remotion/src/bhw-local-partners/BhwLocalPartnersStory.tsx','remotion/src/bhw-local-partners/narration.ts','scripts/lesson-153-media-build.mjs','scripts/lesson-153-audio-review.mjs','scripts/lesson-153-audio-focus.mjs','scripts/lesson-153-verify.py','scripts/lesson-153-review-package.py','scripts/lib/reference-narration.mjs','src/components/elearning/reference-lessons.tsx')],
+ OUT/'lesson-1.5.3-verification.json',OUT/'browser-proof.json']
+for p in snapshot:
  if p.is_file():files['source/'+str(p.relative_to(ROOT))]=p.read_bytes()
 index={'lesson':'1.5.3','status':'draft pending owner review','member_sha256':{k:sha(v) for k,v in files.items()},'media_sha256':{k:v['sha256'] for k,v in media.items()},'original_source_pdf_status':'unavailable in this workspace; inherited receipts retained without claiming new PDF audit'}
 files['integrity.json']=json.dumps(index,indent=2).encode()

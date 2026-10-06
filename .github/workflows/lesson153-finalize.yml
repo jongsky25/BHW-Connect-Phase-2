@@ -1,0 +1,126 @@
+name: Lesson 1.5.3 final draft package
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/lesson153-finalize.yml
+permissions:
+  actions: read
+  contents: write
+jobs:
+  freeze:
+    if: github.head_ref == 'codex/lesson-153-malou-proposal' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Fetch exact reviewed media archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 3 -H "Authorization: Bearer ${GH_TOKEN}" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/artifacts/11410865698/zip" -o /tmp/lesson153-original.zip
+          echo "1becabb9de1ddf58091f50c0afbfafab0d2ba45d183f5efdb012c146d2c9850a  /tmp/lesson153-original.zip" | sha256sum --check
+          mkdir -p /tmp/lesson153-artifact
+          unzip -q /tmp/lesson153-original.zip -d /tmp/lesson153-artifact
+          (cd /tmp/lesson153-artifact && sha256sum --check lesson153-generated-media.sha256)
+          python3 - <<'PY'
+          import pathlib,tarfile
+          root=pathlib.Path('/tmp/lesson153-artifact')
+          with tarfile.open(root/'lesson153-generated-media.tar') as t:
+              names=t.getnames()
+              assert len(names)==len(set(names))
+              assert all(not pathlib.PurePosixPath(n).is_absolute() and '..' not in pathlib.PurePosixPath(n).parts for n in names)
+              t.extractall('.',filter='data')
+          PY
+          python3 - <<'PY'
+          import json,pathlib,hashlib
+          p=pathlib.Path('docs/lesson-153-generation-artifacts.json')
+          p.write_text(json.dumps({'artifact_id':11410865698,'workflow_run_id':37456467745,'source_head':'13c2068cc5e507913aee718b7e8bfcc264602c14','api_zip_sha256':'1becabb9de1ddf58091f50c0afbfafab0d2ba45d183f5efdb012c146d2c9850a','tar_sha256':hashlib.sha256(pathlib.Path('/tmp/lesson153-artifact/lesson153-generated-media.tar').read_bytes()).hexdigest(),'status':'draft; exact archive digest and safe members verified in GitHub Actions'},indent=2)+'\n')
+          PY
+      - run: npm ci
+      - name: Verify selected media and historical selection
+        run: |
+          set -euo pipefail
+          npx vitest run scripts/tests/lesson-153.test.mjs src/components/elearning/local-partners-images.test.tsx
+          python3 - <<'PY'
+          import hashlib,json,pathlib,subprocess
+          root=pathlib.Path('.');leaf=root/'content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners'
+          lesson=json.loads((leaf/'lesson.json').read_text());slides=json.loads((leaf/'slides.json').read_text());manifest=json.loads((root/'content/training/day1-basic-competencies/narration.json').read_text())
+          assert len(slides)==6 and all(len(s['asset_ids'])==2 and 'malou-local-coordination' in s['asset_ids'] for s in slides)
+          assert len({s['asset_ids'][1] for s in slides})==6
+          def check(m):
+              p=root/'public'/m['path'].lstrip('/')
+              assert hashlib.sha256(p.read_bytes()).hexdigest()==m['content_hash']
+          for s in slides:
+              for aid in s['asset_ids']:check(next(a for a in lesson['assets'] if a['id']==aid))
+          for s in lesson['sections']:
+              for lang in ('fil','en'):
+                  t=manifest['lessons']['bhw-local-partners']['sections'][s['id']][lang]
+                  p=root/'public'/t['src'].lstrip('/')
+                  assert hashlib.sha256(p.read_bytes()).hexdigest()==t['sha256']
+          story=next(a for a in lesson['assets'] if a['id']=='bhw-local-partners-story')
+          for lang in ('fil','en'):
+              v=story['videos'][lang]
+              for m in (v,v['poster'],v['captions']):check(m)
+              assert (root/'public'/v['captions']['path'].lstrip('/')).read_text().count('-->')==6
+              streams=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-of','json',str(root/'public'/v['path'].lstrip('/'))]))['streams']
+              assert {'h264','aac'} <= {x['codec_name'] for x in streams}
+          for kind in ('audio-review','audio-focus'):
+              r=json.loads((root/f'docs/lesson-153-{kind}.json').read_text())
+              assert len(r['records'])==14
+              assert all(x.get('raw_request') and x.get('raw_response') for x in r['records']) if kind=='audio-review' else all(all(y.get('raw_request') and y.get('raw_response') for y in x['excerpts']) for x in r['records'])
+          out=root/'.preview/lesson-153';out.mkdir(parents=True,exist_ok=True)
+          (out/'lesson-1.5.3-verification.json').write_text(json.dumps({'status':'target media and selector verified','screens':6,'images_per_slide':2,'read_tracks':12,'story_videos':2,'captions_per_language':6,'full_model_reviews':14,'original_pdf_review':'unavailable; inherited leads disclosed'},indent=2)+'\n')
+          PY
+      - name: Browser offline playback
+        continue-on-error: true
+        run: |
+          npx playwright install chromium
+          python3 -m http.server 8765 --directory .preview/lesson-153 >/tmp/lesson153-http.log 2>&1 &
+          echo $! >/tmp/lesson153-http.pid
+          node --input-type=module - <<'JS'
+          import {chromium} from 'playwright';import fs from 'node:fs';
+          const proof={status:'failed',widths:[],languages:[],errors:[]};
+          try{
+            const browser=await chromium.launch({headless:true});const context=await browser.newContext({viewport:{width:1280,height:800}});const page=await context.newPage();
+            await page.goto('http://127.0.0.1:8765/lesson-1.5.3-malou-review.html',{waitUntil:'load'});await context.setOffline(true);
+            for(const width of [1280,390]){await page.setViewportSize({width,height:800});for(const lang of ['fil','en']){await page.locator('[data-lang="'+lang+'"]').click();for(let i=0;i<6;i++){if(i)await page.locator('#next').click();const xs=await page.locator('aside img').evaluateAll(els=>els.map(e=>e.naturalWidth));if(xs.length!==2||xs.some(x=>!x))throw Error('images '+width+'/'+lang+'/'+i)}for(let i=0;i<5;i++)await page.locator('#prev').click();await page.locator('[data-mode="read"]').click();await page.locator('audio').evaluate(async a=>{await a.play();a.pause()});await page.locator('[data-mode="story"]').click();const v=await page.locator('video').evaluate(async v=>{await v.play();await new Promise(r=>setTimeout(r,500));const o={time:v.currentTime,width:v.videoWidth,tracks:v.textTracks.length};v.pause();return o});if(!v.time||!v.width||v.tracks!==1)throw Error('story '+JSON.stringify(v));await page.locator('[data-mode="guide"]').click();await page.locator('[data-mode="proof"]').click();await page.locator('[data-mode="slides"]').click();proof.languages.push(lang)}if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('overflow '+width);proof.widths.push(width)}await browser.close();proof.status='passed';
+          }catch(e){proof.errors.push(String(e))}
+          fs.mkdirSync('.preview/lesson-153',{recursive:true});fs.writeFileSync('.preview/lesson-153/browser-proof.json',JSON.stringify(proof,null,2)+'\n');console.log(JSON.stringify(proof));if(proof.status!=='passed')process.exitCode=1;
+          JS
+      - name: Freeze bilingual review files
+        run: |
+          set -euo pipefail
+          python3 scripts/lesson-153-review-package.py
+          sha256sum .preview/lesson-153/lesson-1.5.3-malou-review.{html,zip}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson153-frozen-review
+          path: |
+            .preview/lesson-153/lesson-1.5.3-malou-review.html
+            .preview/lesson-153/lesson-1.5.3-malou-review.zip
+            .preview/lesson-153/lesson-1.5.3-package-integrity.json
+            .preview/lesson-153/lesson-1.5.3-verification.json
+            .preview/lesson-153/browser-proof.json
+          retention-days: 30
+      - name: Commit exact reviewed target outputs to draft branch
+        run: |
+          set -euo pipefail
+          git add content/training/day1-basic-competencies/narration.json content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/lesson.json content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/facilitator.*.md public/training/audio/05-bhw-at-barangay/bhw-local-partners public/training/bhw-1-5/bhw-local-partners-gemini-* remotion/public/bhw-local-partners/narration-* docs/lesson-153-media-generation.json docs/lesson-153-audio-review.json docs/lesson-153-audio-focus.json docs/lesson-153-generation-artifacts.json
+          python3 - <<'PY'
+          import subprocess
+          paths=subprocess.check_output(['git','diff','--cached','--name-only'],text=True).splitlines()
+          assert paths and all(p.startswith(('content/training/day1-basic-competencies/narration.json','content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/','public/training/audio/05-bhw-at-barangay/bhw-local-partners/','public/training/bhw-1-5/bhw-local-partners-gemini-','remotion/public/bhw-local-partners/narration-','docs/lesson-153-')) for p in paths)
+          print('Target-owned generated paths:',len(paths))
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Freeze lesson 1.5.3 reviewed media and evidence"
+          git push origin HEAD:refs/heads/codex/lesson-153-malou-proposal
