@@ -67,7 +67,7 @@ jobs:
             const digest=createHash('sha256').update(bytes).digest('hex');
             if(digest!==m.sha256)throw Error('Production byte mismatch: '+m.path);
             const type=response.headers.get('content-type')??'';
-            const expected={mp3:'audio/',mp4:'video/',png:'image/',svg:'image/',vtt:'text/'}[m.path.split('.').at(-1)];
+            const expected={mp3:'audio/',mp4:'video/',jpg:'image/',png:'image/',svg:'image/',vtt:'text/'}[m.path.split('.').at(-1)];
             if(!expected||!type.startsWith(expected))throw Error('Production media type mismatch: '+m.path+' '+type);
             console.log(m.path+' '+response.status+' '+type+' '+bytes.length+' '+digest);
           }
