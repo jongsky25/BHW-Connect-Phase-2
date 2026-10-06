@@ -173,6 +173,46 @@
       "caption_en": "New fictional courtyard scene. Draft awaiting owner review.",
       "provenance": "Original built-in imagegen artwork, 6 October2026, no reference inputs. New fictional Malou identity; exact prompt/hash and review limits recorded in docs/lesson-151-malou-series-brief.json. Model identifier absent (null). No real patients or official procedure depicted. Not owner-approved.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-relationships-story",
+      "alt_fil": "Kuwentong may salaysay: nakikinig si Malou kay Nena sa bakuran, ipinapaliwanag ang apat na ugnayan at pinaghihiwalay ang propesyonal at praktikal na suporta.",
+      "alt_en": "Narrated story: Malou listens to Nena in the courtyard, explains four relationships and separates professional and practical support.",
+      "caption_fil": "Anim na kathang-isip na story beat na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional story beats with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson1.5.1 using genuinely new built-in imagegen Malou courtyard artwork generated6 October2026 without reference inputs. This fictional identity remains draft, not owner-approved. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries and captions derive from actual synthesis timings. One original illustration is reframed between conversation, coordination and wide views, with animated role cards. No actual local procedure, owner approval or independent policy SME approval is claimed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-4ca9cef0ede3.mp4",
+          "content_hash": "4ca9cef0ede3418cd801891e8e7120d5374916c8ab5777e92c724bf7afd85e37",
+          "duration_s": 74,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-f21ddefe73a2.vtt",
+            "content_hash": "f21ddefe73a2bf2a541f9919cf26fa18c949f8296b06ca05e06846c3147465ac"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-c1ee816f8d22-poster.jpg",
+            "content_hash": "c1ee816f8d222bac4e75c9ef800d3b33911d4906104b85bdc301099ff1a3140a"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-relationships-gemini-en-66157d84985f.mp4",
+          "content_hash": "66157d84985fba6d9edce8bed4d136c168ef7c7e047297793eee7ee707228034",
+          "duration_s": 66,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-relationships-gemini-en-2f3c31fbd5ca.vtt",
+            "content_hash": "2f3c31fbd5ca6139d97dfd44e41f7cd29f9d0f5fd8675387e0b026ee4f819afb"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-relationships-gemini-en-749f5673300d-poster.jpg",
+            "content_hash": "749f5673300d34900b96b9f86cf633427c113ab93fd3dbbcd3e381ebdf02654a"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-c1ee816f8d22-poster.jpg",
+      "content_hash": "c1ee816f8d222bac4e75c9ef800d3b33911d4906104b85bdc301099ff1a3140a"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-relationships-story"
 }

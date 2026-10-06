@@ -1,0 +1,151 @@
+{
+  "generated_date": "2026-10-06T02:06:48.870Z",
+  "source_commit": "78e3fe66e1c64443bb32a78dec1186531195a778",
+  "owner_review": "pending",
+  "render_input_sha256": "c8f8ee014a80a4d2b2308ba964e8592ddd701343d9c87e7240c405cd44e89b6b",
+  "render_cached": true,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 72.96,
+      "beats": [
+        {
+          "zone": "courtyard",
+          "index": 0,
+          "text": "Sa kathang-isip na bakuran, may dalawang tanong si Nena. Nakikinig si Malou at nagtatanong kung ano ang nais niyang unahin.",
+          "start_ms": 0,
+          "end_ms": 8800
+        },
+        {
+          "zone": "resident",
+          "index": 1,
+          "text": "Inuulit ni Malou ang narinig at hinahayaang itama ni Nena ang kaniyang pagkaunawa. Mahalaga ang impormasyon at pagpili ng residente.",
+          "start_ms": 9100,
+          "end_ms": 18380
+        },
+        {
+          "zone": "map",
+          "index": 2,
+          "text": "Apat na ugnayan ang balangkas natin: komunidad, itinalagang health professional, barangay officials at kapwa BHW. May magkakaibang layunin at hangganan ang bawat isa.",
+          "start_ms": 18680,
+          "end_ms": 32320
+        },
+        {
+          "zone": "professional",
+          "index": 3,
+          "text": "Ang personal na tanong pangkalusugan ay nangangailangan ng awtorisadong propesyonal na gabay. Tiyakin ang lokal na contact; hindi kapalit ng pagtatasa ang posisyon o hula.",
+          "start_ms": 32620,
+          "end_ms": 44380
+        },
+        {
+          "zone": "support",
+          "index": 4,
+          "text": "Hiwalay na linawin ang lugar sa responsableng coordinator. Maaaring tumulong ang kapwa BHW sa karaniwang gawain. Walang garantiya ng kagamitan, transportasyon o resulta.",
+          "start_ms": 44680,
+          "end_ms": 58120
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Ipaliwanag ang apat na papel. Pumili ayon sa alalahanin, magbigay ng dahilan at itanong kung sino ang responsable. Igalang ang nais ng residente at magsanay muli.",
+          "start_ms": 58420,
+          "end_ms": 72900
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-4ca9cef0ede3.mp4",
+        "content_hash": "4ca9cef0ede3418cd801891e8e7120d5374916c8ab5777e92c724bf7afd85e37",
+        "duration_s": 74,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-f21ddefe73a2.vtt",
+          "content_hash": "f21ddefe73a2bf2a541f9919cf26fa18c949f8296b06ca05e06846c3147465ac"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-c1ee816f8d22-poster.jpg",
+          "content_hash": "c1ee816f8d222bac4e75c9ef800d3b33911d4906104b85bdc301099ff1a3140a"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-c1ee816f8d22-poster.jpg",
+        "content_hash": "c1ee816f8d222bac4e75c9ef800d3b33911d4906104b85bdc301099ff1a3140a"
+      },
+      "render_reused_exact_input_hash": true
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 65.176,
+      "beats": [
+        {
+          "zone": "courtyard",
+          "index": 0,
+          "text": "In the fictional courtyard, Nena has two questions. Malou listens and asks what she wants to clarify first.",
+          "start_ms": 0,
+          "end_ms": 8600
+        },
+        {
+          "zone": "resident",
+          "index": 1,
+          "text": "Malou repeats what she heard and invites Nena to correct her understanding. The resident’s information and choices matter.",
+          "start_ms": 8900,
+          "end_ms": 16900
+        },
+        {
+          "zone": "map",
+          "index": 2,
+          "text": "Our organizer has four relationships: community, the designated health professional, barangay officials and fellow BHWs. Each has a different purpose and limit.",
+          "start_ms": 17200,
+          "end_ms": 30240
+        },
+        {
+          "zone": "professional",
+          "index": 3,
+          "text": "The personal health question needs authorized professional guidance. Confirm the local contact; rank or a guess does not replace assessment.",
+          "start_ms": 30540,
+          "end_ms": 40340
+        },
+        {
+          "zone": "support",
+          "index": 4,
+          "text": "Separately clarify the venue with the responsible coordinator. A fellow BHW may help with routine tasks. Resources, transport and outcomes are not guaranteed.",
+          "start_ms": 40640,
+          "end_ms": 53400
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Explain the four roles. Choose by the concern, give a reason and ask who is responsible. Respect the resident’s preferences and practise again.",
+          "start_ms": 53700,
+          "end_ms": 65100
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-relationships-gemini-en-66157d84985f.mp4",
+        "content_hash": "66157d84985fba6d9edce8bed4d136c168ef7c7e047297793eee7ee707228034",
+        "duration_s": 66,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-relationships-gemini-en-2f3c31fbd5ca.vtt",
+          "content_hash": "2f3c31fbd5ca6139d97dfd44e41f7cd29f9d0f5fd8675387e0b026ee4f819afb"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-relationships-gemini-en-749f5673300d-poster.jpg",
+          "content_hash": "749f5673300d34900b96b9f86cf633427c113ab93fd3dbbcd3e381ebdf02654a"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-relationships-gemini-en-749f5673300d-poster.jpg",
+        "content_hash": "749f5673300d34900b96b9f86cf633427c113ab93fd3dbbcd3e381ebdf02654a"
+      },
+      "render_reused_exact_input_hash": true
+    }
+  ]
+}

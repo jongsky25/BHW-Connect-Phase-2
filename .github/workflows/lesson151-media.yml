@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/lesson151-media.yml'
       - 'scripts/lesson-151-*.mjs'
+      - 'scripts/tests/lesson-151.test.mjs'
+      - 'docs/lesson-151-audio*.json'
       - 'scripts/remotion-bhw-relationships-narrate.mjs'
       - 'content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/**'
       - 'remotion/src/bhw-relationships/**'
@@ -32,25 +34,6 @@ jobs:
         working-directory: remotion
       - run: npx remotion browser ensure
         working-directory: remotion
-      - name: Recover completed draft media from the prior scoped run
-        if: hashFiles('docs/lesson-151-media-generation.json') == ''
-        uses: actions/download-artifact@v4
-        with:
-          name: lesson151-draft-evidence
-          run-id: 37401264688
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path: .preview/lesson151-recovered
-      - name: Reuse completed target-only files
-        if: hashFiles('docs/lesson-151-media-generation.json') == ''
-        shell: bash
-        run: |
-          set -euo pipefail
-          for path in content/training/day1-basic-competencies/narration.json content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships public/training/audio/05-bhw-at-barangay/bhw-relationships public/training/bhw-1-5 remotion/public/bhw-relationships docs/lesson-151-media-generation.json docs/lesson-151-audio-review.json .preview/lesson151-raw .preview/lesson151-excerpts; do
-            if [ -e ".preview/lesson151-recovered/$path" ]; then
-              mkdir -p "$(dirname "$path")"
-              cp -a ".preview/lesson151-recovered/$path" "$(dirname "$path")/"
-            fi
-          done
       - name: Bounded read-only published-state snapshot
         env:
           KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
