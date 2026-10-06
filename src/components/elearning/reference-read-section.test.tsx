@@ -1,9 +1,10 @@
 import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { ReferenceReadSection } from "./reference-read-section";
 import type { ReferenceNarrationEntry } from "@/lib/elearning/reference-narration";
 
-afterEach(cleanup);
+beforeEach(() => { vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(() => {}); });
+afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 const heading = "Kapag mabagal";
 const body = 'Una, **huwag magalit**. Tanungin: "ano po ang status?"\n\nIkalawang talata.';
@@ -58,6 +59,13 @@ describe("ReferenceReadSection", () => {
     expect(screen.queryByRole("group")).not.toBeInTheDocument();
     expect(screen.getByText(/Una sa lahat/)).toBeInTheDocument();
     expect(screen.getByText("huwag magalit").tagName).toBe("STRONG");
+  });
+
+  it("pauses the mounted player when leaving the section", () => {
+    const { unmount, container } = render(<ReferenceReadSection heading={heading} body={body} takeaway={takeaway} narration={narration} en />);
+    Object.defineProperty(container.querySelector("audio"), "paused", { value: false });
+    unmount();
+    expect(HTMLMediaElement.prototype.pause).toHaveBeenCalledOnce();
   });
 
   it("renders plain text without narration", () => {

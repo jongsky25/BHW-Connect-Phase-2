@@ -1,9 +1,9 @@
 import { cleanup, render, screen } from "@testing-library/react";
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { LessonAssetFigure } from "./lesson-asset-figure";
 import type { LessonAsset } from "@/lib/elearning/types";
 
-afterEach(cleanup);
+afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 const image: LessonAsset = {
   id: "diagram",
@@ -65,6 +65,17 @@ describe("LessonAssetFigure", () => {
       },
     },
   };
+
+  it("pauses playing video on language change and on leaving the story", () => {
+    const pause = vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(() => {});
+    const { container, rerender, unmount } = render(<LessonAssetFigure asset={narrated} en />);
+    Object.defineProperty(container.querySelector("video"), "paused", { value: false });
+    rerender(<LessonAssetFigure asset={narrated} en={false} />);
+    expect(pause).toHaveBeenCalledTimes(1);
+    Object.defineProperty(container.querySelector("video"), "paused", { value: false });
+    unmount();
+    expect(pause).toHaveBeenCalledTimes(2);
+  });
 
   it.each([
     [false, "fil", "Filipino"],

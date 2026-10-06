@@ -1,73 +1,54 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na pangalanan ang apat na ugnayan sa araw-araw niyang gawain — ang komunidad, ang midwife o RHU, ang barangay officials, at ang kapwa BHW — at, kapag binigyan ng sitwasyon, masabi kung anong uri ng suporta ang kailangan at aling ugnayan ang unang lalapitan.
+Ilapat ang iisang layunin ng aralin, objective_index 0: ipaliwanag at gamitin ang apat na ugnayan sa kathang-isip na sitwasyon. Ipaliwanag ang layunin at hangganan ng bawat isa, pumili ng angkop na contact at dahilan, magtanong upang tiyakin ang papel at kilalanin ang nais ng residente. Pambungad na balangkas ito; hindi kapalit ng susunod na aralin tungkol sa stakeholders, teamwork, self-management o pagpili ng contact.
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** mga 30 minuto sa harapang sesyon (ang bahaging "Pambungad: sitwasyon ni Aling Nena + apat na ugnayan" sa plano sa gabay ng subchapter). Mga 5 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** manila paper at marker; ang slides ng aralin; ang hub-and-spoke na visual ng apat na ugnayan ng module (`01-apat-na-ugnayan.svg`), naka-print o naka-project; tatlong situation card para sa gawaing pagsasanay (isulat nang maaga, tingnan sa ibaba).
+Ginawang bahagi ng harapang sesyon: 30 minuto. Pambungad 4; apat na papel 6; halimbawa ng pakikinig 5; pagpapakita ng pagpili ng contact 6; magkapares na pagsasanay 5; application check, puna at pagninilay 4. Kabuuan 30. Kasama sa 5 minuto ng pagsasanay ang opsyonal na card exercise; hindi ito dagdag na sapilitang oras. Ginawang hati ng buong module: 30 + 30 + 30 + 30 + 30 + 30 = 180 minuto, kasama ang opsyonal na gawain. Itinama sa 30 ang dalawang dating 40-minutong bahagi sa shared guide; hindi binago ang nilalaman o gabay ng sibling lessons. Tatlong tig-isang-oras na outcome ang nasa TESDA para sa pinagsamang competency, hindi sapilitang 30 minuto para sa 1.5.1. Ginawang pagtataya ng sariling pag-aaral: 10–13 minuto. Aktuwal na salaysay ng anim na screen: 350.85 segundo sa English at 383.98 segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
+
+Kagamitan: anim na bilingual screen, courtyard art ni Malou, apat na malalaking blangkong card na may label, papel at panulat; opsyonal na speaker o headphones. Kathang-isip na impormasyon lamang.
 
 ## [prepare] Paghahanda
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Alamin kung sino ang midwife o RHU contact ng inyong barangay, at kung sino sa barangay officials ang madalas kausap ng mga BHW, para may totoong pangalan kang maisagot sa *"Sino iyon dito sa atin?"*
-- Ang araling ito ay tungkol sa **pagpili kung sino ang lalapitan**, hindi sa mismong ubo. Huwag ituro kung ano ang ibig sabihin ng matagal na ubo o ano ang gagawin dito; ang sinasabi lang ng aralin ay klinikal na alalahanin ito para sa midwife o RHU.
+Basahin ang anim na screen, lahat ng paliwanag sa pagpipilian at source audit sa dalawang wika. Tiyakin sa health team ang lokal na propesyonal, administratibo at peer roles at madaling maabot na paraan ng pakikipag-ugnayan; markahan ang hindi pa alam. Kathang-isip ang larawan at hindi patunay ng lokal na proseso. Ihanda ang cards at katumbas na pasulat na gawain. Huwag humingi ng totoong kuwento ng sakit, patient record, numero ng telepono o personal na dokumento.
 
 ## [opening] Pambungad
 
-Bago magpakita ng anumang slide, basahin nang malakas ang sitwasyon ni Aling Nena (Read "Ang tanong sa bahay ni Aling Nena"). Saka itanong: *"Kung kayo si BHW Marites, sino muna ang uunahin ninyong isipin?"* Isulat ang lahat ng sagot sa manila paper nang hindi pa nagkokomento. Iwanang nakadikit ang listahan sa buong aralin.
+Sa 4 minuto, ipakilala sina Malou at Nena sa kathang-isip na bakuran. May tanong si Nena sa lugar at personal na kalusugan. Itanong ang alam ni Malou at ang dapat munang linawin. Tanggapin ang ibang pagkakasunod kung nagtatanong ang learner kay Nena sa halip na magpasya para sa kaniya. Huwag itong gawing diagnosis, pagtakda ng tagal ng sintomas o medikal na triage.
 
 ## [steps] Mga hakbang
 
-1. **Eksena (Read "Ang tanong sa bahay ni Aling Nena", unang slide).** Ipakita na nakinig muna si Marites at napagtanto niyang hindi lang ito tanong tungkol sa ubo. Itanong: *"Bakit huminto muna si Marites para isipin kung sino ang kakausapin, sa halip na sumagot agad?"*
-2. **Ang apat na ugnayan (Read "Apat na ugnayan ng isang BHW", ikalawang slide).** Ipakita ang hub-and-spoke na visual at ituro ang bawat spoke habang binabanggit: komunidad, midwife o RHU, barangay officials, kapwa BHW. Sa bawat isa, itanong: *"Saan ka tinutulungan ng ugnayang ito?"* Itugma ang mga sagot sa aralin: unang hakbang ng pangangalaga, teknikal na suporta at referral, suporta at pasilidad (sa local health board galing ang akreditasyon, hindi sa barangay), at pagbabahagi ng karanasan at tamang kaalaman.
-3. **Balikan ang listahan sa pambungad.** Ipangkat ang mga pangalang nabanggit sa apat na ugnayan. Ipakita na malamang ay higit sa isa ang nabanggit ng grupo — iyan mismo ang punto ng aralin: ang isang tanong sa bahay ay kadalasang dumadaan sa higit sa isang ugnayan.
-4. **Sino ang lalapitan? (Read "Sino ang lalapitan?", ikatlong slide).** Basahin nang malakas ang unang tanong ng aralin: *"Anong uri ng suporta ang kailangan dito — klinikal ba, administratibo, o karanasan ng kapwa BHW?"* Ipasagot ito sa grupo para sa anak ni Aling Nena.
-5. **Self-check.** Ibigay ang check (sino ang unang lalapitan sa klinikal na alalahanin) at hayaang mag-usap ang grupo bago ibigay ang sagot.
+1. Pambungad: ihiwalay ang dalawang tanong at itanong ang nais ni Nena (4 minuto).
+2. Ipaliwanag ang apat na card: isang layunin at hangganan sa bawat ugnayan (6).
+3. Ipakita ang pag-uulit ng sinabi ni Nena, pagtatanong kung tama ang buod at paghihiwalay ng alam sa hula (5).
+4. Ihambing ang gabay pangkalusugan at koordinasyon sa lugar. Ipakita ang “Saklaw po ba ito ng inyong papel? Kung hindi, sino po ang responsable?” Tiyakin ang lokal na kaayusan; huwag gumawa ng iisang chain of command (6).
+5. Magkapares na apat na card; magpalitan bilang learner at observer. Katumbas ang pasulat na pagsasanay (5).
+6. Application check, lahat ng tatlong paliwanag, puna at tanong na maglilinaw ng papel (4). Opsyonal ang kuwento at hindi kailangan sa online completion.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Inaasahang sagot
 
-- **"Ang barangay captain."** Siya ang madalas kausap ng maraming BHW, kaya tapat na sagot ito. Huwag itong kontrahin nang diretso. Itanong: *"Klinikal ba o administratibo ang tatlong-linggong ubo? Sino sa apat na ugnayan ang humahawak ng klinikal na tanong?"*
-- **"Ang midwife — sa lahat ng bagay."** Tanggapin para sa kasong ito, saka itanong: *"Paano kung kailangan ni Aling Nena ng sasakyan papunta sa pasilidad, o kailangan mo ng payo mula sa nakagawa na nito?"* Ipakita na may sariling layunin ang ibang ugnayan.
-- **Nagbibigay na sila ng payo tungkol sa ubo.** Kilalanin ang malasakit, saka ibalik: *"Iyan mismo ang tanong na sinasagot ng midwife o RHU. Ang trabaho natin ngayon ay malaman kung kanino ito dadalhin."*
+Komunidad: ibinabahagi ni Nena ang alalahanin, impormasyon at gustong paraan. Propesyonal: awtorisadong lokal na health professional ang sasagot sa personal na tanong pangkalusugan; hindi ito tinatasa ni Malou sa pamamagitan ng hula. Opisyal: maaaring linawin ng responsableng administratibong contact ang lugar o hiling na praktikal na suporta, ayon sa lokal na kaayusan at magagamit na kagamitan. Kapwa BHW: karanasan sa karaniwang gawain at napagkasunduang pagtutulungan, hindi klinikal na awtoridad. Alam: dalawang tanong. Hindi pa alam: tiyak na lugar, propesyonal na contact at gustong paraan ni Nena. Tanggapin ang katumbas na paliwanag na may parehong hangganan.
 
 ## [misconception] Karaniwang maling akala
 
-**"Dalhin ang problema sa may pinakamataas na posisyon."** Parang paggalang ang lumapit sa pinakanakatataas, pero hindi ranggo ang nagsasabi kung sino ang makatutulong. Itama ito nang hindi napapahiya ang sinuman: ipatingin sa grupo ang tatlong-linyang decision slide at ipasabi kung saang linya pumapasok ang tatlong-linggong ubo. Ang uri ng suportang kailangan ang nagtatakda kung sino ang lalapitan, hindi ang titulo.
+“Ang pinakamataas na posisyon ang makapagpapasya sa lahat.” Dapat tugma ang papel at awtoridad sa alalahanin; hindi sapat ang posisyon para sa klinikal na awtoridad. “Kapalit ng pagtatasa ang karanasan ng kapwa BHW.” Iba ang layunin ng peer support. “Tagatanggap lamang ng utos ang residente.” Maaaring maglinaw, magtama at pumili si Nena. Itama ang paliwanag nang hindi hinuhusgahan ang personalidad o punto ng pagsasalita.
 
 ## [practice] Gawaing pagsasanay
 
-Maghanda ng tatlong situation card gamit lamang ang saklaw ng araling ito: (1) tatlong linggo nang inuubo ang anak ni Aling Nena; (2) kailangan ng barangay health station ng suporta para sa pasilidad nito; (3) gustong matutunan ng isang BHW kung paano ginagawa ng mas matagal nang kasamahan ang pagbisita sa bahay. Magkapares, bubunot ang isang BHW ng card, ikukuwento ang sitwasyon sa sariling salita, saka sasabihin: ang pangunahing punto (anong uri ng suporta ang kailangan), ang unang hakbang (sino ang unang lalapitan), at ano ang titiyakin niya sa midwife o RHU. Makikinig ang kapares, saka magpapalit sa susunod na card. Maglibot at pakinggan ang bawat pares.
+Mga kathang-isip na card: A, gustong tiyakin ni Nena ang lugar; B, gusto niyang itanong sa propesyonal kung angkop ang aktibidad; C, kailangan ni Malou ng tulong sa pag-aayos ng napagkasunduang karaniwang gawain; D, itinatama ng residente ang buod ni Malou at mas nais ang pasulat na impormasyon. Magkapares, ipaliwanag ang angkop na ugnayan, hangganan, dahilan at isang tanong na magtityak ng papel sa bawat card. Itala ng observer ang aktuwal na sinabi, magbigay ng isang tiyak na mungkahi at magpaulit. Hindi kailangang gamitin ang apat na ugnayan sa bawat totoong gawain. Katumbas ang pasulat na pagtutugma ng cards na may dahilan; walang pribadong impormasyon.
 
 ## [answer-key] Susi sa self-check
 
-Iisang tanong ang section check sa Read "Sino ang lalapitan?" at ang check sa ikatlong slide; minsan lang itong tinalakay dito.
-
-- **"Sino ang unang lalapitan sa klinikal na alalahanin?"** → **Ang midwife o ang itinalagang RHU health professional.** Ang midwife o RHU ang teknikal na suporta ng BHW sa referral at klinikal na tanong.
-  - Mali ang *"Sinumang may pinakamataas na posisyon kahit walang klinikal na tungkulin"* dahil hindi ranggo ang nagpapasya kung sino ang tamang lalapitan sa klinikal na tanong. Sa aralin, kung sa barangay captain pupunta, masasayang ang oras niya sa usaping hindi niya saklaw at maaantala ang tamang pag-refer.
+Pareho ang tatlong pagpipilian at buong puna sa huling Read/Slide check. Una: angkop, nakikinig kay Nena at tinitiyak ang magkahiwalay na papel para sa kalusugan at lugar. Ikalawa: hindi angkop, hindi nagbibigay ng klinikal na awtoridad ang pinakamataas na posisyon. Ikatlo: hindi angkop, hindi kapalit ng awtorisadong pagtatasa ang karanasan ng kapwa BHW. Ipapaliwanag din ang komunidad at kapwa BHW, saka magpabigay ng tanong na maglilinaw ng papel. Hindi sapat na patunay ng kasanayan ang tamang online choice.
 
 ## [observe] Ano ang oobserbahan
 
-Gamitin ang observation indicator ng aralin (naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor) habang ginagawa ang gawaing pagsasanay:
+Gamitin ang iisang objective_index 0 indicator. Kaya na: walang untag na naipapaliwanag ang apat na layunin at hangganan, pumipili ayon sa alalahanin, nagbibigay ng dahilan at tanong na magtityak, at kinikilala ang nais ni Nena. Kailangan practice: angkop ang direksiyon ngunit kailangan ng gabay sa isang papel, hangganan o tanong. Hindi pa: hindi pa angkop matapos ang suporta, kabilang ang pagpapalit ng posisyon o karanasan sa propesyonal na pagtatasa. Magmodelo at umulit. Paliwanag at paglilinaw ang obserbahan, hindi punto, kumpiyansa, hitsura, personalidad o tagumpay ng hiling na serbisyo.
 
-- **Kaya na:** tama ang pagkukuwento ng BHW sa card, nasasabi ang uri ng suportang kailangan, napipili ang tamang unang ugnayan, at nasasabi kung ano ang titiyakin sa midwife o RHU — lahat nang walang untag.
-- **Kailangan pa ng practice:** tama ang direksiyon ng BHW (halimbawa, midwife ang pinili para sa card ng ubo) pero kailangan pa ng tanong mo bago masabi ang uri ng suporta o ang titiyakin.
-- **Hindi pa:** hindi angkop sa card ang paliwanag o unang hakbang — halimbawa, iisang tao ang pinupuntahan sa lahat ng card, o may ipinapangako sa pamilya nang hindi muna tinitiyak.
+## [support] Kung kailangan ng suporta
 
-Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Magbigay ng cue card: alalahanin / papel / dahilan / hangganan / tanong. Basahin nang malakas, gumamit ng malalaking letra, hayaang magdikta o sumulat at itanong ang nais na wika. Maaaring magpakita muna ng isang card ang supportive partner. Hayaang mag-obserba muna, magsanay na may gabay, saka umulit na mas kaunti ang tulong. Muling obserbahan gamit ang katumbas na kathang-isip na halimbawa sa lugar o karaniwang gawain; walang personal na kuwento ng kalusugan na kailangan.
 
-## [support] Kung kailangan ng dagdag na suporta
+## [sources-review] Sanggunian at tala sa pagsusuri
 
-- Ibigay sa kanila ang tanong ng aralin bilang gabay: *"Klinikal ba, administratibo, o karanasan ng kapwa BHW?"* Ipasagot muna iyon, saka pumili ng lalapitan.
-- Hayaan silang ilagay muna ang tatlong card sa hub-and-spoke na visual bago magpaliwanag nang malakas.
-- Obserbahan muli gamit ang parehong tatlong card sa bahaging "Pagsasanay at buod" ng module, o sa susunod na sesyon — hindi sa bagong sitwasyon.
-
-## [sources-review] Sanggunian at tala sa pagrepaso
-
-- BHW Reference Manual PDF 15 (source ng aralin, may markang "inherited page reference; final audit pending"). Ayon sa README ng source material, ang "Ang BHW at ang Kanyang Barangay" ay nasa Reference Manual pp. 7–8 (PDF 15–16), Facilitator Guide p. 19 (PDF 26), at Day 1 presentation slides 29–44.
-- Ang "apat na ugnayan" at ang sitwasyon ni Aling Nena ay sariling paraan ng pagtuturo ng aralin; ang source ay naglilista ng mga stakeholder at nagsasabing ipinapaalam sa midwife, bilang technical supervisor, ang mga alalahaning pangkalusugan.
-- Oras: pinananatili ng module ang 3 oras ng TESDA para sa *Work in a Team Environment* (sinasabi ng Facilitator Guide PDF 26–27 na "at least 3 hours", kasama ang paksang "Pagganap ng Tungkulin bilang Miyembro ng Team"). Ang 30 minuto sa itaas ay bahagi ng araling ito sa planong iyon. Huwag idagdag muli ang buong oras sa bawat maikling aralin; ang hating ito ay para sa self-study, hindi bagong training-hour allocation.
-- Pangkalahatan ang observation indicator ng araling ito; mas tiyak ang indicator para sa layuning ito sa mga indicator ng kakayahan ng subchapter (pagpili ng tamang ugnayan batay sa uri ng suporta). Maaaring pagtugmain ito ng mga reviewer.
-- Draft na gabay sa talakayan ang `practice-map` na visual ng aralin, hindi pa aprubado ng may-ari.
-- Repasuhin ang kasalukuyang legal/policy wording, bilingual parity, at observation indicator bago ilathala.
-- Draft para sa pagrepaso (Draft for review)
+Na-audit noong 6 Oktubre2026: orihinal na DOH Reference Manual PDF15–17 / nakalimbag7–9, Facilitator Manual PDF26–27 / nakalimbag19–20, Day1 deck PDF27–28 (walang nakalimbag na slide number), at opisyal na TESDA BHS NCII Revision01, promulgated11 Enero2019, unit400311211, PDF11–12 / nakalimbag7–8 at PDF84–85 / nakalimbag80–81. Sinusuportahan ng sources ang papel, komunikasyon at team outcomes. Ang mismong apat na ugnayan ay galing sa ginawang balangkas sa repository commit d424bde, hindi direktang opisyal na taxonomy. Sariling halimbawa sina Malou at Nena, ang tanong, pagsasanay at hati ng oras. Salungat ang approved flag ng lumang practice-map sa draft caption at provenance; bagong draft art ang gamit dito, habang pinananatili ang lumang public bytes. Hindi pa natiyak ang kasalukuyang target LGU process, hiwalay na policy SME review, human listening o owner approval. Natiyak ang bagong download ng opisyal na PDF; hindi patunay na walang mas bagong revision.

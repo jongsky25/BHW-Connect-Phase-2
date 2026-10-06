@@ -66,7 +66,7 @@ describe('lesson 1.3.5 one workable proposal',()=>{
   for(const [key,hash] of Object.entries(baseline.sibling_mapping_hashes)){
    // The 1.4.1 draft adds new narration while preserving the exact old mapping
    // for the still-published revision. Every other sibling remains current.
-   if(key==='bhw-legal-role'||key==='bhw-benefits'||key==='bhw-eligibility'||key==='bhw-accreditation'||key==='bhw-follow-up'){
+   if(key==='bhw-legal-role'||key==='bhw-benefits'||key==='bhw-eligibility'||key==='bhw-accreditation'||key==='bhw-follow-up'||key==='bhw-relationships'){
     const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);
     expect(retained).toBeDefined();
     for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);

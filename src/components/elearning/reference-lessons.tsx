@@ -297,6 +297,13 @@ export function ReferenceLessons(props: Props) {
     : "Video";
   const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered;
   const revealSummary = !item?.check || answer !== undefined;
+  // Offer full, synchronized speech only when a slide's narration exactly
+  // matches a Read section. The normal selector still validates all timings.
+  const slideReadSection = item && "display_fil" in item
+    ? lesson?.revision.read_sections.find(section =>
+      section.heading_fil === item.heading_fil && section.heading_en === item.heading_en &&
+      section.body_fil === item.narration_fil && section.body_en === item.narration_en)
+    : undefined;
   const promptShownInBody = item && "body_fil" in item && item.check
     ? repeatsCheckPrompt(en ? item.body_en : item.body_fil, en ? item.check.prompt_en : item.check.prompt_fil)
     : false;
@@ -562,6 +569,24 @@ export function ReferenceLessons(props: Props) {
                 ))}
             </div>}
             {revealSummary && !storyLayout && figures}
+            {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
+              <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
+                onToggle={event => {
+                  if (!event.currentTarget.open) event.currentTarget.querySelector("audio")?.pause();
+                }}>
+                <summary className="min-h-[44px] cursor-pointer font-semibold">
+                  {ui("Buong salaysay at audio", "Full narration and audio")}
+                </summary>
+                <ReferenceReadSection
+                  key={lesson.id + item.id + props.locale}
+                  heading={en ? slideReadSection.heading_en : slideReadSection.heading_fil}
+                  body={en ? slideReadSection.body_en : slideReadSection.body_fil}
+                  takeaway={(en ? slideReadSection.takeaway_en : slideReadSection.takeaway_fil) ?? ""}
+                  narration={lessonNarration[slideReadSection.id]}
+                  en={en} text={ui}
+                />
+              </details>
+            )}
           </>
         ) : (
           <ReferenceReadSection
@@ -716,7 +741,10 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {lesson.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up") ? ui(
+              {lesson.lesson_key === "bhw-relationships" && lesson.revision.assets.some(asset => asset.id === "malou-courtyard") ? ui(
+                "Tinatayang 10–13 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang 30-minutong guided practice.",
+                "Estimated 10–13 minutes for independent study; optional story and audio replay are additional. The 30-minute guided practice is separate.",
+              ) : lesson.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up") ? ui(
                 "Tinatayang 10–12 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang guided practice.",
                 "Estimated 10–12 minutes for independent study; optional stories and audio replay are additional. Guided practice is separate.",
               ) : lesson.lesson_key === "bhw-accreditation" && lesson.revision.assets.some(asset => asset.id === "demi-accreditation-question") ? ui(

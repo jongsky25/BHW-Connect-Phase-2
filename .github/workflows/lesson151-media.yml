@@ -1,0 +1,83 @@
+name: Lesson 1.5.1 draft evidence and media
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson151-media.yml'
+      - 'scripts/lesson-151-*.mjs'
+      - 'scripts/tests/lesson-151.test.mjs'
+      - 'docs/lesson-151-audio*.json'
+      - 'scripts/remotion-bhw-relationships-narrate.mjs'
+      - 'content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/**'
+      - 'remotion/src/bhw-relationships/**'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson151-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-151-malou-proposal' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Bounded read-only published-state snapshot
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-151-published-snapshot.mjs
+      - name: Generate actual target-only draft media
+        if: github.event_name != 'workflow_dispatch'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON151_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-151-record-fetch.mjs'
+        run: node scripts/lesson-151-media-build.mjs
+      - name: Full audio model review
+        if: always() && github.event_name != 'workflow_dispatch'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON151_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-151-record-fetch.mjs'
+        run: node scripts/lesson-151-audio-review.mjs
+      - name: Decode and focused-review shipped media
+        if: always() && github.event_name != 'workflow_dispatch'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON151_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-151-record-fetch.mjs'
+        run: node scripts/lesson-151-audio-focus.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson151-draft-evidence
+          path: |
+            lesson-151-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/
+            public/training/audio/05-bhw-at-barangay/bhw-relationships/
+            public/training/bhw-1-5/
+            remotion/public/bhw-relationships/
+            docs/lesson-151-media-generation.json
+            docs/lesson-151-audio-review.json
+            docs/lesson-151-audio-focus.json
+            .preview/lesson151-raw/
+            .preview/lesson151-excerpts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

@@ -52,3 +52,5 @@ Found an issue with Remotion? [File an issue here](https://github.com/remotion-d
 ## License
 
 Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+
+Lesson 1.5.1 final draft evidence includes revised Read tracks, full and focused model observations, and exact-head regression renders. Voice consistency and pronunciation still require human listening; no model review substitutes for owner approval.

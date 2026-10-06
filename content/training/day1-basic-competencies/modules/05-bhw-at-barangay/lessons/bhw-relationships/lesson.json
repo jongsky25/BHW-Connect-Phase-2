@@ -19,10 +19,10 @@
         "m5.four-relationships"
       ],
       "asset_ids": [
-        "practice-map"
+        "malou-courtyard"
       ],
-      "takeaway_fil": "Ang isang simpleng katanungan sa bahay-bahay ay kadalasang dumadaan sa mahigit isang ugnayan bago matapos.",
-      "takeaway_en": "A simple household question usually passes through more than one relationship before it's resolved.",
+      "takeaway_fil": "Makinig sa residente at ihiwalay ang mga tanong bago pumili ng suporta.",
+      "takeaway_en": "Listen to the resident and separate the questions before choosing support.",
       "check": null
     },
     {
@@ -31,8 +31,18 @@
         "m5.four-relationships"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Apat na ugnayan ang dumadaan sa BHW — hindi ito nagtatrabaho nang mag-isa.",
-      "takeaway_en": "Four relationships run through the BHW — the role never works alone.",
+      "takeaway_fil": "May layunin at hangganan ang bawat ugnayan; tiyakin ang lokal na papel.",
+      "takeaway_en": "Each relationship has a purpose and a limit; verify the local roles.",
+      "check": null
+    },
+    {
+      "id": "community-listening",
+      "concept_ids": [
+        "m5.four-relationships"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ulitin, linawin at hayaang itama ng residente ang iyong pagkaunawa.",
+      "takeaway_en": "Repeat, clarify and invite the resident to correct your understanding.",
       "check": null
     },
     {
@@ -41,24 +51,50 @@
         "m5.four-relationships"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Bago kumilos, tukuyin muna kung anong uri ng suporta ang kailangan — doon mo malalaman kung sino talaga ang lalapitan.",
-      "takeaway_en": "Before acting, first work out what kind of support is needed — that is how you know who to actually approach.",
+      "takeaway_fil": "Pumili ayon sa alalahanin at natiyak na papel, hindi sa posisyon lamang.",
+      "takeaway_en": "Choose by the concern and confirmed role, rather than rank alone.",
+      "check": null
+    },
+    {
+      "id": "shared-support",
+      "concept_ids": [
+        "m5.four-relationships"
+      ],
+      "asset_ids": [
+        "malou-courtyard"
+      ],
+      "takeaway_fil": "Pag-ugnayin ang magkakaibang papel nang walang pangako o kapalit na pagtatasa.",
+      "takeaway_en": "Coordinate distinct roles without promising resources or replacing assessment.",
+      "check": null
+    },
+    {
+      "id": "relationships-application-check",
+      "concept_ids": [
+        "m5.four-relationships"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ipaliwanag ang pagpili, tiyakin ang papel at igalang ang nais ng residente.",
+      "takeaway_en": "Explain the choice, verify the role and respect the resident’s preferences.",
       "check": {
-        "prompt_fil": "Sino ang unang lalapitan sa klinikal na alalahanin?",
-        "prompt_en": "Who should you approach first for a clinical concern?",
+        "prompt_fil": "May tanong si Nena tungkol sa lugar ng aktibidad at kung angkop ito sa kaniyang kalusugan. Ano ang angkop na gawin ni Malou?",
+        "prompt_en": "Nena asks about the activity venue and whether it suits her health needs. What should Malou do?",
         "options": [
           {
-            "fil": "Ang midwife o ang itinalagang RHU health professional.",
-            "en": "The midwife or designated RHU health professional."
+            "fil": "Linawin ang nais ni Nena; tiyakin ang propesyonal na contact para sa kalusugan at ang responsableng coordinator para sa lugar.",
+            "en": "Clarify Nena’s preferences; confirm the professional contact for health and the responsible coordinator for the venue."
           },
           {
-            "fil": "Sinumang may pinakamataas na posisyon kahit walang klinikal na tungkulin.",
-            "en": "Whoever has the highest rank regardless of clinical role."
+            "fil": "Hayaan ang pinakamataas na opisyal na sumagot sa lahat, kabilang ang personal na kalusugan.",
+            "en": "Let the highest-ranking official answer everything, including the personal health question."
+          },
+          {
+            "fil": "Gamitin ang karanasan ng kapwa BHW upang magpasya kung angkop ang aktibidad sa kalusugan ni Nena.",
+            "en": "Use a fellow BHW’s experience to decide whether the activity suits Nena’s health needs."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ang midwife o ang itinalagang RHU health professional. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "The midwife or designated RHU health professional. Explain why using the lesson situation."
+        "feedback_fil": "Una: angkop. Nakikinig kay Nena at pinaghihiwalay ang propesyonal na gabay at koordinasyon sa lugar; tinitiyak pa rin ang lokal na papel. Ikalawa: hindi angkop. Hindi ginagawang klinikal na awtoridad ng mataas na posisyon ang isang opisyal. Ikatlo: hindi angkop. Makatutulong ang kapwa BHW sa karaniwang gawain, ngunit hindi kapalit ng awtorisadong pagtatasa ang kaniyang karanasan. Ipaliwanag ang apat na ugnayan at itanong kung sino ang responsable sa lokalidad.",
+        "feedback_en": "First: appropriate. It listens to Nena and separates professional guidance from venue coordination, while still confirming local roles. Second: inappropriate. High rank does not turn an official into clinical authority. Third: inappropriate. A fellow BHW can help with routine work, but experience does not replace authorized assessment. Explain all four relationships and ask who is responsible locally."
       }
     }
   ],
@@ -68,39 +104,115 @@
       "read_ids": [
         "section-1",
         "section-2",
-        "section-3"
+        "community-listening",
+        "section-3",
+        "shared-support",
+        "relationships-application-check"
       ],
       "slide_ids": [
         "slide-section-1",
         "slide-section-2",
-        "slide-section-3"
+        "slide-community-listening",
+        "slide-section-3",
+        "slide-shared-support",
+        "slide-relationships-application-check"
       ],
       "source_ids": [
-        "m5.four-relationships-source"
+        "m5.four-relationships-source",
+        "m5.team-training-source",
+        "m5.tesda-team-source",
+        "m5.authored-organizer-source"
       ]
     }
   ],
   "sources": [
     {
       "id": "m5.four-relationships-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "DOH BHW Reference Manual (2022), original PDF15–17 / printed7–9: roles, local contacts and teamwork",
       "pdf_pages": [
-        15
+        15,
+        16,
+        17
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view"
+    },
+    {
+      "id": "m5.team-training-source",
+      "title": "DOH Facilitator Manual (2022), original PDF26–27 / printed19–20: combined team competency, local roles and communication",
+      "pdf_pages": [
+        26,
+        27
+      ],
+      "url": "https://drive.google.com/file/d/1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W/view"
+    },
+    {
+      "id": "m5.tesda-team-source",
+      "title": "TESDA BHS NCII Revision01, promulgated11 January2019, unit400311211: roles and communication; PDF11–12 / printed7–8 and PDF84–85 / printed80–81",
+      "pdf_pages": [
+        11,
+        12,
+        84,
+        85
+      ],
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
+    },
+    {
+      "id": "m5.authored-organizer-source",
+      "title": "Authored four-relationship organizer inherited from repository commit d424bde; Malou examples and questions are fictional applications, not verbatim official taxonomy",
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/commit/d424bde"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "id": "malou-courtyard",
+      "path": "/training/bhw-1-5/malou-courtyard-f6b2d754af39.png",
+      "content_hash": "f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545",
+      "alt_fil": "Si Malou, nakasalamin at may blusang ochre at shoulder bag, ay nakikinig sa residenteng nagsasalita sa bakurang may halaman; may kapwa worker na may blangkong notebook.",
+      "alt_en": "Malou, wearing glasses, an ochre blouse and shoulder bag, listens to a speaking resident in a planted courtyard; a fellow worker holds a blank notebook.",
+      "caption_fil": "Bagong kathang-isip na courtyard scene.",
+      "caption_en": "New fictional courtyard scene.",
+      "provenance": "Original built-in imagegen artwork, 6 October2026, no reference inputs. New fictional Malou identity; exact prompt/hash and review limits recorded in docs/lesson-151-malou-series-brief.json. Model identifier absent (null). No real patients or official procedure depicted. Owner-approved package; authorization recorded in docs/lesson-151-owner-approval.json.",
       "review_status": "approved"
+    },
+    {
+      "id": "bhw-relationships-story",
+      "alt_fil": "Kuwentong may salaysay: nakikinig si Malou kay Nena sa bakuran, ipinapaliwanag ang apat na ugnayan at pinaghihiwalay ang propesyonal at praktikal na suporta.",
+      "alt_en": "Narrated story: Malou listens to Nena in the courtyard, explains four relationships and separates professional and practical support.",
+      "caption_fil": "Anim na kathang-isip na story beat na may Gemini narration at captions.",
+      "caption_en": "Six fictional story beats with Gemini narration and captions.",
+      "provenance": "Original Remotion animation for lesson1.5.1 using genuinely new built-in imagegen Malou courtyard artwork generated6 October2026 without reference inputs. This fictional identity is owner-approved; authorization recorded in docs/lesson-151-owner-approval.json. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries and captions derive from actual synthesis timings. One original illustration is reframed between conversation, coordination and wide views, with animated role cards. No actual local procedure, human listening or independent policy SME approval is claimed.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-4ca9cef0ede3.mp4",
+          "content_hash": "4ca9cef0ede3418cd801891e8e7120d5374916c8ab5777e92c724bf7afd85e37",
+          "duration_s": 74,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-f21ddefe73a2.vtt",
+            "content_hash": "f21ddefe73a2bf2a541f9919cf26fa18c949f8296b06ca05e06846c3147465ac"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-c1ee816f8d22-poster.jpg",
+            "content_hash": "c1ee816f8d222bac4e75c9ef800d3b33911d4906104b85bdc301099ff1a3140a"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-relationships-gemini-en-66157d84985f.mp4",
+          "content_hash": "66157d84985fba6d9edce8bed4d136c168ef7c7e047297793eee7ee707228034",
+          "duration_s": 66,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-relationships-gemini-en-2f3c31fbd5ca.vtt",
+            "content_hash": "2f3c31fbd5ca6139d97dfd44e41f7cd29f9d0f5fd8675387e0b026ee4f819afb"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-relationships-gemini-en-749f5673300d-poster.jpg",
+            "content_hash": "749f5673300d34900b96b9f86cf633427c113ab93fd3dbbcd3e381ebdf02654a"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-c1ee816f8d22-poster.jpg",
+      "content_hash": "c1ee816f8d222bac4e75c9ef800d3b33911d4906104b85bdc301099ff1a3140a"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-relationships-story"
 }

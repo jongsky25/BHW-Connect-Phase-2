@@ -1,0 +1,95 @@
+{
+  "recorded_at_utc": "2026-10-06T04:04:33.774873+00:00",
+  "authorization": "approved. merge and deploy to live",
+  "reviewed_head": "6bba868832ad48d2eb86f41739cd6da12c4d9f26",
+  "reviewed_package_hashes": {
+    "lesson-1.5.1-malou-review.html": "caf1248c0ff5709f5e539ae71d9ed2ee75f8b562c3f4ebd39c1362eb70eab966",
+    "lesson-1.5.1-malou-review.zip": "6fa56e2fdd260182b897e772e0becf6521c977dab0cf5fea4cfc1184e408f465"
+  },
+  "pr": "https://github.com/jongsky25/BHW-Connect-Phase-2/pull/258",
+  "scope": "Only lesson 1.5.1 / bhw-relationships and its reviewed media; merge, production deployment and scoped lesson publication.",
+  "approved_asset_ids": [
+    "malou-courtyard",
+    "bhw-relationships-story"
+  ],
+  "approved_media": [
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/community-listening.en.53770bf83fd6.mp3",
+      "sha256": "fa593f89129150be66ad4a65d4f600c9ef5f0678ba9a8fdcea04c772b3fd42a5"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/community-listening.fil.cb01c2554014.mp3",
+      "sha256": "31623ba536262837b5be6a16755924f7ad87c5678d3ee0843f5f4015604cc62e"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/relationships-application-check.en.e4c0d280b174.mp3",
+      "sha256": "2d473649b4f4117c20e57cf31cf910cced08ceae0f13d67b20f504a6061149eb"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/relationships-application-check.fil.cc2afe32192b.mp3",
+      "sha256": "d2e91cd21f82bb4efd688fce559604d1b5185ebba7b951600ffd9b1c3668fa48"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-1.en.422ed4b48951.mp3",
+      "sha256": "4656a5c8fd162da5875b63d8da0f722a14ccb70431c51cc9e63f06acbe640075"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-1.fil.d655fff59fab.mp3",
+      "sha256": "01ff80eb6071215c0eeaac5d7d680f8c68af844ca661859e1d7ec9ae5bebef45"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-2.en.56ee444fbab3.mp3",
+      "sha256": "10060417c252aa0be30144cf868cf10f025df570aad5253e28f88e1e35ce2a33"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-2.fil.1e2a31cc2ce6.mp3",
+      "sha256": "c49fbc25deebe148081cc65396e1adbb1f0300e9d044d8e00e632d83a3a2d6e4"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-3.en.8f3a2920f542.mp3",
+      "sha256": "e985831e79cb6b99a651a15f2445792f04a880490a0343af75f367b435ce66eb"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-3.fil.3078161687b0.mp3",
+      "sha256": "80045305b471c0c209230b1838ee7cf5bba20a59d6d21505eec655074392afcc"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/shared-support.en.8b6326bb9fa2.mp3",
+      "sha256": "076e2c31eb05af626dc6827afc7e40bb6ac358269edbb75a3d5208200c986256"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-relationships/shared-support.fil.284ae77c1442.mp3",
+      "sha256": "6d1ecb602731ab410550f9fa304373a59f00dfb00c05713492f29c00e57e4ae8"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-relationships-gemini-en-2f3c31fbd5ca.vtt",
+      "sha256": "2f3c31fbd5ca6139d97dfd44e41f7cd29f9d0f5fd8675387e0b026ee4f819afb"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-relationships-gemini-en-66157d84985f.mp4",
+      "sha256": "66157d84985fba6d9edce8bed4d136c168ef7c7e047297793eee7ee707228034"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-relationships-gemini-en-749f5673300d-poster.jpg",
+      "sha256": "749f5673300d34900b96b9f86cf633427c113ab93fd3dbbcd3e381ebdf02654a"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-4ca9cef0ede3.mp4",
+      "sha256": "4ca9cef0ede3418cd801891e8e7120d5374916c8ab5777e92c724bf7afd85e37"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-c1ee816f8d22-poster.jpg",
+      "sha256": "c1ee816f8d222bac4e75c9ef800d3b33911d4906104b85bdc301099ff1a3140a"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-f21ddefe73a2.vtt",
+      "sha256": "f21ddefe73a2bf2a541f9919cf26fa18c949f8296b06ca05e06846c3147465ac"
+    },
+    {
+      "path": "/training/bhw-1-5/malou-courtyard-f6b2d754af39.png",
+      "sha256": "f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545"
+    }
+  ],
+  "limits": "Owner approval does not establish human listening, independent policy SME review or authenticated production playback. Original audio observations remain preserved.",
+  "release_metadata_changes": "Approval statuses, awaiting-review caption labels, provenance approval statements, identity approval, receipt and exact-media approval tests. Read-only release snapshot dispatch added for bounded before/after verification; no teaching or media changes."
+}

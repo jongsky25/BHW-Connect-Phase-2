@@ -1,0 +1,102 @@
+{
+  "audited_date": "2026-10-06",
+  "sources": [
+    {
+      "file": "reference-original.pdf",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "pdf_pages": [
+        15,
+        16,
+        17
+      ],
+      "printed_pages": [
+        7,
+        8,
+        9
+      ],
+      "download_verified": true,
+      "page_images_inspected": true
+    },
+    {
+      "file": "facilitator-original.pdf",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "pdf_pages": [
+        26,
+        27
+      ],
+      "printed_pages": [
+        19,
+        20
+      ],
+      "download_verified": true,
+      "page_images_inspected": true
+    },
+    {
+      "file": "deck-original.pdf",
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "pdf_pages": [
+        27,
+        28
+      ],
+      "printed_pages": [],
+      "download_verified": true,
+      "page_images_inspected": true
+    },
+    {
+      "file": "tesda-bhs-ncii.pdf",
+      "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+      "pdf_pages": [
+        11,
+        12,
+        84,
+        85
+      ],
+      "printed_pages": [
+        7,
+        8,
+        80,
+        81
+      ],
+      "download_verified": true,
+      "page_images_inspected": true
+    }
+  ],
+  "taxonomy_origin": {
+    "commit": "d424bde",
+    "file": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lesson.en.md",
+    "result": "Original authored four-relationship organizer and Marites cough scenario traced through Git; not a verbatim official four-category taxonomy."
+  },
+  "claim_map": [
+    {
+      "claim": "Roles and appropriate communication",
+      "source": "Reference original PDF15\u201317 / printed7\u20139; guide PDF26\u201327 / printed19\u201320; TESDA unit400311211 PDF11\u201312 / printed7\u20138",
+      "support": "Sources discuss stakeholders, responsibilities, local communication arrangements and teamwork. New examples explicitly retain local verification and professional boundaries."
+    },
+    {
+      "claim": "Three-hour combined competency",
+      "source": "TESDA Revision01/2019 PDF84\u201385 / printed80\u201381; guide PDF26\u201327 / printed19\u201320",
+      "support": "Three outcomes, one hour each.30-minute target share and whole-module split are authored."
+    },
+    {
+      "claim": "Malou, Nena venue/health questions, four-card practice and artwork",
+      "source": "Authored fictional application",
+      "support": "No claim of actual local procedure, official taxonomy, medical triage, diagnosis, universal chain or guaranteed support."
+    }
+  ],
+  "shared_exceptions": [
+    "First four target-specific module Read passages only; later sections preserved byte-for-byte",
+    "Shared module guide: two40-minute shares changed to30, opening Malou reference, target answer key and appended timing explanation",
+    "Four QA rows only: d1m5-four-relationships,d1m5-who-for-clinical,d1m5-who-for-admin-support,d1m5-role-of-peer-bhw",
+    "One appended global source. No existing source removed. No activities, assessments, KB or sibling publication.",
+    "Application: optional exact-text matched Slide narration panel using the unchanged selector, pause on section unmount/panel close, and new-target-only10\u201313-minute estimate. Existing lesson source/media remain untouched.",
+    "CI and Remotion checkout binding: only this target draft branch checks out its exact PR head; all tests, renders, thresholds and other-branch checkout behavior remain intact."
+  ],
+  "inherited_asset_issue": "practice-map had approved flag but draft captions and not-owner-approved provenance. Target now uses genuinely new draft Malou art; original SVG bytes preserved.",
+  "limits": [
+    "No independent policy SME approval",
+    "No target LGU procedure verified",
+    "No human listening or owner approval of new media",
+    "Current official PDF was downloaded and checked; full catalogue/latest-revision absence not established"
+  ],
+  "read_only_transport_workflow_exception": "lesson151-export.yml is a branch-bounded manual read-only artifact transport for verification when direct storage access is blocked. It downloads existing repository ZIPs, validates API SHA256 and ZIP CRC, and exports bounded chunks through Actions logs. It changes no database, source media, release, permissions grants or published pointers."
+}

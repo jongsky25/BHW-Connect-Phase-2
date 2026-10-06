@@ -1,5 +1,5 @@
 "use client";
-import { useId } from "react";
+import { useEffect, useId, useRef } from "react";
 import type { LessonAsset } from "@/lib/elearning/types";
 import type { LessonTranslationLanguage } from "@/lib/elearning/lesson-translation";
 
@@ -27,6 +27,11 @@ export function LessonAssetFigure({
   const alt = en ? a.alt_en : a.alt_fil;
   const caption = en ? a.caption_en : a.caption_fil;
   const video = (en ? a.videos?.en : a.videos?.fil) ?? a.video;
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  useEffect(() => {
+    const player = videoRef.current;
+    return () => { if (player && !player.paused) player.pause(); };
+  }, [video?.path]);
   if (!video)
     return (
       <figure className="my-4">
@@ -39,6 +44,7 @@ export function LessonAssetFigure({
   return (
     <figure className="my-4">
       <video
+        ref={videoRef}
         // Keyed by file so switching language loads the other render.
         key={video.path}
         controls

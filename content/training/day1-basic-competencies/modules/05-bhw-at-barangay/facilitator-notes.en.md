@@ -12,18 +12,18 @@ Suggested split:
 
 | Part | Time |
 |---|---|
-| Opening: Aling Nena's situation + the four relationships | 30 min |
-| Additional contacts at the barangay, city, municipal level | 40 min |
+| Opening: Malou and Nena’s fictional activity questions + the four relationships | 30 min |
+| Additional contacts at the barangay, city, municipal level | 30 min |
 | What good teamwork looks like | 30 min |
 | Team-building activity (sinking vessel or marshmallow tower) | 30 min |
-| Self-management: skills and how to develop them | 40 min |
+| Self-management: skills and how to develop them | 30 min |
 | Exercise and summary | 30 min |
 
 ## Delivery script (follows the lesson's sections)
 
 1. **Open with the question, not the list.** Read Aling Nena's
    situation aloud before showing any slide or list. Ask the group:
-   "If you were BHW Marites, who would you think of first?"
+   "If you were BHW Malou, who would you think of first?"
 2. **On the hub-spoke visual (four relationships),** point to each
    spoke as you name it.
 3. **On the additional contacts,** use the actual names and photos of
@@ -67,8 +67,11 @@ through specific habits — not a trait you either have or lack.
 
 ## Answer key to the retrieval checks
 
-1. **"A resident has had a long-standing cough..."** → The midwife or
-   RHU (a clinical matter, not an administrative one).
+1. **"Nena asks about the venue and a personal health question."** → Clarify her preference, confirm a professional contact for health guidance and a responsible coordinator for the venue. Rank or peer experience does not replace assessment.
 2. **"In a team of BHWs, what should be the very first response..."** →
    Talk about it as a team right away, before it deepens (not ignoring
    it, and not reporting it before talking to the member first).
+
+## Lesson 1.5.1 timing reconciliation and scope
+
+Audited original guide PDF26–27 / printed19–20 and TESDA PDF84–85 / printed80–81 allocate a combined three hours. The former table totalled200 minutes despite its180-minute claim. Only its two40-minute shares are reduced to30; the authored split is now30 +30 +30 +30 +30 +30 =180, including optional exercises. This is an authored delivery split, not six official lesson minima. Target1.5.1 uses30 minutes. Sibling lesson content, guides, activity IDs and teaching remain unchanged. Malou’s name applies as future1.5 lessons are developed, not as a bulk historical rewrite.

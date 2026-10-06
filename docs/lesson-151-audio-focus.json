@@ -1,0 +1,2173 @@
+{
+  "date": "2026-10-06T03:08:42.928Z",
+  "source_commit": "46e5b52019e7bf8027ebfdc09606c1a97ee9b05c",
+  "model": "gemini-3.8-flash",
+  "decode_only": false,
+  "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "method": "Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.",
+  "records": [
+    {
+      "id": "read-community-listening-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/community-listening.fil.cb01c2554014.mp3",
+      "source_sha256": "31623ba536262837b5be6a16755924f7ad87c5678d3ee0843f5f4015604cc62e",
+      "decoded_pcm_sha256": "35bc6375a859d361a46cf1a96a0fb5393f2e8b2c4f2119073170df54eab8ce66",
+      "full_audio_metrics": {
+        "samples": 1341023,
+        "seconds": 55.87595833333334,
+        "rms": 0.1326170450928859,
+        "peak": 0.965606689453125,
+        "quiet_sample_fraction": 0.21134163992713026
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Makinig bago magpalagay",
+          "start_ms": 0,
+          "end_ms": 2880,
+          "samples": 69120,
+          "seconds": 2.88,
+          "rms": 0.11553943767365232,
+          "peak": 0.848175048828125,
+          "quiet_sample_fraction": 0.32993344907407407
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Inulit ni Malou ang narinig: “Gusto ninyong tiyakin ang lugar at makausap ang health professional.",
+          "start_ms": 3180,
+          "end_ms": 9180,
+          "samples": 144000,
+          "seconds": 6,
+          "rms": 0.12647232075675313,
+          "peak": 0.865081787109375,
+          "quiet_sample_fraction": 0.124375
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Tama po ba ang pagkaunawa ko?”",
+          "start_ms": 9480,
+          "end_ms": 11840,
+          "samples": 56640,
+          "seconds": 2.36,
+          "rms": 0.1370359914848631,
+          "peak": 0.825347900390625,
+          "quiet_sample_fraction": 0.23174435028248588
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Maaaring itama ni Nena ang buod at sabihin kung ano ang mahalaga sa kaniya.",
+          "start_ms": 12140,
+          "end_ms": 17340,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.14024906136469598,
+          "peak": 0.774566650390625,
+          "quiet_sample_fraction": 0.1709775641025641
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Alam: may dalawang tanong si Nena.",
+          "start_ms": 17640,
+          "end_ms": 20320,
+          "samples": 64320,
+          "seconds": 2.68,
+          "rms": 0.12544760265991547,
+          "peak": 0.733734130859375,
+          "quiet_sample_fraction": 0.26452114427860696
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Hindi pa alam: ang tiyak na lugar, ang lokal na itinalagang propesyonal na contact at ang paraang nais ni Nena sa pagtatanong.",
+          "start_ms": 20620,
+          "end_ms": 31020,
+          "samples": 249600,
+          "seconds": 10.4,
+          "rms": 0.1411560681504388,
+          "peak": 0.895782470703125,
+          "quiet_sample_fraction": 0.16728766025641026
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Hindi ipinapalagay ni Malou na kailangan ni Nena ng transportasyon o may partikular siyang sakit.",
+          "start_ms": 31320,
+          "end_ms": 38360,
+          "samples": 168960,
+          "seconds": 7.04,
+          "rms": 0.12583429385896633,
+          "peak": 0.66033935546875,
+          "quiet_sample_fraction": 0.13567116477272728
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Nagtanong siya: “Anong impormasyon ang makatutulong, at paano ninyo ito gustong matanggap?”",
+          "start_ms": 38660,
+          "end_ms": 45140,
+          "samples": 155520,
+          "seconds": 6.48,
+          "rms": 0.12800759353118904,
+          "peak": 0.965606689453125,
+          "quiet_sample_fraction": 0.18641332304526748
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Kathang-isip na detalye lamang ang gamitin sa pagsasanay.",
+          "start_ms": 45440,
+          "end_ms": 49320,
+          "samples": 93120,
+          "seconds": 3.88,
+          "rms": 0.1186069283393381,
+          "peak": 0.825714111328125,
+          "quiet_sample_fraction": 0.1306701030927835
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ulitin, linawin at hayaang itama ng residente ang iyong pagkaunawa.",
+          "start_ms": 49620,
+          "end_ms": 55820,
+          "samples": 148800,
+          "seconds": 6.2,
+          "rms": 0.17041464537269596,
+          "peak": 0.90777587890625,
+          "quiet_sample_fraction": 0.12939516129032258
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 3.18,
+          "end": 17.34,
+          "file": "read-community-listening-fil-decisive.wav",
+          "excerpt_sha256": "24fcb336bbedccaa1e5fe0f2c9c90154f0cb1f84701a56566d58170ed53f6905",
+          "decoded_sample_count": 339840,
+          "expected_context": "Inulit ni Malou ang narinig: “Gusto ninyong tiyakin ang lugar at makausap ang health professional. Tama po ba ang pagkaunawa ko?” Maaaring itama ni Nena ang buod at sabihin kung ano ang mahalaga sa kaniya.",
+          "model_response": "```json\n{\n \"transcript\": \"Inulit ni Malou ang narinig: Gusto ninyong tiyakin ang lugar at makausap ang health professional. Tama po ba ang pagkaunawa ko? Maaaring itama ni Nena ang buod at sabihin kung ano ang mahalaga sa kaniya.\",\n \"observations\": {\n  \"malou_pronunciation\": \"The name 'Malou' at 00:00.6 is pronounced cleanly as 'mah-LOO' ([ma'lu]).\",\n  \"negation\": \"No negative terms are present in the excerpt.\",\n  \"role_distinctions\": \"The passage shifts smoothly between third-person narration and quoted speech representing Malou's question (00:01.8–00:08.2) through natural inflection without abrupt character shifts.\",\n  \"ending_completeness\": \"The audio concludes naturally after 'sa kaniya' without premature cutoff.\",\n  \"audible_speech\": \"The narration is clear, intelligible, and well-paced throughout.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"None detected; vocal tone remains consistent and stable.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 38.66,
+          "end": 55.87595833333334,
+          "file": "read-community-listening-fil-ending.wav",
+          "excerpt_sha256": "cdb1b4e7d579c3c6c382cdabc3b6cb89d78da761a2a9449da78a16e3633c0956",
+          "decoded_sample_count": 413183,
+          "expected_context": "Nagtanong siya: “Anong impormasyon ang makatutulong, at paano ninyo ito gustong matanggap?” Kathang-isip na detalye lamang ang gamitin sa pagsasanay. Ulitin, linawin at hayaang itama ng residente ang iyong pagkaunawa.",
+          "model_response": "```json\n{\n  \"transcript\": \"Nagtanong siya, \\\"Anong impormasyon ang makatutulong at paano ninyo ito gustong matanggap? Kathang-isip na detalye lamang ang gamitin sa pagsasanay. Ulitin, linawin, at hayaang itama ng residente ang iyong pagkaunawa.\\\"\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this audio excerpt.\",\n    \"negation\": \"No negative grammatical markers (e.g., hindi, huwag, wala) are present in the text.\",\n    \"role_distinctions\": \"Single speaker narrating instructional content with appropriate pacing and pauses around quoted dialogue.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'pagkaunawa' and does not truncate prematurely.\",\n    \"audible_speech\": \"All words are clearly enunciated and intelligible throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; voice quality, tone, and volume remain consistent across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-relationships-application-check-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/relationships-application-check.fil.cc2afe32192b.mp3",
+      "source_sha256": "d2e91cd21f82bb4efd688fce559604d1b5185ebba7b951600ffd9b1c3668fa48",
+      "decoded_pcm_sha256": "a3c1054e05c8c615c24d7927bd5d134dbda967feaf630f8ccb118cc363a673e3",
+      "full_audio_metrics": {
+        "samples": 1597440,
+        "seconds": 66.56,
+        "rms": 0.13705330008020586,
+        "peak": 0.9371337890625,
+        "quiet_sample_fraction": 0.24291366185897437
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Ipaliwanag at gamitin ang mga ugnayan",
+          "start_ms": 0,
+          "end_ms": 3480,
+          "samples": 83520,
+          "seconds": 3.48,
+          "rms": 0.14180844783688484,
+          "peak": 0.788330078125,
+          "quiet_sample_fraction": 0.20330459770114942
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Subukan ang tanong sa ibaba.",
+          "start_ms": 3780,
+          "end_ms": 5660,
+          "samples": 45120,
+          "seconds": 1.88,
+          "rms": 0.1451326678695852,
+          "peak": 0.76995849609375,
+          "quiet_sample_fraction": 0.26496010638297873
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Sa kathang-isip na sitwasyon ni Nena, ipaliwanag ang maitutulong ng bawat ugnayan at ang hindi nito maaaring pagpasyahan.",
+          "start_ms": 5960,
+          "end_ms": 14360,
+          "samples": 201600,
+          "seconds": 8.4,
+          "rms": 0.14470777336500995,
+          "peak": 0.8941650390625,
+          "quiet_sample_fraction": 0.11424603174603175
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Magbigay ng dahilan sa piniling contact at isang tanong upang tiyakin ang papel niya.",
+          "start_ms": 14660,
+          "end_ms": 20500,
+          "samples": 140160,
+          "seconds": 5.84,
+          "rms": 0.15464335758431436,
+          "peak": 0.931549072265625,
+          "quiet_sample_fraction": 0.19656820776255707
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Para sa katumbas na pasulat o magkapares na pagsasanay, gumawa ng apat na card: alalahanin at pagpili ng residente; propesyonal na tanong; hiling na suportang administratibo; gawain ng kapwa BHW.",
+          "start_ms": 20800,
+          "end_ms": 37320,
+          "samples": 396480,
+          "seconds": 16.52,
+          "rms": 0.14265132118063087,
+          "peak": 0.863983154296875,
+          "quiet_sample_fraction": 0.23261702986279256
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Itugma sa angkop na papel na tiniyak sa lokalidad, saka ipaliwanag ang hangganan.",
+          "start_ms": 37620,
+          "end_ms": 43340,
+          "samples": 137280,
+          "seconds": 5.72,
+          "rms": 0.13326424766440081,
+          "peak": 0.9371337890625,
+          "quiet_sample_fraction": 0.13604312354312353
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Maaaring itanong ng kapareha: “Ano pa ang kailangan mong linawin?”",
+          "start_ms": 43640,
+          "end_ms": 48360,
+          "samples": 113280,
+          "seconds": 4.72,
+          "rms": 0.14694451582758794,
+          "peak": 0.90045166015625,
+          "quiet_sample_fraction": 0.269385593220339
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Gumamit ng kathang-isip na detalye, tumanggap ng puna at umulit.",
+          "start_ms": 48660,
+          "end_ms": 54940,
+          "samples": 150720,
+          "seconds": 6.28,
+          "rms": 0.11630648999271824,
+          "peak": 0.85107421875,
+          "quiet_sample_fraction": 0.3465432590233546
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Paliwanag ang suriin, hindi punto ng pagsasalita o personalidad.",
+          "start_ms": 55240,
+          "end_ms": 60360,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.131186807105038,
+          "peak": 0.81414794921875,
+          "quiet_sample_fraction": 0.17064615885416667
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ipaliwanag ang pagpili, tiyakin ang papel at igalang ang nais ng residente.",
+          "start_ms": 60660,
+          "end_ms": 66500,
+          "samples": 140160,
+          "seconds": 5.84,
+          "rms": 0.13870549077323882,
+          "peak": 0.83770751953125,
+          "quiet_sample_fraction": 0.19758133561643837
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 37.62,
+          "end": 54.94,
+          "file": "read-relationships-application-check-fil-decisive.wav",
+          "excerpt_sha256": "1dcfaa5592953cf8155791c7c7bbef48df35bacc90ad74c9d95a39b7c9d5e4bf",
+          "decoded_sample_count": 415680,
+          "expected_context": "Itugma sa angkop na papel na tiniyak sa lokalidad, saka ipaliwanag ang hangganan. Maaaring itanong ng kapareha: “Ano pa ang kailangan mong linawin?” Gumamit ng kathang-isip na detalye, tumanggap ng puna at umulit.",
+          "model_response": "```json\n{\n  \"transcript\": \"Itugma sa angkop na papel na tiniyak sa lokalidad, saka ipaliwanag ang hangganan. Maaaring itanong ng kapareha, \\\"Ano pa ang kailangan mong linawin?\\\" Gumamit ng kathang-isip na detalye, tumanggap ng puna, at umulit.\",\n  \"observations\": [\n    {\n      \"category\": \"role distinctions\",\n      \"timestamp\": \"00:06 - 00:10\",\n      \"detail\": \"The speaker introduces a partner's hypothetical prompt ('Maaaring itanong ng kapareha') followed by the quoted dialogue ('Ano pa ang kailangan mong linawin?') using the same narrator voice with an inquisitive intonational contour.\"\n    },\n    {\n      \"category\": \"Malou pronunciation\",\n      \"detail\": \"The name or word 'Malou' does not appear in this excerpt.\"\n    },\n    {\n      \"category\": \"negation\",\n      \"detail\": \"No negation terms (e.g., 'hindi', 'huwag') are present in this excerpt.\"\n    },\n    {\n      \"category\": \"ending completeness\",\n      \"timestamp\": \"00:16 - 00:17.5\",\n      \"detail\": \"The final phrase 'at umulit' completes smoothly with natural decay and no acoustic clipping.\"\n    },\n    {\n      \"category\": \"voice quality\",\n      \"detail\": \"Consistent female instructional delivery across the segment with clear cadence, without abrupt acoustic shifts.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None detected; speech is fully intelligible and clearly rendered.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 48.66,
+          "end": 66.56,
+          "file": "read-relationships-application-check-fil-ending.wav",
+          "excerpt_sha256": "44018ecdd7f44c252bbc971b16a39311854543cbe4136a5965270eb1c6399143",
+          "decoded_sample_count": 429600,
+          "expected_context": "Gumamit ng kathang-isip na detalye, tumanggap ng puna at umulit. Paliwanag ang suriin, hindi punto ng pagsasalita o personalidad. Ipaliwanag ang pagpili, tiyakin ang papel at igalang ang nais ng residente.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gumamit ng kathang-isip na detalye, tumanggap ng puna, at umulit. Paliwanag ang suriin, hindi punto ng pagsasalita o personalidad. Ipaliwanag ang pagpili, tiyakin ang papel, at igalang ang nais ng residente.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this audio excerpt.\",\n    \"negation\": \"Clear negation is present at 00:08.7–00:11.2 ('hindi punto ng pagsasalita o personalidad').\",\n    \"role_distinctions\": \"There are two distinct speaker voices: Speaker 1 (male voice) speaks from 00:00.0 to 00:11.2, and Speaker 2 (female voice) speaks from 00:11.8 to 00:17.2.\",\n    \"ending_completeness\": \"The audio concludes naturally and completely with 'residente' at ~00:17.2 without clipping or premature cutoff.\",\n    \"audible_speech\": \"Speech is articulate, clear, and well-paced throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"voice_changes\": \"A noticeable speaker transition occurs at ~00:11.5–00:11.8 where the narration switches from a male voice to a female voice.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"speaker_change\",\n      \"timestamp\": \"00:11.5 - 00:11.8\",\n      \"description\": \"Shift in narrator voice from male to female between instructional prompts.\"\n    }\n  ],\n  \"uncertainty\": \"None; speech is clear and easily intelligible.\"\n}\n```"
+        },
+        {
+          "kind": "opening-voice",
+          "start": 0,
+          "end": 14.36,
+          "file": "read-relationships-application-check-fil-opening-voice.wav",
+          "excerpt_sha256": "da6847e900074ccdc3369998fa5953f42f794bb6807a6de6f48c45ddfc818307",
+          "decoded_sample_count": 344640,
+          "expected_context": "Ipaliwanag at gamitin ang mga ugnayan Subukan ang tanong sa ibaba. Sa kathang-isip na sitwasyon ni Nena, ipaliwanag ang maitutulong ng bawat ugnayan at ang hindi nito maaaring pagpasyahan.",
+          "model_response": "```json\n{\n \"transcript\": \"Ipaliwanag at gamitin ang mga ugnayan. Subukan ang tanong sa ibaba. Sa kathang-isip na sitwasyon ni Nena, ipaliwanag ang maitutulong ng bawat ugnayan at ang hindi nito maaaring pagpasyahan.\",\n \"observations\": {\n  \"malou_pronunciation\": \"The name 'Malou' is not present in this excerpt; the character referenced is 'Nena' at 00:07.\",\n  \"negation\": \"The negative marker 'hindi' is clearly spoken at 00:12 in the clause 'at ang hindi nito maaaring pagpasyahan'.\",\n  \"role_distinctions\": \"A single narrator delivers educational instructions with consistent tone and pacing throughout.\",\n  \"ending_completeness\": \"The sentence and excerpt conclude cleanly at 00:14 on 'pagpasyahan' without abrupt cutoffs.\",\n  \"audible_speech\": \"All words are fully audible and clear.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"None observed; vocal pitch, volume, and quality remain consistent.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-section-1-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-1.fil.d655fff59fab.mp3",
+      "source_sha256": "01ff80eb6071215c0eeaac5d7d680f8c68af844ca661859e1d7ec9ae5bebef45",
+      "decoded_pcm_sha256": "6e7d6a16d139930f29ad97b294754842e70a717106ca551ac07124b875633c37",
+      "full_audio_metrics": {
+        "samples": 1248863,
+        "seconds": 52.03595833333333,
+        "rms": 0.13139039731734314,
+        "peak": 0.9317626953125,
+        "quiet_sample_fraction": 0.18822721147155452
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Nakikinig si Malou sa bakuran",
+          "start_ms": 0,
+          "end_ms": 2320,
+          "samples": 55680,
+          "seconds": 2.32,
+          "rms": 0.19478439794473953,
+          "peak": 0.865020751953125,
+          "quiet_sample_fraction": 0.1909662356321839
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sa kathang-isip na sitwasyong ito, nakatagpo ni BHW Malou si Aling Nena sa malilim na bakuran ng barangay.",
+          "start_ms": 2620,
+          "end_ms": 10380,
+          "samples": 186240,
+          "seconds": 7.76,
+          "rms": 0.12892617110728463,
+          "peak": 0.83782958984375,
+          "quiet_sample_fraction": 0.10271155498281787
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Nagtanong si Nena tungkol sa nakaplanong gawaing pangkalusugan: “Saan po ito gaganapin?",
+          "start_ms": 10680,
+          "end_ms": 16880,
+          "samples": 148800,
+          "seconds": 6.2,
+          "rms": 0.1449315348717683,
+          "peak": 0.814117431640625,
+          "quiet_sample_fraction": 0.16491263440860215
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Gusto ko ring itanong sa health professional kung angkop ito para sa akin.”",
+          "start_ms": 17180,
+          "end_ms": 21380,
+          "samples": 100800,
+          "seconds": 4.2,
+          "rms": 0.12479097931971006,
+          "peak": 0.780303955078125,
+          "quiet_sample_fraction": 0.1252876984126984
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Nakinig si Malou at nagtanong kung alin ang gustong unahing linawin ni Nena.",
+          "start_ms": 21680,
+          "end_ms": 26880,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.13779103960266248,
+          "peak": 0.80865478515625,
+          "quiet_sample_fraction": 0.19080929487179488
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Magkaibang suporta ang kailangan sa tanong tungkol sa lugar at sa personal na kalusugan.",
+          "start_ms": 27180,
+          "end_ms": 33420,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.12092785050622998,
+          "peak": 0.807952880859375,
+          "quiet_sample_fraction": 0.14756944444444445
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Mahalaga ang pagpili ni Nena; hindi hinuhulaan ni Malou ang kaniyang pangangailangan.",
+          "start_ms": 33720,
+          "end_ms": 39240,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.1223594913357802,
+          "peak": 0.810943603515625,
+          "quiet_sample_fraction": 0.12210899758454107
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Maaaring tapusin ang bahaging Basahin o Slides nang hindi pinapanood ang opsyonal na kuwento.",
+          "start_ms": 39540,
+          "end_ms": 46060,
+          "samples": 156480,
+          "seconds": 6.52,
+          "rms": 0.14420005088379848,
+          "peak": 0.9317626953125,
+          "quiet_sample_fraction": 0.1171331799591002
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Makinig sa residente at ihiwalay ang mga tanong bago pumili ng suporta.",
+          "start_ms": 46360,
+          "end_ms": 51960,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.11762006844964014,
+          "peak": 0.7783203125,
+          "quiet_sample_fraction": 0.21345238095238095
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 2.62,
+          "end": 21.38,
+          "file": "read-section-1-fil-decisive.wav",
+          "excerpt_sha256": "e51814c437ec3d23b99cb44df90983b73ae37078ef5baa25c59de460d2a75d90",
+          "decoded_sample_count": 450240,
+          "expected_context": "Sa kathang-isip na sitwasyong ito, nakatagpo ni BHW Malou si Aling Nena sa malilim na bakuran ng barangay. Nagtanong si Nena tungkol sa nakaplanong gawaing pangkalusugan: “Saan po ito gaganapin? Gusto ko ring itanong sa health professional kung angkop ito para sa akin.”",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa kathang-isip na sitwasyong ito, nakatagpo ni BHW Malou si Aling Nena sa malilim na bakuran ng barangay. Nagtanong si Nena tungkol sa nakaplanong gawaing pangkalusugan, \\\"Saan po ito gaganapin? Gusto ko ring itanong sa health professional kung angkop ito para sa akin.\\\"\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as 'mah-LOO' (/mɐˈlu/) at approximately 00:03–00:04.\",\n    \"negation\": \"No negative grammatical markers (e.g., 'hindi', 'huwag', 'wala') occur in this excerpt.\",\n    \"role_distinctions\": \"There is a distinct tonal shift from narrative delivery (00:00–00:11) to in-character dialogue for Aling Nena starting at 00:12 ('Saan po ito gaganapin?...').\",\n    \"ending_completeness\": \"The excerpt concludes completely with the final word 'akin' at 00:18 with a natural sentence-final cadence and no clipping.\",\n    \"audible_speech\": \"All speech is fully audible, clear, and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"No unnatural pitch glitches or synthetic dropouts; the voice shift at 00:12 is an intentional character role portrayal.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is clear and matches standard Filipino educational audio formatting.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 33.72,
+          "end": 52.03595833333333,
+          "file": "read-section-1-fil-ending.wav",
+          "excerpt_sha256": "2311a464a08f2a019875e4063052cf67bf11e4e0cd77f2a96a5380678271b8db",
+          "decoded_sample_count": 439583,
+          "expected_context": "Mahalaga ang pagpili ni Nena; hindi hinuhulaan ni Malou ang kaniyang pangangailangan. Maaaring tapusin ang bahaging Basahin o Slides nang hindi pinapanood ang opsyonal na kuwento. Makinig sa residente at ihiwalay ang mga tanong bago pumili ng suporta.",
+          "model_response": "```json\n{\n  \"transcript\": \"Mahalaga ang pagpili ni Nena. Hindi hinuhulaan ni Malou ang kanyang pangangailangan. Maaaring tapusin ang bahaging basahin o slides nang hindi pinapanood ang opsyonal na kwento. Makinig sa residente at ihiwalay ang mga tanong bago pumili ng suporta.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly at approximately 00:03.2 - 00:03.7 as 'mah-LOO' with stress on the second syllable.\",\n    \"negation\": \"Negation terms ('Hindi' at 00:02.1 and 'hindi' at 00:09.5) are clearly articulated without slurring or omission.\",\n    \"role_distinctions_and_voice_changes\": \"A noticeable shift in vocal timbre occurs at approximately 00:12.7; the first two sentences (00:00 - 00:12.2) are delivered in a higher, upbeat educational narrator voice, while the final sentence (00:12.8 - 00:18.0) shifts to a distinctly deeper, lower-pitched voice.\",\n    \"ending_completeness\": \"The audio ends naturally with 'suporta' fully articulated at 00:17.3 - 00:18.0 without premature clipping.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables are intact.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:12.7 - 00:13.0\",\n      \"description\": \"Perceptible change in speaker persona/pitch register transitioning into 'Makinig sa residente...'.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech tokens are intelligible and acoustic transitions are distinct.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-section-2-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-2.fil.1e2a31cc2ce6.mp3",
+      "source_sha256": "c49fbc25deebe148081cc65396e1adbb1f0300e9d044d8e00e632d83a3a2d6e4",
+      "decoded_pcm_sha256": "6396a735dac13569a2c48ce5313b2f0f87a08539f5a4c1a63e6796b939a7540f",
+      "full_audio_metrics": {
+        "samples": 2078303,
+        "seconds": 86.59595833333333,
+        "rms": 0.13184318042188095,
+        "peak": 0.953369140625,
+        "quiet_sample_fraction": 0.1844923478434088
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Apat na ugnayan, magkakaibang layunin",
+          "start_ms": 0,
+          "end_ms": 3440,
+          "samples": 82560,
+          "seconds": 3.44,
+          "rms": 0.11992331598487707,
+          "peak": 0.8302001953125,
+          "quiet_sample_fraction": 0.21443798449612403
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Ginagamit sa araling ito ang apat na ugnayan bilang ginawang balangkas sa pagtuturo, hindi opisyal na apat na antas ng pamamahala.",
+          "start_ms": 3740,
+          "end_ms": 13380,
+          "samples": 231360,
+          "seconds": 9.64,
+          "rms": 0.12058404306820243,
+          "peak": 0.813873291015625,
+          "quiet_sample_fraction": 0.13259854771784232
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Komunidad: ibinabahagi ng mga residente at pamilya ang kanilang alalahanin, impormasyon at pagpili.",
+          "start_ms": 13680,
+          "end_ms": 21960,
+          "samples": 198720,
+          "seconds": 8.28,
+          "rms": 0.13270442197277482,
+          "peak": 0.76629638671875,
+          "quiet_sample_fraction": 0.21763788244766505
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Makinig at maglinaw kasama nila; hindi lamang sila tagatanggap ng tulong.",
+          "start_ms": 22260,
+          "end_ms": 27740,
+          "samples": 131520,
+          "seconds": 5.48,
+          "rms": 0.14539391129836599,
+          "peak": 0.69244384765625,
+          "quiet_sample_fraction": 0.15184762773722627
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Itinalagang midwife o health professional ng Rural Health Unit: humingi ng awtorisadong propesyonal na gabay sa tanong pangkalusugan, ayon sa lokal na kaayusang tiniyak.",
+          "start_ms": 28040,
+          "end_ms": 40560,
+          "samples": 300480,
+          "seconds": 12.52,
+          "rms": 0.12235932667463506,
+          "peak": 0.8743896484375,
+          "quiet_sample_fraction": 0.09995007987220447
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Hindi kapalit ng propesyonal na pagtatasa ang BHW o kapwa BHW.",
+          "start_ms": 40860,
+          "end_ms": 47100,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.13047809948541705,
+          "peak": 0.917205810546875,
+          "quiet_sample_fraction": 0.11269364316239316
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Barangay officials: itanong sa responsableng lokal na contact ang suportang administratibo, pasilidad o kaayusan ng aktibidad.",
+          "start_ms": 47400,
+          "end_ms": 57160,
+          "samples": 234240,
+          "seconds": 9.76,
+          "rms": 0.1318862437336367,
+          "peak": 0.7857666015625,
+          "quiet_sample_fraction": 0.14641820355191257
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Nakasalalay ang suporta sa lokal na papel at magagamit na kagamitan; walang garantiya.",
+          "start_ms": 57460,
+          "end_ms": 64140,
+          "samples": 160320,
+          "seconds": 6.68,
+          "rms": 0.12946767174055535,
+          "peak": 0.953369140625,
+          "quiet_sample_fraction": 0.21641092814371257
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Kapwa BHW: magbahagi ng karanasan sa karaniwang gawain, mag-ugnay ng napagkasunduang mga tungkulin at tumulong tukuyin ang dapat linawin.",
+          "start_ms": 64440,
+          "end_ms": 75720,
+          "samples": 270720,
+          "seconds": 11.28,
+          "rms": 0.15724460461836545,
+          "peak": 0.905792236328125,
+          "quiet_sample_fraction": 0.1743572695035461
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Hindi nagiging klinikal na awtoridad ang payo ng kapwa BHW.",
+          "start_ms": 76020,
+          "end_ms": 81100,
+          "samples": 121920,
+          "seconds": 5.08,
+          "rms": 0.15134505968764966,
+          "peak": 0.79693603515625,
+          "quiet_sample_fraction": 0.09763779527559055
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "May layunin at hangganan ang bawat ugnayan; tiyakin ang lokal na papel.",
+          "start_ms": 81400,
+          "end_ms": 86520,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.12753808026665503,
+          "peak": 0.777252197265625,
+          "quiet_sample_fraction": 0.18728841145833333
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 0,
+          "end": 21.96,
+          "file": "read-section-2-fil-decisive.wav",
+          "excerpt_sha256": "3529981f94fd83c2089af3cb4a3da0cd917c7097dbe862e9a0d1fd8ce7677cf8",
+          "decoded_sample_count": 527040,
+          "expected_context": "Apat na ugnayan, magkakaibang layunin Ginagamit sa araling ito ang apat na ugnayan bilang ginawang balangkas sa pagtuturo, hindi opisyal na apat na antas ng pamamahala. Komunidad: ibinabahagi ng mga residente at pamilya ang kanilang alalahanin, impormasyon at pagpili.",
+          "model_response": "```json\n{\n  \"transcript\": \"Apat na ugnayan, magkakaibang layunin. Ginagamit sa araling ito ang apat na ugnayan bilang ginawang balangkas sa pagtuturo, hindi opisyal na apat na antas ng pamamahala. Komunidad. Ibinabahagi ng mga residente at pamilya ang kanilang alalahanin, impormasyon, at pagpili.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name or word 'Malou' does not appear in this audio excerpt.\",\n    \"negation\": \"The negation 'hindi opisyal na apat na antas ng pamamahala' (00:09.8 - 00:13.0) is articulated clearly with standard Filipino pronunciation and appropriate pedagogical emphasis.\",\n    \"role_distinctions\": \"There is a clear alternation between two distinct speakers: a male voice narrating titles/sections (00:00.0 - 00:03.4 and 00:13.8 - 00:21.3) and a female voice delivering explanatory notes (00:04.1 - 00:13.2).\",\n    \"ending_completeness\": \"The excerpt concludes completely with the final word 'pagpili' without any clipping or premature cutoff.\",\n    \"audible_speech\": \"All words are clear, properly paced, and intelligible throughout the clip.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Voice transitions correspond directly to structural educational segments and appear intentional rather than artifactual or unintended.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 64.44,
+          "end": 86.59595833333333,
+          "file": "read-section-2-fil-ending.wav",
+          "excerpt_sha256": "3b3ea9650b96166eecdeaff9dcc5a19f30f4c6af1fc062666b7ff767cb922fb7",
+          "decoded_sample_count": 531743,
+          "expected_context": "Kapwa BHW: magbahagi ng karanasan sa karaniwang gawain, mag-ugnay ng napagkasunduang mga tungkulin at tumulong tukuyin ang dapat linawin. Hindi nagiging klinikal na awtoridad ang payo ng kapwa BHW. May layunin at hangganan ang bawat ugnayan; tiyakin ang lokal na papel.",
+          "model_response": "```json\n{\n  \"transcript\": \"kapwa BHW, magbahagi ng karanasan sa karaniwang gawain, mag-ugnay ng napagkasundoang mga tungkulin, at tumulong tukuyin ang dapat linawin. Hindi nagiging clinical na awtoridad ang payo ng kapwa BHW. May layunin at hangganan ang bawat ugnayan. Tiyakin ang lokal na papel.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name or word 'Malou' is not uttered in this audio segment.\",\n    \"negation\": \"The negation 'Hindi' at 00:11.6 is clearly articulated and emphasized in the sentence 'Hindi nagiging clinical na awtoridad...'.\",\n    \"role_distinctions\": \"The content contrasts peer roles/sharing ('kapwa BHW', 'magbahagi ng karanasan') with clinical authority boundaries.\",\n    \"ending_completeness\": \"The audio concludes completely on 'papel' at 00:22.1 with natural acoustic decay and no premature cutoff.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and audible throughout.\",\n    \"clipped_words\": \"No words are cut off or clipped at word boundaries.\",\n    \"unexpected_voice_changes\": \"There are noticeable synthetic voice/speaker profile transitions across sections: Voice 1 delivers the list items (00:00.0–00:11.3), shifts to Voice 2 with a deeper, lower timbre for the cautionary note (00:11.5–00:16.7), and transitions again to Voice 3 (00:16.8–00:22.5).\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_changes\",\n      \"timestamp_range\": \"00:11.3 - 00:16.8\",\n      \"description\": \"Abrupt change in vocal persona/timbre between bullet points and the cautionary statement.\"\n    },\n    {\n      \"type\": \"unexpected_voice_changes\",\n      \"timestamp_range\": \"00:16.7 - 00:16.9\",\n      \"description\": \"Another shift in voice persona for the final concluding sentences.\"\n    }\n  ],\n  \"uncertainty\": \"None; all phonetic elements and transitions are distinct and verified.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-section-3-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-3.fil.3078161687b0.mp3",
+      "source_sha256": "80045305b471c0c209230b1838ee7cf5bba20a59d6d21505eec655074392afcc",
+      "decoded_pcm_sha256": "1811d3041ee4aab41a0fb002d4a309e99c07b1a12337c3d92a6c048f5bebe775",
+      "full_audio_metrics": {
+        "samples": 1502773,
+        "seconds": 62.615541666666665,
+        "rms": 0.14161464714225197,
+        "peak": 0.907012939453125,
+        "quiet_sample_fraction": 0.2008733188578714
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Piliin ang contact ayon sa alalahanin",
+          "start_ms": 0,
+          "end_ms": 3120,
+          "samples": 74880,
+          "seconds": 3.12,
+          "rms": 0.16452670434339348,
+          "peak": 0.696533203125,
+          "quiet_sample_fraction": 0.21185897435897436
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Para sa personal na tanong pangkalusugan ni Nena, tumutulong si Malou na linawin ang lokal na itinalagang midwife o awtorisadong health professional at ang paraan ng pakikipag-ugnayan.",
+          "start_ms": 3420,
+          "end_ms": 15940,
+          "samples": 300480,
+          "seconds": 12.52,
+          "rms": 0.12503452937784842,
+          "peak": 0.848846435546875,
+          "quiet_sample_fraction": 0.11255324813631523
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Ipinaliwanag niya: “Kailangan dito ng propesyonal na gabay; hindi ako dapat sumagot sa pamamagitan ng hula.”",
+          "start_ms": 16240,
+          "end_ms": 23680,
+          "samples": 178560,
+          "seconds": 7.44,
+          "rms": 0.15239955940981026,
+          "peak": 0.802886962890625,
+          "quiet_sample_fraction": 0.1871975806451613
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Dapat tiyakin ang mismong lokal na kaayusan.",
+          "start_ms": 23980,
+          "end_ms": 26940,
+          "samples": 71040,
+          "seconds": 2.96,
+          "rms": 0.1328920041222824,
+          "peak": 0.907012939453125,
+          "quiet_sample_fraction": 0.19306024774774774
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Para sa lugar, sinusuri ni Malou ang natiyak na impormasyon ng aktibidad at nagtatanong sa responsableng lokal na coordinator kung may malabo pa.",
+          "start_ms": 27240,
+          "end_ms": 37120,
+          "samples": 237120,
+          "seconds": 9.88,
+          "rms": 0.15255971238532365,
+          "peak": 0.8568115234375,
+          "quiet_sample_fraction": 0.10893218623481782
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Itanong sa contact: “Saklaw po ba ito ng inyong papel?",
+          "start_ms": 37420,
+          "end_ms": 41740,
+          "samples": 103680,
+          "seconds": 4.32,
+          "rms": 0.12065490434391875,
+          "peak": 0.808685302734375,
+          "quiet_sample_fraction": 0.2287133487654321
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Kung hindi, sino po ang responsable?”",
+          "start_ms": 42040,
+          "end_ms": 44840,
+          "samples": 67200,
+          "seconds": 2.8,
+          "rms": 0.13007527403275196,
+          "peak": 0.723846435546875,
+          "quiet_sample_fraction": 0.2694345238095238
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Hindi sapat ang posisyon o pagiging kakilala.",
+          "start_ms": 45140,
+          "end_ms": 48420,
+          "samples": 78720,
+          "seconds": 3.28,
+          "rms": 0.15829249336963583,
+          "peak": 0.78070068359375,
+          "quiet_sample_fraction": 0.1886941056910569
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Halimbawang pang-organisasyon ito, hindi medikal na triage o iisang proseso ng referral para sa lahat.",
+          "start_ms": 48720,
+          "end_ms": 56360,
+          "samples": 183360,
+          "seconds": 7.64,
+          "rms": 0.15336227308757697,
+          "peak": 0.842376708984375,
+          "quiet_sample_fraction": 0.16606675392670156
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Pumili ayon sa alalahanin at natiyak na papel, hindi sa posisyon lamang.",
+          "start_ms": 56660,
+          "end_ms": 62540,
+          "samples": 141120,
+          "seconds": 5.88,
+          "rms": 0.15885503853328026,
+          "peak": 0.81866455078125,
+          "quiet_sample_fraction": 0.18081065759637188
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 27.24,
+          "end": 44.84,
+          "file": "read-section-3-fil-decisive.wav",
+          "excerpt_sha256": "05af12b421d15c75cdf585ee13d0d50be3083f6f108fbe6f1d7d1a94819f862e",
+          "decoded_sample_count": 422400,
+          "expected_context": "Para sa lugar, sinusuri ni Malou ang natiyak na impormasyon ng aktibidad at nagtatanong sa responsableng lokal na coordinator kung may malabo pa. Itanong sa contact: “Saklaw po ba ito ng inyong papel? Kung hindi, sino po ang responsable?”",
+          "model_response": "```json\n{\n  \"transcript\": \"Para sa lugar, sinusuri ni Malou ang natiyak na impormasyon ng aktibidad, at nagtatanong sa responsableng lokal na koordinator kung may malabo pa. Itanong sa contact: Saklaw po ba ito ng inyong papel? Kung hindi, sino po ang responsable?\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:02.1 - 00:02.6\",\n      \"feature\": \"Malou pronunciation\",\n      \"description\": \"The name 'Malou' is clearly pronounced with stress on the second syllable (mah-LOO / [ma'lu]).\"\n    },\n    {\n      \"timestamp\": \"00:10.1 - 00:11.4\",\n      \"feature\": \"role distinctions / tone shift\",\n      \"description\": \"The speaker transitions from informational narration ('Itanong sa contact:') to conversational/question intonation for the quoted prompts ('Saklaw po ba ito...').\"\n    },\n    {\n      \"timestamp\": \"00:14.5 - 00:15.4\",\n      \"feature\": \"negation\",\n      \"description\": \"The negative marker 'hindi' in 'Kung hindi' is clearly articulated.\"\n    },\n    {\n      \"timestamp\": \"00:16.8 - 00:17.5\",\n      \"feature\": \"ending completeness\",\n      \"description\": \"The final word 'responsable' concludes naturally with standard rising question intonation; no clipping detected.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 45.14,
+          "end": 62.615541666666665,
+          "file": "read-section-3-fil-ending.wav",
+          "excerpt_sha256": "9fcac32fb02581ea2c88997d14b42bef8bcb90281cac0a051fbb5e5b7eee9075",
+          "decoded_sample_count": 419413,
+          "expected_context": "Hindi sapat ang posisyon o pagiging kakilala. Halimbawang pang-organisasyon ito, hindi medikal na triage o iisang proseso ng referral para sa lahat. Pumili ayon sa alalahanin at natiyak na papel, hindi sa posisyon lamang.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi sapat ang posisyon o pagiging kakilala. Halimbawang pang-organisasyon ito, hindi medikal na triage o iisang proseso ng referral para sa lahat. Pumili ayon sa alalahanin at natiyak na papel, hindi sa posisyon lamang.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00 - 00:02\",\n      \"speaker\": \"Speaker 1 (Male)\",\n      \"text\": \"Hindi sapat ang posisyon o pagiging kakilala.\"\n    },\n    {\n      \"timestamp\": \"00:03 - 00:10\",\n      \"speaker\": \"Speaker 2 (Female)\",\n      \"text\": \"Halimbawang pang-organisasyon ito, hindi medikal na triage o iisang proseso ng referral para sa lahat.\"\n    },\n    {\n      \"timestamp\": \"00:11 - 00:17\",\n      \"speaker\": \"Speaker 2 (Female)\",\n      \"text\": \"Pumili ayon sa alalahanin at natiyak na papel, hindi sa posisyon lamang.\"\n    }\n  ],\n  \"possible_defects\": [\n    {\n      \"type\": \"voice_transition\",\n      \"timestamp\": \"00:02 - 00:03\",\n      \"description\": \"Switch from male speaker to female speaker between sentence boundaries.\"\n    }\n  ],\n  \"uncertainty\": {\n    \"malou_pronunciation\": \"The name or word 'Malou' is not present in the excerpt.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables ('lamang') are complete and clearly enunciated.\",\n    \"negation\": \"Clear articulation of negation markers ('Hindi sapat' at 00:00, 'hindi medikal' at 00:06, 'hindi sa posisyon lamang' at 00:15).\"\n  }\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-shared-support-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/shared-support.fil.284ae77c1442.mp3",
+      "source_sha256": "6d1ecb602731ab410550f9fa304373a59f00dfb00c05713492f29c00e57e4ae8",
+      "decoded_pcm_sha256": "a2de81c1277b2f7aeaba25056d2b44865b71e5cb6cc8bb44b7552ad0d717d6d2",
+      "full_audio_metrics": {
+        "samples": 1446975,
+        "seconds": 60.290625,
+        "rms": 0.14393154116592904,
+        "peak": 1,
+        "quiet_sample_fraction": 0.18261752967397502
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Mag-ugnay ng suporta nang may malinaw na papel",
+          "start_ms": 0,
+          "end_ms": 3800,
+          "samples": 91200,
+          "seconds": 3.8,
+          "rms": 0.1679718757356106,
+          "peak": 0.8343505859375,
+          "quiet_sample_fraction": 0.12702850877192984
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Pinaghihiwalay ni Malou ang mga tanong habang pinag-uugnay ang suporta.",
+          "start_ms": 4100,
+          "end_ms": 8620,
+          "samples": 108480,
+          "seconds": 4.52,
+          "rms": 0.1581521343600307,
+          "peak": 0.882049560546875,
+          "quiet_sample_fraction": 0.1268344395280236
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Sa pagsang-ayon ni Nena, tumutulong siyang tukuyin ang angkop na paraan para sa propesyonal na tanong.",
+          "start_ms": 8920,
+          "end_ms": 15800,
+          "samples": 165120,
+          "seconds": 6.88,
+          "rms": 0.136562109281021,
+          "peak": 1,
+          "quiet_sample_fraction": 0.14133357558139534
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Hiwalay dito, maaaring linawin ng responsableng barangay contact ang lugar o hiling na praktikal na suporta.",
+          "start_ms": 16100,
+          "end_ms": 23860,
+          "samples": 186240,
+          "seconds": 7.76,
+          "rms": 0.16108928851745963,
+          "peak": 0.864105224609375,
+          "quiet_sample_fraction": 0.13635094501718212
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Maaaring tulungan ng kapwa BHW si Malou na ayusin ang napagkasunduang karaniwang gawain at alamin ang malabo pa.",
+          "start_ms": 24160,
+          "end_ms": 32320,
+          "samples": 195840,
+          "seconds": 8.16,
+          "rms": 0.16063663054925983,
+          "peak": 0.87451171875,
+          "quiet_sample_fraction": 0.13865400326797386
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Patuloy na ibinabahagi ni Nena ang kaniyang pagpili.",
+          "start_ms": 32620,
+          "end_ms": 35860,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.16440084113091194,
+          "peak": 0.948150634765625,
+          "quiet_sample_fraction": 0.15601851851851853
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Tinitiyak ni Malou ang talagang napagkasunduan at ang hindi pa alam.",
+          "start_ms": 36160,
+          "end_ms": 41080,
+          "samples": 118080,
+          "seconds": 4.92,
+          "rms": 0.1253983911390276,
+          "peak": 0.96417236328125,
+          "quiet_sample_fraction": 0.15540311653116531
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Hindi kapalit ng health professional ang opisyal o kapwa BHW.",
+          "start_ms": 41380,
+          "end_ms": 47020,
+          "samples": 135360,
+          "seconds": 5.64,
+          "rms": 0.13480131709514512,
+          "peak": 0.84039306640625,
+          "quiet_sample_fraction": 0.1421911938534279
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Walang garantiya ng transportasyon, kagamitan, oras ng sagot o matagumpay na resulta.",
+          "start_ms": 47320,
+          "end_ms": 54120,
+          "samples": 163200,
+          "seconds": 6.8,
+          "rms": 0.12211236630438724,
+          "peak": 0.692291259765625,
+          "quiet_sample_fraction": 0.17619485294117648
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Pag-ugnayin ang magkakaibang papel nang walang pangako o kapalit na pagtatasa.",
+          "start_ms": 54420,
+          "end_ms": 60220,
+          "samples": 139200,
+          "seconds": 5.8,
+          "rms": 0.14364100716555825,
+          "peak": 0.825531005859375,
+          "quiet_sample_fraction": 0.12957614942528736
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 0,
+          "end": 15.8,
+          "file": "read-shared-support-fil-decisive.wav",
+          "excerpt_sha256": "446157dd6fb753aa10736c0a0952c1424f6aacd730cd3fc24f0a5546089900e2",
+          "decoded_sample_count": 379200,
+          "expected_context": "Mag-ugnay ng suporta nang may malinaw na papel Pinaghihiwalay ni Malou ang mga tanong habang pinag-uugnay ang suporta. Sa pagsang-ayon ni Nena, tumutulong siyang tukuyin ang angkop na paraan para sa propesyonal na tanong.",
+          "model_response": "```json\n{\n  \"transcript\": \"Mag-ugnay ng suporta nang may malinaw na papel. Pinaghihiwalay ni Malou ang mga tanong habang pinag-uugnay ang suporta. Sa pagsang-ayon ni Nena, tumutulong siyang tukuyin ang angkop na paraan para sa propesyonal na tanong.\",\n  \"observations\": [\n    {\n      \"category\": \"pronunciation\",\n      \"timestamp\": \"00:05.0 - 00:05.5\",\n      \"description\": \"The name 'Malou' is pronounced with stress/emphasis on the second syllable (mah-LOO), consistent with the requested pronunciation target.\"\n    },\n    {\n      \"category\": \"voice_and_delivery\",\n      \"timestamp\": \"00:00.0 - 00:15.5\",\n      \"description\": \"The narration maintains a steady, clear instructional cadence with no sudden shifts in tone, volume, or pitch.\"\n    },\n    {\n      \"category\": \"ending_completeness\",\n      \"timestamp\": \"00:14.5 - 00:15.5\",\n      \"description\": \"The final word 'tanong' completes naturally with audible decay and no clipping.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 41.38,
+          "end": 60.290625,
+          "file": "read-shared-support-fil-ending.wav",
+          "excerpt_sha256": "15b2ddcc89f2073d8a09f29c18ebd154b58ba710acfef23f2814e4a185659ffe",
+          "decoded_sample_count": 453855,
+          "expected_context": "Hindi kapalit ng health professional ang opisyal o kapwa BHW. Walang garantiya ng transportasyon, kagamitan, oras ng sagot o matagumpay na resulta. Pag-ugnayin ang magkakaibang papel nang walang pangako o kapalit na pagtatasa.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi kapalit ng health professional ang opisyal o kapwa BHW. Walang garantiya ng transportasyon, kagamitan, oras ng sagot, o matagumpay na resulta. Pag-ugnayin ang magkakaibang papel nang walang pangako o kapalit na pagtatasa.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00.00 - 00:05.35\",\n      \"detail\": \"Female voice speaks the first sentence: 'Hindi kapalit ng health professional ang opisyal o kapwa BHW.' Negation ('Hindi') and role designations ('health professional', 'opisyal o kapwa BHW') are clearly articulated.\"\n    },\n    {\n      \"timestamp\": \"00:05.55 - 00:12.40\",\n      \"detail\": \"Unexpected speaker change to a male voice for the second sentence: 'Walang garantiya ng transportasyon, kagamitan, oras ng sagot, o matagumpay na resulta.' Negation ('Walang') is clearly pronounced.\"\n    },\n    {\n      \"timestamp\": \"00:12.80 - 00:18.35\",\n      \"detail\": \"Speaker switches back to the female voice for the third sentence: 'Pag-ugnayin ang magkakaibang papel nang walang pangako o kapalit na pagtatasa.' Negation ('walang') is clearly pronounced and the ending cadence is complete.\"\n    },\n    {\n      \"timestamp\": \"00:00.00 - 00:18.50\",\n      \"detail\": \"The name/word 'Malou' is not present in this excerpt.\"\n    }\n  ],\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:05.55 - 00:12.80\",\n      \"description\": \"Noticeable and abrupt speaker gender/voice switches: female voice (00:00 - 00:05.35), male voice (00:05.55 - 00:12.40), and returning to female voice (00:12.80 - 00:18.35).\"\n    }\n  ],\n  \"uncertainty\": \"None regarding the spoken text; all words are audible and clear without clipping or truncation.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-fil",
+      "language": "fil",
+      "source_path": "/training/bhw-1-5/bhw-relationships-gemini-fil-4ca9cef0ede3.mp4",
+      "source_sha256": "4ca9cef0ede3418cd801891e8e7120d5374916c8ab5777e92c724bf7afd85e37",
+      "decoded_pcm_sha256": "edec1b7c2b0f6ed9ee1e2f5406dc26b950f3843a8daba9a08a0cff59c4db97f7",
+      "full_audio_metrics": {
+        "samples": 1778688,
+        "seconds": 74.112,
+        "rms": 0.0974496741789287,
+        "peak": 0.679473876953125,
+        "quiet_sample_fraction": 0.21377667134427172
+      },
+      "zones": [
+        {
+          "zone": "courtyard",
+          "index": 0,
+          "text": "Sa kathang-isip na bakuran, may dalawang tanong si Nena. Nakikinig si Malou at nagtatanong kung ano ang nais niyang unahin.",
+          "start_ms": 0,
+          "end_ms": 8800,
+          "samples": 211200,
+          "seconds": 8.8,
+          "rms": 0.09782145808380965,
+          "peak": 0.573211669921875,
+          "quiet_sample_fraction": 0.20086647727272727
+        },
+        {
+          "zone": "resident",
+          "index": 1,
+          "text": "Inuulit ni Malou ang narinig at hinahayaang itama ni Nena ang kaniyang pagkaunawa. Mahalaga ang impormasyon at pagpili ng residente.",
+          "start_ms": 9100,
+          "end_ms": 18380,
+          "samples": 222720,
+          "seconds": 9.28,
+          "rms": 0.09194425530217169,
+          "peak": 0.5931396484375,
+          "quiet_sample_fraction": 0.18433908045977013
+        },
+        {
+          "zone": "map",
+          "index": 2,
+          "text": "Apat na ugnayan ang balangkas natin: komunidad, itinalagang health professional, barangay officials at kapwa BHW. May magkakaibang layunin at hangganan ang bawat isa.",
+          "start_ms": 18680,
+          "end_ms": 32320,
+          "samples": 327360,
+          "seconds": 13.64,
+          "rms": 0.09556818971730402,
+          "peak": 0.592987060546875,
+          "quiet_sample_fraction": 0.187225073313783
+        },
+        {
+          "zone": "professional",
+          "index": 3,
+          "text": "Ang personal na tanong pangkalusugan ay nangangailangan ng awtorisadong propesyonal na gabay. Tiyakin ang lokal na contact; hindi kapalit ng pagtatasa ang posisyon o hula.",
+          "start_ms": 32620,
+          "end_ms": 44380,
+          "samples": 282240,
+          "seconds": 11.76,
+          "rms": 0.0853224634445177,
+          "peak": 0.644256591796875,
+          "quiet_sample_fraction": 0.15169359410430838
+        },
+        {
+          "zone": "support",
+          "index": 4,
+          "text": "Hiwalay na linawin ang lugar sa responsableng coordinator. Maaaring tumulong ang kapwa BHW sa karaniwang gawain. Walang garantiya ng kagamitan, transportasyon o resulta.",
+          "start_ms": 44680,
+          "end_ms": 58120,
+          "samples": 322560,
+          "seconds": 13.44,
+          "rms": 0.10581124130454121,
+          "peak": 0.58343505859375,
+          "quiet_sample_fraction": 0.13346044146825398
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Ipaliwanag ang apat na papel. Pumili ayon sa alalahanin, magbigay ng dahilan at itanong kung sino ang responsable. Igalang ang nais ng residente at magsanay muli.",
+          "start_ms": 58420,
+          "end_ms": 72900,
+          "samples": 347520,
+          "seconds": 14.48,
+          "rms": 0.11164189891636608,
+          "peak": 0.679473876953125,
+          "quiet_sample_fraction": 0.243367288213628
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 0,
+          "end": 18.38,
+          "file": "shipped-story-fil-decisive.wav",
+          "excerpt_sha256": "65fee73cd64ebe8f631b00e592d23460d22cb7847b2e5c7de00a3e918b2f4886",
+          "decoded_sample_count": 441120,
+          "expected_context": "Sa kathang-isip na bakuran, may dalawang tanong si Nena. Nakikinig si Malou at nagtatanong kung ano ang nais niyang unahin. Inuulit ni Malou ang narinig at hinahayaang itama ni Nena ang kaniyang pagkaunawa. Mahalaga ang impormasyon at pagpili ng residente.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa kathang-isip na bakuran, may dalawang tanong si Nena. Nakikinig si Malou at nagtatanong kung ano ang nais niyang unahin. Inuulit ni Malou ang narinig at hinahayaang itama ni Nena ang kanyang pagkaunawa. Mahalaga ang impormasyon at pagpili ng residente.\",\n  \"observations\": [\n    {\n      \"category\": \"pronunciation\",\n      \"timestamp\": \"00:05.15 - 00:05.60\",\n      \"detail\": \"The name 'Malou' is clearly pronounced as [mah-LOO] (/ma'lu/) with expected stress on the second syllable.\"\n    },\n    {\n      \"category\": \"pronunciation\",\n      \"timestamp\": \"00:09.95 - 00:10.40\",\n      \"detail\": \"The second occurrence of 'Malou' is also consistently pronounced as [mah-LOO] (/ma'lu/).\"\n    },\n    {\n      \"category\": \"negation\",\n      \"detail\": \"No grammatical negation markers (e.g., 'hindi', 'wala', 'huwag') occur in the text.\"\n    },\n    {\n      \"category\": \"role distinctions\",\n      \"detail\": \"The delivery is third-person narration describing interactions between Malou and Nena; narrator voice maintains a steady educational tone without adopting distinct character voices.\"\n    },\n    {\n      \"category\": \"voice consistency\",\n      \"detail\": \"Voice quality, pacing, and timbre remain consistent throughout without sudden acoustic or speaker shifts.\"\n    },\n    {\n      \"category\": \"ending completeness\",\n      \"timestamp\": \"00:17.50 - 00:18.40\",\n      \"detail\": \"The final word 'residente' concludes naturally with fully articulated final syllables and natural decay to silence.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. Speech is clear, intelligible, and free of audible artifacts or clipping.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 44.68,
+          "end": 74.112,
+          "file": "shipped-story-fil-ending.wav",
+          "excerpt_sha256": "75ba63b300d00e4dd1b767ee3da24bb8244134141ed0c1b6f0ff4ce89f483df6",
+          "decoded_sample_count": 706368,
+          "expected_context": "Hiwalay na linawin ang lugar sa responsableng coordinator. Maaaring tumulong ang kapwa BHW sa karaniwang gawain. Walang garantiya ng kagamitan, transportasyon o resulta. Ipaliwanag ang apat na papel. Pumili ayon sa alalahanin, magbigay ng dahilan at itanong kung sino ang responsable. Igalang ang nais ng residente at magsanay muli.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hiwalay na linawin ang lugar sa responsableng coordinator. Maaaring tumulong ang kapwa BHW sa karaniwang gawain. Walang garantiya ng kagamitan, transportasyon, o resulta. Ipaliwanag ang apat na papel. Pumili ayon sa alalahanin, magbigay ng dahilan, at itanong kung sino ang responsable. Igalang ang nais ng residente, at magsanay muli.\",\n  \"observations\": \"The excerpt features a steady, clear instructional reading delivered by a single female voice. The negation 'Walang' at 00:08–00:10 is articulated clearly. The name 'Malou' does not appear in this audio clip. Pacing is deliberate with natural pauses between list items. The final phrase 'at magsanay muli' concludes naturally with no clipped syllables.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is clear and free of background noise or audio artifacts.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-community-listening-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/community-listening.en.53770bf83fd6.mp3",
+      "source_sha256": "fa593f89129150be66ad4a65d4f600c9ef5f0678ba9a8fdcea04c772b3fd42a5",
+      "decoded_pcm_sha256": "72a94c87d5585a43a3862cbb8ac908309d3050c4451e3cbcbb602ea8acb1d3c6",
+      "full_audio_metrics": {
+        "samples": 1161718,
+        "seconds": 48.404916666666665,
+        "rms": 0.1363701338126474,
+        "peak": 0.999969482421875,
+        "quiet_sample_fraction": 0.23181443345114736
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Listen before assuming",
+          "start_ms": 0,
+          "end_ms": 2720,
+          "samples": 65280,
+          "seconds": 2.72,
+          "rms": 0.11441038824000434,
+          "peak": 0.82781982421875,
+          "quiet_sample_fraction": 0.2685049019607843
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Malou repeats what she heard: “You want to confirm the venue and speak with a health professional.",
+          "start_ms": 3020,
+          "end_ms": 9140,
+          "samples": 146880,
+          "seconds": 6.12,
+          "rms": 0.12402738724004891,
+          "peak": 0.72161865234375,
+          "quiet_sample_fraction": 0.209375
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Have I understood correctly?”",
+          "start_ms": 9440,
+          "end_ms": 11560,
+          "samples": 50880,
+          "seconds": 2.12,
+          "rms": 0.1411692737936804,
+          "peak": 0.83465576171875,
+          "quiet_sample_fraction": 0.2532429245283019
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Nena can correct that summary and explain what matters to her.",
+          "start_ms": 11860,
+          "end_ms": 15700,
+          "samples": 92160,
+          "seconds": 3.84,
+          "rms": 0.17375466266832146,
+          "peak": 0.944915771484375,
+          "quiet_sample_fraction": 0.15223524305555555
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Malou knows that Nena has two questions.",
+          "start_ms": 16000,
+          "end_ms": 19480,
+          "samples": 83520,
+          "seconds": 3.48,
+          "rms": 0.13967422664237195,
+          "peak": 0.85552978515625,
+          "quiet_sample_fraction": 0.18275862068965518
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "She still needs to confirm the venue, the locally designated professional contact, and Nena's preferred way to ask.",
+          "start_ms": 19780,
+          "end_ms": 27300,
+          "samples": 180480,
+          "seconds": 7.52,
+          "rms": 0.14975963602822537,
+          "peak": 0.758544921875,
+          "quiet_sample_fraction": 0.12476728723404255
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Malou does not assume that Nena needs transport or has a particular illness.",
+          "start_ms": 27600,
+          "end_ms": 33040,
+          "samples": 130560,
+          "seconds": 5.44,
+          "rms": 0.1357696794141965,
+          "peak": 0.815887451171875,
+          "quiet_sample_fraction": 0.15236672794117648
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "She asks, “What information would help you, and how would you prefer to receive it?”",
+          "start_ms": 33340,
+          "end_ms": 39140,
+          "samples": 139200,
+          "seconds": 5.8,
+          "rms": 0.11881586855262354,
+          "peak": 0.8468017578125,
+          "quiet_sample_fraction": 0.21183908045977012
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Use fictional details only during practice.",
+          "start_ms": 39440,
+          "end_ms": 42920,
+          "samples": 83520,
+          "seconds": 3.48,
+          "rms": 0.12179313241354724,
+          "peak": 0.825286865234375,
+          "quiet_sample_fraction": 0.2139727011494253
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Repeat, clarify and invite the resident to correct your understanding.",
+          "start_ms": 43220,
+          "end_ms": 48340,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.16649050113749864,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.1852294921875
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 3.02,
+          "end": 15.7,
+          "file": "read-community-listening-en-decisive.wav",
+          "excerpt_sha256": "f40cc0587372532037e51d9c3aa5366277c0399111ffd02d0b78a32e2c046f90",
+          "decoded_sample_count": 304320,
+          "expected_context": "Malou repeats what she heard: “You want to confirm the venue and speak with a health professional. Have I understood correctly?” Nena can correct that summary and explain what matters to her.",
+          "model_response": "```json\n{\n  \"transcript\": \"Malou repeats what she heard: You want to confirm the venue and speak with a health professional. Have I understood correctly? Nana can correct that summary and explain what matters to her.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as /məˈluː/ ('mah-LOO') with second-syllable stress around 00:00.05–00:00.58.\",\n    \"negation\": \"No negative grammatical constructions (e.g., 'not', 'no', 'never') occur in the excerpt.\",\n    \"role_distinctions\": \"Clear vocal shifts occur: narrator delivery (00:00.00–00:02.12), in-character speech as Malou paraphrasing and inquiring (00:02.16–00:08.05), and a return to narrator framing (00:08.60–00:12.82).\",\n    \"ending_completeness\": \"The audio concludes naturally with complete decay on the word 'her' around 00:12.82, with no abrupt clipping.\",\n    \"audible_speech\": \"All words are fully articulated, clear, and cleanly audible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Pitch and character adjustments align with conversational role-play rather than artifactual or unintended voice breaks.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is clean and speech is distinctly intelligible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 33.34,
+          "end": 48.404916666666665,
+          "file": "read-community-listening-en-ending.wav",
+          "excerpt_sha256": "aa96dd183afb263ec4a82f7f9f312b6e8a25ef4d268f9972674c461bcbf37552",
+          "decoded_sample_count": 361558,
+          "expected_context": "She asks, “What information would help you, and how would you prefer to receive it?” Use fictional details only during practice. Repeat, clarify and invite the resident to correct your understanding.",
+          "model_response": "```json\n{\n  \"transcript\": \"She asks, what information would help you, and how would you prefer to receive it? Use fictional details only during practice. Repeat, clarify, and invite the resident to correct your understanding.\",\n  \"observations\": {\n    \"speaker\": \"Single female speaker with Philippine English accent, delivering instructions clearly and steadily.\",\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"No grammatical negation words ('no', 'not', 'never', etc.) occur in this clip.\",\n    \"role_distinctions\": \"Single narrator voice conveying guidance/instructions throughout; no conversational role changes present.\",\n    \"ending_completeness\": \"The audio concludes naturally with full decay on 'understanding' around 00:14.9, with no trailing truncation.\",\n    \"audible_speech\": \"All speech is clearly audible with minimal background noise.\",\n    \"clipped_words\": \"None detected; word boundaries at both ends of phrases are intact.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and acoustic environment remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the speech signal is clean and fully intelligible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "facts-versus-unknowns",
+          "start": 11.86,
+          "end": 27.3,
+          "file": "read-community-listening-en-facts-versus-unknowns.wav",
+          "excerpt_sha256": "f6211262c21cacf1439de86810efe4eeb54565f77afffa8d630587085c36aaec",
+          "decoded_sample_count": 370560,
+          "expected_context": "Nena can correct that summary and explain what matters to her. Malou knows that Nena has two questions. She still needs to confirm the venue, the locally designated professional contact, and Nena's preferred way to ask.",
+          "model_response": "```json\n{\n  \"transcript\": \"Nenna can correct that summary and explain what matters to her. Malou knows that Nenna has two questions. She still needs to confirm the venue, the locally designated professional contact, and Nenna's preferred way to ask.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced as 'mah-LOO' (/mɑːˈluː/ or /məˈluː/) around 00:04–00:05 with primary stress on the second syllable.\",\n    \"negation\": \"No negative constructions are used in the audio excerpt.\",\n    \"role_distinctions_and_voice_changes\": \"A distinct voice change occurs between 00:04 and 00:07, where a higher-pitched female voice reads 'Malou knows that Nenna has two questions', before reverting at 00:08 to the initial narrator voice.\",\n    \"ending_completeness\": \"The final sentence finishes completely at 00:15 with the word 'ask' and a natural pause/cadence without abrupt cutoff.\",\n    \"clipped_words\": \"None observed; word boundaries are intact and clearly articulated.\",\n    \"audible_speech\": \"All speech is clear, audible, and intelligible throughout the clip.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:04 - 00:07\",\n      \"description\": \"Noticeable mid-sentence/mid-paragraph shift in voice timbre and pitch for the sentence 'Malou knows that Nenna has two questions.'\"\n    }\n  ],\n  \"uncertainty\": \"None detected.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-relationships-application-check-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/relationships-application-check.en.e4c0d280b174.mp3",
+      "source_sha256": "2d473649b4f4117c20e57cf31cf910cced08ceae0f13d67b20f504a6061149eb",
+      "decoded_pcm_sha256": "8dfaf2c75d82f2861aba6220684d603efd56643de0945191e49ae01d84056598",
+      "full_audio_metrics": {
+        "samples": 1445094,
+        "seconds": 60.21225,
+        "rms": 0.13394749077194723,
+        "peak": 0.999969482421875,
+        "quiet_sample_fraction": 0.2571625098436503
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Explain and apply the relationships",
+          "start_ms": 0,
+          "end_ms": 2840,
+          "samples": 68160,
+          "seconds": 2.84,
+          "rms": 0.13498412971586154,
+          "peak": 0.786590576171875,
+          "quiet_sample_fraction": 0.24499706572769953
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Try the application check below.",
+          "start_ms": 3140,
+          "end_ms": 5620,
+          "samples": 59520,
+          "seconds": 2.48,
+          "rms": 0.15993819387732075,
+          "peak": 0.92950439453125,
+          "quiet_sample_fraction": 0.21480174731182797
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "In Nena's fictional situation, explain what each relationship can contribute and what it cannot decide.",
+          "start_ms": 5920,
+          "end_ms": 13760,
+          "samples": 188160,
+          "seconds": 7.84,
+          "rms": 0.11166214114379693,
+          "peak": 0.73541259765625,
+          "quiet_sample_fraction": 0.20542091836734694
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Give a reason for the contact you choose and one question you would use to verify that person's role.",
+          "start_ms": 14060,
+          "end_ms": 21140,
+          "samples": 169920,
+          "seconds": 7.08,
+          "rms": 0.14856897330105895,
+          "peak": 0.792236328125,
+          "quiet_sample_fraction": 0.14884651600753296
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "For equivalent written or paired practice, make four cards: resident's concern and choice; professional question; administrative support request; peer task.",
+          "start_ms": 21440,
+          "end_ms": 33920,
+          "samples": 299520,
+          "seconds": 12.48,
+          "rms": 0.1339074232262595,
+          "peak": 0.823638916015625,
+          "quiet_sample_fraction": 0.28474559294871793
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Match each to an appropriate locally confirmed role, then explain the limits.",
+          "start_ms": 34220,
+          "end_ms": 40260,
+          "samples": 144960,
+          "seconds": 6.04,
+          "rms": 0.13553993879489543,
+          "peak": 0.8258056640625,
+          "quiet_sample_fraction": 0.22662113686534216
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Your partner can ask, “What do you still need to clarify?”",
+          "start_ms": 40560,
+          "end_ms": 44280,
+          "samples": 89280,
+          "seconds": 3.72,
+          "rms": 0.13901393732068942,
+          "peak": 0.85028076171875,
+          "quiet_sample_fraction": 0.20969982078853047
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Use invented details, receive feedback and try again.",
+          "start_ms": 44580,
+          "end_ms": 49100,
+          "samples": 108480,
+          "seconds": 4.52,
+          "rms": 0.14109082385439212,
+          "peak": 0.932373046875,
+          "quiet_sample_fraction": 0.20180678466076696
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Judge the explanation, not the person's accent or personality.",
+          "start_ms": 49400,
+          "end_ms": 53880,
+          "samples": 107520,
+          "seconds": 4.48,
+          "rms": 0.15245342259024897,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.20189732142857142
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Explain the choice, verify the role and respect the resident’s preferences.",
+          "start_ms": 54180,
+          "end_ms": 60140,
+          "samples": 143040,
+          "seconds": 5.96,
+          "rms": 0.13608697051533822,
+          "peak": 0.828369140625,
+          "quiet_sample_fraction": 0.2181347874720358
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 34.22,
+          "end": 49.1,
+          "file": "read-relationships-application-check-en-decisive.wav",
+          "excerpt_sha256": "1368b0df7a16a5dbfaabff6178b2801c79c56c59cd9a4f5c932df6d364dc8786",
+          "decoded_sample_count": 357120,
+          "expected_context": "Match each to an appropriate locally confirmed role, then explain the limits. Your partner can ask, “What do you still need to clarify?” Use invented details, receive feedback and try again.",
+          "model_response": "```json\n{\n  \"transcript\": \"Match each to an appropriate locally confirmed role, then explain the limits. Your partner can ask, what do you still need to clarify? Use invented details, receive feedback, and try again.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"No negative constructions or negation terms (e.g., 'not', 'no', 'never') are present.\",\n    \"role_distinctions\": \"There are two distinct speaker voices: Speaker 1 delivers the general instructions (00:00 - 00:05.5 and 00:10.5 - 00:14.8), while Speaker 2 provides the dialogue prompt for the partner (00:06.0 - 00:09.8).\",\n    \"ending_completeness\": \"The audio concludes naturally with complete articulation of 'again' followed by silence.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and free of background noise.\",\n    \"clipped_words\": \"None observed; word onsets and codas are fully rendered.\",\n    \"unexpected_voice_changes\": \"Speaker shifts occur at 00:06.0 and 00:10.5, aligning with functional role differentiation between instructional narration and example partner speech.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None detected; speech boundaries and roles are clearly distinguishable.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 44.58,
+          "end": 60.21225,
+          "file": "read-relationships-application-check-en-ending.wav",
+          "excerpt_sha256": "8dd37980598f7fce5675d4a1bb778469391a5a68ccaec0bf7827c205933ab2a7",
+          "decoded_sample_count": 375174,
+          "expected_context": "Use invented details, receive feedback and try again. Judge the explanation, not the person's accent or personality. Explain the choice, verify the role and respect the resident’s preferences.",
+          "model_response": "```json\n{\n  \"transcript\": \"Use invented details, receive feedback, and try again. Judge the explanation, not the person's accent or personality. Explain the choice, verify the role, and respect the resident's preferences.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"The negation 'not' in 'not the person's accent or personality' (00:06 - 00:07) is articulated clearly without drop-off.\",\n    \"role_distinctions\": \"The speaker delivers instructional guidelines with distinct pacing between imperative phrases.\",\n    \"ending_completeness\": \"The audio concludes completely on the word 'preferences' at 00:15 with no abrupt cut.\",\n    \"audible_speech\": \"All speech is clearly audible and cleanly enunciated in Philippine English.\",\n    \"clipped_words\": \"No clipped or cut-off words detected.\",\n    \"unexpected_voice_changes\": \"The vocal pitch, pacing, and tone remain stable and consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-section-1-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-1.en.422ed4b48951.mp3",
+      "source_sha256": "4656a5c8fd162da5875b63d8da0f722a14ccb70431c51cc9e63f06acbe640075",
+      "decoded_pcm_sha256": "510842154330b27c35df407af03d620dc5ea97f2ca7df53126a087974ea68389",
+      "full_audio_metrics": {
+        "samples": 1218143,
+        "seconds": 50.75595833333333,
+        "rms": 0.13840364228316498,
+        "peak": 0.939056396484375,
+        "quiet_sample_fraction": 0.21413577880429474
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Malou listens in the courtyard",
+          "start_ms": 0,
+          "end_ms": 2520,
+          "samples": 60480,
+          "seconds": 2.52,
+          "rms": 0.19552904983200436,
+          "peak": 0.89996337890625,
+          "quiet_sample_fraction": 0.22610780423280424
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "In this fictional learning situation, BHW Malou meets Aling Nena in a shaded barangay courtyard.",
+          "start_ms": 2820,
+          "end_ms": 10380,
+          "samples": 181440,
+          "seconds": 7.56,
+          "rms": 0.1401886761736608,
+          "peak": 0.86474609375,
+          "quiet_sample_fraction": 0.12824074074074074
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Nena asks about a planned community health activity: “Where will it be held?",
+          "start_ms": 10680,
+          "end_ms": 16240,
+          "samples": 133440,
+          "seconds": 5.56,
+          "rms": 0.16864259297915263,
+          "peak": 0.866424560546875,
+          "quiet_sample_fraction": 0.24805905275779377
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "I also want to ask a health professional whether it is suitable for me.”",
+          "start_ms": 16540,
+          "end_ms": 20940,
+          "samples": 105600,
+          "seconds": 4.4,
+          "rms": 0.11496507163365459,
+          "peak": 0.78619384765625,
+          "quiet_sample_fraction": 0.19172348484848484
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Malou listens and asks which question Nena wants help with first.",
+          "start_ms": 21240,
+          "end_ms": 26480,
+          "samples": 125760,
+          "seconds": 5.24,
+          "rms": 0.13470643330238266,
+          "peak": 0.88165283203125,
+          "quiet_sample_fraction": 0.15284669211195928
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "The venue question and the personal health question need different kinds of support.",
+          "start_ms": 26780,
+          "end_ms": 32340,
+          "samples": 133440,
+          "seconds": 5.56,
+          "rms": 0.1412922993078843,
+          "peak": 0.932464599609375,
+          "quiet_sample_fraction": 0.15508842925659472
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Nena's preferences matter; Malou does not decide what she needs without asking.",
+          "start_ms": 32640,
+          "end_ms": 38640,
+          "samples": 144000,
+          "seconds": 6,
+          "rms": 0.1270475255725805,
+          "peak": 0.783905029296875,
+          "quiet_sample_fraction": 0.20390277777777777
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Learners can finish this lesson in either reading or slide mode without watching the optional story.",
+          "start_ms": 38940,
+          "end_ms": 45380,
+          "samples": 154560,
+          "seconds": 6.44,
+          "rms": 0.14323200297641858,
+          "peak": 0.83721923828125,
+          "quiet_sample_fraction": 0.13003364389233954
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Listen to the resident and separate the questions before choosing support.",
+          "start_ms": 45680,
+          "end_ms": 50680,
+          "samples": 120000,
+          "seconds": 5,
+          "rms": 0.12329648708773633,
+          "peak": 0.939056396484375,
+          "quiet_sample_fraction": 0.18138333333333334
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 2.82,
+          "end": 20.94,
+          "file": "read-section-1-en-decisive.wav",
+          "excerpt_sha256": "f60c8619936470a07053c4b1776a11871da8c9ec08471d8399c0730d835ae049",
+          "decoded_sample_count": 434880,
+          "expected_context": "In this fictional learning situation, BHW Malou meets Aling Nena in a shaded barangay courtyard. Nena asks about a planned community health activity: “Where will it be held? I also want to ask a health professional whether it is suitable for me.”",
+          "model_response": "```json\n{\n  \"transcript\": \"In this fictional learning situation, BHW Malou meets Aling Nena in a shaded barangay courtyard. Nena asks about a planned community health activity: Where will it be held? I also want to ask a health professional whether it is suitable for me.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as [mɐˈlu] / 'mah-LOO' around 00:03.4.\",\n    \"negation\": \"No negative constructions are present in the text.\",\n    \"role_distinctions\": \"A single narrator voice delivers the context introduction as well as Nena's quoted questions without distinct voice acting, though pacing shifts slightly into direct speech around 00:12.0.\",\n    \"ending_completeness\": \"The audio concludes fully on 'for me' with natural trailing decay without truncation.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible throughout.\",\n    \"clipped_words\": \"No clipped or abruptly cut off words detected.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and vocal identity remain consistent throughout the recording.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 32.64,
+          "end": 50.75595833333333,
+          "file": "read-section-1-en-ending.wav",
+          "excerpt_sha256": "fc6a53e5e68539253dc60c82378c75bbf3a543fbcd4d21a5357d9a975ead428f",
+          "decoded_sample_count": 434783,
+          "expected_context": "Nena's preferences matter; Malou does not decide what she needs without asking. Learners can finish this lesson in either reading or slide mode without watching the optional story. Listen to the resident and separate the questions before choosing support.",
+          "model_response": "```json\n{\n  \"transcript\": \"Nana's preferences matter. Malou does not decide what she needs without asking. Learners can finish this lesson in either reading or slide mode, without watching the optional story. Listen to the resident and separate the questions before choosing support.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"At 00:02.4, 'Malou' is pronounced accurately with stress on the second syllable matching [mah-LOO] (/məˈluː/).\",\n    \"negation\": \"Clear presence and articulation of negative markers: 'does not decide' (00:02.6 - 00:03.3), 'without asking' (00:04.6 - 00:05.5), and 'without watching' (00:10.5 - 00:11.4).\",\n    \"role_distinctions\": \"The segment encompasses scenario narrative regarding Nana and Malou (00:00.0 - 00:05.6), navigation instructions for learners (00:06.0 - 00:12.4), and a specific task directive (00:13.1 - 00:17.4).\",\n    \"ending_completeness\": \"The excerpt concludes with a complete sentence at 00:17.4 followed by a natural silence; no premature cut-off is observed.\",\n    \"audible_speech\": \"Speech is fully intelligible and articulate across all sentences.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants (e.g., 'matter', 'asking', 'support') are intact.\",\n    \"voice_changes\": \"A noticeable shift in speaker timbre and accent occurs between 00:12.4 and 00:13.1, switching from a British-accented instructional voice to an American-accented instructional voice.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp_range\": \"00:12.4 - 00:13.1\",\n      \"issue\": \"Unexpected voice change between sequential instructional prompts.\"\n    }\n  ],\n  \"uncertainty\": \"None; all spoken phrases and acoustic shifts are distinct and clearly audible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-section-2-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-2.en.56ee444fbab3.mp3",
+      "source_sha256": "10060417c252aa0be30144cf868cf10f025df570aad5253e28f88e1e35ce2a33",
+      "decoded_pcm_sha256": "dcb5e616bf3bb3e61fdf5e686e4207f6c169d9ad547251560aa2e01acc54ed4c",
+      "full_audio_metrics": {
+        "samples": 1840066,
+        "seconds": 76.66941666666666,
+        "rms": 0.1407913140452316,
+        "peak": 0.95220947265625,
+        "quiet_sample_fraction": 0.18663406638674918
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Four relationships, different purposes",
+          "start_ms": 0,
+          "end_ms": 3320,
+          "samples": 79680,
+          "seconds": 3.32,
+          "rms": 0.14192361441252005,
+          "peak": 0.8050537109375,
+          "quiet_sample_fraction": 0.2950301204819277
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "This lesson uses four relationships as an authored teaching organizer, not an official four-category chain of command.",
+          "start_ms": 3620,
+          "end_ms": 11700,
+          "samples": 193920,
+          "seconds": 8.08,
+          "rms": 0.13435041971704414,
+          "peak": 0.81494140625,
+          "quiet_sample_fraction": 0.12579414191419142
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Community: residents and families contribute their concerns, information and choices.",
+          "start_ms": 12000,
+          "end_ms": 18720,
+          "samples": 161280,
+          "seconds": 6.72,
+          "rms": 0.16095168679084296,
+          "peak": 0.77825927734375,
+          "quiet_sample_fraction": 0.13315972222222222
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Listen and clarify with them rather than treating them as passive recipients.",
+          "start_ms": 19020,
+          "end_ms": 24380,
+          "samples": 128640,
+          "seconds": 5.36,
+          "rms": 0.15492507762775085,
+          "peak": 0.8397216796875,
+          "quiet_sample_fraction": 0.15928949004975124
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Designated midwife or Rural Health Unit health professional: seek authorized professional guidance for health questions, following locally confirmed arrangements.",
+          "start_ms": 24680,
+          "end_ms": 36240,
+          "samples": 277440,
+          "seconds": 11.56,
+          "rms": 0.11866129312345255,
+          "peak": 0.8740234375,
+          "quiet_sample_fraction": 0.12083693771626297
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "A BHW or peer does not replace professional assessment.",
+          "start_ms": 36540,
+          "end_ms": 41340,
+          "samples": 115200,
+          "seconds": 4.8,
+          "rms": 0.13543262827314168,
+          "peak": 0.83642578125,
+          "quiet_sample_fraction": 0.18839409722222222
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Barangay officials: ask the responsible local contact about administrative support, facilities or activity arrangements.",
+          "start_ms": 41640,
+          "end_ms": 51400,
+          "samples": 234240,
+          "seconds": 9.76,
+          "rms": 0.1421404346501348,
+          "peak": 0.876434326171875,
+          "quiet_sample_fraction": 0.14957735655737706
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Support depends on local roles and available resources; it is not guaranteed.",
+          "start_ms": 51700,
+          "end_ms": 57700,
+          "samples": 144000,
+          "seconds": 6,
+          "rms": 0.14153074709597704,
+          "peak": 0.83203125,
+          "quiet_sample_fraction": 0.14052777777777778
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Fellow BHWs: share routine work experience, coordinate agreed tasks and help identify questions to clarify.",
+          "start_ms": 58000,
+          "end_ms": 66720,
+          "samples": 209280,
+          "seconds": 8.72,
+          "rms": 0.16410135780805937,
+          "peak": 0.891571044921875,
+          "quiet_sample_fraction": 0.13808772935779817
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Peer advice does not become clinical authority.",
+          "start_ms": 67020,
+          "end_ms": 70700,
+          "samples": 88320,
+          "seconds": 3.68,
+          "rms": 0.1460046540409223,
+          "peak": 0.8958740234375,
+          "quiet_sample_fraction": 0.18944746376811594
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Each relationship has a purpose and a limit; verify the local roles.",
+          "start_ms": 71000,
+          "end_ms": 76600,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.14811073541964284,
+          "peak": 0.95220947265625,
+          "quiet_sample_fraction": 0.18067708333333332
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 0,
+          "end": 18.72,
+          "file": "read-section-2-en-decisive.wav",
+          "excerpt_sha256": "447364edb2344e12b22436f6e60e4ea806dec46fa2972c7a7f8402cb8de96fe0",
+          "decoded_sample_count": 449280,
+          "expected_context": "Four relationships, different purposes This lesson uses four relationships as an authored teaching organizer, not an official four-category chain of command. Community: residents and families contribute their concerns, information and choices.",
+          "model_response": "```json\n{\n  \"transcript\": \"Four relationships, different purposes. This lesson uses four relationships as an authored teaching organizer, not an official four-category chain of command. Community: residents and families contribute their concerns, information, and choices.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name or word 'Malou' does not appear in this audio segment.\",\n    \"negation\": \"The negation 'not' in 'not an official four-category chain of command' is clearly audible and articulated at approximately 00:08.75–00:09.10.\",\n    \"role_distinctions_and_voice_changes\": \"A distinct voice change occurs: a female voice delivers the introductory heading ('Four relationships, different purposes') from 00:00.00 to 00:02.95, followed by a male narrator speaking the rest of the text from 00:03.65 to 00:18.40.\",\n    \"audible_speech_and_clipping\": \"All words are clearly audible and cleanly enunciated; no clipped beginnings or word cutoffs were detected.\",\n    \"ending_completeness\": \"The audio ends naturally after the final word 'choices' at approximately 00:18.40 with ambient decay, showing no premature cutoff.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp_range\": \"00:02.95 - 00:03.65\",\n      \"description\": \"Shift from female speaker to male speaker between the heading and body narration.\"\n    }\n  ],\n  \"uncertainty\": \"Low; audio clarity is high and speech content is unambiguous.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 58,
+          "end": 76.66941666666666,
+          "file": "read-section-2-en-ending.wav",
+          "excerpt_sha256": "a5a46525a96dd724acf364ef6b56c9831e9c9e978d72cbc5c34d55dfc828b274",
+          "decoded_sample_count": 448066,
+          "expected_context": "Fellow BHWs: share routine work experience, coordinate agreed tasks and help identify questions to clarify. Peer advice does not become clinical authority. Each relationship has a purpose and a limit; verify the local roles.",
+          "model_response": "```json\n{\n \"transcript\": \"Fellow BHWs share routine work experience, coordinate agreed tasks, and help identify questions to clarify. Peer advice does not become clinical authority. Each relationship has a purpose and a limit. Verify the local roles.\",\n \"observations\": {\n  \"malou_pronunciation\": \"The name Malou does not appear in this audio segment.\",\n  \"negation\": \"The negation 'does not' is clearly pronounced between 00:09 and 00:11.\",\n  \"role_distinctions\": \"Distinctions between peer support among BHWs and clinical authority, as well as clarifying local roles, are clearly articulated.\",\n  \"ending_completeness\": \"The audio concludes naturally with 'Verify the local roles.' without any abrupt cutoff.\",\n  \"audible_speech\": \"All words are clearly audible and intelligible throughout the excerpt.\",\n  \"clipped_words\": \"No clipped or truncated words detected.\",\n  \"unexpected_voice_changes\": \"Voice pitch, tone, and pacing remain consistent across the excerpt.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None detected; speech is fully clear and legible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-section-3-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/section-3.en.8f3a2920f542.mp3",
+      "source_sha256": "e985831e79cb6b99a651a15f2445792f04a880490a0343af75f367b435ce66eb",
+      "decoded_pcm_sha256": "dfab170e6e540c8bcf5c9db4cc8c7294a7c95343a4de3aa06bf28ae5ce82a691",
+      "full_audio_metrics": {
+        "samples": 1358577,
+        "seconds": 56.607375,
+        "rms": 0.1338503620500222,
+        "peak": 0.9827880859375,
+        "quiet_sample_fraction": 0.20356299274903078
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Choose a contact for the concern",
+          "start_ms": 0,
+          "end_ms": 2400,
+          "samples": 57600,
+          "seconds": 2.4,
+          "rms": 0.1182191230617349,
+          "peak": 0.8323974609375,
+          "quiet_sample_fraction": 0.2375
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "For Nena's personal health question, Malou helps clarify the locally designated midwife or authorized health professional and how to contact them.",
+          "start_ms": 2700,
+          "end_ms": 12620,
+          "samples": 238080,
+          "seconds": 9.92,
+          "rms": 0.1560050948243771,
+          "peak": 0.95318603515625,
+          "quiet_sample_fraction": 0.12191700268817204
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "She explains: “This question needs professional guidance; I should not answer it through a guess.”",
+          "start_ms": 12920,
+          "end_ms": 19120,
+          "samples": 148800,
+          "seconds": 6.2,
+          "rms": 0.10721475463549372,
+          "peak": 0.700439453125,
+          "quiet_sample_fraction": 0.14442204301075268
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "The exact local arrangement must be confirmed.",
+          "start_ms": 19420,
+          "end_ms": 22660,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.11677953685719217,
+          "peak": 0.753753662109375,
+          "quiet_sample_fraction": 0.17449845679012346
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "For the venue, Malou checks the activity's verified information and asks the responsible local coordinator if anything remains unclear.",
+          "start_ms": 22960,
+          "end_ms": 31920,
+          "samples": 215040,
+          "seconds": 8.96,
+          "rms": 0.1426162585270711,
+          "peak": 0.854949951171875,
+          "quiet_sample_fraction": 0.11601097470238095
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ask a contact, “Is this within your role?",
+          "start_ms": 32220,
+          "end_ms": 35580,
+          "samples": 80640,
+          "seconds": 3.36,
+          "rms": 0.13221472403591789,
+          "peak": 0.9827880859375,
+          "quiet_sample_fraction": 0.32570684523809523
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "If not, who is responsible?”",
+          "start_ms": 35880,
+          "end_ms": 38520,
+          "samples": 63360,
+          "seconds": 2.64,
+          "rms": 0.12542548089506927,
+          "peak": 0.724029541015625,
+          "quiet_sample_fraction": 0.3188289141414141
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Position or familiarity alone does not establish the right role.",
+          "start_ms": 38820,
+          "end_ms": 44180,
+          "samples": 128640,
+          "seconds": 5.36,
+          "rms": 0.16272201243307893,
+          "peak": 0.900146484375,
+          "quiet_sample_fraction": 0.12713774875621892
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "This is an organizational example, not medical triage or a universal referral sequence.",
+          "start_ms": 44480,
+          "end_ms": 51080,
+          "samples": 158400,
+          "seconds": 6.6,
+          "rms": 0.13776375719715328,
+          "peak": 0.9481201171875,
+          "quiet_sample_fraction": 0.15616161616161617
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Choose by the concern and confirmed role, rather than rank alone.",
+          "start_ms": 51380,
+          "end_ms": 56540,
+          "samples": 123840,
+          "seconds": 5.16,
+          "rms": 0.11979921176150389,
+          "peak": 0.896636962890625,
+          "quiet_sample_fraction": 0.16055394056847544
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 22.96,
+          "end": 38.52,
+          "file": "read-section-3-en-decisive.wav",
+          "excerpt_sha256": "d2199a270be7f993de5f6223ed6a838fbc4f1f3c7cde6a17617a03c20020f445",
+          "decoded_sample_count": 373440,
+          "expected_context": "For the venue, Malou checks the activity's verified information and asks the responsible local coordinator if anything remains unclear. Ask a contact, “Is this within your role? If not, who is responsible?”",
+          "model_response": "```json\n{\n  \"transcript\": \"For the venue, Malou checks the activity's verified information, and asks the responsible local coordinator if anything remains unclear. Ask a contact: Is this within your role? If not, who is responsible?\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced as 'mah-LOO' (/mɑːˈluː/) around 00:01.0 - 00:01.7, consistent with the specified pronunciation.\",\n    \"negation\": \"Clear negation spoken in 'If not' at approximately 00:13.0 - 00:13.7.\",\n    \"role_distinctions\": \"The speaker clearly distinguishes between instructional narrative ('Ask a contact') and the quoted direct question ('Is this within your role? If not, who is responsible?') through shifts in cadence and pitch.\",\n    \"ending_completeness\": \"The sentence 'who is responsible?' completes fully with natural falling intonation and trailing room decay up to 00:15.6 with no premature cutoff.\",\n    \"audible_speech\": \"All words are fully audible, intelligible, and delivered in clear Philippine English.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"None observed; pacing and vocal quality remain consistent across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 38.82,
+          "end": 56.607375,
+          "file": "read-section-3-en-ending.wav",
+          "excerpt_sha256": "12e71e5957149cc419a2d44c5cd5868e195eb459e00eaad7b762f1d71b461a9f",
+          "decoded_sample_count": 426897,
+          "expected_context": "Position or familiarity alone does not establish the right role. This is an organizational example, not medical triage or a universal referral sequence. Choose by the concern and confirmed role, rather than rank alone.",
+          "model_response": "```json\n{\n \"transcript\": \"Position or familiarity alone does not establish the right role. This is an organizational example, not medical triage or a universal referral sequence. Choose by the concern and confirmed role, rather than rank alone.\",\n \"observations\": {\n  \"speaker_transitions\": \"Audio features two alternating voices: Voice 1 speaks from 00:00.00 to 00:05.10, Voice 2 speaks from 00:05.65 to 00:12.20, and Voice 1 returns from 00:12.85 to 00:17.30.\",\n  \"malou_pronunciation\": \"The name or word 'Malou' is not present in this excerpt.\",\n  \"negation\": \"Negation terms ('does not establish' at 00:02.50–00:03.50 and 'not medical triage' at 00:08.50–00:09.80) are articulated clearly.\",\n  \"role_distinctions\": \"Phrasing regarding roles and organizational context ('the right role', 'organizational example', 'confirmed role', 'rank alone') is distinct and intelligible.\",\n  \"ending_completeness\": \"The excerpt concludes with a fully articulated sentence ending on 'alone' with a natural acoustic fadeout.\",\n  \"clipped_words\": \"None detected; word boundaries are intact at both the start and conclusion.\"\n },\n \"possible_defects\": [\n  {\n   \"type\": \"unexpected_voice_change\",\n   \"timestamps\": [\n    \"00:05.65\",\n    \"00:12.85\"\n   ],\n   \"description\": \"Shift in speaker identity, timbre, and accent between Voice 1 and Voice 2 without narrative continuity explanation.\"\n  }\n ],\n \"uncertainty\": \"None; all audible speech and speaker transitions are clear.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-shared-support-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/shared-support.en.8b6326bb9fa2.mp3",
+      "source_sha256": "076e2c31eb05af626dc6827afc7e40bb6ac358269edbb75a3d5208200c986256",
+      "decoded_pcm_sha256": "55b467f63b93989d580b0433ceb9aebc3a62100bab3c653619d493dbfe6b8bee",
+      "full_audio_metrics": {
+        "samples": 1396820,
+        "seconds": 58.200833333333335,
+        "rms": 0.13740603334567514,
+        "peak": 0.9427490234375,
+        "quiet_sample_fraction": 0.20177904096447646
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Coordinate support without replacing roles",
+          "start_ms": 0,
+          "end_ms": 3400,
+          "samples": 81600,
+          "seconds": 3.4,
+          "rms": 0.14914219718931923,
+          "peak": 0.802093505859375,
+          "quiet_sample_fraction": 0.19337009803921568
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Malou keeps the questions separate while coordinating support.",
+          "start_ms": 3700,
+          "end_ms": 7780,
+          "samples": 97920,
+          "seconds": 4.08,
+          "rms": 0.16013876888149986,
+          "peak": 0.86785888671875,
+          "quiet_sample_fraction": 0.19885620915032678
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "With Nena's agreement, she helps identify a suitable channel for the professional question.",
+          "start_ms": 8080,
+          "end_ms": 13800,
+          "samples": 137280,
+          "seconds": 5.72,
+          "rms": 0.13886791165232207,
+          "peak": 0.794830322265625,
+          "quiet_sample_fraction": 0.14230040792540793
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Separately, the responsible barangay contact may clarify the venue or a request for practical support.",
+          "start_ms": 14100,
+          "end_ms": 20860,
+          "samples": 162240,
+          "seconds": 6.76,
+          "rms": 0.15455814493664244,
+          "peak": 0.9427490234375,
+          "quiet_sample_fraction": 0.15620069033530573
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "A fellow BHW can help Malou organize an agreed routine task and check what remains unclear.",
+          "start_ms": 21160,
+          "end_ms": 28520,
+          "samples": 176640,
+          "seconds": 7.36,
+          "rms": 0.12889001878920686,
+          "peak": 0.82989501953125,
+          "quiet_sample_fraction": 0.12361865942028985
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Nena contributes her preferences throughout.",
+          "start_ms": 28820,
+          "end_ms": 32300,
+          "samples": 83520,
+          "seconds": 3.48,
+          "rms": 0.12257245181014569,
+          "peak": 0.754608154296875,
+          "quiet_sample_fraction": 0.19034961685823754
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Malou confirms what was actually agreed and what is still unknown.",
+          "start_ms": 32600,
+          "end_ms": 38040,
+          "samples": 130560,
+          "seconds": 5.44,
+          "rms": 0.15401035380137565,
+          "peak": 0.846099853515625,
+          "quiet_sample_fraction": 0.18529411764705883
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "An official or peer cannot replace the health professional's assessment.",
+          "start_ms": 38340,
+          "end_ms": 43820,
+          "samples": 131520,
+          "seconds": 5.48,
+          "rms": 0.11766562580052231,
+          "peak": 0.692474365234375,
+          "quiet_sample_fraction": 0.18978862530413626
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "No relationship guarantees transport, supplies, a response time or a successful outcome.",
+          "start_ms": 44120,
+          "end_ms": 52240,
+          "samples": 194880,
+          "seconds": 8.12,
+          "rms": 0.13931819879684082,
+          "peak": 0.893035888671875,
+          "quiet_sample_fraction": 0.1470648604269294
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Coordinate distinct roles without promising resources or replacing assessment.",
+          "start_ms": 52540,
+          "end_ms": 58140,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.13999125014216832,
+          "peak": 0.870513916015625,
+          "quiet_sample_fraction": 0.15326636904761906
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 0,
+          "end": 13.8,
+          "file": "read-shared-support-en-decisive.wav",
+          "excerpt_sha256": "53b1aa8d6ce4dd0d78a32f4e09df6829ddeec2d1d1491e147319492c6595aaea",
+          "decoded_sample_count": 331200,
+          "expected_context": "Coordinate support without replacing roles Malou keeps the questions separate while coordinating support. With Nena's agreement, she helps identify a suitable channel for the professional question.",
+          "model_response": "```json\n{\n  \"transcript\": \"coordinates support without replacing roles. Malou keeps the question separate while coordinating support. With Nena's agreement, she helps identify a suitable channel for the professional question.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced as [məˈluː] ('mah-LOO') with primary stress on the second syllable around 00:03.85, matching the expected pronunciation.\",\n    \"negation\": \"The negative preposition 'without' appears clearly at 00:01.40 - 00:01.90 ('without replacing roles').\",\n    \"role_distinctions\": \"The narrative distinguishes between coordinating support and replacing roles, maintaining boundaries between personal and professional channels (referencing Malou and Nena).\",\n    \"ending_completeness\": \"The audio ends cleanly at 00:13.20 with the word 'question' and natural room tone decay; no abrupt clipping detected.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and audible throughout the excerpt.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are fully formed.\",\n    \"voice_changes\": \"There is a noticeable speaker/voice transition between 00:03.15 and 00:03.75. The introductory phrase ('coordinates support without replacing roles') is spoken by a lower-pitched, American-accented voice, while the remainder (00:03.75 - 00:13.20) switches to a higher-pitched voice.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:03.15 - 00:03.75\",\n      \"description\": \"Noticeable voice shift from a lower-pitched introductory narrator to a different female speaker for the main text.\"\n    }\n  ],\n  \"uncertainty\": \"Low. The singular 'question' at 00:04.60 has a very faint sibilant tail from coarticulation with 'separate', but is clearly singular.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 38.34,
+          "end": 58.200833333333335,
+          "file": "read-shared-support-en-ending.wav",
+          "excerpt_sha256": "afa9837a861a46194f12976e6cd922156d8137d89cd12c06d9d93852816b2f21",
+          "decoded_sample_count": 476660,
+          "expected_context": "An official or peer cannot replace the health professional's assessment. No relationship guarantees transport, supplies, a response time or a successful outcome. Coordinate distinct roles without promising resources or replacing assessment.",
+          "model_response": "```json\n{\n  \"transcript\": \"An official or peer cannot replace the health professional's assessment. No relationship guarantees transport, supplies, a response time, or a successful outcome. Coordinate distinct roles without promising resources or replacing assessment.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name or word 'Malou' is not spoken in this audio segment.\",\n    \"negation\": \"Clear negations are articulated at 00:01.8–00:02.5 ('cannot'), 00:05.8–00:06.3 ('No relationship guarantees...'), and 00:16.2–00:16.9 ('without').\",\n    \"role_distinctions\": \"Distinctions between entities are clearly delivered ('official or peer', 'health professional's assessment', and 'distinct roles').\",\n    \"ending_completeness\": \"The audio concludes naturally with the word 'assessment' trailing off cleanly before the audio cutoff at 00:19.4; no clipped endings detected.\",\n    \"audible_speech\": \"All spoken words are fully intelligible and cleanly recorded with no significant background noise.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"A noticeable speaker change occurs at 00:14.0, shifting from a voice with mild/neutral accentuation to a second female voice featuring a more distinct Philippine English cadence and pitch profile.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"speaker_change\",\n      \"timestamp\": \"00:13.8 - 00:14.2\",\n      \"description\": \"Noticeable transition between two different female speakers/styles between the second and third sentences.\"\n    }\n  ],\n  \"uncertainty\": \"None. The speech is clearly audible throughout.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-en",
+      "language": "en",
+      "source_path": "/training/bhw-1-5/bhw-relationships-gemini-en-66157d84985f.mp4",
+      "source_sha256": "66157d84985fba6d9edce8bed4d136c168ef7c7e047297793eee7ee707228034",
+      "decoded_pcm_sha256": "0ad9c2a5f96cda98fa3f490a130f51513461dbc2ba8d636b8ce4eda8e2060dc0",
+      "full_audio_metrics": {
+        "samples": 1591808,
+        "seconds": 66.32533333333333,
+        "rms": 0.09028601350250555,
+        "peak": 0.675445556640625,
+        "quiet_sample_fraction": 0.23772904772434866
+      },
+      "zones": [
+        {
+          "zone": "courtyard",
+          "index": 0,
+          "text": "In the fictional courtyard, Nena has two questions. Malou listens and asks what she wants to clarify first.",
+          "start_ms": 0,
+          "end_ms": 8600,
+          "samples": 206400,
+          "seconds": 8.6,
+          "rms": 0.09778636194927934,
+          "peak": 0.606292724609375,
+          "quiet_sample_fraction": 0.18474806201550387
+        },
+        {
+          "zone": "resident",
+          "index": 1,
+          "text": "Malou repeats what she heard and invites Nena to correct her understanding. The resident’s information and choices matter.",
+          "start_ms": 8900,
+          "end_ms": 16900,
+          "samples": 192000,
+          "seconds": 8,
+          "rms": 0.10184877101392195,
+          "peak": 0.635162353515625,
+          "quiet_sample_fraction": 0.137375
+        },
+        {
+          "zone": "map",
+          "index": 2,
+          "text": "Our organizer has four relationships: community, the designated health professional, barangay officials and fellow BHWs. Each has a different purpose and limit.",
+          "start_ms": 17200,
+          "end_ms": 30240,
+          "samples": 312960,
+          "seconds": 13.04,
+          "rms": 0.10135478711279126,
+          "peak": 0.675445556640625,
+          "quiet_sample_fraction": 0.22686924846625767
+        },
+        {
+          "zone": "professional",
+          "index": 3,
+          "text": "The personal health question needs authorized professional guidance. Confirm the local contact; rank or a guess does not replace assessment.",
+          "start_ms": 30540,
+          "end_ms": 40340,
+          "samples": 235200,
+          "seconds": 9.8,
+          "rms": 0.0867671819371769,
+          "peak": 0.58984375,
+          "quiet_sample_fraction": 0.20065051020408164
+        },
+        {
+          "zone": "support",
+          "index": 4,
+          "text": "Separately clarify the venue with the responsible coordinator. A fellow BHW may help with routine tasks. Resources, transport and outcomes are not guaranteed.",
+          "start_ms": 40640,
+          "end_ms": 53400,
+          "samples": 306240,
+          "seconds": 12.76,
+          "rms": 0.0865701538977133,
+          "peak": 0.623931884765625,
+          "quiet_sample_fraction": 0.2182014106583072
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Explain the four roles. Choose by the concern, give a reason and ask who is responsible. Respect the resident’s preferences and practise again.",
+          "start_ms": 53700,
+          "end_ms": 65100,
+          "samples": 273600,
+          "seconds": 11.4,
+          "rms": 0.07951042920138365,
+          "peak": 0.61749267578125,
+          "quiet_sample_fraction": 0.23204312865497076
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "decisive",
+          "start": 0,
+          "end": 16.9,
+          "file": "shipped-story-en-decisive.wav",
+          "excerpt_sha256": "76320cac2afddfc674d20bcfc83b7969c53df21f077a6d2a6bf3e02c07318da5",
+          "decoded_sample_count": 405600,
+          "expected_context": "In the fictional courtyard, Nena has two questions. Malou listens and asks what she wants to clarify first. Malou repeats what she heard and invites Nena to correct her understanding. The resident’s information and choices matter.",
+          "model_response": "```json\n{\n  \"transcript\": \"In the fictional courtyard, Nena has two questions. Malou listens and asks what she wants to clarify first. Malou repeats what she heard and invites Nena to correct her understanding. The resident's information and choices matter.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as 'mah-LOO' (/məˈluː/) at both occurrences (~00:04 and ~00:09).\",\n    \"negation\": \"No negative contractions or negation words occur in the excerpt.\",\n    \"role_distinctions\": \"Narrator clearly distinguishes the scenario and actions between Nena and Malou without ambiguity.\",\n    \"ending_completeness\": \"The final sentence finishes completely with natural decay on 'matter' at ~00:16.8 without truncation.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and audible throughout the excerpt.\",\n    \"clipped_words\": \"No clipped words or premature cutoffs detected.\",\n    \"unexpected_voice_changes\": \"Single consistent female narrator voice across the entire excerpt; no unexpected pitch jumps, tone shifts, or speaker switches.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality and diction are exceptionally clear.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "ending",
+          "start": 40.64,
+          "end": 66.32533333333333,
+          "file": "shipped-story-en-ending.wav",
+          "excerpt_sha256": "4eb7961cea827267f4e50aea8868ae5e7f0407c445bb15e35278140cc2bb3a92",
+          "decoded_sample_count": 616448,
+          "expected_context": "Separately clarify the venue with the responsible coordinator. A fellow BHW may help with routine tasks. Resources, transport and outcomes are not guaranteed. Explain the four roles. Choose by the concern, give a reason and ask who is responsible. Respect the resident’s preferences and practise again.",
+          "model_response": "```json\n{\n  \"transcript\": \"Separately clarify the venue with the responsible coordinator. A fellow BHW may help with routine tasks. Resources, transport and outcomes are not guaranteed. Explain the four roles. Choose by the concern, give a reason, and ask who is responsible. Respect the resident's preferences, and practice again.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name or term 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"The negation 'not' in 'are not guaranteed' (00:11 - 00:12) is spoken clearly with distinct emphasis.\",\n    \"role_distinctions\": \"The instructions distinguish procedural steps and roles clearly ('responsible coordinator', 'fellow BHW', 'Explain the four roles', 'ask who is responsible').\",\n    \"ending_completeness\": \"The final sentence concludes cleanly and completely with 'and practice again.' without truncation.\",\n    \"audible_speech\": \"All speech is clearly enunciated and intelligible throughout.\",\n    \"clipped_words\": \"No clipped or cut-off words observed.\",\n    \"unexpected_voice_changes\": \"The speaker maintains a consistent tone, pacing, and pitch across the entire recording.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    }
+  ]
+}

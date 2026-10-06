@@ -40,6 +40,9 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Check this draft's exact head; other branches keep their standard checkout.
+          ref: ${{ github.head_ref == 'codex/lesson-151-malou-proposal' && github.event.pull_request.head.sha || github.sha }}
 
       - uses: actions/setup-node@v4
         with:

@@ -8,21 +8,44 @@
       "tier": "cited",
       "question_en": "What are the four core relationships of a BHW?",
       "question_fil": "Ano ang apat na pangunahing ugnayan ng isang BHW?",
-      "answer_en": "The community they serve, the midwife or Rural Health Unit (RHU) for referrals and clinical questions, barangay officials for support and facilities, and fellow BHWs for shared experience and correct practice. Each relationship has a different purpose, and using the right one for the situation is what keeps barangay health service fast and reliable.",
-      "answer_fil": "Ang komunidad na kanilang pinagsisilbihan, ang midwife o Rural Health Unit (RHU) para sa referral at klinikal na tanong, ang barangay officials para sa suporta at pasilidad, at ang kapwa BHW para sa pinagsamang karanasan at tamang gawi. Magkaiba ang layunin ng bawat ugnayan, at ang paggamit ng tama para sa sitwasyon ang gumagawa sa serbisyong pangkalusugan ng barangay na mabilis at maaasahan.",
-      "keywords": ["apat na ugnayan", "four relationships", "komunidad", "midwife", "rhu", "barangay officials", "kapwa bhw", "fellow bhw"],
-      "sources": ["ra-7883", "who-bhw-manual-ta"]
+      "answer_en": "The four relationships are an authored teaching organizer: community concerns and choices; authorized guidance from the designated midwife/RHU health professional; administrative support through responsible barangay contacts; and fellow BHW experience and routine task coordination. Each has limits; confirm local roles rather than promising faster service.",
+      "answer_fil": "Ginawang balangkas sa pagtuturo ang apat na ugnayan: alalahanin at pagpili ng komunidad; awtorisadong gabay ng itinalagang midwife/RHU health professional; suportang administratibo ng responsableng barangay contact; at karanasan at karaniwang pagtutulungan ng kapwa BHW. May hangganan ang bawat isa; tiyakin ang lokal na papel sa halip na mangako ng mabilis na serbisyo.",
+      "keywords": [
+        "apat na ugnayan",
+        "four relationships",
+        "komunidad",
+        "midwife",
+        "rhu",
+        "barangay officials",
+        "kapwa bhw",
+        "fellow bhw"
+      ],
+      "sources": [
+        "bhw-relationships-training"
+      ]
     },
     {
       "id": "d1m5-who-for-clinical",
       "domain": "teamwork-communication",
       "tier": "cited",
-      "question_en": "Who should a BHW approach first for a clinical concern, like a resident's persistent cough?",
-      "question_fil": "Sino ang unang dapat lapitan ng BHW kapag klinikal ang alalahanin, tulad ng matagal nang ubo ng isang residente?",
-      "answer_en": "The midwife or the Rural Health Unit (RHU) — they are the technical support for anything clinical, such as deciding whether a symptom needs referral. Barangay officials and fellow BHWs are not the right first stop for a clinical question; going to them first only delays the referral.",
-      "answer_fil": "Ang midwife o ang Rural Health Unit (RHU) — sila ang teknikal na susuporta para sa anumang klinikal, tulad ng pagpapasya kung kailangan bang i-refer ang isang sintomas. Hindi tamang unang lapitan ang barangay officials o kapwa BHW para sa klinikal na tanong; naaantala lamang nito ang pag-refer kung sila muna ang lalapitan.",
-      "keywords": ["klinikal", "clinical", "sino lalapitan", "who to approach", "ubo", "cough", "referral", "midwife", "rhu"],
-      "sources": ["who-bhw-manual-ta", "ra-7883"]
+      "question_en": "Who should a BHW approach for a personal health question?",
+      "question_fil": "Sino ang dapat lapitan ng BHW para sa personal na tanong pangkalusugan?",
+      "answer_en": "Seek the locally designated authorized health professional for a personal health question, using confirmed local arrangements. Officials and peer experience do not replace professional assessment. This organizational guidance is not diagnosis, a symptom threshold or a universal triage sequence.",
+      "answer_fil": "Lumapit sa lokal na itinalagang awtorisadong health professional para sa personal na tanong pangkalusugan, ayon sa natiyak na lokal na kaayusan. Hindi kapalit ng propesyonal na pagtatasa ang opisyal o karanasan ng kapwa BHW. Gabay pang-organisasyon ito, hindi diagnosis, tagal ng sintomas o iisang proseso ng triage.",
+      "keywords": [
+        "klinikal",
+        "clinical",
+        "sino lalapitan",
+        "who to approach",
+        "ubo",
+        "cough",
+        "referral",
+        "midwife",
+        "rhu"
+      ],
+      "sources": [
+        "bhw-relationships-training"
+      ]
     },
     {
       "id": "d1m5-who-for-admin-support",
@@ -30,10 +53,20 @@
       "tier": "cited",
       "question_en": "Who should a BHW approach for administrative support, like transport or supplies?",
       "question_fil": "Sino ang dapat lapitan ng BHW para sa suportang administratibo, tulad ng transportasyon o kagamitan?",
-      "answer_en": "Barangay officials — they are the partner for facilities like the barangay health station and administrative support such as arranging transport to a facility. (Accreditation itself comes from the local health board of the city or municipality.) This is a different relationship from the midwife/RHU, which is for clinical matters.",
-      "answer_fil": "Ang barangay officials — sila ang kasosyo para sa mga pasilidad tulad ng barangay health station at suportang administratibo tulad ng pag-aayos ng transportasyon papunta sa pasilidad. (Ang akreditasyon mismo ay galing sa local health board ng lungsod o munisipyo.) Iba ito sa ugnayan sa midwife/RHU, na para sa mga usaping klinikal.",
-      "keywords": ["barangay officials", "suportang administratibo", "administrative support", "transportasyon", "transport", "kagamitan", "supplies"],
-      "sources": ["ra-7883", "who-bhw-manual-ta"]
+      "answer_en": "Ask the responsible local coordinator or barangay contact about activity arrangements and requested administrative support. Confirm whose role it is and what resources are available. Do not guarantee transport, supplies or a response, or treat administrative support as clinical assessment.",
+      "answer_fil": "Itanong sa responsableng lokal na coordinator o barangay contact ang kaayusan ng aktibidad at hiling na suportang administratibo. Tiyakin kung kaninong papel ito at anong kagamitan ang magagamit. Huwag mangako ng transportasyon, kagamitan o sagot, o gawing klinikal na pagtatasa ang suportang administratibo.",
+      "keywords": [
+        "barangay officials",
+        "suportang administratibo",
+        "administrative support",
+        "transportasyon",
+        "transport",
+        "kagamitan",
+        "supplies"
+      ],
+      "sources": [
+        "bhw-relationships-training"
+      ]
     },
     {
       "id": "d1m5-role-of-peer-bhw",
@@ -41,10 +74,21 @@
       "tier": "cited",
       "question_en": "Why does a BHW's relationship with fellow BHWs matter?",
       "question_fil": "Bakit mahalaga ang ugnayan ng BHW sa kapwa niya BHW?",
-      "answer_en": "Fellow BHWs are the closest source for practical, everyday know-how — like how to file a first report, or how another BHW has handled a similar situation before. Not every question needs the midwife or barangay officials; some things a fellow BHW is simply the fastest and most fitting person to ask.",
-      "answer_fil": "Ang kapwa BHW ang pinakamalapit na sanggunian para sa pang-araw-araw at praktikal na kaalaman — tulad ng kung paano mag-file ng unang ulat, o kung paano hinarap ng ibang BHW ang katulad na sitwasyon noon. Hindi lahat ng tanong ay para sa midwife o barangay officials; may mga bagay na ang kapwa BHW mismo ang pinakamabilis at pinaka-angkop na tanungin.",
-      "keywords": ["kapwa bhw", "fellow bhw", "peer", "karanasan", "experience", "cascade", "bagong bhw", "new bhw"],
-      "sources": ["who-bhw-manual-ta"]
+      "answer_en": "Fellow BHWs share routine work experience, coordinate agreed tasks and help identify questions to clarify with the responsible person. Peer help does not replace authorized professional assessment or a resident’s preferences. Confirm roles locally.",
+      "answer_fil": "Nagbabahagi ang kapwa BHW ng karanasan sa karaniwang gawain, nag-uugnay ng napagkasunduang tungkulin at tumutulong tukuyin ang tanong na dapat linawin sa responsable. Hindi kapalit ng awtorisadong propesyonal na pagtatasa o nais ng residente ang peer help. Tiyakin ang lokal na papel.",
+      "keywords": [
+        "kapwa bhw",
+        "fellow bhw",
+        "peer",
+        "karanasan",
+        "experience",
+        "cascade",
+        "bagong bhw",
+        "new bhw"
+      ],
+      "sources": [
+        "bhw-relationships-training"
+      ]
     },
     {
       "id": "d1m5-punong-barangay",

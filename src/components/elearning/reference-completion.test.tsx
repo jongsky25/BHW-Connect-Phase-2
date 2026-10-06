@@ -2,13 +2,29 @@ import {cleanup,fireEvent,render,screen,waitFor} from '@testing-library/react';
 import {afterEach,describe,expect,it,vi} from 'vitest';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
-afterEach(()=>{cleanup();document.documentElement.removeAttribute('data-motion');});
+afterEach(()=>{cleanup();vi.restoreAllMocks();document.documentElement.removeAttribute('data-motion');});
 const check={prompt_en:'What would you do?',prompt_fil:'Ano ang gagawin mo?',options:[{en:'Ask',fil:'Magtanong'},{en:'Guess',fil:'Hulaan'}],correct_option_index:0,feedback_en:'Ask the team.',feedback_fil:'Magtanong sa team.'};
 const part=(id:string,hasCheck=false)=>({id,concept_ids:[id],asset_ids:[],heading_en:id,heading_fil:id,body_en:'Teaching text',body_fil:'Aralin',takeaway_en:'Takeaway '+id,takeaway_fil:'Buod '+id,check:hasCheck?check:null});
 function data():ReferenceData{return {title_fil:'Manual',title_en:'Manual',chapters:[],completed:[],resumes:[],lessons:[{id:'lesson',module_id:'module',required:true,title_fil:'Aralin',title_en:'Lesson',objectives_fil:[],objectives_en:[],revision:{id:'revision',read_sections:[part('first',true),part('last',true)],slides:[{...part('slide-first'),display_en:'First teaching slide',display_fil:'Una',layout:'scene'},{...part('slide-check',true),display_en:'Revealing slide summary',display_fil:'Buod sa slide',layout:'takeaway'}],assets:[],sources:[]}}]} as unknown as ReferenceData;}
 const button=()=>screen.getByRole('button',{name:'Mark lesson complete'});
 function view(d=data(),complete=vi.fn().mockResolvedValue(undefined),extra={}) {return render(<ReferenceLessons {...d} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" nextLessonHref="/lessons/next" onResume={vi.fn().mockResolvedValue(undefined)} onComplete={complete} {...extra}/>);}
 describe('formative lesson completion',()=>{
+  it('offers full Slide speech only for exact Read wording and pauses when it is closed',()=>{
+    const pause=vi.spyOn(HTMLMediaElement.prototype,'pause').mockImplementation(()=>{});
+    const d=data();const read=part('first');
+    d.lessons[0].revision.read_sections=[read];
+    d.lessons[0].revision.slides=[{...part('slide-first'),display_en:'Concise text',display_fil:'Maikli',narration_en:read.body_en,narration_fil:read.body_fil,heading_en:read.heading_en,heading_fil:read.heading_fil,layout:'scene'}];
+    const narration={lesson:{first:{src:'/audio.mp3',duration_seconds:3,timings:[{zone:'heading',index:0,text:'first',start_ms:0,end_ms:1000},{zone:'body',index:0,text:read.body_en,start_ms:1000,end_ms:2000},{zone:'takeaway',index:0,text:read.takeaway_en,start_ms:2000,end_ms:3000}]}}};
+    const {container}=view(d,vi.fn(),{narration,initialMode:'slides'});
+    const panel=screen.getByText('Full narration and audio').closest('details')!;
+    expect(container.querySelector('audio')).toHaveAttribute('src','/audio.mp3');
+    panel.open=false;fireEvent(panel,new Event('toggle'));
+    expect(pause).toHaveBeenCalled();
+    cleanup();d.lessons[0].revision.slides[0].narration_en='Changed wording';
+    view(d,vi.fn(),{narration,initialMode:'slides'});
+    expect(screen.queryByText('Full narration and audio')).not.toBeInTheDocument();
+  });
+
   it('shows a repeated Read check question once and keeps the full question in Slides',()=>{
     const d=data();
     d.lessons[0].revision.read_sections=[{...part('check',true),body_en:check.prompt_en,body_fil:check.prompt_fil}];

@@ -1,73 +1,54 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can name the four relationships in their daily work — the community, the midwife or RHU, barangay officials and fellow BHWs — and, given a situation, say what kind of support it needs and which relationship to approach first.
+Apply the single lesson objective, objective_index 0: explain and apply four working relationships in a fictional situation. Learners explain each purpose and limit, choose an appropriate contact with a reason, ask a role-verification question and recognize the resident's preferences. This introductory organizer does not replace the later lessons about stakeholders, teamwork, self-management or contact decisions.
 
-## [time-materials] Time and materials
+## [time-materials] Time Materials
 
-- **Time:** about 30 minutes in a face-to-face session (the "Opening: Aling Nena's situation + the four relationships" part of the plan in the subchapter guide). Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** manila paper and markers; the lesson's slides; the module's hub-and-spoke visual of the four relationships (`01-apat-na-ugnayan.svg`) printed or projected; three situation cards for the practice activity (written in advance, see below).
+Authored facilitated share: 30 minutes. Opening 4; four-role organizer 6; listening example 5; contact demonstration 6; paired practice 5; application check, feedback and reflection 4. Total 30. The optional paired/card exercise is inside the 5-minute practice share, not additional compulsory time. Whole-module authored split: 30 + 30 + 30 + 30 + 30 + 30 = 180 minutes, including optional exercises. The shared guide's two former 40-minute shares are corrected to 30; no sibling lesson content or guides are rewritten. TESDA specifies three one-hour outcomes for the combined competency, not a mandatory 30-minute 1.5.1 lesson. Authored independent estimate: 10–13 minutes. Actual six-screen narration is 350.85 seconds in English and 383.98 seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.
+
+Materials: six bilingual screens, Malou's courtyard art, four large labeled blank cards, paper and pens; optional speaker/headphones. Use fictional information only.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- Know who the midwife or RHU contact for your barangay is, and who among the barangay officials BHWs usually deal with, so you can answer *"Who is that here?"* with a real name.
-- This lesson is about **choosing who to approach**, not about the cough itself. Do not teach what a persistent cough might mean or what to do for it; the lesson only says it is a clinical concern for the midwife or RHU.
+Read all six screens, every check rationale and the source audit in both languages. Confirm local professional, administrative and peer roles and accessible contact channels with the health team; mark unknowns. The illustration is fictional and proves no local procedure. Prepare cards and a written alternative. Do not request a real health story, patient record, phone number or personal document.
 
 ## [opening] Opening
 
-Before showing any slide, read Aling Nena's situation aloud (Read "The question at Aling Nena's house"). Then ask: *"If you were BHW Marites, who would you think of first?"* Write every answer on manila paper without commenting yet. Keep the list up for the whole lesson.
+For 4 minutes, introduce fictional Malou and Nena in the courtyard. Nena asks about the venue and a personal health question. Ask what Malou knows and should clarify first. Accept different priorities if the learner asks Nena rather than deciding for her. Do not turn this into diagnosis, symptom thresholds or medical triage.
 
 ## [steps] Steps
 
-1. **Scene (Read "The question at Aling Nena's house", first slide).** Point out that Marites listens first and realizes this is not just a question about a cough. Ask: *"Why did Marites stop to think about who to talk to, instead of answering right away?"*
-2. **The four relationships (Read "Four relationships of a BHW", second slide).** Show the hub-and-spoke visual and point to each spoke as you name it: community, midwife or RHU, barangay officials, fellow BHWs. For each one ask: *"What does this relationship help you with?"* Match answers to the lesson: first step of care, technical support and referral, support and facilities (accreditation comes from the local health board, not the barangay), shared experience and correct practice.
-3. **Back to the opening list.** Sort the names from the opening into the four relationships. Point out that the group probably named more than one — that is the lesson's point: one household question often passes through more than one relationship.
-4. **Who is the right person to approach? (Read "Who is the right person to approach?", third slide).** Read the lesson's first question out loud: *"What kind of support does this need — clinical, administrative, or the experience of a fellow BHW?"* Ask the group to answer it for Aling Nena's child.
-5. **Self-check.** Give the check (who to approach first for a clinical concern) and let the group discuss before revealing the answer.
+1. Opening: separate the two questions and invite Nena's preference (4 minutes).
+2. Explain the four-card organizer, one purpose and boundary per relationship (6).
+3. Model repeating Nena's words, asking whether the summary is right, and separating facts from assumptions (5).
+4. Compare health guidance and venue coordination. Demonstrate “Is this within your role? If not, who is responsible?” Confirm local arrangements; do not invent a chain of command (6).
+5. Paired four-card practice, switching learner and observer; written practice is equivalent (5).
+6. Application check, all three rationales, feedback and a role-verification reflection (4). Story playback is optional and unnecessary for online completion.
 
-## [expected-answers] Expected answers and how to respond
+## [expected-answers] Expected Answers
 
-- **"The barangay captain."** Many BHWs deal with the captain most often, so this is honest. Do not correct it head-on. Ask: *"Is a three-week cough a clinical question or an administrative one? Who in the four relationships handles clinical questions?"*
-- **"The midwife — for everything."** Accept it for this case, then ask: *"And if Aling Nena needs transport to the facility, or you need advice from someone who has done this before?"* Show that the other relationships have their own purpose.
-- **They start giving advice about the cough.** Acknowledge the concern, then bring it back: *"That is exactly the kind of question the midwife or RHU answers. Our job right now is knowing who to bring it to."*
+Community: Nena shares her concern, information and preferred channel. Professional: an authorized local health professional addresses the personal health question; Malou does not assess it by guessing. Officials: responsible administrative contacts may clarify the venue or requested practical support, subject to local arrangements and resources. Peers: share routine task experience and coordinate agreed work; they do not provide clinical authority. Known: two questions. Unknown: confirmed venue, professional contact and Nena's preferred channel. Accept equivalent explanations that preserve these limits.
 
-## [misconception] Common misconception
+## [misconception] Misconception
 
-**"Take the problem to whoever has the highest position."** It feels respectful to go to the most senior person, but rank does not decide who can help. Correct it without embarrassing anyone: ask the group to look at the three-line decision slide and say which line a three-week cough falls under. The kind of support needed decides the person, not the title.
+“The highest-ranking person can decide every concern.” Role and authority must fit the concern; rank alone does not establish clinical authority. “A fellow BHW's experience replaces assessment.” Peer support has a different purpose. “The resident simply receives instructions.” Nena can clarify, correct and choose. Correct the explanation without judging the learner's personality or accent.
 
-## [practice] Practice activity
+## [practice] Practice
 
-Prepare three situation cards using only what this lesson covers: (1) Aling Nena's child has had a cough for three weeks; (2) the barangay health station needs support for its facilities; (3) a BHW wants to learn how an experienced colleague handles a household visit. In pairs, one BHW draws a card, retells the situation in their own words, then says: the main point (what kind of support is needed), the first action (who they would approach first), and what they would check with the midwife or RHU. The partner listens and then swaps with the next card. Walk around and listen to each pair.
+Use fictional cards A: Nena wants the venue confirmed; B: Nena wants a professional answer about suitability; C: Malou needs help organizing an agreed routine task; D: a resident corrects Malou's summary and prefers written information. In pairs, explain the appropriate relationship, its boundary, a reason and one role-confirmation question for each card. The observer records what was said, gives one specific suggestion and invites re-practice. Do not require all four relationships in every real task. Written four-card matching with reasons is equivalent; use no private information.
 
-## [answer-key] Self-check answer key
+## [answer-key] Answer Key
 
-The section check in Read "Who is the right person to approach?" and the check on the third slide are the same question; it is covered once here.
+The final Read/Slide check has the same three choices and full feedback. First is appropriate: listen to Nena and confirm separate professional and venue roles. Second is inappropriate: highest rank does not confer clinical authority. Third is inappropriate: peer experience cannot replace authorized assessment. Ask the learner to explain the role of the community and fellow BHW too, then provide a role-verification question. A correct online choice alone is not proof of observed skill.
 
-- **"Who should you approach first for a clinical concern?"** → **The midwife or designated RHU health professional.** The midwife or RHU is the BHW's technical support for referrals and clinical questions.
-  - *"Whoever has the highest rank regardless of clinical role"* is wrong because rank does not make someone the right person for a clinical question. In the lesson, going to the barangay captain would waste his time on a matter outside his role and delay the proper referral.
+## [observe] Observe
 
-## [observe] What to observe
+Use the one objective_index 0 indicator. Kaya na: without prompting, explains all four purposes and limits, chooses by the concern, gives a reason and verification question, and recognizes Nena's preferences. Kailangan practice: sound direction but a cue is needed for one role, limit or question. Hindi pa: explanation remains inappropriate after support, including substituting rank or peer experience for professional assessment. Model and repeat. Observe the explanation and clarification, not accent, confidence, appearance, personality or success of a service request.
 
-Use the lesson's observation indicator (explains the main point and an appropriate first action, including what must be checked with the supervisor) during the practice activity:
+## [support] Support
 
-- **Kaya na:** the BHW retells the card accurately, names the kind of support needed, chooses the right first relationship, and says what to check with the midwife or RHU — all without prompting.
-- **Kailangan pa ng practice:** the BHW goes in the right direction (for example, picks the midwife for the cough card) but needs your follow-up question to name the kind of support or what to check.
-- **Hindi pa:** the explanation or first action does not fit the card — for example, the BHW sends every card to the same person, or promises the family something without checking first.
+Offer a cue card: concern / role / reason / limit / question. Read aloud, provide large print, let a learner dictate or write, and ask the preferred language. A supportive partner can first model one card. Let the learner observe a round, then practise with prompts and repeat with less support. Re-observe with an equivalent fictional venue or routine-task example; require no personal health disclosure.
 
-Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+## [sources-review] Sources Review
 
-## [support] If a BHW needs more support
-
-- Give them the lesson's question as a prompt to hold: *"Clinical, administrative, or the experience of a fellow BHW?"* Ask them to answer that first, then choose the person.
-- Let them sort the three cards onto the hub-and-spoke visual before explaining out loud.
-- Re-observe with the same three cards at the "Exercise and summary" part of the module, or at the next session, not with new situations.
-
-## [sources-review] Sources and review notes
-
-- BHW Reference Manual PDF 15 (lesson source, marked "inherited page reference; final audit pending"). The source-material README maps "Ang BHW at ang Kanyang Barangay" to Reference Manual pp. 7–8 (PDF 15–16), Facilitator Guide p. 19 (PDF 26) and Day 1 presentation slides 29–44.
-- The "four relationships" framing and the Aling Nena situation are the lesson's own teaching devices; the source lists the stakeholders and says health concerns go to the midwife as technical supervisor.
-- Timing: the module keeps TESDA's 3 hours for *Work in a Team Environment* (Facilitator Guide PDF 26–27 says "at least 3 hours", shared with the "Pagganap ng Tungkulin bilang Miyembro ng Team" topic). The 30 minutes above is this lesson's share of that plan. Do not repeat the whole allocation for each short lesson; this split supports self-study and does not create a new training-hour allocation.
-- This lesson's observation indicator is generic; the subchapter's competency indicators include a more specific indicator for this objective (choosing the right relationship by kind of support). Reviewers may want to align them.
-- The lesson's `practice-map` visual is a draft discussion guide, not owner-approved.
-- Review current legal/policy wording, bilingual parity and the observation indicator before publication.
-- Draft for review
+Audited 6 October2026: original DOH Reference Manual PDF15–17 / printed7–9, Facilitator Manual PDF26–27 / printed19–20, Day1 deck PDF27–28 (no printed slide number), and official TESDA BHS NCII Revision01, promulgated11 January2019, unit400311211, PDF11–12 / printed7–8 and PDF84–85 / printed80–81. Sources support roles, communication and team outcomes. The exact four-relationship grouping traces to authored repository commit d424bde, not a verbatim official taxonomy. Malou, Nena's neutral example, questions, practice and timing split are authored. The inherited practice-map approved flag conflicted with draft captions/provenance; new draft art replaces it in this target, while its old public bytes remain preserved. No current target LGU procedure, independent policy SME review, human listening or owner approval is claimed. Fresh official PDF bytes were verified; absence of a later revision has not been established.
