@@ -2,7 +2,7 @@
 
 Sa kathang-isip na sitwasyong ito, nakatagpo ni BHW Malou si Aling Nena sa malilim na bakuran ng barangay. Nagtanong si Nena tungkol sa nakaplanong gawaing pangkalusugan: “Saan po ito gaganapin? Gusto ko ring itanong sa health professional kung angkop ito para sa akin.”
 
-Nakinig si Malou at nagtanong kung alin ang gustong unahing linawin ni Nena. Magkaibang suporta ang kailangan sa tanong tungkol sa lugar at sa personal na kalusugan. Mahalaga ang pagpili ni Nena; hindi hinuhulaan ni Malou ang kaniyang pangangailangan. Maaaring tapusin ang Read o Slides nang hindi pinapanood ang opsyonal na kuwento.
+Nakinig si Malou at nagtanong kung alin ang gustong unahing linawin ni Nena. Magkaibang suporta ang kailangan sa tanong tungkol sa lugar at sa personal na kalusugan. Mahalaga ang pagpili ni Nena; hindi hinuhulaan ni Malou ang kaniyang pangangailangan. Maaaring tapusin ang bahaging Basahin o Slides nang hindi pinapanood ang opsyonal na kuwento.
 
 :::takeaway
 Makinig sa residente at ihiwalay ang mga tanong bago pumili ng suporta.

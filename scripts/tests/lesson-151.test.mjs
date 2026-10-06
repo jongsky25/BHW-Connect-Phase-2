@@ -32,7 +32,7 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
   const c=source.sections.at(-1).check;expect(c.options).toHaveLength(3);expect(c.correct_option_index).toBe(0);
   for(const word of ['First:','Second:','Third:'])expect(c.feedback_en).toContain(word);
   for(const word of ['Una:','Ikalawa:','Ikatlo:'])expect(c.feedback_fil).toContain(word);
-  expect(authored.revision.read_sections[1].body_en).toContain('authored teaching organizer');expect(authored.revision.read_sections[0].body_en).toContain('without the optional story');
+  expect(authored.revision.read_sections[1].body_en).toContain('authored teaching organizer');expect(authored.revision.read_sections[0].body_en).toContain('without watching the optional story');
  });
  it('has both full canonical guides, one bounded indicator and measured self-study time',()=>{
   for(const lang of ['fil','en']){

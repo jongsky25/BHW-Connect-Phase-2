@@ -2,7 +2,7 @@
 
 In this fictional learning situation, BHW Malou meets Aling Nena in a shaded barangay courtyard. Nena asks about a planned community health activity: “Where will it be held? I also want to ask a health professional whether it is suitable for me.”
 
-Malou listens and asks which question Nena wants help with first. The venue question and the personal health question need different kinds of support. Nena's preferences matter; Malou does not decide what she needs without asking. Read or Slides can be completed without the optional story.
+Malou listens and asks which question Nena wants help with first. The venue question and the personal health question need different kinds of support. Nena's preferences matter; Malou does not decide what she needs without asking. Learners can finish this lesson in either reading or slide mode without watching the optional story.
 
 ## [section-2] Four relationships, different purposes
 
@@ -20,7 +20,7 @@ Fellow BHWs: share routine work experience, coordinate agreed tasks and help ide
 
 Malou repeats what she heard: “You want to confirm the venue and speak with a health professional. Have I understood correctly?” Nena can correct that summary and explain what matters to her.
 
-Known: Nena has two questions. Unknown: the confirmed venue, the locally designated professional contact, and Nena's preferred way to ask. Malou does not assume that Nena needs transport or has a particular illness. She asks, “What information would help you, and how would you prefer to receive it?” Use fictional details only during practice.
+Malou knows that Nena has two questions. She still needs to confirm the venue, the locally designated professional contact, and Nena's preferred way to ask. Malou does not assume that Nena needs transport or has a particular illness. She asks, “What information would help you, and how would you prefer to receive it?” Use fictional details only during practice.
 
 ## [section-3] Choose a contact for the concern
 

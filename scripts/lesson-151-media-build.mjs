@@ -20,7 +20,9 @@ const allowed=['bhw-relationships'];
 const original=json(narrationPath);
 original.history ??= {};
 original.history['bhw-relationships'] ??= [];
-if(original.history['bhw-relationships'].length===0&&!original.history['bhw-relationships'].some(h=>JSON.stringify(h)===JSON.stringify(original.lessons['bhw-relationships']))) original.history['bhw-relationships'].push(original.lessons['bhw-relationships']);
+const beforeLessons=loadReferenceModule(path.join(root,'content/training/day1-basic-competencies/modules/05-bhw-at-barangay'),path.join(root,'public')).lessons;
+const needsReadUpdate=planReferenceNarration([{key:'05-bhw-at-barangay',lessons:beforeLessons}],original,src=>{const p=path.join(root,'public',src.slice(1));return existsSync(p)?sha(p):null;},{provider:'gemini'}).some(i=>i.lessonKey==='bhw-relationships'&&i.action!=='skip');
+if((original.history['bhw-relationships'].length===0||needsReadUpdate)&&!original.history['bhw-relationships'].some(h=>JSON.stringify(h)===JSON.stringify(original.lessons['bhw-relationships']))) original.history['bhw-relationships'].push(original.lessons['bhw-relationships']);
 save(narrationPath,original);
 const args=['--modules','05-bhw-at-barangay','--lessons',allowed.join(',')];
 let deleted=[];
@@ -90,7 +92,7 @@ if(!pending.length){
   for(const lang of ['fil','en']){
     const guide=path.join(root,path.dirname(lessonPath),`facilitator.${lang}.md`);
     const estimate=lang==='en'?`Authored independent estimate: ${low}–${high} minutes. Actual encoded six-screen narration is ${durations.en.toFixed(2)} seconds in English and ${durations.fil.toFixed(2)} seconds in Filipino; add3–6 minutes for the check and reflection. Optional story/replay is additional.`:`Ginawang pagtataya ng sariling pag-aaral: ${low}–${high} minuto. Aktuwal na encoded narration ng anim na screen: ${durations.en.toFixed(2)} segundo sa English at ${durations.fil.toFixed(2)} segundo sa Filipino; dagdag3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.`;
-    writeFileSync(guide,readFileSync(guide,'utf8').replace('SELF_STUDY_TIMING_PENDING',estimate));
+    writeFileSync(guide,readFileSync(guide,'utf8').replace(/SELF_STUDY_TIMING_PENDING|^Authored independent estimate:.*$|^Ginawang pagtataya ng sariling pag-aaral:.*$/gm,estimate));
   }
 }
 save('docs/lesson-151-media-generation.json',{generated_date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),owner_review:'pending',render_input_sha256:renderInputHash,render_cached:cached,target_read_tracks:12,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});

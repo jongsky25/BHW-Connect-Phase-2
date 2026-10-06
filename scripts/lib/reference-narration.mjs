@@ -201,7 +201,7 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
           const voice = PROVIDER_VOICES[provider][language];
           const speechStyle = provider === "gemini"
             ? lessonKey === "bhw-relationships"
-              ? BHW_RELATIONSHIPS_STORY_STYLES[language]
+              ? BHW_RELATIONSHIPS_STORY_STYLES[language] + (language === 'en' && ['section-1', 'community-listening'].includes(section.id) ? ' Pronounce Nena as NEH-nah, with the same narrator voice throughout.' : '')
               : lessonKey === "bhw-follow-up"
               ? BHW_FOLLOW_UP_STORY_STYLES[language]
               : lessonKey === "bhw-accreditation"
