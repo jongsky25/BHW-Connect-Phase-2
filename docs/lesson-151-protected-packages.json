@@ -1,0 +1,79 @@
+{
+  "scope": "Read-only historical receipts; unavailable original Windows outputs are explicitly not reverified. All tracked original receipt bytes are protected by the starting Git baseline.",
+  "packages": [
+    {
+      "path": "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\e\\outputs\\lesson-1.4.1-demi-review.html",
+      "sha256": "19e87ede17b0863fc7c0ce4a1ff9e0b068ed126090fbd05907a2b52f4b964469",
+      "receipt_files": [
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\e\\outputs\\lesson-1.4.1-release-report.json"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\e\\outputs\\lesson-1.4.1-demi-review.zip",
+      "sha256": "0152ef4e47cf0b455b7692bbfa6b24c3deab8fa59081ae35fb7b6de3ba399733",
+      "receipt_files": [
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\e\\outputs\\lesson-1.4.1-release-report.json"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-142\\outputs\\lesson-1.4.2-demi-review.html",
+      "sha256": "27dc33d23ad80a5689698b9db3e1b1080ae41eb2ba624b4b1f0b48f796f4d34f",
+      "receipt_files": [
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-142\\outputs\\lesson-1.4.2-release-report.json"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-142\\outputs\\lesson-1.4.2-demi-review.zip",
+      "sha256": "88ea26881f6b00d5e812dfaa6f6107915ed3af39e65aaa569283e00dc65fa6a9",
+      "receipt_files": [
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-142\\outputs\\lesson-1.4.2-release-report.json"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-143\\outputs\\lesson-1.4.3-demi-review.html",
+      "sha256": "acb7af77f7fcbed93fd74e4a2db2ef57c765eac7f928d2b4fc35c0409981457d",
+      "receipt_files": [
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-143\\outputs\\lesson-1.4.3-release-report.json"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-143\\outputs\\lesson-1.4.3-demi-review.zip",
+      "sha256": "ec18df9250a798e052f60e042fa559aac6562ef543145d0935a32d6338c956ea",
+      "receipt_files": [
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-143\\outputs\\lesson-1.4.3-release-report.json"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-144\\outputs\\lesson-1.4.4-demi-review.html",
+      "sha256": "1012572c186386675b76e39ec544d9e87068d5856784f7c3c500a1ced6ba7a55",
+      "receipt_files": [
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-144\\outputs\\lesson-1.4.4-owner-approval.json",
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-144\\outputs\\lesson-1.4.4-live-release.json"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-144\\outputs\\lesson-1.4.4-demi-review.zip",
+      "sha256": "943dada27b545fdd1187e10c5630611a377553bbc996f4bd12a8fcc634cd21cc",
+      "receipt_files": [
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-144\\outputs\\lesson-1.4.4-owner-approval.json",
+        "C:\\Users\\Rae Jane\\Documents\\Codex\\2026-10-05\\lesson-144\\outputs\\lesson-1.4.4-live-release.json"
+      ]
+    },
+    {
+      "path": "lesson-1.4.5-demi-review.html",
+      "sha256": "fb469abeb37a26c432f437f8bcc01c59c64db39ab6a18eaa9ad32deb12a0e30b",
+      "receipt_files": [
+        "docs/lesson-145-owner-approval.json"
+      ],
+      "availability": "Original origin package bytes not present in this cloud workspace; receipt preserved, no byte-equality claim."
+    },
+    {
+      "path": "lesson-1.4.5-demi-review.zip",
+      "sha256": "9af3a8771707aaa28080c300a3579c44591bd2333e3cd732824c0d9df4a47a3e",
+      "receipt_files": [
+        "docs/lesson-145-owner-approval.json"
+      ],
+      "availability": "Original origin package bytes not present in this cloud workspace; receipt preserved, no byte-equality claim."
+    }
+  ]
+}

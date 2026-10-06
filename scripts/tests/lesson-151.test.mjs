@@ -42,9 +42,14 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
  });
  it('retains every starting public MP3 byte and all35 same-module sibling files',()=>{
   const audio=Object.entries(baseline.tracked_hashes).filter(([p])=>p.startsWith('public/')&&p.endsWith('.mp3'));expect(audio).toHaveLength(2511);
-  for(const [p,h]of audio)expect(sha(fs.readFileSync(root+'/'+p))).toBe(h);
+  for(const [p,h]of Object.entries(baseline.tracked_hashes).filter(([p])=>p.startsWith('public/')))expect(sha(fs.readFileSync(root+'/'+p))).toBe(h);
   expect(baseline.same_module_protected_files).toHaveLength(35);for(const p of baseline.same_module_protected_files)expect(sha(fs.readFileSync(root+'/'+p))).toBe(baseline.tracked_hashes[p]);
  },30000);
+ it('preserves95 approved1.4 media bytes, all historical tracked receipts and10 package receipts',()=>{
+  const media=j('docs/lesson-151-protected-media.json').media;expect(media).toHaveLength(95);for(const m of media)expect(hash(m.path)).toBe(m.sha256);
+  expect(j('docs/lesson-151-protected-packages.json').packages).toHaveLength(10);
+  for(const [p,h]of Object.entries(baseline.tracked_hashes).filter(([p])=>/^docs\/lesson-(135|14[1-5])/.test(p)))expect(sha(fs.readFileSync(root+'/'+p))).toBe(h);
+ });
  it('protects all non-target mappings and prior history while retaining target history',()=>{
   for(const [k,v]of Object.entries(baseline.non_target_mappings))expect(mf.lessons[k]).toEqual(v);
   for(const [k,v]of Object.entries(baseline.original_history)){if(k==='bhw-relationships')expect(mf.history[k].slice(0,v.length)).toEqual(v);else expect(mf.history[k]).toEqual(v);}

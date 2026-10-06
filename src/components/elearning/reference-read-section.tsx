@@ -89,7 +89,7 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
     () => {
       const audio = audioRef.current;
       return () => {
-        audio?.pause();
+        if (audio && !audio.paused) audio.pause();
         if (frame.current !== null) cancelAnimationFrame(frame.current);
       };
     },

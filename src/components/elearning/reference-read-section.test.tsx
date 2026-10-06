@@ -62,7 +62,8 @@ describe("ReferenceReadSection", () => {
   });
 
   it("pauses the mounted player when leaving the section", () => {
-    const { unmount } = render(<ReferenceReadSection heading={heading} body={body} takeaway={takeaway} narration={narration} en />);
+    const { unmount, container } = render(<ReferenceReadSection heading={heading} body={body} takeaway={takeaway} narration={narration} en />);
+    Object.defineProperty(container.querySelector("audio"), "paused", { value: false });
     unmount();
     expect(HTMLMediaElement.prototype.pause).toHaveBeenCalledOnce();
   });

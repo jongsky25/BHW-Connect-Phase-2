@@ -1,3 +1,4 @@
+import {execFileSync} from 'node:child_process';
 // Bounded, read-only baseline through the existing loader account. No writes.
 import {readFileSync,writeFileSync} from 'node:fs';
 import {createClient,signIn,requireEnv} from './lib/supabase-rest.mjs';
@@ -17,5 +18,5 @@ for(const lesson of rows){
  const notes=await client.get(`course_lesson_facilitator_notes?select=*&revision_id=eq.${lesson.published_revision_id}`);
  snapshot.push({lesson,revision:revisions[0],private_notes:notes});
 }
-writeFileSync('lesson-151-published-snapshot.json',JSON.stringify({captured_at:new Date().toISOString(),source_commit:process.env.GITHUB_SHA??null,method:'12 bounded published lesson/revision/private-note rows via loader admin; read-only; no learner identities or progress retrieved',rows:snapshot},null,2)+'\n');
+writeFileSync('lesson-151-published-snapshot.json',JSON.stringify({captured_at:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),method:'12 bounded published lesson/revision/private-note rows via loader admin; read-only; no learner identities or progress retrieved',rows:snapshot},null,2)+'\n');
 console.log('Read-only snapshot complete: one target plus eleven protected published lessons.');

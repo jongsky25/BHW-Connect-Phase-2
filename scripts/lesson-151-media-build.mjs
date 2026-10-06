@@ -20,7 +20,7 @@ const allowed=['bhw-relationships'];
 const original=json(narrationPath);
 original.history ??= {};
 original.history['bhw-relationships'] ??= [];
-if(!original.history['bhw-relationships'].some(h=>JSON.stringify(h)===JSON.stringify(original.lessons['bhw-relationships']))) original.history['bhw-relationships'].push(original.lessons['bhw-relationships']);
+if(original.history['bhw-relationships'].length===0&&!original.history['bhw-relationships'].some(h=>JSON.stringify(h)===JSON.stringify(original.lessons['bhw-relationships']))) original.history['bhw-relationships'].push(original.lessons['bhw-relationships']);
 save(narrationPath,original);
 const args=['--modules','05-bhw-at-barangay','--lessons',allowed.join(',')];
 let deleted=[];
@@ -93,6 +93,6 @@ if(!pending.length){
     writeFileSync(guide,readFileSync(guide,'utf8').replace('SELF_STUDY_TIMING_PENDING',estimate));
   }
 }
-save('docs/lesson-151-media-generation.json',{generated_date:new Date().toISOString(),source_commit:process.env.GITHUB_SHA??null,owner_review:'pending',render_input_sha256:renderInputHash,render_cached:cached,target_read_tracks:12,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});
+save('docs/lesson-151-media-generation.json',{generated_date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),owner_review:'pending',render_input_sha256:renderInputHash,render_cached:cached,target_read_tracks:12,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});
 console.log('Completed draft lesson media; only target recordings changed, with historical media retained.');
 if(pending.length)process.exitCode=1;

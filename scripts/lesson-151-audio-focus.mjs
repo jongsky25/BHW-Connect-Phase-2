@@ -1,9 +1,8 @@
 // Decode and review actual Read MP3s and the shipped videos' AAC, with excerpts.
-import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';import {createRequire} from 'node:module';
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
 const root=path.resolve(import.meta.dirname,'..'),model='gemini-3.8-flash';
-const require=createRequire(root+'/remotion/package.json');
-const {getExecutablePath}=require(path.join(path.dirname(require.resolve('@remotion/renderer')),'compositor/get-executable-path.js'));
-const ffmpeg=getExecutablePath({indent:false,logLevel:'error',type:'ffmpeg',binariesDirectory:null});
+const ffmpeg=process.env.LESSON151_FFMPEG??'ffmpeg';
+const decoderVersion=execFileSync(ffmpeg,['-version'],{encoding:'utf8'}).split('\n')[0];
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 const j=p=>JSON.parse(fs.readFileSync(root+'/'+p,'utf8'));
 const manifest=j('content/training/day1-basic-competencies/narration.json'),lesson=j('content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/lesson.json');
@@ -18,7 +17,7 @@ for(const language of ['fil','en']){
  records.push({id:`shipped-story-${language}`,language,file:root+'/public'+story.videos[language].path,source_path:story.videos[language].path,timings:timing.beats,duration:timing.durationSeconds});
 }
 const dir=root+'/.preview/lesson151-excerpts';fs.mkdirSync(dir,{recursive:true});
-const report={date:new Date().toISOString(),source_commit:process.env.GITHUB_SHA??null,model,method:'Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.',records:[]};
+const report={date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),model,decoder_version:decoderVersion,method:'Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.',records:[]};
 const save=()=>fs.writeFileSync(root+'/docs/lesson-151-audio-focus.json',JSON.stringify(report,null,2)+'\n');
 function stats(pcm){let sum=0,peak=0,quiet=0;for(let i=0;i+1<pcm.length;i+=2){const n=pcm.readInt16LE(i)/32768;sum+=n*n;if(Math.abs(n)<0.001)quiet++;peak=Math.max(peak,Math.abs(n));}return{samples:pcm.length/2,seconds:pcm.length/48000,rms:Math.sqrt(sum/Math.max(1,pcm.length/2)),peak,quiet_sample_fraction:quiet/Math.max(1,pcm.length/2)};}
 for(const record of records){
@@ -37,7 +36,8 @@ for(const record of records){
   const wav=execFileSync(ffmpeg,['-v','error','-ss',String(q.start),'-i',record.file,'-t',String(q.end-q.start),'-vn','-f','wav','-acodec','pcm_s16le','-ac','1','-ar','24000','pipe:1'],{maxBuffer:8e6});
   const name=record.id+'-'+q.kind+'.wav';fs.writeFileSync(dir+'/'+name,wav);
   const excerptHash=sha(wav),old=prior?.model===model?prior.records?.find(r=>r.id===record.id&&r.source_sha256===sourceHash)?.excerpts?.find(e=>e.kind===q.kind&&e.excerpt_sha256===excerptHash&&e.start===q.start&&e.end===q.end):null;
-  const excerptSamples=Math.round((Math.min(q.end,full.seconds)-q.start)*24000);
+  const excerptPcm=execFileSync(ffmpeg,['-v','error','-f','wav','-i','pipe:0','-f','s16le','-acodec','pcm_s16le','-ac','1','-ar','24000','pipe:1'],{input:wav,maxBuffer:8e6});
+  const excerptSamples=excerptPcm.length/2;
   if(old?.model_response){reviewed.excerpts.push({...old,decoded_sample_count:excerptSamples,reused_exact_encoded_bytes:true});save();console.log('Reused focused review for exact bytes '+record.id+' '+q.kind);continue;}
 
   const prompt=`This is ${record.language==='fil'?'Filipino/Tagalog':'Philippine English'} fictional educational audio. The excerpt begins on a measured speech-zone boundary. Transcribe every audible word without guessing. Assess Malou pronunciation (mah-LOO), negation, role distinctions, ending completeness, audible speech, clipped words and unexpected voice changes. Report concrete timestamps relative to this excerpt and uncertainty. Do not presume previous analysis. Return JSON with transcript, observations, possible_defects and uncertainty. This is model assessment, not human approval.`;
