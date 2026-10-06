@@ -14,6 +14,18 @@ export const approved153Path=p=>{
   expect(createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex')).toBe(receipt.approved_source_sha256[p]);
 };
 export const approved153LessonPaths=['competency.json','facilitator.en.md','facilitator.fil.md','lesson.json','read.en.md','read.fil.md','slides.json'].map(p=>localPartnersLeaf+p);
+export function approved153HistoricalMapping(manifest, oldHash, hashTrack, hashObject) {
+  approved153Path('content/training/day1-basic-competencies/narration.json');
+  const old=manifest.history['bhw-local-partners'].find(v=>hashObject(v)===oldHash);
+  expect(old).toBeDefined();
+  for(const languages of Object.values(old.sections))for(const track of Object.values(languages))expect(hashTrack(track.src)).toBe(track.sha256);
+}
+export function approved153HistoryPrefix(manifest) {
+  approved153Path('content/training/day1-basic-competencies/narration.json');
+  const baseline=JSON.parse(fs.readFileSync(path.join(root,'docs/lesson-152-current-baseline.json'),'utf8'));
+  const old=baseline.original_history['bhw-local-partners'];
+  expect(manifest.history['bhw-local-partners'].slice(0,old.length)).toEqual(old);
+}
 export function withoutApproved153Registry(source) {
   approved153Path('remotion/src/Root.tsx');
   expect(source).toContain('BhwLocalPartnersStoryFil');
