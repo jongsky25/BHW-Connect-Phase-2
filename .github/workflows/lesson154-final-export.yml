@@ -1,0 +1,80 @@
+name: Lesson 1.5.4 final read-only evidence transport
+on:
+  push:
+    branches: ['codex/lesson-154-evidence-e1949678']
+    paths: ['.github/workflows/lesson154-final-export.yml']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  plan:
+    if: github.ref_name == 'codex/lesson-154-evidence-e1949678'
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - id: plan
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_RUN: '37462803325'
+          KIND: 'media'
+          TARGET_BRANCH: ${{ github.ref_name }}
+        shell: python
+        run: |
+          import urllib.request,os,json,math
+          source=os.environ['SOURCE_RUN'];assert source.isdecimal()
+          artifacts=[]
+          for source_run in [source]:
+            runurl='https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs/'+source_run
+            with urllib.request.urlopen(urllib.request.Request(runurl,headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']})) as response: run=json.load(response)
+            assert run['head_branch']=='codex/lesson-154-malou-proposal' and run['head_sha']=='e1949678a1134c4b2966d785fcf9274e589166be'
+            req=urllib.request.Request(runurl+'/artifacts',headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']})
+            with urllib.request.urlopen(req) as r: data=json.load(r)
+            selected=[a for a in data['artifacts'] if a['name']=='lesson154-draft-evidence' and not a['expired']]
+            assert len(selected)==1
+            artifacts.extend(selected)
+          jobs=[]
+          for a in artifacts:
+            assert a['size_in_bytes']<=512*1024*1024
+            for chunk in range(math.ceil(a['size_in_bytes']/(8*1024*1024))):jobs.append({'artifact_id':a['id'],'chunk':chunk})
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('matrix='+json.dumps({'include':jobs})+'\n')
+  export:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - name: Verify original ZIP and export one bounded chunk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ARTIFACT_ID: ${{ matrix.artifact_id }}
+          CHUNK: ${{ matrix.chunk }}
+        shell: python
+        run: |
+          import urllib.request,urllib.error,os,json,hashlib,base64,zipfile,io
+          base='https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/artifacts/'+os.environ['ARTIFACT_ID']
+          headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']}
+          with urllib.request.urlopen(urllib.request.Request(base,headers=headers)) as r:meta=json.load(r)
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+            def redirect_request(self,*args):return None
+          try:
+            urllib.request.build_opener(NoRedirect).open(urllib.request.Request(base+'/zip',headers=headers))
+            raise RuntimeError('Expected artifact redirect')
+          except urllib.error.HTTPError as e:
+            if e.code!=302:raise
+            location=e.headers['Location']
+          # The signed storage request carries no GitHub authorization header.
+          with urllib.request.urlopen(location) as r:data=r.read()
+          digest=hashlib.sha256(data).hexdigest();assert meta['digest']=='sha256:'+digest
+          with zipfile.ZipFile(io.BytesIO(data)) as z:assert z.testzip() is None
+          index=int(os.environ['CHUNK']);chunk=data[index*8*1024*1024:(index+1)*8*1024*1024];assert chunk
+          with open('part.bin','wb') as f:f.write(chunk)
+          with open('receipt.json','w') as f:json.dump({'artifact_id':meta['id'],'index':index,'zip_bytes':len(data),'zip_sha256':digest,'chunk_bytes':len(chunk),'chunk_sha256':hashlib.sha256(chunk).hexdigest()},f)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson154-final-part-${{ matrix.artifact_id }}-${{ matrix.chunk }}
+          path: |
+            part.bin
+            receipt.json
+          retention-days: 7
