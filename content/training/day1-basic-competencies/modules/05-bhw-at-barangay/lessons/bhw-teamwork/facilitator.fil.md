@@ -1,74 +1,70 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na pangalanan ang limang rekomendasyon para sa mabuting pagtutulungan ng mga BHW at, sa isang team role-play, maipag-usapan nang maaga at malinaw ang isyung nakaaapekto sa team — at masabi kung may kailangang tiyakin sa supervisor.
+Gamitin ang nag-iisang layunin ng aralin: “Maipaliwanag at mailapat sa isang sitwasyon: mabuting pagtutulungan.” Panatilihin ang limang rekomendasyon ng manual at iugnay sa papel ng team, sariling tungkulin, at pagkilos bilang kasapi. Ang praktikal na halimbawa ay kathang-isip; hindi ito lokal na utos o awtorisasyong klinikal.
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** mga 60 minuto sa harapang sesyon — ang bahaging "Ano ang mabuting teamwork" (30 min) at "Team-building activity" (30 min) sa plano sa gabay ng subchapter. Mga 5 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** manila paper at marker; ang slides ng aralin; para sa team-building game, lubid, kumot, o masking tape para markahan ang lumiliit na espasyo sa sahig (sinking vessel), o, bawat maliit na grupo, 20 hilaw na spaghetti stick, masking tape, isang metrong tali, at isang marshmallow (marshmallow spaghetti tower); isang role-play card (tingnan sa ibaba).
+Ang buong pinadadaloy na talakayan at role-play ay 30 minuto: pambungad 3, limang gawi 6, kasunduan 5, halimbawa at role-play 8, feedback at check 5, buod 3. Opsyonal ang hiwalay na 30 minutong accessible team activity: paghahanda at pagpili 5, pagtutulungan 10, pagtalakay 10, paglalapat 5. Kung kapwa gagamitin, 60 minuto ang dalawa sa anim na tig-30 minutong bahagi ng umiiral na 180-minutong module. Hindi ito dagdag na 60 minuto sa module. Ang 30 minutong pangunahing aralin ay maaari ring mag-isa.
+
+SELF_STUDY_TIMING_PENDING
+
+Kagamitan: papel o task cards at panulat kung mayroon; maaaring pasalita lamang o gumamit ng assistive communication. Hindi kailangan ng larong pisikal, biniling materyales, video o sariling gadget.
 
 ## [prepare] Paghahanda
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Pumili ng isang team-building game at ihanda ito bago ang sesyon. Magbakante ng espasyo sa sahig para sa sinking vessel, o maghanda ng isang kit bawat grupo para sa marshmallow tower.
-- Isipin kung paano hinahati ng mga BHW team sa inyong lugar ang trabaho (bawat purok o sitio, lead ng programa) para may totoong halimbawa ka ng "malinaw na tungkulin."
-- Ang araling ito ay tungkol sa **pagtutulungan ng mga BHW**. Huwag gawing counselling sa personal na problema ng sinuman ang talakayan sa isyu; ang hinihingi lang ng aralin ay pag-usapan nang maaga ang isyung nakaaapekto sa team.
+Basahin ang anim na Read/Slides screen, kasama ang section-8 at slide-section-8. Kumpirmahin nang lokal ang itinalagang supervisor, saklaw ng mga BHW, pag-apruba sa pagbabago ng assignment, at paraan ng pag-uulat. Walang imbentong pangalan o numero. Gumamit lamang ng kathang-isip na gawain at blangkong kard; huwag magdala ng tunay na health records. Tanungin nang pribado kung anong paraan ng paglahok ang komportable. Ihanda ang pasalita, nakaupo, nakasulat o indibidwal na alternatibo nang walang bawas sa marka.
 
 ## [opening] Pambungad
 
-Itanong sa grupo: *"Alalahanin ang panahong napakaganda ng pagtutulungan ng inyong BHW team — at ang panahong hindi. Ano ang pinagkaiba?"* Gumawa ng dalawang hanay sa manila paper, "umubra" at "hindi umubra," at punan mula sa mga sagot.
+Ipakita ang larawan ni Malou at mga kasamahan sa mesa. Sabihin: “May gawain at oras na, pero sino ang gagawa at sino ang magbabalita?” Magbigay ng tahimik na oras sa pag-iisip bago tumawag. Tanggapin ang sagot sa sariling wika o paraan. Huwag magpabanggit ng tunay na kasamahang may problema. Isulat o ulitin ang layunin: maayos na serbisyo sa komunidad.
 
 ## [steps] Mga hakbang
 
-1. **Ano ang mabuting teamwork (Read "Ano ang mabuting teamwork", ang slide na may parehong pamagat).** Isa-isahin ang limang rekomendasyon: malinaw na layunin (bakit tayo nag-volunteer), malinaw na tungkulin (sino ang naka-assign sa aling purok, sino ang lead sa aling programa), pagiging bukas sa isyu, pagiging bukas sa puna, at ugnayan sa labas ng trabaho.
-2. **Itugma sa pambungad.** Sa bawat rekomendasyon, ituro ang isang bagay sa hanay na "umubra" o "hindi umubra" na tugma dito. Itanong: *"Aling rekomendasyon ang nawala noong hindi umubra?"*
-3. **Talakayan ng grupo.** Itanong: *"Alin sa limang rekomendasyon ang pinakamahirap sundin sa inyong karanasan? Bakit?"* Hayaang sumagot ang ilang BHW bago ka magkomento.
-4. **Team-building activity.** Gawin ang sinking vessel game (pananatilihin ng team ang lahat sa loob ng espasyo sa sahig na unti-unti mong pinapaliit) o ang marshmallow spaghetti tower (bawat maliit na grupo ay gagawa ng pinakamataas na tore gamit ang kit). Pagkatapos, itanong: *"Sino ang gumanap ng aling papel? Malinaw ba ang layunin? Ano ang nangyari noong may hindi sumang-ayon?"*
-5. **Self-check.** Ibigay ang check (ano ang gagawin sa isyung nakaaapekto sa team) at hayaang mag-usap ang grupo bago ibigay ang sagot.
+1. Sa unang screen, ipaliwanag ang layunin at hangganan; hindi clinical authority ang pagtutulungan.
+2. Sa ikalawa, pangalanan ang limang gawi. Iugnay ang maagang pag-uusap sa epekto sa gawain, hindi sapilitang pagsisiwalat ng personal na dahilan.
+3. Sa ikatlo, imodelo ang kasunduan: “Ako ang maghahanda; ikaw ang titingin bago mag-alas-diyes. Sino ang magbabalita?” Ipaulit ang pagtanggap.
+4. Sa ikaapat, imodelo ang maagang hadlang at malinaw na handoff. Ipakitang ang pagbabagong nangangailangan ng pahintulot ay kinukumpirma muna. Hindi kailangang hintayin ang peer discussion kapag may agarang panganib o seryosong paglabag.
+5. Sa ikalima, gumamit ng punang nakatuon sa kilos at mungkahi. Tiyakin ang natapos at ang natitira.
+6. Sa ikaanim, piliin at ipaliwanag ang sagot. Isagawa ang maikling role-play; ang tamang check ay hindi patunay ng aktuwal na kasanayan.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Inaasahang sagot
 
-- **"Pinakamahirap ang maging bukas sa isyu — may nagtatampo."** Tapat ito. Sang-ayunan na mahirap, saka ituro ang aralin: agad itong pag-usapan bago pa lumalim. Itanong: *"Ano ang lumalala kapag naghintay tayo?"*
-- **"Parang atake ang puna ng komunidad."** Kilalanin ang damdamin. Gamitin ang salita ng aralin: tingnan ang puna bilang tulong, hindi atake. Itanong: *"Ano ang isang punang kalaunan ay nakatulong pala?"*
-- **"Isumbong na lang natin sa midwife ang miyembrong may problema."** Huwag balewalain. Itanong: *"Nakausap na ba natin muna ang miyembro at ang team?"* Ang sagot ng module ay pag-usapan agad bilang koponan bago mag-ulat.
+“Tutulong na lang ako agad.” Kilalanin ang intensiyong tumulong, saka itanong ang saklaw, oras at pahintulot.
 
-## [misconception] Karaniwang maling akala
+“Kailangan naming malaman ang personal niyang problema.” Itanong kung sapat ang epekto sa gawain upang magplano. Hindi kailangang malaman ang pribadong dahilan.
 
-**"Mas tahimik ang team kapag hindi pinag-uusapan ang problema."** Maraming BHW ang umiiwas magbukas ng isyu para walang masaktan. Kabaligtaran ang sinasabi ng aralin: pag-usapan agad ang isyu bago pa lumalim — kahit personal, kapag nakaaapekto sa trabaho. Itama ito nang hindi napapahiya ang sinuman: itanong sa grupo kung ano ang nangyari sa hanay na "hindi umubra" noong pinabayaan ang isyu, para sa sarili nilang kuwento manggaling ang patunay.
+“Laging kausapin muna ang kasama bago mag-ulat.” Itama: sa karaniwang koordinasyon, maagang mag-usap; sa agarang panganib, seryosong paglabag o kung hindi ligtas ang pag-uusap, gamitin kaagad ang angkop na lokal na contact.
 
-## [practice] Gawaing pagsasanay
+“Naipasa ko na, kaya tapos na.” Itanong kung may tumanggap, kung natapos ang napagkasunduan at kung sino ang naabisuhan.
 
-Pagkatapos ng team-building game, gamitin ang role-play card na ito sa mga grupong tatlo o apat: *"Sa inyong BHW team, dalawang linggo nang hindi nabibisita ang purok na naka-assign sa isang miyembro. Napansin na ito ng iba at nagsisimula nang magreklamo sa isa't isa."* Isang BHW ang gaganap na miyembro; ang iba ang team. May tatlong minuto ang grupo para sa usapan. Pagkatapos, ipapaliwanag ng isang BHW bawat grupo, sa sariling salita: ang pangunahing punto (ano ang isyu at bakit ito nakaaapekto sa team), ang unang hakbang na ginawa nila, at ano ang titiyakin nila sa midwife (halimbawa, kung kailangang baguhin ang assignment, dahil ang midwife ang nagtatakda ng gawain ng mga BHW).
+## [misconception] Maling akala
 
-## [answer-key] Susi sa self-check
+“Kapag mabuting kasamahan, dapat sumama sa lahat ng laro at lakad.” Hindi. Ang ikalimang rekomendasyon ay magalang na ugnayan na may paggalang sa personal na buhay. Boluntaryo ang pakikisalamuha. Hindi sukatan ang lakas, personalidad, accent, kakayahang gumastos o kakayahang sumali sa pisikal na gawain. Hindi hinihingi ang shrinking-space contact.
 
-Iisang tanong ang section check sa Read "Ano ang mabuting teamwork" at ang check sa slide ng aralin; minsan lang itong tinalakay dito.
+## [practice] Pagsasanay at mga alternatibo
 
-- **"Ano ang gagawin sa isyung nakaaapekto sa team?"** → **Pag-usapan nang maaga at malinaw kasama ang team.** Ang ikatlong rekomendasyon ng aralin ay maging bukas sa isyu, kahit personal, at agad itong pag-usapan bago pa lumalim.
-  - Mali ang *"Balewalain hanggang lumala"* dahil sa paghihintay ay lumalalim ang hindi pagkakaunawaan at naaapektuhan ang trabaho ng buong team — iyan mismo ang iniiwasan ng rekomendasyon.
+Pangunahing card: “Hindi matatapos ang pagtingin sa mga paanyaya bago mag-alas-diyes. May oras pang humingi ng pahintulot sa kailangang pagbabago. Hindi ibinabahagi ang personal na dahilan.” Sa pares o tatluhan, magkasundo sa gawain, tatanggap, oras at kailangang pahintulot; ipaulit ang pagtanggap, saka imodelo ang pagbalita. Palitan ang papel upang maobserbahan ang bawat isa. Maaaring isulat o idikta ang sagot sa halip na umarte.
 
-## [observe] Ano ang oobserbahan
+Opsyonal na hiwalay na activity: ayusin nang nakaupo ang blangkong task cards para sa kathang-isip na outreach, o gawin ito nang pasalita. Magtakda ng malinaw na papel, magpasok ng isang pagbabago, at pag-usapan kung paano nila nilinaw ang kasunduan. Ang spaghetti tower ng source ay opsyonal lamang kung naa-access at kusang pinili; maaaring tagapagplano o tagamasid ang isang kasapi. Walang marka sa taas ng tore o pisikal na lakas. Ang shrinking-space game ng source ay hindi ginagamit sa draft na ito.
 
-Gamitin ang observation indicator ng aralin (naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor) habang ginagawa ang role-play:
+## [answer-key] Susi sa tatlong pagpipilian
 
-- **Kaya na:** napapangalanan ng BHW ang isyu at kung bakit ito nakaaapekto sa team, binubuksan ang usapan nang maaga at magalang sa miyembro, at nasasabi kung may titiyakin sa midwife — nang walang untag.
-- **Kailangan pa ng practice:** naibubukas ng BHW ang isyu pero kailangan pa ng tanong mo bago masabi kung bakit ito mahalaga sa team o ano ang titiyakin sa midwife.
-- **Hindi pa:** hindi angkop ang paliwanag o hakbang — halimbawa, iniiwasan ang isyu, sinisisi ang miyembro nang hindi kinakausap, o dumiretso sa pag-uulat nang hindi muna kinakausap ang miyembro o ang team.
+A ang pinakamainam: maagang komunikasyon, malinaw na tungkulin, pahintulot at kumpirmasyon ng pagtanggap at pagtatapos. B: mabuti ang layuning tumulong, ngunit hindi nito tinitiyak ang saklaw, pahintulot o kapasidad; hindi awtorisasyon ang pagiging magkakasama. C: hindi kailangan ang pribadong dahilan upang hatiin ang gawain; hindi pinahihintulutan ng pagtutulungan ang kumpidensiyal na pagbubunyag. Sabihin lamang ang kailangan sa awtorisadong tatanggap.
 
-Ipinapakita ng team-building game ang pagtutulungan ng grupo, pero sa role-play obserbahan ang bawat BHW. Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Ipaliwanag ang dahilan para sa A, B at C matapos pumili. Magtanong: “Anong tatlong gawi ang nakita? Paano natin titiyaking may tumanggap at tapos na?”
 
-## [support] Kung kailangan ng dagdag na suporta
+## [observe] Pagmamasid
 
-- Bigyan sila ng pambungad na linya: *"Puwede ba nating pag-usapan ang pagbisita sa purok? Gusto kong maayos natin ito nang magkasama bago pa lumaki."*
-- Hayaan silang panoorin ang isang grupong **Kaya na**, saka ulitin ang parehong card sa bagong grupo.
-- Obserbahan muli gamit ang parehong role-play card sa bahaging "Pagsasanay at buod" ng module, o sa susunod na sesyon.
+Gamitin lamang ang iisang objective-index-0 indicator at anim na bilingual level fields sa competency.json. Kaya na: hindi bababa sa tatlong gawi at kumpletong ligtas na kasunduan nang walang untag. Kailangan pa ng practice: ligtas ang direksiyon ngunit may nawawalang detalye at kailangan ng untag. Hindi pa: hindi maipakita ang tatlong gawi o nananatiling hindi ligtas ang tugon matapos ang suporta.
 
-## [sources-review] Sanggunian at tala sa pagrepaso
+Obserbahan ang bawat learner sa parehong gawain o katumbas na nakasulat/pasalitang sagot. Itala ang nakitang kilos at suportang ibinigay. Huwag markahan ang accent, personalidad, lakas, impluwensiyang politikal o pagkakaroon ng materyales. Hiwalay ang online completion sa praktikal na pagtatasa.
 
-- BHW Reference Manual PDF 17 (Team Work) at Facilitator Guide PDF 26–27 (mga source ng aralin, may markang "inherited page reference; final audit pending"). Ayon sa README ng source material, ang Team Work + Self-Management ay nasa Reference Manual pp. 9–10 (PDF 17–18), Facilitator Guide p. 20 (PDF 27), at Day 1 presentation slides 47–55.
-- Galing sa Facilitator Guide PDF 27 ang sinking vessel at marshmallow spaghetti tower, pati ang mungkahing magbahagi ang mga BHW ng karanasan sa pakikipagtrabaho sa kapwa BHW. Ang mga TESDA learning outcome na nakalista roon: describe team role and scope; identify one's role and responsibility within the team; work as a team member.
-- Oras: pinananatili ng module ang 3 oras ng TESDA para sa *Work in a Team Environment* (sinasabi ng Facilitator Guide PDF 26–27 na "at least 3 hours", kasama ang paksang "Ang BHW at ang Kanyang Barangay"). Ang 60 minuto sa itaas ay bahagi ng araling ito sa planong iyon (30 min talakayan + 30 min team-building). Huwag idagdag muli ang buong oras sa bawat maikling aralin; ang hating ito ay para sa self-study, hindi bagong training-hour allocation.
-- Pangkalahatan ang observation indicator ng araling ito; mas tiyak ang indicator para sa layuning ito sa mga indicator ng kakayahan ng subchapter (naipapakita ang hindi bababa sa tatlo sa limang rekomendasyon sa role-play). Maaaring pagtugmain ito ng mga reviewer.
-- Draft na gabay sa talakayan ang `practice-map` na visual ng aralin, hindi pa aprubado ng may-ari.
-- Repasuhin ang kasalukuyang legal/policy wording, bilingual parity, at observation indicator bago ilathala.
-- Draft para sa pagrepaso (Draft for review)
+## [support] Dagdag na suporta
+
+Ibigay ang simula: “Ano na ang tapos? Ano ang natitira? Sino ang tatanggap, kailan, at anong pahintulot ang kailangan?” Imodelo ang isang tugon at ipaulit sa ibang kathang-isip na assignment. Magbigay ng mas mahabang oras, malalaking letra, pasalitang pagbasa o assistive communication ayon sa gusto ng learner. Huwag piliting magbunyag ng personal na dahilan. Muling obserbahan ang parehong kasanayan, hindi ang pagsasaulo ng iyong linya.
+
+## [sources-review] Sanggunian at limitasyon
+
+BHW Reference Manual: PDF 17 / nakalimbag 9, limang rekomendasyon. Facilitator Manual: PDF 26–27 / nakalimbag 19–20, tatlong team outcomes at pinagsamang hindi bababa sa tatlong oras; opsyonal na laro. TESDA BHS NC II Revision 01 (11 Enero 2019): PDF 11–12 / nakalimbag 7–8, roles, scope at reporting; PDF 84–85 / nakalimbag 80–81, tatlong tig-isang oras na outcomes. Hindi napatunayang ito ang pinakabagong bersiyon. Day 1 deck: aktuwal na PDF 44–46 ang limang teamwork practices; ang minanang 47–55 lead ay hindi tumpak para sa mga ito. Nainspeksiyon ang orihinal na page images at tumugma ang apat na PDF hash sa handoff; tingnan ang lesson-154-source-audit.json.
+
+Ang Malou example, privacy/scope safeguards, accessible alternatives at 30+30 minutong pagdaloy ay authored adaptations. Hindi ito sipi ng legal na tuntunin o unibersal na local procedure. Ang draft ay naghihintay ng owner at lokal na policy/SME review; ang model audio review ay hindi human listening. Hindi binago ang released 1.5.2 na 20-minutong standalone at 10-minutong integrated core, ni ang protected sibling guides. Ang lumang practice-map ay may salungat na approved flag at draft provenance; pinanatili ang bytes at hindi ito bagong aprubadong art.

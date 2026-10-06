@@ -114,31 +114,24 @@ all matter too.
 
 ## [concept/core] What good teamwork looks like {m5.teamwork-practices, m5.competency}
 
-A barangay usually has more than one BHW, and they need to work as a
-team. Five recommendations guide this.
+First, clarify why you volunteered: to improve community health. Second, clarify each member’s role and responsibility. Third, discuss issues affecting the work early. Describing the effect on the task is enough; private reasons do not have to be disclosed.
 
-First, everyone should be clear on why they volunteered — to improve
-the community's health. Second, each member's role should be clear —
-who's assigned to which purok, who leads which programme. Third, be
-open about issues, even personal ones — talk about them right away
-before they deepen. Fourth, be open to feedback and opinions from
-teammates or the community — treat it as help, not an attack. Fifth,
-build relationships with teammates outside of work too — it helps team
-bonding.
+Fourth, listen to feedback from colleagues and the community and use specific suggestions to improve the work. Fifth, build good relationships, including outside work, while respecting personal lives. Such social activities are voluntary. Nobody has to spend money, join a trip or take part in a close-contact physical game to prove they are a good teammate.
+
+Before the deadline, a colleague says, “I cannot finish checking the invitations.” Malou responds, “Thank you for telling us early. What is done and what remains?” She does not demand private reasons or blame her colleague.
+
+A handoff identifies what is done, what remains, the deadline and any permission still needed. Changes requiring permission are checked with the designated supervisor. The receiving person accepts and repeats the task; simply leaving a message is not enough. Share only necessary information with an authorized recipient through an appropriate channel. An immediate danger or serious breach is raised promptly with the appropriate contact under the local process; a peer discussion must not delay it.
 
 :::takeaway
-A clear purpose and clear roles build the team; staying open to issues
-and feedback is what keeps it together.
+Confirm completion of the agreement; set a next step if anything remains.
 :::
 
 :::check
-? In a team of BHWs, what should be the very first response when a
-  member has a personal issue that might affect the group's work?
-- Ignore it as long as it hasn't affected work yet
-+ Talk about it as a team right away, before it deepens
-- Report it straight to the midwife without talking to the member first
-> Correct! Teamwork guidance calls for addressing issues within the
-  team promptly, so misunderstandings don't have room to deepen.
+? What is the best response for Malou?
++ Discuss remaining work, confirm permission for the change, obtain clear acceptance and arrange a completion update.
+- Immediately take over the entire assignment and tell the supervisor afterwards to avoid inconvenience.
+- Share the colleague’s personal reason in the group chat to persuade others to help.
+> A is best: early communication, clear roles, permission and confirmation of acceptance and completion. B: the intention to help is useful, but it does not check scope, permission or capacity; being teammates is not authorization. C: private reasons are unnecessary for sharing the task; teamwork does not justify confidential disclosure. Give only necessary information to an authorized recipient.
 :::
 
 ## [concept/core] Self-management skills {m5.self-management-skills}

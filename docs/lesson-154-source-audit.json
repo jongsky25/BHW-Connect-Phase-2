@@ -1,0 +1,84 @@
+{
+  "audited_at": "2026-10-06T10:42:26.946989+00:00",
+  "original_pdfs": [
+    {
+      "file": "facilitator-original.pdf",
+      "bytes": 26505934,
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc"
+    },
+    {
+      "file": "tesda-bhs-ncii.pdf",
+      "bytes": 1495226,
+      "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa"
+    },
+    {
+      "file": "reference-original.pdf",
+      "bytes": 41537642,
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296"
+    },
+    {
+      "file": "deck-original.pdf",
+      "bytes": 1627258,
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8"
+    }
+  ],
+  "inspected_original_page_images": [
+    {
+      "file": "facilitator-original-p26.png",
+      "sha256": "d3dbec38679ef89250182b3ceae3695b64620814b508274b41ede59d1060ed40"
+    },
+    {
+      "file": "deck-original-p44.png",
+      "sha256": "1d996ca9905c8489bacd4bae5379becd33284579ddb9a46c0f280a803e377d0c"
+    },
+    {
+      "file": "tesda-bhs-ncii-p11.png",
+      "sha256": "fbb951fe1582924c116ea42799d56b2f4fd1c3772d66eb0b8aa2ab266d925004"
+    },
+    {
+      "file": "deck-original-p46.png",
+      "sha256": "d0e09521efe8af47b10dbf75951fea5f82061d206a64bbf29135716b692faedd"
+    },
+    {
+      "file": "facilitator-original-p27.png",
+      "sha256": "4dde343854afbbd1d9ec7d9c6e00f99ea133c0d2d8c00ee82634f5a8056198f8"
+    },
+    {
+      "file": "tesda-bhs-ncii-p12.png",
+      "sha256": "d3366df1ebd3e96275da22f001fe3ec2395fcc42bc7ea47366ddea42d1d71a7d"
+    },
+    {
+      "file": "deck-original-p45.png",
+      "sha256": "d09fba0a7b42f8dfcdfc6ec5015fe560724af8476d7a89e3b0090b0303e1cc87"
+    },
+    {
+      "file": "tesda-bhs-ncii-p84.png",
+      "sha256": "eaa564ea1ba400f9c850ee16f382c7660de1707e73837da84d926dcb949973f2"
+    },
+    {
+      "file": "tesda-bhs-ncii-p85.png",
+      "sha256": "0ae8f42aa5e6ffc1fd56370e4eb4b33df592ce44e115a1e1adbabc8fa151e6b1"
+    },
+    {
+      "file": "reference-original-p17.png",
+      "sha256": "23e4f1a92942d6b57223722938ea0291feb71ec03108d1091286feb716cce10f"
+    }
+  ],
+  "supported_claims": {
+    "reference": "PDF17 / printed9: five practices: shared purpose, roles, early issues, feedback, respectful relationships outside work.",
+    "facilitator": "PDF26\u201327 / printed19\u201320: combined minimum3hours, three team outcomes, optional experience sharing and games; original shrinking-space and spaghetti-tower suggestions observed.",
+    "deck": "PDF44\u201346 contain five practices. Inherited47\u201355 lead is not correct for teamwork recommendations.",
+    "tesda": "Revision01 promulgated11January2019; PDF11\u201312 / printed7\u20138: roles, scope, reporting; PDF84\u201385 / printed80\u201381: three one-hour outcomes. Not verified latest."
+  },
+  "authored_adaptations": [
+    "Malou outreach invitation task, deadline and handoff are fictional.",
+    "Privacy, clinical-scope limits, urgent escalation and voluntary accessible alternatives are conservative design safeguards, not claims of a universal local protocol or legal interpretation.",
+    "30minute facilitated core plus optional separate30minute activity occupy existing two module slots; independent estimate awaits encoded narration."
+  ],
+  "inherited_asset_inconsistency": "practice-map review_status=approved conflicts with draft provenance. Bytes preserved; not claimed new approved Malou artwork.",
+  "review_limits": [
+    "Owner approval pending",
+    "No independent human listening or policy SME signoff",
+    "No authenticated production playback claim"
+  ]
+}

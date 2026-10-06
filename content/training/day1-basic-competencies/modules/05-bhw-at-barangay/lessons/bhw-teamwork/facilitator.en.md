@@ -1,74 +1,70 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can name the five recommendations for good teamwork among BHWs and, in a team role-play, bring up an issue affecting the team early and clearly — and say what, if anything, needs to be checked with the supervisor.
+Use the single lesson objective: “Explain and apply in a situation: working well as a team.” Retain the manual’s five recommendations and connect them to team role, own responsibility and working as a member. The practical example is fictional; it is not a local directive or clinical authorization.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 60 minutes in a face-to-face session — the "What good teamwork looks like" (30 min) and "Team-building activity" (30 min) parts of the plan in the subchapter guide. Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** manila paper and markers; the lesson's slides; for the team-building game, either a rope, blanket or masking tape to mark a shrinking floor space (sinking vessel), or, per small group, 20 uncooked spaghetti sticks, masking tape, a one-meter string and one marshmallow (marshmallow spaghetti tower); one role-play card (see below).
+The full facilitated discussion and role-play take 30 minutes: opening 3, five practices 6, agreement 5, example and role-play 8, feedback and check 5, summary 3. A separate accessible team activity is optional and takes 30 minutes: preparation and choice 5, cooperation 10, debrief 10, transfer 5. If both are selected, these 60 minutes occupy two of the existing module’s six 30-minute segments within 180 minutes. They do not add 60 minutes to the module. The 30-minute core lesson can also stand alone.
+
+SELF_STUDY_TIMING_PENDING
+
+Materials: paper or task cards and a pen if available; oral responses or assistive communication are equally valid. No physical game, purchased supplies, video or personal device is required.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- Choose one team-building game and set it up before the session. Clear floor space for the sinking vessel game, or pack one kit per group for the marshmallow tower.
-- Think of how BHW teams in your area divide work (by purok or sitio, by programme lead) so you can use a real example for "clear roles".
-- This lesson is about **how BHWs work together**. Do not turn the issue discussion into counselling on anyone's personal problem; the lesson only asks that issues affecting the team be talked about early.
+Read all six Read/Slides screens, including section-8 and slide-section-8. Locally confirm the designated supervisor, BHW scope, approval for changing assignments and reporting channel. Do not invent names or numbers. Use fictional tasks and blank cards only; do not bring actual health records. Privately ask what participation format is comfortable. Prepare oral, seated, written or individual alternatives without a scoring penalty.
 
 ## [opening] Opening
 
-Ask the group: *"Think of a time your BHW team worked really well together — and a time it didn't. What was different?"* Write two columns on manila paper, "worked well" and "didn't", and fill them in from the answers.
+Show Malou and her colleagues at the work table. Ask: “We have a task and a time, but who will do it and who will report back?” Allow quiet thinking time. Accept the learner’s language or communication method. Do not ask for the names of real colleagues involved in difficulties. Write or repeat the purpose: organized service to the community.
 
 ## [steps] Steps
 
-1. **What good teamwork looks like (Read "What good teamwork looks like", the slide of the same name).** Go through the five recommendations one at a time: clear purpose (why we volunteered), clear roles (who is assigned to which purok, who leads which programme), openness about issues, openness to feedback, and relationships outside work.
-2. **Match to the opening.** For each recommendation, point to something in the "worked well" or "didn't" column that fits it. Ask: *"Which recommendation was missing when it didn't work?"*
-3. **Group discussion.** Ask: *"Which of the five recommendations is hardest to follow in your experience? Why?"* Let several BHWs answer before you comment.
-4. **Team-building activity.** Run the sinking vessel game (the team keeps everyone inside a floor space that you gradually shrink) or the marshmallow spaghetti tower (each small group builds the tallest tower they can with the kit). Afterwards ask: *"Who took which role? Was the goal clear? What happened when someone disagreed?"*
-5. **Self-check.** Give the check (what to do about an issue affecting the team) and let the group discuss before revealing the answer.
+1. In screen one, explain purpose and limits; teamwork is not clinical authority.
+2. In screen two, name all five practices. Link early discussion to the effect on the task, not forced disclosure of private reasons.
+3. In screen three, model the agreement: “I will prepare; you will check before ten. Who will report back?” Ask the recipient to repeat acceptance.
+4. In screen four, model an early difficulty and a clear handoff. Confirm changes requiring permission first. An immediate danger or serious breach must not wait for peer discussion.
+5. In screen five, give feedback about an action and a suggestion. Confirm completed and remaining work.
+6. In screen six, choose and explain the response. Run the short role-play; a correct check answer does not prove practical skill.
 
-## [expected-answers] Expected answers and how to respond
+## [expected-answers] Expected answers
 
-- **"Being open about issues is the hardest — people get offended."** This is honest. Agree that it is hard, then point to the lesson: talk about it right away, before it deepens. Ask: *"What gets worse if we wait?"*
-- **"Feedback from the community feels like an attack."** Acknowledge the feeling. Use the lesson's words: treat feedback as help, not an attack. Ask: *"What was one piece of feedback that later turned out to be useful?"*
-- **"We should just report the problem member to the midwife."** Do not dismiss it. Ask: *"Have we talked with the member and the team first?"* The module's answer is to talk about it as a team right away, before reporting.
+“I will just help immediately.” Acknowledge the intention, then ask about scope, time and permission.
 
-## [misconception] Common misconception
+“We need to know her personal problem.” Ask whether its effect on the task is enough for planning. Private reasons are not required.
 
-**"Keeping quiet about a team problem keeps the peace."** Many BHWs avoid raising issues so no one is hurt. The lesson says the opposite: talk about issues right away, before they deepen — even personal ones that affect the work. Correct it without embarrassing anyone: ask the group what happened in the "didn't work" column when an issue was left alone, so the evidence comes from their own stories.
+“Always talk to the colleague before reporting.” Correct this: communicate early for routine coordination; use the appropriate local contact promptly for immediate danger, a serious breach or an unsafe conversation.
 
-## [practice] Practice activity
+“I handed it over, so it is done.” Ask who accepted it, whether the agreement was completed and who was informed.
 
-After the team-building game, use this role-play card in groups of three or four: *"In your BHW team, one member's assigned purok has not been visited for two weeks. Others have noticed and are starting to complain among themselves."* One BHW plays the member; the others play the team. The group has three minutes to hold the conversation. Then one BHW from each group explains, in their own words: the main point (what the issue is and why it affects the team), the first action they took, and what they would check with the midwife (for example, if assignments need to change, since the midwife sets BHWs' tasks).
+## [misconception] Misconception
 
-## [answer-key] Self-check answer key
+“A good teammate must join every game and outing.” No. The fifth recommendation concerns respectful relationships and respect for personal lives. Social participation is voluntary. Strength, personality, accent, spending capacity and physical participation are not assessment criteria. Shrinking-space contact is not required.
 
-The section check in Read "What good teamwork looks like" and the check on the lesson's slide are the same question; it is covered once here.
+## [practice] Practice and alternatives
 
-- **"What should you do about an issue affecting the team?"** → **Discuss it early and clearly with the team.** The lesson's third recommendation is to be open about issues, even personal ones, and talk about them right away before they deepen.
-  - *"Ignore it until it worsens"* is wrong because waiting lets the misunderstanding deepen and affects the whole team's work — the exact thing the recommendation is meant to prevent.
+Core card: “Checking invitations will not finish before ten. There is time to seek permission for the required change. The personal reason is not shared.” In pairs or threes, agree on the task, recipient, time and required permission; repeat acceptance, then model the update. Rotate roles so each learner can be observed. Learners may write or dictate a response instead of acting.
 
-## [observe] What to observe
+Optional separate activity: arrange blank task cards while seated for a fictional outreach, or do this orally. Agree on roles, introduce one change and discuss how the agreement was clarified. The source’s spaghetti tower is optional only if accessible and freely chosen; a member may plan or observe. Tower height and physical strength are not scored. The source’s shrinking-space game is not used in this draft.
 
-Use the lesson's observation indicator (explains the main point and an appropriate first action, including what must be checked with the supervisor) during the role-play:
+## [answer-key] Three-choice answer key
 
-- **Kaya na:** the BHW names the issue and why it affects the team, opens the conversation early and respectfully with the member, and says what (if anything) to check with the midwife — without prompting.
-- **Kailangan pa ng practice:** the BHW raises the issue but needs your follow-up question to say why it matters to the team or what to check with the midwife.
-- **Hindi pa:** the explanation or action does not fit — for example, the BHW avoids the issue, blames the member without talking, or goes straight to reporting without speaking to the member or team first.
+A is best: early communication, clear roles, permission and confirmation of acceptance and completion. B: the intention to help is useful, but it does not check scope, permission or capacity; being teammates is not authorization. C: private reasons are unnecessary for sharing the task; teamwork does not justify confidential disclosure. Give only necessary information to an authorized recipient.
 
-The team-building game shows the group working together, but observe individual BHWs in the role-play. Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+Explain the rationale for A, B and C after the choice. Ask: “Which three practices did you see? How will we confirm acceptance and completion?”
 
-## [support] If a BHW needs more support
+## [observe] Observe
 
-- Give them an opening line to start with: *"Can we talk about the purok visits? I want us to sort it out together before it gets bigger."*
-- Let them watch one group that rated **Kaya na**, then try the same card again in a new group.
-- Re-observe with the same role-play card during the "Exercise and summary" part of the module, or at the next session.
+Use only the single objective-index-0 indicator and its six bilingual level fields in competency.json. Kaya na: at least three practices and a complete safe agreement without prompting. Needs practice: the direction is safe but details need prompting. Not yet: three practices are not demonstrated or the response remains unsafe after support.
 
-## [sources-review] Sources and review notes
+Observe each learner in the same task or an equivalent written/oral response. Record observable actions and support given. Do not score accent, personality, strength, political influence or access to supplies. Online completion is separate from practical assessment.
 
-- BHW Reference Manual PDF 17 (Team Work) and Facilitator Guide PDF 26–27 (lesson sources, marked "inherited page reference; final audit pending"). The source-material README maps Team Work + Self-Management to Reference Manual pp. 9–10 (PDF 17–18), Facilitator Guide p. 20 (PDF 27) and Day 1 presentation slides 47–55.
-- The sinking vessel and marshmallow spaghetti tower games, and the suggestion to have BHWs share experiences working with fellow BHWs, are from Facilitator Guide PDF 27. The TESDA learning outcomes listed there are: describe team role and scope; identify one's role and responsibility within the team; work as a team member.
-- Timing: the module keeps TESDA's 3 hours for *Work in a Team Environment* (Facilitator Guide PDF 26–27 says "at least 3 hours", shared with the "Ang BHW at ang Kanyang Barangay" topic). The 60 minutes above is this lesson's share of that plan (30 min discussion + 30 min team-building). Do not repeat the whole allocation for each short lesson; this split supports self-study and does not create a new training-hour allocation.
-- This lesson's observation indicator is generic; the subchapter's competency indicators include a more specific indicator for this objective (demonstrating at least three of the five recommendations in a role-play). Reviewers may want to align them.
-- The lesson's `practice-map` visual is a draft discussion guide, not owner-approved.
-- Review current legal/policy wording, bilingual parity and the observation indicator before publication.
-- Draft for review
+## [support] Support
+
+Offer a starting line: “What is done? What remains? Who accepts it, by when, and what permission is needed?” Model a response and repeat with another fictional assignment. Offer extra time, large print, oral reading or assistive communication as preferred. Do not force disclosure of private reasons. Re-observe the same skill, not memorization of your words.
+
+## [sources-review] Sources and review limits
+
+BHW Reference Manual: PDF 17 / printed 9, five recommendations. Facilitator Manual: PDF 26–27 / printed 19–20, three team outcomes and a shared minimum of three hours; optional games. TESDA BHS NC II Revision 01 (11 January 2019): PDF 11–12 / printed 7–8, roles, scope and reporting; PDF 84–85 / printed 80–81, three one-hour outcomes. This has not been verified as the latest version. Day 1 deck: actual PDF 44–46 contain the five teamwork practices; the inherited 47–55 lead is not accurate for these practices. Original page images were inspected and all four PDF hashes match the handoff; see lesson-154-source-audit.json.
+
+The Malou example, privacy/scope safeguards, accessible alternatives and 30+30-minute delivery are authored adaptations. They are not quotations of legal rules or a universal local procedure. Draft pending owner and local policy/SME review; model audio review is not human listening. Released lesson 1.5.2’s 20-minute standalone and 10-minute integrated core, and protected sibling guides, remain unchanged. The old practice-map has a conflicting approved flag and draft provenance; its bytes are preserved and it is not new approved art.
