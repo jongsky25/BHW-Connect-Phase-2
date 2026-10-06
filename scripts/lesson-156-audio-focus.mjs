@@ -33,14 +33,15 @@ for(const record of records){
  const zones=record.timings.map(t=>({...t,...stats(decoded.subarray(Math.round(t.start_ms*24)*2,Math.min(decoded.length,Math.round(t.end_ms*24)*2)))}));
  if(zones.some((z,i)=>i>0&&z.start_ms<zones[i-1].end_ms||!Number.isFinite(z.start_ms)||!Number.isFinite(z.end_ms)||z.end_ms<=z.start_ms||z.samples<1||z.rms<0.001))throw Error('Invalid or silent narration zone: '+record.id);
  const reviewZones=record.timings.filter(z=>z.zone==='body'||record.id.startsWith('shipped-story'));
- const question=reviewZones.find(z=>/[?？]/.test(z.text))??reviewZones[0];
- const qi=record.timings.indexOf(question),endIndex=record.timings.findIndex(z=>z.end_ms>=record.duration*1000-15000);
- const requests=[{kind:'decisive',start:record.timings[Math.max(0,qi-1)].start_ms/1000,end:record.timings[Math.min(record.timings.length-1,qi+1)].end_ms/1000},{kind:'ending',start:record.timings[Math.max(0,endIndex)].start_ms/1000,end:full.seconds}];
- if(record.id==='read-right-contact-application-check-fil')requests.push({kind:'opening-voice',start:0,end:record.timings[Math.min(2,record.timings.length-1)].end_ms/1000});
- if(record.id==='read-barangay-support-request-en'){
-  const at=record.timings.findIndex(t=>t.text.includes('unconfirmed')||t.text.includes('known facts'));
-  if(at>=0)requests.push({kind:'facts-versus-unknowns',start:record.timings[Math.max(0,at-1)].start_ms/1000,end:record.timings[Math.min(record.timings.length-1,at+1)].end_ms/1000});
- }
+ const endIndex=record.timings.findIndex(z=>z.end_ms>=record.duration*1000-15000);
+ const critical=record.timings.findIndex(z=>/hindi|huwag|not |do not|without|agarang|immediate/i.test(z.text));
+ const body=reviewZones[0]??record.timings[0];
+ const requests=[
+  {kind:'head',start:0,end:record.timings[Math.min(1,record.timings.length-1)].end_ms/1000},
+  {kind:'body',start:body.start_ms/1000,end:body.end_ms/1000},
+  {kind:'critical',start:record.timings[Math.max(0,critical)].start_ms/1000,end:record.timings[Math.min(record.timings.length-1,Math.max(0,critical)+1)].end_ms/1000},
+  {kind:'ending',start:record.timings[Math.max(0,endIndex)].start_ms/1000,end:full.seconds}
+ ];
  const reviewed={id:record.id,language:record.language,source_path:record.source_path,source_sha256:sourceHash,decoded_pcm_sha256:sha(decoded),full_audio_metrics:full,zones,excerpts:[]};
  report.records.push(reviewed);save();
  for(const q of requests){

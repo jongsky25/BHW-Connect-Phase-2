@@ -11,7 +11,7 @@ if(process.env.LESSON156_RAW_EVIDENCE==='1'){
     if(url.hostname!=='generativelanguage.googleapis.com'||!url.pathname.endsWith('/interactions'))return nativeFetch(input,options);
     const directory='.preview/lesson156-raw';mkdirSync(directory,{recursive:true});
     const body=typeof options?.body==='string'?JSON.parse(options.body):null;
-    const record={date:new Date().toISOString(),endpoint:url.origin+url.pathname,request:body,transport_headers:'omitted; no credentials recorded'};
+    const record={date:new Date().toISOString(),endpoint:url.origin+url.pathname,request:body,request_sha256:createHash('sha256').update(JSON.stringify(body)).digest('hex'),transport_headers:'omitted; no credentials recorded'};
     const save=()=>writeFileSync(`${directory}/${Date.now()}-${randomUUID()}.json`,JSON.stringify(record,null,2)+'\n');
     let response;
     try{response=await nativeFetch(input,options);}catch(error){record.response_status=null;record.response_body=null;record.transport_error=error.name+': '+error.message;save();throw error;}

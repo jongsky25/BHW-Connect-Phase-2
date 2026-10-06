@@ -47,7 +47,7 @@ describe('lesson 1.4.2 Demi benefits and conditions',()=>{
  });
  it('protects every non-target mapping and selects both historical exact-text sections',()=>{
   const baseline=json(path.join(root,'docs/lesson-142-narration-baseline.json'));for(const [key,hash] of Object.entries(baseline.sibling_mapping_hashes)){
-    if(key==='bhw-eligibility'||key==='bhw-accreditation'||key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'){
+    if(key==='bhw-eligibility'||key==='bhw-accreditation'||key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'||key==='bhw-right-contact'){
       const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();
       for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);
     }else expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);
