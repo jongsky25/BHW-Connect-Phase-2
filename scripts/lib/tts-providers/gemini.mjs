@@ -382,3 +382,9 @@ export const BHW_BARANGAY_PARTNERS_STORY_STYLES = {
  fil: 'Speak natural conversational Filipino as one settled adult female Kore community trainer. Pronounce Malou mah-LOO. Keep the same warm mid-pitched female register for heading, body and takeaway. Clearly distinguish roles, requests, unknowns, local approval and availability. Natural curious question intonation, complete negation and encouraging endings. Read exact text, no omissions, additions or character voices.',
  en: 'Speak natural Philippine English as one settled adult female Kore community trainer. Pronounce Malou mah-LOO. Keep the same warm female register for heading, body and takeaway. Clearly distinguish roles, requests, unknowns, local approval and availability. Natural curious question intonation, complete negation and encouraging endings. Read exact text, no omissions, additions or character voices.',
 };
+
+// Lesson 1.5.3 only; do not mutate previous voice/style inputs.
+export const BHW_LOCAL_PARTNERS_STORY_STYLES = {
+  fil: "Speak in natural Filipino as one warm mature Filipina community health educator. Explain Malou's locally verified RHU contact, consent and the difference between budget advice and an individual decision with clear phrasing. Read every supplied word exactly; retain the same voice on the application screen, with no announcer switch or added words.",
+  en: "Speak in natural Philippine English as one warm mature Filipina community health educator. Explain Malou's locally verified RHU contact, consent and the difference between budget advice and an individual decision with clear phrasing. Read every supplied word exactly; retain the same voice on the application screen, with no announcer switch or added words.",
+};

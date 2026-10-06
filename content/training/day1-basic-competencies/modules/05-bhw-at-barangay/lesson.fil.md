@@ -69,52 +69,19 @@ Tinitiyak niya ang aktuwal na pagkakaroon ng suporta at pahintulot bago sabihing
 
 ## [concept/core] Karagdagang kakilala sa lungsod o munisipyo {m5.stakeholders-city}
 
-Lumalabas ang barangay patungo sa mas malawak na network kapag
-umaabot na sa antas ng lungsod o munisipyo.
-
-Ang **City o Municipal Health Officer (CHO/MHO)** ang pangkalahatang
-namamahala sa kalusugan ng buong lungsod o bayan, at pangkalahatang
-supervisor ng mga health worker kasama ang mga BHW. Ang **midwife**,
-na naitatalaga sa barangay health station, ang nagtatakda ng mga
-gawain ng BHW at kanilang technical supervisor. Ang **Public Health
-Nurse (PHN)** naman ang nangangasiwa sa mga midwife, at kung minsan
-ay itinatalagang supervisor ng lahat ng BHW sa buong lungsod.
-
-May bagong antas ding kikilalanin: ang **HEPO sa antas ng
-lungsod o munisipyo** — hindi ito ang tungkuling HEPO ng BHW mismo
-(natutunan mo na ito sa Modyul 1), kundi ang opisinang namamahala sa
-pagpaplano ng health promotion sa buong lokalidad at nag-mo-monitor
-ng kasanayan ng mga BHW dito. At ang **local health board**, na
-nagbibigay ng rekomendasyong pangkalusugan sa local government at
-namamahala sa budget — ang mayor ang chairperson nito, ang CHO/MHO
-ang vice-chairperson.
+Inaalam muna ni Malou ang pangangailangan ng pamilya bago pumili ng contact sa lungsod o munisipyo. Namumuno ang CHO/MHO sa lokal na health office. Maaaring magbigay ang midwife at PHN ng teknikal na gabay ayon sa lokal na pagtatalaga; tinitiyak niya kung sino ang responsable sa partikular na tanong. Katuwang sa health promotion ang HEPO sa antas ng lungsod/munisipyo, na iba sa tungkuling HEPO ng BHW. Ang indibidwal na klinikal na pasya ay para sa awtorisadong health professional. Ang local health board, na ang mayor ang chair at CHO/MHO ang vice-chair, ay nagmumungkahi ng budget allocation para sa serbisyong pangkalusugan at nagpapayo sa sanggunian; hindi nito pinamamahalaan ang hiling ng isang pamilya.
 
 :::visual 2
 :::takeaway
-Habang tumataas ang antas — barangay, lungsod, munisipyo — dumadami
-rin ang taong may kinalaman sa serbisyong pangkalusugan na iyong
-ibinibigay.
+Tiyakin ang aktuwal na lokal na tungkulin at proseso bago mag-refer.
 :::
 
 ## [concept/standard] Iba pang kapartner {m5.stakeholders-other}
 
-Apat pang kapartner ang dapat kilalanin ni BHW Marites.
-
-Ang **mayor** ang pangkalahatang chief executive ng lungsod o
-munisipyo at direktang supervisor ng CHO/MHO. Ang **BHW President**
-ay ang nahalal o itinalagang lider ng lahat ng BHW sa isang lungsod o
-bayan — tumutulong siya sa pag-update ng BHW registry at nagbibigay ng
-impormasyon tungkol sa mga oportunidad para sa kapwa BHW. Ang
-**municipal social work and development officer** ang namamahala sa
-financial assistance para sa mga nangangailangan ng tulong medikal
-(AICS). At ang **sanitary inspector** ang nangunguna sa promosyon ng
-kalinisan, at kasama ng BHW sa paghahanap ng mga kabahayang
-nangangailangan ng environmental sanitation intervention.
+Namumuno ang mayor sa lokal na pamahalaan. Maaaring tumulong ang BHW president sa koordinasyon ayon sa lokal na kaayusan. Maaaring ipaliwanag ng social welfare o development officer ang posibleng tulong ayon sa assessment at kasalukuyang proseso; katuwang ang sanitary inspector sa environmental sanitation. Kapag nagtatanong ang pamilya kay Malou tungkol sa tulong sa gamot, humihingi siya ng pahintulot, tinitiyak ang kasalukuyang contact sa midwife o RHU at ibinabahagi lamang ang kailangang impormasyon. Hindi siya nangangako ng pondo o klinikal na resulta; itinatala niya ang napagkasunduang hakbang at nagfo-follow-up.
 
 :::takeaway
-Hindi lahat ng kapartner ay direktang nasa larangan ng kalusugan — may
-kinalaman din ang lider ng barangay, ang tagapagbigay ng tulong
-pinansyal, at ang tagapagsulong ng kalinisan.
+Piliin ang katuwang ayon sa pangangailangan, tiyakin ang proseso at balikan ang pamilya sa susunod na hakbang.
 :::
 
 ## [concept/core] Ano ang mabuting teamwork {m5.teamwork-practices, m5.competency}

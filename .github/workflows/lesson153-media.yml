@@ -1,0 +1,64 @@
+name: Lesson 1.5.3 draft media generation
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/**'
+      - 'scripts/lesson-153-*'
+      - 'scripts/remotion-bhw-local-partners-narrate.mjs'
+      - 'remotion/src/bhw-local-partners/**'
+      - '.github/workflows/lesson153-media.yml'
+permissions:
+  contents: read
+jobs:
+  generate:
+    if: github.head_ref == 'codex/lesson-153-malou-proposal' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Generate only lesson 1.5.3 Read and story media
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-153-media-build.mjs
+      - name: Review actual selected MP3 and shipped AAC tracks
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node scripts/lesson-153-audio-review.mjs
+          node scripts/lesson-153-audio-focus.mjs
+      - name: Package generated target files and raw review records
+        run: |
+          set -euo pipefail
+          test "$(node -e "const x=require('./docs/lesson-153-audio-review.json');process.stdout.write(String(x.records.length))")" = 14
+          test "$(node -e "const x=require('./docs/lesson-153-audio-focus.json');process.stdout.write(String(x.records.length))")" = 14
+          find public/training/audio/05-bhw-at-barangay/bhw-local-partners -type f -name '*.mp3' | sort > /tmp/lesson153-audio-paths
+          find public/training/bhw-1-5 -type f -name 'bhw-local-partners-gemini-*' | sort > /tmp/lesson153-story-paths
+          tar -cf lesson153-generated-media.tar \
+            -T /tmp/lesson153-audio-paths -T /tmp/lesson153-story-paths \
+            content/training/day1-basic-competencies/narration.json \
+            content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/lesson.json \
+            content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/facilitator.fil.md \
+            content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/facilitator.en.md \
+            remotion/public/bhw-local-partners/narration-fil.mp3 remotion/public/bhw-local-partners/narration-en.mp3 \
+            remotion/public/bhw-local-partners/narration-fil.json remotion/public/bhw-local-partners/narration-en.json \
+            docs/lesson-153-media-generation.json docs/lesson-153-audio-review.json docs/lesson-153-audio-focus.json
+          sha256sum lesson153-generated-media.tar > lesson153-generated-media.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson153-generated-media-${{ github.event.pull_request.head.sha }}
+          path: |
+            lesson153-generated-media.tar
+            lesson153-generated-media.sha256
+          retention-days: 14

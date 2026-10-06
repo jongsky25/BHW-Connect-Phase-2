@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor.",
-      "observable_en": "Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.",
-      "not_yet_fil": "Hindi pa maipaliwanag ang punto o nangangako nang hindi tinitiyak ang kondisyon.",
-      "not_yet_en": "Cannot yet explain the point or makes promises without checking conditions.",
+      "observable_fil": "Sa isang sitwasyon, naipapaliwanag ang angkop na city o municipal contact, nasasabi ang unang hakbang sa lokal na pagtiyak at pahintulot, at iniiwasan ang di-awtorisadong pangako o labis na pagbabahagi.",
+      "observable_en": "In a scenario, explains the appropriate city or municipal contact, states a first step to verify the local route and consent, and avoids unauthorized promises or excessive disclosure.",
+      "not_yet_fil": "Hindi pa natutukoy ang angkop na contact o nangangako at nagbabahagi nang walang pagtiyak.",
+      "not_yet_en": "Cannot yet identify a suitable contact or promises and discloses without checking.",
       "levels": {
-        "kaya_na_fil": "Tamang paliwanag at hakbang, nang walang untag.",
-        "kaya_na_en": "Accurate explanation and action without prompting.",
-        "kailangan_practice_fil": "Tamang direksiyon ngunit kailangan ng gabay sa detalye.",
-        "kailangan_practice_en": "Correct direction but needs guidance on details.",
-        "hindi_pa_fil": "Hindi pa angkop ang paliwanag o hakbang.",
-        "hindi_pa_en": "Explanation or action is not yet appropriate."
+        "kaya_na_fil": "Tamang contact, pahintulot, lokal na pagtiyak at minimum na impormasyon nang walang gabay.",
+        "kaya_na_en": "Appropriate contact, consent, local verification and minimum information without prompting.",
+        "kailangan_practice_fil": "Tamang direksiyon ngunit kailangang ipaalaala ang pahintulot o pagtiyak.",
+        "kailangan_practice_en": "Sound direction but needs a reminder about consent or verification.",
+        "hindi_pa_fil": "Maling contact, walang pagtiyak, o may pangakong hindi saklaw.",
+        "hindi_pa_en": "Wrong contact, no verification, or a promise beyond the role."
       }
     }
   ]

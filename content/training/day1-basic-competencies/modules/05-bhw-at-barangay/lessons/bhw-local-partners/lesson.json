@@ -18,11 +18,33 @@
       "concept_ids": [
         "m5.stakeholders-city"
       ],
+      "heading_fil": "Linawin ang pangangailangan",
+      "heading_en": "Clarify the need",
+      "body_fil": "Si Malou ay may tanong mula sa isang pamilya tungkol sa posibleng tulong para sa gamot. Bago tumawag sa kahit sino, nililinaw niya kung klinikal na tanong ba ito, tanong sa health promotion, pangangailangang panlipunan, o suliranin sa kalinisan. Kung may agarang kondisyong pangkalusugan, sinusunod niya ang lokal na emergency o referral protocol at humihingi ng gabay sa health team. Ang tanong tungkol sa pondo ay hindi niya ginagawang pangako. Itinatala niya lamang ang kinakailangang impormasyon at nagtatanong kung pumapayag ang pamilya sa angkop na referral.",
+      "body_en": "Malou hears a family ask about possible help with medicine. Before contacting anyone, she clarifies whether the need is clinical, health promotion, social support, or environmental sanitation. For an urgent health concern, she follows the local emergency or referral protocol and seeks guidance from the health team. She does not turn a funding question into a promise. She records only what is needed and asks whether the family agrees to an appropriate referral.",
       "asset_ids": [
-        "practice-map"
+        "malou-local-coordination",
+        "local-partners-clarify"
       ],
-      "takeaway_fil": "Habang tumataas ang antas — barangay, lungsod, munisipyo — dumadami rin ang taong may kinalaman sa serbisyong pangkalusugan na iyong ibinibigay.",
-      "takeaway_en": "As the level rises — barangay, city, municipality — the number of people connected to the health service you provide grows too.",
+      "takeaway_fil": "Kilalanin ang pangangailangan bago piliin ang kausap.",
+      "takeaway_en": "Identify the need before choosing a contact.",
+      "check": null
+    },
+    {
+      "id": "city-role-map",
+      "concept_ids": [
+        "m5.stakeholders-city"
+      ],
+      "heading_fil": "Mga tungkulin ng health team",
+      "heading_en": "Health team roles",
+      "body_fil": "Sa RHU, ang city o municipal health officer, CHO o MHO, ang namumuno sa lokal na serbisyong pangkalusugan at sa mga tauhan ng tanggapan. Ang midwife at public health nurse, PHN, ay maaaring maging teknikal na katuwang ng BHW ayon sa aktuwal na pagtatalaga sa kanilang lugar; kinukumpirma ni Malou kung sino ang responsable sa tanong o referral. Ang HEPO sa antas ng lungsod o munisipyo ay katuwang sa health promotion; iba ito sa HEPO na tungkulin ng BHW. Ang tanong sa pangangalaga ng isang tao ay dinadala sa awtorisadong health professional, hindi sa board na nagbabalangkas ng badyet.",
+      "body_en": "At the RHU, the city or municipal health officer, CHO or MHO, leads the local health service and its office staff. The midwife and public health nurse, PHN, may provide technical support to BHWs according to actual local assignments; Malou confirms who handles the question or referral there. The city or municipal HEPO supports health promotion, a different role from a BHW’s own HEPO designation. A decision about one person’s care belongs with an authorized health professional, not a board that discusses budgets.",
+      "asset_ids": [
+        "malou-local-coordination",
+        "local-partners-health-team"
+      ],
+      "takeaway_fil": "Kumpirmahin ang aktuwal na pagtatalaga; huwag magpalagay ng iisang hierarchy.",
+      "takeaway_en": "Confirm actual assignments rather than assuming one hierarchy.",
       "check": null
     },
     {
@@ -30,25 +52,87 @@
       "concept_ids": [
         "m5.stakeholders-other"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Hindi lahat ng kapartner ay direktang nasa larangan ng kalusugan — may kinalaman din ang lider ng barangay, ang tagapagbigay ng tulong pinansyal, at ang tagapagsulong ng kalinisan.",
-      "takeaway_en": "Not every partner works directly in health — the barangay's leader, the one who provides financial aid, and the one who promotes cleanliness all matter too.",
+      "heading_fil": "Iba pang katuwang at hangganan",
+      "heading_en": "Other partners and boundaries",
+      "body_fil": "Ang mayor ay namumuno sa lokal na pamahalaan at chair ng city o municipal local health board; ang CHO o MHO ang vice-chair. Ang board ay nagmumungkahi ng pondo para sa serbisyong pangkalusugan at nagpapayo sa sanggunian. Hindi nito kusang inaprubahan ang hiling ng isang pamilya at hindi ito ang gumagawa ng indibidwal na klinikal na pasya. Ang BHW president ay makatutulong sa koordinasyon ng mga BHW ayon sa lokal na kaayusan. Maaaring makatulong ang social welfare o development officer sa pag-alam sa angkop na social assistance, at ang sanitary inspector sa isyu ng kalinisan. Tiyakin ang tamang tao at saklaw ng gawain bago lumapit.",
+      "body_en": "The mayor leads the local government and chairs the city or municipal local health board; the CHO or MHO is vice-chair. The board proposes health service funding and advises the sanggunian. It does not automatically approve a family’s request or make an individual clinical decision. A BHW president may help coordinate BHWs according to local arrangements. A social welfare or development officer can help identify suitable social assistance, while a sanitary inspector handles sanitation concerns. Verify the right person and scope before approaching anyone.",
+      "asset_ids": [
+        "malou-local-coordination",
+        "local-partners-partners"
+      ],
+      "takeaway_fil": "Iba ang pagpaplano ng institusyon sa pasya para sa isang tao.",
+      "takeaway_en": "Institutional planning differs from a decision for one person.",
+      "check": null
+    },
+    {
+      "id": "local-request",
+      "concept_ids": [
+        "m5.stakeholders-other"
+      ],
+      "heading_fil": "Halimbawa: tiyaking lokal na hiling",
+      "heading_en": "Example: a locally verified request",
+      "body_fil": "Tinanong ng pamilya si Malou kung may tulong sa gamot. Ipinaliwanag niyang maaari niyang alamin ang wastong proseso ngunit hindi niya maipapangako ang halaga o pag-apruba. Sa pahintulot ng pamilya, tinanong niya ang midwife sa RHU kung sino ang kasalukuyang contact at anong impormasyon ang kailangan. Nalaman niyang dapat munang sa itinalagang social welfare contact itanong ang posibleng suporta. Ang pamilya o awtorisadong kausap ang magbibigay ng hinihinging dokumento sa tamang tanggapan; hindi ipinadadala ni Malou ang buong health record.",
+      "body_en": "The family asks Malou whether medicine support is available. She explains that she can check the proper process but cannot promise an amount or approval. With the family’s consent, she asks the RHU midwife who the current contact is and what information is needed. She learns to ask the designated social welfare contact about possible support. The family or an authorized person provides requested documents through the proper office; Malou does not send the whole health record.",
+      "asset_ids": [
+        "malou-local-coordination",
+        "local-partners-verify"
+      ],
+      "takeaway_fil": "Gumamit ng lokal na na-verify na contact at pinakamaliit na kailangang impormasyon.",
+      "takeaway_en": "Use a locally verified contact and only necessary information.",
+      "check": null
+    },
+    {
+      "id": "close-loop",
+      "concept_ids": [
+        "m5.stakeholders-other"
+      ],
+      "heading_fil": "Kumpirmahin at balikan ang pamilya",
+      "heading_en": "Confirm and close the loop",
+      "body_fil": "Pagkatapos ng pag-ugnay, tinatandaan ni Malou kung sino ang nakausap, anong hakbang ang napagkasunduan, at kailan dapat bumalik para sa sagot, ayon sa lokal na patakaran. Ipinababatid niya sa pamilya ang na-verify na susunod na hakbang nang hindi ipinangangako ang resulta. Kung kailangan ng klinikal na payo, ibinabalik niya ito sa health professional; kung usapin ng kalinisan, tinatanong niya ang itinalagang sanitary contact. Sa kapartner na hindi health worker, ibinabahagi lamang niya ang impormasyong may pahintulot at talagang kailangan.",
+      "body_en": "After making contact, Malou records whom she reached, the agreed next step, and when to follow up under local rules. She tells the family the verified next step without guaranteeing an outcome. If clinical advice is needed, she returns the question to a health professional; for sanitation, she checks the designated sanitary contact. With a nonhealth partner, she shares only information the family has agreed to share and that is truly needed.",
+      "asset_ids": [
+        "malou-local-coordination",
+        "local-partners-close-loop"
+      ],
+      "takeaway_fil": "Balikan ang pamilya sa na-verify na susunod na hakbang.",
+      "takeaway_en": "Return to the family with the verified next step.",
+      "check": null
+    },
+    {
+      "id": "local-partners-application-check",
+      "concept_ids": [
+        "m5.stakeholders-other"
+      ],
+      "heading_fil": "Subukan: piliin ang unang hakbang",
+      "heading_en": "Try it: choose the first step",
+      "body_fil": "Sa susunod na tanong tungkol sa tulong sa gamot, hindi pa alam ni Malou ang kasalukuyang contact. May tatlong posibleng hakbang: tiyakin ang pahintulot at ang lokal na proseso sa midwife o RHU bago ibahagi ang kailangan lamang na impormasyon; ipadala ang buong tala sa sinumang kawani; o ipangako ang pondo dahil may local health board. Piliin ang hakbang na may pahintulot at pagtiyak. Ang dalawang iba pa ay lumalampas sa kinakailangang pagbabahagi o nangangako ng desisyong hindi saklaw ng BHW.",
+      "body_en": "On the next question about medicine support, Malou still does not know the current contact. She sees three possible actions: seek consent and verify the local process with the midwife or RHU before sharing only necessary information; send a full record to any official; or promise funding because a local health board exists. Choose the action that checks consent and the process. The other two overshare information or promise a decision beyond a BHW’s role.",
+      "asset_ids": [
+        "malou-local-coordination",
+        "local-partners-apply"
+      ],
+      "takeaway_fil": "Piliin ang angkop na unang hakbang at ipaliwanag kung bakit.",
+      "takeaway_en": "Choose an appropriate first step and explain why.",
       "check": {
-        "prompt_fil": "Ano ang gagawin kung hindi tiyak ang lokal na referral contact?",
-        "prompt_en": "What if you are unsure of the local referral contact?",
+        "prompt_fil": "May pamilyang nagtatanong tungkol sa tulong sa gamot. Hindi mo alam ang kasalukuyang lokal na contact. Ano ang pinakamainam na unang hakbang?",
+        "prompt_en": "A family asks about help with medicine. You do not know the current local contact. What is the best first step?",
         "options": [
           {
-            "fil": "Tiyakin sa midwife o RHU ang kasalukuyang contact at proseso.",
-            "en": "Confirm the current contact and procedure with the midwife or RHU."
+            "fil": "Alamin ang pahintulot ng pamilya, tiyakin sa midwife o RHU ang contact at proseso, saka ibahagi lamang ang kailangang impormasyon.",
+            "en": "Ask the family’s consent, confirm the contact and process with the midwife or RHU, then share only necessary information."
           },
           {
-            "fil": "Gumawa ng sariling proseso nang walang pag-ugnay.",
-            "en": "Invent a procedure without coordination."
+            "fil": "Ipadala agad ang kumpletong tala ng kalusugan sa sinumang nasa munisipyo upang mapabilis ang tulong.",
+            "en": "Send the complete health record to anyone at the municipal office to speed up help."
+          },
+          {
+            "fil": "Ipangako ang pondo dahil nasa local health board ang badyet.",
+            "en": "Promise funding because the local health board has the budget."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Tiyakin sa midwife o RHU ang kasalukuyang contact at proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Confirm the current contact and procedure with the midwife or RHU. Explain why using the lesson situation."
+        "feedback_fil": "Una: Tama. May pahintulot, lokal na pagtiyak, at pinakamaliit na kailangang impormasyon. Ikalawa: Hindi. Ang buong tala sa hindi pa tiyak na tao ay labis na pagbabahagi; alamin muna ang wastong daan. Ikatlo: Hindi. Nagmumungkahi at nagpapayo ang local health board tungkol sa badyet; walang awtomatikong pag-apruba ng tulong.",
+        "feedback_en": "First: Correct. Seek consent, verify the local route, and share only necessary information. Second: No. A complete record sent to an unverified person shares too much; confirm the route first. Third: No. The local health board proposes and advises on budgets; it cannot guarantee assistance."
       }
     }
   ],
@@ -56,10 +140,12 @@
     {
       "id": "m5.stakeholders-city",
       "read_ids": [
-        "section-6"
+        "section-6",
+        "city-role-map"
       ],
       "slide_ids": [
-        "slide-section-6"
+        "slide-section-6",
+        "slide-city-role-map"
       ],
       "source_ids": [
         "m5.stakeholders-city-source"
@@ -68,10 +154,16 @@
     {
       "id": "m5.stakeholders-other",
       "read_ids": [
-        "section-7"
+        "section-7",
+        "local-request",
+        "close-loop",
+        "local-partners-application-check"
       ],
       "slide_ids": [
-        "slide-section-7"
+        "slide-section-7",
+        "slide-local-request",
+        "slide-close-loop",
+        "slide-local-partners-application-check"
       ],
       "source_ids": [
         "m5.stakeholders-other-source"
@@ -81,7 +173,7 @@
   "sources": [
     {
       "id": "m5.stakeholders-city-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "BHW Reference Manual (2022), pages 7–8 / PDF 15–16; page lead from repository transcription, original PDF comparison pending",
       "pdf_pages": [
         15,
         16
@@ -90,7 +182,7 @@
     },
     {
       "id": "m5.stakeholders-other-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "BHW Reference Manual (2022), pages 8–9 / PDF 16–17; page lead from repository transcription, original PDF comparison pending",
       "pdf_pages": [
         16,
         17
@@ -109,6 +201,83 @@
       "caption_en": "Draft discussion guide; review required.",
       "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
       "review_status": "approved"
+    },
+    {
+      "id": "malou-local-coordination",
+      "path": "/training/bhw-1-5/malou-local-coordination-f4a63e007784.jpg",
+      "content_hash": "f4a63e007784c43bee9c4cc0e6e60f5299732cafb623d41b7b6af6d47700c72e",
+      "alt_fil": "Si Malou sa kathang-isip na RHU coordination desk, kinukumpirma ang tamang lokal na contact sa health worker.",
+      "alt_en": "Malou at a fictional RHU coordination desk confirming the right local contact with a health worker.",
+      "caption_fil": "Tiyakin muna ang tao at proseso sa sariling lugar. Draft para sa pagsusuri.",
+      "caption_en": "Confirm the person and process in your locality. Draft for review.",
+      "provenance": "Built-in imagegen identity-preserving edit of approved Malou courtyard, 2026-10-06; reference SHA256 f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545; generated PNG SHA256 4fee94a71c7662fa4d8080905544a91b6c81d1d7523e2c6c8d8b8b6ecd366334, optimised JPEG SHA256 f4a63e007784c43bee9c4cc0e6e60f5299732cafb623d41b7b6af6d47700c72e; model ID unavailable. Fictional RHU desk, no actual official or readable forms.",
+      "review_status": "draft"
+    },
+    {
+      "id": "local-partners-clarify",
+      "path": "/training/bhw-1-5/local-partners-clarify-a35d7d21c09e.svg",
+      "content_hash": "a35d7d21c09e887b6df3775740d870d1cea02b4b804341f79b22c3941bddd90b",
+      "alt_fil": "Larawang gabay 1 sa 6: Tanong → unang kausap.",
+      "alt_en": "Visual cue 1 of 6: Need → first contact.",
+      "caption_fil": "Tanong → unang kausap",
+      "caption_en": "Need → first contact",
+      "provenance": "Original code-authored language-neutral SVG, 2026-10-06; draft lesson 1.5.3.",
+      "review_status": "draft"
+    },
+    {
+      "id": "local-partners-health-team",
+      "path": "/training/bhw-1-5/local-partners-health-team-e9294c55d068.svg",
+      "content_hash": "e9294c55d0683bafffbb0bc000a2a193aa4c6c0cf88edae1ed976cf2e7c8a28d",
+      "alt_fil": "Larawang gabay 2 sa 6: Klinikal → health team.",
+      "alt_en": "Visual cue 2 of 6: Clinical → health team.",
+      "caption_fil": "Klinikal → health team",
+      "caption_en": "Clinical → health team",
+      "provenance": "Original code-authored language-neutral SVG, 2026-10-06; draft lesson 1.5.3.",
+      "review_status": "draft"
+    },
+    {
+      "id": "local-partners-partners",
+      "path": "/training/bhw-1-5/local-partners-partners-03870e561424.svg",
+      "content_hash": "03870e561424912ce4e1c5b4030e841cfdab635adb5e1c9ce1e19788b5ce1e30",
+      "alt_fil": "Larawang gabay 3 sa 6: Suporta → lokal na katuwang.",
+      "alt_en": "Visual cue 3 of 6: Support → local partner.",
+      "caption_fil": "Suporta → lokal na katuwang",
+      "caption_en": "Support → local partner",
+      "provenance": "Original code-authored language-neutral SVG, 2026-10-06; draft lesson 1.5.3.",
+      "review_status": "draft"
+    },
+    {
+      "id": "local-partners-verify",
+      "path": "/training/bhw-1-5/local-partners-verify-25b3c9238634.svg",
+      "content_hash": "25b3c9238634dc97c3b7ca06ba64ec413281bd8e66ac213cb9ccc3eb240f2438",
+      "alt_fil": "Larawang gabay 4 sa 6: Tiyakin → hiling.",
+      "alt_en": "Visual cue 4 of 6: Verify → request.",
+      "caption_fil": "Tiyakin → hiling",
+      "caption_en": "Verify → request",
+      "provenance": "Original code-authored language-neutral SVG, 2026-10-06; draft lesson 1.5.3.",
+      "review_status": "draft"
+    },
+    {
+      "id": "local-partners-close-loop",
+      "path": "/training/bhw-1-5/local-partners-close-loop-1031c1491266.svg",
+      "content_hash": "1031c14912660e75ed549cb8e1b6950226f469d7b578bf0d4443661a450c40ee",
+      "alt_fil": "Larawang gabay 5 sa 6: Sagot → follow-up.",
+      "alt_en": "Visual cue 5 of 6: Reply → follow-up.",
+      "caption_fil": "Sagot → follow-up",
+      "caption_en": "Reply → follow-up",
+      "provenance": "Original code-authored language-neutral SVG, 2026-10-06; draft lesson 1.5.3.",
+      "review_status": "draft"
+    },
+    {
+      "id": "local-partners-apply",
+      "path": "/training/bhw-1-5/local-partners-apply-b7ddf656ba4d.svg",
+      "content_hash": "b7ddf656ba4d2b584d4270a873b83550274170f19d804ffd266eca0760607fdc",
+      "alt_fil": "Larawang gabay 6 sa 6: Piliin → ipaliwanag.",
+      "alt_en": "Visual cue 6 of 6: Choose → explain.",
+      "caption_fil": "Piliin → ipaliwanag",
+      "caption_en": "Choose → explain",
+      "provenance": "Original code-authored language-neutral SVG, 2026-10-06; draft lesson 1.5.3.",
+      "review_status": "draft"
     }
   ]
 }
