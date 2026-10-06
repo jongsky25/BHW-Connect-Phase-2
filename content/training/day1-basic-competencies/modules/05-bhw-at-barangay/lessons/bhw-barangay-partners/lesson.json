@@ -19,10 +19,10 @@
         "m5.stakeholders-barangay"
       ],
       "asset_ids": [
-        "practice-map"
+        "malou-meeting"
       ],
-      "takeaway_fil": "Ang bawat ugnayan ay may sariling layunin — ang paggamit ng tama sa tamang pagkakataon ang gumagawa sa serbisyo na mabilis at maaasahan.",
-      "takeaway_en": "Each relationship has its own purpose — using the right one at the right moment is what makes service fast and reliable.",
+      "takeaway_fil": "Linawin ang kailangan bago humingi ng suporta.",
+      "takeaway_en": "Clarify the need before requesting support.",
       "check": null
     },
     {
@@ -31,24 +31,68 @@
         "m5.stakeholders-barangay"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Ang punong barangay ang may hawak ng budget; ang kagawad sa kalusugan ang tagapagtaguyod ng polisiya. Magkaiba ang papel, pareho silang kailangang kakilala.",
-      "takeaway_en": "The punong barangay holds the budget; the Kagawad sa Kalusugan advocates for policy. Different roles, both worth knowing.",
+      "takeaway_fil": "Itugma ang kailangan sa papel; tiyakin ang lokal na saklaw.",
+      "takeaway_en": "Match the need to the role; confirm local responsibility.",
+      "check": null
+    },
+    {
+      "id": "barangay-support-request",
+      "concept_ids": [
+        "m5.stakeholders-barangay"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sabihin ang layunin, oras, suporta at tanong na maglilinaw.",
+      "takeaway_en": "State the purpose, time, support and a clarification question.",
+      "check": null
+    },
+    {
+      "id": "council-health-role",
+      "concept_ids": [
+        "m5.stakeholders-barangay"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Magkaiba ang pag-uugnay at pag-apruba; huwag mangako ng pondo.",
+      "takeaway_en": "Coordination and approval differ; do not promise funding.",
+      "check": null
+    },
+    {
+      "id": "confirm-and-follow-through",
+      "concept_ids": [
+        "m5.stakeholders-barangay"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ibalita ang kumpirmado at hindi pa kumpirmado nang magkahiwalay.",
+      "takeaway_en": "Report confirmed and unconfirmed arrangements separately.",
+      "check": null
+    },
+    {
+      "id": "barangay-partners-application-check",
+      "concept_ids": [
+        "m5.stakeholders-barangay"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Papel, malinaw na kahilingan at pagtitiyak ang batayan ng pagkilos.",
+      "takeaway_en": "Use the role, a clear request and verification to guide action.",
       "check": {
-        "prompt_fil": "Paano pipili ng katuwang sa barangay?",
-        "prompt_en": "How do you choose a barangay partner?",
+        "prompt_fil": "Ano ang angkop na gawin ni Malou para sa lugar at sampung upuan?",
+        "prompt_en": "What should Malou do about the space and ten chairs?",
         "options": [
           {
-            "fil": "Itugma ang pangangailangan sa tungkulin ng katuwang.",
-            "en": "Match the need to the partner’s role."
+            "fil": "Linawin ang kahilingan sa responsableng barangay contact at tiyakin ang proseso at pagkakaroon ng suporta.",
+            "en": "Clarify the request with the responsible barangay contact and confirm the process and availability."
           },
           {
-            "fil": "Lahat ng problema ay sa iisang tao lamang.",
-            "en": "Send every issue to the same person."
+            "fil": "Ipangako sa grupo na may lugar at upuan dahil kilala niya ang isang opisyal.",
+            "en": "Promise the group a space and chairs because she knows an official."
+          },
+          {
+            "fil": "Hilingin sa health professional na magpasya sa lahat ng kagamitan at pondo.",
+            "en": "Ask the health professional to decide all equipment and funding matters."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Itugma ang pangangailangan sa tungkulin ng katuwang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Match the need to the partner’s role. Explain why using the lesson situation."
+        "feedback_fil": "Una: Angkop: tiyak ang kailangan, tugma ang papel at walang pangako bago kumpirmasyon. Ikalawa: Hindi angkop: ang pagiging kakilala ay hindi pahintulot o kumpirmadong kagamitan. Ikatlo: Hindi angkop: hindi awtomatikong saklaw ng teknikal na gabay ang lahat ng administratibong pagpapasya. Tiyakin ang lokal na responsibilidad.",
+        "feedback_en": "First: Appropriate: the need is specific, the role fits, and nothing is promised before confirmation. Second: Inappropriate: knowing an official is not approval or confirmed equipment. Third: Inappropriate: technical guidance does not automatically cover every administrative decision. Confirm local responsibility."
       }
     }
   ],
@@ -57,11 +101,19 @@
       "id": "m5.stakeholders-barangay",
       "read_ids": [
         "section-4",
-        "section-5"
+        "section-5",
+        "barangay-support-request",
+        "council-health-role",
+        "confirm-and-follow-through",
+        "barangay-partners-application-check"
       ],
       "slide_ids": [
         "slide-section-4",
-        "slide-section-5"
+        "slide-section-5",
+        "slide-barangay-support-request",
+        "slide-council-health-role",
+        "slide-confirm-and-follow-through",
+        "slide-barangay-partners-application-check"
       ],
       "source_ids": [
         "m5.stakeholders-barangay-source"
@@ -71,24 +123,65 @@
   "sources": [
     {
       "id": "m5.stakeholders-barangay-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "DOH BHW Reference Manual (2022), PDF 15–16 / printed 7–8; original PDF inspected",
       "pdf_pages": [
-        15
+        15,
+        16
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "id": "malou-meeting",
+      "path": "/training/bhw-1-5/malou-meeting-7adc8aacd4e1.png",
+      "content_hash": "7adc8aacd4e169fe06ca357d2a3ed119d9f14ba3e9bccc58509ed815ec446e2c",
+      "alt_fil": "Kathang-isip na pulong: si Malou ay may blankong kahilingan sa dalawang barangay contact.",
+      "alt_en": "Fictional meeting: Malou presents a blank request to two barangay contacts.",
+      "caption_fil": "Bagong eksena na pinanatili ang aprubadong pagkakakilanlan ni Malou.",
+      "caption_en": "New scene preserving Malou’s approved identity.",
+      "provenance": "Built-in imagegen, 6 October 2026, with approved Malou courtyard PNG as preserve-person reference. Fictional neutral meeting; New scene approved by owner for lesson 1.5.2; receipt: docs/lesson-152-owner-approval.json.",
       "review_status": "approved"
+    },
+    {
+      "id": "bhw-barangay-partners-story",
+      "alt_fil": "Kuwentong may salaysay: nililinaw ni Malou ang lugar at sampung upuan sa kathang-isip na pulong, pinipili ang katuwang at tinitiyak ang lokal na proseso.",
+      "alt_en": "Narrated story: Malou clarifies space and ten chairs at a fictional meeting, chooses a partner and checks the local process.",
+      "caption_fil": "Anim na kathang-isip na beat na may salaysay at captions.",
+      "caption_en": "Six fictional narrated beats with captions.",
+      "provenance": "Original lesson1.5.2 Remotion animation with new built-in imagegen meeting scene preserving approved151Malou identity via reference PNG. New scene and selected media approved by owner for lesson 1.5.2; receipt: docs/lesson-152-owner-approval.json. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Reframed meeting view and animated role/limit cards. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-4bf62ef56d9a.mp4",
+          "content_hash": "4bf62ef56d9a283a0614f1d9f6be8634a261b1ac60b98d3951120783c5d3f859",
+          "duration_s": 71,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-adaa149c9a35.vtt",
+            "content_hash": "adaa149c9a359dd4847ecf9b5ea81f479b1a62b832277cd11bd01d2d4813174c"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-5dca963001b3-poster.jpg",
+            "content_hash": "5dca963001b3583b74c1b23414110d162ee472be38216776f82d4e62a8ca176d"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-25db3e6f3dfb.mp4",
+          "content_hash": "25db3e6f3dfb4b4fd93f36a1f7238b2ea819cc58848c684700861f3b14a4ed28",
+          "duration_s": 62,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-23b45c109f7d.vtt",
+            "content_hash": "23b45c109f7d096bf7c78bb42983b3fd3e754400320b8aa7294268831e13e423"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-2cedb9cfd2c6-poster.jpg",
+            "content_hash": "2cedb9cfd2c6614f3fa516991d240d7ab2367d89af72c0627626423eca33d0d9"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-5dca963001b3-poster.jpg",
+      "content_hash": "5dca963001b3583b74c1b23414110d162ee472be38216776f82d4e62a8ca176d"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-barangay-partners-story"
 }

@@ -1,0 +1,78 @@
+name: Lesson1.5.2 read-only artifact transport
+on:
+  workflow_dispatch:
+    inputs:
+      source_run:
+        description: 'Existing repository Actions run ID to verify and download'
+        required: true
+        type: string
+      kind:
+        description: 'Artifact scope'
+        required: true
+        type: choice
+        options: [render, dry, media]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  plan:
+    if: github.ref == 'refs/heads/codex/lesson-152-malou-proposal'
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - id: plan
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_RUN: ${{ inputs.source_run }}
+          KIND: ${{ inputs.kind }}
+        shell: python
+        run: |
+          import urllib.request,os,json,math
+          source=os.environ['SOURCE_RUN'];assert source.isdecimal()
+          base='https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs/'+source+'/artifacts'
+          req=urllib.request.Request(base,headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']})
+          with urllib.request.urlopen(req) as r: data=json.load(r)
+          prefixes={'render':'remotion-renders-','dry':'training-load-','media':'lesson152-draft-evidence'}
+          artifacts=[a for a in data['artifacts'] if a['name'].startswith(prefixes[os.environ['KIND']]) and not a['expired']]
+          assert len(artifacts)==(4 if os.environ['KIND']=='render' else 1)
+          jobs=[]
+          for a in artifacts:
+            assert a['size_in_bytes']<=512*1024*1024
+            for chunk in range(math.ceil(a['size_in_bytes']/(8*1024*1024))):jobs.append({'artifact_id':a['id'],'chunk':chunk})
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('matrix='+json.dumps({'include':jobs})+'\n')
+  export:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - name: Verify original ZIP and export one bounded chunk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ARTIFACT_ID: ${{ matrix.artifact_id }}
+          CHUNK: ${{ matrix.chunk }}
+        shell: python
+        run: |
+          import urllib.request,urllib.error,os,json,hashlib,base64,zipfile,io
+          base='https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/artifacts/'+os.environ['ARTIFACT_ID']
+          headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']}
+          with urllib.request.urlopen(urllib.request.Request(base,headers=headers)) as r:meta=json.load(r)
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+            def redirect_request(self,*args):return None
+          try:
+            urllib.request.build_opener(NoRedirect).open(urllib.request.Request(base+'/zip',headers=headers))
+            raise RuntimeError('Expected artifact redirect')
+          except urllib.error.HTTPError as e:
+            if e.code!=302:raise
+            location=e.headers['Location']
+          # The signed storage request carries no GitHub authorization header.
+          with urllib.request.urlopen(location) as r:data=r.read()
+          digest=hashlib.sha256(data).hexdigest();assert meta['digest']=='sha256:'+digest
+          with zipfile.ZipFile(io.BytesIO(data)) as z:assert z.testzip() is None
+          index=int(os.environ['CHUNK']);chunk=data[index*8*1024*1024:(index+1)*8*1024*1024];assert chunk
+          print('LESSON152_ZIP_CHUNK_BEGIN '+json.dumps({'artifact_id':meta['id'],'index':index,'zip_bytes':len(data),'zip_sha256':digest,'chunk_bytes':len(chunk),'chunk_sha256':hashlib.sha256(chunk).hexdigest()},separators=(',',':')))
+          encoded=base64.b64encode(chunk).decode()
+          for offset in range(0,len(encoded),8192):print('LESSON152_ZIP_CHUNK_DATA '+encoded[offset:offset+8192])
+          print('LESSON152_ZIP_CHUNK_END')

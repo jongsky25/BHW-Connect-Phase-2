@@ -16,7 +16,7 @@ permissions:
   actions: read
 jobs:
   plan:
-    if: github.ref == 'refs/heads/codex/lesson-151-malou-proposal'
+    if: github.ref == 'refs/heads/codex/lesson-151-malou-proposal' || github.ref == 'refs/heads/codex/lesson-152-malou-proposal'
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
@@ -26,6 +26,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SOURCE_RUN: ${{ inputs.source_run }}
           KIND: ${{ inputs.kind }}
+          TARGET_BRANCH: ${{ github.ref_name }}
         shell: python
         run: |
           import urllib.request,os,json,math
@@ -33,7 +34,7 @@ jobs:
           base='https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs/'+source+'/artifacts'
           req=urllib.request.Request(base,headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']})
           with urllib.request.urlopen(req) as r: data=json.load(r)
-          prefixes={'render':'remotion-renders-','dry':'training-load-','media':'lesson151-draft-evidence'}
+          prefixes={'render':'remotion-renders-','dry':'training-load-','media':('lesson152-draft-evidence' if os.environ['TARGET_BRANCH']=='codex/lesson-152-malou-proposal' else 'lesson151-draft-evidence')}
           artifacts=[a for a in data['artifacts'] if a['name'].startswith(prefixes[os.environ['KIND']]) and not a['expired']]
           assert len(artifacts)==(4 if os.environ['KIND']=='render' else 1)
           jobs=[]

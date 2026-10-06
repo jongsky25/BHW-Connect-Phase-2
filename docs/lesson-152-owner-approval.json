@@ -1,0 +1,95 @@
+{
+  "recorded_at_utc": "2026-10-06T09:44:56.960683+00:00",
+  "authorization": "approved. merge and deploy to live",
+  "reviewed_head": "a206ea291800fe4dfb4609c69767b4f87dd64040",
+  "reviewed_package_hashes": {
+    "lesson-1.5.2-malou-review.html": "dea38e4f3a0b5ae99039a2741bdb8d20ef5460ca45b8594593811b02ad8cccf9",
+    "lesson-1.5.2-malou-review.zip": "cf7e028d0c966302c09ff210bbca1855b3d8ea90633237830974c3c51e938809"
+  },
+  "pr": "https://github.com/jongsky25/BHW-Connect-Phase-2/pull/259",
+  "scope": "Only lesson 1.5.2 / bhw-barangay-partners and its reviewed media; merge, production deployment and scoped lesson publication.",
+  "approved_asset_ids": [
+    "malou-meeting",
+    "bhw-barangay-partners-story"
+  ],
+  "approved_media": [
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/barangay-partners-application-check.en.f7fd784e78e6.mp3",
+      "sha256": "c6f659e86c383be1447d9aaf8bd92b61c4c883b409da828c74c588c69b9bf1ab"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/barangay-partners-application-check.fil.24fe0e24810f.mp3",
+      "sha256": "0a5db3620592afcb0084fbf88bc8c06064610a8594d10b5696104a9f31c0000a"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/barangay-support-request.en.8435bb297a55.mp3",
+      "sha256": "b364063ea00f90388c9433c3646e4a8cd79ee28868ded786e13d779e5368f75b"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/barangay-support-request.fil.8854eb4d5e6e.mp3",
+      "sha256": "5deefe09ff603ef6c025526e74cee0d619a9cbe2ad23c759a487a99c6fb5adc6"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/confirm-and-follow-through.en.9086ef3cef45.mp3",
+      "sha256": "9a54dbfb72a523b6df0ea70ebedb808975942019b934b36968fa6c3c7c2c08a4"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/confirm-and-follow-through.fil.034aa92ae2d5.mp3",
+      "sha256": "1de0da717d5eca18853f8f683cd496a84fcecd80a5ce7a77981139cbd3ea4d7d"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/council-health-role.en.51dca0870194.mp3",
+      "sha256": "2705ce83716ad1f9077ff8bf9b4565bdce5adc6f2074afd1c2a74a49388fed7b"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/council-health-role.fil.908aed2331c4.mp3",
+      "sha256": "0db75a1ed7b05f1451bbea7d50d872f9bf1fdf6cc2bd48ac118da724f62eac9f"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/section-4.en.3ebe7ea2b83e.mp3",
+      "sha256": "d8b8fbda71c8ddc3c27dbd9d090a742141bd7851dc5ae81aa336ad70df09ed13"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/section-4.fil.6efeecef2f08.mp3",
+      "sha256": "ccb94419a195c13519f28eb23fccd81de48df4f507cb64a4205074b9d34f5a37"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/section-5.en.e80face1d65d.mp3",
+      "sha256": "fbc99399ccd632f89714a1708097a340f9fa3958e501d57a297d8626ca4cf8c2"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-barangay-partners/section-5.fil.ed9443e31072.mp3",
+      "sha256": "80c1950b2016e3baa54c20d400f5be9e496f962cf94d2fea9b55a7fc744b8f88"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-23b45c109f7d.vtt",
+      "sha256": "23b45c109f7d096bf7c78bb42983b3fd3e754400320b8aa7294268831e13e423"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-25db3e6f3dfb.mp4",
+      "sha256": "25db3e6f3dfb4b4fd93f36a1f7238b2ea819cc58848c684700861f3b14a4ed28"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-2cedb9cfd2c6-poster.jpg",
+      "sha256": "2cedb9cfd2c6614f3fa516991d240d7ab2367d89af72c0627626423eca33d0d9"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-4bf62ef56d9a.mp4",
+      "sha256": "4bf62ef56d9a283a0614f1d9f6be8634a261b1ac60b98d3951120783c5d3f859"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-5dca963001b3-poster.jpg",
+      "sha256": "5dca963001b3583b74c1b23414110d162ee472be38216776f82d4e62a8ca176d"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-adaa149c9a35.vtt",
+      "sha256": "adaa149c9a359dd4847ecf9b5ea81f479b1a62b832277cd11bd01d2d4813174c"
+    },
+    {
+      "path": "/training/bhw-1-5/malou-meeting-7adc8aacd4e1.png",
+      "sha256": "7adc8aacd4e169fe06ca357d2a3ed119d9f14ba3e9bccc58509ed815ec446e2c"
+    }
+  ],
+  "limits": "Owner approval does not establish human listening, independent policy SME review or authenticated production playback. Original model observations and generation provenance remain preserved.",
+  "release_metadata_changes": "Approval receipt, asset approval status/captions/provenance, exact-media approval guards, and prevention of draft media generation after approval. Teaching, selected media bytes, shared content and frozen review packages unchanged."
+}
