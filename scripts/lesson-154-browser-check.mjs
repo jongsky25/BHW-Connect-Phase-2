@@ -11,6 +11,7 @@ try{
  for(const width of [1280,390])for(const lang of ['fil','en']){
   await page.setViewportSize({width,height:900});await page.getByRole('button',{name:lang==='en'?'English':'Filipino',exact:true}).click();await page.getByRole('button',{name:'Lesson',exact:true}).click();
   for(const mode of ['read','slides']){
+   await page.getByRole('button',{name:lang==='en'?'English':'Filipino',exact:true}).click();
    if(mode==='slides')await page.getByRole('button',{name:'Slides',exact:true}).click();
    for(let i=0;i<6;i++){
     const id=['section-8','teamwork-five-practices','teamwork-role-agreement','teamwork-early-handoff','teamwork-feedback-completion','teamwork-application-check'][i];
@@ -28,7 +29,7 @@ try{
     if(i===0||i===5)await page.screenshot({path:out+`/screen-${width}-${lang}-${mode}-${i}.png`,fullPage:true});
     if(i<5){await audio.evaluate(el=>{window.previousAudio=el;});await page.getByRole('button',{name:lang==='en'?'Next':'Susunod',exact:true}).click();assert(await page.evaluate(()=>window.previousAudio.paused),'Pause on transition');}
    }
-   if(mode==='read'){await page.getByRole('button',{name:lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin',exact:true}).click();assert(await page.evaluate(()=>window.reviewEvents.some(e=>e.type==='complete')),'Completion without watching story');}
+   if(mode==='read'){await page.evaluate(()=>{window.reviewEvents=[];});await page.getByRole('button',{name:lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin',exact:true}).click();assert(await page.evaluate(()=>window.reviewEvents.some(e=>e.type==='complete')),'Completion without watching story');}
   }
   await page.getByRole('button',{name:lang==='en'?'Narrated story':'Kuwentong may salaysay',exact:true}).click();const video=page.locator('video');assert(await video.count()===1,'One story');
   await video.evaluate(async el=>{el.load();await el.play();});await page.waitForFunction(()=>document.querySelector('video')?.currentTime>0.2);assert(await video.evaluate(el=>!el.muted),'Story unmuted');

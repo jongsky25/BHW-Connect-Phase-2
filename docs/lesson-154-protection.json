@@ -1,6 +1,6 @@
 {
-  "collected_at": "2026-10-06T11:50:24.848Z",
-  "source_commit": "4aaac6636beaad41310bc1f6dd23c18dc492d0c9",
+  "collected_at": "2026-10-06T11:59:13.472Z",
+  "source_commit": "70c99e721f8478d49afaf2c491fc49ef19bdfa44",
   "baseline_commit": "e962d4263eae525bca38679a218df623d6eb286f",
   "baseline_bytes_sha256": "5dded195f5a91b9b2e2eac60768a54979deab6b609d8e4a2b167aa35a16b47fc",
   "tracked_files": 6939,
@@ -46,6 +46,16 @@
         7
       ],
       "only_teamwork": true
+    }
+  ],
+  "shared_guides": [
+    {
+      "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/facilitator-notes.fil.md",
+      "only_target_activity_and_answer": true
+    },
+    {
+      "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/facilitator-notes.en.md",
+      "only_target_activity_and_answer": true
     }
   ],
   "changed_qa_rows": [

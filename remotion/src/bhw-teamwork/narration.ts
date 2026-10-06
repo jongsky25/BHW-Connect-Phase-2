@@ -58,7 +58,7 @@ export const BHW_TEAMWORK_BEATS = [
     "id": "closing",
     "fil": "Sa susunod na gawain, linawin ang papel, magsabi nang maaga, igalang ang pribasiya, at tiyakin ang pagtanggap at pagtatapos.",
     "en": "For the next task, clarify roles, speak early, respect privacy and confirm acceptance and completion.",
-    "title_fil": "Ipaliwanag at mailapat",
+    "title_fil": "Ipaliwanag at ilapat",
     "title_en": "Explain and apply",
     "detail_fil": "Magalang na pagtutulungan",
     "detail_en": "Respectful teamwork",

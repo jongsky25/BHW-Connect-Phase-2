@@ -49,14 +49,14 @@ jobs:
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-154-record-fetch.mjs'
         run: node scripts/lesson-154-media-build.mjs
       - name: Full audio model review
-        if: always() && github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-154-owner-approval.json') == ''
+        if: ${{ !cancelled() && github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-154-owner-approval.json') == '' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON154_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-154-record-fetch.mjs'
         run: node scripts/lesson-154-audio-review.mjs
       - name: Decode and focused-review shipped media
-        if: always() && github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-154-owner-approval.json') == ''
+        if: ${{ !cancelled() && github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-154-owner-approval.json') == '' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON154_RAW_EVIDENCE: '1'
