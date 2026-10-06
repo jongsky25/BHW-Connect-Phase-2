@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-06T02:34:48.248Z",
-  "source_commit": "fefc5d7f996e8036410234cf008c1ec7deee1799",
+  "date": "2026-10-06T03:08:42.928Z",
+  "source_commit": "46e5b52019e7bf8027ebfdc09606c1a97ee9b05c",
   "model": "gemini-3.8-flash",
   "decode_only": false,
   "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
@@ -169,15 +169,15 @@
     {
       "id": "read-relationships-application-check-fil",
       "language": "fil",
-      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/relationships-application-check.fil.48a85170d003.mp3",
-      "source_sha256": "a54c45052435385185dadd1d4672d634762277cdbdb30ac09539468667f70a17",
-      "decoded_pcm_sha256": "295b0bf02b94d99973f7b6b1b29c17ab343e9bd87dd70f4554b83b9cac711861",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-relationships/relationships-application-check.fil.cc2afe32192b.mp3",
+      "source_sha256": "d2e91cd21f82bb4efd688fce559604d1b5185ebba7b951600ffd9b1c3668fa48",
+      "decoded_pcm_sha256": "a3c1054e05c8c615c24d7927bd5d134dbda967feaf630f8ccb118cc363a673e3",
       "full_audio_metrics": {
-        "samples": 1586156,
-        "seconds": 66.08983333333333,
-        "rms": 0.1331516581203872,
-        "peak": 0.982147216796875,
-        "quiet_sample_fraction": 0.22945725388927696
+        "samples": 1597440,
+        "seconds": 66.56,
+        "rms": 0.13705330008020586,
+        "peak": 0.9371337890625,
+        "quiet_sample_fraction": 0.24291366185897437
       },
       "zones": [
         {
@@ -185,154 +185,152 @@
           "index": 0,
           "text": "Ipaliwanag at gamitin ang mga ugnayan",
           "start_ms": 0,
-          "end_ms": 3760,
-          "samples": 90240,
-          "seconds": 3.76,
-          "rms": 0.15883811553244634,
-          "peak": 0.831329345703125,
-          "quiet_sample_fraction": 0.19812721631205674
+          "end_ms": 3480,
+          "samples": 83520,
+          "seconds": 3.48,
+          "rms": 0.14180844783688484,
+          "peak": 0.788330078125,
+          "quiet_sample_fraction": 0.20330459770114942
         },
         {
           "zone": "body",
           "index": 0,
           "text": "Subukan ang tanong sa ibaba.",
-          "start_ms": 4060,
-          "end_ms": 6220,
-          "samples": 51840,
-          "seconds": 2.16,
-          "rms": 0.16157296148945507,
-          "peak": 0.858795166015625,
-          "quiet_sample_fraction": 0.32295524691358024
+          "start_ms": 3780,
+          "end_ms": 5660,
+          "samples": 45120,
+          "seconds": 1.88,
+          "rms": 0.1451326678695852,
+          "peak": 0.76995849609375,
+          "quiet_sample_fraction": 0.26496010638297873
         },
         {
           "zone": "body",
           "index": 1,
           "text": "Sa kathang-isip na sitwasyon ni Nena, ipaliwanag ang maitutulong ng bawat ugnayan at ang hindi nito maaaring pagpasyahan.",
-          "start_ms": 6520,
-          "end_ms": 14800,
-          "samples": 198720,
-          "seconds": 8.28,
-          "rms": 0.14196668577945395,
-          "peak": 0.837127685546875,
-          "quiet_sample_fraction": 0.1311443236714976
+          "start_ms": 5960,
+          "end_ms": 14360,
+          "samples": 201600,
+          "seconds": 8.4,
+          "rms": 0.14470777336500995,
+          "peak": 0.8941650390625,
+          "quiet_sample_fraction": 0.11424603174603175
         },
         {
           "zone": "body",
           "index": 2,
           "text": "Magbigay ng dahilan sa piniling contact at isang tanong upang tiyakin ang papel niya.",
-          "start_ms": 15100,
-          "end_ms": 20900,
-          "samples": 139200,
-          "seconds": 5.8,
-          "rms": 0.13891526326588358,
-          "peak": 0.77899169921875,
-          "quiet_sample_fraction": 0.1827155172413793
+          "start_ms": 14660,
+          "end_ms": 20500,
+          "samples": 140160,
+          "seconds": 5.84,
+          "rms": 0.15464335758431436,
+          "peak": 0.931549072265625,
+          "quiet_sample_fraction": 0.19656820776255707
         },
         {
           "zone": "body",
           "index": 3,
           "text": "Para sa katumbas na pasulat o magkapares na pagsasanay, gumawa ng apat na card: alalahanin at pagpili ng residente; propesyonal na tanong; hiling na suportang administratibo; gawain ng kapwa BHW.",
-          "start_ms": 21200,
-          "end_ms": 38360,
-          "samples": 411840,
-          "seconds": 17.16,
-          "rms": 0.13460693268707644,
-          "peak": 0.94915771484375,
-          "quiet_sample_fraction": 0.18577845765345766
+          "start_ms": 20800,
+          "end_ms": 37320,
+          "samples": 396480,
+          "seconds": 16.52,
+          "rms": 0.14265132118063087,
+          "peak": 0.863983154296875,
+          "quiet_sample_fraction": 0.23261702986279256
         },
         {
           "zone": "body",
           "index": 4,
           "text": "Itugma sa angkop na papel na tiniyak sa lokalidad, saka ipaliwanag ang hangganan.",
-          "start_ms": 38660,
-          "end_ms": 44260,
-          "samples": 134400,
-          "seconds": 5.6,
-          "rms": 0.1098578364449447,
-          "peak": 0.844207763671875,
-          "quiet_sample_fraction": 0.18825892857142856
+          "start_ms": 37620,
+          "end_ms": 43340,
+          "samples": 137280,
+          "seconds": 5.72,
+          "rms": 0.13326424766440081,
+          "peak": 0.9371337890625,
+          "quiet_sample_fraction": 0.13604312354312353
         },
         {
           "zone": "body",
           "index": 5,
           "text": "Maaaring itanong ng kapareha: “Ano pa ang kailangan mong linawin?”",
-          "start_ms": 44560,
-          "end_ms": 49320,
-          "samples": 114240,
-          "seconds": 4.76,
-          "rms": 0.15798053145323096,
-          "peak": 0.787994384765625,
-          "quiet_sample_fraction": 0.22406337535014006
+          "start_ms": 43640,
+          "end_ms": 48360,
+          "samples": 113280,
+          "seconds": 4.72,
+          "rms": 0.14694451582758794,
+          "peak": 0.90045166015625,
+          "quiet_sample_fraction": 0.269385593220339
         },
         {
           "zone": "body",
           "index": 6,
           "text": "Gumamit ng kathang-isip na detalye, tumanggap ng puna at umulit.",
-          "start_ms": 49620,
-          "end_ms": 54900,
-          "samples": 126720,
-          "seconds": 5.28,
-          "rms": 0.1225297545518696,
-          "peak": 0.836334228515625,
-          "quiet_sample_fraction": 0.2821180555555556
+          "start_ms": 48660,
+          "end_ms": 54940,
+          "samples": 150720,
+          "seconds": 6.28,
+          "rms": 0.11630648999271824,
+          "peak": 0.85107421875,
+          "quiet_sample_fraction": 0.3465432590233546
         },
         {
           "zone": "body",
           "index": 7,
           "text": "Paliwanag ang suriin, hindi punto ng pagsasalita o personalidad.",
-          "start_ms": 55200,
-          "end_ms": 59800,
-          "samples": 110400,
-          "seconds": 4.6,
-          "rms": 0.13121765870883287,
-          "peak": 0.9342041015625,
-          "quiet_sample_fraction": 0.1312228260869565
+          "start_ms": 55240,
+          "end_ms": 60360,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.131186807105038,
+          "peak": 0.81414794921875,
+          "quiet_sample_fraction": 0.17064615885416667
         },
         {
           "zone": "takeaway",
           "index": 0,
           "text": "Ipaliwanag ang pagpili, tiyakin ang papel at igalang ang nais ng residente.",
-          "start_ms": 60100,
-          "end_ms": 66020,
-          "samples": 142080,
-          "seconds": 5.92,
-          "rms": 0.12045295627636832,
-          "peak": 0.982147216796875,
-          "quiet_sample_fraction": 0.23733108108108109
+          "start_ms": 60660,
+          "end_ms": 66500,
+          "samples": 140160,
+          "seconds": 5.84,
+          "rms": 0.13870549077323882,
+          "peak": 0.83770751953125,
+          "quiet_sample_fraction": 0.19758133561643837
         }
       ],
       "excerpts": [
         {
           "kind": "decisive",
-          "start": 38.66,
-          "end": 54.9,
+          "start": 37.62,
+          "end": 54.94,
           "file": "read-relationships-application-check-fil-decisive.wav",
-          "excerpt_sha256": "a8e8401403e759a42f3847a03c8716d7d0442c0c732f357921a4e0a1bd8ac9ee",
-          "decoded_sample_count": 389760,
+          "excerpt_sha256": "1dcfaa5592953cf8155791c7c7bbef48df35bacc90ad74c9d95a39b7c9d5e4bf",
+          "decoded_sample_count": 415680,
           "expected_context": "Itugma sa angkop na papel na tiniyak sa lokalidad, saka ipaliwanag ang hangganan. Maaaring itanong ng kapareha: “Ano pa ang kailangan mong linawin?” Gumamit ng kathang-isip na detalye, tumanggap ng puna at umulit.",
-          "model_response": "```json\n{\n \"transcript\": \"Itugma sa angkop na papel na tiniyak sa lokalidad, saka ipaliwanag ang hangganan. Maaaring itanong ng kapareha, ano pa ang kailangan mong linawin? Gumamit ng kathang-isip na detalye. Tumanggap ng puna at umulit.\",\n \"observations\": {\n  \"speaker_roles\": \"Two distinct narrators are present: a male speaker delivers the first instruction (00:00.000 - 00:05.200), followed by a female speaker presenting conversational prompts and further guidelines (00:05.800 - 00:16.200).\",\n  \"malou_pronunciation\": \"The name or word 'Malou' does not appear in this excerpt.\",\n  \"negation\": \"No grammatical negation occurs in the audio.\",\n  \"audible_speech_and_clipping\": \"All words are clearly enunciated with no audible clipping, truncation, or unnatural volume drops.\",\n  \"ending_completeness\": \"The audio ends naturally on 'at umulit' with complete cadence and appropriate trailing silence.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None; speech is clear, well-paced, and cleanly articulated throughout.\"\n}\n```",
-          "reused_exact_encoded_bytes": true
+          "model_response": "```json\n{\n  \"transcript\": \"Itugma sa angkop na papel na tiniyak sa lokalidad, saka ipaliwanag ang hangganan. Maaaring itanong ng kapareha, \\\"Ano pa ang kailangan mong linawin?\\\" Gumamit ng kathang-isip na detalye, tumanggap ng puna, at umulit.\",\n  \"observations\": [\n    {\n      \"category\": \"role distinctions\",\n      \"timestamp\": \"00:06 - 00:10\",\n      \"detail\": \"The speaker introduces a partner's hypothetical prompt ('Maaaring itanong ng kapareha') followed by the quoted dialogue ('Ano pa ang kailangan mong linawin?') using the same narrator voice with an inquisitive intonational contour.\"\n    },\n    {\n      \"category\": \"Malou pronunciation\",\n      \"detail\": \"The name or word 'Malou' does not appear in this excerpt.\"\n    },\n    {\n      \"category\": \"negation\",\n      \"detail\": \"No negation terms (e.g., 'hindi', 'huwag') are present in this excerpt.\"\n    },\n    {\n      \"category\": \"ending completeness\",\n      \"timestamp\": \"00:16 - 00:17.5\",\n      \"detail\": \"The final phrase 'at umulit' completes smoothly with natural decay and no acoustic clipping.\"\n    },\n    {\n      \"category\": \"voice quality\",\n      \"detail\": \"Consistent female instructional delivery across the segment with clear cadence, without abrupt acoustic shifts.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None detected; speech is fully intelligible and clearly rendered.\"\n}\n```"
         },
         {
           "kind": "ending",
-          "start": 49.62,
-          "end": 66.08983333333333,
+          "start": 48.66,
+          "end": 66.56,
           "file": "read-relationships-application-check-fil-ending.wav",
-          "excerpt_sha256": "2f17e7d95279d7c07f08b675a7dda0813b0ac0cf338f024baf045c313e95fd13",
-          "decoded_sample_count": 395276,
+          "excerpt_sha256": "44018ecdd7f44c252bbc971b16a39311854543cbe4136a5965270eb1c6399143",
+          "decoded_sample_count": 429600,
           "expected_context": "Gumamit ng kathang-isip na detalye, tumanggap ng puna at umulit. Paliwanag ang suriin, hindi punto ng pagsasalita o personalidad. Ipaliwanag ang pagpili, tiyakin ang papel at igalang ang nais ng residente.",
-          "model_response": "```json\n{\n  \"transcript\": \"Gumamit ng kathang-isip na detalye, tumanggap ng puna, at umulit. Paliwanag ang suriin, hindi punto ng pagsasalita o personalidad. Ipaliwanag ang pagpili, tiyakin ang papel, at igalang ang nais ng residente.\",\n  \"observations\": [\n    {\n      \"type\": \"pronunciation_check\",\n      \"detail\": \"The target name 'Malou' does not appear in this excerpt.\"\n    },\n    {\n      \"type\": \"negation\",\n      \"detail\": \"Clear negation is present at 00:07–00:08 with 'hindi punto ng pagsasalita o personalidad'.\"\n    },\n    {\n      \"type\": \"ending_completeness\",\n      \"detail\": \"The audio concludes naturally with 'residente' at approximately 00:16.7 without truncation.\"\n    },\n    {\n      \"type\": \"voice_quality\",\n      \"detail\": \"Narration maintains a steady educational tone throughout with no abrupt shifts or clipping.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None detected; speech is fully intelligible and clear.\"\n}\n```",
-          "reused_exact_encoded_bytes": true
+          "model_response": "```json\n{\n  \"transcript\": \"Gumamit ng kathang-isip na detalye, tumanggap ng puna, at umulit. Paliwanag ang suriin, hindi punto ng pagsasalita o personalidad. Ipaliwanag ang pagpili, tiyakin ang papel, at igalang ang nais ng residente.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this audio excerpt.\",\n    \"negation\": \"Clear negation is present at 00:08.7–00:11.2 ('hindi punto ng pagsasalita o personalidad').\",\n    \"role_distinctions\": \"There are two distinct speaker voices: Speaker 1 (male voice) speaks from 00:00.0 to 00:11.2, and Speaker 2 (female voice) speaks from 00:11.8 to 00:17.2.\",\n    \"ending_completeness\": \"The audio concludes naturally and completely with 'residente' at ~00:17.2 without clipping or premature cutoff.\",\n    \"audible_speech\": \"Speech is articulate, clear, and well-paced throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"voice_changes\": \"A noticeable speaker transition occurs at ~00:11.5–00:11.8 where the narration switches from a male voice to a female voice.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"speaker_change\",\n      \"timestamp\": \"00:11.5 - 00:11.8\",\n      \"description\": \"Shift in narrator voice from male to female between instructional prompts.\"\n    }\n  ],\n  \"uncertainty\": \"None; speech is clear and easily intelligible.\"\n}\n```"
         },
         {
           "kind": "opening-voice",
           "start": 0,
-          "end": 14.8,
+          "end": 14.36,
           "file": "read-relationships-application-check-fil-opening-voice.wav",
-          "excerpt_sha256": "c85f324feb58defe2622721d7567468095665c085f446645c2c45449a0e3e449",
-          "decoded_sample_count": 355200,
+          "excerpt_sha256": "da6847e900074ccdc3369998fa5953f42f794bb6807a6de6f48c45ddfc818307",
+          "decoded_sample_count": 344640,
           "expected_context": "Ipaliwanag at gamitin ang mga ugnayan Subukan ang tanong sa ibaba. Sa kathang-isip na sitwasyon ni Nena, ipaliwanag ang maitutulong ng bawat ugnayan at ang hindi nito maaaring pagpasyahan.",
-          "model_response": "```json\n{\n  \"transcript\": \"Ipaliwanag at gamitin ang mga ugnayan. Subukan ang tanong sa ibaba. Sa kathang-isip na sitwasyon ni Nena, ipaliwanag ang maitutulong ng bawat ugnayan, at ang hindi nito maaaring pagpasyahan.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt; the name mentioned is 'Nena' at approximately 00:07.8 - 00:08.5.\",\n    \"negation\": \"The negation 'hindi' is clearly audible and cleanly articulated at 00:12.3 - 00:12.8 in the phrase 'at ang hindi nito maaaring pagpasyahan.'\",\n    \"role_distinctions_and_voice_changes\": \"There is a distinct speaker switch between 00:05.8 and 00:06.2, transitioning from an adult male voice reading instructions ('Ipaliwanag at gamitin... sa ibaba.') to an adult female voice reading the scenario question ('Sa kathang-isip...').\",\n    \"ending_completeness\": \"The audio ends cleanly with no mid-word cutoff or premature termination after 'pagpasyahan.'\",\n    \"audible_speech\": \"All spoken words are fully audible and pronounced at a clear, measured pace.\",\n    \"clipped_words\": \"No clipped or abruptly cut off words detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp\": \"00:05.8 - 00:06.2\",\n      \"issue\": \"Speaker/voice change between male and female narrators within the same prompt without an explicit boundary announcement or transition cue.\"\n    }\n  ],\n  \"uncertainty\": \"None. The speech is clear and phonetically unambiguous.\"\n}\n```"
+          "model_response": "```json\n{\n \"transcript\": \"Ipaliwanag at gamitin ang mga ugnayan. Subukan ang tanong sa ibaba. Sa kathang-isip na sitwasyon ni Nena, ipaliwanag ang maitutulong ng bawat ugnayan at ang hindi nito maaaring pagpasyahan.\",\n \"observations\": {\n  \"malou_pronunciation\": \"The name 'Malou' is not present in this excerpt; the character referenced is 'Nena' at 00:07.\",\n  \"negation\": \"The negative marker 'hindi' is clearly spoken at 00:12 in the clause 'at ang hindi nito maaaring pagpasyahan'.\",\n  \"role_distinctions\": \"A single narrator delivers educational instructions with consistent tone and pacing throughout.\",\n  \"ending_completeness\": \"The sentence and excerpt conclude cleanly at 00:14 on 'pagpasyahan' without abrupt cutoffs.\",\n  \"audible_speech\": \"All words are fully audible and clear.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"None observed; vocal pitch, volume, and quality remain consistent.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
         }
       ]
     },
@@ -468,7 +466,8 @@
           "excerpt_sha256": "e51814c437ec3d23b99cb44df90983b73ae37078ef5baa25c59de460d2a75d90",
           "decoded_sample_count": 450240,
           "expected_context": "Sa kathang-isip na sitwasyong ito, nakatagpo ni BHW Malou si Aling Nena sa malilim na bakuran ng barangay. Nagtanong si Nena tungkol sa nakaplanong gawaing pangkalusugan: “Saan po ito gaganapin? Gusto ko ring itanong sa health professional kung angkop ito para sa akin.”",
-          "model_response": "```json\n{\n  \"transcript\": \"Sa kathang-isip na sitwasyong ito, nakatagpo ni BHW Malou si Aling Nena sa malilim na bakuran ng barangay. Nagtanong si Nena tungkol sa nakaplanong gawaing pangkalusugan, \\\"Saan po ito gaganapin? Gusto ko ring itanong sa health professional kung angkop ito para sa akin.\\\"\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as 'mah-LOO' (/mɐˈlu/) at approximately 00:03–00:04.\",\n    \"negation\": \"No negative grammatical markers (e.g., 'hindi', 'huwag', 'wala') occur in this excerpt.\",\n    \"role_distinctions\": \"There is a distinct tonal shift from narrative delivery (00:00–00:11) to in-character dialogue for Aling Nena starting at 00:12 ('Saan po ito gaganapin?...').\",\n    \"ending_completeness\": \"The excerpt concludes completely with the final word 'akin' at 00:18 with a natural sentence-final cadence and no clipping.\",\n    \"audible_speech\": \"All speech is fully audible, clear, and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"No unnatural pitch glitches or synthetic dropouts; the voice shift at 00:12 is an intentional character role portrayal.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is clear and matches standard Filipino educational audio formatting.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Sa kathang-isip na sitwasyong ito, nakatagpo ni BHW Malou si Aling Nena sa malilim na bakuran ng barangay. Nagtanong si Nena tungkol sa nakaplanong gawaing pangkalusugan, \\\"Saan po ito gaganapin? Gusto ko ring itanong sa health professional kung angkop ito para sa akin.\\\"\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as 'mah-LOO' (/mɐˈlu/) at approximately 00:03–00:04.\",\n    \"negation\": \"No negative grammatical markers (e.g., 'hindi', 'huwag', 'wala') occur in this excerpt.\",\n    \"role_distinctions\": \"There is a distinct tonal shift from narrative delivery (00:00–00:11) to in-character dialogue for Aling Nena starting at 00:12 ('Saan po ito gaganapin?...').\",\n    \"ending_completeness\": \"The excerpt concludes completely with the final word 'akin' at 00:18 with a natural sentence-final cadence and no clipping.\",\n    \"audible_speech\": \"All speech is fully audible, clear, and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"No unnatural pitch glitches or synthetic dropouts; the voice shift at 00:12 is an intentional character role portrayal.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is clear and matches standard Filipino educational audio formatting.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
         },
         {
           "kind": "ending",
@@ -478,7 +477,8 @@
           "excerpt_sha256": "2311a464a08f2a019875e4063052cf67bf11e4e0cd77f2a96a5380678271b8db",
           "decoded_sample_count": 439583,
           "expected_context": "Mahalaga ang pagpili ni Nena; hindi hinuhulaan ni Malou ang kaniyang pangangailangan. Maaaring tapusin ang bahaging Basahin o Slides nang hindi pinapanood ang opsyonal na kuwento. Makinig sa residente at ihiwalay ang mga tanong bago pumili ng suporta.",
-          "model_response": "```json\n{\n  \"transcript\": \"Mahalaga ang pagpili ni Nena. Hindi hinuhulaan ni Malou ang kanyang pangangailangan. Maaaring tapusin ang bahaging basahin o slides nang hindi pinapanood ang opsyonal na kwento. Makinig sa residente at ihiwalay ang mga tanong bago pumili ng suporta.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly at approximately 00:03.2 - 00:03.7 as 'mah-LOO' with stress on the second syllable.\",\n    \"negation\": \"Negation terms ('Hindi' at 00:02.1 and 'hindi' at 00:09.5) are clearly articulated without slurring or omission.\",\n    \"role_distinctions_and_voice_changes\": \"A noticeable shift in vocal timbre occurs at approximately 00:12.7; the first two sentences (00:00 - 00:12.2) are delivered in a higher, upbeat educational narrator voice, while the final sentence (00:12.8 - 00:18.0) shifts to a distinctly deeper, lower-pitched voice.\",\n    \"ending_completeness\": \"The audio ends naturally with 'suporta' fully articulated at 00:17.3 - 00:18.0 without premature clipping.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables are intact.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:12.7 - 00:13.0\",\n      \"description\": \"Perceptible change in speaker persona/pitch register transitioning into 'Makinig sa residente...'.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech tokens are intelligible and acoustic transitions are distinct.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Mahalaga ang pagpili ni Nena. Hindi hinuhulaan ni Malou ang kanyang pangangailangan. Maaaring tapusin ang bahaging basahin o slides nang hindi pinapanood ang opsyonal na kwento. Makinig sa residente at ihiwalay ang mga tanong bago pumili ng suporta.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly at approximately 00:03.2 - 00:03.7 as 'mah-LOO' with stress on the second syllable.\",\n    \"negation\": \"Negation terms ('Hindi' at 00:02.1 and 'hindi' at 00:09.5) are clearly articulated without slurring or omission.\",\n    \"role_distinctions_and_voice_changes\": \"A noticeable shift in vocal timbre occurs at approximately 00:12.7; the first two sentences (00:00 - 00:12.2) are delivered in a higher, upbeat educational narrator voice, while the final sentence (00:12.8 - 00:18.0) shifts to a distinctly deeper, lower-pitched voice.\",\n    \"ending_completeness\": \"The audio ends naturally with 'suporta' fully articulated at 00:17.3 - 00:18.0 without premature clipping.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables are intact.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:12.7 - 00:13.0\",\n      \"description\": \"Perceptible change in speaker persona/pitch register transitioning into 'Makinig sa residente...'.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech tokens are intelligible and acoustic transitions are distinct.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
         }
       ]
     },
@@ -1230,7 +1230,8 @@
           "excerpt_sha256": "f40cc0587372532037e51d9c3aa5366277c0399111ffd02d0b78a32e2c046f90",
           "decoded_sample_count": 304320,
           "expected_context": "Malou repeats what she heard: “You want to confirm the venue and speak with a health professional. Have I understood correctly?” Nena can correct that summary and explain what matters to her.",
-          "model_response": "```json\n{\n  \"transcript\": \"Malou repeats what she heard: You want to confirm the venue and speak with a health professional. Have I understood correctly? Nana can correct that summary and explain what matters to her.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as /məˈluː/ ('mah-LOO') with second-syllable stress around 00:00.05–00:00.58.\",\n    \"negation\": \"No negative grammatical constructions (e.g., 'not', 'no', 'never') occur in the excerpt.\",\n    \"role_distinctions\": \"Clear vocal shifts occur: narrator delivery (00:00.00–00:02.12), in-character speech as Malou paraphrasing and inquiring (00:02.16–00:08.05), and a return to narrator framing (00:08.60–00:12.82).\",\n    \"ending_completeness\": \"The audio concludes naturally with complete decay on the word 'her' around 00:12.82, with no abrupt clipping.\",\n    \"audible_speech\": \"All words are fully articulated, clear, and cleanly audible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Pitch and character adjustments align with conversational role-play rather than artifactual or unintended voice breaks.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is clean and speech is distinctly intelligible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Malou repeats what she heard: You want to confirm the venue and speak with a health professional. Have I understood correctly? Nana can correct that summary and explain what matters to her.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as /məˈluː/ ('mah-LOO') with second-syllable stress around 00:00.05–00:00.58.\",\n    \"negation\": \"No negative grammatical constructions (e.g., 'not', 'no', 'never') occur in the excerpt.\",\n    \"role_distinctions\": \"Clear vocal shifts occur: narrator delivery (00:00.00–00:02.12), in-character speech as Malou paraphrasing and inquiring (00:02.16–00:08.05), and a return to narrator framing (00:08.60–00:12.82).\",\n    \"ending_completeness\": \"The audio concludes naturally with complete decay on the word 'her' around 00:12.82, with no abrupt clipping.\",\n    \"audible_speech\": \"All words are fully articulated, clear, and cleanly audible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Pitch and character adjustments align with conversational role-play rather than artifactual or unintended voice breaks.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is clean and speech is distinctly intelligible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
         },
         {
           "kind": "ending",
@@ -1240,7 +1241,8 @@
           "excerpt_sha256": "aa96dd183afb263ec4a82f7f9f312b6e8a25ef4d268f9972674c461bcbf37552",
           "decoded_sample_count": 361558,
           "expected_context": "She asks, “What information would help you, and how would you prefer to receive it?” Use fictional details only during practice. Repeat, clarify and invite the resident to correct your understanding.",
-          "model_response": "```json\n{\n  \"transcript\": \"She asks, what information would help you, and how would you prefer to receive it? Use fictional details only during practice. Repeat, clarify, and invite the resident to correct your understanding.\",\n  \"observations\": {\n    \"speaker\": \"Single female speaker with Philippine English accent, delivering instructions clearly and steadily.\",\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"No grammatical negation words ('no', 'not', 'never', etc.) occur in this clip.\",\n    \"role_distinctions\": \"Single narrator voice conveying guidance/instructions throughout; no conversational role changes present.\",\n    \"ending_completeness\": \"The audio concludes naturally with full decay on 'understanding' around 00:14.9, with no trailing truncation.\",\n    \"audible_speech\": \"All speech is clearly audible with minimal background noise.\",\n    \"clipped_words\": \"None detected; word boundaries at both ends of phrases are intact.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and acoustic environment remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the speech signal is clean and fully intelligible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"She asks, what information would help you, and how would you prefer to receive it? Use fictional details only during practice. Repeat, clarify, and invite the resident to correct your understanding.\",\n  \"observations\": {\n    \"speaker\": \"Single female speaker with Philippine English accent, delivering instructions clearly and steadily.\",\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"No grammatical negation words ('no', 'not', 'never', etc.) occur in this clip.\",\n    \"role_distinctions\": \"Single narrator voice conveying guidance/instructions throughout; no conversational role changes present.\",\n    \"ending_completeness\": \"The audio concludes naturally with full decay on 'understanding' around 00:14.9, with no trailing truncation.\",\n    \"audible_speech\": \"All speech is clearly audible with minimal background noise.\",\n    \"clipped_words\": \"None detected; word boundaries at both ends of phrases are intact.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and acoustic environment remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the speech signal is clean and fully intelligible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
         },
         {
           "kind": "facts-versus-unknowns",
@@ -1250,7 +1252,8 @@
           "excerpt_sha256": "f6211262c21cacf1439de86810efe4eeb54565f77afffa8d630587085c36aaec",
           "decoded_sample_count": 370560,
           "expected_context": "Nena can correct that summary and explain what matters to her. Malou knows that Nena has two questions. She still needs to confirm the venue, the locally designated professional contact, and Nena's preferred way to ask.",
-          "model_response": "```json\n{\n  \"transcript\": \"Nenna can correct that summary and explain what matters to her. Malou knows that Nenna has two questions. She still needs to confirm the venue, the locally designated professional contact, and Nenna's preferred way to ask.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced as 'mah-LOO' (/mɑːˈluː/ or /məˈluː/) around 00:04–00:05 with primary stress on the second syllable.\",\n    \"negation\": \"No negative constructions are used in the audio excerpt.\",\n    \"role_distinctions_and_voice_changes\": \"A distinct voice change occurs between 00:04 and 00:07, where a higher-pitched female voice reads 'Malou knows that Nenna has two questions', before reverting at 00:08 to the initial narrator voice.\",\n    \"ending_completeness\": \"The final sentence finishes completely at 00:15 with the word 'ask' and a natural pause/cadence without abrupt cutoff.\",\n    \"clipped_words\": \"None observed; word boundaries are intact and clearly articulated.\",\n    \"audible_speech\": \"All speech is clear, audible, and intelligible throughout the clip.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:04 - 00:07\",\n      \"description\": \"Noticeable mid-sentence/mid-paragraph shift in voice timbre and pitch for the sentence 'Malou knows that Nenna has two questions.'\"\n    }\n  ],\n  \"uncertainty\": \"None detected.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Nenna can correct that summary and explain what matters to her. Malou knows that Nenna has two questions. She still needs to confirm the venue, the locally designated professional contact, and Nenna's preferred way to ask.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced as 'mah-LOO' (/mɑːˈluː/ or /məˈluː/) around 00:04–00:05 with primary stress on the second syllable.\",\n    \"negation\": \"No negative constructions are used in the audio excerpt.\",\n    \"role_distinctions_and_voice_changes\": \"A distinct voice change occurs between 00:04 and 00:07, where a higher-pitched female voice reads 'Malou knows that Nenna has two questions', before reverting at 00:08 to the initial narrator voice.\",\n    \"ending_completeness\": \"The final sentence finishes completely at 00:15 with the word 'ask' and a natural pause/cadence without abrupt cutoff.\",\n    \"clipped_words\": \"None observed; word boundaries are intact and clearly articulated.\",\n    \"audible_speech\": \"All speech is clear, audible, and intelligible throughout the clip.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:04 - 00:07\",\n      \"description\": \"Noticeable mid-sentence/mid-paragraph shift in voice timbre and pitch for the sentence 'Malou knows that Nenna has two questions.'\"\n    }\n  ],\n  \"uncertainty\": \"None detected.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
         }
       ]
     },
@@ -1546,7 +1549,8 @@
           "excerpt_sha256": "f60c8619936470a07053c4b1776a11871da8c9ec08471d8399c0730d835ae049",
           "decoded_sample_count": 434880,
           "expected_context": "In this fictional learning situation, BHW Malou meets Aling Nena in a shaded barangay courtyard. Nena asks about a planned community health activity: “Where will it be held? I also want to ask a health professional whether it is suitable for me.”",
-          "model_response": "```json\n{\n  \"transcript\": \"In this fictional learning situation, BHW Malou meets Aling Nena in a shaded barangay courtyard. Nena asks about a planned community health activity: Where will it be held? I also want to ask a health professional whether it is suitable for me.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as [mɐˈlu] / 'mah-LOO' around 00:03.4.\",\n    \"negation\": \"No negative constructions are present in the text.\",\n    \"role_distinctions\": \"A single narrator voice delivers the context introduction as well as Nena's quoted questions without distinct voice acting, though pacing shifts slightly into direct speech around 00:12.0.\",\n    \"ending_completeness\": \"The audio concludes fully on 'for me' with natural trailing decay without truncation.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible throughout.\",\n    \"clipped_words\": \"No clipped or abruptly cut off words detected.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and vocal identity remain consistent throughout the recording.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"In this fictional learning situation, BHW Malou meets Aling Nena in a shaded barangay courtyard. Nena asks about a planned community health activity: Where will it be held? I also want to ask a health professional whether it is suitable for me.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as [mɐˈlu] / 'mah-LOO' around 00:03.4.\",\n    \"negation\": \"No negative constructions are present in the text.\",\n    \"role_distinctions\": \"A single narrator voice delivers the context introduction as well as Nena's quoted questions without distinct voice acting, though pacing shifts slightly into direct speech around 00:12.0.\",\n    \"ending_completeness\": \"The audio concludes fully on 'for me' with natural trailing decay without truncation.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible throughout.\",\n    \"clipped_words\": \"No clipped or abruptly cut off words detected.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and vocal identity remain consistent throughout the recording.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
         },
         {
           "kind": "ending",
@@ -1556,7 +1560,8 @@
           "excerpt_sha256": "fc6a53e5e68539253dc60c82378c75bbf3a543fbcd4d21a5357d9a975ead428f",
           "decoded_sample_count": 434783,
           "expected_context": "Nena's preferences matter; Malou does not decide what she needs without asking. Learners can finish this lesson in either reading or slide mode without watching the optional story. Listen to the resident and separate the questions before choosing support.",
-          "model_response": "```json\n{\n  \"transcript\": \"Nana's preferences matter. Malou does not decide what she needs without asking. Learners can finish this lesson in either reading or slide mode, without watching the optional story. Listen to the resident and separate the questions before choosing support.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"At 00:02.4, 'Malou' is pronounced accurately with stress on the second syllable matching [mah-LOO] (/məˈluː/).\",\n    \"negation\": \"Clear presence and articulation of negative markers: 'does not decide' (00:02.6 - 00:03.3), 'without asking' (00:04.6 - 00:05.5), and 'without watching' (00:10.5 - 00:11.4).\",\n    \"role_distinctions\": \"The segment encompasses scenario narrative regarding Nana and Malou (00:00.0 - 00:05.6), navigation instructions for learners (00:06.0 - 00:12.4), and a specific task directive (00:13.1 - 00:17.4).\",\n    \"ending_completeness\": \"The excerpt concludes with a complete sentence at 00:17.4 followed by a natural silence; no premature cut-off is observed.\",\n    \"audible_speech\": \"Speech is fully intelligible and articulate across all sentences.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants (e.g., 'matter', 'asking', 'support') are intact.\",\n    \"voice_changes\": \"A noticeable shift in speaker timbre and accent occurs between 00:12.4 and 00:13.1, switching from a British-accented instructional voice to an American-accented instructional voice.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp_range\": \"00:12.4 - 00:13.1\",\n      \"issue\": \"Unexpected voice change between sequential instructional prompts.\"\n    }\n  ],\n  \"uncertainty\": \"None; all spoken phrases and acoustic shifts are distinct and clearly audible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Nana's preferences matter. Malou does not decide what she needs without asking. Learners can finish this lesson in either reading or slide mode, without watching the optional story. Listen to the resident and separate the questions before choosing support.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"At 00:02.4, 'Malou' is pronounced accurately with stress on the second syllable matching [mah-LOO] (/məˈluː/).\",\n    \"negation\": \"Clear presence and articulation of negative markers: 'does not decide' (00:02.6 - 00:03.3), 'without asking' (00:04.6 - 00:05.5), and 'without watching' (00:10.5 - 00:11.4).\",\n    \"role_distinctions\": \"The segment encompasses scenario narrative regarding Nana and Malou (00:00.0 - 00:05.6), navigation instructions for learners (00:06.0 - 00:12.4), and a specific task directive (00:13.1 - 00:17.4).\",\n    \"ending_completeness\": \"The excerpt concludes with a complete sentence at 00:17.4 followed by a natural silence; no premature cut-off is observed.\",\n    \"audible_speech\": \"Speech is fully intelligible and articulate across all sentences.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants (e.g., 'matter', 'asking', 'support') are intact.\",\n    \"voice_changes\": \"A noticeable shift in speaker timbre and accent occurs between 00:12.4 and 00:13.1, switching from a British-accented instructional voice to an American-accented instructional voice.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp_range\": \"00:12.4 - 00:13.1\",\n      \"issue\": \"Unexpected voice change between sequential instructional prompts.\"\n    }\n  ],\n  \"uncertainty\": \"None; all spoken phrases and acoustic shifts are distinct and clearly audible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
         }
       ]
     },
