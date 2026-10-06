@@ -1,0 +1,48 @@
+name: Lesson1.5.1 read-only artifact transport
+on:
+  pull_request:
+    paths: ['.github/workflows/lesson151-export.yml']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  export:
+    if: github.head_ref == 'codex/lesson-151-malou-proposal'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson151-draft-evidence
+          run-id: 37404527156
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: recovered
+      - name: Read-only bounded review-artifact transport
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: python
+        run: |
+          import pathlib,tarfile,base64,hashlib,json,urllib.request,os
+          root=pathlib.Path('recovered')
+          # Transport only changed Read tracks, reports, and their new raw exchanges.
+          import shutil
+          manifest=json.loads((root/'content/training/day1-basic-competencies/narration.json').read_text())
+          selected={t['src'].lstrip('/') for sid,langs in manifest['lessons']['bhw-relationships']['sections'].items() for lang,t in langs.items() if (sid,lang) in [('section-1','en'),('section-1','fil'),('community-listening','en')]}
+          for file in list(root.rglob('*')):
+            if not file.is_file():continue
+            relative=str(file.relative_to(root))
+            keep=relative.startswith(('docs/','content/')) or (relative.startswith('public/') and relative[7:] in selected)
+            if relative.startswith('.preview/'):
+              if file.suffix=='.json':
+                keep='2026-10-06T02:3' in file.read_text()[:1000]
+              elif 'excerpts' in relative:keep=any(x in relative for x in ['read-section-1-en','read-section-1-fil','read-community-listening-en','read-relationships-application-check-fil-opening'])
+            if not keep:file.unlink()
+          request=urllib.request.Request('https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs/37404527156/artifacts',headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN']})
+          with urllib.request.urlopen(request) as response: metadata=json.load(response)
+          (root/'transport-source-artifacts.json').write_text(json.dumps(metadata,indent=2))
+          with tarfile.open('review-export.tgz','w:gz',compresslevel=6) as archive: archive.add(root,arcname='review')
+          data=pathlib.Path('review-export.tgz').read_bytes()
+          if len(data)>48*1024*1024: raise SystemExit('Bounded export exceeds48MiB; no bytes exported')
+          print('LESSON151_EXPORT_BEGIN '+hashlib.sha256(data).hexdigest()+' '+str(len(data)))
+          encoded=base64.b64encode(data).decode()
+          for offset in range(0,len(encoded),8192): print('LESSON151_EXPORT_DATA '+encoded[offset:offset+8192])
+          print('LESSON151_EXPORT_END')
