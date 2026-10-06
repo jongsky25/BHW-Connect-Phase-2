@@ -68,7 +68,12 @@ jobs:
           digest=hashlib.sha256(data).hexdigest();assert meta['digest']=='sha256:'+digest
           with zipfile.ZipFile(io.BytesIO(data)) as z:assert z.testzip() is None
           index=int(os.environ['CHUNK']);chunk=data[index*8*1024*1024:(index+1)*8*1024*1024];assert chunk
-          print('LESSON154_ZIP_CHUNK_BEGIN '+json.dumps({'artifact_id':meta['id'],'index':index,'zip_bytes':len(data),'zip_sha256':digest,'chunk_bytes':len(chunk),'chunk_sha256':hashlib.sha256(chunk).hexdigest()},separators=(',',':')))
-          encoded=base64.b64encode(chunk).decode()
-          for offset in range(0,len(encoded),8192):print('LESSON154_ZIP_CHUNK_DATA '+encoded[offset:offset+8192])
-          print('LESSON154_ZIP_CHUNK_END')
+          with open('part.bin','wb') as f:f.write(chunk)
+          with open('receipt.json','w') as f:json.dump({'artifact_id':meta['id'],'index':index,'zip_bytes':len(data),'zip_sha256':digest,'chunk_bytes':len(chunk),'chunk_sha256':hashlib.sha256(chunk).hexdigest()},f)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson154-verified-part-${{ matrix.chunk }}
+          path: |
+            part.bin
+            receipt.json
+          retention-days: 7
