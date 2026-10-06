@@ -82,6 +82,15 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
    expect(t.beats.map(b=>b.zone)).toEqual(BHW_RELATIONSHIPS_BEATS.map(b=>b.id));expect(t.beats.map(b=>b.text)).toEqual(BHW_RELATIONSHIPS_BEATS.map(b=>b[lang]));expect(bytes(v.captions.path).toString().replaceAll('\r','')).toBe(toWebVtt(t));expect(v.duration_s).toBeGreaterThan(t.durationSeconds);expect(v.duration_s).toBeLessThanOrEqual(90);expect(sha(fs.readFileSync(root+`/remotion/public/bhw-relationships/narration-${lang}.mp3`))).toBe(t.audio_sha256);
   }
  });
+ it('reviews all14 selected encoded files and30 real focused excerpts with finite PCM evidence',()=>{
+  const full=j('docs/lesson-151-audio-review.json'),focused=j('docs/lesson-151-audio-focus.json');expect(full.records).toHaveLength(14);expect(focused.records).toHaveLength(14);expect(focused.decode_only).toBe(false);expect(focused.model).toBe('gemini-3.8-flash');
+  const selected=[];for(const langs of Object.values(mf.lessons['bhw-relationships'].sections))for(const t of Object.values(langs))selected.push(t.sha256);
+  const story=source.assets.find(a=>a.id===source.featured_asset_id);for(const v of Object.values(story.videos))selected.push(v.content_hash);
+  expect(focused.records.map(r=>r.source_sha256).sort()).toEqual(selected.sort());expect(full.records.map(r=>r.source_video_sha256??r.sha256).sort()).toEqual(selected.sort());
+  let count=0;for(const r of full.records){expect(r.model_response.length).toBeGreaterThan(100);expect(r.model_response).toContain('transcript');}
+  for(const r of focused.records){expect(hash(r.source_path)).toBe(r.source_sha256);expect(r.decoded_pcm_sha256).toMatch(/^[a-f0-9]{64}$/);expect(r.full_audio_metrics.samples).toBeGreaterThan(24000);expect(r.full_audio_metrics.rms).toBeGreaterThan(0.002);expect(r.zones.length).toBeGreaterThan(3);for(const z of r.zones){expect(Number.isFinite(z.rms)).toBe(true);expect(z.samples).toBeGreaterThan(0);expect(z.end_ms).toBeGreaterThan(z.start_ms);}for(const e of r.excerpts){count++;expect(e.excerpt_sha256).toMatch(/^[a-f0-9]{64}$/);expect(e.decoded_sample_count).toBeGreaterThan(0);expect(e.end).toBeGreaterThan(e.start);expect(e.model_response.length).toBeGreaterThan(100);expect(e.model_response).toContain('transcript');}}
+  expect(count).toBe(30);
+ });
  it('preserves the complete ordered original registry except exactly two appended151 IDs',()=>{
   const s=fs.readFileSync(root+'/remotion/src/Root.tsx','utf8').replaceAll('\r\n','\n');
   expect((s.match(/id=\{language === "fil" \? "BhwRelationshipsStoryFil"/g)??[])).toHaveLength(1);

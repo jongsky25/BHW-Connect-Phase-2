@@ -33,7 +33,7 @@ for(const language of ['fil','en']){
   records.push({id:`story-${language}`,language,file:wav,source_video:asset.videos[language].path,source_video_sha256:sha(video),expected:timing.beats.map(b=>b.text).join(' ')});
  }
 }
-const report={date:new Date().toISOString(),method:'Gemini model-mediated review of actual MP3 bytes; not human listening, owner approval or policy SME review',model,source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),pending_read_tracks:plan.filter(i=>i.lessonKey==='bhw-relationships'&&i.action!=='skip').map(i=>`${i.lessonKey}/${i.sectionId}/${i.language}`),records:[]};
+const report={date:new Date().toISOString(),method:'Gemini model-mediated review of actual Read MP3 bytes and WAV decoded from shipped MP4 AAC; not human listening, owner approval or policy SME review',model,source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),pending_read_tracks:plan.filter(i=>i.lessonKey==='bhw-relationships'&&i.action!=='skip').map(i=>`${i.lessonKey}/${i.sectionId}/${i.language}`),records:[]};
 function save(){writeFileSync(path.join(root,'docs/lesson-151-audio-review.json'),JSON.stringify(report,null,2)+'\n');}
 function outputText(value){if(typeof value==='string')return value;if(Array.isArray(value))return value.map(outputText).filter(Boolean).join('\n');if(!value||typeof value!=='object')return '';if(typeof value.output_text==='string')return value.output_text;if(value.type==='text'&&typeof value.text==='string')return value.text;return outputText(value.outputs??value.output??value.content??value.steps?.filter(s=>s.type==='model_output')??[]);}
 const priorPath=path.join(root,"docs/lesson-151-audio-review.json");
