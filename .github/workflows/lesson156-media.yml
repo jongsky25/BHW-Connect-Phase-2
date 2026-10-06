@@ -62,6 +62,10 @@ jobs:
           LESSON156_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-156-record-fetch.mjs'
         run: node scripts/lesson-156-audio-focus.mjs
+      - name: Build actual-component self-contained review
+        run: node scripts/lesson-156-review-build.mjs
+      - name: Desktop/mobile offline playback and completion
+        run: node scripts/lesson-156-browser-verify.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -78,6 +82,9 @@ jobs:
             docs/lesson-156-audio-focus.json
             .preview/lesson156-raw/
             .preview/lesson156-excerpts/
+            .preview/lesson156-decoded/
+            .preview/lesson156-deliverables/
+            remotion/src/Root.tsx
           include-hidden-files: true
           if-no-files-found: error
           retention-days: 30

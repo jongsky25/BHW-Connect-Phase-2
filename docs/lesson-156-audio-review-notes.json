@@ -1,0 +1,22 @@
+{
+  "method": "Model-mediated review, not human listening; conflicting observations retained",
+  "retry_limit": 1,
+  "retry_tracks": [
+    "section-11/en",
+    "section-12/en",
+    "contact-professional/en",
+    "contact-professional/fil"
+  ],
+  "reason": "Corroborated narrator/timbre changes across full/focused or multiple focused excerpts; target-only additional vocal continuity directions. Teaching text unchanged.",
+  "disagreements": [
+    "contact-classify/fil ending: focused male-register flag versus full review natural expression",
+    "story/fil head: focused register drop versus full review explicitly no unintended timbre shift",
+    "contact-verify/en ending: focused shifts versus full review no stated defect",
+    "section-11/fil critical: possible splice versus full review no stated defect"
+  ],
+  "other_notes": [
+    "contact-professional/fil: contact is an authored role noun; model suggestion to make it a verb does not establish a factual teaching defect",
+    "contact-verify/fil: single-review grammatical linker concern, not corroborated by focused review"
+  ],
+  "owner_listening": "pending; review does not establish human listening or approval"
+}

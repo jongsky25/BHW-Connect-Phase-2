@@ -568,7 +568,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {revealSummary && !storyLayout && figures}
+            {(revealSummary || lesson.lesson_key === "bhw-right-contact") && !storyLayout && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {

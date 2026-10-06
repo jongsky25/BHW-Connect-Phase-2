@@ -163,6 +163,46 @@
       "caption_en": "Fictional contact-selection scene. Draft for review.",
       "provenance": "Built-in imagegen, 2026-10-06, preserving approved Malou courtyard identity. No patient or actual official. New scene pending owner approval.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-right-contact-story",
+      "alt_fil": "Anim na narrated beat: pinipili ni Malou ang contact ayon sa pangangailangan, saklaw, pagkaapurahan at lokal na proseso.",
+      "alt_en": "Six narrated beats: Malou chooses a contact by need, scope, urgency and local procedure.",
+      "caption_fil": "Anim na kathang-isip na beat na may salaysay at captions. Draft; hinihintay ang hiwalay na owner review.",
+      "caption_en": "Six fictional narrated beats with captions. Draft awaiting separate owner review.",
+      "provenance": "Original lesson1.5.6 Remotion animation with new built-in imagegen coordination desk scene preserving approved151Malou identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Six reframed coordination desk views with animated contact-choice labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-23e14afd0664.mp4",
+          "content_hash": "23e14afd06641e8b1928b9cc0ecdd56867e4726ebfbc49c27991f4209255a6d0",
+          "duration_s": 60,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-37423f6b0acb.vtt",
+            "content_hash": "37423f6b0acbd16a44c76aa1a672b39804d28d9d36a29cb30bf50e4df7b8edab"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-4206b4e8c385-poster.jpg",
+            "content_hash": "4206b4e8c385d3127505c32534d8124f4d6d407b6c38a2fd8092bdf9f9e315ee"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-e4138a369ec4.mp4",
+          "content_hash": "e4138a369ec4387aa99c687c88e623f12026f90f259eafe462e866dcf53f6c64",
+          "duration_s": 54,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-dd545f508cc3.vtt",
+            "content_hash": "dd545f508cc3f09b28097279eb4a7db5a663f6d9e4bb04b4df16f248cbb50217"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-146f95145292-poster.jpg",
+            "content_hash": "146f95145292cd6a027cd6590984b1af904a5d2049157e549338ce300bc4d4d2"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-4206b4e8c385-poster.jpg",
+      "content_hash": "4206b4e8c385d3127505c32534d8124f4d6d407b6c38a2fd8092bdf9f9e315ee"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-right-contact-story"
 }

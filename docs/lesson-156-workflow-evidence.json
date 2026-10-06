@@ -1,0 +1,26 @@
+{
+  "media_runs": [
+    {
+      "run_id": 37456105907,
+      "source_commit": "94a599e8f625ea3754521fa2b098b5c159c0a066",
+      "conclusion": "failure",
+      "artifact_id": 11409633486,
+      "api_zip_sha256": "21fbf73cf1bf594056ecfca58448cbe9f16c314c6828700161a82aa7437ae957",
+      "note": "Oversized file transfer truncated new art and new baseline; corrected complete blob hashes in next commit. No successful media generation claimed."
+    },
+    {
+      "run_id": 37456799355,
+      "source_commit": "f69bee7952855ebcd40eadf7cfcda9c7ea1322a9",
+      "conclusion": "success",
+      "artifact_id": 11411067438,
+      "api_zip_sha256": "6a3749220f6b5163356917eb2435449b82b79daaea8b52b81651431156267f02",
+      "zip_bytes": 119702035,
+      "crc": "passed",
+      "unique_safe_members": 276,
+      "full_model_reviews": 14,
+      "focused_model_excerpts": 56,
+      "human_listening": false
+    }
+  ],
+  "retry": "One bounded correction for four corroborated voice continuity cases; initial selected tracks/reviews preserved."
+}

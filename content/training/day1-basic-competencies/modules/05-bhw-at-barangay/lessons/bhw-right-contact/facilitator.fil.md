@@ -4,7 +4,7 @@ Gamitin ang hindi binagong iisang layunin. Ipatukoy ang pangangailangan at pagka
 
 ## [time-materials] Oras at kagamitan
 
-Hiwalay na harapang plano: 30 minuto — pambungad 3, anim na screen 8, pares na pagsasanay 10, feedback sa lahat ng pagpipilian 4, obserbasyon at buod 5. SELF_STUDY_TIMING_PENDING
+Hiwalay na harapang plano: 30 minuto — pambungad 3, anim na screen 8, pares na pagsasanay 10, feedback sa lahat ng pagpipilian 4, obserbasyon at buod 5. Ginawang pagtataya ng sariling pag-aaral: 8–11 minuto. Aktuwal na salaysay ng anim na screen: 243.17 segundo sa English at 272.80 segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 Ito ang huling 30-minutong pagsasanay/buod sa anim na segment na may kabuuang 180 minuto; hindi dagdag na oras ng bawat standalone lesson. Panatilihin ang released 1.5.2 na 20-minutong standalone at napiling 10-minutong integrated core sa hiwalay nitong contacts segment. Ibinubunyag ang hindi tugmang oras ng protected city-partner draft, hindi tahimik na binabago. Gumamit ng blangkong card, slides at nakalimbag o pasalitang alternatibo. Opsyonal ang kuwento.
 

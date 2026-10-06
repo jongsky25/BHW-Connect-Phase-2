@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Filipino (Tagalog), as one mature adult Filipina community health trainer with a warm steady female mid-pitched voice. Use gentle pitch and pace changes for Malou’s contact choices. Slow slightly for official procedure confirmation and do not delay immediate help. All headings, questions, instructions and endings use the same woman narrator. Read the exact words completely, without translation, additions or speaker changes.",
+  "durationSeconds": 58.958,
+  "beats": [
+    {
+      "zone": "classify",
+      "index": 0,
+      "text": "May ulat at alalahaning pangkalusugan si Malou. Nililinaw niya ang kailangan at pagkaapurahan bago pumili ng contact.",
+      "start_ms": 0,
+      "end_ms": 8240
+    },
+    {
+      "zone": "peer",
+      "index": 1,
+      "text": "Sa karaniwang pag-file, tumutulong ang may-kakayahang kapwa BHW. Tinitiyak ni Malou sa supervisor ang opisyal na proseso.",
+      "start_ms": 8540,
+      "end_ms": 18100
+    },
+    {
+      "zone": "professional",
+      "index": 2,
+      "text": "Para sa klinikal o hindi tiyak na alalahanin, humihingi siya ng angkop na awtorisadong propesyonal na gabay ayon sa lokal na proseso.",
+      "start_ms": 18400,
+      "end_ms": 27920
+    },
+    {
+      "zone": "urgent",
+      "index": 3,
+      "text": "Hindi klinikal na awtoridad ang pagiging kakilala. Hindi ipinagpapaliban ni Malou ang agarang tulong habang inaayos ang suporta.",
+      "start_ms": 28220,
+      "end_ms": 36620
+    },
+    {
+      "zone": "verify",
+      "index": 4,
+      "text": "Tinitiyak niya ang naka-duty, alternatibo at susunod na hakbang. Kailangang impormasyon lamang ang ibinabahagi, ayon sa pahintulot at patakaran.",
+      "start_ms": 36920,
+      "end_ms": 48160
+    },
+    {
+      "zone": "closing",
+      "index": 5,
+      "text": "Pinipili ni Malou ang tamang papel, kinukumpirma ang proseso at sinusundan ang resulta. Walang pangako ng hindi kumpirmadong suporta.",
+      "start_ms": 48460,
+      "end_ms": 58900
+    }
+  ],
+  "audio_sha256": "cbd8c824d4aa5fe1dc26eb2db38987c30a699d2e641cbe158efc6113b18247f5"
+}
