@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-06T06:43:07.317522+00:00",
+  "method": "Actual encoded-file full Gemini3.8flash assessments, PCM decode metrics and30focused WAV model requests; not human listening or independent policy SME review. All original raw responses and contradictory observations retained.",
+  "first_generation": {
+    "run_id": 37422173978,
+    "source_commit": "d637850efec87407f18f8e2bdb7e6a592613412f",
+    "raw_requests": 150,
+    "full_records": 14,
+    "focused_excerpts": 28,
+    "whole_reviews": "docs/lesson-152-initial-audio-review.json",
+    "focused_reviews": "docs/lesson-152-initial-audio-focus.json",
+    "scope_gap": "Inherited full-review prompt mentioned four relationships; actual152content has bounded barangay partner roles. Revised prompt is barangay-partners-v1."
+  },
+  "bounded_application_retry": {
+    "run_id": 37424154006,
+    "source_commit": "a95cba882db1aa9b74212add46c63b7bc02e0bf1",
+    "read_tracks_regenerated": 2,
+    "unchanged_read_tracks": 10,
+    "story_audio_and_video_bytes_unchanged_at_this_retry": true,
+    "reason": "Application full/focused assessments aligned on a voice transition and the word check was transcribed as chat. Replaced spoken check with tanong sa pagsasanay / practice question; added application-only Filipino single-female-presenter style.",
+    "result": "Current whole-file application assessments report clear delivery, no clipping or pronunciation concerns. Filipino decisive/opening excerpts report one consistent female narrator; its ending excerpt calls the same narrator male while reporting no unexpected change. English decisive excerpt describes another profile while whole/ending reports stable delivery. These contradictions remain listening questions, not grounds for endless generation."
+  },
+  "remaining_review_limits": [
+    "Other tracks have model-reported sentence-level voice/timbre changes and sometimes conflicting whole/focused perceptions; original responses remain included.",
+    "Reported negations, counts and role distinctions are intelligible; no missing-negation or clipped-ending finding is corroborated. Model statements are not human listening proof.",
+    "No owner or independent policy SME approval is claimed. Newscene/media remain draft."
+  ],
+  "visual_revision": "Story labels enlarged for phone readability; narration and measured cue timings retained. New encoded video hashes and final frames will be verified before package freeze."
+}

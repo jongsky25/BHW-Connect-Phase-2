@@ -30,7 +30,7 @@ export const calculateBhwBarangayPartnersMetadata: CalculateMetadataFunction<Bhw
 const cream = "#fffaf2", gold = "#ffe5a3", ink = "#203f3b";
 function Card({text, index, frame, highlight = false}: {text: string; index: number; frame: number; highlight?: boolean}) {
   const enter = spring({frame: frame - index * 14, fps: BARANGAY_PARTNERS_FPS, config: {damping: 180, stiffness: 90}});
-  return <div style={{background: highlight ? gold : cream, color: ink, borderRadius: 16, padding: "18px 20px", fontWeight: 800, fontSize: 23, lineHeight: 1.2, opacity: enter, transform: `translateY(${(1 - enter) * 22}px)`, boxShadow: "0 8px 20px #062a2833"}}>{text}</div>;
+  return <div style={{background: highlight ? gold : cream, color: ink, borderRadius: 16, padding: "18px 20px", fontWeight: 800, fontSize: 30, lineHeight: 1.2, opacity: enter, transform: `translateY(${(1 - enter) * 22}px)`, boxShadow: "0 8px 20px #062a2833"}}>{text}</div>;
 }
 function Graphic({index, language, frame}: {index: number; language: "fil" | "en"; frame: number}) {
   const fil = language === "fil";
@@ -55,9 +55,9 @@ function Scene({index, language}: {index: number; language: "fil" | "en"}) {
     <div style={{position: "absolute", top: 96, left: 42, width: framed ? 345 : 770, opacity: enter, transform: `translateY(${(1 - enter) * 15}px)`}}>
       <div style={{fontSize: 16, fontWeight: 800, color: gold, marginBottom: 10}}>{index === 0 ? "Malou" : language === "fil" ? "Katuwang sa barangay" : "Barangay partners"}</div>
       <div style={{fontSize: framed ? 33 : 39, fontWeight: 900, lineHeight: 1.08}}>{beat[`title_${language}`]}</div>
-      <div style={{fontSize: 21, marginTop: 15, lineHeight: 1.28}}>{beat[`detail_${language}`]}</div>
+      <div style={{fontSize: 30, marginTop: 15, lineHeight: 1.28}}>{beat[`detail_${language}`]}</div>
     </div>
-    {index === 5 && <div style={{position: "absolute", bottom: 58, left: 42, display: "flex", gap: 12, fontWeight: 800, fontSize: 18}}><span>{language === "fil" ? "Igalang ang nais ng residente" : "Respect resident preferences"}</span><span>•</span><span>{language === "fil" ? "Tiyakin ang lokal na papel" : "Confirm local roles"}</span></div>}
+    {index === 5 && <div style={{position: "absolute", bottom: 58, left: 42, display: "flex", gap: 12, fontWeight: 800, fontSize: 28}}><span>{language === "fil" ? "Igalang ang pagpili" : "Respect choices"}</span><span>•</span><span>{language === "fil" ? "Tiyakin ang papel" : "Confirm roles"}</span></div>}
     <div style={{position: "absolute", left: 42, right: 42, bottom: 25, height: 4, background: "#ffffff33", borderRadius: 4}}><div style={{height: "100%", background: gold, width: `${Math.min(100, frame / Math.max(1, durationInFrames - 1) * 100)}%`}}/></div>
   </AbsoluteFill>;
 }

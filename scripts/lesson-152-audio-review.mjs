@@ -40,7 +40,7 @@ const priorPath=path.join(root,"docs/lesson-152-audio-review.json");
 const prior=existsSync(priorPath)?JSON.parse(readFileSync(priorPath,"utf8")):null;
 for(const record of records){
  const reusable=prior?.prompt_revision===promptRevision&&prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response&&!r.model_response.startsWith("Review unavailable"));
- if(reusable){report.records.push(reusable);save();console.log("Reused exact-byte review "+record.id);continue;}
+ if(reusable){report.records.push({...reusable,source_video:record.source_video??null,source_video_sha256:record.source_video_sha256??null,reused_exact_decoded_audio:true});save();console.log("Reused exact-byte review "+record.id);continue;}
  const prompt=`Analyze the attached actual ${record.language==='fil'?'Filipino (Tagalog)':'Philippine English'} educational narration. First transcribe what you hear completely, without inventing words. Report whether speech is audible throughout, any truncated words or clipped ending, awkward initialism/name pronunciation (Malou, BHW and RHU), pacing, natural pitch/pace variation and whether the participant preferences, barangay partner roles, clear support requests, local verification and professional-versus-administrative distinctions have natural expression; note any changed negation, condition or ambiguous number, and any apparent narrator timbre change. Flag concrete timestamps for concerns and uncertainty. Return a JSON object with transcript, speech_present, clipped_ending, delivery, pronunciation_concerns, other_concerns. Do not claim human listening or approval. This audio is fictional training material with no real patient data.`;
  let reviewed;
  for(let attempt=0;attempt<3;attempt++){

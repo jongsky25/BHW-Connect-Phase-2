@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-10-06T06:15:59.679Z",
-  "source_commit": "d637850efec87407f18f8e2bdb7e6a592613412f",
+  "generated_date": "2026-10-06T06:34:08.662Z",
+  "source_commit": "a95cba882db1aa9b74212add46c63b7bc02e0bf1",
   "owner_review": "pending",
   "render_input_sha256": "515df4536cc02a33a74242d526ccfbb9685a270a1140a4c7b705d1d5dd52facb",
-  "render_cached": false,
+  "render_cached": true,
   "target_read_tracks": 12,
   "pending_read_tracks": [],
   "read_generation_error": null,
@@ -75,7 +75,8 @@
       "poster": {
         "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-03a3b09a8f43-poster.jpg",
         "content_hash": "03a3b09a8f432c11237632e855fd2eac7cc85e04ddc9798bdfa788e5b9631194"
-      }
+      },
+      "render_reused_exact_input_hash": true
     },
     {
       "language": "en",
@@ -143,7 +144,8 @@
       "poster": {
         "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-en-c77676fbc0c0-poster.jpg",
         "content_hash": "c77676fbc0c0e6d49ea2267aad245bf04e7acdd6704a1309945881158bca4bd4"
-      }
+      },
+      "render_reused_exact_input_hash": true
     }
   ]
 }
