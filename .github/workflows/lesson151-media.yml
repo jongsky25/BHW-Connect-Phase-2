@@ -1,0 +1,42 @@
+name: Lesson 1.5.1 draft evidence and media
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson151-media.yml'
+      - 'scripts/lesson-151-*.mjs'
+      - 'scripts/remotion-bhw-relationships-narrate.mjs'
+      - 'content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/**'
+      - 'remotion/src/bhw-relationships/**'
+permissions:
+  contents: read
+concurrency:
+  group: lesson151-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-151-malou-proposal'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Bounded read-only published-state snapshot
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-151-published-snapshot.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson151-draft-evidence
+          path: lesson-151-published-snapshot.json
+          if-no-files-found: error
+          retention-days: 30
