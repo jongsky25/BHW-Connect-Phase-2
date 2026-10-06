@@ -86,8 +86,12 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
   const layout = paragraphSentences(body);
 
   useEffect(
-    () => () => {
-      if (frame.current !== null) cancelAnimationFrame(frame.current);
+    () => {
+      const audio = audioRef.current;
+      return () => {
+        audio?.pause();
+        if (frame.current !== null) cancelAnimationFrame(frame.current);
+      };
     },
     [],
   );

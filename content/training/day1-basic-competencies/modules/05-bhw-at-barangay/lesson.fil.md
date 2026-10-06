@@ -1,4 +1,4 @@
-## [scenario/core] Ang tanong sa bahay ni Aling Nena
+## [scenario/core] Nakikinig si Malou sa bakuran
 
 Sa kathang-isip na sitwasyong ito, nakatagpo ni BHW Malou si Aling Nena sa malilim na bakuran ng barangay. Nagtanong si Nena tungkol sa nakaplanong gawaing pangkalusugan: “Saan po ito gaganapin? Gusto ko ring itanong sa health professional kung angkop ito para sa akin.”
 
@@ -8,7 +8,7 @@ Nakinig si Malou at nagtanong kung alin ang gustong unahing linawin ni Nena. Mag
 Makinig sa residente at ihiwalay ang mga tanong bago pumili ng suporta.
 :::
 
-## [concept/core] Apat na ugnayan ng isang BHW {m5.four-relationships}
+## [concept/core] Apat na ugnayan, magkakaibang layunin {m5.four-relationships}
 
 Ginagamit sa araling ito ang apat na ugnayan bilang ginawang balangkas sa pagtuturo, hindi opisyal na apat na antas ng pamamahala.
 
@@ -25,7 +25,7 @@ Kapwa BHW: magbahagi ng karanasan sa karaniwang gawain, mag-ugnay ng napagkasund
 May layunin at hangganan ang bawat ugnayan; tiyakin ang lokal na papel.
 :::
 
-## [practice/core] Sino ang lalapitan?
+## [practice/core] Piliin ang contact ayon sa alalahanin
 
 Para sa personal na tanong pangkalusugan ni Nena, tumutulong si Malou na linawin ang lokal na itinalagang midwife o awtorisadong health professional at ang paraan ng pakikipag-ugnayan. Ipinaliwanag niya: “Kailangan dito ng propesyonal na gabay; hindi ako dapat sumagot sa pamamagitan ng hula.” Dapat tiyakin ang mismong lokal na kaayusan.
 
@@ -35,7 +35,7 @@ Para sa lugar, sinusuri ni Malou ang natiyak na impormasyon ng aktibidad at nagt
 Pumili ayon sa alalahanin at natiyak na papel, hindi sa posisyon lamang.
 :::
 
-## [concept/core] Bakit mahalaga ang bawat ugnayan
+## [concept/core] Mag-ugnay ng suporta nang may malinaw na papel
 
 Pinaghihiwalay ni Malou ang mga tanong habang pinag-uugnay ang suporta. Sa pagsang-ayon ni Nena, tumutulong siyang tukuyin ang angkop na paraan para sa propesyonal na tanong. Hiwalay dito, maaaring linawin ng responsableng barangay contact ang lugar o hiling na praktikal na suporta. Maaaring tulungan ng kapwa BHW si Malou na ayusin ang napagkasunduang karaniwang gawain at alamin ang malabo pa.
 

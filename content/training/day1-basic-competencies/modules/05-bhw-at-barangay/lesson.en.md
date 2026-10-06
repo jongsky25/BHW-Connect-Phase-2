@@ -1,4 +1,4 @@
-## [scenario/core] The question at Aling Nena's house
+## [scenario/core] Malou listens in the courtyard
 
 In this fictional learning situation, BHW Malou meets Aling Nena in a shaded barangay courtyard. Nena asks about a planned community health activity: “Where will it be held? I also want to ask a health professional whether it is suitable for me.”
 
@@ -8,7 +8,7 @@ Malou listens and asks which question Nena wants help with first. The venue ques
 Listen to the resident and separate the questions before choosing support.
 :::
 
-## [concept/core] Four relationships of a BHW {m5.four-relationships}
+## [concept/core] Four relationships, different purposes {m5.four-relationships}
 
 This lesson uses four relationships as an authored teaching organizer, not an official four-category chain of command.
 
@@ -25,7 +25,7 @@ Fellow BHWs: share routine work experience, coordinate agreed tasks and help ide
 Each relationship has a purpose and a limit; verify the local roles.
 :::
 
-## [practice/core] Who is the right person to approach?
+## [practice/core] Choose a contact for the concern
 
 For Nena's personal health question, Malou helps clarify the locally designated midwife or authorized health professional and how to contact them. She explains: “This question needs professional guidance; I should not answer it through a guess.” The exact local arrangement must be confirmed.
 
@@ -35,7 +35,7 @@ For the venue, Malou checks the activity's verified information and asks the res
 Choose by the concern and confirmed role, rather than rank alone.
 :::
 
-## [concept/core] Why each relationship matters
+## [concept/core] Coordinate support without replacing roles
 
 Malou keeps the questions separate while coordinating support. With Nena's agreement, she helps identify a suitable channel for the professional question. Separately, the responsible barangay contact may clarify the venue or a request for practical support. A fellow BHW can help Malou organize an agreed routine task and check what remains unclear.
 

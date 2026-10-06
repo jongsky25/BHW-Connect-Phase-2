@@ -63,8 +63,15 @@ writeFileSync(rootPath,registry);
 const lesson=json(lessonPath);
 const story={id:'bhw-relationships-story',alt_fil:'Kuwentong may salaysay: nakikinig si Malou kay Nena sa bakuran, ipinapaliwanag ang apat na ugnayan at pinaghihiwalay ang propesyonal at praktikal na suporta.',alt_en:'Narrated story: Malou listens to Nena in the courtyard, explains four relationships and separates professional and practical support.',caption_fil:'Anim na kathang-isip na story beat na may Gemini narration at captions. Draft; hinihintay ang owner review.',caption_en:'Six fictional story beats with Gemini narration and captions. Draft awaiting owner review.',provenance:'Original Remotion animation for lesson1.5.1 using genuinely new built-in imagegen Malou courtyard artwork generated6 October2026 without reference inputs. This fictional identity remains draft, not owner-approved. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries and captions derive from actual synthesis timings. One original illustration is reframed between conversation, coordination and wide views, with animated role cards. No actual local procedure, owner approval or independent policy SME approval is claimed.',review_status:'draft',videos:{}};
 const reports=[];
+const previous=existsSync(path.join(root,'docs/lesson-151-media-generation.json'))?json('docs/lesson-151-media-generation.json'):null;
+const inputFiles=['remotion/src/bhw-relationships/BhwRelationshipsStory.tsx','remotion/src/bhw-relationships/narration.ts','scripts/remotion-render.mjs','remotion/public/bhw-relationships/scene.png',...['fil','en'].flatMap(lang=>['mp3','json'].map(ext=>`remotion/public/bhw-relationships/narration-${lang}.${ext}`))];
+const renderInputHash=createHash('sha256').update(JSON.stringify(inputFiles.map(p=>[p,sha(path.join(root,p))]))).digest('hex');
+const oldStory=lesson.assets.find(a=>a.id===story.id);
+const cached=previous?.render_input_sha256===renderInputHash&&oldStory&&['fil','en'].every(lang=>[oldStory.videos[lang],oldStory.videos[lang].poster,oldStory.videos[lang].captions].every(m=>existsSync(path.join(root,'public',m.path.slice(1)))&&sha(path.join(root,'public',m.path.slice(1)))===m.content_hash));
+
 const publicDir=path.join(root,'public/training/bhw-1-5');
 for(const lang of ['fil','en']){
+  if(cached){story.videos[lang]=oldStory.videos[lang];if(lang==='fil'){story.path=oldStory.path;story.content_hash=oldStory.content_hash;}reports.push({...previous.reports.find(r=>r.language===lang),render_reused_exact_input_hash:true});continue;}
   const name=`bhw-relationships-gemini-${lang}`;
   run('scripts/remotion-render.mjs',[lang==='fil'?'BhwRelationshipsStoryFil':'BhwRelationshipsStoryEn',name,'--public','training/bhw-1-5','--with-audio','--captions',`bhw-relationships/narration-${lang}.json`]);
   const media=ext=>{const p=path.join(root,'remotion/out',name+ext);const filename=name+'-'+sha(p).slice(0,12)+ext;if(!readdirSync(publicDir).includes(filename))throw new Error('Rendered public media missing');return{path:'/training/bhw-1-5/'+filename,content_hash:sha(p)};};
@@ -86,6 +93,6 @@ if(!pending.length){
     writeFileSync(guide,readFileSync(guide,'utf8').replace('SELF_STUDY_TIMING_PENDING',estimate));
   }
 }
-save('docs/lesson-151-media-generation.json',{generated_date:new Date().toISOString(),source_commit:process.env.GITHUB_SHA??null,owner_review:'pending',target_read_tracks:12,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});
+save('docs/lesson-151-media-generation.json',{generated_date:new Date().toISOString(),source_commit:process.env.GITHUB_SHA??null,owner_review:'pending',render_input_sha256:renderInputHash,render_cached:cached,target_read_tracks:12,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});
 console.log('Completed draft lesson media; only target recordings changed, with historical media retained.');
 if(pending.length)process.exitCode=1;

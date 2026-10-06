@@ -41,21 +41,21 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON151_RAW_EVIDENCE: '1'
-          NODE_OPTIONS: '--import=./scripts/lesson-151-record-fetch.mjs'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-151-record-fetch.mjs'
         run: node scripts/lesson-151-media-build.mjs
       - name: Full audio model review
         if: always()
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON151_RAW_EVIDENCE: '1'
-          NODE_OPTIONS: '--import=./scripts/lesson-151-record-fetch.mjs'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-151-record-fetch.mjs'
         run: node scripts/lesson-151-audio-review.mjs
       - name: Decode and focused-review shipped media
         if: always()
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON151_RAW_EVIDENCE: '1'
-          NODE_OPTIONS: '--import=./scripts/lesson-151-record-fetch.mjs'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-151-record-fetch.mjs'
         run: node scripts/lesson-151-audio-focus.mjs
       - uses: actions/upload-artifact@v4
         if: always()

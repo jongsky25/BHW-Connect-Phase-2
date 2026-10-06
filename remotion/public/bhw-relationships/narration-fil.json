@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural conversational Filipino (Tagalog) as one warm, attentive community health trainer. Pronounce Malou as mah-LOO consistently. Give questions curious rising intonation; emphasize distinct roles and limits, resident preferences and locally confirmed information. Keep negation clear and finish the ending completely. Maintain one consistent adult female Kore timbre throughout headings, body and takeaway; no character voices. Vary pitch and pace gently with natural clause pauses. Read exact words without fillers, added advice, translation or omission.",
+  "durationSeconds": 72.96,
+  "beats": [
+    {
+      "zone": "courtyard",
+      "index": 0,
+      "text": "Sa kathang-isip na bakuran, may dalawang tanong si Nena. Nakikinig si Malou at nagtatanong kung ano ang nais niyang unahin.",
+      "start_ms": 0,
+      "end_ms": 8800
+    },
+    {
+      "zone": "resident",
+      "index": 1,
+      "text": "Inuulit ni Malou ang narinig at hinahayaang itama ni Nena ang kaniyang pagkaunawa. Mahalaga ang impormasyon at pagpili ng residente.",
+      "start_ms": 9100,
+      "end_ms": 18380
+    },
+    {
+      "zone": "map",
+      "index": 2,
+      "text": "Apat na ugnayan ang balangkas natin: komunidad, itinalagang health professional, barangay officials at kapwa BHW. May magkakaibang layunin at hangganan ang bawat isa.",
+      "start_ms": 18680,
+      "end_ms": 32320
+    },
+    {
+      "zone": "professional",
+      "index": 3,
+      "text": "Ang personal na tanong pangkalusugan ay nangangailangan ng awtorisadong propesyonal na gabay. Tiyakin ang lokal na contact; hindi kapalit ng pagtatasa ang posisyon o hula.",
+      "start_ms": 32620,
+      "end_ms": 44380
+    },
+    {
+      "zone": "support",
+      "index": 4,
+      "text": "Hiwalay na linawin ang lugar sa responsableng coordinator. Maaaring tumulong ang kapwa BHW sa karaniwang gawain. Walang garantiya ng kagamitan, transportasyon o resulta.",
+      "start_ms": 44680,
+      "end_ms": 58120
+    },
+    {
+      "zone": "closing",
+      "index": 5,
+      "text": "Ipaliwanag ang apat na papel. Pumili ayon sa alalahanin, magbigay ng dahilan at itanong kung sino ang responsable. Igalang ang nais ng residente at magsanay muli.",
+      "start_ms": 58420,
+      "end_ms": 72900
+    }
+  ],
+  "audio_sha256": "a21a4c72c11911bfafce9681a23ab2d4f31c4a3917a9033b463a2f95ba801faf"
+}

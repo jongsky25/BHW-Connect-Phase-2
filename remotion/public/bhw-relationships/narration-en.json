@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as one warm, attentive community health trainer. Pronounce Malou as mah-LOO consistently. Give questions curious rising intonation; emphasize distinct roles and limits, resident preferences and locally confirmed information. Keep negation clear and finish the ending completely. Maintain one consistent adult female Kore timbre throughout headings, body and takeaway; no character voices. Vary pitch and pace gently with natural clause pauses. Read exact words without fillers, added advice, translation or omission.",
+  "durationSeconds": 65.176,
+  "beats": [
+    {
+      "zone": "courtyard",
+      "index": 0,
+      "text": "In the fictional courtyard, Nena has two questions. Malou listens and asks what she wants to clarify first.",
+      "start_ms": 0,
+      "end_ms": 8600
+    },
+    {
+      "zone": "resident",
+      "index": 1,
+      "text": "Malou repeats what she heard and invites Nena to correct her understanding. The resident’s information and choices matter.",
+      "start_ms": 8900,
+      "end_ms": 16900
+    },
+    {
+      "zone": "map",
+      "index": 2,
+      "text": "Our organizer has four relationships: community, the designated health professional, barangay officials and fellow BHWs. Each has a different purpose and limit.",
+      "start_ms": 17200,
+      "end_ms": 30240
+    },
+    {
+      "zone": "professional",
+      "index": 3,
+      "text": "The personal health question needs authorized professional guidance. Confirm the local contact; rank or a guess does not replace assessment.",
+      "start_ms": 30540,
+      "end_ms": 40340
+    },
+    {
+      "zone": "support",
+      "index": 4,
+      "text": "Separately clarify the venue with the responsible coordinator. A fellow BHW may help with routine tasks. Resources, transport and outcomes are not guaranteed.",
+      "start_ms": 40640,
+      "end_ms": 53400
+    },
+    {
+      "zone": "closing",
+      "index": 5,
+      "text": "Explain the four roles. Choose by the concern, give a reason and ask who is responsible. Respect the resident’s preferences and practise again.",
+      "start_ms": 53700,
+      "end_ms": 65100
+    }
+  ],
+  "audio_sha256": "d3a279500f3f10ba91a86fa6697417a43a55bc513bf017d9eb99c47519f8a435"
+}
