@@ -1,0 +1,26 @@
+name: Lesson1.5.1 bounded read-only release snapshot
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/lesson-151-malou-proposal'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Snapshot twelve published lessons without writes
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-151-published-snapshot.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson151-draft-evidence-snapshot
+          path: lesson-151-published-snapshot.json
+          if-no-files-found: error
+          retention-days: 30

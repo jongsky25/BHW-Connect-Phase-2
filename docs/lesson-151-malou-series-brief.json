@@ -9,17 +9,15 @@
     1536,
     1024
   ],
-  "review_status": "draft",
-  "owner_approval": "pending",
+  "review_status": "approved",
+  "owner_approval": "docs/lesson-151-owner-approval.json",
   "visual_review": "Inspected generated full-size illustration. Malou has oval face, smile lines, low bun with subtle gray hair, thin rectangular glasses, ochre blouse and dark shoulder bag. Courtyard features green bench, gate, plants and blue covered veranda. Resident gestures in conversation, colleague holds blank notebook; two background residents. No legible signage, official insignia or private records.",
   "series_rule": "Malou is protagonist for six module 1.5 lessons. This task targets 1.5.1 only. Retain this recognizable identity if owner-approved; vary settings and teaching interactions in future lessons.",
   "limitations": [
-    "Reference remains draft, not owner-approved",
-    "Foreground resident and edge background residents are intentionally partly cropped; main Malou face and hands are visible",
-    "No lesson integration or narrated story completed yet"
+    "Foreground resident and edge background residents are intentionally partly cropped; main Malou face and hands are visible"
   ],
   "output_sha256": "f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545",
   "reference_image": "/training/bhw-1-5/malou-courtyard-f6b2d754af39.png",
   "reference_sha256": "f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545",
-  "reference_status": "draft; reuse as approved identity only after explicit owner approval"
+  "reference_status": "Owner-approved identity and exact reference SHA; retain recognizable Malou identity for later module1.5 lessons."
 }

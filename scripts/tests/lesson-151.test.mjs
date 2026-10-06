@@ -73,10 +73,10 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
   expect(planReferenceNarration(modules,mf,()=> 'bad').every(i=>i.action==='render')).toBe(true);
  });
  it('uses genuinely new draft Malou art with exact identity provenance and scene bytes',()=>{
-  const art=source.assets.find(a=>a.id==='malou-courtyard'),p=j('docs/lesson-151-malou-series-brief.json');expect(hash(art.path)).toBe(art.content_hash);expect(sha(fs.readFileSync(root+'/remotion/public/bhw-relationships/scene.png'))).toBe(art.content_hash);expect(p.output_sha256).toBe(art.content_hash);expect(p.model_id).toBeNull();expect(p.supplied_inputs).toEqual([]);expect(p.dimensions).toEqual([1536,1024]);expect(art.review_status).toBe('draft');expect(p.prompt).toContain('courtyard');
+  const art=source.assets.find(a=>a.id==='malou-courtyard'),p=j('docs/lesson-151-malou-series-brief.json');expect(hash(art.path)).toBe(art.content_hash);expect(sha(fs.readFileSync(root+'/remotion/public/bhw-relationships/scene.png'))).toBe(art.content_hash);expect(p.output_sha256).toBe(art.content_hash);expect(p.model_id).toBeNull();expect(p.supplied_inputs).toEqual([]);expect(p.dimensions).toEqual([1536,1024]);expect(art.review_status).toBe('approved');expect(p.prompt).toContain('courtyard');
  });
  it('ships two captioned6-beat stories with measured complete endings and real hashed files',()=>{
-  const a=source.assets.find(a=>a.id===source.featured_asset_id);expect(a.review_status).toBe('draft');
+  const a=source.assets.find(a=>a.id===source.featured_asset_id);expect(a.review_status).toBe('approved');
   for(const lang of ['fil','en']){
    const v=a.videos[lang],t=j(`remotion/public/bhw-relationships/narration-${lang}.json`);for(const m of [v,v.poster,v.captions])expect(hash(m.path)).toBe(m.content_hash);
    expect(t.beats.map(b=>b.zone)).toEqual(BHW_RELATIONSHIPS_BEATS.map(b=>b.id));expect(t.beats.map(b=>b.text)).toEqual(BHW_RELATIONSHIPS_BEATS.map(b=>b[lang]));expect(bytes(v.captions.path).toString().replaceAll('\r','')).toBe(toWebVtt(t));expect(v.duration_s).toBeGreaterThan(t.durationSeconds);expect(v.duration_s).toBeLessThanOrEqual(90);expect(sha(fs.readFileSync(root+`/remotion/public/bhw-relationships/narration-${lang}.mp3`))).toBe(t.audio_sha256);
@@ -107,3 +107,5 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
   const oldSources=JSON.parse(shared['content/training/day1-basic-competencies/sources.json']).sources,currentSources=j('content/training/day1-basic-competencies/sources.json').sources;for(const [k,v]of Object.entries(oldSources))expect(currentSources[k]).toEqual(v);expect(Object.keys(currentSources).filter(k=>!oldSources[k])).toEqual(['bhw-relationships-training']);
  });
 });
+
+it('binds owner approval to all19 exact reviewed media bytes',()=>{const a=j('docs/lesson-151-owner-approval.json');expect(a.authorization).toBe('approved. merge and deploy to live');expect(a.reviewed_head).toBe('6bba868832ad48d2eb86f41739cd6da12c4d9f26');expect(a.approved_media).toHaveLength(19);for(const m of a.approved_media)expect(hash(m.path)).toBe(m.sha256);expect(source.assets.every(x=>x.review_status==='approved')).toBe(true);expect(j('docs/lesson-151-malou-series-brief.json').reference_status).toContain('Owner-approved');});
