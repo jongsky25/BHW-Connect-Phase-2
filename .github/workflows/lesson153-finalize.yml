@@ -79,6 +79,8 @@ jobs:
           out=root/'.preview/lesson-153';out.mkdir(parents=True,exist_ok=True)
           (out/'lesson-1.5.3-verification.json').write_text(json.dumps({'status':'target media and selector verified','screens':6,'images_per_slide':2,'read_tracks':12,'story_videos':2,'captions_per_language':6,'full_model_reviews':14,'original_pdf_review':'unavailable; inherited leads disclosed'},indent=2)+'\n')
           PY
+      - name: Prepare review preview for browser
+        run: python3 scripts/lesson-153-review-package.py
       - name: Browser offline playback
         continue-on-error: true
         run: |
