@@ -1,3 +1,4 @@
+import {beforeApproved154} from './lesson-154-release-compat.mjs';
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -65,7 +66,7 @@ describe('lesson 1.5.3 content draft',()=>{
   expect(Object.keys(indicators[0].levels)).toHaveLength(6);
  });
  it('keeps the other ten shared QA rows unchanged from the verified creation baseline',()=>{
-  const after=json(`${base}/qa-entries.json`).entries;
+  const after=JSON.parse(beforeApproved154(`${base}/qa-entries.json`)).entries;
   expect(after.map(r=>r.id)).toEqual(['d1m5-four-relationships','d1m5-who-for-clinical','d1m5-who-for-admin-support','d1m5-role-of-peer-bhw','d1m5-punong-barangay','d1m5-local-health-board-composition','d1m5-other-stakeholders','d1m5-teamwork-practices','d1m5-self-management-skills','d1m5-self-management-improve']);
   const untouched=after.filter(r=>!['d1m5-local-health-board-composition','d1m5-other-stakeholders'].includes(r.id));
   expect(createHash('sha256').update(JSON.stringify(untouched)).digest('hex')).toBe('c27c65e14e9c328d93b5e49ea8f585710e801d357a31ae87cf33c7c207f688ae');

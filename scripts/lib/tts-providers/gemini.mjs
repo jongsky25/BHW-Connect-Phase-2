@@ -388,3 +388,8 @@ export const BHW_LOCAL_PARTNERS_STORY_STYLES = {
   fil: "Speak in natural Filipino as one warm mature Filipina community health educator. Explain Malou's locally verified RHU contact, consent and the difference between budget advice and an individual decision with clear phrasing. Read every supplied word exactly; retain the same voice on the application screen, with no announcer switch or added words.",
   en: "Speak in natural Philippine English as one warm mature Filipina community health educator. Explain Malou's locally verified RHU contact, consent and the difference between budget advice and an individual decision with clear phrasing. Read every supplied word exactly; retain the same voice on the application screen, with no announcer switch or added words.",
 };
+
+export const BHW_TEAMWORK_STORY_STYLES = {
+  "fil": "Speak in natural Filipino (Tagalog) as one mature, warm adult Filipina community health trainer. Keep the same female mid-pitched voice for headings, questions, story and endings. Use gentle pitch and pace variation for Malou\u2019s respectful teamwork, clear roles, early issues, privacy, permission and completion. Read exactly the supplied words; do not add, translate or change speakers. Make negation, the five practices and handoff limits clear.",
+  "en": "Speak in natural Philippine English as one mature, warm adult Filipina community health trainer. Keep the same female mid-pitched voice for headings, questions, story and endings. Use gentle pitch and pace variation for Malou\u2019s respectful teamwork, clear roles, early issues, privacy, permission and completion. Read exactly the supplied words; do not add, translate or change speakers. Make negation, the five practices and handoff limits clear."
+};

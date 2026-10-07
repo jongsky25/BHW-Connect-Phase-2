@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as one mature, warm adult Filipina community health trainer. Keep the same female mid-pitched voice for headings, questions, story and endings. Use gentle pitch and pace variation for Malou’s respectful teamwork, clear roles, early issues, privacy, permission and completion. Read exactly the supplied words; do not add, translate or change speakers. Make negation, the five practices and handoff limits clear.",
+  "durationSeconds": 56.294,
+  "beats": [
+    {
+      "zone": "purpose",
+      "index": 0,
+      "text": "Malou and fellow BHWs are preparing invitations. They have a purpose and deadline, but must clarify their roles.",
+      "start_ms": 0,
+      "end_ms": 8360
+    },
+    {
+      "zone": "practices",
+      "index": 1,
+      "text": "Five practices guide them: shared purpose, clear roles, early communication, openness to feedback and respectful relationships.",
+      "start_ms": 8660,
+      "end_ms": 19780
+    },
+    {
+      "zone": "agreement",
+      "index": 2,
+      "text": "They agree on the task, recipient and time. The colleague repeats the accepted role. Changes needing permission are checked.",
+      "start_ms": 20080,
+      "end_ms": 29240
+    },
+    {
+      "zone": "handoff",
+      "index": 3,
+      "text": "A colleague cannot finish. Malou listens early. They clarify the remaining work and confirm who accepts it, without private reasons.",
+      "start_ms": 29540,
+      "end_ms": 38860
+    },
+    {
+      "zone": "feedback",
+      "index": 4,
+      "text": "Malou gives a specific suggestion. She listens to the response and confirms that the agreed task is complete.",
+      "start_ms": 39160,
+      "end_ms": 47640
+    },
+    {
+      "zone": "closing",
+      "index": 5,
+      "text": "For the next task, clarify roles, speak early, respect privacy and confirm acceptance and completion.",
+      "start_ms": 47940,
+      "end_ms": 56220
+    }
+  ],
+  "audio_sha256": "5b70a13c557c01c0acfa641499e95fdc24f9d46026b7f76ddee6088c41dbf932"
+}

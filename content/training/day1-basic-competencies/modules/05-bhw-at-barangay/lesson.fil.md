@@ -86,34 +86,24 @@ Piliin ang katuwang ayon sa pangangailangan, tiyakin ang proseso at balikan ang 
 
 ## [concept/core] Ano ang mabuting teamwork {m5.teamwork-practices, m5.competency}
 
-Kadalasan ay higit sa isang BHW ang isang barangay, at kailangan
-nilang magtrabaho bilang isang koponan. Limang rekomendasyon ang
-gagabay dito.
+Una, linawin kung bakit nagboluntaryo: upang mapabuti ang kalusugan ng komunidad. Ikalawa, linawin ang tungkulin at pananagutan ng bawat miyembro. Ikatlo, pag-usapan nang maaga ang isyung nakaaapekto sa trabaho. Sapat na sabihin ang epekto sa gawain; hindi kailangang ibunyag ang pribadong dahilan.
 
-Una, dapat malinaw sa lahat kung bakit sila nag-volunteer — upang
-mapabuti ang kalusugan sa komunidad. Pangalawa, dapat malinaw ang
-tungkulin ng bawat miyembro — sino ang naka-assign sa aling purok, sino
-ang lead sa aling programa. Pangatlo, maging bukas sa isyu, kahit
-personal — agad itong pag-usapan bago pa ito lumalim. Pang-apat, maging
-bukas sa puna at opinyon mula sa kasamahan o sa komunidad — tingnan ito
-bilang tulong, hindi atake. Panglima, bumuo ng ugnayan sa mga kasamahan
-kahit sa labas ng trabaho — nakakatulong ito sa bonding ng koponan.
+Ikaapat, pakinggan ang puna ng kasamahan at komunidad at gamitin ang tiyak na mungkahi upang mapabuti ang gawain. Ikalima, bumuo ng mabuting ugnayan, maging sa labas ng trabaho, nang may paggalang sa personal na buhay. Boluntaryo ang ganitong pakikisalamuha. Walang kailangang gumastos, sumama sa biyahe, o makipagdikit sa pisikal na laro upang patunayang mabuting kasamahan.
+
+Bago ang takdang oras, sinabi ng kasama: “Hindi ko matatapos ang pagtingin sa mga paanyaya.” Sumagot si Malou: “Salamat sa maagang pagsabi. Ano na ang tapos at ano pa ang kailangan?” Hindi niya hinihingi ang pribadong dahilan o sinisisi ang kasama.
+
+Sa paglipat ng gawain, nililinaw ang tapos, natitira, takdang oras at kailangan pang pahintulot. Tinitiyak sa itinalagang supervisor ang pagbabagong nangangailangan ng pahintulot. Tinatanggap at inuulit ng sasalo ang gawain; hindi sapat ang mag-iwan lang ng mensahe. Ibinabahagi lamang ang impormasyong kailangan sa awtorisadong tatanggap gamit ang angkop na paraan. Ang agarang panganib o seryosong paglabag ay idinudulog kaagad sa angkop na contact ayon sa lokal na proseso; hindi kailangang hintayin ang usapang magkakasama.
 
 :::takeaway
-Ang malinaw na layunin at tungkulin ang bumubuo ng koponan; ang
-pagiging bukas sa isyu at puna ang nagpapanatili nito.
+Tiyaking natapos ang napagkasunduan; magtakda ng susunod na hakbang kung may kulang.
 :::
 
 :::check
-? Sa isang koponan ng mga BHW, ano ang pinakaunang dapat gawin kapag
-  may personal na isyu ang isang miyembro na maaaring makaapekto sa
-  gawain ng grupo?
-- Balewalain ito hangga't hindi pa nakakaapekto sa trabaho
-+ Agad itong pag-usapan bilang koponan bago pa ito lumalim
-- Iulat agad ito sa midwife nang hindi muna kinakausap ang miyembro
-> Tama! Ayon sa rekomendasyon ng teamwork, kailangang maagap na
-  napag-uusapan ang mga isyu sa loob ng koponan upang hindi na lumalim
-  ang hindi pagkakaunawaan.
+? Ano ang pinakamainam na gawin ni Malou?
++ Pag-usapan ang natitirang gawain, tiyakin ang pahintulot sa pagbabago, kumuha ng malinaw na pagtanggap, at magtakda ng pagbalita.
+- Akuin agad ang buong assignment at sabihin sa supervisor kapag tapos na upang walang maabala.
+- Ibahagi sa group chat ang personal na dahilan ng kasama upang mas madaling makumbinsi ang iba na tumulong.
+> A ang pinakamainam: maagang komunikasyon, malinaw na tungkulin, pahintulot at kumpirmasyon ng pagtanggap at pagtatapos. B: mabuti ang layuning tumulong, ngunit hindi nito tinitiyak ang saklaw, pahintulot o kapasidad; hindi awtorisasyon ang pagiging magkakasama. C: hindi kailangan ang pribadong dahilan upang hatiin ang gawain; hindi pinahihintulutan ng pagtutulungan ang kumpidensiyal na pagbubunyag. Sabihin lamang ang kailangan sa awtorisadong tatanggap.
 :::
 
 ## [concept/core] Mga kasanayan sa self-management {m5.self-management-skills}

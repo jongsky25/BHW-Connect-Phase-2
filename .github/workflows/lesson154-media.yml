@@ -1,0 +1,105 @@
+name: Lesson 1.5.4 draft evidence and media
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson154-media.yml'
+      - 'scripts/lesson-154-*.mjs'
+      - 'scripts/tests/lesson-154.test.mjs'
+      - 'docs/lesson-154-audio*.json'
+      - 'scripts/remotion-bhw-teamwork-narrate.mjs'
+      - 'content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/**'
+      - 'remotion/src/bhw-teamwork/**'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson154-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-154-malou-proposal' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Bounded read-only published-state snapshot
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-154-published-snapshot.mjs
+      - name: Generate actual target-only draft media
+        if: github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-154-owner-approval.json') == ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON154_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-154-record-fetch.mjs'
+        run: node scripts/lesson-154-media-build.mjs
+      - name: Full audio model review
+        if: ${{ !cancelled() && github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-154-owner-approval.json') == '' }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON154_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-154-record-fetch.mjs'
+        run: node scripts/lesson-154-audio-review.mjs
+      - name: Decode and focused-review shipped media
+        if: ${{ !cancelled() && github.event_name != 'workflow_dispatch' && hashFiles('docs/lesson-154-owner-approval.json') == '' }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON154_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-154-record-fetch.mjs'
+        run: node scripts/lesson-154-audio-focus.mjs
+      - name: Build self-contained actual-component review
+        if: success()
+        run: node scripts/lesson-154-review-build.mjs
+      - name: Install playback-test browser
+        if: success()
+        run: npx playwright install --with-deps chromium
+      - name: Verify desktop, mobile and true offline playback
+        if: success()
+        run: node scripts/lesson-154-browser-check.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson154-browser-review
+          path: |
+            docs/lesson-154-browser-verification.json
+            .preview/lesson154/lesson-1.5.4-malou-review.html
+            .preview/lesson154/inline-media-manifest.json
+            .preview/lesson154/*.png
+          include-hidden-files: true
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson154-draft-evidence
+          path: |
+            lesson-154-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/
+            public/training/audio/05-bhw-at-barangay/bhw-teamwork/
+            public/training/bhw-1-5/
+            remotion/public/bhw-teamwork/
+            docs/lesson-154-media-generation.json
+            docs/lesson-154-audio-review.json
+            docs/lesson-154-audio-focus.json
+            docs/lesson-154-browser-verification.json
+            .preview/lesson154/
+            .preview/lesson154-raw/
+            .preview/lesson154-excerpts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

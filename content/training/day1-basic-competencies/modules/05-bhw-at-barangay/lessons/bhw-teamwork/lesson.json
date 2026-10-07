@@ -20,26 +20,90 @@
         "m5.competency"
       ],
       "asset_ids": [
-        "practice-map"
+        "malou-teamwork"
       ],
-      "takeaway_fil": "Ang malinaw na layunin at tungkulin ang bumubuo ng koponan; ang pagiging bukas sa isyu at puna ang nagpapanatili nito.",
-      "takeaway_en": "A clear purpose and clear roles build the team; staying open to issues and feedback is what keeps it together.",
+      "takeaway_fil": "Ipaliwanag ang layunin at linawin ang sariling ambag at hangganan.",
+      "takeaway_en": "Explain the purpose and clarify your contribution and limits.",
+      "check": null
+    },
+    {
+      "id": "teamwork-five-practices",
+      "concept_ids": [
+        "m5.teamwork-practices"
+      ],
+      "asset_ids": [
+        "malou-teamwork"
+      ],
+      "takeaway_fil": "Panatilihin ang limang gawi at igalang ang pribasiya at pagpili.",
+      "takeaway_en": "Keep all five practices while respecting privacy and choice.",
+      "check": null
+    },
+    {
+      "id": "teamwork-role-agreement",
+      "concept_ids": [
+        "m5.competency"
+      ],
+      "asset_ids": [
+        "malou-teamwork"
+      ],
+      "takeaway_fil": "Gawain, tatanggap, oras at contact: ulitin at tiyakin ang kasunduan.",
+      "takeaway_en": "Task, recipient, time and contact: repeat and confirm the agreement.",
+      "check": null
+    },
+    {
+      "id": "teamwork-early-handoff",
+      "concept_ids": [
+        "m5.competency"
+      ],
+      "asset_ids": [
+        "malou-teamwork"
+      ],
+      "takeaway_fil": "Maagang magsabi at tiyaking may tumanggap sa saklaw na gawain.",
+      "takeaway_en": "Speak early and confirm that someone accepts the bounded task.",
+      "check": null
+    },
+    {
+      "id": "teamwork-feedback-completion",
+      "concept_ids": [
+        "m5.competency"
+      ],
+      "asset_ids": [
+        "malou-teamwork"
+      ],
+      "takeaway_fil": "Tiyaking natapos ang napagkasunduan; magtakda ng susunod na hakbang kung may kulang.",
+      "takeaway_en": "Confirm completion of the agreement; set a next step if anything remains.",
+      "check": null
+    },
+    {
+      "id": "teamwork-application-check",
+      "concept_ids": [
+        "m5.competency"
+      ],
+      "asset_ids": [
+        "malou-teamwork"
+      ],
+      "takeaway_fil": "Ipakita ang pagtutulungan sa tiyak at ligtas na kasunduan.",
+      "takeaway_en": "Show teamwork through a specific, safe agreement.",
       "check": {
-        "prompt_fil": "Ano ang gagawin sa isyung nakaaapekto sa team?",
-        "prompt_en": "What should you do about an issue affecting the team?",
+        "prompt_fil": "Ano ang pinakamainam na gawin ni Malou?",
+        "prompt_en": "What is the best response for Malou?",
         "options": [
           {
-            "fil": "Pag-usapan nang maaga at malinaw kasama ang team.",
-            "en": "Discuss it early and clearly with the team."
+            "fil": "Pag-usapan ang natitirang gawain, tiyakin ang pahintulot sa pagbabago, kumuha ng malinaw na pagtanggap, at magtakda ng pagbalita.",
+            "en": "Discuss remaining work, confirm permission for the change, obtain clear acceptance and arrange a completion update."
           },
           {
-            "fil": "Balewalain hanggang lumala.",
-            "en": "Ignore it until it worsens."
+            "fil": "Akuin agad ang buong assignment at sabihin sa supervisor kapag tapos na upang walang maabala.",
+            "en": "Immediately take over the entire assignment and tell the supervisor afterwards to avoid inconvenience."
+          },
+          {
+            "fil": "Ibahagi sa group chat ang personal na dahilan ng kasama upang mas madaling makumbinsi ang iba na tumulong.",
+            "en": "Share the colleague’s personal reason in the group chat to persuade others to help."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Pag-usapan nang maaga at malinaw kasama ang team. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Discuss it early and clearly with the team. Explain why using the lesson situation."
+        "feedback_fil": "A ang pinakamainam: maagang komunikasyon, malinaw na tungkulin, pahintulot at kumpirmasyon ng pagtanggap at pagtatapos. B: mabuti ang layuning tumulong, ngunit hindi nito tinitiyak ang saklaw, pahintulot o kapasidad; hindi awtorisasyon ang pagiging magkakasama. C: hindi kailangan ang pribadong dahilan upang hatiin ang gawain; hindi pinahihintulutan ng pagtutulungan ang kumpidensiyal na pagbubunyag. Sabihin lamang ang kailangan sa awtorisadong tatanggap.",
+        "feedback_en": "A is best: early communication, clear roles, permission and confirmation of acceptance and completion. B: the intention to help is useful, but it does not check scope, permission or capacity; being teammates is not authorization. C: private reasons are unnecessary for sharing the task; teamwork does not justify confidential disclosure. Give only necessary information to an authorized recipient."
       }
     }
   ],
@@ -47,10 +111,12 @@
     {
       "id": "m5.teamwork-practices",
       "read_ids": [
-        "section-8"
+        "section-8",
+        "teamwork-five-practices"
       ],
       "slide_ids": [
-        "slide-section-8"
+        "slide-section-8",
+        "slide-teamwork-five-practices"
       ],
       "source_ids": [
         "m5.teamwork-practices-source"
@@ -59,10 +125,18 @@
     {
       "id": "m5.competency",
       "read_ids": [
-        "section-8"
+        "section-8",
+        "teamwork-role-agreement",
+        "teamwork-early-handoff",
+        "teamwork-feedback-completion",
+        "teamwork-application-check"
       ],
       "slide_ids": [
-        "slide-section-8"
+        "slide-section-8",
+        "slide-teamwork-role-agreement",
+        "slide-teamwork-early-handoff",
+        "slide-teamwork-feedback-completion",
+        "slide-teamwork-application-check"
       ],
       "source_ids": [
         "m5.competency-source"
@@ -72,20 +146,20 @@
   "sources": [
     {
       "id": "m5.teamwork-practices-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "BHW Reference Manual, Team Work — PDF page 17, printed page 9; original PDF hash verified and page image inspected 2026-10-06",
       "pdf_pages": [
         17
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view"
     },
     {
       "id": "m5.competency-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "Facilitator Manual, shared teamwork competency — PDF pages 26–27, printed pages 19–20; original PDF hash verified and page images inspected 2026-10-06",
       "pdf_pages": [
         26,
         27
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "url": "https://drive.google.com/file/d/1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W/view"
     }
   ],
   "assets": [
@@ -99,6 +173,57 @@
       "caption_en": "Draft discussion guide; review required.",
       "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
       "review_status": "approved"
+    },
+    {
+      "id": "malou-teamwork",
+      "path": "/training/bhw-1-5/malou-teamwork-d4d912a21b22.png",
+      "content_hash": "d4d912a21b220f572409a9fc00d8b532013f25d31965006a7b991fc85c8e2372",
+      "alt_fil": "Si Malou at dalawang kapwa BHW na naglilinaw ng gawain sa mesa, gamit ang blangkong task cards at kuwaderno.",
+      "alt_en": "Malou and two fellow BHWs clarify tasks at a table using blank task cards and notebooks.",
+      "caption_fil": "Kathang-isip na halimbawa ng magalang na pagpaplano at pagpasa ng gawain. Bagong larawang draft para sa pagrepaso.",
+      "caption_en": "A fictional example of respectful planning and handoff. New draft image for review.",
+      "provenance": "Built-in imagegen with approved Malou identity reference; original teamwork scene, no real officials or personal records. See docs/lesson-154-scene-brief.json.",
+      "review_status": "approved"
+    },
+    {
+      "id": "bhw-teamwork-story",
+      "alt_fil": "Anim na salaysay na hakbang ng malinaw na pagtutulungan at handoff ni Malou.",
+      "alt_en": "Six narrated steps showing Malou’s clear teamwork and handoff.",
+      "caption_fil": "Kathang-isip na kuwentong draft; hiwalay na pagrepaso ang kailangan.",
+      "caption_en": "Fictional draft story; separate review required.",
+      "provenance": "Original lesson1.5.4 teamwork story using new built-in imagegen scene with approved Malou identity as input. Gemini gemini-3.8-flash-tts Kore; measured encoded audio boundaries, varied framing and animated task labels. No real records, human listening, owner approval or SME signoff claimed.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-52aaef9d68d1.mp4",
+          "content_hash": "52aaef9d68d1038e86fe2a1217595e73c94c6148cee7b00df728810d6b387fa6",
+          "duration_s": 65,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-4dcd763b01ad.vtt",
+            "content_hash": "4dcd763b01ade4b168db3ec76a260767fb1ef185b99b553373e23e2ce0d374bd"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-fc715e2554e6-poster.jpg",
+            "content_hash": "fc715e2554e6dec13ed1778978f1ae53e352ad72ccc19469f92cba6e6a8ed716"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-teamwork-gemini-en-c585e2e07557.mp4",
+          "content_hash": "c585e2e07557714dd1c1d65687a8d886f0ff6747edfc02ad84fed2712e5357a5",
+          "duration_s": 57,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-teamwork-gemini-en-d9fc45de8faa.vtt",
+            "content_hash": "d9fc45de8faa711714a1addf969b09a8143c8e1a20afc6de40e16da3b129dd8d"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-teamwork-gemini-en-fb3860fd4540-poster.jpg",
+            "content_hash": "fb3860fd4540e2ae90cf75734db1eae3e95e78ac8d415501840433789d583ff1"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-fc715e2554e6-poster.jpg",
+      "content_hash": "fc715e2554e6dec13ed1778978f1ae53e352ad72ccc19469f92cba6e6a8ed716"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-teamwork-story"
 }

@@ -16,7 +16,7 @@ Panukalang hati:
 | Pambungad: kathang-isip na tanong nina Malou at Nena + apat na ugnayan | 30 min |
 | Karagdagang kakilala sa barangay, lungsod, munisipyo | 30 min |
 | Ano ang mabuting teamwork | 30 min |
-| Team-building activity (sinking vessel o marshmallow tower) | 30 min |
+| Opsyonal na accessible team activity (nakaupong task cards o pasalitang plano) | 30 min |
 | Self-management: kasanayan at pagpapaunlad | 30 min |
 | Pagsasanay at buod | 30 min |
 
@@ -35,10 +35,7 @@ Panukalang hati:
 4. **Sa "Ano ang Mabuting Teamwork",** gawin itong talakayan sa grupo:
    "Alin sa limang rekomendasyon ang pinakamahirap sundin sa inyong
    karanasan? Bakit?"
-5. **Gawin ang team-building activity** (sinking vessel o marshmallow
-   spaghetti tower — parehong nasa Facilitator's Manual PDF 27) bilang
-   praktikal na demonstrasyon ng teamwork bago pumasok sa
-   self-management.
+5. **Ialok ang opsyonal na accessible team activity** sa gabay ng lesson 1.5.4: blangkong task cards habang nakaupo o pasalitang pagpaplano, saka pagtalakay. Kusang pinipili ang paraan; walang shrinking-space contact o marka sa lakas. Ang 30-minutong core at hiwalay na 30-minutong activity ay nasa dati nang dalawang bahagi.
 6. **Sa self-management,** huwag ipakita ang anim na kasanayan bilang
    checklist lamang — itanong sa bawat isa: "Alin dito ang pinaka
    malakas sa inyo? Alin ang kailangan pang paunlarin?"
@@ -72,10 +69,7 @@ na ugali — hindi katangiang taglay ka na o wala.
 ## Susi sa sagot ng mga retrieval check
 
 1. **"May tanong si Nena sa lugar at personal na kalusugan."** → Linawin ang kaniyang nais; tiyakin ang propesyonal na contact para sa kalusugan at responsableng coordinator para sa lugar. Hindi kapalit ng pagtatasa ang posisyon o karanasan ng kapwa BHW.
-2. **"Sa isang koponan ng mga BHW, ano ang pinakaunang dapat gawin..."**
-   → Agad itong pag-usapan bilang koponan bago pa ito lumalim (hindi
-   balewalain, hindi rin agad iulat nang hindi muna kinakausap ang
-   miyembro).
+2. **Teamwork handoff check:** A ang tumitiyak sa natitira, pahintulot, pagtanggap at pagtatapos. Sa B, inaako ang gawain nang hindi tinitiyak ang saklaw o pahintulot. Sa C, ibinubunyag ang pribadong dahilan nang hindi kailangan. Maagang mag-usap sa karaniwang isyu; huwag ipaghintay ng peer conversation ang agarang panganib o seryosong paglabag.
 
 ## Pagtutugma ng oras at saklaw ng 1.5.1
 

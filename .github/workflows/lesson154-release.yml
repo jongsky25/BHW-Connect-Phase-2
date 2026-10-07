@@ -1,0 +1,113 @@
+name: Lesson 1.5.4 approved live release
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/lesson-154-owner-approval.json
+permissions:
+  contents: read
+  checks: read
+  statuses: read
+concurrency:
+  group: lesson154-approved-release
+  cancel-in-progress: false
+jobs:
+  publish-one:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Verify exact approval, source and public media bytes
+        run: |
+          set -euo pipefail
+          node --input-type=module - <<'JS'
+          import fs from 'node:fs';import {createHash} from 'node:crypto';
+          const a=JSON.parse(fs.readFileSync('docs/lesson-154-owner-approval.json','utf8'));
+          const hash=b=>createHash('sha256').update(b).digest('hex');
+          if(a.interpreted_authorization!=='merge and deploy to live')throw Error('Owner approval missing');
+          for(const [p,h] of Object.entries(a.approved_source_sha256))if(hash(fs.readFileSync(p))!==h)throw Error('Approved source changed: '+p);
+          for(const m of a.approved_media)if(hash(fs.readFileSync('public'+m.path))!==m.sha256)throw Error('Approved media changed: '+m.path);
+          console.log('Exact approved source and '+a.approved_media.length+' selected public media files verified.');
+          JS
+      - name: Wait for exact main CI and Vercel production status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$GITHUB_SHA"
+          for attempt in $(seq 1 60); do
+            checks=$(curl --fail --silent --show-error --retry 2 -H "Authorization: Bearer $GH_TOKEN" -H 'Accept: application/vnd.github+json' "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/check-runs?per_page=100")
+            statuses=$(curl --fail --silent --show-error --retry 2 -H "Authorization: Bearer $GH_TOKEN" -H 'Accept: application/vnd.github+json' "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/status")
+            ci=$(jq -r '[.check_runs[]|select(.name=="checks" or .name=="e2e")]|if length==2 and all(.[];.conclusion=="success") then "success" elif any(.[];.conclusion=="failure" or .conclusion=="cancelled") then "failure" else "pending" end' <<<"$checks")
+            vercel=$(jq -r '[.statuses[]|select(.context=="Vercel")]|if length>0 then .[0].state else "pending" end' <<<"$statuses")
+            echo "Exact SHA gate: CI=$ci Vercel=$vercel (attempt $attempt)"
+            test "$ci" != failure
+            test "$vercel" != failure && test "$vercel" != error
+            if [ "$ci" = success ] && [ "$vercel" = success ]; then exit 0; fi
+            sleep 25
+          done
+          echo 'Timed out waiting for exact merged SHA gates' >&2
+          exit 1
+      - name: Verify production alias serves all approved selected bytes
+        run: |
+          set -euo pipefail
+          node --input-type=module - <<'JS'
+          import fs from 'node:fs';import {createHash} from 'node:crypto';
+          const a=JSON.parse(fs.readFileSync('docs/lesson-154-owner-approval.json','utf8'));
+          for(const m of a.approved_media){
+            const response=await fetch('https://bhw-connect-phase-2.vercel.app'+m.path);
+            if(!response.ok)throw Error('Production HTTP '+response.status+': '+m.path);
+            const bytes=Buffer.from(await response.arrayBuffer());
+            const digest=createHash('sha256').update(bytes).digest('hex');
+            if(digest!==m.sha256)throw Error('Production byte mismatch: '+m.path);
+            const type=response.headers.get('content-type')??'';
+            const expected={mp3:'audio/',mp4:'video/',jpg:'image/',png:'image/',svg:'image/',vtt:'text/'}[m.path.split('.').at(-1)];
+            if(!expected||!type.startsWith(expected))throw Error('Production media type mismatch: '+m.path+' '+type);
+            console.log(m.path+' '+response.status+' '+type+' '+bytes.length+' '+digest);
+          }
+          JS
+      - name: Snapshot twelve bounded rows before publication
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+        run: node scripts/lesson-154-release-snapshot.mjs before
+      - name: Dry-run target-only loader
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+        run: npm run training:load -- --mode lessons --project ltzicxyefizxoqhfuuzc --org-unit 'Department of Health' --modules 05-bhw-at-barangay --lesson-keys bhw-teamwork --dry-run
+      - name: Apply and publish only approved lesson
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+        run: npm run training:load -- --mode lessons --project ltzicxyefizxoqhfuuzc --org-unit 'Department of Health' --modules 05-bhw-at-barangay --lesson-keys bhw-teamwork --apply --publish
+      - name: Verify one target and eleven unchanged published rows
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+        run: |
+          node scripts/lesson-154-release-snapshot.mjs after
+          git diff --exit-code -- content/training/day1-basic-competencies/locks
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson154-live-release-${{ github.sha }}
+          path: |
+            lesson-154-before.json
+            lesson-154-after.json
+          retention-days: 30
+          if-no-files-found: ignore
