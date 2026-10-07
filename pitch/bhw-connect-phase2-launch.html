@@ -1,0 +1,1337 @@
+<!--
+  BHW Connect Phase 2.0 — Courses Pilot Walkthrough
+  Internal session: introducing the Courses feature of the BHW-facing app and
+  asking the room to pilot-test it.
+
+  Build note: this deck's mechanics (tokens, registers, eyebrow numbering,
+  build-steps, fit(), chrome, notes, overview, print, offline) are the engine
+  from pitch/cesr-pir-blhsd.html, trimmed to what this deck actually uses —
+  the CESR-specific content components (scatter figure, signal field, gap
+  cards, chat simulation, timeline) are not reused because nothing here needs
+  them. The three feature-mockup slides instead reuse the phone/laptop device
+  frame and .app-scope component system from pitch/bhw-connect-who.html
+  (.dev-phone/.dev-laptop, .chero/.mod/.quiz, the .rd-* return-demonstration
+  checklist, .cert + qrSvg()), which is the only place in this repo that
+  already renders the Courses/assessor/certificate UI.
+
+  Facts used are sourced, not invented:
+  - 45% trained on the BHW Reference Manual / 2% hold TESDA BHS NC II —
+    BHW Connect Phase 1 registry, BLHSD (also cited in pitch/cesr-pir-blhsd.html:837-847).
+  - ₱2,200/day board & lodging → ₱6,600 (3-day) → ₱1.98B (300,000 BHWs) —
+    pitch/cesr-pir-blhsd.html:878-882, presenter/DOH rate, excludes transport.
+  - Courses feature (text/video/quiz modules, 80% default passing score, 3
+    default attempts, assessor role with an open claim queue, QR-verifiable
+    certificates) — supabase/migrations/20260729000000_inc12_elearning.sql,
+    README.md "INC-12".
+  - "BHW Reference Manual" assessor-qualification course, Chapter I "BHWs and
+    Their Barangay" (9 subchapters / 42 lessons) and Chapter II "The BHW as
+    First Responder" (7 subchapters / 55 lessons), 80% approved post-test
+    threshold — docs/assessor-af01-foundation.md. Status there is explicit:
+    "Visual browser review and owner review of the rubric/screen design
+    remain outstanding" — which is exactly what this session's ask ("try
+    Chapters 1–2 and give feedback") is for. Do not claim it is live or
+    qualifies anyone; it is a pre-activation prototype at
+    prototypes/assessor/index.html.
+
+  Screens on the three feature slides are illustrative mockups (module names,
+  quiz text, rubric rows, names on the certificate) — each slide says so via
+  a "Mockup · Phase 2 design" tag and a disclaimer line, matching the
+  convention in pitch/bhw-connect-who.html. Do not read any name, number or
+  quiz item on those screens as real data.
+
+  Self-contained, zero network requests: system font stacks only, no external
+  scripts/stylesheets/images. Runs from file://.
+
+  Keys: → / Space step then advance · ← back · Home/End · N notes · O overview
+  · B blank · F fullscreen · ? legend.
+
+  Body-only document: a <!doctype>/<head>/<body> skeleton is added when published.
+-->
+<title>BHW Connect Phase 2.0 — Courses Pilot</title>
+<style>
+  :root{
+    --teal:#0C7C7E;
+    --teal-deep:#0A4A4B;
+    --teal-deeper:#083335;
+    --marigold:#E8641C;
+    --marigold-deep:#B84E12;
+    --sampaguita:#FFC857;
+    --canvas:#F6F2ED;
+    --canvas-2:#ECE3D6;
+    --ink:#241C17;
+    --ink-soft:#6A5D53;
+    --cream:#F7F1E8;
+    --cream-soft:rgba(247,241,232,.66);
+    --line-dark:rgba(247,241,232,.18);
+    --line-light:rgba(36,28,23,.14);
+
+    --ember:#F0603C;
+    --verdant:#1F7A45;
+    --verdant-soft:#E4F0E7;
+
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+
+    --pad:clamp(1.6rem,5.2vw,6rem);
+    --maxw:1120px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:var(--sans);
+    background:#06282a;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow:hidden;
+    overscroll-behavior:none;
+    touch-action:manipulation;
+  }
+  :focus-visible{outline:3px solid var(--sampaguita);outline-offset:2px;border-radius:4px}
+
+  /* ---------- deck stage ---------- */
+  .deck{position:fixed;inset:0}
+  .slide{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;justify-content:flex-start;
+    padding:clamp(4.2rem,11vh,6.4rem) var(--pad) clamp(3.4rem,7vh,4.4rem);
+    opacity:0;visibility:hidden;
+    /* Opacity only — never transform. See pitch/cesr-pir-blhsd.html for why:
+       animating a transform on the scaled parent rasterizes the subtree at
+       the unscaled size and the text goes soft for the length of the click. */
+    transition:opacity .28s ease,visibility .28s;
+    overflow:hidden;
+  }
+  .slide.active{opacity:1;visibility:visible;z-index:2}
+  .slide.centered{justify-content:center;padding-top:clamp(2.4rem,6vh,4.4rem)}
+  .slide__inner{width:100%;max-width:var(--maxw);margin:0 auto;transform-origin:top center}
+  .slide.centered .slide__inner{transform-origin:center center}
+  .slide.wide .slide__inner{max-width:1240px}
+  /* full-bleed: the three feature-mockup slides get nearly the whole stage
+     rather than the centered 1120px column, so the phone/laptop frames and
+     their narrative text render as large as the screen allows. */
+  .slide.full{padding-left:clamp(.6rem,1.6vw,1.8rem);padding-right:clamp(.6rem,1.6vw,1.8rem)}
+  .slide.full .slide__inner{max-width:1680px}
+
+  .slide.dark{background:var(--teal-deep);color:var(--cream)}
+  .slide.darker{background:radial-gradient(120% 120% at 78% 12%,#0d5254 0%,var(--teal-deeper) 62%);color:var(--cream)}
+  .slide.light{background:var(--canvas);color:var(--ink)}
+
+  .slide.dark::after,.slide.darker::after{
+    content:"";position:absolute;right:-12%;top:-18%;width:46vw;height:46vw;
+    background:radial-gradient(circle,rgba(232,100,28,.16),transparent 62%);
+    pointer-events:none;
+  }
+
+  /* ---------- PROBLEM register ---------- */
+  .slide.problem{
+    background:radial-gradient(125% 115% at 18% -8%,#0b262b 0%,#061619 52%,#030d0f 100%);
+    color:var(--cream);
+  }
+  .slide.problem::after{
+    content:"";position:absolute;left:0;right:auto;top:auto;bottom:-26%;width:100%;height:54vh;
+    background:radial-gradient(58% 100% at 50% 100%,rgba(240,96,60,.13),transparent 68%);
+    pointer-events:none;
+  }
+  .slide.problem .eyebrow{color:rgba(247,241,232,.5)}
+  .slide.problem .eyebrow .num{color:var(--ember)}
+  .slide.problem .mark{color:var(--ember)}
+  .slide.problem .kicker-line{color:var(--cream)}
+  .slide.problem .slide__inner{position:relative;z-index:1}
+
+  /* ---------- SOLUTION register ---------- */
+  .slide.solution{
+    background:linear-gradient(168deg,#F2F6F1 0%,#E8EFE6 100%);
+    color:var(--ink);
+  }
+  .slide.solution::after{
+    content:"";position:absolute;left:0;right:0;top:0;height:5px;width:auto;z-index:0;
+    background:linear-gradient(90deg,var(--verdant),#3FA972 60%,var(--sampaguita));
+    pointer-events:none;
+  }
+  .slide.solution .slide__inner{position:relative;z-index:1}
+  .slide.solution .eyebrow .num{color:var(--verdant)}
+
+  /* ---------- shared type ---------- */
+  .eyebrow{
+    font-size:clamp(.74rem,1.15vw,.9rem);
+    font-weight:700;letter-spacing:.26em;text-transform:uppercase;
+    display:flex;align-items:center;gap:.85rem;margin-bottom:clamp(1.1rem,2.6vh,1.9rem);
+  }
+  .eyebrow .num{color:var(--marigold)}
+  .dark .eyebrow,.darker .eyebrow{color:var(--cream-soft)}
+  .light .eyebrow,.solution .eyebrow{color:var(--ink-soft)}
+  .eyebrow::after{content:"";flex:0 0 46px;height:1px;background:currentColor;opacity:.4}
+
+  h1,h2{font-weight:800;letter-spacing:-.02em;line-height:1.04;text-wrap:balance}
+  h1{font-size:clamp(2.2rem,5.4vw,4.4rem)}
+  h2{font-size:clamp(2.1rem,4.8vw,3.8rem)}
+  h2.tight{font-size:clamp(1.8rem,3.9vw,3rem)}
+  .lead{font-size:clamp(1.12rem,1.85vw,1.5rem);line-height:1.5;max-width:42ch;color:inherit}
+  .dark .lead,.darker .lead{color:var(--cream-soft)}
+  .light .lead,.solution .lead{color:var(--ink-soft)}
+  .mark{color:var(--marigold)}
+  .dark .mark,.darker .mark,.problem .mark{color:var(--sampaguita)}
+  .src{margin-top:clamp(1rem,2.4vh,1.6rem);font-size:.82rem;font-style:italic;line-height:1.45;color:var(--ink-soft)}
+  .dark .src,.darker .src,.problem .src{color:var(--cream-soft)}
+  .kicker-line{margin-top:clamp(1.4rem,3vh,2.1rem);font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2vw,1.6rem);line-height:1.35;color:var(--cream);max-width:46ch}
+  .light .kicker-line,.solution .kicker-line{color:var(--ink)}
+
+  /* ---------- title ---------- */
+  .title-kicker{font-size:clamp(.72rem,1.1vw,.85rem);font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--sampaguita);margin-bottom:1.6rem;line-height:1.5}
+  .light .title-kicker,.solution .title-kicker{color:var(--marigold-deep)}
+  .title-sub{margin-top:1.4rem;font-size:clamp(1.05rem,1.9vw,1.45rem);color:var(--cream-soft);max-width:44ch;line-height:1.4}
+  .light .title-sub,.solution .title-sub{color:var(--ink-soft)}
+
+  /* ---------- big statement quote ---------- */
+  .bigquote{font-family:var(--serif);font-weight:400;font-style:italic;quotes:none;
+    font-size:clamp(1.9rem,4.6vw,3.6rem);line-height:1.08;letter-spacing:-.02em;display:block;
+    color:var(--cream);max-width:22ch}
+  .bigquote em{color:var(--sampaguita);font-style:italic}
+  .solution .bigquote{color:var(--ink)}
+  .solution .bigquote em{color:var(--marigold-deep)}
+
+  /* ---------- big stat trio ---------- */
+  .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.1rem,2.6vw,2.2rem);margin-top:clamp(1.3rem,3vh,2.2rem);align-items:start}
+  .trio.two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:44rem}
+  .tstat{display:flex;flex-direction:column;gap:.5rem}
+  .tstat b{font-family:var(--serif);font-weight:700;font-size:clamp(2.6rem,6.2vw,4.6rem);line-height:.9;letter-spacing:-.03em;color:var(--marigold)}
+  .dark .tstat b,.darker .tstat b,.problem .tstat b{color:var(--sampaguita)}
+  .problem .tstat b{color:var(--ember)}
+  .tstat p{font-size:clamp(.92rem,1.25vw,1.06rem);line-height:1.45;color:var(--ink-soft)}
+  .dark .tstat p,.darker .tstat p,.problem .tstat p{color:var(--cream-soft)}
+  .tstat .cite{font-size:.72rem;font-style:italic;line-height:1.4;color:var(--ink-soft);opacity:.72;margin-top:auto;padding-top:.5rem}
+  .dark .tstat .cite,.darker .tstat .cite,.problem .tstat .cite{color:var(--cream-soft)}
+
+  /* ---------- cost equation ---------- */
+  .equation{display:flex;flex-direction:column;gap:.5rem;margin-top:clamp(1rem,2.4vh,1.6rem);max-width:38rem}
+  .erow{display:grid;grid-template-columns:1fr auto;gap:1.4rem;align-items:baseline;
+    border-bottom:1px solid rgba(247,241,232,.14);padding-bottom:.5rem}
+  .erow .lb{font-size:clamp(.94rem,1.3vw,1.1rem);line-height:1.35;color:var(--cream-soft)}
+  .erow .vl{font-family:var(--serif);font-weight:700;font-variant-numeric:tabular-nums;
+    font-size:clamp(1.4rem,2.6vw,2.1rem);letter-spacing:-.02em;color:var(--cream);white-space:nowrap}
+  .erow.grand{border-bottom:0;padding-top:.3rem}
+  .erow.grand .lb{color:var(--cream);font-weight:700}
+  .erow.grand .vl{font-size:clamp(2.4rem,5.6vw,4.2rem);color:var(--ember)}
+  .exclusion{margin-top:.7rem;font-size:clamp(.86rem,1.15vw,1rem);line-height:1.5;color:var(--ember);max-width:44ch}
+
+  /* ---------- cost / blunt list ---------- */
+  .costlist{display:flex;flex-direction:column;gap:clamp(.55rem,1.4vh,.95rem);margin-top:clamp(1.1rem,2.6vh,1.7rem);max-width:56ch}
+  .costlist li{list-style:none;position:relative;padding-left:1.9rem;font-size:clamp(.96rem,1.4vw,1.18rem);line-height:1.42}
+  .costlist li span{position:absolute;left:0;top:0;color:var(--marigold);font-weight:800}
+  .dark .costlist li span,.darker .costlist li span{color:var(--sampaguita)}
+
+  /* ---------- close ---------- */
+  .close-q{font-family:var(--serif);font-style:italic;font-size:clamp(1.9rem,4.4vw,3.3rem);
+    line-height:1.14;letter-spacing:-.02em;color:var(--cream);max-width:24ch}
+  .close-q .lead-in{display:block;font-size:.5em;font-style:normal;font-family:var(--sans);
+    font-weight:700;letter-spacing:.02em;color:var(--cream-soft);margin-bottom:.9rem}
+  .close-q em{color:var(--sampaguita);font-style:italic}
+
+  /* ================================================================
+     FEATURE MOCKUPS — reused wholesale from pitch/bhw-connect-who.html:
+     the two-column narrative+device layout, the phone/laptop device frame,
+     and the .app-scope component system (course hero/module list/quiz, the
+     assessor return-demonstration checklist, the certificate + QR).
+     ================================================================ */
+  .demo2{display:grid;grid-template-columns:minmax(0,32fr) minmax(0,68fr);gap:clamp(1.6rem,3.6vw,3.6rem);align-items:center}
+  .demo2 .col-l{display:flex;flex-direction:column;gap:1rem;min-width:0}
+  .demo2 .col-r{display:flex;flex-direction:column;align-items:center;gap:1rem;min-width:0}
+  .demo2 h2{font-size:clamp(2rem,3.6vw,3.1rem);color:var(--ink);line-height:1.1;margin-bottom:.2rem}
+  .demo2 .sub{color:var(--ink-soft);line-height:1.5;font-size:clamp(1.15rem,1.6vw,1.4rem)}
+  .ptag{display:inline-block;vertical-align:middle;margin-left:.6rem;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:999px;
+    background:rgba(184,78,18,.1);color:var(--marigold-deep);border:1px solid rgba(184,78,18,.32)}
+  .callouts{display:flex;flex-direction:column;gap:.85rem;margin-top:.5rem}
+  .callouts li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start;
+    font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.48;color:var(--ink-soft)}
+  .callouts li i{font-style:normal;width:28px;height:28px;border-radius:50%;background:var(--marigold-deep);
+    color:#fff;font-size:.85rem;font-weight:800;display:grid;place-items:center;margin-top:.08rem;flex:0 0 auto}
+  .callouts li b{color:var(--ink);font-weight:700}
+  .demo-note{margin-top:.9rem;font-size:.92rem;font-style:italic;color:var(--ink-soft);opacity:.85;line-height:1.42;max-width:70ch}
+
+  /* device frames
+     Width is viewport-relative (clamp), not a fixed px, with a max-width
+     safety net: a fixed-px laptop does not shrink in a narrow .col-r on a
+     small projector, so it overflows past its grid column and overlaps the
+     text column next to it — that was the earlier reported bug. Height
+     stays a plain px, sized to the actual content on each slide (not
+     vh-based: tying it to viewport height either crops the rubric rows on a
+     short screen or leaves a blank gap on a tall one, since the content
+     inside is fixed-px and does not reflow with the frame). fit() still
+     scales the whole slide — box included — uniformly to the viewport
+     afterward, which is where the actual small-projector adaptation
+     happens; on a roomy screen that also means the whole slide, text
+     included, scales up further than a hard-coded box would allow. Both
+     the frame sizes and the .app-scope type scale below are deliberately
+     large — a projector audience reads this from the back of the room, not
+     off a laptop screen up close. */
+  .dev-phone{width:clamp(270px,32vw,400px);max-width:100%;flex:0 0 auto;background:#0c0c0d;border-radius:38px;padding:12px;box-shadow:0 26px 54px -20px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06) inset}
+  .dev-phone .notch{height:20px;display:flex;justify-content:center;align-items:center}
+  .dev-phone .notch::before{content:"";width:110px;height:6px;border-radius:999px;background:#2a2a2c}
+  .dev-phone .glass{border-radius:28px;overflow:hidden;height:620px;display:flex;flex-direction:column}
+  .dev-laptop{width:clamp(500px,60vw,880px);max-width:100%;flex:0 0 auto}
+  .dev-laptop .lid{background:#0c0c0d;border-radius:15px 15px 0 0;padding:10px 10px 0;box-shadow:0 26px 54px -22px rgba(0,0,0,.5)}
+  .dev-laptop .glass{border-radius:8px 8px 0 0;overflow:hidden;height:540px;display:flex;flex-direction:column}
+  .dev-laptop .base{height:14px;background:linear-gradient(#161616,#0c0c0d);border-radius:0 0 13px 13px;box-shadow:0 10px 20px -12px rgba(0,0,0,.6)}
+  .dev-laptop .base::after{content:"";display:block;width:88px;height:5px;margin:3px auto 0;border-radius:0 0 8px 8px;background:#2a2a2c}
+
+  .app-scope{
+    --a-canvas:#f6f2ed; --a-ink:#2b2420;
+    --a-primary:#b84e12; --a-primary-display:#e8641c; --a-secondary:#0c7c7e;
+    --a-celebration:#ffc857; --a-success:#1f7a45; --a-warning:#8f5a08;
+    --a-ink-70:color-mix(in srgb,var(--a-ink) 70%,transparent);
+    --a-ink-20:color-mix(in srgb,var(--a-ink) 20%,transparent);
+    --a-ink-15:color-mix(in srgb,var(--a-ink) 15%,transparent);
+    --a-ink-10:color-mix(in srgb,var(--a-ink) 10%,transparent);
+    --a-ink-05:color-mix(in srgb,var(--a-ink) 5%,transparent);
+    --a-sec-10:color-mix(in srgb,var(--a-secondary) 10%,transparent);
+    background:var(--a-canvas);color:var(--a-ink);
+    height:100%;display:flex;flex-direction:column;text-align:left;
+  }
+  .app-scope .hdr{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 19px;border-bottom:1px solid var(--a-ink-10);flex:0 0 auto}
+  .app-scope .hdr .wordmark{font-weight:700;color:var(--a-primary);font-size:17px}
+  .app-scope .hdr .mini{font-size:14px;color:var(--a-ink-70)}
+  .app-scope .hdr .who{font-size:14px;color:var(--a-ink-70)}
+  .app-scope .tabs{display:flex;gap:19px;padding:10px 19px 0;font-size:15px;font-weight:600;border-bottom:1px solid var(--a-ink-10);flex:0 0 auto}
+  .app-scope .tabs a{color:var(--a-secondary);text-decoration:none;padding-bottom:10px;border-bottom:2px solid transparent}
+  .app-scope .tabs a.on{color:var(--a-ink);border-bottom-color:var(--a-primary)}
+  .app-scope .body{flex:1 1 auto;overflow-y:auto;padding:17px;scrollbar-width:none;-ms-overflow-style:none;
+    -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent 100%)}
+  .app-scope .body::-webkit-scrollbar{width:0;height:0;display:none}
+  .app-scope .body.pad{padding:18px 20px}
+  .app-scope .sec{font-size:17px;font-weight:650;margin:0 0 10px}
+
+  .app-scope .chero{display:flex;gap:16px;align-items:center;padding:16px;border-radius:16px;background:linear-gradient(135deg,color-mix(in srgb,var(--a-secondary) 12%,var(--a-canvas)),var(--a-canvas));border:1px solid var(--a-ink-10)}
+  .app-scope .ring{--p:44;width:72px;height:72px;border-radius:999px;flex:0 0 auto;background:conic-gradient(var(--a-secondary) calc(var(--p)*1%),var(--a-ink-10) 0);display:grid;place-items:center}
+  .app-scope .ring::before{content:"";width:56px;height:56px;border-radius:999px;background:var(--a-canvas);grid-area:1/1}
+  .app-scope .ring b{grid-area:1/1;font-size:15px;font-weight:700;z-index:1;font-variant-numeric:tabular-nums}
+  .app-scope .chero h4{margin:0 0 4px;font-size:18px;line-height:1.25}
+  .app-scope .chero p{margin:0;font-size:14px;color:var(--a-ink-70)}
+  .app-scope .mods{display:flex;flex-direction:column;gap:9px;margin-top:15px}
+  .app-scope .mod{display:flex;align-items:center;gap:12px;border:1px solid var(--a-ink-10);border-radius:12px;padding:11px 14px}
+  .app-scope .mod .k{width:30px;height:30px;flex:0 0 auto;border-radius:9px;display:grid;place-items:center;font-size:14px;font-weight:700}
+  .app-scope .mod .k.done{background:var(--a-success);color:#fff}
+  .app-scope .mod .k.now{background:var(--a-primary);color:#fff}
+  .app-scope .mod .k.todo{background:var(--a-ink-10);color:var(--a-ink-70)}
+  .app-scope .mod .t{flex:1;min-width:0}
+  .app-scope .mod .t b{display:block;font-size:15px;font-weight:600;line-height:1.3}
+  .app-scope .mod .t span{font-size:13px;color:var(--a-ink-70);line-height:1.3}
+  .app-scope .mod .fmt{font-size:12px;color:var(--a-ink-70);white-space:nowrap}
+
+  .app-scope .quiz{border:1px solid var(--a-ink-10);border-radius:14px;padding:17px;margin-top:16px}
+  .app-scope .quiz .q{font-size:16px;font-weight:600;margin-bottom:13px;line-height:1.4}
+  .app-scope .opt{display:flex;align-items:center;gap:12px;border:1px solid var(--a-ink-20);border-radius:11px;padding:12px 14px;margin-bottom:8px;font-size:15px;line-height:1.35}
+  .app-scope .opt .k{width:22px;height:22px;border-radius:999px;border:2px solid var(--a-ink-20);flex:0 0 auto}
+  .app-scope .opt.ok{border-color:var(--a-success);background:color-mix(in srgb,var(--a-success) 10%,transparent)}
+  .app-scope .opt.ok .k{border-color:var(--a-success);background:var(--a-success)}
+  .app-scope .verdict{margin-top:10px;font-size:15px;font-weight:600;color:var(--a-success);line-height:1.4}
+
+  /* return-demonstration checklist */
+  .app-scope .rd-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:13px}
+  .app-scope .rd-scale{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--a-ink-70);line-height:1.4}
+  .app-scope .rd-scale b{color:var(--a-ink)}
+  .app-scope .rd-sec{font-size:14px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--a-ink-70);margin:14px 0 8px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .app-scope .rd-sec .sub{font-weight:700;color:var(--a-secondary);font-variant-numeric:tabular-nums;letter-spacing:0;text-transform:none}
+  .app-scope .rd-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;border:1px solid var(--a-ink-10);border-radius:10px;padding:9px 13px;margin-bottom:7px;font-size:14px;line-height:1.32}
+  .app-scope .rd-scores{display:flex;gap:6px;flex:0 0 auto}
+  .app-scope .rd-scores i{width:25px;height:25px;border-radius:7px;border:1.5px solid var(--a-ink-20);display:grid;place-items:center;font-style:normal;font-size:12px;font-weight:700;color:var(--a-ink-70)}
+  .app-scope .rd-scores i.on{background:var(--a-success);border-color:var(--a-success);color:#fff}
+  .app-scope .rd-scores i.on.part{background:var(--a-warning);border-color:var(--a-warning)}
+  .app-scope .foot{border-top:1px solid var(--a-ink-10);padding:13px 19px 16px;flex:0 0 auto;background:var(--a-ink-05)}
+  .app-scope .rd-sum{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .app-scope .rd-sum .nums{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--a-ink-70)}
+  .app-scope .rd-sum .nums b{display:block;font-size:19px;color:var(--a-ink);font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+  .app-scope .rd-verdict{font-size:14px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border-radius:999px;background:var(--a-success);color:#fff}
+  .app-scope .btn{border-radius:9px;padding:8px 14px;font-size:14px;font-weight:600;display:inline-block}
+  .app-scope .btn.p{background:var(--a-primary);color:#fff}
+
+  /* certificate */
+  .app-scope .cert{width:100%;max-width:520px;margin:0 auto;border-radius:16px;overflow:hidden;border:1px solid var(--a-ink-10);box-shadow:0 16px 40px -22px rgba(0,0,0,.4)}
+  .app-scope .cert .band{height:9px;background:linear-gradient(90deg,var(--a-primary-display),var(--a-celebration),var(--a-secondary))}
+  .app-scope .cert .in{padding:22px 26px;text-align:center}
+  .app-scope .cert .seal{width:58px;height:58px;margin:0 auto 9px;border-radius:999px;background:var(--a-celebration);display:grid;place-items:center;font-size:25px;box-shadow:0 0 0 6px color-mix(in srgb,var(--a-celebration) 30%,transparent)}
+  .app-scope .cert .k{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--a-ink-70);font-weight:700}
+  .app-scope .cert h3{margin:7px 0 3px;font-size:18px;line-height:1.25}
+  .app-scope .cert .nm{font-size:26px;font-weight:750;color:var(--a-primary-display);margin:10px 0 5px;letter-spacing:-.3px}
+  .app-scope .cert .ds{font-size:13px;color:var(--a-ink-70);max-width:40ch;margin:0 auto;line-height:1.5}
+  .app-scope .cert .ft{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-top:18px;text-align:left}
+  .app-scope .cert .ft .sig{font-size:12px;color:var(--a-ink-70)}
+  .app-scope .cert .ft .sig b{display:block;font-size:14px;color:var(--a-ink)}
+  .app-scope .qr{width:68px;height:68px;border-radius:8px;background:#fff;padding:4px}
+  .app-scope .vfy{font-size:11px;color:var(--a-ink-70);text-align:center;margin-top:4px}
+
+  .rollup-kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;width:100%;max-width:380px}
+  .rollup-kpis .kpi{border:1px solid rgba(36,28,23,.12);border-radius:11px;padding:12px 14px;background:rgba(255,255,255,.7);display:flex;flex-direction:column;gap:3px}
+  .rollup-kpis .kpi .l{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--ink-soft)}
+  .rollup-kpis .kpi .v{font-size:23px;font-weight:700;letter-spacing:-.3px;font-variant-numeric:tabular-nums;color:var(--ink)}
+
+  /* neutral (non-progress) list-row icon, for KB categories / forum threads /
+     survey list — the same .mod row the course-module list uses, reused
+     rather than building three near-identical list components */
+  .app-scope .mod .k.plain{background:var(--a-secondary);color:#fff}
+
+  /* small tag/category chip — forum thread tags */
+  .app-scope .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.03em;
+    padding:3px 9px;border-radius:999px;background:var(--a-sec-10);color:var(--a-secondary);white-space:nowrap}
+
+  /* chat log — Chat Guide mockup */
+  .app-scope .log{display:flex;flex-direction:column;gap:13px}
+  .app-scope .bub{max-width:88%;padding:11px 14px;border-radius:16px;font-size:14px;line-height:1.5}
+  .app-scope .bub.u{margin-left:auto;background:var(--a-primary);color:#fff;border-bottom-right-radius:5px}
+  .app-scope .bub.b{background:var(--a-canvas);border:1px solid var(--a-ink-10);border-bottom-left-radius:5px}
+  .app-scope .dym{border:1px solid var(--a-ink-15);border-radius:12px;padding:10px 13px;font-size:13px;color:var(--a-ink-70);display:flex;flex-direction:column;gap:4px}
+  .app-scope .dym b{font-weight:600;color:var(--a-ink)}
+  .app-scope .dym span{color:var(--a-secondary);font-weight:600}
+
+  /* announcement feed card */
+  .app-scope .accard{border:1px solid var(--a-ink-10);border-radius:13px;padding:14px 16px;margin-bottom:11px}
+  .app-scope .accard .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:5px}
+  .app-scope .accard b{font-size:15px;font-weight:650;line-height:1.3}
+  .app-scope .accard .meta{font-size:12px;color:var(--a-ink-70);white-space:nowrap;flex:0 0 auto}
+  .app-scope .accard p{font-size:13px;color:var(--a-ink-70);line-height:1.42;margin:0}
+
+  /* ================================================================
+     STEP BUILDS
+     ================================================================ */
+  [data-step]{opacity:0;visibility:hidden;transition:opacity .32s ease,visibility .32s}
+  [data-step].shown{opacity:1;visibility:visible}
+  .measuring [data-step]{opacity:1;visibility:visible;transition:none}
+
+  /* ---------- nav chrome ---------- */
+  .chrome{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;
+    justify-content:space-between;gap:1rem;padding:.65rem clamp(1rem,3vw,2rem);pointer-events:none;
+    opacity:1;transition:opacity .4s ease}
+  .chrome.hidden{opacity:0}
+  .actbar{display:flex;gap:9px;pointer-events:auto;align-items:center;flex:1 1 auto;margin-right:1.5rem}
+  .actbar .seg2{flex:1 1 0;min-width:0;cursor:pointer;background:none;border:0;padding:0;
+    display:flex;flex-direction:column;gap:5px;text-align:left;overflow:hidden}
+  .actbar .seg2 .bar{height:3px;border-radius:2px;background:rgba(180,160,140,.34);transition:background .3s}
+  .actbar .seg2 .lb{font-size:.58rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    color:rgba(180,160,140,.6);transition:color .3s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .actbar .seg2.on .bar{background:var(--marigold)}
+  .actbar .seg2.on .lb{color:var(--marigold)}
+  body[data-ground="light"] .actbar .seg2 .bar{background:rgba(36,28,23,.2)}
+  body[data-ground="light"] .actbar .seg2 .lb{color:rgba(36,28,23,.42)}
+  body[data-ground="light"] .actbar .seg2.on .bar{background:var(--marigold)}
+  body[data-ground="light"] .actbar .seg2.on .lb{color:var(--marigold-deep)}
+  .navbtns{display:flex;align-items:center;gap:.5rem;pointer-events:auto}
+  .navbtns button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(180,160,140,.5);
+    background:rgba(255,255,255,.7);color:var(--ink);cursor:pointer;display:grid;place-items:center;
+    transition:.2s;backdrop-filter:blur(6px)}
+  .navbtns button:hover{background:var(--marigold);color:#fff;border-color:var(--marigold)}
+  .navbtns button:disabled{opacity:.35;cursor:default}
+  .counter{position:fixed;top:clamp(.9rem,2.6vh,1.6rem);right:clamp(1rem,3vw,2.2rem);z-index:20;
+    font-size:.76rem;font-weight:700;letter-spacing:.12em;font-variant-numeric:tabular-nums;
+    color:rgba(247,241,232,.55);transition:color .3s}
+  .brandtab{position:fixed;top:clamp(.9rem,2.6vh,1.6rem);left:clamp(1rem,3vw,2.2rem);z-index:20;
+    font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+    color:rgba(247,241,232,.55);transition:color .3s}
+  body[data-ground="light"] .counter,body[data-ground="light"] .brandtab{color:rgba(36,28,23,.46)}
+
+  /* ---------- presenter notes ---------- */
+  .notes{display:none}
+  .notespanel{position:fixed;left:0;bottom:0;z-index:30;max-width:min(42vw,560px);
+    max-height:52vh;overflow-y:auto;display:none;
+    background:rgba(6,22,25,.94);color:var(--cream);border-top-right-radius:12px;
+    border-top:1px solid var(--line-dark);border-right:1px solid var(--line-dark);
+    padding:1rem 1.2rem 1.3rem;font-size:.86rem;line-height:1.5;backdrop-filter:blur(8px)}
+  .notespanel.show{display:block}
+  .notespanel h4{font-size:.6rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--sampaguita);margin-bottom:.5rem}
+  .notespanel p{margin-bottom:.55rem}
+
+  /* ---------- overview ---------- */
+  .overview{position:fixed;inset:0;z-index:40;display:none;overflow-y:auto;
+    background:rgba(4,18,20,.97);padding:clamp(1.5rem,4vh,3rem) clamp(1rem,3vw,2.5rem)}
+  .overview.show{display:block}
+  .overview h3{color:var(--sampaguita);font-size:.68rem;font-weight:800;letter-spacing:.24em;
+    text-transform:uppercase;margin-bottom:1.2rem}
+  .ovgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.7rem}
+  .ovcard{text-align:left;cursor:pointer;background:rgba(255,255,255,.05);color:var(--cream);
+    border:1px solid var(--line-dark);border-radius:8px;padding:.7rem .85rem;font:inherit;
+    display:flex;flex-direction:column;gap:.3rem;transition:.18s}
+  .ovcard:hover{background:rgba(232,100,28,.18);border-color:var(--marigold)}
+  .ovcard.on{border-color:var(--marigold);background:rgba(232,100,28,.14)}
+  .ovcard .n{font-size:.6rem;font-weight:800;letter-spacing:.16em;color:var(--marigold)}
+  .ovcard .t{font-size:.86rem;font-weight:600;line-height:1.3}
+  .ovcard .a{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-soft)}
+
+  /* ---------- blank + legend ---------- */
+  .blank{position:fixed;inset:0;background:#000;z-index:50;display:none}
+  .blank.show{display:block}
+  .legend{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:45;
+    background:rgba(6,22,25,.95);color:var(--cream);border:1px solid var(--line-dark);
+    border-radius:12px;padding:1.2rem 1.6rem;display:none;font-size:.86rem;line-height:1.9;
+    backdrop-filter:blur(8px)}
+  .legend.show{display:block}
+  .legend b{color:var(--sampaguita);font-variant-numeric:tabular-nums;
+    display:inline-block;min-width:5.5rem}
+
+  /* ---------- no reflow, ever ---------- */
+  .slide{overscroll-behavior:none}
+  @media (max-width:760px){
+    .actbar .seg2 .lb{display:none}
+    .notespanel{max-width:100vw}
+    .demo2{grid-template-columns:1fr}
+  }
+  @media (max-height:520px){
+    .slide{padding-top:2.2rem;padding-bottom:2.4rem}
+    .slide.centered{padding-top:1.6rem}
+    .actbar .seg2 .lb{display:none}
+  }
+
+  /* portrait phones: ask for landscape rather than shrinking to a stamp */
+  .rotate{position:fixed;inset:0;z-index:60;display:none;place-items:center;text-align:center;
+    background:rgba(4,18,20,.94);color:var(--cream);padding:2rem}
+  .rotate div{max-width:22rem}
+  .rotate .ic{font-size:2.6rem;display:block;margin-bottom:.9rem}
+  .rotate b{display:block;font-size:1.1rem;margin-bottom:.5rem}
+  .rotate p{font-size:.86rem;line-height:1.5;color:var(--cream-soft)}
+  .rotate button{margin-top:1.1rem;font:inherit;font-size:.8rem;font-weight:700;letter-spacing:.06em;
+    background:transparent;color:var(--sampaguita);border:1px solid var(--sampaguita);
+    border-radius:999px;padding:.5rem 1rem;cursor:pointer}
+  @media (orientation:portrait) and (max-width:760px){
+    .rotate:not(.dismissed){display:grid}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .slide{transition:opacity .01s}
+    [data-step]{transition:opacity .01s}
+    .navbtns button,.ovcard{transition:none}
+  }
+
+  /* ---------- print / PDF fallback ---------- */
+  @media print{
+    @page{size:landscape;margin:0}
+    html,body{height:auto;overflow:visible;background:#fff}
+    .chrome,.counter,.brandtab,.notespanel,.overview,.blank,.legend{display:none!important}
+    .deck{position:static}
+    .slide{
+      position:relative;inset:auto;page-break-after:always;break-after:page;
+      opacity:1!important;visibility:visible!important;transform:none!important;
+      width:100%;height:100vh;overflow:hidden;
+      -webkit-print-color-adjust:exact;print-color-adjust:exact;
+    }
+    .slide:last-child{page-break-after:auto;break-after:auto}
+    .slide__inner{transform:none!important}
+    [data-step]{opacity:1!important;visibility:visible!important;transform:none!important}
+  }
+</style>
+
+<div class="brandtab">BHW Connect &middot; Phase 2.0</div>
+<div class="counter"><span id="cur">01</span> / <span id="tot">00</span></div>
+
+<div class="deck" id="deck">
+
+  <!-- 00 · TITLE -->
+  <section class="slide darker centered" data-act="">
+    <div class="slide__inner">
+      <p class="title-kicker">Courses pilot walkthrough</p>
+      <h1>BHW Connect Phase 2.0</h1>
+      <p class="title-sub">From one training, once — to a system that never stops. A walkthrough of the Courses feature, and what we're asking this room to test today.</p>
+    </div>
+    <aside class="notes">
+      <p>One sentence to set expectations: this is not a status report. It's an ask — try something, break it, tell us.</p>
+    </aside>
+  </section>
+
+  <!-- 00b · OUTLINE -->
+  <section class="slide darker centered" data-act="">
+    <div class="slide__inner">
+      <p class="title-kicker" style="margin-bottom:2rem">Session outline</p>
+      <ul class="costlist" style="max-width:46rem">
+        <li><span>1</span><strong>The Problem</strong> &mdash; what thirty years of training-as-an-event actually bought us.</li>
+        <li><span>2</span><strong>The Platform</strong> &mdash; BHW Connect Phase 2.0, and the Courses feature on it.</li>
+        <li><span>3</span><strong>The Ask</strong> &mdash; what to try today, and how to tell us what's broken.</li>
+      </ul>
+    </div>
+    <aside class="notes">
+      <p>Move through this fast — it's a map, not content.</p>
+    </aside>
+  </section>
+
+  <!-- 01 · INSANITY -->
+  <section class="slide darker centered" data-act="The Problem">
+    <div class="slide__inner">
+      <q class="bigquote" data-step="1">Insanity is doing the same thing over and over and expecting <em>a different result</em>.</q>
+      <p class="kicker-line" data-step="2">For thirty years, this is how we capacitated Barangay Health Workers.</p>
+      <p class="kicker-line" data-step="3">RA 7883, 1995. One training. One event. Then nothing, until the next one.</p>
+    </div>
+    <aside class="notes">
+      <p>Same opening as the CESR deck, on purpose — it's the same diagnosis, one level up: not one program's gap, the training model itself.</p>
+    </aside>
+  </section>
+
+  <!-- 02 · POOR UPTAKE -->
+  <section class="slide problem" data-act="The Problem">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> What the registry actually showed us</div>
+      <h2 class="tight">Training happened. Competence wasn't measured.</h2>
+      <div class="trio two">
+        <div class="tstat" data-step="1">
+          <b>45%</b>
+          <p>trained on the BHW Reference Manual. <strong>Trained &mdash; not assessed.</strong></p>
+          <p class="cite">BHW Connect Phase 1 registry, BLHSD.</p>
+        </div>
+        <div class="tstat" data-step="2">
+          <b>2%</b>
+          <p>hold the TESDA Barangay Health Services NC II &mdash; the one credential that <em>is</em> an assessment.</p>
+          <p class="cite">BHW Connect Phase 1 registry, BLHSD.</p>
+        </div>
+      </div>
+      <p class="kicker-line" data-step="3">The ceiling was never the BHW.</p>
+    </div>
+    <aside class="notes">
+      <p>Same two stats as the CESR deck — same registry, same source line. Don't invent a third number here.</p>
+    </aside>
+  </section>
+
+  <!-- 03 · COST OF A 3-DAY TRAINING -->
+  <section class="slide problem" data-act="The Problem">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> What one training costs</div>
+      <h2 class="tight">&#8369;1.98 billion &mdash; and that buys one training, once.</h2>
+      <div class="equation">
+        <div class="erow" data-step="1"><span class="lb">Board and lodging, per BHW, per day</span><span class="vl">&#8369;2,200</span></div>
+        <div class="erow" data-step="2"><span class="lb">&times; a three-day training</span><span class="vl">&#8369;6,600</span></div>
+        <div class="erow grand" data-step="3"><span class="lb">&times; 300,000 BHWs</span><span class="vl">&#8369;1.98 B</span></div>
+      </div>
+      <p class="exclusion" data-step="4">Excludes transport. And it buys one version of a trained workforce, frozen on the day the batch ended.</p>
+    </div>
+    <aside class="notes">
+      <p>Same figures as the CESR deck — presenter/DOH board-and-lodging rate. Don't recompute; reuse.</p>
+    </aside>
+  </section>
+
+  <!-- 04 · PIVOT -->
+  <section class="slide solution centered" data-act="The Platform">
+    <div class="slide__inner">
+      <q class="bigquote" data-step="1">Insanity starts to stop <em>today</em>.</q>
+      <p class="kicker-line" data-step="2">Not by training harder. By building a system that trains &mdash; and keeps training &mdash; every BHW, individually.</p>
+    </div>
+    <aside class="notes">
+      <p>The turn. Hold the pause after the quote before advancing.</p>
+    </aside>
+  </section>
+
+  <!-- 05 · PHASE 2.0 LAUNCH -->
+  <section class="slide darker centered" data-act="The Platform">
+    <div class="slide__inner">
+      <p class="title-kicker">The start of the fulfillment of the promise</p>
+      <h1>BHW Connect Phase 2.0</h1>
+      <p class="title-sub">The BHW-facing application: courses, coaching and certification, delivered to every registered BHW individually &mdash; not cascaded through a representative who was in the room.</p>
+    </div>
+    <aside class="notes">
+      <p>Beat before the mockups. No numbers here, just the reframe.</p>
+    </aside>
+  </section>
+
+  <!-- 06 · FEATURE 1 — COURSES -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 1 &middot; Courses</div>
+          <h2>Self-paced courses, in her own pocket.</h2>
+          <p class="sub">Not a parallel curriculum &mdash; the same reference material, authored as text, video and quiz modules, and completed individually rather than cascaded through a representative.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span>Text, video and quiz modules, authored by admins &mdash; <b>not one-size-fits-all</b>.</span></li>
+            <li data-step="2"><i>2</i><span><b>80% passing score, three attempts</b> by default &mdash; both are policy settings, configurable per course.</span></li>
+            <li data-step="3"><i>3</i><span>Finishing every module <b>queues an in-person skills demonstration</b> automatically.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; module names and the quiz item shown are illustrative, not the real Chapter I content.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Courses</span></div>
+            <div class="body">
+              <div class="chero">
+                <div class="ring" style="--p:44"><b>4/9</b></div>
+                <div><h4>BHW Reference Manual</h4><p>Chapter I &middot; BHWs and Their Barangay</p></div>
+              </div>
+              <div class="mods">
+                <div class="mod"><div class="k done">&#10003;</div><div class="t"><b>1. Sino ang BHW</b><span>Text &middot; 6 min</span></div><div class="fmt">Done</div></div>
+                <div class="mod"><div class="k done">&#10003;</div><div class="t"><b>2. Ang Barangay</b><span>Video &middot; 4 min</span></div><div class="fmt">Done</div></div>
+                <div class="mod"><div class="k now">5</div><div class="t"><b>5. Pakikipag-ugnayan</b><span>Exercise &middot; 3 items</span></div><div class="fmt">In progress</div></div>
+                <div class="mod"><div class="k todo">&#128274;</div><div class="t"><b>9. Pagsusuri</b><span>Chapter exam</span></div><div class="fmt">Locked</div></div>
+              </div>
+              <div class="quiz">
+                <div class="q">Kanino unang lalapit ang isang BHW kapag may nakitang senyales ng sakit sa barangay?</div>
+                <div class="opt"><span class="k"></span><span>Ang pinakamalapit na ospital</span></div>
+                <div class="opt ok"><span class="k"></span><span>Ang kanyang supervisor o midwife</span></div>
+                <div class="verdict">Pumasa &middot; 85% (kailangan 80%)</div>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>Point at the ring first (progress), then the locked module (gated), then the quiz verdict (the 80% threshold is real, from the AF-01 manifest).</p>
+    </aside>
+  </section>
+
+  <!-- 07 · FEATURE 2 — ASSESSMENT -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 2 &middot; Assessment</div>
+          <h2>On-the-ground assessment, scored live.</h2>
+          <p class="sub">Finishing the course doesn't certify anyone. It queues a real, in-person return-demonstration &mdash; graded on the spot, not re-keyed from a paper form later.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span>A new <b>assessor</b> role &mdash; anyone qualified can claim an open assessment from a queue.</span></li>
+            <li data-step="2"><i>2</i><span>The same rubric structure as any DOH skills checklist, <b>digitized, not reinvented</b>.</span></li>
+            <li data-step="3"><i>3</i><span>Scored as the assessor grades &mdash; the result is <b>a record, not a form in a drawer</b>.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; the rubric rows and name shown are illustrative, not a real assessment record.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-laptop"><div class="lid"><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect &middot; Admin</span><span class="who">Assessor queue</span></div>
+            <div class="tabs"><a class="on">Assessments</a><a>Chat</a><a>Reports</a><a>Training</a></div>
+            <div class="body pad">
+              <div class="rd-head">
+                <div>
+                  <h3 class="sec" style="margin:0">Return-demonstration &middot; Chapter I</h3>
+                  <div style="font-size:13px;color:var(--a-ink-70);margin-top:4px">Candidate: Rosa D. Mendoza</div>
+                </div>
+                <div class="rd-scale"><span><b>3</b> Independent</span><span><b>2</b> With prompting</span><span><b>1</b> With help</span><span><b>0</b> Not shown</span></div>
+              </div>
+              <div class="rd-sec">Household visit<span class="sub">8 / 9 pts</span></div>
+              <div class="rd-row"><span>Greets household, confirms purpose</span><span class="rd-scores"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
+              <div class="rd-row"><span>Uses correct referral pathway</span><span class="rd-scores"><i>0</i><i>1</i><i class="on part">2</i><i>3</i></span></div>
+              <div class="rd-row"><span>Completes signal log entry</span><span class="rd-scores"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
+            </div>
+            <div class="foot">
+              <div class="rd-sum">
+                <div class="nums"><span><b>3</b> criteria scored</span><span><b>8 / 9</b> pts</span><span><b>89%</b> score</span></div>
+                <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+                  <span class="rd-verdict">Competent</span>
+                  <span class="btn p">Certify BHW</span>
+                </div>
+              </div>
+            </div>
+          </div></div></div><div class="base"></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>Point at the "Certify BHW" button last &mdash; it's the bridge to the next slide.</p>
+    </aside>
+  </section>
+
+  <!-- 08 · FEATURE 3 — CERTIFICATION -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 3 &middot; Certification</div>
+          <h2>A QR-verified certificate, the moment she passes.</h2>
+          <p class="sub">Competency stops being a piece of paper in a filing cabinet and becomes a record DOH can query &mdash; at any tier of the hierarchy.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span>A <b>QR-verifiable certificate</b>, issued the moment she passes &mdash; no waiting for a batch to close.</span></li>
+            <li data-step="2"><i>2</i><span><b>Publicly verifiable without a login</b> &mdash; an LGU can check a credential in seconds.</span></li>
+            <li data-step="3"><i>3</i><span>Written to the same registry Phase 1 built &mdash; the answer to <b>"which BHWs here are certified?"</b></span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; the name and the roll-up numbers shown are illustrative.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Certificate</span></div>
+            <div class="body" style="display:grid;place-items:center">
+              <div class="cert"><div class="band"></div><div class="in">
+                <div class="seal">&#127942;</div>
+                <div class="k">Certificate of Competency</div>
+                <h3>BHW Reference Manual &middot; Chapter I</h3>
+                <div style="font-size:12px;color:var(--a-ink-70);margin-top:6px">Awarded to</div>
+                <div class="nm">Rosa D. Mendoza</div>
+                <p class="ds">Completed all required lessons and passed the chapter assessment, verified by an assigned assessor.</p>
+                <div class="ft">
+                  <div class="sig"><b>J. Santos, RN</b>Assessor</div>
+                  <div><div class="qr" id="cert-qr"></div><div class="vfy">Scan to verify</div></div>
+                </div>
+              </div></div>
+            </div>
+          </div></div></div>
+          <div class="rollup-kpis" data-step="4">
+            <div class="kpi"><span class="l">Certified</span><span class="v">&mdash;</span></div>
+            <div class="kpi"><span class="l">In training</span><span class="v">&mdash;</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>The roll-up tile is deliberately blank &mdash; no pilot has run yet. Say that out loud rather than filling it with a placeholder number.</p>
+    </aside>
+  </section>
+
+  <!-- 09 · FEATURE 4 — CHAT GUIDE -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 4 &middot; Chat Guide</div>
+          <h2>A question, answered in her own words.</h2>
+          <p class="sub">The same matching engine behind the Courses quizzes resolves what she actually meant &mdash; typos, Taglish, all of it &mdash; against admin-authored content.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span><b>Rule-based matching</b>, scored against authored content &mdash; no paid AI API in the answer path.</span></li>
+            <li data-step="2"><i>2</i><span><b>Red-flag rules</b> intercept an urgent symptom before scoring even finishes, and route it for follow-up.</span></li>
+            <li data-step="3"><i>3</i><span>A question nobody could answer <b>becomes the next Knowledge Base entry</b> &mdash; not a dead end.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; the conversation shown is illustrative and requires DOH clinical validation before any BHW-facing use.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Chat Guide</span></div>
+            <div class="body">
+              <div class="log">
+                <div class="bub u">pano po malaman kung late na po yung bakuna ng bata</div>
+                <div class="dym"><b>Did you mean:</b> <span>Paano malaman kung late na ang bakuna ng bata?</span></div>
+                <div class="bub b">Hindi na po kailangang ulitin mula umpisa &mdash; ipagpatuloy lang sa susunod na iskedyul. Gusto niyo po bang makita ang buong catch-up schedule?</div>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>Point at the "did you mean" box &mdash; that's the rule-based match, not a model guessing.</p>
+    </aside>
+  </section>
+
+  <!-- 10 · FEATURE 5 — KNOWLEDGE BASE -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 5 &middot; Knowledge Base</div>
+          <h2>The same answers, browsable on her own.</h2>
+          <p class="sub">Admin-authored, organized by category &mdash; the content the Chat Guide draws its answers from, open to read anytime, not just when she asks.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span>Organized by category, not a folder of PDFs &mdash; <b>the same entries the Chat Guide matches against</b>.</span></li>
+            <li data-step="2"><i>2</i><span>Every entry carries an <b>owner and a review-due date</b> &mdash; nothing goes stale silently.</span></li>
+            <li data-step="3"><i>3</i><span>A weekly ritual reviews the gap queue and what's due &mdash; <b>content upkeep is a schedule, not a memory</b>.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; category names and entry counts shown are illustrative.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Knowledge Base</span></div>
+            <div class="body">
+              <div class="mods" style="margin-top:0">
+                <div class="mod"><div class="k plain">M</div><div class="t"><b>Maternal &amp; Child Health</b><span>12 entries</span></div><div class="fmt">&rsaquo;</div></div>
+                <div class="mod"><div class="k plain">I</div><div class="t"><b>Immunization</b><span>9 entries</span></div><div class="fmt">&rsaquo;</div></div>
+                <div class="mod"><div class="k plain">N</div><div class="t"><b>Nutrition</b><span>7 entries</span></div><div class="fmt">&rsaquo;</div></div>
+                <div class="mod"><div class="k plain">F</div><div class="t"><b>First Aid &amp; Referral</b><span>6 entries</span></div><div class="fmt">&rsaquo;</div></div>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>This is /kb in the real app &mdash; a BHW-facing browse screen, not just an admin authoring tool.</p>
+    </aside>
+  </section>
+
+  <!-- 11 · FEATURE 6 — FORUM -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 6 &middot; Forum</div>
+          <h2>One place for what used to live in a group chat.</h2>
+          <p class="sub">Any BHW, admin or assessor can start a thread &mdash; visible app-wide, not boxed into her own barangay or region.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span><b>App-wide visibility</b> &mdash; a question from Marinduque is visible in Palawan, not walled off by hierarchy.</span></li>
+            <li data-step="2"><i>2</i><span><b>Post first, moderate after</b> &mdash; a thread is hidden if it needs to be, never silently deleted.</span></li>
+            <li data-step="3"><i>3</i><span>Tagged and categorized, so a thread from six months ago is <b>still findable</b>.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; thread titles and reply counts shown are illustrative.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Forum</span></div>
+            <div class="body">
+              <div class="mods" style="margin-top:0">
+                <div class="mod"><div class="k plain">&#128172;</div><div class="t"><b>Paano mag-refer ng may sugat na may amoy?</b><span><span class="tag">First Aid</span></span></div><div class="fmt">14 replies</div></div>
+                <div class="mod"><div class="k plain">&#128172;</div><div class="t"><b>Schedule ng bakuna kapag late</b><span><span class="tag">Immunization</span></span></div><div class="fmt">6 replies</div></div>
+                <div class="mod"><div class="k plain">&#128172;</div><div class="t"><b>Tamang paraan ng pag-CBG</b><span><span class="tag">NCD</span></span></div><div class="fmt">22 replies</div></div>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>The tag is the category; the reply count is the thing that makes this feel alive rather than empty.</p>
+    </aside>
+  </section>
+
+  <!-- 12 · FEATURE 7 — SURVEYS -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 7 &middot; Surveys</div>
+          <h2>Feedback that reaches exactly who it's for.</h2>
+          <p class="sub">Admin-authored and deployed to the hierarchy tier it's meant for &mdash; a needs assessment for Palawan doesn't have to go to Marinduque.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span>Multi-format questions &mdash; not just a five-point scale.</span></li>
+            <li data-step="2"><i>2</i><span><b>Anonymity is a per-survey setting</b>, chosen when it's authored, not assumed.</span></li>
+            <li data-step="3"><i>3</i><span>Responses <b>roll up into tallied results</b> &mdash; and are deliberately kept out of the audit trail.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; survey titles and the question shown are illustrative.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Surveys</span></div>
+            <div class="body">
+              <div class="mods" style="margin-top:0">
+                <div class="mod"><div class="k plain">&#128203;</div><div class="t"><b>BHW Kit Needs Assessment</b><span>2026 Q3 &middot; Palawan</span></div><div class="fmt">Open</div></div>
+                <div class="mod"><div class="k plain">&#128203;</div><div class="t"><b>Post-Training Feedback</b><span>Refresher, July 2026</span></div><div class="fmt">Open</div></div>
+              </div>
+              <div class="quiz" style="margin-top:14px">
+                <div class="q">Ilang beses po kayo na-training sa nakaraang taon?</div>
+                <div class="opt"><span class="k"></span><span>Wala</span></div>
+                <div class="opt"><span class="k"></span><span>Isa</span></div>
+                <div class="opt"><span class="k"></span><span>Dalawa o higit pa</span></div>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>No option is marked correct here on purpose &mdash; this is a survey, not a quiz.</p>
+    </aside>
+  </section>
+
+  <!-- 13 · FEATURE 8 — ANNOUNCEMENTS -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 8 &middot; Announcements</div>
+          <h2>One push, not a phone tree.</h2>
+          <p class="sub">A message from her DSO or region reaches every BHW it's meant for &mdash; scoped to the hierarchy tier that should see it, and timestamped.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span>One message, scoped to exactly the hierarchy tier it's meant for &mdash; barangay, municipality, region, or everyone.</span></li>
+            <li data-step="2"><i>2</i><span>A feed she can scroll back through &mdash; <b>not a group chat</b> that buries yesterday's notice under today's.</span></li>
+            <li data-step="3"><i>3</i><span>Same account, same login &mdash; <b>no separate broadcast app or SMS blast</b> to maintain.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; the announcements shown are illustrative.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Announcements</span></div>
+            <div class="body">
+              <div class="accard">
+                <div class="top"><b>Advisory: dengue clustering reported</b><span class="meta">Region &middot; 2d</span></div>
+                <p>Increased vigilance for clustered fever cases advised this month.</p>
+              </div>
+              <div class="accard">
+                <div class="top"><b>Bagong schedule ng supply pickup</b><span class="meta">Municipality &middot; 5d</span></div>
+                <p>Pickup ng BHW kit supplies, tuwing Miyerkules na lang simula sa susunod na linggo.</p>
+              </div>
+              <div class="accard">
+                <div class="top"><b>Refresher training reminder</b><span class="meta">Barangay &middot; 1w</span></div>
+                <p>Paalala: refresher session sa darating na Sabado, 8 AM sa BHS.</p>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>The scope tag (Region / Municipality / Barangay) is the point &mdash; it's who this actually reached, not a guess.</p>
+    </aside>
+  </section>
+
+  <!-- 14 · REIMAGINING -->
+  <section class="slide solution centered" data-act="The Ask">
+    <div class="slide__inner">
+      <q class="bigquote" data-step="1">Not a replacement for training. <em>A system that keeps training.</em></q>
+      <p class="kicker-line" data-step="2">Self-paced courses with exercises, on-the-ground assessment, and certification &mdash; supplementing traditional trainings, not replacing them.</p>
+    </div>
+    <aside class="notes">
+      <p>The reframe, stated plainly, before the ask.</p>
+    </aside>
+  </section>
+
+  <!-- 15 · CLOSE / THE ASK -->
+  <section class="slide darker centered" data-act="The Ask">
+    <div class="slide__inner">
+      <q class="close-q">
+        <span class="lead-in">Your role today &mdash;</span>
+        <span data-step="1">open the BHW Reference Manual Assessors Course, Chapters I and II, and tell us where it breaks.</span>
+      </q>
+      <ul class="costlist" data-step="2">
+        <li><span>I</span><strong>BHWs and Their Barangay</strong> &mdash; 9 subchapters, 42 lessons.</li>
+        <li><span>II</span><strong>The BHW as First Responder</strong> &mdash; 7 subchapters, 55 lessons.</li>
+      </ul>
+      <p class="kicker-line" data-step="3">This is the pre-activation prototype &mdash; your read of it is literally what's outstanding before it can go further. <code style="font-style:normal">prototypes/assessor/index.html</code> &mdash; no login, nothing you do there is saved.</p>
+    </div>
+    <aside class="notes">
+      <p>Ask it, then say where. Then stop talking &mdash; let people actually open it.</p>
+    </aside>
+  </section>
+
+</div>
+
+<div class="chrome" id="chrome">
+  <div class="actbar" id="actbar" role="tablist" aria-label="Chapters"></div>
+  <div class="navbtns">
+    <button id="ovBtn" aria-label="Slide selector"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></button>
+    <button id="prev" aria-label="Previous"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <button id="next" aria-label="Next"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+  </div>
+</div>
+
+<aside class="notespanel" id="notespanel" aria-live="polite"></aside>
+
+<div class="overview" id="overview" role="dialog" aria-label="Slide overview">
+  <h3>Overview &mdash; click to jump &middot; Esc to close</h3>
+  <div class="ovgrid" id="ovgrid"></div>
+</div>
+
+<div class="blank" id="blank"></div>
+
+<div class="rotate" id="rotate" role="dialog" aria-label="Rotate your phone">
+  <div>
+    <span class="ic" aria-hidden="true">&#8635;</span>
+    <b>Turn your phone sideways</b>
+    <p>This deck is built for a projector. In landscape it fits the screen exactly; in portrait it has to shrink.</p>
+    <button type="button">Show it anyway</button>
+  </div>
+</div>
+
+<div class="legend" id="legend">
+  <div><b>&rarr; / Space</b> next step, then next slide</div>
+  <div><b>&larr;</b> back</div>
+  <div><b>Home / End</b> first / last slide</div>
+  <div><b>N</b> presenter notes</div>
+  <div><b>O</b> overview &middot; <b>Esc</b> close</div>
+  <div><b>B</b> blank screen</div>
+  <div><b>F</b> fullscreen</div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var slides  = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var total   = slides.length;
+  var cur     = 0;
+  var step    = 0;
+  var curEl   = document.getElementById('cur');
+  var totEl   = document.getElementById('tot');
+  var prevBtn = document.getElementById('prev');
+  var nextBtn = document.getElementById('next');
+  var ovBtn   = document.getElementById('ovBtn');
+  var barWrap = document.getElementById('actbar');
+  var chrome  = document.getElementById('chrome');
+  var notesEl = document.getElementById('notespanel');
+  var ovEl    = document.getElementById('overview');
+  var ovGrid  = document.getElementById('ovgrid');
+  var blankEl = document.getElementById('blank');
+  var legend  = document.getElementById('legend');
+
+  var notesOn = false, ovOn = false;
+
+  function pad(n){ return n<10 ? '0'+n : ''+n; }
+
+  /* Synthetic QR-code-shaped SVG for the certificate mockup — deterministic
+     (fixed seed), never Math.random(), so the pattern never shifts between
+     rehearsal and the room. It is not a scannable code. */
+  function qrSvg(){
+    var n=21, cells="", seed=0x9e3779b9;
+    function rnd(i){ var x=Math.sin(i*12.9898+seed)*43758.5453; return x-Math.floor(x); }
+    function finder(x,y){
+      var a=(x<7&&y<7), b=(x>=n-7&&y<7), c=(x<7&&y>=n-7);
+      if(!(a||b||c)) return -1;
+      var lx=a?x:(b?x-(n-7):x), ly=(a||b)?y:y-(n-7);
+      return ((lx===0||lx===6||ly===0||ly===6)||(lx>=2&&lx<=4&&ly>=2&&ly<=4))?1:0;
+    }
+    for(var y=0;y<n;y++){ for(var x=0;x<n;x++){
+      var f=finder(x,y), on = f>=0 ? f : (rnd(y*n+x)>0.5?1:0);
+      if(on) cells += '<rect x="'+x+'" y="'+y+'" width="1" height="1"/>';
+    }}
+    return '<svg viewBox="0 0 21 21" width="60" height="60" shape-rendering="crispEdges" aria-hidden="true"><g fill="#0c0c0d">'+cells+'</g></svg>';
+  }
+  (function(){
+    var el = document.getElementById('cert-qr');
+    if(el) el.innerHTML = qrSvg();
+  })();
+
+  /* =================================================================
+     Steps
+     ================================================================= */
+  function stepEls(s){ return Array.prototype.slice.call(s.querySelectorAll('[data-step]')); }
+  function stepVals(s){
+    var seen = {}, out = [];
+    stepEls(s).forEach(function(el){
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      if(!seen[n]){ seen[n] = true; out.push(n); }
+    });
+    return out.sort(function(a,b){ return a-b; });
+  }
+  function stepMax(s){ var v = stepVals(s); return v.length ? v[v.length-1] : 0; }
+  function applySteps(s, upto){
+    stepEls(s).forEach(function(el){
+      var n = parseInt(el.getAttribute('data-step'), 10);
+      el.classList.toggle('shown', n <= upto);
+    });
+  }
+
+  /* =================================================================
+     Chapter bar
+     ================================================================= */
+  var acts = [];
+  slides.forEach(function(s,i){
+    var a = s.getAttribute('data-act');
+    if(!a) return;
+    if(!acts.length || acts[acts.length-1].name !== a) acts.push({name:a, first:i});
+  });
+  var segs = acts.map(function(a){
+    var b = document.createElement('button');
+    b.className = 'seg2';
+    b.setAttribute('role','tab');
+    b.setAttribute('aria-label', a.name);
+    b.innerHTML = '<span class="bar"></span><span class="lb">'+a.name+'</span>';
+    b.addEventListener('click', function(){ go(a.first); });
+    barWrap.appendChild(b);
+    return b;
+  });
+  function markAct(i){
+    var a = slides[i].getAttribute('data-act');
+    segs.forEach(function(b,k){ b.classList.toggle('on', acts[k].name === a); });
+  }
+
+  /* =================================================================
+     Fit — measured with every step visible so nothing reflows mid-build
+     ================================================================= */
+  function fit(s){
+    if(!s) return;
+    var inner = s.querySelector('.slide__inner');
+    if(!inner) return;
+    inner.style.transform = 'none';
+    s.classList.add('measuring');
+    var cs = getComputedStyle(s);
+    var availW = s.clientWidth  - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    var availH = s.clientHeight - parseFloat(cs.paddingTop)  - parseFloat(cs.paddingBottom);
+    var cw = inner.scrollWidth, ch = inner.scrollHeight;
+    s.classList.remove('measuring');
+    if(!cw || !ch || availW<=0 || availH<=0) return;
+    var scale = Math.min(availW/cw, availH/ch);
+    if(scale < 0.2) scale = 0.2;
+    /* Raised from the CESR deck's 2.6: this deck's mockup slides carry more
+       whitespace by design (the device frame is a fixed pixel size), so a
+       higher ceiling lets fit() push them further on a large projector
+       instead of leaving the extra room unused. */
+    if(scale > 3.2) scale = 3.2;
+    if(Math.abs(scale-1) > 0.004) inner.style.transform = 'scale('+scale+')';
+  }
+  function fitAll(){ for(var i=0;i<slides.length;i++) fit(slides[i]); }
+  var rafId = null;
+  function scheduleFit(){
+    if(rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(fitAll);
+  }
+
+  /* =================================================================
+     Navigation
+     ================================================================= */
+  function renderNotes(){
+    var n = slides[cur].querySelector('.notes');
+    notesEl.innerHTML = '<h4>Slide '+pad(cur+1)+' &middot; notes</h4>' + (n ? n.innerHTML : '<p>&mdash;</p>');
+  }
+
+  function go(i, showAllSteps){
+    i = Math.max(0, Math.min(total-1, i));
+    slides[cur].classList.remove('active');
+    cur = i;
+    var s = slides[cur];
+    s.classList.add('active');
+    step = showAllSteps ? stepMax(s) : 0;
+    applySteps(s, step);
+    markAct(cur);
+    curEl.textContent = pad(cur+1);
+    prevBtn.disabled = (cur===0 && step===0);
+    nextBtn.disabled = (cur===total-1 && step>=stepMax(s));
+    document.body.setAttribute('data-ground',
+      s.classList.contains('light') || s.classList.contains('solution') ? 'light' : 'dark');
+    fit(s);
+    renderNotes();
+    markOverview();
+    if(history.replaceState) history.replaceState(null, '', '#s'+pad(cur+1));
+  }
+
+  function fromHash(){
+    var m = /^#s(\d+)$/.exec(location.hash || '');
+    return m ? Math.max(0, Math.min(total-1, parseInt(m[1],10)-1)) : 0;
+  }
+
+  function advance(){
+    var s = slides[cur], v = stepVals(s), i;
+    for(i=0;i<v.length;i++){
+      if(v[i] > step){
+        step = v[i];
+        applySteps(s, step);
+        nextBtn.disabled = (cur===total-1 && step>=stepMax(s));
+        return;
+      }
+    }
+    if(cur < total-1) go(cur+1);
+  }
+  function retreat(){
+    var s = slides[cur], v = stepVals(s), i;
+    if(step > 0){
+      var prev = 0;
+      for(i=0;i<v.length;i++){ if(v[i] < step) prev = v[i]; }
+      step = prev;
+      applySteps(s, step);
+      prevBtn.disabled = (cur===0 && step===0);
+    } else if(cur > 0){
+      go(cur-1, true);
+    }
+  }
+
+  prevBtn.addEventListener('click', retreat);
+  nextBtn.addEventListener('click', advance);
+  ovBtn.addEventListener('click', function(){ toggleOverview(true); });
+
+  document.getElementById('deck').addEventListener('click', function(e){
+    if(e.target.closest('button, a')) return;
+    if(e.clientX < window.innerWidth * 0.3) retreat(); else advance();
+  });
+
+  document.addEventListener('wheel', function(e){ e.preventDefault(); }, {passive:false});
+
+  window.addEventListener('resize', scheduleFit);
+  window.addEventListener('orientationchange', scheduleFit);
+
+  /* =================================================================
+     Overview
+     ================================================================= */
+  slides.forEach(function(s,i){
+    var h = s.querySelector('h1,h2,.bigquote,.close-q');
+    var t = h ? h.textContent.replace(/\s+/g,' ').trim() : 'Slide '+(i+1);
+    if(t.length > 68) t = t.slice(0,66) + '…';
+    var b = document.createElement('button');
+    b.className = 'ovcard';
+    b.innerHTML = '<span class="n">'+pad(i+1)+'</span><span class="t"></span>'
+                + '<span class="a">'+(s.getAttribute('data-act')||'')+'</span>';
+    b.querySelector('.t').textContent = t;
+    b.addEventListener('click', function(){ toggleOverview(false); go(i); });
+    ovGrid.appendChild(b);
+  });
+  function markOverview(){
+    var cards = ovGrid.children;
+    for(var i=0;i<cards.length;i++) cards[i].classList.toggle('on', i===cur);
+  }
+  function toggleOverview(on){
+    ovOn = (on === undefined) ? !ovOn : on;
+    ovEl.classList.toggle('show', ovOn);
+  }
+
+  /* =================================================================
+     Keys
+     ================================================================= */
+  var legendTimer = null;
+  document.addEventListener('keydown', function(e){
+    var k = e.key;
+    if(k === 'Escape'){
+      if(ovOn){ toggleOverview(false); e.preventDefault(); return; }
+      if(blankEl.classList.contains('show')){ blankEl.classList.remove('show'); return; }
+    }
+    if(ovOn && (k === 'o' || k === 'O')){ toggleOverview(false); return; }
+    if(ovOn) return;
+
+    if(k === 'ArrowRight' || k === 'PageDown' || k === ' '){ e.preventDefault(); advance(); }
+    else if(k === 'ArrowLeft' || k === 'PageUp'){ e.preventDefault(); retreat(); }
+    else if(k === 'Home'){ e.preventDefault(); go(0); }
+    else if(k === 'End'){ e.preventDefault(); go(total-1, true); }
+    else if(k === 'n' || k === 'N'){ notesOn = !notesOn; notesEl.classList.toggle('show', notesOn); }
+    else if(k === 'o' || k === 'O'){ toggleOverview(true); }
+    else if(k === 'b' || k === 'B'){ blankEl.classList.toggle('show'); }
+    else if(k === 'f' || k === 'F'){
+      if(document.fullscreenElement){ document.exitFullscreen(); }
+      else if(document.documentElement.requestFullscreen){ document.documentElement.requestFullscreen(); }
+    }
+    else if(k === '?'){
+      legend.classList.add('show');
+      if(legendTimer) clearTimeout(legendTimer);
+      legendTimer = setTimeout(function(){ legend.classList.remove('show'); }, 4000);
+    }
+  });
+
+  blankEl.addEventListener('click', function(){ blankEl.classList.remove('show'); });
+
+  var x0 = null;
+  document.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, {passive:true});
+  document.addEventListener('touchend', function(e){
+    if(x0===null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if(Math.abs(dx) > 50){ if(dx<0) advance(); else retreat(); }
+    x0 = null;
+  }, {passive:true});
+
+  var hideTimer = null;
+  function pokeChrome(){
+    chrome.classList.remove('hidden');
+    if(hideTimer) clearTimeout(hideTimer);
+    hideTimer = setTimeout(function(){ chrome.classList.add('hidden'); }, 3000);
+  }
+  document.addEventListener('mousemove', pokeChrome);
+  pokeChrome();
+
+  (function numberEyebrows(){
+    var k = 0;
+    slides.forEach(function(s){
+      var el = s.querySelector('.eyebrow .num');
+      if(!el) return;
+      k++;
+      el.textContent = (k < 10 ? '0' : '') + k;
+    });
+  })();
+
+  function beforePrint(){
+    slides.forEach(function(s){
+      applySteps(s, stepMax(s));
+      var inner = s.querySelector('.slide__inner');
+      if(inner) inner.style.transform = 'none';
+    });
+  }
+  function afterPrint(){ go(cur); fitAll(); }
+  if(window.matchMedia){
+    var mql = window.matchMedia('print');
+    if(mql.addEventListener) mql.addEventListener('change', function(e){ if(e.matches) beforePrint(); else afterPrint(); });
+  }
+  window.addEventListener('beforeprint', beforePrint);
+  window.addEventListener('afterprint', afterPrint);
+
+  /* ---- init ---- */
+  totEl.textContent = pad(total);
+  var start = fromHash();
+  go(start, start > 0);
+
+  if(start === 0){
+    legend.classList.add('show');
+    legendTimer = setTimeout(function(){ legend.classList.remove('show'); }, 4500);
+  }
+
+  var rot = document.getElementById('rotate');
+  if(rot){
+    rot.querySelector('button').addEventListener('click', function(){ rot.classList.add('dismissed'); });
+  }
+  window.addEventListener('hashchange', function(){
+    var i = fromHash();
+    if(i !== cur) go(i, true);
+  });
+  fitAll();
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
+})();
+</script>
