@@ -18037,252 +18037,682 @@
     "bhw-local-partners": {
       "module": "05-bhw-at-barangay",
       "sections": {
-        "section-6": {
+        "city-role-map": {
           "en": {
-            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.en.ffda51e86c2a.mp3",
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/city-role-map.en.c887c3bef423.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "ffda51e86c2a0f62cd347e756cd825215f80d2f639e16b928ec00b464ca024f6",
-            "sha256": "6aa07ec4a6efefd948ccacc3c8c36ead49b90c36b439493d2706624755bb1a25",
-            "duration_seconds": 89.835,
+            "content_hash": "c887c3bef423099096a70a0d14a81a9870fd54bd52ac2594195cbcc496af8207",
+            "sha256": "102a0de7e2364e9b39c7cb156d04c9dc4e5d7a06d0ebe5596ff3a110d2281426",
+            "duration_seconds": 48.327,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Additional contacts at the city or municipal level",
+                "text": "Health team roles",
                 "start_ms": 0,
-                "end_ms": 4200
+                "end_ms": 1880
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "The barangay opens up into a wider network once you reach the city or municipal level.",
-                "start_ms": 4500,
-                "end_ms": 11420
+                "text": "At the RHU, the city or municipal health officer, CHO or MHO, leads the local health service and its office staff.",
+                "start_ms": 2180,
+                "end_ms": 11620
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "The **City or Municipal Health Officer (CHO/MHO)** is the overall manager of health for the whole city or town, and the general supervisor of health workers including BHWs.",
-                "start_ms": 11720,
-                "end_ms": 27360
+                "text": "The midwife and public health nurse, PHN, may provide technical support to BHWs according to actual local assignments; Malou confirms who handles the question or referral there.",
+                "start_ms": 11920,
+                "end_ms": 25440
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "The **midwife**, assigned to the barangay health station, sets the BHW's tasks and is their technical supervisor.",
-                "start_ms": 27660,
-                "end_ms": 36140
+                "text": "The city or municipal HEPO supports health promotion, a different role from a BHW’s own HEPO designation.",
+                "start_ms": 25740,
+                "end_ms": 34140
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "The **Public Health Nurse (PHN)** supervises the midwives, and is sometimes assigned as supervisor of all BHWs citywide.",
-                "start_ms": 36440,
-                "end_ms": 46880
-              },
-              {
-                "zone": "body",
-                "index": 4,
-                "text": "There is a new level to meet as well: the **city or municipal-level HEPO office** — not the same as a BHW's own HEPO designation (which you already learned in Module 1), but the office that plans health promotion for the whole locality and monitors BHWs' skill at it.",
-                "start_ms": 47180,
-                "end_ms": 66380
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "And the **local health board**, which gives health recommendations to the LGU and manages the budget — the mayor chairs it, the CHO/MHO is vice-chair.",
-                "start_ms": 66680,
-                "end_ms": 80000
+                "text": "A decision about one person’s care belongs with an authorized health professional, not a board that discusses budgets.",
+                "start_ms": 34440,
+                "end_ms": 42680
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "As the level rises — barangay, city, municipality — the number of people connected to the health service you provide grows too.",
-                "start_ms": 80300,
-                "end_ms": 89780
+                "text": "Confirm actual assignments rather than assuming one hierarchy.",
+                "start_ms": 42980,
+                "end_ms": 48260
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.fil.a2ecb51c8408.mp3",
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/city-role-map.fil.ea72a67086bb.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "a2ecb51c8408b1944fd477b1977af34da911770bb05b559194bbbbaf8fe5d5a2",
-            "sha256": "3a1c3d8ccdad61373dd1abf708ab6265168f5b78c0eeb035665fbfc43a16dedc",
-            "duration_seconds": 102.165,
+            "content_hash": "ea72a67086bbb177c0cc9a316500b5966e09e2159c07a5c38c1442cecbaeffee",
+            "sha256": "194e5494d1fe2370b8c65033d48ab4982cc5401d82f56254ae5003d0178a5cd4",
+            "duration_seconds": 56.085,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Karagdagang kakilala sa lungsod o munisipyo",
+                "text": "Mga tungkulin ng health team",
                 "start_ms": 0,
-                "end_ms": 3720
+                "end_ms": 2640
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Lumalabas ang barangay patungo sa mas malawak na network kapag umaabot na sa antas ng lungsod o munisipyo.",
-                "start_ms": 4020,
-                "end_ms": 11980
+                "text": "Sa RHU, ang city o municipal health officer, CHO o MHO, ang namumuno sa lokal na serbisyong pangkalusugan at sa mga tauhan ng tanggapan.",
+                "start_ms": 2940,
+                "end_ms": 14980
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ang **City o Municipal Health Officer (CHO/MHO)** ang pangkalahatang namamahala sa kalusugan ng buong lungsod o bayan, at pangkalahatang supervisor ng mga health worker kasama ang mga BHW.",
-                "start_ms": 12280,
-                "end_ms": 29680
+                "text": "Ang midwife at public health nurse, PHN, ay maaaring maging teknikal na katuwang ng BHW ayon sa aktuwal na pagtatalaga sa kanilang lugar; kinukumpirma ni Malou kung sino ang responsable sa tanong o referral.",
+                "start_ms": 15280,
+                "end_ms": 31640
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ang **midwife**, na naitatalaga sa barangay health station, ang nagtatakda ng mga gawain ng BHW at kanilang technical supervisor.",
-                "start_ms": 29980,
-                "end_ms": 40700
+                "text": "Ang HEPO sa antas ng lungsod o munisipyo ay katuwang sa health promotion; iba ito sa HEPO na tungkulin ng BHW.",
+                "start_ms": 31940,
+                "end_ms": 40500
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ang **Public Health Nurse (PHN)** naman ang nangangasiwa sa mga midwife, at kung minsan ay itinatalagang supervisor ng lahat ng BHW sa buong lungsod.",
-                "start_ms": 41000,
-                "end_ms": 52360
-              },
-              {
-                "zone": "body",
-                "index": 4,
-                "text": "May bagong antas ding kikilalanin: ang **HEPO sa antas ng lungsod o munisipyo** — hindi ito ang tungkuling HEPO ng BHW mismo (natutunan mo na ito sa Modyul 1), kundi ang opisinang namamahala sa pagpaplano ng health promotion sa buong lokalidad at nag-mo-monitor ng kasanayan ng mga BHW dito.",
-                "start_ms": 52660,
-                "end_ms": 75500
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "At ang **local health board**, na nagbibigay ng rekomendasyong pangkalusugan sa local government at namamahala sa budget — ang mayor ang chairperson nito, ang CHO/MHO ang vice-chairperson.",
-                "start_ms": 75800,
-                "end_ms": 89720
+                "text": "Ang tanong sa pangangalaga ng isang tao ay dinadala sa awtorisadong health professional, hindi sa board na nagbabalangkas ng badyet.",
+                "start_ms": 40800,
+                "end_ms": 50120
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Habang tumataas ang antas — barangay, lungsod, munisipyo — dumadami rin ang taong may kinalaman sa serbisyong pangkalusugan na iyong ibinibigay.",
-                "start_ms": 90020,
-                "end_ms": 102100
+                "text": "Kumpirmahin ang aktuwal na pagtatalaga; huwag magpalagay ng iisang hierarchy.",
+                "start_ms": 50420,
+                "end_ms": 56020
+              }
+            ]
+          }
+        },
+        "close-loop": {
+          "en": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/close-loop.en.7ab039e9b03c.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "7ab039e9b03ccce89ae575a4680e102a16ff577f7d2a27acec559b8dc9ce6953",
+            "sha256": "8f566fa90ff8da560e2c9d05e7e62d0cb3cfbdf8059d32bd12ce446f1884f0cb",
+            "duration_seconds": 37.642,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Confirm and close the loop",
+                "start_ms": 0,
+                "end_ms": 2160
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "After making contact, Malou records whom she reached, the agreed next step, and when to follow up under local rules.",
+                "start_ms": 2460,
+                "end_ms": 10780
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "She tells the family the verified next step without guaranteeing an outcome.",
+                "start_ms": 11080,
+                "end_ms": 16440
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "If clinical advice is needed, she returns the question to a health professional; for sanitation, she checks the designated sanitary contact.",
+                "start_ms": 16740,
+                "end_ms": 25900
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "With a nonhealth partner, she shares only information the family has agreed to share and that is truly needed.",
+                "start_ms": 26200,
+                "end_ms": 33880
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Return to the family with the verified next step.",
+                "start_ms": 34180,
+                "end_ms": 37580
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/close-loop.fil.847c35dcde7b.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "847c35dcde7b3ca07110f3b1a9416d2c6cdd0422fbb45dc9fbd030c586cac0ce",
+            "sha256": "027618724795b0b0c438455262343722fab57c84529a8e42753bdf7babf8f734",
+            "duration_seconds": 45.714,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Kumpirmahin at balikan ang pamilya",
+                "start_ms": 0,
+                "end_ms": 2960
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Pagkatapos ng pag-ugnay, tinatandaan ni Malou kung sino ang nakausap, anong hakbang ang napagkasunduan, at kailan dapat bumalik para sa sagot, ayon sa lokal na patakaran.",
+                "start_ms": 3260,
+                "end_ms": 16180
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Ipinababatid niya sa pamilya ang na-verify na susunod na hakbang nang hindi ipinangangako ang resulta.",
+                "start_ms": 16480,
+                "end_ms": 22920
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Kung kailangan ng klinikal na payo, ibinabalik niya ito sa health professional; kung usapin ng kalinisan, tinatanong niya ang itinalagang sanitary contact.",
+                "start_ms": 23220,
+                "end_ms": 33180
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Sa kapartner na hindi health worker, ibinabahagi lamang niya ang impormasyong may pahintulot at talagang kailangan.",
+                "start_ms": 33480,
+                "end_ms": 41440
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Balikan ang pamilya sa na-verify na susunod na hakbang.",
+                "start_ms": 41740,
+                "end_ms": 45660
+              }
+            ]
+          }
+        },
+        "local-partners-application-check": {
+          "en": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-partners-application-check.en.81000fa0cab5.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "81000fa0cab56869a5d0a6b93e259b2ab8e41e73e4be106fa46c3e60276b6f72",
+            "sha256": "729360c0fb477513afca57bb1834b293dd4c6ff7dacd253946719c67b56b7db4",
+            "duration_seconds": 43.938,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Try it: choose the first step",
+                "start_ms": 0,
+                "end_ms": 2680
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "On the next question about medicine support, Malou still does not know the current contact.",
+                "start_ms": 2980,
+                "end_ms": 8820
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "She sees three possible actions: seek consent and verify the local process with the midwife or RHU before sharing only necessary information; send a full record to any official; or promise funding because a local health board exists.",
+                "start_ms": 9120,
+                "end_ms": 28200
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Choose the action that checks consent and the process.",
+                "start_ms": 28500,
+                "end_ms": 32340
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "The other two overshare information or promise a decision beyond a BHW’s role.",
+                "start_ms": 32640,
+                "end_ms": 39400
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Choose an appropriate first step and explain why.",
+                "start_ms": 39700,
+                "end_ms": 43860
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-partners-application-check.fil.577f3b0590a2.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "577f3b0590a2e86535dc1cf7a43818b3b58bebe26ff2ad895b2e08b0a2fdf9f4",
+            "sha256": "543c43ff156440e0ded91708ec3e44b74ad85097527aa5d5bd521ada547f9eca",
+            "duration_seconds": 45.558,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Subukan: piliin ang unang hakbang",
+                "start_ms": 0,
+                "end_ms": 3440
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa susunod na tanong tungkol sa tulong sa gamot, hindi pa alam ni Malou ang kasalukuyang contact.",
+                "start_ms": 3740,
+                "end_ms": 9980
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May tatlong posibleng hakbang: tiyakin ang pahintulot at ang lokal na proseso sa midwife o RHU bago ibahagi ang kailangan lamang na impormasyon; ipadala ang buong tala sa sinumang kawani; o ipangako ang pondo dahil may local health board.",
+                "start_ms": 10280,
+                "end_ms": 27160
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Piliin ang hakbang na may pahintulot at pagtiyak.",
+                "start_ms": 27460,
+                "end_ms": 31220
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ang dalawang iba pa ay lumalampas sa kinakailangang pagbabahagi o nangangako ng desisyong hindi saklaw ng BHW.",
+                "start_ms": 31520,
+                "end_ms": 40680
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Piliin ang angkop na unang hakbang at ipaliwanag kung bakit.",
+                "start_ms": 40980,
+                "end_ms": 45500
+              }
+            ]
+          }
+        },
+        "local-request": {
+          "en": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-request.en.ebc131d0ffd3.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "ebc131d0ffd3f29625672edc239b34a11fde60085e2d6ec6f8fce8590336f1ca",
+            "sha256": "118f50fdaf8d8b78522b801e931d6b48e2650a69cab2dfd0a06fc7e3af019709",
+            "duration_seconds": 43.154,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Example: a locally verified request",
+                "start_ms": 0,
+                "end_ms": 3560
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "The family asks Malou whether medicine support is available.",
+                "start_ms": 3860,
+                "end_ms": 8020
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "She explains that she can check the proper process but cannot promise an amount or approval.",
+                "start_ms": 8320,
+                "end_ms": 14640
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "With the family’s consent, she asks the RHU midwife who the current contact is and what information is needed.",
+                "start_ms": 14940,
+                "end_ms": 22620
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She learns to ask the designated social welfare contact about possible support.",
+                "start_ms": 22920,
+                "end_ms": 28520
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "The family or an authorized person provides requested documents through the proper office; Malou does not send the whole health record.",
+                "start_ms": 28820,
+                "end_ms": 38180
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Use a locally verified contact and only necessary information.",
+                "start_ms": 38480,
+                "end_ms": 43080
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-request.fil.bb34a9c147ab.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "bb34a9c147abb3b910663b992087830a5e6303ece155861a87c5b8e1b74289cc",
+            "sha256": "3386cca0c639f2861e92f4304d91440485df7c4e388111ab139b495c56548afc",
+            "duration_seconds": 49.946,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Halimbawa: tiyaking lokal na hiling",
+                "start_ms": 0,
+                "end_ms": 3240
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Tinanong ng pamilya si Malou kung may tulong sa gamot.",
+                "start_ms": 3540,
+                "end_ms": 6980
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Ipinaliwanag niyang maaari niyang alamin ang wastong proseso ngunit hindi niya maipapangako ang halaga o pag-apruba.",
+                "start_ms": 7280,
+                "end_ms": 15520
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Sa pahintulot ng pamilya, tinanong niya ang midwife sa RHU kung sino ang kasalukuyang contact at anong impormasyon ang kailangan.",
+                "start_ms": 15820,
+                "end_ms": 25100
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Nalaman niyang dapat munang sa itinalagang social welfare contact itanong ang posibleng suporta.",
+                "start_ms": 25400,
+                "end_ms": 32360
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ang pamilya o awtorisadong kausap ang magbibigay ng hinihinging dokumento sa tamang tanggapan; hindi ipinadadala ni Malou ang buong health record.",
+                "start_ms": 32660,
+                "end_ms": 43220
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Gumamit ng lokal na na-verify na contact at pinakamaliit na kailangang impormasyon.",
+                "start_ms": 43520,
+                "end_ms": 49880
+              }
+            ]
+          }
+        },
+        "section-6": {
+          "en": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.en.a465c2c6aa12.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "a465c2c6aa121e4c8f7f4a1843cfb6e176fad53f4092a5e5211015c635f3a4ae",
+            "sha256": "1927000eb17739d2b3e425e3a1e63edcd1747ade3612c48fd6a8195ec60408b2",
+            "duration_seconds": 38.792,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Clarify the need",
+                "start_ms": 0,
+                "end_ms": 1760
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Malou hears a family ask about possible help with medicine.",
+                "start_ms": 2060,
+                "end_ms": 6420
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Before contacting anyone, she clarifies whether the need is clinical, health promotion, social support, or environmental sanitation.",
+                "start_ms": 6720,
+                "end_ms": 16480
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "For an urgent health concern, she follows the local emergency or referral protocol and seeks guidance from the health team.",
+                "start_ms": 16780,
+                "end_ms": 24700
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She does not turn a funding question into a promise.",
+                "start_ms": 25000,
+                "end_ms": 28200
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "She records only what is needed and asks whether the family agrees to an appropriate referral.",
+                "start_ms": 28500,
+                "end_ms": 34980
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Identify the need before choosing a contact.",
+                "start_ms": 35280,
+                "end_ms": 38720
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.fil.a837f60e7947.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "a837f60e79479da84435e3c5cf69277d7b6c0bf67ff5b67287d6f2f9464bfd16",
+            "sha256": "85e6fe98990481271c651e0e0337f36e4f798ed06818b55f8f56088dbcf61a9a",
+            "duration_seconds": 47.256,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Linawin ang pangangailangan",
+                "start_ms": 0,
+                "end_ms": 2480
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Si Malou ay may tanong mula sa isang pamilya tungkol sa posibleng tulong para sa gamot.",
+                "start_ms": 2780,
+                "end_ms": 8540
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Bago tumawag sa kahit sino, nililinaw niya kung klinikal na tanong ba ito, tanong sa health promotion, pangangailangang panlipunan, o suliranin sa kalinisan.",
+                "start_ms": 8840,
+                "end_ms": 21200
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Kung may agarang kondisyong pangkalusugan, sinusunod niya ang lokal na emergency o referral protocol at humihingi ng gabay sa health team.",
+                "start_ms": 21500,
+                "end_ms": 30380
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ang tanong tungkol sa pondo ay hindi niya ginagawang pangako.",
+                "start_ms": 30680,
+                "end_ms": 34680
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Itinatala niya lamang ang kinakailangang impormasyon at nagtatanong kung pumapayag ang pamilya sa angkop na referral.",
+                "start_ms": 34980,
+                "end_ms": 42860
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Kilalanin ang pangangailangan bago piliin ang kausap.",
+                "start_ms": 43160,
+                "end_ms": 47200
               }
             ]
           }
         },
         "section-7": {
           "en": {
-            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.en.73b7ff198455.mp3",
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.en.424c04856008.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "73b7ff198455c44f7c588f2499e582ed90004ebf02c8e373e6348ff1c46d0235",
-            "sha256": "207a9e097275fcb7d735e739026a47c26a5366846b7bdbf191a95e0aa5b602fe",
-            "duration_seconds": 62.38,
+            "content_hash": "424c048560086746ea3d297d6d156e8503fb5801c1e6937d303f8e23cf72a33f",
+            "sha256": "620769172244923e1192e1580b9d099eca2dca38a4cf851d1d1795138ccf83ca",
+            "duration_seconds": 49.136,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Other partners",
+                "text": "Other partners and boundaries",
                 "start_ms": 0,
-                "end_ms": 1480
+                "end_ms": 2480
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Four more partners round out BHW Marites' network.",
-                "start_ms": 1780,
-                "end_ms": 6660
+                "text": "The mayor leads the local government and chairs the city or municipal local health board; the CHO or MHO is vice-chair.",
+                "start_ms": 2780,
+                "end_ms": 11100
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "The **mayor** is the overall chief executive of the city or municipality and the CHO/MHO's direct supervisor.",
-                "start_ms": 6960,
-                "end_ms": 16520
+                "text": "The board proposes health service funding and advises the sanggunian.",
+                "start_ms": 11400,
+                "end_ms": 16480
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "The **BHW President** is the elected or appointed leader of all BHWs in a city or town — helping update the BHW registry and sharing opportunities with fellow BHWs.",
-                "start_ms": 16820,
-                "end_ms": 30820
+                "text": "It does not automatically approve a family’s request or make an individual clinical decision.",
+                "start_ms": 16780,
+                "end_ms": 22780
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "The **municipal social work and development officer** manages financial assistance for people needing medical help (AICS).",
-                "start_ms": 31120,
-                "end_ms": 40720
+                "text": "A BHW president may help coordinate BHWs according to local arrangements.",
+                "start_ms": 23080,
+                "end_ms": 28800
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "And the **sanitary inspector** leads cleanliness promotion, and works with BHWs to find households needing environmental sanitation help.",
-                "start_ms": 41020,
-                "end_ms": 51060
+                "text": "A social welfare or development officer can help identify suitable social assistance, while a sanitary inspector handles sanitation concerns.",
+                "start_ms": 29100,
+                "end_ms": 39420
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Verify the right person and scope before approaching anyone.",
+                "start_ms": 39720,
+                "end_ms": 44040
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Not every partner works directly in health — the barangay's leader, the one who provides financial aid, and the one who promotes cleanliness all matter too.",
-                "start_ms": 51360,
-                "end_ms": 62320
+                "text": "Institutional planning differs from a decision for one person.",
+                "start_ms": 44340,
+                "end_ms": 49060
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.fil.329db6b8f186.mp3",
+            "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.fil.344bf64b4d9f.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "329db6b8f18639c2bc44bc0d097f27407904832ad92ff11c1f56dd16f69599c3",
-            "sha256": "057edd509b88f351dabbd4a404fccc44a2d6817270583cd4c4fd8b5435129289",
-            "duration_seconds": 71.576,
+            "content_hash": "344bf64b4d9f0e02da7984f53d356bdf639e64def0a5ce8c3ad47b2b11f027af",
+            "sha256": "691e2abcdac70240b13700d0b124360f8ad0865c59c521f28e6263c17b371363",
+            "duration_seconds": 58.645,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Iba pang kapartner",
+                "text": "Iba pang katuwang at hangganan",
                 "start_ms": 0,
-                "end_ms": 1680
+                "end_ms": 2680
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Apat pang kapartner ang dapat kilalanin ni BHW Marites.",
-                "start_ms": 1980,
-                "end_ms": 6860
+                "text": "Ang mayor ay namumuno sa lokal na pamahalaan at chair ng city o municipal local health board; ang CHO o MHO ang vice-chair.",
+                "start_ms": 2980,
+                "end_ms": 13780
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ang **mayor** ang pangkalahatang chief executive ng lungsod o munisipyo at direktang supervisor ng CHO/MHO.",
-                "start_ms": 7160,
-                "end_ms": 16560
+                "text": "Ang board ay nagmumungkahi ng pondo para sa serbisyong pangkalusugan at nagpapayo sa sanggunian.",
+                "start_ms": 14080,
+                "end_ms": 21160
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ang **BHW President** ay ang nahalal o itinalagang lider ng lahat ng BHW sa isang lungsod o bayan — tumutulong siya sa pag-update ng BHW registry at nagbibigay ng impormasyon tungkol sa mga oportunidad para sa kapwa BHW.",
-                "start_ms": 16860,
-                "end_ms": 34980
+                "text": "Hindi nito kusang inaprubahan ang hiling ng isang pamilya at hindi ito ang gumagawa ng indibidwal na klinikal na pasya.",
+                "start_ms": 21460,
+                "end_ms": 30220
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ang **municipal social work and development officer** ang namamahala sa financial assistance para sa mga nangangailangan ng tulong medikal (AICS).",
-                "start_ms": 35280,
-                "end_ms": 46280
+                "text": "Ang BHW president ay makatutulong sa koordinasyon ng mga BHW ayon sa lokal na kaayusan.",
+                "start_ms": 30520,
+                "end_ms": 37880
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "At ang **sanitary inspector** ang nangunguna sa promosyon ng kalinisan, at kasama ng BHW sa paghahanap ng mga kabahayang nangangailangan ng environmental sanitation intervention.",
-                "start_ms": 46580,
-                "end_ms": 59220
+                "text": "Maaaring makatulong ang social welfare o development officer sa pag-alam sa angkop na social assistance, at ang sanitary inspector sa isyu ng kalinisan.",
+                "start_ms": 38180,
+                "end_ms": 49580
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Tiyakin ang tamang tao at saklaw ng gawain bago lumapit.",
+                "start_ms": 49880,
+                "end_ms": 53760
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Hindi lahat ng kapartner ay direktang nasa larangan ng kalusugan — may kinalaman din ang lider ng barangay, ang tagapagbigay ng tulong pinansyal, at ang tagapagsulong ng kalinisan.",
-                "start_ms": 59520,
-                "end_ms": 71520
+                "text": "Iba ang pagpaplano ng institusyon sa pasya para sa isang tao.",
+                "start_ms": 54060,
+                "end_ms": 58580
               }
             ]
           }
@@ -109706,6 +110136,948 @@
                   "text": "Itugma ang kailangan sa papel; tiyakin ang lokal na saklaw.",
                   "start_ms": 49180,
                   "end_ms": 53660
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "bhw-local-partners": [
+      {
+        "module": "05-bhw-at-barangay",
+        "sections": {
+          "section-6": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.en.ffda51e86c2a.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "ffda51e86c2a0f62cd347e756cd825215f80d2f639e16b928ec00b464ca024f6",
+              "sha256": "6aa07ec4a6efefd948ccacc3c8c36ead49b90c36b439493d2706624755bb1a25",
+              "duration_seconds": 89.835,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Additional contacts at the city or municipal level",
+                  "start_ms": 0,
+                  "end_ms": 4200
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "The barangay opens up into a wider network once you reach the city or municipal level.",
+                  "start_ms": 4500,
+                  "end_ms": 11420
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The **City or Municipal Health Officer (CHO/MHO)** is the overall manager of health for the whole city or town, and the general supervisor of health workers including BHWs.",
+                  "start_ms": 11720,
+                  "end_ms": 27360
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "The **midwife**, assigned to the barangay health station, sets the BHW's tasks and is their technical supervisor.",
+                  "start_ms": 27660,
+                  "end_ms": 36140
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "The **Public Health Nurse (PHN)** supervises the midwives, and is sometimes assigned as supervisor of all BHWs citywide.",
+                  "start_ms": 36440,
+                  "end_ms": 46880
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "There is a new level to meet as well: the **city or municipal-level HEPO office** — not the same as a BHW's own HEPO designation (which you already learned in Module 1), but the office that plans health promotion for the whole locality and monitors BHWs' skill at it.",
+                  "start_ms": 47180,
+                  "end_ms": 66380
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "And the **local health board**, which gives health recommendations to the LGU and manages the budget — the mayor chairs it, the CHO/MHO is vice-chair.",
+                  "start_ms": 66680,
+                  "end_ms": 80000
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "As the level rises — barangay, city, municipality — the number of people connected to the health service you provide grows too.",
+                  "start_ms": 80300,
+                  "end_ms": 89780
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.fil.a2ecb51c8408.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "a2ecb51c8408b1944fd477b1977af34da911770bb05b559194bbbbaf8fe5d5a2",
+              "sha256": "3a1c3d8ccdad61373dd1abf708ab6265168f5b78c0eeb035665fbfc43a16dedc",
+              "duration_seconds": 102.165,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Karagdagang kakilala sa lungsod o munisipyo",
+                  "start_ms": 0,
+                  "end_ms": 3720
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Lumalabas ang barangay patungo sa mas malawak na network kapag umaabot na sa antas ng lungsod o munisipyo.",
+                  "start_ms": 4020,
+                  "end_ms": 11980
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ang **City o Municipal Health Officer (CHO/MHO)** ang pangkalahatang namamahala sa kalusugan ng buong lungsod o bayan, at pangkalahatang supervisor ng mga health worker kasama ang mga BHW.",
+                  "start_ms": 12280,
+                  "end_ms": 29680
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Ang **midwife**, na naitatalaga sa barangay health station, ang nagtatakda ng mga gawain ng BHW at kanilang technical supervisor.",
+                  "start_ms": 29980,
+                  "end_ms": 40700
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang **Public Health Nurse (PHN)** naman ang nangangasiwa sa mga midwife, at kung minsan ay itinatalagang supervisor ng lahat ng BHW sa buong lungsod.",
+                  "start_ms": 41000,
+                  "end_ms": 52360
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "May bagong antas ding kikilalanin: ang **HEPO sa antas ng lungsod o munisipyo** — hindi ito ang tungkuling HEPO ng BHW mismo (natutunan mo na ito sa Modyul 1), kundi ang opisinang namamahala sa pagpaplano ng health promotion sa buong lokalidad at nag-mo-monitor ng kasanayan ng mga BHW dito.",
+                  "start_ms": 52660,
+                  "end_ms": 75500
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "At ang **local health board**, na nagbibigay ng rekomendasyong pangkalusugan sa local government at namamahala sa budget — ang mayor ang chairperson nito, ang CHO/MHO ang vice-chairperson.",
+                  "start_ms": 75800,
+                  "end_ms": 89720
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Habang tumataas ang antas — barangay, lungsod, munisipyo — dumadami rin ang taong may kinalaman sa serbisyong pangkalusugan na iyong ibinibigay.",
+                  "start_ms": 90020,
+                  "end_ms": 102100
+                }
+              ]
+            }
+          },
+          "section-7": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.en.73b7ff198455.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "73b7ff198455c44f7c588f2499e582ed90004ebf02c8e373e6348ff1c46d0235",
+              "sha256": "207a9e097275fcb7d735e739026a47c26a5366846b7bdbf191a95e0aa5b602fe",
+              "duration_seconds": 62.38,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Other partners",
+                  "start_ms": 0,
+                  "end_ms": 1480
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Four more partners round out BHW Marites' network.",
+                  "start_ms": 1780,
+                  "end_ms": 6660
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The **mayor** is the overall chief executive of the city or municipality and the CHO/MHO's direct supervisor.",
+                  "start_ms": 6960,
+                  "end_ms": 16520
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "The **BHW President** is the elected or appointed leader of all BHWs in a city or town — helping update the BHW registry and sharing opportunities with fellow BHWs.",
+                  "start_ms": 16820,
+                  "end_ms": 30820
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "The **municipal social work and development officer** manages financial assistance for people needing medical help (AICS).",
+                  "start_ms": 31120,
+                  "end_ms": 40720
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "And the **sanitary inspector** leads cleanliness promotion, and works with BHWs to find households needing environmental sanitation help.",
+                  "start_ms": 41020,
+                  "end_ms": 51060
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Not every partner works directly in health — the barangay's leader, the one who provides financial aid, and the one who promotes cleanliness all matter too.",
+                  "start_ms": 51360,
+                  "end_ms": 62320
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.fil.329db6b8f186.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "329db6b8f18639c2bc44bc0d097f27407904832ad92ff11c1f56dd16f69599c3",
+              "sha256": "057edd509b88f351dabbd4a404fccc44a2d6817270583cd4c4fd8b5435129289",
+              "duration_seconds": 71.576,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Iba pang kapartner",
+                  "start_ms": 0,
+                  "end_ms": 1680
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Apat pang kapartner ang dapat kilalanin ni BHW Marites.",
+                  "start_ms": 1980,
+                  "end_ms": 6860
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ang **mayor** ang pangkalahatang chief executive ng lungsod o munisipyo at direktang supervisor ng CHO/MHO.",
+                  "start_ms": 7160,
+                  "end_ms": 16560
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Ang **BHW President** ay ang nahalal o itinalagang lider ng lahat ng BHW sa isang lungsod o bayan — tumutulong siya sa pag-update ng BHW registry at nagbibigay ng impormasyon tungkol sa mga oportunidad para sa kapwa BHW.",
+                  "start_ms": 16860,
+                  "end_ms": 34980
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang **municipal social work and development officer** ang namamahala sa financial assistance para sa mga nangangailangan ng tulong medikal (AICS).",
+                  "start_ms": 35280,
+                  "end_ms": 46280
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "At ang **sanitary inspector** ang nangunguna sa promosyon ng kalinisan, at kasama ng BHW sa paghahanap ng mga kabahayang nangangailangan ng environmental sanitation intervention.",
+                  "start_ms": 46580,
+                  "end_ms": 59220
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Hindi lahat ng kapartner ay direktang nasa larangan ng kalusugan — may kinalaman din ang lider ng barangay, ang tagapagbigay ng tulong pinansyal, at ang tagapagsulong ng kalinisan.",
+                  "start_ms": 59520,
+                  "end_ms": 71520
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "module": "05-bhw-at-barangay",
+        "sections": {
+          "city-role-map": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/city-role-map.en.c887c3bef423.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "c887c3bef423099096a70a0d14a81a9870fd54bd52ac2594195cbcc496af8207",
+              "sha256": "102a0de7e2364e9b39c7cb156d04c9dc4e5d7a06d0ebe5596ff3a110d2281426",
+              "duration_seconds": 48.327,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Health team roles",
+                  "start_ms": 0,
+                  "end_ms": 1880
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "At the RHU, the city or municipal health officer, CHO or MHO, leads the local health service and its office staff.",
+                  "start_ms": 2180,
+                  "end_ms": 11620
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The midwife and public health nurse, PHN, may provide technical support to BHWs according to actual local assignments; Malou confirms who handles the question or referral there.",
+                  "start_ms": 11920,
+                  "end_ms": 25440
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "The city or municipal HEPO supports health promotion, a different role from a BHW’s own HEPO designation.",
+                  "start_ms": 25740,
+                  "end_ms": 34140
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "A decision about one person’s care belongs with an authorized health professional, not a board that discusses budgets.",
+                  "start_ms": 34440,
+                  "end_ms": 42680
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Confirm actual assignments rather than assuming one hierarchy.",
+                  "start_ms": 42980,
+                  "end_ms": 48260
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/city-role-map.fil.ea72a67086bb.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "ea72a67086bbb177c0cc9a316500b5966e09e2159c07a5c38c1442cecbaeffee",
+              "sha256": "194e5494d1fe2370b8c65033d48ab4982cc5401d82f56254ae5003d0178a5cd4",
+              "duration_seconds": 56.085,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Mga tungkulin ng health team",
+                  "start_ms": 0,
+                  "end_ms": 2640
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Sa RHU, ang city o municipal health officer, CHO o MHO, ang namumuno sa lokal na serbisyong pangkalusugan at sa mga tauhan ng tanggapan.",
+                  "start_ms": 2940,
+                  "end_ms": 14980
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ang midwife at public health nurse, PHN, ay maaaring maging teknikal na katuwang ng BHW ayon sa aktuwal na pagtatalaga sa kanilang lugar; kinukumpirma ni Malou kung sino ang responsable sa tanong o referral.",
+                  "start_ms": 15280,
+                  "end_ms": 31640
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Ang HEPO sa antas ng lungsod o munisipyo ay katuwang sa health promotion; iba ito sa HEPO na tungkulin ng BHW.",
+                  "start_ms": 31940,
+                  "end_ms": 40500
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang tanong sa pangangalaga ng isang tao ay dinadala sa awtorisadong health professional, hindi sa board na nagbabalangkas ng badyet.",
+                  "start_ms": 40800,
+                  "end_ms": 50120
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Kumpirmahin ang aktuwal na pagtatalaga; huwag magpalagay ng iisang hierarchy.",
+                  "start_ms": 50420,
+                  "end_ms": 56020
+                }
+              ]
+            }
+          },
+          "close-loop": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/close-loop.en.7ab039e9b03c.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "7ab039e9b03ccce89ae575a4680e102a16ff577f7d2a27acec559b8dc9ce6953",
+              "sha256": "8f566fa90ff8da560e2c9d05e7e62d0cb3cfbdf8059d32bd12ce446f1884f0cb",
+              "duration_seconds": 37.642,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Confirm and close the loop",
+                  "start_ms": 0,
+                  "end_ms": 2160
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "After making contact, Malou records whom she reached, the agreed next step, and when to follow up under local rules.",
+                  "start_ms": 2460,
+                  "end_ms": 10780
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "She tells the family the verified next step without guaranteeing an outcome.",
+                  "start_ms": 11080,
+                  "end_ms": 16440
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "If clinical advice is needed, she returns the question to a health professional; for sanitation, she checks the designated sanitary contact.",
+                  "start_ms": 16740,
+                  "end_ms": 25900
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "With a nonhealth partner, she shares only information the family has agreed to share and that is truly needed.",
+                  "start_ms": 26200,
+                  "end_ms": 33880
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Return to the family with the verified next step.",
+                  "start_ms": 34180,
+                  "end_ms": 37580
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/close-loop.fil.847c35dcde7b.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "847c35dcde7b3ca07110f3b1a9416d2c6cdd0422fbb45dc9fbd030c586cac0ce",
+              "sha256": "027618724795b0b0c438455262343722fab57c84529a8e42753bdf7babf8f734",
+              "duration_seconds": 45.714,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Kumpirmahin at balikan ang pamilya",
+                  "start_ms": 0,
+                  "end_ms": 2960
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Pagkatapos ng pag-ugnay, tinatandaan ni Malou kung sino ang nakausap, anong hakbang ang napagkasunduan, at kailan dapat bumalik para sa sagot, ayon sa lokal na patakaran.",
+                  "start_ms": 3260,
+                  "end_ms": 16180
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ipinababatid niya sa pamilya ang na-verify na susunod na hakbang nang hindi ipinangangako ang resulta.",
+                  "start_ms": 16480,
+                  "end_ms": 22920
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Kung kailangan ng klinikal na payo, ibinabalik niya ito sa health professional; kung usapin ng kalinisan, tinatanong niya ang itinalagang sanitary contact.",
+                  "start_ms": 23220,
+                  "end_ms": 33180
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Sa kapartner na hindi health worker, ibinabahagi lamang niya ang impormasyong may pahintulot at talagang kailangan.",
+                  "start_ms": 33480,
+                  "end_ms": 41440
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Balikan ang pamilya sa na-verify na susunod na hakbang.",
+                  "start_ms": 41740,
+                  "end_ms": 45660
+                }
+              ]
+            }
+          },
+          "local-partners-application-check": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-partners-application-check.en.e86a04e25571.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "e86a04e25571d3dcd78003981594b4b232304cedd77576b7246896998d6b38e0",
+              "sha256": "2e0ebc05955e0ee7e530d88443a3d52b94da043ff5b047c9d3387b0133eeadb4",
+              "duration_seconds": 41.613,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Try it: choose the first step",
+                  "start_ms": 0,
+                  "end_ms": 2840
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "On the next question about medicine support, Malou still does not know the current contact.",
+                  "start_ms": 3140,
+                  "end_ms": 9300
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "She sees three possible actions: seek consent and verify the local process with the midwife or RHU before sharing only necessary information; send a full record to any official; or promise funding because a local health board exists.",
+                  "start_ms": 9600,
+                  "end_ms": 26960
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Choose the action that checks consent and the process.",
+                  "start_ms": 27260,
+                  "end_ms": 31180
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "The other two overshare information or promise a decision beyond a BHW’s role.",
+                  "start_ms": 31480,
+                  "end_ms": 37520
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Choose an appropriate first step and explain why.",
+                  "start_ms": 37820,
+                  "end_ms": 41540
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-partners-application-check.fil.577f3b0590a2.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "577f3b0590a2e86535dc1cf7a43818b3b58bebe26ff2ad895b2e08b0a2fdf9f4",
+              "sha256": "543c43ff156440e0ded91708ec3e44b74ad85097527aa5d5bd521ada547f9eca",
+              "duration_seconds": 45.558,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Subukan: piliin ang unang hakbang",
+                  "start_ms": 0,
+                  "end_ms": 3440
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Sa susunod na tanong tungkol sa tulong sa gamot, hindi pa alam ni Malou ang kasalukuyang contact.",
+                  "start_ms": 3740,
+                  "end_ms": 9980
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "May tatlong posibleng hakbang: tiyakin ang pahintulot at ang lokal na proseso sa midwife o RHU bago ibahagi ang kailangan lamang na impormasyon; ipadala ang buong tala sa sinumang kawani; o ipangako ang pondo dahil may local health board.",
+                  "start_ms": 10280,
+                  "end_ms": 27160
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Piliin ang hakbang na may pahintulot at pagtiyak.",
+                  "start_ms": 27460,
+                  "end_ms": 31220
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang dalawang iba pa ay lumalampas sa kinakailangang pagbabahagi o nangangako ng desisyong hindi saklaw ng BHW.",
+                  "start_ms": 31520,
+                  "end_ms": 40680
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Piliin ang angkop na unang hakbang at ipaliwanag kung bakit.",
+                  "start_ms": 40980,
+                  "end_ms": 45500
+                }
+              ]
+            }
+          },
+          "local-request": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-request.en.36ad7492280e.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "36ad7492280e7e8351068156f9813825724ad8de2a6350003edf49c380e1e7d8",
+              "sha256": "82f600a1b5900067a44cab76e6ae2a861dedfbb4a7307e1f0b564c0a8bc7ddd1",
+              "duration_seconds": 43.18,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Example: a locally verified request",
+                  "start_ms": 0,
+                  "end_ms": 3240
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "The family asks Malou whether medicine support is available.",
+                  "start_ms": 3540,
+                  "end_ms": 7540
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "She explains that she can check the proper process but cannot promise an amount or approval.",
+                  "start_ms": 7840,
+                  "end_ms": 14280
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "With the family’s consent, she asks the RHU midwife who the current contact is and what information is needed.",
+                  "start_ms": 14580,
+                  "end_ms": 22620
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "She learns to ask the designated social welfare contact about possible support.",
+                  "start_ms": 22920,
+                  "end_ms": 27840
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "The family or an authorized person provides requested documents through the proper office; Malou does not send the whole health record.",
+                  "start_ms": 28140,
+                  "end_ms": 37980
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Use a locally verified contact and only necessary information.",
+                  "start_ms": 38280,
+                  "end_ms": 43120
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/local-request.fil.48947e50c5e0.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "48947e50c5e0f65427bbdac5963b386ab664f439f4d882c056753f687bb9759b",
+              "sha256": "f62c09a98770ded39d5fc707867a4f2e4a5771cbf6a654f99efa8072e3e9e141",
+              "duration_seconds": 50.155,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Halimbawa: tiyaking lokal na hiling",
+                  "start_ms": 0,
+                  "end_ms": 3560
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Tinanong ng pamilya si Malou kung may tulong sa gamot.",
+                  "start_ms": 3860,
+                  "end_ms": 7460
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ipinaliwanag niyang maaari niyang alamin ang wastong proseso ngunit hindi niya maipapangako ang halaga o pag-apruba.",
+                  "start_ms": 7760,
+                  "end_ms": 16320
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Sa pahintulot ng pamilya, tinanong niya ang midwife sa RHU kung sino ang kasalukuyang contact at anong impormasyon ang kailangan.",
+                  "start_ms": 16620,
+                  "end_ms": 25540
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Nalaman niyang dapat munang sa itinalagang social welfare contact itanong ang posibleng suporta.",
+                  "start_ms": 25840,
+                  "end_ms": 32440
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Ang pamilya o awtorisadong kausap ang magbibigay ng hinihinging dokumento sa tamang tanggapan; hindi ipinadadala ni Malou ang buong health record.",
+                  "start_ms": 32740,
+                  "end_ms": 43540
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Gumamit ng lokal na na-verify na contact at pinakamaliit na kailangang impormasyon.",
+                  "start_ms": 43840,
+                  "end_ms": 50080
+                }
+              ]
+            }
+          },
+          "section-6": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.en.a465c2c6aa12.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "a465c2c6aa121e4c8f7f4a1843cfb6e176fad53f4092a5e5211015c635f3a4ae",
+              "sha256": "1927000eb17739d2b3e425e3a1e63edcd1747ade3612c48fd6a8195ec60408b2",
+              "duration_seconds": 38.792,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Clarify the need",
+                  "start_ms": 0,
+                  "end_ms": 1760
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Malou hears a family ask about possible help with medicine.",
+                  "start_ms": 2060,
+                  "end_ms": 6420
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Before contacting anyone, she clarifies whether the need is clinical, health promotion, social support, or environmental sanitation.",
+                  "start_ms": 6720,
+                  "end_ms": 16480
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "For an urgent health concern, she follows the local emergency or referral protocol and seeks guidance from the health team.",
+                  "start_ms": 16780,
+                  "end_ms": 24700
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "She does not turn a funding question into a promise.",
+                  "start_ms": 25000,
+                  "end_ms": 28200
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "She records only what is needed and asks whether the family agrees to an appropriate referral.",
+                  "start_ms": 28500,
+                  "end_ms": 34980
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Identify the need before choosing a contact.",
+                  "start_ms": 35280,
+                  "end_ms": 38720
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-6.fil.a837f60e7947.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "a837f60e79479da84435e3c5cf69277d7b6c0bf67ff5b67287d6f2f9464bfd16",
+              "sha256": "85e6fe98990481271c651e0e0337f36e4f798ed06818b55f8f56088dbcf61a9a",
+              "duration_seconds": 47.256,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Linawin ang pangangailangan",
+                  "start_ms": 0,
+                  "end_ms": 2480
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Si Malou ay may tanong mula sa isang pamilya tungkol sa posibleng tulong para sa gamot.",
+                  "start_ms": 2780,
+                  "end_ms": 8540
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Bago tumawag sa kahit sino, nililinaw niya kung klinikal na tanong ba ito, tanong sa health promotion, pangangailangang panlipunan, o suliranin sa kalinisan.",
+                  "start_ms": 8840,
+                  "end_ms": 21200
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Kung may agarang kondisyong pangkalusugan, sinusunod niya ang lokal na emergency o referral protocol at humihingi ng gabay sa health team.",
+                  "start_ms": 21500,
+                  "end_ms": 30380
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang tanong tungkol sa pondo ay hindi niya ginagawang pangako.",
+                  "start_ms": 30680,
+                  "end_ms": 34680
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Itinatala niya lamang ang kinakailangang impormasyon at nagtatanong kung pumapayag ang pamilya sa angkop na referral.",
+                  "start_ms": 34980,
+                  "end_ms": 42860
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Kilalanin ang pangangailangan bago piliin ang kausap.",
+                  "start_ms": 43160,
+                  "end_ms": 47200
+                }
+              ]
+            }
+          },
+          "section-7": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.en.424c04856008.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "424c048560086746ea3d297d6d156e8503fb5801c1e6937d303f8e23cf72a33f",
+              "sha256": "620769172244923e1192e1580b9d099eca2dca38a4cf851d1d1795138ccf83ca",
+              "duration_seconds": 49.136,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Other partners and boundaries",
+                  "start_ms": 0,
+                  "end_ms": 2480
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "The mayor leads the local government and chairs the city or municipal local health board; the CHO or MHO is vice-chair.",
+                  "start_ms": 2780,
+                  "end_ms": 11100
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The board proposes health service funding and advises the sanggunian.",
+                  "start_ms": 11400,
+                  "end_ms": 16480
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "It does not automatically approve a family’s request or make an individual clinical decision.",
+                  "start_ms": 16780,
+                  "end_ms": 22780
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "A BHW president may help coordinate BHWs according to local arrangements.",
+                  "start_ms": 23080,
+                  "end_ms": 28800
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "A social welfare or development officer can help identify suitable social assistance, while a sanitary inspector handles sanitation concerns.",
+                  "start_ms": 29100,
+                  "end_ms": 39420
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Verify the right person and scope before approaching anyone.",
+                  "start_ms": 39720,
+                  "end_ms": 44040
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Institutional planning differs from a decision for one person.",
+                  "start_ms": 44340,
+                  "end_ms": 49060
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-local-partners/section-7.fil.344bf64b4d9f.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "344bf64b4d9f0e02da7984f53d356bdf639e64def0a5ce8c3ad47b2b11f027af",
+              "sha256": "691e2abcdac70240b13700d0b124360f8ad0865c59c521f28e6263c17b371363",
+              "duration_seconds": 58.645,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Iba pang katuwang at hangganan",
+                  "start_ms": 0,
+                  "end_ms": 2680
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Ang mayor ay namumuno sa lokal na pamahalaan at chair ng city o municipal local health board; ang CHO o MHO ang vice-chair.",
+                  "start_ms": 2980,
+                  "end_ms": 13780
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ang board ay nagmumungkahi ng pondo para sa serbisyong pangkalusugan at nagpapayo sa sanggunian.",
+                  "start_ms": 14080,
+                  "end_ms": 21160
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Hindi nito kusang inaprubahan ang hiling ng isang pamilya at hindi ito ang gumagawa ng indibidwal na klinikal na pasya.",
+                  "start_ms": 21460,
+                  "end_ms": 30220
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang BHW president ay makatutulong sa koordinasyon ng mga BHW ayon sa lokal na kaayusan.",
+                  "start_ms": 30520,
+                  "end_ms": 37880
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Maaaring makatulong ang social welfare o development officer sa pag-alam sa angkop na social assistance, at ang sanitary inspector sa isyu ng kalinisan.",
+                  "start_ms": 38180,
+                  "end_ms": 49580
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Tiyakin ang tamang tao at saklaw ng gawain bago lumapit.",
+                  "start_ms": 49880,
+                  "end_ms": 53760
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Iba ang pagpaplano ng institusyon sa pasya para sa isang tao.",
+                  "start_ms": 54060,
+                  "end_ms": 58580
                 }
               ]
             }

@@ -1,13 +1,23 @@
-## [section-6] Karagdagang kakilala sa lungsod o munisipyo
+## [section-6] Linawin ang pangangailangan
 
-Lumalabas ang barangay patungo sa mas malawak na network kapag umaabot na sa antas ng lungsod o munisipyo.
+Si Malou ay may tanong mula sa isang pamilya tungkol sa posibleng tulong para sa gamot. Bago tumawag sa kahit sino, nililinaw niya kung klinikal na tanong ba ito, tanong sa health promotion, pangangailangang panlipunan, o suliranin sa kalinisan. Kung may agarang kondisyong pangkalusugan, sinusunod niya ang lokal na emergency o referral protocol at humihingi ng gabay sa health team. Ang tanong tungkol sa pondo ay hindi niya ginagawang pangako. Itinatala niya lamang ang kinakailangang impormasyon at nagtatanong kung pumapayag ang pamilya sa angkop na referral.
 
-Ang **City o Municipal Health Officer (CHO/MHO)** ang pangkalahatang namamahala sa kalusugan ng buong lungsod o bayan, at pangkalahatang supervisor ng mga health worker kasama ang mga BHW. Ang **midwife**, na naitatalaga sa barangay health station, ang nagtatakda ng mga gawain ng BHW at kanilang technical supervisor. Ang **Public Health Nurse (PHN)** naman ang nangangasiwa sa mga midwife, at kung minsan ay itinatalagang supervisor ng lahat ng BHW sa buong lungsod.
+## [city-role-map] Mga tungkulin ng health team
 
-May bagong antas ding kikilalanin: ang **HEPO sa antas ng lungsod o munisipyo** — hindi ito ang tungkuling HEPO ng BHW mismo (natutunan mo na ito sa Modyul 1), kundi ang opisinang namamahala sa pagpaplano ng health promotion sa buong lokalidad at nag-mo-monitor ng kasanayan ng mga BHW dito. At ang **local health board**, na nagbibigay ng rekomendasyong pangkalusugan sa local government at namamahala sa budget — ang mayor ang chairperson nito, ang CHO/MHO ang vice-chairperson.
+Sa RHU, ang city o municipal health officer, CHO o MHO, ang namumuno sa lokal na serbisyong pangkalusugan at sa mga tauhan ng tanggapan. Ang midwife at public health nurse, PHN, ay maaaring maging teknikal na katuwang ng BHW ayon sa aktuwal na pagtatalaga sa kanilang lugar; kinukumpirma ni Malou kung sino ang responsable sa tanong o referral. Ang HEPO sa antas ng lungsod o munisipyo ay katuwang sa health promotion; iba ito sa HEPO na tungkulin ng BHW. Ang tanong sa pangangalaga ng isang tao ay dinadala sa awtorisadong health professional, hindi sa board na nagbabalangkas ng badyet.
 
-## [section-7] Iba pang kapartner
+## [section-7] Iba pang katuwang at hangganan
 
-Apat pang kapartner ang dapat kilalanin ni BHW Marites.
+Ang mayor ay namumuno sa lokal na pamahalaan at chair ng city o municipal local health board; ang CHO o MHO ang vice-chair. Ang board ay nagmumungkahi ng pondo para sa serbisyong pangkalusugan at nagpapayo sa sanggunian. Hindi nito kusang inaprubahan ang hiling ng isang pamilya at hindi ito ang gumagawa ng indibidwal na klinikal na pasya. Ang BHW president ay makatutulong sa koordinasyon ng mga BHW ayon sa lokal na kaayusan. Maaaring makatulong ang social welfare o development officer sa pag-alam sa angkop na social assistance, at ang sanitary inspector sa isyu ng kalinisan. Tiyakin ang tamang tao at saklaw ng gawain bago lumapit.
 
-Ang **mayor** ang pangkalahatang chief executive ng lungsod o munisipyo at direktang supervisor ng CHO/MHO. Ang **BHW President** ay ang nahalal o itinalagang lider ng lahat ng BHW sa isang lungsod o bayan — tumutulong siya sa pag-update ng BHW registry at nagbibigay ng impormasyon tungkol sa mga oportunidad para sa kapwa BHW. Ang **municipal social work and development officer** ang namamahala sa financial assistance para sa mga nangangailangan ng tulong medikal (AICS). At ang **sanitary inspector** ang nangunguna sa promosyon ng kalinisan, at kasama ng BHW sa paghahanap ng mga kabahayang nangangailangan ng environmental sanitation intervention.
+## [local-request] Halimbawa: tiyaking lokal na hiling
+
+Tinanong ng pamilya si Malou kung may tulong sa gamot. Ipinaliwanag niyang maaari niyang alamin ang wastong proseso ngunit hindi niya maipapangako ang halaga o pag-apruba. Sa pahintulot ng pamilya, tinanong niya ang midwife sa RHU kung sino ang kasalukuyang contact at anong impormasyon ang kailangan. Nalaman niyang dapat munang sa itinalagang social welfare contact itanong ang posibleng suporta. Ang pamilya o awtorisadong kausap ang magbibigay ng hinihinging dokumento sa tamang tanggapan; hindi ipinadadala ni Malou ang buong health record.
+
+## [close-loop] Kumpirmahin at balikan ang pamilya
+
+Pagkatapos ng pag-ugnay, tinatandaan ni Malou kung sino ang nakausap, anong hakbang ang napagkasunduan, at kailan dapat bumalik para sa sagot, ayon sa lokal na patakaran. Ipinababatid niya sa pamilya ang na-verify na susunod na hakbang nang hindi ipinangangako ang resulta. Kung kailangan ng klinikal na payo, ibinabalik niya ito sa health professional; kung usapin ng kalinisan, tinatanong niya ang itinalagang sanitary contact. Sa kapartner na hindi health worker, ibinabahagi lamang niya ang impormasyong may pahintulot at talagang kailangan.
+
+## [local-partners-application-check] Subukan: piliin ang unang hakbang
+
+Sa susunod na tanong tungkol sa tulong sa gamot, hindi pa alam ni Malou ang kasalukuyang contact. May tatlong posibleng hakbang: tiyakin ang pahintulot at ang lokal na proseso sa midwife o RHU bago ibahagi ang kailangan lamang na impormasyon; ipadala ang buong tala sa sinumang kawani; o ipangako ang pondo dahil may local health board. Piliin ang hakbang na may pahintulot at pagtiyak. Ang dalawang iba pa ay lumalampas sa kinakailangang pagbabahagi o nangangako ng desisyong hindi saklaw ng BHW.

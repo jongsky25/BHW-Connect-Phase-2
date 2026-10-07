@@ -1,3 +1,4 @@
+import {approved154Path,approved154LessonPaths,teamworkLeaf,approved154HistoricalMapping,beforeApproved154} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
@@ -8,6 +9,7 @@ import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts
 import {lessonPosition} from '../../src/lib/elearning/reference-navigation.ts';
 import {BHW_RELATIONSHIPS_BEATS} from '../../remotion/src/bhw-relationships/narration.ts';
 import {toWebVtt} from '../lib/webvtt.mjs';
+import {approved153Path,approved153LessonPaths,localPartnersLeaf,withoutApproved153Registry} from './lesson-153-release-compat.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',dir=root+'/'+base,leaf=dir+'lessons/bhw-relationships/';
 const j=p=>JSON.parse(fs.readFileSync(root+'/'+p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex'),bytes=p=>fs.readFileSync(root+'/public'+p),hash=p=>sha(bytes(p));
 const baseline=j('docs/lesson-151-local-baseline.json'),published=j('docs/lesson-151-published-baseline.json'),source=j(base+'lessons/bhw-relationships/lesson.json');
@@ -43,7 +45,7 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
  it('retains every starting public MP3 byte and all35 same-module sibling files',()=>{
   const audio=Object.entries(baseline.tracked_hashes).filter(([p])=>p.startsWith('public/')&&p.endsWith('.mp3'));expect(audio).toHaveLength(2511);
   for(const [p,h]of Object.entries(baseline.tracked_hashes).filter(([p])=>p.startsWith('public/')))expect(sha(fs.readFileSync(root+'/'+p))).toBe(h);
-  expect(baseline.same_module_protected_files).toHaveLength(35);for(const p of baseline.same_module_protected_files.filter(p=>!p.includes("/lessons/bhw-barangay-partners/")))expect(sha(fs.readFileSync(root+'/'+p))).toBe(baseline.tracked_hashes[p]);
+  expect(baseline.same_module_protected_files).toHaveLength(35);for(const p of baseline.same_module_protected_files.filter(p=>!p.includes("/lessons/bhw-barangay-partners/")&&!p.startsWith(localPartnersLeaf)&&!p.startsWith(teamworkLeaf)))expect(sha(fs.readFileSync(root+'/'+p))).toBe(baseline.tracked_hashes[p]);for(const p of approved153LessonPaths)approved153Path(p);for(const p of approved154LessonPaths)approved154Path(p);
  },30000);
  it('preserves95 approved1.4 media bytes, all historical tracked receipts and10 package receipts',()=>{
   const media=j('docs/lesson-151-protected-media.json').media;expect(media).toHaveLength(95);for(const m of media)expect(hash(m.path)).toBe(m.sha256);
@@ -51,8 +53,8 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
   for(const [p,h]of Object.entries(baseline.tracked_hashes).filter(([p])=>/^docs\/lesson-(135|14[1-5])/.test(p)))expect(sha(fs.readFileSync(root+'/'+p))).toBe(h);
  });
  it('protects all non-target mappings and prior history while retaining target history',()=>{
-  for(const [k,v]of Object.entries(baseline.non_target_mappings)){if(k==="bhw-barangay-partners"){expect(mf.history[k]).toContainEqual(v);for(const langs of Object.values(v.sections))for(const t of Object.values(langs))expect(hash(t.src)).toBe(t.sha256);}else expect(mf.lessons[k]).toEqual(v);}
-  for(const [k,v]of Object.entries(baseline.original_history)){if(k==='bhw-relationships'||k==='bhw-barangay-partners')expect(mf.history[k].slice(0,v.length)).toEqual(v);else expect(mf.history[k]).toEqual(v);}
+  for(const [k,v]of Object.entries(baseline.non_target_mappings)){if(k==="bhw-teamwork"){approved154HistoricalMapping(mf,sha(JSON.stringify(v)),hash,x=>sha(JSON.stringify(x)));}else if(k==="bhw-barangay-partners"||k==="bhw-local-partners"){expect(mf.history[k]).toContainEqual(v);for(const langs of Object.values(v.sections))for(const t of Object.values(langs))expect(hash(t.src)).toBe(t.sha256);if(k==='bhw-local-partners')approved153Path('content/training/day1-basic-competencies/narration.json');}else expect(mf.lessons[k]).toEqual(v);}
+  for(const [k,v]of Object.entries(baseline.original_history)){if(k==='bhw-relationships'||k==='bhw-barangay-partners'||k==='bhw-local-partners')expect(mf.history[k].slice(0,v.length)).toEqual(v);else expect(mf.history[k]).toEqual(v);}
   expect(mf.history['bhw-relationships']).toContainEqual(baseline.original_target_mapping);
  });
  it('selects all6 historical published tracks and all12 draft tracks without selector overrides',()=>{
@@ -92,16 +94,16 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
   expect(count).toBe(30);
  });
  it('preserves the complete ordered original registry except exactly two appended151 IDs',()=>{
-  const s=fs.readFileSync(root+'/remotion/src/Root.tsx','utf8').replaceAll('\r\n','\n').replace(/^import \{BhwBarangayPartnersStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`bhw-barangay-partners-[\s\S]*?      \)\)\}\n/,'');
+  const s=withoutApproved153Registry(fs.readFileSync(root+'/remotion/src/Root.tsx','utf8').replaceAll('\r\n','\n')).replace(/^import \{BhwBarangayPartnersStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`bhw-barangay-partners-[\s\S]*?      \)\)\}\n/,'');
   expect((s.match(/id=\{language === "fil" \? "BhwRelationshipsStoryFil"/g)??[])).toHaveLength(1);
   const stripped=s.replace(/^import \{BhwRelationshipsStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`bhw-relationships-[\s\S]*?      \)\)\}\n/,'');expect(stripped).toBe(baseline.composition_registry.replaceAll('\r\n','\n'));
  });
  it('confines shared changes to four target QA rows, four opening passages and documented timing correction',()=>{
   const shared=baseline.shared_files;
-  const old=JSON.parse(shared[base+'qa-entries.json']),current=j(base+'qa-entries.json');const allowed=['d1m5-four-relationships','d1m5-who-for-clinical','d1m5-who-for-admin-support','d1m5-role-of-peer-bhw','d1m5-punong-barangay'];expect(current.entries.map(r=>r.id)).toEqual(old.entries.map(r=>r.id));for(const row of current.entries)if(!allowed.includes(row.id))expect(row).toEqual(old.entries.find(r=>r.id===row.id));
+  const old=JSON.parse(shared[base+'qa-entries.json']),current=JSON.parse(beforeApproved154(base+'qa-entries.json'));const allowed=['d1m5-four-relationships','d1m5-who-for-clinical','d1m5-who-for-admin-support','d1m5-role-of-peer-bhw','d1m5-punong-barangay','d1m5-local-health-board-composition','d1m5-other-stakeholders'];approved153Path(base+'qa-entries.json');expect(current.entries.map(r=>r.id)).toEqual(old.entries.map(r=>r.id));for(const row of current.entries)if(!allowed.includes(row.id))expect(row).toEqual(old.entries.find(r=>r.id===row.id));
   for(const p of ['activities.json','competency.json','coverage.json'])expect(fs.readFileSync(dir+p,'utf8')).toBe(shared[base+p]);
   for(const lang of ['fil','en']){
-   const suffix=s=>s.slice([...s.matchAll(/^## /gm)][5].index);expect(suffix(fs.readFileSync(dir+`lesson.${lang}.md`,'utf8'))).toBe(suffix(shared[base+`lesson.${lang}.md`]));
+   const p=base+`lesson.${lang}.md`;approved153Path(p);const parts=s=>s.split(/(?=^## )/m),before=parts(shared[p]),now=parts(beforeApproved154(p));expect(now.length).toBe(before.length);for(let i=7;i<now.length;i++)expect(now[i]).toBe(before[i]);
    const t=fs.readFileSync(dir+`facilitator-notes.${lang}.md`,'utf8'),table=[...t.matchAll(/\|[^\n]+\| (\d+) min \|/g)].map(m=>+m[1]);expect(table).toHaveLength(6);expect(table.reduce((s,n)=>s+n,0)).toBe(180);
   }
   const oldSources=JSON.parse(shared['content/training/day1-basic-competencies/sources.json']).sources,currentSources=j('content/training/day1-basic-competencies/sources.json').sources;for(const [k,v]of Object.entries(oldSources))expect(currentSources[k]).toEqual(v);expect(Object.keys(currentSources).filter(k=>!oldSources[k])).toEqual(['bhw-relationships-training','bhw-barangay-partners-training']);

@@ -69,47 +69,19 @@ She checks actual availability and approval before saying arrangements are ready
 
 ## [concept/core] Additional contacts at the city or municipal level {m5.stakeholders-city}
 
-The barangay opens up into a wider network once you reach the city or
-municipal level.
-
-The **City or Municipal Health Officer (CHO/MHO)** is the overall
-manager of health for the whole city or town, and the general
-supervisor of health workers including BHWs. The **midwife**, assigned
-to the barangay health station, sets the BHW's tasks and is their
-technical supervisor. The **Public Health Nurse (PHN)** supervises the
-midwives, and is sometimes assigned as supervisor of all BHWs citywide.
-
-There is a new level to meet as well: the **city or municipal-level
-HEPO office** — not the same as a BHW's own HEPO designation (which you
-already learned in Module 1), but the office that plans health
-promotion for the whole locality and monitors BHWs' skill at it. And
-the **local health board**, which gives health recommendations to the
-LGU and manages the budget — the mayor chairs it, the CHO/MHO is
-vice-chair.
+Malou checks what the family needs before choosing a city or municipal contact. The CHO/MHO leads the local health office. A midwife and PHN can provide technical guidance according to the local assignment; she confirms who handles the particular question. The city/municipal HEPO supports health promotion, distinct from a BHW's own HEPO designation. Individual clinical decisions belong to authorized health professionals. The local health board, chaired by the mayor with the CHO/MHO as vice-chair, proposes health-service budget allocations and advises the sanggunian; it does not itself manage an individual family's request.
 
 :::visual 2
 :::takeaway
-As the level rises — barangay, city, municipality — the number of
-people connected to the health service you provide grows too.
+Confirm the actual local role and route before referring a family.
 :::
 
 ## [concept/standard] Other partners {m5.stakeholders-other}
 
-Four more partners round out BHW Marites' network.
-
-The **mayor** is the overall chief executive of the city or
-municipality and the CHO/MHO's direct supervisor. The **BHW President**
-is the elected or appointed leader of all BHWs in a city or town —
-helping update the BHW registry and sharing opportunities with fellow
-BHWs. The **municipal social work and development officer** manages
-financial assistance for people needing medical help (AICS). And the
-**sanitary inspector** leads cleanliness promotion, and works with BHWs
-to find households needing environmental sanitation help.
+The mayor leads the local government. A BHW president may help coordinate BHWs under local arrangements. A social welfare or development officer can explain possible assistance subject to assessment and current procedures; a sanitary inspector supports environmental sanitation. When a family asks Malou about medicine support, she seeks consent, verifies the current contact through the midwife or RHU and shares only necessary information. She promises neither funding nor an individual clinical outcome, records the agreed next step and follows up.
 
 :::takeaway
-Not every partner works directly in health — the barangay's leader, the
-one who provides financial aid, and the one who promotes cleanliness
-all matter too.
+Choose the partner for the need, verify the local process and return to the family with the next step.
 :::
 
 ## [concept/core] What good teamwork looks like {m5.teamwork-practices, m5.competency}

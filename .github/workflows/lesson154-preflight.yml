@@ -1,0 +1,51 @@
+name: Lesson 1.5.4 approved release preflight
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - docs/lesson-154-owner-approval.json
+      - .github/workflows/lesson154-preflight.yml
+permissions:
+  contents: read
+jobs:
+  scoped-dry-run:
+    if: github.head_ref == 'codex/lesson-154-malou-proposal' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check exact approved media and target tests
+        run: |
+          set -euo pipefail
+          node --input-type=module - <<'JS'
+          import fs from 'node:fs';import {createHash} from 'node:crypto';
+          const a=JSON.parse(fs.readFileSync('docs/lesson-154-owner-approval.json','utf8'));
+          if(a.interpreted_authorization!=='merge and deploy to live')throw Error('Missing owner approval');
+          for(const m of a.approved_media){if(createHash('sha256').update(fs.readFileSync('public'+m.path)).digest('hex')!==m.sha256)throw Error('Approved media changed: '+m.path)}
+          console.log('All '+a.approved_media.length+' approved selected media files retain their exact bytes.');
+          JS
+          npx vitest run scripts/tests/lesson-154.test.mjs scripts/tests/reference-narration.test.mjs src/components/elearning/lesson-154-visual.test.tsx
+      - name: Dry-run only this lesson using the established loader
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+        run: |
+          set -euo pipefail
+          test -n "$KB_LOADER_PASSWORD"
+          test -n "$KB_LOADER_ANON_KEY"
+          npm run training:load -- --mode lessons --project ltzicxyefizxoqhfuuzc --org-unit 'Department of Health' --modules 05-bhw-at-barangay --lesson-keys bhw-teamwork --dry-run 2>&1 | tee lesson154-approved-dry-run.log
+          git diff --exit-code -- content/training/day1-basic-competencies/locks
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson154-approved-dry-run-${{ github.event.pull_request.head.sha }}
+          path: lesson154-approved-dry-run.log
+          retention-days: 30

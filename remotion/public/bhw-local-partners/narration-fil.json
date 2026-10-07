@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Filipino as one warm mature Filipina community health educator. Explain Malou's locally verified RHU contact, consent and the difference between budget advice and an individual decision with clear phrasing. Read every supplied word exactly; retain the same voice on the application screen, with no announcer switch or added words.",
+  "durationSeconds": 73.247,
+  "beats": [
+    {
+      "zone": "need",
+      "index": 0,
+      "text": "Nagtatanong ang isang pamilya kay Malou tungkol sa tulong sa gamot. Nililinaw niya ang pangangailangan at kung kailangan ng agarang health referral.",
+      "start_ms": 0,
+      "end_ms": 9560
+    },
+    {
+      "zone": "team",
+      "index": 1,
+      "text": "Sa RHU, tinitiyak ni Malou sa midwife kung sino ang kasalukuyang responsable. Maaaring magbigay ng gabay ang midwife at PHN ayon sa lokal na pagtatalaga.",
+      "start_ms": 9860,
+      "end_ms": 20980
+    },
+    {
+      "zone": "roles",
+      "index": 2,
+      "text": "Ang mayor ang chair at ang CHO o MHO ang vice-chair ng local health board. Nagmumungkahi ito ng budget allocation at nagpapayo, ngunit hindi nito inaprubahan ang hiling ng isang pamilya.",
+      "start_ms": 21280,
+      "end_ms": 36520
+    },
+    {
+      "zone": "limits",
+      "index": 3,
+      "text": "Maaaring tumulong sa koordinasyon ang BHW president. Para sa posibleng social assistance, itatanong ang lokal na contact at proseso; hiwalay sa klinikal na desisyon ang tulong panlipunan.",
+      "start_ms": 36820,
+      "end_ms": 50220
+    },
+    {
+      "zone": "consent",
+      "index": 4,
+      "text": "Humihingi ng pahintulot si Malou at ibinabahagi lamang ang kailangang impormasyon sa na-verify na contact. Hindi niya ipinadadala ang buong health record sa sinumang opisyal.",
+      "start_ms": 50520,
+      "end_ms": 62480
+    },
+    {
+      "zone": "close",
+      "index": 5,
+      "text": "Itinatala ni Malou ang napagkasunduang hakbang at balikan sa pamilya. Hindi siya nangangako ng pondo o resulta habang hinihintay ang tamang assessment.",
+      "start_ms": 62780,
+      "end_ms": 73180
+    }
+  ],
+  "audio_sha256": "0a513153e8fcf34398b123e706fbb1d362d54e0439089275d43d4676682a26e5"
+}
