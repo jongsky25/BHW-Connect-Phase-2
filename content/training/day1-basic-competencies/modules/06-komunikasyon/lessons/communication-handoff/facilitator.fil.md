@@ -8,7 +8,7 @@ Ang ebidensya ay ligtas na ulat na may pinagmulan, paglilinaw, pagtanggap at nap
 
 90 guided minutes: 10 pambungad + 15 demonstrasyon + 30 tatlong round ng triads + 20 pag-ulit ng ulat/pagtanggap + 10 debrief + 5 exit check. Ang 90 + 90 + 120 + 90 + 90 = 480 ay iisang pinagsamang programa; ang balangkas ng module ay paglalarawan ng parehong 480 minuto.
 
-30 kalahok sa sampung triads. Ilimbag ang tatlong role cards, checklist ng observer at isang pahinang gabay bawat grupo; papel, panulat at folder na walang laman. Walang tunay na resident record o upload. Hiwalay na Read/audio time: SELF_STUDY_TIMING_PENDING. Dagdag ang opsyonal na kuwento/pag-ulit; mananatiling 90 minuto ang guided practice.
+30 kalahok sa sampung triads. Ilimbag ang tatlong role cards, checklist ng observer at isang pahinang gabay bawat grupo; papel, panulat at folder na walang laman. Walang tunay na resident record o upload. Hiwalay na Read/audio time: Ginawang pagtataya ng sariling pag-aaral: 12–15 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 459.02 segundo sa English at 522.84 segundo sa Filipino; maglaan ng 3–6 minuto para sa check, maikling pagsasanay at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 ## [prepare] Paghahanda
 

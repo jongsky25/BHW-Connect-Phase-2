@@ -229,6 +229,46 @@
       "caption_en": "Before choosing: what does the group need?",
       "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.",
       "review_status": "draft"
+    },
+    {
+      "id": "communication-handoff-story",
+      "alt_fil": "Anim na narrated beat: malinaw na ulat, tamang tatanggap, buod sa pulong at kumpirmadong follow-up.",
+      "alt_en": "Six narrated beats: a clear report, authorized recipient, meeting summary and confirmed follow-up.",
+      "caption_fil": "Concern, pinagmulan, hiling at kumpirmadong hakbang.",
+      "caption_en": "Concern, source, request and a confirmed next step.",
+      "provenance": "Original lesson1.6.5 Remotion animation with new built-in imagegen six distinct handoff scenes preserving new male Gibs identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Distinct illustrated handoff actions with animated labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-6/communication-handoff-gemini-fil-fef85fe5bc6d.mp4",
+          "content_hash": "fef85fe5bc6de7c7c6152452791e63bbaaba06fffd8aa0a43cedab7b4c550ac6",
+          "duration_s": 69,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-handoff-gemini-fil-ac9da2e11561.vtt",
+            "content_hash": "ac9da2e11561302d59eb40f93224ccfb3a3c1632ff3cdae04a9994ff48a7522f"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-handoff-gemini-fil-f19e0c88ba25-poster.jpg",
+            "content_hash": "f19e0c88ba25752d1ac1a150c5364041b1fc04438ca55bab6a6eec1fe7b0750a"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-6/communication-handoff-gemini-en-f51d6d447773.mp4",
+          "content_hash": "f51d6d44777363401eddab77c6105ed6452679c6f3bc944abede2d2f6a78909b",
+          "duration_s": 61,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-handoff-gemini-en-5873b2de3fb8.vtt",
+            "content_hash": "5873b2de3fb860bce419b825e46f521927c16860bd1f70fe713e9808e04607d0"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-handoff-gemini-en-0fa496d031e4-poster.jpg",
+            "content_hash": "0fa496d031e45ab954aa4e2e46e0d5fa7d002380bcd4109a7ef586d65c856bf7"
+          }
+        }
+      },
+      "path": "/training/bhw-1-6/communication-handoff-gemini-fil-f19e0c88ba25-poster.jpg",
+      "content_hash": "f19e0c88ba25752d1ac1a150c5364041b1fc04438ca55bab6a6eec1fe7b0750a"
     }
-  ]
+  ],
+  "featured_asset_id": "communication-handoff-story"
 }

@@ -8,7 +8,7 @@ Observable evidence is a secure, attributed handoff with clarification, acknowle
 
 90 guided minutes: 10 opening + 15 demonstration + 30 three-round triads + 20 report/reception retry + 10 debrief + 5 exit check. The allocations 90 + 90 + 120 + 90 + 90 = 480 are one combined program; the shared module outline describes the same 480 minutes.
 
-30 participants in ten triads. Print the three role cards, observer checklist and one-page task aid per triad; use paper, pens and an unmarked folder. No real resident records or uploads. Independent Read/audio time: SELF_STUDY_TIMING_PENDING. Optional story/replays are additional; guided practice remains 90 minutes.
+30 participants in ten triads. Print the three role cards, observer checklist and one-page task aid per triad; use paper, pens and an unmarked folder. No real resident records or uploads. Independent Read/audio time: Authored independent estimate: 12–15 minutes, using the longer language track. Actual six-screen narration is 459.02 seconds in English and 522.84 seconds in Filipino; allow 3–6 minutes for the check, brief rehearsal and reflection. Optional story or replay is additional.
 
 ## [prepare] Prepare
 

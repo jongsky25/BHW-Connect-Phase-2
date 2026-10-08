@@ -1,0 +1,544 @@
+{
+  "status": "draft",
+  "method": "Actual 12 Read MP3 and two decoded shipped AAC recordings, plus four hash-pinned focused excerpts per recording. All original full/focused responses are retained. Model concerns below are verbatim supporting evidence and require human evaluation.",
+  "actual_full_reviews": 14,
+  "actual_focused_excerpts": 11,
+  "speech_direction": "One female Kore narrator reads all dialogue. Target-only speech aliases Gibz and Lisa/Lee-sah preserve displayed Gibs and Liza.",
+  "human_listening": "pending",
+  "owner_package_review": "pending",
+  "local_policy_SME_review": "pending",
+  "unresolved_concerns": "Review the full and focused records together. Apparent timbre changes, pronunciation, negation or ending concerns and conflicting assessments remain unresolved until actual human listening. Reusing a speech direction or a new synthesis pass does not clear earlier 1.6.1 human concerns.",
+  "full_records": [
+    {
+      "id": "read-communication-handoff-handoff-fil",
+      "language": "fil",
+      "sha256": "771c71fe88e37a222c31bb7e64ca8c0e35b0155c5463112eca8f4e4576392eee",
+      "delivery": {
+        "pacing": "Deliberate, steady, and clear pacing suited for instructional audio narration.",
+        "pitch_and_pace_variation": "Natural pedagogical modulation with well-placed pauses marking syntactic units, direct quotations, and checklist items.",
+        "expression_and_framing": "Nuances of attribution ('sinabi ni Lisa', 'sinabi ni Gibbs', 'Ayon kay Lisa'), qualification/uncertainty ('Hindi pa natiyak', 'kulang na detalye'), procedural conditions, and contrast between requested and agreed actions ('hiling at ang talagang napagkasunduan') are delivered with appropriate clarity and vocal emphasis.",
+        "timbre_consistency": "Narrator timbre remains uniform across the recording."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-handoff-en",
+      "language": "en",
+      "sha256": "e2b04a9f837684577465cbed5fc2a96c5d696deff9715f61de69007c7229fb50",
+      "delivery": {
+        "audibility": "Speech is completely audible, crisp, and clean throughout the recording.",
+        "pacing": "Deliberate, steady, and didactic pacing suited for instructional material, with clear pauses separating enumerated elements.",
+        "natural_pitch_pace_variation": "Moderate and appropriate; exhibits clear syntactical pauses around clauses, listed elements, and quotations, though overall cadence maintains a uniform instructional style.",
+        "semantic_expression": "Distinctions between requested action and agreed action, levels of uncertainty ('remains unverified', 'not yet verified'), attributions, and negative statements ('neither... nor', 'does not approve') are articulated distinctly without semantic ambiguity.",
+        "timbre_consistency": "Narrator vocal timbre remains consistent across the entire duration."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-audience-fil",
+      "language": "fil",
+      "sha256": "034bd35168dc104517f20b7af1dd97eb250d327352a43b21a37c5ed700b4a2e6",
+      "delivery": {
+        "pacing": "Consistent, steady, and clear throughout, with structured pauses between educational points.",
+        "naturalness": "Exhibits smooth, clear neural text-to-speech characteristics with standard declarative cadences; dialogue attribution and questions at 00:22-00:30 are delivered clearly with slightly elevated question inflection.",
+        "timbre": "Consistent voice timbre throughout with no audible shifts or audio artifacts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:22",
+          "word": "Gibbs",
+          "note": "Pronounced cleanly as 'Gibs' without distortion."
+        },
+        {
+          "timestamp": "00:52",
+          "word": "Liza",
+          "note": "Pronounced clearly as 'Li-sa'."
+        },
+        {
+          "timestamp": null,
+          "word": "BHW",
+          "note": "The initialism 'BHW' does not appear in this narration."
+        }
+      ],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-audience-en",
+      "language": "en",
+      "sha256": "63317d31ba187fdeb7b1d06e4358036b20f3218c186dc72e6420b6e99e59b249",
+      "delivery": {
+        "pacing": "Deliberate, steady, and instructional throughout.",
+        "natural_pitch_pace_variation": "Clear educational cadence with natural pauses between sentences and appropriate stress on instructional imperatives.",
+        "timbre_consistency": "Consistent narrator voice and tone with no abrupt changes in acoustic environment or vocal timbre.",
+        "expression_notes": "Dialogue attribution at 00:21–00:27 is rendered naturally with question intonation. Policy rules, conditions, and negative imperatives ('Do not rely...', 'Do not promise...') are articulated clearly without ambiguity."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:51",
+          "word": "Liza",
+          "observation": "Pronounced as 'Lisa' (/ˈliː.sə/) rather than the typical English pronunciation /ˈlaɪ.zə/."
+        }
+      ],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-meeting-fil",
+      "language": "fil",
+      "sha256": "e44f2dc09e50d09072b1258fa670bcf54fbb0651028d2887005e8b2c70606fe7",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, steady, and appropriate for educational/training delivery with clear syntactic pauses.",
+        "pitch_and_pace_variation": "Natural intonation curves, differentiating statements, condition clauses, and inquiry.",
+        "timbre_consistency": "Consistent acoustic environment and narrator timbre maintained from start to finish.",
+        "expressiveness": {
+          "attribution": "Natural and clear ('Maikling ulat ni Gibbs' at 00:32).",
+          "uncertainty": "Appropriate question rise and hesitation contour ('Hindi pa natitiyak...' at 00:40; 'Maaari bang pag-usapan...' at 00:44).",
+          "negation_and_conditions": "Proper emphasis on negative and conditional markers ('hindi ilantad' at 00:15, 'Walang kailangang' at 00:18, 'Kahit walang' at 00:26, 'hindi pahayag' at 00:53, 'Kung hindi sapat' at 01:12).",
+          "requested_vs_agreed_action": "Distinction is naturally enunciated ('Tanong ito para sa koordinasyon, hindi pahayag na aprobado na ang pagbabago' at 00:50–00:55)."
+        }
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-meeting-en",
+      "language": "en",
+      "sha256": "d88f59cf1d1b8a509da8262dd2377197a0eee611a665084d3b8e4f0304cdc2f9",
+      "delivery": {
+        "pacing": "Deliberate, steady instructional pace with natural pauses between sentences and bulleted concepts.",
+        "pitch_and_pace_variation": "Natural and clear educational inflection, appropriately emphasizing distinctions such as 'coordination question' versus 'statement that a change is approved'.",
+        "attribution_and_quotes": "Clear transition and quotation delivery for the character Gibs' report between 00:28 and 00:41.",
+        "timbre_consistency": "Consistent narrator vocal timbre throughout without noticeable shifts or artifacts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "word": "Gibs",
+          "timestamp": "00:28",
+          "note": "Pronounced with a hard 'G' (/ɡɪbz/), which sounds natural, though it stands out as an unusual name in isolation."
+        }
+      ],
+      "other_concerns": [
+        {
+          "note": "Names/acronyms 'Liza' and 'BHW' mentioned in the evaluation prompt do not appear in this recording."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-confirm-next-step-fil",
+      "language": "fil",
+      "sha256": "6763f0d7d126f8924fbba54cd4ab646ee46f2d389a27814e1a3225c3d6097ab6",
+      "delivery": {
+        "pacing": "Moderate, deliberate, and clear instructional pace suitable for educational material.",
+        "pitch_and_pace_variation": "Generally natural cadence and modulation typical of synthetic/instructional narration, though slightly uniform in emotional tone.",
+        "role_and_agreement_clarity": "At 00:48–00:50, Gibbs states 'Bukas ko kukumpirmahin sa inyo ang sagot' despite the midwife having just stated she would review options and speak tomorrow, creating slight confusion in requested vs. agreed action attribution."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:26",
+          "word": "Liza",
+          "note": "Pronounced with English phonology as /ˈlaɪ.zə/ rather than traditional Tagalog /ˈli.sa/, though common in modern Filipino usage."
+        },
+        {
+          "timestamp": "01:31",
+          "word": "Kumpirmahin",
+          "note": "The initial bilabial plosive /p/ is weakened or elided, sounding close to 'Kumirmahin'."
+        }
+      ],
+      "other_concerns": [
+        {
+          "timestamp": "00:48 - 00:50",
+          "issue": "Dialogue/logic inconsistency: Gibbs says 'Bukas ko kukumpirmahin sa inyo ang sagot' when acknowledging the midwife's upcoming schedule check, muddling who is confirming the response to whom."
+        },
+        {
+          "timestamp": "Entire track",
+          "issue": "The initialism 'BHW' (Barangay Health Worker) does not appear in the spoken narration."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-confirm-next-step-en",
+      "language": "en",
+      "sha256": "288623a6473ace62343280464ff8a64c6ec69ab66bdbda41f07e9e1fcbb6998a",
+      "delivery": "Clear, steady educational delivery with natural phrasing, appropriate pausing between conversational turns, and consistent pacing throughout. Dialogue attributions, conditions, and instructional emphasis are expressed naturally without timbre shifts.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-practice-fil",
+      "language": "fil",
+      "sha256": "e24d52f67141a3dd9b6bc0da98392fb07a5e71848dac43ade823037ce458f89e",
+      "delivery": {
+        "pacing": "Deliberate, steady, and instructional, with clear pauses separating sequential steps and bullet points.",
+        "pitch_and_pace_variation": "Natural cadence appropriate for educational role-play guidelines.",
+        "timbre_consistency": "Consistent acoustic quality and narrator timbre throughout the recording.",
+        "expression_elements": {
+          "attribution": "Natural expression when specifying roles (Gibbs, authorized midwife, facilitator).",
+          "uncertainty": "Well-inflected at 00:14-00:16 ('hindi pa tiyak') and 00:46-00:48 ('kung alin ang natiyak o hindi pa natiyak').",
+          "authorized_recipient_and_channel": "Clearly articulated at 00:16-00:18 ('ligtas na paraan') and 00:20-00:22 ('awtorisadong midwife').",
+          "requested_vs_agreed_action": "Naturally delineated at 00:16 ('hiling') and 00:27-00:29 ('makipagkasundo sa kayang gawin').",
+          "receipt_and_follow_up": "Proper conversational pacing at 00:25-00:27 ('kilalanin ang pagtanggap') and 00:54-00:56 ('kailan o paanong susundan').",
+          "negation_and_conditions": "Clear emphasis on negative/conditional constraints at 00:56-01:01 ('Walang diagnosis...'), 01:07-01:10 ('hindi marka...'), and 01:11-01:13 ('Kung mag-isa o walang internet...').",
+          "numerical_clarity": "Precise enumeration ('tatlo', 'tatlong round', 'Una', 'Ikalawa', 'Ikatlo') with no numerical ambiguity."
+        }
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:09 - 00:11",
+          "item": "Gibbs",
+          "observation": "Pronounced as single-syllable /ɡɪbz/. If intended as an acronym/initialism (e.g., GIB / BHW role), it is read phonetically as a single name rather than letter-by-letter."
+        },
+        {
+          "timestamp": "00:43 - 00:45",
+          "item": "Lisa",
+          "observation": "Pronounced with standard English/Filipino voicing /li.sa/ or /li.za/; fully intelligible."
+        },
+        {
+          "timestamp": "N/A",
+          "item": "BHW",
+          "observation": "The acronym 'BHW' is not uttered in this recording."
+        }
+      ],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-practice-en",
+      "language": "en",
+      "sha256": "5de4ae679dae24311cfbc3a55b3d7ee69bfcb97f63f3acb293a95b7e22024650",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, steady, and instructional, with clear pauses between structured procedural steps.",
+        "pitch_and_pace_variation": "Natural pedagogical cadence with appropriate rising and falling intonation to delineate steps, lists, and conditions.",
+        "expression_and_pragmatics": "Elements such as attribution, uncertainty, authorized recipient/secure channel, actions, and follow-up directives are articulated clearly and naturally.",
+        "narrator_timbre_change": false
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:36 - 00:37",
+          "word": "Liza's",
+          "observation": "Pronounced with a voiceless sibilant ('Lisa's' /ˈliːsəz/) rather than the standard Philippine English /laɪzəz/."
+        }
+      ],
+      "other_concerns": [
+        {
+          "timestamp": "00:07 - 00:09",
+          "observation": "'Gibs' is pronounced /ɡɪbz/ as written in the fictional scenario script."
+        },
+        {
+          "timestamp": "N/A",
+          "observation": "The acronym 'BHW' does not appear in the spoken narration."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-check-fil",
+      "language": "fil",
+      "sha256": "a3d04790c96cac7e819a580cb637a5338ed7fcac8023113943f9e9d7a118e56f",
+      "delivery": "Pacing is deliberate and typical of educational/e-learning narration, with clear pauses separating instructions and prompt sections. Pitch and cadence sound slightly synthetic or modular, with noticeable timbre/acoustic shifts between stitched segments (notably between the opening question at 00:00–00:02, the narrative at 00:02–00:17, and subsequent instructions). Key conceptual points (authorized recipients, unapproved schedule, verification, and agreed follow-up) are delivered with clear emphasis.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:09 - 00:10",
+          "word": "Gibs",
+          "note": "Pronounced clearly as /ɡɪbz/. Note: 'Liza' and 'BHW' do not occur in this audio segment."
+        }
+      ],
+      "other_concerns": [
+        {
+          "timestamp": "00:02 - 00:03",
+          "note": "Slight timbre and equalization transition between the title question and the main narration."
+        },
+        {
+          "timestamp": "00:26 - 00:27",
+          "note": "The phrase 'impormasyon kailangan' omits the standard Tagalog linker '-g' ('impormasyong kailangan'), matching the read script."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-check-en",
+      "language": "en",
+      "sha256": "a543aec4db0cf595946115a25eb88b989bd0291191c5e36c9a91418bc36bfdc4",
+      "delivery": "The narration maintains a clear, steady instructional pace appropriate for educational content. Vocal pitch, inflection, and pauses are naturally placed to distinguish scenario context from user directions. Negations ('not everyone', 'has not been approved') and procedural instructions are clearly emphasized without artificial contrast or noticeable shifts in vocal timbre.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "story-fil",
+      "language": "fil",
+      "sha256": "554a331659dd6e205cfbdbccba6a5e22c9c592a5a44fc6bc5d6b03719cdb1f53",
+      "delivery": {
+        "pacing": "Moderate, steady, and clear throughout, with appropriate pauses between declarative statements.",
+        "naturalness": "Good pitch variation and rhythm suited for educational or instructional guidance; maintains appropriate intonational phrasing for attribution, reported speech, and conditional statements.",
+        "timbre_consistency": "Consistent narrator voice and tone with no sudden timbre or acoustic shifts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "story-en",
+      "language": "en",
+      "sha256": "883a975768bb590d271b518f2a9466088399dee72d306994bcf638af89aa95b8",
+      "delivery": "The delivery is clear, intelligible, and consistent with professional educational narration in Philippine English. Pacing is steady and deliberate with natural pauses demarcating sentences and procedural steps. Pitch and emphasis appropriately highlight key operational distinctions, such as attribution ('Lisa reports', 'Gibbs tells'), stated uncertainty ('unverified', 'Not yet verified'), authorized channel security, requested vs. agreed follow-up actions, and explicit negative constraints ('does not send', 'No appointment or childcare is promised').",
+      "clipped_ending": false,
+      "pronunciation_concerns": null,
+      "other_concerns": null,
+      "unparsed_response": null
+    }
+  ],
+  "focused_records": [
+    {
+      "id": "read-audience-fil",
+      "source_sha256": "034bd35168dc104517f20b7af1dd97eb250d327352a43b21a37c5ed700b4a2e6",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 12.26,
+          "excerpt_sha256": "efa974a8c2a14804b040036702796bb6aea8ea9a90854bc43f04ca737269d95c",
+          "observations": {
+            "role_distinctions": "Single narrator delivering instructional guidance; no dialogue or alternating roles present.",
+            "pronunciation_names": "Names 'Gibs' and 'Liza' do not appear in this excerpt.",
+            "negation": "No negative grammatical markers (e.g., hindi, huwag) are present.",
+            "ending_completeness": "The excerpt concludes naturally with 'tungkulin' at around 00:11.7 followed by room tone, with no premature cut-off.",
+            "audible_speech": "Audio is clear, intelligible, and well-paced throughout.",
+            "clipped_words": "None detected; word onsets and codas are fully articulated.",
+            "unexpected_voice_changes": "Tone, volume, and pacing remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.54,
+          "end": 12.26,
+          "excerpt_sha256": "1e4d6e1a8cad8d3a7d88ebe5629aef83595f2b334ce410ebb78a2db7bfd323b7",
+          "observations": [
+            {
+              "timestamp": "00:00 - 00:08",
+              "feature": "audible_speech",
+              "detail": "Clear and continuous educational narration delivered by a single male speaker without background interference."
+            },
+            {
+              "timestamp": "00:00 - 00:08",
+              "feature": "names_and_negation",
+              "detail": "The names 'Gibs' and 'Liza', as well as grammatical negation, do not appear in this excerpt."
+            },
+            {
+              "timestamp": "00:00 - 00:08",
+              "feature": "role_distinctions",
+              "detail": "No role transitions or character changes occur; only one narrator voice is present."
+            },
+            {
+              "timestamp": "00:07 - 00:08",
+              "feature": "ending_completeness",
+              "detail": "The final word 'tungkulin' concludes fully without truncation or premature cut-off."
+            }
+          ],
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully intelligible and acoustic boundaries are clean.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 16.46,
+          "end": 26.64,
+          "excerpt_sha256": "e0c55cf4f3ad2e5e8ffc6b267ddea7cf9667c24c75382df79fab08718298eaeb",
+          "observations": {
+            "gibs_pronunciation": "Pronounced distinctly as /ɡɪbz/ around 00:06.",
+            "liza_pronunciation": "Name 'Liza' does not appear in this excerpt.",
+            "negation": "The negation 'Hindi' at 00:00 is clearly spoken and audible.",
+            "role_distinctions": "Spoken by a single consistent male synthetic voice; dialogue shift is marked primarily by phrasing and slight pause rather than distinct character voice acting.",
+            "ending_completeness": "The utterance concludes fully and naturally at 00:09–00:10 with 'nito?' without abrupt cutoffs.",
+            "audible_speech": "Speech is completely audible and intelligible throughout.",
+            "clipped_words": "No clipped syllables or words detected.",
+            "unexpected_voice_changes": "No sudden pitch, tone, or volume artifacts observed."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality and diction are clear.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 77.12,
+          "end": 93.04816666666666,
+          "excerpt_sha256": "4f6f8e5f0690e196c7b74d87b98ac92585d7a5f829613c2c313b1884a771faf5",
+          "observations": {
+            "gibs_pronunciation": "The name 'Gibs' is not spoken in this excerpt.",
+            "liza_pronunciation": "The name 'Liza' is not spoken in this excerpt.",
+            "negation": "The prohibitive/negation term 'huwag' is clearly articulated at 00:02 - 00:03 ('huwag ipagpaliban').",
+            "role_distinctions": "There is a distinct two-speaker dynamic: Speaker 1 (female voice) speaks from 00:00 to 00:08.5, followed by Speaker 2 (male voice) from 00:09.0 to 00:15.5.",
+            "ending_completeness": "The final word 'kailangan' concludes fully with a natural acoustic fade; no abrupt clipping detected at the end.",
+            "audible_speech": "All words are clearly audible and intelligible throughout.",
+            "clipped_words": "None detected; word boundaries and final consonants/vowels are intact.",
+            "unexpected_voice_changes": "A planned transition between a female speaker and a male speaker occurs between 00:08.5 and 00:09.0; no unintended vocal pitch or timbre shifts detected within each speaker's turn."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; audio is clear, speech is well-enunciated, and speaker roles are sharply differentiated.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-check-fil",
+      "source_sha256": "a3d04790c96cac7e819a580cb637a5338ed7fcac8023113943f9e9d7a118e56f",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.82,
+          "excerpt_sha256": "3b8003b553a7e0d005916853c4f65124b4770e9343c160a6b0525f7ce777371d",
+          "observations": {
+            "gibs_pronunciation": "N/A (name does not appear in this excerpt)",
+            "liza_pronunciation": "N/A (name does not appear in this excerpt)",
+            "negation": "The negative marker 'hindi' is clearly articulated at around 00:05.8 - 00:06.1 without slurring or drop-off.",
+            "role_distinctions": "The speaker clearly distinguishes the question/dialogue ('Ano ang sapat para sa pulong?', 00:00.0 - 00:02.1) using an inquiring intonation, transitioning seamlessly into declarative narration ('Nagtanong ang chair...', 00:02.6 - 00:07.4).",
+            "ending_completeness": "The final word 'pagpunta' finishes cleanly at 00:07.4 with natural trailing room acoustics and no abrupt cut.",
+            "audible_speech": "The entire audio is clear, intelligible, and well-enunciated.",
+            "clipped_words": "None detected; word boundaries and terminal syllables are intact.",
+            "unexpected_voice_changes": "None detected; voice timbre and audio quality remain consistent."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.62,
+          "end": 7.82,
+          "excerpt_sha256": "ab9669e14b601b1ab696fd18f73bc1835c7c1b99d387fcd8aaa4292b2f01f8d7",
+          "observations": {
+            "gibs_pronunciation": "N/A (not present in the excerpt)",
+            "liza_pronunciation": "N/A (not present in the excerpt)",
+            "negation": "The negation 'hindi' in 'hindi natuloy na pagpunta' (00:03.25 - 00:04.20) is clearly articulated and placed accurately in context.",
+            "role_distinctions": "Single consistent narrative voice; no role switching present.",
+            "ending_completeness": "The sentence completes naturally at 'pagpunta' (ends ~00:04.85) without abrupt cutoff.",
+            "audible_speech": "Speech is fully audible and intelligible throughout.",
+            "clipped_words": "None detected; word boundaries are intact.",
+            "unexpected_voice_changes": "None detected; pitch, pace, and vocal timbre remain stable."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 2.62,
+          "end": 17.96,
+          "excerpt_sha256": "46c1c782342c62a245ccb88acba09d54886afe981dadbbd1e653c0465964e3a5",
+          "observations": {
+            "Gibs_pronunciation": "Pronounced clearly as 'Gibs' ([ɡɪbz]) by the second speaker at approximately 00:06.8 - 00:07.4.",
+            "Liza_pronunciation": "The name Liza does not appear in this excerpt.",
+            "negation": "Negation occurs distinctly twice: 'hindi natuloy' (00:03.2 - 00:04.0) and 'hindi lahat' (00:10.4 - 00:11.2). Both are clearly articulated.",
+            "role_distinctions": "There are two distinct speaker voices: a male voice reading the first sentence (00:00.0 - 00:04.8) and a female voice reading the second sentence (00:05.5 - 00:15.1).",
+            "ending_completeness": "The audio concludes naturally with 'kaso' followed by a complete pause; no cutoffs detected.",
+            "audible_speech": "All words are fully audible, well-enunciated, and clear throughout.",
+            "clipped_words": "None observed.",
+            "unexpected_voice_changes": "The shift from male to female voice between the two sentences (at 00:05.5) represents a structured turn/speaker change rather than an unintended voice defect."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. The speech is clean and intelligible throughout the excerpt.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 33.02,
+          "end": 50.18125,
+          "excerpt_sha256": "c7ce20dc2ecff507e73c61a072387beae8a6579336b7399dacfdf26fa9b6d65f",
+          "observations": {
+            "audible_speech": "All words are clearly enunciated with clear acoustics and standard Filipino educational/instructional pacing.",
+            "role_distinctions": "There is a clear voice change/role transition around 00:09.80 where a second female speaker takes over from the first speaker.",
+            "gibs_pronunciation": "Not applicable; the name 'Gibs' does not appear in this excerpt.",
+            "liza_pronunciation": "Not applicable; the name 'Liza' does not appear in this excerpt.",
+            "negation": "No negation markers are present in the text.",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "ending_completeness": "The audio concludes naturally after 'napagkasunduan' with a clear finish and room tone."
+          },
+          "possible_defects": [],
+          "uncertainty": null,
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-confirm-next-step-fil",
+      "source_sha256": "6763f0d7d126f8924fbba54cd4ab646ee46f2d389a27814e1a3225c3d6097ab6",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.94,
+          "excerpt_sha256": "146c6926208616b403ebeb8b3c8a26e9aa3c3e07c8c67342676cebdb54e7b707",
+          "observations": {
+            "gibs_pronunciation": "Not applicable; the name 'Gibs' does not appear in this excerpt.",
+            "liza_pronunciation": "Not applicable; the name 'Liza' does not appear in this excerpt.",
+            "negation": "Clear negation heard at 00:05.4 - 00:06.1 ('hindi').",
+            "role_distinctions": "Single female speaker throughout, delivering questions followed by an explanatory/educational statement.",
+            "ending_completeness": "The ending word 'hiling' finishes completely without being truncated or cut off.",
+            "audible_speech": "All words are clearly audible and intelligibly articulated.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "None detected; voice tone, timbre, and pace remain consistent."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.54,
+          "end": 10.94,
+          "excerpt_sha256": "c56eb9b44f59cc30a65e24deb36ec43079e1489bf6ad5446a6be9ea6b79f1718",
+          "observations": null,
+          "possible_defects": null,
+          "uncertainty": null,
+          "unparsed_response": "\n"
+        },
+        {
+          "kind": "critical",
+          "start": 3.54,
+          "end": 14.84,
+          "excerpt_sha256": "ac6cccf0920d99a18b6d76bdd2592494365a78a47167ca35fd8124db11892f38",
+          "observations": {
+            "gibs_pronunciation": "N/A - the name 'Gibs' does not appear in this excerpt.",
+            "liza_pronunciation": "N/A - the name 'Liza' does not appear in this excerpt.",
+            "negation": "Clear negation heard at 00:02.08 - 00:02.82 ('hindi patunay').",
+            "role_distinctions": "Single consistent instructional narrator persona throughout the clip.",
+            "ending_completeness": "The sentence completes naturally at 00:10.98 with 'paglilinaw' followed by natural room silence until 00:11.23; no truncation.",
+            "audible_speech": "All speech is clear, intelligible, and cleanly recorded without competing noise.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "Tone, pitch, and pacing remain steady and consistent."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        }
+      ]
+    }
+  ]
+}

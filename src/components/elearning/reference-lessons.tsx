@@ -297,6 +297,7 @@ export function ReferenceLessons(props: Props) {
   const teamworkTracks = lesson?.lesson_key === "bhw-teamwork" ? Object.values(props.narration?.[lesson.id] ?? {}) : [];
   const teamworkMinutes = teamworkTracks.length === 6 ? Math.ceil(teamworkTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const listeningRevision = lesson?.lesson_key === "communication-listen" && lesson.revision.assets.some(asset => asset.id === "gibs-liza");
+  const handoffRevision = lesson?.lesson_key === "communication-handoff" && lesson.revision.assets.some(asset => asset.id === "handoff-check");
   const listeningTracks = listeningRevision ? Object.values(lessonNarration ?? {}) : [];
   const listeningMinutes = listeningTracks.length === 6 ? Math.ceil(listeningTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
@@ -554,10 +555,10 @@ export function ReferenceLessons(props: Props) {
             <h2 tabIndex={-1} ref={heading} className={storyLayout ? "reference-story-title" : "text-xl font-semibold"}>
               {en ? item.heading_en : item.heading_fil}
             </h2>
-            {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision) && item.check && (
+            {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || handoffRevision) && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
-            {listeningRevision && !storyLayout && figures}
+            {(listeningRevision || handoffRevision) && !storyLayout && figures}
             {practice}
             {revealSummary && <div
               className={storyLayout ? "reference-story-lines" :
@@ -580,7 +581,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && (revealSummary || selfManagementRevision || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && !handoffRevision && (revealSummary || selfManagementRevision || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {

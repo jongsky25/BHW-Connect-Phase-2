@@ -18,10 +18,12 @@ try{
   const next=lang==='en'?'Next':'Susunod',complete=lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin';
   for(let i=0;i<6;i++){
    const section=lesson.sections[i],slide=mode==='slides';await page.locator('article[data-scene="'+(slide?'slide-':'')+section.id+'"]').waitFor();
-   const image=page.locator('article[data-scene] figure img').first();await image.scrollIntoViewIfNeeded();await page.waitForFunction(()=>Array.from(document.querySelectorAll('article[data-scene] figure img')).some(i=>i.complete&&i.naturalWidth>0));
+   const image=page.locator('article[data-scene] figure img').first();await image.scrollIntoViewIfNeeded();await page.waitForFunction(()=>Array.from(document.querySelectorAll('article[data-scene] figure img')).every(i=>i.complete&&i.naturalWidth>0));
    assert(await page.getByRole('button',{name:complete,exact:true}).isDisabled());
-   const caseRecord={width,language:lang,mode,section:section.id,image_visible_before_answer:true,offline:true};
-   if(section.check){assert.equal(await page.locator('audio').count(),0);caseRecord.summary_audio_gated=true;assert.equal(await page.getByRole('status').count(),0);assert.equal(await page.getByText(section['takeaway_'+lang],{exact:true}).count(),0);for(let c=0;c<3;c++){await page.getByRole('button',{name:section.check.options[c][lang],exact:true}).click();const text=await page.getByRole('status').innerText();assert(text.includes(lang==='en'?'First:':'Una:')&&text.includes(lang==='en'?'Third:':'Ikatlo:'));}caseRecord.all_three_rationales=true;}
+   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+   await page.screenshot({path:dir+'/lesson165-'+lang+'-'+mode+'-'+width+'-'+section.id+'-before-choice.png',fullPage:true});
+   const caseRecord={width,language:lang,mode,section:section.id,image_visible_before_answer:true,all_illustrations_decoded:true,no_horizontal_overflow:true,offline:true};
+   if(section.check){assert.equal(await page.locator('audio').count(),0);caseRecord.summary_audio_gated=true;assert.equal(await page.getByRole('status').count(),0);assert.equal(await page.getByText(section['takeaway_'+lang],{exact:true}).count(),0);for(let c=0;c<3;c++){await page.getByRole('button',{name:section.check.options[c][lang],exact:true}).click();const text=await page.getByRole('status').innerText();assert(text.includes(lang==='en'?'First:':'Una:')&&text.includes(lang==='en'?'Third:':'Ikatlo:'));}caseRecord.all_three_rationales=true;await page.screenshot({path:dir+'/lesson165-'+lang+'-'+mode+'-'+width+'-'+section.id+'-resolved.png',fullPage:true});}
    if(slide)await page.getByText(lang==='en'?'Full narration and audio':'Buong salaysay at audio',{exact:true}).click();
    assert.equal(await page.locator('audio').count(),1);await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.readyState>=2&&a.currentTime>0;});
    const timings=manifest.lessons['communication-handoff'].sections[section.id][lang].timings;caseRecord.highlight_zones=[];

@@ -14,3 +14,9 @@ for name,url,pages in sources:
   expected_image=next(s['sha256'] for s in audit['original_page_images_inspected'] if s['file']==image.name)
   assert sha(image)==expected_image,image
 print('Verified original PDFs and 13 audited page images; no public redistribution.')
+
+import shutil
+for name,expected in [('privacy-irr.html',audit['privacy_primary_source']['sha256']),('tesda-filter.html',audit['tesda_verification']['catalog_sha256'])]:
+ file=root/'docs/source-material/lesson-165'/name
+ assert sha(file)==expected,file
+ shutil.copyfile(file,out/name)

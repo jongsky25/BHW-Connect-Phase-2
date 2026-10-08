@@ -1,0 +1,679 @@
+{
+  "prompt_revision": "gibs-handoff-v1",
+  "date": "2026-10-08T10:16:42.146Z",
+  "source_commit": "312e6b8962fba48800d4878acf8303c45f389163",
+  "model": "gemini-3.8-flash",
+  "decode_only": false,
+  "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "method": "Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.",
+  "records": [
+    {
+      "id": "read-audience-fil",
+      "language": "fil",
+      "source_path": "/training/audio/06-komunikasyon/communication-handoff/audience.fil.11b0fa4f1192.mp3",
+      "source_sha256": "034bd35168dc104517f20b7af1dd97eb250d327352a43b21a37c5ed700b4a2e6",
+      "decoded_pcm_sha256": "8ffb8f609eb207ebe268b0c7fc4462b556f5266cc482a72ebe539f865531c929",
+      "full_audio_metrics": {
+        "samples": 2233156,
+        "seconds": 93.04816666666666,
+        "rms": 0.14020214189115052,
+        "peak": 0.997344970703125,
+        "quiet_sample_fraction": 0.20581499904171496
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Tamang tatanggap, sapat na detalye",
+          "start_ms": 0,
+          "end_ms": 3240,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.1241239611870248,
+          "peak": 0.802734375,
+          "quiet_sample_fraction": 0.2945473251028807
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Bago magpadala, tiyakin kung sino ang awtorisadong tumanggap ng indibidwal na ulat at ano ang kailangan niya para sa kanyang tungkulin.",
+          "start_ms": 3540,
+          "end_ms": 12260,
+          "samples": 209280,
+          "seconds": 8.72,
+          "rms": 0.1315419938101219,
+          "peak": 0.88275146484375,
+          "quiet_sample_fraction": 0.14295680428134558
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Sa halimbawa, ang midwife ang itinalagang tatanggap.",
+          "start_ms": 12560,
+          "end_ms": 16160,
+          "samples": 86400,
+          "seconds": 3.6,
+          "rms": 0.14623549156977442,
+          "peak": 0.7672119140625,
+          "quiet_sample_fraction": 0.14498842592592592
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Hindi nangangahulugang maaaring tumanggap ng pribadong kaso ang bawat kasama sa pulong.",
+          "start_ms": 16460,
+          "end_ms": 22060,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.14286345020777622,
+          "peak": 0.837066650390625,
+          "quiet_sample_fraction": 0.09674107142857143
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Sinabi ni Gibs: “Kayo po ba ang awtorisadong tatanggap nito?",
+          "start_ms": 22360,
+          "end_ms": 26640,
+          "samples": 102720,
+          "seconds": 4.28,
+          "rms": 0.13644131809635632,
+          "peak": 0.750762939453125,
+          "quiet_sample_fraction": 0.2058508566978193
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Aling aprubadong paraan ang gagamitin natin?”",
+          "start_ms": 26940,
+          "end_ms": 30020,
+          "samples": 73920,
+          "seconds": 3.08,
+          "rms": 0.1287465500398915,
+          "peak": 0.759185791015625,
+          "quiet_sample_fraction": 0.16317640692640692
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Tiyakin ang aktuwal na tatanggap; huwag umasa sa pangalan lang sa isang account.",
+          "start_ms": 30320,
+          "end_ms": 35400,
+          "samples": 121920,
+          "seconds": 5.08,
+          "rms": 0.16056210029137466,
+          "peak": 0.963226318359375,
+          "quiet_sample_fraction": 0.20932578740157481
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Sundin ang natiyak na lokal na paraan para sa pasalita, papel o elektronikong ulat.",
+          "start_ms": 35700,
+          "end_ms": 41940,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.1492366271836352,
+          "peak": 0.950408935546875,
+          "quiet_sample_fraction": 0.18716613247863248
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Hindi awtomatikong aprubado ang personal na telepono.",
+          "start_ms": 42240,
+          "end_ms": 46160,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.15446106170188367,
+          "peak": 0.8909912109375,
+          "quiet_sample_fraction": 0.14136904761904762
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Huwag ilagay ang pangalan o personal na form sa pampublikong group chat.",
+          "start_ms": 46460,
+          "end_ms": 51540,
+          "samples": 121920,
+          "seconds": 5.08,
+          "rms": 0.12252676193797876,
+          "peak": 0.997344970703125,
+          "quiet_sample_fraction": 0.1398786089238845
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Kay Liza, ipaliwanag sa payak na wika ang layunin, tatanggap at susunod na hakbang ayon sa lokal na patakaran.",
+          "start_ms": 51840,
+          "end_ms": 60520,
+          "samples": 208320,
+          "seconds": 8.68,
+          "rms": 0.151449431715255,
+          "peak": 0.912200927734375,
+          "quiet_sample_fraction": 0.19532930107526883
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Sa midwife, ibigay lamang ang kaugnay na detalye.",
+          "start_ms": 60820,
+          "end_ms": 64620,
+          "samples": 91200,
+          "seconds": 3.8,
+          "rms": 0.15151067912400065,
+          "peak": 0.8369140625,
+          "quiet_sample_fraction": 0.18720394736842105
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "Sa pulong, gumamit ng sapat na pinagsama-samang impormasyon na hindi makakakilala sa isang pamilya.",
+          "start_ms": 64920,
+          "end_ms": 72800,
+          "samples": 189120,
+          "seconds": 7.88,
+          "rms": 0.1407778630545544,
+          "peak": 0.832183837890625,
+          "quiet_sample_fraction": 0.1619289340101523
+        },
+        {
+          "zone": "body",
+          "index": 12,
+          "text": "Walang pangakong lubos na lihim sa lahat ng pagkakataon.",
+          "start_ms": 73100,
+          "end_ms": 76820,
+          "samples": 89280,
+          "seconds": 3.72,
+          "rms": 0.15205724099244342,
+          "peak": 0.928924560546875,
+          "quiet_sample_fraction": 0.13679435483870966
+        },
+        {
+          "zone": "body",
+          "index": 13,
+          "text": "Kung may agarang pangangailangan, huwag ipagpaliban ang tulong para tapusin ang karaniwang ulat; sundin ang natiyak na lokal na proseso.",
+          "start_ms": 77120,
+          "end_ms": 85760,
+          "samples": 207360,
+          "seconds": 8.64,
+          "rms": 0.13954921795989703,
+          "peak": 0.943023681640625,
+          "quiet_sample_fraction": 0.13565297067901236
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Tiyakin ang awtorisadong tatanggap at lokal na aprubadong paraan; ibahagi lamang ang kailangan.",
+          "start_ms": 86060,
+          "end_ms": 92980,
+          "samples": 166080,
+          "seconds": 6.92,
+          "rms": 0.15660480530144721,
+          "peak": 0.907928466796875,
+          "quiet_sample_fraction": 0.15546122350674374
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 12.26,
+          "file": "read-audience-fil-head.wav",
+          "excerpt_sha256": "efa974a8c2a14804b040036702796bb6aea8ea9a90854bc43f04ca737269d95c",
+          "decoded_sample_count": 294240,
+          "expected_context": "Tamang tatanggap, sapat na detalye Bago magpadala, tiyakin kung sino ang awtorisadong tumanggap ng indibidwal na ulat at ano ang kailangan niya para sa kanyang tungkulin.",
+          "model_response": "```json\n{\n  \"transcript\": \"Tamang tatanggap, sapat na detalye. Bago magpadala, tiyakin kung sino ang awtorisadong tumanggap ng indibidwal na ulat, at ano ang kailangan niya para sa kanyang tungkulin.\",\n  \"observations\": {\n    \"role_distinctions\": \"Single narrator delivering instructional guidance; no dialogue or alternating roles present.\",\n    \"pronunciation_names\": \"Names 'Gibs' and 'Liza' do not appear in this excerpt.\",\n    \"negation\": \"No negative grammatical markers (e.g., hindi, huwag) are present.\",\n    \"ending_completeness\": \"The excerpt concludes naturally with 'tungkulin' at around 00:11.7 followed by room tone, with no premature cut-off.\",\n    \"audible_speech\": \"Audio is clear, intelligible, and well-paced throughout.\",\n    \"clipped_words\": \"None detected; word onsets and codas are fully articulated.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent throughout the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.54,
+          "end": 12.26,
+          "file": "read-audience-fil-body.wav",
+          "excerpt_sha256": "1e4d6e1a8cad8d3a7d88ebe5629aef83595f2b334ce410ebb78a2db7bfd323b7",
+          "decoded_sample_count": 209280,
+          "expected_context": "Bago magpadala, tiyakin kung sino ang awtorisadong tumanggap ng indibidwal na ulat at ano ang kailangan niya para sa kanyang tungkulin.",
+          "model_response": "```json\n{\n  \"transcript\": \"Bago magpadala, tiyakin kung sino ang awtorisadong tumanggap ng indibidwal na ulat, at ano ang kailangan niya para sa kanyang tungkulin.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00 - 00:08\",\n      \"feature\": \"audible_speech\",\n      \"detail\": \"Clear and continuous educational narration delivered by a single male speaker without background interference.\"\n    },\n    {\n      \"timestamp\": \"00:00 - 00:08\",\n      \"feature\": \"names_and_negation\",\n      \"detail\": \"The names 'Gibs' and 'Liza', as well as grammatical negation, do not appear in this excerpt.\"\n    },\n    {\n      \"timestamp\": \"00:00 - 00:08\",\n      \"feature\": \"role_distinctions\",\n      \"detail\": \"No role transitions or character changes occur; only one narrator voice is present.\"\n    },\n    {\n      \"timestamp\": \"00:07 - 00:08\",\n      \"feature\": \"ending_completeness\",\n      \"detail\": \"The final word 'tungkulin' concludes fully without truncation or premature cut-off.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None detected; speech is fully intelligible and acoustic boundaries are clean.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 16.46,
+          "end": 26.64,
+          "file": "read-audience-fil-critical.wav",
+          "excerpt_sha256": "e0c55cf4f3ad2e5e8ffc6b267ddea7cf9667c24c75382df79fab08718298eaeb",
+          "decoded_sample_count": 244320,
+          "expected_context": "Hindi nangangahulugang maaaring tumanggap ng pribadong kaso ang bawat kasama sa pulong. Sinabi ni Gibs: “Kayo po ba ang awtorisadong tatanggap nito?",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi nangangahulugang maaaring tumanggap ng pribadong kaso ang bawat kasama sa pulong. Sinabi ni Gibbs, \\\"Kayo po ba ang awtorisadong tatanggap nito?\\\"\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced distinctly as /ɡɪbz/ around 00:06.\",\n    \"liza_pronunciation\": \"Name 'Liza' does not appear in this excerpt.\",\n    \"negation\": \"The negation 'Hindi' at 00:00 is clearly spoken and audible.\",\n    \"role_distinctions\": \"Spoken by a single consistent male synthetic voice; dialogue shift is marked primarily by phrasing and slight pause rather than distinct character voice acting.\",\n    \"ending_completeness\": \"The utterance concludes fully and naturally at 00:09–00:10 with 'nito?' without abrupt cutoffs.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible throughout.\",\n    \"clipped_words\": \"No clipped syllables or words detected.\",\n    \"unexpected_voice_changes\": \"No sudden pitch, tone, or volume artifacts observed.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality and diction are clear.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 77.12,
+          "end": 93.04816666666666,
+          "file": "read-audience-fil-ending.wav",
+          "excerpt_sha256": "4f6f8e5f0690e196c7b74d87b98ac92585d7a5f829613c2c313b1884a771faf5",
+          "decoded_sample_count": 382276,
+          "expected_context": "Kung may agarang pangangailangan, huwag ipagpaliban ang tulong para tapusin ang karaniwang ulat; sundin ang natiyak na lokal na proseso. Tiyakin ang awtorisadong tatanggap at lokal na aprubadong paraan; ibahagi lamang ang kailangan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Kung may agarang pangangailangan, huwag ipagpaliban ang tulong para tapusin ang karaniwang ulat. Sundin ang natiyak na lokal na proseso. Tiyakin ang awtorisadong tatanggap at lokal na aprobadong paraan. Ibahagi lamang ang kailangan.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"The name 'Gibs' is not spoken in this excerpt.\",\n    \"liza_pronunciation\": \"The name 'Liza' is not spoken in this excerpt.\",\n    \"negation\": \"The prohibitive/negation term 'huwag' is clearly articulated at 00:02 - 00:03 ('huwag ipagpaliban').\",\n    \"role_distinctions\": \"There is a distinct two-speaker dynamic: Speaker 1 (female voice) speaks from 00:00 to 00:08.5, followed by Speaker 2 (male voice) from 00:09.0 to 00:15.5.\",\n    \"ending_completeness\": \"The final word 'kailangan' concludes fully with a natural acoustic fade; no abrupt clipping detected at the end.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants/vowels are intact.\",\n    \"unexpected_voice_changes\": \"A planned transition between a female speaker and a male speaker occurs between 00:08.5 and 00:09.0; no unintended vocal pitch or timbre shifts detected within each speaker's turn.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; audio is clear, speech is well-enunciated, and speaker roles are sharply differentiated.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-check-fil",
+      "language": "fil",
+      "source_path": "/training/audio/06-komunikasyon/communication-handoff/check.fil.f461a939520c.mp3",
+      "source_sha256": "a3d04790c96cac7e819a580cb637a5338ed7fcac8023113943f9e9d7a118e56f",
+      "decoded_pcm_sha256": "0000c83ddb2ed943eccd730ac8c1f059a8de45762264cc1f04ce107b855713bc",
+      "full_audio_metrics": {
+        "samples": 1204350,
+        "seconds": 50.18125,
+        "rms": 0.14497262355588295,
+        "peak": 0.93499755859375,
+        "quiet_sample_fraction": 0.21188940092165898
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Ano ang sapat para sa pulong?",
+          "start_ms": 0,
+          "end_ms": 2320,
+          "samples": 55680,
+          "seconds": 2.32,
+          "rms": 0.11689164055641492,
+          "peak": 0.787017822265625,
+          "quiet_sample_fraction": 0.26636135057471266
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Nagtanong ang chair ng barangay planning meeting tungkol sa mga hindi natuloy na pagpunta.",
+          "start_ms": 2620,
+          "end_ms": 7820,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.16973552019915955,
+          "peak": 0.875823974609375,
+          "quiet_sample_fraction": 0.11453525641025641
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "May pribadong tala si Gibs mula sa kathang-isip na pagsasanay, ngunit hindi lahat ng nasa pulong ay awtorisadong tumanggap ng indibidwal na kaso.",
+          "start_ms": 8120,
+          "end_ms": 17960,
+          "samples": 236160,
+          "seconds": 9.84,
+          "rms": 0.13501320311328047,
+          "peak": 0.859649658203125,
+          "quiet_sample_fraction": 0.10815972222222223
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Hindi pa aprubado ang pagbabago sa iskedyul.",
+          "start_ms": 18260,
+          "end_ms": 21260,
+          "samples": 72000,
+          "seconds": 3,
+          "rms": 0.15863792222386772,
+          "peak": 0.922698974609375,
+          "quiet_sample_fraction": 0.14798611111111112
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Tingnan ang larawan ng sitwasyon bago pumili.",
+          "start_ms": 21560,
+          "end_ms": 24520,
+          "samples": 71040,
+          "seconds": 2.96,
+          "rms": 0.1539748552249151,
+          "peak": 0.849212646484375,
+          "quiet_sample_fraction": 0.1543918918918919
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ano ang kaugnay na impormasyong kailangan ng grupo para magplano?",
+          "start_ms": 24820,
+          "end_ms": 28900,
+          "samples": 97920,
+          "seconds": 4.08,
+          "rms": 0.13811088522767045,
+          "peak": 0.82000732421875,
+          "quiet_sample_fraction": 0.1793607026143791
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Piliin ang sagot at ipaliwanag kung bakit.",
+          "start_ms": 29200,
+          "end_ms": 32720,
+          "samples": 84480,
+          "seconds": 3.52,
+          "rms": 0.12742049093010505,
+          "peak": 0.807647705078125,
+          "quiet_sample_fraction": 0.25362215909090907
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Pagkatapos pumili, basahin ang paliwanag sa lahat ng pagpipilian at ang wakas; ihambing sa sariling ulat at kumpirmasyon.",
+          "start_ms": 33020,
+          "end_ms": 42500,
+          "samples": 227520,
+          "seconds": 9.48,
+          "rms": 0.17378051287812601,
+          "peak": 0.93499755859375,
+          "quiet_sample_fraction": 0.20101969057665262
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ibahagi ang kailangan ng tamang tatanggap; tiyakin ang pagtanggap at sundan ang napagkasunduan.",
+          "start_ms": 42800,
+          "end_ms": 50120,
+          "samples": 175680,
+          "seconds": 7.32,
+          "rms": 0.13163459288972215,
+          "peak": 0.884521484375,
+          "quiet_sample_fraction": 0.20049521857923497
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.82,
+          "file": "read-check-fil-head.wav",
+          "excerpt_sha256": "3b8003b553a7e0d005916853c4f65124b4770e9343c160a6b0525f7ce777371d",
+          "decoded_sample_count": 187680,
+          "expected_context": "Ano ang sapat para sa pulong? Nagtanong ang chair ng barangay planning meeting tungkol sa mga hindi natuloy na pagpunta.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ano ang sapat para sa pulong? Nagtanong ang chair ng barangay planning meeting tungkol sa mga hindi natuloy na pagpunta.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"N/A (name does not appear in this excerpt)\",\n    \"liza_pronunciation\": \"N/A (name does not appear in this excerpt)\",\n    \"negation\": \"The negative marker 'hindi' is clearly articulated at around 00:05.8 - 00:06.1 without slurring or drop-off.\",\n    \"role_distinctions\": \"The speaker clearly distinguishes the question/dialogue ('Ano ang sapat para sa pulong?', 00:00.0 - 00:02.1) using an inquiring intonation, transitioning seamlessly into declarative narration ('Nagtanong ang chair...', 00:02.6 - 00:07.4).\",\n    \"ending_completeness\": \"The final word 'pagpunta' finishes cleanly at 00:07.4 with natural trailing room acoustics and no abrupt cut.\",\n    \"audible_speech\": \"The entire audio is clear, intelligible, and well-enunciated.\",\n    \"clipped_words\": \"None detected; word boundaries and terminal syllables are intact.\",\n    \"unexpected_voice_changes\": \"None detected; voice timbre and audio quality remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.62,
+          "end": 7.82,
+          "file": "read-check-fil-body.wav",
+          "excerpt_sha256": "ab9669e14b601b1ab696fd18f73bc1835c7c1b99d387fcd8aaa4292b2f01f8d7",
+          "decoded_sample_count": 124800,
+          "expected_context": "Nagtanong ang chair ng barangay planning meeting tungkol sa mga hindi natuloy na pagpunta.",
+          "model_response": "```json\n{\n \"transcript\": \"Nagtanong ang chair ng barangay planning meeting tungkol sa mga hindi natuloy na pagpunta.\",\n \"observations\": {\n  \"gibs_pronunciation\": \"N/A (not present in the excerpt)\",\n  \"liza_pronunciation\": \"N/A (not present in the excerpt)\",\n  \"negation\": \"The negation 'hindi' in 'hindi natuloy na pagpunta' (00:03.25 - 00:04.20) is clearly articulated and placed accurately in context.\",\n  \"role_distinctions\": \"Single consistent narrative voice; no role switching present.\",\n  \"ending_completeness\": \"The sentence completes naturally at 'pagpunta' (ends ~00:04.85) without abrupt cutoff.\",\n  \"audible_speech\": \"Speech is fully audible and intelligible throughout.\",\n  \"clipped_words\": \"None detected; word boundaries are intact.\",\n  \"unexpected_voice_changes\": \"None detected; pitch, pace, and vocal timbre remain stable.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 2.62,
+          "end": 17.96,
+          "file": "read-check-fil-critical.wav",
+          "excerpt_sha256": "46c1c782342c62a245ccb88acba09d54886afe981dadbbd1e653c0465964e3a5",
+          "decoded_sample_count": 368160,
+          "expected_context": "Nagtanong ang chair ng barangay planning meeting tungkol sa mga hindi natuloy na pagpunta. May pribadong tala si Gibs mula sa kathang-isip na pagsasanay, ngunit hindi lahat ng nasa pulong ay awtorisadong tumanggap ng indibidwal na kaso.",
+          "model_response": "```json\n{\n \"transcript\": \"Nagtanong ang chair ng barangay planning meeting tungkol sa mga hindi natuloy na pagpunta. May pribadong tala si Gibs mula sa kathang-isip na pagsasanay, ngunit hindi lahat ng nasa pulong ay awtorisadong tumanggap ng indibidwal na kaso.\",\n \"observations\": {\n  \"Gibs_pronunciation\": \"Pronounced clearly as 'Gibs' ([ɡɪbz]) by the second speaker at approximately 00:06.8 - 00:07.4.\",\n  \"Liza_pronunciation\": \"The name Liza does not appear in this excerpt.\",\n  \"negation\": \"Negation occurs distinctly twice: 'hindi natuloy' (00:03.2 - 00:04.0) and 'hindi lahat' (00:10.4 - 00:11.2). Both are clearly articulated.\",\n  \"role_distinctions\": \"There are two distinct speaker voices: a male voice reading the first sentence (00:00.0 - 00:04.8) and a female voice reading the second sentence (00:05.5 - 00:15.1).\",\n  \"ending_completeness\": \"The audio concludes naturally with 'kaso' followed by a complete pause; no cutoffs detected.\",\n  \"audible_speech\": \"All words are fully audible, well-enunciated, and clear throughout.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"The shift from male to female voice between the two sentences (at 00:05.5) represents a structured turn/speaker change rather than an unintended voice defect.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None. The speech is clean and intelligible throughout the excerpt.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 33.02,
+          "end": 50.18125,
+          "file": "read-check-fil-ending.wav",
+          "excerpt_sha256": "c7ce20dc2ecff507e73c61a072387beae8a6579336b7399dacfdf26fa9b6d65f",
+          "decoded_sample_count": 411870,
+          "expected_context": "Pagkatapos pumili, basahin ang paliwanag sa lahat ng pagpipilian at ang wakas; ihambing sa sariling ulat at kumpirmasyon. Ibahagi ang kailangan ng tamang tatanggap; tiyakin ang pagtanggap at sundan ang napagkasunduan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Pagkatapos pumili, basahin ang paliwanag sa lahat ng pagpipilian at ang wakas. Ihambing sa sariling ulat at kumpirmasyon. Ibahagi ang kailangan ng tamang tatanggap. Tiyakin ang pagtanggap, at sundan ang napagkasunduan.\",\n  \"observations\": {\n    \"audible_speech\": \"All words are clearly enunciated with clear acoustics and standard Filipino educational/instructional pacing.\",\n    \"role_distinctions\": \"There is a clear voice change/role transition around 00:09.80 where a second female speaker takes over from the first speaker.\",\n    \"gibs_pronunciation\": \"Not applicable; the name 'Gibs' does not appear in this excerpt.\",\n    \"liza_pronunciation\": \"Not applicable; the name 'Liza' does not appear in this excerpt.\",\n    \"negation\": \"No negation markers are present in the text.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables are intact.\",\n    \"ending_completeness\": \"The audio concludes naturally after 'napagkasunduan' with a clear finish and room tone.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": null\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-confirm-next-step-fil",
+      "language": "fil",
+      "source_path": "/training/audio/06-komunikasyon/communication-handoff/confirm-next-step.fil.ea4d10cda9e3.mp3",
+      "source_sha256": "6763f0d7d126f8924fbba54cd4ab646ee46f2d389a27814e1a3225c3d6097ab6",
+      "decoded_pcm_sha256": "a95a1ce23a1c77ba124f6a418b921406f97621a4c0fcaddd8e92379f86de0fba",
+      "full_audio_metrics": {
+        "samples": 2382368,
+        "seconds": 99.26533333333333,
+        "rms": 0.14186520436211342,
+        "peak": 0.999969482421875,
+        "quiet_sample_fraction": 0.24255278781447703
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Natanggap ba, at ano ang napagkasunduan?",
+          "start_ms": 0,
+          "end_ms": 3240,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.13235743834614747,
+          "peak": 0.874481201171875,
+          "quiet_sample_fraction": 0.2558127572016461
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Ang naipadalang mensahe ay hindi patunay na nabasa, naunawaan o napagkasunduan ang hiling.",
+          "start_ms": 3540,
+          "end_ms": 10940,
+          "samples": 177600,
+          "seconds": 7.4,
+          "rms": 0.14329763083211922,
+          "peak": 0.898193359375,
+          "quiet_sample_fraction": 0.13481981981981983
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Tanungin ang tatanggap at pakinggan ang paglilinaw.",
+          "start_ms": 11240,
+          "end_ms": 14840,
+          "samples": 86400,
+          "seconds": 3.6,
+          "rms": 0.16201153413517624,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.1675462962962963
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Sa halimbawa, nagtanong ang midwife: “Tiyak ba ang huling petsa?”",
+          "start_ms": 15140,
+          "end_ms": 20380,
+          "samples": 125760,
+          "seconds": 5.24,
+          "rms": 0.16022846771329635,
+          "peak": 0.874664306640625,
+          "quiet_sample_fraction": 0.2973123409669211
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Sumagot si Gibs: “Hindi pa po.",
+          "start_ms": 20680,
+          "end_ms": 23600,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.1463015992005657,
+          "peak": 0.719146728515625,
+          "quiet_sample_fraction": 0.3050513698630137
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Itatama ko ang ulat: ayon kay Liza ang hadlang; ang petsa ay kailangan pang beripikahin.”",
+          "start_ms": 23900,
+          "end_ms": 31100,
+          "samples": 172800,
+          "seconds": 7.2,
+          "rms": 0.13618183712626095,
+          "peak": 0.906158447265625,
+          "quiet_sample_fraction": 0.20744212962962963
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Sinabi ng midwife: “Natanggap ko ang ulat.",
+          "start_ms": 31400,
+          "end_ms": 34600,
+          "samples": 76800,
+          "seconds": 3.2,
+          "rms": 0.14098990188071087,
+          "peak": 0.780303955078125,
+          "quiet_sample_fraction": 0.2797265625
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Titingnan ko ang mga pagpipilian sa iskedyul at kakausapin kita bukas sa napagkasunduan nating pribadong paraan.”",
+          "start_ms": 34900,
+          "end_ms": 43020,
+          "samples": 194880,
+          "seconds": 8.12,
+          "rms": 0.13326530429627817,
+          "peak": 0.78338623046875,
+          "quiet_sample_fraction": 0.11635365353037767
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Inulit ni Gibs: “Kayo po ang titingin sa iskedyul.",
+          "start_ms": 43320,
+          "end_ms": 47320,
+          "samples": 96000,
+          "seconds": 4,
+          "rms": 0.14615101298659752,
+          "peak": 0.869842529296875,
+          "quiet_sample_fraction": 0.29148958333333336
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Bukas ko kukumpirmahin sa inyo ang sagot; pagkatapos ay ipapaliwanag ko kay Liza ang natiyak na hakbang.",
+          "start_ms": 47620,
+          "end_ms": 54780,
+          "samples": 171840,
+          "seconds": 7.16,
+          "rms": 0.15119667416613364,
+          "peak": 0.930206298828125,
+          "quiet_sample_fraction": 0.1641701582867784
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Tama po ba?”",
+          "start_ms": 55080,
+          "end_ms": 56360,
+          "samples": 30720,
+          "seconds": 1.28,
+          "rms": 0.12328157790386045,
+          "peak": 0.632354736328125,
+          "quiet_sample_fraction": 0.3830078125
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Sumang-ayon ang midwife.",
+          "start_ms": 56660,
+          "end_ms": 58820,
+          "samples": 51840,
+          "seconds": 2.16,
+          "rms": 0.14060677330940605,
+          "peak": 0.7252197265625,
+          "quiet_sample_fraction": 0.22974537037037038
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "Ito ang napagkasunduan sa kathang-isip na pagsasanay, hindi pangkalahatang deadline sa lahat ng lugar.",
+          "start_ms": 59120,
+          "end_ms": 65360,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.14606840354902173,
+          "peak": 0.8502197265625,
+          "quiet_sample_fraction": 0.13772702991452992
+        },
+        {
+          "zone": "body",
+          "index": 12,
+          "text": "Itala ang pagtanggap, sino ang gagawa, ano ang gagawin at kailan o paano muling kukumpirmahin.",
+          "start_ms": 65660,
+          "end_ms": 74860,
+          "samples": 220800,
+          "seconds": 9.2,
+          "rms": 0.15335664173954475,
+          "peak": 0.917388916015625,
+          "quiet_sample_fraction": 0.2720380434782609
+        },
+        {
+          "zone": "body",
+          "index": 13,
+          "text": "Huwag sabihin kay Liza na may appointment o childcare na kung wala pa.",
+          "start_ms": 75160,
+          "end_ms": 80440,
+          "samples": 126720,
+          "seconds": 5.28,
+          "rms": 0.13702816850448993,
+          "peak": 0.76104736328125,
+          "quiet_sample_fraction": 0.14429450757575757
+        },
+        {
+          "zone": "body",
+          "index": 14,
+          "text": "Kung hindi makontak ang tatanggap, sundin lamang ang natiyak na lokal na backup process; huwag gumawa ng sariling kapalit na tatanggap o emergency rule.",
+          "start_ms": 80740,
+          "end_ms": 90900,
+          "samples": 243840,
+          "seconds": 10.16,
+          "rms": 0.14955001050480973,
+          "peak": 0.918365478515625,
+          "quiet_sample_fraction": 0.14974573490813647
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Kumpirmahin ang pagtanggap at ang napagkasunduan: sino, ano, at kailan o paano mag-follow-up.",
+          "start_ms": 91200,
+          "end_ms": 99200,
+          "samples": 192000,
+          "seconds": 8,
+          "rms": 0.1453679003448989,
+          "peak": 0.925201416015625,
+          "quiet_sample_fraction": 0.2534427083333333
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.94,
+          "file": "read-confirm-next-step-fil-head.wav",
+          "excerpt_sha256": "146c6926208616b403ebeb8b3c8a26e9aa3c3e07c8c67342676cebdb54e7b707",
+          "decoded_sample_count": 262560,
+          "expected_context": "Natanggap ba, at ano ang napagkasunduan? Ang naipadalang mensahe ay hindi patunay na nabasa, naunawaan o napagkasunduan ang hiling.",
+          "model_response": "```json\n{\n  \"transcript\": \"Natanggap ba? At ano ang napagkasunduan? Ang naipadalang mensahe ay hindi patunay na nabasa, naunawaan, o napagkasunduan ang hiling.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Not applicable; the name 'Gibs' does not appear in this excerpt.\",\n    \"liza_pronunciation\": \"Not applicable; the name 'Liza' does not appear in this excerpt.\",\n    \"negation\": \"Clear negation heard at 00:05.4 - 00:06.1 ('hindi').\",\n    \"role_distinctions\": \"Single female speaker throughout, delivering questions followed by an explanatory/educational statement.\",\n    \"ending_completeness\": \"The ending word 'hiling' finishes completely without being truncated or cut off.\",\n    \"audible_speech\": \"All words are clearly audible and intelligibly articulated.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; voice tone, timbre, and pace remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.54,
+          "end": 10.94,
+          "file": "read-confirm-next-step-fil-body.wav",
+          "excerpt_sha256": "c56eb9b44f59cc30a65e24deb36ec43079e1489bf6ad5446a6be9ea6b79f1718",
+          "decoded_sample_count": 177600,
+          "expected_context": "Ang naipadalang mensahe ay hindi patunay na nabasa, naunawaan o napagkasunduan ang hiling.",
+          "model_response": "\n"
+        },
+        {
+          "kind": "critical",
+          "start": 3.54,
+          "end": 14.84,
+          "file": "read-confirm-next-step-fil-critical.wav",
+          "excerpt_sha256": "ac6cccf0920d99a18b6d76bdd2592494365a78a47167ca35fd8124db11892f38",
+          "decoded_sample_count": 271200,
+          "expected_context": "Ang naipadalang mensahe ay hindi patunay na nabasa, naunawaan o napagkasunduan ang hiling. Tanungin ang tatanggap at pakinggan ang paglilinaw.",
+          "model_response": "```json\n{\n \"transcript\": \"Ang naipadalang mensahe ay hindi patunay na nabasa, naunawaan, o napagkasunduan ang hiling. Tanungin ang tatanggap at pakinggan ang paglilinaw.\",\n \"observations\": {\n  \"gibs_pronunciation\": \"N/A - the name 'Gibs' does not appear in this excerpt.\",\n  \"liza_pronunciation\": \"N/A - the name 'Liza' does not appear in this excerpt.\",\n  \"negation\": \"Clear negation heard at 00:02.08 - 00:02.82 ('hindi patunay').\",\n  \"role_distinctions\": \"Single consistent instructional narrator persona throughout the clip.\",\n  \"ending_completeness\": \"The sentence completes naturally at 00:10.98 with 'paglilinaw' followed by natural room silence until 00:11.23; no truncation.\",\n  \"audible_speech\": \"All speech is clear, intelligible, and cleanly recorded without competing noise.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"Tone, pitch, and pacing remain steady and consistent.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```"
+        }
+      ]
+    }
+  ]
+}
