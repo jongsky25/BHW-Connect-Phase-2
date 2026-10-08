@@ -14,5 +14,17 @@
     ],
     "initial_focused_review": "Partial: provider HTTP503 stopped first run; copied pronunciation hint was wrong and is superseded."
   },
-  "correction_plan": "Target-only revised synthesis direction, explicit pronunciation aliases and steady female narrator; regenerate target Read and story tracks, retain initial tracks and responses; rerun versioned full and focused model review."
+  "correction_plan": "Scoped third delivery pass for five Read clips and English story; stronger medium-high feminine trainer direction and phonetic Lee-sah alias. Retain both prior generations and original responses; refresh actual-byte review for changed clips.",
+  "second_model_review": {
+    "archive": "bedbe235142a851912fba768ba50443c4bbad4f1d6da05316c40803a088203b2",
+    "complete_clips": 14,
+    "focused_excerpts": 56,
+    "no_full_clip_ending_truncation_reported": true,
+    "remaining_concerns": [
+      "English liza/profile/practice: reported voice changes; some focused assessments disagree",
+      "Filipino profile/check: reported voice/register changes; check name inconsistency",
+      "English story first beat: reported LY-za instead of LEE-sa"
+    ],
+    "assessment_limit": "Contradictory full/excerpt narrator-gender judgements require human listening; no human signoff inferred."
+  }
 }

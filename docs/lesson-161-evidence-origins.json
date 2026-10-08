@@ -1,0 +1,23 @@
+{
+  "method": "Exact original Actions archive hashes; retain original provider responses, initial speech sources and initial excerpts separately. No transport headers or credentials.",
+  "archives": [
+    {
+      "stage": "initial",
+      "workflow_run": 37732577763,
+      "artifact_id": 11530873166,
+      "source_commit": "e2377dfed60e04d1faa39ef1caeead801469dab8",
+      "local_archive": "lesson161-initial-evidence.zip",
+      "response_directory": "lesson161-initial-raw",
+      "zip_sha256": "b5ead159f1c8c8832365bb8014b7aaec8cb16f9c2cf54df9357f055224103318"
+    },
+    {
+      "stage": "corrected",
+      "workflow_run": 37735003698,
+      "artifact_id": 11531704905,
+      "source_commit": "9fa501541eb85d986ef01985dcae3735c9096a0f",
+      "local_archive": "lesson161-corrected-evidence.zip",
+      "response_directory": "lesson161-raw",
+      "zip_sha256": "bedbe235142a851912fba768ba50443c4bbad4f1d6da05316c40803a088203b2"
+    }
+  ]
+}

@@ -35,6 +35,10 @@ jobs:
         working-directory: remotion
       - run: npx remotion browser ensure
         working-directory: remotion
+      - name: Retain exact initial and corrected model responses
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-161-retain-evidence.mjs
       - name: Bounded read-only published-state snapshot
         env:
           KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
@@ -73,6 +77,12 @@ jobs:
         run: node scripts/lesson-161-browser-verify.mjs
       - name: Print bilingual role cards and listening aid
         run: node scripts/lesson-161-print-kit.mjs
+      - name: Complete normal CI and 76-composition regression at exact head
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-161-wait-ci.mjs
+      - name: Verify complete review evidence
+        run: node scripts/lesson-161-review-verify.mjs
       - name: Package review and verify integrity
         if: success()
         run: node scripts/lesson-161-package.mjs
@@ -91,6 +101,9 @@ jobs:
             docs/lesson-161-audio-review.json
             docs/lesson-161-audio-focus.json
             .preview/lesson161-raw/
+            .preview/lesson161-initial-raw/
+            .preview/lesson161-initial-media/
+            .preview/lesson161-initial-excerpts/
             .preview/lesson161-excerpts/
             .preview/lesson161-decoded/
             .preview/lesson161-deliverables/

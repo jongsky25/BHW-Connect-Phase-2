@@ -4,7 +4,7 @@ Sa kunwaring household interview, humingi ng pahintulot, pumili ng komportableng
 
 ## [time-materials] Time Materials
 
-90 minuto ng gabay na pagsasanay sa iisang walong-oras na programa sa komunikasyon. Ang limang lesson allocation (90 + 90 + 120 + 90 + 90) at ang shared na 480-minute run sheet ay dalawang pagtingin sa parehong programa, hindi dagdag na oras. Ginawang allocation ang 90 minuto, hindi opisyal na hiwalay na minimum. I-print ang role cards nina Gibs at Liza, observer checklist at one-page listening aid sa practice kit. Gumamit ng papel at bolpen; walang tunay na personal na rekord. Ginawang pagtataya ng sariling pag-aaral: 8–11 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 255.90 segundo sa English at 282.02 segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
+90 minuto ng gabay na pagsasanay sa iisang walong-oras na programa sa komunikasyon. Ang limang lesson allocation (90 + 90 + 120 + 90 + 90) at ang shared na 480-minute run sheet ay dalawang pagtingin sa parehong programa, hindi dagdag na oras. Ginawang allocation ang 90 minuto, hindi opisyal na hiwalay na minimum. I-print ang role cards nina Gibs at Liza, observer checklist at one-page listening aid sa practice kit. Gumamit ng papel at bolpen; walang tunay na personal na rekord. Ginawang pagtataya ng sariling pag-aaral: 8–11 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 245.81 segundo sa English at 273.16 segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 ## [prepare] Prepare
 

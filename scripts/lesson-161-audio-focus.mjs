@@ -55,9 +55,9 @@ for(const record of records){
   if(!process.env.GEMINI_API_KEY)throw Error('Gemini credential required for an uncached exact WAV excerpt');
   const prompt=`This is ${record.language==='fil'?'Filipino/Tagalog':'Philippine English'} fictional educational audio. The excerpt begins on a measured speech-zone boundary. Transcribe every audible word without guessing. Assess Gibs pronunciation (gibz), Liza pronunciation (LEE-sa), negation, role distinctions, ending completeness, audible speech, clipped words and unexpected voice changes. Report concrete timestamps relative to this excerpt and uncertainty. Do not presume previous analysis. Return JSON with transcript, observations, possible_defects and uncertainty. This is model assessment, not human approval.`;
   // Fictional authored training audio only, never learner/patient data.
-  // eslint-disable-next-line no-restricted-syntax
   let response;
   for(let attempt=0;attempt<3;attempt++){
+    // eslint-disable-next-line no-restricted-syntax
     response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:wav.toString('base64'),mime_type:'audio/wav'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
     if(response.ok)break;
     if(attempt<2&&(response.status===429||response.status>=500)){await new Promise(resolve=>setTimeout(resolve,4000*(attempt+1)));continue;}

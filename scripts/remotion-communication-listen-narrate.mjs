@@ -6,12 +6,12 @@ import { mkdirSync, writeFileSync, existsSync, readFileSync } from "node:fs";
 import {createHash} from "node:crypto";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { synthesizeWithGemini, GEMINI_TTS_MODEL, GEMINI_VOICE, COMMUNICATION_LISTEN_STORY_STYLES } from "./lib/tts-providers/gemini.mjs";
+import { synthesizeWithGemini, GEMINI_TTS_MODEL, GEMINI_VOICE, COMMUNICATION_LISTEN_STORY_STYLES, communicationListenSteadyStyle } from "./lib/tts-providers/gemini.mjs";
 import { mp3AudioFrames, communicationListenSpokenText } from "./lib/reference-narration.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = path.join(root, "remotion", "public", "communication-listen");
-const styles = COMMUNICATION_LISTEN_STORY_STYLES;
+const styles = {...COMMUNICATION_LISTEN_STORY_STYLES, en: communicationListenSteadyStyle("en")};
 
 async function main() {
   const language = process.argv[2];
@@ -33,7 +33,7 @@ async function main() {
     apiKey: process.env.GEMINI_API_KEY,
     kbps: 32,
     style: styles[language],
-    speak: (zone) => communicationListenSpokenText(zone.text, language),
+    speak: (zone) => communicationListenSpokenText(zone.text, language, language === "en"),
   });
   const frames = mp3AudioFrames(rendered.audioBytes);
   const durationSeconds = frames.reduce((sum, frame) => sum + frame.samples, 0) / frames[0].sampleRate;
