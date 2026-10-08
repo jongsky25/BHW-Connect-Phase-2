@@ -14,12 +14,14 @@ on:
     paths:
       - "remotion/**"
       - "scripts/remotion-render.mjs"
+      - "scripts/lesson-161-*.mjs"
       - ".github/workflows/remotion.yml"
   push:
     branches: [main]
     paths:
       - "remotion/**"
       - "scripts/remotion-render.mjs"
+      - "scripts/lesson-161-*.mjs"
       - ".github/workflows/remotion.yml"
 
 concurrency:
