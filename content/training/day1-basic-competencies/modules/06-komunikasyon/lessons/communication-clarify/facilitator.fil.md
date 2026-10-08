@@ -4,7 +4,7 @@ Sanayin ang bukas na paanyaya, isang kaugnay at walang paratang na paglilinaw, s
 
 ## [time-materials] Oras at kagamitan
 
-90 guided minutes: 10 pambungad + 15 demonstration + 30 tatlong round + 20 pag-ulit/pagwawasto + 10 debrief + 5 exit check = 90. Bahagi ito ng 90 + 90 + 120 + 90 + 90 = 480 minuto; hindi dagdag sa parehong walong-oras na programa. Maghanda ng cards at question aid para sa sampung triad, papel at panulat. Walang tunay na resident record. Maaaring offline at walang projector. Ginawang pagtataya ng sariling pag-aaral: 10–13 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 363.89 segundo sa English at 395.99 segundo sa Filipino; maglaan ng 3–6 minuto para sa check, maikling pagsasanay at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
+90 guided minutes: 10 pambungad + 15 demonstration + 30 tatlong round + 20 pag-ulit/pagwawasto + 10 debrief + 5 exit check = 90. Bahagi ito ng 90 + 90 + 120 + 90 + 90 = 480 minuto; hindi dagdag sa parehong walong-oras na programa. Maghanda ng cards at question aid para sa sampung triad, papel at panulat. Walang tunay na resident record. Maaaring offline at walang projector. Ginawang pagtataya ng sariling pag-aaral: 10–13 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 363.99 segundo sa English at 394.34 segundo sa Filipino; maglaan ng 3–6 minuto para sa check, maikling pagsasanay at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 ## [prepare] Ihanda
 

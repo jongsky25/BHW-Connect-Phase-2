@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-10-08T08:56:33.566Z",
-  "source_commit": "991f312bfd13a1d61779152b43f584b01c5c2090",
+  "generated_date": "2026-10-08T09:21:47.314Z",
+  "source_commit": "e4420d8a31d85f1a31d2a6f31c01bc485379c8aa",
   "owner_review": "pending",
   "render_input_sha256": "dbb44d6b8cae38b956d191c976517ae579f172b3bc801cb9fd65bbd4364e01d5",
-  "render_cached": false,
+  "render_cached": true,
   "target_read_tracks": 12,
   "pending_read_tracks": [],
   "read_generation_error": null,
@@ -75,7 +75,8 @@
       "poster": {
         "path": "/training/bhw-1-6/communication-clarify-gemini-fil-c59590ab9a97-poster.jpg",
         "content_hash": "c59590ab9a979c92c3e2432e375e3fa841fe55516675bf6920133e1687c161ff"
-      }
+      },
+      "render_reused_exact_input_hash": true
     },
     {
       "language": "en",
@@ -143,7 +144,8 @@
       "poster": {
         "path": "/training/bhw-1-6/communication-clarify-gemini-en-d63365f73cd9-poster.jpg",
         "content_hash": "d63365f73cd9fd083920d291bdfa8191d52b48b001b698b1c7e7a87d35055fa2"
-      }
+      },
+      "render_reused_exact_input_hash": true
     }
   ]
 }

@@ -18,6 +18,8 @@ const component='src/components/elearning/reference-lessons.tsx';
 const originalComponent=j('docs/lesson-162-shared-predecessors.json')[component];
 const componentPrior=fs.readFileSync(component,'utf8')
  .replace('  const clarificationRevision = lesson?.lesson_key === "communication-clarify" && lesson.revision.assets.some(asset => asset.id === "clarify-check");\n','')
+ .replace('const listeningTracks = (listeningRevision || clarificationRevision) ?', 'const listeningTracks = listeningRevision ?')
+ .replace('{(listeningRevision || clarificationRevision) ? (listeningMinutes', '{listeningRevision ? (listeningMinutes')
  .replace('{(listeningRevision || clarificationRevision) && !storyLayout && figures}','{listeningRevision && !storyLayout && figures}')
  .replace('!storyLayout && !listeningRevision && !clarificationRevision && (revealSummary','!storyLayout && !listeningRevision && (revealSummary');
 assert.equal(componentPrior,originalComponent,'Only target draft Slides illustration visibility changes');

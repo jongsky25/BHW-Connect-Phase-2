@@ -16,6 +16,7 @@ on:
       - "scripts/remotion-render.mjs"
       - "scripts/lesson-161-*.mjs"
       - "scripts/lesson-162-*"
+      - "docs/lesson-162-*"
       - ".github/workflows/remotion.yml"
   push:
     branches: [main]
@@ -24,6 +25,7 @@ on:
       - "scripts/remotion-render.mjs"
       - "scripts/lesson-161-*.mjs"
       - "scripts/lesson-162-*"
+      - "docs/lesson-162-*"
       - ".github/workflows/remotion.yml"
 
 concurrency:

@@ -72,6 +72,7 @@ jobs:
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-162-record-fetch.mjs'
         run: node scripts/lesson-162-audio-focus.mjs
       - run: node scripts/lesson-162-audio-notes.mjs
+      - run: node scripts/lesson-162-raw-verify.mjs
       - name: Retrieve and hash-verify original source excerpts
         run: |
           python3 -m pip install PyMuPDF==1.26.6

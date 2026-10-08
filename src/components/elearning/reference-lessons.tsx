@@ -298,7 +298,7 @@ export function ReferenceLessons(props: Props) {
   const teamworkMinutes = teamworkTracks.length === 6 ? Math.ceil(teamworkTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const listeningRevision = lesson?.lesson_key === "communication-listen" && lesson.revision.assets.some(asset => asset.id === "gibs-liza");
   const clarificationRevision = lesson?.lesson_key === "communication-clarify" && lesson.revision.assets.some(asset => asset.id === "clarify-check");
-  const listeningTracks = listeningRevision ? Object.values(lessonNarration ?? {}) : [];
+  const listeningTracks = (listeningRevision || clarificationRevision) ? Object.values(lessonNarration ?? {}) : [];
   const listeningMinutes = listeningTracks.length === 6 ? Math.ceil(listeningTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
   const videoLabel = narratedStory
@@ -754,7 +754,7 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {listeningRevision ? (listeningMinutes === null ? ui(
+              {(listeningRevision || clarificationRevision) ? (listeningMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 90-minutong guided practice.",
                 "Allow time for reading and practice; the 90-minute guided practice is separate.",
               ) : ui(
