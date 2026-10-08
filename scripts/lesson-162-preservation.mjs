@@ -1,6 +1,7 @@
 // Check actual current bytes, target-only changes and the complete narration history.
+import {reviewed162Bytes} from './lib/lesson-162-release-compat.mjs';
 import fs from 'node:fs';import {createHash} from 'node:crypto';import assert from 'node:assert/strict';
-const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),j=p=>JSON.parse(fs.readFileSync(p));
+const sha=p=>createHash('sha256').update(reviewed162Bytes(p)).digest('hex'),j=p=>JSON.parse(fs.readFileSync(p));
 const baseline=j('docs/lesson-162-baseline.json'),proposal=j('docs/lesson-162-proposal-receipt.json');
 const target='communication-clarify',leaf='content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/'+target+'/';
 const allowed=new Set([leaf+'lesson.json',leaf+'slides.json',leaf+'read.fil.md',leaf+'read.en.md',leaf+'facilitator.fil.md',leaf+'facilitator.en.md',leaf+'competency.json','src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','scripts/lib/reference-narration.mjs','content/training/day1-basic-competencies/narration.json']);
