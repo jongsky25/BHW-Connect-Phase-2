@@ -18,7 +18,9 @@
       "concept_ids": [
         "m6.clarify"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "gibs-portrait"
+      ],
       "takeaway_fil": "Bukas na tanong para sa kuwento; tiyak na tanong para sa paglilinaw ng impormasyon.",
       "takeaway_en": "Use open questions for the story and focused questions to clarify information.",
       "check": null
@@ -132,5 +134,17 @@
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "gibs-portrait",
+      "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "content_hash": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02",
+      "alt_fil": "Si Gibs, kathang-isip na lalaking BHW, nakasuot ng teal na polo at may nakasarang clipboard.",
+      "alt_en": "Gibs, a fictional male BHW, wears a teal polo and holds a closed clipboard.",
+      "caption_fil": "Si Gibs ang BHW sa lahat ng aralin sa 1.6.",
+      "caption_en": "Gibs is the BHW throughout lessons 1.6.",
+      "provenance": "New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.",
+      "review_status": "draft"
+    }
+  ]
 }

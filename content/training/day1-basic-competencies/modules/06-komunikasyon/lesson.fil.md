@@ -1,6 +1,6 @@
 ## [scenario/core] Bakit tahimik si Liza? {m6.gather}
 
-Si Liza, 29 anyos, ay kinakausap ni BHW Mila para sa household profile. Katabi niya ang kapitbahay at paulit-ulit siyang tumitingin sa pinto. “Okay lang po” ang sagot niya sa lahat. Sa halip na punan ang mga patlang sa hula, tinanong ni Mila kung maaari silang lumipat sa mas pribadong lugar at kung anong wika ang komportable kay Liza. Ipinaliwanag niyang ang kaugnay na impormasyon ay para sa health team at sa pagpaplano ng serbisyo.
+Si Liza, 29 anyos, ay kinakausap ni BHW Gibs para sa household profile. Katabi niya ang kapitbahay at paulit-ulit siyang tumitingin sa pinto. “Okay lang po” ang sagot niya sa lahat. Sa halip na punan ang mga patlang sa hula, tinanong ni Gibs kung maaari silang lumipat sa mas pribadong lugar at kung anong wika ang komportable kay Liza. Ipinaliwanag niyang ang kaugnay na impormasyon ay para sa health team at sa pagpaplano ng serbisyo.
 
 :::takeaway
 Ang maayos na pangangalap ng impormasyon ay nagsisimula sa komportableng lugar at malinaw na layunin.
@@ -8,7 +8,7 @@ Ang maayos na pangangalap ng impormasyon ay nagsisimula sa komportableng lugar a
 
 ## [concept/core] Makinig bago magpayo {m6.empathy}
 
-Umupo si Mila nang kapantay ni Liza at itinabi ang telepono. Hinintay niyang matapos ang kuwento: nahihiya si Liza dahil ilang beses siyang hindi nakapunta sa health center. “Mukhang mahirap pagsabayin ang pag-aalaga at pagpunta roon,” tugon ni Mila. Hindi niya sinabing tamad si Liza o nangakong maaayos ang lahat. Ang mahinahong boses, angkop na tingin at sapat na paghinto ay nagpapakitang may puwang ang sagot; huwag pilitin ang eye contact kung hindi komportable ang kausap.
+Umupo si Gibs nang kapantay ni Liza at itinabi ang telepono. Hinintay niyang matapos ang kuwento: nahihiya si Liza dahil ilang beses siyang hindi nakapunta sa health center. “Mukhang mahirap pagsabayin ang pag-aalaga at pagpunta roon,” tugon ni Gibs. Hindi niya sinabing tamad si Liza o nangakong maaayos ang lahat. Ang mahinahong boses, angkop na tingin at sapat na paghinto ay nagpapakitang may puwang ang sagot; huwag pilitin ang eye contact kung hindi komportable ang kausap.
 
 :::takeaway
 Ang pakikinig na may respeto ay nagbibigay ng pagkakataong mailahad ang tunay na concern.
@@ -31,7 +31,7 @@ Bukas na tanong para sa kuwento; tiyak na tanong para sa paglilinaw ng impormasy
 
 ## [concept/core] Sinabi, nakita, at hindi pa tiyak {m6.assess}
 
-Sinabi ni Liza na walang maiiwan sa dalawang anak. Nakita ni Mila na wala ang appointment card, ngunit hindi nito patunay na walang appointment. Sa tala, ihiwalay ang “ayon kay Liza” sa sariling obserbasyon. Itanong ang petsang hindi malinaw; markahang “hindi pa nakumpirma” kung kailangan pang tingnan ang rekord. Ang pagsusuri ng impormasyon ay pagtiyak sa pinagmulan at kaugnayan nito, hindi paglalagay ng diagnosis o husga sa tao.
+Sinabi ni Liza na walang maiiwan sa dalawang anak. Nakita ni Gibs na wala ang appointment card, ngunit hindi nito patunay na walang appointment. Sa tala, ihiwalay ang “ayon kay Liza” sa sariling obserbasyon. Itanong ang petsang hindi malinaw; markahang “hindi pa nakumpirma” kung kailangan pang tingnan ang rekord. Ang pagsusuri ng impormasyon ay pagtiyak sa pinagmulan at kaugnayan nito, hindi paglalagay ng diagnosis o husga sa tao.
 
 :::takeaway
 Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.
@@ -46,7 +46,7 @@ Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang berip
 
 ## [concept/core] Iulat ang kailangan para makakilos {m6.record}
 
-Gamitin ni Mila ang aprubadong form: petsa, kaugnay na concern, pinagmulan ng impormasyon, ginawa at kailangang follow-up. Halimbawa: “Ayon kay Liza, problema ang magbabantay sa anak; petsa ng huling pagpunta ay ibeberipika. Humihingi ng pakikipag-usap sa midwife tungkol sa iskedyul.” Ibigay ito sa tamang health team member sa awtorisadong paraan. Huwag ilagay ang pangalan at pribadong detalye sa pampublikong group chat. Tanungin kung natanggap ang ulat at kung sino ang susunod na kikilos.
+Gamitin ni Gibs ang aprubadong form: petsa, kaugnay na concern, pinagmulan ng impormasyon, ginawa at kailangang follow-up. Halimbawa: “Ayon kay Liza, problema ang magbabantay sa anak; petsa ng huling pagpunta ay ibeberipika. Humihingi ng pakikipag-usap sa midwife tungkol sa iskedyul.” Ibigay ito sa tamang health team member sa awtorisadong paraan. Huwag ilagay ang pangalan at pribadong detalye sa pampublikong group chat. Tanungin kung natanggap ang ulat at kung sino ang susunod na kikilos.
 
 :::visual 1
 :::takeaway
@@ -55,7 +55,7 @@ Ang pagtatala at paglalahad ng impormasyon ay dapat malinaw, may susunod na hakb
 
 ## [practice/core] Isang mensahe, saka pakinggan ang balik {m6.health-promotion}
 
-Ipinaliwanag ni Mila ang napagkasunduang susunod na hakbang sa payak na salita. “Para malaman kong malinaw ang paliwanag ko, paano mo ikukuwento ang plano pag-uwi?” Kapag iba ang sagot ni Liza, uulitin ni Mila sa ibang paraan at muling magtatanong. Ang teach-back ay pagsusuri sa linaw ng paliwanag, hindi pagsusulit sa talino ng kausap. Gumamit ng angkop na larawan kung makakatulong; huwag magbigay ng payong lampas sa pagsasanay at tagubilin ng health team.
+Ipinaliwanag ni Gibs ang napagkasunduang susunod na hakbang sa payak na salita. “Para malaman kong malinaw ang paliwanag ko, paano mo ikukuwento ang plano pag-uwi?” Kapag iba ang sagot ni Liza, uulitin ni Gibs sa ibang paraan at muling magtatanong. Ang teach-back ay pagsusuri sa linaw ng paliwanag, hindi pagsusulit sa talino ng kausap. Gumamit ng angkop na larawan kung makakatulong; huwag magbigay ng payong lampas sa pagsasanay at tagubilin ng health team.
 
 :::takeaway
 Ang malinaw na mensahe ay nasusuri sa sariling paliwanag ng kausap, hindi sa pagtango lamang.

@@ -1,8 +1,8 @@
 ## [handoff] Report enough for action
 
-BHW Mila has heard Liza, 29, describe a childcare barrier to attending the health center. The last attendance date remains unconfirmed.
+BHW Gibs has heard Liza, 29, describe a childcare barrier to attending the health center. The last attendance date remains unconfirmed.
 
-Mila uses the approved form: date, relevant concern, information source, action taken and needed follow-up. For example: “Liza reports difficulty finding childcare; last attendance date needs verification. Requests a conversation with the midwife about scheduling.” Send this to the appropriate health team member through an authorized channel. Keep names and private details out of public group chats. Confirm receipt and identify who will act next.
+Gibs uses the approved form: date, relevant concern, information source, action taken and needed follow-up. For example: “Liza reports difficulty finding childcare; last attendance date needs verification. Requests a conversation with the midwife about scheduling.” Send this to the appropriate health team member through an authorized channel. Keep names and private details out of public group chats. Confirm receipt and identify who will act next.
 
 ## [audience] Adapt the message to the audience
 

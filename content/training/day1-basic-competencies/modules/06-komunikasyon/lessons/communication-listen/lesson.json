@@ -18,9 +18,23 @@
       "concept_ids": [
         "m6.gather"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang maayos na pangangalap ng impormasyon ay nagsisimula sa komportableng lugar at malinaw na layunin.",
-      "takeaway_en": "Gathering information begins with a comfortable setting and a clear purpose.",
+      "asset_ids": [
+        "gibs-liza"
+      ],
+      "takeaway_fil": "Huminto at itanong ang gusto ng kausap; huwag hulaan ang dahilan ng katahimikan.",
+      "takeaway_en": "Pause and ask what the person prefers; do not guess the reason for silence.",
+      "check": null
+    },
+    {
+      "id": "permission",
+      "concept_ids": [
+        "m6.gather"
+      ],
+      "asset_ids": [
+        "gibs-permission"
+      ],
+      "takeaway_fil": "Ang kausap ang pumipili ng komportableng lugar, wika at kasama.",
+      "takeaway_en": "The person chooses a comfortable place, language and support person.",
       "check": null
     },
     {
@@ -28,9 +42,11 @@
       "concept_ids": [
         "m6.empathy"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang pakikinig na may respeto ay nagbibigay ng pagkakataong mailahad ang tunay na concern.",
-      "takeaway_en": "Respectful listening gives the person room to describe the real concern.",
+      "asset_ids": [
+        "gibs-listen"
+      ],
+      "takeaway_fil": "Magbigay ng oras sa kuwento at kilalanin ang hirap nang walang paratang.",
+      "takeaway_en": "Allow time for the account and acknowledge difficulty without blame.",
       "check": null
     },
     {
@@ -38,9 +54,11 @@
       "concept_ids": [
         "m6.profile"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang profile ay may malinaw na gamit, tumpak na sagot at paggalang sa kausap.",
-      "takeaway_en": "A profile needs a clear purpose, accurate answers and respect for the person.",
+      "asset_ids": [
+        "gibs-profile"
+      ],
+      "takeaway_fil": "Tanungin kung tama ang buod at hayaan ang kausap na magwasto.",
+      "takeaway_en": "Ask whether the summary is accurate and let the person correct it.",
       "check": null
     },
     {
@@ -50,9 +68,11 @@
         "m6.empathy",
         "m6.profile"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Mas malinaw ang concern kapag may pahintulot, privacy at oras ang kausap.",
-      "takeaway_en": "Permission, privacy and time help the person explain the concern.",
+      "asset_ids": [
+        "gibs-practice"
+      ],
+      "takeaway_fil": "Ulitin ang hindi pa malinaw na hakbang; feedback ng kapareha ay pagsasanay.",
+      "takeaway_en": "Repeat the step needing work; peer feedback is practice.",
       "check": null
     },
     {
@@ -62,12 +82,14 @@
         "m6.empathy",
         "m6.profile"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Mas malinaw ang concern kapag may pahintulot, privacy at oras ang kausap.",
-      "takeaway_en": "Permission, privacy and time help the person explain the concern.",
+      "asset_ids": [
+        "gibs-check"
+      ],
+      "takeaway_fil": "Bigyan ng pagpili at boses si Liza, saka tiyakin ang pagkaintindi.",
+      "takeaway_en": "Give Liza a choice and a voice, then check understanding.",
       "check": {
-        "prompt_fil": "Sumasagot ang kapitbahay para kay Liza. Ano ang unang gagawin ni Mila?",
-        "prompt_en": "A neighbor answers for Liza. What should Mila do first?",
+        "prompt_fil": "Sumasagot ang kapitbahay para kay Liza. Ano ang unang gagawin ni Gibs?",
+        "prompt_en": "A neighbor answers for Liza. What should Gibs do first?",
         "options": [
           {
             "fil": "Ituloy ang form gamit ang sagot ng kapitbahay.",
@@ -83,8 +105,8 @@
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "Ang ikalawang sagot ay nagbibigay kay Liza ng boses at pagpili. Ang sagot ng kapitbahay ay hindi awtomatikong sagot niya; ang agarang payo ay maaaring mauna sa tunay na concern.",
-        "feedback_en": "The second response gives Liza a voice and a choice. Her neighbor’s answer is not automatically hers; immediate advice may miss her actual concern."
+        "feedback_fil": "Una: maaaring mali ang sagot ng kapitbahay para kay Liza; huwag itong gawing sagot niya. Ikalawa: tanungin si Liza tungkol sa ginhawa at pagpili upang siya mismo ang makapagsalita. Ito ang tamang unang hakbang. Ikatlo: ang payo bago makinig ay maaaring hindi tumugon sa tunay na concern. Sa wakas, pinili ni Liza ang mas tahimik na lugar at Filipino. Sinabi niyang mahirap pumunta kapag wala ang kapatid na nagbabantay sa anak. Ibinuod ito ni Gibs bilang tanong at kinumpirma ni Liza. Walang ipinangakong childcare o appointment.",
+        "feedback_en": "First: the neighbor’s answer may not be Liza’s; do not treat it as her answer. Second: ask Liza about comfort and choices so she can speak for herself. This is the correct first step. Third: advice before listening may miss the actual concern. In the ending, Liza chooses a quieter place and Filipino. She explains that visits are difficult when her sister cannot look after her child. Gibs summarizes this as a question and Liza confirms it. No childcare or appointment is promised."
       }
     }
   ],
@@ -93,11 +115,13 @@
       "id": "m6.gather",
       "read_ids": [
         "liza",
+        "permission",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-liza",
+        "slide-permission",
         "slide-practice",
         "slide-check"
       ],
@@ -161,5 +185,72 @@
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "gibs-liza",
+      "path": "/training/bhw-1-6/gibs-liza-0b433575765c.png",
+      "content_hash": "0b433575765cf475aee091922be2b70c042f252dcecb341ba8d7614cb6540463",
+      "alt_fil": "Si Gibs ay nakikinig sa tabi ni Liza habang sumasagot ang kapitbahay.",
+      "alt_en": "Gibs sits with Liza while her neighbor answers.",
+      "caption_fil": "Huminto at itanong ang gusto ng kausap; huwag hulaan ang dahilan ng katahimikan.",
+      "caption_en": "Pause and ask what the person prefers; do not guess the reason for silence.",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.",
+      "review_status": "draft"
+    },
+    {
+      "id": "gibs-permission",
+      "path": "/training/bhw-1-6/gibs-permission-ac9bcc90f9f7.png",
+      "content_hash": "ac9bcc90f9f79b086bdbfa66981a1e7a1985803ab4c7356df9620755fdc614b9",
+      "alt_fil": "Nag-aalok si Gibs ng pagpili at itinuturo ni Liza ang mas tahimik na upuan.",
+      "alt_en": "Gibs offers choices and Liza points to a quieter seat.",
+      "caption_fil": "Ang kausap ang pumipili ng komportableng lugar, wika at kasama.",
+      "caption_en": "The person chooses a comfortable place, language and support person.",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.",
+      "review_status": "draft"
+    },
+    {
+      "id": "gibs-listen",
+      "path": "/training/bhw-1-6/gibs-listen-b385842fd8e0.png",
+      "content_hash": "b385842fd8e03276ffd72d29e0d4e39038a8aa528e8dbed002666a11806d03df",
+      "alt_fil": "Nakikinig si Gibs nang hindi sumasabat habang nagsasalita si Liza; nasa bag ang telepono.",
+      "alt_en": "Gibs listens without interrupting as Liza speaks; his phone is in a bag.",
+      "caption_fil": "Magbigay ng oras sa kuwento at kilalanin ang hirap nang walang paratang.",
+      "caption_en": "Allow time for the account and acknowledge difficulty without blame.",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.",
+      "review_status": "draft"
+    },
+    {
+      "id": "gibs-profile",
+      "path": "/training/bhw-1-6/gibs-profile-37d8a009bbc6.png",
+      "content_hash": "37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed",
+      "alt_fil": "Nag-uusap sina Gibs at Liza upang linawin at tiyakin ang buod; walang personal na rekord.",
+      "alt_en": "Gibs and Liza exchange a summary and clarification; no personal record is shown.",
+      "caption_fil": "Tanungin kung tama ang buod at hayaan ang kausap na magwasto.",
+      "caption_en": "Ask whether the summary is accurate and let the person correct it.",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.",
+      "review_status": "draft"
+    },
+    {
+      "id": "gibs-practice",
+      "path": "/training/bhw-1-6/gibs-practice-c746e090e23b.png",
+      "content_hash": "c746e090e23bdd76b3d89f899578e5a4294a6c013369bc0ac8877935f20725b5",
+      "alt_fil": "Nagsasanay sina Gibs at Liza habang may tagamasid na may blankong checklist.",
+      "alt_en": "Gibs and Liza rehearse with an observer holding a blank checklist.",
+      "caption_fil": "Ulitin ang hindi pa malinaw na hakbang; feedback ng kapareha ay pagsasanay.",
+      "caption_en": "Repeat the step needing work; peer feedback is practice.",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.",
+      "review_status": "draft"
+    },
+    {
+      "id": "gibs-check",
+      "path": "/training/bhw-1-6/gibs-check-348430167a69.png",
+      "content_hash": "348430167a69f65d96735a7b3bda35d21d3a8404c3c6ccb1f94057c16c608f26",
+      "alt_fil": "Sumasagot ang kapitbahay sa tabi ni Liza; nakasarado ang clipboard ni Gibs bago ang pasya.",
+      "alt_en": "A neighbor answers beside Liza; Gibs holds a closed clipboard before the decision.",
+      "caption_fil": "Kapitbahay ang sumasagot. Ano ang unang gagawin ni Gibs?",
+      "caption_en": "The neighbor answers. What should Gibs do first?",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.",
+      "review_status": "draft"
+    }
+  ]
 }

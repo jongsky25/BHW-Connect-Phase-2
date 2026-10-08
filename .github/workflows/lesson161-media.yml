@@ -1,0 +1,93 @@
+name: Lesson 1.6.1 draft evidence and media
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson161-media.yml'
+      - 'scripts/lesson-161-*.mjs'
+      - 'scripts/tests/lesson-161.test.mjs'
+      - 'docs/lesson-161-audio*.json'
+      - 'scripts/remotion-communication-listen-narrate.mjs'
+      - 'content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/**'
+      - 'remotion/src/communication-listen/**'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson161-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Bounded read-only published-state snapshot
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-161-published-snapshot.mjs
+      - name: Generate actual target-only draft media
+        if: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON161_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-161-record-fetch.mjs'
+        run: node scripts/lesson-161-media-build.mjs
+      - name: Full audio model review
+        if: always() && true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON161_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-161-record-fetch.mjs'
+        run: node scripts/lesson-161-audio-review.mjs
+      - name: Decode and focused-review shipped media
+        if: always() && true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON161_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-161-record-fetch.mjs'
+        run: node scripts/lesson-161-audio-focus.mjs
+      - name: Build actual-component self-contained review
+        run: node scripts/lesson-161-review-build.mjs
+      - name: Desktop/mobile offline playback and completion
+        run: node scripts/lesson-161-browser-verify.mjs
+      - name: Package review and verify integrity
+        if: success()
+        run: node scripts/lesson-161-package.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson161-draft-evidence
+          path: |
+            lesson-161-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/
+            public/training/audio/06-komunikasyon/
+            public/training/bhw-1-6/
+            remotion/public/communication-listen/
+            docs/lesson-161-*.json
+            docs/lesson-161-audio-review.json
+            docs/lesson-161-audio-focus.json
+            .preview/lesson161-raw/
+            .preview/lesson161-excerpts/
+            .preview/lesson161-decoded/
+            .preview/lesson161-deliverables/
+            remotion/src/Root.tsx
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

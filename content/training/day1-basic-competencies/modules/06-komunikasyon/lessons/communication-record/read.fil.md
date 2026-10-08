@@ -1,8 +1,8 @@
 ## [sources] Sinabi, nakita, at hindi pa tiyak
 
-Si Liza, 29, ay kinakausap ni BHW Mila tungkol sa hindi pagpunta sa health center. Hindi pa nakita ni Mila ang awtorisadong attendance record.
+Si Liza, 29, ay kinakausap ni BHW Gibs tungkol sa hindi pagpunta sa health center. Hindi pa nakita ni Gibs ang awtorisadong attendance record.
 
-Sinabi ni Liza na walang maiiwan sa dalawang anak. Nakita ni Mila na wala ang appointment card, ngunit hindi ito patunay na walang appointment. Sa tala, ihiwalay ang “ayon kay Liza” sa sariling obserbasyon. Itanong ang petsang hindi malinaw; markahang “hindi pa nakumpirma” kung kailangan pang tingnan ang rekord. Ang pagsusuri ng impormasyon ay pagtiyak sa pinagmulan at kaugnayan nito, hindi paglalagay ng diagnosis o husga sa tao.
+Sinabi ni Liza na walang maiiwan sa dalawang anak. Nakita ni Gibs na wala ang appointment card, ngunit hindi ito patunay na walang appointment. Sa tala, ihiwalay ang “ayon kay Liza” sa sariling obserbasyon. Itanong ang petsang hindi malinaw; markahang “hindi pa nakumpirma” kung kailangan pang tingnan ang rekord. Ang pagsusuri ng impormasyon ay pagtiyak sa pinagmulan at kaugnayan nito, hindi paglalagay ng diagnosis o husga sa tao.
 
 ## [conflicting-accounts] Kapag may magkaibang kuwento
 
