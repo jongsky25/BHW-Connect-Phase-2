@@ -1,5 +1,6 @@
 // Verify the actual proposed bytes FIRST, then expose pinned approved predecessors
 // to unchanged historical release assertions. No sibling exemptions or approval.
+import {reviewed162Bytes} from '../lib/lesson-162-release-compat.mjs';
 import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
 const root=path.resolve(import.meta.dirname,'../..'),sha=b=>createHash('sha256').update(b).digest('hex');
 const leaf='content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/';
@@ -11,7 +12,7 @@ function readJSON(file){
  const value=JSON.parse(fs.readFileSync(absolute));cache.set(file,{key,value});return value;
 }
 export function beforeProposed162(p){
- const actual=fs.readFileSync(path.join(root,p));
+ const actual=reviewed162Bytes(p,fs.readFileSync(path.join(root,p)));
  const receipt=readJSON('docs/lesson-162-proposal-receipt.json');
  const e=receipt.changed_existing_files[p];if(!e)return actual;
  if(!allowed.has(p)||receipt.status!=='draft'||receipt.owner_release_approval!==false||receipt.target!=='communication-clarify'||receipt.predecessor_sha!=='27d4752324f4fd50183fcb60a408e537cc784ae4')throw Error('Invalid scoped 1.6.2 proposal: '+p);
