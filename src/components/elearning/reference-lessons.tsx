@@ -757,20 +757,20 @@ export function ReferenceLessons(props: Props) {
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 90-minutong guided practice.",
                 "Allow time for reading and practice; the 90-minute guided practice is separate.",
               ) : ui(
-                `Tinatayang ${listeningMinutes}–${listeningMinutes + 3} minuto mula sa audio sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 90-minutong guided practice.`,
-                `Estimated ${listeningMinutes}–${listeningMinutes + 3} minutes from this language’s audio plus 3–6 minutes of practice. The optional story is additional; the 90-minute guided practice is separate.`,
+                `Tinatayang ${listeningMinutes}–${listeningMinutes + 3} minuto sa kabuuan: salaysay sa wikang ito at 3–6 minutong maikling pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 90-minutong guided practice.`,
+                `Estimated ${listeningMinutes}–${listeningMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 90-minute guided practice is separate.`,
               )) : selfManagementRevision ? (selfManagementMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa, pagsasanay at pagninilay; hiwalay ang 30-minutong guided practice.",
                 "Allow time for reading, practice and reflection; the 30-minute guided practice is separate.",
               ) : ui(
                 `Tinatayang ${selfManagementMinutes}–${selfManagementMinutes + 3} minuto ayon sa audio sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 30-minutong guided practice.`,
-                `Estimated ${selfManagementMinutes}–${selfManagementMinutes + 3} minutes from this language’s audio plus 3–6 minutes of practice. The optional story is additional; the 30-minute guided practice is separate.`,
+                `Estimated ${selfManagementMinutes}–${selfManagementMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 30-minute guided practice is separate.`,
               )) : lesson.lesson_key === "bhw-teamwork" && lesson.revision.assets.some(asset => asset.id === "malou-teamwork") ? (teamworkMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa, pagsasanay at pagninilay; hiwalay ang 30-minutong guided practice.",
                 "Allow time for reading, practice and reflection; the 30-minute guided practice is separate.",
               ) : ui(
                 `Tinatayang ${teamworkMinutes}–${teamworkMinutes + 3} minuto ayon sa audio sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 30-minutong guided practice.`,
-                `Estimated ${teamworkMinutes}–${teamworkMinutes + 3} minutes from this language’s audio plus 3–6 minutes of practice. The optional story is additional; the 30-minute guided practice is separate.`,
+                `Estimated ${teamworkMinutes}–${teamworkMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 30-minute guided practice is separate.`,
               )) : lesson.lesson_key === "bhw-relationships" && lesson.revision.assets.some(asset => asset.id === "malou-courtyard") ? ui(
                 "Tinatayang 10–13 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang 30-minutong guided practice.",
                 "Estimated 10–13 minutes for independent study; optional story and audio replay are additional. The 30-minute guided practice is separate.",

@@ -2,9 +2,13 @@
 import fs from 'node:fs';import path from 'node:path';import {execFileSync} from 'node:child_process';
 const root=path.resolve(import.meta.dirname,'..');
 const program=String.raw`
-import pathlib,json,hashlib,zipfile,base64,re
+import pathlib,json,hashlib,zipfile,base64,re,subprocess
 r=pathlib.Path('.');out=r/'.preview/lesson161-deliverables';html=out/'lesson-1.6.1-gibs-review.html'
 if not html.exists():raise RuntimeError('Complete review HTML required')
+verification=json.loads((out/'lesson-1.6.1-verification.json').read_text())
+head=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+assert verification['status']=='passed' and verification['source_commit']==head
+assert verification['normal_CI']['status']=='passed' and verification['normal_CI']['head_sha']==head,'Complete exact-head CI required before packaging'
 (out/'lesson-1.6.1-mila-review.html').write_bytes(html.read_bytes())
 sha=lambda b:hashlib.sha256(b).hexdigest()
 receipts=json.loads((out/'lesson-161-inline-media.json').read_text());text=html.read_text()

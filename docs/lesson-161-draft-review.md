@@ -16,7 +16,7 @@ The four sibling lessons receive Gibs name continuity, his introductory portrait
 
 ## Audio review and pending decisions
 
-The first model review flagged apparent voice changes and inconsistent Liza pronunciation. Those recordings and original responses are retained. Revised target synthesis uses a continuous Filipina Kore trainer and speech-only `Lisa`/`Gibz` pronunciation spellings; displayed text remains Liza/Gibs. The initial focused-review pronunciation hint was incorrect and its responses are explicitly superseded by a versioned prompt.
+The first model review flagged apparent voice changes and inconsistent Liza pronunciation. Those recordings and original responses are retained. Three delivery passes use a continuous Filipina Kore trainer direction, with speech-only `Lisa`/`Lee-sah` and `Gibz` pronunciation spellings; displayed text remains Liza/Gibs. The last pass changes five Read clips and the English story. The final reports retain a timbre concern in English practice and conflicting full/excerpt assessments elsewhere; these require human listening. The initial focused-review pronunciation hint was incorrect and its responses are explicitly superseded by a versioned prompt.
 
 Model analysis is supporting evidence. Human listening, owner art/package review and local-policy/SME review remain pending. Review both languages for pronunciation, negation, speaker continuity, complete endings and comfortable pauses. Confirm the authorized information-use and urgent-help wording against local procedure. A draft review does not inherit any earlier lesson’s release approval.
 

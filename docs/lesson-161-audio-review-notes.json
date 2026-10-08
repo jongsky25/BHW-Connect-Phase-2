@@ -14,7 +14,7 @@
     ],
     "initial_focused_review": "Partial: provider HTTP503 stopped first run; copied pronunciation hint was wrong and is superseded."
   },
-  "correction_plan": "Scoped third delivery pass for five Read clips and English story; stronger medium-high feminine trainer direction and phonetic Lee-sah alias. Retain both prior generations and original responses; refresh actual-byte review for changed clips.",
+  "correction_plan": "Three delivery passes completed; all initial, second and final media/response evidence retained. Technical draft ready for human audio, art and local-policy review.",
   "second_model_review": {
     "archive": "bedbe235142a851912fba768ba50443c4bbad4f1d6da05316c40803a088203b2",
     "complete_clips": 14,
@@ -26,5 +26,23 @@
       "English story first beat: reported LY-za instead of LEE-sa"
     ],
     "assessment_limit": "Contradictory full/excerpt narrator-gender judgements require human listening; no human signoff inferred."
-  }
+  },
+  "third_delivery_pass": {
+    "status": "completed",
+    "archive_sha256": "7294ece5b6b84794de0c2dd0df1e2af29886133a792250f1c279c950f8fd5d36",
+    "changed_Read_tracks": 5,
+    "changed_story_narration": "English",
+    "full_clip_reports": 14,
+    "focused_WAV_reviews": 56,
+    "all_full_clip_reports_speech_present": true,
+    "no_full_clip_ending_truncation_reported": true,
+    "pronunciation_note": "Lisa/Lee-sah are speech-only spellings for the intended LEE-sa pronunciation of displayed Liza. Generic full-model objections preferring LY-za are not treated as the name standard.",
+    "remaining_model_observations": [
+      "English practice: full review and ending excerpt flag lower/lighter narrator-timbre shifts.",
+      "English profile: full review describes dialogue/register shifts and slight accuracy pronunciation.",
+      "Several liza/profile/story excerpt assessments report voice shifts while full-clip reviews describe steady delivery; assessments are conflicting."
+    ],
+    "human_review_action": "Listen to both complete languages and flagged excerpts for the same adult woman narrator, names, negation and complete instructions. Model classifications are uncertain; no human signoff inferred."
+  },
+  "sibling_continuity_review": "Eight new sibling Read recordings replace Mila with Gibs using unchanged sibling styles. Exact text/media mappings are verified; the 14 full/56 focused model reviews cover 1.6.1 only. Include sibling name pronunciation in human listening."
 }

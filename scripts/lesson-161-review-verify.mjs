@@ -25,6 +25,7 @@ for(const record of initial.records){
  else {const section=record.id.replace('read-communication-listen-','').replace(/-(fil|en)$/,'');const t=manifest.history['communication-listen'].map(h=>h.sections[section]?.[record.language]).find(t=>t?.sha256===record.sha256);if(!t||sha('public'+t.src)!==record.sha256)throw Error('Initial Read review bytes missing');}
 }
 const ciPath=out+'/lesson-161-final-ci.json';
+if(fs.existsSync(ciPath)&&(j(ciPath).head_sha!==head||j(ciPath).status!=='passed'))throw Error('CI receipt does not match exact head');
 const report={status:'passed',source_commit:head,method:'Technical package completeness and exact media-byte evidence. Model assessment is supporting evidence, not human listening or approval.',browser:{file:browserPath,sha256:sha(browserPath),cases:84},actual_read_tracks:12,shipped_AAC_stories:2,full_model_reports:14,focused_WAV_reviews:56,earlier_media_and_selection:'verified by scoped media guard',normal_CI:fs.existsSync(ciPath)?j(ciPath):'Pending exact-head CI receipt',human_listening:'pending',owner_package_review:'pending',local_policy_SME_review:'pending'};
 fs.writeFileSync(out+'/lesson-1.6.1-verification.json',JSON.stringify(report,null,2)+'\n');
 console.log('Verified complete technical review: 84 browser cases, 14 full reports, 56 exact WAV excerpts.');

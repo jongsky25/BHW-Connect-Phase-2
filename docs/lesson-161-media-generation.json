@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-10-08T06:05:52.341Z",
-  "source_commit": "9fa501541eb85d986ef01985dcae3735c9096a0f",
+  "generated_date": "2026-10-08T06:47:44.628Z",
+  "source_commit": "9c37bd8e9cdf28499f1ee1d150cd3ca094aa21bd",
   "owner_review": "pending",
-  "render_input_sha256": "ed83e52154dee60bfbbce5f509625d4507cfff26b7d6fc46bbff012c21510bee",
-  "render_cached": false,
+  "render_input_sha256": "5b59a061cb6f8385d92fe677254ba9f00e8479da75dd471bb6b8dc152e2a7d33",
+  "render_cached": true,
   "target_read_tracks": 12,
   "pending_read_tracks": [],
   "read_generation_error": null,
@@ -75,65 +75,66 @@
       "poster": {
         "path": "/training/bhw-1-6/communication-listen-gemini-fil-973e2f8cd8d7-poster.jpg",
         "content_hash": "973e2f8cd8d7609c654d08fcb601b6a1f99870c721a72d65ff1ee8025d13fda5"
-      }
+      },
+      "render_reused_exact_input_hash": true
     },
     {
       "language": "en",
       "provider": "gemini",
       "model": "gemini-3.8-flash-tts",
       "voice": "Kore",
-      "narration_duration_seconds": 62.407,
+      "narration_duration_seconds": 63.922,
       "beats": [
         {
           "zone": "liza",
           "index": 0,
           "text": "Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses; he does not guess the reason for her silence.",
           "start_ms": 0,
-          "end_ms": 9600
+          "end_ms": 10640
         },
         {
           "zone": "permission",
           "index": 1,
           "text": "He explains the purpose and information use, then asks permission. Liza chooses a quieter place, Filipino, and just the two of them for now.",
-          "start_ms": 9900,
-          "end_ms": 20260
+          "start_ms": 10940,
+          "end_ms": 20740
         },
         {
           "zone": "listen",
           "index": 2,
           "text": "Gibs puts his phone away, offers an open invitation and waits. Liza describes her childcare barrier. He listens without interruption or blame.",
-          "start_ms": 20560,
-          "end_ms": 31400
+          "start_ms": 21040,
+          "end_ms": 31880
         },
         {
           "zone": "profile",
           "index": 3,
           "text": "Gibs asks whether his summary is right. “When my sister is away,” Liza clarifies. He gives the more accurate summary and Liza confirms it.",
-          "start_ms": 31700,
-          "end_ms": 41220
+          "start_ms": 32180,
+          "end_ms": 41940
         },
         {
           "zone": "practice",
           "index": 4,
           "text": "In practice, use fictional role cards. Everyone takes the BHW role. Identify one helpful phrase and repeat any rushed step.",
-          "start_ms": 41520,
-          "end_ms": 50160
+          "start_ms": 42240,
+          "end_ms": 52520
         },
         {
           "zone": "check",
           "index": 5,
           "text": "Liza has spoken and Gibs has checked his understanding. No childcare or appointment is promised. At the next authorized visit, rehearse the opening and summary question.",
-          "start_ms": 50460,
-          "end_ms": 62340
+          "start_ms": 52820,
+          "end_ms": 63860
         }
       ],
       "video": {
-        "path": "/training/bhw-1-6/communication-listen-gemini-en-18627f3aef43.mp4",
-        "content_hash": "18627f3aef43e410bdf3029eba2998766e50ae6e4619e894c9f71c6637d8daac",
-        "duration_s": 64,
+        "path": "/training/bhw-1-6/communication-listen-gemini-en-4ef2124a273d.mp4",
+        "content_hash": "4ef2124a273dd03b99301c702942e6557874d5c03627215e80d191800d06538e",
+        "duration_s": 65,
         "captions": {
-          "path": "/training/bhw-1-6/communication-listen-gemini-en-f8fa28241c9c.vtt",
-          "content_hash": "f8fa28241c9cac0394a9efb5acea4c048ce6bceb5fc3206629d88a8cfc5d2bee"
+          "path": "/training/bhw-1-6/communication-listen-gemini-en-7c1979fef1e8.vtt",
+          "content_hash": "7c1979fef1e8da9e43ea8cc2fc3c0eebda808cb39debad9e5eb0796f2f2f47c5"
         },
         "poster": {
           "path": "/training/bhw-1-6/communication-listen-gemini-en-dc3a0dbcdaab-poster.jpg",
@@ -143,7 +144,8 @@
       "poster": {
         "path": "/training/bhw-1-6/communication-listen-gemini-en-dc3a0dbcdaab-poster.jpg",
         "content_hash": "dc3a0dbcdaab41e505c12833b4936337c80ba62fda790d27d1d07719e90df339"
-      }
+      },
+      "render_reused_exact_input_hash": true
     }
   ]
 }
