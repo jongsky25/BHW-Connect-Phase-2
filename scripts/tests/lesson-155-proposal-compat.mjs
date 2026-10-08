@@ -11,7 +11,10 @@ export function beforeProposed155(p){
  const entry=receipt.changed_existing_files[p];
  if(!entry)return actual;
  if(receipt.status!=='draft'||receipt.owner_release_approval!==false)throw Error('1.5.5 proposal must not claim release approval');
- if(sha(actual)!==entry.proposed_sha256)throw Error('Unreviewed change beyond pinned 1.5.5 draft: '+p);
+ if(sha(actual)!==entry.proposed_sha256){
+  const approval=JSON.parse(fs.readFileSync(path.join(root,'docs/lesson-155-owner-approval.json'),'utf8'));
+  if(approval.interpreted_authorization!=='merge and deploy to live'||approval.reviewed_proposal_receipt_sha256!==sha(fs.readFileSync(path.join(root,'docs/lesson-155-proposal-receipt.json')))||approval.reviewed_source_sha256[p]!==entry.proposed_sha256||approval.approved_source_sha256[p]!==sha(actual))throw Error('Unapproved change beyond pinned 1.5.5 source: '+p);
+ }
  let predecessor;
  if(entry.predecessor_narration){const m=JSON.parse(actual);m.lessons['bhw-self-management']=entry.predecessor_narration.lesson;if(entry.predecessor_narration.history===null)delete m.history['bhw-self-management'];else m.history['bhw-self-management']=entry.predecessor_narration.history;predecessor=Buffer.from(JSON.stringify(m,null,2)+'\n');}
  else predecessor=Buffer.from(entry.predecessor_utf8,'utf8');

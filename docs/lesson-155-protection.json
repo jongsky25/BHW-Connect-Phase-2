@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-10-08T03:36:36.002Z",
+  "collected_at": "2026-10-08T04:32:47.530Z",
   "baseline_commit": "1dd489ee82438a2dc4b85d8e4cfd239f22858910",
-  "reviewed_source_commit": "bf434a6ea8de68c88b140c531e1429e73e41e818",
+  "reviewed_source_commit": "1216d5aeb301a2707a0d51e38227b69a6c80ebfb",
   "protected_prior_public_files": 3014,
   "protected_sibling_sources": 35,
   "changed_existing_files": [
@@ -22,10 +22,10 @@
   "sibling_mapping_changes": [],
   "sibling_history_changes": [],
   "unpinned_proposal_files": [],
-  "owner_release_approval": false,
+  "owner_release_approval": true,
   "limitations": [
     "Local source and byte audit; no published database rows or learner progress queried.",
-    "New package remains draft pending owner review."
+    "Owner approved exact package for live release; human listening is not asserted."
   ],
   "status": "passed"
 }

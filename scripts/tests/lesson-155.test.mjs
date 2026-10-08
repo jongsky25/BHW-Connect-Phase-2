@@ -30,10 +30,10 @@ describe('lesson 1.5.5 self-management content and protection',()=>{
   for(const term of ['self-care','patience','one task at a time','reflection','SMART','weekly planning','meeting preparation','thinking before speaking','Monday','Wednesday','Friday'])expect(habits).toContain(term);
   expect(bodies).toContain('an excessive workload is not one person’s fault');expect(bodies).toContain('an immediate danger must not wait');
  });
- it('has a new draft image on every screen, with exact bytes and accessible bilingual descriptions',()=>{
+ it('has a new owner-approved image on every screen, with exact bytes and accessible bilingual descriptions',()=>{
   for(const screen of [...lesson.revision.read_sections,...lesson.revision.slides]){
    const images=source.assets.filter(a=>screen.asset_ids.includes(a.id));expect(images).toHaveLength(1);
-   for(const a of images){expect(a.id).toMatch(/^malou-self-/);expect(a.review_status).toBe('draft');expect(sha(file('public'+a.path))).toBe(a.content_hash);for(const field of ['alt_fil','alt_en','caption_fil','caption_en'])expect(a[field].length).toBeGreaterThan(20);}
+   for(const a of images){expect(a.id).toMatch(/^malou-self-/);expect(a.review_status).toBe('approved');expect(sha(file('public'+a.path))).toBe(a.content_hash);for(const field of ['alt_fil','alt_en','caption_fil','caption_en'])expect(a[field].length).toBeGreaterThan(20);}
   }
  });
  it('uses plausible choices with complete feedback and an optional-disclosure personal exercise',()=>{
@@ -75,7 +75,7 @@ describe('lesson 1.5.5 exact generated media',()=>{
   for(const lang of ['fil','en'])expect(Object.keys(narrationForLesson(mf,'bhw-self-management',lang,lesson.revision.read_sections))).toEqual(ids);
  });
  it('keeps captions, timing and both optional video languages linked to actual hashed media',()=>{
-  const story=source.assets.find(a=>a.id===source.featured_asset_id);expect(story.review_status).toBe('draft');
+  const story=source.assets.find(a=>a.id===source.featured_asset_id);expect(story.review_status).toBe('approved');
   for(const lang of ['fil','en']){
    const video=story.videos[lang];expect(video.duration_s).toBeLessThanOrEqual(90);
    for(const media of [video,video.poster,video.captions])expect(sha(file('public'+media.path))).toBe(media.content_hash);
@@ -86,3 +86,5 @@ describe('lesson 1.5.5 exact generated media',()=>{
   }
  });
 });
+
+ it('binds release approval to exact reviewed teaching and selected media bytes',()=>{const approval=j('docs/lesson-155-owner-approval.json');expect(approval.authorization).toBe('approved. merge and deploy to live');expect(approval.reviewed_head).toBe('1216d5aeb301a2707a0d51e38227b69a6c80ebfb');expect(sha(file('docs/lesson-155-proposal-receipt.json'))).toBe(approval.reviewed_proposal_receipt_sha256);for(const [p,h]of Object.entries(approval.approved_source_sha256))expect(sha(file(p)),p).toBe(h);for(const m of approval.approved_media)expect(sha(file('public'+m.path)),m.path).toBe(m.sha256);const reviewed=JSON.parse(j('docs/lesson-155-proposal-receipt.json').changed_existing_files[leaf+'lesson.json'].predecessor_utf8);expect(reviewed.manifest).toEqual(source.manifest);const publishedMetadata=structuredClone(source);for(const a of publishedMetadata.assets)if(approval.approved_asset_ids.includes(a.id))a.review_status='draft';expect(sha(Buffer.from(JSON.stringify(publishedMetadata,null,2)+'\n'))).toBe(approval.reviewed_source_sha256[leaf+'lesson.json']);});

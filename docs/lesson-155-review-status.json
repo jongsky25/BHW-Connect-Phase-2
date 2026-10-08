@@ -1,6 +1,6 @@
 {
-  "status": "draft-for-owner-review",
-  "owner_release_approval": false,
+  "status": "owner-approved-for-release",
+  "owner_release_approval": true,
   "review_method": "Actual media model review plus PCM measurements and browser playback; human listening remains pending.",
   "audio_review_records": 16,
   "speech_present_and_unclipped_endings": true,
@@ -31,5 +31,7 @@
     "story/fil: model reported a conversational pause before the closing list."
   ],
   "model_scope_notes": "Reports of missing SMART/BHW/all six skills on individual screens are not omissions from the expected screen text. SMART and all eight habits are taught on section-10; the check asks learners to recall the six skills.",
-  "release_scope": "Draft content and review materials only; no live publication, database write or learner-progress migration."
+  "release_scope": "Owner approved the reviewed lesson and live release. Only asset approval metadata is promoted; teaching, narration and public media bytes remain exact. Publish the target lesson/private guide and its two matching Chat Guide answers. Keep all sibling lesson revisions, original IDs, historical source receipts and learner progress.",
+  "owner_authorization": "approved. merge and deploy to live",
+  "audio_review_disposition": "The four model-reported timbre flags were disclosed before owner approval. The owner approved this exact package. No human listening completion is asserted."
 }

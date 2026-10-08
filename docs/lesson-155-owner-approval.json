@@ -1,0 +1,158 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "interpreted_authorization": "merge and deploy to live",
+  "approved_at": "2026-10-08T04:31:05.887778+00:00",
+  "reviewed_head": "1216d5aeb301a2707a0d51e38227b69a6c80ebfb",
+  "integration_base": "1dd489ee82438a2dc4b85d8e4cfd239f22858910",
+  "approved_asset_ids": [
+    "malou-self-priorities",
+    "malou-self-adjust",
+    "bhw-self-management-story"
+  ],
+  "reviewed_proposal_receipt_sha256": "6d71b322a32119ec2ee4c3cb5a1c85d31d87142493a39caa12230fe5dd5072f6",
+  "reviewed_source_sha256": {
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/lesson.json": "346dacca1d07765190ee541cf6247d88e335e652a589caca4c9ab8e3587dd5b1",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/slides.json": "915267332962936bb594c3d78ed3abb7d7de4e374098bde07cc7b3e06eebe12f",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/read.fil.md": "f04e12f1be786db1f4a3dd640b8fbbdd42b9d1934be8ba704b1cb36da2a3931a",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/read.en.md": "608d27d4b8a50d45ebfe87861a327f8c6cfae0426f4408c30e93bc74242c6705",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/facilitator.fil.md": "60c55b37b9b6d104758b2d317cf1314e24d59b4b690d57b3156c2bd0a7f4513d",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/facilitator.en.md": "2f4f29601b5b21b411e688e7a6a29dbe5f3f737e7f224e4bab8a34b732ce1516",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/competency.json": "949ac85dbb1ce10a8b3b0ba12609d1e68e2f5390660881527bde2651b44b50df",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.en.md": "dcb3de3976a143e07da70bf33ab021391a3453b5a6c79055e7bcf09b7cab9643",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.fil.md": "b387193dd99a21bfb97fdd69ba1b92609a9c89beaec59e1b7e7e77a0430730fd",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/qa-entries.json": "4acb3a3c8086f8182cb96849c7320913980bc8bd71ddd0d29b37c3cb0dd9e119",
+    "content/training/day1-basic-competencies/narration.json": "ec2836c9a428950f5667f2e450af9b59d15d07b962290f727a197a0c61e6e78f",
+    "scripts/lib/reference-narration.mjs": "2a8295826ab1d191e520722a46f5f361cba06b1e6abbb02f70d78d8a60f80b71",
+    "scripts/lib/tts-providers/gemini.mjs": "3c86f7423c7f54e164317c5ad0db148710db24c3cc76d37acef758036cf759ab",
+    "remotion/src/Root.tsx": "1b2a672a5abc7f78d294ec3d8dfc6942c9acf4ee3184bab61c532559a17bfc9e",
+    "src/components/elearning/reference-lessons.tsx": "4018baf5c94c88afd133d74490cab382c5574388639387ae956c92940c3db049",
+    "remotion/src/bhw-self-management/BhwSelfManagementStory.tsx": "8718e24375ae96c65e4f94c68ba759dec4b2f69785b1a5bdf3f27e530bc2bcd3",
+    "remotion/src/bhw-self-management/Scene.tsx": "11151c5935dbf5d8d0b94335ae27912a4b563155866d675dee993a5827dc93b2",
+    "remotion/src/bhw-self-management/narration.ts": "d4e6c5ff1f99c056b328761638fcafada761a1d83f5322806cd4d6857a9cb048",
+    "remotion/public/bhw-self-management/narration-fil.json": "18e832cea0e54a0e7504531f19b206554e96895043a23b57a784ee7291264769",
+    "remotion/public/bhw-self-management/narration-en.json": "11007d6dbf24153841441640052248bf1d1fb16aadfcb1347a083d9dfcd9e018"
+  },
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/lesson.json": "0158c06b56a1b6e44e722d15eadc6b42557935dca543a04324b3c3b6b8890bae",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/slides.json": "915267332962936bb594c3d78ed3abb7d7de4e374098bde07cc7b3e06eebe12f",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/read.fil.md": "f04e12f1be786db1f4a3dd640b8fbbdd42b9d1934be8ba704b1cb36da2a3931a",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/read.en.md": "608d27d4b8a50d45ebfe87861a327f8c6cfae0426f4408c30e93bc74242c6705",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/facilitator.fil.md": "60c55b37b9b6d104758b2d317cf1314e24d59b4b690d57b3156c2bd0a7f4513d",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/facilitator.en.md": "2f4f29601b5b21b411e688e7a6a29dbe5f3f737e7f224e4bab8a34b732ce1516",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/competency.json": "949ac85dbb1ce10a8b3b0ba12609d1e68e2f5390660881527bde2651b44b50df",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.en.md": "dcb3de3976a143e07da70bf33ab021391a3453b5a6c79055e7bcf09b7cab9643",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lesson.fil.md": "b387193dd99a21bfb97fdd69ba1b92609a9c89beaec59e1b7e7e77a0430730fd",
+    "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/qa-entries.json": "4acb3a3c8086f8182cb96849c7320913980bc8bd71ddd0d29b37c3cb0dd9e119",
+    "content/training/day1-basic-competencies/narration.json": "ec2836c9a428950f5667f2e450af9b59d15d07b962290f727a197a0c61e6e78f",
+    "scripts/lib/reference-narration.mjs": "2a8295826ab1d191e520722a46f5f361cba06b1e6abbb02f70d78d8a60f80b71",
+    "scripts/lib/tts-providers/gemini.mjs": "3c86f7423c7f54e164317c5ad0db148710db24c3cc76d37acef758036cf759ab",
+    "remotion/src/Root.tsx": "1b2a672a5abc7f78d294ec3d8dfc6942c9acf4ee3184bab61c532559a17bfc9e",
+    "src/components/elearning/reference-lessons.tsx": "4018baf5c94c88afd133d74490cab382c5574388639387ae956c92940c3db049",
+    "remotion/src/bhw-self-management/BhwSelfManagementStory.tsx": "8718e24375ae96c65e4f94c68ba759dec4b2f69785b1a5bdf3f27e530bc2bcd3",
+    "remotion/src/bhw-self-management/Scene.tsx": "11151c5935dbf5d8d0b94335ae27912a4b563155866d675dee993a5827dc93b2",
+    "remotion/src/bhw-self-management/narration.ts": "d4e6c5ff1f99c056b328761638fcafada761a1d83f5322806cd4d6857a9cb048",
+    "remotion/public/bhw-self-management/narration-fil.json": "18e832cea0e54a0e7504531f19b206554e96895043a23b57a784ee7291264769",
+    "remotion/public/bhw-self-management/narration-en.json": "11007d6dbf24153841441640052248bf1d1fb16aadfcb1347a083d9dfcd9e018",
+    ".github/workflows/lesson155-release.yml": "9bf28623b1b67d8f0b7dd6c6929208a5f9f6cb4a7a41ccee0e74d16945f09b97",
+    ".github/workflows/lesson155-preflight.yml": "acb871c98e2101628374651b5d10efb0249497b4d8ba9ab808e31b84cb8a6e24",
+    "scripts/lesson-155-release-snapshot.mjs": "a2f9894795a6b30a356f7f640c607ce499fcc93b416bab8471597178412df209",
+    "scripts/lesson-155-kb-release.mjs": "83134349ade9819c156950907aae3cc021bc8384a1f806e47e466c2eb67335c8",
+    "scripts/lesson-155-live-smoke.mjs": "658bbb5b650b5ea2f99bd2863290ef7065ad4b8872b6c239ba584a8f09b810d5"
+  },
+  "approved_media": [
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/section-10.en.59e366a8a275.mp3",
+      "sha256": "0b96c8f6b24d119ae4dac86274d8ff0ea16d23277e9bf694977cc66e74a395d7"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/section-10.fil.cdb3105c49d7.mp3",
+      "sha256": "e7987a7e5ae78aaa1748db867fb878456032de2437d2f0cb5df9491a6c424891"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/section-9.en.e48406048fc4.mp3",
+      "sha256": "d5f4b321f649d8529d876d56db77f9306354f578e9ca8aacb82f2826cf98c4f2"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/section-9.fil.8279d0010067.mp3",
+      "sha256": "d5031fc4afd842133c223367bd52b0f59ae83a11b10353765e54a327853a246e"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-adaptability.en.dfcd16a5443f.mp3",
+      "sha256": "043b5bdfeeb833806fc3db0b73b7a3948c1c4d2691c8e760fbdface21be0e098"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-adaptability.fil.4b6c5fe50b5b.mp3",
+      "sha256": "a4552c571d0236541c5ec2dcfc308ee27a4059b671f2149fcaa1b6ad1c94d67e"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-application-check.en.4cf03c4bfb55.mp3",
+      "sha256": "52c9b7c2ec46a6f8a00a3443333bbdcde7ea38787644a3df9d56cb490d366f1b"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-application-check.fil.91ce8a1874a1.mp3",
+      "sha256": "ccfd3b97f4109b71c959555b57b589ae4e3174783a13f48e19ee4bc531c08cad"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-reliability.en.ce7c803a6fac.mp3",
+      "sha256": "36d282dc42b18f05aa722132f16e8edad54873f8366249f3c6cc12a24620d70b"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-reliability.fil.452bf20e8b82.mp3",
+      "sha256": "bf4363d3ddbe68d74e55194b498e9a396fb88738abdc1ba031c7ad1fd26af8d6"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-stress-time.en.7c0d291e0bdb.mp3",
+      "sha256": "0928e712e24b875aa1a715f62884d2e5d69fb48e5d206bf9c8503d82eeb39a74"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-stress-time.fil.9674bc330119.mp3",
+      "sha256": "b08293a46a660e5af6facd7ea63a2fe2723f5021b28ea3a5b169d6ff4dc54e53"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-trust-honesty.en.3b131ceb511d.mp3",
+      "sha256": "c98fe104f978825a9c2626b1f2786323dedd9daecdbb0e9ce8bc5baeb177ea12"
+    },
+    {
+      "path": "/training/audio/05-bhw-at-barangay/bhw-self-management/self-trust-honesty.fil.2181560151a5.mp3",
+      "sha256": "4eaa5eec382887953eba3d39b5981a5289e5327070ab7478ce51e8dbddadd87e"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-self-management-gemini-en-1c0a9fdcc171.mp4",
+      "sha256": "1c0a9fdcc1719267a9249eec2782f431a6d51b4f14af8a45de27c07f5764f6a8"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-self-management-gemini-en-99f946661a26-poster.jpg",
+      "sha256": "99f946661a263cbe3e758251bdbbc25d369e98f19b652924a0528e0a1f14b650"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-self-management-gemini-en-a25bac54bce7.vtt",
+      "sha256": "a25bac54bce7bb0fe6929fcf2143a8e41e321e199a9d000d508109f7bdd4c7cf"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-60cab6d034e1.mp4",
+      "sha256": "60cab6d034e13c1bab49a3d99bebec09ce70aacbefb2a8d49233a27af38d9b54"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-9e3c6b3e8f6e-poster.jpg",
+      "sha256": "9e3c6b3e8f6eab421399e91ac81fcd89b50981dd02249a268872fddb40274e65"
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-c5615d14acb0.vtt",
+      "sha256": "c5615d14acb0ba143bffa655074496dfa0eb18883f619766367d4d295dbd3f7e"
+    },
+    {
+      "path": "/training/bhw-1-5/malou-self-adjust-cb75caa004f4.png",
+      "sha256": "cb75caa004f4644a2cc5a42644dcce5c9965d0ae1b74d4d411a85ca182ec2983"
+    },
+    {
+      "path": "/training/bhw-1-5/malou-self-priorities-b11b6907d8d9.png",
+      "sha256": "b11b6907d8d9fb8c42b616468cff6638e42d6ff19425f95db0bec6802c7b9fcc"
+    },
+    {
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "sha256": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a"
+    }
+  ],
+  "approval_scope": "Owner approved the reviewed lesson and live release. Only asset approval metadata is promoted; teaching, narration and public media bytes remain exact. Publish the target lesson/private guide and its two matching Chat Guide answers. Keep all sibling lesson revisions, original IDs, historical source receipts and learner progress.",
+  "audio_review_disposition": "The four model-reported timbre flags were disclosed before owner approval. The owner approved this exact package. No human listening completion is asserted."
+}
