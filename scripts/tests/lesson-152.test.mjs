@@ -1,7 +1,8 @@
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {approved154Path,approved154LessonPaths,teamworkLeaf,approved154HistoricalMapping,beforeApproved154} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
-import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
+import path from 'node:path';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {planReferenceNarration,mp3AudioFrames} from '../lib/reference-narration.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
@@ -10,7 +11,7 @@ import {BHW_BARANGAY_PARTNERS_BEATS} from '../../remotion/src/bhw-barangay-partn
 import {toWebVtt} from '../lib/webvtt.mjs';
 import {approved153Path,approved153LessonPaths,localPartnersLeaf,withoutApproved153Registry} from './lesson-153-release-compat.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',leaf=base+'lessons/bhw-barangay-partners/';
-const j=p=>JSON.parse(fs.readFileSync(root+'/'+p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex'),file=p=>fs.readFileSync(root+'/'+p),publicBytes=p=>file('public'+p),hash=p=>sha(publicBytes(p));
+const j=p=>JSON.parse(beforeProposed155(p).toString('utf8')),sha=b=>createHash('sha256').update(b).digest('hex'),file=p=>beforeProposed155(p),publicBytes=p=>file('public'+p),hash=p=>sha(publicBytes(p));
 const b=j('docs/lesson-152-current-baseline.json'),source=j(leaf+'lesson.json'),mf=j('content/training/day1-basic-competencies/narration.json');
 const a=loadReferenceModule(root+'/'+base,root+'/public').lessons.find(l=>l.manifest.lesson_key==='bhw-barangay-partners');
 const ids=['section-4','section-5','barangay-support-request','council-health-role','confirm-and-follow-through','barangay-partners-application-check'];

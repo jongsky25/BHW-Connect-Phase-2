@@ -26,6 +26,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -49,6 +50,9 @@ jobs:
           LESSON155_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-155-record-fetch.mjs'
         run: node scripts/lesson-155-audio-review.mjs
+      - name: Measure actual selected audio
+        if: success()
+        run: node scripts/lesson-155-audio-metrics.mjs
       - name: Check scoped lesson and media
         if: success()
         run: npx vitest run scripts/tests/lesson-155.test.mjs
@@ -58,6 +62,9 @@ jobs:
       - name: Install playback-test browser
         if: success()
         run: npx playwright install --with-deps chromium
+      - name: Build printable practice kit
+        if: success()
+        run: node scripts/lesson-155-practice-kit.mjs
       - name: Verify desktop, mobile and true offline playback
         if: success()
         run: node scripts/lesson-155-browser-check.mjs
@@ -84,6 +91,7 @@ jobs:
             remotion/public/bhw-self-management/
             docs/lesson-155-media-generation.json
             docs/lesson-155-audio-review.json
+            docs/lesson-155-audio-metrics.json
             docs/lesson-155-browser-verification.json
             .preview/lesson155/
             .preview/lesson155-raw/

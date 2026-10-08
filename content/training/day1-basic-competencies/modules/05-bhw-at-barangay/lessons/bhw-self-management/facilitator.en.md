@@ -4,7 +4,7 @@ By the end, the BHW names the six self-management skills, explains a realistic r
 
 ## [time-materials] Time and materials
 
-Facilitated practice: 30 minutes within the existing module allocation; this is an authored split, not a new official minimum. SELF_STUDY_TIMING_PENDING
+Facilitated practice: 30 minutes within the existing module allocation; this is an authored split, not a new official minimum. Authored independent estimate: 10–13 minutes. Actual seven-screen narration is 409.10 seconds in English and 475.48 seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.
 Materials: seven slides or printed Read pages, six skill cards, three task cards, paper, pens and a blank weekly planner. Use groups of 3–4; sample one response per group, then ask every learner for a goal.
 
 ## [prepare] Prepare

@@ -1,3 +1,4 @@
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {approved154HistoricalMapping} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,expect,it} from 'vitest';
@@ -16,7 +17,7 @@ const root=path.resolve(import.meta.dirname,'../..'),dir=path.join(root,'content
 const lessonDir=path.join(dir,'lessons/bhs-improvement');
 const json=p=>JSON.parse(readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
 const bytes=src=>readFileSync(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
-const source=json(path.join(lessonDir,'lesson.json')),manifest=json(path.join(root,'content/training/day1-basic-competencies/narration.json'));
+const source=json(path.join(lessonDir,'lesson.json')),manifest=JSON.parse(beforeProposed155('content/training/day1-basic-competencies/narration.json'));
 const authored=loadReferenceModule(dir,path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhs-improvement');
 const modules=[{key:'03-polisiya-bhs',lessons:[authored]}];
 const ids=['section-6','factual-concern','one-feasible-proposal','reason-service-checks','responsibility-followup','proposal-check'];

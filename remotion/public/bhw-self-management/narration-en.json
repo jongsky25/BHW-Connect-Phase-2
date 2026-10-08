@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as one warm mature adult Filipina community health trainer in the same settled female mid-register throughout. Use gentle expressive pacing for Malou’s realistic commitments, stress and time management, trustworthiness, careful honest updates and adaptability. Keep headings, lists, quoted updates and checks in this identical voice. Read every supplied word exactly, including negations and complete endings. Pronounce Malou as mah-LOO. No speaker switch or added words.",
+  "durationSeconds": 56.895,
+  "beats": [
+    {
+      "zone": "busy",
+      "index": 0,
+      "text": "Malou has invitations and a meeting. She cannot do everything at once. She checks the deadlines and her capacity.",
+      "start_ms": 0,
+      "end_ms": 8640
+    },
+    {
+      "zone": "reliable",
+      "index": 1,
+      "text": "Malou is reliable because her commitment and update are clear. She pauses, organizes her time and finishes one task.",
+      "start_ms": 8940,
+      "end_ms": 18740
+    },
+    {
+      "zone": "honest",
+      "index": 2,
+      "text": "She is trustworthy because she follows principles. She is honest and careful in reporting: twenty are ready and five remain.",
+      "start_ms": 19040,
+      "end_ms": 28520
+    },
+    {
+      "zone": "adapt",
+      "index": 3,
+      "text": "The meeting is earlier. Malou confirms the new time and explains what remains. She adjusts her plan after confirmation.",
+      "start_ms": 28820,
+      "end_ms": 36180
+    },
+    {
+      "zone": "habit",
+      "index": 4,
+      "text": "She chooses one habit: write three priorities before work on three days this week. On Friday, she will review the result.",
+      "start_ms": 36480,
+      "end_ms": 45360
+    },
+    {
+      "zone": "closing",
+      "index": 5,
+      "text": "Six skills guide self-management. Make realistic commitments, report honestly and review your progress. You do not have to take on everything.",
+      "start_ms": 45660,
+      "end_ms": 56820
+    }
+  ],
+  "audio_sha256": "2a8c02d80ea7a338c3afc79ca99f513ba813a6865961450327358fd1f1fbf3d4"
+}

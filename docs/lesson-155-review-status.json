@@ -1,0 +1,35 @@
+{
+  "status": "draft-for-owner-review",
+  "owner_release_approval": false,
+  "review_method": "Actual media model review plus PCM measurements and browser playback; human listening remains pending.",
+  "audio_review_records": 16,
+  "speech_present_and_unclipped_endings": true,
+  "human_listening_priority": [
+    {
+      "id": "read-bhw-self-management-section-9-en",
+      "sha256": "d5f4b321f649d8529d876d56db77f9306354f578e9ca8aacb82f2826cf98c4f2",
+      "reason": "Model flagged changes in narrator timbre; verify by listening before accepting."
+    },
+    {
+      "id": "read-bhw-self-management-self-stress-time-fil",
+      "sha256": "b08293a46a660e5af6facd7ea63a2fe2723f5021b28ea3a5b169d6ff4dc54e53",
+      "reason": "Model flagged changes in narrator timbre; verify by listening before accepting."
+    },
+    {
+      "id": "read-bhw-self-management-self-stress-time-en",
+      "sha256": "0928e712e24b875aa1a715f62884d2e5d69fb48e5d206bf9c8503d82eeb39a74",
+      "reason": "Model flagged changes in narrator timbre; verify by listening before accepting."
+    },
+    {
+      "id": "read-bhw-self-management-self-adaptability-fil",
+      "sha256": "a4552c571d0236541c5ec2dcfc308ee27a4059b671f2149fcaa1b6ad1c94d67e",
+      "reason": "Model flagged changes in narrator timbre; verify by listening before accepting."
+    }
+  ],
+  "minor_delivery_review": [
+    "self-reliability/en: model reported a slight filler before report early.",
+    "story/fil: model reported a conversational pause before the closing list."
+  ],
+  "model_scope_notes": "Reports of missing SMART/BHW/all six skills on individual screens are not omissions from the expected screen text. SMART and all eight habits are taught on section-10; the check asks learners to recall the six skills.",
+  "release_scope": "Draft content and review materials only; no live publication, database write or learner-progress migration."
+}

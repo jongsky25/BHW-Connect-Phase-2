@@ -1,3 +1,4 @@
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {approved154HistoricalMapping,approved154HistoryPrefix} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,expect,it} from 'vitest';
@@ -16,7 +17,7 @@ import {approved153HistoricalMapping,approved153HistoryPrefix,withoutApproved153
 const root=path.resolve(import.meta.dirname,'../..'),dir=path.join(root,'content/training/day1-basic-competencies/modules/04-ra7883'),leaf=path.join(dir,'lessons/bhw-accreditation');
 const json=p=>JSON.parse(readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
 const bytes=src=>readFileSync(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
-const source=json(path.join(leaf,'lesson.json')),manifest=json(path.join(root,'content/training/day1-basic-competencies/narration.json'));
+const source=json(path.join(leaf,'lesson.json')),manifest=JSON.parse(beforeProposed155('content/training/day1-basic-competencies/narration.json'));
 const baseline=json(path.join(root,'docs/lesson-144-start-baseline.json')),audioBaseline=json(path.join(root,'docs/lesson-144-narration-baseline.json'));
 const authored=loadReferenceModule(dir,path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhw-accreditation'),modules=[{key:'04-ra7883',lessons:[authored]}];
 const ids=['accreditation-question','section-5','roles-and-records','fictional-process-cards','accreditation-follow-up','accreditation-application-check'];

@@ -22,7 +22,7 @@ try{
     const audio=page.locator('audio');assert(await audio.count()===1,'One exact-match audio player on every screen');
     const timings=await page.evaluate(({lang,id})=>window.reviewTimings[lang][id],{lang,id});assert(timings?.length>2,'Real timing zones available');
     const selected=[timings[0],timings.find(t=>t.zone==='body'),timings.at(-1)];
-    for(const t of selected){await audio.evaluate(async(el,time)=>{el.currentTime=time;await el.play();},(t.start_ms+Math.min(350,(t.end_ms-t.start_ms)/2))/1000);await page.waitForFunction(text=>[...document.querySelectorAll('[data-active="true"]')].some(el=>el.textContent.includes(text)||text.includes(el.textContent)),t.text);const active=await page.locator('[data-active="true"]').allTextContents();assert(active.some(v=>v.includes(t.text)||t.text.includes(v)),'Measured zone highlighting '+id+' '+t.zone);await audio.evaluate(el=>el.pause());}
+    for(const t of selected){await audio.evaluate(async(el,time)=>{el.currentTime=time;await el.play();},(t.start_ms+Math.min(350,(t.end_ms-t.start_ms)/2))/1000);await page.waitForFunction(text=>[...document.querySelectorAll('[data-active="true"]')].some(el=>el.textContent.includes(text)||text.includes(el.textContent)),t.text.replaceAll('**',''));const active=await page.locator('[data-active="true"]').allTextContents();assert(active.some(v=>v.includes(t.text.replaceAll('**',''))||t.text.replaceAll('**','').includes(v)),'Measured zone highlighting '+id+' '+t.zone);await audio.evaluate(el=>el.pause());}
     if(i===6){const check=page.locator('fieldset');for(const option of [0,1,2]){await check.locator('button').nth(option).click();const text=await check.locator('[role="status"]').innerText();assert(['A','B','C'].every(l=>text.includes(l)),'All-choice rationale');}}
     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'No horizontal page overflow');
     records.push({width,language:lang,mode,screen:id,image:true,one_audio:true,head_body_end_highlight:true,all_choices:i===6,offline:true});
@@ -34,7 +34,24 @@ try{
   await page.getByRole('button',{name:lang==='en'?'Narrated story':'Kuwentong may salaysay',exact:true}).click();const video=page.locator('video');assert(await video.count()===1,'One story');
   await video.evaluate(async el=>{el.load();await el.play();});await page.waitForFunction(()=>document.querySelector('video')?.currentTime>0.2);assert(await video.evaluate(el=>!el.muted),'Story unmuted');
   await page.waitForFunction(()=>document.querySelector('video')?.textTracks[0]?.cues?.length===6);const length=await video.evaluate(el=>el.duration);await video.evaluate(el=>el.currentTime=el.duration-0.3);await page.waitForFunction(()=>document.querySelector('video')?.ended);records.push({width,language:lang,story:true,unmuted:true,captions:6,ending:true,duration:length,offline:true});
-  for(const pane of ['Facilitator guide','Evidence']){await page.getByRole('button',{name:pane,exact:true}).click();assert(await page.locator('main').innerText().then(t=>t.length>100),'Pane renders '+pane);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'No pane overflow');records.push({width,language:lang,pane,offline:true});}
+  await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();
+  const dialog=page.getByRole('dialog');assert(await dialog.isVisible(),'Story full-screen dialog opens');
+  const fullVideo=dialog.locator('video');await fullVideo.evaluate(async el=>{el.currentTime=0;await el.play();});
+  await page.waitForFunction(()=>document.querySelector('dialog video')?.currentTime>0.2);
+  await fullVideo.evaluate(el=>{window.previousFullVideo=el;});
+  await dialog.getByRole('button',{name:lang==='en'?'Close':'Isara',exact:true}).click();
+  assert(await page.evaluate(()=>window.previousFullVideo.paused),'Closing full-screen pauses video');
+  records.push({width,language:lang,full_screen:'story',playback:true,close_pauses:true,offline:true});
+  await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();
+  await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();
+  for(const mode of [lang==='en'?'Read':'Basahin','Slides']){
+   await dialog.getByRole('button',{name:mode,exact:true}).click();
+   assert(await dialog.locator('figure img').count()===1,'Full-screen image present');
+   assert(await dialog.getByRole('heading').count()>0,'Full-screen section heading present');
+   records.push({width,language:lang,full_screen:mode,image:true,offline:true});
+  }
+  await dialog.getByRole('button',{name:lang==='en'?'Close':'Isara',exact:true}).click();
+  for(const pane of ['Facilitator guide','Evidence']){await page.getByRole('button',{name:pane,exact:true}).click();assert(await page.locator('main').innerText().then(t=>t.length>100),'Pane renders '+pane);if(pane==='Facilitator guide')assert(await page.locator('main h2').count()===12,'All canonical guide sections render');assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'No pane overflow');records.push({width,language:lang,pane,offline:true});}
  }
  assert(errors.length===0,'Browser errors: '+errors.join(';'));report.status='passed';
 }catch(e){report.status='failed';report.failure=e.stack;await page.screenshot({path:out+'/failure.png',fullPage:true}).catch(()=>{});process.exitCode=1;}

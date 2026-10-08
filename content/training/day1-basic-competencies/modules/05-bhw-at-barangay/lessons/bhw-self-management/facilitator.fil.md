@@ -4,7 +4,7 @@ Sa pagtatapos, mapapangalanan ng BHW ang anim na kasanayan, maipapaliwanag ang m
 
 ## [time-materials] Oras at kagamitan
 
-Guided practice: 30 minuto sa kasalukuyang oras ng modyul; sariling hati ito, hindi bagong opisyal na minimum. SELF_STUDY_TIMING_PENDING
+Guided practice: 30 minuto sa kasalukuyang oras ng modyul; sariling hati ito, hindi bagong opisyal na minimum. Ginawang pagtataya ng sariling pag-aaral: 11–14 minuto. Aktuwal na salaysay ng pitong screen: 409.10 segundo sa English at 475.48 segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 Kagamitan: pitong slides o nakalimbag na Read pages, anim na skill card, tatlong task card, papel, panulat at blangkong weekly planner. Grupo ng 3–4: pakinggan ang isang sagot bawat grupo, saka hingin ang layunin ng bawat isa.
 
 ## [prepare] Paghahanda

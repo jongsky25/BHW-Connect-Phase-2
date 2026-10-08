@@ -1,3 +1,4 @@
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 // Exact approved successor bytes; original released baselines stay immutable.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -12,7 +13,7 @@ export function approved154Path(p){
  expect(receipt.interpreted_authorization).toBe('merge and deploy to live');
  expect(receipt.reviewed_head).toBe('e1949678a1134c4b2966d785fcf9274e589166be');
  expect(receipt.approved_source_sha256[p]).toMatch(/^[a-f0-9]{64}$/);
- expect(createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex')).toBe(receipt.approved_source_sha256[p]);
+ expect(createHash('sha256').update(beforeProposed155(p)).digest('hex')).toBe(receipt.approved_source_sha256[p]);
 }
 export function withoutApproved154Registry(source){
  approved154Path('remotion/src/Root.tsx');
@@ -22,9 +23,9 @@ export function withoutApproved154Registry(source){
 export function beforeApproved154(p){
  approved154Path(p);
  if(receipt.predecessor_shared_files[p])return receipt.predecessor_shared_files[p];
- if(p==='remotion/src/Root.tsx')return withoutApproved154Registry(fs.readFileSync(path.join(root,p),'utf8'));
+ if(p==='remotion/src/Root.tsx')return withoutApproved154Registry(beforeProposed155(p).toString('utf8'));
  if(p==='content/training/day1-basic-competencies/narration.json'){
-  const m=JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+  const m=JSON.parse(beforeProposed155(p).toString('utf8'));
   m.lessons['bhw-teamwork']=baseline.narration_manifest.lessons['bhw-teamwork'];
   m.history['bhw-teamwork']=baseline.narration_manifest.history['bhw-teamwork'];
   return JSON.stringify(m,null,2)+'\n';

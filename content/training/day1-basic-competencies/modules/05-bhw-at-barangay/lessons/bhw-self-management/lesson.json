@@ -224,6 +224,46 @@
       "caption_en": "Report what truly remains and confirm a change to the plan.",
       "provenance": "Original built-in imagegen scene, 2026-10-08, using approved Malou teamwork image as identity reference. Fictional people and blank learning materials; no real patient data. See docs/lesson-155-scene-brief.json.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-self-management-story",
+      "alt_fil": "Anim na salaysay na sandali ng pamamahala ni Malou sa sariling gawain.",
+      "alt_en": "Six narrated moments showing Malou managing her workday.",
+      "caption_fil": "Sundan si Malou sa pag-una ng gawain, tapat na pagbalita at pag-angkop sa pagbabago.",
+      "caption_en": "Follow Malou as she prioritizes work, reports honestly and adapts to a change.",
+      "provenance": "Original lesson1.5.5 self-management story using new built-in imagegen scene with approved Malou identity as input. Gemini gemini-3.8-flash-tts Kore; measured encoded audio boundaries, varied framing and animated task labels. No real records, human listening, owner approval or SME signoff claimed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-60cab6d034e1.mp4",
+          "content_hash": "60cab6d034e13c1bab49a3d99bebec09ce70aacbefb2a8d49233a27af38d9b54",
+          "duration_s": 66,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-c5615d14acb0.vtt",
+            "content_hash": "c5615d14acb0ba143bffa655074496dfa0eb18883f619766367d4d295dbd3f7e"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-9e3c6b3e8f6e-poster.jpg",
+            "content_hash": "9e3c6b3e8f6eab421399e91ac81fcd89b50981dd02249a268872fddb40274e65"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-self-management-gemini-en-1c0a9fdcc171.mp4",
+          "content_hash": "1c0a9fdcc1719267a9249eec2782f431a6d51b4f14af8a45de27c07f5764f6a8",
+          "duration_s": 58,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-self-management-gemini-en-a25bac54bce7.vtt",
+            "content_hash": "a25bac54bce7bb0fe6929fcf2143a8e41e321e199a9d000d508109f7bdd4c7cf"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-self-management-gemini-en-99f946661a26-poster.jpg",
+            "content_hash": "99f946661a263cbe3e758251bdbbc25d369e98f19b652924a0528e0a1f14b650"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-9e3c6b3e8f6e-poster.jpg",
+      "content_hash": "9e3c6b3e8f6eab421399e91ac81fcd89b50981dd02249a268872fddb40274e65"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-self-management-story"
 }

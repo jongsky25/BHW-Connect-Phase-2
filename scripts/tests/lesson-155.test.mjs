@@ -1,15 +1,16 @@
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
-import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';import {execFileSync} from 'node:child_process';
+import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {loadReferenceModule,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {planReferenceNarration,mp3AudioFrames} from '../lib/reference-narration.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',leaf=base+'lessons/bhw-self-management/';
 const file=p=>fs.readFileSync(root+'/'+p),j=p=>JSON.parse(file(p)),sha=b=>createHash('sha256').update(b).digest('hex');
 const baseline=j('docs/lesson-155-baseline.json'),source=j(leaf+'lesson.json');
-const module=loadReferenceModule(root+'/'+base,root+'/public'),lesson=module.lessons.find(l=>l.manifest.lesson_key==='bhw-self-management');
+const trainingModule=loadReferenceModule(root+'/'+base,root+'/public'),lesson=trainingModule.lessons.find(l=>l.manifest.lesson_key==='bhw-self-management');
 const ids=['section-9','self-reliability','self-stress-time','self-trust-honesty','self-adaptability','section-10','self-application-check'];
-const before=p=>execFileSync('git',['show',baseline.commit+':'+p],{cwd:root});
+const before=p=>{const bytes=beforeProposed155(p);expect(sha(bytes),p+' predecessor').toBe(baseline.file_hashes[p]);return bytes;};
 describe('lesson 1.5.5 self-management content and protection',()=>{
  it('keeps identity and substantive original anchors, complete bilingual section and slide coverage',()=>{
   expect(source.manifest).toEqual(baseline.manifest);expect(lesson.revision.read_sections.map(s=>s.id)).toEqual(ids);

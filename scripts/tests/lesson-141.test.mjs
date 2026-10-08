@@ -1,3 +1,4 @@
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {approved154HistoricalMapping} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,expect,it} from 'vitest';
@@ -15,7 +16,7 @@ import {approved153HistoricalMapping} from './lesson-153-release-compat.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),dir=path.join(root,'content/training/day1-basic-competencies/modules/04-ra7883'),lessonDir=path.join(dir,'lessons/bhw-legal-role');
 const json=p=>JSON.parse(readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
 const bytes=src=>readFileSync(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
-const source=json(path.join(lessonDir,'lesson.json')),manifest=json(path.join(root,'content/training/day1-basic-competencies/narration.json'));
+const source=json(path.join(lessonDir,'lesson.json')),manifest=JSON.parse(beforeProposed155('content/training/day1-basic-competencies/narration.json'));
 const authored=loadReferenceModule(dir,path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhw-legal-role'),modules=[{key:'04-ra7883',lessons:[authored]}];
 const ids=['section-1','section-2','roles-and-authority','status-and-other-processes','explain-and-verify','legal-basis-check'];
 describe('lesson 1.4.1 Demi legal basis',()=>{
