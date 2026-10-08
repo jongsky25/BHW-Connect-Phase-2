@@ -1,0 +1,389 @@
+{
+  "authorization": "approved. merge and deploy to live. while doing that, make handoffs to lessons 1.6.2 to 1.6.5.once done with the individual handoff, make their individual pr so that i can start a new chat for each",
+  "interpreted_authorization": "merge and deploy to live",
+  "approved_at": "2026-10-08T07:50:17.614094+00:00",
+  "reviewed_head": "5f9830f2d2b41bf6bd4b1c04d8a9340ae0e0e52e",
+  "merged_implementation": "15ea55f3da56ee232f53f804d84f4166884862df",
+  "reviewed_pr": 264,
+  "lesson_keys": [
+    "communication-clarify",
+    "communication-explain",
+    "communication-handoff",
+    "communication-listen",
+    "communication-record"
+  ],
+  "scope": "Full 1.6.1 enhancement and Gibs name/portrait/narration continuity only in the other four 1.6 lessons. No further sibling enhancement, KB publication, migration, assessment changes or progress reset.",
+  "approval_basis": "Owner approval in this chat; model reports do not establish a separate human listening, art or clinical signoff. Existing documented audio concerns remain retained.",
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/activities.json": "4045c85ca5a35420ed40c32019df2d07cb9fc5342c2674494111715a1351e862",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/competency.json": "643ee626ba066bebbee0d59223ae3001cb836b4765ebdbcd40af1a1355e3e64c",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/coverage.json": "f6aca87aeba8681f4e91641c8bd0c48f0921ffe0c813e9ee5ecfcae029f7eb15",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/facilitator-notes.en.md": "063d6f1e8b9f69ffd7f7d9f8d375206e7ddaed3ed5248c47babc0169acaf0c57",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/facilitator-notes.fil.md": "8bbe9e8405dfd220b617d86a3b6f38a840b290c8f4978265f16fbcaaee23cc16",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lesson.en.md": "886f6d8c004071d12266fdb3a7ec55638396c57a6f79276b840219464aa8375c",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lesson.fil.md": "a6dee1929a974ab581893abb0a3a28770f3e3e82e7efbbd0a879918a60cbbdee",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/competency.json": "5dfd475c8d12925e434434fe4235624092f225c4d0d61e61041d9e247bd6b35a",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/facilitator.en.md": "397cad4227f3a1bd1989847933ffe65debc0205fc19342069b094b8c4a0c62cc",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/facilitator.fil.md": "4ee7ee16277eebe8113533bac07ca35489765880545d7de3569ff343b2744839",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json": "031ea3663aa59f3819ac44a0df504b79fc5f206d29b2cc24055dd640e143549d",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/read.en.md": "90329aef0df5524116beaf18ac6e6e5a7d9014806569797588c0899026db0c94",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/read.fil.md": "27b040945ea5f926ef619b04568cc18c7528d030cbbf867f9ec55f056e14fde4",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/slides.json": "01d4add0c6543e18bc9e09f35c996c711b229a95a48535d1618ad46a5f17bb77",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/competency.json": "12cb38ba9c1f6bfda143754f6334917d96612913a9cacdd003a8bec94bc75fa3",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/facilitator.en.md": "43cd79c11ef895198ae6d6f1bb87918677118cbdb12db717c59a3feaae9a88a4",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/facilitator.fil.md": "b0ed722cedccedf74e94ae7b7a26769cf68b7dd1dcd2dd66f18d63dbb25b6391",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json": "37e447538e93eda6b4d5759e099c1dd7b166a0c9d61a45a6a5c2858bd4ee6f95",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/read.en.md": "6a766aff074cf50923bc60b3469729b47c7bf95a5f96a5bb304f38a77460dfa1",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/read.fil.md": "5adb0478a653c39907e003828484191fded53643d8cbe1f9ced748978589a426",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/slides.json": "dc1510702f44cf7e4c300dc29a14bc69483b42c162cbe8825ecd3f0faaf5966e",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/competency.json": "5d639d03c19b6f5d7fa9ddeb53c94a7b4df9c4d725ec2c2f9fceb64e1545323c",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/facilitator.en.md": "229bd9dafcb80c90784e55dbc18ea28d437dfe82229c06edc4b2dd47fc90ac12",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/facilitator.fil.md": "da287fd63e108dac381aea9d54581c01d0cf9bbdd09c671e53cd436f2cce33b9",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json": "728035b2b0d7979c1c679a26563b52df88886848f85906837d747055c8705c95",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/read.en.md": "20e970ebb0afd8150c402b47e1172bbe93fc69d3acdc1230a95b2d85c44b91da",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/read.fil.md": "49c75a49068544e1b96809d99a9293e9b33a8f0e77d5c02dddcd64b15b4e977a",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/slides.json": "30d232de85993f549d5848a2d986f8399bb4f749b06ae76f5844342395db98a7",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/competency.json": "27124c791fb4602cdebdb0202b2bf00e9af8f670b356465cc79a0ada6ff4b4f5",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/facilitator.en.md": "6c295e0b99f9d39a52f7d861d45bd5ccff2749a84333eab62be9d682d40e22af",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/facilitator.fil.md": "63517b13943141a691bc741ef25a68d693ae520cf1a412c4653130f545b00963",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json": "29ead2806a679d570c3732c12a18a035b0470b7f92f8bddf5340bb34df366097",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/read.en.md": "63d8a0ab820011e28aa0575890e8e26757ff6d3f14b615d569013c7a4835ae63",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/read.fil.md": "c4c522f371779f98f5adfcb21daa3668fe9050492e3a8ac220031a08fdd10ac9",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/slides.json": "68b85663d654fbc971c335eea1ab7a654808d617980339b9907108a32a913f27",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/competency.json": "6a09475e441c3e8a84885650809263e9bb9309946bee570c45cf61116875bf3c",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.en.md": "36fc65b18358cd580809e92317f40892e91232b39964ea98c69103ea2886e30b",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.fil.md": "03d2a160e403aa48fb7efe1eb3201cf649ac586916b609c31982db0cd03887b4",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json": "b458750c08da76b6e6b52e5112302669cea70152689498f30ddf569403b3532f",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.en.md": "c0fcc8a88eb01bde9d039b6926688b5d600f38301d977d02da8ff86c4a0245a1",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.fil.md": "d60888baf3d0a8b0ebadd3d8184689356d8e6fc1eeae7073692d1a1c71a90ce9",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/slides.json": "377d2184dcb2da26a56de5e1756301d08a42fae4814a21cf17d6c6fa42159c1f",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/module.json": "e56ce26ca705fe8298d1245ae1a0ba321d3e89defb20a457db4addb93f2a3a15",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/qa-entries.json": "38e3836533809f98c08426f206c1549ea632e3c9d7c61668e4212817499f7481",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/visuals/01-daloy-ng-impormasyon.svg": "5d4ee6baf62d68cef1e73a758b8f3a5b6e5d7e4b1e868bfcd6686845534ea3de",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/visuals/visuals.json": "9032cd0e094f9bb77f62e6afad0c693b17ac8f2cf85da8a3bac735ff753f29e4",
+    "content/training/day1-basic-competencies/narration.json": "10662761795f15b2ecf9d70c7ffdef5f176569f0ad0e38938e8fccd126ba071e",
+    "remotion/src/Root.tsx": "6eb3df09deb70f6521bb18867b064bfa87b6e184dac9afb4df32f1beca8ec033",
+    "remotion/src/communication-listen/CommunicationListenStory.tsx": "d808aa52758c38c9e6905b758d7fc748cfd7e6aab9f6037e278b4a040278445e",
+    "remotion/src/communication-listen/narration.ts": "dd891d6e2dbc221ceb7bd8f52d04c96ea49256519053c53a2b90c64d6ed07a89",
+    "src/components/elearning/reference-lessons.tsx": "28a8f563b4f860ce9a44f2a5718ba8105d5f94d5733e1f0b12a6f2c52e454b67"
+  },
+  "approved_media": [
+    {
+      "path": "/training/audio/06-komunikasyon/communication-clarify/barriers.en.485918ef4bd5.mp3",
+      "sha256": "138bc79d22219fc6ea12f31911452438312809a280a23493d68f27a88a301e6f"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-clarify/barriers.fil.40a688e56fc6.mp3",
+      "sha256": "a88ab90163d508ec69d1ad94f40bcb5a27165bc808a43690f4c31cd7e32d1a7a"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-clarify/check.en.d9b7b1ad1149.mp3",
+      "sha256": "cb1aaa1d88eb0b3986d0fc9823fbd1f04eec507ed17c875d94b17ba7595fd855"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-clarify/check.fil.58fde8ae9c90.mp3",
+      "sha256": "41ab14aa55dc122efa8e837f9cbea14a243f65ee411e1bb353b26a581c591bee"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-clarify/open-question.en.2204e0aa0cc7.mp3",
+      "sha256": "e3f8dca1e664d27661bf1db3d4b6274a14ba7d978311561825acb34fbbc39b8c"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-clarify/open-question.fil.993ca87f7911.mp3",
+      "sha256": "be238d1220d6fc4a507486a4211e12b2b8fc93e133f63950781aecc4b759ab2b"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-clarify/practice.en.79c5e81faec8.mp3",
+      "sha256": "cdd8b02831b3703c2b2550140f8110810437ac48b15d414f8ae2bd731550b538"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-clarify/practice.fil.b1e4b5dc8e84.mp3",
+      "sha256": "436bda070e7c7544f949bbc7f8c79e2d9108a057f526ff0d278d91c982c5f49f"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/check.en.f68caa9602d5.mp3",
+      "sha256": "acf3dc9e641d85697a5d607d353ae64453154034616143d5f720b29ba371cd95"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/check.fil.c165e162ab54.mp3",
+      "sha256": "6b3f70e80dc2028fd969d968b4aa59a81ed6c6d4bf02dfe1e9b3a4b51b040a5c"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/distress.en.303e4c2052ec.mp3",
+      "sha256": "33decf957af7d130623ce483a0efe043a41740dada8daa27e30f049de4d9d92a"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/distress.fil.ead03843859b.mp3",
+      "sha256": "325c0e940b094315594cebee76ca805dbc4041a7bac46cc5e3266233048db545"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/family-planning.en.6316d05fd10e.mp3",
+      "sha256": "5ee60929982ac2db85225afc434c460e5ee52ede1853a5083bd06a230a8288cf"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/family-planning.fil.0ad47f94e318.mp3",
+      "sha256": "3a71aad4aba9cf563789704bc766117e9097aa9789bf469e16bcb64bba3ef5f3"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/practice.en.cedb52ab8871.mp3",
+      "sha256": "867262ff1be50d7ef0bd2eff247bbdac196322fe6c3f734f232de43f2f90c7ae"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/practice.fil.a3480f6e0452.mp3",
+      "sha256": "419b860e1947bf844637026034ad5bcd1b0d9fccb12f112efad19fa53893c3b6"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/smoking.en.b1fe9b935295.mp3",
+      "sha256": "442f86cbf6541c1337c65aa893a2f412f156bf2cbc6b643a4db822f062009ad2"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/smoking.fil.fc493c01a1bd.mp3",
+      "sha256": "8a9294bc20a986dbeea17058da81be23fa567e6e57375e25c2cbda3168d86af2"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/teach-back.en.b0249869511b.mp3",
+      "sha256": "5010abb1588d4da47554c856c79a25b739f15a72a4f86d705b52ddbfb0f2924f"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/teach-back.fil.9d64b6344c06.mp3",
+      "sha256": "c0eba863ee6ce9cf7d72fc2f32180ece137ef2bc604d55655f795b9e29bd2766"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/audience.en.f35c41ddca17.mp3",
+      "sha256": "c4aa71a6fc66386b73e0002e27c680c7d47eb304da895b3f0d2c39cfa0a40cf5"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/audience.fil.21c78bffb05a.mp3",
+      "sha256": "1bd2b7080b509badaa29af4c8c3f23cee9b45d05bfa24eaa14b420c2882c7995"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/check.en.1fb16926b5ea.mp3",
+      "sha256": "e21b12cab8a83070b07935899167a0e54c1230c5c05230b6d28ac4ba7eaf8dd3"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/check.fil.53da54e424ec.mp3",
+      "sha256": "37673bce16239678290f9f25373b2a882dcca12b7d713edfcf0d398e6fc30c45"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/handoff.en.5aba4e99d371.mp3",
+      "sha256": "eb011a5f40e0dbf97232811f5b85f24b148c9bb5f380d6f4ec7c170abc079c06"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/handoff.fil.c86859ad068b.mp3",
+      "sha256": "b24af2b1b4988074c190f6aea2b7b81d7702c303cfde3c9f22755d9d7a680dc1"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/meeting.en.849d0bfe8ed8.mp3",
+      "sha256": "e4340df13e54b2566c83cc2a601be2bcb74dae90443eee9dc8ce06c1cc1372ca"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/meeting.fil.f69c7cf8f31a.mp3",
+      "sha256": "3433c06066b00e67a391f9e87424d0637935b3599fcc75e4da5cf21ff36d3c41"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/practice.en.e987d77bd1f5.mp3",
+      "sha256": "167d0f5bfba9a5c7a9a1568cca060e6df1bda0e3c4e006ee1dc2698294613a6f"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/practice.fil.1100cbc1f0e8.mp3",
+      "sha256": "f5b94b1d5de59336dbea973535c3e527987ff3c710248f36b09d528914091a3a"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/check.en.dcdaa412d29b.mp3",
+      "sha256": "6df064c60cb7e3b76421dbbd0b3bd48fe1c9267d38216e5727cf43244886e5f3"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/check.fil.c3b213b32b6f.mp3",
+      "sha256": "346aefebef1e3eec9db0bb267d8d17327bf1942bfd492896e36c4f1e0090a89b"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/listen.en.d6c6e47f2ab2.mp3",
+      "sha256": "ad6fb29571fd5b498a4654f24bf22c9e75a49103004a2ed775a8a89116b10f8d"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/listen.fil.6d66945bc07f.mp3",
+      "sha256": "7eb9a5a5454ca0c57b3c1fe474fb65a25c637f98bd2b525550299ad757a8ec7e"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/liza.en.f880278eea9b.mp3",
+      "sha256": "07b7963bbb89ba72078653788cb2d90165c03f682fb532425a9cb493b1e8f929"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/liza.fil.947df9854c6d.mp3",
+      "sha256": "5062e66e7d4b44cee172dc7f1f741716802f014c53d0a0228da465c99ec4328e"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/permission.en.4041e78d3059.mp3",
+      "sha256": "32fedbb5914a2be2a68b76f45c264eea18a52a89d7a284bf194771166d44ab3a"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/permission.fil.e556f22af84c.mp3",
+      "sha256": "60dce0934aad4d82fff1d38b0d031fdcd5327c869e668093215401d85b8df266"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/practice.en.12b535e84c65.mp3",
+      "sha256": "6901b00a0e3e63817e098a22b8e5d97ca5bc7fe0056d29e830531b6e0669640e"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/practice.fil.a42caab66ef8.mp3",
+      "sha256": "5455dffc6f9c0ea21c3b51cc85ebbd5291f586eba64fabedf481597fe08743c3"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/profile.en.4fa60ff0f040.mp3",
+      "sha256": "e45a11235ba24d664a4944e133956d9efee37f243ae09a04dbcec2c5154a6589"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-listen/profile.fil.4ea13b5f19d0.mp3",
+      "sha256": "c6eea6b674c3b580fe319ae71509fa18dc318485cba896e69bf480cf8c532037"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/check.en.2e5217dea0f9.mp3",
+      "sha256": "970eeba4294e2492068cf81cc040ff76a1b597b0f02e02b9a09fdbdf4db14308"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/check.fil.37d60632cbde.mp3",
+      "sha256": "da80ca02c98d69d74a845ae91f3ab4936a660f6e187b921fd0d60425c370bf80"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.en.d0ca72e8d0a2.mp3",
+      "sha256": "85787805b374c6ff2ce8e7a23c541b5a2a185438dcbdc81918fd841b91b323c4"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.fil.d377496d80c4.mp3",
+      "sha256": "a3e9c5036553934a1bf7109fa9efc4bf448d6bcf97df912188a735d921766163"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/practice.en.137d49670c1a.mp3",
+      "sha256": "e888f29933b9ec48b41a75e4462591afaff436a05dd0ae442edbd00d324f41dc"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/practice.fil.7e71c8321ea6.mp3",
+      "sha256": "60a1771fabe65c195cdb2cab9e92c0a8aba67ed78f7d265a61ecef9c07c11c86"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/sources.en.fa812da9b7ef.mp3",
+      "sha256": "14756778b2b532fe302096323ba60e9b689cc49bb7d871f668d9641cd447900c"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/sources.fil.ba6a0324f348.mp3",
+      "sha256": "2ea923ef0c9e026fe2dbc91324fb70a61d1141ec4a8660865e4c6aa7427aa5e9"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-listen-gemini-en-4ef2124a273d.mp4",
+      "sha256": "4ef2124a273dd03b99301c702942e6557874d5c03627215e80d191800d06538e"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-listen-gemini-en-7c1979fef1e8.vtt",
+      "sha256": "7c1979fef1e8da9e43ea8cc2fc3c0eebda808cb39debad9e5eb0796f2f2f47c5"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-listen-gemini-en-dc3a0dbcdaab-poster.jpg",
+      "sha256": "dc3a0dbcdaab41e505c12833b4936337c80ba62fda790d27d1d07719e90df339"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-listen-gemini-fil-940d78bad524.mp4",
+      "sha256": "940d78bad5249b4b10da263cd0fad881f5aaa4931e37dc4a0166bafd09c4e30c"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-listen-gemini-fil-973e2f8cd8d7-poster.jpg",
+      "sha256": "973e2f8cd8d7609c654d08fcb601b6a1f99870c721a72d65ff1ee8025d13fda5"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-listen-gemini-fil-b8ae7eaf2278.vtt",
+      "sha256": "b8ae7eaf227876cac135801ec5558d86fcad9db9dfff03c5b65243baa67590c7"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-check-348430167a69.png",
+      "sha256": "348430167a69f65d96735a7b3bda35d21d3a8404c3c6ccb1f94057c16c608f26"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-listen-b385842fd8e0.png",
+      "sha256": "b385842fd8e03276ffd72d29e0d4e39038a8aa528e8dbed002666a11806d03df"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-liza-0b433575765c.png",
+      "sha256": "0b433575765cf475aee091922be2b70c042f252dcecb341ba8d7614cb6540463"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-permission-ac9bcc90f9f7.png",
+      "sha256": "ac9bcc90f9f79b086bdbfa66981a1e7a1985803ab4c7356df9620755fdc614b9"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-practice-c746e090e23b.png",
+      "sha256": "c746e090e23bdd76b3d89f899578e5a4294a6c013369bc0ac8877935f20725b5"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-profile-37d8a009bbc6.png",
+      "sha256": "37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed"
+    }
+  ],
+  "evidence_artifact": {
+    "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/37741126799/artifacts/11535181322",
+    "sha256": "7dcc805f2bda75e0384d9031c87ee15e182242431ad270800f492f3b731b02be"
+  },
+  "reviewed_source_sha256": {
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/activities.json": "4045c85ca5a35420ed40c32019df2d07cb9fc5342c2674494111715a1351e862",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/competency.json": "643ee626ba066bebbee0d59223ae3001cb836b4765ebdbcd40af1a1355e3e64c",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/coverage.json": "f6aca87aeba8681f4e91641c8bd0c48f0921ffe0c813e9ee5ecfcae029f7eb15",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/facilitator-notes.en.md": "063d6f1e8b9f69ffd7f7d9f8d375206e7ddaed3ed5248c47babc0169acaf0c57",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/facilitator-notes.fil.md": "8bbe9e8405dfd220b617d86a3b6f38a840b290c8f4978265f16fbcaaee23cc16",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lesson.en.md": "886f6d8c004071d12266fdb3a7ec55638396c57a6f79276b840219464aa8375c",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lesson.fil.md": "a6dee1929a974ab581893abb0a3a28770f3e3e82e7efbbd0a879918a60cbbdee",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/competency.json": "5dfd475c8d12925e434434fe4235624092f225c4d0d61e61041d9e247bd6b35a",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/facilitator.en.md": "397cad4227f3a1bd1989847933ffe65debc0205fc19342069b094b8c4a0c62cc",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/facilitator.fil.md": "4ee7ee16277eebe8113533bac07ca35489765880545d7de3569ff343b2744839",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json": "86c50addca47a7a531eaa472d8daad2aa1ded664053d913c7f765b753908631c",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/read.en.md": "90329aef0df5524116beaf18ac6e6e5a7d9014806569797588c0899026db0c94",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/read.fil.md": "27b040945ea5f926ef619b04568cc18c7528d030cbbf867f9ec55f056e14fde4",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/slides.json": "01d4add0c6543e18bc9e09f35c996c711b229a95a48535d1618ad46a5f17bb77",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/competency.json": "12cb38ba9c1f6bfda143754f6334917d96612913a9cacdd003a8bec94bc75fa3",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/facilitator.en.md": "43cd79c11ef895198ae6d6f1bb87918677118cbdb12db717c59a3feaae9a88a4",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/facilitator.fil.md": "b0ed722cedccedf74e94ae7b7a26769cf68b7dd1dcd2dd66f18d63dbb25b6391",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json": "9c6ef9172ed645d3d89ba9c5b6b753656a6495b0ef1fb4175d7e07edbe82bfbf",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/read.en.md": "6a766aff074cf50923bc60b3469729b47c7bf95a5f96a5bb304f38a77460dfa1",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/read.fil.md": "5adb0478a653c39907e003828484191fded53643d8cbe1f9ced748978589a426",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/slides.json": "dc1510702f44cf7e4c300dc29a14bc69483b42c162cbe8825ecd3f0faaf5966e",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/competency.json": "5d639d03c19b6f5d7fa9ddeb53c94a7b4df9c4d725ec2c2f9fceb64e1545323c",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/facilitator.en.md": "229bd9dafcb80c90784e55dbc18ea28d437dfe82229c06edc4b2dd47fc90ac12",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/facilitator.fil.md": "da287fd63e108dac381aea9d54581c01d0cf9bbdd09c671e53cd436f2cce33b9",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json": "7a74244e5d1f04fa4c9ea77c93f37feffb0442d987f0909503f21ea309318fe2",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/read.en.md": "20e970ebb0afd8150c402b47e1172bbe93fc69d3acdc1230a95b2d85c44b91da",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/read.fil.md": "49c75a49068544e1b96809d99a9293e9b33a8f0e77d5c02dddcd64b15b4e977a",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/slides.json": "30d232de85993f549d5848a2d986f8399bb4f749b06ae76f5844342395db98a7",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/competency.json": "27124c791fb4602cdebdb0202b2bf00e9af8f670b356465cc79a0ada6ff4b4f5",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/facilitator.en.md": "6c295e0b99f9d39a52f7d861d45bd5ccff2749a84333eab62be9d682d40e22af",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/facilitator.fil.md": "63517b13943141a691bc741ef25a68d693ae520cf1a412c4653130f545b00963",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json": "92d05b12367d1f64853cbc930f1fafdaeddb4972a05f729ea526b6f6c7fa4dde",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/read.en.md": "63d8a0ab820011e28aa0575890e8e26757ff6d3f14b615d569013c7a4835ae63",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/read.fil.md": "c4c522f371779f98f5adfcb21daa3668fe9050492e3a8ac220031a08fdd10ac9",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/slides.json": "68b85663d654fbc971c335eea1ab7a654808d617980339b9907108a32a913f27",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/competency.json": "6a09475e441c3e8a84885650809263e9bb9309946bee570c45cf61116875bf3c",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.en.md": "36fc65b18358cd580809e92317f40892e91232b39964ea98c69103ea2886e30b",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.fil.md": "03d2a160e403aa48fb7efe1eb3201cf649ac586916b609c31982db0cd03887b4",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json": "76bf44a15a0a8bd13e458fbf68a5db79bb522468f9ded10cf2a31a99af3530a2",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.en.md": "c0fcc8a88eb01bde9d039b6926688b5d600f38301d977d02da8ff86c4a0245a1",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.fil.md": "d60888baf3d0a8b0ebadd3d8184689356d8e6fc1eeae7073692d1a1c71a90ce9",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/slides.json": "377d2184dcb2da26a56de5e1756301d08a42fae4814a21cf17d6c6fa42159c1f",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/module.json": "e56ce26ca705fe8298d1245ae1a0ba321d3e89defb20a457db4addb93f2a3a15",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/qa-entries.json": "38e3836533809f98c08426f206c1549ea632e3c9d7c61668e4212817499f7481",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/visuals/01-daloy-ng-impormasyon.svg": "5d4ee6baf62d68cef1e73a758b8f3a5b6e5d7e4b1e868bfcd6686845534ea3de",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/visuals/visuals.json": "9032cd0e094f9bb77f62e6afad0c693b17ac8f2cf85da8a3bac735ff753f29e4",
+    "content/training/day1-basic-competencies/narration.json": "10662761795f15b2ecf9d70c7ffdef5f176569f0ad0e38938e8fccd126ba071e",
+    "remotion/src/Root.tsx": "6eb3df09deb70f6521bb18867b064bfa87b6e184dac9afb4df32f1beca8ec033",
+    "remotion/src/communication-listen/CommunicationListenStory.tsx": "d808aa52758c38c9e6905b758d7fc748cfd7e6aab9f6037e278b4a040278445e",
+    "remotion/src/communication-listen/narration.ts": "dd891d6e2dbc221ceb7bd8f52d04c96ea49256519053c53a2b90c64d6ed07a89",
+    "src/components/elearning/reference-lessons.tsx": "28a8f563b4f860ce9a44f2a5718ba8105d5f94d5733e1f0b12a6f2c52e454b67"
+  },
+  "reviewed_proposal_receipt_sha256": "0b2d7e3dea955c7f503c8975b9572df55d2cb4f7c84554919eaeabaf0a9d25ec",
+  "reviewed_lesson_utf8": {
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"communication-clarify\",\n    \"position\": 1,\n    \"title_fil\": \"Magtanong at maglinaw\",\n    \"title_en\": \"Ask and clarify\",\n    \"objectives_fil\": [\n      \"Sa kuwento ng hindi pagpunta sa health center, gumamit ng bukas na tanong, linawin ang isang detalye at kumpirmahin ang buod nang hindi isinusubo ang sagot.\"\n    ],\n    \"objectives_en\": [\n      \"Given a missed-visit story, use an open question, clarify one detail and confirm a summary without leading the answer.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"open-question\",\n      \"concept_ids\": [\n        \"m6.clarify\"\n      ],\n      \"asset_ids\": [\n        \"gibs-portrait\"\n      ],\n      \"takeaway_fil\": \"Bukas na tanong para sa kuwento; tiyak na tanong para sa paglilinaw ng impormasyon.\",\n      \"takeaway_en\": \"Use open questions for the story and focused questions to clarify information.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"barriers\",\n      \"concept_ids\": [\n        \"m6.barriers\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang hadlang sa serbisyo ay mahalagang impormasyon, hindi dahilan para husgahan ang pamilya.\",\n      \"takeaway_en\": \"A barrier to services is important information, not a reason to judge a family.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m6.clarify\",\n        \"m6.barriers\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang malinaw na tanong ay naglalabas ng impormasyon, hindi ng sagot na gusto nating marinig.\",\n      \"takeaway_en\": \"A clear question elicits information rather than the answer we expect.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m6.clarify\",\n        \"m6.barriers\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang malinaw na tanong ay naglalabas ng impormasyon, hindi ng sagot na gusto nating marinig.\",\n      \"takeaway_en\": \"A clear question elicits information rather than the answer we expect.\",\n      \"check\": {\n        \"prompt_fil\": \"Sinabi ni Liza, “Hindi puwede noong araw na iyon.” Alin ang tamang paglilinaw?\",\n        \"prompt_en\": \"Liza says, “That day did not work.” Which clarification helps?\",\n        \"options\": [\n          {\n            \"fil\": \"“Ano ang nakaabala sa iyo noong araw na iyon?”\",\n            \"en\": \"“What got in the way that day?”\"\n          },\n          {\n            \"fil\": \"“Ibig mong sabihin, ayaw mong pumunta?”\",\n            \"en\": \"“You mean you did not want to go?”\"\n          },\n          {\n            \"fil\": \"“Hindi ba sapat ang paalala namin?”\",\n            \"en\": \"“Was our reminder not enough?”\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Ang unang tanong ay nagpapaliwanag ng hadlang. Ang ikalawa ay ipinapalagay ang motibo; ang ikatlo ay nililimitahan agad ang usapan sa paalala. Pagkatapos ng sagot, linawin ang petsa o ibang kailangang detalye.\",\n        \"feedback_en\": \"The first question explores the barrier. The second assumes motivation; the third limits the conversation to reminders. After the response, clarify the date or another needed detail.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m6.clarify\",\n      \"read_ids\": [\n        \"open-question\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-open-question\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m6.barriers\",\n      \"read_ids\": [\n        \"barriers\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-barriers\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        28\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        18,\n        19,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"gibs-portrait\",\n      \"path\": \"/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png\",\n      \"content_hash\": \"0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02\",\n      \"alt_fil\": \"Si Gibs, kathang-isip na lalaking BHW, nakasuot ng teal na polo at may nakasarang clipboard.\",\n      \"alt_en\": \"Gibs, a fictional male BHW, wears a teal polo and holds a closed clipboard.\",\n      \"caption_fil\": \"Si Gibs ang BHW sa lahat ng aralin sa 1.6.\",\n      \"caption_en\": \"Gibs is the BHW throughout lessons 1.6.\",\n      \"provenance\": \"New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.\",\n      \"review_status\": \"draft\"\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"communication-explain\",\n    \"position\": 2,\n    \"title_fil\": \"Empathy at malinaw na paliwanag\",\n    \"title_en\": \"Empathy and clear explanations\",\n    \"objectives_fil\": [\n      \"Sa isang sensitibong usapan, kilalanin ang concern, magbigay ng isang hakbang na saklaw ng BHW at ipasabi ito sa sariling salita ng kausap.\"\n    ],\n    \"objectives_en\": [\n      \"In a sensitive conversation, acknowledge the concern, give one next step within the BHW role and ask the person to explain it in their own words.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"teach-back\",\n      \"concept_ids\": [\n        \"m6.health-promotion\"\n      ],\n      \"asset_ids\": [\n        \"gibs-portrait\"\n      ],\n      \"takeaway_fil\": \"Ang malinaw na mensahe ay nasusuri sa sariling paliwanag ng kausap, hindi sa pagtango lamang.\",\n      \"takeaway_en\": \"Check a clear message through the person’s own explanation, not a nod alone.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"family-planning\",\n      \"concept_ids\": [\n        \"m6.family-planning\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang pakikipag-usap tungkol sa family planning ay nagbibigay ng puwang sa pagpili at tamang counseling.\",\n      \"takeaway_en\": \"Family-planning communication supports the person’s choice and appropriate counseling.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"distress\",\n      \"concept_ids\": [\n        \"m6.distress\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang pakikinig ay suporta; ang diagnosis at pangangalagang klinikal ay para sa kwalipikadong health professional.\",\n      \"takeaway_en\": \"Listening offers support; diagnosis and clinical care belong with a qualified health professional.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"smoking\",\n      \"concept_ids\": [\n        \"m6.smoking\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Mas madaling magplano kapag narinig ang layunin at hadlang ng mismong tao.\",\n      \"takeaway_en\": \"Planning improves when the person’s own goal and barriers are heard.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m6.health-promotion\",\n        \"m6.family-planning\",\n        \"m6.distress\",\n        \"m6.smoking\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.\",\n      \"takeaway_en\": \"Hear the concern and check the clarity of your explanation while staying within the BHW role.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m6.health-promotion\",\n        \"m6.family-planning\",\n        \"m6.distress\",\n        \"m6.smoking\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.\",\n      \"takeaway_en\": \"Hear the concern and check the clarity of your explanation while staying within the BHW role.\",\n      \"check\": {\n        \"prompt_fil\": \"Sa teach-back, iba ang planong ikinuwento ni Liza. Ano ang susunod?\",\n        \"prompt_en\": \"During teach-back, Liza describes a different plan. What next?\",\n        \"options\": [\n          {\n            \"fil\": \"Sabihing mali at tapusin ang usapan.\",\n            \"en\": \"Say it is wrong and end the conversation.\"\n          },\n          {\n            \"fil\": \"Ibigay ang parehong paliwanag nang mas mabilis.\",\n            \"en\": \"Give the same explanation more quickly.\"\n          },\n          {\n            \"fil\": \"Ipaliwanag sa ibang paraan at ipasabi muli ang hakbang.\",\n            \"en\": \"Explain another way and ask her to describe the step again.\"\n          }\n        ],\n        \"correct_option_index\": 2,\n        \"feedback_fil\": \"Ang ikatlong sagot ay inaayos ang paliwanag at muling sinusuri ito. Ang pagsisi ay maaaring magpatahimik sa kausap; ang mas mabilis na pag-uulit ay hindi tumutugon sa hindi malinaw.\",\n        \"feedback_en\": \"The third response repairs the explanation and checks again. Blame may silence the person; faster repetition does not address the misunderstanding.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m6.health-promotion\",\n      \"read_ids\": [\n        \"teach-back\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-teach-back\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"ahrq-teach-back\"\n      ]\n    },\n    {\n      \"id\": \"m6.family-planning\",\n      \"read_ids\": [\n        \"family-planning\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-family-planning\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"ahrq-teach-back\"\n      ]\n    },\n    {\n      \"id\": \"m6.distress\",\n      \"read_ids\": [\n        \"distress\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-distress\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"ahrq-teach-back\"\n      ]\n    },\n    {\n      \"id\": \"m6.smoking\",\n      \"read_ids\": [\n        \"smoking\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-smoking\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"ahrq-teach-back\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        28\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        18,\n        19,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"ahrq-teach-back\",\n      \"title\": \"AHRQ — Use the Teach-Back Method: Tool 5\",\n      \"url\": \"https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"gibs-portrait\",\n      \"path\": \"/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png\",\n      \"content_hash\": \"0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02\",\n      \"alt_fil\": \"Si Gibs, kathang-isip na lalaking BHW, nakasuot ng teal na polo at may nakasarang clipboard.\",\n      \"alt_en\": \"Gibs, a fictional male BHW, wears a teal polo and holds a closed clipboard.\",\n      \"caption_fil\": \"Si Gibs ang BHW sa lahat ng aralin sa 1.6.\",\n      \"caption_en\": \"Gibs is the BHW throughout lessons 1.6.\",\n      \"provenance\": \"New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.\",\n      \"review_status\": \"draft\"\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"communication-handoff\",\n    \"position\": 4,\n    \"title_fil\": \"Ibahagi ang mahalagang impormasyon\",\n    \"title_en\": \"Share relevant information\",\n    \"objectives_fil\": [\n      \"Gumawa ng maikling ulat para sa midwife na may concern, pinagmulan at hindi pa tiyak na detalye, hinihinging aksyon at ligtas na paraan ng pagpapadala.\"\n    ],\n    \"objectives_en\": [\n      \"Prepare a short handoff for the midwife containing the concern, sources and uncertainty, requested action and a secure delivery method.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"handoff\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [\n        \"gibs-portrait\"\n      ],\n      \"takeaway_fil\": \"Ang pagtatala at paglalahad ng impormasyon ay dapat malinaw, may susunod na hakbang at para lamang sa tamang tatanggap.\",\n      \"takeaway_en\": \"Recording and presenting information requires clarity, a next step and the appropriate recipient.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"audience\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang parehong concern ay maaaring ilahad nang magkaiba ayon sa layunin at tamang tatanggap.\",\n      \"takeaway_en\": \"The same concern can be presented differently for the purpose and appropriate recipient.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"meeting\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang paglalahad sa pulong ay humihingi ng konkretong desisyon habang pinangangalagaan ang pribadong kuwento.\",\n      \"takeaway_en\": \"A meeting presentation asks for a concrete decision while protecting private stories.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang ulat ay sapat para makakilos ang tamang tao, habang protektado ang pribadong detalye.\",\n      \"takeaway_en\": \"A handoff gives the right person enough to act while protecting private details.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang ulat ay sapat para makakilos ang tamang tao, habang protektado ang pribadong detalye.\",\n      \"takeaway_en\": \"A handoff gives the right person enough to act while protecting private details.\",\n      \"check\": {\n        \"prompt_fil\": \"Humihingi ang barangay meeting ng paliwanag sa missed visits. Ano ang ibabahagi?\",\n        \"prompt_en\": \"A barangay meeting asks about missed visits. What should be shared?\",\n        \"options\": [\n          {\n            \"fil\": \"Ang pinagsamang childcare barrier at tanong tungkol sa iskedyul.\",\n            \"en\": \"The aggregated childcare barrier and a question about scheduling.\"\n          },\n          {\n            \"fil\": \"Mga larawan ng household forms para kumpleto.\",\n            \"en\": \"Photos of household forms for completeness.\"\n          },\n          {\n            \"fil\": \"Pangalan ng bawat pamilya at opinyon ng kapitbahay.\",\n            \"en\": \"Each family’s name and the neighbor’s opinion.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Ang unang sagot ay angkop sa pagpaplano. Ang forms at pangalan ay naglalantad ng hindi kailangang personal na detalye; ang opinyon ay hindi ebidensya ng dahilan. Ang indibidwal na follow-up ay sa tamang health team member.\",\n        \"feedback_en\": \"The first response fits planning. Forms and names expose unnecessary personal details; an opinion is not evidence of the cause. Individual follow-up goes to the appropriate health team member.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m6.record\",\n      \"read_ids\": [\n        \"handoff\",\n        \"audience\",\n        \"meeting\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-handoff\",\n        \"slide-audience\",\n        \"slide-meeting\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        28\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        18,\n        19,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"gibs-portrait\",\n      \"path\": \"/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png\",\n      \"content_hash\": \"0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02\",\n      \"alt_fil\": \"Si Gibs, kathang-isip na lalaking BHW, nakasuot ng teal na polo at may nakasarang clipboard.\",\n      \"alt_en\": \"Gibs, a fictional male BHW, wears a teal polo and holds a closed clipboard.\",\n      \"caption_fil\": \"Si Gibs ang BHW sa lahat ng aralin sa 1.6.\",\n      \"caption_en\": \"Gibs is the BHW throughout lessons 1.6.\",\n      \"provenance\": \"New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.\",\n      \"review_status\": \"draft\"\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"communication-listen\",\n    \"position\": 0,\n    \"title_fil\": \"Makinig nang may respeto\",\n    \"title_en\": \"Listen with respect\",\n    \"objectives_fil\": [\n      \"Sa kunwaring household interview, humingi ng pahintulot, pumili ng komportableng lugar at ibuod ang concern nang walang paratang.\"\n    ],\n    \"objectives_en\": [\n      \"In a simulated household interview, ask permission, establish a comfortable setting and summarize the concern without blame.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"liza\",\n      \"concept_ids\": [\n        \"m6.gather\"\n      ],\n      \"asset_ids\": [\n        \"gibs-liza\"\n      ],\n      \"takeaway_fil\": \"Huminto at itanong ang gusto ng kausap; huwag hulaan ang dahilan ng katahimikan.\",\n      \"takeaway_en\": \"Pause and ask what the person prefers; do not guess the reason for silence.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"permission\",\n      \"concept_ids\": [\n        \"m6.gather\"\n      ],\n      \"asset_ids\": [\n        \"gibs-permission\"\n      ],\n      \"takeaway_fil\": \"Ang kausap ang pumipili ng komportableng lugar, wika at kasama.\",\n      \"takeaway_en\": \"The person chooses a comfortable place, language and support person.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"listen\",\n      \"concept_ids\": [\n        \"m6.empathy\"\n      ],\n      \"asset_ids\": [\n        \"gibs-listen\"\n      ],\n      \"takeaway_fil\": \"Magbigay ng oras sa kuwento at kilalanin ang hirap nang walang paratang.\",\n      \"takeaway_en\": \"Allow time for the account and acknowledge difficulty without blame.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"profile\",\n      \"concept_ids\": [\n        \"m6.profile\"\n      ],\n      \"asset_ids\": [\n        \"gibs-profile\"\n      ],\n      \"takeaway_fil\": \"Tanungin kung tama ang buod at hayaan ang kausap na magwasto.\",\n      \"takeaway_en\": \"Ask whether the summary is accurate and let the person correct it.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m6.gather\",\n        \"m6.empathy\",\n        \"m6.profile\"\n      ],\n      \"asset_ids\": [\n        \"gibs-practice\"\n      ],\n      \"takeaway_fil\": \"Ulitin ang hindi pa malinaw na hakbang; feedback ng kapareha ay pagsasanay.\",\n      \"takeaway_en\": \"Repeat the step needing work; peer feedback is practice.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m6.gather\",\n        \"m6.empathy\",\n        \"m6.profile\"\n      ],\n      \"asset_ids\": [\n        \"gibs-check\"\n      ],\n      \"takeaway_fil\": \"Bigyan ng pagpili at boses si Liza, saka tiyakin ang pagkaintindi.\",\n      \"takeaway_en\": \"Give Liza a choice and a voice, then check understanding.\",\n      \"check\": {\n        \"prompt_fil\": \"Sumasagot ang kapitbahay para kay Liza. Ano ang unang gagawin ni Gibs?\",\n        \"prompt_en\": \"A neighbor answers for Liza. What should Gibs do first?\",\n        \"options\": [\n          {\n            \"fil\": \"Ituloy ang form gamit ang sagot ng kapitbahay.\",\n            \"en\": \"Complete the form using the neighbor’s answers.\"\n          },\n          {\n            \"fil\": \"Tanungin si Liza kung saan at paano siya komportableng makikipag-usap.\",\n            \"en\": \"Ask Liza where and how she would be comfortable talking.\"\n          },\n          {\n            \"fil\": \"Sabihin muna ang payo bago magtanong ulit.\",\n            \"en\": \"Give advice before asking again.\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Una: maaaring mali ang sagot ng kapitbahay para kay Liza; huwag itong gawing sagot niya. Ikalawa: tanungin si Liza tungkol sa ginhawa at pagpili upang siya mismo ang makapagsalita. Ito ang tamang unang hakbang. Ikatlo: ang payo bago makinig ay maaaring hindi tumugon sa tunay na concern. Sa wakas, pinili ni Liza ang mas tahimik na lugar at Filipino. Sinabi niyang mahirap pumunta kapag wala ang kapatid na nagbabantay sa anak. Ibinuod ito ni Gibs bilang tanong at kinumpirma ni Liza. Walang ipinangakong childcare o appointment.\",\n        \"feedback_en\": \"First: the neighbor’s answer may not be Liza’s; do not treat it as her answer. Second: ask Liza about comfort and choices so she can speak for herself. This is the correct first step. Third: advice before listening may miss the actual concern. In the ending, Liza chooses a quieter place and Filipino. She explains that visits are difficult when her sister cannot look after her child. Gibs summarizes this as a question and Liza confirms it. No childcare or appointment is promised.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m6.gather\",\n      \"read_ids\": [\n        \"liza\",\n        \"permission\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-liza\",\n        \"slide-permission\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m6.empathy\",\n      \"read_ids\": [\n        \"listen\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-listen\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m6.profile\",\n      \"read_ids\": [\n        \"profile\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-profile\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        28\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        18,\n        19,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"gibs-liza\",\n      \"path\": \"/training/bhw-1-6/gibs-liza-0b433575765c.png\",\n      \"content_hash\": \"0b433575765cf475aee091922be2b70c042f252dcecb341ba8d7614cb6540463\",\n      \"alt_fil\": \"Si Gibs ay nakikinig sa tabi ni Liza habang sumasagot ang kapitbahay.\",\n      \"alt_en\": \"Gibs sits with Liza while her neighbor answers.\",\n      \"caption_fil\": \"Huminto at itanong ang gusto ng kausap; huwag hulaan ang dahilan ng katahimikan.\",\n      \"caption_en\": \"Pause and ask what the person prefers; do not guess the reason for silence.\",\n      \"provenance\": \"Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"gibs-permission\",\n      \"path\": \"/training/bhw-1-6/gibs-permission-ac9bcc90f9f7.png\",\n      \"content_hash\": \"ac9bcc90f9f79b086bdbfa66981a1e7a1985803ab4c7356df9620755fdc614b9\",\n      \"alt_fil\": \"Nag-aalok si Gibs ng pagpili at itinuturo ni Liza ang mas tahimik na upuan.\",\n      \"alt_en\": \"Gibs offers choices and Liza points to a quieter seat.\",\n      \"caption_fil\": \"Ang kausap ang pumipili ng komportableng lugar, wika at kasama.\",\n      \"caption_en\": \"The person chooses a comfortable place, language and support person.\",\n      \"provenance\": \"Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"gibs-listen\",\n      \"path\": \"/training/bhw-1-6/gibs-listen-b385842fd8e0.png\",\n      \"content_hash\": \"b385842fd8e03276ffd72d29e0d4e39038a8aa528e8dbed002666a11806d03df\",\n      \"alt_fil\": \"Nakikinig si Gibs nang hindi sumasabat habang nagsasalita si Liza; nasa bag ang telepono.\",\n      \"alt_en\": \"Gibs listens without interrupting as Liza speaks; his phone is in a bag.\",\n      \"caption_fil\": \"Magbigay ng oras sa kuwento at kilalanin ang hirap nang walang paratang.\",\n      \"caption_en\": \"Allow time for the account and acknowledge difficulty without blame.\",\n      \"provenance\": \"Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"gibs-profile\",\n      \"path\": \"/training/bhw-1-6/gibs-profile-37d8a009bbc6.png\",\n      \"content_hash\": \"37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed\",\n      \"alt_fil\": \"Nag-uusap sina Gibs at Liza upang linawin at tiyakin ang buod; walang personal na rekord.\",\n      \"alt_en\": \"Gibs and Liza exchange a summary and clarification; no personal record is shown.\",\n      \"caption_fil\": \"Tanungin kung tama ang buod at hayaan ang kausap na magwasto.\",\n      \"caption_en\": \"Ask whether the summary is accurate and let the person correct it.\",\n      \"provenance\": \"Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"gibs-practice\",\n      \"path\": \"/training/bhw-1-6/gibs-practice-c746e090e23b.png\",\n      \"content_hash\": \"c746e090e23bdd76b3d89f899578e5a4294a6c013369bc0ac8877935f20725b5\",\n      \"alt_fil\": \"Nagsasanay sina Gibs at Liza habang may tagamasid na may blankong checklist.\",\n      \"alt_en\": \"Gibs and Liza rehearse with an observer holding a blank checklist.\",\n      \"caption_fil\": \"Ulitin ang hindi pa malinaw na hakbang; feedback ng kapareha ay pagsasanay.\",\n      \"caption_en\": \"Repeat the step needing work; peer feedback is practice.\",\n      \"provenance\": \"Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"gibs-check\",\n      \"path\": \"/training/bhw-1-6/gibs-check-348430167a69.png\",\n      \"content_hash\": \"348430167a69f65d96735a7b3bda35d21d3a8404c3c6ccb1f94057c16c608f26\",\n      \"alt_fil\": \"Sumasagot ang kapitbahay sa tabi ni Liza; nakasarado ang clipboard ni Gibs bago ang pasya.\",\n      \"alt_en\": \"A neighbor answers beside Liza; Gibs holds a closed clipboard before the decision.\",\n      \"caption_fil\": \"Kapitbahay ang sumasagot. Ano ang unang gagawin ni Gibs?\",\n      \"caption_en\": \"The neighbor answers. What should Gibs do first?\",\n      \"provenance\": \"Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"communication-listen-story\",\n      \"alt_fil\": \"Anim na narrated beat: humihingi si Gibs ng pahintulot, nakikinig kay Liza at tinitiyak ang buod.\",\n      \"alt_en\": \"Six narrated beats: Gibs asks permission, listens to Liza and checks his summary.\",\n      \"caption_fil\": \"Pahintulot, pakikinig at buod na maaaring iwasto ng kausap.\",\n      \"caption_en\": \"Permission, listening and a summary the person can correct.\",\n      \"provenance\": \"Original lesson1.6.1 Remotion animation with new built-in imagegen six distinct listening scenes preserving new male Gibs identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Six distinct illustrated listening actions with animated labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-6/communication-listen-gemini-fil-940d78bad524.mp4\",\n          \"content_hash\": \"940d78bad5249b4b10da263cd0fad881f5aaa4931e37dc4a0166bafd09c4e30c\",\n          \"duration_s\": 66,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-6/communication-listen-gemini-fil-b8ae7eaf2278.vtt\",\n            \"content_hash\": \"b8ae7eaf227876cac135801ec5558d86fcad9db9dfff03c5b65243baa67590c7\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-6/communication-listen-gemini-fil-973e2f8cd8d7-poster.jpg\",\n            \"content_hash\": \"973e2f8cd8d7609c654d08fcb601b6a1f99870c721a72d65ff1ee8025d13fda5\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-6/communication-listen-gemini-en-4ef2124a273d.mp4\",\n          \"content_hash\": \"4ef2124a273dd03b99301c702942e6557874d5c03627215e80d191800d06538e\",\n          \"duration_s\": 65,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-6/communication-listen-gemini-en-7c1979fef1e8.vtt\",\n            \"content_hash\": \"7c1979fef1e8da9e43ea8cc2fc3c0eebda808cb39debad9e5eb0796f2f2f47c5\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-6/communication-listen-gemini-en-dc3a0dbcdaab-poster.jpg\",\n            \"content_hash\": \"dc3a0dbcdaab41e505c12833b4936337c80ba62fda790d27d1d07719e90df339\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-6/communication-listen-gemini-fil-973e2f8cd8d7-poster.jpg\",\n      \"content_hash\": \"973e2f8cd8d7609c654d08fcb601b6a1f99870c721a72d65ff1ee8025d13fda5\"\n    }\n  ],\n  \"featured_asset_id\": \"communication-listen-story\"\n}\n",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"communication-record\",\n    \"position\": 3,\n    \"title_fil\": \"Suriin at itala ang impormasyon\",\n    \"title_en\": \"Assess and record information\",\n    \"objectives_fil\": [\n      \"Mula sa dalawang magkaibang kuwento, gumawa ng tala na hiwalay ang sinabi, nakita at hindi pa natiyak, at tukuyin kung paano beripikahin ang kulang.\"\n    ],\n    \"objectives_en\": [\n      \"From conflicting accounts, produce a record separating reports, observations and unconfirmed details, with a way to verify the gap.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"sources\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [\n        \"gibs-portrait\"\n      ],\n      \"takeaway_fil\": \"Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.\",\n      \"takeaway_en\": \"When assessing information, distinguish reports, observations and details still requiring verification.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"conflicting-accounts\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Kapag magkaiba ang kuwento, maglinaw at magberipika bago magpasya.\",\n      \"takeaway_en\": \"When accounts differ, clarify and verify before deciding.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.\",\n      \"takeaway_en\": \"Clear sources and explicit gaps prevent a guess becoming an official record.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.\",\n      \"takeaway_en\": \"Clear sources and explicit gaps prevent a guess becoming an official record.\",\n      \"check\": {\n        \"prompt_fil\": \"Wala ang card, at hindi magkatugma ang kuwento ni Liza at ng kapitbahay. Aling tala ang angkop?\",\n        \"prompt_en\": \"The card is missing and Liza’s account differs from her neighbor’s. Which record fits?\",\n        \"options\": [\n          {\n            \"fil\": \"“Hindi interesado si Liza; ayon sa kapitbahay.”\",\n            \"en\": \"“Liza is not interested, according to the neighbor.”\"\n          },\n          {\n            \"fil\": \"“Ayon kay Liza, kinansela ang schedule; petsa ay ibeberipika sa rekord.”\",\n            \"en\": \"“Liza reports a canceled schedule; date to be verified in the record.”\"\n          },\n          {\n            \"fil\": \"“Kinansela ng health center ang lahat ng appointment.”\",\n            \"en\": \"“The health center canceled every appointment.”\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Ang ikalawang tala ay may pinagmulan at malinaw na puwang sa impormasyon. Ang una ay inuuna ang husga; ang ikatlo ay nagpapalawak ng hindi pa natiyak na pahayag.\",\n        \"feedback_en\": \"The second record identifies the source and the information gap. The first prioritizes a judgment; the third expands an unverified claim.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m6.assess\",\n      \"read_ids\": [\n        \"sources\",\n        \"conflicting-accounts\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-sources\",\n        \"slide-conflicting-accounts\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        28\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        18,\n        19,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"gibs-portrait\",\n      \"path\": \"/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png\",\n      \"content_hash\": \"0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02\",\n      \"alt_fil\": \"Si Gibs, kathang-isip na lalaking BHW, nakasuot ng teal na polo at may nakasarang clipboard.\",\n      \"alt_en\": \"Gibs, a fictional male BHW, wears a teal polo and holds a closed clipboard.\",\n      \"caption_fil\": \"Si Gibs ang BHW sa lahat ng aralin sa 1.6.\",\n      \"caption_en\": \"Gibs is the BHW throughout lessons 1.6.\",\n      \"provenance\": \"New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.\",\n      \"review_status\": \"draft\"\n    }\n  ]\n}\n"
+  }
+}
