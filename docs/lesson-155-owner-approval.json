@@ -56,7 +56,7 @@
     ".github/workflows/lesson155-release.yml": "9bf28623b1b67d8f0b7dd6c6929208a5f9f6cb4a7a41ccee0e74d16945f09b97",
     ".github/workflows/lesson155-preflight.yml": "acb871c98e2101628374651b5d10efb0249497b4d8ba9ab808e31b84cb8a6e24",
     "scripts/lesson-155-release-snapshot.mjs": "a2f9894795a6b30a356f7f640c607ce499fcc93b416bab8471597178412df209",
-    "scripts/lesson-155-kb-release.mjs": "83134349ade9819c156950907aae3cc021bc8384a1f806e47e466c2eb67335c8",
+    "scripts/lesson-155-kb-release.mjs": "cfccf0788834ebdbed2b311604bdc3de84d94ad88bffcd8f743daca108d0955e",
     "scripts/lesson-155-live-smoke.mjs": "658bbb5b650b5ea2f99bd2863290ef7065ad4b8872b6c239ba584a8f09b810d5"
   },
   "approved_media": [
@@ -154,5 +154,6 @@
     }
   ],
   "approval_scope": "Owner approved the reviewed lesson and live release. Only asset approval metadata is promoted; teaching, narration and public media bytes remain exact. Publish the target lesson/private guide and its two matching Chat Guide answers. Keep all sibling lesson revisions, original IDs, historical source receipts and learner progress.",
-  "audio_review_disposition": "The four model-reported timbre flags were disclosed before owner approval. The owner approved this exact package. No human listening completion is asserted."
+  "audio_review_disposition": "The four model-reported timbre flags were disclosed before owner approval. The owner approved this exact package. No human listening completion is asserted.",
+  "kb_release_disposition": "Read-only preflight identified unowned existing answers. Retain existing owners; assign the established publishing admin only when owner is missing, and use the standard six-month review date only when no date exists. Exactly two existing answer IDs are updated."
 }
