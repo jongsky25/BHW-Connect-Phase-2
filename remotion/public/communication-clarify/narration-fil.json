@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Filipino (Tagalog) as one continuous warm adult female Kore community health trainer. Keep exactly the same settled feminine timbre, mid register and teaching pace for every heading, sentence and quotation, including Gibs and Liza dialogue. Do not act out male or secondary character voices. Allow a comfortable pause at corrections and finish the ending clearly. Preserve every word, negation and uncertainty. Gibs is pronounced gibz and Liza LEE-sa. No added words or promises. Delivery revision 3.",
+  "durationSeconds": 57.574,
+  "beats": [
+    {
+      "zone": "open-question",
+      "index": 0,
+      "text": "Nag-anyaya si Gibs: “Ano ang nangyari?” “Wala akong kasama,” sagot ni Liza. Hindi niya ipinagpalagay ang motibo.",
+      "start_ms": 0,
+      "end_ms": 9240
+    },
+    {
+      "zone": "clarify-detail",
+      "index": 1,
+      "text": "“Kasama sa biyahe?” tanong niya. “Hindi. Magbabantay sa anak,” pagwawasto ni Liza. Tinanggap ni Gibs ang paglilinaw.",
+      "start_ms": 9540,
+      "end_ms": 19260
+    },
+    {
+      "zone": "barriers",
+      "index": 2,
+      "text": "Childcare ang sariling sagot ni Liza. Hindi niya sagot ang sabi ng kapitbahay. Hadlang ang linawin, hindi motibo ang hulaan.",
+      "start_ms": 19560,
+      "end_ms": 28600
+    },
+    {
+      "zone": "confirm-summary",
+      "index": 3,
+      "text": "“Palaging mahirap?” “Hindi palagi. Kapag wala ang kapatid ko.” Inayos ni Gibs ang buod at kinumpirma ito ni Liza.",
+      "start_ms": 28900,
+      "end_ms": 38180
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Sa tatlong role, lahat ay BHW minsan. Sanayin ang paanyaya, isang paglilinaw at kinumpirmang buod. Ulitin ang kailangan ng tulong.",
+      "start_ms": 38480,
+      "end_ms": 48760
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Pumayag si Liza na oras ng serbisyo muna ang aalamin. Hindi pa tiyak ang petsa. Walang pangakong appointment o childcare.",
+      "start_ms": 49060,
+      "end_ms": 57500
+    }
+  ],
+  "audio_sha256": "5a0e16a9e9fb2e08632d53abf748de6fbb389f315fed0c5cb04729811f4cc914"
+}

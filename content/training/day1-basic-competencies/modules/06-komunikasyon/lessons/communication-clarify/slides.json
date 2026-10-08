@@ -7,10 +7,30 @@
     "layout": "comparison",
     "heading_fil": "Bukas muna, saka linawin",
     "heading_en": "Open first, then clarify",
-    "display_fil": "“Ano ang naging hadlang?” muna; “Kailan ang huling pagpunta?” kasunod. Isa-isahin ang tanong. Ang oo/hindi ay para sa tiyak na detalye, hindi kapalit ng kuwento.",
-    "display_en": "Start with “What got in the way?” Then ask “When was your last visit?” Ask one question at a time. Yes/no questions clarify a detail; they do not replace the story.",
+    "display_fil": "“Ano po ang nangyari?” → maghintay → isang paglilinaw. Huwag ipalagay ang motibo.",
+    "display_en": "“What happened?” → allow an answer → one clarification. Do not assume a motive.",
+    "narration_fil": "Si Gibs, lalaking BHW, ay nakikipag-usap kay Liza, 29 anyos, tungkol sa hindi niya pagpunta sa health center. Kathang-isip ang kuwentong ito. Napag-usapan na nila ang layunin, wika at komportableng lugar. “Ano po ang nangyari noong hindi kayo nakapunta?” tanong ni Gibs. “Wala akong kasama,” sagot ni Liza. Nagbigay siya ng oras para matapos ang kuwento. Ang “Ibig ninyong sabihin, ayaw ninyong pumunta?” ay may ipinapalagay nang motibo. Ang bukas na paanyaya ay nagbibigay kay Liza ng pagkakataong magsabi sa sarili niyang salita. Saka lamang maglinaw ng isang kailangang detalye. Maaaring oo o hindi ang sagot kung isang tiyak na detalye ang kinukumpirma; hindi ito kapalit ng pakikinig sa kuwento.",
+    "narration_en": "Gibs, a male BHW, talks with Liza, 29, about her missed health-center visit. This story is fictional. They have already agreed on the purpose, language and a comfortable place. “What happened when you could not attend?” Gibs asks. “I had nobody with me,” Liza replies. He gives her time to finish the story. “You mean you did not want to go?” already assumes a motive. An open invitation lets Liza describe events in her own words. Then clarify one needed detail. A yes-or-no answer can confirm a specific detail; it does not replace listening to the story.",
     "asset_ids": [
-      "gibs-portrait"
+      "gibs-portrait",
+      "clarify-open-question"
+    ],
+    "check": null
+  },
+  {
+    "id": "slide-clarify-detail",
+    "concept_ids": [
+      "m6.clarify"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Ano ang ibig sabihin ng “kasama”?",
+    "heading_en": "What does “with me” mean?",
+    "display_fil": "Gibs: “Kasama sa biyahe?” Liza: “Hindi. Magbabantay sa anak.” Tanggapin ang pagwawasto.",
+    "display_en": "Gibs: “Someone to travel with?” Liza: “No. Someone to watch my child.” Accept the correction.",
+    "narration_fil": "Hindi pa malinaw kay Gibs ang “Wala akong kasama.” “Kasama po ba sa biyahe ang ibig ninyo?” tanong niya. “Hindi po. Magbabantay sa anak ko,” pagwawasto ni Liza. “Salamat po sa paglilinaw,” tugon ni Gibs. Hindi niya ipinilit ang unang pagkaintindi. Maaari ring itanong ang “Ano po ang ibig ninyong sabihin sa kasama?” kung hindi pa tiyak ang kahulugan. Isa-isahin ang tanong; huwag sabay na hingin ang petsa, oras at dahilan. Kung kailangan sa napagkasunduang gawain, saka itanong ang “Kailan po iyon?” o “Kailan po kayo huling nakapunta?” Huwag hulaan ang petsang hindi maalala. Sa kuwentong ito, ang kailangang linawin muna ay kung sino ang wala at ano ang papel niya.",
+    "narration_en": "“I had nobody with me” is still unclear to Gibs. “Do you mean someone to travel with you?” he asks. “No. Someone to watch my child,” Liza corrects him. “Thank you for clarifying,” Gibs replies. He does not insist on his first interpretation. “What do you mean by with me?” is another useful question when the meaning is uncertain. Ask one question at a time; do not request the date, time and reason all at once. If relevant to the agreed task, follow with “When was that?” or “When was your last visit?” Do not guess a date the person cannot remember. In this story, first clarify who was unavailable and what their role was.",
+    "asset_ids": [
+      "clarify-clarify-detail"
     ],
     "check": null
   },
@@ -20,11 +40,32 @@
       "m6.barriers"
     ],
     "layout": "comparison",
-    "heading_fil": "Ang hindi narinig sa kuwento ni Rosario",
-    "heading_en": "What was unheard in Rosario’s story",
-    "display_fil": "Sa kuwento ni Rosario, magkakaugnay ang kahirapan, serbisyo at impormasyon. Itanong: “Ano ang sinabi sa inyo? Ano ang pumigil sa pagkuha ng tulong?” Linawin ang hadlang bago magmungkahi.",
-    "display_en": "Rosario’s case connects poverty, services and information. Ask: “What were you told? What prevented you from getting help?” Clarify the barrier before proposing a response.",
-    "asset_ids": [],
+    "heading_fil": "Hadlang ang linawin, hindi pagkatao ang husgahan",
+    "heading_en": "Clarify barriers without judging the person",
+    "display_fil": "Sariling kuwento ni Liza ≠ sabi ng kapitbahay. Linawin ang hadlang bago magmungkahi.",
+    "display_en": "Liza’s account ≠ the neighbor’s claim. Clarify the barrier before proposing a response.",
+    "narration_fil": "Sa sariling kuwento ni Liza, walang magbabantay sa anak noong araw na iyon. Iba ito sa sabi ng kapitbahay na “Ayaw lang niyang pumunta.” Sabi iyon ng kapitbahay, hindi kinumpirmang paliwanag ni Liza. “Aling bahagi po ng pagpunta ang naging mahirap?” tanong ni Gibs. Maaaring oras, pag-aalaga, wika o pag-abot sa serbisyo ang hadlang; hayaang ang kausap ang magsabi. Huwag gawing listahan ng inaasahang sagot ang mga posibilidad. Sa kasong Rosario sa Modyul 7, magkakaugnay ang kahirapan, kakulangan sa serbisyo at maling impormasyon. Linawin muna kung ano ang sinabi sa pamilya, saka hiwalay na itanong kung ano ang pumigil sa pagkuha ng tulong. Hindi patunay ng katamaran o pagsuway ang hadlang. Kunin lamang ang kaugnay na detalye para sa napagkasunduang gawain. Huwag mangako ng childcare, sasakyan o appointment na hindi pa nakumpirma.",
+    "narration_en": "In Liza’s own account, nobody could watch her child that day. This differs from the neighbor’s claim, “She just does not want to go.” That is the neighbor’s statement, not Liza’s confirmed explanation. “Which part of getting there was difficult?” Gibs asks. Timing, childcare, language or access may be barriers; let the person explain. Do not turn possibilities into a list of expected answers. The Rosario case in Module 7 connects poverty, service gaps and misinformation. First clarify what the family was told, then separately ask what prevented them from getting help. A barrier does not prove laziness or disobedience. Ask only for details relevant to the agreed task. Do not promise childcare, transport or an appointment that has not been confirmed.",
+    "asset_ids": [
+      "clarify-barriers"
+    ],
+    "check": null
+  },
+  {
+    "id": "slide-confirm-summary",
+    "concept_ids": [
+      "m6.clarify"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Ibalik ang buod bilang tanong",
+    "heading_en": "Offer the summary as a question",
+    "display_fil": "“Hindi palagi.” → alisin ang hula → kumpirmahin ang inayos na buod. Alamin muna ang oras.",
+    "display_en": "“Not always.” → remove the assumption → confirm the corrected summary. Check the hours first.",
+    "narration_fil": "“Tama po ba: palaging mahirap pumunta dahil walang magbabantay?” tanong ni Gibs. “Hindi palagi. Kapag wala lang ang kapatid ko,” pagwawasto ni Liza. “Kapag wala ang kapatid ninyo, mahirap makahanap ng magbabantay sa anak. Tama po ba?” “Opo,” kinumpirma niya. Tinanggal ni Gibs ang salitang palagi sa buod. “Gusto po ba ninyong alamin natin ang kasalukuyang oras ng serbisyo?” alok niya. Pumayag si Liza na alamin muna ang oras; hindi pa tiyak kung kailan siya makakapunta. Ito ang nakumpirmang susunod na hakbang, hindi pangako ng appointment o childcare. Maikling kaugnay na buod lamang ang ibalik, hindi lahat ng pribadong detalye. Gamitin ang impormasyon ayon sa awtorisadong layunin at lokal na patakaran. Kung kailangan ng agarang tulong, sundin ang lokal na proseso; huwag ipagpaliban ito para tapusin ang karaniwang usapan.",
+    "narration_en": "“Have I understood correctly: getting there is always difficult because nobody can watch your child?” Gibs asks. “Not always. Only when my sister is away,” Liza corrects him. “When your sister is away, it is difficult to find someone to watch your child. Is that right?” “Yes,” she confirms. Gibs removes always from his summary. “Would you like us to check the current service hours?” he offers. Liza agrees to check the hours first; she does not yet know when she can attend. This is a confirmed next step, not a promise of an appointment or childcare. Return a brief relevant summary, not every private detail. Use information for the authorized purpose under local policy. If immediate help is needed, follow the local process; do not delay it to finish a routine conversation.",
+    "asset_ids": [
+      "clarify-confirm-summary"
+    ],
     "check": null
   },
   {
@@ -36,9 +77,13 @@
     "layout": "process",
     "heading_fil": "Subukan, saka ulitin",
     "heading_en": "Try it, then repeat",
-    "display_fil": "“Wala akong kasama.” Ano ang ibig sabihin? Magtanong → linawin ang isang detalye → ibalik ang buod.",
-    "display_en": "“I have nobody with me.” What does that mean? Ask → clarify one detail → check the summary.",
-    "asset_ids": [],
+    "display_fil": "Paanyaya → isang paglilinaw → inayos na buod. Tatlong papel, tatlong round, may pag-ulit.",
+    "display_en": "Invitation → one clarification → corrected summary. Three roles, three rounds, with retries.",
+    "narration_fil": "Gamitin ang kathang-isip na cards para sa BHW, Liza at tagamasid. Sa unang round, magsimula sa bukas na paanyaya. Sasagot si Liza ng “Wala akong kasama.” Linawin kung kasama sa biyahe o magbabantay sa anak ang ibig sabihin, saka ipasuri ang iyong buod. Itala ng tagamasid ang eksaktong tanong, sagot at pagwawasto; huwag hulaan ang motibo. Ulitin ang hakbang na nangangailangan ng tulong bago magpalit ng papel. Sa tatlong round, lahat ay susubok bilang BHW. Sa susunod na round, linawin ang malabong oras; sa ikatlo, ihiwalay ang sabi ng kapitbahay sa sariling sagot ni Liza. Kung mag-isa, isulat at sabihin nang malakas ang paanyaya, paglilinaw at buod, saka gamitin ang question aid. Hindi grado ng facilitator ang peer feedback. Sa susunod na awtorisadong pagbisita, maglinaw ng isang malabong sagot bago magtala. Walang tunay na resident record o pribadong kuwentong ia-upload sa pagsasanay.",
+    "narration_en": "Use fictional BHW, Liza and observer cards. In the first round, start with an open invitation. Liza replies, “I have nobody with me.” Clarify whether this means a travel companion or someone to watch her child, then ask her to check your summary. The observer records the exact question, answer and correction; do not guess a motive. Repeat a step that needs support before rotating roles. Across three rounds, everyone practices as the BHW. In the next round, clarify an ambiguous time; in the third, distinguish the neighbor’s claim from Liza’s own answer. Alone, write and say the invitation, clarification and summary aloud, then use the question aid. Peer feedback is not a facilitator grade. At the next authorized visit, clarify one ambiguous answer before recording it. No real resident record or private account is uploaded for practice.",
+    "asset_ids": [
+      "clarify-practice"
+    ],
     "check": null
   },
   {
@@ -50,9 +95,13 @@
     "layout": "decision",
     "heading_fil": "Piliin ang susunod na hakbang",
     "heading_en": "Choose the next step",
-    "display_fil": "Ang malinaw na tanong ay naglalabas ng impormasyon, hindi ng sagot na gusto nating marinig.",
-    "display_en": "A clear question elicits information rather than the answer we expect.",
-    "asset_ids": [],
+    "display_fil": "“Hindi puwede noong araw na iyon.” Ano ang susunod mong tanong?",
+    "display_en": "“That day did not work.” What would you ask next?",
+    "narration_fil": "Sinabi ni Liza, “Hindi puwede noong araw na iyon.” Nakikinig si Gibs at nakasara ang clipboard niya. Hindi pa alam ni Gibs kung ano ang nangyari; wala pang ipinangakong solusyon. Tingnan ang tagpo, piliin ang susunod na tanong at ipaliwanag ang dahilan bago tingnan ang feedback. Pagkatapos, ihambing ang pasya sa sarili mong ginawa sa pagsasanay.",
+    "narration_en": "Liza says, “That day did not work.” Gibs listens with his clipboard closed. He does not yet know what happened; no solution has been promised. Look at the scene, choose the next question and explain your reason before viewing feedback. Then compare your decision with your own practice attempt.",
+    "asset_ids": [
+      "clarify-check"
+    ],
     "check": {
       "prompt_fil": "Sinabi ni Liza, “Hindi puwede noong araw na iyon.” Alin ang tamang paglilinaw?",
       "prompt_en": "Liza says, “That day did not work.” Which clarification helps?",
@@ -71,8 +120,8 @@
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Ang unang tanong ay nagpapaliwanag ng hadlang. Ang ikalawa ay ipinapalagay ang motibo; ang ikatlo ay nililimitahan agad ang usapan sa paalala. Pagkatapos ng sagot, linawin ang petsa o ibang kailangang detalye.",
-      "feedback_en": "The first question explores the barrier. The second assumes motivation; the third limits the conversation to reminders. After the response, clarify the date or another needed detail."
+      "feedback_fil": "Una: “Ano ang nakaabala sa iyo noong araw na iyon?” ay nagbibigay ng puwang para sa sariling paliwanag ni Liza. Ikalawa: “Ayaw mong pumunta?” ay ipinapalagay ang motibo bago marinig ang sagot. Ikatlo: ang tanong tungkol sa paalala ay nililimitahan agad ang kuwento sa isang posibleng dahilan. Sa kathang-isip na pagpapatuloy, sinabi ni Liza, “Walang magbabantay sa anak ko.” “Noong araw lang po na iyon?” paglilinaw ni Gibs. “Opo, wala ang kapatid ko noon.” “Noong araw na iyon, walang magbabantay dahil wala ang kapatid ninyo. Tama po ba?” Kinumpirma ni Liza ang buod. Pumayag siyang alamin muna nila ang kasalukuyang oras ng serbisyo; hindi pa nakumpirma ang petsa ng pagpunta. Walang ipinangakong appointment o childcare.",
+      "feedback_en": "First: “What got in the way that day?” gives Liza room to explain in her own words. Second: “You did not want to go?” assumes a motive before hearing her answer. Third: the reminder question immediately limits the story to one possible cause. In the fictional continuation, Liza says, “Nobody could watch my child.” “Only on that day?” Gibs clarifies. “Yes, my sister was away then.” “On that day, nobody could watch your child because your sister was away. Is that right?” Liza confirms the summary. She agrees to check the current service hours first; the date of her visit is still unconfirmed. No appointment or childcare is promised."
     }
   }
 ]
