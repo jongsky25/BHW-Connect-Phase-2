@@ -3,6 +3,7 @@
   "method": "Actual 12 Read MP3 and two decoded shipped AAC recordings, plus four hash-pinned focused excerpts per recording. All original full/focused responses are retained. Model concerns below are verbatim supporting evidence and require human evaluation.",
   "actual_full_reviews": 14,
   "actual_focused_excerpts": 56,
+  "pending_focused_excerpts": [],
   "speech_direction": "The synthesis direction requests one female Kore narrator for all dialogue. Full and focused model reports flag possible voice/timbre shifts in both languages; actual consistency remains pending human listening. Target-only speech aliases Gibz and Lisa/Lee-sah preserve displayed Gibs and Liza.",
   "human_listening": "pending",
   "owner_package_review": "pending",
@@ -514,10 +515,19 @@
           "start": 3.54,
           "end": 10.94,
           "excerpt_sha256": "c56eb9b44f59cc30a65e24deb36ec43079e1489bf6ad5446a6be9ea6b79f1718",
-          "observations": null,
-          "possible_defects": null,
-          "uncertainty": null,
-          "unparsed_response": "\n"
+          "observations": {
+            "speech_delivery": "Clear, deliberate, educational narrative tone in standard Tagalog/Filipino.",
+            "target_names_check": {
+              "Gibs": "Not present in this excerpt.",
+              "Liza": "Not present in this excerpt."
+            },
+            "pauses_and_pacing": "Natural, measured pauses separating the list items ('na nabasa', 'naunawaan', 'o napagkasunduan').",
+            "word_completion": "The final word 'hiling' is fully articulated and cleanly completed at approximately 00:07.4 without truncation.",
+            "narrator_sound_consistency": "Narrator voice profile, pitch, and acoustic environment remain uniform throughout the segment."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality is clean and speech is completely intelligible.",
+          "unparsed_response": null
         },
         {
           "kind": "critical",
