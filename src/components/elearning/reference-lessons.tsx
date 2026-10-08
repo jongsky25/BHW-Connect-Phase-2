@@ -298,6 +298,8 @@ export function ReferenceLessons(props: Props) {
   const teamworkMinutes = teamworkTracks.length === 6 ? Math.ceil(teamworkTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const listeningRevision = lesson?.lesson_key === "communication-listen" && lesson.revision.assets.some(asset => asset.id === "gibs-liza");
   const handoffRevision = lesson?.lesson_key === "communication-handoff" && lesson.revision.assets.some(asset => asset.id === "handoff-check");
+  const handoffTracks = handoffRevision ? Object.values(lessonNarration ?? {}) : [];
+  const handoffMinutes = handoffTracks.length === 6 ? Math.ceil(handoffTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const listeningTracks = listeningRevision ? Object.values(lessonNarration ?? {}) : [];
   const listeningMinutes = listeningTracks.length === 6 ? Math.ceil(listeningTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
@@ -754,7 +756,13 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {listeningRevision ? (listeningMinutes === null ? ui(
+              {handoffRevision ? (handoffMinutes === null ? ui(
+                "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 90-minutong guided practice.",
+                "Allow time for reading and practice; the 90-minute guided practice is separate.",
+              ) : ui(
+                `Tinatayang ${handoffMinutes}–${handoffMinutes + 3} minuto sa kabuuan: salaysay sa wikang ito at 3–6 minutong maikling pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 90-minutong guided practice.`,
+                `Estimated ${handoffMinutes}–${handoffMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 90-minute guided practice is separate.`,
+              )) : listeningRevision ? (listeningMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 90-minutong guided practice.",
                 "Allow time for reading and practice; the 90-minute guided practice is separate.",
               ) : ui(

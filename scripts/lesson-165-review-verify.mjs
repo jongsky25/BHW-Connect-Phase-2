@@ -6,7 +6,7 @@ execFileSync(process.execPath,['scripts/lesson-165-encoded-verify.mjs'],{stdio:'
 const head=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
 const out='.preview/lesson165-deliverables',browserPath=out+'/lesson-1.6.5-browser-verification.json',browser=j(browserPath),full=j('docs/lesson-165-audio-review.json'),focus=j('docs/lesson-165-audio-focus.json');
 if(browser.source_commit!==head||browser.status!=='passed'||browser.errors.length||browser.actual_case_count!==84)throw Error('Complete 84-case browser verification required');
-if(full.pending_read_tracks.length||full.records.length!==14||full.records.some(r=>!r.model_response||r.model_response.startsWith('Review unavailable')))throw Error('Full actual-audio model reports incomplete');
+if(full.pending_read_tracks.length||full.records.length!==14||full.records.some(r=>!r.model_response?.trim()||r.model_response.startsWith('Review unavailable')))throw Error('Full actual-audio model reports incomplete');
 if(focus.decode_only||focus.prompt_revision!=='gibs-handoff-v2'||focus.records.length!==14||focus.records.some(r=>r.excerpts.length!==4))throw Error('Versioned 56-excerpt focused review required');
 const manifest=j('content/training/day1-basic-competencies/narration.json');
 const story=j('content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json').assets.find(a=>a.id==='communication-handoff-story');
@@ -17,7 +17,7 @@ for(const record of full.records){
 for(const record of focus.records){
  if(record.source_sha256!==sha('public'+record.source_path))throw Error('Focused review source mismatch');
  if(!(record.full_audio_metrics.rms>0.002)||record.zones.some(z=>!(z.rms>0.001)))throw Error('Silent audio or zone');
- for(const excerpt of record.excerpts)if(!excerpt.model_response||excerpt.excerpt_sha256!==sha('.preview/lesson165-excerpts/'+excerpt.file))throw Error('Focused response or exact WAV excerpt missing');
+ for(const excerpt of record.excerpts)if(!excerpt.model_response?.trim()||excerpt.excerpt_sha256!==sha('.preview/lesson165-excerpts/'+excerpt.file))throw Error('Focused response or exact WAV excerpt missing');
 }
 const ciPath=out+'/lesson-165-final-ci.json';
 if(!fs.existsSync(ciPath)||j(ciPath).head_sha!==head||j(ciPath).status!=='passed')throw Error('CI receipt does not match exact head');

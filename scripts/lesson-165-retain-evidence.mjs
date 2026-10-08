@@ -8,12 +8,26 @@ for(const a of origin.raw_artifacts){
  const zip=execFileSync('gh',['api',`repos/jongsky25/BHW-Connect-Phase-2/actions/artifacts/${a.artifact_id}/zip`],{maxBuffer:512*1024*1024});
  if(createHash('sha256').update(zip).digest('hex')!==a.sha256)throw Error('Raw archive hash changed');
  const file=dir+'/artifact.zip';fs.writeFileSync(file,zip);
- execFileSync('python3',['-c',`import zipfile,pathlib,sys
+ execFileSync('python3',['-c',`import zipfile,pathlib,sys,json,hashlib
 p=pathlib.Path(sys.argv[1]);d=p.parent
 with zipfile.ZipFile(p) as z:
  assert len(z.namelist())==len(set(z.namelist())) and z.testzip() is None
  for n in z.namelist():
   assert not n.startswith('/') and '..' not in pathlib.PurePosixPath(n).parts and chr(92) not in n
  z.extractall(d)
+# A complete earlier export can contain a hash-pinned raw archive. Verify and
+# extract its records instead of embedding another ZIP plus duplicate inputs.
+for nested in d.rglob('lesson165-raw-evidence.zip'):
+ receipt=json.loads((nested.parent/'lesson-165-raw-evidence-integrity.json').read_text())
+ assert hashlib.sha256(nested.read_bytes()).hexdigest()==receipt['sha256']
+ with zipfile.ZipFile(nested) as z:
+  assert len(z.namelist())==len(set(z.namelist())) and z.testzip() is None
+  for n in z.namelist():
+   assert not n.startswith('/') and '..' not in pathlib.PurePosixPath(n).parts and chr(92) not in n
+  for record in receipt['files']:
+   content=z.read(record['member'])
+   assert len(content)==record['bytes'] and hashlib.sha256(content).hexdigest()==record['sha256']
+  z.extractall(nested.parent/'verified-records')
+ nested.unlink()
 p.unlink()`,file],{stdio:'inherit'});
 }

@@ -12,6 +12,8 @@ The final downloadable review ZIP contains `lesson-1.6.5-gibs-review.html`, the 
 
 Consult the final verification receipt and current PR checks for actual case counts, encoded durations and exact commit. Technical checks require 12 Read tracks, two shipped AAC reviews, 14 full model reports, 56 exact focused excerpts, 84 desktop/mobile Read/Slides/playback cases, normal disposable-Supabase CI and the complete 78-composition registry at the final SHA. An offline fixture is not an authenticated production session.
 
+Focused models flag possible narrator changes in Filipino meeting/practice and English audience/handoff/meeting/practice excerpts; the full Filipino confirmation review also flags Liza pronunciation. These are unresolved model findings, including conflicting assessments, and are retained rather than presented as cleared.
+
 Human listening in both languages, owner art/package approval and local-policy/SME review remain pending. Inspect the actual audio reports for unresolved pronunciation, negation, timing, clipping or timbre concerns; model analysis never clears a human concern. The source audit labels dialogue, next-day response, cards and screen/facilitation timing as authored adaptations. Verify lawful access, locally approved channels, backup process and urgent assistance locally.
 
 Stop at draft review. Nothing in this PR merges, publishes, applies migrations, loads production content, resets learner progress or changes feature flags. The 1.6.1 approval does not approve this package.

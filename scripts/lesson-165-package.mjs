@@ -21,7 +21,13 @@ for pattern in ['docs/lesson-165-*','scripts/lesson-165-*','scripts/remotion-com
 paths.update([html,r/'content/training/day1-basic-competencies/narration.json',r/'remotion/src/Root.tsx',r/'src/components/elearning/reference-lessons.tsx',r/'content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json'])
 if (r/'lesson-165-published-snapshot.json').exists():paths.add(r/'lesson-165-published-snapshot.json')
 # Raw requests/responses retained in a separate hash-pinned archive; no duplicate full ZIP+inputs artifact.
-raw_paths=sorted(set(p for pattern in ['.preview/lesson165-raw/*','.preview/lesson165-retained-raw/**/*'] for p in r.glob(pattern) if p.is_file()))
+raw_candidates=sorted(set(p for pattern in ['.preview/lesson165-raw/*.json','.preview/lesson165-retained-raw/**/*.json'] for p in r.glob(pattern) if p.is_file()))
+raw_paths=[];seen_raw=set()
+for p in raw_candidates:
+ record=json.loads(p.read_text())
+ if 'request' not in record or 'endpoint' not in record:continue
+ digest=sha(p.read_bytes())
+ if digest not in seen_raw:raw_paths.append(p);seen_raw.add(digest)
 assert raw_paths,'Retained raw model evidence required'
 evidence_dir=r/'.preview/lesson165-evidence-archives';evidence_dir.mkdir(parents=True,exist_ok=True)
 raw_zip=evidence_dir/'lesson165-raw-evidence.zip'

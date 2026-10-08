@@ -34,6 +34,10 @@ jobs:
         working-directory: remotion
       - run: npx remotion browser ensure
         working-directory: remotion
+      - name: Install encoded-media verifier
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
       - name: Retain hash-pinned raw evidence
         env:
           GH_TOKEN: ${{ github.token }}
@@ -64,6 +68,17 @@ jobs:
         run: node scripts/lesson-165-audio-focus.mjs
       - name: Summarize retained full and focused concerns
         run: node scripts/lesson-165-audio-notes.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson165-completed-audio-reviews
+          path: |
+            docs/lesson-165-audio-review.json
+            docs/lesson-165-audio-focus.json
+            docs/lesson-165-audio-review-notes.json
+            .preview/lesson165-raw/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
       - name: Final frozen-source draft review
         env:
           GH_TOKEN: ${{ github.token }}
@@ -98,13 +113,20 @@ jobs:
             docs/lesson-165-media-generation.json
           if-no-files-found: error
           retention-days: 30
+      - name: Export raw evidence once
+        if: always()
+        run: |
+          mkdir -p .preview/lesson165-raw-export
+          if [ -f .preview/lesson165-evidence-archives/lesson165-raw-evidence.zip ]; then
+            cp .preview/lesson165-evidence-archives/* .preview/lesson165-raw-export/
+          elif [ -d .preview/lesson165-raw ]; then
+            cp -a .preview/lesson165-raw/. .preview/lesson165-raw-export/
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: lesson165-raw-evidence
-          path: |
-            .preview/lesson165-raw/
-            .preview/lesson165-evidence-archives/
+          path: .preview/lesson165-raw-export/
           include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 30

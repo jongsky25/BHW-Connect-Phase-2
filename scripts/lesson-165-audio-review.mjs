@@ -39,7 +39,7 @@ function outputText(value){if(typeof value==='string')return value;if(Array.isAr
 const priorPath=path.join(root,"docs/lesson-165-audio-review.json");
 const prior=existsSync(priorPath)?JSON.parse(readFileSync(priorPath,"utf8")):null;
 for(const record of records){
- const reusable=prior?.prompt_revision===promptRevision&&prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response&&!r.model_response.startsWith("Review unavailable"));
+ const reusable=prior?.prompt_revision===promptRevision&&prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response?.trim()&&!r.model_response.startsWith("Review unavailable"));
  if(reusable){report.records.push({...reusable,source_video:record.source_video??null,source_video_sha256:record.source_video_sha256??null,reused_exact_decoded_audio:true});save();console.log("Reused exact-byte review "+record.id);continue;}
  if(!process.env.GEMINI_API_KEY)throw new Error('Gemini credential required for an uncached actual-audio review');
  const prompt=`Analyze the attached actual ${record.language==='fil'?'Filipino (Tagalog)':'Philippine English'} educational narration. First transcribe what you hear completely, without inventing words. Report whether speech is audible throughout, any truncated words or clipped ending, awkward initialism/name pronunciation (Gibs, Liza and BHW), pacing, natural pitch/pace variation and whether attribution, uncertainty, authorized recipient and secure channel, requested versus agreed action, receipt and follow-up have natural expression; note any changed negation, condition or ambiguous number, and any apparent narrator timbre change. Flag concrete timestamps for concerns and uncertainty. Return a JSON object with transcript, speech_present, clipped_ending, delivery, pronunciation_concerns, other_concerns. Do not claim human listening or approval. This audio is fictional training material with no real patient data.`;
@@ -48,7 +48,7 @@ for(const record of records){
   // Build-time review of fictional, admin-authored training media only; follows the existing TTS provider exception. Never learner input or patient data.
   // eslint-disable-next-line no-restricted-syntax
   const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:readFileSync(record.file).toString('base64'),mime_type:record.file.endsWith('.wav')?'audio/wav':'audio/mp3'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
-  if(response.ok){const result=await response.json();reviewed=outputText(result);if(!reviewed)throw new Error('No model review text');break;}
+  if(response.ok){const result=await response.json();reviewed=outputText(result);if(!reviewed.trim())throw new Error('No model review text');break;}
   if(attempt<2&&(response.status===429||response.status>=500)){await new Promise(r=>setTimeout(r,4000*(attempt+1)));continue;}
   reviewed=`Review unavailable: HTTP ${response.status}`;break;
  }

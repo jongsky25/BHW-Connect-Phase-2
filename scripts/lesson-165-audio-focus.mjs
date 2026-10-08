@@ -52,7 +52,7 @@ for(const record of records){
   const old=priorRecord?.excerpts?.find(e=>e.kind===q.kind&&e.excerpt_sha256===excerptHash&&e.start===q.start&&e.end===q.end);
   const excerptSamples=pcm(wav).length/2;
   if(decodeOnly){reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,decoded_sample_count:excerptSamples,model_response:null});save();continue;}
-  if(old?.model_response){const retained={...old};delete retained.reused_exact_encoded_bytes;reviewed.excerpts.push({...retained,review_prompt_revision:retained.review_prompt_revision??prior.prompt_revision,decoded_sample_count:excerptSamples,reused_exact_wav_excerpt:true,reused_same_encoded_source:priorRecord.source_sha256===sourceHash});save();console.log('Reused focused review for exact bytes '+record.id+' '+q.kind);continue;}
+  if(old?.model_response?.trim()){const retained={...old};delete retained.reused_exact_encoded_bytes;reviewed.excerpts.push({...retained,review_prompt_revision:retained.review_prompt_revision??prior.prompt_revision,decoded_sample_count:excerptSamples,reused_exact_wav_excerpt:true,reused_same_encoded_source:priorRecord.source_sha256===sourceHash});save();console.log('Reused focused review for exact bytes '+record.id+' '+q.kind);continue;}
 
   if(!process.env.GEMINI_API_KEY)throw Error('Gemini credential required for an uncached exact WAV excerpt');
   const prompt=`This is ${record.language==='fil'?'Filipino/Tagalog':'Philippine English'} fictional educational audio. The excerpt begins on a measured speech-zone boundary. Transcribe every audible word faithfully, including names and negations. Assess pronunciation of Gibs (gibz) and Liza (LEE-sa), audible speech, pauses, truncation, complete final words and any change in narrator sound. Report timestamps within this excerpt and uncertainty. This request evaluates the sound of a fictional narrated lesson; it asks for no clinical advice or judgment about a person. Do not presume previous analysis. Return JSON with transcript, observations, possible_defects and uncertainty. This is model assessment, not human approval.`;
@@ -66,7 +66,7 @@ for(const record of records){
     throw Error('Focused model review HTTP '+response.status);
   }
   const result=await response.json();
-  const text=(result.steps??[]).filter(s=>s.type==='model_output').flatMap(s=>s.content??[]).filter(c=>c.type==='text').map(c=>c.text).join('\n');if(!text)throw Error('Focused review has no text');
+  const text=(result.steps??[]).filter(s=>s.type==='model_output').flatMap(s=>s.content??[]).filter(c=>c.type==='text').map(c=>c.text).join('\n');if(!text.trim())throw Error('Focused review has no text');
   reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,review_prompt_revision:promptRevision,decoded_sample_count:excerptSamples,expected_context:record.timings.filter(t=>t.end_ms>=q.start*1000&&t.start_ms<=q.end*1000).map(t=>t.text).join(' '),model_response:text});save();console.log('Decoded and focused-reviewed '+record.id+' '+q.kind);
  }
 }

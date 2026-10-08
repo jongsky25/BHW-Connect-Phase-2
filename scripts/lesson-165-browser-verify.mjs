@@ -15,6 +15,9 @@ const save=()=>fs.writeFileSync(dir+'/lesson-1.6.5-browser-verification.json',JS
 try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
   const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));await page.goto('http://127.0.0.1:4176/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
+  const totalSeconds=Object.values(manifest.lessons['communication-handoff'].sections).reduce((sum,tracks)=>sum+tracks[lang].duration_seconds,0);
+  const independentMinutes=Math.ceil(totalSeconds/60+3);
+  assert((await page.locator('main').innerText()).includes(`${independentMinutes}–${independentMinutes+3}`),'Independent estimate must use measured narration');
   const next=lang==='en'?'Next':'Susunod',complete=lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin';
   for(let i=0;i<6;i++){
    const section=lesson.sections[i],slide=mode==='slides';await page.locator('article[data-scene="'+(slide?'slide-':'')+section.id+'"]').waitFor();
