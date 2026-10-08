@@ -1,4 +1,5 @@
 import {BhwSelfManagementStory, calculateBhwSelfManagementMetadata, SELF_MANAGEMENT_FPS, SELF_MANAGEMENT_FALLBACK_DURATION} from "./bhw-self-management/BhwSelfManagementStory";
+import {BhwRightContactStory, calculateBhwRightContactMetadata, RIGHT_CONTACT_FPS, RIGHT_CONTACT_FALLBACK_DURATION} from "./bhw-right-contact/BhwRightContactStory";
 import {BhwTeamworkStory, calculateBhwTeamworkMetadata, TEAMWORK_FPS, TEAMWORK_FALLBACK_DURATION} from "./bhw-teamwork/BhwTeamworkStory";
 import {BhwLocalPartnersStory, calculateBhwLocalPartnersMetadata, LOCAL_PARTNERS_FPS, LOCAL_PARTNERS_FALLBACK_DURATION} from "./bhw-local-partners/BhwLocalPartnersStory";
 import {BhwBarangayPartnersStory, calculateBhwBarangayPartnersMetadata, BARANGAY_PARTNERS_FPS, BARANGAY_PARTNERS_FALLBACK_DURATION} from "./bhw-barangay-partners/BhwBarangayPartnersStory";
@@ -351,6 +352,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`bhw-teamwork-${language}`} id={language === "fil" ? "BhwTeamworkStoryFil" : "BhwTeamworkStoryEn"}
           component={BhwTeamworkStory} calculateMetadata={calculateBhwTeamworkMetadata}
           durationInFrames={TEAMWORK_FALLBACK_DURATION} fps={TEAMWORK_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhw-right-contact-${language}`} id={language === "fil" ? "BhwRightContactStoryFil" : "BhwRightContactStoryEn"}
+          component={BhwRightContactStory} calculateMetadata={calculateBhwRightContactMetadata}
+          durationInFrames={RIGHT_CONTACT_FALLBACK_DURATION} fps={RIGHT_CONTACT_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
       {(["fil", "en"] as const).map((language) => (

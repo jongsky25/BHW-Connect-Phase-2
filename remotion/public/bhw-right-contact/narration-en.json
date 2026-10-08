@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English, as one mature Filipina community health trainer with a warm steady female mid-pitched voice. Use gentle pitch and pace changes for Malou’s contact choices. Slow slightly for official procedure confirmation and do not delay immediate help. All headings, questions, instructions and endings use the same woman narrator. Read the exact words completely, without translation, additions or speaker changes.",
+  "durationSeconds": 53.081,
+  "beats": [
+    {
+      "zone": "classify",
+      "index": 0,
+      "text": "Malou has a report and a health concern. She clarifies the need and urgency before choosing a contact.",
+      "start_ms": 0,
+      "end_ms": 7520
+    },
+    {
+      "zone": "peer",
+      "index": 1,
+      "text": "For routine filing, a competent fellow BHW helps. Malou confirms the official procedure with the supervisor.",
+      "start_ms": 7820,
+      "end_ms": 16060
+    },
+    {
+      "zone": "professional",
+      "index": 2,
+      "text": "For a clinical or uncertain concern, she seeks appropriate authorized professional guidance under the local process.",
+      "start_ms": 16360,
+      "end_ms": 24800
+    },
+    {
+      "zone": "urgent",
+      "index": 3,
+      "text": "Familiarity is not clinical authority. Malou does not delay immediate help while coordinating support.",
+      "start_ms": 25100,
+      "end_ms": 33260
+    },
+    {
+      "zone": "verify",
+      "index": 4,
+      "text": "She verifies the on-duty contact, backup and next action. She shares only necessary information under consent and policy.",
+      "start_ms": 33560,
+      "end_ms": 42960
+    },
+    {
+      "zone": "closing",
+      "index": 5,
+      "text": "Malou chooses the appropriate role, confirms the process and follows up on the result. She does not promise unconfirmed support.",
+      "start_ms": 43260,
+      "end_ms": 53020
+    }
+  ],
+  "audio_sha256": "82b47b2fe79c63dad57782c43b6e6d6133805322d3e09e033e97d0af4ff42141"
+}

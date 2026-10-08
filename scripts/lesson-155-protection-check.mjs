@@ -1,7 +1,7 @@
 // Current local protection audit, independent of released predecessor views.
 import fs from 'node:fs';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
 const sha=b=>createHash('sha256').update(b).digest('hex'),read=p=>fs.readFileSync(p),j=p=>JSON.parse(read(p));
-const baseline=j('docs/lesson-155-baseline.json'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',leaf=base+'lessons/bhw-self-management/';
+const baseline=j('docs/lesson-155-integration-baseline.json'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',leaf=base+'lessons/bhw-self-management/';
 const allowed=new Set([base+'lesson.en.md',base+'lesson.fil.md',base+'qa-entries.json','content/training/day1-basic-competencies/narration.json']);
 const changed=[],unexpected=[],missing=[];
 for(const [p,h]of Object.entries(baseline.file_hashes)){

@@ -2,7 +2,6 @@ import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {approved154HistoricalMapping} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,expect,it} from 'vitest';
-import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import path from 'node:path';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
@@ -15,9 +14,9 @@ import {toWebVtt} from '../lib/webvtt.mjs';
 import {approved153HistoricalMapping} from './lesson-153-release-compat.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),dir=path.join(root,'content/training/day1-basic-competencies/modules/03-polisiya-bhs');
 const lessonDir=path.join(dir,'lessons/bhs-improvement');
-const json=p=>JSON.parse(readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
-const bytes=src=>readFileSync(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
-const source=json(path.join(lessonDir,'lesson.json')),manifest=JSON.parse(beforeProposed155('content/training/day1-basic-competencies/narration.json'));
+const json=p=>JSON.parse(read155(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
+const bytes=src=>read155(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
+const source=json(path.join(lessonDir,'lesson.json')),manifest=json(path.join(root,'content/training/day1-basic-competencies/narration.json'));
 const authored=loadReferenceModule(dir,path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhs-improvement');
 const modules=[{key:'03-polisiya-bhs',lessons:[authored]}];
 const ids=['section-6','factual-concern','one-feasible-proposal','reason-service-checks','responsibility-followup','proposal-check'];
@@ -27,7 +26,7 @@ describe('lesson 1.3.5 one workable proposal',()=>{
   expect(source.sections.map(s=>s.id)).toEqual(ids);expect(authored.revision.slides.map(s=>s.id)).toEqual(ids.map(id=>'slide-'+id));
   expect(source.coverage).toEqual([{id:'m3.competency',read_ids:ids,slide_ids:ids.map(id=>'slide-'+id),source_ids:['m3.competency-source']}]);
   for(const lang of ['fil','en']){
-   const read=parseReferenceRead(readFileSync(path.join(lessonDir,`read.${lang}.md`),'utf8'));expect(read.map(s=>s.id)).toEqual(ids);
+   const read=parseReferenceRead(read155(path.join(lessonDir,`read.${lang}.md`),'utf8'));expect(read.map(s=>s.id)).toEqual(ids);
    for(const [i,s] of read.entries())expect(authored.revision.slides[i][`narration_${lang}`]).toBe(s.body);
    expect(read[0].body).toContain('Mimi');expect(read.map(s=>s.body).join(' ')).not.toMatch(/Corazon|Riza|Vlanche|YAKAP|2021-0486/);
   }
@@ -70,7 +69,7 @@ describe('lesson 1.3.5 one workable proposal',()=>{
    // The 1.4.1 draft adds new narration while preserving the exact old mapping
    // for the still-published revision. Every other sibling remains current.
    if(key==='bhw-teamwork'){approved154HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-local-partners'){approved153HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}
-   else if(key==='bhw-legal-role'||key==='bhw-benefits'||key==='bhw-eligibility'||key==='bhw-accreditation'||key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'){
+   else if(key==='bhw-legal-role'||key==='bhw-benefits'||key==='bhw-eligibility'||key==='bhw-accreditation'||key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'||key==='bhw-right-contact'){
     const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);
     expect(retained).toBeDefined();
     for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);
@@ -86,7 +85,7 @@ describe('lesson 1.3.5 one workable proposal',()=>{
   for(const [src,hash] of Object.entries(baseline.historical_target_hashes))expect(fileHash(src)).toBe(hash);
  });
  it('uses new original owner-approved art with exact prompt/reference and matching animation bytes',()=>{
-  const art=source.assets.find(a=>a.id==='mimi-workable-suggestion');expect(fileHash(art.path)).toBe(art.content_hash);expect(sha(readFileSync(path.join(root,'remotion/public/bhs-improvement/scene.png')))).toBe(art.content_hash);expect(art.review_status).toBe('approved');expect(art.provenance).toContain('Exact prompt:');const approval=json(path.join(root,'docs/lesson-135-owner-approval.json'));expect(approval.authorization).toBe('approved. merge and deploy live');expect(approval.approved_asset_ids).toEqual(['mimi-workable-suggestion','bhs-improvement-story']);for(const media of approval.approved_media)expect(fileHash(media.path)).toBe(media.sha256);expect(art.path).not.toContain('resource-use');for(const s of source.sections)expect(s.asset_ids).toContain(art.id);
+  const art=source.assets.find(a=>a.id==='mimi-workable-suggestion');expect(fileHash(art.path)).toBe(art.content_hash);expect(sha(read155(path.join(root,'remotion/public/bhs-improvement/scene.png')))).toBe(art.content_hash);expect(art.review_status).toBe('approved');expect(art.provenance).toContain('Exact prompt:');const approval=json(path.join(root,'docs/lesson-135-owner-approval.json'));expect(approval.authorization).toBe('approved. merge and deploy live');expect(approval.approved_asset_ids).toEqual(['mimi-workable-suggestion','bhs-improvement-story']);for(const media of approval.approved_media)expect(fileHash(media.path)).toBe(media.sha256);expect(art.path).not.toContain('resource-use');for(const s of source.sections)expect(s.asset_ids).toContain(art.id);
  });
  it('has two measured six-beat stories with exact media hashes and VTT text/timing',()=>{
   const asset=source.assets.find(a=>a.id===source.featured_asset_id);expect(asset).toBeDefined();expect(asset.review_status).toBe('approved');expect(fileHash(asset.path)).toBe(asset.content_hash);
@@ -95,7 +94,9 @@ describe('lesson 1.3.5 one workable proposal',()=>{
   }
  });
  it('has twelve bilingual facilitator headings and one observation indicator with supported re-practice',()=>{
-  for(const lang of ['fil','en']){const notes=readFileSync(path.join(lessonDir,`facilitator.${lang}.md`),'utf8');expect([...notes.matchAll(/^## \[([^\]]+)\]/gm)].map(m=>m[1])).toEqual(FACILITATOR_SECTION_IDS);expect(notes).toContain('Card A');expect(notes).toContain('Card B');expect(notes).toContain('40');expect(notes).toContain('follow-up');}
+  for(const lang of ['fil','en']){const notes=read155(path.join(lessonDir,`facilitator.${lang}.md`),'utf8');expect([...notes.matchAll(/^## \[([^\]]+)\]/gm)].map(m=>m[1])).toEqual(FACILITATOR_SECTION_IDS);expect(notes).toContain('Card A');expect(notes).toContain('Card B');expect(notes).toContain('40');expect(notes).toContain('follow-up');}
   expect(authored.notes.observation_indicators).toHaveLength(1);const i=authored.notes.observation_indicators[0];expect(i.objective_index).toBe(0);expect(i.not_yet_en).toContain('Implements before permission');expect(Object.keys(i.levels)).toHaveLength(6);
  });
 });
+
+function read155(p,encoding){const bytes=beforeProposed155(path.relative(root,p));return encoding?bytes.toString(encoding):bytes;}

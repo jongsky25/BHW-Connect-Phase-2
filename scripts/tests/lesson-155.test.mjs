@@ -7,10 +7,11 @@ import {planReferenceNarration,mp3AudioFrames} from '../lib/reference-narration.
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',leaf=base+'lessons/bhw-self-management/';
 const file=p=>fs.readFileSync(root+'/'+p),j=p=>JSON.parse(file(p)),sha=b=>createHash('sha256').update(b).digest('hex');
+const integration=j('docs/lesson-155-integration-baseline.json');
 const baseline=j('docs/lesson-155-baseline.json'),source=j(leaf+'lesson.json');
 const trainingModule=loadReferenceModule(root+'/'+base,root+'/public'),lesson=trainingModule.lessons.find(l=>l.manifest.lesson_key==='bhw-self-management');
 const ids=['section-9','self-reliability','self-stress-time','self-trust-honesty','self-adaptability','section-10','self-application-check'];
-const before=p=>{const bytes=beforeProposed155(p);expect(sha(bytes),p+' predecessor').toBe(baseline.file_hashes[p]);return bytes;};
+const before=p=>{const bytes=beforeProposed155(p);expect(sha(bytes),p+' predecessor').toBe(integration.file_hashes[p]);return bytes;};
 describe('lesson 1.5.5 self-management content and protection',()=>{
  it('keeps identity and substantive original anchors, complete bilingual section and slide coverage',()=>{
   expect(source.manifest).toEqual(baseline.manifest);expect(lesson.revision.read_sections.map(s=>s.id)).toEqual(ids);
@@ -48,7 +49,7 @@ describe('lesson 1.5.5 self-management content and protection',()=>{
  });
  it('preserves every earlier module lesson, public byte and UUID lock',()=>{
   const allowed=new Set([base+'lesson.en.md',base+'lesson.fil.md',base+'qa-entries.json','content/training/day1-basic-competencies/narration.json']);
-  for(const [p,h]of Object.entries(baseline.file_hashes))if(!p.startsWith(leaf)&&!allowed.has(p))expect(sha(file(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(integration.file_hashes))if(!p.startsWith(leaf)&&!allowed.has(p))expect(sha(file(p)),p).toBe(h);
  },30000);
  it('changes only the two self-management shared passages and chatbot answers',()=>{
   const split=s=>s.split(/(?=^## )/m);

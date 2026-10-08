@@ -2,7 +2,6 @@ import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {approved154HistoricalMapping,approved154HistoryPrefix} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,expect,it} from 'vitest';
-import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
@@ -15,16 +14,16 @@ import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts
 import {toWebVtt} from '../lib/webvtt.mjs';
 import {approved153HistoricalMapping,approved153HistoryPrefix,withoutApproved153Registry} from './lesson-153-release-compat.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),dir=path.join(root,'content/training/day1-basic-competencies/modules/04-ra7883'),leaf=path.join(dir,'lessons/bhw-accreditation');
-const json=p=>JSON.parse(readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
-const bytes=src=>readFileSync(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
-const source=json(path.join(leaf,'lesson.json')),manifest=JSON.parse(beforeProposed155('content/training/day1-basic-competencies/narration.json'));
+const json=p=>JSON.parse(read155(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
+const bytes=src=>read155(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
+const source=json(path.join(leaf,'lesson.json')),manifest=json(path.join(root,'content/training/day1-basic-competencies/narration.json'));
 const baseline=json(path.join(root,'docs/lesson-144-start-baseline.json')),audioBaseline=json(path.join(root,'docs/lesson-144-narration-baseline.json'));
 const authored=loadReferenceModule(dir,path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhw-accreditation'),modules=[{key:'04-ra7883',lessons:[authored]}];
 const ids=['accreditation-question','section-5','roles-and-records','fictional-process-cards','accreditation-follow-up','accreditation-application-check'];
 describe('lesson 1.4.4 Demi accreditation release',()=>{
  it('preserves the complete immutable manifest and full bilingual Read/Slide parity',()=>{
   expect(source.manifest).toEqual(baseline.immutable_manifest);expect(source.sections.map(s=>s.id)).toEqual(ids);expect(authored.revision.slides.map(s=>s.id)).toEqual(ids.map(id=>'slide-'+id));
-  for(const lang of ['fil','en']){const read=parseReferenceRead(readFileSync(path.join(leaf,`read.${lang}.md`),'utf8'));expect(read.map(s=>s.id)).toEqual(ids);for(const [i,s]of read.entries())expect(authored.revision.slides[i][`narration_${lang}`]).toBe(s.body);expect(read[0].body).toContain('Demi');}
+  for(const lang of ['fil','en']){const read=parseReferenceRead(read155(path.join(leaf,`read.${lang}.md`),'utf8'));expect(read.map(s=>s.id)).toEqual(ids);for(const [i,s]of read.entries())expect(authored.revision.slides[i][`narration_${lang}`]).toBe(s.body);expect(read[0].body).toContain('Demi');}
  });
  it('retains substantive old-ID resume and completion UUID independently of optional story',()=>{
   const lesson={...authored.manifest,id:'648d2168-74dd-4451-958c-e4e5d8724a17',revision:{...authored.revision,id:'new-draft'}};
@@ -47,7 +46,7 @@ describe('lesson 1.4.4 Demi accreditation release',()=>{
   for(const options of [{},{provider:'gemini'}]){const plan=planReferenceNarration(modules,manifest,fileHash,options);expect(plan).toHaveLength(12);for(const i of plan){expect(i.action).toBe('skip');expect(i.voice).toBe('gemini:gemini-3.8-flash-tts:Kore');expect(i.existing.timings.map(({zone,index,text})=>({zone,index,text}))).toEqual(i.zones);const duration=mp3AudioFrames(bytes(i.src)).reduce((n,f)=>n+f.samples/f.sampleRate,0);expect(i.existing.duration_seconds).toBeCloseTo(duration,3);for(const t of i.existing.timings)expect(t.end_ms).toBeGreaterThan(t.start_ms);expect(i.existing.timings.at(-1).end_ms).toBeLessThanOrEqual(duration*1000+1);}}
  });
  it('preserves all 161 sibling mappings, original histories and every original audio byte',()=>{
-  for(const [key,hash]of Object.entries(audioBaseline.sibling_mapping_hashes)){if(key==='bhw-teamwork'){approved154HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-local-partners'){approved153HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'){const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();for(const langs of Object.values(retained.sections))for(const track of Object.values(langs))expect(fileHash(track.src)).toBe(track.sha256);}else expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);}
+  for(const [key,hash]of Object.entries(audioBaseline.sibling_mapping_hashes)){if(key==='bhw-teamwork'){approved154HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-local-partners'){approved153HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'||key==='bhw-right-contact'){const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();for(const langs of Object.values(retained.sections))for(const track of Object.values(langs))expect(fileHash(track.src)).toBe(track.sha256);}else expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);}
   for(const [key,hash]of Object.entries(audioBaseline.original_non_target_history_hashes)){if(key==='bhw-teamwork'){approved154HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-teamwork')approved154HistoryPrefix(manifest);else if(key==='bhw-local-partners')approved153HistoryPrefix(manifest);else expect(sha(JSON.stringify(manifest.history[key]))).toBe(hash);}
   expect(manifest.history['bhw-accreditation']).toContainEqual(audioBaseline.target);
   for(const [src,hash]of Object.entries(audioBaseline.all_original_track_hashes))expect(fileHash(src)).toBe(hash);
@@ -61,15 +60,15 @@ describe('lesson 1.4.4 Demi accreditation release',()=>{
   for(const m of baseline.approved141_142_143_media)expect(fileHash(m.path)).toBe(m.sha256);
  });
  it('uses genuinely new owner-approved art with the approved Demi identity and identical animation bytes',()=>{
-  const art=source.assets.find(a=>a.id==='demi-accreditation-question');expect(fileHash(art.path)).toBe(art.content_hash);expect(sha(readFileSync(path.join(root,'remotion/public/bhw-accreditation/scene.png')))).toBe(art.content_hash);expect(art.review_status).toBe('approved');const approval=json(path.join(root,'docs/lesson-144-owner-approval.json'));expect(approval.authorization).toBe('approved. merge and deploy to live');expect(approval.reviewed_head).toBe('530f8431b003c437d733e0806bc1cabdac657f9b');expect(approval.approved_asset_ids).toEqual(['demi-accreditation-question','bhw-accreditation-story']);expect(approval.approved_media).toHaveLength(19);for(const m of approval.approved_media)expect(fileHash(m.path)).toBe(m.sha256);
+  const art=source.assets.find(a=>a.id==='demi-accreditation-question');expect(fileHash(art.path)).toBe(art.content_hash);expect(sha(read155(path.join(root,'remotion/public/bhw-accreditation/scene.png')))).toBe(art.content_hash);expect(art.review_status).toBe('approved');const approval=json(path.join(root,'docs/lesson-144-owner-approval.json'));expect(approval.authorization).toBe('approved. merge and deploy to live');expect(approval.reviewed_head).toBe('530f8431b003c437d733e0806bc1cabdac657f9b');expect(approval.approved_asset_ids).toEqual(['demi-accreditation-question','bhw-accreditation-story']);expect(approval.approved_media).toHaveLength(19);for(const m of approval.approved_media)expect(fileHash(m.path)).toBe(m.sha256);
   const p=json(path.join(root,'docs/lesson-144-art-provenance.json'));expect(p.input_identity.sha256).toBe('032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2');expect(p.output.sha256).toBe(art.content_hash);expect(p.output.sha256).not.toBe(p.input_identity.sha256);expect(p.model_id).toBeNull();
  });
  it('ships two measured six-beat captioned stories with hash protection and complete ending hold',()=>{
   const asset=source.assets.find(a=>a.id===source.featured_asset_id);expect(asset.review_status).toBe('approved');expect(fileHash(asset.path)).toBe(asset.content_hash);
-  for(const lang of ['fil','en']){const v=asset.videos[lang];for(const m of [v,v.poster,v.captions])expect(fileHash(m.path)).toBe(m.content_hash);const t=json(path.join(root,`remotion/public/bhw-accreditation/narration-${lang}.json`));expect(t).toMatchObject({language:lang,provider:'gemini',model:'gemini-3.8-flash-tts',voice:'Kore'});expect(t.beats.map(b=>b.zone)).toEqual(BHW_ACCREDITATION_BEATS.map(b=>b.id));expect(t.beats.map(b=>b.text)).toEqual(BHW_ACCREDITATION_BEATS.map(b=>b[lang]));expect(bytes(v.captions.path).toString('utf8').replaceAll('\r','')).toBe(toWebVtt(t));expect(v.duration_s).toBeGreaterThan(t.durationSeconds);expect(v.duration_s).toBeLessThanOrEqual(90);expect(sha(readFileSync(path.join(root,`remotion/public/bhw-accreditation/narration-${lang}.mp3`)))).toBe(t.audio_sha256);}
+  for(const lang of ['fil','en']){const v=asset.videos[lang];for(const m of [v,v.poster,v.captions])expect(fileHash(m.path)).toBe(m.content_hash);const t=json(path.join(root,`remotion/public/bhw-accreditation/narration-${lang}.json`));expect(t).toMatchObject({language:lang,provider:'gemini',model:'gemini-3.8-flash-tts',voice:'Kore'});expect(t.beats.map(b=>b.zone)).toEqual(BHW_ACCREDITATION_BEATS.map(b=>b.id));expect(t.beats.map(b=>b.text)).toEqual(BHW_ACCREDITATION_BEATS.map(b=>b[lang]));expect(bytes(v.captions.path).toString('utf8').replaceAll('\r','')).toBe(toWebVtt(t));expect(v.duration_s).toBeGreaterThan(t.durationSeconds);expect(v.duration_s).toBeLessThanOrEqual(90);expect(sha(read155(path.join(root,`remotion/public/bhw-accreditation/narration-${lang}.mp3`)))).toBe(t.audio_sha256);}
  });
  it('provides twelve facilitator headings and one six-level single-objective indicator',()=>{
-  for(const lang of ['fil','en']){const notes=readFileSync(path.join(leaf,`facilitator.${lang}.md`),'utf8');expect([...notes.matchAll(/^## \[([^\]]+)\]/gm)].map(m=>m[1])).toEqual(FACILITATOR_SECTION_IDS);for(const card of ['Card A','Card B','Card C'])expect(notes).toContain(card);expect(notes).toContain('30');expect(notes).toContain('180');}
+  for(const lang of ['fil','en']){const notes=read155(path.join(leaf,`facilitator.${lang}.md`),'utf8');expect([...notes.matchAll(/^## \[([^\]]+)\]/gm)].map(m=>m[1])).toEqual(FACILITATOR_SECTION_IDS);for(const card of ['Card A','Card B','Card C'])expect(notes).toContain(card);expect(notes).toContain('30');expect(notes).toContain('180');}
   expect(authored.notes.observation_indicators).toHaveLength(1);expect(authored.notes.observation_indicators[0].objective_index).toBe(0);expect(Object.keys(authored.notes.observation_indicators[0].levels)).toHaveLength(6);
  });
  it('retains every non-target shared QA/activity row and the complete non-target module guide text',()=>{
@@ -77,7 +76,9 @@ describe('lesson 1.4.4 Demi accreditation release',()=>{
   const activity=json(path.join(dir,'activities.json'));const rows=Array.isArray(activity)?activity:activity.activities??activity.entries;expect(rows.map(r=>r.id).sort()).toEqual(Object.keys(baseline.shared_all_activity_hashes).sort());for(const row of rows)if(row.id!=='form-and-follow-up')expect(sha(JSON.stringify(row))).toBe(baseline.shared_all_activity_hashes[row.id]);
   for(const p of json(path.join(root,'docs/lesson-144-shared-scope-baseline.json')).protectedGuides){
    const mask=value=>value.replaceAll('\r\n','\n').replace('original PDF 25 / printed 16','original PDF 23 / printed 16').replace(/^5\. [\s\S]*?(?=^6\. )/m,'').replace(/^6\. [\s\S]*?(?=^## )/m,'').replace(/^- "(?:Have you ever waited a long time on a process with no follow-up\?\n  What happened\?|May pagkakataon na ba kayong naghintay nang matagal sa isang\n  proseso nang walang follow-up\? Ano ang nangyari\?|In Demi’s fictional case, what is known, what is unknown and what next-contact question fits\?|Sa fictional case ni Demi, ano ang alam, ano ang unknown at anong next-contact question ang angkop\?)"$/m,'').split('\n3. **Lesson 1.4.4:')[0];
-   expect(mask(readFileSync(path.join(dir,`facilitator-notes.${p.language}.md`),'utf8'))).toBe(mask(p.original_non_target_text));
+   expect(mask(read155(path.join(dir,`facilitator-notes.${p.language}.md`),'utf8'))).toBe(mask(p.original_non_target_text));
   }
  });
 });
+
+function read155(p,encoding){const bytes=beforeProposed155(path.relative(root,p));return encoding?bytes.toString(encoding):bytes;}

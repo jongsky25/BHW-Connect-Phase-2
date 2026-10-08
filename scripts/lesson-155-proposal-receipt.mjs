@@ -1,6 +1,6 @@
 // Pin a reviewable draft; never creates owner approval or changes historical receipts.
 import fs from 'node:fs';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
-const b=JSON.parse(fs.readFileSync('docs/lesson-155-baseline.json','utf8'));
+const b=JSON.parse(fs.readFileSync('docs/lesson-155-integration-baseline.json','utf8'));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const changed={};
 const paths=[...['lesson.json','slides.json','read.fil.md','read.en.md','facilitator.fil.md','facilitator.en.md','competency.json'].map(p=>'content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/'+p),...['lesson.en.md','lesson.fil.md','qa-entries.json'].map(p=>'content/training/day1-basic-competencies/modules/05-bhw-at-barangay/'+p),'content/training/day1-basic-competencies/narration.json','scripts/lib/reference-narration.mjs','scripts/lib/tts-providers/gemini.mjs','remotion/src/Root.tsx','src/components/elearning/reference-lessons.tsx'];

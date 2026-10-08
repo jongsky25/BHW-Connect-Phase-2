@@ -9,7 +9,7 @@ import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts
 const root=path.resolve(import.meta.dirname,'../..');
 const base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay';
 const leaf=`${base}/lessons/bhw-local-partners`;
-const file=p=>beforeProposed155(p);
+const file=p=>read155(path.join(root,p));
 const json=p=>JSON.parse(file(p));
 const lesson=json(`${leaf}/lesson.json`);
 const slides=json(`${leaf}/slides.json`);
@@ -73,3 +73,5 @@ describe('lesson 1.5.3 content draft',()=>{
   expect(createHash('sha256').update(JSON.stringify(untouched)).digest('hex')).toBe('c27c65e14e9c328d93b5e49ea8f585710e801d357a31ae87cf33c7c207f688ae');
  });
 });
+
+function read155(p,encoding){const bytes=beforeProposed155(path.relative(root,p));return encoding?bytes.toString(encoding):bytes;}

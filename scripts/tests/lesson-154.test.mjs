@@ -1,4 +1,5 @@
 import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
+import {approved156Path,rightContactLeaf} from './lesson-156-release-compat.mjs';
 import {approved153Path,localPartnersLeaf,withoutApproved153Registry} from './lesson-153-release-compat.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
@@ -7,7 +8,7 @@ import {loadReferenceModule,FACILITATOR_SECTION_IDS} from '../lib/reference-cont
 import {planReferenceNarration,mp3AudioFrames} from '../lib/reference-narration.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',leaf=base+'lessons/bhw-teamwork/';
-const file=p=>beforeProposed155(p),j=p=>JSON.parse(file(p)),sha=b=>createHash('sha256').update(b).digest('hex'),hash=p=>sha(file('public'+p));
+const file=p=>read155(root+'/'+p),j=p=>JSON.parse(file(p)),sha=b=>createHash('sha256').update(b).digest('hex'),hash=p=>sha(file('public'+p));
 const b=j('docs/lesson-154-current-baseline.json'),source=j(leaf+'lesson.json'),mf=j('content/training/day1-basic-competencies/narration.json');
 const lesson=loadReferenceModule(root+'/'+base,root+'/public').lessons.find(l=>l.manifest.lesson_key==='bhw-teamwork');
 describe('lesson 1.5.4 teamwork and protected release checks',()=>{
@@ -33,13 +34,13 @@ describe('lesson 1.5.4 teamwork and protected release checks',()=>{
   const indicators=j(leaf+'competency.json').observation_indicators;expect(indicators).toHaveLength(1);expect(indicators[0].objective_index).toBe(0);expect(Object.keys(indicators[0].levels)).toHaveLength(6);
  });
  it('preserves every sibling source, prior public byte and approved media',()=>{
-  for(const [p,h]of Object.entries(b.same_module_protected_hashes))if(p.startsWith(localPartnersLeaf))approved153Path(p);else expect(sha(file(p))).toBe(h);
+  for(const [p,h]of Object.entries(b.same_module_protected_hashes))if(p.startsWith(rightContactLeaf))approved156Path(p);else if(p.startsWith(localPartnersLeaf))approved153Path(p);else expect(sha(file(p))).toBe(h);
   for(const [p,h]of Object.entries(b.tracked_file_hashes).filter(([p])=>p.startsWith('public/')))expect(sha(file(p))).toBe(h);
   for(const a of b.approved_protected_media)expect(hash(a.path)).toBe(a.sha256);
  },30000);
  it('keeps all non-target narration and exact old target selection',()=>{
-  for(const [k,v]of Object.entries(b.narration_manifest.lessons))if(k==='bhw-local-partners'){expect(mf.history[k]).toContainEqual(v);approved153Path('content/training/day1-basic-competencies/narration.json');}else if(k!=='bhw-teamwork')expect(mf.lessons[k]).toEqual(v);
-  for(const [k,v]of Object.entries(b.narration_manifest.history??{}))expect(k==='bhw-teamwork'||k==='bhw-local-partners'?mf.history[k].slice(0,v.length):mf.history[k]).toEqual(v);
+  for(const [k,v]of Object.entries(b.narration_manifest.lessons))if(k==='bhw-right-contact'){expect(mf.history[k]).toContainEqual(v);approved156Path('content/training/day1-basic-competencies/narration.json');}else if(k==='bhw-local-partners'){expect(mf.history[k]).toContainEqual(v);approved153Path('content/training/day1-basic-competencies/narration.json');}else if(k!=='bhw-teamwork')expect(mf.lessons[k]).toEqual(v);
+  for(const [k,v]of Object.entries(b.narration_manifest.history??{}))expect(k==='bhw-teamwork'||k==='bhw-local-partners'||k==='bhw-right-contact'?mf.history[k].slice(0,v.length):mf.history[k]).toEqual(v);
   expect(mf.history['bhw-teamwork']).toContainEqual(b.narration_manifest.lessons['bhw-teamwork']);
   const old=b.published_snapshot.rows.find(r=>r.lesson.lesson_key==='bhw-teamwork').revision;
   for(const lang of ['fil','en']){const selected=narrationForLesson(mf,'bhw-teamwork',lang,old.read_sections);expect(Object.keys(selected)).toEqual(['section-8']);expect(selected['section-8'].src).toBe(b.narration_manifest.lessons['bhw-teamwork'].sections['section-8'][lang].src);}
@@ -53,3 +54,5 @@ describe('lesson 1.5.4 teamwork and protected release checks',()=>{
   for(const lang of ['fil','en'])expect(Object.keys(narrationForLesson(mf,'bhw-teamwork',lang,lesson.revision.read_sections))).toHaveLength(6);
  });
 });
+
+function read155(p,encoding){const bytes=beforeProposed155(path.relative(root,p));return encoding?bytes.toString(encoding):bytes;}
