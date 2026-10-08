@@ -12,6 +12,9 @@ Suggested next-chat instruction:
 
 Implement the complete bilingual draft when asked to continue. The 1.6.1 approval does not approve future 1.6.2 teaching, new media or publication. Keep the PR draft until the owner approves its own exact package. Do not merge, publish, reset progress, change flags, apply migrations or bulk-load the module as part of draft preparation.
 
+
+Publication, all 63 production media checks, five exact revision/private-guide comparisons and six protected neighboring records passed. The final authenticated browser smoke was blocked by the loader account's existing required-password-change screen; production browser rendering was not verified in this chat. [The retained release artifact](https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/37748318741/artifacts/11537610169) includes both the successful before/after comparisons and that limitation. Respect the account gate; use authorized stable fixtures for any later production UI check.
+
 ## Fixed baseline and scope
 
 Work in `content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/`. Read [CLAUDE.md](../CLAUDE.md), [the session agreement](session-handoff.md), [the deploy runbook](deploy-runbook.md), and [the 1.6.1 review record](lesson-161-draft-review.md).
