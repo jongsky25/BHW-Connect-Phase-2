@@ -1,0 +1,138 @@
+name: Lesson 1.6.2 draft evidence and media
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson162-media.yml'
+      - 'scripts/lesson-162-*'
+      - 'scripts/tests/lesson-162*'
+      - 'scripts/lib/communication-clarify-voice.mjs'
+      - 'scripts/remotion-communication-clarify-narrate.mjs'
+      - 'docs/lesson-162-*'
+      - 'content/training/day1-basic-competencies/narration.json'
+      - 'content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/**'
+      - 'remotion/src/communication-clarify/**'
+      - 'remotion/public/communication-clarify/**'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson162-media-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Retain previous raw requests, responses and failed attempts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-162-retain-evidence.mjs
+      - name: Bounded read-only published-state snapshot
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-162-published-snapshot.mjs
+      - name: Generate only target draft media, retaining earlier bytes and selections
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON162_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-162-record-fetch.mjs'
+        run: node scripts/lesson-162-media-build.mjs
+      - name: Pin exact scoped source/media successor
+        if: always()
+        run: node scripts/lesson-162-pin-proposal.mjs
+      - name: Verify measured media and protected baseline
+        run: node scripts/lesson-162-media-verify.mjs
+      - name: Full model review of twelve Read tracks and both shipped AAC stories
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON162_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-162-record-fetch.mjs'
+        run: node scripts/lesson-162-audio-review.mjs
+      - name: Fifty-six focused reviews with exact WAV excerpt hashes
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON162_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-162-record-fetch.mjs'
+        run: node scripts/lesson-162-audio-focus.mjs
+      - run: node scripts/lesson-162-audio-notes.mjs
+      - name: Retrieve and hash-verify original source excerpts
+        run: |
+          python3 -m pip install PyMuPDF==1.26.6
+          python3 scripts/lesson-162-source-evidence.py
+      - run: node scripts/lesson-162-review-build.mjs
+      - run: node scripts/lesson-162-browser-verify.mjs
+      - run: node scripts/lesson-162-print-kit.mjs
+      - name: Require selected media/source already committed before final packaging
+        id: frozen
+        shell: bash
+        run: |
+          if git diff --quiet -- content/training/day1-basic-competencies/narration.json content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify remotion/src/communication-clarify remotion/src/Root.tsx; then
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo 'Generated source/media must be imported, reviewed and committed before exact-head CI and packaging.'
+          fi
+      - name: Wait for normal CI and the entire 78-composition registry at this SHA
+        if: steps.frozen.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-162-wait-ci.mjs
+      - name: Complete exact-head verification and integrity-checked ZIP
+        if: steps.frozen.outputs.ready == 'true'
+        run: |
+          node scripts/lesson-162-review-verify.mjs
+          python3 scripts/lesson-162-package.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson162-generated-inputs
+          path: |
+            lesson-162-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/
+            public/training/audio/06-komunikasyon/communication-clarify/
+            public/training/bhw-1-6/communication-clarify-*
+            remotion/public/communication-clarify/
+            docs/lesson-162-*.json
+          include-hidden-files: true
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson162-raw-audio-evidence
+          path: |
+            .preview/lesson162-raw/
+            .preview/lesson162-excerpts/
+            .preview/lesson162-decoded/
+            .preview/lesson162-retained/
+          include-hidden-files: true
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson162-offline-review
+          path: |
+            .preview/lesson162-deliverables/lesson-1.6.2-gibs-review.zip
+            .preview/lesson162-deliverables/lesson-162-package-integrity.json
+            .preview/lesson162-deliverables/*.png
+            .preview/lesson162-deliverables/*verification.json
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30
