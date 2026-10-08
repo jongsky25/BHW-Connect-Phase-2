@@ -1,0 +1,157 @@
+{
+  "generated_date": "2026-10-08T09:33:56.429Z",
+  "source_commit": "64909b0077326fe71823853857e8e67c8a860e6a",
+  "owner_review": "pending",
+  "render_input_sha256": "22253a034b5d7bc5d50b53446d42c9d078e316f4c1b4e12eea9f94f9662a8c42",
+  "render_cached": true,
+  "render_dependency_audit": {
+    "method": "Proven identical original render inputs and registry from recorded source commit; extended dependency key without regenerating or changing media.",
+    "previous_render_input_sha256": "89a3c8430598c76fd0b42dddb4f69b240183f0411d4772944a0edcd0d85fcb49",
+    "registry_sha256": "5a27903d461e78c19df83358a54caf3f116042023555df19f514e175369f691a",
+    "source_commit": "64909b0077326fe71823853857e8e67c8a860e6a"
+  },
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 79.647,
+      "beats": [
+        {
+          "zone": "teach-back",
+          "index": 0,
+          "text": "Si Gibs ay nakikinig kay Liza. Mahirap pumunta dahil walang magbabantay sa anak. Isang hakbang muna: magtanong sa midwife tungkol sa iskedyul. Walang pangakong appointment.",
+          "start_ms": 0,
+          "end_ms": 11200
+        },
+        {
+          "zone": "family-planning",
+          "index": 1,
+          "text": "Kay Jo, pakinggan ang takot at igalang ang pagpili. Kung gusto niya, alamin sa health team ang kwalipikadong contact. Hindi si Gibs ang pipili ng paraan.",
+          "start_ms": 11500,
+          "end_ms": 22540
+        },
+        {
+          "zone": "distress",
+          "index": 2,
+          "text": "Kay Ben, makinig nang walang diagnosis. Alamin ang kwalipikadong contact; hindi pa kumpirmado ang oras. Sa tunay na agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.",
+          "start_ms": 22840,
+          "end_ms": 36120
+        },
+        {
+          "zone": "smoking",
+          "index": 3,
+          "text": "Kay Ramon, humingi ng pahintulot at pakinggan ang layunin. Hindi magbibigay o pipili ng gamot si Gibs. Alamin muna ang contact sa health team at suriin ang pagkaunawa.",
+          "start_ms": 36420,
+          "end_ms": 47980
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Sa triad, lahat ay susubok bilang BHW. Ipasabi ang hakbang sa sariling salita. Ayusin ang hindi malinaw at mag-check muli. Peer feedback ay pagsasanay, hindi facilitator grade.",
+          "start_ms": 48280,
+          "end_ms": 61480
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "“May appointment na ako bukas?” tanong ni Liza. “Hindi pa. Magtatanong muna tungkol sa iskedyul,” paglilinaw ni Gibs. Sa recheck, sagot ni Liza, “Magtatanong muna; wala pang appointment.” “Tama, iyon muna,” tugon ni Gibs.",
+          "start_ms": 61780,
+          "end_ms": 79580
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-explain-gemini-fil-2237c650082f.mp4",
+        "content_hash": "2237c650082f501c4acce563cbb415eac0e61a29ed3bfbd6707f294d35c48738",
+        "duration_s": 81,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-explain-gemini-fil-c6ac6356b101.vtt",
+          "content_hash": "c6ac6356b1010d59a8c249e01c399dba0424df1c15011fa2293df40743de887f"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-explain-gemini-fil-4d1b8e88c0ec-poster.jpg",
+          "content_hash": "4d1b8e88c0ec5d714fb431cc3bbda1505d496a013b8cf08bf04ec548d41c1395"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-explain-gemini-fil-4d1b8e88c0ec-poster.jpg",
+        "content_hash": "4d1b8e88c0ec5d714fb431cc3bbda1505d496a013b8cf08bf04ec548d41c1395"
+      },
+      "render_reused_exact_input_hash": true
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 72.647,
+      "beats": [
+        {
+          "zone": "teach-back",
+          "index": 0,
+          "text": "Gibs hears Liza’s childcare concern. One first step: ask the midwife about scheduling. No appointment is promised.",
+          "start_ms": 0,
+          "end_ms": 8640
+        },
+        {
+          "zone": "family-planning",
+          "index": 1,
+          "text": "With Jo, hear her concern and respect choice. If she wants, identify a qualified contact through the health team. Gibs does not choose a method.",
+          "start_ms": 8940,
+          "end_ms": 19660
+        },
+        {
+          "zone": "distress",
+          "index": 2,
+          "text": "With Ben, listen without diagnosing. Identify a qualified contact; the time is unconfirmed. In real immediate danger, do not delay help for an ordinary interview.",
+          "start_ms": 19960,
+          "end_ms": 31480
+        },
+        {
+          "zone": "smoking",
+          "index": 3,
+          "text": "With Ramon, ask permission and hear his goal. Gibs does not give or choose medicine. First identify the health-team contact and check understanding.",
+          "start_ms": 31780,
+          "end_ms": 43300
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "In triads, everyone tries the BHW role. Ask for the step in their own words. Repair misunderstanding and recheck. Peer feedback is practice, not a facilitator grade.",
+          "start_ms": 43600,
+          "end_ms": 56440
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "“Do I have an appointment tomorrow?” Liza asks. “Not yet. First we will ask about scheduling,” Gibs clarifies. On recheck, Liza says, “Ask first; no appointment yet.” “Yes, that is the first step,” Gibs confirms.",
+          "start_ms": 56740,
+          "end_ms": 72580
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-explain-gemini-en-fab81f58fa43.mp4",
+        "content_hash": "fab81f58fa43760455892ce3788239d1772bef029d48c950409f516b0d499fde",
+        "duration_s": 74,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-explain-gemini-en-13716ccf536e.vtt",
+          "content_hash": "13716ccf536e0aeaeee30c65e8f2fb1f1211f7408ff0986d02567d5e044b9e82"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-explain-gemini-en-33ef41505cda-poster.jpg",
+          "content_hash": "33ef41505cda6b50419eac3ff7636c56b2e0911ef5e75a7ff1f5e29a25b1072d"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-explain-gemini-en-33ef41505cda-poster.jpg",
+        "content_hash": "33ef41505cda6b50419eac3ff7636c56b2e0911ef5e75a7ff1f5e29a25b1072d"
+      },
+      "render_reused_exact_input_hash": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural Filipino (Tagalog) as one continuous adult Filipina trainer, Kore, in a settled warm feminine mid-register. Read every heading, sentence, quotation and ending in this identical narrator voice without acting out Gibs or Liza. Use gentle instructional pauses, empathy and clear emphasis on negation and unconfirmed plans. Speech-only spellings Gibz and Lee-sah represent Gibs and Liza. Pronounce Jo as Joe, Ben as Ben and Ramon as rah-MON. Preserve every supplied word and condition, complete the ending, and do not translate, paraphrase or add words. Teach-back delivery revision 1.",
+  "durationSeconds": 79.647,
+  "beats": [
+    {
+      "zone": "teach-back",
+      "index": 0,
+      "text": "Si Gibs ay nakikinig kay Liza. Mahirap pumunta dahil walang magbabantay sa anak. Isang hakbang muna: magtanong sa midwife tungkol sa iskedyul. Walang pangakong appointment.",
+      "start_ms": 0,
+      "end_ms": 11200
+    },
+    {
+      "zone": "family-planning",
+      "index": 1,
+      "text": "Kay Jo, pakinggan ang takot at igalang ang pagpili. Kung gusto niya, alamin sa health team ang kwalipikadong contact. Hindi si Gibs ang pipili ng paraan.",
+      "start_ms": 11500,
+      "end_ms": 22540
+    },
+    {
+      "zone": "distress",
+      "index": 2,
+      "text": "Kay Ben, makinig nang walang diagnosis. Alamin ang kwalipikadong contact; hindi pa kumpirmado ang oras. Sa tunay na agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.",
+      "start_ms": 22840,
+      "end_ms": 36120
+    },
+    {
+      "zone": "smoking",
+      "index": 3,
+      "text": "Kay Ramon, humingi ng pahintulot at pakinggan ang layunin. Hindi magbibigay o pipili ng gamot si Gibs. Alamin muna ang contact sa health team at suriin ang pagkaunawa.",
+      "start_ms": 36420,
+      "end_ms": 47980
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Sa triad, lahat ay susubok bilang BHW. Ipasabi ang hakbang sa sariling salita. Ayusin ang hindi malinaw at mag-check muli. Peer feedback ay pagsasanay, hindi facilitator grade.",
+      "start_ms": 48280,
+      "end_ms": 61480
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "“May appointment na ako bukas?” tanong ni Liza. “Hindi pa. Magtatanong muna tungkol sa iskedyul,” paglilinaw ni Gibs. Sa recheck, sagot ni Liza, “Magtatanong muna; wala pang appointment.” “Tama, iyon muna,” tugon ni Gibs.",
+      "start_ms": 61780,
+      "end_ms": 79580
+    }
+  ],
+  "audio_sha256": "df91d93fa663e75cbc7d87d3f11b2e66449162fe85703310406d0e9cc08f8427"
+}

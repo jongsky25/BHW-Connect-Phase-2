@@ -33396,729 +33396,1653 @@
       "sections": {
         "check": {
           "en": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/check.en.f68caa9602d5.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-explain/check.en.bd8cb5ca7ba6.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "f68caa9602d5d11cb16bce1ac16129f35a290b22d561f4abd4858b5e0aaea48a",
-            "sha256": "acf3dc9e641d85697a5d607d353ae64453154034616143d5f720b29ba371cd95",
-            "duration_seconds": 18.834,
+            "content_hash": "bd8cb5ca7ba6c27c91af97298be655dc10c757b555114f07fb78659ba7b32f62",
+            "sha256": "fb88de14fa146664b91b5068a6c586022e0bd7f43681d8f3803f8021d8061271",
+            "duration_seconds": 44.513,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Choose the next step",
-                "start_ms": 0,
-                "end_ms": 2000
-              },
-              {
-                "zone": "body",
-                "index": 0,
-                "text": "Choose an answer and explain why before viewing the feedback.",
-                "start_ms": 2300,
-                "end_ms": 7260
-              },
-              {
-                "zone": "body",
-                "index": 1,
-                "text": "Then compare it with your own practice attempt.",
-                "start_ms": 7560,
-                "end_ms": 11160
-              },
-              {
-                "zone": "takeaway",
-                "index": 0,
-                "text": "Hear the concern and check the clarity of your explanation while staying within the BHW role.",
-                "start_ms": 11460,
-                "end_ms": 18780
-              }
-            ]
-          },
-          "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/check.fil.c165e162ab54.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "c165e162ab54ee3da2e4b813b878f30bdccbfdcac1d5d9647f565812462498de",
-            "sha256": "6b3f70e80dc2028fd969d968b4aa59a81ed6c6d4bf02dfe1e9b3a4b51b040a5c",
-            "duration_seconds": 22.883,
-            "timings": [
-              {
-                "zone": "heading",
-                "index": 0,
-                "text": "Piliin ang susunod na hakbang",
-                "start_ms": 0,
-                "end_ms": 2880
-              },
-              {
-                "zone": "body",
-                "index": 0,
-                "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
-                "start_ms": 3180,
-                "end_ms": 8420
-              },
-              {
-                "zone": "body",
-                "index": 1,
-                "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
-                "start_ms": 8720,
-                "end_ms": 13520
-              },
-              {
-                "zone": "takeaway",
-                "index": 0,
-                "text": "Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.",
-                "start_ms": 13820,
-                "end_ms": 22820
-              }
-            ]
-          }
-        },
-        "distress": {
-          "en": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/distress.en.303e4c2052ec.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "303e4c2052ecee09bbe21cd7290f73e7811e842680a83a01624bdfe82bc65340",
-            "sha256": "33decf957af7d130623ce483a0efe043a41740dada8daa27e30f049de4d9d92a",
-            "duration_seconds": 44.278,
-            "timings": [
-              {
-                "zone": "heading",
-                "index": 0,
-                "text": "When someone feels overwhelmed",
-                "start_ms": 0,
-                "end_ms": 2720
-              },
-              {
-                "zone": "body",
-                "index": 0,
-                "text": "Ben, 37, says he has felt low for several weeks.",
-                "start_ms": 3020,
-                "end_ms": 7700
-              },
-              {
-                "zone": "body",
-                "index": 1,
-                "text": "A possible opening is, “Thank you for telling me.",
-                "start_ms": 8000,
-                "end_ms": 11880
-              },
-              {
-                "zone": "body",
-                "index": 2,
-                "text": "What feels hardest right now?”",
-                "start_ms": 12180,
-                "end_ms": 14580
-              },
-              {
-                "zone": "body",
-                "index": 3,
-                "text": "Listen privately and help him reach a health professional; avoid saying “just think happy thoughts” or assigning a diagnosis.",
-                "start_ms": 14880,
-                "end_ms": 24600
-              },
-              {
-                "zone": "body",
-                "index": 4,
-                "text": "If there is immediate danger to safety, follow the local emergency referral protocol at once.",
-                "start_ms": 24900,
-                "end_ms": 31940
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "Do not promise to conceal danger from people who need to help.",
-                "start_ms": 32240,
-                "end_ms": 36560
-              },
-              {
-                "zone": "takeaway",
-                "index": 0,
-                "text": "Listening offers support; diagnosis and clinical care belong with a qualified health professional.",
-                "start_ms": 36860,
-                "end_ms": 44220
-              }
-            ]
-          },
-          "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/distress.fil.ead03843859b.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "ead03843859b8fbb6836d4ef005c7af6ce9d1b7a0313eaa3f5a77719e9e90926",
-            "sha256": "325c0e940b094315594cebee76ca805dbc4041a7bac46cc5e3266233048db545",
-            "duration_seconds": 50.991,
-            "timings": [
-              {
-                "zone": "heading",
-                "index": 0,
-                "text": "Kapag mabigat ang nararamdaman",
-                "start_ms": 0,
-                "end_ms": 2560
-              },
-              {
-                "zone": "body",
-                "index": 0,
-                "text": "Si Ben, 37 anyos, ay nagsasabing ilang linggo na siyang malungkot.",
-                "start_ms": 2860,
-                "end_ms": 8820
-              },
-              {
-                "zone": "body",
-                "index": 1,
-                "text": "“Salamat sa pagsabi.",
-                "start_ms": 9120,
-                "end_ms": 10920
-              },
-              {
-                "zone": "body",
-                "index": 2,
-                "text": "Ano ang pinakamabigat para sa iyo ngayon?”",
-                "start_ms": 11220,
-                "end_ms": 14780
-              },
-              {
-                "zone": "body",
-                "index": 3,
-                "text": "ang maaaring simula.",
-                "start_ms": 15080,
-                "end_ms": 17160
-              },
-              {
-                "zone": "body",
-                "index": 4,
-                "text": "Makinig sa pribadong lugar at tumulong makaugnay sa health professional; huwag sabihing “isipin mo lang ang masasaya” o magbigay ng diagnosis.",
-                "start_ms": 17460,
-                "end_ms": 28340
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "Kung may agarang panganib sa kaligtasan, sundin kaagad ang lokal na emergency referral protocol.",
-                "start_ms": 28640,
-                "end_ms": 35960
-              },
-              {
-                "zone": "body",
-                "index": 6,
-                "text": "Huwag mangakong ililihim ang panganib sa mga taong kailangang tumulong.",
-                "start_ms": 36260,
-                "end_ms": 42060
-              },
-              {
-                "zone": "takeaway",
-                "index": 0,
-                "text": "Ang pakikinig ay suporta; ang diagnosis at pangangalagang klinikal ay para sa kwalipikadong health professional.",
-                "start_ms": 42360,
-                "end_ms": 50920
-              }
-            ]
-          }
-        },
-        "family-planning": {
-          "en": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/family-planning.en.6316d05fd10e.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "6316d05fd10e956333a9e1743ac8bdac31e73efba77e02e2cf363c67b8afb5cc",
-            "sha256": "5ee60929982ac2db85225afc434c460e5ee52ede1853a5083bd06a230a8288cf",
-            "duration_seconds": 38.113,
-            "timings": [
-              {
-                "zone": "heading",
-                "index": 0,
-                "text": "A family-planning question",
-                "start_ms": 0,
-                "end_ms": 2280
-              },
-              {
-                "zone": "body",
-                "index": 0,
-                "text": "Jo, 24, is worried about something she heard about family planning.",
-                "start_ms": 2580,
-                "end_ms": 7740
-              },
-              {
-                "zone": "body",
-                "index": 1,
-                "text": "Ask what specifically concerns her and listen without mocking the belief.",
-                "start_ms": 8040,
-                "end_ms": 13600
-              },
-              {
-                "zone": "body",
-                "index": 2,
-                "text": "A BHW can explain general information from approved materials, while choosing an appropriate method requires discussion with Jo and a midwife or qualified provider.",
-                "start_ms": 13900,
-                "end_ms": 26140
-              },
-              {
-                "zone": "body",
-                "index": 3,
-                "text": "Identify where she can get private counseling; do not decide for her.",
-                "start_ms": 26440,
-                "end_ms": 31440
-              },
-              {
-                "zone": "takeaway",
-                "index": 0,
-                "text": "Family-planning communication supports the person’s choice and appropriate counseling.",
-                "start_ms": 31740,
-                "end_ms": 38060
-              }
-            ]
-          },
-          "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/family-planning.fil.0ad47f94e318.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "0ad47f94e318de05ef270be2a98772c08f7a403bb85efaf996f880f54a062f1c",
-            "sha256": "3a71aad4aba9cf563789704bc766117e9097aa9789bf469e16bcb64bba3ef5f3",
-            "duration_seconds": 48.64,
-            "timings": [
-              {
-                "zone": "heading",
-                "index": 0,
-                "text": "May tanong tungkol sa family planning",
-                "start_ms": 0,
-                "end_ms": 2880
-              },
-              {
-                "zone": "body",
-                "index": 0,
-                "text": "Si Jo, 24 anyos, ay takot sa kuwentong narinig tungkol sa family planning.",
-                "start_ms": 3180,
-                "end_ms": 9940
-              },
-              {
-                "zone": "body",
-                "index": 1,
-                "text": "Tanungin kung ano ang partikular na ikinababahala niya at makinig nang hindi pinagtatawanan ang paniniwala.",
-                "start_ms": 10240,
-                "end_ms": 18000
-              },
-              {
-                "zone": "body",
-                "index": 2,
-                "text": "Maaaring ipaliwanag ng BHW ang pangkalahatang impormasyon mula sa aprubadong materyal, ngunit ang pagpili ng angkop na paraan ay kailangang talakayin kay Jo at sa midwife o kwalipikadong provider.",
-                "start_ms": 18300,
-                "end_ms": 34220
-              },
-              {
-                "zone": "body",
-                "index": 3,
-                "text": "Tiyakin kung saan siya makakakuha ng pribadong counseling; huwag pumili para sa kanya.",
-                "start_ms": 34520,
-                "end_ms": 40880
-              },
-              {
-                "zone": "takeaway",
-                "index": 0,
-                "text": "Ang pakikipag-usap tungkol sa family planning ay nagbibigay ng puwang sa pagpili at tamang counseling.",
-                "start_ms": 41180,
-                "end_ms": 48580
-              }
-            ]
-          }
-        },
-        "practice": {
-          "en": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/practice.en.cedb52ab8871.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "cedb52ab88710212fb480224912a41a925bb02c97c1a44da227300278ca2fcbb",
-            "sha256": "867262ff1be50d7ef0bd2eff247bbdac196322fe6c3f734f232de43f2f90c7ae",
-            "duration_seconds": 41.561,
-            "timings": [
-              {
-                "zone": "heading",
-                "index": 0,
-                "text": "Try it, then repeat",
-                "start_ms": 0,
-                "end_ms": 2600
-              },
-              {
-                "zone": "body",
-                "index": 0,
-                "text": "Choose Jo, Ben or Ramon.",
-                "start_ms": 2900,
-                "end_ms": 6260
-              },
-              {
-                "zone": "body",
-                "index": 1,
-                "text": "In triads, play BHW, resident and observer.",
-                "start_ms": 6560,
-                "end_ms": 11800
-              },
-              {
-                "zone": "body",
-                "index": 2,
-                "text": "Acknowledge the concern, give one safe next step and invite an explanation in the resident’s own words.",
-                "start_ms": 12100,
-                "end_ms": 20660
-              },
-              {
-                "zone": "body",
-                "index": 3,
-                "text": "The observer identifies one phrase to change; repeat.",
-                "start_ms": 20960,
-                "end_ms": 25720
-              },
-              {
-                "zone": "body",
-                "index": 4,
-                "text": "Alone, write both sides.",
-                "start_ms": 26020,
-                "end_ms": 28660
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "At the next visit, use teach-back with one approved message.",
-                "start_ms": 28960,
-                "end_ms": 34200
-              },
-              {
-                "zone": "takeaway",
-                "index": 0,
-                "text": "Hear the concern and check the clarity of your explanation while staying within the BHW role.",
-                "start_ms": 34500,
-                "end_ms": 41500
-              }
-            ]
-          },
-          "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/practice.fil.a3480f6e0452.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "a3480f6e04522e4bf480b2bcd707861829cab63ce6064017c84a5af22b8c33e4",
-            "sha256": "419b860e1947bf844637026034ad5bcd1b0d9fccb12f112efad19fa53893c3b6",
-            "duration_seconds": 49.633,
-            "timings": [
-              {
-                "zone": "heading",
-                "index": 0,
-                "text": "Subukan, saka ulitin",
-                "start_ms": 0,
-                "end_ms": 3160
-              },
-              {
-                "zone": "body",
-                "index": 0,
-                "text": "Pumili ng Jo, Ben o Ramon na sitwasyon.",
-                "start_ms": 3460,
-                "end_ms": 7780
-              },
-              {
-                "zone": "body",
-                "index": 1,
-                "text": "Sa tatluhan, gumanap na BHW, residente at tagamasid.",
-                "start_ms": 8080,
-                "end_ms": 14840
-              },
-              {
-                "zone": "body",
-                "index": 2,
-                "text": "Kilalanin ang concern, sabihin ang isang ligtas na susunod na hakbang, at ipasabi ito sa sariling salita.",
-                "start_ms": 15140,
-                "end_ms": 23580
-              },
-              {
-                "zone": "body",
-                "index": 3,
-                "text": "Magbigay ang tagamasid ng isang linyang babaguhin; ulitin.",
-                "start_ms": 23880,
-                "end_ms": 28800
-              },
-              {
-                "zone": "body",
-                "index": 4,
-                "text": "Kung mag-isa, i-record sa papel ang dalawang panig.",
-                "start_ms": 29100,
-                "end_ms": 33700
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "Sa susunod na pagbisita, gamitin ang teach-back sa isang aprubadong mensahe.",
-                "start_ms": 34000,
-                "end_ms": 39720
-              },
-              {
-                "zone": "takeaway",
-                "index": 0,
-                "text": "Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.",
-                "start_ms": 40020,
-                "end_ms": 49580
-              }
-            ]
-          }
-        },
-        "smoking": {
-          "en": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/smoking.en.b1fe9b935295.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "b1fe9b935295b1467df5c4e5254a70b1299cae7341389ed3460e9b987d0d8e01",
-            "sha256": "442f86cbf6541c1337c65aa893a2f412f156bf2cbc6b643a4db822f062009ad2",
-            "duration_seconds": 38.687,
-            "timings": [
-              {
-                "zone": "heading",
-                "index": 0,
-                "text": "Discuss smoking without blame",
+                "text": "Choose a respectful repair",
                 "start_ms": 0,
                 "end_ms": 2440
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Ramon, 45, feels attacked when called “undisciplined.”",
+                "text": "Gibs and Liza agree to ask the midwife about scheduling first.",
                 "start_ms": 2740,
-                "end_ms": 7980
+                "end_ms": 7420
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "First ask permission to discuss smoking.",
-                "start_ms": 8280,
-                "end_ms": 11480
+                "text": "There is no confirmed appointment.",
+                "start_ms": 7720,
+                "end_ms": 10360
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Explore what he would like to change and what barriers he anticipates.",
-                "start_ms": 11780,
-                "end_ms": 16860
+                "text": "During teach-back, Liza says, “I have an appointment tomorrow.”",
+                "start_ms": 10660,
+                "end_ms": 15100
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Summarize his response and offer a connection to health-center support.",
-                "start_ms": 17160,
-                "end_ms": 22080
+                "text": "That differs from Gibs’s explanation.",
+                "start_ms": 15400,
+                "end_ms": 18080
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "One agreed step is more useful than a long lecture he has stopped hearing.",
-                "start_ms": 22380,
-                "end_ms": 28140
+                "text": "What should he do next?",
+                "start_ms": 18380,
+                "end_ms": 19980
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Medication and suitable treatment should be discussed with the provider.",
-                "start_ms": 28440,
-                "end_ms": 33400
+                "text": "Choose an answer and explain why.",
+                "start_ms": 20280,
+                "end_ms": 22880
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "After choosing, read all three rationales and the conversation’s ending.",
+                "start_ms": 23180,
+                "end_ms": 28260
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Compare it with your practice.",
+                "start_ms": 28560,
+                "end_ms": 30360
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Answering the check or watching the optional story does not replace an actual demonstration.",
+                "start_ms": 30660,
+                "end_ms": 36500
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Planning improves when the person’s own goal and barriers are heard.",
-                "start_ms": 33700,
-                "end_ms": 38620
+                "text": "When understanding differs, repair your explanation and check again. An unclear message is not the person’s fault.",
+                "start_ms": 36800,
+                "end_ms": 44440
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/smoking.fil.fc493c01a1bd.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-explain/check.fil.94c2dd83cdc5.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "fc493c01a1bded2a437aee19067e03ae9fc5807760d6b26b7a1eced27cafdea2",
-            "sha256": "8a9294bc20a986dbeea17058da81be23fa567e6e57375e25c2cbda3168d86af2",
-            "duration_seconds": 47.726,
+            "content_hash": "94c2dd83cdc511e0d0613a0c5aa169c80b71e264594ae848555294170d3271fb",
+            "sha256": "dd96ef5a67626f407234903936ce5106020ae2de8b15dd4f636f18cd2a23e2d6",
+            "duration_seconds": 51.461,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Pag-usapan ang paninigarilyo nang walang paninisi",
+                "text": "Piliin ang magalang na repair",
                 "start_ms": 0,
-                "end_ms": 3840
+                "end_ms": 2240
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Si Ramon, 45 anyos, ay napipikon kapag pinagsasabihang “walang disiplina.”",
-                "start_ms": 4140,
-                "end_ms": 11980
+                "text": "Magkasundo sina Gibs at Liza na magtatanong muna sa midwife tungkol sa iskedyul.",
+                "start_ms": 2540,
+                "end_ms": 8500
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Humingi muna ng pahintulot na pag-usapan ang paninigarilyo.",
-                "start_ms": 12280,
-                "end_ms": 16760
+                "text": "Wala pang kumpirmadong appointment.",
+                "start_ms": 8800,
+                "end_ms": 11520
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Itanong kung ano ang gusto niyang mabago at kung anong hadlang ang nakikita niya.",
-                "start_ms": 17060,
-                "end_ms": 22540
+                "text": "Sa teach-back, sabi ni Liza, “May appointment na ako bukas.”",
+                "start_ms": 11820,
+                "end_ms": 16100
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ibuod ang sagot at mag-alok na ikonekta siya sa health-center support.",
-                "start_ms": 22840,
-                "end_ms": 27880
+                "text": "Hindi iyon ang planong ipinaliwanag ni Gibs.",
+                "start_ms": 16400,
+                "end_ms": 19440
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Isang napagkasunduang hakbang ang mas kapaki-pakinabang kaysa mahabang sermon na hindi niya pinakinggan.",
-                "start_ms": 28180,
-                "end_ms": 36620
+                "text": "Ano ang susunod niyang gagawin?",
+                "start_ms": 19740,
+                "end_ms": 21740
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Ang gamot at angkop na paggamot ay talakayin sa provider.",
-                "start_ms": 36920,
-                "end_ms": 41440
+                "text": "Piliin ang sagot at sabihin kung bakit.",
+                "start_ms": 22040,
+                "end_ms": 25200
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Pagkatapos pumili, basahin ang paliwanag ng lahat ng tatlong sagot at ang pagtatapos ng usapan.",
+                "start_ms": 25500,
+                "end_ms": 32300
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Ihambing sa ginawa mo sa pagsasanay.",
+                "start_ms": 32600,
+                "end_ms": 35240
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Hindi kapalit ng aktuwal na demonstrasyon ang pagsagot sa check o panonood ng opsyonal na kuwento.",
+                "start_ms": 35540,
+                "end_ms": 42180
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Mas madaling magplano kapag narinig ang layunin at hadlang ng mismong tao.",
-                "start_ms": 41740,
-                "end_ms": 47660
+                "text": "Kapag iba ang pagkaunawa, ayusin ang sariling paliwanag at mag-check muli. Hindi kasalanan ng kausap ang hindi malinaw na mensahe.",
+                "start_ms": 42480,
+                "end_ms": 51400
+              }
+            ]
+          }
+        },
+        "distress": {
+          "en": {
+            "src": "/training/audio/06-komunikasyon/communication-explain/distress.en.82ba094ca46c.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "82ba094ca46cb9b77779c93201aa797e2f727394b764f4b1c9fac4681be7a431",
+            "sha256": "77869728277f0be8a8a9be6b2277c80dcdf5c9c0d52e2db670a8624e4610e075",
+            "duration_seconds": 92.264,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Listen without diagnosing",
+                "start_ms": 0,
+                "end_ms": 2000
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Ben, 37, says he has felt low for several weeks.",
+                "start_ms": 2300,
+                "end_ms": 7020
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Gibs might ask, “Thank you for telling me.",
+                "start_ms": 7320,
+                "end_ms": 10080
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "What feels hardest right now?”",
+                "start_ms": 10380,
+                "end_ms": 12540
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ben may choose not to share details.",
+                "start_ms": 12840,
+                "end_ms": 15720
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ask whether the setting is comfortable; do not infer a diagnosis from silence, posture or looking away.",
+                "start_ms": 16020,
+                "end_ms": 23420
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "“I want someone to talk to, but I do not know who,” Ben says.",
+                "start_ms": 23720,
+                "end_ms": 28640
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "“I can listen.",
+                "start_ms": 28940,
+                "end_ms": 30300
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "If you want, I can help identify a qualified health professional through the local health team,” Gibs replies.",
+                "start_ms": 30600,
+                "end_ms": 37520
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "He does not say “just think happy thoughts,” diagnose, or choose treatment.",
+                "start_ms": 37820,
+                "end_ms": 43380
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "In rehearsal, the contact’s name and availability are unknown.",
+                "start_ms": 43680,
+                "end_ms": 48360
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "“I do not have a confirmed time yet.",
+                "start_ms": 48660,
+                "end_ms": 51340
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "How do you understand our first step?”",
+                "start_ms": 51640,
+                "end_ms": 54120
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "“Find out the contact first; this is not an appointment yet,” Ben replies.",
+                "start_ms": 54420,
+                "end_ms": 59220
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "If the meaning differs, explain another way and ask again.",
+                "start_ms": 59520,
+                "end_ms": 63640
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "In a real immediate danger to safety, seek help at once according to verified local emergency procedures; do not delay for an ordinary interview or report.",
+                "start_ms": 63940,
+                "end_ms": 75580
+              },
+              {
+                "zone": "body",
+                "index": 15,
+                "text": "Do not invent a number or a universal protocol.",
+                "start_ms": 75880,
+                "end_ms": 79920
+              },
+              {
+                "zone": "body",
+                "index": 16,
+                "text": "Do not promise to conceal danger from people who need to help.",
+                "start_ms": 80220,
+                "end_ms": 84340
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Listen and identify a qualified contact. In immediate danger, do not delay help for an ordinary interview.",
+                "start_ms": 84640,
+                "end_ms": 92200
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/06-komunikasyon/communication-explain/distress.fil.7bd8544664e4.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "7bd8544664e423753ea1efaf17e54927632b4d528dc9eab69d960e95094d324e",
+            "sha256": "b2c7d1428bd080816160e3b4bb45a8741d72244328df9ac6908a123c9698a4c1",
+            "duration_seconds": 102.635,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Makinig nang walang diagnosis",
+                "start_ms": 0,
+                "end_ms": 2880
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Si Ben, 37, ay nagsasabing ilang linggo na siyang malungkot.",
+                "start_ms": 3180,
+                "end_ms": 7940
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "“Salamat sa pagsabi.",
+                "start_ms": 8240,
+                "end_ms": 9960
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ano ang pinakamabigat para sa iyo ngayon?”",
+                "start_ms": 10260,
+                "end_ms": 13220
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "ang maaaring itanong ni Gibs.",
+                "start_ms": 13520,
+                "end_ms": 15880
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Maaari ring piliin ni Ben na huwag ikuwento ang detalye.",
+                "start_ms": 16180,
+                "end_ms": 19620
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Tanungin kung komportable ang lugar; huwag maghinuha ng diagnosis sa katahimikan, postura o pag-iwas ng tingin.",
+                "start_ms": 19920,
+                "end_ms": 28280
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "“Gusto kong may makausap, pero hindi ko alam kung sino,” sabi ni Ben.",
+                "start_ms": 28580,
+                "end_ms": 33540
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "“Makikinig ako.",
+                "start_ms": 33840,
+                "end_ms": 35360
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Kung gusto mo, tutulong akong alamin ang kwalipikadong health professional sa lokal na health team,” tugon ni Gibs.",
+                "start_ms": 35660,
+                "end_ms": 42780
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Hindi niya sasabihing “isipin mo lang ang masasaya,” magbibigay ng diagnosis, o pipili ng paggamot.",
+                "start_ms": 43080,
+                "end_ms": 50320
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Sa pagsasanay, hindi pa alam ang pangalan at availability ng contact.",
+                "start_ms": 50620,
+                "end_ms": 56020
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "“Wala pa akong kumpirmadong oras.",
+                "start_ms": 56320,
+                "end_ms": 58840
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Ano muna ang pagkaunawa mo sa hakbang natin?”",
+                "start_ms": 59140,
+                "end_ms": 62100
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "“Aalamin muna ang contact; hindi pa ito appointment,” sagot ni Ben.",
+                "start_ms": 62400,
+                "end_ms": 67320
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "Kung iba ang pagkaunawa, magpaliwanag sa ibang paraan at itanong muli.",
+                "start_ms": 67620,
+                "end_ms": 72540
+              },
+              {
+                "zone": "body",
+                "index": 15,
+                "text": "Sa tunay na agarang panganib sa kaligtasan, humingi kaagad ng tulong ayon sa natiyak na lokal na emergency procedure; huwag ipagpaliban dahil sa ordinaryong interview o report.",
+                "start_ms": 72840,
+                "end_ms": 83880
+              },
+              {
+                "zone": "body",
+                "index": 16,
+                "text": "Walang imbentong numero o iisang protocol para sa lahat.",
+                "start_ms": 84180,
+                "end_ms": 88420
+              },
+              {
+                "zone": "body",
+                "index": 17,
+                "text": "Huwag mangakong ililihim ang panganib sa mga taong kailangang tumulong.",
+                "start_ms": 88720,
+                "end_ms": 94000
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Makinig at alamin ang kwalipikadong contact. Sa agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.",
+                "start_ms": 94300,
+                "end_ms": 102580
+              }
+            ]
+          }
+        },
+        "family-planning": {
+          "en": {
+            "src": "/training/audio/06-komunikasyon/communication-explain/family-planning.en.fbcd8d38276a.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "fbcd8d38276af8730ecd515f55817b3ad42c6ecfcaf0e78a0b101dd143c20f60",
+            "sha256": "006497b85f15cb59367ef051e73ddf7670763662d435976bf5ade8c5228f624f",
+            "duration_seconds": 99.527,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Room for questions and choice",
+                "start_ms": 0,
+                "end_ms": 2640
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Jo, 24, is worried about something she heard about family planning.",
+                "start_ms": 2940,
+                "end_ms": 8060
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "“What specifically worries you?”",
+                "start_ms": 8360,
+                "end_ms": 10720
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Gibs asks.",
+                "start_ms": 11020,
+                "end_ms": 12380
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "He listens without mocking her belief.",
+                "start_ms": 12680,
+                "end_ms": 15640
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "“I do not want someone choosing for me,” Jo says.",
+                "start_ms": 15940,
+                "end_ms": 19700
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "“You decide; you can raise your concern with a qualified provider,” Gibs replies.",
+                "start_ms": 20000,
+                "end_ms": 25600
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Use only general information from approved materials and your own training.",
+                "start_ms": 25900,
+                "end_ms": 31260
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Choosing an appropriate method and clinical counseling are discussions between Jo and a midwife or qualified provider.",
+                "start_ms": 31560,
+                "end_ms": 39840
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Gibs does not select a method or prescribe.",
+                "start_ms": 40140,
+                "end_ms": 43780
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "He does not pressure Jo to decide or disclose private details.",
+                "start_ms": 44080,
+                "end_ms": 49040
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "In this fictional rehearsal, the contact’s name and hours are unknown.",
+                "start_ms": 49340,
+                "end_ms": 54460
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "“If you want, I will ask the health team for the appropriate contact and how to request a private conversation.",
+                "start_ms": 54760,
+                "end_ms": 61120
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "The schedule is not confirmed.",
+                "start_ms": 61420,
+                "end_ms": 63660
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "To check that I explained clearly, what is the first step?”",
+                "start_ms": 63960,
+                "end_ms": 67360
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "“Find out the contact first; not choose a method now,” Jo replies.",
+                "start_ms": 67660,
+                "end_ms": 72340
+              },
+              {
+                "zone": "body",
+                "index": 15,
+                "text": "Before an actual visit, verify the contact, BHW role and arrangements for a private conversation with the local health team.",
+                "start_ms": 72640,
+                "end_ms": 81240
+              },
+              {
+                "zone": "body",
+                "index": 16,
+                "text": "Explain approved information use and who needs to receive it under local policy.",
+                "start_ms": 81540,
+                "end_ms": 86940
+              },
+              {
+                "zone": "body",
+                "index": 17,
+                "text": "Do not promise absolute secrecy.",
+                "start_ms": 87240,
+                "end_ms": 90360
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Hear the concern. Verify the contact with the health team. Respect choice; the BHW does not select the method.",
+                "start_ms": 90660,
+                "end_ms": 99460
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/06-komunikasyon/communication-explain/family-planning.fil.159d9661b299.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "159d9661b299027a900c9db950c6e06f3d519053eb87e8e40855dc52efd7f4d3",
+            "sha256": "eef2044f9d310c5c8387955acc278579db9a924feb911d098e71144b612a241d",
+            "duration_seconds": 110.393,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "May pagpili at puwang sa tanong",
+                "start_ms": 0,
+                "end_ms": 2680
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Si Jo, 24, ay may takot sa narinig tungkol sa family planning.",
+                "start_ms": 2980,
+                "end_ms": 8420
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "“Ano ang partikular na ikinababahala mo?”",
+                "start_ms": 8720,
+                "end_ms": 11960
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "tanong ni Gibs.",
+                "start_ms": 12260,
+                "end_ms": 13980
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Nakikinig siya nang hindi pinagtatawanan ang paniniwala.",
+                "start_ms": 14280,
+                "end_ms": 18320
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "“Ayokong may pumili para sa akin,” sabi ni Jo.",
+                "start_ms": 18620,
+                "end_ms": 22380
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "“Ikaw ang magpapasya; puwede mong itanong ang concern sa kwalipikadong provider,” tugon ni Gibs.",
+                "start_ms": 22680,
+                "end_ms": 29640
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Gamitin lamang ang pangkalahatang impormasyon mula sa aprubadong materyal at sariling pagsasanay.",
+                "start_ms": 29940,
+                "end_ms": 36580
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Ang pagpili ng angkop na paraan at klinikal na counseling ay usapan ni Jo at ng midwife o kwalipikadong provider.",
+                "start_ms": 36880,
+                "end_ms": 45200
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Hindi pipili o magrereseta si Gibs.",
+                "start_ms": 45500,
+                "end_ms": 49020
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Hindi niya pipilitin si Jo na magpasya o magsabi ng pribadong detalye.",
+                "start_ms": 49320,
+                "end_ms": 54040
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Sa kathang-isip na pagsasanay, hindi pa alam ang oras o pangalan ng contact.",
+                "start_ms": 54340,
+                "end_ms": 59820
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "“Kung gusto mo, aalamin ko sa health team ang tamang contact at kung paano humingi ng pribadong usapan.",
+                "start_ms": 60120,
+                "end_ms": 66840
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Hindi pa kumpirmado ang iskedyul.",
+                "start_ms": 67140,
+                "end_ms": 69540
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "Para malaman kong malinaw ako, ano muna ang hakbang?”",
+                "start_ms": 69840,
+                "end_ms": 73560
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "“Alamin muna ang contact; hindi pumili ng paraan ngayon,” sagot ni Jo.",
+                "start_ms": 73860,
+                "end_ms": 79020
+              },
+              {
+                "zone": "body",
+                "index": 15,
+                "text": "Bago gamitin sa tunay na pagbisita, tiyakin sa lokal na health team ang aktuwal na contact, saklaw ng BHW at paraan ng pribadong usapan.",
+                "start_ms": 79320,
+                "end_ms": 89200
+              },
+              {
+                "zone": "body",
+                "index": 16,
+                "text": "Ipaliwanag ang aprubadong gamit ng impormasyon at sino lamang ang kailangang makatanggap nito ayon sa lokal na patakaran.",
+                "start_ms": 89500,
+                "end_ms": 97180
+              },
+              {
+                "zone": "body",
+                "index": 17,
+                "text": "Walang pangakong ganap na lihim.",
+                "start_ms": 97480,
+                "end_ms": 100640
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Pakinggan ang concern. Alamin ang contact sa health team. Igalang ang pagpili; hindi BHW ang pumipili ng paraan.",
+                "start_ms": 100940,
+                "end_ms": 110340
+              }
+            ]
+          }
+        },
+        "practice": {
+          "en": {
+            "src": "/training/audio/06-komunikasyon/communication-explain/practice.en.f55e8023306d.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "f55e8023306d4c8db46f4ec66dc0ef5e1c7b6d89318c96545e8097346b9eb4b7",
+            "sha256": "9b5aa0499bea928c4eab51cca19c83a4b97d3d0690055166f21bdb1ab4fd7d28",
+            "duration_seconds": 105.195,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Three situations, everyone tries",
+                "start_ms": 0,
+                "end_ms": 3400
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Use fictional cards for Jo, Ben and Ramon.",
+                "start_ms": 3700,
+                "end_ms": 7140
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "No real resident record or forced personal story.",
+                "start_ms": 7440,
+                "end_ms": 11800
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "In triads, play Gibs or BHW, resident, and observer.",
+                "start_ms": 12100,
+                "end_ms": 17380
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Rotate roles over three rounds so everyone plays BHW and the group practices all three situations.",
+                "start_ms": 17680,
+                "end_ms": 26120
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "BHW: acknowledge the concern without blame, explain one correct step in plain words, and ask for understanding in the person’s own words.",
+                "start_ms": 26420,
+                "end_ms": 36380
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Resident: use the concern and misunderstanding on the card.",
+                "start_ms": 36680,
+                "end_ms": 40880
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Observer: record one helpful exact phrase and one phrase to change; do not assign a facilitator grade.",
+                "start_ms": 41180,
+                "end_ms": 48580
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Repair the confusing explanation and check again.",
+                "start_ms": 48880,
+                "end_ms": 52400
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "End with the resident describing the correct step, including what remains unconfirmed.",
+                "start_ms": 52700,
+                "end_ms": 57860
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Contact details and availability are not supplied on the cards; checking with the health team is the step, not a guaranteed service.",
+                "start_ms": 58160,
+                "end_ms": 67080
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Alone, write or speak both sides of the fictional conversation and repeat the repair and recheck.",
+                "start_ms": 67380,
+                "end_ms": 74300
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "A quiet pair, reading assistance, a preferred language, and practice without internet or a projector are available.",
+                "start_ms": 74600,
+                "end_ms": 82720
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "The standard stays the same; direct facilitator observation is still required.",
+                "start_ms": 83020,
+                "end_ms": 88060
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "At the next authorized visit, use teach-back with one approved message.",
+                "start_ms": 88360,
+                "end_ms": 93160
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Concern → one step → their own explanation → repair → recheck. Everyone tries the BHW role; direct observation supplies evidence.",
+                "start_ms": 93460,
+                "end_ms": 105140
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/06-komunikasyon/communication-explain/practice.fil.15660757bc93.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "15660757bc93c5d90829397c6c52c61a97f520b848853350892cc4ab5c7a4933",
+            "sha256": "8221d3a393775cf48ad258fa23216fee21a963451cba977deb8540682d7f9a3c",
+            "duration_seconds": 118.857,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Tatlong sitwasyon, lahat susubok",
+                "start_ms": 0,
+                "end_ms": 3440
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Gumamit ng kathang-isip na cards para kay Jo, Ben at Ramon.",
+                "start_ms": 3740,
+                "end_ms": 8780
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Walang tunay na resident record o sapilitang personal na kuwento.",
+                "start_ms": 9080,
+                "end_ms": 14000
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Sa tatluhan, gumanap na Gibs o BHW, residente, at tagamasid.",
+                "start_ms": 14300,
+                "end_ms": 21420
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Sa tatlong round, magpalit ng papel upang lahat ay maging BHW at masubukan ng grupo ang lahat ng sitwasyon.",
+                "start_ms": 21720,
+                "end_ms": 30080
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "BHW: kilalanin ang concern nang walang paninisi, sabihin ang isang tamang hakbang sa payak na salita, at itanong ang pagkaunawa sa sariling salita.",
+                "start_ms": 30380,
+                "end_ms": 41660
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Residente: gamitin ang concern at maling pagkaunawa sa card.",
+                "start_ms": 41960,
+                "end_ms": 46800
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Tagamasid: itala ang eksaktong linyang nakatulong at isang linyang babaguhin; huwag magbigay ng facilitator grade.",
+                "start_ms": 47100,
+                "end_ms": 55060
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Ayusin ang nakalilitong paliwanag at mag-check muli.",
+                "start_ms": 55360,
+                "end_ms": 58800
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Dapat magtapos ang residente sa sariling paliwanag ng tamang hakbang, kasama ang hindi pa kumpirmado.",
+                "start_ms": 59100,
+                "end_ms": 66260
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Ang lokal na contact at availability ay hindi ibinibigay sa cards; ang pagtiyak sa health team ang hakbang, hindi garantiya ng serbisyo.",
+                "start_ms": 66560,
+                "end_ms": 75120
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Kung mag-isa, isulat o sabihin ang dalawang panig ng kathang-isip na usapan at ulitin ang repair at recheck.",
+                "start_ms": 75420,
+                "end_ms": 83540
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Maaari ang tahimik na pares, tulong sa pagbasa o komportableng wika, walang internet o projector.",
+                "start_ms": 83840,
+                "end_ms": 91080
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Pareho ang pamantayan; kailangan pa rin ng direktang obserbasyon ng facilitator.",
+                "start_ms": 91380,
+                "end_ms": 96940
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "Sa susunod na awtorisadong pagbisita, gamitin ang teach-back sa isang aprubadong mensahe.",
+                "start_ms": 97240,
+                "end_ms": 103440
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Concern → isang hakbang → sariling paliwanag → repair → recheck. Lahat ay susubok bilang BHW; direktang obserbasyon ang ebidensiya.",
+                "start_ms": 103740,
+                "end_ms": 118780
+              }
+            ]
+          }
+        },
+        "smoking": {
+          "en": {
+            "src": "/training/audio/06-komunikasyon/communication-explain/smoking.en.ec767169afb5.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "ec767169afb5d64d7754eeb200140168943d0669a03bfbb970181abb88c0d66d",
+            "sha256": "23d466fd2e2c568084b26de93c054244f4269b268591a7bb1ab834ba45b34fac",
+            "duration_seconds": 93.753,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Discuss without blame",
+                "start_ms": 0,
+                "end_ms": 2040
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Ramon, 45, feels attacked when called “undisciplined.”",
+                "start_ms": 2340,
+                "end_ms": 6580
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "“May we discuss smoking and the support you want?”",
+                "start_ms": 6880,
+                "end_ms": 10240
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Gibs asks.",
+                "start_ms": 10540,
+                "end_ms": 11820
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "If Ramon does not want to discuss it now, respect his answer.",
+                "start_ms": 12120,
+                "end_ms": 16360
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "“I want to cut down, but it is hard when I am stressed,” Ramon says.",
+                "start_ms": 16660,
+                "end_ms": 21660
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "“You want a change, and stress is a barrier.",
+                "start_ms": 21960,
+                "end_ms": 25360
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Is that right?”",
+                "start_ms": 25660,
+                "end_ms": 27060
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Gibs checks.",
+                "start_ms": 27360,
+                "end_ms": 28760
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Listen to the answer.",
+                "start_ms": 29060,
+                "end_ms": 30620
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Offer only a step within the BHW role: ask the local health team about a qualified contact and support actually available.",
+                "start_ms": 30920,
+                "end_ms": 39920
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Neither a service nor a time is confirmed in this fictional situation.",
+                "start_ms": 40220,
+                "end_ms": 45260
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "“If you want, we can first find out who you could speak with.",
+                "start_ms": 45560,
+                "end_ms": 49080
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "To check that I explained clearly, what will we do first?”",
+                "start_ms": 49380,
+                "end_ms": 52980
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "“Will you give me medicine?”",
+                "start_ms": 53280,
+                "end_ms": 55200
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "Ramon asks.",
+                "start_ms": 55500,
+                "end_ms": 56820
+              },
+              {
+                "zone": "body",
+                "index": 15,
+                "text": "“I will not give or choose medicine.",
+                "start_ms": 57120,
+                "end_ms": 60000
+              },
+              {
+                "zone": "body",
+                "index": 16,
+                "text": "We will identify the contact so you can ask a qualified provider.",
+                "start_ms": 60300,
+                "end_ms": 64780
+              },
+              {
+                "zone": "body",
+                "index": 17,
+                "text": "How would you describe the first step?”",
+                "start_ms": 65080,
+                "end_ms": 67680
+              },
+              {
+                "zone": "body",
+                "index": 18,
+                "text": "“Find out the contact; medication is a discussion with the provider,” Ramon replies.",
+                "start_ms": 67980,
+                "end_ms": 73660
+              },
+              {
+                "zone": "body",
+                "index": 19,
+                "text": "No lecture, medication, dose or promised outcome.",
+                "start_ms": 73960,
+                "end_ms": 78040
+              },
+              {
+                "zone": "body",
+                "index": 20,
+                "text": "Before an actual conversation, verify available local support and authorized messages; do not invent a service.",
+                "start_ms": 78340,
+                "end_ms": 86660
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ask permission, hear the person’s goal, offer one verified step and use teach-back.",
+                "start_ms": 86960,
+                "end_ms": 93680
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/06-komunikasyon/communication-explain/smoking.fil.dbab265d3524.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "dbab265d35249dcac9ebd4425a466d1254419934e0e64c3053b5821d9e754868",
+            "sha256": "c60cd08308e571476f3e4087ef14a57ea5b69fb00372c795c5034699022fb3e7",
+            "duration_seconds": 101.904,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Pag-usapan nang walang paninisi",
+                "start_ms": 0,
+                "end_ms": 2480
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Si Ramon, 45, ay napipikon kapag tinatawag na “walang disiplina.”",
+                "start_ms": 2780,
+                "end_ms": 8540
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "“Puwede ba nating pag-usapan ang paninigarilyo at ang suportang gusto mo?”",
+                "start_ms": 8840,
+                "end_ms": 13440
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "tanong ni Gibs.",
+                "start_ms": 13740,
+                "end_ms": 15180
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Kung ayaw muna ni Ramon, igalang ang sagot.",
+                "start_ms": 15480,
+                "end_ms": 18640
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "“Gusto kong mabawasan, pero mahirap kapag stress,” sabi ni Ramon.",
+                "start_ms": 18940,
+                "end_ms": 23580
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "“Gusto mong may mabago, at hadlang ang stress.",
+                "start_ms": 23880,
+                "end_ms": 27280
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Tama ba?”",
+                "start_ms": 27580,
+                "end_ms": 28740
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "paglilinaw ni Gibs.",
+                "start_ms": 29040,
+                "end_ms": 31280
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Pakinggan ang sagot.",
+                "start_ms": 31580,
+                "end_ms": 33060
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Mag-alok lamang ng hakbang na saklaw ng BHW: alamin sa lokal na health team ang kwalipikadong contact at suportang aktuwal na mayroon.",
+                "start_ms": 33360,
+                "end_ms": 43320
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Hindi pa kumpirmado ang serbisyo o oras sa kathang-isip na sitwasyon.",
+                "start_ms": 43620,
+                "end_ms": 48340
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "“Kung gusto mo, aalamin muna natin kung sino ang makakausap.",
+                "start_ms": 48640,
+                "end_ms": 53000
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Para malaman kong malinaw ang paliwanag ko, ano muna ang gagawin natin?”",
+                "start_ms": 53300,
+                "end_ms": 58100
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "“Bibigyan mo ako ng gamot?”",
+                "start_ms": 58400,
+                "end_ms": 60640
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "tanong ni Ramon.",
+                "start_ms": 60940,
+                "end_ms": 62580
+              },
+              {
+                "zone": "body",
+                "index": 15,
+                "text": "“Hindi ako magbibigay o pipili ng gamot.",
+                "start_ms": 62880,
+                "end_ms": 66160
+              },
+              {
+                "zone": "body",
+                "index": 16,
+                "text": "Aalamin muna ang contact para makapagtanong ka sa kwalipikadong provider.",
+                "start_ms": 66460,
+                "end_ms": 71820
+              },
+              {
+                "zone": "body",
+                "index": 17,
+                "text": "Paano mo sasabihin ang unang hakbang?”",
+                "start_ms": 72120,
+                "end_ms": 74680
+              },
+              {
+                "zone": "body",
+                "index": 18,
+                "text": "“Alamin ang contact; sa provider ang usapan sa gamot,” sagot ni Ramon.",
+                "start_ms": 74980,
+                "end_ms": 79540
+              },
+              {
+                "zone": "body",
+                "index": 19,
+                "text": "Walang sermon, gamot, dose o pangakong resulta.",
+                "start_ms": 79840,
+                "end_ms": 84920
+              },
+              {
+                "zone": "body",
+                "index": 20,
+                "text": "Bago ang tunay na usapan, tiyakin ang aktuwal na lokal na suporta at awtorisadong mensahe; huwag mag-imbento ng serbisyo.",
+                "start_ms": 85220,
+                "end_ms": 93180
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Humingi ng pahintulot, pakinggan ang layunin, mag-alok ng isang natiyak na hakbang at gamitin ang teach-back.",
+                "start_ms": 93480,
+                "end_ms": 101840
               }
             ]
           }
         },
         "teach-back": {
           "en": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/teach-back.en.b0249869511b.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-explain/teach-back.en.af1b32ee149f.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "b0249869511b1a42926072767ee52ef625e7a2cbbdc6d7bea0cca53be496466d",
-            "sha256": "5010abb1588d4da47554c856c79a25b739f15a72a4f86d705b52ddbfb0f2924f",
-            "duration_seconds": 50.469,
+            "content_hash": "af1b32ee149f5e38c6071672ea0dac357bc3ae7b471eecc41e6e7b7dd7c5d4c3",
+            "sha256": "fb69d19b04384defee09eff25808efe39bf5e3fbe44e327ec8ba80d1b84db6e0",
+            "duration_seconds": 94.407,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "One message, then hear it back",
+                "text": "One step, then hear it back",
                 "start_ms": 0,
-                "end_ms": 2960
+                "end_ms": 2480
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "BHW Gibs has heard Liza, 29, explain her difficulty attending the health center.",
-                "start_ms": 3260,
-                "end_ms": 10180
+                "text": "Gibs, a male BHW, listens to Liza, 29.",
+                "start_ms": 2780,
+                "end_ms": 7220
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "They agree to contact the midwife about scheduling.",
-                "start_ms": 10480,
-                "end_ms": 14160
+                "text": "“It is hard to go when nobody can look after my child,” Liza says.",
+                "start_ms": 7520,
+                "end_ms": 12200
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Gibs explains the agreed next step in plain language.",
-                "start_ms": 14460,
-                "end_ms": 18820
+                "text": "“Your concern matters.",
+                "start_ms": 12500,
+                "end_ms": 14620
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "“To check that I explained it clearly, how would you describe the plan when you get home?”",
-                "start_ms": 19120,
-                "end_ms": 24640
+                "text": "If you want, we can ask the midwife about scheduling,” Gibs replies.",
+                "start_ms": 14920,
+                "end_ms": 19320
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "If Liza’s response differs, Gibs explains it another way and checks again.",
-                "start_ms": 24940,
-                "end_ms": 30700
+                "text": "He promises neither an appointment nor childcare.",
+                "start_ms": 19620,
+                "end_ms": 23260
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Teach-back checks the clarity of the explanation, not the person’s intelligence.",
-                "start_ms": 31000,
-                "end_ms": 36680
+                "text": "Give one step in plain words: “First we will ask the midwife when she can be contacted.”",
+                "start_ms": 23560,
+                "end_ms": 30280
               },
               {
                 "zone": "body",
                 "index": 6,
-                "text": "Use a suitable picture if helpful; keep advice within training and the health team’s instructions.",
-                "start_ms": 36980,
-                "end_ms": 44180
+                "text": "Then ask: “To check that I explained clearly, how would you describe the next step in your own words?”",
+                "start_ms": 30580,
+                "end_ms": 37020
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "“Do I have an appointment tomorrow?”",
+                "start_ms": 37320,
+                "end_ms": 39640
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Liza asks.",
+                "start_ms": 39940,
+                "end_ms": 41420
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "“Not yet.",
+                "start_ms": 41720,
+                "end_ms": 42880
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "My explanation was unclear,” Gibs replies.",
+                "start_ms": 43180,
+                "end_ms": 47180
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "“We will ask about scheduling first; there is no confirmed appointment.",
+                "start_ms": 47480,
+                "end_ms": 52240
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "What will we do first?”",
+                "start_ms": 52540,
+                "end_ms": 54460
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "“Ask about the schedule; I am not booked yet,” Liza says.",
+                "start_ms": 54760,
+                "end_ms": 59320
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "“Yes, that is the first step,” Gibs confirms.",
+                "start_ms": 59620,
+                "end_ms": 63580
+              },
+              {
+                "zone": "body",
+                "index": 15,
+                "text": "Teach-back checks the BHW’s explanation, not the person’s intelligence or memory.",
+                "start_ms": 63880,
+                "end_ms": 69920
+              },
+              {
+                "zone": "body",
+                "index": 16,
+                "text": "Explain, ask, repair the misunderstanding, and check again.",
+                "start_ms": 70220,
+                "end_ms": 75300
+              },
+              {
+                "zone": "body",
+                "index": 17,
+                "text": "Use a helpful picture and the person’s preferred language; stay within approved messages and the BHW role.",
+                "start_ms": 75600,
+                "end_ms": 83520
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Check a clear message through the person’s own explanation, not a nod alone.",
-                "start_ms": 44480,
-                "end_ms": 50400
+                "text": "One step → their own explanation → repair → recheck. Asking about scheduling is not a confirmed appointment.",
+                "start_ms": 83820,
+                "end_ms": 94340
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-explain/teach-back.fil.9d64b6344c06.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-explain/teach-back.fil.206b1159c6ee.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "9d64b6344c068984370020c0c8fbeeeca07f02192ac2b8918c2a75b56c4c7646",
-            "sha256": "c0eba863ee6ce9cf7d72fc2f32180ece137ef2bc604d55655f795b9e29bd2766",
-            "duration_seconds": 61.701,
+            "content_hash": "206b1159c6eef265f5648d25f4fb27cade7501844b6478108642d29cbfe0a001",
+            "sha256": "e6a78ab5c8d1d518a6cab64b2fc1a1199c6a12455057921a55350b5593f45965",
+            "duration_seconds": 99.683,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Isang mensahe, saka pakinggan ang balik",
+                "text": "Isang hakbang, saka pakinggan ang balik",
                 "start_ms": 0,
-                "end_ms": 3640
+                "end_ms": 3120
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Si BHW Gibs ay nakipag-usap kay Liza, 29, tungkol sa hadlang sa pagpunta sa health center.",
-                "start_ms": 3940,
-                "end_ms": 11940
+                "text": "Si Gibs, lalaking BHW, ay nakikinig kay Liza, 29.",
+                "start_ms": 3420,
+                "end_ms": 8900
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Magkasundo silang makikipag-ugnayan sa midwife tungkol sa iskedyul.",
-                "start_ms": 12240,
-                "end_ms": 17560
+                "text": "“Mahirap pumunta kapag walang magbabantay sa anak ko,” sabi ni Liza.",
+                "start_ms": 9200,
+                "end_ms": 13960
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ipinaliwanag ni Gibs ang napagkasunduang susunod na hakbang sa payak na salita.",
-                "start_ms": 17860,
-                "end_ms": 23900
+                "text": "“Mahalaga ang alalahanin mo.",
+                "start_ms": 14260,
+                "end_ms": 16540
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "“Para malaman kong malinaw ang paliwanag ko, paano mo ikukuwento ang plano pag-uwi?”",
-                "start_ms": 24200,
-                "end_ms": 30560
+                "text": "Kung gusto mo, maaari nating alamin ang iskedyul sa midwife,” tugon ni Gibs.",
+                "start_ms": 16840,
+                "end_ms": 22400
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Kapag iba ang sagot ni Liza, uulitin ni Gibs sa ibang paraan at muling magtatanong.",
-                "start_ms": 30860,
-                "end_ms": 37220
+                "text": "Hindi niya ipinapangako ang appointment o childcare.",
+                "start_ms": 22700,
+                "end_ms": 26060
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Ang teach-back ay pagsusuri sa linaw ng paliwanag, hindi pagsusulit sa talino ng kausap.",
-                "start_ms": 37520,
-                "end_ms": 44120
+                "text": "Isang hakbang muna, gamit ang payak na salita: “Magtatanong muna tayo sa midwife kung kailan siya maaaring makausap.”",
+                "start_ms": 26360,
+                "end_ms": 33760
               },
               {
                 "zone": "body",
                 "index": 6,
-                "text": "Gumamit ng angkop na larawan kung makakatulong; huwag magbigay ng payong lampas sa pagsasanay at tagubilin ng health team.",
-                "start_ms": 44420,
-                "end_ms": 53380
+                "text": "Saka: “Para malaman kong malinaw ang paliwanag ko, paano mo ikukuwento ang susunod na hakbang sa sarili mong salita?”",
+                "start_ms": 34060,
+                "end_ms": 41940
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "“May appointment na ako bukas?”",
+                "start_ms": 42240,
+                "end_ms": 44400
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "tanong ni Liza.",
+                "start_ms": 44700,
+                "end_ms": 46140
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "“Hindi pa.",
+                "start_ms": 46440,
+                "end_ms": 47880
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Hindi malinaw ang paliwanag ko,” sagot ni Gibs.",
+                "start_ms": 48180,
+                "end_ms": 51700
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "“Magtatanong muna tayo tungkol sa iskedyul; wala pang kumpirmadong appointment.",
+                "start_ms": 52000,
+                "end_ms": 56720
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Ano muna ang gagawin natin?”",
+                "start_ms": 57020,
+                "end_ms": 59060
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "“Magtatanong tungkol sa iskedyul; hindi pa ako naka-book,” sabi ni Liza.",
+                "start_ms": 59360,
+                "end_ms": 64040
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "“Tama, iyon muna,” tugon ni Gibs.",
+                "start_ms": 64340,
+                "end_ms": 67420
+              },
+              {
+                "zone": "body",
+                "index": 15,
+                "text": "Ang teach-back ay check sa paliwanag ng BHW, hindi pagsusulit sa talino o memorya ng kausap.",
+                "start_ms": 67720,
+                "end_ms": 75480
+              },
+              {
+                "zone": "body",
+                "index": 16,
+                "text": "Magpaliwanag, magtanong, ayusin ang hindi malinaw, at mag-check muli.",
+                "start_ms": 75780,
+                "end_ms": 81340
+              },
+              {
+                "zone": "body",
+                "index": 17,
+                "text": "Gumamit ng angkop na larawan at wikang komportable ang kausap; manatili sa aprubadong mensahe at saklaw ng BHW.",
+                "start_ms": 81640,
+                "end_ms": 90720
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang malinaw na mensahe ay nasusuri sa sariling paliwanag ng kausap, hindi sa pagtango lamang.",
-                "start_ms": 53680,
-                "end_ms": 61640
+                "text": "Isang hakbang → sariling paliwanag → ayusin → mag-check muli. Hindi pa appointment ang pagtatanong sa iskedyul.",
+                "start_ms": 91020,
+                "end_ms": 99620
               }
             ]
           }
