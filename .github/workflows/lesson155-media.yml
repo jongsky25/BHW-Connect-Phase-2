@@ -1,0 +1,93 @@
+name: Lesson 1.5.5 draft evidence and media
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson155-media.yml'
+      - 'scripts/lesson-155-*.mjs'
+      - 'scripts/tests/lesson-155.test.mjs'
+      - 'docs/lesson-155-audio*.json'
+      - 'scripts/remotion-bhw-self-management-narrate.mjs'
+      - 'content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/**'
+      - 'remotion/src/bhw-self-management/**'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson155-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-155-malou-proposal' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Generate actual target-only draft media
+        if: hashFiles('docs/lesson-155-media-generation.json') == ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON155_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-155-record-fetch.mjs'
+        run: node scripts/lesson-155-media-build.mjs
+      - name: Full audio model review
+        if: ${{ !cancelled() }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON155_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-155-record-fetch.mjs'
+        run: node scripts/lesson-155-audio-review.mjs
+      - name: Check scoped lesson and media
+        if: success()
+        run: npx vitest run scripts/tests/lesson-155.test.mjs
+      - name: Build self-contained actual-component review
+        if: success()
+        run: node scripts/lesson-155-review-build.mjs
+      - name: Install playback-test browser
+        if: success()
+        run: npx playwright install --with-deps chromium
+      - name: Verify desktop, mobile and true offline playback
+        if: success()
+        run: node scripts/lesson-155-browser-check.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson155-browser-review
+          path: |
+            docs/lesson-155-browser-verification.json
+            .preview/lesson155/lesson-1.5.5-malou-review.html
+            .preview/lesson155/inline-media-manifest.json
+            .preview/lesson155/*.png
+          include-hidden-files: true
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson155-draft-evidence
+          path: |
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/
+            public/training/audio/05-bhw-at-barangay/bhw-self-management/
+            public/training/bhw-1-5/
+            remotion/public/bhw-self-management/
+            docs/lesson-155-media-generation.json
+            docs/lesson-155-audio-review.json
+            docs/lesson-155-browser-verification.json
+            .preview/lesson155/
+            .preview/lesson155-raw/
+            .preview/lesson155-excerpts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

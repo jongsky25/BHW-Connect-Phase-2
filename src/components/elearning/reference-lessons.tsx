@@ -291,6 +291,9 @@ export function ReferenceLessons(props: Props) {
     : undefined;
   const featuredVideo = featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined;
   const narratedStory = Boolean(featuredVideo?.videos);
+  const selfManagementRevision = lesson?.lesson_key === "bhw-self-management" && lesson.revision.assets.some(asset => asset.id === "malou-self-priorities");
+  const selfManagementTracks = selfManagementRevision ? Object.values(props.narration?.[lesson.id] ?? {}) : [];
+  const selfManagementMinutes = selfManagementTracks.length === 7 ? Math.ceil(selfManagementTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const teamworkTracks = lesson?.lesson_key === "bhw-teamwork" ? Object.values(props.narration?.[lesson.id] ?? {}) : [];
   const teamworkMinutes = teamworkTracks.length === 6 ? Math.ceil(teamworkTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
@@ -548,7 +551,7 @@ export function ReferenceLessons(props: Props) {
             <h2 tabIndex={-1} ref={heading} className={storyLayout ? "reference-story-title" : "text-xl font-semibold"}>
               {en ? item.heading_en : item.heading_fil}
             </h2>
-            {lesson.lesson_key === "bhw-teamwork" && item.check && item.asset_ids.includes("malou-teamwork") && (
+            {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision) && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
             {practice}
@@ -573,7 +576,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && (revealSummary || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && (revealSummary || selfManagementRevision || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -746,7 +749,13 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {lesson.lesson_key === "bhw-teamwork" && lesson.revision.assets.some(asset => asset.id === "malou-teamwork") ? (teamworkMinutes === null ? ui(
+              {selfManagementRevision ? (selfManagementMinutes === null ? ui(
+                "Maglaan ng oras sa pagbasa, pagsasanay at pagninilay; hiwalay ang 30-minutong guided practice.",
+                "Allow time for reading, practice and reflection; the 30-minute guided practice is separate.",
+              ) : ui(
+                `Tinatayang ${selfManagementMinutes}–${selfManagementMinutes + 3} minuto ayon sa audio sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 30-minutong guided practice.`,
+                `Estimated ${selfManagementMinutes}–${selfManagementMinutes + 3} minutes from this language’s audio plus 3–6 minutes of practice. The optional story is additional; the 30-minute guided practice is separate.`,
+              )) : lesson.lesson_key === "bhw-teamwork" && lesson.revision.assets.some(asset => asset.id === "malou-teamwork") ? (teamworkMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa, pagsasanay at pagninilay; hiwalay ang 30-minutong guided practice.",
                 "Allow time for reading, practice and reflection; the 30-minute guided practice is separate.",
               ) : ui(

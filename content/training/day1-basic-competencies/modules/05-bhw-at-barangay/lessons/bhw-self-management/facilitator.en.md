@@ -1,74 +1,54 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can name the six self-management skills, say which is their strength and which needs work, and write one SMART goal and a written plan for the week — explaining the first step and what they would check with the midwife.
+By the end, the BHW names the six self-management skills, explains a realistic response to Malou’s changed schedule, and gives one SMART goal with a review time.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 40 minutes in a face-to-face session (the "Self-management: skills and how to develop them" part of the plan in the subchapter guide). Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** manila paper and markers; the lesson's slides; a sheet of paper and a pen for each BHW; a manila paper with the five SMART words written out (specific, measurable, achievable, realistic, time-bound).
+Facilitated practice: 30 minutes within the existing module allocation; this is an authored split, not a new official minimum. SELF_STUDY_TIMING_PENDING
+Materials: seven slides or printed Read pages, six skill cards, three task cards, paper, pens and a blank weekly planner. Use groups of 3–4; sample one response per group, then ask every learner for a goal.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- Write one SMART goal of your own from your own work as an example, and one vague goal ("I'll get better") to contrast it with.
-- This lesson is about **habits that keep the BHW's own work on track**. Do not give advice on mental health, illness or personal problems; if a BHW shares serious stress, listen, and talk with them privately after the session rather than in front of the group.
+Read sections section-9 through self-application-check. Confirm who locally handles routine assignment changes. Malou’s invitations, deadlines and planner are fictional. Keep the six skills distinct. Self-management does not mean unlimited availability, ignoring danger or working beyond training.
 
 ## [opening] Opening
 
-Ask the group: *"Think of your busiest week as a BHW. What helped you get through it? What made it harder?"* Write the answers in two columns on manila paper. Do not comment yet — you will come back to them.
+Ask: “Malou has invitations due before ten, meeting preparation and unfinished work. What would you check before choosing the first task?” Allow fictional answers; do not ask for personal difficulties.
 
 ## [steps] Steps
 
-1. **Self-management skills (Read "Self-management skills", first slide).** Go through the six skills: reliable, stress management, time management, trustworthy, adaptability, honest and careful. Do not present them as a checklist. Ask each BHW: *"Which of these is already your strength? Which needs work?"*
-2. **Back to the opening.** Point to the "made it harder" column. Ask: *"Which of the six skills would have helped here?"*
-3. **How to improve self-management (Read "How to improve self-management", second slide).** Read the list of habits: self-care, patience, one task at a time, reflecting on your own abilities, SMART goals, a written weekly plan, coming to meetings prepared, thinking before speaking. Ask: *"Which one could you start this week?"*
-4. **SMART goals.** Show your vague goal and your SMART goal side by side on the SMART manila paper. Ask the group to point out which of the five parts the vague goal is missing.
-5. **Self-check.** Give the check (which plan supports self-management) and let the group discuss before revealing the answer.
+1. section-9 / slide-section-9 (2 min): introduce the situation. Ask, “What matters besides speed?”
+2. self-reliability (3 min): ask, “What makes a commitment realistic?”
+3. self-stress-time (4 min): ask, “How could Malou pause, prioritize and seek support?”
+4. self-trust-honesty (4 min): distinguish service, principles and accurate, respectful reporting. Ask, “What should her update actually say?”
+5. self-adaptability (3 min): ask, “What must be confirmed before changing the plan?”
+6. section-10 (6 min): retrieve the eight habits; show the SMART example and ask for a personal or fictional goal.
+7. self-application-check (8 min): choose, explain, recall six skills, practice a goal and give feedback. Total: 30 minutes.
 
 ## [expected-answers] Expected answers and how to respond
 
-- **"I'm just not an organized person."** Do not reply with "of course you can." Point to the second slide instead: *"This list is about habits, not personality. Which one habit could you try first?"*
-- **"I don't have time for self-care — the community needs me."** Acknowledge the dedication. Use the lesson's reason: stress lowers performance. Ask: *"When you are exhausted, what happens to your house visits?"*
-- **"My goal is to be a better BHW."** Accept it as a starting point, then ask: *"Better at what? By when? How will you know?"* Help them turn it into a SMART goal.
+“Do everything”: recognize the wish to help; ask about capacity and errors. “Report the problem early”: ask what is done, what remains and what agreement needs checking. “Say it is finished”: ask what others could wrongly assume. “I need help”: accept this as a reasonable action, not a failure.
 
 ## [misconception] Common misconception
 
-**"Self-management is a natural ability — either you have it or you don't."** This is common, especially among new BHWs who take "I'm just not an organized person" as a permanent truth. Don't correct it by saying "of course you can do it." Instead, show the "How to improve self-management" section as proof that this is a skill developed through specific habits — planning, reflection and thinking before speaking — not a trait you either have or lack.
+“A reliable BHW never says no or asks for help.” Ask how an impossible promise affects service. A reliable person makes realistic commitments, communicates early and checks the result. Self-management is learned through habits; it is not a fixed personality trait.
 
-## [practice] Practice activity
+## [practice] Practice
 
-Each BHW works alone for 10 minutes and writes: (1) one self-management skill that is their strength and one that needs work; (2) one SMART goal linked to the skill that needs work; (3) a written plan for next week's BHW tasks with one priority marked. Then, in pairs, each BHW explains their page in their own words: the main point (which skill and why), the first step they will take this week, and what they would check with the midwife (for example, whether their week's priorities match the tasks the midwife has set). Walk around and listen.
+Pairs: sort six skill cards and give one action for each. Rehearse an accurate update: “Twenty ready; five remain; let us confirm the new time.” Each learner writes or says one strength, one skill to develop and one SMART goal. Planner fields: day, agreed task, planned time, completed/remaining, review. Use blank fictional work only; this is a learning note. Oral responses and a partner scribe are equivalent.
 
-## [answer-key] Self-check answer key
+## [answer-key] Answer key
 
-The section check in Read "How to improve self-management" and the check on the second slide are the same question; it is covered once here.
-
-- **"Which plan supports self-management?"** → **A specific goal, realistic timing and weekly review.** This matches the lesson's habits: set SMART goals and plan each week's work in writing.
-  - *"Do everything at once without priorities"* is wrong because the lesson says to finish one task at a time — multitasking doesn't actually get more done — and time management means prioritizing what matters so work finishes on time.
+A is best: verify the change, report accurately and agree a realistic plan. B hides difficulties and encourages competing tasks. C reports completion inaccurately. Retrieval: reliability, stress management, time management, trustworthiness, adaptability, honest and careful. Goal example: list three priorities before work on Monday, Wednesday and Friday; review on Friday. Check all five SMART elements.
 
 ## [observe] What to observe
 
-Use the lesson's observation indicator (explains the main point and an appropriate first action, including what must be checked with the supervisor) during the practice activity:
+Use the lesson’s indicator: all six skills, an explained choice, and a goal with an action, measure and date. If a skill is missing, prompt once and ask again. If the goal is vague, ask “What will you do, how will you count it, and when will you review?” Record observable work; do not judge personality.
 
-- **Kaya na:** the BHW explains their skill choice and SMART goal clearly, names a concrete first step for this week, and says what they would check with the midwife — without prompting.
-- **Kailangan pa ng practice:** the BHW has the right direction (a goal and a plan) but needs your follow-up question on details — for example, the goal is missing a time limit or a way to measure it, or they cannot yet say what to check with the midwife.
-- **Hindi pa:** the explanation or action does not fit — for example, the goal is only general ("I'll get better"), there is no written plan, or the BHW cannot name a strength or a skill to work on.
+## [support] Support
 
-Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+Print the Read pages and skill/task cards for offline use. Read aloud, use large print or accept an oral goal. Keep participation respectful; personal disclosures are optional. Seek locally appropriate support for an unmanageable workload. The optional story is enrichment; it is not required to complete the exercise.
 
-## [support] If a BHW needs more support
+## [sources-review] Sources and review
 
-- Sit with them and rewrite one goal together, one SMART word at a time; let them write the second goal alone.
-- Narrow the plan: instead of the whole week, plan just the next two days with one priority.
-- Ask them to bring their written weekly plan to the next session and re-observe by having them explain it, including what they checked with the midwife.
-
-## [sources-review] Sources and review notes
-
-- BHW Reference Manual PDF 17–18 and PDF 18 (lesson sources, marked "inherited page reference; final audit pending"). The source-material README maps Team Work + Self-Management to Reference Manual pp. 9–10 (PDF 17–18), Facilitator Guide p. 20 (PDF 27) and Day 1 presentation slides 47–55. Facilitator Guide PDF 27 recommends relating the self-management skills to BHWs' previous experiences in their communities.
-- Placement discrepancy: the competency table puts self-management under *Work in a Team Environment*; the Facilitator's Manual p. 16 (PDF 23) lists it under *Develop life and career decisions*. The module follows the competency table.
-- Timing: the module keeps TESDA's 3 hours for *Work in a Team Environment* (Facilitator Guide PDF 26–27 says "at least 3 hours"). The 40 minutes above is this lesson's share of that plan. Do not repeat the whole allocation for each short lesson; this split supports self-study and does not create a new training-hour allocation.
-- The named misconception and the SMART-goal exercise come from the subchapter guide.
-- This lesson's observation indicator is generic; the subchapter's competency indicators include a more specific indicator for this objective (writing a SMART goal and weekly plan, naming a strength and a skill to work on). Reviewers may want to align them.
-- The lesson's `practice-map` visual is a draft discussion guide, not owner-approved.
-- Review current legal/policy wording, bilingual parity and the observation indicator before publication.
-- Draft for review
+DOH BHW Reference Manual PDF17–18 / printed9–10 gives six skills and eight habits. Day 1 presentation PDF48–50 gives the multiple-task activity and six skills. Facilitator guide PDF26–27 / printed19–20 places self-management within the combined three-hour team competency. The scenario and 30-minute split are teaching adaptations.

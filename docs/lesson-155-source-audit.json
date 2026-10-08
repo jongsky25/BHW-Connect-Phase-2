@@ -1,0 +1,93 @@
+{
+  "audited_date": "2026-10-08",
+  "original_pdfs": [
+    {
+      "file": "reference-original.pdf",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "bytes": 41537642
+    },
+    {
+      "file": "deck-original.pdf",
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "bytes": 1627258
+    },
+    {
+      "file": "facilitator-original.pdf",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "bytes": 26505934
+    }
+  ],
+  "original_text_pages_inspected": {
+    "reference": [
+      17,
+      18
+    ],
+    "deck": [
+      48,
+      49,
+      50
+    ],
+    "facilitator": [
+      26,
+      27
+    ]
+  },
+  "original_page_images_inspected": [
+    {
+      "file": "reference-p18.png",
+      "sha256": "b77e6e79627f5428b707f8bcba690a28f9c6ef79c0db4bfa93f2e957f2a92316"
+    },
+    {
+      "file": "deck-p49.png",
+      "sha256": "096ed94f8d3b6e43941800c0d8a41acc17204ff81f9c72e5a3bb5c6d526d2670"
+    },
+    {
+      "file": "deck-p50.png",
+      "sha256": "253271b016934905e9159374ad4e71b16f1e3d4092e7e9d894b864cb6d4758a6"
+    }
+  ],
+  "supported_claims": {
+    "six_skills": "Reference PDF18 / printed10; deck PDF49–50. Names and definitions retained.",
+    "eight_habits": "Reference PDF18 / printed10; all eight retained in section-10.",
+    "opening": "Deck PDF48 asks about simultaneous assigned tasks.",
+    "facilitated_scope": "Guide PDF26–27 / printed19–20: combined three-hour teamwork competency; PDF27 item5 connects self-management to BHW experience."
+  },
+  "numbering_resolution": "Keep deployed lesson key bhw-self-management, position4, titles and original section-9/section-10 anchors. Existing 1.5.5 combines skills and improvement; 1.5.6 currently uses bhw-right-contact. No lesson moved, split or renumbered.",
+  "authored_adaptations": [
+    "Malou invitation preparation, changed meeting and exact counts are fictional.",
+    "Routine-work prioritization, early support, accurate updates and capacity limits are teaching examples, not clinical triage or universal local protocol.",
+    "One-habit SMART example and blank planner are personal learning aids, not official forms.",
+    "Thirty-minute facilitation uses the existing self-management module slot; not an official standalone minimum."
+  ],
+  "crosswalk": {
+    "reliability": [
+      "self-reliability"
+    ],
+    "stress_management": [
+      "self-stress-time"
+    ],
+    "time_management": [
+      "self-stress-time"
+    ],
+    "trustworthiness": [
+      "self-trust-honesty"
+    ],
+    "adaptability": [
+      "self-adaptability"
+    ],
+    "honest_and_careful": [
+      "self-trust-honesty"
+    ],
+    "all_eight_habits": [
+      "section-10"
+    ],
+    "retrieval_and_application": [
+      "self-application-check"
+    ]
+  },
+  "review_limits": [
+    "Owner approval pending",
+    "No independent human listening or SME signoff claimed",
+    "No live database publication or progress change performed"
+  ]
+}
