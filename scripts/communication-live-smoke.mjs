@@ -16,12 +16,12 @@ try{
  await page.goto(base+'/login');await page.getByLabel('Username',{exact:true}).fill(username);await page.getByLabel('Password',{exact:true}).fill(password);
  await page.getByRole('button',{name:'Mag-login',exact:true}).click();await page.waitForURL(base+'/home',{timeout:30000});
  for(const [lesson_key,id]of Object.entries(lock.lessons['06-komunikasyon'])){
-  const path=`/training/${programs[0].id}/chapter-1/${lock.modules['06-komunikasyon']}/${id}`;
+  const path=`/training/${programs[0].id}/chapter-1/${lock.modules['06-komunikasyon']}/${id}?view=lesson`;
   const response=await page.goto(base+path);assert.equal(response.status(),200);
   await page.getByText(/Gibs/).first().waitFor({state:'visible',timeout:30000});
   const text=await page.locator('body').innerText();assert.ok(!text.includes('Mila'));assert.ok(!text.includes('Application error'));
   const image=page.locator('img[src*="gibs-"]').first();await image.waitFor({state:'visible'});
-  assert.ok(await image.evaluate(img=>img.complete&&img.naturalWidth>0),'Gibs picture loaded');
+  assert.ok(await image.evaluate(async img=>{await img.decode();return img.complete&&img.naturalWidth>0;}),'Gibs picture loaded');
   report.checks.push({lesson_key,path,HTTP:200,Gibs_visible:true,portrait_or_scene_loaded:true});
  }
  const dashboard=await page.goto(base+'/admin/dashboard');assert.equal(dashboard.status(),200);assert.ok(page.url().endsWith('/admin/dashboard'));
