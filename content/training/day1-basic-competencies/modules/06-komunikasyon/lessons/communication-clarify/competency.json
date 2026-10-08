@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Nagtatanong nang bukas at walang paratang; gumagamit ng isang tiyak na follow-up; ibinubuod ang sagot at humihingi ng pagwawasto.",
-      "observable_en": "Uses a neutral open question, one focused follow-up and a summary that invites correction.",
-      "not_yet_fil": "Naglalagay ng motibo sa tanong o nagtatala ng kahulugang hindi kinumpirma.",
-      "not_yet_en": "Embeds a motive in the question or records an interpretation that was not checked.",
+      "observable_fil": "Nagbibigay ng bukas na paanyaya, nagtatanong ng isang kaugnay na neutral na paglilinaw, naghihintay at tumatanggap ng pagwawasto, at ipinakukumpirma ang inayos na buod.",
+      "observable_en": "Gives an open invitation, asks one relevant neutral clarification, allows an answer and correction, and confirms the corrected summary.",
+      "not_yet_fil": "Sa nasaksihang attempt, ipinipilit ang motibo o unang interpretasyon at hindi ipinakukumpirma ang inayos na buod.",
+      "not_yet_en": "In an observed attempt, insists on a motive or first interpretation and does not confirm the corrected summary.",
       "levels": {
-        "kaya_na_fil": "Nagtatanong nang bukas at walang paratang; gumagamit ng isang tiyak na follow-up; ibinubuod ang sagot at humihingi ng pagwawasto. Nagagawa kahit hindi pinapaalalahanan.",
-        "kaya_na_en": "Uses a neutral open question, one focused follow-up and a summary that invites correction. Completes this without prompting.",
-        "kailangan_practice_fil": "Maayos ang bukas na tanong ngunit malabo pa ang follow-up; ipaulit gamit ang “Ano ang ibig mong sabihin sa…?”",
-        "kailangan_practice_en": "Uses an open question but the follow-up remains unclear; repeat using “What do you mean by…?”",
-        "hindi_pa_fil": "Naglalagay ng motibo sa tanong o nagtatala ng kahulugang hindi kinumpirma.",
-        "hindi_pa_en": "Embeds a motive in the question or records an interpretation that was not checked."
+        "kaya_na_fil": "Independent na naipakita ang buong sequence, kabilang ang pagtanggap at pagkumpirma ng pagwawasto, nang walang prompt.",
+        "kaya_na_en": "Independently demonstrates the complete sequence, including accepting and confirming a correction, without prompts.",
+        "kailangan_practice_fil": "Naipakita ang sequence nang may prompt sa neutral na tanong o pagwawasto ng buod; ulitin para sa independent na demonstration.",
+        "kailangan_practice_en": "Demonstrates the sequence with prompts for a neutral question or corrected summary; retry for independent demonstration.",
+        "hindi_pa_fil": "Sa aktuwal na attempt, patuloy na ipinipilit ang motibo o maling buod kahit may prompt. Kung walang direktang nasaksihan, markahang not observed, hindi antas na ito.",
+        "hindi_pa_en": "In an actual attempt, continues to insist on a motive or incorrect summary despite prompts. If no performance was directly observed, mark not observed rather than this level."
       }
     }
   ]

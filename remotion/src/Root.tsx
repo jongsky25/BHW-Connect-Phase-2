@@ -1,4 +1,5 @@
 import {CommunicationRecordStory, calculateCommunicationRecordMetadata, COMMUNICATION_RECORD_FPS, COMMUNICATION_RECORD_FALLBACK_DURATION} from "./communication-record/CommunicationRecordStory";
+import {CommunicationClarifyStory, calculateCommunicationClarifyMetadata, COMMUNICATION_CLARIFY_FPS, COMMUNICATION_CLARIFY_FALLBACK_DURATION} from "./communication-clarify/CommunicationClarifyStory";
 import {CommunicationListenStory, calculateCommunicationListenMetadata, COMMUNICATION_LISTEN_FPS, COMMUNICATION_LISTEN_FALLBACK_DURATION} from "./communication-listen/CommunicationListenStory";
 import {BhwSelfManagementStory, calculateBhwSelfManagementMetadata, SELF_MANAGEMENT_FPS, SELF_MANAGEMENT_FALLBACK_DURATION} from "./bhw-self-management/BhwSelfManagementStory";
 import {BhwRightContactStory, calculateBhwRightContactMetadata, RIGHT_CONTACT_FPS, RIGHT_CONTACT_FALLBACK_DURATION} from "./bhw-right-contact/BhwRightContactStory";
@@ -373,6 +374,9 @@ export const RemotionRoot: React.FC = () => {
           component={CommunicationListenStory} calculateMetadata={calculateCommunicationListenMetadata}
           durationInFrames={COMMUNICATION_LISTEN_FALLBACK_DURATION} fps={COMMUNICATION_LISTEN_FPS} width={854} height={480}
           defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`communication-clarify-${language}`} id={language === "fil" ? "CommunicationClarifyStoryFil" : "CommunicationClarifyStoryEn"} component={CommunicationClarifyStory} durationInFrames={COMMUNICATION_CLARIFY_FALLBACK_DURATION} fps={COMMUNICATION_CLARIFY_FPS} width={854} height={480} defaultProps={{language}} calculateMetadata={calculateCommunicationClarifyMetadata}/>
       ))}
       {(["fil", "en"] as const).map((language) => (
         <Composition key={`communication-record-${language}`} id={language === "fil" ? "CommunicationRecordStoryFil" : "CommunicationRecordStoryEn"}

@@ -1,0 +1,5 @@
+// Preserve every model observation verbatim; do not manufacture listening approval.
+import fs from 'node:fs';import {createHash} from 'node:crypto';
+const reports=['audio-review','audio-focus'].map(n=>{const p='docs/lesson-162-'+n+'.json',bytes=fs.readFileSync(p);return {file:p,sha256:createHash('sha256').update(bytes).digest('hex'),report:JSON.parse(bytes)};});
+const notes={status:'draft',human_listening:'pending',owner_review:'pending',local_policy_SME_review:'pending',interpretation:'Full and focused model responses may disagree; all concerns remain visible for human listening. A steady synthesis direction, pronunciation alias or model verdict is not clearance.',reports:reports.map(({file,sha256,report})=>({file,sha256,records:report.records.map(r=>({id:r.id,language:r.language,full_response:r.model_response??null,focused_responses:r.excerpts?.map(e=>({kind:e.kind,response:e.model_response}))??[]}))}))};
+fs.writeFileSync('docs/lesson-162-audio-review-notes.json',JSON.stringify(notes,null,2)+'\n');

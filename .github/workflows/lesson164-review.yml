@@ -37,6 +37,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/lesson-164-retain-evidence.mjs
+      - name: Bounded read-only snapshot after main reconciliation
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          mkdir -p .preview/lesson164-initial-media
+          cp lesson-164-published-snapshot.json .preview/lesson164-initial-media/published-snapshot.json
+          node scripts/lesson-164-published-snapshot.mjs
       - name: Verify committed media and protected history
         run: node scripts/lesson-164-media-verify.mjs
       - name: Verify primary sources and excerpt hashes
@@ -56,7 +65,7 @@ jobs:
               d=fitz.open(p)
               assert len(d)==4 and all(page.get_text().strip() for page in d),p
           PY
-      - name: Wait for full normal CI and all 78 compositions at frozen head
+      - name: Wait for full normal CI and all 80 compositions at frozen head
         env:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/lesson-164-wait-ci.mjs

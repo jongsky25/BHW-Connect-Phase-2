@@ -1,8 +1,8 @@
+import {beforeProposed162} from './lesson-162-proposal-compat.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
-import {beforeProposed164} from './lesson-164-proposal-compat.mjs';
 import {createHash} from 'node:crypto';
-const read=p=>beforeProposed164(p),json=p=>JSON.parse(read(p)),sha=b=>createHash('sha256').update(b).digest('hex');
+const read=p=>beforeProposed162(p),json=p=>JSON.parse(read(p)),sha=b=>createHash('sha256').update(b).digest('hex');
 const a=json('docs/lesson-161-owner-approval.json');
 describe('approved communication release',()=>{
  it('pins the owner-approved source, original proposal and every selected public byte',()=>{

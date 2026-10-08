@@ -1,0 +1,116 @@
+[
+  {
+    "id": "open-question",
+    "prompt": "Create a new standalone landscape teaching illustration for BHW Connect lesson 1.6.2. Preserve exactly Gibs and Liza's fictional identities and painterly warm illustrated style from the reference images. Gibs is male Filipino BHW, teal polo name Gibs, navy trousers, CLOSED clipboard; Liza age29, yellow blouse, blue skirt, black ponytail. Philippine home veranda. No patient records, diagnosis, medical equipment or real identities. Clear distinct teaching action, not a crop. Keep all text minimal and spelled exactly. Gibs and Liza seated facing each other with plenty of space. Gibs's welcoming open hand invites Liza's account; Liza speaks. One bubble from Gibs reads 'Ano ang nangyari?' Liza bubble reads 'Wala akong kasama.'",
+    "generated_path": "/workspace/generated_images/exec-40f3f561-affc-4e83-886a-77a68ac88f69.png",
+    "tool": "image_gen.imagegen",
+    "model": "undisclosed",
+    "references": [
+      "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "public/training/bhw-1-6/gibs-profile-37d8a009bbc6.png"
+    ],
+    "review_status": "draft",
+    "sha256": "d5839d9b594c3a81822ac2275df072260f9be5438cc62098818c8d1077bc89e9",
+    "public_path": "/training/bhw-1-6/gibs-clarify-open-question-d5839d9b594c.png",
+    "alt_fil": "Gibs: “Ano ang nangyari?” Liza: “Wala akong kasama.” Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+    "alt_en": "Gibs: “What happened?” Liza: “I have nobody with me.” Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+    "caption_fil": "Gibs: “Ano ang nangyari?” Liza: “Wala akong kasama.”",
+    "caption_en": "Gibs: “What happened?” Liza: “I have nobody with me.”",
+    "agent_visual_inspection": "Characters/clothing, correct readable dialogue, distinct teaching actions, closed clipboard and no private record verified; owner review pending."
+  },
+  {
+    "id": "clarify-detail",
+    "prompt": "Create a new standalone landscape teaching illustration for BHW Connect lesson 1.6.2. Preserve exactly Gibs and Liza's fictional identities and painterly warm illustrated style from the reference images. Gibs is male Filipino BHW, teal polo name Gibs, navy trousers, CLOSED clipboard; Liza age29, yellow blouse, blue skirt, black ponytail. Philippine home veranda. No patient records, diagnosis, medical equipment or real identities. Clear distinct teaching action, not a crop. Keep all text minimal and spelled exactly. Gibs asks one short follow-up with a curious listening face, not blame. Liza gently corrects his understanding. TWO readable speech bubbles: Gibs 'Kasama sa biyahe?' Liza 'Hindi. Magbabantay sa anak.'",
+    "generated_path": "/workspace/generated_images/exec-e916c667-8961-4ac5-afc5-8db4833e1896.png",
+    "tool": "image_gen.imagegen",
+    "model": "undisclosed",
+    "references": [
+      "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "public/training/bhw-1-6/gibs-profile-37d8a009bbc6.png"
+    ],
+    "review_status": "draft",
+    "sha256": "6a08f5de2ab0df84bf5525a969bd1ff273ae0b302c67b3bef1cedc6480eecd46",
+    "public_path": "/training/bhw-1-6/gibs-clarify-clarify-detail-6a08f5de2ab0.png",
+    "alt_fil": "Gibs: “Kasama sa biyahe?” Liza: “Hindi. Magbabantay sa anak.” Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+    "alt_en": "Gibs: “A travel companion?” Liza: “No. Someone to watch my child.” Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+    "caption_fil": "Gibs: “Kasama sa biyahe?” Liza: “Hindi. Magbabantay sa anak.”",
+    "caption_en": "Gibs: “A travel companion?” Liza: “No. Someone to watch my child.”",
+    "agent_visual_inspection": "Characters/clothing, correct readable dialogue, distinct teaching actions, closed clipboard and no private record verified; owner review pending."
+  },
+  {
+    "id": "barriers",
+    "prompt": "Create a new standalone landscape teaching illustration for BHW Connect lesson 1.6.2. Preserve exactly Gibs and Liza's fictional identities and painterly warm illustrated style from the reference images. Gibs is male Filipino BHW, teal polo name Gibs, navy trousers, CLOSED clipboard; Liza age29, yellow blouse, blue skirt, black ponytail. Philippine home veranda. No patient records, diagnosis, medical equipment or real identities. Clear distinct teaching action, not a crop. Keep all text minimal and spelled exactly. Liza actively explains her own childcare barrier to Gibs, who is listening. Show a clearly separate smaller inset of a neighbor speaking with label 'Kapitbahay: sariling sabi'. Main scene label 'Liza: sariling kuwento'. Never suggest neighbor's words are Liza's account. No implied solution or childcare service.",
+    "generated_path": "/workspace/generated_images/exec-1da6869d-2d83-425a-acf0-1bcad55ccb0a.png",
+    "tool": "image_gen.imagegen",
+    "model": "undisclosed",
+    "references": [
+      "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "public/training/bhw-1-6/gibs-profile-37d8a009bbc6.png"
+    ],
+    "review_status": "draft",
+    "sha256": "ce8d0dba15921fda9fbd31ec38ba67d53adda76e2e58e59f72b5f7daa416a28a",
+    "public_path": "/training/bhw-1-6/gibs-clarify-barriers-ce8d0dba1592.png",
+    "alt_fil": "Sariling kuwento ni Liza at hiwalay na sabi ng kapitbahay. Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+    "alt_en": "Liza’s own account and the neighbor’s separately labelled statement. Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+    "caption_fil": "Sariling kuwento ni Liza at hiwalay na sabi ng kapitbahay.",
+    "caption_en": "Liza’s own account and the neighbor’s separately labelled statement.",
+    "agent_visual_inspection": "Characters/clothing, correct readable dialogue, distinct teaching actions, closed clipboard and no private record verified; owner review pending."
+  },
+  {
+    "id": "confirm-summary",
+    "prompt": "Create a new standalone landscape teaching illustration for BHW Connect lesson 1.6.2. Preserve exactly Gibs and Liza's fictional identities and painterly warm illustrated style from the reference images. Gibs is male Filipino BHW, teal polo name Gibs, navy trousers, CLOSED clipboard; Liza age29, yellow blouse, blue skirt, black ponytail. Philippine home veranda. No patient records, diagnosis, medical equipment or real identities. Clear distinct teaching action, not a crop. Keep all text minimal and spelled exactly. Show Liza correcting Gibs's brief summary, while Gibs attentively accepts correction. Two speech bubbles: Gibs 'Palagi bang mahirap?' Liza 'Kapag wala ang kapatid ko.' A small neutral check symbol near Liza indicates her correction accepted, not clinical evaluation.",
+    "generated_path": "/workspace/generated_images/exec-8f8aa7ff-f3f7-43b4-be64-297772255b2d.png",
+    "tool": "image_gen.imagegen",
+    "model": "undisclosed",
+    "references": [
+      "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "public/training/bhw-1-6/gibs-profile-37d8a009bbc6.png"
+    ],
+    "review_status": "draft",
+    "sha256": "83530b1d8d035045dfe8246ac196a2c0962e6b15bb8b8378816377064425ea8e",
+    "public_path": "/training/bhw-1-6/gibs-clarify-confirm-summary-83530b1d8d03.png",
+    "alt_fil": "Gibs: “Palagi bang mahirap?” Liza: “Kapag wala ang kapatid ko.” Tanggapin ang pagwawasto. Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+    "alt_en": "Gibs: “Is it always difficult?” Liza: “When my sister is away.” Accept the correction. Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+    "caption_fil": "Gibs: “Palagi bang mahirap?” Liza: “Kapag wala ang kapatid ko.” Tanggapin ang pagwawasto.",
+    "caption_en": "Gibs: “Is it always difficult?” Liza: “When my sister is away.” Accept the correction.",
+    "agent_visual_inspection": "Characters/clothing, correct readable dialogue, distinct teaching actions, closed clipboard and no private record verified; owner review pending."
+  },
+  {
+    "id": "practice",
+    "prompt": "Create a new standalone landscape teaching illustration for BHW Connect lesson 1.6.2. Preserve exactly Gibs and Liza's fictional identities and painterly warm illustrated style from the reference images. Gibs is male Filipino BHW, teal polo name Gibs, navy trousers, CLOSED clipboard; Liza age29, yellow blouse, blue skirt, black ponytail. Philippine home veranda. No patient records, diagnosis, medical equipment or real identities. Clear distinct teaching action, not a crop. Keep all text minimal and spelled exactly. Three adult Filipino trainees rehearse fictional Gibs/Liza/observer roles around a table. One male wears teal polo, one woman wears yellow/blue, third adult observer points to blank simple checklist. Clear tabletop role cards labeled 'BHW', 'Liza', 'Tagamasid'. Small question aid with three arrows, no private data. Classroom with no projector.",
+    "generated_path": "/workspace/generated_images/exec-0c2060a5-7161-4c2a-9c69-cdd3f15aca39.png",
+    "tool": "image_gen.imagegen",
+    "model": "undisclosed",
+    "references": [
+      "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "public/training/bhw-1-6/gibs-profile-37d8a009bbc6.png"
+    ],
+    "review_status": "draft",
+    "sha256": "ef68ebd8a5560474983d28a9789c65fb6bdd141b6c175a848d79472eb0eb1b3d",
+    "public_path": "/training/bhw-1-6/gibs-clarify-practice-ef68ebd8a556.png",
+    "alt_fil": "Kathang-isip na BHW, Liza at tagamasid; question aid at blank checklist. Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+    "alt_en": "Fictional BHW, Liza and observer roles; question aid and blank checklist. Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+    "caption_fil": "Kathang-isip na BHW, Liza at tagamasid; question aid at blank checklist.",
+    "caption_en": "Fictional BHW, Liza and observer roles; question aid and blank checklist.",
+    "agent_visual_inspection": "Characters/clothing, correct readable dialogue, distinct teaching actions, closed clipboard and no private record verified; owner review pending."
+  },
+  {
+    "id": "check",
+    "prompt": "Create a new standalone landscape teaching illustration for BHW Connect lesson 1.6.2. Preserve exactly Gibs and Liza's fictional identities and painterly warm illustrated style from the reference images. Gibs is male Filipino BHW, teal polo name Gibs, navy trousers, CLOSED clipboard; Liza age29, yellow blouse, blue skirt, black ponytail. Philippine home veranda. No patient records, diagnosis, medical equipment or real identities. Clear distinct teaching action, not a crop. Keep all text minimal and spelled exactly. Unresolved teaching dilemma BEFORE a response is chosen. Liza says 'Hindi puwede noong araw na iyon.' Gibs listens with CLOSED clipboard, no response bubble from him. Quiet veranda, simple calendar showing only an unlabeled square, no appointment or promise. Liza neither blamed nor shown disobedient.",
+    "generated_path": "/workspace/generated_images/exec-7fe21141-ec73-4d70-8611-a79537c64c4c.png",
+    "tool": "image_gen.imagegen",
+    "model": "undisclosed",
+    "references": [
+      "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "public/training/bhw-1-6/gibs-profile-37d8a009bbc6.png"
+    ],
+    "review_status": "draft",
+    "sha256": "800ef249584beb6526d64136ccdf8ed12b60c57d75c086fd05f98a06649ac3fd",
+    "public_path": "/training/bhw-1-6/gibs-clarify-check-800ef249584b.png",
+    "alt_fil": "Liza: “Hindi puwede noong araw na iyon.” Hindi pa pinipili ang sagot ni Gibs. Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+    "alt_en": "Liza: “That day did not work.” Gibs has not chosen a response yet. Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+    "caption_fil": "Liza: “Hindi puwede noong araw na iyon.” Hindi pa pinipili ang sagot ni Gibs.",
+    "caption_en": "Liza: “That day did not work.” Gibs has not chosen a response yet.",
+    "agent_visual_inspection": "Characters/clothing, correct readable dialogue, distinct teaching actions, closed clipboard and no private record verified; owner review pending."
+  }
+]
