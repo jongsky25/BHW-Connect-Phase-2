@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Tamang inihihiwalay ang tatlong uri ng detalye; walang diagnosis o husga; may tiyak na rekord o taong lalapitan para beripikahin.",
-      "observable_en": "Correctly separates all three kinds of detail, adds no diagnosis or judgment, and names a specific record or person for verification.",
-      "not_yet_fil": "Isinusulat na tiyak ang hula o opinyon ng kapitbahay.",
-      "not_yet_en": "Records a guess or the neighbor’s opinion as established fact.",
+      "observable_fil": "Iniuugnay ang bawat ulat sa pinagmulan, inihihiwalay ang direktang nakita sa hula, tapat na minamarkahan ang kulang, pumipili lamang ng kaugnay na detalye at tumutukoy ng angkop na beripikasyon.",
+      "observable_en": "Attributes each report, separates direct observation from inference, marks the gap honestly, selects only relevant details and names a suitable verification step.",
+      "not_yet_fil": "Walang naobserbahang pagtatangka, o itinatala pa rin ang hula/opinyon bilang katotohanan kahit may tulong. Kung hindi nasaksihan, markahang hindi naobserbahan at magtakda ng direktang obserbasyon.",
+      "not_yet_en": "No attempt is observed, or guesses/opinions are still recorded as fact despite support. If not witnessed, mark not observed and arrange direct observation.",
       "levels": {
-        "kaya_na_fil": "Tamang inihihiwalay ang tatlong uri ng detalye; walang diagnosis o husga; may tiyak na rekord o taong lalapitan para beripikahin. Nagagawa kahit hindi pinapaalalahanan.",
-        "kaya_na_en": "Correctly separates all three kinds of detail, adds no diagnosis or judgment, and names a specific record or person for verification. Completes this without prompting.",
-        "kailangan_practice_fil": "Nakikilala ang sinabi at nakita ngunit walang plano sa kulang; ipatukoy ang rekord o health team member na makatutulong.",
-        "kailangan_practice_en": "Distinguishes reports and observations but gives no verification plan; ask for the relevant record or health team member.",
-        "hindi_pa_fil": "Isinusulat na tiyak ang hula o opinyon ng kapitbahay.",
-        "hindi_pa_en": "Records a guess or the neighbor’s opinion as established fact."
+        "kaya_na_fil": "Iniuugnay ang bawat ulat sa pinagmulan, inihihiwalay ang direktang nakita sa hula, tapat na minamarkahan ang kulang, pumipili lamang ng kaugnay na detalye at tumutukoy ng angkop na beripikasyon. Nagagawa nang mag-isa at naitatala ang pinagmulan ng pagwawasto.",
+        "kaya_na_en": "Attributes each report, separates direct observation from inference, marks the gap honestly, selects only relevant details and names a suitable verification step. Performs independently and retains the correction’s source.",
+        "kailangan_practice_fil": "May pagtatangka; naihihiwalay ang ilang detalye ngunit kailangan ng prompt sa pinagmulan, kawalan ng katiyakan, kaugnayan o beripikasyon. Ulitin ang bahaging iyon.",
+        "kailangan_practice_en": "Attempts the task and separates some details but needs prompts for attribution, uncertainty, relevance or verification. Repeat that part.",
+        "hindi_pa_fil": "Walang naobserbahang pagtatangka, o itinatala pa rin ang hula/opinyon bilang katotohanan kahit may tulong. Kung hindi nasaksihan, markahang hindi naobserbahan at magtakda ng direktang obserbasyon.",
+        "hindi_pa_en": "No attempt is observed, or guesses/opinions are still recorded as fact despite support. If not witnessed, mark not observed and arrange direct observation."
       }
     }
   ]
