@@ -1,8 +1,8 @@
 ## [handoff] Iulat ang kailangan para makakilos
 
-Si BHW Mila ay nakinig kay Liza, 29. Sinabi ni Liza na walang magbabantay sa anak kaya mahirap pumunta sa health center; hindi pa nakumpirma ang huling attendance.
+Si BHW Gibs ay nakinig kay Liza, 29. Sinabi ni Liza na walang magbabantay sa anak kaya mahirap pumunta sa health center; hindi pa nakumpirma ang huling attendance.
 
-Ginagamit ni Mila ang aprubadong form: petsa, kaugnay na concern, pinagmulan ng impormasyon, ginawa at kailangang follow-up. Halimbawa: “Ayon kay Liza, problema ang magbabantay sa anak; petsa ng huling pagpunta ay ibeberipika. Humihingi ng pakikipag-usap sa midwife tungkol sa iskedyul.” Ibigay ito sa tamang health team member sa awtorisadong paraan. Huwag ilagay ang pangalan at pribadong detalye sa pampublikong group chat. Tanungin kung natanggap ang ulat at kung sino ang susunod na kikilos.
+Ginagamit ni Gibs ang aprubadong form: petsa, kaugnay na concern, pinagmulan ng impormasyon, ginawa at kailangang follow-up. Halimbawa: “Ayon kay Liza, problema ang magbabantay sa anak; petsa ng huling pagpunta ay ibeberipika. Humihingi ng pakikipag-usap sa midwife tungkol sa iskedyul.” Ibigay ito sa tamang health team member sa awtorisadong paraan. Huwag ilagay ang pangalan at pribadong detalye sa pampublikong group chat. Tanungin kung natanggap ang ulat at kung sino ang susunod na kikilos.
 
 ## [audience] Iangkop ang mensahe sa tatanggap
 

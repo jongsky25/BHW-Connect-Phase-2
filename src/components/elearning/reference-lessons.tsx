@@ -296,6 +296,9 @@ export function ReferenceLessons(props: Props) {
   const selfManagementMinutes = selfManagementTracks.length === 7 ? Math.ceil(selfManagementTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const teamworkTracks = lesson?.lesson_key === "bhw-teamwork" ? Object.values(props.narration?.[lesson.id] ?? {}) : [];
   const teamworkMinutes = teamworkTracks.length === 6 ? Math.ceil(teamworkTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
+  const listeningRevision = lesson?.lesson_key === "communication-listen" && lesson.revision.assets.some(asset => asset.id === "gibs-liza");
+  const listeningTracks = listeningRevision ? Object.values(lessonNarration ?? {}) : [];
+  const listeningMinutes = listeningTracks.length === 6 ? Math.ceil(listeningTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
   const videoLabel = narratedStory
     ? ui("Kuwentong may salaysay", "Narrated story")
@@ -554,6 +557,7 @@ export function ReferenceLessons(props: Props) {
             {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision) && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
+            {listeningRevision && !storyLayout && figures}
             {practice}
             {revealSummary && <div
               className={storyLayout ? "reference-story-lines" :
@@ -576,7 +580,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && (revealSummary || selfManagementRevision || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && (revealSummary || selfManagementRevision || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -749,18 +753,24 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {selfManagementRevision ? (selfManagementMinutes === null ? ui(
+              {listeningRevision ? (listeningMinutes === null ? ui(
+                "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 90-minutong guided practice.",
+                "Allow time for reading and practice; the 90-minute guided practice is separate.",
+              ) : ui(
+                `Tinatayang ${listeningMinutes}–${listeningMinutes + 3} minuto sa kabuuan: salaysay sa wikang ito at 3–6 minutong maikling pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 90-minutong guided practice.`,
+                `Estimated ${listeningMinutes}–${listeningMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 90-minute guided practice is separate.`,
+              )) : selfManagementRevision ? (selfManagementMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa, pagsasanay at pagninilay; hiwalay ang 30-minutong guided practice.",
                 "Allow time for reading, practice and reflection; the 30-minute guided practice is separate.",
               ) : ui(
                 `Tinatayang ${selfManagementMinutes}–${selfManagementMinutes + 3} minuto ayon sa audio sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 30-minutong guided practice.`,
-                `Estimated ${selfManagementMinutes}–${selfManagementMinutes + 3} minutes from this language’s audio plus 3–6 minutes of practice. The optional story is additional; the 30-minute guided practice is separate.`,
+                `Estimated ${selfManagementMinutes}–${selfManagementMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 30-minute guided practice is separate.`,
               )) : lesson.lesson_key === "bhw-teamwork" && lesson.revision.assets.some(asset => asset.id === "malou-teamwork") ? (teamworkMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa, pagsasanay at pagninilay; hiwalay ang 30-minutong guided practice.",
                 "Allow time for reading, practice and reflection; the 30-minute guided practice is separate.",
               ) : ui(
                 `Tinatayang ${teamworkMinutes}–${teamworkMinutes + 3} minuto ayon sa audio sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 30-minutong guided practice.`,
-                `Estimated ${teamworkMinutes}–${teamworkMinutes + 3} minutes from this language’s audio plus 3–6 minutes of practice. The optional story is additional; the 30-minute guided practice is separate.`,
+                `Estimated ${teamworkMinutes}–${teamworkMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 30-minute guided practice is separate.`,
               )) : lesson.lesson_key === "bhw-relationships" && lesson.revision.assets.some(asset => asset.id === "malou-courtyard") ? ui(
                 "Tinatayang 10–13 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang 30-minutong guided practice.",
                 "Estimated 10–13 minutes for independent study; optional story and audio replay are additional. The 30-minute guided practice is separate.",

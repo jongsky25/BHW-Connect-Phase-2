@@ -1,19 +1,23 @@
 ## [liza] Why is Liza quiet?
 
-Liza, 29, is speaking with BHW Mila for a household profile. A neighbor is beside her and she keeps looking at the door. She answers every question with “I’m fine.” Instead of guessing the missing details, Mila asks whether they can move somewhere more private and which language Liza prefers. She explains that relevant information is for the health team and service planning.
+Gibs, a male BHW, visits Liza, 29, for a household profile. A neighbor sits beside Liza and answers for her. Liza gives short replies and looks toward the door. These cues do not tell Gibs for certain how she feels. He pauses the questions. Before continuing, what should he check about Liza’s comfort and choices?
+
+## [permission] Ask permission and offer choices
+
+Gibs explains: “This is for an authorized household profile and health-service planning. Only relevant information will be used by the authorized health team under local policy. May we talk?” He asks about Liza’s preferred language, place and whether she wants a support person present. “Here in the quieter part, in Filipino, just us for now,” Liza replies. She may pause, leave a question unanswered for now or choose another time. Gibs does not promise absolute secrecy. If immediate help is needed, do not delay it to complete a routine interview; follow the local process.
 
 ## [listen] Listen before giving advice
 
-Mila sits at Liza’s level and puts her phone away. She waits for the story to finish: Liza feels ashamed about missing several health-center visits. Mila replies, “It sounds difficult to manage caregiving and getting there.” She does not call Liza lazy or promise to fix everything. A calm voice, appropriate eye contact and pauses leave space for a reply; do not force eye contact when it makes someone uncomfortable.
+Gibs sits at Liza’s level and puts his phone away. “What would you like to tell me about getting to the health center?” he asks. He allows time and does not interrupt. Liza says getting there is difficult when nobody can look after her child. “It sounds difficult to manage caregiving and getting there,” Gibs replies. He does not call Liza lazy or promise to fix everything. He uses a calm voice and allows pauses. Do not force eye contact; comfortable listening is not measured by staring.
 
-## [profile] Household profiling with a purpose
+## [profile] Summarize and check accuracy
 
-Before profiling, explain the form’s purpose and who will use it. Ask one question at a time, respect a person’s wish not to answer yet, and never guess a blank field. If someone speaks for Liza, give her the opportunity to respond. Summarize the record so she can correct errors. More personal information does not automatically make a better profile; collect what the authorized task requires.
+“Have I understood correctly: getting there is difficult when nobody can look after your child?” Gibs asks. “Yes, when my sister is away,” Liza clarifies. Gibs offers a more accurate summary: “When your sister is away, it is difficult to find childcare. Is that right?” Liza confirms it. This is a fictional accuracy check, not an actual record. In an authorized profile, collect only relevant information, do not guess missing answers and respect a wish not to answer yet. No childcare arrangement or appointment has been promised.
 
 ## [practice] Try it, then repeat
 
-Play Liza and Mila. Liza wants privacy and has a childcare barrier. Ask permission, agree on the place and language, listen, then summarize her concern. Ask a partner to identify one helpful phrase and repeat any rushed part. Alone, speak both roles aloud. Use the same opening at your next authorized visit.
+Use the fictional role cards: Gibs, Liza and observer. Rehearse permission, choice of place and language, listening without interruption, and a summary with an accuracy check. Liza chooses whether she wants a support person. The observer records the exact helpful phrase and any rushed step. Repeat that part before rotating roles. Everyone practices as the BHW. Alone, say both roles aloud and check the listening aid. At the next authorized visit, rehearse the same opening. Do not upload a resident’s private account.
 
 ## [check] Choose the next step
 
-Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.
+Return to the scene: the neighbor answers for Liza. Gibs holds a closed clipboard. He has not yet checked where, in which language and with whom Liza feels comfortable talking. Choose the first step and explain your reason before viewing feedback. Then compare your decision with your practice attempt.

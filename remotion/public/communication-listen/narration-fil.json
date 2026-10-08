@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural Filipino (Tagalog) as one continuous adult Filipina trainer, Kore, in a settled feminine mid-register with light warm resonance. Every separately supplied heading, sentence, quotation and ending continues this identical woman narrator and pitch range. Keep that vocal identity steady from the first syllable through the last; use gentle pauses and emphasis, with no character acting, secondary presenter or baritone register. Pronunciation spellings Lisa and Gibz represent the displayed names Liza (LEE-sa) and Gibs (gibz); pronounce them consistently. Preserve every supplied word, negation, permission and accuracy-check question, and finish each instruction completely. Do not translate, paraphrase or add words. Delivery revision 2.",
+  "durationSeconds": 64.418,
+  "beats": [
+    {
+      "zone": "liza",
+      "index": 0,
+      "text": "Si Gibs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibs; hindi niya hinulaan ang katahimikan.",
+      "start_ms": 0,
+      "end_ms": 10840
+    },
+    {
+      "zone": "permission",
+      "index": 1,
+      "text": "Ipinaliwanag niya ang layunin at gamit ng impormasyon. Humingi siya ng pahintulot. Pinili ni Liza ang mas tahimik na lugar, Filipino, at silang dalawa muna.",
+      "start_ms": 11140,
+      "end_ms": 20780
+    },
+    {
+      "zone": "listen",
+      "index": 2,
+      "text": "Itinabi ni Gibs ang telepono. Nagtanong siya nang bukas at naghintay. Ikinuwento ni Liza ang hadlang sa pag-aalaga ng anak. Walang pagsabat o paratang.",
+      "start_ms": 21080,
+      "end_ms": 30400
+    },
+    {
+      "zone": "profile",
+      "index": 3,
+      "text": "Tinanong ni Gibs kung tama ang buod. “Kapag wala ang kapatid ko,” paglilinaw ni Liza. Ibinalik niya ang mas tumpak na buod at kinumpirma ito ni Liza.",
+      "start_ms": 30700,
+      "end_ms": 40980
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Sa pagsasanay, gumamit ng kathang-isip na role cards. Lahat ay susubok bilang BHW. Tukuyin ang linyang nakatulong at ulitin ang minadaling hakbang.",
+      "start_ms": 41280,
+      "end_ms": 52800
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Nakapagsalita si Liza at tiniyak ni Gibs ang pagkaintindi. Walang pangako ng childcare o appointment. Sa susunod na awtorisadong pagbisita, sanayin ang pambungad at buod na tanong.",
+      "start_ms": 53100,
+      "end_ms": 64340
+    }
+  ],
+  "audio_sha256": "777d40bcfe02384f4d10f3382835a33b05d4587d51f3f527656cd13830cd1833"
+}

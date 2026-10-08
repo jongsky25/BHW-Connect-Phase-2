@@ -1,0 +1,57 @@
+{
+  "character": "Gibs",
+  "gender": "male",
+  "Liza": "Fictional mother aged29, mustard blouse and blue skirt",
+  "states": [
+    "crowded conversation",
+    "offered setting choices",
+    "uninterrupted account",
+    "summary and correction",
+    "triad rehearsal",
+    "unresolved neighbor-answering decision"
+  ],
+  "asset_provenance": "Built-in imagegen; first generated scene set had inconsistent Liza clothes. Four scenes edited using first scene as identity reference.",
+  "owner_art_review": "pending",
+  "generator": "Built-in image_gen.imagegen",
+  "model_id": null,
+  "model_id_reason": "Tool did not disclose model identifier.",
+  "reference_sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02",
+  "prompt_design": "Fictional male Filipino BHW around35, medium-brown skin, short black hair, teal polo with Gibs badge, navy trousers, closed clipboard; warm hand-painted illustration, no real patient record or logo. Six landscape scenes depict actual actions. Four scenes were corrected to match Liza in mustard blouse and blue skirt. Closing image removes empty bubbles and depicts confirmation.",
+  "final_scene_assets": [
+    {
+      "file": "remotion/public/communication-listen/check.png",
+      "sha256": "348430167a69f65d96735a7b3bda35d21d3a8404c3c6ccb1f94057c16c608f26",
+      "bytes": 2523205
+    },
+    {
+      "file": "remotion/public/communication-listen/closing.png",
+      "sha256": "5cc01cd48aea6c7358cc1c8c436f9ab12fd582a95b0abc7bc66c0a8abf2723ca",
+      "bytes": 2287670
+    },
+    {
+      "file": "remotion/public/communication-listen/listen.png",
+      "sha256": "b385842fd8e03276ffd72d29e0d4e39038a8aa528e8dbed002666a11806d03df",
+      "bytes": 2535821
+    },
+    {
+      "file": "remotion/public/communication-listen/liza.png",
+      "sha256": "0b433575765cf475aee091922be2b70c042f252dcecb341ba8d7614cb6540463",
+      "bytes": 2626748
+    },
+    {
+      "file": "remotion/public/communication-listen/permission.png",
+      "sha256": "ac9bcc90f9f79b086bdbfa66981a1e7a1985803ab4c7356df9620755fdc614b9",
+      "bytes": 2599617
+    },
+    {
+      "file": "remotion/public/communication-listen/practice.png",
+      "sha256": "c746e090e23bdd76b3d89f899578e5a4294a6c013369bc0ac8877935f20725b5",
+      "bytes": 2065650
+    },
+    {
+      "file": "remotion/public/communication-listen/profile.png",
+      "sha256": "37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed",
+      "bytes": 2361561
+    }
+  ]
+}

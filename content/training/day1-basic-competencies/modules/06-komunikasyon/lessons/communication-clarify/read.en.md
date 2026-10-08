@@ -1,6 +1,6 @@
 ## [open-question] Open first, then clarify
 
-Liza, 29, missed a health-center visit because of childcare barriers. BHW Mila is finding out what happened.
+Liza, 29, missed a health-center visit because of childcare barriers. BHW Gibs is finding out what happened.
 
 “Why don’t you follow instructions?” sounds like an accusation. “What makes it hard to attend?” invites an explanation. Follow an open question with focused clarification: “When was your last visit?” Yes-or-no questions are useful when confirming one detail. Avoid asking three questions at once or putting the answer into the person’s mouth.
 

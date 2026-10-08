@@ -7,9 +7,30 @@
     "layout": "scene",
     "heading_fil": "Bakit tahimik si Liza?",
     "heading_en": "Why is Liza quiet?",
-    "display_fil": "Si Liza, 29, ay tahimik habang katabi ang kapitbahay. Ipaliwanag ang layunin ng profile. Itanong ang gustong wika at kung nais niyang lumipat sa mas pribadong lugar.",
-    "display_en": "Liza, 29, is quiet beside a neighbor. Explain the profile’s purpose. Ask her preferred language and whether she would like a more private place.",
-    "asset_ids": [],
+    "display_fil": "Katabi ni Liza ang kapitbahay na sumasagot para sa kanya. Ano ang dapat munang alamin ni Gibs?",
+    "display_en": "A neighbor answers for Liza. What should Gibs check before continuing?",
+    "narration_fil": "Si Gibs, isang lalaking BHW, ay bumisita kay Liza, 29 anyos, para sa household profile. Katabi ni Liza ang kapitbahay na sumasagot para sa kanya. Maikli ang sagot ni Liza at tumitingin siya sa pinto. Hindi nito tiyak na sinasabi kung ano ang nararamdaman niya. Huminto muna si Gibs sa pagtatanong. Bago magpatuloy, ano ang dapat niyang alamin tungkol sa ginhawa at pagpili ni Liza?",
+    "narration_en": "Gibs, a male BHW, visits Liza, 29, for a household profile. A neighbor sits beside Liza and answers for her. Liza gives short replies and looks toward the door. These cues do not tell Gibs for certain how she feels. He pauses the questions. Before continuing, what should he check about Liza’s comfort and choices?",
+    "asset_ids": [
+      "gibs-liza"
+    ],
+    "check": null
+  },
+  {
+    "id": "slide-permission",
+    "concept_ids": [
+      "m6.gather"
+    ],
+    "layout": "scene",
+    "heading_fil": "Humingi ng pahintulot at mag-alok ng pagpili",
+    "heading_en": "Ask permission and offer choices",
+    "display_fil": "Ipaliwanag ang layunin at gamit. Humingi ng pahintulot. Itanong ang lugar, wika at gustong kasama. Puwedeng huminto o pumili ng ibang oras.",
+    "display_en": "Explain the purpose and use. Ask permission. Check place, language and support-person preferences. A pause or another time is possible.",
+    "narration_fil": "Ipinaliwanag ni Gibs: “Para po ito sa awtorisadong household profile at pagpaplano ng serbisyong pangkalusugan. Kaugnay na impormasyon lamang ang gagamitin ng awtorisadong health team ayon sa lokal na patakaran. Maaari po ba tayong mag-usap?” Tinanong niya ang gustong wika, lugar at kung nais ni Liza ng kasamang susuporta sa kanya. “Dito po sa mas tahimik na bahagi, sa Filipino, tayo muna,” sagot ni Liza. Maaari siyang magpahinga, hindi muna sumagot o pumili ng ibang oras. Hindi pangako ng ganap na lihim ang paliwanag ni Gibs. Kung kailangan ng agarang tulong, huwag itong ipagpaliban para makumpleto ang karaniwang interview; sundin ang lokal na proseso.",
+    "narration_en": "Gibs explains: “This is for an authorized household profile and health-service planning. Only relevant information will be used by the authorized health team under local policy. May we talk?” He asks about Liza’s preferred language, place and whether she wants a support person present. “Here in the quieter part, in Filipino, just us for now,” Liza replies. She may pause, leave a question unanswered for now or choose another time. Gibs does not promise absolute secrecy. If immediate help is needed, do not delay it to complete a routine interview; follow the local process.",
+    "asset_ids": [
+      "gibs-permission"
+    ],
     "check": null
   },
   {
@@ -17,12 +38,16 @@
     "concept_ids": [
       "m6.empathy"
     ],
-    "layout": "process",
+    "layout": "scene",
     "heading_fil": "Makinig bago magpayo",
     "heading_en": "Listen before giving advice",
-    "display_fil": "Itabi ang telepono. Hayaang matapos ang kuwento. “Mukhang mahirap pagsabayin ang pag-aalaga at pagpunta roon.” Gumamit ng mahinahong boses; huwag pilitin ang eye contact.",
-    "display_en": "Put the phone away. Let the story finish. “It sounds difficult to manage caregiving and getting there.” Use a calm voice; do not force eye contact.",
-    "asset_ids": [],
+    "display_fil": "Itabi ang telepono. Magtanong nang bukas. Huwag sumabat. Kilalanin ang hirap; huwag pilitin ang eye contact.",
+    "display_en": "Put the phone away. Offer an open invitation. Do not interrupt. Acknowledge difficulty; do not force eye contact.",
+    "narration_fil": "Umupo si Gibs nang kapantay ni Liza at itinabi ang telepono. “Ano po ang gusto ninyong ikuwento tungkol sa pagpunta sa health center?” tanong niya. Nagbigay siya ng oras at hindi sumabat. Sinabi ni Liza na mahirap pumunta kapag walang magbabantay sa anak. “Mukhang mahirap pagsabayin ang pag-aalaga at pagpunta roon,” tugon ni Gibs. Hindi niya tinawag na tamad si Liza o nangakong maaayos ang lahat. Gumamit siya ng mahinahong boses at sapat na paghinto. Huwag pilitin ang eye contact; ang komportableng pakikinig ay hindi sinusukat sa pagtitig.",
+    "narration_en": "Gibs sits at Liza’s level and puts his phone away. “What would you like to tell me about getting to the health center?” he asks. He allows time and does not interrupt. Liza says getting there is difficult when nobody can look after her child. “It sounds difficult to manage caregiving and getting there,” Gibs replies. He does not call Liza lazy or promise to fix everything. He uses a calm voice and allows pauses. Do not force eye contact; comfortable listening is not measured by staring.",
+    "asset_ids": [
+      "gibs-listen"
+    ],
     "check": null
   },
   {
@@ -30,12 +55,16 @@
     "concept_ids": [
       "m6.profile"
     ],
-    "layout": "process",
-    "heading_fil": "Household profile na may layunin",
-    "heading_en": "Household profiling with a purpose",
-    "display_fil": "Sabihin kung sino ang gagamit ng form. Isa-isahin ang tanong; igalang ang ayaw munang sagutin. Ibalik kay Liza ang pagkakataong sumagot. Ibuod upang maitama niya ang tala.",
-    "display_en": "Explain who uses the form. Ask one question at a time; respect a wish not to answer yet. Let Liza speak for herself. Summarize so she can correct the record.",
-    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ibuod at tiyaking tama",
+    "heading_en": "Summarize and check accuracy",
+    "display_fil": "Gibs: “Tama po ba?” Liza: “Kapag wala ang kapatid ko.” Gibs: ibalik ang mas tumpak na buod at muling tiyakin.",
+    "display_en": "Gibs: “Is that right?” Liza: “When my sister is away.” Gibs: give the more accurate summary and check again.",
+    "narration_fil": "“Tama po ba ang pagkaintindi ko: mahirap pumunta kapag walang magbabantay sa anak ninyo?” tanong ni Gibs. “Opo, kapag wala ang kapatid ko,” paglilinaw ni Liza. Ibinalik ni Gibs ang mas tumpak na buod: “Kapag wala ang kapatid ninyo, mahirap makahanap ng magbabantay. Tama po ba?” Kinumpirma ito ni Liza. Kathang-isip na halimbawa ito ng pagtitiyak, hindi aktuwal na rekord. Sa awtorisadong profile, kunin lamang ang kaugnay na impormasyon, huwag hulaan ang patlang at igalang ang ayaw munang sagutin. Walang ipinangakong childcare o appointment.",
+    "narration_en": "“Have I understood correctly: getting there is difficult when nobody can look after your child?” Gibs asks. “Yes, when my sister is away,” Liza clarifies. Gibs offers a more accurate summary: “When your sister is away, it is difficult to find childcare. Is that right?” Liza confirms it. This is a fictional accuracy check, not an actual record. In an authorized profile, collect only relevant information, do not guess missing answers and respect a wish not to answer yet. No childcare arrangement or appointment has been promised.",
+    "asset_ids": [
+      "gibs-profile"
+    ],
     "check": null
   },
   {
@@ -45,12 +74,16 @@
       "m6.empathy",
       "m6.profile"
     ],
-    "layout": "process",
+    "layout": "scene",
     "heading_fil": "Subukan, saka ulitin",
     "heading_en": "Try it, then repeat",
-    "display_fil": "Pahintulot → lugar at wika → makinig → ibuod. Kapareha: tukuyin ang isang helpful na linya. Ulitin ang bahaging minadali.",
-    "display_en": "Permission → place and language → listen → summarize. Partner: identify one helpful phrase. Repeat the rushed part.",
-    "asset_ids": [],
+    "display_fil": "Pahintulot → lugar at wika → makinig → ibuod at tiyakin. Ulitin ang minadaling hakbang, saka magpalit ng papel.",
+    "display_en": "Permission → place and language → listen → summarize and check. Repeat the rushed step, then rotate roles.",
+    "narration_fil": "Gamitin ang kathang-isip na role cards: Gibs, Liza at tagamasid. Magsanay ng pahintulot, pagpili ng lugar at wika, pakikinig nang hindi sumasabat, at buod na may pagtiyak. Si Liza ang pipili kung may kasamang susuporta. Itala ng tagamasid ang eksaktong linyang nakatulong at ang hakbang na minadali. Ulitin ang bahaging iyon bago magpalit ng papel. Lahat ay susubok bilang BHW. Kung mag-isa, sabihin nang malakas ang dalawang papel at itsek ang listening aid. Sa susunod na awtorisadong pagbisita, sanayin ang parehong pambungad. Huwag mag-upload ng pribadong kuwento ng residente.",
+    "narration_en": "Use the fictional role cards: Gibs, Liza and observer. Rehearse permission, choice of place and language, listening without interruption, and a summary with an accuracy check. Liza chooses whether she wants a support person. The observer records the exact helpful phrase and any rushed step. Repeat that part before rotating roles. Everyone practices as the BHW. Alone, say both roles aloud and check the listening aid. At the next authorized visit, rehearse the same opening. Do not upload a resident’s private account.",
+    "asset_ids": [
+      "gibs-practice"
+    ],
     "check": null
   },
   {
@@ -63,12 +96,16 @@
     "layout": "decision",
     "heading_fil": "Piliin ang susunod na hakbang",
     "heading_en": "Choose the next step",
-    "display_fil": "Mas malinaw ang concern kapag may pahintulot, privacy at oras ang kausap.",
-    "display_en": "Permission, privacy and time help the person explain the concern.",
-    "asset_ids": [],
+    "display_fil": "Kapitbahay ang sumasagot. Piliin ang unang hakbang bago tingnan ang paliwanag at wakas.",
+    "display_en": "The neighbor is answering. Choose the first step before viewing the explanation and ending.",
+    "narration_fil": "Bumalik sa tagpo: ang kapitbahay ang sumasagot para kay Liza. Hawak ni Gibs ang nakasarang clipboard. Hindi pa niya alam kung saan, sa anong wika at kanino kasama komportable si Liza. Piliin ang unang hakbang at ipaliwanag ang dahilan bago tingnan ang feedback. Pagkatapos, ihambing ang pasya sa ginawa mo sa pagsasanay.",
+    "narration_en": "Return to the scene: the neighbor answers for Liza. Gibs holds a closed clipboard. He has not yet checked where, in which language and with whom Liza feels comfortable talking. Choose the first step and explain your reason before viewing feedback. Then compare your decision with your practice attempt.",
+    "asset_ids": [
+      "gibs-check"
+    ],
     "check": {
-      "prompt_fil": "Sumasagot ang kapitbahay para kay Liza. Ano ang unang gagawin ni Mila?",
-      "prompt_en": "A neighbor answers for Liza. What should Mila do first?",
+      "prompt_fil": "Sumasagot ang kapitbahay para kay Liza. Ano ang unang gagawin ni Gibs?",
+      "prompt_en": "A neighbor answers for Liza. What should Gibs do first?",
       "options": [
         {
           "fil": "Ituloy ang form gamit ang sagot ng kapitbahay.",
@@ -84,8 +121,8 @@
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "Ang ikalawang sagot ay nagbibigay kay Liza ng boses at pagpili. Ang sagot ng kapitbahay ay hindi awtomatikong sagot niya; ang agarang payo ay maaaring mauna sa tunay na concern.",
-      "feedback_en": "The second response gives Liza a voice and a choice. Her neighbor’s answer is not automatically hers; immediate advice may miss her actual concern."
+      "feedback_fil": "Una: maaaring mali ang sagot ng kapitbahay para kay Liza; huwag itong gawing sagot niya. Ikalawa: tanungin si Liza tungkol sa ginhawa at pagpili upang siya mismo ang makapagsalita. Ito ang tamang unang hakbang. Ikatlo: ang payo bago makinig ay maaaring hindi tumugon sa tunay na concern. Sa wakas, pinili ni Liza ang mas tahimik na lugar at Filipino. Sinabi niyang mahirap pumunta kapag wala ang kapatid na nagbabantay sa anak. Ibinuod ito ni Gibs bilang tanong at kinumpirma ni Liza. Walang ipinangakong childcare o appointment.",
+      "feedback_en": "First: the neighbor’s answer may not be Liza’s; do not treat it as her answer. Second: ask Liza about comfort and choices so she can speak for herself. This is the correct first step. Third: advice before listening may miss the actual concern. In the ending, Liza chooses a quieter place and Filipino. She explains that visits are difficult when her sister cannot look after her child. Gibs summarizes this as a question and Liza confirms it. No childcare or appointment is promised."
     }
   }
 ]

@@ -1,8 +1,8 @@
 ## [teach-back] Isang mensahe, saka pakinggan ang balik
 
-Si BHW Mila ay nakipag-usap kay Liza, 29, tungkol sa hadlang sa pagpunta sa health center. Magkasundo silang makikipag-ugnayan sa midwife tungkol sa iskedyul.
+Si BHW Gibs ay nakipag-usap kay Liza, 29, tungkol sa hadlang sa pagpunta sa health center. Magkasundo silang makikipag-ugnayan sa midwife tungkol sa iskedyul.
 
-Ipinaliwanag ni Mila ang napagkasunduang susunod na hakbang sa payak na salita. “Para malaman kong malinaw ang paliwanag ko, paano mo ikukuwento ang plano pag-uwi?” Kapag iba ang sagot ni Liza, uulitin ni Mila sa ibang paraan at muling magtatanong. Ang teach-back ay pagsusuri sa linaw ng paliwanag, hindi pagsusulit sa talino ng kausap. Gumamit ng angkop na larawan kung makakatulong; huwag magbigay ng payong lampas sa pagsasanay at tagubilin ng health team.
+Ipinaliwanag ni Gibs ang napagkasunduang susunod na hakbang sa payak na salita. “Para malaman kong malinaw ang paliwanag ko, paano mo ikukuwento ang plano pag-uwi?” Kapag iba ang sagot ni Liza, uulitin ni Gibs sa ibang paraan at muling magtatanong. Ang teach-back ay pagsusuri sa linaw ng paliwanag, hindi pagsusulit sa talino ng kausap. Gumamit ng angkop na larawan kung makakatulong; huwag magbigay ng payong lampas sa pagsasanay at tagubilin ng health team.
 
 ## [family-planning] May tanong tungkol sa family planning
 

@@ -1,3 +1,4 @@
+import {CommunicationListenStory, calculateCommunicationListenMetadata, COMMUNICATION_LISTEN_FPS, COMMUNICATION_LISTEN_FALLBACK_DURATION} from "./communication-listen/CommunicationListenStory";
 import {BhwSelfManagementStory, calculateBhwSelfManagementMetadata, SELF_MANAGEMENT_FPS, SELF_MANAGEMENT_FALLBACK_DURATION} from "./bhw-self-management/BhwSelfManagementStory";
 import {BhwRightContactStory, calculateBhwRightContactMetadata, RIGHT_CONTACT_FPS, RIGHT_CONTACT_FALLBACK_DURATION} from "./bhw-right-contact/BhwRightContactStory";
 import {BhwTeamworkStory, calculateBhwTeamworkMetadata, TEAMWORK_FPS, TEAMWORK_FALLBACK_DURATION} from "./bhw-teamwork/BhwTeamworkStory";
@@ -364,6 +365,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`bhw-self-management-${language}`} id={language === "fil" ? "BhwSelfManagementStoryFil" : "BhwSelfManagementStoryEn"}
           component={BhwSelfManagementStory} calculateMetadata={calculateBhwSelfManagementMetadata}
           durationInFrames={SELF_MANAGEMENT_FALLBACK_DURATION} fps={SELF_MANAGEMENT_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`communication-listen-${language}`} id={language === "fil" ? "CommunicationListenStoryFil" : "CommunicationListenStoryEn"}
+          component={CommunicationListenStory} calculateMetadata={calculateCommunicationListenMetadata}
+          durationInFrames={COMMUNICATION_LISTEN_FALLBACK_DURATION} fps={COMMUNICATION_LISTEN_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

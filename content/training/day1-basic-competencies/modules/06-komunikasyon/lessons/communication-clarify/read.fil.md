@@ -1,6 +1,6 @@
 ## [open-question] Bukas muna, saka linawin
 
-Si Liza, 29, ay hindi nakapunta sa health center dahil may hadlang sa pag-aalaga ng anak. Inaalam ni BHW Mila kung ano ang nangyari.
+Si Liza, 29, ay hindi nakapunta sa health center dahil may hadlang sa pag-aalaga ng anak. Inaalam ni BHW Gibs kung ano ang nangyari.
 
 “Bakit hindi ka sumusunod?” ay paratang na tanong. Mas makakatulong ang “Ano ang nagpapahirap sa pagpunta mo?” Pagkatapos ng bukas na tanong, gumamit ng tiyak na paglilinaw: “Kailan ka huling nakapunta?” Hindi masama ang tanong na oo o hindi kung isang detalye ang kailangang kumpirmahin. Iwasan ang tatlong tanong na magkakasabay at ang sagot na isinusubo na sa kausap.
 

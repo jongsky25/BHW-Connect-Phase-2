@@ -1,0 +1,2359 @@
+{
+  "prompt_revision": "gibs-listening-v1",
+  "date": "2026-10-08T06:09:03.598Z",
+  "source_commit": "9fa501541eb85d986ef01985dcae3735c9096a0f",
+  "model": "gemini-3.8-flash",
+  "decode_only": false,
+  "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "method": "Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.",
+  "records": [
+    {
+      "id": "read-check-fil",
+      "language": "fil",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/check.fil.47ed16057bab.mp3",
+      "source_sha256": "7374c3df65795766c5e2040b5fed2733e406b49e1762bc54849c151996b96265",
+      "decoded_pcm_sha256": "11cf05d3557f04d4eb3130a041354052bb43f9f805a6c742bebb88deff3dd5d6",
+      "full_audio_metrics": {
+        "samples": 749192,
+        "seconds": 31.216333333333335,
+        "rms": 0.14139501950802577,
+        "peak": 1,
+        "quiet_sample_fraction": 0.2385223013593311
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Piliin ang susunod na hakbang",
+          "start_ms": 0,
+          "end_ms": 2360,
+          "samples": 56640,
+          "seconds": 2.36,
+          "rms": 0.15775831001423052,
+          "peak": 0.853607177734375,
+          "quiet_sample_fraction": 0.25469632768361583
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Bumalik sa tagpo: ang kapitbahay ang sumasagot para kay Liza.",
+          "start_ms": 2660,
+          "end_ms": 7060,
+          "samples": 105600,
+          "seconds": 4.4,
+          "rms": 0.15025522595937624,
+          "peak": 1,
+          "quiet_sample_fraction": 0.28321022727272727
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Hawak ni Gibs ang nakasarang clipboard.",
+          "start_ms": 7360,
+          "end_ms": 9960,
+          "samples": 62400,
+          "seconds": 2.6,
+          "rms": 0.14095871465781631,
+          "peak": 0.918487548828125,
+          "quiet_sample_fraction": 0.24251602564102565
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Hindi pa niya alam kung saan, sa anong wika at kanino kasama komportable si Liza.",
+          "start_ms": 10260,
+          "end_ms": 16500,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.13307521667671904,
+          "peak": 0.791168212890625,
+          "quiet_sample_fraction": 0.11373530982905983
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Piliin ang unang hakbang at ipaliwanag ang dahilan bago tingnan ang feedback.",
+          "start_ms": 16800,
+          "end_ms": 21840,
+          "samples": 120960,
+          "seconds": 5.04,
+          "rms": 0.1574430672467604,
+          "peak": 0.85406494140625,
+          "quiet_sample_fraction": 0.12544642857142857
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Pagkatapos, ihambing ang pasya sa ginawa mo sa pagsasanay.",
+          "start_ms": 22140,
+          "end_ms": 26100,
+          "samples": 95040,
+          "seconds": 3.96,
+          "rms": 0.13014117088607438,
+          "peak": 0.9146728515625,
+          "quiet_sample_fraction": 0.17082281144781145
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Bigyan ng pagpili at boses si Liza, saka tiyakin ang pagkaintindi.",
+          "start_ms": 26400,
+          "end_ms": 31160,
+          "samples": 114240,
+          "seconds": 4.76,
+          "rms": 0.1532935895504272,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.2298844537815126
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.06,
+          "file": "read-check-fil-head.wav",
+          "excerpt_sha256": "ca1d988bdb1c838fa91fad5661af2e3dc7dec59a51bc639664d2517e9e1d35de",
+          "decoded_sample_count": 169440,
+          "expected_context": "Piliin ang susunod na hakbang Bumalik sa tagpo: ang kapitbahay ang sumasagot para kay Liza.",
+          "model_response": "```json\n{\n  \"transcript\": \"Piliin ang susunod na hakbang. Bumalik sa tagpo. Ang kapitbahay ang sumasagot para kay Liza.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"The name 'Gibs' is not mentioned in this audio excerpt.\",\n    \"liza_pronunciation\": \"Pronounced as 'LEE-sa' ([ˈli.sa]) around 00:06, matching the target pronunciation.\",\n    \"negation\": \"No negative words or constructions are present in this excerpt.\",\n    \"role_distinctions\": \"A single narrator voice delivers instructional/menu prompts followed by a context line.\",\n    \"ending_completeness\": \"The sentence and final syllable of 'Liza' conclude cleanly without truncation.\",\n    \"audible_speech\": \"Speech is fully audible and clear throughout the excerpt.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.66,
+          "end": 7.06,
+          "file": "read-check-fil-body.wav",
+          "excerpt_sha256": "a50ff159a56b27845a32f5da4cfc84e708de1656eaaf0f2ae8ad68167836644d",
+          "decoded_sample_count": 105600,
+          "expected_context": "Bumalik sa tagpo: ang kapitbahay ang sumasagot para kay Liza.",
+          "model_response": "```json\n{\n  \"transcript\": \"Bumalik sa tagpo. Ang kapitbahay ang sumasagot para kay Lisa.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Not present in this excerpt.\",\n    \"liza_pronunciation\": \"Pronounced clearly as 'LEE-sa' ([ˈli.sa]) around 00:03.35–00:03.85.\",\n    \"negation\": \"No negation terms occur in this excerpt.\",\n    \"role_distinctions\": \"Narrator voice is distinct, clear, and uniform throughout.\",\n    \"ending_completeness\": \"The sentence finishes completely without being cut off.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible with minimal background noise.\",\n    \"clipped_words\": \"None detected; both phrase segments have clean onsets and offsets.\",\n    \"unexpected_voice_changes\": \"None detected; tone and pacing remain steady.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is clear and speech is unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 10.26,
+          "end": 21.84,
+          "file": "read-check-fil-critical.wav",
+          "excerpt_sha256": "a76e00144fe22c2d0538caf9ef1cd65ac2b2739b7ac28ba55e401c243a6e5e4d",
+          "decoded_sample_count": 277920,
+          "expected_context": "Hindi pa niya alam kung saan, sa anong wika at kanino kasama komportable si Liza. Piliin ang unang hakbang at ipaliwanag ang dahilan bago tingnan ang feedback.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi pa niya alam kung saan, sa anong wika, at kanino kasama kumportable si Liza. Piliin ang unang hakbang at ipaliwanag ang dahilan bago tingnan ang feedback.\",\n  \"observations\": {\n    \"gibz_pronunciation\": \"The name 'Gibs' does not appear in this audio excerpt.\",\n    \"liza_pronunciation\": \"At 00:05.3 - 00:05.8, 'Liza' is pronounced clearly as 'LEE-sa' ([ˈli.sa]).\",\n    \"negation\": \"The negation 'Hindi' is spoken clearly at 00:00.0 - 00:00.4 ('Hindi pa niya alam...').\",\n    \"role_distinctions\": \"There is a distinct change in speaker role: a male voice speaks from 00:00.0 to 00:05.9 (narrative context), followed by a female voice from 00:06.4 to 00:11.4 providing task instructions.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'feedback' at 00:11.3 without clipping or premature cutoff.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and free of masking background noise.\",\n    \"clipped_words\": \"None detected; both phrase starts and ends have intact envelopes.\",\n    \"unexpected_voice_changes\": \"A shift in speaker gender/timbre occurs between 00:05.9 and 00:06.4 (male narrator to female instructional prompt), which aligns with typical instructional design rather than an anomalous pitch/voice artifact.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality and speech clarity are high.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 10.26,
+          "end": 31.216333333333335,
+          "file": "read-check-fil-ending.wav",
+          "excerpt_sha256": "a811583684cf34f6150c2af6b872f378dd6b54daa8010cbe3300c84600dffc8e",
+          "decoded_sample_count": 502952,
+          "expected_context": "Hindi pa niya alam kung saan, sa anong wika at kanino kasama komportable si Liza. Piliin ang unang hakbang at ipaliwanag ang dahilan bago tingnan ang feedback. Pagkatapos, ihambing ang pasya sa ginawa mo sa pagsasanay. Bigyan ng pagpili at boses si Liza, saka tiyakin ang pagkaintindi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi pa niya alam kung saan, sa anong wika, at kanino kasama kumportable si Liza. Piliin ang unang hakbang at ipaliwanag ang dahilan bago tingnan ang feedback. Pagkatapos, ihambing ang pasya sa ginawa mo sa pagsasanay. Bigyan ng pagpili at boses si Liza, saka tiyakin ang pagkakaintindi.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00 - 00:01\",\n      \"detail\": \"Negation 'Hindi pa niya alam' is cleanly articulated.\"\n    },\n    {\n      \"timestamp\": \"00:00 - 00:06\",\n      \"detail\": \"Spoken by a male speaker portraying scenario/narrative context.\"\n    },\n    {\n      \"timestamp\": \"00:05\",\n      \"detail\": \"The male speaker pronounces 'Liza' closer to the target 'LEE-sa' ([ˈliː.sa]).\"\n    },\n    {\n      \"timestamp\": \"00:06 - 00:11\",\n      \"detail\": \"Speaker switches to an instructional female voice.\"\n    },\n    {\n      \"timestamp\": \"00:12 - 00:15\",\n      \"detail\": \"Shift to a second female voice/timbre providing follow-up instructions.\"\n    },\n    {\n      \"timestamp\": \"00:16 - 00:20\",\n      \"detail\": \"Female voice concludes instruction; the sentence ends completely without clipping.\"\n    },\n    {\n      \"timestamp\": \"00:17 - 00:18\",\n      \"detail\": \"The speaker pronounces 'Liza' using English phonology as /ˈlaɪ.zə/ ('LY-zuh') rather than the requested 'LEE-sa'.\"\n    },\n    {\n      \"timestamp\": \"00:00 - 00:20\",\n      \"detail\": \"The name 'Gibs' does not appear in this excerpt.\"\n    }\n  ],\n  \"possible_defects\": [\n    {\n      \"type\": \"pronunciation_inconsistency\",\n      \"timestamp\": \"00:17 - 00:18\",\n      \"description\": \"'Liza' is pronounced as /ˈlaɪzə/ ('LY-zuh') instead of 'LEE-sa' ([ˈliːsa]), creating an inconsistency with the earlier pronunciation at 00:05.\"\n    },\n    {\n      \"type\": \"voice_change\",\n      \"timestamp\": \"00:06 and 00:12\",\n      \"description\": \"Noticeable shifts in speakers/vocal profiles across sequential instructional steps.\"\n    }\n  ],\n  \"uncertainty\": \"None; all spoken words are clear and identifiable.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-listen-fil",
+      "language": "fil",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/listen.fil.6d66945bc07f.mp3",
+      "source_sha256": "7eb9a5a5454ca0c57b3c1fe474fb65a25c637f98bd2b525550299ad757a8ec7e",
+      "decoded_pcm_sha256": "8ba1095eee66c6ea137cb700b1788ea14b464d8c381396df2c6ac99c2d34c0d1",
+      "full_audio_metrics": {
+        "samples": 1150433,
+        "seconds": 47.93470833333333,
+        "rms": 0.12903138125852845,
+        "peak": 0.999969482421875,
+        "quiet_sample_fraction": 0.255686337231286
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Makinig bago magpayo",
+          "start_ms": 0,
+          "end_ms": 2080,
+          "samples": 49920,
+          "seconds": 2.08,
+          "rms": 0.16085142683377066,
+          "peak": 0.995697021484375,
+          "quiet_sample_fraction": 0.25793269230769234
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Umupo si Gibs nang kapantay ni Liza at itinabi ang telepono.",
+          "start_ms": 2380,
+          "end_ms": 6300,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.13922050003146794,
+          "peak": 0.8792724609375,
+          "quiet_sample_fraction": 0.1468218537414966
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "“Ano po ang gusto ninyong ikuwento tungkol sa pagpunta sa health center?”",
+          "start_ms": 6600,
+          "end_ms": 10760,
+          "samples": 99840,
+          "seconds": 4.16,
+          "rms": 0.12503229245787692,
+          "peak": 0.790557861328125,
+          "quiet_sample_fraction": 0.14888822115384615
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "tanong niya.",
+          "start_ms": 11060,
+          "end_ms": 12220,
+          "samples": 27840,
+          "seconds": 1.16,
+          "rms": 0.13782497057510024,
+          "peak": 0.740142822265625,
+          "quiet_sample_fraction": 0.4726652298850575
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Nagbigay siya ng oras at hindi sumabat.",
+          "start_ms": 12520,
+          "end_ms": 15480,
+          "samples": 71040,
+          "seconds": 2.96,
+          "rms": 0.12579235111038048,
+          "peak": 0.840118408203125,
+          "quiet_sample_fraction": 0.2308417792792793
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sinabi ni Liza na mahirap pumunta kapag walang magbabantay sa anak.",
+          "start_ms": 15780,
+          "end_ms": 19820,
+          "samples": 96960,
+          "seconds": 4.04,
+          "rms": 0.11797431148425269,
+          "peak": 0.677459716796875,
+          "quiet_sample_fraction": 0.12476278877887789
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "“Mukhang mahirap pagsabayin ang pag-aalaga at pagpunta roon,” tugon ni Gibs.",
+          "start_ms": 20120,
+          "end_ms": 25760,
+          "samples": 135360,
+          "seconds": 5.64,
+          "rms": 0.12780965144282772,
+          "peak": 0.81329345703125,
+          "quiet_sample_fraction": 0.25032505910165487
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Hindi niya tinawag na tamad si Liza o nangakong maaayos ang lahat.",
+          "start_ms": 26060,
+          "end_ms": 30660,
+          "samples": 110400,
+          "seconds": 4.6,
+          "rms": 0.16203180955498311,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.17973731884057972
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Gumamit siya ng mahinahong boses at sapat na paghinto.",
+          "start_ms": 30960,
+          "end_ms": 35360,
+          "samples": 105600,
+          "seconds": 4.4,
+          "rms": 0.08803186188941221,
+          "peak": 0.5445556640625,
+          "quiet_sample_fraction": 0.20100378787878787
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Huwag pilitin ang eye contact; ang komportableng pakikinig ay hindi sinusukat sa pagtitig.",
+          "start_ms": 35660,
+          "end_ms": 42060,
+          "samples": 153600,
+          "seconds": 6.4,
+          "rms": 0.14588441342154612,
+          "peak": 0.8306884765625,
+          "quiet_sample_fraction": 0.18756510416666666
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Magbigay ng oras sa kuwento at kilalanin ang hirap nang walang paratang.",
+          "start_ms": 42360,
+          "end_ms": 47880,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.13114156998910476,
+          "peak": 0.917694091796875,
+          "quiet_sample_fraction": 0.2565972222222222
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 6.3,
+          "file": "read-listen-fil-head.wav",
+          "excerpt_sha256": "718b301a52babe151c248e9fdf00bc2b5768edddb069e7e4bcb8c0b7ab234e1d",
+          "decoded_sample_count": 151200,
+          "expected_context": "Makinig bago magpayo Umupo si Gibs nang kapantay ni Liza at itinabi ang telepono.",
+          "model_response": "```json\n{\n \"transcript\": \"Makinig bago magpayo. Umupo si Gibs nang kapantay ni Liza at itinabi ang telepono.\",\n \"observations\": {\n  \"gibs_pronunciation\": \"Pronounced clearly as [gibz] around 00:02.7 - 00:03.2.\",\n  \"liza_pronunciation\": \"Pronounced clearly as [LEE-sa] ('ni Liza') around 00:04.1 - 00:04.6.\",\n  \"negation\": \"No negative constructions are present in this excerpt.\",\n  \"role_distinctions\": \"There is a clear vocal contrast between the female voice reading the heading/title (00:00.0 - 00:01.4) and the male narrator reading the story text (00:01.8 - 00:06.1).\",\n  \"ending_completeness\": \"The sentence completes naturally at 00:06.1 on 'telepono' without premature cutoff.\",\n  \"audible_speech\": \"All speech is crisp, clear, and intelligible throughout the excerpt.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"A shift in speaker gender/role occurs between the female voice at 00:00.0–00:01.4 and the male voice starting at 00:01.8, which is typical for heading vs. body narration.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.38,
+          "end": 6.3,
+          "file": "read-listen-fil-body.wav",
+          "excerpt_sha256": "a53ebef9869b26a54be377ad4bac2d86a284e60eca4dc9aa18c105ea92331900",
+          "decoded_sample_count": 94080,
+          "expected_context": "Umupo si Gibs nang kapantay ni Liza at itinabi ang telepono.",
+          "model_response": "```json\n{\n \"transcript\": \"Umupo si Gibs nang kapantay ni Liza, at itinabi ang telepono.\",\n \"observations\": {\n  \"gibs_pronunciation\": \"Pronounced clearly as [gɪbz] around 00:00.35 - 00:00.75.\",\n  \"liza_pronunciation\": \"Pronounced as 'LEE-sa' ([ˈliː.sa]) around 00:01.40 - 00:01.85.\",\n  \"negation\": \"No negative constructions are present in this excerpt.\",\n  \"role_distinctions\": \"Single third-person narrative delivery without spoken dialogue roles.\",\n  \"ending_completeness\": \"The sentence finishes cleanly with 'telepono' without truncation or unnatural cutoffs.\",\n  \"audible_speech\": \"Speech is fully intelligible and articulate throughout.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent across the audio.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 12.52,
+          "end": 19.82,
+          "file": "read-listen-fil-critical.wav",
+          "excerpt_sha256": "d4c7656c25a15d49b18536f572e4313a42fcb77aefac84d1fde4ab715ed486ba",
+          "decoded_sample_count": 175200,
+          "expected_context": "Nagbigay siya ng oras at hindi sumabat. Sinabi ni Liza na mahirap pumunta kapag walang magbabantay sa anak.",
+          "model_response": "```json\n{\n  \"transcript\": \"Nagbigay siya ng oras at hindi sumabat. Sinabi ni Lisa na mahirap pumunta kapag walang magbabantay sa anak.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Gibs does not appear in this audio excerpt.\",\n    \"liza_pronunciation\": \"Pronounced clearly as 'LEE-sa' around 00:03–00:04 ('Sinabi ni Lisa').\",\n    \"negation\": \"Negation terms 'hindi' (00:01–00:02) and 'walang' (00:05–00:06) are articulated clearly and naturally.\",\n    \"role_distinctions\": \"The audio is delivered entirely by a single narrator recounting actions and reported speech without distinct character voice changes.\",\n    \"ending_completeness\": \"The excerpt concludes completely on 'sa anak' without cut-off.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Pacing, pitch, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 30.96,
+          "end": 47.93470833333333,
+          "file": "read-listen-fil-ending.wav",
+          "excerpt_sha256": "1dae911e828a92c7a0637df8e35960dcb1245d71ddaafc353c02c501e8c117df",
+          "decoded_sample_count": 407393,
+          "expected_context": "Gumamit siya ng mahinahong boses at sapat na paghinto. Huwag pilitin ang eye contact; ang komportableng pakikinig ay hindi sinusukat sa pagtitig. Magbigay ng oras sa kuwento at kilalanin ang hirap nang walang paratang.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gumamit siya ng mahinahong boses at sapat na paghinto. Huwag pilitin ang eye contact. Ang komportableng pakikinig ay hindi sinusukat sa pagtitig. Magbigay ng oras sa kwento at kilalanin ang hirap nang walang paratang.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"The name 'Gibs' does not appear in this excerpt.\",\n    \"liza_pronunciation\": \"The name 'Liza' does not appear in this excerpt.\",\n    \"negation\": \"Clear negation markers heard: 'Huwag' (00:04.8), 'hindi' (00:09.1), and 'walang' (00:15.5).\",\n    \"role_distinctions\": \"Single consistent female instructional/narrative voice throughout.\",\n    \"ending_completeness\": \"The audio ends naturally and completely after 'paratang' with proper sentence closure.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible across the entire excerpt.\",\n    \"clipped_words\": \"No clipped or abruptly cut-off words detected.\",\n    \"unexpected_voice_changes\": \"Pacing and tone remain uniform throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": null\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-liza-fil",
+      "language": "fil",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/liza.fil.947df9854c6d.mp3",
+      "source_sha256": "5062e66e7d4b44cee172dc7f1f741716802f014c53d0a0228da465c99ec4328e",
+      "decoded_pcm_sha256": "f95c282ef07260faabb60a12e7628b6806eabc7df97a427dcdc3726cea10d857",
+      "full_audio_metrics": {
+        "samples": 883984,
+        "seconds": 36.83266666666667,
+        "rms": 0.1363732423350084,
+        "peak": 0.909271240234375,
+        "quiet_sample_fraction": 0.2171905826349798
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Bakit tahimik si Liza?",
+          "start_ms": 0,
+          "end_ms": 1920,
+          "samples": 46080,
+          "seconds": 1.92,
+          "rms": 0.12691961648126102,
+          "peak": 0.629913330078125,
+          "quiet_sample_fraction": 0.26861979166666666
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Si Gibs, isang lalaking BHW, ay bumisita kay Liza, 29 anyos, para sa household profile.",
+          "start_ms": 2220,
+          "end_ms": 10060,
+          "samples": 188160,
+          "seconds": 7.84,
+          "rms": 0.135070970475509,
+          "peak": 0.86468505859375,
+          "quiet_sample_fraction": 0.15983737244897958
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Katabi ni Liza ang kapitbahay na sumasagot para sa kanya.",
+          "start_ms": 10360,
+          "end_ms": 13720,
+          "samples": 80640,
+          "seconds": 3.36,
+          "rms": 0.1277472642284304,
+          "peak": 0.78399658203125,
+          "quiet_sample_fraction": 0.1384672619047619
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Maikli ang sagot ni Liza at tumitingin siya sa pinto.",
+          "start_ms": 14020,
+          "end_ms": 17700,
+          "samples": 88320,
+          "seconds": 3.68,
+          "rms": 0.14569820663213642,
+          "peak": 0.835205078125,
+          "quiet_sample_fraction": 0.2190330615942029
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Hindi nito tiyak na sinasabi kung ano ang nararamdaman niya.",
+          "start_ms": 18000,
+          "end_ms": 21800,
+          "samples": 91200,
+          "seconds": 3.8,
+          "rms": 0.1738421269923521,
+          "peak": 0.838409423828125,
+          "quiet_sample_fraction": 0.14174342105263157
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Huminto muna si Gibs sa pagtatanong.",
+          "start_ms": 22100,
+          "end_ms": 24380,
+          "samples": 54720,
+          "seconds": 2.28,
+          "rms": 0.12335676203987621,
+          "peak": 0.745758056640625,
+          "quiet_sample_fraction": 0.16440058479532163
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Bago magpatuloy, ano ang dapat niyang alamin tungkol sa ginhawa at pagpili ni Liza?",
+          "start_ms": 24680,
+          "end_ms": 31360,
+          "samples": 160320,
+          "seconds": 6.68,
+          "rms": 0.13867076881387091,
+          "peak": 0.909271240234375,
+          "quiet_sample_fraction": 0.15133483033932135
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Huminto at itanong ang gusto ng kausap; huwag hulaan ang dahilan ng katahimikan.",
+          "start_ms": 31660,
+          "end_ms": 36780,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.13982301634578564,
+          "peak": 0.878997802734375,
+          "quiet_sample_fraction": 0.17293294270833334
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.06,
+          "file": "read-liza-fil-head.wav",
+          "excerpt_sha256": "6de15a64af924903779099c014c53300ddd8fc7d5c63acaa8bc353965dd6f37d",
+          "decoded_sample_count": 241440,
+          "expected_context": "Bakit tahimik si Liza? Si Gibs, isang lalaking BHW, ay bumisita kay Liza, 29 anyos, para sa household profile.",
+          "model_response": "```json\n{\n  \"transcript\": \"Bakit tahimik si Liza? Si Gibbs, isang lalaking BHW, ay bumisita kay Liza, 29 anyos, para sa household profile.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced as 'Gibs' ([ɡɪbs]/[ɡɪbz]) at around 00:02.\",\n    \"liza_pronunciation\": \"Pronounced consistently with Tagalog phonology as 'LEE-sa' ([ˈli.sa]) at 00:00–00:01 and 00:06.\",\n    \"negation\": \"No negative grammatical markers (e.g., hindi, huwag, wala) are present in this excerpt.\",\n    \"role_distinctions_and_voice_changes\": \"There is a distinct shift in speaker voice: a female speaker asks the question 'Bakit tahimik si Liza?' (00:00–00:01), followed by a transition to a male narrator delivering the expository sentence starting at 'Si Gibbs...' around 00:02.\",\n    \"ending_completeness\": \"The excerpt concludes with a complete phrase ('household profile') without truncation or mid-word cutoff.\",\n    \"audible_speech_and_clipping\": \"All words are clearly audible with clean boundaries; no clipping detected.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": null\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.22,
+          "end": 10.06,
+          "file": "read-liza-fil-body.wav",
+          "excerpt_sha256": "a4a09b447007f96675ca61ffcc88afcc3a6da4b77f3e23c6e552e8dd2e199d06",
+          "decoded_sample_count": 188160,
+          "expected_context": "Si Gibs, isang lalaking BHW, ay bumisita kay Liza, 29 anyos, para sa household profile.",
+          "model_response": "```json\n{\n  \"transcript\": \"Si Gibs, isang lalaking BHW, ay bumisita kay Liza, 29 anyos, para sa household profile.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly as 'Gibs' ([ɡɪbs] / [ɡɪbz]) around 00:00.2 - 00:00.7.\",\n    \"liza_pronunciation\": \"Pronounced as 'Liza' ([ˈliː.sa]) around 00:03.8 - 00:04.3.\",\n    \"negation\": \"No negative grammatical markers present in the excerpt.\",\n    \"role_distinctions\": \"The sentence is split between two different speakers/voices: a female voice starts the narration and a male voice completes it.\",\n    \"voice_change\": \"A jarring voice change occurs around 00:04.7, switching abruptly from a female speaker ('Si Gibs, isang lalaking BHW, ay bumisita kay Liza,') to a male speaker ('29 anyos, para sa household profile.').\",\n    \"audible_speech\": \"All speech is clear, audible, and fully articulated.\",\n    \"ending_completeness\": \"The utterance concludes fully on 'household profile' with natural acoustic decay and no cutoff.\",\n    \"clipped_words\": \"None detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:04.7\",\n      \"description\": \"The speaker abruptly shifts from a female voice to a male voice mid-sentence between 'Liza,' and '29 anyos'.\"\n    }\n  ],\n  \"uncertainty\": \"None; the vocal timbre switch mid-sentence is distinct and unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 18,
+          "end": 24.38,
+          "file": "read-liza-fil-critical.wav",
+          "excerpt_sha256": "d0ffd0e28a5b9b46705f3b53745007eb5469b4620b0cea90ca1ae5f6af0164ae",
+          "decoded_sample_count": 153120,
+          "expected_context": "Hindi nito tiyak na sinasabi kung ano ang nararamdaman niya. Huminto muna si Gibs sa pagtatanong.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi nito tiyak na sinasabi kung ano ang nararamdaman niya. Huminto muna si Gibs sa pagtatanong.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"The name 'Gibs' is pronounced clearly at around 00:04.5 with a voiced/voiceless sibilant realization close to /gɪbs/ or /gɪbz/.\",\n    \"liza_pronunciation\": \"The name 'Liza' does not appear in this excerpt.\",\n    \"negation\": \"Begins with the negation marker 'Hindi' at 00:00.00 - 00:00.45.\",\n    \"role_distinctions\": \"Single consistent narrative voice throughout without dialogue role shifts.\",\n    \"ending_completeness\": \"The excerpt ends completely on 'pagtatanong' without truncation or unnatural fade.\",\n    \"audible_speech\": \"All words are clearly enunciated, audible, and paced naturally.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; pitch and tone remain steady.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": null\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 22.1,
+          "end": 36.83266666666667,
+          "file": "read-liza-fil-ending.wav",
+          "excerpt_sha256": "8fe900b8e138004da82742c3baa4f895f18c0834da2aabfd7b2a6377113bd4fc",
+          "decoded_sample_count": 353584,
+          "expected_context": "Huminto muna si Gibs sa pagtatanong. Bago magpatuloy, ano ang dapat niyang alamin tungkol sa ginhawa at pagpili ni Liza? Huminto at itanong ang gusto ng kausap; huwag hulaan ang dahilan ng katahimikan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Huminto muna si Gibs sa pagtatanong bago magpatuloy. Ano ang dapat niyang alamin tungkol sa ginhawa at pagpili ni Liza? Huminto at itanong ang gusto ng kausap. Huwag hulaan ang dahilan ng katahimikan.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"The name 'Gibs' is pronounced accurately as [ɡɪbz] at approximately 00:01.\",\n    \"liza_pronunciation\": \"The name 'Liza' is pronounced clearly as [ˈliː.sa] (LEE-sa) at approximately 00:08.\",\n    \"negation\": \"Negation word 'Huwag' is clearly articulated and preserved around 00:12.\",\n    \"role_distinctions\": \"Single narrator voice maintains a clear educational storytelling tone, transitioning naturally from narrative setup to question and instructive advice.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'katahimikan' followed by ambient room decay; no early cutoffs detected.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout the recording.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants/vowels are intact.\",\n    \"unexpected_voice_changes\": \"Pacing, pitch, and vocal timbre remain consistent without sudden digital artifacts or jarring shifts.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is clear and fully intelligible.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-permission-fil",
+      "language": "fil",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/permission.fil.e556f22af84c.mp3",
+      "source_sha256": "60dce0934aad4d82fff1d38b0d031fdcd5327c869e668093215401d85b8df266",
+      "decoded_pcm_sha256": "f9548907045f68f48cf328ee4357ec4cb512196cd8ddc36f8eac72d287c4a83b",
+      "full_audio_metrics": {
+        "samples": 1344784,
+        "seconds": 56.032666666666664,
+        "rms": 0.140401728402296,
+        "peak": 0.87548828125,
+        "quiet_sample_fraction": 0.21381500672226916
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Humingi ng pahintulot at mag-alok ng pagpili",
+          "start_ms": 0,
+          "end_ms": 4080,
+          "samples": 97920,
+          "seconds": 4.08,
+          "rms": 0.15581507156746535,
+          "peak": 0.87506103515625,
+          "quiet_sample_fraction": 0.2132046568627451
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Ipinaliwanag ni Gibs: “Para po ito sa awtorisadong household profile at pagpaplano ng serbisyong pangkalusugan.",
+          "start_ms": 4380,
+          "end_ms": 11860,
+          "samples": 179520,
+          "seconds": 7.48,
+          "rms": 0.12077467434927171,
+          "peak": 0.84765625,
+          "quiet_sample_fraction": 0.12067736185383245
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Kaugnay na impormasyon lamang ang gagamitin ng awtorisadong health team ayon sa lokal na patakaran.",
+          "start_ms": 12160,
+          "end_ms": 17880,
+          "samples": 137280,
+          "seconds": 5.72,
+          "rms": 0.1641768521636247,
+          "peak": 0.87548828125,
+          "quiet_sample_fraction": 0.13078379953379954
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Maaari po ba tayong mag-usap?”",
+          "start_ms": 18180,
+          "end_ms": 20180,
+          "samples": 48000,
+          "seconds": 2,
+          "rms": 0.1794196478357402,
+          "peak": 0.87091064453125,
+          "quiet_sample_fraction": 0.28489583333333335
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Tinanong niya ang gustong wika, lugar at kung nais ni Liza ng kasamang susuporta sa kanya.",
+          "start_ms": 20480,
+          "end_ms": 27160,
+          "samples": 160320,
+          "seconds": 6.68,
+          "rms": 0.1323400461183275,
+          "peak": 0.830413818359375,
+          "quiet_sample_fraction": 0.2128617764471058
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "“Dito po sa mas tahimik na bahagi, sa Filipino, tayo muna,” sagot ni Liza.",
+          "start_ms": 27460,
+          "end_ms": 32460,
+          "samples": 120000,
+          "seconds": 5,
+          "rms": 0.17281596449721845,
+          "peak": 0.809783935546875,
+          "quiet_sample_fraction": 0.16095
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Maaari siyang magpahinga, hindi muna sumagot o pumili ng ibang oras.",
+          "start_ms": 32760,
+          "end_ms": 38360,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.12758358849414184,
+          "peak": 0.7032470703125,
+          "quiet_sample_fraction": 0.18125
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Hindi pangako ng ganap na lihim ang paliwanag ni Gibs.",
+          "start_ms": 38660,
+          "end_ms": 42500,
+          "samples": 92160,
+          "seconds": 3.84,
+          "rms": 0.14918821097205742,
+          "peak": 0.8682861328125,
+          "quiet_sample_fraction": 0.12482638888888889
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Kung kailangan ng agarang tulong, huwag itong ipagpaliban para makumpleto ang karaniwang interview; sundin ang lokal na proseso.",
+          "start_ms": 42800,
+          "end_ms": 50280,
+          "samples": 179520,
+          "seconds": 7.48,
+          "rms": 0.14817846105973193,
+          "peak": 0.830291748046875,
+          "quiet_sample_fraction": 0.1480392156862745
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang kausap ang pumipili ng komportableng lugar, wika at kasama.",
+          "start_ms": 50580,
+          "end_ms": 55980,
+          "samples": 129600,
+          "seconds": 5.4,
+          "rms": 0.11438300158270041,
+          "peak": 0.84515380859375,
+          "quiet_sample_fraction": 0.24274691358024691
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 11.86,
+          "file": "read-permission-fil-head.wav",
+          "excerpt_sha256": "9ebebe49de62e07021a659668422d793cff621e6299c53780b016445d6563099",
+          "decoded_sample_count": 284640,
+          "expected_context": "Humingi ng pahintulot at mag-alok ng pagpili Ipinaliwanag ni Gibs: “Para po ito sa awtorisadong household profile at pagpaplano ng serbisyong pangkalusugan.",
+          "model_response": "```json\n{\n \"transcript\": \"Humingi ng pahintulot at mag-alok ng pagpili. Ipinaliwanag ni Gibs, \\\"Para po ito sa awtorisadong household profile at pagpaplano ng serbisyong pangkalusugan.\\\"\",\n \"observations\": {\n  \"Gibs_pronunciation\": \"Pronounced around 00:05.0 - 00:05.6 with a hard 'g' (/ɡɪbs/), fitting the expected /ɡɪbz/ form with unvoiced final sibilant assimilation.\",\n  \"Liza_pronunciation\": \"Not present in this excerpt.\",\n  \"negation\": \"No negative constructions are present in this excerpt.\",\n  \"role_distinctions\": \"The narrator voice reads the introductory instruction and tag (\\\"Humingi ng pahintulot... Ipinaliwanag ni Gibs\\\"), then smoothly transitions at 00:06.0 into direct dialogue (\\\"Para po ito...\\\") with a slightly more conversational, polite tone.\",\n  \"ending_completeness\": \"The final word 'pangkalusugan' is fully enunciated with a natural trailing off; no clipping detected.\",\n  \"audible_speech\": \"All words are clearly audible and intelligible.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"None observed.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": null\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 4.38,
+          "end": 11.86,
+          "file": "read-permission-fil-body.wav",
+          "excerpt_sha256": "a85a7335cea8fc0bbe993ba3e090458e3207c410936f31ab7e42b729be3a091d",
+          "decoded_sample_count": 179520,
+          "expected_context": "Ipinaliwanag ni Gibs: “Para po ito sa awtorisadong household profile at pagpaplano ng serbisyong pangkalusugan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ipinaliwanag ni Gibs, \\\"Para po ito sa awtorisadong household profile at pagpaplano ng serbisyong pangkalusugan.\\\"\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly as [ɡɪbz] / [ɡɪbs] around 00:00.90–00:01.30, matching the target pronunciation.\",\n    \"liza_pronunciation\": \"Not applicable; the name 'Liza' does not appear in this excerpt.\",\n    \"negation\": \"No negative grammatical markers occur in this excerpt.\",\n    \"role_distinctions\": \"A single speaker delivers both the narration tag ('Ipinaliwanag ni Gibs') and the dialogue ('Para po ito...'), with a natural pause and slight prosodic shift between them around 00:01.35–00:01.60.\",\n    \"ending_completeness\": \"The final word 'pangkalusugan' is fully articulated through to the final nasal consonant with normal decay; no premature cut-off.\",\n    \"audible_speech\": \"All words are cleanly intelligible with no disruptive background artifacts.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"No unnatural vocal shifts, sudden tone/pitch drops, or glitch-like voice changes.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the recording is clear and speech zones are unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 32.76,
+          "end": 42.5,
+          "file": "read-permission-fil-critical.wav",
+          "excerpt_sha256": "1b10d262f40dfdeeba0db78d9998284c9bd9361888705b4695e78eed0a12e8db",
+          "decoded_sample_count": 233760,
+          "expected_context": "Maaari siyang magpahinga, hindi muna sumagot o pumili ng ibang oras. Hindi pangako ng ganap na lihim ang paliwanag ni Gibs.",
+          "model_response": "```json\n{\n  \"transcript\": \"Maaari siyang magpahinga, hindi muna sumagot, o pumili ng ibang oras. Hindi pangako ng ganap na lihim ang paliwanag ni Gibs.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly with a hard 'g' as [ɡɪbz] around 00:08.5 - 00:09.1.\",\n    \"liza_pronunciation\": \"Name does not appear in this excerpt.\",\n    \"negation\": \"Clear negation articulated in 'hindi muna sumagot' (00:01.8 - 00:03.1) and 'Hindi pangako ng ganap na lihim' (00:05.8 - 00:07.8).\",\n    \"role_distinctions\": \"Single consistent narrator delivering educational expository narration.\",\n    \"ending_completeness\": \"The final sentence concludes cleanly on 'Gibs' without clipping.\",\n    \"audible_speech\": \"All words are fully audible and enunciated clearly.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and pacing remain stable throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 38.66,
+          "end": 56.032666666666664,
+          "file": "read-permission-fil-ending.wav",
+          "excerpt_sha256": "aafb1eb9b35b470ecc14dabf22f3d9b183ea735f0e152c0a5b767f1cf048832c",
+          "decoded_sample_count": 416944,
+          "expected_context": "Hindi pangako ng ganap na lihim ang paliwanag ni Gibs. Kung kailangan ng agarang tulong, huwag itong ipagpaliban para makumpleto ang karaniwang interview; sundin ang lokal na proseso. Ang kausap ang pumipili ng komportableng lugar, wika at kasama.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi pangako ng ganap na lihim ang paliwanag ni Gibbs. Kung kailangan ng agarang tulong, huwag itong ipagpaliban para makumpleto ang karaniwang interview. Sundin ang lokal na proseso. Ang kausap ang pumipili ng komportableng lugar, wika, at kasama.\",\n  \"observations\": {\n    \"gibbs_pronunciation\": \"Pronounced clearly at 00:02.8 - 00:03.4 as [ɡɪbs]/[ɡɪbz] with an audible voiced/devoiced alveolar sibilant.\",\n    \"liza_pronunciation\": \"The name 'Liza' does not appear in this excerpt.\",\n    \"negation\": \"Clear negation present in 'Hindi' (00:00.0 - 00:00.5) and prohibitive negation in 'huwag' (00:06.0 - 00:06.4).\",\n    \"role_distinctions\": \"Single consistent neutral narrator throughout the segment providing instructive/educational guidance.\",\n    \"ending_completeness\": \"The sentence completes fully at 00:17.1 with 'kasama', followed by natural ambient decay; no truncation.\",\n    \"audible_speech\": \"Speech is completely audible, clear, and well-articulated across the entire audio clip.\",\n    \"clipped_words\": \"None observed; word onsets and codas are intact.\",\n    \"voice_changes\": \"Pacing, pitch, and timbre remain steady without unnatural shifts or acoustic disruptions.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is fully intelligible and free of acoustic artifacts or ambiguity.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-practice-fil",
+      "language": "fil",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/practice.fil.a42caab66ef8.mp3",
+      "source_sha256": "5455dffc6f9c0ea21c3b51cc85ebbd5291f586eba64fabedf481597fe08743c3",
+      "decoded_pcm_sha256": "6de9dccb028b8fb50b3c0750a656e7ba02df4aa02e9bf8844928b792022e2d6d",
+      "full_audio_metrics": {
+        "samples": 1263282,
+        "seconds": 52.63675,
+        "rms": 0.13626306866945062,
+        "peak": 0.9908447265625,
+        "quiet_sample_fraction": 0.24670738599932557
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Subukan, saka ulitin",
+          "start_ms": 0,
+          "end_ms": 2520,
+          "samples": 60480,
+          "seconds": 2.52,
+          "rms": 0.13034829033146317,
+          "peak": 0.83868408203125,
+          "quiet_sample_fraction": 0.2533068783068783
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gamitin ang kathang-isip na role cards: Gibs, Liza at tagamasid.",
+          "start_ms": 2820,
+          "end_ms": 8260,
+          "samples": 130560,
+          "seconds": 5.44,
+          "rms": 0.12706365222704413,
+          "peak": 0.8873291015625,
+          "quiet_sample_fraction": 0.17798713235294117
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Magsanay ng pahintulot, pagpili ng lugar at wika, pakikinig nang hindi sumasabat, at buod na may pagtiyak.",
+          "start_ms": 8560,
+          "end_ms": 16920,
+          "samples": 200640,
+          "seconds": 8.36,
+          "rms": 0.14132969324558586,
+          "peak": 0.870361328125,
+          "quiet_sample_fraction": 0.22816985645933013
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Si Liza ang pipili kung may kasamang susuporta.",
+          "start_ms": 17220,
+          "end_ms": 20380,
+          "samples": 75840,
+          "seconds": 3.16,
+          "rms": 0.133803137169406,
+          "peak": 0.869293212890625,
+          "quiet_sample_fraction": 0.1600870253164557
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Itala ng tagamasid ang eksaktong linyang nakatulong at ang hakbang na minadali.",
+          "start_ms": 20680,
+          "end_ms": 25960,
+          "samples": 126720,
+          "seconds": 5.28,
+          "rms": 0.15790738875169616,
+          "peak": 0.9908447265625,
+          "quiet_sample_fraction": 0.16676925505050505
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ulitin ang bahaging iyon bago magpalit ng papel.",
+          "start_ms": 26260,
+          "end_ms": 29420,
+          "samples": 75840,
+          "seconds": 3.16,
+          "rms": 0.13504403516475075,
+          "peak": 0.7843017578125,
+          "quiet_sample_fraction": 0.21476793248945147
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Lahat ay susubok bilang BHW.",
+          "start_ms": 29720,
+          "end_ms": 33160,
+          "samples": 82560,
+          "seconds": 3.44,
+          "rms": 0.13830849684348376,
+          "peak": 0.781890869140625,
+          "quiet_sample_fraction": 0.20935077519379844
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Kung mag-isa, sabihin nang malakas ang dalawang papel at itsek ang listening aid.",
+          "start_ms": 33460,
+          "end_ms": 38660,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.12462722152602855,
+          "peak": 0.7685546875,
+          "quiet_sample_fraction": 0.16080128205128205
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Sa susunod na awtorisadong pagbisita, sanayin ang parehong pambungad.",
+          "start_ms": 38960,
+          "end_ms": 43640,
+          "samples": 112320,
+          "seconds": 4.68,
+          "rms": 0.12742349893000376,
+          "peak": 0.76708984375,
+          "quiet_sample_fraction": 0.1872863247863248
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Huwag mag-upload ng pribadong kuwento ng residente.",
+          "start_ms": 43940,
+          "end_ms": 47020,
+          "samples": 73920,
+          "seconds": 3.08,
+          "rms": 0.1969156989140045,
+          "peak": 0.855560302734375,
+          "quiet_sample_fraction": 0.19974296536796537
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ulitin ang hindi pa malinaw na hakbang; feedback ng kapareha ay pagsasanay.",
+          "start_ms": 47320,
+          "end_ms": 52560,
+          "samples": 125760,
+          "seconds": 5.24,
+          "rms": 0.13240528923982542,
+          "peak": 0.90167236328125,
+          "quiet_sample_fraction": 0.24516539440203564
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.26,
+          "file": "read-practice-fil-head.wav",
+          "excerpt_sha256": "7be71371bb62f0902c06ce2ef98a1a4080df5eb8492bc0871fb3b4cfd18733e0",
+          "decoded_sample_count": 198240,
+          "expected_context": "Subukan, saka ulitin Gamitin ang kathang-isip na role cards: Gibs, Liza at tagamasid.",
+          "model_response": "```json\n{\n  \"transcript\": \"Subukan saka ulitin. Gamitin ang kathang-isip na role cards, Gibs, Liza, at tagamasid.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly as /ɡɪbz/ around 00:05 - 00:05.8.\",\n    \"liza_pronunciation\": \"Pronounced as 'LEE-sa' (/ˈliː.sa/) around 00:05.9 - 00:06.8.\",\n    \"negation\": \"No negative grammatical markers (e.g., hindi, huwag) are present in this excerpt.\",\n    \"role_distinctions\": \"The fictional roles ('Gibs', 'Liza', 'tagamasid') are clearly demarcated with pauses around 00:05 - 00:08.\",\n    \"ending_completeness\": \"The excerpt concludes cleanly on 'tagamasid' at approximately 00:08 without cutoffs or truncation.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and without interfering background noise.\",\n    \"clipped_words\": \"No clipped words or premature gating observed.\",\n    \"unexpected_voice_changes\": \"The tone, pacing, and vocal quality remain consistent across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.82,
+          "end": 8.26,
+          "file": "read-practice-fil-body.wav",
+          "excerpt_sha256": "5d5748af4b114edcd4ce27e94738c9b8dd675955d64fcd260265c885c6243838",
+          "decoded_sample_count": 130560,
+          "expected_context": "Gamitin ang kathang-isip na role cards: Gibs, Liza at tagamasid.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gamitin ang kathang-isip na role cards, Gibs, Lisa, at tagamasid.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly as [ɡɪbz] around 00:02.5 - 00:03.3.\",\n    \"liza_pronunciation\": \"Pronounced with a clear 's' sound as [ˈli.sa] (LEE-sa) between 00:03.4 and 00:04.0.\",\n    \"negation\": \"No negative constructions are present in the excerpt.\",\n    \"role_distinctions\": \"The listed roles/names ('Gibs', 'Lisa', 'tagamasid') are clearly separated with appropriate pauses.\",\n    \"ending_completeness\": \"The audio concludes naturally with full intonational resolution on 'tagamasid'.\",\n    \"audible_speech\": \"All words are fully audible, clear, and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"None observed; pacing and vocal quality remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 8.56,
+          "end": 20.38,
+          "file": "read-practice-fil-critical.wav",
+          "excerpt_sha256": "d3fe065f5582f628f815b414f4e954a38d6320bb7190f52ef64c13a0ce251f6a",
+          "decoded_sample_count": 283680,
+          "expected_context": "Magsanay ng pahintulot, pagpili ng lugar at wika, pakikinig nang hindi sumasabat, at buod na may pagtiyak. Si Liza ang pipili kung may kasamang susuporta.",
+          "model_response": "```json\n{\n  \"transcript\": \"Magsanay ng pahintulot, pagpili ng lugar at wika, pakikinig nang hindi sumasabat, at buod na may pagtiyak. Si Liza ang pipili kung may kasamang susuporta.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Not present in this excerpt.\",\n    \"liza_pronunciation\": \"Pronounced as [ˈliː.sa] ('LEE-sa') around 00:08.5–00:09.1, standard Filipino realization of 'Liza'.\",\n    \"negation\": \"Clear negation with 'hindi' in the phrase 'nang hindi sumasabat' (00:04.5–00:05.6).\",\n    \"role_distinctions\": \"Single male narrator throughout; no multiple roles or role shifts present.\",\n    \"ending_completeness\": \"The audio concludes fully on 'susuporta' with natural decay and no premature truncation.\",\n    \"audible_speech\": \"Speech is articulate, intelligible, and free of background noise or artifacts.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; pacing, pitch, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low. The phrasing 'Magsanay ng pahintulot' is slightly unnatural semantically in standard Tagalog, but the phonetic pronunciation is clearly articulated.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 33.46,
+          "end": 52.63675,
+          "file": "read-practice-fil-ending.wav",
+          "excerpt_sha256": "4cc18e9ef2abc06bc5e6ca994ea240eb38595edcd3db21f1edaa157664dfb9f2",
+          "decoded_sample_count": 460242,
+          "expected_context": "Kung mag-isa, sabihin nang malakas ang dalawang papel at itsek ang listening aid. Sa susunod na awtorisadong pagbisita, sanayin ang parehong pambungad. Huwag mag-upload ng pribadong kuwento ng residente. Ulitin ang hindi pa malinaw na hakbang; feedback ng kapareha ay pagsasanay.",
+          "model_response": "```json\n{\n  \"transcript\": \"kung mag-isa, sabihin nang malakas ang dalawang papel at i-check ang listening aid. Sa susunod na awtorisadong pagbisita, sanayin ang parehong pambungad. Huwag mag-upload ng pribadong kwento ng residente. Ulitin ang hindi pamalinaw na hakbang. Feedback ng kapareha ay pagsasanay.\",\n  \"observations\": [\n    {\n      \"type\": \"audible_speech\",\n      \"timestamp\": \"00:00 - 00:19\",\n      \"description\": \"Clear synthetic voice delivering instructions in Tagalog/Filipino.\"\n    },\n    {\n      \"type\": \"negation\",\n      \"timestamp\": \"00:10 - 00:11\",\n      \"description\": \"Uses negation 'Huwag' clearly.\"\n    },\n    {\n      \"type\": \"negation\",\n      \"timestamp\": \"00:14 - 00:15\",\n      \"description\": \"Uses negation 'hindi' clearly.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-profile-fil",
+      "language": "fil",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/profile.fil.f4da1956f7e2.mp3",
+      "source_sha256": "e1bfb1fd2db6672daa5c1c66f01c26a4780ebf8544eed29e065b79a6908a3fd5",
+      "decoded_pcm_sha256": "b36ea1625db1a2dec8824b045cf1d3df77311b754162c03a6c96014bb011ba17",
+      "full_audio_metrics": {
+        "samples": 1164226,
+        "seconds": 48.50941666666667,
+        "rms": 0.13683131699756507,
+        "peak": 0.97491455078125,
+        "quiet_sample_fraction": 0.2605318898564368
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Ibuod at tiyaking tama",
+          "start_ms": 0,
+          "end_ms": 2520,
+          "samples": 60480,
+          "seconds": 2.52,
+          "rms": 0.13050150169669747,
+          "peak": 0.7340087890625,
+          "quiet_sample_fraction": 0.2964451058201058
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "“Tama po ba ang pagkaintindi ko: mahirap pumunta kapag walang magbabantay sa anak ninyo?”",
+          "start_ms": 2820,
+          "end_ms": 9020,
+          "samples": 148800,
+          "seconds": 6.2,
+          "rms": 0.12458903513101033,
+          "peak": 0.89111328125,
+          "quiet_sample_fraction": 0.18424731182795698
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "tanong ni Gibs.",
+          "start_ms": 9320,
+          "end_ms": 10800,
+          "samples": 35520,
+          "seconds": 1.48,
+          "rms": 0.12786570716714468,
+          "peak": 0.73443603515625,
+          "quiet_sample_fraction": 0.37581644144144144
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "“Opo, kapag wala ang kapatid ko,” paglilinaw ni Liza.",
+          "start_ms": 11100,
+          "end_ms": 15300,
+          "samples": 100800,
+          "seconds": 4.2,
+          "rms": 0.13846360418089596,
+          "peak": 0.903717041015625,
+          "quiet_sample_fraction": 0.24494047619047618
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ibinalik ni Gibs ang mas tumpak na buod: “Kapag wala ang kapatid ninyo, mahirap makahanap ng magbabantay.",
+          "start_ms": 15600,
+          "end_ms": 22880,
+          "samples": 174720,
+          "seconds": 7.28,
+          "rms": 0.13801846514222105,
+          "peak": 0.837188720703125,
+          "quiet_sample_fraction": 0.20133356227106228
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Tama po ba?”",
+          "start_ms": 23180,
+          "end_ms": 24580,
+          "samples": 33600,
+          "seconds": 1.4,
+          "rms": 0.14924000173173696,
+          "peak": 0.879547119140625,
+          "quiet_sample_fraction": 0.4817261904761905
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Kinumpirma ito ni Liza.",
+          "start_ms": 24880,
+          "end_ms": 26920,
+          "samples": 48960,
+          "seconds": 2.04,
+          "rms": 0.17161571084997293,
+          "peak": 0.79736328125,
+          "quiet_sample_fraction": 0.2204656862745098
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Kathang-isip na halimbawa ito ng pagtitiyak, hindi aktuwal na rekord.",
+          "start_ms": 27220,
+          "end_ms": 31540,
+          "samples": 103680,
+          "seconds": 4.32,
+          "rms": 0.13944961856643062,
+          "peak": 0.909942626953125,
+          "quiet_sample_fraction": 0.19342206790123456
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Sa awtorisadong profile, kunin lamang ang kaugnay na impormasyon, huwag hulaan ang patlang at igalang ang ayaw munang sagutin.",
+          "start_ms": 31840,
+          "end_ms": 40360,
+          "samples": 204480,
+          "seconds": 8.52,
+          "rms": 0.13293647758639585,
+          "peak": 0.8419189453125,
+          "quiet_sample_fraction": 0.1783744131455399
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Walang ipinangakong childcare o appointment.",
+          "start_ms": 40660,
+          "end_ms": 44220,
+          "samples": 85440,
+          "seconds": 3.56,
+          "rms": 0.13551970939452557,
+          "peak": 0.79522705078125,
+          "quiet_sample_fraction": 0.17311563670411986
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Tanungin kung tama ang buod at hayaan ang kausap na magwasto.",
+          "start_ms": 44520,
+          "end_ms": 48440,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.18520482015094558,
+          "peak": 0.97491455078125,
+          "quiet_sample_fraction": 0.13659651360544217
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.02,
+          "file": "read-profile-fil-head.wav",
+          "excerpt_sha256": "051011181a10c8beb5f8b9fc758c661eb4702dd7fdfb0b6388562a7311eaf67e",
+          "decoded_sample_count": 216480,
+          "expected_context": "Ibuod at tiyaking tama “Tama po ba ang pagkaintindi ko: mahirap pumunta kapag walang magbabantay sa anak ninyo?”",
+          "model_response": "```json\n{\n  \"transcript\": \"Ibuod at tiyaking tama. Tama po ba ang pagkakaintindi ko? Mahirap pumunta kapag walang magbabantay sa anak ninyo?\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Not applicable; the name 'Gibs' is not spoken in this excerpt.\",\n    \"liza_pronunciation\": \"Not applicable; the name 'Liza' is not spoken in this excerpt.\",\n    \"negation\": \"The negative marker 'walang' is clearly articulated between 00:06.85 and 00:07.40 with appropriate stress and semantic context ('kapag walang magbabantay').\",\n    \"role_distinctions\": \"Clear distinction between roles; an introductory instructional sentence ('Ibuod at tiyaking tama.') is delivered by a female voice (00:00.00–00:01.90), followed by an in-character dialogue delivered by a male speaker (00:03.05–00:08.85).\",\n    \"ending_completeness\": \"The audio concludes naturally with the male speaker finishing the question on 'ninyo?' followed by a clean decay and room tone.\",\n    \"audible_speech\": \"All words are clearly enunciated, audible, and free of masking noise or distortion.\",\n    \"clipped_words\": \"No clipped beginnings or endings detected.\",\n    \"unexpected_voice_changes\": \"No unexpected pitch/timbre anomalies within turns; the speaker transition between narrator and character is clean and expected.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None detected; speech is fully intelligible and clean.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.82,
+          "end": 9.02,
+          "file": "read-profile-fil-body.wav",
+          "excerpt_sha256": "c4ce0ff35609da873ee1c63c0d017404e54d2d59c76ffea0fdd87baec0c83c9d",
+          "decoded_sample_count": 148800,
+          "expected_context": "“Tama po ba ang pagkaintindi ko: mahirap pumunta kapag walang magbabantay sa anak ninyo?”",
+          "model_response": "```json\n{\n \"transcript\": \"Tama po ba ang pagkakaintindi ko? Mahirap pumunta kapag walang magbabantay sa anak ninyo?\",\n \"observations\": [\n  {\n   \"timestamp\": \"00:00 - 00:02.10\",\n   \"observation\": \"Speaker articulates 'Tama po ba ang pagkakaintindi ko?' clearly and with appropriate interrogative intonation.\"\n  },\n  {\n   \"timestamp\": \"00:02.30 - 00:05.90\",\n   \"observation\": \"Speaker articulates 'Mahirap pumunta kapag walang magbabantay sa anak ninyo?' clearly. The negation 'walang' is fully pronounced.\"\n  },\n  {\n   \"timestamp\": \"00:00 - 00:06.00\",\n   \"observation\": \"The names 'Gibs' and 'Liza' do not appear in this excerpt. The speech is delivered by a single consistent male voice without abrupt acoustic or vocal shifts.\"\n  }\n ],\n \"possible_defects\": [],\n \"uncertainty\": \"None. The audio is clear and speech boundaries are intact.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 27.22,
+          "end": 40.36,
+          "file": "read-profile-fil-critical.wav",
+          "excerpt_sha256": "1da85c88746a77b60b27241b6dfc1a6c636696a40da0f9adc26f8779dfb64ef3",
+          "decoded_sample_count": 315360,
+          "expected_context": "Kathang-isip na halimbawa ito ng pagtitiyak, hindi aktuwal na rekord. Sa awtorisadong profile, kunin lamang ang kaugnay na impormasyon, huwag hulaan ang patlang at igalang ang ayaw munang sagutin.",
+          "model_response": "```json\n{\n  \"transcript\": \"Kathang-isip na halimbawa ito ng pagtitiyak, hindi aktwal na rekord. Sa awtorisadong profile, kunin lamang ang kaugnay na impormasyon. Huwag hulaan ang patlang, at igalang ang ayaw mo nang sagutin.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Not applicable; the name Gibs does not occur in this excerpt.\",\n    \"liza_pronunciation\": \"Not applicable; the name Liza does not occur in this excerpt.\",\n    \"negation\": \"Accurately and clearly delivered: 'hindi' (00:02.8 - 00:03.1) and 'Huwag' (00:09.3 - 00:09.7).\",\n    \"role_distinctions\": \"Clear demarcation between two distinct roles: male voice introduces the disclaimer (00:00.0 - 00:04.1), followed by a female voice delivering instructions (00:04.4 - 00:12.9).\",\n    \"ending_completeness\": \"Complete sentence ending on 'sagutin' with natural trailing silence prior to the file end at 00:13.4.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"A planned speaker change occurs at 00:04.2 from male to female narrator; no mid-utterance voice distortion or unintentional timbre shifts detected.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 31.84,
+          "end": 48.50941666666667,
+          "file": "read-profile-fil-ending.wav",
+          "excerpt_sha256": "f8ae9a5d5c2bc287502e8d635fdad556783cea7ea769586121b90eb12084529c",
+          "decoded_sample_count": 400066,
+          "expected_context": "Sa awtorisadong profile, kunin lamang ang kaugnay na impormasyon, huwag hulaan ang patlang at igalang ang ayaw munang sagutin. Walang ipinangakong childcare o appointment. Tanungin kung tama ang buod at hayaan ang kausap na magwasto.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa awtorisadong profile, kunin lamang ang kaugnay na impormasyon, huwag hulaan ang patlang, at igalang ang ayaw munang sagutin. Walang ipinangakong child care o appointment. Tanungin kung tama ang buod, at hayaan ang kausap na magwasto.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Not applicable; the name 'Gibs' does not appear in this excerpt.\",\n    \"liza_pronunciation\": \"Not applicable; the name 'Liza' does not appear in this excerpt.\",\n    \"negation\": \"Clear and natural delivery of negative terms: 'huwag' (00:04) and 'walang' (00:09).\",\n    \"role_distinctions\": \"Single voice delivers educational/instructional guidelines in a consistent, didactic narrator style throughout.\",\n    \"ending_completeness\": \"The final phrase 'na magwasto' completes naturally without being cut off.\",\n    \"audible_speech\": \"Audio is clear, intelligible, and well-enunciated throughout.\",\n    \"clipped_words\": \"None observed at phrase boundaries or excerpt boundaries.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and acoustics remain uniform across the recording.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all words and phrases are clearly audible and distinct.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-fil",
+      "language": "fil",
+      "source_path": "/training/bhw-1-6/communication-listen-gemini-fil-940d78bad524.mp4",
+      "source_sha256": "940d78bad5249b4b10da263cd0fad881f5aaa4931e37dc4a0166bafd09c4e30c",
+      "decoded_pcm_sha256": "0841ad3ba6c095214971862610559604ffca337dce65c107d197c9f337387ab1",
+      "full_audio_metrics": {
+        "samples": 1573888,
+        "seconds": 65.57866666666666,
+        "rms": 0.08822462865980231,
+        "peak": 0.7105712890625,
+        "quiet_sample_fraction": 0.23951259555953155
+      },
+      "zones": [
+        {
+          "zone": "liza",
+          "index": 0,
+          "text": "Si Gibs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibs; hindi niya hinulaan ang katahimikan.",
+          "start_ms": 0,
+          "end_ms": 10840,
+          "samples": 260160,
+          "seconds": 10.84,
+          "rms": 0.08072427585445488,
+          "peak": 0.5828857421875,
+          "quiet_sample_fraction": 0.22820956334563344
+        },
+        {
+          "zone": "permission",
+          "index": 1,
+          "text": "Ipinaliwanag niya ang layunin at gamit ng impormasyon. Humingi siya ng pahintulot. Pinili ni Liza ang mas tahimik na lugar, Filipino, at silang dalawa muna.",
+          "start_ms": 11140,
+          "end_ms": 20780,
+          "samples": 231360,
+          "seconds": 9.64,
+          "rms": 0.09165981417867232,
+          "peak": 0.512054443359375,
+          "quiet_sample_fraction": 0.18664851313969572
+        },
+        {
+          "zone": "listen",
+          "index": 2,
+          "text": "Itinabi ni Gibs ang telepono. Nagtanong siya nang bukas at naghintay. Ikinuwento ni Liza ang hadlang sa pag-aalaga ng anak. Walang pagsabat o paratang.",
+          "start_ms": 21080,
+          "end_ms": 30400,
+          "samples": 223680,
+          "seconds": 9.32,
+          "rms": 0.09325087450795327,
+          "peak": 0.6348876953125,
+          "quiet_sample_fraction": 0.23840307582260373
+        },
+        {
+          "zone": "profile",
+          "index": 3,
+          "text": "Tinanong ni Gibs kung tama ang buod. “Kapag wala ang kapatid ko,” paglilinaw ni Liza. Ibinalik niya ang mas tumpak na buod at kinumpirma ito ni Liza.",
+          "start_ms": 30700,
+          "end_ms": 40980,
+          "samples": 246720,
+          "seconds": 10.28,
+          "rms": 0.10020201040770783,
+          "peak": 0.66326904296875,
+          "quiet_sample_fraction": 0.24284614137483787
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Sa pagsasanay, gumamit ng kathang-isip na role cards. Lahat ay susubok bilang BHW. Tukuyin ang linyang nakatulong at ulitin ang minadaling hakbang.",
+          "start_ms": 41280,
+          "end_ms": 52800,
+          "samples": 276480,
+          "seconds": 11.52,
+          "rms": 0.093104550768425,
+          "peak": 0.7105712890625,
+          "quiet_sample_fraction": 0.1862377025462963
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Nakapagsalita si Liza at tiniyak ni Gibs ang pagkaintindi. Walang pangako ng childcare o appointment. Sa susunod na awtorisadong pagbisita, sanayin ang pambungad at buod na tanong.",
+          "start_ms": 53100,
+          "end_ms": 64340,
+          "samples": 269760,
+          "seconds": 11.24,
+          "rms": 0.08151590540798308,
+          "peak": 0.63787841796875,
+          "quiet_sample_fraction": 0.1629782028469751
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 20.78,
+          "file": "shipped-story-fil-head.wav",
+          "excerpt_sha256": "5d2be58ca4a9d6541502465b51479e1a1035ddb811b2fef39160de3b91da326b",
+          "decoded_sample_count": 498720,
+          "expected_context": "Si Gibs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibs; hindi niya hinulaan ang katahimikan. Ipinaliwanag niya ang layunin at gamit ng impormasyon. Humingi siya ng pahintulot. Pinili ni Liza ang mas tahimik na lugar, Filipino, at silang dalawa muna.",
+          "model_response": "```json\n{\n  \"transcript\": \"Si Gibbs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibbs. Hindi niya hinulaan ang katahimikan. Ipinaliwanag niya ang layunin at gamit ng impormasyon. Humingi siya ng pahintulot. Pinili ni Liza ang mas tahimik na lugar, pribado, at silang dalawa muna.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly as /ɡɪbz/ at 00:00 and 00:07.\",\n    \"liza_pronunciation\": \"Pronounced with a voiced/voiceless alveolar sibilant approximation [ˈliː.za] / [ˈliː.sa] at 00:03-00:04 and 00:16-00:17.\",\n    \"negation\": \"Clear negation present at 00:08–00:10 ('Hindi niya hinulaan ang katahimikan').\",\n    \"role_distinctions\": \"Single narrative perspective describing Gibbs, Liza, and the neighbor, but delivered across two distinct narrator voices.\",\n    \"ending_completeness\": \"The audio finishes the final word 'muna' completely without cutting off before trailing to silence.\",\n    \"audible_speech\": \"Speech is intelligible, audible, and recorded cleanly with minimal background noise.\",\n    \"clipped_words\": \"No clipped or truncated syllables detected.\",\n    \"unexpected_voice_changes\": \"A major unexpected voice transition occurs between 00:10.5 and 00:11.2, switching mid-excerpt from a female narrator (00:00–00:10.5) to a male narrator (00:11.2–00:20.5).\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp_range\": \"00:10.5 - 00:11.2\",\n      \"description\": \"Narrator voice switches abruptly from female to male between sentences.\"\n    }\n  ],\n  \"uncertainty\": \"Low. The word at 00:18.2–00:18.9 is identified as 'pribado'.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 10.84,
+          "file": "shipped-story-fil-body.wav",
+          "excerpt_sha256": "5caca209035d3db9bff5b4c331e85d2638a7754732247ec5c1a1364f6fd49ad7",
+          "decoded_sample_count": 260160,
+          "expected_context": "Si Gibs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibs; hindi niya hinulaan ang katahimikan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Si Gibbs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibbs. Hindi niya hinulaan ang katahimikan.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly as [ɡɪbs] at 00:00.00 and 00:07.45.\",\n    \"liza_pronunciation\": \"Pronounced approximating [ˈliː.za] / [ˈliː.sa] at 00:03.40–00:03.95.\",\n    \"negation\": \"The negation 'Hindi' at 00:08.15 is clearly audible and cleanly articulated.\",\n    \"role_distinctions\": \"Narrative delivery is consistent; descriptive prose spoken in a single narrator persona.\",\n    \"ending_completeness\": \"The excerpt ends cleanly on 'katahimikan' with natural decay and no truncation.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Pacing and vocal quality remain stable and consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 20.78,
+          "file": "shipped-story-fil-critical.wav",
+          "excerpt_sha256": "5d2be58ca4a9d6541502465b51479e1a1035ddb811b2fef39160de3b91da326b",
+          "decoded_sample_count": 498720,
+          "expected_context": "Si Gibs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibs; hindi niya hinulaan ang katahimikan. Ipinaliwanag niya ang layunin at gamit ng impormasyon. Humingi siya ng pahintulot. Pinili ni Liza ang mas tahimik na lugar, Filipino, at silang dalawa muna.",
+          "model_response": "```json\n{\n  \"transcript\": \"Si Gibbs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibbs. Hindi niya hinulaan ang katahimikan. Ipinaliwanag niya ang layunin at gamit ng impormasyon. Humingi siya ng pahintulot. Pinili ni Liza ang mas tahimik na lugar, Filipino, at silang dalawa muna.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly as 'Gibs' ([ɡɪbs]) at 00:00 and 00:07.\",\n    \"liza_pronunciation\": \"Pronounced as 'Li-sa' ([ˈli.sa] / [ˈli.za]) at 00:03 and 00:16, matching the target LEE-sa form.\",\n    \"negation\": \"Clear negation heard at 00:08–00:10 ('Hindi niya hinulaan ang katahimikan').\",\n    \"role_distinctions\": \"There are no character dialogue enactments; both parts serve as third-person narration, but delivered by two different speakers.\",\n    \"unexpected_voice_changes\": \"A noticeable speaker change occurs at approximately 00:11.0, switching from a female narrator (00:00–00:10.5) to a male narrator (00:11.2–00:20.7) mid-text.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'muna' around 00:20.6 without being clipped.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout the clip.\",\n    \"clipped_words\": \"None detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:10.5 - 00:11.2\",\n      \"description\": \"Voice shifts abruptly from female to male narrator between sentences without contextual justification.\"\n    }\n  ],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 41.28,
+          "end": 65.57866666666666,
+          "file": "shipped-story-fil-ending.wav",
+          "excerpt_sha256": "5b8a41d8f888ce4897ab49dd39ecf325c0231758de4724ff940e8c06a0296e61",
+          "decoded_sample_count": 583168,
+          "expected_context": "Sa pagsasanay, gumamit ng kathang-isip na role cards. Lahat ay susubok bilang BHW. Tukuyin ang linyang nakatulong at ulitin ang minadaling hakbang. Nakapagsalita si Liza at tiniyak ni Gibs ang pagkaintindi. Walang pangako ng childcare o appointment. Sa susunod na awtorisadong pagbisita, sanayin ang pambungad at buod na tanong.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa pagsasanay, gumamit ng kathang-isip na role cards. Lahat ay susubok bilang BHW. Tukuyin ang linyang nakatulong, at ulitin ang minadaling hakbang. Nakapagsalita si Liza at tiniyak ni Gibs ang pagkakaintindi. Walang pangako ng childcare o appointment. Sa susunod na awtorisadong pagbisita, sanayin ang pambungad at buod na tanong.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly as [gibz]/[gibs] at approximately 00:13 - 00:14 ('ni Gibs').\",\n    \"liza_pronunciation\": \"Pronounced as 'LEE-sa' ([ˈli.sa]) at approximately 00:12 - 00:13 ('si Liza').\",\n    \"negation\": \"The negation 'Walang' is clearly articulated at 00:15 - 00:16 ('Walang pangako ng childcare o appointment.').\",\n    \"role_distinctions\": \"Single consistent neutral narrator delivering instructional/educational guidelines describing roles (BHW, Liza, Gibs).\",\n    \"ending_completeness\": \"The spoken sentence finishes completely with 'buod na tanong' at around 00:22.5, followed by silence/room tone until the end of the recording without abrupt cutoff.\",\n    \"audible_speech\": \"Speech is fully audible, clear, and intelligible throughout.\",\n    \"clipped_words\": \"No clipped or truncated words detected.\",\n    \"unexpected_voice_changes\": \"None observed; tone, pacing, and vocal quality remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is clear and speech matches standard delivery.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-check-en",
+      "language": "en",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/check.en.dcdaa412d29b.mp3",
+      "source_sha256": "6df064c60cb7e3b76421dbbd0b3bd48fe1c9267d38216e5727cf43244886e5f3",
+      "decoded_pcm_sha256": "22de495282fa1225debb252f848daa0561b6ca86f4ffebb6950ae75840ff7c2f",
+      "full_audio_metrics": {
+        "samples": 660794,
+        "seconds": 27.533083333333334,
+        "rms": 0.12781192680035347,
+        "peak": 0.887725830078125,
+        "quiet_sample_fraction": 0.27563809598755434
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Choose the next step",
+          "start_ms": 0,
+          "end_ms": 1560,
+          "samples": 37440,
+          "seconds": 1.56,
+          "rms": 0.10270263964298215,
+          "peak": 0.669708251953125,
+          "quiet_sample_fraction": 0.5030715811965812
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Return to the scene: the neighbor answers for Liza.",
+          "start_ms": 1860,
+          "end_ms": 5620,
+          "samples": 90240,
+          "seconds": 3.76,
+          "rms": 0.15309072592979417,
+          "peak": 0.817657470703125,
+          "quiet_sample_fraction": 0.2707779255319149
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Gibs holds a closed clipboard.",
+          "start_ms": 5920,
+          "end_ms": 8360,
+          "samples": 58560,
+          "seconds": 2.44,
+          "rms": 0.09845441215271535,
+          "peak": 0.563201904296875,
+          "quiet_sample_fraction": 0.29421106557377047
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "He has not yet checked where, in which language and with whom Liza feels comfortable talking.",
+          "start_ms": 8660,
+          "end_ms": 14900,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.14406920558872938,
+          "peak": 0.799224853515625,
+          "quiet_sample_fraction": 0.13026842948717948
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Choose the first step and explain your reason before viewing feedback.",
+          "start_ms": 15200,
+          "end_ms": 19880,
+          "samples": 112320,
+          "seconds": 4.68,
+          "rms": 0.1327456693291769,
+          "peak": 0.802764892578125,
+          "quiet_sample_fraction": 0.20019586894586894
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Then compare your decision with your practice attempt.",
+          "start_ms": 20180,
+          "end_ms": 23340,
+          "samples": 75840,
+          "seconds": 3.16,
+          "rms": 0.11224681151829821,
+          "peak": 0.887725830078125,
+          "quiet_sample_fraction": 0.21195938818565402
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Give Liza a choice and a voice, then check understanding.",
+          "start_ms": 23640,
+          "end_ms": 27480,
+          "samples": 92160,
+          "seconds": 3.84,
+          "rms": 0.1347738577520088,
+          "peak": 0.779510498046875,
+          "quiet_sample_fraction": 0.20721571180555556
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 5.62,
+          "file": "read-check-en-head.wav",
+          "excerpt_sha256": "ece831b5b9c8fa17ac6a979daf180f192ebb094b7737cd74b298d37bf8825cb2",
+          "decoded_sample_count": 134880,
+          "expected_context": "Choose the next step Return to the scene: the neighbor answers for Liza.",
+          "model_response": "```json\n{\n  \"transcript\": \"Choose the next step. Return to the scene. The neighbor answers for Liza.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Gibs is not spoken in this excerpt.\",\n    \"liza_pronunciation\": \"Liza is pronounced clearly with the [ˈliː.sə] / 'LEE-sa' realization around 00:04.65 - 00:05.05.\",\n    \"negation\": \"No negative constructions are present.\",\n    \"role_distinctions\": \"Spoken entirely in a single consistent instructional narrator voice.\",\n    \"ending_completeness\": \"The excerpt ends completely on a natural cadence without abrupt cutoffs.\",\n    \"audible_speech\": \"Speech is fully audible and distinct throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Pacing, pitch, and voice quality remain consistent across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 1.86,
+          "end": 5.62,
+          "file": "read-check-en-body.wav",
+          "excerpt_sha256": "5961ddbcc569e733e9fe8fb67a0c4d83aa524837a62807fefbfd667929ab1115",
+          "decoded_sample_count": 90240,
+          "expected_context": "Return to the scene: the neighbor answers for Liza.",
+          "model_response": "```json\n{\n  \"transcript\": \"Return to the scene. The neighbor answers for Lisa.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Not applicable; 'Gibs' does not appear in this excerpt.\",\n    \"liza_pronunciation\": \"'Lisa' is pronounced as [LEE-sa] (/ˈliːsə/) between 00:02.72 and 00:03.15.\",\n    \"negation\": \"Not applicable; no negation terms are present.\",\n    \"role_distinctions\": \"Delivered by a single narrator in a consistent instructional tone.\",\n    \"ending_completeness\": \"The sentence concludes completely with natural decay; no truncation.\",\n    \"audible_speech\": \"All speech is clear, audible, and easily intelligible.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; pitch and timbre remain steady.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 8.66,
+          "end": 19.88,
+          "file": "read-check-en-critical.wav",
+          "excerpt_sha256": "08642a5aebb40303eeb8e810111211b65b65e9d08d5bb6850a8adeb26549477d",
+          "decoded_sample_count": 269280,
+          "expected_context": "He has not yet checked where, in which language and with whom Liza feels comfortable talking. Choose the first step and explain your reason before viewing feedback.",
+          "model_response": "```json\n{\n  \"transcript\": \"He has not yet checked where, in which language, and with whom Lisa feels comfortable talking. Choose the first step, and explain your reason before viewing feedback.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"The term 'Gibs' does not appear in this excerpt.\",\n    \"liza_pronunciation\": \"The name 'Lisa' is pronounced at approximately 00:04.38 - 00:04.85 with a voiceless 's' sound as [ˈliː.sə] / [ˈliː.sa], rather than a voiced 'z' [ˈliː.zə].\",\n    \"negation\": \"The negation 'not yet' ('has not yet checked') is clearly enunciated between 00:00.22 and 00:00.95.\",\n    \"role_distinctions\": \"The prompt is delivered consistently by a single female educational narrator without distinct character role shifts.\",\n    \"ending_completeness\": \"The audio concludes naturally after 'feedback' at 00:10.55 without any premature truncation or clipping.\",\n    \"audible_speech\": \"Speech is articulate, intelligible, and maintains consistent pacing throughout the excerpt.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, pitch, and timbre remain steady across the segment.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 8.66,
+          "end": 27.533083333333334,
+          "file": "read-check-en-ending.wav",
+          "excerpt_sha256": "63367deed556a3cc9c41d65ffb4cff50398d90b3c1f98d53db9732876ecebd97",
+          "decoded_sample_count": 452954,
+          "expected_context": "He has not yet checked where, in which language and with whom Liza feels comfortable talking. Choose the first step and explain your reason before viewing feedback. Then compare your decision with your practice attempt. Give Liza a choice and a voice, then check understanding.",
+          "model_response": "```json\n{\n \"transcript\": \"He has not yet checked where, in which language, and with whom Lisa feels comfortable talking. Choose the first step, and explain your reason before viewing feedback. Then compare your decision with your practice attempt. Give Lisa a choice and a voice, then check understanding.\",\n \"observations\": {\n  \"gibs_pronunciation\": \"The term 'Gibs' does not occur in this excerpt.\",\n  \"liza_pronunciation\": \"The name 'Lisa' is pronounced consistently as 'LEE-sa' (/ˈliː.sə/) at approximately 00:04.3 and 00:15.3.\",\n  \"negation\": \"Clear negation is present at 00:00.3 ('has not yet checked').\",\n  \"role_distinctions\": \"The speaker maintains a consistent instructional narrator tone throughout.\",\n  \"ending_completeness\": \"The audio concludes naturally after 'understanding' with no cut-off.\",\n  \"audible_speech\": \"All speech is clear and intelligible.\",\n  \"clipped_words\": \"None detected; word boundaries are intact.\",\n  \"unexpected_voice_changes\": \"None observed; pacing, timber, and volume remain steady.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-listen-en",
+      "language": "en",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/listen.en.d6c6e47f2ab2.mp3",
+      "source_sha256": "ad6fb29571fd5b498a4654f24bf22c9e75a49103004a2ed775a8a89116b10f8d",
+      "decoded_pcm_sha256": "3f9c9d306f4d924f6f48c1a2ec6153bad65aa450fcc9ff2a6ed74c5e9b8f3cfb",
+      "full_audio_metrics": {
+        "samples": 1043854,
+        "seconds": 43.493916666666664,
+        "rms": 0.1226896429911724,
+        "peak": 0.930145263671875,
+        "quiet_sample_fraction": 0.26074431864992614
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Listen before giving advice",
+          "start_ms": 0,
+          "end_ms": 2920,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.14015853136595421,
+          "peak": 0.84173583984375,
+          "quiet_sample_fraction": 0.2774543378995434
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gibs sits at Liza’s level and puts his phone away.",
+          "start_ms": 3220,
+          "end_ms": 6700,
+          "samples": 83520,
+          "seconds": 3.48,
+          "rms": 0.12421893776618592,
+          "peak": 0.913970947265625,
+          "quiet_sample_fraction": 0.19589319923371648
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "“What would you like to tell me about getting to the health center?”",
+          "start_ms": 7000,
+          "end_ms": 10240,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.15466022574755572,
+          "peak": 0.884307861328125,
+          "quiet_sample_fraction": 0.1644804526748971
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "he asks.",
+          "start_ms": 10540,
+          "end_ms": 11780,
+          "samples": 29760,
+          "seconds": 1.24,
+          "rms": 0.08490677971053927,
+          "peak": 0.68426513671875,
+          "quiet_sample_fraction": 0.46001344086021506
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "He allows time and does not interrupt.",
+          "start_ms": 12080,
+          "end_ms": 15160,
+          "samples": 73920,
+          "seconds": 3.08,
+          "rms": 0.12426851682741585,
+          "peak": 0.856414794921875,
+          "quiet_sample_fraction": 0.24878246753246752
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Liza says getting there is difficult when nobody can look after her child.",
+          "start_ms": 15460,
+          "end_ms": 19820,
+          "samples": 104640,
+          "seconds": 4.36,
+          "rms": 0.12804456059304045,
+          "peak": 0.7427978515625,
+          "quiet_sample_fraction": 0.166532874617737
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "“It sounds difficult to manage caregiving and getting there,” Gibs replies.",
+          "start_ms": 20120,
+          "end_ms": 25840,
+          "samples": 137280,
+          "seconds": 5.72,
+          "rms": 0.09356624697624963,
+          "peak": 0.716094970703125,
+          "quiet_sample_fraction": 0.21079545454545454
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "He does not call Liza lazy or promise to fix everything.",
+          "start_ms": 26140,
+          "end_ms": 29940,
+          "samples": 91200,
+          "seconds": 3.8,
+          "rms": 0.13703589195919294,
+          "peak": 0.930145263671875,
+          "quiet_sample_fraction": 0.13635964912280701
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "He uses a calm voice and allows pauses.",
+          "start_ms": 30240,
+          "end_ms": 33280,
+          "samples": 72960,
+          "seconds": 3.04,
+          "rms": 0.12134539310783392,
+          "peak": 0.772125244140625,
+          "quiet_sample_fraction": 0.1939281798245614
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Do not force eye contact; comfortable listening is not measured by staring.",
+          "start_ms": 33580,
+          "end_ms": 39100,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.13397855886522592,
+          "peak": 0.850555419921875,
+          "quiet_sample_fraction": 0.2022493961352657
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Allow time for the account and acknowledge difficulty without blame.",
+          "start_ms": 39400,
+          "end_ms": 43440,
+          "samples": 96960,
+          "seconds": 4.04,
+          "rms": 0.1343043899963036,
+          "peak": 0.82513427734375,
+          "quiet_sample_fraction": 0.1906765676567657
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 6.7,
+          "file": "read-listen-en-head.wav",
+          "excerpt_sha256": "ad348d8e20792c1fbfbb846a7d7d6f13a2c39280dcdc60c1712eabe60d1f9f61",
+          "decoded_sample_count": 160800,
+          "expected_context": "Listen before giving advice Gibs sits at Liza’s level and puts his phone away.",
+          "model_response": "```json\n{\n  \"transcript\": \"Listen before giving advice. Gibs sits at Lisa's level and puts his phone away.\",\n  \"observations\": {\n    \"audible_speech\": \"All words in the excerpt are clearly audible and intelligible.\",\n    \"role_distinctions\": \"A single speaker delivers both the heading/instructional line and the narrative description, with a brief pause between them.\",\n    \"pronunciation\": {\n      \"Gibs\": \"Pronounced as [ɡɪbz] around 00:03.3.\",\n      \"Lisa\": \"Pronounced as [ˈliːsəz] ('LEE-suhz') around 00:04.2.\"\n    },\n    \"negation\": \"No negative constructions are present in this excerpt.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n    \"unexpected_voice_changes\": \"None detected; the speaker's tone, pitch, and timbre remain consistent across the excerpt.\",\n    \"ending_completeness\": \"The final phrase 'puts his phone away' finishes naturally without premature cutoff at ~00:06.3.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is clear and matches expected pronunciation criteria.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.22,
+          "end": 6.7,
+          "file": "read-listen-en-body.wav",
+          "excerpt_sha256": "aac6024367cf6ad98b281349d08ac4b865444186f0a080ccc2c5b2725111f594",
+          "decoded_sample_count": 83520,
+          "expected_context": "Gibs sits at Liza’s level and puts his phone away.",
+          "model_response": "```json\n{\n \"transcript\": \"Gib sits at Liza's level, and puts his phone away.\",\n \"observations\": {\n  \"gibs_pronunciation\": \"The name is pronounced as [ɡɪb] followed immediately by 'sits' [sɪts] rather than [ɡɪbz].\",\n  \"liza_pronunciation\": \"Pronounced with a voiceless 's' sound as [ˈliːsəz] ('LEE-sa's), aligning with the requested pronunciation target.\",\n  \"negation\": \"No negative constructions are present in the audio.\",\n  \"role_distinctions\": \"Spoken by a single narrator with consistent neutral delivery.\",\n  \"ending_completeness\": \"The utterance completes naturally on 'away' with no cut-off.\",\n  \"audible_speech\": \"All speech is clearly audible and intelligible without background interference.\",\n  \"clipped_words\": \"No words are clipped at the start or end of the segment.\",\n  \"unexpected_voice_changes\": \"Pitch, tone, and volume remain consistent throughout.\"\n },\n \"possible_defects\": [\n  \"If the intended subject name was 'Gibs' [ɡɪbz], it was articulated as 'Gib' [ɡɪb] before 'sits'.\"\n ],\n \"uncertainty\": \"Low; the spoken words are clear.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 12.08,
+          "end": 19.82,
+          "file": "read-listen-en-critical.wav",
+          "excerpt_sha256": "2feb6e857c9a989282a4dc81fa3f9591b2de920f7f3de398fc9b8cce5d933ac2",
+          "decoded_sample_count": 185760,
+          "expected_context": "He allows time and does not interrupt. Liza says getting there is difficult when nobody can look after her child.",
+          "model_response": "```json\n{\n  \"transcript\": \"He allows time and does not interrupt. Lisa says getting there is difficult when nobody can look after her child.\",\n  \"observations\": [\n    {\n      \"type\": \"pronunciation\",\n      \"timestamp\": \"00:02.85 - 00:03.35\",\n      \"detail\": \"The name 'Lisa'/'Liza' is pronounced as [ˈliː.sə] (LEE-sa).\"\n    },\n    {\n      \"type\": \"content_note\",\n      \"detail\": \"The name 'Gibs' is not present in this audio clip.\"\n    },\n    {\n      \"type\": \"negation\",\n      \"timestamp\": \"00:01.55 - 00:02.48\",\n      \"detail\": \"Clear negation articulated in 'does not interrupt'.\"\n    },\n    {\n      \"type\": \"negation\",\n      \"timestamp\": \"00:05.45 - 00:05.90\",\n      \"detail\": \"Negative pronoun articulated clearly in 'nobody'.\"\n    },\n    {\n      \"type\": \"audio_quality\",\n      \"timestamp\": \"00:00.00 - 00:07.38\",\n      \"detail\": \"Pacing is steady with clear articulation, natural tone, complete ending, and no clipped words or unexpected voice changes.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is clearly intelligible throughout.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 26.14,
+          "end": 43.493916666666664,
+          "file": "read-listen-en-ending.wav",
+          "excerpt_sha256": "ee8194b86b3a70328ac7e272a60d64b2007e16b43bd7036ba473e05e07124664",
+          "decoded_sample_count": 416494,
+          "expected_context": "He does not call Liza lazy or promise to fix everything. He uses a calm voice and allows pauses. Do not force eye contact; comfortable listening is not measured by staring. Allow time for the account and acknowledge difficulty without blame.",
+          "model_response": "```json\n{\n  \"transcript\": \"He does not call Lisa lazy or promise to fix everything. He uses a calm voice and allows pauses. Do not force eye contact. Comfortable listening is not measured by staring. Allow time for the account and acknowledge difficulty without blame.\",\n  \"observations\": {\n    \"liza_pronunciation\": \"Pronounced as 'LEE-sa' ([ˈliːsə]) at approximately 00:00.90–00:01.20.\",\n    \"gibs_pronunciation\": \"The word 'Gibs' does not appear in this audio excerpt.\",\n    \"negation\": \"Clear articulation of negation throughout: 'does not' (00:00.28–00:00.65), 'Do not' (00:07.38–00:07.82), and 'is not' (00:10.88–00:11.24).\",\n    \"role_distinctions_and_voice_changes\": \"The excerpt features multiple distinct female voices spliced consecutively: Speaker 1 (00:00.00–00:03.55), Speaker 2 (00:03.75–00:06.75), Speaker 3 (00:07.35–00:12.72), and Speaker 4 (00:13.35–00:17.15).\",\n    \"audible_speech\": \"All speech is fully intelligible, with standard Philippine English pacing and intonation.\",\n    \"clipped_words\": \"None observed; word onsets and codas are preserved.\",\n    \"ending_completeness\": \"The audio concludes naturally after 'blame' at 00:17.15 with no premature cut-off.\"\n  },\n  \"possible_defects\": [\n    \"Abrupt speaker/voice transitions between instructional bullet points (at 00:03.65, 00:07.05, and 00:13.05) indicative of concatenated segments.\"\n  ],\n  \"uncertainty\": \"None detected; speech and phonetic cues are distinct.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-liza-en",
+      "language": "en",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/liza.en.7f6cb15e3b4b.mp3",
+      "source_sha256": "fba969a6b11bcf44d1f559028ca8e0f2d36b996b5d44aee8267adaaf171e6e4d",
+      "decoded_pcm_sha256": "4fd4fb6275819aeb7f2fe332e2785325290f4e1ca17d4792507da83c59022e0e",
+      "full_audio_metrics": {
+        "samples": 766120,
+        "seconds": 31.921666666666667,
+        "rms": 0.12316241041741435,
+        "peak": 0.912567138671875,
+        "quiet_sample_fraction": 0.22968725526027253
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Why is Liza quiet?",
+          "start_ms": 0,
+          "end_ms": 1840,
+          "samples": 44160,
+          "seconds": 1.84,
+          "rms": 0.12907215747759057,
+          "peak": 0.552032470703125,
+          "quiet_sample_fraction": 0.27601902173913045
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gibs, a male BHW, visits Liza, 29, for a household profile.",
+          "start_ms": 2140,
+          "end_ms": 7780,
+          "samples": 135360,
+          "seconds": 5.64,
+          "rms": 0.1363267930740737,
+          "peak": 0.882843017578125,
+          "quiet_sample_fraction": 0.1237071513002364
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "A neighbor sits beside Liza and answers for her.",
+          "start_ms": 8080,
+          "end_ms": 11520,
+          "samples": 82560,
+          "seconds": 3.44,
+          "rms": 0.16210207702376334,
+          "peak": 0.912567138671875,
+          "quiet_sample_fraction": 0.16231831395348836
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Liza gives short replies and looks toward the door.",
+          "start_ms": 11820,
+          "end_ms": 15260,
+          "samples": 82560,
+          "seconds": 3.44,
+          "rms": 0.11066966465150306,
+          "peak": 0.720550537109375,
+          "quiet_sample_fraction": 0.19303536821705428
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "These cues do not tell Gibs for certain how she feels.",
+          "start_ms": 15560,
+          "end_ms": 19480,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.13002054243424474,
+          "peak": 0.781402587890625,
+          "quiet_sample_fraction": 0.15542091836734695
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "He pauses the questions.",
+          "start_ms": 19780,
+          "end_ms": 21860,
+          "samples": 49920,
+          "seconds": 2.08,
+          "rms": 0.0991211622317945,
+          "peak": 0.64752197265625,
+          "quiet_sample_fraction": 0.2467147435897436
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Before continuing, what should he check about Liza’s comfort and choices?",
+          "start_ms": 22160,
+          "end_ms": 26680,
+          "samples": 108480,
+          "seconds": 4.52,
+          "rms": 0.12956666609056366,
+          "peak": 0.825897216796875,
+          "quiet_sample_fraction": 0.1631268436578171
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Pause and ask what the person prefers; do not guess the reason for silence.",
+          "start_ms": 26980,
+          "end_ms": 31860,
+          "samples": 117120,
+          "seconds": 4.88,
+          "rms": 0.10483784121098663,
+          "peak": 0.83636474609375,
+          "quiet_sample_fraction": 0.18136953551912569
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.78,
+          "file": "read-liza-en-head.wav",
+          "excerpt_sha256": "59b6573fbf9ba6405b0fd97dfde6f41853aa379789a87f9e5e15ecdb9070ffa4",
+          "decoded_sample_count": 186720,
+          "expected_context": "Why is Liza quiet? Gibs, a male BHW, visits Liza, 29, for a household profile.",
+          "model_response": "```json\n{\n  \"transcript\": \"Why is Lisa quiet? Gibs, a male BHW, visits Lisa, 29, for a household profile.\",\n  \"observations\": {\n    \"role_distinctions\": \"Two distinct voices are heard: an initial female voice asking 'Why is Lisa quiet?' (00:00 - 00:01.3) followed by a male narrator setting the scene from 00:01.7 to 00:07.2.\",\n    \"pronunciation\": {\n      \"Gibs\": \"Pronounced clearly as /ɡɪbz/ at approximately 00:01.8 - 00:02.3.\",\n      \"Lisa\": \"Pronounced cleanly as 'LEE-sa' (/ˈliːsə/) in both instances (female speaker at 00:00.3, male narrator at 00:05.0).\"\n    },\n    \"ending_completeness\": \"The audio concludes naturally with complete articulation of 'profile' and standard falling terminal intonation.\",\n    \"clipped_words\": \"None detected; word onsets and codas are fully intact.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible throughout with low background noise.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.14,
+          "end": 7.78,
+          "file": "read-liza-en-body.wav",
+          "excerpt_sha256": "2f7b3a36a14486d969d8268e251736ba140705c637755b33fd9f5cc537d6fdd6",
+          "decoded_sample_count": 135360,
+          "expected_context": "Gibs, a male BHW, visits Liza, 29, for a household profile.",
+          "model_response": "```json\n{\n \"transcript\": \"Gibs, a male BHW, visits Liza, 29, for a household profile.\",\n \"observations\": {\n  \"gibs_pronunciation\": \"Pronounced as [ɡɪbz] with an initial voiced velar plosive and final voiced alveolar sibilant /z/ around 00:00.00–00:00.45.\",\n  \"liza_pronunciation\": \"Pronounced as /ˈlaɪzə/ ('LYE-zuh') rather than the specified [ˈliːsə] ('LEE-sa') around 00:02.40–00:02.85.\",\n  \"negation\": \"No negative words or constructions are present.\",\n  \"role_distinctions\": \"Spoken by a single female narrator reading an introductory scene description.\",\n  \"ending_completeness\": \"The utterance completes naturally on 'profile' around 00:04.90 without early cutoff.\",\n  \"audible_speech\": \"All words are clearly audible and intelligible throughout the clip.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"None; pacing and tone remain consistent.\"\n },\n \"possible_defects\": [\n  \"Liza pronounced as /ˈlaɪzə/ instead of expected 'LEE-sa' [ˈliːsə] at 00:02.40–00:02.85.\"\n ],\n \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 15.56,
+          "end": 21.86,
+          "file": "read-liza-en-critical.wav",
+          "excerpt_sha256": "3dcf1a6dc107d63716fb70910a6bf93d11a3b3f1fef3dda7aced82e8632e6558",
+          "decoded_sample_count": 151200,
+          "expected_context": "These cues do not tell Gibs for certain how she feels. He pauses the questions.",
+          "model_response": "```json\n{\n  \"transcript\": \"These cues do not tell Gibbs for certain how she feels. He poses the questions.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Gibbs is pronounced clearly as [ɡɪbz] around 00:01.3.\",\n    \"liza_pronunciation\": \"Liza is not mentioned in this excerpt.\",\n    \"negation\": \"Clear negation heard in 'do not tell' at 00:01.\",\n    \"role_distinctions\": \"Single narrator voice throughout.\",\n    \"ending_completeness\": \"The sentence ends cleanly with 'questions' at 00:05.7 without cutoff.\",\n    \"audible_speech\": \"Speech is fully audible and distinct throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None; delivery style and tone remain stable.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"At 00:04.1–00:04.7, the word transcribed as 'poses' has a vowel and voiceless sibilant realization ([ˈpɔːsɪz] / [ˈpɒsɪz]) that could alternatively be heard as 'pauses'.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 15.56,
+          "end": 31.921666666666667,
+          "file": "read-liza-en-ending.wav",
+          "excerpt_sha256": "2f6040d30e226b5e8212ec145d137a97efd8119c0e0dd9114ce694b6f115828e",
+          "decoded_sample_count": 392680,
+          "expected_context": "These cues do not tell Gibs for certain how she feels. He pauses the questions. Before continuing, what should he check about Liza’s comfort and choices? Pause and ask what the person prefers; do not guess the reason for silence.",
+          "model_response": "```json\n{\n  \"transcript\": \"These cues do not tell Gibs for certain how she feels. He pauses the questions. Before continuing, what should he check about Liza's comfort and choices? Pause and ask what the person prefers. Do not guess the reason for silence.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced clearly as [ɡɪbz] around 00:01.4 - 00:01.8.\",\n    \"liza_pronunciation\": \"Pronounced with a voiceless sibilant as requested ('LEE-sa' / [ˈliːsəz]) around 00:08.8 - 00:09.3.\",\n    \"negation\": \"Two negative constructions are clearly articulated: 'do not tell' (00:00.7 - 00:01.4) and 'Do not guess' (00:13.9 - 00:14.8).\",\n    \"role_distinctions\": \"A distinct speaker transition occurs: male narrator delivers the context and question (00:00.0 - 00:10.5), a female voice answers/instructs (00:10.8 - 00:13.8), and the male voice returns with the concluding instruction (00:13.9 - 00:16.2).\",\n    \"ending_completeness\": \"The audio concludes naturally after 'silence' at approximately 00:15.9 without truncation.\",\n    \"clipped_words\": \"None observed; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"Speaker shifts between male narrator and female response voice align with instructional prompt/response formatting rather than unintended voice glitches.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all speech segments, speaker shifts, and lexical items are distinct and intelligible.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-permission-en",
+      "language": "en",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/permission.en.4041e78d3059.mp3",
+      "source_sha256": "32fedbb5914a2be2a68b76f45c264eea18a52a89d7a284bf194771166d44ab3a",
+      "decoded_pcm_sha256": "df09cf53680c48eeb546231cc3a61b1cef1be3d30d9b2735e4510c6bedf60bc4",
+      "full_audio_metrics": {
+        "samples": 1179899,
+        "seconds": 49.16245833333333,
+        "rms": 0.12986528175286052,
+        "peak": 0.91082763671875,
+        "quiet_sample_fraction": 0.2223020783982358
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Ask permission and offer choices",
+          "start_ms": 0,
+          "end_ms": 2600,
+          "samples": 62400,
+          "seconds": 2.6,
+          "rms": 0.09761400947691552,
+          "peak": 0.88763427734375,
+          "quiet_sample_fraction": 0.23131410256410256
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gibs explains: “This is for an authorized household profile and health-service planning.",
+          "start_ms": 2900,
+          "end_ms": 8900,
+          "samples": 144000,
+          "seconds": 6,
+          "rms": 0.09567874877318465,
+          "peak": 0.78509521484375,
+          "quiet_sample_fraction": 0.16088194444444445
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Only relevant information will be used by the authorized health team under local policy.",
+          "start_ms": 9200,
+          "end_ms": 14320,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.13920177250172105,
+          "peak": 0.8756103515625,
+          "quiet_sample_fraction": 0.12306315104166667
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "May we talk?”",
+          "start_ms": 14620,
+          "end_ms": 16060,
+          "samples": 34560,
+          "seconds": 1.44,
+          "rms": 0.13017355012670817,
+          "peak": 0.866607666015625,
+          "quiet_sample_fraction": 0.43585069444444446
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "He asks about Liza’s preferred language, place and whether she wants a support person present.",
+          "start_ms": 16360,
+          "end_ms": 22400,
+          "samples": 144960,
+          "seconds": 6.04,
+          "rms": 0.12483523911092674,
+          "peak": 0.81646728515625,
+          "quiet_sample_fraction": 0.13573399558498897
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "“Here in the quieter part, in Filipino, just us for now,” Liza replies.",
+          "start_ms": 22700,
+          "end_ms": 28180,
+          "samples": 131520,
+          "seconds": 5.48,
+          "rms": 0.14331560066223087,
+          "peak": 0.822601318359375,
+          "quiet_sample_fraction": 0.2280565693430657
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "She may pause, leave a question unanswered for now or choose another time.",
+          "start_ms": 28480,
+          "end_ms": 33360,
+          "samples": 117120,
+          "seconds": 4.88,
+          "rms": 0.1395823200596061,
+          "peak": 0.823760986328125,
+          "quiet_sample_fraction": 0.1478910519125683
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Gibs does not promise absolute secrecy.",
+          "start_ms": 33660,
+          "end_ms": 36900,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.11956160605386836,
+          "peak": 0.8851318359375,
+          "quiet_sample_fraction": 0.17420267489711935
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "If immediate help is needed, do not delay it to complete a routine interview; follow the local process.",
+          "start_ms": 37200,
+          "end_ms": 44040,
+          "samples": 164160,
+          "seconds": 6.84,
+          "rms": 0.15910038204002147,
+          "peak": 0.91082763671875,
+          "quiet_sample_fraction": 0.1588267543859649
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "The person chooses a comfortable place, language and support person.",
+          "start_ms": 44340,
+          "end_ms": 49100,
+          "samples": 114240,
+          "seconds": 4.76,
+          "rms": 0.14823575084482626,
+          "peak": 0.906036376953125,
+          "quiet_sample_fraction": 0.1891281512605042
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.9,
+          "file": "read-permission-en-head.wav",
+          "excerpt_sha256": "ba4acd3911bf3fb06266938651e9a1f368409bec038fdc3c36a223c5415e4051",
+          "decoded_sample_count": 213600,
+          "expected_context": "Ask permission and offer choices Gibs explains: “This is for an authorized household profile and health-service planning.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ask permission and offer choices. Gibs explains, this is for an authorized household profile and health service planning.\",\n  \"observations\": {\n    \"gibz_pronunciation\": \"Pronounced as 'Gibs' [ɡɪbz] around 00:03.10–00:03.45, matching the expected /ɡɪbz/ pronunciation.\",\n    \"liza_pronunciation\": \"The name Liza does not appear in this excerpt.\",\n    \"negation\": \"No negative contractions or negation words are present in the audio.\",\n    \"role_distinctions\": \"Clear distinction between roles: a female speaker delivers the instructional heading ('Ask permission and offer choices', 00:00.08–00:02.32), followed by a male narrator/character voice ('Gibs explains...', 00:03.10–00:08.60).\",\n    \"ending_completeness\": \"The audio ends naturally with 'planning.' followed by complete acoustic decay, with no cutoffs.\",\n    \"clipped_words\": \"None detected; word onsets and codas are clearly articulated.\",\n    \"unexpected_voice_changes\": \"None; the transition between the female speaker and the male speaker at ~00:02.50 aligns naturally with the shift from a section header to narrative text.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; all words are clearly audible and unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.9,
+          "end": 8.9,
+          "file": "read-permission-en-body.wav",
+          "excerpt_sha256": "927a0d5a73865a29553af8f36ed7406fda5ade8dc30d6ff744f8d4839e2c9c12",
+          "decoded_sample_count": 144000,
+          "expected_context": "Gibs explains: “This is for an authorized household profile and health-service planning.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gibs explains this is for an authorized household profile and health service planning.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced as 'gibz' (/ɡɪbz/) around 00:00 - 00:00.5.\",\n    \"liza_pronunciation\": \"Not present in this excerpt.\",\n    \"negation\": \"No negative constructions occur in the excerpt.\",\n    \"role_distinctions\": \"Spoken by a single female narrator reading both the attribution ('Gibs explains') and the statement without a distinct character voice switch.\",\n    \"ending_completeness\": \"The audio ends naturally with full terminal cadence after 'planning.' at approximately 00:05.74.\",\n    \"audible_speech\": \"All words are fully articulated, clear, and audible.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"None observed; pacing, pitch, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 33.66,
+          "end": 44.04,
+          "file": "read-permission-en-critical.wav",
+          "excerpt_sha256": "df94a5a96b4c748349b655aa47d9a84243d440135c55fae394cd78322ae3879e",
+          "decoded_sample_count": 249120,
+          "expected_context": "Gibs does not promise absolute secrecy. If immediate help is needed, do not delay it to complete a routine interview; follow the local process.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gibs does not promise absolute secrecy. If immediate help is needed, do not delay it to complete a routine interview, follow the local process.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced with a hard 'g' as [ɡɪbz] around 00:00.00 - 00:00.45.\",\n    \"liza_pronunciation\": \"The name Liza does not appear in this excerpt.\",\n    \"negation\": \"Negations 'does not' (00:00.60 - 00:01.20) and 'do not' (00:05.80 - 00:06.40) are clearly articulated without elision.\",\n    \"role_distinctions\": \"There appears to be a change in voice profile/speaker between the first sentence (00:00.00 - 00:03.00) and the second sentence (00:03.70 - 00:10.00).\",\n    \"ending_completeness\": \"The ending 'follow the local process' finishes cleanly without abrupt clipping or truncation.\",\n    \"audible_speech\": \"All spoken words are fully intelligible and cleanly audible throughout.\",\n    \"clipped_words\": \"No clipped or cut-off words observed.\",\n    \"unexpected_voice_changes\": \"A noticeable shift in vocal timbre and acoustic environment occurs across the pause at approximately 00:03.20 - 00:03.70.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp_range\": \"00:03.00 - 00:03.80\",\n      \"description\": \"Shift in speaker voice/timbre between the first and second sentences, indicating concatenated takes or different synthesized voices.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech elements and boundary characteristics are clear.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 33.66,
+          "end": 49.16245833333333,
+          "file": "read-permission-en-ending.wav",
+          "excerpt_sha256": "3125cdf2bffdaa2bb1f782542669337affbf76af56581a9f06852f61396da1a1",
+          "decoded_sample_count": 372059,
+          "expected_context": "Gibs does not promise absolute secrecy. If immediate help is needed, do not delay it to complete a routine interview; follow the local process. The person chooses a comfortable place, language and support person.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gibs does not promise absolute secrecy. If immediate help is needed, do not delay it to complete a routine interview. Follow the local process. The person chooses a comfortable place, language, and support person.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced with a hard 'g' as [ɡɪbz] at 00:00.\",\n    \"liza_pronunciation\": \"The name Liza does not occur in this excerpt.\",\n    \"negation\": \"Clear negation occurs twice: 'does not' at 00:00–00:01 and 'do not' at 00:05–00:06.\",\n    \"role_distinctions\": \"There are distinct voice shifts demarcating different roles or segments: Voice 1 (00:00–00:03), Voice 2 (00:03–00:10), and Voice 3 (00:10–00:15).\",\n    \"ending_completeness\": \"The excerpt concludes naturally with 'support person.' without clipping or truncation.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible across all segments with clear articulation.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Speaker timbre and pitch shift abruptly between sentences (transitions at approximately 00:03.3 and 00:10.4).\"\n  },\n  \"possible_defects\": [\n    \"Abrupt speaker/voice transitions between consecutive instructional statements at 00:03.3 and 00:10.4.\"\n  ],\n  \"uncertainty\": \"None.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-practice-en",
+      "language": "en",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/practice.en.b6bcb21378c3.mp3",
+      "source_sha256": "153eccfd8a39675dc8c475bf7895aed3b22837791db378cd76afb9196779231c",
+      "decoded_pcm_sha256": "0a9c1d8b6541a8b079d2e6abd49491100a0e9631c1fe16462ed85acee5f84118",
+      "full_audio_metrics": {
+        "samples": 1133506,
+        "seconds": 47.229416666666665,
+        "rms": 0.1314471278688225,
+        "peak": 0.86590576171875,
+        "quiet_sample_fraction": 0.2867245519653182
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Try it, then repeat",
+          "start_ms": 0,
+          "end_ms": 1880,
+          "samples": 45120,
+          "seconds": 1.88,
+          "rms": 0.12596631292854346,
+          "peak": 0.79962158203125,
+          "quiet_sample_fraction": 0.3800531914893617
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Use the fictional role cards: Gibs, Liza and observer.",
+          "start_ms": 2180,
+          "end_ms": 7980,
+          "samples": 139200,
+          "seconds": 5.8,
+          "rms": 0.12319750346083605,
+          "peak": 0.840118408203125,
+          "quiet_sample_fraction": 0.304375
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Rehearse permission, choice of place and language, listening without interruption, and a summary with an accuracy check.",
+          "start_ms": 8280,
+          "end_ms": 16720,
+          "samples": 202560,
+          "seconds": 8.44,
+          "rms": 0.12994719331449586,
+          "peak": 0.835205078125,
+          "quiet_sample_fraction": 0.22876678515007898
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Liza chooses whether she wants a support person.",
+          "start_ms": 17020,
+          "end_ms": 19940,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.11907966275042156,
+          "peak": 0.704010009765625,
+          "quiet_sample_fraction": 0.1896832191780822
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "The observer records the exact helpful phrase and any rushed step.",
+          "start_ms": 20240,
+          "end_ms": 25080,
+          "samples": 116160,
+          "seconds": 4.84,
+          "rms": 0.1557916040231156,
+          "peak": 0.83502197265625,
+          "quiet_sample_fraction": 0.16670971074380164
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Repeat that part before rotating roles.",
+          "start_ms": 25380,
+          "end_ms": 27980,
+          "samples": 62400,
+          "seconds": 2.6,
+          "rms": 0.1736514031993788,
+          "peak": 0.8455810546875,
+          "quiet_sample_fraction": 0.21294871794871795
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Everyone practices as the BHW.",
+          "start_ms": 28280,
+          "end_ms": 31160,
+          "samples": 69120,
+          "seconds": 2.88,
+          "rms": 0.13946267295453904,
+          "peak": 0.86590576171875,
+          "quiet_sample_fraction": 0.21265914351851853
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Alone, say both roles aloud and check the listening aid.",
+          "start_ms": 31460,
+          "end_ms": 35220,
+          "samples": 90240,
+          "seconds": 3.76,
+          "rms": 0.15566329672172494,
+          "peak": 0.85076904296875,
+          "quiet_sample_fraction": 0.2355718085106383
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "At the next authorized visit, rehearse the same opening.",
+          "start_ms": 35520,
+          "end_ms": 39320,
+          "samples": 91200,
+          "seconds": 3.8,
+          "rms": 0.13793264243831482,
+          "peak": 0.829315185546875,
+          "quiet_sample_fraction": 0.19884868421052632
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Do not upload a resident’s private account.",
+          "start_ms": 39620,
+          "end_ms": 42860,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.11966192720645276,
+          "peak": 0.821807861328125,
+          "quiet_sample_fraction": 0.24862397119341564
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Repeat the step needing work; peer feedback is practice.",
+          "start_ms": 43160,
+          "end_ms": 47160,
+          "samples": 96000,
+          "seconds": 4,
+          "rms": 0.11464162906750455,
+          "peak": 0.836578369140625,
+          "quiet_sample_fraction": 0.27225
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.98,
+          "file": "read-practice-en-head.wav",
+          "excerpt_sha256": "4870ed66553e6606cad02d9f667ae278add731ffc08dcc31aa19e8a77ba51661",
+          "decoded_sample_count": 191520,
+          "expected_context": "Try it, then repeat Use the fictional role cards: Gibs, Liza and observer.",
+          "model_response": "```json\n{\n  \"transcript\": \"Try it, then repeat. Use the fictional role cards: Gibs, Lisa, and observer.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced as [ɡɪbz] ('gibz') at approximately 00:04.75 - 00:05.40.\",\n    \"liza_lisa_pronunciation\": \"Pronounced as [ˈliːsə] ('LEE-sa') at approximately 00:05.65 - 00:06.40.\",\n    \"negation\": \"No negative words or negative constructions are present in this excerpt.\",\n    \"role_distinctions\": \"The three roles ('Gibs', 'Lisa', 'observer') are distinctly enumerated with clear pauses between them (00:04.75 - 00:07.60).\",\n    \"ending_completeness\": \"The excerpt concludes completely on 'observer.' with natural falling intonation and no abrupt truncation.\",\n    \"audible_speech\": \"Speech is clearly audible, paced evenly for instructional context, and free of masking background noise.\",\n    \"clipped_words\": \"No clipped or cut-off words detected.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and voice quality remain consistent throughout the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and fully intelligible.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.18,
+          "end": 7.98,
+          "file": "read-practice-en-body.wav",
+          "excerpt_sha256": "bc5f98ef45691fa9bfb24647f4f87ef6fa145f1c9ea6f59f737d046e0392aeb8",
+          "decoded_sample_count": 139200,
+          "expected_context": "Use the fictional role cards: Gibs, Liza and observer.",
+          "model_response": "```json\n{\n  \"transcript\": \"Use the fictional role cards: Gibs, Lisa, and Observer.\",\n  \"observations\": [\n    {\n      \"category\": \"pronunciation\",\n      \"detail\": \"\\\"Gibs\\\" is pronounced as [ɡɪbz] around 00:02.40 - 00:03.10, matching the expected 'gibz' pronunciation.\"\n    },\n    {\n      \"category\": \"pronunciation\",\n      \"detail\": \"\\\"Lisa\\\" is pronounced as [ˈliː.sə] (LEE-sa) around 00:03.20 - 00:04.05, matching the expected pronunciation.\"\n    },\n    {\n      \"category\": \"role distinctions\",\n      \"detail\": \"The roles (\\\"Gibs\\\", \\\"Lisa\\\", \\\"Observer\\\") are clearly enunciated with distinct pauses separating each item in the list.\"\n    },\n    {\n      \"category\": \"negation\",\n      \"detail\": \"No negation terms occur in this excerpt.\"\n    },\n    {\n      \"category\": \"voice and delivery\",\n      \"detail\": \"Delivery is steady and natural with no unexpected voice switches, unnatural pitch jumps, or clipped words.\"\n    },\n    {\n      \"category\": \"ending completeness\",\n      \"detail\": \"The excerpt concludes naturally after \\\"Observer\\\" at 00:05.35 with full decay and no abrupt cutoff.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. Speech is clear, intelligible, and free of background noise.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 8.28,
+          "end": 19.94,
+          "file": "read-practice-en-critical.wav",
+          "excerpt_sha256": "a0142968b41820075c09e1c011877036f82e6a650fc8756d086eba1cd0af4e67",
+          "decoded_sample_count": 279840,
+          "expected_context": "Rehearse permission, choice of place and language, listening without interruption, and a summary with an accuracy check. Liza chooses whether she wants a support person.",
+          "model_response": "```json\n{\n  \"transcript\": \"rehearse permission, choice of place and language, listening without interruption, and a summary with an accuracy check. Lisa chooses whether she wants a support person.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"none\",\n    \"liza_pronunciation\": \"Pronounced as 'LEE-sa' ('Lisa') around 00:08.\",\n    \"negation\": \"Contains 'without' at 00:04.\",\n    \"role_distinctions\": \"Single speaker narrating list items and a descriptive sentence.\",\n    \"ending_completeness\": \"The audio concludes naturally with no cutoff on 'person'.\",\n    \"audible_speech\": \"Clear and intelligible speech throughout.\",\n    \"clipped_words\": \"none\",\n    \"unexpected_voice_changes\": \"none\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 31.46,
+          "end": 47.229416666666665,
+          "file": "read-practice-en-ending.wav",
+          "excerpt_sha256": "5bb9280e7482de9f73ee0fdfb33fc58ff80bcc1718b393598e04ea1201d5e788",
+          "decoded_sample_count": 378466,
+          "expected_context": "Alone, say both roles aloud and check the listening aid. At the next authorized visit, rehearse the same opening. Do not upload a resident’s private account. Repeat the step needing work; peer feedback is practice.",
+          "model_response": "```json\n{\n  \"transcript\": \"Alone, say both roles aloud and check the listening aid. At the next authorized visit, rehearse the same opening. Do not upload a resident's private account. Repeat the step needing work. Peer feedback is practice.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Not present in the excerpt.\",\n    \"liza_pronunciation\": \"Not present in the excerpt.\",\n    \"negation\": \"Clear negation heard at 00:08.0 ('Do not upload').\",\n    \"role_distinctions\": \"The recording consists of four distinct sentences spoken by alternating/different voices or synthesis models.\",\n    \"ending_completeness\": \"The audio concludes naturally without cutoff.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": [\n      {\n        \"timestamp\": \"00:03.8\",\n        \"description\": \"Voice shifts to a different speaker profile/timbre for 'At the next authorized visit...'\"\n      },\n      {\n        \"timestamp\": \"00:08.0\",\n        \"description\": \"Voice shifts to a deeper, more mechanical tone for 'Do not upload...'\"\n      },\n      {\n        \"timestamp\": \"00:11.5\",\n        \"description\": \"Voice shifts back to an expressive female educational voice for 'Repeat the step needing work...'\"\n      }\n    ]\n  },\n  \"possible_defects\": [\n    \"Frequent speaker/timbre transitions between individual prompt lines without narrative continuity.\"\n  ],\n  \"uncertainty\": \"Low; all speech segments are distinct and unambiguous.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-profile-en",
+      "language": "en",
+      "source_path": "/training/audio/06-komunikasyon/communication-listen/profile.en.c6066b54b53c.mp3",
+      "source_sha256": "523b416e03635575fadba34dff49c40088ce38f988512a53fb35b18d740d49cf",
+      "decoded_pcm_sha256": "8ddd35f38400bfff57c0d677a076111086b26d4ef4da2a8dc60029d38d9aa1d1",
+      "full_audio_metrics": {
+        "samples": 1115325,
+        "seconds": 46.471875,
+        "rms": 0.12555898374484215,
+        "peak": 0.999969482421875,
+        "quiet_sample_fraction": 0.2675632663125098
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Summarize and check accuracy",
+          "start_ms": 0,
+          "end_ms": 2600,
+          "samples": 62400,
+          "seconds": 2.6,
+          "rms": 0.13529212610358823,
+          "peak": 0.939605712890625,
+          "quiet_sample_fraction": 0.21862179487179487
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "“Have I understood correctly: getting there is difficult when nobody can look after your child?”",
+          "start_ms": 2900,
+          "end_ms": 8660,
+          "samples": 138240,
+          "seconds": 5.76,
+          "rms": 0.1222732002904507,
+          "peak": 0.781524658203125,
+          "quiet_sample_fraction": 0.15345052083333333
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Gibs asks.",
+          "start_ms": 8960,
+          "end_ms": 10560,
+          "samples": 38400,
+          "seconds": 1.6,
+          "rms": 0.11849338875485614,
+          "peak": 0.79718017578125,
+          "quiet_sample_fraction": 0.396640625
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "“Yes, when my sister is away,” Liza clarifies.",
+          "start_ms": 10860,
+          "end_ms": 14780,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.11005661375109713,
+          "peak": 0.82745361328125,
+          "quiet_sample_fraction": 0.26360544217687076
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Gibs offers a more accurate summary: “When your sister is away, it is difficult to find childcare.",
+          "start_ms": 15080,
+          "end_ms": 21560,
+          "samples": 155520,
+          "seconds": 6.48,
+          "rms": 0.12911917381915008,
+          "peak": 0.804931640625,
+          "quiet_sample_fraction": 0.20689300411522635
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Is that right?”",
+          "start_ms": 21860,
+          "end_ms": 23260,
+          "samples": 33600,
+          "seconds": 1.4,
+          "rms": 0.13277863191583128,
+          "peak": 0.795654296875,
+          "quiet_sample_fraction": 0.44976190476190475
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Liza confirms it.",
+          "start_ms": 23560,
+          "end_ms": 25160,
+          "samples": 38400,
+          "seconds": 1.6,
+          "rms": 0.12687874287476025,
+          "peak": 0.9244384765625,
+          "quiet_sample_fraction": 0.3340625
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "This is a fictional accuracy check, not an actual record.",
+          "start_ms": 25460,
+          "end_ms": 29180,
+          "samples": 89280,
+          "seconds": 3.72,
+          "rms": 0.11841072901291638,
+          "peak": 0.83892822265625,
+          "quiet_sample_fraction": 0.1875448028673835
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "In an authorized profile, collect only relevant information, do not guess missing answers and respect a wish not to answer yet.",
+          "start_ms": 29480,
+          "end_ms": 38120,
+          "samples": 207360,
+          "seconds": 8.64,
+          "rms": 0.1434604123291967,
+          "peak": 0.85418701171875,
+          "quiet_sample_fraction": 0.17937403549382716
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "No childcare arrangement or appointment has been promised.",
+          "start_ms": 38420,
+          "end_ms": 42460,
+          "samples": 96960,
+          "seconds": 4.04,
+          "rms": 0.14500973846246,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.17468028052805282
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ask whether the summary is accurate and let the person correct it.",
+          "start_ms": 42760,
+          "end_ms": 46400,
+          "samples": 87360,
+          "seconds": 3.64,
+          "rms": 0.1235655730521866,
+          "peak": 0.925384521484375,
+          "quiet_sample_fraction": 0.21539606227106228
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.66,
+          "file": "read-profile-en-head.wav",
+          "excerpt_sha256": "29b68d3d0b289bf8f7a5db3bc31d1cc7f620c5cc33854db9e4d0d6a77b3f1b0f",
+          "decoded_sample_count": 207840,
+          "expected_context": "Summarize and check accuracy “Have I understood correctly: getting there is difficult when nobody can look after your child?”",
+          "model_response": "```json\n{\n  \"transcript\": \"Summarize and check accuracy. Have I understood correctly getting there is difficult when nobody can look after your child?\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"The name Gibs does not occur in this excerpt.\",\n    \"liza_pronunciation\": \"The name Liza does not occur in this excerpt.\",\n    \"negation\": \"The negative indefinite pronoun 'nobody' is articulated clearly at approximately 00:06.6 without slurring or omission.\",\n    \"role_distinctions\": \"The speaker delivers an instructional prompt ('Summarize and check accuracy.') from 00:00.0 to 00:02.2, followed by a slight pause and a shift into a clarifying dialogue example ('Have I understood correctly...') from 00:02.8 to 00:08.1.\",\n    \"ending_completeness\": \"The final word 'child' finishes naturally with full acoustic decay and no premature cutoff.\",\n    \"audible_speech\": \"Speech is fully intelligible and clearly recorded throughout the segment.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"A tonal shift occurs between the instructional command and the simulated conversation prompt around 00:02.5, but the speaker appears to remain the same.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None detected.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.9,
+          "end": 8.66,
+          "file": "read-profile-en-body.wav",
+          "excerpt_sha256": "ab24fcfb2e91d65c34691ff4e35d956cef7dd6e39028f1d36ec9300a5e7dbdd7",
+          "decoded_sample_count": 138240,
+          "expected_context": "“Have I understood correctly: getting there is difficult when nobody can look after your child?”",
+          "model_response": "```json\n{\n  \"transcript\": \"Have I understood correctly, getting there is difficult when nobody can look after your child?\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Not applicable; 'Gibs' is not spoken in this excerpt.\",\n    \"liza_pronunciation\": \"Not applicable; 'Liza' is not spoken in this excerpt.\",\n    \"negation\": \"The negative pronoun 'nobody' is clearly enunciated at approximately 00:03.65 - 00:04.10.\",\n    \"role_distinctions\": \"Single female voice performing a reflective questioning/counseling prompt.\",\n    \"ending_completeness\": \"The utterance concludes naturally with falling-rising question intonation on 'child', without premature truncation.\",\n    \"audible_speech\": \"Speech is clearly audible, intelligible, and free of background noise throughout the excerpt (00:00.00 - 00:05.45).\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"None observed; vocal timbre, volume, and pacing remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality and speech clarity are high.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 25.46,
+          "end": 38.12,
+          "file": "read-profile-en-critical.wav",
+          "excerpt_sha256": "31be4b4c90bae1e001185befb8bf652d5c01ab26a052d503d1d2d997be0ff3b3",
+          "decoded_sample_count": 303840,
+          "expected_context": "This is a fictional accuracy check, not an actual record. In an authorized profile, collect only relevant information, do not guess missing answers and respect a wish not to answer yet.",
+          "model_response": "```json\n{\n \"transcript\": \"This is a fictional accuracy check, not an actual record. In an authorized profile, collect only relevant information. Do not guess missing answers, and respect a wish not to answer yet.\",\n \"observations\": {\n  \"gibs_pronunciation\": \"Neither 'Gibs' nor any variation occurs in this excerpt.\",\n  \"liza_pronunciation\": \"Neither 'Liza' nor any variation occurs in this excerpt.\",\n  \"negation\": \"Negation terms 'not' are clearly articulated at 00:02 ('not an actual record'), 00:08 ('Do not guess'), and 00:11 ('not to answer yet').\",\n  \"role_distinctions\": \"Single consistent female instructional voice throughout with no role shifts.\",\n  \"ending_completeness\": \"The sentence completes naturally at 00:12 with 'yet' and no audio truncation.\",\n  \"audible_speech\": \"Speech is fully audible and intelligible across the entire recording.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"Tone, volume, and pacing remain steady and natural without unexpected vocal changes.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 29.48,
+          "end": 46.471875,
+          "file": "read-profile-en-ending.wav",
+          "excerpt_sha256": "6e1dd57a3c39dae8ae3130f78f6e21dec3cf52921fbae166e03edecb8d796d98",
+          "decoded_sample_count": 407805,
+          "expected_context": "In an authorized profile, collect only relevant information, do not guess missing answers and respect a wish not to answer yet. No childcare arrangement or appointment has been promised. Ask whether the summary is accurate and let the person correct it.",
+          "model_response": "```json\n{\n \"transcript\": \"In an authorized profile, collect only relevant information. Do not guess missing answers, and respect a wish not to answer yet. No childcare arrangement or appointment has been promised. Ask whether the summary is accurate, and let the person correct it.\",\n \"observations\": [\n  \"The excerpt is spoken in Philippine English with clear articulation.\",\n  \"Neither target name ('Gibs' or 'Liza') occurs in this excerpt.\",\n  \"Negation phrases ('Do not guess', 'not to answer yet', 'No childcare arrangement') are clearly enunciated.\",\n  \"Slight tonal and acoustic shifts occur between sentences (around 00:08.5 and 00:12.7), typical of concatenated instructional prompts, though it may be the same speaker.\",\n  \"The final word 'it' finishes cleanly at 00:16.4 without abrupt truncation.\"\n ],\n \"possible_defects\": [\n  \"Minor acoustic/timbre shift between prompts at 00:08.5–00:09.0 and 00:12.6–00:13.0 suggesting spliced segments.\"\n ],\n \"uncertainty\": \"Low\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-en",
+      "language": "en",
+      "source_path": "/training/bhw-1-6/communication-listen-gemini-en-18627f3aef43.mp4",
+      "source_sha256": "18627f3aef43e410bdf3029eba2998766e50ae6e4619e894c9f71c6637d8daac",
+      "decoded_pcm_sha256": "b7fcff683e7e26b1140946d12707f680fa25741b4a655a83ecc7cb5c76974e18",
+      "full_audio_metrics": {
+        "samples": 1525248,
+        "seconds": 63.552,
+        "rms": 0.08427830470391594,
+        "peak": 0.714874267578125,
+        "quiet_sample_fraction": 0.24823176296576033
+      },
+      "zones": [
+        {
+          "zone": "liza",
+          "index": 0,
+          "text": "Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses; he does not guess the reason for her silence.",
+          "start_ms": 0,
+          "end_ms": 9600,
+          "samples": 230400,
+          "seconds": 9.6,
+          "rms": 0.08965374671685716,
+          "peak": 0.5692138671875,
+          "quiet_sample_fraction": 0.24803385416666668
+        },
+        {
+          "zone": "permission",
+          "index": 1,
+          "text": "He explains the purpose and information use, then asks permission. Liza chooses a quieter place, Filipino, and just the two of them for now.",
+          "start_ms": 9900,
+          "end_ms": 20260,
+          "samples": 248640,
+          "seconds": 10.36,
+          "rms": 0.0745821412215735,
+          "peak": 0.628326416015625,
+          "quiet_sample_fraction": 0.2242479086229086
+        },
+        {
+          "zone": "listen",
+          "index": 2,
+          "text": "Gibs puts his phone away, offers an open invitation and waits. Liza describes her childcare barrier. He listens without interruption or blame.",
+          "start_ms": 20560,
+          "end_ms": 31400,
+          "samples": 260160,
+          "seconds": 10.84,
+          "rms": 0.07646613948750468,
+          "peak": 0.583953857421875,
+          "quiet_sample_fraction": 0.24757841328413285
+        },
+        {
+          "zone": "profile",
+          "index": 3,
+          "text": "Gibs asks whether his summary is right. “When my sister is away,” Liza clarifies. He gives the more accurate summary and Liza confirms it.",
+          "start_ms": 31700,
+          "end_ms": 41220,
+          "samples": 228480,
+          "seconds": 9.52,
+          "rms": 0.08509819024374245,
+          "peak": 0.571258544921875,
+          "quiet_sample_fraction": 0.19862132352941175
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "In practice, use fictional role cards. Everyone takes the BHW role. Identify one helpful phrase and repeat any rushed step.",
+          "start_ms": 41520,
+          "end_ms": 50160,
+          "samples": 207360,
+          "seconds": 8.64,
+          "rms": 0.10467961876355467,
+          "peak": 0.714874267578125,
+          "quiet_sample_fraction": 0.18051697530864197
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Liza has spoken and Gibs has checked his understanding. No childcare or appointment is promised. At the next authorized visit, rehearse the opening and summary question.",
+          "start_ms": 50460,
+          "end_ms": 62340,
+          "samples": 285120,
+          "seconds": 11.88,
+          "rms": 0.08685008565301641,
+          "peak": 0.661773681640625,
+          "quiet_sample_fraction": 0.18728956228956228
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 20.26,
+          "file": "shipped-story-en-head.wav",
+          "excerpt_sha256": "f1ef32587e061e72602226d290853b366cbc485550265e68101101df291b8ee9",
+          "decoded_sample_count": 486240,
+          "expected_context": "Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses; he does not guess the reason for her silence. He explains the purpose and information use, then asks permission. Liza chooses a quieter place, Filipino, and just the two of them for now.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses. He does not guess the reason for her silence. He explains the purpose and information use, then asks permission. Lisa chooses a quieter place, Filipino, and just the two of them for now.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced as [ɡɪbz] at both 00:00–00:01 and 00:05–00:06.\",\n    \"liza_pronunciation\": \"Inconsistently pronounced: spoken as 'Lye-zuh' ([ˈlaɪzə]) at 00:02–00:03, and shifted to 'LEE-sa' ([ˈliːsə]) at 00:14–00:15.\",\n    \"negation\": \"Clear and fully enunciated negation ('does not') at 00:07–00:08.\",\n    \"role_distinctions\": \"Single narrator voice recounting descriptive scenario cues and actions for Gibs, Liza, and the neighbor.\",\n    \"audible_speech\": \"Speech is completely audible throughout the excerpt with clear pacing.\",\n    \"clipped_words\": \"No clipped words detected.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and voice quality remain stable and consistent throughout.\",\n    \"ending_completeness\": \"The audio concludes naturally with no cut-off on 'for now' around 00:19–00:20.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp\": \"00:02-00:03\",\n      \"issue\": \"Name pronounced as [ˈlaɪzə] instead of target [ˈliːsə].\"\n    },\n    {\n      \"timestamp\": \"00:14-00:15\",\n      \"issue\": \"Inconsistent pronunciation of the name compared to 00:02–00:03 (articulated as 'Lisa' [ˈliːsə]).\"\n    }\n  ],\n  \"uncertainty\": \"None; all words and pronunciations are distinct and clear.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 9.6,
+          "file": "shipped-story-en-body.wav",
+          "excerpt_sha256": "5a93f986454120f41cc632445036ef11ad0e14887942ed88a04f11c9d28d4e0c",
+          "decoded_sample_count": 230400,
+          "expected_context": "Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses; he does not guess the reason for her silence.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses. He does not guess the reason for her silence.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced with a hard 'g' as [ɡɪbz] around 00:00.08 and 00:05.70, matching the target pronunciation.\",\n    \"liza_pronunciation\": \"Pronounced as [ˈlaɪzə] ('LYE-zuh') at approximately 00:02.80–00:03.45 rather than the specified [ˈliːsə] ('LEE-sa').\",\n    \"negation\": \"The negation 'does not' at 00:07.15–00:07.70 is clearly audible and fully articulated.\",\n    \"role_distinctions\": \"Narrative delivery is clear, consistent, and educational in tone throughout.\",\n    \"ending_completeness\": \"The sentence ending 'for her silence' finishes completely without truncation or trailing off.\",\n    \"audible_speech\": \"All words in the passage are distinctly audible and intelligible.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"Pacing and vocal quality remain stable with no sudden shifts in pitch, volume, or speaker identity.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"pronunciation_deviation\",\n      \"timestamp\": \"00:02.80-00:03.45\",\n      \"detail\": \"'Liza' is pronounced as [ˈlaɪzə] ('LYE-zuh') instead of the requested [ˈliːsə] ('LEE-sa').\"\n    }\n  ],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 20.26,
+          "file": "shipped-story-en-critical.wav",
+          "excerpt_sha256": "f1ef32587e061e72602226d290853b366cbc485550265e68101101df291b8ee9",
+          "decoded_sample_count": 486240,
+          "expected_context": "Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses; he does not guess the reason for her silence. He explains the purpose and information use, then asks permission. Liza chooses a quieter place, Filipino, and just the two of them for now.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses. He does not guess the reason for her silence. He explains the purpose and information use, then asks permission. Lisa chooses a quieter place, Filipino, and just the two of them for now.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced consistently as expected /ɡɪbz/ at 00:00 and 00:05.\",\n    \"liza_pronunciation\": \"Pronounced with an inconsistent phonology: at 00:02–00:03 it is pronounced /ˈlaɪzə/, whereas at 00:14–00:15 it is pronounced /ˈliːsə/ ('Lisa').\",\n    \"negation\": \"Clear negation audible at 00:07 ('does not').\",\n    \"role_distinctions\": \"Narrative exposition delivered consistently in third-person educational voiceover.\",\n    \"ending_completeness\": \"The audio ends completely after 'for now' with natural room decay and no abrupt cutoff.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Narrator tone, pacing, and timbre remain steady throughout.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"pronunciation_inconsistency\",\n      \"timestamp\": \"00:02 - 00:03\",\n      \"description\": \"Liza is pronounced as /ˈlaɪzə/ instead of the requested target /ˈliːsə/ (LEE-sa), before shifting to /ˈliːsə/ at 00:14.\"\n    }\n  ],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 41.52,
+          "end": 63.552,
+          "file": "shipped-story-en-ending.wav",
+          "excerpt_sha256": "925cb46cc2a9d839b24cd407a02a1deb5ffe12a669e433dee6223697ba914494",
+          "decoded_sample_count": 528768,
+          "expected_context": "In practice, use fictional role cards. Everyone takes the BHW role. Identify one helpful phrase and repeat any rushed step. Liza has spoken and Gibs has checked his understanding. No childcare or appointment is promised. At the next authorized visit, rehearse the opening and summary question.",
+          "model_response": "```json\n{\n  \"transcript\": \"In practice, use fictional role cards. Everyone takes the BHW role, identify one helpful phrase, and repeat any rushed step. Liza has spoken, and Gibs has checked his understanding. No child care or appointment is promised. At the next authorized visit, rehearse the opening and summary question.\",\n  \"observations\": {\n    \"gibs_pronunciation\": \"Pronounced distinctly as [ɡɪbz] around 00:10 - 00:11.\",\n    \"liza_pronunciation\": \"Pronounced with a voiceless 's' as [ˈliː.sə] (LEE-sa) at 00:09.\",\n    \"negation\": \"The negation 'No' in 'No child care or appointment is promised' is clearly stated and audible at 00:13.\",\n    \"role_distinctions\": \"The roles of BHW, Liza, and Gibs are articulated clearly with proper narrative pauses.\",\n    \"ending_completeness\": \"The audio ends naturally with no cut-off after 'question' (finishing around 00:20.5, followed by silence).\",\n    \"audible_speech\": \"All speech is clear, intelligible, and well-enunciated.\",\n    \"clipped_words\": \"No clipped words observed.\",\n    \"unexpected_voice_changes\": \"None observed; pacing, volume, and tone remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Whether 'child care' is meant to be written as one word ('childcare') or two words ('child care').\"\n}\n```"
+        }
+      ]
+    }
+  ]
+}

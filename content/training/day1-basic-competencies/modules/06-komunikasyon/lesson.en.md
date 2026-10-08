@@ -1,6 +1,6 @@
 ## [scenario/core] Why is Liza quiet? {m6.gather}
 
-Liza, 29, is speaking with BHW Mila for a household profile. A neighbor is beside her and she keeps looking at the door. She answers every question with “I’m fine.” Instead of guessing the missing details, Mila asks whether they can move somewhere more private and which language Liza prefers. She explains that relevant information is for the health team and service planning.
+Liza, 29, is speaking with BHW Gibs for a household profile. A neighbor is beside her and she keeps looking at the door. She answers every question with “I’m fine.” Instead of guessing the missing details, Gibs asks whether they can move somewhere more private and which language Liza prefers. He explains that relevant information is for the health team and service planning.
 
 :::takeaway
 Gathering information begins with a comfortable setting and a clear purpose.
@@ -8,7 +8,7 @@ Gathering information begins with a comfortable setting and a clear purpose.
 
 ## [concept/core] Listen before giving advice {m6.empathy}
 
-Mila sits at Liza’s level and puts her phone away. She waits for the story to finish: Liza feels ashamed about missing several health-center visits. Mila replies, “It sounds difficult to manage caregiving and getting there.” She does not call Liza lazy or promise to fix everything. A calm voice, appropriate eye contact and pauses leave space for a reply; do not force eye contact when it makes someone uncomfortable.
+Gibs sits at Liza’s level and puts his phone away. He waits for the story to finish: Liza feels ashamed about missing several health-center visits. Gibs replies, “It sounds difficult to manage caregiving and getting there.” He does not call Liza lazy or promise to fix everything. A calm voice, appropriate eye contact and pauses leave space for a reply; do not force eye contact when it makes someone uncomfortable.
 
 :::takeaway
 Respectful listening gives the person room to describe the real concern.
@@ -31,7 +31,7 @@ Use open questions for the story and focused questions to clarify information.
 
 ## [concept/core] Reported, observed, and unconfirmed {m6.assess}
 
-Liza says no one can stay with her two children. Mila notices the appointment card is unavailable, but that does not prove there was no appointment. In the notes, separate “Liza reports” from direct observations. Clarify an uncertain date; mark information “not yet confirmed” when a record still needs checking. Assessing information means checking its source and relevance, without assigning a diagnosis or judging the person.
+Liza says no one can stay with her two children. Gibs notices the appointment card is unavailable, but that does not prove there was no appointment. In the notes, separate “Liza reports” from direct observations. Clarify an uncertain date; mark information “not yet confirmed” when a record still needs checking. Assessing information means checking its source and relevance, without assigning a diagnosis or judging the person.
 
 :::takeaway
 When assessing information, distinguish reports, observations and details still requiring verification.
@@ -46,7 +46,7 @@ When assessing information, distinguish reports, observations and details still 
 
 ## [concept/core] Report enough for action {m6.record}
 
-Mila uses the approved form: date, relevant concern, information source, action taken and needed follow-up. For example: “Liza reports difficulty finding childcare; last attendance date needs verification. Requests a conversation with the midwife about scheduling.” Send this to the appropriate health team member through an authorized channel. Keep names and private details out of public group chats. Confirm receipt and identify who will act next.
+Gibs uses the approved form: date, relevant concern, information source, action taken and needed follow-up. For example: “Liza reports difficulty finding childcare; last attendance date needs verification. Requests a conversation with the midwife about scheduling.” Send this to the appropriate health team member through an authorized channel. Keep names and private details out of public group chats. Confirm receipt and identify who will act next.
 
 :::visual 1
 :::takeaway
@@ -55,7 +55,7 @@ Recording and presenting information requires clarity, a next step and the appro
 
 ## [practice/core] One message, then hear it back {m6.health-promotion}
 
-Mila explains the agreed next step in plain language. “To check that I explained it clearly, how would you describe the plan when you get home?” If Liza’s response differs, Mila explains it another way and checks again. Teach-back checks the clarity of the explanation, not the person’s intelligence. Use a suitable picture if helpful; keep advice within training and the health team’s instructions.
+Gibs explains the agreed next step in plain language. “To check that I explained it clearly, how would you describe the plan when you get home?” If Liza’s response differs, Gibs explains it another way and checks again. Teach-back checks the clarity of the explanation, not the person’s intelligence. Use a suitable picture if helpful; keep advice within training and the health team’s instructions.
 
 :::takeaway
 Check a clear message through the person’s own explanation, not a nod alone.

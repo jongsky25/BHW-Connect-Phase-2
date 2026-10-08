@@ -1,0 +1,48 @@
+{
+  "human_listening": "pending",
+  "owner_package_review": "pending",
+  "policy_SME_review": "pending",
+  "model_analysis": "Supporting evidence only; inspect exact generated audio full and focused reports. No human signoff inferred.",
+  "initial_audio": "First generated media will be retained as initial evidence. Any subsequent corrections must retain original responses and initial track receipts.",
+  "initial_model_findings": {
+    "complete_read_and_AAC_reviews": 14,
+    "fil_Liza_name": "Some clips transcribed Lay-za; mixed Lee-sa/Lay-za in check.",
+    "voice_changes": [
+      "English listen: apparent voice switch in quoted Gibs dialogue",
+      "Filipino practice and check: apparent register/speaker changes",
+      "Filipino story: apparent timbre changes at beat joins"
+    ],
+    "initial_focused_review": "Partial: provider HTTP503 stopped first run; copied pronunciation hint was wrong and is superseded."
+  },
+  "correction_plan": "Three delivery passes completed; all initial, second and final media/response evidence retained. Technical draft ready for human audio, art and local-policy review.",
+  "second_model_review": {
+    "archive": "bedbe235142a851912fba768ba50443c4bbad4f1d6da05316c40803a088203b2",
+    "complete_clips": 14,
+    "focused_excerpts": 56,
+    "no_full_clip_ending_truncation_reported": true,
+    "remaining_concerns": [
+      "English liza/profile/practice: reported voice changes; some focused assessments disagree",
+      "Filipino profile/check: reported voice/register changes; check name inconsistency",
+      "English story first beat: reported LY-za instead of LEE-sa"
+    ],
+    "assessment_limit": "Contradictory full/excerpt narrator-gender judgements require human listening; no human signoff inferred."
+  },
+  "third_delivery_pass": {
+    "status": "completed",
+    "archive_sha256": "7294ece5b6b84794de0c2dd0df1e2af29886133a792250f1c279c950f8fd5d36",
+    "changed_Read_tracks": 5,
+    "changed_story_narration": "English",
+    "full_clip_reports": 14,
+    "focused_WAV_reviews": 56,
+    "all_full_clip_reports_speech_present": true,
+    "no_full_clip_ending_truncation_reported": true,
+    "pronunciation_note": "Lisa/Lee-sah are speech-only spellings for the intended LEE-sa pronunciation of displayed Liza. Generic full-model objections preferring LY-za are not treated as the name standard.",
+    "remaining_model_observations": [
+      "English practice: full review and ending excerpt flag lower/lighter narrator-timbre shifts.",
+      "English profile: full review describes dialogue/register shifts and slight accuracy pronunciation.",
+      "Several liza/profile/story excerpt assessments report voice shifts while full-clip reviews describe steady delivery; assessments are conflicting."
+    ],
+    "human_review_action": "Listen to both complete languages and flagged excerpts for the same adult woman narrator, names, negation and complete instructions. Model classifications are uncertain; no human signoff inferred."
+  },
+  "sibling_continuity_review": "Eight new sibling Read recordings replace Mila with Gibs using unchanged sibling styles. Exact text/media mappings are verified; the 14 full/56 focused model reviews cover 1.6.1 only. Include sibling name pronunciation in human listening."
+}

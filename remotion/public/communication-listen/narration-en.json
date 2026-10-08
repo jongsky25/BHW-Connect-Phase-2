@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural Philippine English as a single adult Filipina woman trainer in Kore's light, warm, medium-high feminine vocal register. Every request is a continuation of this same woman, including short headings, standalone sentences, quoted questions and summaries. Keep identical feminine resonance and pitch range throughout. Read quoted dialogue in your own trainer voice, without impersonating any character. Use gentle instructional emphasis and pauses. Say Lee-sah in two syllables, LEE-sah, and Gibz in one syllable, gibz. Preserve every supplied word and negation; complete each phrase without clipping. Read only the supplied script. Delivery revision 3.",
+  "durationSeconds": 63.922,
+  "beats": [
+    {
+      "zone": "liza",
+      "index": 0,
+      "text": "Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses; he does not guess the reason for her silence.",
+      "start_ms": 0,
+      "end_ms": 10640
+    },
+    {
+      "zone": "permission",
+      "index": 1,
+      "text": "He explains the purpose and information use, then asks permission. Liza chooses a quieter place, Filipino, and just the two of them for now.",
+      "start_ms": 10940,
+      "end_ms": 20740
+    },
+    {
+      "zone": "listen",
+      "index": 2,
+      "text": "Gibs puts his phone away, offers an open invitation and waits. Liza describes her childcare barrier. He listens without interruption or blame.",
+      "start_ms": 21040,
+      "end_ms": 31880
+    },
+    {
+      "zone": "profile",
+      "index": 3,
+      "text": "Gibs asks whether his summary is right. “When my sister is away,” Liza clarifies. He gives the more accurate summary and Liza confirms it.",
+      "start_ms": 32180,
+      "end_ms": 41940
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "In practice, use fictional role cards. Everyone takes the BHW role. Identify one helpful phrase and repeat any rushed step.",
+      "start_ms": 42240,
+      "end_ms": 52520
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Liza has spoken and Gibs has checked his understanding. No childcare or appointment is promised. At the next authorized visit, rehearse the opening and summary question.",
+      "start_ms": 52820,
+      "end_ms": 63860
+    }
+  ],
+  "audio_sha256": "6a1177cb844f07420c4c441067f05744a4eb19ba25e4b9d7cf7cbdebeb24e4ca"
+}

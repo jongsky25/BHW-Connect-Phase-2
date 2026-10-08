@@ -1,8 +1,8 @@
 ## [teach-back] One message, then hear it back
 
-BHW Mila has heard Liza, 29, explain her difficulty attending the health center. They agree to contact the midwife about scheduling.
+BHW Gibs has heard Liza, 29, explain her difficulty attending the health center. They agree to contact the midwife about scheduling.
 
-Mila explains the agreed next step in plain language. “To check that I explained it clearly, how would you describe the plan when you get home?” If Liza’s response differs, Mila explains it another way and checks again. Teach-back checks the clarity of the explanation, not the person’s intelligence. Use a suitable picture if helpful; keep advice within training and the health team’s instructions.
+Gibs explains the agreed next step in plain language. “To check that I explained it clearly, how would you describe the plan when you get home?” If Liza’s response differs, Gibs explains it another way and checks again. Teach-back checks the clarity of the explanation, not the person’s intelligence. Use a suitable picture if helpful; keep advice within training and the health team’s instructions.
 
 ## [family-planning] A family-planning question
 

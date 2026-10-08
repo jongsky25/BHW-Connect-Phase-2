@@ -1,0 +1,32 @@
+{
+  "method": "Exact original Actions archive hashes; retain original provider responses, initial speech sources and initial excerpts separately. No transport headers or credentials.",
+  "archives": [
+    {
+      "stage": "initial",
+      "workflow_run": 37732577763,
+      "artifact_id": 11530873166,
+      "source_commit": "e2377dfed60e04d1faa39ef1caeead801469dab8",
+      "local_archive": "lesson161-initial-evidence.zip",
+      "response_directory": "lesson161-initial-raw",
+      "zip_sha256": "b5ead159f1c8c8832365bb8014b7aaec8cb16f9c2cf54df9357f055224103318"
+    },
+    {
+      "stage": "corrected",
+      "workflow_run": 37735003698,
+      "artifact_id": 11531704905,
+      "source_commit": "9fa501541eb85d986ef01985dcae3735c9096a0f",
+      "local_archive": "lesson161-corrected-evidence.zip",
+      "response_directory": "lesson161-raw",
+      "zip_sha256": "bedbe235142a851912fba768ba50443c4bbad4f1d6da05316c40803a088203b2"
+    },
+    {
+      "stage": "final_media",
+      "workflow_run": 37737891977,
+      "artifact_id": 11533220687,
+      "source_commit": "9c37bd8e9cdf28499f1ee1d150cd3ca094aa21bd",
+      "local_archive": "lesson161-final-media-evidence.zip",
+      "response_directory": "lesson161-raw",
+      "zip_sha256": "7294ece5b6b84794de0c2dd0df1e2af29886133a792250f1c279c950f8fd5d36"
+    }
+  ]
+}

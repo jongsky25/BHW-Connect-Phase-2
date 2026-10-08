@@ -1,8 +1,8 @@
 ## [sources] Reported, observed, and unconfirmed
 
-BHW Mila is asking Liza, 29, about a missed health-center visit. Mila has not yet checked the authorized attendance record.
+BHW Gibs is asking Liza, 29, about a missed health-center visit. Gibs has not yet checked the authorized attendance record.
 
-Liza says no one can stay with her two children. Mila notices the appointment card is unavailable, but that does not prove there was no appointment. In the notes, separate “Liza reports” from direct observations. Clarify an uncertain date; mark information “not yet confirmed” when a record still needs checking. Assessing information means checking its source and relevance, without assigning a diagnosis or judging the person.
+Liza says no one can stay with her two children. Gibs notices the appointment card is unavailable, but that does not prove there was no appointment. In the notes, separate “Liza reports” from direct observations. Clarify an uncertain date; mark information “not yet confirmed” when a record still needs checking. Assessing information means checking its source and relevance, without assigning a diagnosis or judging the person.
 
 ## [conflicting-accounts] When accounts differ
 
