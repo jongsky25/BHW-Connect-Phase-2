@@ -19,10 +19,11 @@
         "m6.record"
       ],
       "asset_ids": [
-        "gibs-portrait"
+        "gibs-portrait",
+        "handoff-handoff"
       ],
-      "takeaway_fil": "Ang pagtatala at paglalahad ng impormasyon ay dapat malinaw, may susunod na hakbang at para lamang sa tamang tatanggap.",
-      "takeaway_en": "Recording and presenting information requires clarity, a next step and the appropriate recipient.",
+      "takeaway_fil": "Ihiwalay ang concern, pinagmulan at kulang na detalye; ang hinihingi ay hindi pa napagkasunduan.",
+      "takeaway_en": "Separate the concern, source and missing detail; a request is not yet an agreement.",
       "check": null
     },
     {
@@ -30,9 +31,11 @@
       "concept_ids": [
         "m6.record"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang parehong concern ay maaaring ilahad nang magkaiba ayon sa layunin at tamang tatanggap.",
-      "takeaway_en": "The same concern can be presented differently for the purpose and appropriate recipient.",
+      "asset_ids": [
+        "handoff-audience"
+      ],
+      "takeaway_fil": "Tiyakin ang awtorisadong tatanggap at lokal na aprubadong paraan; ibahagi lamang ang kailangan.",
+      "takeaway_en": "Verify the authorized recipient and locally approved method; share only what is needed.",
       "check": null
     },
     {
@@ -40,19 +43,35 @@
       "concept_ids": [
         "m6.record"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang paglalahad sa pulong ay humihingi ng konkretong desisyon habang pinangangalagaan ang pribadong kuwento.",
-      "takeaway_en": "A meeting presentation asks for a concrete decision while protecting private stories.",
+      "asset_ids": [
+        "handoff-meeting"
+      ],
+      "takeaway_fil": "Sa pulong, sapat na pattern at malinaw na tanong; ang pribadong kaso ay sa awtorisadong tatanggap.",
+      "takeaway_en": "At a meeting, give a sufficient pattern and a clear question; private cases go to the authorized recipient.",
       "check": null
+    },
+    {
+      "id": "confirm-next-step",
+      "concept_ids": [
+        "m6.record"
+      ],
+      "check": null,
+      "takeaway_fil": "Kumpirmahin ang pagtanggap at ang napagkasunduan: sino, ano, at kailan o paano mag-follow-up.",
+      "takeaway_en": "Confirm receipt and the agreement: who, what, and when or how to follow up.",
+      "asset_ids": [
+        "handoff-confirm-next-step"
+      ]
     },
     {
       "id": "practice",
       "concept_ids": [
         "m6.record"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang ulat ay sapat para makakilos ang tamang tao, habang protektado ang pribadong detalye.",
-      "takeaway_en": "A handoff gives the right person enough to act while protecting private details.",
+      "asset_ids": [
+        "handoff-practice"
+      ],
+      "takeaway_fil": "Magsanay sa pag-uulat, pagsagot sa paglilinaw at pagkumpirma; ulitin ang bahaging kulang.",
+      "takeaway_en": "Practise reporting, answering clarification and confirming; retry the missing part.",
       "check": null
     },
     {
@@ -60,9 +79,11 @@
       "concept_ids": [
         "m6.record"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang ulat ay sapat para makakilos ang tamang tao, habang protektado ang pribadong detalye.",
-      "takeaway_en": "A handoff gives the right person enough to act while protecting private details.",
+      "asset_ids": [
+        "handoff-check"
+      ],
+      "takeaway_fil": "Ibahagi ang kailangan ng tamang tatanggap; tiyakin ang pagtanggap at sundan ang napagkasunduan.",
+      "takeaway_en": "Share what the right recipient needs; verify receipt and follow up on the agreement.",
       "check": {
         "prompt_fil": "Humihingi ang barangay meeting ng paliwanag sa missed visits. Ano ang ibabahagi?",
         "prompt_en": "A barangay meeting asks about missed visits. What should be shared?",
@@ -81,8 +102,8 @@
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ang unang sagot ay angkop sa pagpaplano. Ang forms at pangalan ay naglalantad ng hindi kailangang personal na detalye; ang opinyon ay hindi ebidensya ng dahilan. Ang indibidwal na follow-up ay sa tamang health team member.",
-        "feedback_en": "The first response fits planning. Forms and names expose unnecessary personal details; an opinion is not evidence of the cause. Individual follow-up goes to the appropriate health team member."
+        "feedback_fil": "Una: Ang pinagsamang childcare barrier at tanong tungkol sa iskedyul ay sapat para sa pagpaplano, kung walang detalyeng makakakilala sa pamilya. Ikalawa: Ang larawan ng household forms ay naglalantad ng hindi kailangang pribadong detalye; hindi iyon ang kailangan ng grupo. Ikatlo: Ang pangalan at opinyon ng kapitbahay ay hindi angkop; ang opinyon ay hindi ebidensya ng dahilan. Sa wakas, tinanggap ng chair ang pinagsamang buod at napagkasunduang itanong niya sa itinalagang health team member ang paraan ng paglilinaw sa iskedyul sa susunod na coordination meeting. Kinumpirma ni Gibs kung sino ang gagawa at paano kukunin ang sagot. Hiwalay niyang kinumpirma sa awtorisadong midwife ang pagtanggap ng indibidwal na ulat at kanilang follow-up. Walang ipinangakong appointment o childcare.",
+        "feedback_en": "First: The aggregated childcare barrier and scheduling question are sufficient for planning if no details identify a household. Second: Photographs of household forms expose unnecessary private details; the group does not need them. Third: Names and a neighbor’s opinion are inappropriate; an opinion is not evidence of the cause. In the ending, the chair acknowledges the aggregated summary and agrees to ask the designated health team member how to clarify scheduling at the next coordination meeting. Gibs confirms who will act and how to obtain the response. Separately, he confirms that the authorized midwife received the individual report and checks their follow-up agreement. No appointment or childcare is promised."
       }
     }
   ],
@@ -93,6 +114,7 @@
         "handoff",
         "audience",
         "meeting",
+        "confirm-next-step",
         "practice",
         "check"
       ],
@@ -100,6 +122,7 @@
         "slide-handoff",
         "slide-audience",
         "slide-meeting",
+        "slide-confirm-next-step",
         "slide-practice",
         "slide-check"
       ],
@@ -140,6 +163,72 @@
       "caption_en": "Gibs is the BHW throughout lessons 1.6.",
       "provenance": "New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.",
       "review_status": "approved"
+    },
+    {
+      "id": "handoff-handoff",
+      "path": "/training/bhw-1-6/gibs-handoff-handoff-fab52bab526f.png",
+      "content_hash": "fab52bab526fdeca1c1837a2dfeaf901e1a828bdb629bc346d5d54a5d4fad009",
+      "alt_fil": "Si Gibs ay nagbibigay ng maikling ulat sa awtorisadong midwife sa pribadong lugar; nakasara ang folder.",
+      "alt_en": "Gibs gives a short report to the authorized midwife in a private space; the folder is closed.",
+      "caption_fil": "Ihiwalay ang concern, pinagmulan at kulang na detalye; ang hinihingi ay hindi pa napagkasunduan.",
+      "caption_en": "Separate the concern, source and missing detail; a request is not yet an agreement.",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.",
+      "review_status": "draft"
+    },
+    {
+      "id": "handoff-audience",
+      "path": "/training/bhw-1-6/gibs-handoff-audience-f2e4d35b26ca.png",
+      "content_hash": "f2e4d35b26ca42cafb416487419d05583f83b81c499bffa51863a879198be440",
+      "alt_fil": "Tinitiyak ni Gibs ang awtorisadong midwife bago ibigay ang nakasarang sobre; nakikinig si Liza.",
+      "alt_en": "Gibs verifies the authorized midwife before handing over a closed envelope; Liza listens.",
+      "caption_fil": "Tiyakin ang awtorisadong tatanggap at lokal na aprubadong paraan; ibahagi lamang ang kailangan.",
+      "caption_en": "Verify the authorized recipient and locally approved method; share only what is needed.",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.",
+      "review_status": "draft"
+    },
+    {
+      "id": "handoff-meeting",
+      "path": "/training/bhw-1-6/gibs-handoff-meeting-0e0758dee3d2.png",
+      "content_hash": "0e0758dee3d27f30566c02d03ef1fa8c37f83ec21f324330c2c467b921f1759e",
+      "alt_fil": "Ipinapakita ni Gibs sa pulong ang tatlong walang-pangalang bahay at kalendaryo; nakasara ang pribadong tala.",
+      "alt_en": "Gibs presents three anonymous household icons and a calendar to a meeting; the private record stays closed.",
+      "caption_fil": "Sa pulong, sapat na pattern at malinaw na tanong; ang pribadong kaso ay sa awtorisadong tatanggap.",
+      "caption_en": "At a meeting, give a sufficient pattern and a clear question; private cases go to the authorized recipient.",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.",
+      "review_status": "draft"
+    },
+    {
+      "id": "handoff-confirm-next-step",
+      "path": "/training/bhw-1-6/gibs-handoff-confirm-next-step-f88f7d93bb46.png",
+      "content_hash": "f88f7d93bb46109d58a1088eba94276d2ddb81db9579706d1d1e0cac881e5879",
+      "alt_fil": "Kinukumpirma nina Gibs at midwife ang susunod na hakbang gamit ang kalendaryo na walang pribadong detalye.",
+      "alt_en": "Gibs and the midwife confirm the next step using a calendar with no private details.",
+      "caption_fil": "Kumpirmahin ang pagtanggap at ang napagkasunduan: sino, ano, at kailan o paano mag-follow-up.",
+      "caption_en": "Confirm receipt and the agreement: who, what, and when or how to follow up.",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.",
+      "review_status": "draft"
+    },
+    {
+      "id": "handoff-practice",
+      "path": "/training/bhw-1-6/gibs-handoff-practice-e422855db886.png",
+      "content_hash": "e422855db886be14fde97cb3df446a9b94ab6e16ae3be41f18adfa97dabe226c",
+      "alt_fil": "Tatlong kalahok ang nagsasanay bilang BHW, midwife at observer; walang tunay na resident record.",
+      "alt_en": "Three participants rehearse as BHW, midwife and observer; no real resident record is used.",
+      "caption_fil": "Magsanay sa pag-uulat, pagsagot sa paglilinaw at pagkumpirma; ulitin ang bahaging kulang.",
+      "caption_en": "Practise reporting, answering clarification and confirming; retry the missing part.",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.",
+      "review_status": "draft"
+    },
+    {
+      "id": "handoff-check",
+      "path": "/training/bhw-1-6/gibs-handoff-check-c1216adf038a.png",
+      "content_hash": "c1216adf038a45d5b21f24b911c09c4740ed652247d1378bf3a21d89f891c314",
+      "alt_fil": "Nagtatanong ang chair sa pulong; hawak ni Gibs ang nakasarang clipboard at hindi pa pinipili ang ibabahagi.",
+      "alt_en": "The meeting chair asks a question; Gibs holds a closed clipboard and has not yet chosen what to share.",
+      "caption_fil": "Sitwasyon bago pumili: ano ang kailangan ng grupo?",
+      "caption_en": "Before choosing: what does the group need?",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.",
+      "review_status": "draft"
     }
   ]
 }
