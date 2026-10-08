@@ -8,7 +8,7 @@ Sa isang sensitibong usapan, kilalanin ang concern, magbigay ng isang hakbang na
 
 30 kalahok sa sampung triad. Papel, panulat, bilingual role cards, observer checklist at one-page task aid. Walang tunay na rekord. Opsyonal ang projector at internet.
 
-SELF_STUDY_TIMING_PENDING
+Ginawang pagtataya ng sariling pag-aaral: 13–16 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 529.66 segundo sa English at 584.93 segundo sa Filipino; maglaan ng 3–6 minuto para sa check, maikling pagsasanay at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 ## [prepare] Ihanda
 

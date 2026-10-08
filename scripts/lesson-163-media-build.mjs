@@ -20,9 +20,11 @@ const narrationPath='content/training/day1-basic-competencies/narration.json';
 const allowed=['communication-explain'];
 const original=json(narrationPath);
 original.history ??= {};
+const initialLessons=loadReferenceModule(path.join(root,'content/training/day1-basic-competencies/modules/06-komunikasyon'),path.join(root,'public')).lessons;
+const initialPlan=planReferenceNarration([{key:'06-komunikasyon',lessons:initialLessons}],original,src=>{const p=path.join(root,'public',src.slice(1));return existsSync(p)?sha(p):null;});
 for (const key of allowed) {
  original.history[key] ??= [];
- if (!original.history[key].some(h=>JSON.stringify(h)===JSON.stringify(original.lessons[key]))) original.history[key].push(original.lessons[key]);
+ if (initialPlan.some(p=>p.lessonKey===key&&p.action!=='skip')&&!original.history[key].some(h=>JSON.stringify(h)===JSON.stringify(original.lessons[key]))) original.history[key].push(original.lessons[key]);
 }
 save(narrationPath,original);
 const args=['--modules','06-komunikasyon','--lessons',allowed.join(',')];
@@ -59,7 +61,7 @@ const lesson=json(lessonPath);
 const story={id:'communication-explain-story',alt_fil:'Anim na narrated beat: empathy, sariling paliwanag, family planning, distress, smoking at magalang na repair at recheck.',alt_en:'Six narrated beats: empathy, own-words explanation, family planning, distress, smoking and respectful repair and recheck.',caption_fil:'Isang hakbang, sariling paliwanag, repair at recheck.',caption_en:'One step, own-words explanation, repair and recheck.',provenance:'Lesson 1.6.3 original authored six-beat Remotion story with built-in imagegen scenes preserving approved Gibs and Liza identities. Gemini Kore narration, measured encoded audio sample boundaries. All new media draft; owner listening and local policy/SME review pending.',review_status:'draft',videos:{}};
 const reports=[];
 const previous=existsSync(path.join(root,'docs/lesson-163-media-generation.json'))?json('docs/lesson-163-media-generation.json'):null;
-const inputFiles=['remotion/src/communication-explain/CommunicationExplainStory.tsx','remotion/src/communication-explain/narration.ts','scripts/remotion-render.mjs','remotion/public/communication-explain/teach-back.png',...['fil','en'].flatMap(lang=>['mp3','json'].map(ext=>`remotion/public/communication-explain/narration-${lang}.${ext}`))];
+const inputFiles=['remotion/src/Root.tsx','remotion/src/communication-explain/CommunicationExplainStory.tsx','remotion/src/communication-explain/narration.ts','scripts/remotion-render.mjs','remotion/public/communication-explain/teach-back.png',...['fil','en'].flatMap(lang=>['mp3','json'].map(ext=>`remotion/public/communication-explain/narration-${lang}.${ext}`))];
 inputFiles.push(...['family-planning','distress','smoking','practice','check'].map(id=>`remotion/public/communication-explain/${id}.png`));
 const renderInputHash=createHash('sha256').update(JSON.stringify(inputFiles.map(p=>[p,sha(path.join(root,p))]))).digest('hex');
 const oldStory=lesson.assets.find(a=>a.id===story.id);
@@ -89,6 +91,6 @@ if(!pending.length){
     writeFileSync(guide,readFileSync(guide,'utf8').replace(/SELF_STUDY_TIMING_PENDING|Authored independent estimate:[^\n]+|Ginawang pagtataya ng sariling pag-aaral:[^\n]+/g,estimate));
   }
 }
-save('docs/lesson-163-media-generation.json',{generated_date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),owner_review:'pending',render_input_sha256:renderInputHash,render_cached:cached,target_read_tracks:12,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});
+save('docs/lesson-163-media-generation.json',{generated_date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),owner_review:'pending',render_input_sha256:renderInputHash,render_cached:cached,...(cached&&previous.render_dependency_audit?{render_dependency_audit:previous.render_dependency_audit}:{}),target_read_tracks:12,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});
 console.log('Completed draft lesson media; only target recordings changed, with historical media retained.');
 if(pending.length)process.exitCode=1;

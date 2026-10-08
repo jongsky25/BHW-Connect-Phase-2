@@ -19,6 +19,7 @@
         "m6.health-promotion"
       ],
       "asset_ids": [
+        "gibs-portrait",
         "explain-teach-back"
       ],
       "takeaway_fil": "Isang hakbang → sariling paliwanag → ayusin → mag-check muli. Hindi pa appointment ang pagtatanong sa iskedyul.",
@@ -284,10 +285,50 @@
       "content_hash": "1ee8dcd6c46ff7c0763c3ec4d266576c2da94dce43029e7718d70eccd4ff6601",
       "alt_fil": "Nagtatanong si Liza tungkol sa calendar habang nakikinig si Gibs; hindi pa kumpirmado ang appointment bago ang check.",
       "alt_en": "Liza asks about a calendar while Gibs listens; the appointment is still unconfirmed before the check.",
-      "caption_fil": "Kapag iba ang pagkaunawa, ayusin ang sariling paliwanag at mag-check muli. Hindi kasalanan ng kausap ang hindi malinaw na mensahe.",
-      "caption_en": "When understanding differs, repair your explanation and check again. An unclear message is not the person’s fault.",
+      "caption_fil": "Hindi pa kumpirmado ang appointment. Ano ang susunod na sasabihin ni Gibs?",
+      "caption_en": "The appointment is unconfirmed. What should Gibs say next?",
       "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.",
       "review_status": "draft"
+    },
+    {
+      "id": "communication-explain-story",
+      "alt_fil": "Anim na narrated beat: empathy, sariling paliwanag, family planning, distress, smoking at magalang na repair at recheck.",
+      "alt_en": "Six narrated beats: empathy, own-words explanation, family planning, distress, smoking and respectful repair and recheck.",
+      "caption_fil": "Isang hakbang, sariling paliwanag, repair at recheck.",
+      "caption_en": "One step, own-words explanation, repair and recheck.",
+      "provenance": "Lesson 1.6.3 original authored six-beat Remotion story with built-in imagegen scenes preserving approved Gibs and Liza identities. Gemini Kore narration, measured encoded audio sample boundaries. All new media draft; owner listening and local policy/SME review pending.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-6/communication-explain-gemini-fil-2237c650082f.mp4",
+          "content_hash": "2237c650082f501c4acce563cbb415eac0e61a29ed3bfbd6707f294d35c48738",
+          "duration_s": 81,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-explain-gemini-fil-c6ac6356b101.vtt",
+            "content_hash": "c6ac6356b1010d59a8c249e01c399dba0424df1c15011fa2293df40743de887f"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-explain-gemini-fil-4d1b8e88c0ec-poster.jpg",
+            "content_hash": "4d1b8e88c0ec5d714fb431cc3bbda1505d496a013b8cf08bf04ec548d41c1395"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-6/communication-explain-gemini-en-fab81f58fa43.mp4",
+          "content_hash": "fab81f58fa43760455892ce3788239d1772bef029d48c950409f516b0d499fde",
+          "duration_s": 74,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-explain-gemini-en-13716ccf536e.vtt",
+            "content_hash": "13716ccf536e0aeaeee30c65e8f2fb1f1211f7408ff0986d02567d5e044b9e82"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-explain-gemini-en-33ef41505cda-poster.jpg",
+            "content_hash": "33ef41505cda6b50419eac3ff7636c56b2e0911ef5e75a7ff1f5e29a25b1072d"
+          }
+        }
+      },
+      "path": "/training/bhw-1-6/communication-explain-gemini-fil-4d1b8e88c0ec-poster.jpg",
+      "content_hash": "4d1b8e88c0ec5d714fb431cc3bbda1505d496a013b8cf08bf04ec548d41c1395"
     }
-  ]
+  ],
+  "featured_asset_id": "communication-explain-story"
 }

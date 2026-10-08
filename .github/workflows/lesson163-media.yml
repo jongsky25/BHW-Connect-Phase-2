@@ -39,6 +39,14 @@ jobs:
         working-directory: remotion
       - run: npx remotion browser ensure
         working-directory: remotion
+      - name: Select initial generation or final review packaging
+        id: phase
+        run: |
+          if test -f docs/lesson-163-evidence-cache.json; then
+            echo "package=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "package=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Restore hash-pinned exact-byte evidence cache
         env:
           GH_TOKEN: ${{ github.token }}
@@ -80,17 +88,17 @@ jobs:
       - name: Print bilingual role cards, observer checklist and task aid
         run: node scripts/lesson-163-print-kit.mjs
       - name: Wait for normal CI and full registry at exact head
-        if: inputs.package == true
+        if: inputs.package == true || steps.phase.outputs.package == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/lesson-163-wait-ci.mjs
       - name: Verify and package the frozen review
-        if: inputs.package == true
+        if: inputs.package == true || steps.phase.outputs.package == 'true'
         run: |
           node scripts/lesson-163-review-verify.mjs
           node scripts/lesson-163-package.mjs
       - uses: actions/upload-artifact@v4
-        if: always() && inputs.package != true
+        if: always() && inputs.package != true && steps.phase.outputs.package != 'true'
         with:
           name: lesson163-generated-evidence
           path: |
@@ -110,7 +118,7 @@ jobs:
           if-no-files-found: error
           retention-days: 30
       - uses: actions/upload-artifact@v4
-        if: success() && inputs.package == true
+        if: success() && (inputs.package == true || steps.phase.outputs.package == 'true')
         with:
           name: lesson163-review-package
           path: |
@@ -120,7 +128,7 @@ jobs:
           if-no-files-found: error
           retention-days: 30
       - uses: actions/upload-artifact@v4
-        if: always() && inputs.package == true
+        if: always() && (inputs.package == true || steps.phase.outputs.package == 'true')
         with:
           name: lesson163-review-raw-evidence
           path: |

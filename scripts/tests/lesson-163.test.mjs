@@ -13,9 +13,10 @@ describe('lesson 1.6.3 empathy and clear explanations',()=>{
   for(const lang of ['fil','en'])for(const [i,s]of parseReferenceRead(fs.readFileSync(leaf+'read.'+lang+'.md','utf8')).entries())expect(a.revision.slides[i]['narration_'+lang]).toBe(s.body);
  });
  it('shows distinct hash-verified teaching actions and preserves the index2 repair check',()=>{
-  expect(new Set(lesson.sections.map(s=>s.asset_ids[0])).size).toBe(6);
-  for(const s of lesson.sections){expect(s.asset_ids).toHaveLength(1);const a=lesson.assets.find(a=>a.id===s.asset_ids[0]);expect(sha(fs.readFileSync('public'+a.path))).toBe(a.content_hash);expect(a.review_status).toBe('draft');}
-  const c=lesson.sections.at(-1).check;expect(c.correct_option_index).toBe(2);expect(c.options).toEqual(JSON.parse(b.target_files[leaf+'lesson.json']).sections.at(-1).check.options);
+  expect(new Set(lesson.sections.map(s=>s.asset_ids.at(-1))).size).toBe(6);
+  for(const s of lesson.sections){expect(s.asset_ids).toHaveLength(s.id==='teach-back'?2:1);const a=lesson.assets.find(a=>a.id===s.asset_ids.at(-1));expect(sha(fs.readFileSync('public'+a.path))).toBe(a.content_hash);expect(a.review_status).toBe('draft');}
+  const checkArt=lesson.assets.find(a=>a.id==='explain-check');for(const lang of ['fil','en'])expect(checkArt['caption_'+lang]).not.toBe(lesson.sections.at(-1)['takeaway_'+lang]);
+  expect(lesson.sections[0].asset_ids[0]).toBe('gibs-portrait');const c=lesson.sections.at(-1).check;expect(c.correct_option_index).toBe(2);expect(c.options).toEqual(JSON.parse(b.target_files[leaf+'lesson.json']).sections.at(-1).check.options);
   for(const text of ['Una:','Ikalawa:','Ikatlo:','Sa wakas','wala pang kumpirmadong appointment'])expect(c.feedback_fil).toContain(text);
   for(const text of ['First:','Second:','Third:','In the ending','no confirmed appointment'])expect(c.feedback_en).toContain(text);
  });

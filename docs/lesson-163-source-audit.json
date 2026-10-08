@@ -100,7 +100,7 @@
     },
     {
       "claim": "Privacy and respect for differences",
-      "source": "Manual PDF30; NPC IRR sections18–20",
+      "source": "Manual PDF30; NPC IRR section18(a)–(c)",
       "screens": [
         "family-planning",
         "distress",
@@ -156,7 +156,7 @@
     "url": "https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/",
     "retrieved": "2026-10-08",
     "sha256": "bae2e79691229d1d612864d5d7f988f0dcfb3eb844cb2dee0cc69f8d030f37a5",
-    "scope": "IRR18 transparency,19 legitimate purpose,20 proportionality; local authorized handling review pending"
+    "scope": "IRR section18(a) transparency,18(b) legitimate purpose,18(c) proportionality. Section19 concerns general collection/processing/retention; section20 concerns sharing. Local authorized handling review pending."
   },
   "doh_current_context_audit": {
     "retrieved": "2026-10-08",
@@ -206,5 +206,6 @@
     "Urgent assistance follows verified local process without delay for routine interview/report; no invented number or universal protocol."
   ],
   "human_source_and_policy_signoff": "pending",
-  "source_files_packaging": "Private review includes excerpts, catalogue/NPC page evidence, access receipts/hashes. No claim of clinical, local service or certification approval."
+  "source_files_packaging": "Private review includes excerpts, catalogue/NPC page evidence, access receipts/hashes. No claim of clinical, local service or certification approval.",
+  "source_numbering_correction": "The earlier audit shorthand18–20 is not used to number the three privacy principles; all three appear in IRR section18. Earlier approval/audit files stay immutable."
 }

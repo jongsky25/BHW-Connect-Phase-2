@@ -554,7 +554,7 @@ export function ReferenceLessons(props: Props) {
             <h2 tabIndex={-1} ref={heading} className={storyLayout ? "reference-story-title" : "text-xl font-semibold"}>
               {en ? item.heading_en : item.heading_fil}
             </h2>
-            {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision) && item.check && (
+            {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || lesson.lesson_key === "communication-explain") && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
             {listeningRevision && !storyLayout && figures}
@@ -580,7 +580,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && (revealSummary || selfManagementRevision || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -753,7 +753,10 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {listeningRevision ? (listeningMinutes === null ? ui(
+              {lesson.lesson_key === "communication-explain" && lesson.revision.assets.some(asset => asset.id === "explain-teach-back") ? ui(
+                "Tinatayang 13–16 minuto para sa sariling pag-aaral, ayon sa mas mahabang salaysay at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento at pag-ulit; hiwalay ang 120-minutong guided practice.",
+                "Estimated 13–16 minutes for independent study, using the longer narration and 3–6 minutes of practice. Optional story and replay are additional; the 120-minute guided practice is separate.",
+              ) : listeningRevision ? (listeningMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 90-minutong guided practice.",
                 "Allow time for reading and practice; the 90-minute guided practice is separate.",
               ) : ui(

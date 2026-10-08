@@ -8,7 +8,7 @@ In a sensitive conversation, acknowledge the concern, give one next step within 
 
 30 participants in ten triads. Paper, pens, bilingual role cards, observer checklist and one-page task aid. No real records. Projector and internet are optional.
 
-SELF_STUDY_TIMING_PENDING
+Authored independent estimate: 13–16 minutes, using the longer language track. Actual six-screen narration is 529.66 seconds in English and 584.93 seconds in Filipino; allow 3–6 minutes for the check, brief rehearsal and reflection. Optional story or replay is additional.
 
 ## [prepare] Prepare
 
