@@ -14,7 +14,7 @@ const manifest=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-com
 const save=()=>fs.writeFileSync(dir+'/lesson-1.6.2-browser-verification.json',JSON.stringify(report,null,2)+'\n');
 try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
-  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));await page.goto('http://127.0.0.1:4176/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
+  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',message=>{if(message.type()==='error')report.errors.push(message.text());});await page.goto('http://127.0.0.1:4176/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
   const expectedMinutes=Math.ceil(Object.values(manifest.lessons['communication-clarify'].sections).reduce((sum,tracks)=>sum+tracks[lang].duration_seconds,0)/60+3);assert((await page.locator('main').innerText()).includes(expectedMinutes+'–'+(expectedMinutes+3)));
   const next=lang==='en'?'Next':'Susunod',complete=lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin';
   for(let i=0;i<6;i++){
@@ -36,10 +36,10 @@ try{
   await context.close();
  }
  for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const id of ['open-question','barriers','practice','check']){
-  const context=await browser.newContext();const page=await context.newPage();const anchor=(mode==='slides'?'slide-':'')+id;await page.goto('http://127.0.0.1:4176/?lang='+lang+'&mode='+mode+'&anchor='+anchor);await page.locator('article[data-scene="'+anchor+'"]').waitFor();report.cases.push({language:lang,mode,anchor,resume:true});await context.close();
+  const context=await browser.newContext();const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',message=>{if(message.type()==='error')report.errors.push(message.text());});const anchor=(mode==='slides'?'slide-':'')+id;await page.goto('http://127.0.0.1:4176/?lang='+lang+'&mode='+mode+'&anchor='+anchor);await page.locator('article[data-scene="'+anchor+'"]').waitFor();report.cases.push({language:lang,mode,anchor,resume:true});await context.close();
  }
  for(const lang of ['fil','en'])for(const width of [1280,390]){
-  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();await page.goto('http://127.0.0.1:4176/?lang='+lang);
+  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',message=>{if(message.type()==='error')report.errors.push(message.text());});await page.goto('http://127.0.0.1:4176/?lang='+lang);
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.currentTime>0;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));await context.setOffline(true);
   await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});await page.locator('video').evaluate(v=>window.__previousVideo=v);
@@ -50,7 +50,7 @@ try{
   report.cases.push({language:lang,width,unmuted_story:true,six_cues:true,complete_ending:true,offline:true,fullscreen_story:true,single_player:true,read_to_story_pauses:true,no_horizontal_overflow:true,duration:cues.duration});await context.close();
  }
  for(const lang of ['fil','en'])for(const width of [1280,390]){
-  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();await page.goto('http://127.0.0.1:4176/?lang='+lang);
+  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',message=>{if(message.type()==='error')report.errors.push(message.text());});await page.goto('http://127.0.0.1:4176/?lang='+lang);
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
   await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();
