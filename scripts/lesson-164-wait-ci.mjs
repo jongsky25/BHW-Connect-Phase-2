@@ -19,7 +19,7 @@ while(Date.now()<deadline){
    const redirect=await fetch(`https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/jobs/${job.id}/logs`,{headers:{Authorization:'Bearer '+process.env.GH_TOKEN},redirect:'manual'});
    const location=redirect.headers.get('location');if(redirect.status!==302||!location||new URL(location).protocol!=='https:')throw Error('Completed render log redirect unavailable');
    const logs=await fetch(location);if(!logs.ok)throw Error('Completed render log unavailable');
-   const text=await logs.text();rendered.push(...Array.from(text.matchAll(/\$ remotion render \S+ ([A-Za-z0-9-]+) /g),m=>m[1]));
+   const text=await logs.text();rendered.push(...Array.from(text.matchAll(/\$ remotion render ([A-Za-z0-9-]+) \S+ /g),m=>m[1]));
   }
   if(rendered.length!==78||JSON.stringify([...rendered].sort())!==JSON.stringify([...registry].sort()))throw Error('Every frozen registry composition must have an actual successful render');
   const report={status:'passed',registry,rendered_compositions:rendered,head_sha:sha,verified_at:new Date().toISOString(),runs:checks.map(r=>({name:r.name,id:r.id,url:r.html_url,conclusion:r.conclusion,run_attempt:r.run_attempt})),complete_Remotion_registry:78};
