@@ -19,10 +19,10 @@
         "m6.health-promotion"
       ],
       "asset_ids": [
-        "gibs-portrait"
+        "explain-teach-back"
       ],
-      "takeaway_fil": "Ang malinaw na mensahe ay nasusuri sa sariling paliwanag ng kausap, hindi sa pagtango lamang.",
-      "takeaway_en": "Check a clear message through the person’s own explanation, not a nod alone.",
+      "takeaway_fil": "Isang hakbang → sariling paliwanag → ayusin → mag-check muli. Hindi pa appointment ang pagtatanong sa iskedyul.",
+      "takeaway_en": "One step → their own explanation → repair → recheck. Asking about scheduling is not a confirmed appointment.",
       "check": null
     },
     {
@@ -30,9 +30,11 @@
       "concept_ids": [
         "m6.family-planning"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang pakikipag-usap tungkol sa family planning ay nagbibigay ng puwang sa pagpili at tamang counseling.",
-      "takeaway_en": "Family-planning communication supports the person’s choice and appropriate counseling.",
+      "asset_ids": [
+        "explain-family-planning"
+      ],
+      "takeaway_fil": "Pakinggan ang concern. Alamin ang contact sa health team. Igalang ang pagpili; hindi BHW ang pumipili ng paraan.",
+      "takeaway_en": "Hear the concern. Verify the contact with the health team. Respect choice; the BHW does not select the method.",
       "check": null
     },
     {
@@ -40,9 +42,11 @@
       "concept_ids": [
         "m6.distress"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang pakikinig ay suporta; ang diagnosis at pangangalagang klinikal ay para sa kwalipikadong health professional.",
-      "takeaway_en": "Listening offers support; diagnosis and clinical care belong with a qualified health professional.",
+      "asset_ids": [
+        "explain-distress"
+      ],
+      "takeaway_fil": "Makinig at alamin ang kwalipikadong contact. Sa agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.",
+      "takeaway_en": "Listen and identify a qualified contact. In immediate danger, do not delay help for an ordinary interview.",
       "check": null
     },
     {
@@ -50,9 +54,11 @@
       "concept_ids": [
         "m6.smoking"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Mas madaling magplano kapag narinig ang layunin at hadlang ng mismong tao.",
-      "takeaway_en": "Planning improves when the person’s own goal and barriers are heard.",
+      "asset_ids": [
+        "explain-smoking"
+      ],
+      "takeaway_fil": "Humingi ng pahintulot, pakinggan ang layunin, mag-alok ng isang natiyak na hakbang at gamitin ang teach-back.",
+      "takeaway_en": "Ask permission, hear the person’s goal, offer one verified step and use teach-back.",
       "check": null
     },
     {
@@ -63,9 +69,11 @@
         "m6.distress",
         "m6.smoking"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.",
-      "takeaway_en": "Hear the concern and check the clarity of your explanation while staying within the BHW role.",
+      "asset_ids": [
+        "explain-practice"
+      ],
+      "takeaway_fil": "Concern → isang hakbang → sariling paliwanag → repair → recheck. Lahat ay susubok bilang BHW; direktang obserbasyon ang ebidensiya.",
+      "takeaway_en": "Concern → one step → their own explanation → repair → recheck. Everyone tries the BHW role; direct observation supplies evidence.",
       "check": null
     },
     {
@@ -76,9 +84,11 @@
         "m6.distress",
         "m6.smoking"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.",
-      "takeaway_en": "Hear the concern and check the clarity of your explanation while staying within the BHW role.",
+      "asset_ids": [
+        "explain-check"
+      ],
+      "takeaway_fil": "Kapag iba ang pagkaunawa, ayusin ang sariling paliwanag at mag-check muli. Hindi kasalanan ng kausap ang hindi malinaw na mensahe.",
+      "takeaway_en": "When understanding differs, repair your explanation and check again. An unclear message is not the person’s fault.",
       "check": {
         "prompt_fil": "Sa teach-back, iba ang planong ikinuwento ni Liza. Ano ang susunod?",
         "prompt_en": "During teach-back, Liza describes a different plan. What next?",
@@ -97,8 +107,8 @@
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "Ang ikatlong sagot ay inaayos ang paliwanag at muling sinusuri ito. Ang pagsisi ay maaaring magpatahimik sa kausap; ang mas mabilis na pag-uulit ay hindi tumutugon sa hindi malinaw.",
-        "feedback_en": "The third response repairs the explanation and checks again. Blame may silence the person; faster repetition does not address the misunderstanding."
+        "feedback_fil": "Una: Ang pagsisi at pagtatapos ay hindi nag-aayos ng hindi malinaw na mensahe at maaaring magpatahimik kay Liza. Ikalawa: Ang parehong paliwanag nang mas mabilis ay hindi tumutugon sa maling pagkaunawa. Ikatlo: Ang ibang paraan ng paliwanag at pag-check muli ay angkop; si Gibs ang may pananagutan sa linaw. Sa wakas, sabi ni Gibs, “Hindi pa appointment. Magtatanong muna tayo tungkol sa iskedyul. Ano muna ang gagawin natin?” Sagot ni Liza, “Magtatanong tungkol sa iskedyul; wala pang kumpirmadong appointment.” “Tama, iyon muna,” tugon ni Gibs.",
+        "feedback_en": "First: Blame and ending the conversation do not repair an unclear message and may silence Liza. Second: The same explanation delivered faster does not address the misunderstanding. Third: Explaining another way and checking again is appropriate; Gibs takes responsibility for clarity. In the ending, Gibs says, “This is not an appointment yet. We will ask about scheduling first. What will we do first?” Liza replies, “Ask about the schedule; there is no confirmed appointment.” “Yes, that is the first step,” Gibs confirms."
       }
     }
   ],
@@ -212,6 +222,72 @@
       "caption_en": "Gibs is the BHW throughout lessons 1.6.",
       "provenance": "New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.",
       "review_status": "approved"
+    },
+    {
+      "id": "explain-teach-back",
+      "path": "/training/bhw-1-6/gibs-explain-teach-back-f44d4b1a0871.png",
+      "content_hash": "f44d4b1a08716e85cd03ffe076a8c4a61f5c4db7203f209624a39e9b60c79155",
+      "alt_fil": "Apat na kilos nina Gibs at Liza: paliwanag, sariling sagot, repair at recheck; hindi booking ang pagtatanong sa iskedyul.",
+      "alt_en": "Gibs and Liza illustrate four distinct explain, ask, repair and recheck actions; asking about a schedule is not a booking.",
+      "caption_fil": "Isang hakbang → sariling paliwanag → ayusin → mag-check muli. Hindi pa appointment ang pagtatanong sa iskedyul.",
+      "caption_en": "One step → their own explanation → repair → recheck. Asking about scheduling is not a confirmed appointment.",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "explain-family-planning",
+      "path": "/training/bhw-1-6/gibs-explain-family-planning-939ad0e4c694.png",
+      "content_hash": "939ad0e4c694a4bbadd23134bac6b106ad2f5ce3acfe6f7561b50c22faac6a76",
+      "alt_fil": "Nakikinig si Gibs sa concern ni Jo sa family planning at itinuturo ang contact card; kay Jo ang pagpili.",
+      "alt_en": "Gibs listens to Jo’s family-planning concern and points to a contact card; Jo keeps her choice.",
+      "caption_fil": "Pakinggan ang concern. Alamin ang contact sa health team. Igalang ang pagpili; hindi BHW ang pumipili ng paraan.",
+      "caption_en": "Hear the concern. Verify the contact with the health team. Respect choice; the BHW does not select the method.",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "explain-distress",
+      "path": "/training/bhw-1-6/gibs-explain-distress-c36d80b575e7.png",
+      "content_hash": "c36d80b575e7464f8b6229cbf2cf5caf28ba91738aa2d31ef4f239c188260f4e",
+      "alt_fil": "Nakikinig si Gibs kay Ben sa tahimik na lugar, walang diagnosis o pangakong appointment.",
+      "alt_en": "Gibs listens to Ben in a quiet place without diagnosing him or promising an appointment.",
+      "caption_fil": "Makinig at alamin ang kwalipikadong contact. Sa agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.",
+      "caption_en": "Listen and identify a qualified contact. In immediate danger, do not delay help for an ordinary interview.",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "explain-smoking",
+      "path": "/training/bhw-1-6/gibs-explain-smoking-471b7ed9fe69.png",
+      "content_hash": "471b7ed9fe6973591197208312c0fec891926bab980567b325756111ad75ec46",
+      "alt_fil": "Humihingi si Gibs ng pahintulot at nakikinig sa layunin ni Ramon; contact card ang pag-alam ng suporta.",
+      "alt_en": "Gibs asks permission and listens to Ramon’s goal; a contact card represents checking available support.",
+      "caption_fil": "Humingi ng pahintulot, pakinggan ang layunin, mag-alok ng isang natiyak na hakbang at gamitin ang teach-back.",
+      "caption_en": "Ask permission, hear the person’s goal, offer one verified step and use teach-back.",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "explain-practice",
+      "path": "/training/bhw-1-6/gibs-explain-practice-0633085623b7.png",
+      "content_hash": "0633085623b7624fbc511922d2ed7e4e12dd0b4bf08444bb096631746ac926f9",
+      "alt_fil": "Nagsasanay sa triad sina Gibs, Liza at tagamasid, katabi ang tatlong kathang-isip na context card.",
+      "alt_en": "Gibs, Liza and an observer rehearse in a triad beside three fictional context cards.",
+      "caption_fil": "Concern → isang hakbang → sariling paliwanag → repair → recheck. Lahat ay susubok bilang BHW; direktang obserbasyon ang ebidensiya.",
+      "caption_en": "Concern → one step → their own explanation → repair → recheck. Everyone tries the BHW role; direct observation supplies evidence.",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "explain-check",
+      "path": "/training/bhw-1-6/gibs-explain-check-1ee8dcd6c46f.png",
+      "content_hash": "1ee8dcd6c46ff7c0763c3ec4d266576c2da94dce43029e7718d70eccd4ff6601",
+      "alt_fil": "Nagtatanong si Liza tungkol sa calendar habang nakikinig si Gibs; hindi pa kumpirmado ang appointment bago ang check.",
+      "alt_en": "Liza asks about a calendar while Gibs listens; the appointment is still unconfirmed before the check.",
+      "caption_fil": "Kapag iba ang pagkaunawa, ayusin ang sariling paliwanag at mag-check muli. Hindi kasalanan ng kausap ang hindi malinaw na mensahe.",
+      "caption_en": "When understanding differs, repair your explanation and check again. An unclear message is not the person’s fault.",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.",
+      "review_status": "draft"
     }
   ]
 }

@@ -1,0 +1,136 @@
+{
+  "status": "draft",
+  "method": "Six separate built-in image generation calls, no cropping or sibling art changes. Prompt briefs below summarize the generation instructions; the exact calls are retained in this chat.",
+  "scenes": [
+    {
+      "id": "teach-back",
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "generated_at": "2026-10-08",
+      "generated_output_file": "exec-345a04c8-0835-4750-9b24-d41440670baa.png",
+      "generated_output_sha256": "f44d4b1a08716e85cd03ffe076a8c4a61f5c4db7203f209624a39e9b60c79155",
+      "public_path": "/training/bhw-1-6/gibs-explain-teach-back-f44d4b1a0871.png",
+      "references": [
+        {
+          "path": "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "remotion/public/communication-listen/liza.png",
+          "sha256": "0b433575765cf475aee091922be2b70c042f252dcecb341ba8d7614cb6540463"
+        }
+      ],
+      "prompt_brief": "Gibs and Liza illustrate four distinct explain, ask, repair and recheck actions; asking about a schedule is not a booking. New landscape 3:2 warm painterly realistic Filipino household illustration; exact Gibs teal polo/navy trousers/closed clipboard. Liza yellow blouse/blue skirt when present. Jo coral blouse/bob hair, Ben olive shirt, Ramon maroon shirt. No diagnostic imagery, real records or promised service. Distinct instructional action, not a crop.",
+      "alt_fil": "Apat na kilos nina Gibs at Liza: paliwanag, sariling sagot, repair at recheck; hindi booking ang pagtatanong sa iskedyul.",
+      "alt_en": "Gibs and Liza illustrate four distinct explain, ask, repair and recheck actions; asking about a schedule is not a booking.",
+      "owner_review": "pending"
+    },
+    {
+      "id": "family-planning",
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "generated_at": "2026-10-08",
+      "generated_output_file": "exec-320f868b-9bda-48c8-a7fb-5f4d45f04467.png",
+      "generated_output_sha256": "939ad0e4c694a4bbadd23134bac6b106ad2f5ce3acfe6f7561b50c22faac6a76",
+      "public_path": "/training/bhw-1-6/gibs-explain-family-planning-939ad0e4c694.png",
+      "references": [
+        {
+          "path": "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "remotion/public/communication-listen/liza.png",
+          "sha256": "0b433575765cf475aee091922be2b70c042f252dcecb341ba8d7614cb6540463"
+        }
+      ],
+      "prompt_brief": "Gibs listens to Jo’s family-planning concern and points to a contact card; Jo keeps her choice. New landscape 3:2 warm painterly realistic Filipino household illustration; exact Gibs teal polo/navy trousers/closed clipboard. Liza yellow blouse/blue skirt when present. Jo coral blouse/bob hair, Ben olive shirt, Ramon maroon shirt. No diagnostic imagery, real records or promised service. Distinct instructional action, not a crop.",
+      "alt_fil": "Nakikinig si Gibs sa concern ni Jo sa family planning at itinuturo ang contact card; kay Jo ang pagpili.",
+      "alt_en": "Gibs listens to Jo’s family-planning concern and points to a contact card; Jo keeps her choice.",
+      "owner_review": "pending"
+    },
+    {
+      "id": "distress",
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "generated_at": "2026-10-08",
+      "generated_output_file": "exec-04e363c4-09cc-4df2-90da-803b90097721.png",
+      "generated_output_sha256": "c36d80b575e7464f8b6229cbf2cf5caf28ba91738aa2d31ef4f239c188260f4e",
+      "public_path": "/training/bhw-1-6/gibs-explain-distress-c36d80b575e7.png",
+      "references": [
+        {
+          "path": "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        }
+      ],
+      "prompt_brief": "Gibs listens to Ben in a quiet place without diagnosing him or promising an appointment. New landscape 3:2 warm painterly realistic Filipino household illustration; exact Gibs teal polo/navy trousers/closed clipboard. Liza yellow blouse/blue skirt when present. Jo coral blouse/bob hair, Ben olive shirt, Ramon maroon shirt. No diagnostic imagery, real records or promised service. Distinct instructional action, not a crop.",
+      "alt_fil": "Nakikinig si Gibs kay Ben sa tahimik na lugar, walang diagnosis o pangakong appointment.",
+      "alt_en": "Gibs listens to Ben in a quiet place without diagnosing him or promising an appointment.",
+      "owner_review": "pending"
+    },
+    {
+      "id": "smoking",
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "generated_at": "2026-10-08",
+      "generated_output_file": "exec-4bd443a7-4024-4f5a-8a9d-d657ac2c79b5.png",
+      "generated_output_sha256": "471b7ed9fe6973591197208312c0fec891926bab980567b325756111ad75ec46",
+      "public_path": "/training/bhw-1-6/gibs-explain-smoking-471b7ed9fe69.png",
+      "references": [
+        {
+          "path": "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        }
+      ],
+      "prompt_brief": "Gibs asks permission and listens to Ramon’s goal; a contact card represents checking available support. New landscape 3:2 warm painterly realistic Filipino household illustration; exact Gibs teal polo/navy trousers/closed clipboard. Liza yellow blouse/blue skirt when present. Jo coral blouse/bob hair, Ben olive shirt, Ramon maroon shirt. No diagnostic imagery, real records or promised service. Distinct instructional action, not a crop.",
+      "alt_fil": "Humihingi si Gibs ng pahintulot at nakikinig sa layunin ni Ramon; contact card ang pag-alam ng suporta.",
+      "alt_en": "Gibs asks permission and listens to Ramon’s goal; a contact card represents checking available support.",
+      "owner_review": "pending"
+    },
+    {
+      "id": "practice",
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "generated_at": "2026-10-08",
+      "generated_output_file": "exec-3bf35bcc-7569-4646-9eb4-d5f671922b81.png",
+      "generated_output_sha256": "0633085623b7624fbc511922d2ed7e4e12dd0b4bf08444bb096631746ac926f9",
+      "public_path": "/training/bhw-1-6/gibs-explain-practice-0633085623b7.png",
+      "references": [
+        {
+          "path": "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "remotion/public/communication-listen/liza.png",
+          "sha256": "0b433575765cf475aee091922be2b70c042f252dcecb341ba8d7614cb6540463"
+        }
+      ],
+      "prompt_brief": "Gibs, Liza and an observer rehearse in a triad beside three fictional context cards. New landscape 3:2 warm painterly realistic Filipino household illustration; exact Gibs teal polo/navy trousers/closed clipboard. Liza yellow blouse/blue skirt when present. Jo coral blouse/bob hair, Ben olive shirt, Ramon maroon shirt. No diagnostic imagery, real records or promised service. Distinct instructional action, not a crop.",
+      "alt_fil": "Nagsasanay sa triad sina Gibs, Liza at tagamasid, katabi ang tatlong kathang-isip na context card.",
+      "alt_en": "Gibs, Liza and an observer rehearse in a triad beside three fictional context cards.",
+      "owner_review": "pending"
+    },
+    {
+      "id": "check",
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "generated_at": "2026-10-08",
+      "generated_output_file": "exec-1ef4ea8b-5afb-4213-b4a3-261a5babd324.png",
+      "generated_output_sha256": "1ee8dcd6c46ff7c0763c3ec4d266576c2da94dce43029e7718d70eccd4ff6601",
+      "public_path": "/training/bhw-1-6/gibs-explain-check-1ee8dcd6c46f.png",
+      "references": [
+        {
+          "path": "public/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "remotion/public/communication-listen/liza.png",
+          "sha256": "0b433575765cf475aee091922be2b70c042f252dcecb341ba8d7614cb6540463"
+        }
+      ],
+      "prompt_brief": "Liza asks about a calendar while Gibs listens; the appointment is still unconfirmed before the check. New landscape 3:2 warm painterly realistic Filipino household illustration; exact Gibs teal polo/navy trousers/closed clipboard. Liza yellow blouse/blue skirt when present. Jo coral blouse/bob hair, Ben olive shirt, Ramon maroon shirt. No diagnostic imagery, real records or promised service. Distinct instructional action, not a crop.",
+      "alt_fil": "Nagtatanong si Liza tungkol sa calendar habang nakikinig si Gibs; hindi pa kumpirmado ang appointment bago ang check.",
+      "alt_en": "Liza asks about a calendar while Gibs listens; the appointment is still unconfirmed before the check.",
+      "owner_review": "pending"
+    }
+  ]
+}
