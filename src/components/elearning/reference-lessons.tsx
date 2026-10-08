@@ -573,7 +573,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && (revealSummary || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && (revealSummary || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -758,6 +758,9 @@ export function ReferenceLessons(props: Props) {
               ) : lesson.lesson_key === "bhw-barangay-partners" && lesson.revision.assets.some(asset => asset.id === "malou-meeting") ? ui(
                 "Tinatayang 8–11 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang 20-minutong guided practice.",
                 "Estimated 8–11 minutes for independent study; optional story and audio replay are additional. The 20-minute guided practice is separate.",
+              ) : lesson.lesson_key === "bhw-right-contact" && lesson.revision.assets.some(asset => asset.id === "malou-contact") ? ui(
+                "Tinatayang 8–11 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang 30-minutong guided practice.",
+                "Estimated 8–11 minutes for independent study; optional story and audio replay are additional. The 30-minute guided practice is separate.",
               ) : lesson.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up") ? ui(
                 "Tinatayang 10–12 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang guided practice.",
                 "Estimated 10–12 minutes for independent study; optional stories and audio replay are additional. Guided practice is separate.",

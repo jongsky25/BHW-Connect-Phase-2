@@ -142,35 +142,18 @@ Self-management isn't a natural skill — it's developed through
 specific habits: planning, reflection, and thinking before speaking.
 :::
 
-## [practice/standard] Try it: one more situation
+## [practice/standard] Try it: the first report
 
-Now try it yourself. A newly accredited BHW in your barangay is
-confused about how to file their first report. Who is the most fitting
-person to approach — not the midwife, not barangay officials, but
-someone with the same experience as a BHW?
-
-Think of the answer before moving on: a more experienced fellow BHW is
-the easiest person to go to for this — not because it's a lesser
-concern, but because that is exactly where the everyday, practical
-know-how of the work actually lives.
+A new BHW is confused about filing the first report. Malou can ask an experienced fellow BHW for routine steps that the peer knows and can support competently. Confirm the official form, method, deadline and recipient with the designated supervisor. If the peer is unsure, ask the supervisor to clarify. Use a blank example for practice, rather than an actual patient record.
 
 :::takeaway
-Not every question is for the midwife or barangay officials — some
-things a fellow BHW is simply the closest person to answer.
+Peer practical support; official confirmation with the supervisor.
 :::
 
-## [contrast/deep] Wrong versus right: approaching the right person
+## [contrast/deep] Wrong and right choices
 
-**Wrong**: BHW Marites went straight to the barangay captain about
-Aling Nena's child's cough, because "he's the one I usually talk to
-anyway." The barangay captain's time was wasted on a clinical matter
-outside his role, and the proper referral was delayed.
-
-**Right**: BHW Marites first recognized the clinical nature of the
-concern, approached the midwife/RHU, and only involved barangay
-officials once transport support to the facility was actually needed.
+In a fictional example, Aling Nena asks about her child’s cough. Malou should not choose the barangay captain for a clinical decision just because they often speak. The appropriate choice is guidance from the authorized health professional or RHU under the local process, without delaying immediate help when needed. Transport support may be coordinated with the responsible local contact at the same time. Support is separate from clinical decisions; Malou does not guarantee a vehicle or funding.
 
 :::takeaway
-Approaching the wrong person doesn't just waste time — it also delays
-the service that should have been quick.
+Coordinate support without delaying appropriate help.
 :::

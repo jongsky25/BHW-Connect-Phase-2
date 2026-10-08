@@ -147,36 +147,18 @@ sa pamamagitan ng tiyak na ugali: pagpaplano, pagninilay, at pag-iisip
 bago magsalita.
 :::
 
-## [practice/standard] Subukan mo: isa pang sitwasyon
+## [practice/standard] Subukan mo: unang ulat
 
-Ngayon, subukan mo. May BHW na bagong-tanggap sa inyong barangay at
-nalilito kung paano mag-file ng kanyang unang ulat. Sino kaya ang
-pinakaangkop na lapitan niya — hindi ang midwife, hindi rin ang
-barangay officials, kundi ang taong may parehong karanasan bilang BHW?
-
-Isipin ang sagot bago magpatuloy: ang kapwa BHW na mas matagal na sa
-gawain ang pinakamadaling puntahan para dito — hindi dahil mas mababa
-ang usapin, kundi dahil doon talaga umiikot ang karanasan sa
-pang-araw-araw na mga detalye ng trabaho.
+Nalilito ang bagong BHW sa pag-file ng unang ulat. Maaaring magpatulong si Malou sa kapwa BHW na may karanasan sa karaniwang hakbang na alam nito at saklaw ng kakayahan nito. Tiyakin sa itinalagang supervisor ang opisyal na form, paraan, deadline at tumatanggap ng ulat. Kung hindi tiyak ang sagot ng kapwa BHW, humingi ng paglilinaw sa supervisor. Gumamit ng blangkong halimbawa sa pagsasanay, hindi totoong patient record.
 
 :::takeaway
-Hindi lahat ng katanungan ay para sa midwife o barangay officials — may
-mga bagay na ang kapwa BHW mismo ang may pinakamalapit na sagot.
+Praktikal na tulong ng kapwa BHW; opisyal na pagtitiyak sa supervisor.
 :::
 
-## [contrast/deep] Mali kumpara sa tama: paglapit sa tamang tao
+## [contrast/deep] Mali at tamang pagpili
 
-**Mali**: Pinuntahan agad ni BHW Marites ang barangay captain para sa
-ubo ni anak ni Aling Nena, dahil "siya naman ang laging kausap ko."
-Nasayang ang oras ng barangay captain sa usaping klinikal na hindi
-naman niya saklaw, at naantala ang tamang pag-refer.
-
-**Tama**: Kinilala muna ni BHW Marites ang klinikal na katangian ng
-alalahanin, lumapit sa midwife/RHU, at kalaunan ay isinama ang barangay
-officials lamang kapag may kailangan nang suportang pantransportasyon
-papunta sa pasilidad.
+Sa kathang-isip na halimbawa, may tanong si Aling Nena tungkol sa ubo ng kanyang anak. Maling piliin ni Malou ang barangay captain para sa klinikal na pasya dahil lamang palagi niya itong kausap. Tamang humingi ng gabay sa angkop na awtorisadong health professional o RHU ayon sa lokal na proseso, nang hindi inaantala ang agarang tulong kung kailangan. Maaaring kasabay na iugnay sa responsableng lokal na contact ang suportang pantransportasyon. Hiwalay ang suporta sa klinikal na pasya; hindi ginagarantiya ni Malou ang sasakyan o pondo.
 
 :::takeaway
-Ang paglapit sa maling tao ay hindi lang nakakaubos ng oras — naaantala
-rin nito ang serbisyong dapat sana'y mabilis.
+Iugnay ang suporta nang hindi inaantala ang angkop na tulong.
 :::

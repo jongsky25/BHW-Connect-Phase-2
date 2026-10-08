@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor.",
-      "observable_en": "Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.",
-      "not_yet_fil": "Hindi pa maipaliwanag ang punto o nangangako nang hindi tinitiyak ang kondisyon.",
-      "not_yet_en": "Cannot yet explain the point or makes promises without checking conditions.",
+      "observable_fil": "Tinutukoy ang pangangailangan at pagkaapurahan, pinipili ang angkop na contact sa loob ng saklaw, at ipinapaliwanag ang pagtitiyak at follow-up nang hindi inaantala ang agarang tulong.",
+      "observable_en": "Identifies need and urgency, chooses an appropriate contact within scope, and explains verification and follow-up without delaying immediate help.",
+      "not_yet_fil": "Hindi pa naitutugma ang contact sa pangangailangan o ipinagpapaliban ang agarang tulong.",
+      "not_yet_en": "Does not yet match the contact to the need or delays immediate help.",
       "levels": {
-        "kaya_na_fil": "Tamang paliwanag at hakbang, nang walang untag.",
-        "kaya_na_en": "Accurate explanation and action without prompting.",
-        "kailangan_practice_fil": "Tamang direksiyon ngunit kailangan ng gabay sa detalye.",
-        "kailangan_practice_en": "Correct direction but needs guidance on details.",
-        "hindi_pa_fil": "Hindi pa angkop ang paliwanag o hakbang.",
-        "hindi_pa_en": "Explanation or action is not yet appropriate."
+        "kaya_na_fil": "Malayang naitutugma ang pangangailangan, contact, pagtitiyak at follow-up; pinananatili ang propesyonal na hangganan at agarang tulong.",
+        "kaya_na_en": "Independently matches need, contact, verification and follow-up; maintains professional boundaries and timely help.",
+        "kailangan_practice_fil": "Tama ang direksiyon ngunit kailangan ng tanong upang linawin ang saklaw, alternatibong contact o follow-up.",
+        "kailangan_practice_en": "Direction is appropriate but prompting is needed to clarify scope, an alternative contact or follow-up.",
+        "hindi_pa_fil": "Hindi angkop ang contact o hakbang, nangangako ng hindi kumpirmadong suporta, o pinaghihintay ang agarang tulong.",
+        "hindi_pa_en": "Contact or action is inappropriate, promises unconfirmed support, or makes immediate help wait."
       }
     }
   ]

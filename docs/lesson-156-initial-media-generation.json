@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-06T11:37:39.645Z",
+  "source_commit": "f69bee7952855ebcd40eadf7cfcda9c7ea1322a9",
+  "owner_review": "pending",
+  "render_input_sha256": "17e79d2f01c6063605aca486d46f859f59872abe516c74abe86e5d5d60856869",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 58.958,
+      "beats": [
+        {
+          "zone": "classify",
+          "index": 0,
+          "text": "May ulat at alalahaning pangkalusugan si Malou. Nililinaw niya ang kailangan at pagkaapurahan bago pumili ng contact.",
+          "start_ms": 0,
+          "end_ms": 8240
+        },
+        {
+          "zone": "peer",
+          "index": 1,
+          "text": "Sa karaniwang pag-file, tumutulong ang may-kakayahang kapwa BHW. Tinitiyak ni Malou sa supervisor ang opisyal na proseso.",
+          "start_ms": 8540,
+          "end_ms": 18100
+        },
+        {
+          "zone": "professional",
+          "index": 2,
+          "text": "Para sa klinikal o hindi tiyak na alalahanin, humihingi siya ng angkop na awtorisadong propesyonal na gabay ayon sa lokal na proseso.",
+          "start_ms": 18400,
+          "end_ms": 27920
+        },
+        {
+          "zone": "urgent",
+          "index": 3,
+          "text": "Hindi klinikal na awtoridad ang pagiging kakilala. Hindi ipinagpapaliban ni Malou ang agarang tulong habang inaayos ang suporta.",
+          "start_ms": 28220,
+          "end_ms": 36620
+        },
+        {
+          "zone": "verify",
+          "index": 4,
+          "text": "Tinitiyak niya ang naka-duty, alternatibo at susunod na hakbang. Kailangang impormasyon lamang ang ibinabahagi, ayon sa pahintulot at patakaran.",
+          "start_ms": 36920,
+          "end_ms": 48160
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Pinipili ni Malou ang tamang papel, kinukumpirma ang proseso at sinusundan ang resulta. Walang pangako ng hindi kumpirmadong suporta.",
+          "start_ms": 48460,
+          "end_ms": 58900
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-23e14afd0664.mp4",
+        "content_hash": "23e14afd06641e8b1928b9cc0ecdd56867e4726ebfbc49c27991f4209255a6d0",
+        "duration_s": 60,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-37423f6b0acb.vtt",
+          "content_hash": "37423f6b0acbd16a44c76aa1a672b39804d28d9d36a29cb30bf50e4df7b8edab"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-4206b4e8c385-poster.jpg",
+          "content_hash": "4206b4e8c385d3127505c32534d8124f4d6d407b6c38a2fd8092bdf9f9e315ee"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-4206b4e8c385-poster.jpg",
+        "content_hash": "4206b4e8c385d3127505c32534d8124f4d6d407b6c38a2fd8092bdf9f9e315ee"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 53.081,
+      "beats": [
+        {
+          "zone": "classify",
+          "index": 0,
+          "text": "Malou has a report and a health concern. She clarifies the need and urgency before choosing a contact.",
+          "start_ms": 0,
+          "end_ms": 7520
+        },
+        {
+          "zone": "peer",
+          "index": 1,
+          "text": "For routine filing, a competent fellow BHW helps. Malou confirms the official procedure with the supervisor.",
+          "start_ms": 7820,
+          "end_ms": 16060
+        },
+        {
+          "zone": "professional",
+          "index": 2,
+          "text": "For a clinical or uncertain concern, she seeks appropriate authorized professional guidance under the local process.",
+          "start_ms": 16360,
+          "end_ms": 24800
+        },
+        {
+          "zone": "urgent",
+          "index": 3,
+          "text": "Familiarity is not clinical authority. Malou does not delay immediate help while coordinating support.",
+          "start_ms": 25100,
+          "end_ms": 33260
+        },
+        {
+          "zone": "verify",
+          "index": 4,
+          "text": "She verifies the on-duty contact, backup and next action. She shares only necessary information under consent and policy.",
+          "start_ms": 33560,
+          "end_ms": 42960
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Malou chooses the appropriate role, confirms the process and follows up on the result. She does not promise unconfirmed support.",
+          "start_ms": 43260,
+          "end_ms": 53020
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-e4138a369ec4.mp4",
+        "content_hash": "e4138a369ec4387aa99c687c88e623f12026f90f259eafe462e866dcf53f6c64",
+        "duration_s": 54,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-dd545f508cc3.vtt",
+          "content_hash": "dd545f508cc3f09b28097279eb4a7db5a663f6d9e4bb04b4df16f248cbb50217"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-146f95145292-poster.jpg",
+          "content_hash": "146f95145292cd6a027cd6590984b1af904a5d2049157e549338ce300bc4d4d2"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-146f95145292-poster.jpg",
+        "content_hash": "146f95145292cd6a027cd6590984b1af904a5d2049157e549338ce300bc4d4d2"
+      }
+    }
+  ]
+}

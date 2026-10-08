@@ -20358,196 +20358,668 @@
     "bhw-right-contact": {
       "module": "05-bhw-at-barangay",
       "sections": {
-        "section-11": {
+        "contact-application": {
           "en": {
-            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-11.en.fa2b8ac715f8.mp3",
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-application.en.844783248522.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "fa2b8ac715f8e620b8bb882d55eefca9354ee2b5992c7b2bb638803a803dbc12",
-            "sha256": "0a77cead551b74be93fb2195687717b8da4b372b06d5edd07d90ce64917f05e7",
-            "duration_seconds": 54.491,
+            "content_hash": "844783248522f7a0e556a320d48fca9a9d92e9b945d8eea8f876bb5ba159cbef",
+            "sha256": "44b804f61c033700e7becf2111ee60a2fe3a6c953d99d1134772460adf008052",
+            "duration_seconds": 44.617,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Try it: one more situation",
+                "text": "Choose and explain",
                 "start_ms": 0,
-                "end_ms": 2920
+                "end_ms": 2000
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Now try it yourself.",
-                "start_ms": 3220,
-                "end_ms": 5140
+                "text": "A new BHW asks Malou how to file the first report.",
+                "start_ms": 2300,
+                "end_ms": 6740
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "A newly accredited BHW in your barangay is confused about how to file their first report.",
-                "start_ms": 5440,
-                "end_ms": 13600
+                "text": "There is no immediate health concern in this situation.",
+                "start_ms": 7040,
+                "end_ms": 10960
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Who is the most fitting person to approach — not the midwife, not barangay officials, but someone with the same experience as a BHW?",
-                "start_ms": 13900,
-                "end_ms": 25540
+                "text": "Choose an appropriate first action and explain what to confirm with the supervisor.",
+                "start_ms": 11260,
+                "end_ms": 17020
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Think of the answer before moving on: a more experienced fellow BHW is the easiest person to go to for this — not because it's a lesser concern, but because that is exactly where the everyday, practical know-how of the work actually lives.",
-                "start_ms": 25840,
-                "end_ms": 43560
+                "text": "Then summarize four relationships: the community for listening and participation; fellow BHWs for teamwork; the authorized health team for professional guidance; and local partners for administrative support.",
+                "start_ms": 17320,
+                "end_ms": 32400
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "For each relationship, clarify the role, need and local process.",
+                "start_ms": 32700,
+                "end_ms": 39260
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Not every question is for the midwife or barangay officials — some things a fellow BHW is simply the closest person to answer.",
-                "start_ms": 43860,
-                "end_ms": 54420
+                "text": "Match the need to the role, verify the process and follow up.",
+                "start_ms": 39560,
+                "end_ms": 44560
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-11.fil.24e16c552912.mp3",
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-application.fil.b7d1a51d19f3.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "24e16c55291269e8c3a6b9b2c519411f7bbb094bd047fce8551d2915f82da477",
-            "sha256": "188440c43ba150f3f05b561449b5ed38576bdd823d7e2118d4fe82525d551034",
-            "duration_seconds": 55.197,
+            "content_hash": "b7d1a51d19f30fab71f5af3e0da03525dab20e3f4270531915b95a21c277542c",
+            "sha256": "3a36f65284c1da647747586df5034bcfbf181f7210f626ec7a3aa522268146dd",
+            "duration_seconds": 52.637,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Subukan mo: isa pang sitwasyon",
+                "text": "Piliin at ipaliwanag",
                 "start_ms": 0,
-                "end_ms": 2960
+                "end_ms": 2480
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Ngayon, subukan mo.",
-                "start_ms": 3260,
-                "end_ms": 5420
+                "text": "May bagong BHW na nagtatanong kay Malou kung paano mag-file ng unang ulat.",
+                "start_ms": 2780,
+                "end_ms": 9540
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "May BHW na bagong-tanggap sa inyong barangay at nalilito kung paano mag-file ng kanyang unang ulat.",
-                "start_ms": 5720,
-                "end_ms": 13120
+                "text": "Walang agarang alalahaning pangkalusugan sa sitwasyong ito.",
+                "start_ms": 9840,
+                "end_ms": 14040
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Sino kaya ang pinakaangkop na lapitan niya — hindi ang midwife, hindi rin ang barangay officials, kundi ang taong may parehong karanasan bilang BHW?",
-                "start_ms": 13420,
-                "end_ms": 25700
+                "text": "Piliin ang angkop na unang hakbang at ipaliwanag kung ano ang titiyakin sa supervisor.",
+                "start_ms": 14340,
+                "end_ms": 20580
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Isipin ang sagot bago magpatuloy: ang kapwa BHW na mas matagal na sa gawain ang pinakamadaling puntahan para dito — hindi dahil mas mababa ang usapin, kundi dahil doon talaga umiikot ang karanasan sa pang-araw-araw na mga detalye ng trabaho.",
-                "start_ms": 26000,
-                "end_ms": 43760
+                "text": "Pagkatapos, ibuod ang apat na ugnayan: komunidad para sa pakikinig at partisipasyon; kapwa BHW para sa pagtutulungan; awtorisadong health team para sa propesyonal na gabay; at mga lokal na katuwang para sa administratibong suporta.",
+                "start_ms": 20880,
+                "end_ms": 40440
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Sa bawat ugnayan, linawin ang papel, pangangailangan at lokal na proseso.",
+                "start_ms": 40740,
+                "end_ms": 46980
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Hindi lahat ng katanungan ay para sa midwife o barangay officials — may mga bagay na ang kapwa BHW mismo ang may pinakamalapit na sagot.",
-                "start_ms": 44060,
-                "end_ms": 55140
+                "text": "Itugma ang kailangan sa papel, tiyakin ang proseso at sundan.",
+                "start_ms": 47280,
+                "end_ms": 52560
+              }
+            ]
+          }
+        },
+        "contact-classify": {
+          "en": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-classify.en.cb822501112c.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "cb822501112c1c076cac4b6c0277dbd163ace13b79ec77b2b83d3d7ade6f14ea",
+            "sha256": "58d51600f17256e3d16bcc226f81dbeb7e70be850869b00ee46e23c6ef7df9a8",
+            "duration_seconds": 33.489,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "What is needed?",
+                "start_ms": 0,
+                "end_ms": 1360
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "At a fictional coordination desk, Malou has two requests: help filing a report and a health concern.",
+                "start_ms": 1660,
+                "end_ms": 9060
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Before choosing a contact, she clarifies the need, whether immediate help is needed, and the limits of her role.",
+                "start_ms": 9360,
+                "end_ms": 17520
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Familiarity alone is not the basis.",
+                "start_ms": 17820,
+                "end_ms": 20980
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "When immediate help is needed, follow the local referral or emergency process promptly; do not wait to find a perfect contact.",
+                "start_ms": 21280,
+                "end_ms": 30400
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Choose by need and urgency.",
+                "start_ms": 30700,
+                "end_ms": 33420
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-classify.fil.be0e25a347df.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "be0e25a347dfac3edf3ba526a91288a451ea82795b06d0593024157ed7d27d0d",
+            "sha256": "24db276de5129fc99885943ef25fa4ff4757908443b9a1fda6f819efc24047fb",
+            "duration_seconds": 39.236,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Ano ang kailangan?",
+                "start_ms": 0,
+                "end_ms": 1600
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa kathang-isip na coordination desk, may dalawang kahilingan si Malou: tulong sa pag-file ng ulat at alalahanin tungkol sa kalusugan.",
+                "start_ms": 1900,
+                "end_ms": 11460
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Bago pumili ng lalapitan, nililinaw niya ang pangangailangan, kung may agarang tulong na kailangan, at ang saklaw ng kanyang tungkulin.",
+                "start_ms": 11760,
+                "end_ms": 21600
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi batayan ang pagiging kakilala lamang.",
+                "start_ms": 21900,
+                "end_ms": 25140
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Kung agarang tulong ang kailangan, sundin agad ang lokal na referral o emergency process; huwag hintaying mahanap ang perpektong contact.",
+                "start_ms": 25440,
+                "end_ms": 34600
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Piliin ayon sa pangangailangan at pagkaapurahan.",
+                "start_ms": 34900,
+                "end_ms": 39180
+              }
+            ]
+          }
+        },
+        "contact-professional": {
+          "en": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-professional.en.fd31bd5aae34.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "fd31bd5aae34698ab1dcfa083a281b04a00ce81d2d8e57ba91a6f59350d5e6c4",
+            "sha256": "05fe48ac6303fd3fb1b5edef001f226e8d07dac19d73877dd8cca8458c33bd36",
+            "duration_seconds": 41.874,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "A health concern",
+                "start_ms": 0,
+                "end_ms": 1720
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "For a clinical, uncertain or urgent concern, contact the appropriate authorized health professional and follow the local referral or emergency process.",
+                "start_ms": 2020,
+                "end_ms": 13700
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "The contact may be a midwife, nurse, doctor or RHU according to the assigned service and need; no single profession is sufficient for every case.",
+                "start_ms": 14000,
+                "end_ms": 25800
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Malou does not diagnose or prescribe medicines.",
+                "start_ms": 26100,
+                "end_ms": 29980
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "If immediate help is needed, act promptly under the local process while arranging coordination.",
+                "start_ms": 30280,
+                "end_ms": 37160
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Clinical decisions belong to the appropriate authorized professional.",
+                "start_ms": 37460,
+                "end_ms": 41820
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-professional.fil.22b14a9749bb.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "22b14a9749bb9b02b34d606e5f4a7ba4a1ca3167c37530c269fa65530cd0ccec",
+            "sha256": "595f168c94e752c0e43e90d1139dd78b796b2d479fcc5dbd7003daf25ed46dd4",
+            "duration_seconds": 43.598,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Alalahaning pangkalusugan",
+                "start_ms": 0,
+                "end_ms": 2240
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Kapag klinikal, hindi tiyak o apurahan ang alalahanin, lumapit sa angkop na awtorisadong health professional at sundin ang lokal na referral o emergency process.",
+                "start_ms": 2540,
+                "end_ms": 14220
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Maaaring contact ang midwife, nurse, doktor o RHU ayon sa nakatalagang serbisyo at pangangailangan; hindi sapat ang iisang propesyon para sa lahat ng kaso.",
+                "start_ms": 14520,
+                "end_ms": 27240
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi nagdi-diagnose o nagtatakda ng gamot si Malou.",
+                "start_ms": 27540,
+                "end_ms": 31340
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Kung agarang tulong ang kailangan, kumilos agad ayon sa lokal na proseso habang inaayos ang koordinasyon.",
+                "start_ms": 31640,
+                "end_ms": 38480
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ang klinikal na pasya ay para sa angkop na awtorisadong propesyonal.",
+                "start_ms": 38780,
+                "end_ms": 43540
+              }
+            ]
+          }
+        },
+        "contact-verify": {
+          "en": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-verify.en.218125211b1b.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "218125211b1b7b8746df340b6284a11a242fd55d0314268a076dc36630528017",
+            "sha256": "782991b3230d7b0383dc012a16ed493fbdc390ae7fa14ec6448911b0541ed92f",
+            "duration_seconds": 41.848,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Verify and follow up",
+                "start_ms": 0,
+                "end_ms": 2720
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Malou verifies who is on duty, how to contact them safely, the next action and when to follow up on the outcome.",
+                "start_ms": 3020,
+                "end_ms": 11700
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "If the first contact is unavailable, use the confirmed alternative under the local process; do not keep waiting when the need is urgent.",
+                "start_ms": 12000,
+                "end_ms": 20880
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "With a nonhealth partner, share only the minimum information needed for coordination, consistent with consent and local policy.",
+                "start_ms": 21180,
+                "end_ms": 30540
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Separate confirmed from unconfirmed arrangements and update the person who requested help.",
+                "start_ms": 30840,
+                "end_ms": 36680
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Verify the contact, next action and outcome.",
+                "start_ms": 36980,
+                "end_ms": 41780
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-verify.fil.4e509cb330ab.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "4e509cb330abdb691577fdba43f97792c008b71de2cd2ea6c4ba3fb9cb678660",
+            "sha256": "952fc4bc0d1d8e4cb6a3360de5089c19122cfdc95f759a064d8091982d92510d",
+            "duration_seconds": 44.696,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Tiyakin at sundan",
+                "start_ms": 0,
+                "end_ms": 2000
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Tinitiyak ni Malou kung sino ang naka-duty, paano ligtas na makikipag-ugnayan, ano ang susunod na hakbang at kailan susundan ang resulta.",
+                "start_ms": 2300,
+                "end_ms": 12540
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Kung hindi makontak ang una, gamitin ang kumpirmadong alternatibo ayon sa lokal na proseso; huwag tumigil sa paghihintay kung apurahan.",
+                "start_ms": 12840,
+                "end_ms": 22320
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Sa nonhealth partner, ibahagi lamang ang pinakamaliit na impormasyong kailangan sa koordinasyon, alinsunod sa pahintulot at lokal na patakaran.",
+                "start_ms": 22620,
+                "end_ms": 32980
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ihiwalay ang kumpirmado sa hindi pa kumpirmado at magbalita sa taong humingi ng tulong.",
+                "start_ms": 33280,
+                "end_ms": 40120
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Tiyakin ang contact, susunod na hakbang at resulta.",
+                "start_ms": 40420,
+                "end_ms": 44620
+              }
+            ]
+          }
+        },
+        "section-11": {
+          "en": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-11.en.3d6bad2249c0.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "3d6bad2249c03ec32d56a9932ede3b6809f3e0668f86854899aa6631f73d85ac",
+            "sha256": "d7ed5dd20c94a5415a76b70440242c78c37dd2c6918c26331b1ed260483b7747",
+            "duration_seconds": 37.878,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Try it: the first report",
+                "start_ms": 0,
+                "end_ms": 2400
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "A new BHW is confused about filing the first report.",
+                "start_ms": 2700,
+                "end_ms": 7420
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Malou can ask an experienced fellow BHW for routine steps that the peer knows and can support competently.",
+                "start_ms": 7720,
+                "end_ms": 16400
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Confirm the official form, method, deadline and recipient with the designated supervisor.",
+                "start_ms": 16700,
+                "end_ms": 23140
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "If the peer is unsure, ask the supervisor to clarify.",
+                "start_ms": 23440,
+                "end_ms": 27600
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Use a blank example for practice, rather than an actual patient record.",
+                "start_ms": 27900,
+                "end_ms": 32700
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Peer practical support; official confirmation with the supervisor.",
+                "start_ms": 33000,
+                "end_ms": 37800
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-11.fil.e49cfc21f4d9.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "e49cfc21f4d96de24a663dca47d8575d396d3a27cb78064de54a40187e7a5d27",
+            "sha256": "b1a43c8e3d775fd8dba6d444386114c8c3886fd2447ad5109a1e3056225cd473",
+            "duration_seconds": 43.703,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Subukan mo: unang ulat",
+                "start_ms": 0,
+                "end_ms": 2640
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Nalilito ang bagong BHW sa pag-file ng unang ulat.",
+                "start_ms": 2940,
+                "end_ms": 6940
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Maaaring magpatulong si Malou sa kapwa BHW na may karanasan sa karaniwang hakbang na alam nito at saklaw ng kakayahan nito.",
+                "start_ms": 7240,
+                "end_ms": 15720
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Tiyakin sa itinalagang supervisor ang opisyal na form, paraan, deadline at tumatanggap ng ulat.",
+                "start_ms": 16020,
+                "end_ms": 24300
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Kung hindi tiyak ang sagot ng kapwa BHW, humingi ng paglilinaw sa supervisor.",
+                "start_ms": 24600,
+                "end_ms": 30920
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Gumamit ng blangkong halimbawa sa pagsasanay, hindi totoong patient record.",
+                "start_ms": 31220,
+                "end_ms": 36860
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Praktikal na tulong ng kapwa BHW; opisyal na pagtitiyak sa supervisor.",
+                "start_ms": 37160,
+                "end_ms": 43640
               }
             ]
           }
         },
         "section-12": {
           "en": {
-            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-12.en.5a7ff8cd85bc.mp3",
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-12.en.c11b43f6ae7b.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "5a7ff8cd85bcd55b601326b65c058adcf2e28c8ebd0ab9722e46286b918a4ee7",
-            "sha256": "bcf1032d30d0631681fc14f827e746b61d94e0d02a314eacdd5484179061c2dd",
-            "duration_seconds": 47.83,
+            "content_hash": "c11b43f6ae7b50aa16e106f8c907b3667c9d6758a6bb60f9b3bdbe2c27052adc",
+            "sha256": "119802fd9b58468a32f82ca937998a46ef40ebecde0af3bea748828200aa1d53",
+            "duration_seconds": 42.292,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Wrong versus right: approaching the right person",
+                "text": "Wrong and right choices",
                 "start_ms": 0,
-                "end_ms": 4040
+                "end_ms": 2400
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "**Wrong**: BHW Marites went straight to the barangay captain about Aling Nena's child's cough, because \"he's the one I usually talk to anyway.\"",
-                "start_ms": 4340,
-                "end_ms": 15460
+                "text": "In a fictional example, Aling Nena asks about her child’s cough.",
+                "start_ms": 2700,
+                "end_ms": 7900
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "The barangay captain's time was wasted on a clinical matter outside his role, and the proper referral was delayed.",
-                "start_ms": 15760,
-                "end_ms": 23440
+                "text": "Malou should not choose the barangay captain for a clinical decision just because they often speak.",
+                "start_ms": 8200,
+                "end_ms": 14760
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "**Right**: BHW Marites first recognized the clinical nature of the concern, approached the midwife/RHU, and only involved barangay officials once transport support to the facility was actually needed.",
-                "start_ms": 23740,
-                "end_ms": 40220
+                "text": "The appropriate choice is guidance from the authorized health professional or RHU under the local process, without delaying immediate help when needed.",
+                "start_ms": 15060,
+                "end_ms": 25380
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Transport support may be coordinated with the responsible local contact at the same time.",
+                "start_ms": 25680,
+                "end_ms": 31280
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Support is separate from clinical decisions; Malou does not guarantee a vehicle or funding.",
+                "start_ms": 31580,
+                "end_ms": 37940
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Approaching the wrong person doesn't just waste time — it also delays the service that should have been quick.",
-                "start_ms": 40520,
-                "end_ms": 47760
+                "text": "Coordinate support without delaying appropriate help.",
+                "start_ms": 38240,
+                "end_ms": 42240
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-12.fil.f4d5186d58c4.mp3",
+            "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-12.fil.b97a5c23c79a.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "f4d5186d58c49e70eb6f9dcf89b0f41b2ad3345bbc75438d3dcd6969b5052c5d",
-            "sha256": "4c3fb25ba674249a56cf50ad0fcfb350760a8cf4a22f514f4157324f043b50ff",
-            "duration_seconds": 55.824,
+            "content_hash": "b97a5c23c79a3b3b087d1d1414384aeda1f62ae689ac586241652e5b0d8624ee",
+            "sha256": "4a6b28b825ad4ab93d28eeedb889b28af4094c6fe65541696f1e420aaf2f26a2",
+            "duration_seconds": 48.353,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Mali kumpara sa tama: paglapit sa tamang tao",
+                "text": "Mali at tamang pagpili",
                 "start_ms": 0,
-                "end_ms": 4240
+                "end_ms": 2440
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "**Mali**: Pinuntahan agad ni BHW Marites ang barangay captain para sa ubo ni anak ni Aling Nena, dahil \"siya naman ang laging kausap ko.\"",
-                "start_ms": 4540,
-                "end_ms": 17100
+                "text": "Sa kathang-isip na halimbawa, may tanong si Aling Nena tungkol sa ubo ng kanyang anak.",
+                "start_ms": 2740,
+                "end_ms": 9140
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Nasayang ang oras ng barangay captain sa usaping klinikal na hindi naman niya saklaw, at naantala ang tamang pag-refer.",
-                "start_ms": 17400,
-                "end_ms": 26440
+                "text": "Maling piliin ni Malou ang barangay captain para sa klinikal na pasya dahil lamang palagi niya itong kausap.",
+                "start_ms": 9440,
+                "end_ms": 16800
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "**Tama**: Kinilala muna ni BHW Marites ang klinikal na katangian ng alalahanin, lumapit sa midwife/RHU, at kalaunan ay isinama ang barangay officials lamang kapag may kailangan nang suportang pantransportasyon papunta sa pasilidad.",
-                "start_ms": 26740,
-                "end_ms": 46220
+                "text": "Tamang humingi ng gabay sa angkop na awtorisadong health professional o RHU ayon sa lokal na proseso, nang hindi inaantala ang agarang tulong kung kailangan.",
+                "start_ms": 17100,
+                "end_ms": 28860
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Maaaring kasabay na iugnay sa responsableng lokal na contact ang suportang pantransportasyon.",
+                "start_ms": 29160,
+                "end_ms": 36320
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Hiwalay ang suporta sa klinikal na pasya; hindi ginagarantiya ni Malou ang sasakyan o pondo.",
+                "start_ms": 36620,
+                "end_ms": 43420
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang paglapit sa maling tao ay hindi lang nakakaubos ng oras — naaantala rin nito ang serbisyong dapat sana'y mabilis.",
-                "start_ms": 46520,
-                "end_ms": 55760
+                "text": "Iugnay ang suporta nang hindi inaantala ang angkop na tulong.",
+                "start_ms": 43720,
+                "end_ms": 48280
               }
             ]
           }
@@ -112182,6 +112654,878 @@
                   "text": "Gawain, tatanggap, oras at contact: ulitin at tiyakin ang kasunduan.",
                   "start_ms": 51800,
                   "end_ms": 59520
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "bhw-right-contact": [
+      {
+        "module": "05-bhw-at-barangay",
+        "sections": {
+          "section-11": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-11.en.fa2b8ac715f8.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "fa2b8ac715f8e620b8bb882d55eefca9354ee2b5992c7b2bb638803a803dbc12",
+              "sha256": "0a77cead551b74be93fb2195687717b8da4b372b06d5edd07d90ce64917f05e7",
+              "duration_seconds": 54.491,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Try it: one more situation",
+                  "start_ms": 0,
+                  "end_ms": 2920
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Now try it yourself.",
+                  "start_ms": 3220,
+                  "end_ms": 5140
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "A newly accredited BHW in your barangay is confused about how to file their first report.",
+                  "start_ms": 5440,
+                  "end_ms": 13600
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Who is the most fitting person to approach — not the midwife, not barangay officials, but someone with the same experience as a BHW?",
+                  "start_ms": 13900,
+                  "end_ms": 25540
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Think of the answer before moving on: a more experienced fellow BHW is the easiest person to go to for this — not because it's a lesser concern, but because that is exactly where the everyday, practical know-how of the work actually lives.",
+                  "start_ms": 25840,
+                  "end_ms": 43560
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Not every question is for the midwife or barangay officials — some things a fellow BHW is simply the closest person to answer.",
+                  "start_ms": 43860,
+                  "end_ms": 54420
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-11.fil.24e16c552912.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "24e16c55291269e8c3a6b9b2c519411f7bbb094bd047fce8551d2915f82da477",
+              "sha256": "188440c43ba150f3f05b561449b5ed38576bdd823d7e2118d4fe82525d551034",
+              "duration_seconds": 55.197,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Subukan mo: isa pang sitwasyon",
+                  "start_ms": 0,
+                  "end_ms": 2960
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Ngayon, subukan mo.",
+                  "start_ms": 3260,
+                  "end_ms": 5420
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "May BHW na bagong-tanggap sa inyong barangay at nalilito kung paano mag-file ng kanyang unang ulat.",
+                  "start_ms": 5720,
+                  "end_ms": 13120
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Sino kaya ang pinakaangkop na lapitan niya — hindi ang midwife, hindi rin ang barangay officials, kundi ang taong may parehong karanasan bilang BHW?",
+                  "start_ms": 13420,
+                  "end_ms": 25700
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Isipin ang sagot bago magpatuloy: ang kapwa BHW na mas matagal na sa gawain ang pinakamadaling puntahan para dito — hindi dahil mas mababa ang usapin, kundi dahil doon talaga umiikot ang karanasan sa pang-araw-araw na mga detalye ng trabaho.",
+                  "start_ms": 26000,
+                  "end_ms": 43760
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Hindi lahat ng katanungan ay para sa midwife o barangay officials — may mga bagay na ang kapwa BHW mismo ang may pinakamalapit na sagot.",
+                  "start_ms": 44060,
+                  "end_ms": 55140
+                }
+              ]
+            }
+          },
+          "section-12": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-12.en.5a7ff8cd85bc.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "5a7ff8cd85bcd55b601326b65c058adcf2e28c8ebd0ab9722e46286b918a4ee7",
+              "sha256": "bcf1032d30d0631681fc14f827e746b61d94e0d02a314eacdd5484179061c2dd",
+              "duration_seconds": 47.83,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Wrong versus right: approaching the right person",
+                  "start_ms": 0,
+                  "end_ms": 4040
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "**Wrong**: BHW Marites went straight to the barangay captain about Aling Nena's child's cough, because \"he's the one I usually talk to anyway.\"",
+                  "start_ms": 4340,
+                  "end_ms": 15460
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The barangay captain's time was wasted on a clinical matter outside his role, and the proper referral was delayed.",
+                  "start_ms": 15760,
+                  "end_ms": 23440
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "**Right**: BHW Marites first recognized the clinical nature of the concern, approached the midwife/RHU, and only involved barangay officials once transport support to the facility was actually needed.",
+                  "start_ms": 23740,
+                  "end_ms": 40220
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Approaching the wrong person doesn't just waste time — it also delays the service that should have been quick.",
+                  "start_ms": 40520,
+                  "end_ms": 47760
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-12.fil.f4d5186d58c4.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "f4d5186d58c49e70eb6f9dcf89b0f41b2ad3345bbc75438d3dcd6969b5052c5d",
+              "sha256": "4c3fb25ba674249a56cf50ad0fcfb350760a8cf4a22f514f4157324f043b50ff",
+              "duration_seconds": 55.824,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Mali kumpara sa tama: paglapit sa tamang tao",
+                  "start_ms": 0,
+                  "end_ms": 4240
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "**Mali**: Pinuntahan agad ni BHW Marites ang barangay captain para sa ubo ni anak ni Aling Nena, dahil \"siya naman ang laging kausap ko.\"",
+                  "start_ms": 4540,
+                  "end_ms": 17100
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Nasayang ang oras ng barangay captain sa usaping klinikal na hindi naman niya saklaw, at naantala ang tamang pag-refer.",
+                  "start_ms": 17400,
+                  "end_ms": 26440
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "**Tama**: Kinilala muna ni BHW Marites ang klinikal na katangian ng alalahanin, lumapit sa midwife/RHU, at kalaunan ay isinama ang barangay officials lamang kapag may kailangan nang suportang pantransportasyon papunta sa pasilidad.",
+                  "start_ms": 26740,
+                  "end_ms": 46220
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang paglapit sa maling tao ay hindi lang nakakaubos ng oras — naaantala rin nito ang serbisyong dapat sana'y mabilis.",
+                  "start_ms": 46520,
+                  "end_ms": 55760
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "module": "05-bhw-at-barangay",
+        "sections": {
+          "contact-application": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-application.en.844783248522.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "844783248522f7a0e556a320d48fca9a9d92e9b945d8eea8f876bb5ba159cbef",
+              "sha256": "44b804f61c033700e7becf2111ee60a2fe3a6c953d99d1134772460adf008052",
+              "duration_seconds": 44.617,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Choose and explain",
+                  "start_ms": 0,
+                  "end_ms": 2000
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "A new BHW asks Malou how to file the first report.",
+                  "start_ms": 2300,
+                  "end_ms": 6740
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "There is no immediate health concern in this situation.",
+                  "start_ms": 7040,
+                  "end_ms": 10960
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Choose an appropriate first action and explain what to confirm with the supervisor.",
+                  "start_ms": 11260,
+                  "end_ms": 17020
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Then summarize four relationships: the community for listening and participation; fellow BHWs for teamwork; the authorized health team for professional guidance; and local partners for administrative support.",
+                  "start_ms": 17320,
+                  "end_ms": 32400
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "For each relationship, clarify the role, need and local process.",
+                  "start_ms": 32700,
+                  "end_ms": 39260
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Match the need to the role, verify the process and follow up.",
+                  "start_ms": 39560,
+                  "end_ms": 44560
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-application.fil.b7d1a51d19f3.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "b7d1a51d19f30fab71f5af3e0da03525dab20e3f4270531915b95a21c277542c",
+              "sha256": "3a36f65284c1da647747586df5034bcfbf181f7210f626ec7a3aa522268146dd",
+              "duration_seconds": 52.637,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Piliin at ipaliwanag",
+                  "start_ms": 0,
+                  "end_ms": 2480
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "May bagong BHW na nagtatanong kay Malou kung paano mag-file ng unang ulat.",
+                  "start_ms": 2780,
+                  "end_ms": 9540
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Walang agarang alalahaning pangkalusugan sa sitwasyong ito.",
+                  "start_ms": 9840,
+                  "end_ms": 14040
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Piliin ang angkop na unang hakbang at ipaliwanag kung ano ang titiyakin sa supervisor.",
+                  "start_ms": 14340,
+                  "end_ms": 20580
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Pagkatapos, ibuod ang apat na ugnayan: komunidad para sa pakikinig at partisipasyon; kapwa BHW para sa pagtutulungan; awtorisadong health team para sa propesyonal na gabay; at mga lokal na katuwang para sa administratibong suporta.",
+                  "start_ms": 20880,
+                  "end_ms": 40440
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Sa bawat ugnayan, linawin ang papel, pangangailangan at lokal na proseso.",
+                  "start_ms": 40740,
+                  "end_ms": 46980
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Itugma ang kailangan sa papel, tiyakin ang proseso at sundan.",
+                  "start_ms": 47280,
+                  "end_ms": 52560
+                }
+              ]
+            }
+          },
+          "contact-classify": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-classify.en.cb822501112c.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "cb822501112c1c076cac4b6c0277dbd163ace13b79ec77b2b83d3d7ade6f14ea",
+              "sha256": "58d51600f17256e3d16bcc226f81dbeb7e70be850869b00ee46e23c6ef7df9a8",
+              "duration_seconds": 33.489,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "What is needed?",
+                  "start_ms": 0,
+                  "end_ms": 1360
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "At a fictional coordination desk, Malou has two requests: help filing a report and a health concern.",
+                  "start_ms": 1660,
+                  "end_ms": 9060
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Before choosing a contact, she clarifies the need, whether immediate help is needed, and the limits of her role.",
+                  "start_ms": 9360,
+                  "end_ms": 17520
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Familiarity alone is not the basis.",
+                  "start_ms": 17820,
+                  "end_ms": 20980
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "When immediate help is needed, follow the local referral or emergency process promptly; do not wait to find a perfect contact.",
+                  "start_ms": 21280,
+                  "end_ms": 30400
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Choose by need and urgency.",
+                  "start_ms": 30700,
+                  "end_ms": 33420
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-classify.fil.be0e25a347df.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "be0e25a347dfac3edf3ba526a91288a451ea82795b06d0593024157ed7d27d0d",
+              "sha256": "24db276de5129fc99885943ef25fa4ff4757908443b9a1fda6f819efc24047fb",
+              "duration_seconds": 39.236,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Ano ang kailangan?",
+                  "start_ms": 0,
+                  "end_ms": 1600
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Sa kathang-isip na coordination desk, may dalawang kahilingan si Malou: tulong sa pag-file ng ulat at alalahanin tungkol sa kalusugan.",
+                  "start_ms": 1900,
+                  "end_ms": 11460
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Bago pumili ng lalapitan, nililinaw niya ang pangangailangan, kung may agarang tulong na kailangan, at ang saklaw ng kanyang tungkulin.",
+                  "start_ms": 11760,
+                  "end_ms": 21600
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Hindi batayan ang pagiging kakilala lamang.",
+                  "start_ms": 21900,
+                  "end_ms": 25140
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Kung agarang tulong ang kailangan, sundin agad ang lokal na referral o emergency process; huwag hintaying mahanap ang perpektong contact.",
+                  "start_ms": 25440,
+                  "end_ms": 34600
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Piliin ayon sa pangangailangan at pagkaapurahan.",
+                  "start_ms": 34900,
+                  "end_ms": 39180
+                }
+              ]
+            }
+          },
+          "contact-professional": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-professional.en.c45fe077c345.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "c45fe077c3450d781fc097488eb29b432f089634514d773fdb63a998782de0c6",
+              "sha256": "59167dd0796885e13378a22133e96d825298984ea64e150a254ea002960df1c7",
+              "duration_seconds": 41.404,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "A health concern",
+                  "start_ms": 0,
+                  "end_ms": 1680
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "For a clinical, uncertain or urgent concern, contact the appropriate authorized health professional and follow the local referral or emergency process.",
+                  "start_ms": 1980,
+                  "end_ms": 12700
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The contact may be a midwife, nurse, doctor or RHU according to the assigned service and need; no single profession is sufficient for every case.",
+                  "start_ms": 13000,
+                  "end_ms": 24920
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Malou does not diagnose or prescribe medicines.",
+                  "start_ms": 25220,
+                  "end_ms": 29860
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "If immediate help is needed, act promptly under the local process while arranging coordination.",
+                  "start_ms": 30160,
+                  "end_ms": 36880
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Clinical decisions belong to the appropriate authorized professional.",
+                  "start_ms": 37180,
+                  "end_ms": 41340
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-professional.fil.da2cb65c4805.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "da2cb65c4805cfc445087728a6e378bd10e6ccf0d5cee484e79dee07e6a0de20",
+              "sha256": "616a4f7be81de9097381d35ad284a70e24c070f64515faa63d8afa03daa216b6",
+              "duration_seconds": 44.173,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Alalahaning pangkalusugan",
+                  "start_ms": 0,
+                  "end_ms": 2520
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Kapag klinikal, hindi tiyak o apurahan ang alalahanin, lumapit sa angkop na awtorisadong health professional at sundin ang lokal na referral o emergency process.",
+                  "start_ms": 2820,
+                  "end_ms": 14620
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Maaaring contact ang midwife, nurse, doktor o RHU ayon sa nakatalagang serbisyo at pangangailangan; hindi sapat ang iisang propesyon para sa lahat ng kaso.",
+                  "start_ms": 14920,
+                  "end_ms": 26800
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Hindi nagdi-diagnose o nagtatakda ng gamot si Malou.",
+                  "start_ms": 27100,
+                  "end_ms": 31020
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Kung agarang tulong ang kailangan, kumilos agad ayon sa lokal na proseso habang inaayos ang koordinasyon.",
+                  "start_ms": 31320,
+                  "end_ms": 39000
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang klinikal na pasya ay para sa angkop na awtorisadong propesyonal.",
+                  "start_ms": 39300,
+                  "end_ms": 44100
+                }
+              ]
+            }
+          },
+          "contact-verify": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-verify.en.218125211b1b.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "218125211b1b7b8746df340b6284a11a242fd55d0314268a076dc36630528017",
+              "sha256": "782991b3230d7b0383dc012a16ed493fbdc390ae7fa14ec6448911b0541ed92f",
+              "duration_seconds": 41.848,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Verify and follow up",
+                  "start_ms": 0,
+                  "end_ms": 2720
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Malou verifies who is on duty, how to contact them safely, the next action and when to follow up on the outcome.",
+                  "start_ms": 3020,
+                  "end_ms": 11700
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "If the first contact is unavailable, use the confirmed alternative under the local process; do not keep waiting when the need is urgent.",
+                  "start_ms": 12000,
+                  "end_ms": 20880
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "With a nonhealth partner, share only the minimum information needed for coordination, consistent with consent and local policy.",
+                  "start_ms": 21180,
+                  "end_ms": 30540
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Separate confirmed from unconfirmed arrangements and update the person who requested help.",
+                  "start_ms": 30840,
+                  "end_ms": 36680
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Verify the contact, next action and outcome.",
+                  "start_ms": 36980,
+                  "end_ms": 41780
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/contact-verify.fil.4e509cb330ab.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "4e509cb330abdb691577fdba43f97792c008b71de2cd2ea6c4ba3fb9cb678660",
+              "sha256": "952fc4bc0d1d8e4cb6a3360de5089c19122cfdc95f759a064d8091982d92510d",
+              "duration_seconds": 44.696,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Tiyakin at sundan",
+                  "start_ms": 0,
+                  "end_ms": 2000
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Tinitiyak ni Malou kung sino ang naka-duty, paano ligtas na makikipag-ugnayan, ano ang susunod na hakbang at kailan susundan ang resulta.",
+                  "start_ms": 2300,
+                  "end_ms": 12540
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Kung hindi makontak ang una, gamitin ang kumpirmadong alternatibo ayon sa lokal na proseso; huwag tumigil sa paghihintay kung apurahan.",
+                  "start_ms": 12840,
+                  "end_ms": 22320
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Sa nonhealth partner, ibahagi lamang ang pinakamaliit na impormasyong kailangan sa koordinasyon, alinsunod sa pahintulot at lokal na patakaran.",
+                  "start_ms": 22620,
+                  "end_ms": 32980
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ihiwalay ang kumpirmado sa hindi pa kumpirmado at magbalita sa taong humingi ng tulong.",
+                  "start_ms": 33280,
+                  "end_ms": 40120
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Tiyakin ang contact, susunod na hakbang at resulta.",
+                  "start_ms": 40420,
+                  "end_ms": 44620
+                }
+              ]
+            }
+          },
+          "section-11": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-11.en.d8574faf408e.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "d8574faf408e3658d0d95d27e32bb53ab56148511c035d5fdd1ebae2a18251f2",
+              "sha256": "e7be4dc259207841f0f799e0a5a31eb3a1b4ae4d5dfeb05b194e80e5d96b2174",
+              "duration_seconds": 38.635,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Try it: the first report",
+                  "start_ms": 0,
+                  "end_ms": 2080
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "A new BHW is confused about filing the first report.",
+                  "start_ms": 2380,
+                  "end_ms": 6820
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Malou can ask an experienced fellow BHW for routine steps that the peer knows and can support competently.",
+                  "start_ms": 7120,
+                  "end_ms": 15360
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Confirm the official form, method, deadline and recipient with the designated supervisor.",
+                  "start_ms": 15660,
+                  "end_ms": 23260
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "If the peer is unsure, ask the supervisor to clarify.",
+                  "start_ms": 23560,
+                  "end_ms": 28200
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Use a blank example for practice, rather than an actual patient record.",
+                  "start_ms": 28500,
+                  "end_ms": 33420
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Peer practical support; official confirmation with the supervisor.",
+                  "start_ms": 33720,
+                  "end_ms": 38560
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-11.fil.e49cfc21f4d9.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "e49cfc21f4d96de24a663dca47d8575d396d3a27cb78064de54a40187e7a5d27",
+              "sha256": "b1a43c8e3d775fd8dba6d444386114c8c3886fd2447ad5109a1e3056225cd473",
+              "duration_seconds": 43.703,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Subukan mo: unang ulat",
+                  "start_ms": 0,
+                  "end_ms": 2640
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Nalilito ang bagong BHW sa pag-file ng unang ulat.",
+                  "start_ms": 2940,
+                  "end_ms": 6940
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Maaaring magpatulong si Malou sa kapwa BHW na may karanasan sa karaniwang hakbang na alam nito at saklaw ng kakayahan nito.",
+                  "start_ms": 7240,
+                  "end_ms": 15720
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Tiyakin sa itinalagang supervisor ang opisyal na form, paraan, deadline at tumatanggap ng ulat.",
+                  "start_ms": 16020,
+                  "end_ms": 24300
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Kung hindi tiyak ang sagot ng kapwa BHW, humingi ng paglilinaw sa supervisor.",
+                  "start_ms": 24600,
+                  "end_ms": 30920
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Gumamit ng blangkong halimbawa sa pagsasanay, hindi totoong patient record.",
+                  "start_ms": 31220,
+                  "end_ms": 36860
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Praktikal na tulong ng kapwa BHW; opisyal na pagtitiyak sa supervisor.",
+                  "start_ms": 37160,
+                  "end_ms": 43640
+                }
+              ]
+            }
+          },
+          "section-12": {
+            "en": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-12.en.fdd5bbcf42f1.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "fdd5bbcf42f112f88874c1e69a8d8c147ae1795a45bd95e415e0c1cfff8bd71c",
+              "sha256": "bc4b5439aaa0b772560f5136561548ecd5628b565eb49991702fef30664df74d",
+              "duration_seconds": 43.18,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Wrong and right choices",
+                  "start_ms": 0,
+                  "end_ms": 2440
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "In a fictional example, Aling Nena asks about her child’s cough.",
+                  "start_ms": 2740,
+                  "end_ms": 8060
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Malou should not choose the barangay captain for a clinical decision just because they often speak.",
+                  "start_ms": 8360,
+                  "end_ms": 14800
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "The appropriate choice is guidance from the authorized health professional or RHU under the local process, without delaying immediate help when needed.",
+                  "start_ms": 15100,
+                  "end_ms": 26020
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Transport support may be coordinated with the responsible local contact at the same time.",
+                  "start_ms": 26320,
+                  "end_ms": 32320
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Support is separate from clinical decisions; Malou does not guarantee a vehicle or funding.",
+                  "start_ms": 32620,
+                  "end_ms": 39220
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Coordinate support without delaying appropriate help.",
+                  "start_ms": 39520,
+                  "end_ms": 43120
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/05-bhw-at-barangay/bhw-right-contact/section-12.fil.b97a5c23c79a.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "b97a5c23c79a3b3b087d1d1414384aeda1f62ae689ac586241652e5b0d8624ee",
+              "sha256": "4a6b28b825ad4ab93d28eeedb889b28af4094c6fe65541696f1e420aaf2f26a2",
+              "duration_seconds": 48.353,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Mali at tamang pagpili",
+                  "start_ms": 0,
+                  "end_ms": 2440
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Sa kathang-isip na halimbawa, may tanong si Aling Nena tungkol sa ubo ng kanyang anak.",
+                  "start_ms": 2740,
+                  "end_ms": 9140
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Maling piliin ni Malou ang barangay captain para sa klinikal na pasya dahil lamang palagi niya itong kausap.",
+                  "start_ms": 9440,
+                  "end_ms": 16800
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Tamang humingi ng gabay sa angkop na awtorisadong health professional o RHU ayon sa lokal na proseso, nang hindi inaantala ang agarang tulong kung kailangan.",
+                  "start_ms": 17100,
+                  "end_ms": 28860
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Maaaring kasabay na iugnay sa responsableng lokal na contact ang suportang pantransportasyon.",
+                  "start_ms": 29160,
+                  "end_ms": 36320
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Hiwalay ang suporta sa klinikal na pasya; hindi ginagarantiya ni Malou ang sasakyan o pondo.",
+                  "start_ms": 36620,
+                  "end_ms": 43420
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Iugnay ang suporta nang hindi inaantala ang angkop na tulong.",
+                  "start_ms": 43720,
+                  "end_ms": 48280
                 }
               ]
             }

@@ -1,3 +1,4 @@
+import {approved156Path,approved156LessonPaths,rightContactLeaf} from './lesson-156-release-compat.mjs';
 import {approved154Path,approved154LessonPaths,teamworkLeaf,approved154HistoricalMapping,beforeApproved154} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
@@ -45,7 +46,7 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
  it('retains every starting public MP3 byte and all35 same-module sibling files',()=>{
   const audio=Object.entries(baseline.tracked_hashes).filter(([p])=>p.startsWith('public/')&&p.endsWith('.mp3'));expect(audio).toHaveLength(2511);
   for(const [p,h]of Object.entries(baseline.tracked_hashes).filter(([p])=>p.startsWith('public/')))expect(sha(fs.readFileSync(root+'/'+p))).toBe(h);
-  expect(baseline.same_module_protected_files).toHaveLength(35);for(const p of baseline.same_module_protected_files.filter(p=>!p.includes("/lessons/bhw-barangay-partners/")&&!p.startsWith(localPartnersLeaf)&&!p.startsWith(teamworkLeaf)))expect(sha(fs.readFileSync(root+'/'+p))).toBe(baseline.tracked_hashes[p]);for(const p of approved153LessonPaths)approved153Path(p);for(const p of approved154LessonPaths)approved154Path(p);
+  expect(baseline.same_module_protected_files).toHaveLength(35);for(const p of baseline.same_module_protected_files.filter(p=>!p.includes("/lessons/bhw-barangay-partners/")&&!p.startsWith(rightContactLeaf)&&!p.startsWith(localPartnersLeaf)&&!p.startsWith(teamworkLeaf)))expect(sha(fs.readFileSync(root+'/'+p))).toBe(baseline.tracked_hashes[p]);for(const p of approved153LessonPaths)approved153Path(p);for(const p of approved154LessonPaths)approved154Path(p);for(const p of approved156LessonPaths)approved156Path(p);
  },30000);
  it('preserves95 approved1.4 media bytes, all historical tracked receipts and10 package receipts',()=>{
   const media=j('docs/lesson-151-protected-media.json').media;expect(media).toHaveLength(95);for(const m of media)expect(hash(m.path)).toBe(m.sha256);
@@ -53,8 +54,8 @@ describe('lesson1.5.1 Malou draft protection and application',()=>{
   for(const [p,h]of Object.entries(baseline.tracked_hashes).filter(([p])=>/^docs\/lesson-(135|14[1-5])/.test(p)))expect(sha(fs.readFileSync(root+'/'+p))).toBe(h);
  });
  it('protects all non-target mappings and prior history while retaining target history',()=>{
-  for(const [k,v]of Object.entries(baseline.non_target_mappings)){if(k==="bhw-teamwork"){approved154HistoricalMapping(mf,sha(JSON.stringify(v)),hash,x=>sha(JSON.stringify(x)));}else if(k==="bhw-barangay-partners"||k==="bhw-local-partners"){expect(mf.history[k]).toContainEqual(v);for(const langs of Object.values(v.sections))for(const t of Object.values(langs))expect(hash(t.src)).toBe(t.sha256);if(k==='bhw-local-partners')approved153Path('content/training/day1-basic-competencies/narration.json');}else expect(mf.lessons[k]).toEqual(v);}
-  for(const [k,v]of Object.entries(baseline.original_history)){if(k==='bhw-relationships'||k==='bhw-barangay-partners'||k==='bhw-local-partners')expect(mf.history[k].slice(0,v.length)).toEqual(v);else expect(mf.history[k]).toEqual(v);}
+  for(const [k,v]of Object.entries(baseline.non_target_mappings)){if(k==="bhw-teamwork"){approved154HistoricalMapping(mf,sha(JSON.stringify(v)),hash,x=>sha(JSON.stringify(x)));}else if(k==="bhw-barangay-partners"||k==="bhw-right-contact"||k==="bhw-local-partners"){expect(mf.history[k]).toContainEqual(v);for(const langs of Object.values(v.sections))for(const t of Object.values(langs))expect(hash(t.src)).toBe(t.sha256);if(k==='bhw-local-partners')approved153Path('content/training/day1-basic-competencies/narration.json');}else expect(mf.lessons[k]).toEqual(v);}
+  for(const [k,v]of Object.entries(baseline.original_history)){if(k==='bhw-relationships'||k==='bhw-barangay-partners'||k==='bhw-right-contact'||k==='bhw-local-partners')expect(mf.history[k].slice(0,v.length)).toEqual(v);else expect(mf.history[k]).toEqual(v);}
   expect(mf.history['bhw-relationships']).toContainEqual(baseline.original_target_mapping);
  });
  it('selects all6 historical published tracks and all12 draft tracks without selector overrides',()=>{

@@ -14,15 +14,39 @@
   },
   "sections": [
     {
+      "id": "contact-classify",
+      "concept_ids": [
+        "m5.four-relationships"
+      ],
+      "asset_ids": [
+        "malou-contact"
+      ],
+      "takeaway_fil": "Piliin ayon sa pangangailangan at pagkaapurahan.",
+      "takeaway_en": "Choose by need and urgency.",
+      "check": null
+    },
+    {
       "id": "section-11",
       "concept_ids": [
         "m5.four-relationships"
       ],
       "asset_ids": [
-        "practice-map"
+        "malou-contact"
       ],
-      "takeaway_fil": "Hindi lahat ng katanungan ay para sa midwife o barangay officials — may mga bagay na ang kapwa BHW mismo ang may pinakamalapit na sagot.",
-      "takeaway_en": "Not every question is for the midwife or barangay officials — some things a fellow BHW is simply the closest person to answer.",
+      "takeaway_fil": "Praktikal na tulong ng kapwa BHW; opisyal na pagtitiyak sa supervisor.",
+      "takeaway_en": "Peer practical support; official confirmation with the supervisor.",
+      "check": null
+    },
+    {
+      "id": "contact-professional",
+      "concept_ids": [
+        "m5.four-relationships"
+      ],
+      "asset_ids": [
+        "malou-contact"
+      ],
+      "takeaway_fil": "Ang klinikal na pasya ay para sa angkop na awtorisadong propesyonal.",
+      "takeaway_en": "Clinical decisions belong to the appropriate authorized professional.",
       "check": null
     },
     {
@@ -30,25 +54,55 @@
       "concept_ids": [
         "m5.four-relationships"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang paglapit sa maling tao ay hindi lang nakakaubos ng oras — naaantala rin nito ang serbisyong dapat sana'y mabilis.",
-      "takeaway_en": "Approaching the wrong person doesn't just waste time — it also delays the service that should have been quick.",
+      "asset_ids": [
+        "malou-contact"
+      ],
+      "takeaway_fil": "Iugnay ang suporta nang hindi inaantala ang angkop na tulong.",
+      "takeaway_en": "Coordinate support without delaying appropriate help.",
+      "check": null
+    },
+    {
+      "id": "contact-verify",
+      "concept_ids": [
+        "m5.four-relationships"
+      ],
+      "asset_ids": [
+        "malou-contact"
+      ],
+      "takeaway_fil": "Tiyakin ang contact, susunod na hakbang at resulta.",
+      "takeaway_en": "Verify the contact, next action and outcome.",
+      "check": null
+    },
+    {
+      "id": "contact-application",
+      "concept_ids": [
+        "m5.four-relationships"
+      ],
+      "asset_ids": [
+        "malou-contact"
+      ],
+      "takeaway_fil": "Itugma ang kailangan sa papel, tiyakin ang proseso at sundan.",
+      "takeaway_en": "Match the need to the role, verify the process and follow up.",
       "check": {
-        "prompt_fil": "Sino ang makatutulong sa karaniwang tanong tungkol sa pag-file ng ulat?",
-        "prompt_en": "Who can help with an ordinary question about filing a report?",
+        "prompt_fil": "Ano ang angkop na unang hakbang para sa bagong BHW at unang ulat?",
+        "prompt_en": "What is an appropriate first action for the new BHW and first report?",
         "options": [
           {
-            "fil": "Kapwa BHW na may karanasan, at ang supervisor kung kailangan.",
-            "en": "An experienced fellow BHW, and the supervisor when needed."
+            "fil": "Magpatulong sa kapwa BHW na may karanasan at tiyakin sa supervisor ang opisyal na proseso.",
+            "en": "Ask an experienced fellow BHW for help and confirm the official procedure with the supervisor."
           },
           {
-            "fil": "Walang dapat tanungin.",
-            "en": "Nobody should be asked."
+            "fil": "Dalhin sa barangay captain ang lahat ng tanong sa ulat dahil kakilala siya.",
+            "en": "Take all report questions to the barangay captain because they are familiar."
+          },
+          {
+            "fil": "Gawin ang hula at huwag magtanong para matapos agad.",
+            "en": "Guess and avoid asking so the task is finished quickly."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Kapwa BHW na may karanasan, at ang supervisor kung kailangan. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "An experienced fellow BHW, and the supervisor when needed. Explain why using the lesson situation."
+        "feedback_fil": "Una: Angkop ang praktikal na tulong ng kapwa BHW na may kakayahan; sa supervisor tinitiyak ang opisyal na form, paraan, deadline at tatanggap. Ikalawa: Hindi sapat ang pagiging kakilala at hindi awtomatikong saklaw ng barangay captain ang opisyal na proseso ng ulat. Ikatlo: Maaaring magkamali ang hula; magpalinaw sa halip na magpasa nang hindi tiyak.",
+        "feedback_en": "First: Competent peer help is appropriate for practical steps; confirm the official form, method, deadline and recipient with the supervisor. Second: Familiarity is insufficient, and the barangay captain does not automatically own official reporting procedures. Third: Guessing can cause errors; clarify rather than submit while unsure."
       }
     }
   ],
@@ -56,12 +110,20 @@
     {
       "id": "m5.four-relationships",
       "read_ids": [
+        "contact-classify",
         "section-11",
-        "section-12"
+        "contact-professional",
+        "section-12",
+        "contact-verify",
+        "contact-application"
       ],
       "slide_ids": [
+        "slide-contact-classify",
         "slide-section-11",
-        "slide-section-12"
+        "slide-contact-professional",
+        "slide-section-12",
+        "slide-contact-verify",
+        "slide-contact-application"
       ],
       "source_ids": [
         "m5.four-relationships-source"
@@ -71,9 +133,10 @@
   "sources": [
     {
       "id": "m5.four-relationships-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "BHW Reference Manual — role descriptions, original PDF inspected 2026-10-06",
       "pdf_pages": [
-        15
+        15,
+        16
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     }
@@ -89,6 +152,57 @@
       "caption_en": "Draft discussion guide; review required.",
       "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
       "review_status": "approved"
+    },
+    {
+      "id": "malou-contact",
+      "path": "/training/bhw-1-5/malou-contact-421ede029814.png",
+      "content_hash": "421ede029814890c6ee718cab555a735ca0553010aca8ec271f5072234557db8",
+      "alt_fil": "Sa kathang-isip na coordination desk, inihahambing ni Malou ang mga blangkong request card habang kinukumpirma ang contact; katabi ang kapwa BHW at malapit ang health professional.",
+      "alt_en": "At a fictional coordination desk, Malou compares blank request cards while confirming a contact, beside a fellow BHW and near a health professional.",
+      "caption_fil": "Kathang-isip na eksena para sa pagpili ng contact.",
+      "caption_en": "Fictional contact-selection scene.",
+      "provenance": "Built-in imagegen, 2026-10-06, preserving approved Malou courtyard identity. No patient or actual official. Owner approved release on 2026-10-08.",
+      "review_status": "approved"
+    },
+    {
+      "id": "bhw-right-contact-story",
+      "alt_fil": "Anim na narrated beat: pinipili ni Malou ang contact ayon sa pangangailangan, saklaw, pagkaapurahan at lokal na proseso.",
+      "alt_en": "Six narrated beats: Malou chooses a contact by need, scope, urgency and local procedure.",
+      "caption_fil": "Anim na kathang-isip na beat na may salaysay at captions.",
+      "caption_en": "Six fictional narrated beats with captions.",
+      "provenance": "Original lesson1.5.6 Remotion animation with new built-in imagegen coordination desk scene preserving approved151Malou identity via reference PNG. Scene and media approved by owner for release on 2026-10-08. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Six reframed coordination desk views with animated contact-choice labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-23e14afd0664.mp4",
+          "content_hash": "23e14afd06641e8b1928b9cc0ecdd56867e4726ebfbc49c27991f4209255a6d0",
+          "duration_s": 60,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-37423f6b0acb.vtt",
+            "content_hash": "37423f6b0acbd16a44c76aa1a672b39804d28d9d36a29cb30bf50e4df7b8edab"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-4206b4e8c385-poster.jpg",
+            "content_hash": "4206b4e8c385d3127505c32534d8124f4d6d407b6c38a2fd8092bdf9f9e315ee"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-e4138a369ec4.mp4",
+          "content_hash": "e4138a369ec4387aa99c687c88e623f12026f90f259eafe462e866dcf53f6c64",
+          "duration_s": 54,
+          "captions": {
+            "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-dd545f508cc3.vtt",
+            "content_hash": "dd545f508cc3f09b28097279eb4a7db5a663f6d9e4bb04b4df16f248cbb50217"
+          },
+          "poster": {
+            "path": "/training/bhw-1-5/bhw-right-contact-gemini-en-146f95145292-poster.jpg",
+            "content_hash": "146f95145292cd6a027cd6590984b1af904a5d2049157e549338ce300bc4d4d2"
+          }
+        }
+      },
+      "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-4206b4e8c385-poster.jpg",
+      "content_hash": "4206b4e8c385d3127505c32534d8124f4d6d407b6c38a2fd8092bdf9f9e315ee"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-right-contact-story"
 }
