@@ -19,10 +19,23 @@
         "m6.clarify"
       ],
       "asset_ids": [
-        "gibs-portrait"
+        "gibs-portrait",
+        "clarify-open-question"
       ],
-      "takeaway_fil": "Bukas na tanong para sa kuwento; tiyak na tanong para sa paglilinaw ng impormasyon.",
-      "takeaway_en": "Use open questions for the story and focused questions to clarify information.",
+      "takeaway_fil": "Bukas na paanyaya muna; saka isang tiyak at walang paratang na tanong.",
+      "takeaway_en": "Start with an open invitation, then ask one focused question without blame.",
+      "check": null
+    },
+    {
+      "id": "clarify-detail",
+      "concept_ids": [
+        "m6.clarify"
+      ],
+      "asset_ids": [
+        "clarify-clarify-detail"
+      ],
+      "takeaway_fil": "Puwedeng iwasto ng kausap ang pagkaintindi mo; tanggapin ang pagwawasto.",
+      "takeaway_en": "The person can correct your understanding; accept the correction.",
       "check": null
     },
     {
@@ -30,9 +43,23 @@
       "concept_ids": [
         "m6.barriers"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang hadlang sa serbisyo ay mahalagang impormasyon, hindi dahilan para husgahan ang pamilya.",
-      "takeaway_en": "A barrier to services is important information, not a reason to judge a family.",
+      "asset_ids": [
+        "clarify-barriers"
+      ],
+      "takeaway_fil": "Ang hadlang sa serbisyo ay impormasyon; ihiwalay ang sariling kuwento sa sabi ng iba.",
+      "takeaway_en": "A service barrier is information; distinguish the person’s account from what others say.",
+      "check": null
+    },
+    {
+      "id": "confirm-summary",
+      "concept_ids": [
+        "m6.clarify"
+      ],
+      "asset_ids": [
+        "clarify-confirm-summary"
+      ],
+      "takeaway_fil": "Ibuod, humingi ng pagwawasto, ibalik ang inayos na buod at kumpirmahin ang susunod na hakbang.",
+      "takeaway_en": "Summarize, invite correction, check the corrected summary and confirm the next step.",
       "check": null
     },
     {
@@ -41,7 +68,9 @@
         "m6.clarify",
         "m6.barriers"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "clarify-practice"
+      ],
       "takeaway_fil": "Ang malinaw na tanong ay naglalabas ng impormasyon, hindi ng sagot na gusto nating marinig.",
       "takeaway_en": "A clear question elicits information rather than the answer we expect.",
       "check": null
@@ -52,7 +81,9 @@
         "m6.clarify",
         "m6.barriers"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "clarify-check"
+      ],
       "takeaway_fil": "Ang malinaw na tanong ay naglalabas ng impormasyon, hindi ng sagot na gusto nating marinig.",
       "takeaway_en": "A clear question elicits information rather than the answer we expect.",
       "check": {
@@ -73,8 +104,8 @@
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ang unang tanong ay nagpapaliwanag ng hadlang. Ang ikalawa ay ipinapalagay ang motibo; ang ikatlo ay nililimitahan agad ang usapan sa paalala. Pagkatapos ng sagot, linawin ang petsa o ibang kailangang detalye.",
-        "feedback_en": "The first question explores the barrier. The second assumes motivation; the third limits the conversation to reminders. After the response, clarify the date or another needed detail."
+        "feedback_fil": "Una: “Ano ang nakaabala sa iyo noong araw na iyon?” ay nagbibigay ng puwang para sa sariling paliwanag ni Liza. Ikalawa: “Ayaw mong pumunta?” ay ipinapalagay ang motibo bago marinig ang sagot. Ikatlo: ang tanong tungkol sa paalala ay nililimitahan agad ang kuwento sa isang posibleng dahilan. Sa kathang-isip na pagpapatuloy, sinabi ni Liza, “Walang magbabantay sa anak ko.” “Noong araw lang po na iyon?” paglilinaw ni Gibs. “Opo, wala ang kapatid ko noon.” “Noong araw na iyon, walang magbabantay dahil wala ang kapatid ninyo. Tama po ba?” Kinumpirma ni Liza ang buod. Pumayag siyang alamin muna nila ang kasalukuyang oras ng serbisyo; hindi pa nakumpirma ang petsa ng pagpunta. Walang ipinangakong appointment o childcare.",
+        "feedback_en": "First: “What got in the way that day?” gives Liza room to explain in her own words. Second: “You did not want to go?” assumes a motive before hearing her answer. Third: the reminder question immediately limits the story to one possible cause. In the fictional continuation, Liza says, “Nobody could watch my child.” “Only on that day?” Gibs clarifies. “Yes, my sister was away then.” “On that day, nobody could watch your child because your sister was away. Is that right?” Liza confirms the summary. She agrees to check the current service hours first; the date of her visit is still unconfirmed. No appointment or childcare is promised."
       }
     }
   ],
@@ -83,11 +114,15 @@
       "id": "m6.clarify",
       "read_ids": [
         "open-question",
+        "clarify-detail",
+        "confirm-summary",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-open-question",
+        "slide-clarify-detail",
+        "slide-confirm-summary",
         "slide-practice",
         "slide-check"
       ],
@@ -145,6 +180,112 @@
       "caption_en": "Gibs is the BHW throughout lessons 1.6.",
       "provenance": "New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.",
       "review_status": "approved"
+    },
+    {
+      "id": "clarify-open-question",
+      "path": "/training/bhw-1-6/gibs-clarify-open-question-d5839d9b594c.png",
+      "content_hash": "d5839d9b594c3a81822ac2275df072260f9be5438cc62098818c8d1077bc89e9",
+      "alt_fil": "Gibs: “Ano ang nangyari?” Liza: “Wala akong kasama.” Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+      "alt_en": "Gibs: “What happened?” Liza: “I have nobody with me.” Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+      "caption_fil": "Gibs: “Ano ang nangyari?” Liza: “Wala akong kasama.”",
+      "caption_en": "Gibs: “What happened?” Liza: “I have nobody with me.”",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data.",
+      "review_status": "approved"
+    },
+    {
+      "id": "clarify-clarify-detail",
+      "path": "/training/bhw-1-6/gibs-clarify-clarify-detail-6a08f5de2ab0.png",
+      "content_hash": "6a08f5de2ab0df84bf5525a969bd1ff273ae0b302c67b3bef1cedc6480eecd46",
+      "alt_fil": "Gibs: “Kasama sa biyahe?” Liza: “Hindi. Magbabantay sa anak.” Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+      "alt_en": "Gibs: “A travel companion?” Liza: “No. Someone to watch my child.” Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+      "caption_fil": "Gibs: “Kasama sa biyahe?” Liza: “Hindi. Magbabantay sa anak.”",
+      "caption_en": "Gibs: “A travel companion?” Liza: “No. Someone to watch my child.”",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data.",
+      "review_status": "approved"
+    },
+    {
+      "id": "clarify-barriers",
+      "path": "/training/bhw-1-6/gibs-clarify-barriers-ce8d0dba1592.png",
+      "content_hash": "ce8d0dba15921fda9fbd31ec38ba67d53adda76e2e58e59f72b5f7daa416a28a",
+      "alt_fil": "Sariling kuwento ni Liza at hiwalay na sabi ng kapitbahay. Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+      "alt_en": "Liza’s own account and the neighbor’s separately labelled statement. Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+      "caption_fil": "Sariling kuwento ni Liza at hiwalay na sabi ng kapitbahay.",
+      "caption_en": "Liza’s own account and the neighbor’s separately labelled statement.",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data.",
+      "review_status": "approved"
+    },
+    {
+      "id": "clarify-confirm-summary",
+      "path": "/training/bhw-1-6/gibs-clarify-confirm-summary-83530b1d8d03.png",
+      "content_hash": "83530b1d8d035045dfe8246ac196a2c0962e6b15bb8b8378816377064425ea8e",
+      "alt_fil": "Gibs: “Palagi bang mahirap?” Liza: “Kapag wala ang kapatid ko.” Tanggapin ang pagwawasto. Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+      "alt_en": "Gibs: “Is it always difficult?” Liza: “When my sister is away.” Accept the correction. Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+      "caption_fil": "Gibs: “Palagi bang mahirap?” Liza: “Kapag wala ang kapatid ko.” Tanggapin ang pagwawasto.",
+      "caption_en": "Gibs: “Is it always difficult?” Liza: “When my sister is away.” Accept the correction.",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data.",
+      "review_status": "approved"
+    },
+    {
+      "id": "clarify-practice",
+      "path": "/training/bhw-1-6/gibs-clarify-practice-ef68ebd8a556.png",
+      "content_hash": "ef68ebd8a5560474983d28a9789c65fb6bdd141b6c175a848d79472eb0eb1b3d",
+      "alt_fil": "Kathang-isip na BHW, Liza at tagamasid; question aid at blank checklist. Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+      "alt_en": "Fictional BHW, Liza and observer roles; question aid and blank checklist. Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+      "caption_fil": "Kathang-isip na BHW, Liza at tagamasid; question aid at blank checklist.",
+      "caption_en": "Fictional BHW, Liza and observer roles; question aid and blank checklist.",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data.",
+      "review_status": "approved"
+    },
+    {
+      "id": "clarify-check",
+      "path": "/training/bhw-1-6/gibs-clarify-check-800ef249584b.png",
+      "content_hash": "800ef249584beb6526d64136ccdf8ed12b60c57d75c086fd05f98a06649ac3fd",
+      "alt_fil": "Liza: “Hindi puwede noong araw na iyon.” Hindi pa pinipili ang sagot ni Gibs. Si Gibs ay lalaking BHW na may teal polo at nakasarang clipboard; si Liza ay may dilaw na blouse at asul na palda.",
+      "alt_en": "Liza: “That day did not work.” Gibs has not chosen a response yet. Gibs is a male BHW in a teal polo with a closed clipboard; Liza wears a yellow blouse and blue skirt.",
+      "caption_fil": "Liza: “Hindi puwede noong araw na iyon.” Hindi pa pinipili ang sagot ni Gibs.",
+      "caption_en": "Liza: “That day did not work.” Gibs has not chosen a response yet.",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data.",
+      "review_status": "approved"
+    },
+    {
+      "id": "communication-clarify-story",
+      "alt_fil": "Anim na narrated beat: nagtatanong si Gibs nang bukas, tumatanggap ng pagwawasto ni Liza at tinitiyak ang inayos na buod.",
+      "alt_en": "Six narrated beats: Gibs offers an open invitation, accepts Liza’s correction and checks the corrected summary.",
+      "caption_fil": "Paanyaya, neutral na paglilinaw at buod na maaaring iwasto.",
+      "caption_en": "Invitation, neutral clarification and a summary the person can correct.",
+      "provenance": "Original lesson1.6.2 Remotion animation with new built-in imagegen six distinct clarification scenes preserving new male Gibs identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Six distinct illustrated clarification actions with animated labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-6/communication-clarify-gemini-fil-15b173a48cfe.mp4",
+          "content_hash": "15b173a48cfe3b2ef4061479adcfd1c09042bc006fb356c074c2601baa423fbf",
+          "duration_s": 59,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-clarify-gemini-fil-6e32b1690e4d.vtt",
+            "content_hash": "6e32b1690e4d6c338078be6889dc1a4a43ba900fcb06e46b630a3698c5d0f93b"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-clarify-gemini-fil-c59590ab9a97-poster.jpg",
+            "content_hash": "c59590ab9a979c92c3e2432e375e3fa841fe55516675bf6920133e1687c161ff"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-6/communication-clarify-gemini-en-de39dd35b8a6.mp4",
+          "content_hash": "de39dd35b8a65ea7773497e90a2c7de87a813d1fdd345cf3d32ac8555c3fe9fa",
+          "duration_s": 58,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-clarify-gemini-en-abaad8628d30.vtt",
+            "content_hash": "abaad8628d3050ecf7e6335ba0872bdfee94fb4edb661b60e2610138cbc72283"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-clarify-gemini-en-d63365f73cd9-poster.jpg",
+            "content_hash": "d63365f73cd9fd083920d291bdfa8191d52b48b001b698b1c7e7a87d35055fa2"
+          }
+        }
+      },
+      "path": "/training/bhw-1-6/communication-clarify-gemini-fil-c59590ab9a97-poster.jpg",
+      "content_hash": "c59590ab9a979c92c3e2432e375e3fa841fe55516675bf6920133e1687c161ff"
     }
-  ]
+  ],
+  "featured_asset_id": "communication-clarify-story"
 }

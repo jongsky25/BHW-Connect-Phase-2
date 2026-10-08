@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   draft:
-    if: github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.event_name == 'workflow_dispatch'
+    if: (github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.event_name == 'workflow_dispatch') && !contains(github.event.pull_request.title, 'Approved release')
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:

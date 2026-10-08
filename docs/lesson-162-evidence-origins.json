@@ -1,0 +1,27 @@
+{
+  "status": "draft",
+  "runs": [
+    {
+      "run_id": 37756405379,
+      "artifact_id": 11541166136,
+      "zip_sha256": "a66f56801853c977d3a81644404dcdfc68acdcd325df176659fcf32197a12646",
+      "reason": "All selected fourteen full and fifty-six focused reviews verified against raw request/response bytes, with all prior raw archives/attempts retained. Source fetch returned NPC HTTP 403; a raw-and-passage-hash-verified captured source is now supplied as an explicitly labelled fallback.",
+      "contains_predecessor_archives": [
+        {
+          "run_id": 37755535746,
+          "artifact_id": 11539983428,
+          "zip_sha256": "cc758294adf01f497b6755a66262d89c0ab43d5d2e43374751f08de6acc20bfc",
+          "reason": "Nine Read-track voice retries plus the complete hash-verified first raw archive retained inside. Generation completed; verification stopped at a preservation-script typo corrected in successor source.",
+          "contains_predecessor_archives": [
+            {
+              "run_id": 37752162718,
+              "artifact_id": 11539527272,
+              "zip_sha256": "9b79a76ae69ae6ccb6a6df8721341988d3f70b40e86f61c269f35771f7cdb4af",
+              "reason": "First full generation and all 70 audio reviews; possible narrator voice changes retained before scoped retry. Source check failed on dynamic website token; source passages now pinned."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -297,7 +297,8 @@ export function ReferenceLessons(props: Props) {
   const teamworkTracks = lesson?.lesson_key === "bhw-teamwork" ? Object.values(props.narration?.[lesson.id] ?? {}) : [];
   const teamworkMinutes = teamworkTracks.length === 6 ? Math.ceil(teamworkTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const listeningRevision = lesson?.lesson_key === "communication-listen" && lesson.revision.assets.some(asset => asset.id === "gibs-liza");
-  const listeningTracks = listeningRevision ? Object.values(lessonNarration ?? {}) : [];
+  const clarificationRevision = lesson?.lesson_key === "communication-clarify" && lesson.revision.assets.some(asset => asset.id === "clarify-check");
+  const listeningTracks = (listeningRevision || clarificationRevision) ? Object.values(lessonNarration ?? {}) : [];
   const listeningMinutes = listeningTracks.length === 6 ? Math.ceil(listeningTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
   const videoLabel = narratedStory
@@ -557,7 +558,7 @@ export function ReferenceLessons(props: Props) {
             {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || lesson.lesson_key === "communication-explain") && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
-            {listeningRevision && !storyLayout && figures}
+            {(listeningRevision || clarificationRevision) && !storyLayout && figures}
             {practice}
             {revealSummary && <div
               className={storyLayout ? "reference-story-lines" :
@@ -580,7 +581,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && !clarificationRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -756,7 +757,7 @@ export function ReferenceLessons(props: Props) {
               {lesson.lesson_key === "communication-explain" && lesson.revision.assets.some(asset => asset.id === "explain-teach-back") ? ui(
                 "Tinatayang 13–16 minuto para sa sariling pag-aaral, ayon sa mas mahabang salaysay at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento at pag-ulit; hiwalay ang 120-minutong guided practice.",
                 "Estimated 13–16 minutes for independent study, using the longer narration and 3–6 minutes of practice. Optional story and replay are additional; the 120-minute guided practice is separate.",
-              ) : listeningRevision ? (listeningMinutes === null ? ui(
+              ) : (listeningRevision || clarificationRevision) ? (listeningMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 90-minutong guided practice.",
                 "Allow time for reading and practice; the 90-minute guided practice is separate.",
               ) : ui(

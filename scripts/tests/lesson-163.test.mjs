@@ -1,3 +1,4 @@
+import {communicationView} from '../lib/communication-integration.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
@@ -14,7 +15,7 @@ describe('lesson 1.6.3 empathy and clear explanations',()=>{
  });
  it('shows distinct hash-verified teaching actions and preserves the index2 repair check',()=>{
   expect(new Set(lesson.sections.map(s=>s.asset_ids.at(-1))).size).toBe(6);
-  for(const s of lesson.sections){expect(s.asset_ids).toHaveLength(s.id==='teach-back'?2:1);const a=lesson.assets.find(a=>a.id===s.asset_ids.at(-1));expect(sha(fs.readFileSync('public'+a.path))).toBe(a.content_hash);expect(a.review_status).toBe('draft');}
+  for(const s of lesson.sections){expect(s.asset_ids).toHaveLength(s.id==='teach-back'?2:1);const a=lesson.assets.find(a=>a.id===s.asset_ids.at(-1));expect(sha(fs.readFileSync('public'+a.path))).toBe(a.content_hash);expect(a.review_status).toBe(fs.existsSync('docs/lesson-163-owner-approval.json')?'approved':'draft');}
   const checkArt=lesson.assets.find(a=>a.id==='explain-check');for(const lang of ['fil','en'])expect(checkArt['caption_'+lang]).not.toBe(lesson.sections.at(-1)['takeaway_'+lang]);
   expect(lesson.sections[0].asset_ids[0]).toBe('gibs-portrait');const c=lesson.sections.at(-1).check;expect(c.correct_option_index).toBe(2);expect(c.options).toEqual(JSON.parse(b.target_files[leaf+'lesson.json']).sections.at(-1).check.options);
   for(const text of ['Una:','Ikalawa:','Ikatlo:','Sa wakas','wala pang kumpirmadong appointment'])expect(c.feedback_fil).toContain(text);
@@ -22,7 +23,7 @@ describe('lesson 1.6.3 empathy and clear explanations',()=>{
  });
  it('preserves protected history and verifies predecessor bytes before historical guards',async()=>{
   await import('../lesson-163-preservation.mjs');
-  const p=j('docs/lesson-163-proposal-receipt.json');for(const [file,e]of Object.entries(p.changed_existing_files)){expect(sha(fs.readFileSync(file))).toBe(e.proposed_sha256);expect(sha(beforeProposed163(file))).toBe(e.predecessor_sha256);}
+  const p=j('docs/lesson-163-proposal-receipt.json');for(const [file,e]of Object.entries(p.changed_existing_files)){expect(sha(communicationView(file,'reviewed163'))).toBe(e.proposed_sha256);expect(sha(beforeProposed163(file))).toBe(e.predecessor_sha256);}
  });
  it('retains one indicator, twelve guide headings and a120-minute/480-minute allocation',()=>{
   const co=j(leaf+'competency.json').observation_indicators;expect(co).toHaveLength(1);expect(co[0].objective_index).toBe(0);expect(Object.keys(co[0].levels)).toHaveLength(6);
@@ -35,6 +36,6 @@ describe('lesson 1.6.3 empathy and clear explanations',()=>{
   for(const lang of ['fil','en']){const tracks=narrationForLesson(m,'communication-explain',lang,sections);expect(Object.keys(tracks)).toEqual(ids);for(const id of ids)expect(tracks[id].src).toBe(b.target_narration.sections[id][lang].src);}
  });
  it('appends exactly two compositions without changing any previous registry byte',()=>{
-  const s=fs.readFileSync('remotion/src/Root.tsx','utf8');const prior=s.replace(/^import \{CommunicationExplainStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`communication-explain-[\s\S]+?      \)\)\}\n/,'');expect(prior).toBe(b.registry_source);
+  const s=communicationView('remotion/src/Root.tsx','reviewed163').toString();const prior=s.replace(/^import \{CommunicationExplainStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`communication-explain-[\s\S]+?      \)\)\}\n/,'');expect(prior).toBe(b.registry_source);
  });
 });
