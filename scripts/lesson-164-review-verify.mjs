@@ -18,6 +18,16 @@ for(const record of focus.records){
  if(!(record.full_audio_metrics.rms>0.002)||record.zones.some(z=>!(z.rms>0.001)))throw Error('Silent audio or zone');
  for(const excerpt of record.excerpts)if(!excerpt.model_response||excerpt.excerpt_sha256!==sha('.preview/lesson164-excerpts/'+excerpt.file))throw Error('Focused response or exact WAV excerpt missing');
 }
+// Bind every reported review to its raw actual-audio request and returned response.
+const rawDirectory='.preview/lesson164-raw';
+const raw=fs.readdirSync(rawDirectory).filter(p=>p.endsWith('.json')).map(p=>({file:rawDirectory+'/'+p,...j(rawDirectory+'/'+p)}));
+for(const r of raw){if(createHash('sha256').update(JSON.stringify(r.request)).digest('hex')!==r.request_sha256)throw Error('Raw request hash mismatch');if(r.response_body!==null&&createHash('sha256').update(r.response_body).digest('hex')!==r.response_sha256)throw Error('Raw response hash mismatch');}
+const text=value=>{if(typeof value==='string')return value;if(Array.isArray(value))return value.map(text).filter(Boolean).join('\n');if(!value||typeof value!=='object')return '';if(typeof value.output_text==='string')return value.output_text;if(value.type==='text'&&typeof value.text==='string')return value.text;return text(value.outputs??value.output??value.content??value.steps?.filter(s=>s.type==='model_output')??[]);};
+const successful=raw.filter(r=>r.response_status>=200&&r.response_status<300&&r.request?.model==='gemini-3.8-flash').map(r=>{const input=r.request.input.find(i=>i.type==='audio');return {...r,audio_sha256:input?createHash('sha256').update(Buffer.from(input.data,'base64')).digest('hex'):null,response_text:text(JSON.parse(r.response_body))};});
+for(const r of full.records)if(!successful.some(raw=>raw.audio_sha256===r.sha256&&raw.response_text===r.model_response))throw Error('Raw full review provenance missing: '+r.id);
+for(const r of focus.records)for(const e of r.excerpts)if(!successful.some(raw=>raw.audio_sha256===e.excerpt_sha256&&raw.response_text===e.model_response))throw Error('Raw focused review provenance missing: '+r.id+'/'+e.kind);
+const rawReceipt={requests:raw.length,failed_or_superseded_requests:raw.filter(r=>!(r.response_status>=200&&r.response_status<300)).length,full_responses_bound:14,focused_responses_bound:56,files:raw.map(r=>({file:r.file,sha256:sha(r.file)}))};
+fs.writeFileSync(out+'/lesson-164-raw-provenance.json',JSON.stringify(rawReceipt,null,2)+'\n');
 const ciPath=out+'/lesson-164-final-ci.json';
 if(fs.existsSync(ciPath)&&(j(ciPath).head_sha!==head||j(ciPath).status!=='passed'))throw Error('CI receipt does not match exact head');
 const report={status:'passed',source_commit:head,method:'Technical package completeness and exact media-byte evidence. Model assessment is supporting evidence, not human listening or approval.',browser:{file:browserPath,sha256:sha(browserPath),cases:80},actual_read_tracks:12,shipped_AAC_stories:2,full_model_reports:14,focused_WAV_reviews:56,earlier_media_and_selection:'verified by scoped media guard',normal_CI:fs.existsSync(ciPath)?j(ciPath):'Pending exact-head CI receipt',human_listening:'pending',owner_package_review:'pending',local_policy_SME_review:'pending'};

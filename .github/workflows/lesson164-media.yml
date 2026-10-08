@@ -22,43 +22,57 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+      - name: Generate only before evidence is frozen
+        id: scope
+        run: |
+          if test -f docs/lesson-164-evidence-origins.json; then
+            echo "generate=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "generate=true" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-node@v4
+        if: steps.scope.outputs.generate == 'true'
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
-      - run: npm ci
+      - if: steps.scope.outputs.generate == 'true'
+        run: npm ci
+      - if: steps.scope.outputs.generate == 'true'
+        run: npm ci
         working-directory: remotion
-      - run: npx remotion browser ensure
+      - if: steps.scope.outputs.generate == 'true'
+        run: npx remotion browser ensure
         working-directory: remotion
       - name: Bounded read-only published snapshot
+        if: steps.scope.outputs.generate == 'true'
         env:
           KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
           KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
           KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
         run: node scripts/lesson-164-published-snapshot.mjs
       - name: Generate only target draft media and preserve old media
+        if: steps.scope.outputs.generate == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON164_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-164-record-fetch.mjs'
         run: node scripts/lesson-164-media-build.mjs
       - name: Full review of actual Read MP3 and shipped AAC
-        if: always()
+        if: always() && steps.scope.outputs.generate == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON164_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-164-record-fetch.mjs'
         run: node scripts/lesson-164-audio-review.mjs
       - name: Decode and review fifty-six focused excerpts
-        if: always()
+        if: always() && steps.scope.outputs.generate == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON164_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-164-record-fetch.mjs'
         run: node scripts/lesson-164-audio-focus.mjs
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.scope.outputs.generate == 'true'
         with:
           name: lesson164-generated-evidence
           path: |

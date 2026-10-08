@@ -4,5 +4,113 @@
   "policy_SME_review": "pending",
   "model_analysis": "Full and focused analysis of actual bytes is supporting evidence, not human listening or approval.",
   "speech_aliases": "Target-only Lisa/Gibz, display Liza/Gibs retained. Actual pronunciation and narrator timbre require review.",
-  "known_prior_concerns": "1.6.1 had repeated timbre concerns and conflicting full/excerpt judgments; no inherited clearance claimed."
+  "known_prior_concerns": "1.6.1 had repeated timbre concerns and conflicting full/excerpt judgments; no inherited clearance claimed.",
+  "full_reports": 14,
+  "focused_reports": 56,
+  "actual_findings": "Full reports describe complete audible endings and preserved attribution/negation. Filipino sources and relevant-detail full reports allege alternating timbres. Focused reports allege voice shifts in Filipino practice and English check, and name variations in Filipino verify-gap/story and English check/sources. Other full/focused judgments conflict. These are unconfirmed model assessments; no repair or synthesis pass is claimed to clear them.",
+  "unresolved_model_flags": [
+    {
+      "source": "read-practice-fil",
+      "excerpt": "critical",
+      "excerpt_start_seconds": 3.06,
+      "excerpt_sha256": "ad6dca40ad531101629b2f8add0164b3ece79917328384cbdf4ec9a2f51f6370",
+      "model_possible_defects": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:06.10",
+          "description": "Audio switches abruptly from a male narrator to a female narrator between sentences."
+        }
+      ],
+      "uncertainty": "Low; all speech tokens and acoustic characteristics are clearly discernible."
+    },
+    {
+      "source": "read-verify-gap-fil",
+      "excerpt": "critical",
+      "excerpt_start_seconds": 9.12,
+      "excerpt_sha256": "fb4cbec505042ccbe282cbf9fdd150f66a3ccbd5630f6051b8198f97a9e0f3ad",
+      "model_possible_defects": [
+        {
+          "timestamp": "00:07.5 - 00:08.3",
+          "issue": "Pronunciation of 'Liza' uses a /z/ sound ([ˈliː.zɐ]) instead of the specified 'LEE-sa' ([ˈliː.sɐ])."
+        }
+      ],
+      "uncertainty": "None; speech is clear and easily discernible."
+    },
+    {
+      "source": "shipped-story-fil",
+      "excerpt": "head",
+      "excerpt_start_seconds": 0,
+      "excerpt_sha256": "932f3b0c119c2c9c7b08023a975168444c2bd777230abd94e9131281147f999e",
+      "model_possible_defects": [
+        {
+          "timestamp": "00:10.5",
+          "issue": "Gibbs vowel sound deviates slightly toward [ɡeɪbz] rather than short [ɡɪbz]."
+        }
+      ],
+      "uncertainty": "Vowel coloring on the second 'Gibbs' (00:10.5) may be perceived as either [ɡeɪbz] or an open [ɡɛbz]/[ɡeːbz] depending on dialectal variation."
+    },
+    {
+      "source": "shipped-story-fil",
+      "excerpt": "critical",
+      "excerpt_start_seconds": 0,
+      "excerpt_sha256": "932f3b0c119c2c9c7b08023a975168444c2bd777230abd94e9131281147f999e",
+      "model_possible_defects": [
+        {
+          "type": "mispronunciation",
+          "timestamp": "00:01",
+          "description": "'Liza' pronounced as [ˈlaɪ.za] instead of expected [ˈli.sa]."
+        },
+        {
+          "type": "inconsistent_pronunciation",
+          "timestamp": "00:10",
+          "description": "'Gibbs' pronounced as 'Geybs' [ɡeɪbz] compared to [ɡɪbs] at 00:00."
+        }
+      ],
+      "uncertainty": "Low. Speech is cleanly recorded and enunciated."
+    },
+    {
+      "source": "read-check-en",
+      "excerpt": "head",
+      "excerpt_start_seconds": 0,
+      "excerpt_sha256": "da66fbcae6c431a5ef7807016361cc80361d44b21c86a77d1b9be87ca69f6f63",
+      "model_possible_defects": [
+        {
+          "type": "pronunciation_mismatch",
+          "timestamp": "00:05.35",
+          "details": "'Liza' pronounced as /ˈlaɪzə/ instead of requested /ˈliːsə/ (LEE-sa)."
+        }
+      ],
+      "uncertainty": "None."
+    },
+    {
+      "source": "read-check-en",
+      "excerpt": "critical",
+      "excerpt_start_seconds": 1.94,
+      "excerpt_sha256": "d3b8349f73c8d6879b64c07730c0cc7e76998208ffbbfb1c01bbcc2b209071d4",
+      "model_possible_defects": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:08.30",
+          "description": "Speaker abruptly changes from male to female mid-excerpt between sentences."
+        }
+      ],
+      "uncertainty": "None detected."
+    },
+    {
+      "source": "read-sources-en",
+      "excerpt": "body",
+      "excerpt_start_seconds": 3.54,
+      "excerpt_sha256": "082e035863e3addb236725a8436e8f3880c3687f75df1cf5d97e14ada5af37a0",
+      "model_possible_defects": [
+        {
+          "type": "pronunciation_mismatch",
+          "timestamp": "00:03.00 - 00:03.50",
+          "detail": "'Liza' is pronounced with a diphthong /ˈlaɪzə/ instead of the requested 'LEE-sa' (/ˈliːsə/)."
+        }
+      ],
+      "uncertainty": "Low; audio is clear with no background noise interference."
+    }
+  ],
+  "human_required_review": "Listen to all twelve shipped Read MP3s and both shipped AAC stories, especially the attached exact flagged excerpts. Confirm character names, one narrator, role distinctions, negation and complete endings before release.",
+  "release_clearance": false
 }

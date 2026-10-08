@@ -34887,472 +34887,1198 @@
       "sections": {
         "check": {
           "en": {
-            "src": "/training/audio/06-komunikasyon/communication-record/check.en.2e5217dea0f9.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-record/check.en.e8ce6fa508a4.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "2e5217dea0f9e4c099484159e51d223605050f499bbc52a84cbeb37cd6b4eb41",
-            "sha256": "970eeba4294e2492068cf81cc040ff76a1b597b0f02e02b9a09fdbdf4db14308",
-            "duration_seconds": 17.293,
+            "content_hash": "e8ce6fa508a42f7f7ebb92943ee564308a8ff74c6d512fd49693c98d196af2d3",
+            "sha256": "ff61e519a38033bf3bf4313eca97a3bbb5afb904676840deb584d5bd602a26cf",
+            "duration_seconds": 40.934,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Choose the next step",
                 "start_ms": 0,
-                "end_ms": 2000
+                "end_ms": 1640
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Choose an answer and explain why before viewing the feedback.",
-                "start_ms": 2300,
-                "end_ms": 6780
+                "text": "Return to the initial scene, before clarification: Liza reports a canceled schedule; the neighbor says she is not interested.",
+                "start_ms": 1940,
+                "end_ms": 10020
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Then compare it with your own practice attempt.",
-                "start_ms": 7080,
-                "end_ms": 10600
+                "text": "No card has been shown and Gibs has not seen the authorized attendance record.",
+                "start_ms": 10320,
+                "end_ms": 15720
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Which initial note is appropriate?",
+                "start_ms": 16020,
+                "end_ms": 18260
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Choose and explain your reason before viewing feedback and the corrected note.",
+                "start_ms": 18560,
+                "end_ms": 23600
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Then compare it with your practice attempt.",
+                "start_ms": 23900,
+                "end_ms": 26420
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "A screen choice, lesson completion or watching the optional story does not prove that you can perform the task.",
+                "start_ms": 26720,
+                "end_ms": 34680
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Clear sources and explicit gaps prevent a guess becoming an official record.",
-                "start_ms": 10900,
-                "end_ms": 17220
+                "start_ms": 34980,
+                "end_ms": 40860
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-record/check.fil.37d60632cbde.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-record/check.fil.695d5a2fd3a1.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "37d60632cbde57f1a93aaa44b3c99b4a1f80a6a87f2a7d259bef862cf79f2d5f",
-            "sha256": "da80ca02c98d69d74a845ae91f3ab4936a660f6e187b921fd0d60425c370bf80",
-            "duration_seconds": 21.525,
+            "content_hash": "695d5a2fd3a10517ee1bc91975eec389501c5c90bd0439422c7bd1e573bc67a8",
+            "sha256": "ba62fc0e9ffeead50ded44d210db613955e182995a7e4818790b5fb35e786989",
+            "duration_seconds": 48.118,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Piliin ang susunod na hakbang",
                 "start_ms": 0,
-                "end_ms": 3120
+                "end_ms": 2440
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
-                "start_ms": 3420,
-                "end_ms": 8620
+                "text": "Bumalik sa unang tagpo, bago ang paglilinaw: sinabi ni Liza na kinansela ang schedule; sabi ng kapitbahay, hindi siya interesado.",
+                "start_ms": 2740,
+                "end_ms": 12100
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
-                "start_ms": 8920,
-                "end_ms": 13480
+                "text": "Walang card na naipakita at hindi pa nakita ni Gibs ang awtorisadong attendance record.",
+                "start_ms": 12400,
+                "end_ms": 18440
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Aling paunang tala ang angkop?",
+                "start_ms": 18740,
+                "end_ms": 20860
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Piliin at ipaliwanag ang dahilan bago tingnan ang feedback at ang iwinastong tala.",
+                "start_ms": 21160,
+                "end_ms": 26920
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Pagkatapos, ihambing sa sarili mong pagsasanay.",
+                "start_ms": 27220,
+                "end_ms": 30980
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ang pagpili sa screen, pagkumpleto ng aralin o panonood ng opsyonal na kuwento ay hindi patunay na kaya mo nang gawin ang gawain.",
+                "start_ms": 31280,
+                "end_ms": 40640
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
-                "start_ms": 13780,
-                "end_ms": 21460
+                "start_ms": 40940,
+                "end_ms": 48060
               }
             ]
           }
         },
         "conflicting-accounts": {
           "en": {
-            "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.en.d0ca72e8d0a2.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.en.c93fc9fe955a.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "d0ca72e8d0a20adaecc3dfd9ca5adcbf88b1ebaaa63c41dfd7d2e4bb428f92a6",
-            "sha256": "85787805b374c6ff2ce8e7a23c541b5a2a185438dcbdc81918fd841b91b323c4",
-            "duration_seconds": 34.873,
+            "content_hash": "c93fc9fe955a9856e52fcf93a37d59ca5493abcb279b4f6a3e9cdeeb89a2b6ee",
+            "sha256": "500f2adf6b1906c0341afdfcd68ae204b4e70bd2e530ee2c54f6fc7e053ac9ce",
+            "duration_seconds": 64.496,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "When accounts differ",
                 "start_ms": 0,
-                "end_ms": 1960
+                "end_ms": 1600
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Liza says the appointment was canceled; a neighbor says she was not interested.",
-                "start_ms": 2260,
-                "end_ms": 8260
+                "text": "Liza says: “The schedule was canceled.”",
+                "start_ms": 1900,
+                "end_ms": 4980
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Do not choose a story because one voice is louder.",
-                "start_ms": 8560,
-                "end_ms": 12920
+                "text": "The neighbor says: “She did not want to go.”",
+                "start_ms": 5280,
+                "end_ms": 8200
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ask Liza, check the authorized record and identify the source of each detail.",
-                "start_ms": 13220,
-                "end_ms": 19460
+                "text": "Gibs does not choose a story because one voice is louder.",
+                "start_ms": 8500,
+                "end_ms": 12460
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "If uncertainty remains, tell the health team.",
-                "start_ms": 19760,
-                "end_ms": 23360
+                "text": "“What do you mean by canceled?”",
+                "start_ms": 12760,
+                "end_ms": 15200
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Respecting a person and being careful with evidence can happen together.",
-                "start_ms": 23660,
-                "end_ms": 29100
+                "text": "he asks Liza.",
+                "start_ms": 15500,
+                "end_ms": 17060
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "“I could not go when my sister was away.",
+                "start_ms": 17360,
+                "end_ms": 20240
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "I am not sure whether the center canceled it,” she clarifies.",
+                "start_ms": 20540,
+                "end_ms": 24420
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Gibs summarizes: “You could not go when your sister was away; the schedule status is still uncertain.",
+                "start_ms": 24720,
+                "end_ms": 31920
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Is that right?”",
+                "start_ms": 32220,
+                "end_ms": 33660
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "“Yes,” Liza replies.",
+                "start_ms": 33960,
+                "end_ms": 36080
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Record this as Liza’s clarification, keeping the source of the first statement and its correction clear.",
+                "start_ms": 36380,
+                "end_ms": 42460
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "If the neighbor’s report is relevant to the task, attribute it to the neighbor; it is not proof of Liza’s motive.",
+                "start_ms": 42760,
+                "end_ms": 49600
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Trust and careful verification work together.",
+                "start_ms": 49900,
+                "end_ms": 53100
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "Do not label a resident dishonest or noncompliant merely because accounts differ.",
+                "start_ms": 53400,
+                "end_ms": 59440
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "When accounts differ, clarify and verify before deciding.",
-                "start_ms": 29400,
-                "end_ms": 34800
+                "start_ms": 59740,
+                "end_ms": 64420
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.fil.d377496d80c4.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.fil.4fd6e95f01b2.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "d377496d80c4e8c7fdae9637a4e0afedb318156c8a0f36017c2bf4cb3fda3459",
-            "sha256": "a3e9c5036553934a1bf7109fa9efc4bf448d6bcf97df912188a735d921766163",
-            "duration_seconds": 41.273,
+            "content_hash": "4fd6e95f01b22999d0d2f5f5fc2ca75f55d5a8be925a6ce4661c94dd524ae45e",
+            "sha256": "e4aecb1d2d121d846b154e41c6f9152a241144a399a2d78f01bc7ee9815b1063",
+            "duration_seconds": 72.725,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Kapag may magkaibang kuwento",
                 "start_ms": 0,
-                "end_ms": 2800
+                "end_ms": 2480
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Sabi ni Liza, kinansela ang schedule; sabi ng kapitbahay, hindi siya interesado.",
-                "start_ms": 3100,
-                "end_ms": 10580
+                "text": "Sabi ni Liza: “Kinansela ang schedule.”",
+                "start_ms": 2780,
+                "end_ms": 6500
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Huwag pumili ng kuwento dahil mas malakas ang boses.",
-                "start_ms": 10880,
-                "end_ms": 15000
+                "text": "Sabi ng kapitbahay: “Ayaw niyang pumunta.”",
+                "start_ms": 6800,
+                "end_ms": 10120
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Tanungin si Liza, suriin ang awtorisadong tala at itala ang pinagmulan ng bawat detalye.",
-                "start_ms": 15300,
-                "end_ms": 23660
+                "text": "Hindi pipili si Gibs dahil mas malakas ang boses ng isa.",
+                "start_ms": 10420,
+                "end_ms": 14260
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Kung hindi pa malinaw, sabihin iyon sa health team.",
-                "start_ms": 23960,
-                "end_ms": 28040
+                "text": "“Ano po ang ibig ninyong sabihin sa kinansela?”",
+                "start_ms": 14560,
+                "end_ms": 18040
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Ang tiwala sa kausap at pagiging maingat sa ebidensya ay maaaring sabay na gawin.",
-                "start_ms": 28340,
-                "end_ms": 34620
+                "text": "tanong niya kay Liza.",
+                "start_ms": 18340,
+                "end_ms": 19900
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "“Hindi ako nakapunta noong wala ang kapatid ko.",
+                "start_ms": 20200,
+                "end_ms": 23280
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hindi ko tiyak kung kinansela ng center,” paglilinaw niya.",
+                "start_ms": 23580,
+                "end_ms": 27780
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Ibinuod ni Gibs: “Hindi kayo nakapunta nang wala ang kapatid ninyo; hindi pa tiyak ang status ng schedule.",
+                "start_ms": 28080,
+                "end_ms": 36160
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Tama po ba?”",
+                "start_ms": 36460,
+                "end_ms": 37820
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "“Opo,” sagot ni Liza.",
+                "start_ms": 38120,
+                "end_ms": 40360
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Itala ang paglilinaw bilang sinabi ni Liza at panatilihing malinaw ang pinagmulan ng unang pahayag at pagwawasto.",
+                "start_ms": 40660,
+                "end_ms": 48540
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Kung mahalaga sa gawain ang ulat ng kapitbahay, iugnay ito sa kanya; hindi ito katunayan ng motibo ni Liza.",
+                "start_ms": 48840,
+                "end_ms": 56600
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Ang pagtitiwala at maingat na pagberipika ay magkasabay.",
+                "start_ms": 56900,
+                "end_ms": 61020
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "Huwag tawaging sinungaling o hindi sumusunod ang residente dahil lamang magkaiba ang kuwento.",
+                "start_ms": 61320,
+                "end_ms": 67440
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Kapag magkaiba ang kuwento, maglinaw at magberipika bago magpasya.",
-                "start_ms": 34920,
-                "end_ms": 41200
+                "start_ms": 67740,
+                "end_ms": 72660
               }
             ]
           }
         },
         "practice": {
           "en": {
-            "src": "/training/audio/06-komunikasyon/communication-record/practice.en.137d49670c1a.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-record/practice.en.e0435701e2cd.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "137d49670c1a44e357f26ca8a2bdf65052f27f9083c9e0296340c5cb65c5540d",
-            "sha256": "e888f29933b9ec48b41a75e4462591afaff436a05dd0ae442edbd00d324f41dc",
-            "duration_seconds": 37.695,
+            "content_hash": "e0435701e2cd8a54a0dc24a1fffdec5f9c3c75cece3792c149af0523189ed48a",
+            "sha256": "75f1569f177e58991f3323cd3e77796d918d1fc3b96de4e17f5a39d71509629f",
+            "duration_seconds": 75.572,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Try it, then repeat",
                 "start_ms": 0,
-                "end_ms": 2560
+                "end_ms": 2280
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Draw three boxes: “Reported,” “Observed,” and “Unconfirmed.”",
-                "start_ms": 2860,
-                "end_ms": 9180
+                "text": "First draw three boxes: “Reported,” “Observed,” and “Unconfirmed.”",
+                "start_ms": 2580,
+                "end_ms": 8380
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Sort Liza’s details.",
-                "start_ms": 9480,
-                "end_ms": 11760
+                "text": "Split the first box into “Liza reports” and “neighbor reports” to make the recording aid’s four columns.",
+                "start_ms": 8680,
+                "end_ms": 16480
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Add: “Verify the date against the authorized record with the midwife.”",
-                "start_ms": 12060,
-                "end_ms": 18020
+                "text": "Sort the fictional source cards into the correct column.",
+                "start_ms": 16780,
+                "end_ms": 20420
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ask a partner to check for guesses or diagnoses.",
-                "start_ms": 18320,
-                "end_ms": 22480
+                "text": "Write a short note containing Liza’s clarification and one step to verify the date.",
+                "start_ms": 20720,
+                "end_ms": 26280
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Alone, underline each detail’s source.",
-                "start_ms": 22780,
-                "end_ms": 26620
+                "text": "Check it for guesses, diagnoses, judgments or irrelevant details.",
+                "start_ms": 26580,
+                "end_ms": 32100
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "In your next record, mark what remains unconfirmed.",
-                "start_ms": 26920,
-                "end_ms": 31040
+                "text": "In a triad, rotate as BHW, resident and observer through three rounds so everyone attempts the BHW role.",
+                "start_ms": 32400,
+                "end_ms": 42080
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "The observer records exact evidence and one step to repeat; this is feedback, not a facilitator grade.",
+                "start_ms": 42380,
+                "end_ms": 50220
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Alone, sort paper cards, underline sources and correct the note.",
+                "start_ms": 50520,
+                "end_ms": 55800
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Cards may be read aloud or used in the preferred language.",
+                "start_ms": 56100,
+                "end_ms": 59820
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "No internet, projector, real resident record or upload is needed.",
+                "start_ms": 60120,
+                "end_ms": 66040
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Repeat the difficult part before continuing.",
+                "start_ms": 66340,
+                "end_ms": 69140
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Clear sources and explicit gaps prevent a guess becoming an official record.",
-                "start_ms": 31340,
-                "end_ms": 37620
+                "start_ms": 69440,
+                "end_ms": 75520
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-record/practice.fil.7e71c8321ea6.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-record/practice.fil.87f74220d8cd.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "7e71c8321ea60888b40122d73270c08ea2029306d9390c7950646761dd5ad6e0",
-            "sha256": "60a1771fabe65c195cdb2cab9e92c0a8aba67ed78f7d265a61ecef9c07c11c86",
-            "duration_seconds": 44.617,
+            "content_hash": "87f74220d8cd076586cf9827a46b42099d5918b9a597dc0186728c935cce9742",
+            "sha256": "9ea2adb6ff5b57769a7ce73c57e7874364977b73f92dbc1a2862df57e684944e",
+            "duration_seconds": 86.518,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Subukan, saka ulitin",
                 "start_ms": 0,
-                "end_ms": 2880
+                "end_ms": 2760
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Gumawa ng tatlong kahon: “Sinabi,” “Nakita,” at “Hindi pa tiyak.”",
-                "start_ms": 3180,
-                "end_ms": 9660
+                "text": "Gumawa muna ng tatlong kahon: “Sinabi,” “Nakita,” at “Hindi pa tiyak.”",
+                "start_ms": 3060,
+                "end_ms": 9140
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ilagay ang detalye ni Liza sa tamang kahon.",
-                "start_ms": 9960,
-                "end_ms": 13840
+                "text": "Sa unang kahon, paghiwalayin ang “ayon kay Liza” at “ayon sa kapitbahay” upang magkaroon ng apat na hanay sa recording aid.",
+                "start_ms": 9440,
+                "end_ms": 19120
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Idagdag: “Beripikahin ang petsa sa awtorisadong tala kasama ang midwife.”",
-                "start_ms": 14140,
-                "end_ms": 20780
+                "text": "Ilagay ang kathang-isip na source cards sa tamang hanay.",
+                "start_ms": 19420,
+                "end_ms": 23500
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ipasuri sa kapareha kung may hula o diagnosis.",
-                "start_ms": 21080,
-                "end_ms": 25920
+                "text": "Gumawa ng maikling tala na may paglilinaw ni Liza at isang hakbang sa pagberipika ng petsa.",
+                "start_ms": 23800,
+                "end_ms": 31520
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Kung mag-isa, salungguhitan ang pinagmulan ng bawat detalye.",
-                "start_ms": 26220,
-                "end_ms": 31500
+                "text": "Ipasuri kung may hula, diagnosis, husga o hindi kaugnay na detalye.",
+                "start_ms": 31820,
+                "end_ms": 37980
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Sa susunod na pagtala, markahan ang hindi pa natiyak.",
-                "start_ms": 31800,
-                "end_ms": 36480
+                "text": "Sa triad, magpalit bilang BHW, residente at tagamasid sa tatlong round upang lahat ay sumubok bilang BHW.",
+                "start_ms": 38280,
+                "end_ms": 48120
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Itala ng tagamasid ang eksaktong ebidensya at isang kailangang ulitin; feedback ito, hindi grado ng facilitator.",
+                "start_ms": 48420,
+                "end_ms": 57100
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Kung mag-isa, iayos ang papel na cards, salungguhitan ang pinagmulan at iwasto ang tala.",
+                "start_ms": 57400,
+                "end_ms": 64320
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Maaaring basahin nang malakas ang cards o gumamit ng gustong wika.",
+                "start_ms": 64620,
+                "end_ms": 69100
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Walang internet, projector, totoong resident record o upload na kailangan.",
+                "start_ms": 69400,
+                "end_ms": 75440
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Ulitin ang mahirap na bahagi bago magpatuloy.",
+                "start_ms": 75740,
+                "end_ms": 78940
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
-                "start_ms": 36780,
-                "end_ms": 44540
+                "start_ms": 79240,
+                "end_ms": 86440
+              }
+            ]
+          }
+        },
+        "relevant-detail": {
+          "en": {
+            "src": "/training/audio/06-komunikasyon/communication-record/relevant-detail.en.11baffeb4bf5.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "11baffeb4bf57c03c17d29e5d8ad0f5c302a3d387304d634b00df2776c5451e1",
+            "sha256": "708b0871ff1151adebe5b9b549af96ee5198f3e47e302aab258e1da25c1e8a89",
+            "duration_seconds": 67.971,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Only relevant details",
+                "start_ms": 0,
+                "end_ms": 2160
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "“This is for an authorized household profile and health-service planning,” Gibs explains.",
+                "start_ms": 2460,
+                "end_ms": 8580
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "“Only relevant information will be used by the authorized health team under local policy.",
+                "start_ms": 8880,
+                "end_ms": 14720
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "May we clarify the barrier to getting there?”",
+                "start_ms": 15020,
+                "end_ms": 18100
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Liza chooses Filipino and a quieter place.",
+                "start_ms": 18400,
+                "end_ms": 22120
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "The access barrier is relevant to this task; gossip about the neighbor’s debt is not.",
+                "start_ms": 22420,
+                "end_ms": 28100
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Real names or addresses are unnecessary on the rehearsal sheet.",
+                "start_ms": 28400,
+                "end_ms": 32560
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Do not guess missing entries on an official form.",
+                "start_ms": 32860,
+                "end_ms": 36580
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Explaining information use is not a promise of absolute secrecy.",
+                "start_ms": 36880,
+                "end_ms": 41720
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "For questions about correction, access or keeping records, ask the authorized custodian about the actual local process; do not invent a universal form or deletion date.",
+                "start_ms": 42020,
+                "end_ms": 54300
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "If immediate help is needed, follow the local process and do not delay it to finish the interview.",
+                "start_ms": 54600,
+                "end_ms": 61080
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Record only what the authorized task needs; explain its use and follow local policy.",
+                "start_ms": 61380,
+                "end_ms": 67900
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/06-komunikasyon/communication-record/relevant-detail.fil.b93d3bd10482.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "b93d3bd104828bd02ac60a149831beb9cb67d9e88d924c3599db9986a8438e4c",
+            "sha256": "51a41ca5570ba9eda16a5ba151c5d5fa943626949f8dfa1a3d360148b423b7ae",
+            "duration_seconds": 73.535,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Kaugnay na detalye lamang",
+                "start_ms": 0,
+                "end_ms": 2080
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "“Para po ito sa awtorisadong household profile at pagpaplano ng serbisyong pangkalusugan,” paliwanag ni Gibs.",
+                "start_ms": 2380,
+                "end_ms": 9220
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "“Kaugnay na impormasyon lamang ang gagamitin ng awtorisadong health team ayon sa lokal na patakaran.",
+                "start_ms": 9520,
+                "end_ms": 15600
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Maaari po ba nating linawin ang hadlang sa pagpunta?”",
+                "start_ms": 15900,
+                "end_ms": 20060
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Pinili ni Liza ang Filipino at isang mas tahimik na lugar.",
+                "start_ms": 20360,
+                "end_ms": 24440
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ang hadlang sa pagpunta ay kaugnay ng gawaing ito; ang tsismis tungkol sa utang ng kapitbahay ay hindi.",
+                "start_ms": 24740,
+                "end_ms": 32460
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Hindi kailangan ang tunay na pangalan o address sa papel ng pagsasanay.",
+                "start_ms": 32760,
+                "end_ms": 37120
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Huwag hulaan ang patlang sa opisyal na form.",
+                "start_ms": 37420,
+                "end_ms": 40220
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Hindi pangako ng ganap na lihim ang paliwanag sa paggamit.",
+                "start_ms": 40520,
+                "end_ms": 44840
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Kung may tanong tungkol sa pagwawasto, access o pag-iingat ng rekord, itanong ang aktuwal na lokal na proseso sa awtorisadong tagapangasiwa; huwag mag-imbento ng iisang form o petsa ng pagbura.",
+                "start_ms": 45140,
+                "end_ms": 58380
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Kung kailangan ng agarang tulong, sundin ang lokal na proseso at huwag itong ipagpaliban para matapos ang interview.",
+                "start_ms": 58680,
+                "end_ms": 65600
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Itala lamang ang kailangan sa awtorisadong gawain; ipaliwanag ang gamit at sundin ang lokal na patakaran.",
+                "start_ms": 65900,
+                "end_ms": 73460
               }
             ]
           }
         },
         "sources": {
           "en": {
-            "src": "/training/audio/06-komunikasyon/communication-record/sources.en.fa812da9b7ef.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-record/sources.en.3260609f5d0d.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "fa812da9b7ef762cd81e14761382d7683a8f442b527c75ea88fbdebaa6847674",
-            "sha256": "14756778b2b532fe302096323ba60e9b689cc49bb7d871f668d9641cd447900c",
-            "duration_seconds": 58.854,
+            "content_hash": "3260609f5d0d1b9837628121f8ed584af43d75870d6c79c49e8921fcd8bdb767",
+            "sha256": "8a9898c46dfcb3153a4aeada5adc0896f5e9dbb91ae307021f09be61ea4fe879",
+            "duration_seconds": 72.699,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Reported, observed, and unconfirmed",
                 "start_ms": 0,
-                "end_ms": 4880
+                "end_ms": 3240
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "BHW Gibs is asking Liza, 29, about a missed health-center visit.",
-                "start_ms": 5180,
-                "end_ms": 11700
+                "text": "Gibs, a male BHW, visits Liza, 29, for an authorized household profile.",
+                "start_ms": 3540,
+                "end_ms": 10540
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Gibs has not yet checked the authorized attendance record.",
-                "start_ms": 12000,
-                "end_ms": 16560
+                "text": "He asks permission and listens first.",
+                "start_ms": 10840,
+                "end_ms": 13560
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Liza says no one can stay with her two children.",
-                "start_ms": 16860,
-                "end_ms": 20380
+                "text": "Liza says: “Getting there is difficult when nobody can look after my two children.”",
+                "start_ms": 13860,
+                "end_ms": 19220
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Gibs notices the appointment card is unavailable, but that does not prove there was no appointment.",
-                "start_ms": 20680,
-                "end_ms": 27600
+                "text": "The neighbor says: “She is not interested.”",
+                "start_ms": 19520,
+                "end_ms": 23080
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "In the notes, separate “Liza reports” from direct observations.",
-                "start_ms": 27900,
-                "end_ms": 33420
+                "text": "This rehearsal is not an actual record.",
+                "start_ms": 23380,
+                "end_ms": 26260
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Clarify an uncertain date; mark information “not yet confirmed” when a record still needs checking.",
-                "start_ms": 33720,
-                "end_ms": 40920
+                "text": "Separate four columns: Liza’s report, the neighbor’s report, direct observations, and unconfirmed details.",
+                "start_ms": 26560,
+                "end_ms": 35280
               },
               {
                 "zone": "body",
                 "index": 6,
-                "text": "Assessing information means checking its source and relevance, without assigning a diagnosis or judging the person.",
-                "start_ms": 41220,
-                "end_ms": 49740
+                "text": "When the appointment card is requested, Gibs observes that no card is shown during the conversation.",
+                "start_ms": 35580,
+                "end_ms": 41620
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "This does not prove that Liza had no appointment or did not attend.",
+                "start_ms": 41920,
+                "end_ms": 46640
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Gibs has not seen the authorized attendance record.",
+                "start_ms": 46940,
+                "end_ms": 50580
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "The visit date and status remain unconfirmed.",
+                "start_ms": 50880,
+                "end_ms": 54440
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "A nod, silence or glance toward the door is only an observation, not proof of agreement, refusal, feelings or a diagnosis.",
+                "start_ms": 54740,
+                "end_ms": 64940
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "When assessing information, distinguish reports, observations and details still requiring verification.",
-                "start_ms": 50040,
-                "end_ms": 58800
+                "start_ms": 65240,
+                "end_ms": 72640
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/06-komunikasyon/communication-record/sources.fil.ba6a0324f348.mp3",
+            "src": "/training/audio/06-komunikasyon/communication-record/sources.fil.4e559b947e5b.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "ba6a0324f348f02c4109826f8af5517f02f8ea0e26507fbc287d51fa1b945dc5",
-            "sha256": "2ea923ef0c9e026fe2dbc91324fb70a61d1141ec4a8660865e4c6aa7427aa5e9",
-            "duration_seconds": 63.634,
+            "content_hash": "4e559b947e5bf11e5457d511489825a341ff0075f3dd8a8168f372f16d0c5cc4",
+            "sha256": "25bc6e9aabbde9716073cea943ef122cdd9a197b571cdef22abe562cbf5eb1e6",
+            "duration_seconds": 78.707,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Sinabi, nakita, at hindi pa tiyak",
                 "start_ms": 0,
-                "end_ms": 4800
+                "end_ms": 4320
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Si Liza, 29, ay kinakausap ni BHW Gibs tungkol sa hindi pagpunta sa health center.",
-                "start_ms": 5100,
-                "end_ms": 13140
+                "text": "Si Gibs, isang lalaking BHW, ay bumisita kay Liza, 29, para sa awtorisadong household profile.",
+                "start_ms": 4620,
+                "end_ms": 13020
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Hindi pa nakita ni Gibs ang awtorisadong attendance record.",
-                "start_ms": 13440,
-                "end_ms": 18160
+                "text": "Nagpaalam siya at nakinig muna.",
+                "start_ms": 13320,
+                "end_ms": 15880
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Sinabi ni Liza na walang maiiwan sa dalawang anak.",
-                "start_ms": 18460,
-                "end_ms": 22900
+                "text": "Sinabi ni Liza: “Mahirap pumunta kapag walang magbabantay sa dalawang anak ko.”",
+                "start_ms": 16180,
+                "end_ms": 21780
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Nakita ni Gibs na wala ang appointment card, ngunit hindi ito patunay na walang appointment.",
-                "start_ms": 23200,
-                "end_ms": 29960
+                "text": "Sabi ng kapitbahay: “Hindi siya interesado.”",
+                "start_ms": 22080,
+                "end_ms": 25760
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Sa tala, ihiwalay ang “ayon kay Liza” sa sariling obserbasyon.",
-                "start_ms": 30260,
-                "end_ms": 36580
+                "text": "Sa pagsasanay na ito, hindi ito aktuwal na rekord.",
+                "start_ms": 26060,
+                "end_ms": 29380
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Itanong ang petsang hindi malinaw; markahang “hindi pa nakumpirma” kung kailangan pang tingnan ang rekord.",
-                "start_ms": 36880,
-                "end_ms": 45240
+                "text": "Ihiwalay ang apat na hanay: sinabi ni Liza, iniulat ng kapitbahay, direktang nakita, at hindi pa natiyak.",
+                "start_ms": 29680,
+                "end_ms": 39040
               },
               {
                 "zone": "body",
                 "index": 6,
-                "text": "Ang pagsusuri ng impormasyon ay pagtiyak sa pinagmulan at kaugnayan nito, hindi paglalagay ng diagnosis o husga sa tao.",
-                "start_ms": 45540,
-                "end_ms": 55260
+                "text": "Nang hilingin ang appointment card, nakita ni Gibs na walang card na naipakita sa pag-uusap.",
+                "start_ms": 39340,
+                "end_ms": 45860
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Hindi nito pinatutunayang walang appointment o hindi pumunta si Liza.",
+                "start_ms": 46160,
+                "end_ms": 50960
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Hindi pa nakita ni Gibs ang awtorisadong attendance record.",
+                "start_ms": 51260,
+                "end_ms": 55220
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Ang petsa at status ng pagbisita ay hindi pa nakumpirma.",
+                "start_ms": 55520,
+                "end_ms": 59680
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Ang pagtango, pananahimik o pagtingin sa pinto ay obserbasyon lamang, hindi patunay ng pagsang-ayon, pagtanggi, damdamin o diagnosis.",
+                "start_ms": 59980,
+                "end_ms": 71020
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.",
-                "start_ms": 55560,
-                "end_ms": 63560
+                "start_ms": 71320,
+                "end_ms": 78640
+              }
+            ]
+          }
+        },
+        "verify-gap": {
+          "en": {
+            "src": "/training/audio/06-komunikasyon/communication-record/verify-gap.en.da33812a35a3.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "da33812a35a3a29a2241f6d7d7f1e7b0489c05addf7711e024f352606d5abb3e",
+            "sha256": "21e3a25c32a04a40d7266bf3b80ddf67a634512b17777605b80455f4641cdb3b",
+            "duration_seconds": 78.942,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Verify the gap and correct honestly",
+                "start_ms": 0,
+                "end_ms": 3040
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Incorrect initial note: “The center canceled the appointment.”",
+                "start_ms": 3340,
+                "end_ms": 7060
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "It treats unconfirmed information as established.",
+                "start_ms": 7360,
+                "end_ms": 10880
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Gibs corrects the fictional practice sheet: “Liza first reported a canceled schedule.",
+                "start_ms": 11180,
+                "end_ms": 16700
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Liza clarified during the conversation that she could not attend when her sister was away and was unsure whether the center canceled it.",
+                "start_ms": 17000,
+                "end_ms": 24800
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "No card was shown.",
+                "start_ms": 25100,
+                "end_ms": 26700
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Date and status: not yet confirmed.”",
+                "start_ms": 27000,
+                "end_ms": 29880
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "He does not replace one guess with another.",
+                "start_ms": 30180,
+                "end_ms": 32940
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "One suitable step is to ask the authorized midwife to check the relevant attendance record with him under the local access procedure.",
+                "start_ms": 33240,
+                "end_ms": 41520
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Ask only what is needed; do not investigate Liza’s entire life.",
+                "start_ms": 41820,
+                "end_ms": 46860
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Liza confirms the summary of her own report and is willing to clarify the date she remembers.",
+                "start_ms": 47160,
+                "end_ms": 53240
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "That is the confirmed ending of the conversation, not confirmation of attendance or a new appointment.",
+                "start_ms": 53540,
+                "end_ms": 60140
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Until suitable verification is available, keep the gap marked “not yet confirmed.”",
+                "start_ms": 60440,
+                "end_ms": 65640
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "In a real record, follow the local correction process and preserve the source of the change.",
+                "start_ms": 65940,
+                "end_ms": 71900
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "A correction keeps its source; a gap stays unconfirmed until suitable verification is available.",
+                "start_ms": 72200,
+                "end_ms": 78880
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/06-komunikasyon/communication-record/verify-gap.fil.b83fc1126c81.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "b83fc1126c81cf2db63fd8c71f9f6aa254e398c24bbb4a470c6bc219179db8b3",
+            "sha256": "48374458005f6dc00ee06daae786d62b1419b23967ab97309f5910578eb5ddca",
+            "duration_seconds": 86.7,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Beripikahin ang kulang, itama nang tapat",
+                "start_ms": 0,
+                "end_ms": 3600
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Maling paunang tala: “Kinansela ng center ang appointment.”",
+                "start_ms": 3900,
+                "end_ms": 8820
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Ginawa nitong tiyak ang hindi pa natiyak.",
+                "start_ms": 9120,
+                "end_ms": 11920
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Iwinasto ni Gibs sa kathang-isip na practice sheet: “Unang sinabi ni Liza: kinansela ang schedule.",
+                "start_ms": 12220,
+                "end_ms": 19940
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Paglilinaw ni Liza sa pag-uusap: hindi siya nakapunta nang wala ang kapatid; hindi niya tiyak kung kinansela ng center.",
+                "start_ms": 20240,
+                "end_ms": 28000
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Walang card na naipakita.",
+                "start_ms": 28300,
+                "end_ms": 30700
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Petsa at status: hindi pa nakumpirma.”",
+                "start_ms": 31000,
+                "end_ms": 34120
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hindi niya pinalitan ang hula ng panibagong hula.",
+                "start_ms": 34420,
+                "end_ms": 38140
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Isang angkop na hakbang: hilingin sa awtorisadong midwife na tingnan kasama niya ang kaugnay na attendance record, ayon sa lokal na access procedure.",
+                "start_ms": 38440,
+                "end_ms": 47680
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Tanungin lamang ang kailangan; hindi kailangang siyasatin ang buong buhay ni Liza.",
+                "start_ms": 47980,
+                "end_ms": 53300
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Kinumpirma ni Liza ang buod ng sarili niyang sinabi at handa siyang linawin ang petsang naaalala niya.",
+                "start_ms": 53600,
+                "end_ms": 59880
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Ito ang totoong pagtatapos ng pag-uusap, hindi kumpirmasyon ng attendance o bagong appointment.",
+                "start_ms": 60180,
+                "end_ms": 67020
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Hangga’t wala ang angkop na beripikasyon, manatiling “hindi pa nakumpirma” ang puwang.",
+                "start_ms": 67320,
+                "end_ms": 73440
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Sa totoong rekord, sundin ang lokal na proseso sa pagwawasto at panatilihin ang pinagmulan ng pagbabago.",
+                "start_ms": 73740,
+                "end_ms": 80020
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ang pagwawasto ay may pinagmulan; ang kulang ay hindi pa tiyak hangga’t walang angkop na beripikasyon.",
+                "start_ms": 80320,
+                "end_ms": 86640
               }
             ]
           }

@@ -4,7 +4,7 @@ Mula sa dalawang magkaibang kuwento, gumawa ng tala na hiwalay ang sinabi, nakit
 
 ## [time-materials] Oras at kagamitan
 
-90 minutong facilitated practice: 10 pambungad + 15 demonstration + 30 tatlong triad round + 20 pagwawasto/beripikasyon + 10 debrief + 5 exit check = 90. Ang limang aralin ay 90 + 90 + 120 + 90 + 90 = 480 minuto; ang shared module outline ay ibang pagtingin sa parehong programa, hindi dagdag na walong oras. Papel, lapis, bilingual role cards, observer checklist at recording aid. Walang totoong rekord. SELF_STUDY_TIMING_PENDING
+90 minutong facilitated practice: 10 pambungad + 15 demonstration + 30 tatlong triad round + 20 pagwawasto/beripikasyon + 10 debrief + 5 exit check = 90. Ang limang aralin ay 90 + 90 + 120 + 90 + 90 = 480 minuto; ang shared module outline ay ibang pagtingin sa parehong programa, hindi dagdag na walong oras. Papel, lapis, bilingual role cards, observer checklist at recording aid. Walang totoong rekord. Ginawang pagtataya ng sariling pag-aaral: 11–14 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 400.61 segundo sa English at 446.30 segundo sa Filipino; maglaan ng 3–6 minuto para sa check, maikling pagsasanay at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 ## [prepare] Paghahanda
 

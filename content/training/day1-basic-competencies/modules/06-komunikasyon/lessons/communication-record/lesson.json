@@ -19,7 +19,8 @@
         "m6.assess"
       ],
       "asset_ids": [
-        "record-sources"
+        "record-sources",
+        "gibs-portrait"
       ],
       "takeaway_fil": "Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.",
       "takeaway_en": "When assessing information, distinguish reports, observations and details still requiring verification.",
@@ -127,7 +128,9 @@
       ],
       "source_ids": [
         "facilitator",
-        "manual"
+        "manual",
+        "tesda",
+        "privacy"
       ]
     }
   ],
@@ -149,6 +152,21 @@
         30
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "tesda",
+      "title": "TESDA Barangay Health Services NC II Rev.01 (2019), unit 400311215",
+      "pdf_pages": [
+        26,
+        27,
+        28
+      ],
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
+    },
+    {
+      "id": "privacy",
+      "title": "NPC Data Privacy Act IRR, sections 18, 19 and 34",
+      "url": "https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/"
     }
   ],
   "assets": [
@@ -228,6 +246,46 @@
       "caption_en": "Three equal notes lie before Gibs and Liza; no answer has been selected. Fictional rehearsal; labels and details are in the text.",
       "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
       "review_status": "draft"
+    },
+    {
+      "id": "communication-record-story",
+      "alt_fil": "Anim na narrated beat: inihihiwalay ni Gibs ang mga pinagmulan at itinatala ang paglilinaw ni Liza nang walang hula.",
+      "alt_en": "Six narrated beats: Gibs separates sources and records Liza’s clarification without guessing.",
+      "caption_fil": "Tapat na tala, malinaw na pinagmulan at angkop na beripikasyon.",
+      "caption_en": "An honest note, clear attribution and suitable verification.",
+      "provenance": "Lesson 1.6.4 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-6/communication-record-gemini-fil-de1a2b271438.mp4",
+          "content_hash": "de1a2b2714386e31f9611f0a4a59611cc70948aa492aad6622b93e68b6636a7a",
+          "duration_s": 68,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-record-gemini-fil-737e6925f693.vtt",
+            "content_hash": "737e6925f6930928e281b7cede3c45cc543097fd0cc09862344520eea8aae722"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg",
+            "content_hash": "4f4c14d18266bd04ebe0c1046d63f6573efad019c76bb7cd376078c02ae43c70"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-6/communication-record-gemini-en-871f25aaccb6.mp4",
+          "content_hash": "871f25aaccb6ee25e2fa7d47d91fb3bd26abb2038f666d922e4d9f844d86df89",
+          "duration_s": 60,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-record-gemini-en-f39072e67afd.vtt",
+            "content_hash": "f39072e67afd1593d29550aa54bdd4e9a080356559574755385344932ad5501c"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-record-gemini-en-ae6253199d63-poster.jpg",
+            "content_hash": "ae6253199d633ec0032c9f5e1d586326477898aa9212fa2722ddd06ad1de4d97"
+          }
+        }
+      },
+      "path": "/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg",
+      "content_hash": "4f4c14d18266bd04ebe0c1046d63f6573efad019c76bb7cd376078c02ae43c70"
     }
-  ]
+  ],
+  "featured_asset_id": "communication-record-story"
 }

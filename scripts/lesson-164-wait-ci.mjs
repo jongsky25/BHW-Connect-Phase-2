@@ -8,7 +8,21 @@ while(Date.now()<deadline){
  const {workflow_runs:runs}=await response.json();const checks=['CI','Remotion clips'].map(name=>runs.filter(r=>r.name===name&&r.head_sha===sha&&r.event==='pull_request').sort((a,b)=>b.id-a.id)[0]);
  if(checks.some(r=>r?.status==='completed'&&r.conclusion!=='success'))throw Error('Required exact-head regression failed; inspect current PR checks');
  if(checks.every(r=>r?.status==='completed'&&r.conclusion==='success')){
-  const report={status:'passed',head_sha:sha,verified_at:new Date().toISOString(),runs:checks.map(r=>({name:r.name,id:r.id,url:r.html_url,conclusion:r.conclusion,run_attempt:r.run_attempt})),complete_Remotion_registry:78};
+  const listing=execFileSync('npx',['remotion','compositions','--quiet'],{cwd:'remotion',encoding:'utf8',maxBuffer:4*1024*1024});
+  const registry=listing.trim().split('\n').at(-1).split(/\s+/).filter(id=>/^[A-Za-z0-9-]+$/.test(id));
+  if(registry.length!==78||new Set(registry).size!==78)throw Error('Frozen registry must contain 78 unique compositions');
+  const rendered=[];
+  const jobsResponse=await fetch(`https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs/${checks[1].id}/jobs?per_page=100`,{headers:{Authorization:'Bearer '+process.env.GH_TOKEN,Accept:'application/vnd.github+json'}});
+  if(!jobsResponse.ok)throw Error('Complete render jobs unavailable');
+  const {jobs}=await jobsResponse.json();if(jobs.length!==4||jobs.some(j=>j.conclusion!=='success'))throw Error('All four render shards must pass');
+  for(const job of jobs){
+   const redirect=await fetch(`https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/jobs/${job.id}/logs`,{headers:{Authorization:'Bearer '+process.env.GH_TOKEN},redirect:'manual'});
+   const location=redirect.headers.get('location');if(redirect.status!==302||!location||new URL(location).protocol!=='https:')throw Error('Completed render log redirect unavailable');
+   const logs=await fetch(location);if(!logs.ok)throw Error('Completed render log unavailable');
+   const text=await logs.text();rendered.push(...Array.from(text.matchAll(/\$ remotion render \S+ ([A-Za-z0-9-]+) /g),m=>m[1]));
+  }
+  if(rendered.length!==78||JSON.stringify([...rendered].sort())!==JSON.stringify([...registry].sort()))throw Error('Every frozen registry composition must have an actual successful render');
+  const report={status:'passed',registry,rendered_compositions:rendered,head_sha:sha,verified_at:new Date().toISOString(),runs:checks.map(r=>({name:r.name,id:r.id,url:r.html_url,conclusion:r.conclusion,run_attempt:r.run_attempt})),complete_Remotion_registry:78};
   fs.mkdirSync('.preview/lesson164-deliverables',{recursive:true});fs.writeFileSync('.preview/lesson164-deliverables/lesson-164-final-ci.json',JSON.stringify(report,null,2)+'\n');console.log('Normal CI and complete 78-composition Remotion regression passed at '+sha);process.exit(0);
  }
  console.log('Waiting for normal CI and all 78 compositions at '+sha);await new Promise(r=>setTimeout(r,30000));

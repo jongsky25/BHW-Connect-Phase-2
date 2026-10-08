@@ -16,7 +16,7 @@ for p,v in receipts.items():
  b=(r/'public'/p.lstrip('/')).read_bytes()
  assert len(b)==v['bytes'] and sha(b)==v['sha256'] and base64.b64encode(b).decode() in text,p
 paths=set()
-for pattern in ['docs/lesson-164-*','scripts/lesson-164-*','scripts/remotion-communication-record-narrate.mjs','scripts/tests/lesson-164.test.mjs','content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/*','remotion/src/communication-record/*','remotion/public/communication-record/*','public/training/bhw-1-6/*','public/training/audio/06-komunikasyon/**/*','.preview/lesson164-source/*-p*','.preview/lesson164-source/privacy-irr.html','.preview/lesson164-source/tesda-filter.html','.preview/lesson164-raw/*','.preview/lesson164-initial-raw/*','.preview/lesson164-initial-media/*','.preview/lesson164-initial-excerpts/*','.preview/lesson164-excerpts/*','.preview/lesson164-deliverables/*.json','.preview/lesson164-deliverables/*.png','.preview/lesson164-deliverables/*.pdf','.preview/lesson164-deliverables/lesson-164-print-kit.*.html']:
+for pattern in ['docs/lesson-164-*','docs/lesson-164-source-evidence/*','scripts/lesson-164-*','scripts/remotion-communication-record-narrate.mjs','scripts/tests/lesson-164.test.mjs','scripts/tests/lesson-164-proposal-compat.mjs','scripts/lib/communication-record-speech.mjs','scripts/lib/reference-narration.mjs','scripts/lib/tts-providers/gemini.mjs','content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/*','remotion/src/communication-record/*','remotion/public/communication-record/*','public/training/bhw-1-6/*','public/training/audio/06-komunikasyon/**/*','.preview/lesson164-source/*-p*','.preview/lesson164-raw/*','.preview/lesson164-initial-raw/*','.preview/lesson164-initial-media/*','.preview/lesson164-initial-excerpts/*','.preview/lesson164-excerpts/*','.preview/lesson164-deliverables/*.json','.preview/lesson164-deliverables/*.png','.preview/lesson164-deliverables/*.pdf','.preview/lesson164-deliverables/lesson-164-print-kit.*.html']:
  paths.update(p for p in r.glob(pattern) if p.is_file())
 paths.update([html,r/'content/training/day1-basic-competencies/narration.json',r/'remotion/src/Root.tsx',r/'src/components/elearning/reference-lessons.tsx',r/'content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json'])
 if (r/'lesson-164-published-snapshot.json').exists():paths.add(r/'lesson-164-published-snapshot.json')
@@ -29,7 +29,9 @@ with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:
   b=p.read_bytes();z.writestr(name,b);report['files'].append({'member':name,'bytes':len(b),'sha256':sha(b)})
 with zipfile.ZipFile(target) as z:
  names=z.namelist();assert len(names)==len(set(names));assert z.testzip() is None
- for f in report['files']:assert sha(z.read(f['member']))==f['sha256']
+ for f in report['files']:
+  b=z.read(f['member']);assert len(b)==f['bytes'] and z.getinfo(f['member']).file_size==f['bytes'] and sha(b)==f['sha256']
+assert target.stat().st_size < 512*1024*1024,'Review artifact exceeds 512 MiB; split raw evidence first'
 report.update({'zip_bytes':target.stat().st_size,'zip_sha256':sha(target.read_bytes()),'safe_unique_members':True,'CRC_checks':True,'source_byte_matches':True})
 (out/'lesson-164-package-integrity.json').write_text(json.dumps(report,indent=2)+'\n')
 print('Verified ZIP:',len(paths),'members;',len(receipts),'exact inline media matches')

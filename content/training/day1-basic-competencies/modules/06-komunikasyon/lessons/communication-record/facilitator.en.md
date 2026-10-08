@@ -4,7 +4,7 @@ From conflicting accounts, produce a record separating reports, observations and
 
 ## [time-materials] Time and materials
 
-90 minutes of facilitated practice: 10 opening + 15 demonstration + 30 three triad rounds + 20 correction/verification + 10 debrief + 5 exit check = 90. Five lessons allocate 90 + 90 + 120 + 90 + 90 = 480 minutes; the shared module outline is another view of this same program, not an extra eight hours. Paper, pens, bilingual role cards, observer checklist and recording aid. No actual resident records. SELF_STUDY_TIMING_PENDING
+90 minutes of facilitated practice: 10 opening + 15 demonstration + 30 three triad rounds + 20 correction/verification + 10 debrief + 5 exit check = 90. Five lessons allocate 90 + 90 + 120 + 90 + 90 = 480 minutes; the shared module outline is another view of this same program, not an extra eight hours. Paper, pens, bilingual role cards, observer checklist and recording aid. No actual resident records. Authored independent estimate: 11–14 minutes, using the longer language track. Actual six-screen narration is 400.61 seconds in English and 446.30 seconds in Filipino; allow 3–6 minutes for the check, brief rehearsal and reflection. Optional story or replay is additional.
 
 ## [prepare] Prepare
 
