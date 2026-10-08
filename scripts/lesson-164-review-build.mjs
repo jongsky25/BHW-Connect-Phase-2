@@ -34,5 +34,5 @@ let html=fs.readFileSync(out+'/index.html','utf8');
 html=html.replace(/<link rel="stylesheet"[^>]*href="([^"]+)"[^>]*>/,(_,p)=>'<style>'+fs.readFileSync(out+p,'utf8')+'</style>');
 html=html.replace(/<script type="module"[^>]*src="([^"]+)"[^>]*><\/script>/,(_,p)=>'<script type="module">'+fs.readFileSync(out+p,'utf8').replaceAll('</script','<\\/script')+'</script>');
 const deliver=root+'/.preview/lesson164-deliverables';fs.mkdirSync(deliver,{recursive:true});fs.writeFileSync(deliver+'/lesson-1.6.4-gibs-review.html',html);
-fs.writeFileSync(deliver+'/lesson-164-inline-media.json',JSON.stringify(Object.fromEntries(Object.entries(assets).map(([p,r])=>[p,{sha256:r.sha256,bytes:r.bytes}])),null,2)+'\\n');
+fs.writeFileSync(deliver+'/lesson-164-inline-media.json',JSON.stringify(Object.fromEntries(Object.entries(assets).map(([p,r])=>[p,{sha256:r.sha256,bytes:r.bytes}])),null,2)+'\n');
 console.log('Built self-contained actual-component review with '+Object.keys(assets).length+' inline assets.');
