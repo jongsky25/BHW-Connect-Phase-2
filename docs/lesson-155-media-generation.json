@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-08T03:15:47.214Z",
+  "source_commit": "9281ed6fd28b56ae527ebbbfdf604813eb77c8f4",
+  "owner_review": "pending",
+  "render_input_sha256": "10a84fa7b360311dd903f8e6d293e7a11579dd1109d8c068b6e392c7d7875252",
+  "render_cached": false,
+  "target_read_tracks": 14,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 64.758,
+      "beats": [
+        {
+          "zone": "busy",
+          "index": 0,
+          "text": "May paanyaya at pulong si Malou. Hindi niya kayang gawin ang lahat nang sabay. Tinitingnan niya ang oras at sariling kapasidad.",
+          "start_ms": 0,
+          "end_ms": 8400
+        },
+        {
+          "zone": "reliable",
+          "index": 1,
+          "text": "Maaasahan si Malou dahil malinaw ang pangako at pagbalita. Humihinto sandali, inaayos ang oras at tinatapos ang isang gawain.",
+          "start_ms": 8700,
+          "end_ms": 19180
+        },
+        {
+          "zone": "honest",
+          "index": 2,
+          "text": "Mapagkakatiwalaan siya dahil may prinsipyo. Matapat at maingat siya sa pagbalita: dalawampu ang handa at lima ang natitira.",
+          "start_ms": 19480,
+          "end_ms": 30120
+        },
+        {
+          "zone": "adapt",
+          "index": 3,
+          "text": "Mas maaga na ang pulong. Tinitiyak ni Malou ang bagong oras at ipinapaliwanag ang natitira. Inaayos niya ang plano matapos makumpirma.",
+          "start_ms": 30420,
+          "end_ms": 40260
+        },
+        {
+          "zone": "habit",
+          "index": 4,
+          "text": "Pumili siya ng isang gawi: isulat ang tatlong prayoridad bago magtrabaho sa tatlong araw ngayong linggo. Sa Biyernes, rerepasuhin niya ang resulta.",
+          "start_ms": 40560,
+          "end_ms": 51640
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Anim na kasanayan ang gabay sa sarili. Makatotohanan ang pangako, tapat ang ulat at may pagrepaso. Hindi kailangang akuin ang lahat.",
+          "start_ms": 51940,
+          "end_ms": 64700
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-60cab6d034e1.mp4",
+        "content_hash": "60cab6d034e13c1bab49a3d99bebec09ce70aacbefb2a8d49233a27af38d9b54",
+        "duration_s": 66,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-c5615d14acb0.vtt",
+          "content_hash": "c5615d14acb0ba143bffa655074496dfa0eb18883f619766367d4d295dbd3f7e"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-9e3c6b3e8f6e-poster.jpg",
+          "content_hash": "9e3c6b3e8f6eab421399e91ac81fcd89b50981dd02249a268872fddb40274e65"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-9e3c6b3e8f6e-poster.jpg",
+        "content_hash": "9e3c6b3e8f6eab421399e91ac81fcd89b50981dd02249a268872fddb40274e65"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 56.895,
+      "beats": [
+        {
+          "zone": "busy",
+          "index": 0,
+          "text": "Malou has invitations and a meeting. She cannot do everything at once. She checks the deadlines and her capacity.",
+          "start_ms": 0,
+          "end_ms": 8640
+        },
+        {
+          "zone": "reliable",
+          "index": 1,
+          "text": "Malou is reliable because her commitment and update are clear. She pauses, organizes her time and finishes one task.",
+          "start_ms": 8940,
+          "end_ms": 18740
+        },
+        {
+          "zone": "honest",
+          "index": 2,
+          "text": "She is trustworthy because she follows principles. She is honest and careful in reporting: twenty are ready and five remain.",
+          "start_ms": 19040,
+          "end_ms": 28520
+        },
+        {
+          "zone": "adapt",
+          "index": 3,
+          "text": "The meeting is earlier. Malou confirms the new time and explains what remains. She adjusts her plan after confirmation.",
+          "start_ms": 28820,
+          "end_ms": 36180
+        },
+        {
+          "zone": "habit",
+          "index": 4,
+          "text": "She chooses one habit: write three priorities before work on three days this week. On Friday, she will review the result.",
+          "start_ms": 36480,
+          "end_ms": 45360
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Six skills guide self-management. Make realistic commitments, report honestly and review your progress. You do not have to take on everything.",
+          "start_ms": 45660,
+          "end_ms": 56820
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-self-management-gemini-en-1c0a9fdcc171.mp4",
+        "content_hash": "1c0a9fdcc1719267a9249eec2782f431a6d51b4f14af8a45de27c07f5764f6a8",
+        "duration_s": 58,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-self-management-gemini-en-a25bac54bce7.vtt",
+          "content_hash": "a25bac54bce7bb0fe6929fcf2143a8e41e321e199a9d000d508109f7bdd4c7cf"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-self-management-gemini-en-99f946661a26-poster.jpg",
+          "content_hash": "99f946661a263cbe3e758251bdbbc25d369e98f19b652924a0528e0a1f14b650"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-self-management-gemini-en-99f946661a26-poster.jpg",
+        "content_hash": "99f946661a263cbe3e758251bdbbc25d369e98f19b652924a0528e0a1f14b650"
+      }
+    }
+  ]
+}

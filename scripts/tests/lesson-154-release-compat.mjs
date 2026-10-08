@@ -1,12 +1,12 @@
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {beforeApproved156,withoutApproved156Registry} from './lesson-156-release-compat.mjs';
 // Exact approved successor bytes; original released baselines stay immutable.
-import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {expect} from 'vitest';
 const root=path.resolve(import.meta.dirname,'../..');
-const receipt=JSON.parse(fs.readFileSync(path.join(root,'docs/lesson-154-owner-approval.json'),'utf8'));
-const baseline=JSON.parse(fs.readFileSync(path.join(root,'docs/lesson-154-current-baseline.json'),'utf8'));
+const receipt=JSON.parse(read155(path.join(root,'docs/lesson-154-owner-approval.json'),'utf8'));
+const baseline=JSON.parse(read155(path.join(root,'docs/lesson-154-current-baseline.json'),'utf8'));
 export const teamworkLeaf='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/';
 export const approved154LessonPaths=['competency.json','facilitator.en.md','facilitator.fil.md','lesson.json','read.en.md','read.fil.md','slides.json'].map(p=>teamworkLeaf+p);
 export function approved154Path(p){
@@ -23,7 +23,7 @@ export function withoutApproved154Registry(source){
 export function beforeApproved154(p){
  approved154Path(p);
  if(receipt.predecessor_shared_files[p])return receipt.predecessor_shared_files[p];
- if(p==='remotion/src/Root.tsx')return withoutApproved154Registry(fs.readFileSync(path.join(root,p),'utf8'));
+ if(p==='remotion/src/Root.tsx')return withoutApproved154Registry(read155(path.join(root,p),'utf8'));
  if(p==='content/training/day1-basic-competencies/narration.json'){
   const m=JSON.parse(beforeApproved156(p));
   m.lessons['bhw-teamwork']=baseline.narration_manifest.lessons['bhw-teamwork'];
@@ -42,3 +42,5 @@ export function approved154HistoryPrefix(manifest){
  const old=baseline.narration_manifest.history['bhw-teamwork'];
  expect(manifest.history['bhw-teamwork'].slice(0,old.length)).toEqual(old);
 }
+
+function read155(p,encoding){const bytes=beforeProposed155(path.relative(root,p));return encoding?bytes.toString(encoding):bytes;}

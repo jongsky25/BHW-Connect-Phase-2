@@ -1,0 +1,36 @@
+{
+  "created_date": "2026-10-08",
+  "identity_reference": "/training/bhw-1-5/malou-teamwork-d4d912a21b22.png",
+  "identity_reference_sha256": "d4d912a21b220f572409a9fc00d8b532013f25d31965006a7b991fc85c8e2372",
+  "method": "built-in imagegen; two original scenes inspected visually",
+  "identity": "Malou: mature Filipina, mustard blouse, thin glasses, graying dark low-bun hair",
+  "scenes": [
+    {
+      "id": "malou-self-priorities",
+      "path": "/training/bhw-1-5/malou-self-priorities-b11b6907d8d9.png",
+      "content_hash": "b11b6907d8d9fb8c42b616468cff6638e42d6ff19425f95db0bec6802c7b9fcc",
+      "alt_fil": "Si Malou na nag-aayos ng tatlong blangkong task card sa mesa, may kuwaderno at tubig sa tabi.",
+      "alt_en": "Malou arranges three blank task cards at a table beside a notebook and drinking water.",
+      "caption_fil": "Unahin ang napagkasunduang gawain at alagaan ang sarili.",
+      "caption_en": "Prioritize agreed work and care for yourself.",
+      "provenance": "Original built-in imagegen scene, 2026-10-08, using approved Malou teamwork image as identity reference. Fictional people and blank learning materials; no real patient data. See docs/lesson-155-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "malou-self-adjust",
+      "path": "/training/bhw-1-5/malou-self-adjust-cb75caa004f4.png",
+      "content_hash": "cb75caa004f4644a2cc5a42644dcce5c9965d0ae1b74d4d411a85ca182ec2983",
+      "alt_fil": "Si Malou na nakikipag-usap sa kapwa BHW habang inililipat ang blangkong task card sa tabi ng planner.",
+      "alt_en": "Malou speaks with a fellow BHW while moving a blank task card beside a planner.",
+      "caption_fil": "Sabihin ang tunay na natitira at tiyakin ang pagbabago sa plano.",
+      "caption_en": "Report what truly remains and confirm a change to the plan.",
+      "provenance": "Original built-in imagegen scene, 2026-10-08, using approved Malou teamwork image as identity reference. Fictional people and blank learning materials; no real patient data. See docs/lesson-155-scene-brief.json.",
+      "review_status": "draft"
+    }
+  ],
+  "limits": [
+    "Fictional people; blank learning materials",
+    "New asset owner approval pending",
+    "No real patient records or officials"
+  ]
+}

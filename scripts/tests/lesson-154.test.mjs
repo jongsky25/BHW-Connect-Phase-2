@@ -1,3 +1,4 @@
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {approved156Path,rightContactLeaf} from './lesson-156-release-compat.mjs';
 import {approved153Path,localPartnersLeaf,withoutApproved153Registry} from './lesson-153-release-compat.mjs';
 // @vitest-environment node
@@ -7,7 +8,7 @@ import {loadReferenceModule,FACILITATOR_SECTION_IDS} from '../lib/reference-cont
 import {planReferenceNarration,mp3AudioFrames} from '../lib/reference-narration.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',leaf=base+'lessons/bhw-teamwork/';
-const file=p=>fs.readFileSync(root+'/'+p),j=p=>JSON.parse(file(p)),sha=b=>createHash('sha256').update(b).digest('hex'),hash=p=>sha(file('public'+p));
+const file=p=>read155(root+'/'+p),j=p=>JSON.parse(file(p)),sha=b=>createHash('sha256').update(b).digest('hex'),hash=p=>sha(file('public'+p));
 const b=j('docs/lesson-154-current-baseline.json'),source=j(leaf+'lesson.json'),mf=j('content/training/day1-basic-competencies/narration.json');
 const lesson=loadReferenceModule(root+'/'+base,root+'/public').lessons.find(l=>l.manifest.lesson_key==='bhw-teamwork');
 describe('lesson 1.5.4 teamwork and protected release checks',()=>{
@@ -53,3 +54,5 @@ describe('lesson 1.5.4 teamwork and protected release checks',()=>{
   for(const lang of ['fil','en'])expect(Object.keys(narrationForLesson(mf,'bhw-teamwork',lang,lesson.revision.read_sections))).toHaveLength(6);
  });
 });
+
+function read155(p,encoding){const bytes=beforeProposed155(path.relative(root,p));return encoding?bytes.toString(encoding):bytes;}

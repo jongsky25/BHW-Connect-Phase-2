@@ -1,14 +1,15 @@
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {approved153Path,localPartnersLeaf} from './lesson-153-release-compat.mjs';
 import {approved154Path,teamworkLeaf} from './lesson-154-release-compat.mjs';
 import {beforeApproved156,approved156Path} from './lesson-156-release-compat.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
-import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
+import path from 'node:path';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {planReferenceNarration,mp3AudioFrames} from '../lib/reference-narration.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',leaf=base+'lessons/bhw-right-contact/';
-const bytes=p=>fs.readFileSync(root+'/'+p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
+const bytes=p=>read155(root+'/'+p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
 const b=j('docs/lesson-156-current-baseline.json'),s=j(leaf+'lesson.json'),m=j('content/training/day1-basic-competencies/narration.json');
 const a=loadReferenceModule(root+'/'+base,root+'/public').lessons.find(x=>x.manifest.lesson_key==='bhw-right-contact');
 describe('lesson 1.5.6 complete contact-choice draft',()=>{
@@ -22,3 +23,5 @@ describe('lesson 1.5.6 complete contact-choice draft',()=>{
  it('appends exactly two156compositions while preserving the complete prior registry',()=>{const source=bytes('remotion/src/Root.tsx').toString();expect((source.match(/id=\{language === "fil" \? "BhwRightContactStoryFil"/g)??[])).toHaveLength(1);const prior=source.replace(/^import \{BhwRightContactStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`bhw-right-contact-[\s\S]*?      \)\)\}\n/,'');expect(prior).toBe(beforeApproved156('remotion/src/Root.tsx'));approved156Path('remotion/src/Root.tsx');});
  it('limits shared teaching changes to the two final target-owned passages',()=>{for(const lang of ['fil','en']){const p=base+'lesson.'+lang+'.md',now=bytes(p).toString(),old=j('docs/lesson-156-shared-baseline.json')[p];expect(sha(Buffer.from(old))).toBe(b.tracked_file_hashes[p]);const prefix=lang==='en'?'## [practice/standard] Try it:':'## [practice/standard] Subukan mo:';const integrated=beforeApproved156(p);expect(now.slice(0,now.indexOf(prefix))).toBe(integrated.slice(0,integrated.indexOf(prefix)));approved156Path(p);}approved154Path(base+'qa-entries.json');});
 });
+
+function read155(p,encoding){const bytes=beforeProposed155(path.relative(root,p));return encoding?bytes.toString(encoding):bytes;}

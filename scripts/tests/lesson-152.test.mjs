@@ -1,8 +1,9 @@
+import {beforeProposed155} from './lesson-155-proposal-compat.mjs';
 import {approved156Path,approved156LessonPaths,rightContactLeaf} from './lesson-156-release-compat.mjs';
 import {approved154Path,approved154LessonPaths,teamworkLeaf,approved154HistoricalMapping,beforeApproved154} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
-import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
+import path from 'node:path';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {planReferenceNarration,mp3AudioFrames} from '../lib/reference-narration.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
@@ -11,7 +12,7 @@ import {BHW_BARANGAY_PARTNERS_BEATS} from '../../remotion/src/bhw-barangay-partn
 import {toWebVtt} from '../lib/webvtt.mjs';
 import {approved153Path,approved153LessonPaths,localPartnersLeaf,withoutApproved153Registry} from './lesson-153-release-compat.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/',leaf=base+'lessons/bhw-barangay-partners/';
-const j=p=>JSON.parse(fs.readFileSync(root+'/'+p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex'),file=p=>fs.readFileSync(root+'/'+p),publicBytes=p=>file('public'+p),hash=p=>sha(publicBytes(p));
+const j=p=>JSON.parse(read155(root+'/'+p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex'),file=p=>read155(root+'/'+p),publicBytes=p=>file('public'+p),hash=p=>sha(publicBytes(p));
 const b=j('docs/lesson-152-current-baseline.json'),source=j(leaf+'lesson.json'),mf=j('content/training/day1-basic-competencies/narration.json');
 const a=loadReferenceModule(root+'/'+base,root+'/public').lessons.find(l=>l.manifest.lesson_key==='bhw-barangay-partners');
 const ids=['section-4','section-5','barangay-support-request','council-health-role','confirm-and-follow-through','barangay-partners-application-check'];
@@ -29,3 +30,5 @@ describe('lesson1.5.2 preserves released lessons and applies barangay partner ro
  it('appends exactly two compositions to the complete released64 registry',()=>{const s=withoutApproved153Registry(file('remotion/src/Root.tsx').toString().replaceAll('\r\n','\n'));expect((s.match(/id=\{language === "fil" \? "BhwBarangayPartnersStoryFil"/g)??[])).toHaveLength(1);const old=s.replace(/^import \{BhwBarangayPartnersStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`bhw-barangay-partners-[\s\S]*?      \)\)\}\n/,'');expect(old).toBe(b.existing_registry_source.replaceAll('\r\n','\n'));expect(b.ordered_existing_composition_ids).toHaveLength(64);});
  it('limits shared edits to the barangay passage, approved 1.5.3 passage, QA rows and accurate source',()=>{const oldSources=b.starting_global_sources.sources,nowSources=j('content/training/day1-basic-competencies/sources.json').sources;for(const [k,v]of Object.entries(oldSources))expect(nowSources[k]).toEqual(v);expect(Object.keys(nowSources).filter(k=>!oldSources[k])).toEqual(['bhw-barangay-partners-training']);for(const lang of ['en','fil']){const p=base+`lesson.${lang}.md`,old=b.shared_files[p],now=beforeApproved154(p),parts=s=>s.split(/(?=^## )/m);const o=parts(old),n=parts(now);expect(n.length).toBe(o.length);for(let i=0;i<n.length;i++)if(i!==4&&i!==5&&i!==6)expect(n[i]).toBe(o[i]);approved153Path(p);}const old=JSON.parse(b.shared_files[base+'qa-entries.json']).entries,now=JSON.parse(beforeApproved154(base+'qa-entries.json')).entries;expect(now.map(r=>r.id)).toEqual(old.map(r=>r.id));for(const row of now)if(!['d1m5-punong-barangay','d1m5-local-health-board-composition','d1m5-other-stakeholders'].includes(row.id))expect(row).toEqual(old.find(r=>r.id===row.id));approved153Path(base+'qa-entries.json');for(const [p,v]of Object.entries(b.shared_files))if(!p.endsWith('lesson.en.md')&&!p.endsWith('lesson.fil.md')&&!p.endsWith('qa-entries.json'))expect(p.includes('facilitator-notes.')?beforeApproved154(p):file(p).toString()).toBe(v);});
 });
+
+function read155(p,encoding){const bytes=beforeProposed155(path.relative(root,p));return encoding?bytes.toString(encoding):bytes;}
