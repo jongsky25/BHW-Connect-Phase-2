@@ -19,8 +19,11 @@ const lessonPath='content/training/day1-basic-competencies/modules/06-komunikasy
 const narrationPath='content/training/day1-basic-competencies/narration.json';
 const allowed=['communication-clarify'];
 const original=json(narrationPath);
+// A cache-only verification run must not append the current selection again.
+const initialLessons=loadReferenceModule(path.join(root,'content/training/day1-basic-competencies/modules/06-komunikasyon'),path.join(root,'public')).lessons;
+const initialPlan=planReferenceNarration([{key:'06-komunikasyon',lessons:initialLessons}],original,src=>{const p=path.join(root,'public',src.slice(1));return existsSync(p)?sha(p):null;});
 original.history ??= {};
-for (const key of allowed) {
+for (const key of allowed.filter(key=>initialPlan.some(item=>item.lessonKey===key&&item.action!=='skip'))) {
  original.history[key] ??= [];
  if (!original.history[key].some(h=>JSON.stringify(h)===JSON.stringify(original.lessons[key]))) original.history[key].push(original.lessons[key]);
 }

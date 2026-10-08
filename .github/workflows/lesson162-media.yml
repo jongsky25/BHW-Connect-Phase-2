@@ -76,14 +76,19 @@ jobs:
         run: |
           python3 -m pip install PyMuPDF==1.26.6
           python3 scripts/lesson-162-source-evidence.py
+      - name: Verify shipped H.264/AAC, ending post-roll and final-frame posters
+        run: python3 scripts/lesson-162-video-verify.py
       - run: node scripts/lesson-162-review-build.mjs
       - run: node scripts/lesson-162-browser-verify.mjs
       - run: node scripts/lesson-162-print-kit.mjs
+      - name: Verify five A4 practice pages per language
+        run: |
+          python3 -c 'import fitz; assert all(fitz.open(".preview/lesson162-deliverables/lesson-162-print-kit."+lang+".pdf").page_count == 5 for lang in ["fil","en"]); print("Five A4 practice pages verified in each language")'
       - name: Require selected media/source already committed before final packaging
         id: frozen
         shell: bash
         run: |
-          if git diff --quiet -- content/training/day1-basic-competencies/narration.json content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify remotion/src/communication-clarify remotion/src/Root.tsx; then
+          if git diff --quiet -- content/training/day1-basic-competencies/narration.json content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify remotion/src/communication-clarify remotion/src/Root.tsx src/components/elearning/reference-lessons.tsx; then
             echo 'ready=true' >> "$GITHUB_OUTPUT"
           else
             echo 'ready=false' >> "$GITHUB_OUTPUT"
@@ -99,6 +104,7 @@ jobs:
         run: |
           node scripts/lesson-162-review-verify.mjs
           python3 scripts/lesson-162-package.py
+          python3 -c 'from pathlib import Path; p=Path(".preview/lesson162-deliverables/lesson-1.6.2-gibs-review.zip"); b=p.read_bytes(); n=30*1024*1024; assert len(b)<=4*n; [(p.parent/("review-zip-part-"+str(i+1)+".bin")).write_bytes(b[i*n:(i+1)*n]) for i in range((len(b)+n-1)//n)]' 
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -135,4 +141,39 @@ jobs:
             .preview/lesson162-deliverables/*verification.json
           include-hidden-files: true
           if-no-files-found: warn
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson162-source-evidence
+          path: .preview/lesson162-source/
+          include-hidden-files: true
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: steps.frozen.outputs.ready == 'true'
+        with:
+          name: lesson162-review-part-1
+          path: .preview/lesson162-deliverables/review-zip-part-1.bin
+          if-no-files-found: ignore
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: steps.frozen.outputs.ready == 'true'
+        with:
+          name: lesson162-review-part-2
+          path: .preview/lesson162-deliverables/review-zip-part-2.bin
+          if-no-files-found: ignore
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: steps.frozen.outputs.ready == 'true'
+        with:
+          name: lesson162-review-part-3
+          path: .preview/lesson162-deliverables/review-zip-part-3.bin
+          if-no-files-found: ignore
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: steps.frozen.outputs.ready == 'true'
+        with:
+          name: lesson162-review-part-4
+          path: .preview/lesson162-deliverables/review-zip-part-4.bin
+          if-no-files-found: ignore
           retention-days: 30

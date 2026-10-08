@@ -3,7 +3,7 @@
 import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
 const root=path.resolve(import.meta.dirname,'../..'),sha=b=>createHash('sha256').update(b).digest('hex');
 const leaf='content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/';
-const allowed=new Set(['remotion/src/Root.tsx','scripts/lib/reference-narration.mjs','content/training/day1-basic-competencies/narration.json',...['lesson.json','slides.json','read.fil.md','read.en.md','facilitator.fil.md','facilitator.en.md','competency.json'].map(p=>leaf+p)]);
+const allowed=new Set(['src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','scripts/lib/reference-narration.mjs','content/training/day1-basic-competencies/narration.json',...['lesson.json','slides.json','read.fil.md','read.en.md','facilitator.fil.md','facilitator.en.md','competency.json'].map(p=>leaf+p)]);
 export function beforeProposed162(p){
  const actual=fs.readFileSync(path.join(root,p));
  const receipt=JSON.parse(fs.readFileSync(path.join(root,'docs/lesson-162-proposal-receipt.json')));

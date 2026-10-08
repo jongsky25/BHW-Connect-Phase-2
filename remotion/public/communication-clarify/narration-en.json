@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in clear Philippine English as one continuous warm adult female Kore community health trainer. Keep exactly the same settled feminine timbre, mid register and teaching pace for every heading, sentence and quotation, including Gibs and Liza dialogue. Do not act out male or secondary character voices. Allow a comfortable pause at corrections and finish the ending clearly. Preserve every word, negation and uncertainty. Gibs is pronounced gibz and Liza LEE-sa. No added words or promises. Delivery revision 3.",
+  "durationSeconds": 56.816,
+  "beats": [
+    {
+      "zone": "open-question",
+      "index": 0,
+      "text": "Gibs asks, “What happened?” Liza says, “I had nobody with me.” He does not assume a motive.",
+      "start_ms": 0,
+      "end_ms": 7520
+    },
+    {
+      "zone": "clarify-detail",
+      "index": 1,
+      "text": "“Someone to travel with?” he asks. “No. Someone to watch my child,” Liza corrects him. Gibs accepts the correction.",
+      "start_ms": 7820,
+      "end_ms": 17300
+    },
+    {
+      "zone": "barriers",
+      "index": 2,
+      "text": "Childcare is Liza’s own explanation. The neighbor’s claim is not her answer. Clarify the barrier without guessing a motive.",
+      "start_ms": 17600,
+      "end_ms": 26360
+    },
+    {
+      "zone": "confirm-summary",
+      "index": 3,
+      "text": "“Always difficult?” “Not always. When my sister is away.” Gibs corrects the summary and Liza confirms it.",
+      "start_ms": 26660,
+      "end_ms": 36020
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Across three roles, everyone practices as BHW. Rehearse an invitation, one clarification and a confirmed summary. Retry a step needing support.",
+      "start_ms": 36320,
+      "end_ms": 48200
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Liza agrees to check service hours first. The visit date is still unknown. No appointment or childcare is promised.",
+      "start_ms": 48500,
+      "end_ms": 56740
+    }
+  ],
+  "audio_sha256": "146e0f8e0772653084a1784acae18f13c5c5f8ea9cdd2df9782c86e30250dd60"
+}

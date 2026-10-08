@@ -15,8 +15,14 @@ for name,url,pages in sources:
   assert sha(image)==expected_image,image
 print('Verified original PDFs and 13 audited page images; no public redistribution.')
 
+import importlib.util
+spec=importlib.util.spec_from_file_location('primary',root/'scripts/lesson-162-primary-passages.py');primary=importlib.util.module_from_spec(spec);spec.loader.exec_module(primary)
+pinned=json.loads((root/'docs/lesson-162-primary-passages.json').read_text());receipt={}
 for name,url in [('privacy-irr.html',audit['privacy_primary_source']['url']),('tesda-filter.html',audit['tesda_verification']['official_catalog_url'])]:
  file=out/name
  if not file.exists():subprocess.run(['curl','-fsSL',url,'-o',str(file)],check=True)
- expected=audit['privacy_primary_source']['sha256'] if name=='privacy-irr.html' else audit['tesda_verification']['catalog_sha256']
- assert sha(file)==expected, 'Primary source bytes changed; inspect and update the target claim audit before packaging: '+name
+ text=primary.passages(name,file.read_text());canonical=primary.digest(text)
+ assert canonical==pinned[name]['canonical_sha256'], 'Primary passage changed; inspect the target claim audit before packaging: '+name
+ receipt[name]={'url':url,'raw_sha256':sha(file),'bytes':file.stat().st_size,'canonical_sha256':canonical,'matched_inspected_passage':True}
+(out/'primary-fetch-receipt.json').write_text(json.dumps(receipt,indent=2)+'\n')
+print('Primary policy passages and current/superseded catalogue entries match; fresh raw bytes retained.')

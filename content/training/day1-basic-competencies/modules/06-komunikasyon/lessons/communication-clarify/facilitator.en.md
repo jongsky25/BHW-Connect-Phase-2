@@ -4,7 +4,7 @@ Rehearse an open invitation, one relevant neutral clarification, room for an ans
 
 ## [time-materials] Time and materials
 
-90 guided minutes: 10 opening + 15 demonstration + 30 three-round triads + 20 retry/correction + 10 debrief + 5 exit check = 90. This is part of 90 + 90 + 120 + 90 + 90 = 480 minutes, not an additional eight-hour program. Prepare cards and question aids for ten triads, paper and pens. No real resident records. Internet and a projector are optional. SELF_STUDY_TIMING_PENDING
+90 guided minutes: 10 opening + 15 demonstration + 30 three-round triads + 20 retry/correction + 10 debrief + 5 exit check = 90. This is part of 90 + 90 + 120 + 90 + 90 = 480 minutes, not an additional eight-hour program. Prepare cards and question aids for ten triads, paper and pens. No real resident records. Internet and a projector are optional. Authored independent estimate: 10–13 minutes, using the longer language track. Actual six-screen narration is 363.89 seconds in English and 395.99 seconds in Filipino; allow 3–6 minutes for the check, brief rehearsal and reflection. Optional story or replay is additional.
 
 ## [prepare] Prepare
 

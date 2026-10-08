@@ -2,7 +2,7 @@
 import fs from 'node:fs';import path from 'node:path';import {createRequire} from 'node:module';import {chromium} from '@playwright/test';
 const root=path.resolve(import.meta.dirname,'..'),out=root+'/.preview/lesson162-deliverables';fs.mkdirSync(out,{recursive:true});
 const require=createRequire(import.meta.url),{ensureBrowser}=require(root+'/remotion/node_modules/@remotion/renderer');
-const status=await ensureBrowser(),browser=await chromium.launch({executablePath:status.path,args:['--no-sandbox']});
+const status=await ensureBrowser({browserExecutable:process.env.REVIEW_BROWSER_EXECUTABLE??null}),browser=await chromium.launch({executablePath:status.path,args:['--no-sandbox']});
 const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 try{for(const lang of ['fil','en']){
  const md=fs.readFileSync(root+`/docs/lesson-162-practice-kit.${lang}.md`,'utf8');const sections=md.split(/^## /m).slice(1);

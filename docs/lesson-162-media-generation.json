@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-08T08:56:33.566Z",
+  "source_commit": "991f312bfd13a1d61779152b43f584b01c5c2090",
+  "owner_review": "pending",
+  "render_input_sha256": "dbb44d6b8cae38b956d191c976517ae579f172b3bc801cb9fd65bbd4364e01d5",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 57.574,
+      "beats": [
+        {
+          "zone": "open-question",
+          "index": 0,
+          "text": "Nag-anyaya si Gibs: “Ano ang nangyari?” “Wala akong kasama,” sagot ni Liza. Hindi niya ipinagpalagay ang motibo.",
+          "start_ms": 0,
+          "end_ms": 9240
+        },
+        {
+          "zone": "clarify-detail",
+          "index": 1,
+          "text": "“Kasama sa biyahe?” tanong niya. “Hindi. Magbabantay sa anak,” pagwawasto ni Liza. Tinanggap ni Gibs ang paglilinaw.",
+          "start_ms": 9540,
+          "end_ms": 19260
+        },
+        {
+          "zone": "barriers",
+          "index": 2,
+          "text": "Childcare ang sariling sagot ni Liza. Hindi niya sagot ang sabi ng kapitbahay. Hadlang ang linawin, hindi motibo ang hulaan.",
+          "start_ms": 19560,
+          "end_ms": 28600
+        },
+        {
+          "zone": "confirm-summary",
+          "index": 3,
+          "text": "“Palaging mahirap?” “Hindi palagi. Kapag wala ang kapatid ko.” Inayos ni Gibs ang buod at kinumpirma ito ni Liza.",
+          "start_ms": 28900,
+          "end_ms": 38180
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Sa tatlong role, lahat ay BHW minsan. Sanayin ang paanyaya, isang paglilinaw at kinumpirmang buod. Ulitin ang kailangan ng tulong.",
+          "start_ms": 38480,
+          "end_ms": 48760
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Pumayag si Liza na oras ng serbisyo muna ang aalamin. Hindi pa tiyak ang petsa. Walang pangakong appointment o childcare.",
+          "start_ms": 49060,
+          "end_ms": 57500
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-clarify-gemini-fil-15b173a48cfe.mp4",
+        "content_hash": "15b173a48cfe3b2ef4061479adcfd1c09042bc006fb356c074c2601baa423fbf",
+        "duration_s": 59,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-clarify-gemini-fil-6e32b1690e4d.vtt",
+          "content_hash": "6e32b1690e4d6c338078be6889dc1a4a43ba900fcb06e46b630a3698c5d0f93b"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-clarify-gemini-fil-c59590ab9a97-poster.jpg",
+          "content_hash": "c59590ab9a979c92c3e2432e375e3fa841fe55516675bf6920133e1687c161ff"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-clarify-gemini-fil-c59590ab9a97-poster.jpg",
+        "content_hash": "c59590ab9a979c92c3e2432e375e3fa841fe55516675bf6920133e1687c161ff"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 56.816,
+      "beats": [
+        {
+          "zone": "open-question",
+          "index": 0,
+          "text": "Gibs asks, “What happened?” Liza says, “I had nobody with me.” He does not assume a motive.",
+          "start_ms": 0,
+          "end_ms": 7520
+        },
+        {
+          "zone": "clarify-detail",
+          "index": 1,
+          "text": "“Someone to travel with?” he asks. “No. Someone to watch my child,” Liza corrects him. Gibs accepts the correction.",
+          "start_ms": 7820,
+          "end_ms": 17300
+        },
+        {
+          "zone": "barriers",
+          "index": 2,
+          "text": "Childcare is Liza’s own explanation. The neighbor’s claim is not her answer. Clarify the barrier without guessing a motive.",
+          "start_ms": 17600,
+          "end_ms": 26360
+        },
+        {
+          "zone": "confirm-summary",
+          "index": 3,
+          "text": "“Always difficult?” “Not always. When my sister is away.” Gibs corrects the summary and Liza confirms it.",
+          "start_ms": 26660,
+          "end_ms": 36020
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Across three roles, everyone practices as BHW. Rehearse an invitation, one clarification and a confirmed summary. Retry a step needing support.",
+          "start_ms": 36320,
+          "end_ms": 48200
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Liza agrees to check service hours first. The visit date is still unknown. No appointment or childcare is promised.",
+          "start_ms": 48500,
+          "end_ms": 56740
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-clarify-gemini-en-de39dd35b8a6.mp4",
+        "content_hash": "de39dd35b8a65ea7773497e90a2c7de87a813d1fdd345cf3d32ac8555c3fe9fa",
+        "duration_s": 58,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-clarify-gemini-en-abaad8628d30.vtt",
+          "content_hash": "abaad8628d3050ecf7e6335ba0872bdfee94fb4edb661b60e2610138cbc72283"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-clarify-gemini-en-d63365f73cd9-poster.jpg",
+          "content_hash": "d63365f73cd9fd083920d291bdfa8191d52b48b001b698b1c7e7a87d35055fa2"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-clarify-gemini-en-d63365f73cd9-poster.jpg",
+        "content_hash": "d63365f73cd9fd083920d291bdfa8191d52b48b001b698b1c7e7a87d35055fa2"
+      }
+    }
+  ]
+}

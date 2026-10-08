@@ -180,5 +180,6 @@
   },
   "human_source_and_policy_signoff": "pending",
   "source_files_packaging": "Original internal PDFs stay in local audit evidence; review ZIP includes audited excerpts/hashes for private review, not public redistribution.",
-  "method": "Fresh retrieval of established original PDFs verified against 1.6.1 audited hashes; extracted original text inspected for target claims; fresh primary NPC and TESDA catalogue retrieval. No inherited claim verification or owner approval."
+  "method": "Fresh retrieval of established original PDFs verified against 1.6.1 audited hashes; extracted original text inspected for target claims; fresh primary NPC and TESDA catalogue retrieval. No inherited claim verification or owner approval.",
+  "primary_source_comparison": "docs/lesson-162-primary-passages.json pins the actually inspected NPC18–20 text and TESDA title/download rows. Fresh retrieval retains raw SHA-256 and canonical passage SHA-256 separately; dynamic anti-forgery fields are not treated as substantive source changes."
 }

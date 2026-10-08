@@ -246,6 +246,46 @@
       "caption_en": "Liza: “That day did not work.” Gibs has not chosen a response yet.",
       "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data.",
       "review_status": "draft"
+    },
+    {
+      "id": "communication-clarify-story",
+      "alt_fil": "Anim na narrated beat: nagtatanong si Gibs nang bukas, tumatanggap ng pagwawasto ni Liza at tinitiyak ang inayos na buod.",
+      "alt_en": "Six narrated beats: Gibs offers an open invitation, accepts Liza’s correction and checks the corrected summary.",
+      "caption_fil": "Paanyaya, neutral na paglilinaw at buod na maaaring iwasto.",
+      "caption_en": "Invitation, neutral clarification and a summary the person can correct.",
+      "provenance": "Original lesson1.6.2 Remotion animation with new built-in imagegen six distinct clarification scenes preserving new male Gibs identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Six distinct illustrated clarification actions with animated labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-6/communication-clarify-gemini-fil-15b173a48cfe.mp4",
+          "content_hash": "15b173a48cfe3b2ef4061479adcfd1c09042bc006fb356c074c2601baa423fbf",
+          "duration_s": 59,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-clarify-gemini-fil-6e32b1690e4d.vtt",
+            "content_hash": "6e32b1690e4d6c338078be6889dc1a4a43ba900fcb06e46b630a3698c5d0f93b"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-clarify-gemini-fil-c59590ab9a97-poster.jpg",
+            "content_hash": "c59590ab9a979c92c3e2432e375e3fa841fe55516675bf6920133e1687c161ff"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-6/communication-clarify-gemini-en-de39dd35b8a6.mp4",
+          "content_hash": "de39dd35b8a65ea7773497e90a2c7de87a813d1fdd345cf3d32ac8555c3fe9fa",
+          "duration_s": 58,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-clarify-gemini-en-abaad8628d30.vtt",
+            "content_hash": "abaad8628d3050ecf7e6335ba0872bdfee94fb4edb661b60e2610138cbc72283"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-clarify-gemini-en-d63365f73cd9-poster.jpg",
+            "content_hash": "d63365f73cd9fd083920d291bdfa8191d52b48b001b698b1c7e7a87d35055fa2"
+          }
+        }
+      },
+      "path": "/training/bhw-1-6/communication-clarify-gemini-fil-c59590ab9a97-poster.jpg",
+      "content_hash": "c59590ab9a979c92c3e2432e375e3fa841fe55516675bf6920133e1687c161ff"
     }
-  ]
+  ],
+  "featured_asset_id": "communication-clarify-story"
 }
