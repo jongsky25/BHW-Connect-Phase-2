@@ -1,3 +1,4 @@
+import {beforeProposed161} from './lesson-161-proposal-compat.mjs';
 // A bounded historical view for released-lesson checks. It is not release approval.
 // Validate the actual proposed bytes before recovering their pinned predecessor.
 // The 1.5.5 tests independently check actual draft content, old media and mappings.
@@ -7,7 +8,7 @@ const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 const receipt=JSON.parse(fs.readFileSync(path.join(root,'docs/lesson-155-proposal-receipt.json'),'utf8'));
 export const selfManagementLeaf='content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/';
 export function beforeProposed155(p){
- const actual=fs.readFileSync(path.join(root,p));
+ const actual=beforeProposed161(p);
  const entry=receipt.changed_existing_files[p];
  if(!entry)return actual;
  if(receipt.status!=='draft'||receipt.owner_release_approval!==false)throw Error('1.5.5 proposal must not claim release approval');

@@ -251,6 +251,46 @@
       "caption_en": "The neighbor answers. What should Gibs do first?",
       "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop.",
       "review_status": "draft"
+    },
+    {
+      "id": "communication-listen-story",
+      "alt_fil": "Anim na narrated beat: humihingi si Gibs ng pahintulot, nakikinig kay Liza at tinitiyak ang buod.",
+      "alt_en": "Six narrated beats: Gibs asks permission, listens to Liza and checks his summary.",
+      "caption_fil": "Pahintulot, pakikinig at buod na maaaring iwasto ng kausap.",
+      "caption_en": "Permission, listening and a summary the person can correct.",
+      "provenance": "Original lesson1.6.1 Remotion animation with new built-in imagegen six distinct listening scenes preserving new male Gibs identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Six distinct illustrated listening actions with animated labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-6/communication-listen-gemini-fil-3e5e0657af9e.mp4",
+          "content_hash": "3e5e0657af9edef86e9bb4c03b0b85ed0cc6d001b704d12c5f22d71b8e30e383",
+          "duration_s": 71,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-listen-gemini-fil-12a2ce4c378a.vtt",
+            "content_hash": "12a2ce4c378a96ba6ca6c4910f043c61552b76536086df084fb03aa02d58bd2b"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-listen-gemini-fil-2a3b1803dc12-poster.jpg",
+            "content_hash": "2a3b1803dc1284c5a857b54e9ad91d945b75eb1b329d3b14046b4d277b210356"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-6/communication-listen-gemini-en-264b298f93f8.mp4",
+          "content_hash": "264b298f93f85f2e232f81116a2b29290bf2c7495c26b8d118988b32a322698e",
+          "duration_s": 63,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-listen-gemini-en-b3d558036b43.vtt",
+            "content_hash": "b3d558036b43237ff8dbc730183bf7318a40df8405afc9288909c803ea184d5b"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-listen-gemini-en-847b2bbc5462-poster.jpg",
+            "content_hash": "847b2bbc546213760cd3e00ea3fdedf9aaa6dd90c295fa969cd8b200ac5c9b40"
+          }
+        }
+      },
+      "path": "/training/bhw-1-6/communication-listen-gemini-fil-2a3b1803dc12-poster.jpg",
+      "content_hash": "2a3b1803dc1284c5a857b54e9ad91d945b75eb1b329d3b14046b4d277b210356"
     }
-  ]
+  ],
+  "featured_asset_id": "communication-listen-story"
 }

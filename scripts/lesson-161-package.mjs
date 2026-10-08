@@ -12,13 +12,13 @@ for p,v in receipts.items():
  b=(r/'public'/p.lstrip('/')).read_bytes()
  assert len(b)==v['bytes'] and sha(b)==v['sha256'] and base64.b64encode(b).decode() in text,p
 paths=set()
-for pattern in ['docs/lesson-161-*','scripts/lesson-161-*.mjs','scripts/remotion-communication-listen-narrate.mjs','scripts/tests/lesson-161.test.mjs','content/training/day1-basic-competencies/modules/06-komunikasyon/**/*','remotion/src/communication-listen/*','remotion/public/communication-listen/*','public/training/bhw-1-6/*','public/training/audio/06-komunikasyon/**/*','.preview/lesson161-source/*-p*','.preview/lesson161-raw/*','.preview/lesson161-excerpts/*','.preview/lesson161-deliverables/*.json','.preview/lesson161-deliverables/*.png']:
+for pattern in ['docs/lesson-161-*','scripts/lesson-161-*','scripts/remotion-communication-listen-narrate.mjs','scripts/tests/lesson-161.test.mjs','content/training/day1-basic-competencies/modules/06-komunikasyon/**/*','remotion/src/communication-listen/*','remotion/public/communication-listen/*','public/training/bhw-1-6/*','public/training/audio/06-komunikasyon/**/*','.preview/lesson161-source/*-p*','.preview/lesson161-source/privacy-irr.html','.preview/lesson161-source/tesda-filter.html','.preview/lesson161-raw/*','.preview/lesson161-initial-raw/*','.preview/lesson161-excerpts/*','.preview/lesson161-deliverables/*.json','.preview/lesson161-deliverables/*.png','.preview/lesson161-deliverables/*.pdf','.preview/lesson161-deliverables/lesson-161-print-kit.*.html']:
  paths.update(p for p in r.glob(pattern) if p.is_file())
 paths.update([html,out/'lesson-1.6.1-mila-review.html',r/'content/training/day1-basic-competencies/narration.json',r/'remotion/src/Root.tsx',r/'src/components/elearning/reference-lessons.tsx',r/'content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json'])
 report={'status':'passed','inline_media_exact_matches':len(receipts),'files':[]};target=out/'lesson-1.6.1-gibs-review.zip'
 with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:
  for p in sorted(paths):
-  name=p.as_posix();assert not name.startswith('/') and '..' not in p.parts and '\\' not in name
+  name=p.as_posix();assert not name.startswith('/') and '..' not in p.parts and chr(92) not in name
   b=p.read_bytes();z.writestr(name,b);report['files'].append({'member':name,'bytes':len(b),'sha256':sha(b)})
 with zipfile.ZipFile(target) as z:
  names=z.namelist();assert len(names)==len(set(names));assert z.testzip() is None

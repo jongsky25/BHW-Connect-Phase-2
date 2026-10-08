@@ -13,7 +13,7 @@ import {loadReferenceModule} from './lib/reference-content.mjs';
 import {planReferenceNarration} from './lib/reference-narration.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const model='gemini-3.8-flash',promptRevision='respectful-listening-v1';
-if(!process.env.GEMINI_API_KEY)throw new Error('Existing repository Gemini secret unavailable for audio review');
+// Cached review may be reused only for the exact actual decoded audio bytes.
 const sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const key='06-komunikasyon';
 const {lessons}=loadReferenceModule(path.join(root,'content/training/day1-basic-competencies/modules',key),path.join(root,'public'));
@@ -41,6 +41,7 @@ const prior=existsSync(priorPath)?JSON.parse(readFileSync(priorPath,"utf8")):nul
 for(const record of records){
  const reusable=prior?.prompt_revision===promptRevision&&prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response&&!r.model_response.startsWith("Review unavailable"));
  if(reusable){report.records.push({...reusable,source_video:record.source_video??null,source_video_sha256:record.source_video_sha256??null,reused_exact_decoded_audio:true});save();console.log("Reused exact-byte review "+record.id);continue;}
+ if(!process.env.GEMINI_API_KEY)throw new Error('Gemini credential required for an uncached actual-audio review');
  const prompt=`Analyze the attached actual ${record.language==='fil'?'Filipino (Tagalog)':'Philippine English'} educational narration. First transcribe what you hear completely, without inventing words. Report whether speech is audible throughout, any truncated words or clipped ending, awkward initialism/name pronunciation (Gibs, Liza and BHW), pacing, natural pitch/pace variation and whether permission, setting and language choice, uninterrupted listening, no blame, paraphrase and accuracy check have natural expression; note any changed negation, condition or ambiguous number, and any apparent narrator timbre change. Flag concrete timestamps for concerns and uncertainty. Return a JSON object with transcript, speech_present, clipped_ending, delivery, pronunciation_concerns, other_concerns. Do not claim human listening or approval. This audio is fictional training material with no real patient data.`;
  let reviewed;
  for(let attempt=0;attempt<3;attempt++){

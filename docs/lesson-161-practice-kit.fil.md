@@ -12,6 +12,15 @@ Kathang-isip. Gusto mo ng mas tahimik na lugar, Filipino at kayo muna ni Gibs. M
 
 Itsek ang pahintulot; lugar at wika; pakikinig nang walang pagsabat; buod; pagtiyak kung tama. Sa bawat isa: nagawa / may prompt / hindi pa. Isulat ang eksaktong linyang nakatulong at ulitin ang minadaling hakbang. Hindi assessor rating ang peer feedback.
 
+Pahintulot: [ ] nagawa  [ ] may prompt  [ ] hindi pa
+Lugar at wika: [ ] nagawa  [ ] may prompt  [ ] hindi pa
+Pakikinig nang walang pagsabat: [ ] nagawa  [ ] may prompt  [ ] hindi pa
+Buod sa sariling salita: [ ] nagawa  [ ] may prompt  [ ] hindi pa
+Pagtiyak kung tama: [ ] nagawa  [ ] may prompt  [ ] hindi pa
+
+Nakatulong na linya: ____________________
+Hakbang na uulitin: ____________________
+
 ## One-page listening aid
 
 Pahintulot: “Maaari po ba tayong mag-usap?”

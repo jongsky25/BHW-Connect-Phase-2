@@ -67,6 +67,21 @@
       "file": "reference-p30.png",
       "bytes": 187648,
       "sha256": "319087449d505fae53282134721f4cde86d807ea5762d39c72b0f97a36bd4924"
+    },
+    {
+      "file": "tesda-p26.png",
+      "sha256": "613d064978554e09ef089eac48291efdafe6c104bff5da91334dc0b88125b047",
+      "bytes": 219898
+    },
+    {
+      "file": "tesda-p27.png",
+      "sha256": "df52a4e693651a2da0288d2c15bfcfa4b9a66d897460ec11364b3716373dbd90",
+      "bytes": 123564
+    },
+    {
+      "file": "tesda-p28.png",
+      "sha256": "74f7d3f9bd5d3e0260e3cc38a1f9b15550d62f30012bcbe84c4e1c425d5665ef",
+      "bytes": 167682
     }
   ],
   "claim_to_passage": [
@@ -127,9 +142,30 @@
   "tesda_verification": {
     "official_catalog_url": "https://www.tesda.gov.ph/Download/Training_Regulations?SearchTitle=Barangay&Searchcat=Training%20Regulations",
     "catalog_sha256": "746bdb95a49db400d5e101e7e121f8c67b978298e92d71eb87b5f1a49cf2c595",
-    "observed": "Official catalog distinguishes Barangay Health Services NC II download1886 from superseded1887. Download requires email registration; direct historical PDF URLs returned404.",
-    "current_edition_and_competency_pages": "not verified; no latest-edition claim made",
-    "mapping_authority": "2022 DOH facilitator PDF28, not represented as verified current TESDA regulations"
+    "observed": "Initial guessed TR URLs returned404. The established sources.json primary URL successfully retrieved official Revision01 PDF. Catalog distinguishes current download1886 and superseded1887.",
+    "current_edition_and_competency_pages": "Edition and pages verified in official available PDF; catalog current/superseded entries observed. Do not claim independent confirmation that no later edition exists.",
+    "mapping_authority": "2022 DOH facilitator PDF28, not represented as verified current TESDA regulations",
+    "document_url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+    "file_sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+    "file_bytes": 1495226,
+    "edition": "Revision01, promulgated01/11/2019, as printed in official document",
+    "relevant_PDF_pages": [
+      26,
+      27,
+      28
+    ],
+    "printed_pages": [
+      22,
+      23,
+      24
+    ],
+    "unit_code": "400311215",
+    "verified_passages": [
+      "Gather data/information: evidence, facts and scope; confidentiality and accuracy",
+      "Assess gathered data/information",
+      "Record and present information",
+      "Evidence guide: observe individual performance in workplace or simulated environment"
+    ]
   },
   "human_source_and_policy_signoff": "pending",
   "source_files_packaging": "Original internal PDFs stay in local audit evidence; review ZIP includes audited excerpts/hashes for private review, not public redistribution."

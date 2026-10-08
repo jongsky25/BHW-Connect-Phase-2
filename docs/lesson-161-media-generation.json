@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-08T05:52:42.953Z",
+  "source_commit": "e2377dfed60e04d1faa39ef1caeead801469dab8",
+  "owner_review": "pending",
+  "render_input_sha256": "279f7fd25a40b5c5dc15e1a66edd04c9581d0badafd0924acecbee4aeb8705d8",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 69.721,
+      "beats": [
+        {
+          "zone": "liza",
+          "index": 0,
+          "text": "Si Gibs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibs; hindi niya hinulaan ang katahimikan.",
+          "start_ms": 0,
+          "end_ms": 10240
+        },
+        {
+          "zone": "permission",
+          "index": 1,
+          "text": "Ipinaliwanag niya ang layunin at gamit ng impormasyon. Humingi siya ng pahintulot. Pinili ni Liza ang mas tahimik na lugar, Filipino, at silang dalawa muna.",
+          "start_ms": 10540,
+          "end_ms": 21620
+        },
+        {
+          "zone": "listen",
+          "index": 2,
+          "text": "Itinabi ni Gibs ang telepono. Nagtanong siya nang bukas at naghintay. Ikinuwento ni Liza ang hadlang sa pag-aalaga ng anak. Walang pagsabat o paratang.",
+          "start_ms": 21920,
+          "end_ms": 33280
+        },
+        {
+          "zone": "profile",
+          "index": 3,
+          "text": "Tinanong ni Gibs kung tama ang buod. “Kapag wala ang kapatid ko,” paglilinaw ni Liza. Ibinalik niya ang mas tumpak na buod at kinumpirma ito ni Liza.",
+          "start_ms": 33580,
+          "end_ms": 44420
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Sa pagsasanay, gumamit ng kathang-isip na role cards. Lahat ay susubok bilang BHW. Tukuyin ang linyang nakatulong at ulitin ang minadaling hakbang.",
+          "start_ms": 44720,
+          "end_ms": 56080
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Nakapagsalita si Liza at tiniyak ni Gibs ang pagkaintindi. Walang pangako ng childcare o appointment. Sa susunod na awtorisadong pagbisita, sanayin ang pambungad at buod na tanong.",
+          "start_ms": 56380,
+          "end_ms": 69660
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-listen-gemini-fil-3e5e0657af9e.mp4",
+        "content_hash": "3e5e0657af9edef86e9bb4c03b0b85ed0cc6d001b704d12c5f22d71b8e30e383",
+        "duration_s": 71,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-listen-gemini-fil-12a2ce4c378a.vtt",
+          "content_hash": "12a2ce4c378a96ba6ca6c4910f043c61552b76536086df084fb03aa02d58bd2b"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-listen-gemini-fil-2a3b1803dc12-poster.jpg",
+          "content_hash": "2a3b1803dc1284c5a857b54e9ad91d945b75eb1b329d3b14046b4d277b210356"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-listen-gemini-fil-2a3b1803dc12-poster.jpg",
+        "content_hash": "2a3b1803dc1284c5a857b54e9ad91d945b75eb1b329d3b14046b4d277b210356"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 61.571,
+      "beats": [
+        {
+          "zone": "liza",
+          "index": 0,
+          "text": "Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses; he does not guess the reason for her silence.",
+          "start_ms": 0,
+          "end_ms": 9880
+        },
+        {
+          "zone": "permission",
+          "index": 1,
+          "text": "He explains the purpose and information use, then asks permission. Liza chooses a quieter place, Filipino, and just the two of them for now.",
+          "start_ms": 10180,
+          "end_ms": 19980
+        },
+        {
+          "zone": "listen",
+          "index": 2,
+          "text": "Gibs puts his phone away, offers an open invitation and waits. Liza describes her childcare barrier. He listens without interruption or blame.",
+          "start_ms": 20280,
+          "end_ms": 30120
+        },
+        {
+          "zone": "profile",
+          "index": 3,
+          "text": "Gibs asks whether his summary is right. “When my sister is away,” Liza clarifies. He gives the more accurate summary and Liza confirms it.",
+          "start_ms": 30420,
+          "end_ms": 39780
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "In practice, use fictional role cards. Everyone takes the BHW role. Identify one helpful phrase and repeat any rushed step.",
+          "start_ms": 40080,
+          "end_ms": 49520
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Liza has spoken and Gibs has checked his understanding. No childcare or appointment is promised. At the next authorized visit, rehearse the opening and summary question.",
+          "start_ms": 49820,
+          "end_ms": 61500
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-listen-gemini-en-264b298f93f8.mp4",
+        "content_hash": "264b298f93f85f2e232f81116a2b29290bf2c7495c26b8d118988b32a322698e",
+        "duration_s": 63,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-listen-gemini-en-b3d558036b43.vtt",
+          "content_hash": "b3d558036b43237ff8dbc730183bf7318a40df8405afc9288909c803ea184d5b"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-listen-gemini-en-847b2bbc5462-poster.jpg",
+          "content_hash": "847b2bbc546213760cd3e00ea3fdedf9aaa6dd90c295fa969cd8b200ac5c9b40"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-listen-gemini-en-847b2bbc5462-poster.jpg",
+        "content_hash": "847b2bbc546213760cd3e00ea3fdedf9aaa6dd90c295fa969cd8b200ac5c9b40"
+      }
+    }
+  ]
+}

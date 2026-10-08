@@ -42,30 +42,37 @@ jobs:
           KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
         run: node scripts/lesson-161-published-snapshot.mjs
       - name: Generate actual target-only draft media
-        if: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON161_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-161-record-fetch.mjs'
         run: node scripts/lesson-161-media-build.mjs
+      - name: Verify actual media and retained historical mappings
+        run: node scripts/lesson-161-media-verify.mjs
       - name: Full audio model review
-        if: always() && true
+        if: always()
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON161_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-161-record-fetch.mjs'
         run: node scripts/lesson-161-audio-review.mjs
       - name: Decode and focused-review shipped media
-        if: always() && true
+        if: always()
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON161_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-161-record-fetch.mjs'
         run: node scripts/lesson-161-audio-focus.mjs
+      - name: Retrieve hash-verified source excerpts for private review
+        run: |
+          python3 -m pip install PyMuPDF==1.26.6
+          python3 scripts/lesson-161-source-evidence.py
       - name: Build actual-component self-contained review
         run: node scripts/lesson-161-review-build.mjs
       - name: Desktop/mobile offline playback and completion
         run: node scripts/lesson-161-browser-verify.mjs
+      - name: Print bilingual role cards and listening aid
+        run: node scripts/lesson-161-print-kit.mjs
       - name: Package review and verify integrity
         if: success()
         run: node scripts/lesson-161-package.mjs

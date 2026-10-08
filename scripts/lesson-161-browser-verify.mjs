@@ -22,7 +22,7 @@ try{
    const image=page.locator('article[data-scene] figure img').first();await image.scrollIntoViewIfNeeded();await page.waitForFunction(()=>Array.from(document.querySelectorAll('article[data-scene] figure img')).some(i=>i.complete&&i.naturalWidth>0));
    assert(await page.getByRole('button',{name:complete,exact:true}).isDisabled());
    const caseRecord={width,language:lang,mode,section:section.id,image_visible_before_answer:true,offline:true};
-   if(section.check){for(let c=0;c<3;c++){await page.getByRole('button',{name:section.check.options[c][lang],exact:true}).click();const text=await page.getByRole('status').innerText();assert(text.includes(lang==='en'?'First:':'Una:')&&text.includes(lang==='en'?'Third:':'Ikatlo:'));}caseRecord.all_three_rationales=true;}
+   if(section.check){assert.equal(await page.getByRole('status').count(),0);assert.equal(await page.getByText(section['takeaway_'+lang],{exact:true}).count(),0);for(let c=0;c<3;c++){await page.getByRole('button',{name:section.check.options[c][lang],exact:true}).click();const text=await page.getByRole('status').innerText();assert(text.includes(lang==='en'?'First:':'Una:')&&text.includes(lang==='en'?'Third:':'Ikatlo:'));}caseRecord.all_three_rationales=true;}
    if(slide)await page.getByText(lang==='en'?'Full narration and audio':'Buong salaysay at audio',{exact:true}).click();
    assert.equal(await page.locator('audio').count(),1);await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.readyState>=2&&a.currentTime>0;});
    const timings=manifest.lessons['communication-listen'].sections[section.id][lang].timings;caseRecord.highlight_zones=[];
@@ -42,6 +42,16 @@ try{
   const context=await browser.newContext();const page=await context.newPage();await page.goto('http://127.0.0.1:4176/?lang='+lang);await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();await context.setOffline(true);
   await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});
   const cues=await page.locator('video').evaluate(v=>({muted:v.muted,cues:v.textTracks[0]?.cues?.length??0,duration:v.duration}));assert.equal(cues.muted,false);assert.equal(cues.cues,6);await page.locator('video').evaluate(v=>{v.currentTime=v.duration-0.5});await page.waitForFunction(()=>document.querySelector('video').ended,null,{timeout:10000});report.cases.push({language:lang,unmuted_story:true,six_cues:true,complete_ending:true,offline:true,duration:cues.duration});await context.close();
+ }
+ for(const lang of ['fil','en'])for(const width of [1280,390]){
+  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();await page.goto('http://127.0.0.1:4176/?lang='+lang);
+  await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
+  await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
+  await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();
+  const dialog=page.getByRole('dialog');await dialog.waitFor();assert(await dialog.locator('img').first().isVisible());assert.equal(await page.locator('audio').count(),1);
+  await page.keyboard.press('Escape');await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.locator('audio').evaluate(a=>window.__previousAudio=a);
+  await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));report.cases.push({language:lang,width,mode_switch_pauses:true,language_switch_pauses:true,fullscreen_picture:true,single_player:true,no_horizontal_overflow:true});await context.close();
  }
  assert.equal(report.errors.length,0);report.status='passed';report.actual_case_count=report.cases.length;save();
 }catch(error){report.status='failed';report.error=String(error.stack??error);save();throw error;}finally{await browser.close();await new Promise(r=>server.close(r));}

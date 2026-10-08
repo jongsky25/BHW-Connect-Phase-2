@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural Philippine English in one steady adult Filipina woman Kore narrator voice throughout every heading, sentence and takeaway. Warm, calm, respectful listening demonstration. Gibs is the male BHW character, not a male narrator; never switch speakers to act out dialogue. Say Gibs as gibz and Liza as LEE-sa. Preserve every word, negation, permission and accuracy-check question. Allow natural pauses; finish all instructions. Do not translate or add words.",
+  "durationSeconds": 61.571,
+  "beats": [
+    {
+      "zone": "liza",
+      "index": 0,
+      "text": "Gibs, a male BHW, visits Liza. A neighbor answers for her. Gibs pauses; he does not guess the reason for her silence.",
+      "start_ms": 0,
+      "end_ms": 9880
+    },
+    {
+      "zone": "permission",
+      "index": 1,
+      "text": "He explains the purpose and information use, then asks permission. Liza chooses a quieter place, Filipino, and just the two of them for now.",
+      "start_ms": 10180,
+      "end_ms": 19980
+    },
+    {
+      "zone": "listen",
+      "index": 2,
+      "text": "Gibs puts his phone away, offers an open invitation and waits. Liza describes her childcare barrier. He listens without interruption or blame.",
+      "start_ms": 20280,
+      "end_ms": 30120
+    },
+    {
+      "zone": "profile",
+      "index": 3,
+      "text": "Gibs asks whether his summary is right. “When my sister is away,” Liza clarifies. He gives the more accurate summary and Liza confirms it.",
+      "start_ms": 30420,
+      "end_ms": 39780
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "In practice, use fictional role cards. Everyone takes the BHW role. Identify one helpful phrase and repeat any rushed step.",
+      "start_ms": 40080,
+      "end_ms": 49520
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Liza has spoken and Gibs has checked his understanding. No childcare or appointment is promised. At the next authorized visit, rehearse the opening and summary question.",
+      "start_ms": 49820,
+      "end_ms": 61500
+    }
+  ],
+  "audio_sha256": "470f00106d1569ad908335c8a6cb7949ce907ccad929bdc439966f3bc30ca534"
+}

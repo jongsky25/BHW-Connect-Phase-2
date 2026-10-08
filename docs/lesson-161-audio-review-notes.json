@@ -3,5 +3,16 @@
   "owner_package_review": "pending",
   "policy_SME_review": "pending",
   "model_analysis": "Supporting evidence only; inspect exact generated audio full and focused reports. No human signoff inferred.",
-  "initial_audio": "First generated media will be retained as initial evidence. Any subsequent corrections must retain original responses and initial track receipts."
+  "initial_audio": "First generated media will be retained as initial evidence. Any subsequent corrections must retain original responses and initial track receipts.",
+  "initial_model_findings": {
+    "complete_read_and_AAC_reviews": 14,
+    "fil_Liza_name": "Some clips transcribed Lay-za; mixed Lee-sa/Lay-za in check.",
+    "voice_changes": [
+      "English listen: apparent voice switch in quoted Gibs dialogue",
+      "Filipino practice and check: apparent register/speaker changes",
+      "Filipino story: apparent timbre changes at beat joins"
+    ],
+    "initial_focused_review": "Partial: provider HTTP503 stopped first run; copied pronunciation hint was wrong and is superseded."
+  },
+  "correction_plan": "Target-only revised synthesis direction, explicit pronunciation aliases and steady female narrator; regenerate target Read and story tracks, retain initial tracks and responses; rerun versioned full and focused model review."
 }

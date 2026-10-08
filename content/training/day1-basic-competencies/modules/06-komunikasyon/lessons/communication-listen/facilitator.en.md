@@ -4,7 +4,7 @@ In a simulated household interview, ask permission, establish a comfortable sett
 
 ## [time-materials] Time Materials
 
-90 minutes of guided practice within the same eight-hour communication program. The five lesson allocations (90 + 90 + 120 + 90 + 90) and the shared 480-minute run sheet are two views of one program, not additive hours. The 90-minute lesson allocation is authored, not an official standalone minimum. Print the Gibs/Liza role cards, observer checklist and one-page listening aid in the practice kit; use paper and pens. No real personal records. SELF_STUDY_TIMING_PENDING
+90 minutes of guided practice within the same eight-hour communication program. The five lesson allocations (90 + 90 + 120 + 90 + 90) and the shared 480-minute run sheet are two views of one program, not additive hours. The 90-minute lesson allocation is authored, not an official standalone minimum. Print the Gibs/Liza role cards, observer checklist and one-page listening aid in the practice kit; use paper and pens. No real personal records. Authored independent estimate: 8–11 minutes, using the longer language track. Actual six-screen narration is 255.90 seconds in English and 282.02 seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.
 
 ## [prepare] Prepare
 

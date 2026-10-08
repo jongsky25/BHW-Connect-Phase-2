@@ -17,5 +17,16 @@
   ],
   "sibling_objectives_checks_ids_unchanged": true,
   "historical_media_retained": true,
-  "sibling_narration_regeneration_required_for_changed_read_copy": true
+  "sibling_narration_regeneration_required_for_changed_read_copy": true,
+  "portrait_only_exceptions": [
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/slides.json",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/slides.json",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/slides.json",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/slides.json"
+  ],
+  "shared_pronoun_exception": "Shared English liza/listen paragraphs replace her/She with his/He where referring to male BHW Gibs; no resident pronouns changed."
 }

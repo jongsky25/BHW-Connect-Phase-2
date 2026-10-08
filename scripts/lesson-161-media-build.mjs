@@ -13,7 +13,8 @@ const run=(script,args=[])=>execFileSync(process.execPath,[path.join(root,script
 const sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const json=p=>JSON.parse(readFileSync(path.join(root,p),'utf8'));
 const save=(p,j)=>writeFileSync(path.join(root,p),JSON.stringify(j,null,2)+'\n');
-if(!process.env.GEMINI_API_KEY)throw new Error('Existing repository GEMINI_API_KEY secret is unavailable. No replacement provider is authorized.');
+const renderOnly=process.argv.includes('--render-only');
+if(!renderOnly&&!process.env.GEMINI_API_KEY)throw new Error('Existing repository GEMINI_API_KEY secret is unavailable. No replacement provider is authorized.');
 const lessonPath='content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json';
 const narrationPath='content/training/day1-basic-competencies/narration.json';
 const allowed=['communication-listen','communication-clarify','communication-explain','communication-record','communication-handoff'];
@@ -28,8 +29,10 @@ const args=['--modules','06-komunikasyon','--lessons',allowed.join(',')];
 let deleted=[];
 let readGenerationError=null;
 try{
+ if(!renderOnly){
   run('scripts/training-narrate.mjs',[...args,'--provider','gemini']);
   run('scripts/training-narrate.mjs',[...args,'--provider','gemini','--max-requests','300','--apply']);
+ }
 }catch(error){
   readGenerationError=String(error.message).split('\n')[0];
   console.error('Some target Read tracks may be incomplete; saving completed media for scoped retry.');
@@ -48,7 +51,8 @@ const pending=plan.filter(i=>i.lessonKey==='communication-listen'&&i.action!=='s
 for(const item of plan.filter(i=>allowed.includes(i.lessonKey)))if(item.voice!=='gemini:gemini-3.8-flash-tts:Kore')throw new Error('Unexpected synthesis provider');
 run('scripts/training-narrate.mjs',[...args,'--provider','gemini']);
 run('scripts/training-narrate.mjs',args);
-for(const lang of ['fil','en'])run('scripts/remotion-communication-listen-narrate.mjs',[lang]);
+if(!renderOnly)for(const lang of ['fil','en'])run('scripts/remotion-communication-listen-narrate.mjs',[lang]);
+if(renderOnly&&pending.length)throw Error('Render-only requires complete selected Read tracks');
 for(const lang of ['fil','en'])for(const ext of ['mp3','json'])if(!existsSync(path.join(root,`remotion/public/communication-listen/narration-${lang}.${ext}`)))throw new Error('Story files missing');
 if(!existsSync(path.join(root,'remotion/public/communication-listen/liza.png')))throw new Error('Original art missing');
 const lesson=json(lessonPath);
@@ -56,7 +60,7 @@ const story={id:'communication-listen-story',alt_fil:'Anim na narrated beat: hum
 const reports=[];
 const previous=existsSync(path.join(root,'docs/lesson-161-media-generation.json'))?json('docs/lesson-161-media-generation.json'):null;
 const inputFiles=['remotion/src/communication-listen/CommunicationListenStory.tsx','remotion/src/communication-listen/narration.ts','scripts/remotion-render.mjs','remotion/public/communication-listen/liza.png',...['fil','en'].flatMap(lang=>['mp3','json'].map(ext=>`remotion/public/communication-listen/narration-${lang}.${ext}`))];
-inputFiles.push(...['permission','listen','profile','practice','check'].map(id=>`remotion/public/communication-listen/${id}.png`));
+inputFiles.push(...['permission','listen','profile','practice','check','closing'].map(id=>`remotion/public/communication-listen/${id}.png`));
 const renderInputHash=createHash('sha256').update(JSON.stringify(inputFiles.map(p=>[p,sha(path.join(root,p))]))).digest('hex');
 const oldStory=lesson.assets.find(a=>a.id===story.id);
 const cached=previous?.render_input_sha256===renderInputHash&&oldStory&&['fil','en'].every(lang=>[oldStory.videos[lang],oldStory.videos[lang].poster,oldStory.videos[lang].captions].every(m=>existsSync(path.join(root,'public',m.path.slice(1)))&&sha(path.join(root,'public',m.path.slice(1)))===m.content_hash));
@@ -81,7 +85,7 @@ if(!pending.length){
   const low=Math.ceil(Math.max(...Object.values(durations))/60+3),high=low+3;
   for(const lang of ['fil','en']){
     const guide=path.join(root,path.dirname(lessonPath),`facilitator.${lang}.md`);
-    const estimate=lang==='en'?`Authored independent estimate: ${low}–${high} minutes. Actual six-screen narration is ${durations.en.toFixed(2)} seconds in English and ${durations.fil.toFixed(2)} seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.`:`Ginawang pagtataya ng sariling pag-aaral: ${low}–${high} minuto. Aktuwal na salaysay ng anim na screen: ${durations.en.toFixed(2)} segundo sa English at ${durations.fil.toFixed(2)} segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.`;
+    const estimate=lang==='en'?`Authored independent estimate: ${low}–${high} minutes, using the longer language track. Actual six-screen narration is ${durations.en.toFixed(2)} seconds in English and ${durations.fil.toFixed(2)} seconds in Filipino; allow 3–6 minutes for the check and reflection. Optional story or replay is additional.`:`Ginawang pagtataya ng sariling pag-aaral: ${low}–${high} minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: ${durations.en.toFixed(2)} segundo sa English at ${durations.fil.toFixed(2)} segundo sa Filipino; maglaan ng 3–6 minuto para sa check at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.`;
     writeFileSync(guide,readFileSync(guide,'utf8').replace(/SELF_STUDY_TIMING_PENDING|Authored independent estimate:[^\n]+|Ginawang pagtataya ng sariling pag-aaral:[^\n]+/g,estimate));
   }
 }

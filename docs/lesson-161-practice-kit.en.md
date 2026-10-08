@@ -12,6 +12,15 @@ Fictional. You prefer a quieter place, Filipino and just you and Gibs for now. H
 
 Check permission; place and language; uninterrupted listening; paraphrase; accuracy check. Mark done / prompted / not yet for each. Record one exact helpful phrase and repeat a rushed step. Peer feedback is not an assessor rating.
 
+Permission: [ ] done  [ ] prompted  [ ] not yet
+Place and language: [ ] done  [ ] prompted  [ ] not yet
+Uninterrupted account: [ ] done  [ ] prompted  [ ] not yet
+Paraphrase: [ ] done  [ ] prompted  [ ] not yet
+Accuracy check: [ ] done  [ ] prompted  [ ] not yet
+
+Exact helpful phrase: ____________________
+Step to repeat: ____________________
+
 ## One-page listening aid
 
 Permission: “May we talk?”

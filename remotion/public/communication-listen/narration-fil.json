@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural Filipino (Tagalog) in one steady adult Filipina woman Kore narrator voice throughout every heading, sentence and takeaway. Warm, calm, respectful listening demonstration. Gibs is the male BHW character, not a male narrator; never switch speakers to act out dialogue. Say Gibs as gibz and Liza as LEE-sa. Preserve every word, negation, permission and accuracy-check question. Allow natural pauses; finish all instructions. Do not translate or add words.",
+  "durationSeconds": 69.721,
+  "beats": [
+    {
+      "zone": "liza",
+      "index": 0,
+      "text": "Si Gibs, lalaking BHW, ay bumisita kay Liza. Kapitbahay ang sumasagot para sa kanya. Huminto si Gibs; hindi niya hinulaan ang katahimikan.",
+      "start_ms": 0,
+      "end_ms": 10240
+    },
+    {
+      "zone": "permission",
+      "index": 1,
+      "text": "Ipinaliwanag niya ang layunin at gamit ng impormasyon. Humingi siya ng pahintulot. Pinili ni Liza ang mas tahimik na lugar, Filipino, at silang dalawa muna.",
+      "start_ms": 10540,
+      "end_ms": 21620
+    },
+    {
+      "zone": "listen",
+      "index": 2,
+      "text": "Itinabi ni Gibs ang telepono. Nagtanong siya nang bukas at naghintay. Ikinuwento ni Liza ang hadlang sa pag-aalaga ng anak. Walang pagsabat o paratang.",
+      "start_ms": 21920,
+      "end_ms": 33280
+    },
+    {
+      "zone": "profile",
+      "index": 3,
+      "text": "Tinanong ni Gibs kung tama ang buod. “Kapag wala ang kapatid ko,” paglilinaw ni Liza. Ibinalik niya ang mas tumpak na buod at kinumpirma ito ni Liza.",
+      "start_ms": 33580,
+      "end_ms": 44420
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Sa pagsasanay, gumamit ng kathang-isip na role cards. Lahat ay susubok bilang BHW. Tukuyin ang linyang nakatulong at ulitin ang minadaling hakbang.",
+      "start_ms": 44720,
+      "end_ms": 56080
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Nakapagsalita si Liza at tiniyak ni Gibs ang pagkaintindi. Walang pangako ng childcare o appointment. Sa susunod na awtorisadong pagbisita, sanayin ang pambungad at buod na tanong.",
+      "start_ms": 56380,
+      "end_ms": 69660
+    }
+  ],
+  "audio_sha256": "663d86acadea1a2a40dd0be355e151586ad80984f61c1d10768655d941cffb58"
+}

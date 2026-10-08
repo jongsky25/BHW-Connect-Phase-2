@@ -68,6 +68,10 @@ export const spokenText = (text, language) =>
     .replace(/\s+/g, " ")
     .trim();
 
+// Target-only speech aliases; authored text and browser timing labels stay unchanged.
+export const communicationListenSpokenText = (text, language) =>
+  spokenText(text, language).replace(/\bLiza\b/g, "Lisa").replace(/\bGibs\b/g, "Gibz");
+
 const L3_BITRATES = {
   1: [0, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320],
   2: [0, 8, 16, 24, 32, 40, 48, 56, 64, 80, 96, 112, 128, 144, 160],
@@ -152,7 +156,9 @@ export async function renderNarration(item, { synthesizeUtterance, synthesizeWit
     const audio = await synthesizeWithGemini(item.zones, item.language, {
       apiKey: geminiApiKey,
       kbps: GEMINI_NARRATION_KBPS,
-      speak: (zone) => spokenText(zone.text, item.language),
+      speak: (zone) => item.lessonKey === "communication-listen"
+        ? communicationListenSpokenText(zone.text, item.language)
+        : spokenText(zone.text, item.language),
       ...(item.speechStyle ? { style: item.speechStyle } : {}),
       ...(fetchImpl ? { fetchImpl } : {}),
     });

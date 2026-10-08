@@ -30,7 +30,7 @@ export const calculateCommunicationListenMetadata: CalculateMetadataFunction<Com
 const cream = "#fffaf2", gold = "#ffe5a3";
 function Graphic({index}: {index: number; language: "fil" | "en"; frame: number}) {
   return <div style={{position: "absolute", right: 32, top: 105, width: 395, height: 264, background: cream, borderRadius: 20, overflow: "hidden"}}>
-    <Img src={staticFile(`communication-listen/${COMMUNICATION_LISTEN_BEATS[index].id}.png`)} style={{width: "100%", height: "100%", objectFit: "contain"}}/>
+    <Img src={staticFile(`communication-listen/${index === 5 ? "closing" : COMMUNICATION_LISTEN_BEATS[index].id}.png`)} style={{width: "100%", height: "100%", objectFit: "contain"}}/>
   </div>;
 }
 function Scene({index, language}: {index: number; language: "fil" | "en"}) {

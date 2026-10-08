@@ -2,6 +2,7 @@
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
+import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {planReferenceNarration} from '../lib/reference-narration.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/06-komunikasyon/',leaf=base+'lessons/communication-listen/';
 const bytes=p=>fs.readFileSync(root+'/'+p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
@@ -36,10 +37,21 @@ describe('lesson 1.6.1 Gibs listening draft',()=>{
    expect(sha(Buffer.from(text)),p).toBe(h);
   }
  });
+ it('verifies exact draft successor bytes before historical predecessor views',()=>{
+  const receipt=j('docs/lesson-161-proposal-receipt.json');expect(receipt.owner_release_approval).toBe(false);expect(receipt.status).toBe('draft');
+  for(const [p,e]of Object.entries(receipt.changed_existing_files)){expect(sha(bytes(p)),p).toBe(e.proposed_sha256);expect(sha(Buffer.from(e.predecessor_utf8)),p).toBe(e.predecessor_sha256);}
+ });
  it('keeps default permission narration on Gemini without changing other lesson styles',()=>{
   const loaded=loadReferenceModule(root+'/'+base,root+'/public').lessons.find(l=>l.manifest.lesson_key==='communication-listen');
   const plan=planReferenceNarration([{key:'06-komunikasyon',lessons:[loaded]}],j('content/training/day1-basic-competencies/narration.json'),src=>sha(bytes('public'+src)));
   expect(plan).toHaveLength(12);expect(plan.every(p=>p.provider==='gemini'&&p.voice==='gemini:gemini-3.8-flash-tts:Kore')).toBe(true);
+ });
+ it('selects all ten original tracks for the old five-screen published text',()=>{
+  const receipt=j('docs/lesson-161-proposal-receipt.json');const oldLesson=JSON.parse(receipt.changed_existing_files[leaf+'lesson.json'].predecessor_utf8);
+  const oldRead=Object.fromEntries(['fil','en'].map(lang=>[lang,parseReferenceRead(receipt.changed_existing_files[leaf+'read.'+lang+'.md'].predecessor_utf8)]));
+  const sections=oldRead.fil.map((f,i)=>({id:f.id,heading_fil:f.heading,heading_en:oldRead.en[i].heading,body_fil:f.body,body_en:oldRead.en[i].body,takeaway_fil:oldLesson.sections[i].takeaway_fil,takeaway_en:oldLesson.sections[i].takeaway_en}));
+  const m=j('content/training/day1-basic-competencies/narration.json');
+  for(const lang of ['fil','en']){const selected=narrationForLesson(m,'communication-listen',lang,sections);expect(Object.keys(selected)).toEqual(['liza','listen','profile','practice','check']);for(const id of Object.keys(selected))expect(selected[id].src).toBe(baseline.narration.lessons['communication-listen'].sections[id][lang].src);}
  });
  it('appends exactly two compositions while retaining prior registry order and source',()=>{
   const s=bytes('remotion/src/Root.tsx').toString();const restored=s.replace(/^import \{CommunicationListenStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`communication-listen-[\s\S]+?      \)\)\}\n/,'');expect(restored).toBe(baseline.registry_source);
