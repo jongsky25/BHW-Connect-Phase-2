@@ -16,7 +16,7 @@ Ask: “When no card is shown, what did we directly observe? What do we still no
 
 ## [steps] Demonstration and sequence
 
-15 minutes: read sources and relevant-detail. As Gibs: “This is for an authorized household profile. Only relevant information will be used by the authorized health team under local policy. May we clarify?” As Liza: “The schedule was canceled.” Gibs: “What do you mean by canceled?” Liza: “I could not go when my sister was away. I am not sure whether the center canceled it.” Gibs: “You could not go when your sister was away; the status is uncertain. Is that right?” Liza: “Yes.” Show the incorrect note and attributed correction from verify-gap. Say: “This confirms the summary of the report, not attendance.” This dialogue is fictional adaptation, not a DOH quotation. Continue with 30 triads, 20 revision, 10 debrief and 5 exit check.
+15 minutes: read sources and relevant-detail. As Gibs: “This is for an authorized household profile. Only relevant information will be used by the authorized health team under local policy. May we clarify?” As Liza: “The schedule was canceled.” Gibs: “What do you mean by canceled?” Liza: “I could not go when my sister was away. I am not sure whether the center canceled it.” Gibs: “You could not go when your sister was away; the status is uncertain. Is that right?” Liza: “Yes.” Show the incorrect note and attributed correction from verify-gap. Say: “This confirms the summary of the report, not attendance.” This dialogue is fictional adaptation, not a DOH quotation. Continue with 30 minutes of triad rounds, 20 minutes of revision/verification, 10 minutes of debrief and a 5-minute exit check.
 
 ## [expected-answers] Expected answers
 
