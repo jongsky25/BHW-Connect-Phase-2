@@ -7,6 +7,7 @@ import {planReferenceNarration} from '../lib/reference-narration.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/06-komunikasyon/',leaf=base+'lessons/communication-listen/';
 const bytes=p=>fs.readFileSync(root+'/'+p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
 const baseline=j('docs/lesson-161-baseline.json'),lesson=j(leaf+'lesson.json');
+const approval=fs.existsSync(root+'/docs/lesson-161-owner-approval.json')?j('docs/lesson-161-owner-approval.json'):null;
 describe('lesson 1.6.1 Gibs listening draft',()=>{
  it('preserves identity, substantive old anchors and bilingual concept equivalence',()=>{
   expect(lesson.manifest).toEqual(baseline.manifest);
@@ -16,7 +17,7 @@ describe('lesson 1.6.1 Gibs listening draft',()=>{
  });
  it('offers a picture before the check and complete bilingual rationale and ending',()=>{
   expect(lesson.sections).toHaveLength(6);
-  for(const s of lesson.sections){expect(s.asset_ids).toHaveLength(1);const art=lesson.assets.find(a=>a.id===s.asset_ids[0]);expect(sha(bytes('public'+art.path))).toBe(art.content_hash);expect(art.alt_fil.length).toBeGreaterThan(30);expect(art.alt_en.length).toBeGreaterThan(30);expect(art.review_status).toBe('draft');}
+  for(const s of lesson.sections){expect(s.asset_ids).toHaveLength(1);const art=lesson.assets.find(a=>a.id===s.asset_ids[0]);expect(sha(bytes('public'+art.path))).toBe(art.content_hash);expect(art.alt_fil.length).toBeGreaterThan(30);expect(art.alt_en.length).toBeGreaterThan(30);expect(art.review_status).toBe(approval?'approved':'draft');}
   const c=lesson.sections.at(-1).check;expect(c.correct_option_index).toBe(1);expect(c.options).toHaveLength(3);
   for(const word of ['Una:','Ikalawa:','Ikatlo:','Sa wakas'])expect(c.feedback_fil).toContain(word);
   for(const word of ['First:','Second:','Third:','In the ending'])expect(c.feedback_en).toContain(word);
@@ -39,7 +40,7 @@ describe('lesson 1.6.1 Gibs listening draft',()=>{
  });
  it('verifies exact draft successor bytes before historical predecessor views',()=>{
   const receipt=j('docs/lesson-161-proposal-receipt.json');expect(receipt.owner_release_approval).toBe(false);expect(receipt.status).toBe('draft');
-  for(const [p,e]of Object.entries(receipt.changed_existing_files)){expect(sha(bytes(p)),p).toBe(e.proposed_sha256);expect(sha(Buffer.from(e.predecessor_utf8)),p).toBe(e.predecessor_sha256);}
+  for(const [p,e]of Object.entries(receipt.changed_existing_files)){expect(sha(bytes(p)),p).toBe(approval?.approved_source_sha256[p]??e.proposed_sha256);expect(sha(Buffer.from(e.predecessor_utf8)),p).toBe(e.predecessor_sha256);}
  });
  it('keeps default permission narration on Gemini without changing other lesson styles',()=>{
   const loaded=loadReferenceModule(root+'/'+base,root+'/public').lessons.find(l=>l.manifest.lesson_key==='communication-listen');
