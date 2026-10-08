@@ -104,7 +104,7 @@ jobs:
         run: |
           node scripts/lesson-162-review-verify.mjs
           python3 scripts/lesson-162-package.py
-          python3 -c 'from pathlib import Path; p=Path(".preview/lesson162-deliverables/lesson-1.6.2-gibs-review.zip"); b=p.read_bytes(); n=30*1024*1024; assert len(b)<=4*n; [(p.parent/("review-zip-part-"+str(i+1)+".bin")).write_bytes(b[i*n:(i+1)*n]) for i in range((len(b)+n-1)//n)]' 
+          python3 -c 'from pathlib import Path; p=Path(".preview/lesson162-deliverables/lesson-1.6.2-gibs-review.zip"); b=p.read_bytes(); n=30*1024*1024; assert len(b)<=4*n; [(p.parent/("review-zip-part-"+str(i+1)+".bin")).write_bytes(b[i*n:(i+1)*n]) for i in range((len(b)+n-1)//n)]'
       - uses: actions/upload-artifact@v4
         if: always()
         with:

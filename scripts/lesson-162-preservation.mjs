@@ -12,8 +12,15 @@ for(const [p,h]of Object.entries(baseline.files_sha256)){
 const lesson=j(leaf+'lesson.json'),old=JSON.parse(baseline.target_utf8[leaf+'lesson.json']);assert.deepEqual(lesson.manifest,old.manifest);
 for(const anchor of old.sections){const current=lesson.sections.find(s=>s.id===anchor.id);assert.deepEqual(current.concept_ids,anchor.concept_ids);}
 assert.deepEqual(lesson.sections.map(s=>s.id),['open-question','clarify-detail','barriers','confirm-summary','practice','check']);
-const registry=fs.readFileSync('src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','utf8');
+const registry=fs.readFileSync('remotion/src/Root.tsx','utf8');
 const prior=registry.replace(/^import \{CommunicationClarifyStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`communication-clarify-[\s\S]+?      \)\)\}\n/,'');assert.equal(prior,baseline.registry_utf8,'Complete prior registry source/order');
+const component='src/components/elearning/reference-lessons.tsx';
+const originalComponent=j('docs/lesson-162-shared-predecessors.json')[component];
+const componentPrior=fs.readFileSync(component,'utf8')
+ .replace('  const clarificationRevision = lesson?.lesson_key === "communication-clarify" && lesson.revision.assets.some(asset => asset.id === "clarify-check");\n','')
+ .replace('{(listeningRevision || clarificationRevision) && !storyLayout && figures}','{listeningRevision && !storyLayout && figures}')
+ .replace('!storyLayout && !listeningRevision && !clarificationRevision && (revealSummary','!storyLayout && !listeningRevision && (revealSummary');
+assert.equal(componentPrior,originalComponent,'Only target draft Slides illustration visibility changes');
 const m=j('content/training/day1-basic-competencies/narration.json'),oldM=baseline.narration;
 for(const [k,v]of Object.entries(oldM.lessons))if(k!==target)assert.deepEqual(m.lessons[k],v,k);
 for(const [k,v]of Object.entries(oldM.history??{}))assert.deepEqual(k===target?m.history[k]?.slice(0,v.length):m.history[k],v,k+' history');
