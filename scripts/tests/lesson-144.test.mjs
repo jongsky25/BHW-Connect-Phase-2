@@ -1,3 +1,4 @@
+import {approved154HistoricalMapping,approved154HistoryPrefix} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,expect,it} from 'vitest';
 import {readFileSync} from 'node:fs';
@@ -11,6 +12,7 @@ import {BHW_ACCREDITATION_BEATS} from '../../remotion/src/bhw-accreditation/narr
 import {lessonPosition,continueLesson} from '../../src/lib/elearning/reference-navigation.ts';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {toWebVtt} from '../lib/webvtt.mjs';
+import {approved153HistoricalMapping,approved153HistoryPrefix,withoutApproved153Registry} from './lesson-153-release-compat.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),dir=path.join(root,'content/training/day1-basic-competencies/modules/04-ra7883'),leaf=path.join(dir,'lessons/bhw-accreditation');
 const json=p=>JSON.parse(readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
 const bytes=src=>readFileSync(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
@@ -44,8 +46,8 @@ describe('lesson 1.4.4 Demi accreditation release',()=>{
   for(const options of [{},{provider:'gemini'}]){const plan=planReferenceNarration(modules,manifest,fileHash,options);expect(plan).toHaveLength(12);for(const i of plan){expect(i.action).toBe('skip');expect(i.voice).toBe('gemini:gemini-3.8-flash-tts:Kore');expect(i.existing.timings.map(({zone,index,text})=>({zone,index,text}))).toEqual(i.zones);const duration=mp3AudioFrames(bytes(i.src)).reduce((n,f)=>n+f.samples/f.sampleRate,0);expect(i.existing.duration_seconds).toBeCloseTo(duration,3);for(const t of i.existing.timings)expect(t.end_ms).toBeGreaterThan(t.start_ms);expect(i.existing.timings.at(-1).end_ms).toBeLessThanOrEqual(duration*1000+1);}}
  });
  it('preserves all 161 sibling mappings, original histories and every original audio byte',()=>{
-  for(const [key,hash]of Object.entries(audioBaseline.sibling_mapping_hashes)){if(key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'||key==='bhw-right-contact'){const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();for(const langs of Object.values(retained.sections))for(const track of Object.values(langs))expect(fileHash(track.src)).toBe(track.sha256);}else expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);}
-  for(const [key,hash]of Object.entries(audioBaseline.original_non_target_history_hashes))expect(sha(JSON.stringify(manifest.history[key]))).toBe(hash);
+  for(const [key,hash]of Object.entries(audioBaseline.sibling_mapping_hashes)){if(key==='bhw-teamwork'){approved154HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-local-partners'){approved153HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'||key==='bhw-right-contact'){const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();for(const langs of Object.values(retained.sections))for(const track of Object.values(langs))expect(fileHash(track.src)).toBe(track.sha256);}else expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);}
+  for(const [key,hash]of Object.entries(audioBaseline.original_non_target_history_hashes)){if(key==='bhw-teamwork'){approved154HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-teamwork')approved154HistoryPrefix(manifest);else if(key==='bhw-local-partners')approved153HistoryPrefix(manifest);else expect(sha(JSON.stringify(manifest.history[key]))).toBe(hash);}
   expect(manifest.history['bhw-accreditation']).toContainEqual(audioBaseline.target);
   for(const [src,hash]of Object.entries(audioBaseline.all_original_track_hashes))expect(fileHash(src)).toBe(hash);
  },30000);

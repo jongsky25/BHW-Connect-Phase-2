@@ -5,32 +5,121 @@
       "m5.teamwork-practices",
       "m5.competency"
     ],
-    "layout": "decision",
-    "heading_fil": "Ano ang mabuting teamwork",
-    "heading_en": "What good teamwork looks like",
-    "display_fil": "Malinaw na layunin at tungkulin.\nMaagang pagtalakay sa isyu.\nPagiging bukas sa puna.\nPagbuo ng maayos na ugnayan.",
-    "display_en": "Clear purpose and roles.\nEarly discussion of issues.\nOpenness to feedback.\nConstructive working relationships.",
+    "layout": "scene",
+    "heading_fil": "Isang layunin, malinaw na pagtutulungan",
+    "heading_en": "One purpose, clear teamwork",
+    "display_fil": "Layunin: maayos na outreach\nTungkulin: sino ang gagawa?\nPagtitiyak: sino ang magbabalita?",
+    "display_en": "Purpose: organized outreach\nRoles: who will do the task?\nConfirmation: who will report back?",
     "asset_ids": [
-      "practice-map"
+      "malou-teamwork"
+    ],
+    "check": null,
+    "narration_fil": "Sa kathang-isip na sitwasyon, naghahanda si Malou at dalawang kapwa BHW ng paanyaya para sa napagkasunduang outreach. May nakatalagang purok at oras, ngunit hindi pa malinaw kung sino ang maghahanda ng mga paanyaya at sino ang magbabalita kapag tapos na. Hindi sapat ang sabihing tutulong ang lahat.\n\nAng mabuting pagtutulungan ay may iisang layunin, malinaw na tungkulin, maagang pag-uusap, bukas na pagtanggap sa puna, at magalang na ugnayan. Ginagamit ang mga ito upang maihatid nang maayos ang gawain para sa kalusugan ng komunidad. Ang pagtutulungan ay hindi nagbibigay ng karapatang gumawa ng pasyang klinikal o magbahagi ng kumpidensiyal na impormasyon.",
+    "narration_en": "In this fictional situation, Malou and two fellow BHWs are preparing invitations for an agreed outreach activity. The purok and time are assigned, but it is not yet clear who will prepare the invitations or who will report completion. Saying everyone will help is not enough.\n\nGood teamwork uses a shared purpose, clear roles, early communication, openness to feedback and respectful relationships. These help the team carry out its work for community health. Cooperation does not grant authority to make clinical decisions or share confidential information."
+  },
+  {
+    "id": "slide-teamwork-five-practices",
+    "concept_ids": [
+      "m5.teamwork-practices"
+    ],
+    "layout": "annotated-illustration",
+    "heading_fil": "Limang gawi ng mabuting koponan",
+    "heading_en": "Five practices of a good team",
+    "display_fil": "1. Iisang layunin\n2. Malinaw na tungkulin\n3. Maagang pag-uusap\n4. Bukas sa puna\n5. Magalang at boluntaryong ugnayan",
+    "display_en": "1. Shared purpose\n2. Clear roles\n3. Early communication\n4. Openness to feedback\n5. Respectful, voluntary relationships",
+    "asset_ids": [
+      "malou-teamwork"
+    ],
+    "check": null,
+    "narration_fil": "Una, linawin kung bakit nagboluntaryo: upang mapabuti ang kalusugan ng komunidad. Ikalawa, linawin ang tungkulin at pananagutan ng bawat miyembro. Ikatlo, pag-usapan nang maaga ang isyung nakaaapekto sa trabaho. Sapat na sabihin ang epekto sa gawain; hindi kailangang ibunyag ang pribadong dahilan.\n\nIkaapat, pakinggan ang puna ng kasamahan at komunidad at gamitin ang tiyak na mungkahi upang mapabuti ang gawain. Ikalima, bumuo ng mabuting ugnayan, maging sa labas ng trabaho, nang may paggalang sa personal na buhay. Boluntaryo ang ganitong pakikisalamuha. Walang kailangang gumastos, sumama sa biyahe, o makipagdikit sa pisikal na laro upang patunayang mabuting kasamahan.",
+    "narration_en": "First, clarify why you volunteered: to improve community health. Second, clarify each member’s role and responsibility. Third, discuss issues affecting the work early. Describing the effect on the task is enough; private reasons do not have to be disclosed.\n\nFourth, listen to feedback from colleagues and the community and use specific suggestions to improve the work. Fifth, build good relationships, including outside work, while respecting personal lives. Such social activities are voluntary. Nobody has to spend money, join a trip or take part in a close-contact physical game to prove they are a good teammate."
+  },
+  {
+    "id": "slide-teamwork-role-agreement",
+    "concept_ids": [
+      "m5.competency"
+    ],
+    "layout": "process",
+    "heading_fil": "Pagkasunduan ang gawain",
+    "heading_en": "Agree on the task",
+    "display_fil": "Ano ang gawain at hangganan?\nSino ang tatanggap?\nKailan matatapos?\nSino ang kokontakin kung may hadlang?",
+    "display_en": "What is the task and its limit?\nWho accepts it?\nWhen is it due?\nWho is contacted if there is a difficulty?",
+    "asset_ids": [
+      "malou-teamwork"
+    ],
+    "check": null,
+    "narration_fil": "Sa mesa, nililinaw ng grupo ang gawain: ihanda ang mga paanyaya bago mag-alas-diyes. Si Malou ang naghahanda, isang kasama ang tumitingin sa pagkakakumpleto, at ang isa ang nagbabalita sa itinakdang contact. Inuulit ng bawat isa ang tinanggap na gawain at oras.\n\nIto ay halimbawa ng paghahati ng gawaing napahintulutan na, hindi pangkalahatang tuntunin sa lahat ng barangay. Kung may pagbabago sa opisyal na assignment, tinitiyak muna ang lokal na proseso at pahintulot sa itinalagang supervisor. Hindi maaaring magtalaga ang kapwa BHW ng gawaing lampas sa pagsasanay o awtorisasyon ng kasama. Linawin din kung sino ang lalapitan kapag may hadlang.",
+    "narration_en": "At the table, the group clarifies the task: prepare the invitations before ten o’clock. Malou prepares them, one colleague checks completeness and another reports to the designated contact. Each person repeats the task and time they accepted.\n\nThis is an example of sharing an already authorized task, not a universal rule for every barangay. A change to an official assignment must first be checked against the local process and permission from the designated supervisor. A peer BHW cannot assign work beyond a colleague’s training or authorization. Also clarify whom to contact if there is a difficulty."
+  },
+  {
+    "id": "slide-teamwork-early-handoff",
+    "concept_ids": [
+      "m5.competency"
+    ],
+    "layout": "process",
+    "heading_fil": "Magsabi nang maaga, magpasa nang malinaw",
+    "heading_en": "Raise issues early, hand over clearly",
+    "display_fil": "Tapos → natitira → oras\nTiyakin ang pahintulot\nTatanggap: ulitin at kumpirmahin\nAgarang panganib: idulog agad",
+    "display_en": "Done → remaining → deadline\nCheck permission\nRecipient: repeat and confirm\nImmediate danger: escalate promptly",
+    "asset_ids": [
+      "malou-teamwork"
+    ],
+    "check": null,
+    "narration_fil": "Bago ang takdang oras, sinabi ng kasama: “Hindi ko matatapos ang pagtingin sa mga paanyaya.” Sumagot si Malou: “Salamat sa maagang pagsabi. Ano na ang tapos at ano pa ang kailangan?” Hindi niya hinihingi ang pribadong dahilan o sinisisi ang kasama.\n\nSa paglipat ng gawain, nililinaw ang tapos, natitira, takdang oras at kailangan pang pahintulot. Tinitiyak sa itinalagang supervisor ang pagbabagong nangangailangan ng pahintulot. Tinatanggap at inuulit ng sasalo ang gawain; hindi sapat ang mag-iwan lang ng mensahe. Ibinabahagi lamang ang impormasyong kailangan sa awtorisadong tatanggap gamit ang angkop na paraan. Ang agarang panganib o seryosong paglabag ay idinudulog kaagad sa angkop na contact ayon sa lokal na proseso; hindi kailangang hintayin ang usapang magkakasama.",
+    "narration_en": "Before the deadline, a colleague says, “I cannot finish checking the invitations.” Malou responds, “Thank you for telling us early. What is done and what remains?” She does not demand private reasons or blame her colleague.\n\nA handoff identifies what is done, what remains, the deadline and any permission still needed. Changes requiring permission are checked with the designated supervisor. The receiving person accepts and repeats the task; simply leaving a message is not enough. Share only necessary information with an authorized recipient through an appropriate channel. An immediate danger or serious breach is raised promptly with the appropriate contact under the local process; a peer discussion must not delay it."
+  },
+  {
+    "id": "slide-teamwork-feedback-completion",
+    "concept_ids": [
+      "m5.competency"
+    ],
+    "layout": "takeaway",
+    "heading_fil": "Magbigay ng puna at tiyaking tapos",
+    "heading_en": "Give feedback and confirm completion",
+    "display_fil": "Puna: tiyak na kilos at mungkahi\nPakinggan ang sagot\nKumpirmahin ang natapos\nKung may kulang: sino, ano, kailan",
+    "display_en": "Feedback: specific action and suggestion\nListen to the response\nConfirm what is complete\nIf unfinished: who, what, when",
+    "asset_ids": [
+      "malou-teamwork"
+    ],
+    "check": null,
+    "narration_fil": "Matapos ang gawain, sinabi ni Malou: “Nakatulong ang maagang pagsabi. Sa susunod, isulat natin kung sino ang magbabalita.” Tiyak sa kilos at mungkahi ang puna, hindi sa pagkatao. Nakikinig siya sa paliwanag ng kasama at nagtatanong kung anong pagbabago ang makatutulong.\n\nNagbalita ang tumanggap ng gawain: “Nasuri na ang mga paanyaya bago mag-alas-diyes.” Tinitiyak ng grupo kung kumpleto ito ayon sa napagkasunduan at ipinapaalam sa itinakdang contact. Kung may natitira, itinatala ang susunod na hakbang, responsable at oras ng pagbalik. Hindi itinuturing na tapos ang gawain dahil lamang naipasa na ito. Nagpapasalamat ang grupo at nag-aalok ng boluntaryong pagkakataong magkumustahan.",
+    "narration_en": "After the task, Malou says, “Telling us early helped. Next time, let us write down who will report back.” Her feedback names an action and a suggestion, not a personality trait. She listens to her colleague’s explanation and asks what change would help.\n\nThe person who accepted the task reports, “The invitations were checked before ten o’clock.” The group confirms completeness against the agreement and informs the designated contact. If work remains, they record the next step, responsible person and follow-up time. A task is not complete merely because it was handed over. The group thanks one another and offers a voluntary chance to check in socially."
+  },
+  {
+    "id": "slide-teamwork-application-check",
+    "concept_ids": [
+      "m5.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Ilapat: may hindi matatapos",
+    "heading_en": "Apply: a task will not be finished",
+    "display_fil": "May oras pang makipag-ugnayan\nHindi kailangan ang pribadong dahilan\nPiliin, ipaliwanag, at tiyakin ang pagsasara",
+    "display_en": "There is time to coordinate\nPrivate reasons are not needed\nChoose, explain and confirm completion",
+    "asset_ids": [
+      "malou-teamwork"
     ],
     "check": {
-      "prompt_fil": "Ano ang gagawin sa isyung nakaaapekto sa team?",
-      "prompt_en": "What should you do about an issue affecting the team?",
+      "prompt_fil": "Ano ang pinakamainam na gawin ni Malou?",
+      "prompt_en": "What is the best response for Malou?",
       "options": [
         {
-          "fil": "Pag-usapan nang maaga at malinaw kasama ang team.",
-          "en": "Discuss it early and clearly with the team."
+          "fil": "Pag-usapan ang natitirang gawain, tiyakin ang pahintulot sa pagbabago, kumuha ng malinaw na pagtanggap, at magtakda ng pagbalita.",
+          "en": "Discuss remaining work, confirm permission for the change, obtain clear acceptance and arrange a completion update."
         },
         {
-          "fil": "Balewalain hanggang lumala.",
-          "en": "Ignore it until it worsens."
+          "fil": "Akuin agad ang buong assignment at sabihin sa supervisor kapag tapos na upang walang maabala.",
+          "en": "Immediately take over the entire assignment and tell the supervisor afterwards to avoid inconvenience."
+        },
+        {
+          "fil": "Ibahagi sa group chat ang personal na dahilan ng kasama upang mas madaling makumbinsi ang iba na tumulong.",
+          "en": "Share the colleague’s personal reason in the group chat to persuade others to help."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Pag-usapan nang maaga at malinaw kasama ang team. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "Discuss it early and clearly with the team. Explain why using the lesson situation."
+      "feedback_fil": "A ang pinakamainam: maagang komunikasyon, malinaw na tungkulin, pahintulot at kumpirmasyon ng pagtanggap at pagtatapos. B: mabuti ang layuning tumulong, ngunit hindi nito tinitiyak ang saklaw, pahintulot o kapasidad; hindi awtorisasyon ang pagiging magkakasama. C: hindi kailangan ang pribadong dahilan upang hatiin ang gawain; hindi pinahihintulutan ng pagtutulungan ang kumpidensiyal na pagbubunyag. Sabihin lamang ang kailangan sa awtorisadong tatanggap.",
+      "feedback_en": "A is best: early communication, clear roles, permission and confirmation of acceptance and completion. B: the intention to help is useful, but it does not check scope, permission or capacity; being teammates is not authorization. C: private reasons are unnecessary for sharing the task; teamwork does not justify confidential disclosure. Give only necessary information to an authorized recipient."
     },
-    "narration_fil": "Kadalasan ay higit sa isang BHW ang isang barangay, at kailangan nilang magtrabaho bilang isang koponan. Limang rekomendasyon ang gagabay dito.\n\nUna, dapat malinaw sa lahat kung bakit sila nag-volunteer — upang mapabuti ang kalusugan sa komunidad. Pangalawa, dapat malinaw ang tungkulin ng bawat miyembro — sino ang naka-assign sa aling purok, sino ang lead sa aling programa. Pangatlo, maging bukas sa isyu, kahit personal — agad itong pag-usapan bago pa ito lumalim. Pang-apat, maging bukas sa puna at opinyon mula sa kasamahan o sa komunidad — tingnan ito bilang tulong, hindi atake. Panglima, bumuo ng ugnayan sa mga kasamahan kahit sa labas ng trabaho — nakakatulong ito sa bonding ng koponan.",
-    "narration_en": "A barangay usually has more than one BHW, and they need to work as a team. Five recommendations guide this.\n\nFirst, everyone should be clear on why they volunteered — to improve the community's health. Second, each member's role should be clear — who's assigned to which purok, who leads which programme. Third, be open about issues, even personal ones — talk about them right away before they deepen. Fourth, be open to feedback and opinions from teammates or the community — treat it as help, not an attack. Fifth, build relationships with teammates outside of work too — it helps team bonding."
+    "narration_fil": "Sa isa pang kathang-isip na outreach, hindi matatapos ng kasama ni Malou ang nakatalagang paghahanda. Hindi ito agarang panganib, ngunit kailangan ng pagbabago sa assignment. May oras pa upang makipag-ugnayan sa itinalagang supervisor. Ayaw ibahagi ng kasama ang personal niyang dahilan.\n\nPiliin ang pinakamainam na tugon sa tatlong pagpipilian. Ipaliwanag kung paano nito naipakikita ang malinaw na tungkulin, maagang pag-uusap at magalang na pagtutulungan. Pagkatapos, sabihin kung sino ang tatanggap sa gawain, anong pahintulot ang titiyakin, at paano malalaman na tapos na. Hindi kailangan ang panonood ng opsyonal na kuwento upang sagutin ito.",
+    "narration_en": "At another fictional outreach activity, Malou’s colleague cannot finish the assigned preparation. There is no immediate danger, but an assignment needs to change. There is still time to contact the designated supervisor. The colleague does not want to share her personal reason.\n\nChoose the best of the three responses. Explain how it shows clear roles, early communication and respectful teamwork. Then say who will accept the task, what permission must be checked and how completion will be confirmed. You do not need to watch the optional story to answer."
   }
 ]

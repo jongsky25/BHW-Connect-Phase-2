@@ -383,6 +383,17 @@ export const BHW_BARANGAY_PARTNERS_STORY_STYLES = {
  en: 'Speak natural Philippine English as one settled adult female Kore community trainer. Pronounce Malou mah-LOO. Keep the same warm female register for heading, body and takeaway. Clearly distinguish roles, requests, unknowns, local approval and availability. Natural curious question intonation, complete negation and encouraging endings. Read exact text, no omissions, additions or character voices.',
 };
 
+// Lesson 1.5.3 only; do not mutate previous voice/style inputs.
+export const BHW_LOCAL_PARTNERS_STORY_STYLES = {
+  fil: "Speak in natural Filipino as one warm mature Filipina community health educator. Explain Malou's locally verified RHU contact, consent and the difference between budget advice and an individual decision with clear phrasing. Read every supplied word exactly; retain the same voice on the application screen, with no announcer switch or added words.",
+  en: "Speak in natural Philippine English as one warm mature Filipina community health educator. Explain Malou's locally verified RHU contact, consent and the difference between budget advice and an individual decision with clear phrasing. Read every supplied word exactly; retain the same voice on the application screen, with no announcer switch or added words.",
+};
+
+export const BHW_TEAMWORK_STORY_STYLES = {
+  "fil": "Speak in natural Filipino (Tagalog) as one mature, warm adult Filipina community health trainer. Keep the same female mid-pitched voice for headings, questions, story and endings. Use gentle pitch and pace variation for Malou\u2019s respectful teamwork, clear roles, early issues, privacy, permission and completion. Read exactly the supplied words; do not add, translate or change speakers. Make negation, the five practices and handoff limits clear.",
+  "en": "Speak in natural Philippine English as one mature, warm adult Filipina community health trainer. Keep the same female mid-pitched voice for headings, questions, story and endings. Use gentle pitch and pace variation for Malou\u2019s respectful teamwork, clear roles, early issues, privacy, permission and completion. Read exactly the supplied words; do not add, translate or change speakers. Make negation, the five practices and handoff limits clear."
+};
+
 export const BHW_RIGHT_CONTACT_STORY_STYLES = {
   fil: "Speak in natural Filipino (Tagalog), as one mature adult Filipina community health trainer with a warm steady female mid-pitched voice. Use gentle pitch and pace changes for Malou’s contact choices. Slow slightly for official procedure confirmation and do not delay immediate help. All headings, questions, instructions and endings use the same woman narrator. Read the exact words completely, without translation, additions or speaker changes.",
   en: "Speak in natural Philippine English, as one mature Filipina community health trainer with a warm steady female mid-pitched voice. Use gentle pitch and pace changes for Malou’s contact choices. Slow slightly for official procedure confirmation and do not delay immediate help. All headings, questions, instructions and endings use the same woman narrator. Read the exact words completely, without translation, additions or speaker changes.",

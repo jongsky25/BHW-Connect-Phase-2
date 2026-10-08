@@ -1,3 +1,4 @@
+import {approved154HistoricalMapping} from './lesson-154-release-compat.mjs';
 // @vitest-environment node
 import {describe,expect,it} from 'vitest';
 import {readFileSync} from 'node:fs';
@@ -10,6 +11,7 @@ import {BHS_IMPROVEMENT_BEATS} from '../../remotion/src/bhs-improvement/narratio
 import {lessonPosition,continueLesson} from '../../src/lib/elearning/reference-navigation.ts';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {toWebVtt} from '../lib/webvtt.mjs';
+import {approved153HistoricalMapping} from './lesson-153-release-compat.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),dir=path.join(root,'content/training/day1-basic-competencies/modules/03-polisiya-bhs');
 const lessonDir=path.join(dir,'lessons/bhs-improvement');
 const json=p=>JSON.parse(readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
@@ -66,7 +68,8 @@ describe('lesson 1.3.5 one workable proposal',()=>{
   for(const [key,hash] of Object.entries(baseline.sibling_mapping_hashes)){
    // The 1.4.1 draft adds new narration while preserving the exact old mapping
    // for the still-published revision. Every other sibling remains current.
-   if(key==='bhw-legal-role'||key==='bhw-benefits'||key==='bhw-eligibility'||key==='bhw-accreditation'||key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'||key==='bhw-right-contact'){
+   if(key==='bhw-teamwork'){approved154HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}else if(key==='bhw-local-partners'){approved153HistoricalMapping(manifest,hash,fileHash,v=>sha(JSON.stringify(v)));}
+   else if(key==='bhw-legal-role'||key==='bhw-benefits'||key==='bhw-eligibility'||key==='bhw-accreditation'||key==='bhw-follow-up'||key==='bhw-relationships'||key==='bhw-barangay-partners'||key==='bhw-right-contact'){
     const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);
     expect(retained).toBeDefined();
     for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);

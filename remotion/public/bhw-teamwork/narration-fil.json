@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Filipino (Tagalog) as one mature, warm adult Filipina community health trainer. Keep the same female mid-pitched voice for headings, questions, story and endings. Use gentle pitch and pace variation for Malou’s respectful teamwork, clear roles, early issues, privacy, permission and completion. Read exactly the supplied words; do not add, translate or change speakers. Make negation, the five practices and handoff limits clear.",
+  "durationSeconds": 63.896,
+  "beats": [
+    {
+      "zone": "purpose",
+      "index": 0,
+      "text": "Si Malou at mga kapwa BHW ay naghahanda ng paanyaya. May layunin at oras, ngunit kailangan pang linawin ang tungkulin.",
+      "start_ms": 0,
+      "end_ms": 9840
+    },
+    {
+      "zone": "practices",
+      "index": 1,
+      "text": "Limang gawi ang gabay: iisang layunin, malinaw na tungkulin, maagang pag-uusap, bukas sa puna, at magalang na ugnayan.",
+      "start_ms": 10140,
+      "end_ms": 21940
+    },
+    {
+      "zone": "agreement",
+      "index": 2,
+      "text": "Pinagkasunduan ang gawain, tatanggap at oras. Inuulit ng kasama ang tinanggap na tungkulin. Tinitiyak ang pahintulot kung may pagbabago.",
+      "start_ms": 22240,
+      "end_ms": 33200
+    },
+    {
+      "zone": "handoff",
+      "index": 3,
+      "text": "May kasama na hindi matatapos. Maagang nakinig si Malou. Nilinaw ang natitira at tumanggap ang sasalo, nang walang pribadong dahilan.",
+      "start_ms": 33500,
+      "end_ms": 43860
+    },
+    {
+      "zone": "feedback",
+      "index": 4,
+      "text": "Nagbigay si Malou ng tiyak na mungkahi. Nakinig siya sa sagot at tiniyak na natapos ang napagkasunduang gawain.",
+      "start_ms": 44160,
+      "end_ms": 53520
+    },
+    {
+      "zone": "closing",
+      "index": 5,
+      "text": "Sa susunod na gawain, linawin ang papel, magsabi nang maaga, igalang ang pribasiya, at tiyakin ang pagtanggap at pagtatapos.",
+      "start_ms": 53820,
+      "end_ms": 63820
+    }
+  ],
+  "audio_sha256": "e189fa796e4549fd04c9885ecf3bd398b595eef86793a00ea9935c8a945c8539"
+}

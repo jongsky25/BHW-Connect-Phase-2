@@ -1,0 +1,2422 @@
+{
+  "date": "2026-10-06T12:10:46.409Z",
+  "source_commit": "7032d654a41aa5e32ea1524a477d59fd13eec63e",
+  "model": "gemini-3.8-flash",
+  "decode_only": false,
+  "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "method": "Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.",
+  "records": [
+    {
+      "id": "read-section-8-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/section-8.fil.e78cf986210f.mp3",
+      "source_sha256": "52b1ec341e9bbb1310b416d7d215ed0da2d5ea67baa698a5e3dbd3726fc0c605",
+      "decoded_pcm_sha256": "ff84d5c16b0bc87a270b21100f5a5b78cfa15ece640c5e902b8e41c599994226",
+      "full_audio_metrics": {
+        "samples": 1505280,
+        "seconds": 62.72,
+        "rms": 0.1270314440989519,
+        "peak": 0.8809814453125,
+        "quiet_sample_fraction": 0.17696109693877551
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Isang layunin, malinaw na pagtutulungan",
+          "start_ms": 0,
+          "end_ms": 3720,
+          "samples": 89280,
+          "seconds": 3.72,
+          "rms": 0.1410806733404158,
+          "peak": 0.823699951171875,
+          "quiet_sample_fraction": 0.3537522401433692
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sa kathang-isip na sitwasyon, naghahanda si Malou at dalawang kapwa BHW ng paanyaya para sa napagkasunduang outreach.",
+          "start_ms": 4020,
+          "end_ms": 14380,
+          "samples": 248640,
+          "seconds": 10.36,
+          "rms": 0.11200313785145105,
+          "peak": 0.777618408203125,
+          "quiet_sample_fraction": 0.1162765444015444
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "May nakatalagang purok at oras, ngunit hindi pa malinaw kung sino ang maghahanda ng mga paanyaya at sino ang magbabalita kapag tapos na.",
+          "start_ms": 14680,
+          "end_ms": 25000,
+          "samples": 247680,
+          "seconds": 10.32,
+          "rms": 0.12564115937973203,
+          "peak": 0.822113037109375,
+          "quiet_sample_fraction": 0.09734738372093023
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Hindi sapat ang sabihing tutulong ang lahat.",
+          "start_ms": 25300,
+          "end_ms": 28540,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.15665204906751887,
+          "peak": 0.876312255859375,
+          "quiet_sample_fraction": 0.2177340534979424
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ang mabuting pagtutulungan ay may iisang layunin, malinaw na tungkulin, maagang pag-uusap, bukas na pagtanggap sa puna, at magalang na ugnayan.",
+          "start_ms": 28840,
+          "end_ms": 41040,
+          "samples": 292800,
+          "seconds": 12.2,
+          "rms": 0.133179157246927,
+          "peak": 0.8809814453125,
+          "quiet_sample_fraction": 0.19826502732240436
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ginagamit ang mga ito upang maihatid nang maayos ang gawain para sa kalusugan ng komunidad.",
+          "start_ms": 41340,
+          "end_ms": 47380,
+          "samples": 144960,
+          "seconds": 6.04,
+          "rms": 0.12933213880777084,
+          "peak": 0.812957763671875,
+          "quiet_sample_fraction": 0.1061741169977925
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Ang pagtutulungan ay hindi nagbibigay ng karapatang gumawa ng pasyang klinikal o magbahagi ng kumpidensiyal na impormasyon.",
+          "start_ms": 47680,
+          "end_ms": 57240,
+          "samples": 229440,
+          "seconds": 9.56,
+          "rms": 0.14161894100989858,
+          "peak": 0.870025634765625,
+          "quiet_sample_fraction": 0.10519089958158996
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ipaliwanag ang layunin at linawin ang sariling ambag at hangganan.",
+          "start_ms": 57540,
+          "end_ms": 62660,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.10508278631160897,
+          "peak": 0.725860595703125,
+          "quiet_sample_fraction": 0.12587890625
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 14.38,
+          "file": "read-section-8-fil-head.wav",
+          "excerpt_sha256": "4412cc2656443e96043863d94da0d6e54fbdca7c482afba60e47db26eacdd620",
+          "decoded_sample_count": 345120,
+          "expected_context": "Isang layunin, malinaw na pagtutulungan Sa kathang-isip na sitwasyon, naghahanda si Malou at dalawang kapwa BHW ng paanyaya para sa napagkasunduang outreach.",
+          "model_response": "```json\n{\n  \"transcript\": \"Isang layunin. Malinaw na pagtutulungan. Sa kathang-isip na sitwasyon, naghahanda si Malou at dalawang kapwa BHW ng paanyaya para sa napagkasunduang outreach.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"At 00:07–00:08, 'Malou' is clearly pronounced as 'mah-LOO' with stress on the final syllable.\",\n    \"role_distinctions\": \"There is an intentional speaker shift: a female speaker delivers the introductory headings (00:00–00:03), followed by a male narrator reciting the scenario text (00:03.8–00:14).\",\n    \"negation\": \"No negative markers (e.g., 'hindi', 'wala') are present in this excerpt.\",\n    \"ending_completeness\": \"The sentence finishes completely at 00:13.8 with the word 'outreach' and natural room decay; no truncation observed.\",\n    \"audible_speech\": \"Speech is fully audible, studio-quality, and clearly articulated throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"No unexpected shifts; the transition between the female speaker and the male speaker at approximately 00:03.8 corresponds cleanly to heading vs. body text.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. All words and audio characteristics are unambiguous.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 4.02,
+          "end": 14.38,
+          "file": "read-section-8-fil-body.wav",
+          "excerpt_sha256": "2492c448bab08b97c91ad5bc31480d1096b5933c449070ba1e57f1733278fa85",
+          "decoded_sample_count": 248640,
+          "expected_context": "Sa kathang-isip na sitwasyon, naghahanda si Malou at dalawang kapwa BHW ng paanyaya para sa napagkasunduang outreach.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa kathang-isip na sitwasyon, naghahanda si Malou at dalawang kapwa BHW ng paanyaya para sa napagkasunduang outreach.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Malou is pronounced accurately as 'mah-LOO' at approximately 00:03.\",\n    \"negation\": \"No negative statements or negation markers are present in this excerpt.\",\n    \"role_distinctions\": \"Spoken entirely in a single consistent narrator persona without role shifts.\",\n    \"ending_completeness\": \"The sentence completes naturally at 'outreach' around 00:09.9 without truncation.\",\n    \"audible_speech\": \"Speech is clearly audible, paced steadily, and intelligible throughout.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants/vowels are intact.\",\n    \"voice_changes\": \"Tone, volume, and timbre remain consistent throughout the clip.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 14.68,
+          "end": 25,
+          "file": "read-section-8-fil-critical-negation-or-count.wav",
+          "excerpt_sha256": "cd2e0cc6516461fd6fd9b596b602f27ba54a8676d07616e827018fac5c78802d",
+          "decoded_sample_count": 247680,
+          "expected_context": "May nakatalagang purok at oras, ngunit hindi pa malinaw kung sino ang maghahanda ng mga paanyaya at sino ang magbabalita kapag tapos na.",
+          "model_response": "```json\n{\n  \"transcript\": \"May nakatalagang purok at oras, ngunit hindi pa malinaw kung sino ang maghahanda ng mga paanyaya at sino ang magbabalita kapag tapos na.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name Malou does not appear in this excerpt.\",\n    \"negation\": \"The negation phrase 'ngunit hindi pa malinaw' occurs clearly between 00:02.8 and 00:04.5.\",\n    \"role_distinctions\": \"Single narrator voice throughout; delivery is slow, measured, and gravelly/dramatic, characteristic of a storyteller persona.\",\n    \"ending_completeness\": \"The final phrase 'kapag tapos na' at 00:08.5–00:09.7 finishes naturally without cutoff or abrupt termination.\",\n    \"audible_speech\": \"All words are fully audible and distinct.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and timbre remain consistent across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is clear and speech is cleanly articulated.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 47.68,
+          "end": 62.72,
+          "file": "read-section-8-fil-end.wav",
+          "excerpt_sha256": "7979b474858113c0fd86d726b339c896d48278621c128337ff060361e50784d6",
+          "decoded_sample_count": 360960,
+          "expected_context": "Ang pagtutulungan ay hindi nagbibigay ng karapatang gumawa ng pasyang klinikal o magbahagi ng kumpidensiyal na impormasyon. Ipaliwanag ang layunin at linawin ang sariling ambag at hangganan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ang pagtutulungan ay hindi nagbibigay ng karapatang gumawa ng pasyang klinikal o magbahagi ng kompidensiyal na impormasyon. Ipaliwanag ang layunin, at linawin ang sariling ambag at hangganan.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this audio segment.\",\n    \"negation\": \"The negation 'hindi' in 'hindi nagbibigay' (00:02 - 00:03) is articulated clearly without ambiguity.\",\n    \"role_distinctions\": \"There is a noticeable speaker change around 00:09 - 00:10: a lower/male voice speaks from 00:00 to 00:09, followed by a higher/female voice from 00:10 to 00:14.\",\n    \"ending_completeness\": \"The audio concludes naturally after 'hangganan' (~00:14) with natural decay, with no abrupt cut or truncation.\",\n    \"audible_speech\": \"Speech is fully intelligible throughout the entire excerpt.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"The shift in voice at ~00:09–00:10 appears to be an intentional transition between distinct speakers/roles rather than an unexpected vocal defect.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; all words and phonetic boundaries are clear.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-application-check-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-application-check.fil.abc2b01d061a.mp3",
+      "source_sha256": "16fa590c37f2c2c29b6964edeec4f2439384a3a3ebff124f01f68cc9b936a29a",
+      "decoded_pcm_sha256": "8630a34727eb8b80512cc7d65054d86d29956d3a8167194f5ba63d11f3499c2f",
+      "full_audio_metrics": {
+        "samples": 1371116,
+        "seconds": 57.12983333333333,
+        "rms": 0.12375795875019747,
+        "peak": 0.8896484375,
+        "quiet_sample_fraction": 0.2052940816094335
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Ilapat: may hindi matatapos",
+          "start_ms": 0,
+          "end_ms": 3480,
+          "samples": 83520,
+          "seconds": 3.48,
+          "rms": 0.11292096900029008,
+          "peak": 0.815673828125,
+          "quiet_sample_fraction": 0.31375718390804597
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sa isa pang kathang-isip na outreach, hindi matatapos ng kasama ni Malou ang nakatalagang paghahanda.",
+          "start_ms": 3780,
+          "end_ms": 10740,
+          "samples": 167040,
+          "seconds": 6.96,
+          "rms": 0.1217279505937686,
+          "peak": 0.830108642578125,
+          "quiet_sample_fraction": 0.143444683908046
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Hindi ito agarang panganib, ngunit kailangan ng pagbabago sa assignment.",
+          "start_ms": 11040,
+          "end_ms": 16000,
+          "samples": 119040,
+          "seconds": 4.96,
+          "rms": 0.11950988410537762,
+          "peak": 0.76708984375,
+          "quiet_sample_fraction": 0.15304939516129032
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "May oras pa upang makipag-ugnayan sa itinalagang supervisor.",
+          "start_ms": 16300,
+          "end_ms": 20540,
+          "samples": 101760,
+          "seconds": 4.24,
+          "rms": 0.1266125266959896,
+          "peak": 0.8896484375,
+          "quiet_sample_fraction": 0.14107704402515722
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ayaw ibahagi ng kasama ang personal niyang dahilan.",
+          "start_ms": 20840,
+          "end_ms": 24240,
+          "samples": 81600,
+          "seconds": 3.4,
+          "rms": 0.1164056000328791,
+          "peak": 0.72552490234375,
+          "quiet_sample_fraction": 0.14763480392156864
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Piliin ang pinakamainam na tugon sa tatlong pagpipilian.",
+          "start_ms": 24540,
+          "end_ms": 28660,
+          "samples": 98880,
+          "seconds": 4.12,
+          "rms": 0.1372245339582246,
+          "peak": 0.6446533203125,
+          "quiet_sample_fraction": 0.138501213592233
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Ipaliwanag kung paano nito naipakikita ang malinaw na tungkulin, maagang pag-uusap at magalang na pagtutulungan.",
+          "start_ms": 28960,
+          "end_ms": 37360,
+          "samples": 201600,
+          "seconds": 8.4,
+          "rms": 0.15051336268487386,
+          "peak": 0.868377685546875,
+          "quiet_sample_fraction": 0.1639732142857143
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Pagkatapos, sabihin kung sino ang tatanggap sa gawain, anong pahintulot ang titiyakin, at paano malalaman na tapos na.",
+          "start_ms": 37660,
+          "end_ms": 46780,
+          "samples": 218880,
+          "seconds": 9.12,
+          "rms": 0.13252810481501673,
+          "peak": 0.856109619140625,
+          "quiet_sample_fraction": 0.14806743421052632
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Hindi kailangan ang panonood ng opsyonal na kuwento upang sagutin ito.",
+          "start_ms": 47080,
+          "end_ms": 51880,
+          "samples": 115200,
+          "seconds": 4.8,
+          "rms": 0.11853859920964435,
+          "peak": 0.809722900390625,
+          "quiet_sample_fraction": 0.16030381944444444
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ipakita ang pagtutulungan sa tiyak at ligtas na kasunduan.",
+          "start_ms": 52180,
+          "end_ms": 57060,
+          "samples": 117120,
+          "seconds": 4.88,
+          "rms": 0.09825185003999472,
+          "peak": 0.851318359375,
+          "quiet_sample_fraction": 0.1947233606557377
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.74,
+          "file": "read-teamwork-application-check-fil-head.wav",
+          "excerpt_sha256": "56c5d151c021ed7825e423a71dad6df21b3ba50152bdeaba320910516f9150a2",
+          "decoded_sample_count": 257760,
+          "expected_context": "Ilapat: may hindi matatapos Sa isa pang kathang-isip na outreach, hindi matatapos ng kasama ni Malou ang nakatalagang paghahanda.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ilapat. May hindi matatapos. Sa isa pang kathang-isip na outreach, hindi matatapos ng kasama ni Malou ang nakatalagang paghahanda.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as 'mah-LOO' at 00:08.5–00:09.1 without phonetic distortion.\",\n    \"negation\": \"The negative marker 'hindi' is articulated clearly twice: once in the section heading ('May hindi matatapos' at 00:01.3–00:02.8) and once in the sentence body ('hindi matatapos' at 00:06.9–00:08.0).\",\n    \"role_distinctions\": \"There is a clear vocal contrast between the section prompt/title spoken by a female voice (00:00.0–00:02.8) and the illustrative scenario read by a male voice (00:04.1–00:10.2).\",\n    \"ending_completeness\": \"The audio concludes naturally with the full word 'paghahanda' followed by room decay; no clipped phonemes at the boundary.\",\n    \"audible_speech\": \"All speech is clear, well-enunciated, and completely audible across both speakers.\",\n    \"clipped_words\": \"None detected.\",\n    \"voice_changes\": \"A clean transition between two distinct speakers/roles occurs between 00:02.8 and 00:04.1 (female reader to male reader), consistent with structured educational narration.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. Speech is distinct and text is fully intelligible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 3.78,
+          "end": 10.74,
+          "file": "read-teamwork-application-check-fil-body.wav",
+          "excerpt_sha256": "50c6ae495c68924c2a7854602d718b2e0fbebeb514d361b8b5fb8e890cca995b",
+          "decoded_sample_count": 167040,
+          "expected_context": "Sa isa pang kathang-isip na outreach, hindi matatapos ng kasama ni Malou ang nakatalagang paghahanda.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa isa pang kathang-isip na outreach, hindi matatapos ng kasama ni Malou ang nakatalagang paghahanda.\",\n  \"observations\": {\n    \"audible_speech\": \"The entire sentence is fully audible, clearly articulated, and free from significant background noise or distortion.\",\n    \"malou_pronunciation\": \"The name 'Malou' occurs at approximately 00:04.65–00:05.05 and is correctly pronounced with stress on the second syllable ('mah-LOO' / [maˈlu]).\",\n    \"negation\": \"The negation 'hindi' is clearly audible and cleanly enunciated between 00:02.75 and 00:03.20.\",\n    \"role_distinctions\": \"Spoken in a consistent third-person educational narration style.\",\n    \"ending_completeness\": \"The sentence completes naturally on 'paghahanda' around 00:06.30 without clipping or abrupt cutoffs at the boundary.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, pacing, and acoustic environment remain stable throughout the recording.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; all words and phonetic features are distinct and fully intelligible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 0,
+          "end": 3.48,
+          "file": "read-teamwork-application-check-fil-critical-negation-or-count.wav",
+          "excerpt_sha256": "c6d8312c4b5379177021a25cfcfbc4a6e49d6ad233da4613f54c696c1a3211bf",
+          "decoded_sample_count": 83520,
+          "expected_context": "Ilapat: may hindi matatapos",
+          "model_response": "```json\n{\n  \"transcript\": \"Ilapat. May hindi matatapos.\",\n  \"observations\": {\n    \"audible_speech\": \"The audio contains clearly spoken Filipino/Tagalog instructional speech ('Ilapat. May hindi matatapos.').\",\n    \"malou_pronunciation\": \"The name 'Malou' is not present in this excerpt.\",\n    \"negation\": \"The negation particle 'hindi' is distinctly articulated between 00:01.35 and 00:01.78.\",\n    \"role_distinctions\": \"Single narrator voice throughout; no multi-role dialogue present.\",\n    \"ending_completeness\": \"The final word 'matatapos' completes naturally without being cut off.\",\n    \"clipped_words\": \"No clipped or abruptly truncated words detected.\",\n    \"unexpected_voice_changes\": \"Voice pitch, tone, and pacing remain consistent across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and intelligible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 37.66,
+          "end": 57.12983333333333,
+          "file": "read-teamwork-application-check-fil-end.wav",
+          "excerpt_sha256": "6c2197d5f462a2526917dd9fe7007df47cb0d45aa520e89463540ca122d9b988",
+          "decoded_sample_count": 467276,
+          "expected_context": "Pagkatapos, sabihin kung sino ang tatanggap sa gawain, anong pahintulot ang titiyakin, at paano malalaman na tapos na. Hindi kailangan ang panonood ng opsyonal na kuwento upang sagutin ito. Ipakita ang pagtutulungan sa tiyak at ligtas na kasunduan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Pagkatapos, sabihin kung sino ang tatanggap sa gawain, anong pahintulot ang titiyakin, at paano malalaman na tapos na. Hindi kailangan ang panonood ng opsyonal na kwento upang sagutin ito. Ipakita ang pagtutulungan sa tiyak at ligtas na kasunduan.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00.0 - 00:14.1\",\n      \"detail\": \"Female narrator speaks clearly in a standard instructional tone.\"\n    },\n    {\n      \"timestamp\": \"00:09.5 - 00:10.5\",\n      \"detail\": \"Negation phrase 'Hindi kailangan' is clearly pronounced.\"\n    },\n    {\n      \"timestamp\": \"00:14.2 - 00:19.3\",\n      \"detail\": \"Speaker shift occurs; a male voice delivers the final sentence ('Ipakita ang pagtutulungan sa tiyak at ligtas na kasunduan.').\"\n    },\n    {\n      \"timestamp\": \"00:00.0 - 00:19.4\",\n      \"detail\": \"The name/character 'Malou' is not spoken in this excerpt.\"\n    },\n    {\n      \"timestamp\": \"00:19.0 - 00:19.4\",\n      \"detail\": \"The final word 'kasunduan' finishes cleanly with natural room decay and no clipping.\"\n    }\n  ],\n  \"possible_defects\": [\n    {\n      \"type\": \"speaker_transition\",\n      \"timestamp\": \"00:14.2\",\n      \"detail\": \"Abrupt change in speaker voice profile from female to male between sentences without an ambient pause transition, though speech remains clear.\"\n    }\n  ],\n  \"uncertainty\": \"None; all words are audible, fully pronounced, and unambiguous.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-early-handoff-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-early-handoff.fil.7b67fe858ac0.mp3",
+      "source_sha256": "ba5af2cba3e1688316afb0f04d76f418188f7424f391720c41f22d81347e7499",
+      "decoded_pcm_sha256": "b19f4129731095a0a886d07749194e4204780a69daf08d8a3e1a80b9e03a556d",
+      "full_audio_metrics": {
+        "samples": 1715932,
+        "seconds": 71.49716666666667,
+        "rms": 0.129290318214106,
+        "peak": 0.958465576171875,
+        "quiet_sample_fraction": 0.21859957154479315
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Magsabi nang maaga, magpasa nang malinaw",
+          "start_ms": 0,
+          "end_ms": 4320,
+          "samples": 103680,
+          "seconds": 4.32,
+          "rms": 0.15244084236363717,
+          "peak": 0.904632568359375,
+          "quiet_sample_fraction": 0.27117091049382713
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Bago ang takdang oras, sinabi ng kasama: “Hindi ko matatapos ang pagtingin sa mga paanyaya.”",
+          "start_ms": 4620,
+          "end_ms": 11060,
+          "samples": 154560,
+          "seconds": 6.44,
+          "rms": 0.08881148988400402,
+          "peak": 0.727508544921875,
+          "quiet_sample_fraction": 0.14376293995859213
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Sumagot si Malou: “Salamat sa maagang pagsabi.",
+          "start_ms": 11360,
+          "end_ms": 16000,
+          "samples": 111360,
+          "seconds": 4.64,
+          "rms": 0.10244211648979362,
+          "peak": 0.788177490234375,
+          "quiet_sample_fraction": 0.42852011494252873
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ano na ang tapos at ano pa ang kailangan?”",
+          "start_ms": 16300,
+          "end_ms": 19940,
+          "samples": 87360,
+          "seconds": 3.64,
+          "rms": 0.16185163598907104,
+          "peak": 0.925079345703125,
+          "quiet_sample_fraction": 0.20325091575091575
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Hindi niya hinihingi ang pribadong dahilan o sinisisi ang kasama.",
+          "start_ms": 20240,
+          "end_ms": 25560,
+          "samples": 127680,
+          "seconds": 5.32,
+          "rms": 0.11910752505196953,
+          "peak": 0.6630859375,
+          "quiet_sample_fraction": 0.1275140977443609
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sa paglipat ng gawain, nililinaw ang tapos, natitira, takdang oras at kailangan pang pahintulot.",
+          "start_ms": 25860,
+          "end_ms": 34340,
+          "samples": 203520,
+          "seconds": 8.48,
+          "rms": 0.13651164952833816,
+          "peak": 0.916229248046875,
+          "quiet_sample_fraction": 0.2415880503144654
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Tinitiyak sa itinalagang supervisor ang pagbabagong nangangailangan ng pahintulot.",
+          "start_ms": 34640,
+          "end_ms": 40520,
+          "samples": 141120,
+          "seconds": 5.88,
+          "rms": 0.14768533961999575,
+          "peak": 0.788604736328125,
+          "quiet_sample_fraction": 0.14250992063492063
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Tinatanggap at inuulit ng sasalo ang gawain; hindi sapat ang mag-iwan lang ng mensahe.",
+          "start_ms": 40820,
+          "end_ms": 47540,
+          "samples": 161280,
+          "seconds": 6.72,
+          "rms": 0.15746406982539085,
+          "peak": 0.958465576171875,
+          "quiet_sample_fraction": 0.14813988095238095
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Ibinabahagi lamang ang impormasyong kailangan sa awtorisadong tatanggap gamit ang angkop na paraan.",
+          "start_ms": 47840,
+          "end_ms": 54960,
+          "samples": 170880,
+          "seconds": 7.12,
+          "rms": 0.1292187386239807,
+          "peak": 0.75372314453125,
+          "quiet_sample_fraction": 0.12432701310861423
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Ang agarang panganib o seryosong paglabag ay idinudulog kaagad sa angkop na contact ayon sa lokal na proseso; hindi kailangang hintayin ang usapang magkakasama.",
+          "start_ms": 55260,
+          "end_ms": 65980,
+          "samples": 257280,
+          "seconds": 10.72,
+          "rms": 0.12489839209493471,
+          "peak": 0.819915771484375,
+          "quiet_sample_fraction": 0.12506607587064678
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Maagang magsabi at tiyaking may tumanggap sa saklaw na gawain.",
+          "start_ms": 66280,
+          "end_ms": 71440,
+          "samples": 123840,
+          "seconds": 5.16,
+          "rms": 0.12866976864939575,
+          "peak": 0.79791259765625,
+          "quiet_sample_fraction": 0.1867328811369509
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 11.06,
+          "file": "read-teamwork-early-handoff-fil-head.wav",
+          "excerpt_sha256": "da420b84d67000c620d4ee223faf1e279a25dcb1a81d00e0666924e9471e06d5",
+          "decoded_sample_count": 265440,
+          "expected_context": "Magsabi nang maaga, magpasa nang malinaw Bago ang takdang oras, sinabi ng kasama: “Hindi ko matatapos ang pagtingin sa mga paanyaya.”",
+          "model_response": "```json\n{\n \"transcript\": \"Magsabi ng maaga, magpasa ng malinaw. Bago ang takdang oras, sinabi ng kasama, hindi ko matatapos ang pagtingin sa mga paanyaya.\",\n \"observations\": {\n  \"speech_content\": \"The clip begins with instructional guidelines ('Magsabi ng maaga, magpasa ng malinaw.') spoken in an instructional delivery style, followed by a narrative sentence reporting dialogue ('Bago ang takdang oras, sinabi ng kasama, hindi ko matatapos ang pagtingin sa mga paanyaya.').\",\n  \"negation\": \"Clear negation is present at 00:08 ('hindi ko matatapos').\",\n  \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt ('kasama' is used instead).\",\n  \"voice_characteristics\": \"There is a shift in vocal tone and delivery between the opening imperatives (00:00–00:03.5) and the narrative sentence starting at around 00:04.5, consistent with shifting from lesson prompts/headings to story context/dialogue.\",\n  \"audio_quality\": \"Speech is fully audible and intelligible throughout; word boundaries are intact with no clipping at the start or end.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": null\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 16.3,
+          "end": 19.94,
+          "file": "read-teamwork-early-handoff-fil-body.wav",
+          "excerpt_sha256": "21657a1c1284bdc95f0eed53a162a512c57ba72aeb8e5ea21b46b307b631d281",
+          "decoded_sample_count": 87360,
+          "expected_context": "Ano na ang tapos at ano pa ang kailangan?”",
+          "model_response": "```json\n{\n  \"transcript\": \"Ano na ang tapos at ano pa ang kailangan?\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' is not present in this excerpt.\",\n    \"negation\": \"No negative terms occur in this excerpt.\",\n    \"role_distinctions\": \"A single adult female voice speaks throughout.\",\n    \"ending_completeness\": \"The utterance concludes naturally and completely with 'kailangan' at around 00:03.15, followed by silence until the end.\",\n    \"audible_speech\": \"Speech is clearly audible, well-articulated, and natural.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables are intact.\",\n    \"unexpected_voice_changes\": \"None detected; tone and pitch remain steady and consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 4.62,
+          "end": 11.06,
+          "file": "read-teamwork-early-handoff-fil-critical-negation-or-count.wav",
+          "excerpt_sha256": "e99ba90d7923afc8dc7687c37ac43144ce71fb633653aa08afc1283debf476c1",
+          "decoded_sample_count": 154560,
+          "expected_context": "Bago ang takdang oras, sinabi ng kasama: “Hindi ko matatapos ang pagtingin sa mga paanyaya.”",
+          "model_response": "```json\n{\n  \"transcript\": \"Bago ang takdang oras, sinabi ng kasama, hindi ko matatapos ang pagtingin sa mga paanyaya.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' is not present in this excerpt.\",\n    \"negation\": \"The negation 'hindi' in 'hindi ko matatapos' is clearly articulated and audible at around 00:03 - 00:04.\",\n    \"role_distinctions\": \"There is a subtle, natural shift in delivery marking the transition from narration ('Bago ang takdang oras, sinabi ng kasama') to direct speech ('hindi ko matatapos ang pagtingin sa mga paanyaya').\",\n    \"ending_completeness\": \"The audio concludes fully on 'paanyaya' without truncation or sudden cutoff.\",\n    \"audible_speech\": \"All words are fully audible, clear, and intelligible.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; pitch and inflection remain smooth and appropriate for narrative storytelling.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 55.26,
+          "end": 71.49716666666667,
+          "file": "read-teamwork-early-handoff-fil-end.wav",
+          "excerpt_sha256": "dd1754d3ee00a2ca7f4261d69aca733efd2a04a430ff88b58a0224c7dd6ced5c",
+          "decoded_sample_count": 389692,
+          "expected_context": "Ang agarang panganib o seryosong paglabag ay idinudulog kaagad sa angkop na contact ayon sa lokal na proseso; hindi kailangang hintayin ang usapang magkakasama. Maagang magsabi at tiyaking may tumanggap sa saklaw na gawain.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ang agarang panganib o seryosong paglabag ay idinudulog kaagad sa angkop na contact ayon sa lokal na proseso. Hindi kailangang hintayin ang usapang magkakasama. Maagang magsabi at tiyaking may tumanggap sa saklaw na gawain.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"Negation occurs at 00:08 ('Hindi kailangang hintayin...') and is articulated clearly and naturally.\",\n    \"role_distinctions\": \"There is a distinct speaker change: a male narrator speaks from 00:00 to 00:10, followed by a female narrator from 00:11 to 00:16.\",\n    \"ending_completeness\": \"The final phrase 'sa saklaw na gawain' concludes cleanly without cutoffs or truncation.\",\n    \"audible_speech\": \"All speech is clear, well-paced, and fully intelligible.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Speaker transition between male and female voices occurs at approximately 00:10 - 00:11, consistent with script section/role shift.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-feedback-completion-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-feedback-completion.fil.a1ff1c2bc47c.mp3",
+      "source_sha256": "fc6fcb8abb9472f092bf8b8c3659348815a53222384369d79b69305545636d44",
+      "decoded_pcm_sha256": "37b8165a813253bb56e4fbfd1c6bcbb749b65324e7a3f7dbb951f4dd10d7b7de",
+      "full_audio_metrics": {
+        "samples": 1524089,
+        "seconds": 63.503708333333336,
+        "rms": 0.12905511017397875,
+        "peak": 0.915496826171875,
+        "quiet_sample_fraction": 0.19816231204345677
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Magbigay ng puna at tiyaking tapos",
+          "start_ms": 0,
+          "end_ms": 3040,
+          "samples": 72960,
+          "seconds": 3.04,
+          "rms": 0.12079791329107777,
+          "peak": 0.83038330078125,
+          "quiet_sample_fraction": 0.2136924342105263
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Matapos ang gawain, sinabi ni Malou: “Nakatulong ang maagang pagsabi.",
+          "start_ms": 3340,
+          "end_ms": 8540,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.12316275542140359,
+          "peak": 0.8099365234375,
+          "quiet_sample_fraction": 0.11604166666666667
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Sa susunod, isulat natin kung sino ang magbabalita.”",
+          "start_ms": 8840,
+          "end_ms": 13120,
+          "samples": 102720,
+          "seconds": 4.28,
+          "rms": 0.13546325530544231,
+          "peak": 0.852081298828125,
+          "quiet_sample_fraction": 0.17960475077881619
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Tiyak sa kilos at mungkahi ang puna, hindi sa pagkatao.",
+          "start_ms": 13420,
+          "end_ms": 18060,
+          "samples": 111360,
+          "seconds": 4.64,
+          "rms": 0.13489412733451034,
+          "peak": 0.915496826171875,
+          "quiet_sample_fraction": 0.18386314655172414
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Nakikinig siya sa paliwanag ng kasama at nagtatanong kung anong pagbabago ang makatutulong.",
+          "start_ms": 18360,
+          "end_ms": 25080,
+          "samples": 161280,
+          "seconds": 6.72,
+          "rms": 0.14268815053905975,
+          "peak": 0.786651611328125,
+          "quiet_sample_fraction": 0.18930431547619048
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Nagbalita ang tumanggap ng gawain: “Nasuri na ang mga paanyaya bago mag-alas-diyes.”",
+          "start_ms": 25380,
+          "end_ms": 31700,
+          "samples": 151680,
+          "seconds": 6.32,
+          "rms": 0.13539888267928885,
+          "peak": 0.836334228515625,
+          "quiet_sample_fraction": 0.08589794303797468
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Tinitiyak ng grupo kung kumpleto ito ayon sa napagkasunduan at ipinapaalam sa itinakdang contact.",
+          "start_ms": 32000,
+          "end_ms": 38760,
+          "samples": 162240,
+          "seconds": 6.76,
+          "rms": 0.12728993710612346,
+          "peak": 0.850555419921875,
+          "quiet_sample_fraction": 0.1416111932938856
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Kung may natitira, itinatala ang susunod na hakbang, responsable at oras ng pagbalik.",
+          "start_ms": 39060,
+          "end_ms": 45820,
+          "samples": 162240,
+          "seconds": 6.76,
+          "rms": 0.13162781837555235,
+          "peak": 0.86517333984375,
+          "quiet_sample_fraction": 0.21070019723865877
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Hindi itinuturing na tapos ang gawain dahil lamang naipasa na ito.",
+          "start_ms": 46120,
+          "end_ms": 51200,
+          "samples": 121920,
+          "seconds": 5.08,
+          "rms": 0.16638240119369924,
+          "peak": 0.82122802734375,
+          "quiet_sample_fraction": 0.11308234908136483
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Nagpapasalamat ang grupo at nag-aalok ng boluntaryong pagkakataong magkumustahan.",
+          "start_ms": 51500,
+          "end_ms": 57540,
+          "samples": 144960,
+          "seconds": 6.04,
+          "rms": 0.09890945596551592,
+          "peak": 0.753814697265625,
+          "quiet_sample_fraction": 0.1578780353200883
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Tiyaking natapos ang napagkasunduan; magtakda ng susunod na hakbang kung may kulang.",
+          "start_ms": 57840,
+          "end_ms": 63440,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.12845422664117662,
+          "peak": 0.861175537109375,
+          "quiet_sample_fraction": 0.16714285714285715
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.54,
+          "file": "read-teamwork-feedback-completion-fil-head.wav",
+          "excerpt_sha256": "a8683f00ba8aaec7c23f5c8c7a6a4e6ee7717df5ddf6a92138ebceb6de8a78eb",
+          "decoded_sample_count": 204960,
+          "expected_context": "Magbigay ng puna at tiyaking tapos Matapos ang gawain, sinabi ni Malou: “Nakatulong ang maagang pagsabi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Magbigay ng puna at tiyaking tapos. Matapos ang gawain, sinabi ni Malou, nakatulong ang maagang pagsabi.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' around 00:04.9 - 00:05.4 is pronounced correctly as [mah-LOO] with stress on the final syllable.\",\n    \"negation\": \"No negative grammatical markers (e.g., hindi, huwag, wala) are present in this excerpt.\",\n    \"role_distinctions_and_voice_changes\": \"A noticeable shift in speaker voice profile occurs at approximately 00:03.0; the first sentence (00:00.0 - 00:02.6) is delivered in a higher-pitched female voice, while the narrative sentence starting at 00:03.2 transitions abruptly to a significantly lower-pitched/male voice.\",\n    \"ending_completeness\": \"The phrase ends completely with 'pagsabi' trailing off naturally before the audio cut.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible without background noise or distortion.\",\n    \"clipped_words\": \"No clipped beginnings or cut-off word endings detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:02.6 - 00:03.2\",\n      \"description\": \"Abrupt change in speaker voice/timbre between the first instruction ('Magbigay ng puna at tiyaking tapos.') and the narrative clause ('Matapos ang gawain...').\"\n    }\n  ],\n  \"uncertainty\": \"Low. The transcription and audio characteristics are clear and unambiguous.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 3.34,
+          "end": 8.54,
+          "file": "read-teamwork-feedback-completion-fil-body.wav",
+          "excerpt_sha256": "42cfccef2ab39e4f8d4fbf0dbd05a2a661f7f22aaef8ad6c59cc8fa44ceccd62",
+          "decoded_sample_count": 124800,
+          "expected_context": "Matapos ang gawain, sinabi ni Malou: “Nakatulong ang maagang pagsabi.",
+          "model_response": "```json\n{\n \"transcript\": \"Matapos ang gawain, sinabi ni Malou, nakatulong ang maagang pagsabi.\",\n \"observations\": {\n  \"malou_pronunciation\": \"Pronounced clearly as 'mah-LOO' around 00:01.8 - 00:02.4.\",\n  \"negation\": \"No negative constructions are present in the audio.\",\n  \"role_distinctions\": \"The speaker delivers narrative reporting followed by the quoted or attributed statement in a consistent narrator style.\",\n  \"ending_completeness\": \"The final word 'pagsabi' ends cleanly at approximately 00:05.1 with no truncation.\",\n  \"audible_speech\": \"All words are articulated clearly without background interference or masking.\",\n  \"clipped_words\": \"None detected; word boundaries and word terminals are intact.\",\n  \"unexpected_voice_changes\": \"Tone, pitch, and vocal timbre remain stable throughout.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 13.42,
+          "end": 18.06,
+          "file": "read-teamwork-feedback-completion-fil-critical-negation-or-count.wav",
+          "excerpt_sha256": "11a8a7c290aca1bb28c960bad2ee22aaf000ed49126f6ed76fc11e66de2c413e",
+          "decoded_sample_count": 111360,
+          "expected_context": "Tiyak sa kilos at mungkahi ang puna, hindi sa pagkatao.",
+          "model_response": "```json\n{\n  \"transcript\": \"Tiyak sa kilos at mungkahi ang puna, hindi sa pagkatao.\",\n  \"observations\": {\n    \"audible_speech\": \"The speaker delivers a clear and complete sentence in Filipino: 'Tiyak sa kilos at mungkahi ang puna, hindi sa pagkatao.'\",\n    \"malou_pronunciation\": \"N/A (the name 'Malou' is not spoken in this excerpt)\",\n    \"negation\": \"The negation 'hindi' is articulated clearly at around 00:02.7 - 00:03.0.\",\n    \"role_distinctions\": \"Single narrator/speaker voice throughout the recording.\",\n    \"ending_completeness\": \"The utterance finishes completely with 'pagkatao' with full resolution and no trailing cut-off.\",\n    \"clipped_words\": \"No clipped or abruptly truncated words detected.\",\n    \"unexpected_voice_changes\": \"None observed; tone, pitch, and acoustics remain stable.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 46.12,
+          "end": 63.503708333333336,
+          "file": "read-teamwork-feedback-completion-fil-end.wav",
+          "excerpt_sha256": "178bc8355cbc8417edd664551bd2660cc50704caf6569433cc181706bdfb0ded",
+          "decoded_sample_count": 417209,
+          "expected_context": "Hindi itinuturing na tapos ang gawain dahil lamang naipasa na ito. Nagpapasalamat ang grupo at nag-aalok ng boluntaryong pagkakataong magkumustahan. Tiyaking natapos ang napagkasunduan; magtakda ng susunod na hakbang kung may kulang.",
+          "model_response": "```json\n{\n \"transcript\": \"Hindi itinuturing na tapos ang gawain dahil lamang naipasa na ito. Nagpapasalamat ang grupo at nag-aalok ng boluntaryong pagkakataong magkumustahan. Tiyaking natapos ang napagkasunduan. Magtakda ng susunod na hakbang kung may kulang.\",\n \"observations\": [\n  {\n   \"timestamp\": \"00:00 - 00:05\",\n   \"note\": \"Negation 'Hindi' is clearly articulated at the beginning (00:00). Phrase 'dahil lamang naipasa na ito' is clear and complete.\"\n  },\n  {\n   \"timestamp\": \"00:05 - 00:11\",\n   \"note\": \"Smooth narration without abrupt pitch or tone shifts. Words 'Nagpapasalamat ang grupo at nag-aalok ng boluntaryong pagkakataong magkumustahan' are clearly enunciated.\"\n  },\n  {\n   \"timestamp\": \"00:11 - 00:17\",\n   \"note\": \"Final two instructional sentences are spoken clearly with natural pauses; concludes fully on 'kung may kulang' with no clipped ending audio.\"\n  },\n  {\n   \"timestamp\": \"00:00 - 00:17\",\n   \"note\": \"The name/word 'Malou' is not present in this excerpt.\"\n  }\n ],\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-five-practices-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-five-practices.fil.161ee58fc927.mp3",
+      "source_sha256": "d01127a693159c8a7d88b68d3e4774d94ad7e8942d4f18578a0c88002048cd1d",
+      "decoded_pcm_sha256": "839eba9679c2f708300668b3b3032590bdeb91b3871782eea0cd383987c4895b",
+      "full_audio_metrics": {
+        "samples": 1514058,
+        "seconds": 63.08575,
+        "rms": 0.1418879570836283,
+        "peak": 1,
+        "quiet_sample_fraction": 0.20407672625487266
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Limang gawi ng mabuting koponan",
+          "start_ms": 0,
+          "end_ms": 2600,
+          "samples": 62400,
+          "seconds": 2.6,
+          "rms": 0.11610932052044991,
+          "peak": 0.628631591796875,
+          "quiet_sample_fraction": 0.263125
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Una, linawin kung bakit nagboluntaryo: upang mapabuti ang kalusugan ng komunidad.",
+          "start_ms": 2900,
+          "end_ms": 9100,
+          "samples": 148800,
+          "seconds": 6.2,
+          "rms": 0.1592003970895634,
+          "peak": 0.903717041015625,
+          "quiet_sample_fraction": 0.22761424731182794
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Ikalawa, linawin ang tungkulin at pananagutan ng bawat miyembro.",
+          "start_ms": 9400,
+          "end_ms": 15000,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.16562581116600208,
+          "peak": 0.91363525390625,
+          "quiet_sample_fraction": 0.15997023809523808
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ikatlo, pag-usapan nang maaga ang isyung nakaaapekto sa trabaho.",
+          "start_ms": 15300,
+          "end_ms": 20780,
+          "samples": 131520,
+          "seconds": 5.48,
+          "rms": 0.11963237947928596,
+          "peak": 0.956787109375,
+          "quiet_sample_fraction": 0.21409671532846716
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Sapat na sabihin ang epekto sa gawain; hindi kailangang ibunyag ang pribadong dahilan.",
+          "start_ms": 21080,
+          "end_ms": 27200,
+          "samples": 146880,
+          "seconds": 6.12,
+          "rms": 0.14518366908512306,
+          "peak": 0.902496337890625,
+          "quiet_sample_fraction": 0.1176130174291939
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ikaapat, pakinggan ang puna ng kasamahan at komunidad at gamitin ang tiyak na mungkahi upang mapabuti ang gawain.",
+          "start_ms": 27500,
+          "end_ms": 36780,
+          "samples": 222720,
+          "seconds": 9.28,
+          "rms": 0.13514370958061872,
+          "peak": 1,
+          "quiet_sample_fraction": 0.1966864224137931
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Ikalima, bumuo ng mabuting ugnayan, maging sa labas ng trabaho, nang may paggalang sa personal na buhay.",
+          "start_ms": 37080,
+          "end_ms": 45200,
+          "samples": 194880,
+          "seconds": 8.12,
+          "rms": 0.1455671070856381,
+          "peak": 0.9149169921875,
+          "quiet_sample_fraction": 0.10993431855500821
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Boluntaryo ang ganitong pakikisalamuha.",
+          "start_ms": 45500,
+          "end_ms": 48380,
+          "samples": 69120,
+          "seconds": 2.88,
+          "rms": 0.10820763512638766,
+          "peak": 0.728485107421875,
+          "quiet_sample_fraction": 0.20558449074074073
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Walang kailangang gumastos, sumama sa biyahe, o makipagdikit sa pisikal na laro upang patunayang mabuting kasamahan.",
+          "start_ms": 48680,
+          "end_ms": 57320,
+          "samples": 207360,
+          "seconds": 8.64,
+          "rms": 0.1483634805074891,
+          "peak": 0.875274658203125,
+          "quiet_sample_fraction": 0.1125048225308642
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Panatilihin ang limang gawi at igalang ang pribasiya at pagpili.",
+          "start_ms": 57620,
+          "end_ms": 63020,
+          "samples": 129600,
+          "seconds": 5.4,
+          "rms": 0.16742383037778927,
+          "peak": 0.758392333984375,
+          "quiet_sample_fraction": 0.17450617283950617
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.1,
+          "file": "read-teamwork-five-practices-fil-head.wav",
+          "excerpt_sha256": "8bed2c49739d6ee046af9a54c56ce2d0a473f48de50ec4672a60f41d366ad16c",
+          "decoded_sample_count": 218400,
+          "expected_context": "Limang gawi ng mabuting koponan Una, linawin kung bakit nagboluntaryo: upang mapabuti ang kalusugan ng komunidad.",
+          "model_response": "```json\n{\n  \"transcript\": \"Limang gawi ng mabuting koponan. Una, linawin kung bakit nagboluntaryo, upang mapabuti ang kalusugan ng komunidad.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Not applicable; the name Malou does not occur in this excerpt.\",\n    \"negation\": \"No negative grammatical markers (e.g., hindi, huwag) are present.\",\n    \"role_distinctions\": \"Single consistent female narrator throughout.\",\n    \"ending_completeness\": \"The ending word 'komunidad' concludes naturally with standard sentence-final intonation without abrupt cutoff.\",\n    \"audible_speech\": \"Speech is fully audible, clean, and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain steady and consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.9,
+          "end": 9.1,
+          "file": "read-teamwork-five-practices-fil-body.wav",
+          "excerpt_sha256": "f5d50d0c5631b83a055f116ac3c09168fdd97e124f93f64be363257d9c612b9d",
+          "decoded_sample_count": 148800,
+          "expected_context": "Una, linawin kung bakit nagboluntaryo: upang mapabuti ang kalusugan ng komunidad.",
+          "model_response": "```json\n{\n  \"transcript\": \"Una, linawin kung bakit nagboluntaryo, upang mapabuti ang kalusugan ng komunidad.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"No negative constructions are present in this excerpt.\",\n    \"role_distinctions\": \"A single adult female voice delivers the entire excerpt in a steady educational narrator style; no multiple roles are present.\",\n    \"ending_completeness\": \"The sentence finishes cleanly at 00:05.90 without truncation or cut-off.\",\n    \"audible_speech\": \"All words ('Una, linawin kung bakit nagboluntaryo, upang mapabuti ang kalusugan ng komunidad.') are articulated clearly with minimal background noise.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and fully intelligible.\"\n}\n```"
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 0,
+          "end": 2.6,
+          "file": "read-teamwork-five-practices-fil-critical-negation-or-count.wav",
+          "excerpt_sha256": "772d1080b2c0265d9df4ffd41665eac8ac4192690283af8d5e1f611ed4173940",
+          "decoded_sample_count": 62400,
+          "expected_context": "Limang gawi ng mabuting koponan",
+          "model_response": "```json\n{\n  \"transcript\": \"Limang gawi ng mabuting koponan\",\n  \"observations\": {\n    \"audible_speech\": \"The phrase is spoken clearly in Filipino as an educational topic title: 'Limang gawi ng mabuting koponan' [00:00.00 - 00:02.45].\",\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"No negative markers (e.g., 'hindi', 'huwag') occur.\",\n    \"role_distinctions\": \"Single narrator voice, reading an introductory title/heading in an instructional tone.\",\n    \"ending_completeness\": \"The final word 'koponan' finishes naturally with full enunciation before the audio ends.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"None observed; tone, volume, and pacing remain steady.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality and speech clarity are high.\"\n}\n```"
+        },
+        {
+          "kind": "end",
+          "start": 45.5,
+          "end": 63.08575,
+          "file": "read-teamwork-five-practices-fil-end.wav",
+          "excerpt_sha256": "7db4e3c6fdba1e77361d3bc8890b4e964c1a61383a25d08cce8e0292631f4f90",
+          "decoded_sample_count": 422058,
+          "expected_context": "Boluntaryo ang ganitong pakikisalamuha. Walang kailangang gumastos, sumama sa biyahe, o makipagdikit sa pisikal na laro upang patunayang mabuting kasamahan. Panatilihin ang limang gawi at igalang ang pribasiya at pagpili.",
+          "model_response": "```json\n{\n  \"transcript\": \"Boluntaryo ang ganitong pakikisalamuha. Walang kailangang gumastos, sumama sa biyahe, o makipagdikit sa pisikal na laro upang patunayang mabuting kasamahan. Panatilihin ang limang gawi, at igalang ang pribasiya at pagpili.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"The negative marker 'Walang' (00:03.00 - 00:03.55) is clearly articulated without hesitation or distortion.\",\n    \"role_distinctions\": \"Spoken by a single male speaker maintaining a steady, formal, and didactic/instructional narration tone throughout.\",\n    \"ending_completeness\": \"The final phrase 'at pagpili' completes fully around 00:16.90 with a natural cadence and room tone decay; there is no clipping or early cutoff.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and free of background noise or intrusive artifacts.\",\n    \"clipped_words\": \"None detected; word onsets and codas are cleanly preserved.\",\n    \"unexpected_voice_changes\": \"None detected; pitch, pace, and vocal timbre remain consistent across all three sentences.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is high and all spoken text is unambiguous.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-role-agreement-fil",
+      "language": "fil",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-role-agreement.fil.cb393bbe4d16.mp3",
+      "source_sha256": "7766c2def9cc844c6324a0ca7a414e3139522d4b9454dde401b58eaf09df9f2b",
+      "decoded_pcm_sha256": "51d280e2d2c03117ce16022cee59a9c7591cdaa46296e05e228b9488a1452550",
+      "full_audio_metrics": {
+        "samples": 1458887,
+        "seconds": 60.78695833333333,
+        "rms": 0.14430423887018132,
+        "peak": 0.999053955078125,
+        "quiet_sample_fraction": 0.20589463063280433
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Pagkasunduan ang gawain",
+          "start_ms": 0,
+          "end_ms": 2280,
+          "samples": 54720,
+          "seconds": 2.28,
+          "rms": 0.138143489370656,
+          "peak": 0.853973388671875,
+          "quiet_sample_fraction": 0.2822733918128655
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sa mesa, nililinaw ng grupo ang gawain: ihanda ang mga paanyaya bago mag-alas-diyes.",
+          "start_ms": 2580,
+          "end_ms": 10300,
+          "samples": 185280,
+          "seconds": 7.72,
+          "rms": 0.14897937343915735,
+          "peak": 0.9058837890625,
+          "quiet_sample_fraction": 0.18939982728842833
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Si Malou ang naghahanda, isang kasama ang tumitingin sa pagkakakumpleto, at ang isa ang nagbabalita sa itinakdang contact.",
+          "start_ms": 10600,
+          "end_ms": 19600,
+          "samples": 216000,
+          "seconds": 9,
+          "rms": 0.14352950828485314,
+          "peak": 0.999053955078125,
+          "quiet_sample_fraction": 0.18053703703703702
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Inuulit ng bawat isa ang tinanggap na gawain at oras.",
+          "start_ms": 19900,
+          "end_ms": 23900,
+          "samples": 96000,
+          "seconds": 4,
+          "rms": 0.16534706193608836,
+          "peak": 0.889068603515625,
+          "quiet_sample_fraction": 0.13216666666666665
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ito ay halimbawa ng paghahati ng gawaing napahintulutan na, hindi pangkalahatang tuntunin sa lahat ng barangay.",
+          "start_ms": 24200,
+          "end_ms": 31560,
+          "samples": 176640,
+          "seconds": 7.36,
+          "rms": 0.15432626593582552,
+          "peak": 0.8978271484375,
+          "quiet_sample_fraction": 0.11004302536231884
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Kung may pagbabago sa opisyal na assignment, tinitiyak muna ang lokal na proseso at pahintulot sa itinalagang supervisor.",
+          "start_ms": 31860,
+          "end_ms": 40540,
+          "samples": 208320,
+          "seconds": 8.68,
+          "rms": 0.12458050775636935,
+          "peak": 0.766082763671875,
+          "quiet_sample_fraction": 0.13664554531490014
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Hindi maaaring magtalaga ang kapwa BHW ng gawaing lampas sa pagsasanay o awtorisasyon ng kasama.",
+          "start_ms": 40840,
+          "end_ms": 49000,
+          "samples": 195840,
+          "seconds": 8.16,
+          "rms": 0.17844448733763896,
+          "peak": 0.887054443359375,
+          "quiet_sample_fraction": 0.09864174836601307
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Linawin din kung sino ang lalapitan kapag may hadlang.",
+          "start_ms": 49300,
+          "end_ms": 52740,
+          "samples": 82560,
+          "seconds": 3.44,
+          "rms": 0.11672988623995861,
+          "peak": 0.848175048828125,
+          "quiet_sample_fraction": 0.1589874031007752
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Gawain, tatanggap, oras at contact: ulitin at tiyakin ang kasunduan.",
+          "start_ms": 53040,
+          "end_ms": 60720,
+          "samples": 184320,
+          "seconds": 7.68,
+          "rms": 0.13476275962131928,
+          "peak": 0.900909423828125,
+          "quiet_sample_fraction": 0.31893988715277777
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.3,
+          "file": "read-teamwork-role-agreement-fil-head.wav",
+          "excerpt_sha256": "b892568be4fb9da896185b97649dbe6466ade7e0bb7a1d972a2d7918ea23ca26",
+          "decoded_sample_count": 247200,
+          "expected_context": "Pagkasunduan ang gawain Sa mesa, nililinaw ng grupo ang gawain: ihanda ang mga paanyaya bago mag-alas-diyes.",
+          "model_response": "```json\n{\n  \"transcript\": \"Pagkasunduan ang gawain. Sa mesa, nililinaw ng grupo ang gawain. Ihanda ang mga paanyaya bago mag-alas diyes.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name Malou does not appear in this excerpt.\",\n    \"negation\": \"No negative grammatical markers (e.g., hindi, huwag, wala) are present.\",\n    \"role_distinctions\": \"Narrated by a single, clear male voice throughout; no multi-character role interactions.\",\n    \"ending_completeness\": \"The excerpt concludes naturally after 'mag-alas diyes' (~00:09.6) with full decay and no premature cutoff.\",\n    \"audible_speech\": \"Speech is fully audible, clearly articulated, and suitable for educational listening.\",\n    \"clipped_words\": \"None detected; word onsets and codas are intact.\",\n    \"unexpected_voice_changes\": \"Tone, volume, acoustic environment, and pitch remain consistent across the audio.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is high and speech content is unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.58,
+          "end": 10.3,
+          "file": "read-teamwork-role-agreement-fil-body.wav",
+          "excerpt_sha256": "5ba677e4c9916bb3057261d0af6c24ff3c26b44fb75de9a69069decaec19763f",
+          "decoded_sample_count": 185280,
+          "expected_context": "Sa mesa, nililinaw ng grupo ang gawain: ihanda ang mga paanyaya bago mag-alas-diyes.",
+          "model_response": "```json\n{\n \"transcript\": \"Sa mesa, nililinaw ng grupo ang gawain. Ihanda ang mga paanyaya bago mag-alas diyes.\",\n \"observations\": {\n  \"malou_pronunciation\": \"The name Malou does not occur in this excerpt.\",\n  \"negation\": \"No negative markers (e.g., hindi, huwag, wala) are present.\",\n  \"role_distinctions\": \"Single consistent female voice delivering neutral narrative/instructional speech.\",\n  \"ending_completeness\": \"The final phrase 'bago mag-alas diyes' concludes naturally without abrupt cutting or truncation.\",\n  \"audible_speech\": \"All words are clearly articulated and intelligible throughout.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"Pitch, pacing, and audio fidelity remain steady across the segment.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 24.2,
+          "end": 31.56,
+          "file": "read-teamwork-role-agreement-fil-critical-negation-or-count.wav",
+          "excerpt_sha256": "26e41fb5214f877210317ce2059f378bb932dfe0c15e208130991803ae1a9551",
+          "decoded_sample_count": 176640,
+          "expected_context": "Ito ay halimbawa ng paghahati ng gawaing napahintulutan na, hindi pangkalahatang tuntunin sa lahat ng barangay.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ito ay halimbawa ng paghahati ng gawaing napahintulutan na, hindi pangkalahatang tuntunin sa lahat ng barangay.\",\n  \"observations\": {\n    \"audible_speech\": \"Clear and intelligible Tagalog/Filipino speech delivered at a measured educational narration pace.\",\n    \"malou_pronunciation\": \"The name or term 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"The negation 'hindi' is clearly articulated at approximately 00:03.90 - 00:04.35.\",\n    \"role_distinctions\": \"Single speaker narrating informative guidelines; no dialogue or multi-character roles present.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables are intact.\",\n    \"ending_completeness\": \"The audio ends naturally with 'barangay' around 00:06.85, followed by normal acoustic decay.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and volume remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio clarity is high and words are unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "end",
+          "start": 40.84,
+          "end": 60.78695833333333,
+          "file": "read-teamwork-role-agreement-fil-end.wav",
+          "excerpt_sha256": "ae3d2a0c49d57a0bb9aaa094567b9d7fe232b54f4b3c118b06ffb9a5a7f499d6",
+          "decoded_sample_count": 478727,
+          "expected_context": "Hindi maaaring magtalaga ang kapwa BHW ng gawaing lampas sa pagsasanay o awtorisasyon ng kasama. Linawin din kung sino ang lalapitan kapag may hadlang. Gawain, tatanggap, oras at contact: ulitin at tiyakin ang kasunduan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi maaaring magtalaga ang kapwa BHW ng gawaing lampas sa pagsasanay o awtorisasyon ng kasama. Linawin din kung sino ang lalapitan kapag may hadlang: gawain, tatanggap, oras, at kontak. Ulitin at tiyakin ang kasunduan.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' is not spoken in this audio segment.\",\n    \"negation\": \"The negation 'Hindi' at 00:00 is clearly articulated and easily understood.\",\n    \"role_distinctions_and_voice_changes\": \"A noticeable voice change occurs between 00:08 and 00:12 ('Linawin din kung sino ang lalapitan kapag may hadlang'), spoken by a second female voice with higher pitch/different timbre, before reverting to the initial speaker at 00:12.\",\n    \"ending_completeness\": \"The ending at 00:19 ('ang kasunduan') is complete and naturally decays without clipping or truncation.\",\n    \"audible_speech\": \"All speech is clear, well-enunciated, and free of significant acoustic interference.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp\": \"00:08 - 00:12\",\n      \"type\": \"unexpected_voice_change\",\n      \"description\": \"Voice shifts to a different female speaker for one sentence ('Linawin din...') before returning to the primary speaker.\"\n    }\n  ],\n  \"uncertainty\": \"None; all words and speaker transitions are clearly audible.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-fil",
+      "language": "fil",
+      "source_path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-52aaef9d68d1.mp4",
+      "source_sha256": "52aaef9d68d1038e86fe2a1217595e73c94c6148cee7b00df728810d6b387fa6",
+      "decoded_pcm_sha256": "634d294742751b55f45c24953b76340ef9715a2f214a6b4782571fbbec51c49a",
+      "full_audio_metrics": {
+        "samples": 1561088,
+        "seconds": 65.04533333333333,
+        "rms": 0.09563565217492039,
+        "peak": 0.670684814453125,
+        "quiet_sample_fraction": 0.267781829083306
+      },
+      "zones": [
+        {
+          "zone": "purpose",
+          "index": 0,
+          "text": "Si Malou at mga kapwa BHW ay naghahanda ng paanyaya. May layunin at oras, ngunit kailangan pang linawin ang tungkulin.",
+          "start_ms": 0,
+          "end_ms": 9840,
+          "samples": 236160,
+          "seconds": 9.84,
+          "rms": 0.10834840727312774,
+          "peak": 0.5919189453125,
+          "quiet_sample_fraction": 0.1911670054200542
+        },
+        {
+          "zone": "practices",
+          "index": 1,
+          "text": "Limang gawi ang gabay: iisang layunin, malinaw na tungkulin, maagang pag-uusap, bukas sa puna, at magalang na ugnayan.",
+          "start_ms": 10140,
+          "end_ms": 21940,
+          "samples": 283200,
+          "seconds": 11.8,
+          "rms": 0.10443666531536969,
+          "peak": 0.670684814453125,
+          "quiet_sample_fraction": 0.2807485875706215
+        },
+        {
+          "zone": "agreement",
+          "index": 2,
+          "text": "Pinagkasunduan ang gawain, tatanggap at oras. Inuulit ng kasama ang tinanggap na tungkulin. Tinitiyak ang pahintulot kung may pagbabago.",
+          "start_ms": 22240,
+          "end_ms": 33200,
+          "samples": 263040,
+          "seconds": 10.96,
+          "rms": 0.08568233248210108,
+          "peak": 0.596466064453125,
+          "quiet_sample_fraction": 0.2493537104622871
+        },
+        {
+          "zone": "handoff",
+          "index": 3,
+          "text": "May kasama na hindi matatapos. Maagang nakinig si Malou. Nilinaw ang natitira at tumanggap ang sasalo, nang walang pribadong dahilan.",
+          "start_ms": 33500,
+          "end_ms": 43860,
+          "samples": 248640,
+          "seconds": 10.36,
+          "rms": 0.07959905363090072,
+          "peak": 0.582611083984375,
+          "quiet_sample_fraction": 0.23087596525096524
+        },
+        {
+          "zone": "feedback",
+          "index": 4,
+          "text": "Nagbigay si Malou ng tiyak na mungkahi. Nakinig siya sa sagot at tiniyak na natapos ang napagkasunduang gawain.",
+          "start_ms": 44160,
+          "end_ms": 53520,
+          "samples": 224640,
+          "seconds": 9.36,
+          "rms": 0.09380828437003207,
+          "peak": 0.61920166015625,
+          "quiet_sample_fraction": 0.19819266381766382
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "Sa susunod na gawain, linawin ang papel, magsabi nang maaga, igalang ang pribasiya, at tiyakin ang pagtanggap at pagtatapos.",
+          "start_ms": 53820,
+          "end_ms": 63820,
+          "samples": 240000,
+          "seconds": 10,
+          "rms": 0.11055608683821502,
+          "peak": 0.629974365234375,
+          "quiet_sample_fraction": 0.25188333333333335
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 21.94,
+          "file": "shipped-story-fil-head.wav",
+          "excerpt_sha256": "248e8022af932beaff84ee721f9e5731271e1e81481b37ee3b9d31450aad1670",
+          "decoded_sample_count": 526560,
+          "expected_context": "Si Malou at mga kapwa BHW ay naghahanda ng paanyaya. May layunin at oras, ngunit kailangan pang linawin ang tungkulin. Limang gawi ang gabay: iisang layunin, malinaw na tungkulin, maagang pag-uusap, bukas sa puna, at magalang na ugnayan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Si Malou at mga kapwa BHW ay naghahanda ng paanyaya. May layunin at oras, ngunit kailangan pang linawin ang tungkulin. Limang gawi ang gabay: iisang layunin, malinaw na tungkulin, maagang pag-uusap, bukas sa puna, at magalang na ugnayan.\",\n  \"observations\": \"The speaker articulates 'Malou' with stress on the second syllable (mah-LOO) at 00:00.1–00:00.7. The delivery is clear, measured, and consistent with educational narration. Role references ('BHW' as Barangay Health Workers) and list items are distinctly pronounced with natural pauses. No unexpected voice changes, clipping, or abrupt endings are observed.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and entirely intelligible throughout.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 9.84,
+          "file": "shipped-story-fil-body.wav",
+          "excerpt_sha256": "93c91a0ffea24f6039ace75552ed01708a99a8dc01fc16fa4b7cfa6abbbe2c40",
+          "decoded_sample_count": 236160,
+          "expected_context": "Si Malou at mga kapwa BHW ay naghahanda ng paanyaya. May layunin at oras, ngunit kailangan pang linawin ang tungkulin.",
+          "model_response": "```json\n{\n  \"transcript\": \"Si Malou at mga kapwa BHW ay naghahanda ng paanyaya. May layunin at oras, ngunit kailangan pang linawin ang tungkulin.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced accurately as 'mah-LOO' (/mɐˈlu/) at 00:00 - 00:01.\",\n    \"negation\": \"No negative markers (e.g., 'hindi', 'wala') are present in this excerpt.\",\n    \"role_distinctions\": \"Clearly distinguishes 'Malou' and her peers ('mga kapwa BHW').\",\n    \"ending_completeness\": \"The sentence completes naturally at 'tungkulin' (00:08 - 00:09) without truncation.\",\n    \"audible_speech\": \"All words are fully articulate, clear, and delivered at a measured educational pace.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and speaker characteristics remain uniform throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality and intelligibility are high.\"\n}\n```"
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 10.14,
+          "end": 21.94,
+          "file": "shipped-story-fil-critical-negation-or-count.wav",
+          "excerpt_sha256": "b6123c4ee5b4bf29404666e424ce02195b736b43f5f1dff5c8874c4d001a241d",
+          "decoded_sample_count": 283200,
+          "expected_context": "Limang gawi ang gabay: iisang layunin, malinaw na tungkulin, maagang pag-uusap, bukas sa puna, at magalang na ugnayan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Limang gawi ang gabay: iisang layunin, malinaw na tungkulin, maagang pag-uusap, bukas sa puna, at magalang na ugnayan.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name Malou does not appear in this excerpt.\",\n    \"negation\": \"No negation is used in this segment.\",\n    \"role_distinctions\": \"Single narrator voice delivering an educational list clearly and consistently.\",\n    \"ending_completeness\": \"The final phrase concludes naturally with 'ugnayan' and has a complete falling cadence with no abrupt cutoffs.\",\n    \"audible_speech\": \"All words are clearly audible and easily understood.\",\n    \"clipped_words\": \"None detected; all syllable onsets and offsets are fully articulated.\",\n    \"unexpected_voice_changes\": \"Pacing, pitch, and timbre remain steady across all items in the list.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "end",
+          "start": 44.16,
+          "end": 65.04533333333333,
+          "file": "shipped-story-fil-end.wav",
+          "excerpt_sha256": "3021bafb92b8c386e62bf42cdeffc4c0fb9fe1800c7b2899852d05cd1500ebe8",
+          "decoded_sample_count": 501248,
+          "expected_context": "Nagbigay si Malou ng tiyak na mungkahi. Nakinig siya sa sagot at tiniyak na natapos ang napagkasunduang gawain. Sa susunod na gawain, linawin ang papel, magsabi nang maaga, igalang ang pribasiya, at tiyakin ang pagtanggap at pagtatapos.",
+          "model_response": "```json\n{\n  \"transcript\": \"Nagbigay si Malou ng tiyak na mungkahi. Nakinig siya sa sagot, at tiniyak na natapos ang napagkasunduang gawain. Sa susunod na gawain, linawin ang papel, magsabi nang maaga, igalang ang pribasya, at tiyakin ang pagtanggap at pagtatapos.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' at 00:00.9 - 00:01.4 is pronounced clearly with oxytone stress as [ma'lu] (mah-LOO), consistent with the standard Tagalog pronunciation.\",\n    \"negation\": \"No negative grammatical markers (e.g., 'hindi', 'huwag', 'wala') are present in this excerpt.\",\n    \"role_distinctions\": \"There is a transition between descriptive narration of Malou's actions (00:00 - 00:09) and directive guidance/action items for upcoming tasks (00:09 - 00:19).\",\n    \"ending_completeness\": \"The audio concludes naturally with full decay on the final syllable of 'pagtatapos' around 00:19.4 without premature cutoff.\",\n    \"audible_speech\": \"All words are clearly enunciated, audible, and free of masking background noise.\",\n    \"clipped_words\": \"None detected; both initial and final consonants are preserved.\",\n    \"voice_changes\": \"A slight tonal shift occurs around 00:09.5 as the speaker shifts from narrative recap to an instructional enumeration style, though it appears to be the same voice actor adjusting delivery style rather than an abrupt voice switch.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the transcription and phonetic details are clearly audible.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-section-8-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/section-8.en.b7f01452d6cc.mp3",
+      "source_sha256": "51717c158bfcd8bce978c643cc1596c44bc53ae7849ea3a46396eee2f4352aa2",
+      "decoded_pcm_sha256": "4de52d440cdfeea24524ab6a7f0f6b3dd64c06efb67342a9899f376797588d7f",
+      "full_audio_metrics": {
+        "samples": 1188676,
+        "seconds": 49.528166666666664,
+        "rms": 0.1364829000623693,
+        "peak": 0.897857666015625,
+        "quiet_sample_fraction": 0.18569736412613697
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "One purpose, clear teamwork",
+          "start_ms": 0,
+          "end_ms": 3280,
+          "samples": 78720,
+          "seconds": 3.28,
+          "rms": 0.12377179123364668,
+          "peak": 0.769927978515625,
+          "quiet_sample_fraction": 0.34965701219512196
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "In this fictional situation, Malou and two fellow BHWs are preparing invitations for an agreed outreach activity.",
+          "start_ms": 3580,
+          "end_ms": 12380,
+          "samples": 211200,
+          "seconds": 8.8,
+          "rms": 0.15095908596858074,
+          "peak": 0.897857666015625,
+          "quiet_sample_fraction": 0.10177083333333334
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "The purok and time are assigned, but it is not yet clear who will prepare the invitations or who will report completion.",
+          "start_ms": 12680,
+          "end_ms": 20960,
+          "samples": 198720,
+          "seconds": 8.28,
+          "rms": 0.12472295547202675,
+          "peak": 0.785247802734375,
+          "quiet_sample_fraction": 0.17000805152979065
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Saying everyone will help is not enough.",
+          "start_ms": 21260,
+          "end_ms": 24020,
+          "samples": 66240,
+          "seconds": 2.76,
+          "rms": 0.13105605512322363,
+          "peak": 0.6737060546875,
+          "quiet_sample_fraction": 0.15063405797101448
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Good teamwork uses a shared purpose, clear roles, early communication, openness to feedback and respectful relationships.",
+          "start_ms": 24320,
+          "end_ms": 33800,
+          "samples": 227520,
+          "seconds": 9.48,
+          "rms": 0.15238660798236212,
+          "peak": 0.857818603515625,
+          "quiet_sample_fraction": 0.15588959212376935
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "These help the team carry out its work for community health.",
+          "start_ms": 34100,
+          "end_ms": 37700,
+          "samples": 86400,
+          "seconds": 3.6,
+          "rms": 0.13394138952065368,
+          "peak": 0.8895263671875,
+          "quiet_sample_fraction": 0.1372800925925926
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Cooperation does not grant authority to make clinical decisions or share confidential information.",
+          "start_ms": 38000,
+          "end_ms": 44920,
+          "samples": 166080,
+          "seconds": 6.92,
+          "rms": 0.13671422119750992,
+          "peak": 0.87957763671875,
+          "quiet_sample_fraction": 0.09659802504816956
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Explain the purpose and clarify your contribution and limits.",
+          "start_ms": 45220,
+          "end_ms": 49460,
+          "samples": 101760,
+          "seconds": 4.24,
+          "rms": 0.13866629387321544,
+          "peak": 0.85943603515625,
+          "quiet_sample_fraction": 0.1285868710691824
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 12.38,
+          "file": "read-section-8-en-head.wav",
+          "excerpt_sha256": "50946ca23b43b02dfc93f28f5a9e9de778fdfd26da6a5066dac7ac67313b8f04",
+          "decoded_sample_count": 297120,
+          "expected_context": "One purpose, clear teamwork In this fictional situation, Malou and two fellow BHWs are preparing invitations for an agreed outreach activity.",
+          "model_response": "```json\n{\n  \"transcript\": \"One purpose: clear teamwork. In this fictional situation, Malou and two fellow BHWs are preparing invitations for an agreed outreach activity.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced distinctly as /məˈluː/ (mah-LOO) with stress on the second syllable around 00:05.8 - 00:06.4.\",\n    \"negation\": \"No negative grammatical constructions or negation terms present.\",\n    \"role_distinctions\": \"There is a distinct speaker switch at 00:03.4; Speaker 1 announces the module/slide header ('One purpose: clear teamwork.'), followed by Speaker 2 narrating the scenario.\",\n    \"ending_completeness\": \"The utterance completes fully and naturally with 'activity' at 00:11.9 without truncation.\",\n    \"audible_speech\": \"Speech is clearly audible, intelligible, and free of masking background noise throughout.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants ('teamwork', 'activity') are preserved.\",\n    \"unexpected_voice_changes\": \"A shift in vocal profile occurs between the heading (00:00.0 - 00:02.9) and the scenario narration (00:03.7 - 00:12.0), consistent with a deliberate two-speaker structure.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 3.58,
+          "end": 12.38,
+          "file": "read-section-8-en-body.wav",
+          "excerpt_sha256": "1130b5096eb4a0cfdbc213ea1d5cbd0df7231fff72bcfb4c4b223bfde043bad0",
+          "decoded_sample_count": 211200,
+          "expected_context": "In this fictional situation, Malou and two fellow BHWs are preparing invitations for an agreed outreach activity.",
+          "model_response": "```json\n{\n  \"transcript\": \"In this fictional situation, Malou and two fellow BHWs are preparing invitations for an agreed outreach activity.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' at 00:02 - 00:03 is pronounced clearly as [məˈluː] / 'mah-LOO', matching the expected Philippine English pronunciation.\",\n    \"negation\": \"No negative statements or negation particles occur in this excerpt.\",\n    \"role_distinctions\": \"Spoken by a single narrator setting up an educational scenario involving Malou and fellow BHWs (Barangay Health Workers).\",\n    \"ending_completeness\": \"The utterance completes naturally at 00:08 without cutoffs, concluding on 'activity.'\",\n    \"audible_speech\": \"All words are clearly enunciated with clean studio audio quality.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Pacing, pitch, and voice quality remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 12.68,
+          "end": 20.96,
+          "file": "read-section-8-en-critical-negation-or-count.wav",
+          "excerpt_sha256": "219cd905768da095027f4ffac3496171f3895f78aa1adbdb5016fafa6c0ac013",
+          "decoded_sample_count": 198720,
+          "expected_context": "The purok and time are assigned, but it is not yet clear who will prepare the invitations or who will report completion.",
+          "model_response": "```json\n{\n  \"transcript\": \"The purok and time are assigned, but it is not yet clear who will prepare the invitations, or who will report completion.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name Malou does not occur in this excerpt.\",\n    \"negation\": \"Negation is clearly articulated in 'not yet clear' around 00:03.\",\n    \"role_distinctions\": \"Single narrator voice throughout.\",\n    \"ending_completeness\": \"The sentence finishes completely with no truncation.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; tone and pitch remain steady.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 34.1,
+          "end": 49.528166666666664,
+          "file": "read-section-8-en-end.wav",
+          "excerpt_sha256": "e6dc35236697a67b94a6af01a48c58ffcef2df42a8809ce4db9ff2a841cc73e2",
+          "decoded_sample_count": 370276,
+          "expected_context": "These help the team carry out its work for community health. Cooperation does not grant authority to make clinical decisions or share confidential information. Explain the purpose and clarify your contribution and limits.",
+          "model_response": "```json\n{\n  \"transcript\": \"These help the team carry out its work for community health. Cooperation does not grant authority to make clinical decisions or share confidential information. Explain the purpose and clarify your contribution and limits.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name Malou does not occur in this excerpt.\",\n    \"negation\": \"The negation 'does not' is clearly articulated at 00:04.90 - 00:05.65 without slur or dropping.\",\n    \"role_distinctions\": \"There is a clear alternation between two distinct speaker voices: a female voice (00:00.00 - 00:03.50 and 00:11.00 - 00:15.30) and a male voice (00:03.90 - 00:10.55).\",\n    \"ending_completeness\": \"The final phrase 'and limits' completes naturally with audible closure and no premature cut-off.\",\n    \"audible_speech\": \"All words are fully audible and intelligible Philippine English speech.\",\n    \"clipped_words\": \"No clipped beginnings or endings detected.\",\n    \"unexpected_voice_changes\": \"Speaker transitions between female and male narrators appear structured and intentional; pitch and timber remain stable within each speaker's segment.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None detected; speech quality and transcription certainty are high.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-application-check-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-application-check.en.eb41e9e270d8.mp3",
+      "source_sha256": "158db088dfbbbecbe520effd398f910c0f115fbd2016132d1f27358feeff9780",
+      "decoded_pcm_sha256": "6e5f2ea6131b43428b6af0394da7c6fff373b055b27af599c9ca66fefe226d4c",
+      "full_audio_metrics": {
+        "samples": 1159837,
+        "seconds": 48.326541666666664,
+        "rms": 0.127239759711883,
+        "peak": 0.880340576171875,
+        "quiet_sample_fraction": 0.2415667029073913
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Apply: a task will not be finished",
+          "start_ms": 0,
+          "end_ms": 3400,
+          "samples": 81600,
+          "seconds": 3.4,
+          "rms": 0.08546884950711307,
+          "peak": 0.607177734375,
+          "quiet_sample_fraction": 0.29409313725490194
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "At another fictional outreach activity, Malou’s colleague cannot finish the assigned preparation.",
+          "start_ms": 3700,
+          "end_ms": 10540,
+          "samples": 164160,
+          "seconds": 6.84,
+          "rms": 0.13104765662167794,
+          "peak": 0.880340576171875,
+          "quiet_sample_fraction": 0.2023635477582846
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "There is no immediate danger, but an assignment needs to change.",
+          "start_ms": 10840,
+          "end_ms": 15600,
+          "samples": 114240,
+          "seconds": 4.76,
+          "rms": 0.14997208459567793,
+          "peak": 0.795806884765625,
+          "quiet_sample_fraction": 0.193531162464986
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "There is still time to contact the designated supervisor.",
+          "start_ms": 15900,
+          "end_ms": 19820,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.12195213467206548,
+          "peak": 0.7125244140625,
+          "quiet_sample_fraction": 0.1606611394557823
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "The colleague does not want to share her personal reason.",
+          "start_ms": 20120,
+          "end_ms": 23720,
+          "samples": 86400,
+          "seconds": 3.6,
+          "rms": 0.11336899098304049,
+          "peak": 0.786285400390625,
+          "quiet_sample_fraction": 0.19385416666666666
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Choose the best of the three responses.",
+          "start_ms": 24020,
+          "end_ms": 26700,
+          "samples": 64320,
+          "seconds": 2.68,
+          "rms": 0.12733221632926098,
+          "peak": 0.796234130859375,
+          "quiet_sample_fraction": 0.19967350746268656
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Explain how it shows clear roles, early communication and respectful teamwork.",
+          "start_ms": 27000,
+          "end_ms": 33440,
+          "samples": 154560,
+          "seconds": 6.44,
+          "rms": 0.1559404618342831,
+          "peak": 0.869873046875,
+          "quiet_sample_fraction": 0.2058682712215321
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Then say who will accept the task, what permission must be checked and how completion will be confirmed.",
+          "start_ms": 33740,
+          "end_ms": 40540,
+          "samples": 163200,
+          "seconds": 6.8,
+          "rms": 0.1268715227106261,
+          "peak": 0.787017822265625,
+          "quiet_sample_fraction": 0.1622610294117647
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "You do not need to watch the optional story to answer.",
+          "start_ms": 40840,
+          "end_ms": 44280,
+          "samples": 82560,
+          "seconds": 3.44,
+          "rms": 0.14142099230063415,
+          "peak": 0.877777099609375,
+          "quiet_sample_fraction": 0.16193071705426357
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Show teamwork through a specific, safe agreement.",
+          "start_ms": 44580,
+          "end_ms": 48260,
+          "samples": 88320,
+          "seconds": 3.68,
+          "rms": 0.11675060369622667,
+          "peak": 0.782806396484375,
+          "quiet_sample_fraction": 0.2049705615942029
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.54,
+          "file": "read-teamwork-application-check-en-head.wav",
+          "excerpt_sha256": "843eb76c3abc4807a4a047cb320419c4fa3cebe7a3b8d9e7dd28634bceb9885a",
+          "decoded_sample_count": 252960,
+          "expected_context": "Apply: a task will not be finished At another fictional outreach activity, Malou’s colleague cannot finish the assigned preparation.",
+          "model_response": "```json\n{\n  \"transcript\": \"A blai, a task will not be finished. At another fictional outreach activity, Malou's colleague cannot finish the assigned preparation.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced accurately as /məˈluːz/ (mah-LOOZ) with stress on the second syllable at approximately 00:07.1.\",\n    \"negation\": \"Clear negation heard in 'will not be finished' (00:01.8 - 00:02.9) and 'cannot finish' (00:08.3 - 00:09.1).\",\n    \"role_distinctions_and_voice_changes\": \"There is an unexpected voice change: an initial flatter, lower-pitched voice speaks from 00:00.0 to 00:02.9, followed by a pause and a different, higher-pitched narrator voice taking over from 00:03.8 to 00:10.0.\",\n    \"ending_completeness\": \"The sentence and final word 'preparation' conclude naturally at approximately 00:09.9 with intact decay.\",\n    \"audible_speech_and_clipped_words\": \"The opening word/fragment 'A blai' (00:00.0 - 00:00.8) sounds like an extraneous, non-standard, or truncated token before 'a task will not be finished.'\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp\": \"00:00.0 - 00:00.8\",\n      \"defect\": \"Spurious or clipped speech artifact ('A blai') at excerpt start.\"\n    },\n    {\n      \"timestamp\": \"00:03.0 - 00:03.8\",\n      \"defect\": \"Abrupt change in speaker voice identity between the first clause and the subsequent sentence.\"\n    }\n  ],\n  \"uncertainty\": \"Mild uncertainty regarding whether the initial sound at 00:00.0–00:00.8 was intended as 'Apply' or is a corrupted artifact/clipped reading.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 3.7,
+          "end": 10.54,
+          "file": "read-teamwork-application-check-en-body.wav",
+          "excerpt_sha256": "e5d6e5c84e86bacb7ff8766b94b0aa1a6addda932909df0d4b2afa9f93ea7a3c",
+          "decoded_sample_count": 164160,
+          "expected_context": "At another fictional outreach activity, Malou’s colleague cannot finish the assigned preparation.",
+          "model_response": "```json\n{\n  \"transcript\": \"At another fictional outreach activity, Malou's colleague cannot finish the assigned preparation.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou's' (around 00:03.0 - 00:03.7) is pronounced with stress on the second syllable matching /məˈluːz/ (mah-LOO's).\",\n    \"negation\": \"The negative modal 'cannot' is clearly articulated at approximately 00:04.4 - 00:04.9.\",\n    \"role_distinctions\": \"The speaker delivers narration in a neutral, educational voice consistent with a single narrator persona.\",\n    \"ending_completeness\": \"The utterance concludes fully on 'preparation' with natural terminal decay and no truncation.\",\n    \"audible_speech\": \"All spoken words are fully intelligible and clear against a clean background.\",\n    \"clipped_words\": \"None detected; both initial and final consonants are preserved.\",\n    \"unexpected_voice_changes\": \"None observed; tone, pacing, and pitch contour remain consistent throughout the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all speech segments and phonetic cues are distinct.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 0,
+          "end": 3.4,
+          "file": "read-teamwork-application-check-en-critical-negation-or-count.wav",
+          "excerpt_sha256": "6e35ac1e099abf7a09c021c5c57b4891b2efab8bddd13ebf21d991563dc18d4e",
+          "decoded_sample_count": 81600,
+          "expected_context": "Apply: a task will not be finished",
+          "model_response": "```json\n{\n  \"transcript\": \"Apply, a task will not be finished.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The opening word is pronounced distinctly as 'Apply' ([əˈplaɪ]) rather than the name 'Malou' ([mɐˈluː] or [mɑːˈluː]).\",\n    \"negation\": \"Negation 'not' in 'will not be finished' is clearly articulated and audible at 00:01.65–00:02.00.\",\n    \"role_distinctions\": \"Single speaker throughout; no separate character or narrator role differentiation is apparent.\",\n    \"ending_completeness\": \"The utterance completes naturally on 'finished' at around 00:02.75 with clean decay and no cut-off.\",\n    \"audible_speech\": \"All words are clearly audible without masking background noise.\",\n    \"clipped_words\": \"No words are clipped at the start or finish.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and pacing remain consistent throughout.\"\n  },\n  \"possible_defects\": [\n    \"Target name substitution/mispronunciation: The first word sounds like 'Apply' instead of 'Malou'.\"\n  ],\n  \"uncertainty\": \"Low; acoustic cues at 00:00.05–00:00.70 clearly indicate a vowel onset and diphthong /aɪ/ ('Apply') rather than /m/ and /u/ ('Malou').\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 27,
+          "end": 48.326541666666664,
+          "file": "read-teamwork-application-check-en-end.wav",
+          "excerpt_sha256": "dde0cc8bad455ad18c4b03c1281fe96e3e151aba8787c54a6cc1794808c272d0",
+          "decoded_sample_count": 511837,
+          "expected_context": "Explain how it shows clear roles, early communication and respectful teamwork. Then say who will accept the task, what permission must be checked and how completion will be confirmed. You do not need to watch the optional story to answer. Show teamwork through a specific, safe agreement.",
+          "model_response": "```json\n{\n  \"transcript\": \"Explain how it shows clear roles, early communication, and respectful teamwork. Then say who will accept the task, what permission must be checked, and how completion will be confirmed. You do not need to watch the optional story to answer. Show teamwork through a specific safe agreement.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"Standard clear negation present at 00:13.9 - 00:14.6 ('do not need').\",\n    \"role_distinctions\": \"The prompt outlines instructional/task criteria involving roles ('clear roles', 'who will accept the task').\",\n    \"ending_completeness\": \"The final sentence finishes completely on 'agreement' without cutoff or trailing truncation (ends at ~00:21.4).\",\n    \"audible_speech\": \"All speech is clear, intelligible, and synthesized educational prompt audio.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Multiple synthetic voice transitions occur across sentence boundaries: Sentence 1 (00:00.0 - 00:06.3) is an adult female voice; Sentence 2 (00:06.9 - 00:13.3) switches to a different female persona/pitch; Sentence 3 (00:13.9 - 00:17.3) shifts to a lower male persona; Sentence 4 (00:17.8 - 00:21.4) returns to a female voice.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_changes\",\n      \"timestamp_range\": \"00:00.0 - 00:21.4\",\n      \"description\": \"Frequent and alternating TTS speaker voices between consecutive instructional sentences.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech segments and phonetic realizations are distinct and clearly audible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-early-handoff-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-early-handoff.en.6ea68bfdf1bf.mp3",
+      "source_sha256": "0c8d70881ab67b622db36cd6e3d8a3b1770ab1beae9b4748adc247907eb59c88",
+      "decoded_pcm_sha256": "1b6591db173e867392a59809b608e9af53c7e046e1afad8702865c4757e3f9f3",
+      "full_audio_metrics": {
+        "samples": 1547912,
+        "seconds": 64.49633333333334,
+        "rms": 0.13114380397162276,
+        "peak": 0.999969482421875,
+        "quiet_sample_fraction": 0.2174710190243373
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Raise issues early, hand over clearly",
+          "start_ms": 0,
+          "end_ms": 3640,
+          "samples": 87360,
+          "seconds": 3.64,
+          "rms": 0.14009817933129762,
+          "peak": 0.928253173828125,
+          "quiet_sample_fraction": 0.24742445054945056
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Before the deadline, a colleague says, “I cannot finish checking the invitations.”",
+          "start_ms": 3940,
+          "end_ms": 9060,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.11211895698596673,
+          "peak": 0.8118896484375,
+          "quiet_sample_fraction": 0.1564208984375
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Malou responds, “Thank you for telling us early.",
+          "start_ms": 9360,
+          "end_ms": 12960,
+          "samples": 86400,
+          "seconds": 3.6,
+          "rms": 0.1235773016136839,
+          "peak": 0.84527587890625,
+          "quiet_sample_fraction": 0.25253472222222223
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "What is done and what remains?”",
+          "start_ms": 13260,
+          "end_ms": 16540,
+          "samples": 78720,
+          "seconds": 3.28,
+          "rms": 0.12995917697200848,
+          "peak": 0.816070556640625,
+          "quiet_sample_fraction": 0.20470020325203253
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "She does not demand private reasons or blame her colleague.",
+          "start_ms": 16840,
+          "end_ms": 21720,
+          "samples": 117120,
+          "seconds": 4.88,
+          "rms": 0.12066693378797318,
+          "peak": 0.79254150390625,
+          "quiet_sample_fraction": 0.17230191256830601
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "A handoff identifies what is done, what remains, the deadline and any permission still needed.",
+          "start_ms": 22020,
+          "end_ms": 29260,
+          "samples": 173760,
+          "seconds": 7.24,
+          "rms": 0.13347557746888047,
+          "peak": 0.83575439453125,
+          "quiet_sample_fraction": 0.1917529926335175
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Changes requiring permission are checked with the designated supervisor.",
+          "start_ms": 29560,
+          "end_ms": 34240,
+          "samples": 112320,
+          "seconds": 4.68,
+          "rms": 0.12771612173742275,
+          "peak": 0.7491455078125,
+          "quiet_sample_fraction": 0.18336894586894587
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "The receiving person accepts and repeats the task; simply leaving a message is not enough.",
+          "start_ms": 34540,
+          "end_ms": 41460,
+          "samples": 166080,
+          "seconds": 6.92,
+          "rms": 0.12093777532107472,
+          "peak": 0.733428955078125,
+          "quiet_sample_fraction": 0.15367894990366088
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Share only necessary information with an authorized recipient through an appropriate channel.",
+          "start_ms": 41760,
+          "end_ms": 48160,
+          "samples": 153600,
+          "seconds": 6.4,
+          "rms": 0.12501793220511898,
+          "peak": 0.79595947265625,
+          "quiet_sample_fraction": 0.16156901041666666
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "An immediate danger or serious breach is raised promptly with the appropriate contact under the local process; a peer discussion must not delay it.",
+          "start_ms": 48460,
+          "end_ms": 58980,
+          "samples": 252480,
+          "seconds": 10.52,
+          "rms": 0.16809561382889138,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.14713640684410648
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Speak early and confirm that someone accepts the bounded task.",
+          "start_ms": 59280,
+          "end_ms": 64440,
+          "samples": 123840,
+          "seconds": 5.16,
+          "rms": 0.13074000946238012,
+          "peak": 0.899658203125,
+          "quiet_sample_fraction": 0.18544896640826875
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.06,
+          "file": "read-teamwork-early-handoff-en-head.wav",
+          "excerpt_sha256": "be5c74f712a5b6eb1ca9549288a1b5385ecc7d146e1a8c7aedd1c4c1edb8141a",
+          "decoded_sample_count": 217440,
+          "expected_context": "Raise issues early, hand over clearly Before the deadline, a colleague says, “I cannot finish checking the invitations.”",
+          "model_response": "```json\n{\n  \"transcript\": \"Raise issues early, hand over clearly. Before the deadline, a colleague says, \\\"I cannot finish checking the invitations.\\\"\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name Malou does not occur in this excerpt.\",\n    \"negation\": \"The negation 'cannot' at approximately 00:06.6 - 00:07.1 is clearly articulated without drop-off or ambiguity.\",\n    \"role_distinctions\": \"The narrator delivers instructional text and context (00:00 - 00:06.1) before shifting inflection slightly to represent the quoted colleague ('I cannot finish checking the invitations', 00:06.2 - 00:08.9).\",\n    \"ending_completeness\": \"The ending word 'invitations' concludes cleanly without truncation around 00:08.8.\",\n    \"audible_speech\": \"All words are fully audible and intelligible throughout the clip.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"No unexpected acoustic glitches or unnatural voice changes; the slight shift at 00:06.2 corresponds to the dialogue cue.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 13.26,
+          "end": 16.54,
+          "file": "read-teamwork-early-handoff-en-body.wav",
+          "excerpt_sha256": "a3cc29fbc8e8089a323dfbec6a9fd4ae1b41ac7184862a325ba6e14fee65b549",
+          "decoded_sample_count": 78720,
+          "expected_context": "What is done and what remains?”",
+          "model_response": "```json\n{\n \"transcript\": \"What is done and what remains.\",\n \"observations\": \"The speaker delivers the short sentence with clear articulation and an educational, measured pacing. There are no sudden shifts in volume, pitch, or voice quality.\",\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 3.94,
+          "end": 9.06,
+          "file": "read-teamwork-early-handoff-en-critical-negation-or-count.wav",
+          "excerpt_sha256": "7501e754dcb6acbe2e6f9f1470f884f5ea04da640650fbacee2c2f1d3c0c006d",
+          "decoded_sample_count": 122880,
+          "expected_context": "Before the deadline, a colleague says, “I cannot finish checking the invitations.”",
+          "model_response": "```json\n{\n  \"transcript\": \"Before the deadline, a colleague says, I cannot finish checking the invitations.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"The negation 'cannot' is clearly enunciated around 00:02 - 00:03.\",\n    \"role_distinctions\": \"There is a subtle shift in prosody distinguishing the narrative framing ('Before the deadline, a colleague says,') from the quoted speech ('I cannot finish checking the invitations.').\",\n    \"ending_completeness\": \"The audio concludes naturally with the full word 'invitations' and appropriate sentence-final intonation.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout the clip.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; speech transition into the quoted dialogue is natural.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 48.46,
+          "end": 64.49633333333334,
+          "file": "read-teamwork-early-handoff-en-end.wav",
+          "excerpt_sha256": "56ea2ac946c21cd7f2e4bbc446a2fead16c2c71c130b00fad0aa6a009053c599",
+          "decoded_sample_count": 384872,
+          "expected_context": "An immediate danger or serious breach is raised promptly with the appropriate contact under the local process; a peer discussion must not delay it. Speak early and confirm that someone accepts the bounded task.",
+          "model_response": "```json\n{\n  \"transcript\": \"An immediate danger or a serious breach is raised promptly with the appropriate contact under the local process. A peer discussion must not delay it. Speak early, and confirm that someone accepts the bounded task.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this audio excerpt.\",\n    \"negation\": \"Clear negation occurs at 00:09.3 - 00:10.1 with 'must not delay it'.\",\n    \"role_distinctions\": \"There are two distinct speakers: Speaker 1 (female, Philippine English) speaks from 00:00.0 to 00:10.4, followed by Speaker 2 (male, deeper tone) from 00:11.0 to 00:15.6.\",\n    \"ending_completeness\": \"The audio ends naturally with a fully articulated final consonant cluster on 'task' around 00:15.6, followed by silence before 00:16.0.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible without background noise or significant distortion.\",\n    \"clipped_words\": \"None observed; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"A shift in speaker and vocal timbre occurs at approximately 00:10.8 between the female voice and the male voice.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; minor acoustic ambiguity between 'bounded task' and 'bound task' around 00:14.6 - 00:15.3, though two syllables ('bound-ed') are articulated.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-feedback-completion-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-feedback-completion.en.d44366c2f116.mp3",
+      "source_sha256": "8d55de8f4a5d2ee78da6cc06006ec57e097f0e0d8bf83dadcdf6314ea5d13d04",
+      "decoded_pcm_sha256": "3e00978366dae0b20435cd683ba1abab2f6a414a017cc34d98f5165c636c0ae7",
+      "full_audio_metrics": {
+        "samples": 1443214,
+        "seconds": 60.133916666666664,
+        "rms": 0.1276953714144369,
+        "peak": 0.93707275390625,
+        "quiet_sample_fraction": 0.24483340654954844
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Give feedback and confirm completion",
+          "start_ms": 0,
+          "end_ms": 3000,
+          "samples": 72000,
+          "seconds": 3,
+          "rms": 0.11542167640380419,
+          "peak": 0.831787109375,
+          "quiet_sample_fraction": 0.20958333333333334
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "After the task, Malou says, “Telling us early helped.",
+          "start_ms": 3300,
+          "end_ms": 8260,
+          "samples": 119040,
+          "seconds": 4.96,
+          "rms": 0.09142148004629656,
+          "peak": 0.798919677734375,
+          "quiet_sample_fraction": 0.2687331989247312
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Next time, let us write down who will report back.”",
+          "start_ms": 8560,
+          "end_ms": 11960,
+          "samples": 81600,
+          "seconds": 3.4,
+          "rms": 0.11053619186270783,
+          "peak": 0.790802001953125,
+          "quiet_sample_fraction": 0.22622549019607843
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Her feedback names an action and a suggestion, not a personality trait.",
+          "start_ms": 12260,
+          "end_ms": 18300,
+          "samples": 144960,
+          "seconds": 6.04,
+          "rms": 0.14110645713701192,
+          "peak": 0.871978759765625,
+          "quiet_sample_fraction": 0.1896523178807947
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "She listens to her colleague’s explanation and asks what change would help.",
+          "start_ms": 18600,
+          "end_ms": 23960,
+          "samples": 128640,
+          "seconds": 5.36,
+          "rms": 0.12935764481843134,
+          "peak": 0.831085205078125,
+          "quiet_sample_fraction": 0.17117537313432835
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "The person who accepted the task reports, “The invitations were checked before ten o’clock.”",
+          "start_ms": 24260,
+          "end_ms": 30420,
+          "samples": 147840,
+          "seconds": 6.16,
+          "rms": 0.1440593563174601,
+          "peak": 0.93707275390625,
+          "quiet_sample_fraction": 0.2056750541125541
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "The group confirms completeness against the agreement and informs the designated contact.",
+          "start_ms": 30720,
+          "end_ms": 37240,
+          "samples": 156480,
+          "seconds": 6.52,
+          "rms": 0.140639089825393,
+          "peak": 0.796112060546875,
+          "quiet_sample_fraction": 0.16133052147239263
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "If work remains, they record the next step, responsible person and follow-up time.",
+          "start_ms": 37540,
+          "end_ms": 43340,
+          "samples": 139200,
+          "seconds": 5.8,
+          "rms": 0.15488932438595285,
+          "peak": 0.872222900390625,
+          "quiet_sample_fraction": 0.2136853448275862
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "A task is not complete merely because it was handed over.",
+          "start_ms": 43640,
+          "end_ms": 48760,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.10946556187381201,
+          "peak": 0.80615234375,
+          "quiet_sample_fraction": 0.2604166666666667
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "The group thanks one another and offers a voluntary chance to check in socially.",
+          "start_ms": 49060,
+          "end_ms": 54260,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.1454346227378342,
+          "peak": 0.860565185546875,
+          "quiet_sample_fraction": 0.11877403846153846
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Confirm completion of the agreement; set a next step if anything remains.",
+          "start_ms": 54560,
+          "end_ms": 60080,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.12064769515390752,
+          "peak": 0.88360595703125,
+          "quiet_sample_fraction": 0.24747131642512077
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.26,
+          "file": "read-teamwork-feedback-completion-en-head.wav",
+          "excerpt_sha256": "e34dfcca9279d6893fa02e5bcb70932e96884df0267356e21ff524b63710b244",
+          "decoded_sample_count": 198240,
+          "expected_context": "Give feedback and confirm completion After the task, Malou says, “Telling us early helped.",
+          "model_response": "```json\n{\n  \"transcript\": \"Give feedback and confirm completion. After the task, Malou says, \\\"Telling us early helped.\\\"\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced as /məˈluː/ ('mah-LOO') around 00:04.70–00:05.20 with primary stress placed on the second syllable.\",\n    \"negation\": \"No negative grammatical particles or negations occur in this audio.\",\n    \"role_distinctions\": \"There is a clear vocal role shift; narration spans 00:00.00 to 00:05.45, followed by a distinct shift in register and pitch around 00:05.70 to portray Malou speaking ('Telling us early helped.').\",\n    \"ending_completeness\": \"The audio finishes cleanly with natural room tone after 'helped' without abrupt cutoffs or clipping.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"The vocal modulation beginning at 00:05.70 aligns with character voice reenactment rather than an unintentional technical artifact.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 3.3,
+          "end": 8.26,
+          "file": "read-teamwork-feedback-completion-en-body.wav",
+          "excerpt_sha256": "599caba26f7a5b78200f7aa84423b7935ede61803e8f8577e667d3d5da197588",
+          "decoded_sample_count": 119040,
+          "expected_context": "After the task, Malou says, “Telling us early helped.",
+          "model_response": "```json\n{\n  \"transcript\": \"After the task, Malou says, \\\"Telling us early helped\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as 'mah-LOO' ([məˈluː]) between 00:01.40 and 00:01.95, with primary stress on the second syllable.\",\n    \"negation\": \"No negative constructions are present in this excerpt.\",\n    \"role_distinctions\": \"There is a noticeable shift in tone and slight pause between the narrative setup ('After the task, Malou says,') and the quoted dialogue ('Telling us early helped').\",\n    \"ending_completeness\": \"The utterance completes the final word 'helped' cleanly around 00:04.45 with natural release and ambient decay, though quotation formatting indicates it is part of an ongoing thought.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and audible throughout the segment.\",\n    \"clipped_words\": \"None; neither the initial 'After' nor the final 'helped' are clipped.\",\n    \"unexpected_voice_changes\": \"None; the vocal timbre and quality remain consistent with typical narrative voice switching.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all lexical items and phonetic features are clearly audible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 12.26,
+          "end": 18.3,
+          "file": "read-teamwork-feedback-completion-en-critical-negation-or-count.wav",
+          "excerpt_sha256": "053c51bb7866ce472cc835d3269e837ed0a46f3b7efc856df27b50553e644857",
+          "decoded_sample_count": 144960,
+          "expected_context": "Her feedback names an action and a suggestion, not a personality trait.",
+          "model_response": "```json\n{\n  \"transcript\": \"Her feedback names an action and a suggestion, not a personality trait.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not occur in this excerpt.\",\n    \"negation\": \"The negation 'not' at 00:04.14 is clearly articulated and emphasized.\",\n    \"role_distinctions\": \"A single narrator voice delivers the educational statement consistently.\",\n    \"ending_completeness\": \"The utterance completes fully on 'trait' with a natural falling intonation and no clipping.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout the clip.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; pitch and tempo remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and unambiguous.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 43.64,
+          "end": 60.133916666666664,
+          "file": "read-teamwork-feedback-completion-en-end.wav",
+          "excerpt_sha256": "ef80caa783f6be1e9f9c5688cc303dbbeee0f88e06578114981c393bc0c85c24",
+          "decoded_sample_count": 395854,
+          "expected_context": "A task is not complete merely because it was handed over. The group thanks one another and offers a voluntary chance to check in socially. Confirm completion of the agreement; set a next step if anything remains.",
+          "model_response": "```json\n{\n  \"transcript\": \"A task is not complete merely because it was handed over. The group thanks one another and offers a voluntary chance to check in socially. Confirm completion of the agreement? Set a next step if anything remains.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"Clear negation heard at 00:00 - 00:02 ('A task is not complete').\",\n    \"role_distinctions\": \"Distinct speaker roles are present: a male speaker delivers instructional/character prompts at 00:00 - 00:04 and 00:11 - 00:16, while a female narrator provides descriptive narration at 00:05 - 00:10.\",\n    \"ending_completeness\": \"The excerpt concludes completely with the final word 'remains' fully articulated; no trailing words are cut off.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and well-enunciated.\",\n    \"clipped_words\": \"No clipped or abruptly cut-off words detected at boundaries or internally.\",\n    \"voice_changes\": \"Expected alternating voice change between the male speaker and female narrator, consistent with script role shifts.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low. The rising intonation on 'Confirm completion of the agreement' indicates it could be punctuated with a question mark or period depending on script intent, but the words themselves are unambiguous.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-five-practices-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-five-practices.en.c7fb911d43d6.mp3",
+      "source_sha256": "44bc9bfc13c5a486281be18e6ac21e6ab6c07005d6f6d2847bfbf54bbdb47b50",
+      "decoded_pcm_sha256": "f74b0140854800e4917c31cf2c8ee0c2cd24a479addee0e8e415c804a40d860f",
+      "full_audio_metrics": {
+        "samples": 1347919,
+        "seconds": 56.163291666666666,
+        "rms": 0.12706609541939232,
+        "peak": 0.972320556640625,
+        "quiet_sample_fraction": 0.24975536363831952
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Five practices of a good team",
+          "start_ms": 0,
+          "end_ms": 2440,
+          "samples": 58560,
+          "seconds": 2.44,
+          "rms": 0.10057616763973516,
+          "peak": 0.818695068359375,
+          "quiet_sample_fraction": 0.25297131147540985
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "First, clarify why you volunteered: to improve community health.",
+          "start_ms": 2740,
+          "end_ms": 7740,
+          "samples": 120000,
+          "seconds": 5,
+          "rms": 0.13458395285802566,
+          "peak": 0.7181396484375,
+          "quiet_sample_fraction": 0.2890083333333333
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Second, clarify each member’s role and responsibility.",
+          "start_ms": 8040,
+          "end_ms": 12200,
+          "samples": 99840,
+          "seconds": 4.16,
+          "rms": 0.12751848374536842,
+          "peak": 0.8631591796875,
+          "quiet_sample_fraction": 0.2069911858974359
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Third, discuss issues affecting the work early.",
+          "start_ms": 12500,
+          "end_ms": 15980,
+          "samples": 83520,
+          "seconds": 3.48,
+          "rms": 0.1308974855378032,
+          "peak": 0.972320556640625,
+          "quiet_sample_fraction": 0.20883620689655172
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Describing the effect on the task is enough; private reasons do not have to be disclosed.",
+          "start_ms": 16280,
+          "end_ms": 22400,
+          "samples": 146880,
+          "seconds": 6.12,
+          "rms": 0.0948212851054338,
+          "peak": 0.8607177734375,
+          "quiet_sample_fraction": 0.21130174291938997
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Fourth, listen to feedback from colleagues and the community and use specific suggestions to improve the work.",
+          "start_ms": 22700,
+          "end_ms": 30700,
+          "samples": 192000,
+          "seconds": 8,
+          "rms": 0.13658598117210252,
+          "peak": 0.804107666015625,
+          "quiet_sample_fraction": 0.19472395833333334
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Fifth, build good relationships, including outside work, while respecting personal lives.",
+          "start_ms": 31000,
+          "end_ms": 38440,
+          "samples": 178560,
+          "seconds": 7.44,
+          "rms": 0.13670064349669872,
+          "peak": 0.870330810546875,
+          "quiet_sample_fraction": 0.2444556451612903
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Such social activities are voluntary.",
+          "start_ms": 38740,
+          "end_ms": 41700,
+          "samples": 71040,
+          "seconds": 2.96,
+          "rms": 0.10086865940610222,
+          "peak": 0.59857177734375,
+          "quiet_sample_fraction": 0.17543637387387387
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Nobody has to spend money, join a trip or take part in a close-contact physical game to prove they are a good teammate.",
+          "start_ms": 42000,
+          "end_ms": 50640,
+          "samples": 207360,
+          "seconds": 8.64,
+          "rms": 0.1463744036794025,
+          "peak": 0.852783203125,
+          "quiet_sample_fraction": 0.17217399691358024
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Keep all five practices while respecting privacy and choice.",
+          "start_ms": 50940,
+          "end_ms": 56100,
+          "samples": 123840,
+          "seconds": 5.16,
+          "rms": 0.14315567460549505,
+          "peak": 0.81085205078125,
+          "quiet_sample_fraction": 0.18162144702842378
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.74,
+          "file": "read-teamwork-five-practices-en-head.wav",
+          "excerpt_sha256": "f19aa396c65c5a3ac93979d388cd8e32c803e56c46b98cc957ab4694eab1a255",
+          "decoded_sample_count": 185760,
+          "expected_context": "Five practices of a good team First, clarify why you volunteered: to improve community health.",
+          "model_response": "```json\n{\n \"transcript\": \"Five practices of a good team. First, clarify why you volunteered. To improve community health.\",\n \"observations\": {\n  \"malou_pronunciation\": \"The name Malou does not occur in this excerpt.\",\n  \"negation\": \"No negative constructions are present.\",\n  \"role_distinctions\": \"There is a distinct shift in speaker role: a primary narrator delivers the heading and first point (00:00 - 00:05), followed by an illustrative or respondent voice stating 'To improve community health' (00:05.5 - 00:07.3).\",\n  \"ending_completeness\": \"The final phrase concludes naturally without abrupt cutting or truncation.\",\n  \"audible_speech\": \"All speech is clear, intelligible, and consistent with Philippine English educational presentation style.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"No unintentional or glitch-like voice changes; the change in voice around 00:05.5 reflects an intended pedagogical/role shift.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 2.74,
+          "end": 7.74,
+          "file": "read-teamwork-five-practices-en-body.wav",
+          "excerpt_sha256": "0d387ee6a06a30e56ee8b01d3e87ccecfd0cf86b5a27e2da1660a0ec2c92ba75",
+          "decoded_sample_count": 120000,
+          "expected_context": "First, clarify why you volunteered: to improve community health.",
+          "model_response": "```json\n{\n  \"transcript\": \"First, clarify why you volunteered. To improve community health.\",\n  \"observations\": {\n    \"role_distinctions\": \"The audio features two distinct delivery styles/roles: a guiding or interviewing prompt ('First, clarify why you volunteered.') from 00:00.00 to 00:02.77, followed after a pause by an exemplary response ('To improve community health.') from 00:03.05 to 00:04.35.\",\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"No negative words or contractions are present.\",\n    \"ending_completeness\": \"The final word 'health' concludes naturally at 00:04.35 with audible final aspiration, showing no cut-off.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice changes\": \"There is a shift in pitch and persona between the instructional lead-in (higher, conversational) and the sample answer (lower, matter-of-fact), consistent with educational role-play.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 0,
+          "end": 2.44,
+          "file": "read-teamwork-five-practices-en-critical-negation-or-count.wav",
+          "excerpt_sha256": "dde85367f151ba493a8ad4c05f7925e4d0aacb9926af9f8428d6a40709b161a6",
+          "decoded_sample_count": 58560,
+          "expected_context": "Five practices of a good team",
+          "model_response": "```json\n{\n  \"transcript\": \"Five practices of a good team\",\n  \"observations\": {\n    \"malou_pronunciation\": \"not applicable; the name Malou does not occur in this excerpt\",\n    \"negation\": \"none detected\",\n    \"role_distinctions\": \"single speaker delivering a title or heading\",\n    \"ending_completeness\": \"the phrase finishes cleanly with no truncation\",\n    \"audible_speech\": \"speech is clear, intelligible, and well-enunciated throughout (00:00.08 - 00:02.08)\",\n    \"clipped_words\": \"none observed\",\n    \"unexpected_voice_changes\": \"none detected; pitch and tone remain consistent\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 38.74,
+          "end": 56.163291666666666,
+          "file": "read-teamwork-five-practices-en-end.wav",
+          "excerpt_sha256": "1cda6942931c3d0b156b15cc875930f49e525cca5dd0a77f980ed886594af5b5",
+          "decoded_sample_count": 418159,
+          "expected_context": "Such social activities are voluntary. Nobody has to spend money, join a trip or take part in a close-contact physical game to prove they are a good teammate. Keep all five practices while respecting privacy and choice.",
+          "model_response": "```json\n{\n  \"transcript\": \"Such social activities are voluntary. Nobody has to spend money, join a trip, or take part in a close-contact physical game to prove they are a good teammate. Keep all five practices while respecting privacy and choice.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"The negative pronoun 'Nobody' at 00:03.35 is clearly articulated.\",\n    \"role_distinctions_and_voice_changes\": \"A noticeable shift in vocal pitch, timbre, and recording presence occurs between the second sentence ending at 00:11.75 and the final sentence beginning at 00:12.30 ('Keep all five practices...').\",\n    \"audible_speech\": \"All words are fully audible and intelligible.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"ending_completeness\": \"The audio concludes naturally with the full word 'choice' without truncation.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:11.75 - 00:12.30\",\n      \"description\": \"Noticeable shift in tone, pitch, and acoustic quality between sentences, suggesting an edit splice or shift in speaker delivery.\"\n    }\n  ],\n  \"uncertainty\": \"Low.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "read-teamwork-role-agreement-en",
+      "language": "en",
+      "source_path": "/training/audio/05-bhw-at-barangay/bhw-teamwork/teamwork-role-agreement.en.e4adf09b9e90.mp3",
+      "source_sha256": "183274e141776fb13a1cbd9319c399ab1ffd87506d1546d7ff018a7ffd74e0e0",
+      "decoded_pcm_sha256": "d48b6eeaf2c7153457fe9f56fd75494869b6320902b3d152759d1d09dd64e7bc",
+      "full_audio_metrics": {
+        "samples": 1337888,
+        "seconds": 55.745333333333335,
+        "rms": 0.1270421913523263,
+        "peak": 0.915191650390625,
+        "quiet_sample_fraction": 0.2317204429668253
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Agree on the task",
+          "start_ms": 0,
+          "end_ms": 2560,
+          "samples": 61440,
+          "seconds": 2.56,
+          "rms": 0.0987656054351409,
+          "peak": 0.70672607421875,
+          "quiet_sample_fraction": 0.35250651041666664
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "At the table, the group clarifies the task: prepare the invitations before ten o’clock.",
+          "start_ms": 2860,
+          "end_ms": 8860,
+          "samples": 144000,
+          "seconds": 6,
+          "rms": 0.1900499728580984,
+          "peak": 0.915191650390625,
+          "quiet_sample_fraction": 0.228625
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Malou prepares them, one colleague checks completeness and another reports to the designated contact.",
+          "start_ms": 9160,
+          "end_ms": 17200,
+          "samples": 192960,
+          "seconds": 8.04,
+          "rms": 0.12150264260082053,
+          "peak": 0.77825927734375,
+          "quiet_sample_fraction": 0.2241967247097844
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Each person repeats the task and time they accepted.",
+          "start_ms": 17500,
+          "end_ms": 21300,
+          "samples": 91200,
+          "seconds": 3.8,
+          "rms": 0.11740237152769009,
+          "peak": 0.876678466796875,
+          "quiet_sample_fraction": 0.22893640350877192
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "This is an example of sharing an already authorized task, not a universal rule for every barangay.",
+          "start_ms": 21600,
+          "end_ms": 29960,
+          "samples": 200640,
+          "seconds": 8.36,
+          "rms": 0.12768851356652502,
+          "peak": 0.83135986328125,
+          "quiet_sample_fraction": 0.17467105263157895
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "A change to an official assignment must first be checked against the local process and permission from the designated supervisor.",
+          "start_ms": 30260,
+          "end_ms": 39100,
+          "samples": 212160,
+          "seconds": 8.84,
+          "rms": 0.11913288967957977,
+          "peak": 0.789794921875,
+          "quiet_sample_fraction": 0.11333427601809955
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "A peer BHW cannot assign work beyond a colleague’s training or authorization.",
+          "start_ms": 39400,
+          "end_ms": 45240,
+          "samples": 140160,
+          "seconds": 5.84,
+          "rms": 0.1275115215908629,
+          "peak": 0.870574951171875,
+          "quiet_sample_fraction": 0.11071632420091324
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Also clarify whom to contact if there is a difficulty.",
+          "start_ms": 45540,
+          "end_ms": 49420,
+          "samples": 93120,
+          "seconds": 3.88,
+          "rms": 0.11889275775881146,
+          "peak": 0.756134033203125,
+          "quiet_sample_fraction": 0.16030927835051548
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Task, recipient, time and contact: repeat and confirm the agreement.",
+          "start_ms": 49720,
+          "end_ms": 55680,
+          "samples": 143040,
+          "seconds": 5.96,
+          "rms": 0.11247005616659872,
+          "peak": 0.869293212890625,
+          "quiet_sample_fraction": 0.2980145413870246
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.86,
+          "file": "read-teamwork-role-agreement-en-head.wav",
+          "excerpt_sha256": "4d4d8b0143b877fb6eb5d5ac9de680645ada100dc97498015e9d80723d6d481f",
+          "decoded_sample_count": 212640,
+          "expected_context": "Agree on the task At the table, the group clarifies the task: prepare the invitations before ten o’clock.",
+          "model_response": "```json\n{\n  \"transcript\": \"Agree on the task. At the table, the group clarifies the task: prepare the invitations before 10:00.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00.00 - 00:01.85\",\n      \"detail\": \"First speaker (instructional prompt) speaks: 'Agree on the task.'\"\n    },\n    {\n      \"timestamp\": \"00:01.85 - 00:03.10\",\n      \"detail\": \"Inter-speaker pause and role shift.\"\n    },\n    {\n      \"timestamp\": \"00:03.10 - 00:08.35\",\n      \"detail\": \"Second speaker (narrator/character) delivers: 'At the table, the group clarifies the task: prepare the invitations before 10:00.'\"\n    },\n    {\n      \"timestamp\": \"00:00.00 - 00:08.35\",\n      \"detail\": \"The name 'Malou' does not appear in this excerpt.\"\n    },\n    {\n      \"timestamp\": \"00:00.00 - 00:08.35\",\n      \"detail\": \"No negative grammatical constructions (negation) occur in this excerpt.\"\n    }\n  ],\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:03.10\",\n      \"detail\": \"Clear shift in speaker/timbre between the introductory phrase ('Agree on the task.') and the subsequent sentence ('At the table...').\"\n    }\n  ],\n  \"uncertainty\": \"None; audio quality is clean with complete word boundaries and no clipping.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "body",
+          "start": 2.86,
+          "end": 8.86,
+          "file": "read-teamwork-role-agreement-en-body.wav",
+          "excerpt_sha256": "35a9b99e1748981ea43dcde6f1d6df784941634d31af05187111187e08f3b06c",
+          "decoded_sample_count": 144000,
+          "expected_context": "At the table, the group clarifies the task: prepare the invitations before ten o’clock.",
+          "model_response": "```json\n{\n  \"transcript\": \"At the table, the group clarifies the task: Prepare the invitations before 10:00.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"No negative constructions are present in the utterance.\",\n    \"role_distinctions\": \"The speaker delivers narration from 00:00.00 to 00:03.00, transitioning into direct instruction/task specification ('Prepare the invitations before 10:00') from 00:03.05 to 00:05.65 with a steady, consistent educational delivery.\",\n    \"ending_completeness\": \"The sentence finishes completely at '10:00' with natural terminal decay; no truncation observed.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible throughout.\",\n    \"clipped_words\": \"None detected; word onsets and codas are intact.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent without unexpected pitch shifts or audio artifacts.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the speech signal is clean and clear.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 21.6,
+          "end": 29.96,
+          "file": "read-teamwork-role-agreement-en-critical-negation-or-count.wav",
+          "excerpt_sha256": "fd08c982fc68288bbf7711e30280f47f30814de7ee19fbe0af9425bd8e11f1f1",
+          "decoded_sample_count": 200640,
+          "expected_context": "This is an example of sharing an already authorized task, not a universal rule for every barangay.",
+          "model_response": "```json\n{\n  \"transcript\": \"This is an example of sharing an already authorized task, not a universal rule for every barangay.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name or word 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"Clear negation is present at 00:05.18 - 00:05.42 ('not').\",\n    \"role_distinctions\": \"Single narrator voice throughout; no multi-role dialogue present.\",\n    \"ending_completeness\": \"The sentence completes naturally with full falling intonation on 'barangay' without abrupt truncation.\",\n    \"audible_speech\": \"Speech is fully audible, intelligible, and clear throughout.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"None detected; pitch, tone, and pacing remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all words and phonetic boundaries are clearly discernible.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        },
+        {
+          "kind": "end",
+          "start": 39.4,
+          "end": 55.745333333333335,
+          "file": "read-teamwork-role-agreement-en-end.wav",
+          "excerpt_sha256": "9c16af83252e4daffbb92e9723fed7ef71c4724b89f718664bd3b54bdb39a319",
+          "decoded_sample_count": 392288,
+          "expected_context": "A peer BHW cannot assign work beyond a colleague’s training or authorization. Also clarify whom to contact if there is a difficulty. Task, recipient, time and contact: repeat and confirm the agreement.",
+          "model_response": "```json\n{\n  \"transcript\": \"A peer BHW cannot assign work beyond a colleague's training or authorization. Also clarify whom to contact if there is a difficulty. Task, recipient, time, and contact. Repeat and confirm the agreement.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' does not appear in this excerpt.\",\n    \"negation\": \"Clear negation occurs with 'cannot' spoken between 00:01.3 and 00:01.8.\",\n    \"role_distinctions\": [\n      {\n        \"speaker\": \"Speaker 1 (Male / Standard English presentation style)\",\n        \"timestamp_range\": \"00:00.0 - 00:05.6\",\n        \"content\": \"A peer BHW cannot assign work beyond a colleague's training or authorization.\"\n      },\n      {\n        \"speaker\": \"Speaker 2 (Female / Philippine English accent)\",\n        \"timestamp_range\": \"00:05.8 - 00:09.9\",\n        \"content\": \"Also clarify whom to contact if there is a difficulty.\"\n      },\n      {\n        \"speaker\": \"Speaker 3 (Male / Philippine English accent)\",\n        \"timestamp_range\": \"00:10.1 - 00:16.0\",\n        \"content\": \"Task, recipient, time, and contact. Repeat and confirm the agreement.\"\n      }\n    ],\n    \"audible_speech\": \"All speech is clearly audible, intelligible, and well-enunciated across all three distinct voices.\",\n    \"clipped_words\": \"None observed; word onsets and codas are preserved.\",\n    \"unexpected_voice_changes\": \"There are distinct speaker transitions at 00:05.8 (Speaker 1 to Speaker 2) and 00:10.1 (Speaker 2 to Speaker 3), consistent with multi-voice educational dialogue/instruction rather than unintended artifacts.\",\n    \"ending_completeness\": \"The final phrase 'Repeat and confirm the agreement.' completes naturally before the end of the file at 00:16.1 without abrupt cutoff.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; at 00:08.6–00:09.0, Speaker 2 enunciates 'there is' rapidly, which can phonetically resemble the contraction 'there's', but 'there is' is audible upon close listening.\"\n}\n```",
+          "reused_exact_encoded_bytes": true
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-en",
+      "language": "en",
+      "source_path": "/training/bhw-1-5/bhw-teamwork-gemini-en-c585e2e07557.mp4",
+      "source_sha256": "c585e2e07557714dd1c1d65687a8d886f0ff6747edfc02ad84fed2712e5357a5",
+      "decoded_pcm_sha256": "c2ede7a96293c74f164840f410e9aaf99fc29ade3f13b2df0f1d6017ed94199b",
+      "full_audio_metrics": {
+        "samples": 1378816,
+        "seconds": 57.45066666666666,
+        "rms": 0.0834906431738289,
+        "peak": 0.635711669921875,
+        "quiet_sample_fraction": 0.285428222474935
+      },
+      "zones": [
+        {
+          "zone": "purpose",
+          "index": 0,
+          "text": "Malou and fellow BHWs are preparing invitations. They have a purpose and deadline, but must clarify their roles.",
+          "start_ms": 0,
+          "end_ms": 8360,
+          "samples": 200640,
+          "seconds": 8.36,
+          "rms": 0.0827795330970788,
+          "peak": 0.473419189453125,
+          "quiet_sample_fraction": 0.16114433811802234
+        },
+        {
+          "zone": "practices",
+          "index": 1,
+          "text": "Five practices guide them: shared purpose, clear roles, early communication, openness to feedback and respectful relationships.",
+          "start_ms": 8660,
+          "end_ms": 19780,
+          "samples": 266880,
+          "seconds": 11.12,
+          "rms": 0.08274174416202584,
+          "peak": 0.5986328125,
+          "quiet_sample_fraction": 0.3123238908872902
+        },
+        {
+          "zone": "agreement",
+          "index": 2,
+          "text": "They agree on the task, recipient and time. The colleague repeats the accepted role. Changes needing permission are checked.",
+          "start_ms": 20080,
+          "end_ms": 29240,
+          "samples": 219840,
+          "seconds": 9.16,
+          "rms": 0.09193764711821008,
+          "peak": 0.627197265625,
+          "quiet_sample_fraction": 0.2359306768558952
+        },
+        {
+          "zone": "handoff",
+          "index": 3,
+          "text": "A colleague cannot finish. Malou listens early. They clarify the remaining work and confirm who accepts it, without private reasons.",
+          "start_ms": 29540,
+          "end_ms": 38860,
+          "samples": 223680,
+          "seconds": 9.32,
+          "rms": 0.08723711686431461,
+          "peak": 0.592498779296875,
+          "quiet_sample_fraction": 0.23496959942775394
+        },
+        {
+          "zone": "feedback",
+          "index": 4,
+          "text": "Malou gives a specific suggestion. She listens to the response and confirms that the agreed task is complete.",
+          "start_ms": 39160,
+          "end_ms": 47640,
+          "samples": 203520,
+          "seconds": 8.48,
+          "rms": 0.08587411811333241,
+          "peak": 0.635711669921875,
+          "quiet_sample_fraction": 0.25022110849056606
+        },
+        {
+          "zone": "closing",
+          "index": 5,
+          "text": "For the next task, clarify roles, speak early, respect privacy and confirm acceptance and completion.",
+          "start_ms": 47940,
+          "end_ms": 56220,
+          "samples": 198720,
+          "seconds": 8.28,
+          "rms": 0.08236137298231536,
+          "peak": 0.6221923828125,
+          "quiet_sample_fraction": 0.2867451690821256
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 19.78,
+          "file": "shipped-story-en-head.wav",
+          "excerpt_sha256": "97f3500e4949b243bb8d0c38c03382f2f826f73cd7e54b4322dd3fdf1b339815",
+          "decoded_sample_count": 474720,
+          "expected_context": "Malou and fellow BHWs are preparing invitations. They have a purpose and deadline, but must clarify their roles. Five practices guide them: shared purpose, clear roles, early communication, openness to feedback and respectful relationships.",
+          "model_response": "```json\n{\n  \"transcript\": \"Malou and fellow BHWs are preparing invitations. They have a purpose and deadline, but must clarify their roles. Five practices guide them: shared purpose, clear roles, early communication, openness to feedback, and respectful relationships.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Malou is pronounced accurately as [mah-LOO] at 00:00-00:01.\",\n    \"negation\": \"No grammatical negation is used in this excerpt.\",\n    \"role_distinctions\": \"The term 'roles' is clearly enunciated at 00:07-00:08 and 00:13-00:14.\",\n    \"ending_completeness\": \"The ending word 'relationships' concludes fully with natural trailing decay at 00:18-00:19.\",\n    \"audible_speech\": \"All words are completely audible, clean, and distinct.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 8.36,
+          "file": "shipped-story-en-body.wav",
+          "excerpt_sha256": "1b4ce4f53cc163c5bf824206a104d4f4b7d09d4fff0c44254f19c28af0996d18",
+          "decoded_sample_count": 200640,
+          "expected_context": "Malou and fellow BHWs are preparing invitations. They have a purpose and deadline, but must clarify their roles.",
+          "model_response": "```json\n{\n  \"transcript\": \"Malou and fellow BHWs are preparing invitations. They have a purpose and deadline, but must clarify their roles.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"Pronounced clearly as 'mah-LOO' (/mɑːˈluː/) with stress on the second syllable between 00:00.00 and 00:00.65.\",\n    \"negation\": \"No negative constructions are present in the excerpt.\",\n    \"role_distinctions\": \"'fellow BHWs' (00:00.80 - 00:02.10) and 'their roles' (00:07.10 - 00:07.90) are distinctly articulated.\",\n    \"ending_completeness\": \"The terminal word 'roles' completes naturally around 00:07.90 without truncation or abrupt cut-off.\",\n    \"audible_speech\": \"All speech is clearly audible, paced evenly, and free from masking noise.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and timbre remain steady and consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical-negation-or-count",
+          "start": 8.66,
+          "end": 19.78,
+          "file": "shipped-story-en-critical-negation-or-count.wav",
+          "excerpt_sha256": "e114e7ad1ce07162cd65cc0b7d71cee698d7e5acb33db43fa97501cfe3800753",
+          "decoded_sample_count": 266880,
+          "expected_context": "Five practices guide them: shared purpose, clear roles, early communication, openness to feedback and respectful relationships.",
+          "model_response": "```json\n{\n  \"transcript\": \"Five practices guide them: shared purpose, clear roles, early communication, openness to feedback, and respectful relationships.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name Malou does not appear in this excerpt.\",\n    \"negation\": \"No negative constructions are present in the text.\",\n    \"role_distinctions\": \"The speaker clearly delineates each item in the list of practices with appropriate pausing and cadence.\",\n    \"ending_completeness\": \"The audio concludes naturally with the final word 'relationships' without truncation or sudden cutoff.\",\n    \"audible_speech\": \"All words are clearly enunciated and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent across the audio clip.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "end",
+          "start": 39.16,
+          "end": 57.45066666666666,
+          "file": "shipped-story-en-end.wav",
+          "excerpt_sha256": "40b0c5ab7000113f9afa3b2db73ac46f4dea1f1316c18301288ae036796edd3f",
+          "decoded_sample_count": 438976,
+          "expected_context": "Malou gives a specific suggestion. She listens to the response and confirms that the agreed task is complete. For the next task, clarify roles, speak early, respect privacy and confirm acceptance and completion.",
+          "model_response": "```json\n{\n  \"transcript\": \"Malou gives a specific suggestion. She listens to the response and confirms that the agreed task is complete. For the next task, clarify roles, speak early, respect privacy, and confirm acceptance and completion.\",\n  \"observations\": {\n    \"malou_pronunciation\": \"The name 'Malou' at 00:00 - 00:00.6 is pronounced with second-syllable stress and a clear vowel matching the expected /mɑːˈluː/ (mah-LOO).\",\n    \"negation\": \"No negative constructions (e.g., 'not', 'no', 'never') are present in this segment.\",\n    \"role_distinctions\": \"The speaker clearly distinguishes between the descriptive narrative (00:00 - 00:08) and the instructional action items/guidelines ('clarify roles, speak early, respect privacy...') from 00:08 to 00:17.\",\n    \"ending_completeness\": \"The final phrase 'and completion' concludes cleanly around 00:16.8 with natural phonation decay and no truncation.\",\n    \"audible_speech\": \"All words are fully audible, cleanly articulated, and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and synthesized vocal characteristics remain consistent throughout the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is clear and free of background noise or ambiguity.\"\n}\n```"
+        }
+      ]
+    }
+  ]
+}

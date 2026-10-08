@@ -1,4 +1,6 @@
 import {BhwRightContactStory, calculateBhwRightContactMetadata, RIGHT_CONTACT_FPS, RIGHT_CONTACT_FALLBACK_DURATION} from "./bhw-right-contact/BhwRightContactStory";
+import {BhwTeamworkStory, calculateBhwTeamworkMetadata, TEAMWORK_FPS, TEAMWORK_FALLBACK_DURATION} from "./bhw-teamwork/BhwTeamworkStory";
+import {BhwLocalPartnersStory, calculateBhwLocalPartnersMetadata, LOCAL_PARTNERS_FPS, LOCAL_PARTNERS_FALLBACK_DURATION} from "./bhw-local-partners/BhwLocalPartnersStory";
 import {BhwBarangayPartnersStory, calculateBhwBarangayPartnersMetadata, BARANGAY_PARTNERS_FPS, BARANGAY_PARTNERS_FALLBACK_DURATION} from "./bhw-barangay-partners/BhwBarangayPartnersStory";
 import {BhwRelationshipsStory, calculateBhwRelationshipsMetadata, RELATIONSHIPS_FPS, RELATIONSHIPS_FALLBACK_DURATION} from "./bhw-relationships/BhwRelationshipsStory";
 import {BhwFollowUpStory, calculateBhwFollowUpMetadata, FOLLOW_UP_FPS, FOLLOW_UP_FALLBACK_DURATION} from "./bhw-follow-up/BhwFollowUpStory";
@@ -337,6 +339,18 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`bhw-barangay-partners-${language}`} id={language === "fil" ? "BhwBarangayPartnersStoryFil" : "BhwBarangayPartnersStoryEn"}
           component={BhwBarangayPartnersStory} calculateMetadata={calculateBhwBarangayPartnersMetadata}
           durationInFrames={BARANGAY_PARTNERS_FALLBACK_DURATION} fps={BARANGAY_PARTNERS_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhw-local-partners-${language}`} id={language === "fil" ? "BhwLocalPartnersStoryFil" : "BhwLocalPartnersStoryEn"}
+          component={BhwLocalPartnersStory} calculateMetadata={calculateBhwLocalPartnersMetadata}
+          durationInFrames={LOCAL_PARTNERS_FALLBACK_DURATION} fps={LOCAL_PARTNERS_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhw-teamwork-${language}`} id={language === "fil" ? "BhwTeamworkStoryFil" : "BhwTeamworkStoryEn"}
+          component={BhwTeamworkStory} calculateMetadata={calculateBhwTeamworkMetadata}
+          durationInFrames={TEAMWORK_FALLBACK_DURATION} fps={TEAMWORK_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
       {(["fil", "en"] as const).map((language) => (

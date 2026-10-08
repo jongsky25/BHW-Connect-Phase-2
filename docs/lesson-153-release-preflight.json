@@ -1,0 +1,70 @@
+{
+  "recorded_at_utc": "2026-10-06T15:30:03.431236+00:00",
+  "base_main": "e962d4263eae525bca38679a218df623d6eb286f",
+  "reviewed_head": "d54bda8e7382807dbc7cb516d6c6f55a313fe8c1",
+  "status": "owner approved; production release blocked by historical guard failures",
+  "protected_sibling_source_files": 35,
+  "starting_public_files": 2939,
+  "starting_public_modified_or_deleted": 0,
+  "non_target_narration_and_history_unchanged": true,
+  "old_target_mapping_preserved": true,
+  "uuid_lock_sha256": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+  "shared_qa_modified_ids": [
+    "d1m5-local-health-board-composition",
+    "d1m5-other-stakeholders"
+  ],
+  "fresh_published_snapshot_rows": 12,
+  "protected_row_hashes": {
+    "bhw-barangay-partners": "e147456f4e901c249f9d579c70e0f07a88c537a46e8f5dfc77b4c784eaa41fe0",
+    "bhw-relationships": "50c1880d260f6bb22bccad26f4dc70e3a69f7d13aa1d02d342c3b4ce142eb44d",
+    "bhw-follow-up": "d743ec299ce9ddedff71209908b14f185b706c9976901298ed956fd779b4d7be",
+    "bhw-right-contact": "c5254f4260e95129e873aea4e53da31f7dbfbe30417b150164186e2b554f5204",
+    "bhw-accreditation": "a431a673fb29c016e3a30326408288122e2d4dc078cb05adc2eedf229c541200",
+    "bhw-self-management": "739380baa303c0fcb8d48834fbdeb9c9b4f8cd81c2378df5cca211e2be83d11a",
+    "bhs-improvement": "ab80a55e4f36fc56fc07775f131a1833e0f4f09ca40d6f225bb4c188b0a66180",
+    "bhw-benefits": "c0f7cf4428b5a6fd7d23ab1ecccae4faaff7bd13f276fa5258f6e28fc80979ee",
+    "bhw-teamwork": "ec2c042fcbe469d9b0d8c8c76287c91c42016c864fcae06f9400adef4cf19bd5",
+    "bhw-legal-role": "790460c6b4ac6537b1054fc12d6aa4cbcf5733bf663f6ec5879f5743e1fc7c0a",
+    "bhw-eligibility": "f5d2de29d36323da433449bb443e4d9611ee786a8c697cce00eed2ec65829081"
+  },
+  "release_check": {
+    "passed": 29,
+    "failed": 8,
+    "failures": [
+      {
+        "file": "lesson-151.test.mjs",
+        "test": "retains every starting public MP3 byte and all35 same-module sibling files"
+      },
+      {
+        "file": "lesson-151.test.mjs",
+        "test": "protects all non-target mappings and prior history while retaining target history"
+      },
+      {
+        "file": "lesson-151.test.mjs",
+        "test": "preserves the complete ordered original registry except exactly two appended151 IDs"
+      },
+      {
+        "file": "lesson-151.test.mjs",
+        "test": "confines shared changes to four target QA rows, four opening passages and documented timing correction"
+      },
+      {
+        "file": "lesson-152.test.mjs",
+        "test": "preserves all35 sibling sources, all2527 starting MP3s and every starting public byte"
+      },
+      {
+        "file": "lesson-152.test.mjs",
+        "test": "retains every non-target narration mapping/history and the complete old target map"
+      },
+      {
+        "file": "lesson-152.test.mjs",
+        "test": "appends exactly two compositions to the complete released64 registry"
+      },
+      {
+        "file": "lesson-152.test.mjs",
+        "test": "limits shared edits to the barangay passage, one QA row and one accurate source"
+      }
+    ]
+  },
+  "constraint": "Execution handoff prohibits broadening historical guard exclusions or replacing immutable old baselines to make tests pass. No protected tests or baseline files were changed.",
+  "production_mutations": []
+}

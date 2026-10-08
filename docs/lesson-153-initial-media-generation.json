@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-06T10:59:55.485Z",
+  "source_commit": "1e5589ae319be92735d1adea5014addaee98c4de",
+  "owner_review": "pending",
+  "render_input_sha256": "1ef41600bbda8d29da135d3f99b2b71235e1540399ed20281e87fa1f9b41ded2",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 73.247,
+      "beats": [
+        {
+          "zone": "need",
+          "index": 0,
+          "text": "Nagtatanong ang isang pamilya kay Malou tungkol sa tulong sa gamot. Nililinaw niya ang pangangailangan at kung kailangan ng agarang health referral.",
+          "start_ms": 0,
+          "end_ms": 9560
+        },
+        {
+          "zone": "team",
+          "index": 1,
+          "text": "Sa RHU, tinitiyak ni Malou sa midwife kung sino ang kasalukuyang responsable. Maaaring magbigay ng gabay ang midwife at PHN ayon sa lokal na pagtatalaga.",
+          "start_ms": 9860,
+          "end_ms": 20980
+        },
+        {
+          "zone": "roles",
+          "index": 2,
+          "text": "Ang mayor ang chair at ang CHO o MHO ang vice-chair ng local health board. Nagmumungkahi ito ng budget allocation at nagpapayo, ngunit hindi nito inaprubahan ang hiling ng isang pamilya.",
+          "start_ms": 21280,
+          "end_ms": 36520
+        },
+        {
+          "zone": "limits",
+          "index": 3,
+          "text": "Maaaring tumulong sa koordinasyon ang BHW president. Para sa posibleng social assistance, itatanong ang lokal na contact at proseso; hiwalay sa klinikal na desisyon ang tulong panlipunan.",
+          "start_ms": 36820,
+          "end_ms": 50220
+        },
+        {
+          "zone": "consent",
+          "index": 4,
+          "text": "Humihingi ng pahintulot si Malou at ibinabahagi lamang ang kailangang impormasyon sa na-verify na contact. Hindi niya ipinadadala ang buong health record sa sinumang opisyal.",
+          "start_ms": 50520,
+          "end_ms": 62480
+        },
+        {
+          "zone": "close",
+          "index": 5,
+          "text": "Itinatala ni Malou ang napagkasunduang hakbang at balikan sa pamilya. Hindi siya nangangako ng pondo o resulta habang hinihintay ang tamang assessment.",
+          "start_ms": 62780,
+          "end_ms": 73180
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-1bbabb633918.mp4",
+        "content_hash": "1bbabb633918747c3ffce6100b1290fa9d75e4f2e8a667dad813a07ea0896d35",
+        "duration_s": 74,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-2576c15c2727.vtt",
+          "content_hash": "2576c15c272769fe6df569b15353232fabc7b0a6908bedc169cdeefecc31feab"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-4b97f512a36c-poster.jpg",
+          "content_hash": "4b97f512a36ca7b7c290670190f4b1a8a61f15dace940a22e0862b6817b97046"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-4b97f512a36c-poster.jpg",
+        "content_hash": "4b97f512a36ca7b7c290670190f4b1a8a61f15dace940a22e0862b6817b97046"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 64.601,
+      "beats": [
+        {
+          "zone": "need",
+          "index": 0,
+          "text": "A family asks Malou about help with medicine. She clarifies the need and whether urgent health referral is required.",
+          "start_ms": 0,
+          "end_ms": 8280
+        },
+        {
+          "zone": "team",
+          "index": 1,
+          "text": "At the RHU, Malou asks the midwife who is currently responsible. The midwife and PHN may guide BHWs according to local assignments.",
+          "start_ms": 8580,
+          "end_ms": 18860
+        },
+        {
+          "zone": "roles",
+          "index": 2,
+          "text": "The mayor chairs the local health board and the CHO or MHO is vice-chair. It proposes budget allocations and advises, but has not approved this family's request.",
+          "start_ms": 19160,
+          "end_ms": 31520
+        },
+        {
+          "zone": "limits",
+          "index": 3,
+          "text": "The BHW president may help coordinate. For possible social assistance, ask for the local contact and procedure; social support is separate from clinical decisions.",
+          "start_ms": 31820,
+          "end_ms": 43700
+        },
+        {
+          "zone": "consent",
+          "index": 4,
+          "text": "Malou seeks consent and shares only necessary information with the verified contact. She does not send a full health record to an arbitrary official.",
+          "start_ms": 44000,
+          "end_ms": 54640
+        },
+        {
+          "zone": "close",
+          "index": 5,
+          "text": "Malou records the agreed next step and follows up with the family. She promises neither funding nor an outcome while the proper assessment is pending.",
+          "start_ms": 54940,
+          "end_ms": 64540
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-5c3599020246.mp4",
+        "content_hash": "5c35990202461dde725fbf4b672d7e94a3d1d35c114e7c147be59f4af509d2d8",
+        "duration_s": 66,
+        "captions": {
+          "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-55cf108fbffc.vtt",
+          "content_hash": "55cf108fbffcfd5ca077f8ff3dce81054964d1de47e5ac29981b005fbd557958"
+        },
+        "poster": {
+          "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-ea7dc8170547-poster.jpg",
+          "content_hash": "ea7dc8170547545b6f019a5aced7429e714805d8e69305628d4283fabcec4a92"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-5/bhw-local-partners-gemini-en-ea7dc8170547-poster.jpg",
+        "content_hash": "ea7dc8170547545b6f019a5aced7429e714805d8e69305628d4283fabcec4a92"
+      }
+    }
+  ]
+}
