@@ -1,7 +1,15 @@
-name: Lesson 1.8.4 draft narration and evidence
+name: Lesson 1.8.4 draft media and review package
 on:
   workflow_dispatch:
     inputs:
+      package_only:
+        description: Build the frozen review package without generating media
+        type: boolean
+        default: false
+      media_run_id:
+        description: Exact run holding final raw audio review evidence
+        type: string
+        default: '37906597742'
       review_only:
         description: Review exact committed media without generating replacement bytes
         type: boolean
@@ -17,12 +25,13 @@ on:
       - 'content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/**'
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: lesson184-media-${{ github.event.pull_request.number }}
   cancel-in-progress: false
 jobs:
   draft:
-    if: github.head_ref == 'codex/lesson-184-apple-handoff' || github.ref_name == 'codex/lesson-184-apple-handoff'
+    if: (github.head_ref == 'codex/lesson-184-apple-handoff' || github.ref_name == 'codex/lesson-184-apple-handoff') && inputs.package_only != true
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -97,6 +106,79 @@ jobs:
             docs/lesson-184-audio-*.json
             .preview/lesson184-raw/
             .preview/lesson184-excerpts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+  review-package:
+    if: github.ref_name == 'codex/lesson-184-apple-handoff' && inputs.package_only == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Select actual installed browser
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import {createRequire} from 'node:module';const r=createRequire(process.cwd()+'/remotion/package.json');const {ensureBrowser}=r('@remotion/renderer');const b=await ensureBrowser();fs.appendFileSync(process.env.GITHUB_ENV,'PLAYWRIGHT_EXECUTABLE_PATH='+b.path+'\n');"
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson184-generated-evidence
+          run-id: ${{ inputs.media_run_id }}
+          github-token: ${{ github.token }}
+          path: .preview/lesson184-import
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson184-generated-evidence
+          run-id: '37902026484'
+          github-token: ${{ github.token }}
+          path: .preview/lesson184-initial-import
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson184-generated-evidence
+          run-id: '37904386204'
+          github-token: ${{ github.token }}
+          path: .preview/lesson184-story-import
+      - name: Retain exact raw reviews without replacing committed media
+        run: |
+          mkdir -p .preview/lesson184-raw .preview/lesson184-excerpts
+          cp -a .preview/lesson184-initial-import/.preview/lesson184-raw/. .preview/lesson184-raw/
+          cp -a .preview/lesson184-story-import/.preview/lesson184-raw/. .preview/lesson184-raw/
+          cp .preview/lesson184-initial-import/lesson-184-published-snapshot.json .
+          cp -a .preview/lesson184-import/.preview/lesson184-raw/. .preview/lesson184-raw/
+          cp -a .preview/lesson184-import/.preview/lesson184-excerpts/. .preview/lesson184-excerpts/
+      - name: Verify all retained media and protected predecessor bytes
+        run: node scripts/lesson-184-preservation.mjs
+      - name: Restore exact checked primary-source excerpts
+        run: |
+          python3 -m pip install PyMuPDF==1.26.6
+          python3 scripts/lesson-184-source-evidence.py
+      - name: Actual component review and browser matrix
+        run: |
+          node scripts/lesson-184-review-build.mjs
+          node scripts/lesson-184-browser-verify.mjs
+      - name: Print and verify bilingual A4 sheets
+        run: |
+          python3 -m pip install PyMuPDF==1.26.6
+          node scripts/lesson-184-print-kit.mjs
+          python3 scripts/lesson-184-print-verify.py
+      - name: Verify safe ZIP members, CRC, hashes and exact inline bytes
+        run: python3 scripts/lesson-184-package.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson184-draft-review
+          path: |
+            .preview/lesson184-deliverables/lesson-1.8.4-apple-draft-review.zip
+            .preview/lesson184-deliverables/lesson-184-package-integrity.json
           include-hidden-files: true
           if-no-files-found: error
           retention-days: 30
