@@ -4,7 +4,7 @@ Using dummy equipment, follow the trainer-approved safety checklist and demonstr
 
 ## [time-materials] Time and materials
 
-75 guided minutes: 5 opening + 15 trainer modelling + 35 observed simulations/feedback/retry + 12 incident/near-miss debrief + 8 transfer = 75. The four lessons retain 45 + 60 + 60 + 75 = 240 minutes. Self-study narration and optional story duration are separate and are not measured yet.
+75 guided minutes: 5 opening + 15 trainer modelling + 35 observed simulations/feedback/retry + 12 incident/near-miss debrief + 8 transfer = 75. The four lessons retain 45 + 60 + 60 + 75 = 240 minutes. Measured six-screen self-study narration: 549.251 seconds Filipino and 509.127 seconds English. Allow a further 3–6 minutes for the decision and reflection; this is an authored allowance, not measured reading time. Optional story/replay is additional. The 75 minutes remain facilitated practice.
 
 For 30 learners, prepare ten rotating triads, ten safe dummy stations or paper station layouts, labelled empty dummy boxes with trainer-verified fill lines, approved checklist copies, role/scenario cards, the exposure-response aid and pens. No real sharps, body fluids, chemicals or personal records. Accessible spoken/paper practice is available; physical demonstration still needs trainer observation.
 

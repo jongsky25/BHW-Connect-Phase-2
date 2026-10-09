@@ -4,7 +4,7 @@ Gamit ang dummy equipment, sundin ang trainer-approved safety checklist at ipaki
 
 ## [time-materials] Oras at kagamitan
 
-75 guided minutes: 5 opening + 15 trainer modelling + 35 observed simulations/feedback/retry + 12 incident/near-miss debrief + 8 transfer = 75. Nananatili ang 45 + 60 + 60 + 75 = 240 minuto sa apat na lesson. Hiwalay ang self-study narration at opsyonal na kuwento; hindi pa nasusukat ang haba ng mga ito.
+75 guided minutes: 5 opening + 15 trainer modelling + 35 observed simulations/feedback/retry + 12 incident/near-miss debrief + 8 transfer = 75. Nananatili ang 45 + 60 + 60 + 75 = 240 minuto sa apat na lesson. Nasukat na salaysay ng anim na screen: 549.251 segundo sa Filipino at 509.127 segundo sa English. Maglaan pa ng 3–6 minuto sa decision at reflection; pagtataya ito, hindi measured reading time. Dagdag pa ang opsyonal na kuwento/replay. Ang 75 minuto ay facilitated practice.
 
 Para sa 30 learner, maghanda ng sampung rotating triad, sampung ligtas na dummy station o paper layout, may label na walang-lamang dummy box na trainer-verified ang fill line, aprubadong checklist, role/scenario card, exposure-response aid at panulat. Walang tunay na sharps, body fluids, kemikal o personal records. Maaaring spoken/paper practice; kailangan pa rin ang trainer observation sa physical demonstration.
 
