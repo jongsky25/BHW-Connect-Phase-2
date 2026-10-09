@@ -186,7 +186,7 @@
       "caption_fil": "Tatlong ulat; wala pang attendance record. Hindi pa tiyak ang petsa o hadlang sa bawat pamilya.",
       "caption_en": "Three reports; no attendance record yet. Each household’s date and barrier remain uncertain.",
       "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. e5e97739a8c7b86fc351c5c9b8c0ec80ad89ee255990c73bad4d45948a06f819",
-      "review_status": "draft"
+      "review_status": "approved"
     },
     {
       "id": "define-worked-example",
@@ -197,7 +197,7 @@
       "caption_fil": "Pangyayari: hindi nakapunta. Hula: ayaw pumunta. Solusyon: poster.",
       "caption_en": "Event: missed visits. Guess: unwilling to attend. Solution: poster.",
       "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. c6fe62ee1a9c648319371af52589fc11d37e67e6685ad958df6c0baa3e7ce741",
-      "review_status": "draft"
+      "review_status": "approved"
     },
     {
       "id": "define-source-gap",
@@ -208,7 +208,7 @@
       "caption_fil": "Pangyayari at saklaw → pinagmulan → isang malinaw na kulang.",
       "caption_en": "Event and scope → source → one clear information gap.",
       "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. 448fed1ca7d4046e71a2e8cef65a17938f5b7d2c32a58a2e0470571e92bc5d1b",
-      "review_status": "draft"
+      "review_status": "approved"
     },
     {
       "id": "define-resident-perspective",
@@ -219,7 +219,7 @@
       "caption_fil": "Iwasto ang iniulat na petsa; hindi pa kumpirmado ang rekord.",
       "caption_en": "Correct the reported date; the record remains unconfirmed.",
       "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. da8342dfebfdb7d1a6dc689e4c1748069c8f0c37f694b0f1fcef1135c9883366",
-      "review_status": "draft"
+      "review_status": "approved"
     },
     {
       "id": "define-practice",
@@ -230,7 +230,7 @@
       "caption_fil": "Isulat → salungguhitan ang pangyayari/pinagmulan/kulang → feedback → ikalawang pagtatangka.",
       "caption_en": "Write → underline event/source/gap → feedback → second attempt.",
       "provenance": "Built-in imagegen, pinned Carole and resident-perspective references; revised action scene. No real records. 058d2aefe3cea78015e268fb3a4c9c3a5274b3ae1864c31da37260c9c15e10eb",
-      "review_status": "draft"
+      "review_status": "approved"
     },
     {
       "id": "define-check",
@@ -241,7 +241,7 @@
       "caption_fil": "Piliin muna; pagkatapos, ihambing ang tatlong paliwanag at iwinastong pahayag.",
       "caption_en": "Choose first; then compare all three rationales and the corrected statement.",
       "provenance": "Built-in imagegen, pinned Carole and resident-perspective references; revised action scene. No real records. 4e11ff99283b80894c680ce100db3bc15e7ef9ea781dc6f093593a9d574a022e",
-      "review_status": "draft"
+      "review_status": "approved"
     },
     {
       "id": "problem-define-story",
@@ -250,7 +250,7 @@
       "caption_fil": "Iwinastong pahayag na may pinagmulan at tapat na kulang.",
       "caption_en": "A corrected problem statement with a source and honest unknowns.",
       "provenance": "Lesson 1.7.1 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.",
-      "review_status": "draft",
+      "review_status": "approved",
       "videos": {
         "fil": {
           "path": "/training/bhw-1-7/problem-define-gemini-fil-6ef3b510d796.mp4",

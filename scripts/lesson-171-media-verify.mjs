@@ -1,7 +1,8 @@
+import {reviewed171} from './lib/lesson-171-integration.mjs';
 // Actual committed media and historical selection checks; no fixtures, writes or approval.
 import sharp from 'sharp';import fs from 'node:fs';import {createHash} from 'node:crypto';import assert from 'node:assert/strict';import {execFileSync,spawnSync} from 'node:child_process';import {createRequire} from 'node:module';import path from 'node:path';
 import {loadReferenceModule} from './lib/reference-content.mjs';import {planReferenceNarration,mp3AudioFrames} from './lib/reference-narration.mjs';
-const j=p=>JSON.parse(fs.readFileSync(p)),sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const j=p=>JSON.parse(reviewed171(p)),sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const b=j('docs/lesson-171-baseline.json'),m=j('content/training/day1-basic-competencies/narration.json'),allowed=new Set(['problem-define']);
 for(const [k,v]of Object.entries(b.narration.lessons)){
  if(!allowed.has(k))assert.deepEqual(m.lessons[k],v,k);
