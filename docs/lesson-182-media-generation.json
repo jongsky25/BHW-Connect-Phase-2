@@ -1,8 +1,8 @@
 {
-  "generated_date": "2026-10-09T08:40:10.302Z",
-  "source_commit": "b4fe0134d902a2b9adb481fc7dc5b15893460056",
+  "generated_date": "2026-10-09T08:53:26.785Z",
+  "source_commit": "05fdff498ca24cbadc67d21d089ff37064a0519c",
   "owner_review": "pending",
-  "render_input_sha256": "3c89c43f64a0f4e012531e8d5f08410857e3a160f5090076efe027e58073fe2b",
+  "render_input_sha256": "20c7d2a51de2131e811441c704a535fed91218a30616c6d88ada172d621f6352",
   "render_cached": false,
   "target_read_tracks": 12,
   "pending_read_tracks": [],
@@ -82,58 +82,58 @@
       "provider": "gemini",
       "model": "gemini-3.8-flash-tts",
       "voice": "Kore",
-      "narration_duration_seconds": 63.713,
+      "narration_duration_seconds": 66.847,
       "beats": [
         {
           "zone": "sharps",
           "index": 0,
           "text": "Fictional example: Apple notices the fill line. Pause the affected task; never compress contents or use ordinary waste.",
           "start_ms": 0,
-          "end_ms": 9360
+          "end_ms": 8600
         },
         {
           "zone": "infection",
           "index": 1,
           "text": "Choose controls for the route: hands, ventilation, safe waste and bite prevention. Gloves do not replace hand hygiene.",
-          "start_ms": 9660,
-          "end_ms": 20300
+          "start_ms": 8900,
+          "end_ms": 18860
         },
         {
           "zone": "body",
           "index": 2,
           "text": "Adjust bag, chair and supplies. Seek help, take breaks and report pain; do not force painful movement.",
-          "start_ms": 20600,
-          "end_ms": 29440
+          "start_ms": 19160,
+          "end_ms": 29080
         },
         {
           "zone": "workload",
           "index": 3,
           "text": "Apple says, “I am exhausted; I need support and a safe route.” Verify the alternative; extra hours are not the default control.",
-          "start_ms": 29740,
-          "end_ms": 39460
+          "start_ms": 29380,
+          "end_ms": 40140
         },
         {
           "zone": "practice",
           "index": 4,
-          "text": "Five pairs: sharps, infection, body, stress and accidents. Correct mismatched controls. If essential protection is missing, pause and seek correction.",
-          "start_ms": 39760,
-          "end_ms": 52000
+          "text": "Five groups: sharps injuries; infections; body pain; workload stress; and accidents. Correct mismatched controls. If essential protection is missing, pause and seek correction.",
+          "start_ms": 40440,
+          "end_ms": 55520
         },
         {
           "zone": "check",
           "index": 5,
           "text": "Apple matches the hazard to the control and requests authorized replacement. Resume only after verified correction; if uncertain, keep the task paused.",
-          "start_ms": 52300,
-          "end_ms": 63660
+          "start_ms": 55820,
+          "end_ms": 66780
         }
       ],
       "video": {
-        "path": "/training/bhw-1-8/safety-controls-gemini-en-575baa00940f.mp4",
-        "content_hash": "575baa00940fbb6de3ab9bd691ca55e16bc66102746ca34f908605f026f2becb",
-        "duration_s": 65,
+        "path": "/training/bhw-1-8/safety-controls-gemini-en-59a971f6904a.mp4",
+        "content_hash": "59a971f6904a8a5f17de5a8f1f57758db8ef21a96ff0e534535f66ad696e110e",
+        "duration_s": 68,
         "captions": {
-          "path": "/training/bhw-1-8/safety-controls-gemini-en-4ab527f18d9d.vtt",
-          "content_hash": "4ab527f18d9d82d1b47262d7c1329c3a93aa91145f742dca80c68f2812945812"
+          "path": "/training/bhw-1-8/safety-controls-gemini-en-b1a15375b20e.vtt",
+          "content_hash": "b1a15375b20e0245c7230367cd9d2f0731bd11cf2bdf92d00d5e25a65fe1dfed"
         },
         "poster": {
           "path": "/training/bhw-1-8/safety-controls-gemini-en-823b968b4e1b-poster.jpg",

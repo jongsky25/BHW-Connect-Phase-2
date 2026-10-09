@@ -40,4 +40,13 @@ describe('Apple lesson 1.8.2 actual current source and historical byte preservat
   for(const section of lesson.sections){expect(section.asset_ids).toEqual(['apple-controls-'+section.id]);const a=art.find(a=>a.id===section.asset_ids[0]);expect(sha(fs.readFileSync('public'+a.path))).toBe(a.content_hash);expect(a.review_status).toBe('draft');expect(a.alt_fil.length).toBeGreaterThan(30);expect(a.alt_en.length).toBeGreaterThan(30);}
  });
 
+ it('keeps shared UI changes confined to target timing and picture-before-check behavior',()=>{
+  const path='src/components/elearning/reference-lessons.tsx',source=fs.readFileSync(path,'utf8');
+  const stripped=source.replace(/^  const controls(?:Revision|Tracks|Minutes)[^\n]*\n/gm,'')
+   .replace(' || controlsRevision) && !storyLayout && figures',') && !storyLayout && figures')
+   .replace(' && !controlsRevision && (revealSummary',' && (revealSummary')
+   .replace(/\{controlsRevision \? \(controlsMinutes[\s\S]*?              \)\) : actionPlanRevision/, '{actionPlanRevision');
+  expect(stripped).toBe(beforeProposed182(path).toString());
+ });
+
 });

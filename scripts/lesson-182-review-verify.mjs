@@ -4,7 +4,7 @@ const j=p=>JSON.parse(fs.readFileSync(p)),sha=p=>createHash('sha256').update(fs.
 execFileSync(process.execPath,['scripts/lesson-182-media-verify.mjs'],{stdio:'inherit'});
 const head=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
 const out='.preview/lesson182-deliverables',browserPath=out+'/lesson-1.8.2-browser-verification.json',browser=j(browserPath),full=j('docs/lesson-182-audio-review.json'),focus=j('docs/lesson-182-audio-focus.json');
-if(browser.source_commit!==head||browser.status!=='passed'||browser.errors.length||browser.actual_case_count!==browser.cases.length||browser.actual_case_count<80)throw Error('Complete browser coverage required');
+if(browser.review_html_sha256!==sha(out+'/lesson-1.8.2-apple-review.html')||browser.source_commit!==head||browser.status!=='passed'||browser.errors.length||browser.actual_case_count!==browser.cases.length||browser.actual_case_count<80)throw Error('Complete browser coverage required');
 if(full.pending_read_tracks.length||full.records.length!==14||full.records.some(r=>!r.model_response||r.model_response.startsWith('Review unavailable')))throw Error('Full actual-audio model reports incomplete');
 if(focus.decode_only||focus.prompt_revision!=='apple-controls-v1'||focus.records.length!==14||focus.records.some(r=>r.excerpts.length!==4))throw Error('Versioned 56-excerpt focused review required');
 const notes=j('docs/lesson-182-audio-review-notes.json');

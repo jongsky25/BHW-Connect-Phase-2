@@ -1,5 +1,6 @@
 // Actual production React components in the frozen inline review.
 // Next navigation/image/link adapters and save callbacks are explicit local fixtures.
+import {createHash} from 'node:crypto';
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';import {execFileSync} from 'node:child_process';import {chromium} from '@playwright/test';
 const root=path.resolve(import.meta.dirname,'..'),dir=root+'/.preview/lesson182-deliverables';
@@ -8,13 +9,13 @@ const require=createRequire(root+'/remotion/package.json');const {ensureBrowser}
 const status=process.env.LESSON182_BROWSER_PATH?{path:process.env.LESSON182_BROWSER_PATH}:await ensureBrowser();assert(status.path,'Repository Remotion browser unavailable');
 const server=http.createServer((req,res)=>{if(req.url==='/favicon.ico'){res.writeHead(204);res.end();return;}res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);});await new Promise(r=>server.listen(4179,'127.0.0.1',r));
 const browser=await chromium.launch({executablePath:status.path,args:['--no-sandbox']});
-const report={source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),date:new Date().toISOString(),method:'Actual production React ReferenceLessons/ReferenceReadSection/LessonAssetFigure with explicit Next and save fixture adapters. One loopback HTTP load per context, then true browser offline. No authenticated production, Chat Guide or dashboard verification.',cases:[],errors:[],console_errors:[]};
+const report={review_html_sha256:createHash('sha256').update(html).digest('hex'),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),date:new Date().toISOString(),method:'Actual production React ReferenceLessons/ReferenceReadSection/LessonAssetFigure with explicit Next and save fixture adapters. One loopback HTTP load per context, then true browser offline. No authenticated production, Chat Guide or dashboard verification.',cases:[],errors:[],console_errors:[],failed_requests:[]};
 const lesson=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json'));
 const manifest=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/narration.json'));
 const save=()=>fs.writeFileSync(dir+'/lesson-1.8.2-browser-verification.json',JSON.stringify(report,null,2)+'\n');
 try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
-  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.console_errors.push(m.text())});await page.goto('http://127.0.0.1:4179/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
+  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));page.on('requestfailed',r=>report.failed_requests.push({url:r.url(),error:r.failure()?.errorText}));page.on('console',m=>{if(m.type()==='error')report.console_errors.push(m.text())});await page.goto('http://127.0.0.1:4179/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
   const next=lang==='en'?'Next':'Susunod',complete=lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin';
   for(let i=0;i<6;i++){
    const section=lesson.sections[i],slide=mode==='slides';await page.locator('article[data-scene="'+(slide?'slide-':'')+section.id+'"]').waitFor();
@@ -29,7 +30,7 @@ try{
    const timings=manifest.lessons['safety-controls'].sections[section.id][lang].timings;caseRecord.highlight_zones=[];
    for(const zone of ['heading','body','takeaway']){const t=timings.find(t=>t.zone===zone);await page.locator('audio').evaluate((a,time)=>{a.currentTime=time},(t.start_ms+t.end_ms)/2000);await page.waitForFunction(expected=>Array.from(document.querySelectorAll('[data-active="true"]')).some(el=>el.textContent.replace(/\*\*/g,'').replace(/\s+/g,' ').trim()===expected),t.text.replace(/\*\*/g,'').replace(/\s+/g,' ').trim());caseRecord.highlight_zones.push({zone,expected_text:t.text,matched:true});}
    await page.locator('audio').evaluate(a=>{window.__previousAudio=a});report.cases.push(caseRecord);save();
-   if(i<5){await page.getByRole('button',{name:next,exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));}
+   if(i<5){await page.getByRole('button',{name:next,exact:true}).focus();await page.getByRole('button',{name:next,exact:true}).press('Enter');assert(await page.evaluate(()=>window.__previousAudio.paused));}
   }
   assert(await page.getByRole('button',{name:complete,exact:true}).isEnabled());await page.getByRole('button',{name:complete,exact:true}).click();await page.waitForFunction(()=>window.__completed===true);report.cases.push({width,language:lang,mode,completion_without_story:true});
   await page.screenshot({path:dir+'/lesson182-'+lang+'-'+mode+'-'+width+'.png',fullPage:true});
