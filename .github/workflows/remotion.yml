@@ -48,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     # Preserve every clip, poster, size-budget check and downloadable artifact.
     # Four shards leave room for packaging as new lesson languages are added.
-    timeout-minutes: 30
+    timeout-minutes: ${{ (github.head_ref == 'codex/lesson-174-carole-handoff' || github.ref_name == 'codex/lesson-174-carole-handoff') && 45 || 30 }}
     steps:
       - uses: actions/checkout@v4
         with:

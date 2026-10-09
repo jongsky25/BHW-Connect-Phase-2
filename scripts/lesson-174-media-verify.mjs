@@ -1,6 +1,8 @@
 // Verify actual selected media and complete historical bytes; no publication.
 import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {execFileSync} from 'node:child_process';
 import {loadReferenceModule} from './lib/reference-content.mjs';import {planReferenceNarration,mp3AudioFrames} from './lib/reference-narration.mjs';
+import {ffmpeg,ffprobe} from './lib/lesson-174-media-tools.mjs';
+import sharp from 'sharp';
 const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),j=p=>JSON.parse(fs.readFileSync(p));
 const captured=j('docs/lesson-174-integrated-baseline.json');
 const old=JSON.parse(execFileSync('git',['show',captured.base_commit+':content/training/day1-basic-competencies/narration.json'],{encoding:'utf8',maxBuffer:32*1024*1024}));
@@ -22,12 +24,13 @@ for(const language of ['fil','en']){
  const cues=fs.readFileSync('public'+v.captions.path,'utf8').trim().split(/\n\n+/).slice(1);assert.equal(cues.length,6);
  const stamp=ms=>{const n=Math.round(ms);return `${String(Math.floor(n/3600000)).padStart(2,'0')}:${String(Math.floor(n/60000)%60).padStart(2,'0')}:${String(Math.floor(n/1000)%60).padStart(2,'0')}.${String(n%1000).padStart(3,'0')}`;};
  for(const [i,beat]of timing.beats.entries()){assert(cues[i].includes(beat.text));assert(cues[i].includes(stamp(beat.start_ms)+' --> '+stamp(beat.end_ms)));assert(beat.end_ms>beat.start_ms);if(i)assert(beat.start_ms>=timing.beats[i-1].end_ms);}
- const info=JSON.parse(execFileSync('ffprobe',['-v','quiet','-show_format','-show_streams','-of','json','public'+v.path],{encoding:'utf8'}));
+ const info=JSON.parse(execFileSync(ffprobe,['-v','quiet','-show_format','-show_streams','-of','json','public'+v.path],{encoding:'utf8'}));
  assert(info.streams.some(s=>s.codec_name==='h264'&&s.width===854&&s.height===480));assert(info.streams.some(s=>s.codec_name==='aac'));
  assert(Number(info.format.duration)-timing.beats.at(-1).end_ms/1000>=1);
  const poster=generation.encoded_final_frame_posters.find(r=>r.language===language);assert.equal(poster.source_video_sha256,v.content_hash);assert.deepEqual(poster.poster,v.poster);
- const pixels=args=>execFileSync('ffmpeg',['-v','error',...args,'-frames:v','1','-f','rawvideo','-pix_fmt','rgb24','pipe:1'],{maxBuffer:4*1024*1024});
- const last=pixels(['-i','public'+v.path,'-vf',`select=eq(n\\,${poster.frame_index})`]),jpg=pixels(['-i','public'+v.poster.path]);assert.equal(last.length,854*480*3);assert.equal(jpg.length,last.length);
+ const pixels=async args=>sharp(execFileSync(ffmpeg,['-v','error',...args,'-frames:v','1','-f','image2pipe','-c:v','png','-pix_fmt','rgb24','pipe:1'],{maxBuffer:4*1024*1024})).removeAlpha().raw().toBuffer();
+ assert.equal(info.streams.find(s=>s.codec_type==='video').avg_frame_rate,'30/1');
+ const last=await pixels(['-ss',String(poster.frame_index/30),'-i','public'+v.path]),jpg=await pixels(['-i','public'+v.poster.path]);assert.equal(last.length,854*480*3);assert.equal(jpg.length,last.length);
  const error=last.reduce((sum,value,i)=>sum+Math.abs(value-jpg[i]),0)/last.length;assert(error<4,'Poster must match actual final encoded frame');
  reports.push({language,duration_seconds:Number(info.format.duration),six_exact_cues:true,actual_codecs:'H.264/AAC',width:854,height:480,postroll_seconds:Number(info.format.duration)-timing.beats.at(-1).end_ms/1000,actual_final_frame_poster:true,poster_mean_pixel_error:error});
 }

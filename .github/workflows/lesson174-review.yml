@@ -71,6 +71,19 @@ jobs:
       - run: node scripts/lesson-174-full-browser-verify.mjs
       - run: node scripts/lesson-174-review-verify.mjs
       - run: node scripts/lesson-174-package.mjs
+      - name: Retain checks even if package verification fails
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson174-review-checks
+          path: |
+            lesson-174-published-snapshot.json
+            .preview/lesson174-deliverables/*.json
+            .preview/lesson174-deliverables/*.log
+            .preview/lesson174-deliverables/*.pdf
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30
       - uses: actions/upload-artifact@v4
         with:
           name: lesson174-complete-review

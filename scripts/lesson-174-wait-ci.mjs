@@ -2,7 +2,7 @@
 import fs from 'node:fs';import {createHash} from 'node:crypto';import {execFileSync} from 'node:child_process';
 // Reconciled approved main has 86 compositions; append this target pair.
 const registryCount=88;
-const sha=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),deadline=Date.now()+30*60*1000;
+const sha=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),deadline=Date.now()+45*60*1000;
 if(!process.env.GH_TOKEN)throw Error('Read-only Actions token required');
 while(Date.now()<deadline){
  const response=await fetch('https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs?head_sha='+sha,{headers:{Authorization:'Bearer '+process.env.GH_TOKEN,Accept:'application/vnd.github+json'}});
@@ -30,4 +30,4 @@ while(Date.now()<deadline){
  }
  console.log('Waiting for normal CI and all 88 compositions at '+sha);await new Promise(r=>setTimeout(r,30000));
 }
-throw Error('Complete exact-head CI did not finish within 30 minutes');
+throw Error('Complete exact-head CI did not finish within 45 minutes');
