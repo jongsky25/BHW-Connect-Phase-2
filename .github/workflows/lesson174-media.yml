@@ -1,5 +1,6 @@
 name: Lesson 1.7.4 draft narration
 on:
+  workflow_call:
   pull_request:
     branches: [main]
     paths:
@@ -13,13 +14,13 @@ concurrency:
   cancel-in-progress: false
 jobs:
   draft:
-    if: github.head_ref == 'codex/lesson-174-carole-handoff'
+    if: github.head_ref == 'codex/lesson-174-carole-handoff' || github.ref_name == 'codex/lesson-174-carole-handoff'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
