@@ -7,7 +7,7 @@ const html=fs.readFileSync(dir+'/lesson-1.8.3-apple-review.html');
 const browserPath=process.env.LESSON_REVIEW_BROWSER??'/usr/bin/chromium';
 const server=http.createServer((req,res)=>{if(req.url==='/favicon.ico'){res.writeHead(204);res.end();return;}res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);});await new Promise(r=>server.listen(4189,'127.0.0.1',r));
 const browser=await chromium.launch({executablePath:browserPath,args:['--no-sandbox']});
-const report={source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),date:new Date().toISOString(),method:'Actual production React ReferenceLessons/ReferenceReadSection/LessonAssetFigure with explicit Next and save fixture adapters. One loopback HTTP load per context, then true browser offline. No authenticated production, Chat Guide or dashboard verification.',cases:[],errors:[]};
+const report={source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),date:new Date().toISOString(),read_only:process.argv.includes('--read-only'),method:'Actual production React ReferenceLessons/ReferenceReadSection/LessonAssetFigure with explicit Next and save fixture adapters. One loopback HTTP load per context, then true browser offline. No authenticated production, Chat Guide or dashboard verification.',cases:[],errors:[]};
 const lesson=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json'));
 const manifest=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/narration.json'));
 const save=()=>fs.writeFileSync(dir+'/lesson-1.8.3-browser-verification.json',JSON.stringify(report,null,2)+'\n');
@@ -38,7 +38,7 @@ try{
  for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const id of ['station-preparation','field-preparation','combined-hazards','practice','check']){
   const context=await browser.newContext();const page=await context.newPage();const anchor=(mode==='slides'?'slide-':'')+id;await page.goto('http://127.0.0.1:4189/?lang='+lang+'&mode='+mode+'&anchor='+anchor);await page.locator('article[data-scene="'+anchor+'"]').waitFor();report.cases.push({language:lang,mode,anchor,resume:true});await context.close();
  }
- for(const lang of ['fil','en'])for(const width of [1280,390]){
+ if(!process.argv.includes('--read-only'))for(const lang of ['fil','en'])for(const width of [1280,390]){
   const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();await page.goto('http://127.0.0.1:4189/?lang='+lang);
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.currentTime>0;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));await context.setOffline(true);
