@@ -1,0 +1,270 @@
+{
+  "status": "primary PDFs retrieved and inspected",
+  "retrieved_date": "2026-10-09",
+  "originals": [
+    {
+      "name": "deck",
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "pages": 78
+    },
+    {
+      "name": "facilitator",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "pages": 126
+    },
+    {
+      "name": "reference",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "pages": 150
+    },
+    {
+      "name": "tesda",
+      "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+      "pages": 140
+    }
+  ],
+  "pagination": {
+    "facilitator": {
+      "PDF 19": "printed 12: visually inspected image table, 3-hour topic allocation",
+      "PDF 29": "printed 22: problem-solving topic and activities"
+    },
+    "reference": {
+      "PDF 19": "printed 11: respect, varied perspectives and deeper causes",
+      "PDF 20": "printed 12: historical case and prioritization",
+      "PDF 21": "printed 13: solutions after prioritization; occupational safety starts on same page"
+    },
+    "deck": "PDF pages/slides 59\u201366, not pagination 65\u201372 suggested in older source inventory",
+    "tesda": "PDF 15\u201318 / printed 11\u201314, Revision 01 (2019)"
+  },
+  "tesda_mapping": {
+    "unit": "400311212",
+    "title": "Solve/address general workplace problems",
+    "inspected_criteria": [
+      "2.2 recommendations developed, documented, ranked and presented for decision",
+      "3.1 plan implementation",
+      "3.2 plan evaluation",
+      "3.3 document and submit to appropriate person for confirmation"
+    ],
+    "limits": "Original training regulation contains generic industry/software wording; Carole scenario is an authored BHW adaptation. DOH Facilitator topic/table supplies three-hour allocation; the 50-minute run sheet is newly authored, not a TESDA hour claim or full-unit certification."
+  },
+  "claim_map": [
+    {
+      "screens": [
+        "compare-solutions",
+        "plan"
+      ],
+      "sources": [
+        "facilitator PDF 29 items 5\u20136",
+        "reference PDF 19\u201321",
+        "deck 65",
+        "TESDA PDF 16"
+      ],
+      "claim": "Match activity to analyzed cause and resources; document recommendation for confirmation."
+    },
+    {
+      "screens": [
+        "partners"
+      ],
+      "sources": [
+        "deck 62, 66",
+        "TESDA PDF 16\u201317"
+      ],
+      "claim": "Diverse perspectives, health-professional/local-leader coordination and planning team."
+    },
+    {
+      "screens": [
+        "review",
+        "practice",
+        "check"
+      ],
+      "sources": [
+        "TESDA PDF 16 criteria 3.1\u20133.3",
+        "facilitator PDF 29 item 6"
+      ],
+      "claim": "Plan implementation and evaluation; adapted attendance exercise and recommendation rehearsal."
+    }
+  ],
+  "source_example_totals": "Deck 64 retains 19/17/16 in the original excerpt; this lesson does not re-teach scoring or make clinical triage claims.",
+  "adaptations": [
+    "Carole dialogue and role/outfit",
+    "verified fictional work and childcare barriers",
+    "three-household counts",
+    "seven-field plan and pending-agreement marker",
+    "50-minute allocation and triad sampling",
+    "unchanged attendance and conditional review date"
+  ],
+  "historical_case": "Rosario is the historical child; no adult Carole substitution, treatment directions or historical claims promoted to new classroom findings.",
+  "local_policy_SME": "pending",
+  "excerpt_files": [
+    {
+      "file": "deck-p59.png",
+      "sha256": "9914a45fb0d754ea1cc7f4964f4f10785085fcb203eefca99d4fc468bfd05ad3",
+      "bytes": 60051
+    },
+    {
+      "file": "deck-p59.txt",
+      "sha256": "9aea7d2fa6076b0c1ce7f07722887ed916c58d6cda77e7d6f2cdfe814b610af8",
+      "bytes": 397
+    },
+    {
+      "file": "deck-p60.png",
+      "sha256": "5a3c9e2c7fcebdf6e26f29303b0c7a0f7b488e38af1e335831c0aa64173b56fa",
+      "bytes": 142621
+    },
+    {
+      "file": "deck-p60.txt",
+      "sha256": "68f92f745e82f2412fa09728463340a1baf14e4699437e2d7e16473fe92842ab",
+      "bytes": 470
+    },
+    {
+      "file": "deck-p61.png",
+      "sha256": "12b6fa94074bf94460a926c74bdcc482930ba6514b28692a576791243ca34d6f",
+      "bytes": 61117
+    },
+    {
+      "file": "deck-p61.txt",
+      "sha256": "6816027d60f4e53f1b1bb0436bdb64e4edae449af09f9004bfb7087ea67f57e6",
+      "bytes": 530
+    },
+    {
+      "file": "deck-p62.png",
+      "sha256": "e7ee75d2ec24bb0f51728e7fefe6e24957924c350b5d0dd73f9ace4cb52a5dd0",
+      "bytes": 143196
+    },
+    {
+      "file": "deck-p62.txt",
+      "sha256": "98d61b78799a13db0bc1268d4a7970a7799a2f7a6555f531ccac11c984d48fd0",
+      "bytes": 516
+    },
+    {
+      "file": "deck-p63.png",
+      "sha256": "84525a725938ef96032332eabb90003486ae6b64f25d0799fc84db8f3868ba24",
+      "bytes": 98568
+    },
+    {
+      "file": "deck-p63.txt",
+      "sha256": "6bf68342f6e6095ffb5582aae6028b78611deebb464c1496f55223eecd46099d",
+      "bytes": 940
+    },
+    {
+      "file": "deck-p64.png",
+      "sha256": "90bda44b4bdf64156718890365180ebf039216855636e353149a7478bad6c0cd",
+      "bytes": 76800
+    },
+    {
+      "file": "deck-p64.txt",
+      "sha256": "ec985117babc869e56cc829edf5c0345daf169578e2260c18b4d9729f7b81890",
+      "bytes": 632
+    },
+    {
+      "file": "deck-p65.png",
+      "sha256": "09644c0ede9c3bfabcffdb24c0485229a782339eeecba42630cb43aecb3f5aa7",
+      "bytes": 56910
+    },
+    {
+      "file": "deck-p65.txt",
+      "sha256": "c18ac4ef8888bbd409f212fdf9790345a3fb2a653e4c6f08b82631e8d9b4e00c",
+      "bytes": 511
+    },
+    {
+      "file": "deck-p66.png",
+      "sha256": "3db69c19587cf72a0139c978e6e71382acc2cc57145f8f470532822895ae2ec8",
+      "bytes": 50730
+    },
+    {
+      "file": "deck-p66.txt",
+      "sha256": "72f6da5f30680429cabe42ef582ccf07bdcac168c0b8d2d4965c5a33b3bd0974",
+      "bytes": 433
+    },
+    {
+      "file": "facilitator-p19.png",
+      "sha256": "f0041c70a2291a1f7def0f3ebe4329b2d2513f93be27dace2fc199116e1aaa7f",
+      "bytes": 193955
+    },
+    {
+      "file": "facilitator-p19.txt",
+      "sha256": "8490f626034aa19f8d4a24bec63b10d128f49fac538a8d539c39fe01e8b88a68",
+      "bytes": 215
+    },
+    {
+      "file": "facilitator-p29.png",
+      "sha256": "d55f7095d27c480fab97f8749bac3ff5b067ffb9d37668cac0732d5df6836ba0",
+      "bytes": 164621
+    },
+    {
+      "file": "facilitator-p29.txt",
+      "sha256": "a100f991aeb5e1270b6f838210be7a6832dbd584e67e70aa9d4fa0ecf55ad447",
+      "bytes": 2120
+    },
+    {
+      "file": "reference-p19.png",
+      "sha256": "0b7dcb0595eac6db05b08605ea488ae4db38dc4f65cdc8d600578dfeefc0b533",
+      "bytes": 201218
+    },
+    {
+      "file": "reference-p19.txt",
+      "sha256": "7517c106bae2889e9de55212a6f05b87ab8e3040047fc4b74a9931b3139a59ae",
+      "bytes": 1587
+    },
+    {
+      "file": "reference-p20.png",
+      "sha256": "e75ca455c243baec4f0ffdc71a6f53d8ab088c311f3f07cf9f0fd6cb7828f7a6",
+      "bytes": 199013
+    },
+    {
+      "file": "reference-p20.txt",
+      "sha256": "94c0b08216019a9fadf7b614d610c275c91475bf907ad907c81be78049b9ed26",
+      "bytes": 1103
+    },
+    {
+      "file": "reference-p21.png",
+      "sha256": "da21ee629c6fc0296ba4c7ca7dbb6de7a369762b7e40edb531677b8d38ef6be2",
+      "bytes": 167988
+    },
+    {
+      "file": "reference-p21.txt",
+      "sha256": "ba38b8dbb282b7c518aed27f4cd399fdc80827b46e17c486e787684763d5436b",
+      "bytes": 633
+    },
+    {
+      "file": "tesda-p15.png",
+      "sha256": "9acd3d134af2e25207f19b896833c2b16810ea84b2325a48ebe1c8ea4e32b66e",
+      "bytes": 125957
+    },
+    {
+      "file": "tesda-p15.txt",
+      "sha256": "8d4031bf73696f5b9e7580c004f91c38d43509c3c62fcb43783c433e0e71473c",
+      "bytes": 1492
+    },
+    {
+      "file": "tesda-p16.png",
+      "sha256": "240b0e456e1fbdc61d8577576e6106c2eab7591c325a62aed53d82d416604e60",
+      "bytes": 139290
+    },
+    {
+      "file": "tesda-p16.txt",
+      "sha256": "af9b56452d5590d69dbedc0fe75d245636d3ba4fd17aa014369dfce8531d5487",
+      "bytes": 1549
+    },
+    {
+      "file": "tesda-p17.png",
+      "sha256": "a5ff342fa3321acdf2088448f0c9251af670c5e88be6a5d81bb48b621df0353b",
+      "bytes": 89849
+    },
+    {
+      "file": "tesda-p17.txt",
+      "sha256": "a80c40431f2c4695f85d10c20f0b0d972953af4925f4d7d3fcec6ec176e70152",
+      "bytes": 972
+    },
+    {
+      "file": "tesda-p18.png",
+      "sha256": "9ad9abb9882591cf759eac420438f9840ae012db5b08990cf3a9c212731e12eb",
+      "bytes": 122153
+    },
+    {
+      "file": "tesda-p18.txt",
+      "sha256": "ca97eba536b3ebc17372f9dc24b7c0afc37acdfb1635eaa0a731fb19b542a2f3",
+      "bytes": 1500
+    }
+  ]
+}

@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Naiuugnay ang mungkahi sa sanhi; kumpleto ang owner, resources, deadline, sukatan at review; may partner agreement at paliwanag kung paano babaguhin kapag hindi gumana.",
-      "observable_en": "Links the proposal to the cause, specifies owner, resources, deadline, measure and review, seeks partner agreement and explains how to revise if it fails.",
-      "not_yet_fil": "Nangangako ng bagong iskedyul o pondo nang walang pahintulot, o meeting count lamang ang sukatan.",
-      "not_yet_en": "Promises a new schedule or funding without agreement, or measures only meetings held.",
+      "observable_fil": "Inihahambing ang dalawang solusyon sa natiyak na sanhi; nagbibigay ng pitong-bahaging plano at hiwalay na kumpirmado/hinihintay na ambag; humihingi ng pagsang-ayon sa may tungkulin; inihahambing ang attendance sa invitations at nirerebisa ang plano nang walang hindi awtorisadong pangako.",
+      "observable_en": "Compares two solutions against the verified cause; presents a seven-field plan and separate confirmed/pending contributions; seeks agreement from responsible partners; compares attendance with invitations and revises without unauthorized promises.",
+      "not_yet_fil": "Nangangako pa rin ng schedule o pondo nang walang pahintulot, o meeting count lamang ang resulta kahit may tulong. Kung walang nasaksihang pagtatangka, markahang hindi naobserbahan at magtakda ng direktang obserbasyon; huwag ipalagay na pasado o bagsak.",
+      "not_yet_en": "Still promises schedules or funding without agreement, or treats meeting count as the outcome despite support. If no attempt was witnessed, mark not observed and arrange direct observation; do not infer a pass or failure.",
       "levels": {
-        "kaya_na_fil": "Naiuugnay ang mungkahi sa sanhi; kumpleto ang owner, resources, deadline, sukatan at review; may partner agreement at paliwanag kung paano babaguhin kapag hindi gumana. Nagagawa kahit hindi pinapaalalahanan.",
-        "kaya_na_en": "Links the proposal to the cause, specifies owner, resources, deadline, measure and review, seeks partner agreement and explains how to revise if it fails. Completes this without prompting.",
-        "kailangan_practice_fil": "Tumutugon sa sanhi ngunit kulang ang owner o sukatan; ipapunan ang plan card bago muling magpresenta.",
-        "kailangan_practice_en": "Addresses the cause but omits an owner or measure; complete the plan card before presenting again.",
-        "hindi_pa_fil": "Nangangako ng bagong iskedyul o pondo nang walang pahintulot, o meeting count lamang ang sukatan.",
-        "hindi_pa_en": "Promises a new schedule or funding without agreement, or measures only meetings held."
+        "kaya_na_fil": "Inihahambing ang dalawang solusyon sa natiyak na sanhi; nagbibigay ng pitong-bahaging plano at hiwalay na kumpirmado/hinihintay na ambag; humihingi ng pagsang-ayon sa may tungkulin; inihahambing ang attendance sa invitations at nirerebisa ang plano nang walang hindi awtorisadong pangako. Nagagawa nang mag-isa.",
+        "kaya_na_en": "Compares two solutions against the verified cause; presents a seven-field plan and separate confirmed/pending contributions; seeks agreement from responsible partners; compares attendance with invitations and revises without unauthorized promises. Performs independently.",
+        "kailangan_practice_fil": "May pagtatangka ngunit kailangan ng prompt sa isang field, agreement status o sukatan ng resulta. Ibigay ang tiyak na feedback at ulitin ang bahaging iyon.",
+        "kailangan_practice_en": "Attempts the task but needs a prompt for a field, agreement status or outcome measure. Give specific feedback and repeat that part.",
+        "hindi_pa_fil": "Nangangako pa rin ng schedule o pondo nang walang pahintulot, o meeting count lamang ang resulta kahit may tulong. Kung walang nasaksihang pagtatangka, markahang hindi naobserbahan at magtakda ng direktang obserbasyon; huwag ipalagay na pasado o bagsak.",
+        "hindi_pa_en": "Still promises schedules or funding without agreement, or treats meeting count as the outcome despite support. If no attempt was witnessed, mark not observed and arrange direct observation; do not infer a pass or failure."
       }
     }
   ]

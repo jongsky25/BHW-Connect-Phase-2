@@ -1,0 +1,74 @@
+{
+  "owner_review": "pending",
+  "concept_attempt": "First generation returned a contact sheet despite separate-file instruction; retained as superseded concept only. Six standalone scene edits generated with the built-in tool.",
+  "reference": "docs/lesson-17-reference/carole-character-reference-6e2b1c5044d7.png",
+  "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+  "records": [
+    {
+      "screen": "compare-solutions",
+      "path": "public/training/bhw-1-7/carole-action-compare-solutions-1070fb62d278.png",
+      "sha256": "1070fb62d278199f79c76d4b272aec5b15a315b265aa359b805608c9d5fd2400",
+      "generator": "built-in imagegen",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "concept_sheet_sha256": "bfd3660ad79620330630cb19324304cb28b39347629477c5446979792f8e7554",
+      "generated_original": "/workspace/generated_images/exec-be3b9fe4-537b-4b0a-9ba6-8ae3d76e55a0.png",
+      "inspection": "Recognizable Carole, teal outfit, distinct action, no text/identifiers. Plan/check have seven rows; review shows 1 of 3 on each side. Owner review pending.",
+      "prompt": "Produce exactly ONE standalone landscape illustration for scene \"compare-solutions\". From the first image, use ONLY panel 1 (top row, left column), expand it into a clean landscape teaching scene with the same Carole face, long wavy dark hair, teal polo and style matched to the second reference. No collage, no panel borders, no text, no logos.   Return saved output filesystem path."
+    },
+    {
+      "screen": "plan",
+      "path": "public/training/bhw-1-7/carole-action-plan-889b61e22a25.png",
+      "sha256": "889b61e22a25688f29e6a87af09fd4212e215a65a5b1248e01a9390c2ef1f4b4",
+      "generator": "built-in imagegen",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "concept_sheet_sha256": "bfd3660ad79620330630cb19324304cb28b39347629477c5446979792f8e7554",
+      "generated_original": "/workspace/generated_images/exec-5c647d6e-7ec8-43f4-a17a-76744b1192f5.png",
+      "inspection": "Recognizable Carole, teal outfit, distinct action, no text/identifiers. Plan/check have seven rows; review shows 1 of 3 on each side. Owner review pending.",
+      "prompt": "Produce exactly ONE standalone landscape illustration for scene \"plan\". From the first image, use ONLY panel 2 (top row, middle column), expand it into a clean landscape teaching scene with the same Carole face, long wavy dark hair, teal polo and style matched to the second reference. No collage, no panel borders, no text, no logos. Show exactly seven blank plan rows and a separate yellow pending-agreement marker.  Return saved output filesystem path."
+    },
+    {
+      "screen": "partners",
+      "path": "public/training/bhw-1-7/carole-action-partners-418b249f3645.png",
+      "sha256": "418b249f3645c4e8768e21bbbd6c6d84879b3f584891ed368ee3cf5403db8569",
+      "generator": "built-in imagegen",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "concept_sheet_sha256": "bfd3660ad79620330630cb19324304cb28b39347629477c5446979792f8e7554",
+      "generated_original": "/workspace/generated_images/exec-666aa64e-95df-4148-8ce8-2f345ce96e2d.png",
+      "inspection": "Recognizable Carole, teal outfit, distinct action, no text/identifiers. Plan/check have seven rows; review shows 1 of 3 on each side. Owner review pending.",
+      "prompt": "Produce exactly ONE standalone landscape illustration for scene \"partners\". From the first image, use ONLY panel 3 (top row, right column), expand it into a clean landscape teaching scene with the same Carole face, long wavy dark hair, teal polo and style matched to the second reference. No collage, no panel borders, no text, no logos.   Return saved output filesystem path."
+    },
+    {
+      "screen": "review",
+      "path": "public/training/bhw-1-7/carole-action-review-ea7dba5253fd.png",
+      "sha256": "ea7dba5253fd7eb3db3ff9585c9462d2621fadf7c337cb53cd1963a3c5b143af",
+      "generator": "built-in imagegen",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "concept_sheet_sha256": "bfd3660ad79620330630cb19324304cb28b39347629477c5446979792f8e7554",
+      "generated_original": "/workspace/generated_images/exec-c48bae02-1c8b-472e-bae9-afabcd63abba.png",
+      "inspection": "Recognizable Carole, teal outfit, distinct action, no text/identifiers. Plan/check have seven rows; review shows 1 of 3 on each side. Owner review pending.",
+      "prompt": "Produce exactly ONE standalone landscape illustration for scene \"review\". From the first image, use ONLY panel 4 (bottom row, left column), expand it into a clean landscape teaching scene with the same Carole face, long wavy dark hair, teal polo and style matched to the second reference. No collage, no panel borders, no text, no logos.  The review board must show before and after, each with exactly three household/person icons, one filled and two outline icons, demonstrating unchanged 1-of-3 attendance. Return saved output filesystem path."
+    },
+    {
+      "screen": "practice",
+      "path": "public/training/bhw-1-7/carole-action-practice-f23b1bb93a16.png",
+      "sha256": "f23b1bb93a167f14ef49ec582f473e8c737224c9aa000e93b7cf19a292413734",
+      "generator": "built-in imagegen",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "concept_sheet_sha256": "bfd3660ad79620330630cb19324304cb28b39347629477c5446979792f8e7554",
+      "generated_original": "/workspace/generated_images/exec-d5ff7b18-7033-4f15-a246-abc0e4fcfcea.png",
+      "inspection": "Recognizable Carole, teal outfit, distinct action, no text/identifiers. Plan/check have seven rows; review shows 1 of 3 on each side. Owner review pending.",
+      "prompt": "Produce exactly ONE standalone landscape illustration for scene \"practice\". From the first image, use ONLY panel 5 (bottom row, middle column), expand it into a clean landscape teaching scene with the same Carole face, long wavy dark hair, teal polo and style matched to the second reference. No collage, no panel borders, no text, no logos.   Return saved output filesystem path."
+    },
+    {
+      "screen": "check",
+      "path": "public/training/bhw-1-7/carole-action-check-83656d4deab1.png",
+      "sha256": "83656d4deab1816faaaefecfb38a6251e2a584e7185497fb80b8d993f45bf4e2",
+      "generator": "built-in imagegen",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "concept_sheet_sha256": "bfd3660ad79620330630cb19324304cb28b39347629477c5446979792f8e7554",
+      "generated_original": "/workspace/generated_images/exec-3c0b7056-6224-4674-a4e3-44e3fe4faa20.png",
+      "inspection": "Recognizable Carole, teal outfit, distinct action, no text/identifiers. Plan/check have seven rows; review shows 1 of 3 on each side. Owner review pending.",
+      "prompt": "Produce exactly ONE standalone landscape illustration for scene \"check\". From the first image, use ONLY panel 6 (bottom row, right column), expand it into a clean landscape teaching scene with the same Carole face, long wavy dark hair, teal polo and style matched to the second reference. No collage, no panel borders, no text, no logos. Show exactly seven blank plan rows and a separate yellow pending-agreement marker.  Return saved output filesystem path."
+    }
+  ]
+}

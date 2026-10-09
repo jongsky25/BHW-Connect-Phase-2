@@ -1,0 +1,72 @@
+// @vitest-environment node
+import {describe,it,expect} from 'vitest';
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
+import {beforeProposed174} from '../lib/lesson-174-proposal.mjs';
+import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
+const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/';
+const bytes=p=>fs.readFileSync(p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
+const baseline=j('docs/lesson-174-handoff-baseline.json'),captured=j('docs/lesson-174-implementation-baseline.json');
+const lesson=j(leaf+'lesson.json');
+describe('Carole action-plan draft',()=>{
+ it('matches the seven-file pinned main baseline and preserves manifest, anchors, concepts and original decision',()=>{
+  for(const [name,h]of Object.entries(baseline.target_sha256))expect(captured.files[leaf+name],name).toBe(h);
+  expect(lesson.manifest).toEqual(baseline.manifest);
+  expect(lesson.sections.map(s=>({id:s.id,concept_ids:s.concept_ids}))).toEqual(baseline.anchors);
+  expect(lesson.coverage).toEqual(baseline.coverage);
+  const c=lesson.sections.at(-1).check;
+  for(const name of ['prompt_fil','prompt_en','options','correct_option_index'])expect(c[name]).toEqual(baseline.original_check[name]);
+  expect(c.correct_option_index).toBe(2);
+ });
+ it('loads six paired screens with distinct hashed illustrations and exact Slides narration',()=>{
+  const loaded=loadReferenceModule('content/training/day1-basic-competencies/modules/07-problema','public').lessons.find(l=>l.manifest.lesson_key==='problem-action-plan');
+  for(const lang of ['fil','en']){
+   const read=parseReferenceRead(bytes(leaf+`read.${lang}.md`).toString());
+   expect(read).toHaveLength(6);
+   for(const [i,s]of read.entries()){expect(loaded.revision.slides[i]['narration_'+lang]).toBe(s.body);expect(s.body).not.toMatch(/Nestor|41/);}
+  }
+  expect(new Set(lesson.assets.map(a=>a.content_hash)).size).toBe(6);
+  for(const s of lesson.sections){expect(s.asset_ids).toEqual(['action-'+s.id]);const a=lesson.assets.find(a=>a.id===s.asset_ids[0]);expect(sha(bytes('public'+a.path))).toBe(a.content_hash);expect(a.review_status).toBe('draft');}
+ });
+ it('retains original public bytes, sibling teaching, narration/history, UUIDs and approval receipts',()=>{
+  const allowed=new Set(Object.keys(j('docs/lesson-174-proposal-receipt.json').changed_existing_files));
+  for(const [p,h]of Object.entries(captured.files))if(!allowed.has(p))expect(sha(bytes(p)),p).toBe(h);
+ },30000);
+ it('uses strict exact successor guards before historical views',()=>{
+  const r=j('docs/lesson-174-proposal-receipt.json');
+  for(const [p,e]of Object.entries(r.changed_existing_files)){
+   expect(sha(bytes(p))).toBe(e.proposed_sha256);
+   expect(sha(beforeProposed174(p))).toBe(e.predecessor_sha256);
+   expect(beforeProposed174(p)).toEqual(execFileSync('git',['show',captured.base_commit+':'+p]));
+   expect(()=>beforeProposed174(p,Buffer.from('changed'))).toThrow('Unpinned');
+  }
+  expect(r.owner_release_approval).toBe(false);
+ });
+ it('keeps old published narration selectable and refuses stale audio for new teaching',()=>{
+  const old=j('docs/lesson-174-proposal-receipt.json').changed_existing_files;
+  const read=Object.fromEntries(['fil','en'].map(lang=>[lang,parseReferenceRead(old[leaf+`read.${lang}.md`].predecessor_utf8)]));
+  const original=JSON.parse(old[leaf+'lesson.json'].predecessor_utf8);
+  const sections=read.fil.map((s,i)=>({id:s.id,heading_fil:s.heading,heading_en:read.en[i].heading,body_fil:s.body,body_en:read.en[i].body,takeaway_fil:original.sections[i].takeaway_fil,takeaway_en:original.sections[i].takeaway_en}));
+  const mf=j('content/training/day1-basic-competencies/narration.json');
+  const current=loadReferenceModule('content/training/day1-basic-competencies/modules/07-problema','public').lessons.find(l=>l.manifest.lesson_key==='problem-action-plan');
+  for(const lang of ['fil','en']){
+   const selected=narrationForLesson(mf,'problem-action-plan',lang,sections);
+   expect(Object.keys(selected)).toHaveLength(6);
+   for(const s of sections)expect(selected[s.id].src).toBe(mf.lessons['problem-action-plan'].sections[s.id][lang].src);
+   expect(narrationForLesson(mf,'problem-action-plan',lang,current.revision.read_sections)).toEqual({});
+  }
+ });
+ it('retains 50/180 timing, full guide outline, one observable indicator and paper practice alternatives',()=>{
+  const indicators=j(leaf+'competency.json').observation_indicators;
+  expect(indicators).toHaveLength(1);expect(indicators[0].objective_index).toBe(0);expect(Object.keys(indicators[0].levels)).toHaveLength(6);
+  for(const lang of ['fil','en']){
+   const g=bytes(leaf+`facilitator.${lang}.md`).toString();
+   expect([...g.matchAll(/^## \[([^\]]+)\]/gm)].map(m=>m[1])).toEqual(FACILITATOR_SECTION_IDS);
+   expect(g).toContain('35 + 50 + 45 + 50 = 180');
+   expect(g).toContain('1–3');expect(g).toContain('4–6');expect(g).toContain('7–10');
+   expect([...bytes(`docs/lesson-174-practice-kit.${lang}.md`).toString().matchAll(/^## /gm)]).toHaveLength(4);
+  }
+ });
+});

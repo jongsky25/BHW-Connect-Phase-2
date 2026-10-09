@@ -1,0 +1,22 @@
+{
+  "status": "incomplete draft",
+  "completed": [
+    "six paired bilingual screens",
+    "six draft illustrations",
+    "50-minute private guides and rubric",
+    "four-page bilingual printable sources",
+    "primary source audit"
+  ],
+  "blocked": {
+    "Gemini_Read_MP3": "GEMINI_API_KEY unavailable; 0 of 12 new tracks generated",
+    "story_AAC_and_video": "Requires actual Gemini narration; 0 of 2 stories rendered",
+    "full_and_focused_audio_review": "No new audio bytes; 0 of 14 full and 0 of 56 focused reviews",
+    "published_baseline": "Loader credentials unavailable; no authenticated production query",
+    "production_and_disposable_Supabase_E2E": "not run"
+  },
+  "human_listening": "pending",
+  "owner_review": "pending",
+  "local_policy_SME": "pending",
+  "production_writes": false,
+  "registry": "Unchanged until actual story inputs exist; no placeholders registered."
+}

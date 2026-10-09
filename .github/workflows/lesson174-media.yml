@@ -1,0 +1,44 @@
+name: Lesson 1.7.4 draft narration
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson174-media.yml'
+      - 'scripts/lesson-174-read-media-build.mjs'
+      - 'content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/**'
+permissions:
+  contents: read
+concurrency:
+  group: lesson174-draft-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-174-carole-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Generate target-only Read narration
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON174_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-174-record-fetch.mjs'
+        run: node scripts/lesson-174-read-media-build.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson174-draft-narration
+          path: |
+            content/training/day1-basic-competencies/narration.json
+            public/training/audio/07-problema/problem-action-plan/
+            .preview/lesson174-raw/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

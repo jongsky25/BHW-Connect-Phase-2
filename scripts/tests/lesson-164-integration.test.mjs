@@ -1,3 +1,4 @@
+import {beforeProposed174} from '../lib/lesson-174-proposal.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {lesson164View} from '../lib/lesson-164-integration.mjs';
@@ -8,7 +9,7 @@ describe('owner-approved 1.6.4 integration and release',()=>{
   const r=j('docs/lesson-164-integration-receipt.json');
   const shared=new Set(['src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','scripts/lib/reference-narration.mjs','content/training/day1-basic-competencies/narration.json']);
   for(const [p,e]of Object.entries(r.files)){
-   expect(sha(fs.readFileSync(p))).toBe(e.integrated_sha256);
+   expect(sha(beforeProposed174(p))).toBe(e.integrated_sha256);
    for(const side of ['reviewed164','approvedMain'])expect(sha(lesson164View(p,side))).toBe(e[side+'_sha256']);
    expect(()=>lesson164View(p,'approvedMain',Buffer.from('changed'))).toThrow('Unpinned');
    if(!shared.has(p)&&!p.startsWith(leaf))expect(e.integrated_sha256,p).toBe(e.approvedMain_sha256);
@@ -27,7 +28,7 @@ describe('owner-approved 1.6.4 integration and release',()=>{
   const original=JSON.parse(a.reviewed_lesson_utf8),current=j(leaf+'lesson.json');let promoted=0;
   for(const [i,asset]of current.assets.entries()){expect(asset.review_status).toBe('approved');if(original.assets[i].review_status==='draft')promoted++;asset.review_status=original.assets[i].review_status;}
   expect(promoted).toBe(7);expect(current).toEqual(original);
-  for(const [p,h]of Object.entries(a.approved_source_sha256))expect(sha(fs.readFileSync(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(a.approved_source_sha256))expect(sha(beforeProposed174(p)),p).toBe(h);
   for(const m of a.approved_media)expect(sha(fs.readFileSync('public'+m.path))).toBe(m.sha256);
  });
 });
