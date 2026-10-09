@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import {createClient,signIn,requireEnv} from './lib/supabase-rest.mjs';
 const base='https://bhw-connect-phase-2.vercel.app';
-const key=requireEnv('KB_LOADER_ANON_KEY'),username=process.env.E2E_STABLE_ADMIN_PASSWORD?(process.env.E2E_STABLE_ADMIN_USERNAME??'admin.stable'):requireEnv('KB_LOADER_USERNAME'),password=process.env.E2E_STABLE_ADMIN_PASSWORD??requireEnv('KB_LOADER_PASSWORD');
+const key=requireEnv('KB_LOADER_ANON_KEY'),username=process.env.E2E_STABLE_ADMIN_PASSWORD?(process.env.E2E_STABLE_ADMIN_USERNAME??'admin.stable'):requireEnv('KB_LOADER_USERNAME'),password=process.env.E2E_STABLE_ADMIN_PASSWORD||requireEnv('KB_LOADER_PASSWORD');
 const url='https://ltzicxyefizxoqhfuuzc.supabase.co';
 const token=await signIn(url,key,requireEnv('KB_LOADER_USERNAME'),requireEnv('KB_LOADER_PASSWORD')),client=createClient(url,key,token);
 const programs=await client.get('training_programs?select=id&content_key=eq.bhw-reference-manual&status=eq.published&limit=1');assert.equal(programs.length,1);
