@@ -1,0 +1,31 @@
+{
+  "status": "draft",
+  "initial_Read_generation": {
+    "run_id": 37875149220,
+    "head_sha": "d998b3f5",
+    "artifact_id": 11591779716,
+    "artifact_name": "lesson174-draft-narration",
+    "zip_bytes": 51917537,
+    "zip_sha256": "e026b001a587d6df24a27127a3276d065b9be1a548eb70d7d32026f531a1751c",
+    "retained": "All initial synthesis requests/responses; actual selected 12 Read MP3s"
+  },
+  "story_and_actual_audio_review": {
+    "run_id": 37875895655,
+    "head_sha": "a3728aade772d8b074cba5abd1391365963b691f",
+    "artifact_id": 11593022139,
+    "artifact_name": "lesson174-draft-evidence",
+    "zip_bytes": 127251148,
+    "zip_sha256": "488331f8fec98376c72fa9dd4bc1502d4124863db9d165ce7b0a17236f774cf6",
+    "retained": "Six-beat story synthesis and rendered MP4s, decoded shipped AAC, 14 full and 56 focused model reviews, original raw requests/responses and exact WAV excerpts"
+  },
+  "integration": "Approved main 4ff76dcba181eff7cc4300902ccfc571c995af9f integrated once; target evidence imported without overwriting sibling selections/history or existing media bytes",
+  "final_encoded_posters": "Derived locally from unchanged shipped H.264 final encoded frames; old still poster bytes retained; metadata in media-generation.json",
+  "final_review": "Exact-head CI/render/browser/package evidence generated after source freeze; see external verification and integrity receipts",
+  "human_listening": "pending",
+  "owner_review": "pending",
+  "local_policy_SME_review": "pending",
+  "published_snapshot": {
+    "initial_attempt": "Failed before authentication: asserted eight locked lesson IDs although module 06 has five and module 07 has four. No query occurred. Raw job log retained as workflow provenance.",
+    "repair": "Nine explicit locked authored lesson IDs; bounded named-column revision/private-guide reads; final review workflow requires the fresh snapshot and packages it. No learner queries or writes."
+  }
+}

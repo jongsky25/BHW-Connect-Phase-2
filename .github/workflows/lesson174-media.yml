@@ -1,0 +1,79 @@
+name: Lesson 1.7.4 draft narration
+on:
+  workflow_call:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson174-media.yml'
+      - 'scripts/lesson-174-read-media-build.mjs'
+      - 'content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/**'
+permissions:
+  contents: read
+concurrency:
+  group: lesson174-draft-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-174-carole-handoff' || github.ref_name == 'codex/lesson-174-carole-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Bounded read-only published-content baseline
+        continue-on-error: true
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-174-published-snapshot.mjs
+      - name: Generate target-only Read narration
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON174_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-174-record-fetch.mjs'
+        run: node scripts/lesson-174-media-build.mjs
+      - name: Review full actual recordings
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON174_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-174-record-fetch.mjs'
+        run: node scripts/lesson-174-audio-review.mjs
+      - name: Review actual focused excerpts
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON174_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-174-record-fetch.mjs'
+        run: node scripts/lesson-174-audio-focus.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson174-draft-evidence
+          path: |
+            lesson-174-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            public/training/audio/07-problema/problem-action-plan/
+            .preview/lesson174-raw/
+            .preview/lesson174-excerpts/
+            docs/lesson-174-media-generation.json
+            docs/lesson-174-audio-review.json
+            docs/lesson-174-audio-focus.json
+            content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/
+            public/training/bhw-1-7/
+            remotion/public/problem-action-plan/
+            remotion/out/problem-action-plan-*
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
