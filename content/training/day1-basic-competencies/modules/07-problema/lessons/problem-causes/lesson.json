@@ -18,7 +18,9 @@
       "concept_ids": [
         "m7.whys"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "carole-causes-whys"
+      ],
       "takeaway_fil": "Ang Five Whys ay paghanap ng nasusuring sanhi kasama ang iba, hindi paulit-ulit na paninisi.",
       "takeaway_en": "Five Whys investigates evidence-based causes with others instead of repeating blame.",
       "check": null
@@ -28,7 +30,9 @@
       "concept_ids": [
         "m7.diarrhoea-example"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "carole-causes-manual-example"
+      ],
       "takeaway_fil": "Ang worked example ay paraan ng pagsusuri; ang totoong prayoridad ay manggagaling sa lokal na ebidensya.",
       "takeaway_en": "A worked example teaches a method; real priorities come from local evidence.",
       "check": null
@@ -38,9 +42,23 @@
       "concept_ids": [
         "m7.determinants"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "carole-causes-rosario"
+      ],
       "takeaway_fil": "Ang sakit ay may konteksto: ang tubig, kita, impormasyon at access sa serbisyo ay magkakaugnay.",
       "takeaway_en": "Illness has a context: water, income, information and access to services interact.",
+      "check": null
+    },
+    {
+      "id": "verify-branch",
+      "concept_ids": [
+        "m7.whys"
+      ],
+      "asset_ids": [
+        "carole-causes-verify-branch"
+      ],
+      "takeaway_fil": "Itama ang map ayon sa ebidensya; panatilihing bukas ang hindi pa alam.",
+      "takeaway_en": "Correct the map using evidence; keep unknowns open.",
       "check": null
     },
     {
@@ -50,7 +68,9 @@
         "m7.diarrhoea-example",
         "m7.determinants"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "carole-causes-practice"
+      ],
       "takeaway_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
       "takeaway_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
       "check": null
@@ -62,7 +82,9 @@
         "m7.diarrhoea-example",
         "m7.determinants"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "carole-causes-check"
+      ],
       "takeaway_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
       "takeaway_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
       "check": {
@@ -83,8 +105,8 @@
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "Ang ikalawang sagot ay sumusubok sa paliwanag bago kumilos. Hindi patunay ang bilang ng tanong. Ang lecture ay maaaring hindi tumugon sa transportasyon, kita o kakulangan sa serbisyo.",
-        "feedback_en": "The second response tests the explanation before acting. The question count is not proof. A lecture may miss transport, income or service gaps."
+        "feedback_fil": "Una: hindi patunay ang limang tanong; huwag itigil ang pagsusuri dahil sa bilang. Ikalawa: suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team bago kumilos. Ikatlo: maaaring hindi tugma ang lecture sa pamasahe, kita o access sa serbisyo. Sa kathang-isip na wakas, itinama ni Carole ang arrow: may dalawang oras sa practice schedule, ngunit isang oras lamang ang natanggap ayon sa residente. Hindi pa alam kung bakit. Sinabi ang hadlang sa childcare at pamasahe; kailangan pang suriin ang mga sanhi. Dalawang sangay na may pinagmulan at hakbang sa beripikasyon ang map, hindi isang taong sinisisi.",
+        "feedback_en": "First: five questions are not proof; do not stop investigating because of the count. Second: check the evidence and other barriers with the family and health team before acting. Third: a lecture may not address fare, income or access to services. In the fictional ending, Carole corrects the arrow: the practice schedule contains two times, but the resident reports receiving only one. Why remains unknown. Childcare and fare barriers are reported; their causes still need investigation. The map contains two attributed branches with verification steps, not one blamed person."
       }
     }
   ],
@@ -93,11 +115,13 @@
       "id": "m7.whys",
       "read_ids": [
         "whys",
+        "verify-branch",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-whys",
+        "slide-verify-branch",
         "slide-practice",
         "slide-check"
       ],
@@ -169,5 +193,112 @@
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/kwento-ni-rosario.md"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "carole-causes-whys",
+      "path": "/training/bhw-1-7/carole-causes-whys-d0dcdd0642e7.png",
+      "content_hash": "d0dcdd0642e72c158650a039ab4dcc12648e98e2780d7682ca3739a228e0c0ec",
+      "alt_fil": "Si Carole at mga residente na nagtatanong sa dalawang sangay.",
+      "alt_en": "Carole and residents question two map branches.",
+      "caption_fil": "Ang Five Whys ay paghanap ng nasusuring sanhi kasama ang iba, hindi paulit-ulit na paninisi.",
+      "caption_en": "Five Whys investigates evidence-based causes with others instead of repeating blame.",
+      "review_status": "approved",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "id": "carole-causes-manual-example",
+      "path": "/training/bhw-1-7/carole-causes-manual-example-f4ec0cefe587.png",
+      "content_hash": "f4ec0cefe587782828c0c77ee0f19c62938a8fe6ee092e941b1897f358b1cc24",
+      "alt_fil": "Si Carole na nagpapakita ng sistemang may tubig, access at training.",
+      "alt_en": "Carole presents water, access and training in a system diagram.",
+      "caption_fil": "Ang worked example ay paraan ng pagsusuri; ang totoong prayoridad ay manggagaling sa lokal na ebidensya.",
+      "caption_en": "A worked example teaches a method; real priorities come from local evidence.",
+      "review_status": "approved",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "id": "carole-causes-rosario",
+      "path": "/training/bhw-1-7/carole-causes-rosario-ae9a2987d80d.png",
+      "content_hash": "ae9a2987d80d2679fd8c00b429776e25d5831da2278312fbb5c03d7f5bd7f204",
+      "alt_fil": "Si Carole na nag-uugnay ng kapaligiran, kabuhayan at serbisyo.",
+      "alt_en": "Carole maps environment, livelihood and service barriers.",
+      "caption_fil": "Ang sakit ay may konteksto: ang tubig, kita, impormasyon at access sa serbisyo ay magkakaugnay.",
+      "caption_en": "Illness has a context: water, income, information and access to services interact.",
+      "review_status": "approved",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "id": "carole-causes-verify-branch",
+      "path": "/training/bhw-1-7/carole-causes-verify-branch-7230a15abc18.png",
+      "content_hash": "7230a15abc1828d93b74bb69a5f0481cf2a8db354a5e58d322a9b5679f8a8dd5",
+      "alt_fil": "Si Carole, residente at staff na nagwawasto habang may hindi pa tiyak.",
+      "alt_en": "Carole, a resident and staff correct a map while uncertainty remains.",
+      "caption_fil": "Itama ang map ayon sa ebidensya; panatilihing bukas ang hindi pa alam.",
+      "caption_en": "Correct the map using evidence; keep unknowns open.",
+      "review_status": "approved",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "id": "carole-causes-practice",
+      "path": "/training/bhw-1-7/carole-causes-practice-cba43c94470a.png",
+      "content_hash": "cba43c94470a145e560c516c3eefd4f39ba264b96b343fd9117f000c2e224e63",
+      "alt_fil": "Triad na gumagawa at nagwawasto ng dalawang sangay.",
+      "alt_en": "A triad builds and corrects two branches.",
+      "caption_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
+      "caption_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+      "review_status": "approved",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "id": "carole-causes-check",
+      "path": "/training/bhw-1-7/carole-causes-check-22d181948593.png",
+      "content_hash": "22d181948593e992a1bbb17b45a4a02a667b48cca6badd0cdc51e8b6b94057a6",
+      "alt_fil": "Si Carole at residente na tinatalakay ang ebidensya at tanong.",
+      "alt_en": "Carole and residents discuss evidence and questions.",
+      "caption_fil": "Si Carole ay nakikinig bago tanggapin ang paliwanag.",
+      "caption_en": "Carole listens before accepting an explanation.",
+      "review_status": "approved",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "id": "problem-causes-story",
+      "alt_fil": "Anim na beat tungkol sa dalawang sangay, pinagmulan, pagwawasto at beripikasyon.",
+      "alt_en": "Six narrated beats about two branches, sources, correction and verification.",
+      "caption_fil": "Dalawang sangay na may batayan at tapat na hindi pa tiyak.",
+      "caption_en": "Two evidence-qualified branches with honest unknowns.",
+      "provenance": "Original lesson 1.7.2 Remotion story with six Carole scenes from the pinned reference. Gemini Kore narration; measured encoded audio boundaries. Classroom facts only; owner, human listening and SME review pending.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-7/problem-causes-gemini-fil-54c1fffffd47.mp4",
+          "content_hash": "54c1fffffd4767d87f4f19f6925cd412fa2201fdc097222ab87383b4cbee0df5",
+          "duration_s": 70,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-causes-gemini-fil-b6ee07161627.vtt",
+            "content_hash": "b6ee07161627993535d258e476ff9c8c882013cb4a786d1025555c913ac53944"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg",
+            "content_hash": "940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-7/problem-causes-gemini-en-9cb2c860e10c.mp4",
+          "content_hash": "9cb2c860e10c35adb686efd31bb512bbcb01609ae992240d7366739a0db067ea",
+          "duration_s": 67,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-causes-gemini-en-45daeb498e0c.vtt",
+            "content_hash": "45daeb498e0ce1e66ad01863b0137ad30a468f5e49f11886e5b22b270d7681c4"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-causes-gemini-en-73b77f9edd97-poster.jpg",
+            "content_hash": "73b77f9edd97cfe4b47c0b836a9acf8f126c4282a1f01c9d3dfeac91be21ad18"
+          }
+        }
+      },
+      "path": "/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg",
+      "content_hash": "940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956"
+    }
+  ],
+  "featured_asset_id": "problem-causes-story"
 }

@@ -307,6 +307,9 @@ export function ReferenceLessons(props: Props) {
   const prioritizationRevision = lesson?.lesson_key === "problem-prioritize" && lesson.revision.assets.some(asset => asset.id === "prioritize-criteria");
   const recordingTracks = recordingRevision ? Object.values(lessonNarration ?? {}) : [];
   const recordingMinutes = recordingTracks.length === 6 ? Math.ceil(recordingTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
+  const causesRevision = lesson?.lesson_key === "problem-causes" && lesson.revision.assets.some(asset => asset.id === "carole-causes-check");
+  const causesTracks = causesRevision ? Object.values(lessonNarration ?? {}) : [];
+  const causesMinutes = causesTracks.length === 6 ? Math.ceil(causesTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const handoffRevision = lesson?.lesson_key === "communication-handoff" && lesson.revision.assets.some(asset => asset.id === "handoff-check");
   const handoffTracks = handoffRevision ? Object.values(lessonNarration ?? {}) : [];
   const handoffMinutes = handoffTracks.length === 6 ? Math.ceil(handoffTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
@@ -578,10 +581,10 @@ export function ReferenceLessons(props: Props) {
             <h2 tabIndex={-1} ref={heading} className={storyLayout ? "reference-story-title" : "text-xl font-semibold"}>
               {en ? item.heading_en : item.heading_fil}
             </h2>
-            {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || handoffRevision || definitionRevision || recordingRevision || lesson.lesson_key === "communication-explain") && item.check && (
+            {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || causesRevision || definitionRevision || handoffRevision || recordingRevision || lesson.lesson_key === "communication-explain") && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
-            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || definitionRevision || prioritizationRevision) && !storyLayout && figures}
+            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision) && !storyLayout && figures}
             {prioritizationTable}
             {practice}
             {revealSummary && <div
@@ -605,7 +608,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !definitionRevision && !prioritizationRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -779,7 +782,13 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {prioritizationRevision ? ui(
+              {causesRevision ? (causesMinutes === null ? ui(
+                "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 50-minutong guided practice. Susukatin pa ang bagong salaysay.",
+                "Allow time for reading and practice; the 50-minute guided practice is separate. New narration duration is pending measurement.",
+              ) : ui(
+                `Tinatayang ${causesMinutes}–${causesMinutes + 3} minuto: salaysay sa wikang ito at 3–6 minutong maikling pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 50-minutong guided practice.`,
+                `Estimated ${causesMinutes}–${causesMinutes + 3} minutes: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 50-minute guided practice is separate.`,
+              )) : prioritizationRevision ? ui(
                 "Maglaan ng oras sa pagbasa at sariling pagsasanay; hiwalay ang 45-minutong guided practice.",
                 "Allow time for reading and independent practice; the 45-minute guided practice is separate.",
               ) : definitionRevision ? (definitionMinutes === null ? ui(

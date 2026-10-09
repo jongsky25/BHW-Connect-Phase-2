@@ -1,3 +1,4 @@
+import {release172View} from './lesson-172-release-integration.mjs';
 // Verify exact draft successors before supplying immutable historical bytes.
 // This is a preservation view, never release approval.
 import fs from 'node:fs';
@@ -7,6 +8,7 @@ const receipt=JSON.parse(fs.readFileSync('docs/lesson-173-proposal-receipt.json'
 const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/';
 const allowed=new Set(['src/components/elearning/reference-lessons.tsx','scripts/lib/lesson-165-integration.mjs','scripts/tests/lesson-165-integration.test.mjs','scripts/lib/lesson-171-integration.mjs','scripts/tests/lesson-171-release.test.mjs']);
 export function reviewed173(p,actual=fs.readFileSync(p)){
+ actual=release172View(p,'approvedMain',actual);
  const approvalPath='docs/lesson-173-owner-approval.json';
  if(p!==leaf+'lesson.json'||!fs.existsSync(approvalPath))return actual;
  const a=JSON.parse(fs.readFileSync(approvalPath));

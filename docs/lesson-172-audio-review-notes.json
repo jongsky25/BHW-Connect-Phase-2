@@ -1,0 +1,1767 @@
+{
+  "status": "draft",
+  "method": "Actual 12 Read MP3 and two decoded shipped AAC recordings, plus four hash-pinned focused excerpts per recording. All original full/focused responses are retained. Model concerns below are verbatim supporting evidence and require human evaluation.",
+  "actual_full_reviews": 14,
+  "actual_focused_excerpts": 56,
+  "pending_focused_excerpts": [],
+  "speech_direction": "One female Kore narrator is requested. No Carole speech alias is applied. Actual voice and pronunciation require human listening.",
+  "human_listening": "pending",
+  "owner_package_review": "pending",
+  "local_policy_SME_review": "pending",
+  "unresolved_concerns": "Review the full and focused records together. Apparent timbre changes, pronunciation, negation or ending concerns and conflicting assessments remain unresolved until actual human listening. Reusing a speech direction or a new synthesis pass does not clear any reported concerns.",
+  "full_records": [
+    {
+      "id": "read-problem-causes-whys-fil",
+      "language": "fil",
+      "sha256": "fa49f7d65bb8cc7d5bfc33c98921347347f2de794c63be432d5933e637bd3d5c",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, steady instructional pacing with clear pauses between clauses and sentences.",
+        "natural_variation": "Moderate pitch and intonation modulation suitable for an educational module, though exhibiting typical automated/TTS cadence.",
+        "timbre_consistency": "Consistent neutral female voice timbre across the entire recording without sudden shifts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:03 - 00:04",
+          "item": "Carol",
+          "note": "Pronounced with a flat, slightly localized phonology ('Ka-rol'), intelligible in context."
+        },
+        {
+          "timestamp": "00:04 - 00:06",
+          "item": "BHW",
+          "note": "Articulated as individual English letter names ('B-H-W') cleanly without distortion."
+        },
+        {
+          "timestamp": "01:00 - 01:01",
+          "item": "arrow",
+          "note": "English loanword pronounced with slight synthetic inflection ('e-row')."
+        },
+        {
+          "timestamp": "01:16 - 01:18",
+          "item": "naipapadatid",
+          "note": "Articulated distinctly as 'naipapadatid' rather than the standard root 'naipapahatid', sounding slightly mechanical or misread."
+        },
+        {
+          "timestamp": "01:44 - 01:45",
+          "item": "Five Whys",
+          "note": "English concept term pronounced clearly as 'Fayv Ways'."
+        }
+      ],
+      "other_concerns": {
+        "semantic_integrity": "Distinctions between verified facts, reported claims, negations ('hindi pa alam', 'hindi datos', 'huwag ipalagay'), and investigative branches are preserved without altered meaning.",
+        "audio_artifacts": "None detected; no clipped words or abrupt cutoffs at beginning or ending."
+      },
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-whys-en",
+      "language": "en",
+      "sha256": "90ab32335a9d88a1e664922c16af18e6dc143507e29802b429815e74435c2414",
+      "delivery": "The narration maintains a measured, didactic pace suitable for educational guidance. Intonation clearly delineates quoted statements, rhetorical questioning, and instructional categories (e.g., reported, verified, to check). Pitch and pace adjustments naturally support attribution and uncertainty throughout.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-manual-example-fil",
+      "language": "fil",
+      "sha256": "bea0f22d5b8d24ae302ad0d530e05bcdf60519fa115282e2abbc1e17936aa418",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate and clear instructional pacing with appropriate pauses between conceptual units.",
+        "pitch_and_pace_variation": "Natural cadence and inflection suitable for educational narration.",
+        "timbre_consistency": "Consistent narrator tone and vocal timbre throughout the recording.",
+        "nuance_and_contrast": "Negations ('hindi natiyak', 'hindi patunay', 'huwag sisihin', 'hindi ito gabay', 'hindi inaangkin') and distinctions between systemic review and clinical management are communicated with natural emphasis."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-manual-example-en",
+      "language": "en",
+      "sha256": "b618189dce26c486a0cee36e0b6a09195d3ae0d095003f16b12c4535cd7ee861",
+      "delivery": "The narration maintains a calm, deliberate instructional cadence appropriate for educational material. Contrastive stress and rhetorical pauses cleanly delineate negations ('does not prove', 'not diagnosis, medicines, or treatment') and distinctions between reported and verified causes. Pacing and pitch inflections sound natural and steady throughout with no jarring shifts in narrator timbre.",
+      "clipped_ending": false,
+      "pronunciation_concerns": null,
+      "other_concerns": null,
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-rosario-fil",
+      "language": "fil",
+      "sha256": "9800d03357b571291ca4aafef225ca24171e9a954b224fc934ba545c101aa377",
+      "delivery": {
+        "pacing": "Deliberate, steady, and didactic with clean, regular pauses between sentences and clauses suitable for instructional delivery.",
+        "pitch_and_timbre": "Consistent educational narration timbre throughout, with natural pitch inflections denoting list items, warnings, and distinctions.",
+        "communicative_intent": "Clear emphasis on critical instructions, distinctions (e.g., separating the child from the mother/Carol, differentiating the DOH guide from the ZFF workbook), and negations ('Hindi', 'Huwag'). Reported associations ('iniuugnay') are voiced neutrally without unwarranted certainty."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:04 - 00:05",
+          "word_or_phrase": "Zuellig",
+          "observation": "Pronounced phonetically as 'Zulig' (/ˈzuːlɪɡ/), which is standard localized corporate pronunciation in the Philippines."
+        },
+        {
+          "timestamp": "00:47 - 00:48",
+          "word_or_phrase": "bawat arrows",
+          "observation": "Plural English loanword 'arrows' is combined with singular Filipino determiner 'bawat', though pronunciation itself is fluent."
+        },
+        {
+          "timestamp": "01:02 - 01:03",
+          "word_or_phrase": "ZFF",
+          "observation": "Read cleanly as English letter names (/ziː ɛf ɛf/)."
+        },
+        {
+          "timestamp": "01:07 - 01:08",
+          "word_or_phrase": "DOH",
+          "observation": "Read cleanly as English initialism (/diː oʊ eɪtʃ/)."
+        }
+      ],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-rosario-en",
+      "language": "en",
+      "sha256": "2ec5a3c7186d2334b079e4347cd0a6e060dcad737004a79eb5da94fa79734635",
+      "delivery": {
+        "pacing": "Deliberate, clear, and measured with well-defined pauses between instructional statements.",
+        "pitch_and_pace_variation": "Natural educational delivery with appropriate pitch inflection and emphatic stress on key distinctions and corrective guidelines (e.g., contrastive stress on 'not the mother or Carol' and 'application, not a method').",
+        "expressive_elements": "Attributions, negations, cautionary guidance, and contextual relationships are conveyed clearly with steady instructional authority.",
+        "timbre_consistency": "Consistent acoustic environment and vocal timbre throughout the recording."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-verify-branch-fil",
+      "language": "fil",
+      "sha256": "418db1b40fb2797fe2646a9fb9e488154bfedbbb81408b614896c7254c507348",
+      "delivery": "The narration is clear, intelligible, and audible throughout with well-regulated educational pacing. Pauses clearly distinguish instructional headings, direct speech quotes, and logical contrasts between verified documentation (e.g., 'natiyak sa card') and subjective reporting ('sinabi ng residente'). Nuances of uncertainty ('hindi pa alam'), alternative branches, and caution against unwarranted inferences are conveyed with appropriate tone and emphasis.",
+      "clipped_ending": false,
+      "pronunciation_concerns": null,
+      "other_concerns": null,
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-verify-branch-en",
+      "language": "en",
+      "sha256": "42f1b8c1f1d25c3b662c131f17ce0fe0ae8cde1d180bba933292d7a0e7ee5290",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, clear, and well-metered instructional pacing with natural pauses between conceptual units.",
+        "pitch_and_pace_variation": "Natural and appropriate for educational narration, with distinct vocal phrasing for quotes, structured map labels, and analytical guidance.",
+        "expression_of_key_concepts": {
+          "attribution": "Naturally expressed (e.g., 'verified in the card' at 00:46, 'reported by the resident' at 00:50).",
+          "uncertainty_and_verification": "Clear, natural distinction between verified information, reported statements, and open investigative items ('to check' at 00:10 and 00:55, 'honest unknowns' at 01:40).",
+          "corrections_and_unsupported_arrows": "Emphasized naturally with clear contrastive focus (e.g., 00:56–01:01).",
+          "negation_and_conditions": "Accurate and distinct stress on negations ('does not establish' at 00:24, 'no real record' at 00:38, 'does not confirm' at 01:08, 'cannot answer' at 01:19, 'Do not promise' at 01:31)."
+        },
+        "timbre_consistency": "Consistent acoustic quality and voice timbre throughout the recording."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [
+        "The acronym 'BHW' is not present in this audio excerpt.",
+        "The phrase 'fare branch' (01:11–01:13) could be homophonically heard as 'fair branch', though contextually tied to 'costs that day' (01:16)."
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-practice-fil",
+      "language": "fil",
+      "sha256": "1c287ec8e555fb41f8c5fb8b90d96013ddba2fa38ffb221fca9099db983d3d46",
+      "delivery": {
+        "pacing": "Deliberate, instructional, and steady throughout, maintaining clear pauses between procedural steps.",
+        "pitch_and_pace_variation": "Natural educational delivery with appropriate inflection on contrasts (e.g., distinguishing verified facts versus items under investigation, and partner feedback versus facilitator marks).",
+        "timbre": "Consistent, clear studio voiceover quality with no sudden narrator shifts or dropouts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [
+        {
+          "timestamp": "01:08 - 01:16",
+          "description": "At 01:09, the phrasing 'nating tiyak' is used where standard Tagalog often uses 'nating matiyak' or 'nating tiyakin', though the intended meaning ('Sa staff card lamang nating tiyak...') remains understandable in context."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-practice-en",
+      "language": "en",
+      "sha256": "cfd3350b26d156c7b2133090194e1ca95d539af8346025a8bc6d7a8eb85f951c",
+      "delivery": "The delivery is measured, clearly articulated, and paced appropriately for instructional guidelines. Pitch and pauses naturally separate steps, durations, and categorical distinctions (e.g., reported, verified, to check).",
+      "clipped_ending": false,
+      "pronunciation_concerns": null,
+      "other_concerns": null,
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-check-fil",
+      "language": "fil",
+      "sha256": "a8da64b548bfcb7f91492db831e99a221e7e427f990b89fe4dba24df337315b2",
+      "delivery": "Malinaw, kalmado, at angkop ang bilis at intonasyon para sa instruksiyonal/edukasyonal na materyal. Natural ang pagpapahayag ng kondisyon, negasyon (00:36–00:41), at pagtukoy sa kawalang-katiyakan ('hindi patiyak' sa 00:31–00:33). Walang kapansin-pansing pagbabago sa timbre ng boses ng tagapagsalaysay.",
+      "clipped_ending": false,
+      "pronunciation_concerns": null,
+      "other_concerns": null,
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-causes-check-en",
+      "language": "en",
+      "sha256": "17d53b111416a7f8377ad5ff008b9afedc4bd84a97f450d79faf6e13ada4fbf1",
+      "delivery": "Clear, deliberate, instructional pacing with synthetic/TTS cadence. Pauses between instructional clauses are well-timed, and pitch/pace variation remains intelligible and consistent throughout.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "story-fil",
+      "language": "fil",
+      "sha256": "6de3bb06b131431d59628c21981ab054c58a269fff3dee531f245d86ab46106c",
+      "delivery": {
+        "pacing": "Consistent, moderate educational narration pace with clear pauses between short declarative sentences.",
+        "pitch_and_pace_variation": "Demonstrates mild pitch rises and falls suitable for instructional material, typical of high-quality neural synthetic voice narration; lacks deep emotive variation but maintains clear syntactic prosody.",
+        "expressiveness_of_discourse_elements": {
+          "attribution": "Natural and clearly parsed ('ayon sa residente' at 00:36-00:37).",
+          "uncertainty": "Appropriately inflected without ambiguity ('Hindi pa alam kung bakit...' at 00:42-00:45; 'hindi pa tiyak' at 01:00-01:02).",
+          "reported_vs_verified_causes": "Contrasts are verbally distinct ('Hindi patunay ang mga sanhi' at 00:07-00:09; 'may batayan o tapat na hindi pa tiyak' at 00:58-01:02).",
+          "corrections_and_alternatives": "Clear semantic delineation when describing adjustments ('Inalis ni Carol ang maling arrow' at 00:40-00:42; 'Baguhin at ulitin' at 00:53-00:55)."
+        }
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:00 - 00:01",
+          "word": "Carol",
+          "note": "Pronounced in standard anglicized phonology (/ˈkæ.ɹəl/), blending smoothly with Tagalog particles."
+        },
+        {
+          "timestamp": "00:11 - 00:13",
+          "word": "DOH manual",
+          "note": "Initialism 'DOH' is clearly enunciated as individual letters (/diː-oʊ-eɪtʃ/) alongside English loanword 'manual'."
+        },
+        {
+          "timestamp": "00:25 - 00:26",
+          "word": "ZFF case",
+          "note": "'ZFF' is spelled out letter-by-letter (/ziː-ɛf-ɛf/) cleanly."
+        },
+        {
+          "timestamp": "00:41 - 00:42",
+          "word": "arrow",
+          "note": "English loanword 'arrow' is clearly pronounced with English phonology without distorting sentence flow."
+        }
+      ],
+      "other_concerns": {
+        "timbre_changes": "None observed; timbre remains uniform throughout.",
+        "ambiguous_numbers_or_negations": "None detected; numbers ('tatlong', 'isang taon at apat na buwan', 'isang oras', 'dalawa', 'dalawang sangay', 'limang tanong') and negations ('Hindi patunay', 'hindi paggamot', 'huwag sisihin', 'Hindi pa alam', 'Hindi marka') are crisp and unambiguous.",
+        "overall_audio_quality": "High-fidelity, clean educational audio with no background noise or clipping."
+      },
+      "unparsed_response": null
+    },
+    {
+      "id": "story-en",
+      "language": "en",
+      "sha256": "107bd81f378309b358ea8cf49e41a09cb499a91034ea810adaa4be46b541e9a9",
+      "delivery": "The narration maintains a deliberate, well-paced educational delivery with natural Philippine English cadence. Pauses between statements are clean and supportive of instructional comprehension. Contrastive stress, negations ('not yet proven', 'not treatment', 'Do not blame', 'remains unknown', 'not an assessment', 'not proof'), and numbers ('one year and four months', 'one time', 'two', 'Five questions') are clearly articulated without unnatural pitch inflections or mechanical distortion.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    }
+  ],
+  "focused_records": [
+    {
+      "id": "read-check-fil",
+      "source_sha256": "a8da64b548bfcb7f91492db831e99a221e7e427f990b89fe4dba24df337315b2",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 6.78,
+          "excerpt_sha256": "66e73d730d3759e7ed63a863081e903392038e19ddd29fbbe57e3052017c77a7",
+          "observations": {
+            "target_names_pronunciation": {
+              "Carole": "Not spoken in this excerpt.",
+              "Rosario": "Not spoken in this excerpt."
+            },
+            "audible_speech": "Clear standard Tagalog narration. The phrase 'Piliin ang susunod na hakbang' is spoken first, followed by 'Tingnan muna ang larawan ng pag-uusap sa inayos na map.'",
+            "pauses": [
+              {
+                "start": "00:02.15",
+                "end": "00:02.95",
+                "description": "Natural clause boundary pause between the two instructional sentences."
+              }
+            ],
+            "truncation": "None detected. The final word 'map' is fully articulated.",
+            "complete_final_words": true,
+            "narrator_sound_consistency": "Consistent acoustic environment, clear studio-quality female voice, no perceptible shift in timbre, pitch, or background noise."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. Speech is clear and free of ambient noise or masking.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.9,
+          "end": 6.78,
+          "excerpt_sha256": "b8dadb16e29a35debd4d10bf2c2474567163fe1315cc5885db06a6e1e5b0ba0a",
+          "observations": {
+            "timestamps": {
+              "start": "00:00.00",
+              "end": "00:03.45"
+            },
+            "speech_segments": [
+              {
+                "text": "Tingnan muna ang larawan",
+                "start": "00:00.00",
+                "end": "00:01.38"
+              },
+              {
+                "text": "ng pag-uusap",
+                "start": "00:01.38",
+                "end": "00:02.20"
+              },
+              {
+                "text": "sa inayos na map.",
+                "start": "00:02.25",
+                "end": "00:03.25"
+              }
+            ],
+            "target_pronunciations": {
+              "Carole": "Not present in this excerpt.",
+              "Rosario": "Not present in this excerpt."
+            },
+            "pauses": "Brief, natural phrasal pause around 00:02.20 before 'sa inayos na map'.",
+            "truncation": "None detected; final word 'map' is fully spoken.",
+            "narrator_consistency": "Consistent female educational narrator voice across the entire excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "Minimal; orthographic variation between 'ng' and 'nang' (standard grammar uses 'ng' connecting 'larawan' and 'pag-uusap').",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 27.66,
+          "end": 42.08,
+          "excerpt_sha256": "a73eda43aa05d22ad57c884b9e078c4d7be21683c23c190160648bdf7dcde809",
+          "observations": {
+            "narrator_change": "There is a distinct change in narrator: a male voice speaks from 00:00.00 to approximately 00:08.00, followed by a female voice from 00:09.00 to 00:14.30.",
+            "names_assessed": {
+              "Carole": "Not present/spoken in this audio excerpt.",
+              "Rosario": "Not present/spoken in this audio excerpt."
+            },
+            "pauses": [
+              {
+                "start": "00:07.95",
+                "end": "00:08.95",
+                "description": "Clear pause/silence between the conclusion of the first speaker and the beginning of the second speaker."
+              },
+              {
+                "start": "00:10.50",
+                "end": "00:10.85",
+                "description": "Brief natural pause following 'diagnosis'."
+              },
+              {
+                "start": "00:11.60",
+                "end": "00:11.90",
+                "description": "Brief natural pause following 'appointment'."
+              }
+            ],
+            "word_completion_and_truncation": "All spoken words, including the final words of each speaker ('pagbeberipika' at ~00:07.90 and 'gagawin' at ~00:14.20), are articulated fully without cutoff or truncation."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is clean, clear, and fully intelligible across both narrators.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 42.38,
+          "end": 59.87266666666667,
+          "excerpt_sha256": "2e427306907efc426809efd8fac0eba16732650369b7169f3d21db4e76d1b92e",
+          "observations": {
+            "carole_and_rosario": "Neither 'Carole' nor 'Rosario' is spoken or referenced in this excerpt.",
+            "audible_speech": "The audio features a clear, articulate female voice speaking Filipino with English loanwords ('check', 'map', '5 Whys') in an instructional/educational cadence.",
+            "pauses": "Natural pauses occur after 'pagninilay' (~00:01.8 - 00:02.3) and between sentences around 00:09.3 to 00:10.1.",
+            "truncation_and_word_completions": "No word truncations detected; all word-final sounds (e.g., 'pagninilay', 'kasanayan', 'iba', 'sanhi') are cleanly finished.",
+            "narrator_sound": "Voice tone, microphone distance, and ambient acoustics remain consistent throughout the excerpt without noticeable shifts or distortion."
+          },
+          "possible_defects": [],
+          "uncertainty": "The token transcribed as 'map' (00:04.1–00:04.7) is clearly articulated as such phonetically, but could refer to an acronym (e.g., MAP) or the loanword 'map' depending on specific curriculum context.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-manual-example-fil",
+      "source_sha256": "bea0f22d5b8d24ae302ad0d530e05bcdf60519fa115282e2abbc1e17936aa418",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 11.38,
+          "excerpt_sha256": "ec7fe0418e68f22d1f1d319e4112ac9560c98bd540ea7cafacd0b6052a7ce6f4",
+          "observations": {
+            "speaker_changes": [
+              {
+                "timestamp": "00:00.00 - 00:02.50",
+                "voice": "Male narrator",
+                "content": "Ang halimbawa ng batang nagtatae"
+              },
+              {
+                "timestamp": "00:02.80 - 00:07.80",
+                "voice": "Female narrator",
+                "content": "Sa DOH reference manual, sinusundan ng mga bakit"
+              },
+              {
+                "timestamp": "00:07.80 - 00:11.30",
+                "voice": "Male narrator",
+                "content": "ang halimbawa ng batang namatay na may pagtatae."
+              }
+            ],
+            "pronunciation_names": {
+              "Carole": "Not present in the excerpt.",
+              "Rosario": "Not present in the excerpt."
+            },
+            "pauses_and_flow": "Audible pauses occur between speaker transitions (around 00:02.50 to 00:02.80) and a notable hesitation/emphasis pause by the female speaker before the word 'bakit' (~00:06.80 - 00:07.00).",
+            "truncation_and_final_words": "All final words are fully articulated without clipping or mid-syllable cutoff."
+          },
+          "possible_defects": [
+            "Abrupt speaker/voice transitions between the male and female narration lines, suggesting spliced segments."
+          ],
+          "uncertainty": "Low; all spoken words are clear and intelligible Tagalog.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.9,
+          "end": 11.38,
+          "excerpt_sha256": "c739fd7f5049e41a26e956492ed1eb3604407fa2cbd35d6a25697b43bd9b9fe6",
+          "observations": {
+            "pronunciation_names": {
+              "Carole": "Not present in the excerpt.",
+              "Rosario": "Not present in the excerpt."
+            },
+            "audible_speech": "Clear female voice speaking in Filipino/Tagalog with English technical terms ('reference manual').",
+            "pauses": [
+              {
+                "start": "00:01.8",
+                "end": "00:02.3",
+                "description": "Short pause after 'reference manual'."
+              },
+              {
+                "start": "00:03.7",
+                "end": "00:04.0",
+                "description": "Brief hesitation/pause before emphasizing 'bakit'."
+              }
+            ],
+            "truncation": "None observed.",
+            "complete_final_words": true,
+            "narrator_sound_change": "No shift in recording quality, voice timbre, or acoustics; 'bakit' is emphasized with a slightly detached cadence, likely indicating a quoted question word."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 30.28,
+          "end": 45.7,
+          "excerpt_sha256": "4dd10d6bb03b268e3190ef74ad060f2e3082bae8ec3a689a8bd6b0cba5283434",
+          "observations": {
+            "spoken_names": {
+              "Carole": "Not present in the excerpt.",
+              "Rosario": "Not present in the excerpt."
+            },
+            "speech_quality": "Clear, deliberate, instructional pacing with standard Filipino pronunciation, including the English loanword 'access'.",
+            "pauses": [
+              {
+                "start": "00:02.1",
+                "end": "00:02.8",
+                "description": "Pause between the introductory clause and the continuation."
+              },
+              {
+                "start": "00:05.5",
+                "end": "00:06.5",
+                "description": "Sentence boundary pause."
+              },
+              {
+                "start": "00:09.0",
+                "end": "00:09.5",
+                "description": "List item pause."
+              },
+              {
+                "start": "00:10.2",
+                "end": "00:10.5",
+                "description": "List item pause."
+              },
+              {
+                "start": "00:11.8",
+                "end": "00:12.1",
+                "description": "List item pause."
+              },
+              {
+                "start": "00:13.3",
+                "end": "00:13.5",
+                "description": "List item pause."
+              }
+            ],
+            "truncation": "None observed; all initial and final sounds are fully articulated.",
+            "narrator_sound": "Consistent female speaker voice, uniform acoustic environment with no noticeable shifts in tone, volume, or background noise."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear and intelligible throughout.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 81.78,
+          "end": 98.29879166666667,
+          "excerpt_sha256": "de510752be24ddd5f023e3aae7f5613a0c3ab087ab56454751d8d30dd11a5046",
+          "observations": {
+            "speech_segments": [
+              {
+                "start_time": "00:00.00",
+                "end_time": "00:08.30",
+                "text": "Hindi inaangkin ng aralin na training ang sanhi ng bawat pagkamatay o na may aprobadong lokal na solusyon."
+              },
+              {
+                "start_time": "00:09.10",
+                "end_time": "00:16.50",
+                "text": "Ang worked example ay paraan ng pagsusuri. Ang totoong prayoridad ay manggagaling sa lokal na ebidensya."
+              }
+            ],
+            "narrator_change": "There is a noticeable change in narrator voice at 00:08.30–00:09.10. The first segment (00:00.00–00:08.30) is spoken by a deeper, slightly robotic/synthesized voice, whereas the second segment (00:09.10–00:16.50) shifts to a distinctly different, higher-pitched, natural-sounding female voice.",
+            "names_evaluated": {
+              "Carole": "Not mentioned or audible in the excerpt.",
+              "Rosario": "Not mentioned or audible in the excerpt."
+            },
+            "pauses": [
+              "00:05.10 - 00:05.60: Mid-sentence pause between 'pagkamatay' and 'o'.",
+              "00:08.30 - 00:09.10: Intersentence pause and transition between narrators.",
+              "00:12.10 - 00:12.60: Sentence boundary pause between 'pagsusuri' and 'Ang'."
+            ],
+            "truncation_and_word_completion": "All spoken words, including phrase and sentence endings ('solusyon', 'pagsusuri', 'ebidensya'), are fully articulated with no clipping or truncation observed."
+          },
+          "possible_defects": [
+            "Voice inconsistency: A sudden change in narrator voice profile occurs between the first and second sentences (around 00:08.30–00:09.10).",
+            "Target names absence: Neither 'Carole' nor 'Rosario' is present in this portion of the audio."
+          ],
+          "uncertainty": "Low; audio fidelity and speech intelligibility are clear throughout the clip.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-practice-fil",
+      "source_sha256": "1c287ec8e555fb41f8c5fb8b90d96013ddba2fa38ffb221fca9099db983d3d46",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.82,
+          "excerpt_sha256": "f54e137cc7cef60f67b3ecd130099b4aeb715294da393bfec46c01299ff8d31c",
+          "observations": {
+            "speech_characteristics": "Clear, deliberate fictional educational narration by a female speaker in Tagalog.",
+            "names_mentioned": {
+              "Carole": "Not present in this excerpt.",
+              "Rosario": "Not present in this excerpt."
+            },
+            "pauses": "Natural instructional pause between the two sentences around 00:02.4 to 00:03.5.",
+            "truncation": "None observed; words are articulated fully.",
+            "final_words": "The final word 'papel' is spoken completely without cutoff.",
+            "narrator_sound_change": "Consistent acoustic quality, tone, and microphone profile throughout the clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; all audible words are distinctly spoken and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.5,
+          "end": 7.82,
+          "excerpt_sha256": "fed0f7dfb95fa26122412e89f75295afe19f39be490b312f28e96bce658bbceb",
+          "observations": {
+            "carole_and_rosario_pronunciation": "Neither name ('Carole' nor 'Rosario') appears in this audio excerpt.",
+            "audible_speech": "Clear standard Filipino narration reciting 'Ilagay ang hindi pagpunta sa gitna ng papel.'",
+            "pauses": "Brief natural conversational pause between 'pagpunta' (~00:02.5) and 'sa gitna' (~00:02.6).",
+            "truncation": "No truncation detected; onset of 'Ilagay' and ending of 'papel' are intact.",
+            "complete_final_words": "The final word 'papel' is fully articulated with clear closure.",
+            "narrator_sound_changes": "Narrator voice, tone, pitch, acoustic space, and recording quality remain consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 3.5,
+          "end": 18.96,
+          "excerpt_sha256": "3107e71b230fed6506b24d5a41776b976657ca421773721f4398ca5fb9a7ddf1",
+          "observations": {
+            "speaker": "Single female narrator delivering instructional text clearly and steadily.",
+            "pronunciation_names": {
+              "Carole": "Not mentioned in this excerpt.",
+              "Rosario": "Not mentioned in this excerpt."
+            },
+            "pauses": [
+              {
+                "timestamp": "00:03.8 - 00:05.1",
+                "description": "Natural pause between the first and second instructional sentences."
+              },
+              {
+                "timestamp": "00:10.1 - 00:11.2",
+                "description": "Natural pause before reading the options/examples."
+              }
+            ],
+            "truncation": "None observed; words are articulated fully.",
+            "final_word_completion": "The final word 'pamasahe' is pronounced completely without cutoff.",
+            "narrator_sound_change": "Consistent acoustic environment, volume, pace, and vocal timbre throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear and distinct.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 108.56,
+          "end": 124.13391666666666,
+          "excerpt_sha256": "6173ff15fdabc54fccda2cfc938915e54e56db5f0306bbc53baf13836d0c00f6",
+          "observations": {
+            "carole_and_rosario_pronunciation": "Neither 'Carole' nor 'Rosario' appears or is spoken in this audio excerpt.",
+            "audible_speech": "The audio contains clear, fluent Filipino speech spoken by a female voice with standard Tagalog phonology and English loan pronunciation ('Five Whys' pronounced /faɪv waɪz/, 'check' pronounced /tʃɛk/).",
+            "pauses": [
+              {
+                "start": "00:03.40",
+                "end": "00:03.85",
+                "description": "Natural pause between clauses after 'pagkakataon'."
+              },
+              {
+                "start": "00:07.20",
+                "end": "00:07.80",
+                "description": "Sentence boundary pause after 'check'."
+              },
+              {
+                "start": "00:11.80",
+                "end": "00:12.10",
+                "description": "Sentence boundary pause after 'iba'."
+              }
+            ],
+            "truncation_and_word_completion": "All words are fully articulated; the final word 'sanhi' at approximately 00:14.60–00:15.10 concludes naturally with no cut-off.",
+            "narrator_sound_changes": "Narrator tone, pacing, pitch, and acoustic environment remain uniform and steady throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. Speech is clear, intelligible, and without noticeable background noise or compression artifacts.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-rosario-fil",
+      "source_sha256": "9800d03357b571291ca4aafef225ca24171e9a954b224fc934ba545c101aa377",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.06,
+          "excerpt_sha256": "175a01097a84d55a5c35e63b3b35da1218aa4a0085e89bae11828fb33c327b9a",
+          "observations": {
+            "Carole_pronunciation": "The name 'Carole' is not spoken in this excerpt.",
+            "Rosario_pronunciation": "Pronounced clearly and naturally according to standard Tagalog phonology at 00:00–00:01 and 00:06–00:07.",
+            "audible_speech": "Speech is fully audible, clean, and delivered in an educational narrative voice.",
+            "pauses": "Natural sentence/clause pauses occur at approximately 00:02.1–00:02.8 and 00:05.5–00:06.1.",
+            "truncation": "None observed; onset and offset are clean.",
+            "complete_final_words": "The final word 'buwan' is spoken completely without cutoff.",
+            "narrator_sound_changes": "Narrator voice, acoustic environment, and recording quality remain consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.94,
+          "end": 10.06,
+          "excerpt_sha256": "a76ce612a9dc5a5ac619e9042d968bc0f58d75b485e44ed1bc9395685395ebc9",
+          "observations": {
+            "audible_speech": "The narration is clear, articulate, and spoken in standard Filipino/Tagalog with natural prosody suitable for educational material.",
+            "pronunciation_rosario": "Pronounced clearly as 'Rosario' ([roˈsa.ɾjo]) starting at approximately 00:03.38.",
+            "pronunciation_carole": "The name 'Carole' does not occur in this audio excerpt.",
+            "pauses": "A natural phrasal pause occurs between 'Foundation' (~00:02.95) and 'si Rosario' (~00:03.38).",
+            "truncation": "No audible truncation at the start or end of the excerpt.",
+            "complete_final_words": "The final phrase 'apat na buwan' concludes naturally and completely with full decay (~00:06.65).",
+            "narrator_sound_changes": "Narrator tone, pitch, acoustic space, and recording quality remain consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is fully intelligible and clean.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 10.36,
+          "end": 28.94,
+          "excerpt_sha256": "bedeb78e845954ff47126e7e91e1aace26f1751558671304c148e3584581cb31",
+          "observations": {
+            "pronunciation_carole": "Pronounced clearly as 'Carol' ([ˈka.ɾol]) at approximately 00:02.5.",
+            "pronunciation_rosario": "The name 'Rosario' is not present in this audio segment.",
+            "audible_speech": "Speech is fully audible, clearly articulated, and paced evenly throughout.",
+            "pauses": "Appropriate, natural grammatical pauses occur between list elements and clause boundaries (e.g., after 'ina', 'Carol', 'pagtatae', 'dehydration', 'kapaligiran', 'kita', 'impormasyon').",
+            "truncation_and_final_words": "There is no truncation; all final syllables and words, including 'serbisyo' at 00:18, are fully realized with complete closure.",
+            "narrator_sound": "Voice characteristics, timbre, recording level, and acoustic environment remain stable and uniform across the recording."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is clean and intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 77.4,
+          "end": 92.4735,
+          "excerpt_sha256": "5aa23e22a5190d3daad2570844c3cf383a1e2bcc8c58466c8d42e5d0c93289b6",
+          "observations": {
+            "carole_and_rosario_pronunciation": "Neither the name 'Carole' nor 'Rosario' appears in this audio excerpt.",
+            "audible_speech": "Clear, measured female narration in Filipino (Tagalog) with standard, didactic cadence and proper articulation.",
+            "pauses": "Pacing is deliberate with natural pauses between sentences and list items (notably around 00:05.2–00:06.0, 00:08.0–00:08.6, and brief pauses between list items like 'tubig', 'kita', 'impormasyon').",
+            "truncation": "No truncation detected at the beginning or end of the clip.",
+            "complete_final_words": "The final word 'magkakaugnay' is fully pronounced and clearly resolved.",
+            "change_in_narrator_sound": "No audible shifts in narrator timbre, pitch, microphone distance, or acoustic space."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear, clean, and unambiguous throughout the excerpt.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-verify-branch-fil",
+      "source_sha256": "418db1b40fb2797fe2646a9fb9e488154bfedbbb81408b614896c7254c507348",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.82,
+          "excerpt_sha256": "c37e70a5c953e19c421f3970d2e4d0982c508cad0d31bbeb921535f422b66daf",
+          "observations": {
+            "speaker_change": "The audio transitions between two distinct voices: an adult female voice from 00:00 to 00:03, followed by a younger/child voice from 00:04 to 00:10.",
+            "pronunciation": {
+              "Carol": "Pronounced clearly as 'Carol' around 00:04.5 - 00:05.3.",
+              "Rosario": "The name 'Rosario' is not spoken in this excerpt."
+            },
+            "pauses": "There is a notable pause between the two speakers from approximately 00:03.0 to 00:04.0, as well as natural phrasing pauses at 00:05.4 and 00:08.5.",
+            "speech_clarity": "Audible speech is clear, words are articulated fully without mid-word truncation, and the final word 'nakapunta' concludes completely."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.78,
+          "end": 10.82,
+          "excerpt_sha256": "cc40281468d51c0f603bcccb60cc83758f6e5c90685254b92234d39aa8bbee37",
+          "observations": {
+            "pronunciation": {
+              "Carol": "Pronounced clearly as /ˈka.ɾol/ or /ˈkæ.ɹəl/ around 00:01.0 - 00:01.6.",
+              "Rosario": "Not mentioned/absent in this excerpt."
+            },
+            "pauses": [
+              {
+                "start": "00:01.6",
+                "end": "00:02.0",
+                "description": "Brief pause after 'Carol'"
+              },
+              {
+                "start": "00:05.0",
+                "end": "00:05.4",
+                "description": "Natural clause pause between 'inialok' and 'hindi nakapunta'"
+              }
+            ],
+            "truncation_and_completeness": {
+              "is_truncated": false,
+              "final_word": "'nakapunta' is fully articulated and not truncated at the end."
+            },
+            "narrator_sound": "Consistent female speaker voice, studio quality, steady pacing, natural intonation, and no sudden shifts in acoustics or microphone tone."
+          },
+          "possible_defects": [],
+          "uncertainty": "Slight ambiguity on 'map' (around 00:00.8 - 00:01.1), which phonetically surfaces as 'map' (/map/) with bilabial closure, though contextually 'meet' or 'meet-up' might be expected in narrative context.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 3.78,
+          "end": 13,
+          "excerpt_sha256": "41a483e571f007ff07de0d315098a8816f06958485a4c81e7cc6de4a8ace13dc",
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as 'Carol' (/ˈkæ.rəl/ or /ˈka.rol/) at 00:01.",
+            "rosario_pronunciation": "The name 'Rosario' does not occur in this audio excerpt.",
+            "audible_speech": "Speech is fully intelligible throughout.",
+            "pauses": [
+              {
+                "start": "00:01.8",
+                "end": "00:02.3",
+                "description": "Short pause between clauses"
+              },
+              {
+                "start": "00:04.8",
+                "end": "00:05.1",
+                "description": "Brief pause before 'hindi nakapunta'"
+              },
+              {
+                "start": "00:06.4",
+                "end": "00:07.4",
+                "description": "Distinct pause between sentences"
+              }
+            ],
+            "truncation": "None detected; final syllable of 'ito' decays naturally.",
+            "complete_final_words": true,
+            "narrator_sound_changes": "Narrator voice timbre and recording environment remain consistent throughout, with a slightly lower pitch and declarative cadence on the concluding sentence 'Susuriin pa ito.'"
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all words and phonetic boundaries are distinct.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 99.78,
+          "end": 118.36083333333333,
+          "excerpt_sha256": "b1946b1b672df9ddce6bdcb2dfa6b92f08df75bf54f32df0487eff2e1f88749e",
+          "observations": {
+            "pronunciation_names": "The names 'Carole' and 'Rosario' do not occur in this excerpt.",
+            "audible_speech": "Speech is clearly delivered in Filipino with consistent volume and clear articulation throughout.",
+            "pauses": "Natural pacing with audible pauses between clauses: approx. [00:02.50 - 00:02.90], [00:05.50 - 00:06.00], [00:07.75 - 00:08.20], [00:11.45 - 00:12.05], and [00:14.85 - 00:15.25].",
+            "truncation_and_final_words": "No speech truncation detected; sentence-final and phrase-final words ('lihim', 'serbisyo', 'alam') are fully articulated without clipping.",
+            "narrator_sound": "Single narrator speaking in a calm educational tone; no audible shifts in timbre, acoustic space, or audio processing."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words are distinct and intelligible.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-whys-fil",
+      "source_sha256": "fa49f7d65bb8cc7d5bfc33c98921347347f2de794c63be432d5933e637bd3d5c",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 13.3,
+          "excerpt_sha256": "37906e1501bd2e7e398a2385bdce06a9dbe029e598c7d7b2784ba07e020c715e",
+          "observations": {
+            "speaker_change": "The recording begins with a female voice speaking the introductory heading 'Bawat bakit, may batayan' (00:00 - 00:02), followed by a brief pause and a transition to a male narrator starting at 00:03 ('Si Carol...').",
+            "name_pronunciation": {
+              "Carol": "Pronounced clearly at 00:03 - 00:04 as [ˈka.rol] with standard Filipino phonology.",
+              "Rosario": "Not mentioned or audible in this segment."
+            },
+            "acronym": "BHW is pronounced as English initialism 'B-H-W' ([bi.eytʃ.dʌbəl.ju]) at 00:04 - 00:05.",
+            "negation": "The negation 'hindi' is clearly audible and articulated at 00:09 - 00:10 in 'hindi pagpunta'.",
+            "pauses_and_pacing": "Clear pause between the title and narrative text (00:02 - 00:03). Cadence is measured, typical of educational instruction.",
+            "speech_integrity": "No truncation detected; final word 'pagbisita' is fully articulated and resolves naturally without clipping."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. Speech and words are clear and distinct throughout the excerpt.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.1,
+          "end": 13.3,
+          "excerpt_sha256": "015036035a9e858894379cf3941c72bd3e85a4d20dd8ccf2d7cd3b3671950538",
+          "observations": {
+            "timestamps": {
+              "start": "00:00.00",
+              "si_carol": "00:00.00 - 00:00.90",
+              "isang_bhw_sa_kathang_isip_na_pagsasanay": "00:01.00 - 00:04.60",
+              "ay_nagtatanong_tungkol_sa_hindi_pagpunta_ng_tatlong_pamilya": "00:04.80 - 00:08.50",
+              "sa_nakatakdang_pagbisita": "00:08.60 - 00:10.20",
+              "end": "00:10.20"
+            },
+            "pronunciation": {
+              "carol": "Pronounced clearly as /ˈkæ.rəl/ (or Filipino approximation 'Ka-rol') with an audible initial /k/ and clear lateral approximant /l/.",
+              "rosario": "The name 'Rosario' is not spoken in this excerpt."
+            },
+            "pauses_and_pacing": "Audible short pauses occur between clauses (after 'Carol', 'pagsasanay', and 'pamilya'), typical of measured educational/instructional speech.",
+            "truncation_and_completeness": "The final word 'pagbisita' is fully articulated and not truncated; the sentence reaches a natural grammatical and acoustic conclusion.",
+            "narrator_sound": "Consistent, clean synthesized/TTS audio quality with steady pitch, clear diction, and no sudden shifts in tone, volume, or background acoustics."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully intelligible with minimal background noise.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 3.1,
+          "end": 17.44,
+          "excerpt_sha256": "2dc46887d6c5598fc2d37d0ae2c230181cc5105f23596e4b2677d161a177e9c3",
+          "observations": {
+            "pronunciation_carole": "Pronounced clearly as 'Carol' (/ˈkæ.rəl/ or /ˈka.rol/) at 00:00 - 00:01.",
+            "pronunciation_rosario": "The name 'Rosario' is not present in this excerpt.",
+            "speech_and_delivery": "Clear, fluent, standard Tagalog narration delivered in an educational/instructive tone.",
+            "pauses": "Natural syntactical pause between sentences around 00:09.5 - 00:10.4.",
+            "truncation_and_final_words": "The final word 'pamilya' is spoken completely and cleanly without clipping.",
+            "narrator_consistency": "Consistent female narrator throughout; no abrupt shifts in tone, acoustic environment, or recording quality."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words and boundaries are clear and intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 95.28,
+          "end": 112.19595833333334,
+          "excerpt_sha256": "0c849f7c48a82cfac0523aba3ebb61abd7c0ee14e25bf78d54e20dcf6d9c3da4",
+          "observations": {
+            "timestamps": {
+              "male_narrator_start": "00:00.00",
+              "male_narrator_end": "00:07.45",
+              "inter_narrator_pause": "00:07.45 - 00:08.25",
+              "female_narrator_start": "00:08.25",
+              "female_narrator_end": "00:16.40"
+            },
+            "narrator_change": "There is a noticeable shift in narrator voice and acoustic profile around 00:07.5 - 00:08.2, transitioning from an adult male speaker to an adult female speaker.",
+            "pronunciation_names": {
+              "Carole": "Not present/spoken in this audio excerpt.",
+              "Rosario": "Not present/spoken in this audio excerpt."
+            },
+            "audible_speech_and_delivery": "Speech is clear, steady, and educational in cadence across both speakers. Final words are fully pronounced without truncation.",
+            "pauses": "Natural pause observed between sentences at ~00:05.00 and between the two speakers at 00:07.45 - 00:08.25."
+          },
+          "possible_defects": [
+            "Voice inconsistency across sentences due to splicing/change between male and female narrators at ~00:08."
+          ],
+          "uncertainty": "None; speech is clear and intelligible.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-fil",
+      "source_sha256": "54c1fffffd4767d87f4f19f6925cd412fa2201fdc097222ab87383b4cbee0df5",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 23.66,
+          "excerpt_sha256": "58c21d2dc316eb507f561e7fe2cd714bad323a8e6d3cca8c20512294a0062cf7",
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as English/anglicized 'Carol' [ˈkæ.ɹəl] or Tagalog-adapted 'Karol'.",
+            "rosario_pronunciation": "The name 'Rosario' is not spoken or present in this excerpt.",
+            "narrator_sound": "Consistent, clean narrator voice throughout with no noticeable shift in tone, pitch, acoustic space, or recording conditions.",
+            "pauses_and_flow": "Natural pacing with brief pauses between sentences/clauses (e.g., around 0:03.5–0:04.0, 0:06.8–0:07.4, 0:09.8–0:10.5, 0:16.8–0:17.3, and 0:19.8–0:20.3).",
+            "truncation_and_final_words": "No audible truncation; the final word 'pagkamatay' is completed cleanly before the audio finishes around 0:23.5."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully intelligible with clear articulation.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 9.8,
+          "excerpt_sha256": "25ef5d1507391ba8e988c88fb17b0da2c211aa81753101cc032fe262ddbc359d",
+          "observations": {
+            "pronunciation": {
+              "Carole": "Pronounced clearly as 'Carol' ([ˈkæ.ɹəl] / [ˈka.rol]) at 00:00.05–00:00.58.",
+              "Rosario": "The name 'Rosario' does not appear in this audio segment."
+            },
+            "audible_speech": "The narration is clear, intelligible, and delivered in a steady cadence.",
+            "pauses": [
+              {
+                "start": "00:03.52",
+                "end": "00:03.80",
+                "description": "Short pause between sentences."
+              },
+              {
+                "start": "00:06.95",
+                "end": "00:07.25",
+                "description": "Short comma pause before 'hindi papatunay'."
+              }
+            ],
+            "truncation": "No clipping or truncation observed at speech onset or offset.",
+            "complete_final_words": "Sentence-final words ('pamilya' at 00:02.90–00:03.45, 'pamasahe' at 00:06.18–00:06.95, and 'sanhi' at 00:08.95–00:09.50) are fully pronounced without trailing cutoff.",
+            "narrator_sound_consistency": "Narrator voice profile, timbre, and acoustic environment remain uniform throughout the segment."
+          },
+          "possible_defects": [],
+          "uncertainty": "Slight ambiguity on whether 'papatunay' (00:07.50–00:08.20) was intended as 'pampatunay' or 'nagpapatunay' in the underlying written lesson text, but phonetically it is pronounced distinctly as 'papatunay'.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 23.66,
+          "excerpt_sha256": "58c21d2dc316eb507f561e7fe2cd714bad323a8e6d3cca8c20512294a0062cf7",
+          "observations": {
+            "carole_pronunciation": "Pronounced anglicized as 'Carol' ([ˈkæ.ɹəl] / [ˈka.ɾol]) at approximately 00:00.2 - 00:00.7.",
+            "rosario_pronunciation": "The name 'Rosario' is not spoken in this audio excerpt.",
+            "audible_speech_and_pauses": "Speech is clearly enunciated throughout with noticeable pauses between distinct thought groups (e.g., between 00:03.4 and 00:03.8, 00:06.8 and 00:07.3, 00:09.6 and 00:10.5, 00:12.7 and 00:13.1, 00:16.8 and 00:17.3, and 00:19.8 and 00:20.1).",
+            "truncation_and_word_completion": "No truncation detected; all phrase-ending words (e.g., 'pamilya', 'pamasahe', 'sanhi', 'manual', 'training', 'sistema', 'pagkamatay') are fully and cleanly articulated.",
+            "narrator_sound": "The narrator exhibits a steady synthetic/TTS voice profile with consistent pitch, cadence, and acoustic quality across the entire duration."
+          },
+          "possible_defects": [
+            "Slightly mechanical/synthetic prosodic pacing typical of text-to-speech rendering, particularly on English loanwords ('child care', 'manual', 'training')."
+          ],
+          "uncertainty": "Low. The speech is clean, clear, and unmasked by background noise.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 45.44,
+          "end": 70.05866666666667,
+          "excerpt_sha256": "4eb5fbbef6d0e39f5ada7a4fb7fcc68ad3b15b579e11467169093e9a8b5581a5",
+          "observations": {
+            "narrator": "Single female narrator speaking in a standard Filipino/Tagalog educational/instructional tone, likely synthetic (TTS) or cleanly recorded studio voice with consistent timbre and pacing throughout.",
+            "names_assessed": {
+              "Carole": "Not present in the audio.",
+              "Rosario": "Not present in the audio."
+            },
+            "speech_and_delivery": "Speech is clear, fully enunciated, and intelligible. Natural metric pauses occur between separate imperative sentences and bullet-point-like statements.",
+            "truncation_and_word_endings": "No words are truncated; final syllables and consonants are fully realized (e.g., 'feedback', 'staff', 'tanong')."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-check-en",
+      "source_sha256": "17d53b111416a7f8377ad5ff008b9afedc4bd84a97f450d79faf6e13ada4fbf1",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.78,
+          "excerpt_sha256": "2d5bf79f9b32f5d3896abfed3904ba30918a10b137e4fa5ff7c9404aad1c2908",
+          "observations": {
+            "audible_speech": "Speech is clear and fully intelligible throughout the excerpt.",
+            "pronunciation_names": "The names 'Carole' and 'Rosario' are not spoken in this excerpt.",
+            "narrator_change": "There is a distinct change in narrator: a female speaker delivers 'Choose the next step.' (00:00.0–00:01.6), followed by a male speaker delivering 'First, look at the illustration of the discussion around the corrected map.' (00:02.8–00:07.2).",
+            "pauses": "There is a noticeable pause of approximately 1.2 seconds between 00:01.6 and 00:02.8 coinciding with the change in speaker.",
+            "truncation": "No truncation detected; initial and final consonants are preserved.",
+            "complete_final_words": "The final word 'map' concludes fully and naturally at around 00:07.2 without clipping."
+          },
+          "possible_defects": [
+            "Voice inconsistency / unexpected speaker switch between sentences (female voice switches to male voice at 00:02.8)."
+          ],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.5,
+          "end": 7.78,
+          "excerpt_sha256": "3f4dbe82421ba23233157abb258de2ed4929a8f60687d07f1aaa4ee258dfdc26",
+          "observations": {
+            "pronunciation_names": "Neither 'Carole' nor 'Rosario' occurs in this excerpt.",
+            "speech_delivery": "Clear, instructional narration with standard Philippine English phonology and steady pacing.",
+            "pauses": "Natural brief pauses occur after 'First' (approx. 00:00.5) and between major phrasal boundaries.",
+            "truncation": "No truncation detected; the final word 'map' concludes completely with audible closure.",
+            "narrator_sound": "Consistent vocal tone, mic proximity, and room acoustics throughout the clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; audio is clear and fully intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 33.96,
+          "end": 48.34,
+          "excerpt_sha256": "3857ffb26fb257ca1030c0e3c00e1f2083c54a67ad4f52212b3d510736aa7f2c",
+          "observations": {
+            "carole_and_rosario_pronunciation": "Neither the name 'Carole' nor 'Rosario' occurs in this audio excerpt.",
+            "audible_speech": "Speech is clear, fully audible, delivered in a steady educational narration style.",
+            "pauses": "Natural syntactic pauses occur between phrases: after 'diagnosis' (~00:02.1), 'appointment' (~00:03.5), 'promise' (~00:05.5), 'reflection' (~00:08.0), and 'map' (~00:10.5).",
+            "truncation": "None observed. Both initial and final consonant sounds are intact.",
+            "complete_final_words": "All final words, including 'promise', 'reflection', and 'evidence', are articulated fully without truncation.",
+            "narrator_sound_changes": "Narrator voice quality, pitch, volume, and acoustic profile remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech and phrasing are distinct and clean.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 39.82,
+          "end": 55.823708333333336,
+          "excerpt_sha256": "990ccd8f3169022b6ece586fa754e7ec98f37c14a112d7f8008631175478fba7",
+          "observations": {
+            "carole_pronunciation": "Not applicable; the name 'Carole' does not occur in this excerpt.",
+            "rosario_pronunciation": "Not applicable; the name 'Rosario' does not occur in this excerpt.",
+            "audible_speech": "Speech is completely audible, clear, and delivered in a measured instructional/educational tone.",
+            "pauses": "Natural pauses occur between sentences (approx. 00:02.50–00:02.80, 00:08.50–00:09.10, and 00:12.70–00:13.10) as well as slight phrasing pauses between listed items.",
+            "truncation": "No truncation observed; word onsets and codas are clearly articulated.",
+            "complete_final_words": "All final words ('reflection', 'evidence', 'others', 'causes') are fully articulated without clipping.",
+            "narrator_sound_changes": "Narrator tone, timbre, audio quality, and acoustics remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all lexical items and speech boundaries are distinct.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-manual-example-en",
+      "source_sha256": "b618189dce26c486a0cee36e0b6a09195d3ae0d095003f16b12c4535cd7ee861",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.82,
+          "excerpt_sha256": "dc5b09ddbe4b5c3283ed644233b030dce1f2c1dc5f19911af77c2eb8c7df7bc1",
+          "observations": {
+            "carole_and_rosario_pronunciation": "Neither the name 'Carole' nor 'Rosario' is spoken in this audio excerpt.",
+            "audible_speech": "The speaker clearly narrates educational material regarding a DOH reference manual and a root-cause ('Whys') analysis example involving diarrhea.",
+            "pauses": "There is a distinct pause of approximately 0.8 seconds between the introductory phrase ('The manual's diarrhea example') and the following complete sentence.",
+            "truncation": "No truncation is observed at the beginning or end of the excerpt; all speech boundaries are intact.",
+            "complete_final_words": "The final word 'diarrhea' concludes cleanly and naturally without being cut off.",
+            "narrator_sound_changes": "The narrator's voice, pitch, and acoustic environment remain consistent throughout the recording.",
+            "timestamps": {
+              "first_segment": "00:00.00 - 00:02.10",
+              "inter_sentence_pause": "00:02.10 - 00:02.85",
+              "second_segment": "00:02.85 - 00:09.30"
+            }
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words are clear, standard, and clearly intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.06,
+          "end": 9.82,
+          "excerpt_sha256": "d21459ce0310c316a197fe707b69c38377b60ab82e277d5ff5c3008c46f7c695",
+          "observations": {
+            "audible_speech": "The narration is clear and articulate with Philippine English phonetic features (e.g., clear dental stops and vowels).",
+            "carole_and_rosario_pronunciation": "Neither 'Carole' nor 'Rosario' is present in this audio excerpt.",
+            "pauses": "There is a brief pause between 'reference manual' (~00:01.8) and 'follows Wise' (~00:02.2).",
+            "truncation": "No words are truncated at the start or end of the excerpt.",
+            "complete_final_words": "The final word 'diarrhea' concludes cleanly without cut-off.",
+            "narrator_sound_changes": "Narrator tone, acoustic environment, and volume remain consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "The word transcribed as 'Wise' (/waɪz/) could refer to a proper surname ('Wise') or conceptually to 'Whys' (as in the '5 Whys' root-cause analysis technique commonly used in maternal and child death reviews).",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 26.12,
+          "end": 38.78,
+          "excerpt_sha256": "2d48baa54cb9175b59ff06a92d16a1da6f0e61c07a041d0492aea33314c98806",
+          "observations": {
+            "speaker_change": "There is a noticeable change in narrator voice and acoustic profile at approximately 00:04.8. The first sentence ('These are source examples, not verified causes of every death.') is delivered by one speaker/voice profile, while the subsequent text ('Show interacting water...') is spoken by a distinctly different synthetic/narrator voice.",
+            "pronunciation_assessed": {
+              "Carole": "Not present in audio excerpt.",
+              "Rosario": "Not present in audio excerpt."
+            },
+            "pauses": "Natural pauses occur between list items: between 'death' and 'Show' (approx. 00:04.3 - 00:04.8), 'water' and 'income' (00:06.6 - 00:07.0), 'income' and 'transport' (00:07.8 - 00:08.0), 'transport' and 'information' (00:08.9 - 00:09.3), and 'information' and 'and' (00:10.3 - 00:10.7).",
+            "truncation": "No words are truncated; word boundaries and the final word 'services' are fully articulated and complete."
+          },
+          "possible_defects": [
+            {
+              "timestamp": "00:04.3 - 00:04.8",
+              "issue": "Abrupt narrator change / voice mismatch across spliced educational segments."
+            }
+          ],
+          "uncertainty": "Low; all speech tokens are clearly intelligible and audible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 64.16,
+          "end": 84.662875,
+          "excerpt_sha256": "b959a054687bf90a6c8d7eeb29f6a36195f1f1600ef046e0071847abe08904ab",
+          "observations": {
+            "speaker_change": "The excerpt features a change in narrator: a male voice speaks from 00:00.00 to 00:05.60, followed by a female voice from 00:06.40 to 00:20.15.",
+            "names_assessment": "The names 'Carole' and 'Rosario' do not appear in this audio excerpt.",
+            "pauses": [
+              {
+                "start": "00:05.60",
+                "end": "00:06.40",
+                "description": "Clear inter-sentence pause marking the transition between the two narrators."
+              },
+              {
+                "start": "00:13.50",
+                "end": "00:14.30",
+                "description": "Inter-sentence pause between the second and third statements."
+              }
+            ],
+            "word_completion": "All spoken words, including phrase and sentence endings ('treatment', 'approved', 'evidence'), are fully articulated without truncation."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear, fully audible, and free of overlap or acoustic interference.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-practice-en",
+      "source_sha256": "cfd3350b26d156c7b2133090194e1ca95d539af8346025a8bc6d7a8eb85f951c",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 6.22,
+          "excerpt_sha256": "ae503938bc763abc0aea0b08e7303708595fac32c22c86a9e9600f011a0c9fcc",
+          "observations": {
+            "speaker_change": "There is a noticeable change in narrator voice/acoustics between the first section ('Try it. Then repeat.') and the second section ('Put the must-visit at the center of a page.'). The first speaker is slightly higher in pitch, while the second speaker (starting around 00:02.8) has a deeper tone and different microphone/room acoustics.",
+            "pronunciation_assessed": {
+              "Carole": "Not present in the excerpt.",
+              "Rosario": "Not present in the excerpt."
+            },
+            "speech_delivery": "Clear educational narration. Words are cleanly enunciated without slurring.",
+            "pauses": "Audible pause between 'Try it' and 'Then repeat' (approx. 00:01.0 - 00:01.3), followed by an inter-utterance pause/transition between speakers from approx. 00:02.3 to 00:02.8.",
+            "truncation": "None detected; word onsets and codas are fully formed.",
+            "final_word_completion": "The final word 'page' is fully completed with audible closure and release."
+          },
+          "possible_defects": [
+            {
+              "type": "narrator_inconsistency / audio splice",
+              "timestamp": "00:02.3 - 00:02.8",
+              "description": "Shift in speaker identity, pitch, and acoustic profile between instructional prompt and task sentence."
+            }
+          ],
+          "uncertainty": "Low. Slight ambiguity between 'must-visit' and 'must visit' (compound noun/phrase), transcribed as 'must-visit'.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.02,
+          "end": 6.22,
+          "excerpt_sha256": "d9f78f580fea4651c99f2eee15af5654bef547c8135ce44a3886a399b645f58b",
+          "observations": "A clear, instructional sentence spoken in Philippine English. The phrase 'must visit' is articulated clearly, followed by 'at the center of a page'. Neither 'Carole' nor 'Rosario' appears in this excerpt. There is no unnatural truncation, and the final word 'page' is fully completed.",
+          "possible_defects": [],
+          "uncertainty": "Slight ambiguity on whether 'must visit' should be hyphenated as a compound modifier/noun ('must-visit') or whether the speaker said 'must' vs. 'missed', though context and acoustics strongly point to 'must visit'.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 27.02,
+          "end": 36.8,
+          "excerpt_sha256": "cbdc6dd11e599fda71fdf8b073bcd7ef55b4865778e940aa75dc442fd88e3012",
+          "observations": {
+            "pronunciation_names": {
+              "Carole": "Not present in this excerpt.",
+              "Rosario": "Not present in this excerpt."
+            },
+            "audible_speech": "Speech is clear and fully intelligible across both sentences.",
+            "pauses": "There is a clean inter-sentence pause of approximately 1.0 second between 00:02.8 and 00:03.9.",
+            "truncation": "No truncation detected at the beginning or end of words or sentences.",
+            "complete_final_words": "All final words ('card C' and 'observer') are fully and naturally articulated.",
+            "narrator_change": "There is a distinct change in narrator: a male voice speaks the first sentence (00:00 - 00:02.8), followed by a female voice for the second sentence (00:03.9 - 00:09.6)."
+          },
+          "possible_defects": [
+            "Abrupt shift in narrator gender and acoustic profile between sentences without an explicit contextual bridge."
+          ],
+          "uncertainty": "None. Both transcript text and audio transitions are unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 82.78,
+          "end": 105.79595833333333,
+          "excerpt_sha256": "58123487c5f7feeb7218284f615df03430b57020dc00543e680a15c30c1f39a7",
+          "observations": {
+            "carole_and_rosario_pronunciation": "Neither 'Carole' nor 'Rosario' is spoken in this excerpt.",
+            "audible_speech": "Speech is clean, clear, and intelligible throughout.",
+            "pauses": "Distinct instructional pauses occur between list items and sentence segments, notably around 00:08.5–00:09.5 and 00:15.6–00:16.5.",
+            "truncation": "No word truncations observed; initial consonants and final consonants are fully realized.",
+            "complete_final_words": "The final word 'causes' is fully articulated and resolves naturally without cutoff by 00:22.8.",
+            "narrator_sound_change": "The voice profile (female instructional narrator) remains uniform throughout, with no audible change in speaker identity, recording environment, or acoustic quality."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. All words and acoustic features are distinctly audible.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-rosario-en",
+      "source_sha256": "2ec5a3c7186d2334b079e4347cd0a6e060dcad737004a79eb5da94fa79734635",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.82,
+          "excerpt_sha256": "57a53cccb2792f16edcefc401167cf6480bd79e9256dfef59eacca3fd5f2add4",
+          "observations": {
+            "pronunciation": {
+              "Rosario": "Spoken twice: first by a female narrator (00:00.0 - 00:01.1) and then by a male narrator (00:06.5 - 00:07.4). Both pronounce it clearly as /roʊˈzɑːrioʊ/.",
+              "Carole": "Not present or spoken in this audio excerpt."
+            },
+            "narrator_change": "There is a distinct change in narrator: a female speaker delivers the first sentence (00:00.0 - 00:02.2), followed by a brief pause, after which a male speaker takes over for the remainder of the excerpt (00:03.0 - 00:10.5).",
+            "pauses": "A noticeable pause occurs between the two narrators from approximately 00:02.2 to 00:03.0.",
+            "speech_and_completion": "Speech is fully audible, clear, and intelligible throughout. The final word 'months' is fully articulated with no abrupt truncation."
+          },
+          "possible_defects": [
+            "Audio splice/voice inconsistency: mid-excerpt transition from a female narrator to a male narrator."
+          ],
+          "uncertainty": "The spelling of 'Zulick' is phonetically transcribed and may vary (e.g., Zulick, Zuleik, or Zoulik) depending on the source text.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.86,
+          "end": 10.82,
+          "excerpt_sha256": "568f40687cffcfc84fdca1740e2dc66efa2eeb1c16976d97c633130e69942137",
+          "observations": {
+            "timestamps": {
+              "start": "00:00.000",
+              "clause_pause": "00:02.850 - 00:03.250",
+              "end": "00:07.450"
+            },
+            "pronunciation_rosario": "Pronounced clearly as [roʊˈzɑːrioʊ] with clear syllabic enunciation.",
+            "pronunciation_carole": "The name 'Carole' does not occur in this excerpt.",
+            "audible_speech": "The narration is clear, intelligible, and delivered in an educational/informational tone, characteristic of a high-quality text-to-speech synthetic voice.",
+            "pauses": "A standard inter-clause pause occurs after 'case study' (~00:02.85 to 00:03.25).",
+            "truncation": "No truncation detected at the beginning or end of the excerpt.",
+            "complete_final_words": "The final phrase 'and four months' concludes naturally with no clipping.",
+            "narrator_sound_consistency": "Narrator tone, pacing, volume, and acoustic profile remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "Spelling of 'Zulick' vs. 'Zulik'/'Zuleik' cannot be definitively verified from audio alone, though it is phonetically rendered as /ˈzuːlɪk/.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 11.12,
+          "end": 27.38,
+          "excerpt_sha256": "5b2c577ebaba07bf8b9e6c414ad26248172d548e086d8fb63dcd6f9cbbdf08c0",
+          "observations": {
+            "narrator_change": "There is a distinct change in narrator: a male voice speaks from 00:00 to 00:02.5, followed by a pause, and a female voice speaks from 00:03.1 to 00:15.8.",
+            "pronunciation": {
+              "Carole": "Spoken by the male narrator around 00:01.8 - 00:02.5, pronounced cleanly as /ˈkærəl/ ('Carol').",
+              "Rosario": "Not spoken; the name 'Rosario' does not occur in this excerpt."
+            },
+            "audible_speech_and_flow": "Speech is clearly enunciated and intelligible throughout both speaker segments.",
+            "pauses": "A noticeable pause occurs between the two distinct narrator voices between 00:02.5 and 00:03.1 (approximately 0.6 seconds). Natural prosodic pauses occur in the list items (after 'measles', 'diarrhea', 'dehydration', 'malnutrition', 'environment', 'income', and 'misinformation').",
+            "truncation": "No clipping or truncation observed at the boundaries; initial and terminal phonemes are fully intact.",
+            "complete_final_words": "The final word 'services' at 00:14.8 - 00:15.8 concludes cleanly with no cutoff or trailing artifact."
+          },
+          "possible_defects": [
+            "Abrupt transition between two different narrators/recording acoustics at 00:02.5 - 00:03.1."
+          ],
+          "uncertainty": "Low. All words are distinct and unambiguously audible; spelling of 'Carole' vs. 'Carol' is assumed based on the prompt's provided target name.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 71.96,
+          "end": 87.84983333333334,
+          "excerpt_sha256": "341ec69b284d87822ffe06021663ade3713e17d41d272128a6bc2f9b7af44807",
+          "observations": {
+            "pronunciation_names": {
+              "Carole": "Not present in the excerpt",
+              "Rosario": "Not present in the excerpt"
+            },
+            "audible_speech": "Speech is completely audible, clear, and delivered with synthetic/TTS pacing characteristic of an educational prompt.",
+            "pauses": [
+              {
+                "start": "00:06.40",
+                "end": "00:07.45",
+                "type": "sentence boundary pause"
+              },
+              {
+                "start": "00:09.35",
+                "end": "00:09.95",
+                "type": "sentence boundary pause"
+              },
+              {
+                "start": "00:10.50",
+                "end": "00:10.85",
+                "type": "list comma pause"
+              },
+              {
+                "start": "00:11.45",
+                "end": "00:11.75",
+                "type": "list comma pause"
+              },
+              {
+                "start": "00:12.75",
+                "end": "00:13.15",
+                "type": "list comma pause"
+              }
+            ],
+            "truncation": "None detected; starting and ending phonemes are fully articulated.",
+            "complete_final_words": "The final word 'interact' terminates cleanly with a distinct final /kt/ consonant cluster.",
+            "narrator_sound_change": "No shifts in timbre, pitch envelope, background acoustic profile, or speaker identity throughout the clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear and unambiguous.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-verify-branch-en",
+      "source_sha256": "42f1b8c1f1d25c3b662c131f17ce0fe0ae8cde1d180bba933292d7a0e7ee5290",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.7,
+          "excerpt_sha256": "649942b020de106e933c8676f13eeae1c97345f56156f429993140aa622838fc",
+          "observations": {
+            "carole_pronunciation": "Pronounced as 'Carol's' (/ˈkær.əlz/) with a possessive 's'.",
+            "rosario_pronunciation": "The name Rosario does not appear in this excerpt.",
+            "audible_speech": "Speech is fully audible, articulated clearly in a measured, instructional tone characteristic of a synthetic voice or formal reading.",
+            "pauses": "Distinct pauses occur between sentences/phrases (approximately 00:02.3 - 00:03.1, 00:05.5 - 00:06.2, and 00:07.8 - 00:08.3).",
+            "truncation": "No audible truncation observed; word onsets and codas are preserved.",
+            "complete_final_words": "All final words, including 'branch', 'arrow', 'offered', and 'visit', are articulated completely.",
+            "narrator_sound_change": "No shift in speaker persona, pitch, acoustic environment, or volume detected."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all words and phonetic details are clearly audible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.26,
+          "end": 9.7,
+          "excerpt_sha256": "e421784d110b1ae1565a645608e4e58a513c647c974f5df6d605b11a19149178",
+          "observations": {
+            "pronunciation": {
+              "Carole": "Pronounced clearly as 'Carol's' (/ˈkær.əlz/ or /ˈkɛr.əlz/) at the beginning of the excerpt.",
+              "Rosario": "Not spoken or present in this audio excerpt."
+            },
+            "audible_speech": "Speech is intelligible, clear, and delivered in an instructional narration style.",
+            "pauses": "There is a notable pause between 'arrow' (~00:02.25) and 'only' (~00:02.95), and a brief comma pause between 'offered' (~00:04.60) and 'missed' (~00:04.85).",
+            "truncation": "No truncation detected; words have clear onsets and offsets.",
+            "complete_final_words": "The final word 'visit' concludes cleanly with an audible final /t/ release around 00:05.75 - 00:05.90.",
+            "narrator_sound_change": "Tone and acoustic profile remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all words are clearly enunciated.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 17.88,
+          "end": 29.26,
+          "excerpt_sha256": "35d06102dac19d9d3865ef10c1cd2f9b8751393476c41dbfd9ae2abcfcf21e86",
+          "observations": {
+            "pronunciation_carole_rosario": "Neither 'Carole' nor 'Rosario' is present in this audio excerpt.",
+            "audible_speech": "Clear narration in English throughout the recording.",
+            "pauses": "There is a notable pause between the quoted sentence and the concluding statement from approximately 00:05.4 to 00:06.6.",
+            "truncation": "No truncation detected; all words are articulated fully.",
+            "complete_final_words": "The final words 'one time' are completely spoken without abrupt cutoff.",
+            "narrator_sound": "The narrator voice remains consistent throughout the recording, with a natural cadence shift delineating the quoted passage from the explanatory text."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; the speech is clear, intelligible, and free of significant background noise or distortion.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 91.34,
+          "end": 107.12816666666667,
+          "excerpt_sha256": "eabf312ab3eea710597a1010d6c44bd2c59c430b23b181489730d6c84633a1b3",
+          "observations": {
+            "carole_and_rosario_pronunciation": "Neither 'Carole' nor 'Rosario' is spoken in this audio excerpt.",
+            "audible_speech": "Speech is completely audible and intelligible throughout.",
+            "pauses": "Clear pauses occur between phrases (e.g., between 'secrecy' and 'a new schedule') and between speaker turns (approx. 00:05.2–00:05.8 and 00:10.6–00:11.0).",
+            "truncation": "No words are truncated; all beginnings and endings of words are articulated cleanly.",
+            "complete_final_words": "Final consonants/words ('service', 'unknowns', 'open') are fully pronounced without cutoff.",
+            "narrator_change": "There is a noticeable shift in narrator voice between segments: Voice 1 narrates 00:00–00:05.2, Voice 2 (lower, warmer pitch) speaks 00:05.8–00:10.6, and Voice 1 returns for 00:11.0–00:15.5.",
+            "timestamps": {
+              "segment_1": "00:00.000 - 00:05.200",
+              "segment_2": "00:05.800 - 00:10.600",
+              "segment_3": "00:11.000 - 00:15.450"
+            }
+          },
+          "possible_defects": [
+            "Speaker discontinuity: switching between different narrator voices across sentence boundaries."
+          ],
+          "uncertainty": "Low; all spoken words are clear, though the specific synthetic vs. human nature of the two voices cannot be definitively proven.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-whys-en",
+      "source_sha256": "90ab32335a9d88a1e664922c16af18e6dc143507e29802b429815e74435c2414",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 11.34,
+          "excerpt_sha256": "08b26b4423c79baf29778def08f15152b6ae7a019ce723f04627a1d390737f85",
+          "observations": {
+            "timestamps": {
+              "every_why_needs_evidence": "00:00 - 00:02.8",
+              "pause": "00:02.8 - 00:03.5",
+              "carol_a_bhw_in_a_fictional_classroom_exercise": "00:03.5 - 00:07.8",
+              "asks_about_missed_visits_by_three_households": "00:07.8 - 00:11.7"
+            },
+            "pronunciation": {
+              "carole_carol": "Pronounced clearly as /ˈkærəl/ at approximately 00:03.5.",
+              "rosario": "Not mentioned or spoken in this audio excerpt."
+            },
+            "audible_speech": "Speech is clear, paced, and delivered in Philippine English fictional educational narration.",
+            "pauses": "A noticeable pause occurs between sentences from approximately 00:02.8 to 00:03.5.",
+            "truncation": "None detected; word onsets and codas are clearly articulated.",
+            "complete_final_words": "Final word 'households' is fully articulated with no abrupt cut-off.",
+            "narrator_sound": "Consistent voice quality, volume, tone, and acoustic environment throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality is clear and speech is completely intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.5,
+          "end": 11.34,
+          "excerpt_sha256": "743c0b88df88d12f3843f07efcf5b10db05804b6b9bd21d8148eb1c2bd21da59",
+          "observations": {
+            "pronunciation": {
+              "Carole": "Pronounced clearly as /ˈkærəl/ (or 'Carol') with standard educational narrator clarity.",
+              "Rosario": "Not spoken or audible in this excerpt."
+            },
+            "speech_delivery": "Clear, fluent, and measured Philippine English educational narration.",
+            "pauses": [
+              {
+                "start": "00:00.65",
+                "end": "00:01.05",
+                "description": "Brief pause following 'Carole'."
+              },
+              {
+                "start": "00:03.85",
+                "end": "00:04.35",
+                "description": "Natural clause boundary pause after 'exercise'."
+              }
+            ],
+            "truncation": "None observed; the terminal word 'households' is fully articulated.",
+            "narrator_sound": "Acoustic environment and vocal delivery remain consistent throughout the clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low. The name 'Rosario' mentioned in the evaluation prompt does not occur within this specific segment.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 11.64,
+          "end": 21.1,
+          "excerpt_sha256": "72ffac5d52735033cd50e81fa0847b0cbe49bf4252b0e8e9075f617224e1a6ba",
+          "observations": {
+            "pronunciation_names": "Neither 'Carole' nor 'Rosario' occurs in this audio excerpt.",
+            "audible_speech": "Speech is clearly articulated throughout by a female narrator with educational delivery.",
+            "pauses": "A distinct pause occurs between the two sentences from approximately 00:03.20 to 00:04.10.",
+            "truncation_and_final_words": "No words are truncated; final words including 'known' and 'changes' are fully enunciated.",
+            "narrator_sound_consistency": "The narrator's acoustic quality, tone, and pacing remain consistent across both sentences."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words are clear and intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 81.1,
+          "end": 100.075125,
+          "excerpt_sha256": "fe9a33edb91f4dc2a81c11bcc581dcf28a604876c7ac83fe6f8cf95f808987e6",
+          "observations": {
+            "speaker": "Single female narrator with clear educational delivery and consistent vocal quality throughout.",
+            "pronunciation_names": {
+              "Carole": "Not present in this excerpt.",
+              "Rosario": "Not present in this excerpt."
+            },
+            "speech_and_pacing": "Deliberate and clear articulation with standard pedagogical pacing.",
+            "pauses": [
+              {
+                "start": "00:01.0",
+                "end": "00:01.5",
+                "description": "Brief pause between 'Exactly.' and 'Five questions are not proof.'"
+              },
+              {
+                "start": "00:03.5",
+                "end": "00:04.2",
+                "description": "Pause between sentences."
+              },
+              {
+                "start": "00:08.5",
+                "end": "00:09.3",
+                "description": "Pause between sentences."
+              },
+              {
+                "start": "00:11.4",
+                "end": "00:12.4",
+                "description": "Pause between sentences."
+              }
+            ],
+            "truncation_and_word_completion": "All words, including final word endings ('proof', 'check', 'open', 'blame'), are fully articulated without truncation or clipping.",
+            "narrator_sound_change": "No discernible shift in pitch, volume, acoustic environment, or narrator identity across the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is crisp, unambiguous, and cleanly recorded.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-en",
+      "source_sha256": "9cb2c860e10c35adb686efd31bb512bbcb01609ae992240d7366739a0db067ea",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 19.62,
+          "excerpt_sha256": "84fe6d78f05d3706bb72115300257b0870df415f6b73ae2ea28e2b2ee235207b",
+          "observations": {
+            "pronunciation": {
+              "carole_carol": "Pronounced clearly as 'Carol' [ˈkæ.ɹəl] / [ˈkɛə.ɹəl] around 00:00.0 - 00:00.5.",
+              "rosario": "Not spoken or present in this excerpt."
+            },
+            "speech_and_delivery": "Clear, steady, fluent educational narration with Philippine English phonological characteristics (e.g., crisp stops and unreduced vowels).",
+            "narrator_consistency": "Consistent narrator identity, acoustic environment, and vocal tone throughout the clip.",
+            "pauses": [
+              {
+                "start": "00:02.5",
+                "end": "00:03.0",
+                "description": "Natural inter-sentence pause."
+              },
+              {
+                "start": "00:05.5",
+                "end": "00:05.9",
+                "description": "Natural inter-sentence pause."
+              },
+              {
+                "start": "00:07.8",
+                "end": "00:09.1",
+                "description": "Longer pause separating thematic points."
+              },
+              {
+                "start": "00:11.8",
+                "end": "00:12.1",
+                "description": "Brief list-item pacing pause after 'water'."
+              },
+              {
+                "start": "00:13.2",
+                "end": "00:13.9",
+                "description": "Natural inter-sentence pause."
+              },
+              {
+                "start": "00:16.8",
+                "end": "00:17.2",
+                "description": "Mid-sentence clause separation pause before 'not treatment'."
+              }
+            ],
+            "truncation_and_final_words": "All words, including the final word 'death' (completing around 00:19.4), are fully enunciated with no clipping or truncation at the audio boundaries."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. Speech is clear and free of background noise or artifacts.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 8.4,
+          "excerpt_sha256": "88d394ecfab96da61ca4cf621aa13409cb7bf8f2624fec44325b0e65804c10ed",
+          "observations": {
+            "pronunciation": {
+              "Carole": "Pronounced clearly at 00:00 as /ˈkær.əl/ ('Carol').",
+              "Rosario": "Not spoken or referenced anywhere within this excerpt."
+            },
+            "audible_speech": "Speech is completely audible, clear, and paced deliberately throughout.",
+            "pauses": "Natural, rhythmic inter-sentence pauses occur between 00:02.4–00:02.8 and 00:05.5–00:05.8.",
+            "truncation": "None detected; word onsets and codas are preserved.",
+            "complete_final_words": "All final words in each phrase ('households', 'reported', 'proven') are fully articulated without clipping.",
+            "narrator_sound": "Voice tone, acoustic profile, and recording environment remain consistent across the audio clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "Slight phonetic ambiguity between 'fare' and 'fair' around 00:03.9–00:04.3, though acoustically identical in standard non-rhotic/rhotic English homophone pairs.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 19.62,
+          "excerpt_sha256": "84fe6d78f05d3706bb72115300257b0870df415f6b73ae2ea28e2b2ee235207b",
+          "observations": {
+            "pronunciation": {
+              "Carole": "Pronounced clearly as 'Carol' (/ˈkær.əl/ or /ˈkɛər.əl/) at 00:00 - 00:00.6.",
+              "Rosario": "The name 'Rosario' does not occur in this audio excerpt."
+            },
+            "speech_and_delivery": "Clear, steady educational narration with neutral-to-Philippine English features. Consistent pitch and pacing throughout.",
+            "pauses": [
+              {
+                "start": "00:02.8",
+                "end": "00:03.2",
+                "description": "Inter-sentence pause after 'households'."
+              },
+              {
+                "start": "00:05.6",
+                "end": "00:05.9",
+                "description": "Inter-sentence pause after 'reported'."
+              },
+              {
+                "start": "00:07.4",
+                "end": "00:08.6",
+                "description": "Extended inter-paragraph/segment pause."
+              },
+              {
+                "start": "00:13.4",
+                "end": "00:14.0",
+                "description": "Inter-sentence pause after 'training'."
+              }
+            ],
+            "truncation_and_word_endings": "All final consonants and word endings are fully articulated without clipping or truncation (e.g., 'households', 'proven', 'death').",
+            "narrator_sound_changes": "Narrator tone, acoustic environment, and microphone profile remain consistent from start to finish."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality is clean and speech is fully intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 41.6,
+          "end": 66.58133333333333,
+          "excerpt_sha256": "9eb25ca625df4c858688a5cd22ae6d4324a15db04cf0625ec273f396602465f7",
+          "observations": {
+            "carole_and_rosario": "Neither the name 'Carole' nor 'Rosario' occurs in this audio excerpt.",
+            "audible_speech": "Speech is intelligible, clear, and delivered at a measured educational pace.",
+            "narrator_change": "There is a distinct change in narrator: the first segment (00:00.00–00:11.10) is spoken by a female voice, followed by a brief pause, after which a male voice takes over (00:11.85–00:23.65).",
+            "pauses": [
+              {
+                "start": "00:03.80",
+                "end": "00:04.20"
+              },
+              {
+                "start": "00:08.40",
+                "end": "00:08.80"
+              },
+              {
+                "start": "00:11.10",
+                "end": "00:11.85",
+                "description": "Pause between female and male narrator sections"
+              },
+              {
+                "start": "00:16.70",
+                "end": "00:17.20"
+              },
+              {
+                "start": "00:20.75",
+                "end": "00:21.20"
+              }
+            ],
+            "truncation_and_final_words": "All final words ('steps', 'retry', 'assessment', 'uncertainty', 'staff', 'proof') are fully articulated with clear terminal consonants and no cutoffs or truncation."
+          },
+          "possible_defects": [
+            {
+              "type": "narrator_inconsistency",
+              "timestamp": "00:11.85",
+              "description": "Voice switches abruptly from female to male speaker mid-lesson."
+            }
+          ],
+          "uncertainty": "The homophone 'fare' at 00:18.80 could alternatively be intended as 'fair' depending on instructional context, though 'fare' (transit/cost assistance alongside child care) fits standard community needs assessments.",
+          "unparsed_response": null
+        }
+      ]
+    }
+  ]
+}

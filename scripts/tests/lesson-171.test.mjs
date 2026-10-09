@@ -32,6 +32,6 @@ describe('Carole lesson 1.7.1 scoped draft',()=>{
   for(const [key,value]of Object.entries(prior))expect(current[key],key).toEqual(key.startsWith('summary')&&typeof value==='string'?value.replaceAll('Nestor','Carole'):value);
  });
  it('appends exactly the target registry pair without changing the preceding registry bytes',()=>{
-  const now=fs.readFileSync('remotion/src/Root.tsx','utf8'),prior=beforeProposed171('remotion/src/Root.tsx').toString();expect(now.replace(/^import \{ProblemDefineStory[^\n]+\n/,'').replace(/    \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`problem-define-[\s\S]*?      \)\)\}\n/,'')).toBe(prior);expect(now).toContain('ProblemDefineStoryFil');expect(now).toContain('ProblemDefineStoryEn');
+  const now=reviewed171('remotion/src/Root.tsx').toString(),prior=beforeProposed171('remotion/src/Root.tsx').toString();expect(now.replace(/^import \{ProblemDefineStory[^\n]+\n/,'').replace(/    \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`problem-define-[\s\S]*?      \)\)\}\n/,'')).toBe(prior);expect(now).toContain('ProblemDefineStoryFil');expect(now).toContain('ProblemDefineStoryEn');
  });
 });

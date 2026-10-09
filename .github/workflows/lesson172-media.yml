@@ -1,0 +1,103 @@
+name: Lesson 1.7.2 draft media
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson172-media.yml'
+      - 'scripts/lesson-172-*'
+      - 'scripts/remotion-problem-causes-narrate.mjs'
+      - 'content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/**'
+      - 'remotion/src/problem-causes/**'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson172-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-172-carole-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Retain hash-pinned original model evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-172-retain-evidence.mjs
+      - name: Bounded published baseline (read only)
+        continue-on-error: true
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-172-published-snapshot.mjs
+      - name: Generate real Gemini Kore Read and story audio
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON172_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-172-record-fetch.mjs'
+        run: node scripts/lesson-172-media-build.mjs
+      - name: Full and focused actual encoded-audio review
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON172_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-172-record-fetch.mjs'
+        run: |
+          if [ ! -s docs/lesson-172-audio-review.json ]; then
+            node scripts/lesson-172-audio-review.mjs
+            node scripts/lesson-172-audio-focus.mjs
+            node scripts/lesson-172-audio-notes.mjs
+          fi
+          node scripts/lesson-172-encoded-verify.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson172-generated-media
+          include-hidden-files: true
+          retention-days: 30
+          path: |
+            lesson-172-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/
+            public/training/audio/07-problema/problem-causes/
+            public/training/bhw-1-7/problem-causes-*
+            remotion/public/problem-causes/
+            remotion/src/Root.tsx
+            docs/lesson-172-audio*.json
+            docs/lesson-172-media-generation.json
+            .preview/lesson172-raw/
+            .preview/lesson172-excerpts/
+      - name: Build complete offline review at frozen head
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python -m pip install PyMuPDF==1.26.6
+          python scripts/lesson-172-source-evidence.py
+          node scripts/lesson-172-print-kit.mjs
+          python scripts/lesson-172-print-verify.py
+          node scripts/lesson-172-review-build.mjs
+          node scripts/lesson-172-browser-verify.mjs
+          node scripts/lesson-172-wait-ci.mjs
+          node scripts/lesson-172-review-verify.mjs
+          node scripts/lesson-172-package.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson172-complete-offline-review
+          include-hidden-files: true
+          retention-days: 30
+          path: |
+            .preview/lesson172-deliverables/
+            .preview/lesson172-evidence-archives/
