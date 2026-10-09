@@ -38,7 +38,12 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
       - run: node scripts/lesson-183-media-verify.mjs
       - name: Use installed Playwright browser
-        run: echo "LESSON_REVIEW_BROWSER=$(node --input-type=module -e \"import {chromium} from '@playwright/test';console.log(chromium.executablePath())\")" >> "$GITHUB_ENV"
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import {chromium} from '@playwright/test';
+          fs.appendFileSync(process.env.GITHUB_ENV, 'LESSON_REVIEW_BROWSER=' + chromium.executablePath() + '\n');
+          JS
       - run: node scripts/lesson-183-print-kit.mjs
       - run: python3 scripts/lesson-183-print-verify.py
       - run: node scripts/lesson-183-preservation.mjs
