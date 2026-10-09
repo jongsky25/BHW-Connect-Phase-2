@@ -1,21 +1,45 @@
-## [handoff] Report enough for action
+## [handoff] A short report with honest sources
 
-BHW Gibs has heard Liza, 29, describe a childcare barrier to attending the health center. The last attendance date remains unconfirmed.
+Gibs is the fictional male BHW; Liza, 29, is the resident. Her earlier attributed record says attending the health center is difficult because she has no one to watch her child. Her last attendance date remains unverified. This is neither a diagnosis nor evidence that she refuses to attend.
 
-Gibs uses the approved form: date, relevant concern, information source, action taken and needed follow-up. For example: “Liza reports difficulty finding childcare; last attendance date needs verification. Requests a conversation with the midwife about scheduling.” Send this to the appropriate health team member through an authorized channel. Keep names and private details out of public group chats. Confirm receipt and identify who will act next.
+In a private conversation with the authorized midwife, Gibs says: “Liza reports difficulty finding childcare. Her last attendance date is not yet verified. She requests a conversation about scheduling. Could you check a possible way for her to talk with you?”
 
-## [audience] Adapt the message to the audience
+Use the locally approved form if available: date, relevant concern, source, uncertainty, action taken and requested action. Record the request separately from what was actually agreed. Asking for help does not approve a visit, appointment or childcare. This dialogue is an authored teaching example, not a DOH quotation.
 
-Liza and the midwife need different information. Liza needs a plain next step and a contact. The midwife needs the concern, verified details and requested help. A barangay planning meeting needs aggregated barriers without identifying people. Choose a picture, spoken explanation or secure written report to fit the audience and purpose; do not turn a private case into a public story.
+## [audience] The right recipient and enough detail
 
-## [meeting] Present at a meeting without names
+Before sending, verify who is authorized to receive an individual report and what they need for their role. In this example, the midwife is the designated recipient. Every meeting participant is not automatically authorized to receive a private case.
 
-In this exercise, three fictional households share a childcare barrier. Prepare a one-minute report without names or identifying details: what is the pattern, what information is missing, and what small service change could be discussed? End with a clear question for the group. Do not promise that a proposal is approved before the responsible people decide.
+Gibs asks: “Are you the authorized recipient for this report? Which approved method should we use?” Verify the actual recipient; do not rely only on an account name. Follow the verified local procedure for a spoken, paper or electronic handoff. A personal phone is not automatically approved. Keep names and personal forms out of public group chats.
 
-## [practice] Try it, then repeat
+Explain the purpose, recipient and next step to Liza in plain language under local policy. Give the midwife only relevant details. At a meeting, use sufficient aggregated information that cannot identify a household. Do not promise absolute secrecy in every situation. If urgent assistance is needed, do not delay help to finish a routine report; follow the verified local process.
 
-Replace “The family is difficult” with three sentences: Liza’s concern; confirmed and unconfirmed details; help requested from the midwife. Add the authorized channel and how receipt will be confirmed. Ask a partner whether the next step is clear. Alone, check the four elements. In the next handoff, confirm the recipient and follow-up owner.
+## [meeting] A pattern for the meeting, a case for the right person
 
-## [check] Choose the next step
+In this practice exercise, three fictional households report childcare barriers. The barangay planning meeting aims to discuss scheduling, not expose their private stories. Names, form photographs, exact addresses and details that point to a household are unnecessary. Combined details can identify someone even without a name.
 
-Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.
+Gibs gives a brief report: “In three fictional reports, childcare was mentioned as a barrier. Not all attendance dates have been verified. Could we discuss how to explain scheduling options?” This is a coordination question, not a statement that a change is approved. The count belongs only to this example; it is not barangay data.
+
+Keep individual follow-up separate from the meeting. In real work, use only authorized information for the approved purpose under local procedure. If removing identifying details is insufficient, do not share the case with the group; ask the designated health team member for the appropriate method.
+
+## [confirm-next-step] Was it received, and what was agreed?
+
+A sent message does not prove that it was read, understood or agreed to. Ask the recipient and listen to clarification. In this example, the midwife asks: “Is the last attendance date certain?” Gibs replies: “Not yet. I will correct the report: Liza is the source of the barrier; the date still needs verification.”
+
+The midwife says: “I received your report. I will check scheduling options and talk with you tomorrow through our agreed private method.” Gibs repeats: “You will check the schedule. Tomorrow I will confirm your response with you, then explain the verified next step to Liza. Is that correct?” The midwife agrees. This is the agreement in the fictional exercise, not a universal local deadline.
+
+Record acknowledgement, who will act, what they will do and when or how to confirm again. Do not tell Liza that an appointment or childcare is arranged when it is not. If the recipient cannot be reached, follow only the verified local backup process; do not invent a substitute recipient or an emergency rule.
+
+## [practice] Report, clarify, confirm
+
+In a triad, use fictional role cards. First, play Gibs and give the brief report: concern, source and uncertainty, request and secure method. Second, play the authorized midwife: ask one clarification, acknowledge receipt and agree on an action within the role. Third, observe with the checklist. Rotate roles over three rounds so everyone practises giving the report.
+
+Replace “The family is difficult” with Liza’s honestly attributed concern and the verified or unverified details. After clarification, repeat who will do what and when or how to follow up. Include no diagnosis, promised service or real resident record. Give specific feedback, then retry the missing part. Peer feedback is not a facilitator grade.
+
+Alone or without internet, write or say the report using paper cards. Read the midwife’s clarification and prepare the reply and confirmation. Reading support or the preferred language may be used. Keep the same standard; arrange later direct facilitator observation before claiming that the performance was observed.
+
+## [check] What is enough for the meeting?
+
+The chair of a barangay planning meeting asks about missed visits. Gibs has a private record from the fictional exercise, but not everyone present is authorized to receive individual cases. A schedule change has not been approved.
+
+Look at the situation before choosing. What relevant information does the group need for planning? Choose an answer and explain why. After selecting, read all three rationales and the ending, then compare them with your own report and confirmation.

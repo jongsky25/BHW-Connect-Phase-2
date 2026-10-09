@@ -5,14 +5,17 @@
       "m6.record"
     ],
     "layout": "process",
-    "heading_fil": "Iulat ang kailangan para makakilos",
-    "heading_en": "Report enough for action",
-    "display_fil": "Aprubadong form: petsa → concern at pinagmulan → ginawa → follow-up. Sa tamang health team member lamang, gamit ang awtorisadong channel. Kumpirmahin ang pagtanggap at susunod na kikilos.",
-    "display_en": "Approved form: date → concern and source → action taken → follow-up. Send to the appropriate health team member using an authorized channel. Confirm receipt and the next owner.",
+    "heading_fil": "Maikling ulat, tapat na pinagmulan",
+    "heading_en": "A short report with honest sources",
+    "display_fil": "Ihiwalay ang concern, pinagmulan at kulang na detalye; ang hinihingi ay hindi pa napagkasunduan.",
+    "display_en": "Separate the concern, source and missing detail; a request is not yet an agreement.",
     "asset_ids": [
-      "gibs-portrait"
+      "gibs-portrait",
+      "handoff-handoff"
     ],
-    "check": null
+    "check": null,
+    "narration_fil": "Si Gibs ang kathang-isip na lalaking BHW; si Liza, 29, ang residente. Sa naunang tala, sinabi ni Liza na mahirap pumunta sa health center dahil walang magbabantay sa anak. Hindi pa natiyak ang petsa ng huling pagpunta. Hindi ito diagnosis o patunay na ayaw niyang pumunta.\n\nSa pribadong usapan sa awtorisadong midwife, sinabi ni Gibs: “Ayon kay Liza, hirap siyang makahanap ng magbabantay sa anak. Hindi pa natiyak ang huling pagpunta niya. Humihingi siya ng pakikipag-usap tungkol sa iskedyul. Maaari po ba ninyong tingnan ang posibleng paraan ng pakikipag-usap?”\n\nGamitin ang lokal na aprubadong form kung mayroon: petsa, kaugnay na concern, pinagmulan, hindi pa tiyak, ginawa at hinihinging aksyon. Itala nang magkahiwalay ang hiling at ang talagang napagkasunduan. Ang paghingi ng tulong ay hindi pa pag-apruba ng pagbisita, appointment o childcare. Ang usapang ito ay ginawang halimbawa para sa aralin, hindi sipi mula sa DOH.",
+    "narration_en": "Gibs is the fictional male BHW; Liza, 29, is the resident. Her earlier attributed record says attending the health center is difficult because she has no one to watch her child. Her last attendance date remains unverified. This is neither a diagnosis nor evidence that she refuses to attend.\n\nIn a private conversation with the authorized midwife, Gibs says: “Liza reports difficulty finding childcare. Her last attendance date is not yet verified. She requests a conversation about scheduling. Could you check a possible way for her to talk with you?”\n\nUse the locally approved form if available: date, relevant concern, source, uncertainty, action taken and requested action. Record the request separately from what was actually agreed. Asking for help does not approve a visit, appointment or childcare. This dialogue is an authored teaching example, not a DOH quotation."
   },
   {
     "id": "slide-audience",
@@ -20,12 +23,16 @@
       "m6.record"
     ],
     "layout": "process",
-    "heading_fil": "Iangkop ang mensahe sa tatanggap",
-    "heading_en": "Adapt the message to the audience",
-    "display_fil": "Kay Liza: hakbang at contact. Sa midwife: concern, ebidensya at tulong na hinihingi. Sa pulong: pinagsamang pattern na walang pangalan. Iangkop ang detalye sa layunin at tatanggap.",
-    "display_en": "For Liza: step and contact. For the midwife: concern, evidence and requested help. For a meeting: an aggregated pattern without names. Match detail to purpose and recipient.",
-    "asset_ids": [],
-    "check": null
+    "heading_fil": "Tamang tatanggap, sapat na detalye",
+    "heading_en": "The right recipient and enough detail",
+    "display_fil": "Tiyakin ang awtorisadong tatanggap at lokal na aprubadong paraan; ibahagi lamang ang kailangan.",
+    "display_en": "Verify the authorized recipient and locally approved method; share only what is needed.",
+    "asset_ids": [
+      "handoff-audience"
+    ],
+    "check": null,
+    "narration_fil": "Bago magpadala, tiyakin kung sino ang awtorisadong tumanggap ng indibidwal na ulat at ano ang kailangan niya para sa kanyang tungkulin. Sa halimbawa, ang midwife ang itinalagang tatanggap. Hindi nangangahulugang maaaring tumanggap ng pribadong kaso ang bawat kasama sa pulong.\n\nSinabi ni Gibs: “Kayo po ba ang awtorisadong tatanggap nito? Aling aprubadong paraan ang gagamitin natin?” Tiyakin ang aktuwal na tatanggap; huwag umasa sa pangalan lang sa isang account. Sundin ang natiyak na lokal na paraan para sa pasalita, papel o elektronikong ulat. Hindi awtomatikong aprubado ang personal na telepono. Huwag ilagay ang pangalan o personal na form sa pampublikong group chat.\n\nKay Liza, ipaliwanag sa payak na wika ang layunin, tatanggap at susunod na hakbang ayon sa lokal na patakaran. Sa midwife, ibigay lamang ang kaugnay na detalye. Sa pulong, gumamit ng sapat na pinagsama-samang impormasyon na hindi makakakilala sa isang pamilya. Walang pangakong lubos na lihim sa lahat ng pagkakataon. Kung may agarang pangangailangan, huwag ipagpaliban ang tulong para tapusin ang karaniwang ulat; sundin ang natiyak na lokal na proseso.",
+    "narration_en": "Before sending, verify who is authorized to receive an individual report and what they need for their role. In this example, the midwife is the designated recipient. Every meeting participant is not automatically authorized to receive a private case.\n\nGibs asks: “Are you the authorized recipient for this report? Which approved method should we use?” Verify the actual recipient; do not rely only on an account name. Follow the verified local procedure for a spoken, paper or electronic handoff. A personal phone is not automatically approved. Keep names and personal forms out of public group chats.\n\nExplain the purpose, recipient and next step to Liza in plain language under local policy. Give the midwife only relevant details. At a meeting, use sufficient aggregated information that cannot identify a household. Do not promise absolute secrecy in every situation. If urgent assistance is needed, do not delay help to finish a routine report; follow the verified local process."
   },
   {
     "id": "slide-meeting",
@@ -33,12 +40,33 @@
       "m6.record"
     ],
     "layout": "process",
-    "heading_fil": "Ipaliwanag sa pulong nang walang pangalan",
-    "heading_en": "Present at a meeting without names",
-    "display_fil": "Halimbawa: tatlong pamilya ang may childcare barrier. Iulat ang pattern at kulang na impormasyon, saka magtanong tungkol sa posibleng pagbabago. Walang pangalan at walang pangakong aprubado na ang mungkahi.",
-    "display_en": "Example: three households report childcare barriers. Present the pattern and missing information, then ask about a possible change. Include no names and make no promise that a proposal is approved.",
-    "asset_ids": [],
-    "check": null
+    "heading_fil": "Pattern sa pulong, kaso sa tamang tao",
+    "heading_en": "A pattern for the meeting, a case for the right person",
+    "display_fil": "Sa pulong, sapat na pattern at malinaw na tanong; ang pribadong kaso ay sa awtorisadong tatanggap.",
+    "display_en": "At a meeting, give a sufficient pattern and a clear question; private cases go to the authorized recipient.",
+    "asset_ids": [
+      "handoff-meeting"
+    ],
+    "check": null,
+    "narration_fil": "Sa pagsasanay, tatlong kathang-isip na pamilya ang nagsabing hadlang ang magbabantay sa anak. Ang layunin ng barangay planning meeting ay pag-usapan ang iskedyul, hindi ilantad ang kanilang personal na kuwento. Walang kailangang pangalan, larawan ng form, eksaktong tirahan o detalyeng madaling magturo sa isang pamilya. Kahit walang pangalan, maaaring makilala ang tao mula sa pinagsamang detalye.\n\nMaikling ulat ni Gibs: “Sa tatlong kathang-isip na ulat, nabanggit ang hadlang sa pagbabantay ng anak. Hindi pa natiyak ang lahat ng petsa ng pagpunta. Maaari bang pag-usapan kung paano ipapaliwanag ang mga pagpipilian sa iskedyul?” Tanong ito para sa koordinasyon, hindi pahayag na aprubado na ang pagbabago. Ang bilang ay mula lamang sa halimbawang ito, hindi datos ng barangay.\n\nIhiwalay ang indibidwal na follow-up sa pulong. Sa tunay na gawain, gamitin lamang ang awtorisadong impormasyon para sa aprubadong layunin at lokal na proseso. Kung hindi sapat ang pagtatanggal ng pagkakakilanlan, huwag ibahagi ang kaso sa grupo; itanong ang tamang paraan sa itinalagang health team member.",
+    "narration_en": "In this practice exercise, three fictional households report childcare barriers. The barangay planning meeting aims to discuss scheduling, not expose their private stories. Names, form photographs, exact addresses and details that point to a household are unnecessary. Combined details can identify someone even without a name.\n\nGibs gives a brief report: “In three fictional reports, childcare was mentioned as a barrier. Not all attendance dates have been verified. Could we discuss how to explain scheduling options?” This is a coordination question, not a statement that a change is approved. The count belongs only to this example; it is not barangay data.\n\nKeep individual follow-up separate from the meeting. In real work, use only authorized information for the approved purpose under local procedure. If removing identifying details is insufficient, do not share the case with the group; ask the designated health team member for the appropriate method."
+  },
+  {
+    "id": "slide-confirm-next-step",
+    "concept_ids": [
+      "m6.record"
+    ],
+    "layout": "process",
+    "asset_ids": [
+      "handoff-confirm-next-step"
+    ],
+    "check": null,
+    "heading_fil": "Natanggap ba, at ano ang napagkasunduan?",
+    "heading_en": "Was it received, and what was agreed?",
+    "display_fil": "Kumpirmahin ang pagtanggap at ang napagkasunduan: sino, ano, at kailan o paano mag-follow-up.",
+    "display_en": "Confirm receipt and the agreement: who, what, and when or how to follow up.",
+    "narration_fil": "Ang naipadalang mensahe ay hindi patunay na nabasa, naunawaan o napagkasunduan ang hiling. Tanungin ang tatanggap at pakinggan ang paglilinaw. Sa halimbawa, nagtanong ang midwife: “Tiyak ba ang huling petsa?” Sumagot si Gibs: “Hindi pa po. Itatama ko ang ulat: ayon kay Liza ang hadlang; ang petsa ay kailangan pang beripikahin.”\n\nSinabi ng midwife: “Natanggap ko ang ulat. Titingnan ko ang mga pagpipilian sa iskedyul at kakausapin kita bukas sa napagkasunduan nating pribadong paraan.” Inulit ni Gibs: “Kayo po ang titingin sa iskedyul. Bukas ko kukumpirmahin sa inyo ang sagot; pagkatapos ay ipapaliwanag ko kay Liza ang natiyak na hakbang. Tama po ba?” Sumang-ayon ang midwife. Ito ang napagkasunduan sa kathang-isip na pagsasanay, hindi pangkalahatang deadline sa lahat ng lugar.\n\nItala ang pagtanggap, sino ang gagawa, ano ang gagawin at kailan o paano muling kukumpirmahin. Huwag sabihin kay Liza na may appointment o childcare na kung wala pa. Kung hindi makontak ang tatanggap, sundin lamang ang natiyak na lokal na backup process; huwag gumawa ng sariling kapalit na tatanggap o emergency rule.",
+    "narration_en": "A sent message does not prove that it was read, understood or agreed to. Ask the recipient and listen to clarification. In this example, the midwife asks: “Is the last attendance date certain?” Gibs replies: “Not yet. I will correct the report: Liza is the source of the barrier; the date still needs verification.”\n\nThe midwife says: “I received your report. I will check scheduling options and talk with you tomorrow through our agreed private method.” Gibs repeats: “You will check the schedule. Tomorrow I will confirm your response with you, then explain the verified next step to Liza. Is that correct?” The midwife agrees. This is the agreement in the fictional exercise, not a universal local deadline.\n\nRecord acknowledgement, who will act, what they will do and when or how to confirm again. Do not tell Liza that an appointment or childcare is arranged when it is not. If the recipient cannot be reached, follow only the verified local backup process; do not invent a substitute recipient or an emergency rule."
   },
   {
     "id": "slide-practice",
@@ -46,12 +74,16 @@
       "m6.record"
     ],
     "layout": "process",
-    "heading_fil": "Subukan, saka ulitin",
-    "heading_en": "Try it, then repeat",
-    "display_fil": "Concern → natiyak at kulang → hinihinging tulong. Suriin ang channel, pagtanggap at may-ari ng follow-up.",
-    "display_en": "Concern → verified details and gaps → requested help. Check the channel, receipt and follow-up owner.",
-    "asset_ids": [],
-    "check": null
+    "heading_fil": "Ulat, paglilinaw, kumpirmasyon",
+    "heading_en": "Report, clarify, confirm",
+    "display_fil": "Magsanay sa pag-uulat, pagsagot sa paglilinaw at pagkumpirma; ulitin ang bahaging kulang.",
+    "display_en": "Practise reporting, answering clarification and confirming; retry the missing part.",
+    "asset_ids": [
+      "handoff-practice"
+    ],
+    "check": null,
+    "narration_fil": "Sa grupo ng tatlo, gumamit ng kathang-isip na role cards. Una, gumanap na Gibs at ibigay ang maikling ulat: concern, pinagmulan at hindi pa tiyak, hiling at ligtas na paraan. Ikalawa, gumanap na awtorisadong midwife: humingi ng isang paglilinaw, kilalanin ang pagtanggap at makipagkasundo sa kayang gawin. Ikatlo, magmasid gamit ang checklist. Iikot ang mga tungkulin sa tatlong round upang lahat ay makapag-ulat.\n\nPalitan ang “Mahirap kausap ang pamilya” ng tapat na concern ni Liza at kung alin ang natiyak o hindi pa natiyak. Pagkatapos ng paglilinaw, ulitin kung sino ang gagawa ng ano at kailan o paano susundan. Walang diagnosis, pangakong serbisyo o tunay na resident record. Magbigay ng tiyak na puna, saka ulitin ang bahaging kulang. Ang puna ng kapareha ay hindi marka ng facilitator.\n\nKung mag-isa o walang internet, isulat o sabihin ang ulat gamit ang papel na cards. Basahin ang paglilinaw ng midwife at buuin ang sagot at kumpirmasyon. Maaaring may katuwang sa pagbasa o sariling wika. Pareho ang pamantayan; ang direktang obserbasyon ng facilitator ay kailangang maisagawa sa kalaunan bago sabihing naobserbahan ang kakayahan.",
+    "narration_en": "In a triad, use fictional role cards. First, play Gibs and give the brief report: concern, source and uncertainty, request and secure method. Second, play the authorized midwife: ask one clarification, acknowledge receipt and agree on an action within the role. Third, observe with the checklist. Rotate roles over three rounds so everyone practises giving the report.\n\nReplace “The family is difficult” with Liza’s honestly attributed concern and the verified or unverified details. After clarification, repeat who will do what and when or how to follow up. Include no diagnosis, promised service or real resident record. Give specific feedback, then retry the missing part. Peer feedback is not a facilitator grade.\n\nAlone or without internet, write or say the report using paper cards. Read the midwife’s clarification and prepare the reply and confirmation. Reading support or the preferred language may be used. Keep the same standard; arrange later direct facilitator observation before claiming that the performance was observed."
   },
   {
     "id": "slide-check",
@@ -59,11 +91,13 @@
       "m6.record"
     ],
     "layout": "decision",
-    "heading_fil": "Piliin ang susunod na hakbang",
-    "heading_en": "Choose the next step",
-    "display_fil": "Ang ulat ay sapat para makakilos ang tamang tao, habang protektado ang pribadong detalye.",
-    "display_en": "A handoff gives the right person enough to act while protecting private details.",
-    "asset_ids": [],
+    "heading_fil": "Ano ang sapat para sa pulong?",
+    "heading_en": "What is enough for the meeting?",
+    "display_fil": "Sa pulong, hinihingi ang paliwanag sa missed visits. Ano ang angkop na ibabahagi?",
+    "display_en": "The meeting asks about missed visits. What information is appropriate to share?",
+    "asset_ids": [
+      "handoff-check"
+    ],
     "check": {
       "prompt_fil": "Humihingi ang barangay meeting ng paliwanag sa missed visits. Ano ang ibabahagi?",
       "prompt_en": "A barangay meeting asks about missed visits. What should be shared?",
@@ -82,8 +116,10 @@
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Ang unang sagot ay angkop sa pagpaplano. Ang forms at pangalan ay naglalantad ng hindi kailangang personal na detalye; ang opinyon ay hindi ebidensya ng dahilan. Ang indibidwal na follow-up ay sa tamang health team member.",
-      "feedback_en": "The first response fits planning. Forms and names expose unnecessary personal details; an opinion is not evidence of the cause. Individual follow-up goes to the appropriate health team member."
-    }
+      "feedback_fil": "Una: Ang pinagsamang childcare barrier at tanong tungkol sa iskedyul ay sapat para sa pagpaplano, kung walang detalyeng makakakilala sa pamilya. Ikalawa: Ang larawan ng household forms ay naglalantad ng hindi kailangang pribadong detalye; hindi iyon ang kailangan ng grupo. Ikatlo: Ang pangalan at opinyon ng kapitbahay ay hindi angkop; ang opinyon ay hindi ebidensya ng dahilan. Sa wakas, tinanggap ng chair ang pinagsamang buod at napagkasunduang itanong niya sa itinalagang health team member ang paraan ng paglilinaw sa iskedyul sa susunod na coordination meeting. Kinumpirma ni Gibs kung sino ang gagawa at paano kukunin ang sagot. Hiwalay niyang kinumpirma sa awtorisadong midwife ang pagtanggap ng indibidwal na ulat at kanilang follow-up. Walang ipinangakong appointment o childcare.",
+      "feedback_en": "First: The aggregated childcare barrier and scheduling question are sufficient for planning if no details identify a household. Second: Photographs of household forms expose unnecessary private details; the group does not need them. Third: Names and a neighbor’s opinion are inappropriate; an opinion is not evidence of the cause. In the ending, the chair acknowledges the aggregated summary and agrees to ask the designated health team member how to clarify scheduling at the next coordination meeting. Gibs confirms who will act and how to obtain the response. Separately, he confirms that the authorized midwife received the individual report and checks their follow-up agreement. No appointment or childcare is promised."
+    },
+    "narration_fil": "Nagtanong ang chair ng barangay planning meeting tungkol sa mga hindi natuloy na pagpunta. May pribadong tala si Gibs mula sa kathang-isip na pagsasanay, ngunit hindi lahat ng nasa pulong ay awtorisadong tumanggap ng indibidwal na kaso. Hindi pa aprubado ang pagbabago sa iskedyul.\n\nTingnan ang larawan ng sitwasyon bago pumili. Ano ang kaugnay na impormasyong kailangan ng grupo para magplano? Piliin ang sagot at ipaliwanag kung bakit. Pagkatapos pumili, basahin ang paliwanag sa lahat ng pagpipilian at ang wakas; ihambing sa sariling ulat at kumpirmasyon.",
+    "narration_en": "The chair of a barangay planning meeting asks about missed visits. Gibs has a private record from the fictional exercise, but not everyone present is authorized to receive individual cases. A schedule change has not been approved.\n\nLook at the situation before choosing. What relevant information does the group need for planning? Choose an answer and explain why. After selecting, read all three rationales and the ending, then compare them with your own report and confirmation."
   }
 ]
