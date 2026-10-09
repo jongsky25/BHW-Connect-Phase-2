@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural everyday Filipino (Tagalog) as a warm community health trainer. Keep one stable adult female Kore narrator from heading to ending, including quotations; no character voice acting. Use gentle pitch and pace variation. Make event, reported source, correction and still-unknown facts clear; keep every negation audible. Finish all words without adding, translating or promising a solution. Read Carole as written.",
+  "durationSeconds": 53.081,
+  "beats": [
+    {
+      "zone": "missed-visits",
+      "index": 0,
+      "text": "Nakinig si Carole sa tatlong pamilyang hindi nakapunta. Ulat nila ito; hindi pa nasusuri ang attendance record.",
+      "start_ms": 0,
+      "end_ms": 8000
+    },
+    {
+      "zone": "worked-example",
+      "index": 1,
+      "text": "Hindi pagpunta ang pangyayari. Hula ang ayaw pumunta. Solusyon ang poster. Ihiwalay ang tatlo.",
+      "start_ms": 8300,
+      "end_ms": 17500
+    },
+    {
+      "zone": "source-gap",
+      "index": 2,
+      "text": "Itinala ni Carole kung sino ang nagsabi. Hindi pa tiyak ang petsa at hadlang ng bawat pamilya.",
+      "start_ms": 17800,
+      "end_ms": 23840
+    },
+    {
+      "zone": "resident-perspective",
+      "index": 3,
+      "text": "Nilinaw ng unang residente: Martes, hindi Lunes. Hindi tiyak ang pagkansela. Itinala ni Carole ang pagwawasto.",
+      "start_ms": 24140,
+      "end_ms": 33060
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Sa triad, isulat ang pangyayari, pinagmulan at kulang. Magtanong, mag-feedback at ulitin nang walang paninisi.",
+      "start_ms": 33360,
+      "end_ms": 42320
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Ayon sa tatlong pamilya, hindi sila nakapunta. Iniulat na Martes ang una. Kulang pa ang rekord at bawat hadlang. Walang hinulaang sanhi.",
+      "start_ms": 42620,
+      "end_ms": 53020
+    }
+  ],
+  "audio_sha256": "41da543b491d90aad78d39dd2af5c6ada811e9fc2a20f0dc1c54943f4e3b10f5"
+}

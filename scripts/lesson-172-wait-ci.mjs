@@ -8,9 +8,9 @@ while(Date.now()<deadline){
  const {workflow_runs:runs}=await response.json();const checks=['CI','Remotion clips'].map(name=>runs.filter(r=>r.name===name&&r.head_sha===sha&&r.event==='pull_request').sort((a,b)=>b.id-a.id)[0]);
  if(checks.some(r=>r?.status==='completed'&&r.conclusion!=='success'))throw Error('Required exact-head regression failed; inspect current PR checks');
  if(checks.every(r=>r?.status==='completed'&&r.conclusion==='success')){
-  const report={status:'passed',head_sha:sha,verified_at:new Date().toISOString(),runs:checks.map(r=>({name:r.name,id:r.id,url:r.html_url,conclusion:r.conclusion,run_attempt:r.run_attempt})),complete_Remotion_registry:86};
-  fs.mkdirSync('.preview/lesson172-deliverables',{recursive:true});fs.writeFileSync('.preview/lesson172-deliverables/lesson-172-final-ci.json',JSON.stringify(report,null,2)+'\n');console.log('Normal CI and complete 86-composition Remotion regression passed at '+sha);process.exit(0);
+  const report={status:'passed',head_sha:sha,verified_at:new Date().toISOString(),runs:checks.map(r=>({name:r.name,id:r.id,url:r.html_url,conclusion:r.conclusion,run_attempt:r.run_attempt})),complete_Remotion_registry:88};
+  fs.mkdirSync('.preview/lesson172-deliverables',{recursive:true});fs.writeFileSync('.preview/lesson172-deliverables/lesson-172-final-ci.json',JSON.stringify(report,null,2)+'\n');console.log('Normal CI and complete 88-composition Remotion regression passed at '+sha);process.exit(0);
  }
- console.log('Waiting for normal CI and all 86 compositions at '+sha);await new Promise(r=>setTimeout(r,30000));
+ console.log('Waiting for normal CI and all 88 compositions at '+sha);await new Promise(r=>setTimeout(r,30000));
 }
 throw Error('Complete exact-head CI did not finish within 30 minutes');

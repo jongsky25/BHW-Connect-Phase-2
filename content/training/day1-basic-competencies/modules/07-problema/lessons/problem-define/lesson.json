@@ -18,9 +18,11 @@
       "concept_ids": [
         "m7.define"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Tukuyin ang problema gamit ang pangyayari at ebidensya, hindi husga sa tao.",
-      "takeaway_en": "Define the problem using events and evidence rather than judgments about people.",
+      "asset_ids": [
+        "define-missed-visits"
+      ],
+      "takeaway_fil": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+      "takeaway_en": "Describe the event, source and gap without blame.",
       "check": null
     },
     {
@@ -28,9 +30,35 @@
       "concept_ids": [
         "m7.define"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
-      "takeaway_en": "Describe the event and evidence before choosing a cause or solution.",
+      "asset_ids": [
+        "define-worked-example"
+      ],
+      "takeaway_fil": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+      "takeaway_en": "Describe the event, source and gap without blame.",
+      "check": null
+    },
+    {
+      "id": "source-gap",
+      "concept_ids": [
+        "m7.define"
+      ],
+      "asset_ids": [
+        "define-source-gap"
+      ],
+      "takeaway_fil": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+      "takeaway_en": "Describe the event, source and gap without blame.",
+      "check": null
+    },
+    {
+      "id": "resident-perspective",
+      "concept_ids": [
+        "m7.define"
+      ],
+      "asset_ids": [
+        "define-resident-perspective"
+      ],
+      "takeaway_fil": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+      "takeaway_en": "Describe the event, source and gap without blame.",
       "check": null
     },
     {
@@ -38,9 +66,11 @@
       "concept_ids": [
         "m7.define"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
-      "takeaway_en": "Describe the event and evidence before choosing a cause or solution.",
+      "asset_ids": [
+        "define-practice"
+      ],
+      "takeaway_fil": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+      "takeaway_en": "Describe the event, source and gap without blame.",
       "check": null
     },
     {
@@ -48,9 +78,11 @@
       "concept_ids": [
         "m7.define"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
-      "takeaway_en": "Describe the event and evidence before choosing a cause or solution.",
+      "asset_ids": [
+        "define-check"
+      ],
+      "takeaway_fil": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+      "takeaway_en": "Describe the event, source and gap without blame.",
       "check": {
         "prompt_fil": "Aling pahayag ang magandang simula ng pagsisiyasat?",
         "prompt_en": "Which statement is a useful starting point for investigation?",
@@ -69,8 +101,8 @@
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "Ang ikatlong sagot ay tiyak at bukas sa ebidensya. Ang poster ay solusyong hindi pa nasusuri; ang pahayag tungkol sa kagustuhan ay husga, hindi obserbasyon.",
-        "feedback_en": "The third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation."
+        "feedback_fil": "Una: ang bagong poster ay solusyong hindi pa nasusuri, hindi paglalarawan ng problema. Ikalawa: ang “ayaw gumaling” ay husga sa motibo, hindi obserbasyon. Ikatlo: tiyak ang pangyayari at bukas sa pagsisiyasat ng hadlang; ito ang angkop na simula. Idagdag ang pinagmulan at kulang. Iwinastong pahayag: ayon sa direktang ulat ng tatlong kabahayan kay Carole, hindi sila nakapunta sa napagkasunduang pagbisita. Itinama ng unang residente ang iniulat na araw sa Martes. Hindi pa nasusuri ang attendance record, eksaktong petsa at hadlang ng bawat isa. Kinumpirma lamang ng residente ang buod ng sarili niyang sinabi, hindi ang attendance o pagkansela. Walang hinulaang sanhi o ipinangakong solusyon.",
+        "feedback_en": "First: a new poster is an untested solution, not a problem description. Second: “do not want to get well” judges motivation rather than observing events. Third: it names a specific event and invites investigation of the barrier; this is the useful starting point. Add source and gap. Corrected statement: according to three households’ direct reports to Carole, they missed agreed visits. The first resident corrected the reported day to Tuesday. The attendance record, exact dates and each household’s barrier remain unchecked. The resident confirmed only the summary of their own report, not attendance or cancellation. No cause is guessed or solution promised."
       }
     }
   ],
@@ -80,18 +112,24 @@
       "read_ids": [
         "missed-visits",
         "worked-example",
+        "source-gap",
+        "resident-perspective",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-missed-visits",
         "slide-worked-example",
+        "slide-source-gap",
+        "slide-resident-perspective",
         "slide-practice",
         "slide-check"
       ],
       "source_ids": [
         "facilitator",
-        "manual"
+        "manual",
+        "deck",
+        "tesda"
       ]
     }
   ],
@@ -113,7 +151,137 @@
         21
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "deck",
+      "title": "DOH Day1 Part1 teaching deck, physical PDF pages59–66",
+      "pdf_pages": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "url": "https://drive.google.com/file/d/1ZDIJiTltEzJVFcy-XSA0NivWNvfAKfhY/view"
+    },
+    {
+      "id": "tesda",
+      "title": "TESDA Barangay Health Services NCII Revision01 (2019), unit400311212",
+      "pdf_pages": [
+        15
+      ],
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "define-missed-visits",
+      "path": "/training/bhw-1-7/define-missed-visits-e5e97739a8c7.png",
+      "content_hash": "e5e97739a8c7b86fc351c5c9b8c0ec80ad89ee255990c73bad4d45948a06f819",
+      "alt_fil": "Si Carole: Tatlong pamilya, ano ang nangyari?. Kathang-isip na pagsasanay.",
+      "alt_en": "Carole: Three households: what happened?. Fictional practice.",
+      "caption_fil": "Tatlong ulat; wala pang attendance record. Hindi pa tiyak ang petsa o hadlang sa bawat pamilya.",
+      "caption_en": "Three reports; no attendance record yet. Each household’s date and barrier remain uncertain.",
+      "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. e5e97739a8c7b86fc351c5c9b8c0ec80ad89ee255990c73bad4d45948a06f819",
+      "review_status": "approved"
+    },
+    {
+      "id": "define-worked-example",
+      "path": "/training/bhw-1-7/define-worked-example-c6fe62ee1a9c.png",
+      "content_hash": "c6fe62ee1a9c648319371af52589fc11d37e67e6685ad958df6c0baa3e7ce741",
+      "alt_fil": "Si Carole: Ihiwalay ang problema sa hula. Kathang-isip na pagsasanay.",
+      "alt_en": "Carole: Separate the problem from a guess. Fictional practice.",
+      "caption_fil": "Pangyayari: hindi nakapunta. Hula: ayaw pumunta. Solusyon: poster.",
+      "caption_en": "Event: missed visits. Guess: unwilling to attend. Solution: poster.",
+      "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. c6fe62ee1a9c648319371af52589fc11d37e67e6685ad958df6c0baa3e7ce741",
+      "review_status": "approved"
+    },
+    {
+      "id": "define-source-gap",
+      "path": "/training/bhw-1-7/define-source-gap-448fed1ca7d4.png",
+      "content_hash": "448fed1ca7d4046e71a2e8cef65a17938f5b7d2c32a58a2e0470571e92bc5d1b",
+      "alt_fil": "Si Carole: Kaninong ulat, anong kulang?. Kathang-isip na pagsasanay.",
+      "alt_en": "Carole: Whose report, which gap?. Fictional practice.",
+      "caption_fil": "Pangyayari at saklaw → pinagmulan → isang malinaw na kulang.",
+      "caption_en": "Event and scope → source → one clear information gap.",
+      "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. 448fed1ca7d4046e71a2e8cef65a17938f5b7d2c32a58a2e0470571e92bc5d1b",
+      "review_status": "approved"
+    },
+    {
+      "id": "define-resident-perspective",
+      "path": "/training/bhw-1-7/define-resident-perspective-da8342dfebfd.png",
+      "content_hash": "da8342dfebfdb7d1a6dc689e4c1748069c8f0c37f694b0f1fcef1135c9883366",
+      "alt_fil": "Si Carole: Bigyan ng pagkakataong magwasto. Kathang-isip na pagsasanay.",
+      "alt_en": "Carole: Let the resident correct the account. Fictional practice.",
+      "caption_fil": "Iwasto ang iniulat na petsa; hindi pa kumpirmado ang rekord.",
+      "caption_en": "Correct the reported date; the record remains unconfirmed.",
+      "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. da8342dfebfdb7d1a6dc689e4c1748069c8f0c37f694b0f1fcef1135c9883366",
+      "review_status": "approved"
+    },
+    {
+      "id": "define-practice",
+      "path": "/training/bhw-1-7/define-practice-058d2aefe3ce.png",
+      "content_hash": "058d2aefe3cea78015e268fb3a4c9c3a5274b3ae1864c31da37260c9c15e10eb",
+      "alt_fil": "Si Carole: Subukan, mag-feedback, saka ulitin. Kathang-isip na pagsasanay.",
+      "alt_en": "Carole: Try, give feedback, then retry. Fictional practice.",
+      "caption_fil": "Isulat → salungguhitan ang pangyayari/pinagmulan/kulang → feedback → ikalawang pagtatangka.",
+      "caption_en": "Write → underline event/source/gap → feedback → second attempt.",
+      "provenance": "Built-in imagegen, pinned Carole and resident-perspective references; revised action scene. No real records. 058d2aefe3cea78015e268fb3a4c9c3a5274b3ae1864c31da37260c9c15e10eb",
+      "review_status": "approved"
+    },
+    {
+      "id": "define-check",
+      "path": "/training/bhw-1-7/define-check-4e11ff99283b.png",
+      "content_hash": "4e11ff99283b80894c680ce100db3bc15e7ef9ea781dc6f093593a9d574a022e",
+      "alt_fil": "Si Carole: Piliin ang susunod na hakbang. Kathang-isip na pagsasanay.",
+      "alt_en": "Carole: Choose the next step. Fictional practice.",
+      "caption_fil": "Piliin muna; pagkatapos, ihambing ang tatlong paliwanag at iwinastong pahayag.",
+      "caption_en": "Choose first; then compare all three rationales and the corrected statement.",
+      "provenance": "Built-in imagegen, pinned Carole and resident-perspective references; revised action scene. No real records. 4e11ff99283b80894c680ce100db3bc15e7ef9ea781dc6f093593a9d574a022e",
+      "review_status": "approved"
+    },
+    {
+      "id": "problem-define-story",
+      "alt_fil": "Anim na narrated beat: inihihiwalay ni Carole ang mga pinagmulan at itinatala ang paglilinaw ng residente nang walang hula.",
+      "alt_en": "Six narrated beats: Carole separates sources and records resident’s clarification without guessing.",
+      "caption_fil": "Iwinastong pahayag na may pinagmulan at tapat na kulang.",
+      "caption_en": "A corrected problem statement with a source and honest unknowns.",
+      "provenance": "Lesson 1.7.1 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-7/problem-define-gemini-fil-6ef3b510d796.mp4",
+          "content_hash": "6ef3b510d796cd5a7140aba5c70966f358bdcf401b9fb5c81bd456d392f3b09d",
+          "duration_s": 54,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-define-gemini-fil-c2bae19f5420.vtt",
+            "content_hash": "c2bae19f5420159e23efada9b214d0a9166b0c9bdbfdab0f3bb9ac5359d17bf2"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg",
+            "content_hash": "790c964b21194eab42332e3c7158ad5e3c137716d78f4ca5ee0ec65c0992fa5d"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-7/problem-define-gemini-en-f62a9bc61edd.mp4",
+          "content_hash": "f62a9bc61edd3d945a1827aef595a0a183e6b3f2fac8c008e6e5007c5a5b43ca",
+          "duration_s": 51,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-define-gemini-en-9d90d5de99e2.vtt",
+            "content_hash": "9d90d5de99e213de051304b77dfd7b6a20993cadf7591652889b8222d1676c4b"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-define-gemini-en-289daa76d962-poster.jpg",
+            "content_hash": "289daa76d96201be1de4da65ee93020bd39adb866dbcd7ef075f6f1d3eff315f"
+          }
+        }
+      },
+      "path": "/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg",
+      "content_hash": "790c964b21194eab42332e3c7158ad5e3c137716d78f4ca5ee0ec65c0992fa5d"
+    }
+  ],
+  "featured_asset_id": "problem-define-story"
 }
