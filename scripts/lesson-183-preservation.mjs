@@ -1,16 +1,18 @@
 // Exact non-target protection and semantic target preservation against the handoff.
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import {beforeProposed183} from './lib/lesson-183-integration.mjs';
 import {createHash} from 'node:crypto';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const sha=b=>createHash('sha256').update(b).digest('hex');
-const b=read('docs/lesson-183-implementation-baseline.json'),handoff=read('docs/lesson-183-handoff-baseline.json');
+const b=read(fs.existsSync('docs/lesson-183-integration-baseline.json')?'docs/lesson-183-integration-baseline.json':'docs/lesson-183-implementation-baseline.json'),handoff=read('docs/lesson-183-handoff-baseline.json');
 const leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/';
 const narrationPath='content/training/day1-basic-competencies/narration.json';
 let count=0;
 for(const [p,h]of Object.entries(b.protected_sha256)){
  if(p===narrationPath)continue;
- assert.equal(sha(fs.readFileSync(p)),h,p);count++;
+ const bytes=fs.lstatSync(p).isSymbolicLink()?Buffer.from(fs.readlinkSync(p)):beforeProposed183(p);
+ assert.equal(sha(bytes),h,p);count++;
 }
 const current=read(narrationPath);
 const stable=v=>{if(Array.isArray(v))return v.map(stable);if(v&&typeof v==='object')return Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])]));return v;};
@@ -37,5 +39,5 @@ for(const lang of ['fil','en']){
 for(const c of old.coverage){const updated=lesson.coverage.find(v=>v.id===c.id);assert.deepEqual(updated.read_ids.filter(x=>x!=='verify-readiness'),c.read_ids);assert.deepEqual(updated.slide_ids.filter(x=>x!=='slide-verify-readiness'),c.slide_ids);assert.deepEqual(updated.source_ids,c.source_ids);}
 assert.deepEqual(lesson.sources,old.sources);
 const rubric=read(leaf+'competency.json').observation_indicators;assert.equal(rubric.length,1);assert.equal(rubric[0].objective_index,0);assert.equal(Object.keys(rubric[0].levels).length,6);
-const report={status:'passed',protected_files:count,manifest_uuid_sources_siblings_registry_ui_provider:'exact preserved hashes',old_narration_selection:'preserved current or in append-only history',original_quiz:'exact prompts/options/correct index 1',read_slides:'six paired full texts',guides:'twelve ordered headings',rubric:'one indicator, six bilingual levels'};
+const report={integrated_main:b.main_commit??b.pinned_main,status:'passed',protected_files:count,manifest_uuid_sources_siblings_registry_ui_provider:'exact preserved hashes',old_narration_selection:'preserved current or in append-only history',original_quiz:'exact prompts/options/correct index 1',read_slides:'six paired full texts',guides:'twelve ordered headings',rubric:'one indicator, six bilingual levels'};
 fs.writeFileSync('docs/lesson-183-preservation.json',JSON.stringify(report,null,2)+'\n');console.log(report);
