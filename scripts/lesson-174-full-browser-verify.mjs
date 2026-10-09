@@ -35,7 +35,7 @@ try{
   for(const pane of ['Facilitator guide','Observation indicator','Evidence']){await page.getByRole('button',{name:pane,exact:true}).click();assert(await page.locator('main').innerText());assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
   await context.close();
  }
- for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const id of ['compare-solutions','review','practice','check']){
+ for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const id of ['compare-solutions','plan','partners','review','practice','check']){
   const context=await browser.newContext();const page=await context.newPage();const anchor=(mode==='slides'?'slide-':'')+id;await page.goto('http://127.0.0.1:4179/?lang='+lang+'&mode='+mode+'&anchor='+anchor);await page.locator('article[data-scene="'+anchor+'"]').waitFor();report.cases.push({language:lang,mode,anchor,resume:true});await context.close();
  }
  for(const lang of ['fil','en'])for(const width of [1280,390]){
