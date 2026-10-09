@@ -1,0 +1,372 @@
+{
+  "prompt_revision": "apple-safety-demonstration-v1",
+  "date": "2026-10-09T08:06:51.821Z",
+  "source_commit": "91290dc2b784bebc29acf7c19daa38033189b921",
+  "model": "gemini-3.8-flash",
+  "expected_full_recordings": 14,
+  "expected_focused_excerpts": 56,
+  "missing_story": true,
+  "decode_only": false,
+  "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "method": "Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.",
+  "records": [
+    {
+      "id": "read-care-before-paperwork-fil",
+      "language": "fil",
+      "source_path": "/training/audio/08-osh/safety-demonstrate/care-before-paperwork.fil.35cc188d6292.mp3",
+      "source_sha256": "ef198cb9064b16ff2ec067c9d63c39f113ac96aa675b5aac4da7e524ff6b1624",
+      "decoded_pcm_sha256": "0df8812e8dbcd2309a44dcbd77c6d8b792a1e1f8f61e136ed4f1abe3fa5edf89",
+      "full_audio_metrics": {
+        "samples": 2298358,
+        "seconds": 95.76491666666666,
+        "rms": 0.14240374172460102,
+        "peak": 0.95794677734375,
+        "quiet_sample_fraction": 0.18737376857739307
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Pangangalaga bago ang papeles",
+          "start_ms": 0,
+          "end_ms": 3160,
+          "samples": 75840,
+          "seconds": 3.16,
+          "rms": 0.13642355349593027,
+          "peak": 0.738006591796875,
+          "quiet_sample_fraction": 0.2573971518987342
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Tanong ni Apple, “Sino ang tatanggap ng report at paano ako makakakuha agad ng medical evaluation?”",
+          "start_ms": 3460,
+          "end_ms": 11060,
+          "samples": 182400,
+          "seconds": 7.6,
+          "rms": 0.16349716065145287,
+          "peak": 0.915740966796875,
+          "quiet_sample_fraction": 0.19617872807017545
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Bago ang duty, kumpirmahin sa awtorisadong trainer o supervisor ang contact, backup kung hindi maabot, at ruta sa kwalipikadong medical provider ayon sa lokal na proseso.",
+          "start_ms": 11360,
+          "end_ms": 24560,
+          "samples": 316800,
+          "seconds": 13.2,
+          "rms": 0.11689810969374081,
+          "peak": 0.6766357421875,
+          "quiet_sample_fraction": 0.1493118686868687
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Huwag mag-imbento ng pangalan, emergency number, partner agreement o oras ng serbisyo.",
+          "start_ms": 24860,
+          "end_ms": 32220,
+          "samples": 176640,
+          "seconds": 7.36,
+          "rms": 0.17506771635808244,
+          "peak": 0.943603515625,
+          "quiet_sample_fraction": 0.17412250905797103
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Kung hindi pa kumpirmado, isulat na hindi pa alam at humingi ng paglilinaw.",
+          "start_ms": 32520,
+          "end_ms": 39040,
+          "samples": 156480,
+          "seconds": 6.52,
+          "rms": 0.15500571825683018,
+          "peak": 0.818267822265625,
+          "quiet_sample_fraction": 0.19076559304703478
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sa simulated exposure, sabihin ang unang hakbang, i-report agad ang pangyayari at ipakita kung paano inaayos ang agarang evaluation.",
+          "start_ms": 39340,
+          "end_ms": 50660,
+          "samples": 271680,
+          "seconds": 11.32,
+          "rms": 0.12768304034409025,
+          "peak": 0.95794677734375,
+          "quiet_sample_fraction": 0.16244478798586573
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Magkahiwalay ang agarang pangangalaga at susunod na documentation: hindi kailangang matapos muna ang administrative form bago humingi ng pagsusuri.",
+          "start_ms": 50960,
+          "end_ms": 60520,
+          "samples": 229440,
+          "seconds": 9.56,
+          "rms": 0.1616987985212416,
+          "peak": 0.93011474609375,
+          "quiet_sample_fraction": 0.09607740585774059
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Hindi dahilan para maghintay ang kawalan ng sintomas.",
+          "start_ms": 60820,
+          "end_ms": 64940,
+          "samples": 98880,
+          "seconds": 4.12,
+          "rms": 0.15208653527712393,
+          "peak": 0.836700439453125,
+          "quiet_sample_fraction": 0.12693163430420712
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Ihanda pagkatapos ang kaugnay na incident details ayon sa lokal na proseso.",
+          "start_ms": 65240,
+          "end_ms": 71400,
+          "samples": 147840,
+          "seconds": 6.16,
+          "rms": 0.13685894452030758,
+          "peak": 0.911163330078125,
+          "quiet_sample_fraction": 0.15723079004329005
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Ang reporting contact ang tumutulong sa pag-aayos ng evaluation pathway; ang kwalipikadong provider ang nagpapasya sa assessment at paggamot.",
+          "start_ms": 71700,
+          "end_ms": 82260,
+          "samples": 253440,
+          "seconds": 10.56,
+          "rms": 0.1420122123637359,
+          "peak": 0.8822021484375,
+          "quiet_sample_fraction": 0.16654434974747476
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Hindi natin ipagpapalagay na tapos na ang medical care o ligtas na bumalik sa trabaho.",
+          "start_ms": 82560,
+          "end_ms": 89520,
+          "samples": 167040,
+          "seconds": 6.96,
+          "rms": 0.14854349863097835,
+          "peak": 0.93170166015625,
+          "quiet_sample_fraction": 0.16103328544061302
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Hindi dapat maantala ng forms ang agarang reporting at medical evaluation.",
+          "start_ms": 89820,
+          "end_ms": 95700,
+          "samples": 141120,
+          "seconds": 5.88,
+          "rms": 0.1340706721947021,
+          "peak": 0.85284423828125,
+          "quiet_sample_fraction": 0.11053713151927437
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.46,
+          "end": 11.06,
+          "file": "read-care-before-paperwork-fil-name.wav",
+          "excerpt_sha256": "5d071a96672c4240827f77f270913eacba5aa752f0efa99ef206b95bbde1dec4",
+          "decoded_sample_count": 182400,
+          "expected_context": "Tanong ni Apple, “Sino ang tatanggap ng report at paano ako makakakuha agad ng medical evaluation?”",
+          "model_response": "```json\n{\n  \"transcript\": \"Tanong ni Apple, sino ang tatanggap ng report at paano ako makakakuha agad ng medical evaluation?\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced phonetically closer to Tagalog 'Apol' [ˈʔa.pol] rather than English 'Apple' [ˈæ.pəl].\",\n    \"negation\": \"No negative words or negation markers are present in this excerpt.\",\n    \"role_distinctions\": \"The narrator voice reads both the narrative attribution ('Tanong ni Apple') and the dialogue/question seamlessly in a consistent character voice.\",\n    \"ending_completeness\": \"The audio concludes naturally after 'medical evaluation' without premature cutoffs or truncated syllables.\",\n    \"audible_speech\": \"The entire sentence is clearly audible, intelligible, and well-enunciated.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; pacing, pitch, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.46,
+          "end": 11.06,
+          "file": "read-care-before-paperwork-fil-body.wav",
+          "excerpt_sha256": "5d071a96672c4240827f77f270913eacba5aa752f0efa99ef206b95bbde1dec4",
+          "decoded_sample_count": 182400,
+          "expected_context": "Tanong ni Apple, “Sino ang tatanggap ng report at paano ako makakakuha agad ng medical evaluation?”",
+          "model_response": "```json\n{\n \"transcript\": \"Tanong ni Apple, Sino ang tatanggap ng report? At paano ako makakakuha agad ng medical evaluation?\",\n \"observations\": {\n  \"apple_pronunciation\": \"The name 'Apple' is pronounced clearly in Tagalog phonology as [ˈʔa.pol].\",\n  \"negation\": \"None present in the excerpt.\",\n  \"role_distinctions\": \"The speaker delivers the introductory narrative attribution ('Tanong ni Apple,') followed by the spoken questions of the character with natural continuation in a single voice.\",\n  \"ending_completeness\": \"The utterance concludes fully and naturally at 'evaluation' without premature cutoff.\",\n  \"audible_speech\": \"All words are clearly audible and intelligible throughout the clip.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"None observed; pacing, tone, and volume are consistent.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 11.36,
+          "end": 32.22,
+          "file": "read-care-before-paperwork-fil-critical.wav",
+          "excerpt_sha256": "1197b9f596d6af7bcb34fa66f51bdb9233773e116cf65fdf18d26a5d3ec77252",
+          "decoded_sample_count": 500640,
+          "expected_context": "Bago ang duty, kumpirmahin sa awtorisadong trainer o supervisor ang contact, backup kung hindi maabot, at ruta sa kwalipikadong medical provider ayon sa lokal na proseso. Huwag mag-imbento ng pangalan, emergency number, partner agreement o oras ng serbisyo.",
+          "model_response": "```json\n{\n  \"transcript\": \"Bago ang duty, kumpirmahin sa awtorisadong trainer o supervisor ang contact, back-up kung hindi maabot, at ruta sa kwalipikadong medical provider ayon sa lokal na proseso. Huwag mag-imbento ng pangalan, emergency number, partner agreement, o oras ng serbisyo.\",\n  \"observations\": {\n    \"audible_speech\": \"Malinaw at buo ang boses at bigkas ng mga salita sa buong audio.\",\n    \"speaker_change\": \"May kapansin-pansing pagpapalit ng tagapagsalita bandang 00:13; ang unang bahagi (00:00–00:12.8) ay binasa ng isang babaeng boses sa mas mataas na pitch, habang ang sumunod na bahagi (00:13.4–00:20.9) ay binasa ng mas mababang boses (posibleng lalaki o ibang register/speaker).\",\n    \"negation\": \"Malinaw na naipahayag ang mga salitang pagtanggi o pagbabawal: 'hindi' sa 00:07 at 'Huwag' sa 00:13.5.\",\n    \"ending_completeness\": \"Buo at malinis ang pagtatapos sa huling salitang 'serbisyo' nang walang clipping o pagkaputol.\",\n    \"clipped_words\": \"Walang naputol o na-clip na salita sa simula o dulo ng recording.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp\": \"00:13.00 - 00:13.40\",\n      \"type\": \"unexpected_voice_change\",\n      \"description\": \"Biglaang pagbabago sa boses at tono ng tagapagsalita (mula sa mas mataas na boses patungo sa mas mababang boses) nang walang background audio transition.\"\n    }\n  ],\n  \"uncertainty\": \"Maliit ang kawalan ng katiyakan sa transkripsyon dahil napakalinaw ng bawat salita. Hindi tiyak kung ang pagbabago ng boses bandang 00:13 ay intensyonal na pagpapalit ng tauhan/role o magkahiwalay na take na pinagdugtong.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 71.7,
+          "end": 95.76491666666666,
+          "file": "read-care-before-paperwork-fil-ending.wav",
+          "excerpt_sha256": "c924fe4dd52f6d4deaac88894f455510f36f3263de882a2c1366ee8457a9fd85",
+          "decoded_sample_count": 577558,
+          "expected_context": "Ang reporting contact ang tumutulong sa pag-aayos ng evaluation pathway; ang kwalipikadong provider ang nagpapasya sa assessment at paggamot. Hindi natin ipagpapalagay na tapos na ang medical care o ligtas na bumalik sa trabaho. Hindi dapat maantala ng forms ang agarang reporting at medical evaluation.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ang reporting contact ang tumutulong sa pag-aayos ng evaluation pathway. Ang kwalipikadong provider ang nagpapasiya sa assessment at paggamot. Hindi natin ipagpapalagay na tapos na ang medical care, o ligtas na bumalik sa trabaho. Hindi dapat maantala ng forms ang agarang reporting at medical evaluation.\",\n  \"observations\": {\n    \"speaker\": \"Single female narrator speaking clearly at a measured instructional pace.\",\n    \"role_distinctions\": \"Clearly distinguishes between the responsibilities of the 'reporting contact' (evaluation pathway setup) and the 'kwalipikadong provider' (assessment and treatment decisions).\",\n    \"negation\": \"Clear and well-enunciated negation particles ('Hindi natin ipagpapalagay' at 00:11–00:13, 'Hindi dapat maantala' at 00:18–00:20).\",\n    \"english_loanwords_pronunciation\": \"English technical terms ('reporting contact', 'evaluation pathway', 'provider', 'assessment', 'medical care', 'forms', 'medical evaluation') are pronounced naturally with standard Filipino-English accentuation.\",\n    \"ending_completeness\": \"The audio concludes naturally with full phonetic completion on 'evaluation' without premature cutoff.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"None; tone and acoustic profile remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is fully intelligible and clean.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-check-fil",
+      "language": "fil",
+      "source_path": "/training/audio/08-osh/safety-demonstrate/check.fil.d5d395d85991.mp3",
+      "source_sha256": "f1dbb03deee4544416301f722c26cdf525395daf4498acd59a1ce6c2b8264791",
+      "decoded_pcm_sha256": "b5e49d21bae10f3b118e5fd9ec93faea1db5954f55c35a6e60ef5619f3eb2844",
+      "full_audio_metrics": {
+        "samples": 1232562,
+        "seconds": 51.35675,
+        "rms": 0.13364529319380927,
+        "peak": 0.91070556640625,
+        "quiet_sample_fraction": 0.2024936676613428
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Piliin ang susunod na hakbang",
+          "start_ms": 0,
+          "end_ms": 2560,
+          "samples": 61440,
+          "seconds": 2.56,
+          "rms": 0.12854091548210983,
+          "peak": 0.76983642578125,
+          "quiet_sample_fraction": 0.2869140625
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sa larawan ng kunwaring practice, naghahanda si Apple na mag-report; walang tunay na sugat o karayom.",
+          "start_ms": 2860,
+          "end_ms": 9940,
+          "samples": 169920,
+          "seconds": 7.08,
+          "rms": 0.10935290029657004,
+          "peak": 0.8880615234375,
+          "quiet_sample_fraction": 0.15047669491525423
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Basahin ang tanong at piliin ang susunod na hakbang.",
+          "start_ms": 10240,
+          "end_ms": 14360,
+          "samples": 98880,
+          "seconds": 4.12,
+          "rms": 0.169029462859786,
+          "peak": 0.776885986328125,
+          "quiet_sample_fraction": 0.20052588996763754
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ipaliwanag muna kung bakit bago tingnan ang feedback.",
+          "start_ms": 14660,
+          "end_ms": 18900,
+          "samples": 101760,
+          "seconds": 4.24,
+          "rms": 0.14103049669622958,
+          "peak": 0.82763671875,
+          "quiet_sample_fraction": 0.2025058962264151
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ang kawalan ng sintomas ay hindi patunay ng kaligtasan.",
+          "start_ms": 19200,
+          "end_ms": 23480,
+          "samples": 102720,
+          "seconds": 4.28,
+          "rms": 0.14726698307434194,
+          "peak": 0.8193359375,
+          "quiet_sample_fraction": 0.13427764797507788
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ihambing pagkatapos ang paliwanag sa sariling practice attempt.",
+          "start_ms": 23780,
+          "end_ms": 28500,
+          "samples": 113280,
+          "seconds": 4.72,
+          "rms": 0.14348532982870735,
+          "peak": 0.819427490234375,
+          "quiet_sample_fraction": 0.15821857344632767
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Hindi katibayan ng observed competence ang pag-click sa tamang sagot.",
+          "start_ms": 28800,
+          "end_ms": 34000,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.12871942807478567,
+          "peak": 0.731353759765625,
+          "quiet_sample_fraction": 0.1670352564102564
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Kailangan pa rin ang trainer-observed dummy demonstration at ligtas na reporting at evaluation response.",
+          "start_ms": 34300,
+          "end_ms": 42620,
+          "samples": 199680,
+          "seconds": 8.32,
+          "rms": 0.1342576628729791,
+          "peak": 0.91070556640625,
+          "quiet_sample_fraction": 0.12995793269230768
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.",
+          "start_ms": 42920,
+          "end_ms": 51280,
+          "samples": 200640,
+          "seconds": 8.36,
+          "rms": 0.13927190442218348,
+          "peak": 0.88238525390625,
+          "quiet_sample_fraction": 0.13955342902711323
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 2.86,
+          "end": 9.94,
+          "file": "read-check-fil-name.wav",
+          "excerpt_sha256": "196fcc7b13606cc152a356857c102fb45ed61c66ce0fe0d87d9b218fa3fae769",
+          "decoded_sample_count": 169920,
+          "expected_context": "Sa larawan ng kunwaring practice, naghahanda si Apple na mag-report; walang tunay na sugat o karayom.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa larawan ng kunwaring practice, naghahanda si Apple na mag-report. Walang tunay na sugat o karayom.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' at 00:02.9 - 00:03.3 is pronounced clearly as an English loanword adaptation ('A-pol' / [ˈæpəl]).\",\n    \"negation\": \"The negative marker 'Walang' is distinctly articulated at 00:04.4 - 00:04.9.\",\n    \"role_distinctions\": \"A single narrator voice delivers the entire excerpt in a measured, instructional tone.\",\n    \"ending_completeness\": \"The audio concludes naturally with full decay after 'karayom' at approximately 00:06.8 without truncation.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and pacing remain consistent across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.86,
+          "end": 9.94,
+          "file": "read-check-fil-body.wav",
+          "excerpt_sha256": "196fcc7b13606cc152a356857c102fb45ed61c66ce0fe0d87d9b218fa3fae769",
+          "decoded_sample_count": 169920,
+          "expected_context": "Sa larawan ng kunwaring practice, naghahanda si Apple na mag-report; walang tunay na sugat o karayom.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa larawan ng kunwaring practice, naghahanda si Apple na mag-report. Walang tunay na sugat o karayom.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced with standard English phonology (/ˈæp.əl/) between 00:02.9 and 00:03.4.\",\n    \"negation\": \"The negative marker 'Walang' is clearly articulated at 00:04.2 - 00:04.7.\",\n    \"role_distinctions\": \"Single consistent narrative voice maintaining an educational/descriptive delivery throughout.\",\n    \"ending_completeness\": \"The final word 'karayom' concludes completely at 00:06.4 with a natural cadence and trailing silence up to 00:07.4.\",\n    \"audible_speech\": \"All words are clearly enunciated with clean studio quality and no background noise.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; pitch, pace, and vocal timbre remain uniform.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is high and speech is fully intelligible.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 19.2,
+          "end": 28.5,
+          "file": "read-check-fil-critical.wav",
+          "excerpt_sha256": "8cc1f89775e95bf48afdbb427ef22d65c94fb33ddfd9feccc35b437d8a176d11",
+          "decoded_sample_count": 223200,
+          "expected_context": "Ang kawalan ng sintomas ay hindi patunay ng kaligtasan. Ihambing pagkatapos ang paliwanag sa sariling practice attempt.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ang kawalan ng sintomas ay hindi patunay ng kaligtasan. Ihambing pagkatapos ang paliwanag sa sariling practice attempt.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00.00 - 00:03.78\",\n      \"speaker\": \"Speaker 1 (Male)\",\n      \"text\": \"Ang kawalan ng sintomas ay hindi patunay ng kaligtasan.\",\n      \"notes\": \"Clear negation with 'hindi patunay'.\"\n    },\n    {\n      \"timestamp\": \"00:03.78 - 00:04.50\",\n      \"speaker\": null,\n      \"text\": \"\",\n      \"notes\": \"Silence/pause between speakers.\"\n    },\n    {\n      \"timestamp\": \"00:04.50 - 00:08.85\",\n      \"speaker\": \"Speaker 2 (Female)\",\n      \"text\": \"Ihambing pagkatapos ang paliwanag sa sariling practice attempt.\",\n      \"notes\": \"Clean English loan words 'practice attempt' articulated clearly at the end.\"\n    }\n  ],\n  \"possible_defects\": [\n    {\n      \"type\": \"speaker_change\",\n      \"timestamp\": \"00:04.50\",\n      \"description\": \"Noticeable voice shift from an adult male voice delivering content to an adult female instructional voice.\"\n    }\n  ],\n  \"uncertainty\": \"None; all audible speech is clear and distinct.\"\n}\n```"
+        }
+      ]
+    }
+  ]
+}

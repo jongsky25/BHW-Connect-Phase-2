@@ -1,3 +1,4 @@
+import {beforeLesson184} from '../lib/lesson-184-integration.mjs';
 // @vitest-environment node
 import {describe, it, expect} from 'vitest';
 import fs from 'node:fs';
@@ -7,7 +8,7 @@ import {beforeLesson172} from '../lib/lesson-172-integration.mjs';
 import {planReferenceNarration} from '../lib/reference-narration.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/';
-const json=p=>JSON.parse(fs.readFileSync(p));
+const json=p=>JSON.parse(beforeLesson184(p));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const baseline=json('docs/lesson-172-implementation-baseline.json');
 const receipt=json('docs/lesson-172-proposal-receipt.json');
@@ -77,7 +78,7 @@ describe('Carole lesson 1.7.2 scoped draft',()=>{
   const old=JSON.parse(beforeLesson172(path)),actual=json(path);
   for(const [key,selection]of Object.entries(old.lessons))if(key!=='problem-causes')expect(actual.lessons[key],key).toEqual(selection);
   for(const [key,history]of Object.entries(old.history??{}))if(key!=='problem-causes')expect(actual.history[key],key).toEqual(history);
-  const registryPath='remotion/src/Root.tsx',source=fs.readFileSync(registryPath,'utf8');
+  const registryPath='remotion/src/Root.tsx',source=beforeLesson184(registryPath).toString();
   expect(source).toContain('ProblemCausesStoryFil');
   {
    const restored=source.replace(/^import \{ProblemCausesStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`problem-causes-[\s\S]+?      \)\)\}\n/,'');

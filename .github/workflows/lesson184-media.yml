@@ -6,6 +6,8 @@ on:
       - '.github/workflows/lesson184-media.yml'
       - 'scripts/lesson-184-media-build.mjs'
       - 'scripts/lesson-184-audio-*.mjs'
+      - 'scripts/remotion-safety-demonstrate-narrate.mjs'
+      - 'remotion/src/safety-demonstrate/**'
       - 'content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/**'
 permissions:
   contents: read
@@ -38,6 +40,9 @@ jobs:
         run: npm ci
       - if: steps.scope.outputs.generate == 'true'
         run: npm ci
+        working-directory: remotion
+      - if: steps.scope.outputs.generate == 'true'
+        run: npx remotion browser ensure
         working-directory: remotion
       - name: Bounded read-only published content snapshot
         if: steps.scope.outputs.generate == 'true'
@@ -76,6 +81,10 @@ jobs:
             lesson-184-published-snapshot.json
             content/training/day1-basic-competencies/narration.json
             public/training/audio/08-osh/safety-demonstrate/
+            content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json
+            public/training/bhw-1-8/safety-demonstrate-*
+            remotion/public/safety-demonstrate/narration-*
+            remotion/public/safety-demonstrate/shipped-aac-*
             docs/lesson-184-media-generation.json
             docs/lesson-184-audio-*.json
             .preview/lesson184-raw/

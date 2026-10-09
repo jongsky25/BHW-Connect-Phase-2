@@ -28,3 +28,20 @@ const plan=planReferenceNarration([{key:'08-osh',lessons}],current,src=>fs.exist
 const pending=plan.filter(p=>p.action!=='skip').map(p=>`${p.sectionId}/${p.language}`);
 fs.writeFileSync('docs/lesson-184-media-generation.json',JSON.stringify({source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),date:new Date().toISOString(),provider:'gemini:gemini-3.8-flash-tts:Kore',expected_read_tracks:12,completed_read_tracks:12-pending.length,pending,error,story_status:'blocked: coordinated Apple reference and final scenes unavailable',human_listening:'pending',clinical_review:'pending',owner_approval:'pending'},null,2)+'\n');
 if(pending.length)process.exitCode=1;
+// Story uses the same pinned fictional reference/actions; no clinical outcomes.
+if(!pending.length){
+ const leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json';
+ const lesson=JSON.parse(fs.readFileSync(leaf));
+ const story={id:'safety-demonstrate-story',alt_fil:'Anim na beat: trainer-observed dummy demo ni Apple, agarang reporting/evaluation at documentation pagkatapos ng care.',alt_en:'Six beats: Apple’s trainer-observed dummy demo, immediate reporting/evaluation and documentation following care.',caption_fil:'Kathang-isip na demonstration at referral simulation; walang medical outcome.',caption_en:'Fictional demonstration and referral simulation; no medical outcome.',provenance:'Six built-in imagegen actions using the coordinated Apple reference; Gemini Kore narration, measured encoded samples; draft pending owner, clinical and human-listening review.',review_status:'draft',videos:{}};
+ for(const language of ['fil','en']){
+  execFileSync(process.execPath,['scripts/remotion-safety-demonstrate-narrate.mjs',language],{stdio:'inherit'});
+  const name='safety-demonstrate-gemini-'+language;
+  execFileSync(process.execPath,['scripts/remotion-render.mjs',language==='fil'?'SafetyDemonstrateStoryFil':'SafetyDemonstrateStoryEn',name,'--public','training/bhw-1-8','--with-audio','--captions',`safety-demonstrate/narration-${language}.json`],{stdio:'inherit'});
+  const media=ext=>{const p='remotion/out/'+name+ext,h=sha(p);return{path:'/training/bhw-1-8/'+name+'-'+h.slice(0,12)+ext,content_hash:h};};
+  const timing=JSON.parse(fs.readFileSync(`remotion/public/safety-demonstrate/narration-${language}.json`));
+  story.videos[language]={...media('.mp4'),duration_s:Math.round((timing.durationSeconds+1.1)*30)/30,poster:media('-poster.jpg'),captions:media('.vtt')};
+  if(language==='fil')Object.assign(story,media('-poster.jpg'));
+ }
+ lesson.assets=lesson.assets.filter(a=>a.id!==story.id).concat(story);lesson.featured_asset_id=story.id;fs.writeFileSync(leaf,JSON.stringify(lesson,null,2)+'\n');
+ const report=JSON.parse(fs.readFileSync('docs/lesson-184-media-generation.json'));report.story_status='two actual H.264/AAC draft stories generated; reviews pending';report.story_videos=story.videos;fs.writeFileSync('docs/lesson-184-media-generation.json',JSON.stringify(report,null,2)+'\n');
+}
