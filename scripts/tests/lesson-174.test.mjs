@@ -42,10 +42,15 @@ describe('Carole action-plan draft',()=>{
  },30000);
  it('uses strict exact successor guards before historical views',()=>{
   const r=j('docs/lesson-174-proposal-receipt.json'),base=j('docs/lesson-174-integrated-baseline.json').base_commit;
+  const paths=Object.keys(r.changed_existing_files);
+  const packed=execFileSync('git',['cat-file','--batch'],{input:paths.map(p=>base+':'+p).join('\n')+'\n',maxBuffer:32*1024*1024});
+  const originals=new Map();let offset=0;
+  for(const p of paths){const end=packed.indexOf(10,offset),header=packed.subarray(offset,end).toString().split(' ');expect(header[1]).toBe('blob');const size=Number(header[2]);expect(Number.isSafeInteger(size)).toBe(true);originals.set(p,packed.subarray(end+1,end+1+size));offset=end+size+2;}
+  expect(offset).toBe(packed.length);
   for(const [p,e]of Object.entries(r.changed_existing_files)){
    expect(sha(bytes(p))).toBe(e.proposed_sha256);
    expect(sha(beforeProposed174(p))).toBe(e.predecessor_sha256);
-   expect(beforeProposed174(p)).toEqual(execFileSync('git',['show',base+':'+p],{maxBuffer:32*1024*1024}));
+   expect(beforeProposed174(p)).toEqual(originals.get(p));
    expect(()=>beforeProposed174(p,Buffer.from('changed'))).toThrow('Unpinned');
   }
   expect(r.owner_release_approval).toBe(false);
