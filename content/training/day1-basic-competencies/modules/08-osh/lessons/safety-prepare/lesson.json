@@ -47,6 +47,18 @@
       "check": null
     },
     {
+      "id": "verify-readiness",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice",
+        "m8.requirements"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Beripikahin ang kondisyon at pasya; hindi pa ready ang hindi pa nakumpirma.",
+      "takeaway_en": "Verify conditions and the decision; unconfirmed conditions are not ready.",
+      "check": null
+    },
+    {
       "id": "practice",
       "concept_ids": [
         "m8.prepare",
@@ -70,8 +82,8 @@
         "m8.requirements"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
-      "takeaway_en": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+      "takeaway_fil": "May ligtas na alternatibong napagkasunduan sa role-play; nakikita pa rin ang hindi pa ready bago magsimula.",
+      "takeaway_en": "The role-play has an agreed safe alternative; conditions that are not ready remain visible before work begins.",
       "check": {
         "prompt_fil": "May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?",
         "prompt_en": "There is a threat on the route but many visits remain. What is safe?",
@@ -90,8 +102,8 @@
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "Ang ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.",
-        "feedback_en": "The second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known."
+        "feedback_fil": "Una: Ang pagtuloy mag-isa ay pagpasok pa rin sa banta; hindi dahilan ang target. Ikalawa: Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor; kailangan pang kumpirmahin ang kondisyon bago umalis. Ikatlo: Ang hindi pagpapaalam ng bagong ruta ay nag-iiwan sa contact na walang tamang impormasyon tungkol sa lokasyon at oras ng balik. Sa kathang-isip na role-play, napagkasunduan ang mock station briefing muna at pagpapaliban ng apektadong visit. Hindi pa nakumpirma ang bagong ruta at visit contact: hindi pa ready ang visit at hindi ipinapalagay na nawala ang banta. Ulitin ang kasunduan at beripikahin bago magsimula.",
+        "feedback_en": "First: Continuing alone still enters the threat; the target does not justify it. Second: Avoid the threat and arrange an alternative with the supervisor; conditions still need confirmation before departure. Third: Not reporting a new route leaves the contact without accurate location and return-time information. In the fictional role-play, the agreed alternative is a mock station briefing and deferral of the affected visit. The new route and visit contact are unconfirmed: the visit is not ready and the threat is not assumed to have vanished. Repeat the agreement and verify before starting."
       }
     }
   ],
@@ -101,12 +113,14 @@
       "read_ids": [
         "station-preparation",
         "combined-hazards",
+        "verify-readiness",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-station-preparation",
         "slide-combined-hazards",
+        "slide-verify-readiness",
         "slide-practice",
         "slide-check"
       ],
@@ -119,11 +133,13 @@
       "id": "m8.practice",
       "read_ids": [
         "station-preparation",
+        "verify-readiness",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-station-preparation",
+        "slide-verify-readiness",
         "slide-practice",
         "slide-check"
       ],
@@ -170,11 +186,13 @@
       "id": "m8.requirements",
       "read_ids": [
         "combined-hazards",
+        "verify-readiness",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-combined-hazards",
+        "slide-verify-readiness",
         "slide-practice",
         "slide-check"
       ],

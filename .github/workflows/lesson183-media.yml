@@ -1,0 +1,62 @@
+name: Lesson 1.8.3 draft narration
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson183-media.yml'
+      - 'scripts/lesson-183-narrate.mjs'
+      - 'content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.*.md'
+      - 'content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json'
+permissions:
+  contents: read
+concurrency:
+  group: lesson183-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-183-apple-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Read-only published baseline
+        continue-on-error: true
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-183-published-snapshot.mjs
+      - name: Generate target Gemini Kore narration
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON183_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-183-record-fetch.mjs'
+        run: node scripts/lesson-183-narrate.mjs
+      - name: Review full recordings and four measured excerpts each
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON183_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-183-record-fetch.mjs'
+        run: node scripts/lesson-183-audio-review.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson183-draft-narration
+          include-hidden-files: true
+          retention-days: 30
+          path: |
+            lesson-183-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            public/training/audio/08-osh/safety-prepare/
+            docs/lesson-183-media-generation.json
+            docs/lesson-183-audio-review.json
+            .preview/lesson183-raw/
+            .preview/lesson183-audio/

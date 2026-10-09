@@ -2,15 +2,15 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan.",
-      "observable_en": "Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning.",
+      "observable_fil": "Kumpleto ang limang field; natutukoy ang apektadong gawain na ihihinto, ligtas na alternatibo at awtorisadong contact; kasama ang heat, ruta at balik; may batayan ng ready/hindi pa ready at tapat na hindi pa nakumpirma; inuulit ang briefing matapos ang feedback.",
+      "observable_en": "Completes five fields; identifies the affected work to pause, safe alternative and authorized contact; includes heat, route and return time; records evidence for ready/not-ready and honest unknowns; repeats the briefing after feedback.",
       "not_yet_fil": "Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.",
       "not_yet_en": "Continues an unsafe route or unprotected task simply to finish the target.",
       "levels": {
-        "kaya_na_fil": "Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan. Nagagawa kahit hindi pinapaalalahanan.",
-        "kaya_na_en": "Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning. Completes this without prompting.",
-        "kailangan_practice_fil": "May supplies at ruta ngunit kulang ang contact o pause condition; ipapunan bago muling magbrief.",
-        "kailangan_practice_en": "Lists supplies and route but misses a contact or pause condition; complete these before repeating the briefing.",
+        "kaya_na_fil": "Kumpleto ang limang field; natutukoy ang apektadong gawain na ihihinto, ligtas na alternatibo at awtorisadong contact; kasama ang heat, ruta at balik; may batayan ng ready/hindi pa ready at tapat na hindi pa nakumpirma; inuulit ang briefing matapos ang feedback. Nagagawa nang walang prompt; hindi minamarkahang ready ang hindi pa beripikado.",
+        "kaya_na_en": "Completes five fields; identifies the affected work to pause, safe alternative and authorized contact; includes heat, route and return time; records evidence for ready/not-ready and honest unknowns; repeats the briefing after feedback. Does this without prompting; never marks an unverified condition ready.",
+        "kailangan_practice_fil": "Ligtas ang pause decision ngunit kulang ang field, contact o batayan ng beripikasyon. Punan sa tulong ng prompt at ulitin ang briefing.",
+        "kailangan_practice_en": "Makes a safe pause decision but misses a field, contact or verification evidence. Complete it with prompting and repeat the briefing.",
         "hindi_pa_fil": "Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.",
         "hindi_pa_en": "Continues an unsafe route or unprotected task simply to finish the target."
       }
