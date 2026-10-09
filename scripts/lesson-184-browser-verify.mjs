@@ -76,7 +76,7 @@ try{
   await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
   for(const action of ['mode','language','navigation']){
-   await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&!v.paused&&v.currentTime>0;});await page.locator('video').evaluate(v=>window.__previousVideo=v);
+   await page.getByRole('button',{name:/^(Narrated story|Kuwentong may salaysay)$/}).click();await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&!v.paused&&v.currentTime>0;});await page.locator('video').evaluate(v=>window.__previousVideo=v);
    if(action==='mode')await page.getByRole('button',{name:'Slides',exact:true}).click();
    if(action==='language')await page.getByRole('button',{name:lang==='en'?'English':'Filipino',exact:true}).click();
    if(action==='navigation')await page.getByRole('button',{name:'Facilitator guide',exact:true}).click();
