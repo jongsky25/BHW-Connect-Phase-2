@@ -1,0 +1,61 @@
+{
+  "authorization": "approved. merge and deploy",
+  "reviewed_head": "8f2d69cc53015871fb8feec303343e92ee83f8ff",
+  "reviewed_package_sha256": "28b8e898000fcfb90065ba81fa482ca0b1c4146ddb6973564df27638e2944490",
+  "lesson_keys": [
+    "problem-prioritize"
+  ],
+  "release_scope": "Reviewed text and six draft illustrations; missing narration and stories remain outstanding.",
+  "reviewed_proposal_receipt_sha256": "4c715c010458900edb650b61e674e39ee3e51d88aa243498dbf61d87d625b33e",
+  "integrated_source_sha256": {
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/competency.json": "8afedbb5def93d98bb5b1810846be527e28aa170cea229d940fea836a0662403",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/facilitator.en.md": "8a84c4f559b398ea7350c6a57b22ba33ebac12c3c10ea04e87b101931c8418fd",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/facilitator.fil.md": "9d0c18711aedd56098fdf79813ea36256580877929bff75c5fdc16cc71fbda69",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/lesson.json": "304dc119208794130b744a062639d6c9d8163d0c4b27f9df397b9c1fec44ee5c",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/read.en.md": "c0cdbb0d7d1e5cefe3aade3773cb608bf56f5c8535655d22d1a91c4c35f2ba5a",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/read.fil.md": "c1888e9ffe463916067168c9af999385a535dbcdca9e94b2b36ab9b981d93c79",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/slides.json": "a7895fd482583d0f7dd739d38350817474d05231f1cad8878f8927a43bbcee3a",
+    "src/components/elearning/reference-lessons.tsx": "d8e0838b42d3b0eaad921649971df34b34361e7f8c38d6b6fc50ef162d550891"
+  },
+  "selected_media": [
+    {
+      "path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+      "sha256": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf"
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-worked-scores-cc9155c91031.png",
+      "sha256": "cc9155c910314c93bf47dc85801ce0888f415d419c3cf75feac1ac05e821e906"
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-score-evidence-45506987ed45.png",
+      "sha256": "45506987ed45527a3a22f6a85442907ba63a44f88a499c52be2f9597dd7e7b6a"
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-tie-and-urgent-care-78194688954e.png",
+      "sha256": "78194688954e2ae7c061ad430db4b8b470220d1cae36340075c18e104b86b7f1"
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-practice-bc604b9d65c5.png",
+      "sha256": "bc604b9d65c5cf1f1a6ea1f87113897395b39c64b32280a744554d2a15faa791"
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-check-2d6ef146fafe.png",
+      "sha256": "2d6ef146fafe37cb0074bdc00bae3243941df9b23a7fdbe7c5f8460efa3f7d97"
+    }
+  ],
+  "known_outstanding_work": [
+    "12 matching narration MP3s",
+    "2 narrated stories, captions and posters",
+    "Full and focused audio review"
+  ],
+  "release_preflight": {
+    "integration_tests": "17 passed",
+    "typecheck": "passed",
+    "lint": "0 errors; 3 existing warnings",
+    "full_unit_tests": {
+      "passed": 1570,
+      "failed": 1,
+      "failure": "reference-narration: 12 absent current target tracks; retained without disabling or weakening"
+    }
+  }
+}

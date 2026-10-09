@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Tama ang tatlong total; naipapaliwanag ang apat na pamantayan at direksyon ng feasibility; humihingi ng lokal na ebidensya at hindi ipinagpapaliban ang urgent care.",
-      "observable_en": "Calculates all three totals correctly, explains the four criteria and feasibility direction, requests local evidence and does not delay urgent care.",
-      "not_yet_fil": "Mali ang direksyon ng feasibility o itinuturing na pahintulot ang ranking na ipagpaliban ang agarang pangangalaga.",
-      "not_yet_en": "Reverses feasibility or treats ranking as permission to delay urgent care.",
+      "observable_fil": "Kwentahin ang tatlong total na 19/17/16, ipaliwanag ang apat na pamantayan at mas mataas na feasibility, humingi ng ebidensya at markahan ang hindi pa alam, bigyang-katwiran ang tie decision kasama ang partner, at sabihin na hindi naghihintay sa ranking ang agarang referral.",
+      "observable_en": "Calculates the three totals 19/17/16, explains the four criteria and higher feasibility, requests evidence and marks unknowns, justifies a tie decision with a partner, and states that urgent referral does not wait for ranking.",
+      "not_yet_fil": "Hindi pa nagagawa kahit may scaffold, o ipinagpapaliban ang urgent care dahil sa ranking. Kung hindi nakita ang pagtatangka, markahang hindi naobserbahan; huwag gawing pasado o bagsak.",
+      "not_yet_en": "Cannot yet perform despite scaffolding, or delays urgent care because of ranking. An unseen attempt is not observed; do not treat it as a pass or failure.",
       "levels": {
-        "kaya_na_fil": "Tama ang tatlong total; naipapaliwanag ang apat na pamantayan at direksyon ng feasibility; humihingi ng lokal na ebidensya at hindi ipinagpapaliban ang urgent care. Nagagawa kahit hindi pinapaalalahanan.",
-        "kaya_na_en": "Calculates all three totals correctly, explains the four criteria and feasibility direction, requests local evidence and does not delay urgent care. Completes this without prompting.",
-        "kailangan_practice_fil": "Tama ang pamantayan ngunit may mali sa pagdaragdag; gumamit ng row-by-row na tally at ipaulit.",
-        "kailangan_practice_en": "Uses the right criteria but makes an addition error; use a row-by-row tally and repeat.",
-        "hindi_pa_fil": "Mali ang direksyon ng feasibility o itinuturing na pahintulot ang ranking na ipagpaliban ang agarang pangangalaga.",
-        "hindi_pa_en": "Reverses feasibility or treats ranking as permission to delay urgent care."
+        "kaya_na_fil": "Kwentahin ang tatlong total na 19/17/16, ipaliwanag ang apat na pamantayan at mas mataas na feasibility, humingi ng ebidensya at markahan ang hindi pa alam, bigyang-katwiran ang tie decision kasama ang partner, at sabihin na hindi naghihintay sa ranking ang agarang referral. Nagagawa nang walang prompt.",
+        "kaya_na_en": "Calculates the three totals 19/17/16, explains the four criteria and higher feasibility, requests evidence and marks unknowns, justifies a tie decision with a partner, and states that urgent referral does not wait for ranking. Performs without prompts.",
+        "kailangan_practice_fil": "May pagtatangka ngunit kailangan ng prompt sa arithmetic, ebidensya, feasibility o tie decision. Itala ang prompt at obserbahan ang retry.",
+        "kailangan_practice_en": "Attempts the task but needs a prompt for arithmetic, evidence, feasibility or the tie decision. Record the prompt and observe the retry.",
+        "hindi_pa_fil": "Hindi pa nagagawa kahit may scaffold, o ipinagpapaliban ang urgent care dahil sa ranking. Kung hindi nakita ang pagtatangka, markahang hindi naobserbahan; huwag gawing pasado o bagsak.",
+        "hindi_pa_en": "Cannot yet perform despite scaffolding, or delays urgent care because of ranking. An unseen attempt is not observed; do not treat it as a pass or failure."
       }
     }
   ]

@@ -1,0 +1,543 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "0bf98ef4e10636fa312091f80ec9f9d766e2de4b",
+  "lesson_number": "1.7.3",
+  "lesson_key": "problem-prioritize",
+  "lesson_id": "9b959b18-f9e4-4b2f-a7ef-569d5992963d",
+  "module_id": "2ba3c8c2-4fac-4440-bbaa-ab19e5120e54",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "manifest": {
+    "lesson_key": "problem-prioritize",
+    "position": 2,
+    "title_fil": "Piliin ang uunahin",
+    "title_en": "Choose a priority",
+    "objectives_fil": [
+      "Gamit ang apat na pamantayan, kwentahin at ipaliwanag ang halimbawa ng ranking at sabihin kung bakit hindi nito pinapalitan ang agarang referral."
+    ],
+    "objectives_en": [
+      "Using the four criteria, calculate and explain the example ranking and state why it does not replace urgent referral."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "criteria",
+      "concept_ids": [
+        "m7.prioritize"
+      ]
+    },
+    {
+      "id": "worked-scores",
+      "concept_ids": [
+        "m7.prioritize"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m7.prioritize"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m7.prioritize"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m7.prioritize",
+      "read_ids": [
+        "criteria",
+        "worked-scores",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-criteria",
+        "slide-worked-scores",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "original_check": {
+    "prompt_fil": "Parehong 17 ang dalawang problema. Alin ang gagawin ng grupo?",
+    "prompt_en": "Two problems both score 17. What should the group do?",
+    "options": [
+      {
+        "fil": "Balikan ang ebidensya, urgency at resources bago magkasundo.",
+        "en": "Revisit evidence, urgency and resources before agreeing."
+      },
+      {
+        "fil": "Unahin ang unang nakasulat para mabilis.",
+        "en": "Choose the first listed to save time."
+      },
+      {
+        "fil": "Dagdagan ng isa ang gusto ng lider kahit walang bagong ebidensya.",
+        "en": "Add one point to the leader’s preference without new evidence."
+      }
+    ],
+    "correct_option_index": 0,
+    "feedback_fil": "Ang unang sagot ay may batayan at bukas sa grupo. Ang pagkakasunod sa listahan at kagustuhan ng lider ay hindi dagdag na ebidensya. Kung may nangangailangan ng agarang pangangalaga, sundin agad ang referral protocol.",
+    "feedback_en": "The first response is evidence-based and open to the group. List order and a leader’s preference are not additional evidence. Follow referral procedures immediately for someone needing urgent care."
+  },
+  "guided_minutes": 45,
+  "module_guided_minutes": 180,
+  "target_sha256": {
+    "competency.json": "d7a8f1a89a69b2aac940a10644e7c42fa1fbf3fad02811cdb4d6e39a5f405264",
+    "facilitator.en.md": "5e2aa2ab57a575cf4c712d28d1445276c0360bc69909d43e89653d6eee3c0425",
+    "facilitator.fil.md": "0cf079333d0f690c1114b18c9f865dc473f3edf0b686f3cdedab2cd44b82c4f7",
+    "lesson.json": "8689b957211f763b397d9c6dd2516c10fc596852e1a52ca121d94dad648ce5c9",
+    "read.en.md": "7be0c28311d434146304ac194ae6e5e975c377b6af7b98bd1906b339cddc3389",
+    "read.fil.md": "511d55d84a4ec7cbed33d7732b00f24bcdfd87d952a15d09ed691e599ff13917",
+    "slides.json": "d62b692567c7750385e5e784a1b0321cf21f833a7cb69166cf985fbf2d44378f"
+  },
+  "shared_sha256": {
+    "content/training/day1-basic-competencies/modules/07-problema/module.json": "e05d5c89551a874949e71894d05c70a877577658f6d3b33fb085e673ebf69f4d",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    "content/training/day1-basic-competencies/narration.json": "19e57ac0c7de91430146cf2443034a832cd8c86128f7113672f6f3c088a57fc5",
+    "src/components/elearning/reference-lessons.tsx": "d78003dfd8eb6c01066db76a8f18bfa60e2b054f501b8fe707c2b40469f8e485",
+    "remotion/src/Root.tsx": "b02b60f9bb5f2f815deca7d6f7cde4cea5686e460c00ecc62c206232d0906ee8",
+    "scripts/lib/reference-narration.mjs": "2dce94b8a64269e7454cab621bc690e23aa577bfa38771fb860ad58e5de0f3ec",
+    "scripts/lib/tts-providers/gemini.mjs": "f841e0934b13b29631e841a3abbfd1aebe63be591f5c23b3f6981f3ebc3687ee"
+  },
+  "source_transcription_sha256": {
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/kwento-ni-rosario.md": "c3907b1b473f6cf7f7506de06b8aa3a8051806709e31d45f3f7ab946432744ef"
+  },
+  "target_narration": {
+    "module": "07-problema",
+    "sections": {
+      "check": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-prioritize/check.en.eb37fa5490b3.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "eb37fa5490b3534dfd311b117fbb696a083b88dc17621866ea85666f432120f7",
+          "sha256": "26a3002e1291b5cb1c6ffdb5b7bb6e09ee1179153ec89eecc91c5462320cc542",
+          "duration_seconds": 18.129,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 1960
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2260,
+              "end_ms": 6700
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7000,
+              "end_ms": 10320
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+              "start_ms": 10620,
+              "end_ms": 18060
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-prioritize/check.fil.db4c8f035952.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "db4c8f03595222ebbb59fecc798f8f8efe9e4c75175d2bad435b3809a0cd988c",
+          "sha256": "38f4812d7a62d9425bf9598113ff8659e5cb9083c14243bccadbd25d8e82235d",
+          "duration_seconds": 21.159,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 3040
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 3340,
+              "end_ms": 7780
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 8080,
+              "end_ms": 12600
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.",
+              "start_ms": 12900,
+              "end_ms": 21100
+            }
+          ]
+        }
+      },
+      "criteria": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-prioritize/criteria.en.0d89d84fd3f4.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "0d89d84fd3f4142785be3d1d0afa2c638934e470f7a44b5ebfdff64e3404310e",
+          "sha256": "aeb4e6e5dd6e88d4923a0f61cadbac15046a88f4698616a4ea7f82d8d58f5359",
+          "duration_seconds": 46.785,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Make priorities explicit",
+              "start_ms": 0,
+              "end_ms": 2600
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "For planning, score each problem from 1 to 5 on four criteria: how many are affected, severity of the effects, feasibility with available resources, and urgency.",
+              "start_ms": 2900,
+              "end_ms": 16420
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "A higher feasibility score means more achievable.",
+              "start_ms": 16720,
+              "end_ms": 20160
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Add the four scores and discuss their evidence with the group.",
+              "start_ms": 20460,
+              "end_ms": 24980
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "A high total suggests a starting priority, not permission to ignore serious danger.",
+              "start_ms": 25280,
+              "end_ms": 31680
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Refer someone needing urgent care immediately rather than waiting for a planning score.",
+              "start_ms": 31980,
+              "end_ms": 38500
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Priorities require explicit criteria and local judgment; they do not replace immediate referral.",
+              "start_ms": 38800,
+              "end_ms": 46720
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-prioritize/criteria.fil.85f2f4c8c63b.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "85f2f4c8c63b3de7c3dd6f3bec35a2aa94545b271d98c8b5bbb852d1ee99601c",
+          "sha256": "eaceacaea35b58eb8ef4a73ccc8b59940a67ba9dc222492c2fd6d62de7f1bbac",
+          "duration_seconds": 53.812,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang prayoridad nang malinaw",
+              "start_ms": 0,
+              "end_ms": 2920
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Sa pagpaplano, bigyan ang bawat problema ng 1–5 sa apat na batayan: laki o dami ng apektado, kabigatan ng epekto, kakayahang malutas gamit ang resources, at pagkamadalian.",
+              "start_ms": 3220,
+              "end_ms": 20220
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Mas mataas na feasibility score ang mas kayang tugunan.",
+              "start_ms": 20520,
+              "end_ms": 25120
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Pagsamahin ang apat na marka at ipaliwanag ang batayan kasama ang grupo.",
+              "start_ms": 25420,
+              "end_ms": 31620
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Ang mataas na kabuuan ay panimulang prayoridad, hindi utos na balewalain ang malubhang panganib.",
+              "start_ms": 31920,
+              "end_ms": 38680
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ang nangangailangan ng agarang pangangalaga ay i-refer agad; hindi hinihintay ang planning score.",
+              "start_ms": 38980,
+              "end_ms": 45980
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang prayoridad ay may malinaw na batayan at lokal na paghatol; hindi nito pinapalitan ang agarang referral.",
+              "start_ms": 46280,
+              "end_ms": 53760
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-prioritize/practice.en.fff3178825e3.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "fff3178825e3acf70a41b3c7a102ea5ef66d1efc3d716cec262655df53503401",
+          "sha256": "79e3ff21ffc45d08e22327c6dee63a0cfc851940461d901a9ba2b9e5628c0d02",
+          "duration_seconds": 35.135,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2600
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Copy the three example rows and calculate totals.",
+              "start_ms": 2900,
+              "end_ms": 7020
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Explain why 19 ranks first, then list evidence needed before using those scores locally.",
+              "start_ms": 7320,
+              "end_ms": 14480
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Simulate a tie: discuss urgency and resources.",
+              "start_ms": 14780,
+              "end_ms": 19660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Alone, write the explanation.",
+              "start_ms": 19960,
+              "end_ms": 22800
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "At the next planning meeting, ask where the scores came from.",
+              "start_ms": 23100,
+              "end_ms": 26820
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+              "start_ms": 27120,
+              "end_ms": 35080
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-prioritize/practice.fil.49e320ac8e19.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "49e320ac8e19f318bd8495a116b3955b3441346e6be230a6166d252bbde98bed",
+          "sha256": "43c09a36fe3e4abb4aced7450194ca50ebac2354c68760158391fc87bc801c0c",
+          "duration_seconds": 43.259,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 2560
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Kopyahin ang tatlong halimbawang row at kwentahin ang total.",
+              "start_ms": 2860,
+              "end_ms": 7700
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ipaliwanag kung bakit 19 ang una, saka maglista ng ebidensyang kailangan bago gamitin ang score sa inyong lugar.",
+              "start_ms": 8000,
+              "end_ms": 18280
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Magkunwaring tabla ang dalawang problema: talakayin ang urgency at resources.",
+              "start_ms": 18580,
+              "end_ms": 25540
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Kung mag-isa, isulat ang paliwanag.",
+              "start_ms": 25840,
+              "end_ms": 29280
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Sa susunod na planning meeting, itanong kung saan galing ang mga score.",
+              "start_ms": 29580,
+              "end_ms": 34420
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.",
+              "start_ms": 34720,
+              "end_ms": 43200
+            }
+          ]
+        }
+      },
+      "worked-scores": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-prioritize/worked-scores.en.f030155383e3.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "f030155383e3bd9b720cd2a3aebf6961507d860b49040ad5de77965fa6afd6e1",
+          "sha256": "df8b63f47bd8e4080c6d332ed4166b4514234bd3600be34c56b2206fef5ccd82",
+          "duration_seconds": 50.129,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try scoring priorities",
+              "start_ms": 0,
+              "end_ms": 2280
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Fictional practice: a BHW training gap scores 4 + 5 + 5 + 5 = 19; a safe-water teaching gap scores 4 + 3 + 5 + 5 = 17; a household water-preparation knowledge gap scores 3 + 3 + 5 + 5 = 16.",
+              "start_ms": 2580,
+              "end_ms": 27980
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "The order is magnitude, severity, feasibility, urgency.",
+              "start_ms": 28280,
+              "end_ms": 34760
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "These are the deck’s example scores, not measurements of your barangay.",
+              "start_ms": 35060,
+              "end_ms": 39900
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Name the evidence needed before using each score in a real plan.",
+              "start_ms": 40200,
+              "end_ms": 46080
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Explain the scores before trusting the total.",
+              "start_ms": 46380,
+              "end_ms": 50060
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-prioritize/worked-scores.fil.79cd9047b00a.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "79cd9047b00ae86fc9530a78edea32355bf98e890941790be5a241932d69ca88",
+          "sha256": "7f342e25d21b7c5f9bb3bc7dd1be90abf803f60fee035022d56e78e3a32f7c37",
+          "duration_seconds": 53.368,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan ang pagmamarka",
+              "start_ms": 0,
+              "end_ms": 2240
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Kathang-isip na practice: kulang na BHW training = 4 + 5 + 5 + 5 = 19; kulang na pagtuturo ng ligtas na tubig = 4 + 3 + 5 + 5 = 17; hindi alam ng pamilya ang paghahanda ng tubig = 3 + 3 + 5 + 5 = 16.",
+              "start_ms": 2540,
+              "end_ms": 30100
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ang ayos ay laki, kabigatan, feasibility, urgency.",
+              "start_ms": 30400,
+              "end_ms": 36560
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ito ang scores sa halimbawang deck, hindi sukat ng inyong barangay.",
+              "start_ms": 36860,
+              "end_ms": 41540
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Ibigay ang ebidensyang kailangan bago gamitin ang bawat marka sa totoong plano.",
+              "start_ms": 41840,
+              "end_ms": 48240
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ipaliwanag ang marka bago pagkatiwalaan ang kabuuan.",
+              "start_ms": 48540,
+              "end_ms": 53300
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "reference_path": "docs/lesson-17-reference/carole-character-reference-6e2b1c5044d7.png",
+  "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+  "publication_or_human_SME_approval": false,
+  "published_baseline": "Not queried for this handoff. Capture bounded authenticated lesson/revision/private-guide rows when implementation begins; repository source is not proof of live selection."
+}

@@ -18,9 +18,11 @@
       "concept_ids": [
         "m7.prioritize"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang prayoridad ay may malinaw na batayan at lokal na paghatol; hindi nito pinapalitan ang agarang referral.",
-      "takeaway_en": "Priorities require explicit criteria and local judgment; they do not replace immediate referral.",
+      "asset_ids": [
+        "prioritize-criteria"
+      ],
+      "takeaway_fil": "Ang prayoridad ay may malinaw na batayan; hindi nito pinapalitan ang agarang referral.",
+      "takeaway_en": "Priorities need explicit evidence; they do not replace urgent referral.",
       "check": null
     },
     {
@@ -28,9 +30,35 @@
       "concept_ids": [
         "m7.prioritize"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "prioritize-worked-scores"
+      ],
       "takeaway_fil": "Ipaliwanag ang marka bago pagkatiwalaan ang kabuuan.",
       "takeaway_en": "Explain the scores before trusting the total.",
+      "check": null
+    },
+    {
+      "id": "score-evidence",
+      "concept_ids": [
+        "m7.prioritize"
+      ],
+      "asset_ids": [
+        "prioritize-score-evidence"
+      ],
+      "takeaway_fil": "Huwag gawing katotohanan ang hula upang makumpleto ang table.",
+      "takeaway_en": "Do not turn a guess into a fact to complete the table.",
+      "check": null
+    },
+    {
+      "id": "tie-and-urgent-care",
+      "concept_ids": [
+        "m7.prioritize"
+      ],
+      "asset_ids": [
+        "prioritize-tie-and-urgent-care"
+      ],
+      "takeaway_fil": "Ang tabla ay dahilan para maglinaw, hindi para gumawa ng dagdag na marka.",
+      "takeaway_en": "A tie calls for clarification, not invented extra points.",
       "check": null
     },
     {
@@ -38,9 +66,11 @@
       "concept_ids": [
         "m7.prioritize"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.",
-      "takeaway_en": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+      "asset_ids": [
+        "prioritize-practice"
+      ],
+      "takeaway_fil": "Ang feedback ay tiyak na pagwawasto, at may bagong pagtatangka.",
+      "takeaway_en": "Feedback identifies a specific correction and includes a fresh attempt.",
       "check": null
     },
     {
@@ -48,9 +78,11 @@
       "concept_ids": [
         "m7.prioritize"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.",
-      "takeaway_en": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+      "asset_ids": [
+        "prioritize-check"
+      ],
+      "takeaway_fil": "Malinaw at bukas ang planning decision; hindi nito ipinagpapaliban ang agarang referral.",
+      "takeaway_en": "A transparent planning decision never postpones urgent referral.",
       "check": {
         "prompt_fil": "Parehong 17 ang dalawang problema. Alin ang gagawin ng grupo?",
         "prompt_en": "Two problems both score 17. What should the group do?",
@@ -69,8 +101,8 @@
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ang unang sagot ay may batayan at bukas sa grupo. Ang pagkakasunod sa listahan at kagustuhan ng lider ay hindi dagdag na ebidensya. Kung may nangangailangan ng agarang pangangalaga, sundin agad ang referral protocol.",
-        "feedback_en": "The first response is evidence-based and open to the group. List order and a leader’s preference are not additional evidence. Follow referral procedures immediately for someone needing urgent care."
+        "feedback_fil": "Una: tama—balikan ang ebidensya, urgency at resources at humingi ng dahilan sa bawat kasama. Ikalawa: ang pagiging unang nakalista ay hindi ebidensya. Ikatlo: hindi sapat ang gusto ng lider upang magdagdag ng marka. Sa pagwawasto, pinili ng role-play group ang Plan A bilang panimulang planning step dahil may available na staff time; hindi pa kumpirmado ang transport sa Plan B. Sinabi ng bawat kasama ang dahilan; hindi hinulaan ang pagsang-ayon mula sa katahimikan. Itinala ni Carole ang napagkasunduan at ang transport question na kailangang beripikahin. Kathang-isip ito, hindi totoong schedule o pangako ng partner. Kung may nangangailangan ng agarang pangangalaga, ituloy agad ang referral ayon sa angkop na procedure, kahit nagpapatuloy ang pagpaplano.",
+        "feedback_en": "First: correct—revisit evidence, urgency and resources and ask each partner for reasons. Second: list order is not evidence. Third: the leader’s preference does not justify an extra point. In the corrected ending, the role-play group chooses Plan A as its starting planning step because staff time is available; transport for Plan B remains unconfirmed. Each partner states a reason; agreement is not inferred from silence. Carole records the agreement and the transport question for verification. This is fictional, not a real schedule or partner commitment. If anyone needs urgent care, proceed with referral immediately under the appropriate procedure while planning continues."
       }
     }
   ],
@@ -80,12 +112,16 @@
       "read_ids": [
         "criteria",
         "worked-scores",
+        "score-evidence",
+        "tie-and-urgent-care",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-criteria",
         "slide-worked-scores",
+        "slide-score-evidence",
+        "slide-tie-and-urgent-care",
         "slide-practice",
         "slide-check"
       ],
@@ -115,5 +151,72 @@
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "prioritize-criteria",
+      "path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+      "content_hash": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf",
+      "alt_fil": "Ipinapakita ni Carole ang apat na pamantayan sa dalawang kasama.",
+      "alt_en": "Carole presents four criteria to two community partners.",
+      "caption_fil": "Kathang-isip na adaptasyon kasama si Carole. Ang counters at cards sa larawan ay simbolo, hindi numerical score o tunay na rekord.",
+      "caption_en": "Fictional adaptation with Carole. Illustrated counters and cards are symbolic, not numerical scores or real records.",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved.",
+      "review_status": "draft"
+    },
+    {
+      "id": "prioritize-worked-scores",
+      "path": "/training/bhw-1-7/prioritize-worked-scores-cc9155c91031.png",
+      "content_hash": "cc9155c910314c93bf47dc85801ce0888f415d419c3cf75feac1ac05e821e906",
+      "alt_fil": "Magkakasamang nagbibilang ng counters sa practice table.",
+      "alt_en": "Carole and partners add counters on a practice table.",
+      "caption_fil": "Kathang-isip na adaptasyon kasama si Carole. Ang counters at cards sa larawan ay simbolo, hindi numerical score o tunay na rekord.",
+      "caption_en": "Fictional adaptation with Carole. Illustrated counters and cards are symbolic, not numerical scores or real records.",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved.",
+      "review_status": "draft"
+    },
+    {
+      "id": "prioritize-score-evidence",
+      "path": "/training/bhw-1-7/prioritize-score-evidence-45506987ed45.png",
+      "content_hash": "45506987ed45527a3a22f6a85442907ba63a44f88a499c52be2f9597dd7e7b6a",
+      "alt_fil": "Humihingi si Carole ng batayan; may hiwalay na card para sa hindi pa alam.",
+      "alt_en": "Carole asks for evidence; a separate card records uncertainty.",
+      "caption_fil": "Kathang-isip na adaptasyon kasama si Carole. Ang counters at cards sa larawan ay simbolo, hindi numerical score o tunay na rekord.",
+      "caption_en": "Fictional adaptation with Carole. Illustrated counters and cards are symbolic, not numerical scores or real records.",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved.",
+      "review_status": "draft"
+    },
+    {
+      "id": "prioritize-tie-and-urgent-care",
+      "path": "/training/bhw-1-7/prioritize-tie-and-urgent-care-78194688954e.png",
+      "content_hash": "78194688954e2ae7c061ad430db4b8b470220d1cae36340075c18e104b86b7f1",
+      "alt_fil": "Nagpaplano si Carole habang ibang BHW ang umaalalay sa agarang referral.",
+      "alt_en": "Carole discusses planning while another BHW accompanies a prompt referral.",
+      "caption_fil": "Kathang-isip na adaptasyon kasama si Carole. Ang counters at cards sa larawan ay simbolo, hindi numerical score o tunay na rekord.",
+      "caption_en": "Fictional adaptation with Carole. Illustrated counters and cards are symbolic, not numerical scores or real records.",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved.",
+      "review_status": "draft"
+    },
+    {
+      "id": "prioritize-practice",
+      "path": "/training/bhw-1-7/prioritize-practice-bc604b9d65c5.png",
+      "content_hash": "bc604b9d65c5cf1f1a6ea1f87113897395b39c64b32280a744554d2a15faa791",
+      "alt_fil": "Ginagabayan ni Carole ang pagwawasto ng tally; nagsusulat ang observer.",
+      "alt_en": "Carole coaches a tally correction while an observer records it.",
+      "caption_fil": "Kathang-isip na adaptasyon kasama si Carole. Ang counters at cards sa larawan ay simbolo, hindi numerical score o tunay na rekord.",
+      "caption_en": "Fictional adaptation with Carole. Illustrated counters and cards are symbolic, not numerical scores or real records.",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved.",
+      "review_status": "draft"
+    },
+    {
+      "id": "prioritize-check",
+      "path": "/training/bhw-1-7/prioritize-check-2d6ef146fafe.png",
+      "content_hash": "2d6ef146fafe37cb0074bdc00bae3243941df9b23a7fdbe7c5f8460efa3f7d97",
+      "alt_fil": "Tinatalakay ng grupo ang dahilan; magkapantay ang dalawang symbolic counter stacks.",
+      "alt_en": "Partners discuss reasons beside two matching symbolic counter stacks.",
+      "caption_fil": "Kathang-isip na adaptasyon kasama si Carole. Ang counters at cards sa larawan ay simbolo, hindi numerical score o tunay na rekord.",
+      "caption_en": "Fictional adaptation with Carole. Illustrated counters and cards are symbolic, not numerical scores or real records.",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved.",
+      "review_status": "draft"
+    }
+  ]
 }
