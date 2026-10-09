@@ -1,0 +1,762 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "0bf98ef4e10636fa312091f80ec9f9d766e2de4b",
+  "lesson_number": "1.7.2",
+  "lesson_key": "problem-causes",
+  "lesson_id": "9d468901-a2be-4805-afbd-be798136918b",
+  "module_id": "2ba3c8c2-4fac-4440-bbaa-ab19e5120e54",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "manifest": {
+    "lesson_key": "problem-causes",
+    "position": 1,
+    "title_fil": "Hanapin ang mga sanhi",
+    "title_en": "Investigate causes",
+    "objectives_fil": [
+      "Gumawa ng cause map na may dalawang posibleng sangay at paraan ng pagberipika, nang hindi itinuturing na patunay ang limang tanong lamang."
+    ],
+    "objectives_en": [
+      "Build a cause map with two possible branches and verification steps, without treating five questions alone as proof."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "whys",
+      "concept_ids": [
+        "m7.whys"
+      ]
+    },
+    {
+      "id": "manual-example",
+      "concept_ids": [
+        "m7.diarrhoea-example"
+      ]
+    },
+    {
+      "id": "rosario",
+      "concept_ids": [
+        "m7.determinants"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m7.whys",
+        "m7.diarrhoea-example",
+        "m7.determinants"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m7.whys",
+        "m7.diarrhoea-example",
+        "m7.determinants"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m7.whys",
+      "read_ids": [
+        "whys",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-whys",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "zff-rosario"
+      ]
+    },
+    {
+      "id": "m7.diarrhoea-example",
+      "read_ids": [
+        "manual-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-manual-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "zff-rosario"
+      ]
+    },
+    {
+      "id": "m7.determinants",
+      "read_ids": [
+        "rosario",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-rosario",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "zff-rosario"
+      ]
+    }
+  ],
+  "original_check": {
+    "prompt_fil": "Sa ikalimang “bakit,” sinabi ng grupo na kulang sa kaalaman ang ina. Ano ang susunod?",
+    "prompt_en": "At the fifth “why,” the group says the mother lacks knowledge. What next?",
+    "options": [
+      {
+        "fil": "Itigil ang usapan dahil lima na ang tanong.",
+        "en": "Stop because five questions have been asked."
+      },
+      {
+        "fil": "Suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team.",
+        "en": "Check the evidence and other barriers with the family and health team."
+      },
+      {
+        "fil": "Magplano agad ng lecture para sa lahat ng ina.",
+        "en": "Immediately plan a lecture for every mother."
+      }
+    ],
+    "correct_option_index": 1,
+    "feedback_fil": "Ang ikalawang sagot ay sumusubok sa paliwanag bago kumilos. Hindi patunay ang bilang ng tanong. Ang lecture ay maaaring hindi tumugon sa transportasyon, kita o kakulangan sa serbisyo.",
+    "feedback_en": "The second response tests the explanation before acting. The question count is not proof. A lecture may miss transport, income or service gaps."
+  },
+  "guided_minutes": 50,
+  "module_guided_minutes": 180,
+  "target_sha256": {
+    "competency.json": "192906e7b4a9e1f9ae1144d9dea54540a282a4416b91c64827cc804978ff908a",
+    "facilitator.en.md": "d349b1f70db0e85cc791300fb49706b068360ac0a473951eb737ceb56b33a4a7",
+    "facilitator.fil.md": "5049c91b801a81cd252bc3dfb9b444f0f0aff8f618ca217efcaa09f0f929355d",
+    "lesson.json": "c331bb48da80fa9705a3bd628f21684c09d71be7ac080179e1d798029e2f67b6",
+    "read.en.md": "3243c4fafea43155a2727aea0dc62961df5b2fb3ea9d7eca2a846c7643ae83bb",
+    "read.fil.md": "6b5739494f2594bec795fe95e5430578dbdaafc094cfc29b4842760381c60a76",
+    "slides.json": "75ce7eaae63c1c147d7328642ec8a19ce3a3272e5363bc05359e00e653f49227"
+  },
+  "shared_sha256": {
+    "content/training/day1-basic-competencies/modules/07-problema/module.json": "e05d5c89551a874949e71894d05c70a877577658f6d3b33fb085e673ebf69f4d",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    "content/training/day1-basic-competencies/narration.json": "19e57ac0c7de91430146cf2443034a832cd8c86128f7113672f6f3c088a57fc5",
+    "src/components/elearning/reference-lessons.tsx": "d78003dfd8eb6c01066db76a8f18bfa60e2b054f501b8fe707c2b40469f8e485",
+    "remotion/src/Root.tsx": "b02b60f9bb5f2f815deca7d6f7cde4cea5686e460c00ecc62c206232d0906ee8",
+    "scripts/lib/reference-narration.mjs": "2dce94b8a64269e7454cab621bc690e23aa577bfa38771fb860ad58e5de0f3ec",
+    "scripts/lib/tts-providers/gemini.mjs": "f841e0934b13b29631e841a3abbfd1aebe63be591f5c23b3f6981f3ebc3687ee"
+  },
+  "source_transcription_sha256": {
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/kwento-ni-rosario.md": "c3907b1b473f6cf7f7506de06b8aa3a8051806709e31d45f3f7ab946432744ef"
+  },
+  "target_narration": {
+    "module": "07-problema",
+    "sections": {
+      "check": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-causes/check.en.a54b6ad39e5c.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "a54b6ad39e5c0e51b5f133572cc8b8625e0c4ce59443059e546982ceff1a0176",
+          "sha256": "88b8ab5edb4c466e6e86d81fe782afc879721bcfbbe2f595892b95348b63883c",
+          "duration_seconds": 18.207,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 1920
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2220,
+              "end_ms": 7220
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7520,
+              "end_ms": 10880
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+              "start_ms": 11180,
+              "end_ms": 18140
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-causes/check.fil.8443986037bc.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "8443986037bc7ed56226ee3bade9a7b34a62a54a2d5c3c6dcb32ede770302abe",
+          "sha256": "21d58fe11f47200e4d3b13c4c6b41b08826ce02a0f861cf8185190608463d82e",
+          "duration_seconds": 21.473,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 2680
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 2980,
+              "end_ms": 7860
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 8160,
+              "end_ms": 12920
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
+              "start_ms": 13220,
+              "end_ms": 21420
+            }
+          ]
+        }
+      },
+      "manual-example": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-causes/manual-example.en.ea8ac7b6042e.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "ea8ac7b6042e2b3885fc7f0f7e5568e31f08d7e9e4bb30ba48668718548477a3",
+          "sha256": "fcb7644146422feecb918f17b138c0a2a0871cb95fcd0aec58b6b41c5d7d4409",
+          "duration_seconds": 45.349,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "The manual’s diarrhoea example",
+              "start_ms": 0,
+              "end_ms": 2760
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "The Reference Manual uses a child’s diarrhoea death to investigate connected barriers to care and safe water.",
+              "start_ms": 3060,
+              "end_ms": 11540
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "In the deck’s sample ranking, gaps in BHW training and teaching safe drinking-water preparation rank highly.",
+              "start_ms": 11840,
+              "end_ms": 20800
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "This does not make training the cause of every death.",
+              "start_ms": 21100,
+              "end_ms": 25300
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Check explanations against evidence; poverty, transport and service gaps may also contribute.",
+              "start_ms": 25600,
+              "end_ms": 33800
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "The example examines a system, not treatment instructions.",
+              "start_ms": 34100,
+              "end_ms": 38860
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A worked example teaches a method; real priorities come from local evidence.",
+              "start_ms": 39160,
+              "end_ms": 45280
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-causes/manual-example.fil.2e35a45173ef.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "2e35a45173ef80363897a5217a287d6ecbcb7858c53009ac122390822d019491",
+          "sha256": "56f6e4e9ba658eb1c22750b374cd129a500eb6faff6accbd21fdc7bf4ba3a611",
+          "duration_seconds": 53.42,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Ang halimbawa ng batang nagtatae",
+              "start_ms": 0,
+              "end_ms": 2440
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Sa Reference Manual, ang pagkamatay ng batang nagtatae ay ginagamit upang siyasatin ang magkakaugnay na hadlang sa pangangalaga at ligtas na tubig.",
+              "start_ms": 2740,
+              "end_ms": 14180
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Sa halimbawang talahanayan ng deck, nauuna ang kakulangan sa BHW training at pagtuturo ng wastong paghahanda ng inuming tubig.",
+              "start_ms": 14480,
+              "end_ms": 24320
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Hindi ibig sabihing training ang sanhi ng bawat pagkamatay.",
+              "start_ms": 24620,
+              "end_ms": 29180
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Tiyaking tugma ang paliwanag sa ebidensya; maaaring kasabay ang kahirapan, transportasyon at kakulangan sa serbisyo.",
+              "start_ms": 29480,
+              "end_ms": 38960
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ang halimbawa ay para sa pagsusuri ng sistema, hindi gabay sa paggamot.",
+              "start_ms": 39260,
+              "end_ms": 45060
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang worked example ay paraan ng pagsusuri; ang totoong prayoridad ay manggagaling sa lokal na ebidensya.",
+              "start_ms": 45360,
+              "end_ms": 53360
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-causes/practice.en.bd1bb0a7c59b.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "bd1bb0a7c59b80beb8977d0b4f602bed09c161a8bb0684a4382d2fdc0bd85af9",
+          "sha256": "b82d33f6fe6c591a61e77d9731eba0faa65dca1c806cf9a2ca4c5f730b49a7c1",
+          "duration_seconds": 41.613,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2680
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Put the missed visit at the center of a page.",
+              "start_ms": 2980,
+              "end_ms": 6540
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Draw childcare and transport-cost branches.",
+              "start_ms": 6840,
+              "end_ms": 10680
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Mark each cause reported, verified or to check.",
+              "start_ms": 10980,
+              "end_ms": 16060
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Name a person to consult or record to check on each branch.",
+              "start_ms": 16360,
+              "end_ms": 21600
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ask a partner to identify one unsupported arrow.",
+              "start_ms": 21900,
+              "end_ms": 26260
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Alone, circle it and write a verification question.",
+              "start_ms": 26560,
+              "end_ms": 30560
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Bring the resident’s perspective to the next case discussion.",
+              "start_ms": 30860,
+              "end_ms": 34820
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+              "start_ms": 35120,
+              "end_ms": 41560
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-causes/practice.fil.a8677a11f0fd.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "a8677a11f0fd9979e396e343f2e533e947ef43f770798653c0bfc5587fa9fa8e",
+          "sha256": "b83bdaa79e2251449502865d28e501e5935f2b24c53da2c86a45987c04964de7",
+          "duration_seconds": 49.972,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 2960
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ilagay ang missed visit sa gitna ng papel.",
+              "start_ms": 3260,
+              "end_ms": 7420
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Gumawa ng dalawang sangay: childcare at pamasahe.",
+              "start_ms": 7720,
+              "end_ms": 13040
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Markahan ang bawat sanhi ng “sinabi,” “natiyak” o “susuriin.”",
+              "start_ms": 13340,
+              "end_ms": 19940
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Magtalaga ng taong kakausapin o rekord na susuriin sa bawat sangay.",
+              "start_ms": 20240,
+              "end_ms": 26160
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ipasuri sa kapareha ang isang arrow na walang ebidensya.",
+              "start_ms": 26460,
+              "end_ms": 30900
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Kung mag-isa, bilugan ito at isulat ang tanong sa beripikasyon.",
+              "start_ms": 31200,
+              "end_ms": 36600
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Sa susunod na case discussion, dalhin ang pananaw ng residente.",
+              "start_ms": 36900,
+              "end_ms": 41940
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
+              "start_ms": 42240,
+              "end_ms": 49920
+            }
+          ]
+        }
+      },
+      "rosario": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-causes/rosario.en.c3c29ebf3c16.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "c3c29ebf3c16b2a5fff6b0c0d167ae289b1b0a2a1af0acec1fdaa56cfa0413e3",
+          "sha256": "c42af930d86e47ea988022291c44f96e664cb16f26cb915a1c39f7b0d094c45f",
+          "duration_seconds": 48.013,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Rosario is a child",
+              "start_ms": 0,
+              "end_ms": 2360
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "In the Zuellig Family Foundation case study, Rosario is a child aged one year and four months.",
+              "start_ms": 2660,
+              "end_ms": 10180
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Her death is linked to measles with diarrhoea, dehydration and malnutrition amid an unsafe environment, low income, misinformation and barriers to services.",
+              "start_ms": 10480,
+              "end_ms": 23520
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Draw separate branches for environment, livelihood and health services.",
+              "start_ms": 23820,
+              "end_ms": 30580
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Do not blame the mother alone or turn medicines mentioned in the historical story into current medical advice.",
+              "start_ms": 30880,
+              "end_ms": 39320
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Illness has a context: water, income, information and access to services interact.",
+              "start_ms": 39620,
+              "end_ms": 47940
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-causes/rosario.fil.755196000613.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "755196000613f859e38f8e75911a5d10e45687cbbc6732b4c91be86fc1ced710",
+          "sha256": "97e2cdf3a0c36378b047548b4d8de5ec6a9bcd04ab22a2bd8bfb02531876f141",
+          "duration_seconds": 52.532,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Si Rosario ay isang bata",
+              "start_ms": 0,
+              "end_ms": 2880
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Sa case study ng Zuellig Family Foundation, si Rosario ay batang isang taon at apat na buwan.",
+              "start_ms": 3180,
+              "end_ms": 11060
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ang kanyang pagkamatay ay iniuugnay sa tigdas na may pagtatae, dehydration at malnutrition, sa konteksto ng maruming kapaligiran, kakulangan sa kita, maling impormasyon at hadlang sa serbisyo.",
+              "start_ms": 11360,
+              "end_ms": 26360
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Gumuhit ng magkakahiwalay na sanga para sa kapaligiran, kabuhayan at serbisyong pangkalusugan.",
+              "start_ms": 26660,
+              "end_ms": 36180
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Huwag sisihin lamang ang ina o gawing payong medikal ngayon ang mga gamot na nabanggit sa lumang kuwento.",
+              "start_ms": 36480,
+              "end_ms": 44120
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang sakit ay may konteksto: ang tubig, kita, impormasyon at access sa serbisyo ay magkakaugnay.",
+              "start_ms": 44420,
+              "end_ms": 52460
+            }
+          ]
+        }
+      },
+      "whys": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-causes/whys.en.dad479f53536.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "dad479f53536ca11460cb3f7b186ae22e38d2dd227c830c4141b6131e39b2b92",
+          "sha256": "06a97ca188059ffd8d42d3c1a2f5c38ab1f72b2ba4facb5443c82792c4a1305f",
+          "duration_seconds": 61.78,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Every why needs evidence",
+              "start_ms": 0,
+              "end_ms": 2960
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Nestor, 41, is investigating missed visits by three example households.",
+              "start_ms": 3260,
+              "end_ms": 9700
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "He consults residents and health-center staff before recommending changes.",
+              "start_ms": 10000,
+              "end_ms": 15320
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ask why the visit was missed, then why the reported reason arose.",
+              "start_ms": 15620,
+              "end_ms": 21260
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "In this fictional example, childcare was unavailable; the schedule overlapped work; only one time was communicated; household availability had not been checked.",
+              "start_ms": 21560,
+              "end_ms": 34320
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "These are possible explanations to confirm with residents, BHWs and health-center staff.",
+              "start_ms": 34620,
+              "end_ms": 42100
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Reaching exactly five whys is not the goal.",
+              "start_ms": 42400,
+              "end_ms": 46840
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Reach an actionable cause supported by evidence; follow separate branches when there is more than one cause.",
+              "start_ms": 47140,
+              "end_ms": 55220
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Five Whys investigates evidence-based causes with others instead of repeating blame.",
+              "start_ms": 55520,
+              "end_ms": 61720
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-causes/whys.fil.67ca5830d8ed.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "67ca5830d8ed096aedbbbfa152d5d932885ad48a6e0b70b91cb2ccba3f0471b8",
+          "sha256": "f84d400eb7404cc9de81e813bcc1f56a0f38707f2ca05b9db7280e9cb77afe0e",
+          "duration_seconds": 68.676,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Bawat bakit, may batayan",
+              "start_ms": 0,
+              "end_ms": 2520
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Si Nestor, 41, ay nagsisiyasat sa missed visits ng tatlong pamilya sa halimbawa.",
+              "start_ms": 2820,
+              "end_ms": 11220
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Nakikipag-usap siya sa mga residente at health-center staff bago magmungkahi.",
+              "start_ms": 11520,
+              "end_ms": 17440
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Tanungin kung bakit hindi nakarating, saka kung bakit nangyari ang ibinigay na dahilan.",
+              "start_ms": 17740,
+              "end_ms": 23820
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Sa kathang-isip na halimbawa, walang magbabantay sa anak; kasabay ng pagpasok sa trabaho ang schedule; iisang oras lang ang naipabatid; hindi nasuri ang kakayahang dumalo ng pamilya.",
+              "start_ms": 24120,
+              "end_ms": 39280
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Mga posibleng paliwanag ito na dapat kumpirmahin kasama ang residente, BHW at health-center staff.",
+              "start_ms": 39580,
+              "end_ms": 48100
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Hindi paligsahan ang pag-abot sa eksaktong limang bakit.",
+              "start_ms": 48400,
+              "end_ms": 53240
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Huminto sa isang nasusuring sanhi; kung may dalawang dahilan, sundan ang dalawang sanga.",
+              "start_ms": 53540,
+              "end_ms": 59980
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang Five Whys ay paghanap ng nasusuring sanhi kasama ang iba, hindi paulit-ulit na paninisi.",
+              "start_ms": 60280,
+              "end_ms": 68600
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "reference_path": "docs/lesson-17-reference/carole-character-reference-6e2b1c5044d7.png",
+  "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+  "publication_or_human_SME_approval": false,
+  "published_baseline": "Not queried for this handoff. Capture bounded authenticated lesson/revision/private-guide rows when implementation begins; repository source is not proof of live selection."
+}
