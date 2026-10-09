@@ -1,0 +1,214 @@
+{
+  "prompt_revision": "apple-hazard-v1",
+  "method": "Summarizes actual full and focused model observations; preserves raw disagreements without inferring human listening or approval.",
+  "full_reviews": 14,
+  "focused_reviews": 56,
+  "full_report_sha256": "7afc7fac53ad8e1a8e5145238a405738ef809539533256e4c4a6e94408e92274",
+  "focused_report_sha256": "072834f42659c272583c0f89689e4807a9f37d108eab0bd9cc6c927adb36db6c",
+  "human_listening": "pending",
+  "owner_package_review": "pending",
+  "local_policy_SME_review": "pending",
+  "authorized_local_clinical_review": "pending",
+  "name_alias": "none; Apple remains as written; actual name was reported intelligible",
+  "coverage_reconciliation": "Each recording covers its assigned screen. The five-hazards screen enumerates all five groups. Requests to enumerate all five in introductory, scope or check prompts are review-prompt overreach, not missing authored text.",
+  "prior_generation": {
+    "full_reviews": 14,
+    "retained": "docs/lesson-181-initial-* and pinned initial archive",
+    "repair": "Strengthened stable adult female narrator instructions for flagged target recordings; all previous hashed bytes and initial reviews retained."
+  },
+  "unresolved_concerns": [
+    {
+      "record": "read-safety-identify-ana-fil",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":{\"audibility\":\"Speech is clearly audible throughout the entire recording.\",\"pacing\":\"Moderate, steady, and didactic pacing with clear pauses between clauses.\",\"pitch_and_pace_variation\":\"Natural cadence typical of standard Filipino educational narration/neural text-to-speech, with appropriate clause-level pitch inflections.\",\"narrator_timbre\":\"Consistent female narrator timbre across the entire duration without noticeable audio cuts, dropouts, or acoustic shifts.\"},\"concerns\":[{\"timestamp\":\"00:16 - 0:22\",\"type\":\"content_coverage\",\"description\":\"Specific individual hazards are noted (basang pasukan, lalagyang malapit sa fill line, mainit na ruta), but explicit categorization into five distinct hazard groups is not stated.\"},{\"timestamp\":\"00:23 - 0:27\",\"type\":\"control_measure\",\"description\":\"Immediate safe non-contact action is clearly articulated ('Hindi niya binubuksan o hinahawakan ang laman ng sharps box').\"},{\"timestamp\":\"00:41 - 0:47\",\"type\":\"verification_and_condition\",\"description\":\"Uncertainty/unconfirmed contact and route are explicitly communicated ('Hindi patiyak ang contact... Kailangan muna niyang kumpirmahin'), preventing unwarranted assumptions of completed corrective action.\"}]}"
+    },
+    {
+      "record": "read-safety-identify-ana-en",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":\"The narration is clearly audible and articulate throughout, with a measured instructional pace. However, there are abrupt narrator timbre and voice profile switches: the primary narrator is female, but an alternate male voice speaks at 00:02–00:07 ('Apple is a BHW at a fictional health station with a planned household visit.') and again at 00:38–00:42 ('The contact and safe route are still unknown. She needs to confirm them first.'). Pacing is steady, but the mid-track voice splices disrupt natural continuity.\",\"concerns\":\"1. Timbre inconsistency: Interspliced male and female voices occur at 00:02–00:07 and 00:38–00:42.\\n2. Content coverage: Specific hazard observations are limited to three environmental factors (wet entrance, container near fill line, hot route) rather than an explicit enumeration of five distinct hazard categories.\\n3. Safe protocol elements (immediate controls, avoiding handling sharps, verifying unknown reporting contacts/routes before starting, and disallowing unsupported correction claims) are explicitly stated without inverted negation or numerical ambiguity.\"}"
+    },
+    {
+      "record": "read-safety-identify-scope-and-contact-fil",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":{\"audible_throughout\":true,\"pacing\":\"Moderate and clear educational pacing with deliberate pauses between sentences.\",\"pitch_and_pace_variation\":\"Generally natural synthetic delivery with consistent intonation and appropriate phrasal cadence.\",\"timbre_changes\":\"None observed; narrator timbre remains consistent throughout.\"},\"concerns\":{\"content_coverage\":{\"hazard_groups\":\"The text does not enumerate five hazard groups; it only references a wet entrance ('basang pasukan') and generic exposure/injury ('exposure o pinsala').\",\"immediate_safe_control\":\"Clearly expressed via instructions to halt work ('ihinto muna ang kaugnay na gawain') and seek authorized decisions/medical review.\",\"contact_verification\":\"Clearly articulated, covering verification of name/role, contact channel, and local alternative contact.\",\"no_invented_correction\":\"Explicitly stated ('isulat ang hindi pa tiyak, kumpirmahin', 'Huwag mag-imbento ng numero o patakaran').\"},\"ambiguities_or_alterations\":\"No distorted negations, conflicting conditions, or truncated words identified.\"}}"
+    },
+    {
+      "record": "read-safety-identify-scope-and-contact-en",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":{\"audible_throughout\":true,\"pacing\":\"Deliberate, unhurried, and well-spaced pacing appropriate for instructional audio.\",\"pitch_and_pace_variation\":\"Moderate pitch and cadence variation typical of synthetic text-to-speech narration, remaining clear and intelligible.\",\"timbre_consistency\":\"Consistent timbre throughout with no noticeable shifts or drops.\"},\"concerns\":{\"content_coverage\":{\"unknown_contact_verification\":\"Clearly articulated ('She needs to confirm the name or role, contact method, and local alternative contact' and 'write unknown, confirm').\",\"immediate_safe_control\":\"Expressed via pausing tasks exceeding training or lacking protection, and seeking immediate medical evaluation for injuries.\",\"no_invented_correction\":\"Explicitly stated ('Do not invent a number or policy').\",\"five_hazard_groups_and_potential_harm\":\"Not mentioned; the audio snippet focuses specifically on scope verification, slip hazard reporting ('wet entrance'), and exposure protocols rather than enumerating the five hazard groups or specific harms.\"},\"negation_and_conditions\":\"Negations ('cannot be reached', 'Do not invent', 'must not delay') and conditions ('when it exceeds training', 'when an answer is missing', 'For an actual exposure or injury') are rendered clearly with no ambiguity.\"}}"
+    },
+    {
+      "record": "read-safety-identify-five-hazards-fil",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":\"The narration maintains a steady, clear, instructional pacing with natural pauses between list items. Pitch, stress, and cadence remain consistent throughout without noticeable timbre changes or abrupt volume drops.\",\"concerns\":[{\"timestamp\":\"00:00 - 01:25\",\"observation\":\"All five hazard groups (sharps, exposure sa impeksyon, strain sa katawan, stress o sobrang trabaho, aksidente) are clearly stated alongside their respective risks, immediate safe handling controls, clarification/reporting instructions, and caveats (posibleng epekto/hindi diagnosis; PPE limits; confirming uncertainties). No words are clipped, negated incorrectly, or omitted.\"}]}"
+    },
+    {
+      "record": "read-safety-identify-five-hazards-en",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":{\"audibility\":\"Speech is clearly audible, intelligible, and well-recorded throughout the entire clip.\",\"pacing\":\"Moderate, measured, instructional pace with distinct pauses between numbered points and supporting details.\",\"pitch_and_pace_variation\":\"Natural pitch modulation and rhythmic emphasis appropriate for professional educational narration; no monotone robotic delivery.\",\"timbre_consistency\":\"Consistent acoustic quality and narrator timbre across all sections with no jarring shifts, splices, or dropouts.\"},\"concerns\":{\"hazard_groups_and_controls\":\"All five hazard groups (sharps, infection exposure, musculoskeletal strain, stress/excessive workload, accidents) plus the additional factor (field heat) are distinctly enumerated with their respective potential harms and safe controls.\",\"follow_up_and_verification\":\"Proactive reporting, verification of unknowns, and requirement for clarification/support are explicitly stated without inventing completed corrections.\",\"negation_and_conditions\":\"Negations ('Do not touch', 'not diagnoses', 'does not resolve') and conditional warnings ('near its fill line', 'without breaks') are clearly preserved and unambiguous.\",\"timestamps_of_note\":\"01:02 ('These are possible effects, not diagnoses'), 01:05 ('PPE alone does not resolve every hazard'), 01:09 ('Confirm unknowns and make the report specific before work'). No audio defects or clipping detected at audio boundaries (00:00–01:14).\"}}"
+    },
+    {
+      "record": "read-safety-identify-practice-fil",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":{\"audible_throughout\":true,\"pacing\":\"Moderate, clear, and steady instructional pace appropriate for educational narration.\",\"pitch_and_pace_variation\":\"Natural cadence with appropriate pauses demarcating instructions, questions, and checklist steps.\",\"timbre_consistency\":\"Consistent narrator timbre and audio quality from start to finish.\"},\"concerns\":{\"key_elements_clarity\":{\"five_hazard_groups\":\"Expressed clearly ('limang kahon... para sa bawat hazard group' at 00:05-00:10).\",\"potential_harm\":\"Expressed clearly ('posibleng pinsala' at 00:16-00:18).\",\"immediate_safe_control\":\"Expressed clearly ('agarang kontrol' at 00:18-00:20).\",\"unknown_contact_verification\":\"Expressed clearly ('Kung hindi pa tiyak ang kontak, sabihin kung paano ito kukumpirmahin' at 00:48-00:52).\",\"follow_up\":\"Expressed clearly ('kung kailan babalikan ang kalagayan' at 00:45-00:47).\",\"no_invented_completed_correction\":\"Faithfully maintained ('Ito ay rehearsal, hindi obserbasyon ng trainer' at 00:58-01:01).\"},\"negation_or_condition_shifts\":\"None detected; all conditional markers ('Kung...', 'Kapag...') and negations ('hindi...') match the intent cleanly.\",\"ambiguous_numbers\":\"None detected ('limang kahon' and 'apat na field' are distinct and unambiguous).\"}}"
+    },
+    {
+      "record": "read-safety-identify-check-fil",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":{\"pacing\":\"Moderate and clear, with adequate pauses between instructional steps.\",\"natural_pitch_pace_variation\":\"Natural cadence and inflection matching educational module prompts.\",\"timbre_change\":\"Noticeable narrator shifts between a female voice (00:00–00:02, 00:06–00:20) and a deeper male voice (00:02–00:05, 00:21–00:26).\"},\"concerns\":[\"Terms such as 'Apple' and 'BHW' do not occur in this excerpt.\",\"The required curriculum elements—specifically the five hazard groups, detailed potential harm, immediate safe control protocols, unknown contact verification, follow-up procedures, and explicit warnings against invented completed corrections—are not covered in this brief audio prompt.\",\"At 00:02–00:05 and 00:21–00:26, alternating speaker timbres disrupt narrator consistency.\"]}"
+    },
+    {
+      "record": "read-safety-identify-check-en",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":\"Pacing is steady, measured, and clear with deliberate instructional pauses between sentences. Pitch and intonation contour sound natural for an educational walkthrough without abrupt timbre changes.\",\"concerns\":[\"Content elements referenced in the prompt (five hazard groups, potential harm, unknown contact verification, follow-up, and specific initialisms/names such as 'Apple' and 'BHW') do not appear in this narration segment.\",\"Negations ('does not establish competence') and conditions ('should lead to a specific control and responsible contact') are spoken clearly as phrased.\"]}"
+    },
+    {
+      "record": "story-en",
+      "kind": "full narrator concern; compare focused review",
+      "detail": "{\"delivery\":{\"pacing\":\"Deliberate and steady educational pacing with distinct pauses between sentences and list items.\",\"pitch_and_pace_variation\":\"Generally clear and controlled; list items (0:22–0:27) are enunciated with prolonged pauses for emphasis.\",\"timbre_consistency\":\"Minor pitch and acoustic resonance shifts occur across sentence boundaries (e.g., around 0:15, 0:22, and 0:32), typical of concatenated TTS or multi-take narration.\"},\"concerns\":{\"content_elements_expressed\":{\"five_hazard_groups\":\"Clearly enumerated at 0:22–0:27 ('Sharps, infection, strain, stress, and accidents').\",\"potential_harm\":\"Clearly stated at 0:28–0:31 ('These are possible harms, not diagnoses').\",\"immediate_safe_control\":\"Clearly articulated at 0:09–0:12 ('Keep people away and request correction').\",\"unknown_contact_verification\":\"Clearly articulated across 0:12–0:18 ('The contact still needs confirmation', 'asks whom to notify').\",\"follow_up\":\"Clearly stated at 0:47–0:49 ('She will confirm the contact and follow up').\",\"no_invented_completed_correction\":\"Explicitly preserved at 0:20–0:21 ('She does not invent an answer') and 0:50–0:52 ('Correction is not yet known').\"},\"negations_conditions_numbers\":\"Negations ('does not invent', 'not diagnoses', 'not yet known') and count ('four fields' at 0:39–0:40) are rendered without ambiguity or truncation.\"}}"
+    },
+    {
+      "record": "read-ana-fil",
+      "excerpt": "critical",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "speaker_transition",
+          "timestamp": "00:04 - 00:05",
+          "description": "Abrupt change in synthesized voice characteristics between the two spoken segments."
+        }
+      ]
+    },
+    {
+      "record": "read-check-fil",
+      "excerpt": "head",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "unexpected voice change",
+          "timestamp": "00:02.5",
+          "description": "Shift in speaker pitch, timbre, and character persona between sentences."
+        }
+      ]
+    },
+    {
+      "record": "read-check-fil",
+      "excerpt": "critical",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "timestamp": "00:06.40 - 00:07.10",
+          "type": "unannounced_speaker_change",
+          "description": "Voice shifts abruptly from female to male between the two sentences without an introductory dialogue cue or contextual transition."
+        }
+      ]
+    },
+    {
+      "record": "read-five-hazards-fil",
+      "excerpt": "critical",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:10.4",
+          "description": "Noticeable transition in speaker persona/pitch from Speaker 1 ('Una...') to Speaker 2 ('Ikalawa...')."
+        }
+      ]
+    },
+    {
+      "record": "read-practice-fil",
+      "excerpt": "critical",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:08.30",
+          "description": "Shift in speaker gender/timbre from male to female between the first sentence and the second sentence."
+        }
+      ]
+    },
+    {
+      "record": "read-scope-and-contact-fil",
+      "excerpt": "ending",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:11.5 - 00:12.2",
+          "description": "Noticeable transition from a deeper male narrator to a higher-pitched voice without an explicit contextual transition."
+        }
+      ]
+    },
+    {
+      "record": "shipped-story-fil",
+      "excerpt": "ending",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:10 - 00:11",
+          "description": "Sudden speaker/timbre shift from a female voice to a male voice mid-clip."
+        }
+      ]
+    },
+    {
+      "record": "read-ana-en",
+      "excerpt": "head",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "timestamp": "00:01.8 - 00:02.5",
+          "issue": "Abrupt change in speaker voice/gender between the introductory clause and the main sentence."
+        }
+      ]
+    },
+    {
+      "record": "read-check-en",
+      "excerpt": "ending",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "speaker_inconsistency",
+          "timestamp": "00:02.040 - 00:10.150",
+          "description": "Alternating voice roles between female and male speakers across consecutive instructional sentences."
+        }
+      ]
+    },
+    {
+      "record": "read-five-hazards-en",
+      "excerpt": "head",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "abrupt_speaker_transition",
+          "timestamp": "00:02.80",
+          "description": "Sudden voice change from female to male speaker between phrases."
+        }
+      ]
+    },
+    {
+      "record": "read-five-hazards-en",
+      "excerpt": "ending",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:07.4 - 00:10.5",
+          "description": "Noticeable voice profile/pitch shift for the segment 'These are possible effects, not diagnoses.', sounding like a different speaker or inconsistent voice model generation."
+        }
+      ]
+    },
+    {
+      "record": "read-inspect-en",
+      "excerpt": "critical",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:07.20 - 00:07.75",
+          "description": "Abrupt switch from a female speaker to a male speaker between instructions."
+        }
+      ]
+    }
+  ]
+}

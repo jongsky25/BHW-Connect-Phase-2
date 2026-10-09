@@ -3,7 +3,7 @@ import fs from 'node:fs';import assert from 'node:assert/strict';import {createH
 const j=p=>JSON.parse(fs.readFileSync(p)),sha=b=>createHash('sha256').update(b).digest('hex');
 const b=j('docs/lesson-181-execution-baseline.json'),h=j('docs/lesson-181-handoff-baseline.json');
 const leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/';
-const allowed=new Set([...Object.keys(h.target_files_sha256),'content/training/day1-basic-competencies/modules/08-osh/module.json','content/training/day1-basic-competencies/narration.json','scripts/lib/reference-narration.mjs','remotion/src/Root.tsx','.github/workflows/ci.yml','.github/workflows/remotion.yml']);
+const allowed=new Set([...Object.keys(h.target_files_sha256),'content/training/day1-basic-competencies/modules/08-osh/module.json','content/training/day1-basic-competencies/narration.json','scripts/lib/reference-narration.mjs','src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','.github/workflows/ci.yml','.github/workflows/remotion.yml']);
 let protectedFiles=0;const changed={};
 for(const [p,hash] of Object.entries(b.protected_sha256)){
  const current=fs.readFileSync(p);

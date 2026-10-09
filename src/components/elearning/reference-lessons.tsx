@@ -608,7 +608,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "safety-identify" || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
