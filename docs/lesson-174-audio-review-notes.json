@@ -1,0 +1,1667 @@
+{
+  "status": "draft",
+  "method": "Actual 12 Read MP3 and two decoded shipped AAC recordings, plus four hash-pinned focused excerpts per recording. All original full/focused responses are retained. Model concerns below are verbatim supporting evidence and require human evaluation.",
+  "actual_full_reviews": 14,
+  "actual_focused_excerpts": 56,
+  "pending_focused_excerpts": [],
+  "speech_direction": "One female Gemini Kore narrator requested. Carole remains unchanged in displayed and spoken text; no unverified speech alias. Reported name, delivery, negation and ending concerns remain supporting evidence pending human evaluation.",
+  "human_listening": "pending",
+  "owner_package_review": "pending",
+  "local_policy_SME_review": "pending",
+  "unresolved_concerns": "Review the full and focused records together. Apparent timbre changes, pronunciation, negation or ending concerns and conflicting assessments remain unresolved until actual human listening. A synthesis direction or technical playback pass does not resolve a model concern or constitute human listening.",
+  "full_records": [
+    {
+      "id": "read-problem-action-plan-compare-solutions-fil",
+      "language": "fil",
+      "sha256": "fe3db69734656b768e46a9433853133e4cfffa7e7fbd6a4eccb53d8d13720ac0",
+      "delivery": "Pacing is deliberate, calm, and well-metered with natural pauses suited for educational delivery. However, there is a prominent shift in narrator timbre/speaker identity: an adult male voice reads the title and opening line (00:00\u201300:10), followed by an abrupt transition to a female narrator for the remainder of the audio (00:11\u201301:33).",
+      "clipped_ending": false,
+      "pronunciation_concerns": null,
+      "other_concerns": "1. Timbre change: Narrator switches abruptly from male (00:00\u201300:10) to female (00:11\u201301:33).\n2. Content clarity check: \n- Verified barriers vs unknowns are clearly articulated (work conflicts and childcare are confirmed barriers at 00:13\u201300:21; optimal timing and childcare assistance are stated as not yet certain at 01:12\u201301:16).\n- Authority and partner agreements are stated clearly ('Huwag mangako... hangga't hindi pumapayag ang may awtoridad at mga katuwang' at 01:17\u201301:25).\n- Resources ('oras, tao, at gastos', 'resources') are clearly factored in.\n- Attendance denominator is provided only for the initial state ('tatlong sambahayan... isa lamang ang nakadalo' at 00:06\u201300:10); no post-intervention or 'after' attendance denominator is provided in the scenario.\n- A small-scale trial is proposed ('maliit na pagsubok sa oras' at 00:45\u201300:47), but detailed review/trial parameters remain pending/unelaborated.",
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-compare-solutions-en",
+      "language": "en",
+      "sha256": "775583484b7ec87d74add2497f057e3aeb2e7ce6456b0288f1b4d7b589cc7d37",
+      "delivery": {
+        "pacing": "Deliberate, unhurried instructional cadence with distinct pauses between rhetorical prompts and operational guidelines.",
+        "pitch_and_intonation": "Natural pitch contour with appropriate educational inflections, clear emphasis on contrasts (e.g., verified barriers vs. unknowns), and steady Philippine English vocal timbre throughout.",
+        "timbre_consistency": "Consistent narrator tone and acoustic environment with no noticeable audio splices, pitch drops, or processing shifts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [
+        {
+          "timestamp": "00:06 - 00:09",
+          "issue": "Baseline attendance ratio is stated ('three households were invited, and only one attended'), but no 'after' denominator is presented in the script because the intervention is prospective."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-plan-fil",
+      "language": "fil",
+      "sha256": "3ce32b18ecbfd13591e28df66e6d0a55be1689ae2333a962607b72771bc6160b",
+      "delivery": "The delivery is clear, well-enunciated, and maintained at a measured educational pace. Pauses between framework sections and examples are deliberate and aid comprehension. The narrator exhibits natural pitch contours and consistent timbre throughout without abrupt vocal shifts.",
+      "clipped_ending": false,
+      "pronunciation_concerns": null,
+      "other_concerns": null,
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-plan-en",
+      "language": "en",
+      "sha256": "cf1379df17e92d15c8827f893182e6bb59e0e0ec689002318a309770b9fd8d5d",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, steady, and instructional with clear structural pauses between fields and headings.",
+        "pitch_and_pace_variation": "Moderate and natural for educational narration, maintaining clarity across structured list items.",
+        "narrator_timbre": "Consistent throughout with no audible shift or timbre discontinuity."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "item": "Carol",
+          "timestamp": "00:05 - 00:06, 00:41 - 00:42",
+          "note": "Pronounced clearly as standard English 'Carol' (/\u02c8k\u00e6r\u0259l/); no distortion or awkwardness observed."
+        },
+        {
+          "item": "BHW",
+          "timestamp": null,
+          "note": "The initialism 'BHW' does not occur in this recording."
+        }
+      ],
+      "other_concerns": [
+        {
+          "category": "content_scope",
+          "timestamp": "01:24 - 01:28",
+          "note": "The text refers to community health barriers ('whether barriers decreased') rather than specifically 'classroom barriers'."
+        },
+        {
+          "category": "conditions_and_negations",
+          "timestamp": "00:25 - 00:28, 01:17 - 01:22",
+          "note": "Negations and conditions ('does not establish permission', 'If there is no agreement on Friday, return the question to the team. Do not implement.') are clearly articulated with no ambiguous numbers or altered polarity."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-partners-fil",
+      "language": "fil",
+      "sha256": "1d2eb8b90dab597a9ee916484201961cac83b129323c81c84b1244f6bff06bc7",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, steady, and clear with appropriate educational pauses between thoughts.",
+        "pitch_and_pace_variation": "Generally natural educational cadence, though dialogue transitions reflect synthetic text-to-speech characteristics.",
+        "timbre_change": "Noticeable voice and timbre shift between 00:02 and 00:08, where the voice changes from female to a male voice for Carol's dialogue ('Kaya kong kausapin... sabi ni Carol'), before returning to the female narrator at 00:08."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "term": "Carol",
+          "timestamp": "00:06 - 00:08",
+          "observation": "Pronounced with standard English/Taglish phonetics; intelligible and natural."
+        },
+        {
+          "term": "BHW",
+          "timestamps": [
+            "00:27",
+            "00:35",
+            "01:33"
+          ],
+          "observation": "Pronounced as individual English letter names ('B-H-W'), standard for Philippine community health contexts."
+        }
+      ],
+      "other_concerns": {
+        "topic_and_content_coverage": "The spoken content focuses on community health worker (BHW) delegation, health team coordination, community consultation, authority/budgeting boundaries, and review processes. Concepts such as classroom barriers or before/after attendance denominators are entirely absent from the script.",
+        "pending_trial_and_agreements": "Partner roles, authority boundaries, confirming contributions before scheduling a trial, and documenting pending decisions are explicitly and clearly articulated."
+      },
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-partners-en",
+      "language": "en",
+      "sha256": "579c7a99be5c41a54c548c1cd0a3735cac7db80079a29a68bd55f2391af67f93",
+      "delivery": "Pacing is deliberate, measured, and instructional with clear articulation. Natural pitch variation and emphasis are maintained across sentences, and the narrator's vocal timbre remains consistent throughout.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [
+        "No specific numerical denominators for before/after attendance are stated in the text (mentions qualitatively 'those who seldom attend meetings').",
+        "No classroom barriers are discussed; the subject matter focuses on community/barangay health team operations.",
+        "Partner agreement, responsible authority, resource constraints, and an honest pending review/trial plan are clearly articulated without conflicting negations or ambiguous conditions."
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-review-fil",
+      "language": "fil",
+      "sha256": "9d936336d356fb01121fcd76f781124bf3daeda691259e06ea701c59ff6f3fdc",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, clear, and steady instructional pace with natural pauses between conceptual points.",
+        "pitch_and_pace_variation": "Natural educational cadence with clear emphasis on contrast words (e.g., bago, pagkatapos, gawain, output, resulta).",
+        "timbre_consistency": "Narrator vocal timbre remains consistent with no abrupt audio dropouts or tone shifts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "01:09 - 01:10",
+          "word_or_phrase": "Carol",
+          "observation": "Pronounced naturally as 'Carol'; BHW does not appear in the audio."
+        }
+      ],
+      "other_concerns": {
+        "partner_agreement_and_authority": "Clearly states that partners agreed to an earlier trial schedule only, and that this does not constitute approval for the new proposal (00:08 - 00:17).",
+        "attendance_denominators": "Explicitly stated for both before and after conditions (1 of 3 attended; 2 of 3 did not attend; 00:18 - 00:32 and 00:51 - 00:54).",
+        "verified_barriers_vs_unknowns": "Clear distinction made that numerical data cannot explain why households failed to attend, cautioning against labeling residents and urging investigation into unconfirmed barriers (work, cost, childcare, notice; 00:58 - 01:22).",
+        "review_plan_and_scope": "Explicitly framed as a hypothetical scenario / review exercise where one trial does not prove the problem is solved, requiring iterative modification of assumptions and plans (01:32 - 01:50)."
+      },
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-review-en",
+      "language": "en",
+      "sha256": "bd041f89cd5a0523c906211fdca882585f157488427d74a05781939eb77975c7",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, instructional, and evenly paced with clear pauses between phrases and data points.",
+        "pitch_and_pace_variation": "Natural pedagogical cadence with clear emphasis on contrastive elements (e.g., 'Before' vs. 'After', 'activity, output, and outcome').",
+        "timbre_consistency": "Consistent acoustic quality and vocal timbre across the entire recording."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "01:02",
+          "word": "Carol",
+          "note": "Pronounced clearly as standard 'Carol'. The acronym 'BHW' is not present in this audio clip."
+        }
+      ],
+      "other_concerns": {
+        "content_clarity": {
+          "partner_agreement": "Clearly articulated ('supplies partner agreement to an earlier trial of an earlier time').",
+          "before_after_denominators": "Explicitly stated ('three households invited, one attended' / 'three invited again, one attended again').",
+          "barriers_vs_unknowns": "Distinctly contrasted ('counts alone do not tell us why... or whether other barriers decreased'; 'Record reports and unknowns'; rechecking 'work, costs, childcare, and notice').",
+          "pending_review_plan": "Honest limitation clearly articulated ('One trial does not establish that the whole problem is solved. Review uses results to revise assumptions and the plan.').",
+          "authority_and_resources": "Not explicitly discussed in this excerpt beyond partner agreement and general barrier checks."
+        },
+        "negation_and_numbers": "All negations ('does not work', 'does not approve', 'did not increase', 'do not tell us', 'Do not label', 'does not establish') and count numbers (3 invited, 1 attended, 2 missed) are cleanly articulated without ambiguity."
+      },
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-practice-fil",
+      "language": "fil",
+      "sha256": "bbd3b08ef507bf0c20cc4f9ee2640f2204852fa4ec77b36896fa7527fda073de",
+      "delivery": {
+        "pacing": "Deliberate, steady, and clear throughout.",
+        "pitch_and_pace_variation": "Natural educational cadence with clear pauses between instructions.",
+        "timbre": "Consistent narrator voice and tone across the recording."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:24 - 00:25",
+          "word": "toaster",
+          "issue": "Narrator clearly articulates 'toaster' instead of 'poster'."
+        },
+        {
+          "timestamp": "00:36 - 00:37",
+          "word": "BHW",
+          "issue": "Pronounced distinctly letter-by-letter as 'B-H-W' with standard English letter names; Carole is not mentioned in the audio."
+        }
+      ],
+      "other_concerns": [
+        {
+          "timestamp": "00:07 - 00:10",
+          "category": "attendance denominator",
+          "detail": "Mentions baseline attendance ('Isa sa tatlong inimbitahang sambahayan'), but no before/after comparison denominator is provided."
+        },
+        {
+          "timestamp": "00:11 - 00:22",
+          "category": "barriers vs. unknowns",
+          "detail": "Confirmed barriers from the exercise (work and caretaking) and unknowns (preferred time, staff availability, costs, agreement on new trial) are clearly stated."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-practice-en",
+      "language": "en",
+      "sha256": "fe79c20fed818ed14ac66d4d3625a3ba6bcf1002a90e74bffd235334ee7b1f36",
+      "delivery": {
+        "pacing": "Deliberate and steady instructional pace with pronounced pauses between distinct phrases and exercise instructions.",
+        "pitch_and_pace_variation": "Moderate pitch variation; delivery sounds like standardized e-learning narration with structured prosody and consistent cadence.",
+        "timbre": "Consistent clear female narration throughout without noticeable shifts in vocal timbre or audio quality."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "item": "Carole",
+          "timestamp": null,
+          "note": "The name 'Carole' does not appear in the recorded audio script."
+        },
+        {
+          "item": "BHW",
+          "timestamp": "00:32, 01:03",
+          "note": "Articulated letter-by-letter ('B-H-W') clearly without awkwardness."
+        }
+      ],
+      "other_concerns": [
+        {
+          "category": "Content & Information Completeness",
+          "timestamp": "00:05 - 00:19",
+          "note": "Baseline attendance is stated ('One of three invited households attended'), but post-trial attendance denominators are not specified. Barriers confirmed are 'work and childcare barriers' rather than classroom-specific barriers."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-check-fil",
+      "language": "fil",
+      "sha256": "3240037c89ab3e21876142a1ce4f1dbc2fa847b5f841a407aa53d8d1cbafb215",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Moderate, measured, and well-suited for instructional audio prompts.",
+        "natural_pitch_pace_variation": "Natural cadence with appropriate pauses demarcating instructions, scenario context, and reflective guidelines.",
+        "timbre_consistency": "Consistent acoustic quality and voice timbre throughout the entire recording."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "term": "Carol",
+          "timestamp": "00:03 - 00:04",
+          "note": "Pronounced naturally as standard English 'Carol' without awkwardness."
+        },
+        {
+          "term": "BHW",
+          "timestamp": null,
+          "note": "The initialism BHW does not appear in this recording."
+        }
+      ],
+      "other_concerns": {
+        "attendance_denominators": "Expressed unambiguously ('isa lamang sa tatlong inimbitahang sambahayan ang nakadalo', followed by 'Dalawa pa rin ang hindi nakapunta').",
+        "trial_and_review_plan": "Clearly conveys an honest proposal and review plan without false promises of schedules, funding, or complete problem resolution ('tapat na mungkahi at review plan, hindi pangako ng schedule, pondo, o pagkalutas ng buong problema').",
+        "separation_of_actions_and_decisions": "Clearly articulates distinguishing completed tasks from results and agreements from pending decisions ('Ihiwalay ang natapos na gawain sa resulta, at ang kasunduan sa hinihintay pang desisyon').",
+        "ambiguity_or_negation_issues": "None detected; conditional and negative phrasing ('ngunit', 'bago tingnan', 'hindi pangako') are delivered distinctly."
+      },
+      "unparsed_response": null
+    },
+    {
+      "id": "read-problem-action-plan-check-en",
+      "language": "en",
+      "sha256": "2745ead4bebef13266095d99e3a5df6e44511461f32d4fbfe3e5b155446e895e",
+      "delivery": {
+        "pacing": "Deliberate, steady, and instructional with clear pauses between sentences.",
+        "pitch_and_intonation": "Natural pitch modulation suitable for an educational module, with appropriate instructional cadence.",
+        "semantic_clarity": "The distinctions between completed activity and outcome, agreement versus pending decision, and attendance counts (one of three attended; two still missed visits) are articulated cleanly and without ambiguity.",
+        "timbre_consistency": "Consistent narrator timbre throughout with no sudden shifts in tone or acoustic quality."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "story-fil",
+      "language": "fil",
+      "sha256": "2e718777374ae45f7522598ba592890ef601a5021a46f071d8f4f5aafb38b9f2",
+      "delivery": "The narration is clear, intelligible, and audible throughout with a steady, instructional cadence. Pauses between items in lists (e.g., around 00:12\u201300:19) are measured and distinct. The pitch and pace remain consistent with a synthetic educational narration style without noticeable timbre distortion or abrupt volume shifts.",
+      "clipped_ending": false,
+      "pronunciation_concerns": "The name 'Carol' is pronounced naturally as /k\u00e6.r\u0259l/ or /ka.rol/ without awkward phonemic artifacts. The acronym 'BHW' does not appear in this recording.",
+      "other_concerns": "None. The narration clearly distinguishes verified barriers (work and childcare) from trial parameters, specifies Carol's advisory/consultative scope versus the health team's decision authority, explicitly details the attendance ratio (one out of three attended before and after; two did not attend), and articulates that the scheduled review remains pending without premature claims of resolution.",
+      "unparsed_response": null
+    },
+    {
+      "id": "story-en",
+      "language": "en",
+      "sha256": "115f2762d762c680dc3f9772b0857227f7902e1ddd77cc1351fcee2484b354de",
+      "delivery": "The delivery is measured, articulate, and paced with consistent pauses suited for instructional narration. Pitch and pacing vary naturally across list items and declarative statements without awkward cadence or sudden shifts in timbre.",
+      "clipped_ending": false,
+      "pronunciation_concerns": null,
+      "other_concerns": null,
+      "unparsed_response": null
+    }
+  ],
+  "focused_records": [
+    {
+      "id": "read-check-fil",
+      "source_sha256": "3240037c89ab3e21876142a1ce4f1dbc2fa847b5f841a407aa53d8d1cbafb215",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 13.86,
+          "excerpt_sha256": "842875b7aa97ea58b1c741f9ffd783aeb1f87754bd34752ef6d7b31096b2ca95",
+          "observations": {
+            "audible_speech": "Clear, studio-quality female instructional voiceover in Filipino throughout the entire clip (00:00 - 00:13.5).",
+            "carole_pronunciation": "Pronounced as 'Carol' ([\u02c8ka.\u0279\u0259l] / [\u02c8ka.rol]) at approximately 00:03.5 - 00:04.2.",
+            "negation": "No explicit grammatical negation markers (e.g., 'hindi', 'wala') are present, though a restrictive contrastive construction is used ('isa lamang').",
+            "seven_field_planning": "The scenario describes field execution following a trial/meeting structure ('Bumalik si Carol sa team. Natapos ang pulong...').",
+            "partner_authority_and_pending_agreement": "Not explicitly stated; refers to participant engagement ('inimbitahang sambahayan') and post-trial status rather than formal partner signing.",
+            "attendance_denominators": "The attendance denominator is explicitly quantified as three ('tatlong inimbitahang sambahayan'), with a numerator of one ('isa lamang... ang nakadalo') between 00:09.5 and 00:13.0.",
+            "ending_completeness": "The sentence completes naturally at 00:13.2 ('ang nakadalo') with normal trailing silence before the excerpt ends.",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "unexpected_voice_changes": "None; tone, pitch, and speaker identity remain consistent."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words are distinct and easily transcribable without ambiguity.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.18,
+          "end": 13.86,
+          "excerpt_sha256": "30a0921c0da59e5fbb59ff9eda43114b5ccd6e8c5c201637b70ee06ee1bcf6fb",
+          "observations": {
+            "carol_pronunciation": "Pronounced clearly as [\u02c8ka.\u027eol] between ~00:00.65 and 00:01.15.",
+            "negation": "No grammatical negation markers (e.g., 'hindi', 'wala') are present in this excerpt.",
+            "seven_field_planning": "Not mentioned or referenced in this excerpt.",
+            "partner_authority_and_pending_agreement": "Not mentioned in the text of this excerpt.",
+            "attendance_denominators": "The attendance fraction is explicitly stated as 'isa lamang sa tatlong inimbitahang sambahayan' (1 out of 3 invited households; denominator is 3 / 'tatlo', ~00:07.45 - 00:08.00).",
+            "ending_completeness": "The sentence completes naturally on 'nakadalo' at ~00:10.25 with standard cadence and a falling terminal intonation; no cut-off detected.",
+            "audible_speech": "Speech is fully audible and intelligible across the entire excerpt (00:00.00 - 00:10.50).",
+            "clipped_words": "None observed; word onsets and codas are clearly articulated.",
+            "unexpected_voice_changes": "None observed; pitch, pacing, and tone remain stable and consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all lexical items and speech boundaries are unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 14.16,
+          "end": 22.74,
+          "excerpt_sha256": "583387834cbaca050c94a6cd0bd33ff1d463410fc6cb3e069bd9560ed77242fc",
+          "observations": {
+            "carole_pronunciation": "The name or word 'Carole' is not present in this audio excerpt.",
+            "negation": "Clear negation heard at 00:01.0 - 00:01.4 ('hindi nakapunta').",
+            "seven_field_planning": "No mention or context of seven-field planning heard in the excerpt.",
+            "partner_authority_and_pending_agreement": "No terms related to partner authority or pending agreement are present.",
+            "attendance_denominators": "Attendance reference is made at 00:00.0 - 00:02.2 ('Dalawa pa rin ang hindi nakapunta'), indicating two individuals failed to attend/arrive; however, no denominator (total number expected) is stated.",
+            "ending_completeness": "The ending at 00:08.3 is complete and naturally concludes with 'feedback' without truncation.",
+            "audible_speech": "Speech is fully audible and intelligible Tagalog throughout.",
+            "clipped_words": "No clipped or abruptly cut off words detected.",
+            "unexpected_voice_changes": "A distinct speaker transition occurs: 00:00.0 - 00:02.2 is spoken by a female voice, followed by an abrupt switch around 00:03.0 to a male voice (possibly synthesized/TTS) continuing until 00:08.3."
+          },
+          "possible_defects": [
+            {
+              "type": "unexpected_voice_change",
+              "timestamp_range": "00:02.2 - 00:03.0",
+              "description": "Noticeable voice and speaker change from a female speaker to a male speaker between the two sentences."
+            }
+          ],
+          "uncertainty": "None. Both sentences and phonemes are clear and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 33.96,
+          "end": 50.2335,
+          "excerpt_sha256": "9516c970b91e9b2cbee41374d7440ecbc9ce23d538781eea05f167ef63c3295e",
+          "observations": {
+            "carole_pronunciation": "The term/name 'Carole' does not appear in this excerpt.",
+            "negation": "Clear negation occurs between 00:04.20 and 00:09.50 ('hindi pangako ng schedule, pondo, o pagkalutas ng buong problema').",
+            "seven_field_planning": "The speech outlines elements of an action/review plan ('review plan', 'taong kikilos', 'paraan upang malaman kung bumaba ang hadlang'), clarifying what the plan commits to versus what it does not promise.",
+            "partner_authority_and_pending_agreement": "Not explicitly referenced; context establishes boundary conditions of proposals rather than binding organizational agreements.",
+            "attendance_denominators": "No numerical attendance denominators or metrics are mentioned in this excerpt.",
+            "ending_completeness": "The audio concludes naturally with the final word 'hadlang' at ~00:16.10, followed by natural decay; no trailing syllable cutoff.",
+            "audible_speech": "Speech is fully audible, studio-quality, clear educational delivery with standard Tagalog intonation and natural Taglish loan words ('review plan', 'schedule').",
+            "clipped_words": "None detected; word boundaries and final consonants are intact.",
+            "unexpected_voice_changes": "None; female speaker maintains consistent acoustic quality, pitch, volume, and pacing throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all speech segments are clearly enunciated and easily transcribed without ambiguity.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-compare-solutions-fil",
+      "source_sha256": "fe3db69734656b768e46a9433853133e4cfffa7e7fbd6a4eccb53d8d13720ac0",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.9,
+          "excerpt_sha256": "236d1b9abfd21b9e798d6f9d914aa07a55738e4339670306ba1793dbc877c8bf",
+          "observations": {
+            "carole_pronunciation": "The name or term 'Carole' does not occur in this excerpt.",
+            "negation": "No negative particles (e.g., 'hindi', 'wala') are present.",
+            "seven_field_planning": "No references to seven-field planning occur in this segment.",
+            "partner_authority_and_pending_agreement": "No partner authority or pending agreements are mentioned.",
+            "attendance_denominators": "The attendance denominator is explicitly stated as three households ('tatlong sambahayan') invited, with one attending ('isa lamang ang nakadalo').",
+            "ending_completeness": "The excerpt concludes with a complete sentence at 00:10.5 without premature cutoff.",
+            "audible_speech": "Speech is clearly audible, paced, and intelligible across 00:00.000 - 00:10.500.",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "unexpected_voice_changes": "Tone, pitch, and voice quality remain consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality and diction are unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.18,
+          "end": 10.9,
+          "excerpt_sha256": "e8ddfd3e6ec74a677afd03e815416f31722cf31f31770e5d058c99b39ca3fab6",
+          "observations": {
+            "audible_speech": "Clear, fluent, and fully audible Filipino/Tagalog narration from 00:00.00 to 00:07.50.",
+            "carole_pronunciation": "The term or proper name 'Carole' does not occur in this excerpt.",
+            "negation": "No negative particles (e.g., 'hindi', 'walang') are present; the sentence is structured affirmatively using restrictive phrasing ('isa lamang').",
+            "seven_field_planning": "No explicit reference to 'seven-field planning' in the spoken text.",
+            "partner_authority_and_pending_agreement": "No mention of partner authority or pending agreements in this segment.",
+            "attendance_denominators": "The denominator for attendance is explicitly identified as three households ('tatlong sambahayan ang inimbitahan') with one attendee ('isa lamang ang nakadalo').",
+            "ending_completeness": "The sentence completes naturally on the word 'nakadalo' around 00:07.45 with normal trailing intonation and silence before 00:07.72.",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "unexpected_voice_changes": "Tone, pitch, and synthesized vocal quality remain consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. The speech is clear and free of background noise or ambiguity.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 21.82,
+          "end": 31.8,
+          "excerpt_sha256": "4473bc549c6efb8da1a3e3c6ee7ce6dafc542d1a4ec96e4319e7d85d5df0b80b",
+          "observations": {
+            "carole_pronunciation": "The name 'Carol'/'Carole' at 00:05.15 - 00:05.80 is pronounced clearly in a standard Philippine English/Tagalog manner ('KEH-rol'/'KA-rol') with no slurring or phonemic distortion.",
+            "negation": "Clear negation is present at 00:00.00 - 00:00.60 ('Hindi ito tunay...').",
+            "seven_field_planning": "No direct mention of seven-field planning occurs within this audio segment.",
+            "partner_authority_and_pending_agreement": "The excerpt establishes the speaker's fictional role ('BHW na manghahain ng mungkahi' at 00:06.50 - 00:09.35), signifying an authority proposing a recommendation/motion, though no pending agreement/approval process is finalized in this clip.",
+            "attendance_denominators": "No counts, figures, or attendance denominators are mentioned in the excerpt.",
+            "ending_completeness": "The final word 'mungkahi' concludes completely at 00:09.30 followed by natural decay; no trailing cutoff.",
+            "audible_speech": "All words are fully audible, cleanly articulated, and intelligible throughout.",
+            "clipped_words": "None detected; word boundaries and initial/final consonants are preserved.",
+            "unexpected_voice_changes": "Tone, volume, pace, and vocal timbre remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "Spelling of the name ('Carol' vs. 'Carole') cannot be determined strictly from audio, though phonetically unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 77.16,
+          "end": 93.675125,
+          "excerpt_sha256": "5064c86fc3eeb246bba711f3ad1083a5a534b74f11d2c0f3dac2ae210284c66c",
+          "observations": {
+            "carole_pronunciation": "Not applicable; the word or name 'Carole' is not present in this excerpt.",
+            "negation": "Multiple clear negation markers are articulated: prohibitive 'Huwag' at 00:00\u201300:01, conditional negation 'hindi pumapayag' at 00:04\u201300:05, and contrastive negation 'hindi sa' at 00:13\u201300:14.",
+            "partner_authority_and_pending_agreement": "Addressed distinctly between 00:04 and 00:08 ('hangga't hindi pumapayag ang may awtoridad at mga katuwang').",
+            "seven_field_planning_and_attendance_denominators": "Neither seven-field planning parameters nor attendance denominators are audibly mentioned in the recording.",
+            "audible_speech_and_voice_changes": "Speech is fully audible, well-paced, and maintains a consistent, clear educational tone throughout with no unexpected shifts in vocal quality or volume.",
+            "clipped_words": "None; word boundaries and phonemes are fully articulated.",
+            "ending_completeness": "The final phrase 'ng paggawa' concludes cleanly around 00:15\u201300:16 without trailing off or clipping."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio clarity is high and all lexical items are fully audible.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-partners-fil",
+      "source_sha256": "1d2eb8b90dab597a9ee916484201961cac83b129323c81c84b1244f6bff06bc7",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.26,
+          "excerpt_sha256": "ebfbca4e7058cfba47c23f1798e742a586db4adc35e323ce4a82ab7806e028f4",
+          "observations": {
+            "pronunciation_carole": "The name 'Carol' (spelled 'Carol' / 'Carole' in prompt) is pronounced at 00:06.90 - 00:07.70 with a standard Filipino phonology (/k\u0250\u02c8\u027eol/ or /\u02c8k\u00e6.\u0279\u0259l/ blend, ending on a clear liquid /l/).",
+            "negation": "No negative markers (e.g., 'hindi', 'wala', 'huwag') are present in this excerpt.",
+            "seven_field_planning_and_context": "The dialogue touches on logistical coordination (identifying participants and polling availability: 'Sino ang dapat kasama?', 'ibuod ang gustong oras').",
+            "partner_authority_and_pending_agreement": "Carol offers to take initiative ('Kaya kong kausapin...') while seeking clarification or establishing consensus on who needs to be included ('Sino ang dapat kasama?').",
+            "attendance_denominators": "Referenced generally via 'mga residente' and the query 'Sino ang dapat kasama?' without specifying a strict numeric count or denominator.",
+            "ending_completeness": "The utterance concludes fully with 'sabi ni Carol' without cutoff or trailing mid-phoneme truncations.",
+            "audible_speech_quality": "Clear, deliberate educational narration/readout with standard pacing and distinct pauses between syntactic units (e.g., between the question and the statement).",
+            "clipped_words": "None detected; word boundaries and final consonants/vowels are intact.",
+            "unexpected_voice_changes": "Slight tonal shift between the direct quotation/dialogue portion (00:00.00 - 00:06.60) and the dialogue tag 'sabi ni Carol' (00:06.60 - 00:07.90), typical of audio narration differentiating spoken dialogue from narration."
+          },
+          "possible_defects": [],
+          "uncertainty": "Minimal; all words are articulated clearly with high intelligibility.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.38,
+          "end": 8.26,
+          "excerpt_sha256": "daa5a046d1a9ba11d3b920f90ab0d858005c675c60f9dc5218ee3d9602b7593f",
+          "observations": {
+            "carole_pronunciation": "The name 'Carol' at 00:04.58 - 00:05.08 is pronounced clearly as [\u02c8ka.\u027eol] with standard Filipino phonology.",
+            "negation": "No negative particles (e.g., 'hindi', 'wala') are present; the statement is affirmative ('Kaya kong...').",
+            "seven_field_planning": "There is no explicit reference to seven-field planning structures, though the speaker mentions planning tasks ('ibuod ang gustong oras' at 00:02.40 - 00:04.12).",
+            "partner_authority_and_pending_agreement": "The statement shows an offer/initiative by Carol to consult residents and summarize their preferred meeting times, implying pending coordination/agreement with partners.",
+            "attendance_denominators": "No specific participant counts or attendance denominators are mentioned; only the general group 'mga residente' is referenced at 00:01.35 - 00:02.35.",
+            "ending_completeness": "The sentence finishes cleanly at 00:05.10 with no premature audio truncation or cutoff.",
+            "audible_speech": "Speech is fully audible and intelligible throughout the entire duration (00:00.00 - 00:05.10).",
+            "clipped_words": "None detected; word boundaries are intact.",
+            "unexpected_voice_changes": "Tone, volume, and timbre remain steady and consistent without sudden acoustic shifts."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; the audio is clear and the spoken text is unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 20.4,
+          "end": 30.5,
+          "excerpt_sha256": "16b354fdcab65667cd9d6df36d5d6d2edac05e26b215801221a91361b2ba1c8b",
+          "observations": {
+            "carole_pronunciation": "Not applicable; the name 'Carole' does not occur in this excerpt.",
+            "negation": "Clear presence of negation particles: 'Hindi pa kumpirmado' (00:01.0 - 00:02.5) and 'Hindi pwedeng akuin' (00:05.1 - 00:06.6).",
+            "seven_field_planning": "Not explicitly stated by name in the spoken text, though contextualized within community health worker (BHW) scope of work/task distribution.",
+            "partner_authority_and_pending_agreement": "Reflected in 'itatala ko bilang hinihintay' (00:02.6 - 00:04.9, designating pending status) and 'Hindi pwedeng akuin ng BHW ang lahat ng gawain' (00:05.1 - 00:09.6, addressing workload limits and shared responsibility/authority).",
+            "attendance_denominators": "Not mentioned in the audio.",
+            "ending_completeness": "The audio concludes naturally with 'gawain' at 00:09.5 without premature cutoff.",
+            "audible_speech": "Speech is fully audible, clearly articulated, and paced evenly throughout.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "None detected; voice tone, speaker timbre, and acoustic environment remain uniform."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all lexical tokens and acoustic boundaries are distinct and intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 76.48,
+          "end": 94.32816666666666,
+          "excerpt_sha256": "3a370916bb46be149e76a011d7ece3c22a9fe72f669b5cad252913eae833a5e5",
+          "observations": {
+            "carole_pronunciation": "The name or term 'Carole' is not present in the spoken passage.",
+            "negation": "Negation is clearly spoken at 00:13.8 ('Hindi lahat ng gawain...').",
+            "seven_field_planning": "No mention of seven-field planning heard in this excerpt.",
+            "partner_authority_and_pending_agreement": "Audio references ownership and partnership ('may may-ari at kasosyo') from 00:11.0 to 00:13.5, but does not explicitly detail pending agreements.",
+            "attendance_denominators": "No attendance figures or denominators are referenced.",
+            "ending_completeness": "The utterance completes naturally at 00:16.8 with 'BHW', followed by quiet room tone until the end.",
+            "audible_speech": "Speech is fully audible, clear, and intelligibly delivered across the 00:00.0 - 00:16.8 range.",
+            "clipped_words": "None observed; word onsets and codas are intact.",
+            "unexpected_voice_changes": "Tone, volume, pace, and vocal timbre remain consistent throughout without sudden pitch breaks or voice modifications."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear and free of background noise or distortion.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-plan-fil",
+      "source_sha256": "3ce32b18ecbfd13591e28df66e6d0a55be1689ae2333a962607b72771bc6160b",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.66,
+          "excerpt_sha256": "9af4c9c0ea1e4cf4cbc54f1d258cc2d1ca3ae9dd5aef44d4df5145aa03267666",
+          "observations": {
+            "speaker_turns": [
+              {
+                "speaker": "Speaker 1",
+                "timestamp_start": "00:00.08",
+                "timestamp_end": "00:04.15",
+                "text": "Mula mungkahi tungo sa napagkasunduang gawain."
+              },
+              {
+                "speaker": "Speaker 2",
+                "timestamp_start": "00:04.90",
+                "timestamp_end": "00:08.15",
+                "text": "Mungkahi pa lamang ito, sabi ni Carol."
+              }
+            ],
+            "carol_pronunciation": "Pronounced phonetically as Tagalog 'Karol' ([k\u0250\u02c8\u027eol]) between 00:07.45 and 00:08.10 with standard Filipino articulation and clear syllable demarcation.",
+            "negation": "No explicit grammatical negation particles (such as 'hindi' or 'wala') are present; however, the limiter/qualifier 'pa lamang ito' ('this is only/just a proposal') functions semantically to denote that it is not yet final.",
+            "seven_field_planning": "The phrase 'Mula mungkahi tungo sa napagkasunduang gawain' directly frames the procedural transition from proposals/inputs to agreed actions/deliverables typical of project planning stages.",
+            "partner_authority_and_pending_agreement": "'Mungkahi pa lamang ito' highlights pending approval/agreement status, emphasizing that decisions are preliminary rather than executed.",
+            "attendance_denominators": "No explicit numeric attendance figures or denominators are stated in this segment.",
+            "audible_speech": "All speech is clearly audible, cleanly recorded, with normal pacing and no background acoustic interference.",
+            "clipped_words": "None; word onsets and codas are preserved completely across both utterances.",
+            "unexpected_voice_changes": "A planned speaker change occurs at approximately 00:04.20\u201300:04.90 between the narrator/first speaker and the second speaker."
+          },
+          "possible_defects": [],
+          "uncertainty": "Minimal to none; speech is well-articulated and lexical items are unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 4.94,
+          "end": 8.66,
+          "excerpt_sha256": "b6e26f682509f8bfbb38c7a7179aa37d6bb2b1e11d4e3af12beb94be3084bc65",
+          "observations": {
+            "carole_pronunciation": "Pronounced phonetically as [ka-rol] / 'Carol' at [00:02.55 - 00:03.28], clear and standard for Philippine English/Tagalog localization.",
+            "negation": "No negative grammatical markers (e.g., 'hindi', 'wala') are present.",
+            "seven_field_planning": "Not mentioned or referenced in this excerpt.",
+            "partner_authority_and_pending_agreement": "The phrase 'Mungkahi pa lamang ito' explicitly indicates that the matter is merely a proposal/suggestion pending consensus or authorization, attributed to Carol ('sabi ni Carol').",
+            "attendance_denominators": "None audible.",
+            "ending_completeness": "The utterance resolves completely without abrupt truncation at the sentence boundary.",
+            "audible_speech": "Speech is fully audible and intelligible throughout [00:00.00 - 00:03.35].",
+            "clipped_words": "None; initial consonant /m/ in 'Mungkahi' and terminal consonant /l/ in 'Carol' are fully intact.",
+            "unexpected_voice_changes": "None; the female narrator maintains consistent pitch, volume, and timbre, with a natural pause between [00:01.85 - 00:02.10]."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. The audio is clear, fully articulated, and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 31.52,
+          "end": 79.1,
+          "excerpt_sha256": "5c936ea0604e75c153f6131d2bff710fe5bc96ee2bcd2d951af8b3c580289169",
+          "observations": {
+            "voice_change": "There is a distinct speaker switch at ~00:04.9, shifting from a male speaker reciting a general consent rule (00:00.0 - 00:04.8) to a female speaker delivering the structured action plan (00:05.0 - 00:47.0).",
+            "carole_pronunciation": "The name 'Carol' (referenced at 00:19.4) is pronounced clearly with standard Tagalog-English phonology ('si Carol').",
+            "negation": "Negation occurs at 00:00.0 ('Hindi katumbas...') regarding consent and at 00:41.2 ('hindi pagdalo') regarding reasons for non-attendance.",
+            "seven_field_planning": "The female speaker articulates a 7-part operational planning format: Sanhi (00:06.4), Mungkahi (00:10.5), Owner (00:18.4), Resources (00:25.5), Deadline (00:33.7), Sukatan (00:37.0), and Review (00:43.2).",
+            "partner_authority_and_pending_agreement": "Carol is assigned consultation responsibility, whereas decision-making authority over the schedule rests with the responsible health team ('ang may tungkuling health team para sa desisyon sa schedule', 00:21.8 - 00:25.0). A pending agreement/confirmation is noted for staff availability ('oras ng staff na kailangan pang kumpirmahin', 00:30.4 - 00:33.0).",
+            "attendance_denominators": "The metric ('Sukatan') defines attendance relative to the invited population ('nakadalo sa inimbitahan', 00:37.9 - 00:40.0), establishing invitees as the denominator.",
+            "ending_completeness": "The audio concludes naturally and completely at 00:47.0 on the word 'trial' without cutoff or trailing speech."
+          },
+          "possible_defects": [
+            {
+              "timestamp": "00:04.8 - 00:05.2",
+              "type": "abrupt speaker transition",
+              "description": "Noticeable transition and room tone change between the introductory male voice and the primary female reader."
+            }
+          ],
+          "uncertainty": "None; speech is clear, deliberate, and recorded in standard educational broadcast pacing.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 92.24,
+          "end": 112.37879166666667,
+          "excerpt_sha256": "755b8201ecf96a75784c7c15b326b91aea512b53233869a1eab05fe5b2c67ac8",
+          "observations": {
+            "carole_pronunciation": "The name or term 'Carole' is not present in this audio excerpt.",
+            "negation": [
+              {
+                "phrase": "walang kasunduan",
+                "timestamp": "00:00.40 - 00:01.40"
+              },
+              {
+                "phrase": "Huwag magpatupad",
+                "timestamp": "00:04.60 - 00:05.80"
+              },
+              {
+                "phrase": "hindi lang",
+                "timestamp": "00:09.20 - 00:09.80"
+              }
+            ],
+            "seven_field_planning": "The excerpt outlines planning requirements between 00:12.00 and 00:20.00, but lists only four fields explicitly ('responsable', 'resources', 'petsa', 'sukatan ng resulta') rather than a complete seven-field framework.",
+            "partner_authority_and_pending_agreement": "Between 00:00.00 and 00:05.80, a clear rule for pending agreement is stated: if no agreement is reached by Friday, refer the matter back to the team and refrain from implementation.",
+            "attendance_denominators": "No attendance figures or denominators are stated.",
+            "ending_completeness": "The utterance finishes naturally on 'resulta' at 00:19.80 without truncation or mid-word cutoffs.",
+            "audible_speech": "Speech is intelligible, clear, and cleanly articulated throughout the recording.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": [
+              {
+                "timestamp": "00:06.50",
+                "description": "Voice transition from Speaker 1 (higher-pitched female) to Speaker 2 (male/lower register synthetic voice)."
+              },
+              {
+                "timestamp": "00:12.00",
+                "description": "Voice transition from Speaker 2 to Speaker 3 (distinct female voice with different cadence and acoustics)."
+              }
+            ]
+          },
+          "possible_defects": [
+            {
+              "type": "speaker_inconsistency",
+              "timestamp": "00:06.50 - 00:12.00",
+              "description": "Noticeable switches across three distinct voices in a short educational sequence without narrative transition."
+            }
+          ],
+          "uncertainty": "Low; all spoken words, syntactic negations, and speaker transitions are clear.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-practice-fil",
+      "source_sha256": "bbd3b08ef507bf0c20cc4f9ee2640f2204852fa4ec77b36896fa7527fda073de",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 22.9,
+          "excerpt_sha256": "7ca82b063874ca89e436d4838041227e35d61c3388f42902eccab3aadff2e150",
+          "observations": {
+            "speaker_profile": "Female voice speaking Filipino/Tagalog with deliberate instructional cadence.",
+            "carole_pronunciation": "The name or word 'Carole' is not present in this audio excerpt.",
+            "negation": "Clear negation heard at 00:15.0 ('Hindi pa alam').",
+            "seven_field_planning": "Mentions elements related to planning components including hypothetical scenario setup ('kathang-isip na senaryo'), scheduling preferences ('gustong oras'), staffing ('staff availability'), budget/cost ('gastos'), constraints ('hadlang sa trabaho at pag-aalaga'), and agreement status.",
+            "partner_authority_and_pending_agreement": "Pending agreement indicated at 00:20.4\u201300:22.4 with 'at pagsang-ayon sa bagong trial'.",
+            "attendance_denominators": "Attendance ratio explicitly stated at 00:06.5\u201300:10.5: 'Isa sa tatlong inimbitahang sambahayan' (1 out of 3 invited households attended; denominator is 3).",
+            "ending_completeness": "The audio finishes cleanly with natural trailing off and room tone after 'trial'; no cutoff or clipping detected.",
+            "audible_speech": "Speech is fully audible and intelligible throughout.",
+            "clipped_words": "None observed.",
+            "unexpected_voice_changes": "Pacing is segmented and instructional with noticeable pauses between bullet points/clauses, but vocal pitch and timbre remain steady."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; all phonetic tokens and acoustic features are distinctly intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.5,
+          "end": 22.9,
+          "excerpt_sha256": "91886501e540166c376b43c532c21971cbd892799d3c01a94243e490f8360348",
+          "observations": {
+            "attendance_denominators": "The denominator is explicitly stated as three invited households ('tatlong inimbitahang sambahayan'), with one attending ('Isa sa tatlong...').",
+            "negation": "Clear negation occurs starting at 00:11.9 with 'Hindi pa alam' (not yet known).",
+            "seven_field_planning": "Key planning variables/barriers noted across the scenario include: (1) work barrier ('hadlang sa trabaho'), (2) caregiving duties ('pag-aalaga'), (3) preferred schedule ('gustong oras'), (4) staff availability, (5) expenses ('gastos'), and (6) agreement on the new trial ('pagsang-ayon sa bagong trial').",
+            "partner_authority_and_pending_agreement": "Pending consensus/approval is captured by 'Hindi pa alam ang... pagsang-ayon sa bagong trial' (00:16.8 - 00:19.0).",
+            "carole_pronunciation": "The name or term 'Carole' does not occur in this excerpt.",
+            "ending_completeness": "The audio concludes naturally after the final word 'trial' at 00:19.0 with no truncation or abrupt cutoff.",
+            "audible_speech_and_voice_quality": "Speech is completely intelligible, recorded at a steady pace and neutral volume with no unexpected tone or acoustic shifts."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. All Tagalog and borrowed English terms ('exercise', 'staff availability', 'trial') are clearly articulated.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 3.5,
+          "end": 28.16,
+          "excerpt_sha256": "103654dc5755b11849088cd0d06fe50c895f678cd23cdbcbb12d772ee6ae5319",
+          "observations": {
+            "carole_pronunciation": "The name or term 'Carole' does not occur in this excerpt.",
+            "negation": "Clear negation is present at 00:11.7\u201300:12.6 with 'Hindi pa alam' ('not yet known').",
+            "seven_field_planning": "The audio lists planning/evaluation components including 'gustong oras', 'staff availability', 'gastos', 'pagsang-ayon sa bagong trial', 'poster', and 'schedule trial'.",
+            "partner_authority_and_pending_agreement": "Pending agreement is specifically referenced by 'Hindi pa alam ang... pagsang-ayon sa bagong trial' (00:11.7\u201300:19.4).",
+            "attendance_denominators": "Expressed explicitly as 'Isa sa tatlong inimbitahang sambahayan ang nakadalo' (1 out of 3 invited households; denominator is 3) at 00:02.8\u201300:06.6.",
+            "ending_completeness": "The audio concludes naturally and completely at 00:24.3 on 'bago pumili' with natural decay; no cut-off detected.",
+            "audible_speech": "Speech is fully audible, clearly articulated, and consistent in pace throughout.",
+            "clipped_words": "No clipped words or truncated syllables observed.",
+            "unexpected_voice_changes": "The voice profile (female text-to-speech) maintains consistent timbre, volume, and pitch with no glitching or sudden inflection shifts."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all words and phrases are clearly audible and pronounced with standard clarity.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 87.52,
+          "end": 108.14695833333333,
+          "excerpt_sha256": "fd90da4e15454d0c91b7137409d5894c126da82204842dc2ebff281af5e10586",
+          "observations": {
+            "carole_pronunciation": "The name or word 'Carole' does not occur in this excerpt.",
+            "negation": "Clear negation is present twice: 'hindi awtomatikong pasado' (00:02 - 00:04) and 'hindi competency assessment' (00:11 - 00:13).",
+            "seven_field_planning": "The excerpt covers action planning components from 00:14 to 00:20 ('Ang plano ay may taong kikilos, at paraan upang malaman kung bumaba ang hadlang'), addressing assigned actors ('taong kikilos') and verification/measurement ('paraan upang malaman kung bumaba ang hadlang').",
+            "partner_authority_and_pending_agreement": "No partner authority or pending agreement discussions are heard in this segment.",
+            "attendance_denominators": "No attendance statistics or denominators are mentioned.",
+            "ending_completeness": "The excerpt concludes with a complete sentence at 00:20 ('...bumaba ang hadlang.') with natural terminal intonation and no premature cut-off.",
+            "audible_speech": "Speech is fully audible, clearly articulated, and paced consistently throughout.",
+            "clipped_words": "None detected; word boundaries and phonemes are intact.",
+            "unexpected_voice_changes": "None observed; single consistent speaker tone without unexpected pitch or acoustic shifts."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality and speech clarity are high across the entire excerpt.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-review-fil",
+      "source_sha256": "9d936336d356fb01121fcd76f781124bf3daeda691259e06ea701c59ff6f3fdc",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 12.86,
+          "excerpt_sha256": "b8bffa8d1bf47bf3693757b95a97ed81eafbaee1fffa2cf3e144e6a496228390",
+          "observations": {
+            "carole_pronunciation": "Not applicable; the name or word 'Carole' is not present in the spoken text.",
+            "negation": "Explicit negation 'hindi gumana' is clearly and accurately articulated at 00:00\u201300:01.",
+            "seven_field_planning": "The audio mentions a contingency procedure ('unang plano para sa hiwalay na review exercise').",
+            "partner_authority_and_pending_agreement": "Refers to partner agreement ('pumayag ang mga katuwang sa isang naunang trial') between 00:07 and 00:11.",
+            "attendance_denominators": "No attendance counts or denominators are stated.",
+            "ending_completeness": "Complete sentence ending with natural intonation drop on 'oras' at ~00:12.",
+            "audible_speech": "Voice is clear, intelligible, and well-enunciated educational narration.",
+            "clipped_words": "None detected; word boundaries are intact.",
+            "unexpected_voice_changes": "None detected; delivery maintains consistent pitch, timber, and cadence with instructional pauses."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.18,
+          "end": 12.86,
+          "excerpt_sha256": "4780afa784ad1e88d4d6556bff4854c335a10c948c6342d475acb7114b76e683",
+          "observations": {
+            "carole_pronunciation": "Not applicable; the name or term 'Carole' does not occur in this excerpt.",
+            "negation": "No negative particles (e.g., 'hindi', 'wala') are present in the speech.",
+            "seven_field_planning": "Not mentioned in the text of this segment.",
+            "partner_authority_and_pending_agreement": "The sentence references partner agreement: 'pumayag ang mga katuwang sa isang naunang trial nang mas maagang oras' (the partners agreed to an earlier trial at an earlier time) spanning [00:04.20 - 00:09.20].",
+            "attendance_denominators": "No counts, ratios, or attendance denominators are stated.",
+            "ending_completeness": "The sentence concludes naturally and completely with 'oras' followed by ambient fade-out without abrupt cutoff at [00:09.28].",
+            "audible_speech": "Clear, fluent Filipino/Tagalog narration throughout [00:00.00 - 00:09.28].",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "unexpected_voice_changes": "None detected; pitch, pace, and synthesized/recorded female voice timbre remain uniform."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; the spoken phrase is fully legible and clear.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 12.86,
+          "excerpt_sha256": "b8bffa8d1bf47bf3693757b95a97ed81eafbaee1fffa2cf3e144e6a496228390",
+          "observations": {
+            "carole_pronunciation": "The proper noun 'Carole' does not occur in this audio excerpt.",
+            "negation": "Clear negation is present at [00:00.60 - 00:01.05] with the word 'hindi' ('Kapag hindi gumana...').",
+            "seven_field_planning": "The text references 'unang plano' (first plan) at [00:01.50 - 00:02.40], but no explicit mention of seven-field planning is heard.",
+            "partner_authority_and_pending_agreement": "Agreement by partners/collaborators is explicitly stated at [00:07.80 - 00:09.60] ('pumayag ang mga katuwang sa isang naunang trial...'), representing partner consent/agreement to an earlier trial schedule.",
+            "attendance_denominators": "No numerical counts, attendance figures, or denominator values are spoken in this excerpt.",
+            "ending_completeness": "The utterance terminates cleanly at [00:12.30] after 'oras' without premature cut-off.",
+            "audible_speech": "Speech is fully intelligible throughout, delivered by a single clear female voice in a measured instructional tone.",
+            "clipped_words": "No clipped words or truncated syllables observed.",
+            "unexpected_voice_changes": "Pitch, pacing, and timbre remain consistent throughout without sudden audio artifacts or unnatural voice shifts."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality and transcription confidence are high.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 92.14,
+          "end": 111.20329166666667,
+          "excerpt_sha256": "af4383c7af9fd0013673d84d570bdd07762fd1717ec4ded385d622ea94b09c9e",
+          "observations": {
+            "carole_pronunciation": "The name or term 'Carole' does not occur in this excerpt.",
+            "negation": "Clear negation is present from 00:07.15 to 00:08.50 with 'Hindi patunay' ('Not proof').",
+            "seven_field_planning": "No explicit reference to seven-field planning is made; the discussion addresses adjusting assumptions and plans based on trial results ('baguhin ang palagay at plano gamit ang resulta').",
+            "partner_authority_and_pending_agreement": "Agreement is referenced generically in 'panibagong pagsang-ayon' (00:05.40 - 00:06.60), but partner authority or pending legal/formal agreements are not explicitly detailed.",
+            "attendance_denominators": "No numerical figures or attendance denominators are mentioned in the excerpt.",
+            "ending_completeness": "The excerpt concludes completely on 'resulta' (~00:18.85) followed by natural decay, with no clipping or premature cutoff.",
+            "audible_speech": "Speech is clearly audible, studio-recorded, and intelligible throughout (00:00.20 - 00:18.85).",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "unexpected_voice_changes": "None detected; delivery maintains consistent female voice, tone, and acoustic profile."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. The acoustic signal and speech tokens are unambiguous.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-fil",
+      "source_sha256": "62952a68d610dd1c63f9e52e2ad05d01b0e20249f7b48e1b75b2c6d7b14452da",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 24.86,
+          "excerpt_sha256": "5812ebeaf26fb97a55efb2d41b9e6f4228b3ab77dc57e6672d629cdb94199da5",
+          "observations": {
+            "carol_pronunciation": "Pronounced around 00:06.5\u201300:07.1 with a standard English/Taglish-adapted realization (~[\u02c8k\u025b.\u0279\u0259l] / [\u02c8ka.\u0279ol]), clearly recognizable without phonetic distortion.",
+            "negation": "No direct grammatical negation markers (e.g., 'hindi', 'wala') are present; non-finality is expressed via aspectual and modal markers ('muna', 'hinihintay pa' at 00:20.5\u201300:22.4).",
+            "seven_field_planning": "Explicitly enumerates the standard seven action-planning fields between 00:11.8 and 00:20.0: (1) Sanhi, (2) mungkahi, (3) owner, (4) resources, (5) deadline, (6) sukatan, and (7) review date.",
+            "partner_authority_and_pending_agreement": "Pending approval/coordination is noted at 00:20.3\u201300:24.4 ('Konsultasyon muna, hinihintay pa ang staff time at trial date'), acknowledging that scheduling depends on external confirmation/consultation.",
+            "attendance_denominators": "No numerical attendance counts, baselines, or denominators are stated in this segment.",
+            "ending_completeness": "The audio finishes cleanly at 00:24.4 on 'trial date' with a natural acoustic tail and complete intonation drop; no truncation detected.",
+            "audible_speech": "Speech is intelligible, well-enunciated, and recorded at clear studio-level quality throughout 00:00.0\u201300:24.5.",
+            "clipped_words": "None observed; word onsets and codas remain intact.",
+            "unexpected_voice_changes": "None observed; consistent female voice, pace, and educational register throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "Minimal; minor orthographic variation between 'kathang-isip' and phonetic realization 'katang-isip' (common colloquial reduction of /t\u02b0/ to unaspirated /t/), and loanword phrasing 'schedule trial' vs. 'scheduled trial'.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 11.24,
+          "excerpt_sha256": "92aefb76d518a5f170d120db8f71b721d00fe7f92406037358a5197520dfc1a5",
+          "observations": {
+            "carole_pronunciation": "Pronounced distinctly as English/Tagalog adapted 'Carol' [\u02c8ka.\u027eol] at approximately 00:06.8 - 00:07.4.",
+            "negation": "No negative markers (e.g., 'hindi', 'wala') are present in the text.",
+            "seven_field_planning": "Not mentioned in the speech.",
+            "partner_authority_and_pending_agreement": "No partner authority or pending agreements are referenced.",
+            "attendance_denominators": "No attendance denominators or numerical attendance metrics are stated.",
+            "ending_completeness": "The sentence completes naturally with the word 'trial' at 00:10.8 without premature cutoff.",
+            "audible_speech": "Speech is clear, fully audible, and paced naturally throughout.",
+            "clipped_words": "None detected; word boundaries and final consonants/vowels are intact.",
+            "unexpected_voice_changes": "Tone, volume, and pacing remain consistent across the recording."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio clarity and phonetic realization are high.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 25.16,
+          "end": 48.18,
+          "excerpt_sha256": "15a2c046e4db74d3bed38b97576141a81de4b94577e5280b1c974b1363885f6b",
+          "observations": {
+            "carol_pronunciation": "Pronounced phonetically as 'Carol' [\u02c8ka.\u027eol] at 00:01\u201300:02 without an English soft 'e' sound.",
+            "negation": "Clear negations occur at 00:08\u201300:10 ('hindi pahintulot ang pananahimik') and at 00:21\u201300:23 ('hindi nakapunta').",
+            "partner_authority_and_pending_agreement": "Roles and authority are demarcated: Carol's role is consultative ('Konsultasyon ang papel ni Carol', 00:00\u201300:02), the health team holds decision authority over the schedule ('Desisyon sa schedule ang sa may tungkuling health team', 00:02\u201300:06), and agreement on a prior trial is noted ('may kasunduan sa naunang trial', 00:14\u201300:16).",
+            "attendance_denominators": "Expressed at 00:16\u201300:23 with an explicit base denominator of 3 ('Isa sa tatlong inimbitahan', 1 out of 3 attended; followed by 'Dalawa pa rin ang hindi nakapunta', 2 did not attend).",
+            "ending_completeness": "The audio concludes naturally at 00:23 after 'nakapunta' without clipping, abrupt truncation, or mid-word cutoffs.",
+            "audible_speech_and_voice_changes": "Speech is intelligible, pacing is consistent, and no unexpected voice shifts, drops in tone, or sudden acoustic anomalies were observed."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear, well-enunciated, and audio boundaries are intact.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 48.48,
+          "end": 75.456,
+          "excerpt_sha256": "49ab910d07c78a4119c3eefbd176b854b461ebd2da782bc9ad16a8fc0e01a40a",
+          "observations": {
+            "carole_pronunciation": "Pronounced phonetically as 'Carol' ([\u02c8k\u00e6.\u0279\u0259l]) around 00:13\u201300:14 with standard English loanword phonology.",
+            "negation": "Clear negative markers observed: 'Hindi' at 00:00 ('Hindi resulta...') and 'Walang' at 00:23 ('Walang pangakong lutas na.').",
+            "seven_field_planning": "A structured sequence of procedural steps/fields is presented between 00:02 and 00:12: (1) trabaho, (2) gastos, (3) pag-aalaga, (4) abiso, (5) ipresenta ang plano, (6) sagutin ang katuwang, and (7) baguhin at ulitin.",
+            "partner_authority_and_pending_agreement": "Reflected in 'Sagutin ang katuwang' (00:08\u201300:10), pending parameters 'Staff time at trial date ay hinihintay pa' (00:15\u201300:19), and agreed scope 'napagkasundoang trial' (00:21\u201300:23).",
+            "attendance_denominators": "The phrase 'Review ng attendance pagkatapos ng napagkasundoang trial' (00:19\u201300:23) specifies the post-trial attendance review process, though explicit numerical denominators are omitted.",
+            "ending_completeness": "The closing statement 'Walang pangakong lutas na.' resolves completely with natural room decay and no abrupt cutoff.",
+            "audible_speech_quality": "Speech is fully intelligible, paced evenly, and free from background interference.",
+            "clipped_words": "None detected; word boundaries and final consonants/vowels are intact.",
+            "unexpected_voice_changes": "Tone, vocal tract characteristics, and pitch contours remain steady and consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio clarity and phonetic realization are high across the excerpt.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-check-en",
+      "source_sha256": "2745ead4bebef13266095d99e3a5df6e44511461f32d4fbfe3e5b155446e895e",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 11.58,
+          "excerpt_sha256": "4c1a27472dc98df9b47a720c88da9a75da194f435eb0694d3bcb1ec479d28df9",
+          "observations": {
+            "carole_pronunciation": "Pronounced standardly as /\u02c8k\u00e6r\u0259l/ ('Carol') at 00:02.15\u201300:02.55 without non-standard phonemic distortion.",
+            "negation": "No grammatical negation occurs in the segment.",
+            "seven_field_planning": "No mention of seven-field planning appears in this excerpt.",
+            "partner_authority_and_pending_agreement": "Neither partner authority nor pending agreements are addressed in this segment.",
+            "attendance_denominators": "The denominator for attendance is explicitly identified as 'three' ('one of three invited households attended') at 00:08.85\u201300:09.30.",
+            "ending_completeness": "The utterance completes naturally with full sentence closure on 'attended.' at approximately 00:11.15; no cut-off detected.",
+            "audible_speech": "All words from 00:00.00 to 00:11.20 are clearly audible and intelligible.",
+            "clipped_words": "None detected; word onsets and codas are intact.",
+            "unexpected_voice_changes": "A stylistic/register shift occurs between the initial prompt 'Choose the next step' (00:00.00\u201300:01.35) and the narrative portion starting at 00:02.15, separated by roughly 0.8 seconds of silence."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low. Spoken words and acoustic cues are clear throughout the clip.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.34,
+          "end": 11.58,
+          "excerpt_sha256": "44c7a339c0fb7a70a43f44d212b2908d2882b9b50e92b5fb6e36b7c39043c584",
+          "observations": {
+            "carole_pronunciation": {
+              "timestamp": "00:00.00 - 00:00.55",
+              "details": "Pronounced as standard English /\u02c8k\u00e6.r\u0259l/ (spelled 'Carol' or 'Carole'). Clear articulation without notable regional distortion."
+            },
+            "negation": {
+              "present": false,
+              "details": "No explicit grammatical negators (e.g., 'not', 'no', 'never') are present; restriction is expressed via 'only'."
+            },
+            "seven_field_planning": {
+              "present": false,
+              "details": "Not mentioned or referenced in the excerpt."
+            },
+            "partner_authority_and_pending_agreement": {
+              "present": false,
+              "details": "Not mentioned or referenced in the excerpt."
+            },
+            "attendance_denominators": {
+              "timestamp": "00:05.80 - 00:07.45",
+              "details": "The denominator for attendance is explicitly stated as 'three' in 'only one of three invited households attended'."
+            },
+            "ending_completeness": {
+              "timestamp": "00:08.20 - 00:08.90",
+              "details": "The final word 'attended' resolves completely with standard falling terminal intonation and natural trailing silence, with no premature cut-off."
+            },
+            "audible_speech": {
+              "details": "Clear, fluent, well-enunciated Philippine English female voice throughout the entire excerpt."
+            },
+            "clipped_words": {
+              "present": false,
+              "details": "No phonetic clipping or truncations detected at word boundaries."
+            },
+            "unexpected_voice_changes": {
+              "present": false,
+              "details": "Speaker pitch, pace, volume, and timbre remain stable and consistent throughout."
+            }
+          },
+          "possible_defects": [],
+          "uncertainty": "Spelling of the opening proper noun as 'Carol' versus 'Carole' cannot be distinguished by phonetics alone.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 30,
+          "end": 45.62,
+          "excerpt_sha256": "94e6f9fd0f63301d6f6486753afc4b9fe6caee3c81b76218f51d82a2d7a8041d",
+          "observations": {
+            "carole_pronunciation": "The name 'Carole' does not occur anywhere in the spoken audio.",
+            "negation": "Negation is conveyed via the prepositional phrase 'without a promise' between 00:03.90 and 00:04.90.",
+            "seven_field_planning": "Not explicitly stated by name, though the structure describes planning components ('review plan', specifying 'who acts', tracking outcomes).",
+            "partner_authority_and_pending_agreement": "Not directly referenced in the audio text.",
+            "attendance_denominators": "Not mentioned in the audio text.",
+            "ending_completeness": "The final sentence concludes completely on the word 'decreased' at 00:15.10, with silence extending naturally to 00:15.80 with no truncation.",
+            "audible_speech": "Speech is fully intelligible, clear, and delivered at an even pace throughout (00:00.00\u201300:15.10).",
+            "clipped_words": "None observed. Word onsets and codas are intact.",
+            "unexpected_voice_changes": "Tone, volume, timbre, and acoustic environment remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 30,
+          "end": 45.68816666666667,
+          "excerpt_sha256": "5326f29ffa42147b1298eb9b9ff39d0b08d28a59ddf21f90f016d6431bc03d0c",
+          "observations": {
+            "carole_pronunciation": "The name or term 'Carole' does not appear in this excerpt.",
+            "negation": "Standard negation/exclusion marker 'without' occurs cleanly at 00:03.96\u201300:04.38 ('without a promise...').",
+            "seven_field_planning": "Not explicitly detailed; the speech mentions a 'proposal and review plan' and components ('names who acts', 'tell whether the barrier decreased'), but does not articulate a seven-field framework.",
+            "partner_authority_and_pending_agreement": "Not mentioned in the audio content.",
+            "attendance_denominators": "No attendance figures, metrics, or denominators are stated.",
+            "ending_completeness": "The sentence finishes completely; the final word 'decreased' concludes clearly around 00:15.15 without cut-off.",
+            "audible_speech": "Speech is fully audible, clear, paced, and synthetically generated/stylized.",
+            "clipped_words": "None detected; word onsets and codas are intact.",
+            "unexpected_voice_changes": "No unexpected shifts in pitch, accent, volume, or speaker identity detected."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words are clear and unambiguous.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-compare-solutions-en",
+      "source_sha256": "775583484b7ec87d74add2497f057e3aeb2e7ce6456b0288f1b4d7b589cc7d37",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.7,
+          "excerpt_sha256": "327f0c524df3947b58a28361111737f952e33fe45b4ec5804c99e354f7d11f5d",
+          "observations": {
+            "carole_pronunciation": "Not present in the excerpt; the word used is 'cause' at [00:01.80 - 00:02.45].",
+            "negation": "No negative particles or constructions (e.g., 'no', 'not') are present.",
+            "seven_field_planning": "Not mentioned or referenced.",
+            "partner_authority_and_pending_agreement": "Not mentioned.",
+            "attendance_denominators": "The stated attendance baseline/denominator is three households invited, with one attending ('three households were invited, and only one attended' [00:06.00 - 00:09.30]).",
+            "ending_completeness": "The final word 'attended' concludes naturally at [00:09.35] with standard phonation decay; no premature truncation or cutoff detected.",
+            "audible_speech": "Speech is fully audible, intelligible, and delivered in clear instructional Philippine English narration.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "Pacing and pitch shift slightly between the opening prompt instruction ([00:00.00 - 00:02.45]) and the narrative context ([00:02.80 - 00:09.35]), consistent with natural pedagogical cadence rather than an acoustic defect."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words are clear and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.1,
+          "end": 9.7,
+          "excerpt_sha256": "2cd4e71ac2142796ca4ea89a446729cfb18ef2975e28b0f77f867b1b145ebb4b",
+          "observations": {
+            "carole_pronunciation": "The name or word 'Carole' is not present in the excerpt.",
+            "negation": "No negative grammatical markers (e.g., 'not', 'no', 'never') are used; limitation is conveyed via 'only one attended'.",
+            "seven_field_planning": "No mention or context of seven-field planning is present in the audio.",
+            "partner_authority_and_pending_agreement": "No references to partner authority or pending agreements are made.",
+            "attendance_denominators": "An explicit attendance denominator is established: 'three households were invited' serves as the total potential count (denominator = 3), with 'only one attended' representing the numerator.",
+            "ending_completeness": "The sentence completes cleanly with the final word 'attended' at approximately 00:06.1, followed by natural decay to the end of the recording without abrupt truncation.",
+            "audible_speech": "Speech is fully audible, intelligible, and consistent with an automated/synthetic narrator reading educational instructional material.",
+            "clipped_words": "None detected; word onsets and codas are fully articulated.",
+            "unexpected_voice_changes": "None detected; pitch, pace, and vocal timbre remain stable across the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words are clear and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 19.54,
+          "end": 29.68,
+          "excerpt_sha256": "a1dfbe1097f89c469266a3d63a26e3c9bfe994d7654030c326e677e084300f90",
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as /\u02c8k\u00e6r.\u0259l/ (or 'Carol') around 00:06 - 00:07.",
+            "negation": "Clear negation present in the opening clause ('These are not actual...') at 00:00 - 00:01.",
+            "seven_field_planning": "Not mentioned in this excerpt; content refers to hypothetical barangay data and a BHW recommendation.",
+            "partner_authority_and_pending_agreement": "No mention of partner authority or pending agreements within this excerpt.",
+            "attendance_denominators": "No attendance figures, metrics, or denominators are stated.",
+            "ending_completeness": "The excerpt ends cleanly and naturally after the word 'recommendation' with a normal sentence conclusion and falling intonation.",
+            "audible_speech": "Speech is fully audible, clearly articulated, and consistent throughout.",
+            "clipped_words": "None detected; word boundaries are intact.",
+            "unexpected_voice_changes": "None observed; pacing, tone, and synthetic/pedagogical voice profile remain consistent."
+          },
+          "possible_defects": [],
+          "uncertainty": null,
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 71.36,
+          "end": 86.0735,
+          "excerpt_sha256": "7ba761d593732a0b5c1676ad964726584f3b5924dc2e1113af07cbed003a64a6",
+          "observations": {
+            "audible_speech": "The audio is clear and fully intelligible, delivered in a steady, instructional cadence by a female voice.",
+            "carole_pronunciation": "The name or term 'Carole' does not occur in this excerpt.",
+            "negation": "Clear negation is present at 00:00\u201300:01 ('Do not promise') and at 00:13\u201300:14 ('not convenience alone').",
+            "seven_field_planning": "No mention or explicit reference to 'seven-field planning' is heard in the excerpt.",
+            "partner_authority_and_pending_agreement": "Directly addressed at 00:05\u201300:08 ('until the responsible authority and partners agree').",
+            "attendance_denominators": "No mention of 'attendance denominators' in the audio.",
+            "clipped_words": "None detected; word boundaries and final consonants are preserved.",
+            "unexpected_voice_changes": "None detected; pitch, tone, and pacing remain consistent throughout.",
+            "ending_completeness": "The sentence completes cleanly with a falling terminal intonation on 'alone' around 00:14, followed by silence."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; the spoken words and audio boundaries are unambiguous.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-partners-en",
+      "source_sha256": "579c7a99be5c41a54c548c1cd0a3735cac7db80079a29a68bd55f2391af67f93",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.14,
+          "excerpt_sha256": "40a6d131081773562977c1c49e22a78c269ea56dbd8864e1e3baa19a07adaaaf",
+          "observations": {
+            "carole_pronunciation": "The name 'Carol' at approximately 00:06.00\u201300:06.50 is pronounced with initial stress as /\u02c8k\u025br\u0259l/, typical of general English/Philippine English reading conventions.",
+            "negation": "No negative particles or contractions (e.g., 'not', 'no', 'never') are present in the utterance.",
+            "seven_field_planning": "No explicit reference to seven-field planning occurs in this excerpt.",
+            "partner_authority_and_pending_agreement": "The speaker proposes an action ('I can consult residents and summarize preferred times') presented as an offer or potential step rather than a finalized agreement, pending partner consent/input.",
+            "attendance_denominators": "No numerical denominators or quantifiable attendance counts are stated.",
+            "ending_completeness": "The utterance concludes fully and cleanly after 'says' at 00:06.90 with no audible cutoff or truncation.",
+            "audible_speech": "Speech is completely audible and intelligible throughout the recording.",
+            "clipped_words": "None detected; word boundaries and final consonants are preserved.",
+            "unexpected_voice_changes": "A brief pause occurs between 00:01.25 and 00:02.15 separating the question from the response; pitch contour transitions normally from an interrogative inflection to dialogue narration without synthetic glitches or abrupt vocal shifts."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all speech segments and phonetic realizations are distinct and clearly audible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.1,
+          "end": 7.14,
+          "excerpt_sha256": "98ca8ed66dbafe08dfe87919e6e022efef522fd828c04ac3149dcb2f7d7c2ba6",
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as /\u02c8k\u00e6r.\u0259l/ ('Carol') around 00:03.45 - 00:03.95, consistent with standard English pronunciation.",
+            "negation": "No negative polarity markers are present; the modal verb 'can' is used affirmatively at 00:00.12 - 00:00.32.",
+            "seven_field_planning": "Not mentioned or referenced in this excerpt.",
+            "partner_authority_and_pending_agreement": "The speaker expresses willingness to take initiative ('I can consult... and summarize...') pending coordination or partner sign-off, but no formal partner agreement is finalized in this clip.",
+            "attendance_denominators": "No counts, figures, or attendance metrics are mentioned.",
+            "ending_completeness": "The utterance concludes cleanly after 'Carol says.' with natural falling intonation and no trailing off or premature cutoff.",
+            "audible_speech": "Speech is fully audible and intelligible throughout (00:00.00 - 00:04.40).",
+            "clipped_words": "None detected; word onsets and codas are intact.",
+            "unexpected_voice_changes": "None; tone, pitch, and timbre remain consistent throughout dialogue and attribution."
+          },
+          "possible_defects": [],
+          "uncertainty": "Spelling of the name in transcript ('Carol' vs. 'Carole') cannot be distinguished phonetically.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 18.44,
+          "end": 27.38,
+          "excerpt_sha256": "967a08aea952283bc9a93effbeed96279a65c9dc43fa8a09d06a6013c7ca2214",
+          "observations": {
+            "speaker_change": "The recording transitions from a male voice (00:00.00 - 00:04.50) to a female voice (00:04.80 - 00:08.20).",
+            "negation": "Present in both segments: 'not yet confirmed' (00:00.90 - 00:02.30) and 'Not every task' (00:04.80 - 00:06.00).",
+            "partner_authority_and_pending_agreement": "The male speaker asserts procedural action: 'I will mark it pending' (00:02.80 - 00:04.40).",
+            "carole_pronunciation": "The name or word 'Carole' is not present in the audio.",
+            "seven_field_planning": "Not mentioned in the audio.",
+            "attendance_denominators": "Not mentioned in the audio.",
+            "audible_speech": "Speech is clear, intelligible, and well-enunciated throughout.",
+            "clipped_words": "None detected; both beginnings and endings of all words are intact.",
+            "ending_completeness": "The audio concludes naturally with 'BHW' without truncation or sudden cutoff."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; all spoken words and speaker transitions are clear.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 69.48,
+          "end": 85.68166666666667,
+          "excerpt_sha256": "a2620a7bbdc54831a393e12a84f3c174b70b9d961d7fc5e2f645e71831300844",
+          "observations": {
+            "carole_pronunciation": "The term or name 'Carole' does not occur in this excerpt.",
+            "negation": "Standard negation is clearly articulated in the final sentence ('Not every task belongs to the BHW.') between 00:13.20 and 00:14.05.",
+            "seven_field_planning": "There is no explicit mention of seven-field planning within the spoken content.",
+            "partner_authority_and_pending_agreement": "Partnership ownership is referenced in the statement 'Solutions need owners and partners' (00:09.90 - 00:12.65), though explicit partner authority frameworks or pending agreements are not detailed.",
+            "attendance_denominators": "No metrics, counts, or attendance denominators are referenced.",
+            "ending_completeness": "The excerpt concludes completely with the abbreviation 'BHW' without premature cut-off or trailing syllables.",
+            "audible_speech": "Speech is clearly audible, paced, and intelligible throughout the entire duration.",
+            "clipped_words": "None detected; word boundaries and final consonants are preserved.",
+            "unexpected_voice_changes": "Pitch, timbre, and delivery remain steady across the excerpt without unintended shifts or audio anomalies."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech signals and textual content are clear and unambiguous.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-plan-en",
+      "source_sha256": "cf1379df17e92d15c8827f893182e6bb59e0e0ec689002318a309770b9fd8d5d",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.3,
+          "excerpt_sha256": "4a7184c502deeac28cb7d8207a38f046c20286ab8c717f0feb78e63fc847b8a8",
+          "observations": {
+            "carole_pronunciation": "The name is pronounced as standard two-syllable /\u02c8k\u00e6r\u0259l/ ('Carol') rather than an accented or end-stressed French variant.",
+            "negation": "No grammatical negation markers (e.g., 'not', 'no', 'never') are present.",
+            "seven_field_planning": "Not explicitly mentioned in the spoken text, though the content concerns transition stages of planning proposals.",
+            "partner_authority_and_pending_agreement": "Reflected contextually in the phrasing distinguishing a 'proposal' from 'agreed work' and noting that it remains 'still a proposal'.",
+            "attendance_denominators": "None mentioned.",
+            "ending_completeness": "The audio concludes cleanly after 'says' without premature truncation or cut-off.",
+            "audible_speech": "Speech is fully audible, clear, and intelligible throughout the clip.",
+            "clipped_words": "None detected; word boundaries and final consonants ('work', 'proposal', 'says') are intact.",
+            "unexpected_voice_changes": "Tone, pitch, and vocal timbre remain consistent across both sentences."
+          },
+          "possible_defects": [],
+          "uncertainty": "Spelling of the name ('Carol' vs. 'Carole') cannot be distinguished by pronunciation alone.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.74,
+          "end": 7.3,
+          "excerpt_sha256": "7c95f906fd03a3aa98a692aebc417edc2466e38fa592bad12ee1ef4ba784b340",
+          "observations": {
+            "audible_speech": "Speech is clearly audible, fluent, and well-enunciated throughout (00:00.00 - 00:02.85).",
+            "carole_pronunciation": "The name 'Carol' (or 'Carole') is pronounced clearly as standard English /\u02c8k\u00e6r.\u0259l/ at 00:01.90 - 00:02.32.",
+            "negation": "No negative grammatical markers (e.g., 'not', 'no', 'never') are present.",
+            "seven_field_planning": "No mention or context of seven-field planning is present in the audio.",
+            "partner_authority_and_pending_agreement": "The phrase 'This is still a proposal' indicates an unfinalized state or pending agreement, but no specific partner authority is explicitly described.",
+            "attendance_denominators": "No numerical figures, ratios, or attendance denominators are spoken.",
+            "ending_completeness": "The utterance concludes naturally after 'says' at approximately 00:02.85, followed by brief ambient silence with no premature cutoff.",
+            "clipped_words": "None detected; word boundaries and final consonants are preserved.",
+            "unexpected_voice_changes": "Tone, pitch, and vocal quality remain consistent with a single narrator voice."
+          },
+          "possible_defects": [],
+          "uncertainty": "Spelling of the proper noun ('Carol' vs. 'Carole') cannot be definitively determined from pronunciation alone.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 24.8,
+          "end": 65.14,
+          "excerpt_sha256": "51b43232e3fce0e0baf11410679c6cab55b1797578a36f7137b6fa485592930b",
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly at 00:16 as [\u02c8k\u00e6.\u0279\u0259l] / [\u02c8k\u025b.\u0279\u0259l] ('Carol'), consistent with Philippine English phonology with no non-standard deviations.",
+            "negation": "Clear, explicit grammatical negation present at 00:02\u201300:04 ('does not establish permission').",
+            "seven_field_planning": "The example structures planning across seven distinct fields: Cause (00:06), Proposal (00:08), Owner (00:15), Resources (00:22), Deadline (00:28), Measure (00:31), and Review (00:37).",
+            "partner_authority_and_pending_agreement": "Partner authority is allocated between Carol (consultation) and the responsible health team (schedule decision) at 00:16\u201300:21; pending agreement/status is indicated at 00:26\u201300:28 ('still requiring confirmation').",
+            "attendance_denominators": "The metric definition specifies the denominator explicitly at 00:32\u201300:34 ('Attendance among those invited').",
+            "ending_completeness": "The audio concludes naturally after the final field description ('Monday after the agreed trial') without truncation or clipped decay.",
+            "audible_speech": "Speech is articulate, intelligible, and audible throughout without background noise interference.",
+            "clipped_words": "None observed.",
+            "unexpected_voice_changes": "Pacing, pitch, and vocal timbre remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 77,
+          "end": 97.3845,
+          "excerpt_sha256": "f19abd95ba6eadb54165cf3643ec448d13c63ec0cd8164efa10da3a286e37700",
+          "observations": {
+            "carole_pronunciation": "The name or word 'Carole' does not occur in this audio excerpt.",
+            "negation": "Clear and prominent negations are articulated at 00:00.6 ('no agreement') and 00:04.3 ('Do not implement'), along with comparative exclusion at 00:08.9 ('rather than only').",
+            "seven_field_planning": "At 00:12.6\u201300:20.1, four specific plan parameters are listed ('an owner, resources, date, and outcome measure'); the standard seven-field set is incomplete in this segment.",
+            "partner_authority_and_pending_agreement": "A conditional rule on pending consensus is stated at 00:00.0\u201300:05.7 ('If there is no agreement on Friday, return the question to the team. Do not implement.'). Partner authority is implicit in the protocol to halt implementation.",
+            "attendance_denominators": "Meeting completion is referenced at 00:10.5\u201300:11.9 ('whether a meeting finished'), but no numerical attendance counts or denominators are stated.",
+            "ending_completeness": "The recording ends cleanly after 'outcome measure' at approximately 00:20.1 with natural acoustic decay; no mid-syllable cutoff is detected.",
+            "audible_speech": "Speech is fully intelligible throughout the excerpt with low background noise.",
+            "clipped_words": "None detected; word boundaries and final consonants (e.g., 'implement', 'finished') are cleanly preserved.",
+            "unexpected_voice_changes": "A speaker change occurs at 00:06.1 to a deeper female voice for the middle sentence ('Report whether barriers decreased...'), switching back to the initial voice at 00:12.6 ('A recommendation becomes a plan...')."
+          },
+          "possible_defects": [
+            {
+              "type": "unexpected_voice_change",
+              "timestamp": "00:06.1 - 00:12.2",
+              "description": "Timbre and pitch shift noticeably between 00:06.1 and 00:12.2, alternating speakers between adjacent educational statements."
+            }
+          ],
+          "uncertainty": "Low; all spoken words are distinct and free of overlapping interference.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-practice-en",
+      "source_sha256": "fe79c20fed818ed14ac66d4d3625a3ba6bcf1002a90e74bffd235334ee7b1f36",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 19.66,
+          "excerpt_sha256": "0dbc5f2452bd135033004e492d2dafbc1658391d8e23dc1fe53871a8882551f1",
+          "observations": {
+            "carole_pronunciation": "The name 'Carole' does not appear in the spoken excerpt.",
+            "negation": "No explicit grammatical negators (e.g., 'not', 'no', 'never') are uttered; uncertainty/negation is expressed lexically via 'unknown' at 00:18\u201300:19.",
+            "seven_field_planning": "The scenario delineates seven distinct planning fields/factors across 00:05\u201300:19: attendance, work barriers, childcare barriers, preferred times, staff availability, costs, and agreement to a new trial.",
+            "partner_authority_and_pending_agreement": "Pending agreement status is explicitly articulated at 00:16\u201300:19 ('and agreement to a new trial remain unknown'). Partner authority is not directly referenced by name or role.",
+            "attendance_denominators": "The attendance denominator is explicitly stated as 3 ('one of three invited households attended') at 00:05\u201300:07.",
+            "ending_completeness": "The excerpt concludes with a complete terminal drop on 'unknown' at 00:18\u201300:19 without truncation.",
+            "audible_speech": "All speech is clear, intelligible, and audible throughout 00:00\u201300:19.",
+            "clipped_words": "None observed; word onsets and codas are intact.",
+            "unexpected_voice_changes": "A shift in speaker persona/voice profile occurs between the initial prompt ('Try it, then repeat.' at 00:00\u201300:02) and the scenario narration beginning at 00:02 ('Use the fictional scenario...')."
+          },
+          "possible_defects": [
+            {
+              "type": "voice_transition",
+              "timestamp": "00:02.3",
+              "description": "Perceptible change in vocal timbre/pacing between the initial instruction and the educational scenario text."
+            }
+          ],
+          "uncertainty": "Low; all spoken words and contextual cues are clearly articulated.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.66,
+          "end": 19.66,
+          "excerpt_sha256": "0d18059e75a6374a88fb786e8c48ce824d1bcbc15981e7a44f0bc04ec4758c2c",
+          "observations": {
+            "carole_pronunciation": "The proper noun 'Carole' does not occur in this excerpt.",
+            "negation": "No overt syntactic negation particles ('not', 'no') are present, but negative status is conveyed lexically via 'remain unknown' (00:15 - 00:16).",
+            "seven_field_planning": "Elements corresponding to planning dimensions are cited: participant attendance, confirmed barriers (work, childcare), schedule preferences, staff resources, cost considerations, and agreement status.",
+            "partner_authority_and_pending_agreement": "Agreement regarding a new trial is explicitly identified as unconfirmed ('agreement to a new trial remain unknown', 00:13 - 00:16).",
+            "attendance_denominators": "The attendance ratio is explicitly framed with a denominator of three ('One of three invited households attended', 00:02 - 00:05).",
+            "ending_completeness": "The utterance concludes fully on 'unknown' at 00:16 without trailing speech or truncation.",
+            "audible_speech": "Speech is articulate, clear, and delivered in a measured instructional cadence throughout (00:00 - 00:16).",
+            "clipped_words": "None observed; word onsets and codas are intact.",
+            "unexpected_voice_changes": "Pitch, pacing, and vocal quality remain consistent across the recording."
+          },
+          "possible_defects": [],
+          "uncertainty": "The prompt identifies the accent as Philippine English; however, the speaker's phonology aligns closely with General American instructional narration.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 77.88,
+          "end": 92.18,
+          "excerpt_sha256": "953c0c5db818f9e966d4cbf2c58531bc1fd16762915e971e40c3cf49d63de534",
+          "observations": {
+            "carole_pronunciation": "The word or name 'Carole' does not occur in this excerpt.",
+            "negation": "Two standard negations occur clearly: 'does not' (00:02.1 - 00:02.8) and 'is not' (00:11.7 - 00:12.3).",
+            "seven_field_planning": "No mention of seven-field planning in the audio.",
+            "partner_authority_and_pending_agreement": "Not mentioned in the audio content.",
+            "attendance_denominators": "Not mentioned in the audio content.",
+            "ending_completeness": "The final phrase 'competency assessment' resolves cleanly without clipping or premature cutoff at ~00:14.0.",
+            "audible_speech": "Speech is fully audible throughout the entire duration with minimal background noise.",
+            "clipped_words": "None detected; all word boundaries are intact.",
+            "unexpected_voice_changes": "A speaker change occurs at approximately 00:08.5, shifting from an adult female voice to an adult male voice."
+          },
+          "possible_defects": [
+            {
+              "type": "speaker_change",
+              "timestamp": "00:08.5",
+              "description": "Shift in speaker identity from female to male mid-recording."
+            }
+          ],
+          "uncertainty": "Low. All lexical items and phonemes are distinct and clear.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 77.88,
+          "end": 98.27266666666667,
+          "excerpt_sha256": "f3d61fca41dce259fbd2f228efba0c2f9ff2e80010edae2b1aaee7b8e0b691bb",
+          "observations": {
+            "audible_speech": "Speech is clearly audible, studio quality, and intelligible throughout.",
+            "carole_pronunciation": "The name 'Carole' does not occur in this excerpt.",
+            "negation": "Clear negation is present at 00:02 - 00:03 ('does not automatically') and at 00:12 - 00:13 ('is not competency assessment').",
+            "seven_field_planning": "Mentions planning elements ('A plan names who acts and how to tell whether the barrier decreased') beginning at 00:15, but does not explicitly enumerate all seven fields.",
+            "partner_authority_and_pending_agreement": "Not directly referenced in the audio text.",
+            "attendance_denominators": "No attendance ratios or denominators are mentioned.",
+            "clipped_words": "None observed; word boundaries are intact.",
+            "unexpected_voice_changes": "None observed; consistent tone, pacing, and female vocal profile across the recording.",
+            "ending_completeness": "The excerpt concludes naturally after 'decreased' at 00:20 with no abrupt cutoff."
+          },
+          "possible_defects": [],
+          "uncertainty": null,
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-review-en",
+      "source_sha256": "bd041f89cd5a0523c906211fdca882585f157488427d74a05781939eb77975c7",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 11.78,
+          "excerpt_sha256": "96a68e9064b4ab224430d19e5d3a9494da9c8d68a8887b536dc04e73adca7b1b",
+          "observations": {
+            "carole_pronunciation": "Not applicable; the name 'Carole' does not appear in the spoken audio.",
+            "negation": "Clear uncontracted negation occurs at 00:01.52 - 00:02.26 ('does not work').",
+            "seven_field_planning": "Not mentioned in the audio.",
+            "partner_authority_and_pending_agreement": "The phrase 'partner agreement' is spoken clearly between 00:07.24 and 00:08.45; 'authority' or 'pending agreement' are not stated.",
+            "attendance_denominators": "Not mentioned in the audio.",
+            "ending_completeness": "The audio ends naturally with full acoustic decay on the final word 'time' at approximately 00:11.20 without abrupt cutoff.",
+            "audible_speech": "Speech is fully audible and intelligible throughout.",
+            "clipped_words": "None detected; word boundaries and transients are intact.",
+            "unexpected_voice_changes": "A prominent speaker transition occurs between 00:02.45 and 00:03.15, shifting abruptly from a female voice ('When the first plan does not work,') to a male voice ('for this separate review exercise...')."
+          },
+          "possible_defects": [
+            {
+              "type": "unexpected_voice_change",
+              "timestamp_range": "00:02.45 - 00:03.15",
+              "description": "Mid-sentence speaker transition from female to male narrator."
+            }
+          ],
+          "uncertainty": "Low. Spoken transcript and acoustic shift are unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.06,
+          "end": 11.78,
+          "excerpt_sha256": "cce7f1d3cd99bc687a24dfe896966d2e7c046e36d16b1d80e8869570306fa7ee",
+          "observations": {
+            "carole_pronunciation": "The proper noun 'Carole' does not occur in this excerpt.",
+            "negation": "No grammatical negation is present in the spoken statement.",
+            "seven_field_planning": "No mention or reference to 'seven-field planning' is observed.",
+            "partner_authority_and_pending_agreement": "The phrase 'partner agreement' is spoken from 00:04.28 to 00:05.35; 'partner authority' and 'pending agreement' are not stated.",
+            "attendance_denominators": "No counts, ratios, or denominators related to attendance are present.",
+            "ending_completeness": "The utterance concludes fully and naturally at 00:08.30 with 'time.' and proper terminal falling intonation.",
+            "audible_speech": "Speech is clearly audible throughout the full duration (00:00.08 - 00:08.30).",
+            "clipped_words": "No clipped or cut-off phonemes/words were detected.",
+            "unexpected_voice_changes": "Pacing, pitch, and timbre remain stable and consistent throughout the recording."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. The audio quality is clean and speech is unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 11.78,
+          "excerpt_sha256": "96a68e9064b4ab224430d19e5d3a9494da9c8d68a8887b536dc04e73adca7b1b",
+          "observations": {
+            "carole_pronunciation": "The name 'Carole' is not spoken in this excerpt.",
+            "negation": "Standard negation is clearly audible in 'does not work' [00:01.35 - 00:02.24].",
+            "seven_field_planning": "Not mentioned; audio states 'first plan' [00:00.64 - 00:01.35].",
+            "partner_authority_and_pending_agreement": "Audio specifies 'partner agreement' [00:07.45 - 00:08.58]; neither 'authority' nor 'pending' occurs in this context.",
+            "attendance_denominators": "No attendance figures or denominators are referenced.",
+            "ending_completeness": "The sentence completes naturally with falling intonation on 'time' [00:10.70 - 00:11.15] without abrupt cutoff.",
+            "audible_speech": "Speech is clearly enunciated throughout with low background noise.",
+            "clipped_words": "None detected; word boundaries and final consonants ('work', 'exercise', 'agreement', 'trial', 'time') remain intact.",
+            "unexpected_voice_changes": "A distinct voice and timbre change occurs between the introductory dependent clause spoken by a female voice [00:00.08 - 00:02.24] and the main clause spoken by a deeper male voice [00:02.82 - 00:11.15]."
+          },
+          "possible_defects": [
+            {
+              "type": "unexpected_voice_change",
+              "timestamp_range": [
+                2.24,
+                2.82
+              ],
+              "description": "Noticeable speaker shift from a female voice to a male voice mid-sentence."
+            }
+          ],
+          "uncertainty": "Low; transcript wording and speaker transition points are distinct and audible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 82.74,
+          "end": 99.23920833333334,
+          "excerpt_sha256": "3ebca71feb14cd4f377e54168a7783bd1309066f45feee3cf711dacc647133f2",
+          "observations": {
+            "audible_speech": "All words are clearly articulated and fully intelligible across two alternating speakers.",
+            "carole_pronunciation": "The term 'Carole' does not occur in this excerpt.",
+            "negation": "Clear standard negation occurs at 00:07.03 - 00:07.60 ('does not').",
+            "seven_field_planning": "The specific term 'seven-field planning' is not mentioned.",
+            "partner_authority_and_pending_agreement": "'renewed agreement' is stated at 00:04.15 - 00:05.10; no explicit partner authority context is provided.",
+            "attendance_denominators": "No attendance denominators or numerical attendance metrics are referenced.",
+            "ending_completeness": "The excerpt concludes naturally with full intonation on 'the plan' at 00:16.08 without any audio cutoff.",
+            "clipped_words": "None observed; word onsets and codas are intact.",
+            "unexpected_voice_changes": "Speaker shifts occur predictably between two distinct female speakers: Speaker 1 (00:00.08 - 00:05.18), Speaker 2 (00:06.15 - 00:10.50), returning to Speaker 1 (00:11.40 - 00:16.08)."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality is high and content is unambiguous.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-en",
+      "source_sha256": "8cab3652ce1a41e1ea028bdf32f79606c2b19305c5cafe9520268b85dceb4e3a",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 21.78,
+          "excerpt_sha256": "a66404310ef8a8f29cfcc70584acc1427c38e3390a5f8f09c69e49ca06755a02",
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as standard rhotic 'Carol' [\u02c8k\u00e6\u0279\u0259l] around 00:05.15\u201300:05.58.",
+            "negation": "No negative grammatical markers (e.g., 'no', 'not', 'never') are present in the spoken text.",
+            "seven_field_planning": "The seven distinct planning fields are explicitly enumerated between 00:10.45 and 00:17.40: (1) Cause, (2) proposal, (3) owner, (4) resources, (5) deadline, (6) measure, and (7) review date.",
+            "partner_authority_and_pending_agreement": "Pending agreement and required consultation are noted in the phrase 'Consult first: staff time and a trial date remain pending' (00:17.65\u201300:21.80).",
+            "attendance_denominators": "No attendance statistics, counts, or denominators are stated.",
+            "ending_completeness": "The final phrase 'remain pending' ends naturally with a falling terminal pitch followed by ambient room decay before the excerpt boundary at 00:22.40; speech is not truncated.",
+            "audible_speech": "All spoken words are clearly enunciated with high intelligibility throughout.",
+            "clipped_words": "None observed; word onsets and codas are fully intact.",
+            "unexpected_voice_changes": "A noticeable shift in voice profile and accent occurs at approximately 00:10.45: the initial section (00:00.00\u201300:09.60) features an American English accent, whereas the list and conclusion (00:10.45\u201300:21.80) transition to a non-rhotic British/RP English speaker profile."
+          },
+          "possible_defects": [
+            {
+              "type": "unexpected_voice_change",
+              "timestamp_range": "00:09.60\u201300:10.45",
+              "description": "Mid-recording voice/accent transition from standard American English to non-rhotic British/RP English."
+            }
+          ],
+          "uncertainty": "Low. Spoken words and acoustic transitions are distinct.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 9.68,
+          "excerpt_sha256": "0cc5b50dd834a9eeed1664ab54e607624156273e85c3465c4bd94f2cfaf8a52a",
+          "observations": {
+            "carole_pronunciation": "The name 'Carol' (or 'Carole') is pronounced clearly as [\u02c8k\u00e6\u0279\u0259l] starting around 00:05.1 without notable distortion.",
+            "negation": "No negative particles or negation terms (e.g., 'not', 'no', 'never') are present in the utterance.",
+            "seven_field_planning": "No mention or explicit reference to seven-field planning in the spoken text.",
+            "partner_authority_and_pending_agreement": "No mention of partner authority or pending agreements.",
+            "attendance_denominators": "No mention of attendance denominators or related metrics.",
+            "ending_completeness": "The audio concludes cleanly after the word 'trial' at approximately 00:09.5 without premature cutoff.",
+            "audible_speech": "Speech is intelligible, steady, and audible throughout the entire 00:00 - 00:09.5 duration.",
+            "clipped_words": "None detected; both initial and final word boundaries are intact.",
+            "unexpected_voice_changes": "Speaker pitch, pacing, and vocal tone remain consistent with standard educational narration throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; transcript and acoustic boundaries are distinct.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 22.08,
+          "end": 44.42,
+          "excerpt_sha256": "b1c30917f1b74e2f5fb47fb1118efff715d39b2064783f06c83aa76d823f6322",
+          "observations": {
+            "carole_pronunciation": "The name 'Carol' at 00:00.0 - 00:00.6 is articulated clearly as standard two-syllable /\u02c8k\u00e6r.\u0259l/.",
+            "negation": "Explicit negative assertion occurs at 00:07.7 - 00:10.5 ('Silence does not establish agreement').",
+            "seven_field_planning": "No explicit seven-field planning structure is named in the spoken text, though procedural coordination (consultation, scheduling, inclusivity, agreement verification) is described.",
+            "partner_authority_and_pending_agreement": "Text references authority allocation ('health team decides schedules') and addresses passive consent/agreement ('Silence does not establish agreement' at 00:07.7\u201300:10.5; 'supplies agreement to an earlier trial' at 00:13.2\u201300:15.5).",
+            "attendance_denominators": "The denominator for invited households is specified as three ('One of three invited households attended...' at 00:15.8\u201300:18.0).",
+            "ending_completeness": "The excerpt concludes naturally after 'visits' at 00:22.2 with a clear terminal decay; no truncation observed.",
+            "audible_speech": "Speech is completely audible, clear, and intelligibly rendered throughout 00:00.0\u201300:22.2.",
+            "clipped_words": "No clipped or cut-off words detected.",
+            "unexpected_voice_changes": "A noticeable shift in speaker timbre and pitch occurs at approximately 00:11.0, transitioning from a lower-register voice in the first half (00:00.0\u201300:10.5) to a higher-pitched voice in the second half (00:11.0\u201300:22.2)."
+          },
+          "possible_defects": [
+            {
+              "timestamp": "00:11.0",
+              "issue": "Unexpected voice change / speaker shift between the first sentence group (00:00.0\u201300:10.5) and the second sentence group (00:11.0\u201300:22.2)."
+            }
+          ],
+          "uncertainty": "Low; all spoken words are distinct and free of overlapping noise.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 44.72,
+          "end": 69.71733333333333,
+          "excerpt_sha256": "a25fa7b7a5d8bef21e9a2c4fd7170f080dc164409d3ec434eb16c6c71ab32161",
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as /\u02c8k\u00e6r.\u0259l/ ('Carol') at approximately 00:13.0 - 00:13.6 without hesitation or distortion.",
+            "negation": "Clear negative constructions heard at 00:01.4 - 00:02.1 ('is not an outcome') and 00:21.7 - 00:22.4 ('Do not claim').",
+            "seven_field_planning_elements": "Explicitly enumerates checklist and planning stages: 'work, costs, childcare, and notice' (00:03.9 - 00:07.0), followed by 'Present the plan, answer partner questions, revise, and retry' (00:07.5 - 00:12.3).",
+            "partner_authority_and_pending_agreement": "'answer partner questions' (00:08.8 - 00:10.5) and 'Staff time and a trial date remain pending' (00:15.9 - 00:18.7) clearly delineate governance gates and unconfirmed schedule parameters.",
+            "attendance_denominators": "Denotes denominator tracking via 'Review attendance after an agreed trial' (00:19.4 - 00:21.6).",
+            "audible_speech": "Speech is completely intelligible, recorded at a steady instructional cadence with consistent acoustic background.",
+            "clipped_words": "None detected; word onsets and final consonants (e.g., /t/ in 'not', /d/ in 'solved') are fully articulated.",
+            "unexpected_voice_changes": "None; the female voice profile, pitch range, and room acoustic remain consistent across all sentences.",
+            "ending_completeness": "The sentence 'Do not claim the problem solved' finishes cleanly by 00:23.7, followed by natural decay to the clip boundary at 00:24.3."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio clarity and phonetic realization are high throughout.",
+          "unparsed_response": null
+        }
+      ]
+    }
+  ],
+  "reported_disagreements": [
+    {
+      "record": "read-practice-fil",
+      "full_report": "Transcribed toaster instead of poster at 00:24\u201300:25",
+      "focused_critical_report": "The actual 3.5\u201328.16-second excerpt transcribes poster in the same sentence and reports no clipped words or defect",
+      "decision": "Keep both exact-byte reports and raw responses; no automatic finding of correction or human approval. Specific word requires human listening."
+    },
+    {
+      "records": "Multiple Filipino and English Read tracks and English story",
+      "full_report": "Most full reports describe consistent timbre; compare-solutions-fil and partners-fil flag speaker shifts",
+      "focused_report": "Focused excerpts additionally flag shifts in plan-fil/en, check-fil, practice-en, review-en and story-en",
+      "decision": "Unresolved delivery consistency concern. Female Kore synthesis direction and successful playback do not resolve a reported shift."
+    },
+    {
+      "records": "Several full reviews",
+      "full_report": "Notes absent after-denominators or classroom barriers in individual planning screens",
+      "author_check": "Planning screens are prospective fictional community-health exercises. The separate review screen/check/story explicitly supplies before/after denominators. No actual classroom attendance or barangay prevalence is claimed.",
+      "decision": "Retain model observation without inventing post-trial data in a prospective scenario."
+    }
+  ]
+}

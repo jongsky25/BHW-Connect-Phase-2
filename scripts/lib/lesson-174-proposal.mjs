@@ -1,0 +1,34 @@
+import {beforeProposed182} from './lesson-182-integration.mjs';
+// Exact draft successors are checked before historical guards see pinned main bytes.
+// No public-media/approval predecessor views are permitted.
+import fs from 'node:fs';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+const root=path.resolve(import.meta.dirname,'../..');
+const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/';
+const allowed=new Set(['lesson.json','read.fil.md','read.en.md','slides.json','competency.json','facilitator.fil.md','facilitator.en.md'].map(p=>leaf+p).concat('src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','content/training/day1-basic-competencies/narration.json','scripts/lib/lesson-171-integration.mjs','.github/workflows/ci.yml','.github/workflows/remotion.yml','.github/workflows/lesson152-media.yml','scripts/tests/lesson-171.test.mjs','scripts/tests/lesson-171-release.test.mjs','scripts/tests/lesson-173.test.mjs','scripts/tests/lesson-172.test.mjs','scripts/tests/lesson-172-release.test.mjs'));
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const receipt=JSON.parse(fs.readFileSync(path.join(root,'docs/lesson-174-proposal-receipt.json'),'utf8'));
+const predecessors=new Map();
+export function reviewed174(p,actual=fs.readFileSync(path.join(root,p))){
+ actual=beforeProposed182(p,actual);
+ const approval=path.join(root,'docs/lesson-174-owner-approval.json');
+ if(p!==leaf+'lesson.json'||!fs.existsSync(approval))return actual;
+ const a=JSON.parse(fs.readFileSync(approval));
+ if(a.authorization!=='approved. merge and deploy to live'||a.lesson_keys.length!==1||a.lesson_keys[0]!=='problem-action-plan'||sha(actual)!==a.approved_source_sha256[p])throw Error('Unpinned approved 1.7.4 successor: '+p);
+ const prior=Buffer.from(a.reviewed_lesson_utf8);if(sha(prior)!==a.reviewed_lesson_sha256)throw Error('Corrupt reviewed 1.7.4 source');
+ return prior;
+}
+export function beforeProposed174(p,actual=fs.readFileSync(path.join(root,p))){
+ actual=reviewed174(p,actual);
+ const e=receipt.changed_existing_files[p];if(!e)return actual;
+ if(receipt.status!=='draft'||receipt.owner_release_approval!==false||receipt.target!=='problem-action-plan'||!allowed.has(p))throw Error('Invalid 1.7.4 proposal scope');
+ if(sha(actual)!==e.proposed_sha256)throw Error('Unpinned integrated successor (lesson 1.7.4): '+p);
+ if(predecessors.has(p))return Buffer.from(predecessors.get(p));
+ let prior;
+ if(e.predecessor_narration){const m=JSON.parse(actual);m.lessons['problem-action-plan']=e.predecessor_narration.lesson;if(e.predecessor_narration.history===null)delete m.history?.['problem-action-plan'];else m.history['problem-action-plan']=e.predecessor_narration.history;prior=Buffer.from(JSON.stringify(m,null,2)+'\n');}
+ else prior=Buffer.from(e.predecessor_utf8,'utf8');
+ if(sha(prior)!==e.predecessor_sha256)throw Error('Corrupt lesson 1.7.4 predecessor: '+p);
+ predecessors.set(p,prior);
+ return Buffer.from(prior);
+}

@@ -7,10 +7,14 @@
     "layout": "comparison",
     "heading_fil": "Solusyon na tumatama sa sanhi",
     "heading_en": "Match the solution to the cause",
-    "display_fil": "Poster lang o pagtalakay ng ibang oras? Piliin ang tumutugon sa sanhi. Suriin ang oras, tao at gastos. Ang bagong serbisyo o pondo ay kailangan munang sang-ayunan ng may tungkulin.",
-    "display_en": "A poster alone or discussion of another time? Match the response to the cause. Check time, people and costs. New services or funding need agreement from the responsible authority.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Kathang-isip: 1 sa 3 inimbitahang sambahayan ang nakadalo.\nNatiyak sa scenario: sabay sa trabaho; walang tagapag-alaga.\nPoster lamang: abiso, ngunit hindi sapat sa sanhi.\nMungkahi: pagtalakay ng maliit na trial; kailangan ang pahintulot at resources.",
+    "display_en": "Fictional: 1 of 3 invited households attended.\nVerified in the scenario: work conflict; no childcare.\nPoster alone: notice, but insufficient for the cause.\nProposal: discuss a small trial; agreement and resources are required.",
+    "asset_ids": [
+      "action-compare-solutions"
+    ],
+    "check": null,
+    "narration_fil": "Sa kathang-isip na pagsasanay na ito, tatlong sambahayan ang inimbitahan at isa lamang ang nakadalo. Ibinibigay ng scenario ang nakumpirmang hadlang: sumasabay sa trabaho ang oras ng pagbisita at walang maiiwanang tagapag-alaga ng bata. Hindi ito tunay na datos ng barangay o natuklasan sa ibang aralin. Si Carole ang BHW na maghahain ng mungkahi.\n\nSabi ng residente, ‘Alam namin ang abiso, pero may trabaho at batang aalagaan.’ Ihambing ni Carole ang dalawang solusyon: poster lamang, o pagtalakay ng maliit na pagsubok sa oras kasama ang mga sambahayan at midwife. Ang poster ay maaaring makatulong sa abiso ngunit hindi nito mag-isang inaayos ang trabaho at pag-aalaga ng bata.\n\nItanong: Alin ang tumatama sa natiyak na sanhi? Sino ang may tungkuling magpasya? May oras, tao at gastos ba? Hindi pa tiyak ang angkop na oras o tulong sa pag-aalaga. Huwag mangako ng bagong serbisyo, schedule o pondo hangga’t hindi pumapayag ang may awtoridad at mga katuwang.",
+    "narration_en": "In this fictional classroom exercise, three households were invited and only one attended. The scenario supplies verified barriers: visit hours conflict with work, and there is no available person to care for a child. These are not actual barangay data or findings supplied by another lesson. Carole is the BHW making a recommendation.\n\nA resident says, ‘We knew about the invitation, but we had work and a child to care for.’ Carole compares two solutions: a poster alone, or discussion of a small schedule trial with households and the midwife. A poster may help with notice, but it cannot by itself resolve work and childcare barriers.\n\nAsk: Which addresses the verified cause? Who has authority to decide? What time, people and costs are needed? A suitable time and childcare support remain unknown. Do not promise a new service, schedule or funding until the responsible authority and partners agree."
   },
   {
     "id": "slide-plan",
@@ -21,10 +25,14 @@
     "layout": "process",
     "heading_fil": "Mula mungkahi tungo sa napagkasunduang gawain",
     "heading_en": "Turn a proposal into agreed work",
-    "display_fil": "Ngayong linggo: kausapin ang pamilya → ipasa ang pinagsamang gustong oras → talakayin ang trial sa midwife at planning team. Itala ang owner, resources, deadline, attendance measure at review date.",
-    "display_en": "This week: consult households → aggregate preferred times → discuss a trial with the midwife and planning team. Record the owner, resources, deadline, attendance measure and review date.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Sanhi → mungkahi → owner → resources → deadline → sukatan → review date.\nHiwalay: pumayag / hinihintay / ambag.\nBiyernes: talakayin muna. Trial date at staff time: hinihintay.\nWalang kasunduan? Ibalik sa team; huwag magpatupad.",
+    "display_en": "Cause → proposal → owner → resources → deadline → measure → review date.\nSeparate: agreed / pending / contribution.\nFriday: discuss first. Trial date and staff time: pending.\nNo agreement? Return to the team; do not implement.",
+    "asset_ids": [
+      "action-plan"
+    ],
+    "check": null,
+    "narration_fil": "‘Mungkahi pa lamang ito,’ sabi ni Carole. Punan ang pitong bahagi: sanhi; mungkahi; owner o responsable; resources; deadline; sukatan; petsa ng review. Ihiwalay ang tala ng pagsang-ayon: sino ang pumayag, sa anong ambag, at ano ang hinihintay. Hindi katumbas ng pahintulot ang pananahimik o pagtango.\n\nHalimbawa: sanhi—trabaho at pag-aalaga ng bata; mungkahi—kausapin ang tatlong sambahayan ngayong linggo at talakayin ang isang trial sa health team; owner—si Carole para sa konsultasyon, ang may tungkuling health team para sa desisyon sa schedule; resources—papel, oras ng konsultasyon at oras ng staff na kailangan pang kumpirmahin; deadline—pagtalakay sa Biyernes; sukatan—nakadalo sa inimbitahan, kasama ang dahilan ng hindi pagdalo; review—Lunes pagkatapos ng napagkasunduang trial.\n\nPinagsamang gustong oras lamang ang ipapasa, walang personal na detalyeng hindi kailangan. Naghihintay pa ang trial date at resources sa pagsang-ayon. Kapag walang kasunduan sa Biyernes, ibalik ang tanong sa team; huwag magpatupad. Iulat ang nabawasang hadlang, hindi lang ang natapos na pulong.",
+    "narration_en": "‘This is still a proposal,’ Carole says. Fill seven fields: cause; proposal; owner; resources; deadline; measure; review date. Keep agreement separately: who agreed, to which contribution, and what remains pending. Silence or a nod does not establish permission.\n\nExample: cause—work and childcare; proposal—consult the three households this week and discuss one trial with the health team; owner—Carole for consultation, the responsible health team for the schedule decision; resources—paper, consultation time and staff time still requiring confirmation; deadline—discussion on Friday; measure—attendance among those invited, with reasons for missing visits; review—Monday after the agreed trial.\n\nPass on aggregated preferred times without unnecessary personal details. The trial date and resources still await agreement. If there is no agreement on Friday, return the question to the team; do not implement. Report whether barriers decreased, rather than only whether a meeting finished."
   },
   {
     "id": "slide-partners",
@@ -34,10 +42,14 @@
     "layout": "process",
     "heading_fil": "Sino ang dapat kasama?",
     "heading_en": "Who should take part?",
-    "display_fil": "Kasama ang apektadong residente, health team at barangay o ibang ahensya kung kailangan. Ihiwalay ang kayang gawin ng BHW at kailangang desisyon ng iba. Ibalik sa residente ang napagkasunduan.",
-    "display_en": "Include affected residents, the health team and barangay or other agencies as needed. Separate BHW actions from decisions others must make. Return the agreement to residents.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "BHW: konsultasyon at pinagsamang ulat.\nHealth team: desisyon sa schedule at staff.\nBarangay / ahensya: pangangailangang lampas sa papel ng BHW.\nIsama ang bihirang makadalo. Kumpirmahin ang ambag; balikan ang residente.",
+    "display_en": "BHW: consultation and aggregated report.\nHealth team: schedule and staffing decisions.\nBarangay / agencies: needs beyond the BHW role.\nInclude seldom-heard residents. Confirm contributions; return to residents.",
+    "asset_ids": [
+      "action-partners"
+    ],
+    "check": null,
+    "narration_fil": "‘Kaya kong kausapin ang mga residente at ibuod ang gustong oras,’ sabi ni Carole. ‘Kailangan natin ang desisyon ng may tungkuling health team sa schedule at staff.’ Tanong ng midwife, ‘Sino ang pumayag, at may nakalaang tao ba?’ Sagot: ‘Hindi pa kumpirmado; itatala ko bilang hinihintay.’ Hindi puwedeng akuin ng BHW ang lahat ng gawain.\n\nSa role map, ihiwalay ang konsultasyon at pag-uulat ng BHW, pagrepaso at desisyon ng health team, at pangangailangang dalhin sa barangay o ibang ahensya gaya ng transportasyon o tubig. Kung kailangan ng pondo, itanong sa may awtoridad; huwag itong ipangako. Kumpirmahin ang bawat ambag bago magtakda ng trial.\n\nKasama ang mga residenteng apektado, lalo na ang bihirang makadalo sa pulong. Tanungin kung anong paraan ng pag-uusap ang naaabot nila; huwag ipagpalagay na ayaw nilang makilahok. Balikan sila sa malinaw na kasunduan o sa mga desisyong hinihintay pa. Sundin ang awtorisadong lokal na proseso sa access, privacy at referral; kailangan pang repasuhin ang aktuwal na lokal na tuntunin.",
+    "narration_en": "‘I can consult residents and summarize preferred times,’ Carole says. ‘We need the responsible health team’s decision on schedules and staffing.’ The midwife asks, ‘Who agreed, and is staff time allocated?’ The answer is, ‘Not yet confirmed; I will mark it pending.’ Not every task can belong to the BHW.\n\nOn the role map, separate BHW consultation and reporting, health-team review and decisions, and needs for the barangay or other agencies such as transport or water. If funding is needed, ask the responsible authority; do not promise it. Confirm each contribution before setting a trial.\n\nInclude affected residents, especially those who seldom attend meetings. Ask which consultation methods they can access; do not assume they refuse to participate. Return with a clear agreement or the decisions still pending. Follow authorized local access, privacy and referral processes; the actual local rules still require review."
   },
   {
     "id": "slide-review",
@@ -47,10 +59,14 @@
     "layout": "process",
     "heading_fil": "Kapag hindi gumana ang unang plano",
     "heading_en": "When the first plan does not work",
-    "display_fil": "Mas maaga na ang schedule ngunit may hindi pa rin nakapunta. Balikan ang trabaho, gastos at abiso. Ihambing ang invited at attendance; baguhin ang maling palagay. Hindi sapat ang isang trial para sabihing lutas na.",
-    "display_en": "The schedule moved earlier but visits were still missed. Recheck work, costs and notice. Compare invitations with attendance and revise the wrong assumption. One trial does not establish resolution.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Bago: 1/3 nakadalo. Pagkatapos: 1/3; dalawa pa rin ang hindi nakapunta.\nGawain: pulong. Output: schedule at paanyaya. Resulta: attendance.\nBakit? Hindi pa alam ang bawat dahilan; kumustahin muli.\nBaguhin ang palagay at humingi ng bagong kasunduan.",
+    "display_en": "Before: 1/3 attended. After: 1/3; two still missed visits.\nActivity: meeting. Output: schedule and invitations. Outcome: attendance.\nWhy? Each reason is still unknown; recheck.\nRevise the assumption and seek renewed agreement.",
+    "asset_ids": [
+      "action-review"
+    ],
+    "check": null,
+    "narration_fil": "Para sa hiwalay na review exercise, ibinibigay ng scenario na pumayag ang mga katuwang sa isang naunang trial ng mas maagang oras. Hindi nito inaaprubahan ang bagong mungkahi. Bago: tatlong sambahayan ang inimbitahan, isa ang nakadalo. Pagkatapos: tatlo pa rin ang inimbitahan, isa pa rin ang nakadalo—dalawa pa rin ang hindi nakapunta. Kathang-isip na bilang ito, hindi pagtataya ng prevalence.\n\nIhiwalay ang gawain, output at resulta: gawain ang pulong; output ang napag-usapang trial schedule at naipadalang tatlong paanyaya; attendance na 1 sa 3 ang nasukat na resulta. Walang pagtaas sa attendance. Hindi natin alam mula sa bilang kung bakit hindi nakadalo ang bawat sambahayan o kung nabawasan ang ibang hadlang.\n\n‘Hindi sapat ang mas maagang oras,’ sabi ni Carole. ‘Kumustahin natin muli ang trabaho, gastos, pag-aalaga ng bata at abiso.’ Huwag tawaging tamad o hindi nakikiisa ang residente. Itala ang ulat at hindi pa alam; ihambing ang invitations at attendance bago at pagkatapos. Baguhin ang palagay at magmungkahi ng maliit na pagbabago para sa panibagong pagsang-ayon. Hindi patunay ang isang trial na lutas na ang buong problema.",
+    "narration_en": "For this separate review exercise, the scenario supplies partner agreement to an earlier trial of an earlier time. This does not approve the new proposal. Before: three households invited, one attended. After: three invited again, one attended again—two still missed the visit. These are fictional counts, not a prevalence estimate.\n\nSeparate activity, output and outcome: the meeting is an activity; an agreed trial schedule and three delivered invitations are outputs; attendance of 1 out of 3 is the measured outcome. Attendance did not increase. The counts alone do not tell us why each household missed a visit or whether other barriers decreased.\n\n‘An earlier time was insufficient,’ Carole says. ‘Let us recheck work, costs, childcare and notice.’ Do not label residents lazy or uncooperative. Record reports and unknowns; compare invitations with attendance before and after. Revise the assumption and propose a small change for renewed agreement. One trial does not establish that the whole problem is solved."
   },
   {
     "id": "slide-practice",
@@ -62,10 +78,14 @@
     "layout": "process",
     "heading_fil": "Subukan, saka ulitin",
     "heading_en": "Try it, then repeat",
-    "display_fil": "Sanhi → solusyon → owner at resources → deadline → sukatan at review. Kumpirmahin ang ambag bago mangako.",
-    "display_en": "Cause → solution → owner and resources → deadline → measure and review. Confirm contributions before making promises.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Pitong bahagi + hiwalay na agreement status.\n1 minutong rekomendasyon → tanong → feedback → rebisyon → 1 minutong retry.\nIikot ang BHW / katuwang / observer.\nHindi nasaksihan? Hindi naobserbahan; kailangan ng direktang obserbasyon.",
+    "display_en": "Seven fields + separate agreement status.\n1-minute recommendation → questions → feedback → revision → 1-minute retry.\nRotate BHW / partner / observer.\nNot witnessed? Not observed; arrange direct observation.",
+    "asset_ids": [
+      "action-practice"
+    ],
+    "check": null,
+    "narration_fil": "Gamitin ang kathang-isip na scenario: isa sa tatlong inimbitahang sambahayan ang nakadalo; kumpirmado sa exercise ang hadlang sa trabaho at pag-aalaga; hindi pa alam ang gustong oras, staff availability, gastos at pagsang-ayon sa bagong trial. Ihambing ang poster at schedule trial bago pumili. Punan ang pitong bahagi ng plano at hiwalay na agreement status.\n\nSa triad, isang BHW, isang residente o katuwang, at isang observer. Magbigay ng isang minutong rekomendasyon. Tanong ng katuwang: ‘Sino ang magdedesisyon? Anong resources ang kumpirmado? Sino ang pumayag? Ano ang susukatin kapag hindi gumana?’ Tukuyin ang hindi pa alam; baguhin ang plano sa feedback at ulitin ang isang minutong rekomendasyon. Iikot ang mga papel para makapagsanay ang lahat bilang BHW.\n\nKung mag-isa, isulat o sabihin ang rekomendasyon, sagutin ang parehong tanong, markahan ang kulang at ulitin. Dalhin ang mungkahi sa team bago ipatupad. Ang solo o peer practice ay hindi awtomatikong pasado; kailangan ang direktang obserbasyon ng assessor. Ang panonood ng kuwento o pag-click sa quiz ay hindi competency assessment.",
+    "narration_en": "Use the fictional scenario: one of three invited households attended; work and childcare barriers are confirmed for this exercise; preferred times, staff availability, costs and agreement to a new trial remain unknown. Compare a poster and a schedule trial before choosing. Fill the seven plan fields and separate agreement status.\n\nIn a triad, assign a BHW, a resident or partner, and an observer. Give a one-minute recommendation. The partner asks, ‘Who decides? Which resources are confirmed? Who agreed? What will you measure if it fails?’ Identify unknowns; revise the plan using feedback and repeat the one-minute recommendation. Rotate roles so everyone rehearses as BHW.\n\nAlone, write or speak the recommendation, answer the same questions, mark gaps and repeat. Bring the proposal to the team before implementation. Solo or peer practice does not automatically establish a pass; direct assessor observation is required. Watching a story or clicking a quiz is not competency assessment."
   },
   {
     "id": "slide-check",
@@ -77,9 +97,11 @@
     "layout": "decision",
     "heading_fil": "Piliin ang susunod na hakbang",
     "heading_en": "Choose the next step",
-    "display_fil": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
-    "display_en": "A plan names who acts and how to tell whether the barrier decreased.",
-    "asset_ids": [],
+    "display_fil": "Ihambing ang attendance sa invitations.\nBalikan ang hadlang; baguhin ang palagay.\nRebisadong mungkahi: konsultasyon muna; resources at trial date ay hinihintay.\nReview: attendance at dahilan ng hindi pagdalo, pagkatapos ng napagkasunduang trial.",
+    "display_en": "Compare attendance with invitations.\nRecheck barriers; revise the assumption.\nRevised proposal: consult first; resources and trial date remain pending.\nReview: attendance and reasons for missing visits, after an agreed trial.",
+    "asset_ids": [
+      "action-check"
+    ],
     "check": {
       "prompt_fil": "Nagawa ang meeting ngunit hindi dumami ang nakarating. Ano ang tamang review?",
       "prompt_en": "The meeting happened but attendance did not improve. What review is useful?",
@@ -98,8 +120,10 @@
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "Ang ikatlong sagot ay sumusukat sa resulta. Ang meeting ay gawain, hindi patunay na nawala ang hadlang; ang basta pag-uulit ay maaaring maulit ang maling palagay.",
-      "feedback_en": "The third response examines results. A meeting is an activity, not proof that a barrier disappeared; repetition may preserve the wrong assumption."
-    }
+      "feedback_fil": "Una: ang natapos na meeting ay gawain, hindi patunay ng pagtaas ng attendance o pagkawala ng hadlang. Ikalawa: ang pag-uulit nang walang bagong tanong ay maaaring ulitin ang maling palagay; kailangan ang bagong ebidensya. Ikatlo: tama—balikan ang hadlang at ihambing ang invitations at attendance. Bago: 1 sa 3; pagkatapos: 1 sa 3. Dalawa pa rin ang hindi nakapunta. Rebisadong plano ni Carole: sanhi—kumpirmadong trabaho at pag-aalaga, ngunit hindi pa alam ang dahilan ng bawat hindi pagdalo; mungkahi—muling konsultasyon bago magtalakay ng maliit na trial; owner—Carole sa konsultasyon at health team sa desisyon sa schedule; resources—papel at oras, staff time na hinihintay; deadline—pagtalakay sa Biyernes; sukatan—attendance sa inimbitahan at dahilan ng hindi pagdalo; review—Lunes pagkatapos ng napagkasunduang trial. Trial date at ambag ay hinihintay pa sa katuwang. Walang pangako ng pondo o pagkalutas ng buong problema.",
+      "feedback_en": "First: a completed meeting is an activity, not proof of increased attendance or removal of a barrier. Second: repeating without new questions may repeat a mistaken assumption; new evidence is needed. Third: correct—recheck barriers and compare invitations with attendance. Before: 1 of 3; after: 1 of 3. Two still missed visits. Carole’s revised plan: cause—confirmed work and childcare barriers, but each reason for nonattendance remains unknown; proposal—consult again before discussing a small trial; owner—Carole for consultation and the health team for schedule decisions; resources—paper and time, with staff time pending; deadline—Friday discussion; measure—attendance among those invited and reasons for missing visits; review—Monday after an agreed trial. Trial date and contributions still await partner agreement. No funding or resolution of the whole problem is promised."
+    },
+    "narration_fil": "Bumalik si Carole sa team: natapos ang pulong, ngunit bago at pagkatapos ng trial ay isa lamang sa tatlong inimbitahang sambahayan ang nakadalo. Dalawa pa rin ang hindi nakapunta. Piliin ang susunod na hakbang at ipaliwanag kung bakit bago tingnan ang feedback.\n\nIhambing ang sagot sa iyong pitong bahagi ng plano. Ihiwalay ang natapos na gawain sa resulta at ang kasunduan sa hinihintay pang desisyon. Ang pagtatapos ay isang tapat na mungkahi at review plan, hindi pangako ng schedule, pondo o pagkalutas ng buong problema.",
+    "narration_en": "Carole returns to the team: the meeting finished, but before and after the trial only one of three invited households attended. Two still missed visits. Choose the next step and explain why before viewing the feedback.\n\nCompare your answer with your seven-field plan. Separate completed activity from outcome and agreement from a pending decision. The ending is an honest proposal and review plan, without a promise of a schedule, funding or resolution of the whole problem."
   }
 ]

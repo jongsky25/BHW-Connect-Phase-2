@@ -4,7 +4,10 @@ import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
-import {beforeProposed173,reviewed173} from '../lib/lesson-173-proposal-compat.mjs';
+import {beforeProposed173 as prior173,reviewed173 as reviewedPrior173} from '../lib/lesson-173-proposal-compat.mjs';
+import {beforeProposed174} from '../lib/lesson-174-proposal.mjs';
+const beforeProposed173=(p,actual=fs.readFileSync(p))=>prior173(p,beforeProposed174(p,actual));
+const reviewed173=(p,actual=fs.readFileSync(p))=>reviewedPrior173(p,beforeProposed174(p,actual));
 const root='content/training/day1-basic-competencies/',leaf=root+'modules/07-problema/lessons/problem-prioritize/';
 const j=p=>JSON.parse(fs.readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
 const baseline=j('docs/lesson-173-handoff-baseline.json'),lesson=JSON.parse(reviewed173(leaf+'lesson.json'));
@@ -15,7 +18,7 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
   const current=j(leaf+'lesson.json'),prior=JSON.parse(reviewed173(leaf+'lesson.json'));let count=0;
   for(const [i,asset]of current.assets.entries()){expect(asset.review_status).toBe('approved');expect(prior.assets[i].review_status).toBe('draft');asset.review_status=prior.assets[i].review_status;count++;}
   expect(count).toBe(6);expect(current).toEqual(prior);
-  for(const [p,h]of Object.entries(a.integrated_source_sha256))expect(sha(release172View(p,"approvedMain")),p).toBe(h);
+  for(const [p,h]of Object.entries(a.integrated_source_sha256))expect(sha(release172View(p,"approvedMain",beforeProposed174(p))),p).toBe(h);
   expect(()=>reviewed173(leaf+'lesson.json',Buffer.from('changed'))).toThrow('Unpinned');
  });
  it('preserves identity, objectives, original ordered anchors and tie choices',()=>{

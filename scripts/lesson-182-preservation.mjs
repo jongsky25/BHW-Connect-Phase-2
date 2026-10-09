@@ -2,7 +2,7 @@
 import {beforeProposed182} from './lib/lesson-182-integration.mjs';
 import fs from 'node:fs';import assert from 'node:assert/strict';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
 const j=p=>JSON.parse(fs.readFileSync(p)),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
-const b=j('docs/lesson-182-handoff-baseline.json'),execution=j('docs/lesson-182-execution-baseline.json');const leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/';
+const b=j('docs/lesson-182-handoff-baseline.json'),execution=j('docs/lesson-182-integrated-baseline.json');const leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/';
 const narrationPath='content/training/day1-basic-competencies/narration.json';let protectedCount=0;
 for(const [p,h]of Object.entries(execution.protected_sha256)){if(p===narrationPath)continue;const v=fs.lstatSync(p).isSymbolicLink()?Buffer.from(fs.readlinkSync(p)):fs.readFileSync(p);assert.equal(sha(beforeProposed182(p,v)),h,p);protectedCount++;}
 const oldNarration=JSON.parse(execFileSync('git',['show',execution.source_commit+':'+narrationPath],{maxBuffer:30*1024*1024})),current=j(narrationPath);
