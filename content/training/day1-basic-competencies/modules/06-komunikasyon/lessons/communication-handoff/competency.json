@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "May concern, pinagmulan, hindi pa tiyak at hinihinging aksyon ang ulat; pinipili ang tamang tatanggap at channel; tinutukoy kung paano kukumpirmahin ang follow-up.",
-      "observable_en": "Includes concern, source, uncertainty and requested action; selects the right recipient and channel; specifies how follow-up will be confirmed.",
-      "not_yet_fil": "Ibinabahagi sa pampublikong grupo ang personal na form o walang malinaw na hinihinging aksyon.",
-      "not_yet_en": "Shares a personal form publicly or omits a clear requested action.",
+      "observable_fil": "Tinutukoy ang awtorisadong tatanggap; malinaw ang concern, pinagmulan at hindi pa tiyak; humihingi ng aksyon sa loob ng tungkulin ng BHW; pinipili ang natiyak na ligtas na paraan; kinukumpirma ang pagtanggap at kung sino ang gagawa ng ano at kailan o paano susundan.",
+      "observable_en": "Identifies the authorized recipient; reports the concern, source and uncertainty clearly; requests action within the BHW role; selects a verified secure method; confirms receipt and who will do what and when or how to follow up.",
+      "not_yet_fil": "Walang direktang ebidensya pa, o naglalantad ng pribadong form, nag-iimbento ng katiyakan o pangakong serbisyo; hindi naipapakita ang ligtas na ulat at kumpirmasyon.",
+      "not_yet_en": "No direct evidence yet, or exposes a private form, invents certainty or promises a service; does not demonstrate a secure handoff and confirmation.",
       "levels": {
-        "kaya_na_fil": "May concern, pinagmulan, hindi pa tiyak at hinihinging aksyon ang ulat; pinipili ang tamang tatanggap at channel; tinutukoy kung paano kukumpirmahin ang follow-up. Nagagawa kahit hindi pinapaalalahanan.",
-        "kaya_na_en": "Includes concern, source, uncertainty and requested action; selects the right recipient and channel; specifies how follow-up will be confirmed. Completes this without prompting.",
-        "kailangan_practice_fil": "Tumpak ang ulat ngunit walang follow-up owner; ipatukoy kung sino ang sasagot at paano malalaman kung natanggap.",
-        "kailangan_practice_en": "Gives an accurate report but no follow-up owner; ask who should respond and how receipt will be confirmed.",
-        "hindi_pa_fil": "Ibinabahagi sa pampublikong grupo ang personal na form o walang malinaw na hinihinging aksyon.",
-        "hindi_pa_en": "Shares a personal form publicly or omits a clear requested action."
+        "kaya_na_fil": "Tinutukoy ang awtorisadong tatanggap; malinaw ang concern, pinagmulan at hindi pa tiyak; humihingi ng aksyon sa loob ng tungkulin ng BHW; pinipili ang natiyak na ligtas na paraan; kinukumpirma ang pagtanggap at kung sino ang gagawa ng ano at kailan o paano susundan. Nagagawa nang walang paalala; itinatama nang tapat ang kulang na detalye.",
+        "kaya_na_en": "Identifies the authorized recipient; reports the concern, source and uncertainty clearly; requests action within the BHW role; selects a verified secure method; confirms receipt and who will do what and when or how to follow up. Does this independently and honestly corrects missing details.",
+        "kailangan_practice_fil": "Nagbibigay ng kaugnay na ulat sa tulong ng prompt ngunit kulang ang pinagmulan, ligtas na paraan o may-ari at oras/paraan ng follow-up. Ulitin ang kulang na bahagi bago muling obserbahan.",
+        "kailangan_practice_en": "Gives a relevant report with prompts but omits a source, secure method or follow-up owner and time/method. Retry the missing part before another observation.",
+        "hindi_pa_fil": "Walang direktang ebidensya pa, o naglalantad ng pribadong form, nag-iimbento ng katiyakan o pangakong serbisyo; hindi naipapakita ang ligtas na ulat at kumpirmasyon.",
+        "hindi_pa_en": "No direct evidence yet, or exposes a private form, invents certainty or promises a service; does not demonstrate a secure handoff and confirmation."
       }
     }
   ]

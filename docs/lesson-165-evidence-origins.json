@@ -1,0 +1,30 @@
+{
+  "status": "draft",
+  "source_run": 37760887717,
+  "raw_artifacts": [
+    {
+      "artifact_id": 11543186151,
+      "sha256": "ead60001d6920697f02710dce4272743ceabc4ab4a8a52ed4ce052248f0cd035",
+      "bytes": 61906151,
+      "contains": "Actual first synthesis, 14 full reviews, 11 focused responses (10 usable, one blank) and retained HTTP400 content_blocked attempt."
+    },
+    {
+      "artifact_id": 11544430627,
+      "sha256": "c67fd25e249884178e08e05d9c1dd6f18b053f45ec5dc1314b4873bb1abba9d2",
+      "bytes": 23683765,
+      "contains": "Remaining 45 focused actual-WAV model requests/responses; together with the first artifact, all 56 focused reviews."
+    },
+    {
+      "artifact_id": 11543828150,
+      "sha256": "a1d3dde4a262757f1ffb0c91ec811847fbcc0921989ee6bad8a9c3c98300be46",
+      "bytes": 399453,
+      "contains": "One replacement focused model review plus the complete 14 full and 56 usable focused review cache; original failed/blank attempts remain retained."
+    }
+  ],
+  "generated_media_artifact": {
+    "artifact_id": 11542907811,
+    "sha256": "1d3e5b9b28cbc846a7f55684399e60d44872873a1cf1f5b8452d11c949d3ee34"
+  },
+  "human_listening": "pending",
+  "completed_audio_review_run": 37765142573
+}

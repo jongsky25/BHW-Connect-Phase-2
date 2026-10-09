@@ -1,0 +1,5 @@
+# Approved lesson 1.6.5 live release
+
+The owner approved PR #269 and requested “approved. merge and deploy to live” on 9 October 2026 (Asia/Manila). The original reviewed head and package hash are retained in the owner approval receipt. Current main’s separately approved lessons 1.6.2–1.6.4 are integrated with exact immutable views; their receipts and media remain unchanged. Only the seven target asset review statuses are promoted, with no teaching or media regeneration.
+
+The release waits for merged-main CI and Vercel, verifies every selected live media hash, snapshots eleven bounded rows, dry-runs and publishes only `communication-handoff`, then compares its exact revision/private guides and all ten protected neighbors. It never resets progress, changes flags, publishes KB entries or applies migrations. The authenticated preview respects the existing password-change account gate; if blocked, the artifact records that limitation. Owner authorization does not turn model findings into independent human listening or clinical signoff.

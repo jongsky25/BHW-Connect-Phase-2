@@ -1,0 +1,132 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "interpreted_authorization": "merge and deploy to live",
+  "approved_at": "2026-10-09T01:02:27.660791+00:00",
+  "reviewed_head": "9d993b3330f1ef5dd8a5ccd04a9331c5991dacd0",
+  "reviewed_pr": 269,
+  "lesson_keys": [
+    "communication-handoff"
+  ],
+  "scope": "Only lesson 1.6.5; preserve latest approved siblings, identities, prior public bytes, assessments, progress and flags. No migrations or KB publication.",
+  "approval_basis": "Owner authorization in this chat; original model concerns remain retained and this does not invent independent human listening or clinical signoff.",
+  "reviewed_proposal_receipt_sha256": "50400f8320ec825905eb004174cef12b3d6890d1aeacabc392a925d7822550a1",
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"communication-handoff\",\n    \"position\": 4,\n    \"title_fil\": \"Ibahagi ang mahalagang impormasyon\",\n    \"title_en\": \"Share relevant information\",\n    \"objectives_fil\": [\n      \"Gumawa ng maikling ulat para sa midwife na may concern, pinagmulan at hindi pa tiyak na detalye, hinihinging aksyon at ligtas na paraan ng pagpapadala.\"\n    ],\n    \"objectives_en\": [\n      \"Prepare a short handoff for the midwife containing the concern, sources and uncertainty, requested action and a secure delivery method.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"handoff\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [\n        \"gibs-portrait\",\n        \"handoff-handoff\"\n      ],\n      \"takeaway_fil\": \"Ihiwalay ang concern, pinagmulan at kulang na detalye; ang hinihingi ay hindi pa napagkasunduan.\",\n      \"takeaway_en\": \"Separate the concern, source and missing detail; a request is not yet an agreement.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"audience\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [\n        \"handoff-audience\"\n      ],\n      \"takeaway_fil\": \"Tiyakin ang awtorisadong tatanggap at lokal na aprubadong paraan; ibahagi lamang ang kailangan.\",\n      \"takeaway_en\": \"Verify the authorized recipient and locally approved method; share only what is needed.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"meeting\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [\n        \"handoff-meeting\"\n      ],\n      \"takeaway_fil\": \"Sa pulong, sapat na pattern at malinaw na tanong; ang pribadong kaso ay sa awtorisadong tatanggap.\",\n      \"takeaway_en\": \"At a meeting, give a sufficient pattern and a clear question; private cases go to the authorized recipient.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"confirm-next-step\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"check\": null,\n      \"takeaway_fil\": \"Kumpirmahin ang pagtanggap at ang napagkasunduan: sino, ano, at kailan o paano mag-follow-up.\",\n      \"takeaway_en\": \"Confirm receipt and the agreement: who, what, and when or how to follow up.\",\n      \"asset_ids\": [\n        \"handoff-confirm-next-step\"\n      ]\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [\n        \"handoff-practice\"\n      ],\n      \"takeaway_fil\": \"Magsanay sa pag-uulat, pagsagot sa paglilinaw at pagkumpirma; ulitin ang bahaging kulang.\",\n      \"takeaway_en\": \"Practise reporting, answering clarification and confirming; retry the missing part.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m6.record\"\n      ],\n      \"asset_ids\": [\n        \"handoff-check\"\n      ],\n      \"takeaway_fil\": \"Ibahagi ang kailangan ng tamang tatanggap; tiyakin ang pagtanggap at sundan ang napagkasunduan.\",\n      \"takeaway_en\": \"Share what the right recipient needs; verify receipt and follow up on the agreement.\",\n      \"check\": {\n        \"prompt_fil\": \"Humihingi ang barangay meeting ng paliwanag sa missed visits. Ano ang ibabahagi?\",\n        \"prompt_en\": \"A barangay meeting asks about missed visits. What should be shared?\",\n        \"options\": [\n          {\n            \"fil\": \"Ang pinagsamang childcare barrier at tanong tungkol sa iskedyul.\",\n            \"en\": \"The aggregated childcare barrier and a question about scheduling.\"\n          },\n          {\n            \"fil\": \"Mga larawan ng household forms para kumpleto.\",\n            \"en\": \"Photos of household forms for completeness.\"\n          },\n          {\n            \"fil\": \"Pangalan ng bawat pamilya at opinyon ng kapitbahay.\",\n            \"en\": \"Each family’s name and the neighbor’s opinion.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Una: Ang pinagsamang childcare barrier at tanong tungkol sa iskedyul ay sapat para sa pagpaplano, kung walang detalyeng makakakilala sa pamilya. Ikalawa: Ang larawan ng household forms ay naglalantad ng hindi kailangang pribadong detalye; hindi iyon ang kailangan ng grupo. Ikatlo: Ang pangalan at opinyon ng kapitbahay ay hindi angkop; ang opinyon ay hindi ebidensya ng dahilan. Sa wakas, tinanggap ng chair ang pinagsamang buod at napagkasunduang itanong niya sa itinalagang health team member ang paraan ng paglilinaw sa iskedyul sa susunod na coordination meeting. Kinumpirma ni Gibs kung sino ang gagawa at paano kukunin ang sagot. Hiwalay niyang kinumpirma sa awtorisadong midwife ang pagtanggap ng indibidwal na ulat at kanilang follow-up. Walang ipinangakong appointment o childcare.\",\n        \"feedback_en\": \"First: The aggregated childcare barrier and scheduling question are sufficient for planning if no details identify a household. Second: Photographs of household forms expose unnecessary private details; the group does not need them. Third: Names and a neighbor’s opinion are inappropriate; an opinion is not evidence of the cause. In the ending, the chair acknowledges the aggregated summary and agrees to ask the designated health team member how to clarify scheduling at the next coordination meeting. Gibs confirms who will act and how to obtain the response. Separately, he confirms that the authorized midwife received the individual report and checks their follow-up agreement. No appointment or childcare is promised.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m6.record\",\n      \"read_ids\": [\n        \"handoff\",\n        \"audience\",\n        \"meeting\",\n        \"confirm-next-step\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-handoff\",\n        \"slide-audience\",\n        \"slide-meeting\",\n        \"slide-confirm-next-step\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        28\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        18,\n        19,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"gibs-portrait\",\n      \"path\": \"/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png\",\n      \"content_hash\": \"0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02\",\n      \"alt_fil\": \"Si Gibs, kathang-isip na lalaking BHW, nakasuot ng teal na polo at may nakasarang clipboard.\",\n      \"alt_en\": \"Gibs, a fictional male BHW, wears a teal polo and holds a closed clipboard.\",\n      \"caption_fil\": \"Si Gibs ang BHW sa lahat ng aralin sa 1.6.\",\n      \"caption_en\": \"Gibs is the BHW throughout lessons 1.6.\",\n      \"provenance\": \"New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.\",\n      \"review_status\": \"approved\"\n    },\n    {\n      \"id\": \"handoff-handoff\",\n      \"path\": \"/training/bhw-1-6/gibs-handoff-handoff-fab52bab526f.png\",\n      \"content_hash\": \"fab52bab526fdeca1c1837a2dfeaf901e1a828bdb629bc346d5d54a5d4fad009\",\n      \"alt_fil\": \"Si Gibs ay nagbibigay ng maikling ulat sa awtorisadong midwife sa pribadong lugar; nakasara ang folder.\",\n      \"alt_en\": \"Gibs gives a short report to the authorized midwife in a private space; the folder is closed.\",\n      \"caption_fil\": \"Ihiwalay ang concern, pinagmulan at kulang na detalye; ang hinihingi ay hindi pa napagkasunduan.\",\n      \"caption_en\": \"Separate the concern, source and missing detail; a request is not yet an agreement.\",\n      \"provenance\": \"Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"handoff-audience\",\n      \"path\": \"/training/bhw-1-6/gibs-handoff-audience-f2e4d35b26ca.png\",\n      \"content_hash\": \"f2e4d35b26ca42cafb416487419d05583f83b81c499bffa51863a879198be440\",\n      \"alt_fil\": \"Tinitiyak ni Gibs ang awtorisadong midwife bago ibigay ang nakasarang sobre; nakikinig si Liza.\",\n      \"alt_en\": \"Gibs verifies the authorized midwife before handing over a closed envelope; Liza listens.\",\n      \"caption_fil\": \"Tiyakin ang awtorisadong tatanggap at lokal na aprubadong paraan; ibahagi lamang ang kailangan.\",\n      \"caption_en\": \"Verify the authorized recipient and locally approved method; share only what is needed.\",\n      \"provenance\": \"Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"handoff-meeting\",\n      \"path\": \"/training/bhw-1-6/gibs-handoff-meeting-0e0758dee3d2.png\",\n      \"content_hash\": \"0e0758dee3d27f30566c02d03ef1fa8c37f83ec21f324330c2c467b921f1759e\",\n      \"alt_fil\": \"Ipinapakita ni Gibs sa pulong ang tatlong walang-pangalang bahay at kalendaryo; nakasara ang pribadong tala.\",\n      \"alt_en\": \"Gibs presents three anonymous household icons and a calendar to a meeting; the private record stays closed.\",\n      \"caption_fil\": \"Sa pulong, sapat na pattern at malinaw na tanong; ang pribadong kaso ay sa awtorisadong tatanggap.\",\n      \"caption_en\": \"At a meeting, give a sufficient pattern and a clear question; private cases go to the authorized recipient.\",\n      \"provenance\": \"Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"handoff-confirm-next-step\",\n      \"path\": \"/training/bhw-1-6/gibs-handoff-confirm-next-step-f88f7d93bb46.png\",\n      \"content_hash\": \"f88f7d93bb46109d58a1088eba94276d2ddb81db9579706d1d1e0cac881e5879\",\n      \"alt_fil\": \"Kinukumpirma nina Gibs at midwife ang susunod na hakbang gamit ang kalendaryo na walang pribadong detalye.\",\n      \"alt_en\": \"Gibs and the midwife confirm the next step using a calendar with no private details.\",\n      \"caption_fil\": \"Kumpirmahin ang pagtanggap at ang napagkasunduan: sino, ano, at kailan o paano mag-follow-up.\",\n      \"caption_en\": \"Confirm receipt and the agreement: who, what, and when or how to follow up.\",\n      \"provenance\": \"Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"handoff-practice\",\n      \"path\": \"/training/bhw-1-6/gibs-handoff-practice-e422855db886.png\",\n      \"content_hash\": \"e422855db886be14fde97cb3df446a9b94ab6e16ae3be41f18adfa97dabe226c\",\n      \"alt_fil\": \"Tatlong kalahok ang nagsasanay bilang BHW, midwife at observer; walang tunay na resident record.\",\n      \"alt_en\": \"Three participants rehearse as BHW, midwife and observer; no real resident record is used.\",\n      \"caption_fil\": \"Magsanay sa pag-uulat, pagsagot sa paglilinaw at pagkumpirma; ulitin ang bahaging kulang.\",\n      \"caption_en\": \"Practise reporting, answering clarification and confirming; retry the missing part.\",\n      \"provenance\": \"Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"handoff-check\",\n      \"path\": \"/training/bhw-1-6/gibs-handoff-check-c1216adf038a.png\",\n      \"content_hash\": \"c1216adf038a45d5b21f24b911c09c4740ed652247d1378bf3a21d89f891c314\",\n      \"alt_fil\": \"Nagtatanong ang chair sa pulong; hawak ni Gibs ang nakasarang clipboard at hindi pa pinipili ang ibabahagi.\",\n      \"alt_en\": \"The meeting chair asks a question; Gibs holds a closed clipboard and has not yet chosen what to share.\",\n      \"caption_fil\": \"Sitwasyon bago pumili: ano ang kailangan ng grupo?\",\n      \"caption_en\": \"Before choosing: what does the group need?\",\n      \"provenance\": \"Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"communication-handoff-story\",\n      \"alt_fil\": \"Anim na narrated beat: malinaw na ulat, tamang tatanggap, buod sa pulong at kumpirmadong follow-up.\",\n      \"alt_en\": \"Six narrated beats: a clear report, authorized recipient, meeting summary and confirmed follow-up.\",\n      \"caption_fil\": \"Concern, pinagmulan, hiling at kumpirmadong hakbang.\",\n      \"caption_en\": \"Concern, source, request and a confirmed next step.\",\n      \"provenance\": \"Original lesson1.6.5 Remotion animation with new built-in imagegen six distinct handoff scenes preserving new male Gibs identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Distinct illustrated handoff actions with animated labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-6/communication-handoff-gemini-fil-fef85fe5bc6d.mp4\",\n          \"content_hash\": \"fef85fe5bc6de7c7c6152452791e63bbaaba06fffd8aa0a43cedab7b4c550ac6\",\n          \"duration_s\": 69,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-6/communication-handoff-gemini-fil-ac9da2e11561.vtt\",\n            \"content_hash\": \"ac9da2e11561302d59eb40f93224ccfb3a3c1632ff3cdae04a9994ff48a7522f\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-6/communication-handoff-gemini-fil-f19e0c88ba25-poster.jpg\",\n            \"content_hash\": \"f19e0c88ba25752d1ac1a150c5364041b1fc04438ca55bab6a6eec1fe7b0750a\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-6/communication-handoff-gemini-en-f51d6d447773.mp4\",\n          \"content_hash\": \"f51d6d44777363401eddab77c6105ed6452679c6f3bc944abede2d2f6a78909b\",\n          \"duration_s\": 61,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-6/communication-handoff-gemini-en-5873b2de3fb8.vtt\",\n            \"content_hash\": \"5873b2de3fb860bce419b825e46f521927c16860bd1f70fe713e9808e04607d0\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-6/communication-handoff-gemini-en-0fa496d031e4-poster.jpg\",\n            \"content_hash\": \"0fa496d031e45ab954aa4e2e46e0d5fa7d002380bcd4109a7ef586d65c856bf7\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-6/communication-handoff-gemini-fil-f19e0c88ba25-poster.jpg\",\n      \"content_hash\": \"f19e0c88ba25752d1ac1a150c5364041b1fc04438ca55bab6a6eec1fe7b0750a\"\n    }\n  ],\n  \"featured_asset_id\": \"communication-handoff-story\"\n}\n",
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json": "ccedaec7e72abc55da249f953dec56a927b8703abb116ea43942e8cdfb68dafc",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/read.fil.md": "6950a4fa8479c383bfd855daf6f79fd8ec59a6938ec25c2800f412d13d19f860",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/read.en.md": "421b06a517622edbb86fb51a020ee631ae4f9403c0bf8326f3eab00f3822c34f",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/slides.json": "6a652f91c2cc2b67dc91b9ac978416d9426869f9cf15eb45384c6ebd29d37c11",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/competency.json": "df5ebb8a67c4bc0189e93b9b6ddaad4f74fcd2462414fbff8be7137ff87c3ead",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/facilitator.fil.md": "acd56053c6ae069122a53eb2e857e69a8e00de99c0355b4d24f019c10d1d048e",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/facilitator.en.md": "6a65aa3f898582b63877e68d1e2885c98bfacd9b52314e84a767ccfb68ce688c",
+    "content/training/day1-basic-competencies/narration.json": "37850828c4d0c1b9b6ea8e3ff4753aafb7f90b583a10e8c00fbb12d0b4c37d1a",
+    "remotion/src/Root.tsx": "bdfbcf24f04aac3eb04dd66ed8e998291b09a190b1e16ced72095ced16c310f3",
+    "src/components/elearning/reference-lessons.tsx": "14113a0dd903ccd3652eef82fd22bf77ffd0907e4d46120269b646b8be6bae84",
+    "scripts/lib/reference-narration.mjs": "f1bd6234fe1ebd0ebd2da0e96773bcdab53cbfcecb0f15807e99fed05a162644",
+    "scripts/lib/lesson-165-integration.mjs": "fe8e03f711a689b6201a49d4563807235fa872838404771e8c4912a6423e0d26",
+    "docs/lesson-165-integration-receipt.json": "fd4e9c944ba39c511e5d53034d398dc649e7b444b60f11318626913b6e78c13d"
+  },
+  "approved_media": [
+    {
+      "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-handoff-fab52bab526f.png",
+      "sha256": "fab52bab526fdeca1c1837a2dfeaf901e1a828bdb629bc346d5d54a5d4fad009"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-audience-f2e4d35b26ca.png",
+      "sha256": "f2e4d35b26ca42cafb416487419d05583f83b81c499bffa51863a879198be440"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-meeting-0e0758dee3d2.png",
+      "sha256": "0e0758dee3d27f30566c02d03ef1fa8c37f83ec21f324330c2c467b921f1759e"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-confirm-next-step-f88f7d93bb46.png",
+      "sha256": "f88f7d93bb46109d58a1088eba94276d2ddb81db9579706d1d1e0cac881e5879"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-practice-e422855db886.png",
+      "sha256": "e422855db886be14fde97cb3df446a9b94ab6e16ae3be41f18adfa97dabe226c"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-check-c1216adf038a.png",
+      "sha256": "c1216adf038a45d5b21f24b911c09c4740ed652247d1378bf3a21d89f891c314"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-handoff-gemini-fil-f19e0c88ba25-poster.jpg",
+      "sha256": "f19e0c88ba25752d1ac1a150c5364041b1fc04438ca55bab6a6eec1fe7b0750a"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-handoff-gemini-fil-fef85fe5bc6d.mp4",
+      "sha256": "fef85fe5bc6de7c7c6152452791e63bbaaba06fffd8aa0a43cedab7b4c550ac6"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-handoff-gemini-fil-ac9da2e11561.vtt",
+      "sha256": "ac9da2e11561302d59eb40f93224ccfb3a3c1632ff3cdae04a9994ff48a7522f"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-handoff-gemini-en-f51d6d447773.mp4",
+      "sha256": "f51d6d44777363401eddab77c6105ed6452679c6f3bc944abede2d2f6a78909b"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-handoff-gemini-en-0fa496d031e4-poster.jpg",
+      "sha256": "0fa496d031e45ab954aa4e2e46e0d5fa7d002380bcd4109a7ef586d65c856bf7"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-handoff-gemini-en-5873b2de3fb8.vtt",
+      "sha256": "5873b2de3fb860bce419b825e46f521927c16860bd1f70fe713e9808e04607d0"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/audience.en.3834ec14d40b.mp3",
+      "sha256": "63317d31ba187fdeb7b1d06e4358036b20f3218c186dc72e6420b6e99e59b249"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/audience.fil.11b0fa4f1192.mp3",
+      "sha256": "034bd35168dc104517f20b7af1dd97eb250d327352a43b21a37c5ed700b4a2e6"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/check.en.3eaa90eeebbe.mp3",
+      "sha256": "a543aec4db0cf595946115a25eb88b989bd0291191c5e36c9a91418bc36bfdc4"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/check.fil.f461a939520c.mp3",
+      "sha256": "a3d04790c96cac7e819a580cb637a5338ed7fcac8023113943f9e9d7a118e56f"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/confirm-next-step.en.36b3156f46c6.mp3",
+      "sha256": "288623a6473ace62343280464ff8a64c6ec69ab66bdbda41f07e9e1fcbb6998a"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/confirm-next-step.fil.ea4d10cda9e3.mp3",
+      "sha256": "6763f0d7d126f8924fbba54cd4ab646ee46f2d389a27814e1a3225c3d6097ab6"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/handoff.en.1105573ee9e5.mp3",
+      "sha256": "e2b04a9f837684577465cbed5fc2a96c5d696deff9715f61de69007c7229fb50"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/handoff.fil.9eb9a5961c9f.mp3",
+      "sha256": "771c71fe88e37a222c31bb7e64ca8c0e35b0155c5463112eca8f4e4576392eee"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/meeting.en.ccd59541d1e9.mp3",
+      "sha256": "d88f59cf1d1b8a509da8262dd2377197a0eee611a665084d3b8e4f0304cdc2f9"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/meeting.fil.e76bbd131450.mp3",
+      "sha256": "e44f2dc09e50d09072b1258fa670bcf54fbb0651028d2887005e8b2c70606fe7"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/practice.en.5ad96ade2c2c.mp3",
+      "sha256": "5de4ae679dae24311cfbc3a55b3d7ee69bfcb97f63f3acb293a95b7e22024650"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-handoff/practice.fil.47588b675285.mp3",
+      "sha256": "e24d52f67141a3dd9b6bc0da98392fb07a5e71848dac43ade823037ce458f89e"
+    }
+  ],
+  "reviewed_package_sha256": "bf1305a82636439caa89c044f3957094df5bf2bfe6ad1ed2fbc7068c2697a2e1"
+}

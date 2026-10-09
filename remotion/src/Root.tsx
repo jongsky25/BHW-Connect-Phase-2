@@ -1,3 +1,4 @@
+import {CommunicationHandoffStory, calculateCommunicationHandoffMetadata, COMMUNICATION_HANDOFF_FALLBACK_DURATION, COMMUNICATION_HANDOFF_FPS} from './communication-handoff/CommunicationHandoffStory';
 import {CommunicationRecordStory, calculateCommunicationRecordMetadata, COMMUNICATION_RECORD_FPS, COMMUNICATION_RECORD_FALLBACK_DURATION} from "./communication-record/CommunicationRecordStory";
 import {CommunicationClarifyStory, calculateCommunicationClarifyMetadata, COMMUNICATION_CLARIFY_FPS, COMMUNICATION_CLARIFY_FALLBACK_DURATION} from "./communication-clarify/CommunicationClarifyStory";
 import {CommunicationExplainStory, calculateCommunicationExplainMetadata, COMMUNICATION_EXPLAIN_FPS, COMMUNICATION_EXPLAIN_FALLBACK_DURATION} from "./communication-explain/CommunicationExplainStory";
@@ -389,6 +390,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`communication-record-${language}`} id={language === "fil" ? "CommunicationRecordStoryFil" : "CommunicationRecordStoryEn"}
           component={CommunicationRecordStory} calculateMetadata={calculateCommunicationRecordMetadata}
           durationInFrames={COMMUNICATION_RECORD_FALLBACK_DURATION} fps={COMMUNICATION_RECORD_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`communication-handoff-${language}`} id={language === "fil" ? "CommunicationHandoffStoryFil" : "CommunicationHandoffStoryEn"}
+          component={CommunicationHandoffStory} calculateMetadata={calculateCommunicationHandoffMetadata}
+          durationInFrames={COMMUNICATION_HANDOFF_FALLBACK_DURATION} fps={COMMUNICATION_HANDOFF_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>
