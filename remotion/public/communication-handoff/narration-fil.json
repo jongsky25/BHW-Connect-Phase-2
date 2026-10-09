@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Lesson 1.6.5 handoff delivery v1. One settled adult Filipina female Kore trainer narrates every heading, sentence, dialogue and takeaway in everyday Filipino/Tagalog. Keep a consistent warm feminine mid-register with natural instructional pauses. Do not act out Gibs or the midwife or switch speakers. Preserve exact words, source attribution, every negation, uncertainty and requested versus agreed action. Finish each sentence and the ending clearly. Names in display remain Gibs and Liza; speech-only aliases are Gibz and Lisa. This direction is not evidence of stable timbre or human approval.",
+  "durationSeconds": 67.736,
+  "beats": [
+    {
+      "zone": "handoff",
+      "index": 0,
+      "text": "Ayon kay Liza, hadlang ang magbabantay sa anak. Iniulat ito ni Gibs sa midwife; hindi pa natiyak ang huling pagpunta. Hiling ang usapan sa iskedyul.",
+      "start_ms": 0,
+      "end_ms": 10080
+    },
+    {
+      "zone": "audience",
+      "index": 1,
+      "text": "Tiniyak ni Gibs ang awtorisadong tatanggap at aprubadong pribadong paraan. Hindi niya ipinadala ang form sa public chat o hindi natiyak na account.",
+      "start_ms": 10380,
+      "end_ms": 19260
+    },
+    {
+      "zone": "meeting",
+      "index": 2,
+      "text": "Sa pulong, pattern at tanong sa iskedyul lamang ang ibinahagi, walang detalyeng makakakilala sa pamilya. Hiwalay ang indibidwal na ulat.",
+      "start_ms": 19560,
+      "end_ms": 29880
+    },
+    {
+      "zone": "confirm-next-step",
+      "index": 3,
+      "text": "Nagtanong ang midwife tungkol sa petsa. “Hindi pa tiyak,” sagot ni Gibs. Natanggap niya ang ulat at pumayag na tingnan ang iskedyul at sumagot bukas.",
+      "start_ms": 30180,
+      "end_ms": 40220
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Sa triads, iikot ang BHW, midwife at observer. Iulat, sagutin ang paglilinaw at kumpirmahin ang gagawa at paraan ng follow-up; ulitin ang kulang.",
+      "start_ms": 40520,
+      "end_ms": 52960
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Tinanggap ng chair ang buod at pumayag na itanong ang iskedyul sa health team. Kinumpirma ni Gibs ang follow-up; kay Liza, natiyak lamang ang ipapaliwanag. Walang pangakong appointment o childcare.",
+      "start_ms": 53260,
+      "end_ms": 67660
+    }
+  ],
+  "audio_sha256": "f03c94fea0b6b0ce58b7f98190a6e4c50444d123046b0b7bdf1194f7341222ac"
+}
