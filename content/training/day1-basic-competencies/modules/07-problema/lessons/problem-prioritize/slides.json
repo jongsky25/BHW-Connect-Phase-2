@@ -7,9 +7,13 @@
     "layout": "process",
     "heading_fil": "Piliin ang prayoridad nang malinaw",
     "heading_en": "Make priorities explicit",
-    "display_fil": "Marka 1–5: laki, kabigatan, kakayahang malutas, pagkamadalian. Mas mataas na feasibility = mas kayang gawin. Pagsamahin, saka talakayin ang ebidensya. Ang agarang pangangailangan ng pangangalaga ay hindi naghihintay sa ranking.",
-    "display_en": "Score 1–5: magnitude, seriousness, feasibility, urgency. Higher feasibility means more achievable. Add the scores, then discuss evidence. Immediate care must not wait for ranking.",
-    "asset_ids": [],
+    "display_fil": "Laki · kabigatan · feasibility · urgency: tig-1–5.\nMas mataas na feasibility = mas kayang gawin.\nUlat ≠ natiyak na lokal na datos. Agarang referral ay hindi naghihintay sa ranking.",
+    "display_en": "Magnitude · severity · feasibility · urgency: 1–5 each.\nHigher feasibility = more achievable.\nA report is not verified local data. Urgent referral does not wait for ranking.",
+    "narration_fil": "Si Carole ang BHW sa kathang-isip na pagsasanay na ito. Tatlong sambahayan ang naiulat na hindi nakadalo sa nakatakdang pagbisita. Ulat pa lamang ito; hindi pa alam ang dahilan o kung ilan ang apektado sa buong barangay. Ang bagong usapan ay adaptasyon ng mga may-akda, hindi sipi mula sa DOH.\n\nSa pagpaplano, bigyan ang bawat problema ng 1–5 sa apat na batayan: laki o dami ng apektado; kabigatan ng epekto; kakayahang tugunan gamit ang resources (feasibility); at pagkamadalian (urgency). Mas mataas na feasibility score ang mas kayang gawin, hindi mas mahirap gawin. Hindi pa sapat ang ulat ng tatlong sambahayan para magtakda ng lokal na marka.\n\nCarole: “Ano ang batayan ng bawat marka? Sino pa ang kailangang marinig?” Pagsamahin ang apat na marka at talakayin ang ebidensya kasama ang grupo. Ang mataas na kabuuan ay panimulang prayoridad. Ang nangangailangan ng agarang pangangalaga ay i-refer agad ayon sa angkop na referral procedure; hindi hinihintay ang planning score.",
+    "narration_en": "Carole is the BHW in this fictional classroom exercise. Three households reportedly missed scheduled visits. This is only a report; the reasons and the number affected across the barangay are unknown. The new dialogue is an authoring adaptation, not a DOH quotation.\n\nFor planning, score each problem from 1 to 5 on four criteria: magnitude or number affected; severity of the effects; feasibility with available resources; and urgency. Higher feasibility means more achievable, not harder to do. The report from three households is not enough to assign local scores.\n\nCarole: “What supports each score? Who else should we hear from?” Add the four scores and discuss evidence with the group. A high total suggests a starting priority. Refer someone needing urgent care immediately under the appropriate referral procedure; do not wait for a planning score.",
+    "asset_ids": [
+      "prioritize-criteria"
+    ],
     "check": null
   },
   {
@@ -20,9 +24,47 @@
     "layout": "process",
     "heading_fil": "Subukan ang pagmamarka",
     "heading_en": "Try scoring priorities",
-    "display_fil": "Halimbawang score: training gap 4+5+5+5=19; safe-water teaching 4+3+5+5=17; household knowledge 3+3+5+5=16. Ayos: laki, kabigatan, feasibility, urgency. Hindi ito sukat ng inyong barangay.",
-    "display_en": "Example scores: training gap 4+5+5+5=19; safe-water teaching 4+3+5+5=17; household knowledge 3+3+5+5=16. Order: magnitude, seriousness, feasibility, urgency. These are not local measurements.",
-    "asset_ids": [],
+    "display_fil": "Ayos: laki | kabigatan | feasibility | urgency | total\nBHW training: 4 | 5 | 5 | 5 | 19\nPagtuturo ng ligtas na tubig: 4 | 3 | 5 | 5 | 17\nKaalaman sa paghahanda ng tubig: 3 | 3 | 5 | 5 | 16\nHalimbawa sa deck; hindi lokal na sukat.",
+    "display_en": "Order: magnitude | severity | feasibility | urgency | total\nBHW training: 4 | 5 | 5 | 5 | 19\nSafe-water teaching: 4 | 3 | 5 | 5 | 17\nWater-preparation knowledge: 3 | 3 | 5 | 5 | 16\nDeck examples; not local measurements.",
+    "narration_fil": "Hiwalay sa ulat ng tatlong sambahayan ang mga halimbawang row na ito mula sa teaching deck. Kathang-isip na practice scores ang mga ito, hindi sukat ng inyong barangay. Ayos ng apat na marka: laki, kabigatan, feasibility, urgency.\n\nKulang na BHW training: 4 + 5 + 5 + 5 = 19.\nKulang na pagtuturo ng ligtas na tubig: 4 + 3 + 5 + 5 = 17.\nKulang na kaalaman ng sambahayan sa paghahanda ng tubig: 3 + 3 + 5 + 5 = 16.\n\nCarole: “Sa unang row, 4 + 5 = 9; dagdag 5 = 14; dagdag 5 = 19.” Sa ikalawa: 7, 12, 17. Sa ikatlo: 6, 11, 16. Kaya 19 ang una, 17 ang ikalawa, 16 ang ikatlo sa halimbawang ito. Hindi nito pinatutunayang may ganitong training gap o panganib sa inyong lugar. Bago gamitin ang marka sa tunay na plano, hanapin ang kaugnay na bilang, epekto, resources at dahilan ng pagkamadalian.",
+    "narration_en": "These teaching-deck example rows are separate from the report about three households. They are fictional practice scores, not measurements of your barangay. The four scores are ordered: magnitude, severity, feasibility, urgency.\n\nBHW training gap: 4 + 5 + 5 + 5 = 19.\nSafe-water teaching gap: 4 + 3 + 5 + 5 = 17.\nHousehold water-preparation knowledge gap: 3 + 3 + 5 + 5 = 16.\n\nCarole: “In the first row, 4 + 5 = 9; add 5 = 14; add 5 = 19.” In the second: 7, 12, 17. In the third: 6, 11, 16. Thus 19 ranks first, 17 second and 16 third in this example. This does not establish such training gaps or risks locally. Before using a score in a real plan, obtain relevant counts, effects, available resources and reasons for urgency.",
+    "asset_ids": [
+      "prioritize-worked-scores"
+    ],
+    "check": null
+  },
+  {
+    "id": "slide-score-evidence",
+    "concept_ids": [
+      "m7.prioritize"
+    ],
+    "layout": "process",
+    "heading_fil": "Saan galing ang marka?",
+    "heading_en": "What supports the score?",
+    "display_fil": "Bawat marka: pinagmulan, epekto, resources, dahilan ng urgency.\nHindi pa alam? Itala at beripikahin.\nEqual-weight ordinal scores: gabay, hindi validated formula o triage.",
+    "display_en": "Each score: source, effects, resources, reason for urgency.\nUnknown? Record it and verify.\nEqual-weight ordinal scores: an aid, not a validated formula or triage.",
+    "narration_fil": "Carole: “May ulat ng tatlong hindi nakadalo. Ibig bang sabihin, 4 na agad ang laki?” Kasamang residente: “Hindi pa. Hindi natin alam ang kabuuang bilang o kung pareho ang dahilan.” Ilista ang ulat at ang hindi pa alam; huwag punan ng hula.\n\nSa bawat marka, itanong: Laki—ilang tao o sambahayan, sa anong panahon, at saan galing ang bilang? Kabigatan—anong epekto ang may batayan? Feasibility—anong tao, oras, materyales at pahintulot ang talagang available? Urgency—bakit kailangang unahin sa pagpaplano? Ang katahimikan, tango o ekspresyon ay hindi patunay ng pagsang-ayon. Ang “tamad” o “ayaw makiisa” ay hindi ebidensya.\n\nAng 1–5 ay nakaayos na antas, hindi eksaktong pantay na pagitan. Ang pagdaragdag ay simpleng equal-weight planning aid: pareho ang bigat ng apat sa halimbawang ito, ngunit hindi ito validated formula o clinical triage. Maaaring itago ng magkaparehong total ang magkaibang epekto. Itala ang batayan, hindi pa alam, at tanong na kailangang beripikahin; talakayin ang limitasyon bago magpasya.",
+    "narration_en": "Carole: “Three missed visits were reported. Does that immediately make magnitude a 4?” Resident partner: “Not yet. We do not know the overall count or whether the reasons are the same.” List the report and what remains unknown; do not fill gaps with guesses.\n\nFor each score, ask: Magnitude—how many people or households, over what period, and what is the source? Severity—what effects have supporting evidence? Feasibility—which people, time, materials and permissions are actually available? Urgency—why give this planning priority now? Silence, a nod or an expression does not prove agreement. Labels such as “lazy” or “uncooperative” are not evidence.\n\nThe 1–5 scores are ordered categories, not necessarily equal intervals. Addition is a simple equal-weight planning aid: all four criteria have equal weight in this example, but it is not a validated formula or clinical triage tool. Equal totals can hide different effects. Record the evidence, unknowns and verification questions; discuss these limits before deciding.",
+    "asset_ids": [
+      "prioritize-score-evidence"
+    ],
+    "check": null
+  },
+  {
+    "id": "slide-tie-and-urgent-care",
+    "concept_ids": [
+      "m7.prioritize"
+    ],
+    "layout": "process",
+    "heading_fil": "Kapag tabla, maglinaw; agarang pangangalaga, ituloy",
+    "heading_en": "Resolve a tie; proceed with urgent care",
+    "display_fil": "Planning: balikan ang ebidensya, urgency at resources; magkasundo sa dahilan.\nHindi pa alam na resources: huwag ipangako.\nAgarang pangangalaga: referral agad; huwag hintayin ang ranking.",
+    "display_en": "Planning: revisit evidence, urgency and resources; agree on reasons.\nUnconfirmed resources: do not promise them.\nUrgent care: refer promptly; do not wait for ranking.",
+    "narration_fil": "Sa hiwalay na kathang-isip na tie exercise, parehong 17 ang Plan A at Plan B. Plan A: paglinaw ng impormasyon tungkol sa pagbisita; may available na staff time sa role-play. Plan B: pag-aayos ng transport; hindi pa nakumpirma ang sasakyan o partner. Walang totoong schedule o pondo na ipinapangako. Hindi ito bagong scoring ng tatlong deck rows.\n\nCarole: “Pareho ang total, pero ano ang resources na tiyak?” Kasama: “May oras para maglinaw sa Plan A; tanong pa ang transport sa B.” Balikan ang batayan ng bawat marka at pagkamadalian. Kung may mali, iwasto at sabihin kung anong ebidensya ang dahilan. Kung kulang, itala ang hindi pa alam. Hilingin sa bawat kasama ang dahilan bago magkasundo. Huwag unahin dahil lamang unang nakalista o gusto ng lider.\n\nMagkahiwalay ang pagpaplano at agarang referral. Kung may nangangailangan ng agarang pangangalaga, ituloy ang referral ayon sa angkop na procedure habang nagpapatuloy ang planning discussion. Hindi kailangang tapusin muna ang table. Hindi itinuturo ng exercise ang bagong clinical triage rule.",
+    "narration_en": "In a separate fictional tie exercise, Plan A and Plan B both score 17. Plan A clarifies visit information; staff time is available within the role-play. Plan B arranges transport; a vehicle and partner are unconfirmed. No real schedule or funding is promised. This is not a new scoring of the three deck rows.\n\nCarole: “The totals match, but which resources are confirmed?” Partner: “There is time to clarify information for Plan A; transport for B is still a question.” Revisit evidence for each score and urgency. Correct an error with its supporting evidence. Record unknowns where evidence is missing. Ask each partner for reasons before agreeing. Do not choose solely by list order or a leader’s preference.\n\nPlanning and urgent referral are separate. If someone needs urgent care, proceed with referral under the appropriate procedure while planning discussion continues. Completing the table is not a prerequisite. This exercise teaches no new clinical triage rule.",
+    "asset_ids": [
+      "prioritize-tie-and-urgent-care"
+    ],
     "check": null
   },
   {
@@ -31,11 +73,15 @@
       "m7.prioritize"
     ],
     "layout": "process",
-    "heading_fil": "Subukan, saka ulitin",
-    "heading_en": "Try it, then repeat",
-    "display_fil": "Kwentahin ang 19, 17, 16. Ipaliwanag ang ebidensya. Kapag tabla, talakayin ang urgency at resources; huwag baguhin ang score nang walang dahilan.",
-    "display_en": "Calculate 19, 17, 16. Explain the evidence. For a tie, discuss urgency and resources; do not change scores without reasons.",
-    "asset_ids": [],
+    "heading_fil": "Subukan, magbigay ng feedback, saka ulitin",
+    "heading_en": "Try, give feedback, then repeat",
+    "display_fil": "Tatlong total: 19 → 17 → 16.\nBawat learner: attempt 3 min + feedback 1 min + retry 1 min.\nIpaalam ang batayan, unknowns, tie decision at hiwalay na referral.",
+    "display_en": "Three totals: 19 → 17 → 16.\nEach learner: attempt 3 min + feedback 1 min + retry 1 min.\nExplain evidence, unknowns, tie decision and separate referral.",
+    "narration_fil": "Gamitin ang score/evidence cards, role cards, observer checklist at row-by-row tally aid. Kwentahin ang lahat ng tatlong deck totals: 19, 17 at 16. Ipaliwanag ang ranking at kung bakit mas mataas na feasibility ang mas kayang gawin. Magbigay ng tanong sa ebidensya para sa bawat pamantayan bago gamitin sa tunay na lugar.\n\nSa hiwalay na tie card, parehong 17 ang Plan A at B. Talakayin ang available na oras sa A at hindi pa kumpirmadong transport sa B; humingi ng dahilan sa kasama at itala ang napagkasunduan at hindi pa alam. Sabihin kung bakit tuloy ang agarang referral kahit hindi tapos ang ranking.\n\nSa triad, magpalit ng BHW/facilitator, residente-o-partner/recorder at observer. Bawat learner: 3 minutong attempt, 1 minutong tiyak na feedback, 1 minutong retry; tatlong ikot at 1 minutong paglipat = 16 minuto. Iwasto ang isang arithmetic o evidence error. Kung mag-isa, isulat ang sagot, takpan muna ang answer key, saka suriin at ulitin ang mali. Ang sariling pagsusuri ay hindi direktang assessment. Sa susunod na planning meeting, itanong kung saan galing ang mga marka.",
+    "narration_en": "Use the score/evidence cards, role cards, observer checklist and row-by-row tally aid. Calculate all three deck totals: 19, 17 and 16. Explain the ranking and why higher feasibility means more achievable. Give an evidence question for each criterion before applying scores locally.\n\nOn the separate tie card, Plans A and B both score 17. Discuss available staff time for A and unconfirmed transport for B; ask a partner for reasons and record the agreement and unknowns. Explain why urgent referral proceeds even if ranking is unfinished.\n\nIn a triad, rotate BHW/facilitator, resident-or-partner/recorder and observer. Each learner gets a 3-minute attempt, 1 minute of specific feedback and a 1-minute retry; three rotations plus 1 minute for transitions total 16 minutes. Correct an arithmetic or evidence error. Alone, write the answer with the key covered, then check and retry the error. Self-review is not direct assessment. At the next planning meeting, ask where the scores came from.",
+    "asset_ids": [
+      "prioritize-practice"
+    ],
     "check": null
   },
   {
@@ -46,9 +92,13 @@
     "layout": "decision",
     "heading_fil": "Piliin ang susunod na hakbang",
     "heading_en": "Choose the next step",
-    "display_fil": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.",
-    "display_en": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
-    "asset_ids": [],
+    "display_fil": "Parehong 17. Balikan ang ebidensya, urgency at resources.\nMagkasundo sa malinaw na dahilan.\nHuwag ipagpaliban ang agarang referral.",
+    "display_en": "Both score 17. Revisit evidence, urgency and resources.\nAgree on explicit reasons.\nDo not delay urgent referral.",
+    "narration_fil": "Tingnan si Carole at ang grupong naghahambing ng dalawang tabla sa score. Sa kathang-isip na tie card, pareho ang total ngunit hindi pareho ang katiyakan ng resources. Ano ang dapat gawin bago magpasya?\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay. Ang pagpindot sa sagot o panonood ng kuwento ay hindi direktang patunay ng competency.",
+    "narration_en": "Look at Carole and the group comparing two tied scores. On the fictional tie card, totals match but certainty about resources differs. What should happen before deciding?\n\nChoose an answer and explain why before viewing feedback. Then compare it with your own practice attempt. Clicking an answer or watching a story is not direct evidence of competency.",
+    "asset_ids": [
+      "prioritize-check"
+    ],
     "check": {
       "prompt_fil": "Parehong 17 ang dalawang problema. Alin ang gagawin ng grupo?",
       "prompt_en": "Two problems both score 17. What should the group do?",
@@ -67,8 +117,8 @@
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Ang unang sagot ay may batayan at bukas sa grupo. Ang pagkakasunod sa listahan at kagustuhan ng lider ay hindi dagdag na ebidensya. Kung may nangangailangan ng agarang pangangalaga, sundin agad ang referral protocol.",
-      "feedback_en": "The first response is evidence-based and open to the group. List order and a leader’s preference are not additional evidence. Follow referral procedures immediately for someone needing urgent care."
+      "feedback_fil": "Una: tama—balikan ang ebidensya, urgency at resources at humingi ng dahilan sa bawat kasama. Ikalawa: ang pagiging unang nakalista ay hindi ebidensya. Ikatlo: hindi sapat ang gusto ng lider upang magdagdag ng marka. Sa pagwawasto, pinili ng role-play group ang Plan A bilang panimulang planning step dahil may available na staff time; hindi pa kumpirmado ang transport sa Plan B. Sinabi ng bawat kasama ang dahilan; hindi hinulaan ang pagsang-ayon mula sa katahimikan. Itinala ni Carole ang napagkasunduan at ang transport question na kailangang beripikahin. Kathang-isip ito, hindi totoong schedule o pangako ng partner. Kung may nangangailangan ng agarang pangangalaga, ituloy agad ang referral ayon sa angkop na procedure, kahit nagpapatuloy ang pagpaplano.",
+      "feedback_en": "First: correct—revisit evidence, urgency and resources and ask each partner for reasons. Second: list order is not evidence. Third: the leader’s preference does not justify an extra point. In the corrected ending, the role-play group chooses Plan A as its starting planning step because staff time is available; transport for Plan B remains unconfirmed. Each partner states a reason; agreement is not inferred from silence. Carole records the agreement and the transport question for verification. This is fictional, not a real schedule or partner commitment. If anyone needs urgent care, proceed with referral immediately under the appropriate procedure while planning continues."
     }
   }
 ]

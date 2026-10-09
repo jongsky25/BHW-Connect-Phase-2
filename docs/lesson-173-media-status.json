@@ -1,0 +1,34 @@
+{
+  "status": "incomplete draft; text/art review available, media completion blocked",
+  "missing_credentials": [
+    "GEMINI_API_KEY",
+    "KB_LOADER_ANON_KEY",
+    "KB_LOADER_USERNAME",
+    "KB_LOADER_PASSWORD"
+  ],
+  "read_narration": {
+    "required": 12,
+    "generated": 0,
+    "reviewed": 0,
+    "reason": "No Gemini credential configured. Old narration manifest, history and public bytes retained; stale tracks must not be selected for new text."
+  },
+  "story": {
+    "required_compositions": [
+      "ProblemPrioritizeStoryFil",
+      "ProblemPrioritizeStoryEn"
+    ],
+    "generated": 0,
+    "reason": "No narrated story input; no silent or fabricated final render. Registry remains at its baseline."
+  },
+  "audio_review": {
+    "full_required": 14,
+    "focused_required": 56,
+    "completed": 0,
+    "human_listening": "pending",
+    "owner_approval": "pending",
+    "policy_SME": "pending"
+  },
+  "published_baseline": "blocked: loader credentials not configured",
+  "database_e2e": "not run; offline actual-component fixtures only; no production access",
+  "release": "blocked; no merge, load or publication"
+}
