@@ -26,20 +26,54 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Bounded read-only published-content baseline
+        continue-on-error: true
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-174-published-snapshot.mjs
       - name: Generate target-only Read narration
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON174_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-174-record-fetch.mjs'
-        run: node scripts/lesson-174-read-media-build.mjs
+        run: node scripts/lesson-174-media-build.mjs
+      - name: Review full actual recordings
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON174_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-174-record-fetch.mjs'
+        run: node scripts/lesson-174-audio-review.mjs
+      - name: Review actual focused excerpts
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON174_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-174-record-fetch.mjs'
+        run: node scripts/lesson-174-audio-focus.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: lesson174-draft-narration
+          name: lesson174-draft-evidence
           path: |
+            lesson-174-published-snapshot.json
             content/training/day1-basic-competencies/narration.json
             public/training/audio/07-problema/problem-action-plan/
             .preview/lesson174-raw/
+            .preview/lesson174-excerpts/
+            docs/lesson-174-media-generation.json
+            docs/lesson-174-audio-review.json
+            docs/lesson-174-audio-focus.json
+            content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/
+            public/training/bhw-1-7/
+            remotion/public/problem-action-plan/
+            remotion/out/problem-action-plan-*
           include-hidden-files: true
           if-no-files-found: error
           retention-days: 30

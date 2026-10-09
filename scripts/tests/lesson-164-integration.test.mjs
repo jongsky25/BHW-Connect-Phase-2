@@ -16,9 +16,9 @@ describe('owner-approved 1.6.4 integration and release',()=>{
   }
  });
  it('retains every current-main sibling narration and history and appends only two compositions',()=>{
-  const p='content/training/day1-basic-competencies/narration.json',current=j(p),main=JSON.parse(lesson164View(p,'approvedMain'));
+  const p='content/training/day1-basic-competencies/narration.json',current=JSON.parse(beforeProposed174(p)),main=JSON.parse(lesson164View(p,'approvedMain'));
   for(const [k,v]of Object.entries(main.lessons))if(k!=='communication-record'){expect(current.lessons[k]).toEqual(v);expect(current.history[k]).toEqual(main.history[k]);}
-  const source=fs.readFileSync('remotion/src/Root.tsx','utf8');
+  const source=beforeProposed174('remotion/src/Root.tsx').toString('utf8');
   const prior=source.replace(/^import \{CommunicationRecordStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`communication-record-[\s\S]+?      \)\)\}\n/,'');
   expect(prior).toBe(lesson164View('remotion/src/Root.tsx','approvedMain').toString());
  });

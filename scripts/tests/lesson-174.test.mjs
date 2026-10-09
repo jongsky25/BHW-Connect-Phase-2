@@ -27,7 +27,7 @@ describe('Carole action-plan draft',()=>{
    expect(read).toHaveLength(6);
    for(const [i,s]of read.entries()){expect(loaded.revision.slides[i]['narration_'+lang]).toBe(s.body);expect(s.body).not.toMatch(/Nestor|41/);}
   }
-  expect(new Set(lesson.assets.map(a=>a.content_hash)).size).toBe(6);
+  expect(new Set(lesson.assets.filter(a=>a.id.startsWith('action-')).map(a=>a.content_hash)).size).toBe(6);
   for(const s of lesson.sections){expect(s.asset_ids).toEqual(['action-'+s.id]);const a=lesson.assets.find(a=>a.id===s.asset_ids[0]);expect(sha(bytes('public'+a.path))).toBe(a.content_hash);expect(a.review_status).toBe('draft');}
  });
  it('retains original public bytes, sibling teaching, narration/history, UUIDs and approval receipts',()=>{
@@ -39,23 +39,26 @@ describe('Carole action-plan draft',()=>{
   for(const [p,e]of Object.entries(r.changed_existing_files)){
    expect(sha(bytes(p))).toBe(e.proposed_sha256);
    expect(sha(beforeProposed174(p))).toBe(e.predecessor_sha256);
-   expect(beforeProposed174(p)).toEqual(execFileSync('git',['show',captured.base_commit+':'+p]));
+   expect(beforeProposed174(p)).toEqual(execFileSync('git',['show',captured.base_commit+':'+p],{maxBuffer:32*1024*1024}));
    expect(()=>beforeProposed174(p,Buffer.from('changed'))).toThrow('Unpinned');
   }
   expect(r.owner_release_approval).toBe(false);
- });
- it('keeps old published narration selectable and refuses stale audio for new teaching',()=>{
+ },30000);
+ it('keeps old published narration selectable and selects exact new Gemini recordings',()=>{
   const old=j('docs/lesson-174-proposal-receipt.json').changed_existing_files;
   const read=Object.fromEntries(['fil','en'].map(lang=>[lang,parseReferenceRead(old[leaf+`read.${lang}.md`].predecessor_utf8)]));
   const original=JSON.parse(old[leaf+'lesson.json'].predecessor_utf8);
   const sections=read.fil.map((s,i)=>({id:s.id,heading_fil:s.heading,heading_en:read.en[i].heading,body_fil:s.body,body_en:read.en[i].body,takeaway_fil:original.sections[i].takeaway_fil,takeaway_en:original.sections[i].takeaway_en}));
   const mf=j('content/training/day1-basic-competencies/narration.json');
+  const oldNarration=j('docs/lesson-174-proposal-receipt.json').changed_existing_files['content/training/day1-basic-competencies/narration.json'].predecessor_narration.lesson;
   const current=loadReferenceModule('content/training/day1-basic-competencies/modules/07-problema','public').lessons.find(l=>l.manifest.lesson_key==='problem-action-plan');
   for(const lang of ['fil','en']){
    const selected=narrationForLesson(mf,'problem-action-plan',lang,sections);
    expect(Object.keys(selected)).toHaveLength(6);
-   for(const s of sections)expect(selected[s.id].src).toBe(mf.lessons['problem-action-plan'].sections[s.id][lang].src);
-   expect(narrationForLesson(mf,'problem-action-plan',lang,current.revision.read_sections)).toEqual({});
+   for(const s of sections)expect(selected[s.id].src).toBe(oldNarration.sections[s.id][lang].src);
+   const fresh=narrationForLesson(mf,'problem-action-plan',lang,current.revision.read_sections);
+   expect(Object.keys(fresh)).toHaveLength(6);
+   for(const s of current.revision.read_sections){expect(fresh[s.id].src).not.toBe(selected[s.id].src);expect(mf.lessons['problem-action-plan'].sections[s.id][lang].voice).toBe('gemini:gemini-3.8-flash-tts:Kore');expect(sha(bytes('public'+fresh[s.id].src))).toBe(mf.lessons['problem-action-plan'].sections[s.id][lang].sha256);}
   }
  });
  it('retains 50/180 timing, full guide outline, one observable indicator and paper practice alternatives',()=>{
