@@ -18,7 +18,9 @@
       "concept_ids": [
         "m8.requirements"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-ana"
+      ],
       "takeaway_fil": "Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain.",
       "takeaway_en": "Workplace safety starts by identifying hazards and local requirements before the task.",
       "check": null
@@ -29,10 +31,43 @@
         "m8.requirements",
         "m8.practice"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-inspect"
+      ],
       "takeaway_fil": "Ang checklist ay dapat humantong sa kontrol at follow-up, hindi sa pagbilang lamang ng hazards.",
       "takeaway_en": "A checklist should lead to controls and follow-up, not merely count hazards.",
       "check": null
+    },
+    {
+      "id": "scope-and-contact",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice"
+      ],
+      "asset_ids": [
+        "apple-scope-and-contact"
+      ],
+      "check": null,
+      "takeaway_fil": "Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.",
+      "takeaway_en": "Confirm unknowns and make the report specific before work."
+    },
+    {
+      "id": "five-hazards",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice",
+        "m8.sharps",
+        "m8.infection",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ],
+      "asset_ids": [
+        "apple-five-hazards"
+      ],
+      "check": null,
+      "takeaway_fil": "Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.",
+      "takeaway_en": "Confirm unknowns and make the report specific before work."
     },
     {
       "id": "practice",
@@ -45,7 +80,9 @@
         "m8.stress",
         "m8.accidents"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-practice"
+      ],
       "takeaway_fil": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
       "takeaway_en": "Recognizing a hazard should lead to a specific control and responsible contact.",
       "check": null
@@ -61,7 +98,9 @@
         "m8.stress",
         "m8.accidents"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-check"
+      ],
       "takeaway_fil": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
       "takeaway_en": "Recognizing a hazard should lead to a specific control and responsible contact.",
       "check": {
@@ -82,8 +121,8 @@
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ang unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.",
-        "feedback_en": "The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait."
+        "feedback_fil": "Una: may lugar, panganib at agarang aksyon ang ulat. Ikalawa: hindi inaalis ng “mag-ingat” ang basang sahig. Ikatlo: hindi dahilan ang walang nasaktan para ipagpaliban ang aksyon. Sa adaptasyon, iniulat ni Apple ang basang pasukan at panganib ng pagkadulas, hiniling na ilayo muna ang tao at ipaayos sa responsableng staff. Kailangan niyang kumpirmahin ang reporting contact at balikan kung naayos na; hindi pa natin alam na naitama ang sahig.",
+        "feedback_en": "First: the report gives location, risk and immediate action. Second: “be careful” does not remove the wet floor. Third: absence of injury is no reason to delay action. In the adaptation, Apple reports the wet entrance and slip risk, requests keeping people away and correction by responsible staff. She needs to confirm the reporting contact and follow up on correction; we do not yet know that the floor has been corrected."
       }
     }
   ],
@@ -94,13 +133,17 @@
         "ana",
         "inspect",
         "practice",
-        "check"
+        "check",
+        "scope-and-contact",
+        "five-hazards"
       ],
       "slide_ids": [
         "slide-ana",
         "slide-inspect",
         "slide-practice",
-        "slide-check"
+        "slide-check",
+        "slide-scope-and-contact",
+        "slide-five-hazards"
       ],
       "source_ids": [
         "facilitator",
@@ -112,12 +155,16 @@
       "read_ids": [
         "inspect",
         "practice",
-        "check"
+        "check",
+        "scope-and-contact",
+        "five-hazards"
       ],
       "slide_ids": [
         "slide-inspect",
         "slide-practice",
-        "slide-check"
+        "slide-check",
+        "slide-scope-and-contact",
+        "slide-five-hazards"
       ],
       "source_ids": [
         "facilitator",
@@ -128,11 +175,13 @@
       "id": "m8.sharps",
       "read_ids": [
         "practice",
-        "check"
+        "check",
+        "five-hazards"
       ],
       "slide_ids": [
         "slide-practice",
-        "slide-check"
+        "slide-check",
+        "slide-five-hazards"
       ],
       "source_ids": [
         "facilitator",
@@ -143,11 +192,13 @@
       "id": "m8.infection",
       "read_ids": [
         "practice",
-        "check"
+        "check",
+        "five-hazards"
       ],
       "slide_ids": [
         "slide-practice",
-        "slide-check"
+        "slide-check",
+        "slide-five-hazards"
       ],
       "source_ids": [
         "facilitator",
@@ -158,11 +209,13 @@
       "id": "m8.ergonomics",
       "read_ids": [
         "practice",
-        "check"
+        "check",
+        "five-hazards"
       ],
       "slide_ids": [
         "slide-practice",
-        "slide-check"
+        "slide-check",
+        "slide-five-hazards"
       ],
       "source_ids": [
         "facilitator",
@@ -173,11 +226,13 @@
       "id": "m8.stress",
       "read_ids": [
         "practice",
-        "check"
+        "check",
+        "five-hazards"
       ],
       "slide_ids": [
         "slide-practice",
-        "slide-check"
+        "slide-check",
+        "slide-five-hazards"
       ],
       "source_ids": [
         "facilitator",
@@ -188,11 +243,13 @@
       "id": "m8.accidents",
       "read_ids": [
         "practice",
-        "check"
+        "check",
+        "five-hazards"
       ],
       "slide_ids": [
         "slide-practice",
-        "slide-check"
+        "slide-check",
+        "slide-five-hazards"
       ],
       "source_ids": [
         "facilitator",
@@ -220,5 +277,72 @@
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "apple-ana",
+      "path": "/training/bhw-1-8/apple-ana-7eb585b52c44.png",
+      "content_hash": "7eb585b52c44345005a9bedd69e5d8929d12bd662de17529fee743f9548edddd",
+      "alt_fil": "Apple ay nasa ligtas na puwesto sa tabi ng basang pasukan; may saradong lalagyan at maaraw na ruta.",
+      "alt_en": "Apple observes a wet entrance from a safe position; a closed container and sunny route are visible.",
+      "caption_fil": "Kathang-isip na adaptasyon • Apple ay nasa ligtas na puwesto sa tabi ng basang pasukan; may saradong lalagyan at maaraw na ruta.",
+      "caption_en": "Fictional adaptation • Apple observes a wet entrance from a safe position; a closed container and sunny route are visible.",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.",
+      "review_status": "draft"
+    },
+    {
+      "id": "apple-inspect",
+      "path": "/training/bhw-1-8/apple-inspect-897192f83ca3.png",
+      "content_hash": "897192f83ca39bc9b3a758002cbec357d95772f6522909be6feeab7f3fea2405",
+      "alt_fil": "Sinusuri ni Apple ang basang pasukan, harang sa labasan at hugasang kulang ang sabon.",
+      "alt_en": "Apple inspects a wet entrance, blocked exit and sink missing soap.",
+      "caption_fil": "Kathang-isip na adaptasyon • Sinusuri ni Apple ang basang pasukan, harang sa labasan at hugasang kulang ang sabon.",
+      "caption_en": "Fictional adaptation • Apple inspects a wet entrance, blocked exit and sink missing soap.",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.",
+      "review_status": "draft"
+    },
+    {
+      "id": "apple-scope-and-contact",
+      "path": "/training/bhw-1-8/apple-scope-and-contact-584fe1d96b90.png",
+      "content_hash": "584fe1d96b90c5928ebd8b4a494e8255020ca467ecab06f49e34ef5cc678a01d",
+      "alt_fil": "Nagtatanong si Apple sa staff tungkol sa saklaw at reporting contact.",
+      "alt_en": "Apple asks staff about task scope and reporting contact.",
+      "caption_fil": "Kathang-isip na adaptasyon • Nagtatanong si Apple sa staff tungkol sa saklaw at reporting contact.",
+      "caption_en": "Fictional adaptation • Apple asks staff about task scope and reporting contact.",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.",
+      "review_status": "draft"
+    },
+    {
+      "id": "apple-five-hazards",
+      "path": "/training/bhw-1-8/apple-five-hazards-f3264a3b21ad.png",
+      "content_hash": "f3264a3b21ad09d7da5b56949b9bee07d3e8f77ec0b27d2b4370f2e927c84356",
+      "alt_fil": "Inaayos ni Apple ang limang situation card sa mesa.",
+      "alt_en": "Apple arranges five situation cards on a desk.",
+      "caption_fil": "Kathang-isip na adaptasyon • Inaayos ni Apple ang limang situation card sa mesa.",
+      "caption_en": "Fictional adaptation • Apple arranges five situation cards on a desk.",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.",
+      "review_status": "draft"
+    },
+    {
+      "id": "apple-practice",
+      "path": "/training/bhw-1-8/apple-practice-9f915e4d85a7.png",
+      "content_hash": "9f915e4d85a7b696348dd5003e372c8c0d139daf28f07ba51474b23bfc9fea46",
+      "alt_fil": "Nag-uulat si Apple sa paper rehearsal kasama ang partner at observer.",
+      "alt_en": "Apple rehearses a report with a partner and observer using paper cards.",
+      "caption_fil": "Kathang-isip na adaptasyon • Nag-uulat si Apple sa paper rehearsal kasama ang partner at observer.",
+      "caption_en": "Fictional adaptation • Apple rehearses a report with a partner and observer using paper cards.",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.",
+      "review_status": "draft"
+    },
+    {
+      "id": "apple-check",
+      "path": "/training/bhw-1-8/apple-check-7b81d7b13618.png",
+      "content_hash": "7b81d7b13618e5f0c5f988ed65996f6eb2f8b3a5331926e4f797fb0f09f1e21b",
+      "alt_fil": "Iniulat ni Apple ang pasukan sa staff; nananatiling basa ang sahig.",
+      "alt_en": "Apple reports the entrance hazard to staff; the floor remains wet.",
+      "caption_fil": "Kathang-isip na adaptasyon • Iniulat ni Apple ang pasukan sa staff; nananatiling basa ang sahig.",
+      "caption_en": "Fictional adaptation • Apple reports the entrance hazard to staff; the floor remains wet.",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.",
+      "review_status": "draft"
+    }
+  ]
 }

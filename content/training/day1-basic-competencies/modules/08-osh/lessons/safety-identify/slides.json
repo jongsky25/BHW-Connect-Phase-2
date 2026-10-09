@@ -5,11 +5,15 @@
       "m8.requirements"
     ],
     "layout": "scene",
-    "heading_fil": "Bago simulan ni Ana ang araw",
-    "heading_en": "Before Ana starts work",
-    "display_fil": "Si Ana, 33, ay may duty sa station at home visits. Basang sahig, halos punong sharps box at mainit na biyahe: tukuyin kung sino ang maaaring masaktan at anong kontrol ang kailangan.",
-    "display_en": "Ana, 33, has station work and home visits. Wet floor, nearly full sharps box and a hot route: identify who could be harmed and what control is needed.",
-    "asset_ids": [],
+    "heading_fil": "Bago magsimula si Apple",
+    "heading_en": "Before Apple starts work",
+    "display_fil": "Kathang-isip na kaso: basang pasukan, fill line at mainit na ruta. Tingnan mula sa ligtas na puwesto; kumpirmahin ang saklaw at contact.",
+    "display_en": "Fictional case: wet entrance, fill line and hot route. Observe from a safe position; confirm task scope and contact.",
+    "narration_fil": "Si Apple ay BHW sa kathang-isip na health station na may nakaplanong household visit. Ang bagong usapan ay adaptasyon, hindi sipi mula sa DOH. Mula sa ligtas na puwesto, napansin niya ang basang pasukan, lalagyang malapit sa fill line at mainit na ruta. Hindi niya binubuksan o hinahawakan ang laman ng sharps box. Ang “mag-iingat ako” ay hindi sapat na ulat. Bago magsimula, tinutukoy niya ang panganib, sino ang maaaring masaktan, agarang kontrol at taong aabisuhan. Hindi pa tiyak ang contact at ligtas na ruta; kailangan muna niyang kumpirmahin ang mga ito.",
+    "narration_en": "Apple is a BHW at a fictional health station with a planned household visit. The new dialogue is an adaptation, not a DOH quotation. From a safe position, she notices a wet entrance, a container near its fill line and a hot route. She does not open the sharps box or touch its contents. “I will be careful” is not a sufficient report. Before starting, she identifies the hazard, who could be harmed, an immediate control and a reporting contact. The contact and safe route are still unknown; she needs to confirm them first.",
+    "asset_ids": [
+      "apple-ana"
+    ],
     "check": null
   },
   {
@@ -18,12 +22,57 @@
       "m8.requirements",
       "m8.practice"
     ],
-    "layout": "process",
-    "heading_fil": "Suriin ang isang work area",
-    "heading_en": "Inspect a work area",
-    "display_fil": "Station check: basang sahig, harang sa exit, walang sabon. Itala ang panganib → posibleng pinsala → kontrol → reporting contact. Ilayo muna ang tao sa panganib; tiyaking naayos bago alisin ang babala.",
-    "display_en": "Station check: wet floor, blocked exit, no soap. Record hazard → potential harm → control → reporting contact. Keep people away from danger; confirm correction before removing a warning.",
-    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Suriin ang lugar at gumawa ng ulat",
+    "heading_en": "Inspect the area and make a report",
+    "display_fil": "Panganib → pinsala → kontrol → contact. Basang pasukan, harang sa labasan, walang sabon: humingi ng tiyak na aksyon at balikan.",
+    "display_en": "Hazard → harm → control → contact. Wet entrance, blocked exit, no soap: request a specific action and follow up.",
+    "narration_fil": "Sa pasukan, maaaring madulas ang BHW o bisita sa basang sahig. Ilayo muna ang tao sa basang bahagi mula sa ligtas na puwesto at humingi ng pagwawasto sa nakatalagang staff; kumpirmahin kung sino iyon. Sa nakaharang na labasan, maaaring maantala ang paglabas. Huwag mag-isa na magbuhat ng harang; ipaayos sa responsableng staff at kumpirmahin ang ligtas na daanan. Sa hugasang walang sabon, hindi kumpleto ang hand-hygiene station. Iulat ang kulang at hingin ang aprubadong alternatibo bago ang gawaing nangangailangan nito; hindi kapalit ng paghuhugas ang guwantes. Isulat ang apat: panganib, posibleng pinsala, agarang kontrol at contact. Hindi sapat ang “mag-ingat.” Balikan ang kalagayan; hindi ibig sabihin ng naipadalang ulat na naayos na ang panganib.",
+    "narration_en": "At the entrance, the wet floor could cause a BHW or visitor to slip. From a safe position, keep people away from the wet area and request correction from designated staff; confirm who that is. A blocked exit could delay escape. Do not lift the obstruction alone; ask responsible staff to address it and confirm a safe route. A sink without soap is an incomplete hand-hygiene station. Report the missing supply and request an approved alternative before a task requiring it; gloves do not replace handwashing. Record four fields: hazard, potential harm, immediate control and contact. “Be careful” is insufficient. Check the condition again; sending a report does not mean the hazard has been corrected.",
+    "asset_ids": [
+      "apple-inspect"
+    ],
+    "check": null
+  },
+  {
+    "id": "slide-scope-and-contact",
+    "concept_ids": [
+      "m8.requirements",
+      "m8.practice"
+    ],
+    "layout": "scene",
+    "heading_fil": "Linawin ang saklaw at contact",
+    "heading_en": "Clarify scope and contact",
+    "display_fil": "Kumpirmahin: saklaw, contact, paraan at alternatibo. Kung hindi tiyak, itanong. Ihinto muna ang gawaing lampas sa pagsasanay.",
+    "display_en": "Confirm scope, contact, method and alternative. Ask when unknown. Pause work beyond training.",
+    "narration_fil": "Bago tumulong, nagtatanong si Apple sa awtorisadong staff: “Aling gawain ang saklaw ng pagsasanay ko? Sino ang dapat kong abisuhan tungkol sa basang pasukan? Paano kung hindi siya makontak?” Kailangan niyang kumpirmahin ang pangalan o tungkulin, paraan ng pakikipag-ugnayan at lokal na alternatibong contact. Sa pagsasanay, isulat ang “hindi pa tiyak—kumpirmahin” kung kulang ang sagot. Huwag mag-imbento ng numero o patakaran. Kapag lampas sa pagsasanay o kulang ang mahalagang proteksyon, ihinto muna ang kaugnay na gawain at humingi ng awtorisadong pasya. Kung may aktuwal na exposure o pinsala, humingi agad ng medikal na pagsusuri at iulat ayon sa lokal na proseso; hindi dapat maantala ng papeles ang pagsusuri.",
+    "narration_en": "Before assisting, Apple asks authorized staff: “Which tasks are within my training? Who should I notify about the wet entrance? What if that person cannot be reached?” She needs to confirm the name or role, contact method and local alternative contact. In practice, write “unknown—confirm” when an answer is missing. Do not invent a number or policy. Pause the related task when it exceeds training or essential protection is missing, and seek an authorized decision. For an actual exposure or injury, seek immediate medical evaluation and report through the local process; paperwork must not delay evaluation.",
+    "asset_ids": [
+      "apple-scope-and-contact"
+    ],
+    "check": null
+  },
+  {
+    "id": "slide-five-hazards",
+    "concept_ids": [
+      "m8.requirements",
+      "m8.practice",
+      "m8.sharps",
+      "m8.infection",
+      "m8.ergonomics",
+      "m8.stress",
+      "m8.accidents"
+    ],
+    "layout": "scene",
+    "heading_fil": "Kilalanin ang limang grupo",
+    "heading_en": "Recognize five groups",
+    "display_fil": "Sharps • impeksyon • strain • stress • aksidente. Magbigay ng halimbawa sa bawat isa. Isaalang-alang din ang init sa field.",
+    "display_en": "Sharps • infection • strain • stress • accidents. Give an example for each. Also consider field heat.",
+    "narration_fil": "Limang grupo ang gagamitin sa pagsasanay. Una, sharps: lalagyang malapit sa fill line, na may panganib ng tusok; huwag hawakan ang laman, iulat sa awtorisadong staff. Ikalawa, exposure sa impeksyon: kulang ang sabon sa hugasan, kaya kailangan ng kumpletong hand-hygiene arrangement bago ang kaugnay na gawain. Ikatlo, strain sa katawan: mabigat na bag sa mahabang lakad, na maaaring magdulot ng pananakit; humingi ng tulong o baguhin ang dala ayon sa lokal na plano. Ikaapat, stress o sobrang trabaho: magkakasabay na gawain na walang pahinga, na maaaring magdulot ng pagod at pagkakamali; linawin ang prayoridad at humingi ng suporta. Ikalima, aksidente: basang sahig o harang sa labasan, na maaaring magdulot ng pagkadulas o pagkaantala sa paglabas. Ang init sa field ay dagdag na konsiderasyon: kumpirmahin ang pahinga, tubig at ligtas na ruta. Mga posibleng epekto ito, hindi diagnosis. Hindi nalulutas ng PPE lamang ang bawat panganib.",
+    "narration_en": "Use five groups in practice. First, sharps: a container near its fill line presents a puncture risk; do not touch the contents, and report to authorized staff. Second, infection exposure: missing soap means a complete hand-hygiene arrangement is needed before the related task. Third, musculoskeletal strain: a heavy bag on a long walk could cause discomfort; request help or adjust the load under the local plan. Fourth, stress or excessive workload: simultaneous tasks without breaks could cause fatigue and errors; clarify priorities and request support. Fifth, accidents: a wet floor or blocked exit could cause a slip or delay escape. Field heat is an additional consideration: confirm breaks, water and a safe route. These are possible effects, not diagnoses. PPE alone does not resolve every hazard.",
+    "asset_ids": [
+      "apple-five-hazards"
+    ],
     "check": null
   },
   {
@@ -37,12 +86,16 @@
       "m8.stress",
       "m8.accidents"
     ],
-    "layout": "process",
-    "heading_fil": "Subukan, saka ulitin",
-    "heading_en": "Try it, then repeat",
-    "display_fil": "Limang grupo: sharps, impeksyon, pananakit ng katawan, stress, aksidente. Sa isa: pangalanan ang pinsala, kontrol at contact.",
-    "display_en": "Five groups: sharps, infections, body discomfort, stress, accidents. For one, name the harm, control and contact.",
-    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Gumawa ng ulat, tumanggap ng feedback, ulitin",
+    "heading_en": "Report, receive feedback, retry",
+    "display_fil": "Limang halimbawa; isang kumpletong ulat. Attempt → tiyak na feedback → retry. Hindi naobserbahan ay hindi pasado.",
+    "display_en": "Five examples; one complete report. Attempt → specific feedback → retry. Unobserved does not mean passed.",
+    "narration_fil": "Gumuhit ng limang kahon at magbigay ng halimbawa para sa bawat hazard group mula sa station o home visit. Pumili ng isa at kumpletuhin ang panganib, posibleng pinsala, agarang kontrol at contact. Sa triad, ang BHW ang mag-uulat, ang partner ang sasagot gamit lamang ang scenario card at ang observer ang susuri sa apat na field. Kapag “mag-ingat” lang ang sagot, itanong: “Saang lugar? Ano ang pinsala? Anong tiyak na aksyon? Kanino at paano mag-uulat?” Ulitin ang ulat at idagdag kung kailan babalikan ang kalagayan. Kung hindi pa tiyak ang contact, sabihin kung paano ito kukumpirmahin. Kung mag-isa, sumulat o magsalita gamit ang parehong checklist; ito ay rehearsal, hindi obserbasyon ng trainer. Bago ang susunod na duty, gawin ang maikling hazard check at kumpirmahin ang contact.",
+    "narration_en": "Draw five boxes and give a station or home-visit example for each hazard group. Choose one and complete hazard, potential harm, immediate control and contact. In a triad, the BHW reports, the partner answers using only the scenario card, and the observer checks the four fields. If the answer is only “be careful,” ask: “Where? What harm? What specific action? To whom and how will you report?” Repeat the report and add when the condition will be checked again. If the contact is unknown, explain how to confirm it. Working alone, write or speak using the same checklist; this is rehearsal, not trainer observation. Before the next duty, perform a short hazard check and confirm the contact.",
+    "asset_ids": [
+      "apple-practice"
+    ],
     "check": null
   },
   {
@@ -59,9 +112,13 @@
     "layout": "decision",
     "heading_fil": "Piliin ang susunod na hakbang",
     "heading_en": "Choose the next step",
-    "display_fil": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
-    "display_en": "Recognizing a hazard should lead to a specific control and responsible contact.",
-    "asset_ids": [],
+    "display_fil": "Tingnan ang basang pasukan. Piliin at ipaliwanag ang ulat bago ang feedback.",
+    "display_en": "View the wet entrance. Choose and explain a report before feedback.",
+    "narration_fil": "Tingnan muna ang larawan ng basang pasukan. Piliin ang isang sagot at ipaliwanag kung bakit bago buksan ang feedback. Ihambing sa ulat mo sa pagsasanay. Ang pagpili ng sagot ay hindi pa patunay ng kakayahan; kailangan pa ng aktuwal na ulat at feedback.",
+    "narration_en": "First view the wet-entrance picture. Choose an answer and explain why before opening the feedback. Compare it with your practice report. Selecting an answer does not establish competence; an actual report and feedback are still needed.",
+    "asset_ids": [
+      "apple-check"
+    ],
     "check": {
       "prompt_fil": "May basang sahig sa pasukan. Aling ulat ang magagamit agad?",
       "prompt_en": "The entrance floor is wet. Which report supports immediate action?",
@@ -80,8 +137,8 @@
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Ang unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.",
-      "feedback_en": "The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait."
+      "feedback_fil": "Una: may lugar, panganib at agarang aksyon ang ulat. Ikalawa: hindi inaalis ng “mag-ingat” ang basang sahig. Ikatlo: hindi dahilan ang walang nasaktan para ipagpaliban ang aksyon. Sa adaptasyon, iniulat ni Apple ang basang pasukan at panganib ng pagkadulas, hiniling na ilayo muna ang tao at ipaayos sa responsableng staff. Kailangan niyang kumpirmahin ang reporting contact at balikan kung naayos na; hindi pa natin alam na naitama ang sahig.",
+      "feedback_en": "First: the report gives location, risk and immediate action. Second: “be careful” does not remove the wet floor. Third: absence of injury is no reason to delay action. In the adaptation, Apple reports the wet entrance and slip risk, requests keeping people away and correction by responsible staff. She needs to confirm the reporting contact and follow up on correction; we do not yet know that the floor has been corrected."
     }
   }
 ]

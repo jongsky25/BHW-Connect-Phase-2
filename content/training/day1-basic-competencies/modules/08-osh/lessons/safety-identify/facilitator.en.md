@@ -1,57 +1,69 @@
 ## [purpose] Purpose
 
-In a sample health-station and field-visit setting, identify five hazard groups and match one observed hazard to potential harm, immediate control and reporting contact.
+Identify five hazard groups and produce one hazard–harm–control–contact report. Apple is fictional; dialogue is an adaptation, not a DOH quotation. This lesson recognizes and reports hazards. Control selection, preparation and observed physical demonstrations belong to 1.8.2–1.8.4. A quiz click, attendance or peer feedback does not establish competence.
 
 ## [time-materials] Time and materials
 
-45 minutes of facilitated practice within the subchapter's 4 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.
+45 guided minutes: 5 opening + 8 modelled inspection + 18 rotating attempts/feedback/retry + 9 debrief + 5 transfer. Across the four OSH lessons, 45 + 60 + 60 + 75 = 240 minutes. This instructional allocation is not certification. Self-study narration duration: pending actual generated recordings; no measured reading-time claim. Optional story/replays add time.
+
+For 30 learners, prepare ten triads, bilingual scene/role cards, four-field worksheets, pencils and the reporting aid. Only paper scenes or dummy equipment without needles, fluids or chemical exposure. No live injury, painful exercise, real patient information or local contact invented for a scenario.
 
 ## [prepare] Prepare
 
-Use a paper scenario, not a hazardous work area. Prepare the local reporting contact.
+Read the source audit and clinical checklist. Ask the authorized clinical/local trainer to verify task scope, hand-hygiene alternatives, reporting/backup contact and pause/resume arrangements before any demonstration. For paper practice, leave unknown contacts explicitly unknown. Arrange accessible seats and a dry classroom. Allocate ten triads A–J with roles BHW, contact/partner and observer. Ask which language and reading support learners prefer. Preselect six triads for trainer sampling and record who remains unobserved; arrange later observation separately.
 
 ## [opening] Opening
 
-The entrance floor is wet. Which report supports immediate action?
+0–5 min. Say: “Apple notices a wet entrance. Nobody is hurt yet. What must her report include?” Give 30 seconds to think, hear two responses and write the four fields: hazard, potential harm, immediate control, contact. Ask: “What do we know, and what must we confirm?” State that not knowing a contact is honest; guessing is not. Explain paper-only rehearsal and stop any unsafe proposed action.
 
 ## [steps] Steps
 
-Read the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.
+5–13 min: model the wet-floor card. Say: “Wet entrance; BHWs and visitors could slip. From a safe dry position, keep people away and request correction by designated staff. The contact is unknown: I will ask authorized staff to confirm it. I will check again before the warning is removed.” Point to each field. Show the blocked-exit and missing-soap cards; ask what changes in harm and action. Do not act out touching sharps or moving heavy obstructions.
+
+13–31 min: three six-minute rounds, with all ten triads working simultaneously. Each round has 2 minutes for the BHW attempt (name five groups, report one), 1 minute partner response using only the card, 1 minute observer feedback, 1 minute BHW retry and 1 minute to record/swap roles. Rotate roles so all three have an attempt and retry. The trainer visits two triads per round: at most six named BHW attempts and their retries, allowing three minutes per triad; the trainer does not observe all 30. Peer records remain peer practice.
+
+31–40 min: debrief five groups and the three cards. Ask: “Which field was missing? How did you make ‘be careful’ actionable? How will you confirm the contact? What remains unsafe after reporting?” Show the wet-entrance image before asking the original check, then reveal all three rationales and corrected ending.
+
+40–45 min: each learner writes a before-duty hazard check and one question to verify with their actual supervisor. Separate fictional outputs from confirmed local procedures.
 
 ## [expected-answers] Expected answers
 
-The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.
+Five groups: sharps/needlestick risk; infection exposure; musculoskeletal strain; stress/excessive workload; work-related accidents. Examples: closed container near fill line; no soap; heavy bag/long walk; concurrent tasks without breaks; wet entrance or blocked exit. Heat is an additional field consideration, not a replacement sixth practice group. These are risks and possible effects, not diagnoses.
 
-## [misconception] Common misconception
+Wet entrance → possible slip → keep people away safely and request correction → confirm designated staff/contact and follow up. Blocked exit → delayed escape → seek responsible staff and confirm a safe route; do not lift heavy objects alone → contact unknown, verify. Missing soap → incomplete hand-hygiene station → report and request approved alternative before the related task → confirm responsible staff; gloves do not replace hand hygiene. No invented completed correction.
 
-Misses the hazard or gives only “be careful” as the response. Recognizing a hazard should lead to a specific control and responsible contact.
+## [misconception] Misconception
 
-## [practice] Practice activity
+“Be careful” alone lacks a specific action. “Nobody was hurt” does not justify waiting. A sent report is not proof of correction. PPE alone does not resolve all hazards. Symptoms cannot clear an exposure. More volunteer hours are not the default response to overload. If a learner proposes touching loose sharps, live exposure or unsafe lifting, stop the rehearsal, explain the risk, return to the paper card and have them retry a safe report. Do not demonstrate drugs, treatment timing, chemical dilutions or invented PPE sequences.
 
-Draw five boxes: needlestick injury; infection exposure; body discomfort; stress from excessive work; work-related accidents. Give a station or home-visit example for each. Choose one and write the harm, control and contact. In pairs, replace a vague “be careful” with a specific action. Alone, use the checklist. Before the next duty, perform a short hazard check.
+## [practice] Practice
+
+Give each triad one scene card. BHW: name all five groups with an example, choose one scene and report its four fields plus follow-up. Contact/partner: state only the printed fictional facts; when asked for a person/number, say “unknown—confirm with authorized staff.” Observer: mark fields present/needs prompt/not yet and quote the actual response. Give a specific prompt for the missing field, then hear the revised attempt. Do not invent local policy or mark an unobserved attempt passed.
+
+Weaker attempt: “Everyone should be careful.” Scaffold: “At ___, ___ could happen. From a safe position I will ___. I will confirm ___ with authorized staff and follow up by ___.” Then repeat without reading the scaffold if possible. Solo alternative: write or speak the five examples and one report; use the same checklist, label self-rehearsal and request later trainer observation.
 
 ## [answer-key] Answer key
 
-1. “Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”
+Preserve the original three choices and correct index 0.
 
-The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.
+1. “Wet entrance, slip risk; keep people away and arrange correction with responsible staff.” Correct: location, risk and immediate action are explicit; confirm the actual reporting route and follow up.
+2. “Everyone should be careful until closing.” Incomplete: the warning does not correct the wet floor or assign action.
+3. “Nobody was hurt, so no action is needed.” Unsafe: a current absence of injury does not remove the risk.
+
+Corrected ending: Apple reports the wet entrance and slip risk, requests keeping people away and correction by responsible staff. She must verify the reporting contact and check the condition again. The scenario does not show that the floor has been corrected. No partner agreement or successful outcome is invented.
 
 ## [observe] Observe
 
-Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example.
+Use the one objective_index 0 indicator. Record learner, role/scene, attempt/retry, exact words/product, prompting and observer type. Trainer sampling covers at most six actual attempts/retries; all other learners stay “not observed” for trainer evidence. Peer feedback and self-rehearsal are practice.
 
-Ready: Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example. Completes this without prompting.
-
-Needs practice: Names the hazard but omits contact or control; complete all four fields and repeat.
-
-Not yet: Misses the hazard or gives only “be careful” as the response.
-
-Mark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.
+Ready: names five groups and examples and independently reports hazard, harm, specific safe action, verified contact or explicit verification route and follow-up. Needs practice: names a hazard but omits a group, action/contact or follow-up; identifies the omission after a prompt and retries. Not yet: misses the hazard, gives only “be careful,” invents a correction/contact or proposes unsafe action. Record the observable revised product; do not average attendance into passing or create a certification rule.
 
 ## [support] Support
 
-Names the hazard but omits contact or control; complete all four fields and repeat. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.
+Read cards aloud; allow spoken, drawn or written responses and the learner’s preferred language with identical criteria. Use large-print cards, a scribe with consent and seated rehearsal. One field at a time: “What do you see? Who could be harmed? What can you safely do now? Whom must you confirm? How will you follow up?” Give specific feedback and a new observable retry. If time runs out, record “retry pending/not observed” and arrange observation; never mark a peer/solo exercise as a trainer pass.
 
-## [sources-review] Sources and review notes
+## [sources-review] Sources and review
 
-Draft for review. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23. The five hazard groups span both source-table pages. A local clinical trainer must review demonstrations and referral pathways. Immediate needlestick evaluation was checked against CDC on 25 September 2026. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.
+Private source evidence: DOH Facilitator Guide PDF 30 (printed 23), Reference Manual PDF 21–23 (printed 13–15), deck slides 69–78. Facilitator PDF 19 (printed 12) and TESDA original OSH unit mapping are retained in the source audit. Inventory slide/page crosswalk errors are documented there. Teaching wording is adapted, not quoted.
+
+Pending authorized clinical/local review: sharps handling limits; hand-hygiene/PPE advice and approved alternatives; immediate evaluation and reporting/backup route; safe lifting, heat/workload arrangements; pause/resume decision. Paperwork must not delay medical evaluation after real exposure; qualified providers decide assessment/treatment. No clinical signoff, owner approval or human listening is claimed. No new certification rule.
