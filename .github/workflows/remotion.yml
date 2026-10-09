@@ -10,6 +10,7 @@ name: Remotion clips
 # its new lesson.json hashes, like every other training asset.
 
 on:
+  workflow_dispatch:
   pull_request:
     paths:
       - "remotion/**"

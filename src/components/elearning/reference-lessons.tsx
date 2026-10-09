@@ -302,6 +302,8 @@ export function ReferenceLessons(props: Props) {
   const listeningMinutes = listeningTracks.length === 6 ? Math.ceil(listeningTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const recordingRevision = lesson?.lesson_key === "communication-record" && lesson.revision.assets.some(asset => asset.id === "record-sources");
   const actionPlanRevision = lesson?.lesson_key === "problem-action-plan" && lesson.revision.assets.some(asset => asset.id === "action-check");
+  const actionPlanTracks = actionPlanRevision ? Object.values(lessonNarration ?? {}) : [];
+  const actionPlanMinutes = actionPlanTracks.length === 6 ? Math.ceil(actionPlanTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const recordingTracks = recordingRevision ? Object.values(lessonNarration ?? {}) : [];
   const recordingMinutes = recordingTracks.length === 6 ? Math.ceil(recordingTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
@@ -758,10 +760,13 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {actionPlanRevision ? ui(
+              {actionPlanRevision ? (actionPlanMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 50-minutong guided practice.",
                 "Allow time for reading and practice; the 50-minute guided practice is separate.",
-              ) : recordingRevision ? (recordingMinutes === null ? ui(
+              ) : ui(
+                `Tinatayang ${actionPlanMinutes}–${actionPlanMinutes + 3} minuto: salaysay sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 50-minutong guided practice.`,
+                `Estimated ${actionPlanMinutes}–${actionPlanMinutes + 3} minutes: narration in this language and 3–6 minutes of practice. Optional story viewing is additional; the 50-minute guided practice is separate.`,
+              )) : recordingRevision ? (recordingMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 90-minutong guided practice.",
                 "Allow time for reading and practice; the 90-minute guided practice is separate.",
               ) : ui(

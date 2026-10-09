@@ -1,6 +1,12 @@
 name: Lesson 1.5.2 draft evidence and media
 on:
   workflow_dispatch:
+    inputs:
+      stage:
+        description: Lesson 174 media generation or final review package
+        type: choice
+        options: [media, review]
+        default: media
   pull_request:
     branches: [main]
     paths:
@@ -83,6 +89,11 @@ jobs:
           retention-days: 30
 
   lesson174:
-    if: github.event_name == 'workflow_dispatch' && github.ref_name == 'codex/lesson-174-carole-handoff'
+    if: github.event_name == 'workflow_dispatch' && github.ref_name == 'codex/lesson-174-carole-handoff' && inputs.stage != 'review'
     uses: ./.github/workflows/lesson174-media.yml
+    secrets: inherit
+
+  lesson174review:
+    if: github.event_name == 'workflow_dispatch' && github.ref_name == 'codex/lesson-174-carole-handoff' && inputs.stage == 'review'
+    uses: ./.github/workflows/lesson174-review.yml
     secrets: inherit

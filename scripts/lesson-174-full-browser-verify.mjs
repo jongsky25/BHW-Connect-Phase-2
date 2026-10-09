@@ -1,7 +1,7 @@
 // Actual production React components in the frozen inline review.
 // Next navigation/image/link adapters and save callbacks are explicit local fixtures.
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';
-import {createRequire} from 'node:module';import {execFileSync} from 'node:child_process';import {chromium} from '@playwright/test';
+import {execFileSync} from 'node:child_process';import {chromium} from '@playwright/test';
 const root=path.resolve(import.meta.dirname,'..'),dir=root+'/.preview/lesson174-deliverables';
 const html=fs.readFileSync(dir+'/lesson-1.7.4-carole-review.html');
 
