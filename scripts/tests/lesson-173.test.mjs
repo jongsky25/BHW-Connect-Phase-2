@@ -3,12 +3,20 @@ import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
-import {beforeProposed173} from '../lib/lesson-173-proposal-compat.mjs';
+import {beforeProposed173,reviewed173} from '../lib/lesson-173-proposal-compat.mjs';
 const root='content/training/day1-basic-competencies/',leaf=root+'modules/07-problema/lessons/problem-prioritize/';
 const j=p=>JSON.parse(fs.readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
-const baseline=j('docs/lesson-173-handoff-baseline.json'),lesson=j(leaf+'lesson.json');
+const baseline=j('docs/lesson-173-handoff-baseline.json'),lesson=JSON.parse(reviewed173(leaf+'lesson.json'));
 const loaded=loadReferenceModule(root+'modules/07-problema','public').lessons.find(l=>l.manifest.lesson_key==='problem-prioritize');
 describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
+ it('binds owner approval and promotes only six reviewed illustration statuses',()=>{
+  const a=j('docs/lesson-173-owner-approval.json');expect(a.authorization).toBe('approved. merge and deploy');expect(a.lesson_keys).toEqual(['problem-prioritize']);
+  const current=j(leaf+'lesson.json'),prior=JSON.parse(reviewed173(leaf+'lesson.json'));let count=0;
+  for(const [i,asset]of current.assets.entries()){expect(asset.review_status).toBe('approved');expect(prior.assets[i].review_status).toBe('draft');asset.review_status=prior.assets[i].review_status;count++;}
+  expect(count).toBe(6);expect(current).toEqual(prior);
+  for(const [p,h]of Object.entries(a.integrated_source_sha256))expect(sha(fs.readFileSync(p)),p).toBe(h);
+  expect(()=>reviewed173(leaf+'lesson.json',Buffer.from('changed'))).toThrow('Unpinned');
+ });
  it('preserves identity, objectives, original ordered anchors and tie choices',()=>{
   expect(lesson.manifest).toEqual(baseline.manifest);
   expect(lesson.sections.map(s=>s.id)).toEqual(['criteria','worked-scores','score-evidence','tie-and-urgent-care','practice','check']);
@@ -35,7 +43,7 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
  it('rejects an unpinned draft byte before exposing any historical view',()=>{
   const receipt=j('docs/lesson-173-proposal-receipt.json');
   for(const [p,e]of Object.entries(receipt.changed_existing_files)){
-   expect(sha(fs.readFileSync(p)),p).toBe(e.proposed_sha256);
+   expect(sha(reviewed173(p)),p).toBe(e.proposed_sha256);
    expect(sha(beforeProposed173(p)),p).toBe(e.predecessor_sha256);
    expect(()=>beforeProposed173(p,Buffer.from('unreviewed mutation'))).toThrow('Unpinned');
   }
