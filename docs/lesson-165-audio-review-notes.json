@@ -1,0 +1,1593 @@
+{
+  "status": "draft",
+  "method": "Actual 12 Read MP3 and two decoded shipped AAC recordings, plus four hash-pinned focused excerpts per recording. All original full/focused responses are retained. Model concerns below are verbatim supporting evidence and require human evaluation.",
+  "actual_full_reviews": 14,
+  "actual_focused_excerpts": 56,
+  "pending_focused_excerpts": [],
+  "speech_direction": "The synthesis direction requests one female Kore narrator for all dialogue. Full and focused model reports flag possible voice/timbre shifts in both languages; actual consistency remains pending human listening. Target-only speech aliases Gibz and Lisa/Lee-sah preserve displayed Gibs and Liza.",
+  "human_listening": "pending",
+  "owner_package_review": "pending",
+  "local_policy_SME_review": "pending",
+  "unresolved_concerns": "Review the full and focused records together. Apparent timbre changes, pronunciation, negation or ending concerns and conflicting assessments remain unresolved until actual human listening. Reusing a speech direction or a new synthesis pass does not clear earlier 1.6.1 human concerns.",
+  "full_records": [
+    {
+      "id": "read-communication-handoff-handoff-fil",
+      "language": "fil",
+      "sha256": "771c71fe88e37a222c31bb7e64ca8c0e35b0155c5463112eca8f4e4576392eee",
+      "delivery": {
+        "pacing": "Deliberate, steady, and clear pacing suited for instructional audio narration.",
+        "pitch_and_pace_variation": "Natural pedagogical modulation with well-placed pauses marking syntactic units, direct quotations, and checklist items.",
+        "expression_and_framing": "Nuances of attribution ('sinabi ni Lisa', 'sinabi ni Gibbs', 'Ayon kay Lisa'), qualification/uncertainty ('Hindi pa natiyak', 'kulang na detalye'), procedural conditions, and contrast between requested and agreed actions ('hiling at ang talagang napagkasunduan') are delivered with appropriate clarity and vocal emphasis.",
+        "timbre_consistency": "Narrator timbre remains uniform across the recording."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-handoff-en",
+      "language": "en",
+      "sha256": "e2b04a9f837684577465cbed5fc2a96c5d696deff9715f61de69007c7229fb50",
+      "delivery": {
+        "audibility": "Speech is completely audible, crisp, and clean throughout the recording.",
+        "pacing": "Deliberate, steady, and didactic pacing suited for instructional material, with clear pauses separating enumerated elements.",
+        "natural_pitch_pace_variation": "Moderate and appropriate; exhibits clear syntactical pauses around clauses, listed elements, and quotations, though overall cadence maintains a uniform instructional style.",
+        "semantic_expression": "Distinctions between requested action and agreed action, levels of uncertainty ('remains unverified', 'not yet verified'), attributions, and negative statements ('neither... nor', 'does not approve') are articulated distinctly without semantic ambiguity.",
+        "timbre_consistency": "Narrator vocal timbre remains consistent across the entire duration."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-audience-fil",
+      "language": "fil",
+      "sha256": "034bd35168dc104517f20b7af1dd97eb250d327352a43b21a37c5ed700b4a2e6",
+      "delivery": {
+        "pacing": "Consistent, steady, and clear throughout, with structured pauses between educational points.",
+        "naturalness": "Exhibits smooth, clear neural text-to-speech characteristics with standard declarative cadences; dialogue attribution and questions at 00:22-00:30 are delivered clearly with slightly elevated question inflection.",
+        "timbre": "Consistent voice timbre throughout with no audible shifts or audio artifacts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:22",
+          "word": "Gibbs",
+          "note": "Pronounced cleanly as 'Gibs' without distortion."
+        },
+        {
+          "timestamp": "00:52",
+          "word": "Liza",
+          "note": "Pronounced clearly as 'Li-sa'."
+        },
+        {
+          "timestamp": null,
+          "word": "BHW",
+          "note": "The initialism 'BHW' does not appear in this narration."
+        }
+      ],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-audience-en",
+      "language": "en",
+      "sha256": "63317d31ba187fdeb7b1d06e4358036b20f3218c186dc72e6420b6e99e59b249",
+      "delivery": {
+        "pacing": "Deliberate, steady, and instructional throughout.",
+        "natural_pitch_pace_variation": "Clear educational cadence with natural pauses between sentences and appropriate stress on instructional imperatives.",
+        "timbre_consistency": "Consistent narrator voice and tone with no abrupt changes in acoustic environment or vocal timbre.",
+        "expression_notes": "Dialogue attribution at 00:21–00:27 is rendered naturally with question intonation. Policy rules, conditions, and negative imperatives ('Do not rely...', 'Do not promise...') are articulated clearly without ambiguity."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:51",
+          "word": "Liza",
+          "observation": "Pronounced as 'Lisa' (/ˈliː.sə/) rather than the typical English pronunciation /ˈlaɪ.zə/."
+        }
+      ],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-meeting-fil",
+      "language": "fil",
+      "sha256": "e44f2dc09e50d09072b1258fa670bcf54fbb0651028d2887005e8b2c70606fe7",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, steady, and appropriate for educational/training delivery with clear syntactic pauses.",
+        "pitch_and_pace_variation": "Natural intonation curves, differentiating statements, condition clauses, and inquiry.",
+        "timbre_consistency": "Consistent acoustic environment and narrator timbre maintained from start to finish.",
+        "expressiveness": {
+          "attribution": "Natural and clear ('Maikling ulat ni Gibbs' at 00:32).",
+          "uncertainty": "Appropriate question rise and hesitation contour ('Hindi pa natitiyak...' at 00:40; 'Maaari bang pag-usapan...' at 00:44).",
+          "negation_and_conditions": "Proper emphasis on negative and conditional markers ('hindi ilantad' at 00:15, 'Walang kailangang' at 00:18, 'Kahit walang' at 00:26, 'hindi pahayag' at 00:53, 'Kung hindi sapat' at 01:12).",
+          "requested_vs_agreed_action": "Distinction is naturally enunciated ('Tanong ito para sa koordinasyon, hindi pahayag na aprobado na ang pagbabago' at 00:50–00:55)."
+        }
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-meeting-en",
+      "language": "en",
+      "sha256": "d88f59cf1d1b8a509da8262dd2377197a0eee611a665084d3b8e4f0304cdc2f9",
+      "delivery": {
+        "pacing": "Deliberate, steady instructional pace with natural pauses between sentences and bulleted concepts.",
+        "pitch_and_pace_variation": "Natural and clear educational inflection, appropriately emphasizing distinctions such as 'coordination question' versus 'statement that a change is approved'.",
+        "attribution_and_quotes": "Clear transition and quotation delivery for the character Gibs' report between 00:28 and 00:41.",
+        "timbre_consistency": "Consistent narrator vocal timbre throughout without noticeable shifts or artifacts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "word": "Gibs",
+          "timestamp": "00:28",
+          "note": "Pronounced with a hard 'G' (/ɡɪbz/), which sounds natural, though it stands out as an unusual name in isolation."
+        }
+      ],
+      "other_concerns": [
+        {
+          "note": "Names/acronyms 'Liza' and 'BHW' mentioned in the evaluation prompt do not appear in this recording."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-confirm-next-step-fil",
+      "language": "fil",
+      "sha256": "6763f0d7d126f8924fbba54cd4ab646ee46f2d389a27814e1a3225c3d6097ab6",
+      "delivery": {
+        "pacing": "Moderate, deliberate, and clear instructional pace suitable for educational material.",
+        "pitch_and_pace_variation": "Generally natural cadence and modulation typical of synthetic/instructional narration, though slightly uniform in emotional tone.",
+        "role_and_agreement_clarity": "At 00:48–00:50, Gibbs states 'Bukas ko kukumpirmahin sa inyo ang sagot' despite the midwife having just stated she would review options and speak tomorrow, creating slight confusion in requested vs. agreed action attribution."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:26",
+          "word": "Liza",
+          "note": "Pronounced with English phonology as /ˈlaɪ.zə/ rather than traditional Tagalog /ˈli.sa/, though common in modern Filipino usage."
+        },
+        {
+          "timestamp": "01:31",
+          "word": "Kumpirmahin",
+          "note": "The initial bilabial plosive /p/ is weakened or elided, sounding close to 'Kumirmahin'."
+        }
+      ],
+      "other_concerns": [
+        {
+          "timestamp": "00:48 - 00:50",
+          "issue": "Dialogue/logic inconsistency: Gibbs says 'Bukas ko kukumpirmahin sa inyo ang sagot' when acknowledging the midwife's upcoming schedule check, muddling who is confirming the response to whom."
+        },
+        {
+          "timestamp": "Entire track",
+          "issue": "The initialism 'BHW' (Barangay Health Worker) does not appear in the spoken narration."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-confirm-next-step-en",
+      "language": "en",
+      "sha256": "288623a6473ace62343280464ff8a64c6ec69ab66bdbda41f07e9e1fcbb6998a",
+      "delivery": "Clear, steady educational delivery with natural phrasing, appropriate pausing between conversational turns, and consistent pacing throughout. Dialogue attributions, conditions, and instructional emphasis are expressed naturally without timbre shifts.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-practice-fil",
+      "language": "fil",
+      "sha256": "e24d52f67141a3dd9b6bc0da98392fb07a5e71848dac43ade823037ce458f89e",
+      "delivery": {
+        "pacing": "Deliberate, steady, and instructional, with clear pauses separating sequential steps and bullet points.",
+        "pitch_and_pace_variation": "Natural cadence appropriate for educational role-play guidelines.",
+        "timbre_consistency": "Consistent acoustic quality and narrator timbre throughout the recording.",
+        "expression_elements": {
+          "attribution": "Natural expression when specifying roles (Gibbs, authorized midwife, facilitator).",
+          "uncertainty": "Well-inflected at 00:14-00:16 ('hindi pa tiyak') and 00:46-00:48 ('kung alin ang natiyak o hindi pa natiyak').",
+          "authorized_recipient_and_channel": "Clearly articulated at 00:16-00:18 ('ligtas na paraan') and 00:20-00:22 ('awtorisadong midwife').",
+          "requested_vs_agreed_action": "Naturally delineated at 00:16 ('hiling') and 00:27-00:29 ('makipagkasundo sa kayang gawin').",
+          "receipt_and_follow_up": "Proper conversational pacing at 00:25-00:27 ('kilalanin ang pagtanggap') and 00:54-00:56 ('kailan o paanong susundan').",
+          "negation_and_conditions": "Clear emphasis on negative/conditional constraints at 00:56-01:01 ('Walang diagnosis...'), 01:07-01:10 ('hindi marka...'), and 01:11-01:13 ('Kung mag-isa o walang internet...').",
+          "numerical_clarity": "Precise enumeration ('tatlo', 'tatlong round', 'Una', 'Ikalawa', 'Ikatlo') with no numerical ambiguity."
+        }
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:09 - 00:11",
+          "item": "Gibbs",
+          "observation": "Pronounced as single-syllable /ɡɪbz/. If intended as an acronym/initialism (e.g., GIB / BHW role), it is read phonetically as a single name rather than letter-by-letter."
+        },
+        {
+          "timestamp": "00:43 - 00:45",
+          "item": "Lisa",
+          "observation": "Pronounced with standard English/Filipino voicing /li.sa/ or /li.za/; fully intelligible."
+        },
+        {
+          "timestamp": "N/A",
+          "item": "BHW",
+          "observation": "The acronym 'BHW' is not uttered in this recording."
+        }
+      ],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-practice-en",
+      "language": "en",
+      "sha256": "5de4ae679dae24311cfbc3a55b3d7ee69bfcb97f63f3acb293a95b7e22024650",
+      "delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, steady, and instructional, with clear pauses between structured procedural steps.",
+        "pitch_and_pace_variation": "Natural pedagogical cadence with appropriate rising and falling intonation to delineate steps, lists, and conditions.",
+        "expression_and_pragmatics": "Elements such as attribution, uncertainty, authorized recipient/secure channel, actions, and follow-up directives are articulated clearly and naturally.",
+        "narrator_timbre_change": false
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:36 - 00:37",
+          "word": "Liza's",
+          "observation": "Pronounced with a voiceless sibilant ('Lisa's' /ˈliːsəz/) rather than the standard Philippine English /laɪzəz/."
+        }
+      ],
+      "other_concerns": [
+        {
+          "timestamp": "00:07 - 00:09",
+          "observation": "'Gibs' is pronounced /ɡɪbz/ as written in the fictional scenario script."
+        },
+        {
+          "timestamp": "N/A",
+          "observation": "The acronym 'BHW' does not appear in the spoken narration."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-check-fil",
+      "language": "fil",
+      "sha256": "a3d04790c96cac7e819a580cb637a5338ed7fcac8023113943f9e9d7a118e56f",
+      "delivery": "Pacing is deliberate and typical of educational/e-learning narration, with clear pauses separating instructions and prompt sections. Pitch and cadence sound slightly synthetic or modular, with noticeable timbre/acoustic shifts between stitched segments (notably between the opening question at 00:00–00:02, the narrative at 00:02–00:17, and subsequent instructions). Key conceptual points (authorized recipients, unapproved schedule, verification, and agreed follow-up) are delivered with clear emphasis.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:09 - 00:10",
+          "word": "Gibs",
+          "note": "Pronounced clearly as /ɡɪbz/. Note: 'Liza' and 'BHW' do not occur in this audio segment."
+        }
+      ],
+      "other_concerns": [
+        {
+          "timestamp": "00:02 - 00:03",
+          "note": "Slight timbre and equalization transition between the title question and the main narration."
+        },
+        {
+          "timestamp": "00:26 - 00:27",
+          "note": "The phrase 'impormasyon kailangan' omits the standard Tagalog linker '-g' ('impormasyong kailangan'), matching the read script."
+        }
+      ],
+      "unparsed_response": null
+    },
+    {
+      "id": "read-communication-handoff-check-en",
+      "language": "en",
+      "sha256": "a543aec4db0cf595946115a25eb88b989bd0291191c5e36c9a91418bc36bfdc4",
+      "delivery": "The narration maintains a clear, steady instructional pace appropriate for educational content. Vocal pitch, inflection, and pauses are naturally placed to distinguish scenario context from user directions. Negations ('not everyone', 'has not been approved') and procedural instructions are clearly emphasized without artificial contrast or noticeable shifts in vocal timbre.",
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "story-fil",
+      "language": "fil",
+      "sha256": "554a331659dd6e205cfbdbccba6a5e22c9c592a5a44fc6bc5d6b03719cdb1f53",
+      "delivery": {
+        "pacing": "Moderate, steady, and clear throughout, with appropriate pauses between declarative statements.",
+        "naturalness": "Good pitch variation and rhythm suited for educational or instructional guidance; maintains appropriate intonational phrasing for attribution, reported speech, and conditional statements.",
+        "timbre_consistency": "Consistent narrator voice and tone with no sudden timbre or acoustic shifts."
+      },
+      "clipped_ending": false,
+      "pronunciation_concerns": [],
+      "other_concerns": [],
+      "unparsed_response": null
+    },
+    {
+      "id": "story-en",
+      "language": "en",
+      "sha256": "883a975768bb590d271b518f2a9466088399dee72d306994bcf638af89aa95b8",
+      "delivery": "The delivery is clear, intelligible, and consistent with professional educational narration in Philippine English. Pacing is steady and deliberate with natural pauses demarcating sentences and procedural steps. Pitch and emphasis appropriately highlight key operational distinctions, such as attribution ('Lisa reports', 'Gibbs tells'), stated uncertainty ('unverified', 'Not yet verified'), authorized channel security, requested vs. agreed follow-up actions, and explicit negative constraints ('does not send', 'No appointment or childcare is promised').",
+      "clipped_ending": false,
+      "pronunciation_concerns": null,
+      "other_concerns": null,
+      "unparsed_response": null
+    }
+  ],
+  "focused_records": [
+    {
+      "id": "read-audience-fil",
+      "source_sha256": "034bd35168dc104517f20b7af1dd97eb250d327352a43b21a37c5ed700b4a2e6",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 12.26,
+          "excerpt_sha256": "efa974a8c2a14804b040036702796bb6aea8ea9a90854bc43f04ca737269d95c",
+          "observations": {
+            "role_distinctions": "Single narrator delivering instructional guidance; no dialogue or alternating roles present.",
+            "pronunciation_names": "Names 'Gibs' and 'Liza' do not appear in this excerpt.",
+            "negation": "No negative grammatical markers (e.g., hindi, huwag) are present.",
+            "ending_completeness": "The excerpt concludes naturally with 'tungkulin' at around 00:11.7 followed by room tone, with no premature cut-off.",
+            "audible_speech": "Audio is clear, intelligible, and well-paced throughout.",
+            "clipped_words": "None detected; word onsets and codas are fully articulated.",
+            "unexpected_voice_changes": "Tone, volume, and pacing remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.54,
+          "end": 12.26,
+          "excerpt_sha256": "1e4d6e1a8cad8d3a7d88ebe5629aef83595f2b334ce410ebb78a2db7bfd323b7",
+          "observations": [
+            {
+              "timestamp": "00:00 - 00:08",
+              "feature": "audible_speech",
+              "detail": "Clear and continuous educational narration delivered by a single male speaker without background interference."
+            },
+            {
+              "timestamp": "00:00 - 00:08",
+              "feature": "names_and_negation",
+              "detail": "The names 'Gibs' and 'Liza', as well as grammatical negation, do not appear in this excerpt."
+            },
+            {
+              "timestamp": "00:00 - 00:08",
+              "feature": "role_distinctions",
+              "detail": "No role transitions or character changes occur; only one narrator voice is present."
+            },
+            {
+              "timestamp": "00:07 - 00:08",
+              "feature": "ending_completeness",
+              "detail": "The final word 'tungkulin' concludes fully without truncation or premature cut-off."
+            }
+          ],
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully intelligible and acoustic boundaries are clean.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 16.46,
+          "end": 26.64,
+          "excerpt_sha256": "e0c55cf4f3ad2e5e8ffc6b267ddea7cf9667c24c75382df79fab08718298eaeb",
+          "observations": {
+            "gibs_pronunciation": "Pronounced distinctly as /ɡɪbz/ around 00:06.",
+            "liza_pronunciation": "Name 'Liza' does not appear in this excerpt.",
+            "negation": "The negation 'Hindi' at 00:00 is clearly spoken and audible.",
+            "role_distinctions": "Spoken by a single consistent male synthetic voice; dialogue shift is marked primarily by phrasing and slight pause rather than distinct character voice acting.",
+            "ending_completeness": "The utterance concludes fully and naturally at 00:09–00:10 with 'nito?' without abrupt cutoffs.",
+            "audible_speech": "Speech is completely audible and intelligible throughout.",
+            "clipped_words": "No clipped syllables or words detected.",
+            "unexpected_voice_changes": "No sudden pitch, tone, or volume artifacts observed."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality and diction are clear.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 77.12,
+          "end": 93.04816666666666,
+          "excerpt_sha256": "4f6f8e5f0690e196c7b74d87b98ac92585d7a5f829613c2c313b1884a771faf5",
+          "observations": {
+            "gibs_pronunciation": "The name 'Gibs' is not spoken in this excerpt.",
+            "liza_pronunciation": "The name 'Liza' is not spoken in this excerpt.",
+            "negation": "The prohibitive/negation term 'huwag' is clearly articulated at 00:02 - 00:03 ('huwag ipagpaliban').",
+            "role_distinctions": "There is a distinct two-speaker dynamic: Speaker 1 (female voice) speaks from 00:00 to 00:08.5, followed by Speaker 2 (male voice) from 00:09.0 to 00:15.5.",
+            "ending_completeness": "The final word 'kailangan' concludes fully with a natural acoustic fade; no abrupt clipping detected at the end.",
+            "audible_speech": "All words are clearly audible and intelligible throughout.",
+            "clipped_words": "None detected; word boundaries and final consonants/vowels are intact.",
+            "unexpected_voice_changes": "A planned transition between a female speaker and a male speaker occurs between 00:08.5 and 00:09.0; no unintended vocal pitch or timbre shifts detected within each speaker's turn."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; audio is clear, speech is well-enunciated, and speaker roles are sharply differentiated.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-check-fil",
+      "source_sha256": "a3d04790c96cac7e819a580cb637a5338ed7fcac8023113943f9e9d7a118e56f",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.82,
+          "excerpt_sha256": "3b8003b553a7e0d005916853c4f65124b4770e9343c160a6b0525f7ce777371d",
+          "observations": {
+            "gibs_pronunciation": "N/A (name does not appear in this excerpt)",
+            "liza_pronunciation": "N/A (name does not appear in this excerpt)",
+            "negation": "The negative marker 'hindi' is clearly articulated at around 00:05.8 - 00:06.1 without slurring or drop-off.",
+            "role_distinctions": "The speaker clearly distinguishes the question/dialogue ('Ano ang sapat para sa pulong?', 00:00.0 - 00:02.1) using an inquiring intonation, transitioning seamlessly into declarative narration ('Nagtanong ang chair...', 00:02.6 - 00:07.4).",
+            "ending_completeness": "The final word 'pagpunta' finishes cleanly at 00:07.4 with natural trailing room acoustics and no abrupt cut.",
+            "audible_speech": "The entire audio is clear, intelligible, and well-enunciated.",
+            "clipped_words": "None detected; word boundaries and terminal syllables are intact.",
+            "unexpected_voice_changes": "None detected; voice timbre and audio quality remain consistent."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.62,
+          "end": 7.82,
+          "excerpt_sha256": "ab9669e14b601b1ab696fd18f73bc1835c7c1b99d387fcd8aaa4292b2f01f8d7",
+          "observations": {
+            "gibs_pronunciation": "N/A (not present in the excerpt)",
+            "liza_pronunciation": "N/A (not present in the excerpt)",
+            "negation": "The negation 'hindi' in 'hindi natuloy na pagpunta' (00:03.25 - 00:04.20) is clearly articulated and placed accurately in context.",
+            "role_distinctions": "Single consistent narrative voice; no role switching present.",
+            "ending_completeness": "The sentence completes naturally at 'pagpunta' (ends ~00:04.85) without abrupt cutoff.",
+            "audible_speech": "Speech is fully audible and intelligible throughout.",
+            "clipped_words": "None detected; word boundaries are intact.",
+            "unexpected_voice_changes": "None detected; pitch, pace, and vocal timbre remain stable."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 2.62,
+          "end": 17.96,
+          "excerpt_sha256": "46c1c782342c62a245ccb88acba09d54886afe981dadbbd1e653c0465964e3a5",
+          "observations": {
+            "Gibs_pronunciation": "Pronounced clearly as 'Gibs' ([ɡɪbz]) by the second speaker at approximately 00:06.8 - 00:07.4.",
+            "Liza_pronunciation": "The name Liza does not appear in this excerpt.",
+            "negation": "Negation occurs distinctly twice: 'hindi natuloy' (00:03.2 - 00:04.0) and 'hindi lahat' (00:10.4 - 00:11.2). Both are clearly articulated.",
+            "role_distinctions": "There are two distinct speaker voices: a male voice reading the first sentence (00:00.0 - 00:04.8) and a female voice reading the second sentence (00:05.5 - 00:15.1).",
+            "ending_completeness": "The audio concludes naturally with 'kaso' followed by a complete pause; no cutoffs detected.",
+            "audible_speech": "All words are fully audible, well-enunciated, and clear throughout.",
+            "clipped_words": "None observed.",
+            "unexpected_voice_changes": "The shift from male to female voice between the two sentences (at 00:05.5) represents a structured turn/speaker change rather than an unintended voice defect."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. The speech is clean and intelligible throughout the excerpt.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 33.02,
+          "end": 50.18125,
+          "excerpt_sha256": "c7ce20dc2ecff507e73c61a072387beae8a6579336b7399dacfdf26fa9b6d65f",
+          "observations": {
+            "audible_speech": "All words are clearly enunciated with clear acoustics and standard Filipino educational/instructional pacing.",
+            "role_distinctions": "There is a clear voice change/role transition around 00:09.80 where a second female speaker takes over from the first speaker.",
+            "gibs_pronunciation": "Not applicable; the name 'Gibs' does not appear in this excerpt.",
+            "liza_pronunciation": "Not applicable; the name 'Liza' does not appear in this excerpt.",
+            "negation": "No negation markers are present in the text.",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "ending_completeness": "The audio concludes naturally after 'napagkasunduan' with a clear finish and room tone."
+          },
+          "possible_defects": [],
+          "uncertainty": null,
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-confirm-next-step-fil",
+      "source_sha256": "6763f0d7d126f8924fbba54cd4ab646ee46f2d389a27814e1a3225c3d6097ab6",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.94,
+          "excerpt_sha256": "146c6926208616b403ebeb8b3c8a26e9aa3c3e07c8c67342676cebdb54e7b707",
+          "observations": {
+            "gibs_pronunciation": "Not applicable; the name 'Gibs' does not appear in this excerpt.",
+            "liza_pronunciation": "Not applicable; the name 'Liza' does not appear in this excerpt.",
+            "negation": "Clear negation heard at 00:05.4 - 00:06.1 ('hindi').",
+            "role_distinctions": "Single female speaker throughout, delivering questions followed by an explanatory/educational statement.",
+            "ending_completeness": "The ending word 'hiling' finishes completely without being truncated or cut off.",
+            "audible_speech": "All words are clearly audible and intelligibly articulated.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "None detected; voice tone, timbre, and pace remain consistent."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.54,
+          "end": 10.94,
+          "excerpt_sha256": "c56eb9b44f59cc30a65e24deb36ec43079e1489bf6ad5446a6be9ea6b79f1718",
+          "observations": {
+            "speech_delivery": "Clear, deliberate, educational narrative tone in standard Tagalog/Filipino.",
+            "target_names_check": {
+              "Gibs": "Not present in this excerpt.",
+              "Liza": "Not present in this excerpt."
+            },
+            "pauses_and_pacing": "Natural, measured pauses separating the list items ('na nabasa', 'naunawaan', 'o napagkasunduan').",
+            "word_completion": "The final word 'hiling' is fully articulated and cleanly completed at approximately 00:07.4 without truncation.",
+            "narrator_sound_consistency": "Narrator voice profile, pitch, and acoustic environment remain uniform throughout the segment."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality is clean and speech is completely intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 3.54,
+          "end": 14.84,
+          "excerpt_sha256": "ac6cccf0920d99a18b6d76bdd2592494365a78a47167ca35fd8124db11892f38",
+          "observations": {
+            "gibs_pronunciation": "N/A - the name 'Gibs' does not appear in this excerpt.",
+            "liza_pronunciation": "N/A - the name 'Liza' does not appear in this excerpt.",
+            "negation": "Clear negation heard at 00:02.08 - 00:02.82 ('hindi patunay').",
+            "role_distinctions": "Single consistent instructional narrator persona throughout the clip.",
+            "ending_completeness": "The sentence completes naturally at 00:10.98 with 'paglilinaw' followed by natural room silence until 00:11.23; no truncation.",
+            "audible_speech": "All speech is clear, intelligible, and cleanly recorded without competing noise.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "Tone, pitch, and pacing remain steady and consistent."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 80.74,
+          "end": 99.26533333333333,
+          "excerpt_sha256": "8696e773f8142021d7e571f48f193c0a692e97db6204346543b65dac44c38806",
+          "observations": {
+            "target_names": {
+              "Gibs": "Not present in this excerpt.",
+              "Liza": "Not present in this excerpt."
+            },
+            "audible_speech": "Speech is articulate, clear, and delivered in an instructional tone in Filipino/Tagalog.",
+            "pauses": "Natural syntactic pauses occur between sentences and list items (notably around 00:01.8 - 00:02.3, 00:05.3 - 00:06.0, 00:09.6 - 00:10.5, and 00:13.5 - 00:14.3).",
+            "truncation_and_word_completion": "All words, including the terminal phrase 'mag-follow up', are fully enunciated with no audible truncation.",
+            "narrator_consistency": "Consistent adult female voice and studio acoustic environment throughout the recording."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully intelligible.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-handoff-fil",
+      "source_sha256": "771c71fe88e37a222c31bb7e64ca8c0e35b0155c5463112eca8f4e4576392eee",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.94,
+          "excerpt_sha256": "cd4487b2527e6670ed41b0261f3111aaf4261f8a7e92cbc867530e3497f0ef7a",
+          "observations": {
+            "pronunciation": {
+              "Gibs": "Pronounced clearly as [gibz]/[gibs].",
+              "Liza": "Pronounced as [LEE-sa]."
+            },
+            "speech_quality": "Clear, steady, instructional delivery in Tagalog/Filipino.",
+            "pacing_and_pauses": "Natural pauses between sentences and clauses (e.g., after 'ulat', 'pinagmulan', 'BHW', and '29').",
+            "truncation_and_boundaries": "No truncation detected; the final word 'residente' is fully articulated.",
+            "narrator_sound": "Consistent voice tone, acoustic environment, and volume throughout the audio excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear and intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.34,
+          "end": 10.94,
+          "excerpt_sha256": "e9aa80bb7266a920eb2b78dbaf6336dd6813164363997f5ced1695150f767d67",
+          "observations": {
+            "timestamps": {
+              "clause_1": "00:00.00 - 00:03.70",
+              "pause": "00:03.70 - 00:04.20",
+              "clause_2": "00:04.20 - 00:07.05"
+            },
+            "pronunciation": {
+              "29": "Read in English as 'twenty-nine'.",
+              "Gibs": "Pronounced clearly approximating [gibz].",
+              "Liza": "Pronounced naturally as [LEE-sa] / [LEE-za].",
+              "BHW": "Pronounced as individual English letter names (B-H-W)."
+            },
+            "voice_quality": "Consistent, clear text-to-speech / synthetic female narration without sudden shifts in tone, volume, or acoustic space.",
+            "speech_integrity": "All words are fully articulated; no audible truncation at the start or ending; final word 'residente' concludes completely."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 18.26,
+          "end": 26.2,
+          "excerpt_sha256": "585185b9b238a55336943eb40ba95c006a8d179de5d1e21b1bb0bfeb21b67dc4",
+          "observations": {
+            "language": "Filipino/Tagalog",
+            "speaker": "Single female narrator with clear, instructional pacing",
+            "target_names": {
+              "Gibs": "Not present in this excerpt",
+              "Liza": "Not present in this excerpt"
+            },
+            "speech_delivery": "Clear articulation throughout; standard pronunciation of loanword 'diagnosis'",
+            "pauses": [
+              {
+                "start": "00:02.6",
+                "end": "00:03.5",
+                "description": "Natural inter-sentence pause"
+              }
+            ],
+            "truncation": "None observed; the sentence and final word 'pumunta' conclude fully without cutoff"
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words are clearly enunciated with no audible masking or degradation.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 65.74,
+          "end": 85.68166666666667,
+          "excerpt_sha256": "bc2fc436eca149caebac731a4b6ade7381573b47013f5696dfec0cbeb6e687d3",
+          "observations": {
+            "target_names": "Neither 'Gibs' nor 'Liza' occurs in this audio excerpt.",
+            "narrator_voice": "A single synthesized/TTS female Filipino narrator speaks throughout the audio with consistent tone, timbre, and pacing.",
+            "pauses": "Natural pauses occur between sentences: ~00:05.7 - 00:06.6, and ~00:12.0 - 00:12.8.",
+            "speech_clarity": "Speech is clear and fully intelligible. Filipino words as well as English loan words ('appointment', 'child care', 'concern') and acronym ('DOH') are pronounced clearly.",
+            "truncation": "No truncation detected; initial word 'Ang' and final word 'napagkasunduan' are intact."
+          },
+          "possible_defects": [],
+          "uncertainty": "None. All audible words are distinct and unambiguous.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-meeting-fil",
+      "source_sha256": "e44f2dc09e50d09072b1258fa670bcf54fbb0651028d2887005e8b2c70606fe7",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.58,
+          "excerpt_sha256": "5c10ff383c10f9f46f52d7d8531ca46f6291d8cba93308204b0c6da79b831a80",
+          "observations": {
+            "names_evaluated": {
+              "Gibs": "Not present in this excerpt",
+              "Liza": "Not present in this excerpt"
+            },
+            "speech_characteristics": {
+              "tone": "Clear, steady fictional educational narration",
+              "pauses": [
+                "Brief pause (~0.8s) between 'tao.' (00:02.5) and 'Sa pagsasanay' (00:03.3)",
+                "Short syntactic pause (~0.6s) between 'nagsabing' (00:07.4) and 'hadlang' (00:08.0)"
+              ],
+              "truncation": "None observed; the starting and ending boundaries are clean, and the final word 'anak' finishes completely.",
+              "narrator_sound_changes": "Consistent throughout the excerpt."
+            }
+          },
+          "possible_defects": [],
+          "uncertainty": "Low",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.42,
+          "end": 10.58,
+          "excerpt_sha256": "b09a1af594b760a09488f4a0975466358b66c075a36f97a8736e15e958819296",
+          "observations": {
+            "target_names": {
+              "Gibs": "Not mentioned in this excerpt.",
+              "Liza": "Not mentioned in this excerpt."
+            },
+            "audible_speech": "The narration is clear, intelligible, and delivered in standard Tagalog/Filipino cadence.",
+            "pauses": "A brief natural pause occurs after 'Sa pagsasanay' (around 00:01.00 - 00:01.30).",
+            "truncation": "None observed.",
+            "complete_final_words": "The final word 'anak' is fully articulated without premature cut-off.",
+            "narrator_sound_changes": "Consistent tone, volume, acoustic environment, and pitch throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 10.88,
+          "end": 26.18,
+          "excerpt_sha256": "5d453c64d0edde3c22ca0c0b31659f79d1dcae499986376af4c05ab9457afb47",
+          "observations": {
+            "target_names": {
+              "Gibs": "Not present in this excerpt.",
+              "Liza": "Not present in this excerpt."
+            },
+            "speech_and_delivery": "Speech is clear, fully enunciated, and delivered by a female narrator. All final words are complete without truncation.",
+            "pauses": "There is a distinct pause between sentences from approximately 00:06.0 to 00:07.1.",
+            "narrator_sound": "The narrator's pitch drops slightly lower and takes on a more serious, didactic tone starting at 00:07.1 ('Walang kailangang pangalan...'), which may indicate a splice or shift in delivery style between the two sentences."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality is clean and speech is completely intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 72.4,
+          "end": 89.49554166666667,
+          "excerpt_sha256": "355e311406ac747cec8536eec409a787e1429e4031b818e388a7f019c80c3668",
+          "observations": {
+            "target_names": {
+              "Gibs": "Not spoken in this audio segment.",
+              "Liza": "Not spoken in this audio segment."
+            },
+            "audible_speech": "Speech is completely audible and intelligible throughout.",
+            "narrator_change": "There is a noticeable change in narrator voice/timbre starting around 00:09.5. The first section (00:00 - 00:09.0) features a higher-pitched female voice, while the second section (00:09.5 - 00:17.0) shifts to a lower-pitched, slightly more formal voice.",
+            "pauses": [
+              {
+                "timestamp": "00:02.1 - 00:02.6",
+                "description": "Natural pause between clauses."
+              },
+              {
+                "timestamp": "00:04.6 - 00:05.3",
+                "description": "Natural sentence break."
+              },
+              {
+                "timestamp": "00:08.9 - 00:09.8",
+                "description": "Inter-speaker/inter-sentence transition pause."
+              },
+              {
+                "timestamp": "00:13.2 - 00:13.8",
+                "description": "Natural pause between statements."
+              }
+            ],
+            "truncation_and_final_words": "All words, including the final word 'tatanggap', are fully articulated without clipping or truncation."
+          },
+          "possible_defects": [
+            {
+              "type": "narrator_inconsistency",
+              "timestamp": "00:09.5",
+              "description": "Audible shift in voice profile/speaker between the first and second instructional statements."
+            }
+          ],
+          "uncertainty": "Low; all spoken words and acoustic transitions are clear.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-practice-fil",
+      "source_sha256": "e24d52f67141a3dd9b6bc0da98392fb07a5e71848dac43ade823037ce458f89e",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.06,
+          "excerpt_sha256": "a3c6eaa40815b72b4c50e60d8fee6d8d5e0b85699d4bdefd3c78d51e6108798d",
+          "observations": {
+            "speaker_change": "There is a distinct change in narrator: the first segment (00:00–00:03) is spoken by a female voice ('Ulat, paglilinaw, kumpirmasyon'), followed by a pause (00:03–00:04), and the second segment (00:04–00:07.5) is spoken by a male voice ('Sa grupo ng tatlo, gumamit ng kathang-isip na role cards').",
+            "target_names": "The names 'Gibs' and 'Liza' do not occur in this audio excerpt.",
+            "pauses": "A noticeable pause occurs between 00:03.0 and 00:04.1 separating the list of vocabulary items from the instructional sentence.",
+            "articulation_and_truncation": "Speech is clearly articulated with no clipping or truncation at the boundaries; the final words 'role cards' are fully enunciated before the excerpt ends at ~00:07.5."
+          },
+          "possible_defects": [
+            "Inconsistent narrator voice across the segment (female speaker switching to male speaker at 00:04)."
+          ],
+          "uncertainty": "Low; all spoken words are clear and distinct.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.62,
+          "end": 8.06,
+          "excerpt_sha256": "39f5a3d3f03d5138af80ffa3efe76751c196b42bcb1791a2b61a44ec16577b94",
+          "observations": {
+            "timestamps": {
+              "start": "00:00.00",
+              "end": "00:04.28"
+            },
+            "names_assessed": {
+              "Gibs": "Not present in this excerpt",
+              "Liza": "Not present in this excerpt"
+            },
+            "audible_speech": "Clear instructional narration in Filipino/Tagalog with natural cadence.",
+            "pauses": "A natural pause occurs between 'tatlo,' and 'gumamit' around 00:01.30 to 00:01.70.",
+            "truncation": "None observed; the terminal word 'cards' is fully articulated.",
+            "narrator_sound": "Voice quality and acoustic environment remain consistent throughout the segment."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 8.36,
+          "end": 29.66,
+          "excerpt_sha256": "516d908f4a4ea07a112aa687bad2f4454a929c37928a2f298bd2820728ae377d",
+          "observations": {
+            "pronunciation_Gibs": "Pronounced clearly around 00:01–00:02 conforming to [ɡɪbz].",
+            "pronunciation_Liza": "The name 'Liza' is not spoken in this excerpt.",
+            "speech_and_pacing": "Audible, intelligible, and well-paced instructional speech with natural pauses separating bullet points and list elements.",
+            "truncation_and_continuity": "No audible truncation; the final word 'gawin' (~00:20) is fully articulated with no abrupt cutoff.",
+            "narrator_sound": "Consistent female narrator tone, recording environment, and vocal acoustic profile throughout the clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully audible and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 86.52,
+          "end": 105.169,
+          "excerpt_sha256": "49bebdb2fdd6aef81950e23e2cc368851ab772978b6e787352c7d5bb09b4792d",
+          "observations": {
+            "speaker": "Single female narrator delivering instructional/educational content in standard Tagalog/Filipino.",
+            "names_assessment": {
+              "Gibs": "Not present in this audio excerpt.",
+              "Liza": "Not present in this audio excerpt."
+            },
+            "speech_flow": "Clear, professional, and measured pacing with natural grammatical pauses.",
+            "pauses": [
+              {
+                "start": "00:01.35",
+                "end": "00:02.10",
+                "type": "Inter-sentence pause"
+              },
+              {
+                "start": "00:10.35",
+                "end": "00:11.45",
+                "type": "Inter-sentence pause"
+              },
+              {
+                "start": "00:16.05",
+                "end": "00:16.65",
+                "type": "Inter-sentence pause"
+              }
+            ],
+            "truncation_or_cutoff": "None; all initial and final word endings ('kulang', 'kakayahan', 'pagkumpirma', 'pamantayan') are fully articulated without clipping.",
+            "narrator_sound_consistency": "Consistent acoustic environment, tone, pitch, and mic proximity throughout the clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clear, unobstructed, and transcribed with high confidence.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-fil",
+      "source_sha256": "fef85fe5bc6de7c7c6152452791e63bbaaba06fffd8aa0a43cedab7b4c550ac6",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 19.26,
+          "excerpt_sha256": "86b84e785e888f8c55655333721ac2e5a14a55c4fbaec8d79f2d85b97068ab87",
+          "observations": {
+            "pronunciation": {
+              "Liza": "Pronounced clearly as [ˈli.sa] ('LEE-sa') around 00:00–00:01.",
+              "Gibs": "Pronounced with a voiced/partially voiced alveolar sibilant [ɡɪbz] / [ɡɪbs] around 00:04 and 00:10–00:11, closely matching the target 'gibz'."
+            },
+            "speech_quality_and_delivery": "Speech is articulate, clear, and delivered at a measured, educational cadence.",
+            "pauses": "Appropriate pauses occur between clauses and sentence boundaries (e.g., around 00:01, 00:03, 00:05, 00:07, 00:09, and 00:14).",
+            "truncation": "No truncation detected; all sentence-initial and sentence-final sounds are fully articulated.",
+            "complete_final_words": "The final word 'account' is pronounced completely and cleanly before the audio ends at 00:19.",
+            "narrator_sound": "Narrator tone, pitch, acoustic space, and volume remain consistent throughout the excerpt without sudden shifts."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio fidelity is high and all lexical items are clearly discernible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 10.08,
+          "excerpt_sha256": "2b12edf904357003b90681d51a842cf9ed8fafc5d9d610ee386e92778123a927",
+          "observations": {
+            "pronunciation": {
+              "Liza": "Pronounced clearly as expected ('LEE-sa' / [ˈli.sa]).",
+              "Gibs": "Pronounced clearly as expected ('gibz' / [ɡɪbz]).",
+              "loanwords": "'Midwife' and 'schedule' are articulated naturally in standard Philippine Filipino context."
+            },
+            "speech_flow_and_pauses": "Pacing is steady and synthetic/instructional; natural brief pauses occur after clauses and punctuation marks, with a slightly longer pause between 00:07.4 and 00:08.0 before the final sentence.",
+            "truncation_and_endings": "No clipped syllables or truncated endings observed; final words in each phrase are fully sounded.",
+            "narrator_sound": "Voice quality and tone remain consistent throughout the excerpt without shifts in pitch, acoustic environment, or timbre."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio clarity is high and words are unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 19.26,
+          "excerpt_sha256": "86b84e785e888f8c55655333721ac2e5a14a55c4fbaec8d79f2d85b97068ab87",
+          "observations": {
+            "pronunciation": {
+              "Liza": "Pronounced clearly as [ˈliː.sa] ('LEE-sa') at approximately 00:00.6 - 00:01.1.",
+              "Gibs": "Pronounced accurately as [ɡɪbz] ('gibz') at approximately 00:04.0 - 00:04.4 and again at 00:10.8 - 00:11.2.",
+              "loanwords": "'Midwife', 'schedule', 'form', 'public chat', and 'account' are pronounced naturally with standard Filipino-English phonology."
+            },
+            "speech_quality_and_delivery": {
+              "tone": "Clear, steady, educational narration style with neutral pacing.",
+              "pauses": "Natural inter-sentential pauses occur at ~00:03.2, ~00:05.6, ~00:07.6, ~00:09.9, and ~00:14.6.",
+              "truncation": "None observed; all initial and final word boundaries ('account', 'paraan', 'schedule', etc.) are fully enunciated.",
+              "narrator_consistency": "Narrator voice, acoustic environment, and pitch profile remain consistent throughout the segment."
+            }
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully intelligible and clean.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 40.52,
+          "end": 68.88533333333334,
+          "excerpt_sha256": "b43e887909b50821bcd720bf1da313599920c1b3eb1cad8435cf9d929f2358d1",
+          "observations": {
+            "pronunciation": {
+              "Gibs": "Pronounced clearly as [ɡɪbz] around 00:18–00:19.",
+              "Liza": "Pronounced clearly as 'LEE-sa' ([ˈli.sa]) around 00:21."
+            },
+            "speech_quality": "The narrator maintains a steady, instructional cadence throughout with standard Tagalog intonation mixed with clearly enunciated English loanwords (triads, BHW, midwife, observer, follow-up, chair, schedule, health team, appointment, childcare).",
+            "pauses": "Natural, measured pauses occur between procedural steps and sentences (e.g., after 'observer', 'follow-up', 'kulang', and 'health team').",
+            "truncation_and_endings": "All word endings are complete and fully voiced; the final word 'childcare' ends cleanly without cutoff before the track ends at ~00:28.",
+            "narrator_sound": "Acoustic environment, distance to microphone, and vocal timbre remain consistent from start to finish with no background noise or abrupt changes."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully intelligible and clean.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-audience-en",
+      "source_sha256": "63317d31ba187fdeb7b1d06e4358036b20f3218c186dc72e6420b6e99e59b249",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.26,
+          "excerpt_sha256": "b52f751f06dcd0175ecbbf160f790158864f1c36cc73077c30f56ac2ca194bd3",
+          "observations": {
+            "pronunciation_names": "Neither 'Gibs' nor 'Liza' occurs in this excerpt.",
+            "speech_quality": "Clear, steady educational narration with natural Philippine English cadence and clear articulation throughout.",
+            "pauses": "Natural sentence boundary pause observed between 00:02.10 and 00:03.35, and slight clausal pauses around 'Before sending' and 'individual report'.",
+            "truncation_and_boundaries": "No truncation detected; final word 'role' is fully articulated.",
+            "narrator_consistency": "Consistent acoustic environment, tone, volume, and vocal timbre throughout."
+          },
+          "possible_defects": "None detected.",
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.22,
+          "end": 10.26,
+          "excerpt_sha256": "ff2c7834dd0ffa009beb46b9068f38ec50a0a2d4a718bff0ad92a7bd3f463c54",
+          "observations": {
+            "target_names": {
+              "Gibs": "Not spoken in this excerpt.",
+              "Liza": "Not spoken in this excerpt."
+            },
+            "audible_speech": "Clear, steady educational delivery with Philippine English phonology (e.g., clear unaspirated/lightly aspirated stops, clean vowels).",
+            "pauses": "Brief natural pause following 'sending' (approx. 00:00.8 - 00:01.1).",
+            "truncation": "None observed; speech starts cleanly on 'Before' and finishes smoothly.",
+            "complete_final_words": "The final word 'role' is fully articulated and unabrupt.",
+            "narrator_sound_changes": "Consistent tone, volume, acoustic environment, and microphone presence throughout the clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; all words and phrasing are distinctly audible and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 15.34,
+          "end": 25.32,
+          "excerpt_sha256": "5ac9649f09b46ab8ad01dbeab1ec70eef9eac1f8bf0e608339cbfe81cc941d86",
+          "observations": {
+            "speakers": "The audio features a voice change: a female narrator speaks from 00:00 to approximately 00:05.1, followed by a brief pause, and a male narrator takes over from 00:05.8 to 00:09.9.",
+            "pronunciation_Gibs": "Pronounced clearly as [gibz] by the male speaker at 00:05.9.",
+            "pronunciation_Liza": "Not present in this excerpt.",
+            "pauses": "A distinct pause occurs between sentences from 00:05.1 to 00:05.8 corresponding to the change in speaker.",
+            "truncation": "No audible truncation; initial and final speech boundaries are clear and intact."
+          },
+          "possible_defects": [
+            "Sudden change of narrator voice (female to male) at 00:05.8.",
+            "Possible script or pronunciation anomaly at 00:04.5 where 'a private case' is spoken (audible as 'case' [keɪs], though contextually it may have been intended as 'key' or 'keys')."
+          ],
+          "uncertainty": "Low; all words and speech segments are clearly audible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 64.22,
+          "end": 83.278375,
+          "excerpt_sha256": "c7279ac8682eaae020cd29376d7a5d2a521f5ed8df5f4cc8b14e3d3188afabfa",
+          "observations": {
+            "speaker_change": "The excerpt switches from a male narrator (00:00 - 00:12) to a female narrator (00:13 - 00:19).",
+            "names_evaluated": {
+              "Gibs": "Not mentioned in this excerpt.",
+              "Liza": "Not mentioned in this excerpt."
+            },
+            "pauses_and_pacing": "Pacing is deliberate and measured, with natural pedagogical pauses between sentences.",
+            "truncation_and_completeness": "All words, including final word 'needed', are fully pronounced without truncation."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; speech is fully intelligible with clear acoustics.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-check-en",
+      "source_sha256": "a543aec4db0cf595946115a25eb88b989bd0291191c5e36c9a91418bc36bfdc4",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 6.98,
+          "excerpt_sha256": "91a33cadf8d329428dad834fb319f22cbbff6c2f5f729039f83e3dc4a08b4158",
+          "observations": {
+            "audible_speech": "Clear speech throughout. The excerpt consists of a question followed by a narrative sentence.",
+            "target_pronunciations": {
+              "Gibs": "Not present in the audio.",
+              "Liza": "Not present in the audio."
+            },
+            "pauses": [
+              {
+                "start": "00:01.35",
+                "end": "00:02.05",
+                "description": "Silent pause between the introductory question and the narrative statement."
+              }
+            ],
+            "truncation": "No truncation detected at the beginning or end of words.",
+            "complete_final_words": "All final words, including 'meeting' and 'visits' (with audible final /s/ cluster), are complete.",
+            "change_in_narrator_sound": "Noticeable shift in tone and delivery style around 00:02.0: the initial segment (00:00.00–00:01.35) is an upbeat question prompt, followed after a pause by a neutral, narrative statement (00:02.05–00:06.10)."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all words and phonemes are clearly intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.18,
+          "end": 6.98,
+          "excerpt_sha256": "4c995694172936e65c5b5a1e9939da8773e2ddaf375e6ce1cc2762455b00f607",
+          "observations": {
+            "target_pronunciations": {
+              "Gibs": "Not present in excerpt",
+              "Liza": "Not present in excerpt"
+            },
+            "audible_speech": "Clear, professional female educational narration with Philippine English accent characteristics (e.g., standard localized pronunciation of 'barangay').",
+            "pauses": "Natural, subtle phrasing pauses between syntactic units (e.g., after 'planning meeting' and 'asks about').",
+            "truncation": "None observed. The initial article 'The' begins cleanly and final word 'visits' finishes completely with an audible final sibilant.",
+            "complete_final_words": true,
+            "narrator_sound_consistency": "Consistent tone, volume, pitch, and acoustic environment throughout the clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 7.28,
+          "end": 17.9,
+          "excerpt_sha256": "5faf797e3596a7872d1367d5aa08e12d1cedf5be35326fa6d80d2f654dfc8188",
+          "observations": {
+            "target_pronunciations": {
+              "Gibs": "Pronounced clearly as expected [ɡɪbz] around 00:00.0 - 00:00.6.",
+              "Liza": "Not spoken in this excerpt."
+            },
+            "speech_flow_and_pauses": "Smooth and measured delivery. A notable natural pause occurs between sentences from approximately 00:07.1 to 00:07.7.",
+            "narration_consistency": "Consistent acoustic quality, mic distance, pacing, and tone throughout the excerpt.",
+            "word_completion": "The final word 'approved' is fully articulated with no truncation."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 24.6,
+          "end": 41.952666666666666,
+          "excerpt_sha256": "0d3a80d892b89f0183e15cc542ffaee059c974dc1e21c7f25228f439c3232b28",
+          "observations": {
+            "speaker_profile": "Female voice speaking Philippine English with a clear, instructional, educational tone.",
+            "pronunciation_targets": {
+              "Gibs": "Not spoken in this excerpt.",
+              "Liza": "Not spoken in this excerpt."
+            },
+            "speech_flow_and_pauses": "Pacing is deliberate and well-measured, with distinct natural pauses between sentences (e.g., between 00:02–00:03, 00:06–00:07, 00:10–00:11, and 00:13–00:14).",
+            "word_completion": "All words, including final consonants, are fully and clearly articulated without truncation.",
+            "narrator_sound_changes": "Narrator voice quality and acoustic environment remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; audio quality is high and speech clarity is high.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-confirm-next-step-en",
+      "source_sha256": "288623a6473ace62343280464ff8a64c6ec69ab66bdbda41f07e9e1fcbb6998a",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.34,
+          "excerpt_sha256": "2d990b49278720980ea154c7d4e8c2b7e2956990680b52b1fcc039e4080e06c5",
+          "observations": {
+            "speaker": "Single female narrator with Philippine English accent characteristics.",
+            "names_checked": {
+              "Gibs": "Not present in excerpt.",
+              "Liza": "Not present in excerpt."
+            },
+            "speech_delivery": "Clear, steady educational narration with natural pausing between questions and clauses (pause between ~00:02.3 and ~00:03.2).",
+            "truncation": "No truncation detected; final word 'to' is fully spoken.",
+            "narrator_sound_changes": "Tone remains consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.46,
+          "end": 9.34,
+          "excerpt_sha256": "8bdbe37fa95c2d1c50fc74c8f2f0b7484bf9f778fb8c802875aa0e4c35e29039",
+          "observations": {
+            "audible_speech": "Clear, clearly articulated narration with standard Philippine English educational pacing.",
+            "pronunciation_names": {
+              "Gibs": "not present in excerpt",
+              "Liza": "not present in excerpt"
+            },
+            "pauses": "Natural brief pauses occurring after 'read' (around 00:03.0) and 'understood' (around 00:04.2).",
+            "truncation": "No truncation detected at the beginning or end of the excerpt.",
+            "complete_final_words": "The final phrase 'agreed to' is fully pronounced and not cut off.",
+            "narrator_sound": "Voice tone, acoustic environment, and recording quality remain consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "none",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 3.46,
+          "end": 13.44,
+          "excerpt_sha256": "1a234cfad82debb7e0bc531c77558be65a93252dc6fb6e4f9b02263154f3340a",
+          "observations": {
+            "target_words": {
+              "Gibs": "Not present in the excerpt.",
+              "Liza": "Not present in the excerpt."
+            },
+            "speech_characteristics": "Clear, steady educational narration with neutral tone and measured cadence.",
+            "pauses": [
+              {
+                "start": "00:02.8",
+                "end": "00:03.2",
+                "type": "comma pause after 'read'"
+              },
+              {
+                "start": "00:04.2",
+                "end": "00:04.5",
+                "type": "comma pause after 'understood'"
+              },
+              {
+                "start": "00:05.4",
+                "end": "00:06.1",
+                "type": "inter-sentence pause"
+              }
+            ],
+            "truncation": "None detected; final syllable of 'clarification' is clearly articulated.",
+            "narrator_consistency": "Consistent acoustic environment, volume, and voice quality throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 69.78,
+          "end": 86.46533333333333,
+          "excerpt_sha256": "c859b709bc81006dbe94a6048eb2ff4da2e4aac623919338a1c67947938c5550",
+          "observations": {
+            "pronunciation": {
+              "Gibs": "Not present in this audio excerpt.",
+              "Liza": "Not present in this audio excerpt."
+            },
+            "narrator_change": "A voice/speaker shift occurs at approximately 00:10.7; the first narrator delivers instructions up to 00:10.2, followed by a brief pause, after which a second narrator speaks from 00:10.8 to the end.",
+            "speech_delivery": "Speech is fully intelligible, paced evenly, with clear articulation and complete final words ('reached', 'process', 'rule', 'agreement', 'up').",
+            "pauses": [
+              {
+                "start": "00:01.8",
+                "end": "00:02.4",
+                "description": "Short pause between conditional clause and main instruction"
+              },
+              {
+                "start": "00:05.7",
+                "end": "00:06.3",
+                "description": "Inter-sentence pause"
+              },
+              {
+                "start": "00:10.2",
+                "end": "00:10.8",
+                "description": "Pause marking transition between narrators/sections"
+              },
+              {
+                "start": "00:12.7",
+                "end": "00:13.3",
+                "description": "Pause before listed items"
+              }
+            ],
+            "truncation": "None observed."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all spoken words and the narrator transition are distinctly audible.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-handoff-en",
+      "source_sha256": "e2b04a9f837684577465cbed5fc2a96c5d696deff9715f61de69007c7229fb50",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.22,
+          "excerpt_sha256": "26c18e0c42eb735837e68634ffea4b237261e2236f4ac782f27938201ccdf573",
+          "observations": {
+            "gibs_pronunciation": "Pronounced clearly as [ɡɪbz] / [ɡɪps] with a voiced velar stop onset.",
+            "liza_pronunciation": "Pronounced with a Philippine English realization approximating [ˈliː.sa] / [ˈliː.zə].",
+            "audible_speech": "Speech is fully intelligible and articulate throughout the excerpt.",
+            "pauses": "A distinct pause of approximately 1.0 second occurs between 'sources.' (around 00:02.5) and 'Gibs' (around 00:03.5).",
+            "truncation": "No truncation observed at speech onset or offset.",
+            "complete_final_words": "The final word 'resident' is fully articulated with an audible final dental consonant [t].",
+            "narrator_sound_change": "The vocal timbre and synthetic narrator profile remain consistent across the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None detected; acoustic signal and text are unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.18,
+          "end": 9.22,
+          "excerpt_sha256": "2a72f0e70b65668cfe7b2bbac3cd62163f69f3d14fe41749ad1a3484b1f739d3",
+          "observations": {
+            "gibs_pronunciation": "Pronounced accurately as /ɡɪbz/ ('gibz').",
+            "liza_pronunciation": "Pronounced cleanly as /ˈliːzə/ ~ /ˈliːsə/ ('LEE-sa'/'LEE-za').",
+            "audible_speech": "Speech is clear, intelligible, and delivered in a natural Philippine English educational narration style.",
+            "pauses": "A distinct, natural pause occurs between clauses between ~00:02.85 and ~00:03.35.",
+            "truncation_and_final_words": "No truncation detected; the final word 'resident' finishes cleanly before the end of the audio.",
+            "narrator_sound": "Narrator volume, tone, microphone profile, and room acoustics remain consistent across the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 32.56,
+          "end": 39.14,
+          "excerpt_sha256": "e632388bcb0592af8725ab417059756763f3a37d1b10dd4371e33be51ff7fd18",
+          "observations": {
+            "speaker_change": "Noticeable narrator shift between sentences: the first sentence (00:00.00 - 00:02.66) is spoken by a male voice, followed by a pause, and the second sentence (00:03.48 - 00:06.12) is spoken by a female voice.",
+            "pronunciation_names": {
+              "Gibs": "Not present in the excerpt.",
+              "Liza": "Not present in the excerpt."
+            },
+            "speech_delivery": "Clear, deliberate, synthetic-sounding educational narration.",
+            "pauses": "A distinct pause/gap occurs between approximately 00:02.66 and 00:03.48 separating the two speakers.",
+            "truncation": "None observed; final words ('verified', 'scheduling') are fully enunciated."
+          },
+          "possible_defects": [
+            "Abrupt switch in narrator voice/gender between sentences without an in-text dialogue tag."
+          ],
+          "uncertainty": "Low; all words and speaker changes are clearly audible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 58.82,
+          "end": 75.938,
+          "excerpt_sha256": "457257bed54ef756d97f9b95229a7663c65213ce9a55c3c2b8de059348515102",
+          "observations": [
+            "The excerpt features alternating narrators: a female speaker from 00:00.00 to 00:04.60, a male speaker from 00:05.10 to 00:09.90, and the female speaker returning from 00:10.70 to 00:16.80.",
+            "Neither target name ('Gibs' or 'Liza') is spoken in this audio excerpt.",
+            "Speech is cleanly delivered with standard educational pacing, natural inter-phrase pauses, and fully articulated final words without truncation."
+          ],
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-meeting-en",
+      "source_sha256": "d88f59cf1d1b8a509da8262dd2377197a0eee611a665084d3b8e4f0304cdc2f9",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.14,
+          "excerpt_sha256": "36bf2a26d5dbd4220dc5f9cd40306a2fcc6434a5608cbd1475ae25befb1ecf18",
+          "observations": {
+            "pronunciation": {
+              "Gibs": "Not spoken in this audio excerpt.",
+              "Liza": "Not spoken in this audio excerpt."
+            },
+            "audible_speech": "Speech is clear and fully intelligible throughout.",
+            "narrator_change": "A noticeable narrator shift occurs around 00:03.5 to 00:04.1, transitioning from a female speaker to a male speaker.",
+            "pauses": [
+              {
+                "start": "00:03.45",
+                "end": "00:04.12",
+                "description": "Noticeable pause marking the shift between speakers."
+              }
+            ],
+            "truncation_and_final_words": "All words, including the final word 'barriers', are pronounced completely without truncation or abrupt cutoffs."
+          },
+          "possible_defects": [
+            "Abrupt change in narrator voice and acoustic environment between the female voice (00:00–00:03.5) and male voice (00:04.1–00:09.6)."
+          ],
+          "uncertainty": "Low; all words and vocal changes are distinct and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 4.02,
+          "end": 10.14,
+          "excerpt_sha256": "225b4d4698c6da5c674a5e9f7e8fa4ce8ae75adacc687c8e55a09e2c8d279fd4",
+          "observations": {
+            "target_pronunciations": {
+              "Gibs": "Not present in this audio excerpt.",
+              "Liza": "Not present in this audio excerpt."
+            },
+            "audible_speech": "The narration is clear, intelligible, and delivered in a standard formal educational pacing.",
+            "pauses": "A brief natural pause occurs between 'exercise,' (around 00:01.8) and 'three' (around 00:02.1).",
+            "truncation": "No truncation detected at the beginning or end of the excerpt.",
+            "complete_final_words": "The final word 'barriers' concludes cleanly without cut-off.",
+            "narrator_sound_changes": "Acoustic environment, mic quality, and vocal tone remain consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is fully clear and unambiguous.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 10.44,
+          "end": 23.02,
+          "excerpt_sha256": "b4284873105bcb801d2e296d8b28d1de60bd5fb954f5cabf00fee13d2558ce61",
+          "observations": {
+            "target_names": "Neither 'Gibs' nor 'Liza' occurs in this audio excerpt.",
+            "speech_quality": "Clear, fluent educational narration with natural Philippine English phrasing.",
+            "pauses": "Natural inter-sentential pause between 00:05.3 and 00:06.1, and slight listing pauses between items in the list ('Names', 'form photographs', 'exact addresses').",
+            "truncation": "None observed; the final word 'unnecessary' finishes completely at 00:12.7.",
+            "narrator_sound": "Voice tone, acoustic environment, and pitch remain consistent throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "Low; all words and phonemes are distinct.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 62.04,
+          "end": 79.595125,
+          "excerpt_sha256": "88267054ee6f59c51a0967e5bdc0e0c6ca3a8c8ed5e81d4fd1a9bf6adcce6ae2",
+          "observations": {
+            "target_names": {
+              "Gibs": "Not spoken in the audio.",
+              "Liza": "Not spoken in the audio."
+            },
+            "audible_speech": "Speech is completely audible, clear, and delivered at a steady educational pace throughout.",
+            "pauses": [
+              {
+                "start": "00:05.45",
+                "end": "00:05.80",
+                "description": "Short pause between sentences."
+              },
+              {
+                "start": "00:09.30",
+                "end": "00:09.95",
+                "description": "Noticeable pause between instructional segments."
+              },
+              {
+                "start": "00:13.80",
+                "end": "00:14.30",
+                "description": "Short pause between sentences."
+              }
+            ],
+            "truncation": "No truncation detected; word onsets and codas are intact.",
+            "final_words": "The final word 'recipient' and all intermediate sentence-final words ('group', 'method', 'question') are fully enunciated.",
+            "narrator_sound": "Consistent female narrator voice, timbre, acoustic environment, and recording quality throughout the excerpt with no audible shifts."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; all spoken words and boundaries are clearly perceptible.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-practice-en",
+      "source_sha256": "5de4ae679dae24311cfbc3a55b3d7ee69bfcb97f63f3acb293a95b7e22024650",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 6.58,
+          "excerpt_sha256": "e99d72c3bae68e2cefe964e92d5ad40193d710291971d8e0fee08dc10a5f60a5",
+          "observations": {
+            "speech_content": "The speaker delivers a list of three instructional commands ('Report, clarify, confirm') followed by a declarative sentence instruction ('In a triad, use fictional role cards').",
+            "target_names": {
+              "Gibs": "Not present in this excerpt.",
+              "Liza": "Not present in this excerpt."
+            },
+            "pronunciation_and_accent": "Spoken in clear Philippine English with standard syllable timing and rhoticity.",
+            "pauses": "Deliberate pauses between list items (~0.2 to 0.4 seconds) and a distinct pause of approximately 0.7 seconds between 'confirm' and 'In a triad'.",
+            "truncation_and_boundaries": "The final word 'cards' concludes naturally just before the clip ends without abrupt cut-off or clipping.",
+            "narrator_sound": "Single consistent female voice; transitions smoothly from listing intonation to instructional delivery without acoustic shifts."
+          },
+          "possible_defects": [],
+          "uncertainty": "None; speech is clean, clear, and fully intelligible.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.38,
+          "end": 6.58,
+          "excerpt_sha256": "99980b1e2fe28703da7b41348c9cde1f51f0c96905b75cecd105ab7ffaf9a5b1",
+          "observations": {
+            "speech_flow": "The speaker delivers the sentence in a calm, clear instructional tone with a natural pause between the introductory phrase 'In a triad' (00:00.00 - 00:00.88) and the predicate 'use fictional role cards' (00:01.25 - 00:03.20).",
+            "target_pronunciations": {
+              "Gibs": "Not present in this audio excerpt.",
+              "Liza": "Not present in this audio excerpt."
+            },
+            "pauses": "A brief natural pause occurs between approximately 00:00.88 and 00:01.25.",
+            "truncation_and_final_words": "The final word 'cards' is fully articulated with an audible final sibilant [z/s] sound before the audio ends; no truncation detected.",
+            "narrator_sound_changes": "Tone, volume, and acoustic environment remain consistent throughout the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 57.92,
+          "end": 67.22,
+          "excerpt_sha256": "98f1edfce4b2ec80ff4fe591efeb0a094eb3bfe6ddc8d3a50acf0991a311a9f7",
+          "observations": {
+            "target_words": {
+              "Gibs": "Not spoken in this excerpt.",
+              "Liza": "Not spoken in this excerpt."
+            },
+            "audible_speech": "Clear, deliberate educational narration.",
+            "pauses": "There is a clean grammatical pause of approximately 0.5 seconds between the two sentences (around 00:03.4 to 00:03.9).",
+            "truncation": "None observed; word onsets and codas are clearly articulated.",
+            "complete_final_words": true,
+            "narrator_sound_change": "Consistent tone, mic quality, and acoustic environment throughout the recording."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 76.96,
+          "end": 91.79429166666667,
+          "excerpt_sha256": "a331817292b8a5382e3382d657ddacad3c89672d8c126290c4bf4635eafe18d9",
+          "observations": {
+            "speaker_change": "There is a noticeable change in voice/speaker between 00:08.00 and 00:12.60 ('Practice reporting, answering clarification, and confirming.') compared to the voice heard in 00:00.00–00:07.40 and 00:12.70–00:14.30.",
+            "target_names": "Neither 'Gibs' nor 'Liza' was spoken in this excerpt.",
+            "pauses": "Distinct pauses occur between sentences: approximately 00:01.30–00:01.80, 00:07.40–00:08.30, and 00:12.40–00:12.80.",
+            "truncation": "No words are truncated; speech ends cleanly on 'part'."
+          },
+          "possible_defects": [
+            "Inconsistent narrator/TTS voice profile between 00:08.00 and 00:12.60."
+          ],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-en",
+      "source_sha256": "f51d6d44777363401eddab77c6105ed6452679c6f3bc944abede2d2f6a78909b",
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 19.02,
+          "excerpt_sha256": "b71ae464f286ee787a279236ad71ffe9233d4bafe3133043e31545abf8862919",
+          "observations": {
+            "pronunciation": {
+              "Liza": "Pronounced clearly as [LEE-sa] / [LEE-za] at 00:00.",
+              "Gibs": "Pronounced as intended [gibz] at 00:02 and 00:10."
+            },
+            "speech_and_pacing": "The delivery is articulate, clear, and evenly paced throughout the entire recording.",
+            "pauses": "There is a standard sentence boundary pause between 00:09 and 00:10.",
+            "truncation_and_boundaries": "No truncation detected; initial and final words ('Liza', 'account') are fully articulated without clipping.",
+            "narrator_consistency": "Consistent acoustic profile and tone from a single speaker across the excerpt."
+          },
+          "possible_defects": [],
+          "uncertainty": "none",
+          "unparsed_response": null
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 10,
+          "excerpt_sha256": "a99b7056f1e68653c5d4d893701b9aa8038fa6996c72728c14175fde72d35001",
+          "observations": {
+            "pronunciation": {
+              "Liza": "Pronounced distinctly as [ˈliː.sə] ('LEE-sa') in accordance with the target.",
+              "Gibs": "Pronounced clearly as [ɡɪbz] ('gibz') with a final voiced alveolar fricative."
+            },
+            "audible_speech": "Speech is articulate, clear, and delivered at a measured educational cadence.",
+            "pauses": "Appropriate syntactic micro-pauses occur between clauses (e.g., after 'barrier' at ~00:02.7 and 'unverified' at ~00:07.1).",
+            "truncation_and_word_completion": "All word beginnings and endings are fully articulated; 'requested' concludes cleanly without cut-off.",
+            "narrator_sound": "Voice profile remains stable, consistent in pitch, timbre, and acoustic environment throughout."
+          },
+          "possible_defects": [],
+          "uncertainty": "None",
+          "unparsed_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 10.3,
+          "end": 27.48,
+          "excerpt_sha256": "fbcff737cb3169d5668ec49dcaaf071323f554ada5da1c8408330ae5593f257f",
+          "observations": {
+            "pronunciation": {
+              "Gibs": "Pronounced clearly as [ɡɪbz] around 00:00.",
+              "Liza": "Not mentioned in this audio excerpt."
+            },
+            "audible_speech": "The narration is clear, intelligible, and consistent in volume throughout.",
+            "pauses": "Natural pauses occur between sentences (e.g., between 00:04.3 and 00:04.9, and between 00:08.5 and 00:09.3).",
+            "truncation": "No words are truncated; beginnings and endings of all words are intact.",
+            "complete_final_words": "The final word 'separate' is fully enunciated with a clear final consonant stop.",
+            "narrator_sound": "The narrator's tone, pitch, acoustic profile, and pacing remain consistent across the entire clip."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 36.96,
+          "end": 61.22666666666667,
+          "excerpt_sha256": "1b81b469f9cd51164053eaa70acc93a1ea2f0d6e1966404afe3a5f2f9fd1a2f6",
+          "observations": {
+            "pronunciation": {
+              "Gibs": "Pronounced clearly as [ɡɪbz] around 00:15–00:16.",
+              "Liza": "Pronounced clearly matching the requested [ˈliːsə] (LEE-sa) around 00:17–00:18."
+            },
+            "audible_speech": "Speech is clear, fully intelligible, and delivered at a steady, instructional cadence throughout.",
+            "pauses": "Natural syntactic pauses occur between phrases and sentences (e.g., around 00:04, 00:08, 00:10, 00:15, and 00:20).",
+            "truncation": "None detected; word onsets and codas are complete.",
+            "final_words": "The final word 'promised' at 00:22–00:23 is fully enunciated with an audible final cluster.",
+            "narrator_sound": "Consistent, clean studio quality narration with no acoustic shift or background interference."
+          },
+          "possible_defects": [],
+          "uncertainty": "None.",
+          "unparsed_response": null
+        }
+      ]
+    }
+  ]
+}
