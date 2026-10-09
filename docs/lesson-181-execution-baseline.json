@@ -6229,7 +6229,20 @@
     "src/lib/surveys/tally.ts": "53364ccea496e4f07dd5efea835e5aad22e9868be841f6de488f5606cbce2138",
     "src/lib/surveys/types.ts": "7ce4626de6e8688b7e541a3985a6e0b5fa30cd63c058a0eef944d45f166d6a84",
     "src/styles/tokens-contrast.test.ts": "b1d02118b884b1e2baa048902e0430106bf3a4264b2941725100d8b91a2b7184",
-    "src/styles/tokens.css": "eb025adf8561e817d1e99a778020b3d99c1054f51fcc8605290b8ae9a0369159"
+    "src/styles/tokens.css": "eb025adf8561e817d1e99a778020b3d99c1054f51fcc8605290b8ae9a0369159",
+    ".github/workflows/ci.yml": "eb47496b47c8270d1cccdbf28a36f2f24ffb9fe9e284fb7b9d3a9c9f9bca6fa2",
+    ".github/workflows/remotion.yml": "153f90c001cba9fa1bfb86aeabf20ecc31c8a1bf08a05bf0c4e8862efec19af5",
+    "scripts/lib/reference-narration.mjs": "14f8df35198b76b74d610cf9d506a611b0476bfaff211a71e7f384e8b0f88a51",
+    "scripts/lib/tts-providers/azure.mjs": "89f7133c741e70c526093df0fa88b403af023f3f423220e40f96cea858217619",
+    "scripts/lib/tts-providers/edge-read-aloud.mjs": "6ab984fa22f5afa97986d4a843decba51af9f39045af937d86c4f5159dded90a",
+    "scripts/lib/tts-providers/edge-tts.mjs": "e45696c2de4b5606f5fc0eb416eac7880bc7be8291060864ac58ff8ff86665b2",
+    "scripts/lib/tts-providers/edge-tts.test.mjs": "e4f01f2ddf614864a67d814592f055695f627bb5527bd0a315404bab082539f9",
+    "scripts/lib/tts-providers/gemini.mjs": "f841e0934b13b29631e841a3abbfd1aebe63be591f5c23b3f6981f3ebc3687ee",
+    "scripts/lib/tts-providers/gemini.test.mjs": "5dafe4d57b19779fa40fcdab66d45e37b72ab372476e4fa33f23a639423ecde0",
+    "scripts/lib/tts-providers/ssml.mjs": "4fcbfa756cedc2731a53ea20f46226c6b3af9c562f26b4d9178f03b55301c1b2",
+    "scripts/lib/tts-providers/ssml.test.mjs": "fd5a1b93493f6ac3c9b64f2fd2851c545874ae9a393a5f2ae04ec4aa158e99de",
+    "scripts/remotion-render.mjs": "e8a7b8fef22957852314b5f1324238664079b4f392e310df3faa574cb9b5f47e",
+    "scripts/training-narrate.mjs": "2604cb7c5d8a416cbbb2ab8d80bf78c6ec96f02895c26921011f3822baecb982"
   },
   "narration": {
     "format": "mp3",
@@ -137432,5 +137445,6 @@
       ]
     }
   },
-  "production_snapshot": "pending existing authorized workflow"
+  "production_snapshot": "pending existing authorized workflow",
+  "additional_capture": "Provider/planner/render/workflow sources recovered from the already verified pre-authoring Git commit; no production state inferred."
 }

@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "source_commit": "b1e4a6048f51d0b68e3d06419986e7df0ec8648c",
+  "protected_files": 6229,
+  "stable_manifest": true,
+  "original_quiz_and_anchor_semantics_preserved": true,
+  "sibling_narration_and_history_preserved": true,
+  "historical_target_selection_retained": true,
+  "changed_existing": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/competency.json": {
+      "predecessor_sha256": "816f911e781bfacb9382c0fe8c74a5623931ec82a146446a5c77daf95b60415e",
+      "successor_sha256": "9f1699fe351d143dbddaa0ded66a148718f86952ba7c93b81c34d64808b309cc"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.en.md": {
+      "predecessor_sha256": "fbb018c7c22c93252dc7fd38adf341c8b2d3176676ad939ac9880755c3048d3b",
+      "successor_sha256": "c1cf39567fb3f27cac90c70cb28882fa88716124c4dab4b37d3ab7b08e57e1cc"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.fil.md": {
+      "predecessor_sha256": "120daea8442d5e46343e73e8710f156e402ee921cab138bb58138df8c9f348cd",
+      "successor_sha256": "09f0404c70a75099bebf23b81815927b281132ce50dff0ce9e50f8ee92f16964"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json": {
+      "predecessor_sha256": "da547084f728cbf926a335aa45a89e0b4d919abfab7f1b929abb57a57d7a9f69",
+      "successor_sha256": "fa6e27265a45a21a3c0a13d58b96ae608c32b95278887ebd673235e56b969ff0"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.en.md": {
+      "predecessor_sha256": "bb15c2fb0a8fa6c79a95078aaed555399d8188bc95edebb87b878af949e3f871",
+      "successor_sha256": "a83c856a54d6430162aeeb487f275380c1a6e9515d691b6cc6542e20b690805b"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.fil.md": {
+      "predecessor_sha256": "0d48728ca253308c04466b5a998d09fcc78d0b5fd3e8667e1793bd7ad8dcdffd",
+      "successor_sha256": "0426a9252f36d51a0e71a57d125fc0f56e8fd2b99488642e08b08fbcd7b8165b"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/slides.json": {
+      "predecessor_sha256": "eb84aadacd14496d30767d0a3c5b3d5ba9e0c10aad1d13c15edc26c4ae2cada5",
+      "successor_sha256": "bddb9a242c8a79f9e9f33814a2873e5766654dde26570f485ceb76126bf8f167"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/module.json": {
+      "predecessor_sha256": "708671d7fdb33f27dd5dc34ab1e6c2310160d46ec47e7349f3015328019817b4",
+      "successor_sha256": "8622d3162fadf3c0587577a6825ee26df9180f3957b356398485805f009f4755"
+    },
+    "content/training/day1-basic-competencies/narration.json": {
+      "predecessor_sha256": "48e8a49c85578accd15f1bcb771565add70d9861d05ab881a7c76dc1c14899e5",
+      "successor_sha256": "6dba25a12f238756c5e64c84748f37bdfb2eedc0b95e8321c5c7fe9383f1df9a"
+    },
+    "remotion/src/Root.tsx": {
+      "predecessor_sha256": "e80a544e762c1298f30cf6fa57ac0cc94c9196cccaa09f83c6994529c5a68c69",
+      "successor_sha256": "62985e1b0197a391b4e506ad441fbe430d1ffa34899116a5efec5642597a3395"
+    },
+    ".github/workflows/ci.yml": {
+      "predecessor_sha256": "eb47496b47c8270d1cccdbf28a36f2f24ffb9fe9e284fb7b9d3a9c9f9bca6fa2",
+      "successor_sha256": "001e7890edc00dbd71fd456ce35e038df43f53789e2a4c0fce8a32b242071ba6"
+    },
+    ".github/workflows/remotion.yml": {
+      "predecessor_sha256": "153f90c001cba9fa1bfb86aeabf20ecc31c8a1bf08a05bf0c4e8862efec19af5",
+      "successor_sha256": "4fbdc184ba0e1dffdad10860b0ba9c579fa7038f299545e121ca4c78a9a8ae1e"
+    },
+    "scripts/lib/reference-narration.mjs": {
+      "predecessor_sha256": "14f8df35198b76b74d610cf9d506a611b0476bfaff211a71e7f384e8b0f88a51",
+      "successor_sha256": "2ae95cbba1e74e3befd7bb71ffa669fa7fc34905cbb1c407f4571581d9470534"
+    }
+  },
+  "clinical_review": "pending",
+  "owner_approval": false
+}

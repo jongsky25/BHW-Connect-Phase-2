@@ -343,6 +343,46 @@
       "caption_en": "Fictional adaptation • Apple reports the entrance hazard to staff; the floor remains wet.",
       "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.",
       "review_status": "draft"
+    },
+    {
+      "id": "safety-identify-story",
+      "alt_fil": "Anim na narrated beat: kinikilala ni Apple ang panganib, nililinaw ang contact at gumagawa ng tiyak na ulat na may follow-up.",
+      "alt_en": "Six narrated beats: Apple identifies hazards, clarifies the contact and makes an actionable report with follow-up.",
+      "caption_fil": "Tiyak na ulat; kumpirmahin ang contact at balikan ang panganib.",
+      "caption_en": "An actionable report; confirm the contact and follow up.",
+      "provenance": "Lesson 1.8.1 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-8/safety-identify-gemini-fil-56684efceb43.mp4",
+          "content_hash": "56684efceb43bf5e44769a35f2c8fde446576644fbaa28e679209d21b2af9255",
+          "duration_s": 62,
+          "captions": {
+            "path": "/training/bhw-1-8/safety-identify-gemini-fil-6e9f2e7efeaa.vtt",
+            "content_hash": "6e9f2e7efeaa48eb3f6a25078b210dd448cf5f75c4b43b3f763287e38cb38c37"
+          },
+          "poster": {
+            "path": "/training/bhw-1-8/safety-identify-gemini-fil-3e7a0b516a9e-poster.jpg",
+            "content_hash": "3e7a0b516a9e040f9356f818e2c6df42df4a7eab0c259474c5fd7c180d1e6cbe"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-8/safety-identify-gemini-en-a84990ae493c.mp4",
+          "content_hash": "a84990ae493cf957f105d55bf75f407d343e8b092d3bcb438ae2cf17e4a72349",
+          "duration_s": 53,
+          "captions": {
+            "path": "/training/bhw-1-8/safety-identify-gemini-en-0ec4cdf4eb80.vtt",
+            "content_hash": "0ec4cdf4eb80d73e3a8c25186be0554c019d52c4facdfa8ef1154143b1e6fe10"
+          },
+          "poster": {
+            "path": "/training/bhw-1-8/safety-identify-gemini-en-1b972f8a6e9c-poster.jpg",
+            "content_hash": "1b972f8a6e9c1e4c511ae630d7cc4abdd41ba27a6ec5e2c088709ad607887941"
+          }
+        }
+      },
+      "path": "/training/bhw-1-8/safety-identify-gemini-fil-3e7a0b516a9e-poster.jpg",
+      "content_hash": "3e7a0b516a9e040f9356f818e2c6df42df4a7eab0c259474c5fd7c180d1e6cbe"
     }
-  ]
+  ],
+  "featured_asset_id": "safety-identify-story"
 }

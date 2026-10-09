@@ -1,3 +1,4 @@
+import {beforeLesson181} from '../lib/lesson-181-integration.mjs';
 // @vitest-environment node
 import {describe, it, expect} from 'vitest';
 import fs from 'node:fs';
@@ -77,7 +78,7 @@ describe('Carole lesson 1.7.2 scoped draft',()=>{
   const old=JSON.parse(beforeLesson172(path)),actual=json(path);
   for(const [key,selection]of Object.entries(old.lessons))if(key!=='problem-causes')expect(actual.lessons[key],key).toEqual(selection);
   for(const [key,history]of Object.entries(old.history??{}))if(key!=='problem-causes')expect(actual.history[key],key).toEqual(history);
-  const registryPath='remotion/src/Root.tsx',source=fs.readFileSync(registryPath,'utf8');
+  const registryPath='remotion/src/Root.tsx',source=beforeLesson181(registryPath).toString();
   expect(source).toContain('ProblemCausesStoryFil');
   {
    const restored=source.replace(/^import \{ProblemCausesStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`problem-causes-[\s\S]+?      \)\)\}\n/,'');

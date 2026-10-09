@@ -4,13 +4,13 @@ Identify five hazard groups and produce one hazard–harm–control–contact re
 
 ## [time-materials] Time and materials
 
-45 guided minutes: 5 opening + 8 modelled inspection + 18 rotating attempts/feedback/retry + 9 debrief + 5 transfer. Across the four OSH lessons, 45 + 60 + 60 + 75 = 240 minutes. This instructional allocation is not certification. Self-study narration duration: pending actual generated recordings; no measured reading-time claim. Optional story/replays add time.
+45 guided minutes: 5 opening + 8 modelled inspection + 18 rotating attempts/feedback/retry + 9 debrief + 5 transfer. Across the four OSH lessons, 45 + 60 + 60 + 75 = 240 minutes. This instructional allocation is not certification. Authored independent estimate: 10–13 minutes, using the longer language track. Actual six-screen narration: English 337.87 seconds; Filipino 375.43 seconds. Allow 3–6 minutes for the check, rehearsal and reflection. Optional story/replays add time.
 
 For 30 learners, prepare ten triads, bilingual scene/role cards, four-field worksheets, pencils and the reporting aid. Only paper scenes or dummy equipment without needles, fluids or chemical exposure. No live injury, painful exercise, real patient information or local contact invented for a scenario.
 
 ## [prepare] Prepare
 
-Read the source audit and clinical checklist. Ask the authorized clinical/local trainer to verify task scope, hand-hygiene alternatives, reporting/backup contact and pause/resume arrangements before any demonstration. For paper practice, leave unknown contacts explicitly unknown. Arrange accessible seats and a dry classroom. Allocate ten triads A–J with roles BHW, contact/partner and observer. Ask which language and reading support learners prefer. Preselect six triads for trainer sampling and record who remains unobserved; arrange later observation separately.
+Read the source audit and clinical checklist. Ask the authorized clinical/local trainer to verify task scope, hand-hygiene alternatives, reporting/backup contact and pause/resume arrangements before any demonstration. For paper practice, leave unknown contacts explicitly unknown. Arrange accessible seats and a dry classroom. Allocate ten triads A–J with roles BHW, contact/partner and observer. Ask which language and reading support learners prefer. Preselect three triads for trainer sampling and record who remains unobserved; arrange later observation separately.
 
 ## [opening] Opening
 
@@ -20,7 +20,7 @@ Read the source audit and clinical checklist. Ask the authorized clinical/local 
 
 5–13 min: model the wet-floor card. Say: “Wet entrance; BHWs and visitors could slip. From a safe dry position, keep people away and request correction by designated staff. The contact is unknown: I will ask authorized staff to confirm it. I will check again before the warning is removed.” Point to each field. Show the blocked-exit and missing-soap cards; ask what changes in harm and action. Do not act out touching sharps or moving heavy obstructions.
 
-13–31 min: three six-minute rounds, with all ten triads working simultaneously. Each round has 2 minutes for the BHW attempt (name five groups, report one), 1 minute partner response using only the card, 1 minute observer feedback, 1 minute BHW retry and 1 minute to record/swap roles. Rotate roles so all three have an attempt and retry. The trainer visits two triads per round: at most six named BHW attempts and their retries, allowing three minutes per triad; the trainer does not observe all 30. Peer records remain peer practice.
+13–31 min: three six-minute rounds, with all ten triads working simultaneously. Each round has 2 minutes for the BHW attempt (name five groups, report one), 1 minute partner response using only the card, 1 minute observer feedback, 1 minute BHW retry and 1 minute to record/swap roles. Rotate roles so all three have an attempt and retry. The trainer stays with one selected triad per round through its attempt, feedback and retry: at most three named learners, with three initial attempts and three retries (six observed performances). One minute per round remains for recording. The trainer does not observe all 30. Peer records remain peer practice.
 
 31–40 min: debrief five groups and the three cards. Ask: “Which field was missing? How did you make ‘be careful’ actionable? How will you confirm the contact? What remains unsafe after reporting?” Show the wet-entrance image before asking the original check, then reveal all three rationales and corrected ending.
 
@@ -54,7 +54,7 @@ Corrected ending: Apple reports the wet entrance and slip risk, requests keeping
 
 ## [observe] Observe
 
-Use the one objective_index 0 indicator. Record learner, role/scene, attempt/retry, exact words/product, prompting and observer type. Trainer sampling covers at most six actual attempts/retries; all other learners stay “not observed” for trainer evidence. Peer feedback and self-rehearsal are practice.
+Use the one objective_index 0 indicator. Record learner, role/scene, attempt/retry, exact words/product, prompting and observer type. Trainer sampling covers at most three learners, each with one initial attempt and one retry; all other learners stay “not observed” for trainer evidence. Peer feedback and self-rehearsal are practice.
 
 Ready: names five groups and examples and independently reports hazard, harm, specific safe action, verified contact or explicit verification route and follow-up. Needs practice: names a hazard but omits a group, action/contact or follow-up; identifies the omission after a prompt and retries. Not yet: misses the hazard, gives only “be careful,” invents a correction/contact or proposes unsafe action. Record the observable revised product; do not average attendance into passing or create a certification rule.
 

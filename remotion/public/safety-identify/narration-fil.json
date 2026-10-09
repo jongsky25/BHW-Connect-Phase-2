@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural everyday Filipino (Tagalog) as a warm community health trainer. Keep one stable adult female Kore narrator from heading to ending, including quoted dialogue; no character acting or speaker switching. Use gentle pitch and pace variation. Read Apple as written. Make hazard, possible harm, safe immediate action, contact verification and follow-up clear. Preserve every negation and unknown fact. Finish every word without adding a policy, diagnosis or completed correction.",
+  "durationSeconds": 61.153,
+  "beats": [
+    {
+      "zone": "ana",
+      "index": 0,
+      "text": "Napansin ni Apple ang basang pasukan at mainit na ruta. Mula sa ligtas na puwesto, kinikilala niya ang panganib.",
+      "start_ms": 0,
+      "end_ms": 8640
+    },
+    {
+      "zone": "inspect",
+      "index": 1,
+      "text": "Basang sahig: maaaring madulas. Ilayo muna ang tao at humingi ng pagwawasto. Kailangan pang kumpirmahin ang contact.",
+      "start_ms": 8940,
+      "end_ms": 18380
+    },
+    {
+      "zone": "scope-and-contact",
+      "index": 2,
+      "text": "Itinanong ni Apple kung sino ang aabisuhan at alin ang saklaw ng pagsasanay niya. Hindi siya nag-imbento ng sagot.",
+      "start_ms": 18680,
+      "end_ms": 26200
+    },
+    {
+      "zone": "five-hazards",
+      "index": 3,
+      "text": "Sharps, impeksyon, strain, stress at aksidente: magkaibang panganib ang mga ito. Posibleng pinsala ang pinag-uusapan, hindi diagnosis.",
+      "start_ms": 26500,
+      "end_ms": 38300
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Sa rehearsal, pinalitan ni Apple ang mag-ingat ng tiyak na ulat. Sinuri ng observer ang apat na field; saka niya inulit.",
+      "start_ms": 38600,
+      "end_ms": 49000
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Iniulat ni Apple ang basang pasukan, panganib madulas at hinihinging aksyon. Kukumpirmahin niya ang contact at babalikan ang kalagayan. Hindi pa natin alam na naayos na.",
+      "start_ms": 49300,
+      "end_ms": 61100
+    }
+  ],
+  "audio_sha256": "0301a841656946b3f593cb904eefc7cdbeb7ef9a8e0eefb8178e0d5163f6aa48"
+}

@@ -4,13 +4,13 @@ Tukuyin ang limang hazard group at gumawa ng isang ulat na may panganib–pinsal
 
 ## [time-materials] Oras at kagamitan
 
-45 guided minuto: 5 pambungad + 8 modelled inspection + 18 umiikot na attempt/feedback/retry + 9 debrief + 5 transfer. Sa apat na OSH lesson, 45 + 60 + 60 + 75 = 240 minuto. Alokasyon ito ng pagtuturo, hindi certification. Tagal ng sariling pag-aaral: hinihintay ang aktuwal na generated narration; walang sinasabing nasukat na reading time. Dagdag ang opsyonal na kuwento at replay.
+45 guided minuto: 5 pambungad + 8 modelled inspection + 18 umiikot na attempt/feedback/retry + 9 debrief + 5 transfer. Sa apat na OSH lesson, 45 + 60 + 60 + 75 = 240 minuto. Alokasyon ito ng pagtuturo, hindi certification. Ginawang pagtataya ng sariling pag-aaral: 10–13 minuto, ayon sa mas mahabang salaysay. Aktuwal na anim na screen: English 337.87 segundo; Filipino 375.43 segundo. Maglaan ng 3–6 minuto para sa check, ensayo at pagninilay. Dagdag ang opsyonal na kuwento at replay.
 
 Para sa 30 learner: sampung triad, bilingual scene/role card, apat-na-field worksheet, lapis at reporting aid. Papel o dummy equipment lamang na walang karayom, body fluids o chemical exposure. Walang live injury, masakit na ehersisyo, tunay na patient information o inimbentong contact.
 
 ## [prepare] Ihanda
 
-Basahin ang source audit at clinical checklist. Ipakumpirma sa awtorisadong clinical/local trainer ang saklaw, hand-hygiene alternative, reporting/backup contact at paghinto/pagpapatuloy bago ang demonstration. Sa papel, panatilihing “hindi pa tiyak” ang kulang na contact. Maghanda ng upuan at tuyong silid. Bumuo ng sampung triad A–J: BHW, contact/partner, observer. Alamin ang gustong wika at reading support. Pumili ng anim na triad para sa trainer sampling; itala ang hindi naobserbahan at isaayos ang hiwalay na obserbasyon.
+Basahin ang source audit at clinical checklist. Ipakumpirma sa awtorisadong clinical/local trainer ang saklaw, hand-hygiene alternative, reporting/backup contact at paghinto/pagpapatuloy bago ang demonstration. Sa papel, panatilihing “hindi pa tiyak” ang kulang na contact. Maghanda ng upuan at tuyong silid. Bumuo ng sampung triad A–J: BHW, contact/partner, observer. Alamin ang gustong wika at reading support. Pumili ng tatlong triad para sa trainer sampling; itala ang hindi naobserbahan at isaayos ang hiwalay na obserbasyon.
 
 ## [opening] Pambungad
 
@@ -20,7 +20,7 @@ Basahin ang source audit at clinical checklist. Ipakumpirma sa awtorisadong clin
 
 5–13 minuto: i-model ang wet-floor card. Sabihin: “Basang pasukan; maaaring madulas ang BHW at bisita. Mula sa ligtas at tuyong puwesto, ilayo muna ang tao at humingi ng pagwawasto sa nakatalagang staff. Hindi pa tiyak ang contact: itatanong ko sa awtorisadong staff. Babalikan ko ang kalagayan bago alisin ang babala.” Ituro ang bawat field. Ipakita ang blocked-exit at missing-soap card; itanong ang pagbabago sa pinsala at aksyon. Huwag humawak ng sharps o magbuhat ng mabigat na harang.
 
-13–31 minuto: tatlong round na tig-6 minuto, sabay-sabay ang sampung triad. Sa bawat round: 2 minuto BHW attempt (limang grupo at isang ulat), 1 minuto sagot ng partner batay sa card, 1 minuto observer feedback, 1 minuto BHW retry, 1 minuto tala/palit-role. Iikot ang role para bawat isa ay may attempt at retry. Dalawang triad ang bibisitahin ng trainer bawat round: hanggang anim na pinangalanang BHW attempt at retry, tig-3 minuto bawat triad; hindi lahat ng 30 ang maoobserbahan. Peer practice lamang ang ibang tala.
+13–31 minuto: tatlong round na tig-6 minuto, sabay-sabay ang sampung triad. Sa bawat round: 2 minuto BHW attempt (limang grupo at isang ulat), 1 minuto sagot ng partner batay sa card, 1 minuto observer feedback, 1 minuto BHW retry, 1 minuto tala/palit-role. Iikot ang role para bawat isa ay may attempt at retry. Mananatili ang trainer sa isang piniling triad bawat round hanggang attempt, feedback at retry: hanggang tatlong pinangalanang learner, tatlong unang attempt at tatlong retry (anim na observed performance). May isang minuto bawat round para sa tala. Hindi lahat ng 30 ang maoobserbahan. Peer practice lamang ang ibang tala.
 
 31–40 minuto: debrief ang limang grupo at tatlong card. Itanong: “Aling field ang kulang? Paano naging tiyak ang ‘mag-ingat’? Paano kukumpirmahin ang contact? Ano ang nananatiling panganib matapos iulat?” Ipakita ang basang-pasukan image bago ang orihinal na check; saka ibigay ang tatlong paliwanag at iwinastong wakas.
 
@@ -54,7 +54,7 @@ Iwinastong wakas: iniulat ni Apple ang basang pasukan at panganib madulas, hinil
 
 ## [observe] Obserbahan
 
-Gamitin ang iisang objective_index 0 indicator. Itala ang learner, role/scene, attempt/retry, aktuwal na salita/produkto, prompt at uri ng observer. Hanggang anim na attempt/retry lamang ang trainer sampling; “hindi naobserbahan” ang iba para sa trainer evidence. Practice lamang ang peer feedback at self-rehearsal.
+Gamitin ang iisang objective_index 0 indicator. Itala ang learner, role/scene, attempt/retry, aktuwal na salita/produkto, prompt at uri ng observer. Hanggang tatlong learner na may tig-isang unang attempt at retry lamang ang trainer sampling; “hindi naobserbahan” ang iba para sa trainer evidence. Practice lamang ang peer feedback at self-rehearsal.
 
 Kaya na: limang grupo at halimbawa, at sariling ulat ng panganib, pinsala, ligtas na tiyak na aksyon, nakumpirmang contact o tahasang verification route at follow-up. Kailangan practice: may panganib ngunit kulang ang grupo, aksyon/contact o follow-up; natutukoy ang kulang sa prompt at inuulit. Hindi pa: hindi makita ang hazard, “mag-ingat” lang, inimbentong pagwawasto/contact o unsafe action. Itala ang aktuwal na retry; huwag ipasa batay sa attendance o gumawa ng certification rule.
 
