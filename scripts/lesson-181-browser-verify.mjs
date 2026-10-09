@@ -1,6 +1,6 @@
 // Actual production React components in the frozen inline review.
 // Next navigation/image/link adapters and save callbacks are explicit local fixtures.
-import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';
+import fs from 'node:fs';import {createHash} from 'node:crypto';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';import {execFileSync} from 'node:child_process';import {chromium} from '@playwright/test';
 const root=path.resolve(import.meta.dirname,'..'),dir=root+'/.preview/lesson181-deliverables';
 const html=fs.readFileSync(dir+'/lesson-1.8.1-apple-review.html');
@@ -23,7 +23,7 @@ try{
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
    await page.screenshot({path:dir+'/lesson181-'+lang+'-'+mode+'-'+width+'-'+section.id+'.png',fullPage:true});
    const caseRecord={width,language:lang,mode,section:section.id,image_visible_before_answer:true,offline:true,no_horizontal_overflow:true};
-   if(section.check){assert.equal(await page.locator('audio').count(),0);caseRecord.summary_audio_gated=true;assert.equal(await page.getByRole('status').count(),0);assert.equal(await page.getByText(section['takeaway_'+lang],{exact:true}).count(),0);for(let c=0;c<3;c++){await page.getByRole('button',{name:section.check.options[c][lang],exact:true}).click();const text=await page.getByRole('status').innerText();assert(text.includes(lang==='en'?'First:':'Una:')&&text.includes(lang==='en'?'Third:':'Ikatlo:'));}caseRecord.all_three_rationales=true;}
+   if(section.check){assert(await page.locator('article[data-scene]').evaluate(el=>Boolean(el.querySelector('figure')?.compareDocumentPosition(el.querySelector('fieldset')) & Node.DOCUMENT_POSITION_FOLLOWING)), 'Illustration must precede the decision');caseRecord.picture_precedes_decision=true;assert.equal(await page.locator('audio').count(),0);caseRecord.summary_audio_gated=true;assert.equal(await page.getByRole('status').count(),0);assert.equal(await page.getByText(section['takeaway_'+lang],{exact:true}).count(),0);for(let c=0;c<3;c++){await page.getByRole('button',{name:section.check.options[c][lang],exact:true}).click();const text=await page.getByRole('status').innerText();assert(text.includes(lang==='en'?'First:':'Una:')&&text.includes(lang==='en'?'Third:':'Ikatlo:'));}caseRecord.all_three_rationales=true;}
    if(slide)await page.getByText(lang==='en'?'Full narration and audio':'Buong salaysay at audio',{exact:true}).click();
    assert.equal(await page.locator('audio').count(),1);await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.readyState>=2&&a.currentTime>0;});
    const timings=manifest.lessons['safety-identify'].sections[section.id][lang].timings;caseRecord.highlight_zones=[];
@@ -68,5 +68,5 @@ try{
   assert(await page.evaluate(()=>window.__cleanupVideo.paused));assert((await page.locator('video').count())<=1);
   report.cases.push({width,language:lang,story_cleanup_on:action==='leave'?'fixture navigation/unmount':action,old_player_paused:true,offline:true});await context.close();
  }
- assert.equal(report.errors.length,0);report.status='passed';report.actual_case_count=report.cases.length;save();
+ assert.equal(report.errors.length,0);report.status='passed';report.actual_case_count=report.cases.length;report.screenshots=fs.readdirSync(dir).filter(p=>/^lesson181-(fil|en)-(read|slides)-.*\.png$/.test(p)).sort().map(file=>({file,sha256:createHash('sha256').update(fs.readFileSync(dir+'/'+file)).digest('hex')}));report.actual_screenshot_count=report.screenshots.length;assert.equal(report.actual_screenshot_count,56);save();
 }catch(error){report.status='failed';report.error=String(error.stack??error);save();throw error;}finally{await browser.close();await new Promise(r=>server.close(r));}

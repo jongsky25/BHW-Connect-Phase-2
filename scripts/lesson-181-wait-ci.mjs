@@ -6,7 +6,7 @@ if(!process.env.GH_TOKEN)throw Error('Read-only Actions token required');
 while(Date.now()<deadline){
  const response=await fetch('https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs?head_sha='+sha,{headers:{Authorization:'Bearer '+process.env.GH_TOKEN,Accept:'application/vnd.github+json'}});
  if(!response.ok)throw Error('Exact-head CI status unavailable: '+response.status);
- const {workflow_runs:runs}=await response.json();const checks=['CI','Remotion clips'].map(name=>runs.filter(r=>r.name===name&&r.head_sha===sha&&r.event==='pull_request').sort((a,b)=>b.id-a.id)[0]);
+ const {workflow_runs:runs}=await response.json();const checks=['CI','Remotion clips'].map(name=>runs.filter(r=>r.name===name&&r.head_sha===sha&&['pull_request','workflow_dispatch'].includes(r.event)).sort((a,b)=>b.id-a.id)[0]);
  if(checks.some(r=>r?.status==='completed'&&r.conclusion!=='success'))throw Error('Required exact-head regression failed; inspect current PR checks');
  if(checks.every(r=>r?.status==='completed'&&r.conclusion==='success')){
   const listing=execFileSync('npx',['remotion','compositions','--quiet',...(fs.existsSync('/usr/bin/chromium')?['--browser-executable=/usr/bin/chromium']:[])],{cwd:'remotion',encoding:'utf8',maxBuffer:4*1024*1024});

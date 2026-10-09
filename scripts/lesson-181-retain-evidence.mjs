@@ -26,11 +26,15 @@ with zipfile.ZipFile(archive) as z:
   if not (name.startswith(('.preview/lesson181-raw/','.preview/lesson181-excerpts/')) or name.startswith('remotion/public/safety-identify/shipped-aac-') or name=='lesson-181-published-snapshot.json'):continue
   destination=name
   if initial:
-   destination=name.replace('.preview/lesson181-excerpts/','.preview/lesson181-initial-excerpts/').replace('remotion/public/safety-identify/shipped-aac-','.preview/lesson181-initial-media/shipped-aac-')
+   destination=name.replace('.preview/lesson181-raw/','.preview/lesson181-initial-raw/').replace('.preview/lesson181-excerpts/','.preview/lesson181-initial-excerpts/').replace('remotion/public/safety-identify/shipped-aac-','.preview/lesson181-initial-media/shipped-aac-')
    if name=='lesson-181-published-snapshot.json':destination='.preview/lesson181-initial-media/published-snapshot.json'
   output=root/destination;b=z.read(name);output.parent.mkdir(parents=True,exist_ok=True)
   if output.exists():assert output.read_bytes()==b,'Retained evidence conflict: '+name
   else:output.write_bytes(b)
+  if initial and name.startswith('.preview/lesson181-raw/'):
+   combined=root/name;combined.parent.mkdir(parents=True,exist_ok=True)
+   if combined.exists():assert combined.read_bytes()==b
+   else:combined.write_bytes(b)
 assert list((root/'.preview/lesson181-raw').glob('*.json')),'Original requests/responses missing'
 `,archive,root,String(Boolean(origin.initial))],{stdio:'inherit'});
 }

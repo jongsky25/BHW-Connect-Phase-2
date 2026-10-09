@@ -2,8 +2,8 @@
 // Current target content/media are independently checked by lesson-181 tests and media verification.
 import fs from 'node:fs';import {createHash} from 'node:crypto';
 const sha=b=>createHash('sha256').update(b).digest('hex');
+const r=JSON.parse(fs.readFileSync('docs/lesson-181-proposal-receipt.json'));
 export function beforeLesson181(p,actual=fs.readFileSync(p)){
- const r=JSON.parse(fs.readFileSync('docs/lesson-181-proposal-receipt.json'));
  if(r.target!=='safety-identify'||r.owner_release_approval!==false)throw Error('Invalid 1.8.1 draft scope');
  const e=r.changed_existing_files[p];if(!e)return actual;
  if(sha(actual)!==e.proposed_sha256)throw Error('Unpinned integrated successor (1.8.1): '+p);

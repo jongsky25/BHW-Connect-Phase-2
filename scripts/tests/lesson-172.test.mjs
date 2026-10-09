@@ -75,7 +75,7 @@ describe('Carole lesson 1.7.2 scoped draft',()=>{
  });
  it('preserves every sibling narration/history and appends the exact reviewed registry entries',()=>{
   const path='content/training/day1-basic-competencies/narration.json';
-  const old=JSON.parse(beforeLesson172(path)),actual=json(path);
+  const old=JSON.parse(beforeLesson172(path)),actual=JSON.parse(beforeLesson181(path));
   for(const [key,selection]of Object.entries(old.lessons))if(key!=='problem-causes')expect(actual.lessons[key],key).toEqual(selection);
   for(const [key,history]of Object.entries(old.history??{}))if(key!=='problem-causes')expect(actual.history[key],key).toEqual(history);
   const registryPath='remotion/src/Root.tsx',source=beforeLesson181(registryPath).toString();
