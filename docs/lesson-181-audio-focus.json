@@ -1,7 +1,7 @@
 {
   "prompt_revision": "apple-hazard-v1",
-  "date": "2026-10-09T08:43:49.338Z",
-  "source_commit": "3b37395852b45228793794dbe9b4d2ccde3fa520",
+  "date": "2026-10-09T09:00:24.729Z",
+  "source_commit": "b73e06e329eaea845858920d56cdbde8f26af2ac",
   "model": "gemini-3.8-flash",
   "decode_only": false,
   "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
@@ -139,7 +139,9 @@
           "excerpt_sha256": "3ac24dbe748ed821032f82edca582dfb167797d05b54c7985c44cb295acfc354",
           "decoded_sample_count": 232800,
           "expected_context": "Bago magsimula si Apple Si Apple ay BHW sa kathang-isip na health station na may nakaplanong household visit.",
-          "model_response": "```json\n{\n  \"transcript\": \"Bago magsimula si Apple, si Apple ay BHW sa kathang-isip na health station na may nakaplanong household visit.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced using standard English phonology (/ˈæp.əl/) at 00:01.2 and 00:03.0 rather than Tagalized /a.pol/.\",\n    \"negation\": \"No negative grammatical markers are present in the excerpt.\",\n    \"role_distinctions\": \"Identifies 'Apple' as a 'BHW' (Barangay Health Worker, read as initialism B-H-W) stationed at a fictional health facility.\",\n    \"ending_completeness\": \"The phrase ends completely with 'household visit' around 00:08.9 without premature truncation.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible across the entire recording.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants ('visit', 'station') are fully realized.\",\n    \"unexpected_voice_changes\": \"A noticeable pause of approximately one second occurs between 00:01.8 and 00:02.8; vocal timbre is consistent throughout with typical text-to-speech cadence.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Bago magsimula si Apple, si Apple ay BHW sa kathang-isip na health station na may nakaplanong household visit.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced using standard English phonology (/ˈæp.əl/) at 00:01.2 and 00:03.0 rather than Tagalized /a.pol/.\",\n    \"negation\": \"No negative grammatical markers are present in the excerpt.\",\n    \"role_distinctions\": \"Identifies 'Apple' as a 'BHW' (Barangay Health Worker, read as initialism B-H-W) stationed at a fictional health facility.\",\n    \"ending_completeness\": \"The phrase ends completely with 'household visit' around 00:08.9 without premature truncation.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible across the entire recording.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants ('visit', 'station') are fully realized.\",\n    \"unexpected_voice_changes\": \"A noticeable pause of approximately one second occurs between 00:01.8 and 00:02.8; vocal timbre is consistent throughout with typical text-to-speech cadence.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "body",
@@ -149,7 +151,9 @@
           "excerpt_sha256": "c204b7f2ebcd423eb9c0d483e8a88013ed927b3abed95c591371da790aac498e",
           "decoded_sample_count": 168000,
           "expected_context": "Si Apple ay BHW sa kathang-isip na health station na may nakaplanong household visit.",
-          "model_response": "```json\n{\n  \"transcript\": \"Si Apple ay BHW sa kathang-isip na health station na may nakaplanong household visit.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced clearly in standard English phonology (/ˈæp.əl/) at 00:00.12–00:00.65.\",\n    \"role_distinctions\": \"'BHW' (Barangay Health Worker) is clearly spelled out as an initialism ('B-H-W') at 00:01.10–00:02.15.\",\n    \"negation\": \"No negative grammatical particles are present in this excerpt.\",\n    \"ending_completeness\": \"The sentence ends cleanly and naturally on 'household visit' around 00:06.40 without cutoff or abrupt silence.\",\n    \"audible_speech\": \"All words are fully audible and cleanly articulated with no background interference.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are intact.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and pacing remain steady and consistent with instructional narration throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The audio is clear and fully intelligible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Si Apple ay BHW sa kathang-isip na health station na may nakaplanong household visit.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced clearly in standard English phonology (/ˈæp.əl/) at 00:00.12–00:00.65.\",\n    \"role_distinctions\": \"'BHW' (Barangay Health Worker) is clearly spelled out as an initialism ('B-H-W') at 00:01.10–00:02.15.\",\n    \"negation\": \"No negative grammatical particles are present in this excerpt.\",\n    \"ending_completeness\": \"The sentence ends cleanly and naturally on 'household visit' around 00:06.40 without cutoff or abrupt silence.\",\n    \"audible_speech\": \"All words are fully audible and cleanly articulated with no background interference.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are intact.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and pacing remain steady and consistent with instructional narration throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The audio is clear and fully intelligible.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "critical",
@@ -159,7 +163,9 @@
           "excerpt_sha256": "c5a3b691f63b87be114fba1f86aba2ce4af33e5939879f28526b6dbc891d2cd9",
           "decoded_sample_count": 328800,
           "expected_context": "Ang bagong usapan ay adaptasyon, hindi sipi mula sa DOH. Mula sa ligtas na puwesto, napansin niya ang basang pasukan, lalagyang malapit sa fill line at mainit na ruta.",
-          "model_response": "```json\n{\n  \"transcript\": \"Ang bagong usapan ay adaptasyon, hindi CP mula sa DOH. Mula sa ligtas na pwesto, napansin niya ang basang pasukan, lalagyang malapit sa fill line, at mainit na ruta.\",\n  \"observations\": [\n    {\n      \"type\": \"negation\",\n      \"timestamp\": \"00:02.1 - 00:02.6\",\n      \"description\": \"The negation particle 'hindi' is clearly articulated.\"\n    },\n    {\n      \"type\": \"pronunciation\",\n      \"timestamp\": \"00:03.0 - 00:04.2\",\n      \"description\": \"Acronyms 'CP' and 'DOH' are pronounced distinctly as English letter names / initialisms.\"\n    },\n    {\n      \"type\": \"english_loanword\",\n      \"timestamp\": \"00:10.5 - 00:11.5\",\n      \"description\": \"The English phrase 'fill line' is pronounced accurately without clipping.\"\n    },\n    {\n      \"type\": \"voice_consistency\",\n      \"timestamp\": \"00:00.0 - 00:13.6\",\n      \"description\": \"Consistent synthetic/TTS narration throughout; no unexpected voice shifts or role changes detected.\"\n    },\n    {\n      \"type\": \"ending_completeness\",\n      \"timestamp\": \"00:12.3 - 00:13.0\",\n      \"description\": \"The final word 'ruta' finishes naturally before the trailing silence.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The audio is clear and fully intelligible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Ang bagong usapan ay adaptasyon, hindi CP mula sa DOH. Mula sa ligtas na pwesto, napansin niya ang basang pasukan, lalagyang malapit sa fill line, at mainit na ruta.\",\n  \"observations\": [\n    {\n      \"type\": \"negation\",\n      \"timestamp\": \"00:02.1 - 00:02.6\",\n      \"description\": \"The negation particle 'hindi' is clearly articulated.\"\n    },\n    {\n      \"type\": \"pronunciation\",\n      \"timestamp\": \"00:03.0 - 00:04.2\",\n      \"description\": \"Acronyms 'CP' and 'DOH' are pronounced distinctly as English letter names / initialisms.\"\n    },\n    {\n      \"type\": \"english_loanword\",\n      \"timestamp\": \"00:10.5 - 00:11.5\",\n      \"description\": \"The English phrase 'fill line' is pronounced accurately without clipping.\"\n    },\n    {\n      \"type\": \"voice_consistency\",\n      \"timestamp\": \"00:00.0 - 00:13.6\",\n      \"description\": \"Consistent synthetic/TTS narration throughout; no unexpected voice shifts or role changes detected.\"\n    },\n    {\n      \"type\": \"ending_completeness\",\n      \"timestamp\": \"00:12.3 - 00:13.0\",\n      \"description\": \"The final word 'ruta' finishes naturally before the trailing silence.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The audio is clear and fully intelligible.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "ending",
@@ -169,7 +175,9 @@
           "excerpt_sha256": "bf069b648cc457ad2f66ad506e315b37499579d47f500902c5a75d8cdd0d0d12",
           "decoded_sample_count": 555312,
           "expected_context": "Bago magsimula, tinutukoy niya ang panganib, sino ang maaaring masaktan, agarang kontrol at taong aabisuhan. Hindi pa tiyak ang contact at ligtas na ruta; kailangan muna niyang kumpirmahin ang mga ito. Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain.",
-          "model_response": "```json\n{\n  \"transcript\": \"Bago magsimula, tinutukoy niya ang panganib, sino ang maaaring masaktan, agarang kontrol, at taong aabisuhan. Hindi pa tiyak ang contact at ligtas na ruta. Kailangan muna niyang kumpirmahin ang mga ito. Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"N/A (the word 'Apple' does not appear in this excerpt).\",\n    \"negation\": \"Clear negation is present at 00:09.6 - 00:10.5 ('Hindi pa tiyak').\",\n    \"role_distinctions_and_voice_changes\": \"There are distinct voice shifts across the excerpt: Voice 1 (00:00 - 00:08.8) is a higher-pitched female voice; Voice 2 (00:09.5 - 00:15.4) shifts to a distinct second female voice; Voice 3 (00:16.2 - 00:22.8) shifts to a lower-pitched, male narrative voice.\",\n    \"audible_speech\": \"Speech is intelligible, clear, and cleanly recorded throughout.\",\n    \"clipped_words\": \"No clipped syllables or words detected.\",\n    \"ending_completeness\": \"The audio concludes fully on 'gawain' at ~00:22.8 with normal room decay and no abrupt cutoff.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_changes\",\n      \"timestamp_range\": \"00:09.5 - 00:23.0\",\n      \"description\": \"Voice shifts noticeably twice (female Voice 1 to female Voice 2 at ~00:09.5, then to a male Voice 3 at ~00:16.2), which may be intentional multi-role reading or an unintended voice inconsistency.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech segments are clearly spoken and audible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Bago magsimula, tinutukoy niya ang panganib, sino ang maaaring masaktan, agarang kontrol, at taong aabisuhan. Hindi pa tiyak ang contact at ligtas na ruta. Kailangan muna niyang kumpirmahin ang mga ito. Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"N/A (the word 'Apple' does not appear in this excerpt).\",\n    \"negation\": \"Clear negation is present at 00:09.6 - 00:10.5 ('Hindi pa tiyak').\",\n    \"role_distinctions_and_voice_changes\": \"There are distinct voice shifts across the excerpt: Voice 1 (00:00 - 00:08.8) is a higher-pitched female voice; Voice 2 (00:09.5 - 00:15.4) shifts to a distinct second female voice; Voice 3 (00:16.2 - 00:22.8) shifts to a lower-pitched, male narrative voice.\",\n    \"audible_speech\": \"Speech is intelligible, clear, and cleanly recorded throughout.\",\n    \"clipped_words\": \"No clipped syllables or words detected.\",\n    \"ending_completeness\": \"The audio concludes fully on 'gawain' at ~00:22.8 with normal room decay and no abrupt cutoff.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_changes\",\n      \"timestamp_range\": \"00:09.5 - 00:23.0\",\n      \"description\": \"Voice shifts noticeably twice (female Voice 1 to female Voice 2 at ~00:09.5, then to a male Voice 3 at ~00:16.2), which may be intentional multi-role reading or an unintended voice inconsistency.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech segments are clearly spoken and audible.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         }
       ]
     },
@@ -269,7 +277,9 @@
           "excerpt_sha256": "e04b4f77ed38b620e93648b33592b12abc70db351019e57c381d244845ac8458",
           "decoded_sample_count": 132960,
           "expected_context": "Piliin ang susunod na hakbang Tingnan muna ang larawan ng basang pasukan.",
-          "model_response": "```json\n{\n  \"transcript\": \"Piliin ang susunod na hakbang. Tingnan muna ang larawan ng basang pasukan.\",\n  \"observations\": \"The audio consists of a clear, calm female voice speaking Tagalog instructional prompts in two complete sentences. Enunciation is articulate and pacing is deliberate, suitable for an educational context.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"Slight ambiguity in whether the word at 00:04.10 is intended contextually as 'basang' or 'bagong', though acoustically it clearly produces an /s/ sound ('basang').\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Piliin ang susunod na hakbang. Tingnan muna ang larawan ng basang pasukan.\",\n  \"observations\": \"The audio consists of a clear, calm female voice speaking Tagalog instructional prompts in two complete sentences. Enunciation is articulate and pacing is deliberate, suitable for an educational context.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"Slight ambiguity in whether the word at 00:04.10 is intended contextually as 'basang' or 'bagong', though acoustically it clearly produces an /s/ sound ('basang').\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "body",
@@ -279,7 +289,9 @@
           "excerpt_sha256": "898b81d3ba9d8dced07c702b02a888cb74905a714f6ffd2c0767d80808b8a472",
           "decoded_sample_count": 67200,
           "expected_context": "Tingnan muna ang larawan ng basang pasukan.",
-          "model_response": "```json\n{\n  \"transcript\": \"Tingnan muna ang larawan ng basang pasukan.\",\n  \"observations\": {\n    \"speaker\": \"Single female voice delivering an instructional/educational line clearly in Filipino/Tagalog.\",\n    \"pronunciation\": \"Standard Tagalog pronunciation with natural cadence and inflection.\",\n    \"speech_quality\": \"Clean audio without audible background noise, distortion, or clipping.\",\n    \"cadence_and_ending\": \"Sentence completes naturally without abrupt cutoffs at the end.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all words are distinctly audible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Tingnan muna ang larawan ng basang pasukan.\",\n  \"observations\": {\n    \"speaker\": \"Single female voice delivering an instructional/educational line clearly in Filipino/Tagalog.\",\n    \"pronunciation\": \"Standard Tagalog pronunciation with natural cadence and inflection.\",\n    \"speech_quality\": \"Clean audio without audible background noise, distortion, or clipping.\",\n    \"cadence_and_ending\": \"Sentence completes naturally without abrupt cutoffs at the end.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all words are distinctly audible.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "critical",
@@ -289,7 +301,9 @@
           "excerpt_sha256": "f0bb8ef4c4e3e3eb848ca21826428d26b2e16a006727dfbdf8b5761ed021e9a6",
           "decoded_sample_count": 331680,
           "expected_context": "Ang pagpili ng sagot ay hindi pa patunay ng kakayahan; kailangan pa ng aktuwal na ulat at feedback. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
-          "model_response": "```json\n{\n  \"transcript\": \"Ang pagpili ng sagot ay hindi pa patunay ng kakayahan. Kailangan pa ng aktuwal na ulat at feedback. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n  \"observations\": {\n    \"role_distinctions\": \"Single synthetic/educational narrator voice throughout.\",\n    \"negation\": \"Clear negation heard at 00:01 - 00:02 ('ay hindi pa patunay').\",\n    \"ending_completeness\": \"The audio concludes naturally with no trailing speech cut off.\",\n    \"voice_consistency\": \"Consistent acoustic quality, steady pacing, and clear articulation across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Ang pagpili ng sagot ay hindi pa patunay ng kakayahan. Kailangan pa ng aktuwal na ulat at feedback. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n  \"observations\": {\n    \"role_distinctions\": \"Single synthetic/educational narrator voice throughout.\",\n    \"negation\": \"Clear negation heard at 00:01 - 00:02 ('ay hindi pa patunay').\",\n    \"ending_completeness\": \"The audio concludes naturally with no trailing speech cut off.\",\n    \"voice_consistency\": \"Consistent acoustic quality, steady pacing, and clear articulation across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "ending",
@@ -299,7 +313,9 @@
           "excerpt_sha256": "46a78aa58ba9d7f12908c27e1cdd0f8312f22901ffbdeae637d879c37e8a66ed",
           "decoded_sample_count": 408578,
           "expected_context": "Ihambing sa ulat mo sa pagsasanay. Ang pagpili ng sagot ay hindi pa patunay ng kakayahan; kailangan pa ng aktuwal na ulat at feedback. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
-          "model_response": "```json\n{\n  \"transcript\": \"Ihambing sa ulat mo sa pagsasanay. Ang pagpili ng sagot ay hindi pa patunay ng kakayahan. Kailangan pa ng aktwal na ulat at feedback. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00.000 - 00:02.480\",\n      \"speaker\": \"Speaker 1 (Female)\",\n      \"note\": \"Clear narration prompt: 'Ihambing sa ulat mo sa pagsasanay.'\"\n    },\n    {\n      \"timestamp\": \"00:03.200 - 00:10.520\",\n      \"speaker\": \"Speaker 2 (Male)\",\n      \"note\": \"Voice switches to male speaker. Loanword 'feedback' is pronounced with standard Tagalog-English phonology without distortion.\"\n    },\n    {\n      \"timestamp\": \"00:11.200 - 00:17.250\",\n      \"speaker\": \"Speaker 1 (Female)\",\n      \"note\": \"Voice switches back to the female narrator. Delivery is measured, clear, and complete with no truncated syllables.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"Slight ambiguity around 00:05.100 - 00:05.800 between 'hindi pa patunay' versus 'hindi papatunay'; acoustic cues favor 'hindi pa patunay'.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Ihambing sa ulat mo sa pagsasanay. Ang pagpili ng sagot ay hindi pa patunay ng kakayahan. Kailangan pa ng aktwal na ulat at feedback. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00.000 - 00:02.480\",\n      \"speaker\": \"Speaker 1 (Female)\",\n      \"note\": \"Clear narration prompt: 'Ihambing sa ulat mo sa pagsasanay.'\"\n    },\n    {\n      \"timestamp\": \"00:03.200 - 00:10.520\",\n      \"speaker\": \"Speaker 2 (Male)\",\n      \"note\": \"Voice switches to male speaker. Loanword 'feedback' is pronounced with standard Tagalog-English phonology without distortion.\"\n    },\n    {\n      \"timestamp\": \"00:11.200 - 00:17.250\",\n      \"speaker\": \"Speaker 1 (Female)\",\n      \"note\": \"Voice switches back to the female narrator. Delivery is measured, clear, and complete with no truncated syllables.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"Slight ambiguity around 00:05.100 - 00:05.800 between 'hindi pa patunay' versus 'hindi papatunay'; acoustic cues favor 'hindi pa patunay'.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         }
       ]
     },
@@ -459,7 +475,9 @@
           "excerpt_sha256": "50ea1925ca5513dd103784f925f3553b6578dd211ba4775f368e62eaf2f147ea",
           "decoded_sample_count": 133920,
           "expected_context": "Kilalanin ang limang grupo Limang grupo ang gagamitin sa pagsasanay.",
-          "model_response": "```json\n{\n  \"transcript\": \"Kilalanin ang limang grupo. Limang grupo ang gagamitin sa pagsasanay.\",\n  \"observations\": {\n    \"audible_speech\": \"Clear and intelligible Filipino speech throughout the excerpt.\",\n    \"role_distinctions_or_voice_changes\": \"There is a noticeable shift in speaker timbre and recording acoustics around 00:02.2 between 'Kilalanin ang limang grupo' and 'Limang grupo ang gagamitin sa pagsasanay', suggesting either two different speakers/takes or an alternate role/voice prompt.\",\n    \"pronunciation\": \"Standard Tagalog pronunciation with natural cadence.\",\n    \"ending_completeness\": \"The final word 'pagsasanay' is fully articulated with no clipping at the end.\",\n    \"clipped_words\": \"None detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:02.2 - 00:02.6\",\n      \"description\": \"Shift in vocal tone, pitch, and background room tone/acoustic profile between the first and second sentences.\"\n    }\n  ],\n  \"uncertainty\": \"Low\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Kilalanin ang limang grupo. Limang grupo ang gagamitin sa pagsasanay.\",\n  \"observations\": {\n    \"audible_speech\": \"Clear and intelligible Filipino speech throughout the excerpt.\",\n    \"role_distinctions_or_voice_changes\": \"There is a noticeable shift in speaker timbre and recording acoustics around 00:02.2 between 'Kilalanin ang limang grupo' and 'Limang grupo ang gagamitin sa pagsasanay', suggesting either two different speakers/takes or an alternate role/voice prompt.\",\n    \"pronunciation\": \"Standard Tagalog pronunciation with natural cadence.\",\n    \"ending_completeness\": \"The final word 'pagsasanay' is fully articulated with no clipping at the end.\",\n    \"clipped_words\": \"None detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:02.2 - 00:02.6\",\n      \"description\": \"Shift in vocal tone, pitch, and background room tone/acoustic profile between the first and second sentences.\"\n    }\n  ],\n  \"uncertainty\": \"Low\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "body",
@@ -469,7 +487,9 @@
           "excerpt_sha256": "3fce730b26ec5180e74b13a4915c8c8866816eead3656c69329372a83cb5b59a",
           "decoded_sample_count": 71040,
           "expected_context": "Limang grupo ang gagamitin sa pagsasanay.",
-          "model_response": "```json\n{\n \"transcript\": \"Limang grupo ang gagamitin sa pagsasanay.\",\n \"observations\": \"The utterance is spoken clearly in Filipino by a female voice with a natural, educational tone and complete sentence boundaries.\",\n \"possible_defects\": [],\n \"uncertainty\": \"none\"\n}\n```"
+          "model_response": "```json\n{\n \"transcript\": \"Limang grupo ang gagamitin sa pagsasanay.\",\n \"observations\": \"The utterance is spoken clearly in Filipino by a female voice with a natural, educational tone and complete sentence boundaries.\",\n \"possible_defects\": [],\n \"uncertainty\": \"none\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "critical",
@@ -479,7 +499,9 @@
           "excerpt_sha256": "6423f8f8377559f4afa56ab5196d5329f1340e6d8b95015905bcb871e8ab36f5",
           "decoded_sample_count": 521760,
           "expected_context": "Una, sharps: lalagyang malapit sa fill line, na may panganib ng tusok; huwag hawakan ang laman, iulat sa awtorisadong staff. Ikalawa, exposure sa impeksyon: kulang ang sabon sa hugasan, kaya kailangan ng kumpletong hand-hygiene arrangement bago ang kaugnay na gawain.",
-          "model_response": "```json\n{\n  \"transcript\": \"Una, sharps. Lalagyan malapit sa fill line na may panganib ng tusok. Huwag hawakan ang laman, iulat sa awtorisadong staff. Ikalawa, exposure sa impeksyon. Kulang ang sabon sa hugasan, kaya kailangan ng kumpletong hand hygiene arrangement bago ang kaugnay na gawain.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00 - 00:10\",\n      \"detail\": \"Presents item number one ('Una') covering sharps safety instructions.\"\n    },\n    {\n      \"timestamp\": \"00:06 - 00:08\",\n      \"detail\": \"Clear and standard articulation of the negative directive ('Huwag hawakan ang laman').\"\n    },\n    {\n      \"timestamp\": \"00:10 - 00:21\",\n      \"detail\": \"Presents item number two ('Ikalawa') addressing hygiene and infection exposure protocols.\"\n    },\n    {\n      \"timestamp\": \"00:01 - 00:20\",\n      \"detail\": \"English loanwords and phrases ('sharps', 'fill line', 'staff', 'exposure', 'hand hygiene arrangement') are pronounced naturally with standard English phonology integrated into Tagalog syntax.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is cleanly recorded, fully audible, well-paced, and free of background noise or clipping.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Una, sharps. Lalagyan malapit sa fill line na may panganib ng tusok. Huwag hawakan ang laman, iulat sa awtorisadong staff. Ikalawa, exposure sa impeksyon. Kulang ang sabon sa hugasan, kaya kailangan ng kumpletong hand hygiene arrangement bago ang kaugnay na gawain.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00 - 00:10\",\n      \"detail\": \"Presents item number one ('Una') covering sharps safety instructions.\"\n    },\n    {\n      \"timestamp\": \"00:06 - 00:08\",\n      \"detail\": \"Clear and standard articulation of the negative directive ('Huwag hawakan ang laman').\"\n    },\n    {\n      \"timestamp\": \"00:10 - 00:21\",\n      \"detail\": \"Presents item number two ('Ikalawa') addressing hygiene and infection exposure protocols.\"\n    },\n    {\n      \"timestamp\": \"00:01 - 00:20\",\n      \"detail\": \"English loanwords and phrases ('sharps', 'fill line', 'staff', 'exposure', 'hand hygiene arrangement') are pronounced naturally with standard English phonology integrated into Tagalog syntax.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is cleanly recorded, fully audible, well-paced, and free of background noise or clipping.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "ending",
@@ -489,7 +511,9 @@
           "excerpt_sha256": "bf7d63dfb6edaddaf68af6599b139ca3797835588d9ae48c5cc928d920c6ce08",
           "decoded_sample_count": 466688,
           "expected_context": "Ang init sa field ay dagdag na konsiderasyon: kumpirmahin ang pahinga, tubig at ligtas na ruta. Mga posibleng epekto ito, hindi diagnosis. Hindi nalulutas ng PPE lamang ang bawat panganib. Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.",
-          "model_response": "```json\n{\n  \"transcript\": \"Ang init sa field ay dagdag na konsiderasyon. Kumpirmahin ang pahinga, tubig, at ligtas na ruta. Mga posibleng epekto ito, hindi diagnosis. Hindi nalulutas ng PPE lamang ang bawat panganib. Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.\",\n  \"observations\": {\n    \"role_distinctions_and_voice_changes\": \"There is a noticeable shift in speaker timbre and cadence around 00:07.00; the initial lines (00:00 - 00:06) are spoken in a higher, brighter female register, whereas the segment starting at 00:07.00 is spoken by a deeper, more formal/measured female voice.\",\n    \"pronunciation_and_loanwords\": \"English loanwords and acronyms ('field' at ~00:00.80, 'diagnosis' at ~00:09.50, and 'PPE' spoken as English letter names at ~00:12.30) are articulated clearly with standard English phonetic conventions. The word 'Apple' does not appear in this excerpt.\",\n    \"negation\": \"Clear presence and articulation of negation markers: 'hindi diagnosis' (00:09.10 - 00:10.20), 'Hindi nalulutas' (00:11.20 - 00:12.10), and 'hindi tiyak' (00:15.90 - 00:16.80).\",\n    \"speech_quality_and_completeness\": \"Speech is fully audible throughout with no clipping, dropouts, or truncated word endings; the recording ends naturally on the final syllable of 'gawain'.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp_range\": \"00:06.50 - 00:07.50\",\n      \"description\": \"Distinct acoustic/speaker transition between the first speaker (ending at ~00:06.40) and the second speaker (starting at ~00:07.10) without a narrative segue.\"\n    }\n  ],\n  \"uncertainty\": \"None detected; speech is clean, clear, and unambiguous.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Ang init sa field ay dagdag na konsiderasyon. Kumpirmahin ang pahinga, tubig, at ligtas na ruta. Mga posibleng epekto ito, hindi diagnosis. Hindi nalulutas ng PPE lamang ang bawat panganib. Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.\",\n  \"observations\": {\n    \"role_distinctions_and_voice_changes\": \"There is a noticeable shift in speaker timbre and cadence around 00:07.00; the initial lines (00:00 - 00:06) are spoken in a higher, brighter female register, whereas the segment starting at 00:07.00 is spoken by a deeper, more formal/measured female voice.\",\n    \"pronunciation_and_loanwords\": \"English loanwords and acronyms ('field' at ~00:00.80, 'diagnosis' at ~00:09.50, and 'PPE' spoken as English letter names at ~00:12.30) are articulated clearly with standard English phonetic conventions. The word 'Apple' does not appear in this excerpt.\",\n    \"negation\": \"Clear presence and articulation of negation markers: 'hindi diagnosis' (00:09.10 - 00:10.20), 'Hindi nalulutas' (00:11.20 - 00:12.10), and 'hindi tiyak' (00:15.90 - 00:16.80).\",\n    \"speech_quality_and_completeness\": \"Speech is fully audible throughout with no clipping, dropouts, or truncated word endings; the recording ends naturally on the final syllable of 'gawain'.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp_range\": \"00:06.50 - 00:07.50\",\n      \"description\": \"Distinct acoustic/speaker transition between the first speaker (ending at ~00:06.40) and the second speaker (starting at ~00:07.10) without a narrative segue.\"\n    }\n  ],\n  \"uncertainty\": \"None detected; speech is clean, clear, and unambiguous.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         }
       ]
     },
@@ -871,7 +895,9 @@
           "excerpt_sha256": "18ee5b188c773741b90178974a61c316dc88d7c7bb5bdeb41c65cd22ab99cd96",
           "decoded_sample_count": 313440,
           "expected_context": "Gumawa ng ulat, tumanggap ng feedback, ulitin Gumuhit ng limang kahon at magbigay ng halimbawa para sa bawat hazard group mula sa station o home visit.",
-          "model_response": "```json\n{\n \"transcript\": \"Gumawa ng ulat, tumanggap ng feedback, ulitin. Gumuhit ng limang kahon at magbibigay ng halimbawa para sa bawat hazard group mula sa station o home visit.\",\n \"observations\": [\n  {\n   \"timestamp\": \"00:00.000 - 00:04.200\",\n   \"speaker\": \"Speaker 1\",\n   \"note\": \"Higher-pitched female voice reading a list of instructional steps: 'Gumawa ng ulat, tumanggap ng feedback, ulitin.'\"\n  },\n  {\n   \"timestamp\": \"00:04.200 - 00:04.500\",\n   \"note\": \"Speaker transition / role change between two distinct speakers.\"\n  },\n  {\n   \"timestamp\": \"00:04.500 - 00:13.000\",\n   \"speaker\": \"Speaker 2\",\n   \"note\": \"Deeper female voice delivering an assignment prompt.\"\n  },\n  {\n   \"timestamp\": \"00:10.500 - 00:11.200\",\n   \"word\": \"station\",\n   \"note\": \"Pronounced with standard English phonology rather than the localized 'istasyon'.\"\n  }\n ],\n \"possible_defects\": [],\n \"uncertainty\": \"Low. The audio is clear, complete, and contains no clipping or audible defects.\"\n}\n```"
+          "model_response": "```json\n{\n \"transcript\": \"Gumawa ng ulat, tumanggap ng feedback, ulitin. Gumuhit ng limang kahon at magbibigay ng halimbawa para sa bawat hazard group mula sa station o home visit.\",\n \"observations\": [\n  {\n   \"timestamp\": \"00:00.000 - 00:04.200\",\n   \"speaker\": \"Speaker 1\",\n   \"note\": \"Higher-pitched female voice reading a list of instructional steps: 'Gumawa ng ulat, tumanggap ng feedback, ulitin.'\"\n  },\n  {\n   \"timestamp\": \"00:04.200 - 00:04.500\",\n   \"note\": \"Speaker transition / role change between two distinct speakers.\"\n  },\n  {\n   \"timestamp\": \"00:04.500 - 00:13.000\",\n   \"speaker\": \"Speaker 2\",\n   \"note\": \"Deeper female voice delivering an assignment prompt.\"\n  },\n  {\n   \"timestamp\": \"00:10.500 - 00:11.200\",\n   \"word\": \"station\",\n   \"note\": \"Pronounced with standard English phonology rather than the localized 'istasyon'.\"\n  }\n ],\n \"possible_defects\": [],\n \"uncertainty\": \"Low. The audio is clear, complete, and contains no clipping or audible defects.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "body",
@@ -881,7 +907,9 @@
           "excerpt_sha256": "73c256e48ac309355d15646d4fad00aa7a92ecc498413ce23d272d2460f579aa",
           "decoded_sample_count": 203520,
           "expected_context": "Gumuhit ng limang kahon at magbigay ng halimbawa para sa bawat hazard group mula sa station o home visit.",
-          "model_response": "```json\n{\n  \"transcript\": \"Gumuhit ng limang kahon at magbibigay ng halimbawa para sa bawat hazard group mula sa station o home visit.\",\n  \"observations\": \"The audio is spoken clearly in a standard educational/instructional tone in Filipino (Tagalog) with English loan phrases ('hazard group', 'station', 'home visit') pronounced clearly. The delivery is fluent, well-paced, and has no background noise.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Gumuhit ng limang kahon at magbibigay ng halimbawa para sa bawat hazard group mula sa station o home visit.\",\n  \"observations\": \"The audio is spoken clearly in a standard educational/instructional tone in Filipino (Tagalog) with English loan phrases ('hazard group', 'station', 'home visit') pronounced clearly. The delivery is fluent, well-paced, and has no background noise.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "critical",
@@ -891,7 +919,9 @@
           "excerpt_sha256": "34df2a2fd91830f99f169819ec21b141f4ce9cd82c1f67dc18c248fa308cefbc",
           "decoded_sample_count": 444960,
           "expected_context": "Pumili ng isa at kumpletuhin ang panganib, posibleng pinsala, agarang kontrol at contact. Sa triad, ang BHW ang mag-uulat, ang partner ang sasagot gamit lamang ang scenario card at ang observer ang susuri sa apat na field.",
-          "model_response": "```json\n{\n  \"transcript\": \"Pumili ng isa, at kumpletuhin ang panganib, posibleng pinsala, agarang kontrol, at contact. Sa triad, ang BHW ang mag-uulat, ang partner ang sasagot gamit lamang ang scenario card, at ang observer ang susuri sa apat na field.\",\n  \"observations\": {\n    \"voice_characteristics\": \"There is a noticeable change in speaker around 00:07.5; the first section (00:00 - 00:07) is spoken by a deeper female voice, while the second section (00:08 - 00:18) shifts to a different female speaker with a lighter timbre.\",\n    \"role_distinctions\": \"The audio outlines distinct roles within a triad: BHW (reporter/mag-uulat), partner (respondent using scenario card), and observer (evaluates across four fields).\",\n    \"negation\": \"No negative grammatical markers (e.g., hindi, huwag) are present.\",\n    \"apple_pronunciation\": \"Not applicable; the word 'Apple' does not appear in the audio.\",\n    \"ending_completeness\": \"The ending is complete with no clipping; concludes naturally on the word 'field'.\",\n    \"clipped_words\": \"None detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:07.5 - 00:08.2\",\n      \"description\": \"Clear voice/speaker transition between sentences without a defined contextual break.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech is clearly enunciated and intelligible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Pumili ng isa, at kumpletuhin ang panganib, posibleng pinsala, agarang kontrol, at contact. Sa triad, ang BHW ang mag-uulat, ang partner ang sasagot gamit lamang ang scenario card, at ang observer ang susuri sa apat na field.\",\n  \"observations\": {\n    \"voice_characteristics\": \"There is a noticeable change in speaker around 00:07.5; the first section (00:00 - 00:07) is spoken by a deeper female voice, while the second section (00:08 - 00:18) shifts to a different female speaker with a lighter timbre.\",\n    \"role_distinctions\": \"The audio outlines distinct roles within a triad: BHW (reporter/mag-uulat), partner (respondent using scenario card), and observer (evaluates across four fields).\",\n    \"negation\": \"No negative grammatical markers (e.g., hindi, huwag) are present.\",\n    \"apple_pronunciation\": \"Not applicable; the word 'Apple' does not appear in the audio.\",\n    \"ending_completeness\": \"The ending is complete with no clipping; concludes naturally on the word 'field'.\",\n    \"clipped_words\": \"None detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:07.5 - 00:08.2\",\n      \"description\": \"Clear voice/speaker transition between sentences without a defined contextual break.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech is clearly enunciated and intelligible.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "ending",
@@ -901,7 +931,9 @@
           "excerpt_sha256": "cd873d4a7b579a20a108c231999ac19b93f9b026956bfee24c1387d883fc146c",
           "decoded_sample_count": 485173,
           "expected_context": "Kung mag-isa, sumulat o magsalita gamit ang parehong checklist; ito ay rehearsal, hindi obserbasyon ng trainer. Bago ang susunod na duty, gawin ang maikling hazard check at kumpirmahin ang contact. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
-          "model_response": "```json\n{\n  \"transcript\": \"Kung mag-isa, sumulat o magsalita gamit ang parehong checklist. Ito ay rehearsal, hindi obserbasyon ng trainer. Bago ang susunod na duty, gawin ang maikling hazard check at kumpirmahin ang contact. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n  \"observations\": {\n    \"speaker\": \"Single female narrator delivering structured instructional text in standard Filipino/Tagalog.\",\n    \"pacing_and_delivery\": \"Clear, steady, educational pacing with natural pauses between distinct instructional points (e.g., between 00:06.80 and 00:08.00, and around 00:13.70 to 00:14.40).\",\n    \"loan_words\": \"English loanwords such as 'checklist' (00:03.20), 'rehearsal' (00:04.40), 'trainer' (00:06.30), 'duty' (00:09.30), 'hazard check' (00:10.90), and 'contact' (00:13.10) are pronounced cleanly and naturally within standard Philippine educational context.\",\n    \"negation\": \"Clear negation on 'hindi' at 00:05.10 ('hindi obserbasyon ng trainer').\",\n    \"ending_completeness\": \"The utterance concludes fully and naturally on 'tutugon' around 00:19.80 without clipping or cutoff.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Kung mag-isa, sumulat o magsalita gamit ang parehong checklist. Ito ay rehearsal, hindi obserbasyon ng trainer. Bago ang susunod na duty, gawin ang maikling hazard check at kumpirmahin ang contact. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n  \"observations\": {\n    \"speaker\": \"Single female narrator delivering structured instructional text in standard Filipino/Tagalog.\",\n    \"pacing_and_delivery\": \"Clear, steady, educational pacing with natural pauses between distinct instructional points (e.g., between 00:06.80 and 00:08.00, and around 00:13.70 to 00:14.40).\",\n    \"loan_words\": \"English loanwords such as 'checklist' (00:03.20), 'rehearsal' (00:04.40), 'trainer' (00:06.30), 'duty' (00:09.30), 'hazard check' (00:10.90), and 'contact' (00:13.10) are pronounced cleanly and naturally within standard Philippine educational context.\",\n    \"negation\": \"Clear negation on 'hindi' at 00:05.10 ('hindi obserbasyon ng trainer').\",\n    \"ending_completeness\": \"The utterance concludes fully and naturally on 'tutugon' around 00:19.80 without clipping or cutoff.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         }
       ]
     },
@@ -1049,7 +1081,9 @@
           "excerpt_sha256": "2e1a35b06895d201220bcc61bdff55cc0f721536868d16459bcfa15cd8db3ba9",
           "decoded_sample_count": 241440,
           "expected_context": "Linawin ang saklaw at contact Bago tumulong, nagtatanong si Apple sa awtorisadong staff: “Aling gawain ang saklaw ng pagsasanay ko?",
-          "model_response": "```json\n{\n  \"transcript\": \"Linawin ang saklaw at contact. Bago tumulong, nagtatanong si Apple sa awtorisadong staff, \\\"Aling gawain ang saklaw ng pagsasanay ko?\\\"\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced clearly following standard English phonology (/ˈæp.əl/) at approximately 00:05.3 - 00:05.7.\",\n    \"role_distinctions_and_voice_changes\": \"A noticeable tone/voice transition occurs between the header/section title (00:00.0 - 00:02.8) and the narrative/character statement starting at 00:03.4.\",\n    \"audible_speech\": \"All speech is clear, distinct, and fully intelligible.\",\n    \"negation\": \"No negative grammatical markers (e.g., 'hindi', 'huwag', 'wala') are present in this excerpt.\",\n    \"clipped_words\": \"No clipped syllables or truncated words observed.\",\n    \"ending_completeness\": \"The final phrase 'pagsasanay ko?' finishes naturally without premature cutoff.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Linawin ang saklaw at contact. Bago tumulong, nagtatanong si Apple sa awtorisadong staff, \\\"Aling gawain ang saklaw ng pagsasanay ko?\\\"\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced clearly following standard English phonology (/ˈæp.əl/) at approximately 00:05.3 - 00:05.7.\",\n    \"role_distinctions_and_voice_changes\": \"A noticeable tone/voice transition occurs between the header/section title (00:00.0 - 00:02.8) and the narrative/character statement starting at 00:03.4.\",\n    \"audible_speech\": \"All speech is clear, distinct, and fully intelligible.\",\n    \"negation\": \"No negative grammatical markers (e.g., 'hindi', 'huwag', 'wala') are present in this excerpt.\",\n    \"clipped_words\": \"No clipped syllables or truncated words observed.\",\n    \"ending_completeness\": \"The final phrase 'pagsasanay ko?' finishes naturally without premature cutoff.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "body",
@@ -1059,7 +1093,9 @@
           "excerpt_sha256": "c5652fd7539fdaf711178c4dbd95185f2f390bb32724f027dadf4b7f6ba2c7bf",
           "decoded_sample_count": 157440,
           "expected_context": "Bago tumulong, nagtatanong si Apple sa awtorisadong staff: “Aling gawain ang saklaw ng pagsasanay ko?",
-          "model_response": "```json\n{\n  \"transcript\": \"Bago tumulong, nagtatanong si Apple sa awtorisadong staff: Aling gawain ang saklaw ng pagsasanay ko?\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced clearly in standard loanword fashion (/ˈæp.əl/) at approximately 00:01.8 - 00:02.3.\",\n    \"role_distinctions\": \"The speaker delivers the narrator setup and smoothly transitions with a slight pause into the character dialogue ('Aling gawain...') without abrupt acoustic jarring.\",\n    \"negation\": \"No negation terms are present in this excerpt.\",\n    \"clipped_words\": \"None detected; all word onsets and codas are clearly articulated.\",\n    \"ending_completeness\": \"The terminal word 'ko?' finishes naturally with an audible ending inflection and no premature cutoff.\",\n    \"unexpected_voice_changes\": \"None detected; tone shift into dialogue is natural and expected for narrative reading.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear, well-paced, and free of audible artifacts.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Bago tumulong, nagtatanong si Apple sa awtorisadong staff: Aling gawain ang saklaw ng pagsasanay ko?\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced clearly in standard loanword fashion (/ˈæp.əl/) at approximately 00:01.8 - 00:02.3.\",\n    \"role_distinctions\": \"The speaker delivers the narrator setup and smoothly transitions with a slight pause into the character dialogue ('Aling gawain...') without abrupt acoustic jarring.\",\n    \"negation\": \"No negation terms are present in this excerpt.\",\n    \"clipped_words\": \"None detected; all word onsets and codas are clearly articulated.\",\n    \"ending_completeness\": \"The terminal word 'ko?' finishes naturally with an audible ending inflection and no premature cutoff.\",\n    \"unexpected_voice_changes\": \"None detected; tone shift into dialogue is natural and expected for narrative reading.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear, well-paced, and free of audible artifacts.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "critical",
@@ -1069,7 +1105,9 @@
           "excerpt_sha256": "7a853a83ec7807ef9a3df42db7cc040f41e4539807a4ba3d29aed485b456acbb",
           "decoded_sample_count": 259680,
           "expected_context": "Paano kung hindi siya makontak?” Kailangan niyang kumpirmahin ang pangalan o tungkulin, paraan ng pakikipag-ugnayan at lokal na alternatibong contact.",
-          "model_response": "```json\n{\n  \"transcript\": \"Paano kung hindi siya makontak? Kailangan niyang kumpirmahin ang pangalan o tungkulin, paraan ng pakikipag-ugnayan, at lokal na alternatibong kontak.\",\n  \"observations\": {\n    \"role_distinctions\": \"There are two distinct speakers: a male voice asking the question (00:00 - 00:01.85) and a female voice providing the response/instructions (00:02.50 - 00:10.45).\",\n    \"negation\": \"The negation 'hindi' is clearly articulated by the first speaker between 00:00.65 and 00:00.95.\",\n    \"ending_completeness\": \"The audio ends naturally after 'kontak' with a complete terminal drop and natural decay; no trailing words are cut off.\",\n    \"audible_speech\": \"All speech is clear, audible, and paced well for educational dialogue.\",\n    \"clipped_words\": \"None detected; both onset and coda consonants are fully resolved.\",\n    \"unexpected_voice_changes\": \"None; the transition between the two speakers corresponds to natural dialogue turn-taking.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Paano kung hindi siya makontak? Kailangan niyang kumpirmahin ang pangalan o tungkulin, paraan ng pakikipag-ugnayan, at lokal na alternatibong kontak.\",\n  \"observations\": {\n    \"role_distinctions\": \"There are two distinct speakers: a male voice asking the question (00:00 - 00:01.85) and a female voice providing the response/instructions (00:02.50 - 00:10.45).\",\n    \"negation\": \"The negation 'hindi' is clearly articulated by the first speaker between 00:00.65 and 00:00.95.\",\n    \"ending_completeness\": \"The audio ends naturally after 'kontak' with a complete terminal drop and natural decay; no trailing words are cut off.\",\n    \"audible_speech\": \"All speech is clear, audible, and paced well for educational dialogue.\",\n    \"clipped_words\": \"None detected; both onset and coda consonants are fully resolved.\",\n    \"unexpected_voice_changes\": \"None; the transition between the two speakers corresponds to natural dialogue turn-taking.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "ending",
@@ -1079,7 +1117,9 @@
           "excerpt_sha256": "f759b18c2e904f8754b76c8891ce38bc388be817408c782db3b252e76da887fb",
           "decoded_sample_count": 377418,
           "expected_context": "Kung may aktuwal na exposure o pinsala, humingi agad ng medikal na pagsusuri at iulat ayon sa lokal na proseso; hindi dapat maantala ng papeles ang pagsusuri. Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.",
-          "model_response": "```json\n{\n  \"transcript\": \"Kung may aktwal na exposure o pinsala, humingi agad ng medikal na pagsusuri at iulat ayon sa lokal na proseso. Hindi dapat maaantala ng papeles ang pagsusuri. Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.\",\n  \"observations\": {\n    \"audible_speech\": \"Speech is clear, fully audible, and well-enunciated throughout.\",\n    \"pronunciation\": \"English loanword 'exposure' is pronounced naturally with standard Filipino-English phonology without noticeable artifacts. 'Apple pronunciation' criterion does not apply directly as the word 'Apple' does not appear.\",\n    \"negation\": \"Negation terms ('Hindi dapat' around 00:07 - 00:08 and 'hindi tiyak' around 00:11 - 00:12) are articulated distinctly with appropriate semantic stress.\",\n    \"role_distinctions\": \"Single-speaker educational/instructional tone maintained throughout.\",\n    \"ending_completeness\": \"The audio concludes completely on 'gawain' without truncation or premature cutoff.\",\n    \"clipped_words\": \"None observed.\",\n    \"voice_consistency\": \"Pitch, pacing, and tone are consistent, resembling standard synthetic TTS/instructional narration.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Kung may aktwal na exposure o pinsala, humingi agad ng medikal na pagsusuri at iulat ayon sa lokal na proseso. Hindi dapat maaantala ng papeles ang pagsusuri. Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.\",\n  \"observations\": {\n    \"audible_speech\": \"Speech is clear, fully audible, and well-enunciated throughout.\",\n    \"pronunciation\": \"English loanword 'exposure' is pronounced naturally with standard Filipino-English phonology without noticeable artifacts. 'Apple pronunciation' criterion does not apply directly as the word 'Apple' does not appear.\",\n    \"negation\": \"Negation terms ('Hindi dapat' around 00:07 - 00:08 and 'hindi tiyak' around 00:11 - 00:12) are articulated distinctly with appropriate semantic stress.\",\n    \"role_distinctions\": \"Single-speaker educational/instructional tone maintained throughout.\",\n    \"ending_completeness\": \"The audio concludes completely on 'gawain' without truncation or premature cutoff.\",\n    \"clipped_words\": \"None observed.\",\n    \"voice_consistency\": \"Pitch, pacing, and tone are consistent, resembling standard synthetic TTS/instructional narration.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         }
       ]
     },
@@ -1179,7 +1219,9 @@
           "excerpt_sha256": "8cd342dcd040798f10d7f469f1b56df73c41a89389b945dfff353d32ca559cce",
           "decoded_sample_count": 414240,
           "expected_context": "Napansin ni Apple ang basang pasukan at mainit na ruta. Mula sa ligtas na puwesto, kinikilala niya ang panganib. Basang sahig: maaaring madulas. Ilayo muna ang tao at humingi ng pagwawasto. Kailangan pang kumpirmahin ang contact.",
-          "model_response": "```json\n{\n \"transcript\": \"Napansin ni Apol ang basang pasukan at mainit na ruta. Mula sa ligtas na pwesto, kinikilala niya ang panganib. Basang sahig, maaaring madulas. Ilayo muna ang tao at humingi ng pagwawasto. Kailangan pang kumpirmahin ang kontak.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The name is pronounced phonetically as 'Apol' [ˈʔa.pol] around 00:00.8.\",\n  \"negation\": \"No negative statements (e.g., 'hindi', 'huwag', 'wala') are present in the excerpt.\",\n  \"role_distinctions\": \"The delivery transitions from descriptive third-person narration (00:00 - 00:07.8) to a more staccato, deliberate observational/action-item voice (00:08.5 - 00:16.8).\",\n  \"ending_completeness\": \"The audio ends naturally with 'kontak' followed by brief room tone; no abrupt cutoff detected.\",\n  \"audible_speech\": \"The narration is clear, intelligible, and audible throughout.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"None; the pacing slows slightly at 00:08.5 to reflect procedural thinking/evaluation, which aligns with narrative context.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"Low; all words and phonemes are clearly articulated.\"\n}\n```"
+          "model_response": "```json\n{\n \"transcript\": \"Napansin ni Apol ang basang pasukan at mainit na ruta. Mula sa ligtas na pwesto, kinikilala niya ang panganib. Basang sahig, maaaring madulas. Ilayo muna ang tao at humingi ng pagwawasto. Kailangan pang kumpirmahin ang kontak.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The name is pronounced phonetically as 'Apol' [ˈʔa.pol] around 00:00.8.\",\n  \"negation\": \"No negative statements (e.g., 'hindi', 'huwag', 'wala') are present in the excerpt.\",\n  \"role_distinctions\": \"The delivery transitions from descriptive third-person narration (00:00 - 00:07.8) to a more staccato, deliberate observational/action-item voice (00:08.5 - 00:16.8).\",\n  \"ending_completeness\": \"The audio ends naturally with 'kontak' followed by brief room tone; no abrupt cutoff detected.\",\n  \"audible_speech\": \"The narration is clear, intelligible, and audible throughout.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"None; the pacing slows slightly at 00:08.5 to reflect procedural thinking/evaluation, which aligns with narrative context.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"Low; all words and phonemes are clearly articulated.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "body",
@@ -1189,7 +1231,9 @@
           "excerpt_sha256": "49f62ac843d59ee0c281a5d4bff12ceef121be03439a44e54871a46100f39e06",
           "decoded_sample_count": 197760,
           "expected_context": "Napansin ni Apple ang basang pasukan at mainit na ruta. Mula sa ligtas na puwesto, kinikilala niya ang panganib.",
-          "model_response": "```json\n{\n \"transcript\": \"Napansin ni Apple ang basang pasukan at mainit na ruta. Mula sa ligtas na pwesto, kinilala niya ang panganib.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The proper noun 'Apple' is pronounced with standard English/Filipino-English phonology [ˈæpəl].\",\n  \"negation\": \"No negative grammatical markers are present in the sentence.\",\n  \"role_distinctions\": \"Single consistent third-person narrative voice throughout.\",\n  \"ending_completeness\": \"The excerpt concludes naturally with full intonational cadence on 'panganib' without truncation.\",\n  \"audible_speech\": \"Speech is fully intelligible and clear across the entire clip.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"None observed; pitch, tone, and pacing remain consistent.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+          "model_response": "```json\n{\n \"transcript\": \"Napansin ni Apple ang basang pasukan at mainit na ruta. Mula sa ligtas na pwesto, kinilala niya ang panganib.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The proper noun 'Apple' is pronounced with standard English/Filipino-English phonology [ˈæpəl].\",\n  \"negation\": \"No negative grammatical markers are present in the sentence.\",\n  \"role_distinctions\": \"Single consistent third-person narrative voice throughout.\",\n  \"ending_completeness\": \"The excerpt concludes naturally with full intonational cadence on 'panganib' without truncation.\",\n  \"audible_speech\": \"Speech is fully intelligible and clear across the entire clip.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"None observed; pitch, tone, and pacing remain consistent.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "critical",
@@ -1199,7 +1243,9 @@
           "excerpt_sha256": "26234e5e75c7ec17b2bf14bdd4c30cd30b1770ac5a28bd6fe944e4711872b2b5",
           "decoded_sample_count": 478560,
           "expected_context": "Itinanong ni Apple kung sino ang aabisuhan at alin ang saklaw ng pagsasanay niya. Hindi siya nag-imbento ng sagot. Sharps, impeksyon, strain, stress at aksidente: magkaibang panganib ang mga ito. Posibleng pinsala ang pinag-uusapan, hindi diagnosis.",
-          "model_response": "```json\n{\n  \"transcript\": \"Itinanong ni Apple kung sino ang aabisuhan at alin ang saklaw ng pagsasanay niya. Hindi siya nag-imbento ng sagot. Sharps, impeksyon, strain, stress, at aksidente? Magkakaibang panganib ang mga ito. Posibleng pinsala ang pinag-uusapan, hindi diagnosis.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced clearly as the standard English loanword /ˈæp.əl/ at 00:00 - 00:01.\",\n    \"negation\": \"Clear negation phrases heard: 'Hindi siya nag-imbento ng sagot' (00:05 - 00:07) and 'hindi diagnosis' (00:18 - 00:19).\",\n    \"role_distinctions\": \"There is a distinct speaker/role shift from a male narrator (00:00 - 00:07) to a female voice delivering character internal thought/dialogue (00:08 - 00:19).\",\n    \"ending_completeness\": \"The audio concludes naturally on the word 'diagnosis' with complete acoustic decay and no truncation.\",\n    \"clipped_words\": \"None detected.\",\n    \"voice_changes\": \"A planned voice shift occurs at 00:08.0 where the female speaker takes over from the male narrator.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Itinanong ni Apple kung sino ang aabisuhan at alin ang saklaw ng pagsasanay niya. Hindi siya nag-imbento ng sagot. Sharps, impeksyon, strain, stress, at aksidente? Magkakaibang panganib ang mga ito. Posibleng pinsala ang pinag-uusapan, hindi diagnosis.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced clearly as the standard English loanword /ˈæp.əl/ at 00:00 - 00:01.\",\n    \"negation\": \"Clear negation phrases heard: 'Hindi siya nag-imbento ng sagot' (00:05 - 00:07) and 'hindi diagnosis' (00:18 - 00:19).\",\n    \"role_distinctions\": \"There is a distinct speaker/role shift from a male narrator (00:00 - 00:07) to a female voice delivering character internal thought/dialogue (00:08 - 00:19).\",\n    \"ending_completeness\": \"The audio concludes naturally on the word 'diagnosis' with complete acoustic decay and no truncation.\",\n    \"clipped_words\": \"None detected.\",\n    \"voice_changes\": \"A planned voice shift occurs at 00:08.0 where the female speaker takes over from the male narrator.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "ending",
@@ -1209,22 +1255,24 @@
           "excerpt_sha256": "dece8e3add04c371ab203ebd6f03ae640e020dad585692f7163cd4be41bcc593",
           "decoded_sample_count": 560704,
           "expected_context": "Sa rehearsal, pinalitan ni Apple ang mag-ingat ng tiyak na ulat. Sinuri ng observer ang apat na field; saka niya inulit. Iniulat ni Apple ang basang pasukan, panganib madulas at hinihinging aksyon. Kukumpirmahin niya ang contact at babalikan ang kalagayan. Hindi pa natin alam na naayos na.",
-          "model_response": "```json\n{\n  \"transcript\": \"Sa rehearsal, pinalitan ni Apple ang mag-ingat ng tiyak na ulat. Sinuri ng observer ang apat na fields, sa kanya inulit. Iniulat ni Apple ang basang pasukan, panganib madulas, at hinihinging aksyon. Kukumpirmahin niya ang contact at babalikan ang kalagayan. Hindi pa natin alam na naayos na.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:01.85 - 00:02.25\",\n      \"description\": \"The name 'Apple' is pronounced naturally as /ˈæ.pəl/.\"\n    },\n    {\n      \"timestamp\": \"00:10.75 - 00:11.20\",\n      \"description\": \"The name 'Apple' is pronounced consistently with the first occurrence as /ˈæ.pəl/.\"\n    },\n    {\n      \"timestamp\": \"00:20.00 - 00:21.05\",\n      \"description\": \"Negation phrase 'Hindi pa' is clearly articulated.\"\n    },\n    {\n      \"timestamp\": \"00:00.00 - 00:23.00\",\n      \"description\": \"Delivered by a single narrator with consistent pacing, tone, and register. No role distinction switches or sudden voice changes observed.\"\n    },\n    {\n      \"timestamp\": \"00:22.00 - 00:22.60\",\n      \"description\": \"Ending word 'naayos na' concludes naturally with no cut-off or clipping.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Sa rehearsal, pinalitan ni Apple ang mag-ingat ng tiyak na ulat. Sinuri ng observer ang apat na fields, sa kanya inulit. Iniulat ni Apple ang basang pasukan, panganib madulas, at hinihinging aksyon. Kukumpirmahin niya ang contact at babalikan ang kalagayan. Hindi pa natin alam na naayos na.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:01.85 - 00:02.25\",\n      \"description\": \"The name 'Apple' is pronounced naturally as /ˈæ.pəl/.\"\n    },\n    {\n      \"timestamp\": \"00:10.75 - 00:11.20\",\n      \"description\": \"The name 'Apple' is pronounced consistently with the first occurrence as /ˈæ.pəl/.\"\n    },\n    {\n      \"timestamp\": \"00:20.00 - 00:21.05\",\n      \"description\": \"Negation phrase 'Hindi pa' is clearly articulated.\"\n    },\n    {\n      \"timestamp\": \"00:00.00 - 00:23.00\",\n      \"description\": \"Delivered by a single narrator with consistent pacing, tone, and register. No role distinction switches or sudden voice changes observed.\"\n    },\n    {\n      \"timestamp\": \"00:22.00 - 00:22.60\",\n      \"description\": \"Ending word 'naayos na' concludes naturally with no cut-off or clipping.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         }
       ]
     },
     {
       "id": "read-ana-en",
       "language": "en",
-      "source_path": "/training/audio/08-osh/safety-identify/ana.en.02fe8109dda4.mp3",
-      "source_sha256": "6edcd3c9d3034189f1384af71f2d52b3d222d32352d8af074dd0244c8adcc111",
-      "decoded_pcm_sha256": "a3ccb1febeed168748a814eb9674d67b39e19d1c45eb3e16e4e71c3db1db5462",
+      "source_path": "/training/audio/08-osh/safety-identify/ana.en.7e6adff41d37.mp3",
+      "source_sha256": "847deefce0e589b705929a3c714c022d5254a3ea5b3459f08104150c827692dd",
+      "decoded_pcm_sha256": "3167459c366b5f276eb1d737b200ddd69a09d4989b31f60fae2d87f01d029845",
       "full_audio_metrics": {
-        "samples": 1191184,
-        "seconds": 49.632666666666665,
-        "rms": 0.1259648999100656,
-        "peak": 0.932861328125,
-        "quiet_sample_fraction": 0.23632201238431677
+        "samples": 1236324,
+        "seconds": 51.5135,
+        "rms": 0.1328938156066508,
+        "peak": 0.998779296875,
+        "quiet_sample_fraction": 0.2258704029040931
       },
       "zones": [
         {
@@ -1232,150 +1280,150 @@
           "index": 0,
           "text": "Before Apple starts work",
           "start_ms": 0,
-          "end_ms": 1960,
-          "samples": 47040,
-          "seconds": 1.96,
-          "rms": 0.1446886237181319,
-          "peak": 0.932861328125,
-          "quiet_sample_fraction": 0.31721938775510206
+          "end_ms": 2280,
+          "samples": 54720,
+          "seconds": 2.28,
+          "rms": 0.10852046924197263,
+          "peak": 0.9229736328125,
+          "quiet_sample_fraction": 0.3067434210526316
         },
         {
           "zone": "body",
           "index": 0,
           "text": "Apple is a BHW at a fictional health station with a planned household visit.",
-          "start_ms": 2260,
-          "end_ms": 7860,
-          "samples": 134400,
-          "seconds": 5.6,
-          "rms": 0.14763929063028305,
-          "peak": 0.90643310546875,
-          "quiet_sample_fraction": 0.16082589285714285
+          "start_ms": 2580,
+          "end_ms": 8780,
+          "samples": 148800,
+          "seconds": 6.2,
+          "rms": 0.126905703399516,
+          "peak": 0.847900390625,
+          "quiet_sample_fraction": 0.14434139784946237
         },
         {
           "zone": "body",
           "index": 1,
           "text": "The new dialogue is an adaptation, not a DOH quotation.",
-          "start_ms": 8160,
-          "end_ms": 12680,
-          "samples": 108480,
-          "seconds": 4.52,
-          "rms": 0.12251271778215801,
-          "peak": 0.82220458984375,
-          "quiet_sample_fraction": 0.1938882743362832
+          "start_ms": 9080,
+          "end_ms": 13960,
+          "samples": 117120,
+          "seconds": 4.88,
+          "rms": 0.1774966306749823,
+          "peak": 0.998779296875,
+          "quiet_sample_fraction": 0.19195696721311475
         },
         {
           "zone": "body",
           "index": 2,
           "text": "From a safe position, she notices a wet entrance, a container near its fill line and a hot route.",
-          "start_ms": 12980,
-          "end_ms": 20500,
-          "samples": 180480,
-          "seconds": 7.52,
-          "rms": 0.14282738882211815,
-          "peak": 0.879791259765625,
-          "quiet_sample_fraction": 0.17572584219858156
+          "start_ms": 14260,
+          "end_ms": 21500,
+          "samples": 173760,
+          "seconds": 7.24,
+          "rms": 0.12137025034333047,
+          "peak": 0.911346435546875,
+          "quiet_sample_fraction": 0.20579534990791898
         },
         {
           "zone": "body",
           "index": 3,
           "text": "She does not open the sharps box or touch its contents.",
-          "start_ms": 20800,
-          "end_ms": 25040,
-          "samples": 101760,
-          "seconds": 4.24,
-          "rms": 0.11925740461799639,
-          "peak": 0.732269287109375,
-          "quiet_sample_fraction": 0.18109276729559748
+          "start_ms": 21800,
+          "end_ms": 25960,
+          "samples": 99840,
+          "seconds": 4.16,
+          "rms": 0.12605601787732715,
+          "peak": 0.854461669921875,
+          "quiet_sample_fraction": 0.1842948717948718
         },
         {
           "zone": "body",
           "index": 4,
           "text": "“I will be careful” is not a sufficient report.",
-          "start_ms": 25340,
-          "end_ms": 29180,
-          "samples": 92160,
-          "seconds": 3.84,
-          "rms": 0.14435232226521788,
-          "peak": 0.9124755859375,
-          "quiet_sample_fraction": 0.22378472222222223
+          "start_ms": 26260,
+          "end_ms": 30140,
+          "samples": 93120,
+          "seconds": 3.88,
+          "rms": 0.12501952439042657,
+          "peak": 0.79241943359375,
+          "quiet_sample_fraction": 0.2275987972508591
         },
         {
           "zone": "body",
           "index": 5,
           "text": "Before starting, she identifies the hazard, who could be harmed, an immediate control and a reporting contact.",
-          "start_ms": 29480,
-          "end_ms": 37400,
-          "samples": 190080,
-          "seconds": 7.92,
-          "rms": 0.13043572294327124,
-          "peak": 0.86700439453125,
-          "quiet_sample_fraction": 0.23635311447811447
+          "start_ms": 30440,
+          "end_ms": 38720,
+          "samples": 198720,
+          "seconds": 8.28,
+          "rms": 0.12343137781040889,
+          "peak": 0.794158935546875,
+          "quiet_sample_fraction": 0.19835950080515297
         },
         {
           "zone": "body",
           "index": 6,
           "text": "The contact and safe route are still unknown; she needs to confirm them first.",
-          "start_ms": 37700,
-          "end_ms": 43340,
-          "samples": 135360,
-          "seconds": 5.64,
-          "rms": 0.10154592782111903,
-          "peak": 0.744598388671875,
-          "quiet_sample_fraction": 0.17836879432624114
+          "start_ms": 39020,
+          "end_ms": 44900,
+          "samples": 141120,
+          "seconds": 5.88,
+          "rms": 0.13639965987288868,
+          "peak": 0.9102783203125,
+          "quiet_sample_fraction": 0.16595096371882087
         },
         {
           "zone": "takeaway",
           "index": 0,
           "text": "Workplace safety starts by identifying hazards and local requirements before the task.",
-          "start_ms": 43640,
-          "end_ms": 49560,
-          "samples": 142080,
-          "seconds": 5.92,
-          "rms": 0.10870939206790979,
-          "peak": 0.833099365234375,
-          "quiet_sample_fraction": 0.1742117117117117
+          "start_ms": 45200,
+          "end_ms": 51440,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.16031752783265554,
+          "peak": 0.961212158203125,
+          "quiet_sample_fraction": 0.13989049145299146
         }
       ],
       "excerpts": [
         {
           "kind": "head",
           "start": 0,
-          "end": 7.86,
+          "end": 8.78,
           "file": "read-ana-en-head.wav",
-          "excerpt_sha256": "a07612c1a39c8003765588c76fbb14d8343597b2f9f70336ae9fffddbaf4fc9b",
-          "decoded_sample_count": 188640,
+          "excerpt_sha256": "29585fa107aa37a723fdc5ec8f9e95aedc43a877c2569f994b6f5326dac500f4",
+          "decoded_sample_count": 210720,
           "expected_context": "Before Apple starts work Apple is a BHW at a fictional health station with a planned household visit.",
-          "model_response": "```json\n{\n  \"transcript\": \"Before Apple starts work, Apple is a BHW at a fictional health station with a planned household visit.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced clearly in both instances (approx. 00:00–00:01 and 00:02–00:03) with Philippine English phonology (/ˈæ.pəl/ to /ˈa.pəl/).\",\n    \"negation\": \"No negative constructions are present in the segment.\",\n    \"role_distinctions\": \"Single narrator voice providing background context and framing for a fictional persona named Apple (a BHW / Barangay Health Worker).\",\n    \"ending_completeness\": \"The excerpt concludes naturally after 'visit' without truncation or cut-off syllables.\",\n    \"audible_speech\": \"Speech is fully audible, intelligible, and delivered in a steady instructional tone.\",\n    \"clipped_words\": \"None detected; both the start ('Before') and end ('visit') retain full acoustic envelopes.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and pacing remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Before Apple starts work, Apple is a BHW at a fictional health station with a planned household visit.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced standardly as /ˈæp.əl/ at 00:00.90 and 00:02.46.\",\n    \"negation\": \"No negation terms are present in the audio.\",\n    \"role_distinctions\": \"A distinct shift in speaker voice profile occurs between the introductory clause (00:00.00–00:02.15) and the main sentence (00:02.40–00:08.40).\",\n    \"ending_completeness\": \"The final word 'visit' concludes fully with an audible unreleased/released alveolar stop and trailing room tone, with no clipping.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible throughout.\",\n    \"clipped_words\": \"None detected; word boundaries and transitions are intact.\",\n    \"unexpected_voice_changes\": \"There is a noticeable shift in timbre, pitch, and accent (from a lighter, general synthetic voice to a deeper British-accented synthetic voice) at approximately 00:02.20.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp_range\": [2.15, 2.45],\n      \"description\": \"Voice identity shifts abruptly between the introductory phrase and the following sentence.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all words and phonetic realizations are clear.\"\n}\n```"
         },
         {
           "kind": "body",
-          "start": 2.26,
-          "end": 7.86,
+          "start": 2.58,
+          "end": 8.78,
           "file": "read-ana-en-body.wav",
-          "excerpt_sha256": "1c3ddbb3c345a59d9fe4ad10d05b17852f2155f160e424ba593f574871abf09f",
-          "decoded_sample_count": 134400,
+          "excerpt_sha256": "4ddf75619c03fc9317b075c40f0102daaacd31501c91e9f5b69cfcacffed3b7d",
+          "decoded_sample_count": 148800,
           "expected_context": "Apple is a BHW at a fictional health station with a planned household visit.",
-          "model_response": "```json\n{\n  \"transcript\": \"Apple is a BHW at a fictional health station, with a planned household visit.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced clearly as /ˈæ.pəl/ / /ˈa.pəl/ matching Philippine English phonology.\",\n    \"negation\": \"No negative contractions or negative polarity words present.\",\n    \"role_distinctions\": \"Single consistent female narrator delivering an instructional/contextual statement.\",\n    \"ending_completeness\": \"The sentence completes naturally on 'visit' with a descending final cadence and no abrupt cutoff.\",\n    \"audible_speech\": \"Speech is fully audible and articulated clearly throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and timbre remain steady and consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Apple is a BHW at a fictional health station with a planned household visit.\",\n  \"observations\": [\n    {\n      \"category\": \"pronunciation\",\n      \"timestamp\": \"00:00 - 00:01\",\n      \"details\": \"The name 'Apple' is clearly articulated with standard educational cadence. The acronym 'BHW' is spelled out cleanly as individual letters ('B-H-W').\"\n    },\n    {\n      \"category\": \"negation\",\n      \"timestamp\": \"00:00 - 00:06\",\n      \"details\": \"No negative constructions are present in the utterance.\"\n    },\n    {\n      \"category\": \"role distinctions\",\n      \"timestamp\": \"00:00 - 00:06\",\n      \"details\": \"Single narrator voice introducing a fictional character/role ('Apple is a BHW...').\"\n    },\n    {\n      \"category\": \"ending completeness\",\n      \"timestamp\": \"00:05 - 00:06\",\n      \"details\": \"The final word 'visit' concludes cleanly with natural sentence-final falling intonation, without abrupt cutoff.\"\n    },\n    {\n      \"category\": \"audible speech & voice quality\",\n      \"timestamp\": \"00:00 - 00:06\",\n      \"details\": \"All speech is fully audible and intelligible throughout; no clipped words or sudden pitch/timbre shifts detected.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The audio is clear and fully intelligible.\"\n}\n```"
         },
         {
           "kind": "critical",
-          "start": 8.16,
-          "end": 20.5,
+          "start": 9.08,
+          "end": 21.5,
           "file": "read-ana-en-critical.wav",
-          "excerpt_sha256": "cbffa61dbb6dd908accbda33d5dbe01b73a77f9f5b2050ef840a7e6f4bce74b7",
-          "decoded_sample_count": 296160,
+          "excerpt_sha256": "a820b3b446ecb2b1a7754ff89361ab07c1e5547b9bc7994eb7b53a7846d97758",
+          "decoded_sample_count": 298080,
           "expected_context": "The new dialogue is an adaptation, not a DOH quotation. From a safe position, she notices a wet entrance, a container near its fill line and a hot route.",
-          "model_response": "```json\n{\n \"transcript\": \"The new dialogue is an adaptation, not a DOH quotation. From a safe position, she notices a wet entrance, a container near its fill line, and a hot route.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The short 'a' vowel in 'adaptation' is pronounced cleanly without distortion.\",\n  \"negation\": \"Clear negation heard in 'not a DOH quotation' between 00:02.3 and 00:03.1.\",\n  \"role_distinctions\": \"A distinct speaker transition occurs around 00:04.7, switching from a male voice delivering introductory/disclaimer information to a female voice narrating a scenario.\",\n  \"ending_completeness\": \"The audio concludes fully on 'and a hot route.' with natural decay and no premature cutoff.\",\n  \"audible_speech\": \"Speech is fully audible and intelligible across the entire recording.\",\n  \"clipped_words\": \"None detected; beginnings and endings of all words are intact.\",\n  \"unexpected_voice_changes\": \"Speaker switch occurs at 00:04.7 between the male and female speakers.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"Low\"\n}\n```"
+          "model_response": "```json\n{\n \"transcript\": \"The new dialogue is an adaptation, not a DOH quotation. From a safe position, she notices a wet entrance, a container near its fill line, and a hot route.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The word 'apple' does not appear in this excerpt.\",\n  \"negation\": \"The negation 'not' is clearly articulated at around 00:02.6.\",\n  \"role_distinctions_and_voice_changes\": \"There is a distinct change in speaker/voice profile between the first sentence (00:00.00 - 00:04.60) and the second sentence starting at 00:05.10.\",\n  \"ending_completeness\": \"The audio concludes naturally with 'and a hot route' with full reverberation tail and no truncation.\",\n  \"audible_speech\": \"All words are clearly spoken and audible throughout the excerpt.\",\n  \"clipped_words\": \"No clipped or cut-off words were detected.\"\n },\n \"possible_defects\": [\n  {\n   \"type\": \"speaker_change\",\n   \"timestamp_range\": \"00:04.60 - 00:05.10\",\n   \"description\": \"Noticeable transition between two different voices/speakers between the first and second sentences.\"\n  }\n ],\n \"uncertainty\": \"None. The speech is clear and intelligible.\"\n}\n```"
         },
         {
           "kind": "ending",
-          "start": 29.48,
-          "end": 49.632666666666665,
+          "start": 30.44,
+          "end": 51.5135,
           "file": "read-ana-en-ending.wav",
-          "excerpt_sha256": "1412c3e8542190db388e83498a92c63b36c29d9a9e0063af1c5d422236a172da",
-          "decoded_sample_count": 483664,
+          "excerpt_sha256": "0d2fe0af976d3b8afa834aabb889e55f467529559ec263ca300f26ce45363f3b",
+          "decoded_sample_count": 505764,
           "expected_context": "Before starting, she identifies the hazard, who could be harmed, an immediate control and a reporting contact. The contact and safe route are still unknown; she needs to confirm them first. Workplace safety starts by identifying hazards and local requirements before the task.",
-          "model_response": "```json\n{\n \"transcript\": \"Before starting, she identifies the hazard, who could be harmed, an immediate control, and a reporting contact. The contact and safe route are still unknown. She needs to confirm them first. Workplace safety starts by identifying hazards and local requirements before the task.\",\n \"observations\": {\n  \"role_distinctions\": \"The excerpt features distinct speaker voices: a female voice from 00:00.00 to 00:07.45, a deep male voice from 00:08.00 to 00:13.60, and a second female voice presenting a concluding educational point from 00:14.10 to 00:19.70.\",\n  \"unexpected_voice_changes\": \"Voice/speaker identity shifts abruptly between educational prompts at 00:08.00 (female to male) and at 00:14.10 (male to female), though these align with segmented instructional roles.\",\n  \"apple_pronunciation\": \"The word 'apple' does not appear in this excerpt.\",\n  \"negation\": \"No explicit negation words ('no', 'not', 'never') are used, though the negative prefix occurs in 'unknown' (00:11.20 - 00:11.75).\",\n  \"ending_completeness\": \"The audio ends naturally with 'before the task.' and normal room decay without premature cutoff.\",\n  \"audible_speech\": \"All words are clearly audible and intelligible.\",\n  \"clipped_words\": \"None detected.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Before starting, she identifies a hazard, who could be harmed, an immediate control, and a reporting contact. The contact and safe route are still unknown. She needs to confirm them first. Workplace safety starts by identifying hazards and local requirements before the task.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'apple' does not occur in this excerpt.\",\n    \"negation\": \"Contains the negative/privative adjective 'unknown' at 00:11.3.\",\n    \"role_distinctions\": \"Single female narrator voice presenting fictional educational/training scenarios; slight pauses separate distinct instructional statements at ~00:07.8–00:08.8 and ~00:14.2–00:15.2.\",\n    \"ending_completeness\": \"The final sentence finishes completely with no truncation ('...before the task' concludes around 00:20.6).\",\n    \"audible_speech\": \"Speech is clearly audible, intelligible, and free of background noise.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Slight pitch and cadence resets occur across the three spliced instructional segments (00:00–00:07.8, 00:08.8–00:14.2, and 00:15.2–00:20.6), consistent with concatenated prompts rather than an unnatural mid-sentence voice shift.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all words and segment boundaries are clearly discernible.\"\n}\n```"
         }
       ]
     },
@@ -1475,7 +1523,9 @@
           "excerpt_sha256": "7c16f87c264fe1329c42e453a7f44bc84990c1aa559d3b820037f1cc35aa6661",
           "decoded_sample_count": 119520,
           "expected_context": "Choose the next step First view the wet-entrance picture.",
-          "model_response": "```json\n{\n \"transcript\": \"Choose the next step? First, view the west entrance picture.\",\n \"observations\": {\n  \"role_distinctions\": \"There are two distinct speaker roles/voices: an adult instructional voice asking 'Choose the next step?' from 00:00.0 to 00:01.3, followed by a different, slightly flatter/synthesized character voice reading 'First, view the west entrance picture.' from 00:01.8 to 00:04.3.\",\n  \"unexpected_voice_changes\": \"A noticeable shift in vocal timbre, pitch, and acoustics occurs between the question (00:00.0 - 00:01.3) and the subsequent direction (00:01.8 - 00:04.3).\",\n  \"ending_completeness\": \"The audio ends cleanly after 'picture' around 00:04.3 with natural decay and no truncation.\",\n  \"audible_speech\": \"All words are audible and articulate, though consonant cluster reduction occurs in 'west'.\"\n },\n \"possible_defects\": [\n  {\n   \"type\": \"pronunciation / consonant reduction\",\n   \"timestamp\": \"00:03.0 - 00:03.3\",\n   \"description\": \"In 'west entrance', the /s/ is extremely faint or elided, making 'west' sound acoustically similar to 'wet'.\"\n  }\n ],\n \"uncertainty\": \"Low; slight phonetic ambiguity between 'west' and 'wet' due to cluster reduction before the vowel in 'entrance'.\"\n}\n```"
+          "model_response": "```json\n{\n \"transcript\": \"Choose the next step? First, view the west entrance picture.\",\n \"observations\": {\n  \"role_distinctions\": \"There are two distinct speaker roles/voices: an adult instructional voice asking 'Choose the next step?' from 00:00.0 to 00:01.3, followed by a different, slightly flatter/synthesized character voice reading 'First, view the west entrance picture.' from 00:01.8 to 00:04.3.\",\n  \"unexpected_voice_changes\": \"A noticeable shift in vocal timbre, pitch, and acoustics occurs between the question (00:00.0 - 00:01.3) and the subsequent direction (00:01.8 - 00:04.3).\",\n  \"ending_completeness\": \"The audio ends cleanly after 'picture' around 00:04.3 with natural decay and no truncation.\",\n  \"audible_speech\": \"All words are audible and articulate, though consonant cluster reduction occurs in 'west'.\"\n },\n \"possible_defects\": [\n  {\n   \"type\": \"pronunciation / consonant reduction\",\n   \"timestamp\": \"00:03.0 - 00:03.3\",\n   \"description\": \"In 'west entrance', the /s/ is extremely faint or elided, making 'west' sound acoustically similar to 'wet'.\"\n  }\n ],\n \"uncertainty\": \"Low; slight phonetic ambiguity between 'west' and 'wet' due to cluster reduction before the vowel in 'entrance'.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "body",
@@ -1485,7 +1535,9 @@
           "excerpt_sha256": "da6bd9b046207463b6a2a65158f9896922dc752b6df2ac231f59dffded7bcb50",
           "decoded_sample_count": 71040,
           "expected_context": "First view the wet-entrance picture.",
-          "model_response": "```json\n{\n  \"transcript\": \"First, view the wet entrance picture.\",\n  \"observations\": {\n    \"speaker\": \"Single female speaker with Philippine English accentuation and clear instructional cadence.\",\n    \"apple_pronunciation\": \"No occurrence of the word 'apple'.\",\n    \"negation\": \"No negation present in the utterance.\",\n    \"role_distinctions\": \"Not applicable; single speaker/role.\",\n    \"ending_completeness\": \"The utterance concludes cleanly without truncation on 'picture' around 00:02.34.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible with minimal background noise.\",\n    \"clipped_words\": \"None; initial consonant of 'First' and final consonant of 'picture' are intact.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and acoustics remain stable throughout.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp\": \"00:01.06 - 00:01.32\",\n      \"description\": \"The speaker clearly pronounces 'wet' (/wɛt/), which may be a phonetic slip or misreading if the intended instructional context was 'west'.\"\n    }\n  ],\n  \"uncertainty\": \"Low; word sounds clearly articulated as 'wet', though contextually could be an error for 'west'.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"First, view the wet entrance picture.\",\n  \"observations\": {\n    \"speaker\": \"Single female speaker with Philippine English accentuation and clear instructional cadence.\",\n    \"apple_pronunciation\": \"No occurrence of the word 'apple'.\",\n    \"negation\": \"No negation present in the utterance.\",\n    \"role_distinctions\": \"Not applicable; single speaker/role.\",\n    \"ending_completeness\": \"The utterance concludes cleanly without truncation on 'picture' around 00:02.34.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible with minimal background noise.\",\n    \"clipped_words\": \"None; initial consonant of 'First' and final consonant of 'picture' are intact.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and acoustics remain stable throughout.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp\": \"00:01.06 - 00:01.32\",\n      \"description\": \"The speaker clearly pronounces 'wet' (/wɛt/), which may be a phonetic slip or misreading if the intended instructional context was 'west'.\"\n    }\n  ],\n  \"uncertainty\": \"Low; word sounds clearly articulated as 'wet', though contextually could be an error for 'west'.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "critical",
@@ -1495,7 +1547,9 @@
           "excerpt_sha256": "453a19ef9047ad5d90545bcbb27183f8b4bac746a1a61e74991161a4b97908df",
           "decoded_sample_count": 309600,
           "expected_context": "Selecting an answer does not establish competence; an actual report and feedback are still needed. Recognizing a hazard should lead to a specific control and responsible contact.",
-          "model_response": "```json\n{\n  \"transcript\": \"Selecting an answer does not establish competence. An actual report and feedback are still needed. Recognizing a hazard should lead to a specific control and responsible contact.\",\n  \"observations\": {\n    \"speaker_profile\": \"Single female voice with an educational, instructional tone in Philippine English.\",\n    \"apple_pronunciation\": \"The specific word 'apple' does not appear in the excerpt.\",\n    \"negation\": \"Clear negation audible at 00:01.25–00:01.65 ('does not').\",\n    \"role_distinctions\": \"Single consistent narrator role throughout the clip; no dialogue or multi-speaker role distinctions present.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'contact.' at 00:12.55 followed by room tone/silence; no mid-word cutoff at the boundary.\",\n    \"audible_speech\": \"Speech is completely audible, clear, and well-articulated across the entire excerpt.\",\n    \"clipped_words\": \"None detected; word onsets and codas are fully intact.\",\n    \"unexpected_voice_changes\": \"None; pacing, pitch, and timbre remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and unambiguous.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Selecting an answer does not establish competence. An actual report and feedback are still needed. Recognizing a hazard should lead to a specific control and responsible contact.\",\n  \"observations\": {\n    \"speaker_profile\": \"Single female voice with an educational, instructional tone in Philippine English.\",\n    \"apple_pronunciation\": \"The specific word 'apple' does not appear in the excerpt.\",\n    \"negation\": \"Clear negation audible at 00:01.25–00:01.65 ('does not').\",\n    \"role_distinctions\": \"Single consistent narrator role throughout the clip; no dialogue or multi-speaker role distinctions present.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'contact.' at 00:12.55 followed by room tone/silence; no mid-word cutoff at the boundary.\",\n    \"audible_speech\": \"Speech is completely audible, clear, and well-articulated across the entire excerpt.\",\n    \"clipped_words\": \"None detected; word onsets and codas are fully intact.\",\n    \"unexpected_voice_changes\": \"None; pacing, pitch, and timbre remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and unambiguous.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "ending",
@@ -1505,7 +1559,9 @@
           "excerpt_sha256": "de0c03456fc8969b00a4542c2c7f93a49f83a15c654df0609a5a04d6a87125bc",
           "decoded_sample_count": 367279,
           "expected_context": "Compare it with your practice report. Selecting an answer does not establish competence; an actual report and feedback are still needed. Recognizing a hazard should lead to a specific control and responsible contact.",
-          "model_response": "```json\n{\n  \"transcript\": \"Compare it with your practice report. Selecting an answer does not establish competence. An actual report and feedback are still needed. Recognizing a hazard should lead to a specific control and responsible contact.\",\n  \"observations\": {\n    \"voice_and_delivery\": \"Clear, deliberate instructional style characteristic of Philippine English educational reading.\",\n    \"role_distinctions\": \"Single consistent speaker throughout the excerpt; no shift in role or persona.\",\n    \"negation\": \"The negation 'does not' at 00:03.5–00:04.1 is distinctly articulated without contraction.\",\n    \"ending_completeness\": \"The final phrase 'and responsible contact' resolves naturally at 00:14.6 without truncation.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n    \"unexpected_voice_changes\": \"None; pacing, pitch, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is high and speech is fully intelligible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Compare it with your practice report. Selecting an answer does not establish competence. An actual report and feedback are still needed. Recognizing a hazard should lead to a specific control and responsible contact.\",\n  \"observations\": {\n    \"voice_and_delivery\": \"Clear, deliberate instructional style characteristic of Philippine English educational reading.\",\n    \"role_distinctions\": \"Single consistent speaker throughout the excerpt; no shift in role or persona.\",\n    \"negation\": \"The negation 'does not' at 00:03.5–00:04.1 is distinctly articulated without contraction.\",\n    \"ending_completeness\": \"The final phrase 'and responsible contact' resolves naturally at 00:14.6 without truncation.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n    \"unexpected_voice_changes\": \"None; pacing, pitch, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is high and speech is fully intelligible.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         }
       ]
     },
@@ -1665,7 +1721,9 @@
           "excerpt_sha256": "55ab605b08e9436b842eae3011265889b512bb6c7260cfeb0ab35d7e904f1f15",
           "decoded_sample_count": 115680,
           "expected_context": "Recognize five groups Use five groups in practice.",
-          "model_response": "```json\n{\n  \"transcript\": \"Recognize five-groups. Use five-groups in practice.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Not applicable; the word 'apple' does not appear in this audio segment.\",\n    \"negation\": \"No negative words (e.g., 'no', 'not') are present in the audio.\",\n    \"role_distinctions\": \"A single speaker delivers both educational learning objectives in a clear, consistent instructional tone.\",\n    \"ending_completeness\": \"The final syllable of 'practice' concludes completely with natural decay at around 00:04.20 without truncation.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants ('s' in 'groups', 'ce' in 'practice') are fully enunciated.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and audio quality remain stable across the pause between statements.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; transcription and speech acoustic quality are clear.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Recognize five-groups. Use five-groups in practice.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Not applicable; the word 'apple' does not appear in this audio segment.\",\n    \"negation\": \"No negative words (e.g., 'no', 'not') are present in the audio.\",\n    \"role_distinctions\": \"A single speaker delivers both educational learning objectives in a clear, consistent instructional tone.\",\n    \"ending_completeness\": \"The final syllable of 'practice' concludes completely with natural decay at around 00:04.20 without truncation.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants ('s' in 'groups', 'ce' in 'practice') are fully enunciated.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and audio quality remain stable across the pause between statements.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; transcription and speech acoustic quality are clear.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "body",
@@ -1675,7 +1733,9 @@
           "excerpt_sha256": "70a89d47298d74653844f590448e3711d128e276652b2e2494b487799c5ee0ee",
           "decoded_sample_count": 51840,
           "expected_context": "Use five groups in practice.",
-          "model_response": "```json\n{\n \"transcript\": \"Use five groups in practice.\",\n \"observations\": \"Clear educational instruction delivered by a single female speaker with Philippine English pronunciation. The speech begins and ends cleanly with no audible clipping, background noise, or unnatural tone shifts.\",\n \"possible_defects\": [],\n \"uncertainty\": \"none\"\n}\n```"
+          "model_response": "```json\n{\n \"transcript\": \"Use five groups in practice.\",\n \"observations\": \"Clear educational instruction delivered by a single female speaker with Philippine English pronunciation. The speech begins and ends cleanly with no audible clipping, background noise, or unnatural tone shifts.\",\n \"possible_defects\": [],\n \"uncertainty\": \"none\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "critical",
@@ -1685,7 +1745,9 @@
           "excerpt_sha256": "78df794826df00ee7dde116be9a23362e6bc49566330657fa9e4781180d276ea",
           "decoded_sample_count": 430560,
           "expected_context": "First, sharps: a container near its fill line presents a puncture risk; do not touch the contents, and report to authorized staff. Second, infection exposure: missing soap means a complete hand-hygiene arrangement is needed before the related task.",
-          "model_response": "```json\n{\n  \"transcript\": \"First, sharps. A container near its fill line presents a puncture risk. Do not touch the contents and report to authorized staff. Second, infection exposure. Missing soap means a complete hand hygiene arrangement is needed before the related task.\",\n  \"observations\": {\n    \"audible_speech\": \"The entire excerpt is clearly audible and spoken in a steady educational tone.\",\n    \"apple_pronunciation\": \"Not applicable; the word 'apple' does not appear in this segment.\",\n    \"negation\": \"The negation 'Do not' at 00:05.7 is distinct and clearly enunciated.\",\n    \"role_distinctions\": \"Single consistent instructional speaker throughout.\",\n    \"ending_completeness\": \"The utterance concludes naturally on 'task' with no clipping.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n    \"unexpected_voice_changes\": \"None; pacing, pitch, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"First, sharps. A container near its fill line presents a puncture risk. Do not touch the contents and report to authorized staff. Second, infection exposure. Missing soap means a complete hand hygiene arrangement is needed before the related task.\",\n  \"observations\": {\n    \"audible_speech\": \"The entire excerpt is clearly audible and spoken in a steady educational tone.\",\n    \"apple_pronunciation\": \"Not applicable; the word 'apple' does not appear in this segment.\",\n    \"negation\": \"The negation 'Do not' at 00:05.7 is distinct and clearly enunciated.\",\n    \"role_distinctions\": \"Single consistent instructional speaker throughout.\",\n    \"ending_completeness\": \"The utterance concludes naturally on 'task' with no clipping.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n    \"unexpected_voice_changes\": \"None; pacing, pitch, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "ending",
@@ -1695,7 +1757,9 @@
           "excerpt_sha256": "4dc364c2eb0b7b9642ae389d5fb398af5208bdf7d676b6a18a1c56e0ccc4202a",
           "decoded_sample_count": 464729,
           "expected_context": "Field heat is an additional consideration: confirm breaks, water and a safe route. These are possible effects, not diagnoses. PPE alone does not resolve every hazard. Confirm unknowns and make the report specific before work.",
-          "model_response": "```json\n{\n \"transcript\": \"Field heat is an additional consideration. Confirm breaks, water, and a safe route. These are possible effects, not diagnoses. PPE alone does not resolve every hazard. Confirm unknowns, and make the report specific before work.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The word 'apple' does not appear in this excerpt.\",\n  \"negation\": \"Clear negation occurs at 00:09 ('not diagnoses') and 00:12 ('does not resolve').\",\n  \"role_distinctions\": \"Two alternating speakers are present: a male speaker from 00:00 to 00:06 and 00:15 to 00:19, and a female speaker from 00:07 to 00:14.\",\n  \"ending_completeness\": \"The audio concludes completely without cutting off on the final word 'work'.\",\n  \"audible_speech\": \"All spoken lines are clearly audible and articulated in Philippine English.\",\n  \"clipped_words\": \"No clipped words observed.\",\n  \"unexpected_voice_changes\": \"Speaker switches occur between male and female educational narrators at 00:07 and 00:15.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```"
+          "model_response": "```json\n{\n \"transcript\": \"Field heat is an additional consideration. Confirm breaks, water, and a safe route. These are possible effects, not diagnoses. PPE alone does not resolve every hazard. Confirm unknowns, and make the report specific before work.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The word 'apple' does not appear in this excerpt.\",\n  \"negation\": \"Clear negation occurs at 00:09 ('not diagnoses') and 00:12 ('does not resolve').\",\n  \"role_distinctions\": \"Two alternating speakers are present: a male speaker from 00:00 to 00:06 and 00:15 to 00:19, and a female speaker from 00:07 to 00:14.\",\n  \"ending_completeness\": \"The audio concludes completely without cutting off on the final word 'work'.\",\n  \"audible_speech\": \"All spoken lines are clearly audible and articulated in Philippine English.\",\n  \"clipped_words\": \"No clipped words observed.\",\n  \"unexpected_voice_changes\": \"Speaker switches occur between male and female educational narrators at 00:07 and 00:15.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         }
       ]
     },
@@ -1855,7 +1919,9 @@
           "excerpt_sha256": "58ce6ce8070c98e0c39bba5621faf97791a3be12f49d1dea6a71382a2dfa35a0",
           "decoded_sample_count": 202080,
           "expected_context": "Inspect the area and make a report At the entrance, the wet floor could cause a BHW or visitor to slip.",
-          "model_response": "```json\n{\n  \"transcript\": \"Inspect the area and make a report. At the entrance, the wet floor could cause a BHW or visitor to slip.\",\n  \"observations\": {\n    \"role_distinctions\": \"The audio features two distinct voices: Speaker 1 (adult female) speaks from 00:00.00 to 00:02.35, followed by a pause, and Speaker 2 (higher-pitched/child-like voice) speaks from 00:03.15 to 00:07.85.\",\n    \"unexpected_voice_changes\": \"A shift in vocal profile occurs between 00:02.35 and 00:03.15, transitioning between two different speakers/personas.\",\n    \"ending_completeness\": \"The final word 'slip' ends cleanly around 00:07.85 with natural decay and no premature cutoff.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"audible_speech\": \"All speech is clearly audible with minimal background noise.\",\n    \"negation\": \"No negative constructions (e.g., 'not', 'no', 'never') are present.\",\n    \"apple_pronunciation\": \"The word 'apple' does not appear in this excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all words and acronyms ('BHW' - Barangay Health Worker) are clearly enunciated.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Inspect the area and make a report. At the entrance, the wet floor could cause a BHW or visitor to slip.\",\n  \"observations\": {\n    \"role_distinctions\": \"The audio features two distinct voices: Speaker 1 (adult female) speaks from 00:00.00 to 00:02.35, followed by a pause, and Speaker 2 (higher-pitched/child-like voice) speaks from 00:03.15 to 00:07.85.\",\n    \"unexpected_voice_changes\": \"A shift in vocal profile occurs between 00:02.35 and 00:03.15, transitioning between two different speakers/personas.\",\n    \"ending_completeness\": \"The final word 'slip' ends cleanly around 00:07.85 with natural decay and no premature cutoff.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"audible_speech\": \"All speech is clearly audible with minimal background noise.\",\n    \"negation\": \"No negative constructions (e.g., 'not', 'no', 'never') are present.\",\n    \"apple_pronunciation\": \"The word 'apple' does not appear in this excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all words and acronyms ('BHW' - Barangay Health Worker) are clearly enunciated.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "body",
@@ -1865,7 +1931,9 @@
           "excerpt_sha256": "3fb35718aa3cdc27e3a0ee376487f00f9c6d85da654d34bc4779d6d21de947c6",
           "decoded_sample_count": 125760,
           "expected_context": "At the entrance, the wet floor could cause a BHW or visitor to slip.",
-          "model_response": "```json\n{\n  \"transcript\": \"At the entrance, the wet floor could cause a BHW or visitor to slip.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'apple' does not occur in this excerpt.\",\n    \"negation\": \"No negative grammatical constructions (e.g., not, never) are present.\",\n    \"role_distinctions\": \"The speaker contrasts roles or individuals by stating 'a BHW or visitor' between 00:02.80 and 00:04.20.\",\n    \"ending_completeness\": \"The audio ends cleanly at 00:05.17 following the word 'slip', with natural closure.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible throughout the clip.\",\n    \"clipped_words\": \"No clipped or cut-off words observed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent across the audio.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"At the entrance, the wet floor could cause a BHW or visitor to slip.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'apple' does not occur in this excerpt.\",\n    \"negation\": \"No negative grammatical constructions (e.g., not, never) are present.\",\n    \"role_distinctions\": \"The speaker contrasts roles or individuals by stating 'a BHW or visitor' between 00:02.80 and 00:04.20.\",\n    \"ending_completeness\": \"The audio ends cleanly at 00:05.17 following the word 'slip', with natural closure.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible throughout the clip.\",\n    \"clipped_words\": \"No clipped or cut-off words observed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent across the audio.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "critical",
@@ -1875,7 +1943,9 @@
           "excerpt_sha256": "cab959fdf77f22775e8f765fca0438010c0588c556284615f47aabe09d02324d",
           "decoded_sample_count": 276960,
           "expected_context": "Do not lift the obstruction alone; ask responsible staff to address it and confirm a safe route. A sink without soap is an incomplete hand-hygiene station.",
-          "model_response": "```json\n{\n  \"transcript\": \"Do not lift the obstruction alone. Ask responsible staff to address it, and confirm a safe route. A sink without soap is an incomplete hand hygiene station.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'apple' does not appear in this excerpt.\",\n    \"negation\": \"Clear negation is present and distinctly pronounced with 'Do not' (00:00.00 - 00:00.65) and 'without' (00:07.75 - 00:08.25), along with the negative prefix in 'incomplete' (00:09.15 - 00:09.75).\",\n    \"role_distinctions_and_voice_changes\": \"There is an abrupt voice change across sentences: a female speaker delivers the first topic from 00:00.00 to 00:06.30, followed by a transition to a male speaker delivering an unrelated hygiene instruction from 00:07.00 to 00:11.20.\",\n    \"ending_completeness\": \"The final word 'station' at 00:10.55 - 00:11.20 concludes naturally without clipping.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and well-enunciated in Philippine English.\",\n    \"clipped_words\": \"No clipped or cut-off words detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:06.30 - 00:07.00\",\n      \"description\": \"Noticeable shift in speaker identity and audio context between the first two sentences (female voice) and the third sentence (male voice).\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech segments and phonetic details are clearly audible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Do not lift the obstruction alone. Ask responsible staff to address it, and confirm a safe route. A sink without soap is an incomplete hand hygiene station.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'apple' does not appear in this excerpt.\",\n    \"negation\": \"Clear negation is present and distinctly pronounced with 'Do not' (00:00.00 - 00:00.65) and 'without' (00:07.75 - 00:08.25), along with the negative prefix in 'incomplete' (00:09.15 - 00:09.75).\",\n    \"role_distinctions_and_voice_changes\": \"There is an abrupt voice change across sentences: a female speaker delivers the first topic from 00:00.00 to 00:06.30, followed by a transition to a male speaker delivering an unrelated hygiene instruction from 00:07.00 to 00:11.20.\",\n    \"ending_completeness\": \"The final word 'station' at 00:10.55 - 00:11.20 concludes naturally without clipping.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and well-enunciated in Philippine English.\",\n    \"clipped_words\": \"No clipped or cut-off words detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:06.30 - 00:07.00\",\n      \"description\": \"Noticeable shift in speaker identity and audio context between the first two sentences (female voice) and the third sentence (male voice).\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech segments and phonetic details are clearly audible.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         },
         {
           "kind": "ending",
@@ -1885,7 +1955,9 @@
           "excerpt_sha256": "7edce785856588bcde2ae517ace85ff30c95b3c9b19869eac8fbbd7a0440026a",
           "decoded_sample_count": 496644,
           "expected_context": "Record four fields: hazard, potential harm, immediate control and contact. “Be careful” is insufficient. Check the condition again; sending a report does not mean the hazard has been corrected. A checklist should lead to controls and follow-up, not merely count hazards.",
-          "model_response": "```json\n{\n  \"transcript\": \"Record four fields: hazard, potential harm, immediate control, and contact. Be careful is insufficient. Check the condition again. Sending a report does not mean the hazard has been corrected. A checklist should lead to controls and follow-up, not merely count hazards.\",\n  \"observations\": {\n    \"role_distinctions\": \"Single consistent speaker providing instructional safety guidance throughout the excerpt.\",\n    \"negation\": \"Clear articulation of negation markers and negative qualifiers, including 'insufficient' (00:08 - 00:09), 'does not mean' (00:12 - 00:13), and 'not merely' (00:18 - 00:19).\",\n    \"apple_pronunciation\": \"The term 'Apple' does not appear in this excerpt.\",\n    \"ending_completeness\": \"The audio concludes fully on 'hazards' with natural trailing decay around 00:20 without being cut off.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and delivered in a measured instructional cadence.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"No unexpected shifts in pitch, volume, speaker identity, or acoustic quality.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is high and speech is fully intelligible.\"\n}\n```"
+          "model_response": "```json\n{\n  \"transcript\": \"Record four fields: hazard, potential harm, immediate control, and contact. Be careful is insufficient. Check the condition again. Sending a report does not mean the hazard has been corrected. A checklist should lead to controls and follow-up, not merely count hazards.\",\n  \"observations\": {\n    \"role_distinctions\": \"Single consistent speaker providing instructional safety guidance throughout the excerpt.\",\n    \"negation\": \"Clear articulation of negation markers and negative qualifiers, including 'insufficient' (00:08 - 00:09), 'does not mean' (00:12 - 00:13), and 'not merely' (00:18 - 00:19).\",\n    \"apple_pronunciation\": \"The term 'Apple' does not appear in this excerpt.\",\n    \"ending_completeness\": \"The audio concludes fully on 'hazards' with natural trailing decay around 00:20 without being cut off.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and delivered in a measured instructional cadence.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"No unexpected shifts in pitch, volume, speaker identity, or acoustic quality.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is high and speech is fully intelligible.\"\n}\n```",
+          "reused_exact_wav_excerpt": true,
+          "reused_same_encoded_source": true
         }
       ]
     },

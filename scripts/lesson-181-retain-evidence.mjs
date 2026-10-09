@@ -3,7 +3,8 @@ import fs from 'node:fs';import path from 'node:path';import {createHash} from '
 const root=path.resolve(import.meta.dirname,'..'),sha=b=>createHash('sha256').update(b).digest('hex');
 const origins=JSON.parse(fs.readFileSync(root+'/docs/lesson-181-evidence-origins.json','utf8'));
 const initial=JSON.parse(fs.readFileSync(root+'/docs/lesson-181-initial-evidence-origins.json'));
-for(const origin of [...initial.archives.map(o=>({...o,initial:true})),...origins.archives]){
+const second=JSON.parse(fs.readFileSync(root+'/docs/lesson-181-second-evidence-origins.json'));
+for(const origin of [...initial.archives.map(o=>({...o,prefix:'initial'})),...second.archives.map(o=>({...o,prefix:'second'})),...origins.archives]){
  const archive=root+'/.preview/'+origin.local_archive;
  if(!fs.existsSync(archive)){
   if(!process.env.GH_TOKEN)throw Error('Read-only Actions token required for retained draft evidence');
@@ -17,7 +18,7 @@ for(const origin of [...initial.archives.map(o=>({...o,initial:true})),...origin
  if(sha(fs.readFileSync(archive))!==origin.zip_sha256)throw Error('Local retained evidence hash mismatch');
  execFileSync('python3',['-c',String.raw`
 import pathlib,sys,zipfile
-archive,root,initial=sys.argv[1:];root=pathlib.Path(root);initial=initial=='true'
+archive,root,prefix=sys.argv[1:];root=pathlib.Path(root);initial=prefix!='current'
 with zipfile.ZipFile(archive) as z:
  names=z.namelist();assert len(names)==len(set(names)) and z.testzip() is None
  for name in names:
@@ -26,8 +27,8 @@ with zipfile.ZipFile(archive) as z:
   if not (name.startswith(('.preview/lesson181-raw/','.preview/lesson181-excerpts/')) or name.startswith('remotion/public/safety-identify/shipped-aac-') or name=='lesson-181-published-snapshot.json'):continue
   destination=name
   if initial:
-   destination=name.replace('.preview/lesson181-raw/','.preview/lesson181-initial-raw/').replace('.preview/lesson181-excerpts/','.preview/lesson181-initial-excerpts/').replace('remotion/public/safety-identify/shipped-aac-','.preview/lesson181-initial-media/shipped-aac-')
-   if name=='lesson-181-published-snapshot.json':destination='.preview/lesson181-initial-media/published-snapshot.json'
+   destination=name.replace('.preview/lesson181-raw/',f'.preview/lesson181-{prefix}-raw/').replace('.preview/lesson181-excerpts/',f'.preview/lesson181-{prefix}-excerpts/').replace('remotion/public/safety-identify/shipped-aac-',f'.preview/lesson181-{prefix}-media/shipped-aac-')
+   if name=='lesson-181-published-snapshot.json':destination=f'.preview/lesson181-{prefix}-media/published-snapshot.json'
   output=root/destination;b=z.read(name);output.parent.mkdir(parents=True,exist_ok=True)
   if output.exists():assert output.read_bytes()==b,'Retained evidence conflict: '+name
   else:output.write_bytes(b)
@@ -36,6 +37,6 @@ with zipfile.ZipFile(archive) as z:
    if combined.exists():assert combined.read_bytes()==b
    else:combined.write_bytes(b)
 assert list((root/'.preview/lesson181-raw').glob('*.json')),'Original requests/responses missing'
-`,archive,root,String(Boolean(origin.initial))],{stdio:'inherit'});
+`,archive,root,origin.prefix??'current'],{stdio:'inherit'});
 }
 console.log('Retained pinned raw requests/responses, actual focused excerpts, decoded AAC and bounded published snapshot.');

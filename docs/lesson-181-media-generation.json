@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-10-09T08:40:42.943Z",
-  "source_commit": "3b37395852b45228793794dbe9b4d2ccde3fa520",
+  "generated_date": "2026-10-09T09:00:09.700Z",
+  "source_commit": "b73e06e329eaea845858920d56cdbde8f26af2ac",
   "owner_review": "pending",
   "render_input_sha256": "0fc6de8416741bf2a18d511f59ed00406b909911e7da29d389c1444c96eba97b",
-  "render_cached": false,
+  "render_cached": true,
   "target_read_tracks": 12,
   "pending_read_tracks": [],
   "read_generation_error": null,
@@ -75,7 +75,8 @@
       "poster": {
         "path": "/training/bhw-1-8/safety-identify-gemini-fil-3e7a0b516a9e-poster.jpg",
         "content_hash": "3e7a0b516a9e040f9356f818e2c6df42df4a7eab0c259474c5fd7c180d1e6cbe"
-      }
+      },
+      "render_reused_exact_input_hash": true
     },
     {
       "language": "en",
@@ -143,7 +144,8 @@
       "poster": {
         "path": "/training/bhw-1-8/safety-identify-gemini-en-1b972f8a6e9c-poster.jpg",
         "content_hash": "1b972f8a6e9c1e4c511ae630d7cc4abdd41ba27a6ec5e2c088709ad607887941"
-      }
+      },
+      "render_reused_exact_input_hash": true
     }
   ]
 }

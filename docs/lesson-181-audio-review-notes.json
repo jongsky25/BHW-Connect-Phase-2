@@ -3,13 +3,14 @@
   "method": "Summarizes actual full and focused model observations; preserves raw disagreements without inferring human listening or approval.",
   "full_reviews": 14,
   "focused_reviews": 56,
-  "full_report_sha256": "54757291dc816e690d7d18f0a9671fcb103cf1bc624cdface7a3c5c2782f7976",
-  "focused_report_sha256": "b34df7b79bbe75a0621372d6c877f92a69cfa9f7826b9142f7af1bcdfdad0ab8",
+  "full_report_sha256": "91b528f97710ed8d4b0aad6bc2b2a9b886fc799048d3c29ecd580b2bc52dce7e",
+  "focused_report_sha256": "f34c5678accac01b4a358acd6211863c499ea2eaa52cb260a49396486b40dd0c",
   "human_listening": "pending",
   "owner_package_review": "pending",
   "local_policy_SME_review": "pending",
   "authorized_local_clinical_review": "pending",
   "name_alias": "none; Apple remains as written; actual name was reported intelligible",
+  "wet_west_reconciliation": "The authored prompt says wet entrance, not west entrance. Focused comments expecting west are context mistakes; retained transcripts saying wet match the source.",
   "coverage_reconciliation": "Each recording covers its assigned screen. The five-hazards screen enumerates all five groups. Requests to enumerate all five in introductory, scope or check prompts are review-prompt overreach, not missing authored text.",
   "prior_generation": {
     "full_reviews": 14,
@@ -22,12 +23,12 @@
       "initial_sha256": "7efb2c9ef5acbfc915e62bd3a8d77fc373bdc7f4d919dec414bf69ab3aa7f405",
       "current_sha256": "2aaa8c73d891100632fb25bccb8af39602129299a2600d3c01b868ab1536b458",
       "regenerated": true,
-      "reused_exact_review": false
+      "reused_exact_review": true
     },
     {
       "record": "read-safety-identify-ana-en",
       "initial_sha256": "56b09bb5ceb6f79ee875c154cdb66be9c13e120a5ff9f8bad46350ff45c6b8cd",
-      "current_sha256": "6edcd3c9d3034189f1384af71f2d52b3d222d32352d8af074dd0244c8adcc111",
+      "current_sha256": "847deefce0e589b705929a3c714c022d5254a3ea5b3459f08104150c827692dd",
       "regenerated": true,
       "reused_exact_review": false
     },
@@ -43,14 +44,14 @@
       "initial_sha256": "95c2ba5dea66cda99ae310680e97be537cb829f668cbd517ae9b4d238ea8990e",
       "current_sha256": "c9214683a46cd5140cc9687313a2b2917106ccbeb6bf7dc055d8fa5271e3199b",
       "regenerated": true,
-      "reused_exact_review": false
+      "reused_exact_review": true
     },
     {
       "record": "read-safety-identify-scope-and-contact-fil",
       "initial_sha256": "3fff53b9ac4a63345742fdb61b71cb24713c80a27333b4e6bf6e4e0d88cc6921",
       "current_sha256": "e4c2fdae7e874f521a2937cff5be514d1bfbacc4e139021775441923ac8e200b",
       "regenerated": true,
-      "reused_exact_review": false
+      "reused_exact_review": true
     },
     {
       "record": "read-safety-identify-scope-and-contact-en",
@@ -64,21 +65,21 @@
       "initial_sha256": "8fafcb39a24395ac85742aadd7b4bb14c08b1b571b8706f4f02bdbf4e0fb5d21",
       "current_sha256": "1b93aa16006431a93c57ed88c4c107e1488ce57b715b2de3623165830ca58729",
       "regenerated": true,
-      "reused_exact_review": false
+      "reused_exact_review": true
     },
     {
       "record": "read-safety-identify-five-hazards-en",
       "initial_sha256": "f85b664451f70fdce7d77a46c038c6d7394bba5b3af4716468faf87f55c69732",
       "current_sha256": "5118bf3069f1136f8d23451f630536d2eb7955f22cbd9491cc11586b1d671994",
       "regenerated": true,
-      "reused_exact_review": false
+      "reused_exact_review": true
     },
     {
       "record": "read-safety-identify-practice-fil",
       "initial_sha256": "dad1973abbdd881ee4d78d6db7e0a91e98bf8f2fdc95f2a116a65dd14a34ac2a",
       "current_sha256": "83cd0e486c329ec3bb333e5ad08de9855c24c0c2ca76e31ccba85106c69aa653",
       "regenerated": true,
-      "reused_exact_review": false
+      "reused_exact_review": true
     },
     {
       "record": "read-safety-identify-practice-en",
@@ -92,21 +93,21 @@
       "initial_sha256": "329ac2cc3bed9e512a590e2c238a57426086e32d153fdeab7e2c1fc195c33fd3",
       "current_sha256": "d25276b193b9a12b1927138cf5c6512110d42cc6afad8f4fce663fd581a6463b",
       "regenerated": true,
-      "reused_exact_review": false
+      "reused_exact_review": true
     },
     {
       "record": "read-safety-identify-check-en",
       "initial_sha256": "212af4c9826d0f504c7f132576fee5081c3b95de9b44f6a489f7dbf11801d4dd",
       "current_sha256": "906120d1b315e97eee6c5aff0b464df2bdae2a7a384d61f2efe92f9c3ba6312f",
       "regenerated": true,
-      "reused_exact_review": false
+      "reused_exact_review": true
     },
     {
       "record": "story-fil",
       "initial_sha256": "8cf340caa47a1634c93dd8664c8afeccacf172bc67408db6237ee23f124e6e45",
       "current_sha256": "64de896d6b6ccfa938ccd80ad80572d6e32d298f0175cccdd1bf7d8b2c6c5d85",
       "regenerated": true,
-      "reused_exact_review": false
+      "reused_exact_review": true
     },
     {
       "record": "story-en",
@@ -117,11 +118,6 @@
     }
   ],
   "unresolved_concerns": [
-    {
-      "record": "read-safety-identify-ana-en",
-      "kind": "full narrator concern; compare focused review",
-      "detail": "{\"delivery\":{\"audible_throughout\":true,\"pacing\":\"Deliberate, instructional, and steady with noticeable sentence-boundary pauses.\",\"pitch_pace_variation\":\"Moderate pitch inflection characteristic of synthesized educational narration, but generally clear and intelligible.\",\"narrator_timbre_changes\":[{\"timestamp\":\"00:00 - 00:02\",\"description\":\"Female narrator voice ('Before Apple starts work,').\"},{\"timestamp\":\"00:02 - 00:12\",\"description\":\"Switches to a deeper male narrator voice ('Apple is a BHW... not a DOH quotation.').\"},{\"timestamp\":\"00:13 - 00:24\",\"description\":\"Switches back to female narrator voice ('From a safe position... or touch its contents.').\"},{\"timestamp\":\"00:25 - 00:28\",\"description\":\"Switches to male narrator voice ('\\\"I will be careful\\\" is not a sufficient report.').\"},{\"timestamp\":\"00:29 - 00:36\",\"description\":\"Switches to female narrator voice ('Before starting... and a reporting contact.').\"},{\"timestamp\":\"00:38 - 00:43\",\"description\":\"Switches to male narrator voice ('The contact and safe route... confirm them first.').\"},{\"timestamp\":\"00:44 - 00:49\",\"description\":\"Switches to female narrator voice ('Workplace safety starts... before the task.').\"}]},\"concerns\":[{\"area\":\"Hazard coverage and required educational points\",\"details\":\"Specific observed hazards (wet entrance, container near fill line, hot route), potential harm ('who could be harmed'), safe immediate controls (not opening/touching the sharps box), and unknown contact verification ('The contact and safe route are still unknown. She needs to confirm them first.') are clearly articulated without inventing completed corrective actions. However, a comprehensive categorization into five distinct hazard groups is not explicitly enumerated in the audio.\",\"timestamps\":\"00:14 - 00:43\"},{\"area\":\"Frequent voice switching\",\"details\":\"Frequent alternating between male and female voices between sequential sentences may sound disjointed if a single continuous narrator was intended.\",\"timestamps\":\"Throughout (00:00 - 00:49)\"}]}"
-    },
     {
       "record": "read-ana-fil",
       "excerpt": "ending",
@@ -171,6 +167,51 @@
       ]
     },
     {
+      "record": "read-scope-and-contact-fil",
+      "excerpt": "critical",
+      "kind": "focused narrator observation, including observations omitted from possible_defects",
+      "detail": "There are two distinct speakers: a male voice asking the question (00:00 - 00:01.85) and a female voice providing the response/instructions (00:02.50 - 00:10.45)."
+    },
+    {
+      "record": "shipped-story-fil",
+      "excerpt": "critical",
+      "kind": "focused narrator observation, including observations omitted from possible_defects",
+      "detail": "There is a distinct speaker/role shift from a male narrator (00:00 - 00:07) to a female voice delivering character internal thought/dialogue (00:08 - 00:19)."
+    },
+    {
+      "record": "read-ana-en",
+      "excerpt": "head",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp_range": [
+            2.15,
+            2.45
+          ],
+          "description": "Voice identity shifts abruptly between the introductory phrase and the following sentence."
+        }
+      ]
+    },
+    {
+      "record": "read-ana-en",
+      "excerpt": "critical",
+      "kind": "focused observation; compare full review",
+      "detail": [
+        {
+          "type": "speaker_change",
+          "timestamp_range": "00:04.60 - 00:05.10",
+          "description": "Noticeable transition between two different voices/speakers between the first and second sentences."
+        }
+      ]
+    },
+    {
+      "record": "read-check-en",
+      "excerpt": "head",
+      "kind": "focused narrator observation, including observations omitted from possible_defects",
+      "detail": "There are two distinct speaker roles/voices: an adult instructional voice asking 'Choose the next step?' from 00:00.0 to 00:01.3, followed by a different, slightly flatter/synthesized character voice reading 'First, view the west entrance picture.' from 00:01.8 to 00:04.3."
+    },
+    {
       "record": "read-check-en",
       "excerpt": "head",
       "kind": "focused observation; compare full review",
@@ -192,6 +233,24 @@
           "description": "The speaker clearly pronounces 'wet' (/wɛt/), which may be a phonetic slip or misreading if the intended instructional context was 'west'."
         }
       ]
+    },
+    {
+      "record": "read-five-hazards-en",
+      "excerpt": "ending",
+      "kind": "focused narrator observation, including observations omitted from possible_defects",
+      "detail": "Two alternating speakers are present: a male speaker from 00:00 to 00:06 and 00:15 to 00:19, and a female speaker from 00:07 to 00:14."
+    },
+    {
+      "record": "read-five-hazards-en",
+      "excerpt": "ending",
+      "kind": "focused narrator observation, including observations omitted from possible_defects",
+      "detail": "Speaker switches occur between male and female educational narrators at 00:07 and 00:15."
+    },
+    {
+      "record": "read-inspect-en",
+      "excerpt": "head",
+      "kind": "focused narrator observation, including observations omitted from possible_defects",
+      "detail": "The audio features two distinct voices: Speaker 1 (adult female) speaks from 00:00.00 to 00:02.35, followed by a pause, and Speaker 2 (higher-pitched/child-like voice) speaks from 00:03.15 to 00:07.85."
     },
     {
       "record": "read-inspect-en",

@@ -12,4 +12,6 @@ The first media attempt and its full/focused model reviews are retained separate
 
 The draft preserves the original lesson identity, objectives, four resume anchors/concepts, quiz wording/options/correct index, old selected narration and complete history, prior public bytes and all sibling lessons. Exact successor/predecessor receipts allow historical guards to check their immutable views while current tests independently check the new lesson.
 
-**Release state:** draft, unmerged, unpublished. Human listening, owner review, authorized local clinical review and local policy SME signoff remain pending. This package does not authorize production loads or release. The final package verification records actual test/browser/render counts and its limitations.
+**Release state:** draft, unmerged, unpublished. Human listening, owner review, authorized local clinical review and local policy SME signoff remain pending. This package does not authorize production loads or release. Full normal CI remains blocked by the pinned base’s unfinished twelve 1.7.3 narration tracks, recorded in its earlier owner approval and verification. This PR preserves those source/media selections and keeps the global guard enabled. The package identifies this inherited failure rather than claiming a green CI run.
+
+The final package verification records actual test/browser/render counts and its limitations.

@@ -87486,74 +87486,74 @@
       "sections": {
         "ana": {
           "en": {
-            "src": "/training/audio/08-osh/safety-identify/ana.en.02fe8109dda4.mp3",
+            "src": "/training/audio/08-osh/safety-identify/ana.en.7e6adff41d37.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "02fe8109dda44d6405e97200748cd945021588d7d274333056c277699216f57d",
-            "sha256": "6edcd3c9d3034189f1384af71f2d52b3d222d32352d8af074dd0244c8adcc111",
-            "duration_seconds": 49.633,
+            "content_hash": "7e6adff41d37c4f5b34f08c80a2a4b4831b1362261adddaffc463c3869c1a388",
+            "sha256": "847deefce0e589b705929a3c714c022d5254a3ea5b3459f08104150c827692dd",
+            "duration_seconds": 51.513,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Before Apple starts work",
                 "start_ms": 0,
-                "end_ms": 1960
+                "end_ms": 2280
               },
               {
                 "zone": "body",
                 "index": 0,
                 "text": "Apple is a BHW at a fictional health station with a planned household visit.",
-                "start_ms": 2260,
-                "end_ms": 7860
+                "start_ms": 2580,
+                "end_ms": 8780
               },
               {
                 "zone": "body",
                 "index": 1,
                 "text": "The new dialogue is an adaptation, not a DOH quotation.",
-                "start_ms": 8160,
-                "end_ms": 12680
+                "start_ms": 9080,
+                "end_ms": 13960
               },
               {
                 "zone": "body",
                 "index": 2,
                 "text": "From a safe position, she notices a wet entrance, a container near its fill line and a hot route.",
-                "start_ms": 12980,
-                "end_ms": 20500
+                "start_ms": 14260,
+                "end_ms": 21500
               },
               {
                 "zone": "body",
                 "index": 3,
                 "text": "She does not open the sharps box or touch its contents.",
-                "start_ms": 20800,
-                "end_ms": 25040
+                "start_ms": 21800,
+                "end_ms": 25960
               },
               {
                 "zone": "body",
                 "index": 4,
                 "text": "“I will be careful” is not a sufficient report.",
-                "start_ms": 25340,
-                "end_ms": 29180
+                "start_ms": 26260,
+                "end_ms": 30140
               },
               {
                 "zone": "body",
                 "index": 5,
                 "text": "Before starting, she identifies the hazard, who could be harmed, an immediate control and a reporting contact.",
-                "start_ms": 29480,
-                "end_ms": 37400
+                "start_ms": 30440,
+                "end_ms": 38720
               },
               {
                 "zone": "body",
                 "index": 6,
                 "text": "The contact and safe route are still unknown; she needs to confirm them first.",
-                "start_ms": 37700,
-                "end_ms": 43340
+                "start_ms": 39020,
+                "end_ms": 44900
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Workplace safety starts by identifying hazards and local requirements before the task.",
-                "start_ms": 43640,
-                "end_ms": 49560
+                "start_ms": 45200,
+                "end_ms": 51440
               }
             ]
           },
@@ -133122,6 +133122,971 @@
                   "text": "Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.",
                   "start_ms": 56900,
                   "end_ms": 62540
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "module": "08-osh",
+        "sections": {
+          "ana": {
+            "en": {
+              "src": "/training/audio/08-osh/safety-identify/ana.en.02fe8109dda4.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "02fe8109dda44d6405e97200748cd945021588d7d274333056c277699216f57d",
+              "sha256": "6edcd3c9d3034189f1384af71f2d52b3d222d32352d8af074dd0244c8adcc111",
+              "duration_seconds": 49.633,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Before Apple starts work",
+                  "start_ms": 0,
+                  "end_ms": 1960
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Apple is a BHW at a fictional health station with a planned household visit.",
+                  "start_ms": 2260,
+                  "end_ms": 7860
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The new dialogue is an adaptation, not a DOH quotation.",
+                  "start_ms": 8160,
+                  "end_ms": 12680
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "From a safe position, she notices a wet entrance, a container near its fill line and a hot route.",
+                  "start_ms": 12980,
+                  "end_ms": 20500
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "She does not open the sharps box or touch its contents.",
+                  "start_ms": 20800,
+                  "end_ms": 25040
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "“I will be careful” is not a sufficient report.",
+                  "start_ms": 25340,
+                  "end_ms": 29180
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Before starting, she identifies the hazard, who could be harmed, an immediate control and a reporting contact.",
+                  "start_ms": 29480,
+                  "end_ms": 37400
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "The contact and safe route are still unknown; she needs to confirm them first.",
+                  "start_ms": 37700,
+                  "end_ms": 43340
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Workplace safety starts by identifying hazards and local requirements before the task.",
+                  "start_ms": 43640,
+                  "end_ms": 49560
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/08-osh/safety-identify/ana.fil.5c67663059d1.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "5c67663059d120672bd44bd09dcd522e0b714ddf9dd07493672411ebdf0691cc",
+              "sha256": "2aaa8c73d891100632fb25bccb8af39602129299a2600d3c01b868ab1536b458",
+              "duration_seconds": 56.738,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Bago magsimula si Apple",
+                  "start_ms": 0,
+                  "end_ms": 2400
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Si Apple ay BHW sa kathang-isip na health station na may nakaplanong household visit.",
+                  "start_ms": 2700,
+                  "end_ms": 9700
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ang bagong usapan ay adaptasyon, hindi sipi mula sa DOH.",
+                  "start_ms": 10000,
+                  "end_ms": 14960
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Mula sa ligtas na puwesto, napansin niya ang basang pasukan, lalagyang malapit sa fill line at mainit na ruta.",
+                  "start_ms": 15260,
+                  "end_ms": 23700
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Hindi niya binubuksan o hinahawakan ang laman ng sharps box.",
+                  "start_ms": 24000,
+                  "end_ms": 28200
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Ang “mag-iingat ako” ay hindi sapat na ulat.",
+                  "start_ms": 28500,
+                  "end_ms": 33300
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Bago magsimula, tinutukoy niya ang panganib, sino ang maaaring masaktan, agarang kontrol at taong aabisuhan.",
+                  "start_ms": 33600,
+                  "end_ms": 42840
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Hindi pa tiyak ang contact at ligtas na ruta; kailangan muna niyang kumpirmahin ang mga ito.",
+                  "start_ms": 43140,
+                  "end_ms": 49540
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain.",
+                  "start_ms": 49840,
+                  "end_ms": 56680
+                }
+              ]
+            }
+          },
+          "check": {
+            "en": {
+              "src": "/training/audio/08-osh/safety-identify/check.en.7fbfecb04be1.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "7fbfecb04be13b415ba95715db29a7cc7f084322fcf89c1cbdd97cec51c03f5c",
+              "sha256": "906120d1b315e97eee6c5aff0b464df2bdae2a7a384d61f2efe92f9c3ba6312f",
+              "duration_seconds": 25.443,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Choose the next step",
+                  "start_ms": 0,
+                  "end_ms": 1720
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "First view the wet-entrance picture.",
+                  "start_ms": 2020,
+                  "end_ms": 4980
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Choose an answer and explain why before opening the feedback.",
+                  "start_ms": 5280,
+                  "end_ms": 9840
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Compare it with your practice report.",
+                  "start_ms": 10140,
+                  "end_ms": 12180
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Selecting an answer does not establish competence; an actual report and feedback are still needed.",
+                  "start_ms": 12480,
+                  "end_ms": 18960
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Recognizing a hazard should lead to a specific control and responsible contact.",
+                  "start_ms": 19260,
+                  "end_ms": 25380
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/08-osh/safety-identify/check.fil.53c57ccf4972.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "53c57ccf4972e53bf841fd72b947d74db0e8d319dbb4c6989d9fef5a736a441d",
+              "sha256": "d25276b193b9a12b1927138cf5c6512110d42cc6afad8f4fce663fd581a6463b",
+              "duration_seconds": 28.604,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Piliin ang susunod na hakbang",
+                  "start_ms": 0,
+                  "end_ms": 2440
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Tingnan muna ang larawan ng basang pasukan.",
+                  "start_ms": 2740,
+                  "end_ms": 5540
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Piliin ang isang sagot at ipaliwanag kung bakit bago buksan ang feedback.",
+                  "start_ms": 5840,
+                  "end_ms": 11280
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Ihambing sa ulat mo sa pagsasanay.",
+                  "start_ms": 11580,
+                  "end_ms": 14420
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang pagpili ng sagot ay hindi pa patunay ng kakayahan; kailangan pa ng aktuwal na ulat at feedback.",
+                  "start_ms": 14720,
+                  "end_ms": 22360
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
+                  "start_ms": 22660,
+                  "end_ms": 28540
+                }
+              ]
+            }
+          },
+          "five-hazards": {
+            "en": {
+              "src": "/training/audio/08-osh/safety-identify/five-hazards.en.bd71388dc634.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "bd71388dc634b5aa54b28f208140f399befec325727fee3d8da6059e71611f5e",
+              "sha256": "5118bf3069f1136f8d23451f630536d2eb7955f22cbd9491cc11586b1d671994",
+              "duration_seconds": 71.184,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Recognize five groups",
+                  "start_ms": 0,
+                  "end_ms": 2360
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Use five groups in practice.",
+                  "start_ms": 2660,
+                  "end_ms": 4820
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "First, sharps: a container near its fill line presents a puncture risk; do not touch the contents, and report to authorized staff.",
+                  "start_ms": 5120,
+                  "end_ms": 14600
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Second, infection exposure: missing soap means a complete hand-hygiene arrangement is needed before the related task.",
+                  "start_ms": 14900,
+                  "end_ms": 23060
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Third, musculoskeletal strain: a heavy bag on a long walk could cause discomfort; request help or adjust the load under the local plan.",
+                  "start_ms": 23360,
+                  "end_ms": 32760
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Fourth, stress or excessive workload: simultaneous tasks without breaks could cause fatigue and errors; clarify priorities and request support.",
+                  "start_ms": 33060,
+                  "end_ms": 44020
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Fifth, accidents: a wet floor or blocked exit could cause a slip or delay escape.",
+                  "start_ms": 44320,
+                  "end_ms": 51520
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Field heat is an additional consideration: confirm breaks, water and a safe route.",
+                  "start_ms": 51820,
+                  "end_ms": 58660
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "These are possible effects, not diagnoses.",
+                  "start_ms": 58960,
+                  "end_ms": 62600
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "PPE alone does not resolve every hazard.",
+                  "start_ms": 62900,
+                  "end_ms": 66460
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Confirm unknowns and make the report specific before work.",
+                  "start_ms": 66760,
+                  "end_ms": 71120
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/08-osh/safety-identify/five-hazards.fil.4ee5ad61667c.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "4ee5ad61667c7675b0dc0320aae43c9948de58102eb963581e056188a172774b",
+              "sha256": "1b93aa16006431a93c57ed88c4c107e1488ce57b715b2de3623165830ca58729",
+              "duration_seconds": 85.185,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Kilalanin ang limang grupo",
+                  "start_ms": 0,
+                  "end_ms": 2320
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Limang grupo ang gagamitin sa pagsasanay.",
+                  "start_ms": 2620,
+                  "end_ms": 5580
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Una, sharps: lalagyang malapit sa fill line, na may panganib ng tusok; huwag hawakan ang laman, iulat sa awtorisadong staff.",
+                  "start_ms": 5880,
+                  "end_ms": 16560
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Ikalawa, exposure sa impeksyon: kulang ang sabon sa hugasan, kaya kailangan ng kumpletong hand-hygiene arrangement bago ang kaugnay na gawain.",
+                  "start_ms": 16860,
+                  "end_ms": 27620
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ikatlo, strain sa katawan: mabigat na bag sa mahabang lakad, na maaaring magdulot ng pananakit; humingi ng tulong o baguhin ang dala ayon sa lokal na plano.",
+                  "start_ms": 27920,
+                  "end_ms": 40400
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Ikaapat, stress o sobrang trabaho: magkakasabay na gawain na walang pahinga, na maaaring magdulot ng pagod at pagkakamali; linawin ang prayoridad at humingi ng suporta.",
+                  "start_ms": 40700,
+                  "end_ms": 54780
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Ikalima, aksidente: basang sahig o harang sa labasan, na maaaring magdulot ng pagkadulas o pagkaantala sa paglabas.",
+                  "start_ms": 55080,
+                  "end_ms": 65440
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Ang init sa field ay dagdag na konsiderasyon: kumpirmahin ang pahinga, tubig at ligtas na ruta.",
+                  "start_ms": 65740,
+                  "end_ms": 72500
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Mga posibleng epekto ito, hindi diagnosis.",
+                  "start_ms": 72800,
+                  "end_ms": 76480
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Hindi nalulutas ng PPE lamang ang bawat panganib.",
+                  "start_ms": 76780,
+                  "end_ms": 80220
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.",
+                  "start_ms": 80520,
+                  "end_ms": 85120
+                }
+              ]
+            }
+          },
+          "inspect": {
+            "en": {
+              "src": "/training/audio/08-osh/safety-identify/inspect.en.f562f5a7785d.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "f562f5a7785ddfcb654bc1a4a8368bbd037f05d3bbbcd77e1592f321c752d4b7",
+              "sha256": "c9214683a46cd5140cc9687313a2b2917106ccbeb6bf7dc055d8fa5271e3199b",
+              "duration_seconds": 61.753,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Inspect the area and make a report",
+                  "start_ms": 0,
+                  "end_ms": 2880
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "At the entrance, the wet floor could cause a BHW or visitor to slip.",
+                  "start_ms": 3180,
+                  "end_ms": 8420
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "From a safe position, keep people away from the wet area and request correction from designated staff; confirm who that is.",
+                  "start_ms": 8720,
+                  "end_ms": 16880
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "A blocked exit could delay escape.",
+                  "start_ms": 17180,
+                  "end_ms": 20140
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Do not lift the obstruction alone; ask responsible staff to address it and confirm a safe route.",
+                  "start_ms": 20440,
+                  "end_ms": 27040
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "A sink without soap is an incomplete hand-hygiene station.",
+                  "start_ms": 27340,
+                  "end_ms": 31980
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Report the missing supply and request an approved alternative before a task requiring it; gloves do not replace handwashing.",
+                  "start_ms": 32280,
+                  "end_ms": 40760
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Record four fields: hazard, potential harm, immediate control and contact.",
+                  "start_ms": 41060,
+                  "end_ms": 47740
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "“Be careful” is insufficient.",
+                  "start_ms": 48040,
+                  "end_ms": 50760
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Check the condition again; sending a report does not mean the hazard has been corrected.",
+                  "start_ms": 51060,
+                  "end_ms": 56140
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "A checklist should lead to controls and follow-up, not merely count hazards.",
+                  "start_ms": 56440,
+                  "end_ms": 61680
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/08-osh/safety-identify/inspect.fil.27741d3be8ec.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "27741d3be8ec1c34f8ff18b958bf8eb19665769f7bf39bb292d5d66b8c36ca8f",
+              "sha256": "d9f202544a9338a2440b39fd60584fb769c27d91aba25a6b07a99b30508f7867",
+              "duration_seconds": 71.393,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Suriin ang lugar at gumawa ng ulat",
+                  "start_ms": 0,
+                  "end_ms": 3480
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Sa pasukan, maaaring madulas ang BHW o bisita sa basang sahig.",
+                  "start_ms": 3780,
+                  "end_ms": 9940
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ilayo muna ang tao sa basang bahagi mula sa ligtas na puwesto at humingi ng pagwawasto sa nakatalagang staff; kumpirmahin kung sino iyon.",
+                  "start_ms": 10240,
+                  "end_ms": 19680
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Sa nakaharang na labasan, maaaring maantala ang paglabas.",
+                  "start_ms": 19980,
+                  "end_ms": 24900
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Huwag mag-isa na magbuhat ng harang; ipaayos sa responsableng staff at kumpirmahin ang ligtas na daanan.",
+                  "start_ms": 25200,
+                  "end_ms": 32400
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Sa hugasang walang sabon, hindi kumpleto ang hand-hygiene station.",
+                  "start_ms": 32700,
+                  "end_ms": 37700
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Iulat ang kulang at hingin ang aprubadong alternatibo bago ang gawaing nangangailangan nito; hindi kapalit ng paghuhugas ang guwantes.",
+                  "start_ms": 38000,
+                  "end_ms": 47920
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Isulat ang apat: panganib, posibleng pinsala, agarang kontrol at contact.",
+                  "start_ms": 48220,
+                  "end_ms": 55500
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Hindi sapat ang “mag-ingat.”",
+                  "start_ms": 55800,
+                  "end_ms": 58200
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Balikan ang kalagayan; hindi ibig sabihin ng naipadalang ulat na naayos na ang panganib.",
+                  "start_ms": 58500,
+                  "end_ms": 64540
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang checklist ay dapat humantong sa kontrol at follow-up, hindi sa pagbilang lamang ng hazards.",
+                  "start_ms": 64840,
+                  "end_ms": 71320
+                }
+              ]
+            }
+          },
+          "practice": {
+            "en": {
+              "src": "/training/audio/08-osh/safety-identify/practice.en.cc34c938fdee.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "cc34c938fdeeef12c3ca019b5f0ca2e719c0eb62126b814f166525e100abd7be",
+              "sha256": "26d2eb7ab0c9bde9215661842e2037212e96f2bbfb987b81b6d97bbf7485f048",
+              "duration_seconds": 67.553,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Report, receive feedback, retry",
+                  "start_ms": 0,
+                  "end_ms": 3920
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Draw five boxes and give a station or home-visit example for each hazard group.",
+                  "start_ms": 4220,
+                  "end_ms": 10860
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Choose one and complete hazard, potential harm, immediate control and contact.",
+                  "start_ms": 11160,
+                  "end_ms": 17480
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "In a triad, the BHW reports, the partner answers using only the scenario card, and the observer checks the four fields.",
+                  "start_ms": 17780,
+                  "end_ms": 26980
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "If the answer is only “be careful,” ask: “Where?",
+                  "start_ms": 27280,
+                  "end_ms": 31760
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "What harm?",
+                  "start_ms": 32060,
+                  "end_ms": 33260
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "What specific action?",
+                  "start_ms": 33560,
+                  "end_ms": 35840
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "To whom and how will you report?”",
+                  "start_ms": 36140,
+                  "end_ms": 39380
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Repeat the report and add when the condition will be checked again.",
+                  "start_ms": 39680,
+                  "end_ms": 44080
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "If the contact is unknown, explain how to confirm it.",
+                  "start_ms": 44380,
+                  "end_ms": 48260
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "Working alone, write or speak using the same checklist; this is rehearsal, not trainer observation.",
+                  "start_ms": 48560,
+                  "end_ms": 55280
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "Before the next duty, perform a short hazard check and confirm the contact.",
+                  "start_ms": 55580,
+                  "end_ms": 61220
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Recognizing a hazard should lead to a specific control and responsible contact.",
+                  "start_ms": 61520,
+                  "end_ms": 67480
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/08-osh/safety-identify/practice.fil.309849ad64f1.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "309849ad64f1a1bd2af28a12134635879855bdcafcbf798fad1869c78aec9d5a",
+              "sha256": "83cd0e486c329ec3bb333e5ad08de9855c24c0c2ca76e31ccba85106c69aa653",
+              "duration_seconds": 74.136,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Gumawa ng ulat, tumanggap ng feedback, ulitin",
+                  "start_ms": 0,
+                  "end_ms": 4280
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Gumuhit ng limang kahon at magbigay ng halimbawa para sa bawat hazard group mula sa station o home visit.",
+                  "start_ms": 4580,
+                  "end_ms": 13060
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Pumili ng isa at kumpletuhin ang panganib, posibleng pinsala, agarang kontrol at contact.",
+                  "start_ms": 13360,
+                  "end_ms": 20880
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Sa triad, ang BHW ang mag-uulat, ang partner ang sasagot gamit lamang ang scenario card at ang observer ang susuri sa apat na field.",
+                  "start_ms": 21180,
+                  "end_ms": 31900
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Kapag “mag-ingat” lang ang sagot, itanong: “Saang lugar?",
+                  "start_ms": 32200,
+                  "end_ms": 36600
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Ano ang pinsala?",
+                  "start_ms": 36900,
+                  "end_ms": 38820
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Anong tiyak na aksyon?",
+                  "start_ms": 39120,
+                  "end_ms": 41000
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Kanino at paano mag-uulat?”",
+                  "start_ms": 41300,
+                  "end_ms": 43980
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Ulitin ang ulat at idagdag kung kailan babalikan ang kalagayan.",
+                  "start_ms": 44280,
+                  "end_ms": 48680
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Kung hindi pa tiyak ang contact, sabihin kung paano ito kukumpirmahin.",
+                  "start_ms": 48980,
+                  "end_ms": 53620
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "Kung mag-isa, sumulat o magsalita gamit ang parehong checklist; ito ay rehearsal, hindi obserbasyon ng trainer.",
+                  "start_ms": 53920,
+                  "end_ms": 61160
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "Bago ang susunod na duty, gawin ang maikling hazard check at kumpirmahin ang contact.",
+                  "start_ms": 61460,
+                  "end_ms": 67820
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
+                  "start_ms": 68120,
+                  "end_ms": 74080
+                }
+              ]
+            }
+          },
+          "scope-and-contact": {
+            "en": {
+              "src": "/training/audio/08-osh/safety-identify/scope-and-contact.en.52f71aee14e7.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "52f71aee14e720c2b89f8f2057bc58e05b6e9621c2ba8eb8484efd77ea59c484",
+              "sha256": "3808328227aaff63d076ceb20351cd368a6a26956f92b2c0f5867c9deaedf04d",
+              "duration_seconds": 54.674,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Clarify scope and contact",
+                  "start_ms": 0,
+                  "end_ms": 2360
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Before assisting, Apple asks authorized staff: “Which tasks are within my training?",
+                  "start_ms": 2660,
+                  "end_ms": 8780
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Who should I notify about the wet entrance?",
+                  "start_ms": 9080,
+                  "end_ms": 11920
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "What if that person cannot be reached?”",
+                  "start_ms": 12220,
+                  "end_ms": 15060
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "She needs to confirm the name or role, contact method and local alternative contact.",
+                  "start_ms": 15360,
+                  "end_ms": 21960
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "In practice, write “unknown—confirm” when an answer is missing.",
+                  "start_ms": 22260,
+                  "end_ms": 27780
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Do not invent a number or policy.",
+                  "start_ms": 28080,
+                  "end_ms": 31360
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Pause the related task when it exceeds training or essential protection is missing, and seek an authorized decision.",
+                  "start_ms": 31660,
+                  "end_ms": 39300
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "For an actual exposure or injury, seek immediate medical evaluation and report through the local process; paperwork must not delay evaluation.",
+                  "start_ms": 39600,
+                  "end_ms": 50000
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Confirm unknowns and make the report specific before work.",
+                  "start_ms": 50300,
+                  "end_ms": 54620
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/08-osh/safety-identify/scope-and-contact.fil.7f825ae1b328.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "7f825ae1b3286d37d5690888cfdffed7047b172577f453cb56cee7201722a7b5",
+              "sha256": "e4c2fdae7e874f521a2937cff5be514d1bfbacc4e139021775441923ac8e200b",
+              "duration_seconds": 60.526,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Linawin ang saklaw at contact",
+                  "start_ms": 0,
+                  "end_ms": 3200
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Bago tumulong, nagtatanong si Apple sa awtorisadong staff: “Aling gawain ang saklaw ng pagsasanay ko?",
+                  "start_ms": 3500,
+                  "end_ms": 10060
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Sino ang dapat kong abisuhan tungkol sa basang pasukan?",
+                  "start_ms": 10360,
+                  "end_ms": 14280
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Paano kung hindi siya makontak?”",
+                  "start_ms": 14580,
+                  "end_ms": 16940
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Kailangan niyang kumpirmahin ang pangalan o tungkulin, paraan ng pakikipag-ugnayan at lokal na alternatibong contact.",
+                  "start_ms": 17240,
+                  "end_ms": 25400
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Sa pagsasanay, isulat ang “hindi pa tiyak—kumpirmahin” kung kulang ang sagot.",
+                  "start_ms": 25700,
+                  "end_ms": 32340
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Huwag mag-imbento ng numero o patakaran.",
+                  "start_ms": 32640,
+                  "end_ms": 35640
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Kapag lampas sa pagsasanay o kulang ang mahalagang proteksyon, ihinto muna ang kaugnay na gawain at humingi ng awtorisadong pasya.",
+                  "start_ms": 35940,
+                  "end_ms": 44500
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Kung may aktuwal na exposure o pinsala, humingi agad ng medikal na pagsusuri at iulat ayon sa lokal na proseso; hindi dapat maantala ng papeles ang pagsusuri.",
+                  "start_ms": 44800,
+                  "end_ms": 55360
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.",
+                  "start_ms": 55660,
+                  "end_ms": 60460
                 }
               ]
             }

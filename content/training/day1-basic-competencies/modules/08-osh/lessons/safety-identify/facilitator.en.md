@@ -4,7 +4,7 @@ Identify five hazard groups and produce one hazard–harm–control–contact re
 
 ## [time-materials] Time and materials
 
-45 guided minutes: 5 opening + 8 modelled inspection + 18 rotating attempts/feedback/retry + 9 debrief + 5 transfer. Across the four OSH lessons, 45 + 60 + 60 + 75 = 240 minutes. This instructional allocation is not certification. Authored independent estimate: 10–13 minutes, using the longer language track. Actual six-screen narration: English 330.24 seconds; Filipino 376.58 seconds. Allow 3–6 minutes for the check, rehearsal and reflection.
+45 guided minutes: 5 opening + 8 modelled inspection + 18 rotating attempts/feedback/retry + 9 debrief + 5 transfer. Across the four OSH lessons, 45 + 60 + 60 + 75 = 240 minutes. This instructional allocation is not certification. Authored independent estimate: 10–13 minutes, using the longer language track. Actual six-screen narration: English 332.12 seconds; Filipino 376.58 seconds. Allow 3–6 minutes for the check, rehearsal and reflection.
 
 For 30 learners, prepare ten triads, bilingual scene/role cards, four-field worksheets, pencils and the reporting aid. Only paper scenes or dummy equipment without needles, fluids or chemical exposure. No live injury, painful exercise, real patient information or local contact invented for a scenario.
 

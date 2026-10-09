@@ -4,7 +4,7 @@ Tukuyin ang limang hazard group at gumawa ng isang ulat na may panganib–pinsal
 
 ## [time-materials] Oras at kagamitan
 
-45 guided minuto: 5 pambungad + 8 modelled inspection + 18 umiikot na attempt/feedback/retry + 9 debrief + 5 transfer. Sa apat na OSH lesson, 45 + 60 + 60 + 75 = 240 minuto. Alokasyon ito ng pagtuturo, hindi certification. Ginawang pagtataya ng sariling pag-aaral: 10–13 minuto, ayon sa mas mahabang salaysay. Aktuwal na anim na screen: English 330.24 segundo; Filipino 376.58 segundo. Maglaan ng 3–6 minuto para sa check, ensayo at pagninilay.
+45 guided minuto: 5 pambungad + 8 modelled inspection + 18 umiikot na attempt/feedback/retry + 9 debrief + 5 transfer. Sa apat na OSH lesson, 45 + 60 + 60 + 75 = 240 minuto. Alokasyon ito ng pagtuturo, hindi certification. Ginawang pagtataya ng sariling pag-aaral: 10–13 minuto, ayon sa mas mahabang salaysay. Aktuwal na anim na screen: English 332.12 segundo; Filipino 376.58 segundo. Maglaan ng 3–6 minuto para sa check, ensayo at pagninilay.
 
 Para sa 30 learner: sampung triad, bilingual scene/role card, apat-na-field worksheet, lapis at reporting aid. Papel o dummy equipment lamang na walang karayom, body fluids o chemical exposure. Walang live injury, masakit na ehersisyo, tunay na patient information o inimbentong contact.
 
