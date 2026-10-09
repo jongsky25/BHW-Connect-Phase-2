@@ -1,6 +1,11 @@
 name: Lesson 1.8.4 draft narration and evidence
 on:
   workflow_dispatch:
+    inputs:
+      review_only:
+        description: Review exact committed media without generating replacement bytes
+        type: boolean
+        default: false
   pull_request:
     branches: [main]
     paths:
@@ -27,7 +32,9 @@ jobs:
       - name: Skip generation after imported evidence is frozen
         id: scope
         run: |
-          if test -f docs/lesson-184-evidence-origins.json; then
+          if test '${{ inputs.review_only }}' = 'true'; then
+            echo "generate=true" >> "$GITHUB_OUTPUT"
+          elif test -f docs/lesson-184-evidence-origins.json; then
             echo "generate=false" >> "$GITHUB_OUTPUT"
           else
             echo "generate=true" >> "$GITHUB_OUTPUT"
@@ -54,7 +61,7 @@ jobs:
           KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
         run: node scripts/lesson-184-published-snapshot.mjs
       - name: Generate target narration with immutable historical media
-        if: steps.scope.outputs.generate == 'true'
+        if: steps.scope.outputs.generate == 'true' && inputs.review_only != true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON184_RAW_EVIDENCE: '1'

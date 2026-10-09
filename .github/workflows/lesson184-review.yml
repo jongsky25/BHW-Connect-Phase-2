@@ -36,9 +36,24 @@ jobs:
           run-id: ${{ inputs.media_run_id }}
           github-token: ${{ github.token }}
           path: .preview/lesson184-import
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson184-generated-evidence
+          run-id: '37902026484'
+          github-token: ${{ github.token }}
+          path: .preview/lesson184-initial-import
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson184-generated-evidence
+          run-id: '37904386204'
+          github-token: ${{ github.token }}
+          path: .preview/lesson184-story-import
       - name: Retain exact raw reviews without replacing committed media
         run: |
           mkdir -p .preview/lesson184-raw .preview/lesson184-excerpts
+          cp -a .preview/lesson184-initial-import/.preview/lesson184-raw/. .preview/lesson184-raw/
+          cp -a .preview/lesson184-story-import/.preview/lesson184-raw/. .preview/lesson184-raw/
+          cp .preview/lesson184-initial-import/lesson-184-published-snapshot.json .
           cp -a .preview/lesson184-import/.preview/lesson184-raw/. .preview/lesson184-raw/
           cp -a .preview/lesson184-import/.preview/lesson184-excerpts/. .preview/lesson184-excerpts/
       - name: Verify all retained media and protected predecessor bytes

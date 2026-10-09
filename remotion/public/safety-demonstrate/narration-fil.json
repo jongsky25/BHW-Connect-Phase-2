@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural everyday Filipino as a warm community trainer. Use one stable adult female Kore narrator including quotations. Preserve every negation, uncertainty and qualification. Read Apple as written. Complete every word, add nothing and do not translate.",
+  "durationSeconds": 67.683,
+  "beats": [
+    {
+      "zone": "exposure",
+      "index": 0,
+      "text": "Sa kathang-isip na simulation, sinabi ni Apple: sabon at tubig, agarang report at medical evaluation. Huwag hintayin ang sintomas.",
+      "start_ms": 0,
+      "end_ms": 9480
+    },
+    {
+      "zone": "return-demo",
+      "index": 1,
+      "text": "Ipinakita ni Apple ang puwesto at fill line ng dummy box sa trainer. Hand hygiene at PPE ay ayon sa reviewed local checklist.",
+      "start_ms": 9780,
+      "end_ms": 19180
+    },
+    {
+      "zone": "near-miss",
+      "index": 2,
+      "text": "Muntik madulas si Apple sa kunwaring daanan. Walang injury o exposure. Iniulat niya ang oras, lugar, hazard at aktuwal na control.",
+      "start_ms": 19480,
+      "end_ms": 31680
+    },
+    {
+      "zone": "care-before-paperwork",
+      "index": 3,
+      "text": "Kumpirmahin ang reporting contact at ruta sa qualified evaluation. Huwag hayaang maantala ng forms ang care. Provider ang magpapasya sa paggamot.",
+      "start_ms": 31980,
+      "end_ms": 42940
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Magpalitan ng tatlong role, mag-feedback at ulitin nang ligtas. Hindi naobserbahan ay hindi passed; hindi kapalit ang solo rehearsal.",
+      "start_ms": 43240,
+      "end_ms": 54400
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Sa simulation, nakita ng trainer ang ligtas na dummy demo at agarang reporting at evaluation pathway ni Apple. Documentation kasunod ng care; walang ipinapangakong medical outcome.",
+      "start_ms": 54700,
+      "end_ms": 67620
+    }
+  ],
+  "audio_sha256": "5382db4fbcb49a990e0d8b3483360294cc5b71d69faa15b7a3f81caf2d531f9e"
+}

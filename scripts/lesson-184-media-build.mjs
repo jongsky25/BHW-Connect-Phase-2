@@ -39,7 +39,7 @@ if(!pending.length){
   execFileSync(process.execPath,['scripts/remotion-render.mjs',language==='fil'?'SafetyDemonstrateStoryFil':'SafetyDemonstrateStoryEn',name,'--public','training/bhw-1-8','--with-audio','--captions',`safety-demonstrate/narration-${language}.json`],{stdio:'inherit'});
   const media=ext=>{const p='remotion/out/'+name+ext,h=sha(p);return{path:'/training/bhw-1-8/'+name+'-'+h.slice(0,12)+ext,content_hash:h};};
   const timing=JSON.parse(fs.readFileSync(`remotion/public/safety-demonstrate/narration-${language}.json`));
-  story.videos[language]={...media('.mp4'),duration_s:Math.round((timing.durationSeconds+1.1)*30)/30,poster:media('-poster.jpg'),captions:media('.vtt')};
+  story.videos[language]={...media('.mp4'),duration_s:Math.round(timing.durationSeconds+1.1),poster:media('-poster.jpg'),captions:media('.vtt')};
   if(language==='fil')Object.assign(story,media('-poster.jpg'));
  }
  lesson.assets=lesson.assets.filter(a=>a.id!==story.id).concat(story);lesson.featured_asset_id=story.id;fs.writeFileSync(leaf,JSON.stringify(lesson,null,2)+'\n');

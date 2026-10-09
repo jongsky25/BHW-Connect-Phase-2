@@ -64,6 +64,9 @@ for(const record of records){
     response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:wav.toString('base64'),mime_type:'audio/wav'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
     if(response.ok)break;
     if(attempt<2&&(response.status===429||response.status>=500)){await new Promise(resolve=>setTimeout(resolve,4000*(attempt+1)));continue;}
+    break;
+  }
+  if (!response.ok) {
     const failureBody=await response.text();reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,decoded_sample_count:excerptSamples,model_response:null,review_failure:'HTTP '+response.status,review_failure_body:failureBody});save();continue;
   }
   const result=await response.json();

@@ -271,6 +271,46 @@
       "caption_en": "DRAFT · Fictional simulation; not a clinical technique instruction. Choose, explain, then compare with observed practice.",
       "provenance": "Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement.",
       "review_status": "draft"
+    },
+    {
+      "id": "safety-demonstrate-story",
+      "alt_fil": "Anim na beat: trainer-observed dummy demo ni Apple, agarang reporting/evaluation at documentation pagkatapos ng care.",
+      "alt_en": "Six beats: Apple’s trainer-observed dummy demo, immediate reporting/evaluation and documentation following care.",
+      "caption_fil": "Kathang-isip na demonstration at referral simulation; walang medical outcome.",
+      "caption_en": "Fictional demonstration and referral simulation; no medical outcome.",
+      "provenance": "Six built-in imagegen actions using the coordinated Apple reference; Gemini Kore narration, measured encoded samples; draft pending owner, clinical and human-listening review.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-2cf20801fff8.mp4",
+          "content_hash": "2cf20801fff87211cc24ee7a384c443784c219ec0fccb6eb7fe0658a00012cba",
+          "duration_s": 69,
+          "poster": {
+            "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-4e162dea4914-poster.jpg",
+            "content_hash": "4e162dea4914757e4c76c965b8457103f7919b871f207f64a9c0d0cb76db6bf8"
+          },
+          "captions": {
+            "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-622246cfe40b.vtt",
+            "content_hash": "622246cfe40b77a054f22a70a34b0a2ec24a7178a15dd29a6e3ab824fb309f01"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-8/safety-demonstrate-gemini-en-546aef95a7a4.mp4",
+          "content_hash": "546aef95a7a4b00b282f539d4f2aa97522784448cadef8381d322fcd3ae140b7",
+          "duration_s": 61,
+          "poster": {
+            "path": "/training/bhw-1-8/safety-demonstrate-gemini-en-90c256fcb3a4-poster.jpg",
+            "content_hash": "90c256fcb3a42b5cb2c5928dc9636eedc7bf790691f1329105e8851f128cbe5e"
+          },
+          "captions": {
+            "path": "/training/bhw-1-8/safety-demonstrate-gemini-en-a02729532ff4.vtt",
+            "content_hash": "a02729532ff40abfd50697331d4012c3d5ea017076a85f19d4953167c98e95d9"
+          }
+        }
+      },
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-4e162dea4914-poster.jpg",
+      "content_hash": "4e162dea4914757e4c76c965b8457103f7919b871f207f64a9c0d0cb76db6bf8"
     }
-  ]
+  ],
+  "featured_asset_id": "safety-demonstrate-story"
 }
