@@ -1,6 +1,6 @@
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
-import fs from 'node:fs';import {createHash} from 'node:crypto';import {execFileSync} from 'node:child_process';
+import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {beforeProposed173} from '../lib/lesson-173-proposal-compat.mjs';
@@ -42,8 +42,8 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
  });
  it('never selects stale narration for new text and retains selection for original published text',()=>{
   const mf=j(root+'narration.json');for(const lang of ['fil','en'])expect(narrationForLesson(mf,'problem-prioritize',lang,loaded.revision.read_sections)).toEqual({});
-  const oldLesson=JSON.parse(execFileSync('git',['show',baseline.main_commit+':'+leaf+'lesson.json'],{encoding:'utf8'}));
-  const read=Object.fromEntries(['fil','en'].map(lang=>[lang,parseReferenceRead(execFileSync('git',['show',baseline.main_commit+':'+leaf+`read.${lang}.md`],{encoding:'utf8'}))]));
+  const oldLesson=JSON.parse(beforeProposed173(leaf+'lesson.json'));
+  const read=Object.fromEntries(['fil','en'].map(lang=>[lang,parseReferenceRead(beforeProposed173(leaf+`read.${lang}.md`).toString())]));
   const sections=read.fil.map((s,i)=>({...oldLesson.sections[i],heading_fil:s.heading,heading_en:read.en[i].heading,body_fil:s.body,body_en:read.en[i].body}));
   for(const lang of ['fil','en']){
    const oldSelected=narrationForLesson(mf,'problem-prioritize',lang,sections);
