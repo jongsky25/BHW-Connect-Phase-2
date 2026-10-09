@@ -33,7 +33,8 @@ while(Date.now()<deadline){
   if(!ciJobs.some(j=>j.name==='e2e'&&j.conclusion==='success'))throw Error('Disposable Supabase E2E must succeed at frozen head');
   const ciLog=execFileSync('gh',['run','view',String(checks[0].id),'--log'],{encoding:'utf8',maxBuffer:30*1024*1024});
   fs.writeFileSync('.preview/lesson183-deliverables/normal-ci.log',ciLog);
-  const failures=[...ciLog.matchAll(/FAIL\s+([^\s]+\.test\.mjs)/g)].map(m=>m[1]);
+  const plainCiLog=ciLog.replace(/\x1b\[[0-?]*[ -/]*[@-~]/g,'');
+  const failures=[...plainCiLog.matchAll(/FAIL\s+([^\s]+\.test\.mjs)/g)].map(m=>m[1]);
   if(checks[0].conclusion!=='success'&&(failures.length!==1||failures[0]!=='scripts/tests/reference-narration.test.mjs'||!ciLog.includes('problem-prioritize/tie-and-urgent-care/en')))throw Error('Normal CI has an unexpected failure');
   report.normal_ci=checks[0].conclusion==='success'?'passed':'one inherited global narration-current failure: twelve unchanged lesson 1.7.3 tracks; not excluded';
   report.disposable_supabase_e2e='passed';report.status='draft verified; inherited CI failure retained';
