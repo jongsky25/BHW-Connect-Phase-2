@@ -1,0 +1,15 @@
+{
+  "status": "reviewed; draft",
+  "skill": "vercel:react-best-practices",
+  "files": ["src/components/elearning/reference-lessons.tsx", "remotion/src/Root.tsx", "remotion/src/safety-controls/SafetyControlsStory.tsx"],
+  "findings": [
+    "Controls timing and picture-before-check behavior activate only for safety-controls with its target asset ID.",
+    "Timing is derived from the six selected language tracks, with no effect or extra state; the existing incomplete-track fallback remains.",
+    "No new provider import, network fetch, application data request or dependency is added to the lesson UI.",
+    "Actual images retain bilingual alt text through the existing production asset component; card labels remain in HTML.",
+    "Story IDs are exactly the two appended target compositions; metadata validates six measured encoded-audio beats.",
+    "Existing audio/video cleanup and save handlers are exercised by the offline production-component browser suite."
+  ],
+  "validation": {"root_typecheck": "passed", "root_lint": "passed", "remotion_lint_typecheck": "passed", "browser": "final exact-head receipt required"},
+  "owner_approval": false
+}

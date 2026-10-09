@@ -8,7 +8,7 @@ Pumili ng kontrol para sa limang hazard group at ipaliwanag ang paghinto, contac
 
 Para sa 30 learner: sampung set ng limang pares, unsafe-alternative cards, sampung role/checklist sheet at control/pause aid para sa bawat isa. Gumamit ng papel, panulat, walang-lamang dummy container na walang karayom at may fill line, magaan na bag at matatag na upuan. Walang tunay na sharps, body fluids, chemicals, masakit na exercise o live injury.
 
-Aktuwal na audio timing: pending.
+Ginawang pagtataya ng sariling pag-aaral: 11–14 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 429.19 segundo sa English at 477.18 segundo sa Filipino; maglaan ng 3–6 minuto para sa check, maikling pagsasanay at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 ## [prepare] Maghanda
 

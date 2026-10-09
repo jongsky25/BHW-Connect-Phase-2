@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm community health trainer. Keep one stable adult female Kore narrator throughout, including dialogue; no character voice acting. Use gentle pitch and pace variation, clearly articulate hazard/control pairs and every negation and condition, and finish the conditional authorized-correction ending without clipping or adding words. Read Apple as written.",
+  "durationSeconds": 63.713,
+  "beats": [
+    {
+      "zone": "sharps",
+      "index": 0,
+      "text": "Fictional example: Apple notices the fill line. Pause the affected task; never compress contents or use ordinary waste.",
+      "start_ms": 0,
+      "end_ms": 9360
+    },
+    {
+      "zone": "infection",
+      "index": 1,
+      "text": "Choose controls for the route: hands, ventilation, safe waste and bite prevention. Gloves do not replace hand hygiene.",
+      "start_ms": 9660,
+      "end_ms": 20300
+    },
+    {
+      "zone": "body",
+      "index": 2,
+      "text": "Adjust bag, chair and supplies. Seek help, take breaks and report pain; do not force painful movement.",
+      "start_ms": 20600,
+      "end_ms": 29440
+    },
+    {
+      "zone": "workload",
+      "index": 3,
+      "text": "Apple says, “I am exhausted; I need support and a safe route.” Verify the alternative; extra hours are not the default control.",
+      "start_ms": 29740,
+      "end_ms": 39460
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Five pairs: sharps, infection, body, stress and accidents. Correct mismatched controls. If essential protection is missing, pause and seek correction.",
+      "start_ms": 39760,
+      "end_ms": 52000
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Apple matches the hazard to the control and requests authorized replacement. Resume only after verified correction; if uncertain, keep the task paused.",
+      "start_ms": 52300,
+      "end_ms": 63660
+    }
+  ],
+  "audio_sha256": "e7ae65c3054600a5f160416ecb4a38795de58f9cc985be85789b4f64253aa174"
+}

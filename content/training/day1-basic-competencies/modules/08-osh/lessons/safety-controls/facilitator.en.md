@@ -8,7 +8,7 @@ Select controls for five hazard groups and explain the pause, verified contact a
 
 For 30 learners, prepare ten five-pair card sets, unsafe-alternative cards, ten role/checklist sheets and a control/pause aid per learner. Use paper, pens, an empty needle-free dummy container with a marked fill line, a lightweight bag and stable chair. No real sharps, fluids, chemicals, painful exercise or live injury.
 
-Actual audio timing: pending.
+Authored independent estimate: 11–14 minutes, using the longer language track. Actual six-screen narration is 429.19 seconds in English and 477.18 seconds in Filipino; allow 3–6 minutes for the check, brief rehearsal and reflection. Optional story or replay is additional.
 
 ## [prepare] Prepare
 

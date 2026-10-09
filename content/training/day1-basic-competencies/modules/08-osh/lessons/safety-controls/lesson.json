@@ -316,6 +316,46 @@
       "caption_en": "Fictional rehearsal with Apple.",
       "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review.",
       "review_status": "draft"
+    },
+    {
+      "id": "safety-controls-story",
+      "alt_fil": "Anim na beat: pinipili ni Apple ang kontrol at tinitiyak ang awtorisadong pagwawasto bago ituloy ang apektadong gawain.",
+      "alt_en": "Six beats: Apple selects controls and verifies authorized correction before resuming the affected task.",
+      "caption_fil": "Tamang kontrol at pagwawasto bago bumalik.",
+      "caption_en": "Appropriate controls and correction before resuming.",
+      "provenance": "Lesson 1.8.2 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-clinical review.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-8/safety-controls-gemini-fil-28be0111490b.mp4",
+          "content_hash": "28be0111490b5d66fbcb5b3b304422a83411ed7b8b1bb74b7e4ca80fa8be78a1",
+          "duration_s": 71,
+          "captions": {
+            "path": "/training/bhw-1-8/safety-controls-gemini-fil-c5d9a8f51106.vtt",
+            "content_hash": "c5d9a8f5110650b1e4584f589eedac0330e11b96ac3a3ecad6cb68c8a681385c"
+          },
+          "poster": {
+            "path": "/training/bhw-1-8/safety-controls-gemini-fil-6afed3d7ea95-poster.jpg",
+            "content_hash": "6afed3d7ea954e17008dbdb5a69a65d382fefc3412b97c83d4b391864d94f73c"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-8/safety-controls-gemini-en-575baa00940f.mp4",
+          "content_hash": "575baa00940fbb6de3ab9bd691ca55e16bc66102746ca34f908605f026f2becb",
+          "duration_s": 65,
+          "captions": {
+            "path": "/training/bhw-1-8/safety-controls-gemini-en-4ab527f18d9d.vtt",
+            "content_hash": "4ab527f18d9d82d1b47262d7c1329c3a93aa91145f742dca80c68f2812945812"
+          },
+          "poster": {
+            "path": "/training/bhw-1-8/safety-controls-gemini-en-823b968b4e1b-poster.jpg",
+            "content_hash": "823b968b4e1b889e1b1e877d2ec4de433e355aa95a34fd6732a532c1dcbcae6e"
+          }
+        }
+      },
+      "path": "/training/bhw-1-8/safety-controls-gemini-fil-6afed3d7ea95-poster.jpg",
+      "content_hash": "6afed3d7ea954e17008dbdb5a69a65d382fefc3412b97c83d4b391864d94f73c"
     }
-  ]
+  ],
+  "featured_asset_id": "safety-controls-story"
 }

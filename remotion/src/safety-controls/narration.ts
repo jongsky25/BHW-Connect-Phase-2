@@ -39,7 +39,7 @@ export const SAFETY_CONTROLS_BEATS = [
   {
     "id": "practice",
     "fil": "Limang pares: sharps, infection, katawan, stress at aksidente. Itama ang maling kontrol. Kapag kulang ang mahalagang proteksyon, ihinto at humingi ng pagwawasto.",
-    "en": "Five pairs: sharps, infection, body, stress and accidents. Correct mismatched controls. If essential protection is missing, pause and seek correction.",
+    "en": "Five groups: sharps injuries; infections; body pain; workload stress; and accidents. Correct mismatched controls. If essential protection is missing, pause and seek correction.",
     "title_fil": "Ipares at ulitin",
     "title_en": "Match and retry",
     "detail_fil": "Limang grupo • dalawang mismatch",

@@ -29,4 +29,15 @@ describe('Apple lesson 1.8.2 actual current source and historical byte preservat
   const sections=previous.sections.map((s,i)=>({...s,heading_fil:reads.fil[i].heading,heading_en:reads.en[i].heading,body_fil:reads.fil[i].body,body_en:reads.en[i].body}));
   for(const lang of ['fil','en']){const selected=narrationForLesson(manifest,'safety-controls',lang,sections);expect(Object.keys(selected)).toEqual(previous.sections.map(s=>s.id));for(const s of previous.sections)expect(selected[s.id].src).toBe(b.target_narration.sections[s.id][lang].src);}
  });
+ it('appends exactly the two target story compositions without changing the predecessor registry',()=>{
+  const path='remotion/src/Root.tsx',source=fs.readFileSync(path,'utf8');
+  const stripped=source.replace(/^import \{SafetyControlsStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`safety-controls-[\s\S]+?      \)\)\}\n/,'');
+  expect(stripped).toBe(beforeProposed182(path).toString());
+  for(const id of ['SafetyControlsStoryFil','SafetyControlsStoryEn'])expect(source.match(new RegExp(id,'g'))).toHaveLength(1);
+ });
+ it('uses six distinct inspected scene bytes and preserves bilingual accessible descriptions',()=>{
+  const art=lesson.assets.filter(a=>a.id.startsWith('apple-controls-'));expect(art).toHaveLength(6);expect(new Set(art.map(a=>a.content_hash)).size).toBe(6);
+  for(const section of lesson.sections){expect(section.asset_ids).toEqual(['apple-controls-'+section.id]);const a=art.find(a=>a.id===section.asset_ids[0]);expect(sha(fs.readFileSync('public'+a.path))).toBe(a.content_hash);expect(a.review_status).toBe('draft');expect(a.alt_fil.length).toBeGreaterThan(30);expect(a.alt_en.length).toBeGreaterThan(30);}
+ });
+
 });

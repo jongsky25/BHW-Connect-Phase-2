@@ -10,5 +10,8 @@ for source in a['original_pdfs']:
   d[n-1].get_pixmap(dpi=100).save(out/f"{source['source']}-p{n}.png");(out/f"{source['source']}-p{n}.txt").write_text(d[n-1].get_text())
 for entry in a['private_evidence_files']:
  p=out/entry['file']
- if p.exists():assert sha(p)==entry['sha256'],p
+ if not p.exists():
+  import shutil
+  shutil.copyfile(r/'docs/lesson-182-source-evidence'/entry['file'],p)
+ assert sha(p)==entry['sha256'],p
 print('Original PDF hashes verified; private excerpts restored. Webpage captures require their pinned retrieved bytes, not a fresh page substituted as the old evidence.')

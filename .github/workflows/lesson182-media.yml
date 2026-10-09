@@ -24,7 +24,7 @@ jobs:
       - name: Generate only before evidence is frozen
         id: scope
         run: |
-          if test -f docs/lesson-182-story-evidence-origins.json; then
+          if test -f docs/lesson-182-final-evidence-origins.json; then
             echo "generate=false" >> "$GITHUB_OUTPUT"
           else
             echo "generate=true" >> "$GITHUB_OUTPUT"
