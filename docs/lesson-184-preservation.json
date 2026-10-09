@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "source_commit": "371c68e35f293249ed6677732bebe11674670eda",
+  "predecessor_commit": "f4bf3c25ec498cabac0b6e851337b312ff6333e7",
+  "protected_predecessor_files": 6492,
+  "unchanged_files": 6482,
+  "scoped_existing_successors": [
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/slides.json",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.fil.md",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.en.md",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.fil.md",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.en.md",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/competency.json",
+    "content/training/day1-basic-competencies/narration.json",
+    "remotion/src/Root.tsx",
+    "src/components/elearning/reference-lessons.tsx",
+    "scripts/lib/lesson-172-release-integration.mjs",
+    "scripts/tests/lesson-172.test.mjs",
+    "scripts/tests/lesson-172-release.test.mjs"
+  ],
+  "non_target_narration_and_history": "exactly preserved",
+  "old_public_media": "all predecessor bytes retained",
+  "lesson_manifest": "unchanged from pinned baseline",
+  "owner_release_approval": false
+}

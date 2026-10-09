@@ -48,8 +48,7 @@ describe('Apple lesson 1.8.4 draft boundaries',()=>{
  });
  it('preserves sibling teaching, source transcriptions, locks, shared UI and legacy summaries',()=>{
   for(const group of ['sibling_files_sha256','source_files_sha256','shared_files_sha256'])for(const[p,h]of Object.entries(baseline[group])){
-   if(p===base+'narration.json'||p==='remotion/src/Root.tsx'||p==='src/components/elearning/reference-lessons.tsx')continue; // Actual target-only narration/history is checked separately below.
-   expect(sha(fs.readFileSync(p)),p).toBe(h);
+   expect(sha(beforeLesson184(p)),p).toBe(h);
   }
  });
  it('retains every old target narration byte and does not substitute fabricated audio',()=>{

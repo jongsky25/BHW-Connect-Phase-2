@@ -10,6 +10,8 @@ name: Remotion clips
 # its new lesson.json hashes, like every other training asset.
 
 on:
+  # Manual frozen-head verification is limited to this draft branch.
+  workflow_dispatch:
   pull_request:
     paths:
       - "remotion/**"
@@ -38,6 +40,7 @@ concurrency:
 
 jobs:
   render:
+    if: github.event_name != 'workflow_dispatch' || github.ref_name == 'codex/lesson-184-apple-handoff'
     # Split the complete library across eight runners. The 88-composition
     # regression reached nearly 30 minutes on four; retain every check and clip.
     strategy:
