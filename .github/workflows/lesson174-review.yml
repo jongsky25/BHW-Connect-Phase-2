@@ -1,0 +1,103 @@
+name: Lesson 1.7.4 complete draft review package
+on:
+  workflow_call:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - run: npx playwright install --with-deps chromium
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson174-draft-narration
+          run-id: 37875149220
+          github-token: ${{ github.token }}
+          path: .preview/lesson174-origin-read
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson174-draft-evidence
+          run-id: 37875895655
+          github-token: ${{ github.token }}
+          path: .preview/lesson174-origin-complete
+      - name: Restore original raw evidence without overwriting reviewed sources
+        run: |
+          python3 - <<'PY'
+          import pathlib,shutil
+          root=pathlib.Path('.')
+          for origin in ['read','complete']:
+            base=root/f'.preview/lesson174-origin-{origin}'
+            for folder in ['lesson174-raw','lesson174-excerpts']:
+              src=base/'.preview'/folder
+              if not src.exists(): continue
+              dst=root/'.preview'/folder; dst.mkdir(parents=True,exist_ok=True)
+              for item in src.iterdir():
+                if not item.is_file(): continue
+                target=dst/item.name
+                if target.exists(): assert target.read_bytes()==item.read_bytes()
+                else: shutil.copyfile(item,target)
+            snapshot=base/'lesson-174-published-snapshot.json'
+            if snapshot.exists(): shutil.copyfile(snapshot,root/snapshot.name)
+          PY
+      - name: Fresh bounded read-only published-content snapshot
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-174-published-snapshot.mjs
+      - run: python3 -m pip install PyMuPDF==1.26.5
+      - run: node scripts/lesson-174-print-kit.mjs
+      - run: python3 scripts/lesson-174-print-verify.py
+      - run: node scripts/lesson-174-media-verify.mjs
+      - run: node scripts/lesson-174-review-build.mjs
+      - run: node scripts/lesson-174-full-browser-verify.mjs
+      - name: Confirm exact-head normal CI and every registry render
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-174-wait-ci.mjs
+      - run: node scripts/lesson-174-review-verify.mjs
+        if: always()
+      - run: node scripts/lesson-174-package.mjs
+      - name: Retain checks even if package verification fails
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson174-review-checks
+          path: |
+            lesson-174-published-snapshot.json
+            .preview/lesson174-deliverables/*.json
+            .preview/lesson174-deliverables/*.log
+            .preview/lesson174-deliverables/*.pdf
+            .preview/lesson174-deliverables/*.html
+            .preview/lesson174-deliverables/*.png
+            .preview/lesson174-raw/*
+            .preview/lesson174-excerpts/*
+            docs/lesson-174-*
+            docs/lesson-174-source-evidence/*
+            docs/lesson-174-illustration-evidence/*
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson174-complete-review
+          path: |
+            .preview/lesson174-deliverables/lesson-1.7.4-carole-review.zip
+            .preview/lesson174-deliverables/lesson-174-package-integrity.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

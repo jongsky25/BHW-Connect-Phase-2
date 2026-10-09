@@ -1,6 +1,8 @@
 {
-  "status": "actual registry enumerated; full render run recorded separately",
-  "registry_count": 90,
+  "status": "actual integrated registry enumerated; full render run recorded separately",
+  "initial_handoff_main": "f4bf3c25ec498cabac0b6e851337b312ff6333e7",
+  "integrated_main": "7a39a4b1b4a2caa461f9aa14514bd66a747ab8c8",
+  "registry_count": 92,
   "ids_in_order": [
     "BhsSupportEnvironmentStoryFil",
     "BhsSupportEnvironmentStoryEn",
@@ -90,9 +92,11 @@
     "ProblemDefineStoryEn",
     "ProblemCausesStoryFil",
     "ProblemCausesStoryEn",
+    "ProblemActionPlanStoryFil",
+    "ProblemActionPlanStoryEn",
     "SafetyDemonstrateStoryFil",
     "SafetyDemonstrateStoryEn"
   ],
-  "root_sha256": "c72fcb4c16557b14978aa6bb6ad689c9632403585893afe2a3870e392a9780c3",
-  "preservation": "Existing 88 IDs/source/order preserved; exactly two target compositions appended."
+  "root_sha256": "c58f509439215038e33fb0d8e2328c480202b8adef0be56d7a06fcf651cecfac",
+  "preservation": "All 90 approved-main IDs/source/order preserved; exactly two target compositions appended."
 }

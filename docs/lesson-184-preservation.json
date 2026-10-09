@@ -1,9 +1,9 @@
 {
   "status": "passed",
-  "source_commit": "5e26cd1db1d3dad9d7f627b68d28f1ec99e94242",
-  "predecessor_commit": "f4bf3c25ec498cabac0b6e851337b312ff6333e7",
-  "protected_predecessor_files": 6492,
-  "unchanged_files": 6482,
+  "source_commit": "bea6831d3252d8fc24f32ccfaec8b5aa4940798c",
+  "predecessor_commit": "7a39a4b1b4a2caa461f9aa14514bd66a747ab8c8",
+  "protected_predecessor_files": 6535,
+  "unchanged_files": 6525,
   "scoped_existing_successors": [
     "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
     "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/slides.json",
@@ -15,11 +15,8 @@
     "content/training/day1-basic-competencies/narration.json",
     "remotion/src/Root.tsx",
     "src/components/elearning/reference-lessons.tsx",
-    "scripts/lib/lesson-172-release-integration.mjs",
-    "scripts/tests/lesson-172.test.mjs",
-    "scripts/tests/lesson-172-release.test.mjs",
-    ".github/workflows/ci.yml",
-    ".github/workflows/remotion.yml"
+    "scripts/lib/lesson-174-proposal.mjs",
+    "scripts/tests/lesson-174-release.test.mjs"
   ],
   "non_target_narration_and_history": "exactly preserved",
   "old_public_media": "all predecessor bytes retained",

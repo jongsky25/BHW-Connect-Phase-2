@@ -18,7 +18,9 @@
       "concept_ids": [
         "m7.solutions"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "action-compare-solutions"
+      ],
       "takeaway_fil": "Paghambingin ang solusyon ayon sa sanhi at resources, hindi sa dali lamang ng paggawa.",
       "takeaway_en": "Compare solutions against the cause and resources, not convenience alone.",
       "check": null
@@ -29,7 +31,9 @@
         "m7.recommend",
         "m7.mobilize"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "action-plan"
+      ],
       "takeaway_fil": "Ang rekomendasyon ay nagiging plano kapag may responsable, resources, petsa at sukatan ng resulta.",
       "takeaway_en": "A recommendation becomes a plan when it names an owner, resources, date and outcome measure.",
       "check": null
@@ -39,7 +43,9 @@
       "concept_ids": [
         "m7.mobilize"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "action-partners"
+      ],
       "takeaway_fil": "Ang solusyon ay may may-ari at kasosyo; hindi lahat ng gawain ay ibinabagsak sa BHW.",
       "takeaway_en": "Solutions need owners and partners; not every task belongs to the BHW.",
       "check": null
@@ -49,7 +55,9 @@
       "concept_ids": [
         "m7.recommend"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "action-review"
+      ],
       "takeaway_fil": "Ang review ay pagkakataong baguhin ang palagay at plano gamit ang resulta.",
       "takeaway_en": "Review uses results to revise assumptions and the plan.",
       "check": null
@@ -61,7 +69,9 @@
         "m7.recommend",
         "m7.mobilize"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "action-practice"
+      ],
       "takeaway_fil": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
       "takeaway_en": "A plan names who acts and how to tell whether the barrier decreased.",
       "check": null
@@ -73,7 +83,9 @@
         "m7.recommend",
         "m7.mobilize"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "action-check"
+      ],
       "takeaway_fil": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
       "takeaway_en": "A plan names who acts and how to tell whether the barrier decreased.",
       "check": {
@@ -94,8 +106,8 @@
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "Ang ikatlong sagot ay sumusukat sa resulta. Ang meeting ay gawain, hindi patunay na nawala ang hadlang; ang basta pag-uulit ay maaaring maulit ang maling palagay.",
-        "feedback_en": "The third response examines results. A meeting is an activity, not proof that a barrier disappeared; repetition may preserve the wrong assumption."
+        "feedback_fil": "Una: ang natapos na meeting ay gawain, hindi patunay ng pagtaas ng attendance o pagkawala ng hadlang. Ikalawa: ang pag-uulit nang walang bagong tanong ay maaaring ulitin ang maling palagay; kailangan ang bagong ebidensya. Ikatlo: tama—balikan ang hadlang at ihambing ang invitations at attendance. Bago: 1 sa 3; pagkatapos: 1 sa 3. Dalawa pa rin ang hindi nakapunta. Rebisadong plano ni Carole: sanhi—kumpirmadong trabaho at pag-aalaga, ngunit hindi pa alam ang dahilan ng bawat hindi pagdalo; mungkahi—muling konsultasyon bago magtalakay ng maliit na trial; owner—Carole sa konsultasyon at health team sa desisyon sa schedule; resources—papel at oras, staff time na hinihintay; deadline—pagtalakay sa Biyernes; sukatan—attendance sa inimbitahan at dahilan ng hindi pagdalo; review—Lunes pagkatapos ng napagkasunduang trial. Trial date at ambag ay hinihintay pa sa katuwang. Walang pangako ng pondo o pagkalutas ng buong problema.",
+        "feedback_en": "First: a completed meeting is an activity, not proof of increased attendance or removal of a barrier. Second: repeating without new questions may repeat a mistaken assumption; new evidence is needed. Third: correct—recheck barriers and compare invitations with attendance. Before: 1 of 3; after: 1 of 3. Two still missed visits. Carole’s revised plan: cause—confirmed work and childcare barriers, but each reason for nonattendance remains unknown; proposal—consult again before discussing a small trial; owner—Carole for consultation and the health team for schedule decisions; resources—paper and time, with staff time pending; deadline—Friday discussion; measure—attendance among those invited and reasons for missing visits; review—Monday after an agreed trial. Trial date and contributions still await partner agreement. No funding or resolution of the whole problem is promised."
       }
     }
   ],
@@ -176,5 +188,112 @@
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "action-compare-solutions",
+      "path": "/training/bhw-1-7/carole-action-compare-solutions-1070fb62d278.png",
+      "content_hash": "1070fb62d278199f79c76d4b272aec5b15a315b265aa359b805608c9d5fd2400",
+      "alt_fil": "Inihahambing ni Carole ang poster at clock/calendar proposal kasama ang residente.",
+      "alt_en": "Carole compares a poster and a clock/calendar proposal with a resident.",
+      "caption_fil": "Inihahambing ni Carole ang poster at clock/calendar proposal kasama ang residente. Kathang-isip na adaptasyon; draft.",
+      "caption_en": "Carole compares a poster and a clock/calendar proposal with a resident. Fictional adaptation; draft.",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.",
+      "review_status": "approved"
+    },
+    {
+      "id": "action-plan",
+      "path": "/training/bhw-1-7/carole-action-plan-889b61e22a25.png",
+      "content_hash": "889b61e22a25688f29e6a87af09fd4212e215a65a5b1248e01a9390c2ef1f4b4",
+      "alt_fil": "Pinupunan ni Carole ang pitong-row na plano; hiwalay ang marker ng hinihintay na kasunduan.",
+      "alt_en": "Carole fills a blank seven-row plan with a separate pending-agreement marker.",
+      "caption_fil": "Pinupunan ni Carole ang pitong-row na plano; hiwalay ang marker ng hinihintay na kasunduan. Kathang-isip na adaptasyon; draft.",
+      "caption_en": "Carole fills a blank seven-row plan with a separate pending-agreement marker. Fictional adaptation; draft.",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.",
+      "review_status": "approved"
+    },
+    {
+      "id": "action-partners",
+      "path": "/training/bhw-1-7/carole-action-partners-418b249f3645.png",
+      "content_hash": "418b249f3645c4e8768e21bbbd6c6d84879b3f584891ed368ee3cf5403db8569",
+      "alt_fil": "Nag-uusap si Carole, midwife at residente sa blank role map.",
+      "alt_en": "Carole, a midwife and residents consult over a blank role map.",
+      "caption_fil": "Nag-uusap si Carole, midwife at residente sa blank role map. Kathang-isip na adaptasyon; draft.",
+      "caption_en": "Carole, a midwife and residents consult over a blank role map. Fictional adaptation; draft.",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.",
+      "review_status": "approved"
+    },
+    {
+      "id": "action-review",
+      "path": "/training/bhw-1-7/carole-action-review-ea7dba5253fd.png",
+      "content_hash": "ea7dba5253fd7eb3db3ff9585c9462d2621fadf7c337cb53cd1963a3c5b143af",
+      "alt_fil": "Review ni Carole: isa ang filled at dalawa ang outline icons bago at pagkatapos; walang pagtaas.",
+      "alt_en": "Carole reviews unchanged attendance: one filled and two outline icons before and after.",
+      "caption_fil": "Review ni Carole: isa ang filled at dalawa ang outline icons bago at pagkatapos; walang pagtaas. Kathang-isip na adaptasyon; draft.",
+      "caption_en": "Carole reviews unchanged attendance: one filled and two outline icons before and after. Fictional adaptation; draft.",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.",
+      "review_status": "approved"
+    },
+    {
+      "id": "action-practice",
+      "path": "/training/bhw-1-7/carole-action-practice-f23b1bb93a16.png",
+      "content_hash": "f23b1bb93a167f14ef49ec582f473e8c737224c9aa000e93b7cf19a292413734",
+      "alt_fil": "Nagsasanay si Carole ng rekomendasyon kasama ang katuwang at checklist observer.",
+      "alt_en": "Carole rehearses a recommendation with partners and a checklist observer.",
+      "caption_fil": "Nagsasanay si Carole ng rekomendasyon kasama ang katuwang at checklist observer. Kathang-isip na adaptasyon; draft.",
+      "caption_en": "Carole rehearses a recommendation with partners and a checklist observer. Fictional adaptation; draft.",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.",
+      "review_status": "approved"
+    },
+    {
+      "id": "action-check",
+      "path": "/training/bhw-1-7/carole-action-check-83656d4deab1.png",
+      "content_hash": "83656d4deab1816faaaefecfb38a6251e2a584e7185497fb80b8d993f45bf4e2",
+      "alt_fil": "Ibinabalik ni Carole ang provisional na pitong-row plano sa katuwang; hiwalay ang pending marker.",
+      "alt_en": "Carole returns a provisional seven-row plan to partners with a separate pending marker.",
+      "caption_fil": "Ibinabalik ni Carole ang provisional na pitong-row plano sa katuwang; hiwalay ang pending marker. Kathang-isip na adaptasyon; draft.",
+      "caption_en": "Carole returns a provisional seven-row plan to partners with a separate pending marker. Fictional adaptation; draft.",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.",
+      "review_status": "approved"
+    },
+    {
+      "id": "problem-action-plan-story",
+      "alt_fil": "Anim na beat: inihahambing ni Carole ang solusyon, humihingi ng kasunduan at nirerebisa ang provisional na plano.",
+      "alt_en": "Six narrated beats: Carole compares solutions, seeks agreement and revises a provisional plan.",
+      "caption_fil": "Tapat na plano, hiwalay na kasunduan at review ng resulta.",
+      "caption_en": "An honest plan, separate agreement and outcome review.",
+      "provenance": "Lesson 1.7.4 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-7/problem-action-plan-gemini-fil-62952a68d610.mp4",
+          "content_hash": "62952a68d610dd1c63f9e52e2ad05d01b0e20249f7b48e1b75b2c6d7b14452da",
+          "duration_s": 75,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-action-plan-gemini-fil-6d84ecc5a6c1.vtt",
+            "content_hash": "6d84ecc5a6c15b25f4e80b200559eb86bb42beb4d47aa38d83af7ca749cf96aa"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg",
+            "content_hash": "50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-7/problem-action-plan-gemini-en-8cab3652ce1a.mp4",
+          "content_hash": "8cab3652ce1a41e1ea028bdf32f79606c2b19305c5cafe9520268b85dceb4e3a",
+          "duration_s": 70,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-action-plan-gemini-en-f6f022e72fd5.vtt",
+            "content_hash": "f6f022e72fd5634d591cbe1fe8d61294e4228b3fc5b1718b698a83083498723c"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-action-plan-encoded-final-en-658845c576fb.jpg",
+            "content_hash": "658845c576fb6a15c4c7730f29415e8327da89bb7e6b0d8b818408f775bbe70d"
+          }
+        }
+      },
+      "path": "/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg",
+      "content_hash": "50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be"
+    }
+  ],
+  "featured_asset_id": "problem-action-plan-story"
 }

@@ -3,6 +3,7 @@ import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
+import {beforeProposed174} from '../lib/lesson-174-proposal.mjs';
 import {beforeLesson184} from '../lib/lesson-184-integration.mjs';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 const base='content/training/day1-basic-competencies/',leaf=base+'modules/08-osh/lessons/safety-demonstrate/';
@@ -49,7 +50,7 @@ describe('Apple lesson 1.8.4 draft boundaries',()=>{
  });
  it('preserves sibling teaching, source transcriptions, locks, shared UI and legacy summaries',()=>{
   for(const group of ['sibling_files_sha256','source_files_sha256','shared_files_sha256'])for(const[p,h]of Object.entries(baseline[group])){
-   expect(sha(beforeLesson184(p)),p).toBe(h);
+   expect(sha(beforeProposed174(p)),p).toBe(h);
   }
  });
  it('selects matching current narration and the original recordings for old published text',()=>{

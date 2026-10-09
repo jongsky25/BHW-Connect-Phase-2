@@ -4,7 +4,7 @@ import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {beforeLesson184} from './lib/lesson-184-integration.mjs';
-const prior='f4bf3c25ec498cabac0b6e851337b312ff6333e7',leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/';
+const prior='7a39a4b1b4a2caa461f9aa14514bd66a747ab8c8',leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const receipt=JSON.parse(fs.readFileSync('docs/lesson-184-proposal-receipt.json'));
 for(const[p,e]of Object.entries(receipt.changed_existing_files)){if(sha(fs.readFileSync(p))!==e.proposed_sha256||sha(beforeLesson184(p))!==e.predecessor_sha256)throw Error('Unpinned successor/predecessor '+p);}

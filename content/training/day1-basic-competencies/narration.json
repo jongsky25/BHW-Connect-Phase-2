@@ -75416,247 +75416,359 @@
       "sections": {
         "check": {
           "en": {
-            "src": "/training/audio/07-problema/problem-action-plan/check.en.e323bc21c3d0.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/check.en.a021c19df393.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "e323bc21c3d0810070e74d724eb7c937307558826273ba400199ba013bbd88bf",
-            "sha256": "46401dfbe1fa7ce7a02464cf4880f9ba9f531c66c872ac4ffb801a5792168b88",
-            "duration_seconds": 16.614,
+            "content_hash": "a021c19df3936b0e5d6c28d4debe915d9c29866234155e26890012ae601be5d4",
+            "sha256": "2745ead4bebef13266095d99e3a5df6e44511461f32d4fbfe3e5b155446e895e",
+            "duration_seconds": 45.688,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Choose the next step",
                 "start_ms": 0,
-                "end_ms": 1920
+                "end_ms": 2040
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Choose an answer and explain why before viewing the feedback.",
-                "start_ms": 2220,
-                "end_ms": 7020
+                "text": "Carole returns to the team: the meeting finished, but before and after the trial only one of three invited households attended.",
+                "start_ms": 2340,
+                "end_ms": 11580
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Then compare it with your own practice attempt.",
-                "start_ms": 7320,
-                "end_ms": 10720
+                "text": "Two still missed visits.",
+                "start_ms": 11880,
+                "end_ms": 14160
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Choose the next step and explain why before viewing the feedback.",
+                "start_ms": 14460,
+                "end_ms": 19500
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Compare your answer with your seven-field plan.",
+                "start_ms": 19800,
+                "end_ms": 23280
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Separate completed activity from outcome and agreement from a pending decision.",
+                "start_ms": 23580,
+                "end_ms": 29700
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "The ending is an honest proposal and review plan, without a promise of a schedule, funding or resolution of the whole problem.",
+                "start_ms": 30000,
+                "end_ms": 39560
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "A plan names who acts and how to tell whether the barrier decreased.",
-                "start_ms": 11020,
-                "end_ms": 16540
+                "start_ms": 39860,
+                "end_ms": 45620
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/07-problema/problem-action-plan/check.fil.64217adde7f5.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/check.fil.d286ddd491e3.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "64217adde7f5c8e6563f8d8dcd14271cb563c8158ae88c1b96fab3cc23c31d5e",
-            "sha256": "5c8fe73beb7d0062ef5e67c5f4010c5473aee15b6267e32704fc2c05bcb223fe",
-            "duration_seconds": 19.853,
+            "content_hash": "d286ddd491e3aa0c5f1fd698c5d14057de2812ad5818676c62bc9617b36600a8",
+            "sha256": "3240037c89ab3e21876142a1ce4f1dbc2fa847b5f841a407aa53d8d1cbafb215",
+            "duration_seconds": 50.233,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Piliin ang susunod na hakbang",
                 "start_ms": 0,
-                "end_ms": 2920
+                "end_ms": 2880
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
-                "start_ms": 3220,
-                "end_ms": 8660
+                "text": "Bumalik si Carole sa team: natapos ang pulong, ngunit bago at pagkatapos ng trial ay isa lamang sa tatlong inimbitahang sambahayan ang nakadalo.",
+                "start_ms": 3180,
+                "end_ms": 13860
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
-                "start_ms": 8960,
-                "end_ms": 13360
+                "text": "Dalawa pa rin ang hindi nakapunta.",
+                "start_ms": 14160,
+                "end_ms": 16720
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Piliin ang susunod na hakbang at ipaliwanag kung bakit bago tingnan ang feedback.",
+                "start_ms": 17020,
+                "end_ms": 22740
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ihambing ang sagot sa iyong pitong bahagi ng plano.",
+                "start_ms": 23040,
+                "end_ms": 26840
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ihiwalay ang natapos na gawain sa resulta at ang kasunduan sa hinihintay pang desisyon.",
+                "start_ms": 27140,
+                "end_ms": 33660
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ang pagtatapos ay isang tapat na mungkahi at review plan, hindi pangako ng schedule, pondo o pagkalutas ng buong problema.",
+                "start_ms": 33960,
+                "end_ms": 43680
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
-                "start_ms": 13660,
-                "end_ms": 19780
+                "start_ms": 43980,
+                "end_ms": 50180
               }
             ]
           }
         },
         "compare-solutions": {
           "en": {
-            "src": "/training/audio/07-problema/problem-action-plan/compare-solutions.en.16f691986918.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/compare-solutions.en.5d650e056708.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "16f691986918a28289593913477c2382eab3623d1d3a916efd110c14533bd40b",
-            "sha256": "ccc10429cdfa3c7d56767d9935e56ae39d0f7901f821d3d97c4c7b7a50510163",
-            "duration_seconds": 55.197,
+            "content_hash": "5d650e056708ff73e7420f2e614b64c3ccbc55c940dee6b14f7e74de224d01d5",
+            "sha256": "775583484b7ec87d74add2497f057e3aeb2e7ce6456b0288f1b4d7b589cc7d37",
+            "duration_seconds": 86.073,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Match the solution to the cause",
                 "start_ms": 0,
-                "end_ms": 2960
+                "end_ms": 2800
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Nestor, 41, and the families have confirmed scheduling and childcare barriers in the example.",
-                "start_ms": 3260,
-                "end_ms": 10540
+                "text": "In this fictional classroom exercise, three households were invited and only one attended.",
+                "start_ms": 3100,
+                "end_ms": 9700
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "They need the midwife and other partners to plan a response.",
-                "start_ms": 10840,
-                "end_ms": 15440
+                "text": "The scenario supplies verified barriers: visit hours conflict with work, and there is no available person to care for a child.",
+                "start_ms": 10000,
+                "end_ms": 19240
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "If scheduling and childcare are the barriers, another poster may be insufficient.",
-                "start_ms": 15740,
-                "end_ms": 21860
+                "text": "These are not actual barangay data or findings supplied by another lesson.",
+                "start_ms": 19540,
+                "end_ms": 25420
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Compare two proposals: a poster alone, or discussion with the health center and households about a more accessible schedule.",
-                "start_ms": 22160,
-                "end_ms": 31800
+                "text": "Carole is the BHW making a recommendation.",
+                "start_ms": 25720,
+                "end_ms": 29680
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Which addresses the verified cause?",
-                "start_ms": 32100,
-                "end_ms": 35020
+                "text": "A resident says, ‘We knew about the invitation, but we had work and a child to care for.’",
+                "start_ms": 29980,
+                "end_ms": 37180
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Who can implement it?",
-                "start_ms": 35320,
-                "end_ms": 37560
+                "text": "Carole compares two solutions: a poster alone, or discussion of a small schedule trial with households and the midwife.",
+                "start_ms": 37480,
+                "end_ms": 46800
               },
               {
                 "zone": "body",
                 "index": 6,
-                "text": "What time, people and costs are involved?",
-                "start_ms": 37860,
-                "end_ms": 42180
+                "text": "A poster may help with notice, but it cannot by itself resolve work and childcare barriers.",
+                "start_ms": 47100,
+                "end_ms": 55020
               },
               {
                 "zone": "body",
                 "index": 7,
-                "text": "Do not promise a new service or funding until the responsible authority agrees.",
-                "start_ms": 42480,
-                "end_ms": 48720
+                "text": "Ask: Which addresses the verified cause?",
+                "start_ms": 55320,
+                "end_ms": 59200
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Who has authority to decide?",
+                "start_ms": 59500,
+                "end_ms": 62260
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "What time, people and costs are needed?",
+                "start_ms": 62560,
+                "end_ms": 66480
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "A suitable time and childcare support remain unknown.",
+                "start_ms": 66780,
+                "end_ms": 71060
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Do not promise a new service, schedule or funding until the responsible authority and partners agree.",
+                "start_ms": 71360,
+                "end_ms": 80080
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Compare solutions against the cause and resources, not convenience alone.",
-                "start_ms": 49020,
-                "end_ms": 55140
+                "start_ms": 80380,
+                "end_ms": 86020
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/07-problema/problem-action-plan/compare-solutions.fil.41b4f52925be.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/compare-solutions.fil.ba8873ecfcad.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "41b4f52925beefb0775b22475838ceb6519837bbc2945f877f35d3e3f880bcb8",
-            "sha256": "63c97813cea5d49dc1ea70ec44ecf05b60667f196062513476d84eb7fb23191b",
-            "duration_seconds": 62.407,
+            "content_hash": "ba8873ecfcad2d033009836eae89045e8b01669932567786790d3bdf41eb9c57",
+            "sha256": "fe3db69734656b768e46a9433853133e4cfffa7e7fbd6a4eccb53d8d13720ac0",
+            "duration_seconds": 93.675,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Solusyon na tumatama sa sanhi",
                 "start_ms": 0,
-                "end_ms": 2920
+                "end_ms": 2880
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Si Nestor, 41, at ang mga pamilya ay nakumpirmang ang iskedyul at childcare ang hadlang sa mga pagbisita sa halimbawa.",
-                "start_ms": 3220,
-                "end_ms": 13140
+                "text": "Sa kathang-isip na pagsasanay na ito, tatlong sambahayan ang inimbitahan at isa lamang ang nakadalo.",
+                "start_ms": 3180,
+                "end_ms": 10900
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Kailangan nila ang midwife at iba pang katuwang para magplano.",
-                "start_ms": 13440,
-                "end_ms": 18160
+                "text": "Ibinibigay ng scenario ang nakumpirmang hadlang: sumasabay sa trabaho ang oras ng pagbisita at walang maiiwanang tagapag-alaga ng bata.",
+                "start_ms": 11200,
+                "end_ms": 21520
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Kung schedule at childcare ang hadlang, baka hindi sapat ang dagdag na poster.",
-                "start_ms": 18460,
-                "end_ms": 24100
+                "text": "Hindi ito tunay na datos ng barangay o natuklasan sa ibang aralin.",
+                "start_ms": 21820,
+                "end_ms": 26860
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ihambing ang dalawang mungkahi: bagong poster lamang, o pakikipag-usap sa health center at mga pamilya tungkol sa mas naaabot na schedule.",
-                "start_ms": 24400,
-                "end_ms": 36320
+                "text": "Si Carole ang BHW na maghahain ng mungkahi.",
+                "start_ms": 27160,
+                "end_ms": 31800
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Alin ang tumatama sa natiyak na sanhi?",
-                "start_ms": 36620,
-                "end_ms": 40580
+                "text": "Sabi ng residente, ‘Alam namin ang abiso, pero may trabaho at batang aalagaan.’",
+                "start_ms": 32100,
+                "end_ms": 38900
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Sino ang may kakayahang magpatupad?",
-                "start_ms": 40880,
-                "end_ms": 43560
+                "text": "Ihambing ni Carole ang dalawang solusyon: poster lamang, o pagtalakay ng maliit na pagsubok sa oras kasama ang mga sambahayan at midwife.",
+                "start_ms": 39200,
+                "end_ms": 50520
               },
               {
                 "zone": "body",
                 "index": 6,
-                "text": "May oras, tao at gastusin ba?",
-                "start_ms": 43860,
-                "end_ms": 47660
+                "text": "Ang poster ay maaaring makatulong sa abiso ngunit hindi nito mag-isang inaayos ang trabaho at pag-aalaga ng bata.",
+                "start_ms": 50820,
+                "end_ms": 60180
               },
               {
                 "zone": "body",
                 "index": 7,
-                "text": "Huwag mangakong may bagong serbisyo o pondo hangga’t hindi ito napagkasunduan ng may awtoridad.",
-                "start_ms": 47960,
-                "end_ms": 55520
+                "text": "Itanong: Alin ang tumatama sa natiyak na sanhi?",
+                "start_ms": 60480,
+                "end_ms": 64880
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Sino ang may tungkuling magpasya?",
+                "start_ms": 65180,
+                "end_ms": 68180
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "May oras, tao at gastos ba?",
+                "start_ms": 68480,
+                "end_ms": 71880
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Hindi pa tiyak ang angkop na oras o tulong sa pag-aalaga.",
+                "start_ms": 72180,
+                "end_ms": 76860
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Huwag mangako ng bagong serbisyo, schedule o pondo hangga’t hindi pumapayag ang may awtoridad at mga katuwang.",
+                "start_ms": 77160,
+                "end_ms": 85840
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Paghambingin ang solusyon ayon sa sanhi at resources, hindi sa dali lamang ng paggawa.",
-                "start_ms": 55820,
-                "end_ms": 62340
+                "start_ms": 86140,
+                "end_ms": 93620
               }
             ]
           }
         },
         "partners": {
           "en": {
-            "src": "/training/audio/07-problema/problem-action-plan/partners.en.a52f0c6ce605.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/partners.en.06683fa04ca3.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "a52f0c6ce6055b6f4a3f5d806f6fd4412935d59de0c6a327bfab0f6048034d49",
-            "sha256": "81b70905041e1ef8b21fe6ee205e9ce9c86cb8cdf678cfdb63523a9c9de5d39e",
-            "duration_seconds": 41.117,
+            "content_hash": "06683fa04ca344892d66cf1c3463f913309f223195b16cd6aa255e06822acce4",
+            "sha256": "579c7a99be5c41a54c548c1cd0a3735cac7db80079a29a68bd55f2391af67f93",
+            "duration_seconds": 85.682,
             "timings": [
               {
                 "zone": "heading",
@@ -75668,46 +75780,102 @@
               {
                 "zone": "body",
                 "index": 0,
-                "text": "A BHW cannot alone fix transport, water and service schedules.",
+                "text": "‘I can consult residents and summarize preferred times,’ Carole says.",
                 "start_ms": 2100,
-                "end_ms": 9140
+                "end_ms": 7140
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "On the problem map, mark actions within the BHW’s role, issues for the health team, and needs requiring barangay or other agencies.",
-                "start_ms": 9440,
-                "end_ms": 21160
+                "text": "‘We need the responsible health team’s decision on schedules and staffing.’",
+                "start_ms": 7440,
+                "end_ms": 12800
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Include affected residents, particularly those who seldom attend meetings.",
-                "start_ms": 21460,
-                "end_ms": 27020
+                "text": "The midwife asks, ‘Who agreed, and is staff time allocated?’",
+                "start_ms": 13100,
+                "end_ms": 18140
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Report patterns without unnecessary personal details and return to residents with the agreement.",
-                "start_ms": 27320,
-                "end_ms": 34320
+                "text": "The answer is, ‘Not yet confirmed; I will mark it pending.’",
+                "start_ms": 18440,
+                "end_ms": 23080
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Not every task can belong to the BHW.",
+                "start_ms": 23380,
+                "end_ms": 27380
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "On the role map, separate BHW consultation and reporting, health-team review and decisions, and needs for the barangay or other agencies such as transport or water.",
+                "start_ms": 27680,
+                "end_ms": 41080
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "If funding is needed, ask the responsible authority; do not promise it.",
+                "start_ms": 41380,
+                "end_ms": 47140
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Confirm each contribution before setting a trial.",
+                "start_ms": 47440,
+                "end_ms": 51800
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Include affected residents, especially those who seldom attend meetings.",
+                "start_ms": 52100,
+                "end_ms": 57380
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Ask which consultation methods they can access; do not assume they refuse to participate.",
+                "start_ms": 57680,
+                "end_ms": 64080
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Return with a clear agreement or the decisions still pending.",
+                "start_ms": 64380,
+                "end_ms": 69180
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Follow authorized local access, privacy and referral processes; the actual local rules still require review.",
+                "start_ms": 69480,
+                "end_ms": 78560
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Solutions need owners and partners; not every task belongs to the BHW.",
-                "start_ms": 34620,
-                "end_ms": 41060
+                "start_ms": 78860,
+                "end_ms": 85620
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/07-problema/problem-action-plan/partners.fil.b51c592c0ca4.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/partners.fil.3e9f6b0867e4.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "b51c592c0ca48db6f334fc8739619daf2191f8979562a96f05a30fa666c1feb4",
-            "sha256": "1b1bf4604f5473abcbd54d8744883b9189773b863817a15d706dc0a62aaafcbf",
-            "duration_seconds": 45.636,
+            "content_hash": "3e9f6b0867e42892e06235860eb7b8e41c99f23fc03d16e4541c003ee24648b1",
+            "sha256": "1d2eb8b90dab597a9ee916484201961cac83b129323c81c84b1244f6bff06bc7",
+            "duration_seconds": 94.328,
             "timings": [
               {
                 "zone": "heading",
@@ -75719,412 +75887,769 @@
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Hindi kayang ayusin ng BHW mag-isa ang transportasyon, tubig at schedule ng serbisyo.",
+                "text": "‘Kaya kong kausapin ang mga residente at ibuod ang gustong oras,’ sabi ni Carole.",
                 "start_ms": 2380,
-                "end_ms": 10580
+                "end_ms": 8260
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Sa problem map, markahan kung ano ang maaaring gawin ng BHW, alin ang kailangang iakyat sa health team, at alin ang nangangailangan ng barangay o ibang ahensya.",
-                "start_ms": 10880,
-                "end_ms": 22920
+                "text": "‘Kailangan natin ang desisyon ng may tungkuling health team sa schedule at staff.’",
+                "start_ms": 8560,
+                "end_ms": 14760
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Anyayahan ang mga residenteng apektado, kabilang ang hindi madalas makadalo sa pulong.",
-                "start_ms": 23220,
-                "end_ms": 29420
+                "text": "Tanong ng midwife, ‘Sino ang pumayag, at may nakalaang tao ba?’",
+                "start_ms": 15060,
+                "end_ms": 20100
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Iulat ang pattern na walang personal na detalyeng hindi kailangan.",
-                "start_ms": 29720,
-                "end_ms": 34560
+                "text": "Sagot: ‘Hindi pa kumpirmado; itatala ko bilang hinihintay.’",
+                "start_ms": 20400,
+                "end_ms": 25520
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Balikan sila tungkol sa napagkasunduan.",
-                "start_ms": 34860,
-                "end_ms": 37860
+                "text": "Hindi puwedeng akuin ng BHW ang lahat ng gawain.",
+                "start_ms": 25820,
+                "end_ms": 30500
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Sa role map, ihiwalay ang konsultasyon at pag-uulat ng BHW, pagrepaso at desisyon ng health team, at pangangailangang dalhin sa barangay o ibang ahensya gaya ng transportasyon o tubig.",
+                "start_ms": 30800,
+                "end_ms": 46200
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Kung kailangan ng pondo, itanong sa may awtoridad; huwag itong ipangako.",
+                "start_ms": 46500,
+                "end_ms": 52300
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Kumpirmahin ang bawat ambag bago magtakda ng trial.",
+                "start_ms": 52600,
+                "end_ms": 56960
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Kasama ang mga residenteng apektado, lalo na ang bihirang makadalo sa pulong.",
+                "start_ms": 57260,
+                "end_ms": 62740
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Tanungin kung anong paraan ng pag-uusap ang naaabot nila; huwag ipagpalagay na ayaw nilang makilahok.",
+                "start_ms": 63040,
+                "end_ms": 70520
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Balikan sila sa malinaw na kasunduan o sa mga desisyong hinihintay pa.",
+                "start_ms": 70820,
+                "end_ms": 76180
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Sundin ang awtorisadong lokal na proseso sa access, privacy at referral; kailangan pang repasuhin ang aktuwal na lokal na tuntunin.",
+                "start_ms": 76480,
+                "end_ms": 86480
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Ang solusyon ay may may-ari at kasosyo; hindi lahat ng gawain ay ibinabagsak sa BHW.",
-                "start_ms": 38160,
-                "end_ms": 45560
+                "start_ms": 86780,
+                "end_ms": 94260
               }
             ]
           }
         },
         "plan": {
           "en": {
-            "src": "/training/audio/07-problema/problem-action-plan/plan.en.316b27498749.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/plan.en.42148ea9a5f9.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "316b27498749df47b2b59178054d95d2c637cfdb8a991f43fd086a96b49b343c",
-            "sha256": "42649aa46a1221663a298973f18d487bd12f5bf6260e4fd55d20e07f2a55b7f2",
-            "duration_seconds": 44.33,
+            "content_hash": "42148ea9a5f96aceac639b1983306cd8c1a93389f2e0138179af5d12478a01a5",
+            "sha256": "cf1379df17e92d15c8827f893182e6bb59e0e0ec689002318a309770b9fd8d5d",
+            "duration_seconds": 97.384,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Turn a proposal into agreed work",
                 "start_ms": 0,
-                "end_ms": 3520
+                "end_ms": 3440
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Nestor proposes a simple plan: consult affected households this week, send aggregated preferred times to the midwife, and discuss one trial schedule with the barangay health planning team.",
-                "start_ms": 3820,
-                "end_ms": 17660
+                "text": "‘This is still a proposal,’ Carole says.",
+                "start_ms": 3740,
+                "end_ms": 7300
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Name an owner, resources, deadline and measure, such as attendance among those invited.",
-                "start_ms": 17960,
-                "end_ms": 25280
+                "text": "Fill seven fields: cause; proposal; owner; resources; deadline; measure; review date.",
+                "start_ms": 7600,
+                "end_ms": 17720
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "On the review date, ask whether the barrier decreased, not merely whether a meeting happened.",
-                "start_ms": 25580,
-                "end_ms": 32140
+                "text": "Keep agreement separately: who agreed, to which contribution, and what remains pending.",
+                "start_ms": 18020,
+                "end_ms": 24500
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Confirm each partner’s contribution first.",
-                "start_ms": 32440,
-                "end_ms": 35880
+                "text": "Silence or a nod does not establish permission.",
+                "start_ms": 24800,
+                "end_ms": 29120
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Example: cause—work and childcare; proposal—consult the three households this week and discuss one trial with the health team; owner—Carole for consultation, the responsible health team for the schedule decision; resources—paper, consultation time and staff time still requiring confirmation; deadline—discussion on Friday; measure—attendance among those invited, with reasons for missing visits; review—Monday after the agreed trial.",
+                "start_ms": 29420,
+                "end_ms": 65140
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Pass on aggregated preferred times without unnecessary personal details.",
+                "start_ms": 65440,
+                "end_ms": 72280
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "The trial date and resources still await agreement.",
+                "start_ms": 72580,
+                "end_ms": 76700
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "If there is no agreement on Friday, return the question to the team; do not implement.",
+                "start_ms": 77000,
+                "end_ms": 83080
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Report whether barriers decreased, rather than only whether a meeting finished.",
+                "start_ms": 83380,
+                "end_ms": 89140
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "A recommendation becomes a plan when it names an owner, resources, date and outcome measure.",
-                "start_ms": 36180,
-                "end_ms": 44260
+                "start_ms": 89440,
+                "end_ms": 97320
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/07-problema/problem-action-plan/plan.fil.53648ccc30d5.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/plan.fil.9a1a63e94986.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "53648ccc30d568096b712aaa1a73ff5aec5872f8e6483396149809a6c7d5bff7",
-            "sha256": "d46cb3fa087d202b5328fc9caf39ff4bd37e28ba633292b717e71091235d204c",
-            "duration_seconds": 52.767,
+            "content_hash": "9a1a63e949869982d50be8a851fe968b2d9cc54caa92150a68f4b4cb13342c87",
+            "sha256": "3ce32b18ecbfd13591e28df66e6d0a55be1689ae2333a962607b72771bc6160b",
+            "duration_seconds": 112.379,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Mula mungkahi tungo sa napagkasunduang gawain",
                 "start_ms": 0,
-                "end_ms": 4400
+                "end_ms": 4640
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Gumawa si Nestor ng simpleng plano: kausapin ang mga apektadong pamilya ngayong linggo; isumite sa midwife ang pinagsama-samang preferred times; talakayin ang isang pagsubok na schedule sa barangay health planning team.",
-                "start_ms": 4700,
-                "end_ms": 21340
+                "text": "‘Mungkahi pa lamang ito,’ sabi ni Carole.",
+                "start_ms": 4940,
+                "end_ms": 8660
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Tukuyin ang responsable, kailangang resources, deadline at sukatan—halimbawa, bilang ng nakadalo sa mga inimbitahan.",
-                "start_ms": 21640,
-                "end_ms": 32960
+                "text": "Punan ang pitong bahagi: sanhi; mungkahi; owner o responsable; resources; deadline; sukatan; petsa ng review.",
+                "start_ms": 8960,
+                "end_ms": 22280
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Sa review date, itanong kung nabawasan ang hadlang, hindi lang kung natapos ang meeting.",
-                "start_ms": 33260,
-                "end_ms": 39500
+                "text": "Ihiwalay ang tala ng pagsang-ayon: sino ang pumayag, sa anong ambag, at ano ang hinihintay.",
+                "start_ms": 22580,
+                "end_ms": 31220
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Kumpirmahin muna ang ambag ng bawat kasosyo.",
-                "start_ms": 39800,
-                "end_ms": 43720
+                "text": "Hindi katumbas ng pahintulot ang pananahimik o pagtango.",
+                "start_ms": 31520,
+                "end_ms": 36200
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Halimbawa: sanhi—trabaho at pag-aalaga ng bata; mungkahi—kausapin ang tatlong sambahayan ngayong linggo at talakayin ang isang trial sa health team; owner—si Carole para sa konsultasyon, ang may tungkuling health team para sa desisyon sa schedule; resources—papel, oras ng konsultasyon at oras ng staff na kailangan pang kumpirmahin; deadline—pagtalakay sa Biyernes; sukatan—nakadalo sa inimbitahan, kasama ang dahilan ng hindi pagdalo; review—Lunes pagkatapos ng napagkasunduang trial.",
+                "start_ms": 36500,
+                "end_ms": 79100
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Pinagsamang gustong oras lamang ang ipapasa, walang personal na detalyeng hindi kailangan.",
+                "start_ms": 79400,
+                "end_ms": 86720
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Naghihintay pa ang trial date at resources sa pagsang-ayon.",
+                "start_ms": 87020,
+                "end_ms": 91940
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Kapag walang kasunduan sa Biyernes, ibalik ang tanong sa team; huwag magpatupad.",
+                "start_ms": 92240,
+                "end_ms": 98560
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Iulat ang nabawasang hadlang, hindi lang ang natapos na pulong.",
+                "start_ms": 98860,
+                "end_ms": 103820
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Ang rekomendasyon ay nagiging plano kapag may responsable, resources, petsa at sukatan ng resulta.",
-                "start_ms": 44020,
-                "end_ms": 52700
+                "start_ms": 104120,
+                "end_ms": 112320
               }
             ]
           }
         },
         "practice": {
           "en": {
-            "src": "/training/audio/07-problema/problem-action-plan/practice.en.12821869ae3f.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/practice.en.3b3f692e1201.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "12821869ae3ff3c68090c66692438dc045cf4034ccd4efff77ceed4f9a52d6de",
-            "sha256": "e95249539c9e5bd9dd52bf2ef101c88015abb8b2f4a6830c849ef97d27b24c7d",
-            "duration_seconds": 42.527,
+            "content_hash": "3b3f692e1201619b9c5f84ced6d68cc00cff061d84ba3c05a69d1cef32fb600b",
+            "sha256": "fe79c20fed818ed14ac66d4d3625a3ba6bcf1002a90e74bffd235334ee7b1f36",
+            "duration_seconds": 98.273,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Try it, then repeat",
                 "start_ms": 0,
-                "end_ms": 2400
+                "end_ms": 2360
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Fill in: cause; proposal; owner; resources; deadline; measure; review date.",
-                "start_ms": 2700,
-                "end_ms": 13900
+                "text": "Use the fictional scenario: one of three invited households attended; work and childcare barriers are confirmed for this exercise; preferred times, staff availability, costs and agreement to a new trial remain unknown.",
+                "start_ms": 2660,
+                "end_ms": 19660
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Compare a poster and trial schedule before choosing.",
-                "start_ms": 14200,
-                "end_ms": 18560
+                "text": "Compare a poster and a schedule trial before choosing.",
+                "start_ms": 19960,
+                "end_ms": 24600
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "In pairs, the midwife asks about agreement and resources.",
-                "start_ms": 18860,
-                "end_ms": 24100
+                "text": "Fill the seven plan fields and separate agreement status.",
+                "start_ms": 24900,
+                "end_ms": 29660
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Revise and repeat the one-minute recommendation.",
-                "start_ms": 24400,
-                "end_ms": 28040
+                "text": "In a triad, assign a BHW, a resident or partner, and an observer.",
+                "start_ms": 29960,
+                "end_ms": 36680
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Alone, answer the same questions.",
-                "start_ms": 28340,
-                "end_ms": 31340
+                "text": "Give a one-minute recommendation.",
+                "start_ms": 36980,
+                "end_ms": 40260
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Bring the proposal to the next team meeting before implementation.",
-                "start_ms": 31640,
-                "end_ms": 36200
+                "text": "The partner asks, ‘Who decides?",
+                "start_ms": 40560,
+                "end_ms": 43600
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Which resources are confirmed?",
+                "start_ms": 43900,
+                "end_ms": 46540
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Who agreed?",
+                "start_ms": 46840,
+                "end_ms": 48360
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "What will you measure if it fails?’",
+                "start_ms": 48660,
+                "end_ms": 51380
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Identify unknowns; revise the plan using feedback and repeat the one-minute recommendation.",
+                "start_ms": 51680,
+                "end_ms": 59920
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Rotate roles so everyone rehearses as BHW.",
+                "start_ms": 60220,
+                "end_ms": 64780
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Alone, write or speak the recommendation, answer the same questions, mark gaps and repeat.",
+                "start_ms": 65080,
+                "end_ms": 73040
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Bring the proposal to the team before implementation.",
+                "start_ms": 73340,
+                "end_ms": 77580
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "Solo or peer practice does not automatically establish a pass; direct assessor observation is required.",
+                "start_ms": 77880,
+                "end_ms": 86400
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "Watching a story or clicking a quiz is not competency assessment.",
+                "start_ms": 86700,
+                "end_ms": 92180
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "A plan names who acts and how to tell whether the barrier decreased.",
-                "start_ms": 36500,
-                "end_ms": 42460
+                "start_ms": 92480,
+                "end_ms": 98200
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/07-problema/problem-action-plan/practice.fil.021f4f6c795a.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/practice.fil.23b7c9c4433a.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "021f4f6c795a852e4d6c337ab8f9a8fef5fabadbf32f22546863d1f82657ca76",
-            "sha256": "ea4ddb66d7856fb7ed00a8b689701965672e738850273fa06584c97fc0ea2780",
-            "duration_seconds": 48.17,
+            "content_hash": "23b7c9c4433adcfda21066198d407e598ccf00456ebcbc88d9fcc9c518e7f539",
+            "sha256": "bbd3b08ef507bf0c20cc4f9ee2640f2204852fa4ec77b36896fa7527fda073de",
+            "duration_seconds": 108.147,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Subukan, saka ulitin",
                 "start_ms": 0,
-                "end_ms": 3440
+                "end_ms": 3200
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Punan: sanhi; mungkahi; owner; kailangan; deadline; sukatan; review date.",
-                "start_ms": 3740,
-                "end_ms": 15220
+                "text": "Gamitin ang kathang-isip na scenario: isa sa tatlong inimbitahang sambahayan ang nakadalo; kumpirmado sa exercise ang hadlang sa trabaho at pag-aalaga; hindi pa alam ang gustong oras, staff availability, gastos at pagsang-ayon sa bagong trial.",
+                "start_ms": 3500,
+                "end_ms": 22900
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ihambing ang poster at trial schedule bago pumili.",
-                "start_ms": 15520,
-                "end_ms": 19840
+                "text": "Ihambing ang poster at schedule trial bago pumili.",
+                "start_ms": 23200,
+                "end_ms": 28160
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Magpares: isa ang midwife na magtatanong kung may pagsang-ayon at resources.",
-                "start_ms": 20140,
-                "end_ms": 26660
+                "text": "Punan ang pitong bahagi ng plano at hiwalay na agreement status.",
+                "start_ms": 28460,
+                "end_ms": 33780
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Baguhin ang plano at ulitin ang isang minutong rekomendasyon.",
-                "start_ms": 26960,
-                "end_ms": 32160
+                "text": "Sa triad, isang BHW, isang residente o katuwang, at isang observer.",
+                "start_ms": 34080,
+                "end_ms": 41920
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Kung mag-isa, sagutin ang parehong tanong.",
-                "start_ms": 32460,
-                "end_ms": 35740
+                "text": "Magbigay ng isang minutong rekomendasyon.",
+                "start_ms": 42220,
+                "end_ms": 45380
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Dalhin ang mungkahi sa susunod na team meeting bago ipatupad.",
-                "start_ms": 36040,
-                "end_ms": 41240
+                "text": "Tanong ng katuwang: ‘Sino ang magdedesisyon?",
+                "start_ms": 45680,
+                "end_ms": 49280
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Anong resources ang kumpirmado?",
+                "start_ms": 49580,
+                "end_ms": 52580
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Sino ang pumayag?",
+                "start_ms": 52880,
+                "end_ms": 55240
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Ano ang susukatin kapag hindi gumana?’",
+                "start_ms": 55540,
+                "end_ms": 58820
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Tukuyin ang hindi pa alam; baguhin ang plano sa feedback at ulitin ang isang minutong rekomendasyon.",
+                "start_ms": 59120,
+                "end_ms": 67480
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Iikot ang mga papel para makapagsanay ang lahat bilang BHW.",
+                "start_ms": 67780,
+                "end_ms": 73900
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Kung mag-isa, isulat o sabihin ang rekomendasyon, sagutin ang parehong tanong, markahan ang kulang at ulitin.",
+                "start_ms": 74200,
+                "end_ms": 83360
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Dalhin ang mungkahi sa team bago ipatupad.",
+                "start_ms": 83660,
+                "end_ms": 87220
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "Ang solo o peer practice ay hindi awtomatikong pasado; kailangan ang direktang obserbasyon ng assessor.",
+                "start_ms": 87520,
+                "end_ms": 95640
+              },
+              {
+                "zone": "body",
+                "index": 14,
+                "text": "Ang panonood ng kuwento o pag-click sa quiz ay hindi competency assessment.",
+                "start_ms": 95940,
+                "end_ms": 100980
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
-                "start_ms": 41540,
-                "end_ms": 48100
+                "start_ms": 101280,
+                "end_ms": 108080
               }
             ]
           }
         },
         "review": {
           "en": {
-            "src": "/training/audio/07-problema/problem-action-plan/review.en.8b5b4247520e.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/review.en.f4049c158e6a.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "8b5b4247520e0e8b64d969210c2e3697645214152816dc75880a15b438f98879",
-            "sha256": "23afdf985d06f04a0b580641ea25bf264dff1e096e17928c4219b287e06c6235",
-            "duration_seconds": 40.202,
+            "content_hash": "f4049c158e6ab3435f3f9958204a001c292d7cc1520c42b95ca6c7b950bcbc30",
+            "sha256": "bd041f89cd5a0523c906211fdca882585f157488427d74a05781939eb77975c7",
+            "duration_seconds": 99.239,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "When the first plan does not work",
                 "start_ms": 0,
-                "end_ms": 2840
+                "end_ms": 2760
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "The schedule moved earlier but two households still missed the visit.",
-                "start_ms": 3140,
-                "end_ms": 8580
+                "text": "For this separate review exercise, the scenario supplies partner agreement to an earlier trial of an earlier time.",
+                "start_ms": 3060,
+                "end_ms": 11780
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Do not label the families as failures.",
-                "start_ms": 8880,
-                "end_ms": 12240
+                "text": "This does not approve the new proposal.",
+                "start_ms": 12080,
+                "end_ms": 15480
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Recheck barriers: did work, costs or notice change?",
-                "start_ms": 12540,
-                "end_ms": 17500
+                "text": "Before: three households invited, one attended.",
+                "start_ms": 15780,
+                "end_ms": 20780
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Compare invitations and attendance before and after the trial.",
-                "start_ms": 17800,
-                "end_ms": 23600
+                "text": "After: three invited again, one attended again—two still missed the visit.",
+                "start_ms": 21080,
+                "end_ms": 28160
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Identify which assumption was wrong and what small change to try.",
-                "start_ms": 23900,
-                "end_ms": 29460
+                "text": "These are fictional counts, not a prevalence estimate.",
+                "start_ms": 28460,
+                "end_ms": 32420
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "One small trial does not prove the whole problem is solved.",
-                "start_ms": 29760,
-                "end_ms": 34640
+                "text": "Separate activity, output and outcome: the meeting is an activity; an agreed trial schedule and three delivered invitations are outputs; attendance of 1 out of 3 is the measured outcome.",
+                "start_ms": 32720,
+                "end_ms": 47880
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Attendance did not increase.",
+                "start_ms": 48180,
+                "end_ms": 50740
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "The counts alone do not tell us why each household missed a visit or whether other barriers decreased.",
+                "start_ms": 51040,
+                "end_ms": 58880
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "‘An earlier time was insufficient,’ Carole says.",
+                "start_ms": 59180,
+                "end_ms": 63580
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "‘Let us recheck work, costs, childcare and notice.’",
+                "start_ms": 63880,
+                "end_ms": 70080
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Do not label residents lazy or uncooperative.",
+                "start_ms": 70380,
+                "end_ms": 74900
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Record reports and unknowns; compare invitations with attendance before and after.",
+                "start_ms": 75200,
+                "end_ms": 82440
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Revise the assumption and propose a small change for renewed agreement.",
+                "start_ms": 82740,
+                "end_ms": 88220
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "One trial does not establish that the whole problem is solved.",
+                "start_ms": 88520,
+                "end_ms": 93600
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Review uses results to revise assumptions and the plan.",
-                "start_ms": 34940,
-                "end_ms": 40140
+                "start_ms": 93900,
+                "end_ms": 99180
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/07-problema/problem-action-plan/review.fil.4067f850b75f.mp3",
+            "src": "/training/audio/07-problema/problem-action-plan/review.fil.7aadd81f6af2.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "4067f850b75fad06e8eb7279e2ca516ee99021ab4c4170e6907feb074500503e",
-            "sha256": "bde39dffd57f279f1db85c0ff825bb1080e074799e75cce3717b822843242189",
-            "duration_seconds": 45.767,
+            "content_hash": "7aadd81f6af25c3b9ccda8089206d31db3b0da07ad1be1023d44c3a028ab8056",
+            "sha256": "9d936336d356fb01121fcd76f781124bf3daeda691259e06ea701c59ff6f3fdc",
+            "duration_seconds": 111.203,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Kapag hindi gumana ang unang plano",
                 "start_ms": 0,
-                "end_ms": 4040
+                "end_ms": 2880
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Naging mas maaga ang schedule pero dalawa pa rin ang hindi nakadalo.",
-                "start_ms": 4340,
-                "end_ms": 9060
+                "text": "Para sa hiwalay na review exercise, ibinibigay ng scenario na pumayag ang mga katuwang sa isang naunang trial ng mas maagang oras.",
+                "start_ms": 3180,
+                "end_ms": 12860
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Huwag agad sabihing bigo ang pamilya.",
-                "start_ms": 9360,
-                "end_ms": 12560
+                "text": "Hindi nito inaaprubahan ang bagong mungkahi.",
+                "start_ms": 13160,
+                "end_ms": 17440
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Kumustahin ang access barrier: may pagbabago ba sa trabaho, gastos o abiso?",
-                "start_ms": 12860,
-                "end_ms": 20060
+                "text": "Bago: tatlong sambahayan ang inimbitahan, isa ang nakadalo.",
+                "start_ms": 17740,
+                "end_ms": 23220
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ihambing ang bilang ng inimbitahan at nakadalo bago at matapos ang pagsubok.",
-                "start_ms": 20360,
-                "end_ms": 27400
+                "text": "Pagkatapos: tatlo pa rin ang inimbitahan, isa pa rin ang nakadalo—dalawa pa rin ang hindi nakapunta.",
+                "start_ms": 23520,
+                "end_ms": 32120
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Tukuyin kung aling palagay ang mali at anong maliit na pagbabago ang susubukan.",
-                "start_ms": 27700,
-                "end_ms": 33860
+                "text": "Kathang-isip na bilang ito, hindi pagtataya ng prevalence.",
+                "start_ms": 32420,
+                "end_ms": 37740
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "Ang isang maliit na trial ay hindi patunay na nalutas na ang buong problema.",
-                "start_ms": 34160,
-                "end_ms": 39480
+                "text": "Ihiwalay ang gawain, output at resulta: gawain ang pulong; output ang napag-usapang trial schedule at naipadalang tatlong paanyaya; attendance na 1 sa 3 ang nasukat na resulta.",
+                "start_ms": 38040,
+                "end_ms": 55200
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Walang pagtaas sa attendance.",
+                "start_ms": 55500,
+                "end_ms": 58140
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Hindi natin alam mula sa bilang kung bakit hindi nakadalo ang bawat sambahayan o kung nabawasan ang ibang hadlang.",
+                "start_ms": 58440,
+                "end_ms": 66520
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "‘Hindi sapat ang mas maagang oras,’ sabi ni Carole.",
+                "start_ms": 66820,
+                "end_ms": 70940
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "‘Kumustahin natin muli ang trabaho, gastos, pag-aalaga ng bata at abiso.’",
+                "start_ms": 71240,
+                "end_ms": 77800
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Huwag tawaging tamad o hindi nakikiisa ang residente.",
+                "start_ms": 78100,
+                "end_ms": 82940
+              },
+              {
+                "zone": "body",
+                "index": 11,
+                "text": "Itala ang ulat at hindi pa alam; ihambing ang invitations at attendance bago at pagkatapos.",
+                "start_ms": 83240,
+                "end_ms": 91840
+              },
+              {
+                "zone": "body",
+                "index": 12,
+                "text": "Baguhin ang palagay at magmungkahi ng maliit na pagbabago para sa panibagong pagsang-ayon.",
+                "start_ms": 92140,
+                "end_ms": 99260
+              },
+              {
+                "zone": "body",
+                "index": 13,
+                "text": "Hindi patunay ang isang trial na lutas na ang buong problema.",
+                "start_ms": 99560,
+                "end_ms": 104400
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Ang review ay pagkakataong baguhin ang palagay at plano gamit ang resulta.",
-                "start_ms": 39780,
-                "end_ms": 45700
+                "start_ms": 104700,
+                "end_ms": 111140
               }
             ]
           }
@@ -131854,6 +132379,1973 @@
                   "text": "Ang Five Whys ay paghanap ng nasusuring sanhi kasama ang iba, hindi paulit-ulit na paninisi.",
                   "start_ms": 60280,
                   "end_ms": 68600
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "problem-action-plan": [
+      {
+        "module": "07-problema",
+        "sections": {
+          "check": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/check.en.e323bc21c3d0.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "e323bc21c3d0810070e74d724eb7c937307558826273ba400199ba013bbd88bf",
+              "sha256": "46401dfbe1fa7ce7a02464cf4880f9ba9f531c66c872ac4ffb801a5792168b88",
+              "duration_seconds": 16.614,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Choose the next step",
+                  "start_ms": 0,
+                  "end_ms": 1920
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Choose an answer and explain why before viewing the feedback.",
+                  "start_ms": 2220,
+                  "end_ms": 7020
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Then compare it with your own practice attempt.",
+                  "start_ms": 7320,
+                  "end_ms": 10720
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "A plan names who acts and how to tell whether the barrier decreased.",
+                  "start_ms": 11020,
+                  "end_ms": 16540
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/check.fil.64217adde7f5.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "64217adde7f5c8e6563f8d8dcd14271cb563c8158ae88c1b96fab3cc23c31d5e",
+              "sha256": "5c8fe73beb7d0062ef5e67c5f4010c5473aee15b6267e32704fc2c05bcb223fe",
+              "duration_seconds": 19.853,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Piliin ang susunod na hakbang",
+                  "start_ms": 0,
+                  "end_ms": 2920
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+                  "start_ms": 3220,
+                  "end_ms": 8660
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+                  "start_ms": 8960,
+                  "end_ms": 13360
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
+                  "start_ms": 13660,
+                  "end_ms": 19780
+                }
+              ]
+            }
+          },
+          "compare-solutions": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/compare-solutions.en.16f691986918.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "16f691986918a28289593913477c2382eab3623d1d3a916efd110c14533bd40b",
+              "sha256": "ccc10429cdfa3c7d56767d9935e56ae39d0f7901f821d3d97c4c7b7a50510163",
+              "duration_seconds": 55.197,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Match the solution to the cause",
+                  "start_ms": 0,
+                  "end_ms": 2960
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Nestor, 41, and the families have confirmed scheduling and childcare barriers in the example.",
+                  "start_ms": 3260,
+                  "end_ms": 10540
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "They need the midwife and other partners to plan a response.",
+                  "start_ms": 10840,
+                  "end_ms": 15440
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "If scheduling and childcare are the barriers, another poster may be insufficient.",
+                  "start_ms": 15740,
+                  "end_ms": 21860
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Compare two proposals: a poster alone, or discussion with the health center and households about a more accessible schedule.",
+                  "start_ms": 22160,
+                  "end_ms": 31800
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Which addresses the verified cause?",
+                  "start_ms": 32100,
+                  "end_ms": 35020
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Who can implement it?",
+                  "start_ms": 35320,
+                  "end_ms": 37560
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "What time, people and costs are involved?",
+                  "start_ms": 37860,
+                  "end_ms": 42180
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Do not promise a new service or funding until the responsible authority agrees.",
+                  "start_ms": 42480,
+                  "end_ms": 48720
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Compare solutions against the cause and resources, not convenience alone.",
+                  "start_ms": 49020,
+                  "end_ms": 55140
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/compare-solutions.fil.41b4f52925be.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "41b4f52925beefb0775b22475838ceb6519837bbc2945f877f35d3e3f880bcb8",
+              "sha256": "63c97813cea5d49dc1ea70ec44ecf05b60667f196062513476d84eb7fb23191b",
+              "duration_seconds": 62.407,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Solusyon na tumatama sa sanhi",
+                  "start_ms": 0,
+                  "end_ms": 2920
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Si Nestor, 41, at ang mga pamilya ay nakumpirmang ang iskedyul at childcare ang hadlang sa mga pagbisita sa halimbawa.",
+                  "start_ms": 3220,
+                  "end_ms": 13140
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Kailangan nila ang midwife at iba pang katuwang para magplano.",
+                  "start_ms": 13440,
+                  "end_ms": 18160
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Kung schedule at childcare ang hadlang, baka hindi sapat ang dagdag na poster.",
+                  "start_ms": 18460,
+                  "end_ms": 24100
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ihambing ang dalawang mungkahi: bagong poster lamang, o pakikipag-usap sa health center at mga pamilya tungkol sa mas naaabot na schedule.",
+                  "start_ms": 24400,
+                  "end_ms": 36320
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Alin ang tumatama sa natiyak na sanhi?",
+                  "start_ms": 36620,
+                  "end_ms": 40580
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Sino ang may kakayahang magpatupad?",
+                  "start_ms": 40880,
+                  "end_ms": 43560
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "May oras, tao at gastusin ba?",
+                  "start_ms": 43860,
+                  "end_ms": 47660
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Huwag mangakong may bagong serbisyo o pondo hangga’t hindi ito napagkasunduan ng may awtoridad.",
+                  "start_ms": 47960,
+                  "end_ms": 55520
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Paghambingin ang solusyon ayon sa sanhi at resources, hindi sa dali lamang ng paggawa.",
+                  "start_ms": 55820,
+                  "end_ms": 62340
+                }
+              ]
+            }
+          },
+          "partners": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/partners.en.a52f0c6ce605.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "a52f0c6ce6055b6f4a3f5d806f6fd4412935d59de0c6a327bfab0f6048034d49",
+              "sha256": "81b70905041e1ef8b21fe6ee205e9ce9c86cb8cdf678cfdb63523a9c9de5d39e",
+              "duration_seconds": 41.117,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Who should take part?",
+                  "start_ms": 0,
+                  "end_ms": 1800
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "A BHW cannot alone fix transport, water and service schedules.",
+                  "start_ms": 2100,
+                  "end_ms": 9140
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "On the problem map, mark actions within the BHW’s role, issues for the health team, and needs requiring barangay or other agencies.",
+                  "start_ms": 9440,
+                  "end_ms": 21160
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Include affected residents, particularly those who seldom attend meetings.",
+                  "start_ms": 21460,
+                  "end_ms": 27020
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Report patterns without unnecessary personal details and return to residents with the agreement.",
+                  "start_ms": 27320,
+                  "end_ms": 34320
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Solutions need owners and partners; not every task belongs to the BHW.",
+                  "start_ms": 34620,
+                  "end_ms": 41060
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/partners.fil.b51c592c0ca4.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "b51c592c0ca48db6f334fc8739619daf2191f8979562a96f05a30fa666c1feb4",
+              "sha256": "1b1bf4604f5473abcbd54d8744883b9189773b863817a15d706dc0a62aaafcbf",
+              "duration_seconds": 45.636,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Sino ang dapat kasama?",
+                  "start_ms": 0,
+                  "end_ms": 2080
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Hindi kayang ayusin ng BHW mag-isa ang transportasyon, tubig at schedule ng serbisyo.",
+                  "start_ms": 2380,
+                  "end_ms": 10580
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Sa problem map, markahan kung ano ang maaaring gawin ng BHW, alin ang kailangang iakyat sa health team, at alin ang nangangailangan ng barangay o ibang ahensya.",
+                  "start_ms": 10880,
+                  "end_ms": 22920
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Anyayahan ang mga residenteng apektado, kabilang ang hindi madalas makadalo sa pulong.",
+                  "start_ms": 23220,
+                  "end_ms": 29420
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Iulat ang pattern na walang personal na detalyeng hindi kailangan.",
+                  "start_ms": 29720,
+                  "end_ms": 34560
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Balikan sila tungkol sa napagkasunduan.",
+                  "start_ms": 34860,
+                  "end_ms": 37860
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang solusyon ay may may-ari at kasosyo; hindi lahat ng gawain ay ibinabagsak sa BHW.",
+                  "start_ms": 38160,
+                  "end_ms": 45560
+                }
+              ]
+            }
+          },
+          "plan": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/plan.en.316b27498749.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "316b27498749df47b2b59178054d95d2c637cfdb8a991f43fd086a96b49b343c",
+              "sha256": "42649aa46a1221663a298973f18d487bd12f5bf6260e4fd55d20e07f2a55b7f2",
+              "duration_seconds": 44.33,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Turn a proposal into agreed work",
+                  "start_ms": 0,
+                  "end_ms": 3520
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Nestor proposes a simple plan: consult affected households this week, send aggregated preferred times to the midwife, and discuss one trial schedule with the barangay health planning team.",
+                  "start_ms": 3820,
+                  "end_ms": 17660
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Name an owner, resources, deadline and measure, such as attendance among those invited.",
+                  "start_ms": 17960,
+                  "end_ms": 25280
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "On the review date, ask whether the barrier decreased, not merely whether a meeting happened.",
+                  "start_ms": 25580,
+                  "end_ms": 32140
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Confirm each partner’s contribution first.",
+                  "start_ms": 32440,
+                  "end_ms": 35880
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "A recommendation becomes a plan when it names an owner, resources, date and outcome measure.",
+                  "start_ms": 36180,
+                  "end_ms": 44260
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/plan.fil.53648ccc30d5.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "53648ccc30d568096b712aaa1a73ff5aec5872f8e6483396149809a6c7d5bff7",
+              "sha256": "d46cb3fa087d202b5328fc9caf39ff4bd37e28ba633292b717e71091235d204c",
+              "duration_seconds": 52.767,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Mula mungkahi tungo sa napagkasunduang gawain",
+                  "start_ms": 0,
+                  "end_ms": 4400
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Gumawa si Nestor ng simpleng plano: kausapin ang mga apektadong pamilya ngayong linggo; isumite sa midwife ang pinagsama-samang preferred times; talakayin ang isang pagsubok na schedule sa barangay health planning team.",
+                  "start_ms": 4700,
+                  "end_ms": 21340
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Tukuyin ang responsable, kailangang resources, deadline at sukatan—halimbawa, bilang ng nakadalo sa mga inimbitahan.",
+                  "start_ms": 21640,
+                  "end_ms": 32960
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Sa review date, itanong kung nabawasan ang hadlang, hindi lang kung natapos ang meeting.",
+                  "start_ms": 33260,
+                  "end_ms": 39500
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Kumpirmahin muna ang ambag ng bawat kasosyo.",
+                  "start_ms": 39800,
+                  "end_ms": 43720
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang rekomendasyon ay nagiging plano kapag may responsable, resources, petsa at sukatan ng resulta.",
+                  "start_ms": 44020,
+                  "end_ms": 52700
+                }
+              ]
+            }
+          },
+          "practice": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/practice.en.12821869ae3f.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "12821869ae3ff3c68090c66692438dc045cf4034ccd4efff77ceed4f9a52d6de",
+              "sha256": "e95249539c9e5bd9dd52bf2ef101c88015abb8b2f4a6830c849ef97d27b24c7d",
+              "duration_seconds": 42.527,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Try it, then repeat",
+                  "start_ms": 0,
+                  "end_ms": 2400
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Fill in: cause; proposal; owner; resources; deadline; measure; review date.",
+                  "start_ms": 2700,
+                  "end_ms": 13900
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Compare a poster and trial schedule before choosing.",
+                  "start_ms": 14200,
+                  "end_ms": 18560
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "In pairs, the midwife asks about agreement and resources.",
+                  "start_ms": 18860,
+                  "end_ms": 24100
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Revise and repeat the one-minute recommendation.",
+                  "start_ms": 24400,
+                  "end_ms": 28040
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Alone, answer the same questions.",
+                  "start_ms": 28340,
+                  "end_ms": 31340
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Bring the proposal to the next team meeting before implementation.",
+                  "start_ms": 31640,
+                  "end_ms": 36200
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "A plan names who acts and how to tell whether the barrier decreased.",
+                  "start_ms": 36500,
+                  "end_ms": 42460
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/practice.fil.021f4f6c795a.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "021f4f6c795a852e4d6c337ab8f9a8fef5fabadbf32f22546863d1f82657ca76",
+              "sha256": "ea4ddb66d7856fb7ed00a8b689701965672e738850273fa06584c97fc0ea2780",
+              "duration_seconds": 48.17,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Subukan, saka ulitin",
+                  "start_ms": 0,
+                  "end_ms": 3440
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Punan: sanhi; mungkahi; owner; kailangan; deadline; sukatan; review date.",
+                  "start_ms": 3740,
+                  "end_ms": 15220
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ihambing ang poster at trial schedule bago pumili.",
+                  "start_ms": 15520,
+                  "end_ms": 19840
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Magpares: isa ang midwife na magtatanong kung may pagsang-ayon at resources.",
+                  "start_ms": 20140,
+                  "end_ms": 26660
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Baguhin ang plano at ulitin ang isang minutong rekomendasyon.",
+                  "start_ms": 26960,
+                  "end_ms": 32160
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Kung mag-isa, sagutin ang parehong tanong.",
+                  "start_ms": 32460,
+                  "end_ms": 35740
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Dalhin ang mungkahi sa susunod na team meeting bago ipatupad.",
+                  "start_ms": 36040,
+                  "end_ms": 41240
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
+                  "start_ms": 41540,
+                  "end_ms": 48100
+                }
+              ]
+            }
+          },
+          "review": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/review.en.8b5b4247520e.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "8b5b4247520e0e8b64d969210c2e3697645214152816dc75880a15b438f98879",
+              "sha256": "23afdf985d06f04a0b580641ea25bf264dff1e096e17928c4219b287e06c6235",
+              "duration_seconds": 40.202,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "When the first plan does not work",
+                  "start_ms": 0,
+                  "end_ms": 2840
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "The schedule moved earlier but two households still missed the visit.",
+                  "start_ms": 3140,
+                  "end_ms": 8580
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Do not label the families as failures.",
+                  "start_ms": 8880,
+                  "end_ms": 12240
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Recheck barriers: did work, costs or notice change?",
+                  "start_ms": 12540,
+                  "end_ms": 17500
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Compare invitations and attendance before and after the trial.",
+                  "start_ms": 17800,
+                  "end_ms": 23600
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Identify which assumption was wrong and what small change to try.",
+                  "start_ms": 23900,
+                  "end_ms": 29460
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "One small trial does not prove the whole problem is solved.",
+                  "start_ms": 29760,
+                  "end_ms": 34640
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Review uses results to revise assumptions and the plan.",
+                  "start_ms": 34940,
+                  "end_ms": 40140
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/review.fil.4067f850b75f.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "4067f850b75fad06e8eb7279e2ca516ee99021ab4c4170e6907feb074500503e",
+              "sha256": "bde39dffd57f279f1db85c0ff825bb1080e074799e75cce3717b822843242189",
+              "duration_seconds": 45.767,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Kapag hindi gumana ang unang plano",
+                  "start_ms": 0,
+                  "end_ms": 4040
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Naging mas maaga ang schedule pero dalawa pa rin ang hindi nakadalo.",
+                  "start_ms": 4340,
+                  "end_ms": 9060
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Huwag agad sabihing bigo ang pamilya.",
+                  "start_ms": 9360,
+                  "end_ms": 12560
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Kumustahin ang access barrier: may pagbabago ba sa trabaho, gastos o abiso?",
+                  "start_ms": 12860,
+                  "end_ms": 20060
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ihambing ang bilang ng inimbitahan at nakadalo bago at matapos ang pagsubok.",
+                  "start_ms": 20360,
+                  "end_ms": 27400
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Tukuyin kung aling palagay ang mali at anong maliit na pagbabago ang susubukan.",
+                  "start_ms": 27700,
+                  "end_ms": 33860
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Ang isang maliit na trial ay hindi patunay na nalutas na ang buong problema.",
+                  "start_ms": 34160,
+                  "end_ms": 39480
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang review ay pagkakataong baguhin ang palagay at plano gamit ang resulta.",
+                  "start_ms": 39780,
+                  "end_ms": 45700
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "module": "07-problema",
+        "sections": {
+          "check": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/check.en.a021c19df393.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "a021c19df3936b0e5d6c28d4debe915d9c29866234155e26890012ae601be5d4",
+              "sha256": "2745ead4bebef13266095d99e3a5df6e44511461f32d4fbfe3e5b155446e895e",
+              "duration_seconds": 45.688,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Choose the next step",
+                  "start_ms": 0,
+                  "end_ms": 2040
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Carole returns to the team: the meeting finished, but before and after the trial only one of three invited households attended.",
+                  "start_ms": 2340,
+                  "end_ms": 11580
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Two still missed visits.",
+                  "start_ms": 11880,
+                  "end_ms": 14160
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Choose the next step and explain why before viewing the feedback.",
+                  "start_ms": 14460,
+                  "end_ms": 19500
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Compare your answer with your seven-field plan.",
+                  "start_ms": 19800,
+                  "end_ms": 23280
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Separate completed activity from outcome and agreement from a pending decision.",
+                  "start_ms": 23580,
+                  "end_ms": 29700
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "The ending is an honest proposal and review plan, without a promise of a schedule, funding or resolution of the whole problem.",
+                  "start_ms": 30000,
+                  "end_ms": 39560
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "A plan names who acts and how to tell whether the barrier decreased.",
+                  "start_ms": 39860,
+                  "end_ms": 45620
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/check.fil.d286ddd491e3.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "d286ddd491e3aa0c5f1fd698c5d14057de2812ad5818676c62bc9617b36600a8",
+              "sha256": "3240037c89ab3e21876142a1ce4f1dbc2fa847b5f841a407aa53d8d1cbafb215",
+              "duration_seconds": 50.233,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Piliin ang susunod na hakbang",
+                  "start_ms": 0,
+                  "end_ms": 2880
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Bumalik si Carole sa team: natapos ang pulong, ngunit bago at pagkatapos ng trial ay isa lamang sa tatlong inimbitahang sambahayan ang nakadalo.",
+                  "start_ms": 3180,
+                  "end_ms": 13860
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Dalawa pa rin ang hindi nakapunta.",
+                  "start_ms": 14160,
+                  "end_ms": 16720
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Piliin ang susunod na hakbang at ipaliwanag kung bakit bago tingnan ang feedback.",
+                  "start_ms": 17020,
+                  "end_ms": 22740
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ihambing ang sagot sa iyong pitong bahagi ng plano.",
+                  "start_ms": 23040,
+                  "end_ms": 26840
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Ihiwalay ang natapos na gawain sa resulta at ang kasunduan sa hinihintay pang desisyon.",
+                  "start_ms": 27140,
+                  "end_ms": 33660
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Ang pagtatapos ay isang tapat na mungkahi at review plan, hindi pangako ng schedule, pondo o pagkalutas ng buong problema.",
+                  "start_ms": 33960,
+                  "end_ms": 43680
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
+                  "start_ms": 43980,
+                  "end_ms": 50180
+                }
+              ]
+            }
+          },
+          "compare-solutions": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/compare-solutions.en.5d650e056708.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "5d650e056708ff73e7420f2e614b64c3ccbc55c940dee6b14f7e74de224d01d5",
+              "sha256": "775583484b7ec87d74add2497f057e3aeb2e7ce6456b0288f1b4d7b589cc7d37",
+              "duration_seconds": 86.073,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Match the solution to the cause",
+                  "start_ms": 0,
+                  "end_ms": 2800
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "In this fictional classroom exercise, three households were invited and only one attended.",
+                  "start_ms": 3100,
+                  "end_ms": 9700
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The scenario supplies verified barriers: visit hours conflict with work, and there is no available person to care for a child.",
+                  "start_ms": 10000,
+                  "end_ms": 19240
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "These are not actual barangay data or findings supplied by another lesson.",
+                  "start_ms": 19540,
+                  "end_ms": 25420
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Carole is the BHW making a recommendation.",
+                  "start_ms": 25720,
+                  "end_ms": 29680
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "A resident says, ‘We knew about the invitation, but we had work and a child to care for.’",
+                  "start_ms": 29980,
+                  "end_ms": 37180
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Carole compares two solutions: a poster alone, or discussion of a small schedule trial with households and the midwife.",
+                  "start_ms": 37480,
+                  "end_ms": 46800
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "A poster may help with notice, but it cannot by itself resolve work and childcare barriers.",
+                  "start_ms": 47100,
+                  "end_ms": 55020
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Ask: Which addresses the verified cause?",
+                  "start_ms": 55320,
+                  "end_ms": 59200
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Who has authority to decide?",
+                  "start_ms": 59500,
+                  "end_ms": 62260
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "What time, people and costs are needed?",
+                  "start_ms": 62560,
+                  "end_ms": 66480
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "A suitable time and childcare support remain unknown.",
+                  "start_ms": 66780,
+                  "end_ms": 71060
+                },
+                {
+                  "zone": "body",
+                  "index": 11,
+                  "text": "Do not promise a new service, schedule or funding until the responsible authority and partners agree.",
+                  "start_ms": 71360,
+                  "end_ms": 80080
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Compare solutions against the cause and resources, not convenience alone.",
+                  "start_ms": 80380,
+                  "end_ms": 86020
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/compare-solutions.fil.ba8873ecfcad.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "ba8873ecfcad2d033009836eae89045e8b01669932567786790d3bdf41eb9c57",
+              "sha256": "fe3db69734656b768e46a9433853133e4cfffa7e7fbd6a4eccb53d8d13720ac0",
+              "duration_seconds": 93.675,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Solusyon na tumatama sa sanhi",
+                  "start_ms": 0,
+                  "end_ms": 2880
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Sa kathang-isip na pagsasanay na ito, tatlong sambahayan ang inimbitahan at isa lamang ang nakadalo.",
+                  "start_ms": 3180,
+                  "end_ms": 10900
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ibinibigay ng scenario ang nakumpirmang hadlang: sumasabay sa trabaho ang oras ng pagbisita at walang maiiwanang tagapag-alaga ng bata.",
+                  "start_ms": 11200,
+                  "end_ms": 21520
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Hindi ito tunay na datos ng barangay o natuklasan sa ibang aralin.",
+                  "start_ms": 21820,
+                  "end_ms": 26860
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Si Carole ang BHW na maghahain ng mungkahi.",
+                  "start_ms": 27160,
+                  "end_ms": 31800
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Sabi ng residente, ‘Alam namin ang abiso, pero may trabaho at batang aalagaan.’",
+                  "start_ms": 32100,
+                  "end_ms": 38900
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Ihambing ni Carole ang dalawang solusyon: poster lamang, o pagtalakay ng maliit na pagsubok sa oras kasama ang mga sambahayan at midwife.",
+                  "start_ms": 39200,
+                  "end_ms": 50520
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Ang poster ay maaaring makatulong sa abiso ngunit hindi nito mag-isang inaayos ang trabaho at pag-aalaga ng bata.",
+                  "start_ms": 50820,
+                  "end_ms": 60180
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Itanong: Alin ang tumatama sa natiyak na sanhi?",
+                  "start_ms": 60480,
+                  "end_ms": 64880
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Sino ang may tungkuling magpasya?",
+                  "start_ms": 65180,
+                  "end_ms": 68180
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "May oras, tao at gastos ba?",
+                  "start_ms": 68480,
+                  "end_ms": 71880
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "Hindi pa tiyak ang angkop na oras o tulong sa pag-aalaga.",
+                  "start_ms": 72180,
+                  "end_ms": 76860
+                },
+                {
+                  "zone": "body",
+                  "index": 11,
+                  "text": "Huwag mangako ng bagong serbisyo, schedule o pondo hangga’t hindi pumapayag ang may awtoridad at mga katuwang.",
+                  "start_ms": 77160,
+                  "end_ms": 85840
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Paghambingin ang solusyon ayon sa sanhi at resources, hindi sa dali lamang ng paggawa.",
+                  "start_ms": 86140,
+                  "end_ms": 93620
+                }
+              ]
+            }
+          },
+          "partners": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/partners.en.06683fa04ca3.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "06683fa04ca344892d66cf1c3463f913309f223195b16cd6aa255e06822acce4",
+              "sha256": "579c7a99be5c41a54c548c1cd0a3735cac7db80079a29a68bd55f2391af67f93",
+              "duration_seconds": 85.682,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Who should take part?",
+                  "start_ms": 0,
+                  "end_ms": 1800
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "‘I can consult residents and summarize preferred times,’ Carole says.",
+                  "start_ms": 2100,
+                  "end_ms": 7140
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "‘We need the responsible health team’s decision on schedules and staffing.’",
+                  "start_ms": 7440,
+                  "end_ms": 12800
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "The midwife asks, ‘Who agreed, and is staff time allocated?’",
+                  "start_ms": 13100,
+                  "end_ms": 18140
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "The answer is, ‘Not yet confirmed; I will mark it pending.’",
+                  "start_ms": 18440,
+                  "end_ms": 23080
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Not every task can belong to the BHW.",
+                  "start_ms": 23380,
+                  "end_ms": 27380
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "On the role map, separate BHW consultation and reporting, health-team review and decisions, and needs for the barangay or other agencies such as transport or water.",
+                  "start_ms": 27680,
+                  "end_ms": 41080
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "If funding is needed, ask the responsible authority; do not promise it.",
+                  "start_ms": 41380,
+                  "end_ms": 47140
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Confirm each contribution before setting a trial.",
+                  "start_ms": 47440,
+                  "end_ms": 51800
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Include affected residents, especially those who seldom attend meetings.",
+                  "start_ms": 52100,
+                  "end_ms": 57380
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "Ask which consultation methods they can access; do not assume they refuse to participate.",
+                  "start_ms": 57680,
+                  "end_ms": 64080
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "Return with a clear agreement or the decisions still pending.",
+                  "start_ms": 64380,
+                  "end_ms": 69180
+                },
+                {
+                  "zone": "body",
+                  "index": 11,
+                  "text": "Follow authorized local access, privacy and referral processes; the actual local rules still require review.",
+                  "start_ms": 69480,
+                  "end_ms": 78560
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Solutions need owners and partners; not every task belongs to the BHW.",
+                  "start_ms": 78860,
+                  "end_ms": 85620
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/partners.fil.3e9f6b0867e4.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "3e9f6b0867e42892e06235860eb7b8e41c99f23fc03d16e4541c003ee24648b1",
+              "sha256": "1d2eb8b90dab597a9ee916484201961cac83b129323c81c84b1244f6bff06bc7",
+              "duration_seconds": 94.328,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Sino ang dapat kasama?",
+                  "start_ms": 0,
+                  "end_ms": 2080
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "‘Kaya kong kausapin ang mga residente at ibuod ang gustong oras,’ sabi ni Carole.",
+                  "start_ms": 2380,
+                  "end_ms": 8260
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "‘Kailangan natin ang desisyon ng may tungkuling health team sa schedule at staff.’",
+                  "start_ms": 8560,
+                  "end_ms": 14760
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Tanong ng midwife, ‘Sino ang pumayag, at may nakalaang tao ba?’",
+                  "start_ms": 15060,
+                  "end_ms": 20100
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Sagot: ‘Hindi pa kumpirmado; itatala ko bilang hinihintay.’",
+                  "start_ms": 20400,
+                  "end_ms": 25520
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Hindi puwedeng akuin ng BHW ang lahat ng gawain.",
+                  "start_ms": 25820,
+                  "end_ms": 30500
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Sa role map, ihiwalay ang konsultasyon at pag-uulat ng BHW, pagrepaso at desisyon ng health team, at pangangailangang dalhin sa barangay o ibang ahensya gaya ng transportasyon o tubig.",
+                  "start_ms": 30800,
+                  "end_ms": 46200
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Kung kailangan ng pondo, itanong sa may awtoridad; huwag itong ipangako.",
+                  "start_ms": 46500,
+                  "end_ms": 52300
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Kumpirmahin ang bawat ambag bago magtakda ng trial.",
+                  "start_ms": 52600,
+                  "end_ms": 56960
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Kasama ang mga residenteng apektado, lalo na ang bihirang makadalo sa pulong.",
+                  "start_ms": 57260,
+                  "end_ms": 62740
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "Tanungin kung anong paraan ng pag-uusap ang naaabot nila; huwag ipagpalagay na ayaw nilang makilahok.",
+                  "start_ms": 63040,
+                  "end_ms": 70520
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "Balikan sila sa malinaw na kasunduan o sa mga desisyong hinihintay pa.",
+                  "start_ms": 70820,
+                  "end_ms": 76180
+                },
+                {
+                  "zone": "body",
+                  "index": 11,
+                  "text": "Sundin ang awtorisadong lokal na proseso sa access, privacy at referral; kailangan pang repasuhin ang aktuwal na lokal na tuntunin.",
+                  "start_ms": 76480,
+                  "end_ms": 86480
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang solusyon ay may may-ari at kasosyo; hindi lahat ng gawain ay ibinabagsak sa BHW.",
+                  "start_ms": 86780,
+                  "end_ms": 94260
+                }
+              ]
+            }
+          },
+          "plan": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/plan.en.42148ea9a5f9.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "42148ea9a5f96aceac639b1983306cd8c1a93389f2e0138179af5d12478a01a5",
+              "sha256": "cf1379df17e92d15c8827f893182e6bb59e0e0ec689002318a309770b9fd8d5d",
+              "duration_seconds": 97.384,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Turn a proposal into agreed work",
+                  "start_ms": 0,
+                  "end_ms": 3440
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "‘This is still a proposal,’ Carole says.",
+                  "start_ms": 3740,
+                  "end_ms": 7300
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Fill seven fields: cause; proposal; owner; resources; deadline; measure; review date.",
+                  "start_ms": 7600,
+                  "end_ms": 17720
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Keep agreement separately: who agreed, to which contribution, and what remains pending.",
+                  "start_ms": 18020,
+                  "end_ms": 24500
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Silence or a nod does not establish permission.",
+                  "start_ms": 24800,
+                  "end_ms": 29120
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Example: cause—work and childcare; proposal—consult the three households this week and discuss one trial with the health team; owner—Carole for consultation, the responsible health team for the schedule decision; resources—paper, consultation time and staff time still requiring confirmation; deadline—discussion on Friday; measure—attendance among those invited, with reasons for missing visits; review—Monday after the agreed trial.",
+                  "start_ms": 29420,
+                  "end_ms": 65140
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Pass on aggregated preferred times without unnecessary personal details.",
+                  "start_ms": 65440,
+                  "end_ms": 72280
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "The trial date and resources still await agreement.",
+                  "start_ms": 72580,
+                  "end_ms": 76700
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "If there is no agreement on Friday, return the question to the team; do not implement.",
+                  "start_ms": 77000,
+                  "end_ms": 83080
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Report whether barriers decreased, rather than only whether a meeting finished.",
+                  "start_ms": 83380,
+                  "end_ms": 89140
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "A recommendation becomes a plan when it names an owner, resources, date and outcome measure.",
+                  "start_ms": 89440,
+                  "end_ms": 97320
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/plan.fil.9a1a63e94986.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "9a1a63e949869982d50be8a851fe968b2d9cc54caa92150a68f4b4cb13342c87",
+              "sha256": "3ce32b18ecbfd13591e28df66e6d0a55be1689ae2333a962607b72771bc6160b",
+              "duration_seconds": 112.379,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Mula mungkahi tungo sa napagkasunduang gawain",
+                  "start_ms": 0,
+                  "end_ms": 4640
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "‘Mungkahi pa lamang ito,’ sabi ni Carole.",
+                  "start_ms": 4940,
+                  "end_ms": 8660
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Punan ang pitong bahagi: sanhi; mungkahi; owner o responsable; resources; deadline; sukatan; petsa ng review.",
+                  "start_ms": 8960,
+                  "end_ms": 22280
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Ihiwalay ang tala ng pagsang-ayon: sino ang pumayag, sa anong ambag, at ano ang hinihintay.",
+                  "start_ms": 22580,
+                  "end_ms": 31220
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Hindi katumbas ng pahintulot ang pananahimik o pagtango.",
+                  "start_ms": 31520,
+                  "end_ms": 36200
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Halimbawa: sanhi—trabaho at pag-aalaga ng bata; mungkahi—kausapin ang tatlong sambahayan ngayong linggo at talakayin ang isang trial sa health team; owner—si Carole para sa konsultasyon, ang may tungkuling health team para sa desisyon sa schedule; resources—papel, oras ng konsultasyon at oras ng staff na kailangan pang kumpirmahin; deadline—pagtalakay sa Biyernes; sukatan—nakadalo sa inimbitahan, kasama ang dahilan ng hindi pagdalo; review—Lunes pagkatapos ng napagkasunduang trial.",
+                  "start_ms": 36500,
+                  "end_ms": 79100
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Pinagsamang gustong oras lamang ang ipapasa, walang personal na detalyeng hindi kailangan.",
+                  "start_ms": 79400,
+                  "end_ms": 86720
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Naghihintay pa ang trial date at resources sa pagsang-ayon.",
+                  "start_ms": 87020,
+                  "end_ms": 91940
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Kapag walang kasunduan sa Biyernes, ibalik ang tanong sa team; huwag magpatupad.",
+                  "start_ms": 92240,
+                  "end_ms": 98560
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Iulat ang nabawasang hadlang, hindi lang ang natapos na pulong.",
+                  "start_ms": 98860,
+                  "end_ms": 103820
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang rekomendasyon ay nagiging plano kapag may responsable, resources, petsa at sukatan ng resulta.",
+                  "start_ms": 104120,
+                  "end_ms": 112320
+                }
+              ]
+            }
+          },
+          "practice": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/practice.en.3b3f692e1201.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "3b3f692e1201619b9c5f84ced6d68cc00cff061d84ba3c05a69d1cef32fb600b",
+              "sha256": "fe79c20fed818ed14ac66d4d3625a3ba6bcf1002a90e74bffd235334ee7b1f36",
+              "duration_seconds": 98.273,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Try it, then repeat",
+                  "start_ms": 0,
+                  "end_ms": 2360
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Use the fictional scenario: one of three invited households attended; work and childcare barriers are confirmed for this exercise; preferred times, staff availability, costs and agreement to a new trial remain unknown.",
+                  "start_ms": 2660,
+                  "end_ms": 19660
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Compare a poster and a schedule trial before choosing.",
+                  "start_ms": 19960,
+                  "end_ms": 24600
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Fill the seven plan fields and separate agreement status.",
+                  "start_ms": 24900,
+                  "end_ms": 29660
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "In a triad, assign a BHW, a resident or partner, and an observer.",
+                  "start_ms": 29960,
+                  "end_ms": 36680
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Give a one-minute recommendation.",
+                  "start_ms": 36980,
+                  "end_ms": 40260
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "The partner asks, ‘Who decides?",
+                  "start_ms": 40560,
+                  "end_ms": 43600
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Which resources are confirmed?",
+                  "start_ms": 43900,
+                  "end_ms": 46540
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Who agreed?",
+                  "start_ms": 46840,
+                  "end_ms": 48360
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "What will you measure if it fails?’",
+                  "start_ms": 48660,
+                  "end_ms": 51380
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "Identify unknowns; revise the plan using feedback and repeat the one-minute recommendation.",
+                  "start_ms": 51680,
+                  "end_ms": 59920
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "Rotate roles so everyone rehearses as BHW.",
+                  "start_ms": 60220,
+                  "end_ms": 64780
+                },
+                {
+                  "zone": "body",
+                  "index": 11,
+                  "text": "Alone, write or speak the recommendation, answer the same questions, mark gaps and repeat.",
+                  "start_ms": 65080,
+                  "end_ms": 73040
+                },
+                {
+                  "zone": "body",
+                  "index": 12,
+                  "text": "Bring the proposal to the team before implementation.",
+                  "start_ms": 73340,
+                  "end_ms": 77580
+                },
+                {
+                  "zone": "body",
+                  "index": 13,
+                  "text": "Solo or peer practice does not automatically establish a pass; direct assessor observation is required.",
+                  "start_ms": 77880,
+                  "end_ms": 86400
+                },
+                {
+                  "zone": "body",
+                  "index": 14,
+                  "text": "Watching a story or clicking a quiz is not competency assessment.",
+                  "start_ms": 86700,
+                  "end_ms": 92180
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "A plan names who acts and how to tell whether the barrier decreased.",
+                  "start_ms": 92480,
+                  "end_ms": 98200
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/practice.fil.23b7c9c4433a.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "23b7c9c4433adcfda21066198d407e598ccf00456ebcbc88d9fcc9c518e7f539",
+              "sha256": "bbd3b08ef507bf0c20cc4f9ee2640f2204852fa4ec77b36896fa7527fda073de",
+              "duration_seconds": 108.147,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Subukan, saka ulitin",
+                  "start_ms": 0,
+                  "end_ms": 3200
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Gamitin ang kathang-isip na scenario: isa sa tatlong inimbitahang sambahayan ang nakadalo; kumpirmado sa exercise ang hadlang sa trabaho at pag-aalaga; hindi pa alam ang gustong oras, staff availability, gastos at pagsang-ayon sa bagong trial.",
+                  "start_ms": 3500,
+                  "end_ms": 22900
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ihambing ang poster at schedule trial bago pumili.",
+                  "start_ms": 23200,
+                  "end_ms": 28160
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Punan ang pitong bahagi ng plano at hiwalay na agreement status.",
+                  "start_ms": 28460,
+                  "end_ms": 33780
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Sa triad, isang BHW, isang residente o katuwang, at isang observer.",
+                  "start_ms": 34080,
+                  "end_ms": 41920
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Magbigay ng isang minutong rekomendasyon.",
+                  "start_ms": 42220,
+                  "end_ms": 45380
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Tanong ng katuwang: ‘Sino ang magdedesisyon?",
+                  "start_ms": 45680,
+                  "end_ms": 49280
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Anong resources ang kumpirmado?",
+                  "start_ms": 49580,
+                  "end_ms": 52580
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Sino ang pumayag?",
+                  "start_ms": 52880,
+                  "end_ms": 55240
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "Ano ang susukatin kapag hindi gumana?’",
+                  "start_ms": 55540,
+                  "end_ms": 58820
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "Tukuyin ang hindi pa alam; baguhin ang plano sa feedback at ulitin ang isang minutong rekomendasyon.",
+                  "start_ms": 59120,
+                  "end_ms": 67480
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "Iikot ang mga papel para makapagsanay ang lahat bilang BHW.",
+                  "start_ms": 67780,
+                  "end_ms": 73900
+                },
+                {
+                  "zone": "body",
+                  "index": 11,
+                  "text": "Kung mag-isa, isulat o sabihin ang rekomendasyon, sagutin ang parehong tanong, markahan ang kulang at ulitin.",
+                  "start_ms": 74200,
+                  "end_ms": 83360
+                },
+                {
+                  "zone": "body",
+                  "index": 12,
+                  "text": "Dalhin ang mungkahi sa team bago ipatupad.",
+                  "start_ms": 83660,
+                  "end_ms": 87220
+                },
+                {
+                  "zone": "body",
+                  "index": 13,
+                  "text": "Ang solo o peer practice ay hindi awtomatikong pasado; kailangan ang direktang obserbasyon ng assessor.",
+                  "start_ms": 87520,
+                  "end_ms": 95640
+                },
+                {
+                  "zone": "body",
+                  "index": 14,
+                  "text": "Ang panonood ng kuwento o pag-click sa quiz ay hindi competency assessment.",
+                  "start_ms": 95940,
+                  "end_ms": 100980
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
+                  "start_ms": 101280,
+                  "end_ms": 108080
+                }
+              ]
+            }
+          },
+          "review": {
+            "en": {
+              "src": "/training/audio/07-problema/problem-action-plan/review.en.f4049c158e6a.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "f4049c158e6ab3435f3f9958204a001c292d7cc1520c42b95ca6c7b950bcbc30",
+              "sha256": "bd041f89cd5a0523c906211fdca882585f157488427d74a05781939eb77975c7",
+              "duration_seconds": 99.239,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "When the first plan does not work",
+                  "start_ms": 0,
+                  "end_ms": 2760
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "For this separate review exercise, the scenario supplies partner agreement to an earlier trial of an earlier time.",
+                  "start_ms": 3060,
+                  "end_ms": 11780
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "This does not approve the new proposal.",
+                  "start_ms": 12080,
+                  "end_ms": 15480
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Before: three households invited, one attended.",
+                  "start_ms": 15780,
+                  "end_ms": 20780
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "After: three invited again, one attended again—two still missed the visit.",
+                  "start_ms": 21080,
+                  "end_ms": 28160
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "These are fictional counts, not a prevalence estimate.",
+                  "start_ms": 28460,
+                  "end_ms": 32420
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Separate activity, output and outcome: the meeting is an activity; an agreed trial schedule and three delivered invitations are outputs; attendance of 1 out of 3 is the measured outcome.",
+                  "start_ms": 32720,
+                  "end_ms": 47880
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Attendance did not increase.",
+                  "start_ms": 48180,
+                  "end_ms": 50740
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "The counts alone do not tell us why each household missed a visit or whether other barriers decreased.",
+                  "start_ms": 51040,
+                  "end_ms": 58880
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "‘An earlier time was insufficient,’ Carole says.",
+                  "start_ms": 59180,
+                  "end_ms": 63580
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "‘Let us recheck work, costs, childcare and notice.’",
+                  "start_ms": 63880,
+                  "end_ms": 70080
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "Do not label residents lazy or uncooperative.",
+                  "start_ms": 70380,
+                  "end_ms": 74900
+                },
+                {
+                  "zone": "body",
+                  "index": 11,
+                  "text": "Record reports and unknowns; compare invitations with attendance before and after.",
+                  "start_ms": 75200,
+                  "end_ms": 82440
+                },
+                {
+                  "zone": "body",
+                  "index": 12,
+                  "text": "Revise the assumption and propose a small change for renewed agreement.",
+                  "start_ms": 82740,
+                  "end_ms": 88220
+                },
+                {
+                  "zone": "body",
+                  "index": 13,
+                  "text": "One trial does not establish that the whole problem is solved.",
+                  "start_ms": 88520,
+                  "end_ms": 93600
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Review uses results to revise assumptions and the plan.",
+                  "start_ms": 93900,
+                  "end_ms": 99180
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/07-problema/problem-action-plan/review.fil.7aadd81f6af2.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "7aadd81f6af25c3b9ccda8089206d31db3b0da07ad1be1023d44c3a028ab8056",
+              "sha256": "9d936336d356fb01121fcd76f781124bf3daeda691259e06ea701c59ff6f3fdc",
+              "duration_seconds": 111.203,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Kapag hindi gumana ang unang plano",
+                  "start_ms": 0,
+                  "end_ms": 2880
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Para sa hiwalay na review exercise, ibinibigay ng scenario na pumayag ang mga katuwang sa isang naunang trial ng mas maagang oras.",
+                  "start_ms": 3180,
+                  "end_ms": 12860
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Hindi nito inaaprubahan ang bagong mungkahi.",
+                  "start_ms": 13160,
+                  "end_ms": 17440
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Bago: tatlong sambahayan ang inimbitahan, isa ang nakadalo.",
+                  "start_ms": 17740,
+                  "end_ms": 23220
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Pagkatapos: tatlo pa rin ang inimbitahan, isa pa rin ang nakadalo—dalawa pa rin ang hindi nakapunta.",
+                  "start_ms": 23520,
+                  "end_ms": 32120
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Kathang-isip na bilang ito, hindi pagtataya ng prevalence.",
+                  "start_ms": 32420,
+                  "end_ms": 37740
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Ihiwalay ang gawain, output at resulta: gawain ang pulong; output ang napag-usapang trial schedule at naipadalang tatlong paanyaya; attendance na 1 sa 3 ang nasukat na resulta.",
+                  "start_ms": 38040,
+                  "end_ms": 55200
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Walang pagtaas sa attendance.",
+                  "start_ms": 55500,
+                  "end_ms": 58140
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Hindi natin alam mula sa bilang kung bakit hindi nakadalo ang bawat sambahayan o kung nabawasan ang ibang hadlang.",
+                  "start_ms": 58440,
+                  "end_ms": 66520
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "‘Hindi sapat ang mas maagang oras,’ sabi ni Carole.",
+                  "start_ms": 66820,
+                  "end_ms": 70940
+                },
+                {
+                  "zone": "body",
+                  "index": 9,
+                  "text": "‘Kumustahin natin muli ang trabaho, gastos, pag-aalaga ng bata at abiso.’",
+                  "start_ms": 71240,
+                  "end_ms": 77800
+                },
+                {
+                  "zone": "body",
+                  "index": 10,
+                  "text": "Huwag tawaging tamad o hindi nakikiisa ang residente.",
+                  "start_ms": 78100,
+                  "end_ms": 82940
+                },
+                {
+                  "zone": "body",
+                  "index": 11,
+                  "text": "Itala ang ulat at hindi pa alam; ihambing ang invitations at attendance bago at pagkatapos.",
+                  "start_ms": 83240,
+                  "end_ms": 91840
+                },
+                {
+                  "zone": "body",
+                  "index": 12,
+                  "text": "Baguhin ang palagay at magmungkahi ng maliit na pagbabago para sa panibagong pagsang-ayon.",
+                  "start_ms": 92140,
+                  "end_ms": 99260
+                },
+                {
+                  "zone": "body",
+                  "index": 13,
+                  "text": "Hindi patunay ang isang trial na lutas na ang buong problema.",
+                  "start_ms": 99560,
+                  "end_ms": 104400
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang review ay pagkakataong baguhin ang palagay at plano gamit ang resulta.",
+                  "start_ms": 104700,
+                  "end_ms": 111140
                 }
               ]
             }
