@@ -17,6 +17,10 @@ for folder in ['lesson183-source','lesson183-raw','lesson183-audio']:
  for p in (root/'.preview'/folder).glob('*'):
   if p.is_file() and not p.name.endswith('-original.pdf'):add(p,'evidence/'+folder+'/'+p.name)
 inline=json.loads((out/'lesson-183-inline-media.json').read_text())
+import base64
+html=(out/'lesson-1.8.3-apple-review.html').read_text()
+embedded={sha(base64.b64decode(data)) for data in re.findall(r'data:[a-zA-Z0-9.+/-]+;base64,([A-Za-z0-9+/=]+)',html)}
+assert all(r['sha256'] in embedded for r in inline.values()),'Inline HTML media byte mismatch'
 for url,receipt in inline.items():
  p=root/'public'/url.lstrip('/');assert sha(p.read_bytes())==receipt['sha256'] and p.stat().st_size==receipt['bytes']
  add(p,'media/'+url.lstrip('/'))

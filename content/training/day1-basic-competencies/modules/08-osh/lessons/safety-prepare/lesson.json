@@ -300,6 +300,46 @@
       "caption_en": "Fictional adaptation: Choose the next step",
       "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.",
       "review_status": "draft"
+    },
+    {
+      "id": "safety-prepare-story",
+      "alt_fil": "Anim na hakbang ni Apple: paghahanda, ruta, pasya, beripikasyon, retry at alternatibong may hindi pa tiyak.",
+      "alt_en": "Apple’s six steps: preparation, route, decision, verification, retry and an alternative with unresolved conditions.",
+      "caption_fil": "Kathang-isip na role-play: briefing muna; deferred ang visit habang hindi pa ready.",
+      "caption_en": "Fictional role-play: briefing first; visit deferred while conditions remain unready.",
+      "provenance": "Original six-scene Remotion adaptation using hash-pinned shared Apple reference and Gemini Kore narration. Measured beat boundaries and actual final-frame poster. Human listening, clinical and owner reviews pending.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-8/safety-prepare-gemini-fil-41145f0ed082.mp4",
+          "content_hash": "41145f0ed0829b980cbad3f4d2cd27c0b9d116965a1a51a05367375ce886ee59",
+          "duration_s": 72,
+          "poster": {
+            "path": "/training/bhw-1-8/safety-prepare-gemini-fil-457ca5392fa7-poster.jpg",
+            "content_hash": "457ca5392fa72cc7d9ba38dc85eb0c4aac0b9e3ef39bd83dedd149c29234a905"
+          },
+          "captions": {
+            "path": "/training/bhw-1-8/safety-prepare-gemini-fil-3a44b1b1423b.vtt",
+            "content_hash": "3a44b1b1423b51f6ae58d700afa0600ba9202f697aabea3db1ebe93ac0276023"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-8/safety-prepare-gemini-en-0cabcedd0467.mp4",
+          "content_hash": "0cabcedd0467c5ed973ca31ec7e54c2c12b361cee989e4927aa8f67c8db01ea8",
+          "duration_s": 66,
+          "poster": {
+            "path": "/training/bhw-1-8/safety-prepare-gemini-en-6c04da47980b-poster.jpg",
+            "content_hash": "6c04da47980bd726e8be4dfd6869f47b8f2854d6ba0a75568a4e1be7150f3f6f"
+          },
+          "captions": {
+            "path": "/training/bhw-1-8/safety-prepare-gemini-en-ade9dce70e68.vtt",
+            "content_hash": "ade9dce70e68ffafe61e43fa0b4e57ab2dfbd2ab0902e9b245619b4584aebe32"
+          }
+        }
+      },
+      "path": "/training/bhw-1-8/safety-prepare-gemini-fil-457ca5392fa7-poster.jpg",
+      "content_hash": "457ca5392fa72cc7d9ba38dc85eb0c4aac0b9e3ef39bd83dedd149c29234a905"
     }
-  ]
+  ],
+  "featured_asset_id": "safety-prepare-story"
 }

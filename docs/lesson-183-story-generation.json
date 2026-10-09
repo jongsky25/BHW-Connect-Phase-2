@@ -1,0 +1,425 @@
+{
+  "status": "generated draft",
+  "source_commit": "5d26d927934e3882ad4e17c3c508e40560af48c1",
+  "registry_predecessor_sha256": "6adfe9da6a63ac8fcaa5d7f584d814fc7c2d7e3be74c2ae8f3cf94259d604992",
+  "registry_successor_sha256": "74f6b84ed0b2b24ce56ed47a783a5cbdfbcb5f15979b30ef5798e82b83a54e84",
+  "reports": [
+    {
+      "language": "fil",
+      "timing": {
+        "language": "fil",
+        "provider": "gemini",
+        "model": "gemini-3.8-flash-tts",
+        "voice": "Kore",
+        "speech_style": "Natural Filipino educational narration, stable adult female narrator Kore. Warm clear conversational pacing, preserve all negation and qualifications. Apple is the character's name; no invented dialogue.",
+        "durationSeconds": 70.243,
+        "beats": [
+          {
+            "zone": "station-preparation",
+            "index": 0,
+            "text": "Si Apple ay naghahanda sa mock station. Walang sabon at may madulas na pasukan. Ihinto ang apektadong gawain; dummy equipment lamang.",
+            "start_ms": 0,
+            "end_ms": 9800
+          },
+          {
+            "zone": "field-preparation",
+            "index": 1,
+            "text": "May banta sa kathang-isip na Tulay A. Hindi pa tiyak ang ibang daan. Kumpirmahin ang ruta, tubig, lilim, pahinga, contact at oras ng balik.",
+            "start_ms": 10100,
+            "end_ms": 21300
+          },
+          {
+            "zone": "combined-hazards",
+            "index": 2,
+            "text": "Mainit, may pila at kulang ang proteksyon. Apple: “Alin ang pause, alin ang ligtas na pagbabago, at alin ang kailangan ng inyong pasya?”",
+            "start_ms": 21600,
+            "end_ms": 32560
+          },
+          {
+            "zone": "verify-readiness",
+            "index": 3,
+            "text": "Sa follow-up card, nasuri ang sabon at tuyong pasukan. Hindi pa tiyak ang visit route at contact. Hindi ready ang hindi pa beripikado.",
+            "start_ms": 32860,
+            "end_ms": 42620
+          },
+          {
+            "zone": "practice",
+            "index": 4,
+            "text": "Punan ang limang field. Ibrief ang pause, alternatibo at hindi pa alam. Humingi ng tiyak na feedback, iwasto at ulitin. Practice ang peer feedback.",
+            "start_ms": 42920,
+            "end_ms": 54360
+          },
+          {
+            "zone": "check",
+            "index": 5,
+            "text": "Sa role-play, napagkasunduan ang mock briefing muna; deferred ang unsafe visit. Nakikita ang hindi pa tiyak na ruta, contact at proteksyon. Beripikahin bago magsimula. Hindi ipinapalagay na nawala ang banta.",
+            "start_ms": 54660,
+            "end_ms": 70180
+          }
+        ],
+        "audio_sha256": "ccdd5204cc92b399b7df8993383564da8c6413886f858d1b02da4502ee76c4f4"
+      },
+      "encoded_probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 854,
+            "height": 480,
+            "coded_width": 854,
+            "coded_height": 480,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "427:240",
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "chroma_location": "center",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/90000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 6420000,
+            "duration": "71.333333",
+            "bit_rate": "66037",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "2140",
+            "extradata_size": 51,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "48000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 3426304,
+            "duration": "71.381333",
+            "bit_rate": "45375",
+            "nb_frames": "3346",
+            "extradata_size": 2,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/home/runner/work/BHW-Connect-Phase-2/BHW-Connect-Phase-2/public/training/bhw-1-8/safety-prepare-gemini-fil-41145f0ed082.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "71.381333",
+          "size": "1073121",
+          "bit_rate": "120269",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.100",
+            "comment": "Made with Remotion 4.0.526"
+          }
+        }
+      },
+      "video": {
+        "path": "/training/bhw-1-8/safety-prepare-gemini-fil-41145f0ed082.mp4",
+        "content_hash": "41145f0ed0829b980cbad3f4d2cd27c0b9d116965a1a51a05367375ce886ee59",
+        "duration_s": 71.381333,
+        "poster": {
+          "path": "/training/bhw-1-8/safety-prepare-gemini-fil-457ca5392fa7-poster.jpg",
+          "content_hash": "457ca5392fa72cc7d9ba38dc85eb0c4aac0b9e3ef39bd83dedd149c29234a905"
+        },
+        "captions": {
+          "path": "/training/bhw-1-8/safety-prepare-gemini-fil-3a44b1b1423b.vtt",
+          "content_hash": "3a44b1b1423b51f6ae58d700afa0600ba9202f697aabea3db1ebe93ac0276023"
+        }
+      }
+    },
+    {
+      "language": "en",
+      "timing": {
+        "language": "en",
+        "provider": "gemini",
+        "model": "gemini-3.8-flash-tts",
+        "voice": "Kore",
+        "speech_style": "Natural Philippine English educational narration, stable adult female narrator Kore. Warm clear conversational pacing, preserve all negation and qualifications. Apple is the character's name; no invented dialogue.",
+        "durationSeconds": 64.052,
+        "beats": [
+          {
+            "zone": "station-preparation",
+            "index": 0,
+            "text": "Apple prepares a mock station. Soap is missing and the entrance is slippery. Pause affected work; use dummy equipment only.",
+            "start_ms": 0,
+            "end_ms": 8680
+          },
+          {
+            "zone": "field-preparation",
+            "index": 1,
+            "text": "A threat is reported at fictional Bridge A. Another route is unconfirmed. Check route, water, shade, rest, contact and return time.",
+            "start_ms": 8980,
+            "end_ms": 19300
+          },
+          {
+            "zone": "combined-hazards",
+            "index": 2,
+            "text": "Heat, queues and missing protection combine. Apple asks: “What pauses, what can safely change, and what needs your decision?”",
+            "start_ms": 19600,
+            "end_ms": 29720
+          },
+          {
+            "zone": "verify-readiness",
+            "index": 3,
+            "text": "The follow-up card confirms soap and a dry entrance. Visit route and contact remain unknown. Unverified conditions are not ready.",
+            "start_ms": 30020,
+            "end_ms": 38620
+          },
+          {
+            "zone": "practice",
+            "index": 4,
+            "text": "Complete five fields. Brief the pause, alternative and unknowns. Get specific feedback, correct and retry. Peer feedback is practice.",
+            "start_ms": 38920,
+            "end_ms": 49880
+          },
+          {
+            "zone": "check",
+            "index": 5,
+            "text": "In the role-play, a mock briefing is agreed; the unsafe visit is deferred. Route, contact and protection remain visibly unresolved. Verify before starting. Do not assume the threat vanished.",
+            "start_ms": 50180,
+            "end_ms": 63980
+          }
+        ],
+        "audio_sha256": "4a98a04ad6e0c2f0fd5ef90ba450eec324812e232cd1c47094d68c70bb5c3dec"
+      },
+      "encoded_probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 854,
+            "height": 480,
+            "coded_width": 854,
+            "coded_height": 480,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "427:240",
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "chroma_location": "center",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/90000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 5865000,
+            "duration": "65.166667",
+            "bit_rate": "65059",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "1955",
+            "extradata_size": 51,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "48000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 3130368,
+            "duration": "65.216000",
+            "bit_rate": "45375",
+            "nb_frames": "3057",
+            "extradata_size": 2,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/home/runner/work/BHW-Connect-Phase-2/BHW-Connect-Phase-2/public/training/bhw-1-8/safety-prepare-gemini-en-0cabcedd0467.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "65.216000",
+          "size": "972563",
+          "bit_rate": "119303",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.100",
+            "comment": "Made with Remotion 4.0.526"
+          }
+        }
+      },
+      "video": {
+        "path": "/training/bhw-1-8/safety-prepare-gemini-en-0cabcedd0467.mp4",
+        "content_hash": "0cabcedd0467c5ed973ca31ec7e54c2c12b361cee989e4927aa8f67c8db01ea8",
+        "duration_s": 65.216,
+        "poster": {
+          "path": "/training/bhw-1-8/safety-prepare-gemini-en-6c04da47980b-poster.jpg",
+          "content_hash": "6c04da47980bd726e8be4dfd6869f47b8f2854d6ba0a75568a4e1be7150f3f6f"
+        },
+        "captions": {
+          "path": "/training/bhw-1-8/safety-prepare-gemini-en-ade9dce70e68.vtt",
+          "content_hash": "ade9dce70e68ffafe61e43fa0b4e57ab2dfbd2ab0902e9b245619b4584aebe32"
+        }
+      }
+    }
+  ],
+  "human_listening": "pending",
+  "clinical_review": "pending",
+  "owner_review": "pending"
+}

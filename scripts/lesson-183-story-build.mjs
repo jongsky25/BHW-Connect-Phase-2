@@ -34,7 +34,7 @@ for(const lang of ['fil','en']){
  const video=media('.mp4');
  const probe=JSON.parse(execFileSync('ffprobe',['-v','error','-show_streams','-show_format','-of','json',root+'/public'+video.path],{encoding:'utf8'}));
  if(!probe.streams.some(s=>s.codec_name==='h264'&&s.width===854&&s.height===480)||!probe.streams.some(s=>s.codec_name==='aac'))throw Error('Wrong actual encoded story format');
- asset.videos[lang]={...video,duration_s:Number(probe.format.duration),poster:media('-poster.jpg'),captions:media('.vtt')};
+ asset.videos[lang]={...video,duration_s:Math.ceil(Number(probe.format.duration)),poster:media('-poster.jpg'),captions:media('.vtt')};
  if(lang==='fil')Object.assign(asset,media('-poster.jpg'));
  reports.push({language:lang,timing,encoded_probe:probe,video:asset.videos[lang]});
 }

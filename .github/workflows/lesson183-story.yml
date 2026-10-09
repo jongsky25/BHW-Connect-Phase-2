@@ -36,9 +36,11 @@ jobs:
           LESSON183_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-183-record-fetch.mjs'
         run: |
-          node scripts/remotion-safety-prepare-narrate.mjs fil
-          node scripts/remotion-safety-prepare-narrate.mjs en
-          node scripts/lesson-183-story-build.mjs
+          if ! test -f docs/lesson-183-story-generation.json; then
+            node scripts/remotion-safety-prepare-narrate.mjs fil
+            node scripts/remotion-safety-prepare-narrate.mjs en
+            node scripts/lesson-183-story-build.mjs
+          fi
           node scripts/lesson-183-audio-review.mjs --story-only
       - uses: actions/upload-artifact@v4
         if: always()

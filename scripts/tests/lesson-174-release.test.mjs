@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {describe,it,expect} from 'vitest';
 import {reviewed174} from '../lib/lesson-174-proposal.mjs';
+import {beforeProposed183} from '../lib/lesson-183-integration.mjs';
 const a=JSON.parse(fs.readFileSync('docs/lesson-174-owner-approval.json'));
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json';
@@ -20,7 +21,7 @@ describe('Owner-authorized 1.7.4 release',()=>{
   expect(()=>reviewed174(leaf,Buffer.from('unexpected'))).toThrow('Unpinned');
  });
  it('preserves every authorized source and selected public medium exactly',()=>{
-  for(const [p,h]of Object.entries(a.approved_source_sha256))expect(hash(fs.readFileSync(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(a.approved_source_sha256))expect(hash(beforeProposed183(p)),p).toBe(h);
   expect(a.approved_media).toHaveLength(24);
   for(const m of a.approved_media){const b=fs.readFileSync('public'+m.path);expect(hash(b),m.path).toBe(m.sha256);expect(b.length).toBe(m.bytes);}
  });

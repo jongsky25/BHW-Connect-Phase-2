@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Natural Filipino educational narration, stable adult female narrator Kore. Warm clear conversational pacing, preserve all negation and qualifications. Apple is the character's name; no invented dialogue.",
+  "durationSeconds": 70.243,
+  "beats": [
+    {
+      "zone": "station-preparation",
+      "index": 0,
+      "text": "Si Apple ay naghahanda sa mock station. Walang sabon at may madulas na pasukan. Ihinto ang apektadong gawain; dummy equipment lamang.",
+      "start_ms": 0,
+      "end_ms": 9800
+    },
+    {
+      "zone": "field-preparation",
+      "index": 1,
+      "text": "May banta sa kathang-isip na Tulay A. Hindi pa tiyak ang ibang daan. Kumpirmahin ang ruta, tubig, lilim, pahinga, contact at oras ng balik.",
+      "start_ms": 10100,
+      "end_ms": 21300
+    },
+    {
+      "zone": "combined-hazards",
+      "index": 2,
+      "text": "Mainit, may pila at kulang ang proteksyon. Apple: “Alin ang pause, alin ang ligtas na pagbabago, at alin ang kailangan ng inyong pasya?”",
+      "start_ms": 21600,
+      "end_ms": 32560
+    },
+    {
+      "zone": "verify-readiness",
+      "index": 3,
+      "text": "Sa follow-up card, nasuri ang sabon at tuyong pasukan. Hindi pa tiyak ang visit route at contact. Hindi ready ang hindi pa beripikado.",
+      "start_ms": 32860,
+      "end_ms": 42620
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Punan ang limang field. Ibrief ang pause, alternatibo at hindi pa alam. Humingi ng tiyak na feedback, iwasto at ulitin. Practice ang peer feedback.",
+      "start_ms": 42920,
+      "end_ms": 54360
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Sa role-play, napagkasunduan ang mock briefing muna; deferred ang unsafe visit. Nakikita ang hindi pa tiyak na ruta, contact at proteksyon. Beripikahin bago magsimula. Hindi ipinapalagay na nawala ang banta.",
+      "start_ms": 54660,
+      "end_ms": 70180
+    }
+  ],
+  "audio_sha256": "ccdd5204cc92b399b7df8993383564da8c6413886f858d1b02da4502ee76c4f4"
+}
