@@ -33,8 +33,8 @@ if(!pending.length){
  const leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json';
  const lesson=JSON.parse(fs.readFileSync(leaf));
  const story={id:'safety-demonstrate-story',alt_fil:'Anim na beat: trainer-observed dummy demo ni Apple, agarang reporting/evaluation at documentation pagkatapos ng care.',alt_en:'Six beats: Apple’s trainer-observed dummy demo, immediate reporting/evaluation and documentation following care.',caption_fil:'Kathang-isip na demonstration at referral simulation; walang medical outcome.',caption_en:'Fictional demonstration and referral simulation; no medical outcome.',provenance:'Six built-in imagegen actions using the coordinated Apple reference; Gemini Kore narration, measured encoded samples; draft pending owner, clinical and human-listening review.',review_status:'draft',videos:{}};
+ for(const language of ['fil','en'])execFileSync(process.execPath,['scripts/remotion-safety-demonstrate-narrate.mjs',language],{stdio:'inherit'});
  for(const language of ['fil','en']){
-  execFileSync(process.execPath,['scripts/remotion-safety-demonstrate-narrate.mjs',language],{stdio:'inherit'});
   const name='safety-demonstrate-gemini-'+language;
   execFileSync(process.execPath,['scripts/remotion-render.mjs',language==='fil'?'SafetyDemonstrateStoryFil':'SafetyDemonstrateStoryEn',name,'--public','training/bhw-1-8','--with-audio','--captions',`safety-demonstrate/narration-${language}.json`],{stdio:'inherit'});
   const media=ext=>{const p='remotion/out/'+name+ext,h=sha(p);return{path:'/training/bhw-1-8/'+name+'-'+h.slice(0,12)+ext,content_hash:h};};
