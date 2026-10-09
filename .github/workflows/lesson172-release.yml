@@ -49,11 +49,13 @@ jobs:
             checks=$(curl --fail --silent --show-error --retry 2 -H "Authorization: Bearer $GH_TOKEN" -H 'Accept: application/vnd.github+json' "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/check-runs?per_page=100")
             statuses=$(curl --fail --silent --show-error --retry 2 -H "Authorization: Bearer $GH_TOKEN" -H 'Accept: application/vnd.github+json' "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/status")
             ci=$(jq -r '[.check_runs[]|select(.name=="checks" or .name=="e2e")]|if length==2 and all(.[];.conclusion=="success") then "success" elif any(.[];.conclusion=="failure" or .conclusion=="cancelled") then "failure" else "pending" end' <<<"$checks")
+            e2e=$(jq -r '[.check_runs[]|select(.name=="e2e")]|if length==1 then .[0].conclusion // "pending" else "pending" end' <<<"$checks")
+            test "$e2e" != failure && test "$e2e" != cancelled
             vercel=$(jq -r '[.statuses[]|select(.context=="Vercel")]|if length>0 then .[0].state else "pending" end' <<<"$statuses")
-            echo "Exact SHA gate: CI=$ci Vercel=$vercel (attempt $attempt)"
+            echo "Exact SHA gate: CI=$ci E2E=$e2e Vercel=$vercel (attempt $attempt)"
             echo "CI is independently checked; inherited 1.7.3 narration failure remains recorded."
             test "$vercel" != failure && test "$vercel" != error
-            if [ "$vercel" = success ]; then exit 0; fi
+            if [ "$vercel" = success ] && [ "$e2e" = success ]; then exit 0; fi
             sleep 25
           done
           echo 'Timed out waiting for exact merged SHA gates' >&2
