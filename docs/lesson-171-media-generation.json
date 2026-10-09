@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-09T01:43:30.669Z",
+  "source_commit": "0c626dfb6f748eacc28bf1c27f2f232de154d310",
+  "owner_review": "pending",
+  "render_input_sha256": "9faf900ba408e4c5859c88e2c781459541364939ab5e3a53421e306c7eae79f3",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 53.081,
+      "beats": [
+        {
+          "zone": "missed-visits",
+          "index": 0,
+          "text": "Nakinig si Carole sa tatlong pamilyang hindi nakapunta. Ulat nila ito; hindi pa nasusuri ang attendance record.",
+          "start_ms": 0,
+          "end_ms": 8000
+        },
+        {
+          "zone": "worked-example",
+          "index": 1,
+          "text": "Hindi pagpunta ang pangyayari. Hula ang ayaw pumunta. Solusyon ang poster. Ihiwalay ang tatlo.",
+          "start_ms": 8300,
+          "end_ms": 17500
+        },
+        {
+          "zone": "source-gap",
+          "index": 2,
+          "text": "Itinala ni Carole kung sino ang nagsabi. Hindi pa tiyak ang petsa at hadlang ng bawat pamilya.",
+          "start_ms": 17800,
+          "end_ms": 23840
+        },
+        {
+          "zone": "resident-perspective",
+          "index": 3,
+          "text": "Nilinaw ng unang residente: Martes, hindi Lunes. Hindi tiyak ang pagkansela. Itinala ni Carole ang pagwawasto.",
+          "start_ms": 24140,
+          "end_ms": 33060
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Sa triad, isulat ang pangyayari, pinagmulan at kulang. Magtanong, mag-feedback at ulitin nang walang paninisi.",
+          "start_ms": 33360,
+          "end_ms": 42320
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Ayon sa tatlong pamilya, hindi sila nakapunta. Iniulat na Martes ang una. Kulang pa ang rekord at bawat hadlang. Walang hinulaang sanhi.",
+          "start_ms": 42620,
+          "end_ms": 53020
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-7/problem-define-gemini-fil-6ef3b510d796.mp4",
+        "content_hash": "6ef3b510d796cd5a7140aba5c70966f358bdcf401b9fb5c81bd456d392f3b09d",
+        "duration_s": 54,
+        "captions": {
+          "path": "/training/bhw-1-7/problem-define-gemini-fil-c2bae19f5420.vtt",
+          "content_hash": "c2bae19f5420159e23efada9b214d0a9166b0c9bdbfdab0f3bb9ac5359d17bf2"
+        },
+        "poster": {
+          "path": "/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg",
+          "content_hash": "790c964b21194eab42332e3c7158ad5e3c137716d78f4ca5ee0ec65c0992fa5d"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg",
+        "content_hash": "790c964b21194eab42332e3c7158ad5e3c137716d78f4ca5ee0ec65c0992fa5d"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 49.737,
+      "beats": [
+        {
+          "zone": "missed-visits",
+          "index": 0,
+          "text": "Carole hears three households report missed visits. These are reports; attendance records remain unchecked.",
+          "start_ms": 0,
+          "end_ms": 8160
+        },
+        {
+          "zone": "worked-example",
+          "index": 1,
+          "text": "Missed visits are the event. Unwillingness is a guess. A poster is a solution. Separate the three.",
+          "start_ms": 8460,
+          "end_ms": 16420
+        },
+        {
+          "zone": "source-gap",
+          "index": 2,
+          "text": "Carole identifies each source. Dates and each household’s barrier remain uncertain.",
+          "start_ms": 16720,
+          "end_ms": 23440
+        },
+        {
+          "zone": "resident-perspective",
+          "index": 3,
+          "text": "The first resident clarifies: Tuesday, not Monday. Cancellation is uncertain. Carole attributes the correction.",
+          "start_ms": 23740,
+          "end_ms": 31780
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "In triads, write event, source and gap. Ask, give feedback and retry without blame.",
+          "start_ms": 32080,
+          "end_ms": 39840
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Three households report missed visits. The first reports Tuesday. Records and each barrier remain unchecked. No cause is guessed.",
+          "start_ms": 40140,
+          "end_ms": 49660
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-7/problem-define-gemini-en-f62a9bc61edd.mp4",
+        "content_hash": "f62a9bc61edd3d945a1827aef595a0a183e6b3f2fac8c008e6e5007c5a5b43ca",
+        "duration_s": 51,
+        "captions": {
+          "path": "/training/bhw-1-7/problem-define-gemini-en-9d90d5de99e2.vtt",
+          "content_hash": "9d90d5de99e213de051304b77dfd7b6a20993cadf7591652889b8222d1676c4b"
+        },
+        "poster": {
+          "path": "/training/bhw-1-7/problem-define-gemini-en-289daa76d962-poster.jpg",
+          "content_hash": "289daa76d96201be1de4da65ee93020bd39adb866dbcd7ef075f6f1d3eff315f"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-7/problem-define-gemini-en-289daa76d962-poster.jpg",
+        "content_hash": "289daa76d96201be1de4da65ee93020bd39adb866dbcd7ef075f6f1d3eff315f"
+      }
+    }
+  ]
+}

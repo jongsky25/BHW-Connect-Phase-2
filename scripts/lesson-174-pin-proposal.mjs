@@ -2,9 +2,9 @@
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
-const baseline=JSON.parse(fs.readFileSync('docs/lesson-174-implementation-baseline.json'));
+const baseline=JSON.parse(fs.readFileSync('docs/lesson-174-integrated-baseline.json'));
 const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/';
-const paths=['lesson.json','read.fil.md','read.en.md','slides.json','competency.json','facilitator.fil.md','facilitator.en.md'].map(p=>leaf+p).concat('src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','content/training/day1-basic-competencies/narration.json');
+const paths=['lesson.json','read.fil.md','read.en.md','slides.json','competency.json','facilitator.fil.md','facilitator.en.md'].map(p=>leaf+p).concat('src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','content/training/day1-basic-competencies/narration.json','scripts/lib/lesson-171-integration.mjs','.github/workflows/ci.yml','.github/workflows/remotion.yml');
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const receipt={status:'draft',target:'problem-action-plan',owner_release_approval:false,baseline_commit:baseline.base_commit,changed_existing_files:{}};
 for(const p of paths){

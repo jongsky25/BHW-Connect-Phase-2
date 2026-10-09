@@ -1,0 +1,83 @@
+name: Lesson 1.7.1 frozen draft review
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson171-review.yml'
+      - 'scripts/lesson-171-review-*.mjs'
+      - 'scripts/lesson-171-package.mjs'
+      - 'docs/lesson-171-evidence-origins.json'
+      - 'docs/lesson-171-proposal-receipt.json'
+      - 'content/training/day1-basic-competencies/narration.json'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson171-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  frozen-review:
+    if: github.head_ref == 'codex/lesson-171-carole-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Retain exact generation and review evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-171-retain-evidence.mjs
+      - name: Verify scoped source preservation
+        run: node scripts/lesson-171-preservation.mjs
+      - name: Verify committed media and protected history
+        run: node scripts/lesson-171-media-verify.mjs
+      - name: Verify primary sources and excerpt hashes
+        run: |
+          python3 -m pip install PyMuPDF==1.26.6
+          python3 scripts/lesson-171-source-evidence.py
+      - name: Build actual-component offline review
+        run: node scripts/lesson-171-review-build.mjs
+      - name: Verify both languages, modes, desktop/mobile and playback
+        run: node scripts/lesson-171-browser-verify.mjs
+      - name: Print and verify four A4 pages per language
+        run: |
+          node scripts/lesson-171-print-kit.mjs
+          python3 scripts/lesson-171-print-verify.py
+      - name: Wait for full normal CI and all 86 compositions at frozen head
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-171-wait-ci.mjs
+      - name: Verify evidence and package integrity
+        run: |
+          node scripts/lesson-171-review-verify.mjs
+          node scripts/lesson-171-package.mjs
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: lesson171-review-package
+          path: |
+            .preview/lesson171-deliverables/lesson-1.7.1-carole-review.zip
+            .preview/lesson171-deliverables/lesson-171-package-integrity.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: lesson171-review-diagnostics
+          path: |
+            .preview/lesson171-deliverables/*.json
+            .preview/lesson171-deliverables/*.png
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30

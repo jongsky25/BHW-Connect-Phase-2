@@ -32,14 +32,14 @@ describe('Carole action-plan draft',()=>{
  });
  it('retains original public bytes, sibling teaching, narration/history, UUIDs and approval receipts',()=>{
   const allowed=new Set(Object.keys(j('docs/lesson-174-proposal-receipt.json').changed_existing_files));
-  for(const [p,h]of Object.entries(captured.files))if(!allowed.has(p))expect(sha(bytes(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(j('docs/lesson-174-integrated-baseline.json').files))if(!allowed.has(p))expect(sha(bytes(p)),p).toBe(h);
  },30000);
  it('uses strict exact successor guards before historical views',()=>{
   const r=j('docs/lesson-174-proposal-receipt.json');
   for(const [p,e]of Object.entries(r.changed_existing_files)){
    expect(sha(bytes(p))).toBe(e.proposed_sha256);
    expect(sha(beforeProposed174(p))).toBe(e.predecessor_sha256);
-   expect(beforeProposed174(p)).toEqual(execFileSync('git',['show',captured.base_commit+':'+p],{maxBuffer:32*1024*1024}));
+   expect(beforeProposed174(p)).toEqual(execFileSync('git',['show',j('docs/lesson-174-integrated-baseline.json').base_commit+':'+p],{maxBuffer:32*1024*1024}));
    expect(()=>beforeProposed174(p,Buffer.from('changed'))).toThrow('Unpinned');
   }
   expect(r.owner_release_approval).toBe(false);

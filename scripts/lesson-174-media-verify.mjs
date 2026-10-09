@@ -2,7 +2,7 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {execFileSync} from 'node:child_process';
 import {loadReferenceModule} from './lib/reference-content.mjs';import {planReferenceNarration,mp3AudioFrames} from './lib/reference-narration.mjs';
 const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),j=p=>JSON.parse(fs.readFileSync(p));
-const captured=j('docs/lesson-174-implementation-baseline.json');
+const captured=j('docs/lesson-174-integrated-baseline.json');
 const old=JSON.parse(execFileSync('git',['show',captured.base_commit+':content/training/day1-basic-competencies/narration.json'],{encoding:'utf8',maxBuffer:32*1024*1024}));
 const manifest=j('content/training/day1-basic-competencies/narration.json');
 for(const [key,value]of Object.entries(old.lessons))if(key!=='problem-action-plan')assert.deepEqual(manifest.lessons[key],value);

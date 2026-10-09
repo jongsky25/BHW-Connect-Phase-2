@@ -1,0 +1,2503 @@
+{
+  "prompt_revision": "carole-definition-v1",
+  "date": "2026-10-09T01:46:52.569Z",
+  "source_commit": "0c626dfb6f748eacc28bf1c27f2f232de154d310",
+  "model": "gemini-3.8-flash",
+  "decode_only": false,
+  "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "method": "Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.",
+  "records": [
+    {
+      "id": "read-check-fil",
+      "language": "fil",
+      "source_path": "/training/audio/07-problema/problem-define/check.fil.776860028818.mp3",
+      "source_sha256": "7bd665eb6ceaa84a55cd578530c2d84fb1e11bc577bc9112a99746b9c9f7ce14",
+      "decoded_pcm_sha256": "4740e78be0cf222823f07e13b9ab61fe2e8c2589992fb75c6bd8c000c25d7cfe",
+      "full_audio_metrics": {
+        "samples": 843233,
+        "seconds": 35.134708333333336,
+        "rms": 0.1236185131416279,
+        "peak": 0.89801025390625,
+        "quiet_sample_fraction": 0.24297673359557798
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Piliin ang susunod na hakbang",
+          "start_ms": 0,
+          "end_ms": 2520,
+          "samples": 60480,
+          "seconds": 2.52,
+          "rms": 0.12740904216433277,
+          "peak": 0.729095458984375,
+          "quiet_sample_fraction": 0.2178240740740741
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Tingnan muna ang larawan ng pakikinig at pagwawasto.",
+          "start_ms": 2820,
+          "end_ms": 6020,
+          "samples": 76800,
+          "seconds": 3.2,
+          "rms": 0.13264063149198763,
+          "peak": 0.75982666015625,
+          "quiet_sample_fraction": 0.20466145833333332
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Piliin ang pahayag na angkop na simula ng pagsisiyasat at ipaliwanag kung bakit bago tingnan ang feedback.",
+          "start_ms": 6320,
+          "end_ms": 14200,
+          "samples": 189120,
+          "seconds": 7.88,
+          "rms": 0.11946468415775782,
+          "peak": 0.80950927734375,
+          "quiet_sample_fraction": 0.1973614636209814
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ihambing ang lahat ng sagot sa sarili mong pagtatangka.",
+          "start_ms": 14500,
+          "end_ms": 18060,
+          "samples": 85440,
+          "seconds": 3.56,
+          "rms": 0.11133350421841048,
+          "peak": 0.52947998046875,
+          "quiet_sample_fraction": 0.16511001872659176
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Sa pagtatapos, dapat may pangyayari at saklaw, pinagmulan at tapat na kulang ang pahayag; hindi hinulaang sanhi o ipinangakong solusyon.",
+          "start_ms": 18360,
+          "end_ms": 28720,
+          "samples": 248640,
+          "seconds": 10.36,
+          "rms": 0.13556135315419762,
+          "peak": 0.89801025390625,
+          "quiet_sample_fraction": 0.22890524453024452
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "start_ms": 29020,
+          "end_ms": 35060,
+          "samples": 144960,
+          "seconds": 6.04,
+          "rms": 0.12390751103298192,
+          "peak": 0.76904296875,
+          "quiet_sample_fraction": 0.20767798013245034
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 6.02,
+          "file": "read-check-fil-head.wav",
+          "excerpt_sha256": "7ea18a92ec4f63d1c619ec39c618560e469737b36d234a81eacd3eb8743797b9",
+          "decoded_sample_count": 144480,
+          "expected_context": "Piliin ang susunod na hakbang Tingnan muna ang larawan ng pakikinig at pagwawasto.",
+          "model_response": "```json\n{\n \"transcript\": \"Piliin ang susunod na hakbang. Tingnan muna ang larawan ng pakikinig at pagwawasto.\",\n \"observations\": {\n  \"speaker\": \"Single female speaker delivering clear instructional prompts in standard Filipino/Tagalog.\",\n  \"timestamps\": {\n   \"sentence_1\": \"00:00.00 - 00:02.05\",\n   \"pause\": \"00:02.05 - 00:02.80\",\n   \"sentence_2\": \"00:02.80 - 00:05.95\"\n  },\n  \"pronunciation\": \"Clear and natural enunciation of Tagalog vocabulary ('hakbang', 'larawan', 'pakikinig', 'pagwawasto').\",\n  \"negation\": \"No negative grammatical markers present.\",\n  \"role_distinctions\": \"Single consistent role (narrator/instructor).\",\n  \"ending_completeness\": \"The utterance completes naturally before the end of the recording without truncation.\",\n  \"voice_quality\": \"Consistent acoustic quality, steady pitch, and absence of unexpected changes.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None; speech is clear, complete, and fully intelligible.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.82,
+          "end": 6.02,
+          "file": "read-check-fil-body.wav",
+          "excerpt_sha256": "7255ae12eeb5bc86f53c1ba0307e266d8aa6e11cd3dc55fda8de2820ea3fc166",
+          "decoded_sample_count": 76800,
+          "expected_context": "Tingnan muna ang larawan ng pakikinig at pagwawasto.",
+          "model_response": "```json\n{\n  \"transcript\": \"Tingnan muna ang larawan ng pakikinig at pagwawasto.\",\n  \"observations\": \"The excerpt features a single female voice delivering instructional dialogue in clear Tagalog. The pacing is deliberate and suitable for educational listening materials. Articulation of all phonemes is distinct with standard pronunciation throughout.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 18.36,
+          "end": 35.06,
+          "file": "read-check-fil-critical.wav",
+          "excerpt_sha256": "2d417120d5ec8c7a1690d0d980fefa5541d296ecf479241ca2008afc4b04a705",
+          "decoded_sample_count": 400800,
+          "expected_context": "Sa pagtatapos, dapat may pangyayari at saklaw, pinagmulan at tapat na kulang ang pahayag; hindi hinulaang sanhi o ipinangakong solusyon. Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa pagtatapos, dapat may pangyayari at saklaw, pinagmulan, at tapat na kulang ang pahayag. Hindi hinulaang sanhi, o ipinangakong solusyon. Ilarawan ang pangyayari, pinagmulan, at kulang nang walang paninisi.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00 - 00:06.6\",\n      \"detail\": \"Clear instructional delivery outlining required elements in a concluding statement ('pagtatapos'). Words are articulated with neutral Tagalog phonology.\"\n    },\n    {\n      \"timestamp\": \"00:06.6 - 00:10.6\",\n      \"detail\": \"Negated items ('Hindi hinulaang sanhi, o ipinangakong solusyon') are clearly spoken without slurring or dropped syllables.\"\n    },\n    {\n      \"timestamp\": \"00:10.6 - 00:16.5\",\n      \"detail\": \"A noticeable pause occurs at ~00:10.6 followed by a slight downward pitch reset as the speaker transitions into the next directive ('Ilarawan ang pangyayari...'). The audio concludes completely without clipping.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"At 00:04.9 - 00:05.4, the word sounds closely like 'tapat', though phonetically it can slightly resemble 'dapat' due to dental stop voicing characteristics.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 18.36,
+          "end": 35.134708333333336,
+          "file": "read-check-fil-ending.wav",
+          "excerpt_sha256": "b73d0f7384a5b5110f38a5c13c62130d3ecdeb076f8c1004468a14c816c0a8b3",
+          "decoded_sample_count": 402593,
+          "expected_context": "Sa pagtatapos, dapat may pangyayari at saklaw, pinagmulan at tapat na kulang ang pahayag; hindi hinulaang sanhi o ipinangakong solusyon. Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa pagtatapos, dapat may pangyayari at saklaw, pinagmulan, at tapat na kulang ang pahayag. Hindi hinulaan ang sanhi, o ipinangakong solusyon. Ilarawan ang pangyayari, pinagmulan at kulang, nang walang paninisi.\",\n  \"observations\": {\n    \"voice_and_pronunciation\": \"The speaker delivers the Tagalog text in a steady, measured, educational instructional tone. Pronunciation is clear and standard with natural Tagalog phonology.\",\n    \"negation\": \"Negation terms ('Hindi hinulaan' at ~00:06 - 00:07, and 'walang paninisi' at ~00:15 - 00:16) are clearly enunciated.\",\n    \"role_distinctions\": \"Single narrator voice throughout; no multi-character role distinctions present.\",\n    \"ending_completeness\": \"The audio concludes naturally after 'paninisi' without truncation or unnatural cut-off.\",\n    \"audible_speech\": \"All words are fully audible with minimal background interference.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Pitch, pacing, and timbre remain consistent throughout the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is distinct and fully intelligible.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-missed-visits-fil",
+      "language": "fil",
+      "source_path": "/training/audio/07-problema/problem-define/missed-visits.fil.3b45b1f9c140.mp3",
+      "source_sha256": "b85ef3abf1fd9ce2f8bef498a1433f5209bb6c42a7363e4f0c7849c35320e82d",
+      "decoded_pcm_sha256": "9135a614572a9d4d6b91c0cad920593c5f4e381896ca500209d2facbdf91a134",
+      "full_audio_metrics": {
+        "samples": 1595560,
+        "seconds": 66.48166666666667,
+        "rms": 0.1356079146043,
+        "peak": 0.995941162109375,
+        "quiet_sample_fraction": 0.21285943493193613
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Tatlong pamilya, ano ang nangyari?",
+          "start_ms": 0,
+          "end_ms": 3200,
+          "samples": 76800,
+          "seconds": 3.2,
+          "rms": 0.1482861497438128,
+          "peak": 0.7891845703125,
+          "quiet_sample_fraction": 0.31252604166666664
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Si BHW Carole ay nakikinig sa tatlong kabahayang nag-ulat na hindi sila nakapunta sa napagkasunduang health-center visit.",
+          "start_ms": 3500,
+          "end_ms": 12660,
+          "samples": 219840,
+          "seconds": 9.16,
+          "rms": 0.10799009979827556,
+          "peak": 0.757781982421875,
+          "quiet_sample_fraction": 0.10214701601164483
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Kathang-isip na halimbawa ito sa klase, hindi datos ng inyong barangay.",
+          "start_ms": 12960,
+          "end_ms": 17840,
+          "samples": 117120,
+          "seconds": 4.88,
+          "rms": 0.1227148269885163,
+          "peak": 0.874267578125,
+          "quiet_sample_fraction": 0.15141734972677595
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Sabi ng unang residente, “Hindi ako nakapunta noong Lunes.”",
+          "start_ms": 18140,
+          "end_ms": 22500,
+          "samples": 104640,
+          "seconds": 4.36,
+          "rms": 0.1276999871269039,
+          "peak": 0.789031982421875,
+          "quiet_sample_fraction": 0.21470756880733946
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Sabi ng ikalawa, “May trabaho ako.”",
+          "start_ms": 22800,
+          "end_ms": 26520,
+          "samples": 89280,
+          "seconds": 3.72,
+          "rms": 0.1321093627843374,
+          "peak": 0.9627685546875,
+          "quiet_sample_fraction": 0.2654681899641577
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sabi ng ikatlo, “Hindi malinaw sa akin ang araw.”",
+          "start_ms": 26820,
+          "end_ms": 30820,
+          "samples": 96000,
+          "seconds": 4,
+          "rms": 0.11048749343368665,
+          "peak": 0.82550048828125,
+          "quiet_sample_fraction": 0.26940625
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Mga ulat nila ito, hindi pa patunay ng iisang hadlang.",
+          "start_ms": 31120,
+          "end_ms": 35520,
+          "samples": 105600,
+          "seconds": 4.4,
+          "rms": 0.18036445508296972,
+          "peak": 0.809814453125,
+          "quiet_sample_fraction": 0.1281912878787879
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Hindi pa naipakita ang appointment card o attendance record.",
+          "start_ms": 35820,
+          "end_ms": 40380,
+          "samples": 109440,
+          "seconds": 4.56,
+          "rms": 0.1573148192788052,
+          "peak": 0.819000244140625,
+          "quiet_sample_fraction": 0.14469115497076024
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Itatala ni Carole kung sino ang nagsabi, ano ang iniulat at anong petsa ang kailangan pang linawin.",
+          "start_ms": 40680,
+          "end_ms": 48080,
+          "samples": 177600,
+          "seconds": 7.4,
+          "rms": 0.16511339115276905,
+          "peak": 0.995941162109375,
+          "quiet_sample_fraction": 0.1784009009009009
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Ang paunang problema ay hindi pagdating sa napagkasunduang pagbisita.",
+          "start_ms": 48380,
+          "end_ms": 53700,
+          "samples": 127680,
+          "seconds": 5.32,
+          "rms": 0.11966832513161982,
+          "peak": 0.78594970703125,
+          "quiet_sample_fraction": 0.15837249373433585
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Hindi muna niya tatawaging “pasaway” ang mga pamilya o pipili ng dahilan at solusyon.",
+          "start_ms": 54000,
+          "end_ms": 60760,
+          "samples": 162240,
+          "seconds": 6.76,
+          "rms": 0.1348836228786132,
+          "peak": 0.906585693359375,
+          "quiet_sample_fraction": 0.12529585798816567
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "start_ms": 61060,
+          "end_ms": 66420,
+          "samples": 128640,
+          "seconds": 5.36,
+          "rms": 0.15581508012456657,
+          "peak": 0.779083251953125,
+          "quiet_sample_fraction": 0.16528296019900499
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 12.66,
+          "file": "read-missed-visits-fil-head.wav",
+          "excerpt_sha256": "6a55707048de9041e621bf4581a90ecf5b5cd5b1403e618ba06fac3bf8570eae",
+          "decoded_sample_count": 303840,
+          "expected_context": "Tatlong pamilya, ano ang nangyari? Si BHW Carole ay nakikinig sa tatlong kabahayang nag-ulat na hindi sila nakapunta sa napagkasunduang health-center visit.",
+          "model_response": "```json\n{\n  \"transcript\": \"Tatlong pamilya? Anong nangyari? Si BHW Carol ay nakikinig sa tatlong kabahayan na umuulat na hindi sila nakapunta sa napagkasunduang health center visit.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced clearly as 'Carol' (/ˈka.rol/ / /ˈkæ.rəl/) at approximately 00:04.5 following the initialism 'BHW' (pronounced as English letters B-H-W).\",\n    \"negation\": \"The negation 'hindi' in 'hindi sila nakapunta' is clearly articulated and audible between 00:08.5 and 00:09.2.\",\n    \"role_distinctions\": \"There is a distinct shift in voice/character role: 00:00.0–00:02.7 features an expressive character voice asking questions, followed by an educational narrator voice from 00:03.3 to 00:12.3.\",\n    \"ending_completeness\": \"The audio concludes naturally with full intonational cadence on 'visit' around 00:12.2, with no abrupt cutoffs or trailing speech.\",\n    \"audible_speech\": \"All words are cleanly delivered and fully audible throughout the clip.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"The transition between the dialogue line (00:00–00:02.7) and the narration (00:03.3 onward) is an intentional character-to-narrator role shift rather than an unintentional acoustic defect.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the recording is clear and dialogue/narration elements are easily discernible.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.5,
+          "end": 12.66,
+          "file": "read-missed-visits-fil-body.wav",
+          "excerpt_sha256": "080e42799116b0555be47b33e40810741f32f005396ca3182a5c2d9383ca8bff",
+          "decoded_sample_count": 219840,
+          "expected_context": "Si BHW Carole ay nakikinig sa tatlong kabahayang nag-ulat na hindi sila nakapunta sa napagkasunduang health-center visit.",
+          "model_response": "```json\n{\n  \"transcript\": \"Si BHW Carole ay nakikinig sa tatlong kabahayan na umuulat na hindi sila nakapunta sa napagkasunduang health center visit.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced clearly as 'Carol' (/ˈkæ.rəl/ or /ˈkɑː.rəl/) matching the name Carole.\",\n    \"negation\": \"The negation particle 'hindi' in 'hindi sila nakapunta' is clearly articulated without ambiguity.\",\n    \"role_distinctions\": \"'BHW Carole' (Barangay Health Worker Carole) is clearly stated at the beginning (00:00 - 00:02).\",\n    \"ending_completeness\": \"The sentence ends completely at 'health center visit' without cutoff or trailing off.\",\n    \"audible_speech\": \"Speech is entirely clear, natural, and easily intelligible throughout the excerpt.\",\n    \"clipped_words\": \"None detected; word boundaries and phonemes are fully preserved.\",\n    \"unexpected_voice_changes\": \"None; tone, pitch, and pacing remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 3.5,
+          "end": 17.84,
+          "file": "read-missed-visits-fil-critical.wav",
+          "excerpt_sha256": "adb148b5e0c5efe91d3c8f283d7dbae89cc976d6b9a05a09c8013a96831744bf",
+          "decoded_sample_count": 344160,
+          "expected_context": "Si BHW Carole ay nakikinig sa tatlong kabahayang nag-ulat na hindi sila nakapunta sa napagkasunduang health-center visit. Kathang-isip na halimbawa ito sa klase, hindi datos ng inyong barangay.",
+          "model_response": "```json\n{\n  \"transcript\": \"Si BHW Carol ay nakikinig sa tatlong kabahayan na umuulat na hindi sila nakapunta sa napagkasunduang health center visit. Kathang-isip na halimbawa ito sa klase, hindi datos ng inyong barangay.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name 'Carol'/'Carole' at 00:01 - 00:02 is pronounced naturally as /ˈka.rol/ ('Carol').\",\n    \"negation\": \"Negation terms ('hindi' at 00:05 and 00:11 - 00:12) are clearly articulated without ambiguity.\",\n    \"role_distinctions\": \"'BHW' (Barangay Health Worker) is clearly spelled out as an English initialism ('B-H-W') preceding the name.\",\n    \"ending_completeness\": \"The excerpt concludes completely at 00:13.9 without trailing off or abrupt cutoffs.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible throughout the clip.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables are intact.\",\n    \"unexpected_voice_changes\": \"The speaker maintains a consistent synthetic/TTS instructional voice profile with expected pacing and pauses.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all spoken words and acronyms are distinct and cleanly enunciated.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 48.38,
+          "end": 66.48166666666667,
+          "file": "read-missed-visits-fil-ending.wav",
+          "excerpt_sha256": "7adcd9c5b5aa3c4e1fdc172d568f2744963c51754bc4cf4543c3852437116577",
+          "decoded_sample_count": 434440,
+          "expected_context": "Ang paunang problema ay hindi pagdating sa napagkasunduang pagbisita. Hindi muna niya tatawaging “pasaway” ang mga pamilya o pipili ng dahilan at solusyon. Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ang unang problema ay hindi pagdating sa napagkasunduang pagbisita. Hindi muna niya tatawaging pasaway ang mga pamilya o pipili ng dahilan at solusyon. Ilarawan ang pangyayari, pinagmulan, at kulang nang walang paninisi.\",\n  \"observations\": {\n    \"role_distinctions_and_voice_changes\": \"There are noticeable vocal shifts across the segments: the first segment (00:00–00:05) features a neutral narrative tone, shifting at ~00:05.5 to a lower, more subdued tone (00:05–00:12), followed by a distinct change at ~00:12.5 to a brighter, higher-pitched instructional voice (00:12–00:18).\",\n    \"carole_pronunciation\": \"The name 'Carole' is not audible in this excerpt.\",\n    \"negation\": \"Negation terms ('hindi', 'walang') are pronounced clearly at 00:02 ('hindi pagdating'), 00:05–00:06 ('Hindi muna'), and 00:16–00:17 ('nang walang').\",\n    \"audible_speech_and_clipping\": \"All words are articulated clearly without audible clipping or cutoffs.\",\n    \"ending_completeness\": \"The excerpt concludes naturally at 00:18 with a fully resolved sentence ('paninisi').\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp\": \"00:05.5 - 00:12.5\",\n      \"type\": \"unexpected voice change\",\n      \"description\": \"Notable shift in pitch, timbre, and pacing compared to the preceding and following segments, indicating a possible multi-speaker or spliced recording.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all spoken words are intelligible and clearly pronounced.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-practice-fil",
+      "language": "fil",
+      "source_path": "/training/audio/07-problema/problem-define/practice.fil.3c9319e0f75b.mp3",
+      "source_sha256": "f0cc908493fae8500eed58c376f60e835b6d55007644a6cccc4f05c2cea0fe6c",
+      "decoded_pcm_sha256": "0cea483696a25102035150dde48982c1d884f01950eba6a3d3b9a3cede724859",
+      "full_audio_metrics": {
+        "samples": 1767968,
+        "seconds": 73.66533333333334,
+        "rms": 0.13049141285220936,
+        "peak": 0.946136474609375,
+        "quiet_sample_fraction": 0.2173433003312277
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Subukan, mag-feedback, saka ulitin",
+          "start_ms": 0,
+          "end_ms": 3400,
+          "samples": 81600,
+          "seconds": 3.4,
+          "rms": 0.15652243899437907,
+          "peak": 0.946136474609375,
+          "quiet_sample_fraction": 0.2928308823529412
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Isulat: “Tatlong kabahayan sa halimbawa ang nag-ulat kay Carole na hindi sila nakapunta sa napagkasunduang pagbisita.",
+          "start_ms": 3700,
+          "end_ms": 11900,
+          "samples": 196800,
+          "seconds": 8.2,
+          "rms": 0.1309653782184161,
+          "peak": 0.87359619140625,
+          "quiet_sample_fraction": 0.12790142276422764
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Itinama ng unang residente ang iniulat na araw sa Martes; hindi pa nasusuri ang attendance record, eksaktong petsa at hadlang ng bawat isa.”",
+          "start_ms": 12200,
+          "end_ms": 22160,
+          "samples": 239040,
+          "seconds": 9.96,
+          "rms": 0.11919847617326601,
+          "peak": 0.7991943359375,
+          "quiet_sample_fraction": 0.1102869812583668
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ihambing sa “Walang disiplina ang mga pamilya.”",
+          "start_ms": 22460,
+          "end_ms": 26380,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.12256892739298086,
+          "peak": 0.70343017578125,
+          "quiet_sample_fraction": 0.3010204081632653
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Alin ang pangyayari, pinagmulan at kulang?",
+          "start_ms": 26680,
+          "end_ms": 30880,
+          "samples": 100800,
+          "seconds": 4.2,
+          "rms": 0.13594884515067757,
+          "peak": 0.79571533203125,
+          "quiet_sample_fraction": 0.18546626984126985
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sa triad, magpalit bilang BHW, residente at observer: magsulat, magtanong nang walang paninisi, tumanggap ng pagwawasto, mag-feedback at ulitin.",
+          "start_ms": 31180,
+          "end_ms": 43380,
+          "samples": 292800,
+          "seconds": 12.2,
+          "rms": 0.11700065189767155,
+          "peak": 0.86492919921875,
+          "quiet_sample_fraction": 0.2039207650273224
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Lahat ay susubok bilang BHW.",
+          "start_ms": 43680,
+          "end_ms": 46680,
+          "samples": 72000,
+          "seconds": 3,
+          "rms": 0.18492413060425195,
+          "peak": 0.87481689453125,
+          "quiet_sample_fraction": 0.18309722222222222
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Kung mag-isa, gamitin ang parehong kathang-isip na cards at checklist; magsulat muna, ihambing sa sagot, saka baguhin.",
+          "start_ms": 46980,
+          "end_ms": 55500,
+          "samples": 204480,
+          "seconds": 8.52,
+          "rms": 0.13945920049864421,
+          "peak": 0.8262939453125,
+          "quiet_sample_fraction": 0.1707599765258216
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Sa susunod na ulat, humingi rin ng pananaw ng apektadong residente.",
+          "start_ms": 55800,
+          "end_ms": 60800,
+          "samples": 120000,
+          "seconds": 5,
+          "rms": 0.13286964597604384,
+          "peak": 0.754913330078125,
+          "quiet_sample_fraction": 0.19535833333333333
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Ang hindi nasaksihang pagtatangka ay hindi pa naobserbahan, hindi awtomatikong pasado.",
+          "start_ms": 61100,
+          "end_ms": 67220,
+          "samples": 146880,
+          "seconds": 6.12,
+          "rms": 0.14741118816793375,
+          "peak": 0.8138427734375,
+          "quiet_sample_fraction": 0.15435729847494553
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "start_ms": 67520,
+          "end_ms": 73600,
+          "samples": 145920,
+          "seconds": 6.08,
+          "rms": 0.12555019980298296,
+          "peak": 0.8316650390625,
+          "quiet_sample_fraction": 0.23523848684210527
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 11.9,
+          "file": "read-practice-fil-head.wav",
+          "excerpt_sha256": "c845fc9471858e871a38f9922b554f51d94bfae7c877e373ded5a480b8dd8857",
+          "decoded_sample_count": 285600,
+          "expected_context": "Subukan, mag-feedback, saka ulitin Isulat: “Tatlong kabahayan sa halimbawa ang nag-ulat kay Carole na hindi sila nakapunta sa napagkasunduang pagbisita.",
+          "model_response": "```json\n{\n  \"transcript\": \"Subukan, mag-feedback, tsaka ulitin. Isulat. Tatlong kabahayan sa halimbawa ang nag-ulat kay Carol na hindi sila nakapunta sa napagkasunduang pagbisita.\",\n  \"observations\": {\n    \"carol_pronunciation\": \"The name 'Carol' is articulated clearly at approximately 00:07.5 - 00:08.0 as /ˈka.rol/ without distortion or ambiguity.\",\n    \"negation\": \"The negation 'hindi' at 00:08.5 - 00:09.0 ('hindi sila nakapunta') is clearly stated and fully audible.\",\n    \"role_distinctions\": \"There is a distinct shift in speaker voice/role: Speaker 1 (00:00 - 00:03) reads review/action directives ('Subukan, mag-feedback, tsaka ulitin'), followed by Speaker 2 (00:04 - 00:11) introducing a task ('Isulat') and narrating a scenario.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'pagbisita' ending around 00:11.2, followed by a clean decay to silence with no truncation.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and well-enunciated educational narration.\",\n    \"clipped_words\": \"No clipped beginnings or cut-off word endings detected.\",\n    \"unexpected_voice_changes\": \"A planned transition between two distinct female speakers occurs across the pause between 00:03.3 and 00:04.0, consistent with educational module formatting.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.7,
+          "end": 11.9,
+          "file": "read-practice-fil-body.wav",
+          "excerpt_sha256": "65e5c16c73e114ed38b225dabbd52e2b7a1f5e6df271fac82b067ce358bc002f",
+          "decoded_sample_count": 196800,
+          "expected_context": "Isulat: “Tatlong kabahayan sa halimbawa ang nag-ulat kay Carole na hindi sila nakapunta sa napagkasunduang pagbisita.",
+          "model_response": "```json\n{\n  \"transcript\": \"Isulat. Tatlong kabahayan sa halimbawa ang nag-ulat kay Carol na hindi sila nakapunta sa napagkasunduang pagbisita.\",\n  \"observations\": {\n    \"carol_pronunciation\": \"The name 'Carol' at approximately 00:03.9-00:04.4 is pronounced clearly with English-influenced phonology (/ˈkæɹ.əl/), which is natural and standard in Tagalog contexts.\",\n    \"negation\": \"The negation 'hindi sila nakapunta' (00:04.5-00:05.6) is clearly enunciated and grammatically intact.\",\n    \"role_distinctions\": \"Single speaker acting as an educational narrator, beginning with an instructional directive ('Isulat.') followed by the context sentence.\",\n    \"ending_completeness\": \"The utterance concludes fully on 'pagbisita' with natural terminal falling intonation; no truncation observed.\",\n    \"audible_speech\": \"Speech is fully audible, clean, and delivered at a steady pace.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables are intact.\",\n    \"unexpected_voice_changes\": \"None detected; pitch, tone, and acoustic environment remain consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 3.7,
+          "end": 22.16,
+          "file": "read-practice-fil-critical.wav",
+          "excerpt_sha256": "8ca833f2ddcc4332c49059d383fba83e86ad0527308053fc96f524db15cce71a",
+          "decoded_sample_count": 443040,
+          "expected_context": "Isulat: “Tatlong kabahayan sa halimbawa ang nag-ulat kay Carole na hindi sila nakapunta sa napagkasunduang pagbisita. Itinama ng unang residente ang iniulat na araw sa Martes; hindi pa nasusuri ang attendance record, eksaktong petsa at hadlang ng bawat isa.”",
+          "model_response": "```json\n{\n  \"transcript\": \"Isulat. Tatlong kabahayan sa halimbawa ang nag-ulat kay Carol na hindi sila nakapunta sa napagkasunduang pagbisita. Itinama ng unang residente ang iniulat na araw sa Martes. Hindi pa nasusuri ang attendance record, eksaktong petsa, at hadlang ng bawat isa.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced using an English-style phonology ('Carol' /ˈkær.əl/) at around 00:03.9–00:04.4.\",\n    \"negation\": \"Clear negation tokens present: 'hindi sila nakapunta' (00:04.7–00:05.7) and 'Hindi pa nasusuri' (00:12.7–00:13.9).\",\n    \"role_distinctions\": \"Single female narrator delivering institutional/educational narrative instructions in a steady, neutral tone.\",\n    \"ending_completeness\": \"The excerpt ends completely without clipping at 00:17.8 after 'bawat isa.'\",\n    \"audible_speech\": \"All speech is clearly enunciated and intelligible throughout.\",\n    \"clipped_words\": \"None detected; word onsets and codas are fully articulated.\",\n    \"unexpected_voice_changes\": \"None; speaker tone, pitch, volume, and recording acoustic profile remain uniform.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the recording quality is clean and the speech is completely intelligible.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 55.8,
+          "end": 73.66533333333334,
+          "file": "read-practice-fil-ending.wav",
+          "excerpt_sha256": "f8edeeb9ccb7e12bac58d7c0053bf001ce029675349a2042eeaebc28e4d64ee0",
+          "decoded_sample_count": 428768,
+          "expected_context": "Sa susunod na ulat, humingi rin ng pananaw ng apektadong residente. Ang hindi nasaksihang pagtatangka ay hindi pa naobserbahan, hindi awtomatikong pasado. Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa susunod na ulat, humingi rin ng pananaw ng apektadong residente. Ang hindi nasaksihang pagtatangka ay hindi pa naobserbahan, hindi awtomatikong pasado. Ilarawan ang pangyayari, pinagmulan, at kulang ng walang paninisi.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00.000 - 00:04.500\",\n      \"speaker\": \"Speaker 1 (mature female)\",\n      \"content\": \"Delivers 'Sa susunod na ulat, humingi rin ng pananaw ng apektadong residente.' clearly with natural intonation.\"\n    },\n    {\n      \"timestamp\": \"00:05.100 - 00:11.400\",\n      \"speaker\": \"Speaker 2 (younger/higher-pitched female)\",\n      \"content\": \"Voice shifts noticeably to a different speaker reading educational/evaluative criteria containing multiple negations ('hindi nasaksihang', 'hindi pa naobserbahan', 'hindi awtomatikong pasado').\"\n    },\n    {\n      \"timestamp\": \"00:12.100 - 00:17.300\",\n      \"speaker\": \"Speaker 1 (mature female)\",\n      \"content\": \"Returns to Speaker 1 delivering 'Ilarawan ang pangyayari, pinagmulan, at kulang ng walang paninisi.' ending clearly with no clipping.\"\n    }\n  ],\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected voice changes / role distinction\",\n      \"description\": \"Distinct speaker change occurs at 00:05.100 and reverts back at 00:12.100, indicating spliced segments or unannounced dialogue role switching.\"\n    }\n  ],\n  \"uncertainty\": \"None; audio clarity and phonetic articulation are high across all segments.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-resident-perspective-fil",
+      "language": "fil",
+      "source_path": "/training/audio/07-problema/problem-define/resident-perspective.fil.0b6bb0cf3f7a.mp3",
+      "source_sha256": "c9a839fb9edcbf17ed10ffc8b1b424d3391d580c42925bf24cf0c0b95fd39761",
+      "decoded_pcm_sha256": "ef857d39b8d12832a55237f357fb40fbdfca15920f7b1609212becb5b2bf1a51",
+      "full_audio_metrics": {
+        "samples": 1519073,
+        "seconds": 63.29470833333333,
+        "rms": 0.1425011922776966,
+        "peak": 0.96551513671875,
+        "quiet_sample_fraction": 0.24781560859813848
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Bigyan ng pagkakataong magwasto",
+          "start_ms": 0,
+          "end_ms": 2360,
+          "samples": 56640,
+          "seconds": 2.36,
+          "rms": 0.1547123253741496,
+          "peak": 0.905120849609375,
+          "quiet_sample_fraction": 0.25443149717514124
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Itinanong ni Carole sa unang residente, “Ano ang nangyari sa araw ng pagbisita?",
+          "start_ms": 2660,
+          "end_ms": 8020,
+          "samples": 128640,
+          "seconds": 5.36,
+          "rms": 0.14563738760606007,
+          "peak": 0.96551513671875,
+          "quiet_sample_fraction": 0.24325248756218906
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Ano ang dapat kong iwasto sa pagkaunawa ko?”",
+          "start_ms": 8320,
+          "end_ms": 11720,
+          "samples": 81600,
+          "seconds": 3.4,
+          "rms": 0.15256025101863369,
+          "peak": 0.9033203125,
+          "quiet_sample_fraction": 0.18004901960784314
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Sagot niya, “Martes pala ang ibig kong sabihin, hindi Lunes.",
+          "start_ms": 12020,
+          "end_ms": 16540,
+          "samples": 108480,
+          "seconds": 4.52,
+          "rms": 0.14709712124587127,
+          "peak": 0.838104248046875,
+          "quiet_sample_fraction": 0.18195058997050148
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Hindi ko alam kung kinansela ng center.”",
+          "start_ms": 16840,
+          "end_ms": 19760,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.18311525849081506,
+          "peak": 0.8392333984375,
+          "quiet_sample_fraction": 0.21017408675799087
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sinabi ni Carole, “Ayon sa iyo, Martes ka hindi nakapunta; hindi mo tiyak ang pagkansela.",
+          "start_ms": 20060,
+          "end_ms": 26940,
+          "samples": 165120,
+          "seconds": 6.88,
+          "rms": 0.13658027451129942,
+          "peak": 0.7786865234375,
+          "quiet_sample_fraction": 0.24024345930232557
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Tama ba ang buod?”",
+          "start_ms": 27240,
+          "end_ms": 29120,
+          "samples": 45120,
+          "seconds": 1.88,
+          "rms": 0.15462053842742077,
+          "peak": 0.912109375,
+          "quiet_sample_fraction": 0.27098847517730495
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Sumagot ang residente, “Oo, iyon ang sinabi ko.”",
+          "start_ms": 29420,
+          "end_ms": 33700,
+          "samples": 102720,
+          "seconds": 4.28,
+          "rms": 0.1494514485741209,
+          "peak": 0.74383544921875,
+          "quiet_sample_fraction": 0.28062694704049845
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Iwinasto ni Carole ang petsang iniulat at pinanatili ang pinagmulan ng pagwawasto.",
+          "start_ms": 34000,
+          "end_ms": 39920,
+          "samples": 142080,
+          "seconds": 5.92,
+          "rms": 0.15003006879312356,
+          "peak": 0.780548095703125,
+          "quiet_sample_fraction": 0.17022804054054055
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Hindi nito kinukumpirma ang attendance o pagkansela.",
+          "start_ms": 40220,
+          "end_ms": 44060,
+          "samples": 92160,
+          "seconds": 3.84,
+          "rms": 0.140666345118628,
+          "peak": 0.88946533203125,
+          "quiet_sample_fraction": 0.16529947916666668
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Pakinggan ang ibang residente nang hiwalay; huwag burahin ang magkaibang ulat.",
+          "start_ms": 44360,
+          "end_ms": 49760,
+          "samples": 129600,
+          "seconds": 5.4,
+          "rms": 0.15132944920030192,
+          "peak": 0.860443115234375,
+          "quiet_sample_fraction": 0.17287808641975308
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Ang katahimikan, tango o ekspresyon ay hindi patunay ng pagsang-ayon o motibo.",
+          "start_ms": 50060,
+          "end_ms": 57180,
+          "samples": 170880,
+          "seconds": 7.12,
+          "rms": 0.14037424616052963,
+          "peak": 0.90167236328125,
+          "quiet_sample_fraction": 0.1360428370786517
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "start_ms": 57480,
+          "end_ms": 63240,
+          "samples": 138240,
+          "seconds": 5.76,
+          "rms": 0.13056745830649719,
+          "peak": 0.658843994140625,
+          "quiet_sample_fraction": 0.20321903935185184
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.02,
+          "file": "read-resident-perspective-fil-head.wav",
+          "excerpt_sha256": "8fca58ad9f8d0c3b44a6f1012c6532a036d268aa435ee4a359259b75b36c6742",
+          "decoded_sample_count": 192480,
+          "expected_context": "Bigyan ng pagkakataong magwasto Itinanong ni Carole sa unang residente, “Ano ang nangyari sa araw ng pagbisita?",
+          "model_response": "```json\n{\n  \"transcript\": \"Bigyan ng pagkakataong magwasto. Itinanong ni Carol sa unang residente, anong nangyari sa araw ng pagbisita?\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name 'Carol' is clearly pronounced around 00:03.2 - 00:03.7 as 'Carol'.\",\n    \"negation\": \"No negation words are present in the excerpt.\",\n    \"role_distinctions\": \"The speaker clearly distinguishes the instructional prompt ('Bigyan ng pagkakataong magwasto'), the narrative frame ('Itinanong ni Carol sa unang residente,'), and the quoted question ('anong nangyari sa araw ng pagbisita?') using natural pacing and pitch changes.\",\n    \"ending_completeness\": \"The excerpt concludes with a fully articulated question intonation on 'pagbisita' without premature cutoff.\",\n    \"audible_speech\": \"All words are cleanly articulated, intelligible, and audible against a silent background.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; vocal quality is consistent across the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.66,
+          "end": 8.02,
+          "file": "read-resident-perspective-fil-body.wav",
+          "excerpt_sha256": "e3399d3a7e7ce85eaecd6f7f110225a701ba42392c3514439c4edcb438b0c749",
+          "decoded_sample_count": 128640,
+          "expected_context": "Itinanong ni Carole sa unang residente, “Ano ang nangyari sa araw ng pagbisita?",
+          "model_response": "```json\n{\n \"transcript\": \"Itinanong ni Carol sa unang residente, \\\"Ano'ng nangyari sa araw ng pagbisita?\\\"\",\n \"observations\": {\n  \"Carole_pronunciation\": \"Pronounced clearly as \\\"Carol\\\" [ˈka.ɾol] at approximately 00:00.7 - 00:01.2.\",\n  \"negation\": \"No negative grammatical particles are present in this excerpt.\",\n  \"role_distinctions\": \"The speaker delivers narrative exposition from 00:00.00 to 00:02.35, then seamlessly transitions to an inquisitive direct speech tone for Carol's question from 00:02.50 to 00:05.10.\",\n  \"ending_completeness\": \"The audio concludes naturally with the complete question ending on \\\"pagbisita\\\" without clipping.\",\n  \"audible_speech\": \"All words are clearly audible and intelligible throughout the clip.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"No unexpected shifts or glitches; vocal tone shift reflects the dialogue quotation.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 12.02,
+          "end": 19.76,
+          "file": "read-resident-perspective-fil-critical.wav",
+          "excerpt_sha256": "f5771c7d9cc220af564e08becdd387e3de7eeeaec2fe967ba7f603699933b15c",
+          "decoded_sample_count": 185760,
+          "expected_context": "Sagot niya, “Martes pala ang ibig kong sabihin, hindi Lunes. Hindi ko alam kung kinansela ng center.”",
+          "model_response": "```json\n{\n  \"transcript\": \"Sagot niya, Martes pala ang ibig kong sabihin, hindi Lunes. Hindi ko alam kung kinansela ng center.\",\n  \"observations\": {\n    \"role_distinctions\": \"There are two distinct speaker voices: a younger male voice delivers the first sentence ('Sagot niya, Martes pala ang ibig kong sabihin, hindi Lunes.') from 00:00.0 to 00:04.2, followed by a transition to a female adult voice delivering the dialogue line ('Hindi ko alam kung kinansela ng center.') from 00:04.8 to 00:07.4.\",\n    \"unexpected_voice_changes\": \"A noticeable voice change occurs at approximately 00:04.5 between two separate speakers/characters.\",\n    \"negation\": \"Negation occurs twice clearly: 'hindi Lunes' at 00:03.2–00:04.2 and 'Hindi ko alam' at 00:04.8–00:05.8.\",\n    \"carole_pronunciation\": \"The name or word 'Carole' does not occur in this excerpt.\",\n    \"ending_completeness\": \"The audio concludes fully on 'center' with no abrupt cutoff, truncation, or clipping.\",\n    \"clipped_words\": \"None detected; word boundaries and phonemes are intact.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible across both segments.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; all spoken Tagalog words are clear and unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 44.36,
+          "end": 63.29470833333333,
+          "file": "read-resident-perspective-fil-ending.wav",
+          "excerpt_sha256": "eda5bbca1d693249693360973c4d7a268a6e5500fd45786130c4da0745dd607d",
+          "decoded_sample_count": 454433,
+          "expected_context": "Pakinggan ang ibang residente nang hiwalay; huwag burahin ang magkaibang ulat. Ang katahimikan, tango o ekspresyon ay hindi patunay ng pagsang-ayon o motibo. Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Pakinggan ang ibang residente nang hiwalay. Wag burahin ang magkaibang ulat. Ang katahimikan, tango, o ekspresyon ay hindi patunay ng pagsang-ayon o motibo. Ilarawan ang pangyayari, pinagmulan, at kulang nang walang paninisi.\",\n  \"observations\": {\n    \"role_distinctions_and_voice_changes\": [\n      {\n        \"timestamp\": \"00:00.00 - 00:05.40\",\n        \"description\": \"First speaker (female synthetic/TTS voice) delivering guidelines.\"\n      },\n      {\n        \"timestamp\": \"00:05.80 - 00:12.45\",\n        \"description\": \"Noticeable voice shift to a male synthetic/TTS voice reading the statement regarding silence and agreement.\"\n      },\n      {\n        \"timestamp\": \"00:13.00 - 00:18.55\",\n        \"description\": \"Voice shifts back to a female synthetic/TTS voice with slightly different pacing/inflection.\"\n      }\n    ],\n    \"negation\": [\n      {\n        \"phrase\": \"Wag burahin\",\n        \"timestamp\": \"00:02.80 - 00:03.90\",\n        \"note\": \"Prohibitive negation clearly articulated as colloquial contraction 'Wag' rather than 'Huwag'.\"\n      },\n      {\n        \"phrase\": \"hindi patunay\",\n        \"timestamp\": \"00:09.50 - 00:10.70\",\n        \"note\": \"Standard negation clearly articulated.\"\n      },\n      {\n        \"phrase\": \"walang paninisi\",\n        \"timestamp\": \"00:16.80 - 00:18.40\",\n        \"note\": \"Existential negation clearly articulated.\"\n      }\n    ],\n    \"ending_completeness\": \"The audio concludes naturally with complete prosodic closure on 'paninisi' before the file ends; no cut-off detected.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_changes\",\n      \"timestamp\": \"00:05.80\",\n      \"description\": \"Sudden switch from female narrator to male voice without narrative framing.\"\n    },\n    {\n      \"type\": \"unexpected_voice_changes\",\n      \"timestamp\": \"00:13.00\",\n      \"description\": \"Sudden switch back from male voice to female narrator.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all words and phonemes are distinct and clear throughout the excerpt.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-source-gap-fil",
+      "language": "fil",
+      "source_path": "/training/audio/07-problema/problem-define/source-gap.fil.9005a3f8a01b.mp3",
+      "source_sha256": "23cb44a39987ff8abb64b60d6c4fc54c1afa3d41f6f446f76157d65e2a55f4dd",
+      "decoded_pcm_sha256": "a17777ec091c935bfb365d855806bbfa92ac384f95ec92f96fa19d13492e7fbc",
+      "full_audio_metrics": {
+        "samples": 1600575,
+        "seconds": 66.690625,
+        "rms": 0.13973740821338657,
+        "peak": 0.95538330078125,
+        "quiet_sample_fraction": 0.23446199022226388
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Kaninong ulat, anong kulang?",
+          "start_ms": 0,
+          "end_ms": 2240,
+          "samples": 53760,
+          "seconds": 2.24,
+          "rms": 0.16227074179098688,
+          "peak": 0.894012451171875,
+          "quiet_sample_fraction": 0.403031994047619
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gumamit ng tatlong hanay: pangyayari at saklaw, pinagmulan, at impormasyong kulang.",
+          "start_ms": 2540,
+          "end_ms": 9580,
+          "samples": 168960,
+          "seconds": 7.04,
+          "rms": 0.1548582957172101,
+          "peak": 0.821746826171875,
+          "quiet_sample_fraction": 0.2356356534090909
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Sa unang hanay: tatlong kabahayan sa halimbawa ang nag-ulat ng hindi pagpunta.",
+          "start_ms": 9880,
+          "end_ms": 16400,
+          "samples": 156480,
+          "seconds": 6.52,
+          "rms": 0.10976226940826296,
+          "peak": 0.8336181640625,
+          "quiet_sample_fraction": 0.23109662576687118
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Sa ikalawa: direktang sinabi ng bawat residente kay Carole; hindi ito personal niyang obserbasyon ng attendance.",
+          "start_ms": 16700,
+          "end_ms": 24620,
+          "samples": 190080,
+          "seconds": 7.92,
+          "rms": 0.13222694967853685,
+          "peak": 0.95538330078125,
+          "quiet_sample_fraction": 0.15479271885521886
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Sa ikatlo: eksaktong petsa, napagkasunduang araw at hadlang ng bawat isa.",
+          "start_ms": 24920,
+          "end_ms": 31720,
+          "samples": 163200,
+          "seconds": 6.8,
+          "rms": 0.10883067488350169,
+          "peak": 0.799468994140625,
+          "quiet_sample_fraction": 0.3001593137254902
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ang “may trabaho ako” ay ulat ng ikalawang residente, hindi dahilan ng lahat.",
+          "start_ms": 32020,
+          "end_ms": 38820,
+          "samples": 163200,
+          "seconds": 6.8,
+          "rms": 0.11791220726092234,
+          "peak": 0.768280029296875,
+          "quiet_sample_fraction": 0.2232843137254902
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Walang rekord na naipakita, kaya huwag sabihing napatunayan ang bilang o pagkansela.",
+          "start_ms": 39120,
+          "end_ms": 45280,
+          "samples": 147840,
+          "seconds": 6.16,
+          "rms": 0.16757857116182348,
+          "peak": 0.8460693359375,
+          "quiet_sample_fraction": 0.1448931277056277
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Sa totoong gawain, kaugnay na impormasyon lamang ang gamitin at hilingin ang paglilinaw sa awtorisadong taong may access sa rekord ayon sa lokal na pamamaraan.",
+          "start_ms": 45580,
+          "end_ms": 56740,
+          "samples": 267840,
+          "seconds": 11.16,
+          "rms": 0.15827405059958136,
+          "peak": 0.878814697265625,
+          "quiet_sample_fraction": 0.0961768219832736
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Hindi tayo gagawa ng bagong patakaran sa access.",
+          "start_ms": 57040,
+          "end_ms": 60480,
+          "samples": 82560,
+          "seconds": 3.44,
+          "rms": 0.1395597443479235,
+          "peak": 0.929168701171875,
+          "quiet_sample_fraction": 0.16282703488372094
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "start_ms": 60780,
+          "end_ms": 66620,
+          "samples": 140160,
+          "seconds": 5.84,
+          "rms": 0.16694561825455312,
+          "peak": 0.86199951171875,
+          "quiet_sample_fraction": 0.2544591894977169
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.58,
+          "file": "read-source-gap-fil-head.wav",
+          "excerpt_sha256": "846ddfc7e02a85afe0954199d4ac455152c5174d0570c21bf2c769f6e10f0465",
+          "decoded_sample_count": 229920,
+          "expected_context": "Kaninong ulat, anong kulang? Gumamit ng tatlong hanay: pangyayari at saklaw, pinagmulan, at impormasyong kulang.",
+          "model_response": "```json\n{\n  \"transcript\": \"Kaninong ulat? Anong kulang? Gumamit ng tatlong hanay: pangyayari at saklaw, pinagmulan, at impormasyong kulang.\",\n  \"observations\": {\n    \"role_distinctions\": \"There are two distinct speaker roles: Speaker 1 (00:00.00 - 00:01.80) has a lighter, youthful tone asking inquiry questions ('Kaninong ulat? Anong kulang?'), while Speaker 2 (00:02.30 - 00:08.95) provides formal instructional guidance in a mature, steady narrative voice.\",\n    \"pronunciation\": \"Clear and natural Tagalog articulation throughout; no mispronunciations detected.\",\n    \"negation\": \"No negative syntactic constructions are present in this excerpt.\",\n    \"clipped_words\": \"None; all word onsets and codas are fully intact.\",\n    \"ending_completeness\": \"The final phrase 'at impormasyong kulang' resolves naturally with complete phonemic decay and no abrupt cutoff.\",\n    \"audible_speech\": \"High-fidelity, clean educational audio with no competing background noise or masking artifacts.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.54,
+          "end": 9.58,
+          "file": "read-source-gap-fil-body.wav",
+          "excerpt_sha256": "d74dbf29b9fcb26adca9cca6c32d541db8cb968c8d8c713b41225f5279b695f0",
+          "decoded_sample_count": 168960,
+          "expected_context": "Gumamit ng tatlong hanay: pangyayari at saklaw, pinagmulan, at impormasyong kulang.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gumamit ng tatlong hanay: Pangyayari at saklaw, Pinagmulan, at impormasyong kulang.\",\n  \"observations\": \"The speaker delivers an instructional prompt in Filipino with a clear, measured educational tone. Each item in the list ('Pangyayari at saklaw', 'Pinagmulan', 'at impormasyong kulang') is articulated distinctly with appropriate pauses and clean terminal audio.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 9.88,
+          "end": 24.62,
+          "file": "read-source-gap-fil-critical.wav",
+          "excerpt_sha256": "7cd19aa75b4e5ea2002251da81325978cbd8027871e2904fa988da39f4923ac6",
+          "decoded_sample_count": 353760,
+          "expected_context": "Sa unang hanay: tatlong kabahayan sa halimbawa ang nag-ulat ng hindi pagpunta. Sa ikalawa: direktang sinabi ng bawat residente kay Carole; hindi ito personal niyang obserbasyon ng attendance.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa unang hanay, tatlong kabahayan sa halimbawa ang nag-ulat ng hindi pagpunta. Sa ikalawa, direktang sinabi ng bawat residente kay Carol, hindi ito personal niyang obserbasyon ng attendance.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced at ~00:10.5–00:10.9 as 'kay Carol' ([keɪ ˈka.ɾol]), sounding natural within Tagalog phonology.\",\n    \"negation\": \"Negation markers are distinctly articulated: 'hindi pagpunta' at 00:05.1–00:06.1 and 'hindi ito' at 00:11.2–00:11.9, without swallowing or slurring.\",\n    \"role_distinctions\": \"The audio clearly delineates structural contrast between categories ('Sa unang hanay...' at 00:00.0 vs. 'Sa ikalawa...' at 00:06.8) and separates direct resident reporting from Carol's personal observation.\",\n    \"ending_completeness\": \"The excerpt concludes completely with 'attendance' (~00:13.3–00:14.1), finishing with an audible final alveolar sibilant [s] without abrupt cutoffs.\",\n    \"audible_speech\": \"Speech is fully audible, clean, and delivered at an even pace with standard studio/TTS-like clarity.\",\n    \"clipped_words\": \"None detected; word boundaries and final syllables are intact.\",\n    \"unexpected_voice_changes\": \"Pitch, timbre, and pacing remain consistent throughout with no unexpected shifts or voice glitches.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio clarity and phonetic details are high throughout the excerpt.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 45.58,
+          "end": 66.690625,
+          "file": "read-source-gap-fil-ending.wav",
+          "excerpt_sha256": "57d4dd13c25a1224db46e1997c10a5565ed16565d2de0117d7ffd9981da4e716",
+          "decoded_sample_count": 506655,
+          "expected_context": "Sa totoong gawain, kaugnay na impormasyon lamang ang gamitin at hilingin ang paglilinaw sa awtorisadong taong may access sa rekord ayon sa lokal na pamamaraan. Hindi tayo gagawa ng bagong patakaran sa access. Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa totoong gawain, kaugnay na impormasyon lamang ang gamitin, at hilingin ang paglilinaw sa awtorisadong taong may access sa record, ayon sa lokal na pamamaraan. Hindi tayo gagawa ng bagong patakaran sa access. Ilarawan ang pangyayari, pinagmulan, at kulang, nang walang paninisi.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name or word 'Carole' is not present in the spoken Tagalog audio.\",\n    \"negation\": \"Negation terms 'Hindi' (00:11.2) and 'walang' (00:20.1) are articulated clearly and distinctly.\",\n    \"role_distinctions_and_voice_changes\": \"There is a noticeable shift between speakers/voices: a natural female voice speaks from 00:00.0 to 00:02.0, followed by an abrupt transition to a deeper male voice from 00:02.3 to 00:14.5, and then returning to the female voice from 00:15.1 to 00:21.0.\",\n    \"audible_speech\": \"All words are intelligible and pronounced at a steady, measured pace.\",\n    \"clipped_words\": \"None detected; words have complete initial and final consonants.\",\n    \"ending_completeness\": \"The utterance concludes cleanly at 00:21.1 without trailing off or being cut short.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp_range\": \"00:02.0 - 00:02.3 and 00:14.5 - 00:15.1\",\n      \"description\": \"Mid-sentence and inter-sentence speaker shifts between female and male voices without conversational context or speaker tags.\"\n    }\n  ],\n  \"uncertainty\": \"None; audio quality is clear and speech is fully audible.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-worked-example-fil",
+      "language": "fil",
+      "source_path": "/training/audio/07-problema/problem-define/worked-example.fil.9ff9fcfcbeac.mp3",
+      "source_sha256": "896b05a3f76d79458d746f513e8521d8694bc12eb0faaaa26f27455d17972726",
+      "decoded_pcm_sha256": "d17376dbbe56994b5b3418709d628f5a84e05c72e8d9d8f7985a51986a31bcd6",
+      "full_audio_metrics": {
+        "samples": 1532239,
+        "seconds": 63.843291666666666,
+        "rms": 0.13191007593604512,
+        "peak": 0.9124755859375,
+        "quiet_sample_fraction": 0.2680632721135541
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Ihiwalay ang problema sa hula",
+          "start_ms": 0,
+          "end_ms": 2320,
+          "samples": 55680,
+          "seconds": 2.32,
+          "rms": 0.139066675219871,
+          "peak": 0.645477294921875,
+          "quiet_sample_fraction": 0.23094468390804598
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "“Tatlong pamilya ang hindi nakapunta” ay pangyayari sa halimbawa; idagdag na ayon ito sa kanilang ulat.",
+          "start_ms": 2620,
+          "end_ms": 11260,
+          "samples": 207360,
+          "seconds": 8.64,
+          "rms": 0.13042571304866007,
+          "peak": 0.802520751953125,
+          "quiet_sample_fraction": 0.23950617283950618
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "“Ayaw nilang pumunta” ay hula sa motibo.",
+          "start_ms": 11560,
+          "end_ms": 15240,
+          "samples": 88320,
+          "seconds": 3.68,
+          "rms": 0.18770828483480048,
+          "peak": 0.9124755859375,
+          "quiet_sample_fraction": 0.19690896739130434
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "“Kailangan ng poster” ay mungkahing solusyon.",
+          "start_ms": 15540,
+          "end_ms": 19140,
+          "samples": 86400,
+          "seconds": 3.6,
+          "rms": 0.14014092182156684,
+          "peak": 0.8494873046875,
+          "quiet_sample_fraction": 0.2701736111111111
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Hindi pinatutunayan ng ulat na ayaw nilang gumaling.",
+          "start_ms": 19440,
+          "end_ms": 23600,
+          "samples": 99840,
+          "seconds": 4.16,
+          "rms": 0.11982471566685395,
+          "peak": 0.79742431640625,
+          "quiet_sample_fraction": 0.19091546474358975
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Itinanong ni Carole, “Ano ang mismong nangyari?",
+          "start_ms": 23900,
+          "end_ms": 27980,
+          "samples": 97920,
+          "seconds": 4.08,
+          "rms": 0.12539630563047308,
+          "peak": 0.68743896484375,
+          "quiet_sample_fraction": 0.30214460784313724
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Sino ang nagsabi?",
+          "start_ms": 28280,
+          "end_ms": 29920,
+          "samples": 39360,
+          "seconds": 1.64,
+          "rms": 0.13176275194991527,
+          "peak": 0.60650634765625,
+          "quiet_sample_fraction": 0.31841971544715447
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Ano pa ang hindi natin alam?”",
+          "start_ms": 30220,
+          "end_ms": 32260,
+          "samples": 48960,
+          "seconds": 2.04,
+          "rms": 0.1253005116837552,
+          "peak": 0.62982177734375,
+          "quiet_sample_fraction": 0.23956290849673204
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Maaaring makatulong ang poster, ngunit kailangan munang siyasatin kung may kaugnayan ito sa iniulat na hadlang.",
+          "start_ms": 32560,
+          "end_ms": 40760,
+          "samples": 196800,
+          "seconds": 8.2,
+          "rms": 0.13870584047286957,
+          "peak": 0.872650146484375,
+          "quiet_sample_fraction": 0.11924288617886179
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Ilagay ang tatlong pahayag sa magkahiwalay na kategorya: pangyayari, hula at solusyon.",
+          "start_ms": 41060,
+          "end_ms": 49780,
+          "samples": 209280,
+          "seconds": 8.72,
+          "rms": 0.10616040366509377,
+          "peak": 0.824859619140625,
+          "quiet_sample_fraction": 0.2927322247706422
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Bago pumili ng solusyon, pakinggan ang bawat pamilya at tukuyin ang rekord na makatutulong sa paglilinaw.",
+          "start_ms": 50080,
+          "end_ms": 58120,
+          "samples": 192960,
+          "seconds": 8.04,
+          "rms": 0.13865877744495692,
+          "peak": 0.837005615234375,
+          "quiet_sample_fraction": 0.1703150912106136
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "start_ms": 58420,
+          "end_ms": 63780,
+          "samples": 128640,
+          "seconds": 5.36,
+          "rms": 0.15190333412427914,
+          "peak": 0.90625,
+          "quiet_sample_fraction": 0.2861629353233831
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 11.26,
+          "file": "read-worked-example-fil-head.wav",
+          "excerpt_sha256": "d790bbc43e0b83891597f9854f7bf27621d8a0a69483407f30bcef3f865f15d1",
+          "decoded_sample_count": 270240,
+          "expected_context": "Ihiwalay ang problema sa hula “Tatlong pamilya ang hindi nakapunta” ay pangyayari sa halimbawa; idagdag na ayon ito sa kanilang ulat.",
+          "model_response": "```json\n{\n \"transcript\": \"Ihiwalay ang problema sa hula. Tatlong pamilya ang hindi nakapunta ay pangyayari sa halimbawa. Idagdag na ayon ito sa kanilang ulat.\",\n \"observations\": {\n  \"speaker\": \"Single female narrator delivering instructional/educational content in Tagalog in a steady, measured pace.\",\n  \"carole_pronunciation\": \"Not applicable; the name Carole does not appear in the passage.\",\n  \"negation\": \"The negation 'hindi' at 00:03.8 - 00:04.2 is clearly articulated.\",\n  \"role_distinctions\": \"Single consistent voice throughout; no role switches.\",\n  \"ending_completeness\": \"The sentence finishes completely at 00:10.8 with 'ulat' without abrupt cut-off.\",\n  \"audible_speech\": \"All words are fully audible and enunciated clearly.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"None observed.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.62,
+          "end": 11.26,
+          "file": "read-worked-example-fil-body.wav",
+          "excerpt_sha256": "3994455d3f81dc777769c14ef35ad5c6a4ecba1e3e8d50ebbebec7da2e1c1fc0",
+          "decoded_sample_count": 207360,
+          "expected_context": "“Tatlong pamilya ang hindi nakapunta” ay pangyayari sa halimbawa; idagdag na ayon ito sa kanilang ulat.",
+          "model_response": "```json\n{\n  \"transcript\": \"Tatlong pamilya ang hindi nakapunta ay pangyayari sa halimbawa. Idagdag na, ayon ito sa kanilang ulat.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00 - 00:02\",\n      \"note\": \"Clear articulation of 'Tatlong pamilya ang hindi nakapunta' with clear standard negation on 'hindi'.\"\n    },\n    {\n      \"timestamp\": \"00:02 - 00:04.2\",\n      \"note\": \"Delivery of 'ay pangyayari sa halimbawa' followed by a measured educational pause.\"\n    },\n    {\n      \"timestamp\": \"00:04.8 - 00:08.0\",\n      \"note\": \"Continues with 'Idagdag na, ayon ito sa kanilang ulat.' Sentence ends cleanly with no clipped endings.\"\n    }\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 2.62,
+          "end": 15.24,
+          "file": "read-worked-example-fil-critical.wav",
+          "excerpt_sha256": "3ed563759058c7501faddc28395f45339738b3eb7e438d81a406ab9ad8fedf4b",
+          "decoded_sample_count": 302880,
+          "expected_context": "“Tatlong pamilya ang hindi nakapunta” ay pangyayari sa halimbawa; idagdag na ayon ito sa kanilang ulat. “Ayaw nilang pumunta” ay hula sa motibo.",
+          "model_response": "```json\n{\n  \"transcript\": \"Tatlong pamilya ang hindi nakapunta ay pangyayari sa halimbawa. Idagdag na, ayon ito sa kanilang ulat, 'Ayaw nilang pumunta' ay hula sa motibo.\",\n  \"observations\": {\n    \"audible_speech\": \"The narration is clearly audible and cleanly articulated with minimal background noise.\",\n    \"carole_pronunciation\": \"No occurrence of the name or term 'Carole' exists in this excerpt.\",\n    \"negation\": \"Negation terms 'hindi' (00:01 - 00:02) and 'Ayaw' (00:09 - 00:10) are distinctly spoken and properly emphasized.\",\n    \"role_distinctions\": \"Single consistent educational narrator voice distinguishing between explanatory commentary and example phrases via subtle pausing and intonation.\",\n    \"ending_completeness\": \"The final phrase 'ay hula sa motibo' concludes fully at around 00:12 with no cutoff on the final vowel.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and vocal characteristics remain stable throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality and diction are exceptionally clear.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 41.06,
+          "end": 63.843291666666666,
+          "file": "read-worked-example-fil-ending.wav",
+          "excerpt_sha256": "97184a9812ff82b4dc74a8b8483decefe2ab775c6db9525466930c84aae5ab45",
+          "decoded_sample_count": 546799,
+          "expected_context": "Ilagay ang tatlong pahayag sa magkahiwalay na kategorya: pangyayari, hula at solusyon. Bago pumili ng solusyon, pakinggan ang bawat pamilya at tukuyin ang rekord na makatutulong sa paglilinaw. Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ilagay ang tatlong pahayag sa magkakahiwalay na kategorya: pangyayari, hula, at solusyon. Bago pumili ng solusyon, pakinggan ang bawat pamilya at tukuyin ang rekord na makatutulong sa paglilinaw. Ilarawan ang pangyayari, pinagmulan, at kulang nang walang paninisi.\",\n  \"observations\": {\n    \"pronunciation\": \"Malinaw at may neutral na tono ang pagbigkas sa parehong boses ng babae at lalaki.\",\n    \"negation\": \"Naglalaman ng negatibong salita na 'walang' sa pariralang 'walang paninisi' bandang 00:21.\",\n    \"role_distinctions\": \"May pagpapalitan ng tagapagsalita: nagsimula sa boses ng babae (00:00 - 00:08), sinundan ng boses ng lalaki (00:09 - 00:16), at bumalik sa boses ng babae (00:17 - 00:22).\",\n    \"ending_completeness\": \"Buo ang huling pantig ng salitang 'paninisi' at walang biglaang pagkaputol bago matapos ang audio.\",\n    \"clipped_words\": \"Walang natukoy na naputol o na-clip na mga salita.\",\n    \"unexpected_voice_changes\": \"May kapansin-pansing pagbabago ng boses (female to male to female) sa pagitan ng mga tagubilin, na maaaring intensyonal para sa iba't ibang hakbang o tauhan ngunit kapansin-pansing paglipat.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"voice_switch\",\n      \"timestamp_range\": \"00:08 - 00:09; 00:16 - 00:17\",\n      \"description\": \"Pagpapalit ng boses mula babae patungong lalaki at pabalik sa babae sa loob ng maikling prompt.\"\n    }\n  ],\n  \"uncertainty\": \"Medyo hindi pangkaraniwan ang semantika ng pariralang 'at kulang nang walang paninisi' sa 00:20 - 00:22 kumpara sa karaniwang pormulasyon, ngunit malinaw itong naririnig ayon sa pagbigkas.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-fil",
+      "language": "fil",
+      "source_path": "/training/bhw-1-7/problem-define-gemini-fil-6ef3b510d796.mp4",
+      "source_sha256": "6ef3b510d796cd5a7140aba5c70966f358bdcf401b9fb5c81bd456d392f3b09d",
+      "decoded_pcm_sha256": "3215e748606fb31aa0649381a507cfe592b4700688fecfcc3a774024f702b5f6",
+      "full_audio_metrics": {
+        "samples": 1301504,
+        "seconds": 54.22933333333334,
+        "rms": 0.09691105303427576,
+        "peak": 0.672119140625,
+        "quiet_sample_fraction": 0.2583672428206137
+      },
+      "zones": [
+        {
+          "zone": "missed-visits",
+          "index": 0,
+          "text": "Nakinig si Carole sa tatlong pamilyang hindi nakapunta. Ulat nila ito; hindi pa nasusuri ang attendance record.",
+          "start_ms": 0,
+          "end_ms": 8000,
+          "samples": 192000,
+          "seconds": 8,
+          "rms": 0.11491719580456967,
+          "peak": 0.6346435546875,
+          "quiet_sample_fraction": 0.2141875
+        },
+        {
+          "zone": "worked-example",
+          "index": 1,
+          "text": "Hindi pagpunta ang pangyayari. Hula ang ayaw pumunta. Solusyon ang poster. Ihiwalay ang tatlo.",
+          "start_ms": 8300,
+          "end_ms": 17500,
+          "samples": 220800,
+          "seconds": 9.2,
+          "rms": 0.09493726658565271,
+          "peak": 0.627838134765625,
+          "quiet_sample_fraction": 0.2866349637681159
+        },
+        {
+          "zone": "source-gap",
+          "index": 2,
+          "text": "Itinala ni Carole kung sino ang nagsabi. Hindi pa tiyak ang petsa at hadlang ng bawat pamilya.",
+          "start_ms": 17800,
+          "end_ms": 23840,
+          "samples": 144960,
+          "seconds": 6.04,
+          "rms": 0.0748740471497906,
+          "peak": 0.5833740234375,
+          "quiet_sample_fraction": 0.1913769315673289
+        },
+        {
+          "zone": "resident-perspective",
+          "index": 3,
+          "text": "Nilinaw ng unang residente: Martes, hindi Lunes. Hindi tiyak ang pagkansela. Itinala ni Carole ang pagwawasto.",
+          "start_ms": 24140,
+          "end_ms": 33060,
+          "samples": 214080,
+          "seconds": 8.92,
+          "rms": 0.0978143260757095,
+          "peak": 0.60247802734375,
+          "quiet_sample_fraction": 0.22078195067264575
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Sa triad, isulat ang pangyayari, pinagmulan at kulang. Magtanong, mag-feedback at ulitin nang walang paninisi.",
+          "start_ms": 33360,
+          "end_ms": 42320,
+          "samples": 215040,
+          "seconds": 8.96,
+          "rms": 0.10816130590918335,
+          "peak": 0.672119140625,
+          "quiet_sample_fraction": 0.13257533482142858
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Ayon sa tatlong pamilya, hindi sila nakapunta. Iniulat na Martes ang una. Kulang pa ang rekord at bawat hadlang. Walang hinulaang sanhi.",
+          "start_ms": 42620,
+          "end_ms": 53020,
+          "samples": 249600,
+          "seconds": 10.4,
+          "rms": 0.09643360118259676,
+          "peak": 0.623382568359375,
+          "quiet_sample_fraction": 0.25365785256410256
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 17.5,
+          "file": "shipped-story-fil-head.wav",
+          "excerpt_sha256": "9783d66e387c120dbb17706ca0610154d27379c7bd720195f3c934faeda86abd",
+          "decoded_sample_count": 420000,
+          "expected_context": "Nakinig si Carole sa tatlong pamilyang hindi nakapunta. Ulat nila ito; hindi pa nasusuri ang attendance record. Hindi pagpunta ang pangyayari. Hula ang ayaw pumunta. Solusyon ang poster. Ihiwalay ang tatlo.",
+          "model_response": "```json\n{\n  \"transcript\": \"Nakinig si Carol sa tatlong pamilyang hindi nakapunta. Ulat nila ito, hindi pa nasusuri ang attendance record. Hindi pagpunta ang pangyayari. Hula ang ayaw pumunta. Solusyon ang poster. Ihiwalay ang tatlo.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced clearly as 'Carol' ([ˈka.ɾol]) at around 00:00.6 - 00:01.1.\",\n    \"negation\": \"Negation terms ('hindi nakapunta' at 00:02.1 - 00:03.4, 'hindi pa nasusuri' at 00:05.1 - 00:06.3, and 'Hindi pagpunta' at 00:08.3 - 00:09.6) are articulated distinctly with full phonemic clarity.\",\n    \"role_distinctions\": \"Distinctions between categories (ulat, pangyayari, hula, solusyon) are marked clearly with measured pauses and consistent pedagogical inflection.\",\n    \"ending_completeness\": \"The final phrase 'Ihiwalay ang tatlo' (00:16.0 - 00:17.5) completes naturally without premature cutoff or trailing attenuation.\",\n    \"audible_speech\": \"All speech is clear, audible, and easily intelligible across the entire recording.\",\n    \"clipped_words\": \"None observed; word boundaries and transitions between vowels/consonants are well-maintained.\",\n    \"unexpected_voice_changes\": \"None observed; voice pitch, volume, pacing, and acoustic timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is high and unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 8,
+          "file": "shipped-story-fil-body.wav",
+          "excerpt_sha256": "caf1f241d0553f22c52b8a04d8bec9d67b1b5c35af5ccdea5acc55d23d48b392",
+          "decoded_sample_count": 192000,
+          "expected_context": "Nakinig si Carole sa tatlong pamilyang hindi nakapunta. Ulat nila ito; hindi pa nasusuri ang attendance record.",
+          "model_response": "```json\n{\n  \"transcript\": \"Nakinig si Carol sa tatlong pamilyang hindi nakapunta. Ulat nila ito, hindi pa nasusuri ang attendance record.\",\n  \"observations\": {\n    \"carol_pronunciation\": \"The name 'Carol' is articulated clearly at around 00:00.75 - 00:01.20 without distortion.\",\n    \"negation\": \"Negation terms ('hindi nakapunta' at 00:02.48 - 00:03.45 and 'hindi pa nasusuri' at 00:04.80 - 00:06.05) are distinct and grammatically natural.\",\n    \"role_distinctions\": \"Narrated by a single speaker in a steady, expository educational tone throughout both sentences.\",\n    \"ending_completeness\": \"The final syllable of 'record' completes cleanly before the audio cutoff around 00:07.45.\",\n    \"audible_speech\": \"All speech is clearly audible with minimal background noise and steady volume.\",\n    \"clipped_words\": \"None observed; words start and end without clipping.\",\n    \"unexpected_voice_changes\": \"No unexpected shifts in pitch, volume, speaker identity, or synthetic timbre anomalies.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality and diction are unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 17.5,
+          "file": "shipped-story-fil-critical.wav",
+          "excerpt_sha256": "9783d66e387c120dbb17706ca0610154d27379c7bd720195f3c934faeda86abd",
+          "decoded_sample_count": 420000,
+          "expected_context": "Nakinig si Carole sa tatlong pamilyang hindi nakapunta. Ulat nila ito; hindi pa nasusuri ang attendance record. Hindi pagpunta ang pangyayari. Hula ang ayaw pumunta. Solusyon ang poster. Ihiwalay ang tatlo.",
+          "model_response": "```json\n{\n  \"transcript\": \"Nakinig si Carol sa tatlong pamilyang hindi nakapunta. Ulat nila ito, hindi pa nasusuri ang attendance record. Hindi pagpunta ang pangyayari, hula ang ayaw pumunta. Solusyon ang poster. Ihiwalay ang tatlo.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name 'Carol' (or 'Carole') occurs at approximately 00:00.8–00:01.3 and is pronounced with Filipino phonology as [kɐˈɾol] with primary stress on the second syllable.\",\n    \"negation\": \"Negation terms ('hindi' at 00:02.5, 'hindi' at 00:05.4, 'Hindi' at 00:08.0, and 'ayaw' at 00:11.5) are articulated clearly with distinct phonemic boundaries and appropriate lexical stress.\",\n    \"role_distinctions\": \"Single narrator voice throughout delivering educational/expository content; no dialogue or multi-character role distinction present.\",\n    \"audible_speech\": \"All spoken words are fully audible, clean, and delivered at a steady, measured pace.\",\n    \"clipped_words\": \"No clipped or cut-off syllables observed; word-final consonants and vowels are fully sustained.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and vocal quality remain consistent across the excerpt with no sudden shifts, distortion, or voice resets.\",\n    \"ending_completeness\": \"The final phrase 'Ihiwalay ang tatlo' ends cleanly at around 00:17.3 with a natural terminal decay and no abrupt cutoff.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Spelling of the character's name ('Carol' vs. 'Carole') cannot be distinguished by audio alone due to identical Filipino phonetic realization [kɐˈɾol].\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 33.36,
+          "end": 54.22933333333334,
+          "file": "shipped-story-fil-ending.wav",
+          "excerpt_sha256": "fb6a0f9dfe49edcd45db6d1fcf00b98eb7610a7c2ba387774ac0ac0c0d820161",
+          "decoded_sample_count": 500864,
+          "expected_context": "Sa triad, isulat ang pangyayari, pinagmulan at kulang. Magtanong, mag-feedback at ulitin nang walang paninisi. Ayon sa tatlong pamilya, hindi sila nakapunta. Iniulat na Martes ang una. Kulang pa ang rekord at bawat hadlang. Walang hinulaang sanhi.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa triad, isulat ang pangyayari, pinagmulan, at kulang. Magtanong, mag-feedback, at ulitin nang walang paninisi. Ayon sa tatlong pamilya, hindi sila nakapunta. Iniulat ng Martes ang una. Kulang pa ang record at bawat hadlang. Walang hinuhulaang sanhi.\",\n  \"observations\": {\n    \"role_distinctions_and_voice_changes\": \"The excerpt features two distinct delivery styles/voices separated by a pause at ~00:09.0. The first part (00:00.0 - 00:08.9) is an instructional directive delivered in a lighter, higher pitch. The second part (00:09.7 - 00:19.8) shifts to a lower, flatter narrative/reporting delivery.\",\n    \"carole_pronunciation\": \"The name or word 'Carole' is not present in this audio excerpt.\",\n    \"negation\": \"Negation terms are clearly articulated: 'walang' at 00:07.8–00:08.2, 'hindi' at 00:11.4–00:11.7, and 'walang' at 00:17.6–00:18.0.\",\n    \"ending_completeness\": \"Both sections exhibit complete sentence endings with natural decay and no premature truncation.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible throughout with minimal background noise.\",\n    \"clipped_words\": \"No clipped or abruptly cut-off words were detected.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. Speech is clear and unambiguous throughout the segment.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-check-en",
+      "language": "en",
+      "source_path": "/training/audio/07-problema/problem-define/check.en.8cfaf47e11ab.mp3",
+      "source_sha256": "cd7baee1dbccf7d6954c99013c36d4402c78473b3274873df47fc655f60aa5b1",
+      "decoded_pcm_sha256": "04370f82594bef76694c997f6a50173a6ef37e47077f9c568dcdc27aa074d4e4",
+      "full_audio_metrics": {
+        "samples": 724115,
+        "seconds": 30.171458333333334,
+        "rms": 0.12181387105408083,
+        "peak": 0.8870849609375,
+        "quiet_sample_fraction": 0.2363657706303557
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Choose the next step",
+          "start_ms": 0,
+          "end_ms": 1840,
+          "samples": 44160,
+          "seconds": 1.84,
+          "rms": 0.10507274489827004,
+          "peak": 0.82672119140625,
+          "quiet_sample_fraction": 0.38306159420289854
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "First look at the illustration of listening and correction.",
+          "start_ms": 2140,
+          "end_ms": 6220,
+          "samples": 97920,
+          "seconds": 4.08,
+          "rms": 0.1406080239381684,
+          "peak": 0.8011474609375,
+          "quiet_sample_fraction": 0.17354983660130718
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Choose the statement that appropriately starts an investigation and explain why before viewing the feedback.",
+          "start_ms": 6520,
+          "end_ms": 13240,
+          "samples": 161280,
+          "seconds": 6.72,
+          "rms": 0.123290464772663,
+          "peak": 0.84429931640625,
+          "quiet_sample_fraction": 0.135546875
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Compare all answers with your own attempt.",
+          "start_ms": 13540,
+          "end_ms": 16460,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.1347501528563872,
+          "peak": 0.68994140625,
+          "quiet_sample_fraction": 0.21648116438356163
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "The ending should contain an event and scope, a source and an honest gap; it should not invent a cause or promise a solution.",
+          "start_ms": 16760,
+          "end_ms": 25920,
+          "samples": 219840,
+          "seconds": 9.16,
+          "rms": 0.11319912617694443,
+          "peak": 0.820037841796875,
+          "quiet_sample_fraction": 0.19815320232896652
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Describe the event, source and gap without blame.",
+          "start_ms": 26220,
+          "end_ms": 30100,
+          "samples": 93120,
+          "seconds": 3.88,
+          "rms": 0.13826994485451746,
+          "peak": 0.8870849609375,
+          "quiet_sample_fraction": 0.20336125429553265
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 6.22,
+          "file": "read-check-en-head.wav",
+          "excerpt_sha256": "0973aef74afb2e20dd658da6364027e33331418b8bcde79939293cd1421eb95b",
+          "decoded_sample_count": 149280,
+          "expected_context": "Choose the next step First look at the illustration of listening and correction.",
+          "model_response": "```json\n{\n  \"transcript\": \"Choose the next step. First, look at the illustration of listening and correction.\",\n  \"observations\": {\n    \"role_distinctions\": \"There is a distinct change in voice/role between the first phrase (00:00.00 - 00:01.62) and the instructional prompt beginning at 00:02.15.\",\n    \"audible_speech\": \"All words are clearly audible and articulated without background noise or significant distortion.\",\n    \"pronunciation\": \"In 'listening and correction' (00:04.50 - 00:05.95), the conjunction 'and' is reduced and pronounced similarly to /ɪn/ or /ən/ ('in correction' / 'an' correction').\",\n    \"negation\": \"No negative grammatical structures or negation words are present.\",\n    \"clipped_words\": \"None; word onsets and codas, including final /p/ in 'step' and /ʃən/ in 'correction', are intact.\",\n    \"ending_completeness\": \"The audio ends naturally with full decay after 'correction'.\",\n    \"unexpected_voice_changes\": \"A shift in speaker persona/pitch occurs between 00:01.62 and 00:02.15, transitioning from a higher, lighter delivery to a deeper instructional tone.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Slight ambiguity around 00:04.90 - 00:05.15 on whether the conjunction was scripted as 'and' or 'in'.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.14,
+          "end": 6.22,
+          "file": "read-check-en-body.wav",
+          "excerpt_sha256": "cbb53767f3adcdb48026130a43c4f7cf602fa882724bb4db5c8b3c1092b8b54a",
+          "decoded_sample_count": 97920,
+          "expected_context": "First look at the illustration of listening and correction.",
+          "model_response": "```json\n{\n \"transcript\": \"First, look at the illustration of listening and correction.\",\n \"observations\": {\n  \"speaker_profile\": \"Single female speaker with clear educational Philippine English delivery.\",\n  \"carole_pronunciation\": \"Not applicable; the word 'Carole' does not occur in this excerpt.\",\n  \"negation\": \"No negative constructions are present in the utterance.\",\n  \"role_distinctions\": \"Single narrator role throughout; no multi-speaker distinctions.\",\n  \"audible_speech\": \"All words are clearly articulated and intelligible from 00:00.00 to 00:03.55.\",\n  \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n  \"ending_completeness\": \"The phrase terminates cleanly on 'correction' without abrupt cutoff.\",\n  \"unexpected_voice_changes\": \"Pitch, tone, and pacing remain steady and natural.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"Slight ambiguity between 'and correction' versus 'in correction' around 00:02.60–00:03.45 due to unstressed conjunction vowel reduction, but acoustic features favor 'and correction'.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 16.76,
+          "end": 30.1,
+          "file": "read-check-en-critical.wav",
+          "excerpt_sha256": "09384af81b07a1c80472189e67eee642ea5f229bfd2f615f6dc4df121b3012da",
+          "decoded_sample_count": 320160,
+          "expected_context": "The ending should contain an event and scope, a source and an honest gap; it should not invent a cause or promise a solution. Describe the event, source and gap without blame.",
+          "model_response": "```json\n{\n  \"transcript\": \"The ending should contain an event and scope, a source, and an honest gap. It should not invent a cause or promise a solution. Describe the event, source, and gap without blame.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The proper noun 'Carole' does not occur in this excerpt.\",\n    \"negation\": \"The speaker clearly articulates 'should not' at 00:05.6 - 00:06.1 and 'without blame' at 00:12.1 - 00:13.1.\",\n    \"role_distinctions\": \"Single consistent instructional speaker throughout; no role transitions or distinct character voices present.\",\n    \"ending_completeness\": \"The utterance completes naturally with full sentence closure on 'blame' at 00:13.1.\",\n    \"audible_speech\": \"Speech is entirely clear, intelligible, and well-enunciated throughout 00:00.0 to 00:13.2.\",\n    \"clipped_words\": \"No clipped syllables or truncated word boundaries detected.\",\n    \"unexpected_voice_changes\": \"Tone, volume, pitch, and pacing remain stable and consistent across the segment.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 13.54,
+          "end": 30.171458333333334,
+          "file": "read-check-en-ending.wav",
+          "excerpt_sha256": "60f6cc6399d29e366b9273d70aea8d2f454e1b6501201b7dd34bfa4ab8d90495",
+          "decoded_sample_count": 399155,
+          "expected_context": "Compare all answers with your own attempt. The ending should contain an event and scope, a source and an honest gap; it should not invent a cause or promise a solution. Describe the event, source and gap without blame.",
+          "model_response": "```json\n{\n  \"transcript\": \"Compare all answers with your own attempt. The ending should contain an event and scope, a source, and an honest gap. It should not invent a cause or promise a solution. Describe the event, source, and gap without blame.\",\n  \"observations\": {\n    \"role_distinctions\": \"There are two distinct speaker voices/personas: Voice 1 delivers the instructional prompts at 00:00-00:03 and 00:12-00:16, while Voice 2 presents the core guideline text from 00:03-00:12.\",\n    \"negation\": \"The negation 'not' in 'It should not invent a cause' at 00:09-00:10 is articulated clearly with no dropping or slurring.\",\n    \"carole_pronunciation\": \"The proper noun 'Carole' does not occur anywhere in the excerpt.\",\n    \"ending_completeness\": \"The audio ends naturally after 'without blame' at 00:16, with full decay and no abrupt cutoff.\",\n    \"clipped_words\": \"No clipped or truncated words detected.\",\n    \"audible_speech\": \"All speech is clearly audible, intelligible, and well-enunciated.\",\n    \"unexpected_voice_changes\": \"Transitions between the primary speaker (00:00-00:03, 00:12-00:16) and secondary speaker (00:03-00:12) are clean and appear intentional for educational turn-taking.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality and intelligibility are high.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-missed-visits-en",
+      "language": "en",
+      "source_path": "/training/audio/07-problema/problem-define/missed-visits.en.d5e7ed481a0b.mp3",
+      "source_sha256": "670792075b2dae05fea965a0b9c401c13a85c852a3c135766d9d8db064a9e019",
+      "decoded_pcm_sha256": "3b2a557fa1b7f9502c6fede9c53afe0d965070d7e722d11dad21ca4fc5470f06",
+      "full_audio_metrics": {
+        "samples": 1347292,
+        "seconds": 56.137166666666666,
+        "rms": 0.13425081995118138,
+        "peak": 0.8775634765625,
+        "quiet_sample_fraction": 0.23086235203652958
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Three households: what happened?",
+          "start_ms": 0,
+          "end_ms": 2920,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.08614561470786876,
+          "peak": 0.595367431640625,
+          "quiet_sample_fraction": 0.2834189497716895
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "BHW Carole listens to three households reporting that they missed an agreed health-center visit.",
+          "start_ms": 3220,
+          "end_ms": 9700,
+          "samples": 155520,
+          "seconds": 6.48,
+          "rms": 0.11309276069191462,
+          "peak": 0.83349609375,
+          "quiet_sample_fraction": 0.110815329218107
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "This is a fictional classroom example, not data from your barangay.",
+          "start_ms": 10000,
+          "end_ms": 13920,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.12747152286947708,
+          "peak": 0.833892822265625,
+          "quiet_sample_fraction": 0.1664965986394558
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "The first resident says, “I could not attend on Monday.”",
+          "start_ms": 14220,
+          "end_ms": 17940,
+          "samples": 89280,
+          "seconds": 3.72,
+          "rms": 0.12966761189050047,
+          "peak": 0.84344482421875,
+          "quiet_sample_fraction": 0.175459229390681
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "The second says, “I had work.”",
+          "start_ms": 18240,
+          "end_ms": 20960,
+          "samples": 65280,
+          "seconds": 2.72,
+          "rms": 0.10766270435830458,
+          "peak": 0.6793212890625,
+          "quiet_sample_fraction": 0.3760263480392157
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "The third says, “The day was unclear to me.”",
+          "start_ms": 21260,
+          "end_ms": 25060,
+          "samples": 91200,
+          "seconds": 3.8,
+          "rms": 0.09769009563054985,
+          "peak": 0.64739990234375,
+          "quiet_sample_fraction": 0.24167763157894737
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "These are their reports, not proof of one shared barrier.",
+          "start_ms": 25360,
+          "end_ms": 29520,
+          "samples": 99840,
+          "seconds": 4.16,
+          "rms": 0.18722166717109656,
+          "peak": 0.8775634765625,
+          "quiet_sample_fraction": 0.1873798076923077
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "No appointment card or attendance record has been shown.",
+          "start_ms": 29820,
+          "end_ms": 33860,
+          "samples": 96960,
+          "seconds": 4.04,
+          "rms": 0.14613094716623393,
+          "peak": 0.8134765625,
+          "quiet_sample_fraction": 0.16258250825082507
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Carole records who spoke, what was reported and which date still needs clarification.",
+          "start_ms": 34160,
+          "end_ms": 40960,
+          "samples": 163200,
+          "seconds": 6.8,
+          "rms": 0.1485111278404807,
+          "peak": 0.82000732421875,
+          "quiet_sample_fraction": 0.18360294117647058
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "The initial problem is nonattendance at the agreed visit.",
+          "start_ms": 41260,
+          "end_ms": 45180,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.13633514306368122,
+          "peak": 0.81658935546875,
+          "quiet_sample_fraction": 0.1441220238095238
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "She does not label the families “uncooperative” or choose a cause and solution yet.",
+          "start_ms": 45480,
+          "end_ms": 52120,
+          "samples": 159360,
+          "seconds": 6.64,
+          "rms": 0.17568885126701242,
+          "peak": 0.851806640625,
+          "quiet_sample_fraction": 0.12140436746987952
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Describe the event, source and gap without blame.",
+          "start_ms": 52420,
+          "end_ms": 56060,
+          "samples": 87360,
+          "seconds": 3.64,
+          "rms": 0.121019367185594,
+          "peak": 0.8255615234375,
+          "quiet_sample_fraction": 0.202117673992674
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.7,
+          "file": "read-missed-visits-en-head.wav",
+          "excerpt_sha256": "925e959f7bc0a7482fdb8867d7e85947a6dc34e5b398d2edb683c237c5bca5c1",
+          "decoded_sample_count": 232800,
+          "expected_context": "Three households: what happened? BHW Carole listens to three households reporting that they missed an agreed health-center visit.",
+          "model_response": "```json\n{\n  \"transcript\": \"Three households? What happened? BHW Carol listens to three households reporting that they missed an agreed health center visit.\",\n  \"observations\": {\n    \"role_distinctions\": \"There is a distinct shift in persona between the expressive character voice asking 'Three households? What happened?' (00:00.00 - 00:02.75) and the objective narrator voice delivering the narration (00:03.20 - 00:09.55).\",\n    \"carole_pronunciation\": \"The name 'Carol' (or 'Carole') at 00:04.30 - 00:04.85 is pronounced clearly as standard /ˈkærəl/ or /ˈkɛərəl/ with Philippine English phonology.\",\n    \"negation\": \"No negative grammatical constructions (e.g., 'not', 'didn't') are present in this excerpt.\",\n    \"ending_completeness\": \"The final word 'visit' at 00:09.05 - 00:09.55 concludes naturally with a complete falling intonation and clear final consonant release.\",\n    \"clipped_words\": \"No audible words are clipped or truncated at speech boundaries.\",\n    \"unexpected_voice_changes\": \"A natural pause occurs between 00:02.75 and 00:03.20 where the speaker switches from character delivery to educational narration.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None detected; speech is fully intelligible and clear throughout.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.22,
+          "end": 9.7,
+          "file": "read-missed-visits-en-body.wav",
+          "excerpt_sha256": "eed19525360bdffe30facc70b32b54bb21f0d357fae467bdc91e74ca51808a43",
+          "decoded_sample_count": 155520,
+          "expected_context": "BHW Carole listens to three households reporting that they missed an agreed health-center visit.",
+          "model_response": "```json\n{\n  \"transcript\": \"BHW Carol listens to three households reporting that they missed an agreed health center visit.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced clearly as standard 'Carol' [ˈkæ.ɹəl] around 00:00.8 - 00:01.3.\",\n    \"negation\": \"No explicit grammatical negations (e.g., 'no', 'not', 'never') are present.\",\n    \"role_distinctions\": \"Single narrator voice introducing 'BHW Carol' (Barangay Health Worker Carol) in third-person descriptive narration.\",\n    \"ending_completeness\": \"The sentence completes naturally on 'visit' with a falling terminal pitch and without truncation.\",\n    \"audible_speech\": \"All words are fully audible and intelligible throughout the clip.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain consistent across the recording.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 10,
+          "end": 17.94,
+          "file": "read-missed-visits-en-critical.wav",
+          "excerpt_sha256": "d11366119a7116d4282072ee0d0c7e80098a87c0969db8d968d1dee8c9b4a2c3",
+          "decoded_sample_count": 190560,
+          "expected_context": "This is a fictional classroom example, not data from your barangay. The first resident says, “I could not attend on Monday.”",
+          "model_response": "```json\n{\n  \"transcript\": \"This is a fictional classroom example, not data from your barangay. The first resident says, 'I could not attend on Monday.'\",\n  \"observations\": {\n    \"audible_speech\": \"Clear, clean educational delivery with a standard Philippine English accent.\",\n    \"role_distinctions\": \"The speaker clearly distinguishes between the instructional narration ('This is a fictional classroom example... / The first resident says') and the reported dialogue ('I could not attend on Monday.') using a subtle pause and intonational shift.\",\n    \"negation\": \"Both instances of negation ('not data' at ~00:02.1 and 'could not attend' at ~00:05.9) are clearly articulated without elision or ambiguity.\",\n    \"carole_pronunciation\": \"No occurrence of the name or word 'Carole' is present in this audio excerpt.\",\n    \"clipped_words\": \"None detected; all word boundaries and consonants (including terminal /d/ in 'example', 'resident', and 'attend') are fully preserved.\",\n    \"ending_completeness\": \"The audio concludes naturally after 'Monday' with a completed sentence cadence and no premature cutoff.\",\n    \"unexpected_voice_changes\": \"None; voice timbre, pitch, and recording acoustic remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the speech is intelligible, audible, and unambiguous throughout.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 41.26,
+          "end": 56.137166666666666,
+          "file": "read-missed-visits-en-ending.wav",
+          "excerpt_sha256": "b260c14f12eb5e4acc2390e0e0ff97bb7737552be1abbc00d3e48b1170bbeea4",
+          "decoded_sample_count": 357052,
+          "expected_context": "The initial problem is nonattendance at the agreed visit. She does not label the families “uncooperative” or choose a cause and solution yet. Describe the event, source and gap without blame.",
+          "model_response": "```json\n{\n  \"transcript\": \"The initial problem is non-attendance at the agreed visit. She does not label the families uncooperative, or choose a cause and solution yet. Describe the event, source, and gap without blame.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name Carole does not occur in this excerpt.\",\n    \"negation\": \"Negation terms ('non-attendance', 'does not', 'without') are clearly articulated without elision.\",\n    \"role_distinctions\": \"The audio features disjointed voice profiles rather than distinct character role-play dialogue; it functions as instructional/narrative guidance delivered via alternating synthetic voices.\",\n    \"ending_completeness\": \"The excerpt concludes with a complete sentence ending naturally at 'without blame.' with no cutoff.\",\n    \"audible_speech\": \"All spoken words are fully intelligible and audible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"There are noticeable voice/timbre shifts: Voice 1 (00:00–00:03.7), shifting to Voice 2 (00:04.1–00:07.4), shifting to a deeper/lower-pitched voice (00:07.6–00:10.5), and returning to a higher synthetic voice (00:11.0–00:14.4).\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_changes\",\n      \"timestamp_range\": \"00:04.1 - 00:10.8\",\n      \"description\": \"Inconsistent vocal identity with multiple sudden timbre and pitch shifts between clauses across synthetic voice models.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all words and vocal transitions are clearly identifiable.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-practice-en",
+      "language": "en",
+      "source_path": "/training/audio/07-problema/problem-define/practice.en.f6901061a3fc.mp3",
+      "source_sha256": "a43edd9fb2eac805cc02d34b6010cc3b508a3956dc2ff590fae539e11f63400a",
+      "decoded_pcm_sha256": "d585bb772bfe016b56ca5daacbd4c5c3091769357ec4bf6f13074addb4b16cf3",
+      "full_audio_metrics": {
+        "samples": 1558570,
+        "seconds": 64.94041666666666,
+        "rms": 0.12410025693232819,
+        "peak": 0.963348388671875,
+        "quiet_sample_fraction": 0.25489904207061603
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Try, give feedback, then retry",
+          "start_ms": 0,
+          "end_ms": 3760,
+          "samples": 90240,
+          "seconds": 3.76,
+          "rms": 0.12199093913673571,
+          "peak": 0.963348388671875,
+          "quiet_sample_fraction": 0.3456338652482269
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Write: “Three households in the example reported to Carole that they missed agreed visits.",
+          "start_ms": 4060,
+          "end_ms": 10460,
+          "samples": 153600,
+          "seconds": 6.4,
+          "rms": 0.13419653228449233,
+          "peak": 0.864898681640625,
+          "quiet_sample_fraction": 0.15884114583333334
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "The first resident corrected the reported day to Tuesday; the attendance record, exact dates and each household’s barrier remain unchecked.”",
+          "start_ms": 10760,
+          "end_ms": 19920,
+          "samples": 219840,
+          "seconds": 9.16,
+          "rms": 0.1154035146380225,
+          "peak": 0.83270263671875,
+          "quiet_sample_fraction": 0.15606804949053857
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Compare this with “The families lack discipline.”",
+          "start_ms": 20220,
+          "end_ms": 24140,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.13191984463098466,
+          "peak": 0.87261962890625,
+          "quiet_sample_fraction": 0.23263180272108844
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Which parts are event, source and gap?",
+          "start_ms": 24440,
+          "end_ms": 28040,
+          "samples": 86400,
+          "seconds": 3.6,
+          "rms": 0.11146467289152957,
+          "peak": 0.8475341796875,
+          "quiet_sample_fraction": 0.26413194444444443
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "In triads, rotate as BHW, resident and observer: write, ask without blame, receive a correction, give feedback and retry.",
+          "start_ms": 28340,
+          "end_ms": 39700,
+          "samples": 272640,
+          "seconds": 11.36,
+          "rms": 0.126990919814117,
+          "peak": 0.849853515625,
+          "quiet_sample_fraction": 0.2428843896713615
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Everyone attempts the BHW role.",
+          "start_ms": 40000,
+          "end_ms": 42840,
+          "samples": 68160,
+          "seconds": 2.84,
+          "rms": 0.11133152497466567,
+          "peak": 0.761932373046875,
+          "quiet_sample_fraction": 0.21583039906103285
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Alone, use the same fictional cards and checklist; write first, compare with the answer, then revise.",
+          "start_ms": 43140,
+          "end_ms": 50420,
+          "samples": 174720,
+          "seconds": 7.28,
+          "rms": 0.1558761038038372,
+          "peak": 0.934814453125,
+          "quiet_sample_fraction": 0.20103594322344323
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "In your next report, seek the affected residents’ perspectives too.",
+          "start_ms": 50720,
+          "end_ms": 55240,
+          "samples": 108480,
+          "seconds": 4.52,
+          "rms": 0.13026103188287874,
+          "peak": 0.87957763671875,
+          "quiet_sample_fraction": 0.1937868731563422
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "An unwitnessed attempt is not observed, not automatically passed.",
+          "start_ms": 55540,
+          "end_ms": 60180,
+          "samples": 111360,
+          "seconds": 4.64,
+          "rms": 0.1263194064606368,
+          "peak": 0.868682861328125,
+          "quiet_sample_fraction": 0.22437140804597702
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Describe the event, source and gap without blame.",
+          "start_ms": 60480,
+          "end_ms": 64880,
+          "samples": 105600,
+          "seconds": 4.4,
+          "rms": 0.10441362639749163,
+          "peak": 0.82781982421875,
+          "quiet_sample_fraction": 0.2572348484848485
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 10.46,
+          "file": "read-practice-en-head.wav",
+          "excerpt_sha256": "e3f61d6d282a99785be62ac2222b0ac59cab2da23d4c8316750588c0e3f117cb",
+          "decoded_sample_count": 251040,
+          "expected_context": "Try, give feedback, then retry Write: “Three households in the example reported to Carole that they missed agreed visits.",
+          "model_response": "```json\n{\n  \"transcript\": \"try, give feedback, then retry. Right, three households in the example reported to Carol that they missed agreed visits.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced clearly as standard /ˈkærəl/ ('Carol') around 00:07.7 - 00:08.2.\",\n    \"negation\": \"No negative contractions or negation words present in the excerpt.\",\n    \"role_distinctions\": \"There is a clear shift in speaker role between the instructional prompt ('try, give feedback, then retry.') and the scenario narration ('Right, three households...').\",\n    \"ending_completeness\": \"The utterance finishes completely with a natural drop in pitch on 'visits' around 00:10.1; no audible cutoff.\",\n    \"audible_speech\": \"All words are clearly articulated and intelligible throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"A distinct change in voice/speaker persona occurs between the prompt phrase ending at 00:03.5 and the narration starting at 00:03.9 ('Right...').\"\n  },\n  \"possible_defects\": [\n    \"Abrupt transition between two different voices/speakers at 00:03.6 - 00:03.9 without an instructional pause.\"\n  ],\n  \"uncertainty\": \"Low; all speech segments are clearly audible and identifiable.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 4.06,
+          "end": 10.46,
+          "file": "read-practice-en-body.wav",
+          "excerpt_sha256": "01299b598fa5cb6d523581703a7be589cdc9e63216a1e0370bec62d17861fd26",
+          "decoded_sample_count": 153600,
+          "expected_context": "Write: “Three households in the example reported to Carole that they missed agreed visits.",
+          "model_response": "```json\n{\n  \"transcript\": \"Right. Three households in the example reported to Carol that they missed agreed visits.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name 'Carol' (or 'Carole') is pronounced clearly around 00:03.5 - 00:04.0 as /ˈkæ.rəl/ or /ˈkɛə.rəl/ with standard articulation.\",\n    \"negation\": \"No negative contractions or grammatical negation markers are present in the excerpt.\",\n    \"role_distinctions\": \"Single consistent female voice delivering educational or instructional dialogue; no multiple roles or dialogue partner switching.\",\n    \"ending_completeness\": \"The utterance completes naturally on 'visits' with terminal falling intonation and no premature cut-off.\",\n    \"audible_speech\": \"All speech is clearly audible, foregrounded, and cleanly articulated with minimal background noise.\",\n    \"clipped_words\": \"None detected; both initial 'Right' and terminal 'visits' have intact consonants.\",\n    \"unexpected_voice_changes\": \"Tone, pitch contour, pacing, and recording quality remain steady throughout the clip.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; the spelling of the name could be 'Carol' or 'Carole', but acoustic clarity of the speech is high.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 28.34,
+          "end": 42.84,
+          "file": "read-practice-en-critical.wav",
+          "excerpt_sha256": "7921b8eb83edf8878c12e46d4e5dfadbf06d5d14655e29acb677437c4b04a73d",
+          "decoded_sample_count": 348000,
+          "expected_context": "In triads, rotate as BHW, resident and observer: write, ask without blame, receive a correction, give feedback and retry. Everyone attempts the BHW role.",
+          "model_response": "```json\n{\n  \"transcript\": \"In triads, rotate as BHW, resident, and observer. Write, ask without blame, receive a correction, give feedback, and retry. Everyone attempts the BHW role.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The term 'Carole' does not occur in this audio excerpt.\",\n    \"negation\": \"No negative syntactic constructions or words (e.g., 'not', 'no') are present, except the prepositional phrase 'without blame'.\",\n    \"role_distinctions\": \"The distinct roles 'BHW', 'resident', and 'observer' are articulated clearly and distinctly.\",\n    \"ending_completeness\": \"The excerpt concludes naturally with full phonetic completion on the word 'role' without abrupt cutoff.\",\n    \"audible_speech\": \"Speech is fully intelligible throughout with clean instructional delivery in Philippine English.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"No unexpected shifts in pitch, speaker identity, or vocal quality detected.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Minor ambiguity at 00:05.15–00:05.65 between 'Write' (imperative action) and 'Right' (discourse marker/affirmation), though 'Write' aligns grammatically with the parallel list of imperative verbs.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 43.14,
+          "end": 64.94041666666666,
+          "file": "read-practice-en-ending.wav",
+          "excerpt_sha256": "791f2d2e4330f4d4738ee6bfb7092f46763a4695449b996a23e600f6a586b385",
+          "decoded_sample_count": 523210,
+          "expected_context": "Alone, use the same fictional cards and checklist; write first, compare with the answer, then revise. In your next report, seek the affected residents’ perspectives too. An unwitnessed attempt is not observed, not automatically passed. Describe the event, source and gap without blame.",
+          "model_response": "The user wants an analysis of a short Philippine English fictional educational audio.\n\nTranscript analysis:\n00:00 - 00:03: \"Alone, use the same fictional cards and checklist.\"\n00:03 - 00:07: \"Write first, compare with the answer, then revise.\"\n00:07 - 00:11: \"In your next report, seek the affected residents' perspectives, too.\"\n00:12 - 00:16: \"An unwitnessed attempt is not observed, not automatically pass.\"\n00:17 - 00:21: \"Describe the event, source, and gap without blame.\"\n\nEvaluate specific requirements:\n- Transcribe every audible word without guessing.\n- Assess Carole pronunciation (is there a Carole mentioned? Let's check text: \"cards\", \"checklist\", no \"Carole\", but check if there's any reference or mishearing / name), negation (\"is not observed, not automatically pass\"), role distinctions, ending completeness, audible speech, clipped words, unexpected voice changes.\n- Report concrete timestamps relative to this excerpt and uncertainty.\n- JSON output with transcript, observations, possible_defects, and uncertainty.```json\n{\n  \"transcript\": \"Alone, use the same fictional cards and checklist. Write first, compare with the answer, then revise. In your next report, seek the affected residents' perspectives, too. An unwitnessed attempt is not observed, not automatically pass. Describe the event, source, and gap without blame.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name or word 'Carole' does not occur in this excerpt; nearby phonetic elements include 'cards' at 00:02.1 - 00:02.5, pronounced clearly as /kɑːrdz/.\",\n    \"negation\": \"Clear negations occur at 00:14.2 ('not observed') and 00:15.1 ('not automatically pass') with distinct articulation and appropriate emphasis.\",\n    \"role_distinctions\": \"The speaker maintains a consistent instructional/evaluative tone throughout without role transitions or speaker shifts.\",\n    \"ending_completeness\": \"All sentence and phrase terminations are fully realized; the final word 'blame' at 00:21.0 ends cleanly with natural decay.\",\n    \"audible_speech\": \"Speech is fully audible, clear, and paced evenly across the entire duration.\",\n    \"clipped_words\": \"No clipped syllables or words detected.\",\n    \"unexpected_voice_changes\": \"Pitch, pacing, and synthetic timbre remain stable without sudden artifacts or unexpected shifts.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. All acoustic tokens and lexical items are clearly discernible.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-resident-perspective-en",
+      "language": "en",
+      "source_path": "/training/audio/07-problema/problem-define/resident-perspective.en.c271cd1dc9df.mp3",
+      "source_sha256": "2a856e44920d711db0254c08301044c7ecdd60bb13504798999525e71f3dadb6",
+      "decoded_pcm_sha256": "1b5a409510887329718ce6b160fe1b31266e3a56477ff69513032f261e020196",
+      "full_audio_metrics": {
+        "samples": 1361712,
+        "seconds": 56.738,
+        "rms": 0.1264110147986863,
+        "peak": 0.905975341796875,
+        "quiet_sample_fraction": 0.27773787702539154
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Let the resident correct the account",
+          "start_ms": 0,
+          "end_ms": 2320,
+          "samples": 55680,
+          "seconds": 2.32,
+          "rms": 0.15951258718650083,
+          "peak": 0.76617431640625,
+          "quiet_sample_fraction": 0.24405531609195402
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Carole asks the first resident, “What happened on the visit day?",
+          "start_ms": 2620,
+          "end_ms": 7260,
+          "samples": 111360,
+          "seconds": 4.64,
+          "rms": 0.12267223286797878,
+          "peak": 0.78717041015625,
+          "quiet_sample_fraction": 0.22407507183908046
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "What should I correct in my understanding?”",
+          "start_ms": 7560,
+          "end_ms": 10240,
+          "samples": 64320,
+          "seconds": 2.68,
+          "rms": 0.14492179879691913,
+          "peak": 0.78118896484375,
+          "quiet_sample_fraction": 0.25071517412935324
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "The resident replies, “I meant Tuesday, not Monday.",
+          "start_ms": 10540,
+          "end_ms": 14900,
+          "samples": 104640,
+          "seconds": 4.36,
+          "rms": 0.14295141736332664,
+          "peak": 0.905975341796875,
+          "quiet_sample_fraction": 0.3220087920489297
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "I do not know whether the center canceled it.”",
+          "start_ms": 15200,
+          "end_ms": 18120,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.15543069759679026,
+          "peak": 0.760345458984375,
+          "quiet_sample_fraction": 0.20910388127853882
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Carole says, “According to you, you missed Tuesday; cancellation is uncertain.",
+          "start_ms": 18420,
+          "end_ms": 24340,
+          "samples": 142080,
+          "seconds": 5.92,
+          "rms": 0.14761553772026875,
+          "peak": 0.900299072265625,
+          "quiet_sample_fraction": 0.2185599662162162
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Is that an accurate summary?”",
+          "start_ms": 24640,
+          "end_ms": 26520,
+          "samples": 45120,
+          "seconds": 1.88,
+          "rms": 0.12746543018743442,
+          "peak": 0.752227783203125,
+          "quiet_sample_fraction": 0.25811170212765955
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "The resident replies, “Yes, that is what I said.”",
+          "start_ms": 26820,
+          "end_ms": 30940,
+          "samples": 98880,
+          "seconds": 4.12,
+          "rms": 0.12583811766512573,
+          "peak": 0.860748291015625,
+          "quiet_sample_fraction": 0.3052690129449838
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Carole corrects the reported date and retains the source of the correction.",
+          "start_ms": 31240,
+          "end_ms": 36440,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.10633420485732407,
+          "peak": 0.80487060546875,
+          "quiet_sample_fraction": 0.21248397435897437
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "This does not confirm attendance or cancellation.",
+          "start_ms": 36740,
+          "end_ms": 40220,
+          "samples": 83520,
+          "seconds": 3.48,
+          "rms": 0.106872992531158,
+          "peak": 0.724365234375,
+          "quiet_sample_fraction": 0.17383860153256706
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Listen to the other residents separately; retain differences between accounts.",
+          "start_ms": 40520,
+          "end_ms": 45120,
+          "samples": 110400,
+          "seconds": 4.6,
+          "rms": 0.12086217202798963,
+          "peak": 0.7713623046875,
+          "quiet_sample_fraction": 0.2121195652173913
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Silence, a nod or an expression does not prove agreement or motivation.",
+          "start_ms": 45420,
+          "end_ms": 51780,
+          "samples": 152640,
+          "seconds": 6.36,
+          "rms": 0.13263189028991687,
+          "peak": 0.84100341796875,
+          "quiet_sample_fraction": 0.1472353249475891
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Describe the event, source and gap without blame.",
+          "start_ms": 52080,
+          "end_ms": 56680,
+          "samples": 110400,
+          "seconds": 4.6,
+          "rms": 0.11370401806468189,
+          "peak": 0.903961181640625,
+          "quiet_sample_fraction": 0.2501358695652174
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 7.26,
+          "file": "read-resident-perspective-en-head.wav",
+          "excerpt_sha256": "e9ee245d274763f3d0897775880cb58a3b88c27a6e23a00d81a7c2ee0f3f4db4",
+          "decoded_sample_count": 174240,
+          "expected_context": "Let the resident correct the account Carole asks the first resident, “What happened on the visit day?",
+          "model_response": "```json\n{\n \"transcript\": \"Let the resident correct the account. Carol asks the first resident, \\\"What happened on the visit day?\\\"\",\n \"observations\": {\n  \"carole_pronunciation\": \"Pronounced clearly as \\\"Carol\\\" [ˈkærəl] around 00:02.50–00:02.95.\",\n  \"negation\": \"No negative words or contractions are present in the excerpt.\",\n  \"role_distinctions\": \"Spoken by a single female voice delivering narration/prompts; quotation within the narration (\\\"What happened on the visit day?\\\") is marked with natural conversational inflection.\",\n  \"ending_completeness\": \"The final phrase \\\"visit day?\\\" resolves fully without cutting off.\",\n  \"audible_speech\": \"All speech is clear, intelligible, and fully audible across the excerpt.\",\n  \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n  \"unexpected_voice_changes\": \"Tone, volume, and acoustic quality remain steady throughout.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.62,
+          "end": 7.26,
+          "file": "read-resident-perspective-en-body.wav",
+          "excerpt_sha256": "9f49c95b23c2a92d9e7ba74501b74222ba3edc988b42a462f27a1e3e0c32f16c",
+          "decoded_sample_count": 111360,
+          "expected_context": "Carole asks the first resident, “What happened on the visit day?",
+          "model_response": "```json\n{\n  \"transcript\": \"Carol asks the first resident, \\\"What happened on the visit day?\\\"\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced clearly as /ˈkær.əl/ (or 'Carol') around 00:00.00 - 00:00.45.\",\n    \"negation\": \"No negative grammatical constructions or negation particles are present in the audio.\",\n    \"role_distinctions\": \"Clear shift in vocal delivery and pitch contour between the narrator tag ('Carol asks the first resident,') from 00:00.00 to 00:01.88 and the quoted question ('What happened on the visit day?') from 00:01.88 to 00:04.22.\",\n    \"ending_completeness\": \"The audio ends naturally with full reverberation tail after 'day' without abrupt truncation.\",\n    \"audible_speech\": \"All speech is clean, fully audible, and well-enunciated throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None; the change in intonation reflects standard educational/storytelling role differentiation.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all speech segments are clearly articulated and intelligible.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 10.54,
+          "end": 18.12,
+          "file": "read-resident-perspective-en-critical.wav",
+          "excerpt_sha256": "870ea4ed6321779d03766fbf92b266d43c3d485b0b11dea5f3dc6c5b4a399201",
+          "decoded_sample_count": 181920,
+          "expected_context": "The resident replies, “I meant Tuesday, not Monday. I do not know whether the center canceled it.”",
+          "model_response": "```json\n{\n  \"transcript\": \"The resident replies, \\\"I meant Tuesday, not Monday. I do not know whether the center canceled it.\\\"\",\n  \"observations\": {\n    \"role_distinctions\": \"A distinct voice change occurs at approximately 00:01.9, where the speaker shifts from a higher-pitched narrative delivery ('The resident replies') to a lower-pitched, direct-dialogue persona ('I meant Tuesday, not Monday...').\",\n    \"negation\": \"Negations ('not' at 00:03.6 and 'do not' at 00:05.0) are articulated clearly with distinct phonemic boundaries and appropriate emphasis.\",\n    \"carole_pronunciation\": \"The name or word 'Carole' does not occur in this audio excerpt.\",\n    \"clipped_words\": \"No clipped words detected; initial and final consonants are preserved across phrase boundaries.\",\n    \"audible_speech\": \"All speech is clear, intelligible, and well-enunciated in standard Philippine English accent.\",\n    \"ending_completeness\": \"The excerpt concludes naturally after 'canceled it' (00:07.1) with complete phoneme release and room acoustic fade, showing no abrupt cutoff.\",\n    \"unexpected_voice_changes\": \"None; the modulation at 00:01.9 is an intentional shift to signal spoken dialogue rather than an unexpected defect.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; the recording is clear and contains no ambiguous segments.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 40.52,
+          "end": 56.738,
+          "file": "read-resident-perspective-en-ending.wav",
+          "excerpt_sha256": "cf0b98d7aa562ad33ef8b57dd7fe9ee4b9e6050990f38a1df7803938489b3a6f",
+          "decoded_sample_count": 389232,
+          "expected_context": "Listen to the other residents separately; retain differences between accounts. Silence, a nod or an expression does not prove agreement or motivation. Describe the event, source and gap without blame.",
+          "model_response": "```json\n{\n  \"transcript\": \"Listen to the other residents separately. Retain differences between accounts. Silence, a nod, or an expression does not prove agreement or motivation. Describe the event, source, and gap without blame.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name or word 'Carole' does not occur in this excerpt.\",\n    \"negation\": \"Clear negation heard at 00:08.5 - 00:09.3 ('does not prove').\",\n    \"role_distinctions\": \"Three distinct speaker voices deliver successive instructions: Speaker 1 from 00:00.0 to 00:04.5, Speaker 2 from 00:04.7 to 00:11.1, and Speaker 3 from 00:11.3 to 00:16.1.\",\n    \"ending_completeness\": \"The final word 'blame' finishes cleanly around 00:15.8 without being cut off.\",\n    \"audible_speech\": \"All speech is clearly enunciated and intelligible throughout.\",\n    \"clipped_words\": \"None detected; word onsets and codas are intact.\",\n    \"unexpected_voice_changes\": \"Shifts between distinct voices occur at approximately 00:04.6 and 00:11.2, characteristic of a multi-speaker compilation or sequential role shifts.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; the spoken words and vocal transitions are distinct and unambiguous.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-source-gap-en",
+      "language": "en",
+      "source_path": "/training/audio/07-problema/problem-define/source-gap.en.de5fe83f87c0.mp3",
+      "source_sha256": "0c92f54bf981d4461adad9913210b826af5a67b632903c785c701c0e8f24a948",
+      "decoded_pcm_sha256": "e01000a11b0961cabb8cdf557e736c7c6e1ca73eeed32e6c3a9d5afddc398fd1",
+      "full_audio_metrics": {
+        "samples": 1362338,
+        "seconds": 56.76408333333333,
+        "rms": 0.12352947926416608,
+        "peak": 0.87982177734375,
+        "quiet_sample_fraction": 0.24059300995788124
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Whose report, which gap?",
+          "start_ms": 0,
+          "end_ms": 2160,
+          "samples": 51840,
+          "seconds": 2.16,
+          "rms": 0.12579672792650623,
+          "peak": 0.783050537109375,
+          "quiet_sample_fraction": 0.3985532407407407
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Use three columns: event and scope, source, and information gap.",
+          "start_ms": 2460,
+          "end_ms": 8580,
+          "samples": 146880,
+          "seconds": 6.12,
+          "rms": 0.12180591800510328,
+          "peak": 0.8446044921875,
+          "quiet_sample_fraction": 0.326994825708061
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "In the first: three households in the example reported missing a visit.",
+          "start_ms": 8880,
+          "end_ms": 13640,
+          "samples": 114240,
+          "seconds": 4.76,
+          "rms": 0.14078098753546153,
+          "peak": 0.801361083984375,
+          "quiet_sample_fraction": 0.20173319327731093
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "In the second: each resident spoke directly to Carole; she did not personally observe attendance.",
+          "start_ms": 13940,
+          "end_ms": 20820,
+          "samples": 165120,
+          "seconds": 6.88,
+          "rms": 0.09085424734266405,
+          "peak": 0.778167724609375,
+          "quiet_sample_fraction": 0.1789970930232558
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "In the third: exact dates, agreed visit days and each household’s barrier.",
+          "start_ms": 21120,
+          "end_ms": 27400,
+          "samples": 150720,
+          "seconds": 6.28,
+          "rms": 0.13859744792663242,
+          "peak": 0.87982177734375,
+          "quiet_sample_fraction": 0.2057192144373673
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "“I had work” is the second resident’s report, not everyone’s cause.",
+          "start_ms": 27700,
+          "end_ms": 32740,
+          "samples": 120960,
+          "seconds": 5.04,
+          "rms": 0.13639656521422963,
+          "peak": 0.7894287109375,
+          "quiet_sample_fraction": 0.1869130291005291
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "No record has been shown, so do not claim the count or cancellation has been verified.",
+          "start_ms": 33040,
+          "end_ms": 39360,
+          "samples": 151680,
+          "seconds": 6.32,
+          "rms": 0.12585465908985935,
+          "peak": 0.871429443359375,
+          "quiet_sample_fraction": 0.12730089662447258
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "In actual work, use only relevant information and seek clarification from a person authorized to access the record under local procedures.",
+          "start_ms": 39660,
+          "end_ms": 48980,
+          "samples": 223680,
+          "seconds": 9.32,
+          "rms": 0.11844465585146041,
+          "peak": 0.8035888671875,
+          "quiet_sample_fraction": 0.11744456366237482
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "This lesson creates no new access rule.",
+          "start_ms": 49280,
+          "end_ms": 52520,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.15517976728748398,
+          "peak": 0.85260009765625,
+          "quiet_sample_fraction": 0.21403034979423868
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Describe the event, source and gap without blame.",
+          "start_ms": 52820,
+          "end_ms": 56700,
+          "samples": 93120,
+          "seconds": 3.88,
+          "rms": 0.13121552319674368,
+          "peak": 0.850250244140625,
+          "quiet_sample_fraction": 0.26097508591065294
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 8.58,
+          "file": "read-source-gap-en-head.wav",
+          "excerpt_sha256": "1f096e7e5532886c275278d759ebd64c4f36fd5d9a6d93cdd336cfc9c758b1a8",
+          "decoded_sample_count": 205920,
+          "expected_context": "Whose report, which gap? Use three columns: event and scope, source, and information gap.",
+          "model_response": "```json\n{\n  \"transcript\": \"Whose report, which gap? Use three columns: event and scope, source, and information gap.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name or word 'Carole' does not occur in this audio excerpt.\",\n    \"negation\": \"No negative constructions or negation terms are present.\",\n    \"role_distinctions\": \"A single speaker delivers instructions and list items; no role shifts or dialogue present.\",\n    \"ending_completeness\": \"The utterance concludes naturally at [00:08.45] with no truncation.\",\n    \"audible_speech\": \"Speech is clearly audible, paced steadily, with an educational delivery style consistent with Philippine English.\",\n    \"clipped_words\": \"None; all word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"None observed; tone, pitch, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; transcript and acoustic cues are clear.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.46,
+          "end": 8.58,
+          "file": "read-source-gap-en-body.wav",
+          "excerpt_sha256": "04f4f971d86d82e7d6322b203a72cb99334c041e79a27722af1f6ea97b8cbde6",
+          "decoded_sample_count": 146880,
+          "expected_context": "Use three columns: event and scope, source, and information gap.",
+          "model_response": "```json\n{\n  \"transcript\": \"Use three columns: event and scope, source, and information gap.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name or word 'Carole' does not occur in this excerpt.\",\n    \"negation\": \"No negative constructions are present.\",\n    \"role_distinctions\": \"Single speaker delivering structured instructional prompts.\",\n    \"ending_completeness\": \"The phrase terminates cleanly on 'gap' with no audible truncation.\",\n    \"audible_speech\": \"All words are clearly enunciated and intelligible throughout.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain uniform throughout the recording.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 13.94,
+          "end": 27.4,
+          "file": "read-source-gap-en-critical.wav",
+          "excerpt_sha256": "232c7cfdbb8961e112cbfd248b83cf5ea3d5a9a8a5c6b1d8375cc2e50461e051",
+          "decoded_sample_count": 323040,
+          "expected_context": "In the second: each resident spoke directly to Carole; she did not personally observe attendance. In the third: exact dates, agreed visit days and each household’s barrier.",
+          "model_response": "```json\n{\n  \"transcript\": \"In the second, each resident spoke directly to Carol. She did not personally observe attendance. In the third, exact dates, agreed visit days, and each household's barrier.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced clearly as /ˈkær.əl/ at around 00:03.2–00:03.8.\",\n    \"negation\": \"The negation 'did not' is distinctly articulated without contraction between 00:04.4 and 00:05.0.\",\n    \"role_distinctions\": \"The entire excerpt is voiced by a single female speaker providing narration.\",\n    \"ending_completeness\": \"The audio concludes naturally after 'barrier' at approximately 00:13.3 with falling terminal intonation; there is no mid-syllable cutoff, though syntactically it forms an incomplete sentence or bullet point list.\",\n    \"audible_speech\": \"Speech is fully audible and clear across the entire excerpt.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"A slight pause and pitch reset occurs at 00:07.1 ('In the third...'), consistent with reading a new list item rather than an unexpected speaker change.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all words and phonetic details are clearly discernible.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 39.66,
+          "end": 56.76408333333333,
+          "file": "read-source-gap-en-ending.wav",
+          "excerpt_sha256": "410e959ccf4249585bcb55a1f4ed0d8182c1907e3ab57ce5dddf66dd687ad0cf",
+          "decoded_sample_count": 410498,
+          "expected_context": "In actual work, use only relevant information and seek clarification from a person authorized to access the record under local procedures. This lesson creates no new access rule. Describe the event, source and gap without blame.",
+          "model_response": "```json\n{\n  \"transcript\": \"In actual work, use only relevant information, and seek clarification from a person authorized to access the record under local procedures. This lesson creates no new access rule. Describe the event, source, and gap without blame.\",\n  \"observations\": {\n    \"role_distinctions\": \"There are two distinct speaker voices: Speaker 1 delivers the instructional guidance from 00:00.00 to 00:09.50 and 00:13.40 to 00:17.05, while Speaker 2 delivers the clarifying rule statement from 00:09.95 to 00:12.70 with a deeper, distinct vocal quality.\",\n    \"negation\": \"Negation terms ('no new' at 00:11.30–00:11.85 and 'without' at 00:16.00–00:16.45) are clearly pronounced without ambiguity.\",\n    \"carole_pronunciation\": \"The proper noun or term 'Carole' does not occur in this audio excerpt.\",\n    \"audible_speech\": \"All spoken words are fully audible, clear, and unmasked by background noise.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are intact.\",\n    \"voice_changes\": \"Speaker shifts occur cleanly at 00:09.95 and 00:13.40, consistent with structured educational dialogue rather than an unexpected mid-utterance artifact.\",\n    \"ending_completeness\": \"The final phrase 'without blame' completes naturally with standard terminal falling intonation and sufficient trailing silence before the audio terminates.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and distinct throughout.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-worked-example-en",
+      "language": "en",
+      "source_path": "/training/audio/07-problema/problem-define/worked-example.en.1989b4726560.mp3",
+      "source_sha256": "5a3eb0d95142dec29f919a0c5e24d351fd449696bb7d9017defb6a9c521217e5",
+      "decoded_pcm_sha256": "db67d5ab6e269672922c0b87b99fcaeb75c6dc590554c922f03b2ad514349fde",
+      "full_audio_metrics": {
+        "samples": 1317199,
+        "seconds": 54.883291666666665,
+        "rms": 0.12167238415657257,
+        "peak": 0.926483154296875,
+        "quiet_sample_fraction": 0.26843248438542694
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Separate the problem from a guess",
+          "start_ms": 0,
+          "end_ms": 2480,
+          "samples": 59520,
+          "seconds": 2.48,
+          "rms": 0.12900263942888648,
+          "peak": 0.8482666015625,
+          "quiet_sample_fraction": 0.21234879032258064
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "“Three households missed visits” describes the event in the example; add that this comes from their reports.",
+          "start_ms": 2780,
+          "end_ms": 9780,
+          "samples": 168000,
+          "seconds": 7,
+          "rms": 0.11539834450918691,
+          "peak": 0.8233642578125,
+          "quiet_sample_fraction": 0.20611309523809523
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "“They did not want to go” guesses at motivation.",
+          "start_ms": 10080,
+          "end_ms": 13480,
+          "samples": 81600,
+          "seconds": 3.4,
+          "rms": 0.1212005160334374,
+          "peak": 0.62017822265625,
+          "quiet_sample_fraction": 0.2235294117647059
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "“We need a poster” proposes a solution.",
+          "start_ms": 13780,
+          "end_ms": 17340,
+          "samples": 85440,
+          "seconds": 3.56,
+          "rms": 0.11036739655439219,
+          "peak": 0.651275634765625,
+          "quiet_sample_fraction": 0.2944405430711611
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "A report does not establish that people do not want to get well.",
+          "start_ms": 17640,
+          "end_ms": 21720,
+          "samples": 97920,
+          "seconds": 4.08,
+          "rms": 0.14678185111428152,
+          "peak": 0.789520263671875,
+          "quiet_sample_fraction": 0.16822916666666668
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Carole asks, “What actually happened?",
+          "start_ms": 22020,
+          "end_ms": 24980,
+          "samples": 71040,
+          "seconds": 2.96,
+          "rms": 0.08630629954252055,
+          "peak": 0.71453857421875,
+          "quiet_sample_fraction": 0.2510698198198198
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Who reported it?",
+          "start_ms": 25280,
+          "end_ms": 26680,
+          "samples": 33600,
+          "seconds": 1.4,
+          "rms": 0.13663842029275763,
+          "peak": 0.642547607421875,
+          "quiet_sample_fraction": 0.386577380952381
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "What do we still not know?”",
+          "start_ms": 26980,
+          "end_ms": 29260,
+          "samples": 54720,
+          "seconds": 2.28,
+          "rms": 0.11225807090371215,
+          "peak": 0.7884521484375,
+          "quiet_sample_fraction": 0.25860745614035086
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "A poster might help, but first investigate whether it relates to the reported barrier.",
+          "start_ms": 29560,
+          "end_ms": 35360,
+          "samples": 139200,
+          "seconds": 5.8,
+          "rms": 0.12672559507857203,
+          "peak": 0.768890380859375,
+          "quiet_sample_fraction": 0.1752227011494253
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Sort the statements into separate categories: event, guess and solution.",
+          "start_ms": 35660,
+          "end_ms": 42020,
+          "samples": 152640,
+          "seconds": 6.36,
+          "rms": 0.11001250981435105,
+          "peak": 0.924224853515625,
+          "quiet_sample_fraction": 0.2408149895178197
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Before choosing a solution, listen to each household and identify a record that could clarify the situation.",
+          "start_ms": 42320,
+          "end_ms": 49960,
+          "samples": 183360,
+          "seconds": 7.64,
+          "rms": 0.14976184172198836,
+          "peak": 0.926483154296875,
+          "quiet_sample_fraction": 0.1637161867364747
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Describe the event, source and gap without blame.",
+          "start_ms": 50260,
+          "end_ms": 54820,
+          "samples": 109440,
+          "seconds": 4.56,
+          "rms": 0.1311299579094625,
+          "peak": 0.9169921875,
+          "quiet_sample_fraction": 0.2705043859649123
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 9.78,
+          "file": "read-worked-example-en-head.wav",
+          "excerpt_sha256": "4f3c4fc4836872254d6d9632e7c434aa89e56daa241e4d602e13dbfa88f16b3e",
+          "decoded_sample_count": 234720,
+          "expected_context": "Separate the problem from a guess “Three households missed visits” describes the event in the example; add that this comes from their reports.",
+          "model_response": "```json\n{\n  \"transcript\": \"Separate the problem from a guess. Three households missed visits describes the event in the example. Add that this comes from their reports.\",\n  \"observations\": {\n    \"speaker\": \"Single female speaker with clear, neutral educational narration.\",\n    \"role_distinctions\": \"No role shifts; delivery remains instructional throughout.\",\n    \"negation\": \"No negative constructions are present in the excerpt.\",\n    \"audible_speech\": \"All words are fully audible and distinct.\",\n    \"ending_completeness\": \"The final sentence terminates naturally on 'reports.' without cutoff.\"\n  },\n  \"possible_defects\": {\n    \"carole_pronunciation\": \"No occurrence of the name 'Carole' in the audio.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; tone and pitch remain steady.\"\n  },\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.78,
+          "end": 9.78,
+          "file": "read-worked-example-en-body.wav",
+          "excerpt_sha256": "7cb164a28d964aa245c791056c486850b1aff1aad157dc9e45d852db19da7a4c",
+          "decoded_sample_count": 168000,
+          "expected_context": "“Three households missed visits” describes the event in the example; add that this comes from their reports.",
+          "model_response": "```json\n{\n  \"transcript\": \"Three households missed visits describes the event in the example. Add that this comes from their reports.\",\n  \"observations\": {\n    \"speaker_and_tone\": \"Single synthetic female voice delivering instructional/educational text in a standard, deliberate cadence with clear articulation.\",\n    \"pronunciation\": \"Standard pronunciation throughout; no noticeable mispronunciations or unexpected phonetic shifts.\",\n    \"flow_and_boundaries\": \"Clear syntactic break between the first sentence ending at 00:03.95 and the second sentence starting at 00:04.75.\",\n    \"ending\": \"The final word 'reports' finishes cleanly with natural decay, without clipping.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 10.08,
+          "end": 17.34,
+          "file": "read-worked-example-en-critical.wav",
+          "excerpt_sha256": "b1803278571785769741e9ee75f6a6148524dd38df56ba26375d685ab90e171e",
+          "decoded_sample_count": 174240,
+          "expected_context": "“They did not want to go” guesses at motivation. “We need a poster” proposes a solution.",
+          "model_response": "```json\n{\n  \"transcript\": \"They did not want to go, guesses at motivation. We need a poster, proposes a solution.\",\n  \"observations\": {\n    \"audible_speech\": \"The audio contains clearly articulated educational narration consisting of two example clauses paired with their functional labels.\",\n    \"role_distinctions\": \"There is a subtle shift in intonation between the quoted statements ('They did not want to go', 'We need a poster') and the subsequent analytical descriptor tags ('guesses at motivation', 'proposes a solution').\",\n    \"negation\": \"The negation 'did not' at 00:00.15 - 00:00.60 is clearly articulated.\",\n    \"carole_pronunciation\": \"The name or word 'Carole' is not present in this audio excerpt.\",\n    \"ending_completeness\": \"The audio ends naturally with full decay on 'solution' around 00:06.80.\",\n    \"clipped_words\": \"No words are clipped at either boundary or internally.\",\n    \"unexpected_voice_changes\": \"No unexpected shifts or glitches in voice quality; pacing and volume remain steady.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. Speech is clear and unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 35.66,
+          "end": 54.883291666666665,
+          "file": "read-worked-example-en-ending.wav",
+          "excerpt_sha256": "476108fd6c776a0e6348891155ce7f7a8f05dcb8407e2cfb1f260762f5570ae8",
+          "decoded_sample_count": 461359,
+          "expected_context": "Sort the statements into separate categories: event, guess and solution. Before choosing a solution, listen to each household and identify a record that could clarify the situation. Describe the event, source and gap without blame.",
+          "model_response": "```json\n{\n \"transcript\": \"Sort the statements into separate categories: event, guess, and solution. Before choosing a solution, listen to each household, and identify a record that could clarify the situation. Describe the event, source, and gap without blame.\",\n \"observations\": {\n  \"speaker_profile\": \"Single female speaker delivering clear instructional/educational prompts with standard Philippine English phonological traits.\",\n  \"carole_pronunciation\": \"No occurrence of the name or word 'Carole' in the spoken excerpt.\",\n  \"negation\": \"No explicit negative contractions or negation markers detected (except the prepositional phrase 'without blame').\",\n  \"role_distinctions\": \"Single consistent instructional voice throughout; no multi-role distinction required.\",\n  \"ending_completeness\": \"The audio ends naturally with 'without blame.' at approximately 00:19.4 with full phonetic closure and no cut-off.\",\n  \"audible_speech\": \"Speech is clean, clear, and fully audible with minimal studio background noise.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"Tone, pitch, and pacing remain steady and consistent throughout.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None; all words and phrases are clearly intelligible.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-en",
+      "language": "en",
+      "source_path": "/training/bhw-1-7/problem-define-gemini-en-f62a9bc61edd.mp4",
+      "source_sha256": "f62a9bc61edd3d945a1827aef595a0a183e6b3f2fac8c008e6e5007c5a5b43ca",
+      "decoded_pcm_sha256": "bb95a3062dcacfa29a6c5d57da9365f05ef2c91bb103abc1dd287d3f57e56c30",
+      "full_audio_metrics": {
+        "samples": 1221120,
+        "seconds": 50.88,
+        "rms": 0.08430049744377426,
+        "peak": 0.675262451171875,
+        "quiet_sample_fraction": 0.26388725104821803
+      },
+      "zones": [
+        {
+          "zone": "missed-visits",
+          "index": 0,
+          "text": "Carole hears three households report missed visits. These are reports; attendance records remain unchecked.",
+          "start_ms": 0,
+          "end_ms": 8160,
+          "samples": 195840,
+          "seconds": 8.16,
+          "rms": 0.08244382081741397,
+          "peak": 0.590606689453125,
+          "quiet_sample_fraction": 0.2115042892156863
+        },
+        {
+          "zone": "worked-example",
+          "index": 1,
+          "text": "Missed visits are the event. Unwillingness is a guess. A poster is a solution. Separate the three.",
+          "start_ms": 8460,
+          "end_ms": 16420,
+          "samples": 191040,
+          "seconds": 7.96,
+          "rms": 0.07368414398422357,
+          "peak": 0.675262451171875,
+          "quiet_sample_fraction": 0.29225293132328306
+        },
+        {
+          "zone": "source-gap",
+          "index": 2,
+          "text": "Carole identifies each source. Dates and each household’s barrier remain uncertain.",
+          "start_ms": 16720,
+          "end_ms": 23440,
+          "samples": 161280,
+          "seconds": 6.72,
+          "rms": 0.08619344719732601,
+          "peak": 0.66217041015625,
+          "quiet_sample_fraction": 0.1656187996031746
+        },
+        {
+          "zone": "resident-perspective",
+          "index": 3,
+          "text": "The first resident clarifies: Tuesday, not Monday. Cancellation is uncertain. Carole attributes the correction.",
+          "start_ms": 23740,
+          "end_ms": 31780,
+          "samples": 192960,
+          "seconds": 8.04,
+          "rms": 0.08032639274714118,
+          "peak": 0.5616455078125,
+          "quiet_sample_fraction": 0.21608623548922057
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "In triads, write event, source and gap. Ask, give feedback and retry without blame.",
+          "start_ms": 32080,
+          "end_ms": 39840,
+          "samples": 186240,
+          "seconds": 7.76,
+          "rms": 0.08815486043225451,
+          "peak": 0.5994873046875,
+          "quiet_sample_fraction": 0.23572809278350515
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Three households report missed visits. The first reports Tuesday. Records and each barrier remain unchecked. No cause is guessed.",
+          "start_ms": 40140,
+          "end_ms": 49660,
+          "samples": 228480,
+          "seconds": 9.52,
+          "rms": 0.10289639152317476,
+          "peak": 0.646820068359375,
+          "quiet_sample_fraction": 0.20777748599439777
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "head",
+          "start": 0,
+          "end": 16.42,
+          "file": "shipped-story-en-head.wav",
+          "excerpt_sha256": "34f842e63843a10a6355c30d073e5019c96d9399c9cbcf891cd3e8a26bc81dcd",
+          "decoded_sample_count": 394080,
+          "expected_context": "Carole hears three households report missed visits. These are reports; attendance records remain unchecked. Missed visits are the event. Unwillingness is a guess. A poster is a solution. Separate the three.",
+          "model_response": "```json\n{\n  \"transcript\": \"Carol hears three households report missed visits. These are reports. Attendance records remain unchecked. Missed visits are the event. Unwillingness is a guess. A poster is a solution. Separate the three.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced clearly as 'Carol' [ˈkærəl] at 00:00.00-00:00.48.\",\n    \"negation\": \"Morphological negations occur with 'unchecked' (00:07.38-00:07.98) and 'Unwillingness' (00:10.85-00:11.80); no syntactic negative particles like 'not' or 'never' are used.\",\n    \"role_distinctions\": \"Single narrator delivering instructional content in an analytical, deliberate tone.\",\n    \"ending_completeness\": \"The final phrase 'Separate the three.' resolves fully with clear terminal intonation by 00:15.82 with no cut-off.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible throughout.\",\n    \"clipped_words\": \"None detected; word onsets and codas are intact.\",\n    \"unexpected_voice_changes\": \"Pacing, timbre, and acoustic volume remain stable without unexpected shifts or artifacts.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all lexical items and acoustic properties are clear.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 8.16,
+          "file": "shipped-story-en-body.wav",
+          "excerpt_sha256": "1cd574cba1eb9468d4cd6971d735e8e1f723e15361438a4251581b9e3a48c01d",
+          "decoded_sample_count": 195840,
+          "expected_context": "Carole hears three households report missed visits. These are reports; attendance records remain unchecked.",
+          "model_response": "```json\n{\n  \"transcript\": \"Carol hears three households report missed visits. These are reports. Attendance records remain unchecked.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"The name 'Carol' (00:00.0 - 00:00.6) is articulated clearly without distortion, pronounced as /ˈkærəl/.\",\n    \"negation\": \"Morphological negation is present in 'unchecked' (00:07.1 - 00:08.0), articulated clearly with no syntactic negative particles like 'not'.\",\n    \"role_distinctions\": \"Single consistent narrative voice used throughout the educational prompt.\",\n    \"ending_completeness\": \"The final word 'unchecked' ends naturally at 00:08.0 with a fully resolved final consonant cluster (/kt/) and no truncation.\",\n    \"audible_speech\": \"Speech is fully audible and intelligible across the entire excerpt.\",\n    \"clipped_words\": \"None detected; word boundaries and transitions are smooth.\",\n    \"unexpected_voice changes\": \"Pitch, pacing, and synthetic/educational delivery remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. The speech is clear and distinct.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 23.74,
+          "end": 39.84,
+          "file": "shipped-story-en-critical.wav",
+          "excerpt_sha256": "fd81887df2d42c9d3ed6352aeb401ec70b123cbd0fd4b8ab0b7934017480629b",
+          "decoded_sample_count": 386400,
+          "expected_context": "The first resident clarifies: Tuesday, not Monday. Cancellation is uncertain. Carole attributes the correction. In triads, write event, source and gap. Ask, give feedback and retry without blame.",
+          "model_response": "```json\n{\n  \"transcript\": \"The first resident clarifies, Tuesday, not Monday. Cancellation is uncertain. Carol attributes the correction. In triads, write event, source, and gap. Ask, give feedback, and retry without blame.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Pronounced standardly as 'Carol' [ˈkæɹəl] between 00:05.95 and 00:06.45.\",\n    \"negation\": \"Clear negative marker 'not' in 'not Monday' (00:03.15–00:03.70), morphological negation in 'uncertain' (00:05.05–00:05.65), and prepositional negation 'without' in 'without blame' (00:14.65–00:15.15).\",\n    \"role_distinctions\": \"A distinct shift occurs at 00:08.20; the first section (00:00.00–00:07.90) features a descriptive narration of dialogue/events, whereas the second section (00:08.20–00:15.85) provides pedagogical instructions delivered by a different speaker/accent.\",\n    \"ending_completeness\": \"The excerpt concludes naturally with full decay on 'blame' at 00:15.85 with no abrupt cut or truncation.\",\n    \"audible_speech\": \"All words are fully audible and distinct across both segments.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"A clear voice/speaker transition occurs at 00:08.20 where the pitch, acoustic timbre, and speaker accent change noticeably.\"\n  },\n  \"possible_defects\": [\n    {\n      \"timestamp\": \"00:08.20\",\n      \"type\": \"speaker_change\",\n      \"description\": \"Abrupt transition between two distinct speaker voices without pause or narrative bridge.\"\n    }\n  ],\n  \"uncertainty\": \"Low; all speech elements and speaker shifts are clearly defined.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 32.08,
+          "end": 50.88,
+          "file": "shipped-story-en-ending.wav",
+          "excerpt_sha256": "d21632e82f3db817224e89fc36a224532369620ab2be2e9b0e4d88dabca591e0",
+          "decoded_sample_count": 451200,
+          "expected_context": "In triads, write event, source and gap. Ask, give feedback and retry without blame. Three households report missed visits. The first reports Tuesday. Records and each barrier remain unchecked. No cause is guessed.",
+          "model_response": "```json\n{\n  \"transcript\": \"In triads, write event, source, and gap. Ask, give feedback, and retry without blame. Three households report missed visits. The first reports Tuesday. Records and each barrier remain unchecked. No cause is guessed.\",\n  \"observations\": {\n    \"carole_pronunciation\": \"Not applicable; the name Carole does not appear in this excerpt.\",\n    \"negation\": \"Clear negative expressions audible: 'without blame' (00:06–00:07), 'remain unchecked' (00:15), and 'No cause is guessed' (00:16–00:18).\",\n    \"role_distinctions\": \"A single speaker delivers both the procedural instructions (00:00–00:07) and the scenario prompt (00:08–00:18) with consistent pedagogical delivery, using a brief pause to separate the sections.\",\n    \"ending_completeness\": \"The excerpt concludes cleanly on the final syllable of 'guessed' at ~00:17.6 without abrupt cut-off.\",\n    \"audible_speech\": \"All words are clearly enunciated with standard Philippine English phonological characteristics (e.g., unaspirated stops, clear vowels).\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"Pacing and tone remain uniform with no sudden shifts in pitch, volume, or timbre.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    }
+  ]
+}

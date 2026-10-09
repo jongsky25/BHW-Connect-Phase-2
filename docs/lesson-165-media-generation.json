@@ -1,0 +1,151 @@
+{
+  "generated_date": "2026-10-08T10:21:26.308Z",
+  "source_commit": "312e6b8962fba48800d4878acf8303c45f389163",
+  "owner_review": "pending",
+  "render_input_sha256": "2394f9430902e5703ce76f30f105e7e0854578d8c2e7c3efc8adb3dad33ea67c",
+  "render_cached": true,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 67.736,
+      "beats": [
+        {
+          "zone": "handoff",
+          "index": 0,
+          "text": "Ayon kay Liza, hadlang ang magbabantay sa anak. Iniulat ito ni Gibs sa midwife; hindi pa natiyak ang huling pagpunta. Hiling ang usapan sa iskedyul.",
+          "start_ms": 0,
+          "end_ms": 10080
+        },
+        {
+          "zone": "audience",
+          "index": 1,
+          "text": "Tiniyak ni Gibs ang awtorisadong tatanggap at aprubadong pribadong paraan. Hindi niya ipinadala ang form sa public chat o hindi natiyak na account.",
+          "start_ms": 10380,
+          "end_ms": 19260
+        },
+        {
+          "zone": "meeting",
+          "index": 2,
+          "text": "Sa pulong, pattern at tanong sa iskedyul lamang ang ibinahagi, walang detalyeng makakakilala sa pamilya. Hiwalay ang indibidwal na ulat.",
+          "start_ms": 19560,
+          "end_ms": 29880
+        },
+        {
+          "zone": "confirm-next-step",
+          "index": 3,
+          "text": "Nagtanong ang midwife tungkol sa petsa. “Hindi pa tiyak,” sagot ni Gibs. Natanggap niya ang ulat at pumayag na tingnan ang iskedyul at sumagot bukas.",
+          "start_ms": 30180,
+          "end_ms": 40220
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Sa triads, iikot ang BHW, midwife at observer. Iulat, sagutin ang paglilinaw at kumpirmahin ang gagawa at paraan ng follow-up; ulitin ang kulang.",
+          "start_ms": 40520,
+          "end_ms": 52960
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Tinanggap ng chair ang buod at pumayag na itanong ang iskedyul sa health team. Kinumpirma ni Gibs ang follow-up; kay Liza, natiyak lamang ang ipapaliwanag. Walang pangakong appointment o childcare.",
+          "start_ms": 53260,
+          "end_ms": 67660
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-handoff-gemini-fil-fef85fe5bc6d.mp4",
+        "content_hash": "fef85fe5bc6de7c7c6152452791e63bbaaba06fffd8aa0a43cedab7b4c550ac6",
+        "duration_s": 69,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-handoff-gemini-fil-ac9da2e11561.vtt",
+          "content_hash": "ac9da2e11561302d59eb40f93224ccfb3a3c1632ff3cdae04a9994ff48a7522f"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-handoff-gemini-fil-f19e0c88ba25-poster.jpg",
+          "content_hash": "f19e0c88ba25752d1ac1a150c5364041b1fc04438ca55bab6a6eec1fe7b0750a"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-handoff-gemini-fil-f19e0c88ba25-poster.jpg",
+        "content_hash": "f19e0c88ba25752d1ac1a150c5364041b1fc04438ca55bab6a6eec1fe7b0750a"
+      },
+      "render_reused_exact_input_hash": true
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 60.082,
+      "beats": [
+        {
+          "zone": "handoff",
+          "index": 0,
+          "text": "Liza reports a childcare barrier. Gibs tells the midwife; the last attendance date is unverified. A scheduling conversation is requested.",
+          "start_ms": 0,
+          "end_ms": 10000
+        },
+        {
+          "zone": "audience",
+          "index": 1,
+          "text": "Gibs verifies the authorized recipient and approved private method. He does not send the form to public chat or an unverified account.",
+          "start_ms": 10300,
+          "end_ms": 19020
+        },
+        {
+          "zone": "meeting",
+          "index": 2,
+          "text": "At the meeting, he shares a pattern and scheduling question without identifying households. The individual report stays separate.",
+          "start_ms": 19320,
+          "end_ms": 27480
+        },
+        {
+          "zone": "confirm-next-step",
+          "index": 3,
+          "text": "The midwife asks about the date. “Not yet verified,” Gibs replies. She acknowledges receipt and agrees to check options and reply tomorrow.",
+          "start_ms": 27780,
+          "end_ms": 36660
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Triads rotate BHW, midwife and observer roles. Report, clarify and confirm the owner and follow-up method; retry the missing part.",
+          "start_ms": 36960,
+          "end_ms": 47040
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "The chair acknowledges the summary and agrees to ask the health team about scheduling. Gibs confirms follow-up and tells Liza only verified information. No appointment or childcare is promised.",
+          "start_ms": 47340,
+          "end_ms": 60020
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-handoff-gemini-en-f51d6d447773.mp4",
+        "content_hash": "f51d6d44777363401eddab77c6105ed6452679c6f3bc944abede2d2f6a78909b",
+        "duration_s": 61,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-handoff-gemini-en-5873b2de3fb8.vtt",
+          "content_hash": "5873b2de3fb860bce419b825e46f521927c16860bd1f70fe713e9808e04607d0"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-handoff-gemini-en-0fa496d031e4-poster.jpg",
+          "content_hash": "0fa496d031e45ab954aa4e2e46e0d5fa7d002380bcd4109a7ef586d65c856bf7"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-handoff-gemini-en-0fa496d031e4-poster.jpg",
+        "content_hash": "0fa496d031e45ab954aa4e2e46e0d5fa7d002380bcd4109a7ef586d65c856bf7"
+      },
+      "render_reused_exact_input_hash": true
+    }
+  ]
+}

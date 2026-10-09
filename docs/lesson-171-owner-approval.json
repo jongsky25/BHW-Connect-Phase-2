@@ -1,0 +1,141 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "interpreted_authorization": "merge and deploy to live",
+  "approved_at": "2026-10-09T02:39:26.827911+00:00",
+  "reviewed_head": "1205456b2f8d45e5637ff5962e3fdc7130377f12",
+  "reviewed_pr": 271,
+  "reviewed_package_sha256": "4991d6cad2363c2e3d8281bf5692a00147638d13448bb353af837ef56fd2595a",
+  "lesson_keys": [
+    "problem-define"
+  ],
+  "scope": "Only lesson 1.7.1. Preserve sibling pointers, identities, progress, assessments and flags; no migrations or KB publication.",
+  "approval_basis": "Explicit owner instruction in this chat. Retained audio findings are not relabeled as independent human listening or SME signoff.",
+  "promoted_asset_statuses": 7,
+  "reviewed_proposal_receipt_sha256": "30d6a15243cc1e1f9c00ffde9e78c6b196aac8af338f8b60f49397967d48cec6",
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"problem-define\",\n    \"position\": 0,\n    \"title_fil\": \"Linawin ang problema\",\n    \"title_en\": \"Define the problem\",\n    \"objectives_fil\": [\n      \"Mula sa missed-visit case, isulat ang problemang may tiyak na pangyayari, pinagmulan at impormasyong kulang, nang walang paninisi.\"\n    ],\n    \"objectives_en\": [\n      \"Given the missed-visit case, write a problem statement with a specific event, source and information gap, without blame.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"missed-visits\",\n      \"concept_ids\": [\n        \"m7.define\"\n      ],\n      \"asset_ids\": [\n        \"define-missed-visits\"\n      ],\n      \"takeaway_fil\": \"Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.\",\n      \"takeaway_en\": \"Describe the event, source and gap without blame.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"worked-example\",\n      \"concept_ids\": [\n        \"m7.define\"\n      ],\n      \"asset_ids\": [\n        \"define-worked-example\"\n      ],\n      \"takeaway_fil\": \"Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.\",\n      \"takeaway_en\": \"Describe the event, source and gap without blame.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"source-gap\",\n      \"concept_ids\": [\n        \"m7.define\"\n      ],\n      \"asset_ids\": [\n        \"define-source-gap\"\n      ],\n      \"takeaway_fil\": \"Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.\",\n      \"takeaway_en\": \"Describe the event, source and gap without blame.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"resident-perspective\",\n      \"concept_ids\": [\n        \"m7.define\"\n      ],\n      \"asset_ids\": [\n        \"define-resident-perspective\"\n      ],\n      \"takeaway_fil\": \"Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.\",\n      \"takeaway_en\": \"Describe the event, source and gap without blame.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m7.define\"\n      ],\n      \"asset_ids\": [\n        \"define-practice\"\n      ],\n      \"takeaway_fil\": \"Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.\",\n      \"takeaway_en\": \"Describe the event, source and gap without blame.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m7.define\"\n      ],\n      \"asset_ids\": [\n        \"define-check\"\n      ],\n      \"takeaway_fil\": \"Ilarawan ang pangyayari, pinagmulan at kulang nang walang paninisi.\",\n      \"takeaway_en\": \"Describe the event, source and gap without blame.\",\n      \"check\": {\n        \"prompt_fil\": \"Aling pahayag ang magandang simula ng pagsisiyasat?\",\n        \"prompt_en\": \"Which statement is a useful starting point for investigation?\",\n        \"options\": [\n          {\n            \"fil\": \"“Kailangan ng bagong poster ang lahat.”\",\n            \"en\": \"“Everyone needs a new poster.”\"\n          },\n          {\n            \"fil\": \"“Ayaw talaga nilang gumaling.”\",\n            \"en\": \"“They do not want to get well.”\"\n          },\n          {\n            \"fil\": \"“Tatlong pamilya ang hindi nakapunta; alamin ang hadlang sa bawat isa.”\",\n            \"en\": \"“Three households missed visits; check each household’s barrier.”\"\n          }\n        ],\n        \"correct_option_index\": 2,\n        \"feedback_fil\": \"Una: ang bagong poster ay solusyong hindi pa nasusuri, hindi paglalarawan ng problema. Ikalawa: ang “ayaw gumaling” ay husga sa motibo, hindi obserbasyon. Ikatlo: tiyak ang pangyayari at bukas sa pagsisiyasat ng hadlang; ito ang angkop na simula. Idagdag ang pinagmulan at kulang. Iwinastong pahayag: ayon sa direktang ulat ng tatlong kabahayan kay Carole, hindi sila nakapunta sa napagkasunduang pagbisita. Itinama ng unang residente ang iniulat na araw sa Martes. Hindi pa nasusuri ang attendance record, eksaktong petsa at hadlang ng bawat isa. Kinumpirma lamang ng residente ang buod ng sarili niyang sinabi, hindi ang attendance o pagkansela. Walang hinulaang sanhi o ipinangakong solusyon.\",\n        \"feedback_en\": \"First: a new poster is an untested solution, not a problem description. Second: “do not want to get well” judges motivation rather than observing events. Third: it names a specific event and invites investigation of the barrier; this is the useful starting point. Add source and gap. Corrected statement: according to three households’ direct reports to Carole, they missed agreed visits. The first resident corrected the reported day to Tuesday. The attendance record, exact dates and each household’s barrier remain unchecked. The resident confirmed only the summary of their own report, not attendance or cancellation. No cause is guessed or solution promised.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m7.define\",\n      \"read_ids\": [\n        \"missed-visits\",\n        \"worked-example\",\n        \"source-gap\",\n        \"resident-perspective\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-missed-visits\",\n        \"slide-worked-example\",\n        \"slide-source-gap\",\n        \"slide-resident-perspective\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"deck\",\n        \"tesda\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        29\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        19,\n        20,\n        21\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"deck\",\n      \"title\": \"DOH Day1 Part1 teaching deck, physical PDF pages59–66\",\n      \"pdf_pages\": [\n        59,\n        60,\n        61,\n        62,\n        63,\n        64,\n        65,\n        66\n      ],\n      \"url\": \"https://drive.google.com/file/d/1ZDIJiTltEzJVFcy-XSA0NivWNvfAKfhY/view\"\n    },\n    {\n      \"id\": \"tesda\",\n      \"title\": \"TESDA Barangay Health Services NCII Revision01 (2019), unit400311212\",\n      \"pdf_pages\": [\n        15\n      ],\n      \"url\": \"https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"define-missed-visits\",\n      \"path\": \"/training/bhw-1-7/define-missed-visits-e5e97739a8c7.png\",\n      \"content_hash\": \"e5e97739a8c7b86fc351c5c9b8c0ec80ad89ee255990c73bad4d45948a06f819\",\n      \"alt_fil\": \"Si Carole: Tatlong pamilya, ano ang nangyari?. Kathang-isip na pagsasanay.\",\n      \"alt_en\": \"Carole: Three households: what happened?. Fictional practice.\",\n      \"caption_fil\": \"Tatlong ulat; wala pang attendance record. Hindi pa tiyak ang petsa o hadlang sa bawat pamilya.\",\n      \"caption_en\": \"Three reports; no attendance record yet. Each household’s date and barrier remain uncertain.\",\n      \"provenance\": \"Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. e5e97739a8c7b86fc351c5c9b8c0ec80ad89ee255990c73bad4d45948a06f819\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"define-worked-example\",\n      \"path\": \"/training/bhw-1-7/define-worked-example-c6fe62ee1a9c.png\",\n      \"content_hash\": \"c6fe62ee1a9c648319371af52589fc11d37e67e6685ad958df6c0baa3e7ce741\",\n      \"alt_fil\": \"Si Carole: Ihiwalay ang problema sa hula. Kathang-isip na pagsasanay.\",\n      \"alt_en\": \"Carole: Separate the problem from a guess. Fictional practice.\",\n      \"caption_fil\": \"Pangyayari: hindi nakapunta. Hula: ayaw pumunta. Solusyon: poster.\",\n      \"caption_en\": \"Event: missed visits. Guess: unwilling to attend. Solution: poster.\",\n      \"provenance\": \"Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. c6fe62ee1a9c648319371af52589fc11d37e67e6685ad958df6c0baa3e7ce741\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"define-source-gap\",\n      \"path\": \"/training/bhw-1-7/define-source-gap-448fed1ca7d4.png\",\n      \"content_hash\": \"448fed1ca7d4046e71a2e8cef65a17938f5b7d2c32a58a2e0470571e92bc5d1b\",\n      \"alt_fil\": \"Si Carole: Kaninong ulat, anong kulang?. Kathang-isip na pagsasanay.\",\n      \"alt_en\": \"Carole: Whose report, which gap?. Fictional practice.\",\n      \"caption_fil\": \"Pangyayari at saklaw → pinagmulan → isang malinaw na kulang.\",\n      \"caption_en\": \"Event and scope → source → one clear information gap.\",\n      \"provenance\": \"Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. 448fed1ca7d4046e71a2e8cef65a17938f5b7d2c32a58a2e0470571e92bc5d1b\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"define-resident-perspective\",\n      \"path\": \"/training/bhw-1-7/define-resident-perspective-da8342dfebfd.png\",\n      \"content_hash\": \"da8342dfebfdb7d1a6dc689e4c1748069c8f0c37f694b0f1fcef1135c9883366\",\n      \"alt_fil\": \"Si Carole: Bigyan ng pagkakataong magwasto. Kathang-isip na pagsasanay.\",\n      \"alt_en\": \"Carole: Let the resident correct the account. Fictional practice.\",\n      \"caption_fil\": \"Iwasto ang iniulat na petsa; hindi pa kumpirmado ang rekord.\",\n      \"caption_en\": \"Correct the reported date; the record remains unconfirmed.\",\n      \"provenance\": \"Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. da8342dfebfdb7d1a6dc689e4c1748069c8f0c37f694b0f1fcef1135c9883366\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"define-practice\",\n      \"path\": \"/training/bhw-1-7/define-practice-058d2aefe3ce.png\",\n      \"content_hash\": \"058d2aefe3cea78015e268fb3a4c9c3a5274b3ae1864c31da37260c9c15e10eb\",\n      \"alt_fil\": \"Si Carole: Subukan, mag-feedback, saka ulitin. Kathang-isip na pagsasanay.\",\n      \"alt_en\": \"Carole: Try, give feedback, then retry. Fictional practice.\",\n      \"caption_fil\": \"Isulat → salungguhitan ang pangyayari/pinagmulan/kulang → feedback → ikalawang pagtatangka.\",\n      \"caption_en\": \"Write → underline event/source/gap → feedback → second attempt.\",\n      \"provenance\": \"Built-in imagegen, pinned Carole and resident-perspective references; revised action scene. No real records. 058d2aefe3cea78015e268fb3a4c9c3a5274b3ae1864c31da37260c9c15e10eb\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"define-check\",\n      \"path\": \"/training/bhw-1-7/define-check-4e11ff99283b.png\",\n      \"content_hash\": \"4e11ff99283b80894c680ce100db3bc15e7ef9ea781dc6f093593a9d574a022e\",\n      \"alt_fil\": \"Si Carole: Piliin ang susunod na hakbang. Kathang-isip na pagsasanay.\",\n      \"alt_en\": \"Carole: Choose the next step. Fictional practice.\",\n      \"caption_fil\": \"Piliin muna; pagkatapos, ihambing ang tatlong paliwanag at iwinastong pahayag.\",\n      \"caption_en\": \"Choose first; then compare all three rationales and the corrected statement.\",\n      \"provenance\": \"Built-in imagegen, pinned Carole and resident-perspective references; revised action scene. No real records. 4e11ff99283b80894c680ce100db3bc15e7ef9ea781dc6f093593a9d574a022e\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"problem-define-story\",\n      \"alt_fil\": \"Anim na narrated beat: inihihiwalay ni Carole ang mga pinagmulan at itinatala ang paglilinaw ng residente nang walang hula.\",\n      \"alt_en\": \"Six narrated beats: Carole separates sources and records resident’s clarification without guessing.\",\n      \"caption_fil\": \"Iwinastong pahayag na may pinagmulan at tapat na kulang.\",\n      \"caption_en\": \"A corrected problem statement with a source and honest unknowns.\",\n      \"provenance\": \"Lesson 1.7.1 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-7/problem-define-gemini-fil-6ef3b510d796.mp4\",\n          \"content_hash\": \"6ef3b510d796cd5a7140aba5c70966f358bdcf401b9fb5c81bd456d392f3b09d\",\n          \"duration_s\": 54,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-7/problem-define-gemini-fil-c2bae19f5420.vtt\",\n            \"content_hash\": \"c2bae19f5420159e23efada9b214d0a9166b0c9bdbfdab0f3bb9ac5359d17bf2\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg\",\n            \"content_hash\": \"790c964b21194eab42332e3c7158ad5e3c137716d78f4ca5ee0ec65c0992fa5d\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-7/problem-define-gemini-en-f62a9bc61edd.mp4\",\n          \"content_hash\": \"f62a9bc61edd3d945a1827aef595a0a183e6b3f2fac8c008e6e5007c5a5b43ca\",\n          \"duration_s\": 51,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-7/problem-define-gemini-en-9d90d5de99e2.vtt\",\n            \"content_hash\": \"9d90d5de99e213de051304b77dfd7b6a20993cadf7591652889b8222d1676c4b\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-7/problem-define-gemini-en-289daa76d962-poster.jpg\",\n            \"content_hash\": \"289daa76d96201be1de4da65ee93020bd39adb866dbcd7ef075f6f1d3eff315f\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg\",\n      \"content_hash\": \"790c964b21194eab42332e3c7158ad5e3c137716d78f4ca5ee0ec65c0992fa5d\"\n    }\n  ],\n  \"featured_asset_id\": \"problem-define-story\"\n}\n",
+  "reviewed_lesson_sha256": "db26807f05cd6a8422b9402b96acad94c2fa8d8fc6cb183243e45cd4b4264d4a",
+  "approved_source_sha256": {
+    ".github/workflows/ci.yml": "bdf212a645317bb0086c93871e41c551014a50a099a3fc361d57680237065e6d",
+    ".github/workflows/lesson171-release.yml": "77a812a6646ea7d7bbc1c8ea15d63e77423cf171b2310e862f9cc1792ac9a68b",
+    ".github/workflows/remotion.yml": "7db5fa546e736bdf79ab61f4497e5ed05b71bdadc642ca33d091c545eb652332",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/competency.json": "de00ae3b4f06d066b43e27b38d9983b45fe5440cefc5cd82145ab5e82fb83328",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/facilitator.en.md": "ad8accbac8f812fbb1a1d08c94ad41777fd5f1391dfc93acd9e2fd7f42629ee6",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/facilitator.fil.md": "7729fd62ccf07654f6cfba5e12308b26f5932ca63b3deece83e8696333ad8fe4",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json": "c1925706639f25eb9dc60addddd87b3e92f820253899acd1ac83cf2a6dfd194e",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/read.en.md": "75a947a673bfb42db83b1c65b4e0e367545f6bb5f9f3bd60dbc3a79560194b15",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/read.fil.md": "e66a46f0be2c653e263afb9aac72beb003fc0647fb040a617182296fec8141bc",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/slides.json": "94a69c1856c3ad381ae19bea598e19d57e89474e8b45cc913ef6dbe65d492610",
+    "content/training/day1-basic-competencies/modules/07-problema/module.json": "fd44591a3536adbc103a2db85693276ec1c631e0002b4febe454f7fd548b3d7f",
+    "content/training/day1-basic-competencies/narration.json": "582b69682ecb8694b14d3656a0848534d0436f58ba427c67a967e1ca5305bb9d",
+    "docs/lesson-171-audio-review-notes.json": "ca50eaccad99ed6d4952297ae7a05ce0ae49c90c09c75b4e0534b1aec72987ed",
+    "remotion/src/Root.tsx": "221c426763df442eec557a34cebeaf940382932b4185c1b817681d69fabff974",
+    "remotion/src/problem-define/ProblemDefineStory.tsx": "c1b3f18c8700c31ad4b8e5369b471304eda546661efada893b1aaca2d625a729",
+    "remotion/src/problem-define/narration.ts": "b9f4e1eb08ea99cba1e61c181e551d0005ae28cd7d2ead2edf9eb9e0b4d9b779",
+    "scripts/lesson-171-live-smoke.mjs": "9234ee94d9b59f734d70585d792d8d56643de34c5a9889fe3c179a1f8a2f43c3",
+    "scripts/lesson-171-release-snapshot.mjs": "fe308fb5f905320ed4d3a5deab765759958aa8334131f7f972df0274c843d0bc",
+    "scripts/lib/lesson-165-integration.mjs": "b3bbb30181cf496d53a4b02e20cf35edb5fad7eb1ab4b4e5da3c6629c2a69eb4",
+    "scripts/lib/lesson-171-integration.mjs": "e713449651bc3e3aa8c99054ad292a2fecf332051a6ea4d820af19a7b0420199",
+    "scripts/lib/problem-define-speech.mjs": "df9ad4ab8d2c3ccd06a484519f512c81e6b7e7ced6ba868a9acd1c5eae615eb1",
+    "scripts/lib/reference-narration.mjs": "14f8df35198b76b74d610cf9d506a611b0476bfaff211a71e7f384e8b0f88a51",
+    "scripts/tests/lesson-165-integration.test.mjs": "84e1731f0a81be77db978907c14dcc79d3a34fe845b51a2571e357fb1429b449",
+    "src/components/elearning/reference-lessons.tsx": "b2b24110cf64b584d1d5ceba83448c91ee5db1a579bdf9968dda12f06e6e7e95"
+  },
+  "approved_media": [
+    {
+      "path": "/training/audio/07-problema/problem-define/check.en.8cfaf47e11ab.mp3",
+      "sha256": "cd7baee1dbccf7d6954c99013c36d4402c78473b3274873df47fc655f60aa5b1"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/check.fil.776860028818.mp3",
+      "sha256": "7bd665eb6ceaa84a55cd578530c2d84fb1e11bc577bc9112a99746b9c9f7ce14"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/missed-visits.en.d5e7ed481a0b.mp3",
+      "sha256": "670792075b2dae05fea965a0b9c401c13a85c852a3c135766d9d8db064a9e019"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/missed-visits.fil.3b45b1f9c140.mp3",
+      "sha256": "b85ef3abf1fd9ce2f8bef498a1433f5209bb6c42a7363e4f0c7849c35320e82d"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/practice.en.f6901061a3fc.mp3",
+      "sha256": "a43edd9fb2eac805cc02d34b6010cc3b508a3956dc2ff590fae539e11f63400a"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/practice.fil.3c9319e0f75b.mp3",
+      "sha256": "f0cc908493fae8500eed58c376f60e835b6d55007644a6cccc4f05c2cea0fe6c"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/resident-perspective.en.c271cd1dc9df.mp3",
+      "sha256": "2a856e44920d711db0254c08301044c7ecdd60bb13504798999525e71f3dadb6"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/resident-perspective.fil.0b6bb0cf3f7a.mp3",
+      "sha256": "c9a839fb9edcbf17ed10ffc8b1b424d3391d580c42925bf24cf0c0b95fd39761"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/source-gap.en.de5fe83f87c0.mp3",
+      "sha256": "0c92f54bf981d4461adad9913210b826af5a67b632903c785c701c0e8f24a948"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/source-gap.fil.9005a3f8a01b.mp3",
+      "sha256": "23cb44a39987ff8abb64b60d6c4fc54c1afa3d41f6f446f76157d65e2a55f4dd"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/worked-example.en.1989b4726560.mp3",
+      "sha256": "5a3eb0d95142dec29f919a0c5e24d351fd449696bb7d9017defb6a9c521217e5"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-define/worked-example.fil.9ff9fcfcbeac.mp3",
+      "sha256": "896b05a3f76d79458d746f513e8521d8694bc12eb0faaaa26f27455d17972726"
+    },
+    {
+      "path": "/training/bhw-1-7/define-check-4e11ff99283b.png",
+      "sha256": "4e11ff99283b80894c680ce100db3bc15e7ef9ea781dc6f093593a9d574a022e"
+    },
+    {
+      "path": "/training/bhw-1-7/define-missed-visits-e5e97739a8c7.png",
+      "sha256": "e5e97739a8c7b86fc351c5c9b8c0ec80ad89ee255990c73bad4d45948a06f819"
+    },
+    {
+      "path": "/training/bhw-1-7/define-practice-058d2aefe3ce.png",
+      "sha256": "058d2aefe3cea78015e268fb3a4c9c3a5274b3ae1864c31da37260c9c15e10eb"
+    },
+    {
+      "path": "/training/bhw-1-7/define-resident-perspective-da8342dfebfd.png",
+      "sha256": "da8342dfebfdb7d1a6dc689e4c1748069c8f0c37f694b0f1fcef1135c9883366"
+    },
+    {
+      "path": "/training/bhw-1-7/define-source-gap-448fed1ca7d4.png",
+      "sha256": "448fed1ca7d4046e71a2e8cef65a17938f5b7d2c32a58a2e0470571e92bc5d1b"
+    },
+    {
+      "path": "/training/bhw-1-7/define-worked-example-c6fe62ee1a9c.png",
+      "sha256": "c6fe62ee1a9c648319371af52589fc11d37e67e6685ad958df6c0baa3e7ce741"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-define-gemini-en-289daa76d962-poster.jpg",
+      "sha256": "289daa76d96201be1de4da65ee93020bd39adb866dbcd7ef075f6f1d3eff315f"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-define-gemini-en-9d90d5de99e2.vtt",
+      "sha256": "9d90d5de99e213de051304b77dfd7b6a20993cadf7591652889b8222d1676c4b"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-define-gemini-en-f62a9bc61edd.mp4",
+      "sha256": "f62a9bc61edd3d945a1827aef595a0a183e6b3f2fac8c008e6e5007c5a5b43ca"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-define-gemini-fil-6ef3b510d796.mp4",
+      "sha256": "6ef3b510d796cd5a7140aba5c70966f358bdcf401b9fb5c81bd456d392f3b09d"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg",
+      "sha256": "790c964b21194eab42332e3c7158ad5e3c137716d78f4ca5ee0ec65c0992fa5d"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-define-gemini-fil-c2bae19f5420.vtt",
+      "sha256": "c2bae19f5420159e23efada9b214d0a9166b0c9bdbfdab0f3bb9ac5359d17bf2"
+    }
+  ]
+}
