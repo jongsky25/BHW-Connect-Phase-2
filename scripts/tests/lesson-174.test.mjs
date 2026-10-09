@@ -11,6 +11,12 @@ const bytes=p=>fs.readFileSync(p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('s
 const baseline=j('docs/lesson-174-handoff-baseline.json'),captured=j('docs/lesson-174-implementation-baseline.json');
 const lesson=j(leaf+'lesson.json');
 describe('Carole action-plan draft',()=>{
+ it('appends only the action-plan composition pair after the integrated main registry',()=>{
+  const p='remotion/src/Root.tsx',source=bytes(p).toString();
+  const prior=source.replace(/^import \{ProblemActionPlanStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`problem-action-plan-[\s\S]+?      \)\)\}\n/,'');
+  expect(prior).toBe(beforeProposed174(p).toString());
+  expect(source).toContain('ProblemActionPlanStoryFil');expect(source).toContain('ProblemActionPlanStoryEn');
+ });
  it('matches the seven-file pinned main baseline and preserves manifest, anchors, concepts and original decision',()=>{
   for(const [name,h]of Object.entries(baseline.target_sha256))expect(captured.files[leaf+name],name).toBe(h);
   expect(lesson.manifest).toEqual(baseline.manifest);

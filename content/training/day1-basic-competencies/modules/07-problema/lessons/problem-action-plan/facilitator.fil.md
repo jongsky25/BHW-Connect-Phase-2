@@ -6,7 +6,7 @@ Ginawang adaptasyon kay Carole, gamit ang kathang-isip na datos. Hindi ito sipi 
 
 ## [time-materials] Oras at gamit
 
-50 minutong guided practice: 6 pambungad + 10 demo + 18 pagtatangka/feedback/retry + 10 review + 6 paglalapat. Panatilihin ang 35 + 50 + 45 + 50 = 180 minuto sa module 1.7. Hindi pa nasusukat ang salaysay at sariling pag-aaral; walang audio-based estimate. Dagdag ang opsyonal na kuwento at hindi ito assessment.
+50 minutong guided practice: 6 pambungad + 10 demo + 18 pagtatangka/feedback/retry + 10 review + 6 paglalapat. Panatilihin ang 35 + 50 + 45 + 50 = 180 minuto sa module 1.7. Ginawang pagtataya ng sariling pag-aaral: 13–16 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 512.34 segundo sa English at 569.97 segundo sa Filipino; maglaan ng 3–6 minuto para sa check, maikling pagsasanay at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit. Dagdag ang opsyonal na kuwento at hindi ito assessment.
 
 Para sa 30: sampung triad, scenario/katuwang cards, observer checklist, pitong-bahaging plano at review aid, papel at panulat. Kathang-isip na bilang lamang. I-print ang apat na A4 pahina sa bawat wika; ang ikatlo ay one-page blank task aid.
 

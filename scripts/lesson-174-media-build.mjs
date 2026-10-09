@@ -91,4 +91,5 @@ if(!pending.length){
 }
 save('docs/lesson-174-media-generation.json',{generated_date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),owner_review:'pending',render_input_sha256:renderInputHash,render_cached:cached,target_read_tracks:12,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});
 console.log('Completed draft lesson media; only target recordings changed, with historical media retained.');
+run('scripts/lesson-174-encoded-posters.mjs');
 if(pending.length)process.exitCode=1;

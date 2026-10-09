@@ -53,11 +53,20 @@ jobs:
             snapshot=base/'lesson-174-published-snapshot.json'
             if snapshot.exists(): shutil.copyfile(snapshot,root/snapshot.name)
           PY
+      - name: Fresh bounded read-only published-content snapshot
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-174-published-snapshot.mjs
       - name: Confirm exact-head normal CI and every registry render
         env:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/lesson-174-wait-ci.mjs
+      - run: python3 -m pip install PyMuPDF==1.26.5
       - run: node scripts/lesson-174-print-kit.mjs
+      - run: python3 scripts/lesson-174-print-verify.py
+      - run: node scripts/lesson-174-media-verify.mjs
       - run: node scripts/lesson-174-review-build.mjs
       - run: node scripts/lesson-174-full-browser-verify.mjs
       - run: node scripts/lesson-174-review-verify.mjs

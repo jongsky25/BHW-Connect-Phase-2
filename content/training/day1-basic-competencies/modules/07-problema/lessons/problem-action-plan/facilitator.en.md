@@ -6,7 +6,7 @@ This is an authored Carole adaptation using fictional facts; no source quotation
 
 ## [time-materials] Time and materials
 
-50 facilitated minutes: 6 opening + 10 demonstration + 18 rotating attempts/feedback/retry + 10 review debrief + 6 transfer. Preserve 35 + 50 + 45 + 50 = 180 minutes for module 1.7. Narration duration and independent-study estimate remain unmeasured; no audio-based estimate is claimed. Optional story viewing is additional and not assessment.
+50 facilitated minutes: 6 opening + 10 demonstration + 18 rotating attempts/feedback/retry + 10 review debrief + 6 transfer. Preserve 35 + 50 + 45 + 50 = 180 minutes for module 1.7. Authored independent estimate: 13–16 minutes, using the longer language track. Actual six-screen narration is 512.34 seconds in English and 569.97 seconds in Filipino; allow 3–6 minutes for the check, brief rehearsal and reflection. Optional story or replay is additional. Optional story viewing is additional and not assessment.
 
 For 30 learners: ten triads, each with scenario/partner cards, observer checklist, seven-field plan and review aid; paper and pens. Use only fictional household counts. Print the four-page A4 kit in both languages; its third page is a one-page blank task aid.
 

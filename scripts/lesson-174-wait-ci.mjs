@@ -1,6 +1,6 @@
 // Wait for the complete normal CI and Remotion regressions at this exact draft SHA.
 import fs from 'node:fs';import {execFileSync} from 'node:child_process';
-// Reconciled main has 78 compositions; append this target pair.
+// Reconciled approved main has 86 compositions; append this target pair.
 const registryCount=88;
 const sha=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),deadline=Date.now()+30*60*1000;
 if(!process.env.GH_TOKEN)throw Error('Read-only Actions token required');

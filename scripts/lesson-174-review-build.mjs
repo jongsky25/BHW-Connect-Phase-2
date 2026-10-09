@@ -19,6 +19,9 @@ const usedAssetIds=new Set(lesson.revision.read_sections.flatMap(s=>s.asset_ids)
 for(const art of lesson.revision.assets){if(!usedAssetIds.has(art.id))continue;art.path=embed(art.path);for(const v of Object.values(art.videos??{})){v.path=embed(v.path);if(v.poster)v.poster.path=embed(v.poster.path);if(v.captions)v.captions.path=embed(v.captions.path);}}
 const guides=Object.fromEntries(['fil','en'].map(l=>[l,fs.readFileSync(root+'/'+leaf+'facilitator.'+l+'.md','utf8')+'\n\n'+fs.readFileSync(root+'/docs/lesson-174-practice-kit.'+l+'.md','utf8')]));
 const proof=Object.fromEntries(['source-audit','illustration-review','draft-status','media-generation','audio-review','audio-focus','audio-review-notes','evidence-origins'].filter(n=>fs.existsSync(root+'/docs/lesson-174-'+n+'.json')).map(n=>[n,JSON.parse(fs.readFileSync(root+'/docs/lesson-174-'+n+'.json'))]));
+for(const [name,file]of [['exact-head-CI','lesson-174-final-ci.json'],['media-byte-verification','lesson-174-media-verification.json']]){
+ const p=root+'/.preview/lesson174-deliverables/'+file;if(fs.existsSync(p))proof[name]=JSON.parse(fs.readFileSync(p));
+}
 const oldLesson=JSON.parse(fs.readFileSync(root+'/'+leaf+'lesson.json'));
 const old_resume_concepts=Object.fromEntries(oldLesson.sections.map(s=>[s.id,s.concept_ids[0]]));
 const indicator=JSON.parse(fs.readFileSync(root+'/'+leaf+'competency.json'));

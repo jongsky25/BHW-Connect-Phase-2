@@ -254,6 +254,46 @@
       "caption_en": "Carole returns a provisional seven-row plan to partners with a separate pending marker. Fictional adaptation; draft.",
       "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.",
       "review_status": "draft"
+    },
+    {
+      "id": "problem-action-plan-story",
+      "alt_fil": "Anim na beat: inihahambing ni Carole ang solusyon, humihingi ng kasunduan at nirerebisa ang provisional na plano.",
+      "alt_en": "Six narrated beats: Carole compares solutions, seeks agreement and revises a provisional plan.",
+      "caption_fil": "Tapat na plano, hiwalay na kasunduan at review ng resulta.",
+      "caption_en": "An honest plan, separate agreement and outcome review.",
+      "provenance": "Lesson 1.7.4 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-7/problem-action-plan-gemini-fil-62952a68d610.mp4",
+          "content_hash": "62952a68d610dd1c63f9e52e2ad05d01b0e20249f7b48e1b75b2c6d7b14452da",
+          "duration_s": 75,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-action-plan-gemini-fil-6d84ecc5a6c1.vtt",
+            "content_hash": "6d84ecc5a6c15b25f4e80b200559eb86bb42beb4d47aa38d83af7ca749cf96aa"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg",
+            "content_hash": "50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-7/problem-action-plan-gemini-en-8cab3652ce1a.mp4",
+          "content_hash": "8cab3652ce1a41e1ea028bdf32f79606c2b19305c5cafe9520268b85dceb4e3a",
+          "duration_s": 70,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-action-plan-gemini-en-f6f022e72fd5.vtt",
+            "content_hash": "f6f022e72fd5634d591cbe1fe8d61294e4228b3fc5b1718b698a83083498723c"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-action-plan-encoded-final-en-658845c576fb.jpg",
+            "content_hash": "658845c576fb6a15c4c7730f29415e8327da89bb7e6b0d8b818408f775bbe70d"
+          }
+        }
+      },
+      "path": "/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg",
+      "content_hash": "50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be"
     }
-  ]
+  ],
+  "featured_asset_id": "problem-action-plan-story"
 }
