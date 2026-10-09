@@ -51,13 +51,14 @@ try{
  }
  for(const lang of ['fil','en'])for(const width of [1280,390]){
   const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();await page.goto('http://127.0.0.1:4179/?lang='+lang);
+  await page.getByRole('button',{name:'Facilitator guide',exact:true}).click();assert((await page.locator('article section div').nth(1).innerText()).length>100);assert((await page.locator('article section h2').nth(1).innerText()).length<120);assert((await page.locator('article').innerText()).includes('7–10'));await page.getByRole('button',{name:'Lesson',exact:true}).click();
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
   await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();
   const dialog=page.getByRole('dialog');await dialog.waitFor();assert(await dialog.locator('img').first().isVisible());assert.equal(await page.locator('audio').count(),1);
   await dialog.getByRole('button',{name:lang==='en'?'Close':'Isara',exact:true}).click();await dialog.waitFor({state:'hidden'});await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.currentTime>0;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
-  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));report.cases.push({language:lang,width,mode_switch_pauses:true,language_switch_pauses:true,fullscreen_picture:true,single_player:true,no_horizontal_overflow:true});await context.close();
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));report.cases.push({language:lang,width,private_guide_headings_and_body_readable:true,mode_switch_pauses:true,language_switch_pauses:true,fullscreen_picture:true,single_player:true,no_horizontal_overflow:true});await context.close();
  }
  assert.equal(report.errors.length,0);report.status='passed';report.actual_case_count=report.cases.length;save();
 }catch(error){report.status='failed';report.error=String(error.stack??error);save();throw error;}finally{await browser.close();await new Promise(r=>server.close(r));}
