@@ -1,15 +1,16 @@
+import {lesson164View} from '../lib/lesson-164-integration.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {communicationView} from '../lib/communication-integration.mjs';
-const json=p=>JSON.parse(fs.readFileSync(p));
+const json=p=>JSON.parse(lesson164View(p,'approvedMain'));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 describe('approved 1.6.2 and 1.6.3 integration',()=>{
  it('rejects any unpinned integrated successor and validates both immutable views',()=>{
   const r=json('docs/lesson-163-integration-receipt.json');
   for(const [p,e] of Object.entries(r.files)){
-   expect(sha(fs.readFileSync(p))).toBe(e.integrated_sha256);
+   expect(sha(lesson164View(p,'approvedMain'))).toBe(e.integrated_sha256);
    for(const side of ['reviewed163','approved162'])expect(sha(communicationView(p,side))).toBe(e[side+'_sha256']);
    expect(()=>communicationView(p,'reviewed163',Buffer.from('unapproved'))).toThrow('Unpinned integrated successor');
   }
@@ -21,7 +22,7 @@ describe('approved 1.6.2 and 1.6.3 integration',()=>{
    const source=key==='communication-explain'?old163:old162;
    expect(m.lessons[key]).toEqual(source.lessons[key]);expect(m.history[key]).toEqual(source.history[key]);
   }
-  const source=fs.readFileSync('remotion/src/Root.tsx','utf8');
+  const source=lesson164View('remotion/src/Root.tsx','approvedMain').toString();
   const prior=source.replace(/^import \{CommunicationExplainStory[^\n]+\n/m,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`communication-explain-[\s\S]+?      \)\)\}\n/,'');
   expect(prior).toBe(communicationView('remotion/src/Root.tsx','approved162').toString());
  });
@@ -35,7 +36,7 @@ describe('approved 1.6.2 and 1.6.3 integration',()=>{
    asset.review_status=original.assets[i].review_status;
   }
   expect(promoted).toBe(7);expect(current).toEqual(original);
-  for(const [file,h] of Object.entries(a.approved_source_sha256))expect(sha(fs.readFileSync(file))).toBe(h);
+  for(const [file,h] of Object.entries(a.approved_source_sha256))expect(sha(lesson164View(file,'approvedMain'))).toBe(h);
   for(const media of a.approved_media)expect(sha(fs.readFileSync('public'+media.path))).toBe(media.sha256);
  });
 });

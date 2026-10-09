@@ -1,0 +1,1497 @@
+{
+  "status": "draft",
+  "owner_release_approval": false,
+  "target": "communication-record",
+  "predecessor_sha": "a2aead8a10bcbeb35c87dc58b90b7cee143a3703",
+  "changed_existing_files": {
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/competency.json": {
+      "predecessor_sha256": "6a09475e441c3e8a84885650809263e9bb9309946bee570c45cf61116875bf3c",
+      "proposed_sha256": "b53b7148981b1fa10f75208f1656379fe8f5b87e574550127246df86bbf2f045",
+      "predecessor_utf8": "{\n  \"observation_indicators\": [\n    {\n      \"objective_index\": 0,\n      \"observable_fil\": \"Tamang inihihiwalay ang tatlong uri ng detalye; walang diagnosis o husga; may tiyak na rekord o taong lalapitan para beripikahin.\",\n      \"observable_en\": \"Correctly separates all three kinds of detail, adds no diagnosis or judgment, and names a specific record or person for verification.\",\n      \"not_yet_fil\": \"Isinusulat na tiyak ang hula o opinyon ng kapitbahay.\",\n      \"not_yet_en\": \"Records a guess or the neighbor’s opinion as established fact.\",\n      \"levels\": {\n        \"kaya_na_fil\": \"Tamang inihihiwalay ang tatlong uri ng detalye; walang diagnosis o husga; may tiyak na rekord o taong lalapitan para beripikahin. Nagagawa kahit hindi pinapaalalahanan.\",\n        \"kaya_na_en\": \"Correctly separates all three kinds of detail, adds no diagnosis or judgment, and names a specific record or person for verification. Completes this without prompting.\",\n        \"kailangan_practice_fil\": \"Nakikilala ang sinabi at nakita ngunit walang plano sa kulang; ipatukoy ang rekord o health team member na makatutulong.\",\n        \"kailangan_practice_en\": \"Distinguishes reports and observations but gives no verification plan; ask for the relevant record or health team member.\",\n        \"hindi_pa_fil\": \"Isinusulat na tiyak ang hula o opinyon ng kapitbahay.\",\n        \"hindi_pa_en\": \"Records a guess or the neighbor’s opinion as established fact.\"\n      }\n    }\n  ]\n}\n"
+    },
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.en.md": {
+      "predecessor_sha256": "36fc65b18358cd580809e92317f40892e91232b39964ea98c69103ea2886e30b",
+      "proposed_sha256": "d0bc88e24f6fd8158624957417cc57b8992442cec7a19a6c4cc822461df28357",
+      "predecessor_utf8": "## [purpose] Purpose\n\nFrom conflicting accounts, produce a record separating reports, observations and unconfirmed details, with a way to verify the gap.\n\n## [time-materials] Time and materials\n\n90 minutes of facilitated practice within the subchapter's 8 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare three labeled boxes and the conflicting accounts. Use a sample form only.\n\n## [opening] Opening\n\nThe card is missing and Liza’s account differs from her neighbor’s. Which record fits?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe second record identifies the source and the information gap. The first prioritizes a judgment; the third expands an unverified claim.\n\n## [misconception] Common misconception\n\nRecords a guess or the neighbor’s opinion as established fact. Clear sources and explicit gaps prevent a guess becoming an official record.\n\n## [practice] Practice activity\n\nDraw three boxes: “Reported,” “Observed,” and “Unconfirmed.” Sort Liza’s details. Add: “Verify the date against the authorized record with the midwife.” Ask a partner to check for guesses or diagnoses. Alone, underline each detail’s source. In your next record, mark what remains unconfirmed.\n\n## [answer-key] Answer key\n\n2. “Liza reports a canceled schedule; date to be verified in the record.”\n\nThe second record identifies the source and the information gap. The first prioritizes a judgment; the third expands an unverified claim.\n\n## [observe] Observe\n\nCorrectly separates all three kinds of detail, adds no diagnosis or judgment, and names a specific record or person for verification.\n\nReady: Correctly separates all three kinds of detail, adds no diagnosis or judgment, and names a specific record or person for verification. Completes this without prompting.\n\nNeeds practice: Distinguishes reports and observations but gives no verification plan; ask for the relevant record or health team member.\n\nNot yet: Records a guess or the neighbor’s opinion as established fact.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nDistinguishes reports and observations but gives no verification plan; ask for the relevant record or health team member. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 28; BHW Reference Manual: PDF 18, 19, 30. Teach-back is an instructional addition supported by AHRQ. Verify local referral contacts before delivery. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n"
+    },
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.fil.md": {
+      "predecessor_sha256": "03d2a160e403aa48fb7efe1eb3201cf649ac586916b609c31982db0cd03887b4",
+      "proposed_sha256": "7c2cbb3f3015ce566d1d5440daa1e7a50cca5efebd7a8ed0a7136119bc671594",
+      "predecessor_utf8": "## [purpose] Layunin\n\nMula sa dalawang magkaibang kuwento, gumawa ng tala na hiwalay ang sinabi, nakita at hindi pa natiyak, at tukuyin kung paano beripikahin ang kulang.\n\n## [time-materials] Oras at kagamitan\n\n90 minuto para sa pinadali na pagsasanay. Bahagi ito ng 8 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang tatlong kahon at magkaibang kuwento. Gumamit lamang ng halimbawang form.\n\n## [opening] Pambungad\n\nWala ang card, at hindi magkatugma ang kuwento ni Liza at ng kapitbahay. Aling tala ang angkop?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng ikalawang tala ay may pinagmulan at malinaw na puwang sa impormasyon. Ang una ay inuuna ang husga; ang ikatlo ay nagpapalawak ng hindi pa natiyak na pahayag.\n\n## [misconception] Karaniwang pagkakamali\n\nIsinusulat na tiyak ang hula o opinyon ng kapitbahay. Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.\n\n## [practice] Gawaing pagsasanay\n\nGumawa ng tatlong kahon: “Sinabi,” “Nakita,” at “Hindi pa tiyak.” Ilagay ang detalye ni Liza sa tamang kahon. Idagdag: “Beripikahin ang petsa sa awtorisadong tala kasama ang midwife.” Ipasuri sa kapareha kung may hula o diagnosis. Kung mag-isa, salungguhitan ang pinagmulan ng bawat detalye. Sa susunod na pagtala, markahan ang hindi pa natiyak.\n\n## [answer-key] Susi sa sagot\n\n2. “Ayon kay Liza, kinansela ang schedule; petsa ay ibeberipika sa rekord.”\n\nAng ikalawang tala ay may pinagmulan at malinaw na puwang sa impormasyon. Ang una ay inuuna ang husga; ang ikatlo ay nagpapalawak ng hindi pa natiyak na pahayag.\n\n## [observe] Obserbahan\n\nTamang inihihiwalay ang tatlong uri ng detalye; walang diagnosis o husga; may tiyak na rekord o taong lalapitan para beripikahin.\n\nKaya na: Tamang inihihiwalay ang tatlong uri ng detalye; walang diagnosis o husga; may tiyak na rekord o taong lalapitan para beripikahin. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Nakikilala ang sinabi at nakita ngunit walang plano sa kulang; ipatukoy ang rekord o health team member na makatutulong.\n\nHindi pa: Isinusulat na tiyak ang hula o opinyon ng kapitbahay.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nNakikilala ang sinabi at nakita ngunit walang plano sa kulang; ipatukoy ang rekord o health team member na makatutulong. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 28; BHW Reference Manual: PDF 18, 19, 30. Ang teach-back ay dagdag na paraan ng pagtuturo mula sa AHRQ. Suriin ang mga lokal na referral contact bago gamitin. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n"
+    },
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json": {
+      "predecessor_sha256": "b458750c08da76b6e6b52e5112302669cea70152689498f30ddf569403b3532f",
+      "proposed_sha256": "263f8556df35d60066f69f509f9cb22a8e55493af0feddccd88a5a3e19f227c8",
+      "predecessor_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"communication-record\",\n    \"position\": 3,\n    \"title_fil\": \"Suriin at itala ang impormasyon\",\n    \"title_en\": \"Assess and record information\",\n    \"objectives_fil\": [\n      \"Mula sa dalawang magkaibang kuwento, gumawa ng tala na hiwalay ang sinabi, nakita at hindi pa natiyak, at tukuyin kung paano beripikahin ang kulang.\"\n    ],\n    \"objectives_en\": [\n      \"From conflicting accounts, produce a record separating reports, observations and unconfirmed details, with a way to verify the gap.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"sources\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [\n        \"gibs-portrait\"\n      ],\n      \"takeaway_fil\": \"Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.\",\n      \"takeaway_en\": \"When assessing information, distinguish reports, observations and details still requiring verification.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"conflicting-accounts\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Kapag magkaiba ang kuwento, maglinaw at magberipika bago magpasya.\",\n      \"takeaway_en\": \"When accounts differ, clarify and verify before deciding.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.\",\n      \"takeaway_en\": \"Clear sources and explicit gaps prevent a guess becoming an official record.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.\",\n      \"takeaway_en\": \"Clear sources and explicit gaps prevent a guess becoming an official record.\",\n      \"check\": {\n        \"prompt_fil\": \"Wala ang card, at hindi magkatugma ang kuwento ni Liza at ng kapitbahay. Aling tala ang angkop?\",\n        \"prompt_en\": \"The card is missing and Liza’s account differs from her neighbor’s. Which record fits?\",\n        \"options\": [\n          {\n            \"fil\": \"“Hindi interesado si Liza; ayon sa kapitbahay.”\",\n            \"en\": \"“Liza is not interested, according to the neighbor.”\"\n          },\n          {\n            \"fil\": \"“Ayon kay Liza, kinansela ang schedule; petsa ay ibeberipika sa rekord.”\",\n            \"en\": \"“Liza reports a canceled schedule; date to be verified in the record.”\"\n          },\n          {\n            \"fil\": \"“Kinansela ng health center ang lahat ng appointment.”\",\n            \"en\": \"“The health center canceled every appointment.”\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Ang ikalawang tala ay may pinagmulan at malinaw na puwang sa impormasyon. Ang una ay inuuna ang husga; ang ikatlo ay nagpapalawak ng hindi pa natiyak na pahayag.\",\n        \"feedback_en\": \"The second record identifies the source and the information gap. The first prioritizes a judgment; the third expands an unverified claim.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m6.assess\",\n      \"read_ids\": [\n        \"sources\",\n        \"conflicting-accounts\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-sources\",\n        \"slide-conflicting-accounts\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        28\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        18,\n        19,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"gibs-portrait\",\n      \"path\": \"/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png\",\n      \"content_hash\": \"0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02\",\n      \"alt_fil\": \"Si Gibs, kathang-isip na lalaking BHW, nakasuot ng teal na polo at may nakasarang clipboard.\",\n      \"alt_en\": \"Gibs, a fictional male BHW, wears a teal polo and holds a closed clipboard.\",\n      \"caption_fil\": \"Si Gibs ang BHW sa lahat ng aralin sa 1.6.\",\n      \"caption_en\": \"Gibs is the BHW throughout lessons 1.6.\",\n      \"provenance\": \"New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.\",\n      \"review_status\": \"approved\"\n    }\n  ]\n}\n"
+    },
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.en.md": {
+      "predecessor_sha256": "c0fcc8a88eb01bde9d039b6926688b5d600f38301d977d02da8ff86c4a0245a1",
+      "proposed_sha256": "738d1af5233f31e57f37f6323a323b5f28fb232f493c2bcf33401aad3482b0dc",
+      "predecessor_utf8": "## [sources] Reported, observed, and unconfirmed\n\nBHW Gibs is asking Liza, 29, about a missed health-center visit. Gibs has not yet checked the authorized attendance record.\n\nLiza says no one can stay with her two children. Gibs notices the appointment card is unavailable, but that does not prove there was no appointment. In the notes, separate “Liza reports” from direct observations. Clarify an uncertain date; mark information “not yet confirmed” when a record still needs checking. Assessing information means checking its source and relevance, without assigning a diagnosis or judging the person.\n\n## [conflicting-accounts] When accounts differ\n\nLiza says the appointment was canceled; a neighbor says she was not interested. Do not choose a story because one voice is louder. Ask Liza, check the authorized record and identify the source of each detail. If uncertainty remains, tell the health team. Respecting a person and being careful with evidence can happen together.\n\n## [practice] Try it, then repeat\n\nDraw three boxes: “Reported,” “Observed,” and “Unconfirmed.” Sort Liza’s details. Add: “Verify the date against the authorized record with the midwife.” Ask a partner to check for guesses or diagnoses. Alone, underline each detail’s source. In your next record, mark what remains unconfirmed.\n\n## [check] Choose the next step\n\nChoose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.\n"
+    },
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.fil.md": {
+      "predecessor_sha256": "d60888baf3d0a8b0ebadd3d8184689356d8e6fc1eeae7073692d1a1c71a90ce9",
+      "proposed_sha256": "1d5e8e616d87336b4e94cc5dec2301d2fb8cd97cff17e605cf6928dbe30293f1",
+      "predecessor_utf8": "## [sources] Sinabi, nakita, at hindi pa tiyak\n\nSi Liza, 29, ay kinakausap ni BHW Gibs tungkol sa hindi pagpunta sa health center. Hindi pa nakita ni Gibs ang awtorisadong attendance record.\n\nSinabi ni Liza na walang maiiwan sa dalawang anak. Nakita ni Gibs na wala ang appointment card, ngunit hindi ito patunay na walang appointment. Sa tala, ihiwalay ang “ayon kay Liza” sa sariling obserbasyon. Itanong ang petsang hindi malinaw; markahang “hindi pa nakumpirma” kung kailangan pang tingnan ang rekord. Ang pagsusuri ng impormasyon ay pagtiyak sa pinagmulan at kaugnayan nito, hindi paglalagay ng diagnosis o husga sa tao.\n\n## [conflicting-accounts] Kapag may magkaibang kuwento\n\nSabi ni Liza, kinansela ang schedule; sabi ng kapitbahay, hindi siya interesado. Huwag pumili ng kuwento dahil mas malakas ang boses. Tanungin si Liza, suriin ang awtorisadong tala at itala ang pinagmulan ng bawat detalye. Kung hindi pa malinaw, sabihin iyon sa health team. Ang tiwala sa kausap at pagiging maingat sa ebidensya ay maaaring sabay na gawin.\n\n## [practice] Subukan, saka ulitin\n\nGumawa ng tatlong kahon: “Sinabi,” “Nakita,” at “Hindi pa tiyak.” Ilagay ang detalye ni Liza sa tamang kahon. Idagdag: “Beripikahin ang petsa sa awtorisadong tala kasama ang midwife.” Ipasuri sa kapareha kung may hula o diagnosis. Kung mag-isa, salungguhitan ang pinagmulan ng bawat detalye. Sa susunod na pagtala, markahan ang hindi pa natiyak.\n\n## [check] Piliin ang susunod na hakbang\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.\n"
+    },
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/slides.json": {
+      "predecessor_sha256": "377d2184dcb2da26a56de5e1756301d08a42fae4814a21cf17d6c6fa42159c1f",
+      "proposed_sha256": "9369cf42c7287f31d85ff596a9b1735d8133f86100937596bafa579d884c9f9f",
+      "predecessor_utf8": "[\n  {\n    \"id\": \"slide-sources\",\n    \"concept_ids\": [\n      \"m6.assess\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Sinabi, nakita, at hindi pa tiyak\",\n    \"heading_en\": \"Reported, observed, and unconfirmed\",\n    \"display_fil\": \"Sinabi: walang magbabantay sa anak. Nakita: walang card na maipakita. Hindi pa tiyak: petsa ng huling pagpunta. Ang nawawalang card ay hindi patunay ng hindi pagpunta.\",\n    \"display_en\": \"Reported: no childcare. Observed: no card available. Unconfirmed: last attendance date. A missing card does not prove nonattendance.\",\n    \"asset_ids\": [\n      \"gibs-portrait\"\n    ],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-conflicting-accounts\",\n    \"concept_ids\": [\n      \"m6.assess\"\n    ],\n    \"layout\": \"comparison\",\n    \"heading_fil\": \"Kapag may magkaibang kuwento\",\n    \"heading_en\": \"When accounts differ\",\n    \"display_fil\": \"Sabi ni Liza: kinansela ang schedule. Sabi ng kapitbahay: ayaw niyang pumunta. Itala ang pinagmulan; tanungin si Liza at suriin ang awtorisadong rekord. Iulat kung hindi pa malinaw.\",\n    \"display_en\": \"Liza says the visit was canceled. A neighbor says she did not want to go. Record the sources; ask Liza and check the authorized record. Report any remaining uncertainty.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-practice\",\n    \"concept_ids\": [\n      \"m6.assess\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Subukan, saka ulitin\",\n    \"heading_en\": \"Try it, then repeat\",\n    \"display_fil\": \"Tatlong kahon: sinabi / nakita / hindi pa tiyak. Idagdag kung sino at aling rekord ang makapagpapatunay.\",\n    \"display_en\": \"Three boxes: reported / observed / unconfirmed. Add who and which record can verify the gap.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-check\",\n    \"concept_ids\": [\n      \"m6.assess\"\n    ],\n    \"layout\": \"decision\",\n    \"heading_fil\": \"Piliin ang susunod na hakbang\",\n    \"heading_en\": \"Choose the next step\",\n    \"display_fil\": \"Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.\",\n    \"display_en\": \"Clear sources and explicit gaps prevent a guess becoming an official record.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"Wala ang card, at hindi magkatugma ang kuwento ni Liza at ng kapitbahay. Aling tala ang angkop?\",\n      \"prompt_en\": \"The card is missing and Liza’s account differs from her neighbor’s. Which record fits?\",\n      \"options\": [\n        {\n          \"fil\": \"“Hindi interesado si Liza; ayon sa kapitbahay.”\",\n          \"en\": \"“Liza is not interested, according to the neighbor.”\"\n        },\n        {\n          \"fil\": \"“Ayon kay Liza, kinansela ang schedule; petsa ay ibeberipika sa rekord.”\",\n          \"en\": \"“Liza reports a canceled schedule; date to be verified in the record.”\"\n        },\n        {\n          \"fil\": \"“Kinansela ng health center ang lahat ng appointment.”\",\n          \"en\": \"“The health center canceled every appointment.”\"\n        }\n      ],\n      \"correct_option_index\": 1,\n      \"feedback_fil\": \"Ang ikalawang tala ay may pinagmulan at malinaw na puwang sa impormasyon. Ang una ay inuuna ang husga; ang ikatlo ay nagpapalawak ng hindi pa natiyak na pahayag.\",\n      \"feedback_en\": \"The second record identifies the source and the information gap. The first prioritizes a judgment; the third expands an unverified claim.\"\n    }\n  }\n]\n"
+    },
+    "remotion/src/Root.tsx": {
+      "predecessor_sha256": "d1a3e0a130fc66c114334a13860235e7832adf1f9c8db2fed45ade8117b3bd10",
+      "proposed_sha256": "0655025b49acff0533a9a8bbab2bbe0df245670ea8a26d7ca9c6a30d1cfac237",
+      "predecessor_utf8": "import {CommunicationClarifyStory, calculateCommunicationClarifyMetadata, COMMUNICATION_CLARIFY_FPS, COMMUNICATION_CLARIFY_FALLBACK_DURATION} from \"./communication-clarify/CommunicationClarifyStory\";\nimport {CommunicationListenStory, calculateCommunicationListenMetadata, COMMUNICATION_LISTEN_FPS, COMMUNICATION_LISTEN_FALLBACK_DURATION} from \"./communication-listen/CommunicationListenStory\";\nimport {BhwSelfManagementStory, calculateBhwSelfManagementMetadata, SELF_MANAGEMENT_FPS, SELF_MANAGEMENT_FALLBACK_DURATION} from \"./bhw-self-management/BhwSelfManagementStory\";\nimport {BhwRightContactStory, calculateBhwRightContactMetadata, RIGHT_CONTACT_FPS, RIGHT_CONTACT_FALLBACK_DURATION} from \"./bhw-right-contact/BhwRightContactStory\";\nimport {BhwTeamworkStory, calculateBhwTeamworkMetadata, TEAMWORK_FPS, TEAMWORK_FALLBACK_DURATION} from \"./bhw-teamwork/BhwTeamworkStory\";\nimport {BhwLocalPartnersStory, calculateBhwLocalPartnersMetadata, LOCAL_PARTNERS_FPS, LOCAL_PARTNERS_FALLBACK_DURATION} from \"./bhw-local-partners/BhwLocalPartnersStory\";\nimport {BhwBarangayPartnersStory, calculateBhwBarangayPartnersMetadata, BARANGAY_PARTNERS_FPS, BARANGAY_PARTNERS_FALLBACK_DURATION} from \"./bhw-barangay-partners/BhwBarangayPartnersStory\";\nimport {BhwRelationshipsStory, calculateBhwRelationshipsMetadata, RELATIONSHIPS_FPS, RELATIONSHIPS_FALLBACK_DURATION} from \"./bhw-relationships/BhwRelationshipsStory\";\nimport {BhwFollowUpStory, calculateBhwFollowUpMetadata, FOLLOW_UP_FPS, FOLLOW_UP_FALLBACK_DURATION} from \"./bhw-follow-up/BhwFollowUpStory\";\nimport {BhwAccreditationStory, calculateBhwAccreditationMetadata, ACCREDITATION_FPS, ACCREDITATION_FALLBACK_DURATION} from \"./bhw-accreditation/BhwAccreditationStory\";\nimport {BhwEligibilityStory, calculateBhwEligibilityMetadata, ELIGIBILITY_FPS, ELIGIBILITY_FALLBACK_DURATION} from \"./bhw-eligibility/BhwEligibilityStory\";\nimport {BhwBenefitsStory, calculateBhwBenefitsMetadata, BENEFITS_FPS, BENEFITS_FALLBACK_DURATION} from \"./bhw-benefits/BhwBenefitsStory\";\nimport {BhwLegalRoleStory, calculateBhwLegalRoleMetadata, LEGAL_ROLE_FPS, LEGAL_ROLE_FALLBACK_DURATION} from \"./bhw-legal-role/BhwLegalRoleStory\";\nimport {BhsImprovementStory, calculateBhsImprovementMetadata, IMPROVEMENT_FPS, IMPROVEMENT_FALLBACK_DURATION} from \"./bhs-improvement/BhsImprovementStory\";\nimport {BhsResourcesStory, calculateBhsResourcesMetadata, RESOURCES_FPS, RESOURCES_FALLBACK_DURATION} from \"./bhs-resources/BhsResourcesStory\";\nimport {BhsDeclineStory, calculateBhsDeclineMetadata, BHS_DECLINE_FPS, BHS_DECLINE_FALLBACK_DURATION} from \"./bhs-decline/BhsDeclineStory\";\nimport {BhsPromotionsStory, calculateBhsPromotionsMetadata, BHS_PROMOTIONS_FPS, BHS_PROMOTIONS_FALLBACK_DURATION} from \"./bhs-promotions/BhsPromotionsStory\";\nimport {LocalSystemStory, calculateLocalSystemMetadata, LOCAL_SYSTEM_FPS, LOCAL_SYSTEM_FALLBACK_DURATION} from \"./uhc-local-system/LocalSystemStory\";\nimport \"./index.css\";\nimport {EnvironmentStory, calculateEnvironmentMetadata, ENVIRONMENT_FPS, ENVIRONMENT_FALLBACK_DURATION} from \"./bhs-support-environment/EnvironmentStory\";\nimport { ImprovementStory, calculateImprovementMetadata, UHC_IMPROVEMENT_FPS, UHC_IMPROVEMENT_FALLBACK_DURATION } from \"./uhc-improvement/ImprovementStory\";\nimport { RolesApplicationStory, calculateRolesApplicationMetadata, ROLES_APPLICATION_FPS, ROLES_APPLICATION_FALLBACK_DURATION } from \"./roles-application/RolesApplicationStory\";\nimport { Composition } from \"remotion\";\nimport {\n  HANDRUB_FALLBACK_DURATION,\n  HANDRUB_FPS,\n  HandrubSteps,\n  calculateHandrubMetadata,\n} from \"./hand-hygiene/HandrubSteps\";\nimport {\n  RECORDS_FALLBACK_DURATION,\n  RECORDS_FPS,\n  RecordsStory,\n  calculateRecordsMetadata,\n} from \"./records/RecordsStory\";\nimport {\n  SERVICE_PROVIDER_FALLBACK_DURATION,\n  SERVICE_PROVIDER_FPS,\n  ServiceProviderStory,\n  calculateServiceProviderMetadata,\n} from \"./service-provider/ServiceProviderStory\";\nimport {\n  COMMUNITY_ORGANIZER_FALLBACK_DURATION,\n  COMMUNITY_ORGANIZER_FPS,\n  CommunityOrganizerStory,\n  calculateCommunityOrganizerMetadata,\n} from \"./community-organizer/CommunityOrganizerStory\";\nimport {\n  HEALTH_EDUCATOR_FALLBACK_DURATION,\n  HEALTH_EDUCATOR_FPS,\n  HealthEducatorStory,\n  calculateHealthEducatorMetadata,\n} from \"./health-educator/HealthEducatorStory\";\nimport {\n  ROLES_HEPO_FALLBACK_DURATION,\n  ROLES_HEPO_FPS,\n  RolesHepoStory,\n  calculateRolesHepoMetadata,\n} from \"./roles-hepo/RolesHepoStory\";\nimport {\n  UHC_PURPOSE_FALLBACK_DURATION,\n  UHC_PURPOSE_FPS,\n  UhcPurposeStory,\n  calculateUhcPurposeMetadata,\n} from \"./uhc-purpose/UhcPurposeStory\";\nimport {\n  PRIMARY_CARE_FALLBACK_DURATION,\n  PRIMARY_CARE_FPS,\n  PrimaryCareStory,\n  calculatePrimaryCareMetadata,\n} from \"./uhc-primary-care/PrimaryCareStory\";\n\n// Compositions are authored at the lesson format (854×480, see\n// scripts/remotion-render.mjs) so the render needs no scaling. One\n// composition per narration language (docs/narrated-lesson-video-pattern.md):\n// on-screen labels stay bilingual in the summary, while the voice, scene\n// pacing, and captions differ by language.\n//\n// Register a language only once its narration files (public/<story>/\n// narration-<lang>.{mp3,json}) are committed: the render workflow renders\n// every registered composition on every push, and Remotion fails a render\n// on the browser's \"failed to load resource\" error for a missing file even\n// though calculateHandrubMetadata catches the failed fetch in JS.\nexport const RemotionRoot: React.FC = () => {\n  return (\n    <>\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhs-support-environment-${language}`} id={language === \"fil\" ? \"BhsSupportEnvironmentStoryFil\" : \"BhsSupportEnvironmentStoryEn\"}\n          component={EnvironmentStory} calculateMetadata={calculateEnvironmentMetadata}\n          durationInFrames={ENVIRONMENT_FALLBACK_DURATION} fps={ENVIRONMENT_FPS}\n          width={854} height={480} defaultProps={{language}} />\n      ))}\n      <Composition\n        id=\"RolesHepoStoryHil\"\n        component={RolesHepoStory}\n        calculateMetadata={calculateRolesHepoMetadata}\n        durationInFrames={ROLES_HEPO_FALLBACK_DURATION}\n        fps={ROLES_HEPO_FPS}\n        width={854}\n        height={480}\n        defaultProps={{ language: \"hil\" }}\n      />\n      <Composition\n        id=\"RolesHepoStoryCeb\"\n        component={RolesHepoStory}\n        calculateMetadata={calculateRolesHepoMetadata}\n        durationInFrames={ROLES_HEPO_FALLBACK_DURATION}\n        fps={ROLES_HEPO_FPS}\n        width={854}\n        height={480}\n        defaultProps={{ language: \"ceb\" }}\n      />\n      {([\"ceb\", \"hil\"] as const).map((language) => (\n        <Composition\n          key={`service-provider-${language}`}\n          id={language === \"ceb\" ? \"ServiceProviderStoryCeb\" : \"ServiceProviderStoryHil\"}\n          component={ServiceProviderStory}\n          calculateMetadata={calculateServiceProviderMetadata}\n          durationInFrames={SERVICE_PROVIDER_FALLBACK_DURATION}\n          fps={SERVICE_PROVIDER_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"ceb\", \"hil\"] as const).map((language) => (\n        <Composition\n          key={`community-organizer-${language}`}\n          id={language === \"ceb\" ? \"CommunityOrganizerStoryCeb\" : \"CommunityOrganizerStoryHil\"}\n          component={CommunityOrganizerStory}\n          calculateMetadata={calculateCommunityOrganizerMetadata}\n          durationInFrames={COMMUNITY_ORGANIZER_FALLBACK_DURATION}\n          fps={COMMUNITY_ORGANIZER_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"ceb\", \"hil\"] as const).map((language) => (\n        <Composition\n          key={`health-educator-${language}`}\n          id={language === \"ceb\" ? \"HealthEducatorStoryCeb\" : \"HealthEducatorStoryHil\"}\n          component={HealthEducatorStory}\n          calculateMetadata={calculateHealthEducatorMetadata}\n          durationInFrames={HEALTH_EDUCATOR_FALLBACK_DURATION}\n          fps={HEALTH_EDUCATOR_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition\n          key={language}\n          id={language === \"fil\" ? \"HandrubStepsFil\" : \"HandrubStepsEn\"}\n          component={HandrubSteps}\n          calculateMetadata={calculateHandrubMetadata}\n          durationInFrames={HANDRUB_FALLBACK_DURATION}\n          fps={HANDRUB_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition\n          key={`roles-hepo-${language}`}\n          id={language === \"fil\" ? \"RolesHepoStoryFil\" : \"RolesHepoStoryEn\"}\n          component={RolesHepoStory}\n          calculateMetadata={calculateRolesHepoMetadata}\n          durationInFrames={ROLES_HEPO_FALLBACK_DURATION}\n          fps={ROLES_HEPO_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition\n          key={`health-educator-${language}`}\n          id={language === \"fil\" ? \"HealthEducatorStoryFil\" : \"HealthEducatorStoryEn\"}\n          component={HealthEducatorStory}\n          calculateMetadata={calculateHealthEducatorMetadata}\n          durationInFrames={HEALTH_EDUCATOR_FALLBACK_DURATION}\n          fps={HEALTH_EDUCATOR_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition\n          key={`community-organizer-${language}`}\n          id={language === \"fil\" ? \"CommunityOrganizerStoryFil\" : \"CommunityOrganizerStoryEn\"}\n          component={CommunityOrganizerStory}\n          calculateMetadata={calculateCommunityOrganizerMetadata}\n          durationInFrames={COMMUNITY_ORGANIZER_FALLBACK_DURATION}\n          fps={COMMUNITY_ORGANIZER_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition\n          key={`service-provider-${language}`}\n          id={language === \"fil\" ? \"ServiceProviderStoryFil\" : \"ServiceProviderStoryEn\"}\n          component={ServiceProviderStory}\n          calculateMetadata={calculateServiceProviderMetadata}\n          durationInFrames={SERVICE_PROVIDER_FALLBACK_DURATION}\n          fps={SERVICE_PROVIDER_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"fil\", \"en\", \"ceb\", \"hil\"] as const).map((language) => (\n        <Composition\n          key={`records-${language}`}\n          id={{ fil: \"RecordsStoryFil\", en: \"RecordsStoryEn\", ceb: \"RecordsStoryCeb\", hil: \"RecordsStoryHil\" }[language]}\n          component={RecordsStory}\n          calculateMetadata={calculateRecordsMetadata}\n          durationInFrames={RECORDS_FALLBACK_DURATION}\n          fps={RECORDS_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"fil\", \"en\", \"ceb\", \"hil\"] as const).map((language) => (\n        <Composition\n          key={`uhc-purpose-${language}`}\n          id={`UhcPurposeStory${{ fil: \"Fil\", en: \"En\", ceb: \"Ceb\", hil: \"Hil\" }[language]}`}\n          component={UhcPurposeStory}\n          calculateMetadata={calculateUhcPurposeMetadata}\n          durationInFrames={UHC_PURPOSE_FALLBACK_DURATION}\n          fps={UHC_PURPOSE_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n        {([\"fil\", \"en\", \"ceb\", \"hil\"] as const).map((language) => (\n          <Composition\n            key={`uhc-primary-care-${language}`}\n            id={({ fil: \"PrimaryCareStoryFil\", en: \"PrimaryCareStoryEn\", ceb: \"PrimaryCareStoryCeb\", hil: \"PrimaryCareStoryHil\" })[language]}\n          component={PrimaryCareStory}\n          calculateMetadata={calculatePrimaryCareMetadata}\n          durationInFrames={PRIMARY_CARE_FALLBACK_DURATION}\n          fps={PRIMARY_CARE_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n      {([\"fil\", \"en\", \"ceb\", \"hil\"] as const).map((language) => (\n        <Composition\n          key={`roles-application-${language}`}\n          id={({ fil: \"RolesApplicationStoryFil\", en: \"RolesApplicationStoryEn\", ceb: \"RolesApplicationStoryCeb\", hil: \"RolesApplicationStoryHil\" })[language]}\n          component={RolesApplicationStory}\n          calculateMetadata={calculateRolesApplicationMetadata}\n          durationInFrames={ROLES_APPLICATION_FALLBACK_DURATION}\n          fps={ROLES_APPLICATION_FPS}\n          width={854}\n          height={480}\n          defaultProps={{ language }}\n        />\n      ))}\n        {([\"fil\", \"en\", \"ceb\", \"hil\"] as const).map((language) => (\n          <Composition key={`uhc-local-system-${language}`} id={{fil: \"LocalSystemStoryFil\", en: \"LocalSystemStoryEn\", ceb: \"LocalSystemStoryCeb\", hil: \"LocalSystemStoryHil\"}[language]}\n          component={LocalSystemStory} calculateMetadata={calculateLocalSystemMetadata}\n          durationInFrames={LOCAL_SYSTEM_FALLBACK_DURATION} fps={LOCAL_SYSTEM_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhs-promotions-${language}`} id={language === \"fil\" ? \"BhsPromotionsStoryFil\" : \"BhsPromotionsStoryEn\"}\n          component={BhsPromotionsStory} calculateMetadata={calculateBhsPromotionsMetadata}\n          durationInFrames={BHS_PROMOTIONS_FALLBACK_DURATION} fps={BHS_PROMOTIONS_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\", \"ceb\", \"hil\"] as const).map((language) => (\n        <Composition key={`uhc-improvement-${language}`} id={language === \"fil\" ? \"UhcImprovementStoryFil\" : language === \"ceb\" ? \"UhcImprovementStoryCeb\" : language === \"hil\" ? \"UhcImprovementStoryHil\" : \"UhcImprovementStoryEn\"}\n          component={ImprovementStory} calculateMetadata={calculateImprovementMetadata}\n          durationInFrames={UHC_IMPROVEMENT_FALLBACK_DURATION} fps={UHC_IMPROVEMENT_FPS}\n          width={854} height={480} defaultProps={{ language }} />\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhs-decline-${language}`} id={language === \"fil\" ? \"BhsDeclineStoryFil\" : \"BhsDeclineStoryEn\"}\n          component={BhsDeclineStory} calculateMetadata={calculateBhsDeclineMetadata}\n          durationInFrames={BHS_DECLINE_FALLBACK_DURATION} fps={BHS_DECLINE_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhs-resources-${language}`} id={language === \"fil\" ? \"BhsResourcesStoryFil\" : \"BhsResourcesStoryEn\"}\n          component={BhsResourcesStory} calculateMetadata={calculateBhsResourcesMetadata}\n          durationInFrames={RESOURCES_FALLBACK_DURATION} fps={RESOURCES_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhs-improvement-${language}`} id={language === \"fil\" ? \"BhsImprovementStoryFil\" : \"BhsImprovementStoryEn\"}\n          component={BhsImprovementStory} calculateMetadata={calculateBhsImprovementMetadata}\n          durationInFrames={IMPROVEMENT_FALLBACK_DURATION} fps={IMPROVEMENT_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-legal-role-${language}`} id={language === \"fil\" ? \"BhwLegalRoleStoryFil\" : \"BhwLegalRoleStoryEn\"}\n          component={BhwLegalRoleStory} calculateMetadata={calculateBhwLegalRoleMetadata}\n          durationInFrames={LEGAL_ROLE_FALLBACK_DURATION} fps={LEGAL_ROLE_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-benefits-${language}`} id={language === \"fil\" ? \"BhwBenefitsStoryFil\" : \"BhwBenefitsStoryEn\"}\n          component={BhwBenefitsStory} calculateMetadata={calculateBhwBenefitsMetadata}\n          durationInFrames={BENEFITS_FALLBACK_DURATION} fps={BENEFITS_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-eligibility-${language}`} id={language === \"fil\" ? \"BhwEligibilityStoryFil\" : \"BhwEligibilityStoryEn\"}\n          component={BhwEligibilityStory} calculateMetadata={calculateBhwEligibilityMetadata}\n          durationInFrames={ELIGIBILITY_FALLBACK_DURATION} fps={ELIGIBILITY_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-accreditation-${language}`} id={language === \"fil\" ? \"BhwAccreditationStoryFil\" : \"BhwAccreditationStoryEn\"}\n          component={BhwAccreditationStory} calculateMetadata={calculateBhwAccreditationMetadata}\n          durationInFrames={ACCREDITATION_FALLBACK_DURATION} fps={ACCREDITATION_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-follow-up-${language}`} id={language === \"fil\" ? \"BhwFollowUpStoryFil\" : \"BhwFollowUpStoryEn\"}\n          component={BhwFollowUpStory} calculateMetadata={calculateBhwFollowUpMetadata}\n          durationInFrames={FOLLOW_UP_FALLBACK_DURATION} fps={FOLLOW_UP_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-relationships-${language}`} id={language === \"fil\" ? \"BhwRelationshipsStoryFil\" : \"BhwRelationshipsStoryEn\"}\n          component={BhwRelationshipsStory} calculateMetadata={calculateBhwRelationshipsMetadata}\n          durationInFrames={RELATIONSHIPS_FALLBACK_DURATION} fps={RELATIONSHIPS_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-barangay-partners-${language}`} id={language === \"fil\" ? \"BhwBarangayPartnersStoryFil\" : \"BhwBarangayPartnersStoryEn\"}\n          component={BhwBarangayPartnersStory} calculateMetadata={calculateBhwBarangayPartnersMetadata}\n          durationInFrames={BARANGAY_PARTNERS_FALLBACK_DURATION} fps={BARANGAY_PARTNERS_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-local-partners-${language}`} id={language === \"fil\" ? \"BhwLocalPartnersStoryFil\" : \"BhwLocalPartnersStoryEn\"}\n          component={BhwLocalPartnersStory} calculateMetadata={calculateBhwLocalPartnersMetadata}\n          durationInFrames={LOCAL_PARTNERS_FALLBACK_DURATION} fps={LOCAL_PARTNERS_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-teamwork-${language}`} id={language === \"fil\" ? \"BhwTeamworkStoryFil\" : \"BhwTeamworkStoryEn\"}\n          component={BhwTeamworkStory} calculateMetadata={calculateBhwTeamworkMetadata}\n          durationInFrames={TEAMWORK_FALLBACK_DURATION} fps={TEAMWORK_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-right-contact-${language}`} id={language === \"fil\" ? \"BhwRightContactStoryFil\" : \"BhwRightContactStoryEn\"}\n          component={BhwRightContactStory} calculateMetadata={calculateBhwRightContactMetadata}\n          durationInFrames={RIGHT_CONTACT_FALLBACK_DURATION} fps={RIGHT_CONTACT_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`bhw-self-management-${language}`} id={language === \"fil\" ? \"BhwSelfManagementStoryFil\" : \"BhwSelfManagementStoryEn\"}\n          component={BhwSelfManagementStory} calculateMetadata={calculateBhwSelfManagementMetadata}\n          durationInFrames={SELF_MANAGEMENT_FALLBACK_DURATION} fps={SELF_MANAGEMENT_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`communication-listen-${language}`} id={language === \"fil\" ? \"CommunicationListenStoryFil\" : \"CommunicationListenStoryEn\"}\n          component={CommunicationListenStory} calculateMetadata={calculateCommunicationListenMetadata}\n          durationInFrames={COMMUNICATION_LISTEN_FALLBACK_DURATION} fps={COMMUNICATION_LISTEN_FPS} width={854} height={480}\n          defaultProps={{language}}/>\n      ))}\n      {([\"fil\", \"en\"] as const).map((language) => (\n        <Composition key={`communication-clarify-${language}`} id={language === \"fil\" ? \"CommunicationClarifyStoryFil\" : \"CommunicationClarifyStoryEn\"} component={CommunicationClarifyStory} durationInFrames={COMMUNICATION_CLARIFY_FALLBACK_DURATION} fps={COMMUNICATION_CLARIFY_FPS} width={854} height={480} defaultProps={{language}} calculateMetadata={calculateCommunicationClarifyMetadata}/>\n      ))}\n    </>\n  );\n};\n"
+    },
+    "src/components/elearning/reference-lessons.tsx": {
+      "predecessor_sha256": "95011032d8b903e8aec77755ea73bccefd0a4dc84cf2e8f6a2518a4aa71e5b77",
+      "proposed_sha256": "6945051e5519d8afc87c81b976f5b2ffc6ca5666f892eaa721306b8eca2aa1e6",
+      "predecessor_utf8": "\"use client\";\n\nimport { useEffect, useRef, useState } from \"react\";\nimport Link from \"next/link\";\nimport Image from \"next/image\";\nimport {useRouter} from \"next/navigation\";\nimport type {\n  CourseModule,\n  CourseLessonProgress,\n  CourseLessonResume,\n  LessonCheck,\n  LessonModality,\n  TrainingProgramChapter,\n} from \"@/lib/elearning/types\";\nimport {\n  continueLesson,\n  lessonPosition,\n  type PublishedLesson,\n} from \"@/lib/elearning/reference-navigation\";\nimport type { LessonNarration } from \"@/lib/elearning/reference-narration\";\nimport { prefersReducedMotion } from \"@/lib/elearning/reduced-motion\";\nimport { ReferenceReadSection } from \"./reference-read-section\";\nimport { LessonAssetFigure } from \"./lesson-asset-figure\";\nimport { FittedLessonPage } from \"./fitted-lesson-page\";\nimport { translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from \"@/lib/elearning/lesson-translation\";\n\ntype ResumeValue = Omit<CourseLessonResume, \"course_progress_id\" | \"updated_at\">;\nconst RESUME_SAVE_DELAY_MS = 3000;\n\n// The pilot database still has the first published wording. Render its\n// explicit clock times while the new authored revision awaits a national\n// course publisher. Once that revision is published, this is a no-op.\nfunction clarifyMorningTimes(body: string) {\n  if (!/^At eight, BHW (Marites|Riza)\\b/.test(body)) return body;\n  return body\n    .replace(\"At eight,\", \"At 8:00 a.m.,\")\n    .replace(\"At ten,\", \"At 10:00 a.m.,\")\n    .replace(\"At eleven,\", \"At 11:00 a.m.,\");\n}\n\nexport type ReferenceData = {\n  title_fil: string;\n  title_en: string;\n  chapters: TrainingProgramChapter[];\n  lessons: PublishedLesson[];\n  completed: CourseLessonProgress[];\n  resumes: CourseLessonResume[];\n};\ntype Props = ReferenceData & {\n  modules: CourseModule[];\n  initialLessonId?: string;\n  initialMode?: LessonModality;\n  lessonBaseHref?: string;\n  returnHref?: string;\n  readOnly?: boolean;\n  lessonNumber?: number;\n  lessonCount?: number;\n  nextLessonHref?: string;\n  completionMilestone?: { scope: \"subchapter\" | \"chapter\"; number: string };\n  // Lesson ID -> Read-mode narration in the current language (optional).\n  narration?: Record<string, LessonNarration>;\n  translations?: LessonTranslation[];\n  locale: string;\n  onResume: (\n    resume: ResumeValue,\n  ) => Promise<void>;\n  onComplete: (lesson: PublishedLesson) => Promise<void>;\n};\n\nfunction repeatsCheckPrompt(body: string, prompt: string) {\n  const lastParagraph = body.trim().split(/\\n\\s*\\n/).at(-1) ?? \"\";\n  const normalize = (text: string) => text.replace(/\\*\\*/g, \"\").replace(/\\s+/g, \" \").trim();\n  return normalize(lastParagraph) === normalize(prompt);\n}\n\nfunction Practice({ check, en, ui, promptShownInBody, answer, onAnswer }: { check: LessonCheck; en: boolean; ui: LessonText; promptShownInBody: boolean; answer: number | undefined; onAnswer: (answer: number) => void }) {\n  return (\n    <fieldset className=\"mt-5 rounded-lg border border-ink/20 p-4\">\n      <legend className=\"font-semibold\">\n        {promptShownInBody ? ui(\"Pumili ng sagot\", \"Choose an answer\") : en ? check.prompt_en : check.prompt_fil}\n      </legend>\n      <div className=\"flex flex-col gap-2\">\n        {check.options.map((o, i) => (\n          <button\n            type=\"button\"\n            className=\"rounded border border-ink/20 p-3 text-left\"\n            aria-pressed={answer === i}\n            key={i}\n            onClick={() => onAnswer(i)}\n          >\n            {en ? o.en : o.fil}\n          </button>\n        ))}\n      </div>\n      {answer !== undefined && (\n        <div\n          role=\"status\"\n          aria-live=\"polite\"\n          className=\"reference-check-feedback\"\n          data-result={answer === check.correct_option_index ? \"correct\" : \"incorrect\"}\n        >\n          <strong className=\"reference-check-feedback-label\">\n            <span aria-hidden=\"true\">{answer === check.correct_option_index ? \"✓\" : \"↺\"}</span>{\" \"}\n            {answer === check.correct_option_index\n              ? ui(\"Tama!\", \"Correct!\")\n              : ui(\"Hindi pa tama. Subukang muli.\", \"Not quite. Try again.\")}\n          </strong>\n          <p className=\"reference-check-feedback-detail\">{en ? check.feedback_en : check.feedback_fil}</p>\n        </div>\n      )}\n    </fieldset>\n  );\n}\n\nexport function ReferenceLessons(props: Props) {\n  const { lessons, modules, onResume, onComplete } = props,\n    en = props.locale === \"en\";\n  const [translationLanguage, setTranslationLanguage] = useState<string | null>(null);\n  const router=useRouter();\n  const initial=lessons.find(l=>l.id===props.initialLessonId);\n  const initialResume=props.resumes.filter(r=>r.lesson_id===initial?.id).sort((a,b)=>b.updated_at.localeCompare(a.updated_at))[0];\n  const [selected, setSelected] = useState<string | null>(props.initialLessonId??null);\n  const startingMode=props.initialMode??initialResume?.modality??\"read\";\n  const startingResume=props.resumes.filter(r=>r.lesson_id===initial?.id&&r.modality===startingMode)\n    .sort((a,b)=>b.updated_at.localeCompare(a.updated_at))[0];\n  const [mode, setMode] = useState<LessonModality>(startingMode);\n  // Video is a view of the featured asset, not a resume modality in the DB.\n  const [videoSelected, setVideoSelected] = useState(false);\n  const [resumes, setResumes] = useState(props.resumes);\n  const [completed, setCompleted] = useState(props.completed);\n  const [savedMilestone, setSavedMilestone] = useState<({ lessonId: string } & NonNullable<Props[\"completionMilestone\"]>) | null>(null);\n  const [newlyCompletedLessonId, setNewlyCompletedLessonId] = useState<string | null>(null);\n  const [position, setPosition] = useState<string | null>(initial?lessonPosition(initial,startingMode,startingResume).id:null);\n  const [error, setError] = useState<string | null>(null);\n  const [pending, setPending] = useState(false);\n  // Practice is formative, not a scored assessment. Keep attempts across\n  // section/mode changes, but never carry them into a different revision.\n  const [answers, setAnswers] = useState<Record<string, number>>({});\n  // Keyed by lesson id, like `answers`, so switching lessons doesn't lose it.\n  const heading = useRef<HTMLHeadingElement>(null);\n  const readerDialog = useRef<HTMLDialogElement>(null);\n  const fullscreenTarget = useRef<HTMLDivElement>(null);\n  const [readerOpen, setReaderOpen] = useState(false);\n  const [orientation, setOrientation] = useState<\"portrait\" | \"landscape\">(\"portrait\");\n  const [orientationHelp, setOrientationHelp] = useState(false);\n  const writes = useRef(Promise.resolve());\n  // Resume positions are saved on a trailing debounce, not on every Next/\n  // Previous: each rpc_course_lesson_resume call runs the full visibility\n  // check, locks rows and upserts course_lesson_resume, so paging through a\n  // lesson wrote once per slide. Only the latest position is kept; it is\n  // written after RESUME_SAVE_DELAY_MS of no movement, and immediately when\n  // the lesson/mode changes, on completion, on retry, when the tab is hidden,\n  // and on unmount.\n  const pendingResume = useRef<ResumeValue | null>(null);\n  const resumeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);\n  const flushResumeRef = useRef<() => Promise<void>>(() => writes.current);\n  const sourceLesson = lessons.find((l) => l.id === selected);\n  const availableTranslations = sourceLesson ? (props.translations ?? []).filter(translation =>\n    (props.readOnly || translation.review_status === \"approved\") && translationMatchesLesson(sourceLesson, translation)) : [];\n  const translation = availableTranslations.find(value => value.language === translationLanguage);\n  const lesson = sourceLesson && translation ? translateLesson(sourceLesson, translation) : sourceLesson;\n  const ui: LessonText = (fil, eng) => translation?.ui[fil] ?? (en ? eng : fil);\n  const lessonNarration = translation ? translation.narration : (lesson ? props.narration?.[lesson.id] : undefined);\n  const sourceStoryArt = lesson?.lesson_key === \"bhw-roles-hepo\"\n    ? {\n        src: \"/training/bhw-1-1/scene-8cdb1498a723.png\",\n        alt: translation?.story_art.alt ?? ui(\n          \"Si BHW Riza ay nakikipag-usap sa mga residente; sa tabi niya, isang ina at anak ang kausap ang midwife.\",\n          \"BHW Riza talks with residents; nearby, a mother and child speak with a midwife.\",\n        ),\n        caption: translation?.story_art.caption ?? ui(\"Isang umaga sa barangay\", \"One morning in the barangay\"),\n      }\n    : lesson?.lesson_key === \"bhw-health-educator\"\n      ? {\n          src: \"/training/bhw-1-1/health-educator-c9c658e97d1e.png\",\n          alt: ui(\n            \"Nakikinig ang BHW sa kabataan, magulang na may sanggol, at nakatatanda sa isang talakayan sa barangay.\",\n            \"A BHW listens to a young person, a parent with an infant, and an older resident at a barangay discussion.\",\n          ),\n          caption: ui(\"Talakayang angkop sa kausap\", \"A discussion shaped around its audience\"),\n        }\n      : lesson?.lesson_key === \"bhw-community-organizer\"\n        ? {\n            src: \"/training/bhw-1-1/community-organizer-4c7f7fa5b422.png\",\n            alt: ui(\n              \"Nakikinig si BHW Riza habang tinatalakay ng mga residente at health staff ang mapa ng kanilang purok.\",\n              \"BHW Riza listens as residents and health staff discuss a map of their neighborhood.\",\n            ),\n            caption: ui(\"Sama-samang pagtalakay sa barangay\", \"Planning together in the barangay\"),\n          }\n      : lesson?.lesson_key === \"bhw-service-provider\"\n        ? {\n            src: \"/training/bhw-1-1/service-provider-10b884207b48.png\",\n            alt: ui(\n              \"Nakikinig si BHW Riza kay Aling Nena sa labas ng barangay health station; nasa likuran ang midwife.\",\n              \"BHW Riza listens to Aling Nena outside a barangay health station; the midwife is in the background.\",\n            ),\n            caption: ui(\"Pakikinig at paggabay kasama ang health team\", \"Listening and guiding with the health team\"),\n          }\n      : lesson?.lesson_key === \"bhw-records\"\n        ? {\n            src: \"/training/bhw-1-1/records-2a1725eaf243.png\",\n            alt: ui(\n              \"Magkasamang tumitingin sina BHW Riza at ang midwife sa mga blangkong folder sa health station; walang nakikitang personal na datos.\",\n              \"BHW Riza and the midwife look at blank folders together in the health station; no personal data is visible.\",\n            ),\n            caption: ui(\"Pagpili at paglinaw ng tala kasama ang health team\", \"Choosing and checking a record with the health team\"),\n          }\n      : lesson?.lesson_key === \"bhw-roles-application\"\n        ? {\n            src: \"/training/bhw-1-1/roles-application-328d2317d8fd.png\",\n            alt: ui(\n              \"Si BHW Riza ay nag-uulat sa midwife gamit ang blangkong notebook habang nakikinig ang isang residente.\",\n              \"BHW Riza reports to the midwife using a blank notebook while a resident listens.\",\n            ),\n            caption: ui(\"Nakita · Ginawa · Kailangan\", \"Observed · Done · Needed\"),\n          }\n      : lesson?.lesson_key === \"uhc-coverage\"\n        ? {\n            src: \"/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png\",\n            alt: ui(\n              \"Nakikinig si BHW Vlanche kay Mang Ernesto sa labas ng barangay health station habang nagtatanong siya tungkol sa konsulta.\",\n              \"BHW Vlanche listens to Mang Ernesto outside a barangay health station as he asks about a consultation.\",\n            ),\n            caption: ui(\"Ang tanong ni Mang Ernesto tungkol sa UHC\", \"Mang Ernesto's question about UHC\"),\n          }\n      : lesson?.lesson_key === \"uhc-primary-care\"\n        ? {\n            src: \"/training/bhw-1-2/primary-care-next-step-a67521f903c0.png\",\n            alt: ui(\n              \"Kinukumpirma nina BHW Vlanche at Mang Ernesto ang susunod na hakbang kasama ang midwife sa health station, gamit ang isang blangkong tala.\",\n              \"BHW Vlanche and Mang Ernesto confirm the next step with a midwife at the health station, using a blank note.\",\n            ),\n            caption: ui(\"Tiyakin ang susunod na hakbang\", \"Confirm the next step\"),\n          }\n      : lesson?.lesson_key === \"bhs-promotions\"\n        ? {\n            src: \"/training/bhw-1-3/mimi-company-offer-b9623263a188.png\",\n            alt: ui(\"Nakikinig si BHW Mimi sa kinatawan ng kumpanya at mahinahong ipinapahinto ang pagtanggap ng blangkong sample box at promotional sheet sa BHS.\", \"BHW Mimi listens to a company representative and calmly pauses acceptance of a blank sample box and promotional sheet at the BHS.\"),\n            caption: ui(\"Kilalanin · Huminto · Idulog\", \"Recognize · Pause · Refer\"),\n          }\n      : lesson?.lesson_key === \"uhc-local-system\"\n        ? { src: \"/training/bhw-1-2/local-system-observation-13c689fa5226.png\", alt: ui(\"Tinatalakay nina BHW Vlanche, Mang Ernesto at ng midwife ang paulit-ulit na tanong ng mga residente gamit ang blangkong tala sa BHS.\", \"BHW Vlanche, Mang Ernesto and the midwife discuss recurring resident questions using a blank note at the BHS.\"), caption: ui(\"Obserbasyon · mensahe · follow-up\", \"Observation · message · follow-up\") }\n      : lesson?.lesson_key === \"uhc-improvement\"\n        ? {\n            src: \"/training/bhw-1-2/improvement-planning-f1afe0f4a1e5.png\",\n            alt: ui(\"Inaayos ni BHW Vlanche ang tatlong blangkong card kasama ang midwife at si Mang Ernesto para sa isang maliit na plano.\", \"BHW Vlanche arranges three blank cards with the midwife and Mang Ernesto for a small plan.\"),\n            caption: ui(\"Isang maliit na plano, pinag-uusapan\", \"One small plan, discussed together\"),\n          }\n      : lesson?.lesson_key === \"bhs-decline\"\n        ? {src: \"/training/bhw-1-3/mimi-respectful-refusal-7f71c23bc4bb.png\", alt: ui(\"Malinaw at magalang na tumatanggi si Mimi sa alok.\", \"Mimi clearly and respectfully declines the offer.\"), caption: ui(\"Tumanggi · Ipaliwanag · Iulat\", \"Decline · Explain · Report\")}\n      : lesson?.lesson_key === \"bhs-support-environment\"\n        ? {\n            src: \"/training/bhw-1-3/mimi-support-environment-d1e6bcec9846.png\",\n            alt: ui(\"Magalang na nakikinig si BHW Mimi sa magulang na may kargang sanggol sa health station.\", \"BHW Mimi respectfully listens to a parent holding an infant at the health station.\"),\n            caption: ui(\"Makinig · kumpirmahin · umalalay\", \"Listen · confirm · support\"),\n          }\n      : lesson?.lesson_key === \"bhw-follow-up\" && lesson.revision.assets.some(asset => asset.id === \"demi-follow-up\")\n        ? {src: lesson.revision.assets.find(asset => asset.id === \"demi-follow-up\")!.path, alt: ui(\"Inihahanda ni Demi at ng kasamahan ang follow-up question gamit ang blangkong card at notebook.\", \"Demi and a colleague prepare a follow-up question using a blank card and notebook.\"), caption: ui(\"Alam · Tanong · Paglilinaw · Next contact\", \"Facts · Question · Clarification · Next contact\")}\n      : lesson?.lesson_key === \"bhw-accreditation\" && lesson.revision.assets.some(asset => asset.id === \"demi-accreditation-question\")\n        ? {src: \"/training/bhw-1-4/demi-accreditation-question-b2dfcb212dff.png\", alt: ui(\"Nagtatanong si Demi sa staff sa RHU tungkol sa proseso gamit ang blankong folder at cards.\", \"Demi asks RHU staff about the process using a blank folder and cards.\"), caption: ui(\"Papel · Opisyal na tala · Susunod na hakbang\", \"Roles · Official record · Next step\")}\n      : lesson?.lesson_key === \"bhw-eligibility\" && lesson.revision.assets.some(asset => asset.id === \"demi-bhwe-discussion\")\n        ? {src: \"/training/bhw-1-4/demi-bhwe-discussion-cce21d6a934d.png\", alt: ui(\"Tinatalakay ni Demi at ng facilitator ang BHWE gamit ang blankong planning sheets at practice cards.\", \"Demi and a facilitator discuss BHWE using blank planning sheets and practice cards.\"), caption: ui(\"Kondisyon · Ebidensiya · CSC verification\", \"Conditions · Evidence · CSC verification\")}\n      : lesson?.lesson_key === \"bhw-benefits\" && lesson.revision.assets.some(asset => asset.id === \"demi-benefits-conditions\")\n        ? {src: \"/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png\", alt: ui(\"Tinatalakay ni Demi at ng kasamahan ang tanong tungkol sa benepisyo gamit ang dalawang blankong question sheets.\", \"Demi and a colleague discuss a benefits question using two blank question sheets.\"), caption: ui(\"Benepisyo · Kondisyon · Verification\", \"Benefit · Conditions · Verification\")}\n      : lesson?.lesson_key === \"bhw-legal-role\" && lesson.revision.assets.some(asset => asset.id === \"demi-legal-basis\")\n        ? {src: \"/training/bhw-1-4/demi-legal-basis-032a985f9c33.png\", alt: ui(\"Nagtatanong si Demi sa health-team support person sa mesa ng health station; blanko ang learning sheet.\", \"Demi asks a health-team support person a question at a health-station desk; the learning sheet is blank.\"), caption: ui(\"Unawain ang batayan. Tiyakin ang katayuan.\", \"Understand the basis. Verify status.\")}\n      : lesson?.lesson_key === \"bhs-improvement\"\n        ? {src: \"/training/bhw-1-3/mimi-workable-suggestion-8e880add36c1.png\", alt: ui(\"Tinatalakay ni BHW Mimi ang isang mungkahing checklist kasama ang lokal na responsable sa meeting area.\", \"BHW Mimi discusses a proposed checklist with the local person responsible for the meeting area.\"), caption: ui(\"Isang mungkahi · Tiyakin ang saklaw · Magkasundo sa follow-up\", \"One proposal · Check authority · Agree on follow-up\")}\n      : lesson?.lesson_key === \"bhs-resources\"\n        ? {src: \"/training/bhw-1-3/mimi-resource-use-86ce5a9071e0.png\", alt: ui(\"Tinatalakay ni Mimi ang resource concern sa namamahala.\", \"Mimi discusses the resource concern with the supervisor.\"), caption: ui(\"Obserbasyon · Tuntunin · Pakikipag-ugnayan\", \"Observation · Rule · Coordination\")}\n      : null;\n  const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;\n  const storyLayout = storyArt !== null;\n  const items = lesson\n    ? mode === \"read\"\n      ? lesson.revision.read_sections\n      : lesson.revision.slides\n    : [];\n  const item = items.find((p) => p.id === position) ?? items[0];\n  const index = item ? items.findIndex((p) => p.id === item.id) : 0;\n  const done = new Set(completed.map((p) => p.lesson_id));\n  const required = lessons.filter((l) => l.required);\n  const nextLesson = continueLesson(lessons, completed, resumes);\n  const siblings = lessons.filter((l) => l.module_id === lesson?.module_id);\n  const answerKey = (id: string) => `${lesson?.id}:${lesson?.revision.id}:${mode}:${id}`;\n  const answer = item ? answers[answerKey(item.id)] : undefined;\n  const checksAnswered = items.every(p => !p.check || answers[answerKey(p.id)] !== undefined);\n  const featuredAsset = lesson?.revision.featured_asset_id\n    ? lesson.revision.assets.find((a) => a.id === lesson.revision.featured_asset_id)\n    : undefined;\n  const featuredVideo = featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined;\n  const narratedStory = Boolean(featuredVideo?.videos);\n  const selfManagementRevision = lesson?.lesson_key === \"bhw-self-management\" && lesson.revision.assets.some(asset => asset.id === \"malou-self-priorities\");\n  const selfManagementTracks = selfManagementRevision ? Object.values(props.narration?.[lesson.id] ?? {}) : [];\n  const selfManagementMinutes = selfManagementTracks.length === 7 ? Math.ceil(selfManagementTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;\n  const teamworkTracks = lesson?.lesson_key === \"bhw-teamwork\" ? Object.values(props.narration?.[lesson.id] ?? {}) : [];\n  const teamworkMinutes = teamworkTracks.length === 6 ? Math.ceil(teamworkTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;\n  const listeningRevision = lesson?.lesson_key === \"communication-listen\" && lesson.revision.assets.some(asset => asset.id === \"gibs-liza\");\n  const clarificationRevision = lesson?.lesson_key === \"communication-clarify\" && lesson.revision.assets.some(asset => asset.id === \"clarify-check\");\n  const listeningTracks = (listeningRevision || clarificationRevision) ? Object.values(lessonNarration ?? {}) : [];\n  const listeningMinutes = listeningTracks.length === 6 ? Math.ceil(listeningTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;\n  const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);\n  const videoLabel = narratedStory\n    ? ui(\"Kuwentong may salaysay\", \"Narrated story\")\n    : \"Video\";\n  const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered;\n  const revealSummary = !item?.check || answer !== undefined;\n  // Offer full, synchronized speech only when a slide's narration exactly\n  // matches a Read section. The normal selector still validates all timings.\n  const slideReadSection = item && \"display_fil\" in item\n    ? lesson?.revision.read_sections.find(section =>\n      section.heading_fil === item.heading_fil && section.heading_en === item.heading_en &&\n      section.body_fil === item.narration_fil && section.body_en === item.narration_en)\n    : undefined;\n  const promptShownInBody = item && \"body_fil\" in item && item.check\n    ? repeatsCheckPrompt(en ? item.body_en : item.body_fil, en ? item.check.prompt_en : item.check.prompt_fil)\n    : false;\n  const practice = item?.check ? <Practice check={item.check} en={en} ui={ui} promptShownInBody={Boolean(promptShownInBody)} answer={answer}\n    onAnswer={value => setAnswers(old => ({...old, [answerKey(item.id)]: value}))}/> : null;\n  const figures =\n    lesson && item\n      ? item.asset_ids.map((id) => {\n          const a = lesson.revision.assets.find((a) => a.id === id);\n          return a ? <LessonAssetFigure key={a.id} asset={a} en={en} language={translation?.language} /> : null;\n        })\n      : null;\n\n  function flushResume() {\n    if (resumeTimer.current) {\n      clearTimeout(resumeTimer.current);\n      resumeTimer.current = null;\n    }\n    const value = pendingResume.current;\n    if (!value) return writes.current;\n    pendingResume.current = null;\n    // Serialize writes so a slower request cannot overwrite newer state.\n    writes.current = writes.current\n      .then(async () => {await onResume(value);setError(null);})\n      .catch(() =>\n        setError(\n          ui(\n            \"Hindi nai-save ang puwesto. Subukang muli.\",\n            \"Position could not be saved. Try again.\",\n          ),\n        ),\n      );\n    return writes.current;\n  }\n  useEffect(() => {\n    flushResumeRef.current = flushResume;\n  });\n  useEffect(() => {\n    const clearHelpWhenTurned = () => {\n      if (window.matchMedia?.(`(orientation: ${orientation})`).matches) {\n        setOrientationHelp(false);\n      }\n    };\n    window.addEventListener(\"resize\", clearHelpWhenTurned);\n    return () => window.removeEventListener(\"resize\", clearHelpWhenTurned);\n  }, [orientation]);\n  useEffect(() => {\n    const flush = () => void flushResumeRef.current();\n    const onVisibility = () => {\n      if (document.visibilityState === \"hidden\") flush();\n    };\n    document.addEventListener(\"visibilitychange\", onVisibility);\n    window.addEventListener(\"pagehide\", flush);\n    return () => {\n      document.removeEventListener(\"visibilitychange\", onVisibility);\n      window.removeEventListener(\"pagehide\", flush);\n      flush();\n    };\n  }, []);\n  function save(\n    l: PublishedLesson,\n    m: LessonModality,\n    p: { id: string; concept_ids: string[] },\n    immediate = false,\n  ) {\n    if(props.readOnly)return;\n    const value: ResumeValue = {\n      lesson_id: l.id,\n      revision_id: l.revision.id,\n      modality: m,\n      language: en ? (\"en\" as const) : (\"fil\" as const),\n      position_key: p.id,\n      concept_id: p.concept_ids[0],\n    };\n    setResumes((old) => [\n      ...old.filter((r) => !(r.lesson_id === l.id && r.modality === m)),\n      {\n        ...value,\n        course_progress_id: \"\",\n        updated_at: new Date().toISOString(),\n      },\n    ]);\n    // A pending position for another lesson or mode is its own resume row;\n    // write it now rather than letting this one replace it.\n    const prev = pendingResume.current;\n    if (prev && (prev.lesson_id !== value.lesson_id || prev.modality !== value.modality)) {\n      void flushResume();\n    }\n    pendingResume.current = value;\n    if (resumeTimer.current) clearTimeout(resumeTimer.current);\n    if (immediate) {\n      void flushResume();\n    } else {\n      resumeTimer.current = setTimeout(() => void flushResume(), RESUME_SAVE_DELAY_MS);\n    }\n  }\n  function open(l: PublishedLesson) {\n    if(props.lessonBaseHref){router.push(`${props.lessonBaseHref}/${l.id}`);return;}\n    setSavedMilestone(null);\n    setNewlyCompletedLessonId(null);\n    const latest = resumes\n      .filter((r) => r.lesson_id === l.id)\n      .sort((a, b) => b.updated_at.localeCompare(a.updated_at))[0];\n    const m = latest?.modality ?? mode;\n    const p = lessonPosition(\n      l,\n      m,\n      resumes.find((r) => r.lesson_id === l.id && r.modality === m),\n    );\n    setSelected(l.id);\n    setMode(m);\n    setVideoSelected(false);\n    setPosition(p.id);\n    setError(null);\n    save(l, m, p);\n    requestAnimationFrame(() => heading.current?.focus());\n  }\n  function move(p: typeof item, m = mode) {\n    if (!lesson || !p) return;\n    setMode(m);\n    setPosition(p.id);\n    save(lesson, m, p);\n    requestAnimationFrame(() => heading.current?.focus());\n  }\n  function changeMode(next: LessonModality) {\n    if (!lesson || !item) return;\n    setVideoSelected(false);\n    move(\n      lessonPosition(\n        lesson,\n        next,\n        resumes.find((r) => r.lesson_id === lesson.id && r.modality === next),\n        item.concept_ids[0],\n      ),\n      next,\n    );\n  }\n  function openReader() {\n    if ((lesson?.lesson_key === \"bhw-follow-up\" && lesson.revision.assets.some(asset => asset.id === \"demi-follow-up\")) || lesson?.lesson_key === \"bhw-accreditation\" || lesson?.lesson_key === \"bhw-eligibility\" || lesson?.lesson_key === \"bhw-benefits\" || lesson?.lesson_key === \"bhw-legal-role\" || lesson?.lesson_key === \"bhs-support-environment\" || lesson?.lesson_key === \"bhs-resources\" || lesson?.lesson_key === \"bhs-improvement\") {\n      setOrientation(window.matchMedia?.(\"(orientation: landscape)\")?.matches ? \"landscape\" : \"portrait\");\n    }\n    setReaderOpen(true);\n    setOrientationHelp(false);\n    readerDialog.current?.showModal();\n    // Safari on iPhone does not expose element fullscreen. The modal itself\n    // still fills the viewport and keeps the rest of the page out of view.\n    const target = fullscreenTarget.current;\n    if (target?.requestFullscreen) {\n      void target.requestFullscreen().catch(() => {});\n    }\n  }\n  function closeReader() {\n    if (document.fullscreenElement === fullscreenTarget.current) {\n      void document.exitFullscreen().catch(() => {});\n    }\n    readerDialog.current?.close();\n    setReaderOpen(false);\n    setOrientationHelp(false);\n  }\n  async function chooseOrientation(next: \"portrait\" | \"landscape\") {\n    setOrientation(next);\n    if (window.matchMedia?.(`(orientation: ${next})`).matches) {\n      setOrientationHelp(false);\n      return;\n    }\n    const orientationApi = screen.orientation as ScreenOrientation & {\n      lock?: (orientation: \"portrait\" | \"landscape\") => Promise<void>;\n    };\n    if (document.fullscreenElement && orientationApi?.lock) {\n      try {\n        await orientationApi.lock(next);\n        setOrientationHelp(false);\n        return;\n      } catch { /* Physical rotation remains available. */ }\n    }\n    setOrientationHelp(true);\n  }\n  async function complete() {\n    if (!lesson || props.readOnly || pending || done.has(lesson.id) || !canComplete) return;\n    setPending(true);\n    setError(null);\n    try {\n      await flushResume();\n      await onComplete(lesson);\n      setCompleted((old) =>\n        done.has(lesson.id)\n          ? old\n          : [\n              ...old,\n              {\n                course_progress_id: \"\",\n                lesson_id: lesson.id,\n                revision_id: lesson.revision.id,\n                completed_at: new Date().toISOString(),\n                completion_basis: \"learner\",\n                legacy_module_id: null,\n                migration_batch: null,\n              },\n            ],\n      );\n      setSavedMilestone(props.completionMilestone ? { lessonId: lesson.id, ...props.completionMilestone } : null);\n      setNewlyCompletedLessonId(prefersReducedMotion() ? null : lesson.id);\n    } catch {\n      setError(\n        ui(\n          \"Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.\",\n          \"Completion could not be saved. Retry or reload the lesson.\",\n        ),\n      );\n    } finally {\n      setPending(false);\n    }\n  }\n  const readerArticle = lesson && item && (\n      <article\n        className={storyLayout ? \"reference-story\" : \"rounded-xl border border-ink/15 p-4 sm:p-6\"}\n        data-layout={\"layout\" in item ? item.layout : \"read\"}\n        data-scene={item.id}\n        data-lesson={lesson.lesson_key}\n        lang={translation?.language ?? (en ? \"en\" : \"fil\")}\n      >\n        {storyArt && <figure className=\"reference-story-art\">\n          <Image\n            src={storyArt.src}\n            fill\n            sizes=\"(max-width: 700px) 100vw, 50vw\"\n            alt={storyArt.alt}\n            priority\n          />\n          <figcaption>{storyArt.caption}</figcaption>\n        </figure>}\n        <div className={storyLayout ? \"reference-story-copy\" : undefined}>\n        {storyVideoPrompt && <button type=\"button\"\n          className=\"mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold text-primary-text hover:bg-primary/20\"\n          onClick={() => setVideoSelected(true)}>\n          {ui(\"▶ Panoorin ang animadong kuwento na may salaysay\", \"▶ Watch the animated narrated story\")}\n        </button>}\n        {\"display_fil\" in item ? (\n          <>\n            <h2 tabIndex={-1} ref={heading} className={storyLayout ? \"reference-story-title\" : \"text-xl font-semibold\"}>\n              {en ? item.heading_en : item.heading_fil}\n            </h2>\n            {((lesson.lesson_key === \"bhw-teamwork\" && item.asset_ids.includes(\"malou-teamwork\")) || selfManagementRevision) && item.check && (\n              <p className=\"mt-3 text-lg\">{((en ? item.narration_en : item.narration_fil) ?? \"\").split(/\\n\\s*\\n/)[0]}</p>\n            )}\n            {(listeningRevision || clarificationRevision) && !storyLayout && figures}\n            {practice}\n            {revealSummary && <div\n              className={storyLayout ? \"reference-story-lines\" :\n                [\"comparison\", \"relationship-map\", \"scene\"].includes(\n                  item.layout,\n                )\n                  ? \"my-5 grid gap-3 sm:grid-cols-2\"\n                  : \"my-5 flex flex-col gap-3\"\n              }\n            >\n              {(en ? item.display_en : item.display_fil)\n                .split(\"\\n\")\n                .filter(Boolean)\n                .map((line, i) => (\n                  <p key={i} className={storyLayout ? \"reference-story-line\" : \"rounded-lg bg-ink/5 p-4 text-lg\"}>\n                    {item.layout === \"process\" ? (\n                      <span aria-hidden=\"true\">{i + 1}. </span>\n                    ) : null}\n                    {line}\n                  </p>\n                ))}\n            </div>}\n            {!storyLayout && !listeningRevision && !clarificationRevision && (revealSummary || selfManagementRevision || lesson?.lesson_key === \"bhw-right-contact\" || lesson?.lesson_key === \"bhw-local-partners\" || (lesson?.lesson_key === \"bhw-teamwork\" && item.asset_ids.includes(\"malou-teamwork\"))) && figures}\n            {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (\n              <details key={lesson.id + item.id + props.locale} className=\"mt-5 rounded-lg border border-ink/15 p-3\"\n                onToggle={event => {\n                  if (!event.currentTarget.open) event.currentTarget.querySelector(\"audio\")?.pause();\n                }}>\n                <summary className=\"min-h-[44px] cursor-pointer font-semibold\">\n                  {ui(\"Buong salaysay at audio\", \"Full narration and audio\")}\n                </summary>\n                <ReferenceReadSection\n                  key={lesson.id + item.id + props.locale}\n                  heading={en ? slideReadSection.heading_en : slideReadSection.heading_fil}\n                  body={en ? slideReadSection.body_en : slideReadSection.body_fil}\n                  takeaway={(en ? slideReadSection.takeaway_en : slideReadSection.takeaway_fil) ?? \"\"}\n                  narration={lessonNarration[slideReadSection.id]}\n                  en={en} text={ui}\n                />\n              </details>\n            )}\n          </>\n        ) : (\n          <ReferenceReadSection\n            key={lesson.id + item.id + props.locale + (translation?.language ?? \"\")}\n            heading={en ? item.heading_en : item.heading_fil}\n            body={en ? (storyLayout && item.id === \"morning\" ? clarifyMorningTimes(item.body_en) : item.body_en) : item.body_fil}\n            takeaway={revealSummary ? ((en ? item.takeaway_en : item.takeaway_fil) ?? \"\") : \"\"}\n            narration={revealSummary ? lessonNarration?.[item.id] : undefined}\n            en={en}\n            text={ui}\n            headingRef={heading}\n          >\n            {!storyLayout && figures}\n            {practice}\n            {!revealSummary && lessonNarration?.[item.id] && <p className=\"mt-3 text-sm\">\n              {ui(\"Sagutin muna ang tanong para mapakinggan ang audio na may buod.\", \"Answer the check to unlock this section’s audio, which includes the takeaway.\")}\n            </p>}\n          </ReferenceReadSection>\n        )}\n        </div>\n      </article>\n  );\n  const readerPager = lesson && item && (\n      <nav\n        className=\"flex items-center justify-between gap-2\"\n        aria-label={ui(\"Puwesto sa aralin\", \"Lesson position\")}\n      >\n        <button\n          type=\"button\"\n          className=\"rounded border p-3 disabled:opacity-40\"\n          disabled={index === 0}\n          onClick={() => move(items[index - 1])}\n        >\n          {ui(\"Nakaraan\", \"Previous\")}\n        </button>\n        <span aria-live=\"polite\">\n          {index + 1} / {items.length}\n        </span>\n        <button\n          type=\"button\"\n          className=\"rounded border p-3 disabled:opacity-40\"\n          disabled={index === items.length - 1}\n          onClick={() => move(items[index + 1])}\n        >\n          {ui(\"Susunod\", \"Next\")}\n        </button>\n      </nav>\n  );\n  const videoContent = featuredVideo && lesson && (\n    <div className=\"reference-story-player rounded-xl border border-ink/15 p-4 sm:p-6\" data-lesson={lesson.lesson_key}>\n      <p className=\"mb-1 text-sm font-semibold\">{narratedStory ? videoLabel : ui(\"Panoorin\", \"Watch\")}</p>\n      {narratedStory && <p className=\"text-sm\">\n        {ui(\"Pindutin ang Play para marinig ang salaysay sa napiling wika.\", \"Press Play to hear the story in your selected language.\")}\n      </p>}\n      <LessonAssetFigure\n        asset={featuredVideo}\n        en={en}\n        language={translation?.language}\n      />\n    </div>\n  );\n\n  return (\n    <section\n      className=\"flex flex-col gap-4\"\n      lang={translation?.language ?? (en ? \"en\" : \"fil\")}\n      aria-label={ui(\"Mga aralin sa Kabanata I\", \"Chapter I lessons\")}\n    >\n      {!props.lessonBaseHref && <p>\n        {required.filter((l) => done.has(l.id)).length} / {required.length}{\" \"}\n        {ui(\n          \"natapos na kinakailangang araling inilabas sa Kabanata I\",\n          \"released required Chapter I lessons completed\",\n        )}\n      </p>}\n      {!props.lessonBaseHref && <p className=\"text-sm\">\n        {ui(\n          \"Available ang Kabanata I. Hindi pa available ang Kabanata II–III.\",\n          \"Chapter I is available. Chapters II–III are not yet available.\",\n        )}\n      </p>}\n      {!lesson &&\n        props.chapters\n          .filter((c) => c.availability === \"unavailable\")\n          .map((c) => (\n            <p key={c.id} className=\"rounded border border-ink/10 p-3\">\n              {en ? c.title_en : c.title_fil} —{\" \"}\n              {ui(\"Hindi pa available\", \"Not yet available\")}\n            </p>\n          ))}\n      {!lesson ? (\n        <>\n          {nextLesson && (\n            <button\n              type=\"button\"\n              className=\"rounded bg-primary p-3 text-on-primary\"\n              onClick={() => open(nextLesson)}\n            >\n              {ui(\"Ipagpatuloy ang pag-aaral\", \"Continue learning\")}\n            </button>\n          )}\n          {!nextLesson && (\n            <p>\n              {ui(\n                \"Natapos ang mga inilabas na aralin. Maaari mong balikan ang mga ito.\",\n                \"Released lessons complete. You can revisit them below.\",\n              )}\n            </p>\n          )}\n          {modules\n            .filter((m) => lessons.some((l) => l.module_id === m.id))\n            .map((m) => (\n              <details key={m.id} open>\n                <summary className=\"cursor-pointer py-3 font-semibold\">\n                  {en ? m.title_en : m.title_fil}\n                </summary>\n                <ol className=\"flex flex-col gap-2\">\n                  {lessons\n                    .filter((l) => l.module_id === m.id)\n                    .map((l) => (\n                      <li key={l.id}>\n                        <button\n                          type=\"button\"\n                          className=\"w-full rounded border border-ink/20 p-3 text-left\"\n                          onClick={() => open(l)}\n                        >\n                          {en ? l.title_en : l.title_fil}\n                          {done.has(l.id) ? \" ✓\" : \"\"}\n                        </button>\n                      </li>\n                    ))}\n                </ol>\n              </details>\n            ))}\n        </>\n      ) : (\n        item && (\n          <>\n            {props.lessonBaseHref ? <Link prefetch={false} className=\"self-start underline\" href={props.returnHref??props.lessonBaseHref}>{ui(\"← Bumalik sa mga aralin\",\"← Back to lessons\")}</Link> : <button\n              type=\"button\"\n              className=\"self-start underline\"\n              onClick={() => {\n                setSelected(null);\n                setPosition(null);\n              }}\n            >\n              {ui(\"← Bumalik sa mga subchapter\", \"← Back to subchapters\")}\n            </button>}\n            <p>\n              {ui(\"Aralin\", \"Lesson\")}{\" \"}\n              {props.lessonNumber ?? siblings.findIndex((l) => l.id === lesson.id) + 1} /{\" \"}\n              {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}\n            </p>\n            <p className=\"text-sm\">\n              {(listeningRevision || clarificationRevision) ? (listeningMinutes === null ? ui(\n                \"Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 90-minutong guided practice.\",\n                \"Allow time for reading and practice; the 90-minute guided practice is separate.\",\n              ) : ui(\n                `Tinatayang ${listeningMinutes}–${listeningMinutes + 3} minuto sa kabuuan: salaysay sa wikang ito at 3–6 minutong maikling pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 90-minutong guided practice.`,\n                `Estimated ${listeningMinutes}–${listeningMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 90-minute guided practice is separate.`,\n              )) : selfManagementRevision ? (selfManagementMinutes === null ? ui(\n                \"Maglaan ng oras sa pagbasa, pagsasanay at pagninilay; hiwalay ang 30-minutong guided practice.\",\n                \"Allow time for reading, practice and reflection; the 30-minute guided practice is separate.\",\n              ) : ui(\n                `Tinatayang ${selfManagementMinutes}–${selfManagementMinutes + 3} minuto ayon sa audio sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 30-minutong guided practice.`,\n                `Estimated ${selfManagementMinutes}–${selfManagementMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 30-minute guided practice is separate.`,\n              )) : lesson.lesson_key === \"bhw-teamwork\" && lesson.revision.assets.some(asset => asset.id === \"malou-teamwork\") ? (teamworkMinutes === null ? ui(\n                \"Maglaan ng oras sa pagbasa, pagsasanay at pagninilay; hiwalay ang 30-minutong guided practice.\",\n                \"Allow time for reading, practice and reflection; the 30-minute guided practice is separate.\",\n              ) : ui(\n                `Tinatayang ${teamworkMinutes}–${teamworkMinutes + 3} minuto ayon sa audio sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 30-minutong guided practice.`,\n                `Estimated ${teamworkMinutes}–${teamworkMinutes + 3} minutes total: narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 30-minute guided practice is separate.`,\n              )) : lesson.lesson_key === \"bhw-relationships\" && lesson.revision.assets.some(asset => asset.id === \"malou-courtyard\") ? ui(\n                \"Tinatayang 10–13 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang 30-minutong guided practice.\",\n                \"Estimated 10–13 minutes for independent study; optional story and audio replay are additional. The 30-minute guided practice is separate.\",\n              ) : lesson.lesson_key === \"bhw-barangay-partners\" && lesson.revision.assets.some(asset => asset.id === \"malou-meeting\") ? ui(\n                \"Tinatayang 8–11 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang 20-minutong guided practice.\",\n                \"Estimated 8–11 minutes for independent study; optional story and audio replay are additional. The 20-minute guided practice is separate.\",\n              ) : lesson.lesson_key === \"bhw-right-contact\" && lesson.revision.assets.some(asset => asset.id === \"malou-contact\") ? ui(\n                \"Tinatayang 8–11 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang 30-minutong guided practice.\",\n                \"Estimated 8–11 minutes for independent study; optional story and audio replay are additional. The 30-minute guided practice is separate.\",\n              ) : lesson.lesson_key === \"bhw-follow-up\" && lesson.revision.assets.some(asset => asset.id === \"demi-follow-up\") ? ui(\n                \"Tinatayang 10–12 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang guided practice.\",\n                \"Estimated 10–12 minutes for independent study; optional stories and audio replay are additional. Guided practice is separate.\",\n              ) : lesson.lesson_key === \"bhw-accreditation\" && lesson.revision.assets.some(asset => asset.id === \"demi-accreditation-question\") ? ui(\n                \"Tinatayang 8–10 minuto para sa sariling pag-aaral; hindi kasama ang opsyonal na kuwento at audio replay. Hiwalay ang guided practice.\",\n                \"Estimated 8–10 minutes for independent study, excluding the optional story and audio replay. Guided practice is separate.\",\n              ) : lesson.lesson_key === \"bhw-eligibility\" ? ui(\n                \"Tinatayang 8–12 minuto para sa sariling pag-aaral; hindi kasama ang opsyonal na kuwento at audio replay. Hiwalay ang guided practice.\",\n                \"Estimated 8–12 minutes for independent study, excluding the optional story and audio replay. Guided practice is separate.\",\n              ) : lesson.lesson_key === \"bhw-benefits\" ? ui(\n                \"Tinatayang 10–12 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at hiwalay ang gabay na pagsasanay.\",\n                \"Estimated 10–12 minutes for independent study; the optional story is additional and facilitated practice is separate.\",\n              ) : (lesson.lesson_key === \"bhw-legal-role\" || lesson.lesson_key === \"bhs-resources\" || lesson.lesson_key === \"bhs-improvement\") ? ui(\n                \"Tinatayang 10 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at hiwalay ang gabay na pagsasanay.\",\n                \"Estimated 10 minutes for independent study; the optional story is additional and facilitated practice is separate.\",\n              ) : ui(\n                \"Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.\",\n                \"Estimated 3–7 minutes for independent study; facilitated practice is separate.\",\n              )}\n            </p>\n            <ul>\n              {(en ? lesson.objectives_en : lesson.objectives_fil).map((o) => (\n                <li key={o}>{o}</li>\n              ))}\n            </ul>\n            {availableTranslations.length > 0 && <label className=\"flex flex-wrap items-center gap-2 text-sm font-medium\">\n              {ui(\"Wika ng aralin\", \"Lesson language\")}\n              <select className=\"min-h-[44px] rounded border border-ink/20 bg-canvas px-3\"\n                value={translation?.language ?? \"\"} onChange={event => setTranslationLanguage(event.target.value || null)}>\n                <option value=\"\">{en ? \"English\" : \"Filipino\"}</option>\n                {availableTranslations.map(value => <option key={value.language} value={value.language}>{value.label}</option>)}\n              </select>\n            </label>}\n            {translation?.review_status === \"draft\" && <p role=\"status\" className=\"rounded border border-ink/20 px-3 py-2 text-sm\">\n              {ui(\"Draft para sa pagsusuri ng salin at pagbigkas.\", \"Draft for translation and pronunciation review.\")}\n            </p>}\n            <div className=\"flex flex-wrap gap-2\" role=\"group\" aria-label={ui(\"Uri ng nilalaman\", \"Content mode\")}>\n              {([\"read\", \"slides\"] as const).map((m) => (\n                <button\n                  type=\"button\"\n                  className=\"rounded border border-ink/20 px-4 py-2 aria-pressed:bg-primary aria-pressed:text-on-primary\"\n                  key={m}\n                  aria-pressed={!videoSelected && mode === m}\n                  onClick={() => changeMode(m)}\n                >\n                  {m === \"read\" ? ui(\"Basahin\", \"Read\") : ui(\"Slides\", \"Slides\")}\n                </button>\n              ))}\n              {featuredVideo && <button type=\"button\"\n                className=\"rounded border border-ink/20 px-4 py-2 aria-pressed:bg-primary aria-pressed:text-on-primary\"\n                aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}>\n                {videoLabel}\n              </button>}\n              <button\n                type=\"button\"\n                className=\"rounded border border-ink/20 px-4 py-2\"\n                onClick={openReader}\n              >\n                {ui(\"Buong screen\", \"Full screen\")}\n              </button>\n            </div>\n            {!readerOpen && (videoSelected ? videoContent : <>{readerArticle}{readerPager}</>)}\n            {!props.readOnly && <>\n            {!done.has(lesson.id) && <p id=\"lesson-completion-help\" className=\"text-sm\" aria-live=\"polite\">\n              {canComplete ? ui(\"Maaari mo nang markahang tapos ang aralin.\", \"You can now mark this lesson complete.\") :\n                ui(\"Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.\",\n                  \"Reach the end and answer every check in Read or Slides. Your first answer does not have to be correct. After a reload, answer the checks again.\")}\n            </p>}\n            <button\n              type=\"button\"\n              className=\"rounded bg-primary p-3 text-on-primary disabled:opacity-50\"\n              disabled={pending || done.has(lesson.id) || !canComplete}\n              aria-describedby={!done.has(lesson.id) ? \"lesson-completion-help\" : undefined}\n              onClick={complete}\n            >\n              {done.has(lesson.id)\n                ? ui(\"Natapos\", \"Completed\")\n                : ui(\"Markahang tapos ang aralin\", \"Mark lesson complete\")}\n            </button>\n            {done.has(lesson.id) && <div\n              role=\"status\"\n              data-celebrating={newlyCompletedLessonId === lesson.id ? \"true\" : undefined}\n              className=\"lesson-completion flex items-start gap-3 rounded-xl border border-success/40 bg-success/5 p-4\"\n            >\n              <span aria-hidden=\"true\" className=\"lesson-completion-check flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-success text-xl font-bold text-canvas\">✓</span>\n              <div className=\"min-w-0\">\n                <p className=\"font-semibold\">{ui(\"Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.\", \"Well done! Lesson complete. Your progress is saved.\")}</p>\n                {savedMilestone?.lessonId === lesson.id && (\n                  <p className=\"mt-3 flex items-start gap-2 rounded-lg border border-celebration/60 bg-celebration/20 px-3 py-2 font-medium\">\n                    <span aria-hidden=\"true\" className=\"scope-recognition-star text-primary-text\">★</span>\n                    <span>{savedMilestone.scope === \"chapter\"\n                      ? ui(\n                          `Tapos na ang mga aralin sa Kabanata ${savedMilestone.number}!`,\n                          `Chapter ${savedMilestone.number} lessons complete!`,\n                        )\n                      : ui(\n                          `Tapos na ang mga aralin sa subchapter ${savedMilestone.number}!`,\n                          `Subchapter ${savedMilestone.number} lessons complete!`,\n                        )}</span>\n                  </p>\n                )}\n                {props.nextLessonHref ? <Link prefetch={false} className=\"mt-3 inline-block rounded bg-primary p-3 text-on-primary\" href={props.nextLessonHref}>\n                  {ui(\"Susunod na aralin →\", \"Next lesson →\")}\n                </Link> : props.lessonBaseHref ? <Link prefetch={false} className=\"mt-3 inline-block underline\" href={props.returnHref??props.lessonBaseHref}>\n                  {ui(\"Bumalik sa listahan ng mga aralin →\", \"Return to the lesson list →\")}\n                </Link> : siblings[siblings.indexOf(lesson)+1] && <button type=\"button\" className=\"mt-3 rounded bg-primary p-3 text-on-primary\" onClick={()=>open(siblings[siblings.indexOf(lesson)+1])}>\n                  {ui(\"Susunod na aralin →\", \"Next lesson →\")}\n                </button>}\n              </div>\n            </div>}\n            </>}\n            <nav\n              className=\"flex flex-wrap justify-between gap-2\"\n              aria-label={ui(\"Mga aralin sa subchapter\", \"Subchapter lessons\")}\n            >\n              {siblings[siblings.indexOf(lesson) - 1] && (\n                <button\n                  type=\"button\"\n                  className=\"rounded border p-3\"\n                  onClick={() => open(siblings[siblings.indexOf(lesson) - 1])}\n                >\n                  {ui(\"Nakaraang aralin\", \"Previous lesson\")}\n                </button>\n              )}\n              {siblings[siblings.indexOf(lesson) + 1] && (\n                <button\n                  type=\"button\"\n                  className=\"rounded border p-3\"\n                  onClick={() => open(siblings[siblings.indexOf(lesson) + 1])}\n                >\n                  {ui(\"Susunod na aralin\", \"Next lesson\")}\n                </button>\n              )}\n            </nav>\n            <p className=\"text-sm\">\n              {ui(\n                \"Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.\",\n                \"Lesson completion is separate from demonstrated practical competence.\",\n              )}\n            </p>\n            <details>\n              <summary>{ui(\"Mga sanggunian\", \"Sources\")}</summary>\n              {lesson.revision.sources.map((s) => (\n                <p key={s.id}>\n                  {s.url ? (\n                    <a\n                      className=\"underline\"\n                      href={s.url}\n                      target=\"_blank\"\n                      rel=\"noreferrer\"\n                    >\n                      {s.title}\n                    </a>\n                  ) : (\n                    s.title\n                  )}\n                  {s.pdf_pages?.length ? `: PDF ${s.pdf_pages.join(\", \")}` : null}\n                </p>\n              ))}\n            </details>\n          </>\n        )\n      )}\n      {error && <div role=\"alert\"><p>{error}</p>{lesson && item && <button className=\"mt-2 underline\" onClick={()=>save(lesson,mode,item,true)}>{ui('Subukang i-save muli','Retry saving position')}</button>}</div>}\n      <dialog\n        ref={readerDialog}\n        aria-label={ui(\"Buong screen na aralin\", \"Full-screen lesson\")}\n        onClose={() => {\n          if (document.fullscreenElement === fullscreenTarget.current) {\n            void document.exitFullscreen().catch(() => {});\n          }\n          setReaderOpen(false);\n          setOrientationHelp(false);\n        }}\n        className=\"fixed inset-0 m-0 h-dvh max-h-dvh w-dvw max-w-none border-0 bg-canvas p-0 text-ink backdrop:bg-black/70\"\n      >\n        <div ref={fullscreenTarget} className=\"relative h-dvh w-dvw overflow-hidden bg-canvas text-ink\">\n          <div data-orientation={orientation} className=\"lesson-reader-surface flex h-dvh flex-col overflow-hidden bg-canvas text-ink\">\n          <div className=\"lesson-reader-toolbar grid grid-cols-[1fr_auto] items-center gap-2 border-b border-ink/15 px-3 py-2\">\n            <div className=\"col-start-1 row-start-1 flex gap-2\" role=\"group\" aria-label={ui(\"Uri ng nilalaman\", \"Content mode\")}>\n              {([\"read\", \"slides\"] as const).map((m) => (\n                <button key={m} type=\"button\" aria-pressed={!videoSelected && mode === m} onClick={() => changeMode(m)}\n                  className=\"rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary\">\n                  {m === \"read\" ? ui(\"Basahin\", \"Read\") : ui(\"Slides\", \"Slides\")}\n                </button>\n              ))}\n              {featuredVideo && <button type=\"button\" aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}\n                className=\"rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary\">\n                {videoLabel}\n              </button>}\n            </div>\n            <div className=\"lesson-reader-orientation col-span-2 row-start-2 flex justify-center gap-2\" role=\"group\" aria-label={ui(\"Oryentasyon\", \"Orientation\")}>\n              {([\"portrait\", \"landscape\"] as const).map((value) => (\n                <button key={value} type=\"button\" aria-pressed={orientation === value} onClick={() => void chooseOrientation(value)}\n                  className=\"rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary\">\n                  {value === \"portrait\" ? ui(\"Patayo\", \"Portrait\") : ui(\"Pahiga\", \"Landscape\")}\n                </button>\n              ))}\n            </div>\n            <button type=\"button\" onClick={closeReader} className=\"lesson-reader-close col-start-2 row-start-1 justify-self-end rounded border border-ink/25 px-3 py-2 text-sm\">\n              {ui(\"Isara\", \"Close\")}\n            </button>\n          </div>\n          {orientationHelp && <p role=\"status\" className=\"px-4 py-2 text-sm\">\n            {orientation === \"landscape\"\n              ? ui(\"I-rotate ang device nang pahiga para mabasa ang nilalaman.\", \"Turn your device sideways to read the content.\")\n              : ui(\"I-rotate ang device nang patayo para mabasa ang nilalaman.\", \"Turn your device upright to read the content.\")}\n          </p>}\n          {readerOpen && lesson && item && (videoSelected ? <div className=\"min-h-0 flex-1 overflow-y-auto p-4 sm:p-6\">{videoContent}</div> : storyLayout ? <div className=\"reference-story-presenter\">\n            <div\n              className=\"reference-story-presenter-content\"\n              role=\"region\"\n              tabIndex={0}\n              aria-label={ui(\"Nilalaman ng aralin\", \"Lesson content\")}\n            >{readerArticle}</div>\n            <div className=\"reference-story-presenter-pager\">{readerPager}</div>\n          </div> : <FittedLessonPage\n            key={`${lesson.id}:${mode}:${item.id}:${orientation}`}\n            content={readerArticle}\n            pager={readerPager}\n            maxContentWidth={orientation === \"portrait\" ? 720 : 1800}\n            en={en}\n          />)}\n          </div>\n        </div>\n      </dialog>\n    </section>\n  );\n}\n"
+    },
+    "scripts/lib/reference-narration.mjs": {
+      "predecessor_sha256": "eaf54138a3e381b71e11ae22863cf12a02de07c70b10315bcbeb4716ad1ae92c",
+      "proposed_sha256": "c4b5e3daf3da7319318e3f66dfdce2ff463c1067a81e68c385c289d3c6191b33",
+      "predecessor_utf8": "import {communicationClarifyStyle} from \"./communication-clarify-voice.mjs\";\n// Read-mode narration for converted Reference Manual lessons (subchapters\n// with a lessons/ folder). Audio is keyed by lesson key + stable section ID +\n// language + a hash of the exact narrated text and voice, never by a\n// positional index, and lives outside the immutable lesson revision: adding\n// or re-rendering narration never changes an approved revision hash.\n//\n// Each narration zone (heading, each body sentence, takeaway — the same\n// ordered list src/lib/elearning/narration-zones.ts builds in the browser) is\n// synthesized separately. The MP3 frames are then concatenated, so every\n// zone's start/end time is exact frame arithmetic rather than an estimate.\n// No I/O happens here; the CLI (scripts/training-narrate.mjs) injects it.\n\nimport { applyWordPronunciations } from \"./narration-pronunciation.mjs\";\nimport { createHash } from \"node:crypto\";\nimport { buildNarrationZones } from \"./narration-zones.mjs\";\nimport { computeContentHash } from \"./tts-render-core.mjs\";\nimport { communicationListenStyle, BHW_SELF_MANAGEMENT_STORY_STYLES, BHW_RIGHT_CONTACT_STORY_STYLES, BHW_TEAMWORK_STORY_STYLES, BHW_RELATIONSHIPS_STORY_STYLES, BHW_BARANGAY_PARTNERS_STORY_STYLES, BHW_LOCAL_PARTNERS_STORY_STYLES } from \"./tts-providers/gemini.mjs\";\nimport { BHW_FOLLOW_UP_STORY_STYLES, BHW_ACCREDITATION_FIL_STEADY_STYLE, BHW_ACCREDITATION_STORY_STYLES, BHW_ELIGIBILITY_STORY_STYLES, BHW_BENEFITS_STORY_STYLES, BHW_LEGAL_ROLE_STORY_STYLES, geminiVoiceId, BHS_IMPROVEMENT_STORY_STYLES, BHS_RESOURCES_STORY_STYLES, BHS_DECLINE_STORY_STYLES, BHS_SUPPORT_ENVIRONMENT_STORY_STYLES, BHS_PROMOTIONS_STORY_STYLES, LOCAL_SYSTEM_STORY_STYLES, UHC_IMPROVEMENT_STORY_STYLES, PRIMARY_CARE_STORY_STYLES, ROLES_APPLICATION_STORY_STYLES, ORGANIZER_STORY_STYLES, RECORDS_STORY_STYLES, SERVICE_PROVIDER_STORY_STYLES, UHC_COVERAGE_STORY_STYLES } from \"./tts-providers/gemini.mjs\";\n\nexport const NARRATION_VOICES = { fil: \"fil-PH-BlessicaNeural\", en: \"en-PH-RosaNeural\" };\n// Gemini narration is re-encoded to 32 kbps mono, the content standard's cap.\nexport const GEMINI_NARRATION_KBPS = 32;\n// Voice per provider and language. The voice string is part of the content\n// hash (and so of the file name): switching provider re-renders a section.\nexport const PROVIDER_VOICES = {\n  edge: NARRATION_VOICES,\n  gemini: { fil: geminiVoiceId(), en: geminiVoiceId() },\n};\nexport const providerOfVoice = (voice) => (voice?.startsWith(\"gemini:\") ? \"gemini\" : \"edge\");\nconst hashVoice = (provider, voice, speechStyle) =>\n  provider === \"gemini\" ? `${voice}|${SPEECH_RULES}|mp3-${GEMINI_NARRATION_KBPS}k-resampled${speechStyle ? `|${speechStyle}` : \"\"}` : `${voice}|${SPEECH_RULES}`;\nexport const AUDIO_ROOT = \"/training/audio\";\n// General speech rules; word exceptions are versioned separately in computeContentHash.\nexport const SPEECH_RULES = \"speech-v2\";\n\n// English letter names spelled for the Filipino voice. Given \"BHW\" or\n// \"B H W\" it reads a word or Spanish-style letters; these spellings make it\n// say \"bee-aitch-double-u\" like the English voice (checked by transcribing\n// the synthesized audio).\nconst FILIPINO_LETTER_NAMES = {\n  A: \"ey\", B: \"bi\", C: \"si\", D: \"di\", E: \"i\", F: \"ef\", G: \"dyi\", H: \"eych\", I: \"ay\",\n  J: \"dyey\", K: \"key\", L: \"el\", M: \"em\", N: \"en\", O: \"o\", P: \"pi\", Q: \"kyu\", R: \"ar\",\n  S: \"es\", T: \"ti\", U: \"yu\", V: \"vi\", W: \"dobolyu\", X: \"eks\", Y: \"way\", Z: \"zi\",\n};\nconst ROMAN_NUMERALS = { II: \"2\", III: \"3\" };\n\n// Known spoken words (including YAKAP, Tagalog for hug) override acronym spelling.\n// Other runs of two or more capitals are spelled letter by\n// letter in both languages (BHW -> B H W, HEPO -> H E P O). A trailing\n// plural or possessive s (BHWs, BHW's, BHWs') stays attached.\nexport function spellAcronyms(text, language) {\n  return applyWordPronunciations(text).replace(/(?<![A-Za-z])([A-Z]{2,})(s['’]?|['’]s)?(?![A-Za-z])/g, (whole, letters, suffix) => {\n    if (!suffix && ROMAN_NUMERALS[letters]) return ROMAN_NUMERALS[letters];\n    if (language === \"fil\" || language === \"ceb\" || language === \"hil\") return [...letters].map((c) => FILIPINO_LETTER_NAMES[c]).join(\"-\") + (suffix ? \"s\" : \"\");\n    return [...letters].join(\" \") + (suffix ? \"'s\" : \"\");\n  });\n}\n\n// What the voice reads for a zone. Zones keep the displayed text (the browser\n// rebuilds them from the revision to align highlighting); markdown emphasis\n// markers are removed, a slash between words (CHO/MHO, midwife/RHU) is read\n// as \"or\", and acronyms are spelled out.\nexport const spokenText = (text, language) =>\n  spellAcronyms(\n    text.replace(/\\*\\*/g, \"\").replace(/(?<=[A-Za-z])\\/(?=[A-Za-z])/g, language === \"fil\" ? \" o \" : \" or \"),\n    language,\n  )\n    .replace(/\\s+/g, \" \")\n    .trim();\n\n// Target-only speech aliases; authored text and browser timing labels stay unchanged.\nexport const communicationListenSpokenText = (text, language, phonetic = false) =>\n  spokenText(text, language).replace(/\\bLiza\\b/g, phonetic ? \"Lee-sah\" : \"Lisa\").replace(/\\bGibs\\b/g, \"Gibz\");\n\nconst L3_BITRATES = {\n  1: [0, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320],\n  2: [0, 8, 16, 24, 32, 40, 48, 56, 64, 80, 96, 112, 128, 144, 160],\n};\nconst SAMPLE_RATES = { 3: [44100, 48000, 32000], 2: [22050, 24000, 16000], 0: [11025, 12000, 8000] };\n\nfunction frameAt(bytes, offset) {\n  if (offset + 4 > bytes.length || bytes[offset] !== 0xff || (bytes[offset + 1] & 0xe0) !== 0xe0) return null;\n  const version = (bytes[offset + 1] >> 3) & 3; // 3 MPEG-1, 2 MPEG-2, 0 MPEG-2.5\n  const layer = (bytes[offset + 1] >> 1) & 3; // 1 = Layer III\n  if (version === 1 || layer !== 1) return null;\n  const bitrate = L3_BITRATES[version === 3 ? 1 : 2][(bytes[offset + 2] >> 4) & 0xf];\n  const sampleRate = SAMPLE_RATES[version]?.[(bytes[offset + 2] >> 2) & 3];\n  if (!bitrate || !sampleRate) return null;\n  const padding = (bytes[offset + 2] >> 1) & 1;\n  const mpeg1 = version === 3;\n  const length = Math.floor(((mpeg1 ? 144 : 72) * bitrate * 1000) / sampleRate) + padding;\n  return { offset, length, sampleRate, samples: mpeg1 ? 1152 : 576 };\n}\n\n// Layer III audio frames of one clip, without a leading ID3v2 tag and\n// without the Xing/Info header frame. That frame records the frame count of\n// its own clip only; left in a concatenation it makes some players report\n// the first sentence's length as the whole file's duration.\nexport function mp3AudioFrames(bytes) {\n  let offset = 0;\n  if (bytes.length >= 10 && bytes.toString(\"latin1\", 0, 3) === \"ID3\") {\n    const size = ((bytes[6] & 0x7f) << 21) | ((bytes[7] & 0x7f) << 14) | ((bytes[8] & 0x7f) << 7) | (bytes[9] & 0x7f);\n    offset = 10 + size;\n  }\n  const frames = [];\n  while (offset < bytes.length) {\n    const frame = frameAt(bytes, offset);\n    if (!frame || frame.offset + frame.length > bytes.length) break;\n    frames.push(frame);\n    offset += frame.length;\n  }\n  if (offset !== bytes.length) throw new Error(`unparseable MP3 data at byte ${offset} of ${bytes.length}`);\n  if (frames.length) {\n    const first = bytes.subarray(frames[0].offset, frames[0].offset + frames[0].length).toString(\"latin1\");\n    if (first.includes(\"Xing\") || first.includes(\"Info\")) frames.shift();\n  }\n  if (!frames.length) throw new Error(\"MP3 clip contains no audio frames\");\n  if (new Set(frames.map((f) => f.sampleRate)).size !== 1) throw new Error(\"MP3 clip mixes sample rates\");\n  return frames.map((f) => ({ ...f, data: bytes.subarray(f.offset, f.offset + f.length) }));\n}\n\n// clips[i] is the synthesized MP3 for zones[i]. Returns one continuous MP3\n// plus timings in the LessonAudioTiming shape the renderer consumes.\nexport function assembleNarration(zones, clips) {\n  if (zones.length !== clips.length) throw new Error(\"one clip is required per narration zone\");\n  const parts = [];\n  const timings = [];\n  let sampleRate = null;\n  let samples = 0;\n  zones.forEach((zone, i) => {\n    const frames = mp3AudioFrames(clips[i]);\n    sampleRate ??= frames[0].sampleRate;\n    if (frames[0].sampleRate !== sampleRate) throw new Error(\"narration clips must share one sample rate\");\n    const start = samples;\n    for (const frame of frames) {\n      parts.push(frame.data);\n      samples += frame.samples;\n    }\n    timings.push({\n      zone: zone.zone,\n      index: zone.index,\n      text: zone.text,\n      start_ms: Math.round((start * 1000) / sampleRate),\n      end_ms: Math.round((samples * 1000) / sampleRate),\n    });\n  });\n  return { bytes: Buffer.concat(parts), timings, durationSeconds: Math.round((samples / sampleRate) * 1000) / 1000 };\n}\n\n// Renders one planned item. Synthesizers are injected (the CLI passes the\n// real ones; tests pass fakes). Both paths send spokenText but record the\n// displayed zone text in timings, which is what timingsMatchSection compares\n// against the published revision.\nexport async function renderNarration(item, { synthesizeUtterance, synthesizeWithGemini, geminiApiKey, fetchImpl }) {\n  if (item.provider === \"gemini\") {\n    const audio = await synthesizeWithGemini(item.zones, item.language, {\n      apiKey: geminiApiKey,\n      kbps: GEMINI_NARRATION_KBPS,\n      speak: (zone) => [\"communication-listen\", \"communication-clarify\"].includes(item.lessonKey)\n        ? communicationListenSpokenText(zone.text, item.language, item.speechStyle?.includes(\"Delivery revision 3.\"))\n        : spokenText(zone.text, item.language),\n      ...(item.speechStyle ? { style: item.speechStyle } : {}),\n      ...(fetchImpl ? { fetchImpl } : {}),\n    });\n    // The encoder pads the last frame, so the file runs a few ms past the\n    // final sentence: record the file's own length, as the Edge path does.\n    const frames = mp3AudioFrames(audio.audioBytes);\n    const seconds = frames.reduce((n, f) => n + f.samples, 0) / frames[0].sampleRate;\n    return { bytes: audio.audioBytes, timings: audio.timings, durationSeconds: Math.round(seconds * 1000) / 1000 };\n  }\n  const clips = [];\n  for (const zone of item.zones) clips.push(await synthesizeUtterance(spokenText(zone.text, item.language), item.voice));\n  return assembleNarration(item.zones, clips);\n}\n\nexport const sha256 = (bytes) => createHash(\"sha256\").update(bytes).digest(\"hex\");\n\nexport function narrationSrc(moduleKey, lessonKey, sectionId, language, contentHash) {\n  return `${AUDIO_ROOT}/${moduleKey}/${lessonKey}/${sectionId}.${language}.${contentHash.slice(0, 12)}.mp3`;\n}\n\n/**\n * @param {Array<{key: string, lessons: Array}>} modules - { key, lessons } where\n *   lessons come from loadReferenceModule(...).lessons\n * @param {object} manifest - the current narration manifest\n * @param {(src: string) => string | null} fileHash - sha256 of a public file, or null if missing\n * @param {{ provider?: \"edge\" | \"gemini\" }} [options] - with no provider, each\n *   section keeps the provider its current audio used (new sections: edge), so\n *   a plain re-run after a text edit never swaps a re-voiced chapter back.\n */\nexport function planReferenceNarration(modules, manifest, fileHash, { provider: chosen } = {}) {\n  const items = [];\n  for (const { key: moduleKey, lessons } of modules) {\n    for (const lesson of lessons) {\n      const lessonKey = lesson.manifest.lesson_key;\n      for (const section of lesson.revision.read_sections) {\n        for (const language of /** @type {const} */ ([\"fil\", \"en\"])) {\n          const zones = buildNarrationZones({\n            heading: section[`heading_${language}`],\n            body: section[`body_${language}`],\n            takeaway: section[`takeaway_${language}`],\n          });\n          if (!zones.length) continue;\n          const existing = manifest.lessons?.[lessonKey]?.sections?.[section.id]?.[language];\n          // New sections of these Gemini stories must preserve their target provider.\n          const provider = chosen ?? ([\"communication-listen\", \"bhw-self-management\", \"bhw-right-contact\", \"bhw-teamwork\", \"bhw-local-partners\", \"bhw-barangay-partners\", \"bhw-relationships\", \"bhw-follow-up\", \"bhw-accreditation\", \"bhw-eligibility\", \"bhw-benefits\", \"bhw-legal-role\", \"bhs-improvement\", \"bhs-resources\", \"bhs-decline\", \"bhs-support-environment\", \"bhs-promotions\", \"uhc-local-system\", \"uhc-improvement\"].includes(lessonKey) ? \"gemini\" : providerOfVoice(existing?.voice));\n          const voice = PROVIDER_VOICES[provider][language];\n          const speechStyle = provider === \"gemini\"\n            ? lessonKey === \"communication-clarify\" ? communicationClarifyStyle(language, section.id) : lessonKey === \"communication-listen\" ? communicationListenStyle(language, section.id) : lessonKey === \"bhw-self-management\" ? BHW_SELF_MANAGEMENT_STORY_STYLES[language] : lessonKey === \"bhw-right-contact\" ? BHW_RIGHT_CONTACT_STORY_STYLES[language] + ((language === \"en\" && [\"section-11\", \"section-12\", \"contact-professional\"].includes(section.id) || language === \"fil\" && section.id === \"contact-professional\") ? \" Keep a settled adult FEMALE narrator in a warm feminine mid register for this entire recording, including its heading and every separately supplied sentence. Do not use a masculine/baritone or announcer voice for headings or prompts. Every request is a continuation by the same Filipina woman, with the same vocal identity and pitch range. No speaker switching or acting out another person. Preserve every word and negation and finish the final instruction clearly.\" : \"\") : lessonKey === \"bhw-teamwork\" ? BHW_TEAMWORK_STORY_STYLES[language] + (language === \"fil\" && [\"teamwork-five-practices\", \"teamwork-role-agreement\"].includes(section.id) ? \" Every separately supplied sentence continues exactly the same settled adult female Kore trainer voice. Do not switch to a male, lower or raspier presenter for list introductions or endings. Preserve exact words and every syllable. Pronounce gawain as ga-wa-in, never gagawin; napahintulutan as na-pa-hin-tu-lu-tan; pribasiya as pri-ba-si-ya. Do not replace, shorten or insert words.\" : \"\") : lessonKey === \"bhw-local-partners\" ? BHW_LOCAL_PARTNERS_STORY_STYLES[language] + ((section.id === \"local-request\" || (section.id === \"local-partners-application-check\" && language === \"en\")) ? \" Keep every separately synthesized sentence in the identical adult Filipina narrator timbre and mid-register as the heading. This is one continuous woman narrator, with no male or secondary announcer voice. Read the exact words; preserve negations, conditions and complete endings.\" : \"\") : lessonKey === \"bhw-barangay-partners\" ? BHW_BARANGAY_PARTNERS_STORY_STYLES[language] + (language === \"fil\" && section.id === \"barangay-partners-application-check\" ? \" This entire application screen is narrated by the same warm adult Filipina woman, including its title, scenario, question, instructions and takeaway. Keep the curious question in that same female mid-pitched voice; no male/baritone presenter and no separate quizmaster or character voice. Every separately supplied sentence is a continuation of this single woman trainer. Read tanong sa pagsasanay clearly and end every instruction completely.\" : \"\") : lessonKey === \"bhw-relationships\"\n              ? BHW_RELATIONSHIPS_STORY_STYLES[language] + (language === 'en' && ['section-1', 'community-listening'].includes(section.id) ? ' Pronounce Nena as NEH-nah, with the same narrator voice throughout.' : '') + (language === 'fil' && section.id === 'relationships-application-check' ? ' Use a settled adult Filipina woman narrator in a warm mid-pitched register. Read the heading and short opening instruction in that same female register as the scenario and ending; do not lower them to a male or baritone voice. Every separate heading, body and takeaway request belongs to this single narrator. Keep register steady, with gentle instructional cadence and no speaker switching.' : '')\n              : lessonKey === \"bhw-follow-up\"\n              ? BHW_FOLLOW_UP_STORY_STYLES[language]\n              : lessonKey === \"bhw-accreditation\"\n              ? BHW_ACCREDITATION_STORY_STYLES[language] + (language === \"fil\" && [\"section-5\", \"accreditation-application-check\"].includes(section.id) ? BHW_ACCREDITATION_FIL_STEADY_STYLE : \"\")\n              : lessonKey === \"bhw-eligibility\"\n              ? BHW_ELIGIBILITY_STORY_STYLES[language]\n              : lessonKey === \"bhw-benefits\"\n              ? BHW_BENEFITS_STORY_STYLES[language]\n              : lessonKey === \"bhw-legal-role\"\n              ? BHW_LEGAL_ROLE_STORY_STYLES[language]\n              : lessonKey === \"bhs-improvement\"\n              ? BHS_IMPROVEMENT_STORY_STYLES[language]\n              : lessonKey === \"bhs-resources\"\n              ? BHS_RESOURCES_STORY_STYLES[language]\n              : lessonKey === \"bhs-decline\"\n              ? BHS_DECLINE_STORY_STYLES[language]\n              : lessonKey === \"bhs-support-environment\"\n                ? BHS_SUPPORT_ENVIRONMENT_STORY_STYLES[language]\n              : lessonKey === \"bhs-promotions\"\n              ? BHS_PROMOTIONS_STORY_STYLES[language] + (section.id === 'section-2' && language === 'fil' ? ' Say the order number 2015-0053 as twenty fifteen, zero zero five three. Preserve both leading zeros and do not say five five three. Keep DOH and AO as clear individual letters.' : '')\n              : lessonKey === \"uhc-local-system\"\n                ? LOCAL_SYSTEM_STORY_STYLES[language]\n              : lessonKey === \"bhw-community-organizer\"\n              ? ORGANIZER_STORY_STYLES[language]\n              : lessonKey === \"bhw-service-provider\"\n                ? SERVICE_PROVIDER_STORY_STYLES[language]\n                : lessonKey === \"bhw-records\"\n                  ? RECORDS_STORY_STYLES[language]\n                  : lessonKey === \"bhw-roles-application\"\n                    ? ROLES_APPLICATION_STORY_STYLES[language]\n                    : lessonKey === \"uhc-primary-care\"\n                      ? PRIMARY_CARE_STORY_STYLES[language]\n                    : lessonKey === \"uhc-improvement\"\n                      ? UHC_IMPROVEMENT_STORY_STYLES[language]\n                    : lessonKey === \"uhc-coverage\"\n                    ? UHC_COVERAGE_STORY_STYLES[language]\n                : null\n            : null;\n          const contentHash = computeContentHash(zones, hashVoice(provider, voice, speechStyle));\n          const src = narrationSrc(moduleKey, lessonKey, section.id, language, contentHash);\n          const current =\n            existing?.content_hash === contentHash && existing.src === src && fileHash(src) === existing.sha256;\n          items.push({\n            moduleKey,\n            lessonKey,\n            sectionId: section.id,\n            language,\n            provider,\n            voice,\n            speechStyle,\n            zones,\n            contentHash,\n            src,\n            action: current ? \"skip\" : \"render\",\n            existing: current ? existing : null,\n            // Audio this item replaces; kept if the render is deferred or fails.\n            previous: current ? null : (existing ?? null),\n            charCount: zones.reduce((n, z) => n + z.text.length, 0),\n          });\n        }\n      }\n    }\n  }\n  return items;\n}\n\n// Rebuilds manifest entries for every planned lesson from rendered/kept\n// results, drops lessons of the processed modules that no longer exist, and\n// leaves other modules' entries untouched.\nexport function buildManifest(previous, modules, results) {\n  const processed = new Set(modules.map((m) => m.key));\n  const lessons = Object.fromEntries(\n    Object.entries(previous.lessons ?? {}).filter(([, entry]) => !processed.has(entry.module)),\n  );\n  for (const r of results) {\n    const lesson = (lessons[r.lessonKey] ??= { module: r.moduleKey, sections: {} });\n    (lesson.sections[r.sectionId] ??= {})[r.language] = {\n      src: r.src,\n      voice: r.voice,\n      content_hash: r.contentHash,\n      sha256: r.sha256,\n      duration_seconds: r.durationSeconds,\n      timings: r.timings,\n    };\n  }\n  const sorted = Object.fromEntries(Object.keys(lessons).sort().map((k) => [k, lessons[k]]));\n  // Summary only (the app reads each entry's own voice): every voice in use, per language.\n  const voices = { fil: new Set(), en: new Set() };\n  for (const lesson of Object.values(sorted))\n    for (const section of Object.values(lesson.sections))\n      for (const [language, entry] of Object.entries(section)) voices[language]?.add(entry.voice);\n  const summary = Object.fromEntries(Object.entries(voices).map(([l, set]) => [l, [...set].sort().join(\", \")]));\n  return { format: \"mp3\", voices: summary, lessons: sorted, ...(previous.history ? { history: previous.history } : {}) };\n}\n\nexport function referencedSources(manifest) {\n  const sources = new Set();\n  for (const lesson of [...Object.values(manifest.lessons ?? {}), ...Object.values(manifest.history ?? {}).flat()])\n    for (const section of Object.values(lesson.sections))\n      for (const entry of Object.values(section)) sources.add(entry.src);\n  return sources;\n}\n"
+    },
+    "content/training/day1-basic-competencies/narration.json": {
+      "predecessor_sha256": "bd99e8989b4aeab5cd0e7430be9bd95eba35b0a2254436298ddbb9286aa7e15a",
+      "proposed_sha256": "d08a89d5256be80ac8788349a217c5cbfbd76b9d4ea29bbb285328efb14b585d",
+      "predecessor_narration": {
+        "lesson": {
+          "module": "06-komunikasyon",
+          "sections": {
+            "check": {
+              "en": {
+                "src": "/training/audio/06-komunikasyon/communication-record/check.en.2e5217dea0f9.mp3",
+                "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                "content_hash": "2e5217dea0f9e4c099484159e51d223605050f499bbc52a84cbeb37cd6b4eb41",
+                "sha256": "970eeba4294e2492068cf81cc040ff76a1b597b0f02e02b9a09fdbdf4db14308",
+                "duration_seconds": 17.293,
+                "timings": [
+                  {
+                    "zone": "heading",
+                    "index": 0,
+                    "text": "Choose the next step",
+                    "start_ms": 0,
+                    "end_ms": 2000
+                  },
+                  {
+                    "zone": "body",
+                    "index": 0,
+                    "text": "Choose an answer and explain why before viewing the feedback.",
+                    "start_ms": 2300,
+                    "end_ms": 6780
+                  },
+                  {
+                    "zone": "body",
+                    "index": 1,
+                    "text": "Then compare it with your own practice attempt.",
+                    "start_ms": 7080,
+                    "end_ms": 10600
+                  },
+                  {
+                    "zone": "takeaway",
+                    "index": 0,
+                    "text": "Clear sources and explicit gaps prevent a guess becoming an official record.",
+                    "start_ms": 10900,
+                    "end_ms": 17220
+                  }
+                ]
+              },
+              "fil": {
+                "src": "/training/audio/06-komunikasyon/communication-record/check.fil.37d60632cbde.mp3",
+                "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                "content_hash": "37d60632cbde57f1a93aaa44b3c99b4a1f80a6a87f2a7d259bef862cf79f2d5f",
+                "sha256": "da80ca02c98d69d74a845ae91f3ab4936a660f6e187b921fd0d60425c370bf80",
+                "duration_seconds": 21.525,
+                "timings": [
+                  {
+                    "zone": "heading",
+                    "index": 0,
+                    "text": "Piliin ang susunod na hakbang",
+                    "start_ms": 0,
+                    "end_ms": 3120
+                  },
+                  {
+                    "zone": "body",
+                    "index": 0,
+                    "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+                    "start_ms": 3420,
+                    "end_ms": 8620
+                  },
+                  {
+                    "zone": "body",
+                    "index": 1,
+                    "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+                    "start_ms": 8920,
+                    "end_ms": 13480
+                  },
+                  {
+                    "zone": "takeaway",
+                    "index": 0,
+                    "text": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
+                    "start_ms": 13780,
+                    "end_ms": 21460
+                  }
+                ]
+              }
+            },
+            "conflicting-accounts": {
+              "en": {
+                "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.en.d0ca72e8d0a2.mp3",
+                "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                "content_hash": "d0ca72e8d0a20adaecc3dfd9ca5adcbf88b1ebaaa63c41dfd7d2e4bb428f92a6",
+                "sha256": "85787805b374c6ff2ce8e7a23c541b5a2a185438dcbdc81918fd841b91b323c4",
+                "duration_seconds": 34.873,
+                "timings": [
+                  {
+                    "zone": "heading",
+                    "index": 0,
+                    "text": "When accounts differ",
+                    "start_ms": 0,
+                    "end_ms": 1960
+                  },
+                  {
+                    "zone": "body",
+                    "index": 0,
+                    "text": "Liza says the appointment was canceled; a neighbor says she was not interested.",
+                    "start_ms": 2260,
+                    "end_ms": 8260
+                  },
+                  {
+                    "zone": "body",
+                    "index": 1,
+                    "text": "Do not choose a story because one voice is louder.",
+                    "start_ms": 8560,
+                    "end_ms": 12920
+                  },
+                  {
+                    "zone": "body",
+                    "index": 2,
+                    "text": "Ask Liza, check the authorized record and identify the source of each detail.",
+                    "start_ms": 13220,
+                    "end_ms": 19460
+                  },
+                  {
+                    "zone": "body",
+                    "index": 3,
+                    "text": "If uncertainty remains, tell the health team.",
+                    "start_ms": 19760,
+                    "end_ms": 23360
+                  },
+                  {
+                    "zone": "body",
+                    "index": 4,
+                    "text": "Respecting a person and being careful with evidence can happen together.",
+                    "start_ms": 23660,
+                    "end_ms": 29100
+                  },
+                  {
+                    "zone": "takeaway",
+                    "index": 0,
+                    "text": "When accounts differ, clarify and verify before deciding.",
+                    "start_ms": 29400,
+                    "end_ms": 34800
+                  }
+                ]
+              },
+              "fil": {
+                "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.fil.d377496d80c4.mp3",
+                "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                "content_hash": "d377496d80c4e8c7fdae9637a4e0afedb318156c8a0f36017c2bf4cb3fda3459",
+                "sha256": "a3e9c5036553934a1bf7109fa9efc4bf448d6bcf97df912188a735d921766163",
+                "duration_seconds": 41.273,
+                "timings": [
+                  {
+                    "zone": "heading",
+                    "index": 0,
+                    "text": "Kapag may magkaibang kuwento",
+                    "start_ms": 0,
+                    "end_ms": 2800
+                  },
+                  {
+                    "zone": "body",
+                    "index": 0,
+                    "text": "Sabi ni Liza, kinansela ang schedule; sabi ng kapitbahay, hindi siya interesado.",
+                    "start_ms": 3100,
+                    "end_ms": 10580
+                  },
+                  {
+                    "zone": "body",
+                    "index": 1,
+                    "text": "Huwag pumili ng kuwento dahil mas malakas ang boses.",
+                    "start_ms": 10880,
+                    "end_ms": 15000
+                  },
+                  {
+                    "zone": "body",
+                    "index": 2,
+                    "text": "Tanungin si Liza, suriin ang awtorisadong tala at itala ang pinagmulan ng bawat detalye.",
+                    "start_ms": 15300,
+                    "end_ms": 23660
+                  },
+                  {
+                    "zone": "body",
+                    "index": 3,
+                    "text": "Kung hindi pa malinaw, sabihin iyon sa health team.",
+                    "start_ms": 23960,
+                    "end_ms": 28040
+                  },
+                  {
+                    "zone": "body",
+                    "index": 4,
+                    "text": "Ang tiwala sa kausap at pagiging maingat sa ebidensya ay maaaring sabay na gawin.",
+                    "start_ms": 28340,
+                    "end_ms": 34620
+                  },
+                  {
+                    "zone": "takeaway",
+                    "index": 0,
+                    "text": "Kapag magkaiba ang kuwento, maglinaw at magberipika bago magpasya.",
+                    "start_ms": 34920,
+                    "end_ms": 41200
+                  }
+                ]
+              }
+            },
+            "practice": {
+              "en": {
+                "src": "/training/audio/06-komunikasyon/communication-record/practice.en.137d49670c1a.mp3",
+                "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                "content_hash": "137d49670c1a44e357f26ca8a2bdf65052f27f9083c9e0296340c5cb65c5540d",
+                "sha256": "e888f29933b9ec48b41a75e4462591afaff436a05dd0ae442edbd00d324f41dc",
+                "duration_seconds": 37.695,
+                "timings": [
+                  {
+                    "zone": "heading",
+                    "index": 0,
+                    "text": "Try it, then repeat",
+                    "start_ms": 0,
+                    "end_ms": 2560
+                  },
+                  {
+                    "zone": "body",
+                    "index": 0,
+                    "text": "Draw three boxes: “Reported,” “Observed,” and “Unconfirmed.”",
+                    "start_ms": 2860,
+                    "end_ms": 9180
+                  },
+                  {
+                    "zone": "body",
+                    "index": 1,
+                    "text": "Sort Liza’s details.",
+                    "start_ms": 9480,
+                    "end_ms": 11760
+                  },
+                  {
+                    "zone": "body",
+                    "index": 2,
+                    "text": "Add: “Verify the date against the authorized record with the midwife.”",
+                    "start_ms": 12060,
+                    "end_ms": 18020
+                  },
+                  {
+                    "zone": "body",
+                    "index": 3,
+                    "text": "Ask a partner to check for guesses or diagnoses.",
+                    "start_ms": 18320,
+                    "end_ms": 22480
+                  },
+                  {
+                    "zone": "body",
+                    "index": 4,
+                    "text": "Alone, underline each detail’s source.",
+                    "start_ms": 22780,
+                    "end_ms": 26620
+                  },
+                  {
+                    "zone": "body",
+                    "index": 5,
+                    "text": "In your next record, mark what remains unconfirmed.",
+                    "start_ms": 26920,
+                    "end_ms": 31040
+                  },
+                  {
+                    "zone": "takeaway",
+                    "index": 0,
+                    "text": "Clear sources and explicit gaps prevent a guess becoming an official record.",
+                    "start_ms": 31340,
+                    "end_ms": 37620
+                  }
+                ]
+              },
+              "fil": {
+                "src": "/training/audio/06-komunikasyon/communication-record/practice.fil.7e71c8321ea6.mp3",
+                "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                "content_hash": "7e71c8321ea60888b40122d73270c08ea2029306d9390c7950646761dd5ad6e0",
+                "sha256": "60a1771fabe65c195cdb2cab9e92c0a8aba67ed78f7d265a61ecef9c07c11c86",
+                "duration_seconds": 44.617,
+                "timings": [
+                  {
+                    "zone": "heading",
+                    "index": 0,
+                    "text": "Subukan, saka ulitin",
+                    "start_ms": 0,
+                    "end_ms": 2880
+                  },
+                  {
+                    "zone": "body",
+                    "index": 0,
+                    "text": "Gumawa ng tatlong kahon: “Sinabi,” “Nakita,” at “Hindi pa tiyak.”",
+                    "start_ms": 3180,
+                    "end_ms": 9660
+                  },
+                  {
+                    "zone": "body",
+                    "index": 1,
+                    "text": "Ilagay ang detalye ni Liza sa tamang kahon.",
+                    "start_ms": 9960,
+                    "end_ms": 13840
+                  },
+                  {
+                    "zone": "body",
+                    "index": 2,
+                    "text": "Idagdag: “Beripikahin ang petsa sa awtorisadong tala kasama ang midwife.”",
+                    "start_ms": 14140,
+                    "end_ms": 20780
+                  },
+                  {
+                    "zone": "body",
+                    "index": 3,
+                    "text": "Ipasuri sa kapareha kung may hula o diagnosis.",
+                    "start_ms": 21080,
+                    "end_ms": 25920
+                  },
+                  {
+                    "zone": "body",
+                    "index": 4,
+                    "text": "Kung mag-isa, salungguhitan ang pinagmulan ng bawat detalye.",
+                    "start_ms": 26220,
+                    "end_ms": 31500
+                  },
+                  {
+                    "zone": "body",
+                    "index": 5,
+                    "text": "Sa susunod na pagtala, markahan ang hindi pa natiyak.",
+                    "start_ms": 31800,
+                    "end_ms": 36480
+                  },
+                  {
+                    "zone": "takeaway",
+                    "index": 0,
+                    "text": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
+                    "start_ms": 36780,
+                    "end_ms": 44540
+                  }
+                ]
+              }
+            },
+            "sources": {
+              "en": {
+                "src": "/training/audio/06-komunikasyon/communication-record/sources.en.fa812da9b7ef.mp3",
+                "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                "content_hash": "fa812da9b7ef762cd81e14761382d7683a8f442b527c75ea88fbdebaa6847674",
+                "sha256": "14756778b2b532fe302096323ba60e9b689cc49bb7d871f668d9641cd447900c",
+                "duration_seconds": 58.854,
+                "timings": [
+                  {
+                    "zone": "heading",
+                    "index": 0,
+                    "text": "Reported, observed, and unconfirmed",
+                    "start_ms": 0,
+                    "end_ms": 4880
+                  },
+                  {
+                    "zone": "body",
+                    "index": 0,
+                    "text": "BHW Gibs is asking Liza, 29, about a missed health-center visit.",
+                    "start_ms": 5180,
+                    "end_ms": 11700
+                  },
+                  {
+                    "zone": "body",
+                    "index": 1,
+                    "text": "Gibs has not yet checked the authorized attendance record.",
+                    "start_ms": 12000,
+                    "end_ms": 16560
+                  },
+                  {
+                    "zone": "body",
+                    "index": 2,
+                    "text": "Liza says no one can stay with her two children.",
+                    "start_ms": 16860,
+                    "end_ms": 20380
+                  },
+                  {
+                    "zone": "body",
+                    "index": 3,
+                    "text": "Gibs notices the appointment card is unavailable, but that does not prove there was no appointment.",
+                    "start_ms": 20680,
+                    "end_ms": 27600
+                  },
+                  {
+                    "zone": "body",
+                    "index": 4,
+                    "text": "In the notes, separate “Liza reports” from direct observations.",
+                    "start_ms": 27900,
+                    "end_ms": 33420
+                  },
+                  {
+                    "zone": "body",
+                    "index": 5,
+                    "text": "Clarify an uncertain date; mark information “not yet confirmed” when a record still needs checking.",
+                    "start_ms": 33720,
+                    "end_ms": 40920
+                  },
+                  {
+                    "zone": "body",
+                    "index": 6,
+                    "text": "Assessing information means checking its source and relevance, without assigning a diagnosis or judging the person.",
+                    "start_ms": 41220,
+                    "end_ms": 49740
+                  },
+                  {
+                    "zone": "takeaway",
+                    "index": 0,
+                    "text": "When assessing information, distinguish reports, observations and details still requiring verification.",
+                    "start_ms": 50040,
+                    "end_ms": 58800
+                  }
+                ]
+              },
+              "fil": {
+                "src": "/training/audio/06-komunikasyon/communication-record/sources.fil.ba6a0324f348.mp3",
+                "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                "content_hash": "ba6a0324f348f02c4109826f8af5517f02f8ea0e26507fbc287d51fa1b945dc5",
+                "sha256": "2ea923ef0c9e026fe2dbc91324fb70a61d1141ec4a8660865e4c6aa7427aa5e9",
+                "duration_seconds": 63.634,
+                "timings": [
+                  {
+                    "zone": "heading",
+                    "index": 0,
+                    "text": "Sinabi, nakita, at hindi pa tiyak",
+                    "start_ms": 0,
+                    "end_ms": 4800
+                  },
+                  {
+                    "zone": "body",
+                    "index": 0,
+                    "text": "Si Liza, 29, ay kinakausap ni BHW Gibs tungkol sa hindi pagpunta sa health center.",
+                    "start_ms": 5100,
+                    "end_ms": 13140
+                  },
+                  {
+                    "zone": "body",
+                    "index": 1,
+                    "text": "Hindi pa nakita ni Gibs ang awtorisadong attendance record.",
+                    "start_ms": 13440,
+                    "end_ms": 18160
+                  },
+                  {
+                    "zone": "body",
+                    "index": 2,
+                    "text": "Sinabi ni Liza na walang maiiwan sa dalawang anak.",
+                    "start_ms": 18460,
+                    "end_ms": 22900
+                  },
+                  {
+                    "zone": "body",
+                    "index": 3,
+                    "text": "Nakita ni Gibs na wala ang appointment card, ngunit hindi ito patunay na walang appointment.",
+                    "start_ms": 23200,
+                    "end_ms": 29960
+                  },
+                  {
+                    "zone": "body",
+                    "index": 4,
+                    "text": "Sa tala, ihiwalay ang “ayon kay Liza” sa sariling obserbasyon.",
+                    "start_ms": 30260,
+                    "end_ms": 36580
+                  },
+                  {
+                    "zone": "body",
+                    "index": 5,
+                    "text": "Itanong ang petsang hindi malinaw; markahang “hindi pa nakumpirma” kung kailangan pang tingnan ang rekord.",
+                    "start_ms": 36880,
+                    "end_ms": 45240
+                  },
+                  {
+                    "zone": "body",
+                    "index": 6,
+                    "text": "Ang pagsusuri ng impormasyon ay pagtiyak sa pinagmulan at kaugnayan nito, hindi paglalagay ng diagnosis o husga sa tao.",
+                    "start_ms": 45540,
+                    "end_ms": 55260
+                  },
+                  {
+                    "zone": "takeaway",
+                    "index": 0,
+                    "text": "Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.",
+                    "start_ms": 55560,
+                    "end_ms": 63560
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "history": [
+          {
+            "module": "06-komunikasyon",
+            "sections": {
+              "check": {
+                "en": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/check.en.2e5217dea0f9.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "2e5217dea0f9e4c099484159e51d223605050f499bbc52a84cbeb37cd6b4eb41",
+                  "sha256": "970eeba4294e2492068cf81cc040ff76a1b597b0f02e02b9a09fdbdf4db14308",
+                  "duration_seconds": 17.293,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Choose the next step",
+                      "start_ms": 0,
+                      "end_ms": 2000
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Choose an answer and explain why before viewing the feedback.",
+                      "start_ms": 2300,
+                      "end_ms": 6780
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Then compare it with your own practice attempt.",
+                      "start_ms": 7080,
+                      "end_ms": 10600
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Clear sources and explicit gaps prevent a guess becoming an official record.",
+                      "start_ms": 10900,
+                      "end_ms": 17220
+                    }
+                  ]
+                },
+                "fil": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/check.fil.37d60632cbde.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "37d60632cbde57f1a93aaa44b3c99b4a1f80a6a87f2a7d259bef862cf79f2d5f",
+                  "sha256": "da80ca02c98d69d74a845ae91f3ab4936a660f6e187b921fd0d60425c370bf80",
+                  "duration_seconds": 21.525,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Piliin ang susunod na hakbang",
+                      "start_ms": 0,
+                      "end_ms": 3120
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+                      "start_ms": 3420,
+                      "end_ms": 8620
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+                      "start_ms": 8920,
+                      "end_ms": 13480
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
+                      "start_ms": 13780,
+                      "end_ms": 21460
+                    }
+                  ]
+                }
+              },
+              "conflicting-accounts": {
+                "en": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.en.d0ca72e8d0a2.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "d0ca72e8d0a20adaecc3dfd9ca5adcbf88b1ebaaa63c41dfd7d2e4bb428f92a6",
+                  "sha256": "85787805b374c6ff2ce8e7a23c541b5a2a185438dcbdc81918fd841b91b323c4",
+                  "duration_seconds": 34.873,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "When accounts differ",
+                      "start_ms": 0,
+                      "end_ms": 1960
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Liza says the appointment was canceled; a neighbor says she was not interested.",
+                      "start_ms": 2260,
+                      "end_ms": 8260
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Do not choose a story because one voice is louder.",
+                      "start_ms": 8560,
+                      "end_ms": 12920
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Ask Liza, check the authorized record and identify the source of each detail.",
+                      "start_ms": 13220,
+                      "end_ms": 19460
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "If uncertainty remains, tell the health team.",
+                      "start_ms": 19760,
+                      "end_ms": 23360
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Respecting a person and being careful with evidence can happen together.",
+                      "start_ms": 23660,
+                      "end_ms": 29100
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "When accounts differ, clarify and verify before deciding.",
+                      "start_ms": 29400,
+                      "end_ms": 34800
+                    }
+                  ]
+                },
+                "fil": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.fil.d377496d80c4.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "d377496d80c4e8c7fdae9637a4e0afedb318156c8a0f36017c2bf4cb3fda3459",
+                  "sha256": "a3e9c5036553934a1bf7109fa9efc4bf448d6bcf97df912188a735d921766163",
+                  "duration_seconds": 41.273,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Kapag may magkaibang kuwento",
+                      "start_ms": 0,
+                      "end_ms": 2800
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Sabi ni Liza, kinansela ang schedule; sabi ng kapitbahay, hindi siya interesado.",
+                      "start_ms": 3100,
+                      "end_ms": 10580
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Huwag pumili ng kuwento dahil mas malakas ang boses.",
+                      "start_ms": 10880,
+                      "end_ms": 15000
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Tanungin si Liza, suriin ang awtorisadong tala at itala ang pinagmulan ng bawat detalye.",
+                      "start_ms": 15300,
+                      "end_ms": 23660
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Kung hindi pa malinaw, sabihin iyon sa health team.",
+                      "start_ms": 23960,
+                      "end_ms": 28040
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Ang tiwala sa kausap at pagiging maingat sa ebidensya ay maaaring sabay na gawin.",
+                      "start_ms": 28340,
+                      "end_ms": 34620
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Kapag magkaiba ang kuwento, maglinaw at magberipika bago magpasya.",
+                      "start_ms": 34920,
+                      "end_ms": 41200
+                    }
+                  ]
+                }
+              },
+              "practice": {
+                "en": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/practice.en.137d49670c1a.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "137d49670c1a44e357f26ca8a2bdf65052f27f9083c9e0296340c5cb65c5540d",
+                  "sha256": "e888f29933b9ec48b41a75e4462591afaff436a05dd0ae442edbd00d324f41dc",
+                  "duration_seconds": 37.695,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Try it, then repeat",
+                      "start_ms": 0,
+                      "end_ms": 2560
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Draw three boxes: “Reported,” “Observed,” and “Unconfirmed.”",
+                      "start_ms": 2860,
+                      "end_ms": 9180
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Sort Liza’s details.",
+                      "start_ms": 9480,
+                      "end_ms": 11760
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Add: “Verify the date against the authorized record with the midwife.”",
+                      "start_ms": 12060,
+                      "end_ms": 18020
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Ask a partner to check for guesses or diagnoses.",
+                      "start_ms": 18320,
+                      "end_ms": 22480
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Alone, underline each detail’s source.",
+                      "start_ms": 22780,
+                      "end_ms": 26620
+                    },
+                    {
+                      "zone": "body",
+                      "index": 5,
+                      "text": "In your next record, mark what remains unconfirmed.",
+                      "start_ms": 26920,
+                      "end_ms": 31040
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Clear sources and explicit gaps prevent a guess becoming an official record.",
+                      "start_ms": 31340,
+                      "end_ms": 37620
+                    }
+                  ]
+                },
+                "fil": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/practice.fil.7e71c8321ea6.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "7e71c8321ea60888b40122d73270c08ea2029306d9390c7950646761dd5ad6e0",
+                  "sha256": "60a1771fabe65c195cdb2cab9e92c0a8aba67ed78f7d265a61ecef9c07c11c86",
+                  "duration_seconds": 44.617,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Subukan, saka ulitin",
+                      "start_ms": 0,
+                      "end_ms": 2880
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Gumawa ng tatlong kahon: “Sinabi,” “Nakita,” at “Hindi pa tiyak.”",
+                      "start_ms": 3180,
+                      "end_ms": 9660
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Ilagay ang detalye ni Liza sa tamang kahon.",
+                      "start_ms": 9960,
+                      "end_ms": 13840
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Idagdag: “Beripikahin ang petsa sa awtorisadong tala kasama ang midwife.”",
+                      "start_ms": 14140,
+                      "end_ms": 20780
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Ipasuri sa kapareha kung may hula o diagnosis.",
+                      "start_ms": 21080,
+                      "end_ms": 25920
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Kung mag-isa, salungguhitan ang pinagmulan ng bawat detalye.",
+                      "start_ms": 26220,
+                      "end_ms": 31500
+                    },
+                    {
+                      "zone": "body",
+                      "index": 5,
+                      "text": "Sa susunod na pagtala, markahan ang hindi pa natiyak.",
+                      "start_ms": 31800,
+                      "end_ms": 36480
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
+                      "start_ms": 36780,
+                      "end_ms": 44540
+                    }
+                  ]
+                }
+              },
+              "sources": {
+                "en": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/sources.en.5bdcde9f5240.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "5bdcde9f52409834d281cccf833366fd274de4bb5a0740d29aa3ac3495db3dba",
+                  "sha256": "5cb0ba65c0b6fe38bcd774ef890bf3ea796c340dcdaea203e2caf608e881d9ac",
+                  "duration_seconds": 58.984,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Reported, observed, and unconfirmed",
+                      "start_ms": 0,
+                      "end_ms": 4480
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "BHW Mila is asking Liza, 29, about a missed health-center visit.",
+                      "start_ms": 4780,
+                      "end_ms": 11700
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Mila has not yet checked the authorized attendance record.",
+                      "start_ms": 12000,
+                      "end_ms": 16640
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Liza says no one can stay with her two children.",
+                      "start_ms": 16940,
+                      "end_ms": 20620
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Mila notices the appointment card is unavailable, but that does not prove there was no appointment.",
+                      "start_ms": 20920,
+                      "end_ms": 28280
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "In the notes, separate “Liza reports” from direct observations.",
+                      "start_ms": 28580,
+                      "end_ms": 33980
+                    },
+                    {
+                      "zone": "body",
+                      "index": 5,
+                      "text": "Clarify an uncertain date; mark information “not yet confirmed” when a record still needs checking.",
+                      "start_ms": 34280,
+                      "end_ms": 41640
+                    },
+                    {
+                      "zone": "body",
+                      "index": 6,
+                      "text": "Assessing information means checking its source and relevance, without assigning a diagnosis or judging the person.",
+                      "start_ms": 41940,
+                      "end_ms": 50620
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "When assessing information, distinguish reports, observations and details still requiring verification.",
+                      "start_ms": 50920,
+                      "end_ms": 58920
+                    }
+                  ]
+                },
+                "fil": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/sources.fil.037a293f0a6e.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "037a293f0a6ede880b77932f0cb9a2aaf8f7b385282bbd36a0c9e5c3cdcd2e22",
+                  "sha256": "f4f004da0eda26e4aefdce5c79090dad8969809fd7a2c5cdd9ac5c03f654c5ab",
+                  "duration_seconds": 62.511,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Sinabi, nakita, at hindi pa tiyak",
+                      "start_ms": 0,
+                      "end_ms": 4840
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Si Liza, 29, ay kinakausap ni BHW Mila tungkol sa hindi pagpunta sa health center.",
+                      "start_ms": 5140,
+                      "end_ms": 13700
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Hindi pa nakita ni Mila ang awtorisadong attendance record.",
+                      "start_ms": 14000,
+                      "end_ms": 18520
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Sinabi ni Liza na walang maiiwan sa dalawang anak.",
+                      "start_ms": 18820,
+                      "end_ms": 22980
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Nakita ni Mila na wala ang appointment card, ngunit hindi ito patunay na walang appointment.",
+                      "start_ms": 23280,
+                      "end_ms": 29840
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Sa tala, ihiwalay ang “ayon kay Liza” sa sariling obserbasyon.",
+                      "start_ms": 30140,
+                      "end_ms": 35940
+                    },
+                    {
+                      "zone": "body",
+                      "index": 5,
+                      "text": "Itanong ang petsang hindi malinaw; markahang “hindi pa nakumpirma” kung kailangan pang tingnan ang rekord.",
+                      "start_ms": 36240,
+                      "end_ms": 44360
+                    },
+                    {
+                      "zone": "body",
+                      "index": 6,
+                      "text": "Ang pagsusuri ng impormasyon ay pagtiyak sa pinagmulan at kaugnayan nito, hindi paglalagay ng diagnosis o husga sa tao.",
+                      "start_ms": 44660,
+                      "end_ms": 54220
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.",
+                      "start_ms": 54520,
+                      "end_ms": 62440
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "module": "06-komunikasyon",
+            "sections": {
+              "check": {
+                "en": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/check.en.2e5217dea0f9.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "2e5217dea0f9e4c099484159e51d223605050f499bbc52a84cbeb37cd6b4eb41",
+                  "sha256": "970eeba4294e2492068cf81cc040ff76a1b597b0f02e02b9a09fdbdf4db14308",
+                  "duration_seconds": 17.293,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Choose the next step",
+                      "start_ms": 0,
+                      "end_ms": 2000
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Choose an answer and explain why before viewing the feedback.",
+                      "start_ms": 2300,
+                      "end_ms": 6780
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Then compare it with your own practice attempt.",
+                      "start_ms": 7080,
+                      "end_ms": 10600
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Clear sources and explicit gaps prevent a guess becoming an official record.",
+                      "start_ms": 10900,
+                      "end_ms": 17220
+                    }
+                  ]
+                },
+                "fil": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/check.fil.37d60632cbde.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "37d60632cbde57f1a93aaa44b3c99b4a1f80a6a87f2a7d259bef862cf79f2d5f",
+                  "sha256": "da80ca02c98d69d74a845ae91f3ab4936a660f6e187b921fd0d60425c370bf80",
+                  "duration_seconds": 21.525,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Piliin ang susunod na hakbang",
+                      "start_ms": 0,
+                      "end_ms": 3120
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+                      "start_ms": 3420,
+                      "end_ms": 8620
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+                      "start_ms": 8920,
+                      "end_ms": 13480
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
+                      "start_ms": 13780,
+                      "end_ms": 21460
+                    }
+                  ]
+                }
+              },
+              "conflicting-accounts": {
+                "en": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.en.d0ca72e8d0a2.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "d0ca72e8d0a20adaecc3dfd9ca5adcbf88b1ebaaa63c41dfd7d2e4bb428f92a6",
+                  "sha256": "85787805b374c6ff2ce8e7a23c541b5a2a185438dcbdc81918fd841b91b323c4",
+                  "duration_seconds": 34.873,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "When accounts differ",
+                      "start_ms": 0,
+                      "end_ms": 1960
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Liza says the appointment was canceled; a neighbor says she was not interested.",
+                      "start_ms": 2260,
+                      "end_ms": 8260
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Do not choose a story because one voice is louder.",
+                      "start_ms": 8560,
+                      "end_ms": 12920
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Ask Liza, check the authorized record and identify the source of each detail.",
+                      "start_ms": 13220,
+                      "end_ms": 19460
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "If uncertainty remains, tell the health team.",
+                      "start_ms": 19760,
+                      "end_ms": 23360
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Respecting a person and being careful with evidence can happen together.",
+                      "start_ms": 23660,
+                      "end_ms": 29100
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "When accounts differ, clarify and verify before deciding.",
+                      "start_ms": 29400,
+                      "end_ms": 34800
+                    }
+                  ]
+                },
+                "fil": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.fil.d377496d80c4.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "d377496d80c4e8c7fdae9637a4e0afedb318156c8a0f36017c2bf4cb3fda3459",
+                  "sha256": "a3e9c5036553934a1bf7109fa9efc4bf448d6bcf97df912188a735d921766163",
+                  "duration_seconds": 41.273,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Kapag may magkaibang kuwento",
+                      "start_ms": 0,
+                      "end_ms": 2800
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Sabi ni Liza, kinansela ang schedule; sabi ng kapitbahay, hindi siya interesado.",
+                      "start_ms": 3100,
+                      "end_ms": 10580
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Huwag pumili ng kuwento dahil mas malakas ang boses.",
+                      "start_ms": 10880,
+                      "end_ms": 15000
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Tanungin si Liza, suriin ang awtorisadong tala at itala ang pinagmulan ng bawat detalye.",
+                      "start_ms": 15300,
+                      "end_ms": 23660
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Kung hindi pa malinaw, sabihin iyon sa health team.",
+                      "start_ms": 23960,
+                      "end_ms": 28040
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Ang tiwala sa kausap at pagiging maingat sa ebidensya ay maaaring sabay na gawin.",
+                      "start_ms": 28340,
+                      "end_ms": 34620
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Kapag magkaiba ang kuwento, maglinaw at magberipika bago magpasya.",
+                      "start_ms": 34920,
+                      "end_ms": 41200
+                    }
+                  ]
+                }
+              },
+              "practice": {
+                "en": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/practice.en.137d49670c1a.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "137d49670c1a44e357f26ca8a2bdf65052f27f9083c9e0296340c5cb65c5540d",
+                  "sha256": "e888f29933b9ec48b41a75e4462591afaff436a05dd0ae442edbd00d324f41dc",
+                  "duration_seconds": 37.695,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Try it, then repeat",
+                      "start_ms": 0,
+                      "end_ms": 2560
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Draw three boxes: “Reported,” “Observed,” and “Unconfirmed.”",
+                      "start_ms": 2860,
+                      "end_ms": 9180
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Sort Liza’s details.",
+                      "start_ms": 9480,
+                      "end_ms": 11760
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Add: “Verify the date against the authorized record with the midwife.”",
+                      "start_ms": 12060,
+                      "end_ms": 18020
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Ask a partner to check for guesses or diagnoses.",
+                      "start_ms": 18320,
+                      "end_ms": 22480
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Alone, underline each detail’s source.",
+                      "start_ms": 22780,
+                      "end_ms": 26620
+                    },
+                    {
+                      "zone": "body",
+                      "index": 5,
+                      "text": "In your next record, mark what remains unconfirmed.",
+                      "start_ms": 26920,
+                      "end_ms": 31040
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Clear sources and explicit gaps prevent a guess becoming an official record.",
+                      "start_ms": 31340,
+                      "end_ms": 37620
+                    }
+                  ]
+                },
+                "fil": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/practice.fil.7e71c8321ea6.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "7e71c8321ea60888b40122d73270c08ea2029306d9390c7950646761dd5ad6e0",
+                  "sha256": "60a1771fabe65c195cdb2cab9e92c0a8aba67ed78f7d265a61ecef9c07c11c86",
+                  "duration_seconds": 44.617,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Subukan, saka ulitin",
+                      "start_ms": 0,
+                      "end_ms": 2880
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Gumawa ng tatlong kahon: “Sinabi,” “Nakita,” at “Hindi pa tiyak.”",
+                      "start_ms": 3180,
+                      "end_ms": 9660
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Ilagay ang detalye ni Liza sa tamang kahon.",
+                      "start_ms": 9960,
+                      "end_ms": 13840
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Idagdag: “Beripikahin ang petsa sa awtorisadong tala kasama ang midwife.”",
+                      "start_ms": 14140,
+                      "end_ms": 20780
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Ipasuri sa kapareha kung may hula o diagnosis.",
+                      "start_ms": 21080,
+                      "end_ms": 25920
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Kung mag-isa, salungguhitan ang pinagmulan ng bawat detalye.",
+                      "start_ms": 26220,
+                      "end_ms": 31500
+                    },
+                    {
+                      "zone": "body",
+                      "index": 5,
+                      "text": "Sa susunod na pagtala, markahan ang hindi pa natiyak.",
+                      "start_ms": 31800,
+                      "end_ms": 36480
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
+                      "start_ms": 36780,
+                      "end_ms": 44540
+                    }
+                  ]
+                }
+              },
+              "sources": {
+                "en": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/sources.en.fa812da9b7ef.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "fa812da9b7ef762cd81e14761382d7683a8f442b527c75ea88fbdebaa6847674",
+                  "sha256": "14756778b2b532fe302096323ba60e9b689cc49bb7d871f668d9641cd447900c",
+                  "duration_seconds": 58.854,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Reported, observed, and unconfirmed",
+                      "start_ms": 0,
+                      "end_ms": 4880
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "BHW Gibs is asking Liza, 29, about a missed health-center visit.",
+                      "start_ms": 5180,
+                      "end_ms": 11700
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Gibs has not yet checked the authorized attendance record.",
+                      "start_ms": 12000,
+                      "end_ms": 16560
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Liza says no one can stay with her two children.",
+                      "start_ms": 16860,
+                      "end_ms": 20380
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Gibs notices the appointment card is unavailable, but that does not prove there was no appointment.",
+                      "start_ms": 20680,
+                      "end_ms": 27600
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "In the notes, separate “Liza reports” from direct observations.",
+                      "start_ms": 27900,
+                      "end_ms": 33420
+                    },
+                    {
+                      "zone": "body",
+                      "index": 5,
+                      "text": "Clarify an uncertain date; mark information “not yet confirmed” when a record still needs checking.",
+                      "start_ms": 33720,
+                      "end_ms": 40920
+                    },
+                    {
+                      "zone": "body",
+                      "index": 6,
+                      "text": "Assessing information means checking its source and relevance, without assigning a diagnosis or judging the person.",
+                      "start_ms": 41220,
+                      "end_ms": 49740
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "When assessing information, distinguish reports, observations and details still requiring verification.",
+                      "start_ms": 50040,
+                      "end_ms": 58800
+                    }
+                  ]
+                },
+                "fil": {
+                  "src": "/training/audio/06-komunikasyon/communication-record/sources.fil.ba6a0324f348.mp3",
+                  "voice": "gemini:gemini-3.8-flash-tts:Kore",
+                  "content_hash": "ba6a0324f348f02c4109826f8af5517f02f8ea0e26507fbc287d51fa1b945dc5",
+                  "sha256": "2ea923ef0c9e026fe2dbc91324fb70a61d1141ec4a8660865e4c6aa7427aa5e9",
+                  "duration_seconds": 63.634,
+                  "timings": [
+                    {
+                      "zone": "heading",
+                      "index": 0,
+                      "text": "Sinabi, nakita, at hindi pa tiyak",
+                      "start_ms": 0,
+                      "end_ms": 4800
+                    },
+                    {
+                      "zone": "body",
+                      "index": 0,
+                      "text": "Si Liza, 29, ay kinakausap ni BHW Gibs tungkol sa hindi pagpunta sa health center.",
+                      "start_ms": 5100,
+                      "end_ms": 13140
+                    },
+                    {
+                      "zone": "body",
+                      "index": 1,
+                      "text": "Hindi pa nakita ni Gibs ang awtorisadong attendance record.",
+                      "start_ms": 13440,
+                      "end_ms": 18160
+                    },
+                    {
+                      "zone": "body",
+                      "index": 2,
+                      "text": "Sinabi ni Liza na walang maiiwan sa dalawang anak.",
+                      "start_ms": 18460,
+                      "end_ms": 22900
+                    },
+                    {
+                      "zone": "body",
+                      "index": 3,
+                      "text": "Nakita ni Gibs na wala ang appointment card, ngunit hindi ito patunay na walang appointment.",
+                      "start_ms": 23200,
+                      "end_ms": 29960
+                    },
+                    {
+                      "zone": "body",
+                      "index": 4,
+                      "text": "Sa tala, ihiwalay ang “ayon kay Liza” sa sariling obserbasyon.",
+                      "start_ms": 30260,
+                      "end_ms": 36580
+                    },
+                    {
+                      "zone": "body",
+                      "index": 5,
+                      "text": "Itanong ang petsang hindi malinaw; markahang “hindi pa nakumpirma” kung kailangan pang tingnan ang rekord.",
+                      "start_ms": 36880,
+                      "end_ms": 45240
+                    },
+                    {
+                      "zone": "body",
+                      "index": 6,
+                      "text": "Ang pagsusuri ng impormasyon ay pagtiyak sa pinagmulan at kaugnayan nito, hindi paglalagay ng diagnosis o husga sa tao.",
+                      "start_ms": 45540,
+                      "end_ms": 55260
+                    },
+                    {
+                      "zone": "takeaway",
+                      "index": 0,
+                      "text": "Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.",
+                      "start_ms": 55560,
+                      "end_ms": 63560
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

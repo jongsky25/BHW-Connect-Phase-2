@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-08T10:07:25.982Z",
+  "source_commit": "502245f3f98a9a8a9979e86ae1f745132c088bff",
+  "owner_review": "pending",
+  "render_input_sha256": "2aff3eb98497ca105b8c5ef0a3eaf50a5d97d5491862008266dd63ff4f7a893d",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 66.769,
+      "beats": [
+        {
+          "zone": "sources",
+          "index": 0,
+          "text": "Nakinig si Gibs kay Liza at sa kapitbahay. Walang card na naipakita. Iba ang sinabi sa nakita; hindi pa tiyak ang petsa.",
+          "start_ms": 0,
+          "end_ms": 8920
+        },
+        {
+          "zone": "relevant-detail",
+          "index": 1,
+          "text": "Ipinaliwanag ni Gibs ang layunin at awtorisadong gamit ng profile. Kaugnay na detalye lamang ang itatala, walang tsismis o pangakong ganap na lihim.",
+          "start_ms": 9220,
+          "end_ms": 20700
+        },
+        {
+          "zone": "conflicting-accounts",
+          "index": 2,
+          "text": "Sabi ni Liza, kinansela ang schedule. Sabi ng kapitbahay, hindi siya interesado. Nagtanong si Gibs kay Liza; hindi siya pumili sa lakas ng boses.",
+          "start_ms": 21000,
+          "end_ms": 32160
+        },
+        {
+          "zone": "verify-gap",
+          "index": 3,
+          "text": "Nilinaw ni Liza: hindi siya nakapunta nang wala ang kapatid; hindi tiyak ang pagkansela. Itinala ni Gibs ang paglilinaw. Hindi pa nakumpirma ang petsa.",
+          "start_ms": 32460,
+          "end_ms": 43300
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Sa triad, iayos ang source cards, gumawa ng tala at tukuyin ang beripikasyon sa awtorisadong rekord. Mag-feedback, ulitin at magpalit ng papel.",
+          "start_ms": 43600,
+          "end_ms": 55120
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Kinumpirma ni Liza ang buod ng sarili niyang sinabi, hindi ang attendance. Ang susunod na hakbang ay beripikasyon kasama ang awtorisadong midwife. Walang hinulaang resulta.",
+          "start_ms": 55420,
+          "end_ms": 66700
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-record-gemini-fil-de1a2b271438.mp4",
+        "content_hash": "de1a2b2714386e31f9611f0a4a59611cc70948aa492aad6622b93e68b6636a7a",
+        "duration_s": 68,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-record-gemini-fil-737e6925f693.vtt",
+          "content_hash": "737e6925f6930928e281b7cede3c45cc543097fd0cc09862344520eea8aae722"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg",
+          "content_hash": "4f4c14d18266bd04ebe0c1046d63f6573efad019c76bb7cd376078c02ae43c70"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg",
+        "content_hash": "4f4c14d18266bd04ebe0c1046d63f6573efad019c76bb7cd376078c02ae43c70"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 58.854,
+      "beats": [
+        {
+          "zone": "sources",
+          "index": 0,
+          "text": "Gibs listens to Liza and the neighbor. No card is shown. Reports differ from observations; the date remains uncertain.",
+          "start_ms": 0,
+          "end_ms": 8320
+        },
+        {
+          "zone": "relevant-detail",
+          "index": 1,
+          "text": "Gibs explains the profile’s purpose and authorized use. He records only relevant details, without gossip or an absolute secrecy promise.",
+          "start_ms": 8620,
+          "end_ms": 17180
+        },
+        {
+          "zone": "conflicting-accounts",
+          "index": 2,
+          "text": "Liza reports cancellation. The neighbor says she is not interested. Gibs asks Liza to clarify rather than choosing the loudest voice.",
+          "start_ms": 17480,
+          "end_ms": 26880
+        },
+        {
+          "zone": "verify-gap",
+          "index": 3,
+          "text": "Liza clarifies: she could not attend when her sister was away; cancellation is uncertain. Gibs attributes the correction. The date remains unconfirmed.",
+          "start_ms": 27180,
+          "end_ms": 38020
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "In triads, sort source cards, write a note and name verification through the authorized record. Give feedback, retry and rotate roles.",
+          "start_ms": 38320,
+          "end_ms": 48600
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Liza confirms the summary of her own report, not attendance. Next comes verification with the authorized midwife. No result is guessed.",
+          "start_ms": 48900,
+          "end_ms": 58780
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-6/communication-record-gemini-en-871f25aaccb6.mp4",
+        "content_hash": "871f25aaccb6ee25e2fa7d47d91fb3bd26abb2038f666d922e4d9f844d86df89",
+        "duration_s": 60,
+        "captions": {
+          "path": "/training/bhw-1-6/communication-record-gemini-en-f39072e67afd.vtt",
+          "content_hash": "f39072e67afd1593d29550aa54bdd4e9a080356559574755385344932ad5501c"
+        },
+        "poster": {
+          "path": "/training/bhw-1-6/communication-record-gemini-en-ae6253199d63-poster.jpg",
+          "content_hash": "ae6253199d633ec0032c9f5e1d586326477898aa9212fa2722ddd06ad1de4d97"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-6/communication-record-gemini-en-ae6253199d63-poster.jpg",
+        "content_hash": "ae6253199d633ec0032c9f5e1d586326477898aa9212fa2722ddd06ad1de4d97"
+      }
+    }
+  ]
+}

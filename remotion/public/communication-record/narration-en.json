@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural Philippine English as one continuous adult Filipina trainer, Kore, in a warm settled feminine mid-register. Every separately supplied heading, sentence, quotation and ending continues this identical woman narrator. Use gentle pauses and instructional emphasis without acting out speakers or switching voice. Speech spellings Lisa and Gibz represent displayed Liza (LEE-sa) and Gibs (gibz). Preserve every word, source attribution, uncertainty, correction and negation; finish each phrase completely. Do not translate, paraphrase or add words. Recording lesson delivery revision 1.",
+  "durationSeconds": 58.854,
+  "beats": [
+    {
+      "zone": "sources",
+      "index": 0,
+      "text": "Gibs listens to Liza and the neighbor. No card is shown. Reports differ from observations; the date remains uncertain.",
+      "start_ms": 0,
+      "end_ms": 8320
+    },
+    {
+      "zone": "relevant-detail",
+      "index": 1,
+      "text": "Gibs explains the profile’s purpose and authorized use. He records only relevant details, without gossip or an absolute secrecy promise.",
+      "start_ms": 8620,
+      "end_ms": 17180
+    },
+    {
+      "zone": "conflicting-accounts",
+      "index": 2,
+      "text": "Liza reports cancellation. The neighbor says she is not interested. Gibs asks Liza to clarify rather than choosing the loudest voice.",
+      "start_ms": 17480,
+      "end_ms": 26880
+    },
+    {
+      "zone": "verify-gap",
+      "index": 3,
+      "text": "Liza clarifies: she could not attend when her sister was away; cancellation is uncertain. Gibs attributes the correction. The date remains unconfirmed.",
+      "start_ms": 27180,
+      "end_ms": 38020
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "In triads, sort source cards, write a note and name verification through the authorized record. Give feedback, retry and rotate roles.",
+      "start_ms": 38320,
+      "end_ms": 48600
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Liza confirms the summary of her own report, not attendance. Next comes verification with the authorized midwife. No result is guessed.",
+      "start_ms": 48900,
+      "end_ms": 58780
+    }
+  ],
+  "audio_sha256": "d82dc78e206ade4e0a443754655e04fff7b4290957aa549fff735b880141950f"
+}
