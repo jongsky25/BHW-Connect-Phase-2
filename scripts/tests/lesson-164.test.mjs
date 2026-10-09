@@ -1,12 +1,13 @@
+import {lesson164View} from '../lib/lesson-164-integration.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
-import fs from 'node:fs';import {createHash} from 'node:crypto';
+import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {planReferenceNarration} from '../lib/reference-narration.mjs';
 import {beforeProposed164} from './lesson-164-proposal-compat.mjs';
 const base='content/training/day1-basic-competencies/',modulePath=base+'modules/06-komunikasyon/',leaf=modulePath+'lessons/communication-record/';
-const bytes=p=>fs.readFileSync(p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
+const bytes=p=>lesson164View(p,'reviewed164'),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
 const baseline=j('docs/lesson-164-baseline.json'),lesson=j(leaf+'lesson.json'),ids=['sources','relevant-detail','conflicting-accounts','verify-gap','practice','check'];
 describe('lesson 1.6.4 attributed recording draft',()=>{
  it('preserves the complete manifest, UUID lock and substantive original anchors',()=>{

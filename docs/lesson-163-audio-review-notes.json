@@ -1,0 +1,611 @@
+{
+  "status": "technical model review complete; voice/name concerns unresolved",
+  "human_listening": "pending",
+  "owner_package_review": "pending",
+  "local_policy_SME_review": "pending",
+  "full_actual_audio_reports": 14,
+  "focused_exact_WAV_reports": 56,
+  "method": "All fourteen full and fifty-six focused JSON responses inspected; supporting model evidence only. Original raw requests/responses and failed attempts retained in a separate pinned ZIP. Reports disagree on some pronunciation and timbre observations.",
+  "meaning_and_ending": "Full reports describe negation/conditions as intact and complete endings. Focused repair/recheck and ending transcripts support the intended messages; this does not establish human listening approval.",
+  "steady_narrator_target": "Configured Gemini Kore and prompts request one stable female narrator. Several focused reports describe female-to-male or other timbre shifts between synthesized zones, including scenario narration rather than only character dialogue. This remains an unresolved issue for owner listening, not a cleared stable-voice requirement.",
+  "pronunciation_conflicts": "Full Filipino story describes Liza as LEE-sa; focused Filipino story body describes Lie-za. Full English check describes LEE-sa and treats it as a variant; focused check head describes Lie-za. LEE-sa is the authored target. Gibs voiced/voiceless final consonant observations also vary. Owner listening must adjudicate actual bytes.",
+  "script_context_disposition": "Focused check-fil head questions repair versus reply. The exact authored heading is Piliin ang magalang na repair, so repair matches the source; retain model uncertainty. No content change is justified by that hypothetical alternative.",
+  "focused_possible_defects": [
+    {
+      "id": "read-check-fil",
+      "kind": "head",
+      "excerpt_sha256": "b5e16e0bde48649aae4ae22a5f1238c937f510d32653e13f163a66d3852104ec",
+      "findings": [
+        {
+          "timestamp": "00:00.8 - 00:01.8",
+          "issue": "The speaker clearly articulates 'repair' (/rɪˈpɛr/), which may be an error or misreading if the intended context was 'reply'."
+        }
+      ]
+    },
+    {
+      "id": "read-distress-fil",
+      "kind": "critical",
+      "excerpt_sha256": "0c5fae59c0d60702d2219b4c4e9b14f1e486625f6ea84bd4cc0ccec6d2bc47ef",
+      "findings": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:03.45 - 00:03.70",
+          "description": "Shift in speaker/voice profile from female narrator to male narrator without an explicit dialogue tag or contextual break."
+        }
+      ]
+    },
+    {
+      "id": "read-teach-back-fil",
+      "kind": "head",
+      "excerpt_sha256": "0ce5d1538be72fe8464923851cbf6db09949c4a14c23fd2716dfa8e4745cf929",
+      "findings": [
+        {
+          "type": "speaker_change",
+          "timestamp": "00:03.35",
+          "description": "Transition between female voice and male voice without an audio separator/pause marker, though this may be intentional role assignment."
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-fil",
+      "kind": "body",
+      "excerpt_sha256": "126f1bdf43b934a194ae19630c3ba3d434462a9046d7388eab5a2ae137f82b29",
+      "findings": [
+        {
+          "timestamp": "00:01 - 00:02",
+          "issue": "Liza pronounced as /ˈlaɪ.zə/ instead of the expected 'LEE-sa' (/ˈliː.sə/)."
+        }
+      ]
+    },
+    {
+      "id": "read-check-en",
+      "kind": "head",
+      "excerpt_sha256": "15e6fd4fa3142fe30ee49c42211df3f1d3db0820fe4ebb9723a8d975ddd71dbd",
+      "findings": [
+        {
+          "type": "pronunciation_variant",
+          "timestamp": "00:03.2",
+          "detail": "'Liza' is pronounced with the diphthong /aɪ/ ('Lie-za') rather than /iː/ ('LEE-sa')."
+        }
+      ]
+    },
+    {
+      "id": "read-check-en",
+      "kind": "ending",
+      "excerpt_sha256": "afd07fc9bbb12c78d00f840fe447203040f1a0522dcd75d525d1c053c5a03ef5",
+      "findings": [
+        {
+          "timestamp": "00:02",
+          "issue": "Voice change from female speaker to male speaker between segments."
+        },
+        {
+          "timestamp": "00:08",
+          "issue": "Voice change from male speaker back to female speaker."
+        }
+      ]
+    },
+    {
+      "id": "read-teach-back-en",
+      "kind": "head",
+      "excerpt_sha256": "99299d7a47fafe717325ec8d578af3a0c1a2546b2dfcb0e9711815f812a738e4",
+      "findings": [
+        {
+          "timestamp": "00:02.15 - 00:02.75",
+          "issue": "Voice transition/discontinuity between introductory instructional prompt and character description."
+        }
+      ]
+    }
+  ],
+  "focused_voice_observations": [
+    {
+      "id": "read-check-fil",
+      "kind": "head",
+      "observation": "Tone, volume, and pacing remain consistent across the excerpt."
+    },
+    {
+      "id": "read-check-fil",
+      "kind": "body",
+      "observation": "Pacing, pitch, and voice quality remain stable with no abrupt acoustic or tone shifts."
+    },
+    {
+      "id": "read-check-fil",
+      "kind": "critical",
+      "observation": "None; tone shifts appropriately from an explanatory narrative statement to a reflective question without sudden shifts in timbre or volume."
+    },
+    {
+      "id": "read-check-fil",
+      "kind": "ending",
+      "observation": "Pacing and tone remain uniform throughout."
+    },
+    {
+      "id": "read-distress-fil",
+      "kind": "head",
+      "observation": "A slight change in pitch/timbre and pacing occurs across the boundary at 00:02 - 00:03 between the instructional prompt and the scenario narrative."
+    },
+    {
+      "id": "read-distress-fil",
+      "kind": "body",
+      "observation": "None observed; pacing, pitch, and tone remain consistent."
+    },
+    {
+      "id": "read-distress-fil",
+      "kind": "ending",
+      "observation": "None observed; both speakers maintain consistent tone, volume, and pacing."
+    },
+    {
+      "id": "read-family-planning-fil",
+      "kind": "head",
+      "observation": "A shift in speaker gender/timbre occurs between the introductory phrase (female voice ending at ~00:02.15) and the narrative introduction of Joe (male voice beginning at ~00:02.80)."
+    },
+    {
+      "id": "read-family-planning-fil",
+      "kind": "ending",
+      "observation": "A speaker transition occurs around 00:07.5 - 00:08.0 from a male voice to a female voice, consistent with a structural or role shift."
+    },
+    {
+      "id": "read-practice-fil",
+      "kind": "head",
+      "observation": "None observed; vocal pitch, quality, and cadence remain steady across the two spoken sentences (00:00.00–00:03.35 and 00:04.10–00:08.50)."
+    },
+    {
+      "id": "read-practice-fil",
+      "kind": "body",
+      "observation": "None; volume, timbre, and pace remain steady throughout."
+    },
+    {
+      "id": "read-practice-fil",
+      "kind": "critical",
+      "observation": "Speaker switch occurs at 00:08.2 between roles/turns; pitch and timbre shift abruptly due to different voices."
+    },
+    {
+      "id": "read-smoking-fil",
+      "kind": "head",
+      "observation": "Slight pause between 00:02.2 and 00:02.8 separating the two sentences, but pitch and speaker identity remain consistent."
+    },
+    {
+      "id": "read-smoking-fil",
+      "kind": "critical",
+      "observation": "None detected; pitch, tone, and pacing remain stable."
+    },
+    {
+      "id": "read-smoking-fil",
+      "kind": "ending",
+      "observation": "Expected speaker transition occurs at 00:08.0 from male narrator to female narrator."
+    },
+    {
+      "id": "read-teach-back-fil",
+      "kind": "head",
+      "observation": "A shift in speaker gender/timbre occurs between the instructional sentence (female voice, 00:00.00–00:02.75) and the scenario narration (male voice, 00:03.35–00:08.75)."
+    },
+    {
+      "id": "read-teach-back-fil",
+      "kind": "body",
+      "observation": "Pacing, pitch, and voice quality remain consistent throughout."
+    },
+    {
+      "id": "read-teach-back-fil",
+      "kind": "ending",
+      "observation": "A slight pause occurs between 00:08.7 and 00:09.5, followed by a brisker, segmented list-style cadence starting at 'Isang hakbang'."
+    },
+    {
+      "id": "shipped-story-fil",
+      "kind": "head",
+      "observation": "None detected; voice quality and pitch remain consistent."
+    },
+    {
+      "id": "shipped-story-fil",
+      "kind": "body",
+      "observation": "No unexpected voice fluctuations; the switch from narrator (female) to character (male) is consistent with dramatic dialogue structure."
+    },
+    {
+      "id": "shipped-story-fil",
+      "kind": "critical",
+      "observation": "The voice maintains a uniform pitch, pacing, and tone throughout."
+    },
+    {
+      "id": "shipped-story-fil",
+      "kind": "ending",
+      "observation": "None observed; vocal timbre, volume, and pacing remain steady."
+    },
+    {
+      "id": "read-check-en",
+      "kind": "head",
+      "observation": "None detected; tone and pacing remain consistent throughout."
+    },
+    {
+      "id": "read-check-en",
+      "kind": "body",
+      "observation": "Pacing, pitch, and vocal timbre remain stable throughout."
+    },
+    {
+      "id": "read-check-en",
+      "kind": "critical",
+      "observation": "A planned or distinct voice handover occurs between 00:05.20 (male voice) and 00:06.10 (female voice)."
+    },
+    {
+      "id": "read-distress-en",
+      "kind": "head",
+      "observation": "None detected; tone and pitch remain consistent."
+    },
+    {
+      "id": "read-distress-en",
+      "kind": "critical",
+      "observation": "A noticeable shift in speaker voice and accent occurs at approximately 00:02.0 between the prompt reader and the scenario narrator."
+    },
+    {
+      "id": "read-distress-en",
+      "kind": "ending",
+      "observation": "Pacing, pitch, and vocal timbre remain consistent throughout."
+    },
+    {
+      "id": "read-family-planning-en",
+      "kind": "head",
+      "observation": "None detected; tone and pitch remain steady."
+    },
+    {
+      "id": "read-family-planning-en",
+      "kind": "body",
+      "observation": "none observed"
+    },
+    {
+      "id": "read-practice-en",
+      "kind": "head",
+      "observation": "A shift in speaker gender/voice occurs at approximately 00:03.45 between sentences."
+    },
+    {
+      "id": "read-practice-en",
+      "kind": "body",
+      "observation": "Pitch, pacing, and vocal quality remain consistent across the excerpt."
+    },
+    {
+      "id": "read-practice-en",
+      "kind": "critical",
+      "observation": "None observed; delivered consistently by a single female speaker."
+    },
+    {
+      "id": "read-practice-en",
+      "kind": "ending",
+      "observation": "Speaker switches from Speaker 1 to Speaker 2 at approximately 00:04.9 for the bulleted checklist ('Concern, one step, their own explanation, repair, recheck'), then returns to Speaker 1 at approximately 00:11.8 for the remaining sentences."
+    },
+    {
+      "id": "read-smoking-en",
+      "kind": "head",
+      "observation": "Speaker transition occurs between the heading (female voice) and scenario body (male voice) at approximately 00:02.00, which functions as a role distinction."
+    },
+    {
+      "id": "read-smoking-en",
+      "kind": "body",
+      "observation": "none observed; steady delivery and tone"
+    },
+    {
+      "id": "read-smoking-en",
+      "kind": "critical",
+      "observation": "speaker transition from female voice to male voice at approximately 00:02.30, typical of structured educational narration formats"
+    },
+    {
+      "id": "read-smoking-en",
+      "kind": "ending",
+      "observation": "Tone, volume, acoustic environment, and tempo remain consistent with no abrupt shifts or pitch anomalies."
+    },
+    {
+      "id": "read-teach-back-en",
+      "kind": "head",
+      "observation": "A speaker change occurs at approximately 00:02.30 between the first and second sentences."
+    },
+    {
+      "id": "read-teach-back-en",
+      "kind": "body",
+      "observation": "No unexpected shifts in pitch, timbre, or volume."
+    },
+    {
+      "id": "read-teach-back-en",
+      "kind": "ending",
+      "observation": "Consistent single female voice with no sudden shifts in tone, volume, or acoustic quality."
+    },
+    {
+      "id": "shipped-story-en",
+      "kind": "head",
+      "observation": "Tone, volume, and pacing remain uniform with no sudden pitch or acoustic shifts."
+    },
+    {
+      "id": "shipped-story-en",
+      "kind": "body",
+      "observation": "None observed; pacing, pitch, and vocal quality remain stable."
+    },
+    {
+      "id": "shipped-story-en",
+      "kind": "critical",
+      "observation": "No unexpected shifts in pitch, speaker identity, or volume."
+    },
+    {
+      "id": "shipped-story-en",
+      "kind": "ending",
+      "observation": "None detected; pitch, tone, and pacing remain steady and consistent."
+    }
+  ],
+  "full_report_concerns": [
+    {
+      "id": "read-communication-explain-teach-back-fil",
+      "sha256": "e6a78ab5c8d1d518a6cab64b2fc1a1199c6a12455057921a55350b5593f45965",
+      "pronunciation_concerns": null,
+      "other_concerns": {
+        "timbre_changes": "Distinct vocal role changes occur across the dialogue: the female narrator, a male voice/timbre for Gibbs, and a separate voiced persona for Liza.",
+        "negation_and_conditions": "All negations ('walang', 'hindi niya ipinapangako', 'hindi pa', 'hindi malinaw', 'wala pang') and conditional phrases ('kung gusto mo', 'kung kailan') remain intact and unambiguous.",
+        "numbers": "The number 29 is read in English as 'twenty-nine', which is standard in colloquial Filipino contexts."
+      }
+    },
+    {
+      "id": "read-communication-explain-teach-back-en",
+      "sha256": "fb69d19b04384defee09eff25808efe39bf5e3fbe44e327ec8ba80d1b84db6e0",
+      "pronunciation_concerns": null,
+      "other_concerns": {
+        "timestamps_flagged": {
+          "patient_concern": "00:08 - 00:11 (\"It is hard to go when nobody can look after my child\")",
+          "acknowledging_concern": "00:12 - 00:14 (\"Your concern matters\")",
+          "patient_uncertainty_misunderstanding": "00:37 - 00:40 (\"Do I have an appointment tomorrow?\")",
+          "honest_admission_repair": "00:42 - 00:46 (\"Not yet. My explanation was unclear\")"
+        },
+        "negations_conditions_numbers": "All negations ('nobody', 'neither... nor', 'unclear', 'no confirmed appointment', 'not booked yet', 'not the person's intelligence', 'is not a confirmed appointment'), conditions ('If you want'), and numerical values ('29', 'one step') are articulated clearly without ambiguity."
+      }
+    },
+    {
+      "id": "read-communication-explain-family-planning-fil",
+      "sha256": "eef2044f9d310c5c8387955acc278579db9a924feb911d098e71144b612a241d",
+      "pronunciation_concerns": {
+        "Gibs": "Pronounced naturally as 'Gibbs' (/ɡɪbz/).",
+        "BHW": "Read naturally as the initialism 'B-H-W' (/biː eɪtʃ ˈdʌbəl.juː/).",
+        "Liza": "Not mentioned in the audio recording."
+      },
+      "other_concerns": {
+        "negation_and_conditions": "Negations ('hindi pinagtatawanan', 'Ayokong', 'Hindi pipili o magrereseta', 'Hindi niya pipilitin', 'hindi pa alam', 'Hindi pa kumpirmado', 'hindi pumili', 'Walang pangako', 'Hindi BHW') and conditional phrases ('Kung gusto mo', 'Bago gamitin') are rendered accurately with intact meaning.",
+        "numbers": "The age '24' (0:04) is pronounced clearly ('twenty-four') without ambiguity."
+      }
+    },
+    {
+      "id": "read-communication-explain-family-planning-en",
+      "sha256": "006497b85f15cb59367ef051e73ddf7670763662d435976bf5ade8c5228f624f",
+      "pronunciation_concerns": {
+        "Gibs": "Pronounced clearly as /ɡɪbz/.",
+        "BHW": "Clearly articulated as an initialism ('B-H-W') at 1:16 and 1:37.",
+        "Liza": "Not present in the narration."
+      },
+      "other_concerns": {
+        "concrete_timestamps": {
+          "concerns_expressed_or_addressed": [
+            "00:03 - 00:07 (Joe's worry noted)",
+            "00:08 - 00:11 ('What specifically worries you?')",
+            "00:16 - 00:19 ('I do not want someone choosing for me')",
+            "00:21 - 00:24 ('You can raise your concern with a qualified provider')"
+          ],
+          "honest_uncertainty_and_unconfirmed_details": [
+            "00:49 - 00:54 ('the contact's name and hours are unknown')",
+            "00:55 - 01:00 ('If you want, I will ask the health team...')",
+            "01:01 - 01:03 ('The schedule is not confirmed')"
+          ]
+        },
+        "negation_or_condition_shifts": "None; negations ('do not want', 'does not select', 'not confirmed', 'not choose', 'Do not promise') are articulated clearly without ambiguity.",
+        "audio_defects": "None detected; no dropped phonemes, clicks, or truncation."
+      }
+    },
+    {
+      "id": "read-communication-explain-distress-fil",
+      "sha256": "b2c7d1428bd080816160e3b4bb45a8741d72244328df9ac6908a123c9698a4c1",
+      "pronunciation_concerns": [],
+      "other_concerns": {
+        "unmentioned_entities": "Liza and BHW do not appear in this script segment.",
+        "negations_and_numbers": "Negations ('huwag', 'hindi', 'walang') and the number '37' are cleanly articulated without ambiguity.",
+        "timbre_consistency": "Consistent narrator voice throughout with no unnatural timbre shifts."
+      }
+    },
+    {
+      "id": "read-communication-explain-distress-en",
+      "sha256": "77869728277f0be8a8a9be6b2277c80dcdf5c9c0d52e2db670a8624e4610e075",
+      "pronunciation_concerns": null,
+      "other_concerns": null
+    },
+    {
+      "id": "read-communication-explain-smoking-fil",
+      "sha256": "c60cd08308e571476f3e4087ef14a57ea5b69fb00372c795c5034699022fb3e7",
+      "pronunciation_concerns": [],
+      "other_concerns": [
+        {
+          "timestamp": "00:24 - 00:28",
+          "type": "acknowledging_concern",
+          "description": "Reflective listening acknowledging the patient's stress as an obstacle ('Gusto mong may mabago, at hadlang ang stress. Tama ba?')."
+        },
+        {
+          "timestamp": "00:43 - 00:48",
+          "type": "honest_uncertainty_and_scope_limit",
+          "description": "Explicit statement regarding unconfirmed services/hours in hypothetical scenarios ('Hindi pa kumpirmado ang serbisyo o oras sa kathang-isip na sitwasyon.')."
+        },
+        {
+          "timestamp": "01:03 - 01:06",
+          "type": "scope_boundary_clarification",
+          "description": "Clear boundary setting stating medication is not prescribed or chosen by the health worker ('Hindi ako magbibigay o pipili ng gamot.')."
+        }
+      ]
+    },
+    {
+      "id": "read-communication-explain-smoking-en",
+      "sha256": "23d466fd2e2c568084b26de93c054244f4269b268591a7bb1ab834ba45b34fac",
+      "pronunciation_concerns": null,
+      "other_concerns": {
+        "timestamps_of_interest": {
+          "patient_concern_stated": "00:16 - 00:21 (\"I want to cut down, but it is hard when I am stressed...\")",
+          "acknowledging_concern_and_checking": "00:22 - 00:28 (\"You want to change and stress is a barrier. Is that right? Gibs checks.\")",
+          "clarification_of_unconfirmed_status": "00:40 - 00:44 (\"Neither a service nor a time is confirmed in this fictional situation.\")",
+          "question_on_medication": "00:53 - 00:56 (\"Will you give me medicine? Ramon asks.\")",
+          "role_boundary_and_honest_limitation": "00:57 - 01:04 (\"I will not give or choose medicine. We will identify the contact, so you can ask a qualified provider.\")"
+        },
+        "timbre_changes": "Narrator voice and timbre remain consistent throughout without shifts or splicing artifacts.",
+        "semantic_deviations": "No altered negations, conditional shifts, or ambiguous numerical values detected."
+      }
+    },
+    {
+      "id": "read-communication-explain-practice-fil",
+      "sha256": "8221d3a393775cf48ad258fa23216fee21a963451cba977deb8540682d7f9a3c",
+      "pronunciation_concerns": [
+        "The acronym 'BHW' is vocalized clearly in English letter pronunciation ('B-H-W').",
+        "'Gibs' is pronounced naturally as /ɡɪbs/ at 00:16.",
+        "'Liza' does not appear in the spoken narration (characters mentioned are Joe, Ben, and Ramon)."
+      ],
+      "other_concerns": [
+        {
+          "category": "acknowledging_concerns",
+          "timestamp": "00:32 - 00:35",
+          "note": "'Kilalanin ang concern nang walang paninisi' naturally delivered with supportive intonation."
+        },
+        {
+          "category": "resident_concern_and_misunderstanding",
+          "timestamp": "00:43 - 00:46",
+          "note": "'Gamitin ang concern at maling pagkaunawa sa card.'"
+        },
+        {
+          "category": "honest_uncertainty",
+          "timestamp": "01:04 - 01:06",
+          "note": "'kasama ang hindi pa kumpirmado' clearly stated to encompass uncertainty."
+        },
+        {
+          "category": "repair_and_recheck",
+          "timestamp": "00:55 - 00:58",
+          "note": "'Ayusin ang nakakalitong paliwanag at mag-check muli.'"
+        },
+        {
+          "category": "negations_and_boundaries",
+          "timestamp": "01:09 - 01:14",
+          "note": "Negations 'hindi ibinibigay' and 'hindi garantiya ng serbisyo' are articulated with distinct semantic emphasis."
+        }
+      ]
+    },
+    {
+      "id": "read-communication-explain-practice-en",
+      "sha256": "9b5aa0499bea928c4eab51cca19c83a4b97d3d0690055166f21bdb1ab4fd7d28",
+      "pronunciation_concerns": [
+        {
+          "term": "Gibs",
+          "timestamp": "00:13 - 00:14",
+          "note": "Pronounced with a hard /ɡ/ as 'Gibs' rather than a soft 'Jibs' or spelled-out acronym; understandable in context but notable."
+        },
+        {
+          "term": "Liza",
+          "timestamp": null,
+          "note": "The name 'Liza' does not occur in this recording (characters listed are Joe, Ben, and Ramon)."
+        },
+        {
+          "term": "BHW",
+          "timestamp": "00:14 - 00:15, 00:21 - 00:23, 00:26 - 00:27, 01:41 - 01:42",
+          "note": "Spoken cleanly and naturally as individual letters /biː eɪtʃ ˈdʌbəl.juː/ without truncation."
+        }
+      ],
+      "other_concerns": {
+        "negation_and_conditions": "Negations ('No real resident record...', 'Do not assign...', 'are not supplied...', 'not a guaranteed service') are clear, distinct, and unambiguous.",
+        "numbers": "Numbers ('Three situations', 'three rounds', 'all three situations', 'one correct step', 'one helpful exact phrase', 'one phrase to change', 'one approved message', 'one step') are distinctly articulated without ambiguity.",
+        "flagged_timestamps": {
+          "concerns_addressed": [
+            "00:28 - 00:30",
+            "00:38 - 00:40",
+            "01:33 - 01:35"
+          ],
+          "uncertainty_and_unconfirmed_limits": [
+            "00:56 - 00:57",
+            "00:58 - 01:02",
+            "01:04 - 01:06"
+          ]
+        }
+      }
+    },
+    {
+      "id": "read-communication-explain-check-fil",
+      "sha256": "dd96ef5a67626f407234903936ce5106020ae2de8b15dd4f636f18cd2a23e2d6",
+      "pronunciation_concerns": {
+        "gibbs": "Pronounced naturally as 'Gibs' /ɡɪbz/ without distortion.",
+        "lisa": "Pronounced clearly as 'Lisa' /ˈliːsə/.",
+        "bhw": "Not spoken in this segment.",
+        "loanwords": "'Repair', 'midwife', 'schedule', 'appointment', 'teach-back', and 'check' are pronounced intelligibly with standard Filipino-English phonology."
+      },
+      "other_concerns": {
+        "changed_negation": null,
+        "changed_condition": null,
+        "ambiguous_number": null,
+        "concrete_timestamps": {
+          "uncertainty_unconfirmed_appointment": "00:09 - 00:11",
+          "mismatch_or_misunderstanding": "00:16 - 00:20",
+          "repair_instruction_and_recheck": "00:42 - 00:47",
+          "de_escalating_blame": "00:48 - 00:51"
+        }
+      }
+    },
+    {
+      "id": "read-communication-explain-check-en",
+      "sha256": "fb88de14fa146664b91b5068a6c586022e0bd7f43681d8f3803f8021d8061271",
+      "pronunciation_concerns": [
+        {
+          "timestamp": "00:03",
+          "text": "Liza",
+          "description": "Pronounced as 'Lee-sa' (/ˈliːsə/) rather than the standard English pronunciation /ˈlaɪzə/."
+        },
+        {
+          "timestamp": "00:12",
+          "text": "Liza",
+          "description": "Pronounced again as 'Lee-sa' (/ˈliːsə/)."
+        }
+      ],
+      "other_concerns": [
+        {
+          "timestamp": "00:00 - 00:44",
+          "description": "Audible timbre and pitch resets occur between distinct instructional segments (e.g., between 00:02 and 00:03, 00:07 and 00:08, 00:22 and 00:23), indicating concatenated sentence-level synthetic generation."
+        }
+      ]
+    },
+    {
+      "id": "story-fil",
+      "sha256": "02f14fcf6d7df76dfad6de2cb97f99fd0686554d26b1424141f55ca52d044cf6",
+      "pronunciation_concerns": {
+        "Gibbs": "Pronounced clearly as [gɪbz].",
+        "Liza": "Pronounced clearly and naturally as [ˈli.sa].",
+        "BHW": "Read naturally as English letter initialisms [biː eɪtʃ ˈdʌbəl.juː]."
+      },
+      "other_concerns": {
+        "flagged_timestamps": {
+          "acknowledged_concerns": [
+            "00:02 - 00:05 (Liza's barrier: lack of childcare)",
+            "00:11 - 00:14 (Jo's fear/hesitation acknowledged)"
+          ],
+          "honest_uncertainty_and_repair": [
+            "00:09 - 00:11 (No promised appointment)",
+            "00:28 - 00:30 (Unconfirmed schedule/time)",
+            "01:05 - 01:09 (Gibbs clarifies status to manage false expectations)",
+            "01:13 - 01:19 (Teach-back re-check confirming uncertainty/next step)"
+          ]
+        }
+      }
+    },
+    {
+      "id": "story-en",
+      "sha256": "339b6bf77e1035baedc4e2e5b797cd99562b796dfecb4b1b6f51cba9e3ff98fe",
+      "pronunciation_concerns": {
+        "Gibs": "Pronounced clearly as /ɡɪbz/ without awkwardness.",
+        "Lisa": "Pronounced clearly as /ˈliːsə/.",
+        "BHW": "Naturally spelled out as an initialism (/biː eɪtʃ ˈdʌbəl.juː/) without stilted pacing."
+      },
+      "other_concerns": {
+        "timbre_changes": "None observed; vocal timbre is consistent throughout.",
+        "negation_or_condition_shifts": "Negations ('does not choose', 'do not delay', 'does not give', 'Not yet', 'no appointment yet') are articulated distinctly without ambiguity.",
+        "flagged_timestamps": {
+          "concerns_expressed": [
+            "00:00-00:02",
+            "00:10-00:12",
+            "00:27-00:31"
+          ],
+          "uncertainty_or_limits": [
+            "00:07-00:08",
+            "00:25-00:26",
+            "01:00-01:04",
+            "01:07-01:09"
+          ]
+        }
+      }
+    }
+  ],
+  "publication_gate": "Draft package only. Human listening and owner/local-policy SME review required before exact-package merge/publication approval; technical packaging does not approve the voice."
+}

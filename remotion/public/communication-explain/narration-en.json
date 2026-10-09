@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural Philippine English as one continuous adult Filipina trainer, Kore, in a settled warm feminine mid-register. Read every heading, sentence, quotation and ending in this identical narrator voice without acting out Gibs or Liza. Use gentle instructional pauses, empathy and clear emphasis on negation and unconfirmed plans. Speech-only spellings Gibz and Lee-sah represent Gibs and Liza. Pronounce Jo as Joe, Ben as Ben and Ramon as rah-MON. Preserve every supplied word and condition, complete the ending, and do not translate, paraphrase or add words. Teach-back delivery revision 1.",
+  "durationSeconds": 72.647,
+  "beats": [
+    {
+      "zone": "teach-back",
+      "index": 0,
+      "text": "Gibs hears Liza’s childcare concern. One first step: ask the midwife about scheduling. No appointment is promised.",
+      "start_ms": 0,
+      "end_ms": 8640
+    },
+    {
+      "zone": "family-planning",
+      "index": 1,
+      "text": "With Jo, hear her concern and respect choice. If she wants, identify a qualified contact through the health team. Gibs does not choose a method.",
+      "start_ms": 8940,
+      "end_ms": 19660
+    },
+    {
+      "zone": "distress",
+      "index": 2,
+      "text": "With Ben, listen without diagnosing. Identify a qualified contact; the time is unconfirmed. In real immediate danger, do not delay help for an ordinary interview.",
+      "start_ms": 19960,
+      "end_ms": 31480
+    },
+    {
+      "zone": "smoking",
+      "index": 3,
+      "text": "With Ramon, ask permission and hear his goal. Gibs does not give or choose medicine. First identify the health-team contact and check understanding.",
+      "start_ms": 31780,
+      "end_ms": 43300
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "In triads, everyone tries the BHW role. Ask for the step in their own words. Repair misunderstanding and recheck. Peer feedback is practice, not a facilitator grade.",
+      "start_ms": 43600,
+      "end_ms": 56440
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "“Do I have an appointment tomorrow?” Liza asks. “Not yet. First we will ask about scheduling,” Gibs clarifies. On recheck, Liza says, “Ask first; no appointment yet.” “Yes, that is the first step,” Gibs confirms.",
+      "start_ms": 56740,
+      "end_ms": 72580
+    }
+  ],
+  "audio_sha256": "5caae6a410376aa8e341239e2cc116b29ad2f688bcdc32fa87f4f39143ff223d"
+}

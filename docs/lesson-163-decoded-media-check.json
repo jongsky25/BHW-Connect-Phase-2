@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "decoder_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "method": "Decode last shipped MP4 frame and poster to854x480RGB; mean absolute channel error below6 allows H264/JPEG encoding differences.",
+  "records": [
+    {
+      "language": "fil",
+      "source_video_sha256": "2237c650082f501c4acce563cbb415eac0e61a29ed3bfbd6707f294d35c48738",
+      "poster_sha256": "4d1b8e88c0ec5d714fb431cc3bbda1505d496a013b8cf08bf04ec548d41c1395",
+      "final_frame_decoded_rgb_sha256": "d2287136ffb8176f9e57ae1ff8dea3c2cf20f892c65a9bce41a19da136b51152",
+      "poster_decoded_rgb_sha256": "223fab0a8ae1cf537edbdcc426fd235f8f7f75e84f9f0f99dc4ef9dd4cb98940",
+      "mean_absolute_channel_error": 4.797816647150664,
+      "status": "passed"
+    },
+    {
+      "language": "en",
+      "source_video_sha256": "fab81f58fa43760455892ce3788239d1772bef029d48c950409f516b0d499fde",
+      "poster_sha256": "33ef41505cda6b50419eac3ff7636c56b2e0911ef5e75a7ff1f5e29a25b1072d",
+      "final_frame_decoded_rgb_sha256": "1f3ddf3d198a40cbcc2897b61c87c2e92381cae8a9009b2a60f50887104f9909",
+      "poster_decoded_rgb_sha256": "dfceefa2d26df177724de82ac8527526b851bda472350dcadadf654203810177",
+      "mean_absolute_channel_error": 4.89400452120739,
+      "status": "passed"
+    }
+  ]
+}

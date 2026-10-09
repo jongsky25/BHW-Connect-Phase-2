@@ -5,14 +5,17 @@
       "m6.health-promotion"
     ],
     "layout": "process",
-    "heading_fil": "Isang mensahe, saka pakinggan ang balik",
-    "heading_en": "One message, then hear it back",
-    "display_fil": "Isang hakbang muna. “Para malaman kong malinaw ang paliwanag ko, paano mo ikukuwento ang plano?” Kapag iba ang pagkaunawa, magpaliwanag sa ibang paraan at mag-check muli.",
-    "display_en": "Give one step first. “To check that I explained clearly, how would you describe the plan?” If the meaning differs, explain another way and check again.",
+    "heading_fil": "Isang hakbang, saka pakinggan ang balik",
+    "heading_en": "One step, then hear it back",
+    "display_fil": "Isang hakbang → sariling paliwanag → ayusin → mag-check muli. Hindi pa appointment ang pagtatanong sa iskedyul.",
+    "display_en": "One step → their own explanation → repair → recheck. Asking about scheduling is not a confirmed appointment.",
     "asset_ids": [
-      "gibs-portrait"
+      "gibs-portrait",
+      "explain-teach-back"
     ],
-    "check": null
+    "check": null,
+    "narration_fil": "Si Gibs, lalaking BHW, ay nakikinig kay Liza, 29. “Mahirap pumunta kapag walang magbabantay sa anak ko,” sabi ni Liza. “Mahalaga ang alalahanin mo. Kung gusto mo, maaari nating alamin ang iskedyul sa midwife,” tugon ni Gibs. Hindi niya ipinapangako ang appointment o childcare.\n\nIsang hakbang muna, gamit ang payak na salita: “Magtatanong muna tayo sa midwife kung kailan siya maaaring makausap.” Saka: “Para malaman kong malinaw ang paliwanag ko, paano mo ikukuwento ang susunod na hakbang sa sarili mong salita?”\n\n“May appointment na ako bukas?” tanong ni Liza. “Hindi pa. Hindi malinaw ang paliwanag ko,” sagot ni Gibs. “Magtatanong muna tayo tungkol sa iskedyul; wala pang kumpirmadong appointment. Ano muna ang gagawin natin?” “Magtatanong tungkol sa iskedyul; hindi pa ako naka-book,” sabi ni Liza. “Tama, iyon muna,” tugon ni Gibs.\n\nAng teach-back ay check sa paliwanag ng BHW, hindi pagsusulit sa talino o memorya ng kausap. Magpaliwanag, magtanong, ayusin ang hindi malinaw, at mag-check muli. Gumamit ng angkop na larawan at wikang komportable ang kausap; manatili sa aprubadong mensahe at saklaw ng BHW.",
+    "narration_en": "Gibs, a male BHW, listens to Liza, 29. “It is hard to go when nobody can look after my child,” Liza says. “Your concern matters. If you want, we can ask the midwife about scheduling,” Gibs replies. He promises neither an appointment nor childcare.\n\nGive one step in plain words: “First we will ask the midwife when she can be contacted.” Then ask: “To check that I explained clearly, how would you describe the next step in your own words?”\n\n“Do I have an appointment tomorrow?” Liza asks. “Not yet. My explanation was unclear,” Gibs replies. “We will ask about scheduling first; there is no confirmed appointment. What will we do first?” “Ask about the schedule; I am not booked yet,” Liza says. “Yes, that is the first step,” Gibs confirms.\n\nTeach-back checks the BHW’s explanation, not the person’s intelligence or memory. Explain, ask, repair the misunderstanding, and check again. Use a helpful picture and the person’s preferred language; stay within approved messages and the BHW role."
   },
   {
     "id": "slide-family-planning",
@@ -20,12 +23,16 @@
       "m6.family-planning"
     ],
     "layout": "scene",
-    "heading_fil": "May tanong tungkol sa family planning",
-    "heading_en": "A family-planning question",
-    "display_fil": "Si Jo ay may takot tungkol sa family planning. Alamin ang concern; gamitin ang aprubadong impormasyon. Ikonekta sa pribadong counseling sa midwife o qualified provider; huwag pumili ng method para sa kanya.",
-    "display_en": "Jo is worried about family planning. Explore the concern and use approved information. Connect her to private counseling with the midwife or qualified provider; do not select her method.",
-    "asset_ids": [],
-    "check": null
+    "heading_fil": "May pagpili at puwang sa tanong",
+    "heading_en": "Room for questions and choice",
+    "display_fil": "Pakinggan ang concern. Alamin ang contact sa health team. Igalang ang pagpili; hindi BHW ang pumipili ng paraan.",
+    "display_en": "Hear the concern. Verify the contact with the health team. Respect choice; the BHW does not select the method.",
+    "asset_ids": [
+      "explain-family-planning"
+    ],
+    "check": null,
+    "narration_fil": "Si Jo, 24, ay may takot sa narinig tungkol sa family planning. “Ano ang partikular na ikinababahala mo?” tanong ni Gibs. Nakikinig siya nang hindi pinagtatawanan ang paniniwala. “Ayokong may pumili para sa akin,” sabi ni Jo. “Ikaw ang magpapasya; puwede mong itanong ang concern sa kwalipikadong provider,” tugon ni Gibs.\n\nGamitin lamang ang pangkalahatang impormasyon mula sa aprubadong materyal at sariling pagsasanay. Ang pagpili ng angkop na paraan at klinikal na counseling ay usapan ni Jo at ng midwife o kwalipikadong provider. Hindi pipili o magrereseta si Gibs. Hindi niya pipilitin si Jo na magpasya o magsabi ng pribadong detalye.\n\nSa kathang-isip na pagsasanay, hindi pa alam ang oras o pangalan ng contact. “Kung gusto mo, aalamin ko sa health team ang tamang contact at kung paano humingi ng pribadong usapan. Hindi pa kumpirmado ang iskedyul. Para malaman kong malinaw ako, ano muna ang hakbang?” “Alamin muna ang contact; hindi pumili ng paraan ngayon,” sagot ni Jo.\n\nBago gamitin sa tunay na pagbisita, tiyakin sa lokal na health team ang aktuwal na contact, saklaw ng BHW at paraan ng pribadong usapan. Ipaliwanag ang aprubadong gamit ng impormasyon at sino lamang ang kailangang makatanggap nito ayon sa lokal na patakaran. Walang pangakong ganap na lihim.",
+    "narration_en": "Jo, 24, is worried about something she heard about family planning. “What specifically worries you?” Gibs asks. He listens without mocking her belief. “I do not want someone choosing for me,” Jo says. “You decide; you can raise your concern with a qualified provider,” Gibs replies.\n\nUse only general information from approved materials and your own training. Choosing an appropriate method and clinical counseling are discussions between Jo and a midwife or qualified provider. Gibs does not select a method or prescribe. He does not pressure Jo to decide or disclose private details.\n\nIn this fictional rehearsal, the contact’s name and hours are unknown. “If you want, I will ask the health team for the appropriate contact and how to request a private conversation. The schedule is not confirmed. To check that I explained clearly, what is the first step?” “Find out the contact first; not choose a method now,” Jo replies.\n\nBefore an actual visit, verify the contact, BHW role and arrangements for a private conversation with the local health team. Explain approved information use and who needs to receive it under local policy. Do not promise absolute secrecy."
   },
   {
     "id": "slide-distress",
@@ -33,12 +40,16 @@
       "m6.distress"
     ],
     "layout": "scene",
-    "heading_fil": "Kapag mabigat ang nararamdaman",
-    "heading_en": "When someone feels overwhelmed",
-    "display_fil": "Si Ben ay ilang linggong malungkot. Makinig nang pribado at tumulong makaugnay sa health professional. Walang diagnosis o pangakong ililihim ang panganib. Sa agarang panganib, gamitin agad ang emergency referral protocol.",
-    "display_en": "Ben has felt low for weeks. Listen privately and connect him with a health professional. Do not diagnose or promise to conceal danger. Follow emergency referral procedures immediately if safety is at risk.",
-    "asset_ids": [],
-    "check": null
+    "heading_fil": "Makinig nang walang diagnosis",
+    "heading_en": "Listen without diagnosing",
+    "display_fil": "Makinig at alamin ang kwalipikadong contact. Sa agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.",
+    "display_en": "Listen and identify a qualified contact. In immediate danger, do not delay help for an ordinary interview.",
+    "asset_ids": [
+      "explain-distress"
+    ],
+    "check": null,
+    "narration_fil": "Si Ben, 37, ay nagsasabing ilang linggo na siyang malungkot. “Salamat sa pagsabi. Ano ang pinakamabigat para sa iyo ngayon?” ang maaaring itanong ni Gibs. Maaari ring piliin ni Ben na huwag ikuwento ang detalye. Tanungin kung komportable ang lugar; huwag maghinuha ng diagnosis sa katahimikan, postura o pag-iwas ng tingin.\n\n“Gusto kong may makausap, pero hindi ko alam kung sino,” sabi ni Ben. “Makikinig ako. Kung gusto mo, tutulong akong alamin ang kwalipikadong health professional sa lokal na health team,” tugon ni Gibs. Hindi niya sasabihing “isipin mo lang ang masasaya,” magbibigay ng diagnosis, o pipili ng paggamot.\n\nSa pagsasanay, hindi pa alam ang pangalan at availability ng contact. “Wala pa akong kumpirmadong oras. Ano muna ang pagkaunawa mo sa hakbang natin?” “Aalamin muna ang contact; hindi pa ito appointment,” sagot ni Ben. Kung iba ang pagkaunawa, magpaliwanag sa ibang paraan at itanong muli.\n\nSa tunay na agarang panganib sa kaligtasan, humingi kaagad ng tulong ayon sa natiyak na lokal na emergency procedure; huwag ipagpaliban dahil sa ordinaryong interview o report. Walang imbentong numero o iisang protocol para sa lahat. Huwag mangakong ililihim ang panganib sa mga taong kailangang tumulong.",
+    "narration_en": "Ben, 37, says he has felt low for several weeks. Gibs might ask, “Thank you for telling me. What feels hardest right now?” Ben may choose not to share details. Ask whether the setting is comfortable; do not infer a diagnosis from silence, posture or looking away.\n\n“I want someone to talk to, but I do not know who,” Ben says. “I can listen. If you want, I can help identify a qualified health professional through the local health team,” Gibs replies. He does not say “just think happy thoughts,” diagnose, or choose treatment.\n\nIn rehearsal, the contact’s name and availability are unknown. “I do not have a confirmed time yet. How do you understand our first step?” “Find out the contact first; this is not an appointment yet,” Ben replies. If the meaning differs, explain another way and ask again.\n\nIn a real immediate danger to safety, seek help at once according to verified local emergency procedures; do not delay for an ordinary interview or report. Do not invent a number or a universal protocol. Do not promise to conceal danger from people who need to help."
   },
   {
     "id": "slide-smoking",
@@ -46,12 +57,16 @@
       "m6.smoking"
     ],
     "layout": "scene",
-    "heading_fil": "Pag-usapan ang paninigarilyo nang walang paninisi",
-    "heading_en": "Discuss smoking without blame",
-    "display_fil": "Humingi ng pahintulot kay Ramon na pag-usapan ang paninigarilyo. Pakinggan ang sariling layunin at hadlang. Magkasundo sa isang hakbang at health-center support; ang gamot ay para sa usapan sa provider.",
-    "display_en": "Ask Ramon’s permission to discuss smoking. Hear his goal and barriers. Agree on one step and health-center support; medication belongs in discussion with the provider.",
-    "asset_ids": [],
-    "check": null
+    "heading_fil": "Pag-usapan nang walang paninisi",
+    "heading_en": "Discuss without blame",
+    "display_fil": "Humingi ng pahintulot, pakinggan ang layunin, mag-alok ng isang natiyak na hakbang at gamitin ang teach-back.",
+    "display_en": "Ask permission, hear the person’s goal, offer one verified step and use teach-back.",
+    "asset_ids": [
+      "explain-smoking"
+    ],
+    "check": null,
+    "narration_fil": "Si Ramon, 45, ay napipikon kapag tinatawag na “walang disiplina.” “Puwede ba nating pag-usapan ang paninigarilyo at ang suportang gusto mo?” tanong ni Gibs. Kung ayaw muna ni Ramon, igalang ang sagot. “Gusto kong mabawasan, pero mahirap kapag stress,” sabi ni Ramon.\n\n“Gusto mong may mabago, at hadlang ang stress. Tama ba?” paglilinaw ni Gibs. Pakinggan ang sagot. Mag-alok lamang ng hakbang na saklaw ng BHW: alamin sa lokal na health team ang kwalipikadong contact at suportang aktuwal na mayroon. Hindi pa kumpirmado ang serbisyo o oras sa kathang-isip na sitwasyon.\n\n“Kung gusto mo, aalamin muna natin kung sino ang makakausap. Para malaman kong malinaw ang paliwanag ko, ano muna ang gagawin natin?” “Bibigyan mo ako ng gamot?” tanong ni Ramon. “Hindi ako magbibigay o pipili ng gamot. Aalamin muna ang contact para makapagtanong ka sa kwalipikadong provider. Paano mo sasabihin ang unang hakbang?” “Alamin ang contact; sa provider ang usapan sa gamot,” sagot ni Ramon.\n\nWalang sermon, gamot, dose o pangakong resulta. Bago ang tunay na usapan, tiyakin ang aktuwal na lokal na suporta at awtorisadong mensahe; huwag mag-imbento ng serbisyo.",
+    "narration_en": "Ramon, 45, feels attacked when called “undisciplined.” “May we discuss smoking and the support you want?” Gibs asks. If Ramon does not want to discuss it now, respect his answer. “I want to cut down, but it is hard when I am stressed,” Ramon says.\n\n“You want a change, and stress is a barrier. Is that right?” Gibs checks. Listen to the answer. Offer only a step within the BHW role: ask the local health team about a qualified contact and support actually available. Neither a service nor a time is confirmed in this fictional situation.\n\n“If you want, we can first find out who you could speak with. To check that I explained clearly, what will we do first?” “Will you give me medicine?” Ramon asks. “I will not give or choose medicine. We will identify the contact so you can ask a qualified provider. How would you describe the first step?” “Find out the contact; medication is a discussion with the provider,” Ramon replies.\n\nNo lecture, medication, dose or promised outcome. Before an actual conversation, verify available local support and authorized messages; do not invent a service."
   },
   {
     "id": "slide-practice",
@@ -62,12 +77,16 @@
       "m6.smoking"
     ],
     "layout": "process",
-    "heading_fil": "Subukan, saka ulitin",
-    "heading_en": "Try it, then repeat",
-    "display_fil": "Concern → isang ligtas na hakbang → sariling paliwanag → ayusin at ulitin. Ang check ay sa paliwanag natin.",
-    "display_en": "Concern → one safe step → their own explanation → clarify and repeat. Check our explanation.",
-    "asset_ids": [],
-    "check": null
+    "heading_fil": "Tatlong sitwasyon, lahat susubok",
+    "heading_en": "Three situations, everyone tries",
+    "display_fil": "Concern → isang hakbang → sariling paliwanag → repair → recheck. Lahat ay susubok bilang BHW; direktang obserbasyon ang ebidensiya.",
+    "display_en": "Concern → one step → their own explanation → repair → recheck. Everyone tries the BHW role; direct observation supplies evidence.",
+    "asset_ids": [
+      "explain-practice"
+    ],
+    "check": null,
+    "narration_fil": "Gumamit ng kathang-isip na cards para kay Jo, Ben at Ramon. Walang tunay na resident record o sapilitang personal na kuwento. Sa tatluhan, gumanap na Gibs o BHW, residente, at tagamasid. Sa tatlong round, magpalit ng papel upang lahat ay maging BHW at masubukan ng grupo ang lahat ng sitwasyon.\n\nBHW: kilalanin ang concern nang walang paninisi, sabihin ang isang tamang hakbang sa payak na salita, at itanong ang pagkaunawa sa sariling salita. Residente: gamitin ang concern at maling pagkaunawa sa card. Tagamasid: itala ang eksaktong linyang nakatulong at isang linyang babaguhin; huwag magbigay ng facilitator grade.\n\nAyusin ang nakalilitong paliwanag at mag-check muli. Dapat magtapos ang residente sa sariling paliwanag ng tamang hakbang, kasama ang hindi pa kumpirmado. Ang lokal na contact at availability ay hindi ibinibigay sa cards; ang pagtiyak sa health team ang hakbang, hindi garantiya ng serbisyo.\n\nKung mag-isa, isulat o sabihin ang dalawang panig ng kathang-isip na usapan at ulitin ang repair at recheck. Maaari ang tahimik na pares, tulong sa pagbasa o komportableng wika, walang internet o projector. Pareho ang pamantayan; kailangan pa rin ng direktang obserbasyon ng facilitator. Sa susunod na awtorisadong pagbisita, gamitin ang teach-back sa isang aprubadong mensahe.",
+    "narration_en": "Use fictional cards for Jo, Ben and Ramon. No real resident record or forced personal story. In triads, play Gibs or BHW, resident, and observer. Rotate roles over three rounds so everyone plays BHW and the group practices all three situations.\n\nBHW: acknowledge the concern without blame, explain one correct step in plain words, and ask for understanding in the person’s own words. Resident: use the concern and misunderstanding on the card. Observer: record one helpful exact phrase and one phrase to change; do not assign a facilitator grade.\n\nRepair the confusing explanation and check again. End with the resident describing the correct step, including what remains unconfirmed. Contact details and availability are not supplied on the cards; checking with the health team is the step, not a guaranteed service.\n\nAlone, write or speak both sides of the fictional conversation and repeat the repair and recheck. A quiet pair, reading assistance, a preferred language, and practice without internet or a projector are available. The standard stays the same; direct facilitator observation is still required. At the next authorized visit, use teach-back with one approved message."
   },
   {
     "id": "slide-check",
@@ -78,11 +97,13 @@
       "m6.smoking"
     ],
     "layout": "decision",
-    "heading_fil": "Piliin ang susunod na hakbang",
-    "heading_en": "Choose the next step",
-    "display_fil": "Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.",
-    "display_en": "Hear the concern and check the clarity of your explanation while staying within the BHW role.",
-    "asset_ids": [],
+    "heading_fil": "Piliin ang magalang na repair",
+    "heading_en": "Choose a respectful repair",
+    "display_fil": "Kapag iba ang pagkaunawa, ayusin ang sariling paliwanag at mag-check muli. Hindi kasalanan ng kausap ang hindi malinaw na mensahe.",
+    "display_en": "When understanding differs, repair your explanation and check again. An unclear message is not the person’s fault.",
+    "asset_ids": [
+      "explain-check"
+    ],
     "check": {
       "prompt_fil": "Sa teach-back, iba ang planong ikinuwento ni Liza. Ano ang susunod?",
       "prompt_en": "During teach-back, Liza describes a different plan. What next?",
@@ -101,8 +122,10 @@
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "Ang ikatlong sagot ay inaayos ang paliwanag at muling sinusuri ito. Ang pagsisi ay maaaring magpatahimik sa kausap; ang mas mabilis na pag-uulit ay hindi tumutugon sa hindi malinaw.",
-      "feedback_en": "The third response repairs the explanation and checks again. Blame may silence the person; faster repetition does not address the misunderstanding."
-    }
+      "feedback_fil": "Una: Ang pagsisi at pagtatapos ay hindi nag-aayos ng hindi malinaw na mensahe at maaaring magpatahimik kay Liza. Ikalawa: Ang parehong paliwanag nang mas mabilis ay hindi tumutugon sa maling pagkaunawa. Ikatlo: Ang ibang paraan ng paliwanag at pag-check muli ay angkop; si Gibs ang may pananagutan sa linaw. Sa wakas, sabi ni Gibs, “Hindi pa appointment. Magtatanong muna tayo tungkol sa iskedyul. Ano muna ang gagawin natin?” Sagot ni Liza, “Magtatanong tungkol sa iskedyul; wala pang kumpirmadong appointment.” “Tama, iyon muna,” tugon ni Gibs.",
+      "feedback_en": "First: Blame and ending the conversation do not repair an unclear message and may silence Liza. Second: The same explanation delivered faster does not address the misunderstanding. Third: Explaining another way and checking again is appropriate; Gibs takes responsibility for clarity. In the ending, Gibs says, “This is not an appointment yet. We will ask about scheduling first. What will we do first?” Liza replies, “Ask about the schedule; there is no confirmed appointment.” “Yes, that is the first step,” Gibs confirms."
+    },
+    "narration_fil": "Magkasundo sina Gibs at Liza na magtatanong muna sa midwife tungkol sa iskedyul. Wala pang kumpirmadong appointment. Sa teach-back, sabi ni Liza, “May appointment na ako bukas.” Hindi iyon ang planong ipinaliwanag ni Gibs.\n\nAno ang susunod niyang gagawin? Piliin ang sagot at sabihin kung bakit. Pagkatapos pumili, basahin ang paliwanag ng lahat ng tatlong sagot at ang pagtatapos ng usapan. Ihambing sa ginawa mo sa pagsasanay. Hindi kapalit ng aktuwal na demonstrasyon ang pagsagot sa check o panonood ng opsyonal na kuwento.",
+    "narration_en": "Gibs and Liza agree to ask the midwife about scheduling first. There is no confirmed appointment. During teach-back, Liza says, “I have an appointment tomorrow.” That differs from Gibs’s explanation.\n\nWhat should he do next? Choose an answer and explain why. After choosing, read all three rationales and the conversation’s ending. Compare it with your practice. Answering the check or watching the optional story does not replace an actual demonstration."
   }
 ]

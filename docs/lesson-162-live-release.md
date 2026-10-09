@@ -7,7 +7,8 @@ on 8 October 2026. The exact reviewed implementation is
 
 `lesson-162-owner-approval.json` authorizes that exact source and selected media.
 Original draft proposal/asset metadata and model reports remain historical
-records. The owner release instruction does not establish a separate human
+records. The seven new asset review statuses are promoted to approved for
+the loader, with a hash-verified status-only bridge back to the reviewed draft. The owner release instruction does not establish a separate human
 audition or clinical/SME review.
 
 The target-only release workflow waits for exact merged-main CI and Vercel,

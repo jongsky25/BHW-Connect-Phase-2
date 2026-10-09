@@ -1,4 +1,4 @@
-import {beforeProposed162} from './lesson-162-proposal-compat.mjs';
+import {beforeIntegratedCommunication} from './communication-integration-compat.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
@@ -6,7 +6,7 @@ import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '..
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {planReferenceNarration} from '../lib/reference-narration.mjs';
 const root=path.resolve(import.meta.dirname,'../..'),base='content/training/day1-basic-competencies/modules/06-komunikasyon/',leaf=base+'lessons/communication-listen/';
-const bytes=p=>beforeProposed162(p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
+const bytes=p=>beforeIntegratedCommunication(p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
 const baseline=j('docs/lesson-161-baseline.json'),lesson=j(leaf+'lesson.json');
 const approval=fs.existsSync(root+'/docs/lesson-161-owner-approval.json')?j('docs/lesson-161-owner-approval.json'):null;
 describe('lesson 1.6.1 Gibs listening draft',()=>{
