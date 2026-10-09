@@ -1,0 +1,3 @@
+import {spokenText} from './reference-narration.mjs';
+export const causesSpeechStyle = language => `Lesson 1.7.2 cause verification v1. One settled adult Filipina female Kore trainer narrates every heading, dialogue and takeaway in ${language === 'fil' ? 'everyday Filipino/Tagalog' : 'Philippine English'}. Keep a warm consistent feminine mid-register, without acting out residents or switching speakers. Preserve exact words, negations, attribution and uncertainty; finish each sentence and the corrected ending clearly. The displayed name is Carole. No pronunciation alias is applied before actual audio review. This prompt is not human listening or approval.`;
+export const causesSpokenText = (text, language) => spokenText(text, language);
