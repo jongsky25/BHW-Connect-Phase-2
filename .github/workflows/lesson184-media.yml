@@ -156,6 +156,7 @@ jobs:
           cp .preview/lesson184-initial-import/lesson-184-published-snapshot.json .
           cp -a .preview/lesson184-import/.preview/lesson184-raw/. .preview/lesson184-raw/
           cp -a .preview/lesson184-import/.preview/lesson184-excerpts/. .preview/lesson184-excerpts/
+          cp .preview/lesson184-import/remotion/public/safety-demonstrate/shipped-aac-*.wav remotion/public/safety-demonstrate/
       - name: Verify all retained media and protected predecessor bytes
         run: node scripts/lesson-184-preservation.mjs
       - name: Restore exact checked primary-source excerpts

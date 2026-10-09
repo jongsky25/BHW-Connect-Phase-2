@@ -5,6 +5,24 @@ sha=lambda b:hashlib.sha256(b).hexdigest()
 receipts=json.loads((out/'lesson-184-inline-media.json').read_text());text=html.read_text()
 for p,v in receipts.items():
  b=(root/'public'/p.lstrip('/')).read_bytes();assert len(b)==v['bytes'] and sha(b)==v['sha256'] and base64.b64encode(b).decode() in text,p
+# Review receipts must describe the exact shipped sources and packaged WAVs.
+manifest=json.loads((root/'content/training/day1-basic-competencies/narration.json').read_text())
+full=json.loads((root/'docs/lesson-184-audio-review.json').read_text())
+focus=json.loads((root/'docs/lesson-184-audio-focus.json').read_text())
+assert len(full['records'])==14 and len(focus['records'])==14
+for record in full['records']:
+ if record['id'].startswith('story-'):
+  media=root/f"remotion/public/safety-demonstrate/shipped-aac-{record['language']}.wav"
+  assert sha((root/'public'/record['source_video'].lstrip('/')).read_bytes())==record['source_video_sha256']
+ else:
+  section,language=record['id'].removeprefix('read-safety-demonstrate-').rsplit('-',1)
+  media=root/'public'/manifest['lessons']['safety-demonstrate']['sections'][section][language]['src'].lstrip('/')
+ assert sha(media.read_bytes())==record['sha256'],record['id']
+assert sum(len(record['excerpts']) for record in focus['records'])==56
+for record in focus['records']:
+ assert sha((root/'public'/record['source_path'].lstrip('/')).read_bytes())==record['source_sha256']
+ for excerpt in record['excerpts']:
+  assert sha((root/'.preview/lesson184-excerpts'/excerpt['file']).read_bytes())==excerpt['excerpt_sha256']
 paths=set()
 for pattern in ['docs/lesson-184-*','docs/lesson-18-apple-*','scripts/lesson-184-*','scripts/remotion-safety-demonstrate-narrate.mjs','scripts/lib/lesson-184-integration.mjs','scripts/tests/lesson-184.test.mjs','.github/workflows/lesson184-*.yml','content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/*','public/training/audio/08-osh/safety-demonstrate/*','public/training/bhw-1-8/*','remotion/src/safety-demonstrate/*','remotion/public/safety-demonstrate/*','.preview/lesson184-source/*.txt','.preview/lesson184-source/*.png','.preview/lesson184-raw/*.json','.preview/lesson184-excerpts/*','.preview/lesson184-deliverables/*.json','.preview/lesson184-deliverables/*.png','.preview/lesson184-deliverables/*.pdf','.preview/lesson184-deliverables/*.html']:
  paths.update(p for p in root.glob(pattern) if p.is_file())
