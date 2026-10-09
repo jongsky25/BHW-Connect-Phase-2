@@ -11,3 +11,5 @@ The complete review ZIP is produced only after exact-head normal CI, disposable 
 Original handoff and implementation baselines remain archived. A separate integrated-main baseline records the approved 1.6.5/1.7.1 releases. Exact predecessor/successor guards preserve every historical assertion and reject changed bytes; no earlier approval receipt is rewritten.
 
 Model audio review supports technical review and does not establish human listening. Human listening, owner review of this exact package and local-policy SME review remain pending. All new assets remain draft. This work does not load or publish the lesson, merge this PR, change learner progress or modify production accounts.
+
+Main advanced during implementation to `e49be943` (approved 1.7.3). That release records twelve missing matching Read tracks and a failing global narration guard in its owner receipt. All approved 1.7.3 content, media and receipts are preserved. This draft does not bypass that guard: the final acceptance ZIP remains blocked until normal CI passes. The separate diagnostic artifact retains review HTML, printables and browser/media evidence even when that upstream check fails.

@@ -5,7 +5,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 const root=path.resolve(import.meta.dirname,'../..');
 const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/';
-const allowed=new Set(['lesson.json','read.fil.md','read.en.md','slides.json','competency.json','facilitator.fil.md','facilitator.en.md'].map(p=>leaf+p).concat('src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','content/training/day1-basic-competencies/narration.json','scripts/lib/lesson-171-integration.mjs','.github/workflows/ci.yml','.github/workflows/remotion.yml','.github/workflows/lesson152-media.yml','scripts/tests/lesson-171.test.mjs','scripts/tests/lesson-171-release.test.mjs'));
+const allowed=new Set(['lesson.json','read.fil.md','read.en.md','slides.json','competency.json','facilitator.fil.md','facilitator.en.md'].map(p=>leaf+p).concat('src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','content/training/day1-basic-competencies/narration.json','scripts/lib/lesson-171-integration.mjs','.github/workflows/ci.yml','.github/workflows/remotion.yml','.github/workflows/lesson152-media.yml','scripts/tests/lesson-171.test.mjs','scripts/tests/lesson-171-release.test.mjs','scripts/tests/lesson-173.test.mjs'));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const receipt=JSON.parse(fs.readFileSync(path.join(root,'docs/lesson-174-proposal-receipt.json'),'utf8'));
 const predecessors=new Map();

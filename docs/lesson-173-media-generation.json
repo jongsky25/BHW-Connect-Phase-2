@@ -1,0 +1,80 @@
+{
+  "method": "built-in imagegen; image inspection is model visual review, not owner approval",
+  "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+  "images": [
+    {
+      "id": "criteria",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "action_prompt": "Carole points to four separate blank cards on a board while two adult community partners compare them; four clearly separated icons for people affected, seriousness, available tools/resources, and time.",
+      "output": "public/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+      "sha256": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf",
+      "bytes": 2178138,
+      "visually_inspected": true,
+      "review_status": "draft",
+      "superseded_sha256": null,
+      "correction": null
+    },
+    {
+      "id": "worked-scores",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "action_prompt": "Carole and two adult community partners carefully add three rows on paper with counters; visible blank ruled table and a pencil, no letters or numbers.",
+      "output": "public/training/bhw-1-7/prioritize-worked-scores-cc9155c91031.png",
+      "sha256": "cc9155c910314c93bf47dc85801ce0888f415d419c3cf75feac1ac05e821e906",
+      "bytes": 2295451,
+      "visually_inspected": true,
+      "review_status": "draft",
+      "superseded_sha256": null,
+      "correction": null
+    },
+    {
+      "id": "score-evidence",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "action_prompt": "Carole listens and asks an adult resident to show what supports a score; the resident points to a fictional blank appointment card while another partner records a question mark on a separate uncertainty card. No readable records.",
+      "output": "public/training/bhw-1-7/prioritize-score-evidence-45506987ed45.png",
+      "sha256": "45506987ed45527a3a22f6a85442907ba63a44f88a499c52be2f9597dd7e7b6a",
+      "bytes": 2360040,
+      "visually_inspected": true,
+      "review_status": "draft",
+      "superseded_sha256": null,
+      "correction": null
+    },
+    {
+      "id": "tie-and-urgent-care",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "action_prompt": "A wide scene with two distinct action areas: Carole and adults discuss blank planning cards at a table on the left; on the right another BHW accompanies an adult to the health-center doorway for prompt referral, without waiting for the meeting; no illness diagnosis or medical procedure.",
+      "output": "public/training/bhw-1-7/prioritize-tie-and-urgent-care-78194688954e.png",
+      "sha256": "78194688954e2ae7c061ad430db4b8b470220d1cae36340075c18e104b86b7f1",
+      "bytes": 2229510,
+      "visually_inspected": true,
+      "review_status": "draft",
+      "superseded_sha256": "ec6d403cbb70292115d7fbb5e51f509af5eb050d094a98024791894e9d232cf3",
+      "correction": "Made accompanying BHW distinct from Carole."
+    },
+    {
+      "id": "practice",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "action_prompt": "Three adults rotate facilitator, resident/partner and observer roles at a table; Carole coaches them to correct a tally with a pencil and counters. An observer checks a blank sheet. No readable writing.",
+      "output": "public/training/bhw-1-7/prioritize-practice-bc604b9d65c5.png",
+      "sha256": "bc604b9d65c5cf1f1a6ea1f87113897395b39c64b32280a744554d2a15faa791",
+      "bytes": 2271537,
+      "visually_inspected": true,
+      "review_status": "draft",
+      "superseded_sha256": null,
+      "correction": null
+    },
+    {
+      "id": "check",
+      "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+      "action_prompt": "Carole facilitates an open group decision; adult residents actively explain reasons and point to two equal stacks of counters and evidence cards, with a blank decision sheet at the center. Do not imply agreement from nods or silence.",
+      "output": "public/training/bhw-1-7/prioritize-check-2d6ef146fafe.png",
+      "sha256": "2d6ef146fafe37cb0074bdc00bae3243941df9b23a7fdbe7c5f8460efa3f7d97",
+      "bytes": 2094967,
+      "visually_inspected": true,
+      "review_status": "draft",
+      "superseded_sha256": "8508d202a1ad6a6117d3c65d42c8a5f24fd29a48f54577ade91fac1cc14e47d5",
+      "correction": "Equal symbolic stacks; removed unrelated health-action pictures."
+    }
+  ],
+  "audio": "not generated; Gemini key unavailable",
+  "video": "not rendered; narrated inputs unavailable"
+}

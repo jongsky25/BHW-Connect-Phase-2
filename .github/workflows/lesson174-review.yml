@@ -59,17 +59,18 @@ jobs:
           KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
           KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
         run: node scripts/lesson-174-published-snapshot.mjs
-      - name: Confirm exact-head normal CI and every registry render
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: node scripts/lesson-174-wait-ci.mjs
       - run: python3 -m pip install PyMuPDF==1.26.5
       - run: node scripts/lesson-174-print-kit.mjs
       - run: python3 scripts/lesson-174-print-verify.py
       - run: node scripts/lesson-174-media-verify.mjs
       - run: node scripts/lesson-174-review-build.mjs
       - run: node scripts/lesson-174-full-browser-verify.mjs
+      - name: Confirm exact-head normal CI and every registry render
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-174-wait-ci.mjs
       - run: node scripts/lesson-174-review-verify.mjs
+        if: always()
       - run: node scripts/lesson-174-package.mjs
       - name: Retain checks even if package verification fails
         uses: actions/upload-artifact@v4
@@ -81,6 +82,13 @@ jobs:
             .preview/lesson174-deliverables/*.json
             .preview/lesson174-deliverables/*.log
             .preview/lesson174-deliverables/*.pdf
+            .preview/lesson174-deliverables/*.html
+            .preview/lesson174-deliverables/*.png
+            .preview/lesson174-raw/*
+            .preview/lesson174-excerpts/*
+            docs/lesson-174-*
+            docs/lesson-174-source-evidence/*
+            docs/lesson-174-illustration-evidence/*
           include-hidden-files: true
           if-no-files-found: warn
           retention-days: 30

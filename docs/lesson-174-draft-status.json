@@ -22,5 +22,11 @@
   "narration_seconds": {
     "fil": 569.97,
     "en": 512.34
+  },
+  "upstream_CI_blocker": {
+    "base_commit": "e49be9439c717e843e0f192ec1a3b5a61d11aa9c",
+    "lesson": "problem-prioritize",
+    "reason": "Approved lesson 1.7.3 release explicitly records 12 absent current narration tracks. The unchanged global narration guard remains required; draft packaging still refuses failed normal CI.",
+    "evidence": "docs/lesson-173-owner-approval.json"
   }
 }

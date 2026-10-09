@@ -8,8 +8,8 @@ while(Date.now()<deadline){
  const response=await fetch('https://api.github.com/repos/jongsky25/BHW-Connect-Phase-2/actions/runs?head_sha='+sha,{headers:{Authorization:'Bearer '+process.env.GH_TOKEN,Accept:'application/vnd.github+json'}});
  if(!response.ok)throw Error('Exact-head CI status unavailable: '+response.status);
  const {workflow_runs:runs}=await response.json();const checks=['CI','Remotion clips'].map(name=>runs.filter(r=>r.name===name&&r.head_sha===sha&&['pull_request','workflow_dispatch'].includes(r.event)).sort((a,b)=>b.id-a.id)[0]);
- if(checks.some(r=>r?.status==='completed'&&r.conclusion!=='success'))throw Error('Required exact-head regression failed; inspect current PR checks');
- if(checks.every(r=>r?.status==='completed'&&r.conclusion==='success')){
+ if(checks.every(r=>r?.status==='completed')){
+  if(checks[1].conclusion!=='success')throw Error('Required exact-head Remotion regression failed');
   const listing=execFileSync('npx',['remotion','compositions','--quiet'],{cwd:'remotion',encoding:'utf8',maxBuffer:4*1024*1024});
   const registry=listing.trim().split('\n').at(-1).split(/\s+/).filter(id=>/^[A-Za-z0-9-]+$/.test(id));
   if(registry.length!==registryCount||new Set(registry).size!==registryCount)throw Error('Frozen registry must contain 88 unique compositions');
@@ -25,8 +25,8 @@ while(Date.now()<deadline){
    const text=await logs.text(),file='.preview/lesson174-deliverables/remotion-job-'+job.id+'.log';fs.writeFileSync(file,text);renderLogs.push({job_id:job.id,name:job.name,file,sha256:createHash('sha256').update(text).digest('hex')});rendered.push(...Array.from(text.matchAll(/\$ remotion render ([A-Za-z0-9-]+) \S+ /g),m=>m[1]));
   }
   if(rendered.length!==registryCount||JSON.stringify([...rendered].sort())!==JSON.stringify([...registry].sort()))throw Error('Every frozen registry composition must have an actual successful render');
-  const report={status:'passed',registry,registry_source_sha256:createHash('sha256').update(fs.readFileSync('remotion/src/Root.tsx')).digest('hex'),render_logs:renderLogs,rendered_compositions:rendered,head_sha:sha,verified_at:new Date().toISOString(),runs:checks.map(r=>({name:r.name,id:r.id,url:r.html_url,conclusion:r.conclusion,run_attempt:r.run_attempt})),complete_Remotion_registry:registryCount};
-  fs.mkdirSync('.preview/lesson174-deliverables',{recursive:true});fs.writeFileSync('.preview/lesson174-deliverables/lesson-174-final-ci.json',JSON.stringify(report,null,2)+'\n');console.log('Normal CI and complete 88-composition Remotion regression passed at '+sha);process.exit(0);
+  const report={status:checks[0].conclusion==='success'?'passed':'failed',registry,registry_source_sha256:createHash('sha256').update(fs.readFileSync('remotion/src/Root.tsx')).digest('hex'),render_logs:renderLogs,rendered_compositions:rendered,head_sha:sha,verified_at:new Date().toISOString(),runs:checks.map(r=>({name:r.name,id:r.id,url:r.html_url,conclusion:r.conclusion,run_attempt:r.run_attempt})),complete_Remotion_registry:registryCount};
+  fs.mkdirSync('.preview/lesson174-deliverables',{recursive:true});fs.writeFileSync('.preview/lesson174-deliverables/lesson-174-final-ci.json',JSON.stringify(report,null,2)+'\n');if(report.status!=='passed')throw Error('Normal CI failed at exact head; complete 88 render evidence retained, final acceptance package blocked');console.log('Normal CI and complete 88-composition Remotion regression passed at '+sha);process.exit(0);
  }
  console.log('Waiting for normal CI and all 88 compositions at '+sha);await new Promise(r=>setTimeout(r,30000));
 }

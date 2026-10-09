@@ -1,0 +1,36 @@
+{
+  "status": "incomplete draft; text/art review available, media completion blocked",
+  "missing_credentials": [
+    "GEMINI_API_KEY",
+    "KB_LOADER_ANON_KEY",
+    "KB_LOADER_USERNAME",
+    "KB_LOADER_PASSWORD"
+  ],
+  "read_narration": {
+    "required": 12,
+    "generated": 0,
+    "reviewed": 0,
+    "reason": "No Gemini credential configured. Old narration manifest, history and public bytes retained; stale tracks must not be selected for new text."
+  },
+  "story": {
+    "required_compositions": [
+      "ProblemPrioritizeStoryFil",
+      "ProblemPrioritizeStoryEn"
+    ],
+    "generated": 0,
+    "reason": "No narrated story input; no silent or fabricated final render. Registry remains at its baseline."
+  },
+  "audio_review": {
+    "full_required": 14,
+    "focused_required": 56,
+    "completed": 0,
+    "human_listening": "pending",
+    "owner_approval": "pending",
+    "policy_SME": "pending"
+  },
+  "published_baseline": "blocked: loader credentials not configured",
+  "database_e2e": "Blocked: disposable local stack start attempted; registry rate limit and three Docker image extraction failures (no space left on device). Stopped retries; no production access.",
+  "release": "blocked; no merge, load or publication",
+  "credential_check": "Vercel metadata confirms Gemini key is sensitive, scoped to preview/production, and unreadable; no development value or loader credentials available.",
+  "registry": "Latest main contains 84 prior compositions after 1.6.5; exact source preserved. Two 1.7.3 compositions remain pending narrated inputs."
+}

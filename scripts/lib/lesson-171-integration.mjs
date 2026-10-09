@@ -1,4 +1,5 @@
 import {beforeProposed174} from './lesson-174-proposal.mjs';
+import {beforeProposed173} from './lesson-173-proposal-compat.mjs';
 // Verify the exact draft successor before exposing the frozen pre-1.7.1 source.
 // This bridge preserves all historical approval/proposal receipts unchanged.
 import fs from 'node:fs';
@@ -10,6 +11,7 @@ const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons
 const shared=new Set(['content/training/day1-basic-competencies/modules/07-problema/module.json','content/training/day1-basic-competencies/narration.json','remotion/src/Root.tsx','scripts/lib/reference-narration.mjs','src/components/elearning/reference-lessons.tsx','.github/workflows/ci.yml','.github/workflows/remotion.yml','scripts/lib/lesson-165-integration.mjs','scripts/tests/lesson-165-integration.test.mjs']);
 // Owner release changes only the seven target asset statuses; expose its frozen reviewed bytes.
 export function reviewed171(p,actual=fs.readFileSync(p)){
+ actual=beforeProposed173(p,beforeProposed174(p,actual));
  const approvalPath='docs/lesson-171-owner-approval.json';
  if(!fs.existsSync(approvalPath)||p!=='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json')return actual;
  const a=JSON.parse(fs.readFileSync(approvalPath));
@@ -18,7 +20,6 @@ export function reviewed171(p,actual=fs.readFileSync(p)){
  return prior;
 }
 export function beforeProposed171(p,actual=fs.readFileSync(p)){
- actual=beforeProposed174(p,actual);
  actual=reviewed171(p,actual);
  const e=receipt.changed_existing_files[p];if(!e)return actual;
  if(!p.startsWith(leaf)&&!shared.has(p))throw Error('Invalid lesson 1.7.1 changed file: '+p);
