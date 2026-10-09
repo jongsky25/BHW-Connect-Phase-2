@@ -8,7 +8,7 @@ Sa 1.8.3, paghahanda at beripikasyon ng readiness ang pakay. Hiwalay pa rin ang 
 
 60 guided minutes: 5 opening + 10 modelled readiness check + 25 checklist/briefing/feedback/retry + 12 combined-hazard debrief + 8 transfer. Nananatili ang 45 + 60 + 60 + 75 = 240 minuto sa apat na lesson. Guided practice ito, hindi nasukat na sariling pag-aaral o certification.
 
-Hinihintay ang aktuwal na kumpletong bagong narration para sa self-study timing; dagdag ang opsyonal na kuwento at replay. Ihanda ang bilingual A4 cards, limang-field checklist, verification prompts, role cards, pause/contact aid, panulat at dummy equipment na walang karayom, kemikal o body fluids.
+Ginawang pagtataya ng sariling pag-aaral: 14–17 minuto, mula sa aktuwal na salaysay ng anim na screen na 655.70 segundo sa Filipino at 588.59 segundo sa English, dagdag ang 3–6 minuto sa check at pagninilay. Pagtataya ito; dagdag ang opsyonal na kuwento at replay, hindi kapalit ng 60 guided minutes. Ihanda ang bilingual A4 cards, limang-field checklist, verification prompts, role cards, pause/contact aid, panulat at dummy equipment na walang karayom, kemikal o body fluids.
 
 ## [prepare] Ihanda
 
@@ -74,4 +74,4 @@ Kung mag-isa: sagutin ang card habang takpan ang key, ikumpara ang limang field 
 
 Draft adaptation, hindi sipi ng DOH. Candidate references: Facilitator Guide PDF 30 (printed 23), competency table PDF 19 (printed 12); Reference Manual PDF 21–23; orihinal na deck OSH slides 69–78. Nasa docs/lesson-183-source-audit.json ang aktuwal na PDF access/inspection at discrepancies; hindi completed PDF audit ang transcription. Huwag mag-claim ng TESDA certification equivalence.
 
-Magkahiwalay na pending state ang awtorisadong clinical/local-procedure review, human listening, model audio review at owner approval. Kumpirmahin ang hand hygiene/PPE, containers, reporting/referral, heat/vector precautions, buddy/route at pause/resume. Hindi dapat maghintay sa paperwork ang agarang angkop na medical evaluation. Walang drugs/doses, chemical recipe, deadline o emergency number na itinuturo. Pending pa ang shared Apple reference, illustrations at story; tingnan ang draft report.
+Magkahiwalay na pending state ang awtorisadong clinical/local-procedure review, human listening, model audio review at owner approval. Kumpirmahin ang hand hygiene/PPE, containers, reporting/referral, heat/vector precautions, buddy/route at pause/resume. Hindi dapat maghintay sa paperwork ang agarang angkop na medical evaluation. Walang drugs/doses, chemical recipe, deadline o emergency number na itinuturo. Draft assets na ang shared Apple reference at anim na illustrations. Nasa draft report ang story rendering at human/clinical/owner reviews.

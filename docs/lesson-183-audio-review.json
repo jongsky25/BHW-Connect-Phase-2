@@ -1,0 +1,769 @@
+{
+  "prompt_revision": "apple-readiness-v1",
+  "prompt_sha256": "c83e4730a0140628131410253b976ac226cc8d000854efd7de27ca08f739ac7c",
+  "model": "gemini-3.8-flash",
+  "source_commit": "1564802a3c6a4e31ccc6664a6a7930863d2910b5",
+  "method": "Exact Read MP3 and four measured zone-boundary PCM WAV excerpts per recording. Model-mediated; not human listening or clinical/owner approval.",
+  "story_aac_review": "blocked: no rendered story",
+  "records": [
+    {
+      "id": "station-preparation-fil",
+      "language": "fil",
+      "encoded_sha256": "3e866927aafb5047c2bfe3c5f43ac1aabc641161e1bcab83cbf4772f3a7ddfbe",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/station-preparation.fil.95e3bb14a885.mp3",
+        "sha256": "3e866927aafb5047c2bfe3c5f43ac1aabc641161e1bcab83cbf4772f3a7ddfbe",
+        "bytes": 455262,
+        "expected": "Ihanda ang lugar at kagamitan Kathang-isip na pagsasanay ito. Si Apple, isang BHW, ay naghahanda para sa station duty at pagbisita. Ang bagong usapan ay adaptasyon, hindi sipi mula sa DOH. Walang tunay na pasyente o address sa mga card. Apple: “Ano ang gawain ko, at alin ang saklaw ng aking pagsasanay?” Bago magsimula, linawin ito sa awtorisadong supervisor. Sa mock station, madulas ang pasukan at walang sabon sa handwashing area. Ilayo muna ang mga tao sa panganib at iulat ang kailangang ayusin. Huwag markahang naayos kung walang beripikasyon. Suriin ang supplies, angkop na lalagyan para sa sharps kung kailangan sa awtorisadong gawain, hand-hygiene supplies at PPE ayon sa kasalukuyang lokal na procedure. Dummy equipment lamang ang gagamitin dito; walang karayom o body fluids. Hindi pahintulot sa injection o paghawak ng totoong sharps ang checklist. Hindi kapalit ng hand hygiene ang gloves, at hindi lahat ng hazard ay nalulutas ng PPE. Apple: “Wala pa ang mahalagang proteksyon. Hindi ko muna sisimulan ang apektadong gawain; hihingi ako ng pasya at muling titingnan ang kondisyon.” Kung lampas sa training ang ipinapagawa, mag-pause at iakyat ito sa supervisor. Ihanda rin ang contact para sa insidente. Ihanda ang kontrol at kagamitan; iulat ang kulang bago magsagawa ng hindi ligtas na gawain.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Ihanda ang lugar at kagamitan. Kathang-isip na pagsasanay ito. Si Apple, isang BHW, ay naghahanda para sa station duty at pagbisita. Ang bagong usapan ay adaptasyon, hindi sipi mula sa DOH. Walang tunay na pasyente o address sa mga card. Apple: \\\"Ano ang gawain ko, at alin ang saklaw ng aking pagsasanay?\\\" Bago magsimula, linawin ito sa awtorisadong supervisor. Sa mock station, madulas ang pasukan, at walang sabon sa handwashing area. Ilayo muna ang mga tao sa panganib, at iuulat ang kailangang ayusin. Huwag markahang naayos kung walang beripikasyon. Suriin ang supplies: angkop na lalagyan para sa sharps kung kailangan sa awtorisadong gawain, hand hygiene supplies, at PPE, ayon sa kasalukuyang lokal na procedure. Dummy equipment lamang ang gagamitin dito. Walang karayom o body fluids. Hindi pahintulot sa injection o paghawak ng totoong sharps ang checklist. Hindi kapalit ng hand hygiene ang gloves, at hindi lahat ng hazard ay nalulutas ng PPE. Apple: \\\"Wala pa ang mahalagang proteksyon. Hindi ko muna sisimulan ang apektadong gawain. Hihingi ako ng pasya, at muling titingnan ang kondisyon.\\\" Kung lampas sa training ang ipinapagawa, mag-pause at iakyat ito sa supervisor. Ihanda rin ang contact para sa insidente. Ihanda ang kontrol at kagamitan. Iulat ang kulang bago magsagawa ng hindi ligtas na gawain.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"None; synthetic educational dialogue is fully intelligible with clean turn boundaries and complete final sentence.\"\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 6160,
+          "end_ms": 13480,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/station-preparation-fil-name.wav",
+          "sha256": "9965efc73a10071d0a3771ace34d5c44d0ddc27a1d7aa2bdcc955cb8d52b3b91",
+          "bytes": 351438,
+          "expected": "Si Apple, isang BHW, ay naghahanda para sa station duty at pagbisita.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Si Apple, isang BHW, ay naghahanda para sa station duty at pagbisita.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 23340,
+          "end_ms": 29540,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/station-preparation-fil-meaning.wav",
+          "sha256": "81649de4d025c9cd0505c00cca8e9d785123c1dfdd1b8c2155c669f48f250eb4",
+          "bytes": 297678,
+          "expected": "Apple: “Ano ang gawain ko, at alin ang saklaw ng aking pagsasanay?”",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, ano ang gawain ko at alin ang saklaw ng aking pagsasanay?\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 13780,
+          "end_ms": 19060,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/station-preparation-fil-qualification.wav",
+          "sha256": "d6d574d83a2726a3489f7315aafe041fedc995d96b01fa3d9bfaba2e1d8baa26",
+          "bytes": 253518,
+          "expected": "Ang bagong usapan ay adaptasyon, hindi sipi mula sa DOH.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Ang bagong usapan ay adaptasyon, hindi CP, mula sa DOH.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 106360,
+          "end_ms": 113760,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/station-preparation-fil-ending.wav",
+          "sha256": "92299de2ced71981bab89d7850cebce14252ce4f2b931cd1da5702e4089210ad",
+          "bytes": 355278,
+          "expected": "Ihanda ang kontrol at kagamitan; iulat ang kulang bago magsagawa ng hindi ligtas na gawain.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Ihanda ang kontrol at kagamitan. Iulat ang kulang bago magsagawa ng hindi ligtas na gawain.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "station-preparation-en",
+      "language": "en",
+      "encoded_sha256": "c87734cc2e1906113bac73a41ec791967c92b390d16d46bd667793dbda647d68",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/station-preparation.en.ef7db9d0f720.mp3",
+        "sha256": "c87734cc2e1906113bac73a41ec791967c92b390d16d46bd667793dbda647d68",
+        "bytes": 409496,
+        "expected": "Prepare the area and equipment This is a fictional exercise. Apple, a BHW, is preparing for station duty and visits. The new dialogue is an adaptation, not a DOH quotation. The cards contain no real patient or address. Apple: “What is my task, and which parts are within my training?” Clarify this with the authorized supervisor before starting. At the mock station, the entrance is slippery and the handwashing area has no soap. Keep people away from the hazard and report what needs correction. Do not mark it corrected without verification. Check supplies, an appropriate sharps container if required for an authorized task, hand-hygiene supplies and PPE under the current local procedure. Only dummy equipment is used here; no needles or body fluids. The checklist does not authorize injections or handling real sharps. Gloves do not replace hand hygiene, and PPE does not resolve every hazard. Apple: “Essential protection is still missing. I will pause the affected task, obtain a decision and recheck the condition.” Pause and escalate work beyond your training. Also prepare the incident contact. Prepare controls and equipment; report gaps before undertaking unsafe work.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Prepare the area and equipment. This is a fictional exercise. Apple, a BHW, is preparing for station duty and visits. The new dialogue is an adaptation, not a DOH quotation. The cards contain no real patient or address. Apple: What is my task, and which parts are within my training? Clarify this with the authorized supervisor before starting. At the mock station, the entrance is slippery, and the hand washing area has no soap. Keep people away from the hazard, and report what needs correction. Do not mark it corrected without verification. Check supplies: an appropriate sharps container if required for an authorized task, hand hygiene supplies, and PPE under the current local procedure. Only dummy equipment is used here. No needles or body fluids. The checklist does not authorize injections or handling real sharps. Gloves do not replace hand hygiene, and PPE does not resolve every hazard. Apple: Essential protection is still missing. I will pause the affected task, obtain a decision, and recheck the condition. Pause and escalate work beyond your training. Also, prepare the incident contact. Prepare controls and equipment. Report gaps before undertaking unsafe work.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 6120,
+          "end_ms": 11640,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/station-preparation-en-name.wav",
+          "sha256": "e1a9412fcd6fcc98695db0dbcb9a4809019639332d11210eb75f2c1ea744b78b",
+          "bytes": 265038,
+          "expected": "Apple, a BHW, is preparing for station duty and visits.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, a BHW, is preparing for station duty and visits.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 21900,
+          "end_ms": 27500,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/station-preparation-en-meaning.wav",
+          "sha256": "2b39644aba5eda8f53b937323b91dffa0d881ba1f4b0a474e2e06dc5ae886283",
+          "bytes": 268878,
+          "expected": "Apple: “What is my task, and which parts are within my training?”",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, what is my task, and which parts are within my training?\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 11940,
+          "end_ms": 17140,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/station-preparation-en-qualification.wav",
+          "sha256": "94a648cb75b0842161db058be4423c01f7b6a5492b16e019ec78625406fd09e7",
+          "bytes": 249678,
+          "expected": "The new dialogue is an adaptation, not a DOH quotation.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"The new dialogue is an adaptation, not a DOH quotation.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 96080,
+          "end_ms": 102320,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/station-preparation-en-ending.wav",
+          "sha256": "09a31e28d7a64b2067fd89c6b9f006565a45e2e8e2ac518f3ef8d27b597919cd",
+          "bytes": 299598,
+          "expected": "Prepare controls and equipment; report gaps before undertaking unsafe work.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Prepare controls and equipment. Report gaps before undertaking unsafe work.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": false\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "field-preparation-fil",
+      "language": "fil",
+      "encoded_sha256": "f8581ae4fe210eadc4665622966ffcc4019b460a6d15c6384e7ba08371352481",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/field-preparation.fil.a1f4a9ee7c9e.mp3",
+        "sha256": "f8581ae4fe210eadc4665622966ffcc4019b460a6d15c6384e7ba08371352481",
+        "bytes": 483683,
+        "expected": "Planuhin ang ligtas na pagbisita Sa kathang-isip na route card, mula sa mock station ang daan sa Tulay A papuntang meeting point B. May iniulat na banta sa Tulay A; hindi pa alam kung ligtas ang ibang daan. Walang totoong bahay sa mapa. Apple: “Hindi ko tatahakin ang may banta para lamang matapos ang visit list.” Bago umalis, suriin ang panahon, init, madulas na daan, aso, vector tulad ng lamok at posibleng banta. Planuhin ang inuming tubig, lilim at pahinga, kasama ang lokal na angkop na pag-iwas sa vector. Kumpirmahin ang ruta, reporting contact at inaasahang oras ng balik. Gumamit ng buddy system kung itinakda ng lokal na protocol; hindi garantiya ng kaligtasan ang may kasama. Kung hindi alam ang contact o ligtas na ruta, itala ang hindi pa alam at mag-pause sa apektadong pagbisita habang nakikipag-ugnayan sa supervisor para sa alternatibo. Hindi pa “ready” ang hindi pa nakumpirma. Ipaalam ang anumang napagkasunduang pagbabago ng ruta at oras ng balik. Kapag may aksidente, kagat, exposure o pagkakasakit, iulat agad at humingi ng naaangkop na agarang medical evaluation o referral ayon sa procedure. Hindi kailangang tapusin muna ang visit list o paperwork. Kwalipikadong provider ang magpapasya sa assessment at treatment; hindi patunay na ligtas ang exposure ang kawalan ng sintomas. Ang ligtas na ruta at malinaw na reporting contact ay kasinghalaga ng listahan ng bibisitahin.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Planuhin ang ligtas na pagbisita. Sa kathang-isip na route card, mula sa mock station, ang daan sa Tulay A papuntang meeting point B. May iniulat na banta sa Tulay A. Hindi pa alam kung ligtas ang ibang daan. Walang totoong bahay sa mapa. Apple, hindi ko tatahakin ang may banta para lamang matapos ang visit list. Bago umalis, suriin ang panahon: init, madulas na daan, aso, vector tulad ng lamok, at posibleng banta. Planuhin ang inuming tubig, lilim, at pahinga, kasama ang lokal na angkop na pag-iwas sa vector. Kumpirmahin ang ruta, reporting contact, at inaasahang oras ng balik. Gumamit ng buddy system kung itinakda ng lokal na protocol. Hindi garantiya ng kaligtasan ang may kasama. Kung hindi alam ang contact o ligtas na ruta, itala ang hindi pa alam, at mag-pause sa apektadong pagbisita habang nakikipag-ugnayan sa supervisor para sa alternatibo. Hindi pa ready ang hindi pa nakumpirma. Ipaalam ang anumang napagkasunduang pagbabago ng ruta at oras ng balik. Kapag may aksidente, kagat, exposure, o pagkakasakit, iulat agad at humingi ng naaangkop na agarang medical evaluation o referral ayon sa procedure. Hindi kailangang tapusin muna ang visit list o paperwork. Kwalipikadong provider ang magpapasiya sa assessment at treatment. Hindi patunay na ligtas ang exposure ang kawalan ng sintomas. Ang ligtas na ruta at malinaw na reporting contact ay kasinghalaga ng listahan ng bibisitahin.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [\n    {\n      \"timestamp\": \"00:00 - 02:00\",\n      \"description\": \"The recording alternates between two distinct vocal profiles/timbres across turn takes, typical of a generated educational dialogue or dual narrator format, but all speech remains clear and fully intelligible.\"\n    }\n  ],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 21520,
+          "end_ms": 29280,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/field-preparation-fil-name.wav",
+          "sha256": "0545f150d20079a16fb7c7e681e0ecb8834bf7786d9f5d5cc1c0c00d4ba0e645",
+          "bytes": 372558,
+          "expected": "Apple: “Hindi ko tatahakin ang may banta para lamang matapos ang visit list.”",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, hindi ko tatahakin ang may banta para lamang matapos ang visit list.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 21520,
+          "end_ms": 29280,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/field-preparation-fil-meaning.wav",
+          "sha256": "0545f150d20079a16fb7c7e681e0ecb8834bf7786d9f5d5cc1c0c00d4ba0e645",
+          "bytes": 372558,
+          "expected": "Apple: “Hindi ko tatahakin ang may banta para lamang matapos ang visit list.”",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple. Hindi ko tatahakin ang may banta para lamang matapos ang visit list.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 11160,
+          "end_ms": 18160,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/field-preparation-fil-qualification.wav",
+          "sha256": "6a893daddc3c1c48bfa2f16d4e27277b7f7eeba58c014feb97c77a9c57f323c7",
+          "bytes": 336078,
+          "expected": "May iniulat na banta sa Tulay A; hindi pa alam kung ligtas ang ibang daan.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"May iniulat na banta sa tulay A. Hindi pa alam kung ligtas ang ibang daan.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": false\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 113700,
+          "end_ms": 120860,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/field-preparation-fil-ending.wav",
+          "sha256": "eff2847121ba98901d7f0a05e723edf1d5bf2fcffb9430cfd49b9269ec0120be",
+          "bytes": 343758,
+          "expected": "Ang ligtas na ruta at malinaw na reporting contact ay kasinghalaga ng listahan ng bibisitahin.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Ang ligtas na ruta at malinaw na reporting contact ay kasing halaga ng listahan ng bibisitahin.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": false\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "field-preparation-en",
+      "language": "en",
+      "encoded_sha256": "2b0ce4235bb33f11120a16ac84444e5eb03ce6e3f5277841580a177a7b948336",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/field-preparation.en.befe9b41aebf.mp3",
+        "sha256": "2b0ce4235bb33f11120a16ac84444e5eb03ce6e3f5277841580a177a7b948336",
+        "bytes": 421825,
+        "expected": "Plan a safe field visit On the fictional route card, the path from the mock station crosses Bridge A to meeting point B. A threat has been reported at Bridge A; the safety of another route is unknown. The map contains no real homes. Apple: “I will not enter a threatened route just to finish the visit list.” Before leaving, check weather, heat, slippery paths, dogs, vectors such as mosquitoes and possible threats. Plan drinking water, shade and rest, with locally appropriate vector prevention. Confirm the route, reporting contact and expected return time. Use a buddy system when local protocol requires one; having a companion does not guarantee safety. If the contact or safe route is unknown, record the unknown and pause the affected visit while coordinating an alternative with the supervisor. Unconfirmed conditions are not ready. Communicate any agreed changes to the route and return time. Report accidents, bites, exposures or illness promptly and seek appropriate immediate medical evaluation or referral under the procedure. Finishing the visit list or paperwork is not a prerequisite. A qualified provider decides assessment and treatment; absence of symptoms does not clear an exposure. A safe route and clear reporting contact matter as much as the visit list.",
+        "status": "reviewed",
+        "response": "The user wants a detailed transcription and review of an educational audio clip (Philippine English / fictional educational audio).\nLet's analyze the clip step by step:\n\n1. Transcription & timing:\n00:00 - 00:02: \"Plan a safe field visit.\"\n00:02 - 00:05: \"On the fictional route card,\"\n00:05 - 00:08: \"the path from the mock station crosses bridge A\"\n00:08 - 00:10: \"to meeting point B.\"\n00:11 - 00:13: \"A threat has been reported at bridge A.\"\n00:13 - 00:16: \"The safety of another route is unknown.\"\n00:17 - 00:20: \"The map contains no real homes.\"\n00:20 - 00:21: \"Apple,\" (pronounced as a name/speaker or label: \"Apple.\")\n00:21 - 00:26: \"I will not enter a threatened route just to finish the visit list.\"\n00:26 - 00:28: \"Before leaving,\"\n00:28 - 00:36: \"check weather, heat, slippery paths, dogs, vectors, such as mosquitoes, and possible threats.\"\n00:37 - 00:43: \"Plan drinking water, shade, and rest with locally appropriate vector prevention.\"\n00:43 - 00:48: \"Confirm the route, reporting contact, and expected return time.\"\n00:49 - 00:53: \"Use a buddy system when local protocol requires one.\"\n00:53 - 00:56: \"Having a companion does not guarantee safety.\"\n00:57 - 01:06: \"If the contact or safe route is unknown, record the unknown and pause the affected visit while coordinating an alternative with the supervisor.\"\n01:07 - 01:10: \"Unconfirmed conditions are not ready.\"\n01:10 - 01:15: \"Communicate any agreed changes to the route and return time.\"\n01:15 - 01:26: \"Report accidents, bites, exposures, or illness promptly, and seek appropriate, immediate medical evaluation or referral under the procedure.\"\n01:27 - 01:31: \"Finishing the visit list or paperwork is not a prerequisite.\"\n01:32 - 01:39: \"A qualified provider decides assessment and treatment. Absence of symptoms does not clear an exposure.\"\n01:40 - 01:45: \"A safe route and clear reporting contacts matter as much as the visit list.\"\n\nCheck details requested:\n- Assess audible speech\n- Apple and BHW pronunciation where present (Apple is present at 00:20, BHW is not spoken)\n- task scope\n- readiness verification vs assumption (\"Unconfirmed conditions are not ready\")\n- permission vs proposal / agreed changes\n- negation (\"contains no real homes\", \"will not enter\", \"does not guarantee\", \"are not ready\", \"is not a prerequisite\", \"does not clear\")\n- qualifications (\"qualified provider decides assessment and treatment\")\n- unknown route/contact (\"The safety of another route is unknown\", \"If the contact or safe route is unknown, record the unknown and pause the affected visit...\")\n- ending completeness: Audio ends naturally at 01:45 without clipping.\n- clipped speech: none detected\n- timbre changes: clean delivery throughout\n- meaning errors and uncertainty with timestamps: clean reading.\n\nConstruct output JSON format properly.```json\n{\n  \"transcript\": \"Plan a safe field visit. On the fictional route card, the path from the mock station crosses bridge A to meeting point B. A threat has been reported at bridge A. The safety of another route is unknown. The map contains no real homes. Apple, I will not enter a threatened route just to finish the visit list. Before leaving, check weather, heat, slippery paths, dogs, vectors, such as mosquitoes, and possible threats. Plan drinking water, shade, and rest with locally appropriate vector prevention. Confirm the route, reporting contact, and expected return time. Use a buddy system when local protocol requires one. Having a companion does not guarantee safety. If the contact or safe route is unknown, record the unknown and pause the affected visit while coordinating an alternative with the supervisor. Unconfirmed conditions are not ready. Communicate any agreed changes to the route and return time. Report accidents, bites, exposures, or illness promptly, and seek appropriate, immediate medical evaluation or referral under the procedure. Finishing the visit list or paperwork is not a prerequisite. A qualified provider decides assessment and treatment. Absence of symptoms does not clear an exposure. A safe route and clear reporting contacts matter as much as the visit list.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 20480,
+          "end_ms": 26240,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/field-preparation-en-name.wav",
+          "sha256": "b1a1adb3ad3d7ce37b041e0a6cd1542e1706c2e3b89d8cded0744968faf83ab2",
+          "bytes": 276558,
+          "expected": "Apple: “I will not enter a threatened route just to finish the visit list.”",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, I will not enter a threatened route just to finish the visit list.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 20480,
+          "end_ms": 26240,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/field-preparation-en-meaning.wav",
+          "sha256": "b1a1adb3ad3d7ce37b041e0a6cd1542e1706c2e3b89d8cded0744968faf83ab2",
+          "bytes": 276558,
+          "expected": "Apple: “I will not enter a threatened route just to finish the visit list.”",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, I will not enter a threatened route just to finish the visit list.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 10720,
+          "end_ms": 16440,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/field-preparation-en-qualification.wav",
+          "sha256": "b372516691219d73d85e5bd3ef3bdcf13da1e6ed286dad249e7087a56f116849",
+          "bytes": 274638,
+          "expected": "A threat has been reported at Bridge A; the safety of another route is unknown.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"A threat has been reported at Bridge A. The safety of another route is unknown.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 99860,
+          "end_ms": 105380,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/field-preparation-en-ending.wav",
+          "sha256": "4c74d6adbb2f8186fdd766e2236af0425fcc8ba18e6c626a147e1b0aac4d216c",
+          "bytes": 265038,
+          "expected": "A safe route and clear reporting contact matter as much as the visit list.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"A safe route and clear reporting contacts matter as much as the visit list.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "combined-hazards-fil",
+      "language": "fil",
+      "encoded_sha256": "e211db19c537b1f062361aa0a715df1f7e77f0af78d0c9f29730e7e7a2cc0eb7",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/combined-hazards.fil.bc7252954632.mp3",
+        "sha256": "e211db19c537b1f062361aa0a715df1f7e77f0af78d0c9f29730e7e7a2cc0eb7",
+        "bytes": 493819,
+        "expected": "Kapag pinagsama ang mga panganib Sa mock station, dumarami ang kliyente, mainit ang silid at kulang ang proteksyong kailangan sa isang gawain. Hatiin ang pasya: alin ang kailangang ihinto, alin ang ligtas na maaaring baguhin, at alin ang kailangan ng awtorisadong supervisor? Hindi lahat ng gawain ay dapat awtomatikong ituloy o ihinto nang walang pagsusuri. Apple: “Hindi muna ang gawaing kulang ang mahalagang proteksyon. Maaari ba nating baguhin ang pila at iskedyul habang hinihintay ang inyong pasya?” Panukala ito, hindi totoong pahintulot. Isama ang kapasidad ng staff, daloy ng kliyente, init at pahinga. Hindi tanging safety control ang dagdag na libreng oras ng BHW. Hindi dahilan ang target para gumawa nang lampas sa training. Sa limang pangkat, suriin ang biological, chemical, physical, ergonomic at psychosocial hazards. Halimbawa: hand-hygiene gap; hindi kilalang chemical; madulas na pasukan/init; mabigat na dala; pressure mula sa pila. Hindi ito pahintulot para maghalo ng kemikal, magsagawa ng clinical procedure o magbuhat nang masakit. Panatilihin ang pag-iwas sa vector at init sa visit plan. Itala ang panukalang alternatibo, kung sino ang kailangang magpasya, at alin ang hindi pa nakumpirma. Ang pag-ulat ng kakulangan ay simula ng pagwawasto; kailangan pang beripikahin ang aktuwal na readiness bago magsimula. Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Kapag pinagsama ang mga panganib. Sa mock station, dumarami ang kliyente, mainit ang silid, at kulang ang proteksyong kailangan sa isang gawain. Hatiin ang pasya: alin ang kailangang ihinto, alin ang ligtas na maaaring baguhin, at alin ang kailangan ng awtorisadong superbisor? Hindi lahat ng gawain ay dapat awtomatikong ituloy o ihinto nang walang pagsusuri. Apple, hindi muna ang gawaing kulang ang mahalagang proteksyon. Maaari ba nating baguhin ang pila at iskedyul habang hinihintay ang inyong pasya? Panukala ito, hindi totoong pahintulot. Isama ang kapasidad ng staff, daloy ng kliyente, init, at pahinga. Hindi tanging safety control ang dagdag na libreng oras ng BHW. Hindi dahilan ang target para gumawa ng lampas sa training. Sa limang pangkat, suriin ang biological, chemical, pisikal, ergonomic, at psychosocial hazards. Halimbawa: hand hygiene gap, hindi kilalang chemical, madulas na pasukan o init, mabigat na dala, pressure mula sa pila. Hindi ito pahintulot para maghalo ng kemikal, magsagawa ng clinical procedure, o magbuhat ng masakit. Panatilihin ang pag-iwas sa vector at init sa visit plan. Itala ang panukalang alternatibo, kung sino ang kailangang magpasya, at alin ang hindi pa nakumpirma. Ang pag-ulat ng kakulangan ay simula ng pagwawasto. Kailangan pang beripikahin ang actual na readiness bago magsimula. Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 29000,
+          "end_ms": 34720,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/combined-hazards-fil-name.wav",
+          "sha256": "dd1716604f0eaa4509ca38b9b5639b8d9df5e3d1f1910d6e9b508ba3087987c0",
+          "bytes": 274638,
+          "expected": "Apple: “Hindi muna ang gawaing kulang ang mahalagang proteksyon.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, hindi muna ang gawaing kulang ang mahalagang proteksyon.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [\n    {\n      \"timestamp\": \"00:00 - 00:01\",\n      \"word\": \"Apple\",\n      \"note\": \"Pronounced with standard Philippine English/Tagalog localized phonetics ('Apol').\"\n    }\n  ],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 29000,
+          "end_ms": 34720,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/combined-hazards-fil-meaning.wav",
+          "sha256": "dd1716604f0eaa4509ca38b9b5639b8d9df5e3d1f1910d6e9b508ba3087987c0",
+          "bytes": 274638,
+          "expected": "Apple: “Hindi muna ang gawaing kulang ang mahalagang proteksyon.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, hindi muna ang gawing kulang ang mahalagang proteksyon.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [\n    {\n      \"timestamp\": \"00:01 - 00:03\",\n      \"concern\": \"The phrasing 'hindi muna ang gawing kulang' is slightly awkward or grammatically incomplete in Tagalog, likely meaning not to compromise or cut short essential protection ('hindi dapat gawing kulang').\"\n    }\n  ],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": [\n    {\n      \"timestamp\": \"00:02 - 00:03\",\n      \"text\": \"gawing\",\n      \"alternative\": \"gawaing\",\n      \"explanation\": \"Spoken rapidly; sounds predominantly like 'gawing', but could subtly be perceived as 'gawaing'.\"\n    }\n  ]\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 21940,
+          "end_ms": 28700,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/combined-hazards-fil-qualification.wav",
+          "sha256": "bd686127b592009addb1e714b538d5c2d5e2eb86a254e6436d9a4d29e07f91ee",
+          "bytes": 324558,
+          "expected": "Hindi lahat ng gawain ay dapat awtomatikong ituloy o ihinto nang walang pagsusuri.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Hindi lahat ng gawain ay dapat awtomatikong ituloy o ihinto nang walang pagsusuri.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 116120,
+          "end_ms": 123400,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/combined-hazards-fil-ending.wav",
+          "sha256": "ff354eb24cf50e0e6ff88978ca7ce472c6071aceac744bcf832a3e766b1c4bdf",
+          "bytes": 349518,
+          "expected": "Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "combined-hazards-en",
+      "language": "en",
+      "encoded_sha256": "83c7dd3131c729e837e6eb4439e9304404c88623a466a44e77330375669fb29f",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/combined-hazards.en.9fa8525c5676.mp3",
+        "sha256": "83c7dd3131c729e837e6eb4439e9304404c88623a466a44e77330375669fb29f",
+        "bytes": 438962,
+        "expected": "When hazards combine At the mock station, clients are arriving, the room is hot and essential protection for one task is missing. Separate the decisions: what must pause, what can safely change, and what requires the authorized supervisor? Do not automatically continue or stop every activity without examining it. Apple: “The task without essential protection stays paused. Could we change the queue and schedule while awaiting your decision?” This is a proposal, not real authorization. Consider staff capacity, client flow, heat and rest. Extra unpaid BHW hours are not the sole safety control. Targets do not justify work beyond training. Check five groups: biological, chemical, physical, ergonomic and psychosocial hazards. Examples are a hand-hygiene gap, an unknown chemical, a slippery entrance or heat, a heavy load, and queue pressure. This does not authorize chemical mixing, clinical procedures or painful lifting. Retain vector and heat prevention in the visit plan. Record the proposed alternative, who must decide and what remains unconfirmed. Reporting a gap starts correction; actual readiness still needs verification before work begins. Combined hazards may require changing the work and obtaining the appropriate decision.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"When hazards combine, at the mock station, clients are arriving, the room is hot, and essential protection for one task is missing. Separate the decisions: what must pause, what can safely change, and what requires the authorized supervisor. Do not automatically continue or stop every activity without examining it. Apple, the task without essential protection stays paused. Could we change the queue and schedule while awaiting your decision? This is a proposal, not real authorization. Consider staff capacity, client flow, heat, and rest. Extra unpaid BHW hours are not the sole safety control. Targets do not justify work beyond training. Check five groups: biological, chemical, physical, ergonomic, and psychosocial hazards. Examples are a hand hygiene gap, an unknown chemical, a slippery entrance or heat, a heavy load, and queue pressure. This does not authorize chemical mixing, clinical procedures, or painful lifting. Retain vector and heat prevention in the visit plan. Record the proposed alternative, who must decide, and what remains unconfirmed. Reporting a gap starts correction; actual readiness still needs verification before work begins. Combined hazards may require changing the work and obtaining the appropriate decision.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 27680,
+          "end_ms": 32920,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/combined-hazards-en-name.wav",
+          "sha256": "5e8a27ab03919c0492c9fa116394544589d018ddd2304b1fd1a1400512028b79",
+          "bytes": 251598,
+          "expected": "Apple: “The task without essential protection stays paused.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, the task, without essential protection, stays paused.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 27680,
+          "end_ms": 32920,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/combined-hazards-en-meaning.wav",
+          "sha256": "5e8a27ab03919c0492c9fa116394544589d018ddd2304b1fd1a1400512028b79",
+          "bytes": 251598,
+          "expected": "Apple: “The task without essential protection stays paused.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, the task, without essential protection, stays paused.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 11320,
+          "end_ms": 20520,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/combined-hazards-en-qualification.wav",
+          "sha256": "8f139657c9edfb7ad348d63aa2b9b2d6b3639dadc60343e489c62be678cf8f48",
+          "bytes": 441678,
+          "expected": "Separate the decisions: what must pause, what can safely change, and what requires the authorized supervisor?",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Separate the decisions. What must pause, what can safely change, and what requires the authorized supervisor.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 103640,
+          "end_ms": 109680,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/combined-hazards-en-ending.wav",
+          "sha256": "d219a948f20f3a2b849ef42058cb75cb6d641117ad5ad645f3cc9d01f344e219",
+          "bytes": 289998,
+          "expected": "Combined hazards may require changing the work and obtaining the appropriate decision.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Combined hazards may require changing the work and obtaining the appropriate decision.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "verify-readiness-fil",
+      "language": "fil",
+      "encoded_sha256": "01d28410fd73a64b4928cf1f459fe1d26520c3e7896b618fbb39e005f8bec807",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/verify-readiness.fil.d8e3e740fadc.mp3",
+        "sha256": "01d28410fd73a64b4928cf1f459fe1d26520c3e7896b618fbb39e005f8bec807",
+        "bytes": 475847,
+        "expected": "Beripikahin bago magsimula Apple: “May nagsabing naayos na. Ano ang nakita o nakumpirma natin?” Sa checklist, isulat ang kondisyon, kailangan pang gawin, responsableng contact, batayan ng beripikasyon, at ready o hindi pa ready. Iba ang “hiniling na ayusin” sa “naayos at nasuri.” Sa kathang-isip na follow-up card, may sabon na sa mock station at nasuri ang dry entrance sa role-play. Ready ang dalawang kondisyong iyon para sa itinakdang mock task. Ngunit hindi pa nakumpirma ang ibang daan at visit contact. Hindi pa ready ang pagbisita; hindi nito sinasabing nawala ang banta sa Tulay A. Kung wala ang follow-up card o sagot ng contact, isulat na hindi pa beripikado. Sa role-play lamang, kinumpirma ng supervisor ang alternatibo: mock station briefing muna, ipagpaliban ang apektadong pagbisita, at muling mag-usap bago umalis. Apple: “Uulitin ko: briefing muna ang napagkasunduan; hindi muna ang route na may banta. Hindi pa tiyak ang bagong ruta at contact, kaya kailangan pa ng pasya bago ang visit.” Kumpirmahin ang pagtugon; hindi sapat ang katahimikan o tango bilang patunay ng kasunduan. Sa totoong trabaho, sundin ang awtorisadong lokal na pause/resume procedure. Hindi pinapalitan ng kuwento ang lokal na pahintulot. Kung bumalik ang panganib o may bagong hindi pa alam, mag-pause at iulat muli. Beripikahin ang kondisyon at pasya; hindi pa ready ang hindi pa nakumpirma.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Beripikahin bago magsimula. Apple, may nagsabing naayos na. Ano ang nakita o nakumpirma natin? Sa checklist, isulat ang kondisyon, kailangan pang gawin, responsableng contact, batayan ng beripikasyon, at ready o hindi pa ready. Iba ang hiniling na ayusin sa naayos at nasuri. Sa kathang-isip na follow-up card, may sabon na sa mock station, at nasuri ang dry entrance sa roleplay. Ready ang dalawang kondisyong iyon para sa itinakdang mock task. Ngunit hindi pa nakukumpirma ang ibang daan at visit o contact. Hindi pa ready ang pagbisita. Hindi nito sinasabing nawala ang banta sa tulay A. Kung wala ang follow-up card o sagot ng contact, isulat na hindi pa beripikado. Sa roleplay lamang, kinumpirma ng supervisor ang alternatibo: mock station briefing muna, ipagpaliban ang apektadong pagbisita, at muling mag-usap bago umalis. Apple, uulitin ko, briefing muna ang napagkasunduan, hindi muna ang route na may banta. Hindi pa tiyak ang bagong ruta at contact, kaya kailangan pa ng pasya bago ang visit. Kumpirmahin ang pagtugon. Hindi sapat ang katahimikan o tango bilang patunay ng kasunduan. Sa totoong trabaho, sundin ang awtorisadong lokal na pause o resume procedure. Hindi pinapalitan ng kwento ang lokal na pahintulot. Kung bumalik ang panganib o may bagong hindi pa alam, mag-pause at iulat muli. Beripikahin ang kondisyon at pasya. Hindi pa ready ang hindi pa nakumpirma.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 3340,
+          "end_ms": 6820,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/verify-readiness-fil-name.wav",
+          "sha256": "9395d54be732fc4c257469774971d6e6104bdb84c5c18ff5ec27495ed6a353d7",
+          "bytes": 167118,
+          "expected": "Apple: “May nagsabing naayos na.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, may nagsabing naayos na.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [\n    {\n      \"timestamp\": \"00:01 - 00:03\",\n      \"type\": \"readiness verification versus assumption\",\n      \"note\": \"The speaker relies on third-party hearsay ('may nagsabing...') rather than independently verifying whether the issue is actually resolved/ready.\"\n    }\n  ],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 3340,
+          "end_ms": 6820,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/verify-readiness-fil-meaning.wav",
+          "sha256": "9395d54be732fc4c257469774971d6e6104bdb84c5c18ff5ec27495ed6a353d7",
+          "bytes": 167118,
+          "expected": "Apple: “May nagsabing naayos na.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple, may nagsabing naayos na.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 11020,
+          "end_ms": 22620,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/verify-readiness-fil-qualification.wav",
+          "sha256": "b80b62b76f8e0602c432a240c722a55c84d786c023bbd4ff14f53e28b40b2160",
+          "bytes": 556878,
+          "expected": "Sa checklist, isulat ang kondisyon, kailangan pang gawin, responsableng contact, batayan ng beripikasyon, at ready o hindi pa ready.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Sa checklist, isulat ang kondisyon, kailangan pang gawin, responsableng contact, batayan ng beripikasyon, at ready o hindi pa ready.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 113260,
+          "end_ms": 118900,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/verify-readiness-fil-ending.wav",
+          "sha256": "5b3ed5f2f9473748c311fbe81bbaa07303b8ac1a25106ab280db8bf94b60d88a",
+          "bytes": 270798,
+          "expected": "Beripikahin ang kondisyon at pasya; hindi pa ready ang hindi pa nakumpirma.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Beripikahin ang kondisyon at pasya. Hindi pa ready ang hindi pa nakumpirma.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "verify-readiness-en",
+      "language": "en",
+      "encoded_sha256": "925a9b830d7e3bf5ae0878892bbdafb4d84c14b6ef619f11af2a644d1692a63c",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/verify-readiness.en.7d4a2eabb269.mp3",
+        "sha256": "925a9b830d7e3bf5ae0878892bbdafb4d84c14b6ef619f11af2a644d1692a63c",
+        "bytes": 445336,
+        "expected": "Verify before starting Apple: “Someone said it was corrected. What have we seen or confirmed?” Record the condition, remaining action, responsible contact, verification evidence and ready or not-ready status. “Correction requested” differs from “corrected and checked.” On the fictional follow-up card, soap is present at the mock station and the dry entrance was checked in the role-play. Those two conditions are ready for the specified mock task. However, an alternative route and visit contact remain unconfirmed. The visit is not ready; this does not mean the threat at Bridge A has vanished. Without a follow-up card or contact response, record not verified. Only within the role-play, the supervisor confirms an alternative: conduct the mock station briefing, defer the affected visit and check together again before departure. Apple: “I will repeat the agreement: briefing first; no threatened route. The new route and contact are unconfirmed, so the visit still needs a decision.” Confirm the response; silence or a nod is not proof of agreement. In real work, follow the authorized local pause/resume procedure. The story does not replace local authorization. Pause and report again if the hazard returns or new unknowns arise. Verify conditions and the decision; unconfirmed conditions are not ready.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Verify before starting. Apple said it was corrected. What have we seen or confirmed? Record the condition, remaining action, responsible contact, verification evidence, and ready or not ready status. Correction requested differs from corrected and checked. On the fictional follow-up card, soap is present at the mock station, and the dry entrance was checked in the roleplay. Those two conditions are ready for the specified mock task. However, an alternative route and visit contact remain unconfirmed. The visit is not ready. This does not mean the threat at Bridge A has vanished. Without a follow-up card or contact response, record not verified. Only within the roleplay, the supervisor confirms an alternative, conduct the mock station briefing, defer the affected visit, and check together again before departure. Apple, I will repeat the agreement: briefing first, no threatened route. The new route and contact are unconfirmed, so the visit still needs a decision. Confirm the response. Silence or a nod is not proof of agreement. In real work, follow the authorized local pause or resume procedure. The story does not replace local authorization. Pause and report again if the hazard returns or new unknowns arise. Verify conditions and the decision. Unconfirmed conditions are not ready.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": false\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 2940,
+          "end_ms": 5180,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/verify-readiness-en-name.wav",
+          "sha256": "f0efe45cbc8bb930b83512af4d7fbeab12c3302d05a1316384f72abbfeeaaab9",
+          "bytes": 107598,
+          "expected": "Apple: “Someone said it was corrected.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple said it was corrected.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": false\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 2940,
+          "end_ms": 5180,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/verify-readiness-en-meaning.wav",
+          "sha256": "f0efe45cbc8bb930b83512af4d7fbeab12c3302d05a1316384f72abbfeeaaab9",
+          "bytes": 107598,
+          "expected": "Apple: “Someone said it was corrected.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple said it was corrected.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 37620,
+          "end_ms": 43380,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/verify-readiness-en-qualification.wav",
+          "sha256": "5a92b638cc854ffd620dd47d51f36303f7201230e4221b4339b5d9cc1999434d",
+          "bytes": 276558,
+          "expected": "However, an alternative route and visit contact remain unconfirmed.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"However, an alternative route and visit contact remain unconfirmed.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 105460,
+          "end_ms": 111260,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/verify-readiness-en-ending.wav",
+          "sha256": "c9e208dd77d541dbde64667f839a17a0c3bbeffddec132d88b3d560cfabe50ab",
+          "bytes": 278478,
+          "expected": "Verify conditions and the decision; unconfirmed conditions are not ready.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Verify conditions and the decision. Unconfirmed conditions are not ready.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "practice-fil",
+      "language": "fil",
+      "encoded_sha256": "4c7f903dc197ca1fbbd06ac28d3b087f97f0c2f87eddcf6a18c6410640b48904",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/practice.fil.583c39fbdc9d.mp3",
+        "sha256": "4c7f903dc197ca1fbbd06ac28d3b087f97f0c2f87eddcf6a18c6410640b48904",
+        "bytes": 534465,
+        "expected": "Subukan, saka ulitin Punan ang limang bahagi ng checklist: gawain at saklaw; supplies at proteksyon; ruta at panahon; contact at oras ng balik; dahilan para mag-pause. Gamitin ang kathang-isip na station/route card, verification card at role instructions. Sabihin: “Walang sabon at may banta sa ruta.” Tukuyin ang apektadong gawain, panukalang ligtas na alternatibo at contact na kailangang kumpirmahin. Sa triad, magpalit bilang BHW, contact-o-partner at observer. Sa bawat ikot: 4 minutong attempt, 2 minutong feedback at 1 minutong retry. Tatlong ikot = 21 minuto; 2 minuto sa pagbasa ng card at 2 minuto sa paglipat = 25 minuto. Observer: sabihin ang eksaktong kulang, halimbawa “Hindi pa nakatala ang oras ng balik,” at ipaulit ang briefing pagkatapos punan ito. Kung mag-isa, isulat o sabihin ang parehong sagot habang nakatakip ang answer key. Suriin ang limang field at ready/hindi pa ready, iwasto ang isang kulang at ulitin. Gumamit ng reading support kung kailangan. Peer o sariling feedback ay practice; ang hindi naobserbahan ng trainer ay “hindi naobserbahan,” hindi pasado. Bago ang susunod na tunay na visit, kumpirmahin ang lokal na contact, ruta at pause/resume procedure. Hindi kapalit ng actual trainer-observed demonstration sa lesson 1.8.4 ang checklist o solo briefing na ito. Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Subukan, saka ulitin. Punan ang limang bahagi ng checklist: gawain at saklaw, supplies at proteksyon, ruta at panahon, contact at oras ng balik, dahilan para mag-pause. Gamitin ang kathang-isip na station o route card, verification card, at role instructions. Sabihin: walang sabon, at may banta sa ruta. Tukuyin ang apektadong gawain, panukalang ligtas na alternatibo, at contact na kailangang kumpirmahin. Sa triad, magpalit bilang BHW, contact o partner, at observer. Sa bawat ikot, apat na minutong attempt, dalawang minutong feedback, at isang minutong retry. Tatlong ikot, sabay dalawampu't isang minuto. Dalawang minuto sa pagbasa ng card, at dalawang minuto sa paglipat. Ito ay dalawampu't limang minuto. Observer, sabihin ang eksaktong kulang. Halimbawa, hindi pa nakatala ang oras ng balik, at ipaulit ang briefing pagkatapos punan ito. Kung mag-isa, isulat o sabihin ang parehong sagot habang nakatakip ang answer key. Sumuri ng limang field at ready o hindi pa ready. Iwasto ang isang kulang at ulitin. Gumamit ng reading support kung kailangan. Peer o sariling feedback ay practice. Ang hindi naobserbahan ng trainer ay hindi naobserbahan, hindi pasado. Bago ang susunod na tunay na visit, kumpirmahin ang lokal na contact, ruta, at pause o resume procedure. Hindi kapalit ng actual trainer-observed demonstration sa lesson 1.8.4 ang checklist o solo briefing na ito. Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 3020,
+          "end_ms": 16500,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/practice-fil-name.wav",
+          "sha256": "c03af2c8a5c6f310d2f8004cbffa9ef0517f76ce640b76636e3fdc162d41bb2a",
+          "bytes": 647118,
+          "expected": "Punan ang limang bahagi ng checklist: gawain at saklaw; supplies at proteksyon; ruta at panahon; contact at oras ng balik; dahilan para mag-pause.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Punan ang limang bahagi ng checklist: gawain at saklaw, supplies at proteksyon, ruta at panahon, kontak at oras ng balik, dahilan para mag-pause.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 16800,
+          "end_ms": 24560,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/practice-fil-meaning.wav",
+          "sha256": "7366e8bce847904c96a0e32f5647ea2bdfa6d1b28368e73a4b78d37f10eb3e7e",
+          "bytes": 372558,
+          "expected": "Gamitin ang kathang-isip na station/route card, verification card at role instructions.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Gamitin ang kathang-isip na station o route card, verification card, at role instructions.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 3020,
+          "end_ms": 16500,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/practice-fil-qualification.wav",
+          "sha256": "c03af2c8a5c6f310d2f8004cbffa9ef0517f76ce640b76636e3fdc162d41bb2a",
+          "bytes": 647118,
+          "expected": "Punan ang limang bahagi ng checklist: gawain at saklaw; supplies at proteksyon; ruta at panahon; contact at oras ng balik; dahilan para mag-pause.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Punan ang limang bahagi ng checklist: gawain at saklaw, supplies at proteksyon, ruta at panahon, contact at oras ng balik, dahilan para mag-pause.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 126180,
+          "end_ms": 133540,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/practice-fil-ending.wav",
+          "sha256": "c1df344ae0f9174a647fc5eb3c9adf6b4996748dfb23dc0d79d6794ecd5aabfc",
+          "bytes": 353358,
+          "expected": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
+          "status": "reviewed",
+          "response": "```json\n{\n \"transcript\": \"Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.\",\n \"speech_present\": true,\n \"pronunciation_concerns\": [],\n \"meaning_concerns\": [],\n \"delivery_concerns\": [],\n \"clipped_ending\": false,\n \"uncertainty\": []\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "practice-en",
+      "language": "en",
+      "encoded_sha256": "cb3a86fb0d74133d377766b0319a9e9330b3c95a683911eb64c5de2f75b33b80",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/practice.en.375964258a53.mp3",
+        "sha256": "cb3a86fb0d74133d377766b0319a9e9330b3c95a683911eb64c5de2f75b33b80",
+        "bytes": 477309,
+        "expected": "Try it, then repeat Complete the five checklist fields: task and scope; supplies and protection; route and weather; contact and return time; pause conditions. Use the fictional station/route card, verification card and role instructions. Say: “There is no soap and a threat on the route.” Identify the affected work, proposed safe alternative and contact needing confirmation. In a triad, rotate as BHW, contact-or-partner and observer. Each rotation has a 4-minute attempt, 2-minute feedback and 1-minute retry. Three rotations total 21 minutes; 2 minutes to read the card and 2 for transitions bring the activity to 25 minutes. Observer: name the exact gap, for example “Return time is missing,” and ask for another briefing after it is completed. Alone, write or speak the same response with the answer key covered. Check the five fields and ready/not-ready status, correct one gap and retry. Use reading support as needed. Peer or self-feedback is practice; an attempt the trainer did not observe is not observed, not passed. Before the next real visit, confirm the local contact, route and pause/resume procedure. This checklist or solo briefing does not replace actual trainer-observed demonstration in lesson 1.8.4. A checklist must support a decision about safe starting conditions, not just list equipment.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Try it. Then repeat. Complete the five checklist fields: task and scope, supplies and protection, route and weather, contact and return time, pause conditions. Use the fictional station or route card, verification card, and role instructions. Say there is no soap and a threat on the route. Identify the affected work, propose safe alternative, and contact needing confirmation. In a triad, rotate as BHW, contact or partner, and observer. Each rotation has a 4-minute attempt, 2-minute feedback, and 1-minute retry. Three rotations total 21 minutes. 2 minutes to read the card and 2 for transitions bring the activity to 25 minutes. Observer, name the exact gap, for example, return time is missing, and ask for another briefing after it is completed. Alone, write or speak the same response with the answer key covered. Check the five fields and ready or not ready status, correct one gap and retry. Use reading support as needed. Peer or self-feedback is practice. An attempt the trainer did not observe is not observed, not passed. Before the next real visit, confirm the local contact, route, and pause or resume procedure. This checklist or solo briefing does not replace actual trainer-observed demonstration in lesson 1.8.4. A checklist must support a decision about safe starting conditions, not just list equipment.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": null\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 2860,
+          "end_ms": 15900,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/practice-en-name.wav",
+          "sha256": "41149c5d47e075c7c5250cbb66f1e0ec842aed7addce33a527f92cc779810601",
+          "bytes": 625998,
+          "expected": "Complete the five checklist fields: task and scope; supplies and protection; route and weather; contact and return time; pause conditions.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Complete the five checklist fields: task and scope, supplies and protection, route and weather, contact and return time, pause conditions.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 16200,
+          "end_ms": 22920,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/practice-en-meaning.wav",
+          "sha256": "eab797e0c3b18de33f3b83232442da5fd5d41b9ce983569ef29e1a5f24f3cc8c",
+          "bytes": 322638,
+          "expected": "Use the fictional station/route card, verification card and role instructions.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Use the fictional station or route card, verification card, and role instructions.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 2860,
+          "end_ms": 15900,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/practice-en-qualification.wav",
+          "sha256": "41149c5d47e075c7c5250cbb66f1e0ec842aed7addce33a527f92cc779810601",
+          "bytes": 625998,
+          "expected": "Complete the five checklist fields: task and scope; supplies and protection; route and weather; contact and return time; pause conditions.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Complete the five checklist fields: task and scope, supplies and protection, route and weather, contact and return time, pause conditions.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 112780,
+          "end_ms": 119260,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/practice-en-ending.wav",
+          "sha256": "fe59930ef02640e6acf2c1487608366f363dd34fa8fe63f21736f755144cdf94",
+          "bytes": 311118,
+          "expected": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"A checklist must support a decision about safe starting conditions, not just list equipment.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "check-fil",
+      "language": "fil",
+      "encoded_sha256": "475cdc5cb5c1625dfdb8faf0be504a6aafc7c7bad9e505cff0ec85871c01f146",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/check.fil.7a7304781e73.mp3",
+        "sha256": "475cdc5cb5c1625dfdb8faf0be504a6aafc7c7bad9e505cff0ec85871c01f146",
+        "bytes": 179722,
+        "expected": "Piliin ang susunod na hakbang Balikan ang kathang-isip na route card ni Apple: may banta sa Tulay A at hindi pa nakumpirma ang ibang daan. Hindi sapat na kumpleto ang listahan ng supplies. Ano ang ligtas na susunod na hakbang? Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong briefing. Ang pagpindot sa sagot o panonood ng kuwento ay hindi patunay ng demonstrated competence. May ligtas na alternatibong napagkasunduan sa role-play; nakikita pa rin ang hindi pa ready bago magsimula.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Piliin ang susunod na hakbang. Balikan ang kathang-isip na route card ni Apple. May banta sa Tulay A, at hindi pa nakumpirma ang ibang daan. Hindi sapat na kumpleto ang listahan ng supplies. Ano ang ligtas na susunod na hakbang? Piliin ang sagot at ipaliwanag kung bakit, bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong briefing. Ang pagpindot sa sagot o panonood ng kwento ay hindi patunay ng demonstrated competence. May ligtas na alternatibong napagkasunduan sa role play? Nakikita pa rin ang hindi pa ready bago magsimula.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"None; speech is fully audible, clearly articulated, and transcribed without ambiguity.\"\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 2940,
+          "end_ms": 11420,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/check-fil-name.wav",
+          "sha256": "68fd01d5580462bff134e9d8f32a8da29f82ae7ed4de1ac390d5cb5acb9e8f67",
+          "bytes": 407118,
+          "expected": "Balikan ang kathang-isip na route card ni Apple: may banta sa Tulay A at hindi pa nakumpirma ang ibang daan.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Balikan ang kathang-isip na route card ni Apple. May banta sa Tulay A, at hindi pa nakumpirma ang ibang daan.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 19400,
+          "end_ms": 24880,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/check-fil-meaning.wav",
+          "sha256": "0f333434fe1151ce8816e3707ef25fb399ee8905fac43bfcd0ce71942bf2587a",
+          "bytes": 263118,
+          "expected": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 2940,
+          "end_ms": 11420,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/check-fil-qualification.wav",
+          "sha256": "68fd01d5580462bff134e9d8f32a8da29f82ae7ed4de1ac390d5cb5acb9e8f67",
+          "bytes": 407118,
+          "expected": "Balikan ang kathang-isip na route card ni Apple: may banta sa Tulay A at hindi pa nakumpirma ang ibang daan.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Balikan ang kathang-isip na route card ni Apple. May banta sa tulay A at hindi pa nakumpirma ang ibang daan.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [\n    {\n      \"timestamp\": \"00:00 - 00:08\",\n      \"description\": \"Synthesized text-to-speech (TTS) voice with consistent cadence and slightly artificial prosody.\"\n    }\n  ],\n  \"clipped_ending\": false,\n  \"uncertainty\": false\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 36700,
+          "end_ms": 44860,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/check-fil-ending.wav",
+          "sha256": "991028b7d9ee0ffb0d8d64113f98b55d99d353c4ade63c292b415eb1fdf3d4d3",
+          "bytes": 391758,
+          "expected": "May ligtas na alternatibong napagkasunduan sa role-play; nakikita pa rin ang hindi pa ready bago magsimula.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"May ligtas na alternatibong napagkasunduan sa role play. Nakikita pa rin ang hindi pa ready bago magsimula.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "check-en",
+      "language": "en",
+      "encoded_sha256": "bd2beb0384b255cfafb4c54dbade31bfeb775c19b90e837406ce920f9feea726",
+      "full": {
+        "file": "public/training/audio/08-osh/safety-prepare/check.en.648cab7df893.mp3",
+        "sha256": "bd2beb0384b255cfafb4c54dbade31bfeb775c19b90e837406ce920f9feea726",
+        "bytes": 161437,
+        "expected": "Choose the next step Revisit Apple’s fictional route card: a threat is reported at Bridge A and another route is unconfirmed. A complete supplies list is insufficient. What is the safe next step? Choose an answer and explain why before viewing feedback. Then compare it with your own briefing. Clicking an answer or watching a story does not establish demonstrated competence. The role-play has an agreed safe alternative; conditions that are not ready remain visible before work begins.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Choose the next step. Revisit Apple's fictional route card. A threat is reported at Bridge A, and another route is unconfirmed. A complete supplies list is insufficient. What is the safe next step? Choose an answer and explain why before viewing feedback. Then, compare it with your own briefing. Clicking an answer or watching a story does not establish demonstrated competence. The roleplay has an agreed safe alternative. Conditions that are not ready remain visible before work begins.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 2260,
+          "end_ms": 10820,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/check-en-name.wav",
+          "sha256": "dd21401abb1d80256814ae16736703e7cfbf9773107f5e5fa37c4ffbebdd5cc3",
+          "bytes": 410958,
+          "expected": "Revisit Apple’s fictional route card: a threat is reported at Bridge A and another route is unconfirmed.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Revisit Apple's fictional route card. A threat is reported at Bridge A, and another route is unconfirmed.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 18000,
+          "end_ms": 22000,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/check-en-meaning.wav",
+          "sha256": "51dd13d672e1fa0b43f97c37868793eca079e327ae641314342418cbcb50e280",
+          "bytes": 192078,
+          "expected": "Choose an answer and explain why before viewing feedback.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Choose an answer and explain why before viewing feedback.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 2260,
+          "end_ms": 10820,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/check-en-qualification.wav",
+          "sha256": "dd21401abb1d80256814ae16736703e7cfbf9773107f5e5fa37c4ffbebdd5cc3",
+          "bytes": 410958,
+          "expected": "Revisit Apple’s fictional route card: a threat is reported at Bridge A and another route is unconfirmed.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Revisit Apple's fictional route card. A threat is reported at Bridge A, and another route is unconfirmed.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 32220,
+          "end_ms": 40300,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/check-en-ending.wav",
+          "sha256": "2fc6e33e3ba8f35e63b2377a0da2c25b25548cc0b86778d0cbe67005a2a274c4",
+          "bytes": 387918,
+          "expected": "The role-play has an agreed safe alternative; conditions that are not ready remain visible before work begins.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"The roleplay has an agreed safe alternative, conditions that are not ready remain visible before work begins.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        }
+      ]
+    }
+  ],
+  "full_count": 12,
+  "focused_count": 48,
+  "status": "read_reviews_recorded"
+}

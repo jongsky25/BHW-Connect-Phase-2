@@ -1,0 +1,54 @@
+{
+  "status": "original sources inspected for authoring; clinical/local review pending",
+  "original_receipts": "docs/lesson-183-source-receipts.json",
+  "inspected_original_pdf_text": [
+    "facilitator 30",
+    "reference 21",
+    "deck 69–78",
+    "TESDA 29–32"
+  ],
+  "visually_inspected_original_pages": [
+    "facilitator PDF 19 / printed 12",
+    "reference PDF 22 / printed 14",
+    "reference PDF 23 / printed 15"
+  ],
+  "findings": [
+    "Facilitator PDF 30 / printed 23 specifies at least four hours and three OSH learning outcomes. PDF 19 / printed 12 assigns four hours. The 45+60+60+75 allocation preserves 240 minutes but does not prove certification.",
+    "TESDA unit 400311216, revision 01 (2019), PDF 29–32 / printed 25–28: identify requirements, acquire/arrange OSH materials under workplace procedures, perform/report activities. Observation/demonstration with oral questioning or third-party report are specified; this checklist is practice, not a complete NC II assessment.",
+    "Reference PDF 21 / printed 13 introduces OSH. The hazard table is image-only on PDF 22–23 / printed 14–15: needlestick/infection/vector/musculoskeletal/stress/accident/heat content. Do not rely on the empty extracted table text.",
+    "The source inventory topic table incorrectly says deck 74–83, although the PDF has 78 pages. Inspected original OSH section is 69–78, quiz 70–71, tables 73–75, demonstration/application 76–77. Original sources win; no source transcription changed.",
+    "Five hazard groups are an organizing adaptation of practice, not a quotation of five column labels from the manual. Vector and heat content is retained.",
+    "Historical needle-handling examples do not authorize BHW clinical tasks. Dummy discussion only pending local clinical review.",
+    "Historical manual mentions disinfectants and insurance/contact information. No recipe/dilution, insurance entitlement, real emergency number or treatment regimen is inferred.",
+    "WHO page stresses infection prevention/control and sharps practices. CDC page directs reporting and immediate medical care after exposure, and prefers administrative/engineering controls. This lesson teaches referral, not treatment."
+  ],
+  "authoritative_guidance": [
+    {
+      "url": "https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections",
+      "retrieved_date": "2026-10-09",
+      "html_sha256": "41660bd88acd0d02e59d3733401c13135cbf4c853d880d9f9fbae7b8e67e7cf0",
+      "retained_html": "who-occupational-infections.html",
+      "checked_text": "who-occupational-infections.txt"
+    },
+    {
+      "url": "https://www.cdc.gov/niosh/healthcare/risk-factors/bloodborne-infectious-diseases.html",
+      "retrieved_date": "2026-10-09",
+      "html_sha256": "8c97319cd1455d3492171685e0a239c7ecdcad6ee48f41daff1cf54718920f2a",
+      "retained_html": "cdc-bloodborne.html",
+      "checked_text": "cdc-bloodborne.txt"
+    }
+  ],
+  "clinical_review": {
+    "status": "pending",
+    "reviewer": null,
+    "required": [
+      "task scope and appropriate containers",
+      "hand hygiene/local PPE",
+      "exposure/reporting/referral route",
+      "heat/vector prevention",
+      "buddy/route and pause/resume procedure"
+    ]
+  },
+  "owner_approval": "pending",
+  "new_dialogue": "fictional adaptation, not DOH quotation"
+}

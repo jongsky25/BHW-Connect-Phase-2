@@ -10,13 +10,22 @@ const root=path.resolve(import.meta.dirname,'..'),dir=root+'/.preview/lesson183-
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const model='gemini-3.8-flash',promptRevision='apple-readiness-v1';
 const prompt='Transcribe this actual Filipino/Tagalog or Philippine English fictional educational audio completely without guessing. Assess audible speech, Apple and BHW pronunciation where present, task scope, readiness verification versus assumption, permission versus proposal, negation, qualifications, unknown route/contact, and ending completeness. Flag clipped speech, timbre changes, meaning errors and uncertainty with timestamps relative to the attached recording. Return JSON with transcript, speech_present, pronunciation_concerns, meaning_concerns, delivery_concerns, clipped_ending and uncertainty. This is model review, not human listening, owner approval or clinical signoff.';
-const reportPath=root+'/docs/lesson-183-audio-review.json';
+const reportPath=root+'/docs/lesson-183-'+(process.argv.includes('--story-only')?'story-audio-review':'audio-review')+'.json';
 const prior=fs.existsSync(reportPath)?JSON.parse(fs.readFileSync(reportPath)):null;
 const mf=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/narration.json'));
 const {lessons}=loadReferenceModule(root+'/content/training/day1-basic-competencies/modules/08-osh',root+'/public');
-const plan=planReferenceNarration([{key:'08-osh',lessons}],mf,src=>fs.existsSync(root+'/public'+src)?sha(fs.readFileSync(root+'/public'+src)):null).filter(i=>i.lessonKey==='safety-prepare');
-assert.equal(plan.length,12);assert(plan.every(i=>i.action==='skip'),'All current Read tracks required before review');
-const report={prompt_revision:promptRevision,prompt_sha256:sha(Buffer.from(prompt)),model,source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),method:'Exact Read MP3 and four measured zone-boundary PCM WAV excerpts per recording. Model-mediated; not human listening or clinical/owner approval.',story_aac_review:'blocked: no rendered story',records:[]};
+let plan=planReferenceNarration([{key:'08-osh',lessons}],mf,src=>fs.existsSync(root+'/public'+src)?sha(fs.readFileSync(root+'/public'+src)):null).filter(i=>i.lessonKey==='safety-prepare');
+const storyOnly=process.argv.includes('--story-only');
+if(storyOnly)plan=[];else {assert.equal(plan.length,12);assert(plan.every(i=>i.action==='skip'),'All current Read tracks required before review');}
+const lesson=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json'));
+const story=lesson.assets.find(a=>a.id==='safety-prepare-story');
+if(story)for(const language of ['fil','en']){
+ const source=root+'/public'+story.videos[language].path,wav=dir+'/shipped-aac-'+language+'.wav';
+ execFileSync('ffmpeg',['-v','error','-i',source,'-vn','-ac','1','-ar','24000','-c:a','pcm_s16le','-y',wav]);
+ const timing=JSON.parse(fs.readFileSync(root+`/remotion/public/safety-prepare/narration-${language}.json`));
+ plan.push({sectionId:'story',language,src:wav,zones:timing.beats,existing:{src:wav,timings:timing.beats},source_video:story.videos[language].path,source_video_sha256:sha(fs.readFileSync(source))});
+}
+const report={prompt_revision:promptRevision,prompt_sha256:sha(Buffer.from(prompt)),model,source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),method:'Exact Read MP3 and four measured zone-boundary PCM WAV excerpts per recording. Model-mediated; not human listening or clinical/owner approval.',story_aac_review:story?'actual decoded shipped AAC':'pending rendered story',records:[]};
 const save=()=>fs.writeFileSync(reportPath,JSON.stringify(report,null,2)+'\n');
 function output(value){if(typeof value==='string')return value;if(Array.isArray(value))return value.map(output).filter(Boolean).join('\n');if(!value||typeof value!=='object')return '';if(value.type==='text')return value.text??'';return output(value.outputs??value.output??value.content??value.steps?.filter(s=>s.type==='model_output')??[]);}
 async function review(file,mime,expected,old){
@@ -35,9 +44,9 @@ async function review(file,mime,expected,old){
  return record;
 }
 for(const item of plan){
- const track=item.existing,id=`${item.sectionId}-${item.language}`,file=root+'/public'+track.src;
+ const track=item.existing,id=`${item.sectionId}-${item.language}`,file=item.sectionId==='story'?track.src:root+'/public'+track.src;
  const old=prior?.records?.find(r=>r.id===id);
- const record={id,language:item.language,encoded_sha256:sha(fs.readFileSync(file)),full:await review(file,'audio/mp3',item.zones.map(z=>z.text).join(' '),old?.full),excerpts:[]};
+ const record={id,language:item.language,encoded_sha256:sha(fs.readFileSync(file)),source_video:item.source_video??null,source_video_sha256:item.source_video_sha256??null,full:await review(file,item.sectionId==='story'?'audio/wav':'audio/mp3',item.zones.map(z=>z.text).join(' '),old?.full),excerpts:[]};
  report.records.push(record);save();
  const timings=track.timings;
  const name=timings.find(t=>/Apple/.test(t.text))??timings.find(t=>t.zone==='body')??timings[0];
@@ -53,5 +62,5 @@ for(const item of plan){
 }
 report.full_count=report.records.filter(r=>r.full.status==='reviewed').length;
 report.focused_count=report.records.flatMap(r=>r.excerpts).filter(r=>r.status==='reviewed').length;
-report.status=report.full_count===12&&report.focused_count===48?'read_reviews_recorded':'incomplete';save();
+report.status=report.full_count===plan.length&&report.focused_count===plan.length*4?'available_reviews_recorded':'incomplete';save();
 if(report.status==='incomplete')throw Error('Incomplete actual Read model reviews');

@@ -8,7 +8,7 @@ Lesson 1.8.3 prepares and verifies readiness. Hazard identification, control sel
 
 60 facilitated minutes: 5 opening + 10 modelled readiness check + 25 rotating checklist/briefing/feedback/retry + 12 combined-hazard debrief + 8 transfer. The four lesson allocations remain 45 + 60 + 60 + 75 = 240 minutes. This is guided practice, not measured self-study or certification.
 
-Self-study timing awaits actual complete new narration; optional story and replays are additional. Prepare bilingual A4 cards, five-field checklists, verification prompts, role cards, pause/contact aid, pens and dummy equipment without needles, chemicals or body fluids.
+Authored independent-study estimate: 14–17 minutes, using actual six-screen narration of 655.70 seconds in Filipino and 588.59 seconds in English, plus 3–6 minutes for the check and reflection. This is an estimate; optional story and replays are additional and do not replace 60 guided minutes. Prepare bilingual A4 cards, five-field checklists, verification prompts, role cards, pause/contact aid, pens and dummy equipment without needles, chemicals or body fluids.
 
 ## [prepare] Prepare
 
@@ -74,4 +74,4 @@ Alone: complete the same card with the key covered, compare all five fields and 
 
 Draft adaptation, not a DOH quotation. Candidate references: Facilitator Guide PDF 30 (printed 23), competency table PDF 19 (printed 12); Reference Manual PDF 21–23; original deck OSH slides 69–78. Consult docs/lesson-183-source-audit.json for actual original-PDF access/inspection and discrepancies; transcription is not completed PDF audit. Do not claim TESDA certification equivalence.
 
-Authorized clinical/local-procedure review, human listening, model audio review and owner approval are distinct pending states. Verify hand hygiene/PPE, containers, reporting/referral, heat/vector precautions, buddy/route and pause/resume procedures locally. Immediate appropriate medical evaluation must not await paperwork. No drugs/doses, chemical recipes, deadlines or emergency numbers are taught. Shared Apple reference, illustrations and story remain pending; see the draft report.
+Authorized clinical/local-procedure review, human listening, model audio review and owner approval are distinct pending states. Verify hand hygiene/PPE, containers, reporting/referral, heat/vector precautions, buddy/route and pause/resume procedures locally. Immediate appropriate medical evaluation must not await paperwork. No drugs/doses, chemical recipes, deadlines or emergency numbers are taught. The coordinated Apple reference and six illustrations are available as draft assets. Story rendering and human/clinical/owner reviews are tracked in the draft report.
