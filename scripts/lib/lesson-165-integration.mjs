@@ -1,8 +1,10 @@
+import {beforeProposed171} from './lesson-171-integration.mjs';
 // Verify exact integrated successors before exposing immutable reviewed/main views.
 import fs from 'node:fs';import {createHash} from 'node:crypto';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const receipt=JSON.parse(fs.readFileSync('docs/lesson-165-integration-receipt.json'));
 export function lesson165View(p,side,actual=fs.readFileSync(p)){
+ actual=beforeProposed171(p,actual);
  const e=receipt.files[p];if(!e)return actual;
  if(!['reviewed165','approvedMain'].includes(side))throw Error('Invalid 1.6.5 integration view');
  if(sha(actual)!==e.integrated_sha256)throw Error('Unpinned integrated successor: '+p);

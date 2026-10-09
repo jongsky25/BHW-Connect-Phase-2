@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm community health trainer. Keep one stable adult female Kore narrator from heading to ending, including quotations; no character voice acting. Use gentle pitch and pace variation. Make event, reported source, correction and still-unknown facts clear; keep every negation audible. Finish all words without adding, translating or promising a solution. Read Carole as written.",
+  "durationSeconds": 49.737,
+  "beats": [
+    {
+      "zone": "missed-visits",
+      "index": 0,
+      "text": "Carole hears three households report missed visits. These are reports; attendance records remain unchecked.",
+      "start_ms": 0,
+      "end_ms": 8160
+    },
+    {
+      "zone": "worked-example",
+      "index": 1,
+      "text": "Missed visits are the event. Unwillingness is a guess. A poster is a solution. Separate the three.",
+      "start_ms": 8460,
+      "end_ms": 16420
+    },
+    {
+      "zone": "source-gap",
+      "index": 2,
+      "text": "Carole identifies each source. Dates and each household’s barrier remain uncertain.",
+      "start_ms": 16720,
+      "end_ms": 23440
+    },
+    {
+      "zone": "resident-perspective",
+      "index": 3,
+      "text": "The first resident clarifies: Tuesday, not Monday. Cancellation is uncertain. Carole attributes the correction.",
+      "start_ms": 23740,
+      "end_ms": 31780
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "In triads, write event, source and gap. Ask, give feedback and retry without blame.",
+      "start_ms": 32080,
+      "end_ms": 39840
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Three households report missed visits. The first reports Tuesday. Records and each barrier remain unchecked. No cause is guessed.",
+      "start_ms": 40140,
+      "end_ms": 49660
+    }
+  ],
+  "audio_sha256": "f38a3b6b901325aa35da0c2d7147201c671006e72d513a7c68eeb1093bcaf4e6"
+}

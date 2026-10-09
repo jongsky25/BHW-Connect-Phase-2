@@ -1,0 +1,543 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "0bf98ef4e10636fa312091f80ec9f9d766e2de4b",
+  "lesson_number": "1.7.1",
+  "lesson_key": "problem-define",
+  "lesson_id": "cc8eee94-60a5-41b3-8a47-c6ae92903c07",
+  "module_id": "2ba3c8c2-4fac-4440-bbaa-ab19e5120e54",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "manifest": {
+    "lesson_key": "problem-define",
+    "position": 0,
+    "title_fil": "Linawin ang problema",
+    "title_en": "Define the problem",
+    "objectives_fil": [
+      "Mula sa missed-visit case, isulat ang problemang may tiyak na pangyayari, pinagmulan at impormasyong kulang, nang walang paninisi."
+    ],
+    "objectives_en": [
+      "Given the missed-visit case, write a problem statement with a specific event, source and information gap, without blame."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "missed-visits",
+      "concept_ids": [
+        "m7.define"
+      ]
+    },
+    {
+      "id": "worked-example",
+      "concept_ids": [
+        "m7.define"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m7.define"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m7.define"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m7.define",
+      "read_ids": [
+        "missed-visits",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-missed-visits",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "original_check": {
+    "prompt_fil": "Aling pahayag ang magandang simula ng pagsisiyasat?",
+    "prompt_en": "Which statement is a useful starting point for investigation?",
+    "options": [
+      {
+        "fil": "“Kailangan ng bagong poster ang lahat.”",
+        "en": "“Everyone needs a new poster.”"
+      },
+      {
+        "fil": "“Ayaw talaga nilang gumaling.”",
+        "en": "“They do not want to get well.”"
+      },
+      {
+        "fil": "“Tatlong pamilya ang hindi nakapunta; alamin ang hadlang sa bawat isa.”",
+        "en": "“Three households missed visits; check each household’s barrier.”"
+      }
+    ],
+    "correct_option_index": 2,
+    "feedback_fil": "Ang ikatlong sagot ay tiyak at bukas sa ebidensya. Ang poster ay solusyong hindi pa nasusuri; ang pahayag tungkol sa kagustuhan ay husga, hindi obserbasyon.",
+    "feedback_en": "The third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation."
+  },
+  "guided_minutes": 35,
+  "module_guided_minutes": 180,
+  "target_sha256": {
+    "competency.json": "abbe5bcc2864c7b79f2fb5e2d99d248ccc3213cbd3f2539adb8374824ca075ca",
+    "facilitator.en.md": "0647732a620a4d2d5b59286595a4de0ddfe4f895f3f208a3b914b2476d66f2c9",
+    "facilitator.fil.md": "967e746e5f8afaae752e447e9743a7a79b1673f33f74198913062b4bd139856a",
+    "lesson.json": "d6c9d4d8dc5de32d1ec6b8a2002c81112549a983a10c1f3b76fb0bea77856ef7",
+    "read.en.md": "b1868871519f6a8bad35ff6acfcd71b1b7c0f46f3a08f7489384cc0621b7db00",
+    "read.fil.md": "cac8131e8e05ee700ed7d509fa54fab928e9e728df4ca9a0e52c633848f18004",
+    "slides.json": "b8ace20fbc9015b19f26f1cb590f5fea718f8d739d1c60e36387d09d4eae98a6"
+  },
+  "shared_sha256": {
+    "content/training/day1-basic-competencies/modules/07-problema/module.json": "e05d5c89551a874949e71894d05c70a877577658f6d3b33fb085e673ebf69f4d",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    "content/training/day1-basic-competencies/narration.json": "19e57ac0c7de91430146cf2443034a832cd8c86128f7113672f6f3c088a57fc5",
+    "src/components/elearning/reference-lessons.tsx": "d78003dfd8eb6c01066db76a8f18bfa60e2b054f501b8fe707c2b40469f8e485",
+    "remotion/src/Root.tsx": "b02b60f9bb5f2f815deca7d6f7cde4cea5686e460c00ecc62c206232d0906ee8",
+    "scripts/lib/reference-narration.mjs": "2dce94b8a64269e7454cab621bc690e23aa577bfa38771fb860ad58e5de0f3ec",
+    "scripts/lib/tts-providers/gemini.mjs": "f841e0934b13b29631e841a3abbfd1aebe63be591f5c23b3f6981f3ebc3687ee"
+  },
+  "source_transcription_sha256": {
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/kwento-ni-rosario.md": "c3907b1b473f6cf7f7506de06b8aa3a8051806709e31d45f3f7ab946432744ef"
+  },
+  "target_narration": {
+    "module": "07-problema",
+    "sections": {
+      "check": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-define/check.en.2e5416d246e0.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "2e5416d246e02aea5cb2a31be0a9f990ad2a9c2c490745ec06268bbeaad5e51d",
+          "sha256": "9d2ce00b171904d9b119bbd17fe7136ce2d1179058b29c3488a8f05bba79d9ac",
+          "duration_seconds": 16.771,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 2080
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2380,
+              "end_ms": 7300
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7600,
+              "end_ms": 11080
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Describe the event and evidence before choosing a cause or solution.",
+              "start_ms": 11380,
+              "end_ms": 16700
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-define/check.fil.62d4c3c6b989.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "62d4c3c6b989f6effaed971040d79a587239f73869bcaa88d66c3d3e90b2c533",
+          "sha256": "d4fa8fb27ee04f030dcc1f21777565b873fda8938bdb552b46d8f505f68af037",
+          "duration_seconds": 20.402,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 2680
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 2980,
+              "end_ms": 8180
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 8480,
+              "end_ms": 13320
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
+              "start_ms": 13620,
+              "end_ms": 20340
+            }
+          ]
+        }
+      },
+      "missed-visits": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-define/missed-visits.en.9d174900a8f1.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "9d174900a8f1033b2f09584cb28125aede7ffde290280382cb7a8a32f2c423d3",
+          "sha256": "42b73d55d151b5dbd56eec07f62e2ec30ee37f0d7a092b54547726b2b077398f",
+          "duration_seconds": 41.561,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Three visits, the same barrier",
+              "start_ms": 0,
+              "end_ms": 3280
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "BHW Nestor, 41, revisits three households that missed an agreed health-center visit.",
+              "start_ms": 3580,
+              "end_ms": 11220
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Instead of labeling them “uncooperative,” he records dates, missed visits and the residents’ stated reasons.",
+              "start_ms": 11520,
+              "end_ms": 19680
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "These three households are a training example, not data from your barangay.",
+              "start_ms": 19980,
+              "end_ms": 25660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "The problem is inability to reach a service on the agreed day; its causes still need investigation before choosing a solution.",
+              "start_ms": 25960,
+              "end_ms": 35160
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Define the problem using events and evidence rather than judgments about people.",
+              "start_ms": 35460,
+              "end_ms": 41500
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-define/missed-visits.fil.fb16a7e00ba7.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "fb16a7e00ba79f60f134a1e0392e45b4c89d31ab6b89c43118effd2a1d0d1a4a",
+          "sha256": "fd86e3e562282ac801eb47964b99dec39eec3a5eaf05697ca173f6150936ed70",
+          "duration_seconds": 48.039,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Tatlong balik, parehong hadlang",
+              "start_ms": 0,
+              "end_ms": 3520
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Si BHW Nestor, 41 anyos, ay bumalik sa tatlong kabahayang hindi nakadalo sa napagkasunduang health-center visit.",
+              "start_ms": 3820,
+              "end_ms": 13740
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Sa halip na isulat na “pasaway,” inilista niya ang petsa, bilang ng hindi nakadalo at mga dahilang mismong sinabi ng residente.",
+              "start_ms": 14040,
+              "end_ms": 24840
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ang tatlong kabahayan ay halimbawa sa pagsasanay, hindi datos ng inyong barangay.",
+              "start_ms": 25140,
+              "end_ms": 32100
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Ang problema ay “hindi makarating sa serbisyo sa takdang araw”; kailangan pang siyasatin ang dahilan bago pumili ng solusyon.",
+              "start_ms": 32400,
+              "end_ms": 41480
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Tukuyin ang problema gamit ang pangyayari at ebidensya, hindi husga sa tao.",
+              "start_ms": 41780,
+              "end_ms": 47980
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-define/practice.en.bc26f38603b4.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "bc26f38603b477b40aea8ec1e08cdd46b6a35233da6390bf107fe0861f24f63e",
+          "sha256": "2bdc4c7519da5712d3349cf1fdc05cf28f1953fa3a4ae4a285a2322dc836cb94",
+          "duration_seconds": 39.576,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2560
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Write: “Three households in the example missed agreed visits; they report barriers to attending.",
+              "start_ms": 2860,
+              "end_ms": 11180
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Dates and each barrier still need clarification.”",
+              "start_ms": 11480,
+              "end_ms": 15680
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Compare with “The families lack discipline.”",
+              "start_ms": 15980,
+              "end_ms": 19660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "In pairs, underline the event, source and gap.",
+              "start_ms": 19960,
+              "end_ms": 24720
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Alone, use the same checklist.",
+              "start_ms": 25020,
+              "end_ms": 27980
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "In your next problem report, seek the affected residents’ perspectives too.",
+              "start_ms": 28280,
+              "end_ms": 33600
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Describe the event and evidence before choosing a cause or solution.",
+              "start_ms": 33900,
+              "end_ms": 39500
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-define/practice.fil.ed93637f8649.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "ed93637f8649b14c3c5f49848d4dc4e1a7a62b7080ef55a94af4908384de2512",
+          "sha256": "c60d8d52eeca02c547b37b38cb45c34fa7763057a6b60f880c4e9c74547c1872",
+          "duration_seconds": 47.256,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 2880
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Isulat: “Tatlong pamilya sa halimbawa ang hindi nakapunta sa napagkasunduang araw; ayon sa kanila, may hadlang sa pagpunta.",
+              "start_ms": 3180,
+              "end_ms": 15180
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Kailangan pang linawin ang petsa at bawat hadlang.”",
+              "start_ms": 15480,
+              "end_ms": 19920
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ihambing sa “Walang disiplina ang mga pamilya.”",
+              "start_ms": 20220,
+              "end_ms": 24380
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Sa pares, salungguhitan ang pangyayari, pinagmulan at kulang.",
+              "start_ms": 24680,
+              "end_ms": 30240
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Kung mag-isa, gamitin ang parehong checklist.",
+              "start_ms": 30540,
+              "end_ms": 34420
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Sa susunod na problemang iuulat, humingi rin ng pananaw ng apektadong residente.",
+              "start_ms": 34720,
+              "end_ms": 40760
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
+              "start_ms": 41060,
+              "end_ms": 47180
+            }
+          ]
+        }
+      },
+      "worked-example": {
+        "en": {
+          "src": "/training/audio/07-problema/problem-define/worked-example.en.07f7911f6eb4.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "07f7911f6eb4454344d13e7ed1b93e65c220a01eb8e3e7dcbfcf0a7ed7706a02",
+          "sha256": "3228c9818dcbb609080bc0868fbd81cbc32233946f550730984411423b27f267",
+          "duration_seconds": 30.929,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Separate the problem from a guess",
+              "start_ms": 0,
+              "end_ms": 3240
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "“Three households missed visits” describes the event in the example.",
+              "start_ms": 3540,
+              "end_ms": 8620
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "“They did not want to go” guesses at motivation.",
+              "start_ms": 8920,
+              "end_ms": 13000
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "“We need a poster” proposes a solution.",
+              "start_ms": 13300,
+              "end_ms": 16980
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Before choosing a solution, find out what each household reports and which records can clarify the situation.",
+              "start_ms": 17280,
+              "end_ms": 25240
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Describe the event and evidence before choosing a cause or solution.",
+              "start_ms": 25540,
+              "end_ms": 30860
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/07-problema/problem-define/worked-example.fil.9498e7f6290e.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "9498e7f6290eac23bec301de9554993ae09bb952151f97de415601bb7ae20490",
+          "sha256": "9d5e79aae430e2caeae86c5dc3ff320eaf58ee7be5e73061065e608c2b83cdc2",
+          "duration_seconds": 32.993,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Ihiwalay ang problema sa hula",
+              "start_ms": 0,
+              "end_ms": 3080
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "“Tatlong pamilya ang hindi nakapunta” ay paglalarawan ng pangyayari sa halimbawa.",
+              "start_ms": 3380,
+              "end_ms": 9740
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "“Ayaw nilang pumunta” ay hula sa motibo.",
+              "start_ms": 10040,
+              "end_ms": 13640
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "“Kailangan ng poster” ay mungkahing solusyon.",
+              "start_ms": 13940,
+              "end_ms": 17380
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Bago pumili ng solusyon, alamin ang sinabi ng bawat pamilya at kung anong rekord ang makatutulong sa paglilinaw.",
+              "start_ms": 17680,
+              "end_ms": 26240
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
+              "start_ms": 26540,
+              "end_ms": 32940
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "reference_path": "docs/lesson-17-reference/carole-character-reference-6e2b1c5044d7.png",
+  "reference_sha256": "6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c",
+  "publication_or_human_SME_approval": false,
+  "published_baseline": "Not queried for this handoff. Capture bounded authenticated lesson/revision/private-guide rows when implementation begins; repository source is not proof of live selection."
+}

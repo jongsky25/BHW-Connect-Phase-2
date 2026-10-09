@@ -1,0 +1,1359 @@
+{
+  "status": "draft-review-pending",
+  "method": "Author reconciliation of actual-audio model reports; no human listening claim. All fourteen full reports and fifty-six focused reports were parsed and retained without suppressing concerns.",
+  "full_reviews": 14,
+  "focused_reviews": 56,
+  "human_listening": "pending",
+  "owner_package_review": "pending",
+  "local_policy_SME_review": "pending",
+  "name_pronunciation": {
+    "displayed_name": "Carole",
+    "speech_alias_added": false,
+    "finding": "Reviews of excerpts containing the name describe recognizable Carol/Carole pronunciation in both languages. Non-occurrence of the name or BHW in other excerpts is not a defect. No target speech alias was added."
+  },
+  "unresolved_concerns": [
+    {
+      "type": "narrator_consistency",
+      "finding": "Full reports often describe a consistent narrator, while focused excerpts identify timbre/pitch shifts, sometimes label voices male/female or treat transitions as planned characters. Character or multi-speaker switching was not intended: the generator uses the same target-only female Kore style for every sentence. These disagreements remain unresolved, rather than being dismissed as normal prosody.",
+      "review_targets": [
+        "read missed-visits ending (both languages)",
+        "read practice head/ending",
+        "read resident-perspective dialogue/ending",
+        "read source-gap Filipino body/ending and English ending",
+        "read worked-example Filipino ending",
+        "shipped English story critical excerpt"
+      ],
+      "required_follow_up": "Human review of full tracks and the exact supplied WAV excerpts before release; regenerate identified segments if the reviewer confirms unsuitable voice changes."
+    },
+    {
+      "type": "phonetic_uncertainty",
+      "finding": "Filipino check critical excerpt notes tapat/dapat dental-stop ambiguity; the full and ending reviews report clear meaning and intact negation. Retained for human listening."
+    }
+  ],
+  "confirmed_content_failure": "No changed negation, omitted correction, silence or clipped final word was confirmed by these reports. This does not establish human approval.",
+  "records": [
+    {
+      "id": "read-problem-define-missed-visits-fil",
+      "actual_full_audio_sha256": "b85ef3abf1fd9ce2f8bef498a1433f5209bb6c42a7363e4f0c7849c35320e82d",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "audible": true,
+        "pacing": "Deliberate, well-paced, and suitable for an educational module with appropriate pauses between dialogue quotes and analytical points.",
+        "pitch_and_pace_variation": "Natural and expressive; shifts dynamically from an inquisitive opening hook to a calm, instructional reporting tone.",
+        "timbre_shift": "A noticeable shift in vocal delivery occurs at 00:03.000, transitioning from dramatic character dialogue in the opening question to a neutral, steady instructional narrative voice."
+      },
+      "full_pronunciation_concerns": [],
+      "full_other_concerns": {
+        "clarity_of_concepts": {
+          "event_and_scope": "Clearly established at 00:05.000–00:12.000 (three households missing agreed health center visits) and contextualized as a hypothetical classroom scenario at 00:13.000–00:17.000.",
+          "source_attribution": "Distinctly credited to each individual resident at 00:18.000–00:30.000.",
+          "direct_observation_vs_inference": "Explicitly distinguished at 00:31.000–00:35.000 ('Mga ulat nila ito, hindi pa patunay ng iisang hadlang').",
+          "uncertainty_and_verification": "Directly noted at 00:36.000–00:47.000 regarding missing appointment cards/attendance records and dates requiring verification.",
+          "corrected_problem_statement": "Expressed objectively without speculative causes or blame at 00:48.000–01:06.000."
+        },
+        "anomalies": "No truncated words, dropped syllables, clipped audio tails, or altered negations/numbers detected."
+      },
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-missed-visits-fil-head.wav",
+          "sha256": "6a55707048de9041e621bf4581a90ecf5b5cd5b1403e618ba06fac3bf8570eae",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as 'Carol' (/ˈka.rol/ / /ˈkæ.rəl/) at approximately 00:04.5 following the initialism 'BHW' (pronounced as English letters B-H-W).",
+            "negation": "The negation 'hindi' in 'hindi sila nakapunta' is clearly articulated and audible between 00:08.5 and 00:09.2.",
+            "role_distinctions": "There is a distinct shift in voice/character role: 00:00.0–00:02.7 features an expressive character voice asking questions, followed by an educational narrator voice from 00:03.3 to 00:12.3.",
+            "ending_completeness": "The audio concludes naturally with full intonational cadence on 'visit' around 00:12.2, with no abrupt cutoffs or trailing speech.",
+            "audible_speech": "All words are cleanly delivered and fully audible throughout the clip.",
+            "clipped_words": "None detected; word boundaries are intact.",
+            "unexpected_voice_changes": "The transition between the dialogue line (00:00–00:02.7) and the narration (00:03.3 onward) is an intentional character-to-narrator role shift rather than an unintentional acoustic defect."
+          },
+          "uncertainty": "None; the recording is clear and dialogue/narration elements are easily discernible."
+        },
+        {
+          "kind": "body",
+          "file": "read-missed-visits-fil-body.wav",
+          "sha256": "080e42799116b0555be47b33e40810741f32f005396ca3182a5c2d9383ca8bff",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as 'Carol' (/ˈkæ.rəl/ or /ˈkɑː.rəl/) matching the name Carole.",
+            "negation": "The negation particle 'hindi' in 'hindi sila nakapunta' is clearly articulated without ambiguity.",
+            "role_distinctions": "'BHW Carole' (Barangay Health Worker Carole) is clearly stated at the beginning (00:00 - 00:02).",
+            "ending_completeness": "The sentence ends completely at 'health center visit' without cutoff or trailing off.",
+            "audible_speech": "Speech is entirely clear, natural, and easily intelligible throughout the excerpt.",
+            "clipped_words": "None detected; word boundaries and phonemes are fully preserved.",
+            "unexpected_voice_changes": "None; tone, pitch, and pacing remain consistent."
+          },
+          "uncertainty": "None"
+        },
+        {
+          "kind": "critical",
+          "file": "read-missed-visits-fil-critical.wav",
+          "sha256": "adb148b5e0c5efe91d3c8f283d7dbae89cc976d6b9a05a09c8013a96831744bf",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The name 'Carol'/'Carole' at 00:01 - 00:02 is pronounced naturally as /ˈka.rol/ ('Carol').",
+            "negation": "Negation terms ('hindi' at 00:05 and 00:11 - 00:12) are clearly articulated without ambiguity.",
+            "role_distinctions": "'BHW' (Barangay Health Worker) is clearly spelled out as an English initialism ('B-H-W') preceding the name.",
+            "ending_completeness": "The excerpt concludes completely at 00:13.9 without trailing off or abrupt cutoffs.",
+            "audible_speech": "All words are clearly audible and intelligible throughout the clip.",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "unexpected_voice_changes": "The speaker maintains a consistent synthetic/TTS instructional voice profile with expected pacing and pauses."
+          },
+          "uncertainty": "Low; all spoken words and acronyms are distinct and cleanly enunciated."
+        },
+        {
+          "kind": "ending",
+          "file": "read-missed-visits-fil-ending.wav",
+          "sha256": "7adcd9c5b5aa3c4e1fdc172d568f2744963c51754bc4cf4543c3852437116577",
+          "possible_defects": [
+            {
+              "timestamp": "00:05.5 - 00:12.5",
+              "type": "unexpected voice change",
+              "description": "Notable shift in pitch, timbre, and pacing compared to the preceding and following segments, indicating a possible multi-speaker or spliced recording."
+            }
+          ],
+          "observations": {
+            "role_distinctions_and_voice_changes": "There are noticeable vocal shifts across the segments: the first segment (00:00–00:05) features a neutral narrative tone, shifting at ~00:05.5 to a lower, more subdued tone (00:05–00:12), followed by a distinct change at ~00:12.5 to a brighter, higher-pitched instructional voice (00:12–00:18).",
+            "carole_pronunciation": "The name 'Carole' is not audible in this excerpt.",
+            "negation": "Negation terms ('hindi', 'walang') are pronounced clearly at 00:02 ('hindi pagdating'), 00:05–00:06 ('Hindi muna'), and 00:16–00:17 ('nang walang').",
+            "audible_speech_and_clipping": "All words are articulated clearly without audible clipping or cutoffs.",
+            "ending_completeness": "The excerpt concludes naturally at 00:18 with a fully resolved sentence ('paninisi')."
+          },
+          "uncertainty": "Low; all spoken words are intelligible and clearly pronounced."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-missed-visits-en",
+      "actual_full_audio_sha256": "670792075b2dae05fea965a0b9c401c13a85c852a3c135766d9d8db064a9e019",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate and well-paced educational delivery with appropriate pauses separating quotes and analytical distinctions.",
+        "pitch_and_pace_variation": "Natural and expressive pitch variation appropriate for instructional narration.",
+        "timbre_consistency": "Consistent narrator vocal timbre across the entire recording.",
+        "clarity_of_concepts": {
+          "event_and_scope": "Clearly defined (three households missing an agreed health center visit).",
+          "source_attribution": "Clearly distinguishes between resident self-reports and absence of objective records (appointment cards / attendance records).",
+          "observation_vs_inference": "Explicitly notes that resident statements are reports rather than proof of a single shared barrier.",
+          "uncertainty_and_clarification": "Clearly highlights which date needs clarification.",
+          "problem_statement": "Objectively defines non-attendance without prematurely assigning cause or blame."
+        }
+      },
+      "full_pronunciation_concerns": [],
+      "full_other_concerns": [],
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-missed-visits-en-head.wav",
+          "sha256": "925e959f7bc0a7482fdb8867d7e85947a6dc34e5b398d2edb683c237c5bca5c1",
+          "possible_defects": [],
+          "observations": {
+            "role_distinctions": "There is a distinct shift in persona between the expressive character voice asking 'Three households? What happened?' (00:00.00 - 00:02.75) and the objective narrator voice delivering the narration (00:03.20 - 00:09.55).",
+            "carole_pronunciation": "The name 'Carol' (or 'Carole') at 00:04.30 - 00:04.85 is pronounced clearly as standard /ˈkærəl/ or /ˈkɛərəl/ with Philippine English phonology.",
+            "negation": "No negative grammatical constructions (e.g., 'not', 'didn't') are present in this excerpt.",
+            "ending_completeness": "The final word 'visit' at 00:09.05 - 00:09.55 concludes naturally with a complete falling intonation and clear final consonant release.",
+            "clipped_words": "No audible words are clipped or truncated at speech boundaries.",
+            "unexpected_voice_changes": "A natural pause occurs between 00:02.75 and 00:03.20 where the speaker switches from character delivery to educational narration."
+          },
+          "uncertainty": "None detected; speech is fully intelligible and clear throughout."
+        },
+        {
+          "kind": "body",
+          "file": "read-missed-visits-en-body.wav",
+          "sha256": "eed19525360bdffe30facc70b32b54bb21f0d357fae467bdc91e74ca51808a43",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as standard 'Carol' [ˈkæ.ɹəl] around 00:00.8 - 00:01.3.",
+            "negation": "No explicit grammatical negations (e.g., 'no', 'not', 'never') are present.",
+            "role_distinctions": "Single narrator voice introducing 'BHW Carol' (Barangay Health Worker Carol) in third-person descriptive narration.",
+            "ending_completeness": "The sentence completes naturally on 'visit' with a falling terminal pitch and without truncation.",
+            "audible_speech": "All words are fully audible and intelligible throughout the clip.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "Tone, volume, and pacing remain consistent across the recording."
+          },
+          "uncertainty": "None."
+        },
+        {
+          "kind": "critical",
+          "file": "read-missed-visits-en-critical.wav",
+          "sha256": "d11366119a7116d4282072ee0d0c7e80098a87c0969db8d968d1dee8c9b4a2c3",
+          "possible_defects": [],
+          "observations": {
+            "audible_speech": "Clear, clean educational delivery with a standard Philippine English accent.",
+            "role_distinctions": "The speaker clearly distinguishes between the instructional narration ('This is a fictional classroom example... / The first resident says') and the reported dialogue ('I could not attend on Monday.') using a subtle pause and intonational shift.",
+            "negation": "Both instances of negation ('not data' at ~00:02.1 and 'could not attend' at ~00:05.9) are clearly articulated without elision or ambiguity.",
+            "carole_pronunciation": "No occurrence of the name or word 'Carole' is present in this audio excerpt.",
+            "clipped_words": "None detected; all word boundaries and consonants (including terminal /d/ in 'example', 'resident', and 'attend') are fully preserved.",
+            "ending_completeness": "The audio concludes naturally after 'Monday' with a completed sentence cadence and no premature cutoff.",
+            "unexpected_voice_changes": "None; voice timbre, pitch, and recording acoustic remain consistent throughout."
+          },
+          "uncertainty": "None; the speech is intelligible, audible, and unambiguous throughout."
+        },
+        {
+          "kind": "ending",
+          "file": "read-missed-visits-en-ending.wav",
+          "sha256": "b260c14f12eb5e4acc2390e0e0ff97bb7737552be1abbc00d3e48b1170bbeea4",
+          "possible_defects": [
+            {
+              "type": "unexpected_voice_changes",
+              "timestamp_range": "00:04.1 - 00:10.8",
+              "description": "Inconsistent vocal identity with multiple sudden timbre and pitch shifts between clauses across synthetic voice models."
+            }
+          ],
+          "observations": {
+            "carole_pronunciation": "The name Carole does not occur in this excerpt.",
+            "negation": "Negation terms ('non-attendance', 'does not', 'without') are clearly articulated without elision.",
+            "role_distinctions": "The audio features disjointed voice profiles rather than distinct character role-play dialogue; it functions as instructional/narrative guidance delivered via alternating synthetic voices.",
+            "ending_completeness": "The excerpt concludes with a complete sentence ending naturally at 'without blame.' with no cutoff.",
+            "audible_speech": "All spoken words are fully intelligible and audible throughout.",
+            "clipped_words": "None observed.",
+            "unexpected_voice_changes": "There are noticeable voice/timbre shifts: Voice 1 (00:00–00:03.7), shifting to Voice 2 (00:04.1–00:07.4), shifting to a deeper/lower-pitched voice (00:07.6–00:10.5), and returning to a higher synthetic voice (00:11.0–00:14.4)."
+          },
+          "uncertainty": "Low; all words and vocal transitions are clearly identifiable."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-worked-example-fil",
+      "actual_full_audio_sha256": "896b05a3f76d79458d746f513e8521d8694bc12eb0faaaa26f27455d17972726",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, structured, and didactic with clean pauses separating analytical categories and prompt questions.",
+        "pitch_and_pace_variation": "Natural instructional intonation; emphasis is placed systematically on contrasting concepts (e.g., pangyayari, hula, solusyon).",
+        "timbre_consistency": "Consistent acoustic environment and narrator vocal timbre throughout with no abrupt shifts or dropouts.",
+        "content_clarity": {
+          "event_and_scope": "Clearly expressed ('Tatlong pamilya ang hindi nakapunta').",
+          "source_attribution": "Clearly demarcated ('ayon ito sa kanilang ulat', 'Sino ang nagsabi?').",
+          "observation_vs_inference": "Explicitly distinguished ('hula sa motibo', 'Hindi pinapatunayan ng ulat na ayaw nilang gumaling').",
+          "uncertainty_and_clarification": "Clearly voiced ('Ano pa ang hindi natin alam?', 'kung may kaugnayan ito sa iniulat na hadlang', 'makatutulong sa paglilinaw').",
+          "objective_problem_statement": "Expressed objectively without blame or assumed causes ('Ilarawan ang pangyayari, pinagmulan, at kulang nang walang paninisi')."
+        }
+      },
+      "full_pronunciation_concerns": [
+        {
+          "item": "Carol",
+          "timestamp": "00:24 - 00:26",
+          "note": "Pronounced naturally as standard 'Carol' (/ˈkæ.rəl/ or /ˈka.rol/); no awkwardness observed."
+        },
+        {
+          "item": "BHW",
+          "timestamp": "N/A",
+          "note": "The initialism BHW does not appear in the spoken narration."
+        }
+      ],
+      "full_other_concerns": [],
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-worked-example-fil-head.wav",
+          "sha256": "d790bbc43e0b83891597f9854f7bf27621d8a0a69483407f30bcef3f865f15d1",
+          "possible_defects": [],
+          "observations": {
+            "speaker": "Single female narrator delivering instructional/educational content in Tagalog in a steady, measured pace.",
+            "carole_pronunciation": "Not applicable; the name Carole does not appear in the passage.",
+            "negation": "The negation 'hindi' at 00:03.8 - 00:04.2 is clearly articulated.",
+            "role_distinctions": "Single consistent voice throughout; no role switches.",
+            "ending_completeness": "The sentence finishes completely at 00:10.8 with 'ulat' without abrupt cut-off.",
+            "audible_speech": "All words are fully audible and enunciated clearly.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "None observed."
+          },
+          "uncertainty": "None"
+        },
+        {
+          "kind": "body",
+          "file": "read-worked-example-fil-body.wav",
+          "sha256": "3994455d3f81dc777769c14ef35ad5c6a4ecba1e3e8d50ebbebec7da2e1c1fc0",
+          "possible_defects": [],
+          "observations": [
+            {
+              "timestamp": "00:00 - 00:02",
+              "note": "Clear articulation of 'Tatlong pamilya ang hindi nakapunta' with clear standard negation on 'hindi'."
+            },
+            {
+              "timestamp": "00:02 - 00:04.2",
+              "note": "Delivery of 'ay pangyayari sa halimbawa' followed by a measured educational pause."
+            },
+            {
+              "timestamp": "00:04.8 - 00:08.0",
+              "note": "Continues with 'Idagdag na, ayon ito sa kanilang ulat.' Sentence ends cleanly with no clipped endings."
+            }
+          ],
+          "uncertainty": "none"
+        },
+        {
+          "kind": "critical",
+          "file": "read-worked-example-fil-critical.wav",
+          "sha256": "3ed563759058c7501faddc28395f45339738b3eb7e438d81a406ab9ad8fedf4b",
+          "possible_defects": [],
+          "observations": {
+            "audible_speech": "The narration is clearly audible and cleanly articulated with minimal background noise.",
+            "carole_pronunciation": "No occurrence of the name or term 'Carole' exists in this excerpt.",
+            "negation": "Negation terms 'hindi' (00:01 - 00:02) and 'Ayaw' (00:09 - 00:10) are distinctly spoken and properly emphasized.",
+            "role_distinctions": "Single consistent educational narrator voice distinguishing between explanatory commentary and example phrases via subtle pausing and intonation.",
+            "ending_completeness": "The final phrase 'ay hula sa motibo' concludes fully at around 00:12 with no cutoff on the final vowel.",
+            "clipped_words": "None observed.",
+            "unexpected_voice_changes": "Tone, volume, and vocal characteristics remain stable throughout."
+          },
+          "uncertainty": "None; audio quality and diction are exceptionally clear."
+        },
+        {
+          "kind": "ending",
+          "file": "read-worked-example-fil-ending.wav",
+          "sha256": "97184a9812ff82b4dc74a8b8483decefe2ab775c6db9525466930c84aae5ab45",
+          "possible_defects": [
+            {
+              "type": "voice_switch",
+              "timestamp_range": "00:08 - 00:09; 00:16 - 00:17",
+              "description": "Pagpapalit ng boses mula babae patungong lalaki at pabalik sa babae sa loob ng maikling prompt."
+            }
+          ],
+          "observations": {
+            "pronunciation": "Malinaw at may neutral na tono ang pagbigkas sa parehong boses ng babae at lalaki.",
+            "negation": "Naglalaman ng negatibong salita na 'walang' sa pariralang 'walang paninisi' bandang 00:21.",
+            "role_distinctions": "May pagpapalitan ng tagapagsalita: nagsimula sa boses ng babae (00:00 - 00:08), sinundan ng boses ng lalaki (00:09 - 00:16), at bumalik sa boses ng babae (00:17 - 00:22).",
+            "ending_completeness": "Buo ang huling pantig ng salitang 'paninisi' at walang biglaang pagkaputol bago matapos ang audio.",
+            "clipped_words": "Walang natukoy na naputol o na-clip na mga salita.",
+            "unexpected_voice_changes": "May kapansin-pansing pagbabago ng boses (female to male to female) sa pagitan ng mga tagubilin, na maaaring intensyonal para sa iba't ibang hakbang o tauhan ngunit kapansin-pansing paglipat."
+          },
+          "uncertainty": "Medyo hindi pangkaraniwan ang semantika ng pariralang 'at kulang nang walang paninisi' sa 00:20 - 00:22 kumpara sa karaniwang pormulasyon, ngunit malinaw itong naririnig ayon sa pagbigkas."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-worked-example-en",
+      "actual_full_audio_sha256": "5a3eb0d95142dec29f919a0c5e24d351fd449696bb7d9017defb6a9c521217e5",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": "The narration is cleanly delivered with clear, steady pacing and natural pitch variation suitable for instructional material. Distinction between direct statements, quotations, and categories (event, guess, solution) is well-demarcated with appropriate pauses. Core analytical concepts—event scope ('Three households missed visits'), source attribution ('from their reports'), observation versus inference, uncertainty ('What do we still not know?'), and problem definition without guessed causes/blame—are communicated unambiguously. Timbre remains consistent throughout with no clipping or audio degradation.",
+      "full_pronunciation_concerns": [],
+      "full_other_concerns": [
+        {
+          "timestamp": "0:00-0:54",
+          "note": "The initialism 'BHW' does not appear in the spoken audio. The name 'Carole' is pronounced standardly as /'kærəl/ at 00:22."
+        }
+      ],
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-worked-example-en-head.wav",
+          "sha256": "4f3c4fc4836872254d6d9632e7c434aa89e56daa241e4d602e13dbfa88f16b3e",
+          "possible_defects": {
+            "carole_pronunciation": "No occurrence of the name 'Carole' in the audio.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "None detected; tone and pitch remain steady."
+          },
+          "observations": {
+            "speaker": "Single female speaker with clear, neutral educational narration.",
+            "role_distinctions": "No role shifts; delivery remains instructional throughout.",
+            "negation": "No negative constructions are present in the excerpt.",
+            "audible_speech": "All words are fully audible and distinct.",
+            "ending_completeness": "The final sentence terminates naturally on 'reports.' without cutoff."
+          },
+          "uncertainty": "None."
+        },
+        {
+          "kind": "body",
+          "file": "read-worked-example-en-body.wav",
+          "sha256": "7cb164a28d964aa245c791056c486850b1aff1aad157dc9e45d852db19da7a4c",
+          "possible_defects": [],
+          "observations": {
+            "speaker_and_tone": "Single synthetic female voice delivering instructional/educational text in a standard, deliberate cadence with clear articulation.",
+            "pronunciation": "Standard pronunciation throughout; no noticeable mispronunciations or unexpected phonetic shifts.",
+            "flow_and_boundaries": "Clear syntactic break between the first sentence ending at 00:03.95 and the second sentence starting at 00:04.75.",
+            "ending": "The final word 'reports' finishes cleanly with natural decay, without clipping."
+          },
+          "uncertainty": "None."
+        },
+        {
+          "kind": "critical",
+          "file": "read-worked-example-en-critical.wav",
+          "sha256": "b1803278571785769741e9ee75f6a6148524dd38df56ba26375d685ab90e171e",
+          "possible_defects": [],
+          "observations": {
+            "audible_speech": "The audio contains clearly articulated educational narration consisting of two example clauses paired with their functional labels.",
+            "role_distinctions": "There is a subtle shift in intonation between the quoted statements ('They did not want to go', 'We need a poster') and the subsequent analytical descriptor tags ('guesses at motivation', 'proposes a solution').",
+            "negation": "The negation 'did not' at 00:00.15 - 00:00.60 is clearly articulated.",
+            "carole_pronunciation": "The name or word 'Carole' is not present in this audio excerpt.",
+            "ending_completeness": "The audio ends naturally with full decay on 'solution' around 00:06.80.",
+            "clipped_words": "No words are clipped at either boundary or internally.",
+            "unexpected_voice_changes": "No unexpected shifts or glitches in voice quality; pacing and volume remain steady."
+          },
+          "uncertainty": "None. Speech is clear and unambiguous."
+        },
+        {
+          "kind": "ending",
+          "file": "read-worked-example-en-ending.wav",
+          "sha256": "476108fd6c776a0e6348891155ce7f7a8f05dcb8407e2cfb1f260762f5570ae8",
+          "possible_defects": [],
+          "observations": {
+            "speaker_profile": "Single female speaker delivering clear instructional/educational prompts with standard Philippine English phonological traits.",
+            "carole_pronunciation": "No occurrence of the name or word 'Carole' in the spoken excerpt.",
+            "negation": "No explicit negative contractions or negation markers detected (except the prepositional phrase 'without blame').",
+            "role_distinctions": "Single consistent instructional voice throughout; no multi-role distinction required.",
+            "ending_completeness": "The audio ends naturally with 'without blame.' at approximately 00:19.4 with full phonetic closure and no cut-off.",
+            "audible_speech": "Speech is clean, clear, and fully audible with minimal studio background noise.",
+            "clipped_words": "None observed.",
+            "unexpected_voice_changes": "Tone, pitch, and pacing remain steady and consistent throughout."
+          },
+          "uncertainty": "None; all words and phrases are clearly intelligible."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-source-gap-fil",
+      "actual_full_audio_sha256": "23cb44a39987ff8abb64b60d6c4fc54c1afa3d41f6f446f76157d65e2a55f4dd",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "pacing": "Deliberate, well-paced, and instructional, with clear pauses separating each category and rule.",
+        "natural_pitch_pace_variation": "Natural and clear educational delivery with appropriate inflection and emphasis on key distinctions.",
+        "clarity_of_concepts": {
+          "event_and_scope": "Clearly expressed at 00:04–00:16 ('pangyayari at saklaw', 'tatlong kabahayan... nag-ulat ng hindi pagpunta').",
+          "source_attribution": "Clearly stated at 00:18–00:21 ('direktang sinabi ng bawat residente kay Carol').",
+          "direct_observation_vs_inference": "Explicitly distinguished at 00:21–00:24 ('hindi ito personal niyang obserbasyon ng attendance') and 00:32–00:38 ('Ang may trabaho ako ay ulat ng ikalawang residente, hindi dahilan ng lahat').",
+          "uncertainty_and_verification": "Clearly framed at 00:39–00:45 ('Walang record na naipakita, kaya huwag sabihing napatunayan ang bilang o pagkansela').",
+          "clarification_and_correction": "Explicitly guided at 00:46–00:56 ('hilingin ang paglilinaw sa awtorisadong taong may access sa record ayon sa lokal na pamamaraan').",
+          "problem_statement_without_guessed_causes": "Clearly stated at 01:00–01:06 ('Ilarawan ang pangyayari, pinagmulan, at kulang nang walang paninisi')."
+        }
+      },
+      "full_pronunciation_concerns": {
+        "Carole_or_Carol": "Pronounced clearly as 'Carol' (/kaˈɾol/) at 00:20 with natural Tagalog phonology.",
+        "BHW": "The initialism BHW does not appear in this recording.",
+        "notes": "English loanwords ('attendance' at 00:23, 'record' at 00:40 and 00:54, 'access' at 00:53 and 00:59) are articulated clearly with standard Filipino-English pronunciation."
+      },
+      "full_other_concerns": {
+        "timbre_change": "There is a planned speaker shift between the opening prompt (female voice, 00:00–00:02) and the instructional response (male voice, 00:02–01:07). Within each speaker segment, vocal timbre is stable and consistent.",
+        "negation_or_condition_shifts": "None; negations ('hindi', 'huwag', 'walang') are delivered clearly and unambiguously.",
+        "truncated_words": "None detected."
+      },
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-source-gap-fil-head.wav",
+          "sha256": "846ddfc7e02a85afe0954199d4ac455152c5174d0570c21bf2c769f6e10f0465",
+          "possible_defects": [],
+          "observations": {
+            "role_distinctions": "There are two distinct speaker roles: Speaker 1 (00:00.00 - 00:01.80) has a lighter, youthful tone asking inquiry questions ('Kaninong ulat? Anong kulang?'), while Speaker 2 (00:02.30 - 00:08.95) provides formal instructional guidance in a mature, steady narrative voice.",
+            "pronunciation": "Clear and natural Tagalog articulation throughout; no mispronunciations detected.",
+            "negation": "No negative syntactic constructions are present in this excerpt.",
+            "clipped_words": "None; all word onsets and codas are fully intact.",
+            "ending_completeness": "The final phrase 'at impormasyong kulang' resolves naturally with complete phonemic decay and no abrupt cutoff.",
+            "audible_speech": "High-fidelity, clean educational audio with no competing background noise or masking artifacts."
+          },
+          "uncertainty": "None"
+        },
+        {
+          "kind": "body",
+          "file": "read-source-gap-fil-body.wav",
+          "sha256": "d74dbf29b9fcb26adca9cca6c32d541db8cb968c8d8c713b41225f5279b695f0",
+          "possible_defects": [],
+          "observations": "The speaker delivers an instructional prompt in Filipino with a clear, measured educational tone. Each item in the list ('Pangyayari at saklaw', 'Pinagmulan', 'at impormasyong kulang') is articulated distinctly with appropriate pauses and clean terminal audio.",
+          "uncertainty": "None"
+        },
+        {
+          "kind": "critical",
+          "file": "read-source-gap-fil-critical.wav",
+          "sha256": "7cd19aa75b4e5ea2002251da81325978cbd8027871e2904fa988da39f4923ac6",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced at ~00:10.5–00:10.9 as 'kay Carol' ([keɪ ˈka.ɾol]), sounding natural within Tagalog phonology.",
+            "negation": "Negation markers are distinctly articulated: 'hindi pagpunta' at 00:05.1–00:06.1 and 'hindi ito' at 00:11.2–00:11.9, without swallowing or slurring.",
+            "role_distinctions": "The audio clearly delineates structural contrast between categories ('Sa unang hanay...' at 00:00.0 vs. 'Sa ikalawa...' at 00:06.8) and separates direct resident reporting from Carol's personal observation.",
+            "ending_completeness": "The excerpt concludes completely with 'attendance' (~00:13.3–00:14.1), finishing with an audible final alveolar sibilant [s] without abrupt cutoffs.",
+            "audible_speech": "Speech is fully audible, clean, and delivered at an even pace with standard studio/TTS-like clarity.",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "unexpected_voice_changes": "Pitch, timbre, and pacing remain consistent throughout with no unexpected shifts or voice glitches."
+          },
+          "uncertainty": "None; audio clarity and phonetic details are high throughout the excerpt."
+        },
+        {
+          "kind": "ending",
+          "file": "read-source-gap-fil-ending.wav",
+          "sha256": "57d4dd13c25a1224db46e1997c10a5565ed16565d2de0117d7ffd9981da4e716",
+          "possible_defects": [
+            {
+              "type": "unexpected_voice_change",
+              "timestamp_range": "00:02.0 - 00:02.3 and 00:14.5 - 00:15.1",
+              "description": "Mid-sentence and inter-sentence speaker shifts between female and male voices without conversational context or speaker tags."
+            }
+          ],
+          "observations": {
+            "carole_pronunciation": "The name or word 'Carole' is not present in the spoken Tagalog audio.",
+            "negation": "Negation terms 'Hindi' (00:11.2) and 'walang' (00:20.1) are articulated clearly and distinctly.",
+            "role_distinctions_and_voice_changes": "There is a noticeable shift between speakers/voices: a natural female voice speaks from 00:00.0 to 00:02.0, followed by an abrupt transition to a deeper male voice from 00:02.3 to 00:14.5, and then returning to the female voice from 00:15.1 to 00:21.0.",
+            "audible_speech": "All words are intelligible and pronounced at a steady, measured pace.",
+            "clipped_words": "None detected; words have complete initial and final consonants.",
+            "ending_completeness": "The utterance concludes cleanly at 00:21.1 without trailing off or being cut short."
+          },
+          "uncertainty": "None; audio quality is clear and speech is fully audible."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-source-gap-en",
+      "actual_full_audio_sha256": "0c92f54bf981d4461adad9913210b826af5a67b632903c785c701c0e8f24a948",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "audible_throughout": true,
+        "pacing": "Deliberate and segmented with pronounced pauses between syntactic units, suitable for instructional narration.",
+        "pitch_and_pace_variation": "Moderate pitch variation; cadence is structured and measured, characteristic of synthetic or rehearsed educational voiceover.",
+        "timbre_consistency": "Consistent acoustic quality and vocal timbre across the entire recording without abrupt shifts."
+      },
+      "full_pronunciation_concerns": [],
+      "full_other_concerns": [],
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-source-gap-en-head.wav",
+          "sha256": "1f096e7e5532886c275278d759ebd64c4f36fd5d9a6d93cdd336cfc9c758b1a8",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The name or word 'Carole' does not occur in this audio excerpt.",
+            "negation": "No negative constructions or negation terms are present.",
+            "role_distinctions": "A single speaker delivers instructions and list items; no role shifts or dialogue present.",
+            "ending_completeness": "The utterance concludes naturally at [00:08.45] with no truncation.",
+            "audible_speech": "Speech is clearly audible, paced steadily, with an educational delivery style consistent with Philippine English.",
+            "clipped_words": "None; all word boundaries are intact.",
+            "unexpected_voice_changes": "None observed; tone, pitch, and timbre remain consistent throughout."
+          },
+          "uncertainty": "Low; transcript and acoustic cues are clear."
+        },
+        {
+          "kind": "body",
+          "file": "read-source-gap-en-body.wav",
+          "sha256": "04f4f971d86d82e7d6322b203a72cb99334c041e79a27722af1f6ea97b8cbde6",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The name or word 'Carole' does not occur in this excerpt.",
+            "negation": "No negative constructions are present.",
+            "role_distinctions": "Single speaker delivering structured instructional prompts.",
+            "ending_completeness": "The phrase terminates cleanly on 'gap' with no audible truncation.",
+            "audible_speech": "All words are clearly enunciated and intelligible throughout.",
+            "clipped_words": "None observed.",
+            "unexpected_voice_changes": "Tone, volume, and pacing remain uniform throughout the recording."
+          },
+          "uncertainty": "None."
+        },
+        {
+          "kind": "critical",
+          "file": "read-source-gap-en-critical.wav",
+          "sha256": "232c7cfdbb8961e112cbfd248b83cf5ea3d5a9a8a5c6b1d8375cc2e50461e051",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as /ˈkær.əl/ at around 00:03.2–00:03.8.",
+            "negation": "The negation 'did not' is distinctly articulated without contraction between 00:04.4 and 00:05.0.",
+            "role_distinctions": "The entire excerpt is voiced by a single female speaker providing narration.",
+            "ending_completeness": "The audio concludes naturally after 'barrier' at approximately 00:13.3 with falling terminal intonation; there is no mid-syllable cutoff, though syntactically it forms an incomplete sentence or bullet point list.",
+            "audible_speech": "Speech is fully audible and clear across the entire excerpt.",
+            "clipped_words": "None detected; word boundaries are intact.",
+            "unexpected_voice_changes": "A slight pause and pitch reset occurs at 00:07.1 ('In the third...'), consistent with reading a new list item rather than an unexpected speaker change."
+          },
+          "uncertainty": "Low; all words and phonetic details are clearly discernible."
+        },
+        {
+          "kind": "ending",
+          "file": "read-source-gap-en-ending.wav",
+          "sha256": "410e959ccf4249585bcb55a1f4ed0d8182c1907e3ab57ce5dddf66dd687ad0cf",
+          "possible_defects": [],
+          "observations": {
+            "role_distinctions": "There are two distinct speaker voices: Speaker 1 delivers the instructional guidance from 00:00.00 to 00:09.50 and 00:13.40 to 00:17.05, while Speaker 2 delivers the clarifying rule statement from 00:09.95 to 00:12.70 with a deeper, distinct vocal quality.",
+            "negation": "Negation terms ('no new' at 00:11.30–00:11.85 and 'without' at 00:16.00–00:16.45) are clearly pronounced without ambiguity.",
+            "carole_pronunciation": "The proper noun or term 'Carole' does not occur in this audio excerpt.",
+            "audible_speech": "All spoken words are fully audible, clear, and unmasked by background noise.",
+            "clipped_words": "None detected; word boundaries and final consonants are intact.",
+            "voice_changes": "Speaker shifts occur cleanly at 00:09.95 and 00:13.40, consistent with structured educational dialogue rather than an unexpected mid-utterance artifact.",
+            "ending_completeness": "The final phrase 'without blame' completes naturally with standard terminal falling intonation and sufficient trailing silence before the audio terminates."
+          },
+          "uncertainty": "None; speech is clear and distinct throughout."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-resident-perspective-fil",
+      "actual_full_audio_sha256": "c9a839fb9edcbf17ed10ffc8b1b424d3391d580c42925bf24cf0c0b95fd39761",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "pacing": "Moderate, measured, and well-spaced, suitable for instructional/educational narration.",
+        "pitch_and_pace_variation": "Natural variations in pitch and phrasing across narrative sentences and questions.",
+        "timbre_changes": [
+          {
+            "timestamp": "00:00 - 00:02",
+            "description": "Narrated by Speaker A (higher-pitched female voice)."
+          },
+          {
+            "timestamp": "00:02 - 00:12",
+            "description": "Switches to Speaker B (lower-pitched female narrative voice)."
+          },
+          {
+            "timestamp": "00:12 - 00:16",
+            "description": "Switches back to Speaker A for the resident's response intro and first line."
+          },
+          {
+            "timestamp": "00:16 - 00:29",
+            "description": "Switches to Speaker B (who speaks the remainder of the resident's line and Carole's dialogue)."
+          },
+          {
+            "timestamp": "00:29 - 00:34",
+            "description": "Switches back to Speaker A for the resident's confirmation."
+          },
+          {
+            "timestamp": "00:34 - 01:03",
+            "description": "Switches back to Speaker B for the remainder of the narration."
+          }
+        ]
+      },
+      "full_pronunciation_concerns": [
+        {
+          "term": "Carole",
+          "timestamp": "00:03, 00:20, 00:35",
+          "observation": "Pronounced cleanly and recognizably as 'Carol' with standard Filipino accentuation."
+        },
+        {
+          "term": "BHW",
+          "timestamp": null,
+          "observation": "The initialism BHW does not appear in the spoken audio."
+        }
+      ],
+      "full_other_concerns": {
+        "audibility": "Speech is completely audible and clear throughout.",
+        "clarity_of_concepts": {
+          "event_and_scope": "Clearly expressed; focuses on establishing what occurred on the visit date versus assumptions.",
+          "source_attribution": "Clearly maintained ('Ayon sa iyo', 'pinanatili ang pinagmulan ng pagwawasto').",
+          "direct_observation_vs_inference": "Explicitly demarcated; behavioral cues (katahimikan, tango, ekspresyon) are clearly noted as non-evidence for agreement or motive.",
+          "uncertainty_and_clarification": "Explicitly identified ('Hindi ko alam kung kinansela...', 'Hindi mo tiyak ang pagkansela?').",
+          "correction_and_problem_statement": "Correction from Monday to Tuesday is isolated without assuming center cancellation/attendance; problem statement focuses on reporting facts and omissions without assigning blame ('nang walang paninisi')."
+        },
+        "negation_and_conditions": "Negations ('hindi Lunes', 'hindi nakapunta', 'hindi nito kinukumpirma', 'huwag burahin', 'hindi patunay', 'walang paninisi') are unambiguous and accurately spoken.",
+        "dialogue_attribution_mismatch": "At 00:16–00:20, the second half of the resident's statement ('Hindi ko alam kung kinansela ng center') is voiced by Speaker B rather than Speaker A, causing a momentary inconsistency in voice persona attribution."
+      },
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-resident-perspective-fil-head.wav",
+          "sha256": "8fca58ad9f8d0c3b44a6f1012c6532a036d268aa435ee4a359259b75b36c6742",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The name 'Carol' is clearly pronounced around 00:03.2 - 00:03.7 as 'Carol'.",
+            "negation": "No negation words are present in the excerpt.",
+            "role_distinctions": "The speaker clearly distinguishes the instructional prompt ('Bigyan ng pagkakataong magwasto'), the narrative frame ('Itinanong ni Carol sa unang residente,'), and the quoted question ('anong nangyari sa araw ng pagbisita?') using natural pacing and pitch changes.",
+            "ending_completeness": "The excerpt concludes with a fully articulated question intonation on 'pagbisita' without premature cutoff.",
+            "audible_speech": "All words are cleanly articulated, intelligible, and audible against a silent background.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "None detected; vocal quality is consistent across the excerpt."
+          },
+          "uncertainty": "None"
+        },
+        {
+          "kind": "body",
+          "file": "read-resident-perspective-fil-body.wav",
+          "sha256": "e3399d3a7e7ce85eaecd6f7f110225a701ba42392c3514439c4edcb438b0c749",
+          "possible_defects": [],
+          "observations": {
+            "Carole_pronunciation": "Pronounced clearly as \"Carol\" [ˈka.ɾol] at approximately 00:00.7 - 00:01.2.",
+            "negation": "No negative grammatical particles are present in this excerpt.",
+            "role_distinctions": "The speaker delivers narrative exposition from 00:00.00 to 00:02.35, then seamlessly transitions to an inquisitive direct speech tone for Carol's question from 00:02.50 to 00:05.10.",
+            "ending_completeness": "The audio concludes naturally with the complete question ending on \"pagbisita\" without clipping.",
+            "audible_speech": "All words are clearly audible and intelligible throughout the clip.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "No unexpected shifts or glitches; vocal tone shift reflects the dialogue quotation."
+          },
+          "uncertainty": "None."
+        },
+        {
+          "kind": "critical",
+          "file": "read-resident-perspective-fil-critical.wav",
+          "sha256": "f5771c7d9cc220af564e08becdd387e3de7eeeaec2fe967ba7f603699933b15c",
+          "possible_defects": [],
+          "observations": {
+            "role_distinctions": "There are two distinct speaker voices: a younger male voice delivers the first sentence ('Sagot niya, Martes pala ang ibig kong sabihin, hindi Lunes.') from 00:00.0 to 00:04.2, followed by a transition to a female adult voice delivering the dialogue line ('Hindi ko alam kung kinansela ng center.') from 00:04.8 to 00:07.4.",
+            "unexpected_voice_changes": "A noticeable voice change occurs at approximately 00:04.5 between two separate speakers/characters.",
+            "negation": "Negation occurs twice clearly: 'hindi Lunes' at 00:03.2–00:04.2 and 'Hindi ko alam' at 00:04.8–00:05.8.",
+            "carole_pronunciation": "The name or word 'Carole' does not occur in this excerpt.",
+            "ending_completeness": "The audio concludes fully on 'center' with no abrupt cutoff, truncation, or clipping.",
+            "clipped_words": "None detected; word boundaries and phonemes are intact.",
+            "audible_speech": "Speech is completely audible and intelligible across both segments."
+          },
+          "uncertainty": "None; all spoken Tagalog words are clear and unambiguous."
+        },
+        {
+          "kind": "ending",
+          "file": "read-resident-perspective-fil-ending.wav",
+          "sha256": "eda5bbca1d693249693360973c4d7a268a6e5500fd45786130c4da0745dd607d",
+          "possible_defects": [
+            {
+              "type": "unexpected_voice_changes",
+              "timestamp": "00:05.80",
+              "description": "Sudden switch from female narrator to male voice without narrative framing."
+            },
+            {
+              "type": "unexpected_voice_changes",
+              "timestamp": "00:13.00",
+              "description": "Sudden switch back from male voice to female narrator."
+            }
+          ],
+          "observations": {
+            "role_distinctions_and_voice_changes": [
+              {
+                "timestamp": "00:00.00 - 00:05.40",
+                "description": "First speaker (female synthetic/TTS voice) delivering guidelines."
+              },
+              {
+                "timestamp": "00:05.80 - 00:12.45",
+                "description": "Noticeable voice shift to a male synthetic/TTS voice reading the statement regarding silence and agreement."
+              },
+              {
+                "timestamp": "00:13.00 - 00:18.55",
+                "description": "Voice shifts back to a female synthetic/TTS voice with slightly different pacing/inflection."
+              }
+            ],
+            "negation": [
+              {
+                "phrase": "Wag burahin",
+                "timestamp": "00:02.80 - 00:03.90",
+                "note": "Prohibitive negation clearly articulated as colloquial contraction 'Wag' rather than 'Huwag'."
+              },
+              {
+                "phrase": "hindi patunay",
+                "timestamp": "00:09.50 - 00:10.70",
+                "note": "Standard negation clearly articulated."
+              },
+              {
+                "phrase": "walang paninisi",
+                "timestamp": "00:16.80 - 00:18.40",
+                "note": "Existential negation clearly articulated."
+              }
+            ],
+            "ending_completeness": "The audio concludes naturally with complete prosodic closure on 'paninisi' before the file ends; no cut-off detected."
+          },
+          "uncertainty": "Low; all words and phonemes are distinct and clear throughout the excerpt."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-resident-perspective-en",
+      "actual_full_audio_sha256": "2a856e44920d711db0254c08301044c7ecdd60bb13504798999525e71f3dadb6",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "pacing": "Deliberate, even, and instructional with clear pauses between narrative statements and simulated dialogue.",
+        "pitch_and_intonation": "Slightly synthetic and measured, typical of an automated educational voice, but maintains natural question and declarative inflections.",
+        "timbre_consistency": "Narrator voice timbre remains consistent throughout without unexpected shifts."
+      },
+      "full_pronunciation_concerns": [],
+      "full_other_concerns": [],
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-resident-perspective-en-head.wav",
+          "sha256": "e9ee245d274763f3d0897775880cb58a3b88c27a6e23a00d81a7c2ee0f3f4db4",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as \"Carol\" [ˈkærəl] around 00:02.50–00:02.95.",
+            "negation": "No negative words or contractions are present in the excerpt.",
+            "role_distinctions": "Spoken by a single female voice delivering narration/prompts; quotation within the narration (\"What happened on the visit day?\") is marked with natural conversational inflection.",
+            "ending_completeness": "The final phrase \"visit day?\" resolves fully without cutting off.",
+            "audible_speech": "All speech is clear, intelligible, and fully audible across the excerpt.",
+            "clipped_words": "None detected; word boundaries and final consonants are preserved.",
+            "unexpected_voice_changes": "Tone, volume, and acoustic quality remain steady throughout."
+          },
+          "uncertainty": "None."
+        },
+        {
+          "kind": "body",
+          "file": "read-resident-perspective-en-body.wav",
+          "sha256": "9f49c95b23c2a92d9e7ba74501b74222ba3edc988b42a462f27a1e3e0c32f16c",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as /ˈkær.əl/ (or 'Carol') around 00:00.00 - 00:00.45.",
+            "negation": "No negative grammatical constructions or negation particles are present in the audio.",
+            "role_distinctions": "Clear shift in vocal delivery and pitch contour between the narrator tag ('Carol asks the first resident,') from 00:00.00 to 00:01.88 and the quoted question ('What happened on the visit day?') from 00:01.88 to 00:04.22.",
+            "ending_completeness": "The audio ends naturally with full reverberation tail after 'day' without abrupt truncation.",
+            "audible_speech": "All speech is clean, fully audible, and well-enunciated throughout.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "None; the change in intonation reflects standard educational/storytelling role differentiation."
+          },
+          "uncertainty": "Low; all speech segments are clearly articulated and intelligible."
+        },
+        {
+          "kind": "critical",
+          "file": "read-resident-perspective-en-critical.wav",
+          "sha256": "870ea4ed6321779d03766fbf92b266d43c3d485b0b11dea5f3dc6c5b4a399201",
+          "possible_defects": [],
+          "observations": {
+            "role_distinctions": "A distinct voice change occurs at approximately 00:01.9, where the speaker shifts from a higher-pitched narrative delivery ('The resident replies') to a lower-pitched, direct-dialogue persona ('I meant Tuesday, not Monday...').",
+            "negation": "Negations ('not' at 00:03.6 and 'do not' at 00:05.0) are articulated clearly with distinct phonemic boundaries and appropriate emphasis.",
+            "carole_pronunciation": "The name or word 'Carole' does not occur in this audio excerpt.",
+            "clipped_words": "No clipped words detected; initial and final consonants are preserved across phrase boundaries.",
+            "audible_speech": "All speech is clear, intelligible, and well-enunciated in standard Philippine English accent.",
+            "ending_completeness": "The excerpt concludes naturally after 'canceled it' (00:07.1) with complete phoneme release and room acoustic fade, showing no abrupt cutoff.",
+            "unexpected_voice_changes": "None; the modulation at 00:01.9 is an intentional shift to signal spoken dialogue rather than an unexpected defect."
+          },
+          "uncertainty": "None; the recording is clear and contains no ambiguous segments."
+        },
+        {
+          "kind": "ending",
+          "file": "read-resident-perspective-en-ending.wav",
+          "sha256": "cf0b98d7aa562ad33ef8b57dd7fe9ee4b9e6050990f38a1df7803938489b3a6f",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The name or word 'Carole' does not occur in this excerpt.",
+            "negation": "Clear negation heard at 00:08.5 - 00:09.3 ('does not prove').",
+            "role_distinctions": "Three distinct speaker voices deliver successive instructions: Speaker 1 from 00:00.0 to 00:04.5, Speaker 2 from 00:04.7 to 00:11.1, and Speaker 3 from 00:11.3 to 00:16.1.",
+            "ending_completeness": "The final word 'blame' finishes cleanly around 00:15.8 without being cut off.",
+            "audible_speech": "All speech is clearly enunciated and intelligible throughout.",
+            "clipped_words": "None detected; word onsets and codas are intact.",
+            "unexpected_voice_changes": "Shifts between distinct voices occur at approximately 00:04.6 and 00:11.2, characteristic of a multi-speaker compilation or sequential role shifts."
+          },
+          "uncertainty": "Low; the spoken words and vocal transitions are distinct and unambiguous."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-practice-fil",
+      "actual_full_audio_sha256": "f0cc908493fae8500eed58c376f60e835b6d55007644a6cccc4f05c2cea0fe6c",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "audible_throughout": true,
+        "pacing": "Moderate and well-metered instructional pace with deliberate pauses suitable for educational drills.",
+        "pitch_and_pace_variation": "Natural cadence and appropriate inflections for instructional prompts and contrasting statements.",
+        "timbre_consistency": "Narrator timbre and tone remain consistent throughout the recording.",
+        "clarity_of_concepts": {
+          "event_and_scope": "Clearly conveyed ('Tatlong kabahayan', 'napagkasunduang pagbisita').",
+          "source_attribution": "Clear attribution to sources ('nag-ulat kay Carol', 'itinama ng unang residente').",
+          "direct_observation_vs_inference": "Distinct contrast made between factual reporting and subjective inference/judgment ('Walang disiplina ang mga pamilya').",
+          "uncertainty_and_clarification": "Clearly demarcated what remains unverified ('Hindi pa nasusuri ang attendance record, eksaktong petsa, at hadlang ng bawat isa').",
+          "correction_and_non_blaming_statement": "Correction ('Itinama...') and instruction for objective description without blame ('nang walang paninisi') are explicitly articulated.",
+          "negation_and_conditions": "Negations ('hindi sila nakapunta', 'hindi pa nasusuri', 'hindi awtomatikong pasado') and conditional statements ('Kung mag-isa...') are distinctly pronounced with no ambiguity."
+        }
+      },
+      "full_pronunciation_concerns": [],
+      "full_other_concerns": [],
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-practice-fil-head.wav",
+          "sha256": "c845fc9471858e871a38f9922b554f51d94bfae7c877e373ded5a480b8dd8857",
+          "possible_defects": [],
+          "observations": {
+            "carol_pronunciation": "The name 'Carol' is articulated clearly at approximately 00:07.5 - 00:08.0 as /ˈka.rol/ without distortion or ambiguity.",
+            "negation": "The negation 'hindi' at 00:08.5 - 00:09.0 ('hindi sila nakapunta') is clearly stated and fully audible.",
+            "role_distinctions": "There is a distinct shift in speaker voice/role: Speaker 1 (00:00 - 00:03) reads review/action directives ('Subukan, mag-feedback, tsaka ulitin'), followed by Speaker 2 (00:04 - 00:11) introducing a task ('Isulat') and narrating a scenario.",
+            "ending_completeness": "The audio concludes naturally with 'pagbisita' ending around 00:11.2, followed by a clean decay to silence with no truncation.",
+            "audible_speech": "All speech is clear, intelligible, and well-enunciated educational narration.",
+            "clipped_words": "No clipped beginnings or cut-off word endings detected.",
+            "unexpected_voice_changes": "A planned transition between two distinct female speakers occurs across the pause between 00:03.3 and 00:04.0, consistent with educational module formatting."
+          },
+          "uncertainty": "None"
+        },
+        {
+          "kind": "body",
+          "file": "read-practice-fil-body.wav",
+          "sha256": "65e5c16c73e114ed38b225dabbd52e2b7a1f5e6df271fac82b067ce358bc002f",
+          "possible_defects": [],
+          "observations": {
+            "carol_pronunciation": "The name 'Carol' at approximately 00:03.9-00:04.4 is pronounced clearly with English-influenced phonology (/ˈkæɹ.əl/), which is natural and standard in Tagalog contexts.",
+            "negation": "The negation 'hindi sila nakapunta' (00:04.5-00:05.6) is clearly enunciated and grammatically intact.",
+            "role_distinctions": "Single speaker acting as an educational narrator, beginning with an instructional directive ('Isulat.') followed by the context sentence.",
+            "ending_completeness": "The utterance concludes fully on 'pagbisita' with natural terminal falling intonation; no truncation observed.",
+            "audible_speech": "Speech is fully audible, clean, and delivered at a steady pace.",
+            "clipped_words": "None detected; word boundaries and final syllables are intact.",
+            "unexpected_voice_changes": "None detected; pitch, tone, and acoustic environment remain consistent."
+          },
+          "uncertainty": "None"
+        },
+        {
+          "kind": "critical",
+          "file": "read-practice-fil-critical.wav",
+          "sha256": "8ca833f2ddcc4332c49059d383fba83e86ad0527308053fc96f524db15cce71a",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced using an English-style phonology ('Carol' /ˈkær.əl/) at around 00:03.9–00:04.4.",
+            "negation": "Clear negation tokens present: 'hindi sila nakapunta' (00:04.7–00:05.7) and 'Hindi pa nasusuri' (00:12.7–00:13.9).",
+            "role_distinctions": "Single female narrator delivering institutional/educational narrative instructions in a steady, neutral tone.",
+            "ending_completeness": "The excerpt ends completely without clipping at 00:17.8 after 'bawat isa.'",
+            "audible_speech": "All speech is clearly enunciated and intelligible throughout.",
+            "clipped_words": "None detected; word onsets and codas are fully articulated.",
+            "unexpected_voice_changes": "None; speaker tone, pitch, volume, and recording acoustic profile remain uniform."
+          },
+          "uncertainty": "None; the recording quality is clean and the speech is completely intelligible."
+        },
+        {
+          "kind": "ending",
+          "file": "read-practice-fil-ending.wav",
+          "sha256": "f8edeeb9ccb7e12bac58d7c0053bf001ce029675349a2042eeaebc28e4d64ee0",
+          "possible_defects": [
+            {
+              "type": "unexpected voice changes / role distinction",
+              "description": "Distinct speaker change occurs at 00:05.100 and reverts back at 00:12.100, indicating spliced segments or unannounced dialogue role switching."
+            }
+          ],
+          "observations": [
+            {
+              "timestamp": "00:00.000 - 00:04.500",
+              "speaker": "Speaker 1 (mature female)",
+              "content": "Delivers 'Sa susunod na ulat, humingi rin ng pananaw ng apektadong residente.' clearly with natural intonation."
+            },
+            {
+              "timestamp": "00:05.100 - 00:11.400",
+              "speaker": "Speaker 2 (younger/higher-pitched female)",
+              "content": "Voice shifts noticeably to a different speaker reading educational/evaluative criteria containing multiple negations ('hindi nasaksihang', 'hindi pa naobserbahan', 'hindi awtomatikong pasado')."
+            },
+            {
+              "timestamp": "00:12.100 - 00:17.300",
+              "speaker": "Speaker 1 (mature female)",
+              "content": "Returns to Speaker 1 delivering 'Ilarawan ang pangyayari, pinagmulan, at kulang ng walang paninisi.' ending clearly with no clipping."
+            }
+          ],
+          "uncertainty": "None; audio clarity and phonetic articulation are high across all segments."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-practice-en",
+      "actual_full_audio_sha256": "a43edd9fb2eac805cc02d34b6010cc3b508a3956dc2ff590fae539e11f63400a",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": "The narration maintains a clear, steady instructional tempo suitable for training material. Pitch, emphasis, and pause patterns sound natural for Philippine English educational delivery, with clean enunciation and no abrupt acoustic or timbre shifts across segments.",
+      "full_pronunciation_concerns": [],
+      "full_other_concerns": [],
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-practice-en-head.wav",
+          "sha256": "e3f61d6d282a99785be62ac2222b0ac59cab2da23d4c8316750588c0e3f117cb",
+          "possible_defects": [
+            "Abrupt transition between two different voices/speakers at 00:03.6 - 00:03.9 without an instructional pause."
+          ],
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as standard /ˈkærəl/ ('Carol') around 00:07.7 - 00:08.2.",
+            "negation": "No negative contractions or negation words present in the excerpt.",
+            "role_distinctions": "There is a clear shift in speaker role between the instructional prompt ('try, give feedback, then retry.') and the scenario narration ('Right, three households...').",
+            "ending_completeness": "The utterance finishes completely with a natural drop in pitch on 'visits' around 00:10.1; no audible cutoff.",
+            "audible_speech": "All words are clearly articulated and intelligible throughout.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "A distinct change in voice/speaker persona occurs between the prompt phrase ending at 00:03.5 and the narration starting at 00:03.9 ('Right...')."
+          },
+          "uncertainty": "Low; all speech segments are clearly audible and identifiable."
+        },
+        {
+          "kind": "body",
+          "file": "read-practice-en-body.wav",
+          "sha256": "01299b598fa5cb6d523581703a7be589cdc9e63216a1e0370bec62d17861fd26",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The name 'Carol' (or 'Carole') is pronounced clearly around 00:03.5 - 00:04.0 as /ˈkæ.rəl/ or /ˈkɛə.rəl/ with standard articulation.",
+            "negation": "No negative contractions or grammatical negation markers are present in the excerpt.",
+            "role_distinctions": "Single consistent female voice delivering educational or instructional dialogue; no multiple roles or dialogue partner switching.",
+            "ending_completeness": "The utterance completes naturally on 'visits' with terminal falling intonation and no premature cut-off.",
+            "audible_speech": "All speech is clearly audible, foregrounded, and cleanly articulated with minimal background noise.",
+            "clipped_words": "None detected; both initial 'Right' and terminal 'visits' have intact consonants.",
+            "unexpected_voice_changes": "Tone, pitch contour, pacing, and recording quality remain steady throughout the clip."
+          },
+          "uncertainty": "Low; the spelling of the name could be 'Carol' or 'Carole', but acoustic clarity of the speech is high."
+        },
+        {
+          "kind": "critical",
+          "file": "read-practice-en-critical.wav",
+          "sha256": "7921b8eb83edf8878c12e46d4e5dfadbf06d5d14655e29acb677437c4b04a73d",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The term 'Carole' does not occur in this audio excerpt.",
+            "negation": "No negative syntactic constructions or words (e.g., 'not', 'no') are present, except the prepositional phrase 'without blame'.",
+            "role_distinctions": "The distinct roles 'BHW', 'resident', and 'observer' are articulated clearly and distinctly.",
+            "ending_completeness": "The excerpt concludes naturally with full phonetic completion on the word 'role' without abrupt cutoff.",
+            "audible_speech": "Speech is fully intelligible throughout with clean instructional delivery in Philippine English.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "No unexpected shifts in pitch, speaker identity, or vocal quality detected."
+          },
+          "uncertainty": "Minor ambiguity at 00:05.15–00:05.65 between 'Write' (imperative action) and 'Right' (discourse marker/affirmation), though 'Write' aligns grammatically with the parallel list of imperative verbs."
+        },
+        {
+          "kind": "ending",
+          "file": "read-practice-en-ending.wav",
+          "sha256": "791f2d2e4330f4d4738ee6bfb7092f46763a4695449b996a23e600f6a586b385",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The name or word 'Carole' does not occur in this excerpt; nearby phonetic elements include 'cards' at 00:02.1 - 00:02.5, pronounced clearly as /kɑːrdz/.",
+            "negation": "Clear negations occur at 00:14.2 ('not observed') and 00:15.1 ('not automatically pass') with distinct articulation and appropriate emphasis.",
+            "role_distinctions": "The speaker maintains a consistent instructional/evaluative tone throughout without role transitions or speaker shifts.",
+            "ending_completeness": "All sentence and phrase terminations are fully realized; the final word 'blame' at 00:21.0 ends cleanly with natural decay.",
+            "audible_speech": "Speech is fully audible, clear, and paced evenly across the entire duration.",
+            "clipped_words": "No clipped syllables or words detected.",
+            "unexpected_voice_changes": "Pitch, pacing, and synthetic timbre remain stable without sudden artifacts or unexpected shifts."
+          },
+          "uncertainty": "None. All acoustic tokens and lexical items are clearly discernible."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-check-fil",
+      "actual_full_audio_sha256": "7bd665eb6ceaa84a55cd578530c2d84fb1e11bc577bc9112a99746b9c9f7ce14",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "audible": true,
+        "pacing": "Moderate, measured instructional pace with clear pauses between guidelines.",
+        "pitch_pace_variation": "Natural prosodic inflection suited for educational prompts and procedural instruction.",
+        "timbre": "Consistent clear female narrator timbre across the entire duration."
+      },
+      "full_pronunciation_concerns": {
+        "carole_and_bhw": "Neither 'Carole' nor 'BHW' is spoken in this audio track.",
+        "other_words": "Loanword 'feedback' (00:13) is pronounced naturally without distortion."
+      },
+      "full_other_concerns": {
+        "content_clarity": "Instructions regarding event/scope (pangyayari at saklaw), source attribution (pinagmulan), gap/defect description (kulang), avoidance of assumed causes (hindi hinulaang sanhi), avoidance of premature solutions (ipinangakong solusyon), and blame-free framing (walang paninisi) are stated distinctly.",
+        "truncation_or_artifacts": "No truncated words, audio dropouts, or unnatural clipped audio detected."
+      },
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-check-fil-head.wav",
+          "sha256": "7ea18a92ec4f63d1c619ec39c618560e469737b36d234a81eacd3eb8743797b9",
+          "possible_defects": [],
+          "observations": {
+            "speaker": "Single female speaker delivering clear instructional prompts in standard Filipino/Tagalog.",
+            "timestamps": {
+              "sentence_1": "00:00.00 - 00:02.05",
+              "pause": "00:02.05 - 00:02.80",
+              "sentence_2": "00:02.80 - 00:05.95"
+            },
+            "pronunciation": "Clear and natural enunciation of Tagalog vocabulary ('hakbang', 'larawan', 'pakikinig', 'pagwawasto').",
+            "negation": "No negative grammatical markers present.",
+            "role_distinctions": "Single consistent role (narrator/instructor).",
+            "ending_completeness": "The utterance completes naturally before the end of the recording without truncation.",
+            "voice_quality": "Consistent acoustic quality, steady pitch, and absence of unexpected changes."
+          },
+          "uncertainty": "None; speech is clear, complete, and fully intelligible."
+        },
+        {
+          "kind": "body",
+          "file": "read-check-fil-body.wav",
+          "sha256": "7255ae12eeb5bc86f53c1ba0307e266d8aa6e11cd3dc55fda8de2820ea3fc166",
+          "possible_defects": [],
+          "observations": "The excerpt features a single female voice delivering instructional dialogue in clear Tagalog. The pacing is deliberate and suitable for educational listening materials. Articulation of all phonemes is distinct with standard pronunciation throughout.",
+          "uncertainty": "None"
+        },
+        {
+          "kind": "critical",
+          "file": "read-check-fil-critical.wav",
+          "sha256": "2d417120d5ec8c7a1690d0d980fefa5541d296ecf479241ca2008afc4b04a705",
+          "possible_defects": [],
+          "observations": [
+            {
+              "timestamp": "00:00 - 00:06.6",
+              "detail": "Clear instructional delivery outlining required elements in a concluding statement ('pagtatapos'). Words are articulated with neutral Tagalog phonology."
+            },
+            {
+              "timestamp": "00:06.6 - 00:10.6",
+              "detail": "Negated items ('Hindi hinulaang sanhi, o ipinangakong solusyon') are clearly spoken without slurring or dropped syllables."
+            },
+            {
+              "timestamp": "00:10.6 - 00:16.5",
+              "detail": "A noticeable pause occurs at ~00:10.6 followed by a slight downward pitch reset as the speaker transitions into the next directive ('Ilarawan ang pangyayari...'). The audio concludes completely without clipping."
+            }
+          ],
+          "uncertainty": "At 00:04.9 - 00:05.4, the word sounds closely like 'tapat', though phonetically it can slightly resemble 'dapat' due to dental stop voicing characteristics."
+        },
+        {
+          "kind": "ending",
+          "file": "read-check-fil-ending.wav",
+          "sha256": "b73d0f7384a5b5110f38a5c13c62130d3ecdeb076f8c1004468a14c816c0a8b3",
+          "possible_defects": [],
+          "observations": {
+            "voice_and_pronunciation": "The speaker delivers the Tagalog text in a steady, measured, educational instructional tone. Pronunciation is clear and standard with natural Tagalog phonology.",
+            "negation": "Negation terms ('Hindi hinulaan' at ~00:06 - 00:07, and 'walang paninisi' at ~00:15 - 00:16) are clearly enunciated.",
+            "role_distinctions": "Single narrator voice throughout; no multi-character role distinctions present.",
+            "ending_completeness": "The audio concludes naturally after 'paninisi' without truncation or unnatural cut-off.",
+            "audible_speech": "All words are fully audible with minimal background interference.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "Pitch, pacing, and timbre remain consistent throughout the excerpt."
+          },
+          "uncertainty": "None. The speech is distinct and fully intelligible."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "read-problem-define-check-en",
+      "actual_full_audio_sha256": "cd7baee1dbccf7d6954c99013c36d4402c78473b3274873df47fc655f60aa5b1",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "pacing": "Deliberate, steady, and clear with measured pauses between instructional steps.",
+        "natural_variation": "Natural educational narration with clear emphasis on instructional keywords and boundaries.",
+        "timbre_consistency": "Narrator timbre is consistent throughout without noticeable shifts or splicing artifacts.",
+        "clarity_of_concepts": {
+          "event_and_scope": "Expressed clearly at 00:18 - 00:20.",
+          "source_attribution": "Expressed clearly at 00:20 - 00:21.",
+          "honest_gap_uncertainty": "Expressed clearly at 00:21 - 00:22.",
+          "negation_and_boundaries": "Expressed clearly ('It should not invent a cause or promise a solution' at 00:22 - 00:25 and 'without blame' at 00:28 - 00:30)."
+        }
+      },
+      "full_pronunciation_concerns": [],
+      "full_other_concerns": [],
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "read-check-en-head.wav",
+          "sha256": "0973aef74afb2e20dd658da6364027e33331418b8bcde79939293cd1421eb95b",
+          "possible_defects": [],
+          "observations": {
+            "role_distinctions": "There is a distinct change in voice/role between the first phrase (00:00.00 - 00:01.62) and the instructional prompt beginning at 00:02.15.",
+            "audible_speech": "All words are clearly audible and articulated without background noise or significant distortion.",
+            "pronunciation": "In 'listening and correction' (00:04.50 - 00:05.95), the conjunction 'and' is reduced and pronounced similarly to /ɪn/ or /ən/ ('in correction' / 'an' correction').",
+            "negation": "No negative grammatical structures or negation words are present.",
+            "clipped_words": "None; word onsets and codas, including final /p/ in 'step' and /ʃən/ in 'correction', are intact.",
+            "ending_completeness": "The audio ends naturally with full decay after 'correction'.",
+            "unexpected_voice_changes": "A shift in speaker persona/pitch occurs between 00:01.62 and 00:02.15, transitioning from a higher, lighter delivery to a deeper instructional tone."
+          },
+          "uncertainty": "Slight ambiguity around 00:04.90 - 00:05.15 on whether the conjunction was scripted as 'and' or 'in'."
+        },
+        {
+          "kind": "body",
+          "file": "read-check-en-body.wav",
+          "sha256": "cbb53767f3adcdb48026130a43c4f7cf602fa882724bb4db5c8b3c1092b8b54a",
+          "possible_defects": [],
+          "observations": {
+            "speaker_profile": "Single female speaker with clear educational Philippine English delivery.",
+            "carole_pronunciation": "Not applicable; the word 'Carole' does not occur in this excerpt.",
+            "negation": "No negative constructions are present in the utterance.",
+            "role_distinctions": "Single narrator role throughout; no multi-speaker distinctions.",
+            "audible_speech": "All words are clearly articulated and intelligible from 00:00.00 to 00:03.55.",
+            "clipped_words": "None detected; word boundaries and final consonants are preserved.",
+            "ending_completeness": "The phrase terminates cleanly on 'correction' without abrupt cutoff.",
+            "unexpected_voice_changes": "Pitch, tone, and pacing remain steady and natural."
+          },
+          "uncertainty": "Slight ambiguity between 'and correction' versus 'in correction' around 00:02.60–00:03.45 due to unstressed conjunction vowel reduction, but acoustic features favor 'and correction'."
+        },
+        {
+          "kind": "critical",
+          "file": "read-check-en-critical.wav",
+          "sha256": "09384af81b07a1c80472189e67eee642ea5f229bfd2f615f6dc4df121b3012da",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The proper noun 'Carole' does not occur in this excerpt.",
+            "negation": "The speaker clearly articulates 'should not' at 00:05.6 - 00:06.1 and 'without blame' at 00:12.1 - 00:13.1.",
+            "role_distinctions": "Single consistent instructional speaker throughout; no role transitions or distinct character voices present.",
+            "ending_completeness": "The utterance completes naturally with full sentence closure on 'blame' at 00:13.1.",
+            "audible_speech": "Speech is entirely clear, intelligible, and well-enunciated throughout 00:00.0 to 00:13.2.",
+            "clipped_words": "No clipped syllables or truncated word boundaries detected.",
+            "unexpected_voice_changes": "Tone, volume, pitch, and pacing remain stable and consistent across the segment."
+          },
+          "uncertainty": "None."
+        },
+        {
+          "kind": "ending",
+          "file": "read-check-en-ending.wav",
+          "sha256": "60f6cc6399d29e366b9273d70aea8d2f454e1b6501201b7dd34bfa4ab8d90495",
+          "possible_defects": [],
+          "observations": {
+            "role_distinctions": "There are two distinct speaker voices/personas: Voice 1 delivers the instructional prompts at 00:00-00:03 and 00:12-00:16, while Voice 2 presents the core guideline text from 00:03-00:12.",
+            "negation": "The negation 'not' in 'It should not invent a cause' at 00:09-00:10 is articulated clearly with no dropping or slurring.",
+            "carole_pronunciation": "The proper noun 'Carole' does not occur anywhere in the excerpt.",
+            "ending_completeness": "The audio ends naturally after 'without blame' at 00:16, with full decay and no abrupt cutoff.",
+            "clipped_words": "No clipped or truncated words detected.",
+            "audible_speech": "All speech is clearly audible, intelligible, and well-enunciated.",
+            "unexpected_voice_changes": "Transitions between the primary speaker (00:00-00:03, 00:12-00:16) and secondary speaker (00:03-00:12) are clean and appear intentional for educational turn-taking."
+          },
+          "uncertainty": "None; audio quality and intelligibility are high."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "story-fil",
+      "actual_full_audio_sha256": "afbe35fb7ddfbbd8413f139c0007ab00bf008d0c23cca465acec410920691d71",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": {
+        "audibility": "Clear and audible throughout without background interference.",
+        "pacing_and_pitch": "Measured, deliberate educational cadence with clear phrasing pauses and natural intonation variation.",
+        "timbre": "Consistent narrator voice and vocal timbre throughout with no sudden shifts.",
+        "content_expression": {
+          "event_and_scope": "Clearly demarcated ('tatlong pamilya', 'hindi pagpunta ang pangyayari' at 00:00–00:10).",
+          "source_attribution": "Explicitly stated ('Ulat nila ito' at 00:04, 'Itinala ni Carol kung sino ang nagsabi' at 00:18, 'Ayon sa tatlong pamilya' at 00:43).",
+          "observation_vs_inference": "Contrast between factual non-attendance and speculative unwillingness is distinctly separated ('hula ang ayaw pumunta' at 00:11; 'walang hinuhulaang sanhi' at 00:51).",
+          "uncertainty": "Uncertain conditions are clearly marked ('Hindi pa tiyak ang petsa at hadlang...' at 00:20–00:24; 'hindi tiyak ang pagkansela' at 00:28–00:30).",
+          "clarification_and_correction": "Explicit corrections are highlighted without ambiguous negation ('Nilinaw ng unang residente, Martes, hindi Lunes' at 00:24–00:28; 'Itinala ni Carol ang pagwawasto' at 00:30–00:33).",
+          "corrected_problem_statement": "Summarized without guessed causes ('kulang pa ang record at bawat hadlang, walang hinuhulaang sanhi' at 00:49–00:53)."
+        }
+      },
+      "full_pronunciation_concerns": {
+        "carol": "Pronounced naturally as 'Carol' with standard phonology; no awkwardness detected.",
+        "bhw": "The initialism 'BHW' is not uttered in this recording."
+      },
+      "full_other_concerns": null,
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "shipped-story-fil-head.wav",
+          "sha256": "9783d66e387c120dbb17706ca0610154d27379c7bd720195f3c934faeda86abd",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as 'Carol' ([ˈka.ɾol]) at around 00:00.6 - 00:01.1.",
+            "negation": "Negation terms ('hindi nakapunta' at 00:02.1 - 00:03.4, 'hindi pa nasusuri' at 00:05.1 - 00:06.3, and 'Hindi pagpunta' at 00:08.3 - 00:09.6) are articulated distinctly with full phonemic clarity.",
+            "role_distinctions": "Distinctions between categories (ulat, pangyayari, hula, solusyon) are marked clearly with measured pauses and consistent pedagogical inflection.",
+            "ending_completeness": "The final phrase 'Ihiwalay ang tatlo' (00:16.0 - 00:17.5) completes naturally without premature cutoff or trailing attenuation.",
+            "audible_speech": "All speech is clear, audible, and easily intelligible across the entire recording.",
+            "clipped_words": "None observed; word boundaries and transitions between vowels/consonants are well-maintained.",
+            "unexpected_voice_changes": "None observed; voice pitch, volume, pacing, and acoustic timbre remain consistent throughout."
+          },
+          "uncertainty": "None; audio quality is high and unambiguous."
+        },
+        {
+          "kind": "body",
+          "file": "shipped-story-fil-body.wav",
+          "sha256": "caf1f241d0553f22c52b8a04d8bec9d67b1b5c35af5ccdea5acc55d23d48b392",
+          "possible_defects": [],
+          "observations": {
+            "carol_pronunciation": "The name 'Carol' is articulated clearly at around 00:00.75 - 00:01.20 without distortion.",
+            "negation": "Negation terms ('hindi nakapunta' at 00:02.48 - 00:03.45 and 'hindi pa nasusuri' at 00:04.80 - 00:06.05) are distinct and grammatically natural.",
+            "role_distinctions": "Narrated by a single speaker in a steady, expository educational tone throughout both sentences.",
+            "ending_completeness": "The final syllable of 'record' completes cleanly before the audio cutoff around 00:07.45.",
+            "audible_speech": "All speech is clearly audible with minimal background noise and steady volume.",
+            "clipped_words": "None observed; words start and end without clipping.",
+            "unexpected_voice_changes": "No unexpected shifts in pitch, volume, speaker identity, or synthetic timbre anomalies."
+          },
+          "uncertainty": "None; audio quality and diction are unambiguous."
+        },
+        {
+          "kind": "critical",
+          "file": "shipped-story-fil-critical.wav",
+          "sha256": "9783d66e387c120dbb17706ca0610154d27379c7bd720195f3c934faeda86abd",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The name 'Carol' (or 'Carole') occurs at approximately 00:00.8–00:01.3 and is pronounced with Filipino phonology as [kɐˈɾol] with primary stress on the second syllable.",
+            "negation": "Negation terms ('hindi' at 00:02.5, 'hindi' at 00:05.4, 'Hindi' at 00:08.0, and 'ayaw' at 00:11.5) are articulated clearly with distinct phonemic boundaries and appropriate lexical stress.",
+            "role_distinctions": "Single narrator voice throughout delivering educational/expository content; no dialogue or multi-character role distinction present.",
+            "audible_speech": "All spoken words are fully audible, clean, and delivered at a steady, measured pace.",
+            "clipped_words": "No clipped or cut-off syllables observed; word-final consonants and vowels are fully sustained.",
+            "unexpected_voice_changes": "Tone, pitch, and vocal quality remain consistent across the excerpt with no sudden shifts, distortion, or voice resets.",
+            "ending_completeness": "The final phrase 'Ihiwalay ang tatlo' ends cleanly at around 00:17.3 with a natural terminal decay and no abrupt cutoff."
+          },
+          "uncertainty": "Spelling of the character's name ('Carol' vs. 'Carole') cannot be distinguished by audio alone due to identical Filipino phonetic realization [kɐˈɾol]."
+        },
+        {
+          "kind": "ending",
+          "file": "shipped-story-fil-ending.wav",
+          "sha256": "fb6a0f9dfe49edcd45db6d1fcf00b98eb7610a7c2ba387774ac0ac0c0d820161",
+          "possible_defects": [],
+          "observations": {
+            "role_distinctions_and_voice_changes": "The excerpt features two distinct delivery styles/voices separated by a pause at ~00:09.0. The first part (00:00.0 - 00:08.9) is an instructional directive delivered in a lighter, higher pitch. The second part (00:09.7 - 00:19.8) shifts to a lower, flatter narrative/reporting delivery.",
+            "carole_pronunciation": "The name or word 'Carole' is not present in this audio excerpt.",
+            "negation": "Negation terms are clearly articulated: 'walang' at 00:07.8–00:08.2, 'hindi' at 00:11.4–00:11.7, and 'walang' at 00:17.6–00:18.0.",
+            "ending_completeness": "Both sections exhibit complete sentence endings with natural decay and no premature truncation.",
+            "audible_speech": "Speech is completely audible and intelligible throughout with minimal background noise.",
+            "clipped_words": "No clipped or abruptly cut-off words were detected."
+          },
+          "uncertainty": "None. Speech is clear and unambiguous throughout the segment."
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    },
+    {
+      "id": "story-en",
+      "actual_full_audio_sha256": "2f4d1fc6a38d850518c2608ada47f057d44dd46cb37f68ab3d26b2ec1603b921",
+      "full_speech_present": true,
+      "full_clipped_ending": false,
+      "full_delivery": "The narration is clearly audible throughout with measured instructional pacing, distinct pauses between modular statements, and natural pitch inflection typical of educational modeling. Voice timbre remains consistent throughout without noticeable shifts.",
+      "full_pronunciation_concerns": [],
+      "full_other_concerns": [
+        "The acronym 'BHW' mentioned in the evaluation prompt does not appear in the spoken audio.",
+        "The name 'Carol' (spelled 'Carole' in the prompt) is articulated cleanly and naturally as /ˈkærəl/ without awkwardness."
+      ],
+      "focused_excerpts": [
+        {
+          "kind": "head",
+          "file": "shipped-story-en-head.wav",
+          "sha256": "34f842e63843a10a6355c30d073e5019c96d9399c9cbcf891cd3e8a26bc81dcd",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Pronounced clearly as 'Carol' [ˈkærəl] at 00:00.00-00:00.48.",
+            "negation": "Morphological negations occur with 'unchecked' (00:07.38-00:07.98) and 'Unwillingness' (00:10.85-00:11.80); no syntactic negative particles like 'not' or 'never' are used.",
+            "role_distinctions": "Single narrator delivering instructional content in an analytical, deliberate tone.",
+            "ending_completeness": "The final phrase 'Separate the three.' resolves fully with clear terminal intonation by 00:15.82 with no cut-off.",
+            "audible_speech": "Speech is completely audible and intelligible throughout.",
+            "clipped_words": "None detected; word onsets and codas are intact.",
+            "unexpected_voice_changes": "Pacing, timbre, and acoustic volume remain stable without unexpected shifts or artifacts."
+          },
+          "uncertainty": "Low; all lexical items and acoustic properties are clear."
+        },
+        {
+          "kind": "body",
+          "file": "shipped-story-en-body.wav",
+          "sha256": "1cd574cba1eb9468d4cd6971d735e8e1f723e15361438a4251581b9e3a48c01d",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "The name 'Carol' (00:00.0 - 00:00.6) is articulated clearly without distortion, pronounced as /ˈkærəl/.",
+            "negation": "Morphological negation is present in 'unchecked' (00:07.1 - 00:08.0), articulated clearly with no syntactic negative particles like 'not'.",
+            "role_distinctions": "Single consistent narrative voice used throughout the educational prompt.",
+            "ending_completeness": "The final word 'unchecked' ends naturally at 00:08.0 with a fully resolved final consonant cluster (/kt/) and no truncation.",
+            "audible_speech": "Speech is fully audible and intelligible across the entire excerpt.",
+            "clipped_words": "None detected; word boundaries and transitions are smooth.",
+            "unexpected_voice changes": "Pitch, pacing, and synthetic/educational delivery remain consistent throughout."
+          },
+          "uncertainty": "None. The speech is clear and distinct."
+        },
+        {
+          "kind": "critical",
+          "file": "shipped-story-en-critical.wav",
+          "sha256": "fd81887df2d42c9d3ed6352aeb401ec70b123cbd0fd4b8ab0b7934017480629b",
+          "possible_defects": [
+            {
+              "timestamp": "00:08.20",
+              "type": "speaker_change",
+              "description": "Abrupt transition between two distinct speaker voices without pause or narrative bridge."
+            }
+          ],
+          "observations": {
+            "carole_pronunciation": "Pronounced standardly as 'Carol' [ˈkæɹəl] between 00:05.95 and 00:06.45.",
+            "negation": "Clear negative marker 'not' in 'not Monday' (00:03.15–00:03.70), morphological negation in 'uncertain' (00:05.05–00:05.65), and prepositional negation 'without' in 'without blame' (00:14.65–00:15.15).",
+            "role_distinctions": "A distinct shift occurs at 00:08.20; the first section (00:00.00–00:07.90) features a descriptive narration of dialogue/events, whereas the second section (00:08.20–00:15.85) provides pedagogical instructions delivered by a different speaker/accent.",
+            "ending_completeness": "The excerpt concludes naturally with full decay on 'blame' at 00:15.85 with no abrupt cut or truncation.",
+            "audible_speech": "All words are fully audible and distinct across both segments.",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "A clear voice/speaker transition occurs at 00:08.20 where the pitch, acoustic timbre, and speaker accent change noticeably."
+          },
+          "uncertainty": "Low; all speech elements and speaker shifts are clearly defined."
+        },
+        {
+          "kind": "ending",
+          "file": "shipped-story-en-ending.wav",
+          "sha256": "d21632e82f3db817224e89fc36a224532369620ab2be2e9b0e4d88dabca591e0",
+          "possible_defects": [],
+          "observations": {
+            "carole_pronunciation": "Not applicable; the name Carole does not appear in this excerpt.",
+            "negation": "Clear negative expressions audible: 'without blame' (00:06–00:07), 'remain unchecked' (00:15), and 'No cause is guessed' (00:16–00:18).",
+            "role_distinctions": "A single speaker delivers both the procedural instructions (00:00–00:07) and the scenario prompt (00:08–00:18) with consistent pedagogical delivery, using a brief pause to separate the sections.",
+            "ending_completeness": "The excerpt concludes cleanly on the final syllable of 'guessed' at ~00:17.6 without abrupt cut-off.",
+            "audible_speech": "All words are clearly enunciated with standard Philippine English phonological characteristics (e.g., unaspirated stops, clear vowels).",
+            "clipped_words": "None detected.",
+            "unexpected_voice_changes": "Pacing and tone remain uniform with no sudden shifts in pitch, volume, or timbre."
+          },
+          "uncertainty": "None"
+        }
+      ],
+      "disposition": "Content, negation and complete endings are supported by the attached model reports. Narrator consistency remains subject to human listening; do not interpret model speaker labels as established identities."
+    }
+  ]
+}
