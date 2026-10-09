@@ -3,7 +3,7 @@
 import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';import {execFileSync} from 'node:child_process';import {chromium} from '@playwright/test';
 const root=path.resolve(import.meta.dirname,'..'),dir=root+'/.preview/lesson171-deliverables';
-const html=fs.readFileSync(dir+'/lesson-1.7.1-gibs-review.html');
+const html=fs.readFileSync(dir+'/lesson-1.7.1-carole-review.html');
 const require=createRequire(root+'/remotion/package.json');const {ensureBrowser}=require('@remotion/renderer');
 const status=await ensureBrowser();assert(status.path,'Repository Remotion browser unavailable');
 const server=http.createServer((req,res)=>{if(req.url==='/favicon.ico'){res.writeHead(204);res.end();return;}res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);});await new Promise(r=>server.listen(4179,'127.0.0.1',r));

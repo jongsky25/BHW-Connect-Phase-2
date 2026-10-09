@@ -1,0 +1,1166 @@
+{
+  "captured_at": "2026-10-09T01:38:03.754Z",
+  "source_commit": "0c626dfb6f748eacc28bf1c27f2f232de154d310",
+  "method": "4 bounded published lesson/revision/private-note rows via loader admin; read-only; no learner identities or progress retrieved",
+  "rows": [
+    {
+      "lesson": {
+        "id": "5f002c74-566f-415f-9d31-ae058e3cc689",
+        "module_id": "2ba3c8c2-4fac-4440-bbaa-ab19e5120e54",
+        "lesson_key": "problem-action-plan",
+        "position": 3,
+        "title_fil": "Magplano ng aksyon",
+        "title_en": "Plan an action",
+        "objectives_fil": [
+          "Magmungkahi ng isang trial na tumutugon sa natiyak na sanhi, may owner, resources, deadline, sukatan at petsa ng review, na may pagsang-ayon ng katuwang."
+        ],
+        "objectives_en": [
+          "Recommend a trial addressing a verified cause, with an owner, resources, deadline, measure and review date, subject to partner agreement."
+        ],
+        "required": true,
+        "published_revision_id": "16437466-5b60-4b1e-9f59-1c2ee7ec87de",
+        "created_at": "2026-09-25T07:16:31.834312+00:00"
+      },
+      "revision": {
+        "id": "16437466-5b60-4b1e-9f59-1c2ee7ec87de",
+        "lesson_id": "5f002c74-566f-415f-9d31-ae058e3cc689",
+        "revision_key": "734690b2303325d5368453265bb4c6d8179cbde56b15682d7d7e111f919654ae",
+        "content_hash": "734690b2303325d5368453265bb4c6d8179cbde56b15682d7d7e111f919654ae",
+        "read_sections": [
+          {
+            "id": "compare-solutions",
+            "check": null,
+            "body_en": "Nestor, 41, and the families have confirmed scheduling and childcare barriers in the example. They need the midwife and other partners to plan a response.\n\nIf scheduling and childcare are the barriers, another poster may be insufficient. Compare two proposals: a poster alone, or discussion with the health center and households about a more accessible schedule. Which addresses the verified cause? Who can implement it? What time, people and costs are involved? Do not promise a new service or funding until the responsible authority agrees.",
+            "body_fil": "Si Nestor, 41, at ang mga pamilya ay nakumpirmang ang iskedyul at childcare ang hadlang sa mga pagbisita sa halimbawa. Kailangan nila ang midwife at iba pang katuwang para magplano.\n\nKung schedule at childcare ang hadlang, baka hindi sapat ang dagdag na poster. Ihambing ang dalawang mungkahi: bagong poster lamang, o pakikipag-usap sa health center at mga pamilya tungkol sa mas naaabot na schedule. Alin ang tumatama sa natiyak na sanhi? Sino ang may kakayahang magpatupad? May oras, tao at gastusin ba? Huwag mangakong may bagong serbisyo o pondo hangga’t hindi ito napagkasunduan ng may awtoridad.",
+            "asset_ids": [],
+            "heading_en": "Match the solution to the cause",
+            "concept_ids": [
+              "m7.solutions"
+            ],
+            "heading_fil": "Solusyon na tumatama sa sanhi",
+            "takeaway_en": "Compare solutions against the cause and resources, not convenience alone.",
+            "takeaway_fil": "Paghambingin ang solusyon ayon sa sanhi at resources, hindi sa dali lamang ng paggawa."
+          },
+          {
+            "id": "plan",
+            "check": null,
+            "body_en": "Nestor proposes a simple plan: consult affected households this week, send aggregated preferred times to the midwife, and discuss one trial schedule with the barangay health planning team. Name an owner, resources, deadline and measure, such as attendance among those invited. On the review date, ask whether the barrier decreased, not merely whether a meeting happened. Confirm each partner’s contribution first.",
+            "body_fil": "Gumawa si Nestor ng simpleng plano: kausapin ang mga apektadong pamilya ngayong linggo; isumite sa midwife ang pinagsama-samang preferred times; talakayin ang isang pagsubok na schedule sa barangay health planning team. Tukuyin ang responsable, kailangang resources, deadline at sukatan—halimbawa, bilang ng nakadalo sa mga inimbitahan. Sa review date, itanong kung nabawasan ang hadlang, hindi lang kung natapos ang meeting. Kumpirmahin muna ang ambag ng bawat kasosyo.",
+            "asset_ids": [],
+            "heading_en": "Turn a proposal into agreed work",
+            "concept_ids": [
+              "m7.recommend",
+              "m7.mobilize"
+            ],
+            "heading_fil": "Mula mungkahi tungo sa napagkasunduang gawain",
+            "takeaway_en": "A recommendation becomes a plan when it names an owner, resources, date and outcome measure.",
+            "takeaway_fil": "Ang rekomendasyon ay nagiging plano kapag may responsable, resources, petsa at sukatan ng resulta."
+          },
+          {
+            "id": "partners",
+            "check": null,
+            "body_en": "A BHW cannot alone fix transport, water and service schedules. On the problem map, mark actions within the BHW’s role, issues for the health team, and needs requiring barangay or other agencies. Include affected residents, particularly those who seldom attend meetings. Report patterns without unnecessary personal details and return to residents with the agreement.",
+            "body_fil": "Hindi kayang ayusin ng BHW mag-isa ang transportasyon, tubig at schedule ng serbisyo. Sa problem map, markahan kung ano ang maaaring gawin ng BHW, alin ang kailangang iakyat sa health team, at alin ang nangangailangan ng barangay o ibang ahensya. Anyayahan ang mga residenteng apektado, kabilang ang hindi madalas makadalo sa pulong. Iulat ang pattern na walang personal na detalyeng hindi kailangan. Balikan sila tungkol sa napagkasunduan.",
+            "asset_ids": [],
+            "heading_en": "Who should take part?",
+            "concept_ids": [
+              "m7.mobilize"
+            ],
+            "heading_fil": "Sino ang dapat kasama?",
+            "takeaway_en": "Solutions need owners and partners; not every task belongs to the BHW.",
+            "takeaway_fil": "Ang solusyon ay may may-ari at kasosyo; hindi lahat ng gawain ay ibinabagsak sa BHW."
+          },
+          {
+            "id": "review",
+            "check": null,
+            "body_en": "The schedule moved earlier but two households still missed the visit. Do not label the families as failures. Recheck barriers: did work, costs or notice change? Compare invitations and attendance before and after the trial. Identify which assumption was wrong and what small change to try. One small trial does not prove the whole problem is solved.",
+            "body_fil": "Naging mas maaga ang schedule pero dalawa pa rin ang hindi nakadalo. Huwag agad sabihing bigo ang pamilya. Kumustahin ang access barrier: may pagbabago ba sa trabaho, gastos o abiso? Ihambing ang bilang ng inimbitahan at nakadalo bago at matapos ang pagsubok. Tukuyin kung aling palagay ang mali at anong maliit na pagbabago ang susubukan. Ang isang maliit na trial ay hindi patunay na nalutas na ang buong problema.",
+            "asset_ids": [],
+            "heading_en": "When the first plan does not work",
+            "concept_ids": [
+              "m7.recommend"
+            ],
+            "heading_fil": "Kapag hindi gumana ang unang plano",
+            "takeaway_en": "Review uses results to revise assumptions and the plan.",
+            "takeaway_fil": "Ang review ay pagkakataong baguhin ang palagay at plano gamit ang resulta."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Fill in: cause; proposal; owner; resources; deadline; measure; review date. Compare a poster and trial schedule before choosing. In pairs, the midwife asks about agreement and resources. Revise and repeat the one-minute recommendation. Alone, answer the same questions. Bring the proposal to the next team meeting before implementation.",
+            "body_fil": "Punan: sanhi; mungkahi; owner; kailangan; deadline; sukatan; review date. Ihambing ang poster at trial schedule bago pumili. Magpares: isa ang midwife na magtatanong kung may pagsang-ayon at resources. Baguhin ang plano at ulitin ang isang minutong rekomendasyon. Kung mag-isa, sagutin ang parehong tanong. Dalhin ang mungkahi sa susunod na team meeting bago ipatupad.",
+            "asset_ids": [],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m7.solutions",
+              "m7.recommend",
+              "m7.mobilize"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "A plan names who acts and how to tell whether the barrier decreased.",
+            "takeaway_fil": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "Declare success because the meeting finished.",
+                  "fil": "Ituring na tagumpay dahil natapos ang meeting."
+                },
+                {
+                  "en": "Repeat the same plan without new questions.",
+                  "fil": "Ulitin ang parehong plano nang walang bagong tanong."
+                },
+                {
+                  "en": "Recheck barriers and compare invitations with attendance before revising.",
+                  "fil": "Balikan ang hadlang at ihambing ang invitations at attendance bago magbago."
+                }
+              ],
+              "prompt_en": "The meeting happened but attendance did not improve. What review is useful?",
+              "prompt_fil": "Nagawa ang meeting ngunit hindi dumami ang nakarating. Ano ang tamang review?",
+              "feedback_en": "The third response examines results. A meeting is an activity, not proof that a barrier disappeared; repetition may preserve the wrong assumption.",
+              "feedback_fil": "Ang ikatlong sagot ay sumusukat sa resulta. Ang meeting ay gawain, hindi patunay na nawala ang hadlang; ang basta pag-uulit ay maaaring maulit ang maling palagay.",
+              "correct_option_index": 2
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m7.solutions",
+              "m7.recommend",
+              "m7.mobilize"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "A plan names who acts and how to tell whether the barrier decreased.",
+            "takeaway_fil": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-compare-solutions",
+            "check": null,
+            "layout": "comparison",
+            "asset_ids": [],
+            "display_en": "A poster alone or discussion of another time? Match the response to the cause. Check time, people and costs. New services or funding need agreement from the responsible authority.",
+            "heading_en": "Match the solution to the cause",
+            "concept_ids": [
+              "m7.solutions"
+            ],
+            "display_fil": "Poster lang o pagtalakay ng ibang oras? Piliin ang tumutugon sa sanhi. Suriin ang oras, tao at gastos. Ang bagong serbisyo o pondo ay kailangan munang sang-ayunan ng may tungkulin.",
+            "heading_fil": "Solusyon na tumatama sa sanhi"
+          },
+          {
+            "id": "slide-plan",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "This week: consult households → aggregate preferred times → discuss a trial with the midwife and planning team. Record the owner, resources, deadline, attendance measure and review date.",
+            "heading_en": "Turn a proposal into agreed work",
+            "concept_ids": [
+              "m7.recommend",
+              "m7.mobilize"
+            ],
+            "display_fil": "Ngayong linggo: kausapin ang pamilya → ipasa ang pinagsamang gustong oras → talakayin ang trial sa midwife at planning team. Itala ang owner, resources, deadline, attendance measure at review date.",
+            "heading_fil": "Mula mungkahi tungo sa napagkasunduang gawain"
+          },
+          {
+            "id": "slide-partners",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Include affected residents, the health team and barangay or other agencies as needed. Separate BHW actions from decisions others must make. Return the agreement to residents.",
+            "heading_en": "Who should take part?",
+            "concept_ids": [
+              "m7.mobilize"
+            ],
+            "display_fil": "Kasama ang apektadong residente, health team at barangay o ibang ahensya kung kailangan. Ihiwalay ang kayang gawin ng BHW at kailangang desisyon ng iba. Ibalik sa residente ang napagkasunduan.",
+            "heading_fil": "Sino ang dapat kasama?"
+          },
+          {
+            "id": "slide-review",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "The schedule moved earlier but visits were still missed. Recheck work, costs and notice. Compare invitations with attendance and revise the wrong assumption. One trial does not establish resolution.",
+            "heading_en": "When the first plan does not work",
+            "concept_ids": [
+              "m7.recommend"
+            ],
+            "display_fil": "Mas maaga na ang schedule ngunit may hindi pa rin nakapunta. Balikan ang trabaho, gastos at abiso. Ihambing ang invited at attendance; baguhin ang maling palagay. Hindi sapat ang isang trial para sabihing lutas na.",
+            "heading_fil": "Kapag hindi gumana ang unang plano"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Cause → solution → owner and resources → deadline → measure and review. Confirm contributions before making promises.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m7.solutions",
+              "m7.recommend",
+              "m7.mobilize"
+            ],
+            "display_fil": "Sanhi → solusyon → owner at resources → deadline → sukatan at review. Kumpirmahin ang ambag bago mangako.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "Declare success because the meeting finished.",
+                  "fil": "Ituring na tagumpay dahil natapos ang meeting."
+                },
+                {
+                  "en": "Repeat the same plan without new questions.",
+                  "fil": "Ulitin ang parehong plano nang walang bagong tanong."
+                },
+                {
+                  "en": "Recheck barriers and compare invitations with attendance before revising.",
+                  "fil": "Balikan ang hadlang at ihambing ang invitations at attendance bago magbago."
+                }
+              ],
+              "prompt_en": "The meeting happened but attendance did not improve. What review is useful?",
+              "prompt_fil": "Nagawa ang meeting ngunit hindi dumami ang nakarating. Ano ang tamang review?",
+              "feedback_en": "The third response examines results. A meeting is an activity, not proof that a barrier disappeared; repetition may preserve the wrong assumption.",
+              "feedback_fil": "Ang ikatlong sagot ay sumusukat sa resulta. Ang meeting ay gawain, hindi patunay na nawala ang hadlang; ang basta pag-uulit ay maaaring maulit ang maling palagay.",
+              "correct_option_index": 2
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "A plan names who acts and how to tell whether the barrier decreased.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m7.solutions",
+              "m7.recommend",
+              "m7.mobilize"
+            ],
+            "display_fil": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m7.solutions",
+            "read_ids": [
+              "compare-solutions",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-compare-solutions",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m7.recommend",
+            "read_ids": [
+              "plan",
+              "review",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-plan",
+              "slide-review",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m7.mobilize",
+            "read_ids": [
+              "plan",
+              "partners",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-plan",
+              "slide-partners",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              29
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              19,
+              20,
+              21
+            ]
+          }
+        ],
+        "assets": [],
+        "created_by": "4122ac97-5984-43e9-8f84-26b4a062a028",
+        "created_at": "2026-09-25T07:16:31.980103+00:00",
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "16437466-5b60-4b1e-9f59-1c2ee7ec87de",
+          "notes_fil": "## [purpose] Layunin\n\nMagmungkahi ng isang trial na tumutugon sa natiyak na sanhi, may owner, resources, deadline, sukatan at petsa ng review, na may pagsang-ayon ng katuwang.\n\n## [time-materials] Oras at kagamitan\n\n50 minuto para sa pinadali na pagsasanay. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang pitong field sa papel. Linawin kung sino ang maaaring magdesisyon sa lokal na iskedyul at resources.\n\n## [opening] Pambungad\n\nNagawa ang meeting ngunit hindi dumami ang nakarating. Ano ang tamang review?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng ikatlong sagot ay sumusukat sa resulta. Ang meeting ay gawain, hindi patunay na nawala ang hadlang; ang basta pag-uulit ay maaaring maulit ang maling palagay.\n\n## [misconception] Karaniwang pagkakamali\n\nNangangako ng bagong iskedyul o pondo nang walang pahintulot, o meeting count lamang ang sukatan. Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.\n\n## [practice] Gawaing pagsasanay\n\nPunan: sanhi; mungkahi; owner; kailangan; deadline; sukatan; review date. Ihambing ang poster at trial schedule bago pumili. Magpares: isa ang midwife na magtatanong kung may pagsang-ayon at resources. Baguhin ang plano at ulitin ang isang minutong rekomendasyon. Kung mag-isa, sagutin ang parehong tanong. Dalhin ang mungkahi sa susunod na team meeting bago ipatupad.\n\n## [answer-key] Susi sa sagot\n\n3. Balikan ang hadlang at ihambing ang invitations at attendance bago magbago.\n\nAng ikatlong sagot ay sumusukat sa resulta. Ang meeting ay gawain, hindi patunay na nawala ang hadlang; ang basta pag-uulit ay maaaring maulit ang maling palagay.\n\n## [observe] Obserbahan\n\nNaiuugnay ang mungkahi sa sanhi; kumpleto ang owner, resources, deadline, sukatan at review; may partner agreement at paliwanag kung paano babaguhin kapag hindi gumana.\n\nKaya na: Naiuugnay ang mungkahi sa sanhi; kumpleto ang owner, resources, deadline, sukatan at review; may partner agreement at paliwanag kung paano babaguhin kapag hindi gumana. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Tumutugon sa sanhi ngunit kulang ang owner o sukatan; ipapunan ang plan card bago muling magpresenta.\n\nHindi pa: Nangangako ng bagong iskedyul o pondo nang walang pahintulot, o meeting count lamang ang sukatan.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nTumutugon sa sanhi ngunit kulang ang owner o sukatan; ipapunan ang plan card bago muling magpresenta. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 29; BHW Reference Manual: PDF 19, 20, 21. Ang source table ay larawan; minana ang beripikadong interpretasyon ng naunang implementation plan. Ang Rosario case ay hiwalay na ZFF source. Hindi clinical advice ang kasaysayan. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+          "notes_en": "## [purpose] Purpose\n\nRecommend a trial addressing a verified cause, with an owner, resources, deadline, measure and review date, subject to partner agreement.\n\n## [time-materials] Time and materials\n\n50 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare the seven fields on paper. Clarify who can decide on local schedules and resources.\n\n## [opening] Opening\n\nThe meeting happened but attendance did not improve. What review is useful?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe third response examines results. A meeting is an activity, not proof that a barrier disappeared; repetition may preserve the wrong assumption.\n\n## [misconception] Common misconception\n\nPromises a new schedule or funding without agreement, or measures only meetings held. A plan names who acts and how to tell whether the barrier decreased.\n\n## [practice] Practice activity\n\nFill in: cause; proposal; owner; resources; deadline; measure; review date. Compare a poster and trial schedule before choosing. In pairs, the midwife asks about agreement and resources. Revise and repeat the one-minute recommendation. Alone, answer the same questions. Bring the proposal to the next team meeting before implementation.\n\n## [answer-key] Answer key\n\n3. Recheck barriers and compare invitations with attendance before revising.\n\nThe third response examines results. A meeting is an activity, not proof that a barrier disappeared; repetition may preserve the wrong assumption.\n\n## [observe] Observe\n\nLinks the proposal to the cause, specifies owner, resources, deadline, measure and review, seeks partner agreement and explains how to revise if it fails.\n\nReady: Links the proposal to the cause, specifies owner, resources, deadline, measure and review, seeks partner agreement and explains how to revise if it fails. Completes this without prompting.\n\nNeeds practice: Addresses the cause but omits an owner or measure; complete the plan card before presenting again.\n\nNot yet: Promises a new schedule or funding without agreement, or measures only meetings held.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nAddresses the cause but omits an owner or measure; complete the plan card before presenting again. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 29; BHW Reference Manual: PDF 19, 20, 21. The source table is an image; this draft inherits the earlier implementation plan’s verified interpretation. Rosario is a separate ZFF case source. The historical account is not clinical advice. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Links the proposal to the cause, specifies owner, resources, deadline, measure and review, seeks partner agreement and explains how to revise if it fails. Completes this without prompting.",
+                "hindi_pa_en": "Promises a new schedule or funding without agreement, or measures only meetings held.",
+                "kaya_na_fil": "Naiuugnay ang mungkahi sa sanhi; kumpleto ang owner, resources, deadline, sukatan at review; may partner agreement at paliwanag kung paano babaguhin kapag hindi gumana. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Nangangako ng bagong iskedyul o pondo nang walang pahintulot, o meeting count lamang ang sukatan.",
+                "kailangan_practice_en": "Addresses the cause but omits an owner or measure; complete the plan card before presenting again.",
+                "kailangan_practice_fil": "Tumutugon sa sanhi ngunit kulang ang owner o sukatan; ipapunan ang plan card bago muling magpresenta."
+              },
+              "not_yet_en": "Promises a new schedule or funding without agreement, or measures only meetings held.",
+              "not_yet_fil": "Nangangako ng bagong iskedyul o pondo nang walang pahintulot, o meeting count lamang ang sukatan.",
+              "observable_en": "Links the proposal to the cause, specifies owner, resources, deadline, measure and review, seeks partner agreement and explains how to revise if it fails.",
+              "observable_fil": "Naiuugnay ang mungkahi sa sanhi; kumpleto ang owner, resources, deadline, sukatan at review; may partner agreement at paliwanag kung paano babaguhin kapag hindi gumana.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "9b959b18-f9e4-4b2f-a7ef-569d5992963d",
+        "module_id": "2ba3c8c2-4fac-4440-bbaa-ab19e5120e54",
+        "lesson_key": "problem-prioritize",
+        "position": 2,
+        "title_fil": "Piliin ang uunahin",
+        "title_en": "Choose a priority",
+        "objectives_fil": [
+          "Gamit ang apat na pamantayan, kwentahin at ipaliwanag ang halimbawa ng ranking at sabihin kung bakit hindi nito pinapalitan ang agarang referral."
+        ],
+        "objectives_en": [
+          "Using the four criteria, calculate and explain the example ranking and state why it does not replace urgent referral."
+        ],
+        "required": true,
+        "published_revision_id": "bf15e48f-0ea9-47d1-bd32-e1aef11c43f6",
+        "created_at": "2026-09-25T07:16:30.962174+00:00"
+      },
+      "revision": {
+        "id": "bf15e48f-0ea9-47d1-bd32-e1aef11c43f6",
+        "lesson_id": "9b959b18-f9e4-4b2f-a7ef-569d5992963d",
+        "revision_key": "67289a090ddf56ab10f9b3a8e9543db36d966272ebf8ff10b9bf93cbbbc1a787",
+        "content_hash": "67289a090ddf56ab10f9b3a8e9543db36d966272ebf8ff10b9bf93cbbbc1a787",
+        "read_sections": [
+          {
+            "id": "criteria",
+            "check": null,
+            "body_en": "For planning, score each problem from 1 to 5 on four criteria: how many are affected, severity of the effects, feasibility with available resources, and urgency. A higher feasibility score means more achievable. Add the four scores and discuss their evidence with the group. A high total suggests a starting priority, not permission to ignore serious danger. Refer someone needing urgent care immediately rather than waiting for a planning score.",
+            "body_fil": "Sa pagpaplano, bigyan ang bawat problema ng 1–5 sa apat na batayan: laki o dami ng apektado, kabigatan ng epekto, kakayahang malutas gamit ang resources, at pagkamadalian. Mas mataas na feasibility score ang mas kayang tugunan. Pagsamahin ang apat na marka at ipaliwanag ang batayan kasama ang grupo. Ang mataas na kabuuan ay panimulang prayoridad, hindi utos na balewalain ang malubhang panganib. Ang nangangailangan ng agarang pangangalaga ay i-refer agad; hindi hinihintay ang planning score.",
+            "asset_ids": [],
+            "heading_en": "Make priorities explicit",
+            "concept_ids": [
+              "m7.prioritize"
+            ],
+            "heading_fil": "Piliin ang prayoridad nang malinaw",
+            "takeaway_en": "Priorities require explicit criteria and local judgment; they do not replace immediate referral.",
+            "takeaway_fil": "Ang prayoridad ay may malinaw na batayan at lokal na paghatol; hindi nito pinapalitan ang agarang referral."
+          },
+          {
+            "id": "worked-scores",
+            "check": null,
+            "body_en": "Fictional practice: a BHW training gap scores 4 + 5 + 5 + 5 = 19; a safe-water teaching gap scores 4 + 3 + 5 + 5 = 17; a household water-preparation knowledge gap scores 3 + 3 + 5 + 5 = 16. The order is magnitude, severity, feasibility, urgency. These are the deck’s example scores, not measurements of your barangay. Name the evidence needed before using each score in a real plan.",
+            "body_fil": "Kathang-isip na practice: kulang na BHW training = 4 + 5 + 5 + 5 = 19; kulang na pagtuturo ng ligtas na tubig = 4 + 3 + 5 + 5 = 17; hindi alam ng pamilya ang paghahanda ng tubig = 3 + 3 + 5 + 5 = 16. Ang ayos ay laki, kabigatan, feasibility, urgency. Ito ang scores sa halimbawang deck, hindi sukat ng inyong barangay. Ibigay ang ebidensyang kailangan bago gamitin ang bawat marka sa totoong plano.",
+            "asset_ids": [],
+            "heading_en": "Try scoring priorities",
+            "concept_ids": [
+              "m7.prioritize"
+            ],
+            "heading_fil": "Subukan ang pagmamarka",
+            "takeaway_en": "Explain the scores before trusting the total.",
+            "takeaway_fil": "Ipaliwanag ang marka bago pagkatiwalaan ang kabuuan."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Copy the three example rows and calculate totals. Explain why 19 ranks first, then list evidence needed before using those scores locally. Simulate a tie: discuss urgency and resources. Alone, write the explanation. At the next planning meeting, ask where the scores came from.",
+            "body_fil": "Kopyahin ang tatlong halimbawang row at kwentahin ang total. Ipaliwanag kung bakit 19 ang una, saka maglista ng ebidensyang kailangan bago gamitin ang score sa inyong lugar. Magkunwaring tabla ang dalawang problema: talakayin ang urgency at resources. Kung mag-isa, isulat ang paliwanag. Sa susunod na planning meeting, itanong kung saan galing ang mga score.",
+            "asset_ids": [],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m7.prioritize"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+            "takeaway_fil": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "Revisit evidence, urgency and resources before agreeing.",
+                  "fil": "Balikan ang ebidensya, urgency at resources bago magkasundo."
+                },
+                {
+                  "en": "Choose the first listed to save time.",
+                  "fil": "Unahin ang unang nakasulat para mabilis."
+                },
+                {
+                  "en": "Add one point to the leader’s preference without new evidence.",
+                  "fil": "Dagdagan ng isa ang gusto ng lider kahit walang bagong ebidensya."
+                }
+              ],
+              "prompt_en": "Two problems both score 17. What should the group do?",
+              "prompt_fil": "Parehong 17 ang dalawang problema. Alin ang gagawin ng grupo?",
+              "feedback_en": "The first response is evidence-based and open to the group. List order and a leader’s preference are not additional evidence. Follow referral procedures immediately for someone needing urgent care.",
+              "feedback_fil": "Ang unang sagot ay may batayan at bukas sa grupo. Ang pagkakasunod sa listahan at kagustuhan ng lider ay hindi dagdag na ebidensya. Kung may nangangailangan ng agarang pangangalaga, sundin agad ang referral protocol.",
+              "correct_option_index": 0
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m7.prioritize"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+            "takeaway_fil": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-criteria",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Score 1–5: magnitude, seriousness, feasibility, urgency. Higher feasibility means more achievable. Add the scores, then discuss evidence. Immediate care must not wait for ranking.",
+            "heading_en": "Make priorities explicit",
+            "concept_ids": [
+              "m7.prioritize"
+            ],
+            "display_fil": "Marka 1–5: laki, kabigatan, kakayahang malutas, pagkamadalian. Mas mataas na feasibility = mas kayang gawin. Pagsamahin, saka talakayin ang ebidensya. Ang agarang pangangailangan ng pangangalaga ay hindi naghihintay sa ranking.",
+            "heading_fil": "Piliin ang prayoridad nang malinaw"
+          },
+          {
+            "id": "slide-worked-scores",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Example scores: training gap 4+5+5+5=19; safe-water teaching 4+3+5+5=17; household knowledge 3+3+5+5=16. Order: magnitude, seriousness, feasibility, urgency. These are not local measurements.",
+            "heading_en": "Try scoring priorities",
+            "concept_ids": [
+              "m7.prioritize"
+            ],
+            "display_fil": "Halimbawang score: training gap 4+5+5+5=19; safe-water teaching 4+3+5+5=17; household knowledge 3+3+5+5=16. Ayos: laki, kabigatan, feasibility, urgency. Hindi ito sukat ng inyong barangay.",
+            "heading_fil": "Subukan ang pagmamarka"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Calculate 19, 17, 16. Explain the evidence. For a tie, discuss urgency and resources; do not change scores without reasons.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m7.prioritize"
+            ],
+            "display_fil": "Kwentahin ang 19, 17, 16. Ipaliwanag ang ebidensya. Kapag tabla, talakayin ang urgency at resources; huwag baguhin ang score nang walang dahilan.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "Revisit evidence, urgency and resources before agreeing.",
+                  "fil": "Balikan ang ebidensya, urgency at resources bago magkasundo."
+                },
+                {
+                  "en": "Choose the first listed to save time.",
+                  "fil": "Unahin ang unang nakasulat para mabilis."
+                },
+                {
+                  "en": "Add one point to the leader’s preference without new evidence.",
+                  "fil": "Dagdagan ng isa ang gusto ng lider kahit walang bagong ebidensya."
+                }
+              ],
+              "prompt_en": "Two problems both score 17. What should the group do?",
+              "prompt_fil": "Parehong 17 ang dalawang problema. Alin ang gagawin ng grupo?",
+              "feedback_en": "The first response is evidence-based and open to the group. List order and a leader’s preference are not additional evidence. Follow referral procedures immediately for someone needing urgent care.",
+              "feedback_fil": "Ang unang sagot ay may batayan at bukas sa grupo. Ang pagkakasunod sa listahan at kagustuhan ng lider ay hindi dagdag na ebidensya. Kung may nangangailangan ng agarang pangangalaga, sundin agad ang referral protocol.",
+              "correct_option_index": 0
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m7.prioritize"
+            ],
+            "display_fil": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m7.prioritize",
+            "read_ids": [
+              "criteria",
+              "worked-scores",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-criteria",
+              "slide-worked-scores",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              29
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              19,
+              20,
+              21
+            ]
+          }
+        ],
+        "assets": [],
+        "created_by": "4122ac97-5984-43e9-8f84-26b4a062a028",
+        "created_at": "2026-09-25T07:16:31.119364+00:00",
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "bf15e48f-0ea9-47d1-bd32-e1aef11c43f6",
+          "notes_fil": "## [purpose] Layunin\n\nGamit ang apat na pamantayan, kwentahin at ipaliwanag ang halimbawa ng ranking at sabihin kung bakit hindi nito pinapalitan ang agarang referral.\n\n## [time-materials] Oras at kagamitan\n\n45 minuto para sa pinadali na pagsasanay. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIguhit ang apat na column at tatlong row sa papel. Ipakita ang halimbawa bilang practice data lamang.\n\n## [opening] Pambungad\n\nParehong 17 ang dalawang problema. Alin ang gagawin ng grupo?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng unang sagot ay may batayan at bukas sa grupo. Ang pagkakasunod sa listahan at kagustuhan ng lider ay hindi dagdag na ebidensya. Kung may nangangailangan ng agarang pangangalaga, sundin agad ang referral protocol.\n\n## [misconception] Karaniwang pagkakamali\n\nMali ang direksyon ng feasibility o itinuturing na pahintulot ang ranking na ipagpaliban ang agarang pangangalaga. Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.\n\n## [practice] Gawaing pagsasanay\n\nKopyahin ang tatlong halimbawang row at kwentahin ang total. Ipaliwanag kung bakit 19 ang una, saka maglista ng ebidensyang kailangan bago gamitin ang score sa inyong lugar. Magkunwaring tabla ang dalawang problema: talakayin ang urgency at resources. Kung mag-isa, isulat ang paliwanag. Sa susunod na planning meeting, itanong kung saan galing ang mga score.\n\n## [answer-key] Susi sa sagot\n\n1. Balikan ang ebidensya, urgency at resources bago magkasundo.\n\nAng unang sagot ay may batayan at bukas sa grupo. Ang pagkakasunod sa listahan at kagustuhan ng lider ay hindi dagdag na ebidensya. Kung may nangangailangan ng agarang pangangalaga, sundin agad ang referral protocol.\n\n## [observe] Obserbahan\n\nTama ang tatlong total; naipapaliwanag ang apat na pamantayan at direksyon ng feasibility; humihingi ng lokal na ebidensya at hindi ipinagpapaliban ang urgent care.\n\nKaya na: Tama ang tatlong total; naipapaliwanag ang apat na pamantayan at direksyon ng feasibility; humihingi ng lokal na ebidensya at hindi ipinagpapaliban ang urgent care. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Tama ang pamantayan ngunit may mali sa pagdaragdag; gumamit ng row-by-row na tally at ipaulit.\n\nHindi pa: Mali ang direksyon ng feasibility o itinuturing na pahintulot ang ranking na ipagpaliban ang agarang pangangalaga.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nTama ang pamantayan ngunit may mali sa pagdaragdag; gumamit ng row-by-row na tally at ipaulit. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 29; BHW Reference Manual: PDF 19, 20, 21. Ang source table ay larawan; minana ang beripikadong interpretasyon ng naunang implementation plan. Ang Rosario case ay hiwalay na ZFF source. Hindi clinical advice ang kasaysayan. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+          "notes_en": "## [purpose] Purpose\n\nUsing the four criteria, calculate and explain the example ranking and state why it does not replace urgent referral.\n\n## [time-materials] Time and materials\n\n45 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nDraw four columns and three rows on paper. Label the example as practice data only.\n\n## [opening] Opening\n\nTwo problems both score 17. What should the group do?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe first response is evidence-based and open to the group. List order and a leader’s preference are not additional evidence. Follow referral procedures immediately for someone needing urgent care.\n\n## [misconception] Common misconception\n\nReverses feasibility or treats ranking as permission to delay urgent care. Totals guide planning; evidence, discussion and urgent referral when needed still matter.\n\n## [practice] Practice activity\n\nCopy the three example rows and calculate totals. Explain why 19 ranks first, then list evidence needed before using those scores locally. Simulate a tie: discuss urgency and resources. Alone, write the explanation. At the next planning meeting, ask where the scores came from.\n\n## [answer-key] Answer key\n\n1. Revisit evidence, urgency and resources before agreeing.\n\nThe first response is evidence-based and open to the group. List order and a leader’s preference are not additional evidence. Follow referral procedures immediately for someone needing urgent care.\n\n## [observe] Observe\n\nCalculates all three totals correctly, explains the four criteria and feasibility direction, requests local evidence and does not delay urgent care.\n\nReady: Calculates all three totals correctly, explains the four criteria and feasibility direction, requests local evidence and does not delay urgent care. Completes this without prompting.\n\nNeeds practice: Uses the right criteria but makes an addition error; use a row-by-row tally and repeat.\n\nNot yet: Reverses feasibility or treats ranking as permission to delay urgent care.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nUses the right criteria but makes an addition error; use a row-by-row tally and repeat. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 29; BHW Reference Manual: PDF 19, 20, 21. The source table is an image; this draft inherits the earlier implementation plan’s verified interpretation. Rosario is a separate ZFF case source. The historical account is not clinical advice. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Calculates all three totals correctly, explains the four criteria and feasibility direction, requests local evidence and does not delay urgent care. Completes this without prompting.",
+                "hindi_pa_en": "Reverses feasibility or treats ranking as permission to delay urgent care.",
+                "kaya_na_fil": "Tama ang tatlong total; naipapaliwanag ang apat na pamantayan at direksyon ng feasibility; humihingi ng lokal na ebidensya at hindi ipinagpapaliban ang urgent care. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Mali ang direksyon ng feasibility o itinuturing na pahintulot ang ranking na ipagpaliban ang agarang pangangalaga.",
+                "kailangan_practice_en": "Uses the right criteria but makes an addition error; use a row-by-row tally and repeat.",
+                "kailangan_practice_fil": "Tama ang pamantayan ngunit may mali sa pagdaragdag; gumamit ng row-by-row na tally at ipaulit."
+              },
+              "not_yet_en": "Reverses feasibility or treats ranking as permission to delay urgent care.",
+              "not_yet_fil": "Mali ang direksyon ng feasibility o itinuturing na pahintulot ang ranking na ipagpaliban ang agarang pangangalaga.",
+              "observable_en": "Calculates all three totals correctly, explains the four criteria and feasibility direction, requests local evidence and does not delay urgent care.",
+              "observable_fil": "Tama ang tatlong total; naipapaliwanag ang apat na pamantayan at direksyon ng feasibility; humihingi ng lokal na ebidensya at hindi ipinagpapaliban ang urgent care.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "9d468901-a2be-4805-afbd-be798136918b",
+        "module_id": "2ba3c8c2-4fac-4440-bbaa-ab19e5120e54",
+        "lesson_key": "problem-causes",
+        "position": 1,
+        "title_fil": "Hanapin ang mga sanhi",
+        "title_en": "Investigate causes",
+        "objectives_fil": [
+          "Gumawa ng cause map na may dalawang posibleng sangay at paraan ng pagberipika, nang hindi itinuturing na patunay ang limang tanong lamang."
+        ],
+        "objectives_en": [
+          "Build a cause map with two possible branches and verification steps, without treating five questions alone as proof."
+        ],
+        "required": true,
+        "published_revision_id": "4744aaef-55b8-4f9d-96be-098fba578a03",
+        "created_at": "2026-09-25T07:16:30.304488+00:00"
+      },
+      "revision": {
+        "id": "4744aaef-55b8-4f9d-96be-098fba578a03",
+        "lesson_id": "9d468901-a2be-4805-afbd-be798136918b",
+        "revision_key": "26dbe1d730b89e4628bfb6a4b11da2e6d9994456cefa81c285ed148f212c0b65",
+        "content_hash": "26dbe1d730b89e4628bfb6a4b11da2e6d9994456cefa81c285ed148f212c0b65",
+        "read_sections": [
+          {
+            "id": "whys",
+            "check": null,
+            "body_en": "Nestor, 41, is investigating missed visits by three example households. He consults residents and health-center staff before recommending changes.\n\nAsk why the visit was missed, then why the reported reason arose. In this fictional example, childcare was unavailable; the schedule overlapped work; only one time was communicated; household availability had not been checked. These are possible explanations to confirm with residents, BHWs and health-center staff. Reaching exactly five whys is not the goal. Reach an actionable cause supported by evidence; follow separate branches when there is more than one cause.",
+            "body_fil": "Si Nestor, 41, ay nagsisiyasat sa missed visits ng tatlong pamilya sa halimbawa. Nakikipag-usap siya sa mga residente at health-center staff bago magmungkahi.\n\nTanungin kung bakit hindi nakarating, saka kung bakit nangyari ang ibinigay na dahilan. Sa kathang-isip na halimbawa, walang magbabantay sa anak; kasabay ng pagpasok sa trabaho ang schedule; iisang oras lang ang naipabatid; hindi nasuri ang kakayahang dumalo ng pamilya. Mga posibleng paliwanag ito na dapat kumpirmahin kasama ang residente, BHW at health-center staff. Hindi paligsahan ang pag-abot sa eksaktong limang bakit. Huminto sa isang nasusuring sanhi; kung may dalawang dahilan, sundan ang dalawang sanga.",
+            "asset_ids": [],
+            "heading_en": "Every why needs evidence",
+            "concept_ids": [
+              "m7.whys"
+            ],
+            "heading_fil": "Bawat bakit, may batayan",
+            "takeaway_en": "Five Whys investigates evidence-based causes with others instead of repeating blame.",
+            "takeaway_fil": "Ang Five Whys ay paghanap ng nasusuring sanhi kasama ang iba, hindi paulit-ulit na paninisi."
+          },
+          {
+            "id": "manual-example",
+            "check": null,
+            "body_en": "The Reference Manual uses a child’s diarrhoea death to investigate connected barriers to care and safe water. In the deck’s sample ranking, gaps in BHW training and teaching safe drinking-water preparation rank highly. This does not make training the cause of every death. Check explanations against evidence; poverty, transport and service gaps may also contribute. The example examines a system, not treatment instructions.",
+            "body_fil": "Sa Reference Manual, ang pagkamatay ng batang nagtatae ay ginagamit upang siyasatin ang magkakaugnay na hadlang sa pangangalaga at ligtas na tubig. Sa halimbawang talahanayan ng deck, nauuna ang kakulangan sa BHW training at pagtuturo ng wastong paghahanda ng inuming tubig. Hindi ibig sabihing training ang sanhi ng bawat pagkamatay. Tiyaking tugma ang paliwanag sa ebidensya; maaaring kasabay ang kahirapan, transportasyon at kakulangan sa serbisyo. Ang halimbawa ay para sa pagsusuri ng sistema, hindi gabay sa paggamot.",
+            "asset_ids": [],
+            "heading_en": "The manual’s diarrhoea example",
+            "concept_ids": [
+              "m7.diarrhoea-example"
+            ],
+            "heading_fil": "Ang halimbawa ng batang nagtatae",
+            "takeaway_en": "A worked example teaches a method; real priorities come from local evidence.",
+            "takeaway_fil": "Ang worked example ay paraan ng pagsusuri; ang totoong prayoridad ay manggagaling sa lokal na ebidensya."
+          },
+          {
+            "id": "rosario",
+            "check": null,
+            "body_en": "In the Zuellig Family Foundation case study, Rosario is a child aged one year and four months. Her death is linked to measles with diarrhoea, dehydration and malnutrition amid an unsafe environment, low income, misinformation and barriers to services. Draw separate branches for environment, livelihood and health services. Do not blame the mother alone or turn medicines mentioned in the historical story into current medical advice.",
+            "body_fil": "Sa case study ng Zuellig Family Foundation, si Rosario ay batang isang taon at apat na buwan. Ang kanyang pagkamatay ay iniuugnay sa tigdas na may pagtatae, dehydration at malnutrition, sa konteksto ng maruming kapaligiran, kakulangan sa kita, maling impormasyon at hadlang sa serbisyo. Gumuhit ng magkakahiwalay na sanga para sa kapaligiran, kabuhayan at serbisyong pangkalusugan. Huwag sisihin lamang ang ina o gawing payong medikal ngayon ang mga gamot na nabanggit sa lumang kuwento.",
+            "asset_ids": [],
+            "heading_en": "Rosario is a child",
+            "concept_ids": [
+              "m7.determinants"
+            ],
+            "heading_fil": "Si Rosario ay isang bata",
+            "takeaway_en": "Illness has a context: water, income, information and access to services interact.",
+            "takeaway_fil": "Ang sakit ay may konteksto: ang tubig, kita, impormasyon at access sa serbisyo ay magkakaugnay."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Put the missed visit at the center of a page. Draw childcare and transport-cost branches. Mark each cause reported, verified or to check. Name a person to consult or record to check on each branch. Ask a partner to identify one unsupported arrow. Alone, circle it and write a verification question. Bring the resident’s perspective to the next case discussion.",
+            "body_fil": "Ilagay ang missed visit sa gitna ng papel. Gumawa ng dalawang sangay: childcare at pamasahe. Markahan ang bawat sanhi ng “sinabi,” “natiyak” o “susuriin.” Magtalaga ng taong kakausapin o rekord na susuriin sa bawat sangay. Ipasuri sa kapareha ang isang arrow na walang ebidensya. Kung mag-isa, bilugan ito at isulat ang tanong sa beripikasyon. Sa susunod na case discussion, dalhin ang pananaw ng residente.",
+            "asset_ids": [],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m7.whys",
+              "m7.diarrhoea-example",
+              "m7.determinants"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+            "takeaway_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "Stop because five questions have been asked.",
+                  "fil": "Itigil ang usapan dahil lima na ang tanong."
+                },
+                {
+                  "en": "Check the evidence and other barriers with the family and health team.",
+                  "fil": "Suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team."
+                },
+                {
+                  "en": "Immediately plan a lecture for every mother.",
+                  "fil": "Magplano agad ng lecture para sa lahat ng ina."
+                }
+              ],
+              "prompt_en": "At the fifth “why,” the group says the mother lacks knowledge. What next?",
+              "prompt_fil": "Sa ikalimang “bakit,” sinabi ng grupo na kulang sa kaalaman ang ina. Ano ang susunod?",
+              "feedback_en": "The second response tests the explanation before acting. The question count is not proof. A lecture may miss transport, income or service gaps.",
+              "feedback_fil": "Ang ikalawang sagot ay sumusubok sa paliwanag bago kumilos. Hindi patunay ang bilang ng tanong. Ang lecture ay maaaring hindi tumugon sa transportasyon, kita o kakulangan sa serbisyo.",
+              "correct_option_index": 1
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m7.whys",
+              "m7.diarrhoea-example",
+              "m7.determinants"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+            "takeaway_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-whys",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "No childcare → conflicts with work → only one time communicated → availability not checked. Each arrow is a possible explanation: verify it. Use separate branches for other barriers.",
+            "heading_en": "Every why needs evidence",
+            "concept_ids": [
+              "m7.whys"
+            ],
+            "display_fil": "Walang childcare → sabay sa trabaho → iisang oras ang naipaalam → hindi pa natanong ang availability. Posibleng sanhi ang bawat arrow: beripikahin. Gumawa ng hiwalay na sangay para sa ibang hadlang.",
+            "heading_fil": "Bawat bakit, may batayan"
+          },
+          {
+            "id": "slide-manual-example",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "The manual’s child-diarrhoea example examines safe water, education and training gaps. Deaths do not all have one cause. Investigate income, transport and service barriers too.",
+            "heading_en": "The manual’s diarrhoea example",
+            "concept_ids": [
+              "m7.diarrhoea-example"
+            ],
+            "display_fil": "Sinusuri sa halimbawa ng manwal ang pagkamatay ng batang nagtatae: ligtas na tubig, pagtuturo at training gaps. Hindi iisang dahilan ang lahat ng pagkamatay. Suriin din ang kita, transportasyon at serbisyo.",
+            "heading_fil": "Ang halimbawa ng batang nagtatae"
+          },
+          {
+            "id": "slide-rosario",
+            "check": null,
+            "layout": "scene",
+            "asset_ids": [],
+            "display_en": "Rosario is one year and four months old. The historical case connects measles, diarrhoea, dehydration, malnutrition and access barriers. Map environment, livelihood and services separately; do not blame the mother.",
+            "heading_en": "Rosario is a child",
+            "concept_ids": [
+              "m7.determinants"
+            ],
+            "display_fil": "Si Rosario ay isang taon at apat na buwan. Sa makasaysayang kaso, magkakaugnay ang tigdas, pagtatae, dehydration, malnutrisyon at hadlang sa serbisyo. Ihiwalay ang sangay ng kapaligiran, kabuhayan at serbisyo; huwag sisihin ang ina.",
+            "heading_fil": "Si Rosario ay isang bata"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Two branches → label evidence → identify a person or record → revise the map when information changes.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m7.whys",
+              "m7.diarrhoea-example",
+              "m7.determinants"
+            ],
+            "display_fil": "Dalawang sangay → markahan ang ebidensya → tukuyin ang kausap o rekord → baguhin ang map kapag may bagong impormasyon.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "Stop because five questions have been asked.",
+                  "fil": "Itigil ang usapan dahil lima na ang tanong."
+                },
+                {
+                  "en": "Check the evidence and other barriers with the family and health team.",
+                  "fil": "Suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team."
+                },
+                {
+                  "en": "Immediately plan a lecture for every mother.",
+                  "fil": "Magplano agad ng lecture para sa lahat ng ina."
+                }
+              ],
+              "prompt_en": "At the fifth “why,” the group says the mother lacks knowledge. What next?",
+              "prompt_fil": "Sa ikalimang “bakit,” sinabi ng grupo na kulang sa kaalaman ang ina. Ano ang susunod?",
+              "feedback_en": "The second response tests the explanation before acting. The question count is not proof. A lecture may miss transport, income or service gaps.",
+              "feedback_fil": "Ang ikalawang sagot ay sumusubok sa paliwanag bago kumilos. Hindi patunay ang bilang ng tanong. Ang lecture ay maaaring hindi tumugon sa transportasyon, kita o kakulangan sa serbisyo.",
+              "correct_option_index": 1
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m7.whys",
+              "m7.diarrhoea-example",
+              "m7.determinants"
+            ],
+            "display_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m7.whys",
+            "read_ids": [
+              "whys",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-whys",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "zff-rosario"
+            ]
+          },
+          {
+            "id": "m7.diarrhoea-example",
+            "read_ids": [
+              "manual-example",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-manual-example",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "zff-rosario"
+            ]
+          },
+          {
+            "id": "m7.determinants",
+            "read_ids": [
+              "rosario",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-rosario",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "zff-rosario"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              29
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              19,
+              20,
+              21
+            ]
+          },
+          {
+            "id": "zff-rosario",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/kwento-ni-rosario.md",
+            "title": "ZFF Rosario case — repository transcription with provenance and printed workbook pages 48–51"
+          }
+        ],
+        "assets": [],
+        "created_by": "4122ac97-5984-43e9-8f84-26b4a062a028",
+        "created_at": "2026-09-25T07:16:30.66821+00:00",
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "4744aaef-55b8-4f9d-96be-098fba578a03",
+          "notes_fil": "## [purpose] Layunin\n\nGumawa ng cause map na may dalawang posibleng sangay at paraan ng pagberipika, nang hindi itinuturing na patunay ang limang tanong lamang.\n\n## [time-materials] Oras at kagamitan\n\n50 minuto para sa pinadali na pagsasanay. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang missed-visit cards at cause-map paper. Basahin ang hiwalay na Rosario case; huwag gawing medical advice ang gamot sa lumang kuwento.\n\n## [opening] Pambungad\n\nSa ikalimang “bakit,” sinabi ng grupo na kulang sa kaalaman ang ina. Ano ang susunod?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng ikalawang sagot ay sumusubok sa paliwanag bago kumilos. Hindi patunay ang bilang ng tanong. Ang lecture ay maaaring hindi tumugon sa transportasyon, kita o kakulangan sa serbisyo.\n\n## [misconception] Karaniwang pagkakamali\n\nIsang mapanising dahilan ang itinuturing na tiyak dahil umabot sa limang tanong. Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.\n\n## [practice] Gawaing pagsasanay\n\nIlagay ang missed visit sa gitna ng papel. Gumawa ng dalawang sangay: childcare at pamasahe. Markahan ang bawat sanhi ng “sinabi,” “natiyak” o “susuriin.” Magtalaga ng taong kakausapin o rekord na susuriin sa bawat sangay. Ipasuri sa kapareha ang isang arrow na walang ebidensya. Kung mag-isa, bilugan ito at isulat ang tanong sa beripikasyon. Sa susunod na case discussion, dalhin ang pananaw ng residente.\n\n## [answer-key] Susi sa sagot\n\n2. Suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team.\n\nAng ikalawang sagot ay sumusubok sa paliwanag bago kumilos. Hindi patunay ang bilang ng tanong. Ang lecture ay maaaring hindi tumugon sa transportasyon, kita o kakulangan sa serbisyo.\n\n## [observe] Obserbahan\n\nMay dalawang sangay ang map; magkahiwalay ang natiyak at hinala; bawat sangay ay may paraan ng beripikasyon; kasama ang pananaw ng residente.\n\nKaya na: May dalawang sangay ang map; magkahiwalay ang natiyak at hinala; bawat sangay ay may paraan ng beripikasyon; kasama ang pananaw ng residente. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: May dalawang sangay ngunit walang beripikasyon; ipatukoy ang kausap o rekord para sa bawat arrow.\n\nHindi pa: Isang mapanising dahilan ang itinuturing na tiyak dahil umabot sa limang tanong.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nMay dalawang sangay ngunit walang beripikasyon; ipatukoy ang kausap o rekord para sa bawat arrow. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 29; BHW Reference Manual: PDF 19, 20, 21; ZFF Rosario case — repository transcription with provenance and printed workbook pages 48–51 (https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/kwento-ni-rosario.md). Ang source table ay larawan; minana ang beripikadong interpretasyon ng naunang implementation plan. Ang Rosario case ay hiwalay na ZFF source. Hindi clinical advice ang kasaysayan. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+          "notes_en": "## [purpose] Purpose\n\nBuild a cause map with two possible branches and verification steps, without treating five questions alone as proof.\n\n## [time-materials] Time and materials\n\n50 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare missed-visit cards and cause-map paper. Read the separate Rosario case; do not turn medicines in the historical story into medical advice.\n\n## [opening] Opening\n\nAt the fifth “why,” the group says the mother lacks knowledge. What next?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe second response tests the explanation before acting. The question count is not proof. A lecture may miss transport, income or service gaps.\n\n## [misconception] Common misconception\n\nTreats a blaming explanation as proven because five questions were asked. Five Whys structures inquiry with others; evidence supports the proposed causes.\n\n## [practice] Practice activity\n\nPut the missed visit at the center of a page. Draw childcare and transport-cost branches. Mark each cause reported, verified or to check. Name a person to consult or record to check on each branch. Ask a partner to identify one unsupported arrow. Alone, circle it and write a verification question. Bring the resident’s perspective to the next case discussion.\n\n## [answer-key] Answer key\n\n2. Check the evidence and other barriers with the family and health team.\n\nThe second response tests the explanation before acting. The question count is not proof. A lecture may miss transport, income or service gaps.\n\n## [observe] Observe\n\nMaps two branches, separates evidence from hypotheses, gives a verification step for each and includes the resident’s perspective.\n\nReady: Maps two branches, separates evidence from hypotheses, gives a verification step for each and includes the resident’s perspective. Completes this without prompting.\n\nNeeds practice: Draws two branches without verification; prompt for the person or record behind each arrow.\n\nNot yet: Treats a blaming explanation as proven because five questions were asked.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nDraws two branches without verification; prompt for the person or record behind each arrow. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 29; BHW Reference Manual: PDF 19, 20, 21; ZFF Rosario case — repository transcription with provenance and printed workbook pages 48–51 (https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/kwento-ni-rosario.md). The source table is an image; this draft inherits the earlier implementation plan’s verified interpretation. Rosario is a separate ZFF case source. The historical account is not clinical advice. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Maps two branches, separates evidence from hypotheses, gives a verification step for each and includes the resident’s perspective. Completes this without prompting.",
+                "hindi_pa_en": "Treats a blaming explanation as proven because five questions were asked.",
+                "kaya_na_fil": "May dalawang sangay ang map; magkahiwalay ang natiyak at hinala; bawat sangay ay may paraan ng beripikasyon; kasama ang pananaw ng residente. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Isang mapanising dahilan ang itinuturing na tiyak dahil umabot sa limang tanong.",
+                "kailangan_practice_en": "Draws two branches without verification; prompt for the person or record behind each arrow.",
+                "kailangan_practice_fil": "May dalawang sangay ngunit walang beripikasyon; ipatukoy ang kausap o rekord para sa bawat arrow."
+              },
+              "not_yet_en": "Treats a blaming explanation as proven because five questions were asked.",
+              "not_yet_fil": "Isang mapanising dahilan ang itinuturing na tiyak dahil umabot sa limang tanong.",
+              "observable_en": "Maps two branches, separates evidence from hypotheses, gives a verification step for each and includes the resident’s perspective.",
+              "observable_fil": "May dalawang sangay ang map; magkahiwalay ang natiyak at hinala; bawat sangay ay may paraan ng beripikasyon; kasama ang pananaw ng residente.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "cc8eee94-60a5-41b3-8a47-c6ae92903c07",
+        "module_id": "2ba3c8c2-4fac-4440-bbaa-ab19e5120e54",
+        "lesson_key": "problem-define",
+        "position": 0,
+        "title_fil": "Linawin ang problema",
+        "title_en": "Define the problem",
+        "objectives_fil": [
+          "Mula sa missed-visit case, isulat ang problemang may tiyak na pangyayari, pinagmulan at impormasyong kulang, nang walang paninisi."
+        ],
+        "objectives_en": [
+          "Given the missed-visit case, write a problem statement with a specific event, source and information gap, without blame."
+        ],
+        "required": true,
+        "published_revision_id": "54bd88d8-a34b-4950-8652-e7145e782663",
+        "created_at": "2026-09-25T07:16:29.212271+00:00"
+      },
+      "revision": {
+        "id": "54bd88d8-a34b-4950-8652-e7145e782663",
+        "lesson_id": "cc8eee94-60a5-41b3-8a47-c6ae92903c07",
+        "revision_key": "b6c8cc886d0d526efc75a1e3cc4fa18280fddd3a44e313b5e79a6cd7da1a5aa2",
+        "content_hash": "b6c8cc886d0d526efc75a1e3cc4fa18280fddd3a44e313b5e79a6cd7da1a5aa2",
+        "read_sections": [
+          {
+            "id": "missed-visits",
+            "check": null,
+            "body_en": "BHW Nestor, 41, revisits three households that missed an agreed health-center visit. Instead of labeling them “uncooperative,” he records dates, missed visits and the residents’ stated reasons. These three households are a training example, not data from your barangay. The problem is inability to reach a service on the agreed day; its causes still need investigation before choosing a solution.",
+            "body_fil": "Si BHW Nestor, 41 anyos, ay bumalik sa tatlong kabahayang hindi nakadalo sa napagkasunduang health-center visit. Sa halip na isulat na “pasaway,” inilista niya ang petsa, bilang ng hindi nakadalo at mga dahilang mismong sinabi ng residente. Ang tatlong kabahayan ay halimbawa sa pagsasanay, hindi datos ng inyong barangay. Ang problema ay “hindi makarating sa serbisyo sa takdang araw”; kailangan pang siyasatin ang dahilan bago pumili ng solusyon.",
+            "asset_ids": [],
+            "heading_en": "Three visits, the same barrier",
+            "concept_ids": [
+              "m7.define"
+            ],
+            "heading_fil": "Tatlong balik, parehong hadlang",
+            "takeaway_en": "Define the problem using events and evidence rather than judgments about people.",
+            "takeaway_fil": "Tukuyin ang problema gamit ang pangyayari at ebidensya, hindi husga sa tao."
+          },
+          {
+            "id": "worked-example",
+            "check": null,
+            "body_en": "“Three households missed visits” describes the event in the example. “They did not want to go” guesses at motivation. “We need a poster” proposes a solution. Before choosing a solution, find out what each household reports and which records can clarify the situation.",
+            "body_fil": "“Tatlong pamilya ang hindi nakapunta” ay paglalarawan ng pangyayari sa halimbawa. “Ayaw nilang pumunta” ay hula sa motibo. “Kailangan ng poster” ay mungkahing solusyon. Bago pumili ng solusyon, alamin ang sinabi ng bawat pamilya at kung anong rekord ang makatutulong sa paglilinaw.",
+            "asset_ids": [],
+            "heading_en": "Separate the problem from a guess",
+            "concept_ids": [
+              "m7.define"
+            ],
+            "heading_fil": "Ihiwalay ang problema sa hula",
+            "takeaway_en": "Describe the event and evidence before choosing a cause or solution.",
+            "takeaway_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Write: “Three households in the example missed agreed visits; they report barriers to attending. Dates and each barrier still need clarification.” Compare with “The families lack discipline.” In pairs, underline the event, source and gap. Alone, use the same checklist. In your next problem report, seek the affected residents’ perspectives too.",
+            "body_fil": "Isulat: “Tatlong pamilya sa halimbawa ang hindi nakapunta sa napagkasunduang araw; ayon sa kanila, may hadlang sa pagpunta. Kailangan pang linawin ang petsa at bawat hadlang.” Ihambing sa “Walang disiplina ang mga pamilya.” Sa pares, salungguhitan ang pangyayari, pinagmulan at kulang. Kung mag-isa, gamitin ang parehong checklist. Sa susunod na problemang iuulat, humingi rin ng pananaw ng apektadong residente.",
+            "asset_ids": [],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m7.define"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "Describe the event and evidence before choosing a cause or solution.",
+            "takeaway_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "“Everyone needs a new poster.”",
+                  "fil": "“Kailangan ng bagong poster ang lahat.”"
+                },
+                {
+                  "en": "“They do not want to get well.”",
+                  "fil": "“Ayaw talaga nilang gumaling.”"
+                },
+                {
+                  "en": "“Three households missed visits; check each household’s barrier.”",
+                  "fil": "“Tatlong pamilya ang hindi nakapunta; alamin ang hadlang sa bawat isa.”"
+                }
+              ],
+              "prompt_en": "Which statement is a useful starting point for investigation?",
+              "prompt_fil": "Aling pahayag ang magandang simula ng pagsisiyasat?",
+              "feedback_en": "The third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation.",
+              "feedback_fil": "Ang ikatlong sagot ay tiyak at bukas sa ebidensya. Ang poster ay solusyong hindi pa nasusuri; ang pahayag tungkol sa kagustuhan ay husga, hindi obserbasyon.",
+              "correct_option_index": 2
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m7.define"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "Describe the event and evidence before choosing a cause or solution.",
+            "takeaway_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-missed-visits",
+            "check": null,
+            "layout": "scene",
+            "asset_ids": [],
+            "display_en": "Nestor, 41, revisits three households that missed health-center visits. Record dates and reported reasons. Problem: difficulty reaching the service on the agreed day. Causes still need checking.",
+            "heading_en": "Three visits, the same barrier",
+            "concept_ids": [
+              "m7.define"
+            ],
+            "display_fil": "Si Nestor, 41, ay bumalik sa tatlong pamilyang hindi nakapunta sa health center. Itala ang petsa at sinabi nilang dahilan. Problema: hindi makarating sa takdang araw. Hindi pa tiyak ang lahat ng sanhi.",
+            "heading_fil": "Tatlong balik, parehong hadlang"
+          },
+          {
+            "id": "slide-worked-example",
+            "check": null,
+            "layout": "comparison",
+            "asset_ids": [],
+            "display_en": "Event: missed visits. Guess: unwilling to attend. Solution: new poster. Start with the event, then investigate causes.",
+            "heading_en": "Separate the problem from a guess",
+            "concept_ids": [
+              "m7.define"
+            ],
+            "display_fil": "Pangyayari: hindi nakapunta. Hula: ayaw pumunta. Solusyon: bagong poster. Simulan sa pangyayari, saka alamin ang dahilan.",
+            "heading_fil": "Ihiwalay ang problema sa hula"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Problem statement: what happened? Whose information? What is missing? Remove labels about character.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m7.define"
+            ],
+            "display_fil": "Problem statement: ano ang nangyari? Kaninong impormasyon? Ano ang kulang? Alisin ang tatak sa pagkatao.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "“Everyone needs a new poster.”",
+                  "fil": "“Kailangan ng bagong poster ang lahat.”"
+                },
+                {
+                  "en": "“They do not want to get well.”",
+                  "fil": "“Ayaw talaga nilang gumaling.”"
+                },
+                {
+                  "en": "“Three households missed visits; check each household’s barrier.”",
+                  "fil": "“Tatlong pamilya ang hindi nakapunta; alamin ang hadlang sa bawat isa.”"
+                }
+              ],
+              "prompt_en": "Which statement is a useful starting point for investigation?",
+              "prompt_fil": "Aling pahayag ang magandang simula ng pagsisiyasat?",
+              "feedback_en": "The third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation.",
+              "feedback_fil": "Ang ikatlong sagot ay tiyak at bukas sa ebidensya. Ang poster ay solusyong hindi pa nasusuri; ang pahayag tungkol sa kagustuhan ay husga, hindi obserbasyon.",
+              "correct_option_index": 2
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "Describe the event and evidence before choosing a cause or solution.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m7.define"
+            ],
+            "display_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m7.define",
+            "read_ids": [
+              "missed-visits",
+              "worked-example",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-missed-visits",
+              "slide-worked-example",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              29
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              19,
+              20,
+              21
+            ]
+          }
+        ],
+        "assets": [],
+        "created_by": "4122ac97-5984-43e9-8f84-26b4a062a028",
+        "created_at": "2026-09-25T07:16:29.586924+00:00",
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "54bd88d8-a34b-4950-8652-e7145e782663",
+          "notes_fil": "## [purpose] Layunin\n\nMula sa missed-visit case, isulat ang problemang may tiyak na pangyayari, pinagmulan at impormasyong kulang, nang walang paninisi.\n\n## [time-materials] Oras at kagamitan\n\n35 minuto para sa pinadali na pagsasanay. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang dalawang pahayag sa practice bilang mga card. Ang bilang na tatlo ay halimbawa lamang.\n\n## [opening] Pambungad\n\nAling pahayag ang magandang simula ng pagsisiyasat?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng ikatlong sagot ay tiyak at bukas sa ebidensya. Ang poster ay solusyong hindi pa nasusuri; ang pahayag tungkol sa kagustuhan ay husga, hindi obserbasyon.\n\n## [misconception] Karaniwang pagkakamali\n\nHusga sa pamilya o napiling solusyon ang ipinapalit sa problema. Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.\n\n## [practice] Gawaing pagsasanay\n\nIsulat: “Tatlong pamilya sa halimbawa ang hindi nakapunta sa napagkasunduang araw; ayon sa kanila, may hadlang sa pagpunta. Kailangan pang linawin ang petsa at bawat hadlang.” Ihambing sa “Walang disiplina ang mga pamilya.” Sa pares, salungguhitan ang pangyayari, pinagmulan at kulang. Kung mag-isa, gamitin ang parehong checklist. Sa susunod na problemang iuulat, humingi rin ng pananaw ng apektadong residente.\n\n## [answer-key] Susi sa sagot\n\n3. “Tatlong pamilya ang hindi nakapunta; alamin ang hadlang sa bawat isa.”\n\nAng ikatlong sagot ay tiyak at bukas sa ebidensya. Ang poster ay solusyong hindi pa nasusuri; ang pahayag tungkol sa kagustuhan ay husga, hindi obserbasyon.\n\n## [observe] Obserbahan\n\nIsinusulat ang tiyak na pangyayari at saklaw; tinutukoy ang pinagmulan; pinapangalanan ang isang kulang na impormasyon; walang paninisi.\n\nKaya na: Isinusulat ang tiyak na pangyayari at saklaw; tinutukoy ang pinagmulan; pinapangalanan ang isang kulang na impormasyon; walang paninisi. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: May pangyayari ngunit walang pinagmulan o kulang; ipatanong kung sino ang nagsabi at ano pa ang dapat alamin.\n\nHindi pa: Husga sa pamilya o napiling solusyon ang ipinapalit sa problema.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nMay pangyayari ngunit walang pinagmulan o kulang; ipatanong kung sino ang nagsabi at ano pa ang dapat alamin. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 29; BHW Reference Manual: PDF 19, 20, 21. Ang source table ay larawan; minana ang beripikadong interpretasyon ng naunang implementation plan. Ang Rosario case ay hiwalay na ZFF source. Hindi clinical advice ang kasaysayan. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+          "notes_en": "## [purpose] Purpose\n\nGiven the missed-visit case, write a problem statement with a specific event, source and information gap, without blame.\n\n## [time-materials] Time and materials\n\n35 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare the two practice statements as cards. The count of three is fictional.\n\n## [opening] Opening\n\nWhich statement is a useful starting point for investigation?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation.\n\n## [misconception] Common misconception\n\nSubstitutes a judgment about families or a chosen solution for the problem. Describe the event and evidence before choosing a cause or solution.\n\n## [practice] Practice activity\n\nWrite: “Three households in the example missed agreed visits; they report barriers to attending. Dates and each barrier still need clarification.” Compare with “The families lack discipline.” In pairs, underline the event, source and gap. Alone, use the same checklist. In your next problem report, seek the affected residents’ perspectives too.\n\n## [answer-key] Answer key\n\n3. “Three households missed visits; check each household’s barrier.”\n\nThe third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation.\n\n## [observe] Observe\n\nStates the event and scope, identifies the source, names one information gap and avoids blame.\n\nReady: States the event and scope, identifies the source, names one information gap and avoids blame. Completes this without prompting.\n\nNeeds practice: Names an event but not its source or gap; ask who reported it and what still needs checking.\n\nNot yet: Substitutes a judgment about families or a chosen solution for the problem.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nNames an event but not its source or gap; ask who reported it and what still needs checking. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 29; BHW Reference Manual: PDF 19, 20, 21. The source table is an image; this draft inherits the earlier implementation plan’s verified interpretation. Rosario is a separate ZFF case source. The historical account is not clinical advice. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "States the event and scope, identifies the source, names one information gap and avoids blame. Completes this without prompting.",
+                "hindi_pa_en": "Substitutes a judgment about families or a chosen solution for the problem.",
+                "kaya_na_fil": "Isinusulat ang tiyak na pangyayari at saklaw; tinutukoy ang pinagmulan; pinapangalanan ang isang kulang na impormasyon; walang paninisi. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Husga sa pamilya o napiling solusyon ang ipinapalit sa problema.",
+                "kailangan_practice_en": "Names an event but not its source or gap; ask who reported it and what still needs checking.",
+                "kailangan_practice_fil": "May pangyayari ngunit walang pinagmulan o kulang; ipatanong kung sino ang nagsabi at ano pa ang dapat alamin."
+              },
+              "not_yet_en": "Substitutes a judgment about families or a chosen solution for the problem.",
+              "not_yet_fil": "Husga sa pamilya o napiling solusyon ang ipinapalit sa problema.",
+              "observable_en": "States the event and scope, identifies the source, names one information gap and avoids blame.",
+              "observable_fil": "Isinusulat ang tiyak na pangyayari at saklaw; tinutukoy ang pinagmulan; pinapangalanan ang isang kulang na impormasyon; walang paninisi.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

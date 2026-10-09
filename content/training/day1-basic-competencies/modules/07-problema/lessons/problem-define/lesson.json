@@ -127,7 +127,9 @@
       ],
       "source_ids": [
         "facilitator",
-        "manual"
+        "manual",
+        "deck",
+        "tesda"
       ]
     }
   ],
@@ -149,6 +151,29 @@
         21
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "deck",
+      "title": "DOH Day1 Part1 teaching deck, physical PDF pages59–66",
+      "pdf_pages": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "url": "https://drive.google.com/file/d/1ZDIJiTltEzJVFcy-XSA0NivWNvfAKfhY/view"
+    },
+    {
+      "id": "tesda",
+      "title": "TESDA Barangay Health Services NCII Revision01 (2019), unit400311212",
+      "pdf_pages": [
+        15
+      ],
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
     }
   ],
   "assets": [
@@ -217,6 +242,46 @@
       "caption_en": "Choose first; then compare all three rationales and the corrected statement.",
       "provenance": "Built-in imagegen, pinned Carole and resident-perspective references; revised action scene. No real records. 4e11ff99283b80894c680ce100db3bc15e7ef9ea781dc6f093593a9d574a022e",
       "review_status": "draft"
+    },
+    {
+      "id": "problem-define-story",
+      "alt_fil": "Anim na narrated beat: inihihiwalay ni Carole ang mga pinagmulan at itinatala ang paglilinaw ng residente nang walang hula.",
+      "alt_en": "Six narrated beats: Carole separates sources and records resident’s clarification without guessing.",
+      "caption_fil": "Iwinastong pahayag na may pinagmulan at tapat na kulang.",
+      "caption_en": "A corrected problem statement with a source and honest unknowns.",
+      "provenance": "Lesson 1.7.1 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-7/problem-define-gemini-fil-6ef3b510d796.mp4",
+          "content_hash": "6ef3b510d796cd5a7140aba5c70966f358bdcf401b9fb5c81bd456d392f3b09d",
+          "duration_s": 54,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-define-gemini-fil-c2bae19f5420.vtt",
+            "content_hash": "c2bae19f5420159e23efada9b214d0a9166b0c9bdbfdab0f3bb9ac5359d17bf2"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg",
+            "content_hash": "790c964b21194eab42332e3c7158ad5e3c137716d78f4ca5ee0ec65c0992fa5d"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-7/problem-define-gemini-en-f62a9bc61edd.mp4",
+          "content_hash": "f62a9bc61edd3d945a1827aef595a0a183e6b3f2fac8c008e6e5007c5a5b43ca",
+          "duration_s": 51,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-define-gemini-en-9d90d5de99e2.vtt",
+            "content_hash": "9d90d5de99e213de051304b77dfd7b6a20993cadf7591652889b8222d1676c4b"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-define-gemini-en-289daa76d962-poster.jpg",
+            "content_hash": "289daa76d96201be1de4da65ee93020bd39adb866dbcd7ef075f6f1d3eff315f"
+          }
+        }
+      },
+      "path": "/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg",
+      "content_hash": "790c964b21194eab42332e3c7158ad5e3c137716d78f4ca5ee0ec65c0992fa5d"
     }
-  ]
+  ],
+  "featured_asset_id": "problem-define-story"
 }

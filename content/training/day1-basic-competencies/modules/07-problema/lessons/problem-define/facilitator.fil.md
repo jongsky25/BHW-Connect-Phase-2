@@ -4,7 +4,7 @@ Obserbahan ang pagsulat at pagwawasto ng pahayag na may pangyayari/saklaw, pinag
 
 ## [time-materials] time-materials
 
-35 minutong ginagabayan: 5 pambungad + 7 demo + 12 pagtatangka/feedback/ulit + 7 pagtalakay + 4 paglalapat. Kabuuan: 35 + 50 + 45 + 50 = 180 minuto. Sampung triad para sa 30; bilingual fictional cards, role instructions, statement aid, papel at panulat. SELF_STUDY_TIMING_PENDING Dagdag ang opsyonal na kuwento/pag-ulit; hindi kasama sa 35 minutong group clock.
+35 minutong ginagabayan: 5 pambungad + 7 demo + 12 pagtatangka/feedback/ulit + 7 pagtalakay + 4 paglalapat. Kabuuan: 35 + 50 + 45 + 50 = 180 minuto. Sampung triad para sa 30; bilingual fictional cards, role instructions, statement aid, papel at panulat. Ginawang pagtataya ng sariling pag-aaral: 10–13 minuto, ayon sa mas mahabang salaysay. Aktuwal na anim na screen: English 319.63 segundo; Filipino 369.11 segundo. Maglaan ng 3–6 minuto para sa check, ensayo at pagninilay. Dagdag ang opsyonal na kuwento/pag-ulit; hindi kasama sa 35 minutong group clock.
 
 ## [prepare] prepare
 
@@ -28,7 +28,7 @@ Husga sa motibo ang “pasaway,” “tamad” o “ayaw gumaling.” Mungkahing
 
 ## [practice] practice
 
-12–24: sampung triad, tatlong cycle: A/B/C bilang BHW/residente/observer; saka B/C/A; saka C/A/B. Bawat apat na minuto: 0:00–1:00 unang sulat; 1:00–2:00 neutral na tanong at pagwawasto; 2:00–2:45 feedback sa pangyayari/saklaw, pinagmulan, kulang at walang paninisi; 2:45–3:45 ikalawang sulat; 3:45–4:00 palit. Facilitator: 3+3+4 triad ang sample, humigit-kumulang isang minuto bawat isa kasama ang paglipat; ang mismong nasaksihang gawa lamang ang husgahan. Hindi certification ang peer feedback. 24–31: “Ano ang nagbago? Sino ang nagwasto? Ano ang kulang pa?” 31–35: isang neutral na tanong at angkop na request para sa susunod na routine report, gamit ang fictional facts.
+12–24: sampung triad, tatlong cycle: A/B/C bilang BHW/residente/observer; saka B/C/A; saka C/A/B. Bawat apat na minuto: 0:00–1:00 unang sulat; 1:00–2:00 neutral na tanong at pagwawasto; 2:00–2:45 feedback sa pangyayari/saklaw, pinagmulan, kulang at walang paninisi; 2:45–3:45 ikalawang sulat; 3:45–4:00 palit. Facilitator: 3+3+4 triad ang sample, humigit-kumulang isang minuto bawat isa kasama ang paglipat; ang mismong nasaksihang gawa lamang ang husgahan. Spot check ito, hindi sampung garantisadong kumpletong competency observation. Kung hindi nasaksihan ang independent na binagong sulat o isang kailangan, markahang hindi naobserbahan ang bahaging iyon at magtakda ng buong obserbasyon sa susunod; huwag ibatay ang independence sa ulat ng kapareha. Hindi certification ang peer feedback. 24–31: “Ano ang nagbago? Sino ang nagwasto? Ano ang kulang pa?” 31–35: isang neutral na tanong at angkop na request para sa susunod na routine report, gamit ang fictional facts.
 
 ## [answer-key] answer-key
 
@@ -44,4 +44,4 @@ Balangkas: “Ayon kay ___, nangyari ang ___ sa ___; kailangan pang alamin ang _
 
 ## [sources-review] sources-review
 
-Ginawang draft adaptation, hindi sipi ng DOH. Suriin ang orihinal na Facilitator PDF19/printed12 at PDF29/printed22, Reference PDF19–21, deck PDF59–66; ang inspeksyong sipi lamang ang banggitin sa source audit. Magkaiba ang tatlong oras ng source topic at ginawang 35 minutong aralin. Suriin ang TESDA original bago magbanggit ng unit code; walang hindi natiyak na unit dito. Pending ang human listening, owner review at lokal na access/privacy/referral-policy SME review. Sundin ang awtorisadong pamamaraan; walang pangakong ganap na lihim, universal deletion rule o bagong access.
+Ginawang draft adaptation, hindi sipi ng DOH. Suriin ang orihinal na Facilitator PDF19/printed12 at PDF29/printed22, Reference PDF19–21, deck PDF59–66; ang inspeksyong sipi lamang ang banggitin sa source audit. Magkaiba ang tatlong oras ng source topic at ginawang 35 minutong aralin. Nasuri ang TESDA Revision01 (2019), unit400311212, PDF15/printed11, criteria1.1–1.3: tukuyin, linawin at idokumento ang routine problem. Hindi nito sinasabing sapat ang isang aralin para sa buong unit o walang mas bagong edisyon. Pending ang human listening, owner review at lokal na access/privacy/referral-policy SME review. Sundin ang awtorisadong pamamaraan; walang pangakong ganap na lihim, universal deletion rule o bagong access.

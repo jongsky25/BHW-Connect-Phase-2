@@ -27,7 +27,11 @@ describe('Carole lesson 1.7.1 scoped draft',()=>{
   const manifest=j(base+'narration.json');for(const[k,v]of Object.entries(baseline.narration.lessons))if(k!=='problem-define')expect(manifest.lessons[k],k).toEqual(v);
   const reads=Object.fromEntries(['fil','en'].map(lang=>[lang,parseReferenceRead(baseline.target_files[leaf+`read.${lang}.md`])]));const sections=reads.fil.map((s,i)=>({id:s.id,heading_fil:s.heading,heading_en:reads.en[i].heading,body_fil:s.body,body_en:reads.en[i].body,takeaway_fil:old.sections[i].takeaway_fil,takeaway_en:old.sections[i].takeaway_en}));for(const lang of ['fil','en']){const selected=narrationForLesson(manifest,'problem-define',lang,sections);for(const s of old.sections)expect(selected[s.id].src).toBe(baseline.narration.lessons['problem-define'].sections[s.id][lang].src);}
  });
+ it('limits the shared module adaptation to Nestor → Carole in summaries',()=>{
+  const p=base+'modules/07-problema/module.json',prior=JSON.parse(beforeProposed171(p)),current=j(p);
+  for(const [key,value]of Object.entries(prior))expect(current[key],key).toEqual(key.startsWith('summary')&&typeof value==='string'?value.replaceAll('Nestor','Carole'):value);
+ });
  it('appends exactly the target registry pair without changing the preceding registry bytes',()=>{
-  const now=fs.readFileSync('remotion/src/Root.tsx','utf8'),prior=beforeProposed171('remotion/src/Root.tsx').toString();expect(now.replace(/^import \{ProblemDefineStory[^\n]+\n/,'').replace(/    \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`problem-define-[\s\S]*?      \)\)\}\n  /,'')).toBe(prior);expect(now).toContain('ProblemDefineStoryFil');expect(now).toContain('ProblemDefineStoryEn');
+  const now=fs.readFileSync('remotion/src/Root.tsx','utf8'),prior=beforeProposed171('remotion/src/Root.tsx').toString();expect(now.replace(/^import \{ProblemDefineStory[^\n]+\n/,'').replace(/    \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`problem-define-[\s\S]*?      \)\)\}\n/,'')).toBe(prior);expect(now).toContain('ProblemDefineStoryFil');expect(now).toContain('ProblemDefineStoryEn');
  });
 });

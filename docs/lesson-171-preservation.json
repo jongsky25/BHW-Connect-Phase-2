@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "protected_files": 5953,
+  "protected_files": 5993,
   "manifest_and_original_choices_preserved": true,
   "original_anchor_order_preserved": true,
   "sibling_narration_and_history_preserved": true,
@@ -13,8 +13,14 @@
     "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/read.fil.md",
     "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/slides.json",
     "content/training/day1-basic-competencies/modules/07-problema/module.json",
+    "content/training/day1-basic-competencies/narration.json",
     "remotion/src/Root.tsx",
-    "scripts/lib/reference-narration.mjs"
+    "scripts/lib/reference-narration.mjs",
+    "src/components/elearning/reference-lessons.tsx",
+    ".github/workflows/ci.yml",
+    ".github/workflows/remotion.yml",
+    "scripts/lib/lesson-165-integration.mjs",
+    "scripts/tests/lesson-165-integration.test.mjs"
   ],
   "human_or_owner_approval": false
 }

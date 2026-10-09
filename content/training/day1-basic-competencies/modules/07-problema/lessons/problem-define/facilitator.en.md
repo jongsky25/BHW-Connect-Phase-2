@@ -4,7 +4,7 @@ Observe a learner write and revise a problem statement with a specific event/sco
 
 ## [time-materials] time-materials
 
-35 guided minutes: 5 opening + 7 demonstration + 12 attempts/feedback/retry + 7 debrief + 4 transfer. Module allocation remains 35 + 50 + 45 + 50 = 180 minutes. Ten triads for 30 learners; each has bilingual fictional cards, role instructions, statement aid, paper and pen. SELF_STUDY_TIMING_PENDING Optional story/replay is additional, never part of the 35-minute group clock.
+35 guided minutes: 5 opening + 7 demonstration + 12 attempts/feedback/retry + 7 debrief + 4 transfer. Module allocation remains 35 + 50 + 45 + 50 = 180 minutes. Ten triads for 30 learners; each has bilingual fictional cards, role instructions, statement aid, paper and pen. Authored independent estimate: 10–13 minutes, using the longer language track. Actual six-screen narration: English 319.63 seconds; Filipino 369.11 seconds. Allow 3–6 minutes for the check, rehearsal and reflection. Optional story/replay is additional, never part of the 35-minute group clock.
 
 ## [prepare] prepare
 
@@ -28,7 +28,7 @@ Event: three households report nonattendance in the classroom case. Source: thei
 
 ## [practice] practice
 
-12–24 min: ten triads run three cycles: A/B/C as BHW/resident/observer, then B/C/A, then C/A/B. Each four-minute cycle: 0:00–1:00 first written attempt; 1:00–2:00 neutral question and resident correction; 2:00–2:45 observer feedback against event/scope, source, gap and no blame; 2:45–3:45 second written attempt; 3:45–4:00 rotate. The facilitator samples 3+3+4 triads, roughly one minute each including movement; assess only the product/action actually witnessed. Observer feedback supports practice and does not certify. Debrief 24–31: “What changed? Whose correction was it? What remains unknown?” Transfer 31–35: write one neutral question and one appropriate verification request for the next routine report, using fictional facts only.
+12–24 min: ten triads run three cycles: A/B/C as BHW/resident/observer, then B/C/A, then C/A/B. Each four-minute cycle: 0:00–1:00 first written attempt; 1:00–2:00 neutral question and resident correction; 2:00–2:45 observer feedback against event/scope, source, gap and no blame; 2:45–3:45 second written attempt; 3:45–4:00 rotate. The facilitator samples 3+3+4 triads, roughly one minute each including movement; assess only the product/action actually witnessed. These are spot checks, not ten guaranteed complete competency observations. If the independent revised product or any required element was not witnessed, mark that element not observed and arrange a later full observation; do not infer independence from a peer’s report. Observer feedback supports practice and does not certify. Debrief 24–31: “What changed? Whose correction was it? What remains unknown?” Transfer 31–35: write one neutral question and one appropriate verification request for the next routine report, using fictional facts only.
 
 ## [answer-key] answer-key
 
@@ -44,4 +44,4 @@ Scaffold: “According to ___, ___ happened in ___; ___ still needs checking.”
 
 ## [sources-review] sources-review
 
-Draft authoring adaptation, not a DOH quotation. Inspect original Facilitator PDF19 (printed12 competency table) and PDF29 (printed22 topic), Reference PDF19–21, and deck PDF59–66; cite only inspected passages in the accompanying source audit. The three-hour source topic and this authored 35-minute lesson allocation are distinct. TESDA mapping must be confirmed from its original regulation before claiming a unit code; no unverified unit is asserted here. Human listening, owner content review and local access/privacy/referral-policy SME signoff are pending. Follow existing authorized local procedures; no absolute secrecy, universal deletion rule or newly granted record access.
+Draft authoring adaptation, not a DOH quotation. Inspect original Facilitator PDF19 (printed12 competency table) and PDF29 (printed22 topic), Reference PDF19–21, and deck PDF59–66; cite only inspected passages in the accompanying source audit. The three-hour source topic and this authored 35-minute lesson allocation are distinct. Official available TESDA Revision01 (2019), unit400311212, PDF15/printed11, criteria1.1–1.3 was inspected: identify routine problems, define the problems to investigate, and document current conditions. No claim that this single lesson fulfills the whole unit or that no later edition exists. Human listening, owner content review and local access/privacy/referral-policy SME signoff are pending. Follow existing authorized local procedures; no absolute secrecy, universal deletion rule or newly granted record access.

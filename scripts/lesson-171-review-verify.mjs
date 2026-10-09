@@ -4,9 +4,11 @@ const j=p=>JSON.parse(fs.readFileSync(p)),sha=p=>createHash('sha256').update(fs.
 execFileSync(process.execPath,['scripts/lesson-171-media-verify.mjs'],{stdio:'inherit'});
 const head=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
 const out='.preview/lesson171-deliverables',browserPath=out+'/lesson-1.7.1-browser-verification.json',browser=j(browserPath),full=j('docs/lesson-171-audio-review.json'),focus=j('docs/lesson-171-audio-focus.json');
-if(browser.source_commit!==head||browser.status!=='passed'||browser.errors.length||browser.actual_case_count!==browser.cases.length||browser.actual_case_count<80)throw Error('Complete complete-case browser verification required');
+if(browser.source_commit!==head||browser.status!=='passed'||browser.errors.length||browser.actual_case_count!==browser.cases.length||browser.actual_case_count<80)throw Error('Complete browser coverage required');
 if(full.pending_read_tracks.length||full.records.length!==14||full.records.some(r=>!r.model_response||r.model_response.startsWith('Review unavailable')))throw Error('Full actual-audio model reports incomplete');
 if(focus.decode_only||focus.prompt_revision!=='carole-definition-v1'||focus.records.length!==14||focus.records.some(r=>r.excerpts.length!==4))throw Error('Versioned 56-excerpt focused review required');
+const notes=j('docs/lesson-171-audio-review-notes.json');
+if(notes.full_reviews!==14||notes.focused_reviews!==56||notes.human_listening!=='pending'||notes.owner_package_review!=='pending'||notes.local_policy_SME_review!=='pending')throw Error('Accurate pending human/owner/SME review required');
 const manifest=j('content/training/day1-basic-competencies/narration.json');
 const story=j('content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json').assets.find(a=>a.id==='problem-define-story');
 for(const record of full.records){
@@ -30,6 +32,6 @@ const rawReceipt={requests:raw.length,failed_or_superseded_requests:raw.filter(r
 fs.writeFileSync(out+'/lesson-171-raw-provenance.json',JSON.stringify(rawReceipt,null,2)+'\n');
 const ciPath=out+'/lesson-171-final-ci.json';
 if(fs.existsSync(ciPath)&&(j(ciPath).head_sha!==head||j(ciPath).status!=='passed'))throw Error('CI receipt does not match exact head');
-const report={status:'passed',source_commit:head,method:'Technical package completeness and exact media-byte evidence. Model assessment is supporting evidence, not human listening or approval.',browser:{file:browserPath,sha256:sha(browserPath),cases:browser.actual_case_count},actual_read_tracks:12,shipped_AAC_stories:2,full_model_reports:14,focused_WAV_reviews:56,earlier_media_and_selection:'verified by scoped media guard',normal_CI:fs.existsSync(ciPath)?j(ciPath):'Pending exact-head CI receipt',human_listening:'pending',owner_package_review:'pending',local_policy_SME_review:'pending'};
+const report={status:'passed',source_commit:head,method:'Technical package completeness and exact media-byte evidence. Model assessment is supporting evidence, not human listening or approval.',browser:{file:browserPath,sha256:sha(browserPath),cases:browser.actual_case_count},actual_read_tracks:12,shipped_AAC_stories:2,full_model_reports:14,focused_WAV_reviews:56,earlier_media_and_selection:'verified by scoped media guard',normal_CI:fs.existsSync(ciPath)?j(ciPath):'Pending exact-head CI receipt',audio_concern_reconciliation:{file:'docs/lesson-171-audio-review-notes.json',sha256:sha('docs/lesson-171-audio-review-notes.json'),unresolved_concerns:notes.unresolved_concerns},human_listening:'pending',owner_package_review:'pending',local_policy_SME_review:'pending'};
 fs.writeFileSync(out+'/lesson-1.7.1-verification.json',JSON.stringify(report,null,2)+'\n');
 console.log('Verified complete technical review: actual browser cases, 14 full reports, 56 exact WAV excerpts.');
