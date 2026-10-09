@@ -14,11 +14,11 @@ await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const baseUrl='http://127.0.0.1:'+server.address().port;
 const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH,args:['--no-sandbox']});
 const report={date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),method:'Actual ReferenceLessons/ReferenceReadSection production components, local auth/navigation/save fixtures. Browser offline after loopback load; no authenticated production proof.',scope:contentOnly?'text/check/resume only':'text/check/resume and actual narration',artwork_story:'Six action illustrations present; story playback separately checked',cases:[],screenshots:[],errors:[]};
+const trackErrors=page=>{page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});};
 const save=()=>fs.writeFileSync(dir+'/lesson-184-browser-verification.json',JSON.stringify(report,null,2)+'\n');
 try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
-  const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();
-  page.on('pageerror',e=>report.errors.push(String(e)));
+  const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();trackErrors(page);
   await page.goto(`${baseUrl}/?lang=${lang}&mode=${mode}`);
   await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
   for(const [index,section]of lesson.sections.entries()){
@@ -54,11 +54,11 @@ try{
  }
  for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const id of ['exposure','return-demo','near-miss','practice','check']){
   const context=await browser.newContext(),page=await context.newPage(),anchor=(mode==='slides'?'slide-':'')+id;
-  await page.goto(`${baseUrl}/?lang=${lang}&mode=${mode}&anchor=${anchor}`);await page.locator(`article[data-scene="${anchor}"]`).waitFor();report.cases.push({language:lang,mode,anchor,old_resume:true});await context.close();
+  trackErrors(page);await page.goto(`${baseUrl}/?lang=${lang}&mode=${mode}&anchor=${anchor}`);await page.locator(`article[data-scene="${anchor}"]`).waitFor();report.cases.push({language:lang,mode,anchor,old_resume:true});await context.close();
  }
 
  for(const lang of ['fil','en'])for(const width of [1280,390]){
-  const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();await page.goto(`${baseUrl}/?lang=${lang}`);
+  const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();trackErrors(page);await page.goto(`${baseUrl}/?lang=${lang}`);
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.currentTime>0;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));await context.setOffline(true);
   await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});await page.locator('video').evaluate(v=>window.__previousVideo=v);
@@ -70,7 +70,7 @@ try{
   report.cases.push({language:lang,width,unmuted_story:true,six_cues:true,ending_played:true,offline:true,fullscreen_story:true,single_player:true,read_to_story_pauses:true,no_horizontal_overflow:true,duration:cues.duration});await context.close();
  }
  for(const lang of ['fil','en'])for(const width of [1280,390]){
-  const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();await page.goto(`${baseUrl}/?lang=${lang}`);
+  const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();trackErrors(page);await page.goto(`${baseUrl}/?lang=${lang}`);
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
   await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
