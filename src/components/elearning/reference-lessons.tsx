@@ -588,7 +588,7 @@ export function ReferenceLessons(props: Props) {
             {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || handoffRevision || causesRevision || definitionRevision || recordingRevision || actionPlanRevision || safetyPrepareRevision || lesson.lesson_key === "communication-explain") && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
-            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || actionPlanRevision || safetyPrepareRevision || prioritizationRevision || safetyPrepareRevision) && !storyLayout && figures}
+            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || actionPlanRevision || safetyPrepareRevision || prioritizationRevision) && !storyLayout && figures}
             {prioritizationTable}
             {practice}
             {revealSummary && <div
@@ -786,7 +786,10 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {actionPlanRevision ? (actionPlanMinutes === null ? ui(
+              {safetyPrepareRevision ? ui(
+                "Tinatayang 14–17 minuto para sa sariling pag-aaral: mas mahabang aktuwal na salaysay at 3–6 minutong check at pagninilay. Dagdag ang opsyonal na kuwento at replay; hiwalay ang 60-minutong guided practice.",
+                "Estimated 14–17 minutes for independent study: the longer actual narration and 3–6 minutes for the check and reflection. Optional story and replay are additional; the 60-minute guided practice is separate.",
+              ) : actionPlanRevision ? (actionPlanMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 50-minutong guided practice.",
                 "Allow time for reading and practice; the 50-minute guided practice is separate.",
               ) : ui(

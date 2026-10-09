@@ -4,6 +4,14 @@ import zipfile,json,hashlib,subprocess,re
 root=Path(__file__).resolve().parent.parent
 out=root/'.preview/lesson183-deliverables';out.mkdir(parents=True,exist_ok=True)
 sha=lambda b:hashlib.sha256(b).hexdigest()
+head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()
+browser=json.loads((out/'lesson-1.8.3-browser-verification.json').read_text())
+media=json.loads((out/'lesson-183-media-verification.json').read_text())
+ci=json.loads((out/'lesson-183-final-ci.json').read_text())
+assert browser['status']=='passed' and browser['source_commit']==head and browser['actual_case_count']==84 and browser['actual_screenshot_count']==56 and not browser['read_only']
+assert media['status']=='passed' and media['source_commit']==head and media['full_reviews']==14 and media['focused_reviews']==56
+assert ci['head_sha']==head and ci['disposable_supabase_e2e']=='passed' and len(ci['rendered_compositions'])==len(ci['registry'])
+assert sorted(ci['rendered_compositions'])==sorted(ci['registry']) and ci['runs'][1]['conclusion']=='success'
 entries={}
 def add(p,name):
  assert name not in entries and not PurePosixPath(name).is_absolute() and '..' not in PurePosixPath(name).parts
@@ -16,6 +24,7 @@ for pattern in ['docs/lesson-183-*','docs/lesson-18-apple-reference.json','conte
 for folder in ['lesson183-source','lesson183-raw','lesson183-audio']:
  for p in (root/'.preview'/folder).glob('*'):
   if p.is_file() and not p.name.endswith('-original.pdf'):add(p,'evidence/'+folder+'/'+p.name)
+add(root/'lesson-183-published-snapshot.json','evidence/lesson-183-published-snapshot.json')
 inline=json.loads((out/'lesson-183-inline-media.json').read_text())
 import base64
 html=(out/'lesson-1.8.3-apple-review.html').read_text()

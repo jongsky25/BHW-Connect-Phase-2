@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/';
-const shared=new Set(['content/training/day1-basic-competencies/narration.json','remotion/src/Root.tsx','scripts/lib/lesson-174-proposal.mjs','src/components/elearning/reference-lessons.tsx','scripts/tests/lesson-174-release.test.mjs']);
+const shared=new Set(['content/training/day1-basic-competencies/narration.json','remotion/src/Root.tsx','scripts/lib/lesson-174-proposal.mjs','src/components/elearning/reference-lessons.tsx','scripts/tests/lesson-174-release.test.mjs','.github/workflows/remotion.yml']);
 const receipt=JSON.parse(fs.readFileSync('docs/lesson-183-proposal-receipt.json'));
 const predecessors=new Map();
 export function beforeProposed183(p,actual=fs.readFileSync(p)){

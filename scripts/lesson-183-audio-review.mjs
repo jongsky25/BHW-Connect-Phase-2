@@ -19,7 +19,7 @@ const storyOnly=process.argv.includes('--story-only');
 if(storyOnly)plan=[];else {assert.equal(plan.length,12);assert(plan.every(i=>i.action==='skip'),'All current Read tracks required before review');}
 const lesson=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json'));
 const story=lesson.assets.find(a=>a.id==='safety-prepare-story');
-if(story)for(const language of ['fil','en']){
+if(storyOnly&&story)for(const language of ['fil','en']){
  const source=root+'/public'+story.videos[language].path,wav=dir+'/shipped-aac-'+language+'.wav';
  execFileSync('ffmpeg',['-v','error','-i',source,'-vn','-ac','1','-ar','24000','-c:a','pcm_s16le','-y',wav]);
  const timing=JSON.parse(fs.readFileSync(root+`/remotion/public/safety-prepare/narration-${language}.json`));

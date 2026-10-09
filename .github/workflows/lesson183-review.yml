@@ -1,0 +1,58 @@
+name: Lesson 1.8.3 complete draft review package
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson183-review.yml'
+      - 'docs/lesson-183-story-audio-review.json'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  review:
+    if: github.head_ref == 'codex/lesson-183-apple-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - run: npx playwright install --with-deps chromium
+      - run: python3 -m pip install PyMuPDF==1.26.5
+      - name: Restore hash-pinned original and failed-attempt evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/lesson-183-restore-evidence.py
+      - run: python3 scripts/lesson-183-source-evidence.py
+      - run: node scripts/lesson-183-audio-notes.mjs
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - run: node scripts/lesson-183-media-verify.mjs
+      - name: Use installed Playwright browser
+        run: echo "LESSON_REVIEW_BROWSER=$(node --input-type=module -e \"import {chromium} from '@playwright/test';console.log(chromium.executablePath())\")" >> "$GITHUB_ENV"
+      - run: node scripts/lesson-183-print-kit.mjs
+      - run: python3 scripts/lesson-183-print-verify.py
+      - run: node scripts/lesson-183-preservation.mjs
+      - run: node scripts/lesson-183-review-build.mjs
+      - run: node scripts/lesson-183-browser-verify.mjs
+      - name: Verify exact-head disposable E2E and every actual registry render
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-183-wait-ci.mjs
+      - run: python3 scripts/lesson-183-package.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson183-complete-draft-review
+          path: .preview/lesson183-deliverables/
+          include-hidden-files: true
+          retention-days: 30

@@ -1,9 +1,9 @@
 {
   "status": "review evidence retained; human listening pending",
   "method": "Parse actual full/focused responses without replacing raw text or inventing signoff",
-  "recordings": 12,
-  "full_reviews": 12,
-  "focused_reviews": 48,
+  "recordings": 14,
+  "full_reviews": 14,
+  "focused_reviews": 56,
   "human_listening": "pending",
   "clinical_review": "pending",
   "owner_approval": "pending",
@@ -536,6 +536,101 @@
           "sha256": "2fc6e33e3ba8f35e63b2377a0da2c25b25548cc0b86778d0cbe67005a2a274c4",
           "start_ms": 32220,
           "end_ms": 40300,
+          "name_present": false
+        }
+      ],
+      "concerns": [],
+      "structured_reviews": 5,
+      "disposition": "No concerns reported by these model reviews; human listening still pending"
+    },
+    {
+      "id": "story-fil",
+      "source_review": "docs/lesson-183-story-audio-review.json",
+      "full_sha256": "399ffe4072fedc7592eba4a30909f7b322754ec4d1c2ee9353b92cbf6dfb835b",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "eaee98d161edd3a3a955ab518c2a8e5f433c2f90033334924bccc6cd0f41c9fd",
+          "start_ms": 0,
+          "end_ms": 9800,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "07079d5cc9eb82f3d9a728b47ec4d0936ad5edd772e287142429bb5f1d8afecd",
+          "start_ms": 21600,
+          "end_ms": 32560,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "997fcee3ad609ef953cf899804e7f8bc6e8f3a06b20ef1a89376fbdb416791b4",
+          "start_ms": 10100,
+          "end_ms": 21300,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "88a0932d83c77aa79d81f53df3b638c2480e884114039365cfb21619adb78676",
+          "start_ms": 54660,
+          "end_ms": 70180,
+          "name_present": false
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "full",
+          "field": "delivery_concerns",
+          "value": [
+            {
+              "timestamp": "00:09 - 00:10",
+              "issue": "Speaker and timbre transition from male narrator to female narrator."
+            },
+            {
+              "timestamp": "00:32 - 00:33",
+              "issue": "Speaker and timbre transition from female narrator back to male narrator."
+            },
+            {
+              "timestamp": "00:42 - 00:43",
+              "issue": "Speaker and timbre transition from male narrator to female narrator."
+            }
+          ]
+        }
+      ],
+      "structured_reviews": 5,
+      "disposition": "Retain full/focused disagreements for human listening; no defect-free or stable-voice approval claimed"
+    },
+    {
+      "id": "story-en",
+      "source_review": "docs/lesson-183-story-audio-review.json",
+      "full_sha256": "b4315930944224e47b6596bd3554e708725649ff5ab52f32e48e542cd48c33ce",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "b57833b1f64e8e0480b8f2d2229ba85f32a13d07f47e7d1c527fc086666c54bd",
+          "start_ms": 0,
+          "end_ms": 8680,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "84da22043dcb0d5e088bebb9f2d4d76a36e5179ea31be3eb756fd6dc9e4eca23",
+          "start_ms": 19600,
+          "end_ms": 29720,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "b57833b1f64e8e0480b8f2d2229ba85f32a13d07f47e7d1c527fc086666c54bd",
+          "start_ms": 0,
+          "end_ms": 8680,
+          "name_present": true
+        },
+        {
+          "kind": "ending",
+          "sha256": "faeff4ea09a03f24b8ccc2c6c3730e7c20c421aaa23cf97baf9e7f1dc17badfb",
+          "start_ms": 50180,
+          "end_ms": 63980,
           "name_present": false
         }
       ],

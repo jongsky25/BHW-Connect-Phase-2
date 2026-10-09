@@ -1,0 +1,143 @@
+{
+  "prompt_revision": "apple-readiness-v1",
+  "prompt_sha256": "c83e4730a0140628131410253b976ac226cc8d000854efd7de27ca08f739ac7c",
+  "model": "gemini-3.8-flash",
+  "source_commit": "0966e8e6625c31349dc5b26bfe04835cd4147664",
+  "method": "Exact Read MP3 and four measured zone-boundary PCM WAV excerpts per recording. Model-mediated; not human listening or clinical/owner approval.",
+  "story_aac_review": "actual decoded shipped AAC",
+  "records": [
+    {
+      "id": "story-fil",
+      "language": "fil",
+      "encoded_sha256": "399ffe4072fedc7592eba4a30909f7b322754ec4d1c2ee9353b92cbf6dfb835b",
+      "source_video": "/training/bhw-1-8/safety-prepare-gemini-fil-41145f0ed082.mp4",
+      "source_video_sha256": "41145f0ed0829b980cbad3f4d2cd27c0b9d116965a1a51a05367375ce886ee59",
+      "full": {
+        "file": ".preview/lesson183-audio/shipped-aac-fil.wav",
+        "sha256": "399ffe4072fedc7592eba4a30909f7b322754ec4d1c2ee9353b92cbf6dfb835b",
+        "bytes": 3426418,
+        "expected": "Si Apple ay naghahanda sa mock station. Walang sabon at may madulas na pasukan. Ihinto ang apektadong gawain; dummy equipment lamang. May banta sa kathang-isip na Tulay A. Hindi pa tiyak ang ibang daan. Kumpirmahin ang ruta, tubig, lilim, pahinga, contact at oras ng balik. Mainit, may pila at kulang ang proteksyon. Apple: “Alin ang pause, alin ang ligtas na pagbabago, at alin ang kailangan ng inyong pasya?” Sa follow-up card, nasuri ang sabon at tuyong pasukan. Hindi pa tiyak ang visit route at contact. Hindi ready ang hindi pa beripikado. Punan ang limang field. Ibrief ang pause, alternatibo at hindi pa alam. Humingi ng tiyak na feedback, iwasto at ulitin. Practice ang peer feedback. Sa role-play, napagkasunduan ang mock briefing muna; deferred ang unsafe visit. Nakikita ang hindi pa tiyak na ruta, contact at proteksyon. Beripikahin bago magsimula. Hindi ipinapalagay na nawala ang banta.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Si Apple ay naghahanda sa mock station. Walang sabon at may madulas na pasukan. Ihinto ang apektadong gawain. Dummy equipment lamang. May banta sa kathang-isip na Tulay A. Hindi pa tiyak ang ibang daan. Kumpirmahin ang ruta, tubig, lilim, pahinga, contact, at oras ng balik. Mainit, may pila, at kulang ang proteksyon. Apple, alin ang pause, alin ang ligtas na pagbabago, at alin ang kailangan ng inyong pasya? Sa follow-up card, nasuri ang sabon at tuyong pasukan. Hindi pa tiyak ang visit route at contact. Hindi ready ang hindi pa beripikado. Punan ang limang field. I-brief ang pause, alternatibo, at hindi pa alam. Humingi ng tiyak na feedback. Iwasto at ulitin. Practice ang peer feedback. Sa role-play, napagkasunduan ang mock briefing muna. Deferred ang unsafe visit. Nakikita ang hindi pa tiyak na ruta, contact, at proteksyon. Beripikahin bago magsimula. Hindi ipinapalagay na nawala ang banta.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [\n    {\n      \"timestamp\": \"00:09 - 00:10\",\n      \"issue\": \"Speaker and timbre transition from male narrator to female narrator.\"\n    },\n    {\n      \"timestamp\": \"00:32 - 00:33\",\n      \"issue\": \"Speaker and timbre transition from female narrator back to male narrator.\"\n    },\n    {\n      \"timestamp\": \"00:42 - 00:43\",\n      \"issue\": \"Speaker and timbre transition from male narrator to female narrator.\"\n    }\n  ],\n  \"clipped_ending\": false,\n  \"uncertainty\": null\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 0,
+          "end_ms": 9800,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/story-fil-name.wav",
+          "sha256": "eaee98d161edd3a3a955ab518c2a8e5f433c2f90033334924bccc6cd0f41c9fd",
+          "bytes": 470514,
+          "expected": "Si Apple ay naghahanda sa mock station. Walang sabon at may madulas na pasukan. Ihinto ang apektadong gawain; dummy equipment lamang.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Si Apple ay naghahanda sa mock station, walang sabon at may madulas na pasukan. Ihinto ang apektadong gawain. Dummy equipment lamang.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 21600,
+          "end_ms": 32560,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/story-fil-meaning.wav",
+          "sha256": "07079d5cc9eb82f3d9a728b47ec4d0936ad5edd772e287142429bb5f1d8afecd",
+          "bytes": 526194,
+          "expected": "Mainit, may pila at kulang ang proteksyon. Apple: “Alin ang pause, alin ang ligtas na pagbabago, at alin ang kailangan ng inyong pasya?”",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Mainit, may pila, at kulang ang proteksyon. Apple, alin ang pause, alin ang ligtas na pagbabago, at alin ang kailangan ng inyong pasya?\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 10100,
+          "end_ms": 21300,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/story-fil-qualification.wav",
+          "sha256": "997fcee3ad609ef953cf899804e7f8bc6e8f3a06b20ef1a89376fbdb416791b4",
+          "bytes": 537714,
+          "expected": "May banta sa kathang-isip na Tulay A. Hindi pa tiyak ang ibang daan. Kumpirmahin ang ruta, tubig, lilim, pahinga, contact at oras ng balik.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"May banta sa kathang-isip na tulay A. Hindi pa tiyak ang ibang daan. Kumpirmahin ang ruta, tubig, lilim, pahinga, contact, at oras ng balik.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 54660,
+          "end_ms": 70180,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/story-fil-ending.wav",
+          "sha256": "88a0932d83c77aa79d81f53df3b638c2480e884114039365cfb21619adb78676",
+          "bytes": 745074,
+          "expected": "Sa role-play, napagkasunduan ang mock briefing muna; deferred ang unsafe visit. Nakikita ang hindi pa tiyak na ruta, contact at proteksyon. Beripikahin bago magsimula. Hindi ipinapalagay na nawala ang banta.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Sa role-play, napagkasunduan ang mock briefing muna. Deferred ang unsafe visit. Nakikita ang hindi pa tiyak na ruta, kontak, at proteksyon. Beripikahin bago magsimula. Hindi ipinapalagay na nawala ang banta.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "story-en",
+      "language": "en",
+      "encoded_sha256": "b4315930944224e47b6596bd3554e708725649ff5ab52f32e48e542cd48c33ce",
+      "source_video": "/training/bhw-1-8/safety-prepare-gemini-en-0cabcedd0467.mp4",
+      "source_video_sha256": "0cabcedd0467c5ed973ca31ec7e54c2c12b361cee989e4927aa8f67c8db01ea8",
+      "full": {
+        "file": ".preview/lesson183-audio/shipped-aac-en.wav",
+        "sha256": "b4315930944224e47b6596bd3554e708725649ff5ab52f32e48e542cd48c33ce",
+        "bytes": 3130482,
+        "expected": "Apple prepares a mock station. Soap is missing and the entrance is slippery. Pause affected work; use dummy equipment only. A threat is reported at fictional Bridge A. Another route is unconfirmed. Check route, water, shade, rest, contact and return time. Heat, queues and missing protection combine. Apple asks: “What pauses, what can safely change, and what needs your decision?” The follow-up card confirms soap and a dry entrance. Visit route and contact remain unknown. Unverified conditions are not ready. Complete five fields. Brief the pause, alternative and unknowns. Get specific feedback, correct and retry. Peer feedback is practice. In the role-play, a mock briefing is agreed; the unsafe visit is deferred. Route, contact and protection remain visibly unresolved. Verify before starting. Do not assume the threat vanished.",
+        "status": "reviewed",
+        "response": "```json\n{\n  \"transcript\": \"Apple prepares a mock station. Soap is missing, and the entrance is slippery. Pause affected work. Use dummy equipment only. A threat is reported at fictional Bridge A. Another route is unconfirmed. Check route, water, shade, rest, contact, and return time. Heat, queues, and missing protection combine. Apple asks: what pauses, what can safely change, and what needs your decision? The follow-up card confirms soap and a dry entrance. Visit route and contact remain unknown. Unverified conditions are not ready. Complete five fields. Briefly pause alternative and unknowns. Get specific feedback, correct, and retry. Peer feedback is practice. In the role-play, a mock briefing is agreed. The unsafe visit is deferred. Route, contact, and protection remain visibly unresolved. Verify before starting. Do not assume the threat vanished.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+      },
+      "excerpts": [
+        {
+          "kind": "name",
+          "start_ms": 0,
+          "end_ms": 8680,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/story-en-name.wav",
+          "sha256": "b57833b1f64e8e0480b8f2d2229ba85f32a13d07f47e7d1c527fc086666c54bd",
+          "bytes": 416754,
+          "expected": "Apple prepares a mock station. Soap is missing and the entrance is slippery. Pause affected work; use dummy equipment only.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple prepares a mock station. Soap is missing, and the entrance is slippery. Pause affected work. Use dummy equipment only.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "meaning",
+          "start_ms": 19600,
+          "end_ms": 29720,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/story-en-meaning.wav",
+          "sha256": "84da22043dcb0d5e088bebb9f2d4d76a36e5179ea31be3eb756fd6dc9e4eca23",
+          "bytes": 485874,
+          "expected": "Heat, queues and missing protection combine. Apple asks: “What pauses, what can safely change, and what needs your decision?”",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Heat, cues, and missing protection combine. Apple asks, what pauses, what can safely change, and what needs your decision?\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "qualification",
+          "start_ms": 0,
+          "end_ms": 8680,
+          "name_present": true,
+          "file": ".preview/lesson183-audio/story-en-qualification.wav",
+          "sha256": "b57833b1f64e8e0480b8f2d2229ba85f32a13d07f47e7d1c527fc086666c54bd",
+          "bytes": 416754,
+          "expected": "Apple prepares a mock station. Soap is missing and the entrance is slippery. Pause affected work; use dummy equipment only.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"Apple prepares a mock station. Soap is missing, and the entrance is slippery. Pause affected work. Use dummy equipment only.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": []\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start_ms": 50180,
+          "end_ms": 63980,
+          "name_present": false,
+          "file": ".preview/lesson183-audio/story-en-ending.wav",
+          "sha256": "faeff4ea09a03f24b8ccc2c6c3730e7c20c421aaa23cf97baf9e7f1dc17badfb",
+          "bytes": 662514,
+          "expected": "In the role-play, a mock briefing is agreed; the unsafe visit is deferred. Route, contact and protection remain visibly unresolved. Verify before starting. Do not assume the threat vanished.",
+          "status": "reviewed",
+          "response": "```json\n{\n  \"transcript\": \"In the role play, a mock briefing is agreed, the unsafe visit is deferred. Route, contact, and protection remain visibly unresolved. Verify before starting. Do not assume the threat vanished.\",\n  \"speech_present\": true,\n  \"pronunciation_concerns\": [],\n  \"meaning_concerns\": [],\n  \"delivery_concerns\": [],\n  \"clipped_ending\": false,\n  \"uncertainty\": \"none\"\n}\n```"
+        }
+      ]
+    }
+  ],
+  "full_count": 2,
+  "focused_count": 8,
+  "status": "available_reviews_recorded"
+}
