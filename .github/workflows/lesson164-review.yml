@@ -1,0 +1,95 @@
+name: Lesson 1.6.4 frozen draft review
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson164-review.yml'
+      - 'scripts/lesson-164-review-*.mjs'
+      - 'scripts/lesson-164-package.mjs'
+      - 'docs/lesson-164-evidence-origins.json'
+      - 'docs/lesson-164-proposal-receipt.json'
+      - 'content/training/day1-basic-competencies/narration.json'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson164-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  frozen-review:
+    if: github.head_ref == 'codex/lesson-164-enhancement-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Retain exact generation and review evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-164-retain-evidence.mjs
+      - name: Bounded read-only snapshot after main reconciliation
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          mkdir -p .preview/lesson164-initial-media
+          cp lesson-164-published-snapshot.json .preview/lesson164-initial-media/published-snapshot.json
+          node scripts/lesson-164-published-snapshot.mjs
+      - name: Verify committed media and protected history
+        run: node scripts/lesson-164-media-verify.mjs
+      - name: Verify primary sources and excerpt hashes
+        run: |
+          python3 -m pip install PyMuPDF==1.26.6
+          python3 scripts/lesson-164-source-evidence.py
+      - name: Build actual-component offline review
+        run: node scripts/lesson-164-review-build.mjs
+      - name: Verify both languages, modes, desktop/mobile and playback
+        run: node scripts/lesson-164-browser-verify.mjs
+      - name: Print and verify four A4 pages per language
+        run: |
+          node scripts/lesson-164-print-kit.mjs
+          python3 - <<'PY'
+          import pathlib,fitz
+          for p in pathlib.Path('.preview/lesson164-deliverables').glob('*.pdf'):
+              d=fitz.open(p)
+              assert len(d)==4 and all(page.get_text().strip() for page in d),p
+          PY
+      - name: Wait for full normal CI and all 82 compositions at frozen head
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-164-wait-ci.mjs
+      - name: Verify evidence and package integrity
+        run: |
+          node scripts/lesson-164-review-verify.mjs
+          node scripts/lesson-164-package.mjs
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: lesson164-review-package
+          path: |
+            .preview/lesson164-deliverables/lesson-1.6.4-gibs-review.zip
+            .preview/lesson164-deliverables/lesson-164-package-integrity.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: lesson164-review-diagnostics
+          path: |
+            .preview/lesson164-deliverables/*.json
+            .preview/lesson164-deliverables/*.png
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30

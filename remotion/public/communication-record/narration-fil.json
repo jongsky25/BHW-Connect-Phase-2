@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak natural Filipino (Tagalog) as one continuous adult Filipina trainer, Kore, in a warm settled feminine mid-register. Every separately supplied heading, sentence, quotation and ending continues this identical woman narrator. Use gentle pauses and instructional emphasis without acting out speakers or switching voice. Speech spellings Lisa and Gibz represent displayed Liza (LEE-sa) and Gibs (gibz). Preserve every word, source attribution, uncertainty, correction and negation; finish each phrase completely. Do not translate, paraphrase or add words. Recording lesson delivery revision 1.",
+  "durationSeconds": 66.769,
+  "beats": [
+    {
+      "zone": "sources",
+      "index": 0,
+      "text": "Nakinig si Gibs kay Liza at sa kapitbahay. Walang card na naipakita. Iba ang sinabi sa nakita; hindi pa tiyak ang petsa.",
+      "start_ms": 0,
+      "end_ms": 8920
+    },
+    {
+      "zone": "relevant-detail",
+      "index": 1,
+      "text": "Ipinaliwanag ni Gibs ang layunin at awtorisadong gamit ng profile. Kaugnay na detalye lamang ang itatala, walang tsismis o pangakong ganap na lihim.",
+      "start_ms": 9220,
+      "end_ms": 20700
+    },
+    {
+      "zone": "conflicting-accounts",
+      "index": 2,
+      "text": "Sabi ni Liza, kinansela ang schedule. Sabi ng kapitbahay, hindi siya interesado. Nagtanong si Gibs kay Liza; hindi siya pumili sa lakas ng boses.",
+      "start_ms": 21000,
+      "end_ms": 32160
+    },
+    {
+      "zone": "verify-gap",
+      "index": 3,
+      "text": "Nilinaw ni Liza: hindi siya nakapunta nang wala ang kapatid; hindi tiyak ang pagkansela. Itinala ni Gibs ang paglilinaw. Hindi pa nakumpirma ang petsa.",
+      "start_ms": 32460,
+      "end_ms": 43300
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Sa triad, iayos ang source cards, gumawa ng tala at tukuyin ang beripikasyon sa awtorisadong rekord. Mag-feedback, ulitin at magpalit ng papel.",
+      "start_ms": 43600,
+      "end_ms": 55120
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Kinumpirma ni Liza ang buod ng sarili niyang sinabi, hindi ang attendance. Ang susunod na hakbang ay beripikasyon kasama ang awtorisadong midwife. Walang hinulaang resulta.",
+      "start_ms": 55420,
+      "end_ms": 66700
+    }
+  ],
+  "audio_sha256": "0eec293b3094107a864c59eecbc6efd0e0527cded4268bee0c518a6b29f15a53"
+}

@@ -1,0 +1,193 @@
+{
+  "original_pdfs": [
+    {
+      "file": "reference-original.pdf",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "bytes": 41537642
+    },
+    {
+      "file": "facilitator-original.pdf",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "bytes": 26505934
+    },
+    {
+      "file": "deck-original.pdf",
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "bytes": 1627258
+    }
+  ],
+  "original_page_images_inspected": [
+    {
+      "file": "deck-p52.png",
+      "bytes": 56364,
+      "sha256": "9eafaf219a09660698554f12706d5a85b1729b216a09045ec01f20901d3186fc"
+    },
+    {
+      "file": "deck-p53.png",
+      "bytes": 166714,
+      "sha256": "90ca1ba2c1e7247df30e0a05626058d4e51602d1bdf2c76f8756ca4210e61520"
+    },
+    {
+      "file": "deck-p54.png",
+      "bytes": 72318,
+      "sha256": "a1c0d5cff1eed3ab484da4dab84bb635a0762f26be5db2803310070df29114ee"
+    },
+    {
+      "file": "deck-p55.png",
+      "bytes": 80437,
+      "sha256": "e003f0c24ea88c3c0ea2e5c89106b4c1679341dbe7dea43bb1d6db57247691e7"
+    },
+    {
+      "file": "deck-p56.png",
+      "bytes": 95540,
+      "sha256": "a4e46e18a09ae956487ee98681bc1ef356c8fcc9884da8d0cc9019055ddb2ac3"
+    },
+    {
+      "file": "deck-p57.png",
+      "bytes": 55714,
+      "sha256": "543025cd470cfdedaae16c80abed4808800a16fdcccf2058c0c618961c884255"
+    },
+    {
+      "file": "facilitator-p28.png",
+      "bytes": 160976,
+      "sha256": "c5d54bf87acf02967e9a58c34acdd1a58948d02790dba5125edc1f0cb21d096f"
+    },
+    {
+      "file": "reference-p18.png",
+      "bytes": 224376,
+      "sha256": "0fab73520e8b5e708fc2edb998e7f2ed34bf9b7a3f67386fc3cb94b0c8b4bc67"
+    },
+    {
+      "file": "reference-p19.png",
+      "bytes": 226929,
+      "sha256": "e5e1cf18acfd6b7cacd2d5ee8e74b7d4ca103e8ebff69342d4efce979c6eafdf"
+    },
+    {
+      "file": "reference-p30.png",
+      "bytes": 187648,
+      "sha256": "319087449d505fae53282134721f4cde86d807ea5762d39c72b0f97a36bd4924"
+    },
+    {
+      "file": "tesda-p26.png",
+      "sha256": "613d064978554e09ef089eac48291efdafe6c104bff5da91334dc0b88125b047",
+      "bytes": 219898
+    },
+    {
+      "file": "tesda-p27.png",
+      "sha256": "df52a4e693651a2da0288d2c15bfcfa4b9a66d897460ec11364b3716373dbd90",
+      "bytes": 123564
+    },
+    {
+      "file": "tesda-p28.png",
+      "sha256": "74f7d3f9bd5d3e0260e3cc38a1f9b15550d62f30012bcbe84c4e1c425d5665ef",
+      "bytes": 167682
+    }
+  ],
+  "date": "2026-10-08",
+  "byte_verification": "Original PDFs retrieved and all 13 page-image hashes verified against the retained 1.6.1 audit before reuse.",
+  "claim_to_passage": [
+    {
+      "claim": "Check source, scope and validity; distinguish reports from observations and avoid inventing a gap",
+      "source": "TESDA PDF 26 / printed 22, unit 400311215, criteria 1.1,1.2,2.1",
+      "passage": "Evidence, facts and information are collected; determine whether data/information falls within project scope; Validity of data/information is assessed.",
+      "screens": [
+        "sources",
+        "relevant-detail",
+        "conflicting-accounts",
+        "verify-gap"
+      ],
+      "adaptation": "Four-column household example is authored, not a prescribed TESDA form."
+    },
+    {
+      "claim": "Record assessed information while retaining correction provenance",
+      "source": "TESDA PDF 27 / printed 23, criterion 3.1; NPC IRR 19(c) and 34(d)",
+      "passage": "Studied data/information are recorded; data must be accurate and kept up to date; inaccurate or incomplete data must be rectified, supplemented, destroyed or restricted as appropriate; dispute and correction of inaccuracy.",
+      "screens": [
+        "verify-gap",
+        "check"
+      ],
+      "adaptation": "Illustrated before/after practice note and verification request are fictional; actual local correction/access/retention procedure remains pending."
+    },
+    {
+      "claim": "Respectful clarification and attentive listening",
+      "source": "Reference PDF18 communication passage only, PDF19; deck PDF54–56",
+      "passage": "Gawin ang pakikipag-usap sa lugar kung saan komportable ang kausap; Iwasang putulin ang kanilang pagsasalita; Makinig ng mabuti; open-ended na tanong.",
+      "screens": [
+        "sources",
+        "conflicting-accounts"
+      ],
+      "adaptation": "Liza’s clarification and Gibs’s summary are authored dialogue, not a DOH quotation."
+    },
+    {
+      "claim": "Confidentiality and relevant information for a declared purpose",
+      "source": "Reference PDF30; NPC IRR18,19(a)(4),19(c),19(d),34",
+      "passage": "Panatilihin ang pribadong impormasyon ng mga pasyente; personal data must be adequate, relevant, suitable, necessary and not excessive for the declared purpose.",
+      "screens": [
+        "relevant-detail",
+        "verify-gap",
+        "practice"
+      ],
+      "adaptation": "No universal deletion date, no absolute secrecy or sole-lawful-basis assertion; local purpose/access/correction/retention signoff pending."
+    },
+    {
+      "claim": "Gather, assess, record/present; simulated household practice and combined eight-hour allocation",
+      "source": "Facilitator PDF28 / printed21; deck PDF52–53,57; TESDA PDF28 evidence guide",
+      "passage": "at least 8 hours of training; Gather data/information; Assess gathered data/information; Record and present information; during household profiling; observe individual performance in workplace or simulated environment.",
+      "screens": [
+        "practice",
+        "check"
+      ],
+      "adaptation": "90-minute lesson, triad sampling, source cards and rubric are authored. Peer feedback does not certify; unsampled work is not observed."
+    }
+  ],
+  "privacy_primary_source": {
+    "url": "https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/",
+    "retrieved": "2026-10-08",
+    "sha256": "ea816f3a08e691713480c58851e188f6ab86c6039d8bdc460f32bd4fa66952cc",
+    "sections_inspected": [
+      18,
+      19,
+      20,
+      34
+    ],
+    "local_policy_review": "pending",
+    "scope": "Current retrieved primary IRR text inspected; transparency/proportionality (18), accuracy/retention (19), rights/correction (34). No official local procedure supplied."
+  },
+  "tesda_verification": {
+    "official_catalog_url": "https://www.tesda.gov.ph/Download/Training_Regulations?SearchTitle=Barangay&Searchcat=Training%20Regulations",
+    "catalog_sha256": "c3a34de3e8f8cc50eab95a1b2e42f9300186ba78c565bb4bc91b35a3c00d6ec1",
+    "observed": "Official PDF bytes matched retained SHA; inspected PDF26–28. Re-retrieved official filtered catalogue. Edition remains Revision01 as printed; no independent assertion that no later edition exists.",
+    "current_edition_and_competency_pages": "Edition and pages verified in official available PDF; catalog current/superseded entries observed. Do not claim independent confirmation that no later edition exists.",
+    "mapping_authority": "2022 DOH facilitator PDF28, not represented as verified current TESDA regulations",
+    "document_url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+    "file_sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+    "file_bytes": 1495226,
+    "edition": "Revision01, promulgated01/11/2019, as printed in official document",
+    "relevant_PDF_pages": [
+      26,
+      27,
+      28
+    ],
+    "printed_pages": [
+      22,
+      23,
+      24
+    ],
+    "unit_code": "400311215",
+    "verified_passages": [
+      "Gather data/information: evidence, facts and scope; confidentiality and accuracy",
+      "Assess gathered data/information",
+      "Record and present information",
+      "Evidence guide: observe individual performance in workplace or simulated environment"
+    ]
+  },
+  "authored_adaptations": [
+    "Fictional Gibs/Liza/neighbor and dialogue; no real resident record.",
+    "Four source categories, before/after note and all source cards.",
+    "90-minute timing and 30 participants/ten triads; facilitator directly samples ten attempts and labels the remainder not observed.",
+    "Solo and accessible alternatives preserve the same attribution/uncertainty/relevance/verification standard.",
+    "Urgent help follows local procedure and is never delayed by routine interviewing."
+  ],
+  "human_source_and_policy_signoff": "pending",
+  "source_files_packaging": "Hash-verified excerpt PNG/texts for private draft review; no original PDF public redistribution."
+}

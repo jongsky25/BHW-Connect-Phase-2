@@ -1,0 +1,173 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "interpreted_authorization": "merge and deploy to live",
+  "approved_at": "2026-10-08T13:01:12.714937+00:00",
+  "reviewed_head": "43f51c6e99f37fbb7d45d2dcb2e38cb7c09457cd",
+  "reviewed_pr": 267,
+  "integrated_main": "14c5f8294f595687531a5cfc656f009cb424c5e2",
+  "lesson_keys": [
+    "communication-explain"
+  ],
+  "scope": "Only lesson 1.6.3 communication-explain. Preserve lesson 1.6.2 release, all sibling pointers, UUIDs, previous media and learner state. No KB publication, migrations, assessments, flags or progress resets.",
+  "approval_basis": "Explicit owner approval in this chat of the completed package; does not establish separate human listening or local-policy SME review. Existing model findings and audio concerns remain retained.",
+  "reviewed_proposal_receipt_sha256": "0b5bdd4bb7f6fc12ceae0c0fde5407a2953eb9c2abe116eb3de315eb05b20c64",
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"communication-explain\",\n    \"position\": 2,\n    \"title_fil\": \"Empathy at malinaw na paliwanag\",\n    \"title_en\": \"Empathy and clear explanations\",\n    \"objectives_fil\": [\n      \"Sa isang sensitibong usapan, kilalanin ang concern, magbigay ng isang hakbang na saklaw ng BHW at ipasabi ito sa sariling salita ng kausap.\"\n    ],\n    \"objectives_en\": [\n      \"In a sensitive conversation, acknowledge the concern, give one next step within the BHW role and ask the person to explain it in their own words.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"teach-back\",\n      \"concept_ids\": [\n        \"m6.health-promotion\"\n      ],\n      \"asset_ids\": [\n        \"gibs-portrait\",\n        \"explain-teach-back\"\n      ],\n      \"takeaway_fil\": \"Isang hakbang → sariling paliwanag → ayusin → mag-check muli. Hindi pa appointment ang pagtatanong sa iskedyul.\",\n      \"takeaway_en\": \"One step → their own explanation → repair → recheck. Asking about scheduling is not a confirmed appointment.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"family-planning\",\n      \"concept_ids\": [\n        \"m6.family-planning\"\n      ],\n      \"asset_ids\": [\n        \"explain-family-planning\"\n      ],\n      \"takeaway_fil\": \"Pakinggan ang concern. Alamin ang contact sa health team. Igalang ang pagpili; hindi BHW ang pumipili ng paraan.\",\n      \"takeaway_en\": \"Hear the concern. Verify the contact with the health team. Respect choice; the BHW does not select the method.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"distress\",\n      \"concept_ids\": [\n        \"m6.distress\"\n      ],\n      \"asset_ids\": [\n        \"explain-distress\"\n      ],\n      \"takeaway_fil\": \"Makinig at alamin ang kwalipikadong contact. Sa agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.\",\n      \"takeaway_en\": \"Listen and identify a qualified contact. In immediate danger, do not delay help for an ordinary interview.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"smoking\",\n      \"concept_ids\": [\n        \"m6.smoking\"\n      ],\n      \"asset_ids\": [\n        \"explain-smoking\"\n      ],\n      \"takeaway_fil\": \"Humingi ng pahintulot, pakinggan ang layunin, mag-alok ng isang natiyak na hakbang at gamitin ang teach-back.\",\n      \"takeaway_en\": \"Ask permission, hear the person’s goal, offer one verified step and use teach-back.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m6.health-promotion\",\n        \"m6.family-planning\",\n        \"m6.distress\",\n        \"m6.smoking\"\n      ],\n      \"asset_ids\": [\n        \"explain-practice\"\n      ],\n      \"takeaway_fil\": \"Concern → isang hakbang → sariling paliwanag → repair → recheck. Lahat ay susubok bilang BHW; direktang obserbasyon ang ebidensiya.\",\n      \"takeaway_en\": \"Concern → one step → their own explanation → repair → recheck. Everyone tries the BHW role; direct observation supplies evidence.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m6.health-promotion\",\n        \"m6.family-planning\",\n        \"m6.distress\",\n        \"m6.smoking\"\n      ],\n      \"asset_ids\": [\n        \"explain-check\"\n      ],\n      \"takeaway_fil\": \"Kapag iba ang pagkaunawa, ayusin ang sariling paliwanag at mag-check muli. Hindi kasalanan ng kausap ang hindi malinaw na mensahe.\",\n      \"takeaway_en\": \"When understanding differs, repair your explanation and check again. An unclear message is not the person’s fault.\",\n      \"check\": {\n        \"prompt_fil\": \"Sa teach-back, iba ang planong ikinuwento ni Liza. Ano ang susunod?\",\n        \"prompt_en\": \"During teach-back, Liza describes a different plan. What next?\",\n        \"options\": [\n          {\n            \"fil\": \"Sabihing mali at tapusin ang usapan.\",\n            \"en\": \"Say it is wrong and end the conversation.\"\n          },\n          {\n            \"fil\": \"Ibigay ang parehong paliwanag nang mas mabilis.\",\n            \"en\": \"Give the same explanation more quickly.\"\n          },\n          {\n            \"fil\": \"Ipaliwanag sa ibang paraan at ipasabi muli ang hakbang.\",\n            \"en\": \"Explain another way and ask her to describe the step again.\"\n          }\n        ],\n        \"correct_option_index\": 2,\n        \"feedback_fil\": \"Una: Ang pagsisi at pagtatapos ay hindi nag-aayos ng hindi malinaw na mensahe at maaaring magpatahimik kay Liza. Ikalawa: Ang parehong paliwanag nang mas mabilis ay hindi tumutugon sa maling pagkaunawa. Ikatlo: Ang ibang paraan ng paliwanag at pag-check muli ay angkop; si Gibs ang may pananagutan sa linaw. Sa wakas, sabi ni Gibs, “Hindi pa appointment. Magtatanong muna tayo tungkol sa iskedyul. Ano muna ang gagawin natin?” Sagot ni Liza, “Magtatanong tungkol sa iskedyul; wala pang kumpirmadong appointment.” “Tama, iyon muna,” tugon ni Gibs.\",\n        \"feedback_en\": \"First: Blame and ending the conversation do not repair an unclear message and may silence Liza. Second: The same explanation delivered faster does not address the misunderstanding. Third: Explaining another way and checking again is appropriate; Gibs takes responsibility for clarity. In the ending, Gibs says, “This is not an appointment yet. We will ask about scheduling first. What will we do first?” Liza replies, “Ask about the schedule; there is no confirmed appointment.” “Yes, that is the first step,” Gibs confirms.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m6.health-promotion\",\n      \"read_ids\": [\n        \"teach-back\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-teach-back\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"ahrq-teach-back\"\n      ]\n    },\n    {\n      \"id\": \"m6.family-planning\",\n      \"read_ids\": [\n        \"family-planning\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-family-planning\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"ahrq-teach-back\"\n      ]\n    },\n    {\n      \"id\": \"m6.distress\",\n      \"read_ids\": [\n        \"distress\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-distress\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"ahrq-teach-back\"\n      ]\n    },\n    {\n      \"id\": \"m6.smoking\",\n      \"read_ids\": [\n        \"smoking\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-smoking\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"ahrq-teach-back\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        28\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        18,\n        19,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"ahrq-teach-back\",\n      \"title\": \"AHRQ — Use the Teach-Back Method: Tool 5\",\n      \"url\": \"https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"gibs-portrait\",\n      \"path\": \"/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png\",\n      \"content_hash\": \"0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02\",\n      \"alt_fil\": \"Si Gibs, kathang-isip na lalaking BHW, nakasuot ng teal na polo at may nakasarang clipboard.\",\n      \"alt_en\": \"Gibs, a fictional male BHW, wears a teal polo and holds a closed clipboard.\",\n      \"caption_fil\": \"Si Gibs ang BHW sa lahat ng aralin sa 1.6.\",\n      \"caption_en\": \"Gibs is the BHW throughout lessons 1.6.\",\n      \"provenance\": \"New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.\",\n      \"review_status\": \"approved\"\n    },\n    {\n      \"id\": \"explain-teach-back\",\n      \"path\": \"/training/bhw-1-6/gibs-explain-teach-back-f44d4b1a0871.png\",\n      \"content_hash\": \"f44d4b1a08716e85cd03ffe076a8c4a61f5c4db7203f209624a39e9b60c79155\",\n      \"alt_fil\": \"Apat na kilos nina Gibs at Liza: paliwanag, sariling sagot, repair at recheck; hindi booking ang pagtatanong sa iskedyul.\",\n      \"alt_en\": \"Gibs and Liza illustrate four distinct explain, ask, repair and recheck actions; asking about a schedule is not a booking.\",\n      \"caption_fil\": \"Isang hakbang → sariling paliwanag → ayusin → mag-check muli. Hindi pa appointment ang pagtatanong sa iskedyul.\",\n      \"caption_en\": \"One step → their own explanation → repair → recheck. Asking about scheduling is not a confirmed appointment.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"explain-family-planning\",\n      \"path\": \"/training/bhw-1-6/gibs-explain-family-planning-939ad0e4c694.png\",\n      \"content_hash\": \"939ad0e4c694a4bbadd23134bac6b106ad2f5ce3acfe6f7561b50c22faac6a76\",\n      \"alt_fil\": \"Nakikinig si Gibs sa concern ni Jo sa family planning at itinuturo ang contact card; kay Jo ang pagpili.\",\n      \"alt_en\": \"Gibs listens to Jo’s family-planning concern and points to a contact card; Jo keeps her choice.\",\n      \"caption_fil\": \"Pakinggan ang concern. Alamin ang contact sa health team. Igalang ang pagpili; hindi BHW ang pumipili ng paraan.\",\n      \"caption_en\": \"Hear the concern. Verify the contact with the health team. Respect choice; the BHW does not select the method.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"explain-distress\",\n      \"path\": \"/training/bhw-1-6/gibs-explain-distress-c36d80b575e7.png\",\n      \"content_hash\": \"c36d80b575e7464f8b6229cbf2cf5caf28ba91738aa2d31ef4f239c188260f4e\",\n      \"alt_fil\": \"Nakikinig si Gibs kay Ben sa tahimik na lugar, walang diagnosis o pangakong appointment.\",\n      \"alt_en\": \"Gibs listens to Ben in a quiet place without diagnosing him or promising an appointment.\",\n      \"caption_fil\": \"Makinig at alamin ang kwalipikadong contact. Sa agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.\",\n      \"caption_en\": \"Listen and identify a qualified contact. In immediate danger, do not delay help for an ordinary interview.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"explain-smoking\",\n      \"path\": \"/training/bhw-1-6/gibs-explain-smoking-471b7ed9fe69.png\",\n      \"content_hash\": \"471b7ed9fe6973591197208312c0fec891926bab980567b325756111ad75ec46\",\n      \"alt_fil\": \"Humihingi si Gibs ng pahintulot at nakikinig sa layunin ni Ramon; contact card ang pag-alam ng suporta.\",\n      \"alt_en\": \"Gibs asks permission and listens to Ramon’s goal; a contact card represents checking available support.\",\n      \"caption_fil\": \"Humingi ng pahintulot, pakinggan ang layunin, mag-alok ng isang natiyak na hakbang at gamitin ang teach-back.\",\n      \"caption_en\": \"Ask permission, hear the person’s goal, offer one verified step and use teach-back.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"explain-practice\",\n      \"path\": \"/training/bhw-1-6/gibs-explain-practice-0633085623b7.png\",\n      \"content_hash\": \"0633085623b7624fbc511922d2ed7e4e12dd0b4bf08444bb096631746ac926f9\",\n      \"alt_fil\": \"Nagsasanay sa triad sina Gibs, Liza at tagamasid, katabi ang tatlong kathang-isip na context card.\",\n      \"alt_en\": \"Gibs, Liza and an observer rehearse in a triad beside three fictional context cards.\",\n      \"caption_fil\": \"Concern → isang hakbang → sariling paliwanag → repair → recheck. Lahat ay susubok bilang BHW; direktang obserbasyon ang ebidensiya.\",\n      \"caption_en\": \"Concern → one step → their own explanation → repair → recheck. Everyone tries the BHW role; direct observation supplies evidence.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"explain-check\",\n      \"path\": \"/training/bhw-1-6/gibs-explain-check-1ee8dcd6c46f.png\",\n      \"content_hash\": \"1ee8dcd6c46ff7c0763c3ec4d266576c2da94dce43029e7718d70eccd4ff6601\",\n      \"alt_fil\": \"Nagtatanong si Liza tungkol sa calendar habang nakikinig si Gibs; hindi pa kumpirmado ang appointment bago ang check.\",\n      \"alt_en\": \"Liza asks about a calendar while Gibs listens; the appointment is still unconfirmed before the check.\",\n      \"caption_fil\": \"Hindi pa kumpirmado ang appointment. Ano ang susunod na sasabihin ni Gibs?\",\n      \"caption_en\": \"The appointment is unconfirmed. What should Gibs say next?\",\n      \"provenance\": \"Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"communication-explain-story\",\n      \"alt_fil\": \"Anim na narrated beat: empathy, sariling paliwanag, family planning, distress, smoking at magalang na repair at recheck.\",\n      \"alt_en\": \"Six narrated beats: empathy, own-words explanation, family planning, distress, smoking and respectful repair and recheck.\",\n      \"caption_fil\": \"Isang hakbang, sariling paliwanag, repair at recheck.\",\n      \"caption_en\": \"One step, own-words explanation, repair and recheck.\",\n      \"provenance\": \"Lesson 1.6.3 original authored six-beat Remotion story with built-in imagegen scenes preserving approved Gibs and Liza identities. Gemini Kore narration, measured encoded audio sample boundaries. All new media draft; owner listening and local policy/SME review pending.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-6/communication-explain-gemini-fil-2237c650082f.mp4\",\n          \"content_hash\": \"2237c650082f501c4acce563cbb415eac0e61a29ed3bfbd6707f294d35c48738\",\n          \"duration_s\": 81,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-6/communication-explain-gemini-fil-c6ac6356b101.vtt\",\n            \"content_hash\": \"c6ac6356b1010d59a8c249e01c399dba0424df1c15011fa2293df40743de887f\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-6/communication-explain-gemini-fil-4d1b8e88c0ec-poster.jpg\",\n            \"content_hash\": \"4d1b8e88c0ec5d714fb431cc3bbda1505d496a013b8cf08bf04ec548d41c1395\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-6/communication-explain-gemini-en-fab81f58fa43.mp4\",\n          \"content_hash\": \"fab81f58fa43760455892ce3788239d1772bef029d48c950409f516b0d499fde\",\n          \"duration_s\": 74,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-6/communication-explain-gemini-en-13716ccf536e.vtt\",\n            \"content_hash\": \"13716ccf536e0aeaeee30c65e8f2fb1f1211f7408ff0986d02567d5e044b9e82\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-6/communication-explain-gemini-en-33ef41505cda-poster.jpg\",\n            \"content_hash\": \"33ef41505cda6b50419eac3ff7636c56b2e0911ef5e75a7ff1f5e29a25b1072d\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-6/communication-explain-gemini-fil-4d1b8e88c0ec-poster.jpg\",\n      \"content_hash\": \"4d1b8e88c0ec5d714fb431cc3bbda1505d496a013b8cf08bf04ec548d41c1395\"\n    }\n  ],\n  \"featured_asset_id\": \"communication-explain-story\"\n}\n",
+  "review_package_sha256": "4d98f70744514db8d76401eded189de1971d0c6b16d0fdc66c3409a19eab76b4",
+  "review_package_artifact": 11543866717,
+  "review_package_run": 37761607919,
+  "reviewed_source_sha256": {
+    "src/components/elearning/reference-lessons.tsx": "5149a78e1f2570c17416f94cd3f35603b364b0774fa0400c6180a7ff8f331c94",
+    "remotion/src/Root.tsx": "5a27903d461e78c19df83358a54caf3f116042023555df19f514e175369f691a",
+    "scripts/lib/reference-narration.mjs": "b60bb270c6909a19174c67bc6c095108a11e0c82de23789bac24d356044cbc46",
+    "scripts/lib/tts-providers/gemini.mjs": "f841e0934b13b29631e841a3abbfd1aebe63be591f5c23b3f6981f3ebc3687ee",
+    "content/training/day1-basic-competencies/narration.json": "9e4dbf9b9d1cb3a0bcd6f31019b08cd9c5d69c8262f619c678b99c98a5fb9fd0",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/competency.json": "0fd9f7e8f94d45d254f2b4a2d5b94d402af4a359fb354ca6b71a39589dbfc273",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/facilitator.en.md": "3c99341d31c2040478f305b159972822c72e2bd7699cb554c60d54ceac9a19c6",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/facilitator.fil.md": "48cfccbedbf4f3a3f1edeff0f979ded402684440d9a26801770ac9803d40e751",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json": "1e641d0c09a7b817f29a15d1cf1fed88c55835542e075b82216916e22459d3b7",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/read.en.md": "4046637f59377974dca6c3fedc59c077d74c4a753715b5c532c56b0b84a66ef3",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/read.fil.md": "aa0cc2c968b3b90c79bf0d733452ed2baeca6da1ea8e6aa56d2f403ffbee23f7",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/slides.json": "615d224e10243d5b9717b583ef6124f0c56b53e889952e4cae57e060e4865058"
+  },
+  "approved_source_sha256": {
+    "src/components/elearning/reference-lessons.tsx": "27561d7f84d7bc1843d5c14ef7795ce6caca05ba22a42d77aeb1078da2d4ca42",
+    "remotion/src/Root.tsx": "550b2ed1f6799fef4e9ea9f41afc87c97bc3571f81b0a72b8c56a907106322fe",
+    "scripts/lib/reference-narration.mjs": "016875712254d2b97e274454c0b6eb089ae37d0a83c958b43d9a196676619c47",
+    "scripts/lib/tts-providers/gemini.mjs": "f841e0934b13b29631e841a3abbfd1aebe63be591f5c23b3f6981f3ebc3687ee",
+    "content/training/day1-basic-competencies/narration.json": "9b456e89f2af37d6dd5c8ff823d491106b759ff7e671ae2e6ccad73319ce28ff",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/competency.json": "0fd9f7e8f94d45d254f2b4a2d5b94d402af4a359fb354ca6b71a39589dbfc273",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/facilitator.en.md": "3c99341d31c2040478f305b159972822c72e2bd7699cb554c60d54ceac9a19c6",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/facilitator.fil.md": "48cfccbedbf4f3a3f1edeff0f979ded402684440d9a26801770ac9803d40e751",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json": "7b3f165c79588f5201ed37cc0c3ec1208bed017040435099a81d0386514020fa",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/read.en.md": "4046637f59377974dca6c3fedc59c077d74c4a753715b5c532c56b0b84a66ef3",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/read.fil.md": "aa0cc2c968b3b90c79bf0d733452ed2baeca6da1ea8e6aa56d2f403ffbee23f7",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/slides.json": "615d224e10243d5b9717b583ef6124f0c56b53e889952e4cae57e060e4865058"
+  },
+  "approved_media": [
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/check.en.bd8cb5ca7ba6.mp3",
+      "sha256": "fb88de14fa146664b91b5068a6c586022e0bd7f43681d8f3803f8021d8061271",
+      "bytes": 178051
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/check.fil.94c2dd83cdc5.mp3",
+      "sha256": "dd96ef5a67626f407234903936ce5106020ae2de8b15dd4f636f18cd2a23e2d6",
+      "bytes": 205845
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/distress.en.82ba094ca46c.mp3",
+      "sha256": "77869728277f0be8a8a9be6b2277c80dcdf5c9c0d52e2db670a8624e4610e075",
+      "bytes": 369058
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/distress.fil.7bd8544664e4.mp3",
+      "sha256": "b2c7d1428bd080816160e3b4bb45a8741d72244328df9ac6908a123c9698a4c1",
+      "bytes": 410540
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/family-planning.en.fbcd8d38276a.mp3",
+      "sha256": "006497b85f15cb59367ef051e73ddf7670763662d435976bf5ade8c5228f624f",
+      "bytes": 398106
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/family-planning.fil.159d9661b299.mp3",
+      "sha256": "eef2044f9d310c5c8387955acc278579db9a924feb911d098e71144b612a241d",
+      "bytes": 441574
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/practice.en.f55e8023306d.mp3",
+      "sha256": "9b5aa0499bea928c4eab51cca19c83a4b97d3d0690055166f21bdb1ab4fd7d28",
+      "bytes": 420780
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/practice.fil.15660757bc93.mp3",
+      "sha256": "8221d3a393775cf48ad258fa23216fee21a963451cba977deb8540682d7f9a3c",
+      "bytes": 475429
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/smoking.en.ec767169afb5.mp3",
+      "sha256": "23d466fd2e2c568084b26de93c054244f4269b268591a7bb1ab834ba45b34fac",
+      "bytes": 375014
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/smoking.fil.dbab265d3524.mp3",
+      "sha256": "c60cd08308e571476f3e4087ef14a57ea5b69fb00372c795c5034699022fb3e7",
+      "bytes": 407615
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/teach-back.en.af1b32ee149f.mp3",
+      "sha256": "fb69d19b04384defee09eff25808efe39bf5e3fbe44e327ec8ba80d1b84db6e0",
+      "bytes": 377626
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-explain/teach-back.fil.206b1159c6ee.mp3",
+      "sha256": "e6a78ab5c8d1d518a6cab64b2fc1a1199c6a12455057921a55350b5593f45965",
+      "bytes": 398733
+    },
+    {
+      "path": "/training/bhw-1-6/communication-explain-gemini-en-13716ccf536e.vtt",
+      "sha256": "13716ccf536e0aeaeee30c65e8f2fb1f1211f7408ff0986d02567d5e044b9e82",
+      "bytes": 1174
+    },
+    {
+      "path": "/training/bhw-1-6/communication-explain-gemini-en-33ef41505cda-poster.jpg",
+      "sha256": "33ef41505cda6b50419eac3ff7636c56b2e0911ef5e75a7ff1f5e29a25b1072d",
+      "bytes": 60845
+    },
+    {
+      "path": "/training/bhw-1-6/communication-explain-gemini-en-fab81f58fa43.mp4",
+      "sha256": "fab81f58fa43760455892ce3788239d1772bef029d48c950409f516b0d499fde",
+      "bytes": 1156968
+    },
+    {
+      "path": "/training/bhw-1-6/communication-explain-gemini-fil-2237c650082f.mp4",
+      "sha256": "2237c650082f501c4acce563cbb415eac0e61a29ed3bfbd6707f294d35c48738",
+      "bytes": 1269133
+    },
+    {
+      "path": "/training/bhw-1-6/communication-explain-gemini-fil-4d1b8e88c0ec-poster.jpg",
+      "sha256": "4d1b8e88c0ec5d714fb431cc3bbda1505d496a013b8cf08bf04ec548d41c1395",
+      "bytes": 64863
+    },
+    {
+      "path": "/training/bhw-1-6/communication-explain-gemini-fil-c6ac6356b101.vtt",
+      "sha256": "c6ac6356b1010d59a8c249e01c399dba0424df1c15011fa2293df40743de887f",
+      "bytes": 1307
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-check-1ee8dcd6c46f.png",
+      "sha256": "1ee8dcd6c46ff7c0763c3ec4d266576c2da94dce43029e7718d70eccd4ff6601",
+      "bytes": 2359527
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-distress-c36d80b575e7.png",
+      "sha256": "c36d80b575e7464f8b6229cbf2cf5caf28ba91738aa2d31ef4f239c188260f4e",
+      "bytes": 2578024
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-family-planning-939ad0e4c694.png",
+      "sha256": "939ad0e4c694a4bbadd23134bac6b106ad2f5ce3acfe6f7561b50c22faac6a76",
+      "bytes": 2596135
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-practice-0633085623b7.png",
+      "sha256": "0633085623b7624fbc511922d2ed7e4e12dd0b4bf08444bb096631746ac926f9",
+      "bytes": 2423149
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-smoking-471b7ed9fe69.png",
+      "sha256": "471b7ed9fe6973591197208312c0fec891926bab980567b325756111ad75ec46",
+      "bytes": 2481029
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-teach-back-f44d4b1a0871.png",
+      "sha256": "f44d4b1a08716e85cd03ffe076a8c4a61f5c4db7203f209624a39e9b60c79155",
+      "bytes": 2530414
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02",
+      "bytes": 2494245
+    }
+  ]
+}

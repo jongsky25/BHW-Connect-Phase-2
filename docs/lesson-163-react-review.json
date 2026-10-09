@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "reviewed_files": [
+    "remotion/src/Root.tsx",
+    "remotion/src/communication-explain/CommunicationExplainStory.tsx",
+    "src/components/elearning/reference-lessons.tsx"
+  ],
+  "method": "Condensed React checklist; root/Remotion lint and typecheck. Narrow existing lesson-key conditions show only the communication-explain check context and illustration before selection.",
+  "checks": {
+    "component_structure": "Scene and Graphic are module-level components; no component definitions inside render.",
+    "hooks": "Unconditional Remotion frame/video-config hooks; animation follows frames rather than CSS timers or effect state.",
+    "typescript": "Typed language union, props and CalculateMetadataFunction; metadata rejects missing/invalid actual timing.",
+    "keys": "Stable language/beat IDs for Composition and Series.Sequence.",
+    "performance": "One local metadata request per language; simple frame-derived values, no runtime database reads.",
+    "accessibility": "Bilingual lesson asset alt/caption, optional playback and actual shipped WebVTT. Video viewing is optional.",
+    "scoped_UI_change": "Existing component structure/hooks unchanged. Two lesson-key guards add pre-choice check context/figure visibility for communication-explain only. Feedback, takeaway and audio still use revealSummary; no changed save/progress behavior. The new illustrated revision also displays the authored13\u201316minute estimate based on584.93seconds of narration, with120guidedminutes separate; original published revision keeps its existing estimate."
+  }
+}

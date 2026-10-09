@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-08",
+  "status": "draft",
+  "owner_review": "pending",
+  "scenes": [
+    {
+      "screen": "sources",
+      "source_output": "/workspace/generated_images/exec-0e8617e3-1427-48e3-b792-1386fa49cf4e.png",
+      "sha256": "ba56fae568d98877298d1e1683a4473b2213d92a2e3b1a83471169a03cb07a9b",
+      "bytes": 2414998,
+      "asset": {
+        "id": "record-sources",
+        "path": "/training/bhw-1-6/gibs-record-sources-ba56fae568d9.png",
+        "content_hash": "ba56fae568d98877298d1e1683a4473b2213d92a2e3b1a83471169a03cb07a9b",
+        "alt_fil": "Ipinapakita ni Gibs kay Liza at sa kapitbahay ang apat na magkahiwalay na source card.",
+        "alt_en": "Gibs shows Liza and the neighbor four separate source cards.",
+        "caption_fil": "Ipinapakita ni Gibs kay Liza at sa kapitbahay ang apat na magkahiwalay na source card. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+        "caption_en": "Gibs shows Liza and the neighbor four separate source cards. Fictional rehearsal; labels and details are in the text.",
+        "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+        "review_status": "draft"
+      },
+      "references": [
+        {
+          "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "/training/bhw-1-6/gibs-profile-37d8a009bbc6.png",
+          "sha256": "37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed"
+        }
+      ],
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "visual_inspection": "Inspected actual generated PNG: male Gibs and yellow-blouse Liza preserved; blank geometric paper, no private identifiers; check has no answer indicator. Owner art review pending.",
+      "prompt": "Create ONE new landscape 3:2 teaching illustration for fictional BHW lesson 1.6.4, warm painterly realistic style consistent with references. Preserve exact male Gibs identity (black swept hair, teal polo, navy trousers, no glasses) from first reference, and fictional 29-year-old Liza identity (dark ponytail, yellow blouse and blue skirt) from second. Distinct scene: Gibs sits at a small porch table with Liza and a female neighbor. Gibs lays out four blank colored cards in a neat row, pointing to each separately. Liza speaks while neighbor waits. Four categories are distinct. No speech balloons. All visible paper is blank with simple colored geometric marks only; no private data, names, numbers, writing, diagnostic imagery, text labels, speech bubbles or titles. Teaching labels will be accessible HTML outside the image. Balanced clear composition, natural daylight, warm cream/teal colors, approachable adults. Do not crop/reuse the original pose."
+    },
+    {
+      "screen": "relevant-detail",
+      "source_output": "/workspace/generated_images/exec-97c42c0e-8b81-44e6-bcf3-0b4d0a66d2be.png",
+      "sha256": "cbaca267789931f65ffd14bcf3d370cf413f64bfd0cd86519de06fe3376ce68f",
+      "bytes": 2503959,
+      "asset": {
+        "id": "record-relevant-detail",
+        "path": "/training/bhw-1-6/gibs-record-relevant-detail-cbaca2677899.png",
+        "content_hash": "cbaca267789931f65ffd14bcf3d370cf413f64bfd0cd86519de06fe3376ce68f",
+        "alt_fil": "Pumipili si Gibs ng isang kaugnay na card habang nakikinig kay Liza; nakasara ang folder.",
+        "alt_en": "Gibs selects a relevant card while listening to Liza; the folder is closed.",
+        "caption_fil": "Pumipili si Gibs ng isang kaugnay na card habang nakikinig kay Liza; nakasara ang folder. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+        "caption_en": "Gibs selects a relevant card while listening to Liza; the folder is closed. Fictional rehearsal; labels and details are in the text.",
+        "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+        "review_status": "draft"
+      },
+      "references": [
+        {
+          "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "/training/bhw-1-6/gibs-profile-37d8a009bbc6.png",
+          "sha256": "37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed"
+        }
+      ],
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "visual_inspection": "Inspected actual generated PNG: male Gibs and yellow-blouse Liza preserved; blank geometric paper, no private identifiers; check has no answer indicator. Owner art review pending.",
+      "prompt": "Create ONE new landscape 3:2 teaching illustration for fictional BHW lesson 1.6.4, warm painterly realistic style consistent with references. Preserve exact male Gibs identity (black swept hair, teal polo, navy trousers, no glasses) from first reference, and fictional 29-year-old Liza identity (dark ponytail, yellow blouse and blue skirt) from second. Distinct scene: Gibs and Liza at porch table. Gibs selects a single relevant blank card from several cards and leaves the other cards face down, with a closed folder nearby. Liza chooses which information to share; respectful expressions. All visible paper is blank with simple colored geometric marks only; no private data, names, numbers, writing, diagnostic imagery, text labels, speech bubbles or titles. Teaching labels will be accessible HTML outside the image. Balanced clear composition, natural daylight, warm cream/teal colors, approachable adults. Do not crop/reuse the original pose."
+    },
+    {
+      "screen": "conflicting-accounts",
+      "source_output": "/workspace/generated_images/exec-8fc9cda8-28f9-4295-940b-e33c17f2ef40.png",
+      "sha256": "cfeb4564637feb91a0102300c09e16aa2ab4b842046eae9e090a86f2fa8022b3",
+      "bytes": 2583413,
+      "asset": {
+        "id": "record-conflicting-accounts",
+        "path": "/training/bhw-1-6/gibs-record-conflicting-accounts-cfeb4564637f.png",
+        "content_hash": "cfeb4564637feb91a0102300c09e16aa2ab4b842046eae9e090a86f2fa8022b3",
+        "alt_fil": "Magkahiwalay na card ang hawak ni Gibs habang magkaibang kuwento ang sinasabi ni Liza at ng kapitbahay.",
+        "alt_en": "Gibs keeps two source cards separate while Liza and the neighbor give different accounts.",
+        "caption_fil": "Magkahiwalay na card ang hawak ni Gibs habang magkaibang kuwento ang sinasabi ni Liza at ng kapitbahay. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+        "caption_en": "Gibs keeps two source cards separate while Liza and the neighbor give different accounts. Fictional rehearsal; labels and details are in the text.",
+        "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+        "review_status": "draft"
+      },
+      "references": [
+        {
+          "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "/training/bhw-1-6/gibs-profile-37d8a009bbc6.png",
+          "sha256": "37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed"
+        }
+      ],
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "visual_inspection": "Inspected actual generated PNG: male Gibs and yellow-blouse Liza preserved; blank geometric paper, no private identifiers; check has no answer indicator. Owner art review pending.",
+      "prompt": "Create ONE new landscape 3:2 teaching illustration for fictional BHW lesson 1.6.4, warm painterly realistic style consistent with references. Preserve exact male Gibs identity (black swept hair, teal polo, navy trousers, no glasses) from first reference, and fictional 29-year-old Liza identity (dark ponytail, yellow blouse and blue skirt) from second. Distinct scene: Liza and female neighbor each speaking in turn across a porch table, Gibs listening centrally and placing their two differently colored blank source cards side by side without selecting a winner. Both women dignified; no accusatory gestures. All visible paper is blank with simple colored geometric marks only; no private data, names, numbers, writing, diagnostic imagery, text labels, speech bubbles or titles. Teaching labels will be accessible HTML outside the image. Balanced clear composition, natural daylight, warm cream/teal colors, approachable adults. Do not crop/reuse the original pose."
+    },
+    {
+      "screen": "verify-gap",
+      "source_output": "/workspace/generated_images/exec-3e7a7749-2b35-483d-af50-ff0f9960d38b.png",
+      "sha256": "f09e8873787328492f2090056e0e9792d86da4ca5f098f823fb7272812b87359",
+      "bytes": 2376677,
+      "asset": {
+        "id": "record-verify-gap",
+        "path": "/training/bhw-1-6/gibs-record-verify-gap-f09e88737873.png",
+        "content_hash": "f09e8873787328492f2090056e0e9792d86da4ca5f098f823fb7272812b87359",
+        "alt_fil": "Ipinapakita ni Gibs kay Liza ang unang note at ang note na may correction tab.",
+        "alt_en": "Gibs shows Liza the first note and a note with a correction tab.",
+        "caption_fil": "Ipinapakita ni Gibs kay Liza ang unang note at ang note na may correction tab. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+        "caption_en": "Gibs shows Liza the first note and a note with a correction tab. Fictional rehearsal; labels and details are in the text.",
+        "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+        "review_status": "draft"
+      },
+      "references": [
+        {
+          "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "/training/bhw-1-6/gibs-profile-37d8a009bbc6.png",
+          "sha256": "37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed"
+        }
+      ],
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "visual_inspection": "Inspected actual generated PNG: male Gibs and yellow-blouse Liza preserved; blank geometric paper, no private identifiers; check has no answer indicator. Owner art review pending.",
+      "prompt": "Create ONE new landscape 3:2 teaching illustration for fictional BHW lesson 1.6.4, warm painterly realistic style consistent with references. Preserve exact male Gibs identity (black swept hair, teal polo, navy trousers, no glasses) from first reference, and fictional 29-year-old Liza identity (dark ponytail, yellow blouse and blue skirt) from second. Distinct scene: Gibs shows Liza two blank notes side by side, an earlier note and a revised note with a small added colored correction tab. Liza clarifies with an open hand. Clipboard remains closed beside him. No invented attendance record, no checkmark asserting confirmation of an appointment. All visible paper is blank with simple colored geometric marks only; no private data, names, numbers, writing, diagnostic imagery, text labels, speech bubbles or titles. Teaching labels will be accessible HTML outside the image. Balanced clear composition, natural daylight, warm cream/teal colors, approachable adults. Do not crop/reuse the original pose."
+    },
+    {
+      "screen": "practice",
+      "source_output": "/workspace/generated_images/exec-c2e5473f-9972-4375-9061-e697853c30f1.png",
+      "sha256": "9b5ba7813e7e318a395ca072af8e7adabc876ea025050047db3811595ea3fc52",
+      "bytes": 2158841,
+      "asset": {
+        "id": "record-practice",
+        "path": "/training/bhw-1-6/gibs-record-practice-9b5ba7813e7e.png",
+        "content_hash": "9b5ba7813e7e318a395ca072af8e7adabc876ea025050047db3811595ea3fc52",
+        "alt_fil": "Nag-aayos ng cards sa apat na hanay ang triad habang may tagamasid na may checklist.",
+        "alt_en": "A triad sorts cards into four columns while an observer holds a checklist.",
+        "caption_fil": "Nag-aayos ng cards sa apat na hanay ang triad habang may tagamasid na may checklist. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+        "caption_en": "A triad sorts cards into four columns while an observer holds a checklist. Fictional rehearsal; labels and details are in the text.",
+        "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+        "review_status": "draft"
+      },
+      "references": [
+        {
+          "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "/training/bhw-1-6/gibs-profile-37d8a009bbc6.png",
+          "sha256": "37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed"
+        }
+      ],
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "visual_inspection": "Inspected actual generated PNG: male Gibs and yellow-blouse Liza preserved; blank geometric paper, no private identifiers; check has no answer indicator. Owner art review pending.",
+      "prompt": "Create ONE new landscape 3:2 teaching illustration for fictional BHW lesson 1.6.4, warm painterly realistic style consistent with references. Preserve exact male Gibs identity (black swept hair, teal polo, navy trousers, no glasses) from first reference, and fictional 29-year-old Liza identity (dark ponytail, yellow blouse and blue skirt) from second. Distinct scene: Three Filipino adult trainees, including male Gibs, reenact a recording task around a table. A woman plays Liza in yellow blouse blue skirt, another adult observes with blank checklist. They sort four distinct source cards into columns on a large blank practice sheet. Classroom and respectful collaboration. All visible paper is blank with simple colored geometric marks only; no private data, names, numbers, writing, diagnostic imagery, text labels, speech bubbles or titles. Teaching labels will be accessible HTML outside the image. Balanced clear composition, natural daylight, warm cream/teal colors, approachable adults. Do not crop/reuse the original pose."
+    },
+    {
+      "screen": "check",
+      "source_output": "/workspace/generated_images/exec-65a8e4bb-1303-4d4b-bc53-45f976efdbfd.png",
+      "sha256": "745369cea069a3de98cd2564df9a90c3e8b2a0593ae8edd45ea11f8d217a110c",
+      "bytes": 2557551,
+      "asset": {
+        "id": "record-check",
+        "path": "/training/bhw-1-6/gibs-record-check-745369cea069.png",
+        "content_hash": "745369cea069a3de98cd2564df9a90c3e8b2a0593ae8edd45ea11f8d217a110c",
+        "alt_fil": "Tatlong pantay na note ang nasa harap nina Gibs at Liza; wala pang piniling sagot.",
+        "alt_en": "Three equal notes lie before Gibs and Liza; no answer has been selected.",
+        "caption_fil": "Tatlong pantay na note ang nasa harap nina Gibs at Liza; wala pang piniling sagot. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+        "caption_en": "Three equal notes lie before Gibs and Liza; no answer has been selected. Fictional rehearsal; labels and details are in the text.",
+        "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+        "review_status": "draft"
+      },
+      "references": [
+        {
+          "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+          "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+        },
+        {
+          "path": "/training/bhw-1-6/gibs-profile-37d8a009bbc6.png",
+          "sha256": "37d8a009bbc6af45e54be07cc28fca3b3d79c126cf514e7f64b2301b942558ed"
+        }
+      ],
+      "tool": "image_gen.imagegen",
+      "model": "undisclosed",
+      "visual_inspection": "Inspected actual generated PNG: male Gibs and yellow-blouse Liza preserved; blank geometric paper, no private identifiers; check has no answer indicator. Owner art review pending.",
+      "prompt": "Create ONE new landscape 3:2 teaching illustration for fictional BHW lesson 1.6.4, warm painterly realistic style consistent with references. Preserve exact male Gibs identity (black swept hair, teal polo, navy trousers, no glasses) from first reference, and fictional 29-year-old Liza identity (dark ponytail, yellow blouse and blue skirt) from second. Distinct scene: Gibs and Liza at porch table with three blank proposed notes in front of them, equal visual prominence. A neighbor sits to the side. Gibs pauses with his hand above the cards, leaving the decision unresolved. No correct-answer marks, no judging resident. All visible paper is blank with simple colored geometric marks only; no private data, names, numbers, writing, diagnostic imagery, text labels, speech bubbles or titles. Teaching labels will be accessible HTML outside the image. Balanced clear composition, natural daylight, warm cream/teal colors, approachable adults. Do not crop/reuse the original pose."
+    }
+  ]
+}

@@ -1,8 +1,9 @@
+import {lesson165View} from '../lib/lesson-165-integration.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {beforeProposed165} from './lesson-165-proposal-compat.mjs';import {planReferenceNarration} from '../lib/reference-narration.mjs';
-const leaf='content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/',read=p=>fs.readFileSync(p),j=p=>JSON.parse(read(p)),sha=b=>createHash('sha256').update(b).digest('hex');
+const leaf='content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/',read=p=>lesson165View(p,'reviewed165'),j=p=>JSON.parse(read(p)),sha=b=>createHash('sha256').update(b).digest('hex');
 const baseline=j('docs/lesson-165-baseline.json'),receipt=j('docs/lesson-165-proposal-receipt.json'),lesson=j(leaf+'lesson.json');
 describe('scoped lesson 1.6.5 draft',()=>{
  it('retains the complete manifest, old anchors and coverage while adding confirmation',()=>{
@@ -32,7 +33,7 @@ describe('scoped lesson 1.6.5 draft',()=>{
   const restored=actual.replace(/^import \{CommunicationHandoffStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`communication-handoff-[\s\S]+?      \)\)\}\n/,'');expect(restored).toBe(old);
  });
  it('keeps the target on Gemini Kore without changing sibling plans',()=>{
-  const {lessons}=loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public'),m=j('content/training/day1-basic-competencies/narration.json');const p=planReferenceNarration([{key:'06-komunikasyon',lessons}],m,src=>sha(read('public'+src)));
+  const {lessons}=loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public'),m=JSON.parse(fs.readFileSync('content/training/day1-basic-competencies/narration.json'));const p=planReferenceNarration([{key:'06-komunikasyon',lessons}],m,src=>sha(read('public'+src)));
   const target=p.filter(i=>i.lessonKey==='communication-handoff');expect(target).toHaveLength(12);expect(target.every(i=>i.voice==='gemini:gemini-3.8-flash-tts:Kore')).toBe(true);expect(p.filter(i=>i.lessonKey!=='communication-handoff').every(i=>i.action==='skip')).toBe(true);
  });
  it('selects all ten approved tracks for the old published text',()=>{

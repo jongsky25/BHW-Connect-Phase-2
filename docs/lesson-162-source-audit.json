@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-08T08:41:37.758065+00:00",
+  "original_pdfs": [
+    {
+      "file": "reference-original.pdf",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "bytes": 41537642
+    },
+    {
+      "file": "facilitator-original.pdf",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "bytes": 26505934
+    },
+    {
+      "file": "deck-original.pdf",
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "bytes": 1627258
+    }
+  ],
+  "original_page_images_inspected": [
+    {
+      "file": "deck-p52.png",
+      "bytes": 56364,
+      "sha256": "9eafaf219a09660698554f12706d5a85b1729b216a09045ec01f20901d3186fc"
+    },
+    {
+      "file": "deck-p53.png",
+      "bytes": 166714,
+      "sha256": "90ca1ba2c1e7247df30e0a05626058d4e51602d1bdf2c76f8756ca4210e61520"
+    },
+    {
+      "file": "deck-p54.png",
+      "bytes": 72318,
+      "sha256": "a1c0d5cff1eed3ab484da4dab84bb635a0762f26be5db2803310070df29114ee"
+    },
+    {
+      "file": "deck-p55.png",
+      "bytes": 80437,
+      "sha256": "e003f0c24ea88c3c0ea2e5c89106b4c1679341dbe7dea43bb1d6db57247691e7"
+    },
+    {
+      "file": "deck-p56.png",
+      "bytes": 95540,
+      "sha256": "a4e46e18a09ae956487ee98681bc1ef356c8fcc9884da8d0cc9019055ddb2ac3"
+    },
+    {
+      "file": "deck-p57.png",
+      "bytes": 55714,
+      "sha256": "543025cd470cfdedaae16c80abed4808800a16fdcccf2058c0c618961c884255"
+    },
+    {
+      "file": "facilitator-p28.png",
+      "bytes": 160976,
+      "sha256": "c5d54bf87acf02967e9a58c34acdd1a58948d02790dba5125edc1f0cb21d096f"
+    },
+    {
+      "file": "reference-p18.png",
+      "bytes": 224376,
+      "sha256": "0fab73520e8b5e708fc2edb998e7f2ed34bf9b7a3f67386fc3cb94b0c8b4bc67"
+    },
+    {
+      "file": "reference-p19.png",
+      "bytes": 226929,
+      "sha256": "e5e1cf18acfd6b7cacd2d5ee8e74b7d4ca103e8ebff69342d4efce979c6eafdf"
+    },
+    {
+      "file": "reference-p30.png",
+      "bytes": 187648,
+      "sha256": "319087449d505fae53282134721f4cde86d807ea5762d39c72b0f97a36bd4924"
+    },
+    {
+      "file": "tesda-p26.png",
+      "sha256": "613d064978554e09ef089eac48291efdafe6c104bff5da91334dc0b88125b047",
+      "bytes": 219898
+    },
+    {
+      "file": "tesda-p27.png",
+      "sha256": "df52a4e693651a2da0288d2c15bfcfa4b9a66d897460ec11364b3716373dbd90",
+      "bytes": 123564
+    },
+    {
+      "file": "tesda-p28.png",
+      "sha256": "74f7d3f9bd5d3e0260e3cc38a1f9b15550d62f30012bcbe84c4e1c425d5665ef",
+      "bytes": 167682
+    }
+  ],
+  "claim_to_passage": [
+    {
+      "claim": "Allow a focused comfortable conversation without interruption",
+      "source": "Reference PDF18 communication passage only, separately from preceding self-management; deck54",
+      "screens": [
+        "open-question"
+      ],
+      "passage": "Gawin ang pakikipag-usap sa lugar kung saan komportable ang kausap; Panatilihing ang usapan ay tungkol sa concern ng pasyente. Iwasang putulin ang kanilang pagsasalita."
+    },
+    {
+      "claim": "Open invitations, listening, clarification and no judgment",
+      "source": "Reference PDF19; deck54–56",
+      "screens": [
+        "open-question",
+        "clarify-detail",
+        "barriers",
+        "confirm-summary"
+      ],
+      "passage": "Makinig ng mabuti sa kausap. Magtanong kung may gustong linawin sa sinabi niya; Gumamit ng mga open-ended na tanong; Magpakita ng respeto at iwasang maging mapanghusga."
+    },
+    {
+      "claim": "Confidentiality and respect for differences",
+      "source": "Reference PDF30; fresh NPC IRR18–20",
+      "screens": [
+        "barriers",
+        "confirm-summary"
+      ],
+      "passage": "Panatilihin ang pribadong impormasyon ng mga pasyente; Igalang ang pagkakaiba",
+      "adaptation": "Relevant detail only for agreed authorized task, under local policy; no absolute secrecy."
+    },
+    {
+      "claim": "Combined eight-hour allocation, open-question practice and household role-play",
+      "source": "Facilitator PDF28 / printed21; deck52–57",
+      "screens": [
+        "practice",
+        "check"
+      ],
+      "passage": "at least 8 hours of training; Asking open questions to patients; Demonstration of communication to the patients; during household profiling"
+    },
+    {
+      "claim": "Information within scope, confidentiality, accuracy and direct performance evidence",
+      "source": "TESDA Rev01 PDF26–28 / printed22–24 unit400311215",
+      "screens": [
+        "barriers",
+        "practice"
+      ],
+      "passage": "Evidence, facts and information are collected; Confidentiality; Accuracy; observing an individual ... within the workplace or operational or simulated environment",
+      "limitation": "Use edition stated in PDF, not a claim that no later edition exists."
+    }
+  ],
+  "authored_adaptations": [
+    "Every Gibs/Liza/neighbor dialogue, age, childcare circumstance and correction is fictional, not a DOH quotation.",
+    "Open→one neutral clarification→accepted correction→confirmed summary sequence, three rounds, cards, 90-minute run sheet and task aid are instructional adaptations.",
+    "Rosario reference preserves the previous lesson’s connection; it is not a diagnosis or attribution of motive.",
+    "Service hours and next-step agreement are fictional; appointment/date, childcare and transport remain unconfirmed.",
+    "No forced personal disclosure, eye contact or guessing unknown dates.",
+    "No eye-contact compliance measure, diagnosis, dose or invented emergency contact.",
+    "Urgent help follows local process and must not be delayed by routine interviewing."
+  ],
+  "privacy_primary_source": {
+    "url": "https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/",
+    "retrieved": "2026-10-08T08:41:37.758065+00:00",
+    "sha256": "9d1234c1f656e3c1986ded24f0e97770aad02345495a5bd104719a41370a37cb",
+    "scope": "IRR section18 contains transparency, legitimate purpose and proportionality; section19 governs collection/processing/retention; section20 governs data sharing. Conversation permission is not asserted to be the sole lawful basis. Local authorized purpose/access/urgent-help procedures require review.",
+    "local_policy_review": "pending"
+  },
+  "tesda_verification": {
+    "official_catalog_url": "https://www.tesda.gov.ph/Download/Training_Regulations?SearchTitle=Barangay&Searchcat=Training%20Regulations",
+    "catalog_sha256": "4f9458d4adbb9f302c20bf0a2fb6ea9bec0ae3b1c074a9b3ed46a6084fbb1ed3",
+    "observed": "Fresh established official catalogue retrieval and original PDF exact-byte match. Edition Rev01 and unit400311215 confirmed from original PDF26–28; no claim of independent confirmation that no later edition exists.",
+    "current_edition_and_competency_pages": "Edition and pages verified in official available PDF; catalog current/superseded entries observed. Do not claim independent confirmation that no later edition exists.",
+    "mapping_authority": "2022 DOH facilitator PDF28, not represented as verified current TESDA regulations",
+    "document_url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+    "file_sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+    "file_bytes": 1495226,
+    "edition": "Revision01, promulgated01/11/2019, as printed in official document",
+    "relevant_PDF_pages": [
+      26,
+      27,
+      28
+    ],
+    "printed_pages": [
+      22,
+      23,
+      24
+    ],
+    "unit_code": "400311215",
+    "verified_passages": [
+      "Gather data/information: evidence, facts and scope; confidentiality and accuracy",
+      "Assess gathered data/information",
+      "Record and present information",
+      "Evidence guide: observe individual performance in workplace or simulated environment"
+    ]
+  },
+  "human_source_and_policy_signoff": "pending",
+  "source_files_packaging": "Original internal PDFs stay in local audit evidence; review ZIP includes audited excerpts/hashes for private review, not public redistribution.",
+  "method": "Fresh retrieval of established original PDFs verified against 1.6.1 audited hashes; extracted original text inspected for target claims; fresh primary NPC and TESDA catalogue retrieval. No inherited claim verification or owner approval.",
+  "primary_source_comparison": "docs/lesson-162-primary-passages.json pins the actually inspected NPC18–20 text and TESDA title/download rows. Fresh retrieval retains raw SHA-256 and canonical passage SHA-256 separately; dynamic anti-forgery fields are not treated as substantive source changes.",
+  "primary_source_retrieval_note": "NPC IRR and TESDA catalogue HTML captured and inspected on 2026-10-08 are retained in docs/lesson-162-privacy-irr.html and docs/lesson-162-tesda-filter.html with exact authoring raw hashes and canonical passage hashes. Fetch fresh source when available; on transport failure use only those exact captured bytes, label the fallback in the receipt, and still require the pinned substantive passages. A different substantive passage requires renewed inspection."
+}

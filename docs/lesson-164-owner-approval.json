@@ -1,0 +1,147 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "interpreted_authorization": "merge and deploy to live",
+  "approved_at": "2026-10-09T00:15:05.734641+00:00",
+  "reviewed_head": "ec7a4dd83ac1a11a7310037ba2e5c9a1fa3d3ba3",
+  "reviewed_pr": 268,
+  "lesson_keys": [
+    "communication-record"
+  ],
+  "scope": "Only reviewed lesson 1.6.4 and its private guides, with reconciled shared support. No sibling publication, migrations, progress resets, assessments or feature flag changes.",
+  "approval_basis": "Explicit owner release instruction in this chat. Original draft evidence is retained. No separate human audition or clinical/local-policy SME signoff is inferred; model disagreements remain retained.",
+  "review_zip_sha256": "816e667c5640699b2b61d31c61b3de17531c55e541e3f0d20089f6878053f95e",
+  "review_package_artifact": 11549216903,
+  "review_package_run": 37771620875,
+  "reviewed_proposal_receipt_sha256": "f05bde4fe954657a89ce370ebd9a9afc10cca06dbce82c5c777137319d47165f",
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"communication-record\",\n    \"position\": 3,\n    \"title_fil\": \"Suriin at itala ang impormasyon\",\n    \"title_en\": \"Assess and record information\",\n    \"objectives_fil\": [\n      \"Mula sa dalawang magkaibang kuwento, gumawa ng tala na hiwalay ang sinabi, nakita at hindi pa natiyak, at tukuyin kung paano beripikahin ang kulang.\"\n    ],\n    \"objectives_en\": [\n      \"From conflicting accounts, produce a record separating reports, observations and unconfirmed details, with a way to verify the gap.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"sources\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [\n        \"record-sources\",\n        \"gibs-portrait\"\n      ],\n      \"takeaway_fil\": \"Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.\",\n      \"takeaway_en\": \"When assessing information, distinguish reports, observations and details still requiring verification.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"relevant-detail\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [\n        \"record-relevant-detail\"\n      ],\n      \"takeaway_fil\": \"Itala lamang ang kailangan sa awtorisadong gawain; ipaliwanag ang gamit at sundin ang lokal na patakaran.\",\n      \"takeaway_en\": \"Record only what the authorized task needs; explain its use and follow local policy.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"conflicting-accounts\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [\n        \"record-conflicting-accounts\"\n      ],\n      \"takeaway_fil\": \"Kapag magkaiba ang kuwento, maglinaw at magberipika bago magpasya.\",\n      \"takeaway_en\": \"When accounts differ, clarify and verify before deciding.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"verify-gap\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [\n        \"record-verify-gap\"\n      ],\n      \"takeaway_fil\": \"Ang pagwawasto ay may pinagmulan; ang kulang ay hindi pa tiyak hangga’t walang angkop na beripikasyon.\",\n      \"takeaway_en\": \"A correction keeps its source; a gap stays unconfirmed until suitable verification is available.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [\n        \"record-practice\"\n      ],\n      \"takeaway_fil\": \"Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.\",\n      \"takeaway_en\": \"Clear sources and explicit gaps prevent a guess becoming an official record.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m6.assess\"\n      ],\n      \"asset_ids\": [\n        \"record-check\"\n      ],\n      \"takeaway_fil\": \"Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.\",\n      \"takeaway_en\": \"Clear sources and explicit gaps prevent a guess becoming an official record.\",\n      \"check\": {\n        \"prompt_fil\": \"Wala ang card, at hindi magkatugma ang kuwento ni Liza at ng kapitbahay. Aling tala ang angkop?\",\n        \"prompt_en\": \"The card is missing and Liza’s account differs from her neighbor’s. Which record fits?\",\n        \"options\": [\n          {\n            \"fil\": \"“Hindi interesado si Liza; ayon sa kapitbahay.”\",\n            \"en\": \"“Liza is not interested, according to the neighbor.”\"\n          },\n          {\n            \"fil\": \"“Ayon kay Liza, kinansela ang schedule; petsa ay ibeberipika sa rekord.”\",\n            \"en\": \"“Liza reports a canceled schedule; date to be verified in the record.”\"\n          },\n          {\n            \"fil\": \"“Kinansela ng health center ang lahat ng appointment.”\",\n            \"en\": \"“The health center canceled every appointment.”\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Una: kahit may “ayon sa kapitbahay,” ang “hindi interesado” ay husga sa motibo, hindi natiyak na katotohanan. Ikalawa: ang ulat ay malinaw na kay Liza at may puwang na ibeberipika; ito ang angkop na paunang tala. Ikatlo: hindi pinatutunayan ng isang ulat na kinansela ang lahat ng appointment. Sa wakas, nilinaw ni Liza na hindi siya nakapunta nang wala ang kapatid at hindi niya tiyak kung kinansela ng center. Iwinastong tala: unang sinabi ni Liza ang pagkansela; nilinaw niya ang hadlang at kawalan ng katiyakan. Walang card na naipakita. Hindi pa nakumpirma ang petsa/status; hilingin sa awtorisadong midwife na tingnan ang kaugnay na rekord ayon sa lokal na access procedure. Kinumpirma ni Liza ang buod ng sarili niyang sinabi, hindi ang attendance o bagong appointment.\",\n        \"feedback_en\": \"First: even with “according to the neighbor,” “not interested” is a judgment about motive, not an established fact. Second: the report is clearly attributed to Liza and identifies a gap for verification; this is the appropriate initial note. Third: one report does not establish that every appointment was canceled. In the ending, Liza clarifies that she could not attend when her sister was away and is unsure whether the center canceled it. Corrected note: Liza first reported cancellation; she clarified the barrier and uncertainty. No card was shown. Date/status remain unconfirmed; ask the authorized midwife to check the relevant record under the local access procedure. Liza confirms the summary of her own report, not attendance or a new appointment.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m6.assess\",\n      \"read_ids\": [\n        \"sources\",\n        \"relevant-detail\",\n        \"conflicting-accounts\",\n        \"verify-gap\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-sources\",\n        \"slide-relevant-detail\",\n        \"slide-conflicting-accounts\",\n        \"slide-verify-gap\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda\",\n        \"privacy\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        28\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        18,\n        19,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"tesda\",\n      \"title\": \"TESDA Barangay Health Services NC II Rev.01 (2019), unit 400311215\",\n      \"pdf_pages\": [\n        26,\n        27,\n        28\n      ],\n      \"url\": \"https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf\"\n    },\n    {\n      \"id\": \"privacy\",\n      \"title\": \"NPC Data Privacy Act IRR, sections 18, 19 and 34\",\n      \"url\": \"https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"gibs-portrait\",\n      \"path\": \"/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png\",\n      \"content_hash\": \"0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02\",\n      \"alt_fil\": \"Si Gibs, kathang-isip na lalaking BHW, nakasuot ng teal na polo at may nakasarang clipboard.\",\n      \"alt_en\": \"Gibs, a fictional male BHW, wears a teal polo and holds a closed clipboard.\",\n      \"caption_fil\": \"Si Gibs ang BHW sa lahat ng aralin sa 1.6.\",\n      \"caption_en\": \"Gibs is the BHW throughout lessons 1.6.\",\n      \"provenance\": \"New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.\",\n      \"review_status\": \"approved\"\n    },\n    {\n      \"id\": \"record-sources\",\n      \"path\": \"/training/bhw-1-6/gibs-record-sources-ba56fae568d9.png\",\n      \"content_hash\": \"ba56fae568d98877298d1e1683a4473b2213d92a2e3b1a83471169a03cb07a9b\",\n      \"alt_fil\": \"Ipinapakita ni Gibs kay Liza at sa kapitbahay ang apat na magkahiwalay na source card.\",\n      \"alt_en\": \"Gibs shows Liza and the neighbor four separate source cards.\",\n      \"caption_fil\": \"Ipinapakita ni Gibs kay Liza at sa kapitbahay ang apat na magkahiwalay na source card. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.\",\n      \"caption_en\": \"Gibs shows Liza and the neighbor four separate source cards. Fictional rehearsal; labels and details are in the text.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"record-relevant-detail\",\n      \"path\": \"/training/bhw-1-6/gibs-record-relevant-detail-cbaca2677899.png\",\n      \"content_hash\": \"cbaca267789931f65ffd14bcf3d370cf413f64bfd0cd86519de06fe3376ce68f\",\n      \"alt_fil\": \"Pumipili si Gibs ng isang kaugnay na card habang nakikinig kay Liza; nakasara ang folder.\",\n      \"alt_en\": \"Gibs selects a relevant card while listening to Liza; the folder is closed.\",\n      \"caption_fil\": \"Pumipili si Gibs ng isang kaugnay na card habang nakikinig kay Liza; nakasara ang folder. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.\",\n      \"caption_en\": \"Gibs selects a relevant card while listening to Liza; the folder is closed. Fictional rehearsal; labels and details are in the text.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"record-conflicting-accounts\",\n      \"path\": \"/training/bhw-1-6/gibs-record-conflicting-accounts-cfeb4564637f.png\",\n      \"content_hash\": \"cfeb4564637feb91a0102300c09e16aa2ab4b842046eae9e090a86f2fa8022b3\",\n      \"alt_fil\": \"Magkahiwalay na card ang hawak ni Gibs habang magkaibang kuwento ang sinasabi ni Liza at ng kapitbahay.\",\n      \"alt_en\": \"Gibs keeps two source cards separate while Liza and the neighbor give different accounts.\",\n      \"caption_fil\": \"Magkahiwalay na card ang hawak ni Gibs habang magkaibang kuwento ang sinasabi ni Liza at ng kapitbahay. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.\",\n      \"caption_en\": \"Gibs keeps two source cards separate while Liza and the neighbor give different accounts. Fictional rehearsal; labels and details are in the text.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"record-verify-gap\",\n      \"path\": \"/training/bhw-1-6/gibs-record-verify-gap-f09e88737873.png\",\n      \"content_hash\": \"f09e8873787328492f2090056e0e9792d86da4ca5f098f823fb7272812b87359\",\n      \"alt_fil\": \"Ipinapakita ni Gibs kay Liza ang unang note at ang note na may correction tab.\",\n      \"alt_en\": \"Gibs shows Liza the first note and a note with a correction tab.\",\n      \"caption_fil\": \"Ipinapakita ni Gibs kay Liza ang unang note at ang note na may correction tab. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.\",\n      \"caption_en\": \"Gibs shows Liza the first note and a note with a correction tab. Fictional rehearsal; labels and details are in the text.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"record-practice\",\n      \"path\": \"/training/bhw-1-6/gibs-record-practice-9b5ba7813e7e.png\",\n      \"content_hash\": \"9b5ba7813e7e318a395ca072af8e7adabc876ea025050047db3811595ea3fc52\",\n      \"alt_fil\": \"Nag-aayos ng cards sa apat na hanay ang triad habang may tagamasid na may checklist.\",\n      \"alt_en\": \"A triad sorts cards into four columns while an observer holds a checklist.\",\n      \"caption_fil\": \"Nag-aayos ng cards sa apat na hanay ang triad habang may tagamasid na may checklist. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.\",\n      \"caption_en\": \"A triad sorts cards into four columns while an observer holds a checklist. Fictional rehearsal; labels and details are in the text.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"record-check\",\n      \"path\": \"/training/bhw-1-6/gibs-record-check-745369cea069.png\",\n      \"content_hash\": \"745369cea069a3de98cd2564df9a90c3e8b2a0593ae8edd45ea11f8d217a110c\",\n      \"alt_fil\": \"Tatlong pantay na note ang nasa harap nina Gibs at Liza; wala pang piniling sagot.\",\n      \"alt_en\": \"Three equal notes lie before Gibs and Liza; no answer has been selected.\",\n      \"caption_fil\": \"Tatlong pantay na note ang nasa harap nina Gibs at Liza; wala pang piniling sagot. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.\",\n      \"caption_en\": \"Three equal notes lie before Gibs and Liza; no answer has been selected. Fictional rehearsal; labels and details are in the text.\",\n      \"provenance\": \"Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"communication-record-story\",\n      \"alt_fil\": \"Anim na narrated beat: inihihiwalay ni Gibs ang mga pinagmulan at itinatala ang paglilinaw ni Liza nang walang hula.\",\n      \"alt_en\": \"Six narrated beats: Gibs separates sources and records Liza’s clarification without guessing.\",\n      \"caption_fil\": \"Tapat na tala, malinaw na pinagmulan at angkop na beripikasyon.\",\n      \"caption_en\": \"An honest note, clear attribution and suitable verification.\",\n      \"provenance\": \"Lesson 1.6.4 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-6/communication-record-gemini-fil-de1a2b271438.mp4\",\n          \"content_hash\": \"de1a2b2714386e31f9611f0a4a59611cc70948aa492aad6622b93e68b6636a7a\",\n          \"duration_s\": 68,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-6/communication-record-gemini-fil-737e6925f693.vtt\",\n            \"content_hash\": \"737e6925f6930928e281b7cede3c45cc543097fd0cc09862344520eea8aae722\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg\",\n            \"content_hash\": \"4f4c14d18266bd04ebe0c1046d63f6573efad019c76bb7cd376078c02ae43c70\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-6/communication-record-gemini-en-871f25aaccb6.mp4\",\n          \"content_hash\": \"871f25aaccb6ee25e2fa7d47d91fb3bd26abb2038f666d922e4d9f844d86df89\",\n          \"duration_s\": 60,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-6/communication-record-gemini-en-f39072e67afd.vtt\",\n            \"content_hash\": \"f39072e67afd1593d29550aa54bdd4e9a080356559574755385344932ad5501c\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-6/communication-record-gemini-en-ae6253199d63-poster.jpg\",\n            \"content_hash\": \"ae6253199d633ec0032c9f5e1d586326477898aa9212fa2722ddd06ad1de4d97\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg\",\n      \"content_hash\": \"4f4c14d18266bd04ebe0c1046d63f6573efad019c76bb7cd376078c02ae43c70\"\n    }\n  ],\n  \"featured_asset_id\": \"communication-record-story\"\n}\n",
+  "reviewed_source_sha256": {
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/competency.json": "b53b7148981b1fa10f75208f1656379fe8f5b87e574550127246df86bbf2f045",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.en.md": "d0bc88e24f6fd8158624957417cc57b8992442cec7a19a6c4cc822461df28357",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.fil.md": "7c2cbb3f3015ce566d1d5440daa1e7a50cca5efebd7a8ed0a7136119bc671594",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json": "263f8556df35d60066f69f509f9cb22a8e55493af0feddccd88a5a3e19f227c8",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.en.md": "738d1af5233f31e57f37f6323a323b5f28fb232f493c2bcf33401aad3482b0dc",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.fil.md": "1d5e8e616d87336b4e94cc5dec2301d2fb8cd97cff17e605cf6928dbe30293f1",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/slides.json": "9369cf42c7287f31d85ff596a9b1735d8133f86100937596bafa579d884c9f9f",
+    "remotion/src/Root.tsx": "0655025b49acff0533a9a8bbab2bbe0df245670ea8a26d7ca9c6a30d1cfac237",
+    "src/components/elearning/reference-lessons.tsx": "6945051e5519d8afc87c81b976f5b2ffc6ca5666f892eaa721306b8eca2aa1e6",
+    "scripts/lib/reference-narration.mjs": "c4b5e3daf3da7319318e3f66dfdce2ff463c1067a81e68c385c289d3c6191b33",
+    "content/training/day1-basic-competencies/narration.json": "d08a89d5256be80ac8788349a217c5cbfbd76b9d4ea29bbb285328efb14b585d",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b"
+  },
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/competency.json": "b53b7148981b1fa10f75208f1656379fe8f5b87e574550127246df86bbf2f045",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.en.md": "d0bc88e24f6fd8158624957417cc57b8992442cec7a19a6c4cc822461df28357",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/facilitator.fil.md": "7c2cbb3f3015ce566d1d5440daa1e7a50cca5efebd7a8ed0a7136119bc671594",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json": "495c540197127bdf33fbbaf0408cb29486516e5972aabb067cfca93408b3bd12",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.en.md": "738d1af5233f31e57f37f6323a323b5f28fb232f493c2bcf33401aad3482b0dc",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/read.fil.md": "1d5e8e616d87336b4e94cc5dec2301d2fb8cd97cff17e605cf6928dbe30293f1",
+    "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/slides.json": "9369cf42c7287f31d85ff596a9b1735d8133f86100937596bafa579d884c9f9f",
+    "remotion/src/Root.tsx": "b02b60f9bb5f2f815deca7d6f7cde4cea5686e460c00ecc62c206232d0906ee8",
+    "src/components/elearning/reference-lessons.tsx": "d78003dfd8eb6c01066db76a8f18bfa60e2b054f501b8fe707c2b40469f8e485",
+    "scripts/lib/reference-narration.mjs": "2dce94b8a64269e7454cab621bc690e23aa577bfa38771fb860ad58e5de0f3ec",
+    "content/training/day1-basic-competencies/narration.json": "19e57ac0c7de91430146cf2443034a832cd8c86128f7113672f6f3c088a57fc5",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b"
+  },
+  "approved_media": [
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/check.en.e8ce6fa508a4.mp3",
+      "sha256": "ff61e519a38033bf3bf4313eca97a3bbb5afb904676840deb584d5bd602a26cf"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/check.fil.695d5a2fd3a1.mp3",
+      "sha256": "ba62fc0e9ffeead50ded44d210db613955e182995a7e4818790b5fb35e786989"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.en.c93fc9fe955a.mp3",
+      "sha256": "500f2adf6b1906c0341afdfcd68ae204b4e70bd2e530ee2c54f6fc7e053ac9ce"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/conflicting-accounts.fil.4fd6e95f01b2.mp3",
+      "sha256": "e4aecb1d2d121d846b154e41c6f9152a241144a399a2d78f01bc7ee9815b1063"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/practice.en.e0435701e2cd.mp3",
+      "sha256": "75f1569f177e58991f3323cd3e77796d918d1fc3b96de4e17f5a39d71509629f"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/practice.fil.87f74220d8cd.mp3",
+      "sha256": "9ea2adb6ff5b57769a7ce73c57e7874364977b73f92dbc1a2862df57e684944e"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/relevant-detail.en.11baffeb4bf5.mp3",
+      "sha256": "708b0871ff1151adebe5b9b549af96ee5198f3e47e302aab258e1da25c1e8a89"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/relevant-detail.fil.b93d3bd10482.mp3",
+      "sha256": "51a41ca5570ba9eda16a5ba151c5d5fa943626949f8dfa1a3d360148b423b7ae"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/sources.en.3260609f5d0d.mp3",
+      "sha256": "8a9898c46dfcb3153a4aeada5adc0896f5e9dbb91ae307021f09be61ea4fe879"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/sources.fil.4e559b947e5b.mp3",
+      "sha256": "25bc6e9aabbde9716073cea943ef122cdd9a197b571cdef22abe562cbf5eb1e6"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/verify-gap.en.da33812a35a3.mp3",
+      "sha256": "21e3a25c32a04a40d7266bf3b80ddf67a634512b17777605b80455f4641cdb3b"
+    },
+    {
+      "path": "/training/audio/06-komunikasyon/communication-record/verify-gap.fil.b83fc1126c81.mp3",
+      "sha256": "48374458005f6dc00ee06daae786d62b1419b23967ab97309f5910578eb5ddca"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-record-gemini-en-871f25aaccb6.mp4",
+      "sha256": "871f25aaccb6ee25e2fa7d47d91fb3bd26abb2038f666d922e4d9f844d86df89"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-record-gemini-en-ae6253199d63-poster.jpg",
+      "sha256": "ae6253199d633ec0032c9f5e1d586326477898aa9212fa2722ddd06ad1de4d97"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-record-gemini-en-f39072e67afd.vtt",
+      "sha256": "f39072e67afd1593d29550aa54bdd4e9a080356559574755385344932ad5501c"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg",
+      "sha256": "4f4c14d18266bd04ebe0c1046d63f6573efad019c76bb7cd376078c02ae43c70"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-record-gemini-fil-737e6925f693.vtt",
+      "sha256": "737e6925f6930928e281b7cede3c45cc543097fd0cc09862344520eea8aae722"
+    },
+    {
+      "path": "/training/bhw-1-6/communication-record-gemini-fil-de1a2b271438.mp4",
+      "sha256": "de1a2b2714386e31f9611f0a4a59611cc70948aa492aad6622b93e68b6636a7a"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "sha256": "0e78ae41b8ede53907cf4807574edab773514eedd6e03324e36df4309dcf2b02"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-check-745369cea069.png",
+      "sha256": "745369cea069a3de98cd2564df9a90c3e8b2a0593ae8edd45ea11f8d217a110c"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-conflicting-accounts-cfeb4564637f.png",
+      "sha256": "cfeb4564637feb91a0102300c09e16aa2ab4b842046eae9e090a86f2fa8022b3"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-practice-9b5ba7813e7e.png",
+      "sha256": "9b5ba7813e7e318a395ca072af8e7adabc876ea025050047db3811595ea3fc52"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-relevant-detail-cbaca2677899.png",
+      "sha256": "cbaca267789931f65ffd14bcf3d370cf413f64bfd0cd86519de06fe3376ce68f"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-sources-ba56fae568d9.png",
+      "sha256": "ba56fae568d98877298d1e1683a4473b2213d92a2e3b1a83471169a03cb07a9b"
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-verify-gap-f09e88737873.png",
+      "sha256": "f09e8873787328492f2090056e0e9792d86da4ca5f098f823fb7272812b87359"
+    }
+  ]
+}

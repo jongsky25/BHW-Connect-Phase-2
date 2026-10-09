@@ -19,6 +19,7 @@
         "m6.assess"
       ],
       "asset_ids": [
+        "record-sources",
         "gibs-portrait"
       ],
       "takeaway_fil": "Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.",
@@ -26,13 +27,39 @@
       "check": null
     },
     {
+      "id": "relevant-detail",
+      "concept_ids": [
+        "m6.assess"
+      ],
+      "asset_ids": [
+        "record-relevant-detail"
+      ],
+      "takeaway_fil": "Itala lamang ang kailangan sa awtorisadong gawain; ipaliwanag ang gamit at sundin ang lokal na patakaran.",
+      "takeaway_en": "Record only what the authorized task needs; explain its use and follow local policy.",
+      "check": null
+    },
+    {
       "id": "conflicting-accounts",
       "concept_ids": [
         "m6.assess"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "record-conflicting-accounts"
+      ],
       "takeaway_fil": "Kapag magkaiba ang kuwento, maglinaw at magberipika bago magpasya.",
       "takeaway_en": "When accounts differ, clarify and verify before deciding.",
+      "check": null
+    },
+    {
+      "id": "verify-gap",
+      "concept_ids": [
+        "m6.assess"
+      ],
+      "asset_ids": [
+        "record-verify-gap"
+      ],
+      "takeaway_fil": "Ang pagwawasto ay may pinagmulan; ang kulang ay hindi pa tiyak hangga’t walang angkop na beripikasyon.",
+      "takeaway_en": "A correction keeps its source; a gap stays unconfirmed until suitable verification is available.",
       "check": null
     },
     {
@@ -40,7 +67,9 @@
       "concept_ids": [
         "m6.assess"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "record-practice"
+      ],
       "takeaway_fil": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
       "takeaway_en": "Clear sources and explicit gaps prevent a guess becoming an official record.",
       "check": null
@@ -50,7 +79,9 @@
       "concept_ids": [
         "m6.assess"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "record-check"
+      ],
       "takeaway_fil": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
       "takeaway_en": "Clear sources and explicit gaps prevent a guess becoming an official record.",
       "check": {
@@ -71,8 +102,8 @@
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "Ang ikalawang tala ay may pinagmulan at malinaw na puwang sa impormasyon. Ang una ay inuuna ang husga; ang ikatlo ay nagpapalawak ng hindi pa natiyak na pahayag.",
-        "feedback_en": "The second record identifies the source and the information gap. The first prioritizes a judgment; the third expands an unverified claim."
+        "feedback_fil": "Una: kahit may “ayon sa kapitbahay,” ang “hindi interesado” ay husga sa motibo, hindi natiyak na katotohanan. Ikalawa: ang ulat ay malinaw na kay Liza at may puwang na ibeberipika; ito ang angkop na paunang tala. Ikatlo: hindi pinatutunayan ng isang ulat na kinansela ang lahat ng appointment. Sa wakas, nilinaw ni Liza na hindi siya nakapunta nang wala ang kapatid at hindi niya tiyak kung kinansela ng center. Iwinastong tala: unang sinabi ni Liza ang pagkansela; nilinaw niya ang hadlang at kawalan ng katiyakan. Walang card na naipakita. Hindi pa nakumpirma ang petsa/status; hilingin sa awtorisadong midwife na tingnan ang kaugnay na rekord ayon sa lokal na access procedure. Kinumpirma ni Liza ang buod ng sarili niyang sinabi, hindi ang attendance o bagong appointment.",
+        "feedback_en": "First: even with “according to the neighbor,” “not interested” is a judgment about motive, not an established fact. Second: the report is clearly attributed to Liza and identifies a gap for verification; this is the appropriate initial note. Third: one report does not establish that every appointment was canceled. In the ending, Liza clarifies that she could not attend when her sister was away and is unsure whether the center canceled it. Corrected note: Liza first reported cancellation; she clarified the barrier and uncertainty. No card was shown. Date/status remain unconfirmed; ask the authorized midwife to check the relevant record under the local access procedure. Liza confirms the summary of her own report, not attendance or a new appointment."
       }
     }
   ],
@@ -81,19 +112,25 @@
       "id": "m6.assess",
       "read_ids": [
         "sources",
+        "relevant-detail",
         "conflicting-accounts",
+        "verify-gap",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-sources",
+        "slide-relevant-detail",
         "slide-conflicting-accounts",
+        "slide-verify-gap",
         "slide-practice",
         "slide-check"
       ],
       "source_ids": [
         "facilitator",
-        "manual"
+        "manual",
+        "tesda",
+        "privacy"
       ]
     }
   ],
@@ -115,6 +152,21 @@
         30
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "tesda",
+      "title": "TESDA Barangay Health Services NC II Rev.01 (2019), unit 400311215",
+      "pdf_pages": [
+        26,
+        27,
+        28
+      ],
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
+    },
+    {
+      "id": "privacy",
+      "title": "NPC Data Privacy Act IRR, sections 18, 19 and 34",
+      "url": "https://privacy.gov.ph/implementing-rules-regulations-data-privacy-act-2012/"
     }
   ],
   "assets": [
@@ -128,6 +180,112 @@
       "caption_en": "Gibs is the BHW throughout lessons 1.6.",
       "provenance": "New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record.",
       "review_status": "approved"
+    },
+    {
+      "id": "record-sources",
+      "path": "/training/bhw-1-6/gibs-record-sources-ba56fae568d9.png",
+      "content_hash": "ba56fae568d98877298d1e1683a4473b2213d92a2e3b1a83471169a03cb07a9b",
+      "alt_fil": "Ipinapakita ni Gibs kay Liza at sa kapitbahay ang apat na magkahiwalay na source card.",
+      "alt_en": "Gibs shows Liza and the neighbor four separate source cards.",
+      "caption_fil": "Ipinapakita ni Gibs kay Liza at sa kapitbahay ang apat na magkahiwalay na source card. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+      "caption_en": "Gibs shows Liza and the neighbor four separate source cards. Fictional rehearsal; labels and details are in the text.",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+      "review_status": "approved"
+    },
+    {
+      "id": "record-relevant-detail",
+      "path": "/training/bhw-1-6/gibs-record-relevant-detail-cbaca2677899.png",
+      "content_hash": "cbaca267789931f65ffd14bcf3d370cf413f64bfd0cd86519de06fe3376ce68f",
+      "alt_fil": "Pumipili si Gibs ng isang kaugnay na card habang nakikinig kay Liza; nakasara ang folder.",
+      "alt_en": "Gibs selects a relevant card while listening to Liza; the folder is closed.",
+      "caption_fil": "Pumipili si Gibs ng isang kaugnay na card habang nakikinig kay Liza; nakasara ang folder. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+      "caption_en": "Gibs selects a relevant card while listening to Liza; the folder is closed. Fictional rehearsal; labels and details are in the text.",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+      "review_status": "approved"
+    },
+    {
+      "id": "record-conflicting-accounts",
+      "path": "/training/bhw-1-6/gibs-record-conflicting-accounts-cfeb4564637f.png",
+      "content_hash": "cfeb4564637feb91a0102300c09e16aa2ab4b842046eae9e090a86f2fa8022b3",
+      "alt_fil": "Magkahiwalay na card ang hawak ni Gibs habang magkaibang kuwento ang sinasabi ni Liza at ng kapitbahay.",
+      "alt_en": "Gibs keeps two source cards separate while Liza and the neighbor give different accounts.",
+      "caption_fil": "Magkahiwalay na card ang hawak ni Gibs habang magkaibang kuwento ang sinasabi ni Liza at ng kapitbahay. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+      "caption_en": "Gibs keeps two source cards separate while Liza and the neighbor give different accounts. Fictional rehearsal; labels and details are in the text.",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+      "review_status": "approved"
+    },
+    {
+      "id": "record-verify-gap",
+      "path": "/training/bhw-1-6/gibs-record-verify-gap-f09e88737873.png",
+      "content_hash": "f09e8873787328492f2090056e0e9792d86da4ca5f098f823fb7272812b87359",
+      "alt_fil": "Ipinapakita ni Gibs kay Liza ang unang note at ang note na may correction tab.",
+      "alt_en": "Gibs shows Liza the first note and a note with a correction tab.",
+      "caption_fil": "Ipinapakita ni Gibs kay Liza ang unang note at ang note na may correction tab. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+      "caption_en": "Gibs shows Liza the first note and a note with a correction tab. Fictional rehearsal; labels and details are in the text.",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+      "review_status": "approved"
+    },
+    {
+      "id": "record-practice",
+      "path": "/training/bhw-1-6/gibs-record-practice-9b5ba7813e7e.png",
+      "content_hash": "9b5ba7813e7e318a395ca072af8e7adabc876ea025050047db3811595ea3fc52",
+      "alt_fil": "Nag-aayos ng cards sa apat na hanay ang triad habang may tagamasid na may checklist.",
+      "alt_en": "A triad sorts cards into four columns while an observer holds a checklist.",
+      "caption_fil": "Nag-aayos ng cards sa apat na hanay ang triad habang may tagamasid na may checklist. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+      "caption_en": "A triad sorts cards into four columns while an observer holds a checklist. Fictional rehearsal; labels and details are in the text.",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+      "review_status": "approved"
+    },
+    {
+      "id": "record-check",
+      "path": "/training/bhw-1-6/gibs-record-check-745369cea069.png",
+      "content_hash": "745369cea069a3de98cd2564df9a90c3e8b2a0593ae8edd45ea11f8d217a110c",
+      "alt_fil": "Tatlong pantay na note ang nasa harap nina Gibs at Liza; wala pang piniling sagot.",
+      "alt_en": "Three equal notes lie before Gibs and Liza; no answer has been selected.",
+      "caption_fil": "Tatlong pantay na note ang nasa harap nina Gibs at Liza; wala pang piniling sagot. Kathang-isip na pagsasanay; ang mga label at detalye ay nasa teksto.",
+      "caption_en": "Three equal notes lie before Gibs and Liza; no answer has been selected. Fictional rehearsal; labels and details are in the text.",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record.",
+      "review_status": "approved"
+    },
+    {
+      "id": "communication-record-story",
+      "alt_fil": "Anim na narrated beat: inihihiwalay ni Gibs ang mga pinagmulan at itinatala ang paglilinaw ni Liza nang walang hula.",
+      "alt_en": "Six narrated beats: Gibs separates sources and records Liza’s clarification without guessing.",
+      "caption_fil": "Tapat na tala, malinaw na pinagmulan at angkop na beripikasyon.",
+      "caption_en": "An honest note, clear attribution and suitable verification.",
+      "provenance": "Lesson 1.6.4 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-6/communication-record-gemini-fil-de1a2b271438.mp4",
+          "content_hash": "de1a2b2714386e31f9611f0a4a59611cc70948aa492aad6622b93e68b6636a7a",
+          "duration_s": 68,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-record-gemini-fil-737e6925f693.vtt",
+            "content_hash": "737e6925f6930928e281b7cede3c45cc543097fd0cc09862344520eea8aae722"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg",
+            "content_hash": "4f4c14d18266bd04ebe0c1046d63f6573efad019c76bb7cd376078c02ae43c70"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-6/communication-record-gemini-en-871f25aaccb6.mp4",
+          "content_hash": "871f25aaccb6ee25e2fa7d47d91fb3bd26abb2038f666d922e4d9f844d86df89",
+          "duration_s": 60,
+          "captions": {
+            "path": "/training/bhw-1-6/communication-record-gemini-en-f39072e67afd.vtt",
+            "content_hash": "f39072e67afd1593d29550aa54bdd4e9a080356559574755385344932ad5501c"
+          },
+          "poster": {
+            "path": "/training/bhw-1-6/communication-record-gemini-en-ae6253199d63-poster.jpg",
+            "content_hash": "ae6253199d633ec0032c9f5e1d586326477898aa9212fa2722ddd06ad1de4d97"
+          }
+        }
+      },
+      "path": "/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg",
+      "content_hash": "4f4c14d18266bd04ebe0c1046d63f6573efad019c76bb7cd376078c02ae43c70"
     }
-  ]
+  ],
+  "featured_asset_id": "communication-record-story"
 }

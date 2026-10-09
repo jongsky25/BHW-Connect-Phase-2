@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   draft:
-    if: github.head_ref == 'codex/lesson-165-enhancement-handoff'
+    if: github.head_ref == 'codex/lesson-165-enhancement-handoff' && !startsWith(github.event.pull_request.title, 'Release lesson')
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
