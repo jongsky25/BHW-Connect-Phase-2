@@ -1,57 +1,47 @@
-## [purpose] Purpose
+## [purpose] purpose
 
-Given the missed-visit case, write a problem statement with a specific event, source and information gap, without blame.
+Observe a learner write and revise a problem statement with a specific event/scope, attributed source and information gap, without blame. Definition belongs here; branching causes, scoring priorities and agreed action trials belong to lessons 1.7.2–1.7.4. Story viewing and quiz clicks are learning activities, not competency assessment.
 
-## [time-materials] Time and materials
+## [time-materials] time-materials
 
-35 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.
+35 guided minutes: 5 opening + 7 demonstration + 12 attempts/feedback/retry + 7 debrief + 4 transfer. Module allocation remains 35 + 50 + 45 + 50 = 180 minutes. Ten triads for 30 learners; each has bilingual fictional cards, role instructions, statement aid, paper and pen. SELF_STUDY_TIMING_PENDING Optional story/replay is additional, never part of the 35-minute group clock.
 
-## [prepare] Prepare
+## [prepare] prepare
 
-Prepare the two practice statements as cards. The count of three is fictional.
+Print one card/role kit per triad and one statement aid per learner. Use no real household names or records. Assign A/B/C roles; post the four-minute cycle and a visible clock. Plan to directly sample one BHW attempt in each triad during the 12-minute block. Ten samples do not certify 30 learners: label the other attempts not observed and arrange further observation. Do not promise enough direct observation for everyone in this session.
 
-## [opening] Opening
+## [opening] opening
 
-Which statement is a useful starting point for investigation?
+0–5 min. Ask: “What happened, according to whom, and what is still unknown?” Read the three fictional household cards. Expected: three reported missed visits, residents as sources, dates/records/barriers not checked. Ask: “Does silence tell us a person agrees?” Expected: no; invite a spoken correction without pressuring agreement.
 
-## [steps] Steps
+## [steps] steps
 
-Read the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.
+5–12 min demonstration. 5–7: sort event/guess/solution cards aloud. 7–9: model the three-column event/source/gap statement. 9–11: resident corrects Monday to Tuesday; ask “What should I correct?” and attribute the change. 11–12: show the revised statement while explicitly keeping attendance and cancellation unknown. 12–24: three four-minute role cycles. 24–31: debrief. 31–35: transfer.
 
-## [expected-answers] Expected answers
+## [expected-answers] expected-answers
 
-The third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation.
+Event: three households report nonattendance in the classroom case. Source: their direct reports to Carole, not her observation of attendance. Correction: the first resident says Tuesday rather than Monday; only the report is corrected. Gap: attendance record, exact dates and each barrier remain unchecked. “I had work” is one resident’s report; it is not everyone’s verified cause. An authorized local verification step is needed, not a guessed result.
 
-## [misconception] Common misconception
+## [misconception] misconception
 
-Substitutes a judgment about families or a chosen solution for the problem. Describe the event and evidence before choosing a cause or solution.
+“Uncooperative,” “lazy” and “do not want to get well” judge motivation. A poster is a proposed solution. Neither replaces a problem description. Three household reports do not establish prevalence in a barangay. Do not convert a nod, smile or silence into agreement. Do not erase conflicting reports. Immediate care must not wait for this routine classroom planning exercise; follow the applicable local procedure.
 
-## [practice] Practice activity
+## [practice] practice
 
-Write: “Three households in the example missed agreed visits; they report barriers to attending. Dates and each barrier still need clarification.” Compare with “The families lack discipline.” In pairs, underline the event, source and gap. Alone, use the same checklist. In your next problem report, seek the affected residents’ perspectives too.
+12–24 min: ten triads run three cycles: A/B/C as BHW/resident/observer, then B/C/A, then C/A/B. Each four-minute cycle: 0:00–1:00 first written attempt; 1:00–2:00 neutral question and resident correction; 2:00–2:45 observer feedback against event/scope, source, gap and no blame; 2:45–3:45 second written attempt; 3:45–4:00 rotate. The facilitator samples 3+3+4 triads, roughly one minute each including movement; assess only the product/action actually witnessed. Observer feedback supports practice and does not certify. Debrief 24–31: “What changed? Whose correction was it? What remains unknown?” Transfer 31–35: write one neutral question and one appropriate verification request for the next routine report, using fictional facts only.
 
-## [answer-key] Answer key
+## [answer-key] answer-key
 
-3. “Three households missed visits; check each household’s barrier.”
+Quiz option 1: a new poster is an untested solution. Option 2: unwillingness to get well is an unsupported judgment. Option 3 (index 2): specific event plus a question about each barrier; add source and gap. Corrected statement: “According to the three households’ direct reports to Carole, they missed agreed visits. The first resident corrected the reported day to Tuesday. Attendance records, exact dates and each household’s barrier remain unchecked.” Accept equivalent wording retaining those distinctions. No guessed common cause or promised solution.
 
-The third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation.
+## [observe] observe
 
-## [observe] Observe
+Use the single objective_index 0 indicator. Directly observe the attempt and revised written product. Independent complete event/scope, attribution, gap and no blame: kaya_na. A witnessed attempt needing a prompt on any element: kailangan_practice; specify feedback and retry. Persistent blame/solution substituted for the problem despite support: hindi_pa. An unwitnessed or absent attempt is not observed; record that separately rather than awarding a performance level. Keep peer checks separate from facilitator judgment; schedule subsequent direct observation for unsampled learners.
 
-States the event and scope, identifies the source, names one information gap and avoids blame.
+## [support] support
 
-Ready: States the event and scope, identifies the source, names one information gap and avoids blame. Completes this without prompting.
+Scaffold: “According to ___, ___ happened in ___; ___ still needs checking.” Let the learner point to the source and unknown on cards; give one prompt, then ask for a new independent attempt. Read cards aloud or enlarge print; permit oral dictation of the same statement while a partner writes and reads it back. Solo: write from cards, expose the correction card, revise, compare with the answer key and retry; facilitator observation remains pending until directly witnessed. Do not lower the event/source/gap standard.
 
-Needs practice: Names an event but not its source or gap; ask who reported it and what still needs checking.
+## [sources-review] sources-review
 
-Not yet: Substitutes a judgment about families or a chosen solution for the problem.
-
-Mark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.
-
-## [support] Support
-
-Names an event but not its source or gap; ask who reported it and what still needs checking. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.
-
-## [sources-review] Sources and review notes
-
-Draft for review. DOH Facilitator Guide: PDF 29; BHW Reference Manual: PDF 19, 20, 21. The source table is an image; this draft inherits the earlier implementation plan’s verified interpretation. Rosario is a separate ZFF case source. The historical account is not clinical advice. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.
+Draft authoring adaptation, not a DOH quotation. Inspect original Facilitator PDF19 (printed12 competency table) and PDF29 (printed22 topic), Reference PDF19–21, and deck PDF59–66; cite only inspected passages in the accompanying source audit. The three-hour source topic and this authored 35-minute lesson allocation are distinct. TESDA mapping must be confirmed from its original regulation before claiming a unit code; no unverified unit is asserted here. Human listening, owner content review and local access/privacy/referral-policy SME signoff are pending. Follow existing authorized local procedures; no absolute secrecy, universal deletion rule or newly granted record access.
