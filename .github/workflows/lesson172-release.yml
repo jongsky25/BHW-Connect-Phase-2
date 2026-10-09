@@ -23,6 +23,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Verify complete suite with the bounded upstream failure
+        run: node scripts/lesson-172-release-check.mjs
       - name: Verify exact approval, source and public media bytes
         run: |
           set -euo pipefail
@@ -118,6 +120,7 @@ jobs:
         with:
           name: lesson172-live-release-${{ github.sha }}
           path: |
+            lesson-172-release-unit-tests.json
             lesson-172-before.json
             lesson-172-after.json
             lesson-172-live-smoke.json
