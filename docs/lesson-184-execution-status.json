@@ -33,5 +33,11 @@
     "lesson": "problem-prioritize (1.7.3)",
     "main_commit": "f4bf3c25ec498cabac0b6e851337b312ff6333e7",
     "evidence": "reproduced on clean main worktree; 12 stale 1.7.3 tracks; non-target selections and media preserved"
-  }
+  },
+  "audio_size_bytes": {
+    "fil": 2197003,
+    "en": 2036507
+  },
+  "audio_size_note": "Full six-screen teaching at 32 kbps exceeds the inherited 1 MB/language recommendation; retained complete teaching and actual byte totals for owner review.",
+  "local_e2e_attempt": "Disposable Supabase image pull hit registry rate limit and disk exhaustion; removed only task-downloaded images; verification continues in CI."
 }
