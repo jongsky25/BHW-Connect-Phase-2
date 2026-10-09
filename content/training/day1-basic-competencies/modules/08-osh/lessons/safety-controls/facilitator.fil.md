@@ -8,6 +8,8 @@ Pumili ng kontrol para sa limang hazard group at ipaliwanag ang paghinto, contac
 
 Para sa 30 learner: sampung set ng limang pares, unsafe-alternative cards, sampung role/checklist sheet at control/pause aid para sa bawat isa. Gumamit ng papel, panulat, walang-lamang dummy container na walang karayom at may fill line, magaan na bag at matatag na upuan. Walang tunay na sharps, body fluids, chemicals, masakit na exercise o live injury.
 
+Aktuwal na audio timing: pending.
+
 ## [prepare] Maghanda
 
 Tiyakin sa awtorisadong clinical trainer ang lokal na pagpapalit ng sharps box, saklaw ng pagsasanay, PPE/hand hygiene, reporting contact, init/ruta at awtoridad sa paghinto/pagbalik bago demonstration. Itala ang hindi pa tiyak bilang pending; huwag mag-imbento ng patakaran. Magkaiba ang source audit at clinical review. Tiyakin ang access, upuan at gustong wika. Basahin ang limang kathang-isip na facts at honest unknowns sa print kit. Huwag gumamit ng tunay na insidente o rekord ng learner/pasyente.

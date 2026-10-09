@@ -1,0 +1,353 @@
+{
+  "status": "original PDFs and listed authoritative webpage passages inspected; clinical review pending",
+  "original_pdfs": [
+    {
+      "source": "reference",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "pdf_pages_extracted": [
+        21,
+        22,
+        23
+      ],
+      "page_count": 150,
+      "url": "https://drive.google.com/uc?export=download&id=13auqmQNRLevwxTm3lkMRHX13U1_d0TYs"
+    },
+    {
+      "source": "facilitator",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "pdf_pages_extracted": [
+        19,
+        30
+      ],
+      "page_count": 126,
+      "url": "https://drive.google.com/uc?export=download&id=1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W"
+    },
+    {
+      "source": "deck",
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "pdf_pages_extracted": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "page_count": 78,
+      "url": "https://drive.google.com/uc?export=download&id=1ZDIJiTltEzJVFcy-XSA0NivWNvfAKfhY"
+    },
+    {
+      "source": "tesda",
+      "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+      "pdf_pages_extracted": [
+        5,
+        29
+      ],
+      "page_count": 140,
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
+    }
+  ],
+  "original_page_images_visually_inspected": [
+    {
+      "file": "reference-p22.png",
+      "sha256": "f6ca0a2bce2f66a4c8b1d1957368bdd2538c6b1520c99d20b8d43278a059135e"
+    },
+    {
+      "file": "reference-p23.png",
+      "sha256": "d2ca7c717eb617e747b3bb1b656db56892be94e2c84a356f7ab74bc44a292bf8"
+    },
+    {
+      "file": "facilitator-p19.png",
+      "sha256": "f0041c70a2291a1f7def0f3ebe4329b2d2513f93be27dace2fc199116e1aaa7f"
+    },
+    {
+      "file": "facilitator-p30.png",
+      "sha256": "fe30054c926d9fae78864084113314d253fd00ae4d3364b1ba3bf2c27f642356"
+    },
+    {
+      "file": "deck-p70.png",
+      "sha256": "9b4d6cb37b2615d2601d8d779e2760d4eebf4326e80b01c90f6063bc87558ba6"
+    },
+    {
+      "file": "deck-p71.png",
+      "sha256": "8daad1d683e5decef83a0ae877ff3d8d8cd4aa9cf86f993d9f0e63d8d1557c44"
+    },
+    {
+      "file": "deck-p73.png",
+      "sha256": "b56c87305919427d9ceb009c8148a9b2087aa56390f2e323178ce8239face367"
+    },
+    {
+      "file": "deck-p74.png",
+      "sha256": "320b3f570a8da55c1e5bc028fcc7937447978b5f665416065fb9d936c5d55574"
+    },
+    {
+      "file": "deck-p75.png",
+      "sha256": "c23a0bfa98c75119060efbe5f89c3b3fee82fb952db776a7cdca94e1d5a5112b"
+    }
+  ],
+  "text_pages_inspected": {
+    "reference": [
+      21
+    ],
+    "facilitator": [
+      30
+    ],
+    "deck": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "tesda": [
+      29
+    ]
+  },
+  "page_mapping": {
+    "reference": "PDF 21/22/23 = printed 13/14/15; the five-group hazard table spans PDF 22–23",
+    "facilitator": "PDF 19 = printed 12 (competency/hour table); PDF 30 = printed 23 (OSH recommendation)",
+    "deck": "Original deck has 78 PDF pages, matching slide labels 1–78. OSH is slides 69–78; inventory incorrectly says 74–83.",
+    "tesda": "PDF 29 = printed 25; unit 400311216, Identify OSH compliance requirements / Prepare OSH requirements / Perform tasks according to policies. PDF 5 lists units; not used as clinical evidence."
+  },
+  "findings": [
+    "Facilitator Guide PDF 19 and 30 support four hours. The 45+60+60+75 allocation preserves 240 minutes; the digital run sheet is not competency certification.",
+    "Five groups: needlestick/sharps, infection (including vectors), musculoskeletal pain, workload stress, accidents (including heat/threats).",
+    "Manual tables are image content not recoverable from the stored text transcriptions; visually checked originals govern this audit.",
+    "Deck exercise 70–71 concerns needlestick/reporting; retained lesson quiz is the existing nearly-full container adaptation, not a copied original quiz.",
+    "Manual/slide exercise advice is qualified to avoid painful activity; demonstrations use dummy equipment only.",
+    "Manual/deck insurance references do not establish eligibility; no benefit promise is added.",
+    "WHO page supports standard precautions and ventilation; statistics and specialist injection/vaccination instructions are not imported as BHW task authority.",
+    "CDC passage supports immediate medical evaluation and reporting after exposure. Local procedures/authorized provider determine assessment; no drug/dose/deadline or US emergency number is taught.",
+    "No authenticated medical outcome, local policy agreement or observed container replacement is claimed."
+  ],
+  "web_passages": [
+    {
+      "url": "https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections",
+      "retrieved_at": "2026-10-09T08:03:23.424426+00:00",
+      "raw_html_sha256": "41660bd88acd0d02e59d3733401c13135cbf4c853d880d9f9fbae7b8e67e7cf0",
+      "extracted_text_sha256": "f424e16384b89fcf07baaf66090fcf6da7b1482fbb91fa157db3fd6e92ae72d2",
+      "inspected_excerpt": "Occupational infections\nNeedlestick injuries contribute to 39%, 37% and 4.4% of hepatitis C, hepatitis B and HIV infections respectively (1).\nThe prevalence of acute hepatitis B infection among health workers globally is 5.3% (2).\nAbout 54% of health workers in low- and middle-income countries have latent TB infection (3).\nPreventive measures\nAdhere to strict infection prevention and control measures\n2 February 2021\nCOVID-19: Occupational health and safety for health workers: interim guidance, 2 February 2021\nCOVID-19: Occupational health and safety for health workers: interim guidance, 2 February 2021\n18 November 2019\nMinimum requirements for infection prevention and control programmes\nMinimum requirements for infection prevention and control programmes\n1 November 2016\nGuidelines on core components of infection prevention and control programmes at the national and acute health care facility level\nGuidelines on core components of infection prevention and control programmes at the national and acute health care facility level\nObserve standard precautions for infection control - hand washing, respiratory hygiene, safe collection and disposal of health-care waste, environmental hygiene and use of personal protective equipment\n20 June 2022\nStandard precautions for the prevention and control of infections: aide-memoire\nStandard precautions for the prevention and control of infections: aide-memoire\n15 January 2009\nWHO guidelines on hand hygiene in health care\nWHO guidelines on hand hygiene in health care\nUse safety-engineered devices and follow good practices for safe injections\n1 January 2016\nWHO guideline on the use of safety-engineered syringes for intramuscular, intradermal and subcutaneous injections in health care settings\nWHO guideline on the use of safety-engineered syringes for intramuscular, intradermal and subcutaneous injections in health care settings\n6 January 2010\nWHO guidelines on drawing blood: best practices in phlebotomy\nWHO guidelines on drawing blood: best practices in phlebotomy\n3 January 2010\nWHO best practices for injections and related procedures toolkit\nWHO best practices for injections and related procedures toolkit\nProvide immunization at no cost to health workers. WHO recommendations on health workers’ vaccinations include Bacillus Calmette–Guérin (BCG), hepatitis B, polio, pertussis, diphtheria, measles, rubella, meningococcal, influenza, varicella, COVID-19 and cholera\n10 November 2023\nWHO SAGE Roadmap for prioritizing uses of COVID-19 vaccines\nWHO SAGE Roadmap for prioritizing uses of COVID-19 vaccines\n24 July 2022\nImplementation guide for vaccination of health workers\nImplementation guide for vaccination of health workers\n15 November 2016\nTechnical Note: The Use of Oral Cholera Vaccines for International Workers and Travelers to and from Cholera-Affected Countries\nTechnical Note: The Use of Oral Cholera Vaccines for International Workers and Travelers to and from Cholera-Affected Countries\nProvide health services for early detection, diagnosis, treatment, counselling and rehabilitation for HIV and TB\n22 September 2010\nJoint WHO/ILO policy guidelines on improving health worker access to prevention, treatment\nand care services for HIV and TB\nJoint WHO/ILO policy guidelines on improving health worker access to prevention, treatment\nand care services for HIV and TB\nProvide systematic latent TB infection testing and treatment for health workers in countries with a low TB incidence\n22 March 2021\nWHO consolidated guidelines on tuberculosis: module 2: screening: systematic screening for tuberculosis disease\nWHO consolidated guidelines on tuberculosis: module 2: screening: systematic screening for tuberculosis disease\n25 February 2020\nWHO consolidated guidelines on tuberculosis: module 1: prevention: tuberculosis preventive treatment\nWHO consolidated guidelines on tuberculosis: module 1: prevention: tuberculosis preventive treatment\n15 February 2018\nLatent tuberculosis infection: updated and consolidated guidelines for programmatic management\nLatent tuberculosis infection: updated and consolidated guidelines for programmatic management\nEnsure adequate ventilation in all indoor health-care settings\n18 November 2019\nMinimum requirements for infection prevention and control programmes\nMinimum requirements for infection prevention and control programmes\n15 February 2009\nWHO policy on TB infection control in health-care facilities, congregate settings and households\nWHO policy on TB infection control in health-care facilities, congregate settings and households\n14 January 2009\nNatural ventilation for infection control in health care settings\nNatural ventilation for infection control in health care settings\nConsider the use of ultraviolet germicidal irradiation (UVGI) for disinfection and prevention of airborne pathogens\n2 February 2021\nCOVID-19: Occupational health and safety for health workers: interim guidance, 2 February 2021\nCOVID-19: Occupational health and safety for health workers: interim guidance, 2 February 2021\n17 September 2013\nInfection prevention and control measures for acute respiratory infections in healthcare settings: an update\nInfection prevention and control measures for acute respiratory infections in healthcare settings: an update\n17 September 2013\nInfection prevention and control of epidemic- and pandemic-prone acute respiratory diseases in health care: WHO interim guidelines\nInfection prevention and control of epidemic- and pandemic-prone acute respiratory diseases in health care: WHO interim guidelines\nUse clinical triage for early identification of patients with respiratory infections to prevent transmission\n2 February 2021\nCOVID-19: Occupational health and safety for health workers: interim guidance, 2 February 2021\nCOVID-19: Occupational health and safety for health workers: interim guidance, 2 February 2021\n17 September 2013\nInfection prevention and control measures for acute respiratory infections in healthcare settings: an update\nInfection prevention and control measures for acute respiratory infections in healthcare settings: an update\n17 September 2013\nInfection prevention and control of epidemic- and pandemic-prone acute respiratory diseases in health care: WHO interim guidelines\nInfection prevention and control of epidemic- and pandemic-prone acute respiratory diseases in health care: WHO interim guidelines\nEnsure adequate supply, proper use and maintenance of well fitted personal protective equipment\n18 November 2019\nMinimum requirements for infection prevention and control programmes\nMinimum requirements for infection prevention and control programmes\n15 February 2009\nWHO policy on TB infection control in health-care facilities, congregate settings and households\nWHO policy on TB infection control in health-care facilities, congregate settings and households\n",
+      "excerpt_sha256": "fe670ce5e4baaeebd3fb07c9fb4a481a7eb66fefb9853b73f647d29ceb7b682e"
+    },
+    {
+      "url": "https://www.cdc.gov/niosh/healthcare/risk-factors/bloodborne-infectious-diseases.html",
+      "retrieved_at": "2026-10-09T08:03:23.424788+00:00",
+      "raw_html_sha256": "8c97319cd1455d3492171685e0a239c7ecdcad6ee48f41daff1cf54718920f2a",
+      "extracted_text_sha256": "bddd5c261bbe3c77b0f11949ebbadd22bfbcc0e84b58bd2bde212f517b8410f7",
+      "inspected_excerpt": "Exposure risk and treatment\nSharps injuries can cause exposure to bloodborne pathogens.\nHealthcare workers should be aware of exposure risks to\nhepatitis B\n,\nhepatitis C\n, and\nHIV\n. Hepatitis B and C cause serious liver damage. HIV disables the body’s immune system so it cannot fight infection. Exposure can occur by:\nA needlestick puncture\nAnother sharps injury\nContact with patient blood or other body fluids\nSubstances posing infection transmission risks include:\nBlood\nBody fluids, including saliva and urine contaminated with blood\nOther potentially infectious materials (semen; vaginal secretions; and cerebrospinal, synovial, pleural, peritoneal, pericardial, and amniotic fluids) or tissue\nConcentrated virus or other bloodborne pathogens\nTreatment\nWash puncture wounds, blood, or other bodily fluids with soap and water.\nProvide immediate care after exposure by taking the following steps:\nWash needlestick or sharp punctures and cuts with soap and water.\nFlush splashes to the nose, mouth, or skin with water.\nIrrigate eyes with clean water, saline, or sterile irrigants.\nReport the incident to your supervisor.\nImmediately seek medical care to determine risk associated with the exposure.\nPost-exposure prophylaxis\nHealthcare providers or workers should deliver post-exposure prophylaxis (PEP) for exposures posing infection transmission risks. Find recommendations for HBV, HCV, and HIV on the following pages below.\nResponding to HBV Exposures in Health Care Settings\nGuidelines for Health Care Personnel Exposed to Hepatitis C Virus\nClinical Guidance for PEP\n(HIV)\n",
+      "excerpt_sha256": "6626e7703cd8c12bf1334bc4ede27abcc1c190dc840a72178c798d4a54c791a3"
+    }
+  ],
+  "clinical_review": {
+    "status": "pending authorized local clinical trainer; source inspection is not signoff",
+    "items": [
+      "sharps handling/replacement",
+      "hand hygiene and task-specific PPE instruction",
+      "infection/vector/heat prevention advice",
+      "exposure/reporting routes",
+      "task scope and pause/resume authority"
+    ]
+  },
+  "owner_approval": false,
+  "private_evidence_files": [
+    {
+      "file": "cdc-exposure.txt",
+      "sha256": "bddd5c261bbe3c77b0f11949ebbadd22bfbcc0e84b58bd2bde212f517b8410f7",
+      "bytes": 9990
+    },
+    {
+      "file": "facilitator-p19.png",
+      "sha256": "f0041c70a2291a1f7def0f3ebe4329b2d2513f93be27dace2fc199116e1aaa7f",
+      "bytes": 193955
+    },
+    {
+      "file": "who-infections.txt",
+      "sha256": "f424e16384b89fcf07baaf66090fcf6da7b1482fbb91fa157db3fd6e92ae72d2",
+      "bytes": 10798
+    },
+    {
+      "file": "tesda-p5.png",
+      "sha256": "ebe42f0032a8a4947c576cd2d68f27a0c75e37df38ec6d94c8f9668b60d7eca2",
+      "bytes": 195316
+    },
+    {
+      "file": "reference-p23.png",
+      "sha256": "d2ca7c717eb617e747b3bb1b656db56892be94e2c84a356f7ab74bc44a292bf8",
+      "bytes": 389310
+    },
+    {
+      "file": "deck-p75.png",
+      "sha256": "c23a0bfa98c75119060efbe5f89c3b3fee82fb952db776a7cdca94e1d5a5112b",
+      "bytes": 83706
+    },
+    {
+      "file": "tesda-p5.txt",
+      "sha256": "72bad83044b4f97c0de770c73bec9651944e97def09fe8784c9b934bf442129b",
+      "bytes": 2451
+    },
+    {
+      "file": "deck-p69.png",
+      "sha256": "67da7b2d2a73a58c44b0e9265d8a23c180068fbf5f1141faf2ec8b5737bf1076",
+      "bytes": 59499
+    },
+    {
+      "file": "reference-p23.txt",
+      "sha256": "238903180cc104ec2c5d8b3f20c5bc61b389ec0a967df8cc208cdc7cd454174f",
+      "bytes": 3
+    },
+    {
+      "file": "deck-p76.txt",
+      "sha256": "6a22a1781d98379b1ee420d00fcf699c7fb327f575852c29ee7fcfcaedffdded",
+      "bytes": 425
+    },
+    {
+      "file": "deck-p77.png",
+      "sha256": "d1ce6524d5e1959485f3e170b61ab4bfe36dce7b329e606ba116be5397a2b1ec",
+      "bytes": 400556
+    },
+    {
+      "file": "deck-p74.png",
+      "sha256": "320b3f570a8da55c1e5bc028fcc7937447978b5f665416065fb9d936c5d55574",
+      "bytes": 112046
+    },
+    {
+      "file": "deck-p78.png",
+      "sha256": "ed14786c99e7bfab70f070d322c5943cf1ad3012f03d46698673c31f403a18bf",
+      "bytes": 292108
+    },
+    {
+      "file": "reference-p22.txt",
+      "sha256": "5537e928cb47335efd47224f636698b6fcd588c7592e0826f86afa3e62446c27",
+      "bytes": 157
+    },
+    {
+      "file": "deck-p69.txt",
+      "sha256": "45bebab628399f0742db2710e1676fdf4251596228eca0acaa740810913de2d8",
+      "bytes": 426
+    },
+    {
+      "file": "deck-p70.txt",
+      "sha256": "e3daa84ef1615d19aa7fa02544b5ffd0a3ffe3c2aa3c8cc1ea725bb273d5da0e",
+      "bytes": 476
+    },
+    {
+      "file": "tesda-p29.png",
+      "sha256": "b018f62e752f782e9e6bc60d28a40d254eba8b2e3e5a2306969505d18e11c19c",
+      "bytes": 127496
+    },
+    {
+      "file": "deck-p71.txt",
+      "sha256": "2523054c89d0e7932cedc663e1bdf359c040dc1b3d609b69a3b651e2240807f7",
+      "bytes": 475
+    },
+    {
+      "file": "who-infections-inspected-excerpt.txt",
+      "sha256": "fe670ce5e4baaeebd3fb07c9fb4a481a7eb66fefb9853b73f647d29ceb7b682e",
+      "bytes": 6843
+    },
+    {
+      "file": "tesda-p29.txt",
+      "sha256": "3e5fc4e9b542aa0180f01483af21e72a6ed4c1720a6c114ce3913abcf93220d5",
+      "bytes": 1457
+    },
+    {
+      "file": "deck-p72.png",
+      "sha256": "6615933e6120bfbbe7682463987e207c2c13abde52d897615deb8d2833496cba",
+      "bytes": 239926
+    },
+    {
+      "file": "deck-p78.txt",
+      "sha256": "4d157fe6755222b37ffe6d5cee838fe3905d3089eb8e89f61a3bf02246510ba6",
+      "bytes": 54
+    },
+    {
+      "file": "deck-p75.txt",
+      "sha256": "62730418050154b697a65fb6f9fe5988a2957c6370d6ed8e3d242dfa33b10a9a",
+      "bytes": 690
+    },
+    {
+      "file": "deck-p76.png",
+      "sha256": "b89dcceaa1bd1fc28b080778d97f6819cd4792ada1489ab9d0ba437a525650b1",
+      "bytes": 403424
+    },
+    {
+      "file": "cdc-exposure-inspected-excerpt.txt",
+      "sha256": "6626e7703cd8c12bf1334bc4ede27abcc1c190dc840a72178c798d4a54c791a3",
+      "bytes": 1582
+    },
+    {
+      "file": "reference-p22.png",
+      "sha256": "f6ca0a2bce2f66a4c8b1d1957368bdd2538c6b1520c99d20b8d43278a059135e",
+      "bytes": 420042
+    },
+    {
+      "file": "facilitator-p19.txt",
+      "sha256": "8490f626034aa19f8d4a24bec63b10d128f49fac538a8d539c39fe01e8b88a68",
+      "bytes": 215
+    },
+    {
+      "file": "reference-p21.png",
+      "sha256": "da21ee629c6fc0296ba4c7ca7dbb6de7a369762b7e40edb531677b8d38ef6be2",
+      "bytes": 167988
+    },
+    {
+      "file": "deck-p77.txt",
+      "sha256": "fb143e235b6c96705a1a5c1efdaea97a52e06fa3725a00b50a64547b16d76064",
+      "bytes": 388
+    },
+    {
+      "file": "reference-p21.txt",
+      "sha256": "ba38b8dbb282b7c518aed27f4cd399fdc80827b46e17c486e787684763d5436b",
+      "bytes": 633
+    },
+    {
+      "file": "deck-p73.png",
+      "sha256": "b56c87305919427d9ceb009c8148a9b2087aa56390f2e323178ce8239face367",
+      "bytes": 97882
+    },
+    {
+      "file": "deck-p72.txt",
+      "sha256": "071e98c507902dd3cfb04218f6091f4aecb34732f03843c8c5d0f3dafd0700fa",
+      "bytes": 379
+    },
+    {
+      "file": "facilitator-p30.txt",
+      "sha256": "ea1d36b29d88815d948ad0aa13c0a1243a7095a73259771e8a3abc7ceb835f11",
+      "bytes": 1603
+    },
+    {
+      "file": "deck-p73.txt",
+      "sha256": "3d5bf14f832036997f0b20adbd8e6e02714599b3853f7f407ddd9952d57391a4",
+      "bytes": 803
+    },
+    {
+      "file": "deck-p71.png",
+      "sha256": "8daad1d683e5decef83a0ae877ff3d8d8cd4aa9cf86f993d9f0e63d8d1557c44",
+      "bytes": 151290
+    },
+    {
+      "file": "deck-p70.png",
+      "sha256": "9b4d6cb37b2615d2601d8d779e2760d4eebf4326e80b01c90f6063bc87558ba6",
+      "bytes": 158067
+    },
+    {
+      "file": "facilitator-p30.png",
+      "sha256": "fe30054c926d9fae78864084113314d253fd00ae4d3364b1ba3bf2c27f642356",
+      "bytes": 133042
+    },
+    {
+      "file": "deck-p74.txt",
+      "sha256": "27119f7689d3adc0864ca70d0aa0cb1bd9c143f0a5bed324387cde2a59c71016",
+      "bytes": 946
+    }
+  ]
+}

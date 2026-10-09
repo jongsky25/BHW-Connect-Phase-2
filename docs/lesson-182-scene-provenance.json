@@ -1,0 +1,85 @@
+{
+  "owner_approval": false,
+  "scenes": [
+    {
+      "scene": "sharps",
+      "provider": "built-in image_gen",
+      "reference_sha256": "80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627",
+      "original_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple points from a safe distance to a thin unlabeled fill-line band near the top of a closed yellow sharps container on a health-station shelf; her other hand signals pause. She never opens it, touches contents or compresses anything. Empty surroundings, focus on pausing and seeking authorized replacement.",
+      "original_sha256": "e4d5a3f0851dd78548e1041df72fde4f8f9a18269ba6b66a35ed5c371f31ff45",
+      "selected_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple points from a safe distance to a thin unlabeled fill-line band near the top of a closed yellow sharps container on a health-station shelf; her other hand signals pause. She never opens it, touches contents or compresses anything. Empty surroundings, focus on pausing and seeking authorized replacement.",
+      "selected_sha256": "e4d5a3f0851dd78548e1041df72fde4f8f9a18269ba6b66a35ed5c371f31ff45",
+      "path": "public/training/bhw-1-8/controls-sharps-e4d5a3f0851d.png",
+      "remotion_path": "remotion/public/safety-controls/sharps.png",
+      "visual_review": "Inspected full image; consistent fictional Apple; no clinical handling or exposed sharps; owner review pending."
+    },
+    {
+      "scene": "infection",
+      "provider": "built-in image_gen",
+      "reference_sha256": "80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627",
+      "original_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple selects four separate picture cards on a clean desk: soap-and-water hands icon, open window airflow icon, closed waste container icon, mosquito-prevention icon. Four distinct images without words. She compares the cards thoughtfully, showing controls depend on route and task, not gloves alone. No clinical sequence or chemical mixing.",
+      "original_sha256": "07fcaacfba6d7e031b1ea254d7ccbb3d791e68a009e45c2f336719758ad85650",
+      "selected_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple selects four separate picture cards on a clean desk: soap-and-water hands icon, open window airflow icon, closed waste container icon, mosquito-prevention icon. Four distinct images without words. She compares the cards thoughtfully, showing controls depend on route and task, not gloves alone. No clinical sequence or chemical mixing.",
+      "selected_sha256": "07fcaacfba6d7e031b1ea254d7ccbb3d791e68a009e45c2f336719758ad85650",
+      "path": "public/training/bhw-1-8/controls-infection-07fcaacfba6d.png",
+      "remotion_path": "remotion/public/safety-controls/infection.png",
+      "visual_review": "Inspected full image; consistent fictional Apple; no clinical handling or exposed sharps; owner review pending."
+    },
+    {
+      "scene": "body",
+      "provider": "built-in image_gen",
+      "reference_sha256": "80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627",
+      "original_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple sets down a travel bag beside a stable chair, adjusts supplies within easy reach on a desk, and gestures to another adult for carrying help. Her posture is comfortable, no strain or stretching, no depiction of actual heavy lifting.",
+      "original_sha256": "28ac083243c8d58df374e495adc58480cdf9e2c09748df23c761648154b3568c",
+      "selected_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple sets down a travel bag beside a stable chair, adjusts supplies within easy reach on a desk, and gestures to another adult for carrying help. Her posture is comfortable, no strain or stretching, no depiction of actual heavy lifting.",
+      "selected_sha256": "28ac083243c8d58df374e495adc58480cdf9e2c09748df23c761648154b3568c",
+      "path": "public/training/bhw-1-8/controls-body-28ac083243c8.png",
+      "remotion_path": "remotion/public/safety-controls/body.png",
+      "visual_review": "Inspected full image; consistent fictional Apple; no clinical handling or exposed sharps; owner review pending."
+    },
+    {
+      "scene": "workload",
+      "provider": "built-in image_gen",
+      "reference_sha256": "80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627",
+      "original_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple calmly speaks to an adult female coordinator at a desk, gestures to a plain clock and blank task papers, and points toward a safer well-lit route visible outside. She asks for workload support and rest; no handshake or claimed agreement, no unsafe night travel.",
+      "original_sha256": "00403b02c802c285e9af25091381f2890f9f21546201c653999fd623006c8ed1",
+      "selected_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple calmly speaks to an adult female coordinator at a desk, gestures to a plain clock and blank task papers, and points toward a safer well-lit route visible outside. She asks for workload support and rest; no handshake or claimed agreement, no unsafe night travel.",
+      "selected_sha256": "00403b02c802c285e9af25091381f2890f9f21546201c653999fd623006c8ed1",
+      "path": "public/training/bhw-1-8/controls-workload-00403b02c802.png",
+      "remotion_path": "remotion/public/safety-controls/workload.png",
+      "visual_review": "Inspected full image; consistent fictional Apple; no clinical handling or exposed sharps; owner review pending."
+    },
+    {
+      "scene": "practice",
+      "provider": "built-in image_gen",
+      "reference_sha256": "80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627",
+      "original_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple and two adult learners rehearse at a classroom table with five separate blank picture cards: closed sharps container, soap/open-window/mosquito icon group, travel bag and chair, clock and task papers, and clear walking path. Apple pairs each hazard with a distinct control card and identifies two mismatches; use only pictograms with no writing. Clear arrangement, no real equipment handling.",
+      "original_sha256": "2e28e8313750c752ecea6ff2badb6db3bb403edeba87e7d478c92058cd2a0bc1",
+      "selected_prompt": "Edit the attached practice illustration, keeping Apple exactly consistent with the attached reference, her teal blouse/navy trousers/tan bag/low ponytail, the two adult classmates, room and hand-painted style. Replace ALL cards with exactly FIVE separate plain pictogram cards laid on the table, showing: an OPAQUE CLOSED yellow sharps container with no visible contents; soap-and-open-window-and-mosquito silhouettes together on one card; bag and supportive chair; simple clock and blank task sheets; clear safe walking route. Remove ALL arrows, checkmarks, crosses, warning symbols and duplicate card rows: do not draw correct/incorrect mappings. Meaning and matches will be provided in accessible HTML outside art. No needles, syringes, sharp objects, clinical procedure, written text, letters, numbers or labels. Apple gestures to compare the cards. Wide 3:2 composition.",
+      "selected_sha256": "2b93cc0b83908592a14ae70cdd6e0881c7c8ecced1a7c4f7a7c1fe73c0661167",
+      "path": "public/training/bhw-1-8/controls-practice-2b93cc0b8390.png",
+      "remotion_path": "remotion/public/safety-controls/practice.png",
+      "visual_review": "Inspected full image; consistent fictional Apple; no clinical handling or exposed sharps; owner review pending.",
+      "superseded": {
+        "path": ".preview/lesson182-rejected/practice-superseded.png",
+        "reason": "Ambiguous exposed contents or misleading mappings removed via image_gen edit; excluded from learner assets."
+      }
+    },
+    {
+      "scene": "check",
+      "provider": "built-in image_gen",
+      "reference_sha256": "80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627",
+      "original_prompt": "Use the inspected attached fictional Apple character reference exactly: same face, low black ponytail, plain teal blouse, navy trousers, tan crossbody bag, dark closed shoes. Create one wide 3:2 hand-painted educational action illustration for BHW lesson 1.8.2, warm cream/teal palette, clear adult proportions and spacious composition. No text, letters, numbers, logos or watermarks. No real needles, exposed sharps, blood, injections or clinical procedures. Outfit is an artistic continuity choice, not required PPE. Apple pauses beside a nearly full closed yellow sharps container while an authorized adult staff member brings a clean closed replacement container on a separate tray. Her hands stay away from both containers; nobody opens or touches contents. Depict arranging authorized correction before restart in a fictional classroom scene, not an actual documented outcome.",
+      "original_sha256": "46657787f6f762d0aadc9d42a2153ddf07a0fd493daaedc26523670b4d1e0321",
+      "selected_prompt": "Edit the attached replacement illustration, preserving Apple exactly as the attached reference and the authorized adult staff member bringing a clean closed replacement on a tray, their positions and room. Make BOTH yellow containers fully OPAQUE and CLOSED; remove every visible object/needle/syringe/content inside or around either container. The container on the table should have a thin plain red fill-line band near the top, with no writing or numbers. Apple's hands stay away from both containers. No visible needles, used sharps, fluids, exposed contents, labels, written text, numbers or clinical procedure. This illustrates arranging authorized correction BEFORE restarting, not resumption. Preserve wide 3:2 hand-painted style.",
+      "selected_sha256": "79628b0a56494d3181150dff154f4c4e3164f494b886c11143a6c1073647a89e",
+      "path": "public/training/bhw-1-8/controls-check-79628b0a5649.png",
+      "remotion_path": "remotion/public/safety-controls/check.png",
+      "visual_review": "Inspected full image; consistent fictional Apple; no clinical handling or exposed sharps; owner review pending.",
+      "superseded": {
+        "path": ".preview/lesson182-rejected/check-superseded.png",
+        "reason": "Ambiguous exposed contents or misleading mappings removed via image_gen edit; excluded from learner assets."
+      }
+    }
+  ]
+}

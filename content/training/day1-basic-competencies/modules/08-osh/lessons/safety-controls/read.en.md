@@ -8,7 +8,7 @@ Apple separates cards for hand hygiene, ventilation, waste and bite prevention. 
 
 ## [body] Protect the body during work
 
-The bag is heavy in the fictional example and the task involves repeated bending. Apple arranges the chair and supplies within easier reach. She says, “I need lifting assistance; I will not continue a painful movement.” Reduce heavy carrying and repeated bending, plan breaks and position changes, and use comfortable footwear and supportive seating. Ask for carrying assistance and report pain; obtain assessment if needed. Do not force painful stretches or endure pain as proof of diligence. For a hot walk, verify opportunities for rest and heat avoidance under the local plan. Gloves do not fix a heavy bag or supplies out of reach. Choose changes to the work and surroundings; verify assistance before resuming unsafe carrying.
+The bag is heavy in the fictional example and the task involves repeated bending. Apple arranges the chair and supplies within easier reach. She says, “I need lifting assistance; I will not continue a painful movement.” Reduce heavy carrying and repeated bending, plan breaks and position changes, and use comfortable footwear and supportive seating. Ask for carrying assistance and report pain; obtain assessment if needed. Do not force painful stretches or endure pain as proof of diligence. For a hot walk, verify opportunities for rest and heat avoidance under the local plan. Gloves do not fix a heavy bag or supplies out of reach. Choose changes to the work and surroundings; verify assistance and the correction, then resume carrying only when it is safe.
 
 ## [workload] Time and capacity have limits
 

@@ -1,0 +1,2363 @@
+{
+  "prompt_revision": "apple-controls-v1",
+  "date": "2026-10-09T08:07:06.589Z",
+  "source_commit": "99e6296befd891b1a14708d542547a51775bb2e3",
+  "model": "gemini-3.8-flash",
+  "decode_only": false,
+  "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "method": "Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.",
+  "records": [
+    {
+      "id": "read-body-fil",
+      "language": "fil",
+      "source_path": "/training/audio/08-osh/safety-controls/body.fil.ed085d08d339.mp3",
+      "source_sha256": "c6b7c66184becd0636dbc5e15fbb1c2ada4b5acb72b3ac950c0b1e72aa8e6300",
+      "decoded_pcm_sha256": "ba1ac747b49470475aea443b89add1a2825bbd3d600e8571c438cff95bdf9d7a",
+      "full_audio_metrics": {
+        "samples": 1841947,
+        "seconds": 76.74779166666667,
+        "rms": 0.13699613373877167,
+        "peak": 1,
+        "quiet_sample_fraction": 0.20331801077881176
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Alagaan ang katawan habang nagtatrabaho",
+          "start_ms": 0,
+          "end_ms": 3280,
+          "samples": 78720,
+          "seconds": 3.28,
+          "rms": 0.12705766100300003,
+          "peak": 0.832122802734375,
+          "quiet_sample_fraction": 0.14922510162601627
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Mabigat ang bag sa kathang-isip na halimbawa at paulit-ulit ang pagyuko.",
+          "start_ms": 3580,
+          "end_ms": 9180,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.12593751644761558,
+          "peak": 0.839691162109375,
+          "quiet_sample_fraction": 0.19843005952380952
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Inayos ni Apple ang upuan at mga gamit upang mas madaling maabot.",
+          "start_ms": 9480,
+          "end_ms": 15080,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.14081119744146692,
+          "peak": 0.770904541015625,
+          "quiet_sample_fraction": 0.18313244047619048
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Sabi niya, “Kailangan ko ng tulong sa pagbubuhat; hindi ko itutuloy ang masakit na galaw.”",
+          "start_ms": 15380,
+          "end_ms": 20940,
+          "samples": 133440,
+          "seconds": 5.56,
+          "rms": 0.16172466895460255,
+          "peak": 0.8946533203125,
+          "quiet_sample_fraction": 0.18306354916067147
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Bawasan ang mabigat na dala at paulit-ulit na pagyuko, magplano ng pahinga at pagbabago ng posisyon, at gumamit ng komportableng sapatos at upuang may sandalan.",
+          "start_ms": 21240,
+          "end_ms": 33640,
+          "samples": 297600,
+          "seconds": 12.4,
+          "rms": 0.13437187130690884,
+          "peak": 0.85699462890625,
+          "quiet_sample_fraction": 0.13929771505376345
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Humingi ng tulong sa pagdadala at iulat ang pananakit; magpasuri kung kailangan.",
+          "start_ms": 33940,
+          "end_ms": 40140,
+          "samples": 148800,
+          "seconds": 6.2,
+          "rms": 0.1521917009621796,
+          "peak": 0.77728271484375,
+          "quiet_sample_fraction": 0.20091397849462367
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Huwag pilitin ang masakit na stretching o tiisin ang sakit bilang patunay ng sipag.",
+          "start_ms": 40440,
+          "end_ms": 46360,
+          "samples": 142080,
+          "seconds": 5.92,
+          "rms": 0.14038501120169933,
+          "peak": 1,
+          "quiet_sample_fraction": 0.16704673423423425
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Sa mainit na lakad, tiyakin ang pagkakataon para sa pahinga at pag-iwas sa init ayon sa lokal na plano.",
+          "start_ms": 46660,
+          "end_ms": 54140,
+          "samples": 179520,
+          "seconds": 7.48,
+          "rms": 0.1159450958401519,
+          "peak": 0.87432861328125,
+          "quiet_sample_fraction": 0.17180258467023174
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Hindi gloves ang nag-aayos ng mabigat na bag o hindi abot na gamit.",
+          "start_ms": 54440,
+          "end_ms": 59720,
+          "samples": 126720,
+          "seconds": 5.28,
+          "rms": 0.14413393682795844,
+          "peak": 0.808441162109375,
+          "quiet_sample_fraction": 0.16734532828282828
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Pumili ng pagbabago sa gawain at kapaligiran; tiyakin ang tulong bago ituloy ang hindi ligtas na pagdadala.",
+          "start_ms": 60020,
+          "end_ms": 69140,
+          "samples": 218880,
+          "seconds": 9.12,
+          "rms": 0.13872753592809733,
+          "peak": 0.8428955078125,
+          "quiet_sample_fraction": 0.16475694444444444
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang ligtas na posisyon, pahinga at tamang pagdadala ay bahagi ng paghahanda sa trabaho.",
+          "start_ms": 69440,
+          "end_ms": 76680,
+          "samples": 173760,
+          "seconds": 7.24,
+          "rms": 0.15424044974853254,
+          "peak": 0.89739990234375,
+          "quiet_sample_fraction": 0.17403314917127072
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 9.48,
+          "end": 15.08,
+          "file": "read-body-fil-name.wav",
+          "excerpt_sha256": "154aa7ebf0d1a1a03de47a7430d874397a0e6243891bd6ec2bc4b521a41ddcf6",
+          "decoded_sample_count": 134400,
+          "expected_context": "Inayos ni Apple ang upuan at mga gamit upang mas madaling maabot.",
+          "model_response": "```json\n{\n  \"transcript\": \"Inayos ni Apple ang upuan at mga gamit upang mas madaling maabot\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced naturally as /ˈæpəl/ (standard English loanword pronunciation in Filipino) between 00:00.6 and 00:01.2.\",\n    \"negation\": \"No negative particles (such as 'hindi', 'wala') are present.\",\n    \"role_distinctions\": \"Single consistent female narrator throughout the excerpt.\",\n    \"ending_completeness\": \"The final word 'maabot' concludes fully without acoustic cutoff around 00:04.9–00:05.1, though syntactically the sentence could continue depending on context.\",\n    \"audible_speech\": \"Speech is completely audible, clear, and well-enunciated.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"None observed; tone, pitch, and tempo remain steady.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None. All words and acoustic boundaries are clearly identifiable.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.58,
+          "end": 9.18,
+          "file": "read-body-fil-body.wav",
+          "excerpt_sha256": "334125aa0f14d3ade3bc9c661569845cba64798c43cfe912935fb6c2bce81708",
+          "decoded_sample_count": 134400,
+          "expected_context": "Mabigat ang bag sa kathang-isip na halimbawa at paulit-ulit ang pagyuko.",
+          "model_response": "```json\n{\n  \"transcript\": \"Mabigat ang bag sa kathang-isip na halimbawa, at paulit-ulit ang pagyuko.\",\n  \"observations\": \"The audio is spoken clearly in Filipino with an educational narration tone. Pronunciation and cadence are steady and natural across the entire excerpt.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 15.38,
+          "end": 33.64,
+          "file": "read-body-fil-critical.wav",
+          "excerpt_sha256": "5aa57690ac6d8ec36b95a4c97eff952266a93f996d667189078deb733114d6b4",
+          "decoded_sample_count": 438240,
+          "expected_context": "Sabi niya, “Kailangan ko ng tulong sa pagbubuhat; hindi ko itutuloy ang masakit na galaw.” Bawasan ang mabigat na dala at paulit-ulit na pagyuko, magplano ng pahinga at pagbabago ng posisyon, at gumamit ng komportableng sapatos at upuang may sandalan.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sabi niya, kailangan ko ng tulong sa pagbubuhat. Hindi ko itutuloy ang masakit na galaw. Bawasan ang mabigat na dala at paulit-ulit na pagyuko. Magplano ng pahinga at pagbabago ng posisyon, at gumamit ng komportableng sapatos at upuang may sandalan.\",\n  \"observations\": {\n    \"role_distinctions\": \"There is a clear shift in speaker and role: a female voice speaks from 00:00 to 00:05 presenting reported speech/dialogue, followed by a male narrator from 00:05 to 00:18 delivering instructional guidance.\",\n    \"negation\": \"The negation 'Hindi ko itutuloy' at 00:03 - 00:04 is clearly articulated.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'sandalan' without clipping or abrupt cutoffs.\",\n    \"unexpected_voice_changes\": \"A planned speaker change occurs at approximately 00:05.6 between the female dialogue line and the male educational narrator.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 60.02,
+          "end": 76.74779166666667,
+          "file": "read-body-fil-ending.wav",
+          "excerpt_sha256": "c2519b7e31cfa92b2b8de3b89ed077a22a30f2686ba2afa99139643fa8766a34",
+          "decoded_sample_count": 401467,
+          "expected_context": "Pumili ng pagbabago sa gawain at kapaligiran; tiyakin ang tulong bago ituloy ang hindi ligtas na pagdadala. Ang ligtas na posisyon, pahinga at tamang pagdadala ay bahagi ng paghahanda sa trabaho.",
+          "model_response": "```json\n{\n  \"transcript\": \"Pumili ng pagbabago sa gawain at kapaligiran. Tiyakin ang tulong bago ituloy ang hindi ligtas na pagdadala. Ang ligtas na posisyon, pahinga, at tamang pagdadala ay bahagi ng paghahanda sa trabaho.\",\n  \"observations\": [\n    \"Clear, instructional delivery by a single female speaker in Tagalog.\",\n    \"Negation ('hindi ligtas') is clearly enunciated.\",\n    \"No clipped words or unnatural voice quality changes observed.\",\n    \"Sentence endings and pacing are fully complete and natural.\"\n  ],\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-check-fil",
+      "language": "fil",
+      "source_path": "/training/audio/08-osh/safety-controls/check.fil.448880a361b5.mp3",
+      "source_sha256": "9bc91bc5db13eb3a4ef162192fd1a48d4b78b8e888762aafb320826f5e1fa5ea",
+      "decoded_pcm_sha256": "ae923c7c101b71cde28053cc335048d9ebaea97fc55a482dcae3fe66d8d4ce28",
+      "full_audio_metrics": {
+        "samples": 1023792,
+        "seconds": 42.658,
+        "rms": 0.1377804497876845,
+        "peak": 0.909454345703125,
+        "quiet_sample_fraction": 0.21452013690280838
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Piliin ang susunod na hakbang",
+          "start_ms": 0,
+          "end_ms": 2840,
+          "samples": 68160,
+          "seconds": 2.84,
+          "rms": 0.14181908739505222,
+          "peak": 0.735748291015625,
+          "quiet_sample_fraction": 0.2610181924882629
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Halos puno ang sharps box sa kathang-isip na card; hindi pa alam ang awtorisadong contact o kung may kapalit.",
+          "start_ms": 3140,
+          "end_ms": 12300,
+          "samples": 219840,
+          "seconds": 9.16,
+          "rms": 0.13047136943618565,
+          "peak": 0.836090087890625,
+          "quiet_sample_fraction": 0.2089292212518195
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Hindi binubuksan o hinahawakan ni Apple ang laman.",
+          "start_ms": 12600,
+          "end_ms": 16800,
+          "samples": 100800,
+          "seconds": 4.2,
+          "rms": 0.1384574408813907,
+          "peak": 0.814422607421875,
+          "quiet_sample_fraction": 0.14110119047619046
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ihihinto niya ang apektadong gawain habang tinitiyak ang tamang pagwawasto.",
+          "start_ms": 17100,
+          "end_ms": 23260,
+          "samples": 147840,
+          "seconds": 6.16,
+          "rms": 0.15109642099012865,
+          "peak": 0.8507080078125,
+          "quiet_sample_fraction": 0.11177624458874459
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Piliin ang sagot at ipaliwanag ang dahilan bago tingnan ang feedback.",
+          "start_ms": 23560,
+          "end_ms": 28680,
+          "samples": 122880,
+          "seconds": 5.12,
+          "rms": 0.1466830230770446,
+          "peak": 0.835479736328125,
+          "quiet_sample_fraction": 0.19449869791666666
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ang pag-click ng sagot ay hindi pa aktuwal na pagpapakita ng kakayahan.",
+          "start_ms": 28980,
+          "end_ms": 34180,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.1290841994739276,
+          "peak": 0.893890380859375,
+          "quiet_sample_fraction": 0.1625801282051282
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
+          "start_ms": 34480,
+          "end_ms": 42600,
+          "samples": 194880,
+          "seconds": 8.12,
+          "rms": 0.14838635821680485,
+          "peak": 0.909454345703125,
+          "quiet_sample_fraction": 0.1867456896551724
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 12.6,
+          "end": 16.8,
+          "file": "read-check-fil-name.wav",
+          "excerpt_sha256": "aed7bae882f99fee75532b22fe81cfade28d4f9a6182660b7bc322fc6dddbe60",
+          "decoded_sample_count": 100800,
+          "expected_context": "Hindi binubuksan o hinahawakan ni Apple ang laman.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi binubuksan o hinahawakan ni Apple ang laman.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced clearly around 00:02.5 - 00:03.2 with standard Philippine English/Tagalog adaptation (/ˈæpəl/ or /ˈapəl/).\",\n    \"negation\": \"The negation word 'Hindi' is clearly articulated at 00:00.0 - 00:00.4.\",\n    \"role_distinctions\": \"Single consistent female narrator delivering storytelling/instructional narrative.\",\n    \"ending_completeness\": \"The final word 'laman' at 00:03.7 - 00:04.2 concludes naturally with an audible decaying final syllable and no abrupt truncation.\",\n    \"audible_speech\": \"All words ('Hindi binubuksan o hinahawakan ni Apple ang laman') are clearly audible without masking background noise.\",\n    \"clipped_words\": \"None detected; word boundaries and transitions are smooth.\",\n    \"unexpected_voice_changes\": \"None observed; tone, pitch, and pacing remain steady and consistent.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; the speech is clear, fully intelligible, and free of audible artifacts.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.14,
+          "end": 12.3,
+          "file": "read-check-fil-body.wav",
+          "excerpt_sha256": "54c5090c8deb333239f839d2a0b6ac66f00851498235e53662f96ba5a96a8deb",
+          "decoded_sample_count": 219840,
+          "expected_context": "Halos puno ang sharps box sa kathang-isip na card; hindi pa alam ang awtorisadong contact o kung may kapalit.",
+          "model_response": "```json\n{\n  \"transcript\": \"Halos puno ang sharps box sa kathang-isip na ward, hindi pa alam ang awtorisadong contact o kung may kapalit.\",\n  \"observations\": {\n    \"pronunciation\": \"English loanwords ('sharps box', 'ward', 'contact') are articulated clearly and naturally within the Tagalog sentence.\",\n    \"negation\": \"The negation 'Hindi pa alam' is spoken distinctly without slurring or hesitation at 00:04.8 - 00:05.6.\",\n    \"role_distinctions\": \"Single-speaker educational narrator delivery; no distinct character voices are depicted.\",\n    \"ending_completeness\": \"The phrase concludes naturally at 00:08.8 with 'kapalit', exhibiting a proper terminal drop in pitch.\",\n    \"audible_speech\": \"Speech is fully audible, clean, and intelligible throughout the excerpt.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"Tone, tempo, and vocal timbre remain consistent across the recording.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Minimal; slight phonetic ambiguity between 'ward' and 'card' at 00:03.5–00:04.2, though hospital context ('sharps box') and auditory cues favor 'ward'.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 3.14,
+          "end": 16.8,
+          "file": "read-check-fil-critical.wav",
+          "excerpt_sha256": "9a05f37e7fe2857f967559e7f8485a645b583c8a6e486e9d087daa7ed7e7890a",
+          "decoded_sample_count": 327840,
+          "expected_context": "Halos puno ang sharps box sa kathang-isip na card; hindi pa alam ang awtorisadong contact o kung may kapalit. Hindi binubuksan o hinahawakan ni Apple ang laman.",
+          "model_response": "```json\n{\n  \"transcript\": \"Halos puno ang sharps box sa kathang-isip na ward. Hindi pa alam ang awtorisadong kontak o kung may kapalit. Hindi binubuksan o hinahawakan ni Apple ang laman.\",\n  \"observations\": {\n    \"audible_speech\": \"The full spoken excerpt is clear, distinct, and audible from start to finish.\",\n    \"role_distinctions\": \"Single narrator voice maintained consistently across the excerpt.\",\n    \"apple_pronunciation\": \"The name 'Apple' (around 00:11.8 - 00:12.3) is pronounced clearly following the standard English pronunciation adapted naturally into the Filipino sentence context.\",\n    \"negation\": \"Negation terms 'Hindi pa' (00:04.9 - 00:05.4) and 'Hindi' (00:09.5 - 00:09.9) are articulated clearly with proper pauses and emphasis.\",\n    \"ending_completeness\": \"The sentence completes naturally with 'ang laman' at 00:12.3 - 00:13.1, with no premature cut-off or missing syllable.\",\n    \"clipped_words\": \"No words or syllables are clipped or swallowed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and pacing remain steady and natural for an educational/narrative voice.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 23.56,
+          "end": 42.658,
+          "file": "read-check-fil-ending.wav",
+          "excerpt_sha256": "6446a3f4eef38205acdd83c0284fcd4b3e5e6018c5e25ca1cd8d6b43185147e1",
+          "decoded_sample_count": 458352,
+          "expected_context": "Piliin ang sagot at ipaliwanag ang dahilan bago tingnan ang feedback. Ang pag-click ng sagot ay hindi pa aktuwal na pagpapakita ng kakayahan. Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
+          "model_response": "```json\n{\n  \"transcript\": \"Piliin ang sagot at ipaliwanag ang dahilan bago tingnan ang feedback. Ang pag-click ng sagot ay hindi pa aktwal na pagpapakita ng kakayahan. Piliin ang kontrol ayon sa panganib. Hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.\",\n  \"observations\": {\n    \"audible_speech\": \"The excerpt contains clear, intelligible Tagalog instructional narration spoken in an educational tone across four distinct guidance sentences.\",\n    \"role_distinctions\": \"Single consistent female speaker throughout; no role or character switches.\",\n    \"apple_pronunciation\": \"The specific word 'Apple' does not appear in this audio excerpt. English loanwords and acronyms ('feedback', 'click', 'PPE') are pronounced clearly with standard Philippine English/Tagalog phonology.\",\n    \"negation\": \"Two clear instances of negation occur: 'hindi pa' (00:07.4 - 00:08.0) and 'Hindi kayang' (00:14.2 - 00:15.0). Both are spoken clearly and grammatically standard.\",\n    \"ending_completeness\": \"The final sentence finishes completely with 'gawain' at approximately 00:18.7, followed by natural room tone/silence before cutoff at 00:19.0.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"None observed; pacing, pitch, and audio processing remain steady.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low. Speech is cleanly enunciated with minimal background artifacts.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-infection-fil",
+      "language": "fil",
+      "source_path": "/training/audio/08-osh/safety-controls/infection.fil.431b357705bc.mp3",
+      "source_sha256": "b453f6eec23de1c7a3d716d0c8dbd56f3f40b3048c12b6a77d62a411bf472b99",
+      "decoded_pcm_sha256": "ef25b9008be6beb9045334e311f2d07f96427a018ef2d30fe600e11b635d9bc4",
+      "full_audio_metrics": {
+        "samples": 2120934,
+        "seconds": 88.37225,
+        "rms": 0.13798488960626515,
+        "peak": 1,
+        "quiet_sample_fraction": 0.19529509169073625
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Piliin ang kontrol ayon sa panganib",
+          "start_ms": 0,
+          "end_ms": 3320,
+          "samples": 79680,
+          "seconds": 3.32,
+          "rms": 0.13632036893612745,
+          "peak": 0.88006591796875,
+          "quiet_sample_fraction": 0.1993348393574297
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Ipinaghihiwalay ni Apple ang cards para sa paglilinis ng kamay, bentilasyon, basura at pag-iwas sa kagat.",
+          "start_ms": 3620,
+          "end_ms": 12420,
+          "samples": 211200,
+          "seconds": 8.8,
+          "rms": 0.13883636192333282,
+          "peak": 0.808349609375,
+          "quiet_sample_fraction": 0.21682291666666667
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Hindi pare-pareho ang ruta ng impeksyon: maaaring may pagkakalantad sa dugo o body fluids, respiratory particles, o kagat ng lamok.",
+          "start_ms": 12720,
+          "end_ms": 22920,
+          "samples": 244800,
+          "seconds": 10.2,
+          "rms": 0.1207474356519675,
+          "peak": 0.808135986328125,
+          "quiet_sample_fraction": 0.16183823529411764
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Piliin ang pag-iwas ayon sa gawain at lokal na protocol; hindi isang bagay ang sagot sa lahat.",
+          "start_ms": 23220,
+          "end_ms": 30700,
+          "samples": 179520,
+          "seconds": 7.48,
+          "rms": 0.13074833590124377,
+          "peak": 0.87249755859375,
+          "quiet_sample_fraction": 0.13787878787878788
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Kasama sa kontrol ang hand hygiene, respiratory hygiene, bentilasyon, ligtas na waste handling at PPE na angkop sa gawain.",
+          "start_ms": 31000,
+          "end_ms": 42280,
+          "samples": 270720,
+          "seconds": 11.28,
+          "rms": 0.1503440757209817,
+          "peak": 0.8763427734375,
+          "quiet_sample_fraction": 0.1627918144208038
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Hindi kapalit ng paglilinis ng kamay ang gloves.",
+          "start_ms": 42580,
+          "end_ms": 46300,
+          "samples": 89280,
+          "seconds": 3.72,
+          "rms": 0.15737076450995527,
+          "peak": 0.824188232421875,
+          "quiet_sample_fraction": 0.14689740143369176
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Sa lamok, iwasan ang kagat at mga lugar na pinamumugaran; hindi ito katumbas ng pagsuot lamang ng gloves.",
+          "start_ms": 46600,
+          "end_ms": 54680,
+          "samples": 193920,
+          "seconds": 8.08,
+          "rms": 0.13139407972362666,
+          "peak": 0.732574462890625,
+          "quiet_sample_fraction": 0.17744430693069307
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Sa cleaning chemicals, sundin ang label at facility instructions; huwag paghaluin o mag-imbento ng dilution.",
+          "start_ms": 54980,
+          "end_ms": 63300,
+          "samples": 199680,
+          "seconds": 8.32,
+          "rms": 0.1424891132394075,
+          "peak": 0.854156494140625,
+          "quiet_sample_fraction": 0.13262720352564103
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Tanong ni Apple, “Aling ruta ang kinokontrol nito?",
+          "start_ms": 63600,
+          "end_ms": 67760,
+          "samples": 99840,
+          "seconds": 4.16,
+          "rms": 0.1280777123646391,
+          "peak": 0.98114013671875,
+          "quiet_sample_fraction": 0.2329226762820513
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Ano ang kailangan pang tiyakin?”",
+          "start_ms": 68060,
+          "end_ms": 70380,
+          "samples": 55680,
+          "seconds": 2.32,
+          "rms": 0.12414913808459743,
+          "peak": 1,
+          "quiet_sample_fraction": 0.23457255747126438
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Kung kulang ang mahalagang proteksyon o lampas sa pagsasanay ang gawain, ihinto ang apektadong gawain at humingi ng awtorisadong pagwawasto.",
+          "start_ms": 70680,
+          "end_ms": 81320,
+          "samples": 255360,
+          "seconds": 10.64,
+          "rms": 0.1662722145833807,
+          "peak": 0.87042236328125,
+          "quiet_sample_fraction": 0.12828164160401004
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang infection prevention ay kombinasyon ng tamang gawain, kagamitan at kapaligiran.",
+          "start_ms": 81620,
+          "end_ms": 88300,
+          "samples": 160320,
+          "seconds": 6.68,
+          "rms": 0.1345959104225813,
+          "peak": 0.88348388671875,
+          "quiet_sample_fraction": 0.1309942614770459
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.62,
+          "end": 12.42,
+          "file": "read-infection-fil-name.wav",
+          "excerpt_sha256": "9f485af952e4efc7502334a84d071072d49d14465f2e3008744d36778f62bf1f",
+          "decoded_sample_count": 211200,
+          "expected_context": "Ipinaghihiwalay ni Apple ang cards para sa paglilinis ng kamay, bentilasyon, basura at pag-iwas sa kagat.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ipinaghihiwalay ni Apple ang cards para sa paglilinis ng kamay, bentilasyon, basura, at pag-iwas sa kagat.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced naturally as in standard Philippine English loan pronunciation (/ˈæp.əl/).\",\n    \"negation\": \"No negative markers (e.g., hindi, huwag) are present in the utterance.\",\n    \"role_distinctions\": \"Single narrator delivering an instructional/educational line clearly.\",\n    \"ending_completeness\": \"The utterance concludes cleanly on 'kagat' with a complete terminal drop and natural decay; no trailing cutoff.\",\n    \"audible_speech\": \"All words are clearly enunciated and intelligible without background noise or masking.\",\n    \"clipped_words\": \"None detected; both initial and final consonants across words are fully preserved.\",\n    \"unexpected_voice_changes\": \"Tone, pitch, and recording acoustic properties remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.62,
+          "end": 12.42,
+          "file": "read-infection-fil-body.wav",
+          "excerpt_sha256": "9f485af952e4efc7502334a84d071072d49d14465f2e3008744d36778f62bf1f",
+          "decoded_sample_count": 211200,
+          "expected_context": "Ipinaghihiwalay ni Apple ang cards para sa paglilinis ng kamay, bentilasyon, basura at pag-iwas sa kagat.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ipinaghihiwalay ni Apple ang cards para sa paglilinis ng kamay, bentilasyon, basura, at pag-iwas sa kagat.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' (around 00:01.0 - 00:01.6) is pronounced naturally with standard English phonology (/ˈæp.əl/), fitting loanword usage in Filipino.\",\n    \"role_distinctions\": \"Single narrator delivering an instructional/educational line.\",\n    \"negation\": \"No negative grammatical markers or polarity shifts are present in the text.\",\n    \"audible_speech\": \"All words from beginning to end are clear, cleanly articulated, and easily intelligible.\",\n    \"voice_changes\": \"Pacing and pitch follow a consistent, neutral educational tone with standard listing intonation.\",\n    \"clipped_words\": \"None detected; final syllables and plosives are fully preserved.\",\n    \"ending_completeness\": \"The terminal word 'kagat' finishes completely with natural falling terminal cadence without clipping (ending around 00:08.2).\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 12.72,
+          "end": 30.7,
+          "file": "read-infection-fil-critical.wav",
+          "excerpt_sha256": "e0e7d95705084bfb09162e58ade3848042d832f76211c43016f20850fb99ac65",
+          "decoded_sample_count": 431520,
+          "expected_context": "Hindi pare-pareho ang ruta ng impeksyon: maaaring may pagkakalantad sa dugo o body fluids, respiratory particles, o kagat ng lamok. Piliin ang pag-iwas ayon sa gawain at lokal na protocol; hindi isang bagay ang sagot sa lahat.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi pare-pareho ang ruta ng impeksyon. Maaaring may pagkakalantad sa dugo o body fluids, respiratory particles, o kagat ng lamok. Piliin ang pag-iwas ayon sa gawain at lokal na protocol. Hindi isang bagay ang sagot sa lahat.\",\n  \"observations\": {\n    \"role_distinctions_and_voice_change\": \"There is a distinct voice transition at approximately 00:10.15 where the speaker changes from an adult male voice (00:00.00–00:10.15) to an adult female voice (00:10.15–00:18.00).\",\n    \"pronunciation_and_loanwords\": \"English loan phrases ('body fluids' at 00:05.40–00:06.50 and 'respiratory particles' at 00:06.90–00:08.55) are spoken clearly with natural English phonology adapted into Tagalog cadence.\",\n    \"negation\": \"Negation terms ('Hindi pare-pareho' at 00:00.00–00:01.30 and 'Hindi isang bagay' at 00:15.50–00:16.70) are fully pronounced and audible without ambiguity.\",\n    \"clipped_words\": \"No clipped beginnings or cut-off word finals detected.\",\n    \"ending_completeness\": \"The audio ends naturally with a fully resolved sentence ('ang sagot sa lahat.') followed by ambient silence.\"\n  },\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:10.15\",\n      \"description\": \"Sudden speaker switch from male narrator to female narrator mid-excerpt without an acoustic boundary or contextual role marker.\"\n    }\n  ],\n  \"uncertainty\": \"Low. All lexical tokens and transitions are clearly audible.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 70.68,
+          "end": 88.37225,
+          "file": "read-infection-fil-ending.wav",
+          "excerpt_sha256": "2fe42a4c01047805bc7ba3f6945fb837076159f94ef812770afe7411bc3ce7c7",
+          "decoded_sample_count": 424614,
+          "expected_context": "Kung kulang ang mahalagang proteksyon o lampas sa pagsasanay ang gawain, ihinto ang apektadong gawain at humingi ng awtorisadong pagwawasto. Ang infection prevention ay kombinasyon ng tamang gawain, kagamitan at kapaligiran.",
+          "model_response": "```json\n{\n  \"transcript\": \"Kung kulang ang mahalagang proteksyon o lampas sa pagsasanay ang gawain, ihinto ang apektadong gawain at humingi ng awtorisadong pagwawasto. Ang infection prevention ay kombinasyon ng tamang gawain, kagamitan, at kapaligiran.\",\n  \"observations\": {\n    \"speaker\": \"Single female voice reading instructional text in Filipino/Tagalog.\",\n    \"pronunciation\": \"Standard Tagalog phonology, with clear loan-word delivery for 'infection prevention'.\",\n    \"speech_quality\": \"Clear, fluent, well-articulated, and evenly paced throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"voice_changes\": \"Consistent tone and timbre across the entire excerpt.\",\n    \"ending_completeness\": \"The sentence concludes naturally and completely at 00:17 without clipping.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-practice-fil",
+      "language": "fil",
+      "source_path": "/training/audio/08-osh/safety-controls/practice.fil.6f82b26c3226.mp3",
+      "source_sha256": "d7ffdaa2dc5edb41715fb5d58453f00a1fb9a63ca63f4b4cf1e9616d061208b4",
+      "decoded_pcm_sha256": "65c44667f00bbfdaceb03a406ec1d26995cc948744713a503abcb03ae9e83e62",
+      "full_audio_metrics": {
+        "samples": 2456347,
+        "seconds": 102.34779166666667,
+        "rms": 0.12996528249325892,
+        "peak": 0.999969482421875,
+        "quiet_sample_fraction": 0.26942081065908036
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Subukan, saka ulitin",
+          "start_ms": 0,
+          "end_ms": 3000,
+          "samples": 72000,
+          "seconds": 3,
+          "rms": 0.1194380185264666,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.35659722222222223
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Kasama ni Apple, piliin ang limang pares: sharps–tamang lalagyan at sinanay na paghawak; infection–pag-iwas ayon sa ruta at gawain, kasama ang pag-iwas sa kagat; pananakit ng katawan–ayos ng gawain, pahinga at tulong; stress–napagkasunduang workload at suporta; aksidente–ligtas na ruta at pag-iwas sa banta.",
+          "start_ms": 3300,
+          "end_ms": 32740,
+          "samples": 706560,
+          "seconds": 29.44,
+          "rms": 0.11908526628024685,
+          "peak": 0.90460205078125,
+          "quiet_sample_fraction": 0.32407438858695653
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Kasama ang vector control sa infection group; nananatili ang sarili nitong concept coverage.",
+          "start_ms": 33040,
+          "end_ms": 40080,
+          "samples": 168960,
+          "seconds": 7.04,
+          "rms": 0.14119436180081038,
+          "peak": 0.80633544921875,
+          "quiet_sample_fraction": 0.13648200757575757
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Sa sampung triad, magpalit bilang BHW, contact at observer.",
+          "start_ms": 40380,
+          "end_ms": 47260,
+          "samples": 165120,
+          "seconds": 6.88,
+          "rms": 0.14207331347562063,
+          "peak": 0.91156005859375,
+          "quiet_sample_fraction": 0.253530765503876
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Lahat ay magpapaliwanag ng limang pares at sasagot: “Ano ang ihihinto?",
+          "start_ms": 47560,
+          "end_ms": 53880,
+          "samples": 151680,
+          "seconds": 6.32,
+          "rms": 0.14783671648075253,
+          "peak": 0.857208251953125,
+          "quiet_sample_fraction": 0.2047863924050633
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sino ang kailangang tiyakin?",
+          "start_ms": 54180,
+          "end_ms": 56700,
+          "samples": 60480,
+          "seconds": 2.52,
+          "rms": 0.14563287018763416,
+          "peak": 0.847442626953125,
+          "quiet_sample_fraction": 0.2523809523809524
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Ano ang pagwawasto bago bumalik?”",
+          "start_ms": 57000,
+          "end_ms": 59960,
+          "samples": 71040,
+          "seconds": 2.96,
+          "rms": 0.13488400241488774,
+          "peak": 0.819915771484375,
+          "quiet_sample_fraction": 0.2334740990990991
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Subukan, tumanggap ng tiyak na feedback, saka ulitin.",
+          "start_ms": 60260,
+          "end_ms": 65780,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.13331546919152634,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.3114658816425121
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Itama ang dalawang maling pares: gloves para sa mabigat na bag, at dagdag na oras para sa pagod na BHW.",
+          "start_ms": 66080,
+          "end_ms": 75080,
+          "samples": 216000,
+          "seconds": 9,
+          "rms": 0.13856548136542493,
+          "peak": 0.86627197265625,
+          "quiet_sample_fraction": 0.16786574074074073
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Kung mag-isa, sabihin o isulat muna ang sagot bago ihambing sa answer key at ulitin.",
+          "start_ms": 75380,
+          "end_ms": 82580,
+          "samples": 172800,
+          "seconds": 7.2,
+          "rms": 0.1341755909617846,
+          "peak": 0.8836669921875,
+          "quiet_sample_fraction": 0.20223958333333333
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Ang peer feedback o hindi nasaksihang pagtatangka ay hindi staff-observed pass.",
+          "start_ms": 82880,
+          "end_ms": 89760,
+          "samples": 165120,
+          "seconds": 6.88,
+          "rms": 0.1303356665916493,
+          "peak": 0.84197998046875,
+          "quiet_sample_fraction": 0.17642926356589148
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "I-check ang isang kontrol bago ang susunod na duty.",
+          "start_ms": 90060,
+          "end_ms": 94380,
+          "samples": 103680,
+          "seconds": 4.32,
+          "rms": 0.13715606926715443,
+          "peak": 0.839935302734375,
+          "quiet_sample_fraction": 0.20258487654320986
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
+          "start_ms": 94680,
+          "end_ms": 102280,
+          "samples": 182400,
+          "seconds": 7.6,
+          "rms": 0.13819292666033234,
+          "peak": 0.766357421875,
+          "quiet_sample_fraction": 0.1571875
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.3,
+          "end": 32.74,
+          "file": "read-practice-fil-name.wav",
+          "excerpt_sha256": "793fb29989caea016e39cdb50f698927f678c0eca4e79d7f0831d90d2db82683",
+          "decoded_sample_count": 706560,
+          "expected_context": "Kasama ni Apple, piliin ang limang pares: sharps–tamang lalagyan at sinanay na paghawak; infection–pag-iwas ayon sa ruta at gawain, kasama ang pag-iwas sa kagat; pananakit ng katawan–ayos ng gawain, pahinga at tulong; stress–napagkasunduang workload at suporta; aksidente–ligtas na ruta at pag-iwas sa banta.",
+          "model_response": "```json\n{\n \"transcript\": \"Kasama ni Apple, piliin ang limang pares. Sharps: tamang lalagyan at sinanay na paghawak. Impeksiyon: pag-iwas ayon sa ruta at gawain, kasama ang pag-iwas sa kagat. Pananakit ng katawan: ayos ng gawain, pahinga, at tulong. Stress: napagkasundo ang workload at suporta. Aksidente: ligtas na ruta at pag-iwas sa banta.\",\n \"observations\": {\n  \"apple_pronunciation\": \"Pronounced as 'A-pol' (/ˈʔa.pol/), localized with a Tagalog vowel/stress rather than standard English /ˈæp.əl/.\",\n  \"audible_speech\": \"The narration is clear, articulate, and studio-recorded without noticeable background noise.\",\n  \"clipped_words\": \"None detected; word boundaries and final consonants are fully formed.\",\n  \"ending_completeness\": \"The audio concludes naturally with full intonation on 'banta' without abrupt cut-off.\",\n  \"negation\": \"No explicit grammatical negators (e.g., 'hindi', 'huwag', 'wala') are present in this segment.\",\n  \"role_distinctions\": \"A single consistent female educational narrator voice throughout.\",\n  \"unexpected_voice_changes\": \"None; tone, pitch, and pacing remain consistent across the read list.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.3,
+          "end": 32.74,
+          "file": "read-practice-fil-body.wav",
+          "excerpt_sha256": "793fb29989caea016e39cdb50f698927f678c0eca4e79d7f0831d90d2db82683",
+          "decoded_sample_count": 706560,
+          "expected_context": "Kasama ni Apple, piliin ang limang pares: sharps–tamang lalagyan at sinanay na paghawak; infection–pag-iwas ayon sa ruta at gawain, kasama ang pag-iwas sa kagat; pananakit ng katawan–ayos ng gawain, pahinga at tulong; stress–napagkasunduang workload at suporta; aksidente–ligtas na ruta at pag-iwas sa banta.",
+          "model_response": "```json\n{\n \"transcript\": \"Kasama ni Apol, piliin ang limang pares. Sharps, tamang lalagyan at sinanay na paghawak. Infection, pag-iwas ayon sa ruta at gawain, kasama ang pag-iwas sa kagat. Pananakit ng katawan, ayos ng gawain, pahinga at tulong. Stress, napagkasundo ang workload at suporta. Aksidente, ligtas na ruta at pag-iwas sa banta.\",\n \"observations\": {\n  \"apple_pronunciation\": \"Pronounced distinctly in Tagalog phonology as 'Apol' ([ʔɐˈpol]) at 00:00 - 00:01.\",\n  \"negation\": \"No negative grammatical particles (e.g., 'hindi', 'huwag') are used in this excerpt.\",\n  \"role_distinctions\": \"Single consistent instructional narrator reading a structured list of hazards and corresponding safety measures.\",\n  \"ending_completeness\": \"The audio ends completely and naturally on the final syllable of 'banta' without truncation.\",\n  \"audible_speech\": \"All words are clearly audible and articulate throughout the excerpt.\",\n  \"clipped_words\": \"None detected; word boundaries and pauses are clean.\",\n  \"unexpected_voice_changes\": \"None observed; pacing, pitch, and timbre remain steady.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 82.88,
+          "end": 94.38,
+          "file": "read-practice-fil-critical.wav",
+          "excerpt_sha256": "8ea698de6c90ea64ccc9f53a204da6a4e3de03ee7909ed94fbf368bed2a28a10",
+          "decoded_sample_count": 276000,
+          "expected_context": "Ang peer feedback o hindi nasaksihang pagtatangka ay hindi staff-observed pass. I-check ang isang kontrol bago ang susunod na duty.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ang peer feedback o hindi nasasaksihang pagtatangka ay hindi staff observed pass. I-check ang isang kontrol bago ang susunod na duty.\",\n  \"observations\": \"The audio is spoken clearly by a female voice with an educational/instructional tone. English loan phrases ('peer feedback', 'staff observed pass', 'I-check', 'duty') are articulated clearly with standard Filipino English pronunciation. There are no dropped syllables, audio artifacts, unnatural pitch changes, or clipped word endings.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 82.88,
+          "end": 102.34779166666667,
+          "file": "read-practice-fil-ending.wav",
+          "excerpt_sha256": "7d52f259c2ac3fcc466464d77d89d9255d58e64148bf73ec45c42809d405d10f",
+          "decoded_sample_count": 467227,
+          "expected_context": "Ang peer feedback o hindi nasaksihang pagtatangka ay hindi staff-observed pass. I-check ang isang kontrol bago ang susunod na duty. Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ang peer feedback o hindi nasasaksihang pagtatangka ay hindi staff-observed pass. I-check ang isang kontrol bago ang susunod na duty. Piliin ang kontrol ayon sa panganib. Hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.\",\n  \"observations\": {\n    \"language\": \"Filipino/Tagalog with English loan terms (peer feedback, staff-observed pass, I-check, duty, PPE)\",\n    \"speaker\": \"Single female voice, clear instructional/text-to-speech cadence\",\n    \"english_loan_pronunciation\": \"English technical terms ('peer feedback', 'staff-observed pass', 'I-check', 'duty', and the acronym 'PPE') are articulated clearly with standard English phonology.\",\n    \"negation\": \"Multiple negation structures present ('hindi nasasaksihang', 'ay hindi', 'Hindi kayang') and delivered accurately without slurring.\",\n    \"role_distinctions\": \"Single narrator voice; no alternating roles detected.\",\n    \"voice_consistency\": \"Pacing and tone remain uniform throughout the recording.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'sa gawain' at approximately 00:19 without abrupt clipping.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-sharps-fil",
+      "language": "fil",
+      "source_path": "/training/audio/08-osh/safety-controls/sharps.fil.22da2bf1e75c.mp3",
+      "source_sha256": "1ffb06a5ba2433c76d4b85b222ed0727720e392296b646455ed7fa1d915ce613",
+      "decoded_pcm_sha256": "a9b1420c2ca85066ffeb24be51e0e2aeee4394b7b330b8c2c70ec6523b29cb51",
+      "full_audio_metrics": {
+        "samples": 2026894,
+        "seconds": 84.45391666666667,
+        "rms": 0.13751671189559997,
+        "peak": 0.962310791015625,
+        "quiet_sample_fraction": 0.2105857533743748
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Ang karayom ay hindi ordinaryong basura",
+          "start_ms": 0,
+          "end_ms": 3440,
+          "samples": 82560,
+          "seconds": 3.44,
+          "rms": 0.1499699219650949,
+          "peak": 0.915618896484375,
+          "quiet_sample_fraction": 0.15186531007751938
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Kathang-isip na pagsasanay ito.",
+          "start_ms": 3740,
+          "end_ms": 6500,
+          "samples": 66240,
+          "seconds": 2.76,
+          "rms": 0.11101740758960894,
+          "peak": 0.81390380859375,
+          "quiet_sample_fraction": 0.25356280193236713
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Si Apple, isang BHW, ay pumipili ng kontrol; ang bagong usapan ay adaptasyon, hindi sipi ng DOH.",
+          "start_ms": 6800,
+          "end_ms": 16200,
+          "samples": 225600,
+          "seconds": 9.4,
+          "rms": 0.1129433859951903,
+          "peak": 0.787353515625,
+          "quiet_sample_fraction": 0.18811170212765957
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Napansin niya ang fill line ng halos punong sharps box nang hindi binubuksan o hinahawakan ang laman.",
+          "start_ms": 16500,
+          "end_ms": 24060,
+          "samples": 181440,
+          "seconds": 7.56,
+          "rms": 0.18296973158606777,
+          "peak": 0.853485107421875,
+          "quiet_sample_fraction": 0.11665013227513228
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Sabi niya, “Ihihinto muna ang gawaing nangangailangan nito.",
+          "start_ms": 24360,
+          "end_ms": 29120,
+          "samples": 114240,
+          "seconds": 4.76,
+          "rms": 0.13747027586616112,
+          "peak": 0.803619384765625,
+          "quiet_sample_fraction": 0.1505252100840336
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sino ang awtorisadong magpapalit ayon sa lokal na pamamaraan?”",
+          "start_ms": 29420,
+          "end_ms": 34060,
+          "samples": 111360,
+          "seconds": 4.64,
+          "rms": 0.14008576403004616,
+          "peak": 0.9188232421875,
+          "quiet_sample_fraction": 0.18888290229885057
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Hindi pa alam ang contact; kailangan itong tiyakin, hindi hulaan.",
+          "start_ms": 34360,
+          "end_ms": 39200,
+          "samples": 116160,
+          "seconds": 4.84,
+          "rms": 0.12571852266287753,
+          "peak": 0.69683837890625,
+          "quiet_sample_fraction": 0.20068870523415977
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Ang ginamit na karayom o lancet ay inilalagay agad ng sinanay na gumagamit sa tamang sharps container sa lugar ng paggamit.",
+          "start_ms": 39500,
+          "end_ms": 48940,
+          "samples": 226560,
+          "seconds": 9.44,
+          "rms": 0.12527843611385187,
+          "peak": 0.85205078125,
+          "quiet_sample_fraction": 0.120263947740113
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Huwag ibalik ang takip, baluktutin, ipasa nang kamay, siksikin ang laman o ilagay sa ordinaryong basurahan.",
+          "start_ms": 49240,
+          "end_ms": 58880,
+          "samples": 231360,
+          "seconds": 9.64,
+          "rms": 0.12823145446136627,
+          "peak": 0.851226806640625,
+          "quiet_sample_fraction": 0.2317816390041494
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Sundin ang fill line at lokal na pagpapalit.",
+          "start_ms": 59180,
+          "end_ms": 63380,
+          "samples": 100800,
+          "seconds": 4.2,
+          "rms": 0.15898477906178174,
+          "peak": 0.877105712890625,
+          "quiet_sample_fraction": 0.22109126984126984
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Sa nakakalat na sharps, ilayo ang iba at humingi ng sinanay na tulong; huwag damputin nang kamay.",
+          "start_ms": 63680,
+          "end_ms": 71320,
+          "samples": 183360,
+          "seconds": 7.64,
+          "rms": 0.15703402776923447,
+          "peak": 0.962310791015625,
+          "quiet_sample_fraction": 0.2056228184991274
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Hindi nagbibigay ng pahintulot ang gloves na magpatuloy nang walang tamang lalagyan.",
+          "start_ms": 71620,
+          "end_ms": 76820,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.13931849318921677,
+          "peak": 0.7774658203125,
+          "quiet_sample_fraction": 0.09512019230769231
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang ligtas na pagtatapon ng sharps ay nangangailangan ng tamang lalagyan at sinanay na paghawak.",
+          "start_ms": 77120,
+          "end_ms": 84400,
+          "samples": 174720,
+          "seconds": 7.28,
+          "rms": 0.14498930173919372,
+          "peak": 0.894989013671875,
+          "quiet_sample_fraction": 0.182760989010989
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 6.8,
+          "end": 16.2,
+          "file": "read-sharps-fil-name.wav",
+          "excerpt_sha256": "766dcd6f1f874a8ee077cda3b9150b601fe3b34f1d2cc7578ab93b20b3baf30e",
+          "decoded_sample_count": 225600,
+          "expected_context": "Si Apple, isang BHW, ay pumipili ng kontrol; ang bagong usapan ay adaptasyon, hindi sipi ng DOH.",
+          "model_response": "```json\n{\n \"transcript\": \"Si Apple, isang BHW, ay pumipili ng kontrol. Ang bagong usapan ay adaptasyon, hindi CP ng DOH.\",\n \"observations\": {\n  \"apple_pronunciation\": \"Pronounced with a natural English loanword style ('Apple') adapted to Filipino phonology.\",\n  \"negation\": \"Clear negation present with 'hindi' at 00:07.\",\n  \"role_distinctions\": \"'BHW' (Barangay Health Worker) clearly denotes the character's role.\",\n  \"ending_completeness\": \"The sentence finishes completely without abrupt cut-off at 'DOH'.\",\n  \"audible_speech\": \"All words are clearly audible and articulated.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"None observed; pacing and tone remain consistent throughout.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.74,
+          "end": 6.5,
+          "file": "read-sharps-fil-body.wav",
+          "excerpt_sha256": "db59930baa6cee777ed8e1b872ee137719809b128f44e4d30bd9f17d8517ef19",
+          "decoded_sample_count": 66240,
+          "expected_context": "Kathang-isip na pagsasanay ito.",
+          "model_response": "```json\n{\n  \"transcript\": \"Kathang-isip na pagsasanay ito.\",\n  \"observations\": \"The utterance is spoken clearly in Filipino/Tagalog with natural pacing and clean articulation. Pitch and intonation remain consistent throughout, and the ending word 'ito' is fully resolved without truncation.\",\n  \"possible_defects\": [],\n  \"uncertainty\": \"\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 6.5,
+          "file": "read-sharps-fil-critical.wav",
+          "excerpt_sha256": "ee97d4ee781a6f6df08748244a31b0a40e5a6c12322d7c55920718da930a9523",
+          "decoded_sample_count": 156000,
+          "expected_context": "Ang karayom ay hindi ordinaryong basura Kathang-isip na pagsasanay ito.",
+          "model_response": "```json\n{\n  \"transcript\": \"Ang karayom ay hindi ordinaryong basura. Kathang-isip na pagsasanay ito.\",\n  \"observations\": {\n    \"language\": \"Filipino/Tagalog\",\n    \"speaker_characteristics\": \"Clear, measured instructional/educational delivery by an adult female voice.\",\n    \"negation\": \"Clear negation with 'hindi' heard at approximately 00:01.35.\",\n    \"role_distinctions\": \"Single narrator voice, no role switching.\",\n    \"ending_completeness\": \"The audio concludes naturally with 'ito' without truncation.\",\n    \"clipped_words\": \"None detected; word boundaries are intact.\",\n    \"unexpected_voice_changes\": \"None detected; pitch and tone remain steady.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 63.68,
+          "end": 84.45391666666667,
+          "file": "read-sharps-fil-ending.wav",
+          "excerpt_sha256": "07981d59cca16444209abcfa4b22d0e3b5972ef7d740081e6ba19a22d72b2998",
+          "decoded_sample_count": 498574,
+          "expected_context": "Sa nakakalat na sharps, ilayo ang iba at humingi ng sinanay na tulong; huwag damputin nang kamay. Hindi nagbibigay ng pahintulot ang gloves na magpatuloy nang walang tamang lalagyan. Ang ligtas na pagtatapon ng sharps ay nangangailangan ng tamang lalagyan at sinanay na paghawak.",
+          "model_response": "```json\n{\n \"transcript\": \"Sa nakakalat na sharps, ilayo ang iba, at humingi ng sinanay na tulong. Huwag damputin ng kamay. Hindi nagbibigay ng pahintulot ang gloves na magpatuloy nang walang tamang lalagyan. Ang ligtas na pagtatapon ng sharps ay nangangailangan ng tamang lalagyan at sinanay na paghawak.\",\n \"observations\": [\n  {\n   \"timestamp\": \"00:00 - 00:07.45\",\n   \"speaker\": \"Speaker 1 (Female)\",\n   \"note\": \"Delivers instructional safety steps regarding scattered sharps clearly with standard Tagalog intonation and clear pronunciation of the English loanword 'sharps'.\"\n  },\n  {\n   \"timestamp\": \"00:07.45 - 00:13.20\",\n   \"speaker\": \"Speaker 2 (Male)\",\n   \"note\": \"Voice switches distinctly to a male speaker explaining cautionary advice regarding gloves, articulating negations clearly ('Hindi', 'walang'). English loanword 'gloves' is clearly enunciated.\"\n  },\n  {\n   \"timestamp\": \"00:13.20 - 00:20.15\",\n   \"speaker\": \"Speaker 1 (Female)\",\n   \"note\": \"Voice returns to Speaker 1 concluding the educational message. Ending is complete with natural cadence, no clipping observed.\"\n  }\n ],\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-workload-fil",
+      "language": "fil",
+      "source_path": "/training/audio/08-osh/safety-controls/workload.fil.7bac5e7a1f17.mp3",
+      "source_sha256": "e26a3eacb05eac8ea01aebd5c516b84d6b5ce2c8085489a4cbd3b87117bb060c",
+      "decoded_pcm_sha256": "60b4aa49230b989d4ad89e6b31b23f9afb6c72ccc2e8bcf62fc1b57d20ec8271",
+      "full_audio_metrics": {
+        "samples": 1892102,
+        "seconds": 78.83758333333333,
+        "rms": 0.1384402958084815,
+        "peak": 0.979400634765625,
+        "quiet_sample_fraction": 0.20969905427931476
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "May hangganan ang oras at kapasidad",
+          "start_ms": 0,
+          "end_ms": 3400,
+          "samples": 81600,
+          "seconds": 3.4,
+          "rms": 0.13905465210109377,
+          "peak": 0.83343505859375,
+          "quiet_sample_fraction": 0.17677696078431374
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "May humiling kay Apple ng dagdag na pagbisita sa gabi kahit pagod na siya.",
+          "start_ms": 3700,
+          "end_ms": 8980,
+          "samples": 126720,
+          "seconds": 5.28,
+          "rms": 0.14913298809068884,
+          "peak": 0.89337158203125,
+          "quiet_sample_fraction": 0.16516729797979798
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Madilim at hindi pa natiyak na ligtas ang rutang ibinigay sa card.",
+          "start_ms": 9280,
+          "end_ms": 14560,
+          "samples": 126720,
+          "seconds": 5.28,
+          "rms": 0.10850980857888194,
+          "peak": 0.705322265625,
+          "quiet_sample_fraction": 0.15568181818181817
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Sabi niya sa coordinator, “Ito ang kaya ko sa napagkasunduang oras.",
+          "start_ms": 14860,
+          "end_ms": 20660,
+          "samples": 139200,
+          "seconds": 5.8,
+          "rms": 0.1373729405097051,
+          "peak": 0.841705322265625,
+          "quiet_sample_fraction": 0.22404454022988507
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Pagod na ako at hindi pa tiyak ang ruta.",
+          "start_ms": 20960,
+          "end_ms": 24040,
+          "samples": 73920,
+          "seconds": 3.08,
+          "rms": 0.18002031100961446,
+          "peak": 0.867706298828125,
+          "quiet_sample_fraction": 0.20633116883116884
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sino ang maaaring mag-ayos ng ibang iskedyul, tulong o ligtas na paraan?”",
+          "start_ms": 24340,
+          "end_ms": 31340,
+          "samples": 168000,
+          "seconds": 7,
+          "rms": 0.13684020474000805,
+          "peak": 0.761474609375,
+          "quiet_sample_fraction": 0.1628690476190476
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Hilingin ang muling pagtatalaga at pahinga; tiyakin ang sagot at ligtas na alternatibo bago ituloy ang apektadong lakad.",
+          "start_ms": 31640,
+          "end_ms": 39800,
+          "samples": 195840,
+          "seconds": 8.16,
+          "rms": 0.1304815665706341,
+          "peak": 0.979400634765625,
+          "quiet_sample_fraction": 0.17979473039215688
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Hindi pa napagkasunduan sa halimbawang ito ang bagong iskedyul o kasama.",
+          "start_ms": 40100,
+          "end_ms": 46180,
+          "samples": 145920,
+          "seconds": 6.08,
+          "rms": 0.14417312458558665,
+          "peak": 0.92559814453125,
+          "quiet_sample_fraction": 0.15259046052631578
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Malinaw na workload limit at suporta ang kontrol para sa stress; ligtas na ruta at pag-iwas sa banta ang kontrol para sa aksidente.",
+          "start_ms": 46480,
+          "end_ms": 56120,
+          "samples": 231360,
+          "seconds": 9.64,
+          "rms": 0.14798076350809403,
+          "peak": 0.849273681640625,
+          "quiet_sample_fraction": 0.20011237897648687
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Hindi sapat ang PPE para sa dalawang ito.",
+          "start_ms": 56420,
+          "end_ms": 60420,
+          "samples": 96000,
+          "seconds": 4,
+          "rms": 0.14451398387843734,
+          "peak": 0.857177734375,
+          "quiet_sample_fraction": 0.16922916666666668
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Hindi default na solusyon ang dagdag na oras ng boluntaryo.",
+          "start_ms": 60720,
+          "end_ms": 65000,
+          "samples": 102720,
+          "seconds": 4.28,
+          "rms": 0.1431466632826976,
+          "peak": 0.740142822265625,
+          "quiet_sample_fraction": 0.1285338785046729
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Hindi kabawasan sa malasakit ang pag-uulat ng panganib o paghingi ng tulong.",
+          "start_ms": 65300,
+          "end_ms": 71300,
+          "samples": 144000,
+          "seconds": 6,
+          "rms": 0.16862087803247736,
+          "peak": 0.818878173828125,
+          "quiet_sample_fraction": 0.156
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang pag-uulat ng sobrang workload at pagtakda ng hangganan ay bahagi ng kaligtasan sa trabaho.",
+          "start_ms": 71600,
+          "end_ms": 78760,
+          "samples": 171840,
+          "seconds": 7.16,
+          "rms": 0.12227440997779872,
+          "peak": 0.771636962890625,
+          "quiet_sample_fraction": 0.1393505586592179
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.7,
+          "end": 8.98,
+          "file": "read-workload-fil-name.wav",
+          "excerpt_sha256": "9aada34488f87c6519fdaa8bdb4e73c3b104020240bdee65a402d13d9929e25c",
+          "decoded_sample_count": 126720,
+          "expected_context": "May humiling kay Apple ng dagdag na pagbisita sa gabi kahit pagod na siya.",
+          "model_response": "```json\n{\n  \"transcript\": \"May humiling kay Apple ng dagdag na pagbisita sa gabi kahit pagod na siya.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The name 'Apple' is pronounced clearly around 00:00.95 - 00:01.40 with standard localized English phonetics (/ˈæpəl/ or /ˈʔapəl/).\",\n    \"negation\": \"No negative grammatical markers (e.g., 'hindi', 'wala') are present in this excerpt.\",\n    \"role_distinctions\": \"Single female narrator voice throughout the clip.\",\n    \"ending_completeness\": \"The utterance completes naturally on 'siya' followed by trailing silence without truncation.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.7,
+          "end": 8.98,
+          "file": "read-workload-fil-body.wav",
+          "excerpt_sha256": "9aada34488f87c6519fdaa8bdb4e73c3b104020240bdee65a402d13d9929e25c",
+          "decoded_sample_count": 126720,
+          "expected_context": "May humiling kay Apple ng dagdag na pagbisita sa gabi kahit pagod na siya.",
+          "model_response": "```json\n{\n \"transcript\": \"May humiling kay Apple ng dagdag na pagbisita sa gabi kahit pagod na siya.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The name 'Apple' is pronounced naturally as /ˈæ.pəl/.\",\n  \"negation\": \"No negative grammatical particles are present in the excerpt.\",\n  \"role_distinctions\": \"The excerpt is delivered in a steady third-person narrative voice without distinct character acting.\",\n  \"ending_completeness\": \"The sentence completes naturally with 'siya' without any truncation at the end.\",\n  \"audible_speech\": \"The narration is clearly audible and cleanly articulated.\",\n  \"clipped_words\": \"None detected.\",\n  \"unexpected_voice_changes\": \"Pacing, pitch, and vocal timbre remain consistent throughout.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 9.28,
+          "end": 20.66,
+          "file": "read-workload-fil-critical.wav",
+          "excerpt_sha256": "14b0b881538005e84b52153d9f1c59a61a57f33af72ab948f9192ba64eb40ac0",
+          "decoded_sample_count": 273120,
+          "expected_context": "Madilim at hindi pa natiyak na ligtas ang rutang ibinigay sa card. Sabi niya sa coordinator, “Ito ang kaya ko sa napagkasunduang oras.",
+          "model_response": "```json\n{\n  \"transcript\": \"Madilim at hindi pa natiyak na ligtas ang rutang ibinigay sa card. Sabi niya sa coordinator, 'Ito ang kaya ko sa napagkasunduang oras.'\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Not applicable; the word 'Apple' does not appear in the excerpt.\",\n    \"negation\": \"The negative marker 'hindi' is clearly articulated in 'hindi pa natiyak' at 00:01.\",\n    \"role_distinctions\": \"Clear shift in tone between narration (00:00–00:07) and the quoted dialogue (00:07–00:11).\",\n    \"ending_completeness\": \"The sentence and final word 'oras' conclude completely without truncation.\",\n    \"audible_speech\": \"Speech is completely audible and intelligible throughout.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 60.72,
+          "end": 78.83758333333333,
+          "file": "read-workload-fil-ending.wav",
+          "excerpt_sha256": "4ef41432e8f9555f2c75a371f3004ee35d4565266dfd3ebf2c9729eba504433a",
+          "decoded_sample_count": 434822,
+          "expected_context": "Hindi default na solusyon ang dagdag na oras ng boluntaryo. Hindi kabawasan sa malasakit ang pag-uulat ng panganib o paghingi ng tulong. Ang pag-uulat ng sobrang workload at pagtakda ng hangganan ay bahagi ng kaligtasan sa trabaho.",
+          "model_response": "```json\n{\n  \"transcript\": \"Hindi default na solusyon ang dagdag na oras ng boluntaryo. Hindi kabawasan sa malasakit ang pag-uulat ng panganib o paghingi ng tulong. Ang pag-uulat ng sobrang workload at pagtakda ng hangganan ay bahagi ng kaligtasan sa trabaho.\",\n  \"observations\": [\n    {\n      \"timestamp\": \"00:00.000 - 00:03.800\",\n      \"detail\": \"Spoken by a clear female voice.\"\n    },\n    {\n      \"timestamp\": \"00:04.200\",\n      \"detail\": \"Noticeable voice transition/speaker change to a different female speaker for the remainder of the audio.\"\n    },\n    {\n      \"timestamp\": \"00:17.500\",\n      \"detail\": \"Audio ends cleanly without clipping.\"\n    }\n  ],\n  \"possible_defects\": [\n    {\n      \"type\": \"unexpected_voice_change\",\n      \"timestamp\": \"00:04.200\",\n      \"description\": \"Unannounced shift in speaker voice between the first sentence and the second sentence.\"\n    }\n  ],\n  \"uncertainty\": \"none\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-body-en",
+      "language": "en",
+      "source_path": "/training/audio/08-osh/safety-controls/body.en.98dbe5a08d97.mp3",
+      "source_sha256": "e5b2f44d89ee748422e52f35e456c9da4de607203177b4e45ac69a55356f0d88",
+      "decoded_pcm_sha256": "3fbd66c6380351475e2fa8aa4f45533433c459ce883a6b09fa5925a03921b4f4",
+      "full_audio_metrics": {
+        "samples": 1662642,
+        "seconds": 69.27675,
+        "rms": 0.13456571673221895,
+        "peak": 0.9871826171875,
+        "quiet_sample_fraction": 0.21736008112389799
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Protect the body during work",
+          "start_ms": 0,
+          "end_ms": 2360,
+          "samples": 56640,
+          "seconds": 2.36,
+          "rms": 0.13973493253442773,
+          "peak": 0.866241455078125,
+          "quiet_sample_fraction": 0.2923728813559322
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "The bag is heavy in the fictional example and the task involves repeated bending.",
+          "start_ms": 2660,
+          "end_ms": 8580,
+          "samples": 142080,
+          "seconds": 5.92,
+          "rms": 0.1388326170113433,
+          "peak": 0.884033203125,
+          "quiet_sample_fraction": 0.15073198198198198
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Apple arranges the chair and supplies within easier reach.",
+          "start_ms": 8880,
+          "end_ms": 13320,
+          "samples": 106560,
+          "seconds": 4.44,
+          "rms": 0.13845628540890798,
+          "peak": 0.8956298828125,
+          "quiet_sample_fraction": 0.13889827327327328
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "She says, “I need lifting assistance; I will not continue a painful movement.”",
+          "start_ms": 13620,
+          "end_ms": 20100,
+          "samples": 155520,
+          "seconds": 6.48,
+          "rms": 0.1499777291139453,
+          "peak": 0.83599853515625,
+          "quiet_sample_fraction": 0.22717978395061728
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Reduce heavy carrying and repeated bending, plan breaks and position changes, and use comfortable footwear and supportive seating.",
+          "start_ms": 20400,
+          "end_ms": 30480,
+          "samples": 241920,
+          "seconds": 10.08,
+          "rms": 0.1281724515571071,
+          "peak": 0.765045166015625,
+          "quiet_sample_fraction": 0.1711268187830688
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ask for carrying assistance and report pain; obtain assessment if needed.",
+          "start_ms": 30780,
+          "end_ms": 36940,
+          "samples": 147840,
+          "seconds": 6.16,
+          "rms": 0.1334020925120215,
+          "peak": 0.8409423828125,
+          "quiet_sample_fraction": 0.19228219696969698
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Do not force painful stretches or endure pain as proof of diligence.",
+          "start_ms": 37240,
+          "end_ms": 43040,
+          "samples": 139200,
+          "seconds": 5.8,
+          "rms": 0.15841304542340764,
+          "peak": 0.926483154296875,
+          "quiet_sample_fraction": 0.16595545977011494
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "For a hot walk, verify opportunities for rest and heat avoidance under the local plan.",
+          "start_ms": 43340,
+          "end_ms": 50220,
+          "samples": 165120,
+          "seconds": 6.88,
+          "rms": 0.1467931921235549,
+          "peak": 0.9871826171875,
+          "quiet_sample_fraction": 0.17644743217054262
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Gloves do not fix a heavy bag or supplies out of reach.",
+          "start_ms": 50520,
+          "end_ms": 55360,
+          "samples": 116160,
+          "seconds": 4.84,
+          "rms": 0.12035278587739397,
+          "peak": 0.74835205078125,
+          "quiet_sample_fraction": 0.1449810606060606
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Choose changes to the work and surroundings; verify assistance before resuming unsafe carrying.",
+          "start_ms": 55660,
+          "end_ms": 62940,
+          "samples": 174720,
+          "seconds": 7.28,
+          "rms": 0.13289317672898512,
+          "peak": 0.852630615234375,
+          "quiet_sample_fraction": 0.1589915293040293
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Safer posture, breaks and sensible carrying are part of work preparation.",
+          "start_ms": 63240,
+          "end_ms": 69200,
+          "samples": 143040,
+          "seconds": 5.96,
+          "rms": 0.1267188727444394,
+          "peak": 0.89117431640625,
+          "quiet_sample_fraction": 0.22902684563758388
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 8.88,
+          "end": 13.32,
+          "file": "read-body-en-name.wav",
+          "excerpt_sha256": "cc66aef52c77f6d83cb133a86f645cd79ea9778fa6da831f1c2824050d09fc8c",
+          "decoded_sample_count": 106560,
+          "expected_context": "Apple arranges the chair and supplies within easier reach.",
+          "model_response": "```json\n{\n  \"transcript\": \"Abel rearranges the chair and supplies within easier reach.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"At 00:00.00–00:00.56, the initial subject is pronounced as [ˈeɪ.bəl] ('Abel') rather than [ˈæ.pəl] ('Apple'), featuring an /eɪ/ vowel and a voiced /b/ sound.\",\n    \"negation\": \"No negative constructions are present in the excerpt.\",\n    \"role_distinctions\": \"Single narrator voice throughout; no role shifts.\",\n    \"ending_completeness\": \"The final word 'reach' concludes cleanly at 00:03.95 without truncation or clipping.\",\n    \"audible_speech\": \"All speech is clear, distinct, and audible.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; tone and pitch remain steady and consistent.\"\n  },\n  \"possible_defects\": [\n    \"Pronunciation of 'Apple' sounds like 'Abel' ([ˈeɪ.bəl]) between 00:00.00 and 00:00.56 if 'Apple' was the targeted word.\"\n  ],\n  \"uncertainty\": \"Low; audio is clear, though it is ambiguous whether the script intended the proper noun 'Abel' or the word 'Apple'.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.66,
+          "end": 8.58,
+          "file": "read-body-en-body.wav",
+          "excerpt_sha256": "6b619665399e45f787bdfe9302d7056e5d43b30bc760feea61028b0be99db0fe",
+          "decoded_sample_count": 142080,
+          "expected_context": "The bag is heavy in the fictional example and the task involves repeated bending.",
+          "model_response": "```json\n{\n  \"transcript\": \"The bag is heavy in the fictional example, and the task involves repeated bending.\",\n  \"observations\": {\n    \"audible_speech\": \"The entire sentence is fully audible, clearly articulated, and free of background noise or distortion.\",\n    \"pronunciation\": \"Clear, neutral educational articulation across all words with standard stress patterns.\",\n    \"role_distinctions\": \"Single consistent female instructional/narrator voice.\",\n    \"clipped_words\": \"None; all initial and final consonants are preserved without truncation.\",\n    \"ending_completeness\": \"The sentence ends cleanly with a natural cadence and acoustic decay on 'bending' ending at approximately 00:05.40.\",\n    \"unexpected_voice_changes\": \"Pitch, timbre, and pace remain consistent throughout the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 13.62,
+          "end": 30.48,
+          "file": "read-body-en-critical.wav",
+          "excerpt_sha256": "895e4722af9bb48b0d409390790708b3e6acfc9514beb9392bdb76601a83c3c3",
+          "decoded_sample_count": 404640,
+          "expected_context": "She says, “I need lifting assistance; I will not continue a painful movement.” Reduce heavy carrying and repeated bending, plan breaks and position changes, and use comfortable footwear and supportive seating.",
+          "model_response": "```json\n{\n \"transcript\": \"She says, I need lifting assistance. I will not continue a painful movement. Reduce heavy carrying and repeated bending, plan breaks and position changes, and use comfortable footwear and supportive seating.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The word 'apple' does not occur in this excerpt.\",\n  \"negation\": \"The negation 'will not' at 00:03 - 00:04 is clearly articulated with full emphasis and no contraction.\",\n  \"role_distinctions\": \"The speaker introduces a quote with 'She says' (00:00 - 00:01) followed by a short pause before delivering the first-person statement, maintaining a consistent educational voice throughout.\",\n  \"ending_completeness\": \"The audio concludes naturally with 'supportive seating' at ~00:16 without premature cutoff.\",\n  \"audible_speech\": \"All words are fully audible and intelligible.\",\n  \"clipped_words\": \"No clipped words observed.\",\n  \"unexpected_voice_changes\": \"None observed; pitch, pacing, and tone remain stable throughout.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 50.52,
+          "end": 69.27675,
+          "file": "read-body-en-ending.wav",
+          "excerpt_sha256": "c1465a0934553242a5cacb40822db9d15ba0724b858145e6526388b54bc06da1",
+          "decoded_sample_count": 450162,
+          "expected_context": "Gloves do not fix a heavy bag or supplies out of reach. Choose changes to the work and surroundings; verify assistance before resuming unsafe carrying. Safer posture, breaks and sensible carrying are part of work preparation.",
+          "model_response": "```json\n{\n  \"transcript\": \"Gloves do not fix a heavy bag or supplies out of reach. Choose changes to the work and surroundings. Verify assistance before resuming unsafe carrying. Safer posture, breaks, and sensible carrying are part of work preparation.\",\n  \"observations\": {\n    \"accent\": \"Philippine English / neutralized instructional English\",\n    \"delivery\": \"Clear, measured educational reading with synthetic/TTS qualities\",\n    \"negation\": \"Clear articulation of 'do not' at 00:00.67-00:01.09 and prefix 'un-' in 'unsafe' at 00:10.98-00:11.41\",\n    \"ending_completeness\": \"The ending word 'preparation' completes fully with clean fade to silence\",\n    \"clipped_words\": \"None detected\",\n    \"unexpected_voice_changes\": \"Pitch, pacing, and tone remain consistent throughout the excerpt\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-check-en",
+      "language": "en",
+      "source_path": "/training/audio/08-osh/safety-controls/check.en.445e0fc16301.mp3",
+      "source_sha256": "721baa652fe2d8109a58145d6f60c1763ab2eebfde56f6cdeb6ddb8d15097773",
+      "decoded_pcm_sha256": "a5764a3576463a27cb3b9a3ff9c1c8d500a44ed8cb457dc3a1371c6df74fa6a5",
+      "full_audio_metrics": {
+        "samples": 925989,
+        "seconds": 38.582875,
+        "rms": 0.12193595545158357,
+        "peak": 0.88787841796875,
+        "quiet_sample_fraction": 0.2359920042246722
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Choose the next step",
+          "start_ms": 0,
+          "end_ms": 1800,
+          "samples": 43200,
+          "seconds": 1.8,
+          "rms": 0.10239736125565317,
+          "peak": 0.721710205078125,
+          "quiet_sample_fraction": 0.3552314814814815
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "The sharps box on the fictional card is nearly full; the authorized contact and availability of a replacement are unknown.",
+          "start_ms": 2100,
+          "end_ms": 11340,
+          "samples": 221760,
+          "seconds": 9.24,
+          "rms": 0.1290717310657935,
+          "peak": 0.831817626953125,
+          "quiet_sample_fraction": 0.17164051226551227
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Apple does not open it or touch its contents.",
+          "start_ms": 11640,
+          "end_ms": 15560,
+          "samples": 94080,
+          "seconds": 3.92,
+          "rms": 0.13147260932428415,
+          "peak": 0.789337158203125,
+          "quiet_sample_fraction": 0.24097576530612244
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "She pauses the affected task while verifying the proper correction.",
+          "start_ms": 15860,
+          "end_ms": 20700,
+          "samples": 116160,
+          "seconds": 4.84,
+          "rms": 0.1294271835475723,
+          "peak": 0.88787841796875,
+          "quiet_sample_fraction": 0.17528409090909092
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Choose an answer and explain why before viewing feedback.",
+          "start_ms": 21000,
+          "end_ms": 25760,
+          "samples": 114240,
+          "seconds": 4.76,
+          "rms": 0.12082011776954162,
+          "peak": 0.802520751953125,
+          "quiet_sample_fraction": 0.22258403361344536
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Clicking an answer does not establish demonstrated competence.",
+          "start_ms": 26060,
+          "end_ms": 30900,
+          "samples": 116160,
+          "seconds": 4.84,
+          "rms": 0.12763570187768275,
+          "peak": 0.749664306640625,
+          "quiet_sample_fraction": 0.1690771349862259
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+          "start_ms": 31200,
+          "end_ms": 38520,
+          "samples": 175680,
+          "seconds": 7.32,
+          "rms": 0.1190188601137461,
+          "peak": 0.752716064453125,
+          "quiet_sample_fraction": 0.18391962659380692
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 11.64,
+          "end": 15.56,
+          "file": "read-check-en-name.wav",
+          "excerpt_sha256": "38d25f6801bebe046379f24ed5644247c94aa20fb662a2dd3b80726ed52aaeae",
+          "decoded_sample_count": 94080,
+          "expected_context": "Apple does not open it or touch its contents.",
+          "model_response": "```json\n{\n  \"transcript\": \"Apple does not open it, or touch its contents.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'Apple' is pronounced clearly at 00:00.00–00:00.58 with standard articulation [ˈæp.əl].\",\n    \"negation\": \"The negation 'not' is clearly stressed and enunciated at 00:00.82–00:01.20.\",\n    \"role_distinctions\": \"Single consistent narrator throughout the utterance.\",\n    \"ending_completeness\": \"The utterance completes naturally with full pronunciation and decay on 'contents' at 00:03.48; no truncation detected.\",\n    \"audible_speech\": \"Speech is clean, intelligible, and professional studio quality.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"Pacing, pitch, and timbre remain stable throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.1,
+          "end": 11.34,
+          "file": "read-check-en-body.wav",
+          "excerpt_sha256": "78fc478f2c143978b98cd1687e54b3cf30e0e4d8872e3cfbe85cd55c45f26207",
+          "decoded_sample_count": 221760,
+          "expected_context": "The sharps box on the fictional card is nearly full; the authorized contact and availability of a replacement are unknown.",
+          "model_response": "```json\n{\n \"transcript\": \"The sharps box on the fictional cart is nearly full. The authorized contact and availability of a replacement are unknown.\",\n \"observations\": {\n  \"speaker_profile\": \"Single female speaker with a clear Philippine English accent delivering educational narration.\",\n  \"audio_quality\": \"Clean studio-quality audio with no perceptible background noise or distortion.\",\n  \"delivery_and_pacing\": \"Consistent, steady pacing and even tone throughout the excerpt.\",\n  \"apple_pronunciation\": \"No instance of the word 'apple' occurs; open front vowels like in 'contact' [kɒn.tækt] are pronounced clearly.\",\n  \"negation\": \"Negation is conveyed via the prefix in 'unknown' at 00:08.5 - 00:09.3, clearly enunciated.\",\n  \"role_distinctions\": \"Single narrator role with no dialogue or character distinctions.\",\n  \"ending_completeness\": \"The sentence completes naturally with full terminal cadence; no truncation at the end.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"None observed.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"Low; all words are articulated clearly.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 11.64,
+          "end": 20.7,
+          "file": "read-check-en-critical.wav",
+          "excerpt_sha256": "0d786d98665a105061fbe06fcd89d101064d0b50be796baf41f5a3d5486abecc",
+          "decoded_sample_count": 217440,
+          "expected_context": "Apple does not open it or touch its contents. She pauses the affected task while verifying the proper correction.",
+          "model_response": "```json\n{\n  \"transcript\": \"Apple does not open it or touch its contents. She pauses the affected task while verifying the proper correction.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'Apple' at 00:00.00 is pronounced distinctly with standard front vowel /æ/ and clear bilabial stop.\",\n    \"negation\": \"The negation 'does not' at 00:00.35 - 00:00.95 is clearly articulated without reduction or omission.\",\n    \"role_distinctions\": \"Single consistent female instructional narrator voice throughout.\",\n    \"ending_completeness\": \"The final word 'correction' at 00:08.50 - 00:09.25 ends completely with audible trailing sibilance/nasal completion; no premature cut-off.\",\n    \"audible_speech\": \"All spoken words are fully audible and clear across the entire excerpt.\",\n    \"clipped_words\": \"No words or phonemes appear clipped or truncated.\",\n    \"unexpected_voice_changes\": \"Pacing, pitch, and vocal timbre remain stable and consistent without sudden shifts or acoustic discontinuities.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 21,
+          "end": 38.582875,
+          "file": "read-check-en-ending.wav",
+          "excerpt_sha256": "1a9a128aa7bde2dd43219e41f16eb915178432f12cbb4a490ad86d97fa5b849d",
+          "decoded_sample_count": 421989,
+          "expected_context": "Choose an answer and explain why before viewing feedback. Clicking an answer does not establish demonstrated competence. Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+          "model_response": "```json\n{\n  \"transcript\": \"Choose an answer, and explain why, before viewing feedback. Clicking an answer, does not establish demonstrated competence. Choose controls for the hazard. PPE cannot replace every change needed in the work.\",\n  \"observations\": {\n    \"role_distinctions\": \"The audio features two distinct voices: a male voice speaks the first sentence (00:00 - 00:04), followed by a female voice delivering the remainder of the clip (00:04 - 00:17).\",\n    \"negation\": \"Clear negation is present at 00:06 - 00:07 ('does not') and 00:13 - 00:14 ('cannot').\",\n    \"apple_pronunciation\": \"No occurrence of the word 'Apple'. 'PPE' is clearly enunciated as an initialism /ˌpiː.piːˈiː/.\",\n    \"ending_completeness\": \"The audio ends naturally on the phrase 'in the work.' with full decay and no abrupt cutoff.\",\n    \"audible_speech\": \"All words are clearly audible, well-paced, and articulated in an instructional style.\",\n    \"clipped_words\": \"None observed.\",\n    \"unexpected_voice_changes\": \"A speaker shift occurs at 00:04.8 from a male voice to a female voice.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-infection-en",
+      "language": "en",
+      "source_path": "/training/audio/08-osh/safety-controls/infection.en.291388c23c54.mp3",
+      "source_sha256": "add2fef037783452eb943885dad250aeec563e6d718a386ec971b3b0d804effb",
+      "decoded_pcm_sha256": "4058f2fa1e412174e1fa72eb3114cb1eb6b57cef266cc01dfd4cff64864cc13d",
+      "full_audio_metrics": {
+        "samples": 1902760,
+        "seconds": 79.28166666666667,
+        "rms": 0.12687855165283857,
+        "peak": 0.950164794921875,
+        "quiet_sample_fraction": 0.23554415690891126
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Choose controls for the hazard",
+          "start_ms": 0,
+          "end_ms": 2440,
+          "samples": 58560,
+          "seconds": 2.44,
+          "rms": 0.10191037049257931,
+          "peak": 0.545928955078125,
+          "quiet_sample_fraction": 0.27380464480874317
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Apple separates cards for hand hygiene, ventilation, waste and bite prevention.",
+          "start_ms": 2740,
+          "end_ms": 9980,
+          "samples": 173760,
+          "seconds": 7.24,
+          "rms": 0.113382710151644,
+          "peak": 0.77484130859375,
+          "quiet_sample_fraction": 0.22458563535911602
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Infection routes differ: exposure may involve blood or body fluids, respiratory particles, or mosquito bites.",
+          "start_ms": 10280,
+          "end_ms": 19360,
+          "samples": 217920,
+          "seconds": 9.08,
+          "rms": 0.14503660630641133,
+          "peak": 0.950164794921875,
+          "quiet_sample_fraction": 0.18277808370044052
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Select prevention for the task and local protocol; one item does not solve every route.",
+          "start_ms": 19660,
+          "end_ms": 26340,
+          "samples": 160320,
+          "seconds": 6.68,
+          "rms": 0.12385940988116667,
+          "peak": 0.730499267578125,
+          "quiet_sample_fraction": 0.1995945608782435
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Controls include hand and respiratory hygiene, ventilation, safe waste handling and task-appropriate PPE.",
+          "start_ms": 26640,
+          "end_ms": 36280,
+          "samples": 231360,
+          "seconds": 9.64,
+          "rms": 0.12228696103260066,
+          "peak": 0.776275634765625,
+          "quiet_sample_fraction": 0.20754668049792532
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Gloves do not replace hand hygiene.",
+          "start_ms": 36580,
+          "end_ms": 39780,
+          "samples": 76800,
+          "seconds": 3.2,
+          "rms": 0.14858523496030018,
+          "peak": 0.71356201171875,
+          "quiet_sample_fraction": 0.19869791666666667
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "For mosquitoes, prevent bites and address breeding sites; this is not equivalent to merely wearing gloves.",
+          "start_ms": 40080,
+          "end_ms": 48000,
+          "samples": 190080,
+          "seconds": 7.92,
+          "rms": 0.14049839235732114,
+          "peak": 0.849639892578125,
+          "quiet_sample_fraction": 0.17563657407407407
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "For cleaning chemicals, follow labels and facility instructions; never mix them or invent a dilution.",
+          "start_ms": 48300,
+          "end_ms": 55940,
+          "samples": 183360,
+          "seconds": 7.64,
+          "rms": 0.11182004600276498,
+          "peak": 0.837921142578125,
+          "quiet_sample_fraction": 0.15879690226876092
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Apple asks, “Which route does this control?",
+          "start_ms": 56240,
+          "end_ms": 59880,
+          "samples": 87360,
+          "seconds": 3.64,
+          "rms": 0.1397795559602493,
+          "peak": 0.864990234375,
+          "quiet_sample_fraction": 0.26295787545787547
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "What still needs verification?”",
+          "start_ms": 60180,
+          "end_ms": 62660,
+          "samples": 59520,
+          "seconds": 2.48,
+          "rms": 0.1251724825542401,
+          "peak": 0.660369873046875,
+          "quiet_sample_fraction": 0.24065860215053764
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "If essential protection is missing or the task exceeds training, pause the affected task and obtain authorized correction.",
+          "start_ms": 62960,
+          "end_ms": 72440,
+          "samples": 227520,
+          "seconds": 9.48,
+          "rms": 0.147089134397523,
+          "peak": 0.88409423828125,
+          "quiet_sample_fraction": 0.17062236286919832
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Infection prevention combines appropriate practices, equipment and surroundings.",
+          "start_ms": 72740,
+          "end_ms": 79220,
+          "samples": 155520,
+          "seconds": 6.48,
+          "rms": 0.11292917992756413,
+          "peak": 0.917816162109375,
+          "quiet_sample_fraction": 0.24897762345679011
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 2.74,
+          "end": 9.98,
+          "file": "read-infection-en-name.wav",
+          "excerpt_sha256": "621f1d7817419a59af826daa5a7e7f72051e5aee66207f9c605cc362d22ddee2",
+          "decoded_sample_count": 173760,
+          "expected_context": "Apple separates cards for hand hygiene, ventilation, waste and bite prevention.",
+          "model_response": "```json\n{\n  \"transcript\": \"Apple separates cards for hand hygiene, ventilation, waste, and bite prevention.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'Apple' is pronounced clearly at 00:00.00 - 00:00.55 without unusual phonemic distortions.\",\n    \"negation\": \"No negative constructions are present in the speech.\",\n    \"role_distinctions\": \"Single consistent female speaker throughout.\",\n    \"ending_completeness\": \"The sentence completes naturally at 00:06.85 without truncation.\",\n    \"audible_speech\": \"All words are clearly audible and intelligible.\",\n    \"clipped_words\": \"No words are clipped or prematurely cut off.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and timbre remain consistent throughout the excerpt.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 2.74,
+          "end": 9.98,
+          "file": "read-infection-en-body.wav",
+          "excerpt_sha256": "621f1d7817419a59af826daa5a7e7f72051e5aee66207f9c605cc362d22ddee2",
+          "decoded_sample_count": 173760,
+          "expected_context": "Apple separates cards for hand hygiene, ventilation, waste and bite prevention.",
+          "model_response": "```json\n{\n  \"transcript\": \"Apple separates cards for hand hygiene, ventilation, waste, and bite prevention.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'Apple' at 00:00 - 00:00.45 is pronounced clearly with standard phonetics without distortion.\",\n    \"negation\": \"No negative grammatical constructions or negation words are present in the excerpt.\",\n    \"role_distinctions\": \"Single consistent female educational voice throughout with no role shifts.\",\n    \"ending_completeness\": \"The sentence completes fully at 00:06.65 with terminal cadence followed by clean ambient room silence.\",\n    \"audible_speech\": \"All words are fully audible and distinct with clear pauses between list items.\",\n    \"clipped_words\": \"None; all word onsets and codas are cleanly articulated.\",\n    \"unexpected_voice_changes\": \"None; pacing, timbre, and acoustic environment remain uniform.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; speech is clear and unambiguous.\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 19.66,
+          "end": 36.28,
+          "file": "read-infection-en-critical.wav",
+          "excerpt_sha256": "1fd42b82ccaddbee77cac72e9d658a6bdfe5ff49f843faa366c994e5b169be50",
+          "decoded_sample_count": 398880,
+          "expected_context": "Select prevention for the task and local protocol; one item does not solve every route. Controls include hand and respiratory hygiene, ventilation, safe waste handling and task-appropriate PPE.",
+          "model_response": "```json\n{\n  \"transcript\": \"Select prevention for the task and local protocol. One item does not solve every route. Controls include hand and respiratory hygiene, ventilation, safe waste handling, and task-appropriate PPE.\",\n  \"observations\": {\n    \"accent_and_pronunciation\": \"Features standard Philippine English phonological patterns, including near-open/open realization for the TRAP vowel ('apple' vowel class) in words like 'task', 'hand', and 'handling' rather than raised General American /æ/.\",\n    \"negation\": \"The negation 'does not' at 00:04.5 - 00:05.1 is clearly articulated without reduction or swallowing of consonants.\",\n    \"role_distinctions\": \"Single-speaker educational/instructional delivery throughout; no multiple roles or role transitions present.\",\n    \"ending_completeness\": \"The final phrase 'task-appropriate PPE' concludes naturally at ~00:16.1 with no truncated audio or clipped decay.\",\n    \"audible_speech\": \"Speech is fully intelligible, paced, and distinct with low background noise.\",\n    \"clipped_words\": \"None detected; word boundaries and final stops/fricatives are preserved.\",\n    \"unexpected_voice_changes\": \"Pacing slows noticeably for the list of items from 00:07.0 to 00:16.1 compared to the initial introductory sentences, which is consistent with clear educational enumeration rather than an artifact.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 62.96,
+          "end": 79.28166666666667,
+          "file": "read-infection-en-ending.wav",
+          "excerpt_sha256": "b473381de33fbe9390be39426370e87fb947cd793c32f7bda5ce52a479cc95ea",
+          "decoded_sample_count": 391720,
+          "expected_context": "If essential protection is missing or the task exceeds training, pause the affected task and obtain authorized correction. Infection prevention combines appropriate practices, equipment and surroundings.",
+          "model_response": "```json\n{\n  \"transcript\": \"If essential protection is missing, or the task exceeds training, pause the affected task, and obtain authorized correction. Infection prevention combines appropriate practices, equipment, and surroundings.\",\n  \"observations\": {\n    \"role_distinctions\": \"There are two distinct female voices present. Speaker 1 speaks from 00:00.00 to approximately 00:09.30, and Speaker 2 speaks from approximately 00:10.10 to 00:15.85 after a brief pause.\",\n    \"unexpected_voice_changes\": \"A clear voice transition occurs at 00:09.80 between the first sentence and the second sentence, switching to a different speaker timbre.\",\n    \"apple_pronunciation\": \"Words containing the TRAP/æ vowel (such as 'task', 'practices') display standard front-open realizations consistent with Philippine English / General English educational delivery, with no anomalous phoneme distortions.\",\n    \"negation\": \"No grammatical negation tokens (e.g., 'not', 'no', 'never') are present in the text.\",\n    \"clipped_words\": \"None detected; word onsets and codas are clearly articulated.\",\n    \"ending_completeness\": \"The audio concludes fully on the word 'surroundings' with complete terminal decay and no abrupt cutoff.\"\n  },\n  \"possible_defects\": [\n    \"Unannounced speaker/voice change between 00:09.30 and 00:10.10.\"\n  ],\n  \"uncertainty\": \"Low. All lexical items and acoustic properties are clearly audible.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-practice-en",
+      "language": "en",
+      "source_path": "/training/audio/08-osh/safety-controls/practice.en.ec0c9cdb07b2.mp3",
+      "source_sha256": "7c96cfe6e9bf241a43fe312986d8810109a761bc4b3113ba1796683fe9be5d89",
+      "decoded_pcm_sha256": "d1841bac1baf12471ca13a1a3975fec5f65cc6165700a802c46e28914b65f13d",
+      "full_audio_metrics": {
+        "samples": 2248830,
+        "seconds": 93.70125,
+        "rms": 0.13034357669818786,
+        "peak": 0.980133056640625,
+        "quiet_sample_fraction": 0.2845275098606831
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Try it, then repeat",
+          "start_ms": 0,
+          "end_ms": 2960,
+          "samples": 71040,
+          "seconds": 2.96,
+          "rms": 0.11113935822695484,
+          "peak": 0.831512451171875,
+          "quiet_sample_fraction": 0.47809684684684683
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "With Apple, match five pairs: sharps–proper containment and trained handling; infection–route- and task-appropriate prevention, including bite prevention; body pain–work adjustment, breaks and assistance; stress–agreed workload and support; accidents–a safe route and avoiding threats.",
+          "start_ms": 3260,
+          "end_ms": 28820,
+          "samples": 613440,
+          "seconds": 25.56,
+          "rms": 0.13191831448929017,
+          "peak": 0.938873291015625,
+          "quiet_sample_fraction": 0.31279831768388106
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Vector control belongs within the infection group while retaining its own concept coverage.",
+          "start_ms": 29120,
+          "end_ms": 35400,
+          "samples": 150720,
+          "seconds": 6.28,
+          "rms": 0.15927401950786868,
+          "peak": 0.937652587890625,
+          "quiet_sample_fraction": 0.15683386411889597
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "In ten triads, rotate as BHW, contact and observer.",
+          "start_ms": 35700,
+          "end_ms": 42500,
+          "samples": 163200,
+          "seconds": 6.8,
+          "rms": 0.12967862897016985,
+          "peak": 0.9166259765625,
+          "quiet_sample_fraction": 0.24051470588235294
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Everyone explains five pairs and answers, “What pauses?",
+          "start_ms": 42800,
+          "end_ms": 48320,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.12434010266435125,
+          "peak": 0.84820556640625,
+          "quiet_sample_fraction": 0.25426479468599034
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Which contact must be verified?",
+          "start_ms": 48620,
+          "end_ms": 51620,
+          "samples": 72000,
+          "seconds": 3,
+          "rms": 0.1350172721291872,
+          "peak": 0.833984375,
+          "quiet_sample_fraction": 0.2068611111111111
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "What correction is needed before resuming?”",
+          "start_ms": 51920,
+          "end_ms": 55040,
+          "samples": 74880,
+          "seconds": 3.12,
+          "rms": 0.1515319429908217,
+          "peak": 0.765289306640625,
+          "quiet_sample_fraction": 0.2064903846153846
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Attempt, receive specific feedback, then retry.",
+          "start_ms": 55340,
+          "end_ms": 60940,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.12173818808715844,
+          "peak": 0.980010986328125,
+          "quiet_sample_fraction": 0.3673214285714286
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Correct two mismatches: gloves for a heavy bag, and extra hours for an exhausted BHW.",
+          "start_ms": 61240,
+          "end_ms": 69560,
+          "samples": 199680,
+          "seconds": 8.32,
+          "rms": 0.12808557708548562,
+          "peak": 0.84405517578125,
+          "quiet_sample_fraction": 0.20563902243589743
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Alone, speak or write before comparing with the answer key and retrying.",
+          "start_ms": 69860,
+          "end_ms": 76220,
+          "samples": 152640,
+          "seconds": 6.36,
+          "rms": 0.12528211480838744,
+          "peak": 0.980133056640625,
+          "quiet_sample_fraction": 0.23349711740041929
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Peer feedback or an unobserved attempt is not a staff-observed pass.",
+          "start_ms": 76520,
+          "end_ms": 82240,
+          "samples": 137280,
+          "seconds": 5.72,
+          "rms": 0.14696799705205377,
+          "peak": 0.910858154296875,
+          "quiet_sample_fraction": 0.19075611888111887
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Check one control before the next duty.",
+          "start_ms": 82540,
+          "end_ms": 86260,
+          "samples": 89280,
+          "seconds": 3.72,
+          "rms": 0.14962967078389802,
+          "peak": 0.816436767578125,
+          "quiet_sample_fraction": 0.20085125448028673
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+          "start_ms": 86560,
+          "end_ms": 93640,
+          "samples": 169920,
+          "seconds": 7.08,
+          "rms": 0.11829546136306855,
+          "peak": 0.9034423828125,
+          "quiet_sample_fraction": 0.17078036723163842
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.26,
+          "end": 28.82,
+          "file": "read-practice-en-name.wav",
+          "excerpt_sha256": "9c53048ef555c171413c40288f2d0a1a6fd64b4a995086d998dd18f56b2fdbd3",
+          "decoded_sample_count": 613440,
+          "expected_context": "With Apple, match five pairs: sharps–proper containment and trained handling; infection–route- and task-appropriate prevention, including bite prevention; body pain–work adjustment, breaks and assistance; stress–agreed workload and support; accidents–a safe route and avoiding threats.",
+          "model_response": "```json\n{\n \"transcript\": \"With Apple, match five pairs. Sharps, proper containment and trained handling. Infection, route and task appropriate prevention, including bite prevention. Body pain, work adjustment, breaks and assistance. Stress, agreed workload and support. Accidents, a safe route and avoiding threats.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The word 'Apple' at 00:00–00:01 is pronounced clearly as /ˈæp.əl/.\",\n  \"negation\": \"No negative terms or contractions appear in the audio.\",\n  \"role_distinctions\": \"Single speaker throughout, performing as an educational instructional voice.\",\n  \"ending_completeness\": \"The excerpt concludes cleanly with no abrupt termination or clipped audio.\",\n  \"audible_speech\": \"Speech is fully audible and intelligible throughout.\",\n  \"clipped_words\": \"No clipped or cut-off words detected.\",\n  \"unexpected_voice_changes\": \"Tone, volume, and pacing remain steady and consistent.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.26,
+          "end": 28.82,
+          "file": "read-practice-en-body.wav",
+          "excerpt_sha256": "9c53048ef555c171413c40288f2d0a1a6fd64b4a995086d998dd18f56b2fdbd3",
+          "decoded_sample_count": 613440,
+          "expected_context": "With Apple, match five pairs: sharps–proper containment and trained handling; infection–route- and task-appropriate prevention, including bite prevention; body pain–work adjustment, breaks and assistance; stress–agreed workload and support; accidents–a safe route and avoiding threats.",
+          "model_response": "```json\n{\n \"transcript\": \"With Apple, match five pairs. Sharps, proper containment and trained handling. Infection, route and task appropriate prevention, including bite prevention. Body pain, work adjustment, breaks, and assistance. Stress, agreed workload and support. Accidents, a safe route and avoiding threats.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The word 'Apple' at 00:00 is pronounced clearly as standard English /ˈæpəl/.\",\n  \"negation\": \"No negative constructions are present in the excerpt.\",\n  \"role_distinctions\": \"Single female narrator reading matched educational pairs consistently.\",\n  \"ending_completeness\": \"The audio concludes naturally with no clipping at the end of 'threats'.\",\n  \"audible_speech\": \"All speech is clear, intelligible, and free of background noise.\",\n  \"clipped_words\": \"None observed.\",\n  \"unexpected_voice_changes\": \"None observed; pacing, tone, and acoustic qualities remain uniform throughout.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 76.52,
+          "end": 86.26,
+          "file": "read-practice-en-critical.wav",
+          "excerpt_sha256": "d62acef3a5fdd1de9dc7a9926d4821bbaa0ca8114883255e2f06c238b1013845",
+          "decoded_sample_count": 233760,
+          "expected_context": "Peer feedback or an unobserved attempt is not a staff-observed pass. Check one control before the next duty.",
+          "model_response": "```json\n{\n  \"transcript\": \"Peer feedback or an unobserved attempt is not a staff observed pass. Check one control before the next duty.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Standard pronunciation throughout; words with the /æ/ vowel like 'attempt', 'staff', and 'pass' are articulated naturally.\",\n    \"negation\": \"Clear negation heard at 00:03.4 ('is not').\",\n    \"role_distinctions\": \"Distinct speaker roles: female voice speaks from 00:00.00 to 00:05.45, followed by a male voice speaking from 00:05.70 to 00:09.28.\",\n    \"ending_completeness\": \"The audio excerpt concludes completely with natural decay on 'duty' and no truncation.\",\n    \"audible_speech\": \"All speech is clear, audible, and intelligible against negligible background noise.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"A planned speaker change occurs at approximately 00:05.55 between sentences; no unexpected mid-phrase vocal shifts detected.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None.\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 76.52,
+          "end": 93.70125,
+          "file": "read-practice-en-ending.wav",
+          "excerpt_sha256": "31be75abf9c3f342e0fe9ef135f2f15d1ede95273107f88c5328dbf380bb8f2e",
+          "decoded_sample_count": 412350,
+          "expected_context": "Peer feedback or an unobserved attempt is not a staff-observed pass. Check one control before the next duty. Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+          "model_response": "```json\n{\n  \"transcript\": \"Peer feedback, or an unobserved attempt, is not a staff-observed pass. Check one control before the next duty. Choose controls for the hazard. PPE cannot replace every change needed in the work.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The specific word 'apple' does not appear in this excerpt.\",\n    \"negation\": \"Negations are clearly enunciated: 'not' at 00:03.55–00:03.80 and 'cannot' at 00:13.50–00:14.05.\",\n    \"role_distinctions\": \"There are distinct speaker/voice roles: Speaker 1 delivers the educational guideline (00:00.00–00:05.20), Speaker 2 provides an instructional prompt in a lower register (00:05.80–00:09.35), and Speaker 3 (or Speaker 1 returning) delivers workplace safety rules (00:10.05–00:16.70).\",\n    \"ending_completeness\": \"The final sentence concludes completely without truncation; 'in the work.' is fully resolved at 00:16.70.\",\n    \"audible_speech\": \"All spoken words are fully audible and intelligible against a clean background.\",\n    \"clipped_words\": \"No clipped or cut-off words were detected.\",\n    \"unexpected_voice_changes\": \"Audible speaker transitions occur between consecutive instructional segments at approximately 00:05.50 and 00:09.70.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low; all speech segments and words are clear and unambiguous.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-sharps-en",
+      "language": "en",
+      "source_path": "/training/audio/08-osh/safety-controls/sharps.en.0943825b9916.mp3",
+      "source_sha256": "5fc1337a29ddfb44aa0179a817219a6c8e1d599a40e2fe1185d3977afdb238d3",
+      "decoded_pcm_sha256": "d58155925e26b3835e0facd7648544f206d1d057a04d7a4ac2dbd05cd3906b06",
+      "full_audio_metrics": {
+        "samples": 1822512,
+        "seconds": 75.938,
+        "rms": 0.12713989706695902,
+        "peak": 0.978302001953125,
+        "quiet_sample_fraction": 0.2330837876513296
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "A needle is not ordinary waste",
+          "start_ms": 0,
+          "end_ms": 3080,
+          "samples": 73920,
+          "seconds": 3.08,
+          "rms": 0.14666216720133296,
+          "peak": 0.728057861328125,
+          "quiet_sample_fraction": 0.23129058441558442
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "This is a fictional rehearsal.",
+          "start_ms": 3380,
+          "end_ms": 6060,
+          "samples": 64320,
+          "seconds": 2.68,
+          "rms": 0.11957424667957939,
+          "peak": 0.8380126953125,
+          "quiet_sample_fraction": 0.23075248756218905
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Apple, a BHW, selects controls; the new dialogue is an adaptation, not a DOH quotation.",
+          "start_ms": 6360,
+          "end_ms": 15240,
+          "samples": 213120,
+          "seconds": 8.88,
+          "rms": 0.138360641421589,
+          "peak": 0.92041015625,
+          "quiet_sample_fraction": 0.21071696696696696
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "She notices the fill line of a nearly full sharps box without opening it or touching its contents.",
+          "start_ms": 15540,
+          "end_ms": 23100,
+          "samples": 181440,
+          "seconds": 7.56,
+          "rms": 0.1362203989432641,
+          "peak": 0.868072509765625,
+          "quiet_sample_fraction": 0.16348655202821868
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "She says, “Pause the task that needs this container.",
+          "start_ms": 23400,
+          "end_ms": 27240,
+          "samples": 92160,
+          "seconds": 3.84,
+          "rms": 0.12842632636083812,
+          "peak": 0.874298095703125,
+          "quiet_sample_fraction": 0.18828125
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Who is authorized to replace it under the local procedure?”",
+          "start_ms": 27540,
+          "end_ms": 31540,
+          "samples": 96000,
+          "seconds": 4,
+          "rms": 0.13485625479266466,
+          "peak": 0.77374267578125,
+          "quiet_sample_fraction": 0.17034375
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "The contact is unknown and must be verified, not guessed.",
+          "start_ms": 31840,
+          "end_ms": 36800,
+          "samples": 119040,
+          "seconds": 4.96,
+          "rms": 0.1473490886366196,
+          "peak": 0.88482666015625,
+          "quiet_sample_fraction": 0.20677083333333332
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "The trained user places a used needle or lancet directly into the proper sharps container at the point of use.",
+          "start_ms": 37100,
+          "end_ms": 45140,
+          "samples": 192960,
+          "seconds": 8.04,
+          "rms": 0.11450296206829613,
+          "peak": 0.8572998046875,
+          "quiet_sample_fraction": 0.14249067164179105
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Do not recap, bend, hand-pass, compress the contents or use an ordinary bin.",
+          "start_ms": 45440,
+          "end_ms": 53160,
+          "samples": 185280,
+          "seconds": 7.72,
+          "rms": 0.11792978862246765,
+          "peak": 0.978302001953125,
+          "quiet_sample_fraction": 0.2803378670120898
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Follow the fill line and local replacement procedure.",
+          "start_ms": 53460,
+          "end_ms": 57500,
+          "samples": 96960,
+          "seconds": 4.04,
+          "rms": 0.11335725522793182,
+          "peak": 0.72119140625,
+          "quiet_sample_fraction": 0.19949463696369638
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "For loose sharps, keep others away and obtain trained assistance; never pick them up by hand.",
+          "start_ms": 57800,
+          "end_ms": 65080,
+          "samples": 174720,
+          "seconds": 7.28,
+          "rms": 0.1421316126653153,
+          "peak": 0.85784912109375,
+          "quiet_sample_fraction": 0.1796989468864469
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Gloves do not authorize continuing without the proper container.",
+          "start_ms": 65380,
+          "end_ms": 70540,
+          "samples": 123840,
+          "seconds": 5.16,
+          "rms": 0.1173996055478413,
+          "peak": 0.8597412109375,
+          "quiet_sample_fraction": 0.17655846253229973
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Safe sharps disposal requires the right container and trained handling.",
+          "start_ms": 70840,
+          "end_ms": 75880,
+          "samples": 120960,
+          "seconds": 5.04,
+          "rms": 0.13063565537724361,
+          "peak": 0.81829833984375,
+          "quiet_sample_fraction": 0.1666005291005291
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 6.36,
+          "end": 15.24,
+          "file": "read-sharps-en-name.wav",
+          "excerpt_sha256": "dd6a132227e859b5150edfef590db91f84177f690277761772ceb469cbd10f78",
+          "decoded_sample_count": 213120,
+          "expected_context": "Apple, a BHW, selects controls; the new dialogue is an adaptation, not a DOH quotation.",
+          "model_response": "```json\n{\n  \"transcript\": \"Apple, a BHW selects controls. The new dialogue is an adaptation, not a DOH quotation.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced clearly as /ˈæp.əl/ between 00:00.00 and 00:00.65.\",\n    \"negation\": \"The word 'not' is clearly enunciated at 00:06.40 - 00:06.65, clearly establishing negation in contrast to 'adaptation'.\",\n    \"role_distinctions\": \"Single consistent speaker/voice profile delivering instructional/educational prompts with no speaker role switches.\",\n    \"ending_completeness\": \"The utterance concludes naturally on 'quotation' at 00:08.15 without abrupt cutoff or clipping.\",\n    \"audible_speech\": \"All words ('Apple', 'a BHW selects controls', 'The new dialogue is an adaptation', 'not a DOH quotation') are fully audible and distinct.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n    \"unexpected_voice_changes\": \"Pacing and pitch maintain a uniform, measured synthetic/educational cadence throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None; audio quality is clear and speech is intelligible.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.38,
+          "end": 6.06,
+          "file": "read-sharps-en-body.wav",
+          "excerpt_sha256": "e702c0f63375f8f29606ec349fd84679cf0706a786116bb9a8fc81742470fd96",
+          "decoded_sample_count": 64320,
+          "expected_context": "This is a fictional rehearsal.",
+          "model_response": "```json\n{\n  \"transcript\": \"This is a fictional rehearsal.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"The word 'apple' does not occur in this excerpt.\",\n    \"negation\": \"No negation is present in the utterance.\",\n    \"role_distinctions\": \"Single consistent female speaker throughout.\",\n    \"ending_completeness\": \"The utterance concludes completely with no truncation on 'rehearsal'.\",\n    \"audible_speech\": \"Speech is clearly audible, intelligible, and delivered in a standard educational/announcement tone.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n    \"unexpected_voice_changes\": \"None detected; pitch, tone, and pacing remain stable.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 6.06,
+          "file": "read-sharps-en-critical.wav",
+          "excerpt_sha256": "8830e652ceb861fc6ff7c80b26e979722726578090a5735e23b41fdd1d8402e4",
+          "decoded_sample_count": 145440,
+          "expected_context": "A needle is not ordinary waste This is a fictional rehearsal.",
+          "model_response": "```json\n{\n  \"transcript\": \"A needle is not ordinary waste. This is a fictional rehearsal.\",\n  \"observations\": {\n    \"speaker_profile\": \"Female speaker with a clear Philippine English educational delivery.\",\n    \"apple_pronunciation\": \"N/A - the word 'apple' does not appear in the excerpt.\",\n    \"negation\": \"The negation 'not' at approximately 00:01.0 - 00:01.3 is distinct, unclipped, and clearly stressed.\",\n    \"role_distinctions\": \"Single consistent speaker/role throughout both sentences.\",\n    \"ending_completeness\": \"The final word 'rehearsal' concludes cleanly around 00:05.7 without being truncated.\",\n    \"audible_speech\": \"All speech is clearly audible with minimal background noise.\",\n    \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n    \"unexpected_voice_changes\": \"None detected; vocal timbre, volume, and pacing remain steady across both phrases.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 57.8,
+          "end": 75.938,
+          "file": "read-sharps-en-ending.wav",
+          "excerpt_sha256": "ef7edbff44417fa3e26434b095119af88fff5b77ab3c1b612d4174b936f6fba7",
+          "decoded_sample_count": 435312,
+          "expected_context": "For loose sharps, keep others away and obtain trained assistance; never pick them up by hand. Gloves do not authorize continuing without the proper container. Safe sharps disposal requires the right container and trained handling.",
+          "model_response": "```json\n{\n \"transcript\": \"For loose sharps, keep others away and obtain trained assistance. Never pick them up by hand. Gloves do not authorize continuing without the proper container. Safe sharps disposal requires the right container and trained handling.\",\n \"observations\": {\n  \"apple_pronunciation\": \"The word 'apple' does not appear in the excerpt.\",\n  \"negation\": \"Negations 'Never' at 00:05.15 and 'do not' at 00:08.50 are clearly articulated with appropriate emphasis.\",\n  \"role_distinctions\": \"A single instructional narrator voice is maintained throughout the audio.\",\n  \"ending_completeness\": \"The audio concludes naturally after 'handling' at 00:17.65 with no abrupt cutoffs.\",\n  \"audible_speech\": \"All words are clearly enunciated, intelligible, and audible throughout the recording.\",\n  \"clipped_words\": \"None detected; word boundaries and final consonants are preserved.\",\n  \"unexpected_voice_changes\": \"The tone, pitch, cadence, and vocal quality remain stable and consistent across the excerpt.\"\n },\n \"possible_defects\": [],\n \"uncertainty\": \"None. The recording is high-clarity and free of noticeable defects.\"\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "read-workload-en",
+      "language": "en",
+      "source_path": "/training/audio/08-osh/safety-controls/workload.en.1eb9030054e0.mp3",
+      "source_sha256": "32672cedd30030f169050e513e5d63a5ef5a482bf8838d161f617b5821151deb",
+      "decoded_pcm_sha256": "7de2af81b6d2070428257a48cb4d14c85288a5547efca6b537fa7ce6eb89b297",
+      "full_audio_metrics": {
+        "samples": 1752294,
+        "seconds": 73.01225,
+        "rms": 0.1315797614293244,
+        "peak": 0.97589111328125,
+        "quiet_sample_fraction": 0.23447035714326478
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Time and capacity have limits",
+          "start_ms": 0,
+          "end_ms": 3000,
+          "samples": 72000,
+          "seconds": 3,
+          "rms": 0.1184851045580256,
+          "peak": 0.97589111328125,
+          "quiet_sample_fraction": 0.2393472222222222
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Apple is asked to make an extra evening visit while already exhausted.",
+          "start_ms": 3300,
+          "end_ms": 8340,
+          "samples": 120960,
+          "seconds": 5.04,
+          "rms": 0.10556331730622892,
+          "peak": 0.6944580078125,
+          "quiet_sample_fraction": 0.1871279761904762
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "The route on the card is dark and has not been verified as safe.",
+          "start_ms": 8640,
+          "end_ms": 13720,
+          "samples": 121920,
+          "seconds": 5.08,
+          "rms": 0.12293218906469774,
+          "peak": 0.81524658203125,
+          "quiet_sample_fraction": 0.17654199475065616
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "She tells the coordinator, “This is what I can do within agreed hours.",
+          "start_ms": 14020,
+          "end_ms": 19620,
+          "samples": 134400,
+          "seconds": 5.6,
+          "rms": 0.14351796820894203,
+          "peak": 0.791748046875,
+          "quiet_sample_fraction": 0.18040178571428572
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "I am exhausted and the route is uncertain.",
+          "start_ms": 19920,
+          "end_ms": 24120,
+          "samples": 100800,
+          "seconds": 4.2,
+          "rms": 0.09643930511632087,
+          "peak": 0.726715087890625,
+          "quiet_sample_fraction": 0.3048214285714286
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Who can arrange another schedule, assistance or a safer way?”",
+          "start_ms": 24420,
+          "end_ms": 29780,
+          "samples": 128640,
+          "seconds": 5.36,
+          "rms": 0.1365709367675654,
+          "peak": 0.781829833984375,
+          "quiet_sample_fraction": 0.21653451492537312
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Request reassignment and rest; verify the response and safer alternative before continuing the affected visit.",
+          "start_ms": 30080,
+          "end_ms": 38840,
+          "samples": 210240,
+          "seconds": 8.76,
+          "rms": 0.13578605912026906,
+          "peak": 0.966644287109375,
+          "quiet_sample_fraction": 0.16734208523592084
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "A new schedule or companion has not yet been agreed in this example.",
+          "start_ms": 39140,
+          "end_ms": 44060,
+          "samples": 118080,
+          "seconds": 4.92,
+          "rms": 0.1441548268586075,
+          "peak": 0.899078369140625,
+          "quiet_sample_fraction": 0.13975271002710027
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Clear workload limits and support control stress; a safe route and avoiding threats control accident risk.",
+          "start_ms": 44360,
+          "end_ms": 53320,
+          "samples": 215040,
+          "seconds": 8.96,
+          "rms": 0.13841891327808367,
+          "peak": 0.84686279296875,
+          "quiet_sample_fraction": 0.20365978422619047
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "PPE is insufficient for both.",
+          "start_ms": 53620,
+          "end_ms": 57060,
+          "samples": 82560,
+          "seconds": 3.44,
+          "rms": 0.12668399834324562,
+          "peak": 0.839385986328125,
+          "quiet_sample_fraction": 0.27671996124031006
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Extra volunteer hours are not the default solution.",
+          "start_ms": 57360,
+          "end_ms": 61120,
+          "samples": 90240,
+          "seconds": 3.76,
+          "rms": 0.1680292249242927,
+          "peak": 0.9442138671875,
+          "quiet_sample_fraction": 0.16943705673758866
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Reporting risk and asking for help are compatible with caring for others.",
+          "start_ms": 61420,
+          "end_ms": 67100,
+          "samples": 136320,
+          "seconds": 5.68,
+          "rms": 0.12212471176077765,
+          "peak": 0.8858642578125,
+          "quiet_sample_fraction": 0.18478579812206572
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Reporting excessive workload and setting boundaries are part of workplace safety.",
+          "start_ms": 67400,
+          "end_ms": 72960,
+          "samples": 133440,
+          "seconds": 5.56,
+          "rms": 0.16596020574994821,
+          "peak": 0.8619384765625,
+          "quiet_sample_fraction": 0.1516411870503597
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.3,
+          "end": 8.34,
+          "file": "read-workload-en-name.wav",
+          "excerpt_sha256": "60e318e39e5e2a1e5334c23bb0bd9095adbc57371fe267a40be509c5eb6d42e9",
+          "decoded_sample_count": 120960,
+          "expected_context": "Apple is asked to make an extra evening visit while already exhausted.",
+          "model_response": "```json\n{\n  \"transcript\": \"Apple is asked to make an extra evening visit while already exhausted.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced clearly as /ˈæp.əl/ with standard articulation between 00:00.00 and 00:00.58.\",\n    \"negation\": \"No negative grammatical markers are present in the utterance.\",\n    \"role_distinctions\": \"Single female narrator delivering descriptive educational/story content consistently in third person.\",\n    \"ending_completeness\": \"The terminal word 'exhausted' completes with natural phrase-final intonation and an audible unreleased/lightly released alveolar stop; no truncation detected.\",\n    \"audible_speech\": \"Speech is fully audible and clear throughout the entire duration.\",\n    \"clipped_words\": \"None detected; both onset and offset transitions are intact.\",\n    \"unexpected_voice_changes\": \"Tone, volume, and timbre remain steady and uniform without sudden shifts.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.3,
+          "end": 8.34,
+          "file": "read-workload-en-body.wav",
+          "excerpt_sha256": "60e318e39e5e2a1e5334c23bb0bd9095adbc57371fe267a40be509c5eb6d42e9",
+          "decoded_sample_count": 120960,
+          "expected_context": "Apple is asked to make an extra evening visit while already exhausted.",
+          "model_response": "```json\n{\n  \"transcript\": \"Apple is asked to make an extra evening visit, while already exhausted.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Pronounced clearly as /ˈæp.əl/ at 00:00.04 - 00:00.56.\",\n    \"negation\": \"No negative constructions are present in the audio.\",\n    \"role_distinctions\": \"Single narrator voice throughout; no multi-character role distinctions.\",\n    \"ending_completeness\": \"The utterance concludes fully and naturally at 00:04.55 with 'exhausted', followed by brief room tone until 00:05.18.\",\n    \"audible_speech\": \"Speech is clearly audible, intelligibly delivered, and free of background noise or artifacts.\",\n    \"clipped_words\": \"None detected; both initial and final consonants are well-formed.\",\n    \"unexpected_voice_changes\": \"None detected; pitch, pace, and vocal timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```"
+        },
+        {
+          "kind": "critical",
+          "start": 8.64,
+          "end": 19.62,
+          "file": "read-workload-en-critical.wav",
+          "excerpt_sha256": "fa2aaa382dda83fdc3ea4d21badbc61bbe3207c3e8249e0f417b23b862e504b7",
+          "decoded_sample_count": 263520,
+          "expected_context": "The route on the card is dark and has not been verified as safe. She tells the coordinator, “This is what I can do within agreed hours.",
+          "model_response": "```json\n{\n  \"transcript\": \"The route on the card is dark and has not been verified as safe. She tells the coordinator, this is what I can do within agreed hours.\",\n  \"observations\": {\n    \"apple_pronunciation\": \"Not applicable; the word 'apple' does not appear in this excerpt.\",\n    \"negation\": \"The negation 'not' in 'has not been verified' is clearly enunciated at approximately 00:02.8 - 00:03.2.\",\n    \"role_distinctions\": \"Single synthetic voice delivering narration and indirect/direct speech consistently without vocal character differentiation.\",\n    \"ending_completeness\": \"The final word 'hours' finishes cleanly and completely before the audio cuts off.\",\n    \"audible_speech\": \"All words are clearly audible with standard synthetic pacing and neutral phrasing.\",\n    \"clipped_words\": \"None detected.\",\n    \"unexpected_voice_changes\": \"None detected; pitch and timbre remain consistent throughout.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"None\"\n}\n```"
+        },
+        {
+          "kind": "ending",
+          "start": 57.36,
+          "end": 73.01225,
+          "file": "read-workload-en-ending.wav",
+          "excerpt_sha256": "a710a82f90bafc046bea78b300d42dd9c0be30a278ac187b2b3d81256b677f55",
+          "decoded_sample_count": 375654,
+          "expected_context": "Extra volunteer hours are not the default solution. Reporting risk and asking for help are compatible with caring for others. Reporting excessive workload and setting boundaries are part of workplace safety.",
+          "model_response": "```json\n{\n  \"transcript\": \"Extra volunteer hours are not the default solution. Reporting risk and asking for help are compatible with caring for others. Reporting excessive workload and setting boundaries are part of workplace safety.\",\n  \"observations\": {\n    \"accent\": \"Philippine English educational narration\",\n    \"delivery\": \"Clear, steady, instructional pace with distinct pauses between sentences\",\n    \"negation_clarity\": \"The negation 'not' at 00:01.8 - 00:02.1 is articulated clearly with proper emphasis\",\n    \"completeness\": \"All sentences begin and terminate cleanly with no audible truncation\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"none\"\n}\n```"
+        }
+      ]
+    }
+  ]
+}

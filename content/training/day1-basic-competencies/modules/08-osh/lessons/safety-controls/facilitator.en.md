@@ -8,6 +8,8 @@ Select controls for five hazard groups and explain the pause, verified contact a
 
 For 30 learners, prepare ten five-pair card sets, unsafe-alternative cards, ten role/checklist sheets and a control/pause aid per learner. Use paper, pens, an empty needle-free dummy container with a marked fill line, a lightweight bag and stable chair. No real sharps, fluids, chemicals, painful exercise or live injury.
 
+Actual audio timing: pending.
+
 ## [prepare] Prepare
 
 Confirm local sharps replacement, training scope, PPE/hand-hygiene instruction, reporting contact, heat/route controls and pause/resume authority with an authorized clinical trainer before any demonstration. Record unresolved items as pending; do not improvise rules. Source audit and clinical review are distinct. Check access, seating and preferred language. Read the five fictional facts and honest unknowns on the print kit. Never use actual learner/patient incidents or records.

@@ -1,5 +1,6 @@
 // @vitest-environment node
 import {describe, it, expect} from 'vitest';
+import {beforeProposed182} from '../lib/lesson-182-integration.mjs';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {loadReferenceModule, parseReferenceRead, FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
@@ -7,7 +8,7 @@ import {beforeLesson172} from '../lib/lesson-172-integration.mjs';
 import {planReferenceNarration} from '../lib/reference-narration.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/';
-const json=p=>JSON.parse(fs.readFileSync(p));
+const json=p=>JSON.parse(beforeProposed182(p));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const baseline=json('docs/lesson-172-implementation-baseline.json');
 const receipt=json('docs/lesson-172-proposal-receipt.json');

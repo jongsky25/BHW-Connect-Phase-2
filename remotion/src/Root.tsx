@@ -1,3 +1,4 @@
+import {SafetyControlsStory, calculateSafetyControlsMetadata, SAFETY_CONTROLS_FPS, SAFETY_CONTROLS_FALLBACK_DURATION} from './safety-controls/SafetyControlsStory';
 import {ProblemCausesStory, calculateProblemCausesMetadata, PROBLEM_CAUSES_FALLBACK_DURATION, PROBLEM_CAUSES_FPS} from './problem-causes/ProblemCausesStory';
 import {ProblemDefineStory, calculateProblemDefineMetadata, PROBLEM_DEFINE_FPS, PROBLEM_DEFINE_FALLBACK_DURATION} from "./problem-define/ProblemDefineStory";
 import {CommunicationHandoffStory, calculateCommunicationHandoffMetadata, COMMUNICATION_HANDOFF_FALLBACK_DURATION, COMMUNICATION_HANDOFF_FPS} from './communication-handoff/CommunicationHandoffStory';
@@ -410,6 +411,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`problem-causes-${language}`} id={language === "fil" ? "ProblemCausesStoryFil" : "ProblemCausesStoryEn"}
           component={ProblemCausesStory} calculateMetadata={calculateProblemCausesMetadata}
           durationInFrames={PROBLEM_CAUSES_FALLBACK_DURATION} fps={PROBLEM_CAUSES_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`safety-controls-${language}`} id={language === "fil" ? "SafetyControlsStoryFil" : "SafetyControlsStoryEn"}
+          component={SafetyControlsStory} calculateMetadata={calculateSafetyControlsMetadata}
+          durationInFrames={SAFETY_CONTROLS_FALLBACK_DURATION} fps={SAFETY_CONTROLS_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

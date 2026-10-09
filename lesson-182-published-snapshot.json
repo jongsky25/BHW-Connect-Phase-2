@@ -1,0 +1,1473 @@
+{
+  "captured_at": "2026-10-09T08:00:33.144Z",
+  "source_commit": "99e6296befd891b1a14708d542547a51775bb2e3",
+  "method": "4 bounded published lesson/revision/private-note rows via loader admin; read-only; no learner identities or progress retrieved",
+  "rows": [
+    {
+      "lesson": {
+        "id": "022cc773-1996-4813-9122-de98ade936c4",
+        "module_id": "ffd36ec0-f8f9-4c7a-bf34-2ab821ac95ec",
+        "lesson_key": "safety-prepare",
+        "position": 2,
+        "title_fil": "Paghahanda sa ligtas na gawain",
+        "title_en": "Prepare for safe work",
+        "objectives_fil": [
+          "Bumuo ng before-work checklist para sa station at field visit na may supplies, ruta, reporting contact at malinaw na dahilan kung kailan magpa-pause."
+        ],
+        "objectives_en": [
+          "Build a before-work checklist for station work and field visits covering supplies, route, reporting contact and explicit pause conditions."
+        ],
+        "required": true,
+        "published_revision_id": "33b163c5-b15a-4077-ab31-dd9e2563b88b",
+        "created_at": "2026-09-25T07:16:33.22474+00:00"
+      },
+      "revision": {
+        "id": "33b163c5-b15a-4077-ab31-dd9e2563b88b",
+        "lesson_id": "022cc773-1996-4813-9122-de98ade936c4",
+        "revision_key": "ea9354cf936cc797749a195f2342b2daea2aa278b0b8d6ea100d304445d4c4ab",
+        "content_hash": "ea9354cf936cc797749a195f2342b2daea2aa278b0b8d6ea100d304445d4c4ab",
+        "read_sections": [
+          {
+            "id": "station-preparation",
+            "check": null,
+            "body_en": "Ana, 33, is preparing for station work and home visits on a hot day. She needs to check supplies and the route with the midwife.\n\nArrange for the slippery entrance to be corrected and keep people away from the hazard. Check for the correct sharps container, hand-hygiene supplies and PPE required for the task. Know the safe route and incident contact. If essential protection is missing or a task exceeds training, pause and escalate to the supervisor. Gloves or a mask do not replace removing a hazard when removal is possible.",
+            "body_fil": "Si Ana, 33, ay naghahanda ng station duty at home visits sa mainit na araw. May mga gamit at rutang kailangan munang suriin kasama ang midwife.\n\nIpaayos ang madulas na pasukan at ilayo muna ang mga tao sa panganib. Tiyaking may angkop na lalagyan ng sharps, hand-hygiene supplies at PPE na itinakda para sa gawain. Alamin ang ligtas na ruta at contact kapag may insidente. Kung kulang ang mahalagang proteksyon o lampas sa pagsasanay ang ipinapagawa, huminto at iakyat sa supervisor. Hindi pinapalitan ng gloves o mask ang pag-alis ng hazard kung kaya itong alisin.",
+            "asset_ids": [],
+            "heading_en": "Prepare the area and equipment",
+            "concept_ids": [
+              "m8.prepare",
+              "m8.practice"
+            ],
+            "heading_fil": "Ihanda ang lugar at kagamitan",
+            "takeaway_en": "Prepare controls and equipment; report gaps before undertaking unsafe work.",
+            "takeaway_fil": "Ihanda ang kontrol at kagamitan; iulat ang kulang bago magsagawa ng hindi ligtas na gawain."
+          },
+          {
+            "id": "field-preparation",
+            "check": null,
+            "body_en": "Before leaving, check weather, slippery paths, dogs and possible threats. Share the route and expected return time; use a buddy system when local protocols call for one. Carry drinking water and plan shade and rest during heat. Do not enter an unsafe situation; arrange an alternative. Report accidents, bites or illness promptly and follow the appropriate referral rather than finishing the household list first.",
+            "body_fil": "Bago lumakad, suriin ang panahon, madulas na daan, aso at posibleng banta. Ipaalam ang ruta at inaasahang balik; gumamit ng buddy system kung itinakda ng lokal na protocol. Magdala ng inuming tubig at magplano ng lilim at pahinga sa init. Huwag tumuloy sa lugar na hindi ligtas; makipag-ugnayan para sa alternatibo. Iulat agad ang aksidente, kagat o pagkakasakit at sundin ang naaangkop na referral, sa halip na tapusin muna ang listahan ng bahay.",
+            "asset_ids": [],
+            "heading_en": "Plan a safe field visit",
+            "concept_ids": [
+              "m8.accidents",
+              "m8.heat"
+            ],
+            "heading_fil": "Planuhin ang ligtas na pagbisita",
+            "takeaway_en": "A safe route and clear reporting contact matter as much as the visit list.",
+            "takeaway_fil": "Ang ligtas na ruta at malinaw na reporting contact ay kasinghalaga ng listahan ng bibisitahin."
+          },
+          {
+            "id": "combined-hazards",
+            "check": null,
+            "body_en": "Clients arrive in a surge, the room is hot and some PPE is unavailable. As a group, identify tasks to pause, tasks that can be modified and who must decide. Consider staffing capacity and client flow; extra BHW hours should not be the only answer. Propose one safer alternative for supervisor approval.",
+            "body_fil": "May dagsa ng kliyente, mainit ang silid at ubos ang ilang PPE. Sa grupo, tukuyin kung aling gawain ang kailangang ihinto, alin ang maaaring baguhin, at kanino hihingi ng desisyon. Isama ang kapasidad ng staff at daloy ng kliyente; huwag gawing tanging sagot ang dagdag na oras ng BHW. Maglatag ng isang ligtas na alternatibo na dapat aprubahan ng supervisor.",
+            "asset_ids": [],
+            "heading_en": "When hazards combine",
+            "concept_ids": [
+              "m8.prepare",
+              "m8.requirements"
+            ],
+            "heading_fil": "Kapag pinagsama ang mga panganib",
+            "takeaway_en": "Combined hazards may require changing the work and obtaining the appropriate decision.",
+            "takeaway_fil": "Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Fill a card: task and scope; supplies and protection; route and weather; contact and return time; pause conditions. Tell your partner: “There is no soap and a threat on the route.” Explain what pauses and whose decision is needed. Alone, write the response. Before the next visit, confirm the route and contact.",
+            "body_fil": "Punan ang card: gawain at saklaw; supplies at proteksyon; ruta at panahon; contact at oras ng balik; dahilan para mag-pause. Sabihin sa kapareha: “Walang sabon at may banta sa ruta.” Ipakita kung ano ang hindi muna gagawin at kanino hihingi ng pasya. Kung mag-isa, sagutin ang parehong sitwasyon sa papel. Bago ang susunod na visit, kumpirmahin ang ruta at contact.",
+            "asset_ids": [],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m8.prepare",
+              "m8.practice",
+              "m8.accidents",
+              "m8.heat",
+              "m8.requirements"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+            "takeaway_fil": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "Continue alone to finish quickly.",
+                  "fil": "Ituloy mag-isa para matapos agad."
+                },
+                {
+                  "en": "Avoid the threat and arrange an alternative with the supervisor.",
+                  "fil": "Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor."
+                },
+                {
+                  "en": "Change the route without telling anyone to avoid disruption.",
+                  "fil": "Huwag ipaalam ang pagbabago ng ruta upang hindi makaabala."
+                }
+              ],
+              "prompt_en": "There is a threat on the route but many visits remain. What is safe?",
+              "prompt_fil": "May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?",
+              "feedback_en": "The second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known.",
+              "feedback_fil": "Ang ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.",
+              "correct_option_index": 1
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m8.prepare",
+              "m8.practice",
+              "m8.accidents",
+              "m8.heat",
+              "m8.requirements"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+            "takeaway_fil": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-station-preparation",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Correct the slippery entrance. Check the sharps container, hand-hygiene supplies and PPE. Confirm a safe route and incident contact. Missing protection or beyond training? Pause and contact the supervisor.",
+            "heading_en": "Prepare the area and equipment",
+            "concept_ids": [
+              "m8.prepare",
+              "m8.practice"
+            ],
+            "display_fil": "Itama ang madulas na pasukan. Suriin ang sharps box, hand-hygiene supplies at PPE. Tiyakin ang ligtas na ruta at incident contact. Kulang ang proteksyon o lampas sa training? Mag-pause at kausapin ang supervisor.",
+            "heading_fil": "Ihanda ang lugar at kagamitan"
+          },
+          {
+            "id": "slide-field-preparation",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Check weather, paths, dogs and threats. Share the route and return time; use a buddy when the protocol requires it. Carry water and plan shade and rest. Do not enter an unsafe situation.",
+            "heading_en": "Plan a safe field visit",
+            "concept_ids": [
+              "m8.accidents",
+              "m8.heat"
+            ],
+            "display_fil": "Suriin ang panahon, daan, aso at banta. Ipaalam ang ruta at oras ng balik; buddy kung kailangan sa protocol. Magdala ng tubig, planuhin ang lilim at pahinga. Huwag pumasok sa hindi ligtas na sitwasyon.",
+            "heading_fil": "Planuhin ang ligtas na pagbisita"
+          },
+          {
+            "id": "slide-combined-hazards",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Heat, a client surge and missing PPE: identify what pauses, what can change and what needs a supervisor’s decision. Consider staffing and client flow; extra BHW hours cannot be the only response.",
+            "heading_en": "When hazards combine",
+            "concept_ids": [
+              "m8.prepare",
+              "m8.requirements"
+            ],
+            "display_fil": "Mainit, maraming kliyente at kulang ang PPE: tukuyin ang ihihinto, maaaring baguhin at kailangang pasya ng supervisor. Isama ang staffing at daloy ng kliyente; hindi puro dagdag-oras ng BHW ang sagot.",
+            "heading_fil": "Kapag pinagsama ang mga panganib"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Before leaving: scope, supplies, route, contact, return time, pause conditions. Report gaps and arrange a safe alternative.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m8.prepare",
+              "m8.practice",
+              "m8.accidents",
+              "m8.heat",
+              "m8.requirements"
+            ],
+            "display_fil": "Bago umalis: saklaw, supplies, ruta, contact, oras ng balik, pause conditions. Iulat ang kulang at kumuha ng ligtas na alternatibo.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "Continue alone to finish quickly.",
+                  "fil": "Ituloy mag-isa para matapos agad."
+                },
+                {
+                  "en": "Avoid the threat and arrange an alternative with the supervisor.",
+                  "fil": "Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor."
+                },
+                {
+                  "en": "Change the route without telling anyone to avoid disruption.",
+                  "fil": "Huwag ipaalam ang pagbabago ng ruta upang hindi makaabala."
+                }
+              ],
+              "prompt_en": "There is a threat on the route but many visits remain. What is safe?",
+              "prompt_fil": "May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?",
+              "feedback_en": "The second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known.",
+              "feedback_fil": "Ang ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.",
+              "correct_option_index": 1
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m8.prepare",
+              "m8.practice",
+              "m8.accidents",
+              "m8.heat",
+              "m8.requirements"
+            ],
+            "display_fil": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m8.prepare",
+            "read_ids": [
+              "station-preparation",
+              "combined-hazards",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-station-preparation",
+              "slide-combined-hazards",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.practice",
+            "read_ids": [
+              "station-preparation",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-station-preparation",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.accidents",
+            "read_ids": [
+              "field-preparation",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-field-preparation",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.heat",
+            "read_ids": [
+              "field-preparation",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-field-preparation",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.requirements",
+            "read_ids": [
+              "combined-hazards",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-combined-hazards",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              30
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ],
+        "assets": [],
+        "created_by": "4122ac97-5984-43e9-8f84-26b4a062a028",
+        "created_at": "2026-09-25T07:16:33.36616+00:00",
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "33b163c5-b15a-4077-ab31-dd9e2563b88b",
+          "notes_fil": "## [purpose] Layunin\n\nBumuo ng before-work checklist para sa station at field visit na may supplies, ruta, reporting contact at malinaw na dahilan kung kailan magpa-pause.\n\n## [time-materials] Oras at kagamitan\n\n60 minuto para sa pinadali na pagsasanay. Bahagi ito ng 4 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang lokal na incident contact, route reporting at buddy-system rules. Gumamit ng kunwaring ruta.\n\n## [opening] Pambungad\n\nMay banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.\n\n## [misconception] Karaniwang pagkakamali\n\nItinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target. Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.\n\n## [practice] Gawaing pagsasanay\n\nPunan ang card: gawain at saklaw; supplies at proteksyon; ruta at panahon; contact at oras ng balik; dahilan para mag-pause. Sabihin sa kapareha: “Walang sabon at may banta sa ruta.” Ipakita kung ano ang hindi muna gagawin at kanino hihingi ng pasya. Kung mag-isa, sagutin ang parehong sitwasyon sa papel. Bago ang susunod na visit, kumpirmahin ang ruta at contact.\n\n## [answer-key] Susi sa sagot\n\n2. Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor.\n\nAng ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.\n\n## [observe] Obserbahan\n\nKumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan.\n\nKaya na: Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: May supplies at ruta ngunit kulang ang contact o pause condition; ipapunan bago muling magbrief.\n\nHindi pa: Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nMay supplies at ruta ngunit kulang ang contact o pause condition; ipapunan bago muling magbrief. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23. Ang limang hazard group ay mula sa dalawang pahina ng source table. Suriin ng lokal na clinical trainer ang demo at referral pathway. Ang agarang needlestick evaluation ay sinuri sa CDC noong 25 Setyembre 2026. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+          "notes_en": "## [purpose] Purpose\n\nBuild a before-work checklist for station work and field visits covering supplies, route, reporting contact and explicit pause conditions.\n\n## [time-materials] Time and materials\n\n60 minutes of facilitated practice within the subchapter's 4 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare local incident contacts, route reporting and buddy-system rules. Use a fictional route.\n\n## [opening] Opening\n\nThere is a threat on the route but many visits remain. What is safe?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known.\n\n## [misconception] Common misconception\n\nContinues an unsafe route or unprotected task simply to finish the target. A checklist must support a decision about safe starting conditions, not just list equipment.\n\n## [practice] Practice activity\n\nFill a card: task and scope; supplies and protection; route and weather; contact and return time; pause conditions. Tell your partner: “There is no soap and a threat on the route.” Explain what pauses and whose decision is needed. Alone, write the response. Before the next visit, confirm the route and contact.\n\n## [answer-key] Answer key\n\n2. Avoid the threat and arrange an alternative with the supervisor.\n\nThe second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known.\n\n## [observe] Observe\n\nCompletes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning.\n\nReady: Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning. Completes this without prompting.\n\nNeeds practice: Lists supplies and route but misses a contact or pause condition; complete these before repeating the briefing.\n\nNot yet: Continues an unsafe route or unprotected task simply to finish the target.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nLists supplies and route but misses a contact or pause condition; complete these before repeating the briefing. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23. The five hazard groups span both source-table pages. A local clinical trainer must review demonstrations and referral pathways. Immediate needlestick evaluation was checked against CDC on 25 September 2026. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning. Completes this without prompting.",
+                "hindi_pa_en": "Continues an unsafe route or unprotected task simply to finish the target.",
+                "kaya_na_fil": "Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.",
+                "kailangan_practice_en": "Lists supplies and route but misses a contact or pause condition; complete these before repeating the briefing.",
+                "kailangan_practice_fil": "May supplies at ruta ngunit kulang ang contact o pause condition; ipapunan bago muling magbrief."
+              },
+              "not_yet_en": "Continues an unsafe route or unprotected task simply to finish the target.",
+              "not_yet_fil": "Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.",
+              "observable_en": "Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning.",
+              "observable_fil": "Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "22444fea-f028-4801-8c45-ce8baf8d4949",
+        "module_id": "ffd36ec0-f8f9-4c7a-bf34-2ab821ac95ec",
+        "lesson_key": "safety-controls",
+        "position": 1,
+        "title_fil": "Panganib at proteksyon",
+        "title_en": "Match hazards and protection",
+        "objectives_fil": [
+          "Ipagpares ang limang hazard group sa angkop na kontrol at ipaliwanag kung kailan ihihinto at ipapaayos ang hindi ligtas na gawain."
+        ],
+        "objectives_en": [
+          "Match five hazard groups with appropriate controls and explain when to pause work and obtain correction."
+        ],
+        "required": true,
+        "published_revision_id": "0a562f24-bdba-4f55-bf24-d7011d83e1da",
+        "created_at": "2026-09-25T07:16:32.803906+00:00"
+      },
+      "revision": {
+        "id": "0a562f24-bdba-4f55-bf24-d7011d83e1da",
+        "lesson_id": "22444fea-f028-4801-8c45-ce8baf8d4949",
+        "revision_key": "6d5cdf54916c83d5f2157edfa921c1f7813aa39e8bf621ce858389c17495fd86",
+        "content_hash": "6d5cdf54916c83d5f2157edfa921c1f7813aa39e8bf621ce858389c17495fd86",
+        "read_sections": [
+          {
+            "id": "sharps",
+            "check": null,
+            "body_en": "The trained user places a used needle or lancet directly into the proper sharps container at the point of use. Do not recap, bend or hand-pass it. Keep it out of ordinary bins and never compress a nearly full container’s contents. Follow its fill line and local replacement procedure. If loose sharps are found, keep others away and obtain trained assistance; do not pick them up by hand.",
+            "body_fil": "Ang ginamit na karayom o lancet ay inilalagay agad ng sinanay na gumagamit sa tamang sharps container sa lugar ng paggamit. Huwag ibalik ang takip, baluktutin o ipasa nang kamay sa iba. Huwag ilagay sa ordinaryong basurahan o siksikin ang laman ng halos punong container. Sundin ang fill line at lokal na pagpapalit ng lalagyan. Kung may nakitang nakakalat na sharps, ilayo ang iba at humingi ng sinanay na tulong; huwag damputin nang kamay.",
+            "asset_ids": [],
+            "heading_en": "A needle is not ordinary waste",
+            "concept_ids": [
+              "m8.sharps"
+            ],
+            "heading_fil": "Ang karayom ay hindi ordinaryong basura",
+            "takeaway_en": "Safe sharps disposal requires the right container and trained handling.",
+            "takeaway_fil": "Ang ligtas na pagtatapon ng sharps ay nangangailangan ng tamang lalagyan at sinanay na paghawak."
+          },
+          {
+            "id": "infection",
+            "check": null,
+            "body_en": "Infections do not all spread through the same route. During client contact, follow hand hygiene, respiratory hygiene, ventilation and task-appropriate PPE under local protocols. Gloves do not replace hand hygiene. Mosquito exposure calls for bite prevention and attention to breeding sites. Keep the area clean and handle waste safely. Do not mix cleaning chemicals or invent dilutions; follow labels and facility instructions.",
+            "body_fil": "Hindi pare-pareho ang ruta ng impeksyon. Sa pakikisalamuha sa kliyente, sundin ang hand hygiene, respiratory hygiene, bentilasyon at task-appropriate PPE ayon sa lokal na protocol. Ang gloves ay hindi kapalit ng paglilinis ng kamay. Sa lamok, mahalaga ang pag-iwas sa kagat at mga lugar na pinamumugaran. Panatilihing malinis ang lugar at ligtas ang waste handling. Huwag paghaluin ang cleaning chemicals o mag-imbento ng dilution; sundin ang label at facility instructions.",
+            "asset_ids": [],
+            "heading_en": "Choose controls for the hazard",
+            "concept_ids": [
+              "m8.infection",
+              "m8.vectors"
+            ],
+            "heading_fil": "Piliin ang kontrol ayon sa panganib",
+            "takeaway_en": "Infection prevention combines appropriate practices, equipment and surroundings.",
+            "takeaway_fil": "Ang infection prevention ay kombinasyon ng tamang gawain, kagamitan at kapaligiran."
+          },
+          {
+            "id": "body",
+            "check": null,
+            "body_en": "Ana walks far and often stands for long periods. Plan breaks and changes of position, use comfortable footwear and a supportive chair. Arrange supplies to reduce repeated bending and heavy carrying; ask for lifting assistance. Report pain to the supervisor and seek assessment when needed. Enduring pain is not proof of dedication.",
+            "body_fil": "Mahaba ang lakad ni Ana at madalas siyang nakatayo. Magplano ng pahinga at pagbabago ng posisyon, gumamit ng komportableng sapatos at maayos na upuang may sandalan. Ayusin ang mga gamit upang hindi paulit-ulit yumuko o magdala nang mabigat; humingi ng tulong sa pagbuhat. Kung may pananakit, sabihin sa supervisor at magpasuri kung kailangan. Hindi kailangang tiisin ang sakit upang patunayang masipag.",
+            "asset_ids": [],
+            "heading_en": "Protect the body during work",
+            "concept_ids": [
+              "m8.ergonomics"
+            ],
+            "heading_fil": "Alagaan ang katawan habang nagtatrabaho",
+            "takeaway_en": "Safer posture, breaks and sensible carrying are part of work preparation.",
+            "takeaway_fil": "Ang ligtas na posisyon, pahinga at tamang pagdadala ay bahagi ng paghahanda sa trabaho."
+          },
+          {
+            "id": "workload",
+            "check": null,
+            "body_en": "Ana is asked to make an extra evening visit while already exhausted. Explain what can be done within agreed hours and what needs reassignment. Ask the midwife or coordinator for support and arrange rest. Clear goals and boundaries for volunteer duties help prevent overload. Reporting risk and asking for help are compatible with caring for others.",
+            "body_fil": "May humiling kay Ana ng dagdag na lakad sa gabi kahit pagod na siya. Ipaalam kung anong trabaho ang kaya sa napagkasunduang oras at alin ang kailangang muling italaga. Humingi ng suporta sa midwife o coordinator at magtakda ng pahinga. Ang malinaw na layunin at hangganan ng boluntaryong gawain ay nakakatulong sa pag-iwas sa sobrang pagod. Hindi kabawasan sa malasakit ang pagsasabi ng panganib o paghingi ng tulong.",
+            "asset_ids": [],
+            "heading_en": "Time and capacity have limits",
+            "concept_ids": [
+              "m8.stress"
+            ],
+            "heading_fil": "May hangganan ang oras at kapasidad",
+            "takeaway_en": "Reporting excessive workload and setting boundaries are part of workplace safety.",
+            "takeaway_fil": "Ang pag-uulat ng sobrang workload at pagtakda ng hangganan ay bahagi ng kaligtasan sa trabaho."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Make five hazard-control cards: sharps–proper container; infection–task-appropriate prevention; body pain–work adjustment and breaks; stress–agreed workload and support; accidents–safe route and avoiding threats. Match them and explain why PPE alone is insufficient. In pairs, ask what must pause when protection is missing. Alone, explain each card aloud. Check one control before the next duty.",
+            "body_fil": "Gumawa ng limang hazard-control card: sharps–tamang lalagyan; infection–task-appropriate prevention; body pain–ayos ng gawain at pahinga; stress–agreed workload at support; aksidente–ligtas na ruta at pag-iwas sa banta. Ipares at ipaliwanag kung bakit hindi sapat ang PPE lamang. Sa pares, magtanong kung anong gawain ang dapat ihinto kapag kulang ang proteksyon. Kung mag-isa, sabihin ang paliwanag sa bawat card. I-check ang isang kontrol bago ang susunod na duty.",
+            "asset_ids": [],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m8.sharps",
+              "m8.infection",
+              "m8.vectors",
+              "m8.ergonomics",
+              "m8.stress",
+              "m8.accidents"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+            "takeaway_fil": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "Compress the contents with a rigid object.",
+                  "fil": "Siksikin ang laman gamit ang anumang matigas na bagay."
+                },
+                {
+                  "en": "Temporarily put needles in an ordinary bin.",
+                  "fil": "Maglagay muna ng karayom sa ordinaryong basurahan."
+                },
+                {
+                  "en": "Replace it according to the fill line and local protocol before overfilling.",
+                  "fil": "Palitan ayon sa fill line at lokal na protocol bago umapaw."
+                }
+              ],
+              "prompt_en": "The sharps box is nearly full. What should be arranged before continuing?",
+              "prompt_fil": "Halos puno ang sharps box. Ano ang dapat ayusin bago magpatuloy?",
+              "feedback_en": "The third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution.",
+              "feedback_fil": "Ang ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.",
+              "correct_option_index": 2
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m8.sharps",
+              "m8.infection",
+              "m8.vectors",
+              "m8.ergonomics",
+              "m8.stress",
+              "m8.accidents"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+            "takeaway_fil": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-sharps",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Trained user → correct sharps container at point of use. No recapping, bending or hand-passing. Respect the fill line; never compress contents. For loose sharps, keep others away and get trained assistance.",
+            "heading_en": "A needle is not ordinary waste",
+            "concept_ids": [
+              "m8.sharps"
+            ],
+            "display_fil": "Trained user → tamang sharps box sa point of use. Walang recapping, bending o hand-passing. Sundin ang fill line; huwag siksikin. Sa loose sharps, ilayo ang iba at humingi ng trained assistance.",
+            "heading_fil": "Ang karayom ay hindi ordinaryong basura"
+          },
+          {
+            "id": "slide-infection",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Use hand and respiratory hygiene, ventilation and task-specific PPE. Gloves do not replace hand hygiene. For mosquitoes, prevent bites and address breeding sites. Follow labels and facility instructions for cleaning chemicals.",
+            "heading_en": "Choose controls for the hazard",
+            "concept_ids": [
+              "m8.infection",
+              "m8.vectors"
+            ],
+            "display_fil": "Hand hygiene, respiratory hygiene, bentilasyon at PPE ayon sa gawain. Hindi kapalit ng hand hygiene ang gloves. Sa lamok: iwas-kagat at breeding sites. Sundin ang label at facility instruction sa cleaning chemicals.",
+            "heading_fil": "Piliin ang kontrol ayon sa panganib"
+          },
+          {
+            "id": "slide-body",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Arrange seating and supplies to reduce repeated bending and heavy carrying. Take breaks and change position. Ask for lifting assistance and report pain.",
+            "heading_en": "Protect the body during work",
+            "concept_ids": [
+              "m8.ergonomics"
+            ],
+            "display_fil": "Ayusin ang upuan at gamit; bawasan ang paulit-ulit na pagyuko at mabigat na dala. Magpahinga at magpalit ng posisyon. Humingi ng tulong sa pagbubuhat at iulat ang pananakit.",
+            "heading_fil": "Alagaan ang katawan habang nagtatrabaho"
+          },
+          {
+            "id": "slide-workload",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Ana is exhausted but receives an extra evening visit. Explain capacity within agreed hours; request reassignment and rest. Workload limits are protection too.",
+            "heading_en": "Time and capacity have limits",
+            "concept_ids": [
+              "m8.stress"
+            ],
+            "display_fil": "Pagod na si Ana ngunit may dagdag na evening visit. Sabihin ang kaya sa napagkasunduang oras; hilingin ang reassignment at pahinga. Ang limitasyon sa trabaho ay proteksyon din.",
+            "heading_fil": "May hangganan ang oras at kapasidad"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Match five hazards to controls, including a safe route for accidents. If essential protection is missing, pause and seek assistance.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m8.sharps",
+              "m8.infection",
+              "m8.vectors",
+              "m8.ergonomics",
+              "m8.stress",
+              "m8.accidents"
+            ],
+            "display_fil": "Ipares ang limang hazard sa kontrol. Isama ang ligtas na ruta para sa aksidente. Kapag kulang ang mahalagang proteksyon, ihinto at humingi ng tulong.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "Compress the contents with a rigid object.",
+                  "fil": "Siksikin ang laman gamit ang anumang matigas na bagay."
+                },
+                {
+                  "en": "Temporarily put needles in an ordinary bin.",
+                  "fil": "Maglagay muna ng karayom sa ordinaryong basurahan."
+                },
+                {
+                  "en": "Replace it according to the fill line and local protocol before overfilling.",
+                  "fil": "Palitan ayon sa fill line at lokal na protocol bago umapaw."
+                }
+              ],
+              "prompt_en": "The sharps box is nearly full. What should be arranged before continuing?",
+              "prompt_fil": "Halos puno ang sharps box. Ano ang dapat ayusin bago magpatuloy?",
+              "feedback_en": "The third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution.",
+              "feedback_fil": "Ang ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.",
+              "correct_option_index": 2
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m8.sharps",
+              "m8.infection",
+              "m8.vectors",
+              "m8.ergonomics",
+              "m8.stress",
+              "m8.accidents"
+            ],
+            "display_fil": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m8.sharps",
+            "read_ids": [
+              "sharps",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-sharps",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "who-infections"
+            ]
+          },
+          {
+            "id": "m8.infection",
+            "read_ids": [
+              "infection",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-infection",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "who-infections"
+            ]
+          },
+          {
+            "id": "m8.vectors",
+            "read_ids": [
+              "infection",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-infection",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "who-infections"
+            ]
+          },
+          {
+            "id": "m8.ergonomics",
+            "read_ids": [
+              "body",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-body",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "who-infections"
+            ]
+          },
+          {
+            "id": "m8.stress",
+            "read_ids": [
+              "workload",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-workload",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "who-infections"
+            ]
+          },
+          {
+            "id": "m8.accidents",
+            "read_ids": [
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "who-infections"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              30
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              21,
+              22,
+              23
+            ]
+          },
+          {
+            "id": "who-infections",
+            "url": "https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections",
+            "title": "WHO — Occupational infections"
+          }
+        ],
+        "assets": [],
+        "created_by": "4122ac97-5984-43e9-8f84-26b4a062a028",
+        "created_at": "2026-09-25T07:16:32.94908+00:00",
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "0a562f24-bdba-4f55-bf24-d7011d83e1da",
+          "notes_fil": "## [purpose] Layunin\n\nIpagpares ang limang hazard group sa angkop na kontrol at ipaliwanag kung kailan ihihinto at ipapaayos ang hindi ligtas na gawain.\n\n## [time-materials] Oras at kagamitan\n\n60 minuto para sa pinadali na pagsasanay. Bahagi ito ng 4 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang limang card sa practice. Tiyakin sa local trainer ang PPE at sharps protocol; walang tunay na used sharps sa session.\n\n## [opening] Pambungad\n\nHalos puno ang sharps box. Ano ang dapat ayusin bago magpatuloy?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.\n\n## [misconception] Karaniwang pagkakamali\n\nNagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon. Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.\n\n## [practice] Gawaing pagsasanay\n\nGumawa ng limang hazard-control card: sharps–tamang lalagyan; infection–task-appropriate prevention; body pain–ayos ng gawain at pahinga; stress–agreed workload at support; aksidente–ligtas na ruta at pag-iwas sa banta. Ipares at ipaliwanag kung bakit hindi sapat ang PPE lamang. Sa pares, magtanong kung anong gawain ang dapat ihinto kapag kulang ang proteksyon. Kung mag-isa, sabihin ang paliwanag sa bawat card. I-check ang isang kontrol bago ang susunod na duty.\n\n## [answer-key] Susi sa sagot\n\n3. Palitan ayon sa fill line at lokal na protocol bago umapaw.\n\nAng ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.\n\n## [observe] Obserbahan\n\nTama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps.\n\nKaya na: Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Ligtas ang desisyon ngunit nalilito ang control para sa dalawang hazard; ipares muli at ipaliwanag ang dahilan.\n\nHindi pa: Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nLigtas ang desisyon ngunit nalilito ang control para sa dalawang hazard; ipares muli at ipaliwanag ang dahilan. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23; WHO — Occupational infections (https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections). Ang limang hazard group ay mula sa dalawang pahina ng source table. Suriin ng lokal na clinical trainer ang demo at referral pathway. Ang agarang needlestick evaluation ay sinuri sa CDC noong 25 Setyembre 2026. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+          "notes_en": "## [purpose] Purpose\n\nMatch five hazard groups with appropriate controls and explain when to pause work and obtain correction.\n\n## [time-materials] Time and materials\n\n60 minutes of facilitated practice within the subchapter's 4 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare the five practice cards. Confirm PPE and sharps procedures with the local trainer; no real used sharps in the session.\n\n## [opening] Opening\n\nThe sharps box is nearly full. What should be arranged before continuing?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution.\n\n## [misconception] Common misconception\n\nSuggests recapping, compression, ordinary bins or continuing without essential protection. Choose controls for the hazard; PPE cannot replace every change needed in the work.\n\n## [practice] Practice activity\n\nMake five hazard-control cards: sharps–proper container; infection–task-appropriate prevention; body pain–work adjustment and breaks; stress–agreed workload and support; accidents–safe route and avoiding threats. Match them and explain why PPE alone is insufficient. In pairs, ask what must pause when protection is missing. Alone, explain each card aloud. Check one control before the next duty.\n\n## [answer-key] Answer key\n\n3. Replace it according to the fill line and local protocol before overfilling.\n\nThe third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution.\n\n## [observe] Observe\n\nMatches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps.\n\nReady: Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps. Completes this without prompting.\n\nNeeds practice: Makes a safe decision but mixes up controls for two hazards; rematch and explain.\n\nNot yet: Suggests recapping, compression, ordinary bins or continuing without essential protection.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nMakes a safe decision but mixes up controls for two hazards; rematch and explain. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23; WHO — Occupational infections (https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections). The five hazard groups span both source-table pages. A local clinical trainer must review demonstrations and referral pathways. Immediate needlestick evaluation was checked against CDC on 25 September 2026. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps. Completes this without prompting.",
+                "hindi_pa_en": "Suggests recapping, compression, ordinary bins or continuing without essential protection.",
+                "kaya_na_fil": "Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.",
+                "kailangan_practice_en": "Makes a safe decision but mixes up controls for two hazards; rematch and explain.",
+                "kailangan_practice_fil": "Ligtas ang desisyon ngunit nalilito ang control para sa dalawang hazard; ipares muli at ipaliwanag ang dahilan."
+              },
+              "not_yet_en": "Suggests recapping, compression, ordinary bins or continuing without essential protection.",
+              "not_yet_fil": "Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.",
+              "observable_en": "Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps.",
+              "observable_fil": "Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "5403083f-b3e6-43cb-9221-769bac13dc52",
+        "module_id": "ffd36ec0-f8f9-4c7a-bf34-2ab821ac95ec",
+        "lesson_key": "safety-identify",
+        "position": 0,
+        "title_fil": "Kilalanin ang panganib",
+        "title_en": "Identify hazards",
+        "objectives_fil": [
+          "Sa halimbawang health station at field visit, tukuyin ang limang uri ng panganib at ipares ang isang nakitang panganib sa posibleng pinsala, agarang kontrol at reporting contact."
+        ],
+        "objectives_en": [
+          "In a sample health-station and field-visit setting, identify five hazard groups and match one observed hazard to potential harm, immediate control and reporting contact."
+        ],
+        "required": true,
+        "published_revision_id": "1444ea1a-cf1d-4964-a1b1-8d0eebbf66bf",
+        "created_at": "2026-09-25T07:16:32.391935+00:00"
+      },
+      "revision": {
+        "id": "1444ea1a-cf1d-4964-a1b1-8d0eebbf66bf",
+        "lesson_id": "5403083f-b3e6-43cb-9221-769bac13dc52",
+        "revision_key": "8db7cdc7e5c727d590d0ec444691f0ea0c07e71dd73f634319bd956e16eca78d",
+        "content_hash": "8db7cdc7e5c727d590d0ec444691f0ea0c07e71dd73f634319bd956e16eca78d",
+        "read_sections": [
+          {
+            "id": "ana",
+            "check": null,
+            "body_en": "Ana, 33, will assist at the health station before household visits. The entrance floor is wet, the sharps box is nearly full and a hot walk lies ahead. “I will be careful” is not enough. She identifies each hazard, who might be harmed and the control needed. She checks the local protocol and confirms the reporting contact and tasks within her training with the midwife.",
+            "body_fil": "Si Ana, 33 anyos, ay BHW na tutulong sa health station bago mag-household visit. May basang sahig sa pasukan, halos puno ang sharps box at mainit ang nakaabang na lakad. Hindi sapat ang “mag-iingat ako.” Tinutukoy niya ang hazard, sino ang maaaring masaktan, at anong kontrol ang kailangan. Tinitingnan niya ang lokal na protocol at kinukumpirma sa midwife kung kanino mag-uulat at alin lang ang gawaing saklaw ng kanyang pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Before Ana starts work",
+            "concept_ids": [
+              "m8.requirements"
+            ],
+            "heading_fil": "Bago simulan ni Ana ang araw",
+            "takeaway_en": "Workplace safety starts by identifying hazards and local requirements before the task.",
+            "takeaway_fil": "Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain."
+          },
+          {
+            "id": "inspect",
+            "check": null,
+            "body_en": "A fictional station has a wet floor, a blocked exit and no soap at the sink. For each, name the hazard, possible harm, immediate control and reporting contact. First keep people away from danger and seek the right assistance. A checklist that only says “be careful” is incomplete. Check that the problem is corrected before removing the warning.",
+            "body_fil": "Sa kathang-isip na station, may basang sahig, nakaharang na labasan at walang sabon sa hugasan. Para sa bawat isa, sabihin ang hazard, maaaring epekto, agarang kontrol at taong aabisuhan. Unahin ang paglayo ng tao sa panganib at paghingi ng tamang tulong. Hindi kumpleto ang checklist kung ang nakasulat ay “mag-ingat” lamang. Balikan kung naayos ang problema bago alisin ang babala.",
+            "asset_ids": [],
+            "heading_en": "Inspect a work area",
+            "concept_ids": [
+              "m8.requirements",
+              "m8.practice"
+            ],
+            "heading_fil": "Suriin ang isang work area",
+            "takeaway_en": "A checklist should lead to controls and follow-up, not merely count hazards.",
+            "takeaway_fil": "Ang checklist ay dapat humantong sa kontrol at follow-up, hindi sa pagbilang lamang ng hazards."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Draw five boxes: needlestick injury; infection exposure; body discomfort; stress from excessive work; work-related accidents. Give a station or home-visit example for each. Choose one and write the harm, control and contact. In pairs, replace a vague “be careful” with a specific action. Alone, use the checklist. Before the next duty, perform a short hazard check.",
+            "body_fil": "Iguhit ang limang kahon: tusok ng karayom; exposure sa impeksyon; pananakit ng katawan; stress sa sobrang trabaho; aksidente sa gawain. Magbigay ng isang halimbawa sa bawat isa mula sa station o home visit. Pumili ng isa at isulat ang pinsala, kontrol at contact. Sa pares, suriin kung “mag-ingat” lang ang kontrol at palitan ng tiyak na aksyon. Kung mag-isa, gamitin ang checklist. Bago ang susunod na duty, magsagawa ng maikling hazard check.",
+            "asset_ids": [],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m8.requirements",
+              "m8.practice",
+              "m8.sharps",
+              "m8.infection",
+              "m8.ergonomics",
+              "m8.stress",
+              "m8.accidents"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "Recognizing a hazard should lead to a specific control and responsible contact.",
+            "takeaway_fil": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "“Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”",
+                  "fil": "“Basang pasukan, panganib madulas; ilayo muna ang tao at ipatama sa responsableng staff.”"
+                },
+                {
+                  "en": "“Everyone should be careful until closing.”",
+                  "fil": "“Mag-ingat na lang ang lahat hanggang uwian.”"
+                },
+                {
+                  "en": "“Nobody was hurt, so no action is needed.”",
+                  "fil": "“Walang nasaktan kaya walang kailangang aksyon.”"
+                }
+              ],
+              "prompt_en": "The entrance floor is wet. Which report supports immediate action?",
+              "prompt_fil": "May basang sahig sa pasukan. Aling ulat ang magagamit agad?",
+              "feedback_en": "The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.",
+              "feedback_fil": "Ang unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.",
+              "correct_option_index": 0
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m8.requirements",
+              "m8.practice",
+              "m8.sharps",
+              "m8.infection",
+              "m8.ergonomics",
+              "m8.stress",
+              "m8.accidents"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "Recognizing a hazard should lead to a specific control and responsible contact.",
+            "takeaway_fil": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-ana",
+            "check": null,
+            "layout": "scene",
+            "asset_ids": [],
+            "display_en": "Ana, 33, has station work and home visits. Wet floor, nearly full sharps box and a hot route: identify who could be harmed and what control is needed.",
+            "heading_en": "Before Ana starts work",
+            "concept_ids": [
+              "m8.requirements"
+            ],
+            "display_fil": "Si Ana, 33, ay may duty sa station at home visits. Basang sahig, halos punong sharps box at mainit na biyahe: tukuyin kung sino ang maaaring masaktan at anong kontrol ang kailangan.",
+            "heading_fil": "Bago simulan ni Ana ang araw"
+          },
+          {
+            "id": "slide-inspect",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Station check: wet floor, blocked exit, no soap. Record hazard → potential harm → control → reporting contact. Keep people away from danger; confirm correction before removing a warning.",
+            "heading_en": "Inspect a work area",
+            "concept_ids": [
+              "m8.requirements",
+              "m8.practice"
+            ],
+            "display_fil": "Station check: basang sahig, harang sa exit, walang sabon. Itala ang panganib → posibleng pinsala → kontrol → reporting contact. Ilayo muna ang tao sa panganib; tiyaking naayos bago alisin ang babala.",
+            "heading_fil": "Suriin ang isang work area"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Five groups: sharps, infections, body discomfort, stress, accidents. For one, name the harm, control and contact.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m8.requirements",
+              "m8.practice",
+              "m8.sharps",
+              "m8.infection",
+              "m8.ergonomics",
+              "m8.stress",
+              "m8.accidents"
+            ],
+            "display_fil": "Limang grupo: sharps, impeksyon, pananakit ng katawan, stress, aksidente. Sa isa: pangalanan ang pinsala, kontrol at contact.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "“Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”",
+                  "fil": "“Basang pasukan, panganib madulas; ilayo muna ang tao at ipatama sa responsableng staff.”"
+                },
+                {
+                  "en": "“Everyone should be careful until closing.”",
+                  "fil": "“Mag-ingat na lang ang lahat hanggang uwian.”"
+                },
+                {
+                  "en": "“Nobody was hurt, so no action is needed.”",
+                  "fil": "“Walang nasaktan kaya walang kailangang aksyon.”"
+                }
+              ],
+              "prompt_en": "The entrance floor is wet. Which report supports immediate action?",
+              "prompt_fil": "May basang sahig sa pasukan. Aling ulat ang magagamit agad?",
+              "feedback_en": "The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.",
+              "feedback_fil": "Ang unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.",
+              "correct_option_index": 0
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "Recognizing a hazard should lead to a specific control and responsible contact.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m8.requirements",
+              "m8.practice",
+              "m8.sharps",
+              "m8.infection",
+              "m8.ergonomics",
+              "m8.stress",
+              "m8.accidents"
+            ],
+            "display_fil": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m8.requirements",
+            "read_ids": [
+              "ana",
+              "inspect",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-ana",
+              "slide-inspect",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.practice",
+            "read_ids": [
+              "inspect",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-inspect",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.sharps",
+            "read_ids": [
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.infection",
+            "read_ids": [
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.ergonomics",
+            "read_ids": [
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.stress",
+            "read_ids": [
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          },
+          {
+            "id": "m8.accidents",
+            "read_ids": [
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              30
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              21,
+              22,
+              23
+            ]
+          }
+        ],
+        "assets": [],
+        "created_by": "4122ac97-5984-43e9-8f84-26b4a062a028",
+        "created_at": "2026-09-25T07:16:32.528905+00:00",
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "1444ea1a-cf1d-4964-a1b1-8d0eebbf66bf",
+          "notes_fil": "## [purpose] Layunin\n\nSa halimbawang health station at field visit, tukuyin ang limang uri ng panganib at ipares ang isang nakitang panganib sa posibleng pinsala, agarang kontrol at reporting contact.\n\n## [time-materials] Oras at kagamitan\n\n45 minuto para sa pinadali na pagsasanay. Bahagi ito ng 4 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nGamitin ang scenario sa papel, hindi tunay na mapanganib na lugar. Ihanda ang lokal na reporting contact.\n\n## [opening] Pambungad\n\nMay basang sahig sa pasukan. Aling ulat ang magagamit agad?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.\n\n## [misconception] Karaniwang pagkakamali\n\nHindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\n\n## [practice] Gawaing pagsasanay\n\nIguhit ang limang kahon: tusok ng karayom; exposure sa impeksyon; pananakit ng katawan; stress sa sobrang trabaho; aksidente sa gawain. Magbigay ng isang halimbawa sa bawat isa mula sa station o home visit. Pumili ng isa at isulat ang pinsala, kontrol at contact. Sa pares, suriin kung “mag-ingat” lang ang kontrol at palitan ng tiyak na aksyon. Kung mag-isa, gamitin ang checklist. Bago ang susunod na duty, magsagawa ng maikling hazard check.\n\n## [answer-key] Susi sa sagot\n\n1. “Basang pasukan, panganib madulas; ilayo muna ang tao at ipatama sa responsableng staff.”\n\nAng unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.\n\n## [observe] Obserbahan\n\nNatutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan.\n\nKaya na: Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Natutukoy ang panganib ngunit kulang ang contact o kontrol; ipapunan ang apat na field bago ulitin.\n\nHindi pa: Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nNatutukoy ang panganib ngunit kulang ang contact o kontrol; ipapunan ang apat na field bago ulitin. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23. Ang limang hazard group ay mula sa dalawang pahina ng source table. Suriin ng lokal na clinical trainer ang demo at referral pathway. Ang agarang needlestick evaluation ay sinuri sa CDC noong 25 Setyembre 2026. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+          "notes_en": "## [purpose] Purpose\n\nIn a sample health-station and field-visit setting, identify five hazard groups and match one observed hazard to potential harm, immediate control and reporting contact.\n\n## [time-materials] Time and materials\n\n45 minutes of facilitated practice within the subchapter's 4 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nUse a paper scenario, not a hazardous work area. Prepare the local reporting contact.\n\n## [opening] Opening\n\nThe entrance floor is wet. Which report supports immediate action?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.\n\n## [misconception] Common misconception\n\nMisses the hazard or gives only “be careful” as the response. Recognizing a hazard should lead to a specific control and responsible contact.\n\n## [practice] Practice activity\n\nDraw five boxes: needlestick injury; infection exposure; body discomfort; stress from excessive work; work-related accidents. Give a station or home-visit example for each. Choose one and write the harm, control and contact. In pairs, replace a vague “be careful” with a specific action. Alone, use the checklist. Before the next duty, perform a short hazard check.\n\n## [answer-key] Answer key\n\n1. “Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”\n\nThe first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.\n\n## [observe] Observe\n\nIdentifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example.\n\nReady: Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example. Completes this without prompting.\n\nNeeds practice: Names the hazard but omits contact or control; complete all four fields and repeat.\n\nNot yet: Misses the hazard or gives only “be careful” as the response.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nNames the hazard but omits contact or control; complete all four fields and repeat. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23. The five hazard groups span both source-table pages. A local clinical trainer must review demonstrations and referral pathways. Immediate needlestick evaluation was checked against CDC on 25 September 2026. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example. Completes this without prompting.",
+                "hindi_pa_en": "Misses the hazard or gives only “be careful” as the response.",
+                "kaya_na_fil": "Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.",
+                "kailangan_practice_en": "Names the hazard but omits contact or control; complete all four fields and repeat.",
+                "kailangan_practice_fil": "Natutukoy ang panganib ngunit kulang ang contact o kontrol; ipapunan ang apat na field bago ulitin."
+              },
+              "not_yet_en": "Misses the hazard or gives only “be careful” as the response.",
+              "not_yet_fil": "Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.",
+              "observable_en": "Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example.",
+              "observable_fil": "Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "baff2789-bb35-40ed-8828-d8c7e503bb72",
+        "module_id": "ffd36ec0-f8f9-4c7a-bf34-2ab821ac95ec",
+        "lesson_key": "safety-demonstrate",
+        "position": 3,
+        "title_fil": "Ipakita ang ligtas na paraan",
+        "title_en": "Demonstrate safe practice",
+        "objectives_fil": [
+          "Gamit ang dummy equipment, sundin ang trainer-approved safety checklist at ipakita ang agarang reporting at referral response sa simulated needlestick."
+        ],
+        "objectives_en": [
+          "Using dummy equipment, follow the trainer-approved safety checklist and demonstrate immediate reporting and referral for a simulated needlestick."
+        ],
+        "required": true,
+        "published_revision_id": "e131fc1c-0904-42dc-bed2-064e4c60b0e7",
+        "created_at": "2026-09-25T07:16:33.640873+00:00"
+      },
+      "revision": {
+        "id": "e131fc1c-0904-42dc-bed2-064e4c60b0e7",
+        "lesson_id": "baff2789-bb35-40ed-8828-d8c7e503bb72",
+        "revision_key": "3dc845221d14d6de964806ac8e2e7aa7f85fb7be65d0a379a4a840b202bc74fe",
+        "content_hash": "3dc845221d14d6de964806ac8e2e7aa7f85fb7be65d0a379a4a840b202bc74fe",
+        "read_sections": [
+          {
+            "id": "exposure",
+            "check": null,
+            "body_en": "Ana, 33, is in a health-station safety practice. The injury in the next example is simulated; no real needles or body fluids are used.\n\nAfter a used-needle injury, wash the wound with soap and water. Report immediately to the midwife or designated supervisor and obtain immediate medical evaluation from a qualified provider. Do not wait until the end of the shift or for symptoms. A clinician decides on assessment and any post-exposure treatment. Document the event through the local incident process so the cause can also be addressed.",
+            "body_fil": "Si Ana, 33, ay nasa safety practice sa health station. Ang injury sa susunod na halimbawa ay simulation; walang tunay na karayom o body fluid sa pagsasanay.\n\nKung natusok ng ginamit na karayom, hugasan ang sugat gamit ang sabon at tubig. Iulat agad sa midwife o nakatalagang supervisor at kumuha kaagad ng medical evaluation sa kwalipikadong provider. Huwag hintaying matapos ang duty o magkaroon ng sintomas. Ang clinician ang magpapasya sa pagsusuri at anumang kailangan na post-exposure treatment. Itala ang pangyayari sa lokal na incident process upang matugunan din ang dahilan ng aksidente.",
+            "asset_ids": [],
+            "heading_en": "If stuck, act immediately",
+            "concept_ids": [
+              "m8.exposure"
+            ],
+            "heading_fil": "Kung natusok, kumilos agad",
+            "takeaway_en": "Report and obtain immediate evaluation after a needlestick; washing alone is insufficient.",
+            "takeaway_fil": "Ang needlestick injury ay iulat at ipasuri kaagad; hindi sapat ang paghuhugas lamang."
+          },
+          {
+            "id": "return-demo",
+            "check": null,
+            "body_en": "Using dummy equipment, show where the sharps container belongs and when replacement is needed. Demonstrate hand hygiene and PPE use/removal following the trainer-approved local protocol. Practice uses no real used needles or body fluids. In a short posture exercise, adjust the chair and bag; avoid painful stretching. The facilitator observes actions rather than relying only on verbal answers.",
+            "body_fil": "Gamit ang dummy equipment, ipakita kung saan dapat naroon ang sharps container at kung kailan kailangang palitan. Ipakita ang hand hygiene at paggamit/pagtanggal ng PPE ayon sa trainer-approved local protocol. Walang tunay na ginamit na karayom o body fluid sa practice. Sa maikling activity tungkol sa posisyon, ayusin ang upuan at bag; huwag gumawa ng masakit na stretch. Ang facilitator ang titingin sa kilos, hindi lang sa pagsagot.",
+            "asset_ids": [],
+            "heading_en": "A safe return demonstration",
+            "concept_ids": [
+              "m8.practice",
+              "m8.prepare"
+            ],
+            "heading_fil": "Return demonstration na ligtas",
+            "takeaway_en": "Competence is shown through a safe demonstration within the scope of training.",
+            "takeaway_fil": "Ang competency ay nakikita sa ligtas na demonstrasyon sa loob ng saklaw ng pagsasanay."
+          },
+          {
+            "id": "near-miss",
+            "check": null,
+            "body_en": "Ana nearly slips but nobody is hurt. Report the hazard, time, location and control through the local process. After an incident, prepare available information for referral and any applicable benefits process, but paperwork must not delay urgent care. BHW insurance and benefits are not identical; confirm your applicable arrangements with the coordinator.",
+            "body_fil": "Muntik madulas si Ana pero walang nasaktan. Mahalaga pa ring iulat ang hazard, oras, lugar at ginawang kontrol sa lokal na proseso. Kung may insidente, ihanda ang available na impormasyon para sa referral at naaangkop na benefits process, ngunit huwag hayaang maantala ng papel ang agarang pangangalaga. Hindi lahat ng BHW ay pareho ang insurance o benepisyo; kumpirmahin sa coordinator kung ano ang naaangkop sa iyo.",
+            "asset_ids": [],
+            "heading_en": "Report a near miss too",
+            "concept_ids": [
+              "m8.practice"
+            ],
+            "heading_fil": "Iulat kahit muntik lamang",
+            "takeaway_en": "Reporting a near miss creates a chance to prevent the next injury.",
+            "takeaway_fil": "Ang pag-uulat ng muntikang insidente ay pagkakataong maiwasan ang susunod na pinsala."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Use a dummy box to show when replacement is needed. Follow the local demonstration checklist for hand hygiene and PPE. Then rehearse a needlestick: state the first action, call the simulated contact and arrange immediate evaluation. In pairs, record any delay or unsafe step and repeat. Alone, rehearse reporting; a trainer must observe the physical demonstration. Before duty, know where to obtain immediate evaluation.",
+            "body_fil": "Ipakita gamit ang dummy box kung kailan kailangan ng replacement. Sundin ang lokal na demo checklist para sa hand hygiene at PPE. Pagkatapos, gumanap sa needlestick scenario: sabihin ang unang hakbang, tawagan ang kunwaring contact at ayusin ang agarang evaluation. Sa pares, itala ang anumang delay o unsafe step at ulitin. Kung mag-isa, i-rehearse ang reporting sequence; ang physical demo ay kailangang makita ng trainer. Bago ang duty, alamin kung saan pupunta para sa agarang evaluation.",
+            "asset_ids": [],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m8.exposure",
+              "m8.practice",
+              "m8.prepare"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.",
+            "takeaway_fil": "Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "Wash, report immediately and obtain immediate medical evaluation.",
+                  "fil": "Hugasan, iulat agad at magpa-medical evaluation kaagad."
+                },
+                {
+                  "en": "Wash and wait until the visits are finished.",
+                  "fil": "Hugasan at maghintay hanggang matapos ang visits."
+                },
+                {
+                  "en": "Choose medication from available supplies.",
+                  "fil": "Pumili ng gamot mula sa available supplies."
+                }
+              ],
+              "prompt_en": "Ana has a used-needle injury but no symptoms. What should she do?",
+              "prompt_fil": "Natusok si Ana ng used needle ngunit walang sintomas. Ano ang gagawin?",
+              "feedback_en": "The first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment.",
+              "feedback_fil": "Ang unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.",
+              "correct_option_index": 0
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m8.exposure",
+              "m8.practice",
+              "m8.prepare"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.",
+            "takeaway_fil": "Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-exposure",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Simulated needlestick: wash with soap and water → report immediately → immediate medical evaluation. Do not wait for symptoms or shift end. A qualified clinician decides assessment and post-exposure treatment.",
+            "heading_en": "If stuck, act immediately",
+            "concept_ids": [
+              "m8.exposure"
+            ],
+            "display_fil": "Simulated needlestick: hugasan ng sabon at tubig → iulat agad → agarang medical evaluation. Huwag hintayin ang sintomas o uwian. Qualified clinician ang magpapasya sa assessment at post-exposure treatment.",
+            "heading_fil": "Kung natusok, kumilos agad"
+          },
+          {
+            "id": "slide-return-demo",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Dummy equipment only. Show the sharps container’s location and fill line. Follow the trainer-approved hand-hygiene and PPE checklist. Adjust chair and bag; no painful stretching.",
+            "heading_en": "A safe return demonstration",
+            "concept_ids": [
+              "m8.practice",
+              "m8.prepare"
+            ],
+            "display_fil": "Dummy equipment lamang. Ipakita ang lokasyon at fill line ng sharps box. Sundin ang trainer-approved hand hygiene at PPE checklist. Ayusin ang upuan at bag; walang masakit na stretching.",
+            "heading_fil": "Return demonstration na ligtas"
+          },
+          {
+            "id": "slide-near-miss",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "A slip was narrowly avoided without injury? Report place, time, hazard and control. Incident paperwork must not delay urgent care. Confirm applicable insurance and benefits with the coordinator.",
+            "heading_en": "Report a near miss too",
+            "concept_ids": [
+              "m8.practice"
+            ],
+            "display_fil": "Halos nadulas ngunit walang injury? Iulat ang lugar, oras, hazard at kontrol. Sa incident, hindi dapat maantala ng paperwork ang urgent care. Tiyakin sa coordinator ang angkop na insurance at benefits.",
+            "heading_fil": "Iulat kahit muntik lamang"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Dummy demonstration → trainer checklist → simulated report → immediate evaluation. Correct and repeat an unsafe step.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m8.exposure",
+              "m8.practice",
+              "m8.prepare"
+            ],
+            "display_fil": "Dummy demo → trainer checklist → simulated report → agarang evaluation. Itama at ulitin ang unsafe step.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "Wash, report immediately and obtain immediate medical evaluation.",
+                  "fil": "Hugasan, iulat agad at magpa-medical evaluation kaagad."
+                },
+                {
+                  "en": "Wash and wait until the visits are finished.",
+                  "fil": "Hugasan at maghintay hanggang matapos ang visits."
+                },
+                {
+                  "en": "Choose medication from available supplies.",
+                  "fil": "Pumili ng gamot mula sa available supplies."
+                }
+              ],
+              "prompt_en": "Ana has a used-needle injury but no symptoms. What should she do?",
+              "prompt_fil": "Natusok si Ana ng used needle ngunit walang sintomas. Ano ang gagawin?",
+              "feedback_en": "The first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment.",
+              "feedback_fil": "Ang unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.",
+              "correct_option_index": 0
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m8.exposure",
+              "m8.practice",
+              "m8.prepare"
+            ],
+            "display_fil": "Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m8.exposure",
+            "read_ids": [
+              "exposure",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-exposure",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "cdc-exposure"
+            ]
+          },
+          {
+            "id": "m8.practice",
+            "read_ids": [
+              "return-demo",
+              "near-miss",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-return-demo",
+              "slide-near-miss",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "cdc-exposure"
+            ]
+          },
+          {
+            "id": "m8.prepare",
+            "read_ids": [
+              "return-demo",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-return-demo",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "cdc-exposure"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              30
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              21,
+              22,
+              23
+            ]
+          },
+          {
+            "id": "cdc-exposure",
+            "url": "https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html",
+            "title": "CDC — Best Practices for Occupational Exposure to Blood"
+          }
+        ],
+        "assets": [],
+        "created_by": "4122ac97-5984-43e9-8f84-26b4a062a028",
+        "created_at": "2026-09-25T07:16:33.783873+00:00",
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "e131fc1c-0904-42dc-bed2-064e4c60b0e7",
+          "notes_fil": "## [purpose] Layunin\n\nGamit ang dummy equipment, sundin ang trainer-approved safety checklist at ipakita ang agarang reporting at referral response sa simulated needlestick.\n\n## [time-materials] Oras at kagamitan\n\n75 minuto para sa pinadali na pagsasanay. Bahagi ito ng 4 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nKumuha ng trainer-approved local checklist at dummy equipment. Walang clinical demonstration kung walang qualified trainer at ligtas na kagamitan. Ilagay ang emergency contact sa practice card.\n\n## [opening] Pambungad\n\nNatusok si Ana ng used needle ngunit walang sintomas. Ano ang gagawin?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.\n\n## [misconception] Karaniwang pagkakamali\n\nHumahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation. Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.\n\n## [practice] Gawaing pagsasanay\n\nIpakita gamit ang dummy box kung kailan kailangan ng replacement. Sundin ang lokal na demo checklist para sa hand hygiene at PPE. Pagkatapos, gumanap sa needlestick scenario: sabihin ang unang hakbang, tawagan ang kunwaring contact at ayusin ang agarang evaluation. Sa pares, itala ang anumang delay o unsafe step at ulitin. Kung mag-isa, i-rehearse ang reporting sequence; ang physical demo ay kailangang makita ng trainer. Bago ang duty, alamin kung saan pupunta para sa agarang evaluation.\n\n## [answer-key] Susi sa sagot\n\n1. Hugasan, iulat agad at magpa-medical evaluation kaagad.\n\nAng unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.\n\n## [observe] Obserbahan\n\nNasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation.\n\nKaya na: Nasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Ligtas ang sequence ngunit nangangailangan ng prompt sa reporting contact; ipaulit hanggang malinaw ang contact at pathway.\n\nHindi pa: Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nLigtas ang sequence ngunit nangangailangan ng prompt sa reporting contact; ipaulit hanggang malinaw ang contact at pathway. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23; CDC — Best Practices for Occupational Exposure to Blood (https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html). Ang limang hazard group ay mula sa dalawang pahina ng source table. Suriin ng lokal na clinical trainer ang demo at referral pathway. Ang agarang needlestick evaluation ay sinuri sa CDC noong 25 Setyembre 2026. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+          "notes_en": "## [purpose] Purpose\n\nUsing dummy equipment, follow the trainer-approved safety checklist and demonstrate immediate reporting and referral for a simulated needlestick.\n\n## [time-materials] Time and materials\n\n75 minutes of facilitated practice within the subchapter's 4 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nObtain the trainer-approved local checklist and dummy equipment. Do not run a clinical demonstration without a qualified trainer and safe materials. Put the emergency contact on the practice card.\n\n## [opening] Opening\n\nAna has a used-needle injury but no symptoms. What should she do?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment.\n\n## [misconception] Common misconception\n\nUses real used sharps in practice, misses a critical safety step or delays medical evaluation. Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.\n\n## [practice] Practice activity\n\nUse a dummy box to show when replacement is needed. Follow the local demonstration checklist for hand hygiene and PPE. Then rehearse a needlestick: state the first action, call the simulated contact and arrange immediate evaluation. In pairs, record any delay or unsafe step and repeat. Alone, rehearse reporting; a trainer must observe the physical demonstration. Before duty, know where to obtain immediate evaluation.\n\n## [answer-key] Answer key\n\n1. Wash, report immediately and obtain immediate medical evaluation.\n\nThe first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment.\n\n## [observe] Observe\n\nFollows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation.\n\nReady: Follows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation. Completes this without prompting.\n\nNeeds practice: Follows a safe sequence but needs a prompt for the reporting contact; repeat until contact and pathway are clear.\n\nNot yet: Uses real used sharps in practice, misses a critical safety step or delays medical evaluation.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nFollows a safe sequence but needs a prompt for the reporting contact; repeat until contact and pathway are clear. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23; CDC — Best Practices for Occupational Exposure to Blood (https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html). The five hazard groups span both source-table pages. A local clinical trainer must review demonstrations and referral pathways. Immediate needlestick evaluation was checked against CDC on 25 September 2026. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Follows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation. Completes this without prompting.",
+                "hindi_pa_en": "Uses real used sharps in practice, misses a critical safety step or delays medical evaluation.",
+                "kaya_na_fil": "Nasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.",
+                "kailangan_practice_en": "Follows a safe sequence but needs a prompt for the reporting contact; repeat until contact and pathway are clear.",
+                "kailangan_practice_fil": "Ligtas ang sequence ngunit nangangailangan ng prompt sa reporting contact; ipaulit hanggang malinaw ang contact at pathway."
+              },
+              "not_yet_en": "Uses real used sharps in practice, misses a critical safety step or delays medical evaluation.",
+              "not_yet_fil": "Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.",
+              "observable_en": "Follows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation.",
+              "observable_fil": "Nasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
