@@ -6,7 +6,7 @@ import {chromium} from '@playwright/test';
 const dir='.preview/lesson174-deliverables';
 const html=fs.readFileSync(dir+'/lesson-1.7.4-carole-review.html');
 const lesson=JSON.parse(fs.readFileSync('content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json'));
-const report={method:'Actual ReferenceLessons production components, explicit offline save/navigation/auth fixtures; no authenticated database connection.',cases:[],errors:[],audio_and_story:'Blocked: no new Gemini narration or story bytes; no playback/highlighting verification claimed.'};
+const report={method:'Actual ReferenceLessons production components, explicit offline save/navigation/auth fixtures; no authenticated database connection.',cases:[],errors:[],audio_and_story:'Text/art-only matrix; use lesson-174-full-browser-verify.mjs for actual media playback and highlighting.'};
 const server=http.createServer((req,res)=>{if(req.url==='/favicon.ico'){res.writeHead(204);res.end();return;}res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);});
 await new Promise(resolve=>server.listen(4179,'127.0.0.1',resolve));
 const browser=await chromium.launch({args:['--no-sandbox']});
