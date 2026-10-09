@@ -29,6 +29,8 @@
     "policy_SME": "pending"
   },
   "published_baseline": "blocked: loader credentials not configured",
-  "database_e2e": "not run; offline actual-component fixtures only; no production access",
-  "release": "blocked; no merge, load or publication"
+  "database_e2e": "Blocked: disposable local stack start attempted; registry rate limit and three Docker image extraction failures (no space left on device). Stopped retries; no production access.",
+  "release": "blocked; no merge, load or publication",
+  "credential_check": "Vercel metadata confirms Gemini key is sensitive, scoped to preview/production, and unreadable; no development value or loader credentials available.",
+  "registry": "Latest main contains 84 prior compositions after 1.6.5; exact source preserved. Two 1.7.3 compositions remain pending narrated inputs."
 }

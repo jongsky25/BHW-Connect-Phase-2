@@ -1,0 +1,54 @@
+{
+  "status": "incomplete draft",
+  "unit_tests": {
+    "passed": 1562,
+    "failed": 1,
+    "total": 1563,
+    "remaining_failure": "scripts/tests/reference-narration.test.mjs: committed narration is current for every converted subchapter; target 12 absent tracks"
+  },
+  "lint": {
+    "errors": 0,
+    "existing_warnings": 3
+  },
+  "typecheck": "passed",
+  "production_build": "passed",
+  "registry": {
+    "compositions_enumerated": 84,
+    "source_sha256": "bdfbcf24f04aac3eb04dd66ed8e998291b09a190b1e16ced72095ced16c310f3",
+    "new_target_compositions": "pending; no fabricated inputs"
+  },
+  "browser": {
+    "actual_cases": 72,
+    "screen_screenshots": 48,
+    "status": "passed",
+    "audio_story": "not verified"
+  },
+  "printables": {
+    "fil_pages": 4,
+    "en_pages": 4,
+    "A4": true,
+    "text_within_margins": true,
+    "separate_one_page_aid": true
+  },
+  "production_access": "none",
+  "local_database": "startup failed; repeated Docker image extraction no-space error",
+  "human_listening": "pending",
+  "owner_approval": false,
+  "SME_signoff": "pending",
+  "frozen_source_sha256": {
+    "src/components/elearning/reference-lessons.tsx": "6e2cc855307f018f9044dfb8c792a1707ded2c9c693e1b5e16538b8fccde6c32",
+    "scripts/lib/lesson-165-integration.mjs": "57f034cd7845c7adc47453919c9fa46fe4a02d6ffb5b3e7f6a30fdb680790ef5",
+    "scripts/lib/lesson-173-proposal-compat.mjs": "2403b0173a8c8f7abd15f2d125f1a32fd21d3d60640865682d50d5053e545198",
+    "scripts/lesson-173-review-build.mjs": "f5c9535f93072589a30f5779932cfdb2c52cd802b8fc32a180074f91b28a2f58",
+    "scripts/lesson-173-browser-verify.mjs": "2661d1c1500b703efb8d819897476fd1bb32b07b1197baea48628742dffa139f",
+    "remotion/src/Root.tsx": "bdfbcf24f04aac3eb04dd66ed8e998291b09a190b1e16ced72095ced16c310f3",
+    "content/training/day1-basic-competencies/narration.json": "37850828c4d0c1b9b6ea8e3ff4753aafb7f90b583a10e8c00fbb12d0b4c37d1a",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/competency.json": "8afedbb5def93d98bb5b1810846be527e28aa170cea229d940fea836a0662403",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/facilitator.en.md": "8a84c4f559b398ea7350c6a57b22ba33ebac12c3c10ea04e87b101931c8418fd",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/facilitator.fil.md": "9d0c18711aedd56098fdf79813ea36256580877929bff75c5fdc16cc71fbda69",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/lesson.json": "304dc119208794130b744a062639d6c9d8163d0c4b27f9df397b9c1fec44ee5c",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/read.en.md": "c0cdbb0d7d1e5cefe3aade3773cb608bf56f5c8535655d22d1a91c4c35f2ba5a",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/read.fil.md": "c1888e9ffe463916067168c9af999385a535dbcdca9e94b2b36ab9b981d93c79",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/slides.json": "a7895fd482583d0f7dd739d38350817474d05231f1cad8878f8927a43bbcee3a"
+  }
+}

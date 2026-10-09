@@ -27,7 +27,10 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
  });
  it('preserves every prior public byte, sibling lesson, narration history, UUID and source',()=>{
   const preserved=j('docs/lesson-173-implementation-baseline.json').protected_files;
-  for(const [p,h]of Object.entries(preserved))expect(sha(beforeProposed173(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(preserved)){
+   const bytes=fs.lstatSync(p).isSymbolicLink()?Buffer.from(fs.readlinkSync(p)):beforeProposed173(p);
+   expect(sha(bytes),p).toBe(h);
+  }
  },30000);
  it('rejects an unpinned draft byte before exposing any historical view',()=>{
   const receipt=j('docs/lesson-173-proposal-receipt.json');
