@@ -18,5 +18,6 @@
     "Shipped story en ending 9.5\u201310.5 s: possible voice transition between separately synthesized beats."
   ],
   "disposition": "Kore was requested throughout; automated timbre observations are retained as unresolved human-listening items, not silently approved or claimed to be confirmed defects.",
-  "provider_failures": "Initial check-fil ending HTTP 400 and later practice-fil body HTTP 400 retained with exact raw evidence; later attempts review the same exact WAV bytes."
+  "provider_failures": "Initial check-fil ending HTTP 400, intermediate practice-fil body HTTP 400 and latest practice-fil ending HTTP 400 retained with exact raw evidence. Latest completed attempt has 14 successful full reviews and 55 successful focused reviews plus one provider-filter failure; no successful assessment fabricated.",
+  "full_vs_focused_disagreement": "Both complete decoded shipped AAC story reviews report consistent timbre and complete endings; focused English ending review reports a possible timbre shift. This disagreement is retained for human listening, with exact timestamps and bytes."
 }

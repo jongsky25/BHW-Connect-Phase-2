@@ -49,7 +49,7 @@ try{
    const screenshot=`lesson184-${lang}-${mode}-${width}-${section.id}.png`;await page.screenshot({path:dir+'/'+screenshot,fullPage:true});report.screenshots.push(screenshot);report.cases.push(record);save();
    if(index<5)await page.getByRole('button',{name:lang==='en'?'Next':'Susunod',exact:true}).click();
   }
-  for(const pane of ['Facilitator guide','Observation indicator','Evidence']){await page.getByRole('button',{name:pane,exact:true}).click();assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
+  for(const pane of ['Facilitator guide','Observation indicator','Evidence']){await page.getByRole('button',{name:pane,exact:true}).click();assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));if(pane==='Facilitator guide'){assert((await page.locator('article section div').nth(1).innerText()).length>100,'Guide body missing');assert((await page.locator('article h2').nth(1).innerText()).length<120,'Guide body rendered as heading');}}
   await context.close();
  }
  for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const id of ['exposure','return-demo','near-miss','practice','check']){
@@ -75,7 +75,14 @@ try{
   await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
   await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
-  report.cases.push({language:lang,width,mode_switch_pauses:true,language_switch_pauses:true});await context.close();
+  for(const action of ['mode','language','navigation']){
+   await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&!v.paused&&v.currentTime>0;});await page.locator('video').evaluate(v=>window.__previousVideo=v);
+   if(action==='mode')await page.getByRole('button',{name:'Slides',exact:true}).click();
+   if(action==='language')await page.getByRole('button',{name:lang==='en'?'English':'Filipino',exact:true}).click();
+   if(action==='navigation')await page.getByRole('button',{name:'Facilitator guide',exact:true}).click();
+   assert(await page.evaluate(()=>window.__previousVideo.paused),'Story remains playing after '+action);
+  }
+  report.cases.push({language:lang,width,mode_switch_pauses:true,language_switch_pauses:true,story_mode_cleanup:true,story_language_cleanup:true,story_navigation_cleanup:true});await context.close();
  }
  assert.equal(report.errors.length,0);report.status='passed for stated fixture scope; human listening, clinical and owner review separate';report.actual_case_count=report.cases.length;report.actual_screenshot_count=report.screenshots.length;save();
 }catch(e){report.status='failed';report.error=String(e.stack??e);save();throw e;}finally{await browser.close();await new Promise(r=>server.close(r));}

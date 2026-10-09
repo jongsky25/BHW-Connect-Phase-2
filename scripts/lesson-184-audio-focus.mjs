@@ -74,3 +74,5 @@ for(const record of records){
   reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,decoded_sample_count:excerptSamples,expected_context:record.timings.filter(t=>t.end_ms>=q.start*1000&&t.start_ms<=q.end*1000).map(t=>t.text).join(' '),model_response:text});save();console.log('Decoded and focused-reviewed '+record.id+' '+q.kind);
  }
 }
+
+report.actual_recordings=report.records.length;report.actual_focused_excerpts=report.records.reduce((n,r)=>n+r.excerpts.length,0);report.successful_model_reviews=report.records.flatMap(r=>r.excerpts).filter(e=>e.model_response).length;report.provider_failures=report.records.flatMap(r=>r.excerpts).filter(e=>e.review_failure).length;report.status=decodeOnly?'decoded metrics only':report.provider_failures?'completed with retained provider failures':'model reviews complete; human listening and approval pending';save();
