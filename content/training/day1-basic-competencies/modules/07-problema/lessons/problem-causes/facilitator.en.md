@@ -4,7 +4,7 @@ Build a cause map with two possible branches and verification steps, without tre
 
 ## [time-materials] Time and materials
 
-50 guided minutes: 6 opening + 10 demonstration/source discussion + 18 attempts, feedback and retry + 10 debrief + 6 transfer. Module allocations remain 35 + 50 + 45 + 50 = 180 minutes. Ten triads for 30 participants, paper, pens and the four-page A4 practice kit. No actual resident record. Independent study estimate is pending measured new audio; optional story and replay are additional and do not replace guided practice.
+50 guided minutes: 6 opening + 10 demonstration/source discussion + 18 attempts, feedback and retry + 10 debrief + 6 transfer. Module allocations remain 35 + 50 + 45 + 50 = 180 minutes. Ten triads for 30 participants, paper, pens and the four-page A4 practice kit. No actual resident record. Authored independent estimate: 14–17 minutes, using the longer language track. Actual six-screen narration is 541.34 seconds in English and 605.34 seconds in Filipino; allow 3–6 minutes for the check, brief rehearsal and reflection. Optional story or replay is additional.
 
 ## [prepare] Prepare
 
@@ -32,7 +32,7 @@ Five is a tool name, not a quota or proof. A report is not automatically a verif
 
 Ten triads: BHW, resident/staff, observer. Each six-minute round: 2 minutes first map and evidence-seeking question; 1 minute specific observer feedback; 2 minutes revision and retry with correction card; 1 minute record the exact action and rotate. Repeat three times so all 30 practise as BHW. Observer asks: “Which arrow lacks support?” The learner changes it rather than merely agreeing with feedback.
 
-A single facilitator cannot directly observe all 30 full performances in 18 minutes. Sample one BHW’s question, two-branch map and correction in each triad across the rounds (about 90 seconds per triad, with three minutes for movement/notes). Record the exact portion seen and learner; the other 20 attempts are not observed, never passed. Arrange later direct observation or additional qualified observers. Peer feedback supports practice only.
+A single facilitator cannot directly observe all 30 full performances in 18 minutes. Observe one learner in one triad per six-minute round: first attempt/question/map for 2 minutes, feedback for 1, correction and retry for 2, then notes and movement for 1. Choose a different triad each round. This yields three directly observed learners, not ten or thirty; the other 27 are not observed, never passed. Record the exact portion seen and support. Arrange later direct observation or additional qualified observers for everyone else. Peer feedback supports practice only.
 
 ## [answer-key] Answer key
 

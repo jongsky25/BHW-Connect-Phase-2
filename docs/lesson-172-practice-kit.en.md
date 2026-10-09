@@ -36,7 +36,7 @@ Unsupported arrow and feedback: __________________
 Correction actually observed: _____________________
 Support provided and next observation: ______________
 
-Facilitator may sample one BHW per triad; unseen attempts are NOT OBSERVED, never passed. Retry missing parts; use the same indicator standard.
+One facilitator observes one BHW in one triad per six-minute round (three learners); unseen attempts are NOT OBSERVED, never passed. Retry missing parts; use the same indicator standard.
 
 ## One-page two-branch verification aid
 

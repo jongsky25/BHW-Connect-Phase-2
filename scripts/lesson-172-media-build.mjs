@@ -19,10 +19,12 @@ const lessonPath='content/training/day1-basic-competencies/modules/07-problema/l
 const narrationPath='content/training/day1-basic-competencies/narration.json';
 const allowed=['problem-causes'];
 const original=json(narrationPath);
+const startingModule=loadReferenceModule(path.join(root,'content/training/day1-basic-competencies/modules/07-problema'),path.join(root,'public'));
+const needsGeneration=planReferenceNarration([{key:'07-problema',lessons:startingModule.lessons}],original,src=>existsSync(path.join(root,'public',src.slice(1)))?sha(path.join(root,'public',src.slice(1))):null).some(item=>item.lessonKey==='problem-causes'&&item.action!=='skip');
 original.history ??= {};
 for (const key of allowed) {
  original.history[key] ??= [];
- if (!original.history[key].some(h=>JSON.stringify(h)===JSON.stringify(original.lessons[key]))) original.history[key].push(original.lessons[key]);
+ if (needsGeneration && !original.history[key].some(h=>JSON.stringify(h)===JSON.stringify(original.lessons[key]))) original.history[key].push(original.lessons[key]);
 }
 save(narrationPath,original);
 const args=['--modules','07-problema','--lessons',allowed.join(',')];
@@ -103,7 +105,7 @@ if(!pending.length){
   for(const lang of ['fil','en']){
     const guide=path.join(root,path.dirname(lessonPath),`facilitator.${lang}.md`);
     const estimate=lang==='en'?`Authored independent estimate: ${low}–${high} minutes, using the longer language track. Actual six-screen narration is ${durations.en.toFixed(2)} seconds in English and ${durations.fil.toFixed(2)} seconds in Filipino; allow 3–6 minutes for the check, brief rehearsal and reflection. Optional story or replay is additional.`:`Ginawang pagtataya ng sariling pag-aaral: ${low}–${high} minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: ${durations.en.toFixed(2)} segundo sa English at ${durations.fil.toFixed(2)} segundo sa Filipino; maglaan ng 3–6 minuto para sa check, maikling pagsasanay at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.`;
-    writeFileSync(guide,readFileSync(guide,'utf8').replace(/SELF_STUDY_TIMING_PENDING|Authored independent estimate:[^\n]+|Ginawang pagtataya ng sariling pag-aaral:[^\n]+/g,estimate));
+    writeFileSync(guide,readFileSync(guide,'utf8').replace(/Independent study estimate is pending measured new audio; optional story and replay are additional and do not replace guided practice\./g,'SELF_STUDY_TIMING_PENDING').replace(/Wala pang pagtataya ng sariling pag-aaral hangga’t hindi nasusukat ang bagong audio; dagdag ang opsyonal na kuwento at pag-ulit, hindi kapalit ng guided practice\./g,'SELF_STUDY_TIMING_PENDING').replace(/SELF_STUDY_TIMING_PENDING|Authored independent estimate:[^\n]+|Ginawang pagtataya ng sariling pag-aaral:[^\n]+/g,estimate));
   }
 }
 save('docs/lesson-172-media-generation.json',{generated_date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),owner_review:'pending',render_input_sha256:renderInputHash,render_cached:cached,target_read_tracks:12,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});

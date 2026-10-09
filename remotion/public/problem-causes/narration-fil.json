@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Lesson 1.7.2 cause verification v1. One settled adult Filipina female Kore trainer narrates every heading, dialogue and takeaway in everyday Filipino/Tagalog. Keep a warm consistent feminine mid-register, without acting out residents or switching speakers. Preserve exact words, negations, attribution and uncertainty; finish each sentence and the corrected ending clearly. The displayed name is Carole. No pronunciation alias is applied before actual audio review. This prompt is not human listening or approval.",
+  "durationSeconds": 68.885,
+  "beats": [
+    {
+      "zone": "whys",
+      "index": 0,
+      "text": "Si Carole ay nakikinig sa tatlong kathang-isip na pamilya. Sinabi ang hadlang sa childcare at pamasahe; hindi pa patunay ang mga sanhi.",
+      "start_ms": 0,
+      "end_ms": 9800
+    },
+    {
+      "zone": "manual-example",
+      "index": 1,
+      "text": "Sa halimbawa ng DOH manual, magkakaugnay ang tubig, impormasyon at training. Para ito sa pagsusuri ng sistema, hindi paggamot o sanhi ng bawat pagkamatay.",
+      "start_ms": 10100,
+      "end_ms": 23660
+    },
+    {
+      "zone": "rosario",
+      "index": 2,
+      "text": "Si Rosario sa ZFF case ay batang isang taon at apat na buwan. Ihiwalay ang kapaligiran, kabuhayan at serbisyo; huwag sisihin ang ina lamang.",
+      "start_ms": 23960,
+      "end_ms": 34720
+    },
+    {
+      "zone": "verify-branch",
+      "index": 3,
+      "text": "Isang oras ang natanggap ayon sa residente; dalawa sa practice schedule. Inalis ni Carole ang maling arrow. Hindi pa alam kung bakit isa lamang ang natanggap.",
+      "start_ms": 35020,
+      "end_ms": 45140
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Gumawa ng dalawang sangay, tukuyin ang pinagmulan at beripikasyon. Ituro ang arrow na walang suporta, baguhin at ulitin. Hindi marka ang peer feedback.",
+      "start_ms": 45440,
+      "end_ms": 56960
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Sa wakas, may dalawang sangay na may batayan o tapat na hindi pa tiyak. Suriin ang childcare at pamasahe kasama ang residente at staff. Hindi patunay ang limang tanong.",
+      "start_ms": 57260,
+      "end_ms": 68820
+    }
+  ],
+  "audio_sha256": "8584b7d6125335a98382e76ae704c9cfa8bceaef9bfc64c1a48c8a7c74b98bee"
+}

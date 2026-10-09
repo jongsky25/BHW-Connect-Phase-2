@@ -1,0 +1,17 @@
+# Lesson 1.7.2 — Carole draft review
+
+Carole investigates missed visits through two attributed branches, tests an unsupported schedule explanation, corrects it and keeps the fare branch open. Six paired Filipino/English screens retain the original objectives, quiz choices, correct index, lesson/module/course identities and substantive anchors. The added `verify-branch` screen demonstrates the difference between one time received and two times offered in a fictional practice schedule.
+
+The 50-minute guided run sheet uses ten rotating triads for 30 learners, with three six-minute attempts/feedback/retry rounds. Private bilingual guides explain direct-observation sampling, unseen attempts, scaffolded retries and the solo equivalent. Two four-page A4 kits include cause/evidence tokens, roles, observer checklist and a separate one-page two-branch map. No new assessment or certification rule is introduced.
+
+The source audit records actual original PDF bytes and inspected passages/diagrams. Rosario remains the historical child aged one year and four months. The ZFF branching worksheet and DOH Five Whys framing are distinguished; the fictional missed-visit adaptation does not claim a verified local cause or service commitment. No treatment instructions are inferred from the historical account.
+
+The offline review uses production `ReferenceLessons` components with explicit local navigation, image and save fixtures. It is not authenticated production verification. It embeds the selected media and includes private guides, rubric and evidence. Source-page excerpts are retained for private review rather than published as learner assets.
+
+The draft includes twelve actual Gemini Kore Read MP3s and two six-beat H.264/AAC stories, with measured timings, exact bilingual captions and final-frame posters. Fourteen full and fifty-six focused actual-audio model reports, decoded excerpts and original raw request/response evidence are retained. Full reports describe consistent female narration, while several focused reports flag possible male/female shifts or pronunciation defects. These contradictory model observations remain unresolved pending human listening; no stable-voice approval is inferred from the model reports.
+
+The complete browser verification covers 84 cases: all six screens in both languages and modes, narration highlighting and completion gates, all quiz rationales, old-anchor resume, optional story captions/fullscreen and player cleanup. The final workflow exports an exact-head technical receipt only after these checks, normal CI and the complete 86-composition Remotion regression pass. The ZIP includes a self-contained production-component HTML review, private guides, rubric, four-page A4 practice kits, separate one-page maps, audits and hash-pinned evidence. Raw model requests/responses are preserved in a separate integrity-pinned archive.
+
+Earlier public bytes, sibling narration/history and approval receipts are protected with SHA-256 receipts. Historical test views validate the exact new successor and exact predecessor before running the retained assertions. Human listening, owner package review and local-policy/SME review remain pending even when technical checks pass.
+
+The PR remains a draft. No merge, deployment, database content load/publication, migrations, learner reset, assessment or flag changes are included. The shared module-summary character change remains coordinated by lesson 1.7.1.

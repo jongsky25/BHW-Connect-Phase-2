@@ -7,7 +7,7 @@ const changed_existing_files = {};
 for (const [path, hash] of Object.entries(baseline.protected_files)) {
   const current = fs.readFileSync(path);
   if (sha(current) === hash) continue;
-  const prior = execFileSync('git', ['show', baseline.integrated_main + ':' + path]);
+  const prior = execFileSync('git', ['show', baseline.integrated_main + ':' + path], {maxBuffer:32*1024*1024});
   if (sha(prior) !== hash) throw Error('Baseline bytes mismatch: ' + path);
   changed_existing_files[path] = {predecessor_sha256: hash, predecessor_utf8: prior.toString(), proposed_sha256: sha(current)};
 }

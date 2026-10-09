@@ -36,7 +36,7 @@ Arrow at tiyak na puna: __________________________
 Aktuwal na pagwawastong nakita: __________________
 Suporta at susunod na obserbasyon: _________________
 
-Maaaring isang BHW bawat triad ang masampolan ng facilitator. HINDI NAOBSERBAHAN ang hindi nakita, hindi passed. Ulitin ang kulang; pareho ang indicator.
+Isang BHW sa isang triad bawat anim na minutong round ang oobserbahan ng isang facilitator (tatlong learner). HINDI NAOBSERBAHAN ang hindi nakita, hindi passed. Ulitin ang kulang; pareho ang indicator.
 
 ## One-page aid: dalawang sangay
 

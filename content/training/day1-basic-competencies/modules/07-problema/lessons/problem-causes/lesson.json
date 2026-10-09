@@ -255,10 +255,50 @@
       "content_hash": "22d181948593e992a1bbb17b45a4a02a667b48cca6badd0cdc51e8b6b94057a6",
       "alt_fil": "Si Carole at residente na tinatalakay ang ebidensya at tanong.",
       "alt_en": "Carole and residents discuss evidence and questions.",
-      "caption_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
-      "caption_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+      "caption_fil": "Si Carole ay nakikinig bago tanggapin ang paliwanag.",
+      "caption_en": "Carole listens before accepting an explanation.",
       "review_status": "draft",
       "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "id": "problem-causes-story",
+      "alt_fil": "Anim na beat tungkol sa dalawang sangay, pinagmulan, pagwawasto at beripikasyon.",
+      "alt_en": "Six narrated beats about two branches, sources, correction and verification.",
+      "caption_fil": "Dalawang sangay na may batayan at tapat na hindi pa tiyak.",
+      "caption_en": "Two evidence-qualified branches with honest unknowns.",
+      "provenance": "Original lesson 1.7.2 Remotion story with six Carole scenes from the pinned reference. Gemini Kore narration; measured encoded audio boundaries. Classroom facts only; owner, human listening and SME review pending.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-7/problem-causes-gemini-fil-54c1fffffd47.mp4",
+          "content_hash": "54c1fffffd4767d87f4f19f6925cd412fa2201fdc097222ab87383b4cbee0df5",
+          "duration_s": 70,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-causes-gemini-fil-b6ee07161627.vtt",
+            "content_hash": "b6ee07161627993535d258e476ff9c8c882013cb4a786d1025555c913ac53944"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg",
+            "content_hash": "940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-7/problem-causes-gemini-en-9cb2c860e10c.mp4",
+          "content_hash": "9cb2c860e10c35adb686efd31bb512bbcb01609ae992240d7366739a0db067ea",
+          "duration_s": 67,
+          "captions": {
+            "path": "/training/bhw-1-7/problem-causes-gemini-en-45daeb498e0c.vtt",
+            "content_hash": "45daeb498e0ce1e66ad01863b0137ad30a468f5e49f11886e5b22b270d7681c4"
+          },
+          "poster": {
+            "path": "/training/bhw-1-7/problem-causes-gemini-en-73b77f9edd97-poster.jpg",
+            "content_hash": "73b77f9edd97cfe4b47c0b836a9acf8f126c4282a1f01c9d3dfeac91be21ad18"
+          }
+        }
+      },
+      "path": "/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg",
+      "content_hash": "940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956"
     }
-  ]
+  ],
+  "featured_asset_id": "problem-causes-story"
 }

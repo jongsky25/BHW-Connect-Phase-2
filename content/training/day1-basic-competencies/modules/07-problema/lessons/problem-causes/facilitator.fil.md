@@ -4,7 +4,7 @@ Gumawa ng cause map na may dalawang posibleng sangay at paraan ng pagberipika, n
 
 ## [time-materials] Oras at kagamitan
 
-50 minutong guided practice: 6 pagbubukas + 10 demo/usapan sa pinagkunan + 18 pagtatangka, puna at pag-ulit + 10 pagtalakay + 6 paglilipat sa gawain. Mananatiling 35 + 50 + 45 + 50 = 180 minuto ang module. Sampung triad para sa 30 kalahok, papel, panulat at apat na pahinang A4 kit. Walang tunay na rekord. Wala pang pagtataya ng sariling pag-aaral hangga’t hindi nasusukat ang bagong audio; dagdag ang opsyonal na kuwento at pag-ulit, hindi kapalit ng guided practice.
+50 minutong guided practice: 6 pagbubukas + 10 demo/usapan sa pinagkunan + 18 pagtatangka, puna at pag-ulit + 10 pagtalakay + 6 paglilipat sa gawain. Mananatiling 35 + 50 + 45 + 50 = 180 minuto ang module. Sampung triad para sa 30 kalahok, papel, panulat at apat na pahinang A4 kit. Walang tunay na rekord. Ginawang pagtataya ng sariling pag-aaral: 14–17 minuto, ayon sa mas mahabang salaysay. Aktuwal na salaysay ng anim na screen: 541.34 segundo sa English at 605.34 segundo sa Filipino; maglaan ng 3–6 minuto para sa check, maikling pagsasanay at pagninilay. Dagdag pa ang opsyonal na kuwento o pag-ulit.
 
 ## [prepare] Paghahanda
 
@@ -32,7 +32,7 @@ Pangalan ng kasangkapan ang lima, hindi quota o patunay. Hindi awtomatikong nati
 
 Sampung triad: BHW, residente/staff, observer. Bawat anim na minutong round: 2 minuto unang map at tanong; 1 minuto tiyak na puna; 2 minuto pagwawasto at pag-ulit gamit ang correction card; 1 minuto itala ang aksyon at magpalit. Tatlong round upang lahat ng 30 ay makapag-BHW. Observer: “Aling arrow ang walang suporta?” Baguhin ng learner ang arrow; hindi sapat ang pagsang-ayon sa puna.
 
-Hindi kayang direktang obserbahan ng isang facilitator ang lahat ng 30 buong pagtatangka sa 18 minuto. Pumili ng isang BHW bawat triad sa tatlong round: tanong, dalawang sangay at pagwawasto (mga 90 segundo bawat triad, tatlong minuto sa paglipat/pagtatala). Itala ang bahagi at learner na nakita; hindi naobserbahan ang iba pang 20, hindi sila passed. Magtakda ng susunod na direktang obserbasyon o dagdag na qualified observer. Pagsasanay lamang ang peer feedback.
+Hindi kayang direktang obserbahan ng isang facilitator ang lahat ng 30 buong pagtatangka sa 18 minuto. Pumili ng isang learner sa isang triad bawat anim na minutong round: 2 minuto sa unang map/tanong, 1 sa puna, 2 sa pagwawasto/pag-ulit, 1 sa tala at paglipat. Ibang triad sa bawat round. Tatlong learner lamang ang direktang naobserbahan, hindi sampu o tatlumpu; hindi naobserbahan ang iba pang 27, hindi sila passed. Itala ang eksaktong bahaging nakita at suporta. Magtakda ng susunod na direktang obserbasyon o dagdag na qualified observer para sa iba. Pagsasanay lamang ang peer feedback.
 
 ## [answer-key] Sagot at paliwanag
 

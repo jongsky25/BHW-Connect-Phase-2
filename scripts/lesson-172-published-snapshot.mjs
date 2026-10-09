@@ -1,10 +1,11 @@
 import {execFileSync} from 'node:child_process';
 // Bounded, read-only baseline through the existing loader account. No writes.
-import {readFileSync,writeFileSync} from 'node:fs';
+import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {createClient,signIn,requireEnv} from './lib/supabase-rest.mjs';
 const lock=JSON.parse(readFileSync('content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json','utf8'));
 const ids=[...Object.values(lock.lessons['07-problema']),...Object.values(lock.lessons['06-komunikasyon'])];
 if(ids.length!==9||new Set(ids).size!==9)throw Error('Unexpected bounded lesson identity set');
+if(existsSync('lesson-172-published-snapshot.json')){const existing=JSON.parse(readFileSync('lesson-172-published-snapshot.json'));if(existing.rows.length!==9||existing.rows.some(r=>!ids.includes(r.lesson.id)))throw Error('Invalid retained published baseline');console.log('Retaining the original authenticated baseline; no new production read.');process.exit(0);}
 const url='https://ltzicxyefizxoqhfuuzc.supabase.co',key=requireEnv('KB_LOADER_ANON_KEY');
 const token=await signIn(url,key,requireEnv('KB_LOADER_USERNAME'),requireEnv('KB_LOADER_PASSWORD'));
 const client=createClient(url,key,token);

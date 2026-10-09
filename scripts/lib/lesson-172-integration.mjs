@@ -2,8 +2,8 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
+const receipt = JSON.parse(fs.readFileSync('docs/lesson-172-proposal-receipt.json'));
 export function beforeLesson172(path, actual = fs.readFileSync(path)) {
-  const receipt = JSON.parse(fs.readFileSync('docs/lesson-172-proposal-receipt.json'));
   const entry = receipt.changed_existing_files[path];
   if (!entry) return actual;
   if (sha(actual) !== entry.proposed_sha256) throw Error('Unpinned lesson 1.7.2 successor: ' + path);

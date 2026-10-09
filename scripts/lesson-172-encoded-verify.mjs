@@ -11,6 +11,7 @@ for(const lang of ['fil','en']){
  const duration=Number(video.duration),expectedFrames=Math.round((timing.durationSeconds+1.1)*30);assert.equal(Number(video.nb_frames),expectedFrames);assert(Math.abs(duration-expectedFrames/30)<0.001);assert(duration<=90);assert(duration-timing.beats.at(-1).end_ms/1000>=1.05);
  assert.equal(fs.readFileSync('public'+v.captions.path,'utf8'),toWebVtt(timing));
  for(const item of [v,v.poster,v.captions])assert.equal(sha('public'+item.path),item.content_hash);
+ const posterProbe=JSON.parse(execFileSync('ffprobe',['-v','error','-show_streams','-of','json','public'+v.poster.path],{encoding:'utf8'}));assert.equal(posterProbe.streams[0].width,854);assert.equal(posterProbe.streams[0].height,480);
  const last=`${dir}/story-${lang}-last-frame.png`;
  execFileSync('ffmpeg',['-v','error','-i',file,'-vf',`select=eq(n\\,${expectedFrames-1})`,'-frames:v','1','-y',last]);
  const comparison=spawnSync('ffmpeg',['-i','public'+v.poster.path,'-i',last,'-lavfi','ssim','-f','null','-'],{encoding:'utf8'});assert.equal(comparison.status,0,comparison.stderr);
