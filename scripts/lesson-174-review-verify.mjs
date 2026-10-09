@@ -35,7 +35,7 @@ for(const r of focus.records)for(const e of r.excerpts)if(!successful.some(raw=>
 const rawReceipt={requests:raw.length,failed_or_superseded_requests:raw.filter(r=>!(r.response_status>=200&&r.response_status<300)).length,full_responses_bound:14,focused_responses_bound:56,files:raw.map(r=>({file:r.file,sha256:sha(r.file)}))};
 fs.writeFileSync(out+'/lesson-174-raw-provenance.json',JSON.stringify(rawReceipt,null,2)+'\n');
 const ciPath=out+'/lesson-174-final-ci.json';
-if(!fs.existsSync(ciPath)||j(ciPath).head_sha!==head||j(ciPath).status!=='passed'||j(ciPath).complete_Remotion_registry!==88)throw Error('Complete CI and 88 renders required at exact head');
+if(!fs.existsSync(ciPath)||j(ciPath).head_sha!==head||j(ciPath).status!=='passed'||j(ciPath).complete_Remotion_registry!==90)throw Error('Complete CI and 90 renders required at exact head');
 const report={status:'passed',source_commit:head,method:'Technical package completeness and exact media-byte evidence. Model assessment is supporting evidence, not human listening or approval.',browser:{file:browserPath,sha256:sha(browserPath),cases:88},actual_read_tracks:12,shipped_AAC_stories:2,full_model_reports:14,focused_WAV_reviews:56,earlier_media_and_selection:'verified by scoped media guard',normal_CI:fs.existsSync(ciPath)?j(ciPath):'Pending exact-head CI receipt',human_listening:'pending',owner_package_review:'pending',local_policy_SME_review:'pending'};
 fs.writeFileSync(out+'/lesson-1.7.4-verification.json',JSON.stringify(report,null,2)+'\n');
 console.log('Verified complete technical review: 88 browser cases, 14 full reports, 56 exact WAV excerpts.');

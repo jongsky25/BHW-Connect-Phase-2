@@ -1,0 +1,154 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "authorization_verbatim": "approved. meerge and deploy to live",
+  "lesson_keys": [
+    "problem-action-plan"
+  ],
+  "reviewed_head": "12663a8a74e7ccb3a57a9cbda79cef4cc350a237",
+  "reviewed_package_sha256": "5767d386e0a934d470eadd5316680523fa949341d5746c0a568571bcb5fca958",
+  "reviewed_package_bytes": 275117302,
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"problem-action-plan\",\n    \"position\": 3,\n    \"title_fil\": \"Magplano ng aksyon\",\n    \"title_en\": \"Plan an action\",\n    \"objectives_fil\": [\n      \"Magmungkahi ng isang trial na tumutugon sa natiyak na sanhi, may owner, resources, deadline, sukatan at petsa ng review, na may pagsang-ayon ng katuwang.\"\n    ],\n    \"objectives_en\": [\n      \"Recommend a trial addressing a verified cause, with an owner, resources, deadline, measure and review date, subject to partner agreement.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"compare-solutions\",\n      \"concept_ids\": [\n        \"m7.solutions\"\n      ],\n      \"asset_ids\": [\n        \"action-compare-solutions\"\n      ],\n      \"takeaway_fil\": \"Paghambingin ang solusyon ayon sa sanhi at resources, hindi sa dali lamang ng paggawa.\",\n      \"takeaway_en\": \"Compare solutions against the cause and resources, not convenience alone.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"plan\",\n      \"concept_ids\": [\n        \"m7.recommend\",\n        \"m7.mobilize\"\n      ],\n      \"asset_ids\": [\n        \"action-plan\"\n      ],\n      \"takeaway_fil\": \"Ang rekomendasyon ay nagiging plano kapag may responsable, resources, petsa at sukatan ng resulta.\",\n      \"takeaway_en\": \"A recommendation becomes a plan when it names an owner, resources, date and outcome measure.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"partners\",\n      \"concept_ids\": [\n        \"m7.mobilize\"\n      ],\n      \"asset_ids\": [\n        \"action-partners\"\n      ],\n      \"takeaway_fil\": \"Ang solusyon ay may may-ari at kasosyo; hindi lahat ng gawain ay ibinabagsak sa BHW.\",\n      \"takeaway_en\": \"Solutions need owners and partners; not every task belongs to the BHW.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"review\",\n      \"concept_ids\": [\n        \"m7.recommend\"\n      ],\n      \"asset_ids\": [\n        \"action-review\"\n      ],\n      \"takeaway_fil\": \"Ang review ay pagkakataong baguhin ang palagay at plano gamit ang resulta.\",\n      \"takeaway_en\": \"Review uses results to revise assumptions and the plan.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m7.solutions\",\n        \"m7.recommend\",\n        \"m7.mobilize\"\n      ],\n      \"asset_ids\": [\n        \"action-practice\"\n      ],\n      \"takeaway_fil\": \"Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.\",\n      \"takeaway_en\": \"A plan names who acts and how to tell whether the barrier decreased.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m7.solutions\",\n        \"m7.recommend\",\n        \"m7.mobilize\"\n      ],\n      \"asset_ids\": [\n        \"action-check\"\n      ],\n      \"takeaway_fil\": \"Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.\",\n      \"takeaway_en\": \"A plan names who acts and how to tell whether the barrier decreased.\",\n      \"check\": {\n        \"prompt_fil\": \"Nagawa ang meeting ngunit hindi dumami ang nakarating. Ano ang tamang review?\",\n        \"prompt_en\": \"The meeting happened but attendance did not improve. What review is useful?\",\n        \"options\": [\n          {\n            \"fil\": \"Ituring na tagumpay dahil natapos ang meeting.\",\n            \"en\": \"Declare success because the meeting finished.\"\n          },\n          {\n            \"fil\": \"Ulitin ang parehong plano nang walang bagong tanong.\",\n            \"en\": \"Repeat the same plan without new questions.\"\n          },\n          {\n            \"fil\": \"Balikan ang hadlang at ihambing ang invitations at attendance bago magbago.\",\n            \"en\": \"Recheck barriers and compare invitations with attendance before revising.\"\n          }\n        ],\n        \"correct_option_index\": 2,\n        \"feedback_fil\": \"Una: ang natapos na meeting ay gawain, hindi patunay ng pagtaas ng attendance o pagkawala ng hadlang. Ikalawa: ang pag-uulit nang walang bagong tanong ay maaaring ulitin ang maling palagay; kailangan ang bagong ebidensya. Ikatlo: tama—balikan ang hadlang at ihambing ang invitations at attendance. Bago: 1 sa 3; pagkatapos: 1 sa 3. Dalawa pa rin ang hindi nakapunta. Rebisadong plano ni Carole: sanhi—kumpirmadong trabaho at pag-aalaga, ngunit hindi pa alam ang dahilan ng bawat hindi pagdalo; mungkahi—muling konsultasyon bago magtalakay ng maliit na trial; owner—Carole sa konsultasyon at health team sa desisyon sa schedule; resources—papel at oras, staff time na hinihintay; deadline—pagtalakay sa Biyernes; sukatan—attendance sa inimbitahan at dahilan ng hindi pagdalo; review—Lunes pagkatapos ng napagkasunduang trial. Trial date at ambag ay hinihintay pa sa katuwang. Walang pangako ng pondo o pagkalutas ng buong problema.\",\n        \"feedback_en\": \"First: a completed meeting is an activity, not proof of increased attendance or removal of a barrier. Second: repeating without new questions may repeat a mistaken assumption; new evidence is needed. Third: correct—recheck barriers and compare invitations with attendance. Before: 1 of 3; after: 1 of 3. Two still missed visits. Carole’s revised plan: cause—confirmed work and childcare barriers, but each reason for nonattendance remains unknown; proposal—consult again before discussing a small trial; owner—Carole for consultation and the health team for schedule decisions; resources—paper and time, with staff time pending; deadline—Friday discussion; measure—attendance among those invited and reasons for missing visits; review—Monday after an agreed trial. Trial date and contributions still await partner agreement. No funding or resolution of the whole problem is promised.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m7.solutions\",\n      \"read_ids\": [\n        \"compare-solutions\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-compare-solutions\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m7.recommend\",\n      \"read_ids\": [\n        \"plan\",\n        \"review\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-plan\",\n        \"slide-review\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m7.mobilize\",\n      \"read_ids\": [\n        \"plan\",\n        \"partners\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-plan\",\n        \"slide-partners\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        29\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        19,\n        20,\n        21\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"action-compare-solutions\",\n      \"path\": \"/training/bhw-1-7/carole-action-compare-solutions-1070fb62d278.png\",\n      \"content_hash\": \"1070fb62d278199f79c76d4b272aec5b15a315b265aa359b805608c9d5fd2400\",\n      \"alt_fil\": \"Inihahambing ni Carole ang poster at clock/calendar proposal kasama ang residente.\",\n      \"alt_en\": \"Carole compares a poster and a clock/calendar proposal with a resident.\",\n      \"caption_fil\": \"Inihahambing ni Carole ang poster at clock/calendar proposal kasama ang residente. Kathang-isip na adaptasyon; draft.\",\n      \"caption_en\": \"Carole compares a poster and a clock/calendar proposal with a resident. Fictional adaptation; draft.\",\n      \"provenance\": \"Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"action-plan\",\n      \"path\": \"/training/bhw-1-7/carole-action-plan-889b61e22a25.png\",\n      \"content_hash\": \"889b61e22a25688f29e6a87af09fd4212e215a65a5b1248e01a9390c2ef1f4b4\",\n      \"alt_fil\": \"Pinupunan ni Carole ang pitong-row na plano; hiwalay ang marker ng hinihintay na kasunduan.\",\n      \"alt_en\": \"Carole fills a blank seven-row plan with a separate pending-agreement marker.\",\n      \"caption_fil\": \"Pinupunan ni Carole ang pitong-row na plano; hiwalay ang marker ng hinihintay na kasunduan. Kathang-isip na adaptasyon; draft.\",\n      \"caption_en\": \"Carole fills a blank seven-row plan with a separate pending-agreement marker. Fictional adaptation; draft.\",\n      \"provenance\": \"Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"action-partners\",\n      \"path\": \"/training/bhw-1-7/carole-action-partners-418b249f3645.png\",\n      \"content_hash\": \"418b249f3645c4e8768e21bbbd6c6d84879b3f584891ed368ee3cf5403db8569\",\n      \"alt_fil\": \"Nag-uusap si Carole, midwife at residente sa blank role map.\",\n      \"alt_en\": \"Carole, a midwife and residents consult over a blank role map.\",\n      \"caption_fil\": \"Nag-uusap si Carole, midwife at residente sa blank role map. Kathang-isip na adaptasyon; draft.\",\n      \"caption_en\": \"Carole, a midwife and residents consult over a blank role map. Fictional adaptation; draft.\",\n      \"provenance\": \"Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"action-review\",\n      \"path\": \"/training/bhw-1-7/carole-action-review-ea7dba5253fd.png\",\n      \"content_hash\": \"ea7dba5253fd7eb3db3ff9585c9462d2621fadf7c337cb53cd1963a3c5b143af\",\n      \"alt_fil\": \"Review ni Carole: isa ang filled at dalawa ang outline icons bago at pagkatapos; walang pagtaas.\",\n      \"alt_en\": \"Carole reviews unchanged attendance: one filled and two outline icons before and after.\",\n      \"caption_fil\": \"Review ni Carole: isa ang filled at dalawa ang outline icons bago at pagkatapos; walang pagtaas. Kathang-isip na adaptasyon; draft.\",\n      \"caption_en\": \"Carole reviews unchanged attendance: one filled and two outline icons before and after. Fictional adaptation; draft.\",\n      \"provenance\": \"Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"action-practice\",\n      \"path\": \"/training/bhw-1-7/carole-action-practice-f23b1bb93a16.png\",\n      \"content_hash\": \"f23b1bb93a167f14ef49ec582f473e8c737224c9aa000e93b7cf19a292413734\",\n      \"alt_fil\": \"Nagsasanay si Carole ng rekomendasyon kasama ang katuwang at checklist observer.\",\n      \"alt_en\": \"Carole rehearses a recommendation with partners and a checklist observer.\",\n      \"caption_fil\": \"Nagsasanay si Carole ng rekomendasyon kasama ang katuwang at checklist observer. Kathang-isip na adaptasyon; draft.\",\n      \"caption_en\": \"Carole rehearses a recommendation with partners and a checklist observer. Fictional adaptation; draft.\",\n      \"provenance\": \"Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"action-check\",\n      \"path\": \"/training/bhw-1-7/carole-action-check-83656d4deab1.png\",\n      \"content_hash\": \"83656d4deab1816faaaefecfb38a6251e2a584e7185497fb80b8d993f45bf4e2\",\n      \"alt_fil\": \"Ibinabalik ni Carole ang provisional na pitong-row plano sa katuwang; hiwalay ang pending marker.\",\n      \"alt_en\": \"Carole returns a provisional seven-row plan to partners with a separate pending marker.\",\n      \"caption_fil\": \"Ibinabalik ni Carole ang provisional na pitong-row plano sa katuwang; hiwalay ang pending marker. Kathang-isip na adaptasyon; draft.\",\n      \"caption_en\": \"Carole returns a provisional seven-row plan to partners with a separate pending marker. Fictional adaptation; draft.\",\n      \"provenance\": \"Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"problem-action-plan-story\",\n      \"alt_fil\": \"Anim na beat: inihahambing ni Carole ang solusyon, humihingi ng kasunduan at nirerebisa ang provisional na plano.\",\n      \"alt_en\": \"Six narrated beats: Carole compares solutions, seeks agreement and revises a provisional plan.\",\n      \"caption_fil\": \"Tapat na plano, hiwalay na kasunduan at review ng resulta.\",\n      \"caption_en\": \"An honest plan, separate agreement and outcome review.\",\n      \"provenance\": \"Lesson 1.7.4 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-7/problem-action-plan-gemini-fil-62952a68d610.mp4\",\n          \"content_hash\": \"62952a68d610dd1c63f9e52e2ad05d01b0e20249f7b48e1b75b2c6d7b14452da\",\n          \"duration_s\": 75,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-7/problem-action-plan-gemini-fil-6d84ecc5a6c1.vtt\",\n            \"content_hash\": \"6d84ecc5a6c15b25f4e80b200559eb86bb42beb4d47aa38d83af7ca749cf96aa\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg\",\n            \"content_hash\": \"50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-7/problem-action-plan-gemini-en-8cab3652ce1a.mp4\",\n          \"content_hash\": \"8cab3652ce1a41e1ea028bdf32f79606c2b19305c5cafe9520268b85dceb4e3a\",\n          \"duration_s\": 70,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-7/problem-action-plan-gemini-en-f6f022e72fd5.vtt\",\n            \"content_hash\": \"f6f022e72fd5634d591cbe1fe8d61294e4228b3fc5b1718b698a83083498723c\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-7/problem-action-plan-encoded-final-en-658845c576fb.jpg\",\n            \"content_hash\": \"658845c576fb6a15c4c7730f29415e8327da89bb7e6b0d8b818408f775bbe70d\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg\",\n      \"content_hash\": \"50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be\"\n    }\n  ],\n  \"featured_asset_id\": \"problem-action-plan-story\"\n}\n",
+  "reviewed_lesson_sha256": "3fb6c8dadf1e7796e382bc5a9155194fff28dd19e1175a52d0e5cbe277c96f81",
+  "reviewed_proposal_receipt_sha256": "89d59e960367f6ee49e95fcb956674039cbb7c81df69e572d752203dd1b023dc",
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json": "ca4dcc30ca64c0e06fd38abdda184be5ef92038de802dd096ff33cfe06f75263",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/read.fil.md": "802f0080495392ca99d1efde2630c81f8ae64fbefa39cd5162d80d5d53f46001",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/read.en.md": "0f15b2fd31bec7bd8cd75a5cac6c8eab8b121d13019ca629831059ef26d9a12d",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/slides.json": "c68a482d378633d208de773dd2c27c9c91b18c7550b4a46151f080e8e400ceec",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/competency.json": "8948d0f54292d007ee43147c2a2c03b2b271a53804743abf7705d79bc845d282",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/facilitator.fil.md": "700ec0233f5701633592dc1050e4181fb878cdf6992f094fb609fc655f6f83e6",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/facilitator.en.md": "d0a4c563b9bac5adaf1b115054d737c16417637e1d6e2bb74dcd1f6c2cf9d02f",
+    "src/components/elearning/reference-lessons.tsx": "12df99c3ea96410646fdbfa73d194995ebe04cb3b017752552661eea6814d5ff",
+    "remotion/src/Root.tsx": "6adfe9da6a63ac8fcaa5d7f584d814fc7c2d7e3be74c2ae8f3cf94259d604992",
+    "content/training/day1-basic-competencies/narration.json": "889021e191f826b84e22f9295f916711d5c1a4c34fc30f0062ead6c0e40b60af",
+    ".github/workflows/lesson174-release.yml": "766095c66a2f83859b70cee60c04ff093ed08100f394ef909293d4a47fed5227",
+    "scripts/lesson-174-release-check.mjs": "72fdfc0cfe8fe177424224c1efa172a23faa3eb92b027fe05578a18071581a77",
+    "scripts/lesson-174-release-snapshot.mjs": "e6a0be6d139f6203e2275b5de09738c8086cb5b107709ca0d5bd7a570cfd7d58",
+    "scripts/lesson-174-live-smoke.mjs": "8ae1b590c5dbc19ef62f397a38def0f302e361d225f278547ee326a967538c8a"
+  },
+  "approved_media": [
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/compare-solutions.fil.ba8873ecfcad.mp3",
+      "sha256": "fe3db69734656b768e46a9433853133e4cfffa7e7fbd6a4eccb53d8d13720ac0",
+      "bytes": 374700
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/plan.fil.9a1a63e94986.mp3",
+      "sha256": "3ce32b18ecbfd13591e28df66e6d0a55be1689ae2333a962607b72771bc6160b",
+      "bytes": 449515
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/partners.fil.3e9f6b0867e4.mp3",
+      "sha256": "1d2eb8b90dab597a9ee916484201961cac83b129323c81c84b1244f6bff06bc7",
+      "bytes": 377313
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/review.fil.7aadd81f6af2.mp3",
+      "sha256": "9d936336d356fb01121fcd76f781124bf3daeda691259e06ea701c59ff6f3fdc",
+      "bytes": 444813
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/practice.fil.23b7c9c4433a.mp3",
+      "sha256": "bbd3b08ef507bf0c20cc4f9ee2640f2204852fa4ec77b36896fa7527fda073de",
+      "bytes": 432588
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/check.fil.d286ddd491e3.mp3",
+      "sha256": "3240037c89ab3e21876142a1ce4f1dbc2fa847b5f841a407aa53d8d1cbafb215",
+      "bytes": 200934
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/compare-solutions.en.5d650e056708.mp3",
+      "sha256": "775583484b7ec87d74add2497f057e3aeb2e7ce6456b0288f1b4d7b589cc7d37",
+      "bytes": 344294
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/plan.en.42148ea9a5f9.mp3",
+      "sha256": "cf1379df17e92d15c8827f893182e6bb59e0e0ec689002318a309770b9fd8d5d",
+      "bytes": 389538
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/partners.en.06683fa04ca3.mp3",
+      "sha256": "579c7a99be5c41a54c548c1cd0a3735cac7db80079a29a68bd55f2391af67f93",
+      "bytes": 342727
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/review.en.f4049c158e6a.mp3",
+      "sha256": "bd041f89cd5a0523c906211fdca882585f157488427d74a05781939eb77975c7",
+      "bytes": 396957
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/practice.en.3b3f692e1201.mp3",
+      "sha256": "fe79c20fed818ed14ac66d4d3625a3ba6bcf1002a90e74bffd235334ee7b1f36",
+      "bytes": 393091
+    },
+    {
+      "path": "/training/audio/07-problema/problem-action-plan/check.en.a021c19df393.mp3",
+      "sha256": "2745ead4bebef13266095d99e3a5df6e44511461f32d4fbfe3e5b155446e895e",
+      "bytes": 182753
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-compare-solutions-1070fb62d278.png",
+      "sha256": "1070fb62d278199f79c76d4b272aec5b15a315b265aa359b805608c9d5fd2400",
+      "bytes": 2299716
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-plan-889b61e22a25.png",
+      "sha256": "889b61e22a25688f29e6a87af09fd4212e215a65a5b1248e01a9390c2ef1f4b4",
+      "bytes": 2048338
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-partners-418b249f3645.png",
+      "sha256": "418b249f3645c4e8768e21bbbd6c6d84879b3f584891ed368ee3cf5403db8569",
+      "bytes": 2382509
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-review-ea7dba5253fd.png",
+      "sha256": "ea7dba5253fd7eb3db3ff9585c9462d2621fadf7c337cb53cd1963a3c5b143af",
+      "bytes": 2068762
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-practice-f23b1bb93a16.png",
+      "sha256": "f23b1bb93a167f14ef49ec582f473e8c737224c9aa000e93b7cf19a292413734",
+      "bytes": 2074586
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-check-83656d4deab1.png",
+      "sha256": "83656d4deab1816faaaefecfb38a6251e2a584e7185497fb80b8d993f45bf4e2",
+      "bytes": 2053230
+    },
+    {
+      "path": "/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg",
+      "sha256": "50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be",
+      "bytes": 56013
+    },
+    {
+      "path": "/training/bhw-1-7/problem-action-plan-gemini-fil-62952a68d610.mp4",
+      "sha256": "62952a68d610dd1c63f9e52e2ad05d01b0e20249f7b48e1b75b2c6d7b14452da",
+      "bytes": 1098255
+    },
+    {
+      "path": "/training/bhw-1-7/problem-action-plan-gemini-fil-6d84ecc5a6c1.vtt",
+      "sha256": "6d84ecc5a6c15b25f4e80b200559eb86bb42beb4d47aa38d83af7ca749cf96aa",
+      "bytes": 1131
+    },
+    {
+      "path": "/training/bhw-1-7/problem-action-plan-gemini-en-8cab3652ce1a.mp4",
+      "sha256": "8cab3652ce1a41e1ea028bdf32f79606c2b19305c5cafe9520268b85dceb4e3a",
+      "bytes": 1009757
+    },
+    {
+      "path": "/training/bhw-1-7/problem-action-plan-encoded-final-en-658845c576fb.jpg",
+      "sha256": "658845c576fb6a15c4c7730f29415e8327da89bb7e6b0d8b818408f775bbe70d",
+      "bytes": 55927
+    },
+    {
+      "path": "/training/bhw-1-7/problem-action-plan-gemini-en-f6f022e72fd5.vtt",
+      "sha256": "f6f022e72fd5634d591cbe1fe8d61294e4228b3fc5b1718b698a83083498723c",
+      "bytes": 1072
+    }
+  ],
+  "scope": "Publish only problem-action-plan. Seven draft assets become approved; teaching and all 24 media bytes remain reviewed bytes. Integrate released main lesson 1.7.2 without changing it.",
+  "known_CI_exception": "Owner authorized release after disclosure: global narration freshness guard fails for exactly 12 missing problem-prioritize (1.7.3) tracks. Retain guard and require every other test to pass.",
+  "human_review_status": "Owner authorized release of the disclosed diagnostic package. Independent human listening and local-policy SME completion were not verified; prior voice/timbre and poster/toaster concerns remain documented."
+}

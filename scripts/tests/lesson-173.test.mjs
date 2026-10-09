@@ -1,3 +1,4 @@
+import {release172View} from '../lib/lesson-172-release-integration.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';import {createHash} from 'node:crypto';
@@ -17,7 +18,7 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
   const current=j(leaf+'lesson.json'),prior=JSON.parse(reviewed173(leaf+'lesson.json'));let count=0;
   for(const [i,asset]of current.assets.entries()){expect(asset.review_status).toBe('approved');expect(prior.assets[i].review_status).toBe('draft');asset.review_status=prior.assets[i].review_status;count++;}
   expect(count).toBe(6);expect(current).toEqual(prior);
-  for(const [p,h]of Object.entries(a.integrated_source_sha256))expect(sha(beforeProposed174(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(a.integrated_source_sha256))expect(sha(release172View(p,"approvedMain",beforeProposed174(p))),p).toBe(h);
   expect(()=>reviewed173(leaf+'lesson.json',Buffer.from('changed'))).toThrow('Unpinned');
  });
  it('preserves identity, objectives, original ordered anchors and tie choices',()=>{

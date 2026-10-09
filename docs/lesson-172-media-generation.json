@@ -1,0 +1,151 @@
+{
+  "generated_date": "2026-10-09T02:51:28.692Z",
+  "source_commit": "cad3870d2c4089e63ba87ded4c69997939f06b10",
+  "owner_review": "pending",
+  "render_input_sha256": "94b82c0a21267187a4cfa9fb15720ba076f5c07d836e76c66bd52f7cc3fafb79",
+  "render_cached": true,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 68.885,
+      "beats": [
+        {
+          "zone": "whys",
+          "index": 0,
+          "text": "Si Carole ay nakikinig sa tatlong kathang-isip na pamilya. Sinabi ang hadlang sa childcare at pamasahe; hindi pa patunay ang mga sanhi.",
+          "start_ms": 0,
+          "end_ms": 9800
+        },
+        {
+          "zone": "manual-example",
+          "index": 1,
+          "text": "Sa halimbawa ng DOH manual, magkakaugnay ang tubig, impormasyon at training. Para ito sa pagsusuri ng sistema, hindi paggamot o sanhi ng bawat pagkamatay.",
+          "start_ms": 10100,
+          "end_ms": 23660
+        },
+        {
+          "zone": "rosario",
+          "index": 2,
+          "text": "Si Rosario sa ZFF case ay batang isang taon at apat na buwan. Ihiwalay ang kapaligiran, kabuhayan at serbisyo; huwag sisihin ang ina lamang.",
+          "start_ms": 23960,
+          "end_ms": 34720
+        },
+        {
+          "zone": "verify-branch",
+          "index": 3,
+          "text": "Isang oras ang natanggap ayon sa residente; dalawa sa practice schedule. Inalis ni Carole ang maling arrow. Hindi pa alam kung bakit isa lamang ang natanggap.",
+          "start_ms": 35020,
+          "end_ms": 45140
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Gumawa ng dalawang sangay, tukuyin ang pinagmulan at beripikasyon. Ituro ang arrow na walang suporta, baguhin at ulitin. Hindi marka ang peer feedback.",
+          "start_ms": 45440,
+          "end_ms": 56960
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Sa wakas, may dalawang sangay na may batayan o tapat na hindi pa tiyak. Suriin ang childcare at pamasahe kasama ang residente at staff. Hindi patunay ang limang tanong.",
+          "start_ms": 57260,
+          "end_ms": 68820
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-7/problem-causes-gemini-fil-54c1fffffd47.mp4",
+        "content_hash": "54c1fffffd4767d87f4f19f6925cd412fa2201fdc097222ab87383b4cbee0df5",
+        "duration_s": 70,
+        "captions": {
+          "path": "/training/bhw-1-7/problem-causes-gemini-fil-b6ee07161627.vtt",
+          "content_hash": "b6ee07161627993535d258e476ff9c8c882013cb4a786d1025555c913ac53944"
+        },
+        "poster": {
+          "path": "/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg",
+          "content_hash": "940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg",
+        "content_hash": "940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956"
+      },
+      "render_reused_exact_input_hash": true
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 65.437,
+      "beats": [
+        {
+          "zone": "whys",
+          "index": 0,
+          "text": "Carole listens to three fictional households. Childcare and fare barriers are reported; the causes are not yet proven.",
+          "start_ms": 0,
+          "end_ms": 8400
+        },
+        {
+          "zone": "manual-example",
+          "index": 1,
+          "text": "The DOH manual example links water, information and training. It teaches systems analysis, not treatment or the cause of every death.",
+          "start_ms": 8700,
+          "end_ms": 19620
+        },
+        {
+          "zone": "rosario",
+          "index": 2,
+          "text": "Rosario in the ZFF case is a child aged one year and four months. Separate environment, livelihood and services; do not blame only the mother.",
+          "start_ms": 19920,
+          "end_ms": 30560
+        },
+        {
+          "zone": "verify-branch",
+          "index": 3,
+          "text": "The resident reports receiving one time; the practice schedule shows two. Carole removes the wrong arrow. Why only one was received remains unknown.",
+          "start_ms": 30860,
+          "end_ms": 41300
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Build two branches with sources and verification steps. Identify an unsupported arrow, correct it and retry. Peer feedback is not an assessment.",
+          "start_ms": 41600,
+          "end_ms": 52800
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "In the ending, two branches contain evidence or honest uncertainty. Check childcare and fare with residents and staff. Five questions are not proof.",
+          "start_ms": 53100,
+          "end_ms": 65380
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-7/problem-causes-gemini-en-9cb2c860e10c.mp4",
+        "content_hash": "9cb2c860e10c35adb686efd31bb512bbcb01609ae992240d7366739a0db067ea",
+        "duration_s": 67,
+        "captions": {
+          "path": "/training/bhw-1-7/problem-causes-gemini-en-45daeb498e0c.vtt",
+          "content_hash": "45daeb498e0ce1e66ad01863b0137ad30a468f5e49f11886e5b22b270d7681c4"
+        },
+        "poster": {
+          "path": "/training/bhw-1-7/problem-causes-gemini-en-73b77f9edd97-poster.jpg",
+          "content_hash": "73b77f9edd97cfe4b47c0b836a9acf8f126c4282a1f01c9d3dfeac91be21ad18"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-7/problem-causes-gemini-en-73b77f9edd97-poster.jpg",
+        "content_hash": "73b77f9edd97cfe4b47c0b836a9acf8f126c4282a1f01c9d3dfeac91be21ad18"
+      },
+      "render_reused_exact_input_hash": true
+    }
+  ]
+}

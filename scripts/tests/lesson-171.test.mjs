@@ -1,4 +1,3 @@
-import {beforeProposed174} from '../lib/lesson-174-proposal.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {beforeProposed171,reviewed171} from '../lib/lesson-171-integration.mjs';
@@ -33,6 +32,6 @@ describe('Carole lesson 1.7.1 scoped draft',()=>{
   for(const [key,value]of Object.entries(prior))expect(current[key],key).toEqual(key.startsWith('summary')&&typeof value==='string'?value.replaceAll('Nestor','Carole'):value);
  });
  it('appends exactly the target registry pair without changing the preceding registry bytes',()=>{
-  const now=beforeProposed174('remotion/src/Root.tsx').toString(),prior=beforeProposed171('remotion/src/Root.tsx').toString();expect(now.replace(/^import \{ProblemDefineStory[^\n]+\n/,'').replace(/    \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`problem-define-[\s\S]*?      \)\)\}\n/,'')).toBe(prior);expect(now).toContain('ProblemDefineStoryFil');expect(now).toContain('ProblemDefineStoryEn');
+  const now=reviewed171('remotion/src/Root.tsx').toString(),prior=beforeProposed171('remotion/src/Root.tsx').toString();expect(now.replace(/^import \{ProblemDefineStory[^\n]+\n/,'').replace(/    \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`problem-define-[\s\S]*?      \)\)\}\n/,'')).toBe(prior);expect(now).toContain('ProblemDefineStoryFil');expect(now).toContain('ProblemDefineStoryEn');
  });
 });

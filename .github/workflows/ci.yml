@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # Check this draft's exact head; other branches keep their standard checkout.
-          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff') && github.event.pull_request.head.sha || github.sha }}
+          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-172-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff') && github.event.pull_request.head.sha || github.sha }}
       - id: diff
         env:
           # pull_request checks out the PR's merge commit, whose first parent
@@ -69,7 +69,7 @@ jobs:
           # The action-plan guard compares against its pinned approved-main commit.
           fetch-depth: ${{ (github.head_ref == 'codex/lesson-174-carole-handoff' || github.ref_name == 'codex/lesson-174-carole-handoff') && '0' || '1' }}
           # Check this draft's exact head; other branches keep their standard checkout.
-          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff') && github.event.pull_request.head.sha || github.sha }}
+          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-172-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff') && github.event.pull_request.head.sha || github.sha }}
 
       - uses: actions/setup-node@v4
         with:
@@ -141,7 +141,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # Check this draft's exact head; other branches keep their standard checkout.
-          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff') && github.event.pull_request.head.sha || github.sha }}
+          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-172-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff') && github.event.pull_request.head.sha || github.sha }}
 
       - uses: actions/setup-node@v4
         with:

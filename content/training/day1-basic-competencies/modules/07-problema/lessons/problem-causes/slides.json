@@ -7,10 +7,14 @@
     "layout": "process",
     "heading_fil": "Bawat bakit, may batayan",
     "heading_en": "Every why needs evidence",
-    "display_fil": "Walang childcare → sabay sa trabaho → iisang oras ang naipaalam → hindi pa natanong ang availability. Posibleng sanhi ang bawat arrow: beripikahin. Gumawa ng hiwalay na sangay para sa ibang hadlang.",
-    "display_en": "No childcare → conflicts with work → only one time communicated → availability not checked. Each arrow is a possible explanation: verify it. Use separate branches for other barriers.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Carole: dalawang posibleng sangay, pinagmulan sa bawat arrow; sinabi / natiyak / susuriin. Hindi patunay ang limang tanong.",
+    "display_en": "Carole: two possible branches, a source for each arrow; reported / verified / to check. Five questions are not proof.",
+    "asset_ids": [
+      "carole-causes-whys"
+    ],
+    "check": null,
+    "narration_fil": "Si Carole, isang BHW sa kathang-isip na pagsasanay, ay nagtatanong tungkol sa hindi pagpunta ng tatlong pamilya sa nakatakdang pagbisita. Hindi pa alam ang dahilan ng bawat pamilya. Nakikinig siya sa mga residente at health-center staff bago magmungkahi. Hindi datos ng barangay ang bilang na ito.\n\nSinabi ng residente sa card A: “Wala akong magbabantay sa anak sa oras na iyon.” Sa card B: “Hindi sapat ang pamasahe ko noong araw na iyon.” Sa card C, wala pang sagot. Gumawa ng dalawang posibleng sangay: pag-aalaga sa anak/oras at gastos sa biyahe. Huwag ipalagay na pareho ang sanhi sa lahat ng pamilya. Ang sinabi ay ulat ng tao, hindi pa patunay sa bawat arrow.\n\nTanungin: “Ano ang nangyari bago iyon? Sino ang makapagpapaliwanag o anong awtorisadong rekord ang makatutulong?” Posibleng paliwanag ang sabay sa trabaho, iisang oras na naipabatid at hindi pa nasuring oras ng pamilya; kailangan pa itong suriin. Sa bawat arrow, ilagay ang pinagmulan at markang sinabi, natiyak o susuriin. Huwag gawing patunay ang eksaktong limang bakit. Huminto kapag sapat ang ebidensya para sa makatuwirang susunod na pagsusuri; panatilihing bukas ang ibang sangay.",
+    "narration_en": "Carole, a BHW in a fictional classroom exercise, asks about missed visits by three households. Each household’s reason is not yet known. She listens to residents and health-center staff before recommending changes. This count is not barangay data.\n\nThe resident on card A says: “I had no one to look after my child at that time.” Card B says: “I did not have enough fare that day.” Card C has no reply yet. Draw two possible branches: childcare/timing and travel costs. Do not assume the same cause for every household. A person’s statement is a report, not proof of every arrow.\n\nAsk: “What happened before that? Who could explain it, or what authorized record could help?” Work overlap, one communicated time and household availability not checked are possible explanations still to investigate. Label each arrow with its source and reported, verified or to check. Exactly five questions are not proof. Stop when there is enough evidence for a proportionate next check; keep alternative branches open."
   },
   {
     "id": "slide-manual-example",
@@ -22,8 +26,12 @@
     "heading_en": "The manual’s diarrhoea example",
     "display_fil": "Sinusuri sa halimbawa ng manwal ang pagkamatay ng batang nagtatae: ligtas na tubig, pagtuturo at training gaps. Hindi iisang dahilan ang lahat ng pagkamatay. Suriin din ang kita, transportasyon at serbisyo.",
     "display_en": "The manual’s child-diarrhoea example examines safe water, education and training gaps. Deaths do not all have one cause. Investigate income, transport and service barriers too.",
-    "asset_ids": [],
-    "check": null
+    "asset_ids": [
+      "carole-causes-manual-example"
+    ],
+    "check": null,
+    "narration_fil": "Sa DOH Reference Manual, sinusundan ng mga bakit ang halimbawa ng batang namatay na may pagtatae. Iniuugnay ng worked example ang tubig, impormasyon at puwang sa BHW training. Sa halimbawang talahanayan ng deck, nauuna ang kakulangan sa BHW training at pagtuturo ng wastong paghahanda ng inuming tubig. Mga halimbawa ito sa pinagkunan, hindi natiyak na dahilan ng lahat ng pagkamatay.\n\nIpakita ang magkakaugnay na tubig, kita, transportasyon, impormasyon at access sa serbisyo. Sa bawat arrow, itanong kung anong bahagi ng pinagkunan ang sumusuporta rito at alin ang kailangan pang suriin sa totoong lugar. Hindi patunay na kulang sa kaalaman ang isang magulang dahil may sakit ang bata. Huwag sisihin ang pamilya o ituring na sapat ang lecture bago alamin ang hadlang.\n\nHiwalay ang makasaysayang halimbawa sa kathang-isip na pagbisita ni Carole. Para ito sa pagsusuri ng sistema; hindi ito gabay sa diagnosis, gamot o paggamot. Hindi inaangkin ng aralin na training ang sanhi ng bawat pagkamatay o na may aprubadong lokal na solusyon.",
+    "narration_en": "The DOH Reference Manual follows whys through an example of a child who died with diarrhoea. Its worked example connects water, information and gaps in BHW training. The deck’s example table places BHW training and education on preparing drinking water first. These are source examples, not verified causes of every death.\n\nShow interacting water, income, transport, information and access to services. For each arrow, ask which source passage supports it and what still needs local investigation. A child’s illness does not prove that a parent lacks knowledge. Do not blame the family or assume a lecture is sufficient before investigating barriers.\n\nThis historical example is separate from Carole’s fictional missed visits. It teaches systems analysis, not diagnosis, medicines or treatment. The lesson does not claim that training causes every death or that a local solution has been approved."
   },
   {
     "id": "slide-rosario",
@@ -35,8 +43,29 @@
     "heading_en": "Rosario is a child",
     "display_fil": "Si Rosario ay isang taon at apat na buwan. Sa makasaysayang kaso, magkakaugnay ang tigdas, pagtatae, dehydration, malnutrisyon at hadlang sa serbisyo. Ihiwalay ang sangay ng kapaligiran, kabuhayan at serbisyo; huwag sisihin ang ina.",
     "display_en": "Rosario is one year and four months old. The historical case connects measles, diarrhoea, dehydration, malnutrition and access barriers. Map environment, livelihood and services separately; do not blame the mother.",
-    "asset_ids": [],
-    "check": null
+    "asset_ids": [
+      "carole-causes-rosario"
+    ],
+    "check": null,
+    "narration_fil": "Sa case study ng Zuellig Family Foundation, si Rosario ay batang isang taon at apat na buwan. Hindi siya ang ina at hindi siya si Carole. Ang pagkamatay niya ay iniuugnay sa tigdas na may pagtatae, dehydration at malnutrisyon sa konteksto ng maruming kapaligiran, kakulangan sa kita, maling impormasyon at hadlang sa serbisyo.\n\nGumuhit ng magkakahiwalay na sangay para sa kapaligiran, kabuhayan at serbisyong pangkalusugan. Ang kuwento ay naglalarawan ng hadlang sa tubig, kita ng pamilya at kakulangan sa serbisyo. Iugnay ang bawat arrow sa mismong salaysay; huwag idagdag ang motibo ng ina na wala sa pinagkunan. Magkakaugnay ang mga hadlang: hindi makatwirang sisihin ang ina lamang.\n\nCause-analysis diagram ang gawain sa ZFF workbook; ang Five Whys ay paglalapat ng DOH Facilitator Guide, hindi pamamaraang inaangkin ng workbook. Panatilihing hiwalay ito sa tatlong kathang-isip na pamilya. Huwag gawing kasalukuyang payong medikal ang mga gamot o hakbang sa lumang kuwento.",
+    "narration_en": "In the Zuellig Family Foundation case study, Rosario is a child aged one year and four months. She is not the mother or Carole. Her death is linked to measles with diarrhoea, dehydration and malnutrition amid an unsafe environment, low income, misinformation and barriers to services.\n\nDraw separate environment, livelihood and health-service branches. The account describes barriers involving water, household income and gaps in services. Attribute each arrow to the account; do not add a mother’s motive absent from the source. The barriers interact: blaming the mother alone is not reasonable.\n\nThe ZFF workbook uses a cause-analysis diagram; Five Whys is the DOH Facilitator Guide’s application, not a method claimed by the workbook. Keep the case separate from the three fictional households. Do not turn medicines or actions in the historical narrative into current medical advice."
+  },
+  {
+    "id": "slide-verify-branch",
+    "concept_ids": [
+      "m7.whys"
+    ],
+    "layout": "process",
+    "asset_ids": [
+      "carole-causes-verify-branch"
+    ],
+    "check": null,
+    "heading_fil": "Suriin at itama ang isang sangay",
+    "heading_en": "Verify and correct a branch",
+    "narration_fil": "Sa unang map ni Carole, may arrow na “iisang oras lamang ang inialok → hindi nakapunta.” Susuriin pa ito. Tinanong niya ang residente sa card A: “Ano ang natanggap mong mensahe?” Sagot: “Isang oras ang natanggap ko; hindi ko alam kung may ibang oras.” Hindi nito pinatutunayang iisa lamang ang inialok ng center.\n\nSa kathang-isip na staff card, ipinakita ng awtorisadong staff ang practice schedule: may dalawang oras na inialok. Walang tunay na rekord o identifier sa card. Itinama ni Carole ang map: “dalawang oras sa practice schedule — natiyak sa card; isang oras na natanggap — sinabi ng residente; bakit iyon lamang ang natanggap — susuriin.” Inalis ang arrow na nagsasabing iisa lamang ang inialok. Sinabi ng residente: “Iyan ang ibig kong sabihin tungkol sa mensahe.” Ang pagkumpirma sa sariling sinabi ay hindi pagkumpirma sa dahilan ng lahat.\n\nBukas pa rin ang sangay ng pamasahe. Kausapin ang residente sa card B tungkol sa gastos noong araw na iyon; hindi nagbibigay ng sagot ang schedule card. Para sa totoong gawain, itakda ang angkop na tao o awtorisadong rekord ayon sa lokal na access procedure at kunin lamang ang kailangang impormasyon. Huwag mangako ng ganap na lihim, bagong iskedyul o serbisyo. May dalawang sangay pa rin, may pinagmulan at malinaw na hindi pa alam.",
+    "narration_en": "Carole’s first map has an arrow: “only one time offered → missed visit.” It is still to check. She asks the resident on card A: “What message did you receive?” The reply is: “I received one time; I do not know whether there were others.” This does not establish that the center offered only one time.\n\nOn the fictional staff card, authorized staff show a practice schedule with two offered times. The card contains no real record or identifier. Carole corrects the map: “two times on the practice schedule — verified in the card; one time received — reported by the resident; why only that time was received — to check.” She removes the arrow claiming that only one time was offered. The resident says: “That is what I meant about the message.” Confirming her own statement does not confirm everyone’s cause.\n\nThe fare branch remains open. Ask the resident on card B about costs that day; the schedule card cannot answer it. In real work, choose an appropriate person or authorized record under local access procedures and obtain only necessary information. Do not promise absolute secrecy, a new schedule or a service. Two branches remain, with sources and honest unknowns.",
+    "display_fil": "Inalis ang “iisang oras lamang ang inialok.” Dalawa sa practice schedule; isa ang natanggap ayon sa residente. Bakit? Susuriin pa. Bukas ang pamasahe.",
+    "display_en": "Remove “only one time offered.” Two on the practice schedule; one received according to the resident. Why? Still to check. Fare remains open."
   },
   {
     "id": "slide-practice",
@@ -50,8 +79,12 @@
     "heading_en": "Try it, then repeat",
     "display_fil": "Dalawang sangay → markahan ang ebidensya → tukuyin ang kausap o rekord → baguhin ang map kapag may bagong impormasyon.",
     "display_en": "Two branches → label evidence → identify a person or record → revise the map when information changes.",
-    "asset_ids": [],
-    "check": null
+    "asset_ids": [
+      "carole-causes-practice"
+    ],
+    "check": null,
+    "narration_fil": "Ilagay ang hindi pagpunta sa gitna ng papel. Gumawa ng dalawang posibleng sangay gamit ang cards A at B: pag-aalaga sa anak/oras at pamasahe. Card C ay hindi pa nasasagot. Sa bawat arrow, isulat ang pinagmulan, sinabi/natiyak/susuriin at isang taong kakausapin o awtorisadong rekord na makatutulong. Huwag gumawa ng sagot para sa card C.\n\nSa triad, gumanap na BHW, residente o staff, at observer. Bawat round: dalawang minutong unang map at tanong, isang minutong tiyak na puna, dalawang minutong pagwawasto at pag-ulit, isang minutong pagtatala at pagpalit ng papel. Tatlong round sa 18 minuto upang lahat ay makapag-BHW. Sa staff card lamang natiyak na may dalawang oras sa practice schedule; hindi pa natiyak kung bakit isang oras lamang ang natanggap.\n\nIturo ng observer ang isang arrow na walang suporta. Itanong ng BHW ang kulang, alisin o markahang susuriin ang arrow at panatilihing bukas ang ibang paliwanag. Ang puna ng kapareha ay pagsasanay, hindi marka ng facilitator. Kung mag-isa, gumuhit gamit ang cards, bilugan ang kulang, isulat ang tanong, basahin ang correction card at baguhin ang map. Kailangan pa ang direktang obserbasyon sa ibang pagkakataon; hindi kapalit ang panonood o pagpindot sa check.",
+    "narration_en": "Put the missed visit at the center of a page. Draw two possible branches from cards A and B: childcare/timing and fare. Card C has no reply. For each arrow, write the source, reported/verified/to check and a person or authorized record that could help. Do not invent a reply for card C.\n\nIn a triad, play BHW, resident or staff, and observer. Each round takes two minutes for the first map and question, one for specific feedback, two for correction and retry, and one for recording and changing roles. Three rounds take 18 minutes so everyone plays BHW. Only the staff card verifies two times on the practice schedule; why one time was received is still unknown.\n\nThe observer points out one unsupported arrow. The BHW asks about the gap, removes or labels the arrow to check and keeps another explanation open. Peer feedback is practice, not a facilitator grade. Alone, draw using the cards, circle a gap, write the question, read the correction card and revise. Arrange later direct observation; watching or clicking the check cannot replace it."
   },
   {
     "id": "slide-check",
@@ -65,7 +98,9 @@
     "heading_en": "Choose the next step",
     "display_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
     "display_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
-    "asset_ids": [],
+    "asset_ids": [
+      "carole-causes-check"
+    ],
     "check": {
       "prompt_fil": "Sa ikalimang “bakit,” sinabi ng grupo na kulang sa kaalaman ang ina. Ano ang susunod?",
       "prompt_en": "At the fifth “why,” the group says the mother lacks knowledge. What next?",
@@ -84,8 +119,10 @@
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "Ang ikalawang sagot ay sumusubok sa paliwanag bago kumilos. Hindi patunay ang bilang ng tanong. Ang lecture ay maaaring hindi tumugon sa transportasyon, kita o kakulangan sa serbisyo.",
-      "feedback_en": "The second response tests the explanation before acting. The question count is not proof. A lecture may miss transport, income or service gaps."
-    }
+      "feedback_fil": "Una: hindi patunay ang limang tanong; huwag itigil ang pagsusuri dahil sa bilang. Ikalawa: suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team bago kumilos. Ikatlo: maaaring hindi tugma ang lecture sa pamasahe, kita o access sa serbisyo. Sa kathang-isip na wakas, itinama ni Carole ang arrow: may dalawang oras sa practice schedule, ngunit isang oras lamang ang natanggap ayon sa residente. Hindi pa alam kung bakit. Sinabi ang hadlang sa childcare at pamasahe; kailangan pang suriin ang mga sanhi. Dalawang sangay na may pinagmulan at hakbang sa beripikasyon ang map, hindi isang taong sinisisi.",
+      "feedback_en": "First: five questions are not proof; do not stop investigating because of the count. Second: check the evidence and other barriers with the family and health team before acting. Third: a lecture may not address fare, income or access to services. In the fictional ending, Carole corrects the arrow: the practice schedule contains two times, but the resident reports receiving only one. Why remains unknown. Childcare and fare barriers are reported; their causes still need investigation. The map contains two attributed branches with verification steps, not one blamed person."
+    },
+    "narration_fil": "Tingnan muna ang larawan ng pag-uusap sa inayos na map. Sa dilemma, sinabi ng grupo sa ikalimang bakit na kulang sa kaalaman ang ina. Piliin ang susunod na hakbang at ipaliwanag kung bakit bago tingnan ang feedback.\n\nPagkatapos pumili, ihambing ang lahat ng tatlong paliwanag at ang inayos na wakas sa sarili mong map. Dapat may dalawang sangay na may batayan o tapat na hindi pa tiyak, at angkop na hakbang sa pagberipika. Hindi diagnosis, appointment o pangako ng serbisyo ang gawain. Ang check ay pagninilay; ang direktang naobserbahang map, pagwawasto at pag-ulit ang ebidensya sa kasanayan.",
+    "narration_en": "First look at the illustration of the discussion around the corrected map. In the dilemma, the group says at the fifth why that the mother lacks knowledge. Choose the next step and explain your reason before reading feedback.\n\nAfter choosing, compare all three explanations and the corrected ending with your map. It should contain two branches with evidence or honest uncertainty and proportionate verification steps. This task is not diagnosis, an appointment or a service promise. The check supports reflection; the directly observed map, correction and retry provide competency evidence."
   }
 ]

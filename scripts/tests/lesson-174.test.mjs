@@ -4,10 +4,10 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
-import {beforeProposed174} from '../lib/lesson-174-proposal.mjs';
+import {beforeProposed174,reviewed174} from '../lib/lesson-174-proposal.mjs';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 const leaf='content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/';
-const bytes=p=>fs.readFileSync(p),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
+const bytes=p=>reviewed174(p,fs.readFileSync(p)),j=p=>JSON.parse(bytes(p)),sha=b=>createHash('sha256').update(b).digest('hex');
 const baseline=j('docs/lesson-174-handoff-baseline.json'),captured=j('docs/lesson-174-implementation-baseline.json');
 const lesson=j(leaf+'lesson.json');
 describe('Carole action-plan draft',()=>{
@@ -41,11 +41,11 @@ describe('Carole action-plan draft',()=>{
   for(const [p,h]of Object.entries(j('docs/lesson-174-integrated-baseline.json').files))if(!allowed.has(p))expect(sha(bytes(p)),p).toBe(h);
  },30000);
  it('uses strict exact successor guards before historical views',()=>{
-  const r=j('docs/lesson-174-proposal-receipt.json');
+  const r=j('docs/lesson-174-proposal-receipt.json'),base=j('docs/lesson-174-integrated-baseline.json').base_commit;
   for(const [p,e]of Object.entries(r.changed_existing_files)){
    expect(sha(bytes(p))).toBe(e.proposed_sha256);
    expect(sha(beforeProposed174(p))).toBe(e.predecessor_sha256);
-   expect(beforeProposed174(p)).toEqual(execFileSync('git',['show',j('docs/lesson-174-integrated-baseline.json').base_commit+':'+p],{maxBuffer:32*1024*1024}));
+   expect(beforeProposed174(p)).toEqual(execFileSync('git',['show',base+':'+p],{maxBuffer:32*1024*1024}));
    expect(()=>beforeProposed174(p,Buffer.from('changed'))).toThrow('Unpinned');
   }
   expect(r.owner_release_approval).toBe(false);

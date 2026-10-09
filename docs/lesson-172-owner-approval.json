@@ -1,0 +1,135 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "interpreted_authorization": "merge and deploy to live",
+  "approved_at": "2026-10-09T07:14:29.920270+00:00",
+  "reviewed_head": "587d2cfbe6e5847d54b694f11233737c7a877643",
+  "reviewed_pr": 272,
+  "reviewed_package_sha256": "c477ff8bda460312542f6531b49ae1f0d46e6c32e491786fbbe6fe35e925de94",
+  "lesson_keys": [
+    "problem-causes"
+  ],
+  "scope": "Only lesson 1.7.2; preserve sibling pointers, identities, progress, assessments and flags; no migrations or KB publication.",
+  "approval_basis": "Explicit owner instruction in this chat. Retained audio findings are not relabeled as independent human listening or SME signoff.",
+  "promoted_asset_statuses": 7,
+  "reviewed_proposal_receipt_sha256": "70c2592ef570c08c12634798668b190c66475198468785d9865d30231735a4fd",
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"problem-causes\",\n    \"position\": 1,\n    \"title_fil\": \"Hanapin ang mga sanhi\",\n    \"title_en\": \"Investigate causes\",\n    \"objectives_fil\": [\n      \"Gumawa ng cause map na may dalawang posibleng sangay at paraan ng pagberipika, nang hindi itinuturing na patunay ang limang tanong lamang.\"\n    ],\n    \"objectives_en\": [\n      \"Build a cause map with two possible branches and verification steps, without treating five questions alone as proof.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"whys\",\n      \"concept_ids\": [\n        \"m7.whys\"\n      ],\n      \"asset_ids\": [\n        \"carole-causes-whys\"\n      ],\n      \"takeaway_fil\": \"Ang Five Whys ay paghanap ng nasusuring sanhi kasama ang iba, hindi paulit-ulit na paninisi.\",\n      \"takeaway_en\": \"Five Whys investigates evidence-based causes with others instead of repeating blame.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"manual-example\",\n      \"concept_ids\": [\n        \"m7.diarrhoea-example\"\n      ],\n      \"asset_ids\": [\n        \"carole-causes-manual-example\"\n      ],\n      \"takeaway_fil\": \"Ang worked example ay paraan ng pagsusuri; ang totoong prayoridad ay manggagaling sa lokal na ebidensya.\",\n      \"takeaway_en\": \"A worked example teaches a method; real priorities come from local evidence.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"rosario\",\n      \"concept_ids\": [\n        \"m7.determinants\"\n      ],\n      \"asset_ids\": [\n        \"carole-causes-rosario\"\n      ],\n      \"takeaway_fil\": \"Ang sakit ay may konteksto: ang tubig, kita, impormasyon at access sa serbisyo ay magkakaugnay.\",\n      \"takeaway_en\": \"Illness has a context: water, income, information and access to services interact.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"verify-branch\",\n      \"concept_ids\": [\n        \"m7.whys\"\n      ],\n      \"asset_ids\": [\n        \"carole-causes-verify-branch\"\n      ],\n      \"takeaway_fil\": \"Itama ang map ayon sa ebidensya; panatilihing bukas ang hindi pa alam.\",\n      \"takeaway_en\": \"Correct the map using evidence; keep unknowns open.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m7.whys\",\n        \"m7.diarrhoea-example\",\n        \"m7.determinants\"\n      ],\n      \"asset_ids\": [\n        \"carole-causes-practice\"\n      ],\n      \"takeaway_fil\": \"Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.\",\n      \"takeaway_en\": \"Five Whys structures inquiry with others; evidence supports the proposed causes.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m7.whys\",\n        \"m7.diarrhoea-example\",\n        \"m7.determinants\"\n      ],\n      \"asset_ids\": [\n        \"carole-causes-check\"\n      ],\n      \"takeaway_fil\": \"Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.\",\n      \"takeaway_en\": \"Five Whys structures inquiry with others; evidence supports the proposed causes.\",\n      \"check\": {\n        \"prompt_fil\": \"Sa ikalimang “bakit,” sinabi ng grupo na kulang sa kaalaman ang ina. Ano ang susunod?\",\n        \"prompt_en\": \"At the fifth “why,” the group says the mother lacks knowledge. What next?\",\n        \"options\": [\n          {\n            \"fil\": \"Itigil ang usapan dahil lima na ang tanong.\",\n            \"en\": \"Stop because five questions have been asked.\"\n          },\n          {\n            \"fil\": \"Suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team.\",\n            \"en\": \"Check the evidence and other barriers with the family and health team.\"\n          },\n          {\n            \"fil\": \"Magplano agad ng lecture para sa lahat ng ina.\",\n            \"en\": \"Immediately plan a lecture for every mother.\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Una: hindi patunay ang limang tanong; huwag itigil ang pagsusuri dahil sa bilang. Ikalawa: suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team bago kumilos. Ikatlo: maaaring hindi tugma ang lecture sa pamasahe, kita o access sa serbisyo. Sa kathang-isip na wakas, itinama ni Carole ang arrow: may dalawang oras sa practice schedule, ngunit isang oras lamang ang natanggap ayon sa residente. Hindi pa alam kung bakit. Sinabi ang hadlang sa childcare at pamasahe; kailangan pang suriin ang mga sanhi. Dalawang sangay na may pinagmulan at hakbang sa beripikasyon ang map, hindi isang taong sinisisi.\",\n        \"feedback_en\": \"First: five questions are not proof; do not stop investigating because of the count. Second: check the evidence and other barriers with the family and health team before acting. Third: a lecture may not address fare, income or access to services. In the fictional ending, Carole corrects the arrow: the practice schedule contains two times, but the resident reports receiving only one. Why remains unknown. Childcare and fare barriers are reported; their causes still need investigation. The map contains two attributed branches with verification steps, not one blamed person.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m7.whys\",\n      \"read_ids\": [\n        \"whys\",\n        \"verify-branch\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-whys\",\n        \"slide-verify-branch\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"zff-rosario\"\n      ]\n    },\n    {\n      \"id\": \"m7.diarrhoea-example\",\n      \"read_ids\": [\n        \"manual-example\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-manual-example\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"zff-rosario\"\n      ]\n    },\n    {\n      \"id\": \"m7.determinants\",\n      \"read_ids\": [\n        \"rosario\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-rosario\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"zff-rosario\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        29\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        19,\n        20,\n        21\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"zff-rosario\",\n      \"title\": \"ZFF Rosario case — repository transcription with provenance and printed workbook pages 48–51\",\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/kwento-ni-rosario.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"carole-causes-whys\",\n      \"path\": \"/training/bhw-1-7/carole-causes-whys-d0dcdd0642e7.png\",\n      \"content_hash\": \"d0dcdd0642e72c158650a039ab4dcc12648e98e2780d7682ca3739a228e0c0ec\",\n      \"alt_fil\": \"Si Carole at mga residente na nagtatanong sa dalawang sangay.\",\n      \"alt_en\": \"Carole and residents question two map branches.\",\n      \"caption_fil\": \"Ang Five Whys ay paghanap ng nasusuring sanhi kasama ang iba, hindi paulit-ulit na paninisi.\",\n      \"caption_en\": \"Five Whys investigates evidence-based causes with others instead of repeating blame.\",\n      \"review_status\": \"draft\",\n      \"provenance\": \"Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending.\"\n    },\n    {\n      \"id\": \"carole-causes-manual-example\",\n      \"path\": \"/training/bhw-1-7/carole-causes-manual-example-f4ec0cefe587.png\",\n      \"content_hash\": \"f4ec0cefe587782828c0c77ee0f19c62938a8fe6ee092e941b1897f358b1cc24\",\n      \"alt_fil\": \"Si Carole na nagpapakita ng sistemang may tubig, access at training.\",\n      \"alt_en\": \"Carole presents water, access and training in a system diagram.\",\n      \"caption_fil\": \"Ang worked example ay paraan ng pagsusuri; ang totoong prayoridad ay manggagaling sa lokal na ebidensya.\",\n      \"caption_en\": \"A worked example teaches a method; real priorities come from local evidence.\",\n      \"review_status\": \"draft\",\n      \"provenance\": \"Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending.\"\n    },\n    {\n      \"id\": \"carole-causes-rosario\",\n      \"path\": \"/training/bhw-1-7/carole-causes-rosario-ae9a2987d80d.png\",\n      \"content_hash\": \"ae9a2987d80d2679fd8c00b429776e25d5831da2278312fbb5c03d7f5bd7f204\",\n      \"alt_fil\": \"Si Carole na nag-uugnay ng kapaligiran, kabuhayan at serbisyo.\",\n      \"alt_en\": \"Carole maps environment, livelihood and service barriers.\",\n      \"caption_fil\": \"Ang sakit ay may konteksto: ang tubig, kita, impormasyon at access sa serbisyo ay magkakaugnay.\",\n      \"caption_en\": \"Illness has a context: water, income, information and access to services interact.\",\n      \"review_status\": \"draft\",\n      \"provenance\": \"Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending.\"\n    },\n    {\n      \"id\": \"carole-causes-verify-branch\",\n      \"path\": \"/training/bhw-1-7/carole-causes-verify-branch-7230a15abc18.png\",\n      \"content_hash\": \"7230a15abc1828d93b74bb69a5f0481cf2a8db354a5e58d322a9b5679f8a8dd5\",\n      \"alt_fil\": \"Si Carole, residente at staff na nagwawasto habang may hindi pa tiyak.\",\n      \"alt_en\": \"Carole, a resident and staff correct a map while uncertainty remains.\",\n      \"caption_fil\": \"Itama ang map ayon sa ebidensya; panatilihing bukas ang hindi pa alam.\",\n      \"caption_en\": \"Correct the map using evidence; keep unknowns open.\",\n      \"review_status\": \"draft\",\n      \"provenance\": \"Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending.\"\n    },\n    {\n      \"id\": \"carole-causes-practice\",\n      \"path\": \"/training/bhw-1-7/carole-causes-practice-cba43c94470a.png\",\n      \"content_hash\": \"cba43c94470a145e560c516c3eefd4f39ba264b96b343fd9117f000c2e224e63\",\n      \"alt_fil\": \"Triad na gumagawa at nagwawasto ng dalawang sangay.\",\n      \"alt_en\": \"A triad builds and corrects two branches.\",\n      \"caption_fil\": \"Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.\",\n      \"caption_en\": \"Five Whys structures inquiry with others; evidence supports the proposed causes.\",\n      \"review_status\": \"draft\",\n      \"provenance\": \"Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending.\"\n    },\n    {\n      \"id\": \"carole-causes-check\",\n      \"path\": \"/training/bhw-1-7/carole-causes-check-22d181948593.png\",\n      \"content_hash\": \"22d181948593e992a1bbb17b45a4a02a667b48cca6badd0cdc51e8b6b94057a6\",\n      \"alt_fil\": \"Si Carole at residente na tinatalakay ang ebidensya at tanong.\",\n      \"alt_en\": \"Carole and residents discuss evidence and questions.\",\n      \"caption_fil\": \"Si Carole ay nakikinig bago tanggapin ang paliwanag.\",\n      \"caption_en\": \"Carole listens before accepting an explanation.\",\n      \"review_status\": \"draft\",\n      \"provenance\": \"Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending.\"\n    },\n    {\n      \"id\": \"problem-causes-story\",\n      \"alt_fil\": \"Anim na beat tungkol sa dalawang sangay, pinagmulan, pagwawasto at beripikasyon.\",\n      \"alt_en\": \"Six narrated beats about two branches, sources, correction and verification.\",\n      \"caption_fil\": \"Dalawang sangay na may batayan at tapat na hindi pa tiyak.\",\n      \"caption_en\": \"Two evidence-qualified branches with honest unknowns.\",\n      \"provenance\": \"Original lesson 1.7.2 Remotion story with six Carole scenes from the pinned reference. Gemini Kore narration; measured encoded audio boundaries. Classroom facts only; owner, human listening and SME review pending.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-7/problem-causes-gemini-fil-54c1fffffd47.mp4\",\n          \"content_hash\": \"54c1fffffd4767d87f4f19f6925cd412fa2201fdc097222ab87383b4cbee0df5\",\n          \"duration_s\": 70,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-7/problem-causes-gemini-fil-b6ee07161627.vtt\",\n            \"content_hash\": \"b6ee07161627993535d258e476ff9c8c882013cb4a786d1025555c913ac53944\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg\",\n            \"content_hash\": \"940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-7/problem-causes-gemini-en-9cb2c860e10c.mp4\",\n          \"content_hash\": \"9cb2c860e10c35adb686efd31bb512bbcb01609ae992240d7366739a0db067ea\",\n          \"duration_s\": 67,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-7/problem-causes-gemini-en-45daeb498e0c.vtt\",\n            \"content_hash\": \"45daeb498e0ce1e66ad01863b0137ad30a468f5e49f11886e5b22b270d7681c4\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-7/problem-causes-gemini-en-73b77f9edd97-poster.jpg\",\n            \"content_hash\": \"73b77f9edd97cfe4b47c0b836a9acf8f126c4282a1f01c9d3dfeac91be21ad18\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg\",\n      \"content_hash\": \"940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956\"\n    }\n  ],\n  \"featured_asset_id\": \"problem-causes-story\"\n}\n",
+  "reviewed_lesson_sha256": "1b36d218a4292c982978fdb8004d51b11b159e16ad7352712a3b68230e7f4acc",
+  "approved_media": [
+    {
+      "path": "/training/audio/07-problema/problem-causes/check.en.3cecf511bf6f.mp3",
+      "sha256": "17d53b111416a7f8377ad5ff008b9afedc4bd84a97f450d79faf6e13ada4fbf1"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/check.fil.fbfa27017ce3.mp3",
+      "sha256": "a8da64b548bfcb7f91492db831e99a221e7e427f990b89fe4dba24df337315b2"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/manual-example.en.1967bdb013b6.mp3",
+      "sha256": "b618189dce26c486a0cee36e0b6a09195d3ae0d095003f16b12c4535cd7ee861"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/manual-example.fil.56a39e5cead1.mp3",
+      "sha256": "bea0f22d5b8d24ae302ad0d530e05bcdf60519fa115282e2abbc1e17936aa418"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/practice.en.0346f8319279.mp3",
+      "sha256": "cfd3350b26d156c7b2133090194e1ca95d539af8346025a8bc6d7a8eb85f951c"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/practice.fil.d7725401e35e.mp3",
+      "sha256": "1c287ec8e555fb41f8c5fb8b90d96013ddba2fa38ffb221fca9099db983d3d46"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/rosario.en.2c78bbd9b3a4.mp3",
+      "sha256": "2ec5a3c7186d2334b079e4347cd0a6e060dcad737004a79eb5da94fa79734635"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/rosario.fil.ca8edc29a16a.mp3",
+      "sha256": "9800d03357b571291ca4aafef225ca24171e9a954b224fc934ba545c101aa377"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/verify-branch.en.e86f94fcd6e0.mp3",
+      "sha256": "42f1b8c1f1d25c3b662c131f17ce0fe0ae8cde1d180bba933292d7a0e7ee5290"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/verify-branch.fil.54ab0ee96b01.mp3",
+      "sha256": "418db1b40fb2797fe2646a9fb9e488154bfedbbb81408b614896c7254c507348"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/whys.en.77541cfbac2e.mp3",
+      "sha256": "90ab32335a9d88a1e664922c16af18e6dc143507e29802b429815e74435c2414"
+    },
+    {
+      "path": "/training/audio/07-problema/problem-causes/whys.fil.a0488b5c3fe8.mp3",
+      "sha256": "fa49f7d65bb8cc7d5bfc33c98921347347f2de794c63be432d5933e637bd3d5c"
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-whys-d0dcdd0642e7.png",
+      "sha256": "d0dcdd0642e72c158650a039ab4dcc12648e98e2780d7682ca3739a228e0c0ec"
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-manual-example-f4ec0cefe587.png",
+      "sha256": "f4ec0cefe587782828c0c77ee0f19c62938a8fe6ee092e941b1897f358b1cc24"
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-rosario-ae9a2987d80d.png",
+      "sha256": "ae9a2987d80d2679fd8c00b429776e25d5831da2278312fbb5c03d7f5bd7f204"
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-verify-branch-7230a15abc18.png",
+      "sha256": "7230a15abc1828d93b74bb69a5f0481cf2a8db354a5e58d322a9b5679f8a8dd5"
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-practice-cba43c94470a.png",
+      "sha256": "cba43c94470a145e560c516c3eefd4f39ba264b96b343fd9117f000c2e224e63"
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-check-22d181948593.png",
+      "sha256": "22d181948593e992a1bbb17b45a4a02a667b48cca6badd0cdc51e8b6b94057a6"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg",
+      "sha256": "940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-causes-gemini-fil-54c1fffffd47.mp4",
+      "sha256": "54c1fffffd4767d87f4f19f6925cd412fa2201fdc097222ab87383b4cbee0df5"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-causes-gemini-fil-940b5bab8d3e-poster.jpg",
+      "sha256": "940b5bab8d3e3fea40022556e72c7bfc4ab1e008c35f1eabf364bffa6562b956"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-causes-gemini-fil-b6ee07161627.vtt",
+      "sha256": "b6ee07161627993535d258e476ff9c8c882013cb4a786d1025555c913ac53944"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-causes-gemini-en-9cb2c860e10c.mp4",
+      "sha256": "9cb2c860e10c35adb686efd31bb512bbcb01609ae992240d7366739a0db067ea"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-causes-gemini-en-73b77f9edd97-poster.jpg",
+      "sha256": "73b77f9edd97cfe4b47c0b836a9acf8f126c4282a1f01c9d3dfeac91be21ad18"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-causes-gemini-en-45daeb498e0c.vtt",
+      "sha256": "45daeb498e0ce1e66ad01863b0137ad30a468f5e49f11886e5b22b270d7681c4"
+    }
+  ],
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/competency.json": "124ef2410693af652953e53457de1d88e6c2dd7879ce06eeff8987c8270ab8da",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/facilitator.en.md": "059e844f9db5fd7539772142ab610b275a307eaf747f5934b6d61437cbac34b2",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/facilitator.fil.md": "cd94f4587afd88cb33c6f968d29646f972d44a7bd17cf53cff3786061e9e6eae",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/lesson.json": "c2ef49777b95d37f1a13f226f6f1d7955c990530d24d038f44293d9ea674251c",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/read.en.md": "bb3c7cb9fcd6bc03fc10510b625d6149cced70f5737c8432a7cc1192f2206ba9",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/read.fil.md": "e77d7c5d11d7a09832e06ceb50b63cf101a3861abe66e6b77ce3ab29e8947811",
+    "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/slides.json": "0400f11d78a6c435ef185e65236d3e4f7dc3c0dae9e5bf488a81f70e78d6a408",
+    "content/training/day1-basic-competencies/narration.json": "48e8a49c85578accd15f1bcb771565add70d9861d05ab881a7c76dc1c14899e5",
+    "remotion/src/Root.tsx": "e80a544e762c1298f30cf6fa57ac0cc94c9196cccaa09f83c6994529c5a68c69",
+    "src/components/elearning/reference-lessons.tsx": "7fe32058b7d5d52a54e1fa2ca93d042b9ee2798576d6c7b1015be5cb7965355c",
+    "scripts/lesson-172-release-snapshot.mjs": "479720847c5a9135a1c70f1f905318db27e28d25c95c5dfb6f45a17281ac48fa",
+    "scripts/lesson-172-live-smoke.mjs": "13450c48fcef923070c2be4211845051300149027ab6348f963e44e398300933",
+    "scripts/lesson-172-release-check.mjs": "13602eb04f0db45f08904265423ce5cbc180a2f7b6c487198e6aa2da0b6384c7",
+    ".github/workflows/lesson172-release.yml": "f36f9b31091bdacae19da136e83ad20be747bfe645f5480ee43b3ba65446bcb3"
+  }
+}
