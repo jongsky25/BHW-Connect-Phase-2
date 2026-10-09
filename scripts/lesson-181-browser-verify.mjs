@@ -11,10 +11,11 @@ const browser=await chromium.launch({executablePath:status.path,args:['--no-sand
 const report={source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),date:new Date().toISOString(),method:'Actual production React ReferenceLessons/ReferenceReadSection/LessonAssetFigure with explicit Next and save fixture adapters. One loopback HTTP load per context, then true browser offline. No authenticated production, Chat Guide or dashboard verification.',cases:[],errors:[]};
 const lesson=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json'));
 const manifest=JSON.parse(fs.readFileSync(root+'/content/training/day1-basic-competencies/narration.json'));
+const capture=page=>{page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.errors.push('console: '+m.text());});};
 const save=()=>fs.writeFileSync(dir+'/lesson-1.8.1-browser-verification.json',JSON.stringify(report,null,2)+'\n');
 try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
-  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));await page.goto('http://127.0.0.1:4179/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
+  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();capture(page);await page.goto('http://127.0.0.1:4179/?lang='+lang+'&mode='+mode);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
   const next=lang==='en'?'Next':'Susunod',complete=lang==='en'?'Mark lesson complete':'Markahang tapos ang aralin';
   for(let i=0;i<6;i++){
    const section=lesson.sections[i],slide=mode==='slides';await page.locator('article[data-scene="'+(slide?'slide-':'')+section.id+'"]').waitFor();
@@ -37,10 +38,10 @@ try{
   await context.close();
  }
  for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const id of ['ana','inspect','practice','check']){
-  const context=await browser.newContext();const page=await context.newPage();const anchor=(mode==='slides'?'slide-':'')+id;await page.goto('http://127.0.0.1:4179/?lang='+lang+'&mode='+mode+'&anchor='+anchor);await page.locator('article[data-scene="'+anchor+'"]').waitFor();report.cases.push({language:lang,mode,anchor,resume:true});await context.close();
+  const context=await browser.newContext();const page=await context.newPage();capture(page);const anchor=(mode==='slides'?'slide-':'')+id;await page.goto('http://127.0.0.1:4179/?lang='+lang+'&mode='+mode+'&anchor='+anchor);await page.locator('article[data-scene="'+anchor+'"]').waitFor();report.cases.push({language:lang,mode,anchor,resume:true});await context.close();
  }
  for(const lang of ['fil','en'])for(const width of [1280,390]){
-  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();await page.goto('http://127.0.0.1:4179/?lang='+lang);
+  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();capture(page);await page.goto('http://127.0.0.1:4179/?lang='+lang);
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.currentTime>0;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));await context.setOffline(true);
   await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});await page.locator('video').evaluate(v=>window.__previousVideo=v);
@@ -51,7 +52,7 @@ try{
   report.cases.push({language:lang,width,unmuted_story:true,six_cues:true,complete_ending:true,offline:true,fullscreen_story:true,single_player:true,read_to_story_pauses:true,no_horizontal_overflow:true,duration:cues.duration});await context.close();
  }
  for(const lang of ['fil','en'])for(const width of [1280,390]){
-  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();await page.goto('http://127.0.0.1:4179/?lang='+lang);
+  const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();capture(page);await page.goto('http://127.0.0.1:4179/?lang='+lang);
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
   await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
   await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();
@@ -61,7 +62,7 @@ try{
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));report.cases.push({language:lang,width,mode_switch_pauses:true,language_switch_pauses:true,fullscreen_picture:true,single_player:true,no_horizontal_overflow:true});await context.close();
  }
  for(const lang of ['fil','en'])for(const width of [1280,390])for(const action of ['mode','language','leave']){
-  const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));
+  const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();capture(page);
   await page.goto('http://127.0.0.1:4179/?lang='+lang);await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();await context.setOffline(true);
   await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&!v.paused&&v.currentTime>0;});await page.locator('video').evaluate(v=>window.__cleanupVideo=v);
   await page.getByRole('button',{name:action==='mode'?'Slides':action==='language'?(lang==='fil'?'English':'Filipino'):'Facilitator guide',exact:true}).click();
