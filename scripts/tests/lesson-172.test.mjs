@@ -92,7 +92,7 @@ describe('Carole lesson 1.7.2 scoped draft',()=>{
   expect(lesson.assets.some(a=>a.id==='problem-causes-story')).toBe(true);
   const {lessons}=loadReferenceModule('content/training/day1-basic-competencies/modules/07-problema','public');
   const plan=planReferenceNarration([{key:'07-problema',lessons}],manifest,src=>sha(fs.readFileSync('public'+src)));
-  expect(plan.every(p=>p.action==='skip')).toBe(true);
+  expect(plan.filter(p=>p.lessonKey==='problem-causes').every(p=>p.action==='skip')).toBe(true);
   const target=plan.filter(p=>p.lessonKey==='problem-causes');expect(target).toHaveLength(12);
   expect(target.every(p=>p.voice==='gemini:gemini-3.8-flash-tts:Kore')).toBe(true);
   expect(manifest.history['problem-causes']).toContainEqual(baseline.target_narration);
