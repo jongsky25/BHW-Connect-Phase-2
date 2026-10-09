@@ -48,8 +48,8 @@ try{
   const cues=await page.locator('video').evaluate(v=>({muted:v.muted,cues:v.textTracks[0]?.cues?.length??0,duration:v.duration}));assert.equal(cues.muted,false);assert.equal(cues.cues,6);await page.locator('video').evaluate(v=>{v.currentTime=v.duration-0.5});await page.waitForFunction(()=>document.querySelector('video').ended,null,{timeout:10000});
   await dialog.getByRole('button',{name:lang==='en'?'Close':'Isara',exact:true}).click();await dialog.waitFor({state:'hidden'});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   const playStory=async()=>{await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&!v.paused&&v.currentTime>0;});await page.locator('video').evaluate(v=>window.__previousVideo=v);};
-  await playStory();const originalVideo=await page.locator('video').getAttribute('src');
-  await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));assert.equal(await page.locator('video').count(),1);assert.notEqual(await page.locator('video').getAttribute('src'),originalVideo);
+  await playStory();const originalVideo=await page.locator('video source').getAttribute('src');assert(originalVideo);
+  await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));assert.equal(await page.locator('video').count(),1);assert.notEqual(await page.locator('video source').getAttribute('src'),originalVideo);
   await playStory();await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));assert.equal(await page.locator('video').count(),0);
   await page.getByRole('button',{name:lang==='en'?'Kuwentong may salaysay':'Narrated story',exact:true}).click();await playStory();
   await page.getByRole('button',{name:'Facilitator guide',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));assert.equal(await page.locator('video').count(),0);
