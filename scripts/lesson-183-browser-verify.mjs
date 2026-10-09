@@ -47,7 +47,13 @@ try{
   await dialog.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});
   const cues=await page.locator('video').evaluate(v=>({muted:v.muted,cues:v.textTracks[0]?.cues?.length??0,duration:v.duration}));assert.equal(cues.muted,false);assert.equal(cues.cues,6);await page.locator('video').evaluate(v=>{v.currentTime=v.duration-0.5});await page.waitForFunction(()=>document.querySelector('video').ended,null,{timeout:10000});
   await dialog.getByRole('button',{name:lang==='en'?'Close':'Isara',exact:true}).click();await dialog.waitFor({state:'hidden'});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
-  report.cases.push({language:lang,width,unmuted_story:true,six_cues:true,complete_ending:true,offline:true,fullscreen_story:true,single_player:true,read_to_story_pauses:true,no_horizontal_overflow:true,duration:cues.duration});await context.close();
+  const playStory=async()=>{await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&!v.paused&&v.currentTime>0;});await page.locator('video').evaluate(v=>window.__previousVideo=v);};
+  await playStory();const originalVideo=await page.locator('video').getAttribute('src');
+  await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));assert.equal(await page.locator('video').count(),1);assert.notEqual(await page.locator('video').getAttribute('src'),originalVideo);
+  await playStory();await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));assert.equal(await page.locator('video').count(),0);
+  await page.getByRole('button',{name:lang==='en'?'Kuwentong may salaysay':'Narrated story',exact:true}).click();await playStory();
+  await page.getByRole('button',{name:'Facilitator guide',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));assert.equal(await page.locator('video').count(),0);
+  report.cases.push({language:lang,width,unmuted_story:true,six_cues:true,complete_ending:true,offline:true,fullscreen_story:true,single_player:true,read_to_story_pauses:true,story_language_switch_pauses:true,story_mode_switch_pauses:true,story_fixture_navigation_unmount_pauses:true,no_horizontal_overflow:true,duration:cues.duration});await context.close();
  }
  for(const lang of ['fil','en'])for(const width of [1280,390]){
   const context=await browser.newContext({viewport:{width,height:900}});const page=await context.newPage();await page.goto('http://127.0.0.1:4189/?lang='+lang);
