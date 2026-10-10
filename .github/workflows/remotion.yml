@@ -62,6 +62,8 @@ jobs:
         run: |
           if [ "${{ github.head_ref }}" = "codex/lesson-191-charlaine-handoff" ] && { ! test -f remotion/public/resources-audit/narration-fil.json || test -f docs/lesson-191-regenerate-request.json; }; then
             echo "render=false" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.head_ref }}" = "codex/lesson-191-charlaine-handoff" ] && python3 scripts/lesson-191-registry-proof.py --reuse-scope; then
+            echo "render=false" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.head_ref }}" = "codex/lesson-182-apple-handoff" ] && ! test -f docs/lesson-182-final-evidence-origins.json; then
             echo "render=false" >> "$GITHUB_OUTPUT"
           else

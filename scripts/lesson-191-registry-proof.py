@@ -1,11 +1,29 @@
 """Exact-head proof of the runtime-enumerated registry and all eight render shards."""
-import pathlib,json,hashlib,subprocess,sys,time,re
+import pathlib,json,hashlib,subprocess,sys,time,re,os,urllib.request,urllib.error
 root=pathlib.Path('.');sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 head=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 def gh(*args):return json.loads(subprocess.check_output(['gh',*args],text=True))
 def inputs():
  names=subprocess.check_output(['git','ls-files','remotion','scripts/remotion-render.mjs'],text=True).splitlines()
  return {p:sha(root/p) for p in names if (root/p).is_file()}
+def read_job_log(job_id):
+ # Fetch the canonical job log, without gh's cached run-archive/job filtering.
+ class NoRedirect(urllib.request.HTTPRedirectHandler):
+  def redirect_request(self,*args,**kwargs):return None
+ url='https://api.github.com/repos/'+os.environ.get('GITHUB_REPOSITORY','jongsky25/BHW-Connect-Phase-2')+'/actions/jobs/'+str(job_id)+'/logs'
+ request=urllib.request.Request(url,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'})
+ opener=urllib.request.build_opener(NoRedirect)
+ try:
+  with opener.open(request,timeout=60) as response:return response.read().decode('utf-8-sig')
+ except urllib.error.HTTPError as error:
+  if error.code not in [301,302,303,307,308]:raise
+  location=error.headers['Location']
+ # Allow the signed storage URL's validity window to start. Never forward credentials.
+ time.sleep(10)
+ with urllib.request.urlopen(location,timeout=60) as response:return response.read().decode('utf-8-sig')
+if len(sys.argv)>1 and sys.argv[1]=='--reuse-scope':
+ origin=json.loads((root/'docs/lesson-191-evidence-origins.json').read_text())
+ sys.exit(0 if origin.get('registry_run_id') and origin.get('registry_inputs_sha256')==inputs() else 1)
 if len(sys.argv)>1:
  shard=int(sys.argv[1]);ids=pathlib.Path(sys.argv[2]).read_text().split();assert ids and len(set(ids))==len(ids)
  records=[]
@@ -18,7 +36,12 @@ if len(sys.argv)>1:
  (root/'remotion/out'/f'lesson-191-registry-shard-{shard}.json').write_text(json.dumps(report,indent=2)+'\n')
 else:
  deadline=time.monotonic()+1800;run=None
- while time.monotonic()<deadline:
+ origin=json.loads((root/'docs/lesson-191-evidence-origins.json').read_text())
+ pinned=origin.get('registry_run_id') if origin.get('registry_inputs_sha256')==inputs() else None
+ if pinned:
+  assert origin['registry_inputs_sha256']==inputs()
+  run=gh('run','view',str(pinned),'--json','databaseId,status,conclusion,headSha')
+ while not pinned and time.monotonic()<deadline:
   runs=gh('run','list','--workflow','remotion.yml','--commit',head,'--limit','10','--json','databaseId,status,conclusion,headSha')
   if runs:
    run=runs[0]
@@ -35,8 +58,10 @@ else:
  subprocess.check_call(['gh','run','download',str(run['databaseId']),'--pattern','remotion-renders-*','--dir',str(dest)])
  receipts=[json.loads(p.read_text()) for p in dest.glob('*/lesson-191-registry-shard-*.json')];assert len(receipts)==8
  ids=receipts[0]['runtime_registry'];expected=inputs();rendered=[]
+ listing=subprocess.check_output(['npx','remotion','compositions','--quiet','--browser-executable='+os.environ['PLAYWRIGHT_EXECUTABLE_PATH']],cwd=root/'remotion',text=True).strip().splitlines()[-1].split();assert listing==ids
+ render_head=origin['registry_source_commit'] if pinned else head
  for r in receipts:
-  assert r['source_commit']==head and r['runtime_registry']==ids and r['inputs']==expected
+  assert r['source_commit']==render_head and r['runtime_registry']==ids and r['inputs']==expected
   assert [v['id'] for v in r['renders']]==ids[r['shard']::8]
   for record in r['renders']:
    rendered.append(record['id'])
@@ -44,7 +69,7 @@ else:
     p=dest/f"remotion-renders-{r['shard']}"/f['name'];assert p.stat().st_size==f['bytes'] and sha(p)==f['sha256']
  assert len(rendered)==len(ids) and set(rendered)==set(ids)
  assert ids[-2:]==['ResourcesAuditStoryFil','ResourcesAuditStoryEn']
- report={'status':'all runtime-enumerated compositions rendered and exact artifact bytes verified','source_commit':head,'run_id':run['databaseId'],'url':details['url'],'actual_registry_count':len(ids),'runtime_registry':ids,'shards':receipts,'human_approval':False}
+ report={'status':'all runtime-enumerated compositions rendered and exact artifact bytes verified','source_commit':head,'render_source_commit':render_head,'verified_identical_current_render_inputs':True,'run_id':run['databaseId'],'url':details['url'],'actual_registry_count':len(ids),'runtime_registry':ids,'shards':receipts,'human_approval':False}
  (root/'docs/lesson-191-registry-verification.json').write_text(json.dumps(report,indent=2)+'\n')
  print('Verified every actual registry composition:',len(ids))
 
@@ -59,7 +84,7 @@ else:
  checks=jobs['checks'];steps={s['name']:s['conclusion'] for s in checks['steps']}
  assert steps['Lint']=='success' and steps['Typecheck']=='success'
  assert steps['Unit tests']=='failure' and checks['conclusion']=='failure'
- log=subprocess.check_output(['gh','run','view',str(ci['databaseId']),'--job',str(checks['databaseId']),'--log'],text=True)
+ log=read_job_log(checks['databaseId']);print('Read canonical CI job log bytes:',len(log.encode()))
  log=re.sub(r'\x1b\[[0-9;]*m','',log)
  failures=re.findall(r'FAIL\s+(scripts/tests/[^\s]+)\s+>\s+([^\n]+)',log)
  assert len(failures)==1 and failures[0][0]=='scripts/tests/reference-narration.test.mjs',failures
