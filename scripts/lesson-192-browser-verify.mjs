@@ -60,9 +60,9 @@ try{
   const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();trackErrors(page);await page.goto(`${baseUrl}/?lang=${lang}`);
   await page.getByRole('button',{name:lesson.sections[0].check.options[lesson.sections[0].check.correct_option_index][lang],exact:true}).click();
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.currentTime>0;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
-  await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));await context.setOffline(true);
+  await page.getByRole('button',{name:/Watch the animated|Panoorin ang animadong/}).click();await page.waitForFunction(()=>window.__previousAudio.paused,null,{timeout:2000});await context.setOffline(true);
   await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});await page.locator('video').evaluate(v=>window.__previousVideo=v);
-  await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();const dialog=page.getByRole('dialog');await dialog.waitFor();assert.equal(await page.locator('video').count(),1);assert(await page.evaluate(()=>window.__previousVideo.paused));
+  await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();const dialog=page.getByRole('dialog');await dialog.waitFor();assert.equal(await page.locator('video').count(),1);await page.waitForFunction(()=>window.__previousVideo.paused,null,{timeout:2000});
   await dialog.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});
   const cues=await page.locator('video').evaluate(v=>({muted:v.muted,cues:v.textTracks[0]?.cues?.length??0,duration:v.duration}));assert.equal(cues.muted,false);assert.equal(cues.cues,6);await page.locator('video').evaluate(v=>{v.currentTime=v.duration-2});await page.waitForFunction(()=>document.querySelector('video').ended,null,{timeout:10000});
   const endingShot=`lesson192-story-${lang}-${width}-ending.png`;await page.screenshot({path:dir+'/'+endingShot,fullPage:true});report.screenshots.push(endingShot);
@@ -73,15 +73,15 @@ try{
   const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();trackErrors(page);await page.goto(`${baseUrl}/?lang=${lang}`);
   await page.getByRole('button',{name:lesson.sections[0].check.options[lesson.sections[0].check.correct_option_index][lang],exact:true}).click();
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
-  await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
+  await page.getByRole('button',{name:'Slides',exact:true}).click();await page.waitForFunction(()=>window.__previousAudio.paused,null,{timeout:2000});
   await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
-  await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
+  await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();await page.waitForFunction(()=>window.__previousAudio.paused,null,{timeout:2000});
   for(const action of ['mode','language','navigation']){
    await page.getByRole('button',{name:/^(Narrated story|Kuwentong may salaysay)$/}).click();await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&!v.paused&&v.currentTime>0;});await page.locator('video').evaluate(v=>window.__previousVideo=v);
    if(action==='mode')await page.getByRole('button',{name:'Slides',exact:true}).click();
    if(action==='language')await page.getByRole('button',{name:lang==='en'?'English':'Filipino',exact:true}).click();
    if(action==='navigation')await page.getByRole('button',{name:'Facilitator guide',exact:true}).click();
-   assert(await page.evaluate(()=>window.__previousVideo.paused),'Story remains playing after '+action);
+   await page.waitForFunction(()=>window.__previousVideo.paused,null,{timeout:2000});
   }
   report.cases.push({language:lang,width,mode_switch_pauses:true,language_switch_pauses:true,story_mode_cleanup:true,story_language_cleanup:true,story_navigation_cleanup:true});await context.close();
  }

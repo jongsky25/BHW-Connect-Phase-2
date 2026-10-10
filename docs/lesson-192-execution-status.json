@@ -1,5 +1,5 @@
 {
-  "status": "draft implementation; exact-byte focused review retry and final verification in progress",
+  "status": "reviewable draft; frozen-head registry/CI/download proof is generated in the review artifact and linked from the PR",
   "source_baseline": "a1a54d755cda8c609c3006843acc11abfba3437e",
   "production_publication": false,
   "owner_release_approval": false,
@@ -8,28 +8,60 @@
     "actual_story_mp4s": 2,
     "full_model_reviews": 14,
     "focused_excerpts": 56,
-    "successful_focused_model_reviews": 55,
-    "one_provider_block": "read-check-en ending; actual bytes retained, review retry queued"
+    "successful_focused_model_reviews": 56,
+    "focused_review_failures": 0
   },
   "checks": {
-    "lint": "passed, three existing warnings; final changed-file lint to run",
+    "lint": "passed with three existing warnings",
     "typecheck": "passed",
-    "target_preservation_tests": "in progress",
-    "browser": "pending",
+    "target_preservation_tests": "8 passed; final exact proposal receipt verified",
+    "browser": {
+      "status": "passed for stated fixture scope; human listening, clinical and owner review separate",
+      "cases": 80,
+      "screenshots": 52,
+      "source_commit": "ed93ef54ef3545b660c8f539777f150cd3144545",
+      "scope": "Actual ReferenceLessons/ReferenceReadSection production components, local auth/navigation/save fixtures. Browser offline after loopback load; no authenticated production proof.",
+      "selected_media": "same exact selected 12 MP3s / two stories; normal exact-head workflow repeats this verification"
+    },
     "A4_print": "two five-page kits and two one-page aids passed A4/margin checks",
     "disposable_supabase_e2e": {
       "status": "passed",
       "run_id": 38042145487
     },
-    "full_unit": "final source run pending; twelve known problem-prioritize stale tracks must remain visible",
-    "complete_registry_render": "pending measured timing/focused-review freeze"
+    "full_unit": {
+      "passed": 1626,
+      "failed": 1,
+      "failing_check": "committed narration is current for every converted subchapter",
+      "known_stale_tracks": [
+        "problem-prioritize/criteria/fil",
+        "problem-prioritize/criteria/en",
+        "problem-prioritize/worked-scores/fil",
+        "problem-prioritize/worked-scores/en",
+        "problem-prioritize/score-evidence/fil",
+        "problem-prioritize/score-evidence/en",
+        "problem-prioritize/tie-and-urgent-care/fil",
+        "problem-prioritize/tie-and-urgent-care/en",
+        "problem-prioritize/practice/fil",
+        "problem-prioritize/practice/en",
+        "problem-prioritize/check/fil",
+        "problem-prioritize/check/en"
+      ],
+      "fully_green": false
+    },
+    "complete_registry_render": {
+      "enumerated_compositions": 100,
+      "preserved_predecessors": 98,
+      "new_story_ids": [
+        "ResourcesSafeChangeStoryFil",
+        "ResourcesSafeChangeStoryEn"
+      ],
+      "final_proof": "Exact-head complete rendering is verified before packaging; see frozen archive lesson-192-registry.json and PR run link"
+    }
   },
   "pending": [
     "Human listening and agreed name pronunciation; unresolved voice/timbre model reports",
     "Current facility/infection-prevention procedure review, including inaccessible primary DOH circular",
-    "Owner review/approval of this exact draft",
-    "One provider-blocked focused review retry",
-    "Final browser, full-unit and complete-registry verification"
+    "Owner review/approval of this exact draft"
   ],
   "known_stale_narration": [
     "problem-prioritize/criteria/fil",

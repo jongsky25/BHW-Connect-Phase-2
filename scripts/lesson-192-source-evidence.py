@@ -8,6 +8,8 @@ out.mkdir(parents=True, exist_ok=True)
 report = json.loads((root / 'docs/lesson-192-source-audit.json').read_text())
 sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 for source in report['sources']:
+ if source.get('excerpt_file'):
+  assert sha(root / 'docs/lesson-192-source-excerpts' / source['excerpt_file']) == source['excerpt_sha256'], 'Inspected excerpt changed: ' + source['id']
  if source['id'] not in ['facilitator', 'manual', 'tesda', 'deck', 'nwpc-7s']:
   continue
  p = out / (source['id'] + '.pdf')

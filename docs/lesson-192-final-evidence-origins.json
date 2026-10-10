@@ -4,7 +4,7 @@
     "run_id": 38040541887,
     "head": "422a5f99d7999c2e7292af7838ffee8497fa2ca2",
     "artifact_id": 11666141521,
-    "artifact_name": "lesson192-read-evidence",
+    "artifact_name": "lesson192-generated-evidence",
     "zip_sha256": "dd50e980851243745910431ca9a17814291ad8a73a842d66e14704f79238b29b"
   },
   "initial_story": {
@@ -31,5 +31,19 @@
     "artifact_name": "lesson192-story-evidence",
     "zip_sha256": "d9e2bb5a50c07ec7bfb8607b7076404fe142d7bfbcc657600726249b4a712eb5"
   },
-  "focused_review_status": "55 successful, one retained provider failure awaiting exact-byte retry"
+  "focused_review_status": "56 successful exact-byte model reviews; initial provider failures retained",
+  "failed_focus_retry": {
+    "run_id": 38043531458,
+    "head": "94d139a216673ca7f76009174088bcad79a383da",
+    "artifact_id": 11667390193,
+    "artifact_name": "lesson192-focused-review-retry",
+    "zip_sha256": "dcfb1d3f0abfae89229ec7f00025fec74e7a8164735d5b8efd4d4bebe0b140fb"
+  },
+  "focus_repair": {
+    "run_id": 38043782576,
+    "head": "ed93ef54ef3545b660c8f539777f150cd3144545",
+    "artifact_id": 11666681059,
+    "artifact_name": "lesson192-focused-review-retry",
+    "zip_sha256": "7553034b11138e3ab3df194960fcc2663c32e4dab94fcfe26d377b0abafc08a7"
+  }
 }

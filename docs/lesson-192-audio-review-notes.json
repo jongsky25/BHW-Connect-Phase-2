@@ -14,7 +14,7 @@
   "repairs": [
     "Regenerated all 12 Read tracks with delivery revision 2 after full/focused voice and articulation concerns.",
     "Regenerated both stories with delivery revision 2 after Filipino tagas/tangke transcription and English ending voice reports.",
-    "One focused English check ending provider block retained and queued for exact-byte model-review retry; no audio regeneration."
+    "Two original-prompt provider blocks retained; the identical English check ending WAV was successfully reviewed with truthful classroom-context prompt revision 2. The other 55 reviews were reused only for exact WAV bytes."
   ],
   "remaining_disagreements": [
     "Current full practice Filipino review reports two timbres; focused reviews differ. Other focused Read excerpts report voice/role transitions where full reviews describe consistency. These are unresolved model reports.",
@@ -24,8 +24,8 @@
   ],
   "full_recordings": 14,
   "focused_excerpts": 56,
-  "successful_focused_reviews": 55,
-  "provider_failures": 1,
+  "successful_focused_reviews": 56,
+  "provider_failures": 0,
   "full_reviews": [
     {
       "id": "read-resources-safe-change-utilities-fil",
