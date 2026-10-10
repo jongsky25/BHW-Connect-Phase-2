@@ -1,0 +1,419 @@
+<!--
+  BHW Connect — three-slide brief for WHO Philippines and DOH-BLHSD.
+
+  Short companion to pitch/bhw-connect-who.html (same palette, problem/solution registers
+  and navigation model). Presented live, followed by a demo of the working pilot.
+
+  READINESS FRAMING — this deck deliberately differs from the 21-slide WHO deck.
+  That deck says "designed, not built". This one says: a working, piloted tool, ready to
+  launch the first materials. It claims NO field results, usage numbers or BHW outcomes.
+  Do not add any. Keep pitch/README.md in step if this wording changes.
+
+  FIGURES — only two are committed on slide 1: PHP 1.8 billion for one three-day training,
+  and 300,000 BHWs nationwide. Everything else is a general statement on purpose.
+
+  DO NOT REINTRODUCE ttCF, Eastern Visayas or Region VIII anywhere.
+
+  Controls: arrow keys / space / Home / End, swipe, or the dots. N toggles speaker notes.
+  Self-contained, no external requests. Body-only document.
+-->
+<title>BHW Connect — Three-Slide Brief</title>
+<style>
+  :root{
+    --teal:#0C7C7E; --teal-deep:#0A4A4B; --teal-deeper:#083335;
+    --marigold:#E8641C; --sampaguita:#FFC857;
+    --canvas:#F6F2ED; --ink:#241C17; --ink-soft:#5F5349;
+    --cream:#F7F1E8; --cream-soft:rgba(247,241,232,.72);
+    --ember:#F0603C; --verdant:#1F7A45; --verdant-soft:#E4F0E7;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --pad:clamp(1.2rem,3.6vw,4rem);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:var(--sans);background:#030d0f;color:var(--ink);overflow:hidden;
+       -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  :focus-visible{outline:3px solid var(--sampaguita);outline-offset:2px;border-radius:4px}
+  ul{list-style:none}
+
+  .deck{position:fixed;inset:0}
+  .slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-start;
+         padding:clamp(3.2rem,8vh,4.6rem) var(--pad) clamp(3rem,6vh,3.8rem);
+         opacity:0;visibility:hidden;transform:translateY(12px);overflow:hidden;
+         transition:opacity .45s ease,transform .45s ease,visibility .45s}
+  .slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
+  .slide__inner{width:100%;max-width:1360px;margin:0 auto;transform-origin:top center}
+
+  /* problem — cold, ember */
+  .slide.problem{background:radial-gradient(125% 115% at 18% -8%,#0b262b 0%,#061619 52%,#030d0f 100%);color:var(--cream)}
+  .slide.problem::after{content:"";position:absolute;left:0;bottom:-26%;width:100%;height:54vh;pointer-events:none;
+         background:radial-gradient(58% 100% at 50% 100%,rgba(240,96,60,.16),transparent 68%)}
+  /* solution — warm, verdant */
+  .slide.solution{background:linear-gradient(168deg,#F2F6F1 0%,#E8EFE6 100%)}
+  .slide.solution::after{content:"";position:absolute;left:0;right:0;top:0;height:6px;pointer-events:none;
+         background:linear-gradient(90deg,var(--verdant),#3FA972 60%,var(--sampaguita))}
+  /* ask — teal */
+  .slide.ask{background:radial-gradient(120% 120% at 78% 12%,#0d5254 0%,var(--teal-deeper) 62%);color:var(--cream)}
+  .slide.ask::after{content:"";position:absolute;right:-12%;top:-18%;width:46vw;height:46vw;pointer-events:none;
+         background:radial-gradient(circle,rgba(232,100,28,.16),transparent 62%)}
+  .slide__inner{position:relative;z-index:1}
+
+  .eyebrow{font-size:clamp(.78rem,1.2vw,.98rem);font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+           display:flex;align-items:center;gap:.8rem;margin-bottom:clamp(.7rem,1.8vh,1.3rem)}
+  .eyebrow::after{content:"";flex:0 0 46px;height:1px;background:currentColor;opacity:.4}
+  .problem .eyebrow{color:rgba(247,241,232,.55)} .problem .eyebrow b{color:var(--ember)}
+  .solution .eyebrow{color:var(--ink-soft)}      .solution .eyebrow b{color:var(--verdant)}
+  .ask .eyebrow{color:var(--cream-soft)}         .ask .eyebrow b{color:var(--sampaguita)}
+
+  h2{font-weight:800;letter-spacing:-.02em;line-height:1.05;text-wrap:balance;font-size:clamp(1.9rem,3.6vw,3.2rem)}
+  .em-ember{color:var(--ember)} .em-verdant{color:var(--verdant)} .em-gold{color:var(--sampaguita)}
+  .sub{margin-top:.7rem;font-size:clamp(1.05rem,1.75vw,1.5rem);line-height:1.4;max-width:62ch}
+  .problem .sub,.ask .sub{color:var(--cream-soft)} .solution .sub{color:var(--ink-soft)}
+
+  /* ======== SLIDE 1 ======== */
+  .scale{display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(.7rem,1.6vw,1.2rem);margin-top:clamp(1rem,2.4vh,1.7rem)}
+  .scale .big{flex:1 1 280px;border:1px solid rgba(240,96,60,.32);border-radius:6px;background:rgba(240,96,60,.07);
+              padding:clamp(.8rem,1.6vw,1.2rem) clamp(1rem,2vw,1.6rem);display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap}
+  .scale .num{font-family:var(--serif);font-weight:700;letter-spacing:-.03em;line-height:.95;
+              font-size:clamp(2.6rem,6.2vw,5.4rem);color:var(--sampaguita)}
+  .scale .lbl{font-size:clamp(.95rem,1.45vw,1.25rem);line-height:1.3;color:var(--cream-soft);max-width:22ch}
+  .scale .vs{align-self:center;font-weight:800;letter-spacing:.2em;color:var(--ember);font-size:.9rem}
+
+  .five{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(.55rem,1.2vw,1rem);margin-top:clamp(1rem,2.4vh,1.7rem)}
+  .pcard{background:rgba(255,255,255,.04);border:1px solid rgba(247,241,232,.12);border-top:4px solid var(--ember);
+         border-radius:6px;padding:clamp(.8rem,1.4vw,1.2rem);display:flex;flex-direction:column;gap:.55rem}
+  .pcard .top{display:flex;align-items:center;justify-content:space-between}
+  .pcard .ic{width:clamp(40px,4.6vw,60px);height:auto;color:var(--ember)}
+  .pcard .n{font-size:.7rem;font-weight:800;letter-spacing:.18em;color:var(--ember)}
+  .pcard h3{font-size:clamp(1.15rem,1.9vw,1.6rem);font-weight:800;letter-spacing:-.01em;line-height:1.1}
+  .pcard p{font-size:clamp(.92rem,1.28vw,1.12rem);line-height:1.42;color:rgba(247,241,232,.74)}
+  .pcard .ev{margin-top:auto;padding-top:.5rem;border-top:1px solid rgba(247,241,232,.12);
+             font-size:clamp(.8rem,1.05vw,.92rem);font-style:italic;color:rgba(247,241,232,.5)}
+  .verdict{margin-top:clamp(.9rem,2vh,1.4rem);font-family:var(--serif);font-style:italic;
+           font-size:clamp(1.15rem,2.1vw,1.8rem);line-height:1.3;color:var(--cream)}
+  .verdict em{color:var(--ember);font-style:italic}
+
+  /* ======== SLIDE 2 ======== */
+  .s2{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(1rem,2.6vw,2.4rem);margin-top:clamp(.9rem,2.2vh,1.6rem);align-items:stretch}
+  .system{display:flex;flex-direction:column;gap:.6rem}
+  .hub{background:var(--teal-deep);color:var(--cream);border-radius:12px;padding:clamp(.8rem,1.5vw,1.2rem) clamp(1rem,1.8vw,1.5rem);
+       box-shadow:0 16px 36px -22px rgba(36,28,23,.6)}
+  .hub small{display:block;font-size:.74rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--sampaguita)}
+  .hub b{display:block;font-size:clamp(1.25rem,2.2vw,1.9rem);letter-spacing:-.01em;margin-top:.2rem}
+
+  .link{display:flex;justify-content:space-around;height:16px;color:var(--verdant)}
+  .link i{width:2px;background:currentColor;opacity:.55}
+  .fn{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem}
+  .fcard{background:#fff;border:1px solid rgba(36,28,23,.1);border-left:4px solid var(--verdant);border-radius:10px;
+         padding:clamp(.7rem,1.3vw,1rem);display:flex;gap:.8rem;align-items:flex-start;
+         box-shadow:0 12px 28px -22px rgba(36,28,23,.5)}
+  .fcard svg{flex:0 0 clamp(30px,3.4vw,44px);width:clamp(30px,3.4vw,44px);height:auto;color:var(--verdant)}
+  .fcard b{display:block;font-size:clamp(1.02rem,1.5vw,1.3rem);letter-spacing:-.01em}
+  .fcard span{display:block;margin-top:.15rem;font-size:clamp(.86rem,1.15vw,1rem);line-height:1.38;color:var(--ink-soft)}
+  .anchor{background:var(--marigold);color:#fff;border-radius:12px;padding:clamp(.75rem,1.4vw,1.1rem) clamp(1rem,1.8vw,1.5rem);
+          display:flex;gap:.9rem;align-items:center;box-shadow:0 14px 30px -20px rgba(184,78,18,.8)}
+  .anchor svg{flex:0 0 clamp(34px,4vw,50px);width:clamp(34px,4vw,50px);height:auto}
+  .anchor small{display:block;font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;opacity:.9}
+  .anchor b{display:block;font-size:clamp(1.05rem,1.7vw,1.45rem);line-height:1.2}
+  .anchor span{display:block;font-size:clamp(.86rem,1.15vw,1rem);opacity:.95;margin-top:.1rem;line-height:1.35}
+
+  .closes{display:flex;flex-direction:column;gap:.5rem}
+  .closes-h{font-size:.78rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--verdant);display:flex;align-items:center;gap:.6rem}
+  .closes-h em{font-style:normal;background:var(--verdant-soft);border:1px solid rgba(31,122,69,.34);border-radius:999px;padding:.2rem .65rem}
+  .crow{background:rgba(255,255,255,.9);border:1px solid rgba(36,28,23,.09);border-left:4px solid var(--verdant);border-radius:10px;
+        padding:.6rem .9rem;box-shadow:0 12px 28px -24px rgba(36,28,23,.55);flex:1;display:flex;flex-direction:column;justify-content:center}
+  .crow s{font-size:clamp(.78rem,1vw,.9rem);color:var(--ink-soft);opacity:.7;text-decoration-color:var(--ember)}
+  .crow b{font-size:clamp(.98rem,1.4vw,1.2rem);line-height:1.25}
+  .crow b::before{content:"✓";color:var(--verdant);font-weight:900;margin-right:.4rem}
+  .crow p{font-size:clamp(.84rem,1.1vw,.98rem);line-height:1.38;color:var(--ink-soft);margin-top:.1rem}
+  .proof{margin-top:clamp(.7rem,1.6vh,1.1rem);display:flex;align-items:center;gap:.9rem;
+         background:var(--ink);color:var(--cream);border-radius:10px;padding:clamp(.7rem,1.3vw,1rem) clamp(1rem,1.8vw,1.5rem)}
+  .proof .dot{flex:0 0 14px;height:14px;border-radius:50%;background:#3FD07D;box-shadow:0 0 0 0 rgba(63,208,125,.6);animation:ping 2.2s infinite}
+  @keyframes ping{70%{box-shadow:0 0 0 12px rgba(63,208,125,0)}100%{box-shadow:0 0 0 0 rgba(63,208,125,0)}}
+  .proof p{font-size:clamp(1rem,1.7vw,1.45rem);line-height:1.3}
+  .proof b{color:var(--sampaguita)}
+
+  /* ======== SLIDE 3 ======== */
+  .s3{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1rem,2.6vw,2.4rem);margin-top:clamp(.9rem,2.2vh,1.6rem);align-items:stretch}
+  .pill3{display:flex;flex-direction:column;gap:.6rem}
+  .pillar{background:rgba(247,241,232,.06);border:1px solid rgba(247,241,232,.18);border-top:3px solid var(--sampaguita);
+          border-radius:10px;padding:clamp(.75rem,1.4vw,1.1rem);display:flex;gap:.9rem;align-items:flex-start;flex:1}
+  .pillar svg{flex:0 0 clamp(34px,4vw,50px);width:clamp(34px,4vw,50px);height:auto;color:var(--sampaguita)}
+  .pillar b{display:block;font-size:clamp(1.1rem,1.8vw,1.55rem);letter-spacing:-.01em}
+  .pillar span{display:block;margin-top:.15rem;font-size:clamp(.9rem,1.25vw,1.1rem);line-height:1.4;color:var(--cream-soft)}
+  .pill-h,.asks-h{font-size:.78rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--sampaguita);margin-bottom:.1rem}
+  .asks{display:flex;flex-direction:column;gap:.6rem}
+  .askcard{border-radius:12px;padding:clamp(.9rem,1.7vw,1.4rem);flex:1;display:flex;flex-direction:column;justify-content:center;gap:.35rem}
+  .askcard.a1{background:var(--sampaguita);color:#2b2420}
+  .askcard.a2{background:var(--marigold);color:#fff}
+  .askcard small{font-size:.74rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+  .askcard b{font-size:clamp(1.3rem,2.4vw,2.1rem);line-height:1.12;letter-spacing:-.02em}
+  .askcard span{font-size:clamp(.92rem,1.3vw,1.14rem);line-height:1.4;opacity:.95}
+  .endline{margin-top:clamp(.8rem,1.8vh,1.3rem);font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.1vw,1.8rem);line-height:1.3}
+  .endline em{color:var(--sampaguita);font-style:italic}
+
+  /* ======== chrome ======== */
+  .chrome{position:fixed;left:0;right:0;bottom:0;z-index:10;display:flex;align-items:center;justify-content:space-between;
+          padding:.7rem var(--pad);pointer-events:none}
+  .chrome>*{pointer-events:auto}
+  .brand{font-size:.74rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft)}
+  body[data-g="dark"] .brand,body[data-g="dark"] .count{color:var(--cream-soft)}
+  .count{font-size:.8rem;font-weight:700;letter-spacing:.14em;color:var(--ink-soft)}
+  .dots{display:flex;gap:.55rem}
+  .dots button{width:34px;height:8px;border-radius:99px;border:0;cursor:pointer;background:rgba(127,127,127,.4)}
+  .dots button[aria-current="true"]{background:var(--marigold)}
+  .navb{position:fixed;top:50%;z-index:10;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;cursor:pointer;
+        background:rgba(127,127,127,.28);color:inherit;font-size:1.3rem;font-weight:800;opacity:.7}
+  .navb:hover{opacity:1} .navb.prev{left:.5rem} .navb.next{right:.5rem}
+  body[data-g="dark"] .navb{color:var(--cream)} body[data-g="light"] .navb{color:var(--ink)}
+  .notes{position:fixed;left:0;right:0;bottom:0;z-index:20;max-height:42vh;overflow:auto;background:rgba(6,22,25,.97);color:var(--cream);
+         padding:1rem var(--pad) 3rem;font-size:1.05rem;line-height:1.5;display:none;border-top:3px solid var(--marigold)}
+  .notes.on{display:block}
+  .notes h4{color:var(--sampaguita);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.4rem}
+  .notes p{max-width:100ch;margin-bottom:.5rem}
+  .notes[hidden]{display:none}
+
+  /* ======== narrow screens ======== */
+  @media (max-width:900px){
+    body{overflow:auto} .deck{position:static}
+    .slide{position:relative;inset:auto;opacity:1;visibility:visible;transform:none;min-height:100vh;padding-bottom:4.5rem}
+    .slide__inner{transform:none!important}
+    .five{grid-template-columns:1fr 1fr}
+    .s2,.s3{grid-template-columns:1fr}
+    .navb,.dots,.chrome{display:none}
+  }
+  @media (max-width:560px){.five{grid-template-columns:1fr}.fn{grid-template-columns:1fr}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<main class="deck" id="deck">
+
+  <!-- ============ 1 · THE PROBLEM ============ -->
+  <section class="slide problem active" data-g="dark" aria-label="Slide 1: the problem">
+    <div class="slide__inner">
+      <div class="eyebrow"><b>01</b> The problem</div>
+      <h2>Traditional capacity building <span class="em-ember">cannot reach every BHW</span> — however well it is run.</h2>
+
+      <div class="scale" aria-label="Scale of the problem">
+        <div class="big"><span class="num">₱1.8B</span><span class="lbl">for a single three-day training</span></div>
+        <div class="vs">VS</div>
+        <div class="big"><span class="num">300,000</span><span class="lbl">Barangay Health Workers nationwide</span></div>
+      </div>
+
+      <ul class="five">
+        <li class="pcard">
+          <div class="top">
+            <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="24" cy="12" rx="13" ry="5"/><path d="M11 12v8c0 2.8 5.8 5 13 5s13-2.2 13-5v-8"/><path d="M11 20v8c0 2.8 5.8 5 13 5s13-2.2 13-5v-8"/><path d="M11 28v8c0 2.8 5.8 5 13 5s13-2.2 13-5v-8"/></svg>
+            <span class="n">OPEN</span>
+          </div>
+          <h3>Cost</h3>
+          <p>Venues, travel, per diem and facilitators, paid again for every round. The spend ends when the training does.</p>
+          <div class="ev">Repeats every cycle</div>
+        </li>
+        <li class="pcard">
+          <div class="top">
+            <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 5h16l8 8v30H13z"/><path d="M29 5v8h8"/><circle cx="31" cy="33" r="9" fill="#061619"/><path d="M31 28v5l3 2"/></svg>
+            <span class="n">OPEN</span>
+          </div>
+          <h3>Stale material</h3>
+          <p>A video or manual is fixed on the day it is made. When guidance moves, people already trained are never corrected.</p>
+          <div class="ev">No way to push a fix</div>
+        </li>
+        <li class="pcard">
+          <div class="top">
+            <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 43V6"/><path d="M12 8h22l-5 7 5 7H12"/><circle cx="24" cy="24" r="20" stroke-dasharray="3 5" opacity=".5"/></svg>
+            <span class="n">OPEN</span>
+          </div>
+          <h3>Never goes national</h3>
+          <p>Partner-supported efforts end with the project. A recommendation to scale up is not a mechanism to do it.</p>
+          <div class="ev">Pilots stay pilots</div>
+        </li>
+        <li class="pcard">
+          <div class="top">
+            <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 6v36h38"/><path d="M9 10c6 14 12 22 32 26"/><circle cx="9" cy="10" r="2.4" fill="currentColor"/><circle cx="41" cy="36" r="2.4" fill="currentColor"/></svg>
+            <span class="n">OPEN</span>
+          </div>
+          <h3>Retention</h3>
+          <p>Three days in a hall fade fast. Nothing reinforces it, and nothing checks what stayed.</p>
+          <div class="ev">Learning decays in weeks</div>
+        </li>
+        <li class="pcard">
+          <div class="top">
+            <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="14" r="5"/><circle cx="24" cy="14" r="5" opacity=".7"/><circle cx="39" cy="14" r="5" opacity=".4"/><path d="M14 14h5M29 14h5"/><path d="M4 30c0-4 3-6 5-6s5 2 5 6M19 30c0-4 3-6 5-6s5 2 5 6" opacity=".7"/><path d="M34 30c0-4 3-6 5-6s5 2 5 6" opacity=".4"/><path d="M6 42h36" stroke-dasharray="2 4" opacity=".5"/></svg>
+            <span class="n">OPEN</span>
+          </div>
+          <h3>Third-hand information</h3>
+          <p>National to trainers to representatives to peers. Each retelling changes it, and what a BHW receives depends on who told it.</p>
+          <div class="ev">Nobody measures the loss</div>
+        </li>
+      </ul>
+
+      <p class="verdict">Reaching 300,000 people this way is not a budget problem. <em>It is a design problem.</em></p>
+    </div>
+  </section>
+
+  <!-- ============ 2 · THE ANSWER ============ -->
+  <section class="slide solution" data-g="light" aria-label="Slide 2: the answer">
+    <div class="slide__inner">
+      <div class="eyebrow"><b>02</b> The direction</div>
+      <h2>From one-off events to <span class="em-verdant">one standard system</span> that reaches every BHW.</h2>
+      <p class="sub">Systematic and deliberate: one material, many functions, a real person confirming real skill.</p>
+
+      <div class="s2">
+        <div class="system" aria-label="The system">
+          <div class="hub">
+            <small>One material</small>
+            <b>Written once. Approved once. Used everywhere.</b>
+            
+          </div>
+          <div class="link" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="fn">
+            <div class="fcard">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="8" width="36" height="26" rx="3"/><path d="M20 15l9 6-9 6z"/><path d="M16 42h16M24 34v8"/></svg>
+              <div><b>Self-paced courses</b><span>Standard lessons any BHW can take on their own time.</span></div>
+            </div>
+            <div class="fcard">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="4" width="20" height="40" rx="4"/><path d="M21 38h6"/><path d="M19 14h10M19 20h10M19 26h6"/></svg>
+              <div><b>The app</b><span>Training that lives on the phone, in Filipino and English.</span></div>
+            </div>
+            <div class="fcard">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h14c2.5 0 4 1.5 4 4v30c0-2.5-1.5-4-4-4H6z"/><path d="M42 8H28c-2.5 0-4 1.5-4 4v30c0-2.5 1.5-4 4-4h14z"/></svg>
+              <div><b>Knowledge base</b><span>The approved answer, searchable at the doorstep.</span></div>
+            </div>
+            <div class="fcard">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h36v24H20l-10 8v-8H6z"/><path d="M15 16h18M15 23h11"/></svg>
+              <div><b>Chat guide</b><span>Ask in plain words, get the standard answer.</span></div>
+            </div>
+          </div>
+          <div class="link" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="anchor">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 22L24 6l19 16"/><path d="M10 20v20h28V20"/><path d="M24 25v10M19 30h10"/></svg>
+            <div><small>The anchor</small><b>On-site assessment at the RHU</b><span>Nurses and midwives watch the skill performed. Competence is confirmed in person.</span></div>
+          </div>
+        </div>
+
+        <div class="closes">
+          <div class="closes-h">Every old problem <em>closed</em></div>
+          <div class="crow"><s>Cost</s><b>Learn locally, not in a hall</b><p>No venues, travel or per diem. Assessment happens at the RHU the BHW already uses.</p></div>
+          <div class="crow"><s>Stale material</s><b>Fix once, everyone updated</b><p>One source of truth. A correction reaches every BHW.</p></div>
+          <div class="crow"><s>Never goes national</s><b>Standard from day one</b><p>Built as a national system, not a project that ends.</p></div>
+          <div class="crow"><s>Retention</s><b>Support that stays</b><p>Knowledge base and chat guide remain after the course ends.</p></div>
+          <div class="crow"><s>Third-hand information</s><b>Straight from the source</b><p>No cascade. Every BHW gets the approved content directly.</p></div>
+        </div>
+      </div>
+
+      <div class="proof"><span class="dot" aria-hidden="true"></span>
+        <p><b>Not a pipe dream.</b> A real, working, piloted tool, ready to launch the first materials.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · THE OPPORTUNITY ============ -->
+  <section class="slide ask" data-g="dark" aria-label="Slide 3: the opportunity">
+    <div class="slide__inner">
+      <div class="eyebrow"><b>03</b> The opportunity</div>
+      <h2>Co-create more than the technology: <span class="em-gold">the framework and standards</span> for taking any piloted material nationwide.</h2>
+      <p class="sub">So that every primary-care and BHW material that proves itself can be mainstreamed, with HHP+ as the prime example.</p>
+
+      <div class="s3">
+        <div class="pill3">
+          <div class="pill-h">What the framework defines</div>
+          <div class="pillar">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 5h16l8 8v30H13z"/><path d="M29 5v8h8"/><path d="M19 24h12M19 30h12M19 36h7"/></svg>
+            <div><b>A content standard</b><span>How any material is written, structured, updated and kept current.</span></div>
+          </div>
+          <div class="pillar">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M17 24l5 5 9-10"/></svg>
+            <div><b>A validation and approval path</b><span>Clinical review and DOH approval before a material reaches a BHW.</span></div>
+          </div>
+          <div class="pillar">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="18" r="9"/><path d="M18 27l-4 15 10-6 10 6-4-15"/><path d="M20 18l3 3 5-6"/></svg>
+            <div><b>An assessment and certification standard</b><span>How RHU nurses and midwives confirm skill, and when it is renewed.</span></div>
+          </div>
+        </div>
+
+        <div class="asks">
+          <div class="asks-h">What we propose</div>
+          <div class="askcard a1">
+            <small>Ask 1</small>
+            <b>A joint WHO–BLHSD working group</b>
+            <span>To co-author the mainstreaming framework and standards, not just adopt a tool.</span>
+          </div>
+          <div class="askcard a2">
+            <small>Ask 2</small>
+            <b>Co-sponsor HHP+ as the first national-grade material</b>
+            <span>The worked example that proves the framework, and the model every later module follows.</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="endline">Next: <em>see it working, live.</em></p>
+    </div>
+  </section>
+</main>
+
+<button class="navb prev" aria-label="Previous slide" id="prev">‹</button>
+<button class="navb next" aria-label="Next slide" id="next">›</button>
+<div class="chrome">
+  <span class="brand">BHW Connect</span>
+  <div class="dots" id="dots" role="tablist" aria-label="Slides"></div>
+  <span class="count" id="count">1 / 3</span>
+</div>
+
+<aside class="notes" id="notes" aria-label="Speaker notes">
+  <div data-n="0"><h4>Notes · slide 1</h4>
+    <p>One three-day training costs ₱1.8 billion. There are 300,000 BHWs. Say it, then pause. We are not saying anyone is running training badly. Even well run, the model has five structural limits: cost repeats every round; material is frozen the day it is made; partner-supported efforts stay pilots; three days in a hall fade; and by the time it reaches a BHW it is third-hand.</p></div>
+  <div data-n="1"><h4>Notes · slide 2</h4>
+    <p>One material, many functions. The same approved content is a self-paced course, lives in the app, is a searchable knowledge base, and answers through the chat guide. The anchor is physical: an RHU nurse or midwife confirms the skill in person. Walk the right column and let each old problem close. Then the line that matters: this is a real, working, piloted tool, ready to launch the first materials. We claim no field results yet. The demo follows.</p></div>
+  <div data-n="2"><h4>Notes · slide 3</h4>
+    <p>The opportunity is bigger than the software. If WHO and BLHSD co-create the framework and the standards, then any material that proves itself in a pilot has a defined route to national: a content standard, a validation and approval path, and an assessment and certification standard. HHP+ is the first and best example. Two asks: stand up a joint working group, and co-sponsor HHP+ as the first national-grade material. Then go to the demo.</p></div>
+</aside>
+
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide')),i=0,
+      dots=document.getElementById('dots'),count=document.getElementById('count'),
+      notes=document.getElementById('notes'),narrow=function(){return window.innerWidth<=900};
+
+  slides.forEach(function(s,k){
+    var b=document.createElement('button');b.setAttribute('aria-label','Go to slide '+(k+1));
+    b.onclick=function(){go(k)};dots.appendChild(b);
+  });
+
+  function fit(){
+    slides.forEach(function(s){
+      var inner=s.querySelector('.slide__inner');inner.style.transform='';
+      if(narrow())return;
+      var cs=getComputedStyle(s),availH=s.clientHeight-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom);
+      var h=inner.scrollHeight,k=Math.min(1,availH/h);
+      if(k<1)inner.style.transform='scale('+k+')';
+    });
+  }
+  function go(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach(function(s,k){s.classList.toggle('active',k===i)});
+    [].forEach.call(dots.children,function(d,k){d.setAttribute('aria-current',k===i?'true':'false')});
+    count.textContent=(i+1)+' / '+slides.length;
+    document.body.setAttribute('data-g',slides[i].getAttribute('data-g'));
+    [].forEach.call(notes.children,function(d,k){d.style.display=k===i?'':'none'});
+    fit();
+    if(narrow())slides[i].scrollIntoView({behavior:'smooth'});
+  }
+  document.getElementById('prev').onclick=function(){go(i-1)};
+  document.getElementById('next').onclick=function(){go(i+1)};
+  document.addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();go(i+1)}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){go(i-1)}
+    else if(e.key==='Home'){go(0)} else if(e.key==='End'){go(slides.length-1)}
+    else if(e.key==='n'||e.key==='N'){notes.classList.toggle('on')}
+  });
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(x0===null||narrow())return;var d=e.changedTouches[0].clientX-x0;
+    if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null;
+  });
+  window.addEventListener('resize',fit);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+  go(0);
+})();
+</script>
