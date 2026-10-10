@@ -94,6 +94,27 @@ jobs:
           LESSON193_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-193-record-fetch.mjs'
         run: node scripts/lesson-193-audio-focus.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson193-preview-media-evidence
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            lesson-193-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json
+            public/training/audio/09-sustainable-practices/resources-monitor/
+            public/training/bhw-1-9/resources-monitor-*
+            remotion/public/resources-monitor/narration-*
+            remotion/public/resources-monitor/shipped-aac-*
+            docs/lesson-193-media-generation.json
+            docs/lesson-193-story-generation.json
+            docs/lesson-193-audio-*.json
+            .preview/lesson193-raw/
+            .preview/lesson193-excerpts/
+            .preview/lesson193-decoded/
       - name: Enumerate and render every composition in the current registry
         if: always() && steps.story.outcome == 'success'
         run: node scripts/lesson-193-registry-render.mjs
