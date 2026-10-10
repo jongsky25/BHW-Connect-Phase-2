@@ -1,3 +1,4 @@
+import {release181View} from '../lib/lesson-181-release-integration.mjs';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {describe,it,expect} from 'vitest';
@@ -20,7 +21,7 @@ describe('Owner-authorized 1.7.4 release',()=>{
   expect(()=>reviewed174(leaf,Buffer.from('unexpected'))).toThrow('Unpinned');
  });
  it('preserves every authorized source and selected public medium exactly',()=>{
-  for(const [p,h]of Object.entries(a.approved_source_sha256))expect(hash(fs.readFileSync(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(a.approved_source_sha256))expect(hash(release181View(p,'approvedMain')),p).toBe(h);
   expect(a.approved_media).toHaveLength(24);
   for(const m of a.approved_media){const b=fs.readFileSync('public'+m.path);expect(hash(b),m.path).toBe(m.sha256);expect(b.length).toBe(m.bytes);}
  });

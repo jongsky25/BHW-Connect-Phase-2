@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-09T08:40:42.943Z",
+  "source_commit": "3b37395852b45228793794dbe9b4d2ccde3fa520",
+  "owner_review": "pending",
+  "render_input_sha256": "0fc6de8416741bf2a18d511f59ed00406b909911e7da29d389c1444c96eba97b",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 60.003,
+      "beats": [
+        {
+          "zone": "ana",
+          "index": 0,
+          "text": "Napansin ni Apple ang basang pasukan at mainit na ruta. Mula sa ligtas na puwesto, kinikilala niya ang panganib.",
+          "start_ms": 0,
+          "end_ms": 8240
+        },
+        {
+          "zone": "inspect",
+          "index": 1,
+          "text": "Basang sahig: maaaring madulas. Ilayo muna ang tao at humingi ng pagwawasto. Kailangan pang kumpirmahin ang contact.",
+          "start_ms": 8540,
+          "end_ms": 17260
+        },
+        {
+          "zone": "scope-and-contact",
+          "index": 2,
+          "text": "Itinanong ni Apple kung sino ang aabisuhan at alin ang saklaw ng pagsasanay niya. Hindi siya nag-imbento ng sagot.",
+          "start_ms": 17560,
+          "end_ms": 25320
+        },
+        {
+          "zone": "five-hazards",
+          "index": 3,
+          "text": "Sharps, impeksyon, strain, stress at aksidente: magkaibang panganib ang mga ito. Posibleng pinsala ang pinag-uusapan, hindi diagnosis.",
+          "start_ms": 25620,
+          "end_ms": 37500
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Sa rehearsal, pinalitan ni Apple ang mag-ingat ng tiyak na ulat. Sinuri ng observer ang apat na field; saka niya inulit.",
+          "start_ms": 37800,
+          "end_ms": 47600
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Iniulat ni Apple ang basang pasukan, panganib madulas at hinihinging aksyon. Kukumpirmahin niya ang contact at babalikan ang kalagayan. Hindi pa natin alam na naayos na.",
+          "start_ms": 47900,
+          "end_ms": 59940
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-8/safety-identify-gemini-fil-976dc6a5beed.mp4",
+        "content_hash": "976dc6a5beed85c0e249929caf58941ffebbf75304cf2a89856303f17769cbbe",
+        "duration_s": 61,
+        "captions": {
+          "path": "/training/bhw-1-8/safety-identify-gemini-fil-3f58b18d337b.vtt",
+          "content_hash": "3f58b18d337bc0d873f706c476915d06ce02bc95dee4ce0e8e05b10b3c93c522"
+        },
+        "poster": {
+          "path": "/training/bhw-1-8/safety-identify-gemini-fil-3e7a0b516a9e-poster.jpg",
+          "content_hash": "3e7a0b516a9e040f9356f818e2c6df42df4a7eab0c259474c5fd7c180d1e6cbe"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-8/safety-identify-gemini-fil-3e7a0b516a9e-poster.jpg",
+        "content_hash": "3e7a0b516a9e040f9356f818e2c6df42df4a7eab0c259474c5fd7c180d1e6cbe"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 51.931,
+      "beats": [
+        {
+          "zone": "ana",
+          "index": 0,
+          "text": "Apple notices a wet entrance and hot route. From a safe position, she identifies hazards.",
+          "start_ms": 0,
+          "end_ms": 7360
+        },
+        {
+          "zone": "inspect",
+          "index": 1,
+          "text": "A wet floor could cause a slip. Keep people away and request correction. The contact still needs confirmation.",
+          "start_ms": 7660,
+          "end_ms": 15100
+        },
+        {
+          "zone": "scope-and-contact",
+          "index": 2,
+          "text": "Apple asks whom to notify and which tasks are within her training. She does not invent an answer.",
+          "start_ms": 15400,
+          "end_ms": 21920
+        },
+        {
+          "zone": "five-hazards",
+          "index": 3,
+          "text": "Sharps, infection, strain, stress and accidents are different hazards. These are possible harms, not diagnoses.",
+          "start_ms": 22220,
+          "end_ms": 32300
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "In rehearsal, Apple replaces be careful with a specific report. The observer checks four fields, then she retries.",
+          "start_ms": 32600,
+          "end_ms": 42120
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Apple reports the wet entrance, slip risk and requested action. She will confirm the contact and follow up. Correction is not yet known.",
+          "start_ms": 42420,
+          "end_ms": 51860
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-8/safety-identify-gemini-en-a84990ae493c.mp4",
+        "content_hash": "a84990ae493cf957f105d55bf75f407d343e8b092d3bcb438ae2cf17e4a72349",
+        "duration_s": 53,
+        "captions": {
+          "path": "/training/bhw-1-8/safety-identify-gemini-en-0ec4cdf4eb80.vtt",
+          "content_hash": "0ec4cdf4eb80d73e3a8c25186be0554c019d52c4facdfa8ef1154143b1e6fe10"
+        },
+        "poster": {
+          "path": "/training/bhw-1-8/safety-identify-gemini-en-1b972f8a6e9c-poster.jpg",
+          "content_hash": "1b972f8a6e9c1e4c511ae630d7cc4abdd41ba27a6ec5e2c088709ad607887941"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-8/safety-identify-gemini-en-1b972f8a6e9c-poster.jpg",
+        "content_hash": "1b972f8a6e9c1e4c511ae630d7cc4abdd41ba27a6ec5e2c088709ad607887941"
+      }
+    }
+  ]
+}
