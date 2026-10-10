@@ -1,0 +1,72 @@
+name: Lesson 1.9.2 draft narration and actual audio review
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson192-media.yml'
+      - 'scripts/lesson-192-media-build.mjs'
+      - 'scripts/lesson-192-audio-*.mjs'
+      - 'content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/**'
+permissions:
+  contents: read
+concurrency:
+  group: lesson192-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-192-charlaine-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - name: Bounded read-only source snapshot
+        continue-on-error: true
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-192-published-snapshot.mjs
+      - name: Generate target Read audio; keep historical bytes
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON192_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-192-record-fetch.mjs'
+        run: node scripts/lesson-192-media-build.mjs
+      - name: Full actual Read audio reviews
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON192_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-192-record-fetch.mjs'
+        run: node scripts/lesson-192-audio-review.mjs
+      - name: Four focused excerpts per available recording
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON192_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-192-record-fetch.mjs'
+        run: node scripts/lesson-192-audio-focus.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson192-generated-evidence
+          path: |
+            lesson-192-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            public/training/audio/09-sustainable-practices/resources-safe-change/
+            docs/lesson-192-media-generation.json
+            docs/lesson-192-audio-*.json
+            .preview/lesson192-raw/
+            .preview/lesson192-excerpts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

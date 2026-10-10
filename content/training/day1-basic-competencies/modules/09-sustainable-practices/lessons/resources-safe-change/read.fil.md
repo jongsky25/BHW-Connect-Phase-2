@@ -1,25 +1,47 @@
 ## [utilities] Tubig at kuryente na may pag-iingat
 
-Si Elena, 38, ay gustong bawasan ang waste sa BHS habang naibibigay pa rin ang ligtas at tamang serbisyo. Kailangan niyang suriin ang bawat mungkahi kasama ang team.
+Si Charlaine ay isang BHW sa kathang-isip na kuwentong ito. Gusto niyang bawasan ang aksaya nang hindi nababawasan ang ligtas at tamang serbisyo. Mataas ang bill ng BHS at may vaccine refrigerator. Hindi pa alam kung ano ang sanhi ng mataas na konsumo.
 
-Iulat ang tumutulong gripo at subaybayan kung napaayos. Patayin ang hindi kailangang ilaw o kagamitan ayon sa facility instructions. Huwag patayin ang cold-chain equipment, kinakailangang bentilasyon o ibang kritikal na sistema para lamang bumaba ang bill. Huwag bawasan ang handwashing water upang makatipid. Ang target ay tagas at hindi kailangang konsumo, habang nananatiling ligtas ang pangangalaga.
+“Alin ang hindi kailangan, at alin ang dapat manatili?” tanong niya. Panatilihing gumagana ang cold-chain equipment, kinakailangang bentilasyon at ibang kritikal na sistema. Panatilihin ang tubig para sa paghuhugas ng kamay. Siyasatin lamang ang hindi kailangang ilaw ayon sa facility procedure; huwag mag-switch-off demonstration sa aktuwal na kagamitan.
+
+Kung may iniulat na tagas, itala at ipasuri sa awtorisadong tao. Hindi si Charlaine ang magkukumpuni. Hindi pa kumpirmado ang pahintulot, pagkumpuni o matitipid. Sa susunod na tanong, piliin ang ligtas na siyasatin at ipaliwanag ang proteksyong kailangang manatili.
 
 ## [materials] Bawasan ang hindi kailangan, panatilihin ang ligtas
 
-Sa health teaching, maaaring gumamit ng matibay na reusable visual sa halip na paulit-ulit na disposable decoration. Sundin ang BHS policy sa hindi kailangang single-use plastics at tamang segregation. Iba ang clinical single-use items: hindi ginagawang reusable ang karayom, lancet o iba pang item na para sa isang gamit lamang. Kung may duda sa materyal, itanong sa supervisor; huwag mag-imbento ng paraan ng paglilinis o pagre-reuse.
+May nagmungkahi kay Charlaine ng matibay na visual para sa health teaching. Maaaring mabawasan nito ang paulit-ulit na disposable decoration kung aprubado at angkop sa mga gagamit. Panatilihin ang tamang impormasyon at kailangang instruction, kabilang ang kopyang kailangan ng learner.
+
+Iba ang hindi kailangang nonclinical disposable sa clinical single-use item. Hindi pahintulot ang pagbabawas ng plastics para muling gamitin ang karayom, lancet o iba pang clinical single-use supply. Sundin ang lokal na policy at tamang segregation; huwag mag-imbento ng paglilinis o pagre-reuse.
+
+“Kung hindi ko alam ang uri o policy, magtatanong muna ako sa supervisor,” sabi ni Charlaine. Sa pagsasanay, option cards lamang ang ihahambing. Walang tunay na clinical item na gagamitin o lilinisin. Hindi pa kumpirmado ang pag-apruba sa isang bagong visual.
 
 ## [workflow] Ayusin ang daloy, hindi bilisan lang
 
-Bago mag-print, suriin ni Elena ang petsa at aprubadong bersyon ng handout. Ihanda nang magkakasama ang kailangan sa session upang hindi pabalik-balik sa cabinet. Maaaring pagsamahin ang ligtas na delivery ng supplies sa planadong ruta, ngunit hindi ipagpaliban ang agarang referral para makatipid sa biyahe. Sukatin ang naihatid na dekalidad na serbisyo at oras na natipid; hindi sukatan ng husay ang dami lang ng minadaling kliyente.
+Bago mag-print, tinitingnan ni Charlaine at ng kasamahan ang petsa at bersyon ng handout. Ang nasa drawer ay hindi awtomatikong approved master. Hanapin ang controlled master at kumpirmahin sa supervisor ang kasalukuyang aprubadong bersyon ayon sa document-control procedure.
+
+Ihanda nang magkakasama ang dummy teaching materials upang mabawasan ang paghahanap at pabalik-balik. Maaaring pagsamahin ang delivery sa planadong ligtas na ruta kung pinahihintulutan, ngunit huwag ipagpaliban ang urgent referral para makatipid sa biyahe.
+
+Ang productivity ay dekalidad at napapanahong serbisyo na may mas kaunting aksaya at pag-uulit. Hindi patunay ng husay ang dami ng minadaling kliyente. Ang pag-aayos ng kit ay mungkahi pa lamang; hindi ito patunay ng nasukat na oras o pinansiyal na natipid.
 
 ## [worked-example] Alamin kung bakit nasasayang
 
-Sa halimbawa ni Elena, maaaring maling bersyon sa drawer o maling pagpili bago mag-print ang sanhi ng rework. Suriin ang sample ng mga maling printout, ihambing sa aprubadong master, at tanungin ang taong nag-print. Itala kung aling sanhi ang sinusuportahan ng ebidensya. Kumpirmahin sa supervisor gamit ang lokal na document-control procedure bago baguhin ang routine.
+Sa kathang-isip na verification sheet, ang drawer copy at maling printout ay parehong bersyon A. Ang controlled master ay bersyon B. Kinumpirma ng kunwaring supervisor na B ang approved version. Puro dummy teaching sheets ito, walang patient record.
+
+May dalawang posibleng sanhi: nakopya ang lumang A mula sa drawer, o maling file ang napili bago mag-print. Ang magkaparehong A ay tugma sa unang paliwanag ngunit hindi patunay na drawer ang ginamit. Maaaring may A rin sa computer. Hindi pa nakausap ang nag-print at hindi pa nakita ang napiling file.
+
+Inilista ni Charlaine: kumpirmado ang pagkakaiba sa approved master; hindi pa kumpirmado ang sanhi. Ihambing ang drawer, printout at controlled master, saka tanungin ang nag-print at supervisor. Huwag sisihin ang tao o baguhin ang routine batay sa hula. Ang bersyon A at B ay kathang-isip na inputs, hindi opisyal na DOH version.
 
 ## [practice] Subukan, saka ulitin
 
-Ihambing ang “ayusin ang leak” at “bawasan ang handwashing.” Ilista ang matitipid, posibleng pinsala at safeguard. Pumili at ipaliwanag sa kapareha. Ulitin gamit ang reusable visual laban sa clinical single-use reuse. Kung mag-isa, isulat ang tinanggihang opsyon at dahilan. Bago subukan ang pagbabago sa trabaho, kumpirmahin sa supervisor ang policy at safety check.
+Ihambing ang dalawang pares ng fictional option cards: ipaayos ang iniulat na tagas sa awtorisadong tao laban sa bawasan ang handwashing water; at gumamit ng aprubadong reusable teaching visual kung angkop laban sa clinical single-use reuse. Walang tunay na repair o clinical handling sa practice.
+
+Sabihin sa kapareha: “Ano ang posibleng mabawasan? Ano ang maaaring mapinsala? Ano ang proteksyong dapat manatili?” Pumili ng isang mungkahi, pangalanan ang safeguard at ipaliwanag ang tinanggihang opsyon. Isama ang approval na kailangan; kung hindi alam, isulat na hindi pa kumpirmado. Walang ibinigay na dami o halaga ng matitipid.
+
+Halimbawa ng mahinang sagot: “Reusable para tipid.” Feedback: “Ano ang kailangang panatilihin, at alin ang hindi puwedeng gamitin muli?” Retry ni Charlaine: “Aprubadong teaching visual lamang kung angkop; kumpleto ang instruction. Tatanggihan ko ang clinical single-use reuse. Kumpirmahin muna ang lokal na policy.”
+
+Kung mag-isa, isulat o sabihin ang proposal, safeguard, rejection at susunod na verification. Rehearsal ito; kailangan pa rin ang trainer observation. Ang tamang sagot sa quiz ay hindi kapalit ng naobserbahang pagganap.
 
 ## [check] Piliin ang susunod na hakbang
 
-Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.
+Gustong bawasan ng team ang papel sa health teaching. Walang sinabi ang sitwasyon na puwedeng tanggalin ang kailangang instruction o gamitin ang lumang bersyon. May pagpipiliang siyasatin ang approved version at gumamit ng aprubadong reusable visual kung angkop.
+
+Huminto muna at piliin ang sagot. Ipaliwanag kung paano mapapanatili ang tamang impormasyon at accessible na instruction. Pagkatapos sumagot, basahin ang dahilan sa bawat opsyon at ang pagtatapos ng kuwento. Ibang gawain ang pagkuha ng facility approval at naobserbahang practice; hindi iyon ipinapakita ng pagpili sa quiz.
