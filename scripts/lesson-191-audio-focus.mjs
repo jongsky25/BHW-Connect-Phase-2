@@ -19,7 +19,7 @@ for(const language of ['fil','en']){
  const timing=j(`remotion/public/resources-audit/narration-${language}.json`);
  records.push({id:`shipped-story-${language}`,language,file:root+'/public'+story.videos[language].path,source_path:story.videos[language].path,timings:timing.beats,duration:timing.durationSeconds});
 }
-const decodeOnly=process.env.LESSON184_DECODE_ONLY==='1';
+const decodeOnly=process.env.LESSON191_DECODE_ONLY==='1';
 const decodedDir=root+'/.preview/lesson191-decoded';fs.mkdirSync(decodedDir,{recursive:true});
 function pcm(wav){if(wav.toString('ascii',0,4)!=='RIFF'||wav.toString('ascii',8,12)!=='WAVE')throw Error('Not a RIFF WAV');let format=null;for(let offset=12;offset+8<=wav.length;){const id=wav.toString('ascii',offset,offset+4),size=wav.readUInt32LE(offset+4),start=offset+8;if(id==='fmt ')format={codec:wav.readUInt16LE(start),channels:wav.readUInt16LE(start+2),rate:wav.readUInt32LE(start+4),bits:wav.readUInt16LE(start+14)};if(id==='data'){if(!format||format.codec!==1||format.channels!==1||format.rate!==24000||format.bits!==16||start+size>wav.length||size%2)throw Error('Invalid mono24kHz16-bit PCM WAV');return wav.subarray(start,start+size);}offset=start+size+(size%2);}throw Error('PCM data chunk unavailable');}
 const dir=root+'/.preview/lesson191-excerpts';fs.mkdirSync(dir,{recursive:true});

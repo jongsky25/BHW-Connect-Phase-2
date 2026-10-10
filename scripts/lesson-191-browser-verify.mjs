@@ -52,11 +52,12 @@ try{
   for(const pane of ['Facilitator guide','Observation indicator','Evidence']){await page.getByRole('button',{name:pane,exact:true}).click();assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));if(pane==='Facilitator guide'){assert((await page.locator('article section div').nth(1).innerText()).length>100,'Guide body missing');assert((await page.locator('article h2').nth(1).innerText()).length<120,'Guide body rendered as heading');}}
   await context.close();
  }
- for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const id of ['exposure','return-demo','near-miss','practice','check']){
+ for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const id of ['elena','inventory','seven-s','practice','check']){
   const context=await browser.newContext(),page=await context.newPage(),anchor=(mode==='slides'?'slide-':'')+id;
   trackErrors(page);await page.goto(`${baseUrl}/?lang=${lang}&mode=${mode}&anchor=${anchor}`);await page.locator(`article[data-scene="${anchor}"]`).waitFor();report.cases.push({language:lang,mode,anchor,old_resume:true});await context.close();
  }
 
+ if(!contentOnly){
  for(const lang of ['fil','en'])for(const width of [1280,390]){
   const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();trackErrors(page);await page.goto(`${baseUrl}/?lang=${lang}`);
   await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.currentTime>0;});await page.locator('audio').evaluate(a=>window.__previousAudio=a);
@@ -83,6 +84,7 @@ try{
    assert(await page.evaluate(()=>window.__previousVideo.paused),'Story remains playing after '+action);
   }
   report.cases.push({language:lang,width,mode_switch_pauses:true,language_switch_pauses:true,story_mode_cleanup:true,story_language_cleanup:true,story_navigation_cleanup:true});await context.close();
+ }
  }
  assert.equal(report.errors.length,0);report.status='passed for stated fixture scope; human listening, clinical and owner review separate';report.actual_case_count=report.cases.length;report.actual_screenshot_count=report.screenshots.length;save();
 }catch(e){report.status='failed';report.error=String(e.stack??e);save();throw e;}finally{await browser.close();await new Promise(r=>server.close(r));}

@@ -89,6 +89,100 @@
       "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
       "bytes": 1495226,
       "pages": 140
+    },
+    {
+      "id": "deck",
+      "url": "https://drive.google.com/uc?export=download&id=1ZDIJiTltEzJVFcy-XSA0NivWNvfAKfhY",
+      "retrieved": true,
+      "error": null,
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "bytes": 1627258,
+      "pages": 78,
+      "excerpts": [
+        {
+          "pdf_page": 69,
+          "text": "deck-69.txt",
+          "text_sha256": "45bebab628399f0742db2710e1676fdf4251596228eca0acaa740810913de2d8",
+          "inspection": "pending"
+        },
+        {
+          "pdf_page": 70,
+          "text": "deck-70.txt",
+          "text_sha256": "e3daa84ef1615d19aa7fa02544b5ffd0a3ffe3c2aa3c8cc1ea725bb273d5da0e",
+          "inspection": "pending"
+        },
+        {
+          "pdf_page": 71,
+          "text": "deck-71.txt",
+          "text_sha256": "2523054c89d0e7932cedc663e1bdf359c040dc1b3d609b69a3b651e2240807f7",
+          "inspection": "pending"
+        },
+        {
+          "pdf_page": 72,
+          "text": "deck-72.txt",
+          "text_sha256": "071e98c507902dd3cfb04218f6091f4aecb34732f03843c8c5d0f3dafd0700fa",
+          "inspection": "pending"
+        },
+        {
+          "pdf_page": 73,
+          "text": "deck-73.txt",
+          "text_sha256": "3d5bf14f832036997f0b20adbd8e6e02714599b3853f7f407ddd9952d57391a4",
+          "inspection": "pending"
+        },
+        {
+          "pdf_page": 74,
+          "text": "deck-74.txt",
+          "text_sha256": "27119f7689d3adc0864ca70d0aa0cb1bd9c143f0a5bed324387cde2a59c71016",
+          "inspection": "pending"
+        },
+        {
+          "pdf_page": 75,
+          "text": "deck-75.txt",
+          "text_sha256": "62730418050154b697a65fb6f9fe5988a2957c6370d6ed8e3d242dfa33b10a9a",
+          "inspection": "pending"
+        },
+        {
+          "pdf_page": 76,
+          "text": "deck-76.txt",
+          "text_sha256": "6a22a1781d98379b1ee420d00fcf699c7fb327f575852c29ee7fcfcaedffdded",
+          "inspection": "pending"
+        },
+        {
+          "pdf_page": 77,
+          "text": "deck-77.txt",
+          "text_sha256": "fb143e235b6c96705a1a5c1efdaea97a52e06fa3725a00b50a64547b16d76064",
+          "inspection": "pending"
+        },
+        {
+          "pdf_page": 78,
+          "text": "deck-78.txt",
+          "text_sha256": "4d157fe6755222b37ffe6d5cee838fe3905d3089eb8e89f61a3bf02246510ba6",
+          "inspection": "pending"
+        }
+      ]
+    },
+    {
+      "id": "doh-circular",
+      "url": "https://doh.gov.ph/sites/default/files/basic-page/dm2021-0486%20%281%29.pdf",
+      "retrieved": false,
+      "error": "curl: (22) The requested URL returned error: 403\n"
+    },
+    {
+      "id": "nwpc-7s",
+      "url": "https://nwpc.dole.gov.ph/wp-content/uploads/2019/05/7S.pdf",
+      "retrieved": true,
+      "error": null,
+      "sha256": "17acd74f7d720b70694a40a357b90f541ef871f584f1edf9ae9ca19465b44d01",
+      "bytes": 254950,
+      "pages": 1
+    },
+    {
+      "id": "who-facilities",
+      "url": "https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities",
+      "retrieved": true,
+      "error": null,
+      "sha256": "f925c1902699b737aa957eda2097aeb3ddaf6e741e0c460c1beeeaf9632c87d3",
+      "bytes": 109091
     }
   ],
   "local_policy_review": "pending",
