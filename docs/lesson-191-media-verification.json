@@ -1,0 +1,50 @@
+{
+  "method": "Actual ffprobe streams; exact WebVTT text and measured encoded narration; poster extracted from the shipped final video frame",
+  "read_tracks": 12,
+  "read_bytes": 4643632,
+  "languages": [
+    {
+      "language": "fil",
+      "video_sha256": "55440c66d6ade2b1690633a302c578f1a4928aea266e885f3417fc70796a5f62",
+      "duration_seconds": 62.656,
+      "narration_seconds": 61.492,
+      "postroll_seconds": 1.1640000000000015,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "width": 854,
+      "height": 480,
+      "cues": 6,
+      "poster_from_encoded_frame": 1877,
+      "poster_sha256": "dbc84bc645335569eed452c3820db46b3a7835e629b21d7707c2c7f15b37a971"
+    },
+    {
+      "language": "en",
+      "video_sha256": "dde322d9930e6880f556c314c7ceb33945b9798b974846d0c525aa2a842fc3f2",
+      "duration_seconds": 66.346667,
+      "narration_seconds": 65.202,
+      "postroll_seconds": 1.1446669999999983,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "width": 854,
+      "height": 480,
+      "cues": 6,
+      "poster_from_encoded_frame": 1988,
+      "poster_sha256": "ee752de1eb186ccc4a10a599389de2b39ee15c40eb5ebc91ba320ff7db0255c1"
+    }
+  ],
+  "human_listening": "pending",
+  "owner_approval": false,
+  "read_bytes_by_language": {
+    "fil": 2381741,
+    "en": 2261891
+  },
+  "read_budget": {
+    "standard": "1 MB per lesson per language (docs/narration-visuals-realignment-handoff.md)",
+    "cap_bytes": 1000000,
+    "exceeded_languages": [
+      "fil",
+      "en"
+    ],
+    "draft_tradeoff": "Full substantive Read/Slides teaching retained; actual bytes disclosed. This is a review question, not approval of a size-budget exception."
+  }
+}

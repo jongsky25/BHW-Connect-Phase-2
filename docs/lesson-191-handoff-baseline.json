@@ -1,0 +1,890 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "a1a54d755cda8c609c3006843acc11abfba3437e",
+  "lesson_number": "1.9.1",
+  "lesson_key": "resources-audit",
+  "lesson_id": "73e5e389-0f41-4ef5-aadf-aa368da6a863",
+  "module_id": "586f0588-2776-42b0-be1c-bc88c4ef825f",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "character": {
+    "name": "Charlaine",
+    "pronouns": "she/her",
+    "appearance": "fictional adult Asian BHW; long hair; fair/white skin; no age supplied",
+    "reference_status": "not generated; 1.9.1 coordinates a new shared fictional reference"
+  },
+  "manifest": {
+    "lesson_key": "resources-audit",
+    "position": 0,
+    "title_fil": "Saan nasasayang ang resources?",
+    "title_en": "Where are resources wasted?",
+    "objectives_fil": [
+      "Sa halimbawang BHS, itala ang tatlong pag-aaksaya, ang ebidensya at isang ligtas na routine na makababawas sa paghahanap o dobleng pag-order."
+    ],
+    "objectives_en": [
+      "In a sample BHS, record three sources of waste, their evidence and a safe routine that reduces searching or duplicate ordering."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "elena",
+      "concept_ids": [
+        "m9.competency",
+        "m9.resources"
+      ]
+    },
+    {
+      "id": "inventory",
+      "concept_ids": [
+        "m9.organize"
+      ]
+    },
+    {
+      "id": "seven-s",
+      "concept_ids": [
+        "m9.organize"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m9.competency",
+        "m9.resources",
+        "m9.organize"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m9.competency",
+        "m9.resources",
+        "m9.organize"
+      ]
+    }
+  ],
+  "slide_anchors": [
+    {
+      "id": "slide-elena",
+      "concept_ids": [
+        "m9.competency",
+        "m9.resources"
+      ]
+    },
+    {
+      "id": "slide-inventory",
+      "concept_ids": [
+        "m9.organize"
+      ]
+    },
+    {
+      "id": "slide-seven-s",
+      "concept_ids": [
+        "m9.organize"
+      ]
+    },
+    {
+      "id": "slide-practice",
+      "concept_ids": [
+        "m9.competency",
+        "m9.resources",
+        "m9.organize"
+      ]
+    },
+    {
+      "id": "slide-check",
+      "concept_ids": [
+        "m9.competency",
+        "m9.resources",
+        "m9.organize"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m9.competency",
+      "read_ids": [
+        "elena",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-elena",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.resources",
+      "read_ids": [
+        "elena",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-elena",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.organize",
+      "read_ids": [
+        "inventory",
+        "seven-s",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-inventory",
+        "slide-seven-s",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    }
+  ],
+  "original_checks": {
+    "inventory": {
+      "prompt_fil": "May apat na lumang handout at walang kasalukuyang bersyon sa kit. Ano ang ligtas na susunod na hakbang?",
+      "prompt_en": "The kit has four outdated handouts and no current version. What is the safe next step?",
+      "options": [
+        {
+          "fil": "Ipamahagi ang luma para hindi masayang.",
+          "en": "Distribute the old copies so they are not wasted."
+        },
+        {
+          "fil": "Palitan ang label at ituring na aprubado ang luma.",
+          "en": "Relabel the old copies as approved."
+        },
+        {
+          "fil": "Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya.",
+          "en": "Set aside the old copies, verify the approved master and request current copies."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "Ang ikatlong sagot ang nagpoprotekta sa tamang impormasyon. Hindi nagiging tama ang lumang bersyon dahil sayang itong itapon o palitan ang label.",
+      "feedback_en": "The third response protects correct information. An outdated version does not become valid because disposal feels wasteful or its label is changed."
+    },
+    "check": {
+      "prompt_fil": "Hindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?",
+      "prompt_en": "Handouts cannot be found, so someone wants to reorder. What first?",
+      "options": [
+        {
+          "fil": "Mag-order agad ng doble para sigurado.",
+          "en": "Order twice as many immediately."
+        },
+        {
+          "fil": "Suriin ang labeled storage, approved version at bilang ng stock.",
+          "en": "Check labeled storage, approved version and stock count."
+        },
+        {
+          "fil": "Gamitin ang anumang lumang handout na makita.",
+          "en": "Use any old handout that can be found."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.",
+      "feedback_en": "The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version."
+    }
+  },
+  "original_competency": {
+    "observation_indicators": [
+      {
+        "objective_index": 0,
+        "observable_fil": "May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon.",
+        "observable_en": "Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions.",
+        "not_yet_fil": "Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.",
+        "not_yet_en": "Orders from guesses or uses expired or incorrect material simply to save resources.",
+        "levels": {
+          "kaya_na_fil": "May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon. Nagagawa kahit hindi pinapaalalahanan.",
+          "kaya_na_en": "Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions. Completes this without prompting.",
+          "kailangan_practice_fil": "Nakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin.",
+          "kailangan_practice_en": "Identifies waste but gives no evidence or routine owner; complete the audit row and repeat.",
+          "hindi_pa_fil": "Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.",
+          "hindi_pa_en": "Orders from guesses or uses expired or incorrect material simply to save resources."
+        }
+      }
+    ]
+  },
+  "target_files_utf8": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/competency.json": "{\n  \"observation_indicators\": [\n    {\n      \"objective_index\": 0,\n      \"observable_fil\": \"May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon.\",\n      \"observable_en\": \"Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions.\",\n      \"not_yet_fil\": \"Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.\",\n      \"not_yet_en\": \"Orders from guesses or uses expired or incorrect material simply to save resources.\",\n      \"levels\": {\n        \"kaya_na_fil\": \"May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon. Nagagawa kahit hindi pinapaalalahanan.\",\n        \"kaya_na_en\": \"Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions. Completes this without prompting.\",\n        \"kailangan_practice_fil\": \"Nakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin.\",\n        \"kailangan_practice_en\": \"Identifies waste but gives no evidence or routine owner; complete the audit row and repeat.\",\n        \"hindi_pa_fil\": \"Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.\",\n        \"hindi_pa_en\": \"Orders from guesses or uses expired or incorrect material simply to save resources.\"\n      }\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.en.md": "## [purpose] Purpose\n\nIn a sample BHS, record three sources of waste, their evidence and a safe routine that reduces searching or duplicate ordering.\n\n## [time-materials] Time and materials\n\n60 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare a fictional kit, stock count and two handout versions. Identify the approved version.\n\n## [opening] Opening\n\nHandouts cannot be found, so someone wants to reorder. What first?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nFor the inventory check, set aside outdated handouts, verify the approved master and request current copies. Relabeling or distributing an old version would sacrifice correct information.\n\nThe second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.\n\n## [misconception] Common misconception\n\nOrders from guesses or uses expired or incorrect material simply to save resources. Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.\n\n## [practice] Practice activity\n\nMake an audit with resource, observed waste, evidence and a safe next step. Use Elena’s three examples; do not invent bills or quantities. Show a partner how labels and stock counts prevent duplicate orders. Alone, check a fictional teaching kit. At the next duty, observe one resource and discuss findings with the supervisor.\n\n## [answer-key] Answer key\n\nInventory check: 3. Set aside the old copies, verify the approved master and request current copies.\n\n2. Check labeled storage, approved version and stock count.\n\nThe second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.\n\n## [observe] Observe\n\nRecords three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions.\n\nReady: Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions. Completes this without prompting.\n\nNeeds practice: Identifies waste but gives no evidence or routine owner; complete the audit row and repeat.\n\nNot yet: Orders from guesses or uses expired or incorrect material simply to save resources.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nIdentifies waste but gives no evidence or routine owner; complete the audit row and repeat. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. This expands the ninth competency rather than a standalone manual chapter. The draft TESDA 400311217 crosswalk is in the review report; assessor review and local work procedures remain pending. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n\r\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.fil.md": "## [purpose] Layunin\n\nSa halimbawang BHS, itala ang tatlong pag-aaksaya, ang ebidensya at isang ligtas na routine na makababawas sa paghahanap o dobleng pag-order.\n\n## [time-materials] Oras at kagamitan\n\n60 minuto para sa pagsasanay na pinamumunuan ng facilitator. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang kunwaring kit, stock count at dalawang bersyon ng handout. Tiyakin kung alin ang aprubado.\n\n## [opening] Pambungad\n\nHindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nSa inventory check, ihiwalay ang lumang handout, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya. Masisira ang tamang impormasyon kung papalitan lang ang label o ipamamahagi ang luma.\n\nAng ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.\n\n## [misconception] Karaniwang pagkakamali\n\nNag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid. Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.\n\n## [practice] Gawaing pagsasanay\n\nGumawa ng audit na may resource, nakitang pag-aaksaya, ebidensya at ligtas na susunod na hakbang. Gamitin ang tatlong halimbawa ni Elena; huwag mag-imbento ng bill o dami. Ipakita sa kapareha kung paano ang label at stock count ay iiwas sa dobleng order. Kung mag-isa, sundan ang checklist gamit ang kunwaring teaching kit. Sa susunod na duty, obserbahan ang isang resource at talakayin ang findings sa supervisor.\n\n## [answer-key] Susi sa sagot\n\nInventory check: 3. Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya.\n\n2. Suriin ang labeled storage, approved version at bilang ng stock.\n\nAng ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.\n\n## [observe] Obserbahan\n\nMay tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon.\n\nKaya na: May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Nakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin.\n\nHindi pa: Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nNakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. Instructional expansion ito ng ikasiyam na competency, hindi hiwalay na manual chapter. Ang draft crosswalk sa TESDA 400311217 ay nasa review report; kailangan pa ng assessor review at lokal na work procedures. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n\r\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"resources-audit\",\n    \"position\": 0,\n    \"title_fil\": \"Saan nasasayang ang resources?\",\n    \"title_en\": \"Where are resources wasted?\",\n    \"objectives_fil\": [\n      \"Sa halimbawang BHS, itala ang tatlong pag-aaksaya, ang ebidensya at isang ligtas na routine na makababawas sa paghahanap o dobleng pag-order.\"\n    ],\n    \"objectives_en\": [\n      \"In a sample BHS, record three sources of waste, their evidence and a safe routine that reduces searching or duplicate ordering.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"elena\",\n      \"concept_ids\": [\n        \"m9.competency\",\n        \"m9.resources\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Tukuyin muna ang nasasayang na resources bago pumili ng pagtitipid.\",\n      \"takeaway_en\": \"Identify wasted resources before choosing a saving measure.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"inventory\",\n      \"concept_ids\": [\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang maayos na imbakan ay tumutulong sa ligtas na paggamit at tumpak na paghingi ng resources.\",\n      \"takeaway_en\": \"Orderly storage supports safe use and accurate resource requests.\",\n      \"check\": {\n        \"prompt_fil\": \"May apat na lumang handout at walang kasalukuyang bersyon sa kit. Ano ang ligtas na susunod na hakbang?\",\n        \"prompt_en\": \"The kit has four outdated handouts and no current version. What is the safe next step?\",\n        \"options\": [\n          {\n            \"fil\": \"Ipamahagi ang luma para hindi masayang.\",\n            \"en\": \"Distribute the old copies so they are not wasted.\"\n          },\n          {\n            \"fil\": \"Palitan ang label at ituring na aprubado ang luma.\",\n            \"en\": \"Relabel the old copies as approved.\"\n          },\n          {\n            \"fil\": \"Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya.\",\n            \"en\": \"Set aside the old copies, verify the approved master and request current copies.\"\n          }\n        ],\n        \"correct_option_index\": 2,\n        \"feedback_fil\": \"Ang ikatlong sagot ang nagpoprotekta sa tamang impormasyon. Hindi nagiging tama ang lumang bersyon dahil sayang itong itapon o palitan ang label.\",\n        \"feedback_en\": \"The third response protects correct information. An outdated version does not become valid because disposal feels wasteful or its label is changed.\"\n      }\n    },\n    {\n      \"id\": \"seven-s\",\n      \"concept_ids\": [\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang kaayusan ay pinananatili ng simpleng routine at pananagutan.\",\n      \"takeaway_en\": \"A simple routine and clear responsibility sustain order.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m9.competency\",\n        \"m9.resources\",\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [\n        \"resource-audit\"\n      ],\n      \"takeaway_fil\": \"Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.\",\n      \"takeaway_en\": \"Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m9.competency\",\n        \"m9.resources\",\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.\",\n      \"takeaway_en\": \"Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.\",\n      \"check\": {\n        \"prompt_fil\": \"Hindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?\",\n        \"prompt_en\": \"Handouts cannot be found, so someone wants to reorder. What first?\",\n        \"options\": [\n          {\n            \"fil\": \"Mag-order agad ng doble para sigurado.\",\n            \"en\": \"Order twice as many immediately.\"\n          },\n          {\n            \"fil\": \"Suriin ang labeled storage, approved version at bilang ng stock.\",\n            \"en\": \"Check labeled storage, approved version and stock count.\"\n          },\n          {\n            \"fil\": \"Gamitin ang anumang lumang handout na makita.\",\n            \"en\": \"Use any old handout that can be found.\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.\",\n        \"feedback_en\": \"The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m9.competency\",\n      \"read_ids\": [\n        \"elena\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-elena\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    },\n    {\n      \"id\": \"m9.resources\",\n      \"read_ids\": [\n        \"elena\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-elena\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    },\n    {\n      \"id\": \"m9.organize\",\n      \"read_ids\": [\n        \"inventory\",\n        \"seven-s\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-inventory\",\n        \"slide-seven-s\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        19,\n        22,\n        34\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        14,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"tesda-400311217\",\n      \"title\": \"TESDA BHS NC II Revision 01 (2019), unit 400311217\",\n      \"pdf_pages\": [\n        33,\n        34,\n        35\n      ],\n      \"url\": \"https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"resource-audit\",\n      \"path\": \"/training/module-1-9/audit-ee0994eebb38.svg\",\n      \"content_hash\": \"ee0994eebb381693311969420c61c13008e10658d13ba7a005e10df3082f7d9f\",\n      \"alt_fil\": \"Tatlong hakbang sa resource audit: obserbahan ang pag-aaksaya, suriin ang ebidensya, at pumili ng ligtas na hakbang.\",\n      \"alt_en\": \"Three resource-audit steps: observe waste, check evidence, and choose a safe action.\",\n      \"caption_fil\": \"Suriin ang ebidensya bago magbago ng routine.\",\n      \"caption_en\": \"Check evidence before changing a routine.\",\n      \"provenance\": \"Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.\",\n      \"review_status\": \"approved\"\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.en.md": "## [elena] Supplies run out before the week ends\n\nBHW Elena, 38, is preparing health teaching at the BHS. A tap leaks, incorrect handouts are repeatedly printed, and missing supplies are bought again. She does not immediately conclude that the budget is too small. She records where water, paper, electricity and time are being wasted. Effective workplace practice delivers needed services while reducing wasted resources.\n\n## [inventory] Find it, count it, return it\n\nAssign labeled places for approved supplies. Count stock before requesting more and check expiry under the local inventory procedure. Separate and report expired or damaged items; do not distribute them simply to use them up. Return reusable teaching materials to their place. Orderly storage reduces duplicate ordering and searching time while making real shortages visible.\n\n## [seven-s] 7S as a daily routine\n\nUse 7S to maintain order: remove unnecessary items, arrange what is needed, clean the area, standardize the method, ensure safety, practice self-discipline and sustain the routine. For example, give the teaching kit a label, contents checklist, cleaning schedule and a person checking it before and after use. A single cleanup is insufficient if disorder returns the following week.\n\n## [practice] Try it, then repeat\n\nMake an audit with resource, observed waste, evidence and a safe next step. Use Elena’s three examples; do not invent bills or quantities. Show a partner how labels and stock counts prevent duplicate orders. Alone, check a fictional teaching kit. At the next duty, observe one resource and discuss findings with the supervisor.\n\n## [check] Choose the next step\n\nChoose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.fil.md": "## [elena] Ubos ang supplies bago matapos ang linggo\n\nSi BHW Elena, 38 anyos, ay naghahanda ng health teaching sa BHS. May tumutulong gripo, paulit-ulit na maling printout at mga gamit na hindi makita kaya bumibili ulit. Hindi agad “kulang ang budget” ang konklusyon niya. Itinala niya kung saan nauubos ang tubig, papel, kuryente at oras. Ang mabisang gawi ay naghahatid ng kinakailangang serbisyo habang binabawasan ang nasasayang na resources.\n\n## [inventory] Makita, mabilang, maibalik\n\nMaglaan ng may-label na lugar para sa aprubadong supplies. Bilangin ang stock bago humingi ng dagdag at suriin ang expiry ayon sa lokal na inventory procedure. Ihiwalay at iulat ang expired o sirang gamit; huwag ipamigay para lang maubos. Ibalik sa tamang lugar ang reusable teaching materials. Ang orderly storage ay nakababawas sa duplicate orders at oras ng paghahanap, habang madaling makita ang tunay na kakulangan.\n\n## [seven-s] 7S bilang araw-araw na routine\n\nGamitin ang 7S upang mapanatili ang kaayusan: alisin ang hindi kailangan, ayusin ang kailangan, linisin ang lugar, magtakda ng pare-parehong paraan, gawing ligtas, gawin ang tungkulin nang hindi laging inuutusan, at ipagpatuloy ang routine. Halimbawa, may label ang teaching kit, checklist ng laman, nakatakdang paglilinis at taong sumusuri bago at matapos gamitin. Hindi sapat ang isang “general cleaning” kung babalik sa dating kalat sa susunod na linggo.\n\n## [practice] Subukan, saka ulitin\n\nGumawa ng audit na may resource, nakitang pag-aaksaya, ebidensya at ligtas na susunod na hakbang. Gamitin ang tatlong halimbawa ni Elena; huwag mag-imbento ng bill o dami. Ipakita sa kapareha kung paano ang label at stock count ay iiwas sa dobleng order. Kung mag-isa, sundan ang checklist gamit ang kunwaring teaching kit. Sa susunod na duty, obserbahan ang isang resource at talakayin ang findings sa supervisor.\n\n## [check] Piliin ang susunod na hakbang\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/slides.json": "[\n  {\n    \"id\": \"slide-elena\",\n    \"concept_ids\": [\n      \"m9.competency\",\n      \"m9.resources\"\n    ],\n    \"layout\": \"scene\",\n    \"heading_fil\": \"Ubos ang supplies bago matapos ang linggo\",\n    \"heading_en\": \"Supplies run out before the week ends\",\n    \"display_fil\": \"Si Elena, 38, ay nakakita ng tumutulong gripo, paulit-ulit na printing at gamit na hindi makita. Itala ang nasasayang na tubig, papel, kuryente at oras bago magmungkahi ng pagbabago.\",\n    \"display_en\": \"Elena, 38, finds a leaking tap, repeated printing and misplaced supplies. Record wasted water, paper, electricity and time before proposing changes.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-inventory\",\n    \"concept_ids\": [\n      \"m9.organize\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Makita, mabilang, maibalik\",\n    \"heading_en\": \"Find it, count it, return it\",\n    \"display_fil\": \"May label na puwesto → bilang at expiry check → report ng expired o damaged → ibalik ang reusable teaching materials. Huwag ipamigay ang expired para maubos lang.\",\n    \"display_en\": \"Labeled location → count and expiry check → report expired or damaged items → return reusable teaching materials. Do not distribute expired stock just to use it up.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"May apat na lumang handout at walang kasalukuyang bersyon sa kit. Ano ang ligtas na susunod na hakbang?\",\n      \"prompt_en\": \"The kit has four outdated handouts and no current version. What is the safe next step?\",\n      \"options\": [\n        {\n          \"fil\": \"Ipamahagi ang luma para hindi masayang.\",\n          \"en\": \"Distribute the old copies so they are not wasted.\"\n        },\n        {\n          \"fil\": \"Palitan ang label at ituring na aprubado ang luma.\",\n          \"en\": \"Relabel the old copies as approved.\"\n        },\n        {\n          \"fil\": \"Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya.\",\n          \"en\": \"Set aside the old copies, verify the approved master and request current copies.\"\n        }\n      ],\n      \"correct_option_index\": 2,\n      \"feedback_fil\": \"Ang ikatlong sagot ang nagpoprotekta sa tamang impormasyon. Hindi nagiging tama ang lumang bersyon dahil sayang itong itapon o palitan ang label.\",\n      \"feedback_en\": \"The third response protects correct information. An outdated version does not become valid because disposal feels wasteful or its label is changed.\"\n    }\n  },\n  {\n    \"id\": \"slide-seven-s\",\n    \"concept_ids\": [\n      \"m9.organize\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"7S bilang araw-araw na routine\",\n    \"heading_en\": \"7S as a daily routine\",\n    \"display_fil\": \"7S: alisin ang di kailangan, ayusin, linisin, standardize, tiyaking ligtas, gawin ang tungkulin, panatilihin. Sa teaching kit: label, checklist, cleaning routine at taong susuri bago at pagkatapos.\",\n    \"display_en\": \"7S: sort, systematize, sweep, standardize, safety, self-discipline, sustain. For a teaching kit: label, checklist, cleaning routine and a person checking before and after use.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-practice\",\n    \"concept_ids\": [\n      \"m9.competency\",\n      \"m9.resources\",\n      \"m9.organize\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Subukan, saka ulitin\",\n    \"heading_en\": \"Try it, then repeat\",\n    \"display_fil\": \"Resource → nakitang pag-aaksaya → ebidensya → ligtas na hakbang. Label at bilang bago mag-order.\",\n    \"display_en\": \"Resource → observed waste → evidence → safe step. Label and count before ordering.\",\n    \"asset_ids\": [\n      \"resource-audit\"\n    ],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-check\",\n    \"concept_ids\": [\n      \"m9.competency\",\n      \"m9.resources\",\n      \"m9.organize\"\n    ],\n    \"layout\": \"decision\",\n    \"heading_fil\": \"Piliin ang susunod na hakbang\",\n    \"heading_en\": \"Choose the next step\",\n    \"display_fil\": \"Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.\",\n    \"display_en\": \"Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"Hindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?\",\n      \"prompt_en\": \"Handouts cannot be found, so someone wants to reorder. What first?\",\n      \"options\": [\n        {\n          \"fil\": \"Mag-order agad ng doble para sigurado.\",\n          \"en\": \"Order twice as many immediately.\"\n        },\n        {\n          \"fil\": \"Suriin ang labeled storage, approved version at bilang ng stock.\",\n          \"en\": \"Check labeled storage, approved version and stock count.\"\n        },\n        {\n          \"fil\": \"Gamitin ang anumang lumang handout na makita.\",\n          \"en\": \"Use any old handout that can be found.\"\n        }\n      ],\n      \"correct_option_index\": 1,\n      \"feedback_fil\": \"Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.\",\n      \"feedback_en\": \"The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.\"\n    }\n  }\n]\n"
+  },
+  "target_files_sha256": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/competency.json": "9c1103a938c191ad10f5987c5babff05c2dc41a769bb2603734e9d46c89d5f11",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.en.md": "32fb3ebc829c0910971d8527e2fae913da58cbf232531c94fbb4a21ab84b3765",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.fil.md": "aacfc0e3a151261cb4ce3bb9772d5eb83609b5bb1206956f323989fe253ac064",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json": "75d963a78516c54792988b699c3d46ba26ecd9af7ff20d69f5dc4f4e26e791a0",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.en.md": "6c67ec5ca31e470277aab566070ac73cd3795b89f4eb9effce7d3585d1d6dc1b",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.fil.md": "b030b67a91641d632de3f624193b5a8d96a4d62eeddd97cbd3f154b5d9d34220",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/slides.json": "7704d6b8c490b1553ec386c2af4785a390dbe9a8e3f1e4119f7e7dc5bd48d1f7"
+  },
+  "target_narration": {
+    "module": "09-sustainable-practices",
+    "sections": {
+      "check": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/check.en.e7c6058c2cc6.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "e7c6058c2cc642ab8fa01cdec698a39d5e29b16350b2a6e9c2c2c06b84ad265c",
+          "sha256": "40893bbeb9bbdf8a4d22e8fa943577cbac9f8d0c1d8e98ad363a9ff3816cd572",
+          "duration_seconds": 18.756,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 1800
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2100,
+              "end_ms": 6900
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7200,
+              "end_ms": 10480
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
+              "start_ms": 10780,
+              "end_ms": 18700
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/check.fil.decd12214ed3.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "decd12214ed3938bf0a6ecce29c94473e1e702dd0016e63b7917fd40c7d24fe7",
+          "sha256": "fe311ad86affbe92f3cd191d9f78d1f20403df0ac144829aa3e4685dbbfe8c6c",
+          "duration_seconds": 21.577,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 3080
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 3380,
+              "end_ms": 8500
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 8800,
+              "end_ms": 13320
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.",
+              "start_ms": 13620,
+              "end_ms": 21500
+            }
+          ]
+        }
+      },
+      "elena": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/elena.en.189c66bf6365.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "189c66bf6365416cbd3660c2e3b45031f8da774c2349f51d7abdf4d3d5b8789d",
+          "sha256": "3df78bffc016407129165f137e7a633099597a4858e9c7612350b4fed52cf7e3",
+          "duration_seconds": 41.273,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Supplies run out before the week ends",
+              "start_ms": 0,
+              "end_ms": 2960
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "BHW Elena, 38, is preparing health teaching at the BHS.",
+              "start_ms": 3260,
+              "end_ms": 9020
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "A tap leaks, incorrect handouts are repeatedly printed, and missing supplies are bought again.",
+              "start_ms": 9320,
+              "end_ms": 16520
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "She does not immediately conclude that the budget is too small.",
+              "start_ms": 16820,
+              "end_ms": 21620
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "She records where water, paper, electricity and time are being wasted.",
+              "start_ms": 21920,
+              "end_ms": 28560
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Effective workplace practice delivers needed services while reducing wasted resources.",
+              "start_ms": 28860,
+              "end_ms": 36220
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Identify wasted resources before choosing a saving measure.",
+              "start_ms": 36520,
+              "end_ms": 41200
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/elena.fil.3908dbcca07e.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "3908dbcca07e3dc76f382102485312b5f2f006862cb9001c59b24767347d1e67",
+          "sha256": "3ef95118507df594195fc282c695707c1a6737df12e2c04e29ab83d608684e10",
+          "duration_seconds": 46.263,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Ubos ang supplies bago matapos ang linggo",
+              "start_ms": 0,
+              "end_ms": 3280
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Si BHW Elena, 38 anyos, ay naghahanda ng health teaching sa BHS.",
+              "start_ms": 3580,
+              "end_ms": 11100
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "May tumutulong gripo, paulit-ulit na maling printout at mga gamit na hindi makita kaya bumibili ulit.",
+              "start_ms": 11400,
+              "end_ms": 19920
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Hindi agad “kulang ang budget” ang konklusyon niya.",
+              "start_ms": 20220,
+              "end_ms": 24180
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Itinala niya kung saan nauubos ang tubig, papel, kuryente at oras.",
+              "start_ms": 24480,
+              "end_ms": 31320
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ang mabisang gawi ay naghahatid ng kinakailangang serbisyo habang binabawasan ang nasasayang na resources.",
+              "start_ms": 31620,
+              "end_ms": 40380
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Tukuyin muna ang nasasayang na resources bago pumili ng pagtitipid.",
+              "start_ms": 40680,
+              "end_ms": 46200
+            }
+          ]
+        }
+      },
+      "inventory": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/inventory.en.824b11b72f9a.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "824b11b72f9a70695502d8ab74b7167d0710fbd5a80e3a9845411265fcc5ad7b",
+          "sha256": "7e05d6d7bcaa3db609550c2e33f5c295f0db434518d7d5d5f47c5b13bcad678e",
+          "duration_seconds": 40.176,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Find it, count it, return it",
+              "start_ms": 0,
+              "end_ms": 4000
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Assign labeled places for approved supplies.",
+              "start_ms": 4300,
+              "end_ms": 8060
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Count stock before requesting more and check expiry under the local inventory procedure.",
+              "start_ms": 8360,
+              "end_ms": 14960
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Separate and report expired or damaged items; do not distribute them simply to use them up.",
+              "start_ms": 15260,
+              "end_ms": 22540
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Return reusable teaching materials to their place.",
+              "start_ms": 22840,
+              "end_ms": 26840
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Orderly storage reduces duplicate ordering and searching time while making real shortages visible.",
+              "start_ms": 27140,
+              "end_ms": 34460
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Orderly storage supports safe use and accurate resource requests.",
+              "start_ms": 34760,
+              "end_ms": 40120
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/inventory.fil.3d817c04266c.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "3d817c04266caa5e71196cfa3f6381d42d3dcfa0bd0237baa42f2d3a445d30e9",
+          "sha256": "e33b6169c9680b9fd083284eb0916c84d3fdfd544263072ccb2ba54e4ac08014",
+          "duration_seconds": 46.55,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Makita, mabilang, maibalik",
+              "start_ms": 0,
+              "end_ms": 4560
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Maglaan ng may-label na lugar para sa aprubadong supplies.",
+              "start_ms": 4860,
+              "end_ms": 9420
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Bilangin ang stock bago humingi ng dagdag at suriin ang expiry ayon sa lokal na inventory procedure.",
+              "start_ms": 9720,
+              "end_ms": 17080
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ihiwalay at iulat ang expired o sirang gamit; huwag ipamigay para lang maubos.",
+              "start_ms": 17380,
+              "end_ms": 24220
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Ibalik sa tamang lugar ang reusable teaching materials.",
+              "start_ms": 24520,
+              "end_ms": 28600
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ang orderly storage ay nakababawas sa duplicate orders at oras ng paghahanap, habang madaling makita ang tunay na kakulangan.",
+              "start_ms": 28900,
+              "end_ms": 38700
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang maayos na imbakan ay tumutulong sa ligtas na paggamit at tumpak na paghingi ng resources.",
+              "start_ms": 39000,
+              "end_ms": 46480
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/practice.en.495ed302e28f.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "495ed302e28f6a909878d7c7b04f64a99e27da66ba9f8dae3fef0fba889eba6d",
+          "sha256": "44dcf98bba88d6d644fc4202a444b28b0c33724605ecd332c69e730463ae871e",
+          "duration_seconds": 38.713,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2600
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Make an audit with resource, observed waste, evidence and a safe next step.",
+              "start_ms": 2900,
+              "end_ms": 10380
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Use Elena’s three examples; do not invent bills or quantities.",
+              "start_ms": 10680,
+              "end_ms": 15320
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Show a partner how labels and stock counts prevent duplicate orders.",
+              "start_ms": 15620,
+              "end_ms": 20660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Alone, check a fictional teaching kit.",
+              "start_ms": 20960,
+              "end_ms": 24720
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "At the next duty, observe one resource and discuss findings with the supervisor.",
+              "start_ms": 25020,
+              "end_ms": 31140
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
+              "start_ms": 31440,
+              "end_ms": 38640
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/practice.fil.8d9aee5a1ff1.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "8d9aee5a1ff1feff37bdae274fbb2b083c5b1cfeb15453ff4c3b314cf67f0dc7",
+          "sha256": "cc8da33267ed949b0740ed8a6047426f79aabe03960035598b06fa4c0e376135",
+          "duration_seconds": 44.095,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 3040
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Gumawa ng audit na may resource, nakitang pag-aaksaya, ebidensya at ligtas na susunod na hakbang.",
+              "start_ms": 3340,
+              "end_ms": 11780
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Gamitin ang tatlong halimbawa ni Elena; huwag mag-imbento ng bill o dami.",
+              "start_ms": 12080,
+              "end_ms": 18040
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ipakita sa kapareha kung paano ang label at stock count ay iiwas sa dobleng order.",
+              "start_ms": 18340,
+              "end_ms": 24740
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Kung mag-isa, sundan ang checklist gamit ang kunwaring teaching kit.",
+              "start_ms": 25040,
+              "end_ms": 30280
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Sa susunod na duty, obserbahan ang isang resource at talakayin ang findings sa supervisor.",
+              "start_ms": 30580,
+              "end_ms": 37100
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.",
+              "start_ms": 37400,
+              "end_ms": 44040
+            }
+          ]
+        }
+      },
+      "seven-s": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/seven-s.en.1dea5e0c8c9d.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "1dea5e0c8c9d106fd2360bdb4052215a67480bc4411f51d555d9250da13393c6",
+          "sha256": "0826b56b1e8a5e5eee7d4a0071e500b18d1286c2ae7ed0936ec1771d5bca6ffb",
+          "duration_seconds": 42.292,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "7S as a daily routine",
+              "start_ms": 0,
+              "end_ms": 2840
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Use 7S to maintain order: remove unnecessary items, arrange what is needed, clean the area, standardize the method, ensure safety, practice self-discipline and sustain the routine.",
+              "start_ms": 3140,
+              "end_ms": 20060
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "For example, give the teaching kit a label, contents checklist, cleaning schedule and a person checking it before and after use.",
+              "start_ms": 20360,
+              "end_ms": 31000
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "A single cleanup is insufficient if disorder returns the following week.",
+              "start_ms": 31300,
+              "end_ms": 36660
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A simple routine and clear responsibility sustain order.",
+              "start_ms": 36960,
+              "end_ms": 42240
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-audit/seven-s.fil.3cac2a9b31f3.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "3cac2a9b31f3a8f6c8b5e19b1f969191581262a1ed738d20fdcc72d5855dc815",
+          "sha256": "5c3bda00a33e8e9f8ab7d917f142808ffa371371fb27609374fcd76d87df8ca9",
+          "duration_seconds": 50.312,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "7S bilang araw-araw na routine",
+              "start_ms": 0,
+              "end_ms": 3480
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Gamitin ang 7S upang mapanatili ang kaayusan: alisin ang hindi kailangan, ayusin ang kailangan, linisin ang lugar, magtakda ng pare-parehong paraan, gawing ligtas, gawin ang tungkulin nang hindi laging inuutusan, at ipagpatuloy ang routine.",
+              "start_ms": 3780,
+              "end_ms": 26700
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Halimbawa, may label ang teaching kit, checklist ng laman, nakatakdang paglilinis at taong sumusuri bago at matapos gamitin.",
+              "start_ms": 27000,
+              "end_ms": 38440
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Hindi sapat ang isang “general cleaning” kung babalik sa dating kalat sa susunod na linggo.",
+              "start_ms": 38740,
+              "end_ms": 44860
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang kaayusan ay pinananatili ng simpleng routine at pananagutan.",
+              "start_ms": 45160,
+              "end_ms": 50240
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "selected_public_media_sha256": {
+    "/training/module-1-9/audit-ee0994eebb38.svg": "ee0994eebb381693311969420c61c13008e10658d13ba7a005e10df3082f7d9f",
+    "/training/audio/09-sustainable-practices/resources-audit/check.en.e7c6058c2cc6.mp3": "40893bbeb9bbdf8a4d22e8fa943577cbac9f8d0c1d8e98ad363a9ff3816cd572",
+    "/training/audio/09-sustainable-practices/resources-audit/check.fil.decd12214ed3.mp3": "fe311ad86affbe92f3cd191d9f78d1f20403df0ac144829aa3e4685dbbfe8c6c",
+    "/training/audio/09-sustainable-practices/resources-audit/elena.en.189c66bf6365.mp3": "3df78bffc016407129165f137e7a633099597a4858e9c7612350b4fed52cf7e3",
+    "/training/audio/09-sustainable-practices/resources-audit/elena.fil.3908dbcca07e.mp3": "3ef95118507df594195fc282c695707c1a6737df12e2c04e29ab83d608684e10",
+    "/training/audio/09-sustainable-practices/resources-audit/inventory.en.824b11b72f9a.mp3": "7e05d6d7bcaa3db609550c2e33f5c295f0db434518d7d5d5f47c5b13bcad678e",
+    "/training/audio/09-sustainable-practices/resources-audit/inventory.fil.3d817c04266c.mp3": "e33b6169c9680b9fd083284eb0916c84d3fdfd544263072ccb2ba54e4ac08014",
+    "/training/audio/09-sustainable-practices/resources-audit/practice.en.495ed302e28f.mp3": "44dcf98bba88d6d644fc4202a444b28b0c33724605ecd332c69e730463ae871e",
+    "/training/audio/09-sustainable-practices/resources-audit/practice.fil.8d9aee5a1ff1.mp3": "cc8da33267ed949b0740ed8a6047426f79aabe03960035598b06fa4c0e376135",
+    "/training/audio/09-sustainable-practices/resources-audit/seven-s.en.1dea5e0c8c9d.mp3": "0826b56b1e8a5e5eee7d4a0071e500b18d1286c2ae7ed0936ec1771d5bca6ffb",
+    "/training/audio/09-sustainable-practices/resources-audit/seven-s.fil.3cac2a9b31f3.mp3": "5c3bda00a33e8e9f8ab7d917f142808ffa371371fb27609374fcd76d87df8ca9"
+  },
+  "sibling_and_legacy_files_sha256": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/competency.json": "7feaa0ac20e4a6ecbe2e8d8a293a60586f4949d32bd57ca8be7a0c63e6b34cd2",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/module.json": "0d17489aaebb552df27fe87998c6f3d77640333a8595ab4a64e99d50c77a0238",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/facilitator-notes.en.md": "519b9595d8805c30cc7f67169f56102014de1c7666e133c892282c852543b5a4",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/coverage.json": "9befaa0c62a90b4686c071804a23db9c6eb23897bd7c797953527b63b0cc7e79",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lesson.en.md": "ff947088c0ac61068cd121fecbb96e29b633b813b8c313d753ebd38452688271",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/qa-entries.json": "b94945c3416d8a5d6dd8d4350041b38a3a4488dff84f1f037ac4cf046efa1ae8",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/facilitator-notes.fil.md": "91f5fa960e342aac6c5795da790f3d863b1fd82a478d432a36ef21b55f22e3c6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lesson.fil.md": "7454358bfbe4dcedaeaf9bbac90c06f04253c24d03162717ceb97122134b078c",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/activities.json": "72825265f9f2ee4e5450ef966cb7a60130b4f4a6a7e2e67cfbca91e7a473ad34",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/visuals/01-sukat-subok-review.svg": "e849788c866969671017dedc05795b9cf6a3e44140205b7b6962fba65f0fe9a6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/visuals/visuals.json": "75cc6dd8691011dcd66df96bb57878064831cb90a9dd8be3199a6314d6ac3358",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/competency.json": "d460091f13bf82cc64f24bdafd01edd9fd8390f7890021d1f1bdbe33e6f9b1ce",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/slides.json": "01111efc42991991b01dc685a3b62063c5c67e41b1359952e86cb1af3578de4e",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.en.md": "18042f6d4545256b4dce957d4a4c0126ecdf43b93d27dc01196b3f296fb8d081",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.fil.md": "addbcc4e6af8b69e7c00724314f2d2def2b15db0323e05449d66b8408f0ab5fa",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.en.md": "2691742e10fc6ee8905631ddd5309afdcd016d9b1c435291438fcc0e396b03e6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json": "a258bc0dc67b58303d21d07f79685b5d6bb207db51a9a5a4306a223beb93d42b",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.fil.md": "7f19cab8ba9261f073376bc9b76ef83f4c263330d37c02ce3ca3e575964b549f",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/competency.json": "0325dd0c78508ceaeecbafc61f84345e23bb79ad7b06a269552fb9712f7e08a8",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/slides.json": "4bdf3140b6ad8c6da2bbf331a75913532dd0a84a8a29a59a2ca75827ad3e8de7",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.en.md": "4623039e82270488fe358c3d174ce1844ff9d860c5c6f8a12ba91ddf5001b669",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.fil.md": "9e8ab15373156f4920e44ccc2e7f2f60d4ef67588a52ca366ed52faeed45caf0",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.en.md": "f59a71f8bb044a8bd5c256a2c85c7900a17685ab52218bce938492e63cdf5006",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json": "f40e8ee07034e78e731e3d8b0cd6e548117f8b6cf6c850dbc8fbfc579c1e5a27",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.fil.md": "e2f9bcbe40e37910452640f862a72eb2f4e92bdef3316351279cc92945b82723"
+  },
+  "shared_files_sha256": {
+    "content/training/day1-basic-competencies/narration.json": "38b3efcdb61252d720a9aff7189e7f64d68e77d3c0f3054c25310fa81d3fa5a9",
+    "remotion/src/Root.tsx": "5289e6c0792058d3c1d245ee01983958a73b90795ff2c4331f1504078725b321",
+    "src/components/elearning/reference-lessons.tsx": "2fe0440a857efee6b4fb2d3f62bb450a444274d4d834225f457bf301343819be",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    ".github/workflows/ci.yml": "2082486dc631bc54e820b422fdc07523be25dab3d0788ac9f5d33c5c4b3663b7",
+    ".github/workflows/remotion.yml": "325ba1f3e0fc8fa5886aa5966ba2490da2d2616469a8e071142c7f14c1b9b9b3",
+    "scripts/lib/reference-content.mjs": "96bd6b4f49eb0d0985c0e0010c5733f3a71e51236f9eff5734ae1ba2b34f2c3a",
+    "scripts/lib/reference-narration.mjs": "2ae95cbba1e74e3befd7bb71ffa669fa7fc34905cbb1c407f4571581d9470534",
+    "src/lib/elearning/reference-narration.ts": "ce925ca7114ad2036688098e5e64dfc04bc72a0a507c736e7a7dbd85bb0064ab",
+    "scripts/lib/reference-load.mjs": "97b0e95f026d4695c8fe59b3197759c2670b03f66fe8b5fea39a3c818cd5bdbd",
+    "scripts/lib/tts-providers/azure.mjs": "89f7133c741e70c526093df0fa88b403af023f3f423220e40f96cea858217619",
+    "scripts/lib/tts-providers/edge-tts.test.mjs": "e4f01f2ddf614864a67d814592f055695f627bb5527bd0a315404bab082539f9",
+    "scripts/lib/tts-providers/edge-read-aloud.mjs": "6ab984fa22f5afa97986d4a843decba51af9f39045af937d86c4f5159dded90a",
+    "scripts/lib/tts-providers/ssml.mjs": "4fcbfa756cedc2731a53ea20f46226c6b3af9c562f26b4d9178f03b55301c1b2",
+    "scripts/lib/tts-providers/ssml.test.mjs": "fd5a1b93493f6ac3c9b64f2fd2851c545874ae9a393a5f2ae04ec4aa158e99de",
+    "scripts/lib/tts-providers/gemini.test.mjs": "5dafe4d57b19779fa40fcdab66d45e37b72ab372476e4fa33f23a639423ecde0",
+    "scripts/lib/tts-providers/gemini.mjs": "f841e0934b13b29631e841a3abbfd1aebe63be591f5c23b3f6981f3ebc3687ee",
+    "scripts/lib/tts-providers/edge-tts.mjs": "e45696c2de4b5606f5fc0eb416eac7880bc7be8291060864ac58ff8ff86665b2"
+  },
+  "source_files_sha256": {
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/kwento-ni-rosario.md": "c3907b1b473f6cf7f7506de06b8aa3a8051806709e31d45f3f7ab946432744ef",
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976"
+  },
+  "prior_approval_and_proposal_sha256": {
+    "docs/lesson-121-translation-owner-approval.json": "4bc5e9378c55cc601f9622143b96cad4508f3ae36421fd3f175eda2715e3bade",
+    "docs/lesson-122-translation-owner-approval.json": "c546603a8a8d2b565e1acfb25b76aed2c4d8e90787dce972664049c2bf78e1cb",
+    "docs/lesson-123-owner-approval.json": "32156f491b9566865691cfc16285aa48e567246251dcce0fef91c26bf06d3661",
+    "docs/lesson-123-translation-owner-approval.json": "2f16b5868243bffab39050d131c01833bb9dc862919033fb1696e8cdf32ca430",
+    "docs/lesson-124-owner-approval.json": "2b871a8369b40574ff7ebf282f62a5724407bd690eb85e677c759e43f99b88a5",
+    "docs/lesson-124-translation-owner-approval.json": "e968052a991b65c71e1df57cac965888cbdf782f8523d18125229b1525c0acda",
+    "docs/lesson-131-owner-approval.json": "de6cbf3a1fb81eabdc29f43e760b5119f6c5d5b707db604dcdbb12bf1fe8758a",
+    "docs/lesson-132-owner-approval.json": "abd737a01f46d9f1c64db498077a8fae702290cffcf4d30ed806a412513e0159",
+    "docs/lesson-133-owner-approval.json": "f9d2d35549e668e79cc6c076710f6c3369f75912e4ff0ef864b19864d5a93bd3",
+    "docs/lesson-134-owner-approval.json": "d3c8fe6e11f15ddc0e89f890ed41ce5942498b04327290071aa3fba3d1b1aaf1",
+    "docs/lesson-135-owner-approval.json": "09f5051708d0533498c667c644897c0d8309ed6bfe2dd6fe35cc95a7e5242c56",
+    "docs/lesson-141-owner-approval.json": "994eb0ba26ebe89360fcc49374c5d5ead176a67ee937fa82af81e5ad0551be88",
+    "docs/lesson-142-owner-approval.json": "c652a75d2ed861ff75e91d3decb3ea3ad82bd420d6e598aeb6203bdc92b75ed0",
+    "docs/lesson-143-owner-approval.json": "bc1a15799d6c39676e91553337aac0b41bae9d71fc6cfddab64e824c7671fd52",
+    "docs/lesson-144-owner-approval.json": "2a8250e7eafd322013d027c2eb16e176a745a0f606308591afa4a2083a999948",
+    "docs/lesson-145-owner-approval.json": "8eac6235972b7daf9df56565e8288f3d44d9af235d286135c1ea95184b352cd1",
+    "docs/lesson-151-owner-approval.json": "fa04c4a13c0081649b1ed86020535206dc5e00859fb829ef59a79e30161ca4f2",
+    "docs/lesson-152-owner-approval.json": "a96f599b1fad044b390222965786986004e8e9c646166c3a9b85b7a5bd028462",
+    "docs/lesson-153-owner-approval.json": "5b44380d944f2a086459e54d5f84740fc386d224bf861e3054edb6ff9ae61f84",
+    "docs/lesson-154-owner-approval.json": "14af7ac72e72e1519b1c2a30e576e6f31c0ffd1063f77a01a12ccc7c541adce2",
+    "docs/lesson-155-owner-approval.json": "0064edf2a44e8ea24c00f8f8b1e975dc97d20d3bc6df12efa21cd5568446e4af",
+    "docs/lesson-155-proposal-receipt.json": "6d71b322a32119ec2ee4c3cb5a1c85d31d87142493a39caa12230fe5dd5072f6",
+    "docs/lesson-156-owner-approval.json": "e6c294d0a2ea844d1adb8395e94430fe479545b6c4a7da7d40c860079b5314d0",
+    "docs/lesson-161-owner-approval.json": "6538a95cbd0da76a483675a925f98b98a745fe96562014ed9ce76d98e57836b0",
+    "docs/lesson-161-proposal-receipt.json": "0b2d7e3dea955c7f503c8975b9572df55d2cb4f7c84554919eaeabaf0a9d25ec",
+    "docs/lesson-162-owner-approval.json": "7a21e3b63f632927ea92208e84c1a0c47aa9558fccb22f04589c210ee20460c5",
+    "docs/lesson-162-proposal-receipt.json": "7fc46d14d12ba46435e3ac2d4f494a7f3bda755849333eace65c1fad4b12e23c",
+    "docs/lesson-163-owner-approval.json": "687a1eee3fb39f0ca71db11c08dd8210a3bbd2cc27ef991cddaa332c0e486531",
+    "docs/lesson-163-proposal-receipt.json": "0b5bdd4bb7f6fc12ceae0c0fde5407a2953eb9c2abe116eb3de315eb05b20c64",
+    "docs/lesson-164-owner-approval.json": "8fca7a1707c836fafed7dbcc25d8d245968a8602b1fb3dab51371844f9a4b575",
+    "docs/lesson-164-proposal-receipt.json": "f05bde4fe954657a89ce370ebd9a9afc10cca06dbce82c5c777137319d47165f",
+    "docs/lesson-165-owner-approval.json": "35b65fd47cb27f5662339759f210894775954a4d44c3807c8beafe69f8bb4f9f",
+    "docs/lesson-165-proposal-receipt.json": "50400f8320ec825905eb004174cef12b3d6890d1aeacabc392a925d7822550a1",
+    "docs/lesson-171-owner-approval.json": "a5a22be635f602c66cf15e0bea33a26abdb231ade5452a658db4f027cc445f6a",
+    "docs/lesson-171-proposal-receipt.json": "30d6a15243cc1e1f9c00ffde9e78c6b196aac8af338f8b60f49397967d48cec6",
+    "docs/lesson-172-owner-approval.json": "571f321b7ecc13194339723c535fef4d2991ec00830febad0dd9c390722fdc6f",
+    "docs/lesson-172-proposal-receipt.json": "70c2592ef570c08c12634798668b190c66475198468785d9865d30231735a4fd",
+    "docs/lesson-173-owner-approval.json": "aec4aa30a45eaae661565595d5f1cbdbc5a70cc17b729e0626c281693b8d11b0",
+    "docs/lesson-173-proposal-receipt.json": "5137ca8624e258ca284876898270ff58ea42c4421d5ee5e8d7d9caeaad4e5b3e",
+    "docs/lesson-173-reviewed-proposal-receipt.json": "4c715c010458900edb650b61e674e39ee3e51d88aa243498dbf61d87d625b33e",
+    "docs/lesson-174-owner-approval.json": "b51d92b80ff1291fb6c38c35dd9455263388868c6b12bf80b8c38985a1d0d241",
+    "docs/lesson-174-proposal-receipt.json": "b80dd4ef89495f3f175b009138e8840d476a2ec94472f3467af2281d4156d5ad",
+    "docs/lesson-174-reviewed-proposal-receipt.json": "89d59e960367f6ee49e95fcb956674039cbb7c81df69e572d752203dd1b023dc",
+    "docs/lesson-181-owner-approval.json": "2d7071653cd18f960b2243843f603e2365f6424f27375cf8390b8fc4e0fc655b",
+    "docs/lesson-181-proposal-receipt.json": "0ea74c184f10a5d6d15edfa6f5c1e20253f0772f154ee9d1b3c78f7cb349e1ba",
+    "docs/lesson-182-owner-approval.json": "60036bcdbdd5403a8c56579b6a51cf06e3782eff28fb23d6aaead2949fff7758",
+    "docs/lesson-182-proposal-receipt.json": "2665d3ad85af6c668bb1ef327ab912a7e243c37059a1084ec7bc2c28b1024450",
+    "docs/lesson-183-owner-approval.json": "e0e09946e852b5c7196baceeb997480313a2d37ab610bbc8263a2269e0f38145",
+    "docs/lesson-183-proposal-receipt.json": "096eb21eec029e168867cf071234ad58738ec54b02143c70607039149e4e5214",
+    "docs/lesson-184-owner-approval.json": "67eafb09f23e55055c83f508d47ab20493e1859382506f79fb7fe595159cc465",
+    "docs/lesson-184-proposal-receipt.json": "c1d13e739923c47ae4d3ac7e7436b47cefb6e0e286f5ed5fc76095b85dabc2c4",
+    "docs/lesson-184-reviewed-proposal-receipt.json": "c1d13e739923c47ae4d3ac7e7436b47cefb6e0e286f5ed5fc76095b85dabc2c4"
+  },
+  "production_snapshot": "not captured; source receipt does not establish published database state",
+  "owner_release_approval": false
+}

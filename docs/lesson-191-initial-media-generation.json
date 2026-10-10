@@ -1,0 +1,41 @@
+{
+  "source_commit": "f7c9290ada25790c1cb89fc79603a1289fb95470",
+  "date": "2026-10-10T09:38:04.457Z",
+  "provider": "gemini:gemini-3.8-flash-tts:Kore",
+  "expected_read_tracks": 12,
+  "completed_read_tracks": 12,
+  "pending": [],
+  "error": null,
+  "story_status": "two actual H.264/AAC draft stories generated; reviews pending",
+  "human_listening": "pending",
+  "facility_infection_prevention_review": "pending",
+  "owner_approval": "pending",
+  "story_videos": {
+    "fil": {
+      "path": "/training/bhw-1-9/resources-audit-gemini-fil-b9dd2e0879d3.mp4",
+      "content_hash": "b9dd2e0879d314875e9f6775d93c23c71afd290ce6f4b6ab9c217069c0acab9c",
+      "duration_s": 63,
+      "poster": {
+        "path": "/training/bhw-1-9/resources-audit-gemini-fil-ad183ad057db-poster.jpg",
+        "content_hash": "ad183ad057db71eee583f3d3f67634b8fb253deab3a4f6a276fc3ddb3087fb06"
+      },
+      "captions": {
+        "path": "/training/bhw-1-9/resources-audit-gemini-fil-bc8d36c09efd.vtt",
+        "content_hash": "bc8d36c09efd00603b7bafbbe6af4953860a8d65c168d493f7494710f53f07d5"
+      }
+    },
+    "en": {
+      "path": "/training/bhw-1-9/resources-audit-gemini-en-d3248a1eef92.mp4",
+      "content_hash": "d3248a1eef924a48abd24fa6a07b58bee38d28df1852060159780f3c5e937ce2",
+      "duration_s": 66,
+      "poster": {
+        "path": "/training/bhw-1-9/resources-audit-gemini-en-4c20bcac0dbd-poster.jpg",
+        "content_hash": "4c20bcac0dbd21f0550bdde58d15aeac7011cd3a3f25c1e5a95fd948b5a2ec06"
+      },
+      "captions": {
+        "path": "/training/bhw-1-9/resources-audit-gemini-en-4d9f286c056c.vtt",
+        "content_hash": "4d9f286c056c3147defb7f1393d4b82c5987c8a5def80ecf61e17ccd48f49007"
+      }
+    }
+  }
+}
