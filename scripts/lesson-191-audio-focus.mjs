@@ -23,7 +23,7 @@ const decodeOnly=process.env.LESSON191_DECODE_ONLY==='1';
 const decodedDir=root+'/.preview/lesson191-decoded';fs.mkdirSync(decodedDir,{recursive:true});
 function pcm(wav){if(wav.toString('ascii',0,4)!=='RIFF'||wav.toString('ascii',8,12)!=='WAVE')throw Error('Not a RIFF WAV');let format=null;for(let offset=12;offset+8<=wav.length;){const id=wav.toString('ascii',offset,offset+4),size=wav.readUInt32LE(offset+4),start=offset+8;if(id==='fmt ')format={codec:wav.readUInt16LE(start),channels:wav.readUInt16LE(start+2),rate:wav.readUInt32LE(start+4),bits:wav.readUInt16LE(start+14)};if(id==='data'){if(!format||format.codec!==1||format.channels!==1||format.rate!==24000||format.bits!==16||start+size>wav.length||size%2)throw Error('Invalid mono24kHz16-bit PCM WAV');return wav.subarray(start,start+size);}offset=start+size+(size%2);}throw Error('PCM data chunk unavailable');}
 const dir=root+'/.preview/lesson191-excerpts';fs.mkdirSync(dir,{recursive:true});
-const report={prompt_revision:promptRevision,date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),model,expected_full_recordings:14,expected_focused_excerpts:56,missing_story:!story,decode_only:decodeOnly,decoder_version:decoderVersion,method:'Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.',records:[]};
+const report={prompt_revision:promptRevision,date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),model,expected_full_recordings:14,excerpt_recipe_revision:'actual-name-substantive-meaning-and-safety-qualification-v2',expected_focused_excerpts:56,missing_story:!story,decode_only:decodeOnly,decoder_version:decoderVersion,method:'Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.',records:[]};
 const save=()=>fs.writeFileSync(root+(decodeOnly?'/docs/lesson-191-audio-decode.json':'/docs/lesson-191-audio-focus.json'),JSON.stringify(report,null,2)+'\n');
 function stats(pcm){let sum=0,peak=0,quiet=0;for(let i=0;i+1<pcm.length;i+=2){const n=pcm.readInt16LE(i)/32768;sum+=n*n;if(Math.abs(n)<0.001)quiet++;peak=Math.max(peak,Math.abs(n));}return{samples:pcm.length/2,seconds:pcm.length/48000,rms:Math.sqrt(sum/Math.max(1,pcm.length/2)),peak,quiet_sample_fraction:quiet/Math.max(1,pcm.length/2)};}
 for(const record of records){
@@ -35,10 +35,12 @@ for(const record of records){
  if(zones.some((z,i)=>i>0&&z.start_ms<zones[i-1].end_ms||!Number.isFinite(z.start_ms)||!Number.isFinite(z.end_ms)||z.end_ms<=z.start_ms||z.samples<1||z.rms<0.001))throw Error('Invalid or silent narration zone: '+record.id);
  const reviewZones=record.timings.filter(z=>z.zone==='body'||record.id.startsWith('shipped-story'));
  const endIndex=record.timings.findIndex(z=>z.end_ms>=record.duration*1000-15000);
- const critical=record.timings.findIndex(z=>/hindi|huwag|not |do not|without|agarang|immediate/i.test(z.text));
- const body=reviewZones[0]??record.timings[0];
+ const qualified=record.timings.findIndex(z=>/hindi|huwag|not |no |without/i.test(z.text)&&/stock|clinical|hand hygiene|critical|savings|approved|approval|budget|delivery|shortage|natiyak|apru|trainer|pass|medicine/i.test(z.text));
+ const critical=qualified>=0?qualified:record.timings.findIndex(z=>/hindi|huwag|not |do not|without/i.test(z.text));
+ const nameIndex=record.timings.findIndex(t=>/Charlaine/.test(t.text));if(nameIndex<0)throw Error('No actual character-name zone for '+record.id);
+ const body=reviewZones.find(z=>z.text.length>=70)??reviewZones[0]??record.timings[0];
  const requests=[
-  {kind:'name',start:record.timings[Math.max(0,record.timings.findIndex(t=>/Charlaine/.test(t.text)))].start_ms/1000,end:record.timings[Math.max(0,record.timings.findIndex(t=>/Charlaine/.test(t.text)))].end_ms/1000},
+  {kind:'name',start:record.timings[nameIndex].start_ms/1000,end:record.timings[nameIndex].end_ms/1000},
   {kind:'body',start:body.start_ms/1000,end:body.end_ms/1000},
   {kind:'critical',start:record.timings[Math.max(0,critical)].start_ms/1000,end:record.timings[Math.min(record.timings.length-1,Math.max(0,critical)+1)].end_ms/1000},
   {kind:'ending',start:record.timings[Math.max(0,endIndex)].start_ms/1000,end:full.seconds}

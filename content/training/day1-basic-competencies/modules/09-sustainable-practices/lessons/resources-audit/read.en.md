@@ -8,7 +8,7 @@ Report the leak to the designated supervisor through the local process. Do not r
 
 ## [inventory] Find, verify, count
 
-Point out labeled storage and compare teaching materials with a master confirmed by the authorized supervisor. Writing “approved” on a label yourself does not establish approval. Count only current usable copies; exclude outdated, expired or damaged material from the usable count.
+Charlaine practices with a dummy teaching kit. Point out labeled storage and compare teaching materials with a master confirmed by the authorized supervisor. Writing “approved” on a label yourself does not establish approval. Count only current usable copies; exclude outdated, expired or damaged material from the usable count.
 
 In the quiz, the kit has four outdated handouts and no current version. These are the given facts; an approved master and current copies have not yet been verified. “Wasting paper feels wrong,” the colleague says. “What is the safe step?” Choose before reading feedback.
 
@@ -32,7 +32,7 @@ Charlaine says, “I will put the verified version, usable count and need in the
 
 ## [practice] Three rows and an actual demonstration
 
-Complete three rows: resource, observed waste, evidence and safe next step. Tap: visible drops, no volume or bill—report without repair. Wrong printout: version mismatch against the dummy master—set aside and request correct copies. Missing teaching cards: absent from the assigned location—find, verify and count before requesting.
+Charlaine is part of this fictional practice. Complete three rows: resource, observed waste, evidence and safe next step. Tap: visible drops, no volume or bill—report without repair. Wrong printout: version mismatch against the dummy master—set aside and request correct copies. Missing teaching cards: absent from the assigned location—find, verify and count before requesting.
 
 Rotate BHW, colleague and observer roles in a triad. Each six-minute round gives two minutes to setup, two to an attempt, one to feedback and one to retry. Demonstrate the label, usable count and return; record the responsible role and next check. State one unknown. If the first attempt guessed an order, ask the learner to point out storage and the master, recount and repeat an evidence-based request.
 

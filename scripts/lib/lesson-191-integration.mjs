@@ -10,7 +10,7 @@ export function beforeLesson191(p,actual=fs.readFileSync(p)){
  const r=receipt;
  const e=r.changed_existing_files[p];if(!e)return actual;
  if(r.target!=='resources-audit'||r.owner_release_approval!==false||(!p.startsWith(leaf)&&!shared.has(p)))throw Error('Invalid 1.9.1 preservation scope: '+p);
- if(sha(fs.readFileSync(p))!==e.proposed_sha256||![e.proposed_sha256,e.predecessor_sha256].includes(sha(actual)))throw Error('Unpinned lesson 1.9.1 successor: '+p);
+ if(sha(fs.readFileSync(p))!==e.proposed_sha256||![e.proposed_sha256,e.predecessor_sha256].includes(sha(actual)))throw Error('Unpinned integrated successor (lesson 1.9.1): '+p);
  const prior=Buffer.from(e.predecessor_utf8);
  if(sha(prior)!==e.predecessor_sha256)throw Error('Corrupt 1.9.1 predecessor: '+p);
  return prior;

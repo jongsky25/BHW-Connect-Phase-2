@@ -11,7 +11,7 @@ it('preserves the saved lesson identity, both original decisions and all coverag
  for(const c of old.coverage){const now=lesson.coverage.find(n=>n.id===c.id);assert.deepEqual(now.read_ids.filter(id=>id!=='evidence-before-order'),c.read_ids);assert.deepEqual(now.slide_ids.filter(id=>id!=='slide-evidence-before-order'),c.slide_ids);}
 });
 it('pairs complete bilingual teaching, keeps answers out of pre-decision text and provides all post-choice rationales',()=>{
- for(const lang of ['fil','en']){const read=parseReferenceRead(fs.readFileSync(leaf+'read.'+lang+'.md','utf8'));for(const[i,s]of read.entries()){assert.equal(slides[i]['narration_'+lang],s.body);assert(s.body.length>400);assert(!/Elena|38/.test(s.body));}for(const s of lesson.sections.filter(s=>s.check)){for(const n of ['1.','2.','3.'])assert(s.check['feedback_'+lang].includes(n));assert(s.check['feedback_'+lang].includes('Charlaine'));}}
+ for(const lang of ['fil','en']){const read=parseReferenceRead(fs.readFileSync(leaf+'read.'+lang+'.md','utf8'));for(const[i,s]of read.entries()){assert.equal(slides[i]['narration_'+lang],s.body);assert(s.body.length>400);assert(!/Elena|38/.test(s.body));assert(s.body.includes('Charlaine')); }for(const s of lesson.sections.filter(s=>s.check)){for(const n of ['1.','2.','3.'])assert(s.check['feedback_'+lang].includes(n));assert(s.check['feedback_'+lang].includes('Charlaine'));}}
 });
 it('retains the observed-performance rubric and all twelve guide headings with realistic sampling',()=>{
  assert.deepEqual(j(leaf+'competency.json'),baseline.original_competency);

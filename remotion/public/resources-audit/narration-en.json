@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm community trainer. Use one stable adult female Kore narrator including quotations. Preserve every negation, uncertainty and qualification. Read Charlaine as written. Complete every word, add nothing and do not translate.",
+  "durationSeconds": 65.202,
+  "beats": [
+    {
+      "zone": "elena",
+      "index": 0,
+      "text": "In a fictional BHS, Charlaine sees a leak, wrong printouts and misplaced supplies. Bills and savings remain unverified.",
+      "start_ms": 0,
+      "end_ms": 9760
+    },
+    {
+      "zone": "inventory",
+      "index": 1,
+      "text": "Four outdated handouts, no current version in the kit. Charlaine separates old copies; the supervisor must confirm the approved master.",
+      "start_ms": 10060,
+      "end_ms": 19660
+    },
+    {
+      "zone": "seven-s",
+      "index": 2,
+      "text": "Charlaine demonstrates label, usable count and return with a dummy paper kit. Assign a responsible role and next check; retain all seven S meanings.",
+      "start_ms": 19960,
+      "end_ms": 32360
+    },
+    {
+      "zone": "evidence-before-order",
+      "index": 3,
+      "text": "In Charlaine’s separate practice card: six needed, three usable B copies, gap three. Four outdated A copies do not count.",
+      "start_ms": 32660,
+      "end_ms": 43060
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Charlaine completes three audit rows. Triad feedback and retry are practice; peers or solo rehearsal do not replace trainer observation.",
+      "start_ms": 43360,
+      "end_ms": 53880
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Before reordering, Charlaine checks storage, master and count. The genuine gap is reported; the shortage remains unresolved and savings unproven.",
+      "start_ms": 54180,
+      "end_ms": 65140
+    }
+  ],
+  "audio_sha256": "9515ff7af90ddcf26a0d2b69b36ced82f93027f7056b025cef6648ac887aa166"
+}

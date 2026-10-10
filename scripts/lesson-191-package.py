@@ -10,6 +10,13 @@ manifest=json.loads((root/'content/training/day1-basic-competencies/narration.js
 full=json.loads((root/'docs/lesson-191-audio-review.json').read_text())
 focus=json.loads((root/'docs/lesson-191-audio-focus.json').read_text())
 assert len(full['records'])==14 and len(focus['records'])==14
+assert not focus.get('decode_only')
+assert all(r.get('model_response') and len(r['model_response'])>100 and 'Review unavailable' not in r['model_response'] for r in full['records'])
+assert all(e.get('model_response') and len(e['model_response'])>100 for r in focus['records'] for e in r['excerpts'])
+browser=json.loads((out/'lesson-191-browser-verification.json').read_text())
+assert browser['scope']=='text/check/resume and actual narration' and browser['status'].startswith('passed')
+assert browser['actual_case_count']==len(browser['cases']) and browser['actual_screenshot_count']==len(browser['screenshots'])
+assert all((out/p).exists() for p in browser['screenshots'])
 for record in full['records']:
  if record['id'].startswith('story-'):
   media=root/f"remotion/public/resources-audit/shipped-aac-{record['language']}.wav"
@@ -24,7 +31,7 @@ for record in focus['records']:
  for excerpt in record['excerpts']:
   assert sha((root/'.preview/lesson191-excerpts'/excerpt['file']).read_bytes())==excerpt['excerpt_sha256']
 paths=set()
-for pattern in ['docs/lesson-191-*','docs/lesson-18-charlaine-*','scripts/lesson-191-*','scripts/remotion-resources-audit-narrate.mjs','scripts/lib/lesson-191-integration.mjs','scripts/tests/lesson-191.test.mjs','.github/workflows/lesson191-*.yml','content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/*','public/training/audio/09-sustainable-practices/resources-audit/*','public/training/bhw-1-9/*','remotion/src/resources-audit/*','remotion/public/resources-audit/*','.preview/lesson191-source/*.txt','.preview/lesson191-source/*.png','.preview/lesson191-raw/*.json','.preview/lesson191-excerpts/*','.preview/lesson191-deliverables/*.json','.preview/lesson191-deliverables/*.png','.preview/lesson191-deliverables/*.pdf','.preview/lesson191-deliverables/*.html']:
+for pattern in ['docs/lesson-191-*','docs/lesson-19-charlaine-*','scripts/lesson-191-*','scripts/remotion-resources-audit-narrate.mjs','scripts/lib/lesson-191-integration.mjs','scripts/tests/lesson-191.test.mjs','.github/workflows/lesson191-*.yml','content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/*','public/training/audio/09-sustainable-practices/resources-audit/*','public/training/bhw-1-9/*','remotion/src/resources-audit/*','remotion/public/resources-audit/*','.preview/lesson191-source/*.txt','.preview/lesson191-source/*.png','.preview/lesson191-raw/*.json','.preview/lesson191-excerpts/*','.preview/lesson191-deliverables/*.json','.preview/lesson191-deliverables/*.png','.preview/lesson191-deliverables/*.pdf','.preview/lesson191-deliverables/*.html']:
  paths.update(p for p in root.glob(pattern) if p.is_file())
 paths.add(root/'content/training/day1-basic-competencies/narration.json');paths.add(root/'remotion/src/Root.tsx');paths.add(root/'src/components/elearning/reference-lessons.tsx')
 if (root/'lesson-191-published-snapshot.json').exists():paths.add(root/'lesson-191-published-snapshot.json')

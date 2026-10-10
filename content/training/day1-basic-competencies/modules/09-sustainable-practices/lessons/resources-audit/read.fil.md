@@ -8,7 +8,7 @@ Iulat ang tagas sa nakatalagang supervisor ayon sa lokal na proseso. Huwag mag-a
 
 ## [inventory] Hanapin, tiyakin, bilangin
 
-Ituro ang may-label na imbakan at ihambing ang teaching materials sa master na kinumpirma ng awtorisadong supervisor. Ang label na “approved” na isinulat ng sarili ay hindi patunay ng approval. Bilangin lamang ang kasalukuyang magagamit na kopya; huwag isama ang luma, expired o sirang materyal sa usable count.
+Si Charlaine ay nagpapractice gamit ang kunwaring teaching kit. Ituro ang may-label na imbakan at ihambing ang teaching materials sa master na kinumpirma ng awtorisadong supervisor. Ang label na “approved” na isinulat ng sarili ay hindi patunay ng approval. Bilangin lamang ang kasalukuyang magagamit na kopya; huwag isama ang luma, expired o sirang materyal sa usable count.
 
 Sa quiz, may apat na lumang handout at walang kasalukuyang bersyon sa kit. Ito ang ibinigay na facts; wala pang napatunayang approved master o kasalukuyang kopya. “Sayang ang papel,” sabi ng katrabaho. “Ano ang ligtas na hakbang?” Pumili muna bago basahin ang feedback.
 
@@ -32,7 +32,7 @@ Sabi ni Charlaine, “Ilalagay ko ang verified version, usable count at kailanga
 
 ## [practice] Tatlong row at aktuwal na demonstrasyon
 
-Gumawa ng tatlong row: resource, pag-aaksayang nakita, ebidensya at ligtas na susunod na hakbang. Gripo: nakitang patak, walang volume o bill—iulat, walang repair. Maling printout: version mismatch sa dummy master—ihiwalay at humingi ng tamang kopya. Nawawalang teaching cards: hindi makita sa itinakdang puwesto—hanapin, verify at bilangin bago mag-request.
+Kasama si Charlaine sa kathang-isip na practice. Gumawa ng tatlong row: resource, pag-aaksayang nakita, ebidensya at ligtas na susunod na hakbang. Gripo: nakitang patak, walang volume o bill—iulat, walang repair. Maling printout: version mismatch sa dummy master—ihiwalay at humingi ng tamang kopya. Nawawalang teaching cards: hindi makita sa itinakdang puwesto—hanapin, verify at bilangin bago mag-request.
 
 Sa rotating triad, BHW, katrabaho at observer ang roles. Sa bawat anim na minuto: dalawa para sa setup, dalawa para sa attempt, isa sa feedback at isa sa retry. Ipakita ang label, usable count at return; itala ang role owner at susunod na check. Sabihin ang isang hindi pa alam. Kung nag-order sa hula ang unang attempt, ipaturo ang imbakan at master, ipabilang muli at ipaulit ang request na may ebidensya.
 

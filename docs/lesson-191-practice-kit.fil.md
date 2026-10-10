@@ -34,7 +34,7 @@ Prompts ____ ; unknown ____ ; feedback ____ ; retry ____
 Rubric level/evidence ____ ; next observation ____
 Hindi trainer-observed ≠ passed. Walang real personal/patient record.
 
-## One-page find–verify–count–return aid
+## Gabay sa hanap–tiyak–bilang–balik
 
 1. HANAPIN ang may-label na puwesto.
 2. TIYAKIN ang current master sa awtorisadong supervisor.

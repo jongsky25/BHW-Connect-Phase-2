@@ -302,6 +302,46 @@
       "caption_en": "Fictional practice; facts and decisions are in the text.",
       "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.",
       "review_status": "draft"
+    },
+    {
+      "id": "resources-audit-story",
+      "alt_fil": "Anim na beat: resource audit ni Charlaine at dummy label-count-return; natitirang shortage iniulat.",
+      "alt_en": "Six beats: Charlaine audits waste and demonstrates dummy label-count-return; remaining shortage reported.",
+      "caption_fil": "Kathang-isip na audit at demo; shortage hindi pa resolved, savings hindi proven.",
+      "caption_en": "Fictional audit and demo; shortage unresolved, savings unproven.",
+      "provenance": "Six built-in imagegen actions using the coordinated Charlaine reference; Gemini Kore narration, measured encoded samples; draft pending owner, facility and human-listening review.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-9/resources-audit-gemini-fil-b9dd2e0879d3.mp4",
+          "content_hash": "b9dd2e0879d314875e9f6775d93c23c71afd290ce6f4b6ab9c217069c0acab9c",
+          "duration_s": 63,
+          "poster": {
+            "path": "/training/bhw-1-9/resources-audit-gemini-fil-ad183ad057db-poster.jpg",
+            "content_hash": "ad183ad057db71eee583f3d3f67634b8fb253deab3a4f6a276fc3ddb3087fb06"
+          },
+          "captions": {
+            "path": "/training/bhw-1-9/resources-audit-gemini-fil-bc8d36c09efd.vtt",
+            "content_hash": "bc8d36c09efd00603b7bafbbe6af4953860a8d65c168d493f7494710f53f07d5"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-9/resources-audit-gemini-en-d3248a1eef92.mp4",
+          "content_hash": "d3248a1eef924a48abd24fa6a07b58bee38d28df1852060159780f3c5e937ce2",
+          "duration_s": 66,
+          "poster": {
+            "path": "/training/bhw-1-9/resources-audit-gemini-en-4c20bcac0dbd-poster.jpg",
+            "content_hash": "4c20bcac0dbd21f0550bdde58d15aeac7011cd3a3f25c1e5a95fd948b5a2ec06"
+          },
+          "captions": {
+            "path": "/training/bhw-1-9/resources-audit-gemini-en-4d9f286c056c.vtt",
+            "content_hash": "4d9f286c056c3147defb7f1393d4b82c5987c8a5def80ecf61e17ccd48f49007"
+          }
+        }
+      },
+      "path": "/training/bhw-1-9/resources-audit-gemini-fil-ad183ad057db-poster.jpg",
+      "content_hash": "ad183ad057db71eee583f3d3f67634b8fb253deab3a4f6a276fc3ddb3087fb06"
     }
-  ]
+  ],
+  "featured_asset_id": "resources-audit-story"
 }

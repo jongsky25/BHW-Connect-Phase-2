@@ -34,7 +34,7 @@ Prompts ____ ; unknown ____ ; feedback ____ ; retry ____
 Rubric level/evidence ____ ; next observation ____
 Not trainer-observed ≠ passed. No real personal/patient records.
 
-## One-page find–verify–count–return aid
+## Find–verify–count–return aid
 
 1. FIND labeled storage.
 2. VERIFY the current master with the authorized supervisor.

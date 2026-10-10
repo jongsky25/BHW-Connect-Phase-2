@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural everyday Filipino as a warm community trainer. Use one stable adult female Kore narrator including quotations. Preserve every negation, uncertainty and qualification. Read Charlaine as written. Complete every word, add nothing and do not translate.",
+  "durationSeconds": 61.492,
+  "beats": [
+    {
+      "zone": "elena",
+      "index": 0,
+      "text": "Sa kathang-isip na BHS, nakita ni Charlaine ang tagas, maling printout at misplaced supplies. Walang bill o savings na natiyak.",
+      "start_ms": 0,
+      "end_ms": 9640
+    },
+    {
+      "zone": "inventory",
+      "index": 1,
+      "text": "Apat na lumang handout, walang current sa kit. Ibinukod ni Charlaine ang luma; supervisor ang kukumpirma sa approved master.",
+      "start_ms": 9940,
+      "end_ms": 19060
+    },
+    {
+      "zone": "seven-s",
+      "index": 2,
+      "text": "Ipinakita ni Charlaine ang label, usable count at return sa dummy paper kit. May responsible role at next check; panatilihin ang pitong S.",
+      "start_ms": 19360,
+      "end_ms": 29720
+    },
+    {
+      "zone": "evidence-before-order",
+      "index": 3,
+      "text": "Sa hiwalay na practice card ni Charlaine: anim kailangan, tatlong usable B, gap tatlo. Hindi kasama ang apat na lumang A.",
+      "start_ms": 30020,
+      "end_ms": 39380
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "May tatlong audit row si Charlaine. Feedback at retry sa triad; hindi kapalit ng trainer observation ang peer o solo practice.",
+      "start_ms": 39680,
+      "end_ms": 49160
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Bago reorder, sinuri ni Charlaine ang storage, master at count. Iniulat ang tunay na gap; shortage hindi pa resolved, savings hindi proven.",
+      "start_ms": 49460,
+      "end_ms": 61420
+    }
+  ],
+  "audio_sha256": "2e79e26e969a07a9991a522b3905f7fdb01a28b8d86710e848af0d5cfd08b4e2"
+}
