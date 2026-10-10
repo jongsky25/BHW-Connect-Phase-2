@@ -14,7 +14,7 @@ export const calculateResourcesMonitorMetadata: CalculateMetadataFunction<Resour
   if (!response.ok) throw new Error("ResourcesMonitor story requires measured narration timings");
   const timing: Timings = await response.json();
   if (timing.language !== props.language || !Number.isFinite(timing.durationSeconds) || timing.durationSeconds <= 0 ||
-    timing.durationSeconds + 1.1 > 180 || timing.beats.length !== RESOURCES_MONITOR_BEATS.length ||
+    timing.durationSeconds + 1.1 > 90 || timing.beats.length !== RESOURCES_MONITOR_BEATS.length ||
     timing.beats[0].start_ms !== 0 || timing.beats.some((b, i) =>
       b.zone !== RESOURCES_MONITOR_BEATS[i].id || b.index !== i || b.text !== RESOURCES_MONITOR_BEATS[i][props.language] ||
       !Number.isFinite(b.start_ms) || !Number.isFinite(b.end_ms) ||

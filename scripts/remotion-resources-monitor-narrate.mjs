@@ -26,7 +26,7 @@ async function main() {
   if(existsSync(timingPath)&&existsSync(audioPath)){
     const saved=JSON.parse(readFileSync(timingPath,'utf8')),bytes=readFileSync(audioPath);
     const frames=mp3AudioFrames(bytes),seconds=frames.reduce((sum,f)=>sum+f.samples/f.sampleRate,0);
-    const validTiming=Array.isArray(saved.beats)&&saved.beats.length===zones.length&&saved.beats.every((b,i)=>b.end_ms>b.start_ms&&b.start_ms>=0&&(i===0||b.start_ms>=saved.beats[i-1].end_ms))&&saved.beats.at(-1).end_ms<=seconds*1000+50&&Math.abs(saved.durationSeconds-seconds)<0.001&&seconds<=178;
+    const validTiming=Array.isArray(saved.beats)&&saved.beats.length===zones.length&&saved.beats.every((b,i)=>b.end_ms>b.start_ms&&b.start_ms>=0&&(i===0||b.start_ms>=saved.beats[i-1].end_ms))&&saved.beats.at(-1).end_ms<=seconds*1000+50&&Math.abs(saved.durationSeconds-seconds)<0.001&&seconds<=88.8;
     if(validTiming&&saved.provider==='gemini'&&saved.language===language&&saved.model===GEMINI_TTS_MODEL&&saved.voice===GEMINI_VOICE&&saved.speech_style===styles[language]&&saved.audio_sha256===sha(bytes)&&JSON.stringify(saved.beats.map(({zone,index,text})=>({zone,index,text})))===JSON.stringify(zones)){
       console.log(`${language}: exact authored story/style/MP3 hash cache hit`);return;
     }
@@ -39,7 +39,7 @@ async function main() {
   });
   const frames = mp3AudioFrames(rendered.audioBytes);
   const durationSeconds = frames.reduce((sum, frame) => sum + frame.samples, 0) / frames[0].sampleRate;
-  if (durationSeconds > 178) throw new Error(`Recording narration exceeds the 180-second story limit: ${durationSeconds.toFixed(1)} s`);
+  if (durationSeconds > 88.8) throw new Error(`Recording narration exceeds the 90-second story limit (including post-roll): ${durationSeconds.toFixed(1)} s`);
   if (rendered.timings.length !== RESOURCES_MONITOR_BEATS.length ||
       rendered.timings.some((timing, index) => timing.zone !== RESOURCES_MONITOR_BEATS[index].id || timing.end_ms <= timing.start_ms))
     throw new Error("Gemini scene timings do not match the authored sequence");

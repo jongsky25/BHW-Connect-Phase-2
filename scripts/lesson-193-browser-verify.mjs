@@ -21,6 +21,7 @@ try{
   page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});
   await page.goto(`${url}/?lang=${lang}&mode=${mode}`);await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
   for(const [i,section]of lesson.sections.entries()){
+   if(withMedia){const seconds=Math.round(Object.values(manifest.lessons['resources-monitor'].sections).reduce((n,s)=>n+s[lang].duration_seconds,0));assert((await page.locator('main').innerText()).includes(`${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`),'Measured narration time not shown');}
    const anchor=(mode==='slides'?'slide-':'')+section.id;await page.locator(`article[data-scene="${anchor}"]`).waitFor();
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Horizontal overflow '+anchor);
    const picture=page.locator('article[data-scene] figure img').first();await picture.waitFor();assert(await picture.evaluate(i=>i.complete&&i.naturalWidth>0),'Missing picture '+anchor);

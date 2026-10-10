@@ -306,6 +306,9 @@ export function ReferenceLessons(props: Props) {
   const safetyPrepareRevision = lesson?.lesson_key === "safety-prepare" && lesson.revision.assets.some(asset => asset.id === "safety-prepare-check");
   const demonstrationRevision = lesson?.lesson_key === "safety-demonstrate";
   const resourcesMonitorRevision = lesson?.lesson_key === "resources-monitor";
+  const resourcesMonitorTracks = resourcesMonitorRevision ? Object.values(lessonNarration ?? {}) : [];
+  const resourcesMonitorSeconds = resourcesMonitorTracks.length === 7 ? Math.round(resourcesMonitorTracks.reduce((sum, track) => sum + track.duration_seconds, 0)) : null;
+  const resourcesMonitorTime = resourcesMonitorSeconds === null ? null : `${Math.floor(resourcesMonitorSeconds / 60)}:${String(resourcesMonitorSeconds % 60).padStart(2, "0")}`;
   const controlsRevision = lesson?.lesson_key === "safety-controls" && lesson.revision.assets.some(asset => asset.id === "apple-controls-check");
   const controlsTracks = controlsRevision ? Object.values(lessonNarration ?? {}) : [];
   const controlsMinutes = controlsTracks.length === 6 ? Math.ceil(controlsTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
@@ -794,7 +797,13 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {safetyPrepareRevision ? ui(
+              {resourcesMonitorRevision ? (resourcesMonitorTime === null ? ui(
+                "Maglaan ng oras sa pagbasa at pagsagot; hiwalay ang 60-minutong guided practice.",
+                "Allow time for reading and answering; the 60-minute guided practice is separate.",
+              ) : ui(
+                `Buong salaysay sa wikang ito: ${resourcesMonitorTime}. Dagdag ang pagsagot, pagninilay, replay at opsyonal na kuwento; hiwalay ang 60-minutong guided practice.`,
+                `Full narration in this language: ${resourcesMonitorTime}. Answering, reflection, replay and the optional story take additional time; the 60-minute guided practice is separate.`,
+              )) : safetyPrepareRevision ? ui(
                 "Tinatayang 14–17 minuto para sa sariling pag-aaral: mas mahabang aktuwal na salaysay at 3–6 minutong check at pagninilay. Dagdag ang opsyonal na kuwento at replay; hiwalay ang 60-minutong guided practice.",
                 "Estimated 14–17 minutes for independent study: the longer actual narration and 3–6 minutes for the check and reflection. Optional story and replay are additional; the 60-minute guided practice is separate.",
               ) : controlsRevision ? (controlsMinutes === null ? ui("Hindi pa natiyak ang haba ng salaysay; hiwalay ang 60-minutong guided practice.", "Narration timing is pending; the 60-minute guided practice is separate.") : ui(
