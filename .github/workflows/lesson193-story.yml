@@ -1,0 +1,117 @@
+name: Lesson 1.9.3 story and complete media review
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson193-story.yml'
+      - 'scripts/lesson-193-story-build.mjs'
+      - 'scripts/remotion-resources-monitor-narrate.mjs'
+      - 'remotion/src/resources-monitor/**'
+      - 'remotion/public/resources-monitor/*.png'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson193-story-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft-media:
+    if: github.head_ref == 'codex/lesson-193-charlaine-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Wait for pinned predecessor evidence to finish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in $(seq 1 30); do
+            count=$(gh api repos/${{ github.repository }}/actions/runs/38040980575/artifacts --jq '.artifacts | length')
+            if test "$count" -gt 0; then exit 0; fi
+            sleep 20
+          done
+          echo 'Pinned predecessor evidence unavailable'
+          exit 1
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson193-read-evidence
+          run-id: '38040980575'
+          github-token: ${{ github.token }}
+          path: .preview/lesson193-import
+      - name: Resume exact target tracks and retain original evidence
+        run: |
+          cp .preview/lesson193-import/content/training/day1-basic-competencies/narration.json content/training/day1-basic-competencies/narration.json
+          cp -a .preview/lesson193-import/public/training/audio/09-sustainable-practices/resources-monitor/. public/training/audio/09-sustainable-practices/resources-monitor/
+          cp .preview/lesson193-import/docs/lesson-193-audio-*.json docs/
+          mkdir -p .preview/lesson193-raw .preview/lesson193-excerpts
+          cp -a .preview/lesson193-import/.preview/lesson193-raw/. .preview/lesson193-raw/
+          cp -a .preview/lesson193-import/.preview/lesson193-excerpts/. .preview/lesson193-excerpts/
+      - name: Bounded read-only target and two published neighbors
+        continue-on-error: true
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-193-published-snapshot.mjs
+      - name: Resume remaining target Read tracks within request budget
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON193_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-193-record-fetch.mjs'
+        run: node scripts/lesson-193-media-build.mjs
+      - name: Generate seven-beat stories from measured narration and actual scenes
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON193_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-193-record-fetch.mjs'
+        run: node scripts/lesson-193-story-build.mjs
+      - name: Review every full shipped recording
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON193_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-193-record-fetch.mjs'
+        run: node scripts/lesson-193-audio-review.mjs
+      - name: Review 64 exact focused excerpts from 16 recordings
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON193_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-193-record-fetch.mjs'
+        run: node scripts/lesson-193-audio-focus.mjs
+      - name: Enumerate and render every composition in the current registry
+        if: success()
+        run: node scripts/lesson-193-registry-render.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson193-complete-media-evidence
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            lesson-193-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json
+            public/training/audio/09-sustainable-practices/resources-monitor/
+            public/training/bhw-1-9/resources-monitor-*
+            remotion/public/resources-monitor/narration-*
+            remotion/public/resources-monitor/shipped-aac-*
+            docs/lesson-193-media-generation.json
+            docs/lesson-193-story-generation.json
+            docs/lesson-193-registry.json
+            docs/lesson-193-audio-*.json
+            .preview/lesson193-raw/
+            .preview/lesson193-excerpts/
+            .preview/lesson193-decoded/

@@ -12,7 +12,7 @@ manifest.history??={};manifest.history[key]??=[];
 if(!manifest.history[key].some(h=>JSON.stringify(h)===JSON.stringify(before.lessons[key])))manifest.history[key].push(structuredClone(before.lessons[key]));
 fs.writeFileSync(file,JSON.stringify(manifest,null,2)+'\n');
 let error=null;
-try{execFileSync(process.execPath,['scripts/training-narrate.mjs','--modules',moduleKey,'--lessons',key,'--provider','gemini','--max-requests','160','--apply'],{stdio:'inherit'});}catch(e){error=e.message;}
+try{execFileSync(process.execPath,['scripts/training-narrate.mjs','--modules',moduleKey,'--lessons',key,'--provider','gemini','--max-requests','240','--apply'],{stdio:'inherit'});}catch(e){error=e.message;}
 finally{
  const deleted=execFileSync('git',['ls-files','--deleted','-z','--','public/training/audio'],{encoding:'utf8'}).split('\0').filter(Boolean);
  if(deleted.length)execFileSync('git',['restore','--',...deleted]);
@@ -24,5 +24,5 @@ const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const {lessons}=loadReferenceModule('content/training/day1-basic-competencies/modules/'+moduleKey,'public');
 const plan=planReferenceNarration([{key:moduleKey,lessons}],current,src=>fs.existsSync('public'+src)?sha('public'+src):null).filter(p=>p.lessonKey===key);
 const pending=plan.filter(p=>p.action!=='skip').map(p=>`${p.sectionId}/${p.language}`);
-fs.writeFileSync('docs/lesson-193-media-generation.json',JSON.stringify({date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),provider:'gemini:gemini-3.8-flash-tts:Kore',request_budget:160,expected_read_tracks:14,completed_read_tracks:14-pending.length,pending,error,story_status:'blocked: 1.9.1 shared Charlaine reference and seven final scenes unavailable',human_listening:'pending',facility_review:'pending',owner_approval:'pending'},null,2)+'\n');
+fs.writeFileSync('docs/lesson-193-media-generation.json',JSON.stringify({date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),provider:'gemini:gemini-3.8-flash-tts:Kore',request_budget:240,expected_read_tracks:14,completed_read_tracks:14-pending.length,pending,error,story_status:'seven inspected scenes ready; actual story rendering tracked separately',human_listening:'pending',facility_review:'pending',owner_approval:'pending'},null,2)+'\n');
 if(pending.length)process.exitCode=1;

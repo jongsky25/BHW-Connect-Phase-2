@@ -1,3 +1,4 @@
+import {beforeLesson193} from '../lib/lesson-193-integration.mjs';
 // @vitest-environment node
 import fs from 'node:fs';import {createHash} from 'node:crypto';import {it,expect} from 'vitest';
 import {release184View} from '../lib/lesson-184-release-integration.mjs';
@@ -12,6 +13,6 @@ it('binds owner approval to reviewed teaching and permits only seven asset statu
  expect(sha(release184View(p,'reviewed184'))).toBe(a.reviewed_lesson_sha256);expect(()=>release184View(p,'reviewed184',Buffer.from('mutation'))).toThrow('Unpinned');
 });
 it('preserves every approved source and all twenty-four reviewed selected media bytes',()=>{
- for(const [p,h]of Object.entries(a.approved_source_sha256))expect(sha(fs.readFileSync(p)),p).toBe(h);
+ for(const [p,h]of Object.entries(a.approved_source_sha256))expect(sha(beforeLesson193(p)),p).toBe(h);
  expect(a.approved_media).toHaveLength(24);for(const m of a.approved_media){const bytes=fs.readFileSync('public'+m.path);expect(sha(bytes),m.path).toBe(m.sha256);expect(bytes.length).toBe(m.bytes);}
 });

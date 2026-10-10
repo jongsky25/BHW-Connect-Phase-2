@@ -30,6 +30,11 @@ for(const[p,hash]of Object.entries(start.files_sha256)){
  assert(fs.existsSync(p),'Protected file missing '+p);
  if(sha(fs.readFileSync(p))===hash)continue;
  if(p.startsWith(leaf)){changed.push(p);continue;}
+ if(p==='remotion/src/Root.tsx'||p==='src/components/elearning/reference-lessons.tsx'){
+  const receipt=read('docs/lesson-193-proposal-receipt.json').changed_existing_files[p];
+  assert.equal(sha(fs.readFileSync(p)),receipt.proposed_sha256);
+  assert.equal(sha(Buffer.from(receipt.predecessor_utf8)),hash);changed.push(p);continue;
+ }
  if(p==='content/training/day1-basic-competencies/narration.json'){
   const prior=JSON.parse(execFileSync('git',['show',start.head+':'+p],{maxBuffer:32*1024*1024}));
   const current=read(p);

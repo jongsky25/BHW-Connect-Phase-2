@@ -1,3 +1,4 @@
+import {ResourcesMonitorStory, calculateResourcesMonitorMetadata, RESOURCES_MONITOR_FPS, RESOURCES_MONITOR_FALLBACK_DURATION} from "./resources-monitor/ResourcesMonitorStory";
 import {SafetyDemonstrateStory, calculateSafetyDemonstrateMetadata, SAFETY_DEMONSTRATE_FPS, SAFETY_DEMONSTRATE_FALLBACK_DURATION} from "./safety-demonstrate/SafetyDemonstrateStory";
 import {SafetyPrepareStory, calculateSafetyPrepareMetadata, SAFETY_PREPARE_FALLBACK_DURATION, SAFETY_PREPARE_FPS} from './safety-prepare/SafetyPrepareStory';
 import {SafetyControlsStory, calculateSafetyControlsMetadata, SAFETY_CONTROLS_FPS, SAFETY_CONTROLS_FALLBACK_DURATION} from './safety-controls/SafetyControlsStory';
@@ -445,6 +446,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`safety-demonstrate-${language}`} id={language === "fil" ? "SafetyDemonstrateStoryFil" : "SafetyDemonstrateStoryEn"}
           component={SafetyDemonstrateStory} calculateMetadata={calculateSafetyDemonstrateMetadata}
           durationInFrames={SAFETY_DEMONSTRATE_FALLBACK_DURATION} fps={SAFETY_DEMONSTRATE_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`resources-monitor-${language}`} id={language === "fil" ? "ResourcesMonitorStoryFil" : "ResourcesMonitorStoryEn"}
+          component={ResourcesMonitorStory} calculateMetadata={calculateResourcesMonitorMetadata}
+          durationInFrames={RESOURCES_MONITOR_FALLBACK_DURATION} fps={RESOURCES_MONITOR_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

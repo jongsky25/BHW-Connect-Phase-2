@@ -8,7 +8,7 @@ Bilangin ang maling-bersyong reprints, lahat ng printed pages at naibigay na ses
 
 ## [compare] Subukan ang simpleng paghahambing
 
-Gamitin ang kathang-isip na bilang: 20 sa bawat 100 printed pages ang maling-bersyong reprints noon; 5 sa bawat 100 ngayon. Magkatulad ang denominator na 100 pahina. Ang rates ay 20% at 5%; ang pagitan ay 15 bawat 100 pahina o 15 percentage points. Ito ang nakikita sa halimbawang tally, hindi ulat mula sa tunay na BHS.
+Gamitin ni Charlaine ang kathang-isip na bilang: 20 sa bawat 100 printed pages ang maling-bersyong reprints noon; 5 sa bawat 100 ngayon. Magkatulad ang denominator na 100 pahina. Ang rates ay 20% at 5%; ang pagitan ay 15 bawat 100 pahina o 15 percentage points. Ito ang nakikita sa halimbawang tally, hindi ulat mula sa tunay na BHS.
 
 Ang relative na bawas sa reprints ay (20 − 5) ÷ 20 = 75%. Hindi ito 75% na bawas sa kabuuang gastos. Hindi ibinigay ang presyo, gastos sa ibang resources o sanhi ng pagbabago. Hindi rin pa kumpirmado kung pareho ang uri at dami ng sessions, kung lahat ay nakatanggap ng tamang handout, at kung may delay o reklamo. Itala ang mga ito bilang hindi pa alam.
 
@@ -24,7 +24,7 @@ Kung hindi matiyak ang bersyon o pahintulot, huwag gamitin ang hindi aprubadong 
 
 ## [workload] Kapag iba-iba ang workload
 
-Limang teaching sessions ang naibigay sa isang linggo at sampu sa susunod. Maaaring tumaas ang kabuuang papel dahil dumoble ang trabaho. Hindi sapat ang dalawang session count para kalkulahin ang reprint rate: kailangan din ang bilang ng reprints at pahina sa bawat linggo. Kung hindi ibinigay, isulat na hindi pa alam; huwag hulaan o ihalo ang hiwalay na 20/100 at 5/100 na halimbawa.
+Sinusuri ni Charlaine ang workload: limang teaching sessions ang naibigay sa isang linggo at sampu sa susunod. Maaaring tumaas ang kabuuang papel dahil dumoble ang trabaho. Hindi sapat ang dalawang session count para kalkulahin ang reprint rate: kailangan din ang bilang ng reprints at pahina sa bawat linggo. Kung hindi ibinigay, isulat na hindi pa alam; huwag hulaan o ihalo ang hiwalay na 20/100 at 5/100 na halimbawa.
 
 Para sa parehong uri ng sessions, hatiin ang reprints sa sessions na naibigay, o gamitin ang reprints bawat 100 printed pages. Ikumpara rin ang tamang bersyon, nababasang materyal, reklamo, delay at naibigay na serbisyo. Maaaring bumaba ang raw total dahil may nakanselang serbisyo; hindi ito patunay ng mas mahusay na proseso.
 
@@ -40,7 +40,7 @@ Sa review, alisin ang hakbang na walang silbi habang pinananatili ang version ch
 
 ## [practice] Subukan, saka ulitin
 
-Gamitin ang fictional trial card at dummy handout. Punan ang problema, pagbabago, owner/kapalit, baseline, kalidad, pahintulot at review date. Hindi pa aprubado ang trial; markahan ang pahintulot na pending. Gamitin ang 20/100 at 5/100 para sa rates, 15-percentage-point na pagitan at 75% relative na bawas sa reprints. Huwag tawaging cost savings.
+Gamitin ni Charlaine at ng mga learner ang fictional trial card at dummy handout. Punan ang problema, pagbabago, owner/kapalit, baseline, kalidad, pahintulot at review date. Hindi pa aprubado ang trial; markahan ang pahintulot na pending. Gamitin ang 20/100 at 5/100 para sa rates, 15-percentage-point na pagitan at 75% relative na bawas sa reprints. Huwag tawaging cost savings.
 
 Sa triad, magpalitan bilang BHW, kasamahang walang internet at observer. Ipakita ang kontroladong master, itanong ang hadlang at ipaliwanag ang handover. Ipasabi sa kapalit ang version check, stock-gap reporting at review. Observer: ibigay ang isang tiyak na puna; BHW: ulitin ang hakbang na kailangang ayusin. Itala kung nagawa, may prompt o hindi pa.
 
@@ -48,6 +48,6 @@ Kung mag-isa, magsulat o magsabi ng trial at handover gamit ang parehong fiction
 
 ## [check] Piliin ang susunod na hakbang
 
-Sa hiwalay na kathang-isip na sitwasyon, kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ito lamang ang ibinigay na datos. Walang kumpirmadong bill, presyo, dahilan ng pagkansela o kalidad ng naibigay na serbisyo.
+Sa hiwalay na kathang-isip na sitwasyon ni Charlaine, kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ito lamang ang ibinigay na datos. Walang kumpirmadong bill, presyo, dahilan ng pagkansela o kalidad ng naibigay na serbisyo.
 
 Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Isaalang-alang ang denominator at serbisyong naibigay. Pagkatapos sumagot, basahin ang dahilan para sa bawat pagpipilian at ang itinamang wakas; ihambing ito sa ginawa sa rehearsal.

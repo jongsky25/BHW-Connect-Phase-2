@@ -14,7 +14,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   draft-read:
-    if: github.head_ref == 'codex/lesson-193-charlaine-handoff'
+    # The first pass is frozen; the story workflow resumes its exact evidence.
+    if: github.head_ref == 'codex/lesson-193-charlaine-handoff' && github.event.pull_request.head.sha == '6021f8fde11c8dad66fe824229ab8508b71d5827'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:

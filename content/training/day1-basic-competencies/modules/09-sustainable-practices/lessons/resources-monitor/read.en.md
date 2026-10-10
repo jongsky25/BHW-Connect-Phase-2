@@ -8,7 +8,7 @@ Count wrong-version reprints, all printed pages and sessions delivered. Also che
 
 ## [compare] Try a simple comparison
 
-Use the fictional tally: wrong-version reprints were 20 out of every 100 printed pages before and 5 out of every 100 afterward. Both denominators are 100 pages. The rates are 20% and 5%; the difference is 15 per 100 pages, or 15 percentage points. These are practice tallies, not a report from a real BHS.
+Charlaine uses the fictional tally: wrong-version reprints were 20 out of every 100 printed pages before and 5 out of every 100 afterward. Both denominators are 100 pages. The rates are 20% and 5%; the difference is 15 per 100 pages, or 15 percentage points. These are practice tallies, not a report from a real BHS.
 
 The relative reduction in reprints is (20 − 5) ÷ 20 = 75%. This is not a 75% reduction in total cost. Prices, other resource costs and the cause of the change are not supplied. Comparable session types and counts, correct handouts for everyone, delays and complaints have not been confirmed either. Record these as unknown.
 
@@ -24,7 +24,7 @@ If the version or authorisation cannot be verified, do not use an unapproved cop
 
 ## [workload] When workloads differ
 
-Five teaching sessions were delivered in one week and ten in the next. Total paper use may rise because the workload doubled. Those session counts alone cannot give a reprint rate: reprint and page counts for each week are also needed. If they are not supplied, record them as unknown; do not guess or borrow the separate 20/100 and 5/100 example.
+Charlaine examines the workload: five teaching sessions were delivered in one week and ten in the next. Total paper use may rise because the workload doubled. Those session counts alone cannot give a reprint rate: reprint and page counts for each week are also needed. If they are not supplied, record them as unknown; do not guess or borrow the separate 20/100 and 5/100 example.
 
 For comparable session types, divide reprints by sessions delivered or compare reprints per 100 printed pages. Also compare correct versions, readable material, complaints, delays and services delivered. Raw totals may fall because services were canceled; that does not prove a better process.
 
@@ -40,7 +40,7 @@ At review, remove unhelpful steps while preserving version verification, correct
 
 ## [practice] Try it, then repeat
 
-Use the fictional trial card and dummy handout. Fill in the problem, change, owner/replacement, baseline, quality, authorisation and review date. The trial is not approved; mark permission pending. Use 20/100 and 5/100 to calculate rates, a 15-percentage-point difference and a 75% relative reduction in reprints. Do not call this cost savings.
+Charlaine and the learners use the fictional trial card and dummy handout. Fill in the problem, change, owner/replacement, baseline, quality, authorisation and review date. The trial is not approved; mark permission pending. Use 20/100 and 5/100 to calculate rates, a 15-percentage-point difference and a 75% relative reduction in reprints. Do not call this cost savings.
 
 In a triad, rotate as BHW, colleague without internet and observer. Show the controlled master, ask about the barrier and explain the handover. Ask the replacement to explain version verification, stock-gap reporting and review. Observer: give one specific piece of feedback. BHW: repeat the step needing improvement. Record done, prompted or not yet.
 
@@ -48,6 +48,6 @@ If working alone, write or speak the trial and handover using the same fictional
 
 ## [check] Choose the next step
 
-In a separate fictional situation, paper use halved because half the sessions were canceled. That is the only supplied evidence. Bills, prices, reasons for cancellation and the quality of services delivered have not been confirmed.
+In Charlaine’s separate fictional situation, paper use halved because half the sessions were canceled. That is the only supplied evidence. Bills, prices, reasons for cancellation and the quality of services delivered have not been confirmed.
 
 Choose an answer and explain why before viewing feedback. Consider the denominator and services delivered. After answering, read the rationale for every choice and the corrected ending; compare these with your rehearsal.

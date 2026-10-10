@@ -305,6 +305,7 @@ export function ReferenceLessons(props: Props) {
   const definitionMinutes = definitionTracks.length === 6 ? Math.ceil(definitionTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const safetyPrepareRevision = lesson?.lesson_key === "safety-prepare" && lesson.revision.assets.some(asset => asset.id === "safety-prepare-check");
   const demonstrationRevision = lesson?.lesson_key === "safety-demonstrate";
+  const resourcesMonitorRevision = lesson?.lesson_key === "resources-monitor";
   const controlsRevision = lesson?.lesson_key === "safety-controls" && lesson.revision.assets.some(asset => asset.id === "apple-controls-check");
   const controlsTracks = controlsRevision ? Object.values(lessonNarration ?? {}) : [];
   const controlsMinutes = controlsTracks.length === 6 ? Math.ceil(controlsTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
@@ -324,7 +325,7 @@ export function ReferenceLessons(props: Props) {
   const handoffRevision = lesson?.lesson_key === "communication-handoff" && lesson.revision.assets.some(asset => asset.id === "handoff-check");
   const handoffTracks = handoffRevision ? Object.values(lessonNarration ?? {}) : [];
   const handoffMinutes = handoffTracks.length === 6 ? Math.ceil(handoffTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
-  const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
+  const storyVideoPrompt = narratedStory && index === 0 && Boolean(item) && (!resourcesMonitorRevision || checksAnswered);
   const videoLabel = narratedStory
     ? ui("Kuwentong may salaysay", "Narrated story")
     : "Video";
@@ -595,7 +596,7 @@ export function ReferenceLessons(props: Props) {
             {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || handoffRevision || causesRevision || definitionRevision || recordingRevision || actionPlanRevision || safetyPrepareRevision || lesson.lesson_key === "communication-explain") && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
-            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyPrepareRevision || safetyIdentifyRevision || controlsRevision || demonstrationRevision) && !storyLayout && figures}
+            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyPrepareRevision || safetyIdentifyRevision || controlsRevision || demonstrationRevision || resourcesMonitorRevision) && !storyLayout && figures}
             {prioritizationTable}
             {practice}
             {revealSummary && <div
@@ -619,7 +620,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyPrepareRevision && !safetyIdentifyRevision && !controlsRevision && !demonstrationRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyPrepareRevision && !safetyIdentifyRevision && !controlsRevision && !demonstrationRevision && !resourcesMonitorRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -916,7 +917,7 @@ export function ReferenceLessons(props: Props) {
               ))}
               {featuredVideo && <button type="button"
                 className="rounded border border-ink/20 px-4 py-2 aria-pressed:bg-primary aria-pressed:text-on-primary"
-                aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}>
+                aria-pressed={videoSelected} disabled={resourcesMonitorRevision && !checksAnswered} title={resourcesMonitorRevision && !checksAnswered ? ui("Sagutin ang tatlong tanong para mabuksan ang kuwento.", "Answer all three checks to unlock the story.") : undefined} onClick={() => setVideoSelected(true)}>
                 {videoLabel}
               </button>}
               <button
@@ -1052,7 +1053,7 @@ export function ReferenceLessons(props: Props) {
                   {m === "read" ? ui("Basahin", "Read") : ui("Slides", "Slides")}
                 </button>
               ))}
-              {featuredVideo && <button type="button" aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}
+              {featuredVideo && <button type="button" aria-pressed={videoSelected} disabled={resourcesMonitorRevision && !checksAnswered} title={resourcesMonitorRevision && !checksAnswered ? ui("Sagutin ang tatlong tanong para mabuksan ang kuwento.", "Answer all three checks to unlock the story.") : undefined} onClick={() => setVideoSelected(true)}
                 className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
                 {videoLabel}
               </button>}
