@@ -9,7 +9,7 @@ cache=json.loads(cache_path.read_text()) if cache_path.exists() else None
 cache_valid=False
 if cache:
  scopes=cache['render_input_paths']
- assert scopes==['remotion','public','package.json','package-lock.json','scripts/remotion-render.mjs','scripts/lib/remotion-captions.mjs'], 'Incomplete renderer input scope'
+ assert scopes==['remotion','public','content','package.json','package-lock.json','scripts/remotion-render.mjs','scripts/lib/remotion-captions.mjs'], 'Incomplete renderer input scope'
  tree=lambda ref: subprocess.check_output(['git','ls-tree','-r',ref,'--',*scopes],cwd=root)
  cache_valid=hashlib.sha256(tree(head)).hexdigest()==cache['render_input_git_tree_sha256']==hashlib.sha256(tree(cache['render_source_commit'])).hexdigest()
 cache_valid=cache_valid and subprocess.run(['git','diff','--quiet','HEAD','--',*(cache['render_input_paths'] if cache else [])],cwd=root).returncode==0

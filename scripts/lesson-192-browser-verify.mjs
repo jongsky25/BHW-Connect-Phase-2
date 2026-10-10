@@ -13,7 +13,7 @@ await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const baseUrl='http://127.0.0.1:'+server.address().port;
 const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH??chromium.executablePath(),args:['--no-sandbox']});
 const report={date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),method:'Actual ReferenceLessons/ReferenceReadSection production components, local auth/navigation/save fixtures. Browser offline after loopback load; no authenticated production proof.',scope:contentOnly?'text/check/resume only':'text/check/resume and actual narration',artwork_story:'Six action illustrations present; story playback separately checked',cases:[],screenshots:[],errors:[]};
-const trackErrors=page=>{page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});};
+const trackErrors=page=>{page.on('requestfailed',r=>report.errors.push('Request failed: '+r.url()+' '+r.failure()?.errorText));page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});};
 const save=()=>fs.writeFileSync(dir+'/lesson-192-browser-verification.json',JSON.stringify(report,null,2)+'\n');
 try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
