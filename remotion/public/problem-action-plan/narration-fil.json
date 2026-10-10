@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Filipino (Tagalog) as the same warm adult female Kore community health trainer throughout. Keep a stable feminine mid-register for headings, dialogue, questions and endings. Preserve exact words, negations, numbers and pending-agreement qualifications. No speaker switching or added words. Pronounce Carole clearly, consistently and naturally.",
+  "durationSeconds": 74.292,
+  "beats": [
+    {
+      "zone": "compare-solutions",
+      "index": 0,
+      "text": "Sa kathang-isip na scenario, natiyak ang hadlang sa trabaho at pag-aalaga ng bata. Inihambing ni Carole ang poster at pagtalakay ng maliit na schedule trial.",
+      "start_ms": 0,
+      "end_ms": 11240
+    },
+    {
+      "zone": "plan",
+      "index": 1,
+      "text": "Sanhi, mungkahi, owner, resources, deadline, sukatan at review date. Konsultasyon muna; hinihintay pa ang staff time at trial date.",
+      "start_ms": 11540,
+      "end_ms": 24860
+    },
+    {
+      "zone": "partners",
+      "index": 2,
+      "text": "Konsultasyon ang papel ni Carole. Desisyon sa schedule ang sa may tungkuling health team. Isama ang bihirang makadalo; hindi pahintulot ang pananahimik.",
+      "start_ms": 25160,
+      "end_ms": 36480
+    },
+    {
+      "zone": "review",
+      "index": 3,
+      "text": "Sa hiwalay na review exercise, may kasunduan sa naunang trial. Isa sa tatlong inimbitahan ang nakadalo bago at pagkatapos. Dalawa pa rin ang hindi nakapunta.",
+      "start_ms": 36780,
+      "end_ms": 48180
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Hindi resulta ang natapos na meeting. Kumustahin muli ang trabaho, gastos, pag-aalaga at abiso. Ipresenta ang plano, sagutin ang katuwang, baguhin at ulitin.",
+      "start_ms": 48480,
+      "end_ms": 61200
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Ibalik ni Carole ang mungkahi sa team. Staff time at trial date ay hinihintay pa. Review ng attendance pagkatapos ng napagkasunduang trial; walang pangakong lutas na.",
+      "start_ms": 61500,
+      "end_ms": 74220
+    }
+  ],
+  "audio_sha256": "aa57da6510afd7eb7285ded80e1acd5c8bc4a3e2c5a3110e2674e6867cdc4fed"
+}

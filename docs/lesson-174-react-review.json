@@ -1,0 +1,14 @@
+{
+  "status": "reviewed",
+  "scope": "Target-specific additions to production ReferenceLessons after integrating released 1.6.5/1.7.1",
+  "checks": [
+    "No conditional hooks or new effects; derived duration uses existing selected narration",
+    "Six target tracks required before presenting an audio-based study estimate",
+    "Action illustration and context precede decision choices in Slides",
+    "Existing native buttons, heading focus, status rationales, player cleanup and fullscreen flow reused",
+    "Target lesson key and action-check asset gate scope; historical exact-byte guards preserved",
+    "No client credential, database call or new save behavior; offline fixture labels simulated saves"
+  ],
+  "validation": "TypeScript passed; complete actual-media browser matrix and exact-head CI required before packaging",
+  "human_owner_review": "pending"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "implementation draft; exact-head review-package verification required",
+  "implemented": [
+    "six paired bilingual Read/Slides screens and distinct Carole illustrations",
+    "50-minute private guides, one observable indicator with six bilingual levels",
+    "two four-page A4 practice kits with one-page plans",
+    "34 inspected primary-source page excerpts with original PDF hashes",
+    "12 actual Gemini Kore Read MP3s; equivalent Slides narration",
+    "two actual six-beat H.264/AAC stories with exact captions and encoded-final-frame posters",
+    "14 full and 56 focused actual-audio model reports; raw requests/responses and excerpt bytes retained",
+    "old published narration selectable; old public bytes and integrated approved main preserved"
+  ],
+  "technical_acceptance": "The external lesson-1.7.4-verification.json and package-integrity receipt are authoritative for exact-head normal CI, disposable Supabase E2E, all 88 registry renders, full 88-case offline browser matrix, media and ZIP checks. The package builder refuses incomplete evidence.",
+  "reported_audio_disagreements": "See audio-review-notes.json: possible poster/toaster pronunciation disagreement and narrator/timbre shifts remain unresolved pending human listening.",
+  "human_listening": "pending",
+  "owner_review": "pending",
+  "local_policy_SME": "pending",
+  "production_writes": false,
+  "published_snapshot": "Required fresh bounded read-only nine-authored-lesson snapshot in final review workflow. No learner queries. Earlier attempt failed its local count assertion before authentication.",
+  "authenticated_production_UI": "not run; offline production-component fixture and disposable E2E are separately labeled",
+  "registry": 88,
+  "narration_seconds": {
+    "fil": 569.97,
+    "en": 512.34
+  },
+  "upstream_CI_blocker": {
+    "base_commit": "e49be9439c717e843e0f192ec1a3b5a61d11aa9c",
+    "lesson": "problem-prioritize",
+    "reason": "Approved lesson 1.7.3 release explicitly records 12 absent current narration tracks. The unchanged global narration guard remains required; draft packaging still refuses failed normal CI.",
+    "evidence": "docs/lesson-173-owner-approval.json"
+  }
+}

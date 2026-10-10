@@ -1,0 +1,181 @@
+{
+  "generated_date": "2026-10-09T02:50:08.867Z",
+  "source_commit": "a3728aade772d8b074cba5abd1391365963b691f",
+  "owner_review": "pending",
+  "render_input_sha256": "b27df94ac612d47764b3e4ae535983fdffc0f8a814055efdb890551acdd6c456",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 74.292,
+      "beats": [
+        {
+          "zone": "compare-solutions",
+          "index": 0,
+          "text": "Sa kathang-isip na scenario, natiyak ang hadlang sa trabaho at pag-aalaga ng bata. Inihambing ni Carole ang poster at pagtalakay ng maliit na schedule trial.",
+          "start_ms": 0,
+          "end_ms": 11240
+        },
+        {
+          "zone": "plan",
+          "index": 1,
+          "text": "Sanhi, mungkahi, owner, resources, deadline, sukatan at review date. Konsultasyon muna; hinihintay pa ang staff time at trial date.",
+          "start_ms": 11540,
+          "end_ms": 24860
+        },
+        {
+          "zone": "partners",
+          "index": 2,
+          "text": "Konsultasyon ang papel ni Carole. Desisyon sa schedule ang sa may tungkuling health team. Isama ang bihirang makadalo; hindi pahintulot ang pananahimik.",
+          "start_ms": 25160,
+          "end_ms": 36480
+        },
+        {
+          "zone": "review",
+          "index": 3,
+          "text": "Sa hiwalay na review exercise, may kasunduan sa naunang trial. Isa sa tatlong inimbitahan ang nakadalo bago at pagkatapos. Dalawa pa rin ang hindi nakapunta.",
+          "start_ms": 36780,
+          "end_ms": 48180
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Hindi resulta ang natapos na meeting. Kumustahin muli ang trabaho, gastos, pag-aalaga at abiso. Ipresenta ang plano, sagutin ang katuwang, baguhin at ulitin.",
+          "start_ms": 48480,
+          "end_ms": 61200
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Ibalik ni Carole ang mungkahi sa team. Staff time at trial date ay hinihintay pa. Review ng attendance pagkatapos ng napagkasunduang trial; walang pangakong lutas na.",
+          "start_ms": 61500,
+          "end_ms": 74220
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-7/problem-action-plan-gemini-fil-62952a68d610.mp4",
+        "content_hash": "62952a68d610dd1c63f9e52e2ad05d01b0e20249f7b48e1b75b2c6d7b14452da",
+        "duration_s": 75,
+        "captions": {
+          "path": "/training/bhw-1-7/problem-action-plan-gemini-fil-6d84ecc5a6c1.vtt",
+          "content_hash": "6d84ecc5a6c15b25f4e80b200559eb86bb42beb4d47aa38d83af7ca749cf96aa"
+        },
+        "poster": {
+          "path": "/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg",
+          "content_hash": "50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg",
+        "content_hash": "50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 68.571,
+      "beats": [
+        {
+          "zone": "compare-solutions",
+          "index": 0,
+          "text": "The fictional scenario supplies verified work and childcare barriers. Carole compares a poster with discussion of a small schedule trial.",
+          "start_ms": 0,
+          "end_ms": 9680
+        },
+        {
+          "zone": "plan",
+          "index": 1,
+          "text": "Cause, proposal, owner, resources, deadline, measure and review date. Consult first; staff time and a trial date remain pending.",
+          "start_ms": 9980,
+          "end_ms": 21780
+        },
+        {
+          "zone": "partners",
+          "index": 2,
+          "text": "Carole handles consultation; the responsible health team decides schedules. Include seldom-heard residents. Silence does not establish agreement.",
+          "start_ms": 22080,
+          "end_ms": 32840
+        },
+        {
+          "zone": "review",
+          "index": 3,
+          "text": "A separate review exercise supplies agreement to an earlier trial. One of three invited households attended before and after. Two still missed visits.",
+          "start_ms": 33140,
+          "end_ms": 44420
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "A completed meeting is not an outcome. Recheck work, costs, childcare and notice. Present the plan, answer partner questions, revise and retry.",
+          "start_ms": 44720,
+          "end_ms": 57320
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Carole returns the proposal to the team. Staff time and a trial date remain pending. Review attendance after an agreed trial; do not claim the problem solved.",
+          "start_ms": 57620,
+          "end_ms": 68500
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-7/problem-action-plan-gemini-en-8cab3652ce1a.mp4",
+        "content_hash": "8cab3652ce1a41e1ea028bdf32f79606c2b19305c5cafe9520268b85dceb4e3a",
+        "duration_s": 70,
+        "captions": {
+          "path": "/training/bhw-1-7/problem-action-plan-gemini-en-f6f022e72fd5.vtt",
+          "content_hash": "f6f022e72fd5634d591cbe1fe8d61294e4228b3fc5b1718b698a83083498723c"
+        },
+        "poster": {
+          "path": "/training/bhw-1-7/problem-action-plan-encoded-final-en-658845c576fb.jpg",
+          "content_hash": "658845c576fb6a15c4c7730f29415e8327da89bb7e6b0d8b818408f775bbe70d"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-7/problem-action-plan-encoded-final-en-658845c576fb.jpg",
+        "content_hash": "658845c576fb6a15c4c7730f29415e8327da89bb7e6b0d8b818408f775bbe70d"
+      }
+    }
+  ],
+  "encoded_final_frame_posters": [
+    {
+      "language": "fil",
+      "source_video": "/training/bhw-1-7/problem-action-plan-gemini-fil-62952a68d610.mp4",
+      "source_video_sha256": "62952a68d610dd1c63f9e52e2ad05d01b0e20249f7b48e1b75b2c6d7b14452da",
+      "frame_index": 2261,
+      "poster": {
+        "path": "/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg",
+        "content_hash": "50558786dbc504166b548c2e89ed04b00a632d370a574122639a4ed9d8d529be"
+      },
+      "previous_poster": {
+        "path": "/training/bhw-1-7/problem-action-plan-gemini-fil-9c0556df0d1a-poster.jpg",
+        "content_hash": "9c0556df0d1acaadcc56d6be2bd5ea3477d49e2849f7611efef260dfe9ce3e3d"
+      },
+      "method": "ffprobe counted decoded frames; ffmpeg selected final frame from actual shipped H.264 and encoded JPEG quality 2"
+    },
+    {
+      "language": "en",
+      "source_video": "/training/bhw-1-7/problem-action-plan-gemini-en-8cab3652ce1a.mp4",
+      "source_video_sha256": "8cab3652ce1a41e1ea028bdf32f79606c2b19305c5cafe9520268b85dceb4e3a",
+      "frame_index": 2089,
+      "poster": {
+        "path": "/training/bhw-1-7/problem-action-plan-encoded-final-en-658845c576fb.jpg",
+        "content_hash": "658845c576fb6a15c4c7730f29415e8327da89bb7e6b0d8b818408f775bbe70d"
+      },
+      "previous_poster": {
+        "path": "/training/bhw-1-7/problem-action-plan-gemini-en-86017485fc89-poster.jpg",
+        "content_hash": "86017485fc8917fb6c511e42319434bb990402dd8e82256800ceb430db421a00"
+      },
+      "method": "ffprobe counted decoded frames; ffmpeg selected final frame from actual shipped H.264 and encoded JPEG quality 2"
+    }
+  ]
+}
