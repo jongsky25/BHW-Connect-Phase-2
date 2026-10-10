@@ -1,3 +1,4 @@
+import {release184View} from '../lib/lesson-184-release-integration.mjs';
 // @vitest-environment node
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -16,7 +17,7 @@ it('binds owner approval to the reviewed package and only seven status promotion
  expect(actual).toEqual(reviewed);
 });
 it('preserves every approved target source and selected public media byte',()=>{
- for(const[p,h]of Object.entries(approval.approved_source_sha256))expect(hash(fs.readFileSync(p)),p).toBe(h);
+ for(const[p,h]of Object.entries(approval.approved_source_sha256))expect(hash(release184View(p,'approvedMain')),p).toBe(h);
  expect(approval.approved_media).toHaveLength(24);
  for(const m of approval.approved_media){const bytes=fs.readFileSync('public'+m.path);expect(hash(bytes),m.path).toBe(m.sha256);expect(bytes.length).toBe(m.bytes);}
 });

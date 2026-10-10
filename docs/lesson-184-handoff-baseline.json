@@ -1,0 +1,822 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "f4bf3c25ec498cabac0b6e851337b312ff6333e7",
+  "lesson_number": "1.8.4",
+  "lesson_key": "safety-demonstrate",
+  "lesson_id": "baff2789-bb35-40ed-8828-d8c7e503bb72",
+  "module_id": "ffd36ec0-f8f9-4c7a-bf34-2ab821ac95ec",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "character": {
+    "name": "Apple",
+    "pronouns": "she/her",
+    "reference_status": "No supplied or generated likeness; coordinate one fictional reference during implementation"
+  },
+  "manifest": {
+    "lesson_key": "safety-demonstrate",
+    "position": 3,
+    "title_fil": "Ipakita ang ligtas na paraan",
+    "title_en": "Demonstrate safe practice",
+    "objectives_fil": [
+      "Gamit ang dummy equipment, sundin ang trainer-approved safety checklist at ipakita ang agarang reporting at referral response sa simulated needlestick."
+    ],
+    "objectives_en": [
+      "Using dummy equipment, follow the trainer-approved safety checklist and demonstrate immediate reporting and referral for a simulated needlestick."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "exposure",
+      "concept_ids": [
+        "m8.exposure"
+      ]
+    },
+    {
+      "id": "return-demo",
+      "concept_ids": [
+        "m8.practice",
+        "m8.prepare"
+      ]
+    },
+    {
+      "id": "near-miss",
+      "concept_ids": [
+        "m8.practice"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m8.exposure",
+        "m8.practice",
+        "m8.prepare"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m8.exposure",
+        "m8.practice",
+        "m8.prepare"
+      ]
+    }
+  ],
+  "slide_anchors": [
+    {
+      "id": "slide-exposure",
+      "concept_ids": [
+        "m8.exposure"
+      ]
+    },
+    {
+      "id": "slide-return-demo",
+      "concept_ids": [
+        "m8.practice",
+        "m8.prepare"
+      ]
+    },
+    {
+      "id": "slide-near-miss",
+      "concept_ids": [
+        "m8.practice"
+      ]
+    },
+    {
+      "id": "slide-practice",
+      "concept_ids": [
+        "m8.exposure",
+        "m8.practice",
+        "m8.prepare"
+      ]
+    },
+    {
+      "id": "slide-check",
+      "concept_ids": [
+        "m8.exposure",
+        "m8.practice",
+        "m8.prepare"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m8.exposure",
+      "read_ids": [
+        "exposure",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-exposure",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "cdc-exposure"
+      ]
+    },
+    {
+      "id": "m8.practice",
+      "read_ids": [
+        "return-demo",
+        "near-miss",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-return-demo",
+        "slide-near-miss",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "cdc-exposure"
+      ]
+    },
+    {
+      "id": "m8.prepare",
+      "read_ids": [
+        "return-demo",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-return-demo",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "cdc-exposure"
+      ]
+    }
+  ],
+  "original_check": {
+    "prompt_fil": "Natusok si Ana ng used needle ngunit walang sintomas. Ano ang gagawin?",
+    "prompt_en": "Ana has a used-needle injury but no symptoms. What should she do?",
+    "options": [
+      {
+        "fil": "Hugasan, iulat agad at magpa-medical evaluation kaagad.",
+        "en": "Wash, report immediately and obtain immediate medical evaluation."
+      },
+      {
+        "fil": "Hugasan at maghintay hanggang matapos ang visits.",
+        "en": "Wash and wait until the visits are finished."
+      },
+      {
+        "fil": "Pumili ng gamot mula sa available supplies.",
+        "en": "Choose medication from available supplies."
+      }
+    ],
+    "correct_option_index": 0,
+    "feedback_fil": "Ang unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.",
+    "feedback_en": "The first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment."
+  },
+  "guided_minutes": 75,
+  "module_guided_minutes": 240,
+  "target_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/competency.json": "a082c90db70837d7b21d33c62b44191a3ef767c16307038547b6ff07654c2fe4",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.en.md": "c342d5b0f35444a3ec4d43d9976e4fa7b35fb79b5b927dbaf8e84aea3d56d27b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.fil.md": "b56b7b7fe4475e5a3fc337a06393d6bcf8e5ffbcf0cd46a86bf5186f8b346340",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json": "4a3dc79df78b737df53fb18fbf56c97a786fc454a358cea54c44dc775242a59e",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.en.md": "8df2159348482659d9b895a87e6392ae3f1415e08148a234380d58479aa1c36d",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.fil.md": "3fb99726ff80bea59b0a8054b1779a418bf33e55394c444c1d8ad09d5adfc027",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/slides.json": "f1a3b14af5e925c91a11b983ad71db2d6045201dca1bd5feda61eef18d4fc6cf"
+  },
+  "target_files_utf8": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/competency.json": "{\n  \"observation_indicators\": [\n    {\n      \"objective_index\": 0,\n      \"observable_fil\": \"Nasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation.\",\n      \"observable_en\": \"Follows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation.\",\n      \"not_yet_fil\": \"Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.\",\n      \"not_yet_en\": \"Uses real used sharps in practice, misses a critical safety step or delays medical evaluation.\",\n      \"levels\": {\n        \"kaya_na_fil\": \"Nasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation. Nagagawa kahit hindi pinapaalalahanan.\",\n        \"kaya_na_en\": \"Follows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation. Completes this without prompting.\",\n        \"kailangan_practice_fil\": \"Ligtas ang sequence ngunit nangangailangan ng prompt sa reporting contact; ipaulit hanggang malinaw ang contact at pathway.\",\n        \"kailangan_practice_en\": \"Follows a safe sequence but needs a prompt for the reporting contact; repeat until contact and pathway are clear.\",\n        \"hindi_pa_fil\": \"Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.\",\n        \"hindi_pa_en\": \"Uses real used sharps in practice, misses a critical safety step or delays medical evaluation.\"\n      }\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.en.md": "## [purpose] Purpose\n\nUsing dummy equipment, follow the trainer-approved safety checklist and demonstrate immediate reporting and referral for a simulated needlestick.\n\n## [time-materials] Time and materials\n\n75 minutes of facilitated practice within the subchapter's 4 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nObtain the trainer-approved local checklist and dummy equipment. Do not run a clinical demonstration without a qualified trainer and safe materials. Put the emergency contact on the practice card.\n\n## [opening] Opening\n\nAna has a used-needle injury but no symptoms. What should she do?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment.\n\n## [misconception] Common misconception\n\nUses real used sharps in practice, misses a critical safety step or delays medical evaluation. Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.\n\n## [practice] Practice activity\n\nUse a dummy box to show when replacement is needed. Follow the local demonstration checklist for hand hygiene and PPE. Then rehearse a needlestick: state the first action, call the simulated contact and arrange immediate evaluation. In pairs, record any delay or unsafe step and repeat. Alone, rehearse reporting; a trainer must observe the physical demonstration. Before duty, know where to obtain immediate evaluation.\n\n## [answer-key] Answer key\n\n1. Wash, report immediately and obtain immediate medical evaluation.\n\nThe first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment.\n\n## [observe] Observe\n\nFollows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation.\n\nReady: Follows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation. Completes this without prompting.\n\nNeeds practice: Follows a safe sequence but needs a prompt for the reporting contact; repeat until contact and pathway are clear.\n\nNot yet: Uses real used sharps in practice, misses a critical safety step or delays medical evaluation.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nFollows a safe sequence but needs a prompt for the reporting contact; repeat until contact and pathway are clear. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23; CDC — Best Practices for Occupational Exposure to Blood (https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html). The five hazard groups span both source-table pages. A local clinical trainer must review demonstrations and referral pathways. Immediate needlestick evaluation was checked against CDC on 25 September 2026. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.fil.md": "## [purpose] Layunin\n\nGamit ang dummy equipment, sundin ang trainer-approved safety checklist at ipakita ang agarang reporting at referral response sa simulated needlestick.\n\n## [time-materials] Oras at kagamitan\n\n75 minuto para sa pinadali na pagsasanay. Bahagi ito ng 4 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nKumuha ng trainer-approved local checklist at dummy equipment. Walang clinical demonstration kung walang qualified trainer at ligtas na kagamitan. Ilagay ang emergency contact sa practice card.\n\n## [opening] Pambungad\n\nNatusok si Ana ng used needle ngunit walang sintomas. Ano ang gagawin?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.\n\n## [misconception] Karaniwang pagkakamali\n\nHumahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation. Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.\n\n## [practice] Gawaing pagsasanay\n\nIpakita gamit ang dummy box kung kailan kailangan ng replacement. Sundin ang lokal na demo checklist para sa hand hygiene at PPE. Pagkatapos, gumanap sa needlestick scenario: sabihin ang unang hakbang, tawagan ang kunwaring contact at ayusin ang agarang evaluation. Sa pares, itala ang anumang delay o unsafe step at ulitin. Kung mag-isa, i-rehearse ang reporting sequence; ang physical demo ay kailangang makita ng trainer. Bago ang duty, alamin kung saan pupunta para sa agarang evaluation.\n\n## [answer-key] Susi sa sagot\n\n1. Hugasan, iulat agad at magpa-medical evaluation kaagad.\n\nAng unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.\n\n## [observe] Obserbahan\n\nNasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation.\n\nKaya na: Nasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Ligtas ang sequence ngunit nangangailangan ng prompt sa reporting contact; ipaulit hanggang malinaw ang contact at pathway.\n\nHindi pa: Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nLigtas ang sequence ngunit nangangailangan ng prompt sa reporting contact; ipaulit hanggang malinaw ang contact at pathway. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23; CDC — Best Practices for Occupational Exposure to Blood (https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html). Ang limang hazard group ay mula sa dalawang pahina ng source table. Suriin ng lokal na clinical trainer ang demo at referral pathway. Ang agarang needlestick evaluation ay sinuri sa CDC noong 25 Setyembre 2026. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"safety-demonstrate\",\n    \"position\": 3,\n    \"title_fil\": \"Ipakita ang ligtas na paraan\",\n    \"title_en\": \"Demonstrate safe practice\",\n    \"objectives_fil\": [\n      \"Gamit ang dummy equipment, sundin ang trainer-approved safety checklist at ipakita ang agarang reporting at referral response sa simulated needlestick.\"\n    ],\n    \"objectives_en\": [\n      \"Using dummy equipment, follow the trainer-approved safety checklist and demonstrate immediate reporting and referral for a simulated needlestick.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"exposure\",\n      \"concept_ids\": [\n        \"m8.exposure\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang needlestick injury ay iulat at ipasuri kaagad; hindi sapat ang paghuhugas lamang.\",\n      \"takeaway_en\": \"Report and obtain immediate evaluation after a needlestick; washing alone is insufficient.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"return-demo\",\n      \"concept_ids\": [\n        \"m8.practice\",\n        \"m8.prepare\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang competency ay nakikita sa ligtas na demonstrasyon sa loob ng saklaw ng pagsasanay.\",\n      \"takeaway_en\": \"Competence is shown through a safe demonstration within the scope of training.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"near-miss\",\n      \"concept_ids\": [\n        \"m8.practice\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang pag-uulat ng muntikang insidente ay pagkakataong maiwasan ang susunod na pinsala.\",\n      \"takeaway_en\": \"Reporting a near miss creates a chance to prevent the next injury.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m8.exposure\",\n        \"m8.practice\",\n        \"m8.prepare\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.\",\n      \"takeaway_en\": \"Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m8.exposure\",\n        \"m8.practice\",\n        \"m8.prepare\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.\",\n      \"takeaway_en\": \"Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.\",\n      \"check\": {\n        \"prompt_fil\": \"Natusok si Ana ng used needle ngunit walang sintomas. Ano ang gagawin?\",\n        \"prompt_en\": \"Ana has a used-needle injury but no symptoms. What should she do?\",\n        \"options\": [\n          {\n            \"fil\": \"Hugasan, iulat agad at magpa-medical evaluation kaagad.\",\n            \"en\": \"Wash, report immediately and obtain immediate medical evaluation.\"\n          },\n          {\n            \"fil\": \"Hugasan at maghintay hanggang matapos ang visits.\",\n            \"en\": \"Wash and wait until the visits are finished.\"\n          },\n          {\n            \"fil\": \"Pumili ng gamot mula sa available supplies.\",\n            \"en\": \"Choose medication from available supplies.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Ang unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.\",\n        \"feedback_en\": \"The first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m8.exposure\",\n      \"read_ids\": [\n        \"exposure\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-exposure\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"cdc-exposure\"\n      ]\n    },\n    {\n      \"id\": \"m8.practice\",\n      \"read_ids\": [\n        \"return-demo\",\n        \"near-miss\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-return-demo\",\n        \"slide-near-miss\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"cdc-exposure\"\n      ]\n    },\n    {\n      \"id\": \"m8.prepare\",\n      \"read_ids\": [\n        \"return-demo\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-return-demo\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"cdc-exposure\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        21,\n        22,\n        23\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"cdc-exposure\",\n      \"title\": \"CDC — Best Practices for Occupational Exposure to Blood\",\n      \"url\": \"https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html\"\n    }\n  ],\n  \"assets\": []\n}\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.en.md": "## [exposure] If stuck, act immediately\n\nAna, 33, is in a health-station safety practice. The injury in the next example is simulated; no real needles or body fluids are used.\n\nAfter a used-needle injury, wash the wound with soap and water. Report immediately to the midwife or designated supervisor and obtain immediate medical evaluation from a qualified provider. Do not wait until the end of the shift or for symptoms. A clinician decides on assessment and any post-exposure treatment. Document the event through the local incident process so the cause can also be addressed.\n\n## [return-demo] A safe return demonstration\n\nUsing dummy equipment, show where the sharps container belongs and when replacement is needed. Demonstrate hand hygiene and PPE use/removal following the trainer-approved local protocol. Practice uses no real used needles or body fluids. In a short posture exercise, adjust the chair and bag; avoid painful stretching. The facilitator observes actions rather than relying only on verbal answers.\n\n## [near-miss] Report a near miss too\n\nAna nearly slips but nobody is hurt. Report the hazard, time, location and control through the local process. After an incident, prepare available information for referral and any applicable benefits process, but paperwork must not delay urgent care. BHW insurance and benefits are not identical; confirm your applicable arrangements with the coordinator.\n\n## [practice] Try it, then repeat\n\nUse a dummy box to show when replacement is needed. Follow the local demonstration checklist for hand hygiene and PPE. Then rehearse a needlestick: state the first action, call the simulated contact and arrange immediate evaluation. In pairs, record any delay or unsafe step and repeat. Alone, rehearse reporting; a trainer must observe the physical demonstration. Before duty, know where to obtain immediate evaluation.\n\n## [check] Choose the next step\n\nChoose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.fil.md": "## [exposure] Kung natusok, kumilos agad\n\nSi Ana, 33, ay nasa safety practice sa health station. Ang injury sa susunod na halimbawa ay simulation; walang tunay na karayom o body fluid sa pagsasanay.\n\nKung natusok ng ginamit na karayom, hugasan ang sugat gamit ang sabon at tubig. Iulat agad sa midwife o nakatalagang supervisor at kumuha kaagad ng medical evaluation sa kwalipikadong provider. Huwag hintaying matapos ang duty o magkaroon ng sintomas. Ang clinician ang magpapasya sa pagsusuri at anumang kailangan na post-exposure treatment. Itala ang pangyayari sa lokal na incident process upang matugunan din ang dahilan ng aksidente.\n\n## [return-demo] Return demonstration na ligtas\n\nGamit ang dummy equipment, ipakita kung saan dapat naroon ang sharps container at kung kailan kailangang palitan. Ipakita ang hand hygiene at paggamit/pagtanggal ng PPE ayon sa trainer-approved local protocol. Walang tunay na ginamit na karayom o body fluid sa practice. Sa maikling activity tungkol sa posisyon, ayusin ang upuan at bag; huwag gumawa ng masakit na stretch. Ang facilitator ang titingin sa kilos, hindi lang sa pagsagot.\n\n## [near-miss] Iulat kahit muntik lamang\n\nMuntik madulas si Ana pero walang nasaktan. Mahalaga pa ring iulat ang hazard, oras, lugar at ginawang kontrol sa lokal na proseso. Kung may insidente, ihanda ang available na impormasyon para sa referral at naaangkop na benefits process, ngunit huwag hayaang maantala ng papel ang agarang pangangalaga. Hindi lahat ng BHW ay pareho ang insurance o benepisyo; kumpirmahin sa coordinator kung ano ang naaangkop sa iyo.\n\n## [practice] Subukan, saka ulitin\n\nIpakita gamit ang dummy box kung kailan kailangan ng replacement. Sundin ang lokal na demo checklist para sa hand hygiene at PPE. Pagkatapos, gumanap sa needlestick scenario: sabihin ang unang hakbang, tawagan ang kunwaring contact at ayusin ang agarang evaluation. Sa pares, itala ang anumang delay o unsafe step at ulitin. Kung mag-isa, i-rehearse ang reporting sequence; ang physical demo ay kailangang makita ng trainer. Bago ang duty, alamin kung saan pupunta para sa agarang evaluation.\n\n## [check] Piliin ang susunod na hakbang\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/slides.json": "[\n  {\n    \"id\": \"slide-exposure\",\n    \"concept_ids\": [\n      \"m8.exposure\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Kung natusok, kumilos agad\",\n    \"heading_en\": \"If stuck, act immediately\",\n    \"display_fil\": \"Simulated needlestick: hugasan ng sabon at tubig → iulat agad → agarang medical evaluation. Huwag hintayin ang sintomas o uwian. Qualified clinician ang magpapasya sa assessment at post-exposure treatment.\",\n    \"display_en\": \"Simulated needlestick: wash with soap and water → report immediately → immediate medical evaluation. Do not wait for symptoms or shift end. A qualified clinician decides assessment and post-exposure treatment.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-return-demo\",\n    \"concept_ids\": [\n      \"m8.practice\",\n      \"m8.prepare\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Return demonstration na ligtas\",\n    \"heading_en\": \"A safe return demonstration\",\n    \"display_fil\": \"Dummy equipment lamang. Ipakita ang lokasyon at fill line ng sharps box. Sundin ang trainer-approved hand hygiene at PPE checklist. Ayusin ang upuan at bag; walang masakit na stretching.\",\n    \"display_en\": \"Dummy equipment only. Show the sharps container’s location and fill line. Follow the trainer-approved hand-hygiene and PPE checklist. Adjust chair and bag; no painful stretching.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-near-miss\",\n    \"concept_ids\": [\n      \"m8.practice\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Iulat kahit muntik lamang\",\n    \"heading_en\": \"Report a near miss too\",\n    \"display_fil\": \"Halos nadulas ngunit walang injury? Iulat ang lugar, oras, hazard at kontrol. Sa incident, hindi dapat maantala ng paperwork ang urgent care. Tiyakin sa coordinator ang angkop na insurance at benefits.\",\n    \"display_en\": \"A slip was narrowly avoided without injury? Report place, time, hazard and control. Incident paperwork must not delay urgent care. Confirm applicable insurance and benefits with the coordinator.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-practice\",\n    \"concept_ids\": [\n      \"m8.exposure\",\n      \"m8.practice\",\n      \"m8.prepare\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Subukan, saka ulitin\",\n    \"heading_en\": \"Try it, then repeat\",\n    \"display_fil\": \"Dummy demo → trainer checklist → simulated report → agarang evaluation. Itama at ulitin ang unsafe step.\",\n    \"display_en\": \"Dummy demonstration → trainer checklist → simulated report → immediate evaluation. Correct and repeat an unsafe step.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-check\",\n    \"concept_ids\": [\n      \"m8.exposure\",\n      \"m8.practice\",\n      \"m8.prepare\"\n    ],\n    \"layout\": \"decision\",\n    \"heading_fil\": \"Piliin ang susunod na hakbang\",\n    \"heading_en\": \"Choose the next step\",\n    \"display_fil\": \"Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.\",\n    \"display_en\": \"Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"Natusok si Ana ng used needle ngunit walang sintomas. Ano ang gagawin?\",\n      \"prompt_en\": \"Ana has a used-needle injury but no symptoms. What should she do?\",\n      \"options\": [\n        {\n          \"fil\": \"Hugasan, iulat agad at magpa-medical evaluation kaagad.\",\n          \"en\": \"Wash, report immediately and obtain immediate medical evaluation.\"\n        },\n        {\n          \"fil\": \"Hugasan at maghintay hanggang matapos ang visits.\",\n          \"en\": \"Wash and wait until the visits are finished.\"\n        },\n        {\n          \"fil\": \"Pumili ng gamot mula sa available supplies.\",\n          \"en\": \"Choose medication from available supplies.\"\n        }\n      ],\n      \"correct_option_index\": 0,\n      \"feedback_fil\": \"Ang unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.\",\n      \"feedback_en\": \"The first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment.\"\n    }\n  }\n]\n"
+  },
+  "sibling_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/competency.json": "0dd455b8dfd41341cafc661818d4b46e752c7381dfe259c01fb9610aadb82ff7",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.en.md": "75b490224d82166e491f1b1119b4c43e5beeae81738a8fe7ffb8595416d6edeb",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.fil.md": "b7e2bd70d13ff055da1603e9569ed09fd8c034c06fffe696e1eacc9f66eeb809",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json": "1c3c29044a38237688393ef4496dbc53d62c0a25433ee7cc893d289e021b73fb",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.en.md": "35d2df2359aa577e1a12ac7249021ab6fad8dfccc04dcaa0386f832521a6f8f7",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.fil.md": "91be0081e0475a60c2689e929f6340be2ec0d217baf9d1889744ca48b30404ae",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/slides.json": "69dd30daecc53559fd8105a95b8284a18a6b40df61fb946e188db1a13d804887",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/competency.json": "816f911e781bfacb9382c0fe8c74a5623931ec82a146446a5c77daf95b60415e",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.en.md": "fbb018c7c22c93252dc7fd38adf341c8b2d3176676ad939ac9880755c3048d3b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.fil.md": "120daea8442d5e46343e73e8710f156e402ee921cab138bb58138df8c9f348cd",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json": "da547084f728cbf926a335aa45a89e0b4d919abfab7f1b929abb57a57d7a9f69",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.en.md": "bb15c2fb0a8fa6c79a95078aaed555399d8188bc95edebb87b878af949e3f871",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.fil.md": "0d48728ca253308c04466b5a998d09fcc78d0b5fd3e8667e1793bd7ad8dcdffd",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/slides.json": "eb84aadacd14496d30767d0a3c5b3d5ba9e0c10aad1d13c15edc26c4ae2cada5",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/competency.json": "62fa9525b19906f2f3b2e8ccc7a5c19f5320b8f75b156a3881136fdcfc5546f9",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.en.md": "81c86df92b96e36651720ad9c31320a6e4f11c0f9eb44ce4aba93afb3145e269",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.fil.md": "19d39bb8d4a02afccda2b44e7c101f03a2dc0cc2ea23d4e62bb2c1360e669614",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json": "4a9c35f208a616e2f2674e22a4b6db2308e230c65969f220337de90589bb3108",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.en.md": "a78d0f1cf47873a3750edb756e5a8397ed07254745d1d40ebc7f04937e2e4ed2",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.fil.md": "5ea3e366bcb7130d7a917c96a40105b8a2fb06406ad7e0554d92968df1e5d2c9",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/slides.json": "47eafa47a4fb2a54776e925cf235497a27865079d777e87b88f634a688282374"
+  },
+  "shared_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/module.json": "708671d7fdb33f27dd5dc34ab1e6c2310160d46ec47e7349f3015328019817b4",
+    "content/training/day1-basic-competencies/narration.json": "48e8a49c85578accd15f1bcb771565add70d9861d05ab881a7c76dc1c14899e5",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    "remotion/src/Root.tsx": "e80a544e762c1298f30cf6fa57ac0cc94c9196cccaa09f83c6994529c5a68c69",
+    "src/components/elearning/reference-lessons.tsx": "7fe32058b7d5d52a54e1fa2ca93d042b9ee2798576d6c7b1015be5cb7965355c",
+    "scripts/lib/reference-narration.mjs": "14f8df35198b76b74d610cf9d506a611b0476bfaff211a71e7f384e8b0f88a51",
+    "scripts/lib/reference-load.mjs": "97b0e95f026d4695c8fe59b3197759c2670b03f66fe8b5fea39a3c818cd5bdbd"
+  },
+  "source_files_sha256": {
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976"
+  },
+  "target_narration": {
+    "module": "08-osh",
+    "sections": {
+      "check": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-demonstrate/check.en.0cf29e8ec51b.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "0cf29e8ec51b4a41b634e92b35d678a28941465407d2b5652b6f998b11548314",
+          "sha256": "857d0ed72d7879046ace6f442074ca7ad13235ebcf4326e97a9013b6a8c31307",
+          "duration_seconds": 18.599,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 2000
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2300,
+              "end_ms": 6980
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7280,
+              "end_ms": 10400
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.",
+              "start_ms": 10700,
+              "end_ms": 18540
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-demonstrate/check.fil.0870dc230055.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "0870dc230055d3753f8acbc68648098e371631cfd93fe921c1ab7fba78979c05",
+          "sha256": "58a76881740f0f7cc3b7e57f3a869489167fc06ea30a850c3650ec1a90df00aa",
+          "duration_seconds": 22.883,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 2800
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 3100,
+              "end_ms": 8740
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 9040,
+              "end_ms": 13760
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.",
+              "start_ms": 14060,
+              "end_ms": 22820
+            }
+          ]
+        }
+      },
+      "exposure": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-demonstrate/exposure.en.817018dd492c.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "817018dd492c7300021de304464a928f45be1e7986d1dd35880a5ad997fabc11",
+          "sha256": "069584f6ed7dbe3c417e1b239d9bb3eae7f6a4ee48c896d20f09d7124bb0850a",
+          "duration_seconds": 53.577,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "If stuck, act immediately",
+              "start_ms": 0,
+              "end_ms": 3160
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ana, 33, is in a health-station safety practice.",
+              "start_ms": 3460,
+              "end_ms": 8380
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "The injury in the next example is simulated; no real needles or body fluids are used.",
+              "start_ms": 8680,
+              "end_ms": 15280
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "After a used-needle injury, wash the wound with soap and water.",
+              "start_ms": 15580,
+              "end_ms": 20620
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Report immediately to the midwife or designated supervisor and obtain immediate medical evaluation from a qualified provider.",
+              "start_ms": 20920,
+              "end_ms": 30480
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Do not wait until the end of the shift or for symptoms.",
+              "start_ms": 30780,
+              "end_ms": 34500
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "A clinician decides on assessment and any post-exposure treatment.",
+              "start_ms": 34800,
+              "end_ms": 40320
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Document the event through the local incident process so the cause can also be addressed.",
+              "start_ms": 40620,
+              "end_ms": 46580
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Report and obtain immediate evaluation after a needlestick; washing alone is insufficient.",
+              "start_ms": 46880,
+              "end_ms": 53520
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-demonstrate/exposure.fil.aef03183a129.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "aef03183a129f0e68b350ee3e93ca707f1ef66a4c1ce8beae67b4f86acdf9d41",
+          "sha256": "e78ee84c94fe0a78930bb753ca77d0178aa006298354a32db023504b75508b72",
+          "duration_seconds": 58.776,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Kung natusok, kumilos agad",
+              "start_ms": 0,
+              "end_ms": 3040
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Si Ana, 33, ay nasa safety practice sa health station.",
+              "start_ms": 3340,
+              "end_ms": 8100
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ang injury sa susunod na halimbawa ay simulation; walang tunay na karayom o body fluid sa pagsasanay.",
+              "start_ms": 8400,
+              "end_ms": 15840
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Kung natusok ng ginamit na karayom, hugasan ang sugat gamit ang sabon at tubig.",
+              "start_ms": 16140,
+              "end_ms": 22660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Iulat agad sa midwife o nakatalagang supervisor at kumuha kaagad ng medical evaluation sa kwalipikadong provider.",
+              "start_ms": 22960,
+              "end_ms": 32440
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Huwag hintaying matapos ang duty o magkaroon ng sintomas.",
+              "start_ms": 32740,
+              "end_ms": 37140
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Ang clinician ang magpapasya sa pagsusuri at anumang kailangan na post-exposure treatment.",
+              "start_ms": 37440,
+              "end_ms": 44400
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Itala ang pangyayari sa lokal na incident process upang matugunan din ang dahilan ng aksidente.",
+              "start_ms": 44700,
+              "end_ms": 52140
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang needlestick injury ay iulat at ipasuri kaagad; hindi sapat ang paghuhugas lamang.",
+              "start_ms": 52440,
+              "end_ms": 58720
+            }
+          ]
+        }
+      },
+      "near-miss": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-demonstrate/near-miss.en.15e998c8345d.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "15e998c8345d585147f75d86dee76bcee1fe4bb2b20abc245947d8273985a579",
+          "sha256": "a749abc38eefc92f3ff2f1754e5786c180c942e48362bd0dfac7c90698c7f371",
+          "duration_seconds": 38.557,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Report a near miss too",
+              "start_ms": 0,
+              "end_ms": 2320
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ana nearly slips but nobody is hurt.",
+              "start_ms": 2620,
+              "end_ms": 6260
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Report the hazard, time, location and control through the local process.",
+              "start_ms": 6560,
+              "end_ms": 12960
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "After an incident, prepare available information for referral and any applicable benefits process, but paperwork must not delay urgent care.",
+              "start_ms": 13260,
+              "end_ms": 24300
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "BHW insurance and benefits are not identical; confirm your applicable arrangements with the coordinator.",
+              "start_ms": 24600,
+              "end_ms": 32680
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Reporting a near miss creates a chance to prevent the next injury.",
+              "start_ms": 32980,
+              "end_ms": 38500
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-demonstrate/near-miss.fil.0dbe1b2b2e31.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "0dbe1b2b2e31ca45f0f1cbb66f5999fd4b47861f46a49b7f08539c946fb102cd",
+          "sha256": "38f2eab322d757f3e63f99f8c3e3f3ff87a0c419bee4082eb3ca78d7b07f117a",
+          "duration_seconds": 44.042,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Iulat kahit muntik lamang",
+              "start_ms": 0,
+              "end_ms": 3120
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Muntik madulas si Ana pero walang nasaktan.",
+              "start_ms": 3420,
+              "end_ms": 6860
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Mahalaga pa ring iulat ang hazard, oras, lugar at ginawang kontrol sa lokal na proseso.",
+              "start_ms": 7160,
+              "end_ms": 14760
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Kung may insidente, ihanda ang available na impormasyon para sa referral at naaangkop na benefits process, ngunit huwag hayaang maantala ng papel ang agarang pangangalaga.",
+              "start_ms": 15060,
+              "end_ms": 27220
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Hindi lahat ng BHW ay pareho ang insurance o benepisyo; kumpirmahin sa coordinator kung ano ang naaangkop sa iyo.",
+              "start_ms": 27520,
+              "end_ms": 36440
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang pag-uulat ng muntikang insidente ay pagkakataong maiwasan ang susunod na pinsala.",
+              "start_ms": 36740,
+              "end_ms": 43980
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-demonstrate/practice.en.a8305424dff4.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "a8305424dff466cec076dd713f875f1d4ef8ee76a00f20796660d20b3135c64b",
+          "sha256": "a3c05a782db12ee3b890010b0093ef496e516a794e4e739ff6c61f386d325ccc",
+          "duration_seconds": 47.177,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2720
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Use a dummy box to show when replacement is needed.",
+              "start_ms": 3020,
+              "end_ms": 7380
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Follow the local demonstration checklist for hand hygiene and PPE.",
+              "start_ms": 7680,
+              "end_ms": 12760
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Then rehearse a needlestick: state the first action, call the simulated contact and arrange immediate evaluation.",
+              "start_ms": 13060,
+              "end_ms": 22060
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "In pairs, record any delay or unsafe step and repeat.",
+              "start_ms": 22360,
+              "end_ms": 28160
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Alone, rehearse reporting; a trainer must observe the physical demonstration.",
+              "start_ms": 28460,
+              "end_ms": 34540
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Before duty, know where to obtain immediate evaluation.",
+              "start_ms": 34840,
+              "end_ms": 39400
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.",
+              "start_ms": 39700,
+              "end_ms": 47100
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-demonstrate/practice.fil.c79b620d9987.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "c79b620d99878fabfacc609d57bf5d2e948dabc600995e50d7b475dfd1d72f3f",
+          "sha256": "c374bb826dbb70fbd135568c98683f1809e9f3dbf5bfbfd70f827b5984e1b65b",
+          "duration_seconds": 53.473,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 2800
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ipakita gamit ang dummy box kung kailan kailangan ng replacement.",
+              "start_ms": 3100,
+              "end_ms": 8100
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Sundin ang lokal na demo checklist para sa hand hygiene at PPE.",
+              "start_ms": 8400,
+              "end_ms": 13280
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Pagkatapos, gumanap sa needlestick scenario: sabihin ang unang hakbang, tawagan ang kunwaring contact at ayusin ang agarang evaluation.",
+              "start_ms": 13580,
+              "end_ms": 25180
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Sa pares, itala ang anumang delay o unsafe step at ulitin.",
+              "start_ms": 25480,
+              "end_ms": 30720
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Kung mag-isa, i-rehearse ang reporting sequence; ang physical demo ay kailangang makita ng trainer.",
+              "start_ms": 31020,
+              "end_ms": 38620
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Bago ang duty, alamin kung saan pupunta para sa agarang evaluation.",
+              "start_ms": 38920,
+              "end_ms": 44680
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.",
+              "start_ms": 44980,
+              "end_ms": 53420
+            }
+          ]
+        }
+      },
+      "return-demo": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-demonstrate/return-demo.en.68ffd783c3cd.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "68ffd783c3cd32a6e581b41bed8b13aa2a099c00e5518f3f7cc1619a00ae4cfb",
+          "sha256": "02e28eed8f41f52f74a731feb7793a498aa3e206894f67733816c930ff2b9d10",
+          "duration_seconds": 41.509,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "A safe return demonstration",
+              "start_ms": 0,
+              "end_ms": 2680
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Using dummy equipment, show where the sharps container belongs and when replacement is needed.",
+              "start_ms": 2980,
+              "end_ms": 9940
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Demonstrate hand hygiene and PPE use/removal following the trainer-approved local protocol.",
+              "start_ms": 10240,
+              "end_ms": 18360
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Practice uses no real used needles or body fluids.",
+              "start_ms": 18660,
+              "end_ms": 23620
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "In a short posture exercise, adjust the chair and bag; avoid painful stretching.",
+              "start_ms": 23920,
+              "end_ms": 29640
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "The facilitator observes actions rather than relying only on verbal answers.",
+              "start_ms": 29940,
+              "end_ms": 35780
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Competence is shown through a safe demonstration within the scope of training.",
+              "start_ms": 36080,
+              "end_ms": 41440
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-demonstrate/return-demo.fil.6930aea81878.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "6930aea81878623d818be549ca61e14870b3af625d0fdbf7997240a1e5127479",
+          "sha256": "e673fb141e68d5dbcf5ac08ef0e84575765afd9aa4b52bde8d25748bdd53d429",
+          "duration_seconds": 43.494,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Return demonstration na ligtas",
+              "start_ms": 0,
+              "end_ms": 2840
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Gamit ang dummy equipment, ipakita kung saan dapat naroon ang sharps container at kung kailan kailangang palitan.",
+              "start_ms": 3140,
+              "end_ms": 10780
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ipakita ang hand hygiene at paggamit/pagtanggal ng PPE ayon sa trainer-approved local protocol.",
+              "start_ms": 11080,
+              "end_ms": 19120
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Walang tunay na ginamit na karayom o body fluid sa practice.",
+              "start_ms": 19420,
+              "end_ms": 23580
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Sa maikling activity tungkol sa posisyon, ayusin ang upuan at bag; huwag gumawa ng masakit na stretch.",
+              "start_ms": 23880,
+              "end_ms": 31400
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ang facilitator ang titingin sa kilos, hindi lang sa pagsagot.",
+              "start_ms": 31700,
+              "end_ms": 36220
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang competency ay nakikita sa ligtas na demonstrasyon sa loob ng saklaw ng pagsasanay.",
+              "start_ms": 36520,
+              "end_ms": 43440
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "production_snapshot_status": "Not captured: handoff preparation makes no production queries",
+  "owner_release_approval": false
+}

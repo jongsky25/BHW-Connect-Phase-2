@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm community trainer. Use one stable adult female Kore narrator including quotations. Preserve every negation, uncertainty and qualification. Read Apple as written. Complete every word, add nothing and do not translate.",
+  "durationSeconds": 60.369,
+  "beats": [
+    {
+      "zone": "exposure",
+      "index": 0,
+      "text": "In fictional practice, Apple states: soap and water, immediate reporting and medical evaluation. Do not wait for symptoms.",
+      "start_ms": 0,
+      "end_ms": 8760
+    },
+    {
+      "zone": "return-demo",
+      "index": 1,
+      "text": "Apple shows the dummy box position and fill line to the trainer. Hand hygiene and PPE follow the reviewed local checklist.",
+      "start_ms": 9060,
+      "end_ms": 17460
+    },
+    {
+      "zone": "near-miss",
+      "index": 2,
+      "text": "Apple nearly slips on the simulated walkway. No injury or exposure occurs. She reports time, place, hazard and actual control.",
+      "start_ms": 17760,
+      "end_ms": 27840
+    },
+    {
+      "zone": "care-before-paperwork",
+      "index": 3,
+      "text": "Confirm the reporting contact and route to qualified evaluation. Forms must not delay care. A provider decides treatment.",
+      "start_ms": 28140,
+      "end_ms": 37780
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Rotate three roles, give feedback and retry safely. Unobserved is not passed; solo rehearsal does not replace observation.",
+      "start_ms": 38080,
+      "end_ms": 47560
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "In simulation, the trainer sees Apple’s safe dummy demonstration and immediate reporting and evaluation pathway. Documentation follows care; no medical outcome is promised.",
+      "start_ms": 47860,
+      "end_ms": 60300
+    }
+  ],
+  "audio_sha256": "c9e72d1bad843b95fccb19802397c852d6d5e5acb98ee9a9a6a7e3d11473a73d"
+}

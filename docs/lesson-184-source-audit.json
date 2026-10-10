@@ -1,0 +1,230 @@
+{
+  "retrieved_date": "2026-10-09",
+  "method": "Original PDF text inspected; image-only Facilitator 19 and Manual 22/23 visually inspected. Hashes identify fetched bytes, not clinical signoff.",
+  "sources": [
+    {
+      "id": "facilitator",
+      "url": "https://drive.google.com/uc?export=download&id=1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W",
+      "sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "bytes": 26505934,
+      "pdf_page_count": 126,
+      "excerpts": [
+        {
+          "pdf_page": 19,
+          "text_file": "facilitator-19.txt",
+          "sha256": "8490f626034aa19f8d4a24bec63b10d128f49fac538a8d539c39fe01e8b88a68",
+          "text_inspected": true,
+          "visual_inspected": true,
+          "image_file": "facilitator-19.png",
+          "image_sha256": "f580ed0e92c15c00ef3e9d0efa184dd023679f9a1e838d2892c665f5602b25e0"
+        },
+        {
+          "pdf_page": 30,
+          "text_file": "facilitator-30.txt",
+          "sha256": "ea1d36b29d88815d948ad0aa13c0a1243a7095a73259771e8a3abc7ceb835f11",
+          "text_inspected": true,
+          "visual_inspected": false
+        }
+      ]
+    },
+    {
+      "id": "manual",
+      "url": "https://drive.google.com/uc?export=download&id=13auqmQNRLevwxTm3lkMRHX13U1_d0TYs",
+      "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "bytes": 41537642,
+      "pdf_page_count": 150,
+      "excerpts": [
+        {
+          "pdf_page": 21,
+          "text_file": "manual-21.txt",
+          "sha256": "ba38b8dbb282b7c518aed27f4cd399fdc80827b46e17c486e787684763d5436b",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 22,
+          "text_file": "manual-22.txt",
+          "sha256": "5537e928cb47335efd47224f636698b6fcd588c7592e0826f86afa3e62446c27",
+          "text_inspected": true,
+          "visual_inspected": true,
+          "image_file": "manual-22.png",
+          "image_sha256": "8a8ce6011633b4002313a53c6ba26a94976d60ccb1cd5adcd5362aa4aac813be"
+        },
+        {
+          "pdf_page": 23,
+          "text_file": "manual-23.txt",
+          "sha256": "238903180cc104ec2c5d8b3f20c5bc61b389ec0a967df8cc208cdc7cd454174f",
+          "text_inspected": true,
+          "visual_inspected": true,
+          "image_file": "manual-23.png",
+          "image_sha256": "a49dc7b2e6526ec0197129ffcad8dd2c406dfbee486a9cbd7f2ac35514b812cf"
+        }
+      ]
+    },
+    {
+      "id": "deck",
+      "url": "https://drive.google.com/uc?export=download&id=1ZDIJiTltEzJVFcy-XSA0NivWNvfAKfhY",
+      "sha256": "eb3f663ff629b400577995c30e284e9a11ac36134cc163017d599da29f21aac8",
+      "bytes": 1627258,
+      "pdf_page_count": 78,
+      "excerpts": [
+        {
+          "pdf_page": 69,
+          "text_file": "deck-69.txt",
+          "sha256": "45bebab628399f0742db2710e1676fdf4251596228eca0acaa740810913de2d8",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 70,
+          "text_file": "deck-70.txt",
+          "sha256": "e3daa84ef1615d19aa7fa02544b5ffd0a3ffe3c2aa3c8cc1ea725bb273d5da0e",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 71,
+          "text_file": "deck-71.txt",
+          "sha256": "2523054c89d0e7932cedc663e1bdf359c040dc1b3d609b69a3b651e2240807f7",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 72,
+          "text_file": "deck-72.txt",
+          "sha256": "071e98c507902dd3cfb04218f6091f4aecb34732f03843c8c5d0f3dafd0700fa",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 73,
+          "text_file": "deck-73.txt",
+          "sha256": "3d5bf14f832036997f0b20adbd8e6e02714599b3853f7f407ddd9952d57391a4",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 74,
+          "text_file": "deck-74.txt",
+          "sha256": "27119f7689d3adc0864ca70d0aa0cb1bd9c143f0a5bed324387cde2a59c71016",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 75,
+          "text_file": "deck-75.txt",
+          "sha256": "62730418050154b697a65fb6f9fe5988a2957c6370d6ed8e3d242dfa33b10a9a",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 76,
+          "text_file": "deck-76.txt",
+          "sha256": "6a22a1781d98379b1ee420d00fcf699c7fb327f575852c29ee7fcfcaedffdded",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 77,
+          "text_file": "deck-77.txt",
+          "sha256": "fb143e235b6c96705a1a5c1efdaea97a52e06fa3725a00b50a64547b16d76064",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 78,
+          "text_file": "deck-78.txt",
+          "sha256": "4d157fe6755222b37ffe6d5cee838fe3905d3089eb8e89f61a3bf02246510ba6",
+          "text_inspected": true,
+          "visual_inspected": false
+        }
+      ]
+    },
+    {
+      "id": "tesda",
+      "url": "https://www.tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+      "sha256": "578bb1ebf2d5001ad1f77bcb063b411270249ae1e1266baaa454fff1a1a2a6fa",
+      "bytes": 1495226,
+      "pdf_page_count": 140,
+      "excerpts": [
+        {
+          "pdf_page": 29,
+          "text_file": "tesda-29.txt",
+          "sha256": "3e5fc4e9b542aa0180f01483af21e72a6ed4c1720a6c114ce3913abcf93220d5",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 30,
+          "text_file": "tesda-30.txt",
+          "sha256": "67b8d680111f5a6594df882f42d44272a0cbf2efaca9268a498c3e6f8f043d85",
+          "text_inspected": true,
+          "visual_inspected": false
+        },
+        {
+          "pdf_page": 32,
+          "text_file": "tesda-32.txt",
+          "sha256": "4c30244339c3a9604f7dd5bf16f2250eb355032e53fc2ebb538f072b9be27a4a",
+          "text_inspected": true,
+          "visual_inspected": false
+        }
+      ]
+    },
+    {
+      "id": "who",
+      "url": "https://iris.who.int/server/api/core/bitstreams/fc3c8ce2-35d8-4b39-93b1-cb4d060767f0/content",
+      "sha256": "56493a3528ed762448a8961d3fa697bca1d909fb32da73704e91a15937ce46aa",
+      "bytes": 470696,
+      "pdf_page_count": 28,
+      "excerpts": [
+        {
+          "pdf_page": 8,
+          "text_file": "who-8.txt",
+          "sha256": "22ed00964587560efdc9ca3e2af32529e578615fb83b0bf1f1fd27a6b2ce377e",
+          "text_inspected": true,
+          "visual_inspected": false
+        }
+      ]
+    },
+    {
+      "id": "cdc",
+      "url": "https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html",
+      "sha256": "5fd7d8cafdaeb5d0c13d5d63ea65d23ae4f7a9b621a04be2945cbb991c17b13c",
+      "bytes": 52590,
+      "excerpt_file": "cdc-exposure-excerpt.txt",
+      "excerpt_sha256": "c3e17498ca396448e69f1fa7d472adc82b21fefe5cb98885c793c9c07abefcc7",
+      "text_inspected": true,
+      "limitation": "US dental setting guidance; no hotline or dental procedural authority transferred to BHWs."
+    }
+  ],
+  "clinical_review": "pending authorized local clinical trainer",
+  "owner_review": "pending",
+  "discrepancies": [
+    "Inventory deck 74–83 is inconsistent with the original 78-page deck: actual OSH 69–78.",
+    "Reference Manual hazard tables continue over PDF 22 and 23 (printed 14–15), not PDF 22 alone.",
+    "Historical report-to-midwife instruction alone omits the explicit immediate qualified evaluation pathway; current CDC adds it.",
+    "Facilitator Guide recommends four hours; the app split 45+60+60+75=240 is an authoring allocation, not TESDA certification."
+  ],
+  "checked_claims": [
+    {
+      "claim": "Four-hour OSH training recommendation",
+      "source": "facilitator PDF 19 printed 12 and PDF 30 printed 23"
+    },
+    {
+      "claim": "OSH 400311216: identification, preparation, performance; observation/demonstration with oral questions; simulated workplace permitted",
+      "source": "tesda PDF 29/30/32 printed 25/26/28"
+    },
+    {
+      "claim": "Five hazard groups, with vector infection and heat accident coverage",
+      "source": "manual PDF 22/23; deck 73–75"
+    },
+    {
+      "claim": "Wash punctures with soap and water, report, immediately seek qualified medical evaluation",
+      "source": "CDC What should you do if you have had an occupational exposure?"
+    },
+    {
+      "claim": "Timely access after potential HIV exposure matters",
+      "source": "WHO 2024 Guidelines for HIV post-exposure prophylaxis PDF 8, executive summary; no drug/dose/deadline teaching imported"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "lesson_keys": [
+    "safety-demonstrate"
+  ],
+  "reviewed_head": "7f072fef018c5aa5c5d8444cd34e8e924c81562f",
+  "reviewed_package_sha256": "af6118fad821268ab63d29b3faaee1b095b87ec86f9117c216bee9b3d72e3d3f",
+  "reviewed_package_bytes": 208446594,
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"safety-demonstrate\",\n    \"position\": 3,\n    \"title_fil\": \"Ipakita ang ligtas na paraan\",\n    \"title_en\": \"Demonstrate safe practice\",\n    \"objectives_fil\": [\n      \"Gamit ang dummy equipment, sundin ang trainer-approved safety checklist at ipakita ang agarang reporting at referral response sa simulated needlestick.\"\n    ],\n    \"objectives_en\": [\n      \"Using dummy equipment, follow the trainer-approved safety checklist and demonstrate immediate reporting and referral for a simulated needlestick.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"exposure\",\n      \"concept_ids\": [\n        \"m8.exposure\"\n      ],\n      \"asset_ids\": [\n        \"demonstrate-exposure\"\n      ],\n      \"takeaway_fil\": \"Ang needlestick injury ay iulat at ipasuri kaagad; hindi sapat ang paghuhugas lamang.\",\n      \"takeaway_en\": \"Report and obtain immediate evaluation after a needlestick; washing alone is insufficient.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"return-demo\",\n      \"concept_ids\": [\n        \"m8.practice\",\n        \"m8.prepare\"\n      ],\n      \"asset_ids\": [\n        \"demonstrate-return-demo\"\n      ],\n      \"takeaway_fil\": \"Ang competency ay nakikita sa ligtas na demonstrasyon sa loob ng saklaw ng pagsasanay.\",\n      \"takeaway_en\": \"Competence is shown through a safe demonstration within the scope of training.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"near-miss\",\n      \"concept_ids\": [\n        \"m8.practice\"\n      ],\n      \"asset_ids\": [\n        \"demonstrate-near-miss\"\n      ],\n      \"takeaway_fil\": \"Ang pag-uulat ng muntikang insidente ay pagkakataong maiwasan ang susunod na pinsala.\",\n      \"takeaway_en\": \"Reporting a near miss creates a chance to prevent the next injury.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"care-before-paperwork\",\n      \"concept_ids\": [\n        \"m8.exposure\"\n      ],\n      \"asset_ids\": [\n        \"demonstrate-care-before-paperwork\"\n      ],\n      \"takeaway_fil\": \"Hindi dapat maantala ng forms ang agarang reporting at medical evaluation.\",\n      \"takeaway_en\": \"Forms must not delay immediate reporting and medical evaluation.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m8.exposure\",\n        \"m8.practice\",\n        \"m8.prepare\"\n      ],\n      \"asset_ids\": [\n        \"demonstrate-practice\"\n      ],\n      \"takeaway_fil\": \"Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.\",\n      \"takeaway_en\": \"Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m8.exposure\",\n        \"m8.practice\",\n        \"m8.prepare\"\n      ],\n      \"asset_ids\": [\n        \"demonstrate-check\"\n      ],\n      \"takeaway_fil\": \"Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.\",\n      \"takeaway_en\": \"Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.\",\n      \"check\": {\n        \"prompt_fil\": \"Natusok si Apple ng used needle ngunit walang sintomas. Ano ang gagawin?\",\n        \"prompt_en\": \"Apple has a used-needle injury but no symptoms. What should she do?\",\n        \"options\": [\n          {\n            \"fil\": \"Hugasan, iulat agad at magpa-medical evaluation kaagad.\",\n            \"en\": \"Wash, report immediately and obtain immediate medical evaluation.\"\n          },\n          {\n            \"fil\": \"Hugasan at maghintay hanggang matapos ang visits.\",\n            \"en\": \"Wash and wait until the visits are finished.\"\n          },\n          {\n            \"fil\": \"Pumili ng gamot mula sa available supplies.\",\n            \"en\": \"Choose medication from available supplies.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Ang unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot. 1. Tama: hugasan, iulat agad at magpa-evaluation kaagad. Ang kwalipikadong provider ang magpapasya sa paggamot. 2. Hindi ligtas ang paghihintay hanggang matapos ang visits. Hindi sapat ang paghuhugas; kailangan agad ang reporting at evaluation. 3. Huwag pumili ng gamot mula sa supplies. Kwalipikadong medical provider ang magpapasya sa assessment at paggamot. Sa kathang-isip na simulation, ipinakita ni Apple sa trainer ang ligtas na dummy demonstration at agarang reporting at evaluation pathway. Kasunod ng pangangalaga ang documentation. Walang ipinapalagay na paggamot o medical outcome.\",\n        \"feedback_en\": \"The first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment. 1. Correct: wash, report immediately and obtain immediate evaluation. A qualified provider decides treatment. 2. Waiting until visits end is unsafe. Washing alone is insufficient; reporting and evaluation are needed immediately. 3. Do not choose medication from supplies. A qualified medical provider decides assessment and treatment. In the fictional simulation, Apple shows the trainer a safe dummy demonstration and immediate reporting and evaluation pathway. Documentation follows care. No treatment or medical outcome is assumed.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m8.exposure\",\n      \"read_ids\": [\n        \"exposure\",\n        \"care-before-paperwork\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-exposure\",\n        \"slide-care-before-paperwork\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"cdc-exposure\",\n        \"who-exposure\"\n      ]\n    },\n    {\n      \"id\": \"m8.practice\",\n      \"read_ids\": [\n        \"return-demo\",\n        \"near-miss\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-return-demo\",\n        \"slide-near-miss\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"cdc-exposure\"\n      ]\n    },\n    {\n      \"id\": \"m8.prepare\",\n      \"read_ids\": [\n        \"return-demo\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-return-demo\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"cdc-exposure\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        21,\n        22,\n        23\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"cdc-exposure\",\n      \"title\": \"CDC — Best Practices for Occupational Exposure to Blood\",\n      \"url\": \"https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html\"\n    },\n    {\n      \"id\": \"who-exposure\",\n      \"title\": \"WHO 2024 — Guidelines for HIV post-exposure prophylaxis (timely access; clinical decisions remain qualified-provider responsibilities)\",\n      \"pdf_pages\": [\n        8\n      ],\n      \"url\": \"https://www.who.int/publications/i/item/9789240095137\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"demonstrate-exposure\",\n      \"path\": \"/training/bhw-1-8/demonstrate-exposure-480b217d2239.png\",\n      \"content_hash\": \"480b217d22392c2cc8278e9b9188f86a67ab8582616d8f5ce4d60f44829d2cdf\",\n      \"alt_fil\": \"Kathang-isip na practice ni Apple: Kung natusok, kumilos agad; dummy equipment lamang, walang tunay na injury.\",\n      \"alt_en\": \"Apple in fictional practice: If stuck, act immediately; dummy equipment only, no actual injury.\",\n      \"caption_fil\": \"DRAFT · Kathang-isip na simulation; hindi tagubilin sa clinical technique. Hugasan ng sabon at tubig → iulat agad → agarang medical evaluation. Huwag hintayin ang sintomas.\",\n      \"caption_en\": \"DRAFT · Fictional simulation; not a clinical technique instruction. Wash with soap and water → report immediately → immediate medical evaluation. Do not wait for symptoms.\",\n      \"provenance\": \"Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"demonstrate-return-demo\",\n      \"path\": \"/training/bhw-1-8/demonstrate-return-demo-f3d265df4a04.png\",\n      \"content_hash\": \"f3d265df4a0478336e63b9109a45f1550057bd1ede070e9187feaa1a78dbb9ec\",\n      \"alt_fil\": \"Kathang-isip na practice ni Apple: Ipakita sa trainer ang ligtas na kilos; dummy equipment lamang, walang tunay na injury.\",\n      \"alt_en\": \"Apple in fictional practice: Show safe actions to the trainer; dummy equipment only, no actual injury.\",\n      \"caption_fil\": \"DRAFT · Kathang-isip na simulation; hindi tagubilin sa clinical technique. Dummy equipment; puwesto at fill line; trainer-approved hand hygiene at PPE. Trainer ang titingin sa kilos.\",\n      \"caption_en\": \"DRAFT · Fictional simulation; not a clinical technique instruction. Dummy equipment; position and fill line; trainer-approved hand hygiene and PPE. The trainer observes actions.\",\n      \"provenance\": \"Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"demonstrate-near-miss\",\n      \"path\": \"/training/bhw-1-8/demonstrate-near-miss-1ab640aa9c44.png\",\n      \"content_hash\": \"1ab640aa9c4449a4909b09b0988b2b890e03d81eaae9352491cb9cb8be1c6967\",\n      \"alt_fil\": \"Kathang-isip na practice ni Apple: Iulat kahit muntik lamang; dummy equipment lamang, walang tunay na injury.\",\n      \"alt_en\": \"Apple in fictional practice: Report a near miss too; dummy equipment only, no actual injury.\",\n      \"caption_fil\": \"DRAFT · Kathang-isip na simulation; hindi tagubilin sa clinical technique. Hazard, oras, lugar, aktuwal na kontrol at hindi pa alam. Near miss ≠ exposure; kumpirmahin ang benepisyo.\",\n      \"caption_en\": \"DRAFT · Fictional simulation; not a clinical technique instruction. Hazard, time, place, actual control and unknowns. Near miss ≠ exposure; confirm benefits.\",\n      \"provenance\": \"Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"demonstrate-care-before-paperwork\",\n      \"path\": \"/training/bhw-1-8/demonstrate-care-before-paperwork-791865eaf620.png\",\n      \"content_hash\": \"791865eaf620f8d9c7b661e41e89449070a5e5dc98b122de9f6d02db3bc1fb13\",\n      \"alt_fil\": \"Kathang-isip na practice ni Apple: Pangangalaga bago ang papeles; dummy equipment lamang, walang tunay na injury.\",\n      \"alt_en\": \"Apple in fictional practice: Care before paperwork; dummy equipment only, no actual injury.\",\n      \"caption_fil\": \"DRAFT · Kathang-isip na simulation; hindi tagubilin sa clinical technique. Kumpirmahin ang contact, backup at evaluation route. Agaran ang pangangalaga; kasunod ang documentation.\",\n      \"caption_en\": \"DRAFT · Fictional simulation; not a clinical technique instruction. Confirm contact, backup and evaluation route. Immediate care; documentation follows.\",\n      \"provenance\": \"Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"demonstrate-practice\",\n      \"path\": \"/training/bhw-1-8/demonstrate-practice-dd627386cef1.png\",\n      \"content_hash\": \"dd627386cef17afac4270669115b87c543974916c180508dbe0ba982e161cf54\",\n      \"alt_fil\": \"Kathang-isip na practice ni Apple: Subukan, magbigay ng puna, ulitin; dummy equipment lamang, walang tunay na injury.\",\n      \"alt_en\": \"Apple in fictional practice: Attempt, give feedback, retry; dummy equipment only, no actual injury.\",\n      \"caption_fil\": \"DRAFT · Kathang-isip na simulation; hindi tagubilin sa clinical technique. Tatlong role → attempt → tiyak na feedback → ligtas na retry. Hindi naobserbahan ≠ passed.\",\n      \"caption_en\": \"DRAFT · Fictional simulation; not a clinical technique instruction. Three roles → attempt → specific feedback → safe retry. Not observed ≠ passed.\",\n      \"provenance\": \"Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"demonstrate-check\",\n      \"path\": \"/training/bhw-1-8/demonstrate-check-7c6af2f2702e.png\",\n      \"content_hash\": \"7c6af2f2702ed6ddef5eb8f95c4743b65f8b020aa4b5ef332b275d51f79ab34d\",\n      \"alt_fil\": \"Kathang-isip na practice ni Apple: Piliin ang susunod na hakbang; dummy equipment lamang, walang tunay na injury.\",\n      \"alt_en\": \"Apple in fictional practice: Choose the next step; dummy equipment only, no actual injury.\",\n      \"caption_fil\": \"DRAFT · Kathang-isip na simulation; hindi tagubilin sa clinical technique. Piliin, ipaliwanag, saka ihambing sa naobserbahang practice.\",\n      \"caption_en\": \"DRAFT · Fictional simulation; not a clinical technique instruction. Choose, explain, then compare with observed practice.\",\n      \"provenance\": \"Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"safety-demonstrate-story\",\n      \"alt_fil\": \"Anim na beat: trainer-observed dummy demo ni Apple, agarang reporting/evaluation at documentation pagkatapos ng care.\",\n      \"alt_en\": \"Six beats: Apple’s trainer-observed dummy demo, immediate reporting/evaluation and documentation following care.\",\n      \"caption_fil\": \"Kathang-isip na demonstration at referral simulation; walang medical outcome.\",\n      \"caption_en\": \"Fictional demonstration and referral simulation; no medical outcome.\",\n      \"provenance\": \"Six built-in imagegen actions using the coordinated Apple reference; Gemini Kore narration, measured encoded samples; draft pending owner, clinical and human-listening review.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-8/safety-demonstrate-gemini-fil-2cf20801fff8.mp4\",\n          \"content_hash\": \"2cf20801fff87211cc24ee7a384c443784c219ec0fccb6eb7fe0658a00012cba\",\n          \"duration_s\": 69,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-8/safety-demonstrate-gemini-fil-4e162dea4914-poster.jpg\",\n            \"content_hash\": \"4e162dea4914757e4c76c965b8457103f7919b871f207f64a9c0d0cb76db6bf8\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-8/safety-demonstrate-gemini-fil-622246cfe40b.vtt\",\n            \"content_hash\": \"622246cfe40b77a054f22a70a34b0a2ec24a7178a15dd29a6e3ab824fb309f01\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-8/safety-demonstrate-gemini-en-546aef95a7a4.mp4\",\n          \"content_hash\": \"546aef95a7a4b00b282f539d4f2aa97522784448cadef8381d322fcd3ae140b7\",\n          \"duration_s\": 61,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-8/safety-demonstrate-gemini-en-90c256fcb3a4-poster.jpg\",\n            \"content_hash\": \"90c256fcb3a42b5cb2c5928dc9636eedc7bf790691f1329105e8851f128cbe5e\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-8/safety-demonstrate-gemini-en-a02729532ff4.vtt\",\n            \"content_hash\": \"a02729532ff40abfd50697331d4012c3d5ea017076a85f19d4953167c98e95d9\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-8/safety-demonstrate-gemini-fil-4e162dea4914-poster.jpg\",\n      \"content_hash\": \"4e162dea4914757e4c76c965b8457103f7919b871f207f64a9c0d0cb76db6bf8\"\n    }\n  ],\n  \"featured_asset_id\": \"safety-demonstrate-story\"\n}\n",
+  "reviewed_lesson_sha256": "56d8419a6f85dc8d2c2e3b1a0184eb36d6bb689fe1ee9aa2b38c885dee13855c",
+  "reviewed_proposal_receipt_sha256": "c1d13e739923c47ae4d3ac7e7436b47cefb6e0e286f5ed5fc76095b85dabc2c4",
+  "integrated_main": "ba1788078710a564ced4221bb648be4d1983d167",
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json": "9aefa109b57d562c9e57e21e236ac7df737a2d34bf353cbe755e44a434d0f7de",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.fil.md": "e40118da4a2757aa57c3719c2a66f97c58f97e8e448c49f4430d4d734b2048a5",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.en.md": "d77997a12190cc26de9b7f0014d23d138be434c28f607f11e2c20977ee6054af",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/slides.json": "86581c92d1e71baca3f06d5b0be5f7fbba0a0403854ff1dfd233b9062be28c20",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/competency.json": "57bcc97ef3e2ae9796a228099c520ce5f01a75b306ae9724538f8857e3386d1f",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.fil.md": "c8e55e720a46855ef6218c90c917695b03c56ec7b59c516eb8fd4e4ff32e47eb",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.en.md": "bcda265bed32cdbbff7f5163e15dd1b5d75885bd089471b8bdbe378562207a5d",
+    "src/components/elearning/reference-lessons.tsx": "2fe0440a857efee6b4fb2d3f62bb450a444274d4d834225f457bf301343819be",
+    "remotion/src/Root.tsx": "5289e6c0792058d3c1d245ee01983958a73b90795ff2c4331f1504078725b321",
+    "content/training/day1-basic-competencies/narration.json": "38b3efcdb61252d720a9aff7189e7f64d68e77d3c0f3054c25310fa81d3fa5a9",
+    ".github/workflows/lesson184-release.yml": "0a820cd831676f6e818a1918b7e21a9f626b7566ac473a35cd7b7e5070ccfb30",
+    "scripts/lesson-184-release-check.mjs": "0089c7da56765cd0e8eaafb90debcca7f8361b216b4a24e22ad8b4dba63bd5be",
+    "scripts/lesson-184-release-snapshot.mjs": "963df59688ae6557ca608bfb47781e27926e25c6138a3a95711f099607e22c74",
+    "scripts/lesson-184-live-smoke.mjs": "e5f8b09a54eb17d666f7dff0b4e9eb218caeb29fbd0d78f07f08a3d798653817",
+    "scripts/lib/lesson-184-release-integration.mjs": "19aab93224c47da0362495bf32638a29a9b806bb1a9801f685559acc4ea324be",
+    "scripts/lib/lesson-184-integration.mjs": "693f55adb41be2bc8884f78248bedc66b5a6b37e5d17c22f782d52fb5de64d8e",
+    "docs/lesson-184-release-integration.json": "b8eaa2f375a20de653d44302d3313b33e7ecde35102e775ea3cf0aad3f11ed0a",
+    "docs/lesson-184-reviewed-proposal-receipt.json": "c1d13e739923c47ae4d3ac7e7436b47cefb6e0e286f5ed5fc76095b85dabc2c4",
+    "scripts/tests/lesson-184-release.test.mjs": "dd69b2e7673cc323bdb2ce94be20d0c9593a77919a0cec04608dbb625698bc7f"
+  },
+  "approved_media": [
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/care-before-paperwork.en.28f2d5858c65.mp3",
+      "sha256": "df5319a33ae9d61a2df38d50f78e13542b7a8ea81af353fa8d78e6d2530371fd",
+      "bytes": 337607
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/care-before-paperwork.fil.35cc188d6292.mp3",
+      "sha256": "ef198cb9064b16ff2ec067c9d63c39f113ac96aa675b5aac4da7e524ff6b1624",
+      "bytes": 383060
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/check.en.b9eda6b430f5.mp3",
+      "sha256": "722adaa41df6a1f383bab081306162de8d5fe9787ba330a93c52d74a990155a3",
+      "bytes": 183171
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/check.fil.d5d395d85991.mp3",
+      "sha256": "f1dbb03deee4544416301f722c26cdf525395daf4498acd59a1ce6c2b8264791",
+      "bytes": 205427
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/exposure.en.fce8f3350f77.mp3",
+      "sha256": "c84670bd11f997c3fd970da212d4b532f15046d669183f430387eb618851e524",
+      "bytes": 376581
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/exposure.fil.a076f871e193.mp3",
+      "sha256": "b276f925bbd85170828ad1b02c04bb97cbee5973e4cab662a7d0fd97eca34586",
+      "bytes": 388075
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/near-miss.en.3ebfd5f8c53f.mp3",
+      "sha256": "97342722087451bc50292b1cbd43adc6219d259e94e596b812a101542b1aefd0",
+      "bytes": 363833
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/near-miss.fil.e2591d978fa4.mp3",
+      "sha256": "77390adbb24f25041911139d35fe42380176d8cefd49a2fb7b72b07f47054769",
+      "bytes": 380552
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/practice.en.ac145598944f.mp3",
+      "sha256": "26504cea06115a9374302400eaced44d9b33cbd753bdba05fb9c808e67d1b329",
+      "bytes": 428931
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/practice.fil.acfa67494170.mp3",
+      "sha256": "6a64251661f813e8bbf3805093e809a5dfe7cc96bc7b02453bc5536d98593e41",
+      "bytes": 465189
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/return-demo.en.f279b3edd187.mp3",
+      "sha256": "7b0fb557b8d7fd8c21212ef9be298257238bfd2d2c4f912559cbe4f14afdfbb6",
+      "bytes": 346384
+    },
+    {
+      "path": "/training/audio/08-osh/safety-demonstrate/return-demo.fil.351367ca5925.mp3",
+      "sha256": "d23747d2a92df2a6406979c0b86fffd46062feaa027b404f44c7de59f4174298",
+      "bytes": 374700
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-care-before-paperwork-791865eaf620.png",
+      "sha256": "791865eaf620f8d9c7b661e41e89449070a5e5dc98b122de9f6d02db3bc1fb13",
+      "bytes": 2168232
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-check-7c6af2f2702e.png",
+      "sha256": "7c6af2f2702ed6ddef5eb8f95c4743b65f8b020aa4b5ef332b275d51f79ab34d",
+      "bytes": 1953592
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-exposure-480b217d2239.png",
+      "sha256": "480b217d22392c2cc8278e9b9188f86a67ab8582616d8f5ce4d60f44829d2cdf",
+      "bytes": 2018169
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-near-miss-1ab640aa9c44.png",
+      "sha256": "1ab640aa9c4449a4909b09b0988b2b890e03d81eaae9352491cb9cb8be1c6967",
+      "bytes": 2117899
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-practice-dd627386cef1.png",
+      "sha256": "dd627386cef17afac4270669115b87c543974916c180508dbe0ba982e161cf54",
+      "bytes": 2183820
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-return-demo-f3d265df4a04.png",
+      "sha256": "f3d265df4a0478336e63b9109a45f1550057bd1ede070e9187feaa1a78dbb9ec",
+      "bytes": 2124009
+    },
+    {
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-en-546aef95a7a4.mp4",
+      "sha256": "546aef95a7a4b00b282f539d4f2aa97522784448cadef8381d322fcd3ae140b7",
+      "bytes": 931362
+    },
+    {
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-en-90c256fcb3a4-poster.jpg",
+      "sha256": "90c256fcb3a42b5cb2c5928dc9636eedc7bf790691f1329105e8851f128cbe5e",
+      "bytes": 51151
+    },
+    {
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-en-a02729532ff4.vtt",
+      "sha256": "a02729532ff40abfd50697331d4012c3d5ea017076a85f19d4953167c98e95d9",
+      "bytes": 998
+    },
+    {
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-2cf20801fff8.mp4",
+      "sha256": "2cf20801fff87211cc24ee7a384c443784c219ec0fccb6eb7fe0658a00012cba",
+      "bytes": 1031868
+    },
+    {
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-4e162dea4914-poster.jpg",
+      "sha256": "4e162dea4914757e4c76c965b8457103f7919b871f207f64a9c0d0cb76db6bf8",
+      "bytes": 55115
+    },
+    {
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-622246cfe40b.vtt",
+      "sha256": "622246cfe40b77a054f22a70a34b0a2ec24a7178a15dd29a6e3ab824fb309f01",
+      "bytes": 1054
+    }
+  ],
+  "clinical_review": "pending; owner approval does not claim clinical review",
+  "human_listening": "pending; automated review disagreements retained",
+  "known_CI_exception": "Exactly twelve unchanged problem-prioritize freshness failures disclosed in the reviewed package; retain original global guard and require all other tests to pass.",
+  "promotion": "Only seven target asset review_status fields changed; exact reviewed teaching and media preserved."
+}

@@ -1,0 +1,23 @@
+{
+  "method": "Model review is separate from human listening, clinical/procedure review and owner approval. These notes reconcile automated observations with the exact screen scripts.",
+  "review_prompt_revision": "apple-safety-demonstration-v1",
+  "screen_coverage_disagreements": [
+    "The full-review prompt lists all lesson topics; several short screen reviews flag a topic covered on another screen. These are scope mismatches rather than evidence of missing narration.",
+    "Filipino exposure review transcribes \u201csipi\u201d as the initialism \u201cCP\u201d; retained as a pronunciation/recognition uncertainty for focused or human review, not silently declared correct.",
+    "Filipino near-miss full transcript writes \u201cMunti\u201d where authored dialogue says \u201cMuntik\u201d; retain for focused/human verification."
+  ],
+  "human_listening": "pending",
+  "clinical_review": "pending",
+  "owner_approval": false,
+  "name_alias": "None; full reviews generally identify Apple as naturally pronounced. No unreviewed alias introduced.",
+  "focused_voice_uncertainties": [
+    "Read care-before-paperwork fil critical excerpt 13.0\u201313.4 s: possible higher/lower voice transition.",
+    "Read check fil critical excerpt 4.5 s: possible narrator profile transition.",
+    "Read return-demo fil critical 8.8 s and ending 7.3\u20137.7 s: possible voice transition.",
+    "Read return-demo en ending 8.8 s: possible vocal profile transition.",
+    "Shipped story en ending 9.5\u201310.5 s: possible voice transition between separately synthesized beats."
+  ],
+  "disposition": "Kore was requested throughout; automated timbre observations are retained as unresolved human-listening items, not silently approved or claimed to be confirmed defects.",
+  "provider_failures": "Initial check-fil ending HTTP 400, intermediate practice-fil body HTTP 400 and latest practice-fil ending HTTP 400 retained with exact raw evidence. Latest completed attempt has 14 successful full reviews and 55 successful focused reviews plus one provider-filter failure; no successful assessment fabricated.",
+  "full_vs_focused_disagreement": "Both complete decoded shipped AAC story reviews report consistent timbre and complete endings; focused English ending review reports a possible timbre shift. This disagreement is retained for human listening, with exact timestamps and bytes."
+}

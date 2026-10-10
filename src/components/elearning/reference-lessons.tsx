@@ -304,6 +304,7 @@ export function ReferenceLessons(props: Props) {
   const definitionTracks = definitionRevision ? Object.values(lessonNarration ?? {}) : [];
   const definitionMinutes = definitionTracks.length === 6 ? Math.ceil(definitionTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const safetyPrepareRevision = lesson?.lesson_key === "safety-prepare" && lesson.revision.assets.some(asset => asset.id === "safety-prepare-check");
+  const demonstrationRevision = lesson?.lesson_key === "safety-demonstrate";
   const controlsRevision = lesson?.lesson_key === "safety-controls" && lesson.revision.assets.some(asset => asset.id === "apple-controls-check");
   const controlsTracks = controlsRevision ? Object.values(lessonNarration ?? {}) : [];
   const controlsMinutes = controlsTracks.length === 6 ? Math.ceil(controlsTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
@@ -594,7 +595,7 @@ export function ReferenceLessons(props: Props) {
             {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || handoffRevision || causesRevision || definitionRevision || recordingRevision || actionPlanRevision || safetyPrepareRevision || lesson.lesson_key === "communication-explain") && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
-            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyPrepareRevision || safetyIdentifyRevision || controlsRevision) && !storyLayout && figures}
+            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyPrepareRevision || safetyIdentifyRevision || controlsRevision || demonstrationRevision) && !storyLayout && figures}
             {prioritizationTable}
             {practice}
             {revealSummary && <div
@@ -618,7 +619,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyPrepareRevision && !safetyIdentifyRevision && !controlsRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyPrepareRevision && !safetyIdentifyRevision && !controlsRevision && !demonstrationRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {

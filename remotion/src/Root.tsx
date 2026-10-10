@@ -1,3 +1,4 @@
+import {SafetyDemonstrateStory, calculateSafetyDemonstrateMetadata, SAFETY_DEMONSTRATE_FPS, SAFETY_DEMONSTRATE_FALLBACK_DURATION} from "./safety-demonstrate/SafetyDemonstrateStory";
 import {SafetyPrepareStory, calculateSafetyPrepareMetadata, SAFETY_PREPARE_FALLBACK_DURATION, SAFETY_PREPARE_FPS} from './safety-prepare/SafetyPrepareStory';
 import {SafetyControlsStory, calculateSafetyControlsMetadata, SAFETY_CONTROLS_FPS, SAFETY_CONTROLS_FALLBACK_DURATION} from './safety-controls/SafetyControlsStory';
 import {SafetyIdentifyStory, calculateSafetyIdentifyMetadata, SAFETY_IDENTIFY_FPS, SAFETY_IDENTIFY_FALLBACK_DURATION} from "./safety-identify/SafetyIdentifyStory";
@@ -438,6 +439,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`safety-prepare-${language}`} id={language === "fil" ? "SafetyPrepareStoryFil" : "SafetyPrepareStoryEn"}
           component={SafetyPrepareStory} calculateMetadata={calculateSafetyPrepareMetadata}
           durationInFrames={SAFETY_PREPARE_FALLBACK_DURATION} fps={SAFETY_PREPARE_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`safety-demonstrate-${language}`} id={language === "fil" ? "SafetyDemonstrateStoryFil" : "SafetyDemonstrateStoryEn"}
+          component={SafetyDemonstrateStory} calculateMetadata={calculateSafetyDemonstrateMetadata}
+          durationInFrames={SAFETY_DEMONSTRATE_FALLBACK_DURATION} fps={SAFETY_DEMONSTRATE_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

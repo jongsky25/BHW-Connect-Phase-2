@@ -1,0 +1,24 @@
+{
+  "initial_run_id": 37902026484,
+  "initial_head": "91290dc2b784bebc29acf7c19daa38033189b921",
+  "initial_artifact_id": 11602124844,
+  "initial_artifact_sha256": "f8c7964be6a1348c431f52ab705fff434e49b548834923489518b1e28ce5a5c8",
+  "raw_request_headers": "omitted",
+  "initial_review_failure": "one focused check-fil ending rejected by Gemini content filter; retained raw HTTP 400; no human review inferred",
+  "published_snapshot_sha256": "c578715caca83b7c89873c21f59e07799bee23bb35525d622f539cbe800cb486",
+  "story_run_id": 37904386204,
+  "story_head": "371c68e35f293249ed6677732bebe11674670eda",
+  "story_artifact_id": 11603514432,
+  "story_artifact_sha256": "af54d4c3fb6543596dfc60cb20eaa269b82c15e7dc97bbf7666d007d375db22d",
+  "story_full_review_failure": "Fractional video duration metadata rejected before review; corrected to required integer without changing video bytes; full reviews rerun separately.",
+  "retained_raw_runs": [
+    37902026484,
+    37904386204,
+    37906597742
+  ],
+  "review_only_run_id": 37906597742,
+  "review_only_artifact_id": 11604329537,
+  "review_only_artifact_sha256": "9aa31268da986f697ae55e7ea807cc903d56e2b3521b222dc8a615ed88bbf997",
+  "review_only_head": "5e26cd1db1d3dad9d7f627b68d28f1ec99e94242",
+  "status": "Actual draft media frozen; normal generation skips replacements. Manual review_only remains available for provider-filter gaps."
+}

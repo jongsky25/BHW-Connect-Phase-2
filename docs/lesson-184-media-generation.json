@@ -1,0 +1,41 @@
+{
+  "source_commit": "371c68e35f293249ed6677732bebe11674670eda",
+  "date": "2026-10-09T08:24:32.746Z",
+  "provider": "gemini:gemini-3.8-flash-tts:Kore",
+  "expected_read_tracks": 12,
+  "completed_read_tracks": 12,
+  "pending": [],
+  "error": null,
+  "story_status": "two actual H.264/AAC draft stories generated; reviews pending",
+  "human_listening": "pending",
+  "clinical_review": "pending",
+  "owner_approval": "pending",
+  "story_videos": {
+    "fil": {
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-2cf20801fff8.mp4",
+      "content_hash": "2cf20801fff87211cc24ee7a384c443784c219ec0fccb6eb7fe0658a00012cba",
+      "duration_s": 68.76666666666667,
+      "poster": {
+        "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-4e162dea4914-poster.jpg",
+        "content_hash": "4e162dea4914757e4c76c965b8457103f7919b871f207f64a9c0d0cb76db6bf8"
+      },
+      "captions": {
+        "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-622246cfe40b.vtt",
+        "content_hash": "622246cfe40b77a054f22a70a34b0a2ec24a7178a15dd29a6e3ab824fb309f01"
+      }
+    },
+    "en": {
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-en-546aef95a7a4.mp4",
+      "content_hash": "546aef95a7a4b00b282f539d4f2aa97522784448cadef8381d322fcd3ae140b7",
+      "duration_s": 61.46666666666667,
+      "poster": {
+        "path": "/training/bhw-1-8/safety-demonstrate-gemini-en-90c256fcb3a4-poster.jpg",
+        "content_hash": "90c256fcb3a42b5cb2c5928dc9636eedc7bf790691f1329105e8851f128cbe5e"
+      },
+      "captions": {
+        "path": "/training/bhw-1-8/safety-demonstrate-gemini-en-a02729532ff4.vtt",
+        "content_hash": "a02729532ff40abfd50697331d4012c3d5ea017076a85f19d4953167c98e95d9"
+      }
+    }
+  }
+}
