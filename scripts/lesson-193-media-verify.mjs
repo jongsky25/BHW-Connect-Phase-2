@@ -24,7 +24,9 @@ for(const [id,languages]of Object.entries(manifest.lessons['resources-monitor'].
 assert.equal(report.read_tracks.length,14);
 for(const asset of lesson.assets){
  if(!asset.id.startsWith('monitor-'))continue;
- const bytes=fs.readFileSync(root+'/public'+asset.path);assert.equal(sha(bytes),asset.content_hash);report.images.push({id:asset.id,path:asset.path,sha256:sha(bytes)});
+ const bytes=fs.readFileSync(root+'/public'+asset.path);assert.equal(sha(bytes),asset.content_hash);
+ assert.equal(sha(fs.readFileSync(root+'/remotion/public/resources-monitor/'+asset.id.slice('monitor-'.length)+'.png')),asset.content_hash);
+ report.images.push({id:asset.id,path:asset.path,sha256:sha(bytes),remotion_scene_exact_match:true});
 }
 assert.equal(report.images.length,7);
 for(const language of ['fil','en']){
@@ -34,6 +36,9 @@ for(const language of ['fil','en']){
  assert.equal(v.codec_name,'h264');assert.equal(a.codec_name,'aac');assert.equal(v.width,854);assert.equal(v.height,480);
  const seconds=Number(data.format.duration);assert(seconds<=90);assert(seconds-timing.durationSeconds>=1);
  const captions=fs.readFileSync(root+'/public'+video.captions.path,'utf8');assert.equal((captions.match(/-->/g)??[]).length,7);assert.equal(timing.beats.length,7);
+ const clock=ms=>{const value=Math.round(ms),hours=Math.floor(value/3600000),minutes=Math.floor(value/60000)%60,seconds=Math.floor(value/1000)%60;return [hours,minutes,seconds].map(n=>String(n).padStart(2,'0')).join(':')+'.'+String(value%1000).padStart(3,'0');};
+ const cues=captions.trim().split(/\n\s*\n/).slice(1);assert.equal(cues.length,7);
+ for(const [i,beat] of timing.beats.entries())assert.equal(cues[i],`${i+1}\n${clock(beat.start_ms)} --> ${clock(beat.end_ms)}\n${beat.text}`);
  assert.equal(sha(fs.readFileSync(root+`/remotion/public/resources-monitor/narration-${language}.mp3`)),timing.audio_sha256);
  report.stories.push({language,path:video.path,sha256:video.content_hash,video_codec:v.codec_name,audio_codec:a.codec_name,width:v.width,height:v.height,encoded_seconds:seconds,narration_seconds:timing.durationSeconds,post_roll_seconds:Number((seconds-timing.durationSeconds).toFixed(3)),caption_cues:7,poster_sha256:video.poster.content_hash});
 }

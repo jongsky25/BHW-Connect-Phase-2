@@ -32,9 +32,9 @@
     {
       "id": "compare",
       "language": "fil",
-      "path": "/training/audio/09-sustainable-practices/resources-monitor/compare.fil.9216985b9708.mp3",
-      "sha256": "d837cdadeb96dec70da90319a796919225bb3ed6aa6c380cad4ff4a99bc6b0b6",
-      "encoded_seconds": 94.955
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/compare.fil.a5b6e1f09f00.mp3",
+      "sha256": "510935433b5017381351849db853a29eaa7e8c23b1875ef6ef1f0c11d9dc9cbb",
+      "encoded_seconds": 96.36575
     },
     {
       "id": "compare",
@@ -60,9 +60,9 @@
     {
       "id": "practice",
       "language": "fil",
-      "path": "/training/audio/09-sustainable-practices/resources-monitor/practice.fil.4d8b23a95c37.mp3",
-      "sha256": "61c4deb00d2331cc407a7e96ca79f7561c2e0e537cbb5ed9d3bc57f90fba6992",
-      "encoded_seconds": 104.15025
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/practice.fil.0adbbf8b2812.mp3",
+      "sha256": "4c9b0c072a22650ce19497be055ec903d093cc3daefa43cadc7da911d91df2ea",
+      "encoded_seconds": 103.86275
     },
     {
       "id": "practice",
@@ -103,29 +103,29 @@
   "stories": [
     {
       "language": "fil",
-      "path": "/training/bhw-1-9/resources-monitor-gemini-fil-538d054595c7.mp4",
-      "sha256": "538d054595c7f6ff33ae29a3f778f0f7e5f7a4e9843f8f1e75cc815b610aeb5c",
+      "path": "/training/bhw-1-9/resources-monitor-gemini-fil-c7a336043359.mp4",
+      "sha256": "c7a336043359245a1d4c27096690eb75aaca155e01b6e8e68181e5a003077bd7",
       "video_codec": "h264",
       "audio_codec": "aac",
       "width": 854,
       "height": 480,
-      "encoded_seconds": 86.592,
-      "narration_seconds": 85.42,
-      "post_roll_seconds": 1.172,
+      "encoded_seconds": 84.181333,
+      "narration_seconds": 83.017,
+      "post_roll_seconds": 1.164,
       "caption_cues": 7,
       "poster_sha256": "3bf0266069461eab350a4efb586588e1c35602b036db804c4f4cd3bb1b09cd2f"
     },
     {
       "language": "en",
-      "path": "/training/bhw-1-9/resources-monitor-gemini-en-72e5300b0937.mp4",
-      "sha256": "72e5300b0937cd80f23dc4c36fbaec28f9b9be44b9a780d9ff1e7e6f1e038e86",
+      "path": "/training/bhw-1-9/resources-monitor-gemini-en-bd29989db088.mp4",
+      "sha256": "bd29989db0883f21dff7b0ebcc8bf36cf3db869a46217fde26dea44bc8d84f67",
       "video_codec": "h264",
       "audio_codec": "aac",
       "width": 854,
       "height": 480,
-      "encoded_seconds": 85.12,
-      "narration_seconds": 83.958,
-      "post_roll_seconds": 1.162,
+      "encoded_seconds": 79.594667,
+      "narration_seconds": 78.42,
+      "post_roll_seconds": 1.175,
       "caption_cues": 7,
       "poster_sha256": "9fd86ca107528d1c7838b55604a5c8453fa8da165a413c49e6ec4fffcd05baa5"
     }
@@ -134,37 +134,44 @@
     {
       "id": "monitor-trial",
       "path": "/training/bhw-1-9/charlaine-monitor-trial-cca1983eac3e.png",
-      "sha256": "cca1983eac3e05ee2cebb6a10ae8a2e19e1e0f9deace077d475d5920ef24b42a"
+      "sha256": "cca1983eac3e05ee2cebb6a10ae8a2e19e1e0f9deace077d475d5920ef24b42a",
+      "remotion_scene_exact_match": true
     },
     {
       "id": "monitor-compare",
       "path": "/training/bhw-1-9/charlaine-monitor-compare-f543a30986fb.png",
-      "sha256": "f543a30986fb532ea40754d68dce30ef1ebf50e4f6076b5d45618643f6d73dc2"
+      "sha256": "f543a30986fb532ea40754d68dce30ef1ebf50e4f6076b5d45618643f6d73dc2",
+      "remotion_scene_exact_match": true
     },
     {
       "id": "monitor-communicate",
       "path": "/training/bhw-1-9/charlaine-monitor-communicate-617a9b934a50.png",
-      "sha256": "617a9b934a508953d0a8006cd9e89380a497679cc5952fc4488db683c81b4937"
+      "sha256": "617a9b934a508953d0a8006cd9e89380a497679cc5952fc4488db683c81b4937",
+      "remotion_scene_exact_match": true
     },
     {
       "id": "monitor-workload",
       "path": "/training/bhw-1-9/charlaine-monitor-workload-95621d5688a0.png",
-      "sha256": "95621d5688a0de5939e07f921a2eacaea7418e5f041d759f2da5e715c0128c76"
+      "sha256": "95621d5688a0de5939e07f921a2eacaea7418e5f041d759f2da5e715c0128c76",
+      "remotion_scene_exact_match": true
     },
     {
       "id": "monitor-handover",
       "path": "/training/bhw-1-9/charlaine-monitor-handover-8c007c23d23e.png",
-      "sha256": "8c007c23d23e05860161845a0d497cb0fc2e809f206851ebc30ef92dd28d1cda"
+      "sha256": "8c007c23d23e05860161845a0d497cb0fc2e809f206851ebc30ef92dd28d1cda",
+      "remotion_scene_exact_match": true
     },
     {
       "id": "monitor-practice",
       "path": "/training/bhw-1-9/charlaine-monitor-practice-1c2e1fa6bcd1.png",
-      "sha256": "1c2e1fa6bcd1687478bad4d46e654a6f0412461de86761b223437c6a93beacf4"
+      "sha256": "1c2e1fa6bcd1687478bad4d46e654a6f0412461de86761b223437c6a93beacf4",
+      "remotion_scene_exact_match": true
     },
     {
       "id": "monitor-check",
       "path": "/training/bhw-1-9/charlaine-monitor-check-103407be75bd.png",
-      "sha256": "103407be75bd64559c2d716fbfb3cf75a2053b13d63e7bc99a63fbb1c0619dd5"
+      "sha256": "103407be75bd64559c2d716fbfb3cf75a2053b13d63e7bc99a63fbb1c0619dd5",
+      "remotion_scene_exact_match": true
     }
   ]
 }

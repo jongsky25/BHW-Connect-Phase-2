@@ -5,6 +5,14 @@ sha=lambda b:hashlib.sha256(b).hexdigest()
 receipts=json.loads((out/'lesson-193-inline-media.json').read_text());text=html.read_text()
 for p,v in receipts.items():
  b=(root/'public'/p.lstrip('/')).read_bytes();assert len(b)==v['bytes'] and sha(b)==v['sha256'] and base64.b64encode(b).decode() in text,p
+registry=json.loads((root/'docs/lesson-193-registry.json').read_text())
+registry_check=json.loads((root/'docs/lesson-193-registry-verification.json').read_text())
+assert registry['status']=='every composition rendered' and not registry['failures']
+assert registry_check['all_metadata_match'] and registry_check['actual_compositions']==registry['registry_count']==len(registry['rendered'])
+assert registry_check['ids_in_order']==registry['ids_in_order']
+assert registry_check['registry_report_sha256']==sha((root/'docs/lesson-193-registry.json').read_bytes())
+assert registry_check['registry_source_sha256']==sha((root/'remotion/src/Root.tsx').read_bytes())
+assert registry_check['source_commit']==subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 manifest=json.loads((root/'content/training/day1-basic-competencies/narration.json').read_text())
 full=json.loads((root/'docs/lesson-193-audio-review.json').read_text());focus=json.loads((root/'docs/lesson-193-audio-focus.json').read_text())
 assert len(full['records'])==16 and len(focus['records'])==16
@@ -67,7 +75,7 @@ for name,receipt in json.loads((root/'docs/lesson-193-source-excerpts/integrity.
 paths=set()
 for pattern in ['docs/lesson-193-*','docs/lesson-19-charlaine-*','docs/lesson-193-source-excerpts/*','scripts/lesson-193-*','scripts/remotion-resources-monitor-narrate.mjs','scripts/lib/lesson-193-integration.mjs','scripts/tests/lesson-193.test.mjs','.github/workflows/lesson193-*.yml','content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/*','public/training/audio/09-sustainable-practices/resources-monitor/*','public/training/bhw-1-9/charlaine-monitor-*','public/training/bhw-1-9/charlaine-reference-*','public/training/bhw-1-9/resources-monitor-*','public/training/module-1-9/monitor-c5d2eff5ad98.svg','remotion/src/resources-monitor/*','remotion/public/resources-monitor/*','.preview/lesson193-source/*.txt','.preview/lesson193-source/*.png','.preview/lesson193-raw/*.json','.preview/lesson193-excerpts/*','.preview/lesson193-decoded/*','.preview/lesson193-superseded/*','.preview/lesson193-deliverables/*.json','.preview/lesson193-deliverables/*.log','.preview/lesson193-deliverables/*.png','.preview/lesson193-deliverables/*.pdf','.preview/lesson193-deliverables/*.html']:
  paths.update(p for p in root.glob(pattern) if p.is_file())
-for p in ['content/training/day1-basic-competencies/narration.json','remotion/src/Root.tsx','src/components/elearning/reference-lessons.tsx','scripts/lib/lesson-192-integration.mjs','scripts/tests/lesson-192-release.test.mjs','docs/lesson-192-proposal-receipt.json','docs/lesson-192-owner-approval.json']:paths.add(root/p)
+for p in ['content/training/day1-basic-competencies/narration.json','remotion/src/Root.tsx','src/components/elearning/reference-lessons.tsx','scripts/lib/lesson-192-integration.mjs','scripts/tests/lesson-192-release.test.mjs','docs/lesson-192-proposal-receipt.json','docs/lesson-192-owner-approval.json','scripts/lib/lesson-191-integration.mjs','scripts/tests/lesson-191-release.test.mjs','docs/lesson-191-proposal-receipt.json','docs/lesson-191-owner-approval.json']:paths.add(root/p)
 if (root/'lesson-193-published-snapshot.json').exists():paths.add(root/'lesson-193-published-snapshot.json')
 paths.discard(out/'lesson-193-package-integrity.json')
 status=json.loads((root/'docs/lesson-193-execution-status.json').read_text())

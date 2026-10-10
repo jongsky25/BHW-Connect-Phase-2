@@ -6,7 +6,7 @@ Imungkahi ang maliit na trial na may owner at review date; ihambing ang resource
 
 60 minuto: 5 opening + 12 modelling + 25 practice/puna/retry + 10 fair-comparison debrief + 8 transfer. Hiwalay ito sa audio o optional story duration. Module total: 60 + 60 + 60 = 180 minuto. Ihanda ang limang A4 sheets sa lesson-193-practice-kit.fil.md, dummy master at lumang kopya, bolpen, calculator at timer. Sampung triads para sa 30 learners; tig-isang kit. Walang tunay na clinical o utility work.
 
-Sinukat na kabuuang playback ng pitong buong Read MP3: 665.783 segundo (11 minuto 5.783 segundo). Hindi kasama rito ang paghinto para mag-isip, sumagot, mag-replay o gawin ang guided practice. Gated pa rin ang takeaway pagkatapos sumagot. Hiwalay ang optional story.
+Sinukat na kabuuang playback ng pitong buong Read MP3: 666.907 segundo (11 minuto 6.907 segundo). Hindi kasama rito ang paghinto para mag-isip, sumagot, mag-replay o gawin ang guided practice. Gated pa rin ang takeaway pagkatapos sumagot. Hiwalay ang optional story.
 
 ## [prepare] Ihanda
 

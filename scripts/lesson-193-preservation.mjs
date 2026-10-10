@@ -14,7 +14,7 @@ const proposal=read('docs/lesson-193-proposal-receipt.json');
 assert.equal(proposal.predecessor_commit,integration.fetched_main);
 for(const [p,h] of Object.entries(incoming))assert.equal(sha(execFileSync('git',['show',integration.fetched_main+':'+p],{maxBuffer:32*1024*1024})),h,'Incoming main receipt '+p);
 for(const [p,h] of Object.entries(start.files_sha256))if(p.startsWith('public/')||p.startsWith('remotion/public/')||/owner-approval|approved-package/.test(p))assert.equal(sha(fs.readFileSync(p)),h,'Original immutable media/approval '+p);
-const shared=new Set(['remotion/src/Root.tsx','src/components/elearning/reference-lessons.tsx','scripts/lib/lesson-192-integration.mjs','scripts/tests/lesson-192-release.test.mjs']);
+const shared=new Set(['remotion/src/Root.tsx','src/components/elearning/reference-lessons.tsx','scripts/lib/lesson-191-integration.mjs','scripts/tests/lesson-191-release.test.mjs','scripts/lib/lesson-192-integration.mjs','scripts/tests/lesson-192-release.test.mjs']);
 const leaf='content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/';
 const old=JSON.parse(baseline.target_files_utf8[leaf+'lesson.json']);
 const lesson=read(leaf+'lesson.json'),slides=read(leaf+'slides.json');

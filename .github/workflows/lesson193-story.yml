@@ -18,7 +18,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   draft-media:
-    if: github.head_ref == 'codex/lesson-193-charlaine-handoff'
+    # Generation is pinned to the audited media attempt; final packaging reuses exact bytes.
+    if: github.head_ref == 'codex/lesson-193-charlaine-handoff' && github.event.pull_request.head.sha == 'd490ae0aaa81fd0e8276b48106cdc300bd9e458f'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:

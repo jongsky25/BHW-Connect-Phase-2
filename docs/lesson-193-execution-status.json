@@ -1,12 +1,12 @@
 {
-  "status": "draft implementation; story review/registry/package verification in progress",
+  "status": "media/playback/print draft verified; integrated registry/archive verification in progress",
   "teaching": "7 paired bilingual screens; all original prompts/options/indexes, identities, objective and rubric preserved",
   "guides": "60-minute plan; 10 triads; at most 3 complete trainer observations; at least 27 learners need a later trainer observation",
   "printables": "2 five-page A4 kits and 2 one-page aids verified",
   "shared_character_reference": "exact draft reference imported from lesson 1.9.1 commit 64dc3fa05b7d8df12b359fa47ef142a840f50405",
   "distinct_generated_illustrations": "7 built-in generated action scenes visually inspected; exact prompts/reference/output hashes retained; draft",
-  "read_narration": "14 actual Gemini Kore tracks generated; current/old-published selection verified; full/focused review resume in progress",
-  "story": "both actual H.264/AAC story renders produced in workflow; final evidence import/review pending",
+  "read_narration": "14 actual current Gemini Kore MP3s, exact old published selection retained; 16 full/64 focused nonempty model reviews including shipped stories",
+  "story": "7-beat Filipino/English H.264/AAC 854x480 stories; exact captions/boundaries/post-roll/final-frame posters and unmuted fullscreen/cleanup verified",
   "source_audit": "selected original PDF/WHO/NWPC passages inspected; primary DOH URL returned 403; current local applicability pending",
   "production_snapshot": "3 bounded published lesson/revision/private-note rows retrieved read-only; no authenticated production-playback claim",
   "human_listening": "pending, including agreed Charlaine pronunciation",
@@ -18,5 +18,11 @@
     "facility/infection-prevention review and current local policy verification",
     "owner approval of exact draft package"
   ],
-  "global_freshness_baseline": "12 problem-prioritize tracks remain stale; no exclusions or sibling regeneration"
+  "global_freshness_baseline": "12 problem-prioritize tracks remain stale; no exclusions or sibling regeneration",
+  "browser": "96 actual component/media fixture cases, 88 screenshots, zero console/network/overflow errors; no production-auth claim",
+  "integrated_main": "0e925326b1f9b2ab138f2a3d5b3267fff0a04621; approved lessons 1.9.1 and 1.9.2 preserved; exactly two target compositions appended",
+  "remaining_verification": [
+    "actual full integrated registry",
+    "frozen-head exact download archive"
+  ]
 }

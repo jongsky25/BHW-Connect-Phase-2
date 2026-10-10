@@ -1,9 +1,9 @@
 {
   "status": "passed",
-  "protected_files": 6857,
+  "protected_files": 6963,
   "initial_protected_files": 6710,
-  "integrated_approved_main": "7f366e87282f7fdbc8f57037a4d7685a02ae3198",
-  "exact_incoming_files": 156,
+  "integrated_approved_main": "0e925326b1f9b2ab138f2a3d5b3267fff0a04621",
+  "exact_incoming_files": 269,
   "changed_existing_files": [
     "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.en.md",
     "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.fil.md",
@@ -14,7 +14,9 @@
     "content/training/day1-basic-competencies/narration.json",
     "remotion/src/Root.tsx",
     "src/components/elearning/reference-lessons.tsx",
+    "scripts/lib/lesson-191-integration.mjs",
     "scripts/lib/lesson-192-integration.mjs",
+    "scripts/tests/lesson-191-release.test.mjs",
     "scripts/tests/lesson-192-release.test.mjs"
   ],
   "checks": "all bilingual prompts, options and correct indexes preserved",
@@ -23,8 +25,8 @@
   "old_media": "all protected bytes retained; approved incoming sibling bytes pinned",
   "published_baseline": {
     "status": "3 bounded published rows retrieved read-only; no authenticated playback or release claim",
-    "sha256": "a57cc4a37c8504af31dd77d6d8e981ca83080e8ff21da3d543b1031df4fb5e74",
-    "captured_at": "2026-10-10T10:20:32.206Z"
+    "sha256": "6e365950b4ce307b1c59e06e552afa7c2df82d67e4ea5cea5f9b64e7163ce1a2",
+    "captured_at": "2026-10-10T12:17:26.721Z"
   },
   "owner_approval": false
 }
