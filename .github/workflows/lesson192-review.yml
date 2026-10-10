@@ -1,0 +1,87 @@
+name: Lesson 1.9.2 frozen bilingual review package
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson192-review.yml'
+      - 'docs/lesson-192-final-evidence-origins.json'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  package:
+    if: github.head_ref == 'codex/lesson-192-charlaine-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx playwright install --with-deps chromium
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install PyMuPDF==1.26.6
+      - name: Retrieve immutable actual audio evidence and superseded attempts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json,pathlib,subprocess,shutil
+          data=json.loads(pathlib.Path('docs/lesson-192-final-evidence-origins.json').read_text())
+          for kind in ['initial_read','initial_story','failed_focus_retry','read','story','focus_repair']:
+            entry=data[kind]; dest=pathlib.Path('.preview/lesson192-import')/kind
+            subprocess.run(['gh','run','download',str(entry['run_id']),'-n',entry['artifact_name'],'-D',str(dest)],check=True)
+            if kind.startswith('initial_') or kind.startswith('failed_'):
+              shutil.copytree(dest,pathlib.Path('.preview/lesson192-superseded')/kind.replace('_','-'),dirs_exist_ok=True)
+            else:
+              for name in ['lesson192-raw','lesson192-excerpts']:
+                shutil.copytree(dest/'.preview'/name,pathlib.Path('.preview')/name,dirs_exist_ok=True)
+          shutil.copy2('.preview/lesson192-import/read/lesson-192-published-snapshot.json','lesson-192-published-snapshot.json')
+          PY
+      - name: Verify protected predecessors and pinned source documents
+        run: |
+          node scripts/lesson-192-preservation.mjs
+          node scripts/lesson-192-media-verify.mjs
+          python3 scripts/lesson-192-source-evidence.py
+      - name: Verify production types, target tests and lint
+        run: |
+          npm run lint
+          npm run typecheck
+          npx vitest run scripts/tests/lesson-192.test.mjs scripts/tests/lesson-184-release.test.mjs --maxWorkers=2
+      - name: Build and check A4 printables
+        run: |
+          node scripts/lesson-192-print-kit.mjs
+          python3 scripts/lesson-192-print-verify.py
+      - name: Verify every current composition rendered before packaging
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/lesson-192-registry-verify.py --wait
+      - name: Record exact-head CI without hiding the known global freshness failure
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/lesson-192-ci-evidence.py
+      - name: Build the hash-verified archive only after complete registry proof
+        run: |
+          node scripts/lesson-192-finalize-status.mjs
+          node scripts/lesson-192-review-build.mjs
+          node scripts/lesson-192-browser-verify.mjs
+          node scripts/lesson-192-finalize-status.mjs --after-browser
+          python3 scripts/lesson-192-package.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson192-frozen-review-${{ github.event.pull_request.head.sha }}
+          path: |
+            .preview/lesson192-deliverables/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

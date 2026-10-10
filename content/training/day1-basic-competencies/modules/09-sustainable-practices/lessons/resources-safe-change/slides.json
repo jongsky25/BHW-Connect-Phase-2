@@ -8,9 +8,11 @@
     "layout": "process",
     "heading_fil": "Tubig at kuryente na may pag-iingat",
     "heading_en": "Water and electricity with safeguards",
-    "display_fil": "Ayusin ang leak at patayin ang hindi kailangang ilaw ayon sa facility instruction. Panatilihin ang cold chain, kinakailangang bentilasyon at handwashing water. Ang kritikal na serbisyo ay hindi dapat isakripisyo.",
-    "display_en": "Repair leaks and switch off unnecessary lights according to facility instructions. Preserve cold chain, required ventilation and handwashing water. Essential service safeguards must remain.",
-    "asset_ids": [],
+    "display_fil": "Panatilihin ang cold chain, bentilasyon at handwashing water. Siyasatin ang hindi kailangang ilaw ayon sa procedure. Mungkahi pa lamang.",
+    "display_en": "Preserve cold chain, ventilation and handwashing water. Investigate unnecessary lights under procedure. This is still a proposal.",
+    "asset_ids": [
+      "charlaine-utilities"
+    ],
     "check": {
       "prompt_fil": "May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?",
       "prompt_en": "The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?",
@@ -29,9 +31,11 @@
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Ang unang sagot ay tumutukoy sa hindi kailangang konsumo habang protektado ang cold chain. Ang pagpatay sa refrigerator o kinakailangang bentilasyon ay maaaring makasira sa ligtas na serbisyo.",
-      "feedback_en": "The first response targets unnecessary use while protecting the cold chain. Switching off the refrigerator or required ventilation can compromise safe service."
-    }
+      "feedback_fil": "1. Ligtas siyasatin ang hindi kailangang ilaw ayon sa facility procedure habang gumagana ang refrigerator. Hindi pa alam ang sanhi o matitipid. 2. Hindi ligtas patayin ang vaccine refrigerator sa gabi; dapat protektado ang cold chain. 3. Hindi ligtas patayin ang kinakailangang bentilasyon; bahagi ito ng ligtas na serbisyo. Sa kathang-isip na kuwento, pinili ni Charlaine ang safeguarded investigation at tinanggihan ang dalawang unsafe cuts. Ipinapasa pa ang mungkahi sa awtorisadong facility decision; walang sinasabing approval, pagkumpuni o nasukat na savings.",
+      "feedback_en": "1. Unnecessary lights are safe to investigate under facility procedure while the refrigerator runs. The cause and savings remain unknown. 2. Switching off the vaccine refrigerator overnight is unsafe; protect the cold chain. 3. Switching off required ventilation is unsafe; it supports safe services. In the fictional story, Charlaine chooses a safeguarded investigation and rejects both unsafe cuts. The proposal still goes to the authorized facility decision; no approval, repair completion or measured savings is claimed."
+    },
+    "narration_fil": "Si Charlaine ay isang BHW sa kathang-isip na kuwentong ito. Gusto niyang bawasan ang aksaya nang hindi nababawasan ang ligtas at tamang serbisyo. Mataas ang bill ng BHS at may vaccine refrigerator. Hindi pa alam kung ano ang sanhi ng mataas na konsumo.\n\n“Alin ang hindi kailangan, at alin ang dapat manatili?” tanong niya. Panatilihing gumagana ang cold-chain equipment, kinakailangang bentilasyon at ibang kritikal na sistema. Panatilihin ang tubig para sa paghuhugas ng kamay. Siyasatin lamang ang hindi kailangang ilaw ayon sa facility procedure; huwag mag-switch-off demonstration sa aktuwal na kagamitan.\n\nKung may iniulat na tagas, itala at ipasuri sa awtorisadong tao. Hindi si Charlaine ang magkukumpuni. Hindi pa kumpirmado ang pahintulot, pagkumpuni o matitipid. Sa susunod na tanong, piliin ang ligtas na siyasatin at ipaliwanag ang proteksyong kailangang manatili.",
+    "narration_en": "Charlaine is a BHW in this fictional story. She wants to reduce waste while preserving safe, correct services. The BHS has a high bill and a vaccine refrigerator. The cause of the high consumption is not yet known.\n\n“What is unnecessary, and what must stay?” she asks. Keep cold-chain equipment, required ventilation and other critical systems operating. Preserve handwashing water. Investigate only unnecessary lights under facility procedure; do not demonstrate switching off actual equipment.\n\nIf a leak is reported, record it and ask an authorized person to inspect it. Charlaine does not perform the repair. Authorization, repair completion and savings are not yet confirmed. In the next question, choose what is safe to investigate and explain the protection that must remain."
   },
   {
     "id": "slide-materials",
@@ -42,10 +46,14 @@
     "layout": "comparison",
     "heading_fil": "Bawasan ang hindi kailangan, panatilihin ang ligtas",
     "heading_en": "Reduce unnecessary use, preserve safety",
-    "display_fil": "Reusable teaching visual: maaaring makatipid. Single-use clinical item: hindi gawing reusable. Sundin ang BHS policy at segregation. Kapag hindi tiyak, itanong sa supervisor ang aprubadong paraan.",
-    "display_en": "A reusable teaching visual can reduce waste. Clinical single-use items must stay single-use. Follow BHS policy and segregation. If uncertain, ask the supervisor for the approved approach.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Aprubadong teaching visual kung angkop. Clinical single-use ay hindi reusable. Kung hindi alam ang policy, magtanong muna.",
+    "display_en": "Approved teaching visual where suitable. Clinical single-use stays single-use. Ask first when policy is unknown.",
+    "asset_ids": [
+      "charlaine-materials"
+    ],
+    "check": null,
+    "narration_fil": "May nagmungkahi kay Charlaine ng matibay na visual para sa health teaching. Maaaring mabawasan nito ang paulit-ulit na disposable decoration kung aprubado at angkop sa mga gagamit. Panatilihin ang tamang impormasyon at kailangang instruction, kabilang ang kopyang kailangan ng learner.\n\nIba ang hindi kailangang nonclinical disposable sa clinical single-use item. Hindi pahintulot ang pagbabawas ng plastics para muling gamitin ang karayom, lancet o iba pang clinical single-use supply. Sundin ang lokal na policy at tamang segregation; huwag mag-imbento ng paglilinis o pagre-reuse.\n\n“Kung hindi ko alam ang uri o policy, magtatanong muna ako sa supervisor,” sabi ni Charlaine. Sa pagsasanay, option cards lamang ang ihahambing. Walang tunay na clinical item na gagamitin o lilinisin. Hindi pa kumpirmado ang pag-apruba sa isang bagong visual.",
+    "narration_en": "Someone suggests a durable health-teaching visual to Charlaine. It may reduce repeated disposable decorations if approved and suitable for its users. Preserve correct information and needed instructions, including a copy when the learner needs one.\n\nAn unnecessary nonclinical disposable differs from a clinical single-use item. Plastics reduction does not authorize reusing needles, lancets or other clinical single-use supplies. Follow local policy and proper segregation; do not invent cleaning or reuse methods.\n\n“If I do not know the classification or policy, I will ask the supervisor first,” Charlaine says. Practice compares option cards only. No actual clinical item is used or cleaned. Approval of a new visual is not yet confirmed."
   },
   {
     "id": "slide-workflow",
@@ -55,10 +63,14 @@
     "layout": "process",
     "heading_fil": "Ayusin ang daloy, hindi bilisan lang",
     "heading_en": "Improve the flow, not just the speed",
-    "display_fil": "Suriin ang approved version bago mag-print; ihanda nang magkakasama ang gamit. Maaaring pagsabayin ang delivery sa ligtas na ruta, ngunit hindi ipagpaliban ang urgent referral. Sukatin ang kalidad at oras, hindi bilis lang.",
-    "display_en": "Check the approved version before printing and assemble materials together. Combine deliveries on a safe route when suitable, but never delay urgent referral. Measure quality and time, not speed alone.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Controlled master muna; kumpirmahin ang approved version. Ihanda ang kit. Huwag ipagpaliban ang urgent referral.",
+    "display_en": "Check the controlled master and confirm the approved version. Prepare the kit. Never delay urgent referral.",
+    "asset_ids": [
+      "charlaine-workflow"
+    ],
+    "check": null,
+    "narration_fil": "Bago mag-print, tinitingnan ni Charlaine at ng kasamahan ang petsa at bersyon ng handout. Ang nasa drawer ay hindi awtomatikong approved master. Hanapin ang controlled master at kumpirmahin sa supervisor ang kasalukuyang aprubadong bersyon ayon sa document-control procedure.\n\nIhanda nang magkakasama ang dummy teaching materials upang mabawasan ang paghahanap at pabalik-balik. Maaaring pagsamahin ang delivery sa planadong ligtas na ruta kung pinahihintulutan, ngunit huwag ipagpaliban ang urgent referral para makatipid sa biyahe.\n\nAng productivity ay dekalidad at napapanahong serbisyo na may mas kaunting aksaya at pag-uulit. Hindi patunay ng husay ang dami ng minadaling kliyente. Ang pag-aayos ng kit ay mungkahi pa lamang; hindi ito patunay ng nasukat na oras o pinansiyal na natipid.",
+    "narration_en": "Before printing, Charlaine and her colleague check the handout date and version. A drawer copy is not automatically the approved master. Find the controlled master and confirm the current approved version with the supervisor under the document-control procedure.\n\nAssemble dummy teaching materials together to reduce searching and repeated trips. Supplies may be delivered together on a planned safe route when authorized, but never delay urgent referral to save travel.\n\nProductivity means quality, timely service with less waste and rework. The number of rushed clients does not prove good work. Organizing the kit is still a proposal; it does not prove measured time or financial savings."
   },
   {
     "id": "slide-worked-example",
@@ -71,10 +83,14 @@
     "layout": "comparison",
     "heading_fil": "Alamin kung bakit nasasayang",
     "heading_en": "Check why waste occurs",
-    "display_fil": "Posibleng sanhi: lumang kopya o maling pagpili. Suriin ang printout at master; kausapin ang nag-print. Beripikahin sa supervisor bago baguhin ang routine.",
-    "display_en": "Possible causes: old copy or wrong selection. Check printouts against the master and consult the printer. Verify with the supervisor before changing the routine.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Drawer A; printout A; approved master B. Dalawang posibleng sanhi, hindi pa patunay. Kausapin ang nag-print at supervisor.",
+    "display_en": "Drawer A; printout A; approved master B. Two possible causes remain unproven. Ask the person who printed and the supervisor.",
+    "asset_ids": [
+      "charlaine-worked-example"
+    ],
+    "check": null,
+    "narration_fil": "Sa kathang-isip na verification sheet, ang drawer copy at maling printout ay parehong bersyon A. Ang controlled master ay bersyon B. Kinumpirma ng kunwaring supervisor na B ang approved version. Puro dummy teaching sheets ito, walang patient record.\n\nMay dalawang posibleng sanhi: nakopya ang lumang A mula sa drawer, o maling file ang napili bago mag-print. Ang magkaparehong A ay tugma sa unang paliwanag ngunit hindi patunay na drawer ang ginamit. Maaaring may A rin sa computer. Hindi pa nakausap ang nag-print at hindi pa nakita ang napiling file.\n\nInilista ni Charlaine: kumpirmado ang pagkakaiba sa approved master; hindi pa kumpirmado ang sanhi. Ihambing ang drawer, printout at controlled master, saka tanungin ang nag-print at supervisor. Huwag sisihin ang tao o baguhin ang routine batay sa hula. Ang bersyon A at B ay kathang-isip na inputs, hindi opisyal na DOH version.",
+    "narration_en": "On the fictional verification sheet, the drawer copy and incorrect printout are both version A. The controlled master is version B. The simulated supervisor confirms B as approved. These are dummy teaching sheets with no patient records.\n\nThere are two possible causes: an old drawer copy was copied, or the wrong file was selected before printing. Matching versions A are consistent with the first explanation but do not prove the drawer was used. Version A may also be on the computer. The person who printed has not yet been asked, and the selected file has not been inspected.\n\nCharlaine records: the difference from the approved master is confirmed; the cause remains unconfirmed. Compare the drawer, printout and controlled master, then ask the person who printed and the supervisor. Do not blame someone or change the routine on a guess. Versions A and B are fictional inputs, not official DOH versions."
   },
   {
     "id": "slide-practice",
@@ -87,12 +103,14 @@
     "layout": "process",
     "heading_fil": "Subukan, saka ulitin",
     "heading_en": "Try it, then repeat",
-    "display_fil": "Matitipid? Posibleng pinsala? Safeguard? Piliin ang pagbabawas ng waste na nagpapanatili ng ligtas at napapanahong serbisyo.",
-    "display_en": "Savings? Potential harm? Safeguard? Choose waste reduction that preserves safe, timely services.",
+    "display_fil": "Piliin ang proposal; pangalanan ang safeguard at tinanggihan. Feedback at retry. Approval at savings: hindi pa kumpirmado.",
+    "display_en": "Choose a proposal; name the safeguard and rejection. Get feedback and retry. Approval and savings: not yet confirmed.",
     "asset_ids": [
-      "safe-change"
+      "charlaine-practice"
     ],
-    "check": null
+    "check": null,
+    "narration_fil": "Ihambing ang dalawang pares ng fictional option cards: ipaayos ang iniulat na tagas sa awtorisadong tao laban sa bawasan ang handwashing water; at gumamit ng aprubadong reusable teaching visual kung angkop laban sa clinical single-use reuse. Walang tunay na repair o clinical handling sa practice.\n\nSabihin sa kapareha: “Ano ang posibleng mabawasan? Ano ang maaaring mapinsala? Ano ang proteksyong dapat manatili?” Pumili ng isang mungkahi, pangalanan ang safeguard at ipaliwanag ang tinanggihang opsyon. Isama ang approval na kailangan; kung hindi alam, isulat na hindi pa kumpirmado. Walang ibinigay na dami o halaga ng matitipid.\n\nHalimbawa ng mahinang sagot: “Reusable para tipid.” Feedback: “Ano ang kailangang panatilihin, at alin ang hindi puwedeng gamitin muli?” Retry ni Charlaine: “Aprubadong teaching visual lamang kung angkop; kumpleto ang instruction. Tatanggihan ko ang clinical single-use reuse. Kumpirmahin muna ang lokal na policy.”\n\nKung mag-isa, isulat o sabihin ang proposal, safeguard, rejection at susunod na verification. Rehearsal ito; kailangan pa rin ang trainer observation. Ang tamang sagot sa quiz ay hindi kapalit ng naobserbahang pagganap.",
+    "narration_en": "Compare two pairs of fictional option cards: ask an authorized person to repair the reported leak versus restrict handwashing water; and use an approved reusable teaching visual where suitable versus reuse a clinical single-use item. Practice includes no actual repair or clinical handling.\n\nTell a partner: “What might be reduced? What could be harmed? What protection must remain?” Choose a proposal, name a safeguard and explain the rejected option. Include the authorization needed; when unknown, write not yet confirmed. No savings quantity or cost is supplied.\n\nA weaker attempt is: “Reusable saves money.” Feedback: “What must remain, and what must never be reused?” Charlaine retries: “Only an approved teaching visual where suitable, with complete instructions. I reject clinical single-use reuse. Confirm local policy first.”\n\nAlone, write or say the proposal, safeguard, rejection and next verification. This is rehearsal; trainer observation is still needed. A correct quiz answer does not replace observed performance."
   },
   {
     "id": "slide-check",
@@ -105,9 +123,11 @@
     "layout": "decision",
     "heading_fil": "Piliin ang susunod na hakbang",
     "heading_en": "Choose the next step",
-    "display_fil": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.",
-    "display_en": "Reduce waste and rework while preserving essential protection and services.",
-    "asset_ids": [],
+    "display_fil": "Pumili muna bago tingnan ang feedback. Panatilihin ang tama at accessible na instruction.",
+    "display_en": "Choose before viewing feedback. Preserve correct, accessible instructions.",
+    "asset_ids": [
+      "charlaine-check"
+    ],
     "check": {
       "prompt_fil": "Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?",
       "prompt_en": "The team wants to reduce paper in health teaching. Which proposal fits?",
@@ -126,8 +146,10 @@
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "Ang ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.",
-      "feedback_en": "The third response reduces rework while keeping information correct. Omitting essentials or using an old version can lower quality even when less paper is used."
-    }
+      "feedback_fil": "1. Hindi angkop tanggalin ang kailangang instruction; dapat tama at accessible pa rin ang pagtuturo. 2. Hindi sapat na may stock ng lumang bersyon; beripikahin ang approved version bago gamitin o mag-print. 3. Angkop siyasatin ang approved version at aprubadong reusable visual kung angkop, nang kumpleto ang kailangang instruction. Sa kathang-isip na pagtatapos, inihahain ni Charlaine ang proposal na may version verification at angkop na aprubadong visual. Tinanggihan niya ang unsafe cut; protektado ang handwashing water, clinical single-use rules, critical equipment, bentilasyon at urgent referral. Ipinapasa pa ito sa awtorisadong facility decision. Walang inaangking nasukat na savings, repair completion o trainer-observed competence.",
+      "feedback_en": "1. Omitting needed instructions is unsuitable; teaching must remain correct and accessible. 2. Having old copies in stock is insufficient; verify the approved version before use or printing. 3. Checking the approved version and an approved reusable visual where suitable is appropriate, with all needed instructions intact. In the fictional ending, Charlaine submits a proposal with version verification and a suitable approved visual. She rejects the unsafe cut; handwashing water, clinical single-use rules, critical equipment, ventilation and urgent referral stay protected. It still goes to the authorized facility decision. No measured savings, repair completion or trainer-observed competence is claimed."
+    },
+    "narration_fil": "Gustong bawasan ni Charlaine at ng team ang papel sa health teaching. Walang sinabi ang sitwasyon na puwedeng tanggalin ang kailangang instruction o gamitin ang lumang bersyon. May pagpipiliang siyasatin ang approved version at gumamit ng aprubadong reusable visual kung angkop.\n\nHuminto muna at piliin ang sagot. Ipaliwanag kung paano mapapanatili ang tamang impormasyon at accessible na instruction. Pagkatapos sumagot, basahin ang dahilan sa bawat opsyon at ang pagtatapos ng kuwento. Ibang gawain ang pagkuha ng facility approval at naobserbahang practice; hindi iyon ipinapakita ng pagpili sa quiz.",
+    "narration_en": "Charlaine and the team want to reduce paper in health teaching. The situation does not authorize omitting needed instructions or using an old version. One option is to check the approved version and use an approved reusable visual where suitable.\n\nPause and choose an answer. Explain how correct information and accessible instructions will remain. After responding, read the rationale for every option and the story ending. Facility approval and observed practice are separate activities; selecting a quiz option does not demonstrate them."
   }
 ]

@@ -53,7 +53,7 @@ jobs:
           path: .preview/lesson193-import
       - name: Resume exact target tracks and retain original evidence
         run: |
-          cp .preview/lesson193-import/content/training/day1-basic-competencies/narration.json content/training/day1-basic-competencies/narration.json
+          node --input-type=module -e "import fs from 'node:fs'; const p='content/training/day1-basic-competencies/narration.json'; const current=JSON.parse(fs.readFileSync(p)); const prior=JSON.parse(fs.readFileSync('.preview/lesson193-import/'+p)); current.lessons['resources-monitor']=prior.lessons['resources-monitor']; current.history['resources-monitor']=prior.history['resources-monitor']; fs.writeFileSync(p,JSON.stringify(current,null,2)+'\\n');"
           cp -a .preview/lesson193-import/public/training/audio/09-sustainable-practices/resources-monitor/. public/training/audio/09-sustainable-practices/resources-monitor/
           cp .preview/lesson193-import/docs/lesson-193-audio-*.json docs/
           cp .preview/lesson193-import/remotion/public/resources-monitor/narration-* remotion/public/resources-monitor/

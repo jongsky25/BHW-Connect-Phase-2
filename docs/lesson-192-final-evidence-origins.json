@@ -1,0 +1,49 @@
+{
+  "status": "actual current and superseded workflow media; draft, not approval",
+  "initial_read": {
+    "run_id": 38040541887,
+    "head": "422a5f99d7999c2e7292af7838ffee8497fa2ca2",
+    "artifact_id": 11666141521,
+    "artifact_name": "lesson192-generated-evidence",
+    "zip_sha256": "dd50e980851243745910431ca9a17814291ad8a73a842d66e14704f79238b29b"
+  },
+  "initial_story": {
+    "run_id": 38042145499,
+    "head": "b6e111e87c9396d3d4c1bdcaba61e417faefd9f2",
+    "artifact_id": 11666478045,
+    "artifact_name": "lesson192-story-evidence",
+    "zip_sha256": "6e64f5152da48444e2290b5a053b63d8baf649b049c4d604ee69fca105b79427"
+  },
+  "human_listening": "pending",
+  "facility_review": "pending",
+  "owner_approval": false,
+  "read": {
+    "run_id": 38042145473,
+    "head": "b6e111e87c9396d3d4c1bdcaba61e417faefd9f2",
+    "artifact_id": 11666389264,
+    "artifact_name": "lesson192-generated-evidence",
+    "zip_sha256": "15f64ed723be3271225a50a1b8f9b482d3bca32353148044cce37032ccab9b01"
+  },
+  "story": {
+    "run_id": 38042761462,
+    "head": "b63678e310640a1e3c7269d46ec88196b385ca1b",
+    "artifact_id": 11666660325,
+    "artifact_name": "lesson192-story-evidence",
+    "zip_sha256": "d9e2bb5a50c07ec7bfb8607b7076404fe142d7bfbcc657600726249b4a712eb5"
+  },
+  "focused_review_status": "56 successful exact-byte model reviews; initial provider failures retained",
+  "failed_focus_retry": {
+    "run_id": 38043531458,
+    "head": "94d139a216673ca7f76009174088bcad79a383da",
+    "artifact_id": 11667390193,
+    "artifact_name": "lesson192-focused-review-retry",
+    "zip_sha256": "dcfb1d3f0abfae89229ec7f00025fec74e7a8164735d5b8efd4d4bebe0b140fb"
+  },
+  "focus_repair": {
+    "run_id": 38043782576,
+    "head": "ed93ef54ef3545b660c8f539777f150cd3144545",
+    "artifact_id": 11666681059,
+    "artifact_name": "lesson192-focused-review-retry",
+    "zip_sha256": "7553034b11138e3ab3df194960fcc2663c32e4dab94fcfe26d377b0abafc08a7"
+  }
+}

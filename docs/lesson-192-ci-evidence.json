@@ -1,0 +1,29 @@
+{
+  "source_commit": "729e6d4af1efc98908e5bf0b664061fb6409ac05",
+  "run_id": 38044340560,
+  "run_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38044340560",
+  "lint": "passed; three existing warnings",
+  "typecheck": "passed",
+  "unit_tests": {
+    "passed": 1626,
+    "failed": 1,
+    "failing_check": "scripts/tests/reference-narration.test.mjs > committed narration is current for every converted subchapter",
+    "known_stale_tracks": [
+      "problem-prioritize/criteria/fil",
+      "problem-prioritize/criteria/en",
+      "problem-prioritize/worked-scores/fil",
+      "problem-prioritize/worked-scores/en",
+      "problem-prioritize/score-evidence/fil",
+      "problem-prioritize/score-evidence/en",
+      "problem-prioritize/tie-and-urgent-care/fil",
+      "problem-prioritize/tie-and-urgent-care/en",
+      "problem-prioritize/practice/fil",
+      "problem-prioritize/practice/en",
+      "problem-prioritize/check/fil",
+      "problem-prioritize/check/en"
+    ]
+  },
+  "disposable_local_supabase_e2e": "passed",
+  "fully_green": false,
+  "verified_at": "2026-10-10T10:50:55.520074+00:00"
+}

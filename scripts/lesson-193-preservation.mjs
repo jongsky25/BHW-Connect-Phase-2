@@ -8,6 +8,13 @@ const sha=b=>createHash('sha256').update(b).digest('hex');
 const read=p=>JSON.parse(fs.readFileSync(p));
 const baseline=read('docs/lesson-193-handoff-baseline.json');
 const start=read('docs/lesson-193-execution-baseline.json');
+const integration=read('docs/lesson-193-main-integration.json');
+const incoming=integration.incoming_files_sha256;
+const proposal=read('docs/lesson-193-proposal-receipt.json');
+assert.equal(proposal.predecessor_commit,integration.fetched_main);
+for(const [p,h] of Object.entries(incoming))assert.equal(sha(execFileSync('git',['show',integration.fetched_main+':'+p],{maxBuffer:32*1024*1024})),h,'Incoming main receipt '+p);
+for(const [p,h] of Object.entries(start.files_sha256))if(p.startsWith('public/')||p.startsWith('remotion/public/')||/owner-approval|approved-package/.test(p))assert.equal(sha(fs.readFileSync(p)),h,'Original immutable media/approval '+p);
+const shared=new Set(['remotion/src/Root.tsx','src/components/elearning/reference-lessons.tsx','scripts/lib/lesson-192-integration.mjs','scripts/tests/lesson-192-release.test.mjs']);
 const leaf='content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/';
 const old=JSON.parse(baseline.target_files_utf8[leaf+'lesson.json']);
 const lesson=read(leaf+'lesson.json'),slides=read(leaf+'slides.json');
@@ -26,17 +33,17 @@ for(const [i,s]of lesson.sections.entries()){
 const target=loadReferenceModule('content/training/day1-basic-competencies/modules/09-sustainable-practices','public').lessons.find(l=>l.manifest.lesson_key==='resources-monitor');
 for(const [i,s]of target.revision.read_sections.entries())for(const lang of ['fil','en'])assert.equal(s['body_'+lang],slides[i]['narration_'+lang],s.id+' paired '+lang);
 const changed=[];
-for(const[p,hash]of Object.entries(start.files_sha256)){
+for(const[p,hash]of Object.entries({...start.files_sha256,...incoming})){
  assert(fs.existsSync(p),'Protected file missing '+p);
  if(sha(fs.readFileSync(p))===hash)continue;
  if(p.startsWith(leaf)){changed.push(p);continue;}
- if(p==='remotion/src/Root.tsx'||p==='src/components/elearning/reference-lessons.tsx'){
+ if(shared.has(p)){
   const receipt=read('docs/lesson-193-proposal-receipt.json').changed_existing_files[p];
   assert.equal(sha(fs.readFileSync(p)),receipt.proposed_sha256);
   assert.equal(sha(Buffer.from(receipt.predecessor_utf8)),hash);changed.push(p);continue;
  }
  if(p==='content/training/day1-basic-competencies/narration.json'){
-  const prior=JSON.parse(execFileSync('git',['show',start.head+':'+p],{maxBuffer:32*1024*1024}));
+  const prior=JSON.parse(execFileSync('git',['show',integration.fetched_main+':'+p],{maxBuffer:32*1024*1024}));
   const current=read(p);
   for(const[k,v]of Object.entries(prior.lessons))if(k!=='resources-monitor')assert.deepEqual(current.lessons[k],v,'Sibling narration '+k);
   for(const[k,v]of Object.entries(prior.history??{}))if(k!=='resources-monitor')assert.deepEqual(current.history[k],v,'Sibling history '+k);
@@ -49,5 +56,5 @@ for(const[p,hash]of Object.entries(start.files_sha256)){
 const snapshotPath='docs/lesson-193-published-snapshot.json';
 const snapshot=fs.existsSync(snapshotPath)?read(snapshotPath):null;
 if(snapshot){assert.equal(snapshot.rows.length,3);assert.deepEqual(new Set(snapshot.rows.map(r=>r.lesson.lesson_key)),new Set(['resources-monitor','resources-audit','resources-safe-change']));assert.equal(snapshot.rows.find(r=>r.lesson.lesson_key==='resources-monitor').lesson.id,baseline.lesson_id);}
-const report={status:'passed',protected_files:Object.keys(start.files_sha256).length,changed_existing_files:changed,checks:'all bilingual prompts, options and correct indexes preserved',paired_bodies:'14 exact Read/Slides matches',manifest_coverage_rubric:'unchanged',old_media:'all protected bytes retained',published_baseline:snapshot?{status:'3 bounded published rows retrieved read-only; no authenticated playback or release claim',sha256:sha(fs.readFileSync(snapshotPath)),captured_at:snapshot.captured_at}:'not available; no production claim',owner_approval:false};
+const report={status:'passed',protected_files:Object.keys({...start.files_sha256,...incoming}).length,initial_protected_files:Object.keys(start.files_sha256).length,integrated_approved_main:integration.fetched_main,exact_incoming_files:Object.keys(incoming).length,changed_existing_files:changed,checks:'all bilingual prompts, options and correct indexes preserved',paired_bodies:'14 exact Read/Slides matches',manifest_coverage_rubric:'unchanged',old_media:'all protected bytes retained; approved incoming sibling bytes pinned',published_baseline:snapshot?{status:'3 bounded published rows retrieved read-only; no authenticated playback or release claim',sha256:sha(fs.readFileSync(snapshotPath)),captured_at:snapshot.captured_at}:'not available; no production claim',owner_approval:false};
 fs.writeFileSync('docs/lesson-193-preservation.json',JSON.stringify(report,null,2)+'\n');console.log(report);
