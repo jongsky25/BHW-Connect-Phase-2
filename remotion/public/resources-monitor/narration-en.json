@@ -1,0 +1,60 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm community trainer. Use one stable adult female Kore narrator including quotations. Preserve every negation, uncertainty and qualification. Read Charlaine as written. Complete every word, add nothing and do not translate.",
+  "durationSeconds": 78.42,
+  "beats": [
+    {
+      "zone": "trial",
+      "index": 0,
+      "text": "Fictional Charlaine proposes a trial: problem, change, owner, baseline, quality and review date. Permission is pending; she does not start.",
+      "start_ms": 0,
+      "end_ms": 10960
+    },
+    {
+      "zone": "compare",
+      "index": 1,
+      "text": "Per hundred printed pages: twenty wrong-version reprints before, five after; fifteen percentage points lower. The seventy-five percent relative reprint reduction proves neither cost savings nor cause.",
+      "start_ms": 11260,
+      "end_ms": 24580
+    },
+    {
+      "zone": "communicate",
+      "index": 2,
+      "text": "No internet: propose a controlled approved paper master. Verify the version and seek feedback; team agreement has not been established.",
+      "start_ms": 24880,
+      "end_ms": 35320
+    },
+    {
+      "zone": "workload",
+      "index": 3,
+      "text": "Five sessions before, ten now. Reprint and quality data are missing. Do not guess rates or savings.",
+      "start_ms": 35620,
+      "end_ms": 43740
+    },
+    {
+      "zone": "handover",
+      "index": 4,
+      "text": "Propose a version check, owner, replacement, stock-gap contact and review. Confirm unknown fields.",
+      "start_ms": 44040,
+      "end_ms": 52160
+    },
+    {
+      "zone": "practice",
+      "index": 5,
+      "text": "Dummy paperwork: feedback and retry. Peer or solo rehearsal is not trainer observation. Protect hand hygiene and timely service.",
+      "start_ms": 52460,
+      "end_ms": 62540
+    },
+    {
+      "zone": "check",
+      "index": 6,
+      "text": "Half the sessions were canceled, halving paper use: improvement is not established. Separate reprints from missing workload, quality and costs. Propose the master and handover, without claiming success or savings.",
+      "start_ms": 62840,
+      "end_ms": 78360
+    }
+  ],
+  "audio_sha256": "95605a17b21218fdfe060017231818a74a18ab7e7f6db799dfb13154fe88bc36"
+}

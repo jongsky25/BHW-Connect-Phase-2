@@ -1,0 +1,105 @@
+{
+  "status": "actual source/media checks recorded; exact frozen-head archive and browser/PDF byte bindings are independently gated by the downloadable-review workflow",
+  "unit": {
+    "passed": 1638,
+    "failed": 1,
+    "total": 1639,
+    "files_passed": 189,
+    "files_failed": 1,
+    "only_failure": "scripts/tests/reference-narration.test.mjs: committed narration is current for every converted subchapter",
+    "stale_tracks": [
+      "problem-prioritize/criteria/fil",
+      "problem-prioritize/criteria/en",
+      "problem-prioritize/worked-scores/fil",
+      "problem-prioritize/worked-scores/en",
+      "problem-prioritize/score-evidence/fil",
+      "problem-prioritize/score-evidence/en",
+      "problem-prioritize/tie-and-urgent-care/fil",
+      "problem-prioritize/tie-and-urgent-care/en",
+      "problem-prioritize/practice/fil",
+      "problem-prioritize/practice/en",
+      "problem-prioritize/check/fil",
+      "problem-prioritize/check/en"
+    ],
+    "global_assertion_preserved": true,
+    "ci_run_id": 38058216372,
+    "ci_job_id": 114231253779
+  },
+  "lint": {
+    "errors": 0,
+    "existing_warnings": 3
+  },
+  "typecheck": "passed",
+  "remotion_typecheck": "passed",
+  "e2e": {
+    "run_id": 38058216372,
+    "job_id": 114231253682,
+    "source_commit": "bf536cf0a744aacdaa2a2d465de945124f445a7d",
+    "passed": 80,
+    "failed": 0,
+    "duration": "2.5 minutes",
+    "scope": "normal disposable local-Supabase E2E after approved lessons 1.9.1/1.9.2 integration; no pilot E2E",
+    "run_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38058216372"
+  },
+  "content_browser": {
+    "cases": 84,
+    "screenshots": 80,
+    "overflow": 0,
+    "console_errors": 0,
+    "scope": "earlier content/check/resume run; superseded by complete current-media matrix"
+  },
+  "printables": {
+    "kits": 2,
+    "kit_pages_each": 5,
+    "one_page_aids": 2,
+    "A4": true,
+    "all_text_inside_margins": true
+  },
+  "production_playback": "not verified; loader password-change gate not mutated",
+  "pending": [],
+  "complete_media_browser": {
+    "cases": 96,
+    "screenshots": 88,
+    "overflow": 0,
+    "console_errors": 0,
+    "network_failures": 0,
+    "scope": "actual production components, all current exact media, offline auth/save fixtures; no authenticated production claim"
+  },
+  "read_narration_seconds": {
+    "fil": 666.907,
+    "en": 614.843
+  },
+  "browser_attempts": [
+    {
+      "functional_cases_completed": 96,
+      "screenshots": 88,
+      "failed_assertion": "zero console errors; 8 offline resource reports",
+      "repair": "embedded favicon and added request/error URL capture; complete 96-case rerun passed with zero console/network errors",
+      "original_diagnostic": "docs/lesson-193-browser-attempt-offline.json"
+    }
+  ],
+  "preservation": {
+    "protected_files": 6963,
+    "exact_incoming_files": 269,
+    "approved_main": "0e925326b1f9b2ab138f2a3d5b3267fff0a04621",
+    "status": "passed"
+  },
+  "earlier_e2e": {
+    "run_id": 38051282856,
+    "job_id": 114211037891,
+    "source_commit": "d490ae0aaa81fd0e8276b48106cdc300bd9e458f",
+    "passed": 80,
+    "failed": 0,
+    "scope": "normal disposable local-Supabase E2E; no pilot E2E"
+  },
+  "registry": {
+    "status": "passed",
+    "actual_compositions": 104,
+    "actual_renders": 104,
+    "failures": 0,
+    "all_runtime_metadata_match": true,
+    "registry_source_sha256": "059457ef2c0f31573ef90b18d7e631055ffded9df44e7bf1102cb17568d0c0ec",
+    "report_sha256": "85e98350f3d1854cadb9dbca8d0ed6a59c1800b9d07b31400becd90b86fa7e2a"
+  },
+  "archive_verification": "Use the external exact-head integrity receipt from the successful downloadable-review workflow; no archive approval is inferred from automated checks."
+}

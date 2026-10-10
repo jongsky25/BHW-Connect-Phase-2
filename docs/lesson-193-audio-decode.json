@@ -1,0 +1,3247 @@
+{
+  "prompt_revision": "charlaine-safety-demonstration-v1",
+  "date": "2026-10-10T12:33:36.483Z",
+  "source_commit": "d490ae0aaa81fd0e8276b48106cdc300bd9e458f",
+  "model": "gemini-3.8-flash",
+  "expected_full_recordings": 16,
+  "expected_focused_excerpts": 64,
+  "missing_story": false,
+  "decode_only": true,
+  "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "method": "Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.",
+  "records": [
+    {
+      "id": "read-check-fil",
+      "language": "fil",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/check.fil.7dc4370d6cc4.mp3",
+      "source_sha256": "dcb5875b357be05972a21120764fc42838decd7b9d4377bf1dc79fb684a7e85b",
+      "decoded_pcm_sha256": "62e4a1756452fdd951756d29b1ca7967b7a7a6ee321e698c4905f0e08838f1e9",
+      "full_audio_metrics": {
+        "samples": 1826900,
+        "seconds": 76.12083333333334,
+        "rms": 0.1314995958874344,
+        "peak": 0.999847412109375,
+        "quiet_sample_fraction": 0.1947993869396245
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Piliin ang susunod na hakbang",
+          "start_ms": 0,
+          "end_ms": 2800,
+          "samples": 67200,
+          "seconds": 2.8,
+          "rms": 0.10783188891433206,
+          "peak": 0.77899169921875,
+          "quiet_sample_fraction": 0.2290625
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sa hiwalay na kathang-isip na sitwasyon ni Charlaine, kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions.",
+          "start_ms": 3100,
+          "end_ms": 12380,
+          "samples": 222720,
+          "seconds": 9.28,
+          "rms": 0.11897731450437359,
+          "peak": 0.804168701171875,
+          "quiet_sample_fraction": 0.11403107040229885
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Ito lamang ang ibinigay na datos.",
+          "start_ms": 12680,
+          "end_ms": 15360,
+          "samples": 64320,
+          "seconds": 2.68,
+          "rms": 0.1494329635718633,
+          "peak": 0.825347900390625,
+          "quiet_sample_fraction": 0.2306747512437811
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Walang kumpirmadong bill, presyo, dahilan ng pagkansela o kalidad ng naibigay na serbisyo.",
+          "start_ms": 15660,
+          "end_ms": 23660,
+          "samples": 192000,
+          "seconds": 8,
+          "rms": 0.14089334242493373,
+          "peak": 0.989044189453125,
+          "quiet_sample_fraction": 0.23597395833333334
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+          "start_ms": 23960,
+          "end_ms": 29240,
+          "samples": 126720,
+          "seconds": 5.28,
+          "rms": 0.14091143066252945,
+          "peak": 0.98065185546875,
+          "quiet_sample_fraction": 0.18790246212121212
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Isaalang-alang ang denominator at serbisyong naibigay.",
+          "start_ms": 29540,
+          "end_ms": 34140,
+          "samples": 110400,
+          "seconds": 4.6,
+          "rms": 0.12258053222887794,
+          "peak": 0.81707763671875,
+          "quiet_sample_fraction": 0.17458333333333334
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Pagkatapos sumagot, basahin ang dahilan para sa bawat pagpipilian at ang itinamang wakas; ihambing ito sa ginawa sa rehearsal.",
+          "start_ms": 34440,
+          "end_ms": 44320,
+          "samples": 237120,
+          "seconds": 9.88,
+          "rms": 0.13620401026086815,
+          "peak": 0.895294189453125,
+          "quiet_sample_fraction": 0.17271002024291499
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Itinamang kathang-isip na wakas: hindi muna nag-claim si Charlaine ng tagumpay o savings. Inihiwalay niya ang 20/100 tungong 5/100 na reprint improvement sa kulang na workload, kalidad at gastos na datos. Iminungkahi niyang panatilihin ang kontroladong aprubadong paper master, ipasa ang routine at ipareview kung babaguhin o ihihinto ang trial. Hindi pa ito patunay ng matagumpay na implementation o certification.",
+          "start_ms": 44620,
+          "end_ms": 76060,
+          "samples": 754560,
+          "seconds": 31.44,
+          "rms": 0.1354088422561198,
+          "peak": 0.999847412109375,
+          "quiet_sample_fraction": 0.15777009117896523
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.1,
+          "end": 12.38,
+          "file": "read-check-fil-name.wav",
+          "excerpt_sha256": "559a25d2d6df0fe80b3f84f4b27215ffa952e00f1424eed4aa7ab133e54e2f15",
+          "decoded_sample_count": 222720,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.1,
+          "end": 12.38,
+          "file": "read-check-fil-body.wav",
+          "excerpt_sha256": "559a25d2d6df0fe80b3f84f4b27215ffa952e00f1424eed4aa7ab133e54e2f15",
+          "decoded_sample_count": 222720,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 44.62,
+          "end": 76.06,
+          "file": "read-check-fil-critical.wav",
+          "excerpt_sha256": "5d8e0b0ed9deb845f30ce99406e24b587142b3e07c84b4ca65e47baeadba44ca",
+          "decoded_sample_count": 754560,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 44.62,
+          "end": 76.12083333333334,
+          "file": "read-check-fil-ending.wav",
+          "excerpt_sha256": "2e94d63a43d4276567419b97520a3b1a17cf24d378cc2e04036b7a0558e04c5f",
+          "decoded_sample_count": 756020,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-communicate-fil",
+      "language": "fil",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/communicate.fil.6cab8198a713.mp3",
+      "source_sha256": "1687b41cedd30f1f1a6c7bcfc8b600e69a2607fa880201e53ec19492528e1a49",
+      "decoded_pcm_sha256": "5ab9fb9b7163f794acb8546c4cbdbbbeb95caae16ee792a96fb73fdc41284f4b",
+      "full_audio_metrics": {
+        "samples": 2300866,
+        "seconds": 95.86941666666667,
+        "rms": 0.14466019661049023,
+        "peak": 0.98492431640625,
+        "quiet_sample_fraction": 0.22626132942987554
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Ibahagi ang mungkahi sa kasama",
+          "start_ms": 0,
+          "end_ms": 2960,
+          "samples": 71040,
+          "seconds": 2.96,
+          "rms": 0.10542978610355709,
+          "peak": 0.78594970703125,
+          "quiet_sample_fraction": 0.19559403153153154
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sinasabi ni Charlaine, “May dalawang bersyon sa drawer at may inuulit na print.",
+          "start_ms": 3260,
+          "end_ms": 9220,
+          "samples": 143040,
+          "seconds": 5.96,
+          "rms": 0.13787032916987105,
+          "peak": 0.749359130859375,
+          "quiet_sample_fraction": 0.251461129753915
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Maaari ba nating suriin kung alin ang aprubado?”",
+          "start_ms": 9520,
+          "end_ms": 13320,
+          "samples": 91200,
+          "seconds": 3.8,
+          "rms": 0.1471776783536755,
+          "peak": 0.77117919921875,
+          "quiet_sample_fraction": 0.13910087719298245
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Inilalarawan niya ang napansin, hindi sinisisi ang tao o inaangking napatunayan na ang sanhi.",
+          "start_ms": 13620,
+          "end_ms": 21180,
+          "samples": 181440,
+          "seconds": 7.56,
+          "rms": 0.14136676652136773,
+          "peak": 0.874114990234375,
+          "quiet_sample_fraction": 0.15054012345679013
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ipakita ang mungkahi, mga iminungkahing tungkulin at petsa ng review.",
+          "start_ms": 21480,
+          "end_ms": 28160,
+          "samples": 160320,
+          "seconds": 6.68,
+          "rms": 0.1429924527638083,
+          "peak": 0.98492431640625,
+          "quiet_sample_fraction": 0.23975798403193613
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Tanungin: “Ano ang hadlang?",
+          "start_ms": 28460,
+          "end_ms": 31300,
+          "samples": 68160,
+          "seconds": 2.84,
+          "rms": 0.19172176598586138,
+          "peak": 0.892242431640625,
+          "quiet_sample_fraction": 0.31820715962441315
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Kaya ba ang routine?",
+          "start_ms": 31600,
+          "end_ms": 33280,
+          "samples": 40320,
+          "seconds": 1.68,
+          "rms": 0.17631031890523427,
+          "peak": 0.7825927734375,
+          "quiet_sample_fraction": 0.296453373015873
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Sino ang maaaring magpatunay ng bersyon?”",
+          "start_ms": 33580,
+          "end_ms": 37140,
+          "samples": 85440,
+          "seconds": 3.56,
+          "rms": 0.16459121763577653,
+          "peak": 0.95172119140625,
+          "quiet_sample_fraction": 0.17533941947565543
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Sa sitwasyon, walang internet ang kasamang magpi-print.",
+          "start_ms": 37440,
+          "end_ms": 42000,
+          "samples": 109440,
+          "seconds": 4.56,
+          "rms": 0.12642009791440617,
+          "peak": 0.748138427734375,
+          "quiet_sample_fraction": 0.22159173976608187
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Hindi niya kayang mag-download sa oras na iyon.",
+          "start_ms": 42300,
+          "end_ms": 45500,
+          "samples": 76800,
+          "seconds": 3.2,
+          "rms": 0.1452458996061372,
+          "peak": 0.902374267578125,
+          "quiet_sample_fraction": 0.13479166666666667
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Magmungkahi ng kontroladong papel na master mula sa aprubadong bersyon: may malinaw na version/date at nakatalagang tagapagpatunay.",
+          "start_ms": 45800,
+          "end_ms": 56120,
+          "samples": 247680,
+          "seconds": 10.32,
+          "rms": 0.15743351328923622,
+          "peak": 0.93841552734375,
+          "quiet_sample_fraction": 0.14176356589147288
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Ihiwalay ang lumang kopya sa magagamit na master ayon sa aprubadong routine.",
+          "start_ms": 56420,
+          "end_ms": 62980,
+          "samples": 157440,
+          "seconds": 6.56,
+          "rms": 0.1390347248838245,
+          "peak": 0.74346923828125,
+          "quiet_sample_fraction": 0.14115218495934959
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "Hingin ang puna ng kasama at tiyakin kung sino ang responsable at kapalit; huwag mag-imbento ng kasunduan.",
+          "start_ms": 63280,
+          "end_ms": 71680,
+          "samples": 201600,
+          "seconds": 8.4,
+          "rms": 0.13673165678479457,
+          "peak": 0.9393310546875,
+          "quiet_sample_fraction": 0.1715873015873016
+        },
+        {
+          "zone": "body",
+          "index": 12,
+          "text": "Kung hindi matiyak ang bersyon o pahintulot, huwag gamitin ang hindi aprubadong kopya.",
+          "start_ms": 71980,
+          "end_ms": 78140,
+          "samples": 147840,
+          "seconds": 6.16,
+          "rms": 0.15795343862318423,
+          "peak": 0.9739990234375,
+          "quiet_sample_fraction": 0.18921130952380952
+        },
+        {
+          "zone": "body",
+          "index": 13,
+          "text": "Ipaalam ang hadlang sa lokal na awtorisadong contact at humingi ng tamang materyal.",
+          "start_ms": 78440,
+          "end_ms": 84360,
+          "samples": 142080,
+          "seconds": 5.92,
+          "rms": 0.16398704509022677,
+          "peak": 0.921051025390625,
+          "quiet_sample_fraction": 0.17544341216216217
+        },
+        {
+          "zone": "body",
+          "index": 14,
+          "text": "Sagutin muna ang tanong bago makita ang paliwanag.",
+          "start_ms": 84660,
+          "end_ms": 88660,
+          "samples": 96000,
+          "seconds": 4,
+          "rms": 0.14636647369016575,
+          "peak": 0.75286865234375,
+          "quiet_sample_fraction": 0.19001041666666665
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Mas napapanatili ang pagbabago kapag naiintindihan at kayang gawin ng kasama.",
+          "start_ms": 88960,
+          "end_ms": 95800,
+          "samples": 164160,
+          "seconds": 6.84,
+          "rms": 0.1521720451351649,
+          "peak": 0.869384765625,
+          "quiet_sample_fraction": 0.17747928849902533
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.26,
+          "end": 9.22,
+          "file": "read-communicate-fil-name.wav",
+          "excerpt_sha256": "e06890aa52418e53a8e08f1284468c12c1147037d7630822b5218b8088702a38",
+          "decoded_sample_count": 143040,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.26,
+          "end": 9.22,
+          "file": "read-communicate-fil-body.wav",
+          "excerpt_sha256": "e06890aa52418e53a8e08f1284468c12c1147037d7630822b5218b8088702a38",
+          "decoded_sample_count": 143040,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 13.62,
+          "end": 28.16,
+          "file": "read-communicate-fil-critical.wav",
+          "excerpt_sha256": "ad31733a61ad86d3bfa0d1b2bd4cbc92063b7e10bbab6487c5c04848f2bf9e49",
+          "decoded_sample_count": 348960,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 78.44,
+          "end": 95.86941666666667,
+          "file": "read-communicate-fil-ending.wav",
+          "excerpt_sha256": "b121f2dc90d589c9c356ec3a89f2c0a2be633830f8c9b3d0f796ffd3dab59459",
+          "decoded_sample_count": 418306,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-compare-fil",
+      "language": "fil",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/compare.fil.a5b6e1f09f00.mp3",
+      "source_sha256": "510935433b5017381351849db853a29eaa7e8c23b1875ef6ef1f0c11d9dc9cbb",
+      "decoded_pcm_sha256": "90772278deadbe155944afabf9fe4bb33ff83e7c684bd8a1b48b76b290f33318",
+      "full_audio_metrics": {
+        "samples": 2312778,
+        "seconds": 96.36575,
+        "rms": 0.14051728619228174,
+        "peak": 0.9915771484375,
+        "quiet_sample_fraction": 0.1971888352448873
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Subukan ang simpleng paghahambing",
+          "start_ms": 0,
+          "end_ms": 2640,
+          "samples": 63360,
+          "seconds": 2.64,
+          "rms": 0.12976976016484645,
+          "peak": 0.8016357421875,
+          "quiet_sample_fraction": 0.22608901515151514
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Ginagamit ni Charlaine ang kathang-isip na bilang: 20 sa bawat 100 printed pages ang maling-bersyong reprints noon; 5 sa bawat 100 ngayon.",
+          "start_ms": 2940,
+          "end_ms": 15700,
+          "samples": 306240,
+          "seconds": 12.76,
+          "rms": 0.13075905672421007,
+          "peak": 0.8858642578125,
+          "quiet_sample_fraction": 0.15777494775339604
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Magkatulad ang denominator na 100 pahina.",
+          "start_ms": 16000,
+          "end_ms": 19760,
+          "samples": 90240,
+          "seconds": 3.76,
+          "rms": 0.1811352876758136,
+          "peak": 0.9915771484375,
+          "quiet_sample_fraction": 0.13377659574468084
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ang rates ay 20% at 5%; ang pagitan ay 15 bawat 100 pahina o 15 percentage points.",
+          "start_ms": 20060,
+          "end_ms": 30300,
+          "samples": 245760,
+          "seconds": 10.24,
+          "rms": 0.14880514075427118,
+          "peak": 0.865509033203125,
+          "quiet_sample_fraction": 0.17703043619791667
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ito ang nakikita sa halimbawang tally, hindi ulat mula sa tunay na BHS.",
+          "start_ms": 30600,
+          "end_ms": 36840,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.13791692205269207,
+          "peak": 0.822998046875,
+          "quiet_sample_fraction": 0.1554286858974359
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ang relative na bawas sa reprints ay (20 − 5) ÷ 20 = 75%.",
+          "start_ms": 37140,
+          "end_ms": 45780,
+          "samples": 207360,
+          "seconds": 8.64,
+          "rms": 0.1479337253618275,
+          "peak": 0.93426513671875,
+          "quiet_sample_fraction": 0.16832561728395062
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Hindi ito 75% na bawas sa kabuuang gastos.",
+          "start_ms": 46080,
+          "end_ms": 50840,
+          "samples": 114240,
+          "seconds": 4.76,
+          "rms": 0.14072923352931158,
+          "peak": 0.91583251953125,
+          "quiet_sample_fraction": 0.10935749299719888
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Hindi ibinigay ang presyo, gastos sa ibang resources o sanhi ng pagbabago.",
+          "start_ms": 51140,
+          "end_ms": 57820,
+          "samples": 160320,
+          "seconds": 6.68,
+          "rms": 0.11946919433418089,
+          "peak": 0.697418212890625,
+          "quiet_sample_fraction": 0.22976546906187625
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Hindi rin pa kumpirmado kung pareho ang uri at dami ng sessions, kung lahat ay nakatanggap ng tamang handout, at kung may delay o reklamo.",
+          "start_ms": 58120,
+          "end_ms": 69080,
+          "samples": 263040,
+          "seconds": 10.96,
+          "rms": 0.1429834313262791,
+          "peak": 0.87091064453125,
+          "quiet_sample_fraction": 0.14512621654501218
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Itala ang mga ito bilang hindi pa alam.",
+          "start_ms": 69380,
+          "end_ms": 72740,
+          "samples": 80640,
+          "seconds": 3.36,
+          "rms": 0.15048859520148913,
+          "peak": 0.877197265625,
+          "quiet_sample_fraction": 0.1650297619047619
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Bago pumili, gamitin ang parehong 100-pahinang denominator at itanong kung maihahambing ang trabaho at kalidad.",
+          "start_ms": 73040,
+          "end_ms": 82360,
+          "samples": 223680,
+          "seconds": 9.32,
+          "rms": 0.14553255759853007,
+          "peak": 0.835968017578125,
+          "quiet_sample_fraction": 0.13302038626609441
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Hindi kailangan ang pangalan ng pasyente.",
+          "start_ms": 82660,
+          "end_ms": 86020,
+          "samples": 80640,
+          "seconds": 3.36,
+          "rms": 0.12439227628045665,
+          "peak": 0.66668701171875,
+          "quiet_sample_fraction": 0.17168898809523808
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "Sagutin ang tanong bago buksan ang paliwanag at buod.",
+          "start_ms": 86320,
+          "end_ms": 90480,
+          "samples": 99840,
+          "seconds": 4.16,
+          "rms": 0.168484625543774,
+          "peak": 0.872589111328125,
+          "quiet_sample_fraction": 0.15846354166666668
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ihambing ang resources sa magkatulad na gawain at tingnan din ang kalidad.",
+          "start_ms": 90780,
+          "end_ms": 96300,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.15047654274188224,
+          "peak": 0.83074951171875,
+          "quiet_sample_fraction": 0.18303894927536232
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 2.94,
+          "end": 15.7,
+          "file": "read-compare-fil-name.wav",
+          "excerpt_sha256": "dea7c65b17e0236c7a3f627a99c81b55fc176504e1bdb01d3c66a6903a56fc4d",
+          "decoded_sample_count": 306240,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.94,
+          "end": 15.7,
+          "file": "read-compare-fil-body.wav",
+          "excerpt_sha256": "dea7c65b17e0236c7a3f627a99c81b55fc176504e1bdb01d3c66a6903a56fc4d",
+          "decoded_sample_count": 306240,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 30.6,
+          "end": 45.78,
+          "file": "read-compare-fil-critical.wav",
+          "excerpt_sha256": "2a9b896eb0cd2c0f8aba398ad28e31b7c2891913e5edbe9cce4466b50105b623",
+          "decoded_sample_count": 364320,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 73.04,
+          "end": 96.36575,
+          "file": "read-compare-fil-ending.wav",
+          "excerpt_sha256": "54241dc59054d7d014d725b5bc9023501a2bbf625589371b6348144356e8a0e2",
+          "decoded_sample_count": 559818,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-handover-fil",
+      "language": "fil",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/handover.fil.330033c97211.mp3",
+      "source_sha256": "a824d122c9e63da2570e2dbe7f3c8cae060627055d2667c1262cf33473aa2e54",
+      "decoded_pcm_sha256": "2b074447997090f28aa776ffb91206f2e8dc07293a824999495345898322d32d",
+      "full_audio_metrics": {
+        "samples": 2123442,
+        "seconds": 88.47675,
+        "rms": 0.14365716883223384,
+        "peak": 0.96649169921875,
+        "quiet_sample_fraction": 0.21297544270104857
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Panatilihin kahit magpalit ng tao",
+          "start_ms": 0,
+          "end_ms": 2920,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.14965670904398543,
+          "peak": 0.76812744140625,
+          "quiet_sample_fraction": 0.16842180365296805
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Kapag wala si Charlaine, kailangan pa ring magamit ng kapalit ang routine.",
+          "start_ms": 3220,
+          "end_ms": 8420,
+          "samples": 124800,
+          "seconds": 5.2,
+          "rms": 0.1284790896700266,
+          "peak": 0.78411865234375,
+          "quiet_sample_fraction": 0.19163461538461538
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Huwag umasa sa alaala niya.",
+          "start_ms": 8720,
+          "end_ms": 11160,
+          "samples": 58560,
+          "seconds": 2.44,
+          "rms": 0.1667232746809034,
+          "peak": 0.953857421875,
+          "quiet_sample_fraction": 0.1979337431693989
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ihanda ang maikling handover: nasaan ang kontroladong master, paano titingnan ang bersyon, sino ang owner at kapalit, paano itatala ang reprints at sessions, kanino iuulat ang stock gap, at kailan rerepasuhin ang kalidad.",
+          "start_ms": 11460,
+          "end_ms": 30460,
+          "samples": 456000,
+          "seconds": 19,
+          "rms": 0.13039019319616046,
+          "peak": 0.8990478515625,
+          "quiet_sample_fraction": 0.2108311403508772
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ang mga pangalan ng awtorisadong contact ay kukumpirmahin sa lugar; walang inimbentong numero.",
+          "start_ms": 30760,
+          "end_ms": 37800,
+          "samples": 168960,
+          "seconds": 7.04,
+          "rms": 0.16703527715275762,
+          "peak": 0.829833984375,
+          "quiet_sample_fraction": 0.17720170454545456
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ipagamit sa kapalit ang dummy kit at ipasabi ang susunod na hakbang kapag luma ang master o kulang ang papel.",
+          "start_ms": 38100,
+          "end_ms": 47060,
+          "samples": 215040,
+          "seconds": 8.96,
+          "rms": 0.12916549218357629,
+          "peak": 0.877960205078125,
+          "quiet_sample_fraction": 0.17741350446428572
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Kung hindi alam ang bersyon o contact, markahan ang puwang at magtanong bago magsimula.",
+          "start_ms": 47360,
+          "end_ms": 53800,
+          "samples": 154560,
+          "seconds": 6.44,
+          "rms": 0.13950059108168844,
+          "peak": 0.869293212890625,
+          "quiet_sample_fraction": 0.18185817805383023
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Ang pag-orient sa kapalit ay hindi patunay na natanggap o nagtagumpay na ang trial.",
+          "start_ms": 54100,
+          "end_ms": 60340,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.1580246519694653,
+          "peak": 0.9334716796875,
+          "quiet_sample_fraction": 0.16484375
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Sa review, alisin ang hakbang na walang silbi habang pinananatili ang version check, tamang materyal, privacy at serbisyo.",
+          "start_ms": 60640,
+          "end_ms": 70440,
+          "samples": 235200,
+          "seconds": 9.8,
+          "rms": 0.15654153059023096,
+          "peak": 0.96649169921875,
+          "quiet_sample_fraction": 0.18167517006802722
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Itala ang dahilan ng pagbabago at ang susunod na review.",
+          "start_ms": 70740,
+          "end_ms": 75060,
+          "samples": 103680,
+          "seconds": 4.32,
+          "rms": 0.14218280808045144,
+          "peak": 0.840484619140625,
+          "quiet_sample_fraction": 0.1759837962962963
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Kung bumaba ang kalidad, baguhin o ihinto ang trial sa awtorisadong proseso.",
+          "start_ms": 75360,
+          "end_ms": 81640,
+          "samples": 150720,
+          "seconds": 6.28,
+          "rms": 0.17186007232265482,
+          "peak": 0.872283935546875,
+          "quiet_sample_fraction": 0.1666998407643312
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang routine na naipapasa sa kasama ay mas tumatagal kaysa personal na diskarte lamang.",
+          "start_ms": 81940,
+          "end_ms": 88420,
+          "samples": 155520,
+          "seconds": 6.48,
+          "rms": 0.14897404565647315,
+          "peak": 0.779449462890625,
+          "quiet_sample_fraction": 0.13686985596707818
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.22,
+          "end": 8.42,
+          "file": "read-handover-fil-name.wav",
+          "excerpt_sha256": "8ea660b4952a9dc32fee73f522f7aac0f3510314a55b1bd633d07b01be1f1d1c",
+          "decoded_sample_count": 124800,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.22,
+          "end": 8.42,
+          "file": "read-handover-fil-body.wav",
+          "excerpt_sha256": "8ea660b4952a9dc32fee73f522f7aac0f3510314a55b1bd633d07b01be1f1d1c",
+          "decoded_sample_count": 124800,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 8.72,
+          "end": 30.46,
+          "file": "read-handover-fil-critical.wav",
+          "excerpt_sha256": "eb5c7e5a01093fa6e4a4b0908c2e3988033561cc9b47b9caa7bbf09dc033131f",
+          "decoded_sample_count": 521760,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 70.74,
+          "end": 88.47675,
+          "file": "read-handover-fil-ending.wav",
+          "excerpt_sha256": "c9de140f88067a362e70feeb0a85a2d5e9c0691ad282ec063c2cb3dcbfe74f5b",
+          "decoded_sample_count": 425682,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-practice-fil",
+      "language": "fil",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/practice.fil.0adbbf8b2812.mp3",
+      "source_sha256": "4c9b0c072a22650ce19497be055ec903d093cc3daefa43cadc7da911d91df2ea",
+      "decoded_pcm_sha256": "fc2096cd63c2d638f3a470051c5dd7ecdc421cf8ef55f4ddf95af125daf1bd13",
+      "full_audio_metrics": {
+        "samples": 2492709,
+        "seconds": 103.862875,
+        "rms": 0.1410114382859828,
+        "peak": 1,
+        "quiet_sample_fraction": 0.23799649297210385
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Subukan, saka ulitin",
+          "start_ms": 0,
+          "end_ms": 2640,
+          "samples": 63360,
+          "seconds": 2.64,
+          "rms": 0.12925324373767247,
+          "peak": 0.76507568359375,
+          "quiet_sample_fraction": 0.26560921717171715
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Ginagamit ni Charlaine at ng mga learner ang fictional trial card at dummy handout.",
+          "start_ms": 2940,
+          "end_ms": 9340,
+          "samples": 153600,
+          "seconds": 6.4,
+          "rms": 0.15892928234175238,
+          "peak": 1,
+          "quiet_sample_fraction": 0.13763020833333334
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Punan ang problema, pagbabago, owner/kapalit, baseline, kalidad, pahintulot at review date.",
+          "start_ms": 9640,
+          "end_ms": 19560,
+          "samples": 238080,
+          "seconds": 9.92,
+          "rms": 0.1361350987295471,
+          "peak": 0.995697021484375,
+          "quiet_sample_fraction": 0.31890540994623656
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Hindi pa aprubado ang trial; markahan ang pahintulot na pending.",
+          "start_ms": 19860,
+          "end_ms": 24820,
+          "samples": 119040,
+          "seconds": 4.96,
+          "rms": 0.13006013181669873,
+          "peak": 0.71307373046875,
+          "quiet_sample_fraction": 0.1926915322580645
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Gamitin ang 20/100 at 5/100 para sa rates, 15-percentage-point na pagitan at 75% relative na bawas sa reprints.",
+          "start_ms": 25120,
+          "end_ms": 36240,
+          "samples": 266880,
+          "seconds": 11.12,
+          "rms": 0.1415722651645545,
+          "peak": 0.94110107421875,
+          "quiet_sample_fraction": 0.14200014988009593
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Huwag tawaging cost savings.",
+          "start_ms": 36540,
+          "end_ms": 39300,
+          "samples": 66240,
+          "seconds": 2.76,
+          "rms": 0.1462054938353271,
+          "peak": 0.9034423828125,
+          "quiet_sample_fraction": 0.2302385265700483
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Sa triad, magpalitan bilang BHW, kasamahang walang internet at observer.",
+          "start_ms": 39600,
+          "end_ms": 46760,
+          "samples": 171840,
+          "seconds": 7.16,
+          "rms": 0.13785264338349804,
+          "peak": 0.961456298828125,
+          "quiet_sample_fraction": 0.18507914338919926
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Ipakita ang kontroladong master, itanong ang hadlang at ipaliwanag ang handover.",
+          "start_ms": 47060,
+          "end_ms": 54140,
+          "samples": 169920,
+          "seconds": 7.08,
+          "rms": 0.14904314760507392,
+          "peak": 0.943359375,
+          "quiet_sample_fraction": 0.2570915725047081
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Ipasabi sa kapalit ang version check, stock-gap reporting at review.",
+          "start_ms": 54440,
+          "end_ms": 60480,
+          "samples": 144960,
+          "seconds": 6.04,
+          "rms": 0.14475297956595196,
+          "peak": 0.998260498046875,
+          "quiet_sample_fraction": 0.26027869757174393
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Observer: ibigay ang isang tiyak na puna; BHW: ulitin ang hakbang na kailangang ayusin.",
+          "start_ms": 60780,
+          "end_ms": 69060,
+          "samples": 198720,
+          "seconds": 8.28,
+          "rms": 0.13319194379410318,
+          "peak": 0.8660888671875,
+          "quiet_sample_fraction": 0.2579710144927536
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Itala kung nagawa, may prompt o hindi pa.",
+          "start_ms": 69360,
+          "end_ms": 73720,
+          "samples": 104640,
+          "seconds": 4.36,
+          "rms": 0.17069677095348462,
+          "peak": 0.954498291015625,
+          "quiet_sample_fraction": 0.28996559633027524
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Kung mag-isa, magsulat o magsabi ng trial at handover gamit ang parehong fictional cards.",
+          "start_ms": 74020,
+          "end_ms": 82060,
+          "samples": 192960,
+          "seconds": 8.04,
+          "rms": 0.16103977513084783,
+          "peak": 0.867889404296875,
+          "quiet_sample_fraction": 0.15287106135986733
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "Maaaring may reading support.",
+          "start_ms": 82360,
+          "end_ms": 85200,
+          "samples": 68160,
+          "seconds": 2.84,
+          "rms": 0.12882512506901103,
+          "peak": 0.806243896484375,
+          "quiet_sample_fraction": 0.24819542253521126
+        },
+        {
+          "zone": "body",
+          "index": 12,
+          "text": "Ang solo o peer rehearsal ay pagsasanay; hindi nito pinapalitan ang aktuwal na trainer observation at hindi ito awtomatikong pass.",
+          "start_ms": 85500,
+          "end_ms": 96140,
+          "samples": 255360,
+          "seconds": 10.64,
+          "rms": 0.13138362194882897,
+          "peak": 0.792388916015625,
+          "quiet_sample_fraction": 0.16124295112781956
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
+          "start_ms": 96440,
+          "end_ms": 103800,
+          "samples": 176640,
+          "seconds": 7.36,
+          "rms": 0.1549569731533875,
+          "peak": 0.861785888671875,
+          "quiet_sample_fraction": 0.10908061594202899
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 2.94,
+          "end": 9.34,
+          "file": "read-practice-fil-name.wav",
+          "excerpt_sha256": "eb92036a9b888ed77c8ca17f1c459ad7edb0ebf802af7f3be69dc5c1d20c7ded",
+          "decoded_sample_count": 153600,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.94,
+          "end": 9.34,
+          "file": "read-practice-fil-body.wav",
+          "excerpt_sha256": "eb92036a9b888ed77c8ca17f1c459ad7edb0ebf802af7f3be69dc5c1d20c7ded",
+          "decoded_sample_count": 153600,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 19.86,
+          "end": 36.24,
+          "file": "read-practice-fil-critical.wav",
+          "excerpt_sha256": "f67da16e92ef861b8142b9acd757db21d524fe5d8f2ab79fc3e06c6263e12209",
+          "decoded_sample_count": 393120,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 85.5,
+          "end": 103.862875,
+          "file": "read-practice-fil-ending.wav",
+          "excerpt_sha256": "58617d91f51375d1e3a338655bd639105aab9d776eda1a7eeaa7de6a9f9b683f",
+          "decoded_sample_count": 440709,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-trial-fil",
+      "language": "fil",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/trial.fil.fb50e8d5cca9.mp3",
+      "source_sha256": "a4c4c55b50c5a17c858ff0525051c591758c60834281b80dcac962f11f0ea223",
+      "decoded_pcm_sha256": "d07c8a4ffd32724ab2abf6ab9aa235560e97fbcb9a8de5d7bd5dfbcd077c4e33",
+      "full_audio_metrics": {
+        "samples": 2493963,
+        "seconds": 103.915125,
+        "rms": 0.14693579594329859,
+        "peak": 0.9609375,
+        "quiet_sample_fraction": 0.22233930495360196
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Isang pagbabago, may may-ari at sukatan",
+          "start_ms": 0,
+          "end_ms": 4120,
+          "samples": 98880,
+          "seconds": 4.12,
+          "rms": 0.12400636976948615,
+          "peak": 0.8466796875,
+          "quiet_sample_fraction": 0.2318871359223301
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Si Charlaine ay isang kathang-isip na BHW.",
+          "start_ms": 4420,
+          "end_ms": 8580,
+          "samples": 99840,
+          "seconds": 4.16,
+          "rms": 0.12870918088295286,
+          "peak": 0.707427978515625,
+          "quiet_sample_fraction": 0.16272035256410255
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Naghahanda siya ng mungkahi para bawasan ang printout na inuulit dahil maling bersyon.",
+          "start_ms": 8880,
+          "end_ms": 16120,
+          "samples": 173760,
+          "seconds": 7.24,
+          "rms": 0.16624769187402813,
+          "peak": 0.88775634765625,
+          "quiet_sample_fraction": 0.17870626151012892
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Panukala pa lamang ito: hindi pa kumpirmado ang pahintulot o ang pagtanggap ng team.",
+          "start_ms": 16420,
+          "end_ms": 22900,
+          "samples": 155520,
+          "seconds": 6.48,
+          "rms": 0.15119105178053038,
+          "peak": 0.889404296875,
+          "quiet_sample_fraction": 0.21010802469135803
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Walang tunay na patient record na gagamitin.",
+          "start_ms": 23200,
+          "end_ms": 26360,
+          "samples": 75840,
+          "seconds": 3.16,
+          "rms": 0.11797073527679085,
+          "peak": 0.785736083984375,
+          "quiet_sample_fraction": 0.13063027426160337
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sa trial card, isulat ang problema, pagbabago, taong responsable at kapalit, baseline, sukatan ng kalidad, pahintulot at petsa ng review.",
+          "start_ms": 26660,
+          "end_ms": 38500,
+          "samples": 284160,
+          "seconds": 11.84,
+          "rms": 0.12416442748657615,
+          "peak": 0.911956787109375,
+          "quiet_sample_fraction": 0.24177576013513513
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Mungkahi niya: tingnan muna ang aprubadong handout bago bawat print run.",
+          "start_ms": 38800,
+          "end_ms": 44640,
+          "samples": 140160,
+          "seconds": 5.84,
+          "rms": 0.16069335887698588,
+          "peak": 0.9200439453125,
+          "quiet_sample_fraction": 0.18199200913242009
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Iminumungkahi niyang siya ang maghanda ng checklist at ang midwife ang magpatunay ng bersyon; itanong muna kung kaya at pinapayagan ang mga tungkuling ito.",
+          "start_ms": 44940,
+          "end_ms": 55660,
+          "samples": 257280,
+          "seconds": 10.72,
+          "rms": 0.17920730807902935,
+          "peak": 0.9609375,
+          "quiet_sample_fraction": 0.12639536691542289
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Iminumungkahing review: makalipas ang dalawang linggo mula sa aprubadong pagsisimula.",
+          "start_ms": 55960,
+          "end_ms": 62480,
+          "samples": 156480,
+          "seconds": 6.52,
+          "rms": 0.19031351029247515,
+          "peak": 0.944183349609375,
+          "quiet_sample_fraction": 0.18371037832310838
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Habang wala pang pahintulot, markahan itong pending at huwag simulan.",
+          "start_ms": 62780,
+          "end_ms": 68300,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.12566187213616184,
+          "peak": 0.760833740234375,
+          "quiet_sample_fraction": 0.20523097826086956
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Bilangin ang maling-bersyong reprints, lahat ng printed pages at naibigay na sessions.",
+          "start_ms": 68600,
+          "end_ms": 75480,
+          "samples": 165120,
+          "seconds": 6.88,
+          "rms": 0.12475313815539013,
+          "peak": 0.84820556640625,
+          "quiet_sample_fraction": 0.1767562984496124
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Tingnan din kung tama at nababasa ang handout at kung may naantalang serbisyo.",
+          "start_ms": 75780,
+          "end_ms": 81940,
+          "samples": 147840,
+          "seconds": 6.16,
+          "rms": 0.1484319774856378,
+          "peak": 0.9285888671875,
+          "quiet_sample_fraction": 0.2153814935064935
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "Itakda ang review bago magsimula: ipagpatuloy, baguhin o ihinto batay sa datos at kalidad.",
+          "start_ms": 82240,
+          "end_ms": 90880,
+          "samples": 207360,
+          "seconds": 8.64,
+          "rms": 0.1252836773716154,
+          "peak": 0.793670654296875,
+          "quiet_sample_fraction": 0.21231674382716048
+        },
+        {
+          "zone": "body",
+          "index": 12,
+          "text": "Hindi garantiya ng matagumpay na trial ang kumpletong card.",
+          "start_ms": 91180,
+          "end_ms": 95900,
+          "samples": 113280,
+          "seconds": 4.72,
+          "rms": 0.1777769077147425,
+          "peak": 0.919921875,
+          "quiet_sample_fraction": 0.15254237288135594
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang sustainable na gawi ay may responsable, sinusukat na resulta at regular na review.",
+          "start_ms": 96200,
+          "end_ms": 103840,
+          "samples": 183360,
+          "seconds": 7.64,
+          "rms": 0.15793070032883127,
+          "peak": 0.846466064453125,
+          "quiet_sample_fraction": 0.1869219022687609
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 4.42,
+          "end": 8.58,
+          "file": "read-trial-fil-name.wav",
+          "excerpt_sha256": "d2a207e843f3b80f47997f225a4abbcf61215e9a53e7cf394e1c98b5bbe2e3a0",
+          "decoded_sample_count": 99840,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 4.42,
+          "end": 8.58,
+          "file": "read-trial-fil-body.wav",
+          "excerpt_sha256": "d2a207e843f3b80f47997f225a4abbcf61215e9a53e7cf394e1c98b5bbe2e3a0",
+          "decoded_sample_count": 99840,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 16.42,
+          "end": 26.36,
+          "file": "read-trial-fil-critical.wav",
+          "excerpt_sha256": "1d176c022b0ab130788108459e4428ee5313afdec1043db3d39c341bdeb1c8ba",
+          "decoded_sample_count": 238560,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 82.24,
+          "end": 103.915125,
+          "file": "read-trial-fil-ending.wav",
+          "excerpt_sha256": "9ab1d85cbceaf6f0e100580543020a711a00932931c8a850c5c5382ee6e1d992",
+          "decoded_sample_count": 520203,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-workload-fil",
+      "language": "fil",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/workload.fil.ca896b86868f.mp3",
+      "source_sha256": "a6a6f4a4172feb911fc4e881073bb35be65a19a3e5a9226a03204d3545eb98d1",
+      "decoded_pcm_sha256": "fb4ab6e4a1248999f0098be3dd08249702797d456a2b37e6a5b311c15588d4d8",
+      "full_audio_metrics": {
+        "samples": 2455093,
+        "seconds": 102.29554166666667,
+        "rms": 0.13922205392517412,
+        "peak": 0.999969482421875,
+        "quiet_sample_fraction": 0.19473233804177684
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Kapag iba-iba ang workload",
+          "start_ms": 0,
+          "end_ms": 2800,
+          "samples": 67200,
+          "seconds": 2.8,
+          "rms": 0.12619054029416726,
+          "peak": 0.8262939453125,
+          "quiet_sample_fraction": 0.3108482142857143
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sinusuri ni Charlaine ang workload: limang teaching sessions ang naibigay sa isang linggo at sampu sa susunod.",
+          "start_ms": 3100,
+          "end_ms": 11340,
+          "samples": 197760,
+          "seconds": 8.24,
+          "rms": 0.14821674235383406,
+          "peak": 0.85711669921875,
+          "quiet_sample_fraction": 0.13514360841423947
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Maaaring tumaas ang kabuuang papel dahil dumoble ang trabaho.",
+          "start_ms": 11640,
+          "end_ms": 16200,
+          "samples": 109440,
+          "seconds": 4.56,
+          "rms": 0.14086384073291636,
+          "peak": 0.76483154296875,
+          "quiet_sample_fraction": 0.14353983918128654
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Hindi sapat ang dalawang session count para kalkulahin ang reprint rate: kailangan din ang bilang ng reprints at pahina sa bawat linggo.",
+          "start_ms": 16500,
+          "end_ms": 25500,
+          "samples": 216000,
+          "seconds": 9,
+          "rms": 0.13447951574113765,
+          "peak": 0.786407470703125,
+          "quiet_sample_fraction": 0.12335648148148148
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Kung hindi ibinigay, isulat na hindi pa alam; huwag hulaan o ihalo ang hiwalay na 20/100 at 5/100 na halimbawa.",
+          "start_ms": 25800,
+          "end_ms": 39080,
+          "samples": 318720,
+          "seconds": 13.28,
+          "rms": 0.14930473362263744,
+          "peak": 0.954559326171875,
+          "quiet_sample_fraction": 0.161543047188755
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Para sa parehong uri ng sessions, hatiin ang reprints sa sessions na naibigay, o gamitin ang reprints bawat 100 printed pages.",
+          "start_ms": 39380,
+          "end_ms": 50780,
+          "samples": 273600,
+          "seconds": 11.4,
+          "rms": 0.14368795759425207,
+          "peak": 0.8338623046875,
+          "quiet_sample_fraction": 0.13365497076023392
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Ikumpara rin ang tamang bersyon, nababasang materyal, reklamo, delay at naibigay na serbisyo.",
+          "start_ms": 51080,
+          "end_ms": 60280,
+          "samples": 220800,
+          "seconds": 9.2,
+          "rms": 0.1469039263559591,
+          "peak": 0.873016357421875,
+          "quiet_sample_fraction": 0.2647373188405797
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Maaaring bumaba ang raw total dahil may nakanselang serbisyo; hindi ito patunay ng mas mahusay na proseso.",
+          "start_ms": 60580,
+          "end_ms": 68180,
+          "samples": 182400,
+          "seconds": 7.6,
+          "rms": 0.1281329869630094,
+          "peak": 0.790191650390625,
+          "quiet_sample_fraction": 0.10868969298245613
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Panatilihin ang tubig para sa paghuhugas ng kamay, clinical single-use rules, cold-chain at critical systems, kinakailangang bentilasyon, accessible na pagtuturo at napapanahong o agarang serbisyo.",
+          "start_ms": 68480,
+          "end_ms": 84760,
+          "samples": 390720,
+          "seconds": 16.28,
+          "rms": 0.13777098707700614,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.22316748566748568
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Fictional na papel at dummy teaching kit lamang ang pagsasanay; walang utility repair, aktuwal na pagpatay ng kagamitan, paghawak ng gamot o cleaning experiment.",
+          "start_ms": 85060,
+          "end_ms": 96660,
+          "samples": 278400,
+          "seconds": 11.6,
+          "rms": 0.14041687961593752,
+          "peak": 0.897918701171875,
+          "quiet_sample_fraction": 0.15995689655172413
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang patas na paghahambing ay isinasaalang-alang ang dami ng trabahong ginawa.",
+          "start_ms": 96960,
+          "end_ms": 102240,
+          "samples": 126720,
+          "seconds": 5.28,
+          "rms": 0.14530062768933694,
+          "peak": 0.895751953125,
+          "quiet_sample_fraction": 0.1342645202020202
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.1,
+          "end": 11.34,
+          "file": "read-workload-fil-name.wav",
+          "excerpt_sha256": "72a09cf25db007d677d75b100f5dc97e626ea1540b0a7763cca802695a7ad9dd",
+          "decoded_sample_count": 197760,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.1,
+          "end": 11.34,
+          "file": "read-workload-fil-body.wav",
+          "excerpt_sha256": "72a09cf25db007d677d75b100f5dc97e626ea1540b0a7763cca802695a7ad9dd",
+          "decoded_sample_count": 197760,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 16.5,
+          "end": 39.08,
+          "file": "read-workload-fil-critical.wav",
+          "excerpt_sha256": "f9960a42a24fa44976cf04553d4c6622e2af39aa6b35b43d8cfb7959a60996d5",
+          "decoded_sample_count": 541920,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 85.06,
+          "end": 102.29554166666667,
+          "file": "read-workload-fil-ending.wav",
+          "excerpt_sha256": "f44aef369443c43d3cd60cb4fa812cd28fe62c16155d24d8c7e7c8e09711d386",
+          "decoded_sample_count": 413653,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-fil",
+      "language": "fil",
+      "source_path": "/training/bhw-1-9/resources-monitor-gemini-fil-c7a336043359.mp4",
+      "source_sha256": "c7a336043359245a1d4c27096690eb75aaca155e01b6e8e68181e5a003077bd7",
+      "decoded_pcm_sha256": "5d2321531ad0eeaf80e7e1bb015ca08aa690c9b24da60f14221a68da2c3c5222",
+      "full_audio_metrics": {
+        "samples": 2020352,
+        "seconds": 84.18133333333333,
+        "rms": 0.09470978490460591,
+        "peak": 0.67547607421875,
+        "quiet_sample_fraction": 0.23902765458692346
+      },
+      "zones": [
+        {
+          "zone": "trial",
+          "index": 0,
+          "text": "Kathang-isip si Charlaine. Panukalang trial: problema, pagbabago, owner, baseline, kalidad at review date. Pending ang pahintulot; hindi muna sisimulan.",
+          "start_ms": 0,
+          "end_ms": 11440,
+          "samples": 274560,
+          "seconds": 11.44,
+          "rms": 0.08994774040230034,
+          "peak": 0.626251220703125,
+          "quiet_sample_fraction": 0.22792832167832167
+        },
+        {
+          "zone": "compare",
+          "index": 1,
+          "text": "Reprints sa bawat isang daang pahina: dalawampu noon, lima ngayon. Bawas na 15 percentage points. Ang 75% relative reprint reduction ay hindi cost savings o patunay ng sanhi.",
+          "start_ms": 11740,
+          "end_ms": 28340,
+          "samples": 398400,
+          "seconds": 16.6,
+          "rms": 0.09976875471085092,
+          "peak": 0.628326416015625,
+          "quiet_sample_fraction": 0.24441767068273093
+        },
+        {
+          "zone": "communicate",
+          "index": 2,
+          "text": "Walang internet ang kasama. Ipanukala ang kontroladong aprubadong paper master. Patunayan ang bersyon at hingin ang puna; walang kasunduan pang inaangkin.",
+          "start_ms": 28640,
+          "end_ms": 39640,
+          "samples": 264000,
+          "seconds": 11,
+          "rms": 0.09742064512781459,
+          "peak": 0.654998779296875,
+          "quiet_sample_fraction": 0.20386363636363636
+        },
+        {
+          "zone": "workload",
+          "index": 3,
+          "text": "Lima noon, sampung sessions ngayon. Reprints at kalidad hindi pa alam. Huwag hulaan ang rate o savings.",
+          "start_ms": 39940,
+          "end_ms": 48300,
+          "samples": 200640,
+          "seconds": 8.36,
+          "rms": 0.10078797522116173,
+          "peak": 0.55126953125,
+          "quiet_sample_fraction": 0.23780901116427433
+        },
+        {
+          "zone": "handover",
+          "index": 4,
+          "text": "Ipanukala ang version check, owner, kapalit, stock-gap contact at review. Kumpirmahin ang hindi pa alam.",
+          "start_ms": 48600,
+          "end_ms": 56320,
+          "samples": 185280,
+          "seconds": 7.72,
+          "rms": 0.10481236976954494,
+          "peak": 0.67547607421875,
+          "quiet_sample_fraction": 0.2669743091537133
+        },
+        {
+          "zone": "practice",
+          "index": 5,
+          "text": "Dummy paperwork: puna at retry. Peer o solo rehearsal ay hindi trainer observation. Protektahan ang hand hygiene at napapanahong serbisyo.",
+          "start_ms": 56620,
+          "end_ms": 66940,
+          "samples": 247680,
+          "seconds": 10.32,
+          "rms": 0.08486476390160781,
+          "peak": 0.604034423828125,
+          "quiet_sample_fraction": 0.17780604005167958
+        },
+        {
+          "zone": "check",
+          "index": 6,
+          "text": "Nakanselang kalahati ng sessions kaya kalahati ang papel: hindi patunay ng improvement. Ihiwalay ang reprints sa kulang na workload, kalidad at gastos. Ipanukala ang master at handover; walang success o savings claim.",
+          "start_ms": 67240,
+          "end_ms": 82960,
+          "samples": 377280,
+          "seconds": 15.72,
+          "rms": 0.0973101663200719,
+          "peak": 0.643463134765625,
+          "quiet_sample_fraction": 0.14689885496183205
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 0,
+          "end": 11.44,
+          "file": "shipped-story-fil-name.wav",
+          "excerpt_sha256": "56c55e33314073dad065b43ec75a30778326153efb6808fbcf06e5892ae49973",
+          "decoded_sample_count": 274560,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 11.44,
+          "file": "shipped-story-fil-body.wav",
+          "excerpt_sha256": "56c55e33314073dad065b43ec75a30778326153efb6808fbcf06e5892ae49973",
+          "decoded_sample_count": 274560,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 28.34,
+          "file": "shipped-story-fil-critical.wav",
+          "excerpt_sha256": "ecbd7cd69ad0ec49f1380cb18c58516e86459e44d7a9f3ce86a6144549fad674",
+          "decoded_sample_count": 680160,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 67.24,
+          "end": 84.18133333333333,
+          "file": "shipped-story-fil-ending.wav",
+          "excerpt_sha256": "a4be313fe8b293785519abd099016e64262dfc49d8ae7af9605c3080415586bc",
+          "decoded_sample_count": 406592,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-check-en",
+      "language": "en",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/check.en.114e81a7e397.mp3",
+      "source_sha256": "e362a5cb1dd8ed9290f03af423cc968066856340f1669650696ddeb007931fa0",
+      "decoded_pcm_sha256": "325802b13815602ee429a7c7b7e750daf0dace5a8f1be51f91f8d9c93f5632f0",
+      "full_audio_metrics": {
+        "samples": 1640699,
+        "seconds": 68.36245833333334,
+        "rms": 0.12639364696830976,
+        "peak": 0.90130615234375,
+        "quiet_sample_fraction": 0.18940951387183147
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Choose the next step",
+          "start_ms": 0,
+          "end_ms": 1920,
+          "samples": 46080,
+          "seconds": 1.92,
+          "rms": 0.10446208106687072,
+          "peak": 0.829437255859375,
+          "quiet_sample_fraction": 0.3345486111111111
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "In Charlaine’s separate fictional situation, paper use halved because half the sessions were canceled.",
+          "start_ms": 2220,
+          "end_ms": 10020,
+          "samples": 187200,
+          "seconds": 7.8,
+          "rms": 0.12130935412655651,
+          "peak": 0.8033447265625,
+          "quiet_sample_fraction": 0.1659241452991453
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "That is the only supplied evidence.",
+          "start_ms": 10320,
+          "end_ms": 13240,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.1510293678872246,
+          "peak": 0.896942138671875,
+          "quiet_sample_fraction": 0.2203909817351598
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Bills, prices, reasons for cancellation and the quality of services delivered have not been confirmed.",
+          "start_ms": 13540,
+          "end_ms": 22500,
+          "samples": 215040,
+          "seconds": 8.96,
+          "rms": 0.13144059966934166,
+          "peak": 0.89892578125,
+          "quiet_sample_fraction": 0.20970517113095238
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Choose an answer and explain why before viewing feedback.",
+          "start_ms": 22800,
+          "end_ms": 27120,
+          "samples": 103680,
+          "seconds": 4.32,
+          "rms": 0.1447425519951643,
+          "peak": 0.864654541015625,
+          "quiet_sample_fraction": 0.21904899691358024
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Consider the denominator and services delivered.",
+          "start_ms": 27420,
+          "end_ms": 31020,
+          "samples": 86400,
+          "seconds": 3.6,
+          "rms": 0.12563398081368804,
+          "peak": 0.740020751953125,
+          "quiet_sample_fraction": 0.1739351851851852
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "After answering, read the rationale for every choice and the corrected ending; compare these with your rehearsal.",
+          "start_ms": 31320,
+          "end_ms": 38720,
+          "samples": 177600,
+          "seconds": 7.4,
+          "rms": 0.12772920915239414,
+          "peak": 0.90130615234375,
+          "quiet_sample_fraction": 0.1918018018018018
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Corrected fictional ending: Charlaine withholds a success or savings claim. She separates the 20/100 to 5/100 reprint improvement from missing workload, quality and cost evidence. She proposes retaining the controlled approved paper master, handing over the routine and reviewing whether to revise or stop the trial. Successful implementation or certification has not been established.",
+          "start_ms": 39020,
+          "end_ms": 68300,
+          "samples": 702720,
+          "seconds": 29.28,
+          "rms": 0.12628004687475503,
+          "peak": 0.880950927734375,
+          "quiet_sample_fraction": 0.11398850182149363
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 2.22,
+          "end": 10.02,
+          "file": "read-check-en-name.wav",
+          "excerpt_sha256": "d32b77512fc0cf8c5f7a127b2074877f7af8916fa5f6bcd8bd830d5af0fa8290",
+          "decoded_sample_count": 187200,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.22,
+          "end": 10.02,
+          "file": "read-check-en-body.wav",
+          "excerpt_sha256": "d32b77512fc0cf8c5f7a127b2074877f7af8916fa5f6bcd8bd830d5af0fa8290",
+          "decoded_sample_count": 187200,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 13.54,
+          "end": 27.12,
+          "file": "read-check-en-critical.wav",
+          "excerpt_sha256": "c65019df50a6549db9ed78492396ccd3ad0532073f8b9f04d1a8bd64f81548d7",
+          "decoded_sample_count": 325920,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 39.02,
+          "end": 68.36245833333334,
+          "file": "read-check-en-ending.wav",
+          "excerpt_sha256": "bef5a3bc7cd0c0cf94a416d05d5b247b5e153ff09d6b06321938ea6a3268857c",
+          "decoded_sample_count": 704219,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-communicate-en",
+      "language": "en",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/communicate.en.9036805bc15f.mp3",
+      "source_sha256": "36745f565384c54a6d11fd2eeabef8f50cbf1269d9a8c65438f6485a851e4ba9",
+      "decoded_pcm_sha256": "dbd1a941be9ac14f1a476d5e1ef14b6d29699c417f7f3a8909407cf03329c102",
+      "full_audio_metrics": {
+        "samples": 2032536,
+        "seconds": 84.689,
+        "rms": 0.1340058678198542,
+        "peak": 0.99005126953125,
+        "quiet_sample_fraction": 0.2241008277344165
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Share the proposal with colleagues",
+          "start_ms": 0,
+          "end_ms": 2680,
+          "samples": 64320,
+          "seconds": 2.68,
+          "rms": 0.1361621634663245,
+          "peak": 0.8797607421875,
+          "quiet_sample_fraction": 0.22899564676616915
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Charlaine says, “There are two versions in the drawer and some pages are being reprinted.",
+          "start_ms": 2980,
+          "end_ms": 9100,
+          "samples": 146880,
+          "seconds": 6.12,
+          "rms": 0.13272664068904882,
+          "peak": 0.946044921875,
+          "quiet_sample_fraction": 0.17226307189542484
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Could we check which version is approved?”",
+          "start_ms": 9400,
+          "end_ms": 12080,
+          "samples": 64320,
+          "seconds": 2.68,
+          "rms": 0.13956451493302582,
+          "peak": 0.8670654296875,
+          "quiet_sample_fraction": 0.18460820895522387
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "She describes the observation without blaming a person or claiming a proven cause.",
+          "start_ms": 12380,
+          "end_ms": 18980,
+          "samples": 158400,
+          "seconds": 6.6,
+          "rms": 0.13246363142276527,
+          "peak": 0.99005126953125,
+          "quiet_sample_fraction": 0.1419002525252525
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Show the proposal, proposed responsibilities and review date.",
+          "start_ms": 19280,
+          "end_ms": 24000,
+          "samples": 113280,
+          "seconds": 4.72,
+          "rms": 0.16361303264341803,
+          "peak": 0.90911865234375,
+          "quiet_sample_fraction": 0.21393008474576272
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ask: “What is the barrier?",
+          "start_ms": 24300,
+          "end_ms": 27220,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.10839871374948565,
+          "peak": 0.79248046875,
+          "quiet_sample_fraction": 0.3421090182648402
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Is this routine feasible?",
+          "start_ms": 27520,
+          "end_ms": 29840,
+          "samples": 55680,
+          "seconds": 2.32,
+          "rms": 0.12692150761989834,
+          "peak": 0.567962646484375,
+          "quiet_sample_fraction": 0.3319683908045977
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Who can verify the version?”",
+          "start_ms": 30140,
+          "end_ms": 32500,
+          "samples": 56640,
+          "seconds": 2.36,
+          "rms": 0.14786825233996184,
+          "peak": 0.8074951171875,
+          "quiet_sample_fraction": 0.24267302259887005
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "In this situation, the colleague printing handouts has no internet and cannot download the file then.",
+          "start_ms": 32800,
+          "end_ms": 39840,
+          "samples": 168960,
+          "seconds": 7.04,
+          "rms": 0.1187593408334806,
+          "peak": 0.833160400390625,
+          "quiet_sample_fraction": 0.14829545454545454
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Propose a controlled paper master from the approved version, with a clear version/date and a designated verifier.",
+          "start_ms": 40140,
+          "end_ms": 48860,
+          "samples": 209280,
+          "seconds": 8.72,
+          "rms": 0.12204806780299639,
+          "peak": 0.89373779296875,
+          "quiet_sample_fraction": 0.14377389143730887
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Separate outdated copies from the usable master under the approved routine.",
+          "start_ms": 49160,
+          "end_ms": 54880,
+          "samples": 137280,
+          "seconds": 5.72,
+          "rms": 0.1551190326019455,
+          "peak": 0.9207763671875,
+          "quiet_sample_fraction": 0.14040646853146854
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Ask for the colleague’s feedback and confirm the owner and replacement; do not invent agreement.",
+          "start_ms": 55180,
+          "end_ms": 61580,
+          "samples": 153600,
+          "seconds": 6.4,
+          "rms": 0.12904311755118003,
+          "peak": 0.920196533203125,
+          "quiet_sample_fraction": 0.19235026041666667
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "If the version or authorisation cannot be verified, do not use an unapproved copy.",
+          "start_ms": 61880,
+          "end_ms": 68800,
+          "samples": 166080,
+          "seconds": 6.92,
+          "rms": 0.14921542471414898,
+          "peak": 0.845428466796875,
+          "quiet_sample_fraction": 0.1570628612716763
+        },
+        {
+          "zone": "body",
+          "index": 12,
+          "text": "Report the barrier to the locally authorised contact and request correct material.",
+          "start_ms": 69100,
+          "end_ms": 75180,
+          "samples": 145920,
+          "seconds": 6.08,
+          "rms": 0.16441842764450376,
+          "peak": 0.904815673828125,
+          "quiet_sample_fraction": 0.15070586622807017
+        },
+        {
+          "zone": "body",
+          "index": 13,
+          "text": "Answer the question before viewing the explanation.",
+          "start_ms": 75480,
+          "end_ms": 79000,
+          "samples": 84480,
+          "seconds": 3.52,
+          "rms": 0.13718766704011043,
+          "peak": 0.899627685546875,
+          "quiet_sample_fraction": 0.18914535984848485
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "A change lasts when colleagues understand it and can carry it out.",
+          "start_ms": 79300,
+          "end_ms": 84620,
+          "samples": 127680,
+          "seconds": 5.32,
+          "rms": 0.12831170056533073,
+          "peak": 0.909576416015625,
+          "quiet_sample_fraction": 0.18013784461152882
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 2.98,
+          "end": 9.1,
+          "file": "read-communicate-en-name.wav",
+          "excerpt_sha256": "b8a9204b512ae2d7a82b4fa6f1e9d6e329c033e0fcf801bdd9882cc85b740da5",
+          "decoded_sample_count": 146880,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.98,
+          "end": 9.1,
+          "file": "read-communicate-en-body.wav",
+          "excerpt_sha256": "b8a9204b512ae2d7a82b4fa6f1e9d6e329c033e0fcf801bdd9882cc85b740da5",
+          "decoded_sample_count": 146880,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 12.38,
+          "end": 24,
+          "file": "read-communicate-en-critical.wav",
+          "excerpt_sha256": "2819307c695bbae02f2a37b604c8d415e6097fba6dfe0b35afb033b83a34d298",
+          "decoded_sample_count": 278880,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 69.1,
+          "end": 84.689,
+          "file": "read-communicate-en-ending.wav",
+          "excerpt_sha256": "7caf799aedb38303510276822b50e831cb1b0eb7373531dc0b28d4e969625f8c",
+          "decoded_sample_count": 374136,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-compare-en",
+      "language": "en",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/compare.en.0910a6dec605.mp3",
+      "source_sha256": "87bcc9132ab649ec47fe08010514f1a2eebc4a251c1fb9072e7bf980c25d5ccc",
+      "decoded_pcm_sha256": "893cdecc8ff10b857b58d45f97d00ecde35999398456058eef7dcc2b31d69bf4",
+      "full_audio_metrics": {
+        "samples": 2149774,
+        "seconds": 89.57391666666666,
+        "rms": 0.1236446327080135,
+        "peak": 1,
+        "quiet_sample_fraction": 0.23054981593414006
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Try a simple comparison",
+          "start_ms": 0,
+          "end_ms": 2320,
+          "samples": 55680,
+          "seconds": 2.32,
+          "rms": 0.10940900536783355,
+          "peak": 0.741729736328125,
+          "quiet_sample_fraction": 0.24008620689655172
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Charlaine uses the fictional tally: wrong-version reprints were 20 out of every 100 printed pages before and 5 out of every 100 afterward.",
+          "start_ms": 2620,
+          "end_ms": 14140,
+          "samples": 276480,
+          "seconds": 11.52,
+          "rms": 0.13213055318905217,
+          "peak": 0.89178466796875,
+          "quiet_sample_fraction": 0.1776837384259259
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Both denominators are 100 pages.",
+          "start_ms": 14440,
+          "end_ms": 17640,
+          "samples": 76800,
+          "seconds": 3.2,
+          "rms": 0.14174362463281934,
+          "peak": 0.75103759765625,
+          "quiet_sample_fraction": 0.213359375
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "The rates are 20% and 5%; the difference is 15 per 100 pages, or 15 percentage points.",
+          "start_ms": 17940,
+          "end_ms": 28460,
+          "samples": 252480,
+          "seconds": 10.52,
+          "rms": 0.10670487807276177,
+          "peak": 0.828643798828125,
+          "quiet_sample_fraction": 0.20380228136882128
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "These are practice tallies, not a report from a real BHS.",
+          "start_ms": 28760,
+          "end_ms": 33560,
+          "samples": 115200,
+          "seconds": 4.8,
+          "rms": 0.11831349347121825,
+          "peak": 0.924530029296875,
+          "quiet_sample_fraction": 0.18520833333333334
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "The relative reduction in reprints is (20 − 5) ÷ 20 = 75%.",
+          "start_ms": 33860,
+          "end_ms": 42660,
+          "samples": 211200,
+          "seconds": 8.8,
+          "rms": 0.1255948230016166,
+          "peak": 0.893218994140625,
+          "quiet_sample_fraction": 0.23132575757575757
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "This is not a 75% reduction in total cost.",
+          "start_ms": 42960,
+          "end_ms": 47680,
+          "samples": 113280,
+          "seconds": 4.72,
+          "rms": 0.12370838869193378,
+          "peak": 0.886505126953125,
+          "quiet_sample_fraction": 0.1551465395480226
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Prices, other resource costs and the cause of the change are not supplied.",
+          "start_ms": 47980,
+          "end_ms": 54540,
+          "samples": 157440,
+          "seconds": 6.56,
+          "rms": 0.13584695072415032,
+          "peak": 0.974517822265625,
+          "quiet_sample_fraction": 0.23643927845528456
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Comparable session types and counts, correct handouts for everyone, delays and complaints have not been confirmed either.",
+          "start_ms": 54840,
+          "end_ms": 64000,
+          "samples": 219840,
+          "seconds": 9.16,
+          "rms": 0.11389179140110493,
+          "peak": 0.861053466796875,
+          "quiet_sample_fraction": 0.17051946870451237
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Record these as unknown.",
+          "start_ms": 64300,
+          "end_ms": 67060,
+          "samples": 66240,
+          "seconds": 2.76,
+          "rms": 0.12523416478496072,
+          "peak": 0.660888671875,
+          "quiet_sample_fraction": 0.2471165458937198
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Before choosing, use the same 100-page denominator and ask whether workload and quality are comparable.",
+          "start_ms": 67360,
+          "end_ms": 76080,
+          "samples": 209280,
+          "seconds": 8.72,
+          "rms": 0.12569833081707898,
+          "peak": 0.87255859375,
+          "quiet_sample_fraction": 0.1568329510703364
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Patient names are unnecessary.",
+          "start_ms": 76380,
+          "end_ms": 79180,
+          "samples": 67200,
+          "seconds": 2.8,
+          "rms": 0.12899655426468784,
+          "peak": 0.947967529296875,
+          "quiet_sample_fraction": 0.24788690476190475
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "Answer the question before opening the explanation and summary.",
+          "start_ms": 79480,
+          "end_ms": 84560,
+          "samples": 121920,
+          "seconds": 5.08,
+          "rms": 0.13480951583088552,
+          "peak": 1,
+          "quiet_sample_fraction": 0.16736384514435695
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Compare resources across similar work and check quality too.",
+          "start_ms": 84860,
+          "end_ms": 89500,
+          "samples": 111360,
+          "seconds": 4.64,
+          "rms": 0.15970644461051064,
+          "peak": 0.8935546875,
+          "quiet_sample_fraction": 0.19045438218390803
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 2.62,
+          "end": 14.14,
+          "file": "read-compare-en-name.wav",
+          "excerpt_sha256": "112ac43217b3b774f53ebf9c13fbc6a185843c7f65166f3642f5de019dddccde",
+          "decoded_sample_count": 276480,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.62,
+          "end": 14.14,
+          "file": "read-compare-en-body.wav",
+          "excerpt_sha256": "112ac43217b3b774f53ebf9c13fbc6a185843c7f65166f3642f5de019dddccde",
+          "decoded_sample_count": 276480,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 28.76,
+          "end": 42.66,
+          "file": "read-compare-en-critical.wav",
+          "excerpt_sha256": "e7340fd59c911584a147bd69068892f4c2394ae56d2b13f7dfb00ec56ea80819",
+          "decoded_sample_count": 333600,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 67.36,
+          "end": 89.57391666666666,
+          "file": "read-compare-en-ending.wav",
+          "excerpt_sha256": "a06fc0fdabbce220068ba09fdf0ec9714f7a37d4e7bfb6ab75e683d5298b1605",
+          "decoded_sample_count": 533134,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-handover-en",
+      "language": "en",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/handover.en.766057db1d63.mp3",
+      "source_sha256": "7cfcfd0a8dbd146b22cfa84a67131ebf7e929dd9209d3766531ddf485bbedb2c",
+      "decoded_pcm_sha256": "36a2b771ac31ecb1775298e09725d9d1caebad7c34864d1a80852fe123e749de",
+      "full_audio_metrics": {
+        "samples": 2035044,
+        "seconds": 84.7935,
+        "rms": 0.13651572655970956,
+        "peak": 0.990692138671875,
+        "quiet_sample_fraction": 0.22725995113619166
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Keep the routine when people change",
+          "start_ms": 0,
+          "end_ms": 2920,
+          "samples": 70080,
+          "seconds": 2.92,
+          "rms": 0.11986405623605569,
+          "peak": 0.623199462890625,
+          "quiet_sample_fraction": 0.2415525114155251
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "When Charlaine is absent, the replacement still needs to use the routine.",
+          "start_ms": 3220,
+          "end_ms": 8780,
+          "samples": 133440,
+          "seconds": 5.56,
+          "rms": 0.12349068749013208,
+          "peak": 0.93316650390625,
+          "quiet_sample_fraction": 0.19166666666666668
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Do not rely on her memory.",
+          "start_ms": 9080,
+          "end_ms": 11560,
+          "samples": 59520,
+          "seconds": 2.48,
+          "rms": 0.14884855241015654,
+          "peak": 0.87652587890625,
+          "quiet_sample_fraction": 0.18277889784946236
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Prepare a short handover: where the controlled master is kept, how to check its version, who owns the routine and replaces them, how reprints and sessions are recorded, who receives stock-gap reports and when quality is reviewed.",
+          "start_ms": 11860,
+          "end_ms": 29900,
+          "samples": 432960,
+          "seconds": 18.04,
+          "rms": 0.1496017264154571,
+          "peak": 0.887451171875,
+          "quiet_sample_fraction": 0.19908305617147082
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Confirm authorised contacts locally; no invented phone number is supplied.",
+          "start_ms": 30200,
+          "end_ms": 35600,
+          "samples": 129600,
+          "seconds": 5.4,
+          "rms": 0.1418699550943962,
+          "peak": 0.990692138671875,
+          "quiet_sample_fraction": 0.20950617283950618
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ask the replacement to use the dummy kit and explain the next step if the master is outdated or paper is missing.",
+          "start_ms": 35900,
+          "end_ms": 44380,
+          "samples": 203520,
+          "seconds": 8.48,
+          "rms": 0.12512479734526602,
+          "peak": 0.8089599609375,
+          "quiet_sample_fraction": 0.1922612028301887
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "If the version or contact is unknown, mark the gap and ask before starting.",
+          "start_ms": 44680,
+          "end_ms": 50960,
+          "samples": 150720,
+          "seconds": 6.28,
+          "rms": 0.16002952519664845,
+          "peak": 0.902679443359375,
+          "quiet_sample_fraction": 0.18180732484076434
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Orienting a replacement does not prove the trial was accepted or successful.",
+          "start_ms": 51260,
+          "end_ms": 56660,
+          "samples": 129600,
+          "seconds": 5.4,
+          "rms": 0.1228173569653127,
+          "peak": 0.850067138671875,
+          "quiet_sample_fraction": 0.15996141975308642
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "At review, remove unhelpful steps while preserving version verification, correct material, privacy and service.",
+          "start_ms": 56960,
+          "end_ms": 67000,
+          "samples": 240960,
+          "seconds": 10.04,
+          "rms": 0.1400984381690666,
+          "peak": 0.940643310546875,
+          "quiet_sample_fraction": 0.20797642762284196
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Record why the routine changed and the next review.",
+          "start_ms": 67300,
+          "end_ms": 71700,
+          "samples": 105600,
+          "seconds": 4.4,
+          "rms": 0.11388703922130035,
+          "peak": 0.735321044921875,
+          "quiet_sample_fraction": 0.20494318181818183
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "If quality falls, revise or stop through the authorised process.",
+          "start_ms": 72000,
+          "end_ms": 77840,
+          "samples": 140160,
+          "seconds": 5.84,
+          "rms": 0.13442618718650068,
+          "peak": 0.958587646484375,
+          "quiet_sample_fraction": 0.209189497716895
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "A routine that colleagues can inherit lasts longer than an individual workaround.",
+          "start_ms": 78140,
+          "end_ms": 84740,
+          "samples": 158400,
+          "seconds": 6.6,
+          "rms": 0.1514714050970228,
+          "peak": 0.85870361328125,
+          "quiet_sample_fraction": 0.17008838383838384
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.22,
+          "end": 8.78,
+          "file": "read-handover-en-name.wav",
+          "excerpt_sha256": "5f98b14b65ce6bcb8deefc2ab7187db7a5b34ea93a8a411dbf8df5771156a7cf",
+          "decoded_sample_count": 133440,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.22,
+          "end": 8.78,
+          "file": "read-handover-en-body.wav",
+          "excerpt_sha256": "5f98b14b65ce6bcb8deefc2ab7187db7a5b34ea93a8a411dbf8df5771156a7cf",
+          "decoded_sample_count": 133440,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 9.08,
+          "end": 29.9,
+          "file": "read-handover-en-critical.wav",
+          "excerpt_sha256": "220ee6f5d775dc2234b29b02052c219138a86b40fa818e0122b5077f2178a6d2",
+          "decoded_sample_count": 499680,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 67.3,
+          "end": 84.7935,
+          "file": "read-handover-en-ending.wav",
+          "excerpt_sha256": "fa11a7f9cbef7e8e574361625a8193807e13918e6020407ac79a7aa332dc4c84",
+          "decoded_sample_count": 419844,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-practice-en",
+      "language": "en",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/practice.en.14f1945b686c.mp3",
+      "source_sha256": "f02a287e65b58a0d273f11b829b6230bf3e183dd969a8aaef1ee1b2813739470",
+      "decoded_pcm_sha256": "2545586f70daed77a6e8f367e9bfb2e8b44e4c43d9dd07e32417a90b9d21769d",
+      "full_audio_metrics": {
+        "samples": 2377979,
+        "seconds": 99.08245833333334,
+        "rms": 0.12592503067302638,
+        "peak": 0.945098876953125,
+        "quiet_sample_fraction": 0.2581065686450553
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Try it, then repeat",
+          "start_ms": 0,
+          "end_ms": 2840,
+          "samples": 68160,
+          "seconds": 2.84,
+          "rms": 0.1136189058860211,
+          "peak": 0.80523681640625,
+          "quiet_sample_fraction": 0.4556924882629108
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Charlaine and the learners use the fictional trial card and dummy handout.",
+          "start_ms": 3140,
+          "end_ms": 8140,
+          "samples": 120000,
+          "seconds": 5,
+          "rms": 0.11586063318452011,
+          "peak": 0.7735595703125,
+          "quiet_sample_fraction": 0.14015833333333333
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Fill in the problem, change, owner/replacement, baseline, quality, authorisation and review date.",
+          "start_ms": 8440,
+          "end_ms": 18840,
+          "samples": 249600,
+          "seconds": 10.4,
+          "rms": 0.1502249234386737,
+          "peak": 0.905426025390625,
+          "quiet_sample_fraction": 0.28827323717948716
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "The trial is not approved; mark permission pending.",
+          "start_ms": 19140,
+          "end_ms": 23740,
+          "samples": 110400,
+          "seconds": 4.6,
+          "rms": 0.1424221774333631,
+          "peak": 0.76129150390625,
+          "quiet_sample_fraction": 0.23202898550724638
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Use 20/100 and 5/100 to calculate rates, a 15-percentage-point difference and a 75% relative reduction in reprints.",
+          "start_ms": 24040,
+          "end_ms": 36480,
+          "samples": 298560,
+          "seconds": 12.44,
+          "rms": 0.10929297957060224,
+          "peak": 0.758819580078125,
+          "quiet_sample_fraction": 0.15500736870310824
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Do not call this cost savings.",
+          "start_ms": 36780,
+          "end_ms": 39660,
+          "samples": 69120,
+          "seconds": 2.88,
+          "rms": 0.11105754740021934,
+          "peak": 0.706939697265625,
+          "quiet_sample_fraction": 0.26533564814814814
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "In a triad, rotate as BHW, colleague without internet and observer.",
+          "start_ms": 39960,
+          "end_ms": 46960,
+          "samples": 168000,
+          "seconds": 7,
+          "rms": 0.13555682313886291,
+          "peak": 0.896514892578125,
+          "quiet_sample_fraction": 0.24848809523809523
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Show the controlled master, ask about the barrier and explain the handover.",
+          "start_ms": 47260,
+          "end_ms": 53060,
+          "samples": 139200,
+          "seconds": 5.8,
+          "rms": 0.12455713165713969,
+          "peak": 0.86029052734375,
+          "quiet_sample_fraction": 0.260316091954023
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Ask the replacement to explain version verification, stock-gap reporting and review.",
+          "start_ms": 53360,
+          "end_ms": 59960,
+          "samples": 158400,
+          "seconds": 6.6,
+          "rms": 0.11300422706416793,
+          "peak": 0.752838134765625,
+          "quiet_sample_fraction": 0.22864267676767677
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Observer: give one specific piece of feedback.",
+          "start_ms": 60260,
+          "end_ms": 64460,
+          "samples": 100800,
+          "seconds": 4.2,
+          "rms": 0.10502368485761515,
+          "peak": 0.650787353515625,
+          "quiet_sample_fraction": 0.25901785714285713
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "BHW: repeat the step needing improvement.",
+          "start_ms": 64760,
+          "end_ms": 68880,
+          "samples": 98880,
+          "seconds": 4.12,
+          "rms": 0.12138810353072675,
+          "peak": 0.792572021484375,
+          "quiet_sample_fraction": 0.2211063915857605
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Record done, prompted or not yet.",
+          "start_ms": 69180,
+          "end_ms": 72420,
+          "samples": 77760,
+          "seconds": 3.24,
+          "rms": 0.11799631990400354,
+          "peak": 0.945098876953125,
+          "quiet_sample_fraction": 0.35612139917695473
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "If working alone, write or speak the trial and handover using the same fictional cards.",
+          "start_ms": 72720,
+          "end_ms": 79720,
+          "samples": 168000,
+          "seconds": 7,
+          "rms": 0.13946038032683544,
+          "peak": 0.924224853515625,
+          "quiet_sample_fraction": 0.17044642857142858
+        },
+        {
+          "zone": "body",
+          "index": 12,
+          "text": "Reading support is available.",
+          "start_ms": 80020,
+          "end_ms": 82420,
+          "samples": 57600,
+          "seconds": 2.4,
+          "rms": 0.14933740234732865,
+          "peak": 0.814483642578125,
+          "quiet_sample_fraction": 0.3005902777777778
+        },
+        {
+          "zone": "body",
+          "index": 13,
+          "text": "Solo and peer rehearsal are practice; they do not replace actual trainer observation or produce an automatic pass.",
+          "start_ms": 82720,
+          "end_ms": 91920,
+          "samples": 220800,
+          "seconds": 9.2,
+          "rms": 0.1464292018145285,
+          "peak": 0.88397216796875,
+          "quiet_sample_fraction": 0.14908514492753625
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Lower consumption is a success only when correct, safe service is still delivered.",
+          "start_ms": 92220,
+          "end_ms": 99020,
+          "samples": 163200,
+          "seconds": 6.8,
+          "rms": 0.12907169199571378,
+          "peak": 0.869110107421875,
+          "quiet_sample_fraction": 0.15610906862745097
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.14,
+          "end": 8.14,
+          "file": "read-practice-en-name.wav",
+          "excerpt_sha256": "014a3cf571ffcec019482e938bed1ec279ceef4bff756634856c55a45d10d86f",
+          "decoded_sample_count": 120000,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 3.14,
+          "end": 8.14,
+          "file": "read-practice-en-body.wav",
+          "excerpt_sha256": "014a3cf571ffcec019482e938bed1ec279ceef4bff756634856c55a45d10d86f",
+          "decoded_sample_count": 120000,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 19.14,
+          "end": 36.48,
+          "file": "read-practice-en-critical.wav",
+          "excerpt_sha256": "f57138e6a236d4b5bf059b210a41fc13cc72afe3acae96b076820f5d9a2a49fe",
+          "decoded_sample_count": 416160,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 82.72,
+          "end": 99.08245833333334,
+          "file": "read-practice-en-ending.wav",
+          "excerpt_sha256": "2cc20e7aab7e5148d1a9b4b9c48e006b8013985a39dc6d42ef94a38c19c24ae2",
+          "decoded_sample_count": 392699,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-trial-en",
+      "language": "en",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/trial.en.7c525dccbd62.mp3",
+      "source_sha256": "de7532390db29806cea1e47647256da14084f188e5c9900d49091e5960d599b0",
+      "decoded_pcm_sha256": "3674364f5672095f1f47a503b1e1c4731302979cf732a2a641a091104938dc7d",
+      "full_audio_metrics": {
+        "samples": 2323436,
+        "seconds": 96.80983333333333,
+        "rms": 0.1299089073572943,
+        "peak": 0.96075439453125,
+        "quiet_sample_fraction": 0.24293374123496408
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "One change, an owner and a measure",
+          "start_ms": 0,
+          "end_ms": 4280,
+          "samples": 102720,
+          "seconds": 4.28,
+          "rms": 0.1153567388276049,
+          "peak": 0.93084716796875,
+          "quiet_sample_fraction": 0.3682535046728972
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Charlaine is a fictional BHW preparing a proposal to reduce pages reprinted because the wrong version was used.",
+          "start_ms": 4580,
+          "end_ms": 14060,
+          "samples": 227520,
+          "seconds": 9.48,
+          "rms": 0.11734820455567295,
+          "peak": 0.824066162109375,
+          "quiet_sample_fraction": 0.13115330520393811
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "This remains a proposal: permission and team acceptance have not been confirmed.",
+          "start_ms": 14360,
+          "end_ms": 20480,
+          "samples": 146880,
+          "seconds": 6.12,
+          "rms": 0.15652287762290726,
+          "peak": 0.906982421875,
+          "quiet_sample_fraction": 0.20009531590413943
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "No real patient record is used.",
+          "start_ms": 20780,
+          "end_ms": 23860,
+          "samples": 73920,
+          "seconds": 3.08,
+          "rms": 0.1218540707282304,
+          "peak": 0.7957763671875,
+          "quiet_sample_fraction": 0.23491612554112554
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "On the trial card, record the problem, change, responsible person and replacement, baseline, quality measure, authorisation and review date.",
+          "start_ms": 24160,
+          "end_ms": 36920,
+          "samples": 306240,
+          "seconds": 12.76,
+          "rms": 0.14135852522046669,
+          "peak": 0.939300537109375,
+          "quiet_sample_fraction": 0.2749510188087774
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Her proposal is to check the approved handout before each print run.",
+          "start_ms": 37220,
+          "end_ms": 42460,
+          "samples": 125760,
+          "seconds": 5.24,
+          "rms": 0.12960967475169163,
+          "peak": 0.836395263671875,
+          "quiet_sample_fraction": 0.182816475826972
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "She proposes preparing the checklist herself and asking the midwife to verify the version; first ask whether these responsibilities are feasible and authorised.",
+          "start_ms": 42760,
+          "end_ms": 54000,
+          "samples": 269760,
+          "seconds": 11.24,
+          "rms": 0.13542021544932029,
+          "peak": 0.96075439453125,
+          "quiet_sample_fraction": 0.154099940688019
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "The proposed review is two weeks after an authorised start.",
+          "start_ms": 54300,
+          "end_ms": 59260,
+          "samples": 119040,
+          "seconds": 4.96,
+          "rms": 0.11147312747647978,
+          "peak": 0.820068359375,
+          "quiet_sample_fraction": 0.19906754032258064
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "While permission is unknown, mark it pending and do not start.",
+          "start_ms": 59560,
+          "end_ms": 65080,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.14575612657534737,
+          "peak": 0.847808837890625,
+          "quiet_sample_fraction": 0.2537062198067633
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Count wrong-version reprints, all printed pages and sessions delivered.",
+          "start_ms": 65380,
+          "end_ms": 70900,
+          "samples": 132480,
+          "seconds": 5.52,
+          "rms": 0.1243741514067707,
+          "peak": 0.915985107421875,
+          "quiet_sample_fraction": 0.21845561594202897
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "text": "Also check whether handouts are correct and readable and whether service was delayed.",
+          "start_ms": 71200,
+          "end_ms": 77440,
+          "samples": 149760,
+          "seconds": 6.24,
+          "rms": 0.135058359447577,
+          "peak": 0.91552734375,
+          "quiet_sample_fraction": 0.18775373931623932
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "text": "Plan the review before starting: continue, revise or stop based on evidence and quality.",
+          "start_ms": 77740,
+          "end_ms": 85380,
+          "samples": 183360,
+          "seconds": 7.64,
+          "rms": 0.1357057170868913,
+          "peak": 0.8843994140625,
+          "quiet_sample_fraction": 0.2269524432809773
+        },
+        {
+          "zone": "body",
+          "index": 11,
+          "text": "A complete card does not guarantee a successful trial.",
+          "start_ms": 85680,
+          "end_ms": 90080,
+          "samples": 105600,
+          "seconds": 4.4,
+          "rms": 0.1376324664456341,
+          "peak": 0.783203125,
+          "quiet_sample_fraction": 0.15294507575757577
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "A sustainable practice has an owner, measured results and regular review.",
+          "start_ms": 90380,
+          "end_ms": 96740,
+          "samples": 152640,
+          "seconds": 6.36,
+          "rms": 0.12497607062241031,
+          "peak": 0.802978515625,
+          "quiet_sample_fraction": 0.2218094863731656
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 4.58,
+          "end": 14.06,
+          "file": "read-trial-en-name.wav",
+          "excerpt_sha256": "b2c6d9053e1951cf6c2a9bc6e7e5e1af6bc504fae476db0fd9a0279b8d85d984",
+          "decoded_sample_count": 227520,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 4.58,
+          "end": 14.06,
+          "file": "read-trial-en-body.wav",
+          "excerpt_sha256": "b2c6d9053e1951cf6c2a9bc6e7e5e1af6bc504fae476db0fd9a0279b8d85d984",
+          "decoded_sample_count": 227520,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 14.36,
+          "end": 23.86,
+          "file": "read-trial-en-critical.wav",
+          "excerpt_sha256": "2e0f6047b934e97ad84cf9b9a1ba09210e3844570ce58b61e441fa2b3f20d509",
+          "decoded_sample_count": 228000,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 77.74,
+          "end": 96.80983333333333,
+          "file": "read-trial-en-ending.wav",
+          "excerpt_sha256": "a0abddf8efd7e34d5023b8b4bf7adddde6745def2f4f450a6722ec337c5f5838",
+          "decoded_sample_count": 457676,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "read-workload-en",
+      "language": "en",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/workload.en.5d457c7ac427.mp3",
+      "source_sha256": "af78e357f6b5e7c7d4b33442ee323524967177abb79d4736701ca047fcb90720",
+      "decoded_pcm_sha256": "6b3e87a5fe9fd8db85250de975ea29c5e3a2b55a80dfee4f3c2067e3b087c717",
+      "full_audio_metrics": {
+        "samples": 2196794,
+        "seconds": 91.53308333333334,
+        "rms": 0.132714691673905,
+        "peak": 0.999969482421875,
+        "quiet_sample_fraction": 0.22261167865534956
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "When workloads differ",
+          "start_ms": 0,
+          "end_ms": 2080,
+          "samples": 49920,
+          "seconds": 2.08,
+          "rms": 0.1610481431278059,
+          "peak": 0.79132080078125,
+          "quiet_sample_fraction": 0.3001602564102564
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Charlaine examines the workload: five teaching sessions were delivered in one week and ten in the next.",
+          "start_ms": 2380,
+          "end_ms": 10020,
+          "samples": 183360,
+          "seconds": 7.64,
+          "rms": 0.12237170285160831,
+          "peak": 0.99114990234375,
+          "quiet_sample_fraction": 0.17115510471204187
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Total paper use may rise because the workload doubled.",
+          "start_ms": 10320,
+          "end_ms": 14720,
+          "samples": 105600,
+          "seconds": 4.4,
+          "rms": 0.1478724770540925,
+          "peak": 0.910552978515625,
+          "quiet_sample_fraction": 0.1768276515151515
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Those session counts alone cannot give a reprint rate: reprint and page counts for each week are also needed.",
+          "start_ms": 15020,
+          "end_ms": 24060,
+          "samples": 216960,
+          "seconds": 9.04,
+          "rms": 0.1041375587411687,
+          "peak": 0.669647216796875,
+          "quiet_sample_fraction": 0.2185794616519174
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "If they are not supplied, record them as unknown; do not guess or borrow the separate 20/100 and 5/100 example.",
+          "start_ms": 24360,
+          "end_ms": 34400,
+          "samples": 240960,
+          "seconds": 10.04,
+          "rms": 0.12632032029095075,
+          "peak": 0.84521484375,
+          "quiet_sample_fraction": 0.18449120185922974
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "For comparable session types, divide reprints by sessions delivered or compare reprints per 100 printed pages.",
+          "start_ms": 34700,
+          "end_ms": 44020,
+          "samples": 223680,
+          "seconds": 9.32,
+          "rms": 0.15418804470106673,
+          "peak": 0.99462890625,
+          "quiet_sample_fraction": 0.13920332618025752
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Also compare correct versions, readable material, complaints, delays and services delivered.",
+          "start_ms": 44320,
+          "end_ms": 52640,
+          "samples": 199680,
+          "seconds": 8.32,
+          "rms": 0.12493834064706444,
+          "peak": 0.87396240234375,
+          "quiet_sample_fraction": 0.27842047275641024
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "text": "Raw totals may fall because services were canceled; that does not prove a better process.",
+          "start_ms": 52940,
+          "end_ms": 59540,
+          "samples": 158400,
+          "seconds": 6.6,
+          "rms": 0.130778643036289,
+          "peak": 0.885009765625,
+          "quiet_sample_fraction": 0.16823232323232323
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "text": "Protect water for handwashing, clinical single-use rules, cold-chain and critical systems, required ventilation, accessible teaching and timely or urgent service.",
+          "start_ms": 59840,
+          "end_ms": 74160,
+          "samples": 343680,
+          "seconds": 14.32,
+          "rms": 0.1420563163806775,
+          "peak": 0.93389892578125,
+          "quiet_sample_fraction": 0.21610218808193668
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "text": "Practice uses fictional paperwork and dummy teaching kits only: no utility repair, actual equipment shutdown, medicine handling or cleaning experiment.",
+          "start_ms": 74460,
+          "end_ms": 86660,
+          "samples": 292800,
+          "seconds": 12.2,
+          "rms": 0.14292392060835027,
+          "peak": 0.999969482421875,
+          "quiet_sample_fraction": 0.1789275956284153
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "A fair comparison accounts for the amount of work performed.",
+          "start_ms": 86960,
+          "end_ms": 91480,
+          "samples": 108480,
+          "seconds": 4.52,
+          "rms": 0.13862883952967275,
+          "peak": 0.899566650390625,
+          "quiet_sample_fraction": 0.1733038348082596
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 2.38,
+          "end": 10.02,
+          "file": "read-workload-en-name.wav",
+          "excerpt_sha256": "0c6910731b06a6c57be498b74af75ca077a792dd908378cebc6200de3336b1aa",
+          "decoded_sample_count": 183360,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 2.38,
+          "end": 10.02,
+          "file": "read-workload-en-body.wav",
+          "excerpt_sha256": "0c6910731b06a6c57be498b74af75ca077a792dd908378cebc6200de3336b1aa",
+          "decoded_sample_count": 183360,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 15.02,
+          "end": 34.4,
+          "file": "read-workload-en-critical.wav",
+          "excerpt_sha256": "fb4675a0387d94674ea2680dad51c90f4cee6c842221bc01e5e26991635afc34",
+          "decoded_sample_count": 465120,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 74.46,
+          "end": 91.53308333333334,
+          "file": "read-workload-en-ending.wav",
+          "excerpt_sha256": "322e695ad14374f06c9681e195edea3d3732fd040d2c3f9548e8bb573d256c31",
+          "decoded_sample_count": 409754,
+          "model_response": null
+        }
+      ]
+    },
+    {
+      "id": "shipped-story-en",
+      "language": "en",
+      "source_path": "/training/bhw-1-9/resources-monitor-gemini-en-bd29989db088.mp4",
+      "source_sha256": "bd29989db0883f21dff7b0ebcc8bf36cf3db869a46217fde26dea44bc8d84f67",
+      "decoded_pcm_sha256": "1f584a1b413e698e9cc289dd2a46b5c9b5681430323e93be16dd7120eaedafe8",
+      "full_audio_metrics": {
+        "samples": 1910272,
+        "seconds": 79.59466666666667,
+        "rms": 0.08969514877077354,
+        "peak": 0.672149658203125,
+        "quiet_sample_fraction": 0.2548024574510855
+      },
+      "zones": [
+        {
+          "zone": "trial",
+          "index": 0,
+          "text": "Fictional Charlaine proposes a trial: problem, change, owner, baseline, quality and review date. Permission is pending; she does not start.",
+          "start_ms": 0,
+          "end_ms": 10960,
+          "samples": 263040,
+          "seconds": 10.96,
+          "rms": 0.08944618823724648,
+          "peak": 0.593505859375,
+          "quiet_sample_fraction": 0.3041476581508516
+        },
+        {
+          "zone": "compare",
+          "index": 1,
+          "text": "Per hundred printed pages: twenty wrong-version reprints before, five after; fifteen percentage points lower. The seventy-five percent relative reprint reduction proves neither cost savings nor cause.",
+          "start_ms": 11260,
+          "end_ms": 24580,
+          "samples": 319680,
+          "seconds": 13.32,
+          "rms": 0.09839888311588114,
+          "peak": 0.672149658203125,
+          "quiet_sample_fraction": 0.18185372872872874
+        },
+        {
+          "zone": "communicate",
+          "index": 2,
+          "text": "No internet: propose a controlled approved paper master. Verify the version and seek feedback; team agreement has not been established.",
+          "start_ms": 24880,
+          "end_ms": 35320,
+          "samples": 250560,
+          "seconds": 10.44,
+          "rms": 0.07252501311961904,
+          "peak": 0.578033447265625,
+          "quiet_sample_fraction": 0.24790868454661558
+        },
+        {
+          "zone": "workload",
+          "index": 3,
+          "text": "Five sessions before, ten now. Reprint and quality data are missing. Do not guess rates or savings.",
+          "start_ms": 35620,
+          "end_ms": 43740,
+          "samples": 194880,
+          "seconds": 8.12,
+          "rms": 0.08987989563195761,
+          "peak": 0.576263427734375,
+          "quiet_sample_fraction": 0.24247229064039408
+        },
+        {
+          "zone": "handover",
+          "index": 4,
+          "text": "Propose a version check, owner, replacement, stock-gap contact and review. Confirm unknown fields.",
+          "start_ms": 44040,
+          "end_ms": 52160,
+          "samples": 194880,
+          "seconds": 8.12,
+          "rms": 0.10279472661822553,
+          "peak": 0.655975341796875,
+          "quiet_sample_fraction": 0.21617918719211823
+        },
+        {
+          "zone": "practice",
+          "index": 5,
+          "text": "Dummy paperwork: feedback and retry. Peer or solo rehearsal is not trainer observation. Protect hand hygiene and timely service.",
+          "start_ms": 52460,
+          "end_ms": 62540,
+          "samples": 241920,
+          "seconds": 10.08,
+          "rms": 0.09585411415129719,
+          "peak": 0.647430419921875,
+          "quiet_sample_fraction": 0.23776455026455026
+        },
+        {
+          "zone": "check",
+          "index": 6,
+          "text": "Half the sessions were canceled, halving paper use: improvement is not established. Separate reprints from missing workload, quality and costs. Propose the master and handover, without claiming success or savings.",
+          "start_ms": 62840,
+          "end_ms": 78360,
+          "samples": 372480,
+          "seconds": 15.52,
+          "rms": 0.08966363663199658,
+          "peak": 0.63519287109375,
+          "quiet_sample_fraction": 0.1792149914089347
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 0,
+          "end": 10.96,
+          "file": "shipped-story-en-name.wav",
+          "excerpt_sha256": "36cf75217fed8db917d04c133c4b11016cbf348f38ef9a7b6feac572536e2255",
+          "decoded_sample_count": 263040,
+          "model_response": null
+        },
+        {
+          "kind": "body",
+          "start": 0,
+          "end": 10.96,
+          "file": "shipped-story-en-body.wav",
+          "excerpt_sha256": "36cf75217fed8db917d04c133c4b11016cbf348f38ef9a7b6feac572536e2255",
+          "decoded_sample_count": 263040,
+          "model_response": null
+        },
+        {
+          "kind": "critical",
+          "start": 0,
+          "end": 24.58,
+          "file": "shipped-story-en-critical.wav",
+          "excerpt_sha256": "e0fc53ca7af47053762c3206d3b4919e3e3a42c8d34d7b3a2565beecf229540c",
+          "decoded_sample_count": 589920,
+          "model_response": null
+        },
+        {
+          "kind": "ending",
+          "start": 62.84,
+          "end": 79.59466666666667,
+          "file": "shipped-story-en-ending.wav",
+          "excerpt_sha256": "6f454b73f972c1ea8e980b2d125ca8137809b1de520a03b429b0cb23a1aea759",
+          "decoded_sample_count": 402112,
+          "model_response": null
+        }
+      ]
+    }
+  ],
+  "actual_recordings": 16,
+  "actual_focused_excerpts": 64,
+  "successful_model_reviews": 0,
+  "provider_failures": 0,
+  "status": "decoded metrics only"
+}

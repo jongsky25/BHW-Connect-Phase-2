@@ -1,3 +1,4 @@
+import {ResourcesMonitorStory, calculateResourcesMonitorMetadata, RESOURCES_MONITOR_FPS, RESOURCES_MONITOR_FALLBACK_DURATION} from "./resources-monitor/ResourcesMonitorStory";
 import {ResourcesAuditStory, calculateResourcesAuditMetadata, RESOURCES_AUDIT_FALLBACK_DURATION, RESOURCES_AUDIT_FPS} from "./resources-audit/ResourcesAuditStory";
 import {ResourcesSafeChangeStory, RESOURCES_SAFE_CHANGE_FPS, RESOURCES_SAFE_CHANGE_FALLBACK_DURATION, calculateResourcesSafeChangeMetadata} from "./resources-safe-change/ResourcesSafeChangeStory";
 import {SafetyDemonstrateStory, calculateSafetyDemonstrateMetadata, SAFETY_DEMONSTRATE_FPS, SAFETY_DEMONSTRATE_FALLBACK_DURATION} from "./safety-demonstrate/SafetyDemonstrateStory";
@@ -459,6 +460,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`resources-audit-${language}`} id={language === "fil" ? "ResourcesAuditStoryFil" : "ResourcesAuditStoryEn"}
           component={ResourcesAuditStory} calculateMetadata={calculateResourcesAuditMetadata}
           durationInFrames={RESOURCES_AUDIT_FALLBACK_DURATION} fps={RESOURCES_AUDIT_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`resources-monitor-${language}`} id={language === "fil" ? "ResourcesMonitorStoryFil" : "ResourcesMonitorStoryEn"}
+          component={ResourcesMonitorStory} calculateMetadata={calculateResourcesMonitorMetadata}
+          durationInFrames={RESOURCES_MONITOR_FALLBACK_DURATION} fps={RESOURCES_MONITOR_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

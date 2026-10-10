@@ -1,0 +1,1470 @@
+{
+  "captured_at": "2026-10-10T12:17:26.721Z",
+  "source_commit": "d490ae0aaa81fd0e8276b48106cdc300bd9e458f",
+  "method": "3 bounded published lesson/revision/private-note rows via loader admin; read-only; no learner identities or progress retrieved",
+  "rows": [
+    {
+      "lesson": {
+        "id": "59cea10b-f0e8-4fa9-837f-77b8504f4e77",
+        "module_id": "586f0588-2776-42b0-be1c-bc88c4ef825f",
+        "lesson_key": "resources-monitor",
+        "position": 2,
+        "title_fil": "Subukan at subaybayan",
+        "title_en": "Try and monitor",
+        "objectives_fil": [
+          "Magmungkahi ng maliit na trial na may owner at review date, at ihambing ang resource use sa magkatulad na workload kasama ang kalidad ng serbisyo."
+        ],
+        "objectives_en": [
+          "Propose a small trial with an owner and review date, and compare resource use at comparable workloads alongside service quality."
+        ],
+        "required": true,
+        "published_revision_id": "4ed4cf49-dc30-4b4a-9208-0bec4284bea0"
+      },
+      "revision": {
+        "id": "4ed4cf49-dc30-4b4a-9208-0bec4284bea0",
+        "lesson_id": "59cea10b-f0e8-4fa9-837f-77b8504f4e77",
+        "revision_key": "02e70ce71b70abcc435917319407b0b7138b99d067769f861b4e8bfb3abf2610",
+        "content_hash": "02e70ce71b70abcc435917319407b0b7138b99d067769f861b4e8bfb3abf2610",
+        "read_sections": [
+          {
+            "id": "trial",
+            "check": null,
+            "body_en": "Elena, 38, is preparing a trial to reduce incorrect printouts at the BHS. The team needs an agreement and a measure of correct, timely materials.\n\nElena proposes checking the approved handout before each print run. She prepares the checklist, the midwife confirms the version, and after two weeks they review incorrect printouts and any delayed sessions. Record session counts to compare similar workloads. Share results and revise the process if quality suffers. Agree on the change rather than issuing a new rule to everyone without discussion.",
+            "body_fil": "Si Elena, 38, ay naghahanda ng trial upang bawasan ang maling printout sa BHS. Kailangan ang kasunduan ng team at sukatan ng tama at napapanahong materyal.\n\nMungkahi ni Elena: i-check ang approved handout bago bawat print run. Siya ang maghahanda ng checklist, ang midwife ang kukumpirma sa bersyon, at susuriin nila makalipas ang dalawang linggo ang bilang ng maling printout at kung may naantalang session. Itala ang bilang ng sessions upang makumpara ang magkatulad na trabaho. Ibahagi ang resulta sa kasama at baguhin ang proseso kung may epekto sa kalidad. Ang pagbabago ay kailangang napagkasunduan, hindi basta bagong utos sa lahat.",
+            "asset_ids": [],
+            "heading_en": "One change, an owner and a measure",
+            "concept_ids": [
+              "m9.communicate",
+              "m9.review"
+            ],
+            "heading_fil": "Isang pagbabago, may may-ari at sukatan",
+            "takeaway_en": "A sustainable practice has an owner, measured results and regular review.",
+            "takeaway_fil": "Ang sustainable na gawi ay may responsable, sinusukat na resulta at regular na review."
+          },
+          {
+            "id": "compare",
+            "check": {
+              "options": [
+                {
+                  "en": "Fifteen fewer per 100 pages; also check comparable workload and correct materials.",
+                  "fil": "Bawas na 15 bawat 100 pahina; suriin din kung magkatulad ang workload at tama ang materyal."
+                },
+                {
+                  "en": "Costs are certainly 75% lower.",
+                  "fil": "Siguradong 75% na mas mababa ang gastos."
+                },
+                {
+                  "en": "Session counts and quality do not matter.",
+                  "fil": "Hindi kailangan ng bilang ng session o kalidad."
+                }
+              ],
+              "prompt_en": "Wrong-version reprints fell from 20/100 to 5/100 pages. What is the sound report?",
+              "prompt_fil": "Bumaba ang maling-bersyong reprint mula 20/100 tungong 5/100 pahina. Ano ang tamang ulat?",
+              "feedback_en": "The first response uses the correct rate and checks quality. A reprint rate is not total cost; workload and service must also be considered.",
+              "feedback_fil": "Ang unang sagot ay tama sa sukat at sinusuri ang kalidad. Hindi katumbas ng reprint rate ang kabuuang gastos; kailangan ang workload at serbisyo upang maunawaan ang resulta.",
+              "correct_option_index": 0
+            },
+            "body_en": "Fictional data: previously, 20 of 100 printed pages had to be reprinted because the version was wrong; after the checklist, 5 of 100. Reprints decreased by 15 per 100 pages, from 20% to 5%. Before declaring success, check whether session types were comparable and participants still received correct materials. Patient names are unnecessary for measuring print waste.",
+            "body_fil": "Kathang-isip na datos: dati, 20 sa 100 printed pages ang inuulit dahil maling bersyon; matapos ang checklist, 5 sa 100. Bumaba ang reprints ng 15 bawat 100 pahina, mula 20% tungong 5%. Bago sabihing matagumpay, itanong kung pareho ang uri ng sessions at kung nakatanggap pa rin ng tamang materyal ang mga kalahok. Hindi kailangan ng patient name para masukat ang print waste.",
+            "asset_ids": [],
+            "heading_en": "Try a simple comparison",
+            "concept_ids": [
+              "m9.review"
+            ],
+            "heading_fil": "Subukan ang simpleng paghahambing",
+            "takeaway_en": "Compare resources across similar work and check quality too.",
+            "takeaway_fil": "Ihambing ang resources sa magkatulad na gawain at tingnan din ang kalidad."
+          },
+          {
+            "id": "communicate",
+            "check": {
+              "options": [
+                {
+                  "en": "Tell the colleague to download it anyway.",
+                  "fil": "Sabihing mag-download na lang kahit walang internet."
+                },
+                {
+                  "en": "Prepare a controlled paper master, verify its version and ask for the colleague’s feedback.",
+                  "fil": "Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna ng kasama."
+                },
+                {
+                  "en": "Use any old copy in the drawer.",
+                  "fil": "Gamitin ang anumang lumang kopya sa drawer."
+                }
+              ],
+              "prompt_en": "A colleague who prints handouts has no internet. What should the trial include?",
+              "prompt_fil": "Walang internet ang kasamang magpi-print ng handout. Ano ang dapat isama sa trial?",
+              "feedback_en": "The second response addresses the barrier while controlling the version and seeking feedback. An impossible download or unapproved old copy does not solve it.",
+              "feedback_fil": "Ang ikalawang sagot ay umaangkop sa hadlang habang kontrolado ang bersyon at may puna mula sa kasama. Hindi solusyon ang hindi magawang download o hindi aprubadong lumang kopya.",
+              "correct_option_index": 1
+            },
+            "body_en": "Describe waste without blame: “There are two versions in the drawer, which causes reprinting.” Present the proposal, responsibilities and review date. Ask colleagues about overlooked barriers, such as lack of internet for the updated file. A controlled paper master may be needed. Resourcefulness finds safe, approved alternatives rather than bypassing policy.",
+            "body_fil": "Sabihin ang napansing aksaya nang walang paninisi: “May dalawang bersyon sa drawer kaya may nauulit na print.” Ilahad ang mungkahi, sino ang may trabaho at kailan rerepasuhin. Tanungin ang kasama kung may hadlang na hindi nakita, tulad ng walang internet para kunin ang bagong file. Maaaring kailangan ang controlled paper master. Ang resourcefulness ay paghahanap ng ligtas at aprubadong alternatibo, hindi paglabag sa policy.",
+            "asset_ids": [],
+            "heading_en": "Share the proposal with colleagues",
+            "concept_ids": [
+              "m9.communicate"
+            ],
+            "heading_fil": "Ibahagi ang mungkahi sa kasama",
+            "takeaway_en": "A change lasts when colleagues understand it and can carry it out.",
+            "takeaway_fil": "Mas napapanatili ang pagbabago kapag naiintindihan at kayang gawin ng kasama."
+          },
+          {
+            "id": "workload",
+            "check": null,
+            "body_en": "One week has five teaching sessions and the next has ten. Total paper use can rise even when the process improves. Compare correct materials and reprints per session or per 100 pages, alongside complaints or delays. Do not claim savings from a raw total alone. Distinguish workload changes from process changes.",
+            "body_fil": "Isang linggo ay 5 ang teaching sessions; sa susunod ay 10. Maaaring dumami ang nagamit na papel kahit mas mahusay ang proseso. Ihambing ang wastong materyal at reprints kada session o bawat 100 pahina, kasama ang anumang reklamo o delay. Huwag mag-claim ng savings mula sa raw total lamang. Ihiwalay ang pagbabago sa workload mula sa pagbabago sa paraan.",
+            "asset_ids": [],
+            "heading_en": "When workloads differ",
+            "concept_ids": [
+              "m9.review"
+            ],
+            "heading_fil": "Kapag iba-iba ang workload",
+            "takeaway_en": "A fair comparison accounts for the amount of work performed.",
+            "takeaway_fil": "Ang patas na paghahambing ay isinasaalang-alang ang dami ng trabahong ginawa."
+          },
+          {
+            "id": "handover",
+            "check": null,
+            "body_en": "When Elena is absent, a colleague should still be able to use the teaching kit and checklist. Keep a short routine at the work area, orient new colleagues and identify who receives stock-gap reports. During review, remove unhelpful steps and preserve necessary safeguards. A sustainable system does not depend on one diligent person’s memory.",
+            "body_fil": "Kapag wala si Elena, dapat magamit pa rin ng kapalit ang teaching kit at checklist. Ilagay ang maikling routine sa lugar ng trabaho, ituro sa bagong kasama at tukuyin kung kanino iuulat ang stock gap. Sa review, alisin ang hakbang na walang silbi at panatilihin ang proteksyong kailangan. Ang sustainable na sistema ay hindi umaasa sa alaala ng iisang masipag na tao.",
+            "asset_ids": [],
+            "heading_en": "Keep the routine when people change",
+            "concept_ids": [
+              "m9.organize",
+              "m9.review"
+            ],
+            "heading_fil": "Panatilihin kahit magpalit ng tao",
+            "takeaway_en": "A routine that colleagues can inherit lasts longer than an individual workaround.",
+            "takeaway_fil": "Ang routine na naipapasa sa kasama ay mas tumatagal kaysa personal na diskarte lamang."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Fill a trial card: problem, change, owner, baseline, quality measure, review date. Use 20/100 and 5/100 for a fair comparison. In pairs, one colleague has no internet; explain the controlled paper master and handover. Alone, write the replacement colleague’s routine. Ask the team to review the trial before starting and set a review date.",
+            "body_fil": "Punan ang trial card: problema, pagbabago, owner, baseline, sukatan ng kalidad, review date. Gamitin ang 20/100 at 5/100 para sa patas na paghahambing. Magpares: isa ang kasamahang walang internet; ipaliwanag ang controlled paper master at handover. Kung mag-isa, isulat ang magiging routine ng kapalit. Sa team meeting, ipasuri ang trial bago simulan at magtakda ng review.",
+            "asset_ids": [
+              "resource-monitor"
+            ],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m9.communicate",
+              "m9.review",
+              "m9.organize"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "Lower consumption is a success only when correct, safe service is still delivered.",
+            "takeaway_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "This does not yet show improvement; compare use per session and services delivered.",
+                  "fil": "Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo."
+                },
+                {
+                  "en": "It is a success because the bill is lower.",
+                  "fil": "Tagumpay na dahil mas mababa ang bill."
+                },
+                {
+                  "en": "No review is needed because less paper was used.",
+                  "fil": "Wala nang kailangang review dahil nabawasan ang papel."
+                }
+              ],
+              "prompt_en": "Paper use halved because half the sessions were canceled. What can be concluded?",
+              "prompt_fil": "Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?",
+              "feedback_en": "The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved.",
+              "feedback_fil": "Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.",
+              "correct_option_index": 0
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m9.communicate",
+              "m9.review",
+              "m9.organize"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "Lower consumption is a success only when correct, safe service is still delivered.",
+            "takeaway_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-trial",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Trial: check the approved handout before printing. Elena owns the checklist; the midwife confirms the version. After two weeks, review incorrect printouts, session counts and delays. Revise if quality suffers.",
+            "heading_en": "One change, an owner and a measure",
+            "concept_ids": [
+              "m9.communicate",
+              "m9.review"
+            ],
+            "display_fil": "Trial: check ng approved handout bago printing. Elena: checklist. Midwife: version confirmation. Pagkaraan ng dalawang linggo: maling printout, session count at delays. Talakayin at baguhin kung bumaba ang kalidad.",
+            "heading_fil": "Isang pagbabago, may may-ari at sukatan"
+          },
+          {
+            "id": "slide-compare",
+            "check": {
+              "options": [
+                {
+                  "en": "Fifteen fewer per 100 pages; also check comparable workload and correct materials.",
+                  "fil": "Bawas na 15 bawat 100 pahina; suriin din kung magkatulad ang workload at tama ang materyal."
+                },
+                {
+                  "en": "Costs are certainly 75% lower.",
+                  "fil": "Siguradong 75% na mas mababa ang gastos."
+                },
+                {
+                  "en": "Session counts and quality do not matter.",
+                  "fil": "Hindi kailangan ng bilang ng session o kalidad."
+                }
+              ],
+              "prompt_en": "Wrong-version reprints fell from 20/100 to 5/100 pages. What is the sound report?",
+              "prompt_fil": "Bumaba ang maling-bersyong reprint mula 20/100 tungong 5/100 pahina. Ano ang tamang ulat?",
+              "feedback_en": "The first response uses the correct rate and checks quality. A reprint rate is not total cost; workload and service must also be considered.",
+              "feedback_fil": "Ang unang sagot ay tama sa sukat at sinusuri ang kalidad. Hindi katumbas ng reprint rate ang kabuuang gastos; kailangan ang workload at serbisyo upang maunawaan ang resulta.",
+              "correct_option_index": 0
+            },
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Example: reprints 20/100 before → 5/100 after. A reduction of 15 per 100 pages, from 20% to 5%. Check comparable sessions and correct materials. No patient names are needed.",
+            "heading_en": "Try a simple comparison",
+            "concept_ids": [
+              "m9.review"
+            ],
+            "display_fil": "Halimbawa: reprints 20/100 noon → 5/100 ngayon. Bawas na 15 bawat 100 pahina, mula 20% tungong 5%. Suriin kung magkatulad ang session at tama pa rin ang materyal. Walang patient names na kailangan.",
+            "heading_fil": "Subukan ang simpleng paghahambing"
+          },
+          {
+            "id": "slide-communicate",
+            "check": {
+              "options": [
+                {
+                  "en": "Tell the colleague to download it anyway.",
+                  "fil": "Sabihing mag-download na lang kahit walang internet."
+                },
+                {
+                  "en": "Prepare a controlled paper master, verify its version and ask for the colleague’s feedback.",
+                  "fil": "Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna ng kasama."
+                },
+                {
+                  "en": "Use any old copy in the drawer.",
+                  "fil": "Gamitin ang anumang lumang kopya sa drawer."
+                }
+              ],
+              "prompt_en": "A colleague who prints handouts has no internet. What should the trial include?",
+              "prompt_fil": "Walang internet ang kasamang magpi-print ng handout. Ano ang dapat isama sa trial?",
+              "feedback_en": "The second response addresses the barrier while controlling the version and seeking feedback. An impossible download or unapproved old copy does not solve it.",
+              "feedback_fil": "Ang ikalawang sagot ay umaangkop sa hadlang habang kontrolado ang bersyon at may puna mula sa kasama. Hindi solusyon ang hindi magawang download o hindi aprubadong lumang kopya.",
+              "correct_option_index": 1
+            },
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "“Two versions in the drawer cause reprinting.” Explain the proposal, owner and review date. Ask about barriers such as no internet; a controlled paper master may be needed.",
+            "heading_en": "Share the proposal with colleagues",
+            "concept_ids": [
+              "m9.communicate"
+            ],
+            "display_fil": "“Dalawang bersyon sa drawer ang sanhi ng reprinting.” Ibigay ang mungkahi, owner at review date. Itanong ang hadlang gaya ng walang internet; maaaring kailangan ang controlled paper master.",
+            "heading_fil": "Ibahagi ang mungkahi sa kasama"
+          },
+          {
+            "id": "slide-workload",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Five sessions before, ten now: totals can rise even when the process improves. Compare reprints per session or per 100 pages, alongside complaints and delays.",
+            "heading_en": "When workloads differ",
+            "concept_ids": [
+              "m9.review"
+            ],
+            "display_fil": "Limang session noon, sampu ngayon: maaaring tumaas ang total kahit bumuti ang proseso. Ihambing ang reprints bawat session o bawat 100 pahina, kasama ang complaints at delays.",
+            "heading_fil": "Kapag iba-iba ang workload"
+          },
+          {
+            "id": "slide-handover",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "When Elena is absent, the kit must still work. Leave a short routine, orient the next person and name the stock-gap reporting contact. Remove unhelpful steps during review while preserving safeguards.",
+            "heading_en": "Keep the routine when people change",
+            "concept_ids": [
+              "m9.organize",
+              "m9.review"
+            ],
+            "display_fil": "Kapag wala si Elena, dapat magamit pa rin ang kit. Iwan ang maikling routine, ituro sa kapalit at tukuyin ang tatanggap ng stock-gap reports. Sa review, alisin ang walang silbing hakbang at panatilihin ang safeguards.",
+            "heading_fil": "Panatilihin kahit magpalit ng tao"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [
+              "resource-monitor"
+            ],
+            "display_en": "Trial card: owner, baseline, quality, review date. 20/100 → 5/100. Compare like workloads and check that service remains correct.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m9.communicate",
+              "m9.review",
+              "m9.organize"
+            ],
+            "display_fil": "Trial card: owner, baseline, kalidad, review date. 20/100 → 5/100. Ihambing ang parehong workload at tiyaking tama pa rin ang serbisyo.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "This does not yet show improvement; compare use per session and services delivered.",
+                  "fil": "Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo."
+                },
+                {
+                  "en": "It is a success because the bill is lower.",
+                  "fil": "Tagumpay na dahil mas mababa ang bill."
+                },
+                {
+                  "en": "No review is needed because less paper was used.",
+                  "fil": "Wala nang kailangang review dahil nabawasan ang papel."
+                }
+              ],
+              "prompt_en": "Paper use halved because half the sessions were canceled. What can be concluded?",
+              "prompt_fil": "Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?",
+              "feedback_en": "The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved.",
+              "feedback_fil": "Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.",
+              "correct_option_index": 0
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "Lower consumption is a success only when correct, safe service is still delivered.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m9.communicate",
+              "m9.review",
+              "m9.organize"
+            ],
+            "display_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m9.communicate",
+            "read_ids": [
+              "trial",
+              "communicate",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-trial",
+              "slide-communicate",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217"
+            ]
+          },
+          {
+            "id": "m9.review",
+            "read_ids": [
+              "trial",
+              "compare",
+              "workload",
+              "handover",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-trial",
+              "slide-compare",
+              "slide-workload",
+              "slide-handover",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217"
+            ]
+          },
+          {
+            "id": "m9.organize",
+            "read_ids": [
+              "handover",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-handover",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              19,
+              22
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              14,
+              30
+            ]
+          },
+          {
+            "id": "tesda-400311217",
+            "url": "https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+            "title": "TESDA BHS NC II Revision 01 (2019), unit 400311217",
+            "pdf_pages": [
+              33,
+              34,
+              35
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "id": "resource-monitor",
+            "path": "/training/module-1-9/monitor-c5d2eff5ad98.svg",
+            "alt_en": "Track resources and quality before and after a change, then decide whether to continue or stop.",
+            "alt_fil": "Subaybayan ang resources at kalidad bago at pagkatapos ng pagbabago, saka magpasya kung itutuloy o ihihinto.",
+            "caption_en": "Compare results and quality before keeping a change.",
+            "provenance": "Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.",
+            "caption_fil": "Ihambing ang resulta at kalidad bago panatilihin ang pagbabago.",
+            "content_hash": "c5d2eff5ad98b21709e3da13cd770cddb33b8c4ff86920ddec30578d742a42b6",
+            "review_status": "approved"
+          }
+        ],
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "4ed4cf49-dc30-4b4a-9208-0bec4284bea0",
+          "notes_fil": "## [purpose] Layunin\n\nMagmungkahi ng maliit na trial na may owner at review date, at ihambing ang resource use sa magkatulad na workload kasama ang kalidad ng serbisyo.\n\n## [time-materials] Oras at kagamitan\n\n60 minuto para sa pagsasanay na pinamumunuan ng facilitator. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang dalawang halimbawang 100-page tally at blank trial card. Tiyakin kung sino ang may authority sa approved version at trial.\n\n## [opening] Pambungad\n\nKalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nSa comparison check, bumaba ang reprint ng 15 bawat 100 pahina; tiyaking maihahambing ang workload at tama pa rin ang materyal. Hindi patunay ang rate na ito na 75% ang nabawas sa gastos.\n\nSa communication check, tugunan ang kawalan ng internet sa pamamagitan ng kontroladong papel na master, pagtitiyak sa bersyon at paghingi ng puna ng kasama. Huwag gumamit ng hindi aprubadong lumang kopya.\n\nAng unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.\n\n## [misconception] Karaniwang pagkakamali\n\nIpinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo. Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.\n\n## [practice] Gawaing pagsasanay\n\nPunan ang trial card: problema, pagbabago, owner, baseline, sukatan ng kalidad, review date. Gamitin ang 20/100 at 5/100 para sa patas na paghahambing. Magpares: isa ang kasamahang walang internet; ipaliwanag ang controlled paper master at handover. Kung mag-isa, isulat ang magiging routine ng kapalit. Sa team meeting, ipasuri ang trial bago simulan at magtakda ng review.\n\n## [answer-key] Susi sa sagot\n\nComparison check: 1. Bawas na 15 reprint bawat 100 pahina; suriin ang workload at tamang materyal.\n\nCommunication check: 2. Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna.\n\n1. Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo.\n\nAng unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.\n\n## [observe] Obserbahan\n\nMay owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover.\n\nKaya na: May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Kumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat session o bawat 100 pahina.\n\nHindi pa: Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nKumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat session o bawat 100 pahina. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. Instructional expansion ito ng ikasiyam na competency, hindi hiwalay na manual chapter. Ang draft crosswalk sa TESDA 400311217 ay nasa review report; kailangan pa ng assessor review at lokal na work procedures. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n\r\n",
+          "notes_en": "## [purpose] Purpose\n\nPropose a small trial with an owner and review date, and compare resource use at comparable workloads alongside service quality.\n\n## [time-materials] Time and materials\n\n60 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare the two fictional 100-page tallies and a blank trial card. Confirm authority for the approved version and trial.\n\n## [opening] Opening\n\nPaper use halved because half the sessions were canceled. What can be concluded?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nFor the comparison check, reprints fell by 15 per 100 pages; confirm that workload and correct materials remained comparable. This rate does not prove a 75% reduction in cost.\n\nFor the communication check, address the no-internet barrier with a controlled paper master, version verification and colleague feedback. Do not substitute an unapproved old copy.\n\nThe first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved.\n\n## [misconception] Common misconception\n\nDeclares lower totals a success despite reduced or canceled services. Lower consumption is a success only when correct, safe service is still delivered.\n\n## [practice] Practice activity\n\nFill a trial card: problem, change, owner, baseline, quality measure, review date. Use 20/100 and 5/100 for a fair comparison. In pairs, one colleague has no internet; explain the controlled paper master and handover. Alone, write the replacement colleague’s routine. Ask the team to review the trial before starting and set a review date.\n\n## [answer-key] Answer key\n\nComparison check: 1. Fifteen fewer reprints per 100 pages; check comparable workload and correct materials.\n\nCommunication check: 2. Prepare a controlled paper master, verify its version and ask for feedback.\n\n1. This does not yet show improvement; compare use per session and services delivered.\n\nThe first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved.\n\n## [observe] Observe\n\nSpecifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover.\n\nReady: Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover. Completes this without prompting.\n\nNeeds practice: Completes the plan but compares raw totals only; prompt for per-session or per-100-page measures.\n\nNot yet: Declares lower totals a success despite reduced or canceled services.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nCompletes the plan but compares raw totals only; prompt for per-session or per-100-page measures. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. This expands the ninth competency rather than a standalone manual chapter. The draft TESDA 400311217 crosswalk is in the review report; assessor review and local work procedures remain pending. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n\r\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover. Completes this without prompting.",
+                "hindi_pa_en": "Declares lower totals a success despite reduced or canceled services.",
+                "kaya_na_fil": "May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.",
+                "kailangan_practice_en": "Completes the plan but compares raw totals only; prompt for per-session or per-100-page measures.",
+                "kailangan_practice_fil": "Kumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat session o bawat 100 pahina."
+              },
+              "not_yet_en": "Declares lower totals a success despite reduced or canceled services.",
+              "not_yet_fil": "Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.",
+              "observable_en": "Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover.",
+              "observable_fil": "May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "73e5e389-0f41-4ef5-aadf-aa368da6a863",
+        "module_id": "586f0588-2776-42b0-be1c-bc88c4ef825f",
+        "lesson_key": "resources-audit",
+        "position": 0,
+        "title_fil": "Saan nasasayang ang resources?",
+        "title_en": "Where are resources wasted?",
+        "objectives_fil": [
+          "Sa halimbawang BHS, itala ang tatlong pag-aaksaya, ang ebidensya at isang ligtas na routine na makababawas sa paghahanap o dobleng pag-order."
+        ],
+        "objectives_en": [
+          "In a sample BHS, record three sources of waste, their evidence and a safe routine that reduces searching or duplicate ordering."
+        ],
+        "required": true,
+        "published_revision_id": "3e6b79be-fef9-46e4-8ec3-85787b98b51f"
+      },
+      "revision": {
+        "id": "3e6b79be-fef9-46e4-8ec3-85787b98b51f",
+        "lesson_id": "73e5e389-0f41-4ef5-aadf-aa368da6a863",
+        "revision_key": "76c21b6b6549f118c2029619560e52596ce5eaf423feca2dec846dedfeeced43",
+        "content_hash": "76c21b6b6549f118c2029619560e52596ce5eaf423feca2dec846dedfeeced43",
+        "read_sections": [
+          {
+            "id": "elena",
+            "check": null,
+            "body_en": "BHW Elena, 38, is preparing health teaching at the BHS. A tap leaks, incorrect handouts are repeatedly printed, and missing supplies are bought again. She does not immediately conclude that the budget is too small. She records where water, paper, electricity and time are being wasted. Effective workplace practice delivers needed services while reducing wasted resources.",
+            "body_fil": "Si BHW Elena, 38 anyos, ay naghahanda ng health teaching sa BHS. May tumutulong gripo, paulit-ulit na maling printout at mga gamit na hindi makita kaya bumibili ulit. Hindi agad “kulang ang budget” ang konklusyon niya. Itinala niya kung saan nauubos ang tubig, papel, kuryente at oras. Ang mabisang gawi ay naghahatid ng kinakailangang serbisyo habang binabawasan ang nasasayang na resources.",
+            "asset_ids": [],
+            "heading_en": "Supplies run out before the week ends",
+            "concept_ids": [
+              "m9.competency",
+              "m9.resources"
+            ],
+            "heading_fil": "Ubos ang supplies bago matapos ang linggo",
+            "takeaway_en": "Identify wasted resources before choosing a saving measure.",
+            "takeaway_fil": "Tukuyin muna ang nasasayang na resources bago pumili ng pagtitipid."
+          },
+          {
+            "id": "inventory",
+            "check": {
+              "options": [
+                {
+                  "en": "Distribute the old copies so they are not wasted.",
+                  "fil": "Ipamahagi ang luma para hindi masayang."
+                },
+                {
+                  "en": "Relabel the old copies as approved.",
+                  "fil": "Palitan ang label at ituring na aprubado ang luma."
+                },
+                {
+                  "en": "Set aside the old copies, verify the approved master and request current copies.",
+                  "fil": "Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya."
+                }
+              ],
+              "prompt_en": "The kit has four outdated handouts and no current version. What is the safe next step?",
+              "prompt_fil": "May apat na lumang handout at walang kasalukuyang bersyon sa kit. Ano ang ligtas na susunod na hakbang?",
+              "feedback_en": "The third response protects correct information. An outdated version does not become valid because disposal feels wasteful or its label is changed.",
+              "feedback_fil": "Ang ikatlong sagot ang nagpoprotekta sa tamang impormasyon. Hindi nagiging tama ang lumang bersyon dahil sayang itong itapon o palitan ang label.",
+              "correct_option_index": 2
+            },
+            "body_en": "Assign labeled places for approved supplies. Count stock before requesting more and check expiry under the local inventory procedure. Separate and report expired or damaged items; do not distribute them simply to use them up. Return reusable teaching materials to their place. Orderly storage reduces duplicate ordering and searching time while making real shortages visible.",
+            "body_fil": "Maglaan ng may-label na lugar para sa aprubadong supplies. Bilangin ang stock bago humingi ng dagdag at suriin ang expiry ayon sa lokal na inventory procedure. Ihiwalay at iulat ang expired o sirang gamit; huwag ipamigay para lang maubos. Ibalik sa tamang lugar ang reusable teaching materials. Ang orderly storage ay nakababawas sa duplicate orders at oras ng paghahanap, habang madaling makita ang tunay na kakulangan.",
+            "asset_ids": [],
+            "heading_en": "Find it, count it, return it",
+            "concept_ids": [
+              "m9.organize"
+            ],
+            "heading_fil": "Makita, mabilang, maibalik",
+            "takeaway_en": "Orderly storage supports safe use and accurate resource requests.",
+            "takeaway_fil": "Ang maayos na imbakan ay tumutulong sa ligtas na paggamit at tumpak na paghingi ng resources."
+          },
+          {
+            "id": "seven-s",
+            "check": null,
+            "body_en": "Use 7S to maintain order: remove unnecessary items, arrange what is needed, clean the area, standardize the method, ensure safety, practice self-discipline and sustain the routine. For example, give the teaching kit a label, contents checklist, cleaning schedule and a person checking it before and after use. A single cleanup is insufficient if disorder returns the following week.",
+            "body_fil": "Gamitin ang 7S upang mapanatili ang kaayusan: alisin ang hindi kailangan, ayusin ang kailangan, linisin ang lugar, magtakda ng pare-parehong paraan, gawing ligtas, gawin ang tungkulin nang hindi laging inuutusan, at ipagpatuloy ang routine. Halimbawa, may label ang teaching kit, checklist ng laman, nakatakdang paglilinis at taong sumusuri bago at matapos gamitin. Hindi sapat ang isang “general cleaning” kung babalik sa dating kalat sa susunod na linggo.",
+            "asset_ids": [],
+            "heading_en": "7S as a daily routine",
+            "concept_ids": [
+              "m9.organize"
+            ],
+            "heading_fil": "7S bilang araw-araw na routine",
+            "takeaway_en": "A simple routine and clear responsibility sustain order.",
+            "takeaway_fil": "Ang kaayusan ay pinananatili ng simpleng routine at pananagutan."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Make an audit with resource, observed waste, evidence and a safe next step. Use Elena’s three examples; do not invent bills or quantities. Show a partner how labels and stock counts prevent duplicate orders. Alone, check a fictional teaching kit. At the next duty, observe one resource and discuss findings with the supervisor.",
+            "body_fil": "Gumawa ng audit na may resource, nakitang pag-aaksaya, ebidensya at ligtas na susunod na hakbang. Gamitin ang tatlong halimbawa ni Elena; huwag mag-imbento ng bill o dami. Ipakita sa kapareha kung paano ang label at stock count ay iiwas sa dobleng order. Kung mag-isa, sundan ang checklist gamit ang kunwaring teaching kit. Sa susunod na duty, obserbahan ang isang resource at talakayin ang findings sa supervisor.",
+            "asset_ids": [
+              "resource-audit"
+            ],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m9.competency",
+              "m9.resources",
+              "m9.organize"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
+            "takeaway_fil": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "Order twice as many immediately.",
+                  "fil": "Mag-order agad ng doble para sigurado."
+                },
+                {
+                  "en": "Check labeled storage, approved version and stock count.",
+                  "fil": "Suriin ang labeled storage, approved version at bilang ng stock."
+                },
+                {
+                  "en": "Use any old handout that can be found.",
+                  "fil": "Gamitin ang anumang lumang handout na makita."
+                }
+              ],
+              "prompt_en": "Handouts cannot be found, so someone wants to reorder. What first?",
+              "prompt_fil": "Hindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?",
+              "feedback_en": "The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.",
+              "feedback_fil": "Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.",
+              "correct_option_index": 1
+            },
+            "body_en": "Choose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.",
+            "body_fil": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+            "asset_ids": [],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m9.competency",
+              "m9.resources",
+              "m9.organize"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
+            "takeaway_fil": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-elena",
+            "check": null,
+            "layout": "scene",
+            "asset_ids": [],
+            "display_en": "Elena, 38, finds a leaking tap, repeated printing and misplaced supplies. Record wasted water, paper, electricity and time before proposing changes.",
+            "heading_en": "Supplies run out before the week ends",
+            "concept_ids": [
+              "m9.competency",
+              "m9.resources"
+            ],
+            "display_fil": "Si Elena, 38, ay nakakita ng tumutulong gripo, paulit-ulit na printing at gamit na hindi makita. Itala ang nasasayang na tubig, papel, kuryente at oras bago magmungkahi ng pagbabago.",
+            "heading_fil": "Ubos ang supplies bago matapos ang linggo"
+          },
+          {
+            "id": "slide-inventory",
+            "check": {
+              "options": [
+                {
+                  "en": "Distribute the old copies so they are not wasted.",
+                  "fil": "Ipamahagi ang luma para hindi masayang."
+                },
+                {
+                  "en": "Relabel the old copies as approved.",
+                  "fil": "Palitan ang label at ituring na aprubado ang luma."
+                },
+                {
+                  "en": "Set aside the old copies, verify the approved master and request current copies.",
+                  "fil": "Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya."
+                }
+              ],
+              "prompt_en": "The kit has four outdated handouts and no current version. What is the safe next step?",
+              "prompt_fil": "May apat na lumang handout at walang kasalukuyang bersyon sa kit. Ano ang ligtas na susunod na hakbang?",
+              "feedback_en": "The third response protects correct information. An outdated version does not become valid because disposal feels wasteful or its label is changed.",
+              "feedback_fil": "Ang ikatlong sagot ang nagpoprotekta sa tamang impormasyon. Hindi nagiging tama ang lumang bersyon dahil sayang itong itapon o palitan ang label.",
+              "correct_option_index": 2
+            },
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "Labeled location → count and expiry check → report expired or damaged items → return reusable teaching materials. Do not distribute expired stock just to use it up.",
+            "heading_en": "Find it, count it, return it",
+            "concept_ids": [
+              "m9.organize"
+            ],
+            "display_fil": "May label na puwesto → bilang at expiry check → report ng expired o damaged → ibalik ang reusable teaching materials. Huwag ipamigay ang expired para maubos lang.",
+            "heading_fil": "Makita, mabilang, maibalik"
+          },
+          {
+            "id": "slide-seven-s",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [],
+            "display_en": "7S: sort, systematize, sweep, standardize, safety, self-discipline, sustain. For a teaching kit: label, checklist, cleaning routine and a person checking before and after use.",
+            "heading_en": "7S as a daily routine",
+            "concept_ids": [
+              "m9.organize"
+            ],
+            "display_fil": "7S: alisin ang di kailangan, ayusin, linisin, standardize, tiyaking ligtas, gawin ang tungkulin, panatilihin. Sa teaching kit: label, checklist, cleaning routine at taong susuri bago at pagkatapos.",
+            "heading_fil": "7S bilang araw-araw na routine"
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [
+              "resource-audit"
+            ],
+            "display_en": "Resource → observed waste → evidence → safe step. Label and count before ordering.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m9.competency",
+              "m9.resources",
+              "m9.organize"
+            ],
+            "display_fil": "Resource → nakitang pag-aaksaya → ebidensya → ligtas na hakbang. Label at bilang bago mag-order.",
+            "heading_fil": "Subukan, saka ulitin"
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "Order twice as many immediately.",
+                  "fil": "Mag-order agad ng doble para sigurado."
+                },
+                {
+                  "en": "Check labeled storage, approved version and stock count.",
+                  "fil": "Suriin ang labeled storage, approved version at bilang ng stock."
+                },
+                {
+                  "en": "Use any old handout that can be found.",
+                  "fil": "Gamitin ang anumang lumang handout na makita."
+                }
+              ],
+              "prompt_en": "Handouts cannot be found, so someone wants to reorder. What first?",
+              "prompt_fil": "Hindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?",
+              "feedback_en": "The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.",
+              "feedback_fil": "Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.",
+              "correct_option_index": 1
+            },
+            "layout": "decision",
+            "asset_ids": [],
+            "display_en": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m9.competency",
+              "m9.resources",
+              "m9.organize"
+            ],
+            "display_fil": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.",
+            "heading_fil": "Piliin ang susunod na hakbang"
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m9.competency",
+            "read_ids": [
+              "elena",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-elena",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217"
+            ]
+          },
+          {
+            "id": "m9.resources",
+            "read_ids": [
+              "elena",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-elena",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217"
+            ]
+          },
+          {
+            "id": "m9.organize",
+            "read_ids": [
+              "inventory",
+              "seven-s",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-inventory",
+              "slide-seven-s",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              19,
+              22,
+              34
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              14,
+              30
+            ]
+          },
+          {
+            "id": "tesda-400311217",
+            "url": "https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+            "title": "TESDA BHS NC II Revision 01 (2019), unit 400311217",
+            "pdf_pages": [
+              33,
+              34,
+              35
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "id": "resource-audit",
+            "path": "/training/module-1-9/audit-ee0994eebb38.svg",
+            "alt_en": "Three resource-audit steps: observe waste, check evidence, and choose a safe action.",
+            "alt_fil": "Tatlong hakbang sa resource audit: obserbahan ang pag-aaksaya, suriin ang ebidensya, at pumili ng ligtas na hakbang.",
+            "caption_en": "Check evidence before changing a routine.",
+            "provenance": "Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.",
+            "caption_fil": "Suriin ang ebidensya bago magbago ng routine.",
+            "content_hash": "ee0994eebb381693311969420c61c13008e10658d13ba7a005e10df3082f7d9f",
+            "review_status": "approved"
+          }
+        ],
+        "featured_asset_id": null
+      },
+      "private_notes": [
+        {
+          "revision_id": "3e6b79be-fef9-46e4-8ec3-85787b98b51f",
+          "notes_fil": "## [purpose] Layunin\n\nSa halimbawang BHS, itala ang tatlong pag-aaksaya, ang ebidensya at isang ligtas na routine na makababawas sa paghahanap o dobleng pag-order.\n\n## [time-materials] Oras at kagamitan\n\n60 minuto para sa pagsasanay na pinamumunuan ng facilitator. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang kunwaring kit, stock count at dalawang bersyon ng handout. Tiyakin kung alin ang aprubado.\n\n## [opening] Pambungad\n\nHindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nSa inventory check, ihiwalay ang lumang handout, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya. Masisira ang tamang impormasyon kung papalitan lang ang label o ipamamahagi ang luma.\n\nAng ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.\n\n## [misconception] Karaniwang pagkakamali\n\nNag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid. Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.\n\n## [practice] Gawaing pagsasanay\n\nGumawa ng audit na may resource, nakitang pag-aaksaya, ebidensya at ligtas na susunod na hakbang. Gamitin ang tatlong halimbawa ni Elena; huwag mag-imbento ng bill o dami. Ipakita sa kapareha kung paano ang label at stock count ay iiwas sa dobleng order. Kung mag-isa, sundan ang checklist gamit ang kunwaring teaching kit. Sa susunod na duty, obserbahan ang isang resource at talakayin ang findings sa supervisor.\n\n## [answer-key] Susi sa sagot\n\nInventory check: 3. Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya.\n\n2. Suriin ang labeled storage, approved version at bilang ng stock.\n\nAng ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.\n\n## [observe] Obserbahan\n\nMay tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon.\n\nKaya na: May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Nakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin.\n\nHindi pa: Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nNakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. Instructional expansion ito ng ikasiyam na competency, hindi hiwalay na manual chapter. Ang draft crosswalk sa TESDA 400311217 ay nasa review report; kailangan pa ng assessor review at lokal na work procedures. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n\r\n",
+          "notes_en": "## [purpose] Purpose\n\nIn a sample BHS, record three sources of waste, their evidence and a safe routine that reduces searching or duplicate ordering.\n\n## [time-materials] Time and materials\n\n60 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare a fictional kit, stock count and two handout versions. Identify the approved version.\n\n## [opening] Opening\n\nHandouts cannot be found, so someone wants to reorder. What first?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nFor the inventory check, set aside outdated handouts, verify the approved master and request current copies. Relabeling or distributing an old version would sacrifice correct information.\n\nThe second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.\n\n## [misconception] Common misconception\n\nOrders from guesses or uses expired or incorrect material simply to save resources. Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.\n\n## [practice] Practice activity\n\nMake an audit with resource, observed waste, evidence and a safe next step. Use Elena’s three examples; do not invent bills or quantities. Show a partner how labels and stock counts prevent duplicate orders. Alone, check a fictional teaching kit. At the next duty, observe one resource and discuss findings with the supervisor.\n\n## [answer-key] Answer key\n\nInventory check: 3. Set aside the old copies, verify the approved master and request current copies.\n\n2. Check labeled storage, approved version and stock count.\n\nThe second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.\n\n## [observe] Observe\n\nRecords three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions.\n\nReady: Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions. Completes this without prompting.\n\nNeeds practice: Identifies waste but gives no evidence or routine owner; complete the audit row and repeat.\n\nNot yet: Orders from guesses or uses expired or incorrect material simply to save resources.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nIdentifies waste but gives no evidence or routine owner; complete the audit row and repeat. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. This expands the ninth competency rather than a standalone manual chapter. The draft TESDA 400311217 crosswalk is in the review report; assessor review and local work procedures remain pending. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n\r\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions. Completes this without prompting.",
+                "hindi_pa_en": "Orders from guesses or uses expired or incorrect material simply to save resources.",
+                "kaya_na_fil": "May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.",
+                "kailangan_practice_en": "Identifies waste but gives no evidence or routine owner; complete the audit row and repeat.",
+                "kailangan_practice_fil": "Nakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin."
+              },
+              "not_yet_en": "Orders from guesses or uses expired or incorrect material simply to save resources.",
+              "not_yet_fil": "Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.",
+              "observable_en": "Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions.",
+              "observable_fil": "May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": {
+        "id": "98605646-c56d-4dec-b440-eb016c44e6cf",
+        "module_id": "586f0588-2776-42b0-be1c-bc88c4ef825f",
+        "lesson_key": "resources-safe-change",
+        "position": 1,
+        "title_fil": "Pumili ng ligtas na pagbabago",
+        "title_en": "Choose a safe change",
+        "objectives_fil": [
+          "Pumili ng resource-saving action na nagpapanatili ng infection prevention, critical equipment at napapanahong serbisyo, at ipaliwanag ang tinanggihang opsyon."
+        ],
+        "objectives_en": [
+          "Choose a resource-saving action that preserves infection prevention, critical equipment and timely services, and explain the rejected option."
+        ],
+        "required": true,
+        "published_revision_id": "45c2f35d-b3db-4e0d-bd37-16eede1180f9"
+      },
+      "revision": {
+        "id": "45c2f35d-b3db-4e0d-bd37-16eede1180f9",
+        "lesson_id": "98605646-c56d-4dec-b440-eb016c44e6cf",
+        "revision_key": "569fd058a90394940f91c6725f9f3076c225d0acafb81320d8d6b63ed81a6b15",
+        "content_hash": "569fd058a90394940f91c6725f9f3076c225d0acafb81320d8d6b63ed81a6b15",
+        "read_sections": [
+          {
+            "id": "utilities",
+            "check": {
+              "options": [
+                {
+                  "en": "Keep the refrigerator running; check unnecessary lights under facility procedure.",
+                  "fil": "Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw at sundin ang facility procedure."
+                },
+                {
+                  "en": "Switch the refrigerator off overnight.",
+                  "fil": "Patayin ang refrigerator sa gabi."
+                },
+                {
+                  "en": "Switch off required ventilation too.",
+                  "fil": "Patayin pati ang kinakailangang bentilasyon."
+                }
+              ],
+              "prompt_en": "The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?",
+              "prompt_fil": "May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?",
+              "feedback_en": "1. Unnecessary lights are safe to investigate under facility procedure while the refrigerator runs. The cause and savings remain unknown. 2. Switching off the vaccine refrigerator overnight is unsafe; protect the cold chain. 3. Switching off required ventilation is unsafe; it supports safe services. In the fictional story, Charlaine chooses a safeguarded investigation and rejects both unsafe cuts. The proposal still goes to the authorized facility decision; no approval, repair completion or measured savings is claimed.",
+              "feedback_fil": "1. Ligtas siyasatin ang hindi kailangang ilaw ayon sa facility procedure habang gumagana ang refrigerator. Hindi pa alam ang sanhi o matitipid. 2. Hindi ligtas patayin ang vaccine refrigerator sa gabi; dapat protektado ang cold chain. 3. Hindi ligtas patayin ang kinakailangang bentilasyon; bahagi ito ng ligtas na serbisyo. Sa kathang-isip na kuwento, pinili ni Charlaine ang safeguarded investigation at tinanggihan ang dalawang unsafe cuts. Ipinapasa pa ang mungkahi sa awtorisadong facility decision; walang sinasabing approval, pagkumpuni o nasukat na savings.",
+              "correct_option_index": 0
+            },
+            "body_en": "Charlaine is a BHW in this fictional story. She wants to reduce waste while preserving safe, correct services. The BHS has a high bill and a vaccine refrigerator. The cause of the high consumption is not yet known.\n\n“What is unnecessary, and what must stay?” she asks. Keep cold-chain equipment, required ventilation and other critical systems operating. Preserve handwashing water. Investigate only unnecessary lights under facility procedure; do not demonstrate switching off actual equipment.\n\nIf a leak is reported, record it and ask an authorized person to inspect it. Charlaine does not perform the repair. Authorization, repair completion and savings are not yet confirmed. In the next question, choose what is safe to investigate and explain the protection that must remain.",
+            "body_fil": "Si Charlaine ay isang BHW sa kathang-isip na kuwentong ito. Gusto niyang bawasan ang aksaya nang hindi nababawasan ang ligtas at tamang serbisyo. Mataas ang bill ng BHS at may vaccine refrigerator. Hindi pa alam kung ano ang sanhi ng mataas na konsumo.\n\n“Alin ang hindi kailangan, at alin ang dapat manatili?” tanong niya. Panatilihing gumagana ang cold-chain equipment, kinakailangang bentilasyon at ibang kritikal na sistema. Panatilihin ang tubig para sa paghuhugas ng kamay. Siyasatin lamang ang hindi kailangang ilaw ayon sa facility procedure; huwag mag-switch-off demonstration sa aktuwal na kagamitan.\n\nKung may iniulat na tagas, itala at ipasuri sa awtorisadong tao. Hindi si Charlaine ang magkukumpuni. Hindi pa kumpirmado ang pahintulot, pagkumpuni o matitipid. Sa susunod na tanong, piliin ang ligtas na siyasatin at ipaliwanag ang proteksyong kailangang manatili.",
+            "asset_ids": [
+              "charlaine-utilities"
+            ],
+            "heading_en": "Water and electricity with safeguards",
+            "concept_ids": [
+              "m9.resources",
+              "m9.safe-savings"
+            ],
+            "heading_fil": "Tubig at kuryente na may pag-iingat",
+            "takeaway_en": "Safe conservation removes waste while preserving what care requires.",
+            "takeaway_fil": "Ang ligtas na pagtitipid ay nag-aalis ng aksaya at pinananatili ang kailangan sa pangangalaga."
+          },
+          {
+            "id": "materials",
+            "check": null,
+            "body_en": "Someone suggests a durable health-teaching visual to Charlaine. It may reduce repeated disposable decorations if approved and suitable for its users. Preserve correct information and needed instructions, including a copy when the learner needs one.\n\nAn unnecessary nonclinical disposable differs from a clinical single-use item. Plastics reduction does not authorize reusing needles, lancets or other clinical single-use supplies. Follow local policy and proper segregation; do not invent cleaning or reuse methods.\n\n“If I do not know the classification or policy, I will ask the supervisor first,” Charlaine says. Practice compares option cards only. No actual clinical item is used or cleaned. Approval of a new visual is not yet confirmed.",
+            "body_fil": "May nagmungkahi kay Charlaine ng matibay na visual para sa health teaching. Maaaring mabawasan nito ang paulit-ulit na disposable decoration kung aprubado at angkop sa mga gagamit. Panatilihin ang tamang impormasyon at kailangang instruction, kabilang ang kopyang kailangan ng learner.\n\nIba ang hindi kailangang nonclinical disposable sa clinical single-use item. Hindi pahintulot ang pagbabawas ng plastics para muling gamitin ang karayom, lancet o iba pang clinical single-use supply. Sundin ang lokal na policy at tamang segregation; huwag mag-imbento ng paglilinis o pagre-reuse.\n\n“Kung hindi ko alam ang uri o policy, magtatanong muna ako sa supervisor,” sabi ni Charlaine. Sa pagsasanay, option cards lamang ang ihahambing. Walang tunay na clinical item na gagamitin o lilinisin. Hindi pa kumpirmado ang pag-apruba sa isang bagong visual.",
+            "asset_ids": [
+              "charlaine-materials"
+            ],
+            "heading_en": "Reduce unnecessary use, preserve safety",
+            "concept_ids": [
+              "m9.plastics",
+              "m9.safe-savings"
+            ],
+            "heading_fil": "Bawasan ang hindi kailangan, panatilihin ang ligtas",
+            "takeaway_en": "Waste reduction does not authorize reuse of clinical single-use items.",
+            "takeaway_fil": "Ang pagbawas ng basura ay hindi pahintulot na muling gamitin ang clinical single-use items."
+          },
+          {
+            "id": "workflow",
+            "check": null,
+            "body_en": "Before printing, Charlaine and her colleague check the handout date and version. A drawer copy is not automatically the approved master. Find the controlled master and confirm the current approved version with the supervisor under the document-control procedure.\n\nAssemble dummy teaching materials together to reduce searching and repeated trips. Supplies may be delivered together on a planned safe route when authorized, but never delay urgent referral to save travel.\n\nProductivity means quality, timely service with less waste and rework. The number of rushed clients does not prove good work. Organizing the kit is still a proposal; it does not prove measured time or financial savings.",
+            "body_fil": "Bago mag-print, tinitingnan ni Charlaine at ng kasamahan ang petsa at bersyon ng handout. Ang nasa drawer ay hindi awtomatikong approved master. Hanapin ang controlled master at kumpirmahin sa supervisor ang kasalukuyang aprubadong bersyon ayon sa document-control procedure.\n\nIhanda nang magkakasama ang dummy teaching materials upang mabawasan ang paghahanap at pabalik-balik. Maaaring pagsamahin ang delivery sa planadong ligtas na ruta kung pinahihintulutan, ngunit huwag ipagpaliban ang urgent referral para makatipid sa biyahe.\n\nAng productivity ay dekalidad at napapanahong serbisyo na may mas kaunting aksaya at pag-uulit. Hindi patunay ng husay ang dami ng minadaling kliyente. Ang pag-aayos ng kit ay mungkahi pa lamang; hindi ito patunay ng nasukat na oras o pinansiyal na natipid.",
+            "asset_ids": [
+              "charlaine-workflow"
+            ],
+            "heading_en": "Improve the flow, not just the speed",
+            "concept_ids": [
+              "m9.productivity"
+            ],
+            "heading_fil": "Ayusin ang daloy, hindi bilisan lang",
+            "takeaway_en": "Productivity means quality service with less waste and rework.",
+            "takeaway_fil": "Ang productivity ay dekalidad na serbisyo na may mas kaunting aksaya at pag-uulit."
+          },
+          {
+            "id": "worked-example",
+            "check": null,
+            "body_en": "On the fictional verification sheet, the drawer copy and incorrect printout are both version A. The controlled master is version B. The simulated supervisor confirms B as approved. These are dummy teaching sheets with no patient records.\n\nThere are two possible causes: an old drawer copy was copied, or the wrong file was selected before printing. Matching versions A are consistent with the first explanation but do not prove the drawer was used. Version A may also be on the computer. The person who printed has not yet been asked, and the selected file has not been inspected.\n\nCharlaine records: the difference from the approved master is confirmed; the cause remains unconfirmed. Compare the drawer, printout and controlled master, then ask the person who printed and the supervisor. Do not blame someone or change the routine on a guess. Versions A and B are fictional inputs, not official DOH versions.",
+            "body_fil": "Sa kathang-isip na verification sheet, ang drawer copy at maling printout ay parehong bersyon A. Ang controlled master ay bersyon B. Kinumpirma ng kunwaring supervisor na B ang approved version. Puro dummy teaching sheets ito, walang patient record.\n\nMay dalawang posibleng sanhi: nakopya ang lumang A mula sa drawer, o maling file ang napili bago mag-print. Ang magkaparehong A ay tugma sa unang paliwanag ngunit hindi patunay na drawer ang ginamit. Maaaring may A rin sa computer. Hindi pa nakausap ang nag-print at hindi pa nakita ang napiling file.\n\nInilista ni Charlaine: kumpirmado ang pagkakaiba sa approved master; hindi pa kumpirmado ang sanhi. Ihambing ang drawer, printout at controlled master, saka tanungin ang nag-print at supervisor. Huwag sisihin ang tao o baguhin ang routine batay sa hula. Ang bersyon A at B ay kathang-isip na inputs, hindi opisyal na DOH version.",
+            "asset_ids": [
+              "charlaine-worked-example"
+            ],
+            "heading_en": "Check why waste occurs",
+            "concept_ids": [
+              "m9.resources",
+              "m9.safe-savings",
+              "m9.plastics",
+              "m9.productivity"
+            ],
+            "heading_fil": "Alamin kung bakit nasasayang",
+            "takeaway_en": "Reduce waste and rework while preserving essential protection and services.",
+            "takeaway_fil": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan."
+          },
+          {
+            "id": "practice",
+            "check": null,
+            "body_en": "Compare two pairs of fictional option cards: ask an authorized person to repair the reported leak versus restrict handwashing water; and use an approved reusable teaching visual where suitable versus reuse a clinical single-use item. Practice includes no actual repair or clinical handling.\n\nTell a partner: “What might be reduced? What could be harmed? What protection must remain?” Choose a proposal, name a safeguard and explain the rejected option. Include the authorization needed; when unknown, write not yet confirmed. No savings quantity or cost is supplied.\n\nA weaker attempt is: “Reusable saves money.” Feedback: “What must remain, and what must never be reused?” Charlaine retries: “Only an approved teaching visual where suitable, with complete instructions. I reject clinical single-use reuse. Confirm local policy first.”\n\nAlone, write or say the proposal, safeguard, rejection and next verification. This is rehearsal; trainer observation is still needed. A correct quiz answer does not replace observed performance.",
+            "body_fil": "Ihambing ang dalawang pares ng fictional option cards: ipaayos ang iniulat na tagas sa awtorisadong tao laban sa bawasan ang handwashing water; at gumamit ng aprubadong reusable teaching visual kung angkop laban sa clinical single-use reuse. Walang tunay na repair o clinical handling sa practice.\n\nSabihin sa kapareha: “Ano ang posibleng mabawasan? Ano ang maaaring mapinsala? Ano ang proteksyong dapat manatili?” Pumili ng isang mungkahi, pangalanan ang safeguard at ipaliwanag ang tinanggihang opsyon. Isama ang approval na kailangan; kung hindi alam, isulat na hindi pa kumpirmado. Walang ibinigay na dami o halaga ng matitipid.\n\nHalimbawa ng mahinang sagot: “Reusable para tipid.” Feedback: “Ano ang kailangang panatilihin, at alin ang hindi puwedeng gamitin muli?” Retry ni Charlaine: “Aprubadong teaching visual lamang kung angkop; kumpleto ang instruction. Tatanggihan ko ang clinical single-use reuse. Kumpirmahin muna ang lokal na policy.”\n\nKung mag-isa, isulat o sabihin ang proposal, safeguard, rejection at susunod na verification. Rehearsal ito; kailangan pa rin ang trainer observation. Ang tamang sagot sa quiz ay hindi kapalit ng naobserbahang pagganap.",
+            "asset_ids": [
+              "charlaine-practice"
+            ],
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m9.resources",
+              "m9.safe-savings",
+              "m9.plastics",
+              "m9.productivity"
+            ],
+            "heading_fil": "Subukan, saka ulitin",
+            "takeaway_en": "Reduce waste and rework while preserving essential protection and services.",
+            "takeaway_fil": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan."
+          },
+          {
+            "id": "check",
+            "check": {
+              "options": [
+                {
+                  "en": "Omit needed instructions to reduce pages.",
+                  "fil": "Huwag nang magbigay ng kailangang instruction para mabawasan ang pahina."
+                },
+                {
+                  "en": "Use the old version until it runs out.",
+                  "fil": "Gamitin ang lumang bersyon hanggang maubos."
+                },
+                {
+                  "en": "Check the approved version and use an approved reusable visual where suitable.",
+                  "fil": "Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop."
+                }
+              ],
+              "prompt_en": "The team wants to reduce paper in health teaching. Which proposal fits?",
+              "prompt_fil": "Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?",
+              "feedback_en": "1. Omitting needed instructions is unsuitable; teaching must remain correct and accessible. 2. Having old copies in stock is insufficient; verify the approved version before use or printing. 3. Checking the approved version and an approved reusable visual where suitable is appropriate, with all needed instructions intact. In the fictional ending, Charlaine submits a proposal with version verification and a suitable approved visual. She rejects the unsafe cut; handwashing water, clinical single-use rules, critical equipment, ventilation and urgent referral stay protected. It still goes to the authorized facility decision. No measured savings, repair completion or trainer-observed competence is claimed.",
+              "feedback_fil": "1. Hindi angkop tanggalin ang kailangang instruction; dapat tama at accessible pa rin ang pagtuturo. 2. Hindi sapat na may stock ng lumang bersyon; beripikahin ang approved version bago gamitin o mag-print. 3. Angkop siyasatin ang approved version at aprubadong reusable visual kung angkop, nang kumpleto ang kailangang instruction. Sa kathang-isip na pagtatapos, inihahain ni Charlaine ang proposal na may version verification at angkop na aprubadong visual. Tinanggihan niya ang unsafe cut; protektado ang handwashing water, clinical single-use rules, critical equipment, bentilasyon at urgent referral. Ipinapasa pa ito sa awtorisadong facility decision. Walang inaangking nasukat na savings, repair completion o trainer-observed competence.",
+              "correct_option_index": 2
+            },
+            "body_en": "Charlaine and the team want to reduce paper in health teaching. The situation does not authorize omitting needed instructions or using an old version. One option is to check the approved version and use an approved reusable visual where suitable.\n\nPause and choose an answer. Explain how correct information and accessible instructions will remain. After responding, read the rationale for every option and the story ending. Facility approval and observed practice are separate activities; selecting a quiz option does not demonstrate them.",
+            "body_fil": "Gustong bawasan ni Charlaine at ng team ang papel sa health teaching. Walang sinabi ang sitwasyon na puwedeng tanggalin ang kailangang instruction o gamitin ang lumang bersyon. May pagpipiliang siyasatin ang approved version at gumamit ng aprubadong reusable visual kung angkop.\n\nHuminto muna at piliin ang sagot. Ipaliwanag kung paano mapapanatili ang tamang impormasyon at accessible na instruction. Pagkatapos sumagot, basahin ang dahilan sa bawat opsyon at ang pagtatapos ng kuwento. Ibang gawain ang pagkuha ng facility approval at naobserbahang practice; hindi iyon ipinapakita ng pagpili sa quiz.",
+            "asset_ids": [
+              "charlaine-check"
+            ],
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m9.resources",
+              "m9.safe-savings",
+              "m9.plastics",
+              "m9.productivity"
+            ],
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "takeaway_en": "Reduce waste and rework while preserving essential protection and services.",
+            "takeaway_fil": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan."
+          }
+        ],
+        "slides": [
+          {
+            "id": "slide-utilities",
+            "check": {
+              "options": [
+                {
+                  "en": "Keep the refrigerator running; check unnecessary lights under facility procedure.",
+                  "fil": "Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw at sundin ang facility procedure."
+                },
+                {
+                  "en": "Switch the refrigerator off overnight.",
+                  "fil": "Patayin ang refrigerator sa gabi."
+                },
+                {
+                  "en": "Switch off required ventilation too.",
+                  "fil": "Patayin pati ang kinakailangang bentilasyon."
+                }
+              ],
+              "prompt_en": "The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?",
+              "prompt_fil": "May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?",
+              "feedback_en": "1. Unnecessary lights are safe to investigate under facility procedure while the refrigerator runs. The cause and savings remain unknown. 2. Switching off the vaccine refrigerator overnight is unsafe; protect the cold chain. 3. Switching off required ventilation is unsafe; it supports safe services. In the fictional story, Charlaine chooses a safeguarded investigation and rejects both unsafe cuts. The proposal still goes to the authorized facility decision; no approval, repair completion or measured savings is claimed.",
+              "feedback_fil": "1. Ligtas siyasatin ang hindi kailangang ilaw ayon sa facility procedure habang gumagana ang refrigerator. Hindi pa alam ang sanhi o matitipid. 2. Hindi ligtas patayin ang vaccine refrigerator sa gabi; dapat protektado ang cold chain. 3. Hindi ligtas patayin ang kinakailangang bentilasyon; bahagi ito ng ligtas na serbisyo. Sa kathang-isip na kuwento, pinili ni Charlaine ang safeguarded investigation at tinanggihan ang dalawang unsafe cuts. Ipinapasa pa ang mungkahi sa awtorisadong facility decision; walang sinasabing approval, pagkumpuni o nasukat na savings.",
+              "correct_option_index": 0
+            },
+            "layout": "process",
+            "asset_ids": [
+              "charlaine-utilities"
+            ],
+            "display_en": "Preserve cold chain, ventilation and handwashing water. Investigate unnecessary lights under procedure. This is still a proposal.",
+            "heading_en": "Water and electricity with safeguards",
+            "concept_ids": [
+              "m9.resources",
+              "m9.safe-savings"
+            ],
+            "display_fil": "Panatilihin ang cold chain, bentilasyon at handwashing water. Siyasatin ang hindi kailangang ilaw ayon sa procedure. Mungkahi pa lamang.",
+            "heading_fil": "Tubig at kuryente na may pag-iingat",
+            "narration_en": "Charlaine is a BHW in this fictional story. She wants to reduce waste while preserving safe, correct services. The BHS has a high bill and a vaccine refrigerator. The cause of the high consumption is not yet known.\n\n“What is unnecessary, and what must stay?” she asks. Keep cold-chain equipment, required ventilation and other critical systems operating. Preserve handwashing water. Investigate only unnecessary lights under facility procedure; do not demonstrate switching off actual equipment.\n\nIf a leak is reported, record it and ask an authorized person to inspect it. Charlaine does not perform the repair. Authorization, repair completion and savings are not yet confirmed. In the next question, choose what is safe to investigate and explain the protection that must remain.",
+            "narration_fil": "Si Charlaine ay isang BHW sa kathang-isip na kuwentong ito. Gusto niyang bawasan ang aksaya nang hindi nababawasan ang ligtas at tamang serbisyo. Mataas ang bill ng BHS at may vaccine refrigerator. Hindi pa alam kung ano ang sanhi ng mataas na konsumo.\n\n“Alin ang hindi kailangan, at alin ang dapat manatili?” tanong niya. Panatilihing gumagana ang cold-chain equipment, kinakailangang bentilasyon at ibang kritikal na sistema. Panatilihin ang tubig para sa paghuhugas ng kamay. Siyasatin lamang ang hindi kailangang ilaw ayon sa facility procedure; huwag mag-switch-off demonstration sa aktuwal na kagamitan.\n\nKung may iniulat na tagas, itala at ipasuri sa awtorisadong tao. Hindi si Charlaine ang magkukumpuni. Hindi pa kumpirmado ang pahintulot, pagkumpuni o matitipid. Sa susunod na tanong, piliin ang ligtas na siyasatin at ipaliwanag ang proteksyong kailangang manatili."
+          },
+          {
+            "id": "slide-materials",
+            "check": null,
+            "layout": "comparison",
+            "asset_ids": [
+              "charlaine-materials"
+            ],
+            "display_en": "Approved teaching visual where suitable. Clinical single-use stays single-use. Ask first when policy is unknown.",
+            "heading_en": "Reduce unnecessary use, preserve safety",
+            "concept_ids": [
+              "m9.plastics",
+              "m9.safe-savings"
+            ],
+            "display_fil": "Aprubadong teaching visual kung angkop. Clinical single-use ay hindi reusable. Kung hindi alam ang policy, magtanong muna.",
+            "heading_fil": "Bawasan ang hindi kailangan, panatilihin ang ligtas",
+            "narration_en": "Someone suggests a durable health-teaching visual to Charlaine. It may reduce repeated disposable decorations if approved and suitable for its users. Preserve correct information and needed instructions, including a copy when the learner needs one.\n\nAn unnecessary nonclinical disposable differs from a clinical single-use item. Plastics reduction does not authorize reusing needles, lancets or other clinical single-use supplies. Follow local policy and proper segregation; do not invent cleaning or reuse methods.\n\n“If I do not know the classification or policy, I will ask the supervisor first,” Charlaine says. Practice compares option cards only. No actual clinical item is used or cleaned. Approval of a new visual is not yet confirmed.",
+            "narration_fil": "May nagmungkahi kay Charlaine ng matibay na visual para sa health teaching. Maaaring mabawasan nito ang paulit-ulit na disposable decoration kung aprubado at angkop sa mga gagamit. Panatilihin ang tamang impormasyon at kailangang instruction, kabilang ang kopyang kailangan ng learner.\n\nIba ang hindi kailangang nonclinical disposable sa clinical single-use item. Hindi pahintulot ang pagbabawas ng plastics para muling gamitin ang karayom, lancet o iba pang clinical single-use supply. Sundin ang lokal na policy at tamang segregation; huwag mag-imbento ng paglilinis o pagre-reuse.\n\n“Kung hindi ko alam ang uri o policy, magtatanong muna ako sa supervisor,” sabi ni Charlaine. Sa pagsasanay, option cards lamang ang ihahambing. Walang tunay na clinical item na gagamitin o lilinisin. Hindi pa kumpirmado ang pag-apruba sa isang bagong visual."
+          },
+          {
+            "id": "slide-workflow",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [
+              "charlaine-workflow"
+            ],
+            "display_en": "Check the controlled master and confirm the approved version. Prepare the kit. Never delay urgent referral.",
+            "heading_en": "Improve the flow, not just the speed",
+            "concept_ids": [
+              "m9.productivity"
+            ],
+            "display_fil": "Controlled master muna; kumpirmahin ang approved version. Ihanda ang kit. Huwag ipagpaliban ang urgent referral.",
+            "heading_fil": "Ayusin ang daloy, hindi bilisan lang",
+            "narration_en": "Before printing, Charlaine and her colleague check the handout date and version. A drawer copy is not automatically the approved master. Find the controlled master and confirm the current approved version with the supervisor under the document-control procedure.\n\nAssemble dummy teaching materials together to reduce searching and repeated trips. Supplies may be delivered together on a planned safe route when authorized, but never delay urgent referral to save travel.\n\nProductivity means quality, timely service with less waste and rework. The number of rushed clients does not prove good work. Organizing the kit is still a proposal; it does not prove measured time or financial savings.",
+            "narration_fil": "Bago mag-print, tinitingnan ni Charlaine at ng kasamahan ang petsa at bersyon ng handout. Ang nasa drawer ay hindi awtomatikong approved master. Hanapin ang controlled master at kumpirmahin sa supervisor ang kasalukuyang aprubadong bersyon ayon sa document-control procedure.\n\nIhanda nang magkakasama ang dummy teaching materials upang mabawasan ang paghahanap at pabalik-balik. Maaaring pagsamahin ang delivery sa planadong ligtas na ruta kung pinahihintulutan, ngunit huwag ipagpaliban ang urgent referral para makatipid sa biyahe.\n\nAng productivity ay dekalidad at napapanahong serbisyo na may mas kaunting aksaya at pag-uulit. Hindi patunay ng husay ang dami ng minadaling kliyente. Ang pag-aayos ng kit ay mungkahi pa lamang; hindi ito patunay ng nasukat na oras o pinansiyal na natipid."
+          },
+          {
+            "id": "slide-worked-example",
+            "check": null,
+            "layout": "comparison",
+            "asset_ids": [
+              "charlaine-worked-example"
+            ],
+            "display_en": "Drawer A; printout A; approved master B. Two possible causes remain unproven. Ask the person who printed and the supervisor.",
+            "heading_en": "Check why waste occurs",
+            "concept_ids": [
+              "m9.resources",
+              "m9.safe-savings",
+              "m9.plastics",
+              "m9.productivity"
+            ],
+            "display_fil": "Drawer A; printout A; approved master B. Dalawang posibleng sanhi, hindi pa patunay. Kausapin ang nag-print at supervisor.",
+            "heading_fil": "Alamin kung bakit nasasayang",
+            "narration_en": "On the fictional verification sheet, the drawer copy and incorrect printout are both version A. The controlled master is version B. The simulated supervisor confirms B as approved. These are dummy teaching sheets with no patient records.\n\nThere are two possible causes: an old drawer copy was copied, or the wrong file was selected before printing. Matching versions A are consistent with the first explanation but do not prove the drawer was used. Version A may also be on the computer. The person who printed has not yet been asked, and the selected file has not been inspected.\n\nCharlaine records: the difference from the approved master is confirmed; the cause remains unconfirmed. Compare the drawer, printout and controlled master, then ask the person who printed and the supervisor. Do not blame someone or change the routine on a guess. Versions A and B are fictional inputs, not official DOH versions.",
+            "narration_fil": "Sa kathang-isip na verification sheet, ang drawer copy at maling printout ay parehong bersyon A. Ang controlled master ay bersyon B. Kinumpirma ng kunwaring supervisor na B ang approved version. Puro dummy teaching sheets ito, walang patient record.\n\nMay dalawang posibleng sanhi: nakopya ang lumang A mula sa drawer, o maling file ang napili bago mag-print. Ang magkaparehong A ay tugma sa unang paliwanag ngunit hindi patunay na drawer ang ginamit. Maaaring may A rin sa computer. Hindi pa nakausap ang nag-print at hindi pa nakita ang napiling file.\n\nInilista ni Charlaine: kumpirmado ang pagkakaiba sa approved master; hindi pa kumpirmado ang sanhi. Ihambing ang drawer, printout at controlled master, saka tanungin ang nag-print at supervisor. Huwag sisihin ang tao o baguhin ang routine batay sa hula. Ang bersyon A at B ay kathang-isip na inputs, hindi opisyal na DOH version."
+          },
+          {
+            "id": "slide-practice",
+            "check": null,
+            "layout": "process",
+            "asset_ids": [
+              "charlaine-practice"
+            ],
+            "display_en": "Choose a proposal; name the safeguard and rejection. Get feedback and retry. Approval and savings: not yet confirmed.",
+            "heading_en": "Try it, then repeat",
+            "concept_ids": [
+              "m9.resources",
+              "m9.safe-savings",
+              "m9.plastics",
+              "m9.productivity"
+            ],
+            "display_fil": "Piliin ang proposal; pangalanan ang safeguard at tinanggihan. Feedback at retry. Approval at savings: hindi pa kumpirmado.",
+            "heading_fil": "Subukan, saka ulitin",
+            "narration_en": "Compare two pairs of fictional option cards: ask an authorized person to repair the reported leak versus restrict handwashing water; and use an approved reusable teaching visual where suitable versus reuse a clinical single-use item. Practice includes no actual repair or clinical handling.\n\nTell a partner: “What might be reduced? What could be harmed? What protection must remain?” Choose a proposal, name a safeguard and explain the rejected option. Include the authorization needed; when unknown, write not yet confirmed. No savings quantity or cost is supplied.\n\nA weaker attempt is: “Reusable saves money.” Feedback: “What must remain, and what must never be reused?” Charlaine retries: “Only an approved teaching visual where suitable, with complete instructions. I reject clinical single-use reuse. Confirm local policy first.”\n\nAlone, write or say the proposal, safeguard, rejection and next verification. This is rehearsal; trainer observation is still needed. A correct quiz answer does not replace observed performance.",
+            "narration_fil": "Ihambing ang dalawang pares ng fictional option cards: ipaayos ang iniulat na tagas sa awtorisadong tao laban sa bawasan ang handwashing water; at gumamit ng aprubadong reusable teaching visual kung angkop laban sa clinical single-use reuse. Walang tunay na repair o clinical handling sa practice.\n\nSabihin sa kapareha: “Ano ang posibleng mabawasan? Ano ang maaaring mapinsala? Ano ang proteksyong dapat manatili?” Pumili ng isang mungkahi, pangalanan ang safeguard at ipaliwanag ang tinanggihang opsyon. Isama ang approval na kailangan; kung hindi alam, isulat na hindi pa kumpirmado. Walang ibinigay na dami o halaga ng matitipid.\n\nHalimbawa ng mahinang sagot: “Reusable para tipid.” Feedback: “Ano ang kailangang panatilihin, at alin ang hindi puwedeng gamitin muli?” Retry ni Charlaine: “Aprubadong teaching visual lamang kung angkop; kumpleto ang instruction. Tatanggihan ko ang clinical single-use reuse. Kumpirmahin muna ang lokal na policy.”\n\nKung mag-isa, isulat o sabihin ang proposal, safeguard, rejection at susunod na verification. Rehearsal ito; kailangan pa rin ang trainer observation. Ang tamang sagot sa quiz ay hindi kapalit ng naobserbahang pagganap."
+          },
+          {
+            "id": "slide-check",
+            "check": {
+              "options": [
+                {
+                  "en": "Omit needed instructions to reduce pages.",
+                  "fil": "Huwag nang magbigay ng kailangang instruction para mabawasan ang pahina."
+                },
+                {
+                  "en": "Use the old version until it runs out.",
+                  "fil": "Gamitin ang lumang bersyon hanggang maubos."
+                },
+                {
+                  "en": "Check the approved version and use an approved reusable visual where suitable.",
+                  "fil": "Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop."
+                }
+              ],
+              "prompt_en": "The team wants to reduce paper in health teaching. Which proposal fits?",
+              "prompt_fil": "Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?",
+              "feedback_en": "1. Omitting needed instructions is unsuitable; teaching must remain correct and accessible. 2. Having old copies in stock is insufficient; verify the approved version before use or printing. 3. Checking the approved version and an approved reusable visual where suitable is appropriate, with all needed instructions intact. In the fictional ending, Charlaine submits a proposal with version verification and a suitable approved visual. She rejects the unsafe cut; handwashing water, clinical single-use rules, critical equipment, ventilation and urgent referral stay protected. It still goes to the authorized facility decision. No measured savings, repair completion or trainer-observed competence is claimed.",
+              "feedback_fil": "1. Hindi angkop tanggalin ang kailangang instruction; dapat tama at accessible pa rin ang pagtuturo. 2. Hindi sapat na may stock ng lumang bersyon; beripikahin ang approved version bago gamitin o mag-print. 3. Angkop siyasatin ang approved version at aprubadong reusable visual kung angkop, nang kumpleto ang kailangang instruction. Sa kathang-isip na pagtatapos, inihahain ni Charlaine ang proposal na may version verification at angkop na aprubadong visual. Tinanggihan niya ang unsafe cut; protektado ang handwashing water, clinical single-use rules, critical equipment, bentilasyon at urgent referral. Ipinapasa pa ito sa awtorisadong facility decision. Walang inaangking nasukat na savings, repair completion o trainer-observed competence.",
+              "correct_option_index": 2
+            },
+            "layout": "decision",
+            "asset_ids": [
+              "charlaine-check"
+            ],
+            "display_en": "Choose before viewing feedback. Preserve correct, accessible instructions.",
+            "heading_en": "Choose the next step",
+            "concept_ids": [
+              "m9.resources",
+              "m9.safe-savings",
+              "m9.plastics",
+              "m9.productivity"
+            ],
+            "display_fil": "Pumili muna bago tingnan ang feedback. Panatilihin ang tama at accessible na instruction.",
+            "heading_fil": "Piliin ang susunod na hakbang",
+            "narration_en": "Charlaine and the team want to reduce paper in health teaching. The situation does not authorize omitting needed instructions or using an old version. One option is to check the approved version and use an approved reusable visual where suitable.\n\nPause and choose an answer. Explain how correct information and accessible instructions will remain. After responding, read the rationale for every option and the story ending. Facility approval and observed practice are separate activities; selecting a quiz option does not demonstrate them.",
+            "narration_fil": "Gustong bawasan ni Charlaine at ng team ang papel sa health teaching. Walang sinabi ang sitwasyon na puwedeng tanggalin ang kailangang instruction o gamitin ang lumang bersyon. May pagpipiliang siyasatin ang approved version at gumamit ng aprubadong reusable visual kung angkop.\n\nHuminto muna at piliin ang sagot. Ipaliwanag kung paano mapapanatili ang tamang impormasyon at accessible na instruction. Pagkatapos sumagot, basahin ang dahilan sa bawat opsyon at ang pagtatapos ng kuwento. Ibang gawain ang pagkuha ng facility approval at naobserbahang practice; hindi iyon ipinapakita ng pagpili sa quiz."
+          }
+        ],
+        "coverage": [
+          {
+            "id": "m9.resources",
+            "read_ids": [
+              "utilities",
+              "worked-example",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-utilities",
+              "slide-worked-example",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217",
+              "who-sustainability"
+            ]
+          },
+          {
+            "id": "m9.safe-savings",
+            "read_ids": [
+              "utilities",
+              "materials",
+              "worked-example",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-utilities",
+              "slide-materials",
+              "slide-worked-example",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217",
+              "who-sustainability"
+            ]
+          },
+          {
+            "id": "m9.plastics",
+            "read_ids": [
+              "materials",
+              "worked-example",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-materials",
+              "slide-worked-example",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217",
+              "who-sustainability"
+            ]
+          },
+          {
+            "id": "m9.productivity",
+            "read_ids": [
+              "workflow",
+              "worked-example",
+              "practice",
+              "check"
+            ],
+            "slide_ids": [
+              "slide-workflow",
+              "slide-worked-example",
+              "slide-practice",
+              "slide-check"
+            ],
+            "source_ids": [
+              "facilitator",
+              "manual",
+              "tesda-400311217",
+              "who-sustainability"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "facilitator",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+            "title": "DOH Facilitator Guide",
+            "pdf_pages": [
+              19,
+              22
+            ]
+          },
+          {
+            "id": "manual",
+            "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+            "title": "BHW Reference Manual",
+            "pdf_pages": [
+              14,
+              30
+            ]
+          },
+          {
+            "id": "tesda-400311217",
+            "url": "https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf",
+            "title": "TESDA BHS NC II Revision 01 (2019), unit 400311217",
+            "pdf_pages": [
+              33,
+              34,
+              35
+            ]
+          },
+          {
+            "id": "who-sustainability",
+            "url": "https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities",
+            "title": "WHO — Climate-resilient and environmentally sustainable health care facilities"
+          }
+        ],
+        "assets": [
+          {
+            "id": "safe-change",
+            "path": "/training/module-1-9/safe-change-5cb1aa2f1081.svg",
+            "alt_en": "A comparison of conservation with hand-hygiene, single-use and service-quality protections.",
+            "alt_fil": "Paghahambing ng pagtitipid at proteksyon sa hand hygiene, single-use at kalidad ng serbisyo.",
+            "caption_en": "Choose a saving only when it passes safety and quality checks.",
+            "provenance": "Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.",
+            "caption_fil": "Piliin lamang ang pagtitipid na pumapasa sa safety at quality check.",
+            "content_hash": "5cb1aa2f1081f92d638f95187cce412ecbb7bcd31f203d3c3540f17effee1509",
+            "review_status": "approved"
+          },
+          {
+            "id": "charlaine-utilities",
+            "path": "/training/bhw-1-9/charlaine-safe-change-utilities-9267e7b9668d.png",
+            "alt_en": "Charlaine discusses lighting with a colleague while the refrigerator, sink and ventilation remain available; no switches are touched.",
+            "alt_fil": "Sinisiyasat ni Charlaine ang ilaw kasama ang kasamahan habang gumagana ang refrigerator at available ang sink at bentilasyon; walang switch na hinahawakan.",
+            "caption_en": "Fictional practice; protections, approval and unknowns are explained in the teaching.",
+            "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.",
+            "caption_fil": "Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.",
+            "content_hash": "9267e7b9668d9db9c72e199ead3b44314bc6c451c1bc00aee05119e60dae718d",
+            "review_status": "approved"
+          },
+          {
+            "id": "charlaine-materials",
+            "path": "/training/bhw-1-9/charlaine-safe-change-materials-1a4d26dbdf84.png",
+            "alt_en": "Two option cards show a teaching visual and a sealed single-use supply icon; cards only, no clinical reuse.",
+            "alt_fil": "Dalawang option card: teaching visual at sealed single-use supply icon; cards lamang, walang clinical reuse.",
+            "caption_en": "Fictional practice; protections, approval and unknowns are explained in the teaching.",
+            "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.",
+            "caption_fil": "Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.",
+            "content_hash": "1a4d26dbdf846715d58c06028a49ae8a4d0a325fd16498c616b87bfb39f6bbb0",
+            "review_status": "approved"
+          },
+          {
+            "id": "charlaine-workflow",
+            "path": "/training/bhw-1-9/charlaine-safe-change-workflow-26aa1c3665f3.png",
+            "alt_en": "Charlaine and a colleague compare blank dummy teaching sheets and a controlled-master binder before printing.",
+            "alt_fil": "Ikinukumpara ni Charlaine at ng kasamahan ang blank dummy teaching sheets at controlled-master binder bago mag-print.",
+            "caption_en": "Fictional practice; protections, approval and unknowns are explained in the teaching.",
+            "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.",
+            "caption_fil": "Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.",
+            "content_hash": "26aa1c3665f31e7ae0b5698cfabc4fc14c85a43ca4ed50cf47f8216904ad5cd6",
+            "review_status": "approved"
+          },
+          {
+            "id": "charlaine-worked-example",
+            "path": "/training/bhw-1-9/charlaine-safe-change-worked-example-4443b63ec47c.png",
+            "alt_en": "Drawer copies, blank printout, master binder and two possible laptop files; no cause is proved.",
+            "alt_fil": "Drawer copies, blank printout, master binder at dalawang posibleng file sa laptop; walang proved cause.",
+            "caption_en": "Fictional practice; protections, approval and unknowns are explained in the teaching.",
+            "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.",
+            "caption_fil": "Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.",
+            "content_hash": "4443b63ec47c1eda8b6486de87bae16783051067178c17bdd3cdead97328c479",
+            "review_status": "approved"
+          },
+          {
+            "id": "charlaine-practice",
+            "path": "/training/bhw-1-9/charlaine-safe-change-practice-8078c21abbd8.png",
+            "alt_en": "Charlaine explains option cards to a triad while a colleague gives feedback.",
+            "alt_fil": "Ipinapaliwanag ni Charlaine ang option cards sa triad habang nagbibigay ng feedback ang kasamahan.",
+            "caption_en": "Fictional practice; protections, approval and unknowns are explained in the teaching.",
+            "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.",
+            "caption_fil": "Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.",
+            "content_hash": "8078c21abbd82e1a4e193cd84198b437166b082ac570d582c115ceb051cff0c0",
+            "review_status": "approved"
+          },
+          {
+            "id": "charlaine-check",
+            "path": "/training/bhw-1-9/charlaine-safe-change-check-1e8b80d530c8.png",
+            "alt_en": "Charlaine considers a paper-saving question card beside a teaching board, master binder and two blank handouts.",
+            "alt_fil": "Pinag-iisipan ni Charlaine ang paper-saving question card sa tabi ng teaching board, master binder at dalawang blank handout.",
+            "caption_en": "Fictional practice; protections, approval and unknowns are explained in the teaching.",
+            "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.",
+            "caption_fil": "Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.",
+            "content_hash": "1e8b80d530c80ce2692c77bba4d1f3a4297eedab6ebc92ac312851d734f26c80",
+            "review_status": "approved"
+          },
+          {
+            "id": "resources-safe-change-story",
+            "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-1fe386aea8e3-poster.jpg",
+            "alt_en": "Six beats of Charlaine’s fictional safe-change proposal, preserving safeguards with approval/savings unknown.",
+            "videos": {
+              "en": {
+                "path": "/training/bhw-1-9/resources-safe-change-gemini-en-caf00e20c572.mp4",
+                "poster": {
+                  "path": "/training/bhw-1-9/resources-safe-change-gemini-en-0eb02635cf26-poster.jpg",
+                  "content_hash": "0eb02635cf2644e9d7663590ed49cc02f2be2a6c906bf0f52b3fa8e371dddc35"
+                },
+                "captions": {
+                  "path": "/training/bhw-1-9/resources-safe-change-gemini-en-130ff6a84c4b.vtt",
+                  "content_hash": "130ff6a84c4bab5f2a0a75b58c4ed1a8fa4e612c8593642616b4d666f94938dc"
+                },
+                "duration_s": 79,
+                "content_hash": "caf00e20c572f60d29f5a8918699ff40d4fa3faa43a833af3d9fa315fcd53b7d"
+              },
+              "fil": {
+                "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-411c702ed7fb.mp4",
+                "poster": {
+                  "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-1fe386aea8e3-poster.jpg",
+                  "content_hash": "1fe386aea8e30f275fca28c5954a3ffc4165cfd37569014634997bf7420d382c"
+                },
+                "captions": {
+                  "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-8b7d0755fd00.vtt",
+                  "content_hash": "8b7d0755fd00f3330c9e757f1fb35ad800f1d0e1940e9a5b8b64999e99b5d874"
+                },
+                "duration_s": 83,
+                "content_hash": "411c702ed7fb7a1277bbfc92a68c2d0455c430dc673bfb86acc7d4949902d4c9"
+              }
+            },
+            "alt_fil": "Anim na beat ng fictional safe-change proposal ni Charlaine, may safeguards at unknown approval/savings.",
+            "caption_en": "Fictional proposal; no approval, savings or repair completion is claimed.",
+            "provenance": "Pinned built-in imagegen Charlaine scenes with measured Gemini Kore narration, H.264/AAC and six matching WebVTT cues; exact package remains draft.",
+            "caption_fil": "Kathang-isip na proposal; walang inaangking approval, savings o repair completion.",
+            "content_hash": "1fe386aea8e30f275fca28c5954a3ffc4165cfd37569014634997bf7420d382c",
+            "review_status": "approved"
+          }
+        ],
+        "featured_asset_id": "resources-safe-change-story"
+      },
+      "private_notes": [
+        {
+          "revision_id": "45c2f35d-b3db-4e0d-bd37-16eede1180f9",
+          "notes_fil": "## [purpose] Layunin at ebidensya\n\nPumili ng resource-saving action na nagpapanatili ng infection prevention, critical equipment at napapanahong serbisyo, at ipaliwanag ang tinanggihang opsyon. Kathang-isip na BHW si Charlaine; hindi DOH quotation ang adaptation. Produkto: isang proposal na may safeguard, rejection, verification at retry. Ang quiz, attendance at panonood ay hindi observed competence.\n\n## [time-materials] Oras at materyales\n\n5 opening + 12 modelling + 25 practice/feedback/retry + 10 safeguards debrief + 8 transfer = 60 minutes. Ang 60 + 60 + 60 = 180 ay module practice allocation. Hiwalay ang self-study audio at optional story; hindi ito TESDA certification.\n\nPara sa 30 learner: sampung triad, BHW/kasamahan/observer. Ihanda ang bilingual A4 kit: option cards, version/cause sheet, safeguard checklist, proposal/retry record at one-page decision aid. Gumamit lamang ng dummy teaching sheets at kit; walang patient record, gamot, clinical item o aktuwal na utility work. Ibigay ang buong fictional inputs sa kit; hindi kailangang mag-imbento ang trainer.\n\n## [prepare] Ihanda bago magsimula\n\nBasahin ang anim na paired screens at parehong original checks. Suriin ang lokal na document-control, clinical single-use at facility procedures sa awtorisadong reviewer bago workplace transfer. Hindi pa kumpirmado ang policy approval sa kuwentong ito. Kung walang approved procedure, discussion at dummy rehearsal lamang.\n\nI-print ang kit, basahin ang version A/B inputs at ihanda ang roster T1–T10, learner A/B/C. Trainer sample: round 1 T1-A, round 2 T2-B, round 3 T3-C. Sabihin nang maaga na ang ibang 27 ay hindi trainer-observed sa run na ito. Magtakda ng susunod na observation slot; huwag markahang passed ang peer record.\n\n## [opening] Opening: 5 minuto\n\nSabihin: “Ano ang aksaya na puwedeng bawasan nang buo pa rin ang proteksyon?” Ipakita ang card na may high bill at vaccine refrigerator, walang equipment switching. Itanong: “Ano ang dapat manatili?” Inaasahan: cold chain, required ventilation at handwashing water. Sabihin: “Proposal ang gagawin natin, hindi repair o pagtanggal ng serbisyo.” Ipabasa o basahin nang malakas ang objective at original utilities check.\n\n## [steps] Modelling: 12 minuto\n\nMinuto 0–4: ihambing ang utilities cards. Sabihin: “Siyasatin ang hindi kailangang ilaw ayon sa procedure; hindi patayin ang refrigerator.” I-model ang unknown approval at savings.\n\nMinuto 4–8: ilatag ang drawer A, printout A, controlled master B at supervisor confirmation B. Itanong: “Anong kumpirmado? Anong hindi pa?” Itala ang version mismatch. Ipakita ang dalawang sanhi: drawer copied versus wrong file selected. Parehong hindi pa proved; wala pang sagot ang nag-print. Kumpirmahin ang source bago routine change.\n\nMinuto 8–12: i-model ang mahinang “Reusable para tipid.” Feedback: “Anong instruction ang mananatili? Anong single-use ang tatanggihan?” Retry: “Aprubadong teaching visual kung angkop, buo ang instruction; walang clinical reuse. Policy approval kailangan.” Ipakita ang proposal/retry record; huwag ipakita ang check ending bago sumagot.\n\n## [expected-answers] Inaasahang sagot at produkto\n\nSafe proposal: ipasuri/ipaayos ang iniulat na tagas sa awtorisadong tao habang buo ang handwashing water, o siyasatin ang aprubadong teaching visual kung angkop at buo ang accessible instruction. Rejection: handwashing restriction o clinical single-use reuse. Ang high bill ay hindi patunay na refrigerator ang problema.\n\nVerification product: drawer A; printout A; master B; kunwaring supervisor confirms B. Kumpirmado ang mismatch. Hindi pa alam kung drawer o computer file ang sanhi. Susunod: ihambing ang copies/files at kausapin ang nag-print sa ilalim ng procedure. Walang sinasabing cost, measured savings, repair completion o actual approval.\n\nKumpletong record: napiling proposal; posibleng aksayang mabawasan; safeguard; rejected option at dahilan; approval/verification na kailangan; unang attempt; tiyak na feedback; observable retry; trainer-observation status.\n\n## [misconception] Maling pagkaunawa at ligtas na paghinto\n\n“Mas kaunting papel kahit mali” → itama ang approved version at kumpletong instruction. “Lahat ng plastic reusable” → paghiwalayin ang nonclinical teaching visual at clinical single-use. “Parehong A, kaya drawer ang sanhi” → tugma lamang, hindi proof. “High bill, patayin ang refrigerator” → protektahan ang cold chain.\n\nKung may actual shutdown, repair, clinical reuse o patient record na iminungkahi, sabihin: “Hinto. Option cards lamang; hindi natin aalisin ang kailangang proteksyon.” Itigil ang unsafe demonstration, ipaliwanag ang safeguard, at ipaulit sa dummy case. Hindi remedyo ang invented cleaning recipe. Ipa-review ang local procedure sa awtorisadong facility/infection-prevention reviewer.\n\n## [practice] Practice, feedback at retry: 25 minuto\n\nTatlong anim-na-minutong rounds = 18 minuto, saka 7 minutong shared debrief. Sa bawat round: 2 context/setup + 2 attempt + 1 feedback + 1 retry = 6. Round 1 A ang BHW, B kasamahan, C observer; round 2 B/C/A; round 3 C/A/B.\n\nRound 1: tagas versus handwashing restriction. Round 2: approved reusable teaching visual versus clinical single-use reuse. Round 3: version/cause sheet at paper-saving proposal. Sa bawat attempt itanong: “Ano ang pipiliin? Anong proteksyon ang mananatili? Bakit tinanggihan ang kabila? Anong hindi pa alam?” Observer records exact action/words, hindi impression.\n\nFeedback: pangalanan ang isang kulang, halimbawa “Wala pa ang approval.” Retry: learner adds “Kumpirmahin muna sa supervisor; mungkahi pa lamang.” Trainer watches all four attempt/feedback/retry minutes for one sampled learner each round; remaining two minutes are setup/movement. Debrief: paghambingin ang mga unknowns, walang attendance-based passing.\n\n## [answer-key] Answer key sa parehong checks\n\nUtilities: index 0, unang opsyon. 1: siyasatin ang unnecessary lights under procedure habang gumagana ang refrigerator. 2: unsafe ang overnight refrigerator shutdown. 3: unsafe ang required-ventilation shutdown. Charlaine chooses safeguarded investigation, rejects both cuts and submits for authorized decision. Approval at savings unknown.\n\nCheck: index 2, ikatlong opsyon. 1: hindi tanggalin ang needed instructions. 2: hindi ubusin ang lumang bersyon nang walang approved-version verification. 3: siyasatin ang approved version at approved reusable visual kung angkop at buo ang accessible instruction. Charlaine submits the safeguarded proposal; walang claim ng measured savings, repair completion o observed competence.\n\nBasahin ang lahat ng dahilan pagkatapos sumagot. Protektado ang tubig, single-use rules, critical equipment, ventilation at urgent referral. Ang quiz choices at prompt ay eksaktong original; huwag magdagdag ng bagong factual input sa tanong.\n\n## [observe] Observation at debrief: 10 minuto\n\nTrainer sample: T1-A round 1 minuto 2–6; T2-B round 2 minuto 8–12; T3-C round 3 minuto 14–18, relative sa practice start. Tatlong complete four-minute observations lamang; at least 27 learners remain not trainer-observed. Peer practice is not a pass.\n\nGamitin ang objective_index 0 indicator: ligtas na choice, evidence checking sa dalawang causes, safeguard at rejection, verification bago workplace action. Kaya na: walang prompt. Kailangan practice: ligtas ngunit kulang ang paliwanag; feedback at retry. Hindi pa: unsafe cut; safe stop at supported retry. Itala ang actual observed words/action at support; huwag gawing certification rule ang rubric.\n\nGumawa ng follow-up roster: T1-B/C, T2-A/C, T3-A/B at T4–T10 A/B/C = 27. Magbigay ng hiwalay na apat-na-minutong observation slot bawat learner, at setup/movement time; hindi ito kasya sa natitirang 10 minuto. Sa debrief itanong kung anong evidence at proteksyon ang mananatili.\n\n## [support] Support at transfer: 8 minuto\n\nBasahin ang cards nang malakas, gumamit ng malaking print at learner-selected language. Maaaring spoken answer na isusulat ng kasamahan; pareho ang objective. Scaffold: “Pipiliin ko ang __. Mananatili ang __. Tatanggihan ko ang __ dahil __. Kumpirmahin muna ang __.” Unti-unting alisin ang prompt sa retry at itala ang tulong.\n\nSolo: isulat/sabihin ang parehong apat na linya, ihambing sa aid, itama at ulitin. Walang solo self-pass; mag-book ng trainer observation. Transfer prompt: “Sa susunod na duty, anong proposal at anong approved procedure ang iche-check mo muna?” I-record ang verifier at follow-up na hindi pa kumpirmado. Walang actual implementation habang walang authorization.\n\n## [sources-review] Sources at hiwalay na review\n\nCandidate sources: Facilitator PDF 19/printed 12 (3-hour sustainable competency), PDF 22/printed 15 (ibang 4-hour entrepreneurial competency), PDF 34/printed 27 (ibang 10-hour common competency); Manual PDF 14/printed 6 at PDF 30/printed 19; TESDA unit 400311217; WHO sustainability guidance. Manual at Guide ay magkaiba ang order ng 7S; huwag baguhin ang quotations o gawing iisang prescribed sequence.\n\nWalang hiwalay na sustainable section sa original 78-slide Day 1 deck; huwag mag-imbento ng slide citation. Ang fictional case at A/B sheets ay adaptation, hindi source quotation. Tingnan ang exact source-audit receipt para sa na-inspect na originals at unresolved access. Hindi awtomatikong certification ang 60 minutong practice.\n\nMga hiwalay na estado: source audit; facility/infection-prevention review; actual model audio review; human listening; owner package approval. Pending ang local reviewer, human listening at owner approval; hindi pinapalitan ng model review ang mga ito.\n",
+          "notes_en": "## [purpose] Purpose and evidence\n\nChoose a resource-saving action that preserves infection prevention, critical equipment and timely services, and explain the rejected option. Charlaine is a fictional BHW; the adaptation is not a DOH quotation. Product: a proposal with a safeguard, rejection, verification and retry. A quiz, attendance or watching the story is not observed competence.\n\n## [time-materials] Time and materials\n\n5 opening + 12 modelling + 25 practice/feedback/retry + 10 safeguards debrief + 8 transfer = 60 minutes. The 60 + 60 + 60 = 180 is the module practice allocation. Self-study audio and optional story duration are separate; this does not grant TESDA certification.\n\nFor 30 learners: ten triads, BHW/colleague/observer. Provide the bilingual A4 kit: option cards, version/cause sheet, safeguard checklist, proposal/retry record and one-page decision aid. Use dummy teaching sheets and kits only, with no patient records, medicines, clinical items or actual utility work. The kit supplies all fictional inputs; the trainer need not invent them.\n\n## [prepare] Prepare before starting\n\nRead the six paired screens and both original checks. Review local document-control, clinical single-use and facility procedures with an authorized reviewer before workplace transfer. Policy approval in the story remains unknown. Without an approved procedure, conduct discussion and dummy rehearsal only.\n\nPrint the kit, read the version A/B inputs and prepare roster T1–T10, learners A/B/C. Trainer sample: round 1 T1-A, round 2 T2-B, round 3 T3-C. Explain that the other 27 learners will not be trainer-observed in this run. Schedule their next observation opportunity; do not mark peer records as passed.\n\n## [opening] Opening: 5 minutes\n\nSay: “What waste could we reduce while preserving every protection?” Show the high-bill/vaccine-refrigerator card without switching equipment. Ask: “What must stay?” Expected: cold chain, required ventilation and handwashing water. Say: “We will make a proposal, not perform repairs or remove services.” Read the objective and original utilities check, or invite a learner to read.\n\n## [steps] Modelling: 12 minutes\n\nMinutes 0–4: compare utilities cards. Say: “Investigate unnecessary lights under procedure; do not switch off the refrigerator.” Model unknown authorization and savings.\n\nMinutes 4–8: lay out drawer A, printout A, controlled master B and supervisor confirmation B. Ask: “What is confirmed? What remains unknown?” Record the version mismatch. Show two causes: drawer copied versus wrong file selected. Neither is proved; the person who printed has not answered. Verify the source before changing the routine.\n\nMinutes 8–12: model the weaker “Reusable saves money.” Feedback: “What instructions remain? Which single-use reuse must be rejected?” Retry: “Only an approved teaching visual where suitable, with complete instructions; no clinical reuse. Policy approval is needed.” Show the proposal/retry record. Do not reveal the check ending before a response.\n\n## [expected-answers] Expected answers and products\n\nSafe proposal: ask an authorized person to inspect/repair the reported leak while preserving handwashing water, or investigate an approved teaching visual where suitable with complete accessible instructions. Rejection: handwashing restrictions or clinical single-use reuse. A high bill does not prove the refrigerator is the problem.\n\nVerification product: drawer A; printout A; master B; simulated supervisor confirms B. The mismatch is confirmed. Whether the drawer or computer file caused it is unknown. Next: compare copies/files and ask the person who printed under procedure. No cost, measured savings, repair completion or actual approval is supplied.\n\nComplete record: proposal selected; possible waste reduced; safeguard; rejected option and reason; authorization/verification needed; first attempt; specific feedback; observable retry; trainer-observation status.\n\n## [misconception] Misconceptions and safe stopping\n\n“Less paper even if wrong” → restore approved-version verification and complete instructions. “All plastics are reusable” → distinguish nonclinical teaching visuals from clinical single-use items. “Both A, so the drawer caused it” → consistent evidence is not proof. “High bill, stop the refrigerator” → protect the cold chain.\n\nIf actual shutdown, repair, clinical reuse or patient records are proposed, say: “Stop. Option cards only; we will preserve essential protection.” Stop the unsafe demonstration, explain the safeguard and repeat the dummy case. An invented cleaning recipe is not a correction. Ask the authorized facility/infection-prevention reviewer to review local procedure.\n\n## [practice] Practice, feedback and retry: 25 minutes\n\nThree six-minute rounds = 18 minutes, followed by seven minutes of shared debrief. Each round: 2 context/setup + 2 attempt + 1 feedback + 1 retry = 6. Round 1 A/B/C are BHW/colleague/observer; round 2 B/C/A; round 3 C/A/B.\n\nRound 1: leak versus handwashing restriction. Round 2: approved reusable teaching visual versus clinical single-use reuse. Round 3: version/cause sheet and paper-saving proposal. Each attempt asks: “What do you choose? What protection stays? Why reject the other option? What is unknown?” Observer records exact actions/words, not impressions.\n\nFeedback names one gap, such as “Authorization is missing.” Retry adds “Confirm with the supervisor first; this is still a proposal.” The trainer observes all four attempt/feedback/retry minutes for one sampled learner per round; the other two minutes allow setup/movement. Debrief compares unknowns; there is no attendance-based passing.\n\n## [answer-key] Answer key for both checks\n\nUtilities: index 0, first option. 1: investigate unnecessary lights under procedure while the refrigerator operates. 2: overnight refrigerator shutdown is unsafe. 3: required-ventilation shutdown is unsafe. Charlaine chooses safeguarded investigation, rejects both cuts and submits for an authorized decision. Approval and savings remain unknown.\n\nCheck: index 2, third option. 1: do not omit needed instructions. 2: do not use up old stock without approved-version verification. 3: check the approved version and an approved reusable visual where suitable with complete accessible instructions. Charlaine submits the safeguarded proposal; no measured savings, repair completion or observed competence is claimed.\n\nRead every rationale after the response. Water, single-use rules, critical equipment, ventilation and urgent referral stay protected. Prompts and choices are exactly original; do not add fictional factual inputs to the quiz.\n\n## [observe] Observation and debrief: 10 minutes\n\nTrainer sample: T1-A round 1 minutes 2–6; T2-B round 2 minutes 8–12; T3-C round 3 minutes 14–18, relative to practice start. Only three complete four-minute observations; at least 27 learners remain not trainer-observed. Peer practice is not a pass.\n\nUse the objective_index 0 indicator: safe choice, two-cause evidence checking, safeguard and rejection, verification before workplace action. Ready: without prompting. Needs practice: safe choice but incomplete explanation, followed by feedback and retry. Not yet: unsafe cut, followed by safe stop and supported retry. Record actual observed words/actions and support; do not turn this rubric into a certification rule.\n\nFollow-up roster: T1-B/C, T2-A/C, T3-A/B and T4–T10 A/B/C = 27. Give each learner a separate four-minute observation slot plus setup/movement time; this cannot fit into the ten-minute debrief. Ask what evidence and protection must remain.\n\n## [support] Support and transfer: 8 minutes\n\nRead cards aloud, use large print and the learner’s chosen language. A colleague may record a spoken answer; the objective stays the same. Scaffold: “I choose __. __ stays. I reject __ because __. First verify __.” Remove prompts gradually on retry and record support.\n\nSolo: write/say the same four lines, compare with the aid, correct and retry. No solo self-pass; schedule trainer observation. Transfer prompt: “On your next duty, which proposal and approved procedure will you check first?” Record the verifier and any follow-up that remains unconfirmed. No actual implementation without authorization.\n\n## [sources-review] Sources and separate reviews\n\nCandidate sources: Facilitator PDF 19/printed 12 (three-hour sustainable competency), PDF 22/printed 15 (different four-hour entrepreneurial competency), PDF 34/printed 27 (different ten-hour common competency); Manual PDF 14/printed 6 and PDF 30/printed 19; TESDA unit 400311217; WHO sustainability guidance. Manual and Guide list 7S in different orders; preserve quotations and do not invent one prescribed sequence.\n\nThe original 78-slide Day 1 deck has no separate sustainable-practices section; do not invent a slide citation. The fictional case and A/B sheets are adaptations, not source quotations. Consult the exact source-audit receipt for inspected originals and unresolved access. Sixty minutes of practice does not grant certification.\n\nSeparate states: source audit; facility/infection-prevention review; actual model audio review; human listening; owner package approval. Local reviewer, human listening and owner approval remain pending; model review does not replace them.\n",
+          "observation_indicators": [
+            {
+              "levels": {
+                "kaya_na_en": "Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option. Completes this without prompting.",
+                "hindi_pa_en": "Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings.",
+                "kaya_na_fil": "Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon. Nagagawa kahit hindi pinapaalalahanan.",
+                "hindi_pa_fil": "Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.",
+                "kailangan_practice_en": "Makes a safe choice but cannot explain the safeguard; use the three practice questions and repeat.",
+                "kailangan_practice_fil": "Ligtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong tanong sa practice at ipaulit."
+              },
+              "not_yet_en": "Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings.",
+              "not_yet_fil": "Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.",
+              "observable_en": "Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option.",
+              "observable_fil": "Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon.",
+              "objective_index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "prompt_revision": "charlaine-safety-demonstration-v1",
+  "date": "2026-10-10T09:45:08.250Z",
+  "source_commit": "8d74d269ae5152241d67f9b33e057f83480a9ae3",
+  "model": "gemini-3.8-flash",
+  "expected_full_recordings": 16,
+  "expected_focused_excerpts": 64,
+  "missing_story": true,
+  "decode_only": false,
+  "decoder_version": "ffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+  "method": "Decode every shipped Read MP3 and both actual videos AAC; full PCM energy plus zone metrics, and model-reviewed focused WAV excerpts. Model analysis is not human listening or owner/SME approval.",
+  "records": [
+    {
+      "id": "read-check-fil",
+      "language": "fil",
+      "source_path": "/training/audio/09-sustainable-practices/resources-monitor/check.fil.7dc4370d6cc4.mp3",
+      "source_sha256": "dcb5875b357be05972a21120764fc42838decd7b9d4377bf1dc79fb684a7e85b",
+      "decoded_pcm_sha256": "62e4a1756452fdd951756d29b1ca7967b7a7a6ee321e698c4905f0e08838f1e9",
+      "full_audio_metrics": {
+        "samples": 1826900,
+        "seconds": 76.12083333333334,
+        "rms": 0.1314995958874344,
+        "peak": 0.999847412109375,
+        "quiet_sample_fraction": 0.1947993869396245
+      },
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Piliin ang susunod na hakbang",
+          "start_ms": 0,
+          "end_ms": 2800,
+          "samples": 67200,
+          "seconds": 2.8,
+          "rms": 0.10783188891433206,
+          "peak": 0.77899169921875,
+          "quiet_sample_fraction": 0.2290625
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sa hiwalay na kathang-isip na sitwasyon ni Charlaine, kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions.",
+          "start_ms": 3100,
+          "end_ms": 12380,
+          "samples": 222720,
+          "seconds": 9.28,
+          "rms": 0.11897731450437359,
+          "peak": 0.804168701171875,
+          "quiet_sample_fraction": 0.11403107040229885
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Ito lamang ang ibinigay na datos.",
+          "start_ms": 12680,
+          "end_ms": 15360,
+          "samples": 64320,
+          "seconds": 2.68,
+          "rms": 0.1494329635718633,
+          "peak": 0.825347900390625,
+          "quiet_sample_fraction": 0.2306747512437811
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Walang kumpirmadong bill, presyo, dahilan ng pagkansela o kalidad ng naibigay na serbisyo.",
+          "start_ms": 15660,
+          "end_ms": 23660,
+          "samples": 192000,
+          "seconds": 8,
+          "rms": 0.14089334242493373,
+          "peak": 0.989044189453125,
+          "quiet_sample_fraction": 0.23597395833333334
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+          "start_ms": 23960,
+          "end_ms": 29240,
+          "samples": 126720,
+          "seconds": 5.28,
+          "rms": 0.14091143066252945,
+          "peak": 0.98065185546875,
+          "quiet_sample_fraction": 0.18790246212121212
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Isaalang-alang ang denominator at serbisyong naibigay.",
+          "start_ms": 29540,
+          "end_ms": 34140,
+          "samples": 110400,
+          "seconds": 4.6,
+          "rms": 0.12258053222887794,
+          "peak": 0.81707763671875,
+          "quiet_sample_fraction": 0.17458333333333334
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "text": "Pagkatapos sumagot, basahin ang dahilan para sa bawat pagpipilian at ang itinamang wakas; ihambing ito sa ginawa sa rehearsal.",
+          "start_ms": 34440,
+          "end_ms": 44320,
+          "samples": 237120,
+          "seconds": 9.88,
+          "rms": 0.13620401026086815,
+          "peak": 0.895294189453125,
+          "quiet_sample_fraction": 0.17271002024291499
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Itinamang kathang-isip na wakas: hindi muna nag-claim si Charlaine ng tagumpay o savings. Inihiwalay niya ang 20/100 tungong 5/100 na reprint improvement sa kulang na workload, kalidad at gastos na datos. Iminungkahi niyang panatilihin ang kontroladong aprubadong paper master, ipasa ang routine at ipareview kung babaguhin o ihihinto ang trial. Hindi pa ito patunay ng matagumpay na implementation o certification.",
+          "start_ms": 44620,
+          "end_ms": 76060,
+          "samples": 754560,
+          "seconds": 31.44,
+          "rms": 0.1354088422561198,
+          "peak": 0.999847412109375,
+          "quiet_sample_fraction": 0.15777009117896523
+        }
+      ],
+      "excerpts": [
+        {
+          "kind": "name",
+          "start": 3.1,
+          "end": 12.38,
+          "file": "read-check-fil-name.wav",
+          "excerpt_sha256": "559a25d2d6df0fe80b3f84f4b27215ffa952e00f1424eed4aa7ab133e54e2f15",
+          "decoded_sample_count": 222720,
+          "expected_context": "Sa hiwalay na kathang-isip na sitwasyon ni Charlaine, kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa hiwalay na kathang-isip na sitwasyon ni Charlaine, kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions.\",\n  \"observations\": {\n    \"charlaine_pronunciation\": \"Pronounced clearly around 00:02 - 00:03 as 'Shar-leyn'.\",\n    \"numbers_and_denominators\": \"The term 'kalahati' (half) occurs twice (00:03 - 00:04 and 00:06 - 00:07) denoting fractional reduction.\",\n    \"reprints_vs_costs\": \"Mentions paper reduction ('nabawas sa papel') rather than direct reprints or monetary costs.\",\n    \"negation_and_qualification\": \"No strict negation; conditional framing via 'dahil' and hypothetical qualifier 'kathang-isip'.\",\n    \"pending_permission\": \"Not addressed in the spoken line.\",\n    \"workload_quality_distinctions\": \"Connects canceled volume ('nakanselang sessions') to material usage rather than direct quality metrics.\",\n    \"ending_completeness\": \"Sentence terminates cleanly at 00:08 - 00:09 without abrupt cut-off.\",\n    \"audible_speech_and_voice\": \"Pacing is steady with no abrupt register or voice switches.\"\n  },\n  \"possible_defects\": {\n    \"clipped_words\": \"None detected; word boundaries remain intact.\",\n    \"unexpected_voice_changes\": \"None observed.\"\n  },\n  \"uncertainty\": \"Low; acoustic signals are clear and unambiguous throughout.\"\n}\n```"
+        },
+        {
+          "kind": "body",
+          "start": 3.1,
+          "end": 12.38,
+          "file": "read-check-fil-body.wav",
+          "excerpt_sha256": "559a25d2d6df0fe80b3f84f4b27215ffa952e00f1424eed4aa7ab133e54e2f15",
+          "decoded_sample_count": 222720,
+          "expected_context": "Sa hiwalay na kathang-isip na sitwasyon ni Charlaine, kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions.",
+          "model_response": "```json\n{\n  \"transcript\": \"Sa hiwalay na kathang-isip na sitwasyon ni Charlaine, kalahati ang nabawas sa papel, dahil kalahati rin ang nakanselang sessions.\",\n  \"observations\": {\n    \"charlaine_pronunciation\": \"Pronounced phonetically as 'Shar-leyn' around 00:02, standard and intelligible.\",\n    \"numbers_and_denominators\": \"The term 'kalahati' (half) is used at 00:03 and 00:06 to express proportions clearly.\",\n    \"reprints_vs_costs\": \"Focuses on paper usage reduction ('nabawas sa papel') rather than financial reprint costs directly.\",\n    \"negation_and_qualification\": \"Uses proportional qualification ('kalahati rin') tied to the condition of canceled sessions.\",\n    \"pending_permission\": \"Not explicitly mentioned in this short excerpt.\",\n    \"workload_quality_distinctions\": \"Distinguishes volume adjustment (fewer sessions) leading to reduced materials, without explicit quality metrics.\",\n    \"audible_speech_and_voice\": \"Pacing is steady, tone is clear and educational; no sudden shifts in pitch or unnatural voice transitions.\",\n    \"ending_completeness\": \"The final word 'sessions' concludes cleanly at 00:08.5 without truncation.\"\n  },\n  \"possible_defects\": [],\n  \"uncertainty\": \"Low\"\n}\n```"
+        }
+      ]
+    }
+  ]
+}

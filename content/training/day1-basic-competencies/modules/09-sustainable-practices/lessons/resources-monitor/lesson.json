@@ -19,7 +19,9 @@
         "m9.communicate",
         "m9.review"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "monitor-trial"
+      ],
       "takeaway_fil": "Ang sustainable na gawi ay may responsable, sinusukat na resulta at regular na review.",
       "takeaway_en": "A sustainable practice has an owner, measured results and regular review.",
       "check": null
@@ -29,7 +31,9 @@
       "concept_ids": [
         "m9.review"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "monitor-compare"
+      ],
       "takeaway_fil": "Ihambing ang resources sa magkatulad na gawain at tingnan din ang kalidad.",
       "takeaway_en": "Compare resources across similar work and check quality too.",
       "check": {
@@ -50,8 +54,8 @@
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ang unang sagot ay tama sa sukat at sinusuri ang kalidad. Hindi katumbas ng reprint rate ang kabuuang gastos; kailangan ang workload at serbisyo upang maunawaan ang resulta.",
-        "feedback_en": "The first response uses the correct rate and checks quality. A reprint rate is not total cost; workload and service must also be considered."
+        "feedback_fil": "Unang pagpipilian: tama—15 na mas kaunting reprints bawat 100 pahina, pero kailangan pa ring suriin ang workload at tamang materyal. Ikalawa: hindi tama—75% ang relative na bawas sa reprints, hindi napatunayang bawas sa kabuuang gastos. Ikatlo: hindi tama—maaaring magbago ang totals dahil sa sessions o bumaba ang kalidad. Itamang ulat: 20% tungong 5%, bawas na 15 percentage points; hindi pa alam ang workload, kalidad, sanhi at cost evidence.",
+        "feedback_en": "First choice: correct—15 fewer reprints per 100 pages, with workload and correct materials still requiring verification. Second: incorrect—the relative reprint reduction is 75%, not a proven reduction in total cost. Third: incorrect—totals can change with session counts or declining quality. Corrected report: 20% to 5%, a 15-percentage-point decrease; workload, quality, cause and cost evidence remain unknown."
       }
     },
     {
@@ -59,7 +63,9 @@
       "concept_ids": [
         "m9.communicate"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "monitor-communicate"
+      ],
       "takeaway_fil": "Mas napapanatili ang pagbabago kapag naiintindihan at kayang gawin ng kasama.",
       "takeaway_en": "A change lasts when colleagues understand it and can carry it out.",
       "check": {
@@ -80,8 +86,8 @@
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "Ang ikalawang sagot ay umaangkop sa hadlang habang kontrolado ang bersyon at may puna mula sa kasama. Hindi solusyon ang hindi magawang download o hindi aprubadong lumang kopya.",
-        "feedback_en": "The second response addresses the barrier while controlling the version and seeking feedback. An impossible download or unapproved old copy does not solve it."
+        "feedback_fil": "Una: hindi tama—hindi magagawa ang download kung walang internet. Ikalawa: tama—ang kontroladong papel na master na napatunayang aprubado, kasama ang puna ng kasama, ay tumutugon sa hadlang. Ikatlo: hindi tama—maaaring luma o hindi aprubado ang kopya sa drawer. Itamang hakbang: patunayan ang bersyon, humingi ng puna at kumpirmahin ang owner/kapalit at pahintulot. Kung hindi mapatunayan, magtanong muna; wala pang iniaangking kasunduan.",
+        "feedback_en": "First: incorrect—a download cannot be completed without internet. Second: correct—a verified approved controlled paper master and colleague feedback address the barrier. Third: incorrect—the drawer copy may be outdated or unapproved. Corrected action: verify the version, seek feedback and confirm owner/replacement and permission. If verification fails, ask first; agreement has not been claimed."
       }
     },
     {
@@ -89,7 +95,9 @@
       "concept_ids": [
         "m9.review"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "monitor-workload"
+      ],
       "takeaway_fil": "Ang patas na paghahambing ay isinasaalang-alang ang dami ng trabahong ginawa.",
       "takeaway_en": "A fair comparison accounts for the amount of work performed.",
       "check": null
@@ -100,7 +108,9 @@
         "m9.organize",
         "m9.review"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "monitor-handover"
+      ],
       "takeaway_fil": "Ang routine na naipapasa sa kasama ay mas tumatagal kaysa personal na diskarte lamang.",
       "takeaway_en": "A routine that colleagues can inherit lasts longer than an individual workaround.",
       "check": null
@@ -113,7 +123,7 @@
         "m9.organize"
       ],
       "asset_ids": [
-        "resource-monitor"
+        "monitor-practice"
       ],
       "takeaway_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
       "takeaway_en": "Lower consumption is a success only when correct, safe service is still delivered.",
@@ -126,9 +136,11 @@
         "m9.review",
         "m9.organize"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
-      "takeaway_en": "Lower consumption is a success only when correct, safe service is still delivered.",
+      "asset_ids": [
+        "monitor-check"
+      ],
+      "takeaway_fil": "Itinamang kathang-isip na wakas: hindi muna nag-claim si Charlaine ng tagumpay o savings. Inihiwalay niya ang 20/100 tungong 5/100 na reprint improvement sa kulang na workload, kalidad at gastos na datos. Iminungkahi niyang panatilihin ang kontroladong aprubadong paper master, ipasa ang routine at ipareview kung babaguhin o ihihinto ang trial. Hindi pa ito patunay ng matagumpay na implementation o certification.",
+      "takeaway_en": "Corrected fictional ending: Charlaine withholds a success or savings claim. She separates the 20/100 to 5/100 reprint improvement from missing workload, quality and cost evidence. She proposes retaining the controlled approved paper master, handing over the routine and reviewing whether to revise or stop the trial. Successful implementation or certification has not been established.",
       "check": {
         "prompt_fil": "Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?",
         "prompt_en": "Paper use halved because half the sessions were canceled. What can be concluded?",
@@ -147,8 +159,8 @@
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.",
-        "feedback_en": "The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved."
+        "feedback_fil": "Una: tama—hindi pa patunay ng improvement; ihambing ang resources bawat naibigay na session at kalidad. Ikalawa: hindi tama—walang ibinigay na bill o cost evidence, at maaaring nawala ang serbisyo. Ikatlo: hindi tama—kailangan pa rin ang review ng workload, kalidad at dahilan ng pagkansela. Itinamang kathang-isip na wakas: hindi muna nag-claim si Charlaine ng tagumpay o savings. Inihiwalay niya ang 20/100 tungong 5/100 na reprint improvement sa kulang na workload, kalidad at gastos na datos. Iminungkahi niyang panatilihin ang kontroladong aprubadong paper master, ipasa ang routine at ipareview kung babaguhin o ihihinto ang trial. Hindi pa ito patunay ng matagumpay na implementation o certification.",
+        "feedback_en": "First: correct—improvement is not established; compare resources per delivered session and quality. Second: incorrect—no bill or cost evidence is supplied, and services may have been lost. Third: incorrect—workload, quality and reasons for cancellation still need review. Corrected fictional ending: Charlaine withholds a success or savings claim. She separates the 20/100 to 5/100 reprint improvement from missing workload, quality and cost evidence. She proposes retaining the controlled approved paper master, handing over the routine and reviewing whether to revise or stop the trial. Successful implementation or certification has not been established."
       }
     }
   ],
@@ -257,6 +269,123 @@
       "caption_en": "Compare results and quality before keeping a change.",
       "provenance": "Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.",
       "review_status": "approved"
+    },
+    {
+      "id": "monitor-trial",
+      "path": "/training/bhw-1-9/charlaine-monitor-trial-cca1983eac3e.png",
+      "content_hash": "cca1983eac3e05ee2cebb6a10ae8a2e19e1e0f9deace077d475d5920ef24b42a",
+      "alt_fil": "Si Charlaine ay nag-iisip at nagsusulat sa blankong trial card habang nakikinig ang kasama.",
+      "alt_en": "Charlaine thinks and writes on a blank trial card while a colleague listens.",
+      "caption_fil": "Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.",
+      "caption_en": "Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.",
+      "review_status": "draft"
+    },
+    {
+      "id": "monitor-compare",
+      "path": "/training/bhw-1-9/charlaine-monitor-compare-f543a30986fb.png",
+      "content_hash": "f543a30986fb532ea40754d68dce30ef1ebf50e4f6076b5d45618643f6d73dc2",
+      "alt_fil": "Itinuturo ni Charlaine ang dalawang stack ng ordinaryong printouts at blankong tally sheet.",
+      "alt_en": "Charlaine points to two stacks of ordinary printouts and a blank tally sheet.",
+      "caption_fil": "Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.",
+      "caption_en": "Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.",
+      "review_status": "draft"
+    },
+    {
+      "id": "monitor-communicate",
+      "path": "/training/bhw-1-9/charlaine-monitor-communicate-617a9b934a50.png",
+      "content_hash": "617a9b934a508953d0a8006cd9e89380a497679cc5952fc4488db683c81b4937",
+      "alt_fil": "Nag-uusap si Charlaine at kasama sa tabi ng paper master folder at saradong laptop.",
+      "alt_en": "Charlaine and a colleague discuss a paper master folder beside a closed laptop.",
+      "caption_fil": "Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.",
+      "caption_en": "Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.",
+      "review_status": "draft"
+    },
+    {
+      "id": "monitor-workload",
+      "path": "/training/bhw-1-9/charlaine-monitor-workload-95621d5688a0.png",
+      "content_hash": "95621d5688a0de5939e07f921a2eacaea7418e5f041d759f2da5e715c0128c76",
+      "alt_fil": "Sinusuri ni Charlaine ang dalawang blankong schedule at kulang na fields.",
+      "alt_en": "Charlaine examines two blank schedules and missing fields.",
+      "caption_fil": "Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.",
+      "caption_en": "Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.",
+      "review_status": "draft"
+    },
+    {
+      "id": "monitor-handover",
+      "path": "/training/bhw-1-9/charlaine-monitor-handover-8c007c23d23e.png",
+      "content_hash": "8c007c23d23e05860161845a0d497cb0fc2e809f206851ebc30ef92dd28d1cda",
+      "alt_fil": "Ipinapaliwanag ng kapalit ang plain-paper routine habang nakikinig si Charlaine.",
+      "alt_en": "The replacement explains the plain-paper routine while Charlaine listens.",
+      "caption_fil": "Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.",
+      "caption_en": "Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.",
+      "review_status": "draft"
+    },
+    {
+      "id": "monitor-practice",
+      "path": "/training/bhw-1-9/charlaine-monitor-practice-1c2e1fa6bcd1.png",
+      "content_hash": "1c2e1fa6bcd1687478bad4d46e654a6f0412461de86761b223437c6a93beacf4",
+      "alt_fil": "Tatlong fictional adults ang nagre-rehearse gamit ang papel, calculator at observer sheet.",
+      "alt_en": "Three fictional adults rehearse with paper, calculator and an observer sheet.",
+      "caption_fil": "Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.",
+      "caption_en": "Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.",
+      "review_status": "draft"
+    },
+    {
+      "id": "monitor-check",
+      "path": "/training/bhw-1-9/charlaine-monitor-check-103407be75bd.png",
+      "content_hash": "103407be75bd64559c2d716fbfb3cf75a2053b13d63e7bc99a63fbb1c0619dd5",
+      "alt_fil": "Sinusuri ni Charlaine at kasama ang plain-paper report at routine folder; may blankong evidence boxes.",
+      "alt_en": "Charlaine and a colleague examine a plain-paper report and routine folder with empty evidence boxes.",
+      "caption_fil": "Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.",
+      "caption_en": "Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.",
+      "review_status": "draft"
+    },
+    {
+      "id": "resources-monitor-story",
+      "alt_fil": "Pitong kathang-isip na beats: panukala, patas na comparison, no-internet master, workload, handover, retry at kwalipikadong ulat.",
+      "alt_en": "Seven fictional beats: proposal, fair comparison, no-internet master, workload, handover, retry and a qualified report.",
+      "caption_fil": "Kathang-isip na adaptation. Walang napatunayang savings o matagumpay na trial.",
+      "caption_en": "Fictional adaptation. No proven savings or successful trial.",
+      "provenance": "Shared draft Charlaine reference; seven built-in imagegen scenes; Gemini Kore audio with measured encoded boundaries; owner/facility/human listening review pending.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-9/resources-monitor-gemini-fil-c7a336043359.mp4",
+          "content_hash": "c7a336043359245a1d4c27096690eb75aaca155e01b6e8e68181e5a003077bd7",
+          "duration_s": 84,
+          "poster": {
+            "path": "/training/bhw-1-9/resources-monitor-gemini-fil-3bf026606946-poster.jpg",
+            "content_hash": "3bf0266069461eab350a4efb586588e1c35602b036db804c4f4cd3bb1b09cd2f"
+          },
+          "captions": {
+            "path": "/training/bhw-1-9/resources-monitor-gemini-fil-f106a6589f7e.vtt",
+            "content_hash": "f106a6589f7e375f5b51ad7eb57b41609bc9a508477334a20510789facccea09"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-9/resources-monitor-gemini-en-bd29989db088.mp4",
+          "content_hash": "bd29989db0883f21dff7b0ebcc8bf36cf3db869a46217fde26dea44bc8d84f67",
+          "duration_s": 80,
+          "poster": {
+            "path": "/training/bhw-1-9/resources-monitor-gemini-en-9fd86ca10752-poster.jpg",
+            "content_hash": "9fd86ca107528d1c7838b55604a5c8453fa8da165a413c49e6ec4fffcd05baa5"
+          },
+          "captions": {
+            "path": "/training/bhw-1-9/resources-monitor-gemini-en-19db7b140059.vtt",
+            "content_hash": "19db7b14005930bce28a05682e1737e3008e42ae06a4f8c4aff198fba6408af1"
+          }
+        }
+      },
+      "path": "/training/bhw-1-9/resources-monitor-gemini-fil-3bf026606946-poster.jpg",
+      "content_hash": "3bf0266069461eab350a4efb586588e1c35602b036db804c4f4cd3bb1b09cd2f"
     }
-  ]
+  ],
+  "featured_asset_id": "resources-monitor-story"
 }

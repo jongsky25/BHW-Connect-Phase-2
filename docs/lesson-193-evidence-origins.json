@@ -1,0 +1,110 @@
+{
+  "status": "actual bilingual media and complete current registry verified; archive integrity bound separately to its frozen-head receipt",
+  "attempts": [
+    {
+      "run_id": 38040980575,
+      "source_head": "6021f8fde11c8dad66fe824229ab8508b71d5827",
+      "artifact_id": 11665982896,
+      "archive_bytes": 152450545,
+      "archive_sha256": "5cd50a0429ae74a17639695e338e554544597fb6eb1970d4e46f1175179c724a",
+      "outcome": "request budget exhausted after 12 of 14 current Read tracks; resumable; original raw evidence retained",
+      "run_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38040980575",
+      "artifact_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38040980575/artifacts/11665982896"
+    },
+    {
+      "run_id": 38041922351,
+      "source_head": "8d74d269ae5152241d67f9b33e057f83480a9ae3",
+      "artifact_id": 11665868623,
+      "archive_bytes": 152189052,
+      "archive_sha256": "db97dc52828806b5124c7f397ca5f109cd92fe1983b34fa48057acdd2525f2d2",
+      "outcome": "14 current Read tracks generated; Filipino video rendered, then registry enumeration failed because English timing metadata was not yet generated; partial focused review retained",
+      "run_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38041922351",
+      "artifact_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38041922351/artifacts/11665868623"
+    },
+    {
+      "run_id": 38042868862,
+      "source_head": "7ad829bdcde82e241e1687cccda94dca6b7155c5",
+      "artifact_id": 11667295779,
+      "archive_bytes": 260415798,
+      "archive_sha256": "20347971a7da4f41a9072d085efc2fab3e7ee6d204bdfa11f09320ea7aab6d20",
+      "outcome": "both longer story renders produced; application validator rejected durations over 90 seconds; original focused evidence retained",
+      "reported_focused_reviews": 64,
+      "audited_nonempty_focused_reviews": 63,
+      "invalid_review": "read-check-fil / critical was whitespace-only; excluded from cache and retried in successor",
+      "run_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38042868862",
+      "artifact_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38042868862/artifacts/11667295779"
+    },
+    {
+      "run_id": 38043454185,
+      "source_head": "096ee1a34146f846f1b57e2bb89475fb0c08781d",
+      "outcome": "obsolete long-story run canceled; no release claim",
+      "run_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38043454185",
+      "artifact_url": null
+    },
+    {
+      "run_id": 38044155204,
+      "source_head": "a9335ce3dda9e3c010ba84dc6d6c83410feaf3f1",
+      "outcome": "superseded queued run canceled before execution",
+      "run_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38044155204",
+      "artifact_url": null
+    },
+    {
+      "run_id": 38044296224,
+      "source_head": "cb00c966b6eae81decc6542ef5b7a2b57e01be2d",
+      "artifact_id": 11668679240,
+      "archive_bytes": 289279979,
+      "archive_sha256": "efbe2535d0302938d02ce853923f92571d53aba26f1adad14bce8b3bf65f0cc7",
+      "outcome": "100/100 actual registry renders; 16 full and 64 nonempty focused reviews. Retained before integrating released 1.9.2 and clarifying story printed-page denominator/two Filipino sentences.",
+      "run_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38044296224",
+      "artifact_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38044296224/artifacts/11668679240"
+    }
+  ],
+  "current_media_run": 38051282774,
+  "raw_evidence": "JSON request/response bodies without credentials or transport headers; original failed/superseded bytes retained in the linked artifacts",
+  "all_new_media_review_status": "draft",
+  "human_listening": "pending",
+  "release_authorized": false,
+  "current_preview": {
+    "run_id": 38051282774,
+    "source_head": "d490ae0aaa81fd0e8276b48106cdc300bd9e458f",
+    "artifact_id": 11670210001,
+    "archive_bytes": 328392535,
+    "archive_sha256": "f5c380323dbb3611a506ecf0fc6e808ba73a5a1c06de9c146fc41bdb47c5140d",
+    "safe_unique_paths": true,
+    "CRC_checked": true,
+    "members": 649,
+    "actual_full_recordings": 16,
+    "actual_nonempty_focused_reviews": 64,
+    "artifact_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38051282774/artifacts/11670210001"
+  },
+  "current_complete_media": {
+    "run_id": 38051282774,
+    "source_head": "d490ae0aaa81fd0e8276b48106cdc300bd9e458f",
+    "artifact_id": 11671674614,
+    "archive_bytes": 328399020,
+    "archive_sha256": "822eadb6956cd8fad0f0fcc1a4f5cafb5fa1a10b380848e7fb0af08d96b6cd28",
+    "members": 650,
+    "safe_unique_paths": true,
+    "CRC_checked": true,
+    "actual_full_recordings": 16,
+    "actual_nonempty_focused_reviews": 64,
+    "actual_registry_renders": 102,
+    "outcome": "Successful complete media/102-composition render at prior integrated head; same exact current media retained while approved lesson 1.9.1 adds two registry entries. Current full 104-render proof is separate.",
+    "artifact_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38051282774/artifacts/11671674614"
+  },
+  "current_registry": {
+    "execution": "local actual complete registry render; temporary outputs hashed and removed; shipped media unchanged",
+    "actual_compositions": 104,
+    "actual_renders": 104,
+    "failures": 0,
+    "browser_executable": "/usr/bin/chromium",
+    "parallel_compositions": 3,
+    "frame_concurrency_per_composition": 1,
+    "crf": 28,
+    "registry_source_sha256": "059457ef2c0f31573ef90b18d7e631055ffded9df44e7bf1102cb17568d0c0ec",
+    "report_sha256": "85e98350f3d1854cadb9dbca8d0ed6a59c1800b9d07b31400becd90b86fa7e2a",
+    "report": "docs/lesson-193-registry.json",
+    "log": "docs/lesson-193-integrated104-render.log",
+    "source_binding": "Frozen-head runtime enumeration and exact source/media preservation receipts verify the render inputs; prior 102 receipts remain distinct."
+  }
+}
