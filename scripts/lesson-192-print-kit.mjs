@@ -1,8 +1,7 @@
 // Printable bilingual cards and a separate one-page safe-change aid; fictional only.
-import fs from 'node:fs';import path from 'node:path';import {createRequire} from 'node:module';import {chromium} from '@playwright/test';
+import fs from 'node:fs';import path from 'node:path';import {chromium} from '@playwright/test';
 const root=path.resolve(import.meta.dirname,'..'),out=root+'/.preview/lesson192-deliverables';fs.mkdirSync(out,{recursive:true});
-const require=createRequire(import.meta.url),{ensureBrowser}=require(root+'/remotion/node_modules/@remotion/renderer');
-const status=process.env.PLAYWRIGHT_EXECUTABLE_PATH?{path:process.env.PLAYWRIGHT_EXECUTABLE_PATH}:await ensureBrowser(),browser=await chromium.launch({executablePath:status.path,args:['--no-sandbox']});
+const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH??chromium.executablePath(),args:['--no-sandbox']});
 const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 try{for(const lang of ['fil','en']){
  const md=fs.readFileSync(root+`/docs/lesson-192-practice-kit.${lang}.md`,'utf8');const sections=md.split(/^## /m).slice(1);

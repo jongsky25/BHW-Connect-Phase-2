@@ -7,7 +7,7 @@ import {createHash} from "node:crypto";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { synthesizeWithGemini, GEMINI_TTS_MODEL, GEMINI_VOICE } from "./lib/tts-providers/gemini.mjs";
-const resourcesSafeChangeStyle = language => `Speak in ${language === "fil" ? "natural everyday Filipino" : "natural Philippine English"} as a warm community trainer. Use one stable adult female Kore narrator including quotations. Preserve every negation, uncertainty and qualification. Read Charlaine as written. Complete every word, add nothing and do not translate.`;
+const resourcesSafeChangeStyle = language => `Story delivery revision 2. Speak ${language === "fil" ? "natural everyday Filipino" : "natural Philippine English"} as one settled adult FEMALE Kore community trainer in a warm feminine mid register. Every separately supplied beat and sentence continues the identical woman narrator, including quotes, questions, constraints and endings. Never switch to a male, baritone or secondary speaker. Preserve exact words and consonants. Read tagas exactly as written, never replace it with tangke. Keep the name Charlaine as written, never substitute Charlene. Preserve every negation, unknown cause, authorization condition and no-savings qualification. Complete every word and the final ending, add nothing and do not translate.`;
 const resourcesSafeChangeSpokenText = text => text;
 import { mp3AudioFrames, spokenText } from "./lib/reference-narration.mjs";
 

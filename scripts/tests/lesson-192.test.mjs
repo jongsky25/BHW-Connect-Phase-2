@@ -50,7 +50,11 @@ describe('lesson 1.9.2 safe-change preservation and review boundaries',()=>{
    const old=narrationForLesson(mf,'resources-safe-change',lang,sections);
    for(const s of sections){const t=frozen.target_narration.sections[s.id][lang];expect(old[s.id].src).toBe(t.src);expect(sha(fs.readFileSync('public'+t.src))).toBe(t.sha256)}
    const current=narrationForLesson(mf,'resources-safe-change',lang,loaded.revision.read_sections);
-   for(const t of Object.values(current))expect(t.voice).toContain('Kore');
+   expect(Object.keys(current)).toHaveLength(6);
+   for(const [id,t] of Object.entries(current)){
+    expect(t.src).toBe(mf.lessons['resources-safe-change'].sections[id][lang].src);
+    expect(mf.lessons['resources-safe-change'].sections[id][lang].voice).toContain('Kore');
+   }
   }
  });
 });
