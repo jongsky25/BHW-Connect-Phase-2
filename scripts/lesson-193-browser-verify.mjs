@@ -1,5 +1,7 @@
 // Actual production components. Report missing media explicitly; never fabricate playback evidence.
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
 import http from 'node:http';
 import assert from 'node:assert/strict';
 import {chromium} from '@playwright/test';
@@ -13,7 +15,7 @@ const server=http.createServer((req,res)=>{if(req.url==='/favicon.ico'){res.writ
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const url='http://127.0.0.1:'+server.address().port;
 const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH??'/usr/bin/chromium',args:['--no-sandbox']});
-const report={scope:'production components offline with local auth/save fixture; bilingual checks, actual media, gating, zone highlighting, resume and cleanup; no production-auth claim',date:new Date().toISOString(),cases:[],screenshots:[],errors:[],network_failures:[],missing:withMedia?[]:['story/caption/fullscreen verification','narration playback/zone verification until actual media imported']};
+const report={source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),html_sha256:createHash('sha256').update(html).digest('hex'),scope:'production components offline with local auth/save fixture; bilingual checks, actual media, gating, zone highlighting, resume and cleanup; no production-auth claim',date:new Date().toISOString(),cases:[],screenshots:[],errors:[],network_failures:[],missing:withMedia?[]:['story/caption/fullscreen verification','narration playback/zone verification until actual media imported']};
 const observe=page=>{page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text()+' ('+m.location().url.slice(0,200)+')');});page.on('requestfailed',r=>report.network_failures.push({url:r.url().slice(0,200),error:r.failure()?.errorText}));};
 const save=()=>fs.writeFileSync(dir+'/lesson-193-browser-verification.json',JSON.stringify(report,null,2)+'\n');
 try{

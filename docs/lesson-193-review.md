@@ -10,7 +10,7 @@ Print the Filipino or English five-page A4 kit and its separate one-page measure
 
 Measured complete Read playback is 666.907 seconds in Filipino and 614.843 seconds in English. Thinking, answering, replay, guided practice and the optional stories require separate time.
 
-Automated playback checks cover 96 cases with 88 screenshots, including bilingual Read/Slides at desktop/390px, every original choice and rationale, pre-response gating, zone highlighting, captions/ending, unmuted fullscreen, player cleanup and old resume anchors. The registry verifier re-enumerates the current runtime and checks every composition against its actual render receipt. Consult the current execution status and archive receipts for completion and source hashes.
+Automated playback checks cover 96 cases with 88 screenshots, including bilingual Read/Slides at desktop/390px, every original choice and rationale, pre-response gating, zone highlighting, captions/ending, unmuted fullscreen, player cleanup and old resume anchors. All 104 compositions were actually rendered with no failures. The registry verifier re-enumerates the frozen runtime and checks every composition against its actual render receipt. Consult the current execution status and archive receipts for completion and source hashes.
 
 Normal verification records 1,638 passing unit tests and the existing global freshness failure for twelve `problem-prioritize` tracks; lint has zero errors and three existing warnings. Root/Remotion types and 80 disposable local-Supabase E2E tests pass. The freshness assertion remains intact.
 

@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-10T10:29:29.275Z",
-  "registry_source_sha256": "d9e359ee400edabcc3086cd4891e06911636aea8b4c2b002d5f9b24bafb7e815",
-  "registry_count": 100,
+  "date": "2026-10-10T13:58:15.668Z",
+  "registry_source_sha256": "059457ef2c0f31573ef90b18d7e631055ffded9df44e7bf1102cb17568d0c0ec",
+  "registry_count": 104,
   "ids_in_order": [
     "BhsSupportEnvironmentStoryFil",
     "BhsSupportEnvironmentStoryEn",
@@ -101,6 +101,10 @@
     "SafetyPrepareStoryEn",
     "SafetyDemonstrateStoryFil",
     "SafetyDemonstrateStoryEn",
+    "ResourcesSafeChangeStoryFil",
+    "ResourcesSafeChangeStoryEn",
+    "ResourcesAuditStoryFil",
+    "ResourcesAuditStoryEn",
     "ResourcesMonitorStoryFil",
     "ResourcesMonitorStoryEn"
   ],
@@ -111,8 +115,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3759853,
-      "sha256": "3f9c0bb7cc36e74c4566f3a0e22b404a95ababe2503d90eeb2d84eb7b4a2263b"
+      "bytes": 3751983,
+      "sha256": "6aa4c91893e1a7ec0e2b175ee6986f985e09a7ee3dcf1743129bf83cb063b8c7"
     },
     {
       "id": "BhsSupportEnvironmentStoryEn",
@@ -120,8 +124,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3557978,
-      "sha256": "20d5f9665029adfb65b9c9487231c144cdc1b62c1223d9d29c950c4f2007993f"
+      "bytes": 3548672,
+      "sha256": "9c5640677889166a548eedf51bdc61e19e445d3524bec895bbc13c4a1a9777b2"
     },
     {
       "id": "RolesHepoStoryHil",
@@ -129,8 +133,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4708393,
-      "sha256": "c1b522475ae3f665fbfb02e8161394bee8adca5954529422b42ca85a8113e35d"
+      "bytes": 4686129,
+      "sha256": "c4b1fe56ba2849c593da243e85f7cfc9f27ed1ab8e52e9d0a54dd198d4eb4128"
     },
     {
       "id": "RolesHepoStoryCeb",
@@ -138,8 +142,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4903823,
-      "sha256": "09fed660c6c48605bb2e248369f5be17e59efb42ecfe6794ed73cd17f668eb83"
+      "bytes": 4883445,
+      "sha256": "194e3b835ff83d8e99dabcc3169f30aae9759945f9a56925a9abc2649233858c"
     },
     {
       "id": "ServiceProviderStoryCeb",
@@ -147,8 +151,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3441999,
-      "sha256": "7b36f3ba06d8492ba077281b586fbd63df8ab2820d82734e0df90bb1f1c9ddd9"
+      "bytes": 3428528,
+      "sha256": "aaf46e14d7f320a653574e8e161fa441d0fbc56a5eb7729728435c4e2e4f04c2"
     },
     {
       "id": "ServiceProviderStoryHil",
@@ -156,8 +160,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3419894,
-      "sha256": "28bbc7d0ebefbc2f438d8250f126d7e6577e6aee44cf4da617f3b5d159775935"
+      "bytes": 3399807,
+      "sha256": "3034d993d64a09f83ae0728e3f920586ec5cf9e6615e7401f728b24081f8313a"
     },
     {
       "id": "CommunityOrganizerStoryCeb",
@@ -165,8 +169,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4396143,
-      "sha256": "347191ffa374c6b998b62548aa53f81a06aef47964744fc4abbf4733700724ab"
+      "bytes": 4371620,
+      "sha256": "4c85345064de03adc20a86ba02be0ffbd763f7a6a36c42c9f52ab61e5b963317"
     },
     {
       "id": "CommunityOrganizerStoryHil",
@@ -174,8 +178,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4304310,
-      "sha256": "7a14594dc05265525a26d4007fa67e353aa2cb647f4a8046bc7a995a417536b9"
+      "bytes": 4279893,
+      "sha256": "39d5e60469d48430460ae8edd3b7025143a9f4292bc68bd16728bdadff73fe3b"
     },
     {
       "id": "HealthEducatorStoryCeb",
@@ -183,8 +187,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4779767,
-      "sha256": "bd73565893dee2b1a1d74f1403d04b7896be733b60bf79ce51f329043d43551b"
+      "bytes": 4770662,
+      "sha256": "8dfc8eff3d7bba3ebd8620463f699b5e98b81f94cc75e036bc158e17c45e384e"
     },
     {
       "id": "HealthEducatorStoryHil",
@@ -192,8 +196,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 5001372,
-      "sha256": "70bba17fe3fa45a6c953bd30c5196c3bc3956a43c4f128d569c2446810c044d0"
+      "bytes": 4988670,
+      "sha256": "2c5182b54b6a39ed3b3e8f4811902375e062aa88cf0ca5d05b538627d559bb61"
     },
     {
       "id": "HandrubStepsFil",
@@ -201,8 +205,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3365333,
-      "sha256": "17172e4b049bacd6d6691ab7913f3c55143f6c2353d04d09837a4da4455b9b27"
+      "bytes": 3345284,
+      "sha256": "c544df7ab7183679d42ee841844f5be387cf2dd50dcbc1948d4c6646a80bb115"
     },
     {
       "id": "HandrubStepsEn",
@@ -210,8 +214,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2913986,
-      "sha256": "05b33ec38d51e2c5b6761c0f4dbe7bac9e5ec0147b2737c46d74b68f78ceb7a2"
+      "bytes": 2896723,
+      "sha256": "706b8577eca1d212f3d3b3f1c3afa9bec4787ffa7c0b17991cd13203d012e7f0"
     },
     {
       "id": "RolesHepoStoryFil",
@@ -219,8 +223,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4376176,
-      "sha256": "c8411546d2dbcdbe7b142205889819ac7b9d904e55dc00d3af28848ae6e9eae4"
+      "bytes": 4358776,
+      "sha256": "b8472250d48be300849ef4a6ca66ff916057ae8d15b811f593c72f71ec56ea5a"
     },
     {
       "id": "RolesHepoStoryEn",
@@ -228,8 +232,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3677321,
-      "sha256": "9789ad85824fc614eb2f68ff6e1c01587bee716bca7d16b1151bb2fe77fbfd70"
+      "bytes": 3656537,
+      "sha256": "a97c67a3d2bf361d02997e260e989924ac8c994f7627f4774143fee2149f7c6b"
     },
     {
       "id": "HealthEducatorStoryFil",
@@ -237,8 +241,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4523588,
-      "sha256": "2a1dc783032cc10035dc52c6a6e23cd562a1b386047a43c42465e68fb377f32d"
+      "bytes": 4504328,
+      "sha256": "e8de94358c2b7c26f87b41b302fad3ec4ae528ba1e5018fff6f5b54ad23c65ac"
     },
     {
       "id": "HealthEducatorStoryEn",
@@ -246,8 +250,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3872432,
-      "sha256": "57b5861c046a98b03d3bdeb01bcd652119ad691624dab21fa6feca5a6b0cde41"
+      "bytes": 3855488,
+      "sha256": "8a29a7d69d4162a75e527db743790b27467f0623ef8dd6aa7e243c7d9fee94d3"
     },
     {
       "id": "CommunityOrganizerStoryFil",
@@ -255,8 +259,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3863982,
-      "sha256": "f47d80589e36088fb70e05df4dd2c97f4a1a441fb5712d89a62bdb300896edfe"
+      "bytes": 3846772,
+      "sha256": "e7817a982f26f06a2ec903c5cb577e85ef6010b94f4ba523d6f7ae35ea8e1390"
     },
     {
       "id": "CommunityOrganizerStoryEn",
@@ -264,8 +268,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3382943,
-      "sha256": "41e88ad4303d7a44a1449c54ee268898c22f135ce62581adb30a2a8e3ad09563"
+      "bytes": 3371473,
+      "sha256": "bf07f2f4d76cafddf6c696256f8b6f3ccbf3f77200a9c22b401056a0da4a1023"
     },
     {
       "id": "ServiceProviderStoryFil",
@@ -273,8 +277,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3304661,
-      "sha256": "dd7a80711a091c090ae6cc8bc1cd8a5de2d8e5572f10e9795f6385e862b5d14b"
+      "bytes": 3287995,
+      "sha256": "179dce80720a16355c9ff66ada5d94d20a5890c38f56ef93b19e699f1cf2e5c9"
     },
     {
       "id": "ServiceProviderStoryEn",
@@ -282,8 +286,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2847441,
-      "sha256": "015c92c9e93e0bbde346e766119402b2182d0f8dda15abbc571ade3e5608fddf"
+      "bytes": 2835436,
+      "sha256": "7ec3289f6101ae562454e8bf31b0970325862af89d755aa328a692d8b9576ee6"
     },
     {
       "id": "RecordsStoryFil",
@@ -291,8 +295,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2463571,
-      "sha256": "740fbdcf396b64fc478ad391be7d9505323e07552e5044fe2ec8a4f96727adf6"
+      "bytes": 2452377,
+      "sha256": "4c67789c4ce94ec37ad4d571e3ccdd7637d6bbd1951f2908019e97b217e8689b"
     },
     {
       "id": "RecordsStoryEn",
@@ -300,8 +304,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2206263,
-      "sha256": "f8f4f5a93f8dd57a034eb87cec526711cb13887c7a4ea83693cc7bab091ceba5"
+      "bytes": 2201888,
+      "sha256": "deef1fa45320d58b4f4fde91c336c9e1fb1c906f78e1982f68f62a05e50cdee7"
     },
     {
       "id": "RecordsStoryCeb",
@@ -309,8 +313,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3252335,
-      "sha256": "f7daa2456dc6f28c5545e0f80b3b1742923bf629be9f452087007b1aa8b42cba"
+      "bytes": 3243757,
+      "sha256": "ae7bf0fd76985e5227d0f65d5868e9eedfb7433b15b92bd6ee53a8c5b7e4bf77"
     },
     {
       "id": "RecordsStoryHil",
@@ -318,8 +322,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2577218,
-      "sha256": "89ea1a1319b086ac4000ce9f67b519aa09c23c8a1086fc7b769864e11671dfb5"
+      "bytes": 2563788,
+      "sha256": "b2dc88db149f00f9ccf6f5a31a92f49f52128aaf14512f6027fa06759556318e"
     },
     {
       "id": "UhcPurposeStoryFil",
@@ -327,8 +331,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3075693,
-      "sha256": "ef97ce6f8d6d0aa28cce97f0e081009aacd4cfacc87f1cf92811a205de8e8db1"
+      "bytes": 3061358,
+      "sha256": "7e7730a08a83f9cfecec22cc3c7a3eb9bfcde7263aca15b76a45f8ba1cc5140e"
     },
     {
       "id": "UhcPurposeStoryEn",
@@ -336,8 +340,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2829453,
-      "sha256": "7055220599cfd20c287274ff81fcd8225a9259aa3da62ac1e566e2f5b479c11c"
+      "bytes": 2821779,
+      "sha256": "8285cbad9de98172d13feaea3be7f40260bd28e975207dd71eaa3db24c1fba92"
     },
     {
       "id": "UhcPurposeStoryCeb",
@@ -345,8 +349,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3151444,
-      "sha256": "f6250e5f892ae7275aba0fa209b190471faf404c19e73b07912767e6e8891b8f"
+      "bytes": 3152542,
+      "sha256": "524389c2030571dfc2fce4046f9870a4133e890b47f5d1443445f7decd5b1269"
     },
     {
       "id": "UhcPurposeStoryHil",
@@ -354,8 +358,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3341199,
-      "sha256": "5f4ea64916fcb00ed04a0ed4fe30d74db873bc2f54b2649fe91bba16bce47b1f"
+      "bytes": 3333971,
+      "sha256": "81da3653e2023b3cd2aca5ac0c23143e408c74ca2fecccc95563990dc0065075"
     },
     {
       "id": "PrimaryCareStoryFil",
@@ -363,8 +367,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3859711,
-      "sha256": "f9fb7586bda1357b0d99b8ae7d654ae6be0d45d84f75e5d535db209628652cbe"
+      "bytes": 3861921,
+      "sha256": "4ad310f89378c8a8c1c2d40140b0e9e1fb6128ff6ff29bbe874de4e0a1e5c83b"
     },
     {
       "id": "PrimaryCareStoryEn",
@@ -372,8 +376,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4250436,
-      "sha256": "2896218393a0c94f46337894d08587acd939605a8dbd6161f65719c8520cdfff"
+      "bytes": 4240963,
+      "sha256": "330d8d1c44a1e21cbc2b1f11540a31564bf55d7907d45fe9ea08c5bc1e15ef32"
     },
     {
       "id": "PrimaryCareStoryCeb",
@@ -381,8 +385,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4856674,
-      "sha256": "e1b9a20e87a30444c0210a900b2c4be089e64b30911c327e1af2eb268a02fdb7"
+      "bytes": 4851816,
+      "sha256": "444392da79ed54c5121be2c113b771482827f7e6ad3437ef4defe30124a5d5d0"
     },
     {
       "id": "PrimaryCareStoryHil",
@@ -390,8 +394,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4999289,
-      "sha256": "079ef65b7352385e06ed6b6aa8614440cb9c71e348a3a4365e3076cbe2a8cf95"
+      "bytes": 4999786,
+      "sha256": "6d7730b4d23a5f0b973498d188e390ae209bb264cecf2db071d776264e227aed"
     },
     {
       "id": "RolesApplicationStoryFil",
@@ -399,8 +403,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4769675,
-      "sha256": "3397846247829356797031e30ded90db89b418b8a82a35e97b8db3bd04aa5726"
+      "bytes": 4752958,
+      "sha256": "b07380a76cbf6690f15292b0d18790797f5df354675ce69b0e2a4be1840abd52"
     },
     {
       "id": "RolesApplicationStoryEn",
@@ -408,8 +412,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4100975,
-      "sha256": "c0caefcdbc88c35d7a56a871208dae410a4df03ecb0af3f8c1c155c646cb1ace"
+      "bytes": 4092592,
+      "sha256": "9290396f7e5601cc077eff41c9c9ce9d57a5aa506a4b05e93f78dcabf49e51ab"
     },
     {
       "id": "RolesApplicationStoryCeb",
@@ -417,8 +421,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4837166,
-      "sha256": "172027b3a3318a51916d73b50ae3fd76683f32fe179520ad5b2206ba0238b831"
+      "bytes": 4819312,
+      "sha256": "28d3521e88e35706f8e85fdab98b81d026520de5676e50268150288296c28732"
     },
     {
       "id": "RolesApplicationStoryHil",
@@ -426,8 +430,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 5215825,
-      "sha256": "c8a764b938e8ff377272d2933edf2174b488a2f054e5e65b2ba8fa1510653f40"
+      "bytes": 5185017,
+      "sha256": "7427e912dd64810cff700a081b9779e1856a9c740c022d3e826f4e88e625eeaa"
     },
     {
       "id": "LocalSystemStoryFil",
@@ -435,8 +439,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3912696,
-      "sha256": "e3b9f538373c11cd308fe5fe5e5572e80e05267744eb9c12d9dc01b5bb3a719b"
+      "bytes": 3903315,
+      "sha256": "fc38adfefbb2e7a060f7ce903843c575091ecbc9a69e6cd678c631d5d25265aa"
     },
     {
       "id": "LocalSystemStoryEn",
@@ -444,8 +448,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3601332,
-      "sha256": "a50d8a19ab8315d157780f0728009c7e65f096176782dcfa8e0e21a26216e49d"
+      "bytes": 3587007,
+      "sha256": "0cc7f3fe7345e11322a759cbcf15327e27e4e276449394cbd0cc10ad453e9cec"
     },
     {
       "id": "LocalSystemStoryCeb",
@@ -453,8 +457,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4482908,
-      "sha256": "df1a9057b90bdb509671a529ad3a6cb8f62857866774eb912c5d24376c381ce4"
+      "bytes": 4466386,
+      "sha256": "4c0b7fccb6b4646fe3883553a48d8396d060e276b9d552ae48d888d2ea975477"
     },
     {
       "id": "LocalSystemStoryHil",
@@ -462,8 +466,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4646626,
-      "sha256": "70097601f5fd878bc75ca19c94dfe316c5bd6127429d2795a6d4e24efb229193"
+      "bytes": 4642374,
+      "sha256": "99567183cc07cd319528b8ce3bb690f930f54c31034d28704f02d2f6b110851e"
     },
     {
       "id": "BhsPromotionsStoryFil",
@@ -471,8 +475,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4019396,
-      "sha256": "47d22465150d2e43e7f66a38470f0247e1cba052819b89a9cb2b846168819cb1"
+      "bytes": 4020585,
+      "sha256": "e70f07a29b6153a7b97604f930c7b3a9eb45543753128df3d121400e22d4c586"
     },
     {
       "id": "BhsPromotionsStoryEn",
@@ -480,8 +484,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3973689,
-      "sha256": "eb513d7e3367147f92b4035b95b1b23ef554b98b3f6383ccf1696f01c05f004e"
+      "bytes": 3970526,
+      "sha256": "eab0080b7d1df12dbfe8cbf0604bf636b0065acb740fe490d7ac5fda004a6e58"
     },
     {
       "id": "UhcImprovementStoryFil",
@@ -489,8 +493,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4006456,
-      "sha256": "6faae8759124e5b6e0aa63f919f1ba067452ef37b3a413f027eb91364c4d2d8f"
+      "bytes": 3995016,
+      "sha256": "f8ece8ab7de584210a6e973b738fbfd82b529308e402cee14d8e8692dda75a6e"
     },
     {
       "id": "UhcImprovementStoryEn",
@@ -498,8 +502,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3591212,
-      "sha256": "28b9eb51be931cff17c0f0f5247d6cde08ecbc1a9b2a249aee1b6281a54c62b7"
+      "bytes": 3583698,
+      "sha256": "24cc03ebcdd51fc3a026babaa490a8c0811b255dd5e67bcc6a6afe5e09558bdc"
     },
     {
       "id": "UhcImprovementStoryCeb",
@@ -507,8 +511,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4296863,
-      "sha256": "1145fb7ad9365df7b08d23aa4b512c0461194bc5fab75eea794e99f2d3b843ff"
+      "bytes": 4279879,
+      "sha256": "988992a2610887fa2a8bb980af73cf17c33bf32fc92b7dcefd25963d52eee8aa"
     },
     {
       "id": "UhcImprovementStoryHil",
@@ -516,8 +520,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4442945,
-      "sha256": "ef28fd6455c97a0c87ecb1a5596e2407edae9cf6d9e6819c381b6fa0eff3a7cd"
+      "bytes": 4432261,
+      "sha256": "8486c621cbd409b784126492f6e59f0c232cf6a4f8da7a9495933b8bfc197a02"
     },
     {
       "id": "BhsDeclineStoryFil",
@@ -525,8 +529,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4042024,
-      "sha256": "74f3e7b48224e184411871e4ebebd75ac6b2a9f6499c068e8d658d68ebaec73f"
+      "bytes": 4028801,
+      "sha256": "835a7e74e7f6cd58f24b02a143416d7a36fbe0818b91f2bbb4bab23ad68f8521"
     },
     {
       "id": "BhsDeclineStoryEn",
@@ -534,8 +538,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4289319,
-      "sha256": "bdbe7d914b50ecf2cab164b8d735d4d45d921cd902520723d40be3c14a94a08a"
+      "bytes": 4273795,
+      "sha256": "0716408907d23593898ccbd2b565f5667a147e5d708afb3ee96545888a95f0d9"
     },
     {
       "id": "BhsResourcesStoryFil",
@@ -543,8 +547,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4093755,
-      "sha256": "5dbf8f8ceb3fd94be97627577d0eac245ab7a64c742a01f6ba34a08396794a1c"
+      "bytes": 4089333,
+      "sha256": "2ee667daac0279ec332c1e735da9386b80c36542f6e89ef989a0a676fe2db4dc"
     },
     {
       "id": "BhsResourcesStoryEn",
@@ -552,8 +556,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3744836,
-      "sha256": "96df7071ae854be49aa06e8dc118a6bd38673cef7e926cfeeef7ad6f19bad82b"
+      "bytes": 3740373,
+      "sha256": "2ebd1a0510aa46d1d21c308d965e0bc906a5795c89ac7c24df80badaa43129a9"
     },
     {
       "id": "BhsImprovementStoryFil",
@@ -561,8 +565,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4002646,
-      "sha256": "3b0eacf4d4c0dedc4c1b4c307c4220798817c5810bcdcbc5b13f5e0f0095dc94"
+      "bytes": 3991475,
+      "sha256": "a48d149ab8218956790f2bc664467f2cbf22c31b45cac163ab7c318bbcd96e4e"
     },
     {
       "id": "BhsImprovementStoryEn",
@@ -570,8 +574,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3815277,
-      "sha256": "07292ec3211121b4672441a38f310b28069ae1dc2e513482f2881f163e3b01a8"
+      "bytes": 3807647,
+      "sha256": "6319cfd65298491ab55ed611b441fd976be2025edd406ca8891593ec5ea3eab8"
     },
     {
       "id": "BhwLegalRoleStoryFil",
@@ -579,8 +583,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3796396,
-      "sha256": "28284d8c77e6004456b0b72a6e321d39de9f9e0fd3b30459f8600a5d2cf19d65"
+      "bytes": 3796681,
+      "sha256": "039b8a94bc56ba71f162132f43b5b3ffece280db8bd7ce1d84dc15096f12d0fc"
     },
     {
       "id": "BhwLegalRoleStoryEn",
@@ -588,8 +592,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3496224,
-      "sha256": "cd582b4f7936ec791a296440f793d3837dbef5022f7abb7d02f49afa82dcb8c1"
+      "bytes": 3495669,
+      "sha256": "34aa86a452602c4e4be7182aa8a76add5a14e8b3fd472c61a5311e5b3f2d77ac"
     },
     {
       "id": "BhwBenefitsStoryFil",
@@ -597,8 +601,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4045593,
-      "sha256": "65c20786962177084f2a18e7cdbad794783f6fa87f5a9766da9b301569ee820a"
+      "bytes": 4043108,
+      "sha256": "e29a8cce56e3a38a9b955ebfdba6e78d96a402a8a0ca9725f352cf859539c4d5"
     },
     {
       "id": "BhwBenefitsStoryEn",
@@ -606,8 +610,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3721053,
-      "sha256": "285cf66af16d9d1edafb92ff2217fb8c5d5adf3b2af3ea1be4a667467efb57e5"
+      "bytes": 3717410,
+      "sha256": "27745b3e673f9d02fe7ac7be6ccbf7c6a44f4144c8fd3117cea9906b55164d69"
     },
     {
       "id": "BhwEligibilityStoryFil",
@@ -615,8 +619,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3701374,
-      "sha256": "6953e319d2ccf2ec7550f49f060c09dbe16f5626d9afe732bb30f3f00e4d0886"
+      "bytes": 3692059,
+      "sha256": "12624bc3b0e9969851e0cfebf7789ae9501c12aa3cb84f09fe24858929384d8a"
     },
     {
       "id": "BhwEligibilityStoryEn",
@@ -624,8 +628,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3691915,
-      "sha256": "2c5f4b9fedb75398a20310d968972b59a762ab757af03e32321ffc5716c3aaed"
+      "bytes": 3692892,
+      "sha256": "a599566f304b5f1d4131c7ebdf907ed74aa00f021460373c90c980e29fc9b23b"
     },
     {
       "id": "BhwAccreditationStoryFil",
@@ -633,8 +637,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3162146,
-      "sha256": "ef8df87b7de6e665adcc5737d0890190106b26d196be3a38364a2841542427c3"
+      "bytes": 3147650,
+      "sha256": "1792f8230f97f757f969635094153142ab4c3308978a1e84c1bb4f1d839b4375"
     },
     {
       "id": "BhwAccreditationStoryEn",
@@ -642,8 +646,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2899121,
-      "sha256": "743742074bd8a38c6c6ff57dc49dcf8f2f675d4ba012e5de06604b8bade9566b"
+      "bytes": 2889590,
+      "sha256": "98f7dbc0a126da68f8043613d0e5ab7c193c6d3ad6f9af54970734ffb9bb946b"
     },
     {
       "id": "BhwFollowUpStoryFil",
@@ -651,8 +655,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3511322,
-      "sha256": "ccb36c4e002d56da010dd08ce4981e73fcfd56707c16f4b5afade5248552f2bf"
+      "bytes": 3518104,
+      "sha256": "55e493247adc0063e5001e34ebc98fe0dea0ce2403ded8a5132952bcf1d4bac0"
     },
     {
       "id": "BhwFollowUpStoryEn",
@@ -660,8 +664,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3211276,
-      "sha256": "0a5ad0050bc7b7acb82f436732bcd456c57222538f94e91c9bac1aa2bdf3c213"
+      "bytes": 3211691,
+      "sha256": "ada63c509ad8c83a6f000376493cf3603512447745e884e0cb7084da32d3cdbd"
     },
     {
       "id": "BhwRelationshipsStoryFil",
@@ -669,8 +673,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3673265,
-      "sha256": "1ec9d2cb4ea61f009aea0d64422298ac7c2247c814befe06da598ca4e4fbbc2f"
+      "bytes": 3673247,
+      "sha256": "85e517600260aa0c7c618ce83dc85838299a35cc44a8805a0e254f81ac3ffbb6"
     },
     {
       "id": "BhwRelationshipsStoryEn",
@@ -678,8 +682,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3305589,
-      "sha256": "9b8f1eff3a0a8b36c34f548b8c300b22cf3e75448e0bf987ee9fb208c59e762d"
+      "bytes": 3293769,
+      "sha256": "0a267ecc5e18d6250a742607b768bce2a97ee7ffb52c3b764fbf2c9b8f8b5a84"
     },
     {
       "id": "BhwBarangayPartnersStoryFil",
@@ -687,8 +691,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3542429,
-      "sha256": "fd92a324769d698008c9001b8e69c85877ded637e5151e015738bbca2db3b292"
+      "bytes": 3537849,
+      "sha256": "003240100ee6f7834203bcbd50983f73af816d247d2da7ac2db0582a2bdf4b63"
     },
     {
       "id": "BhwBarangayPartnersStoryEn",
@@ -696,8 +700,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3022470,
-      "sha256": "0ea26cfa86d3a5b4c204c74fc0292ef3efa5846e70f6b640ba5537e82653fc67"
+      "bytes": 3024279,
+      "sha256": "7c470c8828cd187ce964186400df3d1f999f0e3ceb95403cd4a75885a6326470"
     },
     {
       "id": "BhwLocalPartnersStoryFil",
@@ -705,8 +709,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3656731,
-      "sha256": "d88edcbda9687741fc40146cf87e050615e6a65e0a3dbb22d8299bfc7b6e50d6"
+      "bytes": 3645960,
+      "sha256": "2bde491d473f8a980e9804822db9325973f809141dee38c9f2a72e111586e3f1"
     },
     {
       "id": "BhwLocalPartnersStoryEn",
@@ -714,8 +718,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3250258,
-      "sha256": "623836c057c2676d7cdd47e425ee6f2720e8f8d3c5f8f34b29a21b60fded08e5"
+      "bytes": 3256561,
+      "sha256": "4e460be9beb319772301ef99e7060357657c652f0d0334efc4508eda340909b3"
     },
     {
       "id": "BhwTeamworkStoryFil",
@@ -723,8 +727,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3753781,
-      "sha256": "36796667284d23ae8242c7f82b087d1aebd2bc45652f2748ea075c93a8e57f86"
+      "bytes": 3751280,
+      "sha256": "9ac99a90e40edc42c4dff1b731d0a95a81df54a57acc895811cee96a323ff72d"
     },
     {
       "id": "BhwTeamworkStoryEn",
@@ -732,8 +736,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3379649,
-      "sha256": "4533305faac330590e1606a0136762e1ccd7b10f87dde0b4c35224da7efb08f3"
+      "bytes": 3376514,
+      "sha256": "0bb34245d399791682e7dc88111be14c506df9d52754b82444ad7be52e0f7be0"
     },
     {
       "id": "BhwRightContactStoryFil",
@@ -741,8 +745,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2989386,
-      "sha256": "8958dd268e697d6f6897b941a12ac395f70a3a748526a65e358c4a39a8337f1d"
+      "bytes": 2988992,
+      "sha256": "52e42c4184396696d08af16049c8b470a3b2a09e25ed74cdf1e37d6c104704c6"
     },
     {
       "id": "BhwRightContactStoryEn",
@@ -750,8 +754,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2658260,
-      "sha256": "0241a91b404db5155f001618f8600444c0a60eec43a4feccfb7859656fb737f1"
+      "bytes": 2652307,
+      "sha256": "1b99c13ac810f5c35b6d87b2135288ae16519face9ef352f995d62ca01097452"
     },
     {
       "id": "BhwSelfManagementStoryFil",
@@ -759,8 +763,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3958767,
-      "sha256": "1d69fba677f567e1591dd0ddc7cfedc768efd778e3559f4c0be847b5ac42e3a9"
+      "bytes": 3959510,
+      "sha256": "44e2d04e35a0f71727ceba0ff2232b7b95dc9bd8658c402b36f963d228551ea4"
     },
     {
       "id": "BhwSelfManagementStoryEn",
@@ -768,8 +772,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3559780,
-      "sha256": "51ce2863cd484d68e04038c49c28ee020c2181e2774817b3a3a32ecb7321795d"
+      "bytes": 3562858,
+      "sha256": "ea5fabdc8dc41b8beb3d99921011a62cad02cf33b44b0c4f11fd9ab04e08a566"
     },
     {
       "id": "CommunicationListenStoryFil",
@@ -777,8 +781,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3333684,
-      "sha256": "e9526494347dd0db35da99dfdf41c3b789315c95f34222151abc9ac6d3a46b57"
+      "bytes": 3338231,
+      "sha256": "70bacc7c355b00adab1aa7b2c197dbbdfc4809beffc879c42182b8da8c4ed35a"
     },
     {
       "id": "CommunicationListenStoryEn",
@@ -786,8 +790,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3309686,
-      "sha256": "2680fd68f562587f2716a41e3759f531f89c8274b8c93063a54873cc230f8f9e"
+      "bytes": 3308020,
+      "sha256": "529ab2ca9cd425598c908c693b6f8d1eddc2741416a5753c6b7e73f31c932fa5"
     },
     {
       "id": "CommunicationClarifyStoryFil",
@@ -795,8 +799,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3036513,
-      "sha256": "d4b720a9bceafb3917c38f49c6bb0ab1f9ca99d9fc0d24c16ff7b9ecb4372fb2"
+      "bytes": 3035816,
+      "sha256": "96122362ac3bc60b517d3cbbd6a28df562db90e70c28caa45cc08cf2e0363379"
     },
     {
       "id": "CommunicationClarifyStoryEn",
@@ -804,8 +808,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2964014,
-      "sha256": "db0b11b3035b9418c3d7b6afff261e6d04034e88f45d641e560038f24d233ca2"
+      "bytes": 2962188,
+      "sha256": "6d067b2550696597eb1da150ec75c1832ad596545e7454f7f3f0536b7e772ba4"
     },
     {
       "id": "CommunicationExplainStoryFil",
@@ -813,8 +817,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4034172,
-      "sha256": "268755af16d737b1b80b94a8669d9de047ca1efbdd064d6250379656f0eeb0cd"
+      "bytes": 4029296,
+      "sha256": "0ec2f92b9e35a46f23d45c348e5adf7789f09d65832dec592b46c9084078dd96"
     },
     {
       "id": "CommunicationExplainStoryEn",
@@ -822,8 +826,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3675306,
-      "sha256": "95921241eaf04c62407353aede1c22125c80dcad050f1137b61094f7c8937d77"
+      "bytes": 3677122,
+      "sha256": "3d52c1bc8c40aa202938c373c5fb7c62751ccc45faa80da1073519da9ae8dcef"
     },
     {
       "id": "CommunicationRecordStoryFil",
@@ -831,8 +835,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3424789,
-      "sha256": "11c482f8a109ccd7a3ef71897d60f567bcd0a73d5a3b6734352d0c9be2ed0e9f"
+      "bytes": 3422240,
+      "sha256": "3344c280a894e707d3ad9e366c1ddee356c7538625f6992159e22b6690091a89"
     },
     {
       "id": "CommunicationRecordStoryEn",
@@ -840,8 +844,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3070164,
-      "sha256": "ac4030ac111a4ed4207f081ff408fbc0153e16857e323415a4a83a96392d890a"
+      "bytes": 3072162,
+      "sha256": "8fd62204b21a00bae0d0dd84231868ad779106decf46ae7e278d49570530a7f6"
     },
     {
       "id": "CommunicationHandoffStoryFil",
@@ -849,8 +853,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3441451,
-      "sha256": "639be0562718c10002ea7619ab344b1af32bc11ab4a8c2b91d6c88804cf2b69d"
+      "bytes": 3436560,
+      "sha256": "f4e2719fea73cac8cf0669ba1679accb358dc33206ab9aa05e6b4265d6360306"
     },
     {
       "id": "CommunicationHandoffStoryEn",
@@ -858,8 +862,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3092371,
-      "sha256": "d26c980589f04edd446f238f0b88a42c82da273996f0fa367f1233c0882f7a8e"
+      "bytes": 3093612,
+      "sha256": "58b73089d64a739d351455ea18855631d35552c858c2af3cd076aaeb4e473dc4"
     },
     {
       "id": "ProblemDefineStoryFil",
@@ -867,8 +871,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2724537,
-      "sha256": "dba9df233e73ab9ffca0cb2a78487819d5b8d7af6c47e8475c18af1e62377c8d"
+      "bytes": 2726522,
+      "sha256": "65c53b336feda22a1f2cc473bf075b8bc9c95c53725d2a4cb18ea9f968ae4769"
     },
     {
       "id": "ProblemDefineStoryEn",
@@ -876,8 +880,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2511328,
-      "sha256": "034287f43670f30f852f00cb198a7e5e48397a4c1b1d148da5c94abf200bb15c"
+      "bytes": 2508839,
+      "sha256": "6605c81a8c3ab43871b070c4b34702b4c5db4523de8f23778f1123826c12aadb"
     },
     {
       "id": "ProblemCausesStoryFil",
@@ -885,8 +889,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3453851,
-      "sha256": "6e8875780a5512d4da8382811cd987dbd91f6a35fe2eab32af7870cf049fe6d3"
+      "bytes": 3456492,
+      "sha256": "409138155a2e8bb96b38db3925650683648b99e463d839ae65bb80fbf4e3ad26"
     },
     {
       "id": "ProblemCausesStoryEn",
@@ -894,8 +898,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3271647,
-      "sha256": "13930fd374c4deaf802f31de5f502507cb536aee44cf69a0e943f784ce0f28c7"
+      "bytes": 3280303,
+      "sha256": "15dce521db832ff75739a631cf9a3c4bbb41c80724854cf1483fed7c204dd583"
     },
     {
       "id": "ProblemActionPlanStoryFil",
@@ -903,8 +907,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3670559,
-      "sha256": "21e46a8574472b56c32eb3d644e89b8fe6023530756486bbcbcb00cb8f9af789"
+      "bytes": 3667066,
+      "sha256": "e9452299b662e52fbbfe81debe8e754378e6bf373fcf5626a749afbbb94f45bc"
     },
     {
       "id": "ProblemActionPlanStoryEn",
@@ -912,8 +916,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3404082,
-      "sha256": "dd05e2b0f49757f1b463e11d2d32caa6172cb62500fa20814743231a8e1d357c"
+      "bytes": 3403031,
+      "sha256": "3e7e2ed6efa698d688065382ebf16471290eef969b27e14aa54a5977c0af75bc"
     },
     {
       "id": "SafetyIdentifyStoryFil",
@@ -921,8 +925,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3051549,
-      "sha256": "781f1698a31f4a46e74c82a96d4cb8a3fdb51f763cf1188da182e508ef9ca5d5"
+      "bytes": 3053212,
+      "sha256": "c3972207332c5e6177f6660f2d1d39c87d173a64a7ac867c7daaba385f3c7b21"
     },
     {
       "id": "SafetyIdentifyStoryEn",
@@ -930,8 +934,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 2624199,
-      "sha256": "01cd60c498f6458bb9d1a3953ae07188bf9fd028551c3d8c1c9d4c167f1851ad"
+      "bytes": 2622824,
+      "sha256": "cb0b626170b1084c2a5ac1d1fcd15881d3fc8e8aa9a83eed423c8165a78600ab"
     },
     {
       "id": "SafetyControlsStoryFil",
@@ -939,8 +943,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3493219,
-      "sha256": "ab146d24c804db112956f01aaac87d18058d83a8a25f8c73544c1b31a8410b40"
+      "bytes": 3497183,
+      "sha256": "88e014bf33ae000b62ded9fefce2ec4483cb1c690c7475807b6d4f45414550a3"
     },
     {
       "id": "SafetyControlsStoryEn",
@@ -948,8 +952,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3361041,
-      "sha256": "894a44bd57e075128452f4d10638b4a3a7cab79dcf946072d290a8b241f8fc79"
+      "bytes": 3358108,
+      "sha256": "4d2f1ab2db41f3d2ae0c4ab644fda01ac100547c677f0fb112989802b971c66e"
     },
     {
       "id": "SafetyPrepareStoryFil",
@@ -957,8 +961,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3523566,
-      "sha256": "3d78e8beb057de9907ec3b9eca90f67757c07ce027fdc8e051560e980d9c23f9"
+      "bytes": 3518502,
+      "sha256": "864877b1c5ad76a2dee5b288084ffaf3abb95607a02c55c09a8a16e6e225a0f1"
     },
     {
       "id": "SafetyPrepareStoryEn",
@@ -966,8 +970,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3205537,
-      "sha256": "3ed1bc85e71527312dda4d8c486a807590a1ffe283e694c679f5116e15774199"
+      "bytes": 3208148,
+      "sha256": "e66e568b0b9c9c946b11af7288bd8ccc2000cb5ce6390d5d8fdd7cbef410d20d"
     },
     {
       "id": "SafetyDemonstrateStoryFil",
@@ -975,8 +979,8 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3389766,
-      "sha256": "e3a60b2fe53067a5a9ad5c8a51716a1a3aee4d4fbf97bdbf01183aebe07e6f34"
+      "bytes": 3388028,
+      "sha256": "cf54ac7840a0ac58731acd98bcb410204df768ad8f1dbb50138cd035f60518d3"
     },
     {
       "id": "SafetyDemonstrateStoryEn",
@@ -984,26 +988,62 @@
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 3044918,
-      "sha256": "22c6f3c2ce2cf6fd769f1e3b6affd28ea9a11e460ea1835fce91bcce33d9bc9b"
+      "bytes": 3037258,
+      "sha256": "e9dc77c9117a91cd34867cbb8a55645a1584d59c8dc239b00aba56f3d2a8f38c"
+    },
+    {
+      "id": "ResourcesSafeChangeStoryFil",
+      "frames": 2490,
+      "fps": 30,
+      "width": 854,
+      "height": 480,
+      "bytes": 4005659,
+      "sha256": "32eafa2677748783b44842e27be03134c2a36a6da84b848f8017685129897b65"
+    },
+    {
+      "id": "ResourcesSafeChangeStoryEn",
+      "frames": 2382,
+      "fps": 30,
+      "width": 854,
+      "height": 480,
+      "bytes": 3806753,
+      "sha256": "a37547985a8010f0d522b4a6f90c21f69b6d1cdb63ba8460cc8c50e415277180"
+    },
+    {
+      "id": "ResourcesAuditStoryFil",
+      "frames": 1878,
+      "fps": 30,
+      "width": 854,
+      "height": 480,
+      "bytes": 3205080,
+      "sha256": "4fa9a5b4f77dbefd8f188da31097170b03f0307a14273fa7ca6e4f4e48965810"
+    },
+    {
+      "id": "ResourcesAuditStoryEn",
+      "frames": 1989,
+      "fps": 30,
+      "width": 854,
+      "height": 480,
+      "bytes": 3370396,
+      "sha256": "001aea881f580504aa63ced8e24c8cfefac62b7367f6fa8fc4647541c9c6de17"
     },
     {
       "id": "ResourcesMonitorStoryFil",
-      "frames": 2596,
+      "frames": 2524,
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4242886,
-      "sha256": "3aa71d561582fd4ce4319143afb3d80583731f19246ce456e9a80e876eefdb27"
+      "bytes": 4171561,
+      "sha256": "2961e7f85b805c35e6243d4600863d07ee2426495b9255c14fb5315bd0c46833"
     },
     {
       "id": "ResourcesMonitorStoryEn",
-      "frames": 2552,
+      "frames": 2386,
       "fps": 30,
       "width": 854,
       "height": 480,
-      "bytes": 4207254,
-      "sha256": "7c6d12ef384aa0ebc6106f89b45ebb1792dbb806cbac0813b1fc878676b26dad"
+      "bytes": 3942177,
+      "sha256": "c586dddc10edee26797c90ed84c42e095bdd944d1606f4fce6b0563c366fb2f0"
     }
   ],
   "failures": [],

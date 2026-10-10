@@ -1,5 +1,5 @@
 {
-  "status": "retained complete original attempts; integrated successor verification in progress",
+  "status": "actual bilingual media and complete current registry verified; archive integrity bound separately to its frozen-head receipt",
   "attempts": [
     {
       "run_id": 38040980575,
@@ -91,5 +91,20 @@
     "actual_registry_renders": 102,
     "outcome": "Successful complete media/102-composition render at prior integrated head; same exact current media retained while approved lesson 1.9.1 adds two registry entries. Current full 104-render proof is separate.",
     "artifact_url": "https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/38051282774/artifacts/11671674614"
+  },
+  "current_registry": {
+    "execution": "local actual complete registry render; temporary outputs hashed and removed; shipped media unchanged",
+    "actual_compositions": 104,
+    "actual_renders": 104,
+    "failures": 0,
+    "browser_executable": "/usr/bin/chromium",
+    "parallel_compositions": 3,
+    "frame_concurrency_per_composition": 1,
+    "crf": 28,
+    "registry_source_sha256": "059457ef2c0f31573ef90b18d7e631055ffded9df44e7bf1102cb17568d0c0ec",
+    "report_sha256": "85e98350f3d1854cadb9dbca8d0ed6a59c1800b9d07b31400becd90b86fa7e2a",
+    "report": "docs/lesson-193-registry.json",
+    "log": "docs/lesson-193-integrated104-render.log",
+    "source_binding": "Frozen-head runtime enumeration and exact source/media preservation receipts verify the render inputs; prior 102 receipts remain distinct."
   }
 }

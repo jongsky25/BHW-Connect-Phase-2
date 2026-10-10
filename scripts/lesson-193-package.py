@@ -13,6 +13,19 @@ assert registry_check['ids_in_order']==registry['ids_in_order']
 assert registry_check['registry_report_sha256']==sha((root/'docs/lesson-193-registry.json').read_bytes())
 assert registry_check['registry_source_sha256']==sha((root/'remotion/src/Root.tsx').read_bytes())
 assert registry_check['source_commit']==subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+commit=(root/'docs/lesson-193-frozen-git-commit.txt').read_bytes()
+assert hashlib.sha1(b'commit '+str(len(commit)).encode()+b'\0'+commit).hexdigest()==registry_check['source_commit']
+browser=json.loads((out/'lesson-193-browser-verification.json').read_text())
+assert browser['source_commit']==registry_check['source_commit'] and browser['html_sha256']==sha(html.read_bytes())
+assert browser['actual_case_count']==len(browser['cases'])==96 and browser['actual_screenshot_count']==len(browser['screenshots'])==88
+assert not browser['errors'] and not browser['network_failures'] and not browser['missing']
+assert browser['status'].startswith('passed for actual component/media fixture scope')
+for name in browser['screenshots']:assert (out/name).is_file() and (out/name).stat().st_size>0
+prints=json.loads((out/'lesson-193-print-verification.json').read_text())
+assert len(prints)==4
+for p in prints:
+ b=(out/p['file']).read_bytes();assert sha(b)==p['sha256'] and len(b)==p['bytes']
+ assert p['pages']==(5 if 'print-kit' in p['file'] else 1) and p['A4'] and p['text_inside_margins']
 manifest=json.loads((root/'content/training/day1-basic-competencies/narration.json').read_text())
 full=json.loads((root/'docs/lesson-193-audio-review.json').read_text());focus=json.loads((root/'docs/lesson-193-audio-focus.json').read_text())
 assert len(full['records'])==16 and len(focus['records'])==16

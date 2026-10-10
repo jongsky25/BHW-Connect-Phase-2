@@ -1,5 +1,5 @@
 {
-  "status": "media/playback/print draft verified; integrated registry/archive verification in progress",
+  "status": "reviewable draft; automated media, playback, print, preservation and complete integrated registry checks passed",
   "teaching": "7 paired bilingual screens; all original prompts/options/indexes, identities, objective and rubric preserved",
   "guides": "60-minute plan; 10 triads; at most 3 complete trainer observations; at least 27 learners need a later trainer observation",
   "printables": "2 five-page A4 kits and 2 one-page aids verified",
@@ -21,8 +21,7 @@
   "global_freshness_baseline": "12 problem-prioritize tracks remain stale; no exclusions or sibling regeneration",
   "browser": "96 actual component/media fixture cases, 88 screenshots, zero console/network/overflow errors; no production-auth claim",
   "integrated_main": "0e925326b1f9b2ab138f2a3d5b3267fff0a04621; approved lessons 1.9.1 and 1.9.2 preserved; exactly two target compositions appended",
-  "remaining_verification": [
-    "actual full integrated registry",
-    "frozen-head exact download archive"
-  ]
+  "remaining_verification": [],
+  "registry": "104 actual renders; all IDs/order/frames/fps/dimensions match the current runtime; no failures",
+  "archive_verification": "The external integrity receipt from the downloadable-review workflow binds its exact frozen source head and ZIP bytes. This committed status does not replace that receipt."
 }
