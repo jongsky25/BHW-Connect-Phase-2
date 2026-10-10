@@ -53,7 +53,7 @@ for(const record of records){
   const old=priorRecord?.excerpts?.find(e=>e.kind===q.kind&&e.excerpt_sha256===excerptHash&&e.start===q.start&&e.end===q.end);
   const excerptSamples=pcm(wav).length/2;
   if(decodeOnly){reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,decoded_sample_count:excerptSamples,model_response:null});save();continue;}
-  if(old?.model_response){const retained={...old};delete retained.reused_exact_encoded_bytes;reviewed.excerpts.push({...retained,decoded_sample_count:excerptSamples,reused_exact_wav_excerpt:true,reused_same_encoded_source:priorRecord.source_sha256===sourceHash});save();console.log('Reused focused review for exact bytes '+record.id+' '+q.kind);continue;}
+  if(old?.model_response?.trim()){const retained={...old};delete retained.reused_exact_encoded_bytes;reviewed.excerpts.push({...retained,decoded_sample_count:excerptSamples,reused_exact_wav_excerpt:true,reused_same_encoded_source:priorRecord.source_sha256===sourceHash});save();console.log('Reused focused review for exact bytes '+record.id+' '+q.kind);continue;}
 
   if(!process.env.GEMINI_API_KEY)throw Error('Gemini credential required for an uncached exact WAV excerpt');
   const prompt=`This is ${record.language==='fil'?'Filipino/Tagalog':'Philippine English'} fictional educational audio. The excerpt begins on a measured speech-zone boundary. Transcribe every audible word without guessing. Assess Charlaine pronunciation, numbers and denominators, reprints versus costs, negation and qualification, pending permission, workload/quality distinctions, ending completeness, audible speech, clipped words and unexpected voice changes. Report concrete timestamps relative to this excerpt and uncertainty. Do not presume previous analysis. Return JSON with transcript, observations, possible_defects and uncertainty. This is model assessment, not human approval.`;
@@ -64,7 +64,7 @@ for(const record of records){
     const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:wav.toString('base64'),mime_type:'audio/wav'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
     if(response.ok){
       const result=await response.json();
-      text=(result.steps??[]).filter(s=>s.type==='model_output').flatMap(s=>s.content??[]).filter(c=>c.type==='text').map(c=>c.text).join('\n');
+      text=(result.steps??[]).filter(s=>s.type==='model_output').flatMap(s=>s.content??[]).filter(c=>c.type==='text').map(c=>c.text).join('\n').trim();
       if(text)break;
       failure='Provider returned no model text';
     }else{
@@ -78,4 +78,4 @@ for(const record of records){
  }
 }
 
-report.actual_recordings=report.records.length;report.actual_focused_excerpts=report.records.reduce((n,r)=>n+r.excerpts.length,0);report.successful_model_reviews=report.records.flatMap(r=>r.excerpts).filter(e=>e.model_response).length;report.provider_failures=report.records.flatMap(r=>r.excerpts).filter(e=>e.review_failure).length;report.status=decodeOnly?'decoded metrics only':report.provider_failures?'completed with retained provider failures':'model reviews complete; human listening and approval pending';save();
+report.actual_recordings=report.records.length;report.actual_focused_excerpts=report.records.reduce((n,r)=>n+r.excerpts.length,0);report.successful_model_reviews=report.records.flatMap(r=>r.excerpts).filter(e=>e.model_response?.trim()).length;report.provider_failures=report.records.flatMap(r=>r.excerpts).filter(e=>e.review_failure).length;report.status=decodeOnly?'decoded metrics only':report.provider_failures?'completed with retained provider failures':'model reviews complete; human listening and approval pending';save();

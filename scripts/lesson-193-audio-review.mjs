@@ -39,7 +39,7 @@ function outputText(value){if(typeof value==='string')return value;if(Array.isAr
 const priorPath=path.join(root,"docs/lesson-193-audio-review.json");
 const prior=existsSync(priorPath)?JSON.parse(readFileSync(priorPath,"utf8")):null;
 for(const record of records){
- const reusable=prior?.prompt_revision===promptRevision&&prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response&&!r.model_response.startsWith("Review unavailable"));
+ const reusable=prior?.prompt_revision===promptRevision&&prior?.records?.find(r=>r.id===record.id&&r.sha256===sha(record.file)&&r.model_response?.trim()&&!r.model_response.startsWith("Review unavailable"));
  if(reusable){report.records.push({...reusable,source_video:record.source_video??null,source_video_sha256:record.source_video_sha256??null,reused_exact_decoded_audio:true});save();console.log("Reused exact-byte review "+record.id);continue;}
  if(!process.env.GEMINI_API_KEY)throw new Error('Gemini credential required for an uncached actual-audio review');
  const prompt=`Analyze the attached actual ${record.language==='fil'?'Filipino (Tagalog)':'Philippine English'} educational narration. First transcribe what you hear completely, without inventing words. Report whether speech is audible throughout, any clipped words or ending, Charlaine and BHW pronunciation, consistent female voice, pace, and faithful delivery of 20/100 versus 5/100, 15 percentage points versus 75% relative reprint reduction, no proven cost savings or causation, missing workload/quality evidence, pending permission, the no-internet controlled paper master, and the corrected ending after canceled services. Flag changed negation or qualification and concrete timestamps with uncertainty. Return a JSON object with transcript, speech_present, clipped_ending, delivery, pronunciation_concerns, other_concerns. Do not claim human listening or approval. This audio is fictional training material with no real patient data.`;
@@ -48,7 +48,7 @@ for(const record of records){
   // Build-time review of fictional, admin-authored training media only; follows the existing TTS provider exception. Never learner input or patient data.
   // eslint-disable-next-line no-restricted-syntax
   const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:readFileSync(record.file).toString('base64'),mime_type:record.file.endsWith('.wav')?'audio/wav':'audio/mp3'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
-  if(response.ok){const result=await response.json();reviewed=outputText(result);if(reviewed)break;
+  if(response.ok){const result=await response.json();reviewed=outputText(result).trim();if(reviewed)break;
     if(attempt<2){await new Promise(r=>setTimeout(r,4000*(attempt+1)));continue;}
     reviewed='Review unavailable: provider returned no model text';break;}
   if(attempt<2&&(response.status===429||response.status>=500)){await new Promise(r=>setTimeout(r,4000*(attempt+1)));continue;}
@@ -56,4 +56,4 @@ for(const record of records){
  }
  report.records.push({reviewed_at:new Date().toISOString(),id:record.id,language:record.language,source_video:record.source_video??null,source_video_sha256:record.source_video_sha256??null,sha256:sha(record.file),expected_text:record.expected,model_response:reviewed});save();console.log('Model-reviewed '+record.id);
 }
-report.actual_recordings=report.records.length;report.successful_model_reviews=report.records.filter(r=>r.model_response&&!r.model_response.startsWith('Review unavailable')).length;report.status=report.actual_recordings===16&&report.successful_model_reviews===16?'16 full model reviews complete; human listening pending':'incomplete model review';save();if(report.successful_model_reviews!==16)process.exitCode=1;
+report.actual_recordings=report.records.length;report.successful_model_reviews=report.records.filter(r=>r.model_response?.trim()&&!r.model_response.startsWith('Review unavailable')).length;report.status=report.actual_recordings===16&&report.successful_model_reviews===16?'16 full model reviews complete; human listening pending':'incomplete model review';save();if(report.successful_model_reviews!==16)process.exitCode=1;

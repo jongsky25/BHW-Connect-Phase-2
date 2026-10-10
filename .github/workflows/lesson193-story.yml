@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/lesson193-story.yml'
       - 'scripts/lesson-193-story-build.mjs'
+      - 'scripts/lesson-193-audio-review.mjs'
+      - 'scripts/lesson-193-audio-focus.mjs'
       - 'scripts/remotion-resources-monitor-narrate.mjs'
       - 'remotion/src/resources-monitor/**'
       - 'remotion/public/resources-monitor/*.png'
