@@ -1,6 +1,6 @@
 {
-  "source_commit": "bab223a67f65bafb445a707fc79ccdb12ead8fa5",
-  "date": "2026-10-10T10:05:00.259Z",
+  "source_commit": "f7c9290ada25790c1cb89fc79603a1289fb95470",
+  "date": "2026-10-10T09:38:04.457Z",
   "provider": "gemini:gemini-3.8-flash-tts:Kore",
   "expected_read_tracks": 12,
   "completed_read_tracks": 12,
@@ -12,12 +12,12 @@
   "owner_approval": "pending",
   "story_videos": {
     "fil": {
-      "path": "/training/bhw-1-9/resources-audit-gemini-fil-55440c66d6ad.mp4",
-      "content_hash": "55440c66d6ade2b1690633a302c578f1a4928aea266e885f3417fc70796a5f62",
+      "path": "/training/bhw-1-9/resources-audit-gemini-fil-b9dd2e0879d3.mp4",
+      "content_hash": "b9dd2e0879d314875e9f6775d93c23c71afd290ce6f4b6ab9c217069c0acab9c",
       "duration_s": 63,
       "poster": {
-        "path": "/training/bhw-1-9/resources-audit-final-frame-fil-dbc84bc64533.jpg",
-        "content_hash": "dbc84bc645335569eed452c3820db46b3a7835e629b21d7707c2c7f15b37a971"
+        "path": "/training/bhw-1-9/resources-audit-gemini-fil-ad183ad057db-poster.jpg",
+        "content_hash": "ad183ad057db71eee583f3d3f67634b8fb253deab3a4f6a276fc3ddb3087fb06"
       },
       "captions": {
         "path": "/training/bhw-1-9/resources-audit-gemini-fil-bc8d36c09efd.vtt",
@@ -25,18 +25,17 @@
       }
     },
     "en": {
-      "path": "/training/bhw-1-9/resources-audit-gemini-en-dde322d9930e.mp4",
-      "content_hash": "dde322d9930e6880f556c314c7ceb33945b9798b974846d0c525aa2a842fc3f2",
+      "path": "/training/bhw-1-9/resources-audit-gemini-en-d3248a1eef92.mp4",
+      "content_hash": "d3248a1eef924a48abd24fa6a07b58bee38d28df1852060159780f3c5e937ce2",
       "duration_s": 66,
       "poster": {
-        "path": "/training/bhw-1-9/resources-audit-final-frame-en-ee752de1eb18.jpg",
-        "content_hash": "ee752de1eb186ccc4a10a599389de2b39ee15c40eb5ebc91ba320ff7db0255c1"
+        "path": "/training/bhw-1-9/resources-audit-gemini-en-4c20bcac0dbd-poster.jpg",
+        "content_hash": "4c20bcac0dbd21f0550bdde58d15aeac7011cd3a3f25c1e5a95fd948b5a2ec06"
       },
       "captions": {
         "path": "/training/bhw-1-9/resources-audit-gemini-en-4d9f286c056c.vtt",
         "content_hash": "4d9f286c056c3147defb7f1393d4b82c5987c8a5def80ecf61e17ccd48f49007"
       }
     }
-  },
-  "posters": "extracted from actual final encoded frames; original render-still outputs retained"
+  }
 }

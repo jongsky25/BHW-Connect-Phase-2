@@ -1,6 +1,7 @@
 // Actual production components with explicit local auth/save adapters; no pilot writes.
 import fs from 'node:fs';
 import http from 'node:http';
+import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {chromium} from '@playwright/test';
@@ -13,8 +14,8 @@ const server=http.createServer((req,res)=>{if(req.url==='/favicon.ico'){res.writ
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const baseUrl='http://127.0.0.1:'+server.address().port;
 const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH,args:['--no-sandbox']});
-const report={date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),method:'Actual ReferenceLessons/ReferenceReadSection production components, local auth/navigation/save fixtures. Browser offline after loopback load; no authenticated production proof.',scope:contentOnly?'text/check/resume only':'text/check/resume and actual narration',artwork_story:'Six action illustrations present; story playback separately checked',cases:[],screenshots:[],errors:[]};
-const trackErrors=page=>{page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});};
+const report={date:new Date().toISOString(),source_commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),method:'Actual ReferenceLessons/ReferenceReadSection production components, local auth/navigation/save fixtures. Browser offline after loopback load; no authenticated production proof.',scope:contentOnly?'text/check/resume only':'text/check/resume and actual narration',artwork_story:'Six action illustrations present; story playback separately checked',cases:[],screenshots:[],errors:[],failed_requests:[],source_inputs_sha256:Object.fromEntries(["content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json", "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.fil.md", "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.en.md", "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/slides.json", "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.fil.md", "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.en.md", "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/competency.json", "content/training/day1-basic-competencies/narration.json", "src/components/elearning/reference-lessons.tsx", "src/components/elearning/reference-read-section.tsx", "src/components/elearning/lesson-asset-figure.tsx", "src/lib/elearning/reference-narration.ts", "src/lib/elearning/narration-zones.ts"].map(p=>[p,createHash('sha256').update(fs.readFileSync(p)).digest('hex')]))};
+const trackErrors=page=>{page.on('requestfailed',r=>report.failed_requests.push({url:r.url().startsWith('data:')?r.url().slice(0,50)+'…':r.url(),error:r.failure()?.errorText}));page.on('pageerror',e=>report.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});};
 const save=()=>fs.writeFileSync(dir+'/lesson-191-browser-verification.json',JSON.stringify(report,null,2)+'\n');
 try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
@@ -26,8 +27,10 @@ try{
    await page.locator(`article[data-scene="${anchor}"]`).waitFor();
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Horizontal overflow');
    const picture=page.locator('article[data-scene] figure img').first();await picture.waitFor();assert(await picture.evaluate(i=>i.complete&&i.naturalWidth>0));
+   const art=lesson.assets.find(a=>a.id===section.asset_ids[0]);assert(art);assert.equal(await picture.getAttribute('src'),'data:image/png;base64,'+fs.readFileSync('public'+art.path).toString('base64'),'Wrong action illustration');
    const record={width,language:lang,mode,anchor,no_horizontal_overflow:true,picture_before_check:true};
    if(section.check){
+    const firstChoice=page.getByRole('button',{name:section.check.options[0][lang],exact:true});assert(await firstChoice.evaluate(b=>{const i=document.querySelector('article[data-scene] figure img');return Boolean(i.compareDocumentPosition(b)&Node.DOCUMENT_POSITION_FOLLOWING)&&i.getBoundingClientRect().top<b.getBoundingClientRect().top;}),'Decision appears before the relevant picture');
     assert.equal(await page.getByRole('status').count(),0,'Feedback revealed before decision');
     assert.equal(await page.locator('audio').count(),0,'Takeaway audio revealed before decision');record.takeaway_audio_gated=true;
     for(const o of section.check.options){await page.getByRole('button',{name:o[lang],exact:true}).click();const text=await page.getByRole('status').innerText();for(const n of ['1.','2.','3.'])assert(text.includes(n));assert(text.includes('Charlaine'));if(section.id==='check')assert(text.includes(lang==='en'?'shortage remains unresolved':'hindi pa naayos ang shortage')); }
@@ -87,4 +90,4 @@ try{
  }
  }
  assert.equal(report.errors.length,0);report.status='passed for stated fixture scope; human listening, clinical and owner review separate';report.actual_case_count=report.cases.length;report.actual_screenshot_count=report.screenshots.length;save();
-}catch(e){report.status='failed';report.error=String(e.stack??e);save();throw e;}finally{await browser.close();await new Promise(r=>server.close(r));}
+}catch(e){report.actual_case_count=report.cases.length;report.actual_screenshot_count=report.screenshots.length;report.status='failed';report.error=String(e.stack??e);save();throw e;}finally{await browser.close();await new Promise(r=>server.close(r));}

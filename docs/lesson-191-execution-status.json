@@ -1,14 +1,13 @@
 {
-  "status": "draft implementation; actual media generation and final package verification in progress",
+  "status": "draft source with complete teaching, actual media and local verification; generated frozen-head registry/CI/package receipts establish final archive results",
   "lesson": "resources-audit",
   "pending": [
-    "actual Read narration and bilingual story generation/reviews",
-    "final browser media matrix and registry renders",
-    "primary DOH circular verification (HTTP 403)",
+    "primary DOH circular verification (HTTP403)",
     "local facility/infection-prevention review",
-    "human listening",
-    "owner approval",
-    "authenticated production preview (loader password-change gate)"
+    "human listening of 14 recordings and flagged excerpts",
+    "owner approval of exact draft assets and package",
+    "authenticated production lesson preview (REST snapshots are not app preview)",
+    "review of per-language audio size-budget tradeoff"
   ],
   "owner_release_approval": false,
   "database_writes": false,
@@ -17,5 +16,26 @@
   "content_browser_cases": 68,
   "content_screenshots": 48,
   "print_verification": "two 5-page A4 kits and two one-page A4 task aids, text inside margins",
-  "known_inherited_failure": "global narration freshness for twelve problem-prioritize tracks; retained without exclusions"
+  "known_inherited_failure": "global narration freshness for twelve problem-prioritize tracks; retained without exclusions",
+  "read_mp3s": 12,
+  "stories": 2,
+  "full_actual_audio_model_reviews": 14,
+  "focused_actual_audio_model_reviews": 56,
+  "authenticated_app_preview": "not verified; no account changes to bypass the previously reported password-change gate",
+  "published_content_snapshot": "two bounded read-only captures; target and two neighbors exactly unchanged",
+  "browser_cases": 76,
+  "browser_screenshots": 52,
+  "browser_console_errors": 0,
+  "browser_failed_requests": 0,
+  "read_audio_bytes": {
+    "fil": 2381741,
+    "en": 2261891
+  },
+  "read_audio_size_review": "32kbps; exceeds 1 MB per lesson per language to retain full substantive teaching; exception not approved",
+  "local_unit_tests": {
+    "passed": 1624,
+    "failed": 1,
+    "failure": "inherited twelve-track problem-prioritize freshness assertion"
+  },
+  "registry_verification": "Generated from all eight successful frozen-head render artifacts before packaging"
 }

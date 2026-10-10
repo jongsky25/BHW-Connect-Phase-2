@@ -69,7 +69,7 @@ jobs:
         run: |
           if test -f docs/lesson-191-regenerate-request.json; then
             node --input-type=module -e "import fs from 'node:fs';import {execFileSync} from 'node:child_process';const r=JSON.parse(fs.readFileSync('docs/lesson-191-regenerate-request.json'));execFileSync('gh',['run','download',String(r.previous_media_run_id),'--name','lesson191-generated-evidence','--dir','.preview/lesson191-previous'],{stdio:'inherit'});"
-            mkdir -p .preview/lesson191-raw .preview/lesson191-excerpts
+            mkdir -p .preview/lesson191-raw .preview/lesson191-excerpts .preview/lesson191-superseded-excerpts
             cp -a .preview/lesson191-previous/.preview/lesson191-raw/. .preview/lesson191-raw/
             cp -a .preview/lesson191-previous/.preview/lesson191-excerpts/. .preview/lesson191-excerpts/
           fi
@@ -122,20 +122,20 @@ jobs:
           if-no-files-found: error
           retention-days: 30
   review-package:
-    if: github.head_ref == 'codex/lesson-191-charlaine-handoff'
+    if: github.head_ref == 'codex/lesson-191-charlaine-handoff' || (github.ref_name == 'codex/lesson-191-charlaine-handoff' && inputs.package_only == true)
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0
       - name: Select frozen evidence
         id: scope
         run: |
           if test -f docs/lesson-191-evidence-origins.json && ! test -f docs/lesson-191-regenerate-request.json; then
             echo "package=true" >> "$GITHUB_OUTPUT"
-            node --input-type=module -e "import fs from 'node:fs'; const r=JSON.parse(fs.readFileSync('docs/lesson-191-evidence-origins.json')); fs.appendFileSync(process.env.GITHUB_OUTPUT,'run_id='+r.media_run_id+'\n');"
+            node --input-type=module -e "import fs from 'node:fs'; const r=JSON.parse(fs.readFileSync('docs/lesson-191-evidence-origins.json')); fs.appendFileSync(process.env.GITHUB_OUTPUT,'run_id='+r.media_run_id+'\ninitial_run_id='+r.initial_media_run_id+'\n');"
           else
             echo "package=false" >> "$GITHUB_OUTPUT"
           fi
@@ -163,20 +163,34 @@ jobs:
           run-id: ${{ steps.scope.outputs.run_id }}
           github-token: ${{ github.token }}
           path: .preview/lesson191-import
+      - uses: actions/download-artifact@v4
+        if: steps.scope.outputs.package == 'true'
+        with:
+          name: lesson191-generated-evidence
+          run-id: ${{ steps.scope.outputs.initial_run_id }}
+          github-token: ${{ github.token }}
+          path: .preview/lesson191-initial
       - name: Retain exact raw media evidence
         if: steps.scope.outputs.package == 'true'
         run: |
-          mkdir -p .preview/lesson191-raw .preview/lesson191-excerpts
+          mkdir -p .preview/lesson191-raw .preview/lesson191-excerpts .preview/lesson191-superseded-excerpts
           cp -a .preview/lesson191-import/.preview/lesson191-raw/. .preview/lesson191-raw/
           cp -a .preview/lesson191-import/.preview/lesson191-excerpts/. .preview/lesson191-excerpts/
+          cp -a .preview/lesson191-initial/.preview/lesson191-excerpts/. .preview/lesson191-superseded-excerpts/
           cp .preview/lesson191-import/remotion/public/resources-audit/shipped-aac-*.wav remotion/public/resources-audit/
           if test -f .preview/lesson191-import/lesson-191-published-snapshot.json; then cp .preview/lesson191-import/lesson-191-published-snapshot.json .; fi
+      - name: Verify complete frozen-head registry renders
+        if: steps.scope.outputs.package == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/lesson-191-registry-proof.py
       - name: Verify preservation, sources and actual browser media
         if: steps.scope.outputs.package == 'true'
         run: |
           node scripts/lesson-191-preservation.mjs
           python3 -m pip install PyMuPDF==1.26.6
           python3 scripts/lesson-191-source-evidence.py
+          python3 scripts/lesson-191-audio-notes.py
           node scripts/lesson-191-review-build.mjs
           node scripts/lesson-191-browser-verify.mjs
           node scripts/lesson-191-print-kit.mjs

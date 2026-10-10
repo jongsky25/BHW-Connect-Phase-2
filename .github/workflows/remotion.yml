@@ -15,6 +15,7 @@ on:
     paths:
       - "remotion/**"
       - "scripts/remotion-render.mjs"
+      - "scripts/lesson-191-registry-proof.py"
       - "scripts/lesson-161-*.mjs"
       - "scripts/lesson-162-*"
       - "docs/lesson-162-*"
@@ -26,6 +27,7 @@ on:
     paths:
       - "remotion/**"
       - "scripts/remotion-render.mjs"
+      - "scripts/lesson-191-registry-proof.py"
       - "scripts/lesson-161-*.mjs"
       - "scripts/lesson-162-*"
       - "docs/lesson-162-*"
@@ -53,7 +55,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # Check this draft's exact head; other branches keep their standard checkout.
-          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-172-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff' || github.head_ref == 'codex/lesson-181-apple-handoff' || github.head_ref == 'codex/lesson-182-apple-handoff' || github.head_ref == 'codex/lesson-183-apple-handoff') && github.event.pull_request.head.sha || github.sha }}
+          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-172-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff' || github.head_ref == 'codex/lesson-181-apple-handoff' || github.head_ref == 'codex/lesson-182-apple-handoff' || github.head_ref == 'codex/lesson-183-apple-handoff' || github.head_ref == 'codex/lesson-191-charlaine-handoff') && github.event.pull_request.head.sha || github.sha }}
 
       - name: Wait for this draft's measured story timings
         id: scope
@@ -97,6 +99,7 @@ jobs:
           # `--quiet` ends with the IDs space-separated on one line; split
           # that line and keep only ID-shaped words.
           ids=$(cd remotion && npx remotion compositions --quiet | tail -n 1 | tr -s ' \t' '\n' | grep -E '^[A-Za-z0-9-]+$')
+          printf "%s\n" "$ids" > registry-ids.txt
           index=0
           for id in $ids; do
             if [ "$((index % 8))" -eq "$RENDER_SHARD" ]; then
@@ -104,6 +107,9 @@ jobs:
             fi
             index=$((index + 1))
           done
+          if [ "${{ github.head_ref }}" = "codex/lesson-191-charlaine-handoff" ]; then
+            python3 scripts/lesson-191-registry-proof.py "$RENDER_SHARD" registry-ids.txt
+          fi
           if grep -q "warn .* exceeds" render.log; then
             echo "::error::A clip exceeds the INC-28 size budget (see log above)"
             exit 1

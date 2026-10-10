@@ -185,7 +185,10 @@
       "error": null,
       "sha256": "f925c1902699b737aa957eda2097aeb3ddaf6e741e0c460c1beeeaf9632c87d3",
       "bytes": 109091,
-      "inspection": "original WHO overview text inspected: sustainable facilities optimize resource consumption while protecting the workforce and communities; incremental interventions depend on feasibility, capacity and resources. No technical equipment/clinical rules imported."
+      "inspection": "original WHO overview text inspected: sustainable facilities optimize resource consumption while protecting the workforce and communities; incremental interventions depend on feasibility, capacity and resources. No technical equipment/clinical rules imported.",
+      "retained_original_html": "docs/lesson-191-source-excerpts/who-facilities.html",
+      "retained_inspected_text": "docs/lesson-191-source-excerpts/who-facilities.txt",
+      "text_sha256": "195e2d9974a2d2f6b15e8a14982ca28de386fffeab4736fd88978af8df68def9"
     }
   ],
   "local_policy_review": "pending",
@@ -202,7 +205,7 @@
     },
     {
       "claim": "TESDA 400311217 requires measurement, recording, validated causes, reporting and observed assessment; this lesson alone is not full equivalence or certification",
-      "source": "TESDA PDF 33–35, printed 29–31"
+      "source": "TESDA PDF 33\u201335, printed 29\u201331"
     },
     {
       "claim": "NWPC/Guide order Sort, Systematize, Sweep, Standardize, Self-discipline, Sustain, Safety; Manual puts Safety before Self-discipline and Sustain",
@@ -216,6 +219,6 @@
   "limitations": [
     "DOH circular primary URL returned HTTP403; primary prohibition/current implementation not verified. Manual/Guide wording preserved; no clinical reuse authorization inferred.",
     "Local inventory, facility and infection-prevention procedures not reviewed by an authorized reviewer.",
-    "78-page presentation ends with OSH slides69–78 and has no separately identified sustainable-practices section; no new deck citations."
+    "78-page presentation ends with OSH slides69\u201378 and has no separately identified sustainable-practices section; no new deck citations."
   ]
 }
