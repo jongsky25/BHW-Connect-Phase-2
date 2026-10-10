@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "base_commit": "a1a54d755cda8c609c3006843acc11abfba3437e",
+  "protected_files": 6710,
+  "changed_existing_files": [
+    ".github/workflows/remotion.yml",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.en.md",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.fil.md",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.en.md",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.fil.md",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/slides.json",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/module.json",
+    "content/training/day1-basic-competencies/narration.json",
+    "remotion/src/Root.tsx",
+    "scripts/lib/lesson-184-release-integration.mjs",
+    "scripts/tests/lesson-184-release.test.mjs",
+    "src/components/elearning/reference-lessons.tsx"
+  ],
+  "manifest": "exact",
+  "original_quizzes": "all prompts/options/correct indexes exact in Read and Slides",
+  "rubric": "exact",
+  "non_target_narration_and_history": "exact",
+  "all_prior_public_bytes": "exact",
+  "module_summary": "only Elena to Charlaine in two fields",
+  "owner_release_approval": false
+}

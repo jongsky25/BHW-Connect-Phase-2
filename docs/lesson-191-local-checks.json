@@ -1,0 +1,27 @@
+{
+  "lint": "passed; 3 pre-existing warnings",
+  "typecheck": "passed",
+  "remotion_lint_and_typecheck": "passed",
+  "unit_tests": {
+    "passed": 1624,
+    "failed": 1,
+    "files_passed": 185,
+    "files_failed": 1,
+    "failure": "scripts/tests/reference-narration.test.mjs: committed narration is current for every converted subchapter",
+    "stale_tracks": [
+      "problem-prioritize/check/en",
+      "problem-prioritize/check/fil",
+      "problem-prioritize/criteria/en",
+      "problem-prioritize/criteria/fil",
+      "problem-prioritize/practice/en",
+      "problem-prioritize/practice/fil",
+      "problem-prioritize/score-evidence/en",
+      "problem-prioritize/score-evidence/fil",
+      "problem-prioritize/tie-and-urgent-care/en",
+      "problem-prioritize/tie-and-urgent-care/fil",
+      "problem-prioritize/worked-scores/en",
+      "problem-prioritize/worked-scores/fil"
+    ]
+  },
+  "scope": "final local source and actual media before frozen-head CI; no exclusions"
+}

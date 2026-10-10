@@ -1,0 +1,1102 @@
+{
+  "status": "model concerns exposed; human listening and exact draft approval pending",
+  "human_listening": {
+    "status": "not performed",
+    "required_recordings": 14,
+    "scope": "all 12 Read tracks and both shipped AAC story tracks, plus indicated excerpts"
+  },
+  "interpretation": [
+    "A single screen is not expected to recite the entire lesson: cross-topic omission claims must be checked against the relevant screens, not taken as defects by themselves.",
+    "Possible voice shifts, articulation variants, textual substitutions and ending defects remain listening questions. Model transcripts and competing reports do not establish pronunciation or narrator consistency.",
+    "No speech alias was introduced. Displayed and spoken name remains Charlaine.",
+    "Reused model reports describe only their exact-byte or decoded-PCM match; all retained initial failures remain separately available."
+  ],
+  "owner_approval": false,
+  "facility_infection_prevention_review": "pending",
+  "findings": [
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-elena-fil",
+      "kind": "full",
+      "source_sha256": "700e48a999a84ac6e856b86627e5950c7f17f82eadac248a888af942d6530f90",
+      "excerpt_sha256": null,
+      "response_sha256": "8deda685b86f5f1cc94a2380246437d95b27ff262a83cbff754776dee25fb9e6",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "00:04 - 00:06",
+            "detail": "BHW is articulated letter-by-letter as English initialism 'B-H-W', and 'Charlaine' is read smoothly without awkward cadence."
+          }
+        ],
+        "other_concerns": [
+          {
+            "timestamp": "00:00 - 01:35",
+            "detail": "Content checks: Observed waste versus assumed budget shortage (00:50 - 00:56) and the protection of hand hygiene and critical equipment (01:08 - 01:15) are clearly stated. However, verified master and usable count, the seven S meanings, label-count-return, and reporting a remaining genuine shortage without claiming savings are not addressed or present in this specific audio segment."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-elena-en",
+      "kind": "full",
+      "source_sha256": "1e61cf34d4a3bb2004d90816318808d77f89d9cfe1a5ed1932ad23b191ba2960",
+      "excerpt_sha256": null,
+      "response_sha256": "0940499a7b3a93c8b695022158e2d41cceb181b308aefd447f1d030f084f605e",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "00:04 - 00:06",
+            "item": "BHW Charlaine",
+            "note": "Initialism 'BHW' is spelled out smoothly (B-H-W) and 'Charlaine' is pronounced clearly ('Shar-lane') without awkward phonetic distortion."
+          },
+          {
+            "timestamp": "00:07 - 00:09",
+            "item": "BHS",
+            "note": "Initialism is spelled out clearly (B-H-S)."
+          },
+          {
+            "timestamp": "00:13 - 00:14",
+            "item": "DOH",
+            "note": "Initialism is spelled out letter-by-letter (D-O-H)."
+          }
+        ],
+        "other_concerns": [
+          {
+            "timestamp": "00:00 - 01:31",
+            "category": "Scope omission",
+            "note": "Topics regarding 'verified master and usable count', 'all seven S meanings', and 'label-count-return' are completely absent from this script."
+          },
+          {
+            "timestamp": "00:00 - 01:31",
+            "category": "Negations and numbers",
+            "note": "All negations ('not', 'cannot', 'unverified', 'do not') and numbers ('three') are rendered distinctly with no ambiguity."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-inventory-fil",
+      "kind": "full",
+      "source_sha256": "9b61ddee65a6dc62908bf799ff6f3196039fce773df57728efa7fc3462258e74",
+      "excerpt_sha256": null,
+      "response_sha256": "2fc1a2b922a7c1ea559515d54340d25490ea2bd52b3a27a6ceee1d4cec73ad89",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "00:05",
+            "detail": "The script name 'Charlaine' is read as standard English 'Charlene' ('Shar-lin').",
+            "severity": "minor"
+          },
+          {
+            "timestamp": "00:00 - 01:36",
+            "detail": "The acronym/initialism 'BHW' is completely omitted from the spoken narration.",
+            "severity": "notable"
+          }
+        ],
+        "other_concerns": [
+          {
+            "timestamp": "00:48 - 00:52",
+            "detail": "Observed waste ('Sayang ang papel') is stated, but an explicit comparison against an assumed budget shortage is absent."
+          },
+          {
+            "timestamp": "00:00 - 01:36",
+            "detail": "Core conceptual requirements mentioned in the prompt are missing from the spoken audio: no mention of the 7S framework/meanings, no mention of reporting a remaining genuine shortage without claiming savings, and no mention of hand hygiene or critical equipment protection (only clinical reuse/reprocessing is disclaimed)."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-inventory-en",
+      "kind": "full",
+      "source_sha256": "084e9e5d453c03dbe255ef27e638a5dd00affefcb3db65afe8e008d2b0e29d58",
+      "excerpt_sha256": null,
+      "response_sha256": "32c1c1156aa0a236a5874ca4f48386a3efb0fc0933725bdf9960220a9438387f",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "00:04",
+            "text": "Charlaine",
+            "note": "Pronounced with a somewhat flat /ʃɑːrˈleɪn/ cadence common in synthetic text-to-speech."
+          },
+          {
+            "timestamp": "N/A",
+            "text": "BHW",
+            "note": "The initialism 'BHW' does not appear in this recording."
+          }
+        ],
+        "other_concerns": [
+          {
+            "timestamp": "00:47-00:48",
+            "note": "Abrupt narrator timbre/speaker shift for 'the colleague says'."
+          },
+          {
+            "timestamp": "00:00-01:29",
+            "note": "Several targeted educational themes are completely omitted from the audio script: the seven S meanings, explicit contrast between observed waste and assumed budget shortages, reporting a remaining genuine shortage without claiming savings, and protection of hand hygiene and critical equipment."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-seven-s-fil",
+      "kind": "full",
+      "source_sha256": "3b45c6658105393b8fc57df7b7c997f3a8742dfbfe21a29a13807e3b3487eeeb",
+      "excerpt_sha256": null,
+      "response_sha256": "a84419e3ce7d5ba8ab4fa87b2fe6210a737378f7a9d32a268f22225dc6ff3c43",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "item": "Charlaine",
+            "timestamp": "00:06 - 00:08",
+            "note": "Pronounced naturally as 'Shar-leyn' without phonetic awkwardness."
+          },
+          {
+            "item": "BHW",
+            "timestamp": null,
+            "note": "The initialism 'BHW' does not appear in this recording."
+          }
+        ],
+        "other_concerns": [
+          {
+            "topic": "Content completeness relative to target pedagogical points",
+            "timestamp": "00:00 - 01:44",
+            "note": "Label-count-return ('Label, bilang, balik', 00:00-00:02), usable card verification against checklist (00:14-00:18), the seven S definitions (00:38-01:02), and disclaiming proven savings (01:34-01:38) are explicitly covered. However, observed waste vs. assumed budget shortage, verified master count, reporting of remaining genuine shortages, and protection of hand hygiene and critical equipment are omitted from this specific narration script."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-seven-s-en",
+      "kind": "full",
+      "source_sha256": "a8b0ed446aa557759e60eb8008d991f73c4804e988a65f9390d8ca8ca474ae18",
+      "excerpt_sha256": null,
+      "response_sha256": "834d5b22672d35b65c1a7ef93b50b7f631626a46754720b7003c32cf9b1690e3",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "00:05.2",
+            "word": "Charlaine",
+            "observation": "Pronounced clearly as /ʃɑːrˈleɪn/ ('Shar-layn'); natural and intelligible."
+          },
+          {
+            "timestamp": "N/A",
+            "word": "BHW",
+            "observation": "The initialism BHW does not appear in the recorded audio."
+          }
+        ],
+        "other_concerns": [
+          {
+            "timestamp": "00:03.0 - 00:04.5",
+            "category": "Speaker inconsistency",
+            "description": "Abrupt voice shift from female to male speaker for 'Assign responsibility', switching back to female voice at 00:05."
+          },
+          {
+            "timestamp": "01:01.0 - 01:09.5",
+            "category": "Omitted / partially expressed topic",
+            "description": "Mentions that workplace tidiness is not a clinical decontamination instruction, but does not explicitly address protection of hand hygiene or critical equipment."
+          },
+          {
+            "timestamp": "01:30.0 - 01:34.5",
+            "category": "Omitted / partially expressed topic",
+            "description": "Mentions that demonstrating a routine does not establish measured savings, but does not explicitly discuss observing waste versus assumed budget shortages or reporting a remaining genuine shortage."
+          },
+          {
+            "timestamp": "00:14.0 - 00:17.5",
+            "category": "Omitted / partially expressed topic",
+            "description": "Mentions counting usable paper cards against a checklist, but does not explicitly verify a separate 'master count'."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-evidence-before-order-fil",
+      "kind": "full",
+      "source_sha256": "5c6d31eb8a9f6c709411c5e8d471627c92d09741b2e9a1821cee4695966e7f4f",
+      "excerpt_sha256": null,
+      "response_sha256": "b37c63233ebe043e4578c871f7e64e09d6f3490e0a860e81acaaedfe6302f657",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "01:08",
+            "word_or_phrase": "Charlaine",
+            "note": "Pronounced smoothly and naturally as 'Shar-leyn'."
+          },
+          {
+            "timestamp": "00:52",
+            "word_or_phrase": "BHS",
+            "note": "Spoken clearly as the initialism 'B-H-S' (note: 'BHW' does not appear in the audio script)."
+          }
+        ],
+        "other_concerns": [
+          {
+            "category": "Curriculum Content Coverage",
+            "note": "The narration clearly covers verified master vs. usable count, observed inventory vs. assumptions, and reporting a remaining shortage without claiming savings. However, it does not mention the 7S methodology/meanings, 'label-count-return', or hand hygiene/critical equipment protection."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-evidence-before-order-en",
+      "kind": "full",
+      "source_sha256": "1e8827d07de033c6a62005905bf01f3ec97412aaa38f1563e327d4bdcade42d0",
+      "excerpt_sha256": null,
+      "response_sha256": "34a16ae540346242add76eda5794d3ea66f71d6a7c6475b44433102afaf2962f",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "00:50",
+            "detail": "Narrator says the initialism 'BHS' (Barangay Health Station) clearly rather than 'BHW' (Barangay Health Worker)."
+          },
+          {
+            "timestamp": "01:05",
+            "detail": "'Charlaine' is pronounced smoothly as /ʃɑːrˈleɪn/ without awkward inflection."
+          }
+        ],
+        "other_concerns": [
+          {
+            "topic": "Curriculum / Expected Content Coverage",
+            "detail": "While the audio covers verified master/usable count, reporting remaining gap without claiming financial savings, and separating observed from verified counts, it does not mention the seven S meanings, label-count-return, or protection of hand hygiene and critical equipment within this specific clip."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-practice-fil",
+      "kind": "full",
+      "source_sha256": "a7d9bc7a8565b28df494e6d1df7478883c505fcc261d53c79c789c377a3f8c69",
+      "excerpt_sha256": null,
+      "response_sha256": "1858abda2cc8c4159be0c35c419ac7e6e9af2ca1691dac50cd57eca3b0e9315c",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "term": "Charlaine",
+            "timestamp": "00:04 - 00:05",
+            "observation": "Pronounced phonetically as 'Shar-layn' with flat stress; intelligible."
+          },
+          {
+            "term": "BHW",
+            "timestamp": "00:42 - 00:44",
+            "observation": "Spelled out clearly letter-by-letter ('B-H-W') without awkward pauses."
+          }
+        ],
+        "other_concerns": [
+          {
+            "topic": "Missing Required Educational Concepts",
+            "details": "Several expected concepts are entirely absent from the audio narration: (1) All seven S (7S) meanings are neither listed nor defined; (2) Protection of hand hygiene and critical equipment is not mentioned; (3) Explicit guidance on 'reporting a remaining genuine shortage without claiming savings' is absent."
+          },
+          {
+            "topic": "Partially/Fully Expressed Required Concepts",
+            "details": "'Observed waste versus assumed budget shortage' is clearly stated at 02:00–02:07 ('Magsimula sa nakitang pag-aaksaya... hindi sa hula na kulang ang budget'). Verification of master and usable count is covered at 00:26–00:39 and 00:59–01:00 ('usable count'). 'Label-count-return' is stated at 00:58–01:01 ('label, usable count, at return'). Numerical breakdown (30 learners total: 3 trainer-observed, leaving at least 27 unobserved) is mathematically consistent."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-practice-en",
+      "kind": "full",
+      "source_sha256": "22e51c8398449daf06d6266a6737616ced582b96e7ee60a41d6975aedf2e2429",
+      "excerpt_sha256": null,
+      "response_sha256": "09d0d0cb4a0e3f4e737670805caa9e538e396f393864a1f5daad7933a6f5ef1f",
+      "concerns": {
+        "pronunciation_concerns": "None. The name 'Charlaine' (00:04) and initialism 'BHW' (00:40) are articulated clearly and naturally without awkwardness.",
+        "other_concerns": "Content-wise, while observed waste vs. assumed budget shortage (01:52-02:00), master verification, and label-count-return (00:53-01:01) are explicitly articulated, the audio does not mention all seven S meanings, protection of hand hygiene, or critical equipment protection. Negations ('no volume or bill', 'without repair', 'not a pass', 'not an assumption') and numerical timing breakdowns (00:45-00:52, 01:22-01:31) are clearly enunciated without ambiguity."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-check-fil",
+      "kind": "full",
+      "source_sha256": "7305a0e4886586df86f9536fd64724a46f96becdf48af2240be1d6b0dd1236d2",
+      "excerpt_sha256": null,
+      "response_sha256": "9aad96b41f3c89901232dcdc3eabd0a6801adc11c89d18acd8a8247f7b2dd499",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "00:22 - 00:24",
+            "item": "Charlaine",
+            "note": "Pronounced phonetically as 'Shar-leyn'; clear and intelligible in Tagalog context."
+          },
+          {
+            "item": "BHW",
+            "note": "The initialism BHW does not appear in this recording."
+          }
+        ],
+        "other_concerns": {
+          "content_coverage": {
+            "observed_waste_vs_assumed_budget_shortage": "Clearly expressed (e.g., 00:14-00:20 and 01:05-01:11).",
+            "label_count_return": "Expressed at 00:44-00:48 ('label, count, at return').",
+            "verified_master_and_usable_count": "Partially referenced via 'stock count o approved version' (00:08-00:13), but distinct master vs. usable count is not covered.",
+            "seven_s_meanings": "Not included in this segment.",
+            "reporting_remaining_genuine_shortage_without_claiming_savings": "Not included in this segment.",
+            "protection_of_hand_hygiene_and_critical_equipment": "Not included in this segment."
+          },
+          "textual_clarity": "Negations and conditions are clear and unambiguous without unintended meaning shifts.",
+          "audio_defects": "No dropouts, truncation, or clipped words observed."
+        }
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "read-resources-audit-check-en",
+      "kind": "full",
+      "source_sha256": "221595e7ce616dd19c806d4cb85228b05d29d8ebea6b0eb7daee18720e18c706",
+      "excerpt_sha256": null,
+      "response_sha256": "a8901e01206386560bd13489827198dcb2c8e5d3893fb90c9a2753f016c37100",
+      "concerns": {
+        "pronunciation_concerns": "The name 'Charlaine' is spoken at 00:22–00:24 with acceptable clarity. The initialism 'BHW' does not appear anywhere in this recording.",
+        "other_concerns": "Several requested curricular concepts are absent from this segment: all seven S meanings, explicit verified master/usable count distinction, reporting a genuine shortage without claiming savings, and protection of hand hygiene and critical equipment are not mentioned. Observed waste versus assumed budget shortage (00:14–00:20, 01:02–01:09) and 'label, count, and return' (00:42–00:46) are clearly articulated."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "story-fil",
+      "kind": "full",
+      "source_sha256": "e0dd94ce13ad69f494fc8b8b97afad8900c48730c03056789fa808daa5e0215c",
+      "excerpt_sha256": null,
+      "response_sha256": "5a63c2ee17e58dfe96ac5d5535e2deeaeb168e38c14aaeac9b50bbf8c2912e4f",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "00:00 - 00:02",
+            "detail": "The narrator says 'BHS' (/biː-eɪtʃ-ɛs/) rather than 'BHW'."
+          },
+          {
+            "timestamp": "00:02 - 00:04",
+            "detail": "The name 'Charlaine' is read as standard 'Charlene' (/ʃɑːrˈliːn/)."
+          }
+        ],
+        "other_concerns": [
+          {
+            "topic": "Content omissions",
+            "detail": "Several requested curricular concepts are absent or incomplete: individual definitions/meanings of all seven S are not detailed (only 'pitong S' is mentioned at 00:27-00:29); protection of hand hygiene and critical equipment is completely unmentioned; assumed budget shortage is not explicitly contrasted with observed waste."
+          },
+          {
+            "topic": "Content coverage",
+            "detail": "Verified master count, usable count, label-count-return, and reporting actual shortage without claiming unverified savings ('Shortage, hindi pa resolved; savings, hindi proven') are explicitly and clearly stated."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-review.json",
+      "record": "story-en",
+      "kind": "full",
+      "source_sha256": "326885a6b91c3f5d594c46e79bda690bc2f06c0f72c0f43eede594be84e3b2a6",
+      "excerpt_sha256": null,
+      "response_sha256": "0413916b4ead48e7baaf1344c5980faa9b0544bb7caeca9ff159b0396b90ea43",
+      "concerns": {
+        "pronunciation_concerns": [
+          {
+            "timestamp": "00:00 - 00:02",
+            "detail": "The audio pronounces the acronym as 'BHS' (/ˌbiː eɪtʃ ˈɛs/), not 'BHW'."
+          },
+          {
+            "timestamp": "00:02, 00:14, 00:20, 00:33, 00:44, 00:55",
+            "detail": "The name 'Charlaine' is pronounced consistently as /ʃɑːrˈleɪn/ without notable distortion."
+          }
+        ],
+        "other_concerns": [
+          {
+            "timestamp": "00:00 - 01:05",
+            "concern": "Protection of hand hygiene and critical equipment is completely absent from the spoken text."
+          },
+          {
+            "timestamp": "00:30 - 00:32",
+            "concern": "The narration instructs to 'Retain all 7S meanings', but does not list or define what the seven S meanings actually are."
+          },
+          {
+            "timestamp": "00:02 - 00:09, 00:59 - 01:05",
+            "concern": "Observed physical waste (leak, wrong printouts, misplaced supplies) and unverified savings/shortages are stated, but not explicitly framed or contrasted against an 'assumed budget shortage'."
+          }
+        ]
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-check-fil",
+      "kind": "name",
+      "source_sha256": "7305a0e4886586df86f9536fd64724a46f96becdf48af2240be1d6b0dd1236d2",
+      "excerpt_sha256": "07e013f69ba9b35497eebe9cd102e88faf20dd2d87e251a5bb75d3f5369b63f8",
+      "response_sha256": "3308adc87de4a4db259b756175eac510cf71d15b7765819fe1699ed247d77528",
+      "concerns": {
+        "uncertainty": "None; speech is clean, fully audible, and straightforward."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-check-fil",
+      "kind": "body",
+      "source_sha256": "7305a0e4886586df86f9536fd64724a46f96becdf48af2240be1d6b0dd1236d2",
+      "excerpt_sha256": "4da10cd045a424e9b4b4d70c2aaf774ebaa52547033fbf2906bb2c41f4b0b5da",
+      "response_sha256": "1a9e5ea3592ab7773b479a256cf18b1df047ae06978060a6aa39591c750cb267",
+      "concerns": {
+        "uncertainty": "Low; the speech is clear, well-recorded, and contains no discernible acoustic or linguistic defects."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-check-fil",
+      "kind": "critical",
+      "source_sha256": "7305a0e4886586df86f9536fd64724a46f96becdf48af2240be1d6b0dd1236d2",
+      "excerpt_sha256": "1cb443516583eda4385a22ae3929b914c5bb393acd00b4794f56e1361d96791c",
+      "response_sha256": "ea985018ea4b375db98c9f7106ce7be34d55515bfe1f8f4dc4ef88ae2da91708",
+      "concerns": {
+        "uncertainty": "Orthographic spelling of the name 'Charlene' vs. 'Charlaine' is ambiguous from audio alone, though pronounced clearly as /ʃɑːrˈliːn/."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-check-fil",
+      "kind": "ending",
+      "source_sha256": "7305a0e4886586df86f9536fd64724a46f96becdf48af2240be1d6b0dd1236d2",
+      "excerpt_sha256": "c3d3b484607f65f38a7c00a5d50aef7af345f9f49e044de944cf02df4fb0d01e",
+      "response_sha256": "b662c3dd1290dbb79ccd8ac97591bd64e08d12accd7278f1e14037c2b137a87f",
+      "concerns": {
+        "uncertainty": "Wala; malinaw at buo ang buong audio excerpt."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-elena-fil",
+      "kind": "body",
+      "source_sha256": "700e48a999a84ac6e856b86627e5950c7f17f82eadac248a888af942d6530f90",
+      "excerpt_sha256": "9ae7ac185eb4dcf57cced8708f246e5c8534ad1f3a004813372f0b6385da3600",
+      "response_sha256": "0da3ad79bf3c74855cd8aeb97e7752f888b2c01a73ea0c712331ac607df1b2f8",
+      "concerns": {
+        "uncertainty": "None."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-elena-fil",
+      "kind": "critical",
+      "source_sha256": "700e48a999a84ac6e856b86627e5950c7f17f82eadac248a888af942d6530f90",
+      "excerpt_sha256": "71405e10ff9aa5cc187e53f569d06ef7d7104ded422cf2c5c6992e93b3810be9",
+      "response_sha256": "82b0924b2174842c7c4095393e84c63413e5336843f0ce83ad14d8236034b5da",
+      "concerns": {
+        "uncertainty": "Low; minor phonetic softening of the medial /g/ in 'pagsukat'."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-elena-fil",
+      "kind": "ending",
+      "source_sha256": "700e48a999a84ac6e856b86627e5950c7f17f82eadac248a888af942d6530f90",
+      "excerpt_sha256": "36bdd452e4cf94e6c7e83e57d6848c88a76b84ee9c411dba41be564387555673",
+      "response_sha256": "b890d1fca8ebb3d0077001b71671320f8a98dee0ae6bfc697dee8888937e3f88",
+      "concerns": {
+        "uncertainty": "None."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-evidence-before-order-fil",
+      "kind": "name",
+      "source_sha256": "5c6d31eb8a9f6c709411c5e8d471627c92d09741b2e9a1821cee4695966e7f4f",
+      "excerpt_sha256": "3fd9eaa912fa309662896fc944867dedd1938c8e167b101e2b10a5c58a97b417",
+      "response_sha256": "4cac285ccf3b93743deedc367320ceb8da09b79b804ecb30bf3545ffc1bd1b39",
+      "concerns": {
+        "uncertainty": "None; the speech signal is clean and unambiguous."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-evidence-before-order-fil",
+      "kind": "body",
+      "source_sha256": "5c6d31eb8a9f6c709411c5e8d471627c92d09741b2e9a1821cee4695966e7f4f",
+      "excerpt_sha256": "b1e4b0480d56dfb2c601c86ca7f26a2c6ad89c45d479ab674c98db61bca54bed",
+      "response_sha256": "f990923686f9b3771bc7afa3ccc477316976246bf08c32cb19edca205bdad8c9",
+      "concerns": {
+        "uncertainty": "Low"
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-evidence-before-order-fil",
+      "kind": "critical",
+      "source_sha256": "5c6d31eb8a9f6c709411c5e8d471627c92d09741b2e9a1821cee4695966e7f4f",
+      "excerpt_sha256": "61f19f7354db4d251ccd8e7b304c02e00ab586e98a29bf6e1983cb8d0f113d5a",
+      "response_sha256": "d4edf888ecd9424474306d91e44b737b454a32d6f345bf0ac88d08f861b7bbed",
+      "concerns": {
+        "uncertainty": "Low"
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-evidence-before-order-fil",
+      "kind": "ending",
+      "source_sha256": "5c6d31eb8a9f6c709411c5e8d471627c92d09741b2e9a1821cee4695966e7f4f",
+      "excerpt_sha256": "b8af5c9e0b8488ac0c8bdd6f5bd7699cac69195c7b9e8ca490bee49bb4f2eb62",
+      "response_sha256": "70bcb2934fae37e2fafdabb61260f3683ade94d288818b8ef4904f338f41aea8",
+      "concerns": {
+        "uncertainty": "Low; all speech segments are clearly audible and intelligible."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-inventory-fil",
+      "kind": "name",
+      "source_sha256": "9b61ddee65a6dc62908bf799ff6f3196039fce773df57728efa7fc3462258e74",
+      "excerpt_sha256": "4b8b19a3128358bc96d0b280e0cd517028c8395b5a27a2db01ad8cca0c228dbd",
+      "response_sha256": "3c45bb564ee7cd2798c5fc9e211565bc31477be4fe5bed954a4bd6cb849e70e1",
+      "concerns": {
+        "uncertainty": "Orthography for 'nagpapractice' could alternatively be spelled as 'nagpa-practice' or 'nagpapraktis' depending on localization standard, though the spoken word is unambiguous."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-inventory-fil",
+      "kind": "body",
+      "source_sha256": "9b61ddee65a6dc62908bf799ff6f3196039fce773df57728efa7fc3462258e74",
+      "excerpt_sha256": "8def4f98c2454c9d3fe12e9a07d89059d07fc5ab55b025115fe7e9e0a319c98f",
+      "response_sha256": "c5cf97965e136614b26c26e0a38c0dbc891b5a3c1768c7c18ee3bb56d99e7eb8",
+      "concerns": {
+        "uncertainty": "None; speech is clear and fully intelligible."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-inventory-fil",
+      "kind": "critical",
+      "source_sha256": "9b61ddee65a6dc62908bf799ff6f3196039fce773df57728efa7fc3462258e74",
+      "excerpt_sha256": "b4fbedd8ed50f1abdb642c19036718aaf6282369aeb4a1749b65953794cb6d85",
+      "response_sha256": "7e4191a87ad39b5f31b52f26958efc44c13fcd8587cf79dd4c25617d4e63f0a8",
+      "concerns": {
+        "uncertainty": "None. Speech is clear, intelligible, and free of background noise or clipping."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-inventory-fil",
+      "kind": "ending",
+      "source_sha256": "9b61ddee65a6dc62908bf799ff6f3196039fce773df57728efa7fc3462258e74",
+      "excerpt_sha256": "455f054fa0c3b8f42a1fd49c5e684bce4e408030576fd392ff61645ec5182ba0",
+      "response_sha256": "624ec847a1bc9aa3d89bd2b9ff04226d96301dac814900919b7529446610b935",
+      "concerns": {
+        "possible_defects": [
+          {
+            "type": "unexpected_voice_change",
+            "timestamp_range": "00:05.10 - 00:10.85",
+            "description": "Sudden switch to a male voice for a single sentence ('Hindi nito pinahihintulutan...') before returning to the original female voice at 00:10.85."
+          }
+        ],
+        "uncertainty": "Low; all speech segments are clearly intelligible."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-practice-fil",
+      "kind": "body",
+      "source_sha256": "a7d9bc7a8565b28df494e6d1df7478883c505fcc261d53c79c789c377a3f8c69",
+      "excerpt_sha256": "61323dc9c1b45534ac8ee543dfe504526cebe86030ba293670f56cc06e910101",
+      "response_sha256": "ca02e8e0b1ecea9c5aa0cd2f04ace8987c12bb18a1ce8f579b3669ce0a36b872",
+      "concerns": {
+        "uncertainty": "None; speech is clear and unambiguous throughout."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-seven-s-fil",
+      "kind": "critical",
+      "source_sha256": "3b45c6658105393b8fc57df7b7c997f3a8742dfbfe21a29a13807e3b3487eeeb",
+      "excerpt_sha256": "9ae6c9fc17717302f96e3fdcc450815d5500b44dd0b7b281721835c519fcb8ef",
+      "response_sha256": "5eb5797639461463b4f1b9e4c7e0220e0e31e6bbf648a1645d6b2445ad78ba78",
+      "concerns": {
+        "uncertainty": "Low; the audio quality is clean and the speech is unambiguous."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-seven-s-fil",
+      "kind": "ending",
+      "source_sha256": "3b45c6658105393b8fc57df7b7c997f3a8742dfbfe21a29a13807e3b3487eeeb",
+      "excerpt_sha256": "6d3c2756023fa2b8f271b2aab82e624463449d87a5edde42eb6e5ef8df17692b",
+      "response_sha256": "2e5acba7ecce50460c1201f663a0ea95b07dda1057f520fe318dcc9cb2048904",
+      "concerns": {
+        "uncertainty": "Slight ambiguity between 'hindi papatunay' and 'hindi pa patunay' around 00:07 due to syllable blending, though phonetic delivery aligns closely with 'hindi papatunay'."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "shipped-story-fil",
+      "kind": "name",
+      "source_sha256": "55440c66d6ade2b1690633a302c578f1a4928aea266e885f3417fc70796a5f62",
+      "excerpt_sha256": "ff7d2bc1b1f0db6bee5353d483c8a31f3b30b3f90e256d6a54ae086b05674861",
+      "response_sha256": "5f774de1e151584e19dca78fb5a2864ec8bed55b5a6be5450e969908ed10d55c",
+      "concerns": {
+        "uncertainty": "Low"
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "shipped-story-fil",
+      "kind": "critical",
+      "source_sha256": "55440c66d6ade2b1690633a302c578f1a4928aea266e885f3417fc70796a5f62",
+      "excerpt_sha256": "74315c99c7538f64cd6ae4511b2505099109e9d2f63e985d790a90d52c72d639",
+      "response_sha256": "a85e884fc52c26f79caa3c5fba2aec6d8cfe872337a49d133beaef667c0364df",
+      "concerns": {
+        "possible_defects": [
+          {
+            "timestamp": "00:00.9 - 00:01.4",
+            "issue": "Mispronunciation / clipped final consonant: 'role' is pronounced like 'row' without an audible final /l/."
+          }
+        ],
+        "uncertainty": "It is possible the intended text was literally 'audit row' rather than 'audit role', though in training/audit contexts 'role' is standard."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "shipped-story-fil",
+      "kind": "ending",
+      "source_sha256": "55440c66d6ade2b1690633a302c578f1a4928aea266e885f3417fc70796a5f62",
+      "excerpt_sha256": "9d101b9eb00d7871d5520a4fc43fa74f5888258dae86ee97b77b5b8e923a69f0",
+      "response_sha256": "97230f9cc1caa29fa82d067fef147338d2dcc6db214223d93e5159e4f578c10f",
+      "concerns": {
+        "uncertainty": "Low; all lexical boundaries and phonemes are unambiguous."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-check-en",
+      "kind": "name",
+      "source_sha256": "221595e7ce616dd19c806d4cb85228b05d29d8ebea6b0eb7daee18720e18c706",
+      "excerpt_sha256": "8f6771924ffcd2dc387cd88ef72f0ddc64560aa34a0f9ec8846ac0cbd1738592",
+      "response_sha256": "aa9dbdc9ff0491ab4a333126dfce864cd5c682d5703b0ea9b15f16ba9edb2bd5",
+      "concerns": {
+        "uncertainty": "Low; audio is clear with direct articulation throughout."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-check-en",
+      "kind": "body",
+      "source_sha256": "221595e7ce616dd19c806d4cb85228b05d29d8ebea6b0eb7daee18720e18c706",
+      "excerpt_sha256": "1ba0e62a3d4727b04771eb28940c7bb5fa10ffe695817f725f5737bacfeba824",
+      "response_sha256": "ffbce1060005c69b5702285f7ea6f159fe7bd3be7c22801e91d9dd557d01cbbd",
+      "concerns": {
+        "uncertainty": "Low"
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-check-en",
+      "kind": "critical",
+      "source_sha256": "221595e7ce616dd19c806d4cb85228b05d29d8ebea6b0eb7daee18720e18c706",
+      "excerpt_sha256": "527dd36b21eb9011cbd6583bc9131ee64d72733e3465500c4958ba93ff1551fd",
+      "response_sha256": "57b6a3b6a33a3147bae62215cdb22abd37af3d12509ed949d1942334363791ec",
+      "concerns": {
+        "possible_defects": {
+          "clipped_words": "None detected; final consonant stops are articulated.",
+          "ending_completeness": "The closing word 'order' ends naturally without premature cutoff at 00:12.7."
+        },
+        "uncertainty": "Low; audio track is clear with minimal background noise."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-check-en",
+      "kind": "ending",
+      "source_sha256": "221595e7ce616dd19c806d4cb85228b05d29d8ebea6b0eb7daee18720e18c706",
+      "excerpt_sha256": "992a2cd02b557e2f37565311ab84ef5fa614939c878d1ce6439ae9913c9c2d52",
+      "response_sha256": "772d54aa398d4ad265b8df08a4a568f665f638a59194c526e12723b64212b3f4",
+      "concerns": {
+        "uncertainty": {
+          "level": "low",
+          "details": "Audio signals and boundaries are unambiguous; lack of occurrence of 'Charlaine' noted."
+        }
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-elena-en",
+      "kind": "name",
+      "source_sha256": "1e61cf34d4a3bb2004d90816318808d77f89d9cfe1a5ed1932ad23b191ba2960",
+      "excerpt_sha256": "1a018465217b356810b36f125c61e39cdb89510f31c54260cba036a6a7ed332d",
+      "response_sha256": "685e1273484b29f57819736d25ec07032858fad9f903af02d7093a17c3b91eab",
+      "concerns": {
+        "possible_defects": [
+          {
+            "timestamp": "00:01.00 - 00:01.65",
+            "type": "pronunciation_variant",
+            "description": "Vowel in 'Charlaine' realized as /iː/ rather than /eɪ/."
+          }
+        ],
+        "uncertainty": "Low; audio is clear with minimal background noise."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-elena-en",
+      "kind": "body",
+      "source_sha256": "1e61cf34d4a3bb2004d90816318808d77f89d9cfe1a5ed1932ad23b191ba2960",
+      "excerpt_sha256": "f55febdc80c01312b4deaf3ecd28a49bfcee4c2394b78eeef6989ae2d0480e87",
+      "response_sha256": "2af335fc3bd37c02ecde3c05d0ba2994f9bd3891ef7f05d25140df844d29200a",
+      "concerns": {
+        "uncertainty": "Low"
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-elena-en",
+      "kind": "critical",
+      "source_sha256": "1e61cf34d4a3bb2004d90816318808d77f89d9cfe1a5ed1932ad23b191ba2960",
+      "excerpt_sha256": "35bacf56d3205a6087b7cf3c4e83980e597034640231992e062cfa6cca284e35",
+      "response_sha256": "9df1be222be232ed4c51b78bbd9b24170c43835e8a4a7d900bed8db1a3cf47c3",
+      "concerns": {
+        "uncertainty": "Low; transcription and acoustic features are straightforward."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-elena-en",
+      "kind": "ending",
+      "source_sha256": "1e61cf34d4a3bb2004d90816318808d77f89d9cfe1a5ed1932ad23b191ba2960",
+      "excerpt_sha256": "27eeaf8cabb3de4efac32d5cf46632547f4b4d0fc7fe09c2173b18013f999402",
+      "response_sha256": "76aaf0fdaaa233c2679cffb38070e2b32cab4eeefbcd555270405db3db4deb77",
+      "concerns": {
+        "possible_defects": {
+          "clipped_words": "None detected.",
+          "unexpected_voice_changes": "Slight tonal jumps and acoustic variations around 00:10.00 and 00:14.50 indicating concatenated takes.",
+          "pronunciation_issues": "None significant; standardized educational diction observed."
+        },
+        "uncertainty": "Low; audio is clear with minimal ambient interference."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-evidence-before-order-en",
+      "kind": "name",
+      "source_sha256": "1e8827d07de033c6a62005905bf01f3ec97412aaa38f1563e327d4bdcade42d0",
+      "excerpt_sha256": "70181cdc7d1dcd18235a39916880a4dcd9f6668a1b566c807e8e2a3052a4fc13",
+      "response_sha256": "733be062dffcefd476f3304729542cdaadec0d2f0788d99b1a526632bc34d706",
+      "concerns": {
+        "uncertainty": "Low; audio signal is clean and speech is fully intelligible."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-evidence-before-order-en",
+      "kind": "body",
+      "source_sha256": "1e8827d07de033c6a62005905bf01f3ec97412aaa38f1563e327d4bdcade42d0",
+      "excerpt_sha256": "abfd18c20e54ace9c9756509c34f2ead5875b4487afcdced99be2b9c119a3aeb",
+      "response_sha256": "999379ce9b05478cf859d7f2262a19ad50d9b1ac92d081705e809cec5f7fd820",
+      "concerns": {
+        "uncertainty": "Low; audio is clear with minimal background interference."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-evidence-before-order-en",
+      "kind": "critical",
+      "source_sha256": "1e8827d07de033c6a62005905bf01f3ec97412aaa38f1563e327d4bdcade42d0",
+      "excerpt_sha256": "61826d626ef213a0112c062d3510e57aa3376791a9e17f4f0520411a3a556cb7",
+      "response_sha256": "425d4ee1996aff8041734f53bc34571f5089d3dcf90107fcfdde061f41ad1a1b",
+      "concerns": {
+        "uncertainty": "Slight ambiguity between 'A copies' and 'eight copies' at 00:01-00:02 due to prosodic phrasing, though 'A copies' aligns best contextually."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-evidence-before-order-en",
+      "kind": "ending",
+      "source_sha256": "1e8827d07de033c6a62005905bf01f3ec97412aaa38f1563e327d4bdcade42d0",
+      "excerpt_sha256": "aaededd673f5def587e67325a9a192460552d82d39902fccb2945618c9be7342",
+      "response_sha256": "213b4016aa15e2ec4b3e82ad6d943eb0ae0ba40f52f65eb16385a6b8e5b6781d",
+      "concerns": {
+        "uncertainty": {
+          "level": "low",
+          "details": "Audio quality is high with no ambiguous lexical boundaries."
+        }
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-inventory-en",
+      "kind": "name",
+      "source_sha256": "084e9e5d453c03dbe255ef27e638a5dd00affefcb3db65afe8e008d2b0e29d58",
+      "excerpt_sha256": "7d228c95cb3d861e2e8e3dc1386bd8baf401e7cebdea16191642faab3bd9b787",
+      "response_sha256": "539513f5779ef8d29a69e2f14d1b62605aa156aa2ccf0564090d8d57824a4973",
+      "concerns": {
+        "uncertainty": "Low"
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-inventory-en",
+      "kind": "body",
+      "source_sha256": "084e9e5d453c03dbe255ef27e638a5dd00affefcb3db65afe8e008d2b0e29d58",
+      "excerpt_sha256": "a27967eb8c43eca5b6e4957edf09f4bb622bbe8aec786c24d275c683304e30b0",
+      "response_sha256": "d104c81a24bde82033300c5a6e0c45ee4e7981429e679c5427ead07620bcb9b2",
+      "concerns": {
+        "uncertainty": "Low; acoustic stream is clear and unambiguous."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-inventory-en",
+      "kind": "critical",
+      "source_sha256": "084e9e5d453c03dbe255ef27e638a5dd00affefcb3db65afe8e008d2b0e29d58",
+      "excerpt_sha256": "464f2680d2587cd445afec58d3724921ec48d6d90b16ca8c823f180ce33e5069",
+      "response_sha256": "a00988a5d21a685e5fd96ef0107b70fc437415afbee44325470288797790c107",
+      "concerns": {
+        "uncertainty": "Low; audio is clear with minimal background noise and clear word boundaries."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-inventory-en",
+      "kind": "ending",
+      "source_sha256": "084e9e5d453c03dbe255ef27e638a5dd00affefcb3db65afe8e008d2b0e29d58",
+      "excerpt_sha256": "a9c97e13308246bc70e1782b4ef74dc4ac30468ea26e6462c95789c719a45e9f",
+      "response_sha256": "0eed2a19475e3e7f5dcfb66daead67aedbfa206b4f81abdbc4c44967382a5d3b",
+      "concerns": {
+        "uncertainty": "Low; all phrases and acoustic attributes are clearly rendered."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-practice-en",
+      "kind": "name",
+      "source_sha256": "22e51c8398449daf06d6266a6737616ced582b96e7ee60a41d6975aedf2e2429",
+      "excerpt_sha256": "066ad723db3ab8434d7f4b7451502b5e494fb13b92c6e566898f59822806fd88",
+      "response_sha256": "ce29145eeb416a1d6f152a079af2415a7b6db0644ddbb00e1c68a548605128bb",
+      "concerns": {
+        "uncertainty": {
+          "timestamps": {
+            "speech_start": "00:00.08",
+            "speech_end": "00:03.15"
+          },
+          "confidence_score": 3,
+          "notes": "Low transcription uncertainty; phonetic realization matches typical neutral pedagogical speech."
+        }
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-practice-en",
+      "kind": "body",
+      "source_sha256": "22e51c8398449daf06d6266a6737616ced582b96e7ee60a41d6975aedf2e2429",
+      "excerpt_sha256": "bc8e0cd1d020237ae37a1679cde4ce4c236d49d34bf0f6597d0d02ad780adb7a",
+      "response_sha256": "beecd1fb43d7e3e843a93b6bff8a79c6a267d2f7e5631f0c5f4e16aa77c67f31",
+      "concerns": {
+        "uncertainty": "Low; audio quality and diction are unambiguous."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-practice-en",
+      "kind": "critical",
+      "source_sha256": "22e51c8398449daf06d6266a6737616ced582b96e7ee60a41d6975aedf2e2429",
+      "excerpt_sha256": "809d846174700179dd7bc5fc08058339078e28efa4fa7d37bb9dcc9fb5b8eea7",
+      "response_sha256": "3838a200a36b0a41c57216c8a29dada8853f4fc2feb4918ca1538096b83a4fa0",
+      "concerns": {
+        "uncertainty": "Low; audio is clear with minimal background noise or ambiguity."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-practice-en",
+      "kind": "ending",
+      "source_sha256": "22e51c8398449daf06d6266a6737616ced582b96e7ee60a41d6975aedf2e2429",
+      "excerpt_sha256": "ba0d6581df20eea5a24dafd2e74e0b7e5bd35d6c9c10094473246c7af4b69576",
+      "response_sha256": "ee22421c71970047e12f632efc729bf3c92c6c6b4a3091d52ad6e978936fdaa5",
+      "concerns": {
+        "uncertainty": "Low; audio is clear with minimal ambient noise."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-seven-s-en",
+      "kind": "name",
+      "source_sha256": "a8b0ed446aa557759e60eb8008d991f73c4804e988a65f9390d8ca8ca474ae18",
+      "excerpt_sha256": "f796834ef8cef273d9eb67a995b265982f0d352d9f0e6560e03ee2e689e161af",
+      "response_sha256": "3bca954f88994a348e897b6d96be41aafad3f6b4387d27c6eb3915eca47366d9",
+      "concerns": {
+        "uncertainty": "Low"
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-seven-s-en",
+      "kind": "body",
+      "source_sha256": "a8b0ed446aa557759e60eb8008d991f73c4804e988a65f9390d8ca8ca474ae18",
+      "excerpt_sha256": "26df45007f85df2c2694cd441e561ca8bae89686c000c0df907779b11957cdac",
+      "response_sha256": "0ceca65fd2cfb66dc8729df7cadda18def7e6b743484d10790b1303a1acb3faa",
+      "concerns": {
+        "uncertainty": {
+          "level": "low",
+          "details": "Audio quality is high and speech boundaries align well with punctuation pauses."
+        }
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-seven-s-en",
+      "kind": "critical",
+      "source_sha256": "a8b0ed446aa557759e60eb8008d991f73c4804e988a65f9390d8ca8ca474ae18",
+      "excerpt_sha256": "67adb4b88c8232bb3b8005b8e98035deee19ae2072b4d35f62344574ec83bd03",
+      "response_sha256": "4a804a71769601801b5b7cc57d6ad2e4e673757d6ea4f5af4f15a3a4598bef90",
+      "concerns": {
+        "uncertainty": "Low"
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "read-seven-s-en",
+      "kind": "ending",
+      "source_sha256": "a8b0ed446aa557759e60eb8008d991f73c4804e988a65f9390d8ca8ca474ae18",
+      "excerpt_sha256": "0b55f692e414bc7f3ea9a3745be74ac9b3bbd620c425e1491ede6005dbf0d113",
+      "response_sha256": "7db95a4f9ec38499088cca27952f9affdd113e580e6a59f6e681a694b8b0f0bc",
+      "concerns": {
+        "possible_defects": [
+          {
+            "timestamp": "00:05.40 - 00:10.70",
+            "issue": "Voice change / acoustic mismatch",
+            "severity_score_1_to_5": 3,
+            "summary": "Noticeable shift in vocal timbre and microphone profile for the middle sentence."
+          }
+        ],
+        "uncertainty": "Low; all lexical items and speaker transitions are clear."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "shipped-story-en",
+      "kind": "name",
+      "source_sha256": "dde322d9930e6880f556c314c7ceb33945b9798b974846d0c525aa2a842fc3f2",
+      "excerpt_sha256": "989cc401346f0975bbd24cf16c897a42e41cc587cf514ee75e0e529d0850b15d",
+      "response_sha256": "54ad4d3179bcac7edcb26dcf987f6969882d0399b768f1479b76061c66799a81",
+      "concerns": {
+        "uncertainty": "Low; clear studio-quality recording with unambiguous speech segments."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "shipped-story-en",
+      "kind": "body",
+      "source_sha256": "dde322d9930e6880f556c314c7ceb33945b9798b974846d0c525aa2a842fc3f2",
+      "excerpt_sha256": "989cc401346f0975bbd24cf16c897a42e41cc587cf514ee75e0e529d0850b15d",
+      "response_sha256": "9201bed41f10ccdc2fc4502a32461ca198e1dc83eea4d8a2e2006096c9bef039",
+      "concerns": {
+        "possible_defects": {
+          "pronunciation_defect": false,
+          "negation_defect": false,
+          "truncation_defect": false,
+          "quality_rating_1_to_5": 3,
+          "notes": "Clear articulation and balanced cadence with no substantial acoustic flaws."
+        },
+        "uncertainty": {
+          "transcript_confidence": 0.7,
+          "notes": "Low ambiguity; acronym 'BHS' and proper noun 'Charlaine' are distinct."
+        }
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "shipped-story-en",
+      "kind": "critical",
+      "source_sha256": "dde322d9930e6880f556c314c7ceb33945b9798b974846d0c525aa2a842fc3f2",
+      "excerpt_sha256": "df0bf1da49aa2ff2be934125ee4d1407f2584a9ffe9f61c9da6118d33110bd18",
+      "response_sha256": "9693be59a90482abfa47ceb8fbb67b5de8e7fdd258ba2626bdff0821dbdadb6b",
+      "concerns": {
+        "possible_defects": [
+          {
+            "timestamp": "00:09 - 00:10",
+            "type": "voice_transition",
+            "description": "Noticeable speaker voice change from male-sounding to female-sounding timbre."
+          }
+        ],
+        "uncertainty": "Low; content and speech boundaries are well defined."
+      },
+      "provider_failure": null
+    },
+    {
+      "report": "docs/lesson-191-audio-focus.json",
+      "record": "shipped-story-en",
+      "kind": "ending",
+      "source_sha256": "dde322d9930e6880f556c314c7ceb33945b9798b974846d0c525aa2a842fc3f2",
+      "excerpt_sha256": "cd8d3aec5045351c46ba746257e3661c03fc6b6f82ee94e7cc6ec28edc1f408c",
+      "response_sha256": "507cfa0c55d5457c3f4a823c23a3ddf42f2a0d783d68ce76a58fc988689bb374",
+      "concerns": {
+        "possible_defects": [
+          {
+            "timestamp": "00:10 - 00:12",
+            "type": "timbre_shift",
+            "description": "Mild shift in vocal quality and acoustic presence between the two distinct instructional sections."
+          }
+        ],
+        "uncertainty": "Low; all speech elements are audible and transcript certainty is high."
+      },
+      "provider_failure": null
+    }
+  ]
+}

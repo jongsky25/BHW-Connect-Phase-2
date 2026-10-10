@@ -1,0 +1,169 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "approved_at": "2026-10-10",
+  "lesson_keys": [
+    "resources-audit"
+  ],
+  "reviewed_head": "a69040ea90a2be4e7f53534155c7ec8082cf7470",
+  "reviewed_package_sha256": "1586afb4c0b7c7cda681a0176290eff2accd6de88c0f4e1b83b2b1b358409440",
+  "reviewed_package_bytes": 292388609,
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"resources-audit\",\n    \"position\": 0,\n    \"title_fil\": \"Saan nasasayang ang resources?\",\n    \"title_en\": \"Where are resources wasted?\",\n    \"objectives_fil\": [\n      \"Sa halimbawang BHS, itala ang tatlong pag-aaksaya, ang ebidensya at isang ligtas na routine na makababawas sa paghahanap o dobleng pag-order.\"\n    ],\n    \"objectives_en\": [\n      \"In a sample BHS, record three sources of waste, their evidence and a safe routine that reduces searching or duplicate ordering.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"elena\",\n      \"concept_ids\": [\n        \"m9.competency\",\n        \"m9.resources\"\n      ],\n      \"asset_ids\": [\n        \"audit-elena\"\n      ],\n      \"takeaway_fil\": \"Tukuyin muna ang nasasayang na resources bago pumili ng pagtitipid.\",\n      \"takeaway_en\": \"Identify wasted resources before choosing a saving measure.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"inventory\",\n      \"concept_ids\": [\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [\n        \"audit-inventory\"\n      ],\n      \"takeaway_fil\": \"Ang maayos na imbakan ay tumutulong sa ligtas na paggamit at tumpak na paghingi ng resources.\",\n      \"takeaway_en\": \"Orderly storage supports safe use and accurate resource requests.\",\n      \"check\": {\n        \"prompt_fil\": \"May apat na lumang handout at walang kasalukuyang bersyon sa kit. Ano ang ligtas na susunod na hakbang?\",\n        \"prompt_en\": \"The kit has four outdated handouts and no current version. What is the safe next step?\",\n        \"options\": [\n          {\n            \"fil\": \"Ipamahagi ang luma para hindi masayang.\",\n            \"en\": \"Distribute the old copies so they are not wasted.\"\n          },\n          {\n            \"fil\": \"Palitan ang label at ituring na aprubado ang luma.\",\n            \"en\": \"Relabel the old copies as approved.\"\n          },\n          {\n            \"fil\": \"Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya.\",\n            \"en\": \"Set aside the old copies, verify the approved master and request current copies.\"\n          }\n        ],\n        \"correct_option_index\": 2,\n        \"feedback_fil\": \"1. Hindi ligtas: maaaring maling impormasyon ang maipamahagi kapag ginamit ang luma. 2. Hindi sapat ang pagpapalit ng label; hindi nito ginagawang aprubado ang materyal. 3. Tama: ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng current copies. Sa kathang-isip na correction, ibinukod ni Charlaine ang apat na luma at humingi ng kumpirmasyon sa supervisor. Wala pang current sa kit; iniulat ang pangangailangan, hindi sinabing may dumating na.\",\n        \"feedback_en\": \"1. Unsafe: distributing outdated copies may spread incorrect information. 2. Changing a label does not approve the material. 3. Correct: set aside old copies, verify the approved master and request current copies. In the fictional correction, Charlaine separates the four outdated copies and asks the supervisor for confirmation. The kit still has no current version; the need is reported without claiming delivery.\"\n      }\n    },\n    {\n      \"id\": \"seven-s\",\n      \"concept_ids\": [\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [\n        \"audit-seven-s\"\n      ],\n      \"takeaway_fil\": \"Ang kaayusan ay pinananatili ng simpleng routine at pananagutan.\",\n      \"takeaway_en\": \"A simple routine and clear responsibility sustain order.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"evidence-before-order\",\n      \"concept_ids\": [\n        \"m9.resources\",\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [\n        \"audit-evidence-before-order\"\n      ],\n      \"takeaway_fil\": \"Iulat ang verified gap; huwag ipalagay na naayos na ang kakulangan.\",\n      \"takeaway_en\": \"Report the verified gap; do not assume the shortage has been resolved.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m9.competency\",\n        \"m9.resources\",\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [\n        \"audit-practice\"\n      ],\n      \"takeaway_fil\": \"Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.\",\n      \"takeaway_en\": \"Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m9.competency\",\n        \"m9.resources\",\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [\n        \"audit-check\"\n      ],\n      \"takeaway_fil\": \"Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.\",\n      \"takeaway_en\": \"Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.\",\n      \"check\": {\n        \"prompt_fil\": \"Hindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?\",\n        \"prompt_en\": \"Handouts cannot be found, so someone wants to reorder. What first?\",\n        \"options\": [\n          {\n            \"fil\": \"Mag-order agad ng doble para sigurado.\",\n            \"en\": \"Order twice as many immediately.\"\n          },\n          {\n            \"fil\": \"Suriin ang labeled storage, approved version at bilang ng stock.\",\n            \"en\": \"Check labeled storage, approved version and stock count.\"\n          },\n          {\n            \"fil\": \"Gamitin ang anumang lumang handout na makita.\",\n            \"en\": \"Use any old handout that can be found.\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"1. Hindi sapat ang dobleng order sa hula; maaaring may usable stock na hindi lang makita. 2. Tama: suriin ang labeled storage, approved version at usable stock count bago humingi ng dagdag. 3. Hindi ligtas ang anumang lumang handout; dapat tama at aprubado ang bersyon. Sa kathang-isip na ending, nahanap ni Charlaine ang imbakan, kinumpirma ang master at binilang ang usable copies. Ipinakita niya ang label–count–return sa dummy kit at iniulat ang natitirang tunay na kakulangan sa supervisor. May audit at demonstrasyon; hindi pa naayos ang shortage at walang napatunayang financial savings.\",\n        \"feedback_en\": \"1. Guessing a double order is insufficient; usable stock may simply be misplaced. 2. Correct: check labeled storage, approved version and usable stock count before requesting more. 3. Any old handout is unsafe; the version must be correct and approved. In the fictional ending, Charlaine finds storage, confirms the master and counts usable copies. She demonstrates label–count–return with the dummy kit and reports the remaining genuine shortage to the supervisor. An audit and demonstration are complete; the shortage remains unresolved and financial savings are unproven.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m9.competency\",\n      \"read_ids\": [\n        \"elena\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-elena\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    },\n    {\n      \"id\": \"m9.resources\",\n      \"read_ids\": [\n        \"elena\",\n        \"evidence-before-order\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-elena\",\n        \"slide-evidence-before-order\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    },\n    {\n      \"id\": \"m9.organize\",\n      \"read_ids\": [\n        \"inventory\",\n        \"seven-s\",\n        \"evidence-before-order\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-inventory\",\n        \"slide-seven-s\",\n        \"slide-evidence-before-order\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        19,\n        22,\n        34\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        14,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"tesda-400311217\",\n      \"title\": \"TESDA BHS NC II Revision 01 (2019), unit 400311217\",\n      \"pdf_pages\": [\n        33,\n        34,\n        35\n      ],\n      \"url\": \"https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"resource-audit\",\n      \"path\": \"/training/module-1-9/audit-ee0994eebb38.svg\",\n      \"content_hash\": \"ee0994eebb381693311969420c61c13008e10658d13ba7a005e10df3082f7d9f\",\n      \"alt_fil\": \"Tatlong hakbang sa resource audit: obserbahan ang pag-aaksaya, suriin ang ebidensya, at pumili ng ligtas na hakbang.\",\n      \"alt_en\": \"Three resource-audit steps: observe waste, check evidence, and choose a safe action.\",\n      \"caption_fil\": \"Suriin ang ebidensya bago magbago ng routine.\",\n      \"caption_en\": \"Check evidence before changing a routine.\",\n      \"provenance\": \"Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.\",\n      \"review_status\": \"approved\"\n    },\n    {\n      \"id\": \"audit-elena\",\n      \"path\": \"/training/bhw-1-9/charlaine-audit-elena-827200d5a541.png\",\n      \"content_hash\": \"827200d5a54131f870b0b88d1339baadb782f6af01f4e9df2cff8077527d8356\",\n      \"alt_fil\": \"Si Charlaine ay nagtatala ng tagas, printouts at misplaced supplies.\",\n      \"alt_en\": \"Charlaine records a leak, printouts and misplaced supplies.\",\n      \"caption_fil\": \"Kathang-isip na practice; nasa teksto ang facts at desisyon.\",\n      \"caption_en\": \"Fictional practice; facts and decisions are in the text.\",\n      \"provenance\": \"Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"audit-inventory\",\n      \"path\": \"/training/bhw-1-9/charlaine-audit-inventory-ce95f730fd2f.png\",\n      \"content_hash\": \"ce95f730fd2fdddb7414e8ea0db082ea7608fa9e8227f5069705aef151461fe6\",\n      \"alt_fil\": \"Si Charlaine at katrabaho ay tumitingin sa lumang handouts at kit bago pumili.\",\n      \"alt_en\": \"Charlaine and a colleague inspect outdated handouts and a kit before choosing.\",\n      \"caption_fil\": \"Kathang-isip na practice; nasa teksto ang facts at desisyon.\",\n      \"caption_en\": \"Fictional practice; facts and decisions are in the text.\",\n      \"provenance\": \"Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"audit-seven-s\",\n      \"path\": \"/training/bhw-1-9/charlaine-audit-seven-s-9b59a4cd02d3.png\",\n      \"content_hash\": \"9b59a4cd02d3d1ac18a16c5b27c18a8361503b0fcf1e2aab631a58da7e53f9e9\",\n      \"alt_fil\": \"Si Charlaine ay nagbabalik ng reusable paper cards; tumitingin ang katrabaho sa checklist.\",\n      \"alt_en\": \"Charlaine returns reusable paper cards as a colleague watches the checklist.\",\n      \"caption_fil\": \"Kathang-isip na practice; nasa teksto ang facts at desisyon.\",\n      \"caption_en\": \"Fictional practice; facts and decisions are in the text.\",\n      \"provenance\": \"Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"audit-evidence-before-order\",\n      \"path\": \"/training/bhw-1-9/charlaine-audit-evidence-before-order-bd485cd2b439.png\",\n      \"content_hash\": \"bd485cd2b439e3f35e5e87b1849a4b8b440589ccaf53aa22e897ef957da88dda\",\n      \"alt_fil\": \"Si Charlaine ay naghihiwalay ng observed, verified at unknown fields sa papel.\",\n      \"alt_en\": \"Charlaine separates observed, verified and unknown fields on paper.\",\n      \"caption_fil\": \"Kathang-isip na practice; nasa teksto ang facts at desisyon.\",\n      \"caption_en\": \"Fictional practice; facts and decisions are in the text.\",\n      \"provenance\": \"Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"audit-practice\",\n      \"path\": \"/training/bhw-1-9/charlaine-audit-practice-a09ea9c3d960.png\",\n      \"content_hash\": \"a09ea9c3d960b00f6c8df6704c87a42141945e1ed074f5205733a799b6c2ebd9\",\n      \"alt_fil\": \"Si Charlaine ay nagbibilang at nagbabalik ng blank paper cards; may feedback at trainer observation.\",\n      \"alt_en\": \"Charlaine counts and returns blank paper cards with feedback and trainer observation.\",\n      \"caption_fil\": \"Kathang-isip na practice; nasa teksto ang facts at desisyon.\",\n      \"caption_en\": \"Fictional practice; facts and decisions are in the text.\",\n      \"provenance\": \"Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"audit-check\",\n      \"path\": \"/training/bhw-1-9/charlaine-audit-check-4a7dc50aea44.png\",\n      \"content_hash\": \"4a7dc50aea4446e317c4b10405f830a55344f9d25cb6ff43554c1435f1f991ee\",\n      \"alt_fil\": \"Si Charlaine at katrabaho ay nakaharap sa hindi maayos na imbakan bago magdesisyon.\",\n      \"alt_en\": \"Charlaine and a colleague face disorganized storage before deciding.\",\n      \"caption_fil\": \"Kathang-isip na practice; nasa teksto ang facts at desisyon.\",\n      \"caption_en\": \"Fictional practice; facts and decisions are in the text.\",\n      \"provenance\": \"Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"resources-audit-story\",\n      \"alt_fil\": \"Anim na beat: resource audit ni Charlaine at dummy label-count-return; natitirang shortage iniulat.\",\n      \"alt_en\": \"Six beats: Charlaine audits waste and demonstrates dummy label-count-return; remaining shortage reported.\",\n      \"caption_fil\": \"Kathang-isip na audit at demo; shortage hindi pa resolved, savings hindi proven.\",\n      \"caption_en\": \"Fictional audit and demo; shortage unresolved, savings unproven.\",\n      \"provenance\": \"Six built-in imagegen actions using the coordinated Charlaine reference; Gemini Kore narration, measured encoded samples; draft pending owner, facility and human-listening review.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-9/resources-audit-gemini-fil-55440c66d6ad.mp4\",\n          \"content_hash\": \"55440c66d6ade2b1690633a302c578f1a4928aea266e885f3417fc70796a5f62\",\n          \"duration_s\": 63,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-9/resources-audit-final-frame-fil-dbc84bc64533.jpg\",\n            \"content_hash\": \"dbc84bc645335569eed452c3820db46b3a7835e629b21d7707c2c7f15b37a971\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-9/resources-audit-gemini-fil-bc8d36c09efd.vtt\",\n            \"content_hash\": \"bc8d36c09efd00603b7bafbbe6af4953860a8d65c168d493f7494710f53f07d5\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-9/resources-audit-gemini-en-dde322d9930e.mp4\",\n          \"content_hash\": \"dde322d9930e6880f556c314c7ceb33945b9798b974846d0c525aa2a842fc3f2\",\n          \"duration_s\": 66,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-9/resources-audit-final-frame-en-ee752de1eb18.jpg\",\n            \"content_hash\": \"ee752de1eb186ccc4a10a599389de2b39ee15c40eb5ebc91ba320ff7db0255c1\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-9/resources-audit-gemini-en-4d9f286c056c.vtt\",\n            \"content_hash\": \"4d9f286c056c3147defb7f1393d4b82c5987c8a5def80ecf61e17ccd48f49007\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-9/resources-audit-final-frame-fil-dbc84bc64533.jpg\",\n      \"content_hash\": \"dbc84bc645335569eed452c3820db46b3a7835e629b21d7707c2c7f15b37a971\"\n    }\n  ],\n  \"featured_asset_id\": \"resources-audit-story\"\n}\n",
+  "reviewed_lesson_sha256": "fe5161653532aa1a4412846376bcb89d265aac130656e58c0d01cb9d32382b85",
+  "approved_lesson_sha256": "9db9257a991da280c4d51c69332aa4e3afbfbb6ce6ccba0614a7e5524c42aed5",
+  "promoted_asset_ids": [
+    "audit-elena",
+    "audit-inventory",
+    "audit-seven-s",
+    "audit-evidence-before-order",
+    "audit-practice",
+    "audit-check",
+    "resources-audit-story"
+  ],
+  "integrated_main": "7f366e87282f7fdbc8f57037a4d7685a02ae3198",
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json": "9db9257a991da280c4d51c69332aa4e3afbfbb6ce6ccba0614a7e5524c42aed5",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.fil.md": "30d9b410f55cf16d84dbdb8ae0b33130456b6efb6869d5440939882b75b37537",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.en.md": "1e4ade78de68fd60f3ac76736b620b4f6bbafe787e0706735f598868cbb985b6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/slides.json": "fe8457159a4bef42999eb4699a6ab4f7ef2385d4e47495c710d7e4c4dec146e9",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/competency.json": "9c1103a938c191ad10f5987c5babff05c2dc41a769bb2603734e9d46c89d5f11",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.fil.md": "63f10cb6b7026be94b16498a061feb8aec0bc771caeda23c876e95840773f80e",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.en.md": "d48795809fc08204f4f47d0d8e709feb7247feffa88e91f23c2b99d4263a6789",
+    "content/training/day1-basic-competencies/narration.json": "7908af9bda8b7d4ace5000e4c414143c76857ba21a9bd8575303c6263e496c1e",
+    "src/components/elearning/reference-lessons.tsx": "d3cffbfa361dd70e8d8ed66a9b5b93b6dc67e2359537766574a9ce675d7287e8",
+    "remotion/src/Root.tsx": "8465040d149364c778314085504352881696359f45853aa11bc4900e84f722b5",
+    "scripts/lib/lesson-191-integration.mjs": "62c058a633617f6644acf428861a2386837c6b688f1f73a1a4ef6e2e421bf976",
+    "scripts/lib/lesson-192-integration.mjs": "9d3934684056b6ad3232ba4b18bb4c8e64b5bae38f766b575977139a662f0992",
+    "scripts/tests/lesson-192-release.test.mjs": "16d45a32d39f2c3222b653310b0c8910f0824cc4d8ec6bc1a54220d510588a7d",
+    "docs/lesson-191-proposal-receipt.json": "79024024d6384ee9404f19dd68e606e1ea5448c94753103f55995b636b46b2c5",
+    ".github/workflows/lesson191-release.yml": "ad2fe75a4be7d04e29e2a10a0c3f730abfe9769e389b42666d2e7abd625cb847",
+    "scripts/lesson-191-release-check.mjs": "b8284d57f8d8d43bbbc99358250ca6b52d0260c15d15e4bef7877bb2e3e627bf",
+    "scripts/lesson-191-release-snapshot.mjs": "ab3e267be9e92fa45e5a59dab3dcd8f9af4279559230a12d86bc81949d21f485",
+    "scripts/lesson-191-live-smoke.mjs": "61d0885b011bd4cea81b3da246bce0cce1b1c9be9715ceb546c785cd3ed7882f"
+  },
+  "approved_media": [
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/check.en.c078bffeb9c1.mp3",
+      "sha256": "221595e7ce616dd19c806d4cb85228b05d29d8ebea6b0eb7daee18720e18c706",
+      "bytes": 279092
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/check.fil.349eba5400dd.mp3",
+      "sha256": "7305a0e4886586df86f9536fd64724a46f96becdf48af2240be1d6b0dd1236d2",
+      "bytes": 287347
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/elena.en.2471fe932e47.mp3",
+      "sha256": "1e61cf34d4a3bb2004d90816318808d77f89d9cfe1a5ed1932ad23b191ba2960",
+      "bytes": 363729
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/elena.fil.8c92626f27be.mp3",
+      "sha256": "700e48a999a84ac6e856b86627e5950c7f17f82eadac248a888af942d6530f90",
+      "bytes": 377417
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/evidence-before-order.en.5a2140a21021.mp3",
+      "sha256": "1e8827d07de033c6a62005905bf01f3ec97412aaa38f1563e327d4bdcade42d0",
+      "bytes": 377522
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/evidence-before-order.fil.eece1ccc65f5.mp3",
+      "sha256": "5c6d31eb8a9f6c709411c5e8d471627c92d09741b2e9a1821cee4695966e7f4f",
+      "bytes": 405734
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/inventory.en.937f8abf9839.mp3",
+      "sha256": "084e9e5d453c03dbe255ef27e638a5dd00affefcb3db65afe8e008d2b0e29d58",
+      "bytes": 359340
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/inventory.fil.f0b52ad6b442.mp3",
+      "sha256": "9b61ddee65a6dc62908bf799ff6f3196039fce773df57728efa7fc3462258e74",
+      "bytes": 384836
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/practice.en.e933be0b8917.mp3",
+      "sha256": "22e51c8398449daf06d6266a6737616ced582b96e7ee60a41d6975aedf2e2429",
+      "bytes": 478668
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/practice.fil.ff9f741d4c63.mp3",
+      "sha256": "a7d9bc7a8565b28df494e6d1df7478883c505fcc261d53c79c789c377a3f8c69",
+      "bytes": 508761
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/seven-s.en.c7cd75f0f9c4.mp3",
+      "sha256": "a8b0ed446aa557759e60eb8008d991f73c4804e988a65f9390d8ca8ca474ae18",
+      "bytes": 403540
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-audit/seven-s.fil.f11310e460f2.mp3",
+      "sha256": "3b45c6658105393b8fc57df7b7c997f3a8742dfbfe21a29a13807e3b3487eeeb",
+      "bytes": 417646
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-check-4a7dc50aea44.png",
+      "sha256": "4a7dc50aea4446e317c4b10405f830a55344f9d25cb6ff43554c1435f1f991ee",
+      "bytes": 2652099
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-elena-827200d5a541.png",
+      "sha256": "827200d5a54131f870b0b88d1339baadb782f6af01f4e9df2cff8077527d8356",
+      "bytes": 2507521
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-evidence-before-order-bd485cd2b439.png",
+      "sha256": "bd485cd2b439e3f35e5e87b1849a4b8b440589ccaf53aa22e897ef957da88dda",
+      "bytes": 2436550
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-inventory-ce95f730fd2f.png",
+      "sha256": "ce95f730fd2fdddb7414e8ea0db082ea7608fa9e8227f5069705aef151461fe6",
+      "bytes": 2383288
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-practice-a09ea9c3d960.png",
+      "sha256": "a09ea9c3d960b00f6c8df6704c87a42141945e1ed074f5205733a799b6c2ebd9",
+      "bytes": 2414389
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-seven-s-9b59a4cd02d3.png",
+      "sha256": "9b59a4cd02d3d1ac18a16c5b27c18a8361503b0fcf1e2aab631a58da7e53f9e9",
+      "bytes": 2378532
+    },
+    {
+      "path": "/training/bhw-1-9/resources-audit-final-frame-en-ee752de1eb18.jpg",
+      "sha256": "ee752de1eb186ccc4a10a599389de2b39ee15c40eb5ebc91ba320ff7db0255c1",
+      "bytes": 63195
+    },
+    {
+      "path": "/training/bhw-1-9/resources-audit-final-frame-fil-dbc84bc64533.jpg",
+      "sha256": "dbc84bc645335569eed452c3820db46b3a7835e629b21d7707c2c7f15b37a971",
+      "bytes": 62880
+    },
+    {
+      "path": "/training/bhw-1-9/resources-audit-gemini-en-4d9f286c056c.vtt",
+      "sha256": "4d9f286c056c3147defb7f1393d4b82c5987c8a5def80ecf61e17ccd48f49007",
+      "bytes": 1017
+    },
+    {
+      "path": "/training/bhw-1-9/resources-audit-gemini-en-dde322d9930e.mp4",
+      "sha256": "dde322d9930e6880f556c314c7ceb33945b9798b974846d0c525aa2a842fc3f2",
+      "bytes": 1087905
+    },
+    {
+      "path": "/training/bhw-1-9/resources-audit-gemini-fil-55440c66d6ad.mp4",
+      "sha256": "55440c66d6ade2b1690633a302c578f1a4928aea266e885f3417fc70796a5f62",
+      "bytes": 1062033
+    },
+    {
+      "path": "/training/bhw-1-9/resources-audit-gemini-fil-bc8d36c09efd.vtt",
+      "sha256": "bc8d36c09efd00603b7bafbbe6af4953860a8d65c168d493f7494710f53f07d5",
+      "bytes": 986
+    }
+  ],
+  "known_CI_exception": "Exactly twelve unchanged problem-prioritize narration freshness failures disclosed in the owner-reviewed package; global test stays active and all other tests must pass.",
+  "human_listening": "Owner approved release; no claim of independent human listening.",
+  "facility_review": "Owner approved release; primary DOH HTTP403 and local facility/IP review gap remain documented.",
+  "promotion": "Only seven draft asset review_status fields promoted. Reviewed teaching, images, speech, videos, posters and captions are byte-identical. Shared source integrates released lesson 1.9.2; its teaching and media unchanged."
+}

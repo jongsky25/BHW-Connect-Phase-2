@@ -1,4 +1,5 @@
 import {beforeLesson193} from '../lib/lesson-193-integration.mjs';
+import {beforeLesson191} from '../lib/lesson-191-integration.mjs';
 // @vitest-environment node
 import fs from 'node:fs';import {createHash} from 'node:crypto';import {it,expect} from 'vitest';
 import {reviewed192View} from '../lib/lesson-192-release-integration.mjs';
@@ -12,6 +13,6 @@ it('binds release to exact reviewed teaching and only seven approved asset flags
  const changed=JSON.parse(fs.readFileSync(p));changed.sections[0].id='changed';expect(()=>reviewed192View(p,Buffer.from(JSON.stringify(changed)))).toThrow('Unpinned');
 });
 it('retains all approved source and twenty-four selected media hashes',()=>{
- for(const[p,h]of Object.entries(a.approved_source_sha256))expect(sha(beforeLesson193(p)),p).toBe(h);
+ for(const[p,h]of Object.entries(a.approved_source_sha256))expect(sha(beforeLesson191(p,beforeLesson193(p))),p).toBe(h);
  expect(a.approved_media).toHaveLength(24);for(const m of a.approved_media){const b=fs.readFileSync('public'+m.path);expect(sha(b)).toBe(m.sha256);expect(b.length).toBe(m.bytes)}
 });

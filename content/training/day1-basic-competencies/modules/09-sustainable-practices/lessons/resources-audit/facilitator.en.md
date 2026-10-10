@@ -1,62 +1,47 @@
-## [purpose] Purpose
+## [purpose] purpose
 
-In a sample BHS, record three sources of waste, their evidence and a safe routine that reduces searching or duplicate ordering.
+Purpose: three audit rows with resource, observed waste, evidence and safe step; actual label–count–return. Charlaine and all practice inputs are fictional. Quiz answers, attendance or video viewing do not establish a pass.
 
-## [time-materials] Time and materials
+## [time-materials] time-materials
 
-60 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.
+60 minutes: 5 opening + 10 modelling + 25 practice/feedback/retry + 12 audit debrief + 8 transfer. Three lessons total 60 + 60 + 60 = 180. Self-study/audio is separate. Prepare bilingual A4 cards, dummy paper kit, labels, masters A/B, usable-count sheet and observation record. No real medicine, patient records, utility work or clinical cleaning.
 
-## [prepare] Prepare
+## [prepare] prepare
 
-Prepare a fictional kit, stock count and two handout versions. Identify the approved version.
+Print five practice sheets. For 30 learners form ten triads T1–T10, each with A/B/C. Round 1 BHW/colleague/observer = A/B/C; round 2 B/C/A; round 3 C/A/B. The supervisor confirmation of master B is only a practice card. Confirm actual local inventory/reporting policy before transfer; the card is not local authorization.
 
-## [opening] Opening
+## [opening] opening
 
-Handouts cannot be found, so someone wants to reorder. What first?
+0–5: Ask: “What did Charlaine observe? What remains unknown?” Show three waste cards. Expected: leak, wrong version, misplaced materials; no invented bill, volume, savings or budget shortage. Repeat the boundary: report the leak; no repair or critical shutdown.
 
-## [steps] Steps
+## [steps] steps
 
-Read the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.
+5–15: Model one audit row and label–count–return. Point out storage, compare with dummy master B, count three B copies; separate four A. State six needed, three usable and gap three. Return reusable paper cards; record responsible role and next check. Show inventory quiz without its answer; reveal all rationales after responding. 15–40: practice below. 40–52: audit debrief—compare three rows, verified/unknown fields and rejected unsafe steps. 52–60: each learner plans one supervisor discussion and another observation opportunity; promise no savings.
 
-## [expected-answers] Expected answers
+## [expected-answers] expected-answers
 
-For the inventory check, set aside outdated handouts, verify the approved master and request current copies. Relabeling or distributing an old version would sacrifice correct information.
+Leak: water; visible drops; volume/bill unknown; supervisor report. Wrong-version printouts: paper, energy and time; dummy A vs confirmed B; separate/report/request B. Missing cards: time/possible duplicate order; absent from assigned slot; find–verify–count before requesting. Practice only: six needed, three usable B, four outdated A, gap three B; no delivery evidence. Return cards and assign owner/check.
 
-The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.
+## [misconception] misconception
 
-## [misconception] Common misconception
+“Use old copies to avoid waste”: incorrect; information must be correct. “A label proves approval”: confirmation is required. “Missing means zero stock”: unverified. “7S authorizes clinical reuse”: it does not. “A routine proves savings”: no measurement exists. Distinguish audit, authorization, trial outcome and certification.
 
-Orders from guesses or uses expired or incorrect material simply to save resources. Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.
+## [practice] practice
 
-## [practice] Practice activity
+15–40: three six-minute rounds (15–21, 21–27, 27–33), then seven-minute shared debrief (33–40). Each round: two setup, two attempt, one feedback, one retry. Observer asks: “Show the label, current master, usable count and return. What is unknown?” Weaker attempt: learner counts all seven as usable. Feedback: “Which are B? Four A copies are not usable.” Retry: separate A, count three B, report gap three and no delivery yet. Stop unsafe actions immediately, remove real materials and return to dummy practice; record not-yet evidence without a pass.
 
-Make an audit with resource, observed waste, evidence and a safe next step. Use Elena’s three examples; do not invent bills or quantities. Show a partner how labels and stock counts prevent duplicate orders. Alone, check a fictional teaching kit. At the next duty, observe one resource and discuss findings with the supervisor.
+## [answer-key] answer-key
 
-## [answer-key] Answer key
+Inventory: correct index 2 (third choice). 1 old copies may misinform; 2 relabeling does not approve; 3 separate, verify master, request current. Quiz kit still has four old copies and no current version. Reorder: correct index 1 (second choice). 1 guessed double order may waste; 2 verify labeled storage/version/count; 3 old handouts may be wrong. After every response read all lesson.json rationales and correction. Ending: Charlaine completes an audit and demo, reports a genuine gap; shortage unresolved, savings unproven.
 
-Inventory check: 3. Set aside the old copies, verify the approved master and request current copies.
+## [observe] observe
 
-2. Check labeled storage, approved version and stock count.
+Trainer sampling roster: round 1 T1/A (17–21), round 2 T2/B (23–27), round 3 T3/C (29–33). Only three four-minute observations fit; two minutes each round allow setup/movement. At least 27 remain not trainer-observed. Record actual steps, prompts, retry and rubric level; peer checks are not trainer signoff. Schedule follow-up observations for the remainder before performance decisions. Preserve one objective_index 0 indicator and all six bilingual levels; no attendance pass.
 
-The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.
+## [support] support
 
-## [observe] Observe
+Offer spoken or paper solo rehearsal using the same cards; it does not replace observed performance. Reading support: read fields/choices aloud, large print, language choice and extra processing time. Scaffold one row, point to master/usable pile, then fade prompts for retry. Record remaining prompts. Invent no pass rule.
 
-Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions.
+## [sources-review] sources-review
 
-Ready: Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions. Completes this without prompting.
-
-Needs practice: Identifies waste but gives no evidence or routine owner; complete the audit row and repeat.
-
-Not yet: Orders from guesses or uses expired or incorrect material simply to save resources.
-
-Mark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.
-
-## [support] Support
-
-Identifies waste but gives no evidence or routine owner; complete the audit row and repeat. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.
-
-## [sources-review] Sources and review notes
-
-Draft for review. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. This expands the ninth competency rather than a standalone manual chapter. The draft TESDA 400311217 crosswalk is in the review report; assessor review and local work procedures remain pending. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.
-
+Candidate sources: Facilitator Guide PDF 19 (printed 12), three-hour sustainable competency; PDF 22 (printed 15), different four-hour entrepreneurial competency; PDF 34 (printed 27), different ten-hour quality competency. Manual PDF 14 (printed 6), 30 (printed 19); TESDA unit 400311217 candidate PDF 33–35. 7S orders differ; preserve quotations. Deck ends with OSH 69–78 and has no distinct sustainable section. Consult source-audit status for actual original-PDF verification. Unnecessary-plastics policy does not authorize clinical reuse. Facility/infection-prevention review, human listening and owner approval remain separate pending states.
