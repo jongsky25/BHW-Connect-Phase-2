@@ -1,0 +1,21 @@
+# Lessons 1.9.1–1.9.3 — Charlaine continuity and execution agreement
+
+The owner requested three separate handoff PRs and specified **Charlaine (she/her), long hair, Asian with fair/white skin**. Use one fictional adult Asian BHW with long hair and fair skin across the three adaptations. No age, biography, location, real-person likeness, portrait or outfit was supplied. Do not carry over Elena’s age of 38, rename Apple’s existing portraits, or claim that a reference has already been generated or approved.
+
+| Lesson | Stable key | Teaching boundary | Facilitated practice |
+|---|---|---|---|
+| 1.9.1 | `resources-audit` | Observe waste, verify approved materials and demonstrate label/count/return routines | 60 min |
+| 1.9.2 | `resources-safe-change` | Choose a safe resource-saving change and explain rejected unsafe options | 60 min |
+| 1.9.3 | `resources-monitor` | Propose a trial, compare like workloads with quality, and hand over the routine | 60 min |
+
+60 + 60 + 60 = 180 minutes, the existing module allocation. Facilitator Guide PDF 19 maps sustainable workplace practices to three hours. PDF 22 discusses related entrepreneurial practice under a different four-hour competency; PDF 34 discusses quality and 7S under a different ten-hour common competency. Do not combine these hours or claim that watching the three stories grants TESDA certification.
+
+Each branch starts independently from main `a1a54d755cda8c609c3006843acc11abfba3437e` and contains only its own handoff/baseline plus this identical coordination document. Continue implementation in its existing draft PR; do not merge a handoff before authoring or stack the three branches. Integrate newly released main once near final review and verify exact preservation. Earlier approvals, including lesson 1.8.4, authorize only their named reviewed packages.
+
+1.9.1 owns creation of a new fictional Charlaine character sheet with the built-in image generator. Record prompt, output SHA-256, reference path and explicit review status in `docs/lesson-19-charlaine-reference.json`. Inspect the generated sheet before using it for scene edits. Pin long hair, fair skin, face and a consistent artistic outfit across all three lessons; any tie-back for a task is an explicit continuity choice. Do not invent an official uniform or clinically required outfit. Other executors may draft teaching while awaiting this sheet, but must coordinate one reference before generating final scenes. Put meaningful labels, quantities and decisions in accessible typeset HTML outside generated art.
+
+1.9.1 also owns only the Elena → Charlaine name substitution in `09-sustainable-practices/module.json`’s two summary fields. Preserve all other fields and legacy module teaching; sibling executors do not independently edit summaries. Each executor replaces Elena in its own new dialogue and removes the unsupported age 38. Saved identifiers `elena` / `slide-elena` in 1.9.1 remain unchanged. Preserve every original quiz prompt, all bilingual answer choices, correct indexes and concept anchors; write complete post-choice rationales and a fictional corrected ending without moving it before the answer.
+
+Each lesson must stand alone. Audit evidence does not establish savings; choosing a safe option does not establish team approval or successful implementation; a trial comparison does not establish financial savings, causation or certification. Keep water for hand hygiene, cold-chain/critical equipment, required ventilation, clinical single-use rules, urgent referral and correct accessible teaching protected. No real equipment switching, medicine handling, clinical reuse/cleaning experiment, patient records or unsafe utility work is part of practice. Facility/infection-prevention review is distinct from owner approval and human listening.
+
+This request authorizes handoff PRs. Future execution delivers the full reviewable draft and stops for its own owner approval; it does not inherit authorization to merge, deploy, publish, alter accounts, migrate schemas or change assessment flags. Model audio review, human listening, source audit, local procedure review and owner approval remain separate evidence states. Respect the loader-admin password-change gate; no account mutation or claim of authenticated preview without opening the actual lesson.

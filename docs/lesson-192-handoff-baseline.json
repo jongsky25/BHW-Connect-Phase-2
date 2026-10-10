@@ -1,0 +1,1092 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "a1a54d755cda8c609c3006843acc11abfba3437e",
+  "lesson_number": "1.9.2",
+  "lesson_key": "resources-safe-change",
+  "lesson_id": "98605646-c56d-4dec-b440-eb016c44e6cf",
+  "module_id": "586f0588-2776-42b0-be1c-bc88c4ef825f",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "character": {
+    "name": "Charlaine",
+    "pronouns": "she/her",
+    "appearance": "fictional adult Asian BHW; long hair; fair/white skin; no age supplied",
+    "reference_status": "not generated; 1.9.1 coordinates a new shared fictional reference"
+  },
+  "manifest": {
+    "lesson_key": "resources-safe-change",
+    "position": 1,
+    "title_fil": "Pumili ng ligtas na pagbabago",
+    "title_en": "Choose a safe change",
+    "objectives_fil": [
+      "Pumili ng resource-saving action na nagpapanatili ng infection prevention, critical equipment at napapanahong serbisyo, at ipaliwanag ang tinanggihang opsyon."
+    ],
+    "objectives_en": [
+      "Choose a resource-saving action that preserves infection prevention, critical equipment and timely services, and explain the rejected option."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "utilities",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings"
+      ]
+    },
+    {
+      "id": "materials",
+      "concept_ids": [
+        "m9.plastics",
+        "m9.safe-savings"
+      ]
+    },
+    {
+      "id": "workflow",
+      "concept_ids": [
+        "m9.productivity"
+      ]
+    },
+    {
+      "id": "worked-example",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings",
+        "m9.plastics",
+        "m9.productivity"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings",
+        "m9.plastics",
+        "m9.productivity"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings",
+        "m9.plastics",
+        "m9.productivity"
+      ]
+    }
+  ],
+  "slide_anchors": [
+    {
+      "id": "slide-utilities",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings"
+      ]
+    },
+    {
+      "id": "slide-materials",
+      "concept_ids": [
+        "m9.plastics",
+        "m9.safe-savings"
+      ]
+    },
+    {
+      "id": "slide-workflow",
+      "concept_ids": [
+        "m9.productivity"
+      ]
+    },
+    {
+      "id": "slide-worked-example",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings",
+        "m9.plastics",
+        "m9.productivity"
+      ]
+    },
+    {
+      "id": "slide-practice",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings",
+        "m9.plastics",
+        "m9.productivity"
+      ]
+    },
+    {
+      "id": "slide-check",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings",
+        "m9.plastics",
+        "m9.productivity"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m9.resources",
+      "read_ids": [
+        "utilities",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-utilities",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217",
+        "who-sustainability"
+      ]
+    },
+    {
+      "id": "m9.safe-savings",
+      "read_ids": [
+        "utilities",
+        "materials",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-utilities",
+        "slide-materials",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217",
+        "who-sustainability"
+      ]
+    },
+    {
+      "id": "m9.plastics",
+      "read_ids": [
+        "materials",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-materials",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217",
+        "who-sustainability"
+      ]
+    },
+    {
+      "id": "m9.productivity",
+      "read_ids": [
+        "workflow",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-workflow",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217",
+        "who-sustainability"
+      ]
+    }
+  ],
+  "original_checks": {
+    "utilities": {
+      "prompt_fil": "May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?",
+      "prompt_en": "The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?",
+      "options": [
+        {
+          "fil": "Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw at sundin ang facility procedure.",
+          "en": "Keep the refrigerator running; check unnecessary lights under facility procedure."
+        },
+        {
+          "fil": "Patayin ang refrigerator sa gabi.",
+          "en": "Switch the refrigerator off overnight."
+        },
+        {
+          "fil": "Patayin pati ang kinakailangang bentilasyon.",
+          "en": "Switch off required ventilation too."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang unang sagot ay tumutukoy sa hindi kailangang konsumo habang protektado ang cold chain. Ang pagpatay sa refrigerator o kinakailangang bentilasyon ay maaaring makasira sa ligtas na serbisyo.",
+      "feedback_en": "The first response targets unnecessary use while protecting the cold chain. Switching off the refrigerator or required ventilation can compromise safe service."
+    },
+    "check": {
+      "prompt_fil": "Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?",
+      "prompt_en": "The team wants to reduce paper in health teaching. Which proposal fits?",
+      "options": [
+        {
+          "fil": "Huwag nang magbigay ng kailangang instruction para mabawasan ang pahina.",
+          "en": "Omit needed instructions to reduce pages."
+        },
+        {
+          "fil": "Gamitin ang lumang bersyon hanggang maubos.",
+          "en": "Use the old version until it runs out."
+        },
+        {
+          "fil": "Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop.",
+          "en": "Check the approved version and use an approved reusable visual where suitable."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "Ang ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.",
+      "feedback_en": "The third response reduces rework while keeping information correct. Omitting essentials or using an old version can lower quality even when less paper is used."
+    }
+  },
+  "original_competency": {
+    "observation_indicators": [
+      {
+        "objective_index": 0,
+        "observable_fil": "Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon.",
+        "observable_en": "Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option.",
+        "not_yet_fil": "Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.",
+        "not_yet_en": "Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings.",
+        "levels": {
+          "kaya_na_fil": "Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon. Nagagawa kahit hindi pinapaalalahanan.",
+          "kaya_na_en": "Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option. Completes this without prompting.",
+          "kailangan_practice_fil": "Ligtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong tanong sa practice at ipaulit.",
+          "kailangan_practice_en": "Makes a safe choice but cannot explain the safeguard; use the three practice questions and repeat.",
+          "hindi_pa_fil": "Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.",
+          "hindi_pa_en": "Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings."
+        }
+      }
+    ]
+  },
+  "target_files_utf8": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/competency.json": "{\n  \"observation_indicators\": [\n    {\n      \"objective_index\": 0,\n      \"observable_fil\": \"Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon.\",\n      \"observable_en\": \"Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option.\",\n      \"not_yet_fil\": \"Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.\",\n      \"not_yet_en\": \"Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings.\",\n      \"levels\": {\n        \"kaya_na_fil\": \"Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon. Nagagawa kahit hindi pinapaalalahanan.\",\n        \"kaya_na_en\": \"Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option. Completes this without prompting.\",\n        \"kailangan_practice_fil\": \"Ligtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong tanong sa practice at ipaulit.\",\n        \"kailangan_practice_en\": \"Makes a safe choice but cannot explain the safeguard; use the three practice questions and repeat.\",\n        \"hindi_pa_fil\": \"Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.\",\n        \"hindi_pa_en\": \"Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings.\"\n      }\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.en.md": "## [purpose] Purpose\n\nChoose a resource-saving action that preserves infection prevention, critical equipment and timely services, and explain the rejected option.\n\n## [time-materials] Time and materials\n\n60 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare the two option pairs and local single-use and equipment policies. Do not alter clinical supplies during practice.\n\n## [opening] Opening\n\nThe team wants to reduce paper in health teaching. Which proposal fits?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nFor the utilities check, keep the vaccine refrigerator running and investigate unnecessary lights under the facility procedure. Turning off cold-chain equipment or required ventilation is unsafe.\n\nThe third response reduces rework while keeping information correct. Omitting essentials or using an old version can lower quality even when less paper is used.\n\n## [misconception] Common misconception\n\nProposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings. Reduce waste and rework while preserving essential protection and services.\n\n## [practice] Practice activity\n\nCompare “repair the leak” with “reduce handwashing.” List savings, potential harm and safeguards. Choose and explain to a partner. Repeat with a reusable visual versus reusing a clinical single-use item. Alone, write the rejected option and reason. Before trying a workplace change, confirm policy and safety checks with the supervisor.\n\n## [answer-key] Answer key\n\nUtilities check: 1. Keep the refrigerator running; check unnecessary lights under facility procedure.\n\n3. Check the approved version and use an approved reusable visual where suitable.\n\nThe third response reduces rework while keeping information correct. Omitting essentials or using an old version can lower quality even when less paper is used.\n\n## [observe] Observe\n\nChooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option.\n\nReady: Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option. Completes this without prompting.\n\nNeeds practice: Makes a safe choice but cannot explain the safeguard; use the three practice questions and repeat.\n\nNot yet: Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nMakes a safe choice but cannot explain the safeguard; use the three practice questions and repeat. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35; WHO — Climate-resilient and environmentally sustainable health care facilities (https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities). This expands the ninth competency rather than a standalone manual chapter. The draft TESDA 400311217 crosswalk is in the review report; assessor review and local work procedures remain pending. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n\r\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.fil.md": "## [purpose] Layunin\n\nPumili ng resource-saving action na nagpapanatili ng infection prevention, critical equipment at napapanahong serbisyo, at ipaliwanag ang tinanggihang opsyon.\n\n## [time-materials] Oras at kagamitan\n\n60 minuto para sa pagsasanay na pinamumunuan ng facilitator. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang dalawang pares ng opsyon at lokal na single-use at equipment policy. Walang aktuwal na pagbago sa clinical supplies sa practice.\n\n## [opening] Pambungad\n\nGustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nSa utilities check, panatilihing gumagana ang vaccine refrigerator at suriin ang hindi kailangang ilaw ayon sa facility procedure. Di-ligtas na patayin ang cold-chain equipment o kinakailangang bentilasyon.\n\nAng ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.\n\n## [misconception] Karaniwang pagkakamali\n\nIminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid. Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.\n\n## [practice] Gawaing pagsasanay\n\nIhambing ang “ayusin ang leak” at “bawasan ang handwashing.” Ilista ang matitipid, posibleng pinsala at safeguard. Pumili at ipaliwanag sa kapareha. Ulitin gamit ang reusable visual laban sa clinical single-use reuse. Kung mag-isa, isulat ang tinanggihang opsyon at dahilan. Bago subukan ang pagbabago sa trabaho, kumpirmahin sa supervisor ang policy at safety check.\n\n## [answer-key] Susi sa sagot\n\nUtilities check: 1. Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw ayon sa facility procedure.\n\n3. Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop.\n\nAng ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.\n\n## [observe] Obserbahan\n\nPinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon.\n\nKaya na: Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Ligtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong tanong sa practice at ipaulit.\n\nHindi pa: Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nLigtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong tanong sa practice at ipaulit. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35; WHO — Climate-resilient and environmentally sustainable health care facilities (https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities). Instructional expansion ito ng ikasiyam na competency, hindi hiwalay na manual chapter. Ang draft crosswalk sa TESDA 400311217 ay nasa review report; kailangan pa ng assessor review at lokal na work procedures. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n\r\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"resources-safe-change\",\n    \"position\": 1,\n    \"title_fil\": \"Pumili ng ligtas na pagbabago\",\n    \"title_en\": \"Choose a safe change\",\n    \"objectives_fil\": [\n      \"Pumili ng resource-saving action na nagpapanatili ng infection prevention, critical equipment at napapanahong serbisyo, at ipaliwanag ang tinanggihang opsyon.\"\n    ],\n    \"objectives_en\": [\n      \"Choose a resource-saving action that preserves infection prevention, critical equipment and timely services, and explain the rejected option.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"utilities\",\n      \"concept_ids\": [\n        \"m9.resources\",\n        \"m9.safe-savings\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang ligtas na pagtitipid ay nag-aalis ng aksaya at pinananatili ang kailangan sa pangangalaga.\",\n      \"takeaway_en\": \"Safe conservation removes waste while preserving what care requires.\",\n      \"check\": {\n        \"prompt_fil\": \"May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?\",\n        \"prompt_en\": \"The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?\",\n        \"options\": [\n          {\n            \"fil\": \"Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw at sundin ang facility procedure.\",\n            \"en\": \"Keep the refrigerator running; check unnecessary lights under facility procedure.\"\n          },\n          {\n            \"fil\": \"Patayin ang refrigerator sa gabi.\",\n            \"en\": \"Switch the refrigerator off overnight.\"\n          },\n          {\n            \"fil\": \"Patayin pati ang kinakailangang bentilasyon.\",\n            \"en\": \"Switch off required ventilation too.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Ang unang sagot ay tumutukoy sa hindi kailangang konsumo habang protektado ang cold chain. Ang pagpatay sa refrigerator o kinakailangang bentilasyon ay maaaring makasira sa ligtas na serbisyo.\",\n        \"feedback_en\": \"The first response targets unnecessary use while protecting the cold chain. Switching off the refrigerator or required ventilation can compromise safe service.\"\n      }\n    },\n    {\n      \"id\": \"materials\",\n      \"concept_ids\": [\n        \"m9.plastics\",\n        \"m9.safe-savings\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang pagbawas ng basura ay hindi pahintulot na muling gamitin ang clinical single-use items.\",\n      \"takeaway_en\": \"Waste reduction does not authorize reuse of clinical single-use items.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"workflow\",\n      \"concept_ids\": [\n        \"m9.productivity\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang productivity ay dekalidad na serbisyo na may mas kaunting aksaya at pag-uulit.\",\n      \"takeaway_en\": \"Productivity means quality service with less waste and rework.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"worked-example\",\n      \"concept_ids\": [\n        \"m9.resources\",\n        \"m9.safe-savings\",\n        \"m9.plastics\",\n        \"m9.productivity\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.\",\n      \"takeaway_en\": \"Reduce waste and rework while preserving essential protection and services.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m9.resources\",\n        \"m9.safe-savings\",\n        \"m9.plastics\",\n        \"m9.productivity\"\n      ],\n      \"asset_ids\": [\n        \"safe-change\"\n      ],\n      \"takeaway_fil\": \"Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.\",\n      \"takeaway_en\": \"Reduce waste and rework while preserving essential protection and services.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m9.resources\",\n        \"m9.safe-savings\",\n        \"m9.plastics\",\n        \"m9.productivity\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.\",\n      \"takeaway_en\": \"Reduce waste and rework while preserving essential protection and services.\",\n      \"check\": {\n        \"prompt_fil\": \"Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?\",\n        \"prompt_en\": \"The team wants to reduce paper in health teaching. Which proposal fits?\",\n        \"options\": [\n          {\n            \"fil\": \"Huwag nang magbigay ng kailangang instruction para mabawasan ang pahina.\",\n            \"en\": \"Omit needed instructions to reduce pages.\"\n          },\n          {\n            \"fil\": \"Gamitin ang lumang bersyon hanggang maubos.\",\n            \"en\": \"Use the old version until it runs out.\"\n          },\n          {\n            \"fil\": \"Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop.\",\n            \"en\": \"Check the approved version and use an approved reusable visual where suitable.\"\n          }\n        ],\n        \"correct_option_index\": 2,\n        \"feedback_fil\": \"Ang ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.\",\n        \"feedback_en\": \"The third response reduces rework while keeping information correct. Omitting essentials or using an old version can lower quality even when less paper is used.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m9.resources\",\n      \"read_ids\": [\n        \"utilities\",\n        \"worked-example\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-utilities\",\n        \"slide-worked-example\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\",\n        \"who-sustainability\"\n      ]\n    },\n    {\n      \"id\": \"m9.safe-savings\",\n      \"read_ids\": [\n        \"utilities\",\n        \"materials\",\n        \"worked-example\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-utilities\",\n        \"slide-materials\",\n        \"slide-worked-example\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\",\n        \"who-sustainability\"\n      ]\n    },\n    {\n      \"id\": \"m9.plastics\",\n      \"read_ids\": [\n        \"materials\",\n        \"worked-example\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-materials\",\n        \"slide-worked-example\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\",\n        \"who-sustainability\"\n      ]\n    },\n    {\n      \"id\": \"m9.productivity\",\n      \"read_ids\": [\n        \"workflow\",\n        \"worked-example\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-workflow\",\n        \"slide-worked-example\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\",\n        \"who-sustainability\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        19,\n        22\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        14,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"tesda-400311217\",\n      \"title\": \"TESDA BHS NC II Revision 01 (2019), unit 400311217\",\n      \"pdf_pages\": [\n        33,\n        34,\n        35\n      ],\n      \"url\": \"https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf\"\n    },\n    {\n      \"id\": \"who-sustainability\",\n      \"title\": \"WHO — Climate-resilient and environmentally sustainable health care facilities\",\n      \"url\": \"https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"safe-change\",\n      \"path\": \"/training/module-1-9/safe-change-5cb1aa2f1081.svg\",\n      \"content_hash\": \"5cb1aa2f1081f92d638f95187cce412ecbb7bcd31f203d3c3540f17effee1509\",\n      \"alt_fil\": \"Paghahambing ng pagtitipid at proteksyon sa hand hygiene, single-use at kalidad ng serbisyo.\",\n      \"alt_en\": \"A comparison of conservation with hand-hygiene, single-use and service-quality protections.\",\n      \"caption_fil\": \"Piliin lamang ang pagtitipid na pumapasa sa safety at quality check.\",\n      \"caption_en\": \"Choose a saving only when it passes safety and quality checks.\",\n      \"provenance\": \"Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.\",\n      \"review_status\": \"approved\"\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.en.md": "## [utilities] Water and electricity with safeguards\n\nElena, 38, wants to reduce waste at the BHS while preserving safe, correct services. She needs to check each proposal with the team.\n\nReport the leaking tap and follow up on its repair. Switch off unnecessary lights or equipment according to facility instructions. Do not turn off cold-chain equipment, required ventilation or other critical systems simply to lower a bill. Do not reduce handwashing water to save money. Target leaks and unnecessary consumption while preserving safe care.\n\n## [materials] Reduce unnecessary use, preserve safety\n\nFor health teaching, a durable reusable visual can replace repeated disposable decorations. Follow BHS policy on unnecessary single-use plastics and proper segregation. Clinical single-use items are different: needles, lancets and other single-use items must not be made reusable. When uncertain, ask the supervisor rather than inventing cleaning or reuse methods.\n\n## [workflow] Improve the flow, not just the speed\n\nBefore printing, Elena checks the date and approved version of the handout. She assembles session materials together to avoid repeated trips to the cabinet. Supply delivery can be combined with a planned safe route, but urgent referral must not be delayed to save travel. Measure quality service delivered and time saved; the number of rushed clients is not a measure of good work.\n\n## [worked-example] Check why waste occurs\n\nIn Elena’s example, rework may come from an outdated drawer copy or an incorrect choice before printing. Inspect sample incorrect printouts, compare them with the approved master and ask the person who printed them. Record which explanation the evidence supports. Confirm with the supervisor using local document-control procedures before changing the routine.\n\n## [practice] Try it, then repeat\n\nCompare “repair the leak” with “reduce handwashing.” List savings, potential harm and safeguards. Choose and explain to a partner. Repeat with a reusable visual versus reusing a clinical single-use item. Alone, write the rejected option and reason. Before trying a workplace change, confirm policy and safety checks with the supervisor.\n\n## [check] Choose the next step\n\nChoose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.fil.md": "## [utilities] Tubig at kuryente na may pag-iingat\n\nSi Elena, 38, ay gustong bawasan ang waste sa BHS habang naibibigay pa rin ang ligtas at tamang serbisyo. Kailangan niyang suriin ang bawat mungkahi kasama ang team.\n\nIulat ang tumutulong gripo at subaybayan kung napaayos. Patayin ang hindi kailangang ilaw o kagamitan ayon sa facility instructions. Huwag patayin ang cold-chain equipment, kinakailangang bentilasyon o ibang kritikal na sistema para lamang bumaba ang bill. Huwag bawasan ang handwashing water upang makatipid. Ang target ay tagas at hindi kailangang konsumo, habang nananatiling ligtas ang pangangalaga.\n\n## [materials] Bawasan ang hindi kailangan, panatilihin ang ligtas\n\nSa health teaching, maaaring gumamit ng matibay na reusable visual sa halip na paulit-ulit na disposable decoration. Sundin ang BHS policy sa hindi kailangang single-use plastics at tamang segregation. Iba ang clinical single-use items: hindi ginagawang reusable ang karayom, lancet o iba pang item na para sa isang gamit lamang. Kung may duda sa materyal, itanong sa supervisor; huwag mag-imbento ng paraan ng paglilinis o pagre-reuse.\n\n## [workflow] Ayusin ang daloy, hindi bilisan lang\n\nBago mag-print, suriin ni Elena ang petsa at aprubadong bersyon ng handout. Ihanda nang magkakasama ang kailangan sa session upang hindi pabalik-balik sa cabinet. Maaaring pagsamahin ang ligtas na delivery ng supplies sa planadong ruta, ngunit hindi ipagpaliban ang agarang referral para makatipid sa biyahe. Sukatin ang naihatid na dekalidad na serbisyo at oras na natipid; hindi sukatan ng husay ang dami lang ng minadaling kliyente.\n\n## [worked-example] Alamin kung bakit nasasayang\n\nSa halimbawa ni Elena, maaaring maling bersyon sa drawer o maling pagpili bago mag-print ang sanhi ng rework. Suriin ang sample ng mga maling printout, ihambing sa aprubadong master, at tanungin ang taong nag-print. Itala kung aling sanhi ang sinusuportahan ng ebidensya. Kumpirmahin sa supervisor gamit ang lokal na document-control procedure bago baguhin ang routine.\n\n## [practice] Subukan, saka ulitin\n\nIhambing ang “ayusin ang leak” at “bawasan ang handwashing.” Ilista ang matitipid, posibleng pinsala at safeguard. Pumili at ipaliwanag sa kapareha. Ulitin gamit ang reusable visual laban sa clinical single-use reuse. Kung mag-isa, isulat ang tinanggihang opsyon at dahilan. Bago subukan ang pagbabago sa trabaho, kumpirmahin sa supervisor ang policy at safety check.\n\n## [check] Piliin ang susunod na hakbang\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/slides.json": "[\n  {\n    \"id\": \"slide-utilities\",\n    \"concept_ids\": [\n      \"m9.resources\",\n      \"m9.safe-savings\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Tubig at kuryente na may pag-iingat\",\n    \"heading_en\": \"Water and electricity with safeguards\",\n    \"display_fil\": \"Ayusin ang leak at patayin ang hindi kailangang ilaw ayon sa facility instruction. Panatilihin ang cold chain, kinakailangang bentilasyon at handwashing water. Ang kritikal na serbisyo ay hindi dapat isakripisyo.\",\n    \"display_en\": \"Repair leaks and switch off unnecessary lights according to facility instructions. Preserve cold chain, required ventilation and handwashing water. Essential service safeguards must remain.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?\",\n      \"prompt_en\": \"The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?\",\n      \"options\": [\n        {\n          \"fil\": \"Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw at sundin ang facility procedure.\",\n          \"en\": \"Keep the refrigerator running; check unnecessary lights under facility procedure.\"\n        },\n        {\n          \"fil\": \"Patayin ang refrigerator sa gabi.\",\n          \"en\": \"Switch the refrigerator off overnight.\"\n        },\n        {\n          \"fil\": \"Patayin pati ang kinakailangang bentilasyon.\",\n          \"en\": \"Switch off required ventilation too.\"\n        }\n      ],\n      \"correct_option_index\": 0,\n      \"feedback_fil\": \"Ang unang sagot ay tumutukoy sa hindi kailangang konsumo habang protektado ang cold chain. Ang pagpatay sa refrigerator o kinakailangang bentilasyon ay maaaring makasira sa ligtas na serbisyo.\",\n      \"feedback_en\": \"The first response targets unnecessary use while protecting the cold chain. Switching off the refrigerator or required ventilation can compromise safe service.\"\n    }\n  },\n  {\n    \"id\": \"slide-materials\",\n    \"concept_ids\": [\n      \"m9.plastics\",\n      \"m9.safe-savings\"\n    ],\n    \"layout\": \"comparison\",\n    \"heading_fil\": \"Bawasan ang hindi kailangan, panatilihin ang ligtas\",\n    \"heading_en\": \"Reduce unnecessary use, preserve safety\",\n    \"display_fil\": \"Reusable teaching visual: maaaring makatipid. Single-use clinical item: hindi gawing reusable. Sundin ang BHS policy at segregation. Kapag hindi tiyak, itanong sa supervisor ang aprubadong paraan.\",\n    \"display_en\": \"A reusable teaching visual can reduce waste. Clinical single-use items must stay single-use. Follow BHS policy and segregation. If uncertain, ask the supervisor for the approved approach.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-workflow\",\n    \"concept_ids\": [\n      \"m9.productivity\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Ayusin ang daloy, hindi bilisan lang\",\n    \"heading_en\": \"Improve the flow, not just the speed\",\n    \"display_fil\": \"Suriin ang approved version bago mag-print; ihanda nang magkakasama ang gamit. Maaaring pagsabayin ang delivery sa ligtas na ruta, ngunit hindi ipagpaliban ang urgent referral. Sukatin ang kalidad at oras, hindi bilis lang.\",\n    \"display_en\": \"Check the approved version before printing and assemble materials together. Combine deliveries on a safe route when suitable, but never delay urgent referral. Measure quality and time, not speed alone.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-worked-example\",\n    \"concept_ids\": [\n      \"m9.resources\",\n      \"m9.safe-savings\",\n      \"m9.plastics\",\n      \"m9.productivity\"\n    ],\n    \"layout\": \"comparison\",\n    \"heading_fil\": \"Alamin kung bakit nasasayang\",\n    \"heading_en\": \"Check why waste occurs\",\n    \"display_fil\": \"Posibleng sanhi: lumang kopya o maling pagpili. Suriin ang printout at master; kausapin ang nag-print. Beripikahin sa supervisor bago baguhin ang routine.\",\n    \"display_en\": \"Possible causes: old copy or wrong selection. Check printouts against the master and consult the printer. Verify with the supervisor before changing the routine.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-practice\",\n    \"concept_ids\": [\n      \"m9.resources\",\n      \"m9.safe-savings\",\n      \"m9.plastics\",\n      \"m9.productivity\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Subukan, saka ulitin\",\n    \"heading_en\": \"Try it, then repeat\",\n    \"display_fil\": \"Matitipid? Posibleng pinsala? Safeguard? Piliin ang pagbabawas ng waste na nagpapanatili ng ligtas at napapanahong serbisyo.\",\n    \"display_en\": \"Savings? Potential harm? Safeguard? Choose waste reduction that preserves safe, timely services.\",\n    \"asset_ids\": [\n      \"safe-change\"\n    ],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-check\",\n    \"concept_ids\": [\n      \"m9.resources\",\n      \"m9.safe-savings\",\n      \"m9.plastics\",\n      \"m9.productivity\"\n    ],\n    \"layout\": \"decision\",\n    \"heading_fil\": \"Piliin ang susunod na hakbang\",\n    \"heading_en\": \"Choose the next step\",\n    \"display_fil\": \"Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.\",\n    \"display_en\": \"Reduce waste and rework while preserving essential protection and services.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?\",\n      \"prompt_en\": \"The team wants to reduce paper in health teaching. Which proposal fits?\",\n      \"options\": [\n        {\n          \"fil\": \"Huwag nang magbigay ng kailangang instruction para mabawasan ang pahina.\",\n          \"en\": \"Omit needed instructions to reduce pages.\"\n        },\n        {\n          \"fil\": \"Gamitin ang lumang bersyon hanggang maubos.\",\n          \"en\": \"Use the old version until it runs out.\"\n        },\n        {\n          \"fil\": \"Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop.\",\n          \"en\": \"Check the approved version and use an approved reusable visual where suitable.\"\n        }\n      ],\n      \"correct_option_index\": 2,\n      \"feedback_fil\": \"Ang ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.\",\n      \"feedback_en\": \"The third response reduces rework while keeping information correct. Omitting essentials or using an old version can lower quality even when less paper is used.\"\n    }\n  }\n]\n"
+  },
+  "target_files_sha256": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/competency.json": "d460091f13bf82cc64f24bdafd01edd9fd8390f7890021d1f1bdbe33e6f9b1ce",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.en.md": "2691742e10fc6ee8905631ddd5309afdcd016d9b1c435291438fcc0e396b03e6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.fil.md": "addbcc4e6af8b69e7c00724314f2d2def2b15db0323e05449d66b8408f0ab5fa",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json": "a258bc0dc67b58303d21d07f79685b5d6bb207db51a9a5a4306a223beb93d42b",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.en.md": "18042f6d4545256b4dce957d4a4c0126ecdf43b93d27dc01196b3f296fb8d081",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.fil.md": "7f19cab8ba9261f073376bc9b76ef83f4c263330d37c02ce3ca3e575964b549f",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/slides.json": "01111efc42991991b01dc685a3b62063c5c67e41b1359952e86cb1af3578de4e"
+  },
+  "target_narration": {
+    "module": "09-sustainable-practices",
+    "sections": {
+      "check": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/check.en.477719e5a12b.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "477719e5a12b1baafa9d1ac44f12691443543fd85d737da850a51c4f9c40c6c3",
+          "sha256": "e3777c9107cbfaf3d520727a9ba7e96dcd3d4531697927cbd9b4907b42e661e4",
+          "duration_seconds": 16.875,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 1840
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2140,
+              "end_ms": 7060
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7360,
+              "end_ms": 10600
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Reduce waste and rework while preserving essential protection and services.",
+              "start_ms": 10900,
+              "end_ms": 16820
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/check.fil.d9dcbb95f23b.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "d9dcbb95f23b0696397816e335ec80ab314fd9c22b1cddfa79952a98ac451f9b",
+          "sha256": "676b0b5796f7cb7823fc305e957ca37eca92284703187c2ecb519333d6fd2f75",
+          "duration_seconds": 20.036,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 2680
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 2980,
+              "end_ms": 8500
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 8800,
+              "end_ms": 13400
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.",
+              "start_ms": 13700,
+              "end_ms": 19980
+            }
+          ]
+        }
+      },
+      "materials": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/materials.en.50fdbf9f294f.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "50fdbf9f294f2433d42056abde2a9f4e941f4bbe86fb1f73cf32b2ec7f75cd55",
+          "sha256": "32bbb4f41ecfde80ef3bad85c6645c0dba3d46c5688cc1783fc58e44e442a6b2",
+          "duration_seconds": 41.691,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Reduce unnecessary use, preserve safety",
+              "start_ms": 0,
+              "end_ms": 4320
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "For health teaching, a durable reusable visual can replace repeated disposable decorations.",
+              "start_ms": 4620,
+              "end_ms": 11900
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Follow BHS policy on unnecessary single-use plastics and proper segregation.",
+              "start_ms": 12200,
+              "end_ms": 19280
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Clinical single-use items are different: needles, lancets and other single-use items must not be made reusable.",
+              "start_ms": 19580,
+              "end_ms": 28020
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "When uncertain, ask the supervisor rather than inventing cleaning or reuse methods.",
+              "start_ms": 28320,
+              "end_ms": 35200
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Waste reduction does not authorize reuse of clinical single-use items.",
+              "start_ms": 35500,
+              "end_ms": 41620
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/materials.fil.c6e3d6dd94bb.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "c6e3d6dd94bbe068d93d2388e1ea650cdeeb98a67e80996a3bedb7cd14ef890a",
+          "sha256": "866799dd90db94ad32b836aa40d976d265a69c2d3b0479d64bb7e51116bab1df",
+          "duration_seconds": 49.162,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Bawasan ang hindi kailangan, panatilihin ang ligtas",
+              "start_ms": 0,
+              "end_ms": 4760
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Sa health teaching, maaaring gumamit ng matibay na reusable visual sa halip na paulit-ulit na disposable decoration.",
+              "start_ms": 5060,
+              "end_ms": 15540
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Sundin ang BHS policy sa hindi kailangang single-use plastics at tamang segregation.",
+              "start_ms": 15840,
+              "end_ms": 22880
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Iba ang clinical single-use items: hindi ginagawang reusable ang karayom, lancet o iba pang item na para sa isang gamit lamang.",
+              "start_ms": 23180,
+              "end_ms": 33180
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Kung may duda sa materyal, itanong sa supervisor; huwag mag-imbento ng paraan ng paglilinis o pagre-reuse.",
+              "start_ms": 33480,
+              "end_ms": 41840
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang pagbawas ng basura ay hindi pahintulot na muling gamitin ang clinical single-use items.",
+              "start_ms": 42140,
+              "end_ms": 49100
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/practice.en.ea01cc32a6fe.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "ea01cc32a6fea60e612c7f94734b5ed259c4a689736760dad784e3b9f3f112b7",
+          "sha256": "e3f71669ae1c7194dbd55eaeb8bd6a54e0cf24090e6e753f9c69588af40f0d87",
+          "duration_seconds": 40.411,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2400
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Compare “repair the leak” with “reduce handwashing.”",
+              "start_ms": 2700,
+              "end_ms": 7860
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "List savings, potential harm and safeguards.",
+              "start_ms": 8160,
+              "end_ms": 13160
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Choose and explain to a partner.",
+              "start_ms": 13460,
+              "end_ms": 16620
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Repeat with a reusable visual versus reusing a clinical single-use item.",
+              "start_ms": 16920,
+              "end_ms": 23040
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Alone, write the rejected option and reason.",
+              "start_ms": 23340,
+              "end_ms": 27340
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Before trying a workplace change, confirm policy and safety checks with the supervisor.",
+              "start_ms": 27640,
+              "end_ms": 34160
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Reduce waste and rework while preserving essential protection and services.",
+              "start_ms": 34460,
+              "end_ms": 40340
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/practice.fil.ed94f6a69ef0.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "ed94f6a69ef023634e81f522a613b6f9f82aeb758f7624e76a04fbfa51a4713a",
+          "sha256": "d6d18882ef86d740e5b60464e9af69278dd828c6d8a8c30760d11cea94fe107f",
+          "duration_seconds": 44.878,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 3320
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ihambing ang “ayusin ang leak” at “bawasan ang handwashing.”",
+              "start_ms": 3620,
+              "end_ms": 9540
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ilista ang matitipid, posibleng pinsala at safeguard.",
+              "start_ms": 9840,
+              "end_ms": 14800
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Pumili at ipaliwanag sa kapareha.",
+              "start_ms": 15100,
+              "end_ms": 18660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Ulitin gamit ang reusable visual laban sa clinical single-use reuse.",
+              "start_ms": 18960,
+              "end_ms": 25080
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Kung mag-isa, isulat ang tinanggihang opsyon at dahilan.",
+              "start_ms": 25380,
+              "end_ms": 30140
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Bago subukan ang pagbabago sa trabaho, kumpirmahin sa supervisor ang policy at safety check.",
+              "start_ms": 30440,
+              "end_ms": 38080
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.",
+              "start_ms": 38380,
+              "end_ms": 44820
+            }
+          ]
+        }
+      },
+      "utilities": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/utilities.en.81cb3a4314d6.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "81cb3a4314d64af644e9cd4dac99ce7714f36b59a99ac49f7e359528cfec4d52",
+          "sha256": "693f53adfd1f7413f4be891454fa43cac7eb1c756a1bb09ff9e67496a60d08a2",
+          "duration_seconds": 51.252,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Water and electricity with safeguards",
+              "start_ms": 0,
+              "end_ms": 3560
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Elena, 38, wants to reduce waste at the BHS while preserving safe, correct services.",
+              "start_ms": 3860,
+              "end_ms": 11980
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "She needs to check each proposal with the team.",
+              "start_ms": 12280,
+              "end_ms": 15720
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Report the leaking tap and follow up on its repair.",
+              "start_ms": 16020,
+              "end_ms": 20140
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Switch off unnecessary lights or equipment according to facility instructions.",
+              "start_ms": 20440,
+              "end_ms": 26400
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Do not turn off cold-chain equipment, required ventilation or other critical systems simply to lower a bill.",
+              "start_ms": 26700,
+              "end_ms": 35380
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Do not reduce handwashing water to save money.",
+              "start_ms": 35680,
+              "end_ms": 39600
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Target leaks and unnecessary consumption while preserving safe care.",
+              "start_ms": 39900,
+              "end_ms": 45340
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Safe conservation removes waste while preserving what care requires.",
+              "start_ms": 45640,
+              "end_ms": 51200
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/utilities.fil.24f9e7942590.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "24f9e79425900bd9c445557580f30ecf41d19e776a19763f8c01c551ceddd693",
+          "sha256": "ab7f5085611541cc5726eb1533eae236780a667e928fdda68660176f8a6faebe",
+          "duration_seconds": 58.07,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Tubig at kuryente na may pag-iingat",
+              "start_ms": 0,
+              "end_ms": 3360
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Si Elena, 38, ay gustong bawasan ang waste sa BHS habang naibibigay pa rin ang ligtas at tamang serbisyo.",
+              "start_ms": 3660,
+              "end_ms": 12540
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Kailangan niyang suriin ang bawat mungkahi kasama ang team.",
+              "start_ms": 12840,
+              "end_ms": 17640
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Iulat ang tumutulong gripo at subaybayan kung napaayos.",
+              "start_ms": 17940,
+              "end_ms": 22660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Patayin ang hindi kailangang ilaw o kagamitan ayon sa facility instructions.",
+              "start_ms": 22960,
+              "end_ms": 29000
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Huwag patayin ang cold-chain equipment, kinakailangang bentilasyon o ibang kritikal na sistema para lamang bumaba ang bill.",
+              "start_ms": 29300,
+              "end_ms": 38220
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Huwag bawasan ang handwashing water upang makatipid.",
+              "start_ms": 38520,
+              "end_ms": 42640
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Ang target ay tagas at hindi kailangang konsumo, habang nananatiling ligtas ang pangangalaga.",
+              "start_ms": 42940,
+              "end_ms": 50180
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang ligtas na pagtitipid ay nag-aalis ng aksaya at pinananatili ang kailangan sa pangangalaga.",
+              "start_ms": 50480,
+              "end_ms": 58000
+            }
+          ]
+        }
+      },
+      "worked-example": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/worked-example.en.dfb4bbfee595.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "dfb4bbfee595b2370c37b667e8f4cb2ca924cec94a858f85272043eb0e59379a",
+          "sha256": "5253da8382be546d6a8274c79b28d37ce07842aabd5448f7a05c0a5cdf473b84",
+          "duration_seconds": 36.441,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Check why waste occurs",
+              "start_ms": 0,
+              "end_ms": 2200
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "In Elena’s example, rework may come from an outdated drawer copy or an incorrect choice before printing.",
+              "start_ms": 2500,
+              "end_ms": 10500
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Inspect sample incorrect printouts, compare them with the approved master and ask the person who printed them.",
+              "start_ms": 10800,
+              "end_ms": 18600
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Record which explanation the evidence supports.",
+              "start_ms": 18900,
+              "end_ms": 22980
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Confirm with the supervisor using local document-control procedures before changing the routine.",
+              "start_ms": 23280,
+              "end_ms": 29960
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Reduce waste and rework while preserving essential protection and services.",
+              "start_ms": 30260,
+              "end_ms": 36380
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/worked-example.fil.69f853c781f6.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "69f853c781f65054b21591c19bc15ff74ee591c06e9784794906aade558b838e",
+          "sha256": "5072e0d5758b213ce3a2d85df2d188418a02e19022e8c7bad1919dc498205d3f",
+          "duration_seconds": 38.243,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Alamin kung bakit nasasayang",
+              "start_ms": 0,
+              "end_ms": 2400
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Sa halimbawa ni Elena, maaaring maling bersyon sa drawer o maling pagpili bago mag-print ang sanhi ng rework.",
+              "start_ms": 2700,
+              "end_ms": 10980
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Suriin ang sample ng mga maling printout, ihambing sa aprubadong master, at tanungin ang taong nag-print.",
+              "start_ms": 11280,
+              "end_ms": 19160
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Itala kung aling sanhi ang sinusuportahan ng ebidensya.",
+              "start_ms": 19460,
+              "end_ms": 24100
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Kumpirmahin sa supervisor gamit ang lokal na document-control procedure bago baguhin ang routine.",
+              "start_ms": 24400,
+              "end_ms": 31320
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.",
+              "start_ms": 31620,
+              "end_ms": 38180
+            }
+          ]
+        }
+      },
+      "workflow": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/workflow.en.2d4dd145dd8f.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "2d4dd145dd8fbee264f38dc5a563dcbd55de08e7fed20a0c15336de0efb48091",
+          "sha256": "0f743c8c9de54ddf0b075e3d1443f886fa1a48a26305ed29cb1f7cc8ad159039",
+          "duration_seconds": 38.217,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Improve the flow, not just the speed",
+              "start_ms": 0,
+              "end_ms": 3560
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Before printing, Elena checks the date and approved version of the handout.",
+              "start_ms": 3860,
+              "end_ms": 9260
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "She assembles session materials together to avoid repeated trips to the cabinet.",
+              "start_ms": 9560,
+              "end_ms": 15200
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Supply delivery can be combined with a planned safe route, but urgent referral must not be delayed to save travel.",
+              "start_ms": 15500,
+              "end_ms": 23780
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Measure quality service delivered and time saved; the number of rushed clients is not a measure of good work.",
+              "start_ms": 24080,
+              "end_ms": 32480
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Productivity means quality service with less waste and rework.",
+              "start_ms": 32780,
+              "end_ms": 38140
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-safe-change/workflow.fil.6c359f264704.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "6c359f2647049541abbd72a5741a1ab682165141b9bcd23c9cff6a6e3693a850",
+          "sha256": "f4deebf79eb9b253eb31b3cdf56285a0f0adf49f5d23043fccc6a3d68af048de",
+          "duration_seconds": 45.714,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Ayusin ang daloy, hindi bilisan lang",
+              "start_ms": 0,
+              "end_ms": 3080
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Bago mag-print, suriin ni Elena ang petsa at aprubadong bersyon ng handout.",
+              "start_ms": 3380,
+              "end_ms": 9660
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ihanda nang magkakasama ang kailangan sa session upang hindi pabalik-balik sa cabinet.",
+              "start_ms": 9960,
+              "end_ms": 16800
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Maaaring pagsamahin ang ligtas na delivery ng supplies sa planadong ruta, ngunit hindi ipagpaliban ang agarang referral para makatipid sa biyahe.",
+              "start_ms": 17100,
+              "end_ms": 28540
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Sukatin ang naihatid na dekalidad na serbisyo at oras na natipid; hindi sukatan ng husay ang dami lang ng minadaling kliyente.",
+              "start_ms": 28840,
+              "end_ms": 38640
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang productivity ay dekalidad na serbisyo na may mas kaunting aksaya at pag-uulit.",
+              "start_ms": 38940,
+              "end_ms": 45660
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "selected_public_media_sha256": {
+    "/training/module-1-9/safe-change-5cb1aa2f1081.svg": "5cb1aa2f1081f92d638f95187cce412ecbb7bcd31f203d3c3540f17effee1509",
+    "/training/audio/09-sustainable-practices/resources-safe-change/check.en.477719e5a12b.mp3": "e3777c9107cbfaf3d520727a9ba7e96dcd3d4531697927cbd9b4907b42e661e4",
+    "/training/audio/09-sustainable-practices/resources-safe-change/check.fil.d9dcbb95f23b.mp3": "676b0b5796f7cb7823fc305e957ca37eca92284703187c2ecb519333d6fd2f75",
+    "/training/audio/09-sustainable-practices/resources-safe-change/materials.en.50fdbf9f294f.mp3": "32bbb4f41ecfde80ef3bad85c6645c0dba3d46c5688cc1783fc58e44e442a6b2",
+    "/training/audio/09-sustainable-practices/resources-safe-change/materials.fil.c6e3d6dd94bb.mp3": "866799dd90db94ad32b836aa40d976d265a69c2d3b0479d64bb7e51116bab1df",
+    "/training/audio/09-sustainable-practices/resources-safe-change/practice.en.ea01cc32a6fe.mp3": "e3f71669ae1c7194dbd55eaeb8bd6a54e0cf24090e6e753f9c69588af40f0d87",
+    "/training/audio/09-sustainable-practices/resources-safe-change/practice.fil.ed94f6a69ef0.mp3": "d6d18882ef86d740e5b60464e9af69278dd828c6d8a8c30760d11cea94fe107f",
+    "/training/audio/09-sustainable-practices/resources-safe-change/utilities.en.81cb3a4314d6.mp3": "693f53adfd1f7413f4be891454fa43cac7eb1c756a1bb09ff9e67496a60d08a2",
+    "/training/audio/09-sustainable-practices/resources-safe-change/utilities.fil.24f9e7942590.mp3": "ab7f5085611541cc5726eb1533eae236780a667e928fdda68660176f8a6faebe",
+    "/training/audio/09-sustainable-practices/resources-safe-change/worked-example.en.dfb4bbfee595.mp3": "5253da8382be546d6a8274c79b28d37ce07842aabd5448f7a05c0a5cdf473b84",
+    "/training/audio/09-sustainable-practices/resources-safe-change/worked-example.fil.69f853c781f6.mp3": "5072e0d5758b213ce3a2d85df2d188418a02e19022e8c7bad1919dc498205d3f",
+    "/training/audio/09-sustainable-practices/resources-safe-change/workflow.en.2d4dd145dd8f.mp3": "0f743c8c9de54ddf0b075e3d1443f886fa1a48a26305ed29cb1f7cc8ad159039",
+    "/training/audio/09-sustainable-practices/resources-safe-change/workflow.fil.6c359f264704.mp3": "f4deebf79eb9b253eb31b3cdf56285a0f0adf49f5d23043fccc6a3d68af048de"
+  },
+  "sibling_and_legacy_files_sha256": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/competency.json": "7feaa0ac20e4a6ecbe2e8d8a293a60586f4949d32bd57ca8be7a0c63e6b34cd2",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/module.json": "0d17489aaebb552df27fe87998c6f3d77640333a8595ab4a64e99d50c77a0238",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/facilitator-notes.en.md": "519b9595d8805c30cc7f67169f56102014de1c7666e133c892282c852543b5a4",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/coverage.json": "9befaa0c62a90b4686c071804a23db9c6eb23897bd7c797953527b63b0cc7e79",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lesson.en.md": "ff947088c0ac61068cd121fecbb96e29b633b813b8c313d753ebd38452688271",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/qa-entries.json": "b94945c3416d8a5d6dd8d4350041b38a3a4488dff84f1f037ac4cf046efa1ae8",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/facilitator-notes.fil.md": "91f5fa960e342aac6c5795da790f3d863b1fd82a478d432a36ef21b55f22e3c6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lesson.fil.md": "7454358bfbe4dcedaeaf9bbac90c06f04253c24d03162717ceb97122134b078c",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/activities.json": "72825265f9f2ee4e5450ef966cb7a60130b4f4a6a7e2e67cfbca91e7a473ad34",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/visuals/01-sukat-subok-review.svg": "e849788c866969671017dedc05795b9cf6a3e44140205b7b6962fba65f0fe9a6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/visuals/visuals.json": "75cc6dd8691011dcd66df96bb57878064831cb90a9dd8be3199a6314d6ac3358",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/competency.json": "0325dd0c78508ceaeecbafc61f84345e23bb79ad7b06a269552fb9712f7e08a8",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/slides.json": "4bdf3140b6ad8c6da2bbf331a75913532dd0a84a8a29a59a2ca75827ad3e8de7",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.en.md": "4623039e82270488fe358c3d174ce1844ff9d860c5c6f8a12ba91ddf5001b669",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.fil.md": "9e8ab15373156f4920e44ccc2e7f2f60d4ef67588a52ca366ed52faeed45caf0",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.en.md": "f59a71f8bb044a8bd5c256a2c85c7900a17685ab52218bce938492e63cdf5006",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json": "f40e8ee07034e78e731e3d8b0cd6e548117f8b6cf6c850dbc8fbfc579c1e5a27",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.fil.md": "e2f9bcbe40e37910452640f862a72eb2f4e92bdef3316351279cc92945b82723",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/competency.json": "9c1103a938c191ad10f5987c5babff05c2dc41a769bb2603734e9d46c89d5f11",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/slides.json": "7704d6b8c490b1553ec386c2af4785a390dbe9a8e3f1e4119f7e7dc5bd48d1f7",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.en.md": "6c67ec5ca31e470277aab566070ac73cd3795b89f4eb9effce7d3585d1d6dc1b",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.fil.md": "aacfc0e3a151261cb4ce3bb9772d5eb83609b5bb1206956f323989fe253ac064",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.en.md": "32fb3ebc829c0910971d8527e2fae913da58cbf232531c94fbb4a21ab84b3765",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json": "75d963a78516c54792988b699c3d46ba26ecd9af7ff20d69f5dc4f4e26e791a0",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.fil.md": "b030b67a91641d632de3f624193b5a8d96a4d62eeddd97cbd3f154b5d9d34220"
+  },
+  "shared_files_sha256": {
+    "content/training/day1-basic-competencies/narration.json": "38b3efcdb61252d720a9aff7189e7f64d68e77d3c0f3054c25310fa81d3fa5a9",
+    "remotion/src/Root.tsx": "5289e6c0792058d3c1d245ee01983958a73b90795ff2c4331f1504078725b321",
+    "src/components/elearning/reference-lessons.tsx": "2fe0440a857efee6b4fb2d3f62bb450a444274d4d834225f457bf301343819be",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    ".github/workflows/ci.yml": "2082486dc631bc54e820b422fdc07523be25dab3d0788ac9f5d33c5c4b3663b7",
+    ".github/workflows/remotion.yml": "325ba1f3e0fc8fa5886aa5966ba2490da2d2616469a8e071142c7f14c1b9b9b3",
+    "scripts/lib/reference-content.mjs": "96bd6b4f49eb0d0985c0e0010c5733f3a71e51236f9eff5734ae1ba2b34f2c3a",
+    "scripts/lib/reference-narration.mjs": "2ae95cbba1e74e3befd7bb71ffa669fa7fc34905cbb1c407f4571581d9470534",
+    "src/lib/elearning/reference-narration.ts": "ce925ca7114ad2036688098e5e64dfc04bc72a0a507c736e7a7dbd85bb0064ab",
+    "scripts/lib/reference-load.mjs": "97b0e95f026d4695c8fe59b3197759c2670b03f66fe8b5fea39a3c818cd5bdbd",
+    "scripts/lib/tts-providers/azure.mjs": "89f7133c741e70c526093df0fa88b403af023f3f423220e40f96cea858217619",
+    "scripts/lib/tts-providers/edge-tts.test.mjs": "e4f01f2ddf614864a67d814592f055695f627bb5527bd0a315404bab082539f9",
+    "scripts/lib/tts-providers/edge-read-aloud.mjs": "6ab984fa22f5afa97986d4a843decba51af9f39045af937d86c4f5159dded90a",
+    "scripts/lib/tts-providers/ssml.mjs": "4fcbfa756cedc2731a53ea20f46226c6b3af9c562f26b4d9178f03b55301c1b2",
+    "scripts/lib/tts-providers/ssml.test.mjs": "fd5a1b93493f6ac3c9b64f2fd2851c545874ae9a393a5f2ae04ec4aa158e99de",
+    "scripts/lib/tts-providers/gemini.test.mjs": "5dafe4d57b19779fa40fcdab66d45e37b72ab372476e4fa33f23a639423ecde0",
+    "scripts/lib/tts-providers/gemini.mjs": "f841e0934b13b29631e841a3abbfd1aebe63be591f5c23b3f6981f3ebc3687ee",
+    "scripts/lib/tts-providers/edge-tts.mjs": "e45696c2de4b5606f5fc0eb416eac7880bc7be8291060864ac58ff8ff86665b2"
+  },
+  "source_files_sha256": {
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/kwento-ni-rosario.md": "c3907b1b473f6cf7f7506de06b8aa3a8051806709e31d45f3f7ab946432744ef",
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976"
+  },
+  "prior_approval_and_proposal_sha256": {
+    "docs/lesson-121-translation-owner-approval.json": "4bc5e9378c55cc601f9622143b96cad4508f3ae36421fd3f175eda2715e3bade",
+    "docs/lesson-122-translation-owner-approval.json": "c546603a8a8d2b565e1acfb25b76aed2c4d8e90787dce972664049c2bf78e1cb",
+    "docs/lesson-123-owner-approval.json": "32156f491b9566865691cfc16285aa48e567246251dcce0fef91c26bf06d3661",
+    "docs/lesson-123-translation-owner-approval.json": "2f16b5868243bffab39050d131c01833bb9dc862919033fb1696e8cdf32ca430",
+    "docs/lesson-124-owner-approval.json": "2b871a8369b40574ff7ebf282f62a5724407bd690eb85e677c759e43f99b88a5",
+    "docs/lesson-124-translation-owner-approval.json": "e968052a991b65c71e1df57cac965888cbdf782f8523d18125229b1525c0acda",
+    "docs/lesson-131-owner-approval.json": "de6cbf3a1fb81eabdc29f43e760b5119f6c5d5b707db604dcdbb12bf1fe8758a",
+    "docs/lesson-132-owner-approval.json": "abd737a01f46d9f1c64db498077a8fae702290cffcf4d30ed806a412513e0159",
+    "docs/lesson-133-owner-approval.json": "f9d2d35549e668e79cc6c076710f6c3369f75912e4ff0ef864b19864d5a93bd3",
+    "docs/lesson-134-owner-approval.json": "d3c8fe6e11f15ddc0e89f890ed41ce5942498b04327290071aa3fba3d1b1aaf1",
+    "docs/lesson-135-owner-approval.json": "09f5051708d0533498c667c644897c0d8309ed6bfe2dd6fe35cc95a7e5242c56",
+    "docs/lesson-141-owner-approval.json": "994eb0ba26ebe89360fcc49374c5d5ead176a67ee937fa82af81e5ad0551be88",
+    "docs/lesson-142-owner-approval.json": "c652a75d2ed861ff75e91d3decb3ea3ad82bd420d6e598aeb6203bdc92b75ed0",
+    "docs/lesson-143-owner-approval.json": "bc1a15799d6c39676e91553337aac0b41bae9d71fc6cfddab64e824c7671fd52",
+    "docs/lesson-144-owner-approval.json": "2a8250e7eafd322013d027c2eb16e176a745a0f606308591afa4a2083a999948",
+    "docs/lesson-145-owner-approval.json": "8eac6235972b7daf9df56565e8288f3d44d9af235d286135c1ea95184b352cd1",
+    "docs/lesson-151-owner-approval.json": "fa04c4a13c0081649b1ed86020535206dc5e00859fb829ef59a79e30161ca4f2",
+    "docs/lesson-152-owner-approval.json": "a96f599b1fad044b390222965786986004e8e9c646166c3a9b85b7a5bd028462",
+    "docs/lesson-153-owner-approval.json": "5b44380d944f2a086459e54d5f84740fc386d224bf861e3054edb6ff9ae61f84",
+    "docs/lesson-154-owner-approval.json": "14af7ac72e72e1519b1c2a30e576e6f31c0ffd1063f77a01a12ccc7c541adce2",
+    "docs/lesson-155-owner-approval.json": "0064edf2a44e8ea24c00f8f8b1e975dc97d20d3bc6df12efa21cd5568446e4af",
+    "docs/lesson-155-proposal-receipt.json": "6d71b322a32119ec2ee4c3cb5a1c85d31d87142493a39caa12230fe5dd5072f6",
+    "docs/lesson-156-owner-approval.json": "e6c294d0a2ea844d1adb8395e94430fe479545b6c4a7da7d40c860079b5314d0",
+    "docs/lesson-161-owner-approval.json": "6538a95cbd0da76a483675a925f98b98a745fe96562014ed9ce76d98e57836b0",
+    "docs/lesson-161-proposal-receipt.json": "0b2d7e3dea955c7f503c8975b9572df55d2cb4f7c84554919eaeabaf0a9d25ec",
+    "docs/lesson-162-owner-approval.json": "7a21e3b63f632927ea92208e84c1a0c47aa9558fccb22f04589c210ee20460c5",
+    "docs/lesson-162-proposal-receipt.json": "7fc46d14d12ba46435e3ac2d4f494a7f3bda755849333eace65c1fad4b12e23c",
+    "docs/lesson-163-owner-approval.json": "687a1eee3fb39f0ca71db11c08dd8210a3bbd2cc27ef991cddaa332c0e486531",
+    "docs/lesson-163-proposal-receipt.json": "0b5bdd4bb7f6fc12ceae0c0fde5407a2953eb9c2abe116eb3de315eb05b20c64",
+    "docs/lesson-164-owner-approval.json": "8fca7a1707c836fafed7dbcc25d8d245968a8602b1fb3dab51371844f9a4b575",
+    "docs/lesson-164-proposal-receipt.json": "f05bde4fe954657a89ce370ebd9a9afc10cca06dbce82c5c777137319d47165f",
+    "docs/lesson-165-owner-approval.json": "35b65fd47cb27f5662339759f210894775954a4d44c3807c8beafe69f8bb4f9f",
+    "docs/lesson-165-proposal-receipt.json": "50400f8320ec825905eb004174cef12b3d6890d1aeacabc392a925d7822550a1",
+    "docs/lesson-171-owner-approval.json": "a5a22be635f602c66cf15e0bea33a26abdb231ade5452a658db4f027cc445f6a",
+    "docs/lesson-171-proposal-receipt.json": "30d6a15243cc1e1f9c00ffde9e78c6b196aac8af338f8b60f49397967d48cec6",
+    "docs/lesson-172-owner-approval.json": "571f321b7ecc13194339723c535fef4d2991ec00830febad0dd9c390722fdc6f",
+    "docs/lesson-172-proposal-receipt.json": "70c2592ef570c08c12634798668b190c66475198468785d9865d30231735a4fd",
+    "docs/lesson-173-owner-approval.json": "aec4aa30a45eaae661565595d5f1cbdbc5a70cc17b729e0626c281693b8d11b0",
+    "docs/lesson-173-proposal-receipt.json": "5137ca8624e258ca284876898270ff58ea42c4421d5ee5e8d7d9caeaad4e5b3e",
+    "docs/lesson-173-reviewed-proposal-receipt.json": "4c715c010458900edb650b61e674e39ee3e51d88aa243498dbf61d87d625b33e",
+    "docs/lesson-174-owner-approval.json": "b51d92b80ff1291fb6c38c35dd9455263388868c6b12bf80b8c38985a1d0d241",
+    "docs/lesson-174-proposal-receipt.json": "b80dd4ef89495f3f175b009138e8840d476a2ec94472f3467af2281d4156d5ad",
+    "docs/lesson-174-reviewed-proposal-receipt.json": "89d59e960367f6ee49e95fcb956674039cbb7c81df69e572d752203dd1b023dc",
+    "docs/lesson-181-owner-approval.json": "2d7071653cd18f960b2243843f603e2365f6424f27375cf8390b8fc4e0fc655b",
+    "docs/lesson-181-proposal-receipt.json": "0ea74c184f10a5d6d15edfa6f5c1e20253f0772f154ee9d1b3c78f7cb349e1ba",
+    "docs/lesson-182-owner-approval.json": "60036bcdbdd5403a8c56579b6a51cf06e3782eff28fb23d6aaead2949fff7758",
+    "docs/lesson-182-proposal-receipt.json": "2665d3ad85af6c668bb1ef327ab912a7e243c37059a1084ec7bc2c28b1024450",
+    "docs/lesson-183-owner-approval.json": "e0e09946e852b5c7196baceeb997480313a2d37ab610bbc8263a2269e0f38145",
+    "docs/lesson-183-proposal-receipt.json": "096eb21eec029e168867cf071234ad58738ec54b02143c70607039149e4e5214",
+    "docs/lesson-184-owner-approval.json": "67eafb09f23e55055c83f508d47ab20493e1859382506f79fb7fe595159cc465",
+    "docs/lesson-184-proposal-receipt.json": "c1d13e739923c47ae4d3ac7e7436b47cefb6e0e286f5ed5fc76095b85dabc2c4",
+    "docs/lesson-184-reviewed-proposal-receipt.json": "c1d13e739923c47ae4d3ac7e7436b47cefb6e0e286f5ed5fc76095b85dabc2c4"
+  },
+  "production_snapshot": "not captured; source receipt does not establish published database state",
+  "owner_release_approval": false
+}
