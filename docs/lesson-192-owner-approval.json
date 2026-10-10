@@ -1,0 +1,160 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "lesson_keys": [
+    "resources-safe-change"
+  ],
+  "reviewed_head": "6a613adda6404d2959d531d29f726c60b60ca500",
+  "reviewed_package_sha256": "b96b505c14781cb571a7aee01a6ed2200565beda3098a6be4daaf1f3e7f2d16f",
+  "reviewed_package_bytes": 373029151,
+  "reviewed_artifact_id": 11667783212,
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"resources-safe-change\",\n    \"position\": 1,\n    \"title_fil\": \"Pumili ng ligtas na pagbabago\",\n    \"title_en\": \"Choose a safe change\",\n    \"objectives_fil\": [\n      \"Pumili ng resource-saving action na nagpapanatili ng infection prevention, critical equipment at napapanahong serbisyo, at ipaliwanag ang tinanggihang opsyon.\"\n    ],\n    \"objectives_en\": [\n      \"Choose a resource-saving action that preserves infection prevention, critical equipment and timely services, and explain the rejected option.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"utilities\",\n      \"concept_ids\": [\n        \"m9.resources\",\n        \"m9.safe-savings\"\n      ],\n      \"asset_ids\": [\n        \"charlaine-utilities\"\n      ],\n      \"takeaway_fil\": \"Ang ligtas na pagtitipid ay nag-aalis ng aksaya at pinananatili ang kailangan sa pangangalaga.\",\n      \"takeaway_en\": \"Safe conservation removes waste while preserving what care requires.\",\n      \"check\": {\n        \"prompt_fil\": \"May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?\",\n        \"prompt_en\": \"The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?\",\n        \"options\": [\n          {\n            \"fil\": \"Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw at sundin ang facility procedure.\",\n            \"en\": \"Keep the refrigerator running; check unnecessary lights under facility procedure.\"\n          },\n          {\n            \"fil\": \"Patayin ang refrigerator sa gabi.\",\n            \"en\": \"Switch the refrigerator off overnight.\"\n          },\n          {\n            \"fil\": \"Patayin pati ang kinakailangang bentilasyon.\",\n            \"en\": \"Switch off required ventilation too.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"1. Ligtas siyasatin ang hindi kailangang ilaw ayon sa facility procedure habang gumagana ang refrigerator. Hindi pa alam ang sanhi o matitipid. 2. Hindi ligtas patayin ang vaccine refrigerator sa gabi; dapat protektado ang cold chain. 3. Hindi ligtas patayin ang kinakailangang bentilasyon; bahagi ito ng ligtas na serbisyo. Sa kathang-isip na kuwento, pinili ni Charlaine ang safeguarded investigation at tinanggihan ang dalawang unsafe cuts. Ipinapasa pa ang mungkahi sa awtorisadong facility decision; walang sinasabing approval, pagkumpuni o nasukat na savings.\",\n        \"feedback_en\": \"1. Unnecessary lights are safe to investigate under facility procedure while the refrigerator runs. The cause and savings remain unknown. 2. Switching off the vaccine refrigerator overnight is unsafe; protect the cold chain. 3. Switching off required ventilation is unsafe; it supports safe services. In the fictional story, Charlaine chooses a safeguarded investigation and rejects both unsafe cuts. The proposal still goes to the authorized facility decision; no approval, repair completion or measured savings is claimed.\"\n      }\n    },\n    {\n      \"id\": \"materials\",\n      \"concept_ids\": [\n        \"m9.plastics\",\n        \"m9.safe-savings\"\n      ],\n      \"asset_ids\": [\n        \"charlaine-materials\"\n      ],\n      \"takeaway_fil\": \"Ang pagbawas ng basura ay hindi pahintulot na muling gamitin ang clinical single-use items.\",\n      \"takeaway_en\": \"Waste reduction does not authorize reuse of clinical single-use items.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"workflow\",\n      \"concept_ids\": [\n        \"m9.productivity\"\n      ],\n      \"asset_ids\": [\n        \"charlaine-workflow\"\n      ],\n      \"takeaway_fil\": \"Ang productivity ay dekalidad na serbisyo na may mas kaunting aksaya at pag-uulit.\",\n      \"takeaway_en\": \"Productivity means quality service with less waste and rework.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"worked-example\",\n      \"concept_ids\": [\n        \"m9.resources\",\n        \"m9.safe-savings\",\n        \"m9.plastics\",\n        \"m9.productivity\"\n      ],\n      \"asset_ids\": [\n        \"charlaine-worked-example\"\n      ],\n      \"takeaway_fil\": \"Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.\",\n      \"takeaway_en\": \"Reduce waste and rework while preserving essential protection and services.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m9.resources\",\n        \"m9.safe-savings\",\n        \"m9.plastics\",\n        \"m9.productivity\"\n      ],\n      \"asset_ids\": [\n        \"charlaine-practice\"\n      ],\n      \"takeaway_fil\": \"Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.\",\n      \"takeaway_en\": \"Reduce waste and rework while preserving essential protection and services.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m9.resources\",\n        \"m9.safe-savings\",\n        \"m9.plastics\",\n        \"m9.productivity\"\n      ],\n      \"asset_ids\": [\n        \"charlaine-check\"\n      ],\n      \"takeaway_fil\": \"Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.\",\n      \"takeaway_en\": \"Reduce waste and rework while preserving essential protection and services.\",\n      \"check\": {\n        \"prompt_fil\": \"Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?\",\n        \"prompt_en\": \"The team wants to reduce paper in health teaching. Which proposal fits?\",\n        \"options\": [\n          {\n            \"fil\": \"Huwag nang magbigay ng kailangang instruction para mabawasan ang pahina.\",\n            \"en\": \"Omit needed instructions to reduce pages.\"\n          },\n          {\n            \"fil\": \"Gamitin ang lumang bersyon hanggang maubos.\",\n            \"en\": \"Use the old version until it runs out.\"\n          },\n          {\n            \"fil\": \"Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop.\",\n            \"en\": \"Check the approved version and use an approved reusable visual where suitable.\"\n          }\n        ],\n        \"correct_option_index\": 2,\n        \"feedback_fil\": \"1. Hindi angkop tanggalin ang kailangang instruction; dapat tama at accessible pa rin ang pagtuturo. 2. Hindi sapat na may stock ng lumang bersyon; beripikahin ang approved version bago gamitin o mag-print. 3. Angkop siyasatin ang approved version at aprubadong reusable visual kung angkop, nang kumpleto ang kailangang instruction. Sa kathang-isip na pagtatapos, inihahain ni Charlaine ang proposal na may version verification at angkop na aprubadong visual. Tinanggihan niya ang unsafe cut; protektado ang handwashing water, clinical single-use rules, critical equipment, bentilasyon at urgent referral. Ipinapasa pa ito sa awtorisadong facility decision. Walang inaangking nasukat na savings, repair completion o trainer-observed competence.\",\n        \"feedback_en\": \"1. Omitting needed instructions is unsuitable; teaching must remain correct and accessible. 2. Having old copies in stock is insufficient; verify the approved version before use or printing. 3. Checking the approved version and an approved reusable visual where suitable is appropriate, with all needed instructions intact. In the fictional ending, Charlaine submits a proposal with version verification and a suitable approved visual. She rejects the unsafe cut; handwashing water, clinical single-use rules, critical equipment, ventilation and urgent referral stay protected. It still goes to the authorized facility decision. No measured savings, repair completion or trainer-observed competence is claimed.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m9.resources\",\n      \"read_ids\": [\n        \"utilities\",\n        \"worked-example\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-utilities\",\n        \"slide-worked-example\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\",\n        \"who-sustainability\"\n      ]\n    },\n    {\n      \"id\": \"m9.safe-savings\",\n      \"read_ids\": [\n        \"utilities\",\n        \"materials\",\n        \"worked-example\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-utilities\",\n        \"slide-materials\",\n        \"slide-worked-example\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\",\n        \"who-sustainability\"\n      ]\n    },\n    {\n      \"id\": \"m9.plastics\",\n      \"read_ids\": [\n        \"materials\",\n        \"worked-example\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-materials\",\n        \"slide-worked-example\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\",\n        \"who-sustainability\"\n      ]\n    },\n    {\n      \"id\": \"m9.productivity\",\n      \"read_ids\": [\n        \"workflow\",\n        \"worked-example\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-workflow\",\n        \"slide-worked-example\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\",\n        \"who-sustainability\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        19,\n        22\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        14,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"tesda-400311217\",\n      \"title\": \"TESDA BHS NC II Revision 01 (2019), unit 400311217\",\n      \"pdf_pages\": [\n        33,\n        34,\n        35\n      ],\n      \"url\": \"https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf\"\n    },\n    {\n      \"id\": \"who-sustainability\",\n      \"title\": \"WHO — Climate-resilient and environmentally sustainable health care facilities\",\n      \"url\": \"https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"safe-change\",\n      \"path\": \"/training/module-1-9/safe-change-5cb1aa2f1081.svg\",\n      \"content_hash\": \"5cb1aa2f1081f92d638f95187cce412ecbb7bcd31f203d3c3540f17effee1509\",\n      \"alt_fil\": \"Paghahambing ng pagtitipid at proteksyon sa hand hygiene, single-use at kalidad ng serbisyo.\",\n      \"alt_en\": \"A comparison of conservation with hand-hygiene, single-use and service-quality protections.\",\n      \"caption_fil\": \"Piliin lamang ang pagtitipid na pumapasa sa safety at quality check.\",\n      \"caption_en\": \"Choose a saving only when it passes safety and quality checks.\",\n      \"provenance\": \"Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.\",\n      \"review_status\": \"approved\"\n    },\n    {\n      \"id\": \"charlaine-utilities\",\n      \"path\": \"/training/bhw-1-9/charlaine-safe-change-utilities-9267e7b9668d.png\",\n      \"content_hash\": \"9267e7b9668d9db9c72e199ead3b44314bc6c451c1bc00aee05119e60dae718d\",\n      \"alt_fil\": \"Sinisiyasat ni Charlaine ang ilaw kasama ang kasamahan habang gumagana ang refrigerator at available ang sink at bentilasyon; walang switch na hinahawakan.\",\n      \"alt_en\": \"Charlaine discusses lighting with a colleague while the refrigerator, sink and ventilation remain available; no switches are touched.\",\n      \"caption_fil\": \"Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.\",\n      \"caption_en\": \"Fictional practice; protections, approval and unknowns are explained in the teaching.\",\n      \"provenance\": \"Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"charlaine-materials\",\n      \"path\": \"/training/bhw-1-9/charlaine-safe-change-materials-1a4d26dbdf84.png\",\n      \"content_hash\": \"1a4d26dbdf846715d58c06028a49ae8a4d0a325fd16498c616b87bfb39f6bbb0\",\n      \"alt_fil\": \"Dalawang option card: teaching visual at sealed single-use supply icon; cards lamang, walang clinical reuse.\",\n      \"alt_en\": \"Two option cards show a teaching visual and a sealed single-use supply icon; cards only, no clinical reuse.\",\n      \"caption_fil\": \"Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.\",\n      \"caption_en\": \"Fictional practice; protections, approval and unknowns are explained in the teaching.\",\n      \"provenance\": \"Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"charlaine-workflow\",\n      \"path\": \"/training/bhw-1-9/charlaine-safe-change-workflow-26aa1c3665f3.png\",\n      \"content_hash\": \"26aa1c3665f31e7ae0b5698cfabc4fc14c85a43ca4ed50cf47f8216904ad5cd6\",\n      \"alt_fil\": \"Ikinukumpara ni Charlaine at ng kasamahan ang blank dummy teaching sheets at controlled-master binder bago mag-print.\",\n      \"alt_en\": \"Charlaine and a colleague compare blank dummy teaching sheets and a controlled-master binder before printing.\",\n      \"caption_fil\": \"Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.\",\n      \"caption_en\": \"Fictional practice; protections, approval and unknowns are explained in the teaching.\",\n      \"provenance\": \"Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"charlaine-worked-example\",\n      \"path\": \"/training/bhw-1-9/charlaine-safe-change-worked-example-4443b63ec47c.png\",\n      \"content_hash\": \"4443b63ec47c1eda8b6486de87bae16783051067178c17bdd3cdead97328c479\",\n      \"alt_fil\": \"Drawer copies, blank printout, master binder at dalawang posibleng file sa laptop; walang proved cause.\",\n      \"alt_en\": \"Drawer copies, blank printout, master binder and two possible laptop files; no cause is proved.\",\n      \"caption_fil\": \"Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.\",\n      \"caption_en\": \"Fictional practice; protections, approval and unknowns are explained in the teaching.\",\n      \"provenance\": \"Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"charlaine-practice\",\n      \"path\": \"/training/bhw-1-9/charlaine-safe-change-practice-8078c21abbd8.png\",\n      \"content_hash\": \"8078c21abbd82e1a4e193cd84198b437166b082ac570d582c115ceb051cff0c0\",\n      \"alt_fil\": \"Ipinapaliwanag ni Charlaine ang option cards sa triad habang nagbibigay ng feedback ang kasamahan.\",\n      \"alt_en\": \"Charlaine explains option cards to a triad while a colleague gives feedback.\",\n      \"caption_fil\": \"Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.\",\n      \"caption_en\": \"Fictional practice; protections, approval and unknowns are explained in the teaching.\",\n      \"provenance\": \"Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"charlaine-check\",\n      \"path\": \"/training/bhw-1-9/charlaine-safe-change-check-1e8b80d530c8.png\",\n      \"content_hash\": \"1e8b80d530c80ce2692c77bba4d1f3a4297eedab6ebc92ac312851d734f26c80\",\n      \"alt_fil\": \"Pinag-iisipan ni Charlaine ang paper-saving question card sa tabi ng teaching board, master binder at dalawang blank handout.\",\n      \"alt_en\": \"Charlaine considers a paper-saving question card beside a teaching board, master binder and two blank handouts.\",\n      \"caption_fil\": \"Kathang-isip na practice; ang proteksyon, approval at unknowns ay nasa paliwanag.\",\n      \"caption_en\": \"Fictional practice; protections, approval and unknowns are explained in the teaching.\",\n      \"provenance\": \"Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"resources-safe-change-story\",\n      \"alt_fil\": \"Anim na beat ng fictional safe-change proposal ni Charlaine, may safeguards at unknown approval/savings.\",\n      \"alt_en\": \"Six beats of Charlaine’s fictional safe-change proposal, preserving safeguards with approval/savings unknown.\",\n      \"caption_fil\": \"Kathang-isip na proposal; walang inaangking approval, savings o repair completion.\",\n      \"caption_en\": \"Fictional proposal; no approval, savings or repair completion is claimed.\",\n      \"provenance\": \"Pinned built-in imagegen Charlaine scenes with measured Gemini Kore narration, H.264/AAC and six matching WebVTT cues; exact package remains draft.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-9/resources-safe-change-gemini-fil-411c702ed7fb.mp4\",\n          \"content_hash\": \"411c702ed7fb7a1277bbfc92a68c2d0455c430dc673bfb86acc7d4949902d4c9\",\n          \"duration_s\": 83,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-9/resources-safe-change-gemini-fil-1fe386aea8e3-poster.jpg\",\n            \"content_hash\": \"1fe386aea8e30f275fca28c5954a3ffc4165cfd37569014634997bf7420d382c\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-9/resources-safe-change-gemini-fil-8b7d0755fd00.vtt\",\n            \"content_hash\": \"8b7d0755fd00f3330c9e757f1fb35ad800f1d0e1940e9a5b8b64999e99b5d874\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-9/resources-safe-change-gemini-en-caf00e20c572.mp4\",\n          \"content_hash\": \"caf00e20c572f60d29f5a8918699ff40d4fa3faa43a833af3d9fa315fcd53b7d\",\n          \"duration_s\": 79,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-9/resources-safe-change-gemini-en-0eb02635cf26-poster.jpg\",\n            \"content_hash\": \"0eb02635cf2644e9d7663590ed49cc02f2be2a6c906bf0f52b3fa8e371dddc35\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-9/resources-safe-change-gemini-en-130ff6a84c4b.vtt\",\n            \"content_hash\": \"130ff6a84c4bab5f2a0a75b58c4ed1a8fa4e612c8593642616b4d666f94938dc\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-9/resources-safe-change-gemini-fil-1fe386aea8e3-poster.jpg\",\n      \"content_hash\": \"1fe386aea8e30f275fca28c5954a3ffc4165cfd37569014634997bf7420d382c\"\n    }\n  ],\n  \"featured_asset_id\": \"resources-safe-change-story\"\n}\n",
+  "reviewed_lesson_sha256": "5b634910d2e0fc7692999e1d5ec06e806b9b7c109b68d527b385c385fac0a51d",
+  "approved_lesson_sha256": "5585cb6745a745142ddd2ca3613b3c11355c0c2ef8e4a645e215d12aca7fd079",
+  "integrated_main": "a1a54d755cda8c609c3006843acc11abfba3437e",
+  "human_listening": "not independently established by owner release authorization",
+  "facility_review": "not independently established by owner release authorization",
+  "known_CI_exception": "Exactly twelve unchanged problem-prioritize freshness failures disclosed in the approved package; retain global guard and require all other tests to pass.",
+  "promotion": "Only seven target asset review_status fields changed; reviewed teaching and media retained exactly.",
+  "approved_media": [
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/utilities.fil.981dc55f2ea7.mp3",
+      "sha256": "1e0ef799e9354a82e4cb5a7ee66c50574dd02ef638eae484515b0184ec9374c9",
+      "bytes": 302811
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/materials.fil.1fbb54e168b0.mp3",
+      "sha256": "b44396682de8131c4bc1a394d9a777099418a79eb2156891ff4c4ac1b193cd45",
+      "bytes": 284317
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/workflow.fil.94f91f8b020a.mp3",
+      "sha256": "3a01cf459b2cb6f0c60b0781437597d5047684d693e80a7f7bb21ab782674196",
+      "bytes": 261329
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/worked-example.fil.f9c8f61d8e11.mp3",
+      "sha256": "3d323a7a066c152081def8db37f3a143e0608fb4c72f4857adbda3c4a0d097e7",
+      "bytes": 296856
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/practice.fil.86a3c0722bf1.mp3",
+      "sha256": "bb4641c6a126a42a4ca9adad70c4a6de12cc42ce40a3a3234db1ac634725402d",
+      "bytes": 404062
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/check.fil.7e21631a1eb8.mp3",
+      "sha256": "12b32b8568e5ddab56c95447202a3c259ae88497a68319d8c5703c024748d812",
+      "bytes": 198322
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/utilities.en.e67ae998af39.mp3",
+      "sha256": "f97b578cac401c395de96d65e2a7d875fc453829812541572b7035762fe624e9",
+      "bytes": 268748
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/materials.en.51ae54fb1f0c.mp3",
+      "sha256": "fb628f2c5b0b564d670a9960e6347d54ae617bd32b5e4c56c59c741bfa4fdeac",
+      "bytes": 257254
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/workflow.en.341640aec980.mp3",
+      "sha256": "8209761d0cf49e66f49b6496fc6505c8e2eb1cc93425c2fb21d43fa779ab47b2",
+      "bytes": 224549
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/worked-example.en.b841306001bc.mp3",
+      "sha256": "e1d5377fae558c137a8da39d523d02898e50c7a6646397c621d9b28877930f78",
+      "bytes": 307722
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/practice.en.ac75930743dc.mp3",
+      "sha256": "0b923f1967ef2a1b7b5d8b75ffd45237f6e469ae5eaf4ec7004b9ccc0ee09aed",
+      "bytes": 362266
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-safe-change/check.en.8a9be8b52455.mp3",
+      "sha256": "4c62c7021d4244fe1efa7b4f0fec2c4734724717237df1db02530a00d2aa3e51",
+      "bytes": 179827
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-utilities-9267e7b9668d.png",
+      "sha256": "9267e7b9668d9db9c72e199ead3b44314bc6c451c1bc00aee05119e60dae718d",
+      "bytes": 2344348
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-materials-1a4d26dbdf84.png",
+      "sha256": "1a4d26dbdf846715d58c06028a49ae8a4d0a325fd16498c616b87bfb39f6bbb0",
+      "bytes": 2258288
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-workflow-26aa1c3665f3.png",
+      "sha256": "26aa1c3665f31e7ae0b5698cfabc4fc14c85a43ca4ed50cf47f8216904ad5cd6",
+      "bytes": 2308707
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-worked-example-4443b63ec47c.png",
+      "sha256": "4443b63ec47c1eda8b6486de87bae16783051067178c17bdd3cdead97328c479",
+      "bytes": 2395594
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-practice-8078c21abbd8.png",
+      "sha256": "8078c21abbd82e1a4e193cd84198b437166b082ac570d582c115ceb051cff0c0",
+      "bytes": 2317696
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-check-1e8b80d530c8.png",
+      "sha256": "1e8b80d530c80ce2692c77bba4d1f3a4297eedab6ebc92ac312851d734f26c80",
+      "bytes": 2304312
+    },
+    {
+      "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-1fe386aea8e3-poster.jpg",
+      "sha256": "1fe386aea8e30f275fca28c5954a3ffc4165cfd37569014634997bf7420d382c",
+      "bytes": 53957
+    },
+    {
+      "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-411c702ed7fb.mp4",
+      "sha256": "411c702ed7fb7a1277bbfc92a68c2d0455c430dc673bfb86acc7d4949902d4c9",
+      "bytes": 1158147
+    },
+    {
+      "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-8b7d0755fd00.vtt",
+      "sha256": "8b7d0755fd00f3330c9e757f1fb35ad800f1d0e1940e9a5b8b64999e99b5d874",
+      "bytes": 1304
+    },
+    {
+      "path": "/training/bhw-1-9/resources-safe-change-gemini-en-caf00e20c572.mp4",
+      "sha256": "caf00e20c572f60d29f5a8918699ff40d4fa3faa43a833af3d9fa315fcd53b7d",
+      "bytes": 1087042
+    },
+    {
+      "path": "/training/bhw-1-9/resources-safe-change-gemini-en-0eb02635cf26-poster.jpg",
+      "sha256": "0eb02635cf2644e9d7663590ed49cc02f2be2a6c906bf0f52b3fa8e371dddc35",
+      "bytes": 51014
+    },
+    {
+      "path": "/training/bhw-1-9/resources-safe-change-gemini-en-130ff6a84c4b.vtt",
+      "sha256": "130ff6a84c4bab5f2a0a75b58c4ed1a8fa4e612c8593642616b4d666f94938dc",
+      "bytes": 1237
+    }
+  ],
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json": "5585cb6745a745142ddd2ca3613b3c11355c0c2ef8e4a645e215d12aca7fd079",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.fil.md": "8b1b68bfcfb7e2874207947739453dee0f328c4e7ad14de79183eeaa6fee43ec",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.en.md": "dd661e8dcbd8f195da0def631d6250805ac34aa148bea4ca4eb050398ff40ffb",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/slides.json": "9a73d0c02f18d888a13e520f011dd8697782048e9457b550a14fe33e739bcf14",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/competency.json": "d460091f13bf82cc64f24bdafd01edd9fd8390f7890021d1f1bdbe33e6f9b1ce",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.fil.md": "fe7ba0506e03559cc9f652a3cd785b81a7b3ced46d69cce8e5e3180f3cb8ddc4",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.en.md": "90fbe699bcc82d535ff6dc8d5ddbc6cbe09ece8ef594c7472d78289117dfd988",
+    "src/components/elearning/reference-lessons.tsx": "b4578523d4478ffc2162859c2cd1bf1b3f11bc21cd3d0607af24f98fbb9491f9",
+    "remotion/src/Root.tsx": "b447f97af134250f993a3c79466bbcbc7e9add899df429fc09a254f2c6b2fcd8",
+    "content/training/day1-basic-competencies/narration.json": "c80e9d3d83b38068ace1baa96ea7a9d39969dbcf5b300f3e8f18aca3d94e0e7d",
+    ".github/workflows/lesson192-release.yml": "cddcd9876d8360667f5027fcdfb5441b0cf4d3851eb9d6cb44fcc4e5580ae439",
+    "scripts/lesson-192-release-check.mjs": "7890a82cf04b057e78f1b035b1037d9337b766709d48c5b295d55847eb2b7ccc",
+    "scripts/lesson-192-release-snapshot.mjs": "62f2342ce2a30914f65797f200803d9fff29afedc736a793ec07c9ed262cc404",
+    "scripts/lesson-192-live-smoke.mjs": "0ef9405e0e7d883717a42733580d46442b85778d445434e8da0cd620450e77c9",
+    "scripts/lib/lesson-192-release-integration.mjs": "b8697ffb1e03811731e9facb7087f8bd901e8cdad3a810fffe7c39511a9eb5f2",
+    "scripts/lib/lesson-192-integration.mjs": "9b6329169bb352a5280eaae3fa620202bd37414a262ac6cd424d28f0cd594cc5",
+    "scripts/tests/lesson-192.test.mjs": "6a4073b1c6831a1403855b75b084fc4bca7f6b952a149a3ab4d025986c8bcc46",
+    "scripts/tests/lesson-192-release.test.mjs": "fd1b4e135d8c3b8f0c58f076fe75795672e43ebed223c08d1a796a290b61affa"
+  }
+}

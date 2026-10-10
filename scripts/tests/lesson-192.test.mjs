@@ -1,3 +1,4 @@
+import {reviewed192View} from '../lib/lesson-192-release-integration.mjs';
 // @vitest-environment node
 import {beforeLesson192} from '../lib/lesson-192-integration.mjs';
 import {describe,it,expect} from 'vitest';
@@ -7,7 +8,7 @@ import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '..
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 const base='content/training/day1-basic-competencies/',leaf=base+'modules/09-sustainable-practices/lessons/resources-safe-change/';
 const j=p=>JSON.parse(fs.readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
-const frozen=j('docs/lesson-192-handoff-baseline.json'),lesson=j(leaf+'lesson.json'),slides=j(leaf+'slides.json');
+const frozen=j('docs/lesson-192-handoff-baseline.json'),lesson=JSON.parse(reviewed192View(leaf+'lesson.json')),slides=j(leaf+'slides.json');
 const prior=JSON.parse(frozen.target_files_utf8[leaf+'lesson.json']);
 const loaded=loadReferenceModule(base+'modules/09-sustainable-practices','public').lessons.find(l=>l.manifest.lesson_key==='resources-safe-change');
 describe('lesson 1.9.2 safe-change preservation and review boundaries',()=>{
