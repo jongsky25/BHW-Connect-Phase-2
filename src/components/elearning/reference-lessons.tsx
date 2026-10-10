@@ -304,6 +304,9 @@ export function ReferenceLessons(props: Props) {
   const definitionTracks = definitionRevision ? Object.values(lessonNarration ?? {}) : [];
   const definitionMinutes = definitionTracks.length === 6 ? Math.ceil(definitionTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const safetyPrepareRevision = lesson?.lesson_key === "safety-prepare" && lesson.revision.assets.some(asset => asset.id === "safety-prepare-check");
+  const controlsRevision = lesson?.lesson_key === "safety-controls" && lesson.revision.assets.some(asset => asset.id === "apple-controls-check");
+  const controlsTracks = controlsRevision ? Object.values(lessonNarration ?? {}) : [];
+  const controlsMinutes = controlsTracks.length === 6 ? Math.ceil(controlsTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const actionPlanRevision = lesson?.lesson_key === "problem-action-plan" && lesson.revision.assets.some(asset => asset.id === "action-check");
   const actionPlanTracks = actionPlanRevision ? Object.values(lessonNarration ?? {}) : [];
   const actionPlanMinutes = actionPlanTracks.length === 6 ? Math.ceil(actionPlanTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
@@ -311,6 +314,9 @@ export function ReferenceLessons(props: Props) {
   const prioritizationRevision = lesson?.lesson_key === "problem-prioritize" && lesson.revision.assets.some(asset => asset.id === "prioritize-criteria");
   const recordingTracks = recordingRevision ? Object.values(lessonNarration ?? {}) : [];
   const recordingMinutes = recordingTracks.length === 6 ? Math.ceil(recordingTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
+  const safetyIdentifyRevision = lesson?.lesson_key === "safety-identify" && lesson.revision.read_sections.length === 6;
+  const safetyIdentifyTracks = safetyIdentifyRevision ? Object.values(lessonNarration ?? {}) : [];
+  const safetyIdentifyMinutes = safetyIdentifyTracks.length === 6 ? Math.ceil(safetyIdentifyTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const causesRevision = lesson?.lesson_key === "problem-causes" && lesson.revision.assets.some(asset => asset.id === "carole-causes-check");
   const causesTracks = causesRevision ? Object.values(lessonNarration ?? {}) : [];
   const causesMinutes = causesTracks.length === 6 ? Math.ceil(causesTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
@@ -588,7 +594,7 @@ export function ReferenceLessons(props: Props) {
             {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || handoffRevision || causesRevision || definitionRevision || recordingRevision || actionPlanRevision || safetyPrepareRevision || lesson.lesson_key === "communication-explain") && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
-            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || actionPlanRevision || safetyPrepareRevision || prioritizationRevision) && !storyLayout && figures}
+            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyPrepareRevision || safetyIdentifyRevision || controlsRevision) && !storyLayout && figures}
             {prioritizationTable}
             {practice}
             {revealSummary && <div
@@ -612,7 +618,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !actionPlanRevision && !prioritizationRevision && !safetyPrepareRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyPrepareRevision && !safetyIdentifyRevision && !controlsRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -789,13 +795,21 @@ export function ReferenceLessons(props: Props) {
               {safetyPrepareRevision ? ui(
                 "Tinatayang 14–17 minuto para sa sariling pag-aaral: mas mahabang aktuwal na salaysay at 3–6 minutong check at pagninilay. Dagdag ang opsyonal na kuwento at replay; hiwalay ang 60-minutong guided practice.",
                 "Estimated 14–17 minutes for independent study: the longer actual narration and 3–6 minutes for the check and reflection. Optional story and replay are additional; the 60-minute guided practice is separate.",
-              ) : actionPlanRevision ? (actionPlanMinutes === null ? ui(
+              ) : controlsRevision ? (controlsMinutes === null ? ui("Hindi pa natiyak ang haba ng salaysay; hiwalay ang 60-minutong guided practice.", "Narration timing is pending; the 60-minute guided practice is separate.") : ui(
+                `Tinatayang ${controlsMinutes}–${controlsMinutes + 3} minuto: aktuwal na salaysay sa wikang ito at 3–6 minutong maikling pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 60-minutong guided practice.`,
+                `Estimated ${controlsMinutes}–${controlsMinutes + 3} minutes: actual narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 60-minute guided practice is separate.`,
+              )) : safetyIdentifyRevision ? (safetyIdentifyMinutes === null ? ui(
+                "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 45-minutong guided practice.",
+                "Allow time for reading and practice; the 45-minute guided practice is separate.",
+              ) : ui(
+                `Tinatayang ${safetyIdentifyMinutes}–${safetyIdentifyMinutes + 3} minuto: aktuwal na salaysay sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 45-minutong guided practice.`,
+                `Estimated ${safetyIdentifyMinutes}–${safetyIdentifyMinutes + 3} minutes: actual narration in this language and 3–6 minutes of practice. The optional story is additional; the 45-minute guided practice is separate.`,
+              )) : actionPlanRevision ? (actionPlanMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 50-minutong guided practice.",
                 "Allow time for reading and practice; the 50-minute guided practice is separate.",
               ) : ui(
                 `Tinatayang ${actionPlanMinutes}–${actionPlanMinutes + 3} minuto: salaysay sa wikang ito at 3–6 minutong pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 50-minutong guided practice.`,
-                `Estimated ${actionPlanMinutes}–${actionPlanMinutes + 3} minutes: narration in this language and 3–6 minutes of practice. Optional story viewing is additional; the 50-minute guided practice is separate.`,
-              )) : causesRevision ? (causesMinutes === null ? ui(
+                `Estimated ${actionPlanMinutes}–${actionPlanMinutes + 3} minutes: narration in this language and 3–6 minutes of practice. Optional story viewing is additional; the 50-minute guided practice is separate.`,              )) : causesRevision ? (causesMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 50-minutong guided practice. Susukatin pa ang bagong salaysay.",
                 "Allow time for reading and practice; the 50-minute guided practice is separate. New narration duration is pending measurement.",
               ) : ui(

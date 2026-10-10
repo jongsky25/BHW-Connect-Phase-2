@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan.",
-      "observable_en": "Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example.",
-      "not_yet_fil": "Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.",
-      "not_yet_en": "Misses the hazard or gives only “be careful” as the response.",
+      "observable_fil": "Natutukoy ang limang hazard group at halimbawa; sa isang ulat, may panganib, pinsala, ligtas na tiyak na kontrol, contact o paraan ng pagkumpirma at follow-up.",
+      "observable_en": "Names five hazard groups and examples; reports one hazard with harm, specific safe control, contact or verification route, and follow-up.",
+      "not_yet_fil": "Hindi makita ang hazard, mag-ingat lang, inimbentong contact/pagwawasto o unsafe action.",
+      "not_yet_en": "Misses the hazard, gives only be careful, invents a contact/correction or proposes unsafe action.",
       "levels": {
-        "kaya_na_fil": "Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan. Nagagawa kahit hindi pinapaalalahanan.",
-        "kaya_na_en": "Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example. Completes this without prompting.",
-        "kailangan_practice_fil": "Natutukoy ang panganib ngunit kulang ang contact o kontrol; ipapunan ang apat na field bago ulitin.",
-        "kailangan_practice_en": "Names the hazard but omits contact or control; complete all four fields and repeat.",
-        "hindi_pa_fil": "Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.",
-        "hindi_pa_en": "Misses the hazard or gives only “be careful” as the response."
+        "kaya_na_fil": "Natutukoy ang limang hazard group at halimbawa; sa isang ulat, may panganib, pinsala, ligtas na tiyak na kontrol, contact o paraan ng pagkumpirma at follow-up. Nagagawa nang walang prompt.",
+        "kaya_na_en": "Names five hazard groups and examples; reports one hazard with harm, specific safe control, contact or verification route, and follow-up. Completes independently.",
+        "kailangan_practice_fil": "May hazard ngunit kulang ang grupo, aksyon, contact o follow-up; punan ang kulang at ulitin.",
+        "kailangan_practice_en": "Names a hazard but omits a group, action, contact or follow-up; complete the missing field and retry.",
+        "hindi_pa_fil": "Hindi makita ang hazard, mag-ingat lang, inimbentong contact/pagwawasto o unsafe action.",
+        "hindi_pa_en": "Misses the hazard, gives only be careful, invents a contact/correction or proposes unsafe action."
       }
     }
   ]

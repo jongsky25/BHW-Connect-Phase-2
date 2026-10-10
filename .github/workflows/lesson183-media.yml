@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   draft:
-    if: github.head_ref == 'codex/lesson-183-apple-handoff'
+    if: github.head_ref == 'codex/lesson-183-apple-handoff' && github.event.pull_request.draft
     runs-on: ubuntu-latest
     timeout-minutes: 70
     steps:

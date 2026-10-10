@@ -1,0 +1,156 @@
+{
+  "authorization": "approved. merge and deploy to live",
+  "reviewed_head": "43397edf230160b02eeec057ff1cbd9d8d221e27",
+  "reviewed_package_sha256": "686d0d9822fed8da88edc0f22447094c4f31c1d59c01a21ddbd6c049de8a8583",
+  "reviewed_package_bytes": 496709170,
+  "lesson_keys": [
+    "safety-identify"
+  ],
+  "release_scope": "Complete reviewed bilingual lesson 1.8.1 including six illustrations, twelve narration tracks and two optional stories; no other lesson publication.",
+  "integrated_main": "7a39a4b1b4a2caa461f9aa14514bd66a747ab8c8",
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"safety-identify\",\n    \"position\": 0,\n    \"title_fil\": \"Kilalanin ang panganib\",\n    \"title_en\": \"Identify hazards\",\n    \"objectives_fil\": [\n      \"Sa halimbawang health station at field visit, tukuyin ang limang uri ng panganib at ipares ang isang nakitang panganib sa posibleng pinsala, agarang kontrol at reporting contact.\"\n    ],\n    \"objectives_en\": [\n      \"In a sample health-station and field-visit setting, identify five hazard groups and match one observed hazard to potential harm, immediate control and reporting contact.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"ana\",\n      \"concept_ids\": [\n        \"m8.requirements\"\n      ],\n      \"asset_ids\": [\n        \"apple-ana\"\n      ],\n      \"takeaway_fil\": \"Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain.\",\n      \"takeaway_en\": \"Workplace safety starts by identifying hazards and local requirements before the task.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"inspect\",\n      \"concept_ids\": [\n        \"m8.requirements\",\n        \"m8.practice\"\n      ],\n      \"asset_ids\": [\n        \"apple-inspect\"\n      ],\n      \"takeaway_fil\": \"Ang checklist ay dapat humantong sa kontrol at follow-up, hindi sa pagbilang lamang ng hazards.\",\n      \"takeaway_en\": \"A checklist should lead to controls and follow-up, not merely count hazards.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"scope-and-contact\",\n      \"concept_ids\": [\n        \"m8.requirements\",\n        \"m8.practice\"\n      ],\n      \"asset_ids\": [\n        \"apple-scope-and-contact\"\n      ],\n      \"check\": null,\n      \"takeaway_fil\": \"Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.\",\n      \"takeaway_en\": \"Confirm unknowns and make the report specific before work.\"\n    },\n    {\n      \"id\": \"five-hazards\",\n      \"concept_ids\": [\n        \"m8.requirements\",\n        \"m8.practice\",\n        \"m8.sharps\",\n        \"m8.infection\",\n        \"m8.ergonomics\",\n        \"m8.stress\",\n        \"m8.accidents\"\n      ],\n      \"asset_ids\": [\n        \"apple-five-hazards\"\n      ],\n      \"check\": null,\n      \"takeaway_fil\": \"Kumpirmahin ang hindi tiyak at gawing tiyak ang ulat bago ang gawain.\",\n      \"takeaway_en\": \"Confirm unknowns and make the report specific before work.\"\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m8.requirements\",\n        \"m8.practice\",\n        \"m8.sharps\",\n        \"m8.infection\",\n        \"m8.ergonomics\",\n        \"m8.stress\",\n        \"m8.accidents\"\n      ],\n      \"asset_ids\": [\n        \"apple-practice\"\n      ],\n      \"takeaway_fil\": \"Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n      \"takeaway_en\": \"Recognizing a hazard should lead to a specific control and responsible contact.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m8.requirements\",\n        \"m8.practice\",\n        \"m8.sharps\",\n        \"m8.infection\",\n        \"m8.ergonomics\",\n        \"m8.stress\",\n        \"m8.accidents\"\n      ],\n      \"asset_ids\": [\n        \"apple-check\"\n      ],\n      \"takeaway_fil\": \"Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n      \"takeaway_en\": \"Recognizing a hazard should lead to a specific control and responsible contact.\",\n      \"check\": {\n        \"prompt_fil\": \"May basang sahig sa pasukan. Aling ulat ang magagamit agad?\",\n        \"prompt_en\": \"The entrance floor is wet. Which report supports immediate action?\",\n        \"options\": [\n          {\n            \"fil\": \"“Basang pasukan, panganib madulas; ilayo muna ang tao at ipatama sa responsableng staff.”\",\n            \"en\": \"“Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”\"\n          },\n          {\n            \"fil\": \"“Mag-ingat na lang ang lahat hanggang uwian.”\",\n            \"en\": \"“Everyone should be careful until closing.”\"\n          },\n          {\n            \"fil\": \"“Walang nasaktan kaya walang kailangang aksyon.”\",\n            \"en\": \"“Nobody was hurt, so no action is needed.”\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Una: may lugar, panganib at agarang aksyon ang ulat. Ikalawa: hindi inaalis ng “mag-ingat” ang basang sahig. Ikatlo: hindi dahilan ang walang nasaktan para ipagpaliban ang aksyon. Sa adaptasyon, iniulat ni Apple ang basang pasukan at panganib ng pagkadulas, hiniling na ilayo muna ang tao at ipaayos sa responsableng staff. Kailangan niyang kumpirmahin ang reporting contact at balikan kung naayos na; hindi pa natin alam na naitama ang sahig.\",\n        \"feedback_en\": \"First: the report gives location, risk and immediate action. Second: “be careful” does not remove the wet floor. Third: absence of injury is no reason to delay action. In the adaptation, Apple reports the wet entrance and slip risk, requests keeping people away and correction by responsible staff. She needs to confirm the reporting contact and follow up on correction; we do not yet know that the floor has been corrected.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m8.requirements\",\n      \"read_ids\": [\n        \"ana\",\n        \"inspect\",\n        \"practice\",\n        \"check\",\n        \"scope-and-contact\",\n        \"five-hazards\"\n      ],\n      \"slide_ids\": [\n        \"slide-ana\",\n        \"slide-inspect\",\n        \"slide-practice\",\n        \"slide-check\",\n        \"slide-scope-and-contact\",\n        \"slide-five-hazards\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.practice\",\n      \"read_ids\": [\n        \"inspect\",\n        \"practice\",\n        \"check\",\n        \"scope-and-contact\",\n        \"five-hazards\"\n      ],\n      \"slide_ids\": [\n        \"slide-inspect\",\n        \"slide-practice\",\n        \"slide-check\",\n        \"slide-scope-and-contact\",\n        \"slide-five-hazards\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.sharps\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\",\n        \"five-hazards\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\",\n        \"slide-five-hazards\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.infection\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\",\n        \"five-hazards\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\",\n        \"slide-five-hazards\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.ergonomics\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\",\n        \"five-hazards\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\",\n        \"slide-five-hazards\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.stress\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\",\n        \"five-hazards\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\",\n        \"slide-five-hazards\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.accidents\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\",\n        \"five-hazards\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\",\n        \"slide-five-hazards\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        21,\n        22,\n        23\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"apple-ana\",\n      \"path\": \"/training/bhw-1-8/apple-ana-7eb585b52c44.png\",\n      \"content_hash\": \"7eb585b52c44345005a9bedd69e5d8929d12bd662de17529fee743f9548edddd\",\n      \"alt_fil\": \"Apple ay nasa ligtas na puwesto sa tabi ng basang pasukan; may saradong lalagyan at maaraw na ruta.\",\n      \"alt_en\": \"Apple observes a wet entrance from a safe position; a closed container and sunny route are visible.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon • Apple ay nasa ligtas na puwesto sa tabi ng basang pasukan; may saradong lalagyan at maaraw na ruta.\",\n      \"caption_en\": \"Fictional adaptation • Apple observes a wet entrance from a safe position; a closed container and sunny route are visible.\",\n      \"provenance\": \"Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"apple-inspect\",\n      \"path\": \"/training/bhw-1-8/apple-inspect-897192f83ca3.png\",\n      \"content_hash\": \"897192f83ca39bc9b3a758002cbec357d95772f6522909be6feeab7f3fea2405\",\n      \"alt_fil\": \"Sinusuri ni Apple ang basang pasukan, harang sa labasan at hugasang kulang ang sabon.\",\n      \"alt_en\": \"Apple inspects a wet entrance, blocked exit and sink missing soap.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon • Sinusuri ni Apple ang basang pasukan, harang sa labasan at hugasang kulang ang sabon.\",\n      \"caption_en\": \"Fictional adaptation • Apple inspects a wet entrance, blocked exit and sink missing soap.\",\n      \"provenance\": \"Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"apple-scope-and-contact\",\n      \"path\": \"/training/bhw-1-8/apple-scope-and-contact-584fe1d96b90.png\",\n      \"content_hash\": \"584fe1d96b90c5928ebd8b4a494e8255020ca467ecab06f49e34ef5cc678a01d\",\n      \"alt_fil\": \"Nagtatanong si Apple sa staff tungkol sa saklaw at reporting contact.\",\n      \"alt_en\": \"Apple asks staff about task scope and reporting contact.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon • Nagtatanong si Apple sa staff tungkol sa saklaw at reporting contact.\",\n      \"caption_en\": \"Fictional adaptation • Apple asks staff about task scope and reporting contact.\",\n      \"provenance\": \"Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"apple-five-hazards\",\n      \"path\": \"/training/bhw-1-8/apple-five-hazards-f3264a3b21ad.png\",\n      \"content_hash\": \"f3264a3b21ad09d7da5b56949b9bee07d3e8f77ec0b27d2b4370f2e927c84356\",\n      \"alt_fil\": \"Inaayos ni Apple ang limang situation card sa mesa.\",\n      \"alt_en\": \"Apple arranges five situation cards on a desk.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon • Inaayos ni Apple ang limang situation card sa mesa.\",\n      \"caption_en\": \"Fictional adaptation • Apple arranges five situation cards on a desk.\",\n      \"provenance\": \"Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"apple-practice\",\n      \"path\": \"/training/bhw-1-8/apple-practice-9f915e4d85a7.png\",\n      \"content_hash\": \"9f915e4d85a7b696348dd5003e372c8c0d139daf28f07ba51474b23bfc9fea46\",\n      \"alt_fil\": \"Nag-uulat si Apple sa paper rehearsal kasama ang partner at observer.\",\n      \"alt_en\": \"Apple rehearses a report with a partner and observer using paper cards.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon • Nag-uulat si Apple sa paper rehearsal kasama ang partner at observer.\",\n      \"caption_en\": \"Fictional adaptation • Apple rehearses a report with a partner and observer using paper cards.\",\n      \"provenance\": \"Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"apple-check\",\n      \"path\": \"/training/bhw-1-8/apple-check-7b81d7b13618.png\",\n      \"content_hash\": \"7b81d7b13618e5f0c5f988ed65996f6eb2f8b3a5331926e4f797fb0f09f1e21b\",\n      \"alt_fil\": \"Iniulat ni Apple ang pasukan sa staff; nananatiling basa ang sahig.\",\n      \"alt_en\": \"Apple reports the entrance hazard to staff; the floor remains wet.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon • Iniulat ni Apple ang pasukan sa staff; nananatiling basa ang sahig.\",\n      \"caption_en\": \"Fictional adaptation • Apple reports the entrance hazard to staff; the floor remains wet.\",\n      \"provenance\": \"Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"safety-identify-story\",\n      \"alt_fil\": \"Anim na narrated beat: kinikilala ni Apple ang panganib, nililinaw ang contact at gumagawa ng tiyak na ulat na may follow-up.\",\n      \"alt_en\": \"Six narrated beats: Apple identifies hazards, clarifies the contact and makes an actionable report with follow-up.\",\n      \"caption_fil\": \"Tiyak na ulat; kumpirmahin ang contact at balikan ang panganib.\",\n      \"caption_en\": \"An actionable report; confirm the contact and follow up.\",\n      \"provenance\": \"Lesson 1.8.1 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-8/safety-identify-gemini-fil-976dc6a5beed.mp4\",\n          \"content_hash\": \"976dc6a5beed85c0e249929caf58941ffebbf75304cf2a89856303f17769cbbe\",\n          \"duration_s\": 61,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-8/safety-identify-gemini-fil-3f58b18d337b.vtt\",\n            \"content_hash\": \"3f58b18d337bc0d873f706c476915d06ce02bc95dee4ce0e8e05b10b3c93c522\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-8/safety-identify-gemini-fil-3e7a0b516a9e-poster.jpg\",\n            \"content_hash\": \"3e7a0b516a9e040f9356f818e2c6df42df4a7eab0c259474c5fd7c180d1e6cbe\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-8/safety-identify-gemini-en-a84990ae493c.mp4\",\n          \"content_hash\": \"a84990ae493cf957f105d55bf75f407d343e8b092d3bcb438ae2cf17e4a72349\",\n          \"duration_s\": 53,\n          \"captions\": {\n            \"path\": \"/training/bhw-1-8/safety-identify-gemini-en-0ec4cdf4eb80.vtt\",\n            \"content_hash\": \"0ec4cdf4eb80d73e3a8c25186be0554c019d52c4facdfa8ef1154143b1e6fe10\"\n          },\n          \"poster\": {\n            \"path\": \"/training/bhw-1-8/safety-identify-gemini-en-1b972f8a6e9c-poster.jpg\",\n            \"content_hash\": \"1b972f8a6e9c1e4c511ae630d7cc4abdd41ba27a6ec5e2c088709ad607887941\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-8/safety-identify-gemini-fil-3e7a0b516a9e-poster.jpg\",\n      \"content_hash\": \"3e7a0b516a9e040f9356f818e2c6df42df4a7eab0c259474c5fd7c180d1e6cbe\"\n    }\n  ],\n  \"featured_asset_id\": \"safety-identify-story\"\n}\n",
+  "reviewed_lesson_sha256": "b5c5d229dbd45c125ea5b0234592c4af97104d4fddff4a8cb139b0e36d0b5908",
+  "asset_approval_change": "Only seven draft to approved statuses; reviewed teaching and media bytes unchanged.",
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/competency.json": "9f1699fe351d143dbddaa0ded66a148718f86952ba7c93b81c34d64808b309cc",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.en.md": "af57f8048277af6b0214e4e6acb167517fc08412ca0f4f590768e5aecbb4a37f",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.fil.md": "a6c3c81d0196386d2c2986248dd6ec8d2780201814f1a572ee78b1807ebcee30",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json": "e347d3014dbae60048004d949c0775b624d327bcdf416685e67fc93bb60d1946",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.en.md": "a83c856a54d6430162aeeb487f275380c1a6e9515d691b6cc6542e20b690805b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.fil.md": "0426a9252f36d51a0e71a57d125fc0f56e8fd2b99488642e08b08fbcd7b8165b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/slides.json": "bddb9a242c8a79f9e9f33814a2873e5766654dde26570f485ceb76126bf8f167",
+    "content/training/day1-basic-competencies/modules/08-osh/module.json": "8622d3162fadf3c0587577a6825ee26df9180f3957b356398485805f009f4755",
+    "src/components/elearning/reference-lessons.tsx": "e6fb5e5a050c97168283b9ec05991d01a997bca7bfd12fff10105c2c2de47909",
+    "remotion/src/Root.tsx": "df880e752e9689b4aacc8e2c745718ffec45bc68d7c7d8f9143aa94c774d79f5",
+    "content/training/day1-basic-competencies/narration.json": "7b210b52ec0d827af3716134130ffca0e87f32aedbbe891c55fab5a3ccf23f2c"
+  },
+  "approved_media": [
+    {
+      "path": "/training/audio/08-osh/safety-identify/ana.fil.5c67663059d1.mp3",
+      "sha256": "2aaa8c73d891100632fb25bccb8af39602129299a2600d3c01b868ab1536b458",
+      "bytes": 226952
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/inspect.fil.27741d3be8ec.mp3",
+      "sha256": "d9f202544a9338a2440b39fd60584fb769c27d91aba25a6b07a99b30508f7867",
+      "bytes": 285571
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/scope-and-contact.fil.7f825ae1b328.mp3",
+      "sha256": "e4c2fdae7e874f521a2937cff5be514d1bfbacc4e139021775441923ac8e200b",
+      "bytes": 242103
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/five-hazards.fil.4ee5ad61667c.mp3",
+      "sha256": "1b93aa16006431a93c57ed88c4c107e1488ce57b715b2de3623165830ca58729",
+      "bytes": 340741
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/practice.fil.309849ad64f1.mp3",
+      "sha256": "83cd0e486c329ec3bb333e5ad08de9855c24c0c2ca76e31ccba85106c69aa653",
+      "bytes": 296542
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/check.fil.53c57ccf4972.mp3",
+      "sha256": "d25276b193b9a12b1927138cf5c6512110d42cc6afad8f4fce663fd581a6463b",
+      "bytes": 114416
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/ana.en.7e6adff41d37.mp3",
+      "sha256": "847deefce0e589b705929a3c714c022d5254a3ea5b3459f08104150c827692dd",
+      "bytes": 206054
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/inspect.en.f562f5a7785d.mp3",
+      "sha256": "c9214683a46cd5140cc9687313a2b2917106ccbeb6bf7dc055d8fa5271e3199b",
+      "bytes": 247014
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/scope-and-contact.en.52f71aee14e7.mp3",
+      "sha256": "3808328227aaff63d076ceb20351cd368a6a26956f92b2c0f5867c9deaedf04d",
+      "bytes": 218697
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/five-hazards.en.bd71388dc634.mp3",
+      "sha256": "5118bf3069f1136f8d23451f630536d2eb7955f22cbd9491cc11586b1d671994",
+      "bytes": 284735
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/practice.en.cc34c938fdee.mp3",
+      "sha256": "26d2eb7ab0c9bde9215661842e2037212e96f2bbfb987b81b6d97bbf7485f048",
+      "bytes": 270211
+    },
+    {
+      "path": "/training/audio/08-osh/safety-identify/check.en.7fbfecb04be1.mp3",
+      "sha256": "906120d1b315e97eee6c5aff0b464df2bdae2a7a384d61f2efe92f9c3ba6312f",
+      "bytes": 101773
+    },
+    {
+      "path": "/training/bhw-1-8/apple-ana-7eb585b52c44.png",
+      "sha256": "7eb585b52c44345005a9bedd69e5d8929d12bd662de17529fee743f9548edddd",
+      "bytes": 2229281
+    },
+    {
+      "path": "/training/bhw-1-8/apple-inspect-897192f83ca3.png",
+      "sha256": "897192f83ca39bc9b3a758002cbec357d95772f6522909be6feeab7f3fea2405",
+      "bytes": 2181435
+    },
+    {
+      "path": "/training/bhw-1-8/apple-scope-and-contact-584fe1d96b90.png",
+      "sha256": "584fe1d96b90c5928ebd8b4a494e8255020ca467ecab06f49e34ef5cc678a01d",
+      "bytes": 2050637
+    },
+    {
+      "path": "/training/bhw-1-8/apple-five-hazards-f3264a3b21ad.png",
+      "sha256": "f3264a3b21ad09d7da5b56949b9bee07d3e8f77ec0b27d2b4370f2e927c84356",
+      "bytes": 1993859
+    },
+    {
+      "path": "/training/bhw-1-8/apple-practice-9f915e4d85a7.png",
+      "sha256": "9f915e4d85a7b696348dd5003e372c8c0d139daf28f07ba51474b23bfc9fea46",
+      "bytes": 2244883
+    },
+    {
+      "path": "/training/bhw-1-8/apple-check-7b81d7b13618.png",
+      "sha256": "7b81d7b13618e5f0c5f988ed65996f6eb2f8b3a5331926e4f797fb0f09f1e21b",
+      "bytes": 2333882
+    },
+    {
+      "path": "/training/bhw-1-8/safety-identify-gemini-fil-3e7a0b516a9e-poster.jpg",
+      "sha256": "3e7a0b516a9e040f9356f818e2c6df42df4a7eab0c259474c5fd7c180d1e6cbe",
+      "bytes": 58110
+    },
+    {
+      "path": "/training/bhw-1-8/safety-identify-gemini-fil-976dc6a5beed.mp4",
+      "sha256": "976dc6a5beed85c0e249929caf58941ffebbf75304cf2a89856303f17769cbbe",
+      "bytes": 951723
+    },
+    {
+      "path": "/training/bhw-1-8/safety-identify-gemini-fil-3f58b18d337b.vtt",
+      "sha256": "3f58b18d337bc0d873f706c476915d06ce02bc95dee4ce0e8e05b10b3c93c522",
+      "bytes": 976
+    },
+    {
+      "path": "/training/bhw-1-8/safety-identify-gemini-en-a84990ae493c.mp4",
+      "sha256": "a84990ae493cf957f105d55bf75f407d343e8b092d3bcb438ae2cf17e4a72349",
+      "bytes": 804236
+    },
+    {
+      "path": "/training/bhw-1-8/safety-identify-gemini-en-1b972f8a6e9c-poster.jpg",
+      "sha256": "1b972f8a6e9c1e4c511ae630d7cc4abdd41ba27a6ec5e2c088709ad607887941",
+      "bytes": 59696
+    },
+    {
+      "path": "/training/bhw-1-8/safety-identify-gemini-en-0ec4cdf4eb80.vtt",
+      "sha256": "0ec4cdf4eb80d73e3a8c25186be0554c019d52c4facdfa8ef1154143b1e6fe10",
+      "bytes": 868
+    }
+  ],
+  "known_CI_limitation": "Unchanged previously released lesson 1.7.3 has twelve stale narration tracks; full global freshness guard remains enabled.",
+  "review_states": {
+    "owner_package_review": "approved by user",
+    "human_listening": "not separately attested",
+    "authorized_clinical_review": "not separately attested",
+    "local_policy_SME_review": "not separately attested"
+  }
+}

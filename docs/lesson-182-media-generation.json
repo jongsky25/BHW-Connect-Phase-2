@@ -1,0 +1,149 @@
+{
+  "generated_date": "2026-10-09T08:53:26.785Z",
+  "source_commit": "05fdff498ca24cbadc67d21d089ff37064a0519c",
+  "owner_review": "pending",
+  "render_input_sha256": "20c7d2a51de2131e811441c704a535fed91218a30616c6d88ada172d621f6352",
+  "render_cached": false,
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 70.087,
+      "beats": [
+        {
+          "zone": "sharps",
+          "index": 0,
+          "text": "Kathang-isip na halimbawa: napansin ni Apple ang fill line. Ihihinto ang apektadong gawain; walang pagsiksik o ordinaryong basura.",
+          "start_ms": 0,
+          "end_ms": 10360
+        },
+        {
+          "zone": "infection",
+          "index": 1,
+          "text": "Piliin ang kontrol ayon sa ruta: kamay, bentilasyon, ligtas na basura at iwas-kagat. Hindi kapalit ng hand hygiene ang gloves.",
+          "start_ms": 10660,
+          "end_ms": 21500
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ayusin ang bag, upuan at gamit. Humingi ng tulong, magpahinga at iulat ang sakit; huwag pilitin ang masakit na galaw.",
+          "start_ms": 21800,
+          "end_ms": 31280
+        },
+        {
+          "zone": "workload",
+          "index": 3,
+          "text": "Sabi ni Apple, “Pagod na ako; kailangan ng suporta at ligtas na ruta.” Tiyakin ang alternatibo; hindi dagdag na oras ang default na kontrol.",
+          "start_ms": 31580,
+          "end_ms": 43020
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Limang pares: sharps, infection, katawan, stress at aksidente. Itama ang maling kontrol. Kapag kulang ang mahalagang proteksyon, ihinto at humingi ng pagwawasto.",
+          "start_ms": 43320,
+          "end_ms": 57320
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Pinagtugma ni Apple ang panganib at kontrol at humingi ng awtorisadong kapalit. Babalik lamang kapag natiyak ang pagwawasto; kung hindi pa tiyak, manatiling nakahinto.",
+          "start_ms": 57620,
+          "end_ms": 70020
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-8/safety-controls-gemini-fil-28be0111490b.mp4",
+        "content_hash": "28be0111490b5d66fbcb5b3b304422a83411ed7b8b1bb74b7e4ca80fa8be78a1",
+        "duration_s": 71,
+        "captions": {
+          "path": "/training/bhw-1-8/safety-controls-gemini-fil-c5d9a8f51106.vtt",
+          "content_hash": "c5d9a8f5110650b1e4584f589eedac0330e11b96ac3a3ecad6cb68c8a681385c"
+        },
+        "poster": {
+          "path": "/training/bhw-1-8/safety-controls-gemini-fil-6afed3d7ea95-poster.jpg",
+          "content_hash": "6afed3d7ea954e17008dbdb5a69a65d382fefc3412b97c83d4b391864d94f73c"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-8/safety-controls-gemini-fil-6afed3d7ea95-poster.jpg",
+        "content_hash": "6afed3d7ea954e17008dbdb5a69a65d382fefc3412b97c83d4b391864d94f73c"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 66.847,
+      "beats": [
+        {
+          "zone": "sharps",
+          "index": 0,
+          "text": "Fictional example: Apple notices the fill line. Pause the affected task; never compress contents or use ordinary waste.",
+          "start_ms": 0,
+          "end_ms": 8600
+        },
+        {
+          "zone": "infection",
+          "index": 1,
+          "text": "Choose controls for the route: hands, ventilation, safe waste and bite prevention. Gloves do not replace hand hygiene.",
+          "start_ms": 8900,
+          "end_ms": 18860
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Adjust bag, chair and supplies. Seek help, take breaks and report pain; do not force painful movement.",
+          "start_ms": 19160,
+          "end_ms": 29080
+        },
+        {
+          "zone": "workload",
+          "index": 3,
+          "text": "Apple says, “I am exhausted; I need support and a safe route.” Verify the alternative; extra hours are not the default control.",
+          "start_ms": 29380,
+          "end_ms": 40140
+        },
+        {
+          "zone": "practice",
+          "index": 4,
+          "text": "Five groups: sharps injuries; infections; body pain; workload stress; and accidents. Correct mismatched controls. If essential protection is missing, pause and seek correction.",
+          "start_ms": 40440,
+          "end_ms": 55520
+        },
+        {
+          "zone": "check",
+          "index": 5,
+          "text": "Apple matches the hazard to the control and requests authorized replacement. Resume only after verified correction; if uncertain, keep the task paused.",
+          "start_ms": 55820,
+          "end_ms": 66780
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-8/safety-controls-gemini-en-59a971f6904a.mp4",
+        "content_hash": "59a971f6904a8a5f17de5a8f1f57758db8ef21a96ff0e534535f66ad696e110e",
+        "duration_s": 68,
+        "captions": {
+          "path": "/training/bhw-1-8/safety-controls-gemini-en-b1a15375b20e.vtt",
+          "content_hash": "b1a15375b20e0245c7230367cd9d2f0731bd11cf2bdf92d00d5e25a65fe1dfed"
+        },
+        "poster": {
+          "path": "/training/bhw-1-8/safety-controls-gemini-en-823b968b4e1b-poster.jpg",
+          "content_hash": "823b968b4e1b889e1b1e877d2ec4de433e355aa95a34fd6732a532c1dcbcae6e"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-8/safety-controls-gemini-en-823b968b4e1b-poster.jpg",
+        "content_hash": "823b968b4e1b889e1b1e877d2ec4de433e355aa95a34fd6732a532c1dcbcae6e"
+      }
+    }
+  ]
+}

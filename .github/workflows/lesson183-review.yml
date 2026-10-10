@@ -10,7 +10,7 @@ permissions:
   actions: read
 jobs:
   review:
-    if: github.head_ref == 'codex/lesson-183-apple-handoff'
+    if: github.head_ref == 'codex/lesson-183-apple-handoff' && github.event.pull_request.draft
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:

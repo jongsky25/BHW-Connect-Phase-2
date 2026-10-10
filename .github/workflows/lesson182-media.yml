@@ -1,0 +1,92 @@
+name: Lesson 1.8.2 draft media generation
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson182-media.yml'
+      - 'docs/lesson-182-authored-screens.json'
+      - 'scripts/lesson-182-media-build.mjs'
+      - 'scripts/lesson-182-audio-*.mjs'
+permissions:
+  contents: read
+concurrency:
+  group: lesson182-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-182-apple-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Generate only before evidence is frozen
+        id: scope
+        run: |
+          if test -f docs/lesson-182-final-evidence-origins.json; then
+            echo "generate=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "generate=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@v4
+        if: steps.scope.outputs.generate == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.scope.outputs.generate == 'true'
+        run: npm ci
+      - if: steps.scope.outputs.generate == 'true'
+        run: npm ci
+        working-directory: remotion
+      - if: steps.scope.outputs.generate == 'true'
+        run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Bounded read-only published snapshot
+        if: steps.scope.outputs.generate == 'true'
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        continue-on-error: true
+        run: node scripts/lesson-182-published-snapshot.mjs
+      - name: Generate only target draft media and preserve old media
+        if: steps.scope.outputs.generate == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON182_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-182-record-fetch.mjs'
+        run: node scripts/lesson-182-media-build.mjs
+      - name: Full review of twelve Read MP3s and two shipped AAC tracks
+        if: always() && steps.scope.outputs.generate == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON182_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-182-record-fetch.mjs'
+        run: node scripts/lesson-182-audio-review.mjs
+      - name: Decode and review fifty-six focused excerpts
+        if: always() && steps.scope.outputs.generate == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON182_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-182-record-fetch.mjs'
+        run: node scripts/lesson-182-audio-focus.mjs
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.scope.outputs.generate == 'true'
+        with:
+          name: lesson182-generated-evidence
+          path: |
+            lesson-182-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/
+            public/training/audio/08-osh/safety-controls/
+            public/training/bhw-1-8/safety-controls-*
+            remotion/public/safety-controls/narration-*
+            remotion/public/safety-controls/shipped-aac-*
+            docs/lesson-182-media-generation.json
+            docs/lesson-182-audio-*.json
+            .preview/lesson182-raw/
+            .preview/lesson182-excerpts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

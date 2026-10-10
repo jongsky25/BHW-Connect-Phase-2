@@ -1,3 +1,4 @@
+import {release183View} from './lib/lesson-183-release-integration.mjs';
 // Exact non-target protection and semantic target preservation against the handoff.
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
@@ -14,7 +15,7 @@ for(const [p,h]of Object.entries(b.protected_sha256)){
  const bytes=fs.lstatSync(p).isSymbolicLink()?Buffer.from(fs.readlinkSync(p)):beforeProposed183(p);
  assert.equal(sha(bytes),h,p);count++;
 }
-const current=read(narrationPath);
+const current=JSON.parse(release183View(narrationPath,'reviewed183'));
 const stable=v=>{if(Array.isArray(v))return v.map(stable);if(v&&typeof v==='object')return Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])]));return v;};
 const nonTarget={...current,lessons:Object.fromEntries(Object.entries(current.lessons).filter(([k])=>k!=='safety-prepare')),history:Object.fromEntries(Object.entries(current.history??{}).filter(([k])=>k!=='safety-prepare'))};
 assert.equal(sha(Buffer.from(JSON.stringify(stable(nonTarget)))),b.narration_non_target_sha256,'Non-target narration fields');
