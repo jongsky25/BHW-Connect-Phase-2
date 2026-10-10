@@ -1,62 +1,79 @@
-## [purpose] Layunin
+## [purpose] Layunin at ebidensya
 
-Pumili ng resource-saving action na nagpapanatili ng infection prevention, critical equipment at napapanahong serbisyo, at ipaliwanag ang tinanggihang opsyon.
+Pumili ng resource-saving action na nagpapanatili ng infection prevention, critical equipment at napapanahong serbisyo, at ipaliwanag ang tinanggihang opsyon. Kathang-isip na BHW si Charlaine; hindi DOH quotation ang adaptation. Produkto: isang proposal na may safeguard, rejection, verification at retry. Ang quiz, attendance at panonood ay hindi observed competence.
 
-## [time-materials] Oras at kagamitan
+## [time-materials] Oras at materyales
 
-60 minuto para sa pagsasanay na pinamumunuan ng facilitator. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.
+5 opening + 12 modelling + 25 practice/feedback/retry + 10 safeguards debrief + 8 transfer = 60 minutes. Ang 60 + 60 + 60 = 180 ay module practice allocation. Hiwalay ang self-study audio at optional story; hindi ito TESDA certification.
 
-## [prepare] Ihanda
+Para sa 30 learner: sampung triad, BHW/kasamahan/observer. Ihanda ang bilingual A4 kit: option cards, version/cause sheet, safeguard checklist, proposal/retry record at one-page decision aid. Gumamit lamang ng dummy teaching sheets at kit; walang patient record, gamot, clinical item o aktuwal na utility work. Ibigay ang buong fictional inputs sa kit; hindi kailangang mag-imbento ang trainer.
 
-Ihanda ang dalawang pares ng opsyon at lokal na single-use at equipment policy. Walang aktuwal na pagbago sa clinical supplies sa practice.
+## [prepare] Ihanda bago magsimula
 
-## [opening] Pambungad
+Basahin ang anim na paired screens at parehong original checks. Suriin ang lokal na document-control, clinical single-use at facility procedures sa awtorisadong reviewer bago workplace transfer. Hindi pa kumpirmado ang policy approval sa kuwentong ito. Kung walang approved procedure, discussion at dummy rehearsal lamang.
 
-Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?
+I-print ang kit, basahin ang version A/B inputs at ihanda ang roster T1–T10, learner A/B/C. Trainer sample: round 1 T1-A, round 2 T2-B, round 3 T3-C. Sabihin nang maaga na ang ibang 27 ay hindi trainer-observed sa run na ito. Magtakda ng susunod na observation slot; huwag markahang passed ang peer record.
 
-## [steps] Mga hakbang
+## [opening] Opening: 5 minuto
 
-Basahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.
+Sabihin: “Ano ang aksaya na puwedeng bawasan nang buo pa rin ang proteksyon?” Ipakita ang card na may high bill at vaccine refrigerator, walang equipment switching. Itanong: “Ano ang dapat manatili?” Inaasahan: cold chain, required ventilation at handwashing water. Sabihin: “Proposal ang gagawin natin, hindi repair o pagtanggal ng serbisyo.” Ipabasa o basahin nang malakas ang objective at original utilities check.
 
-## [expected-answers] Inaasahang sagot
+## [steps] Modelling: 12 minuto
 
-Sa utilities check, panatilihing gumagana ang vaccine refrigerator at suriin ang hindi kailangang ilaw ayon sa facility procedure. Di-ligtas na patayin ang cold-chain equipment o kinakailangang bentilasyon.
+Minuto 0–4: ihambing ang utilities cards. Sabihin: “Siyasatin ang hindi kailangang ilaw ayon sa procedure; hindi patayin ang refrigerator.” I-model ang unknown approval at savings.
 
-Ang ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.
+Minuto 4–8: ilatag ang drawer A, printout A, controlled master B at supervisor confirmation B. Itanong: “Anong kumpirmado? Anong hindi pa?” Itala ang version mismatch. Ipakita ang dalawang sanhi: drawer copied versus wrong file selected. Parehong hindi pa proved; wala pang sagot ang nag-print. Kumpirmahin ang source bago routine change.
 
-## [misconception] Karaniwang pagkakamali
+Minuto 8–12: i-model ang mahinang “Reusable para tipid.” Feedback: “Anong instruction ang mananatili? Anong single-use ang tatanggihan?” Retry: “Aprubadong teaching visual kung angkop, buo ang instruction; walang clinical reuse. Policy approval kailangan.” Ipakita ang proposal/retry record; huwag ipakita ang check ending bago sumagot.
 
-Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid. Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.
+## [expected-answers] Inaasahang sagot at produkto
 
-## [practice] Gawaing pagsasanay
+Safe proposal: ipasuri/ipaayos ang iniulat na tagas sa awtorisadong tao habang buo ang handwashing water, o siyasatin ang aprubadong teaching visual kung angkop at buo ang accessible instruction. Rejection: handwashing restriction o clinical single-use reuse. Ang high bill ay hindi patunay na refrigerator ang problema.
 
-Ihambing ang “ayusin ang leak” at “bawasan ang handwashing.” Ilista ang matitipid, posibleng pinsala at safeguard. Pumili at ipaliwanag sa kapareha. Ulitin gamit ang reusable visual laban sa clinical single-use reuse. Kung mag-isa, isulat ang tinanggihang opsyon at dahilan. Bago subukan ang pagbabago sa trabaho, kumpirmahin sa supervisor ang policy at safety check.
+Verification product: drawer A; printout A; master B; kunwaring supervisor confirms B. Kumpirmado ang mismatch. Hindi pa alam kung drawer o computer file ang sanhi. Susunod: ihambing ang copies/files at kausapin ang nag-print sa ilalim ng procedure. Walang sinasabing cost, measured savings, repair completion o actual approval.
 
-## [answer-key] Susi sa sagot
+Kumpletong record: napiling proposal; posibleng aksayang mabawasan; safeguard; rejected option at dahilan; approval/verification na kailangan; unang attempt; tiyak na feedback; observable retry; trainer-observation status.
 
-Utilities check: 1. Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw ayon sa facility procedure.
+## [misconception] Maling pagkaunawa at ligtas na paghinto
 
-3. Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop.
+“Mas kaunting papel kahit mali” → itama ang approved version at kumpletong instruction. “Lahat ng plastic reusable” → paghiwalayin ang nonclinical teaching visual at clinical single-use. “Parehong A, kaya drawer ang sanhi” → tugma lamang, hindi proof. “High bill, patayin ang refrigerator” → protektahan ang cold chain.
 
-Ang ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.
+Kung may actual shutdown, repair, clinical reuse o patient record na iminungkahi, sabihin: “Hinto. Option cards lamang; hindi natin aalisin ang kailangang proteksyon.” Itigil ang unsafe demonstration, ipaliwanag ang safeguard, at ipaulit sa dummy case. Hindi remedyo ang invented cleaning recipe. Ipa-review ang local procedure sa awtorisadong facility/infection-prevention reviewer.
 
-## [observe] Obserbahan
+## [practice] Practice, feedback at retry: 25 minuto
 
-Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon.
+Tatlong anim-na-minutong rounds = 18 minuto, saka 7 minutong shared debrief. Sa bawat round: 2 context/setup + 2 attempt + 1 feedback + 1 retry = 6. Round 1 A ang BHW, B kasamahan, C observer; round 2 B/C/A; round 3 C/A/B.
 
-Kaya na: Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon. Nagagawa kahit hindi pinapaalalahanan.
+Round 1: tagas versus handwashing restriction. Round 2: approved reusable teaching visual versus clinical single-use reuse. Round 3: version/cause sheet at paper-saving proposal. Sa bawat attempt itanong: “Ano ang pipiliin? Anong proteksyon ang mananatili? Bakit tinanggihan ang kabila? Anong hindi pa alam?” Observer records exact action/words, hindi impression.
 
-Kailangan pang magsanay: Ligtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong tanong sa practice at ipaulit.
+Feedback: pangalanan ang isang kulang, halimbawa “Wala pa ang approval.” Retry: learner adds “Kumpirmahin muna sa supervisor; mungkahi pa lamang.” Trainer watches all four attempt/feedback/retry minutes for one sampled learner each round; remaining two minutes are setup/movement. Debrief: paghambingin ang mga unknowns, walang attendance-based passing.
 
-Hindi pa: Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.
+## [answer-key] Answer key sa parehong checks
 
-Markahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.
+Utilities: index 0, unang opsyon. 1: siyasatin ang unnecessary lights under procedure habang gumagana ang refrigerator. 2: unsafe ang overnight refrigerator shutdown. 3: unsafe ang required-ventilation shutdown. Charlaine chooses safeguarded investigation, rejects both cuts and submits for authorized decision. Approval at savings unknown.
 
-## [support] Tulong
+Check: index 2, ikatlong opsyon. 1: hindi tanggalin ang needed instructions. 2: hindi ubusin ang lumang bersyon nang walang approved-version verification. 3: siyasatin ang approved version at approved reusable visual kung angkop at buo ang accessible instruction. Charlaine submits the safeguarded proposal; walang claim ng measured savings, repair completion o observed competence.
 
-Ligtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong tanong sa practice at ipaulit. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.
+Basahin ang lahat ng dahilan pagkatapos sumagot. Protektado ang tubig, single-use rules, critical equipment, ventilation at urgent referral. Ang quiz choices at prompt ay eksaktong original; huwag magdagdag ng bagong factual input sa tanong.
 
-## [sources-review] Sanggunian at tala sa pagsusuri
+## [observe] Observation at debrief: 10 minuto
 
-Draft para sa pagsusuri. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35; WHO — Climate-resilient and environmentally sustainable health care facilities (https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities). Instructional expansion ito ng ikasiyam na competency, hindi hiwalay na manual chapter. Ang draft crosswalk sa TESDA 400311217 ay nasa review report; kailangan pa ng assessor review at lokal na work procedures. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.
+Trainer sample: T1-A round 1 minuto 2–6; T2-B round 2 minuto 8–12; T3-C round 3 minuto 14–18, relative sa practice start. Tatlong complete four-minute observations lamang; at least 27 learners remain not trainer-observed. Peer practice is not a pass.
 
+Gamitin ang objective_index 0 indicator: ligtas na choice, evidence checking sa dalawang causes, safeguard at rejection, verification bago workplace action. Kaya na: walang prompt. Kailangan practice: ligtas ngunit kulang ang paliwanag; feedback at retry. Hindi pa: unsafe cut; safe stop at supported retry. Itala ang actual observed words/action at support; huwag gawing certification rule ang rubric.
+
+Gumawa ng follow-up roster: T1-B/C, T2-A/C, T3-A/B at T4–T10 A/B/C = 27. Magbigay ng hiwalay na apat-na-minutong observation slot bawat learner, at setup/movement time; hindi ito kasya sa natitirang 10 minuto. Sa debrief itanong kung anong evidence at proteksyon ang mananatili.
+
+## [support] Support at transfer: 8 minuto
+
+Basahin ang cards nang malakas, gumamit ng malaking print at learner-selected language. Maaaring spoken answer na isusulat ng kasamahan; pareho ang objective. Scaffold: “Pipiliin ko ang __. Mananatili ang __. Tatanggihan ko ang __ dahil __. Kumpirmahin muna ang __.” Unti-unting alisin ang prompt sa retry at itala ang tulong.
+
+Solo: isulat/sabihin ang parehong apat na linya, ihambing sa aid, itama at ulitin. Walang solo self-pass; mag-book ng trainer observation. Transfer prompt: “Sa susunod na duty, anong proposal at anong approved procedure ang iche-check mo muna?” I-record ang verifier at follow-up na hindi pa kumpirmado. Walang actual implementation habang walang authorization.
+
+## [sources-review] Sources at hiwalay na review
+
+Candidate sources: Facilitator PDF 19/printed 12 (3-hour sustainable competency), PDF 22/printed 15 (ibang 4-hour entrepreneurial competency), PDF 34/printed 27 (ibang 10-hour common competency); Manual PDF 14/printed 6 at PDF 30/printed 19; TESDA unit 400311217; WHO sustainability guidance. Manual at Guide ay magkaiba ang order ng 7S; huwag baguhin ang quotations o gawing iisang prescribed sequence.
+
+Walang hiwalay na sustainable section sa original 78-slide Day 1 deck; huwag mag-imbento ng slide citation. Ang fictional case at A/B sheets ay adaptation, hindi source quotation. Tingnan ang exact source-audit receipt para sa na-inspect na originals at unresolved access. Hindi awtomatikong certification ang 60 minutong practice.
+
+Mga hiwalay na estado: source audit; facility/infection-prevention review; actual model audio review; human listening; owner package approval. Pending ang local reviewer, human listening at owner approval; hindi pinapalitan ng model review ang mga ito.
