@@ -1,0 +1,1211 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "a1a54d755cda8c609c3006843acc11abfba3437e",
+  "lesson_number": "1.9.3",
+  "lesson_key": "resources-monitor",
+  "lesson_id": "59cea10b-f0e8-4fa9-837f-77b8504f4e77",
+  "module_id": "586f0588-2776-42b0-be1c-bc88c4ef825f",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "character": {
+    "name": "Charlaine",
+    "pronouns": "she/her",
+    "appearance": "fictional adult Asian BHW; long hair; fair/white skin; no age supplied",
+    "reference_status": "not generated; 1.9.1 coordinates a new shared fictional reference"
+  },
+  "manifest": {
+    "lesson_key": "resources-monitor",
+    "position": 2,
+    "title_fil": "Subukan at subaybayan",
+    "title_en": "Try and monitor",
+    "objectives_fil": [
+      "Magmungkahi ng maliit na trial na may owner at review date, at ihambing ang resource use sa magkatulad na workload kasama ang kalidad ng serbisyo."
+    ],
+    "objectives_en": [
+      "Propose a small trial with an owner and review date, and compare resource use at comparable workloads alongside service quality."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "trial",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review"
+      ]
+    },
+    {
+      "id": "compare",
+      "concept_ids": [
+        "m9.review"
+      ]
+    },
+    {
+      "id": "communicate",
+      "concept_ids": [
+        "m9.communicate"
+      ]
+    },
+    {
+      "id": "workload",
+      "concept_ids": [
+        "m9.review"
+      ]
+    },
+    {
+      "id": "handover",
+      "concept_ids": [
+        "m9.organize",
+        "m9.review"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review",
+        "m9.organize"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review",
+        "m9.organize"
+      ]
+    }
+  ],
+  "slide_anchors": [
+    {
+      "id": "slide-trial",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review"
+      ]
+    },
+    {
+      "id": "slide-compare",
+      "concept_ids": [
+        "m9.review"
+      ]
+    },
+    {
+      "id": "slide-communicate",
+      "concept_ids": [
+        "m9.communicate"
+      ]
+    },
+    {
+      "id": "slide-workload",
+      "concept_ids": [
+        "m9.review"
+      ]
+    },
+    {
+      "id": "slide-handover",
+      "concept_ids": [
+        "m9.organize",
+        "m9.review"
+      ]
+    },
+    {
+      "id": "slide-practice",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review",
+        "m9.organize"
+      ]
+    },
+    {
+      "id": "slide-check",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review",
+        "m9.organize"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m9.communicate",
+      "read_ids": [
+        "trial",
+        "communicate",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-trial",
+        "slide-communicate",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.review",
+      "read_ids": [
+        "trial",
+        "compare",
+        "workload",
+        "handover",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-trial",
+        "slide-compare",
+        "slide-workload",
+        "slide-handover",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.organize",
+      "read_ids": [
+        "handover",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-handover",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    }
+  ],
+  "original_checks": {
+    "compare": {
+      "prompt_fil": "Bumaba ang maling-bersyong reprint mula 20/100 tungong 5/100 pahina. Ano ang tamang ulat?",
+      "prompt_en": "Wrong-version reprints fell from 20/100 to 5/100 pages. What is the sound report?",
+      "options": [
+        {
+          "fil": "Bawas na 15 bawat 100 pahina; suriin din kung magkatulad ang workload at tama ang materyal.",
+          "en": "Fifteen fewer per 100 pages; also check comparable workload and correct materials."
+        },
+        {
+          "fil": "Siguradong 75% na mas mababa ang gastos.",
+          "en": "Costs are certainly 75% lower."
+        },
+        {
+          "fil": "Hindi kailangan ng bilang ng session o kalidad.",
+          "en": "Session counts and quality do not matter."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang unang sagot ay tama sa sukat at sinusuri ang kalidad. Hindi katumbas ng reprint rate ang kabuuang gastos; kailangan ang workload at serbisyo upang maunawaan ang resulta.",
+      "feedback_en": "The first response uses the correct rate and checks quality. A reprint rate is not total cost; workload and service must also be considered."
+    },
+    "communicate": {
+      "prompt_fil": "Walang internet ang kasamang magpi-print ng handout. Ano ang dapat isama sa trial?",
+      "prompt_en": "A colleague who prints handouts has no internet. What should the trial include?",
+      "options": [
+        {
+          "fil": "Sabihing mag-download na lang kahit walang internet.",
+          "en": "Tell the colleague to download it anyway."
+        },
+        {
+          "fil": "Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna ng kasama.",
+          "en": "Prepare a controlled paper master, verify its version and ask for the colleague’s feedback."
+        },
+        {
+          "fil": "Gamitin ang anumang lumang kopya sa drawer.",
+          "en": "Use any old copy in the drawer."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Ang ikalawang sagot ay umaangkop sa hadlang habang kontrolado ang bersyon at may puna mula sa kasama. Hindi solusyon ang hindi magawang download o hindi aprubadong lumang kopya.",
+      "feedback_en": "The second response addresses the barrier while controlling the version and seeking feedback. An impossible download or unapproved old copy does not solve it."
+    },
+    "check": {
+      "prompt_fil": "Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?",
+      "prompt_en": "Paper use halved because half the sessions were canceled. What can be concluded?",
+      "options": [
+        {
+          "fil": "Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo.",
+          "en": "This does not yet show improvement; compare use per session and services delivered."
+        },
+        {
+          "fil": "Tagumpay na dahil mas mababa ang bill.",
+          "en": "It is a success because the bill is lower."
+        },
+        {
+          "fil": "Wala nang kailangang review dahil nabawasan ang papel.",
+          "en": "No review is needed because less paper was used."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.",
+      "feedback_en": "The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved."
+    }
+  },
+  "original_competency": {
+    "observation_indicators": [
+      {
+        "objective_index": 0,
+        "observable_fil": "May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover.",
+        "observable_en": "Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover.",
+        "not_yet_fil": "Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.",
+        "not_yet_en": "Declares lower totals a success despite reduced or canceled services.",
+        "levels": {
+          "kaya_na_fil": "May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover. Nagagawa kahit hindi pinapaalalahanan.",
+          "kaya_na_en": "Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover. Completes this without prompting.",
+          "kailangan_practice_fil": "Kumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat session o bawat 100 pahina.",
+          "kailangan_practice_en": "Completes the plan but compares raw totals only; prompt for per-session or per-100-page measures.",
+          "hindi_pa_fil": "Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.",
+          "hindi_pa_en": "Declares lower totals a success despite reduced or canceled services."
+        }
+      }
+    ]
+  },
+  "target_files_utf8": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/competency.json": "{\n  \"observation_indicators\": [\n    {\n      \"objective_index\": 0,\n      \"observable_fil\": \"May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover.\",\n      \"observable_en\": \"Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover.\",\n      \"not_yet_fil\": \"Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.\",\n      \"not_yet_en\": \"Declares lower totals a success despite reduced or canceled services.\",\n      \"levels\": {\n        \"kaya_na_fil\": \"May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover. Nagagawa kahit hindi pinapaalalahanan.\",\n        \"kaya_na_en\": \"Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover. Completes this without prompting.\",\n        \"kailangan_practice_fil\": \"Kumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat session o bawat 100 pahina.\",\n        \"kailangan_practice_en\": \"Completes the plan but compares raw totals only; prompt for per-session or per-100-page measures.\",\n        \"hindi_pa_fil\": \"Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.\",\n        \"hindi_pa_en\": \"Declares lower totals a success despite reduced or canceled services.\"\n      }\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.en.md": "## [purpose] Purpose\n\nPropose a small trial with an owner and review date, and compare resource use at comparable workloads alongside service quality.\n\n## [time-materials] Time and materials\n\n60 minutes of facilitated practice within the subchapter's 3 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare the two fictional 100-page tallies and a blank trial card. Confirm authority for the approved version and trial.\n\n## [opening] Opening\n\nPaper use halved because half the sessions were canceled. What can be concluded?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nFor the comparison check, reprints fell by 15 per 100 pages; confirm that workload and correct materials remained comparable. This rate does not prove a 75% reduction in cost.\n\nFor the communication check, address the no-internet barrier with a controlled paper master, version verification and colleague feedback. Do not substitute an unapproved old copy.\n\nThe first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved.\n\n## [misconception] Common misconception\n\nDeclares lower totals a success despite reduced or canceled services. Lower consumption is a success only when correct, safe service is still delivered.\n\n## [practice] Practice activity\n\nFill a trial card: problem, change, owner, baseline, quality measure, review date. Use 20/100 and 5/100 for a fair comparison. In pairs, one colleague has no internet; explain the controlled paper master and handover. Alone, write the replacement colleague’s routine. Ask the team to review the trial before starting and set a review date.\n\n## [answer-key] Answer key\n\nComparison check: 1. Fifteen fewer reprints per 100 pages; check comparable workload and correct materials.\n\nCommunication check: 2. Prepare a controlled paper master, verify its version and ask for feedback.\n\n1. This does not yet show improvement; compare use per session and services delivered.\n\nThe first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved.\n\n## [observe] Observe\n\nSpecifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover.\n\nReady: Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover. Completes this without prompting.\n\nNeeds practice: Completes the plan but compares raw totals only; prompt for per-session or per-100-page measures.\n\nNot yet: Declares lower totals a success despite reduced or canceled services.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nCompletes the plan but compares raw totals only; prompt for per-session or per-100-page measures. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. This expands the ninth competency rather than a standalone manual chapter. The draft TESDA 400311217 crosswalk is in the review report; assessor review and local work procedures remain pending. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n\r\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.fil.md": "## [purpose] Layunin\n\nMagmungkahi ng maliit na trial na may owner at review date, at ihambing ang resource use sa magkatulad na workload kasama ang kalidad ng serbisyo.\n\n## [time-materials] Oras at kagamitan\n\n60 minuto para sa pagsasanay na pinamumunuan ng facilitator. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang dalawang halimbawang 100-page tally at blank trial card. Tiyakin kung sino ang may authority sa approved version at trial.\n\n## [opening] Pambungad\n\nKalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nSa comparison check, bumaba ang reprint ng 15 bawat 100 pahina; tiyaking maihahambing ang workload at tama pa rin ang materyal. Hindi patunay ang rate na ito na 75% ang nabawas sa gastos.\n\nSa communication check, tugunan ang kawalan ng internet sa pamamagitan ng kontroladong papel na master, pagtitiyak sa bersyon at paghingi ng puna ng kasama. Huwag gumamit ng hindi aprubadong lumang kopya.\n\nAng unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.\n\n## [misconception] Karaniwang pagkakamali\n\nIpinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo. Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.\n\n## [practice] Gawaing pagsasanay\n\nPunan ang trial card: problema, pagbabago, owner, baseline, sukatan ng kalidad, review date. Gamitin ang 20/100 at 5/100 para sa patas na paghahambing. Magpares: isa ang kasamahang walang internet; ipaliwanag ang controlled paper master at handover. Kung mag-isa, isulat ang magiging routine ng kapalit. Sa team meeting, ipasuri ang trial bago simulan at magtakda ng review.\n\n## [answer-key] Susi sa sagot\n\nComparison check: 1. Bawas na 15 reprint bawat 100 pahina; suriin ang workload at tamang materyal.\n\nCommunication check: 2. Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna.\n\n1. Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo.\n\nAng unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.\n\n## [observe] Obserbahan\n\nMay owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover.\n\nKaya na: May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Kumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat session o bawat 100 pahina.\n\nHindi pa: Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nKumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat session o bawat 100 pahina. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. Instructional expansion ito ng ikasiyam na competency, hindi hiwalay na manual chapter. Ang draft crosswalk sa TESDA 400311217 ay nasa review report; kailangan pa ng assessor review at lokal na work procedures. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n\r\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"resources-monitor\",\n    \"position\": 2,\n    \"title_fil\": \"Subukan at subaybayan\",\n    \"title_en\": \"Try and monitor\",\n    \"objectives_fil\": [\n      \"Magmungkahi ng maliit na trial na may owner at review date, at ihambing ang resource use sa magkatulad na workload kasama ang kalidad ng serbisyo.\"\n    ],\n    \"objectives_en\": [\n      \"Propose a small trial with an owner and review date, and compare resource use at comparable workloads alongside service quality.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"trial\",\n      \"concept_ids\": [\n        \"m9.communicate\",\n        \"m9.review\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang sustainable na gawi ay may responsable, sinusukat na resulta at regular na review.\",\n      \"takeaway_en\": \"A sustainable practice has an owner, measured results and regular review.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"compare\",\n      \"concept_ids\": [\n        \"m9.review\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ihambing ang resources sa magkatulad na gawain at tingnan din ang kalidad.\",\n      \"takeaway_en\": \"Compare resources across similar work and check quality too.\",\n      \"check\": {\n        \"prompt_fil\": \"Bumaba ang maling-bersyong reprint mula 20/100 tungong 5/100 pahina. Ano ang tamang ulat?\",\n        \"prompt_en\": \"Wrong-version reprints fell from 20/100 to 5/100 pages. What is the sound report?\",\n        \"options\": [\n          {\n            \"fil\": \"Bawas na 15 bawat 100 pahina; suriin din kung magkatulad ang workload at tama ang materyal.\",\n            \"en\": \"Fifteen fewer per 100 pages; also check comparable workload and correct materials.\"\n          },\n          {\n            \"fil\": \"Siguradong 75% na mas mababa ang gastos.\",\n            \"en\": \"Costs are certainly 75% lower.\"\n          },\n          {\n            \"fil\": \"Hindi kailangan ng bilang ng session o kalidad.\",\n            \"en\": \"Session counts and quality do not matter.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Ang unang sagot ay tama sa sukat at sinusuri ang kalidad. Hindi katumbas ng reprint rate ang kabuuang gastos; kailangan ang workload at serbisyo upang maunawaan ang resulta.\",\n        \"feedback_en\": \"The first response uses the correct rate and checks quality. A reprint rate is not total cost; workload and service must also be considered.\"\n      }\n    },\n    {\n      \"id\": \"communicate\",\n      \"concept_ids\": [\n        \"m9.communicate\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Mas napapanatili ang pagbabago kapag naiintindihan at kayang gawin ng kasama.\",\n      \"takeaway_en\": \"A change lasts when colleagues understand it and can carry it out.\",\n      \"check\": {\n        \"prompt_fil\": \"Walang internet ang kasamang magpi-print ng handout. Ano ang dapat isama sa trial?\",\n        \"prompt_en\": \"A colleague who prints handouts has no internet. What should the trial include?\",\n        \"options\": [\n          {\n            \"fil\": \"Sabihing mag-download na lang kahit walang internet.\",\n            \"en\": \"Tell the colleague to download it anyway.\"\n          },\n          {\n            \"fil\": \"Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna ng kasama.\",\n            \"en\": \"Prepare a controlled paper master, verify its version and ask for the colleague’s feedback.\"\n          },\n          {\n            \"fil\": \"Gamitin ang anumang lumang kopya sa drawer.\",\n            \"en\": \"Use any old copy in the drawer.\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Ang ikalawang sagot ay umaangkop sa hadlang habang kontrolado ang bersyon at may puna mula sa kasama. Hindi solusyon ang hindi magawang download o hindi aprubadong lumang kopya.\",\n        \"feedback_en\": \"The second response addresses the barrier while controlling the version and seeking feedback. An impossible download or unapproved old copy does not solve it.\"\n      }\n    },\n    {\n      \"id\": \"workload\",\n      \"concept_ids\": [\n        \"m9.review\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang patas na paghahambing ay isinasaalang-alang ang dami ng trabahong ginawa.\",\n      \"takeaway_en\": \"A fair comparison accounts for the amount of work performed.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"handover\",\n      \"concept_ids\": [\n        \"m9.organize\",\n        \"m9.review\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang routine na naipapasa sa kasama ay mas tumatagal kaysa personal na diskarte lamang.\",\n      \"takeaway_en\": \"A routine that colleagues can inherit lasts longer than an individual workaround.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m9.communicate\",\n        \"m9.review\",\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [\n        \"resource-monitor\"\n      ],\n      \"takeaway_fil\": \"Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.\",\n      \"takeaway_en\": \"Lower consumption is a success only when correct, safe service is still delivered.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m9.communicate\",\n        \"m9.review\",\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.\",\n      \"takeaway_en\": \"Lower consumption is a success only when correct, safe service is still delivered.\",\n      \"check\": {\n        \"prompt_fil\": \"Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?\",\n        \"prompt_en\": \"Paper use halved because half the sessions were canceled. What can be concluded?\",\n        \"options\": [\n          {\n            \"fil\": \"Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo.\",\n            \"en\": \"This does not yet show improvement; compare use per session and services delivered.\"\n          },\n          {\n            \"fil\": \"Tagumpay na dahil mas mababa ang bill.\",\n            \"en\": \"It is a success because the bill is lower.\"\n          },\n          {\n            \"fil\": \"Wala nang kailangang review dahil nabawasan ang papel.\",\n            \"en\": \"No review is needed because less paper was used.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.\",\n        \"feedback_en\": \"The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m9.communicate\",\n      \"read_ids\": [\n        \"trial\",\n        \"communicate\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-trial\",\n        \"slide-communicate\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    },\n    {\n      \"id\": \"m9.review\",\n      \"read_ids\": [\n        \"trial\",\n        \"compare\",\n        \"workload\",\n        \"handover\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-trial\",\n        \"slide-compare\",\n        \"slide-workload\",\n        \"slide-handover\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    },\n    {\n      \"id\": \"m9.organize\",\n      \"read_ids\": [\n        \"handover\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-handover\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        19,\n        22\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        14,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"tesda-400311217\",\n      \"title\": \"TESDA BHS NC II Revision 01 (2019), unit 400311217\",\n      \"pdf_pages\": [\n        33,\n        34,\n        35\n      ],\n      \"url\": \"https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"resource-monitor\",\n      \"path\": \"/training/module-1-9/monitor-c5d2eff5ad98.svg\",\n      \"content_hash\": \"c5d2eff5ad98b21709e3da13cd770cddb33b8c4ff86920ddec30578d742a42b6\",\n      \"alt_fil\": \"Subaybayan ang resources at kalidad bago at pagkatapos ng pagbabago, saka magpasya kung itutuloy o ihihinto.\",\n      \"alt_en\": \"Track resources and quality before and after a change, then decide whether to continue or stop.\",\n      \"caption_fil\": \"Ihambing ang resulta at kalidad bago panatilihin ang pagbabago.\",\n      \"caption_en\": \"Compare results and quality before keeping a change.\",\n      \"provenance\": \"Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.\",\n      \"review_status\": \"approved\"\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.en.md": "## [trial] One change, an owner and a measure\n\nElena, 38, is preparing a trial to reduce incorrect printouts at the BHS. The team needs an agreement and a measure of correct, timely materials.\n\nElena proposes checking the approved handout before each print run. She prepares the checklist, the midwife confirms the version, and after two weeks they review incorrect printouts and any delayed sessions. Record session counts to compare similar workloads. Share results and revise the process if quality suffers. Agree on the change rather than issuing a new rule to everyone without discussion.\n\n## [compare] Try a simple comparison\n\nFictional data: previously, 20 of 100 printed pages had to be reprinted because the version was wrong; after the checklist, 5 of 100. Reprints decreased by 15 per 100 pages, from 20% to 5%. Before declaring success, check whether session types were comparable and participants still received correct materials. Patient names are unnecessary for measuring print waste.\n\n## [communicate] Share the proposal with colleagues\n\nDescribe waste without blame: “There are two versions in the drawer, which causes reprinting.” Present the proposal, responsibilities and review date. Ask colleagues about overlooked barriers, such as lack of internet for the updated file. A controlled paper master may be needed. Resourcefulness finds safe, approved alternatives rather than bypassing policy.\n\n## [workload] When workloads differ\n\nOne week has five teaching sessions and the next has ten. Total paper use can rise even when the process improves. Compare correct materials and reprints per session or per 100 pages, alongside complaints or delays. Do not claim savings from a raw total alone. Distinguish workload changes from process changes.\n\n## [handover] Keep the routine when people change\n\nWhen Elena is absent, a colleague should still be able to use the teaching kit and checklist. Keep a short routine at the work area, orient new colleagues and identify who receives stock-gap reports. During review, remove unhelpful steps and preserve necessary safeguards. A sustainable system does not depend on one diligent person’s memory.\n\n## [practice] Try it, then repeat\n\nFill a trial card: problem, change, owner, baseline, quality measure, review date. Use 20/100 and 5/100 for a fair comparison. In pairs, one colleague has no internet; explain the controlled paper master and handover. Alone, write the replacement colleague’s routine. Ask the team to review the trial before starting and set a review date.\n\n## [check] Choose the next step\n\nChoose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.fil.md": "## [trial] Isang pagbabago, may may-ari at sukatan\n\nSi Elena, 38, ay naghahanda ng trial upang bawasan ang maling printout sa BHS. Kailangan ang kasunduan ng team at sukatan ng tama at napapanahong materyal.\n\nMungkahi ni Elena: i-check ang approved handout bago bawat print run. Siya ang maghahanda ng checklist, ang midwife ang kukumpirma sa bersyon, at susuriin nila makalipas ang dalawang linggo ang bilang ng maling printout at kung may naantalang session. Itala ang bilang ng sessions upang makumpara ang magkatulad na trabaho. Ibahagi ang resulta sa kasama at baguhin ang proseso kung may epekto sa kalidad. Ang pagbabago ay kailangang napagkasunduan, hindi basta bagong utos sa lahat.\n\n## [compare] Subukan ang simpleng paghahambing\n\nKathang-isip na datos: dati, 20 sa 100 printed pages ang inuulit dahil maling bersyon; matapos ang checklist, 5 sa 100. Bumaba ang reprints ng 15 bawat 100 pahina, mula 20% tungong 5%. Bago sabihing matagumpay, itanong kung pareho ang uri ng sessions at kung nakatanggap pa rin ng tamang materyal ang mga kalahok. Hindi kailangan ng patient name para masukat ang print waste.\n\n## [communicate] Ibahagi ang mungkahi sa kasama\n\nSabihin ang napansing aksaya nang walang paninisi: “May dalawang bersyon sa drawer kaya may nauulit na print.” Ilahad ang mungkahi, sino ang may trabaho at kailan rerepasuhin. Tanungin ang kasama kung may hadlang na hindi nakita, tulad ng walang internet para kunin ang bagong file. Maaaring kailangan ang controlled paper master. Ang resourcefulness ay paghahanap ng ligtas at aprubadong alternatibo, hindi paglabag sa policy.\n\n## [workload] Kapag iba-iba ang workload\n\nIsang linggo ay 5 ang teaching sessions; sa susunod ay 10. Maaaring dumami ang nagamit na papel kahit mas mahusay ang proseso. Ihambing ang wastong materyal at reprints kada session o bawat 100 pahina, kasama ang anumang reklamo o delay. Huwag mag-claim ng savings mula sa raw total lamang. Ihiwalay ang pagbabago sa workload mula sa pagbabago sa paraan.\n\n## [handover] Panatilihin kahit magpalit ng tao\n\nKapag wala si Elena, dapat magamit pa rin ng kapalit ang teaching kit at checklist. Ilagay ang maikling routine sa lugar ng trabaho, ituro sa bagong kasama at tukuyin kung kanino iuulat ang stock gap. Sa review, alisin ang hakbang na walang silbi at panatilihin ang proteksyong kailangan. Ang sustainable na sistema ay hindi umaasa sa alaala ng iisang masipag na tao.\n\n## [practice] Subukan, saka ulitin\n\nPunan ang trial card: problema, pagbabago, owner, baseline, sukatan ng kalidad, review date. Gamitin ang 20/100 at 5/100 para sa patas na paghahambing. Magpares: isa ang kasamahang walang internet; ipaliwanag ang controlled paper master at handover. Kung mag-isa, isulat ang magiging routine ng kapalit. Sa team meeting, ipasuri ang trial bago simulan at magtakda ng review.\n\n## [check] Piliin ang susunod na hakbang\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.\n",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/slides.json": "[\n  {\n    \"id\": \"slide-trial\",\n    \"concept_ids\": [\n      \"m9.communicate\",\n      \"m9.review\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Isang pagbabago, may may-ari at sukatan\",\n    \"heading_en\": \"One change, an owner and a measure\",\n    \"display_fil\": \"Trial: check ng approved handout bago printing. Elena: checklist. Midwife: version confirmation. Pagkaraan ng dalawang linggo: maling printout, session count at delays. Talakayin at baguhin kung bumaba ang kalidad.\",\n    \"display_en\": \"Trial: check the approved handout before printing. Elena owns the checklist; the midwife confirms the version. After two weeks, review incorrect printouts, session counts and delays. Revise if quality suffers.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-compare\",\n    \"concept_ids\": [\n      \"m9.review\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Subukan ang simpleng paghahambing\",\n    \"heading_en\": \"Try a simple comparison\",\n    \"display_fil\": \"Halimbawa: reprints 20/100 noon → 5/100 ngayon. Bawas na 15 bawat 100 pahina, mula 20% tungong 5%. Suriin kung magkatulad ang session at tama pa rin ang materyal. Walang patient names na kailangan.\",\n    \"display_en\": \"Example: reprints 20/100 before → 5/100 after. A reduction of 15 per 100 pages, from 20% to 5%. Check comparable sessions and correct materials. No patient names are needed.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"Bumaba ang maling-bersyong reprint mula 20/100 tungong 5/100 pahina. Ano ang tamang ulat?\",\n      \"prompt_en\": \"Wrong-version reprints fell from 20/100 to 5/100 pages. What is the sound report?\",\n      \"options\": [\n        {\n          \"fil\": \"Bawas na 15 bawat 100 pahina; suriin din kung magkatulad ang workload at tama ang materyal.\",\n          \"en\": \"Fifteen fewer per 100 pages; also check comparable workload and correct materials.\"\n        },\n        {\n          \"fil\": \"Siguradong 75% na mas mababa ang gastos.\",\n          \"en\": \"Costs are certainly 75% lower.\"\n        },\n        {\n          \"fil\": \"Hindi kailangan ng bilang ng session o kalidad.\",\n          \"en\": \"Session counts and quality do not matter.\"\n        }\n      ],\n      \"correct_option_index\": 0,\n      \"feedback_fil\": \"Ang unang sagot ay tama sa sukat at sinusuri ang kalidad. Hindi katumbas ng reprint rate ang kabuuang gastos; kailangan ang workload at serbisyo upang maunawaan ang resulta.\",\n      \"feedback_en\": \"The first response uses the correct rate and checks quality. A reprint rate is not total cost; workload and service must also be considered.\"\n    }\n  },\n  {\n    \"id\": \"slide-communicate\",\n    \"concept_ids\": [\n      \"m9.communicate\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Ibahagi ang mungkahi sa kasama\",\n    \"heading_en\": \"Share the proposal with colleagues\",\n    \"display_fil\": \"“Dalawang bersyon sa drawer ang sanhi ng reprinting.” Ibigay ang mungkahi, owner at review date. Itanong ang hadlang gaya ng walang internet; maaaring kailangan ang controlled paper master.\",\n    \"display_en\": \"“Two versions in the drawer cause reprinting.” Explain the proposal, owner and review date. Ask about barriers such as no internet; a controlled paper master may be needed.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"Walang internet ang kasamang magpi-print ng handout. Ano ang dapat isama sa trial?\",\n      \"prompt_en\": \"A colleague who prints handouts has no internet. What should the trial include?\",\n      \"options\": [\n        {\n          \"fil\": \"Sabihing mag-download na lang kahit walang internet.\",\n          \"en\": \"Tell the colleague to download it anyway.\"\n        },\n        {\n          \"fil\": \"Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna ng kasama.\",\n          \"en\": \"Prepare a controlled paper master, verify its version and ask for the colleague’s feedback.\"\n        },\n        {\n          \"fil\": \"Gamitin ang anumang lumang kopya sa drawer.\",\n          \"en\": \"Use any old copy in the drawer.\"\n        }\n      ],\n      \"correct_option_index\": 1,\n      \"feedback_fil\": \"Ang ikalawang sagot ay umaangkop sa hadlang habang kontrolado ang bersyon at may puna mula sa kasama. Hindi solusyon ang hindi magawang download o hindi aprubadong lumang kopya.\",\n      \"feedback_en\": \"The second response addresses the barrier while controlling the version and seeking feedback. An impossible download or unapproved old copy does not solve it.\"\n    }\n  },\n  {\n    \"id\": \"slide-workload\",\n    \"concept_ids\": [\n      \"m9.review\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Kapag iba-iba ang workload\",\n    \"heading_en\": \"When workloads differ\",\n    \"display_fil\": \"Limang session noon, sampu ngayon: maaaring tumaas ang total kahit bumuti ang proseso. Ihambing ang reprints bawat session o bawat 100 pahina, kasama ang complaints at delays.\",\n    \"display_en\": \"Five sessions before, ten now: totals can rise even when the process improves. Compare reprints per session or per 100 pages, alongside complaints and delays.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-handover\",\n    \"concept_ids\": [\n      \"m9.organize\",\n      \"m9.review\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Panatilihin kahit magpalit ng tao\",\n    \"heading_en\": \"Keep the routine when people change\",\n    \"display_fil\": \"Kapag wala si Elena, dapat magamit pa rin ang kit. Iwan ang maikling routine, ituro sa kapalit at tukuyin ang tatanggap ng stock-gap reports. Sa review, alisin ang walang silbing hakbang at panatilihin ang safeguards.\",\n    \"display_en\": \"When Elena is absent, the kit must still work. Leave a short routine, orient the next person and name the stock-gap reporting contact. Remove unhelpful steps during review while preserving safeguards.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-practice\",\n    \"concept_ids\": [\n      \"m9.communicate\",\n      \"m9.review\",\n      \"m9.organize\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Subukan, saka ulitin\",\n    \"heading_en\": \"Try it, then repeat\",\n    \"display_fil\": \"Trial card: owner, baseline, kalidad, review date. 20/100 → 5/100. Ihambing ang parehong workload at tiyaking tama pa rin ang serbisyo.\",\n    \"display_en\": \"Trial card: owner, baseline, quality, review date. 20/100 → 5/100. Compare like workloads and check that service remains correct.\",\n    \"asset_ids\": [\n      \"resource-monitor\"\n    ],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-check\",\n    \"concept_ids\": [\n      \"m9.communicate\",\n      \"m9.review\",\n      \"m9.organize\"\n    ],\n    \"layout\": \"decision\",\n    \"heading_fil\": \"Piliin ang susunod na hakbang\",\n    \"heading_en\": \"Choose the next step\",\n    \"display_fil\": \"Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.\",\n    \"display_en\": \"Lower consumption is a success only when correct, safe service is still delivered.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?\",\n      \"prompt_en\": \"Paper use halved because half the sessions were canceled. What can be concluded?\",\n      \"options\": [\n        {\n          \"fil\": \"Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo.\",\n          \"en\": \"This does not yet show improvement; compare use per session and services delivered.\"\n        },\n        {\n          \"fil\": \"Tagumpay na dahil mas mababa ang bill.\",\n          \"en\": \"It is a success because the bill is lower.\"\n        },\n        {\n          \"fil\": \"Wala nang kailangang review dahil nabawasan ang papel.\",\n          \"en\": \"No review is needed because less paper was used.\"\n        }\n      ],\n      \"correct_option_index\": 0,\n      \"feedback_fil\": \"Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.\",\n      \"feedback_en\": \"The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved.\"\n    }\n  }\n]\n"
+  },
+  "target_files_sha256": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/competency.json": "0325dd0c78508ceaeecbafc61f84345e23bb79ad7b06a269552fb9712f7e08a8",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.en.md": "f59a71f8bb044a8bd5c256a2c85c7900a17685ab52218bce938492e63cdf5006",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.fil.md": "9e8ab15373156f4920e44ccc2e7f2f60d4ef67588a52ca366ed52faeed45caf0",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json": "f40e8ee07034e78e731e3d8b0cd6e548117f8b6cf6c850dbc8fbfc579c1e5a27",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.en.md": "4623039e82270488fe358c3d174ce1844ff9d860c5c6f8a12ba91ddf5001b669",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.fil.md": "e2f9bcbe40e37910452640f862a72eb2f4e92bdef3316351279cc92945b82723",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/slides.json": "4bdf3140b6ad8c6da2bbf331a75913532dd0a84a8a29a59a2ca75827ad3e8de7"
+  },
+  "target_narration": {
+    "module": "09-sustainable-practices",
+    "sections": {
+      "check": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/check.en.92bb1fbffb81.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "92bb1fbffb81eb4332e953e1032fd1d4b5fbd4d8f78384f958aa60b6b37f5125",
+          "sha256": "56efaabfeb6c70fb525b86a8b7ad4ccc42468d4ce3918830f8d78a82a598db9f",
+          "duration_seconds": 17.528,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 1960
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2260,
+              "end_ms": 6780
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7080,
+              "end_ms": 10360
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Lower consumption is a success only when correct, safe service is still delivered.",
+              "start_ms": 10660,
+              "end_ms": 17460
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/check.fil.164e67f07ea5.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "164e67f07ea546cb2950334d11c507b450f3b08ec551f000695e6f7d8fe63e91",
+          "sha256": "0df45e028827c1df88688e67673ad0f334f9b7659b1796567b5a6b2f5546dd4a",
+          "duration_seconds": 21.891,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 2840
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 3140,
+              "end_ms": 8460
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 8760,
+              "end_ms": 13440
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
+              "start_ms": 13740,
+              "end_ms": 21820
+            }
+          ]
+        }
+      },
+      "communicate": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/communicate.en.c567faa481b6.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "c567faa481b6624835986c1e48a63790de60257f2613eefbbe2f6a09292678b6",
+          "sha256": "e12d1730923eb9f67bdc01311d79aa500349da2bc7f702a508cfae482d6e7c86",
+          "duration_seconds": 36.833,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Share the proposal with colleagues",
+              "start_ms": 0,
+              "end_ms": 2640
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Describe waste without blame: “There are two versions in the drawer, which causes reprinting.”",
+              "start_ms": 2940,
+              "end_ms": 9380
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Present the proposal, responsibilities and review date.",
+              "start_ms": 9680,
+              "end_ms": 14480
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ask colleagues about overlooked barriers, such as lack of internet for the updated file.",
+              "start_ms": 14780,
+              "end_ms": 21180
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "A controlled paper master may be needed.",
+              "start_ms": 21480,
+              "end_ms": 24680
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Resourcefulness finds safe, approved alternatives rather than bypassing policy.",
+              "start_ms": 24980,
+              "end_ms": 31300
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A change lasts when colleagues understand it and can carry it out.",
+              "start_ms": 31600,
+              "end_ms": 36760
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/communicate.fil.b3f70630da8f.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "b3f70630da8f9b36c1cadb5f53841aeb0520c981eb7a70e90fef921eecad5bcd",
+          "sha256": "4d8d284ee516cc1a93b26adf7295f2064fda97ca4f5d516fd60c3ee537b53c14",
+          "duration_seconds": 44.095,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Ibahagi ang mungkahi sa kasama",
+              "start_ms": 0,
+              "end_ms": 2880
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Sabihin ang napansing aksaya nang walang paninisi: “May dalawang bersyon sa drawer kaya may nauulit na print.”",
+              "start_ms": 3180,
+              "end_ms": 12020
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ilahad ang mungkahi, sino ang may trabaho at kailan rerepasuhin.",
+              "start_ms": 12320,
+              "end_ms": 17880
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Tanungin ang kasama kung may hadlang na hindi nakita, tulad ng walang internet para kunin ang bagong file.",
+              "start_ms": 18180,
+              "end_ms": 26140
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Maaaring kailangan ang controlled paper master.",
+              "start_ms": 26440,
+              "end_ms": 30320
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ang resourcefulness ay paghahanap ng ligtas at aprubadong alternatibo, hindi paglabag sa policy.",
+              "start_ms": 30620,
+              "end_ms": 37860
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Mas napapanatili ang pagbabago kapag naiintindihan at kayang gawin ng kasama.",
+              "start_ms": 38160,
+              "end_ms": 44040
+            }
+          ]
+        }
+      },
+      "compare": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/compare.en.739adcdfe55c.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "739adcdfe55c1a4c6778a7c9cd3d8d0f1bc2669f26b1c5f4c2fb983d2db0bf62",
+          "sha256": "788a92ca817191d07f5631d2a49606d6b0124b81e565606bb885a67e54e9ac4d",
+          "duration_seconds": 41.404,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try a simple comparison",
+              "start_ms": 0,
+              "end_ms": 2480
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Fictional data: previously, 20 of 100 printed pages had to be reprinted because the version was wrong; after the checklist, 5 of 100.",
+              "start_ms": 2780,
+              "end_ms": 14300
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Reprints decreased by 15 per 100 pages, from 20% to 5%.",
+              "start_ms": 14600,
+              "end_ms": 22400
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Before declaring success, check whether session types were comparable and participants still received correct materials.",
+              "start_ms": 22700,
+              "end_ms": 31420
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Patient names are unnecessary for measuring print waste.",
+              "start_ms": 31720,
+              "end_ms": 36040
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Compare resources across similar work and check quality too.",
+              "start_ms": 36340,
+              "end_ms": 41340
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/compare.fil.5d596be634cc.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "5d596be634cc9d891b723ed1c1fe99c88f7f01e177e7affde57e7aaded7aaca7",
+          "sha256": "98b33f9b8107a498a35e681ed550b12bb521a37e9d760f0605d1a163db6413ba",
+          "duration_seconds": 43.285,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan ang simpleng paghahambing",
+              "start_ms": 0,
+              "end_ms": 2720
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Kathang-isip na datos: dati, 20 sa 100 printed pages ang inuulit dahil maling bersyon; matapos ang checklist, 5 sa 100.",
+              "start_ms": 3020,
+              "end_ms": 14660
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Bumaba ang reprints ng 15 bawat 100 pahina, mula 20% tungong 5%.",
+              "start_ms": 14960,
+              "end_ms": 23360
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Bago sabihing matagumpay, itanong kung pareho ang uri ng sessions at kung nakatanggap pa rin ng tamang materyal ang mga kalahok.",
+              "start_ms": 23660,
+              "end_ms": 32820
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Hindi kailangan ng patient name para masukat ang print waste.",
+              "start_ms": 33120,
+              "end_ms": 37520
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ihambing ang resources sa magkatulad na gawain at tingnan din ang kalidad.",
+              "start_ms": 37820,
+              "end_ms": 43220
+            }
+          ]
+        }
+      },
+      "handover": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/handover.en.122c4b0e457a.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "122c4b0e457a4dbec9b133c9175114e41884171a98126666d1b95abd3088bd44",
+          "sha256": "bcd92da320cdd6efedc9ae7dd926f1861d92ac936194c6f50244ff68249c612c",
+          "duration_seconds": 37.721,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Keep the routine when people change",
+              "start_ms": 0,
+              "end_ms": 2880
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "When Elena is absent, a colleague should still be able to use the teaching kit and checklist.",
+              "start_ms": 3180,
+              "end_ms": 9540
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Keep a short routine at the work area, orient new colleagues and identify who receives stock-gap reports.",
+              "start_ms": 9840,
+              "end_ms": 18560
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "During review, remove unhelpful steps and preserve necessary safeguards.",
+              "start_ms": 18860,
+              "end_ms": 25020
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "A sustainable system does not depend on one diligent person’s memory.",
+              "start_ms": 25320,
+              "end_ms": 31200
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A routine that colleagues can inherit lasts longer than an individual workaround.",
+              "start_ms": 31500,
+              "end_ms": 37660
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/handover.fil.14d0629b7063.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "14d0629b7063e6a0b3dbc04f204eecf474258977da20925cc485328fcebb84e8",
+          "sha256": "9a2ddc50249c4384d22fb00236632b9f505197fd196bba774add50d5c4ec8e5d",
+          "duration_seconds": 41.117,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Panatilihin kahit magpalit ng tao",
+              "start_ms": 0,
+              "end_ms": 3440
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Kapag wala si Elena, dapat magamit pa rin ng kapalit ang teaching kit at checklist.",
+              "start_ms": 3740,
+              "end_ms": 10060
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ilagay ang maikling routine sa lugar ng trabaho, ituro sa bagong kasama at tukuyin kung kanino iuulat ang stock gap.",
+              "start_ms": 10360,
+              "end_ms": 19600
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Sa review, alisin ang hakbang na walang silbi at panatilihin ang proteksyong kailangan.",
+              "start_ms": 19900,
+              "end_ms": 26860
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Ang sustainable na sistema ay hindi umaasa sa alaala ng iisang masipag na tao.",
+              "start_ms": 27160,
+              "end_ms": 34000
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang routine na naipapasa sa kasama ay mas tumatagal kaysa personal na diskarte lamang.",
+              "start_ms": 34300,
+              "end_ms": 41060
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/practice.en.50b7316e7641.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "50b7316e76417f4914fdd0a7f84e6a1908a1e6f4db9f90ed4029e9152bf2221c",
+          "sha256": "1e461b2888f8e5edeeef4d8b25d46fede0837ff518ae085ba086c2e928af6a0a",
+          "duration_seconds": 42.998,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2440
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Fill a trial card: problem, change, owner, baseline, quality measure, review date.",
+              "start_ms": 2740,
+              "end_ms": 12100
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Use 20/100 and 5/100 for a fair comparison.",
+              "start_ms": 12400,
+              "end_ms": 18520
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "In pairs, one colleague has no internet; explain the controlled paper master and handover.",
+              "start_ms": 18820,
+              "end_ms": 25860
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Alone, write the replacement colleague’s routine.",
+              "start_ms": 26160,
+              "end_ms": 30120
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ask the team to review the trial before starting and set a review date.",
+              "start_ms": 30420,
+              "end_ms": 35660
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Lower consumption is a success only when correct, safe service is still delivered.",
+              "start_ms": 35960,
+              "end_ms": 42920
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/practice.fil.2fbdb8d50af7.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "2fbdb8d50af7d1b22f7164446610e5dde23d001eaf9c63bfdac51442d65da847",
+          "sha256": "e7275c223bed9511fbffb71f6000b3c7d293284f252b3fffd70810689ef98518",
+          "duration_seconds": 48.457,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 3320
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Punan ang trial card: problema, pagbabago, owner, baseline, sukatan ng kalidad, review date.",
+              "start_ms": 3620,
+              "end_ms": 12940
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Gamitin ang 20/100 at 5/100 para sa patas na paghahambing.",
+              "start_ms": 13240,
+              "end_ms": 20800
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Magpares: isa ang kasamahang walang internet; ipaliwanag ang controlled paper master at handover.",
+              "start_ms": 21100,
+              "end_ms": 29740
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Kung mag-isa, isulat ang magiging routine ng kapalit.",
+              "start_ms": 30040,
+              "end_ms": 34160
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Sa team meeting, ipasuri ang trial bago simulan at magtakda ng review.",
+              "start_ms": 34460,
+              "end_ms": 40460
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
+              "start_ms": 40760,
+              "end_ms": 48400
+            }
+          ]
+        }
+      },
+      "trial": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/trial.en.82a2adcf3543.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "82a2adcf35430d9246d50bc9e0b3dc047ed879f4e11f0291c8569b699c6aab93",
+          "sha256": "0cf64a6783dc1560af26bcddde9fcc3e6df058ddfd935c85f69a5662be274280",
+          "duration_seconds": 55.693,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "One change, an owner and a measure",
+              "start_ms": 0,
+              "end_ms": 3720
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Elena, 38, is preparing a trial to reduce incorrect printouts at the BHS.",
+              "start_ms": 4020,
+              "end_ms": 11300
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "The team needs an agreement and a measure of correct, timely materials.",
+              "start_ms": 11600,
+              "end_ms": 17800
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Elena proposes checking the approved handout before each print run.",
+              "start_ms": 18100,
+              "end_ms": 23180
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "She prepares the checklist, the midwife confirms the version, and after two weeks they review incorrect printouts and any delayed sessions.",
+              "start_ms": 23480,
+              "end_ms": 33280
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Record session counts to compare similar workloads.",
+              "start_ms": 33580,
+              "end_ms": 37460
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Share results and revise the process if quality suffers.",
+              "start_ms": 37760,
+              "end_ms": 42640
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Agree on the change rather than issuing a new rule to everyone without discussion.",
+              "start_ms": 42940,
+              "end_ms": 49100
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A sustainable practice has an owner, measured results and regular review.",
+              "start_ms": 49400,
+              "end_ms": 55640
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/trial.fil.55a0f9862dae.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "55a0f9862daefab75586acad509b363df067205edc03da2cf87b6b5c34649337",
+          "sha256": "9970f3c3301003c9a4a95cde86599e68c7894936d9ce66fb53ef7a001b0d351a",
+          "duration_seconds": 65.855,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Isang pagbabago, may may-ari at sukatan",
+              "start_ms": 0,
+              "end_ms": 4680
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Si Elena, 38, ay naghahanda ng trial upang bawasan ang maling printout sa BHS.",
+              "start_ms": 4980,
+              "end_ms": 12220
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Kailangan ang kasunduan ng team at sukatan ng tama at napapanahong materyal.",
+              "start_ms": 12520,
+              "end_ms": 18680
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Mungkahi ni Elena: i-check ang approved handout bago bawat print run.",
+              "start_ms": 18980,
+              "end_ms": 25340
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Siya ang maghahanda ng checklist, ang midwife ang kukumpirma sa bersyon, at susuriin nila makalipas ang dalawang linggo ang bilang ng maling printout at kung may naantalang session.",
+              "start_ms": 25640,
+              "end_ms": 39600
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Itala ang bilang ng sessions upang makumpara ang magkatulad na trabaho.",
+              "start_ms": 39900,
+              "end_ms": 45500
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Ibahagi ang resulta sa kasama at baguhin ang proseso kung may epekto sa kalidad.",
+              "start_ms": 45800,
+              "end_ms": 51520
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Ang pagbabago ay kailangang napagkasunduan, hindi basta bagong utos sa lahat.",
+              "start_ms": 51820,
+              "end_ms": 58060
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang sustainable na gawi ay may responsable, sinusukat na resulta at regular na review.",
+              "start_ms": 58360,
+              "end_ms": 65800
+            }
+          ]
+        }
+      },
+      "workload": {
+        "en": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/workload.en.3ec0bb708cd1.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "3ec0bb708cd1abff6da88b2b8c3d15abda072054834eb2841af88768e2389590",
+          "sha256": "b8f254822bd806de8d0661662469546e7900c6f8450397c78983c735f8c05e3d",
+          "duration_seconds": 35.422,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "When workloads differ",
+              "start_ms": 0,
+              "end_ms": 2280
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "One week has five teaching sessions and the next has ten.",
+              "start_ms": 2580,
+              "end_ms": 7380
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Total paper use can rise even when the process improves.",
+              "start_ms": 7680,
+              "end_ms": 12720
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Compare correct materials and reprints per session or per 100 pages, alongside complaints or delays.",
+              "start_ms": 13020,
+              "end_ms": 21540
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Do not claim savings from a raw total alone.",
+              "start_ms": 21840,
+              "end_ms": 25880
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Distinguish workload changes from process changes.",
+              "start_ms": 26180,
+              "end_ms": 30660
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A fair comparison accounts for the amount of work performed.",
+              "start_ms": 30960,
+              "end_ms": 35360
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/09-sustainable-practices/resources-monitor/workload.fil.c239f59dcdd5.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "c239f59dcdd57262ef0019d9fb4dd50bd230f52291a318c08c22deb8f4455359",
+          "sha256": "099d594620f9c7ea996b3a2572e000a16ac3cfd3fe129cec7937003220ea3ad9",
+          "duration_seconds": 40.438,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Kapag iba-iba ang workload",
+              "start_ms": 0,
+              "end_ms": 2520
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Isang linggo ay 5 ang teaching sessions; sa susunod ay 10.",
+              "start_ms": 2820,
+              "end_ms": 8220
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Maaaring dumami ang nagamit na papel kahit mas mahusay ang proseso.",
+              "start_ms": 8520,
+              "end_ms": 13960
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ihambing ang wastong materyal at reprints kada session o bawat 100 pahina, kasama ang anumang reklamo o delay.",
+              "start_ms": 14260,
+              "end_ms": 25420
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Huwag mag-claim ng savings mula sa raw total lamang.",
+              "start_ms": 25720,
+              "end_ms": 29560
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Ihiwalay ang pagbabago sa workload mula sa pagbabago sa paraan.",
+              "start_ms": 29860,
+              "end_ms": 34940
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang patas na paghahambing ay isinasaalang-alang ang dami ng trabahong ginawa.",
+              "start_ms": 35240,
+              "end_ms": 40360
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "selected_public_media_sha256": {
+    "/training/module-1-9/monitor-c5d2eff5ad98.svg": "c5d2eff5ad98b21709e3da13cd770cddb33b8c4ff86920ddec30578d742a42b6",
+    "/training/audio/09-sustainable-practices/resources-monitor/check.en.92bb1fbffb81.mp3": "56efaabfeb6c70fb525b86a8b7ad4ccc42468d4ce3918830f8d78a82a598db9f",
+    "/training/audio/09-sustainable-practices/resources-monitor/check.fil.164e67f07ea5.mp3": "0df45e028827c1df88688e67673ad0f334f9b7659b1796567b5a6b2f5546dd4a",
+    "/training/audio/09-sustainable-practices/resources-monitor/communicate.en.c567faa481b6.mp3": "e12d1730923eb9f67bdc01311d79aa500349da2bc7f702a508cfae482d6e7c86",
+    "/training/audio/09-sustainable-practices/resources-monitor/communicate.fil.b3f70630da8f.mp3": "4d8d284ee516cc1a93b26adf7295f2064fda97ca4f5d516fd60c3ee537b53c14",
+    "/training/audio/09-sustainable-practices/resources-monitor/compare.en.739adcdfe55c.mp3": "788a92ca817191d07f5631d2a49606d6b0124b81e565606bb885a67e54e9ac4d",
+    "/training/audio/09-sustainable-practices/resources-monitor/compare.fil.5d596be634cc.mp3": "98b33f9b8107a498a35e681ed550b12bb521a37e9d760f0605d1a163db6413ba",
+    "/training/audio/09-sustainable-practices/resources-monitor/handover.en.122c4b0e457a.mp3": "bcd92da320cdd6efedc9ae7dd926f1861d92ac936194c6f50244ff68249c612c",
+    "/training/audio/09-sustainable-practices/resources-monitor/handover.fil.14d0629b7063.mp3": "9a2ddc50249c4384d22fb00236632b9f505197fd196bba774add50d5c4ec8e5d",
+    "/training/audio/09-sustainable-practices/resources-monitor/practice.en.50b7316e7641.mp3": "1e461b2888f8e5edeeef4d8b25d46fede0837ff518ae085ba086c2e928af6a0a",
+    "/training/audio/09-sustainable-practices/resources-monitor/practice.fil.2fbdb8d50af7.mp3": "e7275c223bed9511fbffb71f6000b3c7d293284f252b3fffd70810689ef98518",
+    "/training/audio/09-sustainable-practices/resources-monitor/trial.en.82a2adcf3543.mp3": "0cf64a6783dc1560af26bcddde9fcc3e6df058ddfd935c85f69a5662be274280",
+    "/training/audio/09-sustainable-practices/resources-monitor/trial.fil.55a0f9862dae.mp3": "9970f3c3301003c9a4a95cde86599e68c7894936d9ce66fb53ef7a001b0d351a",
+    "/training/audio/09-sustainable-practices/resources-monitor/workload.en.3ec0bb708cd1.mp3": "b8f254822bd806de8d0661662469546e7900c6f8450397c78983c735f8c05e3d",
+    "/training/audio/09-sustainable-practices/resources-monitor/workload.fil.c239f59dcdd5.mp3": "099d594620f9c7ea996b3a2572e000a16ac3cfd3fe129cec7937003220ea3ad9"
+  },
+  "sibling_and_legacy_files_sha256": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/competency.json": "7feaa0ac20e4a6ecbe2e8d8a293a60586f4949d32bd57ca8be7a0c63e6b34cd2",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/module.json": "0d17489aaebb552df27fe87998c6f3d77640333a8595ab4a64e99d50c77a0238",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/facilitator-notes.en.md": "519b9595d8805c30cc7f67169f56102014de1c7666e133c892282c852543b5a4",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/coverage.json": "9befaa0c62a90b4686c071804a23db9c6eb23897bd7c797953527b63b0cc7e79",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lesson.en.md": "ff947088c0ac61068cd121fecbb96e29b633b813b8c313d753ebd38452688271",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/qa-entries.json": "b94945c3416d8a5d6dd8d4350041b38a3a4488dff84f1f037ac4cf046efa1ae8",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/facilitator-notes.fil.md": "91f5fa960e342aac6c5795da790f3d863b1fd82a478d432a36ef21b55f22e3c6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lesson.fil.md": "7454358bfbe4dcedaeaf9bbac90c06f04253c24d03162717ceb97122134b078c",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/activities.json": "72825265f9f2ee4e5450ef966cb7a60130b4f4a6a7e2e67cfbca91e7a473ad34",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/visuals/01-sukat-subok-review.svg": "e849788c866969671017dedc05795b9cf6a3e44140205b7b6962fba65f0fe9a6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/visuals/visuals.json": "75cc6dd8691011dcd66df96bb57878064831cb90a9dd8be3199a6314d6ac3358",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/competency.json": "d460091f13bf82cc64f24bdafd01edd9fd8390f7890021d1f1bdbe33e6f9b1ce",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/slides.json": "01111efc42991991b01dc685a3b62063c5c67e41b1359952e86cb1af3578de4e",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.en.md": "18042f6d4545256b4dce957d4a4c0126ecdf43b93d27dc01196b3f296fb8d081",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.fil.md": "addbcc4e6af8b69e7c00724314f2d2def2b15db0323e05449d66b8408f0ab5fa",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.en.md": "2691742e10fc6ee8905631ddd5309afdcd016d9b1c435291438fcc0e396b03e6",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json": "a258bc0dc67b58303d21d07f79685b5d6bb207db51a9a5a4306a223beb93d42b",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.fil.md": "7f19cab8ba9261f073376bc9b76ef83f4c263330d37c02ce3ca3e575964b549f",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/competency.json": "9c1103a938c191ad10f5987c5babff05c2dc41a769bb2603734e9d46c89d5f11",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/slides.json": "7704d6b8c490b1553ec386c2af4785a390dbe9a8e3f1e4119f7e7dc5bd48d1f7",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.en.md": "6c67ec5ca31e470277aab566070ac73cd3795b89f4eb9effce7d3585d1d6dc1b",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.fil.md": "aacfc0e3a151261cb4ce3bb9772d5eb83609b5bb1206956f323989fe253ac064",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/facilitator.en.md": "32fb3ebc829c0910971d8527e2fae913da58cbf232531c94fbb4a21ab84b3765",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json": "75d963a78516c54792988b699c3d46ba26ecd9af7ff20d69f5dc4f4e26e791a0",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/read.fil.md": "b030b67a91641d632de3f624193b5a8d96a4d62eeddd97cbd3f154b5d9d34220"
+  },
+  "shared_files_sha256": {
+    "content/training/day1-basic-competencies/narration.json": "38b3efcdb61252d720a9aff7189e7f64d68e77d3c0f3054c25310fa81d3fa5a9",
+    "remotion/src/Root.tsx": "5289e6c0792058d3c1d245ee01983958a73b90795ff2c4331f1504078725b321",
+    "src/components/elearning/reference-lessons.tsx": "2fe0440a857efee6b4fb2d3f62bb450a444274d4d834225f457bf301343819be",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    ".github/workflows/ci.yml": "2082486dc631bc54e820b422fdc07523be25dab3d0788ac9f5d33c5c4b3663b7",
+    ".github/workflows/remotion.yml": "325ba1f3e0fc8fa5886aa5966ba2490da2d2616469a8e071142c7f14c1b9b9b3",
+    "scripts/lib/reference-content.mjs": "96bd6b4f49eb0d0985c0e0010c5733f3a71e51236f9eff5734ae1ba2b34f2c3a",
+    "scripts/lib/reference-narration.mjs": "2ae95cbba1e74e3befd7bb71ffa669fa7fc34905cbb1c407f4571581d9470534",
+    "src/lib/elearning/reference-narration.ts": "ce925ca7114ad2036688098e5e64dfc04bc72a0a507c736e7a7dbd85bb0064ab",
+    "scripts/lib/reference-load.mjs": "97b0e95f026d4695c8fe59b3197759c2670b03f66fe8b5fea39a3c818cd5bdbd",
+    "scripts/lib/tts-providers/azure.mjs": "89f7133c741e70c526093df0fa88b403af023f3f423220e40f96cea858217619",
+    "scripts/lib/tts-providers/edge-tts.test.mjs": "e4f01f2ddf614864a67d814592f055695f627bb5527bd0a315404bab082539f9",
+    "scripts/lib/tts-providers/edge-read-aloud.mjs": "6ab984fa22f5afa97986d4a843decba51af9f39045af937d86c4f5159dded90a",
+    "scripts/lib/tts-providers/ssml.mjs": "4fcbfa756cedc2731a53ea20f46226c6b3af9c562f26b4d9178f03b55301c1b2",
+    "scripts/lib/tts-providers/ssml.test.mjs": "fd5a1b93493f6ac3c9b64f2fd2851c545874ae9a393a5f2ae04ec4aa158e99de",
+    "scripts/lib/tts-providers/gemini.test.mjs": "5dafe4d57b19779fa40fcdab66d45e37b72ab372476e4fa33f23a639423ecde0",
+    "scripts/lib/tts-providers/gemini.mjs": "f841e0934b13b29631e841a3abbfd1aebe63be591f5c23b3f6981f3ebc3687ee",
+    "scripts/lib/tts-providers/edge-tts.mjs": "e45696c2de4b5606f5fc0eb416eac7880bc7be8291060864ac58ff8ff86665b2"
+  },
+  "source_files_sha256": {
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/kwento-ni-rosario.md": "c3907b1b473f6cf7f7506de06b8aa3a8051806709e31d45f3f7ab946432744ef",
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976"
+  },
+  "prior_approval_and_proposal_sha256": {
+    "docs/lesson-121-translation-owner-approval.json": "4bc5e9378c55cc601f9622143b96cad4508f3ae36421fd3f175eda2715e3bade",
+    "docs/lesson-122-translation-owner-approval.json": "c546603a8a8d2b565e1acfb25b76aed2c4d8e90787dce972664049c2bf78e1cb",
+    "docs/lesson-123-owner-approval.json": "32156f491b9566865691cfc16285aa48e567246251dcce0fef91c26bf06d3661",
+    "docs/lesson-123-translation-owner-approval.json": "2f16b5868243bffab39050d131c01833bb9dc862919033fb1696e8cdf32ca430",
+    "docs/lesson-124-owner-approval.json": "2b871a8369b40574ff7ebf282f62a5724407bd690eb85e677c759e43f99b88a5",
+    "docs/lesson-124-translation-owner-approval.json": "e968052a991b65c71e1df57cac965888cbdf782f8523d18125229b1525c0acda",
+    "docs/lesson-131-owner-approval.json": "de6cbf3a1fb81eabdc29f43e760b5119f6c5d5b707db604dcdbb12bf1fe8758a",
+    "docs/lesson-132-owner-approval.json": "abd737a01f46d9f1c64db498077a8fae702290cffcf4d30ed806a412513e0159",
+    "docs/lesson-133-owner-approval.json": "f9d2d35549e668e79cc6c076710f6c3369f75912e4ff0ef864b19864d5a93bd3",
+    "docs/lesson-134-owner-approval.json": "d3c8fe6e11f15ddc0e89f890ed41ce5942498b04327290071aa3fba3d1b1aaf1",
+    "docs/lesson-135-owner-approval.json": "09f5051708d0533498c667c644897c0d8309ed6bfe2dd6fe35cc95a7e5242c56",
+    "docs/lesson-141-owner-approval.json": "994eb0ba26ebe89360fcc49374c5d5ead176a67ee937fa82af81e5ad0551be88",
+    "docs/lesson-142-owner-approval.json": "c652a75d2ed861ff75e91d3decb3ea3ad82bd420d6e598aeb6203bdc92b75ed0",
+    "docs/lesson-143-owner-approval.json": "bc1a15799d6c39676e91553337aac0b41bae9d71fc6cfddab64e824c7671fd52",
+    "docs/lesson-144-owner-approval.json": "2a8250e7eafd322013d027c2eb16e176a745a0f606308591afa4a2083a999948",
+    "docs/lesson-145-owner-approval.json": "8eac6235972b7daf9df56565e8288f3d44d9af235d286135c1ea95184b352cd1",
+    "docs/lesson-151-owner-approval.json": "fa04c4a13c0081649b1ed86020535206dc5e00859fb829ef59a79e30161ca4f2",
+    "docs/lesson-152-owner-approval.json": "a96f599b1fad044b390222965786986004e8e9c646166c3a9b85b7a5bd028462",
+    "docs/lesson-153-owner-approval.json": "5b44380d944f2a086459e54d5f84740fc386d224bf861e3054edb6ff9ae61f84",
+    "docs/lesson-154-owner-approval.json": "14af7ac72e72e1519b1c2a30e576e6f31c0ffd1063f77a01a12ccc7c541adce2",
+    "docs/lesson-155-owner-approval.json": "0064edf2a44e8ea24c00f8f8b1e975dc97d20d3bc6df12efa21cd5568446e4af",
+    "docs/lesson-155-proposal-receipt.json": "6d71b322a32119ec2ee4c3cb5a1c85d31d87142493a39caa12230fe5dd5072f6",
+    "docs/lesson-156-owner-approval.json": "e6c294d0a2ea844d1adb8395e94430fe479545b6c4a7da7d40c860079b5314d0",
+    "docs/lesson-161-owner-approval.json": "6538a95cbd0da76a483675a925f98b98a745fe96562014ed9ce76d98e57836b0",
+    "docs/lesson-161-proposal-receipt.json": "0b2d7e3dea955c7f503c8975b9572df55d2cb4f7c84554919eaeabaf0a9d25ec",
+    "docs/lesson-162-owner-approval.json": "7a21e3b63f632927ea92208e84c1a0c47aa9558fccb22f04589c210ee20460c5",
+    "docs/lesson-162-proposal-receipt.json": "7fc46d14d12ba46435e3ac2d4f494a7f3bda755849333eace65c1fad4b12e23c",
+    "docs/lesson-163-owner-approval.json": "687a1eee3fb39f0ca71db11c08dd8210a3bbd2cc27ef991cddaa332c0e486531",
+    "docs/lesson-163-proposal-receipt.json": "0b5bdd4bb7f6fc12ceae0c0fde5407a2953eb9c2abe116eb3de315eb05b20c64",
+    "docs/lesson-164-owner-approval.json": "8fca7a1707c836fafed7dbcc25d8d245968a8602b1fb3dab51371844f9a4b575",
+    "docs/lesson-164-proposal-receipt.json": "f05bde4fe954657a89ce370ebd9a9afc10cca06dbce82c5c777137319d47165f",
+    "docs/lesson-165-owner-approval.json": "35b65fd47cb27f5662339759f210894775954a4d44c3807c8beafe69f8bb4f9f",
+    "docs/lesson-165-proposal-receipt.json": "50400f8320ec825905eb004174cef12b3d6890d1aeacabc392a925d7822550a1",
+    "docs/lesson-171-owner-approval.json": "a5a22be635f602c66cf15e0bea33a26abdb231ade5452a658db4f027cc445f6a",
+    "docs/lesson-171-proposal-receipt.json": "30d6a15243cc1e1f9c00ffde9e78c6b196aac8af338f8b60f49397967d48cec6",
+    "docs/lesson-172-owner-approval.json": "571f321b7ecc13194339723c535fef4d2991ec00830febad0dd9c390722fdc6f",
+    "docs/lesson-172-proposal-receipt.json": "70c2592ef570c08c12634798668b190c66475198468785d9865d30231735a4fd",
+    "docs/lesson-173-owner-approval.json": "aec4aa30a45eaae661565595d5f1cbdbc5a70cc17b729e0626c281693b8d11b0",
+    "docs/lesson-173-proposal-receipt.json": "5137ca8624e258ca284876898270ff58ea42c4421d5ee5e8d7d9caeaad4e5b3e",
+    "docs/lesson-173-reviewed-proposal-receipt.json": "4c715c010458900edb650b61e674e39ee3e51d88aa243498dbf61d87d625b33e",
+    "docs/lesson-174-owner-approval.json": "b51d92b80ff1291fb6c38c35dd9455263388868c6b12bf80b8c38985a1d0d241",
+    "docs/lesson-174-proposal-receipt.json": "b80dd4ef89495f3f175b009138e8840d476a2ec94472f3467af2281d4156d5ad",
+    "docs/lesson-174-reviewed-proposal-receipt.json": "89d59e960367f6ee49e95fcb956674039cbb7c81df69e572d752203dd1b023dc",
+    "docs/lesson-181-owner-approval.json": "2d7071653cd18f960b2243843f603e2365f6424f27375cf8390b8fc4e0fc655b",
+    "docs/lesson-181-proposal-receipt.json": "0ea74c184f10a5d6d15edfa6f5c1e20253f0772f154ee9d1b3c78f7cb349e1ba",
+    "docs/lesson-182-owner-approval.json": "60036bcdbdd5403a8c56579b6a51cf06e3782eff28fb23d6aaead2949fff7758",
+    "docs/lesson-182-proposal-receipt.json": "2665d3ad85af6c668bb1ef327ab912a7e243c37059a1084ec7bc2c28b1024450",
+    "docs/lesson-183-owner-approval.json": "e0e09946e852b5c7196baceeb997480313a2d37ab610bbc8263a2269e0f38145",
+    "docs/lesson-183-proposal-receipt.json": "096eb21eec029e168867cf071234ad58738ec54b02143c70607039149e4e5214",
+    "docs/lesson-184-owner-approval.json": "67eafb09f23e55055c83f508d47ab20493e1859382506f79fb7fe595159cc465",
+    "docs/lesson-184-proposal-receipt.json": "c1d13e739923c47ae4d3ac7e7436b47cefb6e0e286f5ed5fc76095b85dabc2c4",
+    "docs/lesson-184-reviewed-proposal-receipt.json": "c1d13e739923c47ae4d3ac7e7436b47cefb6e0e286f5ed5fc76095b85dabc2c4"
+  },
+  "production_snapshot": "not captured; source receipt does not establish published database state",
+  "owner_release_approval": false
+}
