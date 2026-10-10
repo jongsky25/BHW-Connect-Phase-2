@@ -27,7 +27,7 @@ jobs:
       - name: Require committed story evidence
         id: scope
         run: |
-          if test -f docs/lesson-182-final-evidence-origins.json; then
+          if test -f docs/lesson-182-final-evidence-origins.json && ! test -f docs/lesson-182-owner-approval.json; then
             echo "verify=true" >> "$GITHUB_OUTPUT"
           else
             echo "verify=false" >> "$GITHUB_OUTPUT"

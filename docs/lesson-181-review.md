@@ -1,0 +1,17 @@
+# Lesson 1.8.1 Apple draft review
+
+This PR implements the pinned six-screen English/Filipino `safety-identify` handoff. Apple is a fictional adult BHW, using the shared reference in `lesson-18-apple-reference.json`. The Read and Slides narration is equivalent; Slides use shorter display text. The story ends with an actionable report, verified contacts and follow-up rather than claiming the hazard has already been corrected.
+
+Open `lesson-1.8.1-apple-review.html` from the review ZIP for the actual production lesson components, guides, observation indicator and evidence. The HTML embeds the exact committed media. Its authentication, resume and save callbacks are explicit local fixtures; it does not connect to production. Use the ZIP's external integrity receipt to verify every member, its hash and CRC. CI receipts identify the exact source SHA and every composition actually rendered.
+
+The 45-minute facilitated plan allocates 5 minutes opening, 8 modeling, 18 triad practice, 9 check/debrief and 5 reflection. Thirty learners form ten simultaneous triads. Three six-minute rounds include an attempt, partner report, feedback, retry and recording/role swap. A single trainer samples one triad per round: three learners, six observed performances. Other learners remain **not observed**, with later observation required; peer feedback and completion clicks cannot award competence. Both languages have a four-page A4 practice kit and a separate single-page reporting aid.
+
+Source evidence retains four original PDFs and twenty page excerpts, with hashes and the actual PDF/printed-page crosswalk. The deck OSH section is PDF slides 69–78. The TESDA four-hour allocation is contextual evidence, not a claim of certification or equivalence. Classroom practice uses drawings, cards and dummy equipment. Local clinical and policy review is required for exposure/reporting procedures and any sharps, hand hygiene or PPE demonstration.
+
+The first media attempt and its full/focused model reviews are retained separately. Flagged narration was regenerated with stronger instructions for a steady adult female narrator. Final full reviews use twelve actual Read MP3s and decoded AAC from both shipped videos; focused review uses four exact WAV excerpts from each recording. The audio notes preserve model disagreements and unresolved concerns. Model analysis does not establish human listening or clinical approval.
+
+The draft preserves the original lesson identity, objectives, four resume anchors/concepts, quiz wording/options/correct index, old selected narration and complete history, prior public bytes and all sibling lessons. Exact successor/predecessor receipts allow historical guards to check their immutable views while current tests independently check the new lesson.
+
+**Release state:** draft, unmerged, unpublished. Human listening, owner review, authorized local clinical review and local policy SME signoff remain pending. This package does not authorize production loads or release. Full normal CI remains blocked by the pinned base’s unfinished twelve 1.7.3 narration tracks, recorded in its earlier owner approval and verification. This PR preserves those source/media selections and keeps the global guard enabled. The package identifies this inherited failure rather than claiming a green CI run.
+
+The final package verification records actual test/browser/render counts and its limitations.

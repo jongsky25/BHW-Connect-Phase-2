@@ -1,9 +1,10 @@
+import {release182View} from '../lib/lesson-182-release-integration.mjs';
 // @vitest-environment node
 import {describe,it,expect} from 'vitest';import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {beforeProposed182} from '../lib/lesson-182-integration.mjs';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {planReferenceNarration} from '../lib/reference-narration.mjs';import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
-const leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/',j=p=>JSON.parse(fs.readFileSync(p)),sha=b=>createHash('sha256').update(b).digest('hex');
+const leaf='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/',j=p=>JSON.parse(release182View(p,'reviewed182')),sha=b=>createHash('sha256').update(b).digest('hex');
 const b=j('docs/lesson-182-handoff-baseline.json'),lesson=j(leaf+'lesson.json'),slides=j(leaf+'slides.json');
 const loaded=loadReferenceModule('content/training/day1-basic-competencies/modules/08-osh','public').lessons.find(l=>l.manifest.lesson_key==='safety-controls');
 describe('Apple lesson 1.8.2 actual current source and historical byte preservation',()=>{
@@ -21,7 +22,7 @@ describe('Apple lesson 1.8.2 actual current source and historical byte preservat
   const rubric=j(leaf+'competency.json').observation_indicators;expect(rubric).toHaveLength(1);expect(rubric[0].objective_index).toBe(0);expect(Object.keys(rubric[0].levels)).toHaveLength(6);
  });
  it('hash-checks every proposed successor before returning immutable predecessors',()=>{
-  const receipt=j('docs/lesson-182-proposal-receipt.json');for(const[p,e]of Object.entries(receipt.changed_existing_files)){expect(sha(fs.readFileSync(p))).toBe(e.proposed_sha256);expect(sha(beforeProposed182(p))).toBe(e.predecessor_sha256);expect(()=>beforeProposed182(p,Buffer.from('unreviewed mutation'))).toThrow('Unpinned');}
+  const receipt=j('docs/lesson-182-proposal-receipt.json');for(const[p,e]of Object.entries(receipt.changed_existing_files)){expect(sha(release182View(p,'reviewed182'))).toBe(e.proposed_sha256);expect(sha(beforeProposed182(p))).toBe(e.predecessor_sha256);expect(()=>beforeProposed182(p,Buffer.from('unreviewed mutation'))).toThrow('Unpinned');}
  });
  it('selects all twelve actual current Kore tracks and the unchanged old published tracks',()=>{
   const manifest=j('content/training/day1-basic-competencies/narration.json');const plan=planReferenceNarration([{key:'08-osh',lessons:[loaded]}],manifest,p=>sha(fs.readFileSync('public'+p)));expect(plan).toHaveLength(12);for(const p of plan){expect(p.action).toBe('skip');expect(p.voice).toBe('gemini:gemini-3.8-flash-tts:Kore');}
@@ -30,7 +31,7 @@ describe('Apple lesson 1.8.2 actual current source and historical byte preservat
   for(const lang of ['fil','en']){const selected=narrationForLesson(manifest,'safety-controls',lang,sections);expect(Object.keys(selected)).toEqual(previous.sections.map(s=>s.id));for(const s of previous.sections)expect(selected[s.id].src).toBe(b.target_narration.sections[s.id][lang].src);}
  });
  it('appends exactly the two target story compositions without changing the predecessor registry',()=>{
-  const path='remotion/src/Root.tsx',source=fs.readFileSync(path,'utf8');
+  const path='remotion/src/Root.tsx',source=release182View(path,'reviewed182').toString();
   const stripped=source.replace(/^import \{SafetyControlsStory[^\n]+\n/,'').replace(/      \{\(\["fil", "en"\] as const\)\.map\(\(language\) => \(\n        <Composition key=\{`safety-controls-[\s\S]+?      \)\)\}\n/,'');
   expect(stripped).toBe(beforeProposed182(path).toString());
   for(const id of ['SafetyControlsStoryFil','SafetyControlsStoryEn'])expect(source.match(new RegExp(id,'g'))).toHaveLength(1);
@@ -41,7 +42,7 @@ describe('Apple lesson 1.8.2 actual current source and historical byte preservat
  });
 
  it('keeps shared UI changes confined to target timing and picture-before-check behavior',()=>{
-  const path='src/components/elearning/reference-lessons.tsx',source=fs.readFileSync(path,'utf8');
+  const path='src/components/elearning/reference-lessons.tsx',source=release182View(path,'reviewed182').toString();
   const stripped=source.replace(/^  const controls(?:Revision|Tracks|Minutes)[^\n]*\n/gm,'')
    .replace(' || controlsRevision) && !storyLayout && figures',') && !storyLayout && figures')
    .replace(' && !controlsRevision && (revealSummary',' && (revealSummary')

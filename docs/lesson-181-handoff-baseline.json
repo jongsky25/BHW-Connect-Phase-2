@@ -1,0 +1,749 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "f4bf3c25ec498cabac0b6e851337b312ff6333e7",
+  "lesson_number": "1.8.1",
+  "lesson_key": "safety-identify",
+  "lesson_id": "5403083f-b3e6-43cb-9221-769bac13dc52",
+  "module_id": "ffd36ec0-f8f9-4c7a-bf34-2ab821ac95ec",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "character": {
+    "name": "Apple",
+    "pronouns": "she/her",
+    "reference_status": "No supplied or generated likeness; coordinate one fictional reference during implementation"
+  },
+  "manifest": {
+    "lesson_key": "safety-identify",
+    "position": 0,
+    "title_fil": "Kilalanin ang panganib",
+    "title_en": "Identify hazards",
+    "objectives_fil": [
+      "Sa halimbawang health station at field visit, tukuyin ang limang uri ng panganib at ipares ang isang nakitang panganib sa posibleng pinsala, agarang kontrol at reporting contact."
+    ],
+    "objectives_en": [
+      "In a sample health-station and field-visit setting, identify five hazard groups and match one observed hazard to potential harm, immediate control and reporting contact."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "ana",
+      "concept_ids": [
+        "m8.requirements"
+      ]
+    },
+    {
+      "id": "inspect",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice",
+        "m8.sharps",
+        "m8.infection",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice",
+        "m8.sharps",
+        "m8.infection",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ]
+    }
+  ],
+  "slide_anchors": [
+    {
+      "id": "slide-ana",
+      "concept_ids": [
+        "m8.requirements"
+      ]
+    },
+    {
+      "id": "slide-inspect",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice"
+      ]
+    },
+    {
+      "id": "slide-practice",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice",
+        "m8.sharps",
+        "m8.infection",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ]
+    },
+    {
+      "id": "slide-check",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice",
+        "m8.sharps",
+        "m8.infection",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m8.requirements",
+      "read_ids": [
+        "ana",
+        "inspect",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-ana",
+        "slide-inspect",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.practice",
+      "read_ids": [
+        "inspect",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-inspect",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.sharps",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.infection",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.ergonomics",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.stress",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.accidents",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "original_check": {
+    "prompt_fil": "May basang sahig sa pasukan. Aling ulat ang magagamit agad?",
+    "prompt_en": "The entrance floor is wet. Which report supports immediate action?",
+    "options": [
+      {
+        "fil": "“Basang pasukan, panganib madulas; ilayo muna ang tao at ipatama sa responsableng staff.”",
+        "en": "“Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”"
+      },
+      {
+        "fil": "“Mag-ingat na lang ang lahat hanggang uwian.”",
+        "en": "“Everyone should be careful until closing.”"
+      },
+      {
+        "fil": "“Walang nasaktan kaya walang kailangang aksyon.”",
+        "en": "“Nobody was hurt, so no action is needed.”"
+      }
+    ],
+    "correct_option_index": 0,
+    "feedback_fil": "Ang unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.",
+    "feedback_en": "The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait."
+  },
+  "guided_minutes": 45,
+  "module_guided_minutes": 240,
+  "target_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/competency.json": "816f911e781bfacb9382c0fe8c74a5623931ec82a146446a5c77daf95b60415e",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.en.md": "fbb018c7c22c93252dc7fd38adf341c8b2d3176676ad939ac9880755c3048d3b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.fil.md": "120daea8442d5e46343e73e8710f156e402ee921cab138bb58138df8c9f348cd",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json": "da547084f728cbf926a335aa45a89e0b4d919abfab7f1b929abb57a57d7a9f69",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.en.md": "bb15c2fb0a8fa6c79a95078aaed555399d8188bc95edebb87b878af949e3f871",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.fil.md": "0d48728ca253308c04466b5a998d09fcc78d0b5fd3e8667e1793bd7ad8dcdffd",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/slides.json": "eb84aadacd14496d30767d0a3c5b3d5ba9e0c10aad1d13c15edc26c4ae2cada5"
+  },
+  "target_files_utf8": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/competency.json": "{\n  \"observation_indicators\": [\n    {\n      \"objective_index\": 0,\n      \"observable_fil\": \"Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan.\",\n      \"observable_en\": \"Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example.\",\n      \"not_yet_fil\": \"Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.\",\n      \"not_yet_en\": \"Misses the hazard or gives only “be careful” as the response.\",\n      \"levels\": {\n        \"kaya_na_fil\": \"Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan. Nagagawa kahit hindi pinapaalalahanan.\",\n        \"kaya_na_en\": \"Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example. Completes this without prompting.\",\n        \"kailangan_practice_fil\": \"Natutukoy ang panganib ngunit kulang ang contact o kontrol; ipapunan ang apat na field bago ulitin.\",\n        \"kailangan_practice_en\": \"Names the hazard but omits contact or control; complete all four fields and repeat.\",\n        \"hindi_pa_fil\": \"Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.\",\n        \"hindi_pa_en\": \"Misses the hazard or gives only “be careful” as the response.\"\n      }\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.en.md": "## [purpose] Purpose\n\nIn a sample health-station and field-visit setting, identify five hazard groups and match one observed hazard to potential harm, immediate control and reporting contact.\n\n## [time-materials] Time and materials\n\n45 minutes of facilitated practice within the subchapter's 4 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nUse a paper scenario, not a hazardous work area. Prepare the local reporting contact.\n\n## [opening] Opening\n\nThe entrance floor is wet. Which report supports immediate action?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.\n\n## [misconception] Common misconception\n\nMisses the hazard or gives only “be careful” as the response. Recognizing a hazard should lead to a specific control and responsible contact.\n\n## [practice] Practice activity\n\nDraw five boxes: needlestick injury; infection exposure; body discomfort; stress from excessive work; work-related accidents. Give a station or home-visit example for each. Choose one and write the harm, control and contact. In pairs, replace a vague “be careful” with a specific action. Alone, use the checklist. Before the next duty, perform a short hazard check.\n\n## [answer-key] Answer key\n\n1. “Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”\n\nThe first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.\n\n## [observe] Observe\n\nIdentifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example.\n\nReady: Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example. Completes this without prompting.\n\nNeeds practice: Names the hazard but omits contact or control; complete all four fields and repeat.\n\nNot yet: Misses the hazard or gives only “be careful” as the response.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nNames the hazard but omits contact or control; complete all four fields and repeat. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23. The five hazard groups span both source-table pages. A local clinical trainer must review demonstrations and referral pathways. Immediate needlestick evaluation was checked against CDC on 25 September 2026. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.fil.md": "## [purpose] Layunin\n\nSa halimbawang health station at field visit, tukuyin ang limang uri ng panganib at ipares ang isang nakitang panganib sa posibleng pinsala, agarang kontrol at reporting contact.\n\n## [time-materials] Oras at kagamitan\n\n45 minuto para sa pinadali na pagsasanay. Bahagi ito ng 4 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nGamitin ang scenario sa papel, hindi tunay na mapanganib na lugar. Ihanda ang lokal na reporting contact.\n\n## [opening] Pambungad\n\nMay basang sahig sa pasukan. Aling ulat ang magagamit agad?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.\n\n## [misconception] Karaniwang pagkakamali\n\nHindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon. Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\n\n## [practice] Gawaing pagsasanay\n\nIguhit ang limang kahon: tusok ng karayom; exposure sa impeksyon; pananakit ng katawan; stress sa sobrang trabaho; aksidente sa gawain. Magbigay ng isang halimbawa sa bawat isa mula sa station o home visit. Pumili ng isa at isulat ang pinsala, kontrol at contact. Sa pares, suriin kung “mag-ingat” lang ang kontrol at palitan ng tiyak na aksyon. Kung mag-isa, gamitin ang checklist. Bago ang susunod na duty, magsagawa ng maikling hazard check.\n\n## [answer-key] Susi sa sagot\n\n1. “Basang pasukan, panganib madulas; ilayo muna ang tao at ipatama sa responsableng staff.”\n\nAng unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.\n\n## [observe] Obserbahan\n\nNatutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan.\n\nKaya na: Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Natutukoy ang panganib ngunit kulang ang contact o kontrol; ipapunan ang apat na field bago ulitin.\n\nHindi pa: Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nNatutukoy ang panganib ngunit kulang ang contact o kontrol; ipapunan ang apat na field bago ulitin. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23. Ang limang hazard group ay mula sa dalawang pahina ng source table. Suriin ng lokal na clinical trainer ang demo at referral pathway. Ang agarang needlestick evaluation ay sinuri sa CDC noong 25 Setyembre 2026. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"safety-identify\",\n    \"position\": 0,\n    \"title_fil\": \"Kilalanin ang panganib\",\n    \"title_en\": \"Identify hazards\",\n    \"objectives_fil\": [\n      \"Sa halimbawang health station at field visit, tukuyin ang limang uri ng panganib at ipares ang isang nakitang panganib sa posibleng pinsala, agarang kontrol at reporting contact.\"\n    ],\n    \"objectives_en\": [\n      \"In a sample health-station and field-visit setting, identify five hazard groups and match one observed hazard to potential harm, immediate control and reporting contact.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"ana\",\n      \"concept_ids\": [\n        \"m8.requirements\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain.\",\n      \"takeaway_en\": \"Workplace safety starts by identifying hazards and local requirements before the task.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"inspect\",\n      \"concept_ids\": [\n        \"m8.requirements\",\n        \"m8.practice\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang checklist ay dapat humantong sa kontrol at follow-up, hindi sa pagbilang lamang ng hazards.\",\n      \"takeaway_en\": \"A checklist should lead to controls and follow-up, not merely count hazards.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m8.requirements\",\n        \"m8.practice\",\n        \"m8.sharps\",\n        \"m8.infection\",\n        \"m8.ergonomics\",\n        \"m8.stress\",\n        \"m8.accidents\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n      \"takeaway_en\": \"Recognizing a hazard should lead to a specific control and responsible contact.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m8.requirements\",\n        \"m8.practice\",\n        \"m8.sharps\",\n        \"m8.infection\",\n        \"m8.ergonomics\",\n        \"m8.stress\",\n        \"m8.accidents\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n      \"takeaway_en\": \"Recognizing a hazard should lead to a specific control and responsible contact.\",\n      \"check\": {\n        \"prompt_fil\": \"May basang sahig sa pasukan. Aling ulat ang magagamit agad?\",\n        \"prompt_en\": \"The entrance floor is wet. Which report supports immediate action?\",\n        \"options\": [\n          {\n            \"fil\": \"“Basang pasukan, panganib madulas; ilayo muna ang tao at ipatama sa responsableng staff.”\",\n            \"en\": \"“Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”\"\n          },\n          {\n            \"fil\": \"“Mag-ingat na lang ang lahat hanggang uwian.”\",\n            \"en\": \"“Everyone should be careful until closing.”\"\n          },\n          {\n            \"fil\": \"“Walang nasaktan kaya walang kailangang aksyon.”\",\n            \"en\": \"“Nobody was hurt, so no action is needed.”\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Ang unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.\",\n        \"feedback_en\": \"The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m8.requirements\",\n      \"read_ids\": [\n        \"ana\",\n        \"inspect\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-ana\",\n        \"slide-inspect\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.practice\",\n      \"read_ids\": [\n        \"inspect\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-inspect\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.sharps\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.infection\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.ergonomics\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.stress\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.accidents\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        21,\n        22,\n        23\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": []\n}\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.en.md": "## [ana] Before Ana starts work\n\nAna, 33, will assist at the health station before household visits. The entrance floor is wet, the sharps box is nearly full and a hot walk lies ahead. “I will be careful” is not enough. She identifies each hazard, who might be harmed and the control needed. She checks the local protocol and confirms the reporting contact and tasks within her training with the midwife.\n\n## [inspect] Inspect a work area\n\nA fictional station has a wet floor, a blocked exit and no soap at the sink. For each, name the hazard, possible harm, immediate control and reporting contact. First keep people away from danger and seek the right assistance. A checklist that only says “be careful” is incomplete. Check that the problem is corrected before removing the warning.\n\n## [practice] Try it, then repeat\n\nDraw five boxes: needlestick injury; infection exposure; body discomfort; stress from excessive work; work-related accidents. Give a station or home-visit example for each. Choose one and write the harm, control and contact. In pairs, replace a vague “be careful” with a specific action. Alone, use the checklist. Before the next duty, perform a short hazard check.\n\n## [check] Choose the next step\n\nChoose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.fil.md": "## [ana] Bago simulan ni Ana ang araw\n\nSi Ana, 33 anyos, ay BHW na tutulong sa health station bago mag-household visit. May basang sahig sa pasukan, halos puno ang sharps box at mainit ang nakaabang na lakad. Hindi sapat ang “mag-iingat ako.” Tinutukoy niya ang hazard, sino ang maaaring masaktan, at anong kontrol ang kailangan. Tinitingnan niya ang lokal na protocol at kinukumpirma sa midwife kung kanino mag-uulat at alin lang ang gawaing saklaw ng kanyang pagsasanay.\n\n## [inspect] Suriin ang isang work area\n\nSa kathang-isip na station, may basang sahig, nakaharang na labasan at walang sabon sa hugasan. Para sa bawat isa, sabihin ang hazard, maaaring epekto, agarang kontrol at taong aabisuhan. Unahin ang paglayo ng tao sa panganib at paghingi ng tamang tulong. Hindi kumpleto ang checklist kung ang nakasulat ay “mag-ingat” lamang. Balikan kung naayos ang problema bago alisin ang babala.\n\n## [practice] Subukan, saka ulitin\n\nIguhit ang limang kahon: tusok ng karayom; exposure sa impeksyon; pananakit ng katawan; stress sa sobrang trabaho; aksidente sa gawain. Magbigay ng isang halimbawa sa bawat isa mula sa station o home visit. Pumili ng isa at isulat ang pinsala, kontrol at contact. Sa pares, suriin kung “mag-ingat” lang ang kontrol at palitan ng tiyak na aksyon. Kung mag-isa, gamitin ang checklist. Bago ang susunod na duty, magsagawa ng maikling hazard check.\n\n## [check] Piliin ang susunod na hakbang\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/slides.json": "[\n  {\n    \"id\": \"slide-ana\",\n    \"concept_ids\": [\n      \"m8.requirements\"\n    ],\n    \"layout\": \"scene\",\n    \"heading_fil\": \"Bago simulan ni Ana ang araw\",\n    \"heading_en\": \"Before Ana starts work\",\n    \"display_fil\": \"Si Ana, 33, ay may duty sa station at home visits. Basang sahig, halos punong sharps box at mainit na biyahe: tukuyin kung sino ang maaaring masaktan at anong kontrol ang kailangan.\",\n    \"display_en\": \"Ana, 33, has station work and home visits. Wet floor, nearly full sharps box and a hot route: identify who could be harmed and what control is needed.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-inspect\",\n    \"concept_ids\": [\n      \"m8.requirements\",\n      \"m8.practice\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Suriin ang isang work area\",\n    \"heading_en\": \"Inspect a work area\",\n    \"display_fil\": \"Station check: basang sahig, harang sa exit, walang sabon. Itala ang panganib → posibleng pinsala → kontrol → reporting contact. Ilayo muna ang tao sa panganib; tiyaking naayos bago alisin ang babala.\",\n    \"display_en\": \"Station check: wet floor, blocked exit, no soap. Record hazard → potential harm → control → reporting contact. Keep people away from danger; confirm correction before removing a warning.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-practice\",\n    \"concept_ids\": [\n      \"m8.requirements\",\n      \"m8.practice\",\n      \"m8.sharps\",\n      \"m8.infection\",\n      \"m8.ergonomics\",\n      \"m8.stress\",\n      \"m8.accidents\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Subukan, saka ulitin\",\n    \"heading_en\": \"Try it, then repeat\",\n    \"display_fil\": \"Limang grupo: sharps, impeksyon, pananakit ng katawan, stress, aksidente. Sa isa: pangalanan ang pinsala, kontrol at contact.\",\n    \"display_en\": \"Five groups: sharps, infections, body discomfort, stress, accidents. For one, name the harm, control and contact.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-check\",\n    \"concept_ids\": [\n      \"m8.requirements\",\n      \"m8.practice\",\n      \"m8.sharps\",\n      \"m8.infection\",\n      \"m8.ergonomics\",\n      \"m8.stress\",\n      \"m8.accidents\"\n    ],\n    \"layout\": \"decision\",\n    \"heading_fil\": \"Piliin ang susunod na hakbang\",\n    \"heading_en\": \"Choose the next step\",\n    \"display_fil\": \"Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.\",\n    \"display_en\": \"Recognizing a hazard should lead to a specific control and responsible contact.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"May basang sahig sa pasukan. Aling ulat ang magagamit agad?\",\n      \"prompt_en\": \"The entrance floor is wet. Which report supports immediate action?\",\n      \"options\": [\n        {\n          \"fil\": \"“Basang pasukan, panganib madulas; ilayo muna ang tao at ipatama sa responsableng staff.”\",\n          \"en\": \"“Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”\"\n        },\n        {\n          \"fil\": \"“Mag-ingat na lang ang lahat hanggang uwian.”\",\n          \"en\": \"“Everyone should be careful until closing.”\"\n        },\n        {\n          \"fil\": \"“Walang nasaktan kaya walang kailangang aksyon.”\",\n          \"en\": \"“Nobody was hurt, so no action is needed.”\"\n        }\n      ],\n      \"correct_option_index\": 0,\n      \"feedback_fil\": \"Ang unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.\",\n      \"feedback_en\": \"The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait.\"\n    }\n  }\n]\n"
+  },
+  "sibling_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/competency.json": "0dd455b8dfd41341cafc661818d4b46e752c7381dfe259c01fb9610aadb82ff7",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.en.md": "75b490224d82166e491f1b1119b4c43e5beeae81738a8fe7ffb8595416d6edeb",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.fil.md": "b7e2bd70d13ff055da1603e9569ed09fd8c034c06fffe696e1eacc9f66eeb809",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json": "1c3c29044a38237688393ef4496dbc53d62c0a25433ee7cc893d289e021b73fb",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.en.md": "35d2df2359aa577e1a12ac7249021ab6fad8dfccc04dcaa0386f832521a6f8f7",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.fil.md": "91be0081e0475a60c2689e929f6340be2ec0d217baf9d1889744ca48b30404ae",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/slides.json": "69dd30daecc53559fd8105a95b8284a18a6b40df61fb946e188db1a13d804887",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/competency.json": "a082c90db70837d7b21d33c62b44191a3ef767c16307038547b6ff07654c2fe4",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.en.md": "c342d5b0f35444a3ec4d43d9976e4fa7b35fb79b5b927dbaf8e84aea3d56d27b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.fil.md": "b56b7b7fe4475e5a3fc337a06393d6bcf8e5ffbcf0cd46a86bf5186f8b346340",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json": "4a3dc79df78b737df53fb18fbf56c97a786fc454a358cea54c44dc775242a59e",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.en.md": "8df2159348482659d9b895a87e6392ae3f1415e08148a234380d58479aa1c36d",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.fil.md": "3fb99726ff80bea59b0a8054b1779a418bf33e55394c444c1d8ad09d5adfc027",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/slides.json": "f1a3b14af5e925c91a11b983ad71db2d6045201dca1bd5feda61eef18d4fc6cf",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/competency.json": "62fa9525b19906f2f3b2e8ccc7a5c19f5320b8f75b156a3881136fdcfc5546f9",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.en.md": "81c86df92b96e36651720ad9c31320a6e4f11c0f9eb44ce4aba93afb3145e269",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.fil.md": "19d39bb8d4a02afccda2b44e7c101f03a2dc0cc2ea23d4e62bb2c1360e669614",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json": "4a9c35f208a616e2f2674e22a4b6db2308e230c65969f220337de90589bb3108",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.en.md": "a78d0f1cf47873a3750edb756e5a8397ed07254745d1d40ebc7f04937e2e4ed2",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.fil.md": "5ea3e366bcb7130d7a917c96a40105b8a2fb06406ad7e0554d92968df1e5d2c9",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/slides.json": "47eafa47a4fb2a54776e925cf235497a27865079d777e87b88f634a688282374"
+  },
+  "shared_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/module.json": "708671d7fdb33f27dd5dc34ab1e6c2310160d46ec47e7349f3015328019817b4",
+    "content/training/day1-basic-competencies/narration.json": "48e8a49c85578accd15f1bcb771565add70d9861d05ab881a7c76dc1c14899e5",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    "remotion/src/Root.tsx": "e80a544e762c1298f30cf6fa57ac0cc94c9196cccaa09f83c6994529c5a68c69",
+    "src/components/elearning/reference-lessons.tsx": "7fe32058b7d5d52a54e1fa2ca93d042b9ee2798576d6c7b1015be5cb7965355c",
+    "scripts/lib/reference-narration.mjs": "14f8df35198b76b74d610cf9d506a611b0476bfaff211a71e7f384e8b0f88a51",
+    "scripts/lib/reference-load.mjs": "97b0e95f026d4695c8fe59b3197759c2670b03f66fe8b5fea39a3c818cd5bdbd"
+  },
+  "source_files_sha256": {
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976"
+  },
+  "target_narration": {
+    "module": "08-osh",
+    "sections": {
+      "ana": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-identify/ana.en.cc1c39f9488c.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "cc1c39f9488c334d02363c5cdd971e062d881ab08898b56361ec055676c3d05c",
+          "sha256": "3255c80ca88b3d7048cb1168b86732770482d2e6a9a8514206b908257ebc76a0",
+          "duration_seconds": 40.986,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Before Ana starts work",
+              "start_ms": 0,
+              "end_ms": 2400
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ana, 33, will assist at the health station before household visits.",
+              "start_ms": 2700,
+              "end_ms": 8500
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "The entrance floor is wet, the sharps box is nearly full and a hot walk lies ahead.",
+              "start_ms": 8800,
+              "end_ms": 16160
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "“I will be careful” is not enough.",
+              "start_ms": 16460,
+              "end_ms": 19540
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "She identifies each hazard, who might be harmed and the control needed.",
+              "start_ms": 19840,
+              "end_ms": 25680
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "She checks the local protocol and confirms the reporting contact and tasks within her training with the midwife.",
+              "start_ms": 25980,
+              "end_ms": 33580
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Workplace safety starts by identifying hazards and local requirements before the task.",
+              "start_ms": 33880,
+              "end_ms": 40920
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-identify/ana.fil.066cb3f024b8.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "066cb3f024b8acb306ecd4a9fda55e98d47236731d9c699cf703aae076c2021b",
+          "sha256": "50d6daeaaf735c7749e4ec0b2cf6a8cea541a24ff936a924ef1cc823032d79e0",
+          "duration_seconds": 48.823,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Bago simulan ni Ana ang araw",
+              "start_ms": 0,
+              "end_ms": 2520
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Si Ana, 33 anyos, ay BHW na tutulong sa health station bago mag-household visit.",
+              "start_ms": 2820,
+              "end_ms": 10660
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "May basang sahig sa pasukan, halos puno ang sharps box at mainit ang nakaabang na lakad.",
+              "start_ms": 10960,
+              "end_ms": 18800
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Hindi sapat ang “mag-iingat ako.”",
+              "start_ms": 19100,
+              "end_ms": 22060
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Tinutukoy niya ang hazard, sino ang maaaring masaktan, at anong kontrol ang kailangan.",
+              "start_ms": 22360,
+              "end_ms": 29520
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Tinitingnan niya ang lokal na protocol at kinukumpirma sa midwife kung kanino mag-uulat at alin lang ang gawaing saklaw ng kanyang pagsasanay.",
+              "start_ms": 29820,
+              "end_ms": 40020
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain.",
+              "start_ms": 40320,
+              "end_ms": 48760
+            }
+          ]
+        }
+      },
+      "check": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-identify/check.en.949f7b25c9be.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "949f7b25c9be4015683f96a1e04f9f7ffdd0cd2ff2d89e35814be6c3438d4f64",
+          "sha256": "189854427cf0c30eda3d39c0fc32c1f3f34c09fa192f9903f7b696f947a34182",
+          "duration_seconds": 18.416,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 1960
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2260,
+              "end_ms": 7580
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7880,
+              "end_ms": 11080
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Recognizing a hazard should lead to a specific control and responsible contact.",
+              "start_ms": 11380,
+              "end_ms": 18340
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-identify/check.fil.5bde17eb96d1.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "5bde17eb96d147486830bb77522c876ca16e1b4a57018aadadf451e7c525bc45",
+          "sha256": "ce684328c95f5d5fafe8fc8b64bbb2bd20dbdd0bde8c4deaa9dd1b21952719fa",
+          "duration_seconds": 19.252,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 2560
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 2860,
+              "end_ms": 8220
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 8520,
+              "end_ms": 12920
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
+              "start_ms": 13220,
+              "end_ms": 19180
+            }
+          ]
+        }
+      },
+      "inspect": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-identify/inspect.en.804a9e8eace1.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "804a9e8eace18e928120564884c4ed2acd9f6b3118f89dca7b131c49a1a3a3ef",
+          "sha256": "37e8e0c177094965360592556e8cebd1eb5da4efbfccbf5e9dde8ef462b8192c",
+          "duration_seconds": 37.172,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Inspect a work area",
+              "start_ms": 0,
+              "end_ms": 2120
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "A fictional station has a wet floor, a blocked exit and no soap at the sink.",
+              "start_ms": 2420,
+              "end_ms": 8820
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "For each, name the hazard, possible harm, immediate control and reporting contact.",
+              "start_ms": 9120,
+              "end_ms": 16120
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "First keep people away from danger and seek the right assistance.",
+              "start_ms": 16420,
+              "end_ms": 21820
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "A checklist that only says “be careful” is incomplete.",
+              "start_ms": 22120,
+              "end_ms": 26200
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Check that the problem is corrected before removing the warning.",
+              "start_ms": 26500,
+              "end_ms": 31020
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A checklist should lead to controls and follow-up, not merely count hazards.",
+              "start_ms": 31320,
+              "end_ms": 37120
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-identify/inspect.fil.ac8043f8f207.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "ac8043f8f2072b3f68a2ec953d3a2a896eed01749b0447215a0b2e8c2f8be5bf",
+          "sha256": "c57dc334ef7d69576b4ca46da3b7c5bd8ec0e3b5f39a4322d4bcfee8f151d519",
+          "duration_seconds": 42.945,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Suriin ang isang work area",
+              "start_ms": 0,
+              "end_ms": 2440
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Sa kathang-isip na station, may basang sahig, nakaharang na labasan at walang sabon sa hugasan.",
+              "start_ms": 2740,
+              "end_ms": 9740
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Para sa bawat isa, sabihin ang hazard, maaaring epekto, agarang kontrol at taong aabisuhan.",
+              "start_ms": 10040,
+              "end_ms": 18840
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Unahin ang paglayo ng tao sa panganib at paghingi ng tamang tulong.",
+              "start_ms": 19140,
+              "end_ms": 24380
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Hindi kumpleto ang checklist kung ang nakasulat ay “mag-ingat” lamang.",
+              "start_ms": 24680,
+              "end_ms": 29760
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Balikan kung naayos ang problema bago alisin ang babala.",
+              "start_ms": 30060,
+              "end_ms": 35060
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang checklist ay dapat humantong sa kontrol at follow-up, hindi sa pagbilang lamang ng hazards.",
+              "start_ms": 35360,
+              "end_ms": 42880
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-identify/practice.en.fb8ee0b23eaf.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "fb8ee0b23eaf3cd9607b798f944fd96d83d9e47fcee1c0822693381c3a8351fb",
+          "sha256": "42e20dacd24ce04d3dd04d4a0f57d9f705963eca92410857c006e867db0386ce",
+          "duration_seconds": 44.278,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2760
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Draw five boxes: needlestick injury; infection exposure; body discomfort; stress from excessive work; work-related accidents.",
+              "start_ms": 3060,
+              "end_ms": 15500
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Give a station or home-visit example for each.",
+              "start_ms": 15800,
+              "end_ms": 19560
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Choose one and write the harm, control and contact.",
+              "start_ms": 19860,
+              "end_ms": 24660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "In pairs, replace a vague “be careful” with a specific action.",
+              "start_ms": 24960,
+              "end_ms": 30600
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Alone, use the checklist.",
+              "start_ms": 30900,
+              "end_ms": 33420
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Before the next duty, perform a short hazard check.",
+              "start_ms": 33720,
+              "end_ms": 37840
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Recognizing a hazard should lead to a specific control and responsible contact.",
+              "start_ms": 38140,
+              "end_ms": 44220
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-identify/practice.fil.4e85563b3079.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "4e85563b30792ce78ecf4b5152df69f26f9c055c5485044bbf202e74c6ce09ea",
+          "sha256": "8e62fc2d1a138c5f6bd88143b1e7482b841a355140a6dea20dd11d898afcb273",
+          "duration_seconds": 53.055,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 3120
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Iguhit ang limang kahon: tusok ng karayom; exposure sa impeksyon; pananakit ng katawan; stress sa sobrang trabaho; aksidente sa gawain.",
+              "start_ms": 3420,
+              "end_ms": 16780
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Magbigay ng isang halimbawa sa bawat isa mula sa station o home visit.",
+              "start_ms": 17080,
+              "end_ms": 23640
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Pumili ng isa at isulat ang pinsala, kontrol at contact.",
+              "start_ms": 23940,
+              "end_ms": 29660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Sa pares, suriin kung “mag-ingat” lang ang kontrol at palitan ng tiyak na aksyon.",
+              "start_ms": 29960,
+              "end_ms": 37000
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Kung mag-isa, gamitin ang checklist.",
+              "start_ms": 37300,
+              "end_ms": 40380
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Bago ang susunod na duty, magsagawa ng maikling hazard check.",
+              "start_ms": 40680,
+              "end_ms": 45880
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
+              "start_ms": 46180,
+              "end_ms": 52980
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "production_snapshot_status": "Not captured: handoff preparation makes no production queries",
+  "owner_release_approval": false
+}

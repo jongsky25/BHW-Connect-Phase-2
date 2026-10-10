@@ -1,4 +1,5 @@
 import {SafetyControlsStory, calculateSafetyControlsMetadata, SAFETY_CONTROLS_FPS, SAFETY_CONTROLS_FALLBACK_DURATION} from './safety-controls/SafetyControlsStory';
+import {SafetyIdentifyStory, calculateSafetyIdentifyMetadata, SAFETY_IDENTIFY_FPS, SAFETY_IDENTIFY_FALLBACK_DURATION} from "./safety-identify/SafetyIdentifyStory";
 import {ProblemActionPlanStory, calculateProblemActionPlanMetadata, PROBLEM_ACTION_PLAN_FPS, PROBLEM_ACTION_PLAN_FALLBACK_DURATION} from "./problem-action-plan/ProblemActionPlanStory";
 import {ProblemCausesStory, calculateProblemCausesMetadata, PROBLEM_CAUSES_FALLBACK_DURATION, PROBLEM_CAUSES_FPS} from './problem-causes/ProblemCausesStory';
 import {ProblemDefineStory, calculateProblemDefineMetadata, PROBLEM_DEFINE_FPS, PROBLEM_DEFINE_FALLBACK_DURATION} from "./problem-define/ProblemDefineStory";
@@ -418,6 +419,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`problem-action-plan-${language}`} id={language === "fil" ? "ProblemActionPlanStoryFil" : "ProblemActionPlanStoryEn"}
           component={ProblemActionPlanStory} calculateMetadata={calculateProblemActionPlanMetadata}
           durationInFrames={PROBLEM_ACTION_PLAN_FALLBACK_DURATION} fps={PROBLEM_ACTION_PLAN_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`safety-identify-${language}`} id={language === "fil" ? "SafetyIdentifyStoryFil" : "SafetyIdentifyStoryEn"}
+          component={SafetyIdentifyStory} calculateMetadata={calculateSafetyIdentifyMetadata}
+          durationInFrames={SAFETY_IDENTIFY_FALLBACK_DURATION} fps={SAFETY_IDENTIFY_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
       {(["fil", "en"] as const).map((language) => (
