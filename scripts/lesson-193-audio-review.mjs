@@ -48,10 +48,12 @@ for(const record of records){
   // Build-time review of fictional, admin-authored training media only; follows the existing TTS provider exception. Never learner input or patient data.
   // eslint-disable-next-line no-restricted-syntax
   const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:readFileSync(record.file).toString('base64'),mime_type:record.file.endsWith('.wav')?'audio/wav':'audio/mp3'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
-  if(response.ok){const result=await response.json();reviewed=outputText(result);if(!reviewed)throw new Error('No model review text');break;}
+  if(response.ok){const result=await response.json();reviewed=outputText(result);if(reviewed)break;
+    if(attempt<2){await new Promise(r=>setTimeout(r,4000*(attempt+1)));continue;}
+    reviewed='Review unavailable: provider returned no model text';break;}
   if(attempt<2&&(response.status===429||response.status>=500)){await new Promise(r=>setTimeout(r,4000*(attempt+1)));continue;}
   reviewed=`Review unavailable: HTTP ${response.status}`;break;
  }
  report.records.push({reviewed_at:new Date().toISOString(),id:record.id,language:record.language,source_video:record.source_video??null,source_video_sha256:record.source_video_sha256??null,sha256:sha(record.file),expected_text:record.expected,model_response:reviewed});save();console.log('Model-reviewed '+record.id);
 }
-save();
+report.actual_recordings=report.records.length;report.successful_model_reviews=report.records.filter(r=>r.model_response&&!r.model_response.startsWith('Review unavailable')).length;report.status=report.actual_recordings===16&&report.successful_model_reviews===16?'16 full model reviews complete; human listening pending':'incomplete model review';save();if(report.successful_model_reviews!==16)process.exitCode=1;

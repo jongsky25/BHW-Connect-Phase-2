@@ -17,12 +17,14 @@ for record in full['records']:
   media=root/'public'/manifest['lessons']['resources-monitor']['sections'][section][language]['src'].lstrip('/')
  assert sha(media.read_bytes())==record['sha256'],record['id']
 assert sum(len(r['excerpts']) for r in focus['records'])==64
+assert all(r.get('model_response') and not r['model_response'].startswith('Review unavailable') for r in full['records'])
+assert all(e.get('model_response') and not e.get('review_failure') for r in focus['records'] for e in r['excerpts'])
 for record in focus['records']:
  assert sha((root/'public'/record['source_path'].lstrip('/')).read_bytes())==record['source_sha256']
  for excerpt in record['excerpts']:
   assert sha((root/'.preview/lesson193-excerpts'/excerpt['file']).read_bytes())==excerpt['excerpt_sha256']
 paths=set()
-for pattern in ['docs/lesson-193-*','docs/lesson-19-charlaine-*','scripts/lesson-193-*','scripts/remotion-resources-monitor-narrate.mjs','scripts/lib/lesson-193-integration.mjs','scripts/tests/lesson-193.test.mjs','.github/workflows/lesson193-*.yml','content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/*','public/training/audio/09-sustainable-practices/resources-monitor/*','public/training/bhw-1-9/charlaine-monitor-*','public/training/bhw-1-9/charlaine-reference-*','public/training/bhw-1-9/resources-monitor-*','remotion/src/resources-monitor/*','remotion/public/resources-monitor/*','.preview/lesson193-source/*.txt','.preview/lesson193-source/*.png','.preview/lesson193-raw/*.json','.preview/lesson193-excerpts/*','.preview/lesson193-deliverables/*.json','.preview/lesson193-deliverables/*.png','.preview/lesson193-deliverables/*.pdf','.preview/lesson193-deliverables/*.html']:
+for pattern in ['docs/lesson-193-*','docs/lesson-19-charlaine-*','scripts/lesson-193-*','scripts/remotion-resources-monitor-narrate.mjs','scripts/lib/lesson-193-integration.mjs','scripts/tests/lesson-193.test.mjs','.github/workflows/lesson193-*.yml','content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/*','public/training/audio/09-sustainable-practices/resources-monitor/*','public/training/bhw-1-9/charlaine-monitor-*','public/training/bhw-1-9/charlaine-reference-*','public/training/bhw-1-9/resources-monitor-*','public/training/module-1-9/monitor-c5d2eff5ad98.svg','remotion/src/resources-monitor/*','remotion/public/resources-monitor/*','.preview/lesson193-source/*.txt','.preview/lesson193-source/*.png','.preview/lesson193-raw/*.json','.preview/lesson193-excerpts/*','.preview/lesson193-decoded/*','.preview/lesson193-deliverables/*.json','.preview/lesson193-deliverables/*.png','.preview/lesson193-deliverables/*.pdf','.preview/lesson193-deliverables/*.html']:
  paths.update(p for p in root.glob(pattern) if p.is_file())
 for p in ['content/training/day1-basic-competencies/narration.json','remotion/src/Root.tsx','src/components/elearning/reference-lessons.tsx']:paths.add(root/p)
 if (root/'lesson-193-published-snapshot.json').exists():paths.add(root/'lesson-193-published-snapshot.json')

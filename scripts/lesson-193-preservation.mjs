@@ -40,9 +40,14 @@ for(const[p,hash]of Object.entries(start.files_sha256)){
   const current=read(p);
   for(const[k,v]of Object.entries(prior.lessons))if(k!=='resources-monitor')assert.deepEqual(current.lessons[k],v,'Sibling narration '+k);
   for(const[k,v]of Object.entries(prior.history??{}))if(k!=='resources-monitor')assert.deepEqual(current.history[k],v,'Sibling history '+k);
+  for(const v of prior.history?.['resources-monitor']??[])assert(current.history['resources-monitor'].some(h=>JSON.stringify(h)===JSON.stringify(v)),'Prior target historical recording lost');
+  for(const[k,v]of Object.entries(prior))if(k!=='lessons'&&k!=='history')assert.deepEqual(current[k],v,'Narration metadata '+k);
   assert(current.history['resources-monitor'].some(h=>JSON.stringify(h)===JSON.stringify(prior.lessons['resources-monitor'])),'Prior target selection retained');changed.push(p);continue;
  }
  assert.fail('Unscoped protected file changed '+p);
 }
-const report={status:'passed',protected_files:Object.keys(start.files_sha256).length,changed_existing_files:changed,checks:'all bilingual prompts, options and correct indexes preserved',paired_bodies:'14 exact Read/Slides matches',manifest_coverage_rubric:'unchanged',old_media:'all protected bytes retained',published_baseline:'not available; no production claim',owner_approval:false};
+const snapshotPath='docs/lesson-193-published-snapshot.json';
+const snapshot=fs.existsSync(snapshotPath)?read(snapshotPath):null;
+if(snapshot){assert.equal(snapshot.rows.length,3);assert.deepEqual(new Set(snapshot.rows.map(r=>r.lesson.lesson_key)),new Set(['resources-monitor','resources-audit','resources-safe-change']));assert.equal(snapshot.rows.find(r=>r.lesson.lesson_key==='resources-monitor').lesson.id,baseline.lesson_id);}
+const report={status:'passed',protected_files:Object.keys(start.files_sha256).length,changed_existing_files:changed,checks:'all bilingual prompts, options and correct indexes preserved',paired_bodies:'14 exact Read/Slides matches',manifest_coverage_rubric:'unchanged',old_media:'all protected bytes retained',published_baseline:snapshot?{status:'3 bounded published rows retrieved read-only; no authenticated playback or release claim',sha256:sha(fs.readFileSync(snapshotPath)),captured_at:snapshot.captured_at}:'not available; no production claim',owner_approval:false};
 fs.writeFileSync('docs/lesson-193-preservation.json',JSON.stringify(report,null,2)+'\n');console.log(report);

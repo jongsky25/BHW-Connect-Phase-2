@@ -8,6 +8,7 @@
     "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.en.md",
     "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.fil.md",
     "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/slides.json",
+    "content/training/day1-basic-competencies/narration.json",
     "remotion/src/Root.tsx",
     "src/components/elearning/reference-lessons.tsx"
   ],
@@ -15,6 +16,10 @@
   "paired_bodies": "14 exact Read/Slides matches",
   "manifest_coverage_rubric": "unchanged",
   "old_media": "all protected bytes retained",
-  "published_baseline": "not available; no production claim",
+  "published_baseline": {
+    "status": "3 bounded published rows retrieved read-only; no authenticated playback or release claim",
+    "sha256": "2816c0a64047ba160eb1c4cdaf4ee55872896cb69975392b3aab6446276ef00f",
+    "captured_at": "2026-10-10T09:39:56.012Z"
+  },
   "owner_approval": false
 }

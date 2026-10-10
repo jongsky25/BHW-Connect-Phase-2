@@ -6,6 +6,8 @@ Imungkahi ang maliit na trial na may owner at review date; ihambing ang resource
 
 60 minuto: 5 opening + 12 modelling + 25 practice/puna/retry + 10 fair-comparison debrief + 8 transfer. Hiwalay ito sa audio o optional story duration. Module total: 60 + 60 + 60 = 180 minuto. Ihanda ang limang A4 sheets sa lesson-193-practice-kit.fil.md, dummy master at lumang kopya, bolpen, calculator at timer. Sampung triads para sa 30 learners; tig-isang kit. Walang tunay na clinical o utility work.
 
+Sinukat na kabuuang playback ng pitong buong Read MP3: 665.783 segundo (11 minuto 5.783 segundo). Hindi kasama rito ang paghinto para mag-isip, sumagot, mag-replay o gawin ang guided practice. Gated pa rin ang takeaway pagkatapos sumagot. Hiwalay ang optional story.
+
 ## [prepare] Ihanda
 
 I-print ang kit. Dummy master: PRACTICE v2, hindi tunay na clinical handout. Lumang dummy copy: PRACTICE v1. Ang v2 ay aprubado lamang sa fictional role card para sa simulation; hindi ito pahintulot sa tunay na trial. Ipakita ang blank na approval at local-contact fields. Itakda ang triads T1–T10 at seats A/B/C. Ipaalam ang trainer sampling at follow-up observation. Panatilihin ang tubig para sa hand hygiene, single-use rules, critical/cold-chain systems, bentilasyon at timely service. Kung may mungkahing klinikal na reuse o pagpatay ng equipment, ihinto ang rehearsal at ibalik sa dummy paperwork.

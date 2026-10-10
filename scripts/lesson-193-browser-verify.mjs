@@ -13,7 +13,7 @@ const server=http.createServer((req,res)=>{if(req.url==='/favicon.ico'){res.writ
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const url='http://127.0.0.1:'+server.address().port;
 const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH??'/usr/bin/chromium',args:['--no-sandbox']});
-const report={scope:'production components with local auth/save fixture; text, checks, gating, resume and overflow only',date:new Date().toISOString(),cases:[],screenshots:[],errors:[],missing:withMedia?[]:['story/caption/fullscreen verification','narration playback/zone verification until actual media imported']};
+const report={scope:'production components offline with local auth/save fixture; bilingual checks, actual media, gating, zone highlighting, resume and cleanup; no production-auth claim',date:new Date().toISOString(),cases:[],screenshots:[],errors:[],missing:withMedia?[]:['story/caption/fullscreen verification','narration playback/zone verification until actual media imported']};
 const save=()=>fs.writeFileSync(dir+'/lesson-193-browser-verification.json',JSON.stringify(report,null,2)+'\n');
 try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
@@ -44,11 +44,11 @@ try{
      await page.locator('audio').evaluate((a,ms)=>{a.currentTime=ms/1000},(timing.start_ms+timing.end_ms)/2);
      await page.waitForFunction(expected=>Array.from(document.querySelectorAll('[data-active="true"]')).some(el=>el.textContent.replace(/\*\*/g,'').replace(/\s+/g,' ').trim()===expected),timing.text.replace(/\*\*/g,'').replace(/\s+/g,' ').trim());
     }
-    await page.locator('audio').evaluate(a=>{window.__previousAudio=a;a.pause()});
+    await page.locator('audio').evaluate(a=>{window.__previousAudio=a});
    }
    const shot=`lesson193-${lang}-${mode}-${width}-${section.id}.png`;await page.screenshot({path:dir+'/'+shot,fullPage:true});report.screenshots.push(shot);
    report.cases.push({width,language:lang,mode,anchor,no_overflow:true,all_answers_rationales_checked:!!section.check,pre_response_feedback_audio_gated:!!section.check,picture_present:await page.locator('article[data-scene] figure img').count()>0});save();
-   if(i<lesson.sections.length-1)await page.getByRole('button',{name:lang==='en'?'Next':'Susunod',exact:true}).click();
+   if(i<lesson.sections.length-1){await page.getByRole('button',{name:lang==='en'?'Next':'Susunod',exact:true}).click();if(withMedia)assert(await page.evaluate(()=>window.__previousAudio.paused),'Read audio remains playing after navigation');}
   }
   if(withMedia&&story){
    await page.getByRole('button',{name:/^(Narrated story|Kuwentong may salaysay)$/}).click();assert(await page.evaluate(()=>!window.__previousAudio||window.__previousAudio.paused));
@@ -60,10 +60,32 @@ try{
    await dialog.locator('video').evaluate(v=>{v.currentTime=v.duration-2});await page.waitForFunction(()=>document.querySelector('video').ended,null,{timeout:10000});
    const shot=`lesson193-story-${lang}-${mode}-${width}-ending.png`;await page.screenshot({path:dir+'/'+shot,fullPage:true});report.screenshots.push(shot);
    await dialog.getByRole('button',{name:lang==='en'?'Close':'Isara',exact:true}).click();await dialog.waitFor({state:'hidden'});
-   report.cases.push({width,language:lang,mode,story_gated_until_all_checks:true,unmuted_story:true,seven_cues:true,ending_played:true,fullscreen:true,single_player:true,read_audio_paused:true,duration:data.duration});
+   for(const action of ['language','mode','navigation']){
+    if(await page.locator('video').count()===0)await page.getByRole('button',{name:/^(Narrated story|Kuwentong may salaysay)$/}).click();
+    await page.locator('video').evaluate(v=>{window.__previousVideo=v;return v.play()});await page.waitForFunction(()=>!document.querySelector('video').paused);
+    if(action==='language'){
+     await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));
+     await page.getByRole('button',{name:lang==='en'?'English':'Filipino',exact:true}).click();
+    }
+    if(action==='mode'){
+     await page.getByRole('button',{name:mode==='read'?'Slides':lang==='en'?'Read':'Basahin',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));
+     await page.getByRole('button',{name:mode==='slides'?'Slides':lang==='en'?'Read':'Basahin',exact:true}).click();
+    }
+    if(action==='navigation'){await page.getByRole('button',{name:'Facilitator guide',exact:true}).click();assert(await page.evaluate(()=>window.__previousVideo.paused));}
+   }
+   report.cases.push({width,language:lang,mode,story_gated_until_all_checks:true,unmuted_story:true,seven_cues:true,ending_played:true,fullscreen:true,single_player:true,read_audio_paused:true,language_mode_navigation_pause:true,duration:data.duration});
   }
   for(const pane of ['Facilitator guide','Observation indicator','Evidence']){await page.getByRole('button',{name:pane,exact:true}).click();assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
   await context.close();
+ }
+ if(withMedia)for(const lang of ['fil','en'])for(const width of [1280,390]){
+  const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();
+  await page.goto(`${url}/?lang=${lang}`);await context.setOffline(true);
+  await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>document.querySelector('audio')&&!document.querySelector('audio').paused);await page.locator('audio').evaluate(a=>window.__previousAudio=a);
+  await page.getByRole('button',{name:'Slides',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
+  await page.getByRole('button',{name:lang==='en'?'Read':'Basahin',exact:true}).click();await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();await page.waitForFunction(()=>document.querySelector('audio')&&!document.querySelector('audio').paused);await page.locator('audio').evaluate(a=>window.__previousAudio=a);
+  await page.getByRole('button',{name:lang==='en'?'Filipino':'English',exact:true}).click();assert(await page.evaluate(()=>window.__previousAudio.paused));
+  report.cases.push({width,language:lang,read_mode_cleanup:true,read_language_cleanup:true});await context.close();
  }
  for(const lang of ['fil','en'])for(const mode of ['read','slides'])for(const s of lesson.sections){
   const page=await browser.newPage(),anchor=(mode==='slides'?'slide-':'')+s.id;

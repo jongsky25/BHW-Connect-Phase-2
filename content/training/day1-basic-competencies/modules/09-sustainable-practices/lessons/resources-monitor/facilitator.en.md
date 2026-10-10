@@ -6,6 +6,8 @@ Propose a small trial with an owner and review date; compare resource use at com
 
 60 minutes: 5 opening + 12 modelling + 25 practice/feedback/retry + 10 fair-comparison debrief + 8 transfer. This is separate from audio or optional story duration. Module total: 60 + 60 + 60 = 180 minutes. Prepare the five A4 sheets in lesson-193-practice-kit.en.md, dummy master and outdated copy, pens, calculator and timer. Ten triads for 30 learners; one kit per triad. No actual clinical or utility work.
 
+Measured total playback of seven complete Read MP3s: 614.843 seconds (10 minutes 14.843 seconds). This excludes thinking, answering, replay and guided practice. Takeaways remain gated after a response. The optional story is separate.
+
 ## [prepare] Prepare
 
 Print the kit. Dummy master: PRACTICE v2, not a clinical handout. Outdated dummy copy: PRACTICE v1. Version 2 is approved only within the fictional role card for simulation; this is not authorisation for a real trial. Show blank approval and local-contact fields. Assign triads T1–T10 and seats A/B/C. Explain trainer sampling and follow-up observation. Protect hand-hygiene water, single-use rules, critical/cold-chain systems, ventilation and timely service. If clinical reuse or equipment shutdown is proposed, stop the rehearsal and return to dummy paperwork.
