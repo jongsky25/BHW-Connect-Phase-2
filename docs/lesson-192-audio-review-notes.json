@@ -1,0 +1,166 @@
+{
+  "status": "actual model reviews retained; unresolved disagreements require human listening",
+  "method": "Editorial comparison of model responses only; no human listening claimed",
+  "displayed_name": "Charlaine",
+  "speech_alias": null,
+  "agreed_human_pronunciation": "pending",
+  "human_listening": "pending",
+  "facility_infection_prevention_review": "pending",
+  "owner_approval": false,
+  "superseded_attempts": [
+    "initial Read delivery and its 12 full / 48 focused reviews",
+    "initial two stories and their full / focused reviews"
+  ],
+  "repairs": [
+    "Regenerated all 12 Read tracks with delivery revision 2 after full/focused voice and articulation concerns.",
+    "Regenerated both stories with delivery revision 2 after Filipino tagas/tangke transcription and English ending voice reports.",
+    "One focused English check ending provider block retained and queued for exact-byte model-review retry; no audio regeneration."
+  ],
+  "remaining_disagreements": [
+    "Current full practice Filipino review reports two timbres; focused reviews differ. Other focused Read excerpts report voice/role transitions where full reviews describe consistency. These are unresolved model reports.",
+    "Same-byte name/body excerpts and full reviews disagree about Charlaine versus Charlene/Shar-layn/Shar-leen; no agreed human pronunciation or alias is inferred.",
+    "Current story full/focused responses report generally consistent delivery with minor pacing/prosody concerns; name pronunciation reports still disagree.",
+    "Models sometimes label a voice change intentional/planned. The authored production uses one female Kore voice; model attribution does not authorize a second voice."
+  ],
+  "full_recordings": 14,
+  "focused_excerpts": 56,
+  "successful_focused_reviews": 55,
+  "provider_failures": 1,
+  "full_reviews": [
+    {
+      "id": "read-resources-safe-change-utilities-fil",
+      "sha256": "1e0ef799e9354a82e4cb5a7ee66c50574dd02ef638eae484515b0184ec9374c9",
+      "clipped_ending_reported": false,
+      "delivery_report": {
+        "pacing": "Generally deliberate, steady, and clear, though segmented sentence-by-sentence with distinct pauses.",
+        "natural_pitch_pace_variation": "Moderate; exhibits characteristic TTS/concatenated cadence where sentence pitch resets at each boundary, with subtle shifts in energy between lines.",
+        "timbre_changes": "Slight tonal/timbre and acoustic profile shifts across cuts (e.g., noticeably brighter/thinner acoustic profile at 00:15–00:19 and 00:40–00:48 compared to the warmer tone at 00:29–00:39)."
+      }
+    },
+    {
+      "id": "read-resources-safe-change-utilities-en",
+      "sha256": "f97b578cac401c395de96d65e2a7d875fc453829812541572b7035762fe624e9",
+      "clipped_ending_reported": false,
+      "delivery_report": {
+        "pacing": "Moderate, measured, and well-spaced with clear pauses between instructional guidance points.",
+        "pitch_and_pace_variation": "Natural educational cadence with consistent pedagogical emphasis and steady pitch contours.",
+        "timbre_consistency": "Consistent acoustic quality and vocal timbre throughout the narration."
+      }
+    },
+    {
+      "id": "read-resources-safe-change-materials-fil",
+      "sha256": "b44396682de8131c4bc1a394d9a777099418a79eb2156891ff4c4ac1b193cd45",
+      "clipped_ending_reported": false,
+      "delivery_report": "The narration is audible, steady, and intelligible throughout with natural pauses and cadence. Tone and timbre remain consistent without abrupt pitch shifts or audio dropouts."
+    },
+    {
+      "id": "read-resources-safe-change-materials-en",
+      "sha256": "fb628f2c5b0b564d670a9960e6347d54ae617bd32b5e4c56c59c741bfa4fdeac",
+      "clipped_ending_reported": false,
+      "delivery_report": {
+        "audible_throughout": true,
+        "pacing": "Deliberate, steady, and appropriate for an instructional module, with clean sentence breaks.",
+        "pitch_and_pace_variation": "Natural educational cadence with consistent intonation contours across statements.",
+        "timbre_consistency": "Consistent acoustic quality and voice timbre throughout the recording."
+      }
+    },
+    {
+      "id": "read-resources-safe-change-workflow-fil",
+      "sha256": "3a01cf459b2cb6f0c60b0781437597d5047684d693e80a7f7bb21ab782674196",
+      "clipped_ending_reported": false,
+      "delivery_report": {
+        "audible_throughout": true,
+        "pacing": "Moderate, clear, and evenly spaced throughout the narration.",
+        "pitch_and_pace_variation": "Natural prosody and inflection typical of standardized informational educational narration.",
+        "timbre_consistency": "Consistent acoustic quality and voice timbre throughout, with no audible splice artifacts or abrupt tone shifts."
+      }
+    },
+    {
+      "id": "read-resources-safe-change-workflow-en",
+      "sha256": "8209761d0cf49e66f49b6496fc6505c8e2eb1cc93425c2fb21d43fa779ab47b2",
+      "clipped_ending_reported": false,
+      "delivery_report": {
+        "pacing": "Deliberate, steady, and clear throughout, with consistent sentence-level pauses.",
+        "pitch_and_pace_variation": "Moderate and natural cadence typical of instructional narration, with consistent vocal timbre across all segments.",
+        "timbre_change": false
+      }
+    },
+    {
+      "id": "read-resources-safe-change-worked-example-fil",
+      "sha256": "3d323a7a066c152081def8db37f3a143e0608fb4c72f4857adbda3c4a0d097e7",
+      "clipped_ending_reported": false,
+      "delivery_report": {
+        "audibility": "Clear and intelligible throughout the entire clip.",
+        "pacing": "Even and measured cadence appropriate for instructional/training content.",
+        "pitch_and_timbre": "Consistent synthetic/TTS-style narration voice with stable pitch, appropriate sentence pauses, and no sudden timbre shifts."
+      }
+    },
+    {
+      "id": "read-resources-safe-change-worked-example-en",
+      "sha256": "e1d5377fae558c137a8da39d523d02898e50c7a6646397c621d9b28877930f78",
+      "clipped_ending_reported": false,
+      "delivery_report": {
+        "pacing": "Deliberate, steady, and measured throughout with consistent pausing between clauses.",
+        "naturalness": "Typical of synthetic TTS narration; exhibits slightly mechanical cadence and repetitive pitch rise-fall contours, though intelligibility remains high.",
+        "timbre_consistency": "Consistent narrator voice and acoustic timbre from start to finish with no sudden shifts."
+      }
+    },
+    {
+      "id": "read-resources-safe-change-practice-fil",
+      "sha256": "bb4641c6a126a42a4ca9adad70c4a6de12cc42ce40a3a3234db1ac634725402d",
+      "clipped_ending_reported": false,
+      "delivery_report": {
+        "pacing": "Deliberate, steady, and instructional with clear pauses between phrases.",
+        "pitch_pace_variation": "Alternates throughout between two distinct vocal timbres (one higher/lighter tone and one deeper tone) swapping back and forth across different instructions.",
+        "timbre_shift_timestamps": [
+          "0:00 - Speaker 1",
+          "0:03 - Speaker 2",
+          "0:22 - Speaker 1",
+          "0:26 - Speaker 2",
+          "0:35 - Speaker 1",
+          "0:49 - Speaker 2",
+          "0:58 - Speaker 1",
+          "1:05 - Speaker 2",
+          "1:15 - Speaker 1",
+          "1:26 - Speaker 2",
+          "1:35 - Speaker 1"
+        ]
+      }
+    },
+    {
+      "id": "read-resources-safe-change-practice-en",
+      "sha256": "0b923f1967ef2a1b7b5d8b75ffd45237f6e469ae5eaf4ec7004b9ccc0ee09aed",
+      "clipped_ending_reported": false,
+      "delivery_report": "Clear, steady instructional pacing with appropriate phrasing and pauses between prompts and simulated responses. Pitch and tone remain natural and stable with no noticeable shifts in narrator timbre."
+    },
+    {
+      "id": "read-resources-safe-change-check-fil",
+      "sha256": "12b32b8568e5ddab56c95447202a3c259ae88497a68319d8c5703c024748d812",
+      "clipped_ending_reported": false,
+      "delivery_report": "The narration is generated by a synthetic text-to-speech voice. Delivery is clear, intelligible, and audible throughout with deliberate educational pacing, though it exhibits characteristic slightly rigid synthetic pitch contours."
+    },
+    {
+      "id": "read-resources-safe-change-check-en",
+      "sha256": "4c62c7021d4244fe1efa7b4f0fec2c4734724717237df1db02530a00d2aa3e51",
+      "clipped_ending_reported": false,
+      "delivery_report": "The narration is clear, intelligible, and audible throughout with a steady, instructional pace. Pacing and pitch variation sound slightly synthetic/templated but natural enough for educational modules. There are no abrupt shifts in narrator vocal timbre."
+    },
+    {
+      "id": "story-fil",
+      "sha256": "9c94aab5580352fc6a1ac85532cbfeb1756b60eeb32711b10fb022d8b96b96f4",
+      "clipped_ending_reported": false,
+      "delivery_report": "The narration maintains a deliberate, well-spaced educational tempo with natural pauses at punctuation. Pitch and cadence variation are smooth and intelligible throughout, with a consistent vocal timbre across all segments."
+    },
+    {
+      "id": "story-en",
+      "sha256": "062a6dd437cf69d1531630d5648680ebfc8f0b13750f5dcbea8c1cd247a431c9",
+      "clipped_ending_reported": false,
+      "delivery_report": {
+        "audibility": "Clear and audible throughout without background interference.",
+        "pacing": "Moderate, measured educational pacing with clear pauses between instructional points.",
+        "pitch_and_variation": "Natural pitch modulation, instructional emphasis, and appropriate sentence cadence.",
+        "timbre_consistency": "Consistent acoustic environment and narrator vocal timbre across the entire track."
+      }
+    }
+  ]
+}

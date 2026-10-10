@@ -1,13 +1,14 @@
 {
-  "source_commit": "422a5f99d7999c2e7292af7838ffee8497fa2ca2",
-  "date": "2026-10-10T09:17:22.652Z",
+  "source_commit": "b6e111e87c9396d3d4c1bdcaba61e417faefd9f2",
+  "date": "2026-10-10T09:44:58.453Z",
   "provider": "gemini:gemini-3.8-flash-tts:Kore",
   "expected_read_tracks": 12,
   "completed_read_tracks": 12,
   "pending": [],
   "error": null,
-  "story_status": "blocked: coordinated Charlaine reference and final scenes unavailable",
+  "story_status": "two actual draft stories selected; see lesson-192-story-generation.json",
   "human_listening": "pending",
   "clinical_review": "pending",
-  "owner_approval": "pending"
+  "owner_approval": "pending",
+  "curation_note": "Original unmodified generation report retained in the hash-pinned read artifact."
 }

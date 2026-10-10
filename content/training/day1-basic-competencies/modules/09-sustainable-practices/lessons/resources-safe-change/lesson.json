@@ -337,6 +337,46 @@
       "caption_en": "Fictional practice; protections, approval and unknowns are explained in the teaching.",
       "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform.",
       "review_status": "draft"
+    },
+    {
+      "id": "resources-safe-change-story",
+      "alt_fil": "Anim na beat ng fictional safe-change proposal ni Charlaine, may safeguards at unknown approval/savings.",
+      "alt_en": "Six beats of Charlaine’s fictional safe-change proposal, preserving safeguards with approval/savings unknown.",
+      "caption_fil": "Kathang-isip na proposal; walang inaangking approval, savings o repair completion.",
+      "caption_en": "Fictional proposal; no approval, savings or repair completion is claimed.",
+      "provenance": "Pinned built-in imagegen Charlaine scenes with measured Gemini Kore narration, H.264/AAC and six matching WebVTT cues; exact package remains draft.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-411c702ed7fb.mp4",
+          "content_hash": "411c702ed7fb7a1277bbfc92a68c2d0455c430dc673bfb86acc7d4949902d4c9",
+          "duration_s": 83,
+          "poster": {
+            "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-1fe386aea8e3-poster.jpg",
+            "content_hash": "1fe386aea8e30f275fca28c5954a3ffc4165cfd37569014634997bf7420d382c"
+          },
+          "captions": {
+            "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-8b7d0755fd00.vtt",
+            "content_hash": "8b7d0755fd00f3330c9e757f1fb35ad800f1d0e1940e9a5b8b64999e99b5d874"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-9/resources-safe-change-gemini-en-caf00e20c572.mp4",
+          "content_hash": "caf00e20c572f60d29f5a8918699ff40d4fa3faa43a833af3d9fa315fcd53b7d",
+          "duration_s": 79,
+          "poster": {
+            "path": "/training/bhw-1-9/resources-safe-change-gemini-en-0eb02635cf26-poster.jpg",
+            "content_hash": "0eb02635cf2644e9d7663590ed49cc02f2be2a6c906bf0f52b3fa8e371dddc35"
+          },
+          "captions": {
+            "path": "/training/bhw-1-9/resources-safe-change-gemini-en-130ff6a84c4b.vtt",
+            "content_hash": "130ff6a84c4bab5f2a0a75b58c4ed1a8fa4e612c8593642616b4d666f94938dc"
+          }
+        }
+      },
+      "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-1fe386aea8e3-poster.jpg",
+      "content_hash": "1fe386aea8e30f275fca28c5954a3ffc4165cfd37569014634997bf7420d382c"
     }
-  ]
+  ],
+  "featured_asset_id": "resources-safe-change-story"
 }

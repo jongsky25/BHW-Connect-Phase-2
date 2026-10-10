@@ -29,6 +29,9 @@ for record in focus['records']:
 paths=set()
 for pattern in ['docs/lesson-192-*','docs/lesson-19-charlaine-*','scripts/lesson-192-*','scripts/remotion-resources-safe-change-narrate.mjs','scripts/lib/lesson-192-integration.mjs','scripts/tests/lesson-192.test.mjs','.github/workflows/lesson192-*.yml','content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/*','public/training/audio/09-sustainable-practices/resources-safe-change/*','public/training/bhw-1-9/*','remotion/src/resources-safe-change/*','remotion/public/resources-safe-change/*','.preview/lesson192-source/*.txt','.preview/lesson192-source/*.png','docs/lesson-192-source-excerpts/*','.preview/lesson192-superseded/**/*','.preview/lesson192-raw/*.json','.preview/lesson192-excerpts/*','.preview/lesson192-deliverables/*.json','.preview/lesson192-deliverables/*.png','.preview/lesson192-deliverables/*.pdf','.preview/lesson192-deliverables/*.html']:
  paths.update(p for p in root.glob(pattern) if p.is_file())
+paths.update(root/p for p in json.loads((root/'docs/lesson-192-proposal-receipt.json').read_text())['changed_existing_files'])
+paths.add(root/'scripts/lib/resources-safe-change-speech.mjs')
+paths.add(root/'src/lib/elearning/reference-narration.ts')
 paths.add(root/'content/training/day1-basic-competencies/narration.json');paths.add(root/'remotion/src/Root.tsx');paths.add(root/'src/components/elearning/reference-lessons.tsx')
 if (root/'lesson-192-published-snapshot.json').exists():paths.add(root/'lesson-192-published-snapshot.json')
 paths.discard(out/'lesson-192-package-integrity.json')

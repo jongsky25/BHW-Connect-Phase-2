@@ -1,0 +1,48 @@
+{
+  "status": "draft implementation; exact-byte focused review retry and final verification in progress",
+  "source_baseline": "a1a54d755cda8c609c3006843acc11abfba3437e",
+  "production_publication": false,
+  "owner_release_approval": false,
+  "media": {
+    "actual_read_mp3s": 12,
+    "actual_story_mp4s": 2,
+    "full_model_reviews": 14,
+    "focused_excerpts": 56,
+    "successful_focused_model_reviews": 55,
+    "one_provider_block": "read-check-en ending; actual bytes retained, review retry queued"
+  },
+  "checks": {
+    "lint": "passed, three existing warnings; final changed-file lint to run",
+    "typecheck": "passed",
+    "target_preservation_tests": "in progress",
+    "browser": "pending",
+    "A4_print": "two five-page kits and two one-page aids passed A4/margin checks",
+    "disposable_supabase_e2e": {
+      "status": "passed",
+      "run_id": 38042145487
+    },
+    "full_unit": "final source run pending; twelve known problem-prioritize stale tracks must remain visible",
+    "complete_registry_render": "pending measured timing/focused-review freeze"
+  },
+  "pending": [
+    "Human listening and agreed name pronunciation; unresolved voice/timbre model reports",
+    "Current facility/infection-prevention procedure review, including inaccessible primary DOH circular",
+    "Owner review/approval of this exact draft",
+    "One provider-blocked focused review retry",
+    "Final browser, full-unit and complete-registry verification"
+  ],
+  "known_stale_narration": [
+    "problem-prioritize/criteria/fil",
+    "problem-prioritize/criteria/en",
+    "problem-prioritize/worked-scores/fil",
+    "problem-prioritize/worked-scores/en",
+    "problem-prioritize/score-evidence/fil",
+    "problem-prioritize/score-evidence/en",
+    "problem-prioritize/tie-and-urgent-care/fil",
+    "problem-prioritize/tie-and-urgent-care/en",
+    "problem-prioritize/practice/fil",
+    "problem-prioritize/practice/en",
+    "problem-prioritize/check/fil",
+    "problem-prioritize/check/en"
+  ]
+}

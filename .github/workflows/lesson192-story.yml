@@ -21,23 +21,36 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+      - name: Keep final selected story bytes immutable
+        id: scope
+        run: |
+          if test -f docs/lesson-192-final-evidence-origins.json; then
+            echo 'generate=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'generate=true' >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-node@v4
+        if: steps.scope.outputs.generate == 'true'
         with:
           node-version: 22
           cache: npm
       - run: npm ci
+        if: steps.scope.outputs.generate == 'true'
       - run: npm ci
+        if: steps.scope.outputs.generate == 'true'
         working-directory: remotion
       - run: npx remotion browser ensure
+        if: steps.scope.outputs.generate == 'true'
         working-directory: remotion
       - name: Generate the two actual draft stories
+        if: steps.scope.outputs.generate == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON192_RAW_EVIDENCE: '1'
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-192-record-fetch.mjs'
         run: node scripts/lesson-192-story-build.mjs
       - name: Review actual shipped AAC in full
-        if: always()
+        if: always() && steps.scope.outputs.generate == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON192_REVIEW_STORY_ONLY: '1'
@@ -45,7 +58,7 @@ jobs:
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-192-record-fetch.mjs'
         run: node scripts/lesson-192-audio-review.mjs
       - name: Review four focused decoded excerpts per story
-        if: always()
+        if: always() && steps.scope.outputs.generate == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LESSON192_REVIEW_STORY_ONLY: '1'
@@ -53,7 +66,7 @@ jobs:
           NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-192-record-fetch.mjs'
         run: node scripts/lesson-192-audio-focus.mjs
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.scope.outputs.generate == 'true'
         with:
           name: lesson192-story-evidence
           path: |
