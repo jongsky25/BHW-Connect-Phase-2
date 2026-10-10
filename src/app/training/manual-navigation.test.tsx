@@ -76,6 +76,14 @@ describe('manual navigation',()=>{
     expect(screen.getByText('Learner lesson')).toHaveAttribute('data-next-lesson','/training/manual/chapter-1/m1/l2');
     expect(state.calls.some(c=>c.table==='course_lesson_facilitator_notes')).toBe(false);
   });
+  it('continues from the last lesson in a subchapter to the first lesson in the next',async()=>{
+    state.rows.course_lessons.push({id:'l3',module_id:'m2',position:0,required:true,title_en:'UHC basics',title_fil:'UHC',published_revision_id:'r3'});
+    state.rows.course_lesson_revisions.push({id:'r2'});
+    render(await page(['chapter-1','m1','l2']));
+    const next='/training/manual/chapter-1/m2/l3';
+    expect(screen.getByText('Learner lesson')).toHaveAttribute('data-next-lesson',next);
+    expect(screen.getByRole('link',{name:'Next lesson →'})).toHaveAttribute('href',next);
+  });
   it('admin sees preview and never someone else’s certificate',async()=>{
     state.role='admin';render(await page(['chapter-1','m1','l1'],'lesson'));expect(screen.getByText('Admin preview')).toBeInTheDocument();
     expect(state.calls.find(c=>c.table==='course_progress')?.filters).toContainEqual(['bhw_user_id','self']);
@@ -207,3 +215,4 @@ describe('manual navigation',()=>{
     expect(screen.getByText(/Inihahanda ang maiikling aralin/)).toBeInTheDocument();
   });
 });
+

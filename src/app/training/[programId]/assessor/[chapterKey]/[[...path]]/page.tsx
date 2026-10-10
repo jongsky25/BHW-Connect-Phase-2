@@ -101,7 +101,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       {study.completed===study.total && <p className="mt-2">{text('Natapos ang mga aralin. Hindi pa ito kwalipikasyon bilang assessor.','Lessons finished. This does not yet qualify you as an assessor.')}</p>}
       {examAvailable&&!pretestDone&&<Link prefetch={false} className="mt-3 inline-block rounded bg-primary px-4 py-3 text-on-primary" href={`${base}/exam/pretest`}>{text('Kunin ang diagnostic pretest','Take the diagnostic pretest')}</Link>}
       {examAvailable&&pretestDone&&!posttestPassed&&posttestReady&&<Link prefetch={false} className="mt-3 inline-block rounded bg-primary px-4 py-3 text-on-primary" href={`${base}/exam/posttest`}>{text('Kunin ang pangwakas na pagsusulit','Take the chapter post-test')}</Link>}
-      {examAvailable&&pretestDone&&!posttestReady&&study.nextLesson&&!lesson&&<Link prefetch={false} className="mt-3 inline-block rounded bg-primary px-4 py-3 text-on-primary" href={href(study.nextLesson)}>{text('Magpatuloy sa pag-aaral','Continue studying')}</Link>}
+      {examAvailable&&pretestDone&&!posttestReady&&study.nextLesson&&study.nextLesson.id!==lesson?.id&&<Link prefetch={false} className="mt-3 inline-block rounded bg-primary px-4 py-3 text-on-primary" href={href(study.nextLesson)}>{text('Magpatuloy sa pag-aaral','Continue studying')}</Link>}
       {!examAvailable&&<p className="mt-2">{text('Hindi pa available ang kwalipikadong pagsusulit para sa kabanatang ito.','The qualifying exam for this chapter is not yet available.')}</p>}
       {posttestPassed&&posttestReady&&curriculum?.orientationAvailable&&<Link prefetch={false} className="mt-3 inline-block rounded bg-primary px-4 py-3 text-on-primary" href={`${base}/orientation`}>{text('Simulan ang oryentasyon sa pagmamarka','Start scoring orientation')}</Link>}
       {posttestPassed&&!curriculum?.orientationAvailable&&<p className="mt-2">{text('Pumasa ka sa pagsusulit. Susunod ang oryentasyon sa pagmamarka kapag available na ito.','You passed the exam. Scoring orientation is the next step when available.')}</p>}
@@ -122,3 +122,4 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
     <Link prefetch={false} className="py-3 underline" href={`/training/${programId}/${chapterKey}`}>{text('Bumalik sa gabay ng facilitator','Back to facilitator guide')}</Link>
   </div>;
 }
+
