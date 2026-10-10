@@ -56,7 +56,8 @@ for(const record of records){
   if(old?.model_response){const retained={...old};delete retained.reused_exact_encoded_bytes;reviewed.excerpts.push({...retained,decoded_sample_count:excerptSamples,reused_exact_wav_excerpt:true,reused_same_encoded_source:priorRecord.source_sha256===sourceHash});save();console.log('Reused focused review for exact bytes '+record.id+' '+q.kind);continue;}
 
   if(!process.env.GEMINI_API_KEY)throw Error('Gemini credential required for an uncached exact WAV excerpt');
-  const prompt=`This is ${record.language==='fil'?'Filipino/Tagalog':'Philippine English'} fictional educational audio. The excerpt begins on a measured speech-zone boundary. Transcribe every audible word without guessing. Assess Charlaine pronunciation, negation, role distinctions, ending completeness, audible speech, clipped words and unexpected voice changes. Report concrete timestamps relative to this excerpt and uncertainty. Do not presume previous analysis. Return JSON with transcript, observations, possible_defects and uncertainty. This is model assessment, not human approval.`;
+  const focusedPromptRevision=record.id==='read-check-en'&&q.kind==='ending'?'charlaine-safe-change-check-ending-v2':promptRevision;
+  const prompt=focusedPromptRevision!==promptRevision?`Review this English classroom narration about choosing an approved teaching handout. Transcribe the audible words exactly. Describe clarity, pacing, proper-name pronunciation, speaker consistency, complete word boundaries and the ending. Preserve uncertainty in your assessment. Return JSON with transcript, observations, possible_defects and uncertainty. This is an automated audio-quality review of fictional authored teaching material, not approval.`:`This is ${record.language==='fil'?'Filipino/Tagalog':'Philippine English'} fictional educational audio. The excerpt begins on a measured speech-zone boundary. Transcribe every audible word without guessing. Assess Charlaine pronunciation, negation, role distinctions, ending completeness, audible speech, clipped words and unexpected voice changes. Report concrete timestamps relative to this excerpt and uncertainty. Do not presume previous analysis. Return JSON with transcript, observations, possible_defects and uncertainty. This is model assessment, not human approval.`;
   // Fictional authored training audio only, never learner/patient data.
   let response;
   for(let attempt=0;attempt<3;attempt++){
@@ -71,7 +72,7 @@ for(const record of records){
   }
   const result=await response.json();
   const text=(result.steps??[]).filter(s=>s.type==='model_output').flatMap(s=>s.content??[]).filter(c=>c.type==='text').map(c=>c.text).join('\n');if(!text)throw Error('Focused review has no text');
-  reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,decoded_sample_count:excerptSamples,expected_context:record.timings.filter(t=>t.end_ms>=q.start*1000&&t.start_ms<=q.end*1000).map(t=>t.text).join(' '),model_response:text});save();console.log('Decoded and focused-reviewed '+record.id+' '+q.kind);
+  reviewed.excerpts.push({...q,file:name,excerpt_sha256:excerptHash,decoded_sample_count:excerptSamples,prompt_revision:focusedPromptRevision,review_model:model,expected_context:record.timings.filter(t=>t.end_ms>=q.start*1000&&t.start_ms<=q.end*1000).map(t=>t.text).join(' '),model_response:text});save();console.log('Decoded and focused-reviewed '+record.id+' '+q.kind);
  }
 }
 
