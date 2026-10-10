@@ -58,7 +58,7 @@ jobs:
       - name: Wait for this draft's measured story timings
         id: scope
         run: |
-          if [ "${{ github.head_ref }}" = "codex/lesson-182-apple-handoff" ] && ! test -f docs/lesson-182-final-evidence-origins.json; then
+          if { [ "${{ github.head_ref }}" = "codex/lesson-182-apple-handoff" ] && ! test -f docs/lesson-182-final-evidence-origins.json; } || { [ "${{ github.head_ref }}" = "codex/lesson-192-charlaine-handoff" ] && ! test -f remotion/public/resources-safe-change/narration-en.json; }; then
             echo "render=false" >> "$GITHUB_OUTPUT"
           else
             echo "render=true" >> "$GITHUB_OUTPUT"

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-10T09:39:00.392Z",
+  "source_commit": "422a5f99d7999c2e7292af7838ffee8497fa2ca2",
+  "predecessor_commit": "06b1e4821f99edd13b615cfa8ad607d76898d342",
+  "protected_predecessor_files": 6710,
+  "unchanged_files": 6701,
+  "changed_existing_files": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.en.md": {
+      "predecessor_sha256": "2691742e10fc6ee8905631ddd5309afdcd016d9b1c435291438fcc0e396b03e6",
+      "successor_sha256": "90fbe699bcc82d535ff6dc8d5ddbc6cbe09ece8ef594c7472d78289117dfd988"
+    },
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/facilitator.fil.md": {
+      "predecessor_sha256": "addbcc4e6af8b69e7c00724314f2d2def2b15db0323e05449d66b8408f0ab5fa",
+      "successor_sha256": "fe7ba0506e03559cc9f652a3cd785b81a7b3ced46d69cce8e5e3180f3cb8ddc4"
+    },
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json": {
+      "predecessor_sha256": "a258bc0dc67b58303d21d07f79685b5d6bb207db51a9a5a4306a223beb93d42b",
+      "successor_sha256": "6ef11cce2cafbbfe787f973dd11ab44adbf637c8d187f12536ebd90b3a4bd30b"
+    },
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.en.md": {
+      "predecessor_sha256": "18042f6d4545256b4dce957d4a4c0126ecdf43b93d27dc01196b3f296fb8d081",
+      "successor_sha256": "dd661e8dcbd8f195da0def631d6250805ac34aa148bea4ca4eb050398ff40ffb"
+    },
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/read.fil.md": {
+      "predecessor_sha256": "7f19cab8ba9261f073376bc9b76ef83f4c263330d37c02ce3ca3e575964b549f",
+      "successor_sha256": "8b1b68bfcfb7e2874207947739453dee0f328c4e7ad14de79183eeaa6fee43ec"
+    },
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/slides.json": {
+      "predecessor_sha256": "01111efc42991991b01dc685a3b62063c5c67e41b1359952e86cb1af3578de4e",
+      "successor_sha256": "9a73d0c02f18d888a13e520f011dd8697782048e9457b550a14fe33e739bcf14"
+    },
+    "content/training/day1-basic-competencies/narration.json": {
+      "predecessor_sha256": "38b3efcdb61252d720a9aff7189e7f64d68e77d3c0f3054c25310fa81d3fa5a9",
+      "successor_sha256": "04a669a461339319ce9ab68fd209fdfe0cd002a7e141389048ec4e01f8e13d80"
+    },
+    "remotion/src/Root.tsx": {
+      "predecessor_sha256": "5289e6c0792058d3c1d245ee01983958a73b90795ff2c4331f1504078725b321",
+      "successor_sha256": "b447f97af134250f993a3c79466bbcbc7e9add899df429fc09a254f2c6b2fcd8"
+    },
+    "src/components/elearning/reference-lessons.tsx": {
+      "predecessor_sha256": "2fe0440a857efee6b4fb2d3f62bb450a444274d4d834225f457bf301343819be",
+      "successor_sha256": "b4578523d4478ffc2162859c2cd1bf1b3f11bc21cd3d0607af24f98fbb9491f9"
+    }
+  },
+  "non_target_narration_and_history": "exactly preserved",
+  "old_public_media": "all predecessor bytes retained",
+  "lesson_manifest": "exactly preserved",
+  "owner_release_approval": false
+}

@@ -42,6 +42,6 @@ Kung mag-isa, isulat o sabihin ang proposal, safeguard, rejection at susunod na 
 
 ## [check] Piliin ang susunod na hakbang
 
-Gustong bawasan ng team ang papel sa health teaching. Walang sinabi ang sitwasyon na puwedeng tanggalin ang kailangang instruction o gamitin ang lumang bersyon. May pagpipiliang siyasatin ang approved version at gumamit ng aprubadong reusable visual kung angkop.
+Gustong bawasan ni Charlaine at ng team ang papel sa health teaching. Walang sinabi ang sitwasyon na puwedeng tanggalin ang kailangang instruction o gamitin ang lumang bersyon. May pagpipiliang siyasatin ang approved version at gumamit ng aprubadong reusable visual kung angkop.
 
 Huminto muna at piliin ang sagot. Ipaliwanag kung paano mapapanatili ang tamang impormasyon at accessible na instruction. Pagkatapos sumagot, basahin ang dahilan sa bawat opsyon at ang pagtatapos ng kuwento. Ibang gawain ang pagkuha ng facility approval at naobserbahang practice; hindi iyon ipinapakita ng pagpili sa quiz.

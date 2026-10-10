@@ -19,7 +19,7 @@ const key='09-sustainable-practices';
 const {lessons}=loadReferenceModule(path.join(root,'content/training/day1-basic-competencies/modules',key),path.join(root,'public'));
 const manifest=JSON.parse(readFileSync(path.join(root,'content/training/day1-basic-competencies/narration.json'),'utf8'));
 const plan=planReferenceNarration([{key,lessons}],manifest,src=>{const p=path.join(root,'public',src.slice(1));return existsSync(p)?sha(p):null;});
-const records=plan.filter(i=>i.lessonKey==='resources-safe-change'&&i.action==='skip').map(i=>({id:`read-${i.lessonKey}-${i.sectionId}-${i.language}`,language:i.language,file:path.join(root,'public',i.src.slice(1)),expected:i.zones.map(z=>z.text).join(' ')}));
+const records=plan.filter(i=>process.env.LESSON192_REVIEW_STORY_ONLY!=='1'&&i.lessonKey==='resources-safe-change'&&i.action==='skip').map(i=>({id:`read-${i.lessonKey}-${i.sectionId}-${i.language}`,language:i.language,file:path.join(root,'public',i.src.slice(1)),expected:i.zones.map(z=>z.text).join(' ')}));
 for(const language of ['fil','en']){
  const folder=path.join(root,'remotion/public/resources-safe-change');
  if(existsSync(path.join(folder,`narration-${language}.mp3`))&&existsSync(path.join(folder,`narration-${language}.json`))){

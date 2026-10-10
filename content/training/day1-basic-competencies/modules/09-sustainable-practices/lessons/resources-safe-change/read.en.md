@@ -42,6 +42,6 @@ Alone, write or say the proposal, safeguard, rejection and next verification. Th
 
 ## [check] Choose the next step
 
-The team wants to reduce paper in health teaching. The situation does not authorize omitting needed instructions or using an old version. One option is to check the approved version and use an approved reusable visual where suitable.
+Charlaine and the team want to reduce paper in health teaching. The situation does not authorize omitting needed instructions or using an old version. One option is to check the approved version and use an approved reusable visual where suitable.
 
 Pause and choose an answer. Explain how correct information and accessible instructions will remain. After responding, read the rationale for every option and the story ending. Facility approval and observed practice are separate activities; selecting a quiz option does not demonstrate them.

@@ -12,7 +12,7 @@ const story=lesson.assets.find(a=>a.id==='resources-safe-change-story');// A mis
 const prior=fs.existsSync(root+'/docs/lesson-192-audio-focus.json')?j('docs/lesson-192-audio-focus.json'):null;
 const records=[];
 for(const language of ['fil','en']){
- for(const [section,langs]of Object.entries(manifest.lessons['resources-safe-change'].sections)){
+ if(process.env.LESSON192_REVIEW_STORY_ONLY!=='1')for(const [section,langs]of Object.entries(manifest.lessons['resources-safe-change'].sections)){
   const t=langs[language];records.push({id:`read-${section}-${language}`,language,file:root+'/public'+t.src,source_path:t.src,timings:t.timings,duration:t.duration_seconds});
  }
  if (!story?.videos?.[language]) continue;
