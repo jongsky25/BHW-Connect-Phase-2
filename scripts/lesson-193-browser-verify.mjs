@@ -52,8 +52,10 @@ try{
    if(i<lesson.sections.length-1){await page.getByRole('button',{name:lang==='en'?'Next':'Susunod',exact:true}).click();if(withMedia)assert(await page.evaluate(()=>window.__previousAudio.paused),'Read audio remains playing after navigation');}
   }
   if(withMedia&&story){
+   await page.locator('audio').evaluate(a=>a.play());await page.waitForFunction(()=>!document.querySelector('audio').paused);
    await page.getByRole('button',{name:/^(Narrated story|Kuwentong may salaysay)$/}).click();assert(await page.evaluate(()=>!window.__previousAudio||window.__previousAudio.paused));
    await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});
+   await page.waitForFunction(()=>document.querySelector('video')?.textTracks[0]?.cues?.length===7);
    const data=await page.locator('video').evaluate(v=>({muted:v.muted,cues:v.textTracks[0]?.cues?.length??0,duration:v.duration}));assert.equal(data.muted,false);assert.equal(data.cues,7);
    await page.locator('video').evaluate(v=>window.__previousVideo=v);
    await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();const dialog=page.getByRole('dialog');await dialog.waitFor();assert.equal(await page.locator('video').count(),1);assert(await page.evaluate(()=>window.__previousVideo.paused));

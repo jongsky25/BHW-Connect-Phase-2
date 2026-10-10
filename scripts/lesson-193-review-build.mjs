@@ -17,7 +17,7 @@ function embed(p){if(assets[p])return assets[p].data;const bytes=fs.readFileSync
 const narration={};for(const lang of ['fil','en']){narration[lang]=narrationForLesson(mf,'resources-monitor',lang,lesson.revision.read_sections);for(const t of Object.values(narration[lang]))t.src=embed(t.src);}
 for(const art of lesson.revision.assets){art.path=embed(art.path);for(const v of Object.values(art.videos??{})){v.path=embed(v.path);if(v.poster)v.poster.path=embed(v.poster.path);if(v.captions)v.captions.path=embed(v.captions.path);}}
 const guides=Object.fromEntries(['fil','en'].map(l=>[l,fs.readFileSync(root+'/'+leaf+'facilitator.'+l+'.md','utf8')+'\n\n'+fs.readFileSync(root+'/docs/lesson-193-practice-kit.'+l+'.md','utf8')]));
-const proof=Object.fromEntries(['source-audit','execution-status','media-generation','audio-review','audio-focus','preservation'].map(n=>[n,fs.existsSync(root+'/docs/lesson-193-'+n+'.json')?JSON.parse(fs.readFileSync(root+'/docs/lesson-193-'+n+'.json')):{status:'pending'}]));
+const proof=Object.fromEntries(['source-audit','execution-status','media-generation','story-generation','media-verification','audio-review','audio-focus','audio-decode','audio-review-notes','registry','preservation','checks','main-integration','evidence-origins'].map(n=>[n,fs.existsSync(root+'/docs/lesson-193-'+n+'.json')?JSON.parse(fs.readFileSync(root+'/docs/lesson-193-'+n+'.json')):{status:'pending'}]));
 const baseline=JSON.parse(fs.readFileSync(root+'/docs/lesson-193-handoff-baseline.json'));
 const oldLesson=JSON.parse(baseline.target_files_utf8[leaf+'lesson.json']);
 const old_resume_concepts=Object.fromEntries(oldLesson.sections.map(s=>[s.id,s.concept_ids[0]]));

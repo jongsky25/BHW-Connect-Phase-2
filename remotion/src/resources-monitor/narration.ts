@@ -15,8 +15,8 @@ export const RESOURCES_MONITOR_BEATS = [
     "title_en": "Same denominator",
     "detail_fil": "20/100 → 5/100\n15 percentage points",
     "detail_en": "20/100 → 5/100\n15 percentage points",
-    "fil": "Halimbawa: 20 sa 100 reprints noon, lima sa 100 ngayon. Bawas na 15 percentage points. Ang 75% relative reprint reduction ay hindi cost savings o patunay ng sanhi.",
-    "en": "Reprints: twenty per hundred before, five per hundred after; fifteen percentage points lower. The seventy-five percent relative reprint reduction proves neither cost savings nor cause."
+    "fil": "Reprints sa bawat isang daang pahina: dalawampu noon, lima ngayon. Bawas na 15 percentage points. Ang 75% relative reprint reduction ay hindi cost savings o patunay ng sanhi.",
+    "en": "Per hundred printed pages: twenty wrong-version reprints before, five after; fifteen percentage points lower. The seventy-five percent relative reprint reduction proves neither cost savings nor cause."
   },
   {
     "id": "communicate",

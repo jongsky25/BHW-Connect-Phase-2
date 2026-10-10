@@ -8,7 +8,7 @@ Bilangin ang maling-bersyong reprints, lahat ng printed pages at naibigay na ses
 
 ## [compare] Subukan ang simpleng paghahambing
 
-Gamitin ni Charlaine ang kathang-isip na bilang: 20 sa bawat 100 printed pages ang maling-bersyong reprints noon; 5 sa bawat 100 ngayon. Magkatulad ang denominator na 100 pahina. Ang rates ay 20% at 5%; ang pagitan ay 15 bawat 100 pahina o 15 percentage points. Ito ang nakikita sa halimbawang tally, hindi ulat mula sa tunay na BHS.
+Ginagamit ni Charlaine ang kathang-isip na bilang: 20 sa bawat 100 printed pages ang maling-bersyong reprints noon; 5 sa bawat 100 ngayon. Magkatulad ang denominator na 100 pahina. Ang rates ay 20% at 5%; ang pagitan ay 15 bawat 100 pahina o 15 percentage points. Ito ang nakikita sa halimbawang tally, hindi ulat mula sa tunay na BHS.
 
 Ang relative na bawas sa reprints ay (20 − 5) ÷ 20 = 75%. Hindi ito 75% na bawas sa kabuuang gastos. Hindi ibinigay ang presyo, gastos sa ibang resources o sanhi ng pagbabago. Hindi rin pa kumpirmado kung pareho ang uri at dami ng sessions, kung lahat ay nakatanggap ng tamang handout, at kung may delay o reklamo. Itala ang mga ito bilang hindi pa alam.
 
@@ -40,7 +40,7 @@ Sa review, alisin ang hakbang na walang silbi habang pinananatili ang version ch
 
 ## [practice] Subukan, saka ulitin
 
-Gamitin ni Charlaine at ng mga learner ang fictional trial card at dummy handout. Punan ang problema, pagbabago, owner/kapalit, baseline, kalidad, pahintulot at review date. Hindi pa aprubado ang trial; markahan ang pahintulot na pending. Gamitin ang 20/100 at 5/100 para sa rates, 15-percentage-point na pagitan at 75% relative na bawas sa reprints. Huwag tawaging cost savings.
+Ginagamit ni Charlaine at ng mga learner ang fictional trial card at dummy handout. Punan ang problema, pagbabago, owner/kapalit, baseline, kalidad, pahintulot at review date. Hindi pa aprubado ang trial; markahan ang pahintulot na pending. Gamitin ang 20/100 at 5/100 para sa rates, 15-percentage-point na pagitan at 75% relative na bawas sa reprints. Huwag tawaging cost savings.
 
 Sa triad, magpalitan bilang BHW, kasamahang walang internet at observer. Ipakita ang kontroladong master, itanong ang hadlang at ipaliwanag ang handover. Ipasabi sa kapalit ang version check, stock-gap reporting at review. Observer: ibigay ang isang tiyak na puna; BHW: ulitin ang hakbang na kailangang ayusin. Itala kung nagawa, may prompt o hindi pa.
 

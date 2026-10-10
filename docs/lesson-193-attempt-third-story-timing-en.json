@@ -1,0 +1,60 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm community trainer. Use one stable adult female Kore narrator including quotations. Preserve every negation, uncertainty and qualification. Read Charlaine as written. Complete every word, add nothing and do not translate.",
+  "durationSeconds": 92.656,
+  "beats": [
+    {
+      "zone": "trial",
+      "index": 0,
+      "text": "In this fictional story, Charlaine proposes a small trial with an owner, baseline, quality and review date. Permission remains pending; she does not start.",
+      "start_ms": 0,
+      "end_ms": 11400
+    },
+    {
+      "zone": "compare",
+      "index": 1,
+      "text": "Fictional reprints: twenty per hundred before, five per hundred after. Fifteen percentage points lower. A seventy-five percent relative reduction in reprints does not establish cost savings.",
+      "start_ms": 11700,
+      "end_ms": 24780
+    },
+    {
+      "zone": "communicate",
+      "index": 2,
+      "text": "The colleague has no internet. Charlaine proposes a controlled approved paper master. Verify its version and seek feedback; team agreement has not been established.",
+      "start_ms": 25080,
+      "end_ms": 37120
+    },
+    {
+      "zone": "workload",
+      "index": 3,
+      "text": "Five sessions before, ten now. Reprint and quality data are missing for a fair rate. Do not guess or claim savings from raw totals.",
+      "start_ms": 37420,
+      "end_ms": 48020
+    },
+    {
+      "zone": "handover",
+      "index": 4,
+      "text": "Charlaine proposes a short handover: version check, owner and replacement, stock-gap contact and review. Confirm unknown fields; do not rely on her memory.",
+      "start_ms": 48320,
+      "end_ms": 60280
+    },
+    {
+      "zone": "practice",
+      "index": 5,
+      "text": "Use dummy paperwork in a triad, give specific feedback and retry. Peer or solo rehearsal is not trainer observation. Protect hand hygiene and timely service.",
+      "start_ms": 60580,
+      "end_ms": 71900
+    },
+    {
+      "zone": "check",
+      "index": 6,
+      "text": "Paper halved because half the sessions were canceled: improvement is not established. Charlaine separates reprint improvement from missing workload, quality and costs. She proposes the controlled master and reviewable handover, without a success or savings claim.",
+      "start_ms": 72200,
+      "end_ms": 92600
+    }
+  ],
+  "audio_sha256": "3f63af6b6d641b9259679940c7c85a1f44f88e502cf4073c981157a1c689ca7b"
+}
