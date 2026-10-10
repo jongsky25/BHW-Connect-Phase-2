@@ -1,0 +1,15 @@
+{
+  "render_source_commit": "729e6d4af1efc98908e5bf0b664061fb6409ac05",
+  "run_id": 38044340527,
+  "render_input_paths": [
+    "remotion",
+    "public",
+    "package.json",
+    "package-lock.json",
+    "scripts/remotion-render.mjs",
+    "scripts/lib/remotion-captions.mjs"
+  ],
+  "render_input_git_tree_sha256": "cd1cbd5597f331093d6c2b7954575e614353875992e8910fa7c4418d1083fff8",
+  "registry_count": 100,
+  "method": "Reuse only the complete successful render of byte-identical tracked renderer inputs; re-enumerate the current registry and verify every logged output."
+}

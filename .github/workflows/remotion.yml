@@ -60,6 +60,8 @@ jobs:
         run: |
           if { [ "${{ github.head_ref }}" = "codex/lesson-182-apple-handoff" ] && ! test -f docs/lesson-182-final-evidence-origins.json; } || { [ "${{ github.head_ref }}" = "codex/lesson-192-charlaine-handoff" ] && ! test -f docs/lesson-192-audio-review-complete.json; }; then
             echo "render=false" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.head_ref }}" = "codex/lesson-192-charlaine-handoff" ] && python3 scripts/lesson-192-registry-verify.py --cache-valid; then
+            echo "render=false" >> "$GITHUB_OUTPUT"
           else
             echo "render=true" >> "$GITHUB_OUTPUT"
           fi
