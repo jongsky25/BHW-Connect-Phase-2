@@ -309,6 +309,10 @@ export function ReferenceLessons(props: Props) {
   const resourcesAuditAudioMinutes = resourcesAuditTracks.length === 6 ? Math.ceil(resourcesAuditTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60) : null;
   const resourcesSafeChangeRevision = lesson?.lesson_key === "resources-safe-change" && lesson.revision.assets.some(asset => asset.id === "charlaine-check");
   const demonstrationRevision = lesson?.lesson_key === "safety-demonstrate";
+  const resourcesMonitorRevision = lesson?.lesson_key === "resources-monitor";
+  const resourcesMonitorTracks = resourcesMonitorRevision ? Object.values(lessonNarration ?? {}) : [];
+  const resourcesMonitorSeconds = resourcesMonitorTracks.length === 7 ? Math.round(resourcesMonitorTracks.reduce((sum, track) => sum + track.duration_seconds, 0)) : null;
+  const resourcesMonitorTime = resourcesMonitorSeconds === null ? null : `${Math.floor(resourcesMonitorSeconds / 60)}:${String(resourcesMonitorSeconds % 60).padStart(2, "0")}`;
   const controlsRevision = lesson?.lesson_key === "safety-controls" && lesson.revision.assets.some(asset => asset.id === "apple-controls-check");
   const controlsTracks = controlsRevision ? Object.values(lessonNarration ?? {}) : [];
   const controlsMinutes = controlsTracks.length === 6 ? Math.ceil(controlsTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
@@ -328,7 +332,7 @@ export function ReferenceLessons(props: Props) {
   const handoffRevision = lesson?.lesson_key === "communication-handoff" && lesson.revision.assets.some(asset => asset.id === "handoff-check");
   const handoffTracks = handoffRevision ? Object.values(lessonNarration ?? {}) : [];
   const handoffMinutes = handoffTracks.length === 6 ? Math.ceil(handoffTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
-  const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
+  const storyVideoPrompt = narratedStory && index === 0 && Boolean(item) && (!resourcesMonitorRevision || checksAnswered);
   const videoLabel = narratedStory
     ? ui("Kuwentong may salaysay", "Narrated story")
     : "Video";
@@ -599,7 +603,7 @@ export function ReferenceLessons(props: Props) {
             {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || handoffRevision || causesRevision || definitionRevision || recordingRevision || actionPlanRevision || safetyPrepareRevision || resourcesSafeChangeRevision || lesson.lesson_key === "communication-explain") && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
-            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyPrepareRevision || safetyIdentifyRevision || controlsRevision || demonstrationRevision || resourcesAuditRevision || resourcesSafeChangeRevision) && !storyLayout && figures}
+            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyPrepareRevision || safetyIdentifyRevision || controlsRevision || demonstrationRevision || resourcesAuditRevision || resourcesSafeChangeRevision || resourcesMonitorRevision) && !storyLayout && figures}
             {resourcesAuditRevision && item.check && <p className="mt-3 text-lg">{en ? item.display_en : item.display_fil}</p>}
             {prioritizationTable}
             {practice}
@@ -624,7 +628,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyPrepareRevision && !safetyIdentifyRevision && !controlsRevision && !demonstrationRevision && !resourcesAuditRevision && !resourcesSafeChangeRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyPrepareRevision && !safetyIdentifyRevision && !controlsRevision && !demonstrationRevision && !resourcesAuditRevision && !resourcesSafeChangeRevision && !resourcesMonitorRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -798,7 +802,13 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {resourcesAuditRevision ? (resourcesAuditAudioMinutes === null ? ui(
+              {resourcesMonitorRevision ? (resourcesMonitorTime === null ? ui(
+                "Maglaan ng oras sa pagbasa at pagsagot; hiwalay ang 60-minutong guided practice.",
+                "Allow time for reading and answering; the 60-minute guided practice is separate.",
+              ) : ui(
+                `Buong salaysay sa wikang ito: ${resourcesMonitorTime}. Dagdag ang pagsagot, pagninilay, replay at opsyonal na kuwento; hiwalay ang 60-minutong guided practice.`,
+                `Full narration in this language: ${resourcesMonitorTime}. Answering, reflection, replay and the optional story take additional time; the 60-minute guided practice is separate.`,
+              )) : resourcesAuditRevision ? (resourcesAuditAudioMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at mga check; dagdag ang opsyonal na kuwento. Hiwalay ang 60-minutong guided practice.",
                 "Allow time for reading and checks; the optional story is additional. The 60-minute guided practice is separate.",
               ) : ui(
@@ -927,7 +937,7 @@ export function ReferenceLessons(props: Props) {
               ))}
               {featuredVideo && <button type="button"
                 className="rounded border border-ink/20 px-4 py-2 aria-pressed:bg-primary aria-pressed:text-on-primary"
-                aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}>
+                aria-pressed={videoSelected} disabled={resourcesMonitorRevision && !checksAnswered} title={resourcesMonitorRevision && !checksAnswered ? ui("Sagutin ang tatlong tanong para mabuksan ang kuwento.", "Answer all three checks to unlock the story.") : undefined} onClick={() => setVideoSelected(true)}>
                 {videoLabel}
               </button>}
               <button
@@ -940,6 +950,9 @@ export function ReferenceLessons(props: Props) {
             </div>
             {!readerOpen && (videoSelected ? videoContent : <>{readerArticle}{readerPager}</>)}
             {!props.readOnly && <>
+            {resourcesMonitorRevision && featuredVideo && !checksAnswered && <p className="text-sm">
+              {ui("Sagutin ang tatlong tanong sa Basahin o Slides para mabuksan ang kuwento at itinamang wakas.", "Answer all three checks in Read or Slides to unlock the story and corrected ending.")}
+            </p>}
             {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
               {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
                 ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.",
@@ -1063,7 +1076,7 @@ export function ReferenceLessons(props: Props) {
                   {m === "read" ? ui("Basahin", "Read") : ui("Slides", "Slides")}
                 </button>
               ))}
-              {featuredVideo && <button type="button" aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}
+              {featuredVideo && <button type="button" aria-pressed={videoSelected} disabled={resourcesMonitorRevision && !checksAnswered} title={resourcesMonitorRevision && !checksAnswered ? ui("Sagutin ang tatlong tanong para mabuksan ang kuwento.", "Answer all three checks to unlock the story.") : undefined} onClick={() => setVideoSelected(true)}
                 className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
                 {videoLabel}
               </button>}

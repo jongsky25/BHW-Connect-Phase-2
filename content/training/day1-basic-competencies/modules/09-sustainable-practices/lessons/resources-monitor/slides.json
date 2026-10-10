@@ -8,10 +8,14 @@
     "layout": "process",
     "heading_fil": "Isang pagbabago, may may-ari at sukatan",
     "heading_en": "One change, an owner and a measure",
-    "display_fil": "Trial: check ng approved handout bago printing. Elena: checklist. Midwife: version confirmation. Pagkaraan ng dalawang linggo: maling printout, session count at delays. Talakayin at baguhin kung bumaba ang kalidad.",
-    "display_en": "Trial: check the approved handout before printing. Elena owns the checklist; the midwife confirms the version. After two weeks, review incorrect printouts, session counts and delays. Revise if quality suffers.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Panukala lamang: problema, owner/kapalit, baseline, kalidad, pahintulot at review date. Pending na pahintulot: huwag simulan.",
+    "display_en": "Proposal only: problem, owner/replacement, baseline, quality, authorisation and review date. Permission pending: do not start.",
+    "asset_ids": [
+      "monitor-trial"
+    ],
+    "check": null,
+    "narration_fil": "Si Charlaine ay isang kathang-isip na BHW. Naghahanda siya ng mungkahi para bawasan ang printout na inuulit dahil maling bersyon. Panukala pa lamang ito: hindi pa kumpirmado ang pahintulot o ang pagtanggap ng team. Walang tunay na patient record na gagamitin.\n\nSa trial card, isulat ang problema, pagbabago, taong responsable at kapalit, baseline, sukatan ng kalidad, pahintulot at petsa ng review. Mungkahi niya: tingnan muna ang aprubadong handout bago bawat print run. Iminumungkahi niyang siya ang maghanda ng checklist at ang midwife ang magpatunay ng bersyon; itanong muna kung kaya at pinapayagan ang mga tungkuling ito. Iminumungkahing review: makalipas ang dalawang linggo mula sa aprubadong pagsisimula. Habang wala pang pahintulot, markahan itong pending at huwag simulan.\n\nBilangin ang maling-bersyong reprints, lahat ng printed pages at naibigay na sessions. Tingnan din kung tama at nababasa ang handout at kung may naantalang serbisyo. Itakda ang review bago magsimula: ipagpatuloy, baguhin o ihinto batay sa datos at kalidad. Hindi garantiya ng matagumpay na trial ang kumpletong card.",
+    "narration_en": "Charlaine is a fictional BHW preparing a proposal to reduce pages reprinted because the wrong version was used. This remains a proposal: permission and team acceptance have not been confirmed. No real patient record is used.\n\nOn the trial card, record the problem, change, responsible person and replacement, baseline, quality measure, authorisation and review date. Her proposal is to check the approved handout before each print run. She proposes preparing the checklist herself and asking the midwife to verify the version; first ask whether these responsibilities are feasible and authorised. The proposed review is two weeks after an authorised start. While permission is unknown, mark it pending and do not start.\n\nCount wrong-version reprints, all printed pages and sessions delivered. Also check whether handouts are correct and readable and whether service was delayed. Plan the review before starting: continue, revise or stop based on evidence and quality. A complete card does not guarantee a successful trial."
   },
   {
     "id": "slide-compare",
@@ -21,9 +25,11 @@
     "layout": "process",
     "heading_fil": "Subukan ang simpleng paghahambing",
     "heading_en": "Try a simple comparison",
-    "display_fil": "Halimbawa: reprints 20/100 noon → 5/100 ngayon. Bawas na 15 bawat 100 pahina, mula 20% tungong 5%. Suriin kung magkatulad ang session at tama pa rin ang materyal. Walang patient names na kailangan.",
-    "display_en": "Example: reprints 20/100 before → 5/100 after. A reduction of 15 per 100 pages, from 20% to 5%. Check comparable sessions and correct materials. No patient names are needed.",
-    "asset_ids": [],
+    "display_fil": "Fictional: 20/100 → 5/100. 20% → 5%; bawas na 15 percentage points. Workload, kalidad at gastos: hindi pa alam.",
+    "display_en": "Fictional: 20/100 → 5/100. 20% → 5%; 15-percentage-point decrease. Workload, quality and costs: unknown.",
+    "asset_ids": [
+      "monitor-compare"
+    ],
     "check": {
       "prompt_fil": "Bumaba ang maling-bersyong reprint mula 20/100 tungong 5/100 pahina. Ano ang tamang ulat?",
       "prompt_en": "Wrong-version reprints fell from 20/100 to 5/100 pages. What is the sound report?",
@@ -42,9 +48,11 @@
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Ang unang sagot ay tama sa sukat at sinusuri ang kalidad. Hindi katumbas ng reprint rate ang kabuuang gastos; kailangan ang workload at serbisyo upang maunawaan ang resulta.",
-      "feedback_en": "The first response uses the correct rate and checks quality. A reprint rate is not total cost; workload and service must also be considered."
-    }
+      "feedback_fil": "Unang pagpipilian: tama—15 na mas kaunting reprints bawat 100 pahina, pero kailangan pa ring suriin ang workload at tamang materyal. Ikalawa: hindi tama—75% ang relative na bawas sa reprints, hindi napatunayang bawas sa kabuuang gastos. Ikatlo: hindi tama—maaaring magbago ang totals dahil sa sessions o bumaba ang kalidad. Itamang ulat: 20% tungong 5%, bawas na 15 percentage points; hindi pa alam ang workload, kalidad, sanhi at cost evidence.",
+      "feedback_en": "First choice: correct—15 fewer reprints per 100 pages, with workload and correct materials still requiring verification. Second: incorrect—the relative reprint reduction is 75%, not a proven reduction in total cost. Third: incorrect—totals can change with session counts or declining quality. Corrected report: 20% to 5%, a 15-percentage-point decrease; workload, quality, cause and cost evidence remain unknown."
+    },
+    "narration_fil": "Ginagamit ni Charlaine ang kathang-isip na bilang: 20 sa bawat 100 printed pages ang maling-bersyong reprints noon; 5 sa bawat 100 ngayon. Magkatulad ang denominator na 100 pahina. Ang rates ay 20% at 5%; ang pagitan ay 15 bawat 100 pahina o 15 percentage points. Ito ang nakikita sa halimbawang tally, hindi ulat mula sa tunay na BHS.\n\nAng relative na bawas sa reprints ay (20 − 5) ÷ 20 = 75%. Hindi ito 75% na bawas sa kabuuang gastos. Hindi ibinigay ang presyo, gastos sa ibang resources o sanhi ng pagbabago. Hindi rin pa kumpirmado kung pareho ang uri at dami ng sessions, kung lahat ay nakatanggap ng tamang handout, at kung may delay o reklamo. Itala ang mga ito bilang hindi pa alam.\n\nBago pumili, gamitin ang parehong 100-pahinang denominator at itanong kung maihahambing ang trabaho at kalidad. Hindi kailangan ang pangalan ng pasyente. Sagutin ang tanong bago buksan ang paliwanag at buod.",
+    "narration_en": "Charlaine uses the fictional tally: wrong-version reprints were 20 out of every 100 printed pages before and 5 out of every 100 afterward. Both denominators are 100 pages. The rates are 20% and 5%; the difference is 15 per 100 pages, or 15 percentage points. These are practice tallies, not a report from a real BHS.\n\nThe relative reduction in reprints is (20 − 5) ÷ 20 = 75%. This is not a 75% reduction in total cost. Prices, other resource costs and the cause of the change are not supplied. Comparable session types and counts, correct handouts for everyone, delays and complaints have not been confirmed either. Record these as unknown.\n\nBefore choosing, use the same 100-page denominator and ask whether workload and quality are comparable. Patient names are unnecessary. Answer the question before opening the explanation and summary."
   },
   {
     "id": "slide-communicate",
@@ -54,9 +62,11 @@
     "layout": "process",
     "heading_fil": "Ibahagi ang mungkahi sa kasama",
     "heading_en": "Share the proposal with colleagues",
-    "display_fil": "“Dalawang bersyon sa drawer ang sanhi ng reprinting.” Ibigay ang mungkahi, owner at review date. Itanong ang hadlang gaya ng walang internet; maaaring kailangan ang controlled paper master.",
-    "display_en": "“Two versions in the drawer cause reprinting.” Explain the proposal, owner and review date. Ask about barriers such as no internet; a controlled paper master may be needed.",
-    "asset_ids": [],
+    "display_fil": "Walang internet: imungkahi ang kontroladong aprubadong paper master. Patunayan ang bersyon at hingin ang puna; kasunduan: pending.",
+    "display_en": "No internet: propose a controlled approved paper master. Verify its version and seek feedback; agreement pending.",
+    "asset_ids": [
+      "monitor-communicate"
+    ],
     "check": {
       "prompt_fil": "Walang internet ang kasamang magpi-print ng handout. Ano ang dapat isama sa trial?",
       "prompt_en": "A colleague who prints handouts has no internet. What should the trial include?",
@@ -75,9 +85,11 @@
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "Ang ikalawang sagot ay umaangkop sa hadlang habang kontrolado ang bersyon at may puna mula sa kasama. Hindi solusyon ang hindi magawang download o hindi aprubadong lumang kopya.",
-      "feedback_en": "The second response addresses the barrier while controlling the version and seeking feedback. An impossible download or unapproved old copy does not solve it."
-    }
+      "feedback_fil": "Una: hindi tama—hindi magagawa ang download kung walang internet. Ikalawa: tama—ang kontroladong papel na master na napatunayang aprubado, kasama ang puna ng kasama, ay tumutugon sa hadlang. Ikatlo: hindi tama—maaaring luma o hindi aprubado ang kopya sa drawer. Itamang hakbang: patunayan ang bersyon, humingi ng puna at kumpirmahin ang owner/kapalit at pahintulot. Kung hindi mapatunayan, magtanong muna; wala pang iniaangking kasunduan.",
+      "feedback_en": "First: incorrect—a download cannot be completed without internet. Second: correct—a verified approved controlled paper master and colleague feedback address the barrier. Third: incorrect—the drawer copy may be outdated or unapproved. Corrected action: verify the version, seek feedback and confirm owner/replacement and permission. If verification fails, ask first; agreement has not been claimed."
+    },
+    "narration_fil": "Sinasabi ni Charlaine, “May dalawang bersyon sa drawer at may inuulit na print. Maaari ba nating suriin kung alin ang aprubado?” Inilalarawan niya ang napansin, hindi sinisisi ang tao o inaangking napatunayan na ang sanhi. Ipakita ang mungkahi, mga iminungkahing tungkulin at petsa ng review. Tanungin: “Ano ang hadlang? Kaya ba ang routine? Sino ang maaaring magpatunay ng bersyon?”\n\nSa sitwasyon, walang internet ang kasamang magpi-print. Hindi niya kayang mag-download sa oras na iyon. Magmungkahi ng kontroladong papel na master mula sa aprubadong bersyon: may malinaw na version/date at nakatalagang tagapagpatunay. Ihiwalay ang lumang kopya sa magagamit na master ayon sa aprubadong routine. Hingin ang puna ng kasama at tiyakin kung sino ang responsable at kapalit; huwag mag-imbento ng kasunduan.\n\nKung hindi matiyak ang bersyon o pahintulot, huwag gamitin ang hindi aprubadong kopya. Ipaalam ang hadlang sa lokal na awtorisadong contact at humingi ng tamang materyal. Sagutin muna ang tanong bago makita ang paliwanag.",
+    "narration_en": "Charlaine says, “There are two versions in the drawer and some pages are being reprinted. Could we check which version is approved?” She describes the observation without blaming a person or claiming a proven cause. Show the proposal, proposed responsibilities and review date. Ask: “What is the barrier? Is this routine feasible? Who can verify the version?”\n\nIn this situation, the colleague printing handouts has no internet and cannot download the file then. Propose a controlled paper master from the approved version, with a clear version/date and a designated verifier. Separate outdated copies from the usable master under the approved routine. Ask for the colleague’s feedback and confirm the owner and replacement; do not invent agreement.\n\nIf the version or authorisation cannot be verified, do not use an unapproved copy. Report the barrier to the locally authorised contact and request correct material. Answer the question before viewing the explanation."
   },
   {
     "id": "slide-workload",
@@ -87,10 +99,14 @@
     "layout": "process",
     "heading_fil": "Kapag iba-iba ang workload",
     "heading_en": "When workloads differ",
-    "display_fil": "Limang session noon, sampu ngayon: maaaring tumaas ang total kahit bumuti ang proseso. Ihambing ang reprints bawat session o bawat 100 pahina, kasama ang complaints at delays.",
-    "display_en": "Five sessions before, ten now: totals can rise even when the process improves. Compare reprints per session or per 100 pages, alongside complaints and delays.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "5 sessions noon, 10 ngayon. Reprint/pahinang bilang at kalidad: hindi pa alam. Raw total lamang: kulang na ebidensya.",
+    "display_en": "5 sessions before, 10 now. Reprint/page counts and quality unknown. Raw totals alone: insufficient evidence.",
+    "asset_ids": [
+      "monitor-workload"
+    ],
+    "check": null,
+    "narration_fil": "Sinusuri ni Charlaine ang workload: limang teaching sessions ang naibigay sa isang linggo at sampu sa susunod. Maaaring tumaas ang kabuuang papel dahil dumoble ang trabaho. Hindi sapat ang dalawang session count para kalkulahin ang reprint rate: kailangan din ang bilang ng reprints at pahina sa bawat linggo. Kung hindi ibinigay, isulat na hindi pa alam; huwag hulaan o ihalo ang hiwalay na 20/100 at 5/100 na halimbawa.\n\nPara sa parehong uri ng sessions, hatiin ang reprints sa sessions na naibigay, o gamitin ang reprints bawat 100 printed pages. Ikumpara rin ang tamang bersyon, nababasang materyal, reklamo, delay at naibigay na serbisyo. Maaaring bumaba ang raw total dahil may nakanselang serbisyo; hindi ito patunay ng mas mahusay na proseso.\n\nPanatilihin ang tubig para sa paghuhugas ng kamay, clinical single-use rules, cold-chain at critical systems, kinakailangang bentilasyon, accessible na pagtuturo at napapanahong o agarang serbisyo. Fictional na papel at dummy teaching kit lamang ang pagsasanay; walang utility repair, aktuwal na pagpatay ng kagamitan, paghawak ng gamot o cleaning experiment.",
+    "narration_en": "Charlaine examines the workload: five teaching sessions were delivered in one week and ten in the next. Total paper use may rise because the workload doubled. Those session counts alone cannot give a reprint rate: reprint and page counts for each week are also needed. If they are not supplied, record them as unknown; do not guess or borrow the separate 20/100 and 5/100 example.\n\nFor comparable session types, divide reprints by sessions delivered or compare reprints per 100 printed pages. Also compare correct versions, readable material, complaints, delays and services delivered. Raw totals may fall because services were canceled; that does not prove a better process.\n\nProtect water for handwashing, clinical single-use rules, cold-chain and critical systems, required ventilation, accessible teaching and timely or urgent service. Practice uses fictional paperwork and dummy teaching kits only: no utility repair, actual equipment shutdown, medicine handling or cleaning experiment."
   },
   {
     "id": "slide-handover",
@@ -101,10 +117,14 @@
     "layout": "process",
     "heading_fil": "Panatilihin kahit magpalit ng tao",
     "heading_en": "Keep the routine when people change",
-    "display_fil": "Kapag wala si Elena, dapat magamit pa rin ang kit. Iwan ang maikling routine, ituro sa kapalit at tukuyin ang tatanggap ng stock-gap reports. Sa review, alisin ang walang silbing hakbang at panatilihin ang safeguards.",
-    "display_en": "When Elena is absent, the kit must still work. Leave a short routine, orient the next person and name the stock-gap reporting contact. Remove unhelpful steps during review while preserving safeguards.",
-    "asset_ids": [],
-    "check": null
+    "display_fil": "Maikling routine: master/version check, owner/kapalit, stock-gap contact at review. Kumpirmahin ang hindi pa alam.",
+    "display_en": "Short routine: master/version check, owner/replacement, stock-gap contact and review. Confirm unknown fields.",
+    "asset_ids": [
+      "monitor-handover"
+    ],
+    "check": null,
+    "narration_fil": "Kapag wala si Charlaine, kailangan pa ring magamit ng kapalit ang routine. Huwag umasa sa alaala niya. Ihanda ang maikling handover: nasaan ang kontroladong master, paano titingnan ang bersyon, sino ang owner at kapalit, paano itatala ang reprints at sessions, kanino iuulat ang stock gap, at kailan rerepasuhin ang kalidad. Ang mga pangalan ng awtorisadong contact ay kukumpirmahin sa lugar; walang inimbentong numero.\n\nIpagamit sa kapalit ang dummy kit at ipasabi ang susunod na hakbang kapag luma ang master o kulang ang papel. Kung hindi alam ang bersyon o contact, markahan ang puwang at magtanong bago magsimula. Ang pag-orient sa kapalit ay hindi patunay na natanggap o nagtagumpay na ang trial.\n\nSa review, alisin ang hakbang na walang silbi habang pinananatili ang version check, tamang materyal, privacy at serbisyo. Itala ang dahilan ng pagbabago at ang susunod na review. Kung bumaba ang kalidad, baguhin o ihinto ang trial sa awtorisadong proseso.",
+    "narration_en": "When Charlaine is absent, the replacement still needs to use the routine. Do not rely on her memory. Prepare a short handover: where the controlled master is kept, how to check its version, who owns the routine and replaces them, how reprints and sessions are recorded, who receives stock-gap reports and when quality is reviewed. Confirm authorised contacts locally; no invented phone number is supplied.\n\nAsk the replacement to use the dummy kit and explain the next step if the master is outdated or paper is missing. If the version or contact is unknown, mark the gap and ask before starting. Orienting a replacement does not prove the trial was accepted or successful.\n\nAt review, remove unhelpful steps while preserving version verification, correct material, privacy and service. Record why the routine changed and the next review. If quality falls, revise or stop through the authorised process."
   },
   {
     "id": "slide-practice",
@@ -116,12 +136,14 @@
     "layout": "process",
     "heading_fil": "Subukan, saka ulitin",
     "heading_en": "Try it, then repeat",
-    "display_fil": "Trial card: owner, baseline, kalidad, review date. 20/100 → 5/100. Ihambing ang parehong workload at tiyaking tama pa rin ang serbisyo.",
-    "display_en": "Trial card: owner, baseline, quality, review date. 20/100 → 5/100. Compare like workloads and check that service remains correct.",
+    "display_fil": "Fictional cards: trial, rates, no-internet barrier, handover. Puna at retry. Peer rehearsal ≠ trainer-observed pass.",
+    "display_en": "Fictional cards: trial, rates, no-internet barrier, handover. Feedback and retry. Peer rehearsal ≠ trainer-observed pass.",
     "asset_ids": [
-      "resource-monitor"
+      "monitor-practice"
     ],
-    "check": null
+    "check": null,
+    "narration_fil": "Ginagamit ni Charlaine at ng mga learner ang fictional trial card at dummy handout. Punan ang problema, pagbabago, owner/kapalit, baseline, kalidad, pahintulot at review date. Hindi pa aprubado ang trial; markahan ang pahintulot na pending. Gamitin ang 20/100 at 5/100 para sa rates, 15-percentage-point na pagitan at 75% relative na bawas sa reprints. Huwag tawaging cost savings.\n\nSa triad, magpalitan bilang BHW, kasamahang walang internet at observer. Ipakita ang kontroladong master, itanong ang hadlang at ipaliwanag ang handover. Ipasabi sa kapalit ang version check, stock-gap reporting at review. Observer: ibigay ang isang tiyak na puna; BHW: ulitin ang hakbang na kailangang ayusin. Itala kung nagawa, may prompt o hindi pa.\n\nKung mag-isa, magsulat o magsabi ng trial at handover gamit ang parehong fictional cards. Maaaring may reading support. Ang solo o peer rehearsal ay pagsasanay; hindi nito pinapalitan ang aktuwal na trainer observation at hindi ito awtomatikong pass.",
+    "narration_en": "Charlaine and the learners use the fictional trial card and dummy handout. Fill in the problem, change, owner/replacement, baseline, quality, authorisation and review date. The trial is not approved; mark permission pending. Use 20/100 and 5/100 to calculate rates, a 15-percentage-point difference and a 75% relative reduction in reprints. Do not call this cost savings.\n\nIn a triad, rotate as BHW, colleague without internet and observer. Show the controlled master, ask about the barrier and explain the handover. Ask the replacement to explain version verification, stock-gap reporting and review. Observer: give one specific piece of feedback. BHW: repeat the step needing improvement. Record done, prompted or not yet.\n\nIf working alone, write or speak the trial and handover using the same fictional cards. Reading support is available. Solo and peer rehearsal are practice; they do not replace actual trainer observation or produce an automatic pass."
   },
   {
     "id": "slide-check",
@@ -133,9 +155,11 @@
     "layout": "decision",
     "heading_fil": "Piliin ang susunod na hakbang",
     "heading_en": "Choose the next step",
-    "display_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
-    "display_en": "Lower consumption is a success only when correct, safe service is still delivered.",
-    "asset_ids": [],
+    "display_fil": "Fictional: kalahati ang papel at kalahati ang nakanselang sessions. Bill, gastos at kalidad: hindi pa alam. Sumagot bago tingnan ang wakas.",
+    "display_en": "Fictional: paper halved and half the sessions canceled. Bill, costs and quality unknown. Answer before viewing the ending.",
+    "asset_ids": [
+      "monitor-check"
+    ],
     "check": {
       "prompt_fil": "Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?",
       "prompt_en": "Paper use halved because half the sessions were canceled. What can be concluded?",
@@ -154,8 +178,10 @@
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.",
-      "feedback_en": "The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved."
-    }
+      "feedback_fil": "Una: tama—hindi pa patunay ng improvement; ihambing ang resources bawat naibigay na session at kalidad. Ikalawa: hindi tama—walang ibinigay na bill o cost evidence, at maaaring nawala ang serbisyo. Ikatlo: hindi tama—kailangan pa rin ang review ng workload, kalidad at dahilan ng pagkansela. Itinamang kathang-isip na wakas: hindi muna nag-claim si Charlaine ng tagumpay o savings. Inihiwalay niya ang 20/100 tungong 5/100 na reprint improvement sa kulang na workload, kalidad at gastos na datos. Iminungkahi niyang panatilihin ang kontroladong aprubadong paper master, ipasa ang routine at ipareview kung babaguhin o ihihinto ang trial. Hindi pa ito patunay ng matagumpay na implementation o certification.",
+      "feedback_en": "First: correct—improvement is not established; compare resources per delivered session and quality. Second: incorrect—no bill or cost evidence is supplied, and services may have been lost. Third: incorrect—workload, quality and reasons for cancellation still need review. Corrected fictional ending: Charlaine withholds a success or savings claim. She separates the 20/100 to 5/100 reprint improvement from missing workload, quality and cost evidence. She proposes retaining the controlled approved paper master, handing over the routine and reviewing whether to revise or stop the trial. Successful implementation or certification has not been established."
+    },
+    "narration_fil": "Sa hiwalay na kathang-isip na sitwasyon ni Charlaine, kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ito lamang ang ibinigay na datos. Walang kumpirmadong bill, presyo, dahilan ng pagkansela o kalidad ng naibigay na serbisyo.\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Isaalang-alang ang denominator at serbisyong naibigay. Pagkatapos sumagot, basahin ang dahilan para sa bawat pagpipilian at ang itinamang wakas; ihambing ito sa ginawa sa rehearsal.",
+    "narration_en": "In Charlaine’s separate fictional situation, paper use halved because half the sessions were canceled. That is the only supplied evidence. Bills, prices, reasons for cancellation and the quality of services delivered have not been confirmed.\n\nChoose an answer and explain why before viewing feedback. Consider the denominator and services delivered. After answering, read the rationale for every choice and the corrected ending; compare these with your rehearsal."
   }
 ]

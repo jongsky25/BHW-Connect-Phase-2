@@ -1,0 +1,191 @@
+{
+  "authorization": "approved. merge and deploy live",
+  "lesson_keys": [
+    "resources-monitor"
+  ],
+  "reviewed_head": "6db0e35ef27903f8ca9f93ef42d8a23e5409bcdd",
+  "reviewed_package_sha256": "9492f3ae0c3b3fff5c959e9054782038021f22e238ce2a348b00f0d572971c38",
+  "reviewed_package_bytes": 479725966,
+  "reviewed_artifact_id": 11673883012,
+  "reviewed_artifact_sha256": "ecef0fdba10a5382e86a3fb4926dbfae8128f8688c040c455cab6b16f1e273f4",
+  "reviewed_artifact_bytes": 513583574,
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"resources-monitor\",\n    \"position\": 2,\n    \"title_fil\": \"Subukan at subaybayan\",\n    \"title_en\": \"Try and monitor\",\n    \"objectives_fil\": [\n      \"Magmungkahi ng maliit na trial na may owner at review date, at ihambing ang resource use sa magkatulad na workload kasama ang kalidad ng serbisyo.\"\n    ],\n    \"objectives_en\": [\n      \"Propose a small trial with an owner and review date, and compare resource use at comparable workloads alongside service quality.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"trial\",\n      \"concept_ids\": [\n        \"m9.communicate\",\n        \"m9.review\"\n      ],\n      \"asset_ids\": [\n        \"monitor-trial\"\n      ],\n      \"takeaway_fil\": \"Ang sustainable na gawi ay may responsable, sinusukat na resulta at regular na review.\",\n      \"takeaway_en\": \"A sustainable practice has an owner, measured results and regular review.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"compare\",\n      \"concept_ids\": [\n        \"m9.review\"\n      ],\n      \"asset_ids\": [\n        \"monitor-compare\"\n      ],\n      \"takeaway_fil\": \"Ihambing ang resources sa magkatulad na gawain at tingnan din ang kalidad.\",\n      \"takeaway_en\": \"Compare resources across similar work and check quality too.\",\n      \"check\": {\n        \"prompt_fil\": \"Bumaba ang maling-bersyong reprint mula 20/100 tungong 5/100 pahina. Ano ang tamang ulat?\",\n        \"prompt_en\": \"Wrong-version reprints fell from 20/100 to 5/100 pages. What is the sound report?\",\n        \"options\": [\n          {\n            \"fil\": \"Bawas na 15 bawat 100 pahina; suriin din kung magkatulad ang workload at tama ang materyal.\",\n            \"en\": \"Fifteen fewer per 100 pages; also check comparable workload and correct materials.\"\n          },\n          {\n            \"fil\": \"Siguradong 75% na mas mababa ang gastos.\",\n            \"en\": \"Costs are certainly 75% lower.\"\n          },\n          {\n            \"fil\": \"Hindi kailangan ng bilang ng session o kalidad.\",\n            \"en\": \"Session counts and quality do not matter.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Unang pagpipilian: tama—15 na mas kaunting reprints bawat 100 pahina, pero kailangan pa ring suriin ang workload at tamang materyal. Ikalawa: hindi tama—75% ang relative na bawas sa reprints, hindi napatunayang bawas sa kabuuang gastos. Ikatlo: hindi tama—maaaring magbago ang totals dahil sa sessions o bumaba ang kalidad. Itamang ulat: 20% tungong 5%, bawas na 15 percentage points; hindi pa alam ang workload, kalidad, sanhi at cost evidence.\",\n        \"feedback_en\": \"First choice: correct—15 fewer reprints per 100 pages, with workload and correct materials still requiring verification. Second: incorrect—the relative reprint reduction is 75%, not a proven reduction in total cost. Third: incorrect—totals can change with session counts or declining quality. Corrected report: 20% to 5%, a 15-percentage-point decrease; workload, quality, cause and cost evidence remain unknown.\"\n      }\n    },\n    {\n      \"id\": \"communicate\",\n      \"concept_ids\": [\n        \"m9.communicate\"\n      ],\n      \"asset_ids\": [\n        \"monitor-communicate\"\n      ],\n      \"takeaway_fil\": \"Mas napapanatili ang pagbabago kapag naiintindihan at kayang gawin ng kasama.\",\n      \"takeaway_en\": \"A change lasts when colleagues understand it and can carry it out.\",\n      \"check\": {\n        \"prompt_fil\": \"Walang internet ang kasamang magpi-print ng handout. Ano ang dapat isama sa trial?\",\n        \"prompt_en\": \"A colleague who prints handouts has no internet. What should the trial include?\",\n        \"options\": [\n          {\n            \"fil\": \"Sabihing mag-download na lang kahit walang internet.\",\n            \"en\": \"Tell the colleague to download it anyway.\"\n          },\n          {\n            \"fil\": \"Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna ng kasama.\",\n            \"en\": \"Prepare a controlled paper master, verify its version and ask for the colleague’s feedback.\"\n          },\n          {\n            \"fil\": \"Gamitin ang anumang lumang kopya sa drawer.\",\n            \"en\": \"Use any old copy in the drawer.\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Una: hindi tama—hindi magagawa ang download kung walang internet. Ikalawa: tama—ang kontroladong papel na master na napatunayang aprubado, kasama ang puna ng kasama, ay tumutugon sa hadlang. Ikatlo: hindi tama—maaaring luma o hindi aprubado ang kopya sa drawer. Itamang hakbang: patunayan ang bersyon, humingi ng puna at kumpirmahin ang owner/kapalit at pahintulot. Kung hindi mapatunayan, magtanong muna; wala pang iniaangking kasunduan.\",\n        \"feedback_en\": \"First: incorrect—a download cannot be completed without internet. Second: correct—a verified approved controlled paper master and colleague feedback address the barrier. Third: incorrect—the drawer copy may be outdated or unapproved. Corrected action: verify the version, seek feedback and confirm owner/replacement and permission. If verification fails, ask first; agreement has not been claimed.\"\n      }\n    },\n    {\n      \"id\": \"workload\",\n      \"concept_ids\": [\n        \"m9.review\"\n      ],\n      \"asset_ids\": [\n        \"monitor-workload\"\n      ],\n      \"takeaway_fil\": \"Ang patas na paghahambing ay isinasaalang-alang ang dami ng trabahong ginawa.\",\n      \"takeaway_en\": \"A fair comparison accounts for the amount of work performed.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"handover\",\n      \"concept_ids\": [\n        \"m9.organize\",\n        \"m9.review\"\n      ],\n      \"asset_ids\": [\n        \"monitor-handover\"\n      ],\n      \"takeaway_fil\": \"Ang routine na naipapasa sa kasama ay mas tumatagal kaysa personal na diskarte lamang.\",\n      \"takeaway_en\": \"A routine that colleagues can inherit lasts longer than an individual workaround.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m9.communicate\",\n        \"m9.review\",\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [\n        \"monitor-practice\"\n      ],\n      \"takeaway_fil\": \"Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.\",\n      \"takeaway_en\": \"Lower consumption is a success only when correct, safe service is still delivered.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m9.communicate\",\n        \"m9.review\",\n        \"m9.organize\"\n      ],\n      \"asset_ids\": [\n        \"monitor-check\"\n      ],\n      \"takeaway_fil\": \"Itinamang kathang-isip na wakas: hindi muna nag-claim si Charlaine ng tagumpay o savings. Inihiwalay niya ang 20/100 tungong 5/100 na reprint improvement sa kulang na workload, kalidad at gastos na datos. Iminungkahi niyang panatilihin ang kontroladong aprubadong paper master, ipasa ang routine at ipareview kung babaguhin o ihihinto ang trial. Hindi pa ito patunay ng matagumpay na implementation o certification.\",\n      \"takeaway_en\": \"Corrected fictional ending: Charlaine withholds a success or savings claim. She separates the 20/100 to 5/100 reprint improvement from missing workload, quality and cost evidence. She proposes retaining the controlled approved paper master, handing over the routine and reviewing whether to revise or stop the trial. Successful implementation or certification has not been established.\",\n      \"check\": {\n        \"prompt_fil\": \"Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?\",\n        \"prompt_en\": \"Paper use halved because half the sessions were canceled. What can be concluded?\",\n        \"options\": [\n          {\n            \"fil\": \"Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo.\",\n            \"en\": \"This does not yet show improvement; compare use per session and services delivered.\"\n          },\n          {\n            \"fil\": \"Tagumpay na dahil mas mababa ang bill.\",\n            \"en\": \"It is a success because the bill is lower.\"\n          },\n          {\n            \"fil\": \"Wala nang kailangang review dahil nabawasan ang papel.\",\n            \"en\": \"No review is needed because less paper was used.\"\n          }\n        ],\n        \"correct_option_index\": 0,\n        \"feedback_fil\": \"Una: tama—hindi pa patunay ng improvement; ihambing ang resources bawat naibigay na session at kalidad. Ikalawa: hindi tama—walang ibinigay na bill o cost evidence, at maaaring nawala ang serbisyo. Ikatlo: hindi tama—kailangan pa rin ang review ng workload, kalidad at dahilan ng pagkansela. Itinamang kathang-isip na wakas: hindi muna nag-claim si Charlaine ng tagumpay o savings. Inihiwalay niya ang 20/100 tungong 5/100 na reprint improvement sa kulang na workload, kalidad at gastos na datos. Iminungkahi niyang panatilihin ang kontroladong aprubadong paper master, ipasa ang routine at ipareview kung babaguhin o ihihinto ang trial. Hindi pa ito patunay ng matagumpay na implementation o certification.\",\n        \"feedback_en\": \"First: correct—improvement is not established; compare resources per delivered session and quality. Second: incorrect—no bill or cost evidence is supplied, and services may have been lost. Third: incorrect—workload, quality and reasons for cancellation still need review. Corrected fictional ending: Charlaine withholds a success or savings claim. She separates the 20/100 to 5/100 reprint improvement from missing workload, quality and cost evidence. She proposes retaining the controlled approved paper master, handing over the routine and reviewing whether to revise or stop the trial. Successful implementation or certification has not been established.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m9.communicate\",\n      \"read_ids\": [\n        \"trial\",\n        \"communicate\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-trial\",\n        \"slide-communicate\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    },\n    {\n      \"id\": \"m9.review\",\n      \"read_ids\": [\n        \"trial\",\n        \"compare\",\n        \"workload\",\n        \"handover\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-trial\",\n        \"slide-compare\",\n        \"slide-workload\",\n        \"slide-handover\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    },\n    {\n      \"id\": \"m9.organize\",\n      \"read_ids\": [\n        \"handover\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-handover\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"tesda-400311217\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        19,\n        22\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        14,\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"tesda-400311217\",\n      \"title\": \"TESDA BHS NC II Revision 01 (2019), unit 400311217\",\n      \"pdf_pages\": [\n        33,\n        34,\n        35\n      ],\n      \"url\": \"https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"resource-monitor\",\n      \"path\": \"/training/module-1-9/monitor-c5d2eff5ad98.svg\",\n      \"content_hash\": \"c5d2eff5ad98b21709e3da13cd770cddb33b8c4ff86920ddec30578d742a42b6\",\n      \"alt_fil\": \"Subaybayan ang resources at kalidad bago at pagkatapos ng pagbabago, saka magpasya kung itutuloy o ihihinto.\",\n      \"alt_en\": \"Track resources and quality before and after a change, then decide whether to continue or stop.\",\n      \"caption_fil\": \"Ihambing ang resulta at kalidad bago panatilihin ang pagbabago.\",\n      \"caption_en\": \"Compare results and quality before keeping a change.\",\n      \"provenance\": \"Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.\",\n      \"review_status\": \"approved\"\n    },\n    {\n      \"id\": \"monitor-trial\",\n      \"path\": \"/training/bhw-1-9/charlaine-monitor-trial-cca1983eac3e.png\",\n      \"content_hash\": \"cca1983eac3e05ee2cebb6a10ae8a2e19e1e0f9deace077d475d5920ef24b42a\",\n      \"alt_fil\": \"Si Charlaine ay nag-iisip at nagsusulat sa blankong trial card habang nakikinig ang kasama.\",\n      \"alt_en\": \"Charlaine thinks and writes on a blank trial card while a colleague listens.\",\n      \"caption_fil\": \"Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.\",\n      \"caption_en\": \"Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.\",\n      \"provenance\": \"Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"monitor-compare\",\n      \"path\": \"/training/bhw-1-9/charlaine-monitor-compare-f543a30986fb.png\",\n      \"content_hash\": \"f543a30986fb532ea40754d68dce30ef1ebf50e4f6076b5d45618643f6d73dc2\",\n      \"alt_fil\": \"Itinuturo ni Charlaine ang dalawang stack ng ordinaryong printouts at blankong tally sheet.\",\n      \"alt_en\": \"Charlaine points to two stacks of ordinary printouts and a blank tally sheet.\",\n      \"caption_fil\": \"Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.\",\n      \"caption_en\": \"Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.\",\n      \"provenance\": \"Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"monitor-communicate\",\n      \"path\": \"/training/bhw-1-9/charlaine-monitor-communicate-617a9b934a50.png\",\n      \"content_hash\": \"617a9b934a508953d0a8006cd9e89380a497679cc5952fc4488db683c81b4937\",\n      \"alt_fil\": \"Nag-uusap si Charlaine at kasama sa tabi ng paper master folder at saradong laptop.\",\n      \"alt_en\": \"Charlaine and a colleague discuss a paper master folder beside a closed laptop.\",\n      \"caption_fil\": \"Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.\",\n      \"caption_en\": \"Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.\",\n      \"provenance\": \"Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"monitor-workload\",\n      \"path\": \"/training/bhw-1-9/charlaine-monitor-workload-95621d5688a0.png\",\n      \"content_hash\": \"95621d5688a0de5939e07f921a2eacaea7418e5f041d759f2da5e715c0128c76\",\n      \"alt_fil\": \"Sinusuri ni Charlaine ang dalawang blankong schedule at kulang na fields.\",\n      \"alt_en\": \"Charlaine examines two blank schedules and missing fields.\",\n      \"caption_fil\": \"Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.\",\n      \"caption_en\": \"Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.\",\n      \"provenance\": \"Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"monitor-handover\",\n      \"path\": \"/training/bhw-1-9/charlaine-monitor-handover-8c007c23d23e.png\",\n      \"content_hash\": \"8c007c23d23e05860161845a0d497cb0fc2e809f206851ebc30ef92dd28d1cda\",\n      \"alt_fil\": \"Ipinapaliwanag ng kapalit ang plain-paper routine habang nakikinig si Charlaine.\",\n      \"alt_en\": \"The replacement explains the plain-paper routine while Charlaine listens.\",\n      \"caption_fil\": \"Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.\",\n      \"caption_en\": \"Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.\",\n      \"provenance\": \"Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"monitor-practice\",\n      \"path\": \"/training/bhw-1-9/charlaine-monitor-practice-1c2e1fa6bcd1.png\",\n      \"content_hash\": \"1c2e1fa6bcd1687478bad4d46e654a6f0412461de86761b223437c6a93beacf4\",\n      \"alt_fil\": \"Tatlong fictional adults ang nagre-rehearse gamit ang papel, calculator at observer sheet.\",\n      \"alt_en\": \"Three fictional adults rehearse with paper, calculator and an observer sheet.\",\n      \"caption_fil\": \"Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.\",\n      \"caption_en\": \"Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.\",\n      \"provenance\": \"Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"monitor-check\",\n      \"path\": \"/training/bhw-1-9/charlaine-monitor-check-103407be75bd.png\",\n      \"content_hash\": \"103407be75bd64559c2d716fbfb3cf75a2053b13d63e7bc99a63fbb1c0619dd5\",\n      \"alt_fil\": \"Sinusuri ni Charlaine at kasama ang plain-paper report at routine folder; may blankong evidence boxes.\",\n      \"alt_en\": \"Charlaine and a colleague examine a plain-paper report and routine folder with empty evidence boxes.\",\n      \"caption_fil\": \"Kathang-isip na illustration. Ang mga bilang, pasya at status ay nasa teksto; hindi sinusukat mula sa larawan.\",\n      \"caption_en\": \"Fictional illustration. Quantities, decisions and status are given in text; do not measure them from the artwork.\",\n      \"provenance\": \"Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"resources-monitor-story\",\n      \"alt_fil\": \"Pitong kathang-isip na beats: panukala, patas na comparison, no-internet master, workload, handover, retry at kwalipikadong ulat.\",\n      \"alt_en\": \"Seven fictional beats: proposal, fair comparison, no-internet master, workload, handover, retry and a qualified report.\",\n      \"caption_fil\": \"Kathang-isip na adaptation. Walang napatunayang savings o matagumpay na trial.\",\n      \"caption_en\": \"Fictional adaptation. No proven savings or successful trial.\",\n      \"provenance\": \"Shared draft Charlaine reference; seven built-in imagegen scenes; Gemini Kore audio with measured encoded boundaries; owner/facility/human listening review pending.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-9/resources-monitor-gemini-fil-c7a336043359.mp4\",\n          \"content_hash\": \"c7a336043359245a1d4c27096690eb75aaca155e01b6e8e68181e5a003077bd7\",\n          \"duration_s\": 84,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-9/resources-monitor-gemini-fil-3bf026606946-poster.jpg\",\n            \"content_hash\": \"3bf0266069461eab350a4efb586588e1c35602b036db804c4f4cd3bb1b09cd2f\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-9/resources-monitor-gemini-fil-f106a6589f7e.vtt\",\n            \"content_hash\": \"f106a6589f7e375f5b51ad7eb57b41609bc9a508477334a20510789facccea09\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-9/resources-monitor-gemini-en-bd29989db088.mp4\",\n          \"content_hash\": \"bd29989db0883f21dff7b0ebcc8bf36cf3db869a46217fde26dea44bc8d84f67\",\n          \"duration_s\": 80,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-9/resources-monitor-gemini-en-9fd86ca10752-poster.jpg\",\n            \"content_hash\": \"9fd86ca107528d1c7838b55604a5c8453fa8da165a413c49e6ec4fffcd05baa5\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-9/resources-monitor-gemini-en-19db7b140059.vtt\",\n            \"content_hash\": \"19db7b14005930bce28a05682e1737e3008e42ae06a4f8c4aff198fba6408af1\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-9/resources-monitor-gemini-fil-3bf026606946-poster.jpg\",\n      \"content_hash\": \"3bf0266069461eab350a4efb586588e1c35602b036db804c4f4cd3bb1b09cd2f\"\n    }\n  ],\n  \"featured_asset_id\": \"resources-monitor-story\"\n}\n",
+  "reviewed_lesson_sha256": "93acb4ff6c362a27585328266fcedc29d7959c5e8def849589ac753e3a078d8c",
+  "approved_lesson_sha256": "688502a0ca9d0c514cc18140a6017112165ad2aecfe62238650f86e7c58558ff",
+  "integrated_main": "0e925326b1f9b2ab138f2a3d5b3267fff0a04621",
+  "human_listening": "not independently established by owner release authorization",
+  "facility_review": "not independently established by owner release authorization",
+  "known_CI_exception": "Exactly twelve unchanged problem-prioritize freshness failures disclosed in the approved package; retain global guard and require all other tests to pass.",
+  "promotion": "Only eight target asset review_status fields changed; reviewed teaching and media retained exactly.",
+  "promoted_asset_ids": [
+    "monitor-trial",
+    "monitor-compare",
+    "monitor-communicate",
+    "monitor-workload",
+    "monitor-handover",
+    "monitor-practice",
+    "monitor-check",
+    "resources-monitor-story"
+  ],
+  "approved_media": [
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/check.en.114e81a7e397.mp3",
+      "sha256": "e362a5cb1dd8ed9290f03af423cc968066856340f1669650696ddeb007931fa0",
+      "bytes": 273450
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/check.fil.7dc4370d6cc4.mp3",
+      "sha256": "dcb5875b357be05972a21120764fc42838decd7b9d4377bf1dc79fb684a7e85b",
+      "bytes": 304483
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/communicate.en.9036805bc15f.mp3",
+      "sha256": "36745f565384c54a6d11fd2eeabef8f50cbf1269d9a8c65438f6485a851e4ba9",
+      "bytes": 338756
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/communicate.fil.6cab8198a713.mp3",
+      "sha256": "1687b41cedd30f1f1a6c7bcfc8b600e69a2607fa880201e53ec19492528e1a49",
+      "bytes": 383478
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/compare.en.0910a6dec605.mp3",
+      "sha256": "87bcc9132ab649ec47fe08010514f1a2eebc4a251c1fb9072e7bf980c25d5ccc",
+      "bytes": 358296
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/compare.fil.a5b6e1f09f00.mp3",
+      "sha256": "510935433b5017381351849db853a29eaa7e8c23b1875ef6ef1f0c11d9dc9cbb",
+      "bytes": 385463
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/handover.en.766057db1d63.mp3",
+      "sha256": "7cfcfd0a8dbd146b22cfa84a67131ebf7e929dd9209d3766531ddf485bbedb2c",
+      "bytes": 339174
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/handover.fil.330033c97211.mp3",
+      "sha256": "a824d122c9e63da2570e2dbe7f3c8cae060627055d2667c1262cf33473aa2e54",
+      "bytes": 353907
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/practice.en.14f1945b686c.mp3",
+      "sha256": "f02a287e65b58a0d273f11b829b6230bf3e183dd969a8aaef1ee1b2813739470",
+      "bytes": 396330
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/practice.fil.0adbbf8b2812.mp3",
+      "sha256": "4c9b0c072a22650ce19497be055ec903d093cc3daefa43cadc7da911d91df2ea",
+      "bytes": 415451
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/trial.en.7c525dccbd62.mp3",
+      "sha256": "de7532390db29806cea1e47647256da14084f188e5c9900d49091e5960d599b0",
+      "bytes": 387239
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/trial.fil.fb50e8d5cca9.mp3",
+      "sha256": "a4c4c55b50c5a17c858ff0525051c591758c60834281b80dcac962f11f0ea223",
+      "bytes": 415660
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/workload.en.5d457c7ac427.mp3",
+      "sha256": "af78e357f6b5e7c7d4b33442ee323524967177abb79d4736701ca047fcb90720",
+      "bytes": 366132
+    },
+    {
+      "path": "/training/audio/09-sustainable-practices/resources-monitor/workload.fil.ca896b86868f.mp3",
+      "sha256": "a6a6f4a4172feb911fc4e881073bb35be65a19a3e5a9226a03204d3545eb98d1",
+      "bytes": 409182
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-check-103407be75bd.png",
+      "sha256": "103407be75bd64559c2d716fbfb3cf75a2053b13d63e7bc99a63fbb1c0619dd5",
+      "bytes": 2418968
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-communicate-617a9b934a50.png",
+      "sha256": "617a9b934a508953d0a8006cd9e89380a497679cc5952fc4488db683c81b4937",
+      "bytes": 2417717
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-compare-f543a30986fb.png",
+      "sha256": "f543a30986fb532ea40754d68dce30ef1ebf50e4f6076b5d45618643f6d73dc2",
+      "bytes": 2526492
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-handover-8c007c23d23e.png",
+      "sha256": "8c007c23d23e05860161845a0d497cb0fc2e809f206851ebc30ef92dd28d1cda",
+      "bytes": 2216461
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-practice-1c2e1fa6bcd1.png",
+      "sha256": "1c2e1fa6bcd1687478bad4d46e654a6f0412461de86761b223437c6a93beacf4",
+      "bytes": 2341814
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-trial-cca1983eac3e.png",
+      "sha256": "cca1983eac3e05ee2cebb6a10ae8a2e19e1e0f9deace077d475d5920ef24b42a",
+      "bytes": 2452210
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-workload-95621d5688a0.png",
+      "sha256": "95621d5688a0de5939e07f921a2eacaea7418e5f041d759f2da5e715c0128c76",
+      "bytes": 2199128
+    },
+    {
+      "path": "/training/bhw-1-9/resources-monitor-gemini-en-19db7b140059.vtt",
+      "sha256": "19db7b14005930bce28a05682e1737e3008e42ae06a4f8c4aff198fba6408af1",
+      "bytes": 1257
+    },
+    {
+      "path": "/training/bhw-1-9/resources-monitor-gemini-en-9fd86ca10752-poster.jpg",
+      "sha256": "9fd86ca107528d1c7838b55604a5c8453fa8da165a413c49e6ec4fffcd05baa5",
+      "bytes": 57083
+    },
+    {
+      "path": "/training/bhw-1-9/resources-monitor-gemini-en-bd29989db088.mp4",
+      "sha256": "bd29989db0883f21dff7b0ebcc8bf36cf3db869a46217fde26dea44bc8d84f67",
+      "bytes": 1207597
+    },
+    {
+      "path": "/training/bhw-1-9/resources-monitor-gemini-fil-3bf026606946-poster.jpg",
+      "sha256": "3bf0266069461eab350a4efb586588e1c35602b036db804c4f4cd3bb1b09cd2f",
+      "bytes": 59117
+    },
+    {
+      "path": "/training/bhw-1-9/resources-monitor-gemini-fil-c7a336043359.mp4",
+      "sha256": "c7a336043359245a1d4c27096690eb75aaca155e01b6e8e68181e5a003077bd7",
+      "bytes": 1281871
+    },
+    {
+      "path": "/training/bhw-1-9/resources-monitor-gemini-fil-f106a6589f7e.vtt",
+      "sha256": "f106a6589f7e375f5b51ad7eb57b41609bc9a508477334a20510789facccea09",
+      "bytes": 1287
+    },
+    {
+      "path": "/training/module-1-9/monitor-c5d2eff5ad98.svg",
+      "sha256": "c5d2eff5ad98b21709e3da13cd770cddb33b8c4ff86920ddec30578d742a42b6",
+      "bytes": 951
+    }
+  ],
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json": "688502a0ca9d0c514cc18140a6017112165ad2aecfe62238650f86e7c58558ff",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.fil.md": "ba37ab30eaaf43f3b5b287154f0705770c21f2d41046cc37ba0c94d5ce6d1078",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/read.en.md": "62a261f30bc4bf14c648971aad93ccfadaa87a6ab2c92ef9e2e8587f5e239a63",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/slides.json": "8e703b65d5b966f2d8ada2bf438a726dc01dcd15f8f43c105c358a454289c009",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/competency.json": "0325dd0c78508ceaeecbafc61f84345e23bb79ad7b06a269552fb9712f7e08a8",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.fil.md": "8074e39d9bb7e80891738e28449c7869fc4b8e6b9b4c634910e7a39522da7521",
+    "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/facilitator.en.md": "2417e9e7e969b18d8718e346e5827a55eeacdaabecfa6f7e5e4399931fa88b92",
+    "src/components/elearning/reference-lessons.tsx": "7ccbcba70a0206025dbc8b68c1c1dea60161d6bc8de1d89c690f74e70da86a48",
+    "remotion/src/Root.tsx": "059457ef2c0f31573ef90b18d7e631055ffded9df44e7bf1102cb17568d0c0ec",
+    "content/training/day1-basic-competencies/narration.json": "56b1295eb3241af097399d0a9792eee1f320a79c68400612dbb9bb12b4c9e541",
+    ".github/workflows/lesson193-release.yml": "4f3eb12de7d708e5a2cac2f5092c2b06d2872738e197acb6f3abb7c16be934d6",
+    "scripts/lib/lesson-193-integration.mjs": "84e131ec2a38d9a2b530cf8af1bc362fad64a9c3118a14e08ad204f54d790497",
+    "scripts/lib/lesson-193-release-integration.mjs": "0ef1a00db5fcde11e931bb7ac9118e77099eb9ff70453e0fc287f9de44d5808e",
+    "scripts/lesson-193-release-check.mjs": "61af9847ee6a40a133b7e44d63a0f30230bc84ff972b20b935a4ee86d5888d35",
+    "scripts/lesson-193-release-snapshot.mjs": "33922b85f7f74b38eb872b7bdf5d8b4fe834bbda0ec1a2a4df0ca5b523736596",
+    "scripts/lesson-193-live-smoke.mjs": "d1e155de7392de88abbfa93dee35d9c1352549ae216d0d79f01937268d6aa922",
+    "scripts/tests/lesson-193-release.test.mjs": "32311643aec6a13497212607d81092405ad7c2380157692e261a7f0b20a65940"
+  }
+}

@@ -1,0 +1,1247 @@
+{
+  "status": "16 full and 64 focused nonempty model reviews retained; no human or owner signoff inferred",
+  "current_model_reviews": {
+    "full_recordings": 16,
+    "focused_excerpts": 64,
+    "provider_failures": 0
+  },
+  "human_listening": "pending",
+  "agreed_human_pronunciation": "pending",
+  "speech_alias": "none; Charlaine remains written as authored",
+  "facility_infection_prevention_review": "pending",
+  "current_local_policy_review": "pending; primary DOH circular URL returned 403",
+  "owner_release_approval": false,
+  "adjudication_notes": [
+    "The prior short Filipino story was superseded after full/focused models transcribed 20 percent per 100 reprints. The corrected story explicitly says reprints per one hundred pages: twenty before, five after; both current reviews transcribe that denominator correctly.",
+    "Two Filipino Read introductions were corrected from Gamitin ni Charlaine to Ginagamit ni Charlaine; their actual recordings and model reviews were regenerated. Old bytes and assessments remain retained.",
+    "Models disagree about Charlaine/Charlene and Shar-layn/Shar-leen. No pronunciation agreement or target-only alias is inferred from their reports.",
+    "Focused excerpts report some voice/timbre transitions where full recordings describe consistent female delivery. These are unresolved listening flags, not permission to introduce a second narrator.",
+    "A generic full-review prompt asks about BHW pronunciation; its absence from a recording that does not contain BHW in the authored script is not an omitted required word. Judge each recording against its own expected_text.",
+    "Model-reported pronunciation, pacing and voice concerns remain available below and in the original full/focused/raw responses. Model review is separate from human listening, source/facility review and owner approval."
+  ],
+  "full_findings": [
+    {
+      "id": "read-resources-monitor-trial-fil",
+      "source_sha256": "a4c4c55b50c5a17c858ff0525051c591758c60834281b80dcac962f11f0ea223",
+      "assessment_sha256": "dde3f138f9b1655b1d1fca325343e287496a9828445191c815b16509b6a7928c",
+      "reported_delivery": {
+        "audible_throughout": true,
+        "voice_consistency": "Consistent female voice throughout the recording.",
+        "pace": "Deliberate, unhurried, and clear educational pace.",
+        "prompt_elements_faithful_delivery": {
+          "pending_permission": "Faithfully delivered ('Habang wala pang pahintulot, markahan itong pending at huwag simulan' at [01:03–01:08]).",
+          "canceled_vs_delayed_services": "The narration refers to delayed services ('kung may naantalang serbisyo' at [01:19–01:21]) rather than explicitly canceled services.",
+          "numerical_targets_20_100_vs_5_100": "Omitted; specific figures 20/100 and 5/100 were not mentioned in the spoken audio.",
+          "percentage_points_vs_relative_reduction": "Omitted; 15 percentage points vs 75% relative reprint reduction is not present in the spoken audio.",
+          "cost_savings_and_causation": "Omitted; no mention of proven cost savings or causal claims in the recorded narration.",
+          "workload_quality_evidence": "Partially addressed as quality tracking metrics ('sukatan ng kalidad', 'naantalang serbisyo'), but specific formal analysis of missing workload evidence is not delivered.",
+          "no_internet_controlled_paper_master": "Omitted; controlled paper master under no-internet conditions is not explicitly stated."
+        }
+      },
+      "pronunciation_concerns": {
+        "Charlaine": "Pronounced naturally as 'Shar-leyn' ([00:04–00:05]), no mispronunciation detected.",
+        "BHW": "Clearly initialed in standard Philippine English/Tagalog usage as /biː eɪtʃ ˈdʌbəl.juː/ ([00:07–00:08])."
+      },
+      "other_concerns": [
+        "Several quantitative baseline and target concepts specified in the review checklist (e.g., 20/100 vs 5/100, 15 percentage points vs 75% relative reprint reduction, no-internet paper master) are completely absent from this script version."
+      ]
+    },
+    {
+      "id": "read-resources-monitor-trial-en",
+      "source_sha256": "de7532390db29806cea1e47647256da14084f188e5c9900d49091e5960d599b0",
+      "assessment_sha256": "6fa77bc47979ca3906c4b6cd665665943283dd2b5b050f7150ceeea25c0ac8b4",
+      "reported_delivery": {
+        "audible_throughout": true,
+        "voice_consistency": "Consistent solo female voice throughout the recording.",
+        "pace": "Deliberate, steady, and clear instructional pace with appropriate pauses between sections.",
+        "script_coverage_and_omissions": {
+          "pending_permission": "Faithfully delivered ('Permission and team acceptance have not been confirmed' at 00:16–00:20; 'While permission is unknown, mark it pending and do not start' at 01:00–01:05).",
+          "numerical_reprint_metrics_20_100_vs_5_100": "Omitted; specific figures of 20/100 and 5/100 are not stated in the narration.",
+          "percentage_reduction_15_points_vs_75_percent": "Omitted; relative and absolute reprint reduction figures are not spoken.",
+          "cost_savings_and_causation_qualifications": "Omitted; no explicit disclaimer regarding 'no proven cost savings or causation' appears.",
+          "controlled_paper_master_no_internet": "Omitted; no mention of a no-internet controlled paper master.",
+          "workload_quality_evidence": "Partially addressed qualitatively (tracking printed pages, service delays, and readability at 01:05–01:17), but missing workload/quality evidence analysis is not explicitly articulated.",
+          "ending_after_canceled_services": "Not present; the recording concludes with 'A complete card does not guarantee a successful trial. A sustainable practice has an owner, measured results, and regular review' (01:26–01:36) rather than a segment addressing canceled services."
+        }
+      },
+      "pronunciation_concerns": {
+        "Charlaine": "Pronounced clearly as [ʃɑːrˈleɪn] with Philippine English phonetic features (00:04–00:06); standard and intelligible.",
+        "BHW": "Pronounced distinctly letter-by-letter as 'B-H-W' ([ˌbiː.eɪtʃˈdʌbəl.juː]) at 00:06–00:07.",
+        "overall_phonology": "Natural, clear Philippine English phonology and enunciation with no problematic distortions."
+      },
+      "other_concerns": [
+        "Several training elements specified in the evaluation prompt (20/100 vs. 5/100, 15 percentage points vs. 75% relative reprint reduction, cost savings/causation disclaimers, no-internet paper master, canceled services ending) are completely absent from this spoken audio file."
+      ]
+    },
+    {
+      "id": "read-resources-monitor-compare-fil",
+      "source_sha256": "510935433b5017381351849db853a29eaa7e8c23b1875ef6ef1f0c11d9dc9cbb",
+      "assessment_sha256": "211589a874001d1ff0aec0c5b738309c2e23e72d57368075f7610f9517e4e01d",
+      "reported_delivery": {
+        "audible_throughout": true,
+        "voice_consistency": "Consistent female educational narration throughout.",
+        "pace": "Deliberate, clear, and steady educational cadence.",
+        "faithful_delivery_checks": {
+          "twenty_per_hundred_vs_five_per_hundred": "Faithfully delivered ('dalawampu sa bawat isang daang printed pages... lima sa bawat isang daan ngayon' at 00:06–00:15).",
+          "percentage_points_vs_relative_reduction": "Faithfully delivered ('labinlimang percentage points' at 00:27–00:29; 'equals sa 75%' relative reduction at 00:43–00:45).",
+          "no_proven_cost_savings_or_causation": "Faithfully delivered ('Hindi ito 75% na bawas sa kabuuang gastos... o sanhi ng pagbabago' at 00:46–00:57).",
+          "missing_workload_quality_evidence": "Faithfully delivered ('Hindi rin pa kumpirmado kung pareho ang uri at dami ng sessions...' at 00:58–01:08).",
+          "pending_permission": "Not delivered / omitted from this narration clip.",
+          "no_internet_controlled_paper_master": "Not delivered / omitted from this narration clip.",
+          "corrected_ending_after_canceled_services": "Not delivered / omitted from this narration clip."
+        }
+      },
+      "pronunciation_concerns": [
+        {
+          "term": "Charlaine / Charlene",
+          "timestamp": "00:03 - 00:04",
+          "observation": "Pronounced phonetically as 'Shar-lane' (/ʃɑːrˈleɪn/), smooth and natural."
+        },
+        {
+          "term": "BHW",
+          "timestamp": "00:35 - 00:36",
+          "observation": "The speaker clearly pronounces the initialism as 'B-H-S' (/biː eɪtʃ ɛs/) rather than 'B-H-W' (/biː eɪtʃ dʌbəl.juː/ or Tagalog equivalent)."
+        }
+      ],
+      "other_concerns": [
+        {
+          "type": "Content Omission",
+          "description": "The audio does not include script content regarding pending permission, a no-internet controlled paper master, or a corrected ending addressing canceled services.",
+          "timestamps": "N/A"
+        },
+        {
+          "type": "Negation / Qualification Checks",
+          "description": "All present negations ('hindi ito', 'hindi ibinigay', 'hindi rin pa kumpirmado', 'hindi kailangan') are preserved accurately without unintended shifts in meaning.",
+          "timestamps": "00:33, 00:46, 00:51, 00:58, 01:23"
+        }
+      ]
+    },
+    {
+      "id": "read-resources-monitor-compare-en",
+      "source_sha256": "87bcc9132ab649ec47fe08010514f1a2eebc4a251c1fb9072e7bf980c25d5ccc",
+      "assessment_sha256": "1bf26ed2f6085d7b77b894eec1c4af3078c54ba871445be57d17f005d4d0f5c0",
+      "reported_delivery": {
+        "audibility": "Speech is clearly audible throughout the recording with no dropouts.",
+        "voice_consistency": "Consistent solo female voice with Philippine English phonology.",
+        "pace": "Deliberate, clear, instructional pacing throughout (~129 words over ~89 seconds).",
+        "clipping": "No clipped syllables, words, or endings detected; natural fadeout at 01:29.",
+        "faithful_delivery_status": {
+          "twenty_vs_five_per_hundred": "Faithfully delivered ('20 out of every 100 printed pages before, and 5 out of every 100 afterward' at [00:06–00:13]).",
+          "percentage_points_vs_relative_reduction": "Faithfully delivered ('15 percentage points' at [00:26–00:28]; '(20 - 5) / 20 = 75%' at [00:36–00:42]).",
+          "no_proven_cost_savings_or_causation": "Faithfully delivered ('This is not a 75% reduction in total cost. Prices, other resource costs, and the cause of the change are not supplied' at [00:43–00:54]).",
+          "missing_workload_and_quality_evidence": "Faithfully delivered ('Comparable session types and counts... delays and complaints have not been confirmed either. Record these as unknown' at [00:55–01:06]).",
+          "pending_permission": "Not delivered / omitted from this recording segment.",
+          "no_internet_controlled_paper_master": "Not delivered / omitted from this recording segment.",
+          "corrected_ending_after_canceled_services": "Not delivered / omitted from this recording segment."
+        },
+        "negation_and_qualifications": "All negations and qualifications ('not a report', 'not a 75% reduction', 'not supplied', 'have not been confirmed', 'unnecessary') are preserved accurately without reversal."
+      },
+      "pronunciation_concerns": [
+        {
+          "term": "Charlaine",
+          "timestamp": "00:02 - 00:04",
+          "observation": "Pronounced clearly as /ʃɑːrˈleɪn/ ('Shar-layn'), standard for Philippine English narration."
+        },
+        {
+          "term": "BHW vs. BHS",
+          "timestamp": "00:31 - 00:33",
+          "observation": "The speaker clearly articulates the initialism 'BHS' (/ˌbiː eɪtʃ ˈɛs/ - Barangay Health Station) rather than 'BHW' (Barangay Health Worker)."
+        }
+      ],
+      "other_concerns": [
+        {
+          "type": "content_omission",
+          "description": "The audio passage concludes after pedagogical instructions ('Compare resources across similar work, and check quality, too') and does not include content regarding pending permission, a no-internet controlled paper master, or corrected endings following canceled services."
+        }
+      ]
+    },
+    {
+      "id": "read-resources-monitor-communicate-fil",
+      "source_sha256": "1687b41cedd30f1f1a6c7bcfc8b600e69a2607fa880201e53ec19492528e1a49",
+      "assessment_sha256": "5a15a58253e3a6c5c4fb2ab3b76960b779f176dd1eb9b7a06503c3e867c2a177",
+      "reported_delivery": {
+        "voice_consistency": "Consistent female speaker throughout the entire recording.",
+        "pace": "Deliberate, instructional, and well-paced with clear pauses between sentences.",
+        "audibility": "Speech is completely audible and clean throughout.",
+        "faithful_delivery_notes": {
+          "controlled_paper_master_no_internet": "Delivered accurately ('walang internet ang kasamang magpi-print... Magmungkahi ng kontroladong papel na master mula sa aprobadong bersyon').",
+          "no_proven_causation": "Faithfully stated ('hindi sinisisi ang tao o inaangking napatunayan na ang sanhi').",
+          "pending_permission": "Faithfully delivered ('Kung hindi matiyak ang bersyon o pahintulot, huwag gamitin ang hindi aprobadong kopya').",
+          "unmentioned_elements": "The specific script sections regarding numeric metrics (20/100 vs. 5/100, 15 percentage points vs. 75% relative reprint reduction), proven cost savings, workload/quality evidence, BHW, and canceled services are entirely absent from this audio segment."
+        }
+      },
+      "pronunciation_concerns": {
+        "Charlaine": "Pronounced clearly and naturally as /ʃɑːrˈleɪn/ (Shar-lane) at 00:03.",
+        "BHW": "The acronym BHW does not appear in this recording.",
+        "other_terms": "English loanwords ('drawer', 'print', 'review', 'routine', 'internet', 'download', 'master', 'version', 'date', 'contact') are pronounced clearly with standard Tagalog-English phonology."
+      },
+      "other_concerns": "No dropped negations or unintended modifications of qualifications detected. The ending (01:28–01:36) finishes smoothly without truncation."
+    },
+    {
+      "id": "read-resources-monitor-communicate-en",
+      "source_sha256": "36745f565384c54a6d11fd2eeabef8f50cbf1269d9a8c65438f6485a851e4ba9",
+      "assessment_sha256": "e3ed59cba897c2c1186b884921a6f4e6d321d66a2e700f84580eaa5faff605af",
+      "reported_delivery": {
+        "voice": "Consistent solo female voice throughout the recording.",
+        "pace": "Deliberate, steady educational pacing with natural pausing between instructional steps.",
+        "fidelity_to_scripted_points": {
+          "no_internet_controlled_paper_master": "Delivered faithfully between [00:33] and [00:48] ('the colleague printing handouts has no internet... Propose a controlled paper master from the approved version...').",
+          "no_blaming_proven_cause": "Delivered faithfully at [00:14]–[00:18] ('without blaming a person or claiming a proven cause').",
+          "negations_and_qualifications": "Faithfully delivered without alterations at [00:59]–[01:01] ('Do not invent agreement') and [01:01]–[01:08] ('If the version or authorization cannot be verified, do not use an unapproved copy').",
+          "omitted_or_missing_script_topics": [
+            "20/100 versus 5/100 (not present in audio)",
+            "15 percentage points versus 75% relative reprint reduction (not present in audio)",
+            "Specific mention of cost savings evidence (not present in audio)",
+            "Workload or quality evidence (not present in audio)",
+            "Pending permission (not present in audio)",
+            "Corrected ending after canceled services (audio concludes at [01:19]–[01:24] with: 'A change lasts when colleagues understand it and can carry it out.')"
+          ]
+        }
+      },
+      "pronunciation_concerns": {
+        "charlaine": "Pronounced clearly as [ʃɑːrˈleɪn] / 'Shar-LAYN' at ~[00:03]. No articulation issues detected.",
+        "bhw": "The acronym 'BHW' is not spoken anywhere in this audio track."
+      },
+      "other_concerns": [
+        "No clipping observed at either the start ([00:00]) or ending ([01:24]–[01:25]).",
+        "Audio quality is clear and speech remains audible and intelligible throughout."
+      ]
+    },
+    {
+      "id": "read-resources-monitor-workload-fil",
+      "source_sha256": "a6a6f4a4172feb911fc4e881073bb35be65a19a3e5a9226a03204d3545eb98d1",
+      "assessment_sha256": "8beb69c2f8b6645a7db30e874918f5b879788bf792762009d8fd50aa633f7cf6",
+      "reported_delivery": {
+        "audible_throughout": true,
+        "voice_consistency": "Consistent female speaker throughout the recording.",
+        "pace": "Deliberate, clear, and well-paced educational delivery.",
+        "script_coverage_notes": {
+          "twenty_over_one_hundred_and_five_over_one_hundred": "Faithfully delivered as '20 over 100 at 5 over 100' at [00:33-00:38].",
+          "percentage_points_vs_relative_reprint_reduction": "Not delivered; no mention of '15 percentage points' or '75% relative reprint reduction' appears in this audio segment.",
+          "no_proven_cost_savings_or_causation": "Delivered in part as 'Hindi ito patunay na mas mahusay na proseso' at [01:05-01:08], though specific mention of cost savings was omitted.",
+          "missing_workload_quality_evidence": "Faithfully delivered; emphasizes missing data ('Hindi sapat ang dalawang session count...') and necessary comparison variables at [00:16-00:25] and [00:51-01:00].",
+          "pending_permission": "Not mentioned in this audio segment.",
+          "no_internet_controlled_paper_master": "Not mentioned in this audio segment.",
+          "canceled_services_qualification": "Faithfully delivered at [01:00-01:08] ('Maaaring bumaba ang raw total dahil may nakanselang serbisyo. Hindi ito patunay na mas mahusay na proseso.')."
+        }
+      },
+      "pronunciation_concerns": [
+        {
+          "term": "Charlaine",
+          "timestamp": "00:03 - 00:05",
+          "observation": "Pronounced clearly as /ʃɑːrˈleɪn/ without distortion."
+        },
+        {
+          "term": "BHW",
+          "timestamp": null,
+          "observation": "The acronym 'BHW' does not appear in this recording."
+        }
+      ],
+      "other_concerns": [
+        {
+          "issue": "Omitted script topics",
+          "timestamp": null,
+          "detail": "Topics regarding '15 percentage points vs 75% relative reprint reduction', 'pending permission', and 'no-internet controlled paper master' are completely absent from this clip."
+        }
+      ]
+    },
+    {
+      "id": "read-resources-monitor-workload-en",
+      "source_sha256": "af78e357f6b5e7c7d4b33442ee323524967177abb79d4736701ca047fcb90720",
+      "assessment_sha256": "ddf7acd38f4056c92502cd55bdf16f61574ed8fc16361de7aae16bfad9020fe8",
+      "reported_delivery": {
+        "audibility": "Clear and audible throughout with minimal background noise.",
+        "voice_consistency": "Consistent solo female voice with Philippine English phonological features.",
+        "pace": "Deliberate, unhurried instructional cadence averaging ~110–120 words per minute.",
+        "ratio_delivery": "The fractions '20/100' and '5/100' at [00:31–00:33] are read aloud as 'twenty one-hundredths and five one-hundredths'.",
+        "script_coverage": {
+          "reprint_reduction_metrics": "Not spoken in this section; '15 percentage points' and '75% relative reprint reduction' are absent from this excerpt.",
+          "causation_and_canceled_services": "Faithfully delivered at [00:53–00:59]: 'Raw totals may fall because services were canceled. That does not prove a better process.'",
+          "workload_and_quality_evidence": "Included via session counts, page counts, readable material, complaints, delays, and services delivered.",
+          "pending_permission_and_paper_master": "Not present in this recording segment."
+        }
+      },
+      "pronunciation_concerns": [
+        {
+          "term": "Charlaine",
+          "timestamp": "00:02 - 00:03",
+          "observation": "Pronounced clearly as /ʃɑːrˈleɪn/ without distortion."
+        },
+        {
+          "term": "BHW",
+          "timestamp": "N/A",
+          "observation": "The acronym 'BHW' does not appear in this spoken track."
+        }
+      ],
+      "other_concerns": [
+        {
+          "issue": "Scope omission",
+          "timestamp": "00:00 - 01:31",
+          "description": "Specific references to 'pending permission', 'no-internet controlled paper master', 'proven cost savings', and '15 percentage points / 75% relative reprint reduction' are omitted from this particular excerpt of the module."
+        }
+      ]
+    },
+    {
+      "id": "read-resources-monitor-handover-fil",
+      "source_sha256": "a824d122c9e63da2570e2dbe7f3c8cae060627055d2667c1262cf33473aa2e54",
+      "assessment_sha256": "05827f541589fbebdfc170aff619ebf66a451f513b7d23087e71e652af219e8f",
+      "reported_delivery": {
+        "voice": "Consistent solo female voice throughout the recording.",
+        "pace": "Deliberate, clear, and steady instructional pace with natural pauses between sentences.",
+        "audibility": "Speech is fully audible and clearly articulated with no background noise or cutting out.",
+        "faithful_delivery_assessment": {
+          "metrics_20_100_vs_5_100": "Omitted; no numerical figures comparing 20/100 to 5/100 are present in the audio.",
+          "reprint_reduction_15pp_vs_75_percent": "Omitted; 15 percentage points vs 75% relative reprint reduction is not mentioned.",
+          "no_proven_cost_savings_or_causation": "Omitted; claims regarding cost savings or causation are absent.",
+          "missing_workload_quality_evidence": "Omitted; workload evidence is not discussed, though monitoring quality drop is mentioned at [01:15 - 01:21].",
+          "pending_permission": "Omitted; pending permission is not stated.",
+          "no_internet_controlled_paper_master": "Partially addressed conceptually; mentions 'kontroladong master' [00:14 - 00:16] and 'luma ang master o kulang ang papel' [00:43 - 00:46], but does not explicitly mention 'no-internet'.",
+          "corrected_ending_after_canceled_services": "Omitted; does not mention canceled services. The audio concludes at [01:22 - 01:28] with: 'Ang routine na naipapasa sa kasama ay mas tumatagal kaysa personal na diskarte lamang.'"
+        }
+      },
+      "pronunciation_concerns": {
+        "Charlaine": "Pronounced as 'Shar-lane' [ʃɑːrˈleɪn] at [00:03 - 00:05], clear and standard.",
+        "BHW": "The acronym or term 'BHW' does not appear in this recording."
+      },
+      "other_concerns": [
+        {
+          "timestamp": "00:54 - 01:00",
+          "description": "Crucial qualification/negation present: 'Ang pag-orient sa kapalit ay hindi patunay na natanggap o nagtagumpay na ang trial' (Orienting a replacement is not proof that the trial was accepted or successful)."
+        },
+        {
+          "timestamp": "01:15 - 01:21",
+          "description": "Conditional rule: 'Kung bumaba ang kalidad, baguhin o ihinto ang trial sa awtorisadong proseso' (If quality drops, modify or stop the trial through the authorized process)."
+        },
+        {
+          "timestamp": "00:00 - 01:28",
+          "description": "Multiple benchmark requirements (quantitative statistical comparisons, reprint reduction percentages, cost saving disclaimers, canceled services closure) are completely absent from the spoken text."
+        }
+      ]
+    },
+    {
+      "id": "read-resources-monitor-handover-en",
+      "source_sha256": "7cfcfd0a8dbd146b22cfa84a67131ebf7e929dd9209d3766531ddf485bbedb2c",
+      "assessment_sha256": "03c8c9b1ccaabb7e4a05f0a5b6b0d44a9933d518081c57f8eb0a9c0bd7ade482",
+      "reported_delivery": {
+        "voice_consistency": "Consistent clear female voice throughout the recording.",
+        "pace": "Deliberate, unhurried, and clear educational pace.",
+        "script_omissions_and_deviations": [
+          "Omitted target metrics: '20/100 versus 5/100' is not present in the audio.",
+          "Omitted comparison: '15 percentage points versus 75% relative reprint reduction' is not present in the audio.",
+          "Omitted qualification: 'no proven cost savings or causation' is not present in the audio.",
+          "Omitted qualification: 'missing workload/quality evidence' is not present in the audio.",
+          "Omitted phrase: 'pending permission' is not present in the audio.",
+          "Partial delivery: Mentioned 'where the controlled master is kept' (00:14–00:16) rather than 'the no-internet controlled paper master'.",
+          "Omitted section: The corrected ending referencing canceled services is not present; audio concludes with 'lasts longer than an individual workaround'."
+        ]
+      },
+      "pronunciation_concerns": [
+        {
+          "term": "Charlaine",
+          "timestamp": "00:03 - 00:05",
+          "observation": "Pronounced as 'Charlene' (/ʃɑːrˈliːn/)."
+        },
+        {
+          "term": "BHW",
+          "timestamp": "N/A",
+          "observation": "The acronym 'BHW' is entirely absent from the spoken narration."
+        }
+      ],
+      "other_concerns": [
+        "Multiple required content checks (numerical reprint metrics, cost savings caveats, workload evidence, internet-free specification, canceled services ending) are completely absent from this segment of narration."
+      ]
+    },
+    {
+      "id": "read-resources-monitor-practice-fil",
+      "source_sha256": "4c9b0c072a22650ce19497be055ec903d093cc3daefa43cadc7da911d91df2ea",
+      "assessment_sha256": "754d3b7212b2a8f3ab45ea005e443d5d4c8955d61a0e3a275d38ac3bf3224e55",
+      "reported_delivery": {
+        "audible_throughout": true,
+        "voice_consistency": "Consistent female speaker throughout the entire recording.",
+        "pace": "Moderate, clear, and steady cadence appropriate for instructional narration.",
+        "metric_fidelity": {
+          "rates_delivery": "Substituted '20%' and '5%' for '20/100' and '5/100' at [00:25 - 00:28] ('Gamitin ang 20% at 5% para sa rates').",
+          "percentage_points_and_relative_reduction": "Accurately delivered as '15 percentage point na pagitan, at 75% relative na bawas sa reprints' [00:29 - 00:35].",
+          "cost_savings_qualification": "Preserved prohibition ('Huwag tawaging cost savings') at [00:36 - 00:39].",
+          "pending_permission": "Stated as 'Markahan ang pahintulot na pending' at [00:22 - 00:24].",
+          "offline_controlled_master": "Included as 'kasamahang walang internet' [00:44] and 'Ipakita ang kontroladong master' [00:47 - 00:49].",
+          "workload_quality_evidence_and_service_delivery": "Ending emphasizes quality and safety ('Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo' [01:36 - 01:43]), though explicit mention of 'canceled services' or missing workload/quality evidence was omitted/generalized."
+        }
+      },
+      "pronunciation_concerns": [
+        {
+          "term": "Charlene",
+          "timestamp": "00:03 - 00:05",
+          "observation": "Pronounced with standard English phonology (/ʃɑːrˈliːn/ or /tʃɑːrˈliːn/); intelligible and natural in Taglish context."
+        },
+        {
+          "term": "BHW",
+          "timestamp": "00:42 - 00:43, 01:05 - 01:06",
+          "observation": "Spelled out in standard English alphabet (/biː eɪtʃ ˈdʌbəl.juː/); clear and accurate."
+        }
+      ],
+      "other_concerns": [
+        {
+          "type": "script_variation",
+          "timestamp": "00:25 - 00:28",
+          "description": "Speaker said '20% at 5%' instead of nominal fraction forms like '20/100' and '5/100'."
+        },
+        {
+          "type": "content_omission",
+          "timestamp": "01:36 - 01:43",
+          "description": "The concluding sentence frames success around continuing 'tama at ligtas na serbisyo' (correct and safe service), without explicitly verbalizing 'canceled services' or empirical workload/quality measurement gaps."
+        }
+      ]
+    },
+    {
+      "id": "read-resources-monitor-practice-en",
+      "source_sha256": "f02a287e65b58a0d273f11b829b6230bf3e183dd969a8aaef1ee1b2813739470",
+      "assessment_sha256": "4d657aec289b99f1256e5125aef6b95f158e8ffd3b7f5fae199d14cd677bf7c4",
+      "reported_delivery": "The narration is delivered in a steady, clear, instructional pace by a single female speaker with Philippine English phonology. Key metrics, conditions, and disclaimers are delivered faithfully: '20 100ths and 5 100ths', '15 percentage point difference', '75% relative reduction in reprints', 'Do not call this cost savings', 'permission pending', the paper master with a colleague without internet, and the requirement that lower consumption is only a success when correct, safe service is delivered.",
+      "pronunciation_concerns": "None. 'Charlaine' is articulated clearly as /ʃɑːrˈleɪn/ and 'BHW' is distinctly articulated as individual letters (/biː eɪtʃ ˈdʌbəl.juː/).",
+      "other_concerns": "No changed negations, clipped segments, or missing phrases were detected. Audio levels and clarity remain consistent throughout."
+    },
+    {
+      "id": "read-resources-monitor-check-fil",
+      "source_sha256": "dcb5875b357be05972a21120764fc42838decd7b9d4377bf1dc79fb684a7e85b",
+      "assessment_sha256": "3d6ff98255c61e322e1247e27221de5f5aeca1760a493dc9a70c118d113f9689",
+      "reported_delivery": {
+        "voice_consistency": "Consistent female voice throughout.",
+        "pace": "Deliberate, clear, and well-paced educational delivery.",
+        "audibility": "Speech is fully audible and clear with no background noise or distortion.",
+        "script_fidelity_and_variations": {
+          "ratios_and_percentages": "The narration delivered '20% tungong 5% na reprint improvement' [00:52–00:56] instead of specifying '20/100 versus 5/100' or distinguishing '15 percentage points versus 75% relative reprint reduction'.",
+          "cost_savings_and_causation": "Faithfully delivered qualified absence of savings and causality ('Walang kumpirmadong bill, presyo, dahilan ng pagkansela...' [00:16–00:21] and 'Hindi muna nag-claim si Charlaine ng tagumpay o savings' [00:47–00:51]).",
+          "missing_workload_quality_evidence": "Delivered as 'kulang na workload, kalidad, at gastos na datos' [00:56–01:00].",
+          "pending_permission": "Framed as submitting for review ('ipa-review kung babaguhin o ihihinto ang trial' [01:07–01:11]) rather than explicit 'pending permission'.",
+          "no_internet_paper_master": "Delivered as 'kontroladong aprobadong paper master' [01:02–01:05]; the 'no-internet' qualifier was omitted.",
+          "corrected_ending_after_canceled_services": "Accurately noted 'kalahati rin ang nakanselang sessions' [00:09–00:12] leading into the corrected scenario ending ('Itinamang kathang-isip na wakas' [00:44–00:47])."
+        }
+      },
+      "pronunciation_concerns": {
+        "Charlaine": "Pronounced clearly as 'Shar-layn' ([00:05–00:06] and [00:49–00:50]) with no issues.",
+        "BHW": "The acronym 'BHW' is not spoken anywhere in the recording."
+      },
+      "other_concerns": [
+        "Omission of the 'walang internet' (no-internet) descriptor when mentioning the paper master at [01:02–01:05].",
+        "Simplification of the statistical metrics (stating '20% tungong 5%' rather than detailing baseline/post rates of 20/100 vs. 5/100 or comparing absolute percentage points to relative reduction)."
+      ]
+    },
+    {
+      "id": "read-resources-monitor-check-en",
+      "source_sha256": "e362a5cb1dd8ed9290f03af423cc968066856340f1669650696ddeb007931fa0",
+      "assessment_sha256": "eeaaffefb2bfc0d7c947a4857591f53078826dfe83a371d860a5a8c06423f42d",
+      "reported_delivery": {
+        "voice": "Consistent solo female voice throughout.",
+        "pace": "Deliberate, unhurried educational pace with natural pauses between sentences.",
+        "audibility": "Clear and intelligible throughout without background interference or clipping.",
+        "content_fidelity_checks": {
+          "reprint_metrics": "The audio states 'the 20% to 5% reprint improvement' (~00:46–00:48); it does not state '20/100 versus 5/100' or delineate '15 percentage points versus 75% relative reprint reduction'.",
+          "cost_savings_and_causation": "Faithfully delivered; clearly notes 'Charlaine withholds a success or savings claim' (~00:41–00:44) and that bills, prices, and cancellation reasons are unconfirmed.",
+          "workload_and_quality_evidence": "Faithfully delivered; explicitly notes missing workload, quality, and cost evidence (~00:49–00:53) and unconfirmed quality of services delivered (~00:18–00:22).",
+          "pending_permission": "Not mentioned in the spoken narration.",
+          "paper_master_description": "Delivered as 'retaining the controlled approved paper master' (~00:55–00:57); 'no-internet' is not spoken.",
+          "canceled_services_context": "Faithfully delivered; states 'paper use halved because half the sessions were canceled' (~00:06–00:09)."
+        }
+      },
+      "pronunciation_concerns": {
+        "Charlaine": "Pronounced clearly as /ʃɑːrˈleɪn/ (Shar-layn) at ~00:02 and ~00:41 with standard Philippine/international English phonology.",
+        "BHW": "The acronym 'BHW' does not appear in this audio clip."
+      },
+      "other_concerns": [
+        "Omission of metric nuances: '20/100 versus 5/100', '15 percentage points versus 75% relative reprint reduction', and 'no-internet' qualification were omitted or simplified to percentages/controlled paper master in the recording.",
+        "'Pending permission' is absent from this segment."
+      ]
+    },
+    {
+      "id": "story-fil",
+      "source_sha256": "28f1f3582498b0cd3aee2af04a79abb8c19c47f18a770c1da144cc45c0e6b1e4",
+      "assessment_sha256": "0b63a7f30ac29223664e42f66d6d55d0fefcd3a5da2892ac5ee2cfa2c85b8cde",
+      "reported_delivery": {
+        "audible_throughout": true,
+        "consistent_female_voice": true,
+        "pace": "Deliberate, steady, and clear with distinct pauses between conceptual clauses.",
+        "twenty_vs_five_per_hundred": "Faithfully delivered as 'Reprint sa bawat isang daang pahina: dalawampu noon, lima ngayon' (~00:12–00:17).",
+        "fifteen_pp_vs_seventy_five_pct_relative": "Faithfully delivered as 'Bawas na 15 percentage points. Ang 75% relative reprint reduction...' (~00:18–00:24).",
+        "no_proven_savings_or_causation": "Faithfully preserved as '...ay hindi cost savings o patunay ng sanhi' (~00:24–00:28), 'Huwag hulaan ang rate o savings' (~00:46–00:48), and 'Walang success o savings claim' (~01:20–01:23).",
+        "missing_workload_quality_evidence": "Faithfully delivered as 'Reprints at kalidad, hindi pa alam' (~00:43–00:46) and 'Ihiwalay ang reprints sa kulang na workload, kalidad, at gastos' (~01:13–01:18).",
+        "pending_permission": "Faithfully delivered as 'Pending ang pahintulot, hindi muna sisimulan' (~00:08–00:11).",
+        "no_internet_controlled_paper_master": "Faithfully delivered as 'Walang internet ang kasama. Ipanukala ang kontroladong aprubadong paper master...' (~00:28–00:34).",
+        "canceled_services_resolution": "Faithfully delivered as 'Nakansela ang kalahati ng sessions, kaya kalahati ang papel, hindi patunay ng improvement...' (~01:07–01:13)."
+      },
+      "pronunciation_concerns": [
+        {
+          "term": "Charlaine",
+          "timestamp": "00:00 - 00:02",
+          "observation": "Pronounced as 'Charlene' (/ʃɑːrˈliːn/ or 'Shar-lin') rather than an anglicized/French 'Charlaine' (/ʃɑːrˈleɪn/)."
+        },
+        {
+          "term": "BHW",
+          "timestamp": "N/A",
+          "observation": "The term/acronym 'BHW' is completely omitted from the audio recording."
+        }
+      ],
+      "other_concerns": [
+        {
+          "category": "negation_and_qualification",
+          "observation": "No unintended inversions, dropped negations, or weakened qualifications were detected. Critical qualifiers ('hindi', 'walang', 'huwag', 'pending') were consistently articulated."
+        }
+      ]
+    },
+    {
+      "id": "story-en",
+      "source_sha256": "cf1bf625e4ba45a1ba3e295d346f470202bf357fdf4cd40714abc78274c7a9bf",
+      "assessment_sha256": "ae64ca51e25f42f1ae0176149dcbb73dbd283e4def911f08ecb3c99ae44012ea",
+      "reported_delivery": {
+        "consistent_female_voice": true,
+        "pace": "Deliberate, steady, and measured with clear pauses between short instructional statements.",
+        "faithful_delivery_check": {
+          "20_per_100_vs_5_per_100": "Delivered accurately at [00:11 - 00:16] ('Per 100 printed pages, 20 wrong-version reprints before, five after').",
+          "15_percentage_points_vs_75_percent_reduction": "Delivered accurately at [00:17 - 00:21] ('15 percentage points lower. The 75% relative reprint reduction...').",
+          "no_proven_cost_savings_or_causation": "Faithfully stated at [00:21 - 00:24] ('proves neither cost savings nor cause') and reinforced at [01:15 - 01:18] ('without claiming success or savings').",
+          "missing_workload_quality_evidence": "Faithfully delivered at [00:38 - 00:43] ('Reprint and quality data are missing. Do not guess rates or savings.') and [01:09 - 01:13] ('Separate reprints from missing workload, quality, and costs.').",
+          "pending_permission": "Faithfully delivered at [00:08 - 00:11] ('Permission is pending. She does not start.').",
+          "no_internet_controlled_paper_master": "Faithfully delivered at [00:24 - 00:29] ('No internet? Propose a controlled, approved paper master.').",
+          "corrected_ending_after_canceled_services": "Faithfully delivered at [01:03 - 01:18] ('Half the sessions were canceled, halving paper use. Improvement is not established... without claiming success or savings.')."
+        },
+        "negation_and_qualification_integrity": "All negative and qualifying statements ('pending', 'does not start', 'neither... nor', 'has not been established', 'missing', 'Do not guess', 'not trainer observation', 'Improvement is not established', 'without claiming') are preserved intact without altered meaning."
+      },
+      "pronunciation_concerns": {
+        "Charlaine": "Pronounced clearly as /ʃɑːrˈleɪn/ (or /ʃɑːrˈliːn/) at [00:00 - 00:01] in standard Philippine English phonology without distortion.",
+        "BHW": "The acronym 'BHW' is not present or spoken anywhere in this audio recording."
+      },
+      "other_concerns": [
+        {
+          "timestamp": "00:48 - 00:49",
+          "note": "Audible utterance sounds like 'stock gap contact', which may be intended as 'stockout contact' or 'stock-gap contact' depending on the underlying source script."
+        },
+        {
+          "timestamp": "00:50 - 00:51",
+          "note": "Slight filler/hesitation sound ('uh') heard immediately preceding 'confirm unknown fields'."
+        }
+      ]
+    }
+  ],
+  "focused_findings": [
+    {
+      "id": "read-check-fil",
+      "kind": "name",
+      "source_sha256": "dcb5875b357be05972a21120764fc42838decd7b9d4377bf1dc79fb684a7e85b",
+      "excerpt_sha256": "559a25d2d6df0fe80b3f84f4b27215ffa952e00f1424eed4aa7ab133e54e2f15",
+      "assessment_sha256": "95c133a02d593c4d58502429d25b3d38303d22c7bd2c988036d12cb177f8293a",
+      "reported_pronunciation": "Pronounced clearly around 00:02 - 00:03 as 'Shar-leyn'.",
+      "reported_possible_defects": {
+        "clipped_words": "None detected; word boundaries remain intact.",
+        "unexpected_voice_changes": "None observed."
+      },
+      "uncertainty": "Low; acoustic signals are clear and unambiguous throughout."
+    },
+    {
+      "id": "read-check-fil",
+      "kind": "body",
+      "source_sha256": "dcb5875b357be05972a21120764fc42838decd7b9d4377bf1dc79fb684a7e85b",
+      "excerpt_sha256": "559a25d2d6df0fe80b3f84f4b27215ffa952e00f1424eed4aa7ab133e54e2f15",
+      "assessment_sha256": "1092a621127303645876ef04c7096f4da916401cb4c437b3fdc18d896c999056",
+      "reported_pronunciation": "Pronounced phonetically as 'Shar-leyn' around 00:02, standard and intelligible.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low"
+    },
+    {
+      "id": "read-check-fil",
+      "kind": "critical",
+      "source_sha256": "dcb5875b357be05972a21120764fc42838decd7b9d4377bf1dc79fb684a7e85b",
+      "excerpt_sha256": "5d8e0b0ed9deb845f30ce99406e24b587142b3e07c84b4ca65e47baeadba44ca",
+      "assessment_sha256": "15da9b7be30eacfa0ae59ea8754be75474dd1de0d6b1df2e7174f063ed0ddb43",
+      "reported_pronunciation": "Articulated as 'Shar-leyn' around 00:03 - 00:05 without phonemic distortion.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low."
+    },
+    {
+      "id": "read-check-fil",
+      "kind": "ending",
+      "source_sha256": "dcb5875b357be05972a21120764fc42838decd7b9d4377bf1dc79fb684a7e85b",
+      "excerpt_sha256": "2e94d63a43d4276567419b97520a3b1a17cf24d378cc2e04036b7a0558e04c5f",
+      "assessment_sha256": "b0a99b038f4225eca0b33d5f31aeab3f1981c320eb70beb86d06b09f51090ba6",
+      "reported_pronunciation": "Pronounced phonetically as 'Shar-leyn' without notable distortion.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; all speech segments are distinct with clear boundaries and minimal ambient interference."
+    },
+    {
+      "id": "read-communicate-fil",
+      "kind": "name",
+      "source_sha256": "1687b41cedd30f1f1a6c7bcfc8b600e69a2607fa880201e53ec19492528e1a49",
+      "excerpt_sha256": "e06890aa52418e53a8e08f1284468c12c1147037d7630822b5218b8088702a38",
+      "assessment_sha256": "e5b1f7f0ca50afc22da8c3e9568e612a43210be7e7c5cff954a630ca98a1066c",
+      "reported_pronunciation": "Pronounced phonetically as 'Shar-leen' [ʃarˈliːn] around 00:00.8–00:01.4.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; audio is clear with unambiguous word boundaries."
+    },
+    {
+      "id": "read-communicate-fil",
+      "kind": "body",
+      "source_sha256": "1687b41cedd30f1f1a6c7bcfc8b600e69a2607fa880201e53ec19492528e1a49",
+      "excerpt_sha256": "e06890aa52418e53a8e08f1284468c12c1147037d7630822b5218b8088702a38",
+      "assessment_sha256": "ef4172313099732853950e642598a600e9c5fba39ba51e3c47b21d41071b66d8",
+      "reported_pronunciation": "The name 'Charlaine' is pronounced clearly around 00:00 - 00:01 with expected Filipino-English phonology.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; audio is clear with standard articulation."
+    },
+    {
+      "id": "read-communicate-fil",
+      "kind": "critical",
+      "source_sha256": "1687b41cedd30f1f1a6c7bcfc8b600e69a2607fa880201e53ec19492528e1a49",
+      "excerpt_sha256": "ad31733a61ad86d3bfa0d1b2bd4cbc92063b7e10bbab6487c5c04848f2bf9e49",
+      "assessment_sha256": "a288196346b6fc3b7738f68075f4d84c044aa72376d946692a26edbaffc7923d",
+      "reported_pronunciation": "Not applicable; name does not appear in this segment.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low"
+    },
+    {
+      "id": "read-communicate-fil",
+      "kind": "ending",
+      "source_sha256": "1687b41cedd30f1f1a6c7bcfc8b600e69a2607fa880201e53ec19492528e1a49",
+      "excerpt_sha256": "b121f2dc90d589c9c356ec3a89f2c0a2be633830f8c9b3d0f796ffd3dab59459",
+      "assessment_sha256": "7cc2a51b384b86abc34c3ad3fb9c1936da10d38b80a923fe0d8b30f3450f5f4d",
+      "reported_pronunciation": "Not present in the excerpt.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; transcript and phrasing are clear throughout."
+    },
+    {
+      "id": "read-compare-fil",
+      "kind": "name",
+      "source_sha256": "510935433b5017381351849db853a29eaa7e8c23b1875ef6ef1f0c11d9dc9cbb",
+      "excerpt_sha256": "dea7c65b17e0236c7a3f627a99c81b55fc176504e1bdb01d3c66a6903a56fc4d",
+      "assessment_sha256": "bd2695c7c80a6e1bd3e6b51c47c34095ddcbb5cb17e552ae2a8b9830f48099b2",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ ('Shar-layn') around 00:00 - 00:01.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; audio is clear with minimal background interference."
+    },
+    {
+      "id": "read-compare-fil",
+      "kind": "body",
+      "source_sha256": "510935433b5017381351849db853a29eaa7e8c23b1875ef6ef1f0c11d9dc9cbb",
+      "excerpt_sha256": "dea7c65b17e0236c7a3f627a99c81b55fc176504e1bdb01d3c66a6903a56fc4d",
+      "assessment_sha256": "fdb5c5475ac362279c4f667b32f4911fcf8d97af4a6796723e2ba9ffec6f6b50",
+      "reported_pronunciation": "Pronounced distinctly as 'Shar-leyn' between 00:00.60 and 00:01.30.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; audio is clear with minimal background noise and unambiguous pronunciation."
+    },
+    {
+      "id": "read-compare-fil",
+      "kind": "critical",
+      "source_sha256": "510935433b5017381351849db853a29eaa7e8c23b1875ef6ef1f0c11d9dc9cbb",
+      "excerpt_sha256": "2a9b896eb0cd2c0f8aba398ad28e31b7c2891913e5edbe9cce4466b50105b623",
+      "assessment_sha256": "54841b31f11bf286861ba3746156471cecee4c184a163d792b585ed351fc3ce2",
+      "reported_pronunciation": null,
+      "reported_possible_defects": [
+        {
+          "timestamp": "00:05.5 - 00:06.2",
+          "type": "unexpected voice change",
+          "description": "Noticeable speaker timbre/pitch switch between the context sentence and calculation."
+        }
+      ],
+      "uncertainty": "Low; audio is clear with high intelligibility throughout."
+    },
+    {
+      "id": "read-compare-fil",
+      "kind": "ending",
+      "source_sha256": "510935433b5017381351849db853a29eaa7e8c23b1875ef6ef1f0c11d9dc9cbb",
+      "excerpt_sha256": "54241dc59054d7d014d725b5bc9023501a2bbf625589371b6348144356e8a0e2",
+      "assessment_sha256": "2c5e9893e86bc30f21b67aba465c856e39bff1019d86c4ca46cb8d086b541190",
+      "reported_pronunciation": "The name 'Charlaine' is not present in the spoken audio.",
+      "reported_possible_defects": {
+        "clipped_words": "None detected.",
+        "voice_changes": "None; voice remains consistent throughout.",
+        "unmentioned_prompts": "Topics regarding reprints, costs, and pending permissions were not verbalized in this segment."
+      },
+      "uncertainty": {
+        "overall_confidence_score": 4,
+        "notes": "Low transcription uncertainty; minor semantic check on untracked prompt keywords not present in audio."
+      }
+    },
+    {
+      "id": "read-handover-fil",
+      "kind": "name",
+      "source_sha256": "a824d122c9e63da2570e2dbe7f3c8cae060627055d2667c1262cf33473aa2e54",
+      "excerpt_sha256": "8ea660b4952a9dc32fee73f522f7aac0f3510314a55b1bd633d07b01be1f1d1c",
+      "assessment_sha256": "4f32b962f62f942e08446fa4fb357669b17f60d53d2ca6611407a9e224f13829",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ around 00:00.8 - 00:01.4 without distortion.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; audio is clear with standard pronunciation throughout."
+    },
+    {
+      "id": "read-handover-fil",
+      "kind": "body",
+      "source_sha256": "a824d122c9e63da2570e2dbe7f3c8cae060627055d2667c1262cf33473aa2e54",
+      "excerpt_sha256": "8ea660b4952a9dc32fee73f522f7aac0f3510314a55b1bd633d07b01be1f1d1c",
+      "assessment_sha256": "fd9740cc73642a58d7067db0bae3a6dc8b2c433b5dc7e63e599fcc5f06c10f30",
+      "reported_pronunciation": "Pronounced naturally as /ʃarˈliːn/ or /ʃarˈleɪn/ at 00:00.8 - 00:01.4.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; all speech segments are clearly audible and boundaries are distinct."
+    },
+    {
+      "id": "read-handover-fil",
+      "kind": "critical",
+      "source_sha256": "a824d122c9e63da2570e2dbe7f3c8cae060627055d2667c1262cf33473aa2e54",
+      "excerpt_sha256": "eb5c7e5a01093fa6e4a4b0908c2e3988033561cc9b47b9caa7bbf09dc033131f",
+      "assessment_sha256": "bf5f0f4bddc25426fae8782ef3a0813787ee326c33698c6084d0a30a9a9645bf",
+      "reported_pronunciation": "N/A; the name Charlaine does not appear in the excerpt.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; audio is clear with standard synthetic pronunciation and minimal noise."
+    },
+    {
+      "id": "read-handover-fil",
+      "kind": "ending",
+      "source_sha256": "a824d122c9e63da2570e2dbe7f3c8cae060627055d2667c1262cf33473aa2e54",
+      "excerpt_sha256": "c9de140f88067a362e70feeb0a85a2d5e9c0691ad282ec063c2cb3dcbfe74f5b",
+      "assessment_sha256": "64a079308f65adf21e3008b0d2fa74330523f3f661060bf7f210828a11dc9aa8",
+      "reported_pronunciation": "No occurrence of the name Charlaine.",
+      "reported_possible_defects": [],
+      "uncertainty": "Minimal; audio and diction are clear."
+    },
+    {
+      "id": "read-practice-fil",
+      "kind": "name",
+      "source_sha256": "4c9b0c072a22650ce19497be055ec903d093cc3daefa43cadc7da911d91df2ea",
+      "excerpt_sha256": "eb92036a9b888ed77c8ca17f1c459ad7edb0ebf802af7f3be69dc5c1d20c7ded",
+      "assessment_sha256": "d239396d8e65cd2b45d13722f2f1b23a43501f7dbcef3bbb307fd12467249619",
+      "reported_pronunciation": "Pronounced distinctly as /ʃɑːrˈleɪn/ (00:00 - 00:01).",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; all lexical tokens are clear with minimal background noise."
+    },
+    {
+      "id": "read-practice-fil",
+      "kind": "body",
+      "source_sha256": "4c9b0c072a22650ce19497be055ec903d093cc3daefa43cadc7da911d91df2ea",
+      "excerpt_sha256": "eb92036a9b888ed77c8ca17f1c459ad7edb0ebf802af7f3be69dc5c1d20c7ded",
+      "assessment_sha256": "84d9cef08185180e6a06977edb876f952f60df5544dc49e94d6222bd222e5b73",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ with standard Tagalog phonology adaptation (00:00 - 00:02).",
+      "reported_possible_defects": [],
+      "uncertainty": "Low to moderate confidence; acoustics are clear with minimal ambiguity."
+    },
+    {
+      "id": "read-practice-fil",
+      "kind": "critical",
+      "source_sha256": "4c9b0c072a22650ce19497be055ec903d093cc3daefa43cadc7da911d91df2ea",
+      "excerpt_sha256": "f67da16e92ef861b8142b9acd757db21d524fe5d8f2ab79fc3e06c6263e12209",
+      "assessment_sha256": "efb66233b03e64633e651df93f9d010edd4cef327748ce7d1e21ebd68a660737",
+      "reported_pronunciation": "The term 'Charlaine' does not appear in the audible speech.",
+      "reported_possible_defects": [
+        {
+          "timestamp": "00:04.5 - 00:05.2",
+          "type": "unexpected_voice_change",
+          "description": "Shift from female to male speaker midway through the segment."
+        }
+      ],
+      "uncertainty": "Low; all spoken words are clear and intelligible."
+    },
+    {
+      "id": "read-practice-fil",
+      "kind": "ending",
+      "source_sha256": "4c9b0c072a22650ce19497be055ec903d093cc3daefa43cadc7da911d91df2ea",
+      "excerpt_sha256": "58617d91f51375d1e3a338655bd639105aab9d776eda1a7eeaa7de6a9f9b683f",
+      "assessment_sha256": "59e5e8e7e3cf296ab8da71e7c7ddb916d5cbe2fac6f8de0990e3d0dd3159f6f4",
+      "reported_pronunciation": "N/A; the name does not occur in this clip.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; the synthetic speech is clear with minimal background interference."
+    },
+    {
+      "id": "read-trial-fil",
+      "kind": "name",
+      "source_sha256": "a4c4c55b50c5a17c858ff0525051c591758c60834281b80dcac962f11f0ea223",
+      "excerpt_sha256": "d2a207e843f3b80f47997f225a4abbcf61215e9a53e7cf394e1c98b5bbe2e3a0",
+      "assessment_sha256": "2bcd36a65e347d712a54f6048c140785d2a2f56700bed6a1e948664efd4fb763",
+      "reported_pronunciation": "Pronounced clearly as 'Shar-leyn' (/ʃɑːrˈleɪn/).",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; all tokens are clearly enunciated."
+    },
+    {
+      "id": "read-trial-fil",
+      "kind": "body",
+      "source_sha256": "a4c4c55b50c5a17c858ff0525051c591758c60834281b80dcac962f11f0ea223",
+      "excerpt_sha256": "d2a207e843f3b80f47997f225a4abbcf61215e9a53e7cf394e1c98b5bbe2e3a0",
+      "assessment_sha256": "954a1ca9b1970cfe32d693ed899e4651f6d5ee8c08c9e34a610f3c66864de3fe",
+      "reported_pronunciation": "Pronounced clearly as 'Shar-leyn' without phonetic distortion at 00:00 - 00:01.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; the brief sentence is straightforward and completely articulated."
+    },
+    {
+      "id": "read-trial-fil",
+      "kind": "critical",
+      "source_sha256": "a4c4c55b50c5a17c858ff0525051c591758c60834281b80dcac962f11f0ea223",
+      "excerpt_sha256": "1d176c022b0ab130788108459e4428ee5313afdec1043db3d39c341bdeb1c8ba",
+      "assessment_sha256": "b4d937f17670dcfacbc2534d169c99e85706c3c93c559b4bc4768ac3ebff2198",
+      "reported_pronunciation": "The name Charlaine does not appear in this audio clip.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; all lexical tokens are clear and audible with no acoustic distortion."
+    },
+    {
+      "id": "read-trial-fil",
+      "kind": "ending",
+      "source_sha256": "a4c4c55b50c5a17c858ff0525051c591758c60834281b80dcac962f11f0ea223",
+      "excerpt_sha256": "9ab1d85cbceaf6f0e100580543020a711a00932931c8a850c5c5382ee6e1d992",
+      "assessment_sha256": "ba8e2b3fe53c013cab8f54d07254dad5e8553e6931dc48f952c613e9442f2a71",
+      "reported_pronunciation": "N/A; the name does not occur in this clip.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; audio is clear with no prominent acoustic or lexical ambiguities."
+    },
+    {
+      "id": "read-workload-fil",
+      "kind": "name",
+      "source_sha256": "a6a6f4a4172feb911fc4e881073bb35be65a19a3e5a9226a03204d3545eb98d1",
+      "excerpt_sha256": "72a09cf25db007d677d75b100f5dc97e626ea1540b0a7763cca802695a7ad9dd",
+      "assessment_sha256": "b157314c9e248f2bbdd6831fd519f79eea44bc5a2eef59ede528fc12e9bb1d14",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ without major distortion (00:00 - 00:02).",
+      "reported_possible_defects": {
+        "clipped_words": "None detected; word boundaries and final syllables remain intact.",
+        "voice_changes": "None observed; synthetic/natural vocal delivery stays uniform throughout."
+      },
+      "uncertainty": "Low; acoustic signals and phonemes are distinct with negligible background interference."
+    },
+    {
+      "id": "read-workload-fil",
+      "kind": "body",
+      "source_sha256": "a6a6f4a4172feb911fc4e881073bb35be65a19a3e5a9226a03204d3545eb98d1",
+      "excerpt_sha256": "72a09cf25db007d677d75b100f5dc97e626ea1540b0a7763cca802695a7ad9dd",
+      "assessment_sha256": "49ae0064cfd8da164c6a074025a0a9358a797f775658112df1605a882013e5c9",
+      "reported_pronunciation": "Pronounced phonetically as 'Shar-leyn' cleanly at 00:00 - 00:01.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; all lexical items and speech boundaries are unambiguous."
+    },
+    {
+      "id": "read-workload-fil",
+      "kind": "critical",
+      "source_sha256": "a6a6f4a4172feb911fc4e881073bb35be65a19a3e5a9226a03204d3545eb98d1",
+      "excerpt_sha256": "f9960a42a24fa44976cf04553d4c6622e2af39aa6b35b43d8cfb7959a60996d5",
+      "assessment_sha256": "3a9c15c0d66dcffa6d2dd79bcfb1fb66f0943e3cdfb92bd642c7a1a0970c5094",
+      "reported_pronunciation": "Not applicable; name does not appear in the audio.",
+      "reported_possible_defects": {
+        "clipped_words": "None detected.",
+        "unexpected_voice_changes": "Pacing and synthetic prosody remain consistent throughout.",
+        "audio_artifacts": "Negligible background noise; clear speech boundary."
+      },
+      "uncertainty": "Low; all speech segments are intelligible and boundaries align clearly."
+    },
+    {
+      "id": "read-workload-fil",
+      "kind": "ending",
+      "source_sha256": "a6a6f4a4172feb911fc4e881073bb35be65a19a3e5a9226a03204d3545eb98d1",
+      "excerpt_sha256": "f44aef369443c43d3cd60cb4fa812cd28fe62c16155d24d8c7e7c8e09711d386",
+      "assessment_sha256": "a490c0c75b5b2f40f91a781850cca2c1576b673b0a2a8353d3330ba032e60264",
+      "reported_pronunciation": "N/A; the name 'Charlaine' does not appear in the audio.",
+      "reported_possible_defects": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:11 - 00:12",
+          "description": "Mid-segment speaker transition from male voice to female voice."
+        }
+      ],
+      "uncertainty": "Low; audio is clear with minimal background noise and fully intelligible speech."
+    },
+    {
+      "id": "shipped-story-fil",
+      "kind": "name",
+      "source_sha256": "c7a336043359245a1d4c27096690eb75aaca155e01b6e8e68181e5a003077bd7",
+      "excerpt_sha256": "56c55e33314073dad065b43ec75a30778326153efb6808fbcf06e5892ae49973",
+      "assessment_sha256": "f8803b7f42eda19e11af1937c63b631fe05ed1432cd07e9b99db57dbc9737e6b",
+      "reported_pronunciation": "Pronounced phonetically as 'Sharlene' (/ʃɑːrˈliːn/) around 00:00–00:01.",
+      "reported_possible_defects": [
+        {
+          "timestamp": "00:00 - 00:01",
+          "description": "'Katha'ng isip' is pronounced colloquially as 'Katang-isip'."
+        }
+      ],
+      "uncertainty": "Low; audio is clear and fully audible."
+    },
+    {
+      "id": "shipped-story-fil",
+      "kind": "body",
+      "source_sha256": "c7a336043359245a1d4c27096690eb75aaca155e01b6e8e68181e5a003077bd7",
+      "excerpt_sha256": "56c55e33314073dad065b43ec75a30778326153efb6808fbcf06e5892ae49973",
+      "assessment_sha256": "8b2b28666b31da0f0a14dc84216018e1c93c3e4176dd9c2ce237696d80eb3b16",
+      "reported_pronunciation": "Pronounced clearly as 'Shar-lin' at 00:00 - 00:01.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low. The speech is distinct and transcribed with high confidence."
+    },
+    {
+      "id": "shipped-story-fil",
+      "kind": "critical",
+      "source_sha256": "c7a336043359245a1d4c27096690eb75aaca155e01b6e8e68181e5a003077bd7",
+      "excerpt_sha256": "ecbd7cd69ad0ec49f1380cb18c58516e86459e44d7a9f3ce86a6144549fad674",
+      "assessment_sha256": "00dd3aec350dcf4d8fd047c4fa5c91bb3ef241d0d087ce81155f85f90c601540",
+      "reported_pronunciation": "Pronounced clearly as 'Shar-leen' at 00:00 - 00:01.",
+      "reported_possible_defects": [],
+      "uncertainty": "Minimal; audio is clean with fully legible standard phrasing."
+    },
+    {
+      "id": "shipped-story-fil",
+      "kind": "ending",
+      "source_sha256": "c7a336043359245a1d4c27096690eb75aaca155e01b6e8e68181e5a003077bd7",
+      "excerpt_sha256": "a4be313fe8b293785519abd099016e64262dfc49d8ae7af9605c3080415586bc",
+      "assessment_sha256": "9c7f513a9385fdaf99c143c2c1fa7b1d4d8f6e3e5d22f2655038f6acdc86ea84",
+      "reported_pronunciation": "The name Charlaine does not occur in this clip.",
+      "reported_possible_defects": {
+        "clipped_words": "None detected; word boundaries are intact.",
+        "unexpected_voice_changes": "None; voice timbre remains consistent.",
+        "ending_completeness": "Complete; terminal sentence concludes naturally before the audio boundary at [00:15.5]."
+      },
+      "uncertainty": "Low; all speech tokens are intelligible and clean."
+    },
+    {
+      "id": "read-check-en",
+      "kind": "name",
+      "source_sha256": "e362a5cb1dd8ed9290f03af423cc968066856340f1669650696ddeb007931fa0",
+      "excerpt_sha256": "d32b77512fc0cf8c5f7a127b2074877f7af8916fa5f6bcd8bd830d5af0fa8290",
+      "assessment_sha256": "185f385472f37e969ce1b4d0cc9c407fd604e8b898d1b13f2131dbaeab324540",
+      "reported_pronunciation": "The name 'Charlaine's' (00:00.1 - 00:01.0) is pronounced clearly with an initial postalveolar fricative (/ʃɑːrˈleɪnz/).",
+      "reported_possible_defects": [],
+      "uncertainty": "Low. The audio quality is clean, and the transcript matches the acoustic signal with high clarity."
+    },
+    {
+      "id": "read-check-en",
+      "kind": "body",
+      "source_sha256": "e362a5cb1dd8ed9290f03af423cc968066856340f1669650696ddeb007931fa0",
+      "excerpt_sha256": "d32b77512fc0cf8c5f7a127b2074877f7af8916fa5f6bcd8bd830d5af0fa8290",
+      "assessment_sha256": "9e6c374bcc5b49d33e512c75f3292fbdc056fcc3f85d45c7f12022df6d2181ba",
+      "reported_pronunciation": "Pronounced clearly as 'Shar-layne's' (/ʃɑːrˈleɪnz/) from 00:00.18 to 00:01.12.",
+      "reported_possible_defects": [],
+      "uncertainty": "None. The recording is clear, clean, and unambiguous."
+    },
+    {
+      "id": "read-check-en",
+      "kind": "critical",
+      "source_sha256": "e362a5cb1dd8ed9290f03af423cc968066856340f1669650696ddeb007931fa0",
+      "excerpt_sha256": "c65019df50a6549db9ed78492396ccd3ad0532073f8b9f04d1a8bd64f81548d7",
+      "assessment_sha256": "42bcdcd5e42ecba0bab3ac55acaaf784fced9ccd4848c0133888e25e19a0c616",
+      "reported_pronunciation": null,
+      "reported_possible_defects": [
+        {
+          "timestamp": "00:09",
+          "issue": "Unexpected voice/speaker change",
+          "description": "Noticeable transition to a different speaker or recording setting for the prompt instructions."
+        }
+      ],
+      "uncertainty": "None; all audible speech is distinct, complete, and unclipped."
+    },
+    {
+      "id": "read-check-en",
+      "kind": "ending",
+      "source_sha256": "e362a5cb1dd8ed9290f03af423cc968066856340f1669650696ddeb007931fa0",
+      "excerpt_sha256": "bef5a3bc7cd0c0cf94a416d05d5b247b5e153ff09d6b06321938ea6a3268857c",
+      "assessment_sha256": "a7ccb3166c4df43d9a80605f58be49df1aa04d8bea10837be8054a3ee8085ed9",
+      "reported_pronunciation": null,
+      "reported_possible_defects": [],
+      "uncertainty": "None. The audio is studio-clean with unambiguous phonation throughout."
+    },
+    {
+      "id": "read-communicate-en",
+      "kind": "name",
+      "source_sha256": "36745f565384c54a6d11fd2eeabef8f50cbf1269d9a8c65438f6485a851e4ba9",
+      "excerpt_sha256": "b8a9204b512ae2d7a82b4fa6f1e9d6e329c033e0fcf801bdd9882cc85b740da5",
+      "assessment_sha256": "cc29391a684bc1b4c653e0bbddc811bcd68009b5bf7d27e5d97c46cfea40b50a",
+      "reported_pronunciation": "Pronounced phonetically close to /ʃɑːrˈleɪn/ ('Shar-layn') between 00:00.00 and 00:00.65.",
+      "reported_possible_defects": [],
+      "uncertainty": "Minimal; the phonetic realization of 'Charlaine' leans slightly toward 'Charlene' (/ʃɑːrˈliːn/) depending on regional accent interpretation, but matches standard Philippine English realization of the spelling."
+    },
+    {
+      "id": "read-communicate-en",
+      "kind": "body",
+      "source_sha256": "36745f565384c54a6d11fd2eeabef8f50cbf1269d9a8c65438f6485a851e4ba9",
+      "excerpt_sha256": "b8a9204b512ae2d7a82b4fa6f1e9d6e329c033e0fcf801bdd9882cc85b740da5",
+      "assessment_sha256": "4735bf382b62dcce40708a21d4bd2f0646dc77b4e8964c2a6aa09c10387cdfa7",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ (Shar-layn) between 00:00.00 and 00:00.75.",
+      "reported_possible_defects": [],
+      "uncertainty": "None."
+    },
+    {
+      "id": "read-communicate-en",
+      "kind": "critical",
+      "source_sha256": "36745f565384c54a6d11fd2eeabef8f50cbf1269d9a8c65438f6485a851e4ba9",
+      "excerpt_sha256": "2819307c695bbae02f2a37b604c8d415e6097fba6dfe0b35afb033b83a34d298",
+      "assessment_sha256": "c1e12323fcc8de93a16ad7f530f616ebf66803c8efb5559531e909ed2d1c79fa",
+      "reported_pronunciation": "Not applicable; the name Charlaine does not occur in this excerpt.",
+      "reported_possible_defects": [],
+      "uncertainty": "None; audio quality is high and speech is unambiguous."
+    },
+    {
+      "id": "read-communicate-en",
+      "kind": "ending",
+      "source_sha256": "36745f565384c54a6d11fd2eeabef8f50cbf1269d9a8c65438f6485a851e4ba9",
+      "excerpt_sha256": "7caf799aedb38303510276822b50e831cb1b0eb7373531dc0b28d4e969625f8c",
+      "assessment_sha256": "e9d22af39979524c916ea415e147e6dcfeab85697cd5d844e82d602badd62752",
+      "reported_pronunciation": null,
+      "reported_possible_defects": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:09.8",
+          "description": "Shift in speaker identity/voice profile between the instructions and the final sentence."
+        }
+      ],
+      "uncertainty": "None. All spoken words and acoustic events are unambiguous."
+    },
+    {
+      "id": "read-compare-en",
+      "kind": "name",
+      "source_sha256": "87bcc9132ab649ec47fe08010514f1a2eebc4a251c1fb9072e7bf980c25d5ccc",
+      "excerpt_sha256": "112ac43217b3b774f53ebf9c13fbc6a185843c7f65166f3642f5de019dddccde",
+      "assessment_sha256": "d6f67eb43f2f965e7df142c2da6ce4cb3507c6ce26da1d3c75f649a109dbb2a1",
+      "reported_pronunciation": "Pronounced clearly as 'Charlaine' (/ʃɑːrˈleɪn/) by the initial speaker between 00:00.00 and 00:00.75.",
+      "reported_possible_defects": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:02.50 - 00:03.00",
+          "description": "Shift from a female narrator to a male voice mid-excerpt without an explicit conversational context or narrative transition."
+        }
+      ],
+      "uncertainty": "Low; all words are articulated clearly with high intelligibility."
+    },
+    {
+      "id": "read-compare-en",
+      "kind": "body",
+      "source_sha256": "87bcc9132ab649ec47fe08010514f1a2eebc4a251c1fb9072e7bf980c25d5ccc",
+      "excerpt_sha256": "112ac43217b3b774f53ebf9c13fbc6a185843c7f65166f3642f5de019dddccde",
+      "assessment_sha256": "11d637b1ea1b3c919048799382e87689bac4fc47ff150f53721ed3c99a1caca8",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ ('Shar-lane') at 00:00.06 - 00:00.65.",
+      "reported_possible_defects": [],
+      "uncertainty": "None. The audio is clear and fully intelligible."
+    },
+    {
+      "id": "read-compare-en",
+      "kind": "critical",
+      "source_sha256": "87bcc9132ab649ec47fe08010514f1a2eebc4a251c1fb9072e7bf980c25d5ccc",
+      "excerpt_sha256": "e7340fd59c911584a147bd69068892f4c2394ae56d2b13f7dfb00ec56ea80819",
+      "assessment_sha256": "7a703c78fad4390e494162dfb1337c8a068bfa2068991888b76a2f95bd0d014c",
+      "reported_pronunciation": "The name Charlaine does not appear in this excerpt.",
+      "reported_possible_defects": [],
+      "uncertainty": "None; words and mathematical operations are unambiguous."
+    },
+    {
+      "id": "read-compare-en",
+      "kind": "ending",
+      "source_sha256": "87bcc9132ab649ec47fe08010514f1a2eebc4a251c1fb9072e7bf980c25d5ccc",
+      "excerpt_sha256": "a06fc0fdabbce220068ba09fdf0ec9714f7a37d4e7bfb6ab75e683d5298b1605",
+      "assessment_sha256": "9876897ee4657fcbbb3148f2f1f31cb020b98426a1491957515f6893bde87cda",
+      "reported_pronunciation": "The name 'Charlaine' does not appear in the spoken excerpt.",
+      "reported_possible_defects": [],
+      "uncertainty": "None detected; all words are clearly audible and intelligible."
+    },
+    {
+      "id": "read-handover-en",
+      "kind": "name",
+      "source_sha256": "7cfcfd0a8dbd146b22cfa84a67131ebf7e929dd9209d3766531ddf485bbedb2c",
+      "excerpt_sha256": "5f98b14b65ce6bcb8deefc2ab7187db7a5b34ea93a8a411dbf8df5771156a7cf",
+      "assessment_sha256": "bda3e7a2c32e7a6741d69538696470bc0a8baaea7a78053a04dd0a95f8dcbe78",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ (shar-LAYN) around 00:00.30 - 00:01.05.",
+      "reported_possible_defects": [],
+      "uncertainty": "None; all words and phonetic contours are distinctly audible."
+    },
+    {
+      "id": "read-handover-en",
+      "kind": "body",
+      "source_sha256": "7cfcfd0a8dbd146b22cfa84a67131ebf7e929dd9209d3766531ddf485bbedb2c",
+      "excerpt_sha256": "5f98b14b65ce6bcb8deefc2ab7187db7a5b34ea93a8a411dbf8df5771156a7cf",
+      "assessment_sha256": "570237b0aee113dda517cf48dcee467e0add279c1948dbe9b592501b57f0fcf7",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ ('shar-LANE') between 00:00.12 and 00:00.80.",
+      "reported_possible_defects": [],
+      "uncertainty": "None."
+    },
+    {
+      "id": "read-handover-en",
+      "kind": "critical",
+      "source_sha256": "7cfcfd0a8dbd146b22cfa84a67131ebf7e929dd9209d3766531ddf485bbedb2c",
+      "excerpt_sha256": "220ee6f5d775dc2234b29b02052c219138a86b40fa818e0122b5077f2178a6d2",
+      "assessment_sha256": "12a6a17903bc2ec818698597519f76367ea8930ad8b60b60bca5c29f5fe37bef",
+      "reported_pronunciation": null,
+      "reported_possible_defects": [
+        {
+          "type": "speaker_inconsistency",
+          "timestamp": "00:02.100 - 00:02.800",
+          "description": "Clear switch between two distinct voices/recording conditions between the first instruction and the subsequent handover checklist."
+        }
+      ],
+      "uncertainty": "Low; all spoken words are clear and clearly articulated."
+    },
+    {
+      "id": "read-handover-en",
+      "kind": "ending",
+      "source_sha256": "7cfcfd0a8dbd146b22cfa84a67131ebf7e929dd9209d3766531ddf485bbedb2c",
+      "excerpt_sha256": "fa11a7f9cbef7e8e574361625a8193807e13918e6020407ac79a7aa332dc4c84",
+      "assessment_sha256": "dd4aca101930d5b6b32efdf5e8d37c02d51b316bfcef606ba2510f6ef0525acf",
+      "reported_pronunciation": "The proper noun 'Charlaine' does not occur in this excerpt.",
+      "reported_possible_defects": [],
+      "uncertainty": "None detected; speech and acoustic features are unambiguous."
+    },
+    {
+      "id": "read-practice-en",
+      "kind": "name",
+      "source_sha256": "f02a287e65b58a0d273f11b829b6230bf3e183dd969a8aaef1ee1b2813739470",
+      "excerpt_sha256": "014a3cf571ffcec019482e938bed1ec279ceef4bff756634856c55a45d10d86f",
+      "assessment_sha256": "3d10228e0710b39e80609829581a696332cad804ec59b13393d0125934138381",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ ('Shar-layne') between 00:00.08 and 00:00.58.",
+      "reported_possible_defects": [],
+      "uncertainty": "None; audio quality and speech clarity are high with no ambiguities."
+    },
+    {
+      "id": "read-practice-en",
+      "kind": "body",
+      "source_sha256": "f02a287e65b58a0d273f11b829b6230bf3e183dd969a8aaef1ee1b2813739470",
+      "excerpt_sha256": "014a3cf571ffcec019482e938bed1ec279ceef4bff756634856c55a45d10d86f",
+      "assessment_sha256": "1d6f6fb12e4448dc73238d3b7bab542b5b57f294a4e36c3bde3b6a0ea6e37ac4",
+      "reported_pronunciation": null,
+      "reported_possible_defects": [],
+      "uncertainty": "None; audio clarity is high and contains no ambiguities."
+    },
+    {
+      "id": "read-practice-en",
+      "kind": "critical",
+      "source_sha256": "f02a287e65b58a0d273f11b829b6230bf3e183dd969a8aaef1ee1b2813739470",
+      "excerpt_sha256": "f57138e6a236d4b5bf059b210a41fc13cc72afe3acae96b076820f5d9a2a49fe",
+      "assessment_sha256": "37f56ff1ce7a4860d82c9bef0504350cddd63db63f6c95d1e2b28396abc222d9",
+      "reported_pronunciation": "The name 'Charlaine' does not appear in this excerpt.",
+      "reported_possible_defects": [],
+      "uncertainty": "None detected; audio is clean and fully intelligible."
+    },
+    {
+      "id": "read-practice-en",
+      "kind": "ending",
+      "source_sha256": "f02a287e65b58a0d273f11b829b6230bf3e183dd969a8aaef1ee1b2813739470",
+      "excerpt_sha256": "2cc20e7aab7e5148d1a9b4b9c48e006b8013985a39dc6d42ef94a38c19c24ae2",
+      "assessment_sha256": "adb29280c67e1f517f99b11a25f4ca632ea3a6d2d6a2d1216147ab0fb754c459",
+      "reported_pronunciation": "The name 'Charlaine' does not appear in the audio.",
+      "reported_possible_defects": [],
+      "uncertainty": "None; audio quality and diction are clean and unambiguous."
+    },
+    {
+      "id": "read-trial-en",
+      "kind": "name",
+      "source_sha256": "de7532390db29806cea1e47647256da14084f188e5c9900d49091e5960d599b0",
+      "excerpt_sha256": "b2c6d9053e1951cf6c2a9bc6e7e5e1af6bc504fae476db0fd9a0279b8d85d984",
+      "assessment_sha256": "fb97fa236340ae7ee9307346e907f29ab23f89e99c3bc93eeeced1e7cfa7956c",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ ('Shar-layne') between 00:00.00 and 00:01.05.",
+      "reported_possible_defects": [],
+      "uncertainty": "None; all words and acronyms ('BHW') are unambiguous and clearly articulated."
+    },
+    {
+      "id": "read-trial-en",
+      "kind": "body",
+      "source_sha256": "de7532390db29806cea1e47647256da14084f188e5c9900d49091e5960d599b0",
+      "excerpt_sha256": "b2c6d9053e1951cf6c2a9bc6e7e5e1af6bc504fae476db0fd9a0279b8d85d984",
+      "assessment_sha256": "ea1bb344039e95c8ed3dada7e48e898d487b6c6aa21bee38ff0485318d30315a",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ ('Shar-layn') at [00:00.00 - 00:00.95].",
+      "reported_possible_defects": [],
+      "uncertainty": "None."
+    },
+    {
+      "id": "read-trial-en",
+      "kind": "critical",
+      "source_sha256": "de7532390db29806cea1e47647256da14084f188e5c9900d49091e5960d599b0",
+      "excerpt_sha256": "2e0f6047b934e97ad84cf9b9a1ba09210e3844570ce58b61e441fa2b3f20d509",
+      "assessment_sha256": "6288c66611bd50c5854f694495cf01315f2144e4761fdb83131903ac203cf588",
+      "reported_pronunciation": "The name 'Charlaine' is not mentioned in this excerpt.",
+      "reported_possible_defects": [],
+      "uncertainty": "None. The audio is clear and unambiguous."
+    },
+    {
+      "id": "read-trial-en",
+      "kind": "ending",
+      "source_sha256": "de7532390db29806cea1e47647256da14084f188e5c9900d49091e5960d599b0",
+      "excerpt_sha256": "a0abddf8efd7e34d5023b8b4bf7adddde6745def2f4f450a6722ec337c5f5838",
+      "assessment_sha256": "912c56c941c4f39b139a2973e698b2053e6d3ff081ddfe957c07ac35ed41d798",
+      "reported_pronunciation": "The name 'Charlaine' does not appear in this excerpt.",
+      "reported_possible_defects": [
+        {
+          "type": "unexpected_voice_change",
+          "timestamp": "00:07.8",
+          "description": "Shift from first voice/synthesizer reading procedural instructions to a softer second voice reading principles."
+        }
+      ],
+      "uncertainty": "Low. The audio quality is high and spoken words are unambiguous."
+    },
+    {
+      "id": "read-workload-en",
+      "kind": "name",
+      "source_sha256": "af78e357f6b5e7c7d4b33442ee323524967177abb79d4736701ca047fcb90720",
+      "excerpt_sha256": "0c6910731b06a6c57be498b74af75ca077a792dd908378cebc6200de3336b1aa",
+      "assessment_sha256": "81d93785456ea086f376d26a36b39fba0297bcd332347f98c46be618a39f311a",
+      "reported_pronunciation": "The name 'Charlaine' is pronounced clearly at 00:00.00–00:00.75 as /ʃɑːrˈleɪn/ (or similar to 'Charlene').",
+      "reported_possible_defects": [],
+      "uncertainty": "None; speech is clear and free of background noise or ambiguity."
+    },
+    {
+      "id": "read-workload-en",
+      "kind": "body",
+      "source_sha256": "af78e357f6b5e7c7d4b33442ee323524967177abb79d4736701ca047fcb90720",
+      "excerpt_sha256": "0c6910731b06a6c57be498b74af75ca077a792dd908378cebc6200de3336b1aa",
+      "assessment_sha256": "c32e6de442c6780b1fbe0ca420e0fe4aa0d2ba4beb7ff97bd8742af495b14644",
+      "reported_pronunciation": "The name 'Charlaine' is pronounced clearly as /ʃɑːrˈleɪn/ (Shar-layn) between 00:00.00 and 00:00.65.",
+      "reported_possible_defects": [],
+      "uncertainty": "None; speech is clear, fully audible, and cleanly bounded."
+    },
+    {
+      "id": "read-workload-en",
+      "kind": "critical",
+      "source_sha256": "af78e357f6b5e7c7d4b33442ee323524967177abb79d4736701ca047fcb90720",
+      "excerpt_sha256": "fb4675a0387d94674ea2680dad51c90f4cee6c842221bc01e5e26991635afc34",
+      "assessment_sha256": "fd8597b6595957c4a152fbd0d05f8f8555f1431d97cbc448aba86087d072dbdd",
+      "reported_pronunciation": "The name 'Charlaine' is not spoken anywhere in this excerpt.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low. The spoken numbers could be transcribed either as words ('twenty-one hundredths and five hundredths') or fraction/decimal notation ('21/100' or '0.21' / '5/100' or '0.05') depending on specific formatting rules."
+    },
+    {
+      "id": "read-workload-en",
+      "kind": "ending",
+      "source_sha256": "af78e357f6b5e7c7d4b33442ee323524967177abb79d4736701ca047fcb90720",
+      "excerpt_sha256": "322e695ad14374f06c9681e195edea3d3732fd040d2c3f9548e8bb573d256c31",
+      "assessment_sha256": "065cca433cbe9da1d815ac543c16307be235a87dd9a63342be89ae4af7461a1a",
+      "reported_pronunciation": "The name 'Charlaine' does not appear in this audio excerpt.",
+      "reported_possible_defects": [
+        {
+          "timestamp": "00:12.3",
+          "type": "voice_discontinuity",
+          "description": "Noticeable timbre/pitch shift between the two sentences indicating a speaker or synthesis profile change."
+        }
+      ],
+      "uncertainty": "None; speech is clear and transcription is verified."
+    },
+    {
+      "id": "shipped-story-en",
+      "kind": "name",
+      "source_sha256": "bd29989db0883f21dff7b0ebcc8bf36cf3db869a46217fde26dea44bc8d84f67",
+      "excerpt_sha256": "36cf75217fed8db917d04c133c4b11016cbf348f38ef9a7b6feac572536e2255",
+      "assessment_sha256": "dd5f68ef66f026a4c4c0b01b0796b36c4f8e8698185ac28b8c09c67290f193bc",
+      "reported_pronunciation": "Pronounced as 'Charlene' (/ʃɑːrˈliːn/) between 00:00.60 and 00:01.10.",
+      "reported_possible_defects": [],
+      "uncertainty": "Low; speech clarity is high with minimal background noise or ambiguity."
+    },
+    {
+      "id": "shipped-story-en",
+      "kind": "body",
+      "source_sha256": "bd29989db0883f21dff7b0ebcc8bf36cf3db869a46217fde26dea44bc8d84f67",
+      "excerpt_sha256": "36cf75217fed8db917d04c133c4b11016cbf348f38ef9a7b6feac572536e2255",
+      "assessment_sha256": "af213f1eb70851e62c609c3d01f4869c0a1b6bbcad62c73ab451403d6a16d19f",
+      "reported_pronunciation": null,
+      "reported_possible_defects": [],
+      "uncertainty": "None; speech is clear, intelligible, and matches the acoustic signal cleanly."
+    },
+    {
+      "id": "shipped-story-en",
+      "kind": "critical",
+      "source_sha256": "bd29989db0883f21dff7b0ebcc8bf36cf3db869a46217fde26dea44bc8d84f67",
+      "excerpt_sha256": "e0fc53ca7af47053762c3206d3b4919e3e3a42c8d34d7b3a2565beecf229540c",
+      "assessment_sha256": "eb4e6dfbf40e368ae2db17a223667fadd9e463c8c01a2b0e671f9a4ba256f9cc",
+      "reported_pronunciation": "Pronounced clearly as /ʃɑːrˈleɪn/ ('Shar-layn') at 00:00–00:01.",
+      "reported_possible_defects": [],
+      "uncertainty": "None detected; speech is fully intelligible and well-enunciated."
+    },
+    {
+      "id": "shipped-story-en",
+      "kind": "ending",
+      "source_sha256": "bd29989db0883f21dff7b0ebcc8bf36cf3db869a46217fde26dea44bc8d84f67",
+      "excerpt_sha256": "6f454b73f972c1ea8e980b2d125ca8137809b1de520a03b429b0cb23a1aea759",
+      "assessment_sha256": "57ccdf307f5876e9dd95c01206ae9a71f0b8cc1ff8383cf14701b93b6a9c530f",
+      "reported_pronunciation": null,
+      "reported_possible_defects": [],
+      "uncertainty": "Low. Speech is clear, paced, and easily intelligible throughout."
+    }
+  ]
+}

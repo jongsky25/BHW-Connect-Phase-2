@@ -1,0 +1,86 @@
+name: Lesson 1.9.3 downloadable draft review
+on:
+  pull_request:
+    branches: [main]
+    paths: ['.github/workflows/lesson193-package.yml']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  package:
+    if: github.head_ref == 'codex/lesson-193-charlaine-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx playwright install --with-deps chromium
+      - run: python3 -m pip install PyMuPDF==1.26.6
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson193-complete-media-evidence
+          run-id: '38051282774'
+          github-token: ${{ github.token }}
+          path: .preview/lesson193-import
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson193-complete-media-evidence
+          run-id: '38042868862'
+          github-token: ${{ github.token }}
+          path: .preview/lesson193-prior
+      - uses: actions/download-artifact@v4
+        with:
+          name: lesson193-complete-media-evidence
+          run-id: '38044296224'
+          github-token: ${{ github.token }}
+          path: .preview/lesson193-fourth
+      - name: Restore exact raw review and inspected source evidence
+        run: |
+          node --input-type=module -e "import {chromium} from '@playwright/test'; console.log('PLAYWRIGHT_EXECUTABLE_PATH='+chromium.executablePath())" >> "$GITHUB_ENV"
+          mkdir -p .preview/lesson193-source
+          cp docs/lesson-193-source-excerpts/* .preview/lesson193-source/
+          cp -a .preview/lesson193-import/.preview/lesson193-raw .preview/
+          cp -a .preview/lesson193-import/.preview/lesson193-excerpts .preview/
+          cp -a .preview/lesson193-import/.preview/lesson193-decoded .preview/
+          mkdir -p .preview/lesson193-superseded
+          for file in .preview/lesson193-prior/.preview/lesson193-excerpts/shipped-story-*.wav; do cp "$file" ".preview/lesson193-superseded/third-$(basename "$file")"; done
+          for file in .preview/lesson193-prior/.preview/lesson193-decoded/shipped-story-*.wav; do cp "$file" ".preview/lesson193-superseded/third-decoded-$(basename "$file")"; done
+          for file in .preview/lesson193-fourth/.preview/lesson193-excerpts/shipped-story-*.wav; do cp "$file" ".preview/lesson193-superseded/fourth-$(basename "$file")"; done
+          for file in .preview/lesson193-fourth/.preview/lesson193-decoded/shipped-story-*.wav; do cp "$file" ".preview/lesson193-superseded/fourth-decoded-$(basename "$file")"; done
+      - name: Retain the exact frozen Git commit object
+        run: git cat-file commit "$(git rev-parse HEAD)" > docs/lesson-193-frozen-git-commit.txt
+      - run: node scripts/lesson-193-preservation.mjs
+      - run: node scripts/lesson-193-media-verify.mjs
+      - run: node scripts/lesson-193-registry-verify.mjs
+      - name: Independently decode every shipped source and regenerate exact excerpts
+        env:
+          LESSON193_DECODE_ONLY: '1'
+        run: node scripts/lesson-193-audio-focus.mjs
+      - run: node scripts/lesson-193-review-build.mjs
+      - run: node scripts/lesson-193-browser-verify.mjs --with-media
+      - run: node scripts/lesson-193-print-kit.mjs
+      - run: python3 scripts/lesson-193-print-verify.py
+      - run: python3 scripts/lesson-193-package.py
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: lesson193-bilingual-draft-review
+          retention-days: 30
+          compression-level: 0
+          include-hidden-files: true
+          if-no-files-found: error
+          path: |
+            .preview/lesson193-deliverables/lesson-1.9.3-charlaine-draft-review.zip
+            .preview/lesson193-deliverables/lesson-193-package-integrity.json
+            .preview/lesson193-deliverables/lesson-1.9.3-charlaine-review.html
+            .preview/lesson193-deliverables/lesson-193-browser-verification.json
+            .preview/lesson193-deliverables/lesson-193-print-verification.json

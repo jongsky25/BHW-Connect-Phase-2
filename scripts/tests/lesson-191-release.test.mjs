@@ -1,3 +1,4 @@
+import {beforeLesson193} from '../lib/lesson-193-integration.mjs';
 // @vitest-environment node
 import fs from 'node:fs';import {createHash} from 'node:crypto';import {it,expect} from 'vitest';
 const sha=b=>createHash('sha256').update(b).digest('hex');
@@ -14,6 +15,6 @@ it('binds owner authorization to the exact reviewed lesson and seven status-only
  expect(promoted).toEqual(approval.promoted_asset_ids);expect(promoted).toHaveLength(7);expect(current).toEqual(reviewed);
 });
 it('pins every integrated release source and all 24 exact selected media files',()=>{
- for(const[p,h]of Object.entries(approval.approved_source_sha256))expect(sha(fs.readFileSync(p)),p).toBe(h);
+ for(const[p,h]of Object.entries(approval.approved_source_sha256))expect(sha(beforeLesson193(p)),p).toBe(h);
  expect(approval.approved_media).toHaveLength(24);for(const m of approval.approved_media){const b=fs.readFileSync('public'+m.path);expect(sha(b)).toBe(m.sha256);expect(b.length).toBe(m.bytes);}
 });
