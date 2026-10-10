@@ -12,7 +12,7 @@ const frozen=j('docs/lesson-192-handoff-baseline.json'),lesson=JSON.parse(review
 const prior=JSON.parse(frozen.target_files_utf8[leaf+'lesson.json']);
 const loaded=loadReferenceModule(base+'modules/09-sustainable-practices','public').lessons.find(l=>l.manifest.lesson_key==='resources-safe-change');
 describe('lesson 1.9.2 safe-change preservation and review boundaries',()=>{
- it('rejects unpinned successors before exposing historical predecessor bytes',()=>{for(const[p,e]of Object.entries(j('docs/lesson-192-proposal-receipt.json').changed_existing_files)){expect(sha(beforeLesson192(p))).toBe(e.predecessor_sha256);expect(()=>beforeLesson192(p,Buffer.from('mutation'))).toThrow('Unpinned')}});
+ it('rejects unpinned successors before exposing historical predecessor bytes',()=>{for(const[p,e]of Object.entries(j('docs/lesson-192-proposal-receipt.json').changed_existing_files)){expect(sha(beforeLesson192(p))).toBe(e.predecessor_sha256);expect(sha(beforeLesson192(p,Buffer.from(e.predecessor_utf8)))).toBe(e.predecessor_sha256);expect(()=>beforeLesson192(p,Buffer.from('mutation'))).toThrow('Unpinned')}});
  it('uses six distinct reference-generated draft scenes with exact content hashes',()=>{const hashes=lesson.sections.map(s=>{const a=lesson.assets.find(a=>a.id===s.asset_ids[0]);expect(a.review_status).toBe('draft');expect(sha(fs.readFileSync('public'+a.path))).toBe(a.content_hash);return a.content_hash});expect(new Set(hashes).size).toBe(6)});
  it('preserves manifest, six stable anchor/concept pairs, coverage and every original quiz fact',()=>{
   expect(lesson.manifest).toEqual(frozen.manifest);expect(lesson.coverage).toEqual(prior.coverage);
