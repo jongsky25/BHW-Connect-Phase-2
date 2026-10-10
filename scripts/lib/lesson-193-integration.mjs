@@ -1,0 +1,15 @@
+// Hash-bound predecessor view for historical checks only; current loaders use current bytes.
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const leaf='content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/';
+const shared=new Set(['content/training/day1-basic-competencies/narration.json','scripts/lib/lesson-184-release-integration.mjs']);
+export function beforeLesson193(p,actual=fs.readFileSync(p)){
+ const receipt=JSON.parse(fs.readFileSync('docs/lesson-193-proposal-receipt.json'));
+ const e=receipt.changed_existing_files[p];if(!e)return actual;
+ if(receipt.target!=='resources-monitor'||receipt.owner_release_approval!==false||(!p.startsWith(leaf)&&!shared.has(p)))throw Error('Invalid lesson 1.9.3 preservation scope');
+ if(sha(actual)!==e.proposed_sha256)throw Error('Unpinned lesson 1.9.3 successor: '+p);
+ const prior=Buffer.from(e.predecessor_utf8);
+ if(sha(prior)!==e.predecessor_sha256)throw Error('Corrupt lesson 1.9.3 predecessor: '+p);
+ return prior;
+}
