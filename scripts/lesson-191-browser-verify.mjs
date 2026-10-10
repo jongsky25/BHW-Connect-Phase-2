@@ -21,7 +21,7 @@ try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
   const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage();trackErrors(page);
   await page.goto(`${baseUrl}/?lang=${lang}&mode=${mode}`);
-  await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();await context.setOffline(true);
+  await page.getByRole('button',{name:'Filipino',exact:true}).waitFor();const durationNotice=await page.getByText(lang==='en'?/^Recorded narration: about/:/^Na-record na salaysay:/).innerText();assert(durationNotice.includes('10')&&durationNotice.includes('60-minut')&&durationNotice.includes('1×'),'Measured narration and guided practice must be separate');await context.setOffline(true);
   for(const [index,section]of lesson.sections.entries()){
    const anchor=(mode==='slides'?'slide-':'')+section.id;
    await page.locator(`article[data-scene="${anchor}"]`).waitFor();
