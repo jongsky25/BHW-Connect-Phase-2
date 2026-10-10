@@ -1,0 +1,111 @@
+name: Lesson 1.9.1 draft media and review package
+on:
+  workflow_dispatch:
+    inputs:
+      package_only:
+        description: Build the frozen review package without generating media
+        type: boolean
+        default: false
+      media_run_id:
+        description: Exact run holding final raw audio review evidence
+        type: string
+        default: ''
+      review_only:
+        description: Review exact committed media without generating replacement bytes
+        type: boolean
+        default: false
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson191-media.yml'
+      - 'scripts/lesson-191-media-build.mjs'
+      - 'scripts/lesson-191-audio-*.mjs'
+      - 'scripts/remotion-resources-audit-narrate.mjs'
+      - 'remotion/src/resources-audit/**'
+      - 'content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/**'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson191-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: (github.head_ref == 'codex/lesson-191-charlaine-handoff' || github.ref_name == 'codex/lesson-191-charlaine-handoff') && inputs.package_only != true
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Skip generation after imported evidence is frozen
+        id: scope
+        run: |
+          if test '${{ inputs.review_only }}' = 'true'; then
+            echo "generate=true" >> "$GITHUB_OUTPUT"
+          elif test -f docs/lesson-191-evidence-origins.json; then
+            echo "generate=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "generate=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@v4
+        if: steps.scope.outputs.generate == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.scope.outputs.generate == 'true'
+        run: npm ci
+      - if: steps.scope.outputs.generate == 'true'
+        run: npm ci
+        working-directory: remotion
+      - if: steps.scope.outputs.generate == 'true'
+        run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Bounded read-only published content snapshot
+        if: steps.scope.outputs.generate == 'true'
+        continue-on-error: true
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/lesson-191-published-snapshot.mjs
+      - name: Generate target narration with immutable historical media
+        if: steps.scope.outputs.generate == 'true' && inputs.review_only != true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON191_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-191-record-fetch.mjs'
+        run: node scripts/lesson-191-media-build.mjs
+      - name: Full actual Read audio review
+        if: always() && steps.scope.outputs.generate == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON191_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-191-record-fetch.mjs'
+        run: node scripts/lesson-191-audio-review.mjs
+      - name: Focused actual decoded audio review
+        if: always() && steps.scope.outputs.generate == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON191_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-191-record-fetch.mjs'
+        run: node scripts/lesson-191-audio-focus.mjs
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.scope.outputs.generate == 'true'
+        with:
+          name: lesson191-generated-evidence
+          path: |
+            lesson-191-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            public/training/audio/09-sustainable-practices/resources-audit/
+            content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json
+            public/training/bhw-1-9/resources-audit-*
+            remotion/public/resources-audit/narration-*
+            remotion/public/resources-audit/shipped-aac-*
+            docs/lesson-191-media-generation.json
+            docs/lesson-191-audio-*.json
+            .preview/lesson191-raw/
+            .preview/lesson191-excerpts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

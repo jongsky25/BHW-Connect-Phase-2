@@ -19,7 +19,9 @@
         "m9.competency",
         "m9.resources"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "audit-elena"
+      ],
       "takeaway_fil": "Tukuyin muna ang nasasayang na resources bago pumili ng pagtitipid.",
       "takeaway_en": "Identify wasted resources before choosing a saving measure.",
       "check": null
@@ -29,7 +31,9 @@
       "concept_ids": [
         "m9.organize"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "audit-inventory"
+      ],
       "takeaway_fil": "Ang maayos na imbakan ay tumutulong sa ligtas na paggamit at tumpak na paghingi ng resources.",
       "takeaway_en": "Orderly storage supports safe use and accurate resource requests.",
       "check": {
@@ -50,8 +54,8 @@
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "Ang ikatlong sagot ang nagpoprotekta sa tamang impormasyon. Hindi nagiging tama ang lumang bersyon dahil sayang itong itapon o palitan ang label.",
-        "feedback_en": "The third response protects correct information. An outdated version does not become valid because disposal feels wasteful or its label is changed."
+        "feedback_fil": "1. Hindi ligtas: maaaring maling impormasyon ang maipamahagi kapag ginamit ang luma. 2. Hindi sapat ang pagpapalit ng label; hindi nito ginagawang aprubado ang materyal. 3. Tama: ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng current copies. Sa kathang-isip na correction, ibinukod ni Charlaine ang apat na luma at humingi ng kumpirmasyon sa supervisor. Wala pang current sa kit; iniulat ang pangangailangan, hindi sinabing may dumating na.",
+        "feedback_en": "1. Unsafe: distributing outdated copies may spread incorrect information. 2. Changing a label does not approve the material. 3. Correct: set aside old copies, verify the approved master and request current copies. In the fictional correction, Charlaine separates the four outdated copies and asks the supervisor for confirmation. The kit still has no current version; the need is reported without claiming delivery."
       }
     },
     {
@@ -59,9 +63,24 @@
       "concept_ids": [
         "m9.organize"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "audit-seven-s"
+      ],
       "takeaway_fil": "Ang kaayusan ay pinananatili ng simpleng routine at pananagutan.",
       "takeaway_en": "A simple routine and clear responsibility sustain order.",
+      "check": null
+    },
+    {
+      "id": "evidence-before-order",
+      "concept_ids": [
+        "m9.resources",
+        "m9.organize"
+      ],
+      "asset_ids": [
+        "audit-evidence-before-order"
+      ],
+      "takeaway_fil": "Iulat ang verified gap; huwag ipalagay na naayos na ang kakulangan.",
+      "takeaway_en": "Report the verified gap; do not assume the shortage has been resolved.",
       "check": null
     },
     {
@@ -72,7 +91,7 @@
         "m9.organize"
       ],
       "asset_ids": [
-        "resource-audit"
+        "audit-practice"
       ],
       "takeaway_fil": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.",
       "takeaway_en": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
@@ -85,7 +104,9 @@
         "m9.resources",
         "m9.organize"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "audit-check"
+      ],
       "takeaway_fil": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.",
       "takeaway_en": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
       "check": {
@@ -106,8 +127,8 @@
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.",
-        "feedback_en": "The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version."
+        "feedback_fil": "1. Hindi sapat ang dobleng order sa hula; maaaring may usable stock na hindi lang makita. 2. Tama: suriin ang labeled storage, approved version at usable stock count bago humingi ng dagdag. 3. Hindi ligtas ang anumang lumang handout; dapat tama at aprubado ang bersyon. Sa kathang-isip na ending, nahanap ni Charlaine ang imbakan, kinumpirma ang master at binilang ang usable copies. Ipinakita niya ang label–count–return sa dummy kit at iniulat ang natitirang tunay na kakulangan sa supervisor. May audit at demonstrasyon; hindi pa naayos ang shortage at walang napatunayang financial savings.",
+        "feedback_en": "1. Guessing a double order is insufficient; usable stock may simply be misplaced. 2. Correct: check labeled storage, approved version and usable stock count before requesting more. 3. Any old handout is unsafe; the version must be correct and approved. In the fictional ending, Charlaine finds storage, confirms the master and counts usable copies. She demonstrates label–count–return with the dummy kit and reports the remaining genuine shortage to the supervisor. An audit and demonstration are complete; the shortage remains unresolved and financial savings are unproven."
       }
     }
   ],
@@ -134,11 +155,13 @@
       "id": "m9.resources",
       "read_ids": [
         "elena",
+        "evidence-before-order",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-elena",
+        "slide-evidence-before-order",
         "slide-practice",
         "slide-check"
       ],
@@ -153,12 +176,14 @@
       "read_ids": [
         "inventory",
         "seven-s",
+        "evidence-before-order",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-inventory",
         "slide-seven-s",
+        "slide-evidence-before-order",
         "slide-practice",
         "slide-check"
       ],
@@ -211,6 +236,72 @@
       "caption_en": "Check evidence before changing a routine.",
       "provenance": "Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.",
       "review_status": "approved"
+    },
+    {
+      "id": "audit-elena",
+      "path": "/training/bhw-1-9/charlaine-audit-elena-827200d5a541.png",
+      "content_hash": "827200d5a54131f870b0b88d1339baadb782f6af01f4e9df2cff8077527d8356",
+      "alt_fil": "Si Charlaine ay nagtatala ng tagas, printouts at misplaced supplies.",
+      "alt_en": "Charlaine records a leak, printouts and misplaced supplies.",
+      "caption_fil": "Kathang-isip na practice; nasa teksto ang facts at desisyon.",
+      "caption_en": "Fictional practice; facts and decisions are in the text.",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "audit-inventory",
+      "path": "/training/bhw-1-9/charlaine-audit-inventory-ce95f730fd2f.png",
+      "content_hash": "ce95f730fd2fdddb7414e8ea0db082ea7608fa9e8227f5069705aef151461fe6",
+      "alt_fil": "Si Charlaine at katrabaho ay tumitingin sa lumang handouts at kit bago pumili.",
+      "alt_en": "Charlaine and a colleague inspect outdated handouts and a kit before choosing.",
+      "caption_fil": "Kathang-isip na practice; nasa teksto ang facts at desisyon.",
+      "caption_en": "Fictional practice; facts and decisions are in the text.",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "audit-seven-s",
+      "path": "/training/bhw-1-9/charlaine-audit-seven-s-9b59a4cd02d3.png",
+      "content_hash": "9b59a4cd02d3d1ac18a16c5b27c18a8361503b0fcf1e2aab631a58da7e53f9e9",
+      "alt_fil": "Si Charlaine ay nagbabalik ng reusable paper cards; tumitingin ang katrabaho sa checklist.",
+      "alt_en": "Charlaine returns reusable paper cards as a colleague watches the checklist.",
+      "caption_fil": "Kathang-isip na practice; nasa teksto ang facts at desisyon.",
+      "caption_en": "Fictional practice; facts and decisions are in the text.",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "audit-evidence-before-order",
+      "path": "/training/bhw-1-9/charlaine-audit-evidence-before-order-bd485cd2b439.png",
+      "content_hash": "bd485cd2b439e3f35e5e87b1849a4b8b440589ccaf53aa22e897ef957da88dda",
+      "alt_fil": "Si Charlaine ay naghihiwalay ng observed, verified at unknown fields sa papel.",
+      "alt_en": "Charlaine separates observed, verified and unknown fields on paper.",
+      "caption_fil": "Kathang-isip na practice; nasa teksto ang facts at desisyon.",
+      "caption_en": "Fictional practice; facts and decisions are in the text.",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "audit-practice",
+      "path": "/training/bhw-1-9/charlaine-audit-practice-a09ea9c3d960.png",
+      "content_hash": "a09ea9c3d960b00f6c8df6704c87a42141945e1ed074f5205733a799b6c2ebd9",
+      "alt_fil": "Si Charlaine ay nagbibilang at nagbabalik ng blank paper cards; may feedback at trainer observation.",
+      "alt_en": "Charlaine counts and returns blank paper cards with feedback and trainer observation.",
+      "caption_fil": "Kathang-isip na practice; nasa teksto ang facts at desisyon.",
+      "caption_en": "Fictional practice; facts and decisions are in the text.",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.",
+      "review_status": "draft"
+    },
+    {
+      "id": "audit-check",
+      "path": "/training/bhw-1-9/charlaine-audit-check-4a7dc50aea44.png",
+      "content_hash": "4a7dc50aea4446e317c4b10405f830a55344f9d25cb6ff43554c1435f1f991ee",
+      "alt_fil": "Si Charlaine at katrabaho ay nakaharap sa hindi maayos na imbakan bago magdesisyon.",
+      "alt_en": "Charlaine and a colleague face disorganized storage before deciding.",
+      "caption_fil": "Kathang-isip na practice; nasa teksto ang facts at desisyon.",
+      "caption_en": "Fictional practice; facts and decisions are in the text.",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json.",
+      "review_status": "draft"
     }
   ]
 }

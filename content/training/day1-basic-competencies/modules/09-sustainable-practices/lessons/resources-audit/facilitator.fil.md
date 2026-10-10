@@ -1,62 +1,47 @@
-## [purpose] Layunin
+## [purpose] purpose
 
-Sa halimbawang BHS, itala ang tatlong pag-aaksaya, ang ebidensya at isang ligtas na routine na makababawas sa paghahanap o dobleng pag-order.
+Layunin: tatlong audit row na may resource, nakitang waste, ebidensya at ligtas na hakbang; aktuwal na label–count–return. Kathang-isip si Charlaine at lahat ng practice inputs. Hindi sapat ang quiz, attendance o video para pumasa.
 
-## [time-materials] Oras at kagamitan
+## [time-materials] time-materials
 
-60 minuto para sa pagsasanay na pinamumunuan ng facilitator. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.
+60 minuto: 5 opening + 10 modelling + 25 practice/feedback/retry + 12 audit debrief + 8 transfer. Tatlong lesson: 60 + 60 + 60 = 180. Hiwalay ang self-study/audio. Ihanda ang bilingual A4 cards, dummy paper kit, labels, master A/B, usable-count sheet at observation record. Walang tunay na gamot, patient record, utility work o clinical cleaning.
 
-## [prepare] Ihanda
+## [prepare] prepare
 
-Ihanda ang kunwaring kit, stock count at dalawang bersyon ng handout. Tiyakin kung alin ang aprubado.
+I-print ang limang practice sheets. Gumawa ng sampung triad para sa 30 learners: T1–T10; bawat isa ay A, B, C. Sa round 1 A ang BHW, B ang colleague, C ang observer; round 2 B/C/A; round 3 C/A/B. Practice card lamang ang supervisor confirmation ng master B. Kumpirmahin ang actual local inventory/reporting policy bago transfer; hindi local authorization ang card.
 
-## [opening] Pambungad
+## [opening] opening
 
-Hindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?
+0–5: Sabihin: “Ano ang nakita ni Charlaine? Ano ang hindi pa alam?” Ipakita ang tatlong waste card. Inaasahan: tagas, maling version, misplaced materials; walang invented bill, volume, savings o budget shortage. Ipaulit ang boundary: iulat ang tagas; walang repair o critical shutdown.
 
-## [steps] Mga hakbang
+## [steps] steps
 
-Basahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.
+5–15: I-model ang isang audit row at label–count–return. Ituro ang puwesto, ihambing sa dummy master B, bilangin ang tatlong B; ibukod ang apat na A. Sabihin ang anim na kailangan, tatlong usable at gap na tatlo. Ibalik ang reusable paper cards, isulat ang responsible role at next check. Ipakita ang inventory quiz nang walang sagot; pagkatapos sumagot basahin ang lahat ng rationales. 15–40: practice ayon sa susunod na heading. 40–52: audit debrief—ihambing ang tatlong row, verified/unknown at rejected unsafe steps. 52–60: bawat learner ay magplano ng isang supervisor discussion at susunod na observed opportunity; walang pangakong savings.
 
-## [expected-answers] Inaasahang sagot
+## [expected-answers] expected-answers
 
-Sa inventory check, ihiwalay ang lumang handout, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya. Masisira ang tamang impormasyon kung papalitan lang ang label o ipamamahagi ang luma.
+Tagas: tubig; visible drops; volume/bill unknown; supervisor report. Wrong-version printouts: papel, energy at oras; dummy A vs confirmed B; separate/report/request B. Missing cards: oras/possible duplicate order; hindi makita sa assigned slot; find–verify–count bago request. Practice only: 6 needed, 3 usable B, 4 outdated A, gap 3 B; walang proof ng delivery. Ibalik ang cards at magtalaga ng owner/check.
 
-Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.
+## [misconception] misconception
 
-## [misconception] Karaniwang pagkakamali
+“Sayang kaya gamitin ang luma”: mali; tamang impormasyon ang kailangan. “May label kaya approved”: hindi; kumpirmasyon kailangan. “Hindi makita kaya ubos”: hindi verified. “7S means clinical reuse”: hindi. “May routine kaya may savings”: walang measurement. Ihiwalay ang audit, approval, trial outcome at certification.
 
-Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid. Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.
+## [practice] practice
 
-## [practice] Gawaing pagsasanay
+15–40: tatlong six-minute rounds (15–21, 21–27, 27–33), saka pitong minutong shared debrief (33–40). Bawat round: 2 setup + 2 attempt + 1 feedback + 1 retry. Observer prompt: “Ipakita ang label, current master, usable count at balik. Ano ang unknown?” Weak attempt: learner counts all seven as usable. Feedback: “Alin ang B? Hindi usable ang apat na A.” Retry: learner separates A, counts three B, reports gap three at hindi pa delivered. Unsafe action: ihinto agad, alisin ang real materials at bumalik sa dummy task; record not-yet evidence, huwag ituring na pass.
 
-Gumawa ng audit na may resource, nakitang pag-aaksaya, ebidensya at ligtas na susunod na hakbang. Gamitin ang tatlong halimbawa ni Elena; huwag mag-imbento ng bill o dami. Ipakita sa kapareha kung paano ang label at stock count ay iiwas sa dobleng order. Kung mag-isa, sundan ang checklist gamit ang kunwaring teaching kit. Sa susunod na duty, obserbahan ang isang resource at talakayin ang findings sa supervisor.
+## [answer-key] answer-key
 
-## [answer-key] Susi sa sagot
+Inventory: correct index 2 (ikatlong choice). 1 old copies can misinform; 2 relabeling does not approve; 3 separate, verify master, request current. Kit facts remain four old and no current. Reorder check: correct index 1 (ikalawang choice). 1 guessed double order may waste; 2 verify labeled storage/version/count; 3 old handouts may be wrong. Pagkatapos ng bawat response basahin ang lahat ng rationales at correction sa lesson.json. Ending: may audit at demo si Charlaine, iniulat ang genuine gap, hindi pa naayos ang shortage o proven savings.
 
-Inventory check: 3. Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya.
+## [observe] observe
 
-2. Suriin ang labeled storage, approved version at bilang ng stock.
+Trainer sampling roster: round 1 T1/A (17–21), round 2 T2/B (23–27), round 3 T3/C (29–33). Tatlong four-minute observations lamang; may dalawang minuto bawat round para setup/movement. Hindi bababa sa 27 ang not trainer-observed. I-record ang actual steps, prompts, retry at rubric level; peer checklist is not trainer signoff. Gumawa ng follow-up slots para sa natitirang learners bago anumang performance decision. Panatilihin ang isang objective_index 0 indicator at lahat ng six bilingual levels; walang attendance pass.
 
-Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.
+## [support] support
 
-## [observe] Obserbahan
+Ipa-spoken o ipa-paper solo rehearsal gamit ang parehong cards; hindi nito pinapalitan ang observed performance. Reading support: basahin nang malakas ang fields at choices; malaking print, language choice at extra processing time. Scaffold: isang row muna, point to master/usable pile, then fade prompt sa retry. Itala kung prompted pa. Huwag mag-imbento ng pass rule.
 
-May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon.
+## [sources-review] sources-review
 
-Kaya na: May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon. Nagagawa kahit hindi pinapaalalahanan.
-
-Kailangan pang magsanay: Nakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin.
-
-Hindi pa: Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.
-
-Markahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.
-
-## [support] Tulong
-
-Nakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.
-
-## [sources-review] Sanggunian at tala sa pagsusuri
-
-Draft para sa pagsusuri. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. Instructional expansion ito ng ikasiyam na competency, hindi hiwalay na manual chapter. Ang draft crosswalk sa TESDA 400311217 ay nasa review report; kailangan pa ng assessor review at lokal na work procedures. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.
-
+Candidate sources: Facilitator Guide PDF 19 (printed 12) 3-hour sustainable competency; PDF 22 (printed 15) different 4-hour entrepreneurial competency; PDF 34 (printed 27) different 10-hour quality competency. Manual PDF 14 (printed 6), 30 (printed 19); TESDA unit 400311217 candidate PDF 33–35. Magkaiba ang 7S order; panatilihin ang sipi. Deck ends OSH 69–78, walang distinct sustainable section. Tingnan ang source-audit status para sa actual original-PDF verification. Primary unnecessary-plastics policy does not authorize clinical reuse. Facility/infection-prevention review, human listening at owner approval ay pending, magkakahiwalay.
