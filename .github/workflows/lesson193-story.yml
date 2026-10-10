@@ -37,7 +37,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           for attempt in $(seq 1 30); do
-            count=$(gh api repos/${{ github.repository }}/actions/runs/38040980575/artifacts --jq '.artifacts | length')
+            count=$(gh api repos/${{ github.repository }}/actions/runs/38041922351/artifacts --jq '.artifacts | length')
             if test "$count" -gt 0; then exit 0; fi
             sleep 20
           done
@@ -45,8 +45,8 @@ jobs:
           exit 1
       - uses: actions/download-artifact@v4
         with:
-          name: lesson193-read-evidence
-          run-id: '38040980575'
+          name: lesson193-complete-media-evidence
+          run-id: '38041922351'
           github-token: ${{ github.token }}
           path: .preview/lesson193-import
       - name: Resume exact target tracks and retain original evidence
@@ -54,6 +54,7 @@ jobs:
           cp .preview/lesson193-import/content/training/day1-basic-competencies/narration.json content/training/day1-basic-competencies/narration.json
           cp -a .preview/lesson193-import/public/training/audio/09-sustainable-practices/resources-monitor/. public/training/audio/09-sustainable-practices/resources-monitor/
           cp .preview/lesson193-import/docs/lesson-193-audio-*.json docs/
+          cp .preview/lesson193-import/remotion/public/resources-monitor/narration-* remotion/public/resources-monitor/
           mkdir -p .preview/lesson193-raw .preview/lesson193-excerpts
           cp -a .preview/lesson193-import/.preview/lesson193-raw/. .preview/lesson193-raw/
           cp -a .preview/lesson193-import/.preview/lesson193-excerpts/. .preview/lesson193-excerpts/

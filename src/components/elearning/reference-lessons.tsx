@@ -930,6 +930,9 @@ export function ReferenceLessons(props: Props) {
             </div>
             {!readerOpen && (videoSelected ? videoContent : <>{readerArticle}{readerPager}</>)}
             {!props.readOnly && <>
+            {resourcesMonitorRevision && featuredVideo && !checksAnswered && <p className="text-sm">
+              {ui("Sagutin ang tatlong tanong sa Basahin o Slides para mabuksan ang kuwento at itinamang wakas.", "Answer all three checks in Read or Slides to unlock the story and corrected ending.")}
+            </p>}
             {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
               {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
                 ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.",

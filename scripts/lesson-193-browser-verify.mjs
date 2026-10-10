@@ -6,11 +6,14 @@ import {chromium} from '@playwright/test';
 const dir='.preview/lesson193-deliverables',html=fs.readFileSync(dir+'/lesson-1.9.3-charlaine-review.html');
 const leaf='content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/';
 const lesson=JSON.parse(fs.readFileSync(leaf+'lesson.json'));
+const withMedia=process.argv.includes('--with-media');
+const manifest=JSON.parse(fs.readFileSync('content/training/day1-basic-competencies/narration.json'));
+const story=lesson.assets.find(a=>a.id==='resources-monitor-story');
 const server=http.createServer((req,res)=>{if(req.url==='/favicon.ico'){res.writeHead(204);res.end();return;}res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);});
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const url='http://127.0.0.1:'+server.address().port;
 const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH??'/usr/bin/chromium',args:['--no-sandbox']});
-const report={scope:'production components with local auth/save fixture; text, checks, gating, resume and overflow only',date:new Date().toISOString(),cases:[],screenshots:[],errors:[],missing:['seven generated scene illustrations','story/caption/fullscreen verification','narration playback/zone verification until actual media imported']};
+const report={scope:'production components with local auth/save fixture; text, checks, gating, resume and overflow only',date:new Date().toISOString(),cases:[],screenshots:[],errors:[],missing:withMedia?[]:['story/caption/fullscreen verification','narration playback/zone verification until actual media imported']};
 const save=()=>fs.writeFileSync(dir+'/lesson-193-browser-verification.json',JSON.stringify(report,null,2)+'\n');
 try{
  for(const width of [1280,390])for(const lang of ['fil','en'])for(const mode of ['read','slides']){
@@ -20,13 +23,44 @@ try{
   for(const [i,section]of lesson.sections.entries()){
    const anchor=(mode==='slides'?'slide-':'')+section.id;await page.locator(`article[data-scene="${anchor}"]`).waitFor();
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Horizontal overflow '+anchor);
+   const picture=page.locator('article[data-scene] figure img').first();await picture.waitFor();assert(await picture.evaluate(i=>i.complete&&i.naturalWidth>0),'Missing picture '+anchor);
+   if(withMedia&&story) {
+    const button=page.getByRole('button',{name:/^(Narrated story|Kuwentong may salaysay)$/});
+    if(i===0)assert(await button.isDisabled(),'Story ending exposed before checks');
+   }
    if(section.check){
+    const before=`lesson193-${lang}-${mode}-${width}-${section.id}-before-answer.png`;await page.screenshot({path:dir+'/'+before,fullPage:true});report.screenshots.push(before);
+    assert(await picture.evaluate(i=>i.getBoundingClientRect().top)<(await page.getByRole('button',{name:section.check.options[0][lang],exact:true}).boundingBox()).y,'Picture after decision');
     assert.equal(await page.getByRole('status').count(),0,'Premature feedback');assert.equal(await page.locator('audio').count(),0,'Premature takeaway audio');
     for(const option of section.check.options){await page.getByRole('button',{name:option[lang],exact:true}).click();assert((await page.getByRole('status').innerText()).includes(section.check['feedback_'+lang]));}
+   }
+   if(withMedia){
+    const track=manifest.lessons['resources-monitor'].sections[section.id][lang];
+    if(mode==='slides')await page.getByText(lang==='en'?'Full narration and audio':'Buong salaysay at audio',{exact:true}).click();
+    await page.getByRole('button',{name:lang==='en'?'Listen':'Pakinggan',exact:true}).click();
+    await page.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.readyState>=2&&a.currentTime>0;});assert.equal(await page.locator('audio').count(),1);
+    for(const zone of ['heading','body','takeaway']){
+     const timing=track.timings.find(t=>t.zone===zone);assert(timing,'Missing zone '+zone);
+     await page.locator('audio').evaluate((a,ms)=>{a.currentTime=ms/1000},(timing.start_ms+timing.end_ms)/2);
+     await page.waitForFunction(expected=>Array.from(document.querySelectorAll('[data-active="true"]')).some(el=>el.textContent.replace(/\*\*/g,'').replace(/\s+/g,' ').trim()===expected),timing.text.replace(/\*\*/g,'').replace(/\s+/g,' ').trim());
+    }
+    await page.locator('audio').evaluate(a=>{window.__previousAudio=a;a.pause()});
    }
    const shot=`lesson193-${lang}-${mode}-${width}-${section.id}.png`;await page.screenshot({path:dir+'/'+shot,fullPage:true});report.screenshots.push(shot);
    report.cases.push({width,language:lang,mode,anchor,no_overflow:true,all_answers_rationales_checked:!!section.check,pre_response_feedback_audio_gated:!!section.check,picture_present:await page.locator('article[data-scene] figure img').count()>0});save();
    if(i<lesson.sections.length-1)await page.getByRole('button',{name:lang==='en'?'Next':'Susunod',exact:true}).click();
+  }
+  if(withMedia&&story){
+   await page.getByRole('button',{name:/^(Narrated story|Kuwentong may salaysay)$/}).click();assert(await page.evaluate(()=>!window.__previousAudio||window.__previousAudio.paused));
+   await page.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&v.currentTime>0&&!v.paused&&v.readyState>=2;});
+   const data=await page.locator('video').evaluate(v=>({muted:v.muted,cues:v.textTracks[0]?.cues?.length??0,duration:v.duration}));assert.equal(data.muted,false);assert.equal(data.cues,7);
+   await page.locator('video').evaluate(v=>window.__previousVideo=v);
+   await page.getByRole('button',{name:lang==='en'?'Full screen':'Buong screen',exact:true}).click();const dialog=page.getByRole('dialog');await dialog.waitFor();assert.equal(await page.locator('video').count(),1);assert(await page.evaluate(()=>window.__previousVideo.paused));
+   await dialog.locator('video').evaluate(v=>v.play());await page.waitForFunction(()=>{const v=document.querySelector('video');return v&&!v.paused&&v.currentTime>0;});
+   await dialog.locator('video').evaluate(v=>{v.currentTime=v.duration-2});await page.waitForFunction(()=>document.querySelector('video').ended,null,{timeout:10000});
+   const shot=`lesson193-story-${lang}-${mode}-${width}-ending.png`;await page.screenshot({path:dir+'/'+shot,fullPage:true});report.screenshots.push(shot);
+   await dialog.getByRole('button',{name:lang==='en'?'Close':'Isara',exact:true}).click();await dialog.waitFor({state:'hidden'});
+   report.cases.push({width,language:lang,mode,story_gated_until_all_checks:true,unmuted_story:true,seven_cues:true,ending_played:true,fullscreen:true,single_player:true,read_audio_paused:true,duration:data.duration});
   }
   for(const pane of ['Facilitator guide','Observation indicator','Evidence']){await page.getByRole('button',{name:pane,exact:true}).click();assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
   await context.close();
@@ -35,5 +69,5 @@ try{
   const page=await browser.newPage(),anchor=(mode==='slides'?'slide-':'')+s.id;
   await page.goto(`${url}/?lang=${lang}&mode=${mode}&anchor=${anchor}`);await page.locator(`article[data-scene="${anchor}"]`).waitFor();report.cases.push({language:lang,mode,anchor,old_resume:true});await page.close();
  }
- assert.equal(report.errors.length,0);report.status='passed for text/check/resume scope; media matrix incomplete';report.actual_case_count=report.cases.length;report.actual_screenshot_count=report.screenshots.length;save();
+ assert.equal(report.errors.length,0);report.status=withMedia?'passed for actual component/media fixture scope; human listening and production separate':'passed for text/check/resume scope; media matrix incomplete';report.actual_case_count=report.cases.length;report.actual_screenshot_count=report.screenshots.length;save();
 }catch(e){report.status='failed';report.error=String(e.stack??e);save();throw e;}finally{await browser.close();await new Promise(r=>server.close(r));}
