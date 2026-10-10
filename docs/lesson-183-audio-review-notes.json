@@ -1,0 +1,642 @@
+{
+  "status": "review evidence retained; human listening pending",
+  "method": "Parse actual full/focused responses without replacing raw text or inventing signoff",
+  "recordings": 14,
+  "full_reviews": 14,
+  "focused_reviews": 56,
+  "human_listening": "pending",
+  "clinical_review": "pending",
+  "owner_approval": "pending",
+  "records": [
+    {
+      "id": "station-preparation-fil",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "3e866927aafb5047c2bfe3c5f43ac1aabc641161e1bcab83cbf4772f3a7ddfbe",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "9965efc73a10071d0a3771ace34d5c44d0ddc27a1d7aa2bdcc955cb8d52b3b91",
+          "start_ms": 6160,
+          "end_ms": 13480,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "81649de4d025c9cd0505c00cca8e9d785123c1dfdd1b8c2155c669f48f250eb4",
+          "start_ms": 23340,
+          "end_ms": 29540,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "d6d574d83a2726a3489f7315aafe041fedc995d96b01fa3d9bfaba2e1d8baa26",
+          "start_ms": 13780,
+          "end_ms": 19060,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "92299de2ced71981bab89d7850cebce14252ce4f2b931cd1da5702e4089210ad",
+          "start_ms": 106360,
+          "end_ms": 113760,
+          "name_present": false
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "full",
+          "field": "uncertainty",
+          "value": "None; synthetic educational dialogue is fully intelligible with clean turn boundaries and complete final sentence."
+        }
+      ],
+      "structured_reviews": 5,
+      "disposition": "Retain full/focused disagreements for human listening; no defect-free or stable-voice approval claimed"
+    },
+    {
+      "id": "station-preparation-en",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "c87734cc2e1906113bac73a41ec791967c92b390d16d46bd667793dbda647d68",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "e1a9412fcd6fcc98695db0dbcb9a4809019639332d11210eb75f2c1ea744b78b",
+          "start_ms": 6120,
+          "end_ms": 11640,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "2b39644aba5eda8f53b937323b91dffa0d881ba1f4b0a474e2e06dc5ae886283",
+          "start_ms": 21900,
+          "end_ms": 27500,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "94a648cb75b0842161db058be4423c01f7b6a5492b16e019ec78625406fd09e7",
+          "start_ms": 11940,
+          "end_ms": 17140,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "09a31e28d7a64b2067fd89c6b9f006565a45e2e8e2ac518f3ef8d27b597919cd",
+          "start_ms": 96080,
+          "end_ms": 102320,
+          "name_present": false
+        }
+      ],
+      "concerns": [],
+      "structured_reviews": 5,
+      "disposition": "No concerns reported by these model reviews; human listening still pending"
+    },
+    {
+      "id": "field-preparation-fil",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "f8581ae4fe210eadc4665622966ffcc4019b460a6d15c6384e7ba08371352481",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "0545f150d20079a16fb7c7e681e0ecb8834bf7786d9f5d5cc1c0c00d4ba0e645",
+          "start_ms": 21520,
+          "end_ms": 29280,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "0545f150d20079a16fb7c7e681e0ecb8834bf7786d9f5d5cc1c0c00d4ba0e645",
+          "start_ms": 21520,
+          "end_ms": 29280,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "6a893daddc3c1c48bfa2f16d4e27277b7f7eeba58c014feb97c77a9c57f323c7",
+          "start_ms": 11160,
+          "end_ms": 18160,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "eff2847121ba98901d7f0a05e723edf1d5bf2fcffb9430cfd49b9269ec0120be",
+          "start_ms": 113700,
+          "end_ms": 120860,
+          "name_present": false
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "full",
+          "field": "delivery_concerns",
+          "value": [
+            {
+              "timestamp": "00:00 - 02:00",
+              "description": "The recording alternates between two distinct vocal profiles/timbres across turn takes, typical of a generated educational dialogue or dual narrator format, but all speech remains clear and fully intelligible."
+            }
+          ]
+        }
+      ],
+      "structured_reviews": 5,
+      "disposition": "Retain full/focused disagreements for human listening; no defect-free or stable-voice approval claimed"
+    },
+    {
+      "id": "field-preparation-en",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "2b0ce4235bb33f11120a16ac84444e5eb03ce6e3f5277841580a177a7b948336",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "b1a1adb3ad3d7ce37b041e0a6cd1542e1706c2e3b89d8cded0744968faf83ab2",
+          "start_ms": 20480,
+          "end_ms": 26240,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "b1a1adb3ad3d7ce37b041e0a6cd1542e1706c2e3b89d8cded0744968faf83ab2",
+          "start_ms": 20480,
+          "end_ms": 26240,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "b372516691219d73d85e5bd3ef3bdcf13da1e6ed286dad249e7087a56f116849",
+          "start_ms": 10720,
+          "end_ms": 16440,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "4c74d6adbb2f8186fdd766e2236af0425fcc8ba18e6c626a147e1b0aac4d216c",
+          "start_ms": 99860,
+          "end_ms": 105380,
+          "name_present": false
+        }
+      ],
+      "concerns": [],
+      "structured_reviews": 5,
+      "disposition": "No concerns reported by these model reviews; human listening still pending"
+    },
+    {
+      "id": "combined-hazards-fil",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "e211db19c537b1f062361aa0a715df1f7e77f0af78d0c9f29730e7e7a2cc0eb7",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "dd1716604f0eaa4509ca38b9b5639b8d9df5e3d1f1910d6e9b508ba3087987c0",
+          "start_ms": 29000,
+          "end_ms": 34720,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "dd1716604f0eaa4509ca38b9b5639b8d9df5e3d1f1910d6e9b508ba3087987c0",
+          "start_ms": 29000,
+          "end_ms": 34720,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "bd686127b592009addb1e714b538d5c2d5e2eb86a254e6436d9a4d29e07f91ee",
+          "start_ms": 21940,
+          "end_ms": 28700,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "ff354eb24cf50e0e6ff88978ca7ce472c6071aceac744bcf832a3e766b1c4bdf",
+          "start_ms": 116120,
+          "end_ms": 123400,
+          "name_present": false
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "name",
+          "field": "pronunciation_concerns",
+          "value": [
+            {
+              "timestamp": "00:00 - 00:01",
+              "word": "Apple",
+              "note": "Pronounced with standard Philippine English/Tagalog localized phonetics ('Apol')."
+            }
+          ]
+        },
+        {
+          "kind": "meaning",
+          "field": "meaning_concerns",
+          "value": [
+            {
+              "timestamp": "00:01 - 00:03",
+              "concern": "The phrasing 'hindi muna ang gawing kulang' is slightly awkward or grammatically incomplete in Tagalog, likely meaning not to compromise or cut short essential protection ('hindi dapat gawing kulang')."
+            }
+          ]
+        },
+        {
+          "kind": "meaning",
+          "field": "uncertainty",
+          "value": [
+            {
+              "timestamp": "00:02 - 00:03",
+              "text": "gawing",
+              "alternative": "gawaing",
+              "explanation": "Spoken rapidly; sounds predominantly like 'gawing', but could subtly be perceived as 'gawaing'."
+            }
+          ]
+        }
+      ],
+      "structured_reviews": 5,
+      "disposition": "Retain full/focused disagreements for human listening; no defect-free or stable-voice approval claimed"
+    },
+    {
+      "id": "combined-hazards-en",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "83c7dd3131c729e837e6eb4439e9304404c88623a466a44e77330375669fb29f",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "5e8a27ab03919c0492c9fa116394544589d018ddd2304b1fd1a1400512028b79",
+          "start_ms": 27680,
+          "end_ms": 32920,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "5e8a27ab03919c0492c9fa116394544589d018ddd2304b1fd1a1400512028b79",
+          "start_ms": 27680,
+          "end_ms": 32920,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "8f139657c9edfb7ad348d63aa2b9b2d6b3639dadc60343e489c62be678cf8f48",
+          "start_ms": 11320,
+          "end_ms": 20520,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "d219a948f20f3a2b849ef42058cb75cb6d641117ad5ad645f3cc9d01f344e219",
+          "start_ms": 103640,
+          "end_ms": 109680,
+          "name_present": false
+        }
+      ],
+      "concerns": [],
+      "structured_reviews": 5,
+      "disposition": "No concerns reported by these model reviews; human listening still pending"
+    },
+    {
+      "id": "verify-readiness-fil",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "01d28410fd73a64b4928cf1f459fe1d26520c3e7896b618fbb39e005f8bec807",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "9395d54be732fc4c257469774971d6e6104bdb84c5c18ff5ec27495ed6a353d7",
+          "start_ms": 3340,
+          "end_ms": 6820,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "9395d54be732fc4c257469774971d6e6104bdb84c5c18ff5ec27495ed6a353d7",
+          "start_ms": 3340,
+          "end_ms": 6820,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "b80b62b76f8e0602c432a240c722a55c84d786c023bbd4ff14f53e28b40b2160",
+          "start_ms": 11020,
+          "end_ms": 22620,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "5b3ed5f2f9473748c311fbe81bbaa07303b8ac1a25106ab280db8bf94b60d88a",
+          "start_ms": 113260,
+          "end_ms": 118900,
+          "name_present": false
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "name",
+          "field": "meaning_concerns",
+          "value": [
+            {
+              "timestamp": "00:01 - 00:03",
+              "type": "readiness verification versus assumption",
+              "note": "The speaker relies on third-party hearsay ('may nagsabing...') rather than independently verifying whether the issue is actually resolved/ready."
+            }
+          ]
+        }
+      ],
+      "structured_reviews": 5,
+      "disposition": "Retain full/focused disagreements for human listening; no defect-free or stable-voice approval claimed"
+    },
+    {
+      "id": "verify-readiness-en",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "925a9b830d7e3bf5ae0878892bbdafb4d84c14b6ef619f11af2a644d1692a63c",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "f0efe45cbc8bb930b83512af4d7fbeab12c3302d05a1316384f72abbfeeaaab9",
+          "start_ms": 2940,
+          "end_ms": 5180,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "f0efe45cbc8bb930b83512af4d7fbeab12c3302d05a1316384f72abbfeeaaab9",
+          "start_ms": 2940,
+          "end_ms": 5180,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "5a92b638cc854ffd620dd47d51f36303f7201230e4221b4339b5d9cc1999434d",
+          "start_ms": 37620,
+          "end_ms": 43380,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "c9e208dd77d541dbde64667f839a17a0c3bbeffddec132d88b3d560cfabe50ab",
+          "start_ms": 105460,
+          "end_ms": 111260,
+          "name_present": false
+        }
+      ],
+      "concerns": [],
+      "structured_reviews": 5,
+      "disposition": "No concerns reported by these model reviews; human listening still pending"
+    },
+    {
+      "id": "practice-fil",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "4c7f903dc197ca1fbbd06ac28d3b087f97f0c2f87eddcf6a18c6410640b48904",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "c03af2c8a5c6f310d2f8004cbffa9ef0517f76ce640b76636e3fdc162d41bb2a",
+          "start_ms": 3020,
+          "end_ms": 16500,
+          "name_present": false
+        },
+        {
+          "kind": "meaning",
+          "sha256": "7366e8bce847904c96a0e32f5647ea2bdfa6d1b28368e73a4b78d37f10eb3e7e",
+          "start_ms": 16800,
+          "end_ms": 24560,
+          "name_present": false
+        },
+        {
+          "kind": "qualification",
+          "sha256": "c03af2c8a5c6f310d2f8004cbffa9ef0517f76ce640b76636e3fdc162d41bb2a",
+          "start_ms": 3020,
+          "end_ms": 16500,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "c1df344ae0f9174a647fc5eb3c9adf6b4996748dfb23dc0d79d6794ecd5aabfc",
+          "start_ms": 126180,
+          "end_ms": 133540,
+          "name_present": false
+        }
+      ],
+      "concerns": [],
+      "structured_reviews": 5,
+      "disposition": "No concerns reported by these model reviews; human listening still pending"
+    },
+    {
+      "id": "practice-en",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "cb3a86fb0d74133d377766b0319a9e9330b3c95a683911eb64c5de2f75b33b80",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "41149c5d47e075c7c5250cbb66f1e0ec842aed7addce33a527f92cc779810601",
+          "start_ms": 2860,
+          "end_ms": 15900,
+          "name_present": false
+        },
+        {
+          "kind": "meaning",
+          "sha256": "eab797e0c3b18de33f3b83232442da5fd5d41b9ce983569ef29e1a5f24f3cc8c",
+          "start_ms": 16200,
+          "end_ms": 22920,
+          "name_present": false
+        },
+        {
+          "kind": "qualification",
+          "sha256": "41149c5d47e075c7c5250cbb66f1e0ec842aed7addce33a527f92cc779810601",
+          "start_ms": 2860,
+          "end_ms": 15900,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "fe59930ef02640e6acf2c1487608366f363dd34fa8fe63f21736f755144cdf94",
+          "start_ms": 112780,
+          "end_ms": 119260,
+          "name_present": false
+        }
+      ],
+      "concerns": [],
+      "structured_reviews": 5,
+      "disposition": "No concerns reported by these model reviews; human listening still pending"
+    },
+    {
+      "id": "check-fil",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "475cdc5cb5c1625dfdb8faf0be504a6aafc7c7bad9e505cff0ec85871c01f146",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "68fd01d5580462bff134e9d8f32a8da29f82ae7ed4de1ac390d5cb5acb9e8f67",
+          "start_ms": 2940,
+          "end_ms": 11420,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "0f333434fe1151ce8816e3707ef25fb399ee8905fac43bfcd0ce71942bf2587a",
+          "start_ms": 19400,
+          "end_ms": 24880,
+          "name_present": false
+        },
+        {
+          "kind": "qualification",
+          "sha256": "68fd01d5580462bff134e9d8f32a8da29f82ae7ed4de1ac390d5cb5acb9e8f67",
+          "start_ms": 2940,
+          "end_ms": 11420,
+          "name_present": true
+        },
+        {
+          "kind": "ending",
+          "sha256": "991028b7d9ee0ffb0d8d64113f98b55d99d353c4ade63c292b415eb1fdf3d4d3",
+          "start_ms": 36700,
+          "end_ms": 44860,
+          "name_present": false
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "full",
+          "field": "uncertainty",
+          "value": "None; speech is fully audible, clearly articulated, and transcribed without ambiguity."
+        },
+        {
+          "kind": "qualification",
+          "field": "delivery_concerns",
+          "value": [
+            {
+              "timestamp": "00:00 - 00:08",
+              "description": "Synthesized text-to-speech (TTS) voice with consistent cadence and slightly artificial prosody."
+            }
+          ]
+        }
+      ],
+      "structured_reviews": 5,
+      "disposition": "Retain full/focused disagreements for human listening; no defect-free or stable-voice approval claimed"
+    },
+    {
+      "id": "check-en",
+      "source_review": "docs/lesson-183-audio-review.json",
+      "full_sha256": "bd2beb0384b255cfafb4c54dbade31bfeb775c19b90e837406ce920f9feea726",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "dd21401abb1d80256814ae16736703e7cfbf9773107f5e5fa37c4ffbebdd5cc3",
+          "start_ms": 2260,
+          "end_ms": 10820,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "51dd13d672e1fa0b43f97c37868793eca079e327ae641314342418cbcb50e280",
+          "start_ms": 18000,
+          "end_ms": 22000,
+          "name_present": false
+        },
+        {
+          "kind": "qualification",
+          "sha256": "dd21401abb1d80256814ae16736703e7cfbf9773107f5e5fa37c4ffbebdd5cc3",
+          "start_ms": 2260,
+          "end_ms": 10820,
+          "name_present": true
+        },
+        {
+          "kind": "ending",
+          "sha256": "2fc6e33e3ba8f35e63b2377a0da2c25b25548cc0b86778d0cbe67005a2a274c4",
+          "start_ms": 32220,
+          "end_ms": 40300,
+          "name_present": false
+        }
+      ],
+      "concerns": [],
+      "structured_reviews": 5,
+      "disposition": "No concerns reported by these model reviews; human listening still pending"
+    },
+    {
+      "id": "story-fil",
+      "source_review": "docs/lesson-183-story-audio-review.json",
+      "full_sha256": "399ffe4072fedc7592eba4a30909f7b322754ec4d1c2ee9353b92cbf6dfb835b",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "eaee98d161edd3a3a955ab518c2a8e5f433c2f90033334924bccc6cd0f41c9fd",
+          "start_ms": 0,
+          "end_ms": 9800,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "07079d5cc9eb82f3d9a728b47ec4d0936ad5edd772e287142429bb5f1d8afecd",
+          "start_ms": 21600,
+          "end_ms": 32560,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "997fcee3ad609ef953cf899804e7f8bc6e8f3a06b20ef1a89376fbdb416791b4",
+          "start_ms": 10100,
+          "end_ms": 21300,
+          "name_present": false
+        },
+        {
+          "kind": "ending",
+          "sha256": "88a0932d83c77aa79d81f53df3b638c2480e884114039365cfb21619adb78676",
+          "start_ms": 54660,
+          "end_ms": 70180,
+          "name_present": false
+        }
+      ],
+      "concerns": [
+        {
+          "kind": "full",
+          "field": "delivery_concerns",
+          "value": [
+            {
+              "timestamp": "00:09 - 00:10",
+              "issue": "Speaker and timbre transition from male narrator to female narrator."
+            },
+            {
+              "timestamp": "00:32 - 00:33",
+              "issue": "Speaker and timbre transition from female narrator back to male narrator."
+            },
+            {
+              "timestamp": "00:42 - 00:43",
+              "issue": "Speaker and timbre transition from male narrator to female narrator."
+            }
+          ]
+        }
+      ],
+      "structured_reviews": 5,
+      "disposition": "Retain full/focused disagreements for human listening; no defect-free or stable-voice approval claimed"
+    },
+    {
+      "id": "story-en",
+      "source_review": "docs/lesson-183-story-audio-review.json",
+      "full_sha256": "b4315930944224e47b6596bd3554e708725649ff5ab52f32e48e542cd48c33ce",
+      "excerpts": [
+        {
+          "kind": "name",
+          "sha256": "b57833b1f64e8e0480b8f2d2229ba85f32a13d07f47e7d1c527fc086666c54bd",
+          "start_ms": 0,
+          "end_ms": 8680,
+          "name_present": true
+        },
+        {
+          "kind": "meaning",
+          "sha256": "84da22043dcb0d5e088bebb9f2d4d76a36e5179ea31be3eb756fd6dc9e4eca23",
+          "start_ms": 19600,
+          "end_ms": 29720,
+          "name_present": true
+        },
+        {
+          "kind": "qualification",
+          "sha256": "b57833b1f64e8e0480b8f2d2229ba85f32a13d07f47e7d1c527fc086666c54bd",
+          "start_ms": 0,
+          "end_ms": 8680,
+          "name_present": true
+        },
+        {
+          "kind": "ending",
+          "sha256": "faeff4ea09a03f24b8ccc2c6c3730e7c20c421aaa23cf97baf9e7f1dc17badfb",
+          "start_ms": 50180,
+          "end_ms": 63980,
+          "name_present": false
+        }
+      ],
+      "concerns": [],
+      "structured_reviews": 5,
+      "disposition": "No concerns reported by these model reviews; human listening still pending"
+    }
+  ]
+}

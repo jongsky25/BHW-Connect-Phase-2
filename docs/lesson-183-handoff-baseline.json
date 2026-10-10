@@ -1,0 +1,851 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "f4bf3c25ec498cabac0b6e851337b312ff6333e7",
+  "lesson_number": "1.8.3",
+  "lesson_key": "safety-prepare",
+  "lesson_id": "022cc773-1996-4813-9122-de98ade936c4",
+  "module_id": "ffd36ec0-f8f9-4c7a-bf34-2ab821ac95ec",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "character": {
+    "name": "Apple",
+    "pronouns": "she/her",
+    "reference_status": "No supplied or generated likeness; coordinate one fictional reference during implementation"
+  },
+  "manifest": {
+    "lesson_key": "safety-prepare",
+    "position": 2,
+    "title_fil": "Paghahanda sa ligtas na gawain",
+    "title_en": "Prepare for safe work",
+    "objectives_fil": [
+      "Bumuo ng before-work checklist para sa station at field visit na may supplies, ruta, reporting contact at malinaw na dahilan kung kailan magpa-pause."
+    ],
+    "objectives_en": [
+      "Build a before-work checklist for station work and field visits covering supplies, route, reporting contact and explicit pause conditions."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "station-preparation",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice"
+      ]
+    },
+    {
+      "id": "field-preparation",
+      "concept_ids": [
+        "m8.accidents",
+        "m8.heat"
+      ]
+    },
+    {
+      "id": "combined-hazards",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.requirements"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice",
+        "m8.accidents",
+        "m8.heat",
+        "m8.requirements"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice",
+        "m8.accidents",
+        "m8.heat",
+        "m8.requirements"
+      ]
+    }
+  ],
+  "slide_anchors": [
+    {
+      "id": "slide-station-preparation",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice"
+      ]
+    },
+    {
+      "id": "slide-field-preparation",
+      "concept_ids": [
+        "m8.accidents",
+        "m8.heat"
+      ]
+    },
+    {
+      "id": "slide-combined-hazards",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.requirements"
+      ]
+    },
+    {
+      "id": "slide-practice",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice",
+        "m8.accidents",
+        "m8.heat",
+        "m8.requirements"
+      ]
+    },
+    {
+      "id": "slide-check",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice",
+        "m8.accidents",
+        "m8.heat",
+        "m8.requirements"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m8.prepare",
+      "read_ids": [
+        "station-preparation",
+        "combined-hazards",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-station-preparation",
+        "slide-combined-hazards",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.practice",
+      "read_ids": [
+        "station-preparation",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-station-preparation",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.accidents",
+      "read_ids": [
+        "field-preparation",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-field-preparation",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.heat",
+      "read_ids": [
+        "field-preparation",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-field-preparation",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.requirements",
+      "read_ids": [
+        "combined-hazards",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-combined-hazards",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "original_check": {
+    "prompt_fil": "May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?",
+    "prompt_en": "There is a threat on the route but many visits remain. What is safe?",
+    "options": [
+      {
+        "fil": "Ituloy mag-isa para matapos agad.",
+        "en": "Continue alone to finish quickly."
+      },
+      {
+        "fil": "Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor.",
+        "en": "Avoid the threat and arrange an alternative with the supervisor."
+      },
+      {
+        "fil": "Huwag ipaalam ang pagbabago ng ruta upang hindi makaabala.",
+        "en": "Change the route without telling anyone to avoid disruption."
+      }
+    ],
+    "correct_option_index": 1,
+    "feedback_fil": "Ang ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.",
+    "feedback_en": "The second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known."
+  },
+  "guided_minutes": 60,
+  "module_guided_minutes": 240,
+  "target_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/competency.json": "62fa9525b19906f2f3b2e8ccc7a5c19f5320b8f75b156a3881136fdcfc5546f9",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.en.md": "81c86df92b96e36651720ad9c31320a6e4f11c0f9eb44ce4aba93afb3145e269",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.fil.md": "19d39bb8d4a02afccda2b44e7c101f03a2dc0cc2ea23d4e62bb2c1360e669614",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json": "4a9c35f208a616e2f2674e22a4b6db2308e230c65969f220337de90589bb3108",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.en.md": "a78d0f1cf47873a3750edb756e5a8397ed07254745d1d40ebc7f04937e2e4ed2",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.fil.md": "5ea3e366bcb7130d7a917c96a40105b8a2fb06406ad7e0554d92968df1e5d2c9",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/slides.json": "47eafa47a4fb2a54776e925cf235497a27865079d777e87b88f634a688282374"
+  },
+  "target_files_utf8": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/competency.json": "{\n  \"observation_indicators\": [\n    {\n      \"objective_index\": 0,\n      \"observable_fil\": \"Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan.\",\n      \"observable_en\": \"Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning.\",\n      \"not_yet_fil\": \"Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.\",\n      \"not_yet_en\": \"Continues an unsafe route or unprotected task simply to finish the target.\",\n      \"levels\": {\n        \"kaya_na_fil\": \"Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan. Nagagawa kahit hindi pinapaalalahanan.\",\n        \"kaya_na_en\": \"Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning. Completes this without prompting.\",\n        \"kailangan_practice_fil\": \"May supplies at ruta ngunit kulang ang contact o pause condition; ipapunan bago muling magbrief.\",\n        \"kailangan_practice_en\": \"Lists supplies and route but misses a contact or pause condition; complete these before repeating the briefing.\",\n        \"hindi_pa_fil\": \"Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.\",\n        \"hindi_pa_en\": \"Continues an unsafe route or unprotected task simply to finish the target.\"\n      }\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.en.md": "## [purpose] Purpose\n\nBuild a before-work checklist for station work and field visits covering supplies, route, reporting contact and explicit pause conditions.\n\n## [time-materials] Time and materials\n\n60 minutes of facilitated practice within the subchapter's 4 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare local incident contacts, route reporting and buddy-system rules. Use a fictional route.\n\n## [opening] Opening\n\nThere is a threat on the route but many visits remain. What is safe?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known.\n\n## [misconception] Common misconception\n\nContinues an unsafe route or unprotected task simply to finish the target. A checklist must support a decision about safe starting conditions, not just list equipment.\n\n## [practice] Practice activity\n\nFill a card: task and scope; supplies and protection; route and weather; contact and return time; pause conditions. Tell your partner: “There is no soap and a threat on the route.” Explain what pauses and whose decision is needed. Alone, write the response. Before the next visit, confirm the route and contact.\n\n## [answer-key] Answer key\n\n2. Avoid the threat and arrange an alternative with the supervisor.\n\nThe second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known.\n\n## [observe] Observe\n\nCompletes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning.\n\nReady: Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning. Completes this without prompting.\n\nNeeds practice: Lists supplies and route but misses a contact or pause condition; complete these before repeating the briefing.\n\nNot yet: Continues an unsafe route or unprotected task simply to finish the target.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nLists supplies and route but misses a contact or pause condition; complete these before repeating the briefing. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23. The five hazard groups span both source-table pages. A local clinical trainer must review demonstrations and referral pathways. Immediate needlestick evaluation was checked against CDC on 25 September 2026. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.fil.md": "## [purpose] Layunin\n\nBumuo ng before-work checklist para sa station at field visit na may supplies, ruta, reporting contact at malinaw na dahilan kung kailan magpa-pause.\n\n## [time-materials] Oras at kagamitan\n\n60 minuto para sa pinadali na pagsasanay. Bahagi ito ng 4 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang lokal na incident contact, route reporting at buddy-system rules. Gumamit ng kunwaring ruta.\n\n## [opening] Pambungad\n\nMay banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.\n\n## [misconception] Karaniwang pagkakamali\n\nItinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target. Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.\n\n## [practice] Gawaing pagsasanay\n\nPunan ang card: gawain at saklaw; supplies at proteksyon; ruta at panahon; contact at oras ng balik; dahilan para mag-pause. Sabihin sa kapareha: “Walang sabon at may banta sa ruta.” Ipakita kung ano ang hindi muna gagawin at kanino hihingi ng pasya. Kung mag-isa, sagutin ang parehong sitwasyon sa papel. Bago ang susunod na visit, kumpirmahin ang ruta at contact.\n\n## [answer-key] Susi sa sagot\n\n2. Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor.\n\nAng ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.\n\n## [observe] Obserbahan\n\nKumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan.\n\nKaya na: Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: May supplies at ruta ngunit kulang ang contact o pause condition; ipapunan bago muling magbrief.\n\nHindi pa: Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nMay supplies at ruta ngunit kulang ang contact o pause condition; ipapunan bago muling magbrief. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23. Ang limang hazard group ay mula sa dalawang pahina ng source table. Suriin ng lokal na clinical trainer ang demo at referral pathway. Ang agarang needlestick evaluation ay sinuri sa CDC noong 25 Setyembre 2026. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"safety-prepare\",\n    \"position\": 2,\n    \"title_fil\": \"Paghahanda sa ligtas na gawain\",\n    \"title_en\": \"Prepare for safe work\",\n    \"objectives_fil\": [\n      \"Bumuo ng before-work checklist para sa station at field visit na may supplies, ruta, reporting contact at malinaw na dahilan kung kailan magpa-pause.\"\n    ],\n    \"objectives_en\": [\n      \"Build a before-work checklist for station work and field visits covering supplies, route, reporting contact and explicit pause conditions.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"station-preparation\",\n      \"concept_ids\": [\n        \"m8.prepare\",\n        \"m8.practice\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ihanda ang kontrol at kagamitan; iulat ang kulang bago magsagawa ng hindi ligtas na gawain.\",\n      \"takeaway_en\": \"Prepare controls and equipment; report gaps before undertaking unsafe work.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"field-preparation\",\n      \"concept_ids\": [\n        \"m8.accidents\",\n        \"m8.heat\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang ligtas na ruta at malinaw na reporting contact ay kasinghalaga ng listahan ng bibisitahin.\",\n      \"takeaway_en\": \"A safe route and clear reporting contact matter as much as the visit list.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"combined-hazards\",\n      \"concept_ids\": [\n        \"m8.prepare\",\n        \"m8.requirements\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon.\",\n      \"takeaway_en\": \"Combined hazards may require changing the work and obtaining the appropriate decision.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m8.prepare\",\n        \"m8.practice\",\n        \"m8.accidents\",\n        \"m8.heat\",\n        \"m8.requirements\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.\",\n      \"takeaway_en\": \"A checklist must support a decision about safe starting conditions, not just list equipment.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m8.prepare\",\n        \"m8.practice\",\n        \"m8.accidents\",\n        \"m8.heat\",\n        \"m8.requirements\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.\",\n      \"takeaway_en\": \"A checklist must support a decision about safe starting conditions, not just list equipment.\",\n      \"check\": {\n        \"prompt_fil\": \"May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?\",\n        \"prompt_en\": \"There is a threat on the route but many visits remain. What is safe?\",\n        \"options\": [\n          {\n            \"fil\": \"Ituloy mag-isa para matapos agad.\",\n            \"en\": \"Continue alone to finish quickly.\"\n          },\n          {\n            \"fil\": \"Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor.\",\n            \"en\": \"Avoid the threat and arrange an alternative with the supervisor.\"\n          },\n          {\n            \"fil\": \"Huwag ipaalam ang pagbabago ng ruta upang hindi makaabala.\",\n            \"en\": \"Change the route without telling anyone to avoid disruption.\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Ang ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.\",\n        \"feedback_en\": \"The second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m8.prepare\",\n      \"read_ids\": [\n        \"station-preparation\",\n        \"combined-hazards\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-station-preparation\",\n        \"slide-combined-hazards\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.practice\",\n      \"read_ids\": [\n        \"station-preparation\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-station-preparation\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.accidents\",\n      \"read_ids\": [\n        \"field-preparation\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-field-preparation\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.heat\",\n      \"read_ids\": [\n        \"field-preparation\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-field-preparation\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.requirements\",\n      \"read_ids\": [\n        \"combined-hazards\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-combined-hazards\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        21,\n        22,\n        23\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": []\n}\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.en.md": "## [station-preparation] Prepare the area and equipment\n\nAna, 33, is preparing for station work and home visits on a hot day. She needs to check supplies and the route with the midwife.\n\nArrange for the slippery entrance to be corrected and keep people away from the hazard. Check for the correct sharps container, hand-hygiene supplies and PPE required for the task. Know the safe route and incident contact. If essential protection is missing or a task exceeds training, pause and escalate to the supervisor. Gloves or a mask do not replace removing a hazard when removal is possible.\n\n## [field-preparation] Plan a safe field visit\n\nBefore leaving, check weather, slippery paths, dogs and possible threats. Share the route and expected return time; use a buddy system when local protocols call for one. Carry drinking water and plan shade and rest during heat. Do not enter an unsafe situation; arrange an alternative. Report accidents, bites or illness promptly and follow the appropriate referral rather than finishing the household list first.\n\n## [combined-hazards] When hazards combine\n\nClients arrive in a surge, the room is hot and some PPE is unavailable. As a group, identify tasks to pause, tasks that can be modified and who must decide. Consider staffing capacity and client flow; extra BHW hours should not be the only answer. Propose one safer alternative for supervisor approval.\n\n## [practice] Try it, then repeat\n\nFill a card: task and scope; supplies and protection; route and weather; contact and return time; pause conditions. Tell your partner: “There is no soap and a threat on the route.” Explain what pauses and whose decision is needed. Alone, write the response. Before the next visit, confirm the route and contact.\n\n## [check] Choose the next step\n\nChoose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.fil.md": "## [station-preparation] Ihanda ang lugar at kagamitan\n\nSi Ana, 33, ay naghahanda ng station duty at home visits sa mainit na araw. May mga gamit at rutang kailangan munang suriin kasama ang midwife.\n\nIpaayos ang madulas na pasukan at ilayo muna ang mga tao sa panganib. Tiyaking may angkop na lalagyan ng sharps, hand-hygiene supplies at PPE na itinakda para sa gawain. Alamin ang ligtas na ruta at contact kapag may insidente. Kung kulang ang mahalagang proteksyon o lampas sa pagsasanay ang ipinapagawa, huminto at iakyat sa supervisor. Hindi pinapalitan ng gloves o mask ang pag-alis ng hazard kung kaya itong alisin.\n\n## [field-preparation] Planuhin ang ligtas na pagbisita\n\nBago lumakad, suriin ang panahon, madulas na daan, aso at posibleng banta. Ipaalam ang ruta at inaasahang balik; gumamit ng buddy system kung itinakda ng lokal na protocol. Magdala ng inuming tubig at magplano ng lilim at pahinga sa init. Huwag tumuloy sa lugar na hindi ligtas; makipag-ugnayan para sa alternatibo. Iulat agad ang aksidente, kagat o pagkakasakit at sundin ang naaangkop na referral, sa halip na tapusin muna ang listahan ng bahay.\n\n## [combined-hazards] Kapag pinagsama ang mga panganib\n\nMay dagsa ng kliyente, mainit ang silid at ubos ang ilang PPE. Sa grupo, tukuyin kung aling gawain ang kailangang ihinto, alin ang maaaring baguhin, at kanino hihingi ng desisyon. Isama ang kapasidad ng staff at daloy ng kliyente; huwag gawing tanging sagot ang dagdag na oras ng BHW. Maglatag ng isang ligtas na alternatibo na dapat aprubahan ng supervisor.\n\n## [practice] Subukan, saka ulitin\n\nPunan ang card: gawain at saklaw; supplies at proteksyon; ruta at panahon; contact at oras ng balik; dahilan para mag-pause. Sabihin sa kapareha: “Walang sabon at may banta sa ruta.” Ipakita kung ano ang hindi muna gagawin at kanino hihingi ng pasya. Kung mag-isa, sagutin ang parehong sitwasyon sa papel. Bago ang susunod na visit, kumpirmahin ang ruta at contact.\n\n## [check] Piliin ang susunod na hakbang\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/slides.json": "[\n  {\n    \"id\": \"slide-station-preparation\",\n    \"concept_ids\": [\n      \"m8.prepare\",\n      \"m8.practice\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Ihanda ang lugar at kagamitan\",\n    \"heading_en\": \"Prepare the area and equipment\",\n    \"display_fil\": \"Itama ang madulas na pasukan. Suriin ang sharps box, hand-hygiene supplies at PPE. Tiyakin ang ligtas na ruta at incident contact. Kulang ang proteksyon o lampas sa training? Mag-pause at kausapin ang supervisor.\",\n    \"display_en\": \"Correct the slippery entrance. Check the sharps container, hand-hygiene supplies and PPE. Confirm a safe route and incident contact. Missing protection or beyond training? Pause and contact the supervisor.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-field-preparation\",\n    \"concept_ids\": [\n      \"m8.accidents\",\n      \"m8.heat\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Planuhin ang ligtas na pagbisita\",\n    \"heading_en\": \"Plan a safe field visit\",\n    \"display_fil\": \"Suriin ang panahon, daan, aso at banta. Ipaalam ang ruta at oras ng balik; buddy kung kailangan sa protocol. Magdala ng tubig, planuhin ang lilim at pahinga. Huwag pumasok sa hindi ligtas na sitwasyon.\",\n    \"display_en\": \"Check weather, paths, dogs and threats. Share the route and return time; use a buddy when the protocol requires it. Carry water and plan shade and rest. Do not enter an unsafe situation.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-combined-hazards\",\n    \"concept_ids\": [\n      \"m8.prepare\",\n      \"m8.requirements\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Kapag pinagsama ang mga panganib\",\n    \"heading_en\": \"When hazards combine\",\n    \"display_fil\": \"Mainit, maraming kliyente at kulang ang PPE: tukuyin ang ihihinto, maaaring baguhin at kailangang pasya ng supervisor. Isama ang staffing at daloy ng kliyente; hindi puro dagdag-oras ng BHW ang sagot.\",\n    \"display_en\": \"Heat, a client surge and missing PPE: identify what pauses, what can change and what needs a supervisor’s decision. Consider staffing and client flow; extra BHW hours cannot be the only response.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-practice\",\n    \"concept_ids\": [\n      \"m8.prepare\",\n      \"m8.practice\",\n      \"m8.accidents\",\n      \"m8.heat\",\n      \"m8.requirements\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Subukan, saka ulitin\",\n    \"heading_en\": \"Try it, then repeat\",\n    \"display_fil\": \"Bago umalis: saklaw, supplies, ruta, contact, oras ng balik, pause conditions. Iulat ang kulang at kumuha ng ligtas na alternatibo.\",\n    \"display_en\": \"Before leaving: scope, supplies, route, contact, return time, pause conditions. Report gaps and arrange a safe alternative.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-check\",\n    \"concept_ids\": [\n      \"m8.prepare\",\n      \"m8.practice\",\n      \"m8.accidents\",\n      \"m8.heat\",\n      \"m8.requirements\"\n    ],\n    \"layout\": \"decision\",\n    \"heading_fil\": \"Piliin ang susunod na hakbang\",\n    \"heading_en\": \"Choose the next step\",\n    \"display_fil\": \"Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.\",\n    \"display_en\": \"A checklist must support a decision about safe starting conditions, not just list equipment.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?\",\n      \"prompt_en\": \"There is a threat on the route but many visits remain. What is safe?\",\n      \"options\": [\n        {\n          \"fil\": \"Ituloy mag-isa para matapos agad.\",\n          \"en\": \"Continue alone to finish quickly.\"\n        },\n        {\n          \"fil\": \"Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor.\",\n          \"en\": \"Avoid the threat and arrange an alternative with the supervisor.\"\n        },\n        {\n          \"fil\": \"Huwag ipaalam ang pagbabago ng ruta upang hindi makaabala.\",\n          \"en\": \"Change the route without telling anyone to avoid disruption.\"\n        }\n      ],\n      \"correct_option_index\": 1,\n      \"feedback_fil\": \"Ang ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.\",\n      \"feedback_en\": \"The second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known.\"\n    }\n  }\n]\n"
+  },
+  "sibling_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/competency.json": "0dd455b8dfd41341cafc661818d4b46e752c7381dfe259c01fb9610aadb82ff7",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.en.md": "75b490224d82166e491f1b1119b4c43e5beeae81738a8fe7ffb8595416d6edeb",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.fil.md": "b7e2bd70d13ff055da1603e9569ed09fd8c034c06fffe696e1eacc9f66eeb809",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json": "1c3c29044a38237688393ef4496dbc53d62c0a25433ee7cc893d289e021b73fb",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.en.md": "35d2df2359aa577e1a12ac7249021ab6fad8dfccc04dcaa0386f832521a6f8f7",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.fil.md": "91be0081e0475a60c2689e929f6340be2ec0d217baf9d1889744ca48b30404ae",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/slides.json": "69dd30daecc53559fd8105a95b8284a18a6b40df61fb946e188db1a13d804887",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/competency.json": "a082c90db70837d7b21d33c62b44191a3ef767c16307038547b6ff07654c2fe4",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.en.md": "c342d5b0f35444a3ec4d43d9976e4fa7b35fb79b5b927dbaf8e84aea3d56d27b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.fil.md": "b56b7b7fe4475e5a3fc337a06393d6bcf8e5ffbcf0cd46a86bf5186f8b346340",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json": "4a3dc79df78b737df53fb18fbf56c97a786fc454a358cea54c44dc775242a59e",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.en.md": "8df2159348482659d9b895a87e6392ae3f1415e08148a234380d58479aa1c36d",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.fil.md": "3fb99726ff80bea59b0a8054b1779a418bf33e55394c444c1d8ad09d5adfc027",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/slides.json": "f1a3b14af5e925c91a11b983ad71db2d6045201dca1bd5feda61eef18d4fc6cf",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/competency.json": "816f911e781bfacb9382c0fe8c74a5623931ec82a146446a5c77daf95b60415e",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.en.md": "fbb018c7c22c93252dc7fd38adf341c8b2d3176676ad939ac9880755c3048d3b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.fil.md": "120daea8442d5e46343e73e8710f156e402ee921cab138bb58138df8c9f348cd",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json": "da547084f728cbf926a335aa45a89e0b4d919abfab7f1b929abb57a57d7a9f69",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.en.md": "bb15c2fb0a8fa6c79a95078aaed555399d8188bc95edebb87b878af949e3f871",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.fil.md": "0d48728ca253308c04466b5a998d09fcc78d0b5fd3e8667e1793bd7ad8dcdffd",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/slides.json": "eb84aadacd14496d30767d0a3c5b3d5ba9e0c10aad1d13c15edc26c4ae2cada5"
+  },
+  "shared_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/module.json": "708671d7fdb33f27dd5dc34ab1e6c2310160d46ec47e7349f3015328019817b4",
+    "content/training/day1-basic-competencies/narration.json": "48e8a49c85578accd15f1bcb771565add70d9861d05ab881a7c76dc1c14899e5",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    "remotion/src/Root.tsx": "e80a544e762c1298f30cf6fa57ac0cc94c9196cccaa09f83c6994529c5a68c69",
+    "src/components/elearning/reference-lessons.tsx": "7fe32058b7d5d52a54e1fa2ca93d042b9ee2798576d6c7b1015be5cb7965355c",
+    "scripts/lib/reference-narration.mjs": "14f8df35198b76b74d610cf9d506a611b0476bfaff211a71e7f384e8b0f88a51",
+    "scripts/lib/reference-load.mjs": "97b0e95f026d4695c8fe59b3197759c2670b03f66fe8b5fea39a3c818cd5bdbd"
+  },
+  "source_files_sha256": {
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976"
+  },
+  "target_narration": {
+    "module": "08-osh",
+    "sections": {
+      "check": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-prepare/check.en.1ae742f86d75.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "1ae742f86d754ce8be5f4846356a0947529401ae367bb4ee47c126c618088b85",
+          "sha256": "b25804755b5255e61060c1fa617ffac4c4ce892ed1d909f6504e1355e1210e62",
+          "duration_seconds": 18.808,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 2160
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2460,
+              "end_ms": 7460
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7760,
+              "end_ms": 11040
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+              "start_ms": 11340,
+              "end_ms": 18740
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-prepare/check.fil.7807b3a28591.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "7807b3a285912f0c7bc11a8526aa80e48485490af2bff5ffc35d8d0a04f3eb4f",
+          "sha256": "9c1d1ca6ec7c911db43506573b98a8c32445fcae7ba342f237410beb1c61b35b",
+          "duration_seconds": 20.689,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 2600
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 2900,
+              "end_ms": 8460
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 8760,
+              "end_ms": 13280
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
+              "start_ms": 13580,
+              "end_ms": 20620
+            }
+          ]
+        }
+      },
+      "combined-hazards": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-prepare/combined-hazards.en.144a339d17e7.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "144a339d17e723450b9a6a8d9dc1c9e650af8c5ea068c9d5e22fa56284b9baf3",
+          "sha256": "d71011e09f422fc8953dfb06107b939cab3c8c3d57b21634fd1247ef026533f0",
+          "duration_seconds": 37.564,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "When hazards combine",
+              "start_ms": 0,
+              "end_ms": 2160
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Clients arrive in a surge, the room is hot and some PPE is unavailable.",
+              "start_ms": 2460,
+              "end_ms": 9300
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "As a group, identify tasks to pause, tasks that can be modified and who must decide.",
+              "start_ms": 9600,
+              "end_ms": 17560
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Consider staffing capacity and client flow; extra BHW hours should not be the only answer.",
+              "start_ms": 17860,
+              "end_ms": 26100
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Propose one safer alternative for supervisor approval.",
+              "start_ms": 26400,
+              "end_ms": 30880
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Combined hazards may require changing the work and obtaining the appropriate decision.",
+              "start_ms": 31180,
+              "end_ms": 37500
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-prepare/combined-hazards.fil.f6e1f52dd2e7.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "f6e1f52dd2e7adcd7740984ad03fe19825cbfa8183941ff9247a0af9c559eeb3",
+          "sha256": "7b2547f7f014fde6ea4cb0ded218b3c5acbfff5b852232570c0d214da2db6b8c",
+          "duration_seconds": 41.247,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Kapag pinagsama ang mga panganib",
+              "start_ms": 0,
+              "end_ms": 2600
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "May dagsa ng kliyente, mainit ang silid at ubos ang ilang PPE.",
+              "start_ms": 2900,
+              "end_ms": 8340
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Sa grupo, tukuyin kung aling gawain ang kailangang ihinto, alin ang maaaring baguhin, at kanino hihingi ng desisyon.",
+              "start_ms": 8640,
+              "end_ms": 18120
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Isama ang kapasidad ng staff at daloy ng kliyente; huwag gawing tanging sagot ang dagdag na oras ng BHW.",
+              "start_ms": 18420,
+              "end_ms": 27060
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Maglatag ng isang ligtas na alternatibo na dapat aprubahan ng supervisor.",
+              "start_ms": 27360,
+              "end_ms": 33520
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon.",
+              "start_ms": 33820,
+              "end_ms": 41180
+            }
+          ]
+        }
+      },
+      "field-preparation": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-prepare/field-preparation.en.fe2a1c67ca72.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "fe2a1c67ca72c50cfdb32001a16c93909a9f7c0e3055deafcaafe9f7679b77f6",
+          "sha256": "2ee5f5f3bf7ba781a2f89e1f3182a6dd501a5d745b13c05603df16e537b477e3",
+          "duration_seconds": 41.273,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Plan a safe field visit",
+              "start_ms": 0,
+              "end_ms": 2360
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Before leaving, check weather, slippery paths, dogs and possible threats.",
+              "start_ms": 2660,
+              "end_ms": 8940
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Share the route and expected return time; use a buddy system when local protocols call for one.",
+              "start_ms": 9240,
+              "end_ms": 16160
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Carry drinking water and plan shade and rest during heat.",
+              "start_ms": 16460,
+              "end_ms": 20900
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Do not enter an unsafe situation; arrange an alternative.",
+              "start_ms": 21200,
+              "end_ms": 26080
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Report accidents, bites or illness promptly and follow the appropriate referral rather than finishing the household list first.",
+              "start_ms": 26380,
+              "end_ms": 35500
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A safe route and clear reporting contact matter as much as the visit list.",
+              "start_ms": 35800,
+              "end_ms": 41200
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-prepare/field-preparation.fil.e537bb98b24a.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "e537bb98b24af5315e9b2e0c10e1eced789b285704d249b6732e48e54586b476",
+          "sha256": "fed63a9be8a3d79541054829c861e19fc375f2aced034602124a18be2b2948e8",
+          "duration_seconds": 49.398,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Planuhin ang ligtas na pagbisita",
+              "start_ms": 0,
+              "end_ms": 2840
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Bago lumakad, suriin ang panahon, madulas na daan, aso at posibleng banta.",
+              "start_ms": 3140,
+              "end_ms": 10540
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ipaalam ang ruta at inaasahang balik; gumamit ng buddy system kung itinakda ng lokal na protocol.",
+              "start_ms": 10840,
+              "end_ms": 18360
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Magdala ng inuming tubig at magplano ng lilim at pahinga sa init.",
+              "start_ms": 18660,
+              "end_ms": 24300
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Huwag tumuloy sa lugar na hindi ligtas; makipag-ugnayan para sa alternatibo.",
+              "start_ms": 24600,
+              "end_ms": 30600
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Iulat agad ang aksidente, kagat o pagkakasakit at sundin ang naaangkop na referral, sa halip na tapusin muna ang listahan ng bahay.",
+              "start_ms": 30900,
+              "end_ms": 42060
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang ligtas na ruta at malinaw na reporting contact ay kasinghalaga ng listahan ng bibisitahin.",
+              "start_ms": 42360,
+              "end_ms": 49320
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-prepare/practice.en.08571bc4a45a.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "08571bc4a45abb3ba70a35bd8370e03caf1234fa68c51236aec0db5ad9f47d39",
+          "sha256": "e92834544168c7ff3d574d2a954593c727f08ba17d5cf27fa7a933116e9bd779",
+          "duration_seconds": 38.975,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2760
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Fill a card: task and scope; supplies and protection; route and weather; contact and return time; pause conditions.",
+              "start_ms": 3060,
+              "end_ms": 12820
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Tell your partner: “There is no soap and a threat on the route.”",
+              "start_ms": 13120,
+              "end_ms": 18960
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Explain what pauses and whose decision is needed.",
+              "start_ms": 19260,
+              "end_ms": 23700
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Alone, write the response.",
+              "start_ms": 24000,
+              "end_ms": 26640
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Before the next visit, confirm the route and contact.",
+              "start_ms": 26940,
+              "end_ms": 31460
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+              "start_ms": 31760,
+              "end_ms": 38920
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-prepare/practice.fil.f0277bb3b5cb.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "f0277bb3b5cb716d5eef821a49c703c6de8afff07d6fb33516d475bdf51fe7b4",
+          "sha256": "06d0ab77eca1394aa5495b5a012d293b216d872cc8fc8dd7c2b71eeac6511902",
+          "duration_seconds": 42.397,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 2640
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Punan ang card: gawain at saklaw; supplies at proteksyon; ruta at panahon; contact at oras ng balik; dahilan para mag-pause.",
+              "start_ms": 2940,
+              "end_ms": 14420
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Sabihin sa kapareha: “Walang sabon at may banta sa ruta.”",
+              "start_ms": 14720,
+              "end_ms": 19800
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ipakita kung ano ang hindi muna gagawin at kanino hihingi ng pasya.",
+              "start_ms": 20100,
+              "end_ms": 25660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Kung mag-isa, sagutin ang parehong sitwasyon sa papel.",
+              "start_ms": 25960,
+              "end_ms": 29800
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Bago ang susunod na visit, kumpirmahin ang ruta at contact.",
+              "start_ms": 30100,
+              "end_ms": 34900
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
+              "start_ms": 35200,
+              "end_ms": 42320
+            }
+          ]
+        }
+      },
+      "station-preparation": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-prepare/station-preparation.en.7c1377e069d1.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "7c1377e069d1887a9979c231cd281e4f0abf36ca7a6bcd426bcf220f61bf939f",
+          "sha256": "5d7fbaa72083b474aefe9bddf379fe0cedc6703024eeed90d144a63f847b2659",
+          "duration_seconds": 52.872,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Prepare the area and equipment",
+              "start_ms": 0,
+              "end_ms": 2480
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ana, 33, is preparing for station work and home visits on a hot day.",
+              "start_ms": 2780,
+              "end_ms": 8980
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "She needs to check supplies and the route with the midwife.",
+              "start_ms": 9280,
+              "end_ms": 13560
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Arrange for the slippery entrance to be corrected and keep people away from the hazard.",
+              "start_ms": 13860,
+              "end_ms": 19860
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Check for the correct sharps container, hand-hygiene supplies and PPE required for the task.",
+              "start_ms": 20160,
+              "end_ms": 27360
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Know the safe route and incident contact.",
+              "start_ms": 27660,
+              "end_ms": 31660
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "If essential protection is missing or a task exceeds training, pause and escalate to the supervisor.",
+              "start_ms": 31960,
+              "end_ms": 39760
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Gloves or a mask do not replace removing a hazard when removal is possible.",
+              "start_ms": 40060,
+              "end_ms": 46180
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Prepare controls and equipment; report gaps before undertaking unsafe work.",
+              "start_ms": 46480,
+              "end_ms": 52800
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-prepare/station-preparation.fil.a271949af474.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "a271949af47423100350ca2686292ab316039296476402677905ea3a868a5866",
+          "sha256": "68ef76a3ca82d533e6e9d2adac902d343833aee000f1cd8404a6795f7e291c4f",
+          "duration_seconds": 58.854,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Ihanda ang lugar at kagamitan",
+              "start_ms": 0,
+              "end_ms": 2880
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Si Ana, 33, ay naghahanda ng station duty at home visits sa mainit na araw.",
+              "start_ms": 3180,
+              "end_ms": 9740
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "May mga gamit at rutang kailangan munang suriin kasama ang midwife.",
+              "start_ms": 10040,
+              "end_ms": 15160
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ipaayos ang madulas na pasukan at ilayo muna ang mga tao sa panganib.",
+              "start_ms": 15460,
+              "end_ms": 21140
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Tiyaking may angkop na lalagyan ng sharps, hand-hygiene supplies at PPE na itinakda para sa gawain.",
+              "start_ms": 21440,
+              "end_ms": 30400
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Alamin ang ligtas na ruta at contact kapag may insidente.",
+              "start_ms": 30700,
+              "end_ms": 35140
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Kung kulang ang mahalagang proteksyon o lampas sa pagsasanay ang ipinapagawa, huminto at iakyat sa supervisor.",
+              "start_ms": 35440,
+              "end_ms": 44000
+            },
+            {
+              "zone": "body",
+              "index": 6,
+              "text": "Hindi pinapalitan ng gloves o mask ang pag-alis ng hazard kung kaya itong alisin.",
+              "start_ms": 44300,
+              "end_ms": 50900
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ihanda ang kontrol at kagamitan; iulat ang kulang bago magsagawa ng hindi ligtas na gawain.",
+              "start_ms": 51200,
+              "end_ms": 58800
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "production_snapshot_status": "Not captured: handoff preparation makes no production queries",
+  "owner_release_approval": false
+}

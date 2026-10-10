@@ -1,0 +1,148 @@
+{
+  "authorization": "approved. merge and deploy",
+  "approved_at": "2026-10-10",
+  "lesson_keys": [
+    "safety-prepare"
+  ],
+  "reviewed_head": "3696d2fd89b5f9525e7f754945f9fa99bcf0d26c",
+  "reviewed_artifact_id": 11607316897,
+  "reviewed_run_id": 37911676494,
+  "reviewed_archive_sha256": "2b40a00198f416102778dfd0b8d5bc0a3bc99a7d120c1004db50b8d6df31705e",
+  "reviewed_package_sha256": "795ca36fe03b29c736cc62e2a865fbe6a3f3d1370e493c567623546bba20964e",
+  "reviewed_lesson_sha256": "38dd45c86b44591fdb5fdb434d7e214c6b1de7704ff8b3b849d057b293e710e0",
+  "reviewed_lesson_utf8": "{\n  \"manifest\": {\n    \"lesson_key\": \"safety-prepare\",\n    \"position\": 2,\n    \"title_fil\": \"Paghahanda sa ligtas na gawain\",\n    \"title_en\": \"Prepare for safe work\",\n    \"objectives_fil\": [\n      \"Bumuo ng before-work checklist para sa station at field visit na may supplies, ruta, reporting contact at malinaw na dahilan kung kailan magpa-pause.\"\n    ],\n    \"objectives_en\": [\n      \"Build a before-work checklist for station work and field visits covering supplies, route, reporting contact and explicit pause conditions.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"station-preparation\",\n      \"concept_ids\": [\n        \"m8.prepare\",\n        \"m8.practice\"\n      ],\n      \"asset_ids\": [\n        \"safety-prepare-station-preparation\"\n      ],\n      \"takeaway_fil\": \"Ihanda ang kontrol at kagamitan; iulat ang kulang bago magsagawa ng hindi ligtas na gawain.\",\n      \"takeaway_en\": \"Prepare controls and equipment; report gaps before undertaking unsafe work.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"field-preparation\",\n      \"concept_ids\": [\n        \"m8.accidents\",\n        \"m8.heat\"\n      ],\n      \"asset_ids\": [\n        \"safety-prepare-field-preparation\"\n      ],\n      \"takeaway_fil\": \"Ang ligtas na ruta at malinaw na reporting contact ay kasinghalaga ng listahan ng bibisitahin.\",\n      \"takeaway_en\": \"A safe route and clear reporting contact matter as much as the visit list.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"combined-hazards\",\n      \"concept_ids\": [\n        \"m8.prepare\",\n        \"m8.requirements\"\n      ],\n      \"asset_ids\": [\n        \"safety-prepare-combined-hazards\"\n      ],\n      \"takeaway_fil\": \"Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon.\",\n      \"takeaway_en\": \"Combined hazards may require changing the work and obtaining the appropriate decision.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"verify-readiness\",\n      \"concept_ids\": [\n        \"m8.prepare\",\n        \"m8.practice\",\n        \"m8.requirements\"\n      ],\n      \"asset_ids\": [\n        \"safety-prepare-verify-readiness\"\n      ],\n      \"takeaway_fil\": \"Beripikahin ang kondisyon at pasya; hindi pa ready ang hindi pa nakumpirma.\",\n      \"takeaway_en\": \"Verify conditions and the decision; unconfirmed conditions are not ready.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m8.prepare\",\n        \"m8.practice\",\n        \"m8.accidents\",\n        \"m8.heat\",\n        \"m8.requirements\"\n      ],\n      \"asset_ids\": [\n        \"safety-prepare-practice\"\n      ],\n      \"takeaway_fil\": \"Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.\",\n      \"takeaway_en\": \"A checklist must support a decision about safe starting conditions, not just list equipment.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m8.prepare\",\n        \"m8.practice\",\n        \"m8.accidents\",\n        \"m8.heat\",\n        \"m8.requirements\"\n      ],\n      \"asset_ids\": [\n        \"safety-prepare-check\"\n      ],\n      \"takeaway_fil\": \"May ligtas na alternatibong napagkasunduan sa role-play; nakikita pa rin ang hindi pa ready bago magsimula.\",\n      \"takeaway_en\": \"The role-play has an agreed safe alternative; conditions that are not ready remain visible before work begins.\",\n      \"check\": {\n        \"prompt_fil\": \"May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?\",\n        \"prompt_en\": \"There is a threat on the route but many visits remain. What is safe?\",\n        \"options\": [\n          {\n            \"fil\": \"Ituloy mag-isa para matapos agad.\",\n            \"en\": \"Continue alone to finish quickly.\"\n          },\n          {\n            \"fil\": \"Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor.\",\n            \"en\": \"Avoid the threat and arrange an alternative with the supervisor.\"\n          },\n          {\n            \"fil\": \"Huwag ipaalam ang pagbabago ng ruta upang hindi makaabala.\",\n            \"en\": \"Change the route without telling anyone to avoid disruption.\"\n          }\n        ],\n        \"correct_option_index\": 1,\n        \"feedback_fil\": \"Una: Ang pagtuloy mag-isa ay pagpasok pa rin sa banta; hindi dahilan ang target. Ikalawa: Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor; kailangan pang kumpirmahin ang kondisyon bago umalis. Ikatlo: Ang hindi pagpapaalam ng bagong ruta ay nag-iiwan sa contact na walang tamang impormasyon tungkol sa lokasyon at oras ng balik. Sa kathang-isip na role-play, napagkasunduan ang mock station briefing muna at pagpapaliban ng apektadong visit. Hindi pa nakumpirma ang bagong ruta at visit contact: hindi pa ready ang visit at hindi ipinapalagay na nawala ang banta. Ulitin ang kasunduan at beripikahin bago magsimula.\",\n        \"feedback_en\": \"First: Continuing alone still enters the threat; the target does not justify it. Second: Avoid the threat and arrange an alternative with the supervisor; conditions still need confirmation before departure. Third: Not reporting a new route leaves the contact without accurate location and return-time information. In the fictional role-play, the agreed alternative is a mock station briefing and deferral of the affected visit. The new route and visit contact are unconfirmed: the visit is not ready and the threat is not assumed to have vanished. Repeat the agreement and verify before starting.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m8.prepare\",\n      \"read_ids\": [\n        \"station-preparation\",\n        \"combined-hazards\",\n        \"verify-readiness\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-station-preparation\",\n        \"slide-combined-hazards\",\n        \"slide-verify-readiness\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.practice\",\n      \"read_ids\": [\n        \"station-preparation\",\n        \"verify-readiness\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-station-preparation\",\n        \"slide-verify-readiness\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.accidents\",\n      \"read_ids\": [\n        \"field-preparation\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-field-preparation\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.heat\",\n      \"read_ids\": [\n        \"field-preparation\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-field-preparation\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    },\n    {\n      \"id\": \"m8.requirements\",\n      \"read_ids\": [\n        \"combined-hazards\",\n        \"verify-readiness\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-combined-hazards\",\n        \"slide-verify-readiness\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        21,\n        22,\n        23\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    }\n  ],\n  \"assets\": [\n    {\n      \"id\": \"safety-prepare-station-preparation\",\n      \"path\": \"/training/bhw-1-8/safety-prepare-station-preparation-f15177181b4f.png\",\n      \"content_hash\": \"f15177181b4f32783912db4ec395b81880ad5f29cd62c1f5eca7a98d684f855d\",\n      \"alt_fil\": \"Saklaw muna. Suriin ang lugar, supplies, hand hygiene at lokal na PPE. Kulang ang mahalagang proteksyon? Ihinto muna ang apektadong gawain, iulat at beripikahin ang pagwawasto.\",\n      \"alt_en\": \"Clarify scope. Check the station, supplies, hand hygiene and local PPE. Missing essential protection? Pause the affected task, report and verify correction.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon: Ihanda ang lugar at kagamitan\",\n      \"caption_en\": \"Fictional adaptation: Prepare the area and equipment\",\n      \"provenance\": \"Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"safety-prepare-field-preparation\",\n      \"path\": \"/training/bhw-1-8/safety-prepare-field-preparation-3defc70f619b.png\",\n      \"content_hash\": \"3defc70f619b6685cf47b11fccece0e510ef4e029ec3bda8dff3becc8fdf8f4c\",\n      \"alt_fil\": \"Ruta, panahon/init, tubig/lilim/pahinga, contact at balik: kumpirmahin bago umalis. Hindi tiyak ang ligtas na daan? Mag-pause at makipag-ugnayan para sa alternatibo.\",\n      \"alt_en\": \"Confirm route, weather/heat, water/shade/rest, contact and return time. Safe route uncertain? Pause and coordinate an alternative.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon: Planuhin ang ligtas na pagbisita\",\n      \"caption_en\": \"Fictional adaptation: Plan a safe field visit\",\n      \"provenance\": \"Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"safety-prepare-combined-hazards\",\n      \"path\": \"/training/bhw-1-8/safety-prepare-combined-hazards-4bbc01f495a9.png\",\n      \"content_hash\": \"4bbc01f495a9847f15ae494b45d6d13ef8e37a15e3c0b3012c7e15879d4e4101\",\n      \"alt_fil\": \"Kulang na proteksyon: pause. Ligtas na pagbabago: panukala. Kailangan ng pahintulot: supervisor. Isama ang staffing, daloy at pahinga; hindi puro dagdag-oras.\",\n      \"alt_en\": \"Missing protection: pause. Safe change: propose. Authorization needed: supervisor. Include staffing, flow and rest; extra hours alone are insufficient.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon: Kapag pinagsama ang mga panganib\",\n      \"caption_en\": \"Fictional adaptation: When hazards combine\",\n      \"provenance\": \"Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"safety-prepare-verify-readiness\",\n      \"path\": \"/training/bhw-1-8/safety-prepare-verify-readiness-173913e4ff5c.png\",\n      \"content_hash\": \"173913e4ff5c50312c69275ffa913ba437fcec6284156bf30518c6b1f1e88e01\",\n      \"alt_fil\": \"Hiniling ≠ naayos. Itala ang batayan, ready/hindi pa ready at contact. Sa role-play: briefing muna; visit nakahinto habang hindi pa tiyak ang ruta at contact.\",\n      \"alt_en\": \"Requested ≠ corrected. Record evidence, ready/not-ready and contact. In the role-play: briefing first; visit paused while route and contact remain unknown.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon: Beripikahin bago magsimula\",\n      \"caption_en\": \"Fictional adaptation: Verify before starting\",\n      \"provenance\": \"Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"safety-prepare-practice\",\n      \"path\": \"/training/bhw-1-8/safety-prepare-practice-2a423b2259f1.png\",\n      \"content_hash\": \"2a423b2259f108b9a12c9fe7cd4ecce3adfb145628473afcfb2e25142a7cdd83\",\n      \"alt_fil\": \"Limang field → briefing → tiyak na feedback → retry. Tatlong role, 25 minuto. Itala ang hindi pa alam; hindi pasado ang hindi naobserbahan.\",\n      \"alt_en\": \"Five fields → briefing → specific feedback → retry. Three roles, 25 minutes. Record unknowns; unobserved attempts are not passed.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon: Subukan, saka ulitin\",\n      \"caption_en\": \"Fictional adaptation: Try it, then repeat\",\n      \"provenance\": \"Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"safety-prepare-check\",\n      \"path\": \"/training/bhw-1-8/safety-prepare-check-2826943927d2.png\",\n      \"content_hash\": \"2826943927d2599eae7d82231a68ff1221ec5a6496748734a522c4cf9fc7d417\",\n      \"alt_fil\": \"May banta at hindi pa tiyak ang ibang daan. Piliin at ipaliwanag ang ligtas na hakbang bago tingnan ang feedback.\",\n      \"alt_en\": \"A threat is reported and another route is unconfirmed. Choose and explain a safe next step before viewing feedback.\",\n      \"caption_fil\": \"Kathang-isip na adaptasyon: Piliin ang susunod na hakbang\",\n      \"caption_en\": \"Fictional adaptation: Choose the next step\",\n      \"provenance\": \"Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.\",\n      \"review_status\": \"draft\"\n    },\n    {\n      \"id\": \"safety-prepare-story\",\n      \"alt_fil\": \"Anim na hakbang ni Apple: paghahanda, ruta, pasya, beripikasyon, retry at alternatibong may hindi pa tiyak.\",\n      \"alt_en\": \"Apple’s six steps: preparation, route, decision, verification, retry and an alternative with unresolved conditions.\",\n      \"caption_fil\": \"Kathang-isip na role-play: briefing muna; deferred ang visit habang hindi pa ready.\",\n      \"caption_en\": \"Fictional role-play: briefing first; visit deferred while conditions remain unready.\",\n      \"provenance\": \"Original six-scene Remotion adaptation using hash-pinned shared Apple reference and Gemini Kore narration. Measured beat boundaries and actual final-frame poster. Human listening, clinical and owner reviews pending.\",\n      \"review_status\": \"draft\",\n      \"videos\": {\n        \"fil\": {\n          \"path\": \"/training/bhw-1-8/safety-prepare-gemini-fil-41145f0ed082.mp4\",\n          \"content_hash\": \"41145f0ed0829b980cbad3f4d2cd27c0b9d116965a1a51a05367375ce886ee59\",\n          \"duration_s\": 72,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-8/safety-prepare-gemini-fil-457ca5392fa7-poster.jpg\",\n            \"content_hash\": \"457ca5392fa72cc7d9ba38dc85eb0c4aac0b9e3ef39bd83dedd149c29234a905\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-8/safety-prepare-gemini-fil-3a44b1b1423b.vtt\",\n            \"content_hash\": \"3a44b1b1423b51f6ae58d700afa0600ba9202f697aabea3db1ebe93ac0276023\"\n          }\n        },\n        \"en\": {\n          \"path\": \"/training/bhw-1-8/safety-prepare-gemini-en-0cabcedd0467.mp4\",\n          \"content_hash\": \"0cabcedd0467c5ed973ca31ec7e54c2c12b361cee989e4927aa8f67c8db01ea8\",\n          \"duration_s\": 66,\n          \"poster\": {\n            \"path\": \"/training/bhw-1-8/safety-prepare-gemini-en-6c04da47980b-poster.jpg\",\n            \"content_hash\": \"6c04da47980bd726e8be4dfd6869f47b8f2854d6ba0a75568a4e1be7150f3f6f\"\n          },\n          \"captions\": {\n            \"path\": \"/training/bhw-1-8/safety-prepare-gemini-en-ade9dce70e68.vtt\",\n            \"content_hash\": \"ade9dce70e68ffafe61e43fa0b4e57ab2dfbd2ab0902e9b245619b4584aebe32\"\n          }\n        }\n      },\n      \"path\": \"/training/bhw-1-8/safety-prepare-gemini-fil-457ca5392fa7-poster.jpg\",\n      \"content_hash\": \"457ca5392fa72cc7d9ba38dc85eb0c4aac0b9e3ef39bd83dedd149c29234a905\"\n    }\n  ],\n  \"featured_asset_id\": \"safety-prepare-story\"\n}\n",
+  "approved_source_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json": "c3109934fdc5f5c3319ff2263517e3126950cd55e9db9c329a5bc986e4c9c65a",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.fil.md": "4bc70e4d0447052d92a39d90265e1edb30e2853772ea93d554e33b4a103ebedd",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.en.md": "680c50e474e8d3697ee4d1233969f370deea55cd3632fda91dfebaffce957765",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/slides.json": "93f58fc0ee41c753f929245a6611bf1966bf0a0979b0c90b1d47e1c376913cf6",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/competency.json": "147c956d2062a67ed7d8c7b0bfe9df3ec1dd0bd2b04716e93ec49ce77a722dfe",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.fil.md": "f8802ae58ee5dbf1498094c3ad6f370a33bb66fb58036020866bd3ba8603283c",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.en.md": "e929a4dd9f07fb1361bad95556b14e95e75cf515d44367c4c31ee7a818bd8cac"
+  },
+  "approved_media": [
+    {
+      "path": "/training/bhw-1-8/safety-prepare-station-preparation-f15177181b4f.png",
+      "sha256": "f15177181b4f32783912db4ec395b81880ad5f29cd62c1f5eca7a98d684f855d",
+      "bytes": 1978637
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-field-preparation-3defc70f619b.png",
+      "sha256": "3defc70f619b6685cf47b11fccece0e510ef4e029ec3bda8dff3becc8fdf8f4c",
+      "bytes": 2245537
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-combined-hazards-4bbc01f495a9.png",
+      "sha256": "4bbc01f495a9847f15ae494b45d6d13ef8e37a15e3c0b3012c7e15879d4e4101",
+      "bytes": 2075772
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-verify-readiness-173913e4ff5c.png",
+      "sha256": "173913e4ff5c50312c69275ffa913ba437fcec6284156bf30518c6b1f1e88e01",
+      "bytes": 1914394
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-practice-2a423b2259f1.png",
+      "sha256": "2a423b2259f108b9a12c9fe7cd4ecce3adfb145628473afcfb2e25142a7cdd83",
+      "bytes": 1987732
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-check-2826943927d2.png",
+      "sha256": "2826943927d2599eae7d82231a68ff1221ec5a6496748734a522c4cf9fc7d417",
+      "bytes": 2080326
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-gemini-fil-41145f0ed082.mp4",
+      "sha256": "41145f0ed0829b980cbad3f4d2cd27c0b9d116965a1a51a05367375ce886ee59",
+      "bytes": 1073121
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-gemini-fil-457ca5392fa7-poster.jpg",
+      "sha256": "457ca5392fa72cc7d9ba38dc85eb0c4aac0b9e3ef39bd83dedd149c29234a905",
+      "bytes": 51756
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-gemini-fil-3a44b1b1423b.vtt",
+      "sha256": "3a44b1b1423b51f6ae58d700afa0600ba9202f697aabea3db1ebe93ac0276023",
+      "bytes": 1111
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-gemini-en-0cabcedd0467.mp4",
+      "sha256": "0cabcedd0467c5ed973ca31ec7e54c2c12b361cee989e4927aa8f67c8db01ea8",
+      "bytes": 972563
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-gemini-en-6c04da47980b-poster.jpg",
+      "sha256": "6c04da47980bd726e8be4dfd6869f47b8f2854d6ba0a75568a4e1be7150f3f6f",
+      "bytes": 48134
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-gemini-en-ade9dce70e68.vtt",
+      "sha256": "ade9dce70e68ffafe61e43fa0b4e57ab2dfbd2ab0902e9b245619b4584aebe32",
+      "bytes": 1046
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/check.en.648cab7df893.mp3",
+      "sha256": "bd2beb0384b255cfafb4c54dbade31bfeb775c19b90e837406ce920f9feea726",
+      "bytes": 161437
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/check.fil.7a7304781e73.mp3",
+      "sha256": "475cdc5cb5c1625dfdb8faf0be504a6aafc7c7bad9e505cff0ec85871c01f146",
+      "bytes": 179722
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/combined-hazards.en.9fa8525c5676.mp3",
+      "sha256": "83c7dd3131c729e837e6eb4439e9304404c88623a466a44e77330375669fb29f",
+      "bytes": 438962
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/combined-hazards.fil.bc7252954632.mp3",
+      "sha256": "e211db19c537b1f062361aa0a715df1f7e77f0af78d0c9f29730e7e7a2cc0eb7",
+      "bytes": 493819
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/field-preparation.en.befe9b41aebf.mp3",
+      "sha256": "2b0ce4235bb33f11120a16ac84444e5eb03ce6e3f5277841580a177a7b948336",
+      "bytes": 421825
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/field-preparation.fil.a1f4a9ee7c9e.mp3",
+      "sha256": "f8581ae4fe210eadc4665622966ffcc4019b460a6d15c6384e7ba08371352481",
+      "bytes": 483683
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/practice.en.375964258a53.mp3",
+      "sha256": "cb3a86fb0d74133d377766b0319a9e9330b3c95a683911eb64c5de2f75b33b80",
+      "bytes": 477309
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/practice.fil.583c39fbdc9d.mp3",
+      "sha256": "4c7f903dc197ca1fbbd06ac28d3b087f97f0c2f87eddcf6a18c6410640b48904",
+      "bytes": 534465
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/station-preparation.en.ef7db9d0f720.mp3",
+      "sha256": "c87734cc2e1906113bac73a41ec791967c92b390d16d46bd667793dbda647d68",
+      "bytes": 409496
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/station-preparation.fil.95e3bb14a885.mp3",
+      "sha256": "3e866927aafb5047c2bfe3c5f43ac1aabc641161e1bcab83cbf4772f3a7ddfbe",
+      "bytes": 455262
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/verify-readiness.en.7d4a2eabb269.mp3",
+      "sha256": "925a9b830d7e3bf5ae0878892bbdafb4d84c14b6ef619f11af2a644d1692a63c",
+      "bytes": 445336
+    },
+    {
+      "path": "/training/audio/08-osh/safety-prepare/verify-readiness.fil.d8e3e740fadc.mp3",
+      "sha256": "01d28410fd73a64b4928cf1f459fe1d26520c3e7896b618fbb39e005f8bec807",
+      "bytes": 475847
+    }
+  ],
+  "clinical_review": "pending; owner approval does not claim clinical review",
+  "human_listening": "pending; automated review disagreements retained",
+  "promotion": "Only seven target asset review_status fields changed"
+}
