@@ -1,0 +1,95 @@
+name: Lesson 1.8.2 frozen draft review
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson182-review.yml'
+      - 'scripts/lesson-182-*'
+      - 'docs/lesson-182-*'
+      - 'content/training/day1-basic-competencies/narration.json'
+      - 'remotion/**'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson182-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  frozen-review:
+    if: github.head_ref == 'codex/lesson-182-apple-handoff'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - name: Require committed story evidence
+        id: scope
+        run: |
+          if test -f docs/lesson-182-final-evidence-origins.json && ! test -f docs/lesson-182-owner-approval.json; then
+            echo "verify=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "verify=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@v4
+        if: steps.scope.outputs.verify == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.scope.outputs.verify == 'true'
+        run: npm ci
+      - if: steps.scope.outputs.verify == 'true'
+        run: npm ci
+        working-directory: remotion
+      - if: steps.scope.outputs.verify == 'true'
+        run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Retain pinned original evidence
+        if: steps.scope.outputs.verify == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-182-retain-evidence.mjs
+      - name: Verify source and media preservation
+        if: steps.scope.outputs.verify == 'true'
+        run: |
+          node scripts/lesson-182-preservation.mjs
+          node scripts/lesson-182-media-verify.mjs
+          python3 -m pip install PyMuPDF==1.26.6
+          python3 scripts/lesson-182-source-evidence.py
+      - name: Actual-component offline review and browser verification
+        if: steps.scope.outputs.verify == 'true'
+        run: |
+          node scripts/lesson-182-review-build.mjs
+          node scripts/lesson-182-browser-verify.mjs
+          node scripts/lesson-182-print-kit.mjs
+          python3 scripts/lesson-182-print-verify.py
+      - name: Exact-head normal CI and complete registry evidence
+        if: steps.scope.outputs.verify == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-182-wait-ci.mjs
+      - name: Bind raw reviews and package exact bytes
+        if: steps.scope.outputs.verify == 'true'
+        run: |
+          node scripts/lesson-182-review-verify.mjs
+          node scripts/lesson-182-package.mjs
+      - uses: actions/upload-artifact@v4
+        if: success() && steps.scope.outputs.verify == 'true'
+        with:
+          name: lesson182-review-package
+          path: |
+            .preview/lesson182-deliverables/lesson-1.8.2-apple-draft-review.zip
+            .preview/lesson182-deliverables/lesson-182-package-integrity.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: failure() && steps.scope.outputs.verify == 'true'
+        with:
+          name: lesson182-review-diagnostics
+          path: |
+            .preview/lesson182-deliverables/*.json
+            .preview/lesson182-deliverables/*.png
+          include-hidden-files: true
+          retention-days: 30

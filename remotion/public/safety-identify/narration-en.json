@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English as a warm community health trainer. Keep one stable adult female Kore narrator from heading to ending, including quoted dialogue; no character acting or speaker switching. Use gentle pitch and pace variation. Read Apple as written. Make hazard, possible harm, safe immediate action, contact verification and follow-up clear. Preserve every negation and unknown fact. Finish every word without adding a policy, diagnosis or completed correction.",
+  "durationSeconds": 51.931,
+  "beats": [
+    {
+      "zone": "ana",
+      "index": 0,
+      "text": "Apple notices a wet entrance and hot route. From a safe position, she identifies hazards.",
+      "start_ms": 0,
+      "end_ms": 7360
+    },
+    {
+      "zone": "inspect",
+      "index": 1,
+      "text": "A wet floor could cause a slip. Keep people away and request correction. The contact still needs confirmation.",
+      "start_ms": 7660,
+      "end_ms": 15100
+    },
+    {
+      "zone": "scope-and-contact",
+      "index": 2,
+      "text": "Apple asks whom to notify and which tasks are within her training. She does not invent an answer.",
+      "start_ms": 15400,
+      "end_ms": 21920
+    },
+    {
+      "zone": "five-hazards",
+      "index": 3,
+      "text": "Sharps, infection, strain, stress and accidents are different hazards. These are possible harms, not diagnoses.",
+      "start_ms": 22220,
+      "end_ms": 32300
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "In rehearsal, Apple replaces be careful with a specific report. The observer checks four fields, then she retries.",
+      "start_ms": 32600,
+      "end_ms": 42120
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Apple reports the wet entrance, slip risk and requested action. She will confirm the contact and follow up. Correction is not yet known.",
+      "start_ms": 42420,
+      "end_ms": 51860
+    }
+  ],
+  "audio_sha256": "329659e45e3e0e5d43eda0635adda3d6d3fb23d5f77f7f2e45444c06861d7f8a"
+}

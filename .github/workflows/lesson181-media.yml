@@ -1,0 +1,165 @@
+name: Lesson 1.8.1 draft media generation
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson181-media.yml'
+      - 'docs/lesson-181-authored-screens.json'
+      - 'scripts/lesson-181-media-build.mjs'
+      - 'scripts/remotion-safety-identify-narrate.mjs'
+      - 'scripts/lib/safety-identify-speech.mjs'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lesson181-media-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  draft:
+    if: github.head_ref == 'codex/lesson-181-apple-handoff' || github.ref_name == 'codex/lesson-181-apple-handoff'
+    outputs:
+      generate: ${{ steps.scope.outputs.generate }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Generate only before evidence is frozen
+        id: scope
+        run: |
+          if test -f docs/lesson-181-evidence-origins.json; then
+            echo "generate=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "generate=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@v4
+        if: steps.scope.outputs.generate == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.scope.outputs.generate == 'true'
+        run: npm ci
+      - if: steps.scope.outputs.generate == 'true'
+        run: npm ci
+        working-directory: remotion
+      - if: steps.scope.outputs.generate == 'true'
+        run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Bounded read-only published snapshot
+        if: steps.scope.outputs.generate == 'true'
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        continue-on-error: true
+        run: node scripts/lesson-181-published-snapshot.mjs
+      - name: Generate only target draft media and preserve old media
+        if: steps.scope.outputs.generate == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON181_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-181-record-fetch.mjs'
+        run: node scripts/lesson-181-media-build.mjs
+      - name: Full review of actual Read MP3 and shipped AAC
+        if: always() && steps.scope.outputs.generate == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON181_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-181-record-fetch.mjs'
+        run: node scripts/lesson-181-audio-review.mjs
+      - name: Decode and review fifty-six focused excerpts
+        if: always() && steps.scope.outputs.generate == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON181_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-181-record-fetch.mjs'
+        run: node scripts/lesson-181-audio-focus.mjs
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.scope.outputs.generate == 'true'
+        with:
+          name: lesson181-generated-evidence
+          path: |
+            lesson-181-published-snapshot.json
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/
+            public/training/audio/08-osh/safety-identify/
+            public/training/bhw-1-8/safety-identify-*
+            remotion/public/safety-identify/narration-*
+            remotion/public/safety-identify/shipped-aac-*
+            docs/lesson-181-media-generation.json
+            docs/lesson-181-audio-*.json
+            .preview/lesson181-raw/
+            .preview/lesson181-excerpts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+
+  frozen-review:
+    needs: draft
+    if: needs.draft.outputs.generate == 'false' && (github.head_ref == 'codex/lesson-181-apple-handoff' || github.ref_name == 'codex/lesson-181-apple-handoff')
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Retain exact generation and review evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-181-retain-evidence.mjs
+      - name: Verify scoped source preservation
+        run: node scripts/lesson-181-preservation.mjs
+      - name: Verify committed media and protected history
+        run: node scripts/lesson-181-media-verify.mjs
+      - name: Verify primary sources and excerpt hashes
+        run: |
+          python3 -m pip install PyMuPDF==1.26.6
+          python3 scripts/lesson-181-source-evidence.py
+      - name: Build actual-component offline review
+        run: node scripts/lesson-181-review-build.mjs
+      - name: Verify both languages, modes, desktop/mobile and playback
+        run: node scripts/lesson-181-browser-verify.mjs
+      - name: Print and verify four A4 pages per language
+        run: |
+          node scripts/lesson-181-print-kit.mjs
+          python3 scripts/lesson-181-print-verify.py
+      - name: Wait for full normal CI and the complete current registry at frozen head
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/lesson-181-wait-ci.mjs
+      - name: Verify evidence and package integrity
+        run: |
+          node scripts/lesson-181-review-verify.mjs
+          node scripts/lesson-181-package.mjs
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: lesson181-review-package
+          path: |
+            .preview/lesson181-deliverables/lesson-1.8.1-apple-draft-review.zip
+            .preview/lesson181-deliverables/lesson-181-package-integrity.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: lesson181-review-diagnostics
+          path: |
+            .preview/lesson181-deliverables/*.json
+            .preview/lesson181-deliverables/*.png
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30

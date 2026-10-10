@@ -1,0 +1,122 @@
+name: Lesson 1.8.4 owner-authorized complete lesson release
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  checks: read
+  statuses: read
+  actions: read
+concurrency:
+  group: lesson184-approved-release
+  cancel-in-progress: false
+jobs:
+  publish-approved-one:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Fetch immutable historical review commits
+        run: git fetch origin refs/pull/277/head refs/pull/276/head
+      - run: npm ci
+      - name: Verify exact approval, source and public media bytes
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = refs/heads/main
+          node --input-type=module - <<'JS'
+          import fs from 'node:fs';import {createHash} from 'node:crypto';
+          const a=JSON.parse(fs.readFileSync('docs/lesson-184-owner-approval.json','utf8'));
+          const hash=b=>createHash('sha256').update(b).digest('hex');
+          if(a.authorization!=='approved. merge and deploy to live')throw Error('Owner approval missing');
+          for(const [p,h] of Object.entries(a.approved_source_sha256))if(hash(fs.readFileSync(p))!==h)throw Error('Approved source changed: '+p);
+          for(const m of a.approved_media)if(hash(fs.readFileSync('public'+m.path))!==m.sha256)throw Error('Approved media changed: '+m.path);
+          console.log('Exact approved source and '+a.approved_media.length+' selected public media files verified.');
+          JS
+      - name: Verify the authorized release is the current main commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$GITHUB_SHA"
+          node scripts/lesson-184-release-check.mjs
+      - name: Verify local release guards and static checks
+        run: |
+          npx vitest run scripts/tests/lesson-184.test.mjs scripts/tests/lesson-184-release.test.mjs scripts/tests/lesson-174.test.mjs scripts/tests/lesson-174-release.test.mjs scripts/tests/lesson-181.test.mjs scripts/tests/lesson-181-release.test.mjs scripts/tests/lesson-182.test.mjs scripts/tests/lesson-182-release.test.mjs scripts/tests/lesson-183.test.mjs scripts/tests/lesson-183-release.test.mjs scripts/tests/lesson-171.test.mjs scripts/tests/lesson-171-release.test.mjs scripts/tests/lesson-172.test.mjs scripts/tests/lesson-172-release.test.mjs scripts/tests/lesson-173.test.mjs
+          npm run lint
+          npm run typecheck
+      - name: Verify production alias serves all approved selected bytes
+        run: |
+          set -euo pipefail
+          node --input-type=module - <<'JS'
+          import fs from 'node:fs';import {createHash} from 'node:crypto';
+          const a=JSON.parse(fs.readFileSync('docs/lesson-184-owner-approval.json','utf8'));
+          for(const m of a.approved_media){
+            const response=await fetch('https://bhw-connect-phase-2.vercel.app'+m.path);
+            if(!response.ok)throw Error('Production HTTP '+response.status+': '+m.path);
+            const bytes=Buffer.from(await response.arrayBuffer());
+            const digest=createHash('sha256').update(bytes).digest('hex');
+            if(digest!==m.sha256)throw Error('Production byte mismatch: '+m.path);
+            const type=response.headers.get('content-type')??'';
+            const expected={mp3:'audio/',mp4:'video/',jpg:'image/',png:'image/',svg:'image/',vtt:'text/'}[m.path.split('.').at(-1)];
+            if(!expected||!type.startsWith(expected))throw Error('Production media type mismatch: '+m.path+' '+type);
+            console.log(m.path+' '+response.status+' '+type+' '+bytes.length+' '+digest);
+          }
+          JS
+      - name: Snapshot thirteen bounded rows before publication
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+        run: node scripts/lesson-184-release-snapshot.mjs before
+      - name: Dry-run target-only loader
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+        run: npm run training:load -- --mode lessons --project ltzicxyefizxoqhfuuzc --org-unit 'Department of Health' --modules 08-osh --lesson-keys safety-demonstrate --dry-run
+      - name: Apply and publish the one approved revision
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+        run: npm run training:load -- --mode lessons --project ltzicxyefizxoqhfuuzc --org-unit 'Department of Health' --modules 08-osh --lesson-keys safety-demonstrate --apply --publish
+      - name: Verify one approved and twelve unchanged published rows
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+        run: |
+          node scripts/lesson-184-release-snapshot.mjs after
+          git diff --exit-code -- content/training/day1-basic-competencies/locks
+      - name: Install browser for deliberate production preview
+        run: npx playwright install --with-deps chromium
+      - name: Verify authenticated production lesson preview
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          ALLOW_PILOT: '1'
+          E2E_STABLE_ADMIN_USERNAME: ${{ vars.E2E_STABLE_ADMIN_USERNAME || 'admin.stable' }}
+          E2E_STABLE_ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_ADMIN_PASSWORD }}
+        run: node scripts/lesson-184-live-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson184-live-release-${{ github.sha }}
+          path: |
+            lesson-184-before.json
+            lesson-184-after.json
+            lesson-184-live-smoke.json
+            lesson-184-release-check.json
+            lesson-184-release-unit-tests.json
+          retention-days: 30
+          if-no-files-found: ignore

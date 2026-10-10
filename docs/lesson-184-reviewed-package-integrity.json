@@ -1,0 +1,2463 @@
+{
+  "status": "verified draft archive integrity; see execution-status for review/check blockers",
+  "source_commit": "7f072fef018c5aa5c5d8444cd34e8e924c81562f",
+  "owner_release_approval": false,
+  "pending_reviews": [
+    "one focused practice-fil ending model assessment blocked by provider filter; exact failure and excerpt retained",
+    "authorized local clinical/procedure review",
+    "human listening including conflicting voice-transition observations",
+    "owner approval"
+  ],
+  "inline_media_exact_matches": 24,
+  "files": [
+    {
+      "member": ".github/workflows/lesson184-media.yml",
+      "bytes": 8347,
+      "sha256": "b91bb90f4201301867e33e5660e845c3178c3185893ba68903bf7d9d789e7ee0"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-1.8.4-apple-review.html",
+      "bytes": 26101878,
+      "sha256": "a3988560a219cad9a915ba4f911487e02557a4e16779f11035bdad7755d4333d"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-browser-verification.json",
+      "bytes": 23249,
+      "sha256": "3b72305fb559fa22abe9fb04850e8d9eeef49317fc20c434fa059759c9fa9f3c"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-exposure-aid.en.html",
+      "bytes": 1698,
+      "sha256": "5c5ab721e883eebdbd20e44f45fc4633b8d21a290eaee4e7edbaf4351090c4ff"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-exposure-aid.en.pdf",
+      "bytes": 23738,
+      "sha256": "3ee159c7babb5da686b0d7591047702df65e2c2b1b8429bc561782a8d1652044"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-exposure-aid.fil.html",
+      "bytes": 1759,
+      "sha256": "961e801be3499978a425dbdef42757c6be052c0a47190a819d93433ade87421c"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-exposure-aid.fil.pdf",
+      "bytes": 23753,
+      "sha256": "b2d0ffdbd030a4c53bfb101671769c416f3d4e163bd19ddb9ee28b0555451f61"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-inline-media.json",
+      "bytes": 4376,
+      "sha256": "49ae0f18057da07faec29c97fc067595cc86f6b787fb86de28c3e80ab6c2cbde"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-print-kit.en.html",
+      "bytes": 6688,
+      "sha256": "e5f1856bdbb6919f93e0a6da1552a6ae658b523b15b18119cddd931ab8e6c25c"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-print-kit.en.pdf",
+      "bytes": 33789,
+      "sha256": "c9a8ec99d66bd4047a6e88a42fe78f9a6680e2bedb2bd20c89cc59c17d9a7d48"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-print-kit.fil.html",
+      "bytes": 6850,
+      "sha256": "86582ad71524f447718f3231f656a9314ad03c4e5b39bf355255314175061fb1"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-print-kit.fil.pdf",
+      "bytes": 34172,
+      "sha256": "affd001ce427fb5d6744cb9a060e3da52cb24263027f9d993f22a195ccb84630"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson-184-print-verification.json",
+      "bytes": 475,
+      "sha256": "2bbad237f1f5889115714672c587201052c94bf1785fdec7002351005031d6e5"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-1280-care-before-paperwork.png",
+      "bytes": 1029228,
+      "sha256": "3faf930664852c0a732466a8eed67ebc520637fdc91636a6d8f11b1903ac928c"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-1280-check.png",
+      "bytes": 972985,
+      "sha256": "447a43ecd5457d74d7df9c9267d0b00ff000b696bc500848811fdd73c722be03"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-1280-exposure.png",
+      "bytes": 977730,
+      "sha256": "881ca346f6e1a685cf43376945a97573753a2c570be61c491eb0bb3b6c05e6da"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-1280-near-miss.png",
+      "bytes": 1045283,
+      "sha256": "33826279abeeecc85017ef96f8c61962116ac080460a9511677c10b19d680178"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-1280-practice.png",
+      "bytes": 1049823,
+      "sha256": "7cca83868d64184155f17828068f39ec63c19256db197fab8e7e5254493a4ed4"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-1280-return-demo.png",
+      "bytes": 999937,
+      "sha256": "6b188d398631ef4cd934ab28a14f4ebdcf5e3f267b6b3277790f87c243cdee4c"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-390-care-before-paperwork.png",
+      "bytes": 279125,
+      "sha256": "148582ea3e32c63aa4c409b4db511d1e8daf3ed380611d66d8c095278d5bb052"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-390-check.png",
+      "bytes": 319590,
+      "sha256": "89a5765d5121c9798ef2e17ed87bbae1d65eaead1d3b42da73dd69694340952d"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-390-exposure.png",
+      "bytes": 284860,
+      "sha256": "d52bd75a204f17bda18436475d53a7581118056f85065f2d5ce4d7214e98b78a"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-390-near-miss.png",
+      "bytes": 286114,
+      "sha256": "eaa046d0c2a8dd0dc976dba870e5afeb8d7a084cb75313cc705d53548bb29fa5"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-390-practice.png",
+      "bytes": 295264,
+      "sha256": "c94bce1c4a4a1a3dc36b5dbcb0316f4cb0a9810a92468fef2bb9838fff99578b"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-read-390-return-demo.png",
+      "bytes": 274065,
+      "sha256": "6c193672f46b04990a1c1e3412d0668fe40c7b44a3297a5f95a68a666bc0616e"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-1280-care-before-paperwork.png",
+      "bytes": 1044806,
+      "sha256": "bbaab515eabe6fb527542c6df4a685b685b2b8e4f4a742aae86ddc21fa9c29fb"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-1280-check.png",
+      "bytes": 987791,
+      "sha256": "9da6a7b64ebff707fd66bc93df921371d5678f01ede196d9985ebcc823d0c60d"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-1280-exposure.png",
+      "bytes": 997883,
+      "sha256": "8c4731a0040ed075daa955ffd78e34bd81ab3e23661082de344427cb8dcda2e4"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-1280-near-miss.png",
+      "bytes": 1060297,
+      "sha256": "961cfcfa093f737ade7dce33d233c1ad5c96e3941b2d7a4acaf6f88a1e8cabb4"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-1280-practice.png",
+      "bytes": 1065815,
+      "sha256": "6a21bea66ffc5fcbfa711f9d9ff1fda8e7f3821f6ed1a0d080f95d7756709b43"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-1280-return-demo.png",
+      "bytes": 1018679,
+      "sha256": "d82423beb878123b98b9009efb18721fadb363165b341a9be372596deb80785d"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-390-care-before-paperwork.png",
+      "bytes": 294007,
+      "sha256": "ad70512d2ae638f6628aa9e34201e4aeb100045c2c617f96f015fe6794d56ae0"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-390-check.png",
+      "bytes": 332950,
+      "sha256": "c87748fa7d3fb73a5c8e633bcf05d72741f3d8f022d4f73a7b8be4fc7c26f06a"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-390-exposure.png",
+      "bytes": 302065,
+      "sha256": "571f668a6f545c879158ab9e9b9992483a4f0ac8050fe2801476c3e4f41bbf92"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-390-near-miss.png",
+      "bytes": 301500,
+      "sha256": "c477a0f1623686d893427d0b0de4e9978fc719358b9afc7d5005b47e93c41d80"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-390-practice.png",
+      "bytes": 314117,
+      "sha256": "fe3c063891a03215863a460b6de564070b108f586710f25ae51b6a9aa84c864e"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-en-slides-390-return-demo.png",
+      "bytes": 295029,
+      "sha256": "d5de0334d80bcc2d5b43274ff1c967b8080a6608a78b15e1abdb20d8b5eec425"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-1280-care-before-paperwork.png",
+      "bytes": 1042676,
+      "sha256": "d120c64943c8db7fae7ce3d88b9db751642cb761603e27e89651f72f03f7db9c"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-1280-check.png",
+      "bytes": 985204,
+      "sha256": "7402cc7d8d47ad988b80626468bc75e0155b889db7ba349da6a62ad619ffe61b"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-1280-exposure.png",
+      "bytes": 981927,
+      "sha256": "6cd0ce717f3e7432bc5f4f46be392cd64c169c215e3fc4bd076000225f61a013"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-1280-near-miss.png",
+      "bytes": 1054097,
+      "sha256": "abdf2ce2006e40bdc2d5bf0807afba06f5417d944e56b314d47fd5680e8428f9"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-1280-practice.png",
+      "bytes": 1054897,
+      "sha256": "2f0765b7499ca9dc1e1dc76fd1ab4b145c505cc0400692b48bbe11e40510370e"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-1280-return-demo.png",
+      "bytes": 1004090,
+      "sha256": "aeed49c00bf2ed36410549ab270069af5cee98585a5256f183a1e50374509dd2"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-390-care-before-paperwork.png",
+      "bytes": 286558,
+      "sha256": "0206e51d1113b4da8a865c249c089db16bfccb43e518880427eaf32a9d6738eb"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-390-check.png",
+      "bytes": 325693,
+      "sha256": "905648d0970cad9a8631c41ee061d66ca4aecf0227e8068461f273706ef30823"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-390-exposure.png",
+      "bytes": 288973,
+      "sha256": "7439abbaa6360bf902a1f8ed96bfa905d7a9e5b60d6687ed522ba35dd80b1e93"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-390-near-miss.png",
+      "bytes": 294834,
+      "sha256": "20302e03d8ea4917bd0e11c140296fe68c02b223ab2fa11d9399440d6c19e801"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-390-practice.png",
+      "bytes": 298741,
+      "sha256": "86b3aa14c39dc4f7d911e648976a81d114f4142a4433aa4137208c9cb7661a33"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-read-390-return-demo.png",
+      "bytes": 278423,
+      "sha256": "90ce74bae8b81042dec62cd4b63374340454e043e80b457baa7ce46027c4be28"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-1280-care-before-paperwork.png",
+      "bytes": 1063934,
+      "sha256": "9a9ce9214179c35bec73fc3d8bfe790b00e0aa74f476e45364b151350bde9b54"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-1280-check.png",
+      "bytes": 1000158,
+      "sha256": "7ba75c9286cfcceac186760b83217ed835a6311941b8f56df37179ca0ac12f61"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-1280-exposure.png",
+      "bytes": 1003066,
+      "sha256": "558acf2d7e938ffd10cf75efa0f0a0bab4ba43b5fe671d33ff3bde28ef0430fb"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-1280-near-miss.png",
+      "bytes": 1073819,
+      "sha256": "cb249592422065447bea4892e4f2abba1342018be9b7eb34471877e3b28309fb"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-1280-practice.png",
+      "bytes": 1073239,
+      "sha256": "85acaf671d3117602eb4df076411413d4c8a9288c670a08bfa0bddfce7faff98"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-1280-return-demo.png",
+      "bytes": 1026030,
+      "sha256": "27b54ef3c8eab0c625b64eb542eb36993baebac08d25bd4778ff977bc7172bd5"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-390-care-before-paperwork.png",
+      "bytes": 307162,
+      "sha256": "40649fcf7990d5658889c5169afd94235a9ba6d7b0869f799045214a9c0a0390"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-390-check.png",
+      "bytes": 339797,
+      "sha256": "f99a004195c385742376f8c7906324b5fc11adefeebf3dab0cf2e4a68fb6ef81"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-390-exposure.png",
+      "bytes": 307139,
+      "sha256": "9c28a5a5b097cb32394aff1464f4b0669e5841df67042a59ecabd0af8c44b27b"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-390-near-miss.png",
+      "bytes": 315856,
+      "sha256": "195d73331fa78292ea340c87a905fa6bfde75cc6aafbd6df0c2801f80758e782"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-390-practice.png",
+      "bytes": 320046,
+      "sha256": "574db1fb393ffbc5e1beb7a8f2e56565b623fab57bb3e85b4c4d834dbea016d4"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-fil-slides-390-return-demo.png",
+      "bytes": 297159,
+      "sha256": "51acd336f8d3282b5091543a7e290862a0d8674b284f74f1d59ccff51199a7a5"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-story-en-1280-ending.png",
+      "bytes": 264061,
+      "sha256": "7014470d21c27ffb37fd60a36f1663fa79c90dfc9ebaac4e9504f0e11e0cb3f7"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-story-en-390-ending.png",
+      "bytes": 77122,
+      "sha256": "05acf1cb87bc62a979800f4dc61f015f663438686eb26523f5331a968c4d504f"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-story-fil-1280-ending.png",
+      "bytes": 289527,
+      "sha256": "befcf597d06c2d416a1b110f494b2653fdc05da26bb5604e0f938cfbd5ec0d77"
+    },
+    {
+      "member": ".preview/lesson184-deliverables/lesson184-story-fil-390-ending.png",
+      "bytes": 83434,
+      "sha256": "fecf7f8d97bfe4c46d7cc565c89693d3f76b5e35c1253fcdc239f6334de6ced0"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-care-before-paperwork-en-body.wav",
+      "bytes": 328398,
+      "sha256": "29fc6aa5e038d6a218f88c24f1166b2e8a81b1faf91f50f68dad78c3f355f753"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-care-before-paperwork-en-critical.wav",
+      "bytes": 926478,
+      "sha256": "0da22e1e08199ba33ef6f5a5382e9432b95a9f6513dec973d39babada3b81719"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-care-before-paperwork-en-ending.wav",
+      "bytes": 932318,
+      "sha256": "00f6879c01db7b97b05d10229d305e22fc9b8827be9e85957e6aaeac073754b8"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-care-before-paperwork-en-name.wav",
+      "bytes": 328398,
+      "sha256": "29fc6aa5e038d6a218f88c24f1166b2e8a81b1faf91f50f68dad78c3f355f753"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-care-before-paperwork-fil-body.wav",
+      "bytes": 364878,
+      "sha256": "5d071a96672c4240827f77f270913eacba5aa752f0efa99ef206b95bbde1dec4"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-care-before-paperwork-fil-critical.wav",
+      "bytes": 1001358,
+      "sha256": "1197b9f596d6af7bcb34fa66f51bdb9233773e116cf65fdf18d26a5d3ec77252"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-care-before-paperwork-fil-ending.wav",
+      "bytes": 1155194,
+      "sha256": "c924fe4dd52f6d4deaac88894f455510f36f3263de882a2c1366ee8457a9fd85"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-care-before-paperwork-fil-name.wav",
+      "bytes": 364878,
+      "sha256": "5d071a96672c4240827f77f270913eacba5aa752f0efa99ef206b95bbde1dec4"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-check-en-body.wav",
+      "bytes": 347598,
+      "sha256": "ec1ef44fecadb3b89756c544bafbcf97e0489f8ce050527dab555f85ddb15c38"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-check-en-critical.wav",
+      "bytes": 388878,
+      "sha256": "c95b15e87dafc20de082cf855e71bd53c959941e9b81c72a25333507269b5cbd"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-check-en-ending.wav",
+      "bytes": 730286,
+      "sha256": "df2745acff389e6e1b9a63c844bb73dcbf859e5bccb2a2d54888960a557f5401"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-check-en-name.wav",
+      "bytes": 347598,
+      "sha256": "ec1ef44fecadb3b89756c544bafbcf97e0489f8ce050527dab555f85ddb15c38"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-check-fil-body.wav",
+      "bytes": 339918,
+      "sha256": "196fcc7b13606cc152a356857c102fb45ed61c66ce0fe0d87d9b218fa3fae769"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-check-fil-critical.wav",
+      "bytes": 446478,
+      "sha256": "8cc1f89775e95bf48afdbb427ef22d65c94fb33ddfd9feccc35b437d8a176d11"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-check-fil-ending.wav",
+      "bytes": 818802,
+      "sha256": "1fc27168535ba7e6c34141c533abdaaabdfe8de0f8ed6eac7f4693db227a3c9d"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-check-fil-name.wav",
+      "bytes": 339918,
+      "sha256": "196fcc7b13606cc152a356857c102fb45ed61c66ce0fe0d87d9b218fa3fae769"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-exposure-en-body.wav",
+      "bytes": 249678,
+      "sha256": "e83a9ebc6bbc34f75fb6aba27b7bbadefb99660ff9013557eabba8b0fe50c37f"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-exposure-en-critical.wav",
+      "bytes": 411918,
+      "sha256": "3e954edf585526b69d2c9278a3809fbdf327ab758de8dc6d35524c94c969b1a2"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-exposure-en-ending.wav",
+      "bytes": 825934,
+      "sha256": "98b89242bdc344ce54d79546a14b7aafd882d24e470f9360a2606b3b21acd7a9"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-exposure-en-name.wav",
+      "bytes": 249678,
+      "sha256": "e83a9ebc6bbc34f75fb6aba27b7bbadefb99660ff9013557eabba8b0fe50c37f"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-exposure-fil-body.wav",
+      "bytes": 234318,
+      "sha256": "6dd23a66804aa05804b2ffaa6f28d009f9a88feac25d54fbdce5cb1c2100195d"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-exposure-fil-critical.wav",
+      "bytes": 600078,
+      "sha256": "17c4a51a2b86e2cc510fede4240f511702cbdd0bf3ce192c2442357382e8c849"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-exposure-fil-ending.wav",
+      "bytes": 794900,
+      "sha256": "704dfe87aafb3fdeb807d9d970422d5e6ce995af67995f1a441fbb5bc5f8a6de"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-exposure-fil-name.wav",
+      "bytes": 234318,
+      "sha256": "6dd23a66804aa05804b2ffaa6f28d009f9a88feac25d54fbdce5cb1c2100195d"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-near-miss-en-body.wav",
+      "bytes": 328398,
+      "sha256": "63cce052fd3ddc77725940c8fb097e95c60a0667c8a613c94539fcba084c6b22"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-near-miss-en-critical.wav",
+      "bytes": 607758,
+      "sha256": "f10d27c3270ca6b12f9ef9d5e72a3081a5e9f340549b3a30680f49cbaf1bf313"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-near-miss-en-ending.wav",
+      "bytes": 736320,
+      "sha256": "38eedb415e525aa60296098a21728247e344e5d462b32582ab3d45c558233685"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-near-miss-en-name.wav",
+      "bytes": 328398,
+      "sha256": "63cce052fd3ddc77725940c8fb097e95c60a0667c8a613c94539fcba084c6b22"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-near-miss-fil-body.wav",
+      "bytes": 301518,
+      "sha256": "51c37e5b9c910a588e992759dde541788715f13619af44cc654cd0d4d48b0153"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-near-miss-fil-critical.wav",
+      "bytes": 694158,
+      "sha256": "868d544c862aa9caf72d302ed730606aad6ab5f7d29fa3cb383b9297dab57336"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-near-miss-fil-ending.wav",
+      "bytes": 846702,
+      "sha256": "8d2147d46de07e4938bc17b64192ef905a2a7a725bec35ecfc601b6cd507ce68"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-near-miss-fil-name.wav",
+      "bytes": 301518,
+      "sha256": "51c37e5b9c910a588e992759dde541788715f13619af44cc654cd0d4d48b0153"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-practice-en-body.wav",
+      "bytes": 324558,
+      "sha256": "ffa85fdc71483a7e9aa1d08e6242067ed6c681e115c00ae3fac17337fa2db9e4"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-practice-en-critical.wav",
+      "bytes": 849678,
+      "sha256": "01f343633439b310f14b88c96a05187890ec5f0b22d906f4aa6e8cddbb31326e"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-practice-en-ending.wav",
+      "bytes": 728366,
+      "sha256": "49cdacdd84195db7a0c7a4ba3ac4cc2671926ca3e77ec1b5300f36e310a83f5e"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-practice-en-name.wav",
+      "bytes": 180558,
+      "sha256": "daafc83e6dc0602c77f6a30fc786a775b906899aa7dea55b9d3ad3acbb23b9ef"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-practice-fil-body.wav",
+      "bytes": 351438,
+      "sha256": "c83be22fcd3ce120c7ad4a8c39f5c5ec9e70957d2293e3bedf468a0d1e6edd5d"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-practice-fil-critical.wav",
+      "bytes": 830478,
+      "sha256": "fa21989300ef2053fbe1a9f2d3a652b0193deb66c906253bae42a55928bb0797"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-practice-fil-ending.wav",
+      "bytes": 810182,
+      "sha256": "c04c57387f8224ab6bc84e9faf458e2ab91d9f54177a62978dcc13db073874c4"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-practice-fil-name.wav",
+      "bytes": 222798,
+      "sha256": "a355bfbd1982331b643e751de40bdc95404468f598ab174efcdb4f24af13cab1"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-return-demo-en-body.wav",
+      "bytes": 186318,
+      "sha256": "6dd4bf3fe5a01242e536c9fc288c73339994996964c8ab9062ad3bb224e40010"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-return-demo-en-critical.wav",
+      "bytes": 801678,
+      "sha256": "6993c2bd956e8e7ed49b1ac213120f427a6cbb977e39c00ff8a9232b3ae14b73"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-return-demo-en-ending.wav",
+      "bytes": 1040524,
+      "sha256": "dbd7e7af7b9e167e3ef4aa6b5f13f099bc4d6fca7d5829a6a9a4b556de965dac"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-return-demo-en-name.wav",
+      "bytes": 186318,
+      "sha256": "6dd4bf3fe5a01242e536c9fc288c73339994996964c8ab9062ad3bb224e40010"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-return-demo-fil-body.wav",
+      "bytes": 232398,
+      "sha256": "2a7690f0509838837ad175622490389855fb3aa41bfa1923cb6f993ccc11a83f"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-return-demo-fil-critical.wav",
+      "bytes": 847758,
+      "sha256": "bb8ccaae50100a3cc8452561833b3050e9c287cdaa6ca436c215c24633fd6538"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-return-demo-fil-ending.wav",
+      "bytes": 709284,
+      "sha256": "b77cffe04cea6fa3ea73107680514eb1dfd7b2502af0f8435f79c8d0fb5ee436"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/read-return-demo-fil-name.wav",
+      "bytes": 232398,
+      "sha256": "2a7690f0509838837ad175622490389855fb3aa41bfa1923cb6f993ccc11a83f"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/shipped-story-en-body.wav",
+      "bytes": 420594,
+      "sha256": "3dbc731c0e4ccbd3d62f4bdaab97a363ab1af93cc7e5b12f5e714cd6a9ef0f08"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/shipped-story-en-critical.wav",
+      "bytes": 838194,
+      "sha256": "82d1e19defa6087323ab0830b82615576c4f09b22e157ccaabc9cbcba144dad8"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/shipped-story-en-ending.wav",
+      "bytes": 1125490,
+      "sha256": "8a8d51d78c7ad9b3239aa9a29da2ca4fcf5683bdfd24bdf4f7d0edc180b0af1c"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/shipped-story-en-name.wav",
+      "bytes": 420594,
+      "sha256": "3dbc731c0e4ccbd3d62f4bdaab97a363ab1af93cc7e5b12f5e714cd6a9ef0f08"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/shipped-story-fil-body.wav",
+      "bytes": 455154,
+      "sha256": "81b95e4984421635b92abf08a26a1dc7ac96e57b8511b8c7790a7beeaa4fc7c1"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/shipped-story-fil-critical.wav",
+      "bytes": 920754,
+      "sha256": "bea60988c36f1f6767c2fe3e7f4787fd7de88eb393bd5da84a414ac7df47d5e7"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/shipped-story-fil-ending.wav",
+      "bytes": 1228018,
+      "sha256": "d97581eeca2bb4921d8ba0214df7aca9ba76a5ddc730030084427a6e151c27e1"
+    },
+    {
+      "member": ".preview/lesson184-excerpts/shipped-story-fil-name.wav",
+      "bytes": 455154,
+      "sha256": "81b95e4984421635b92abf08a26a1dc7ac96e57b8511b8c7790a7beeaa4fc7c1"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532769574-1cbd3390-60b3-4b2b-bdcf-0a9353d1b1ff.json",
+      "bytes": 197201,
+      "sha256": "176498bf65afd074987872f1c805952c20e73d7d39bb62f5a87b5e8f4a66e0e2"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532769660-d06c1500-d59e-4145-9c5e-17aa1591f8c8.json",
+      "bytes": 207455,
+      "sha256": "3b8cb04a59446e3b33745aedc78180d86d3fb191cfc09fef4997e3fba7588309"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532769664-42ad8e0d-7e7f-4783-90fa-89ca88891c25.json",
+      "bytes": 207418,
+      "sha256": "2014d0f243bdb963d3acc28d5404511e692f1e2ef4a501db5edc74686701b9f2"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532772615-728d9adb-508a-4a50-b95b-63909e68d3da.json",
+      "bytes": 322681,
+      "sha256": "03e0c6c7790f3c57bc2de01b895c3519679e4441c2180f261cd833b057c2e278"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532772788-004d5d68-2623-4234-b446-ee063605fc27.json",
+      "bytes": 320121,
+      "sha256": "b7dff4ddfb252298a7efb506e98d8652d41876d7c978548016bc2a7ef702c302"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532773051-8c9c24fa-13c1-4ac7-b860-7c864b300941.json",
+      "bytes": 343126,
+      "sha256": "ef2fde198af05b8b3601fe8ede89d36b81fff4208e050f069731364104c24388"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532776419-6383b0a6-9ad4-4cad-8ccd-1807722c7ac7.json",
+      "bytes": 445586,
+      "sha256": "989c9bf5c307b0899d6d8a5cc0b7fbc873efa47d53e3a8913ef6ed31a2564545"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532776774-8588546a-fa42-4876-917c-eacb76fcc65d.json",
+      "bytes": 535199,
+      "sha256": "076ac0d416f2b90ae768ca1c73c504c6b14e9d7160952b62566433f653395c17"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532776825-011e3a11-53f7-439c-a994-d3fe0730fb02.json",
+      "bytes": 453247,
+      "sha256": "05ff98a92e3931d54aadf6a0f4b426ec4683ec66092ad23e5c1430bc50b41116"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532779964-263ece68-8e58-4da7-ba6f-82d3a6c23da8.json",
+      "bytes": 327770,
+      "sha256": "38e808a6ff031502921d06c23150a24f280151ae9c3f0c7f825d1c3249aed4f0"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532780569-9977af16-97ff-4924-80b4-b4fdfa78d634.json",
+      "bytes": 355960,
+      "sha256": "c671e2536174e3a2149ae854f3be93a94773744647e16e01ef4f2d51411e51da"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532781111-e7d9a7ca-c583-4718-8329-348b3af3aa4a.json",
+      "bytes": 576190,
+      "sha256": "8817bd883bfe3ec6a90df2558c7e7e795340dacb3b111331b397b564b0a07620"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532782741-73098115-4f57-4de8-afcc-5cdd40c4eb43.json",
+      "bytes": 279130,
+      "sha256": "d7fb9dcac414c7e6555b203f3dbcf21b909604c273c83788eeeacfa54e2ef75a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532784006-86b47292-77f2-48a1-bf1c-4bac143a7d39.json",
+      "bytes": 350850,
+      "sha256": "ad11265e721e03d7c9adf54bc24e10d74c4d8faf72d19064f661bca819696c78"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532785267-0c96984f-d9e9-45bb-b04c-9b315b4e5b43.json",
+      "bytes": 548015,
+      "sha256": "1fa2d034e716319a9b86361cfa36af99e5934f3ad213ee84ae7342def97cedc7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532785294-81b0686d-83e6-4fb2-a83f-5199d59d9cbc.json",
+      "bytes": 138294,
+      "sha256": "c815a112bda4d3464f32b1664a46f1d2e8de1a99e9ba54f8fd619e3500f9f974"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532786103-b9a406eb-b72e-4a6b-a4e8-aba6d78663d1.json",
+      "bytes": 135754,
+      "sha256": "82c2826e7e351f0d1c47418844a176b403a33d1a80fabde7bc3f6c39e3a4f889"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532787246-d566b7b4-582a-45ae-ac02-8358afa02e26.json",
+      "bytes": 102453,
+      "sha256": "a0254da9f28d45f02bad16a2ec42b9248b30b7b074f226e6b307714df8ea664a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532788372-8200d1ee-d634-469e-bbf7-a89de39a5403.json",
+      "bytes": 135757,
+      "sha256": "3f98790d7a19ea6e7a54b4b6de8b5d9a10d17f426162285f9c37599be23670cd"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532789427-3fe8a848-ba07-4f26-ab34-65782f0ac783.json",
+      "bytes": 583851,
+      "sha256": "40cbcb454e3234318d7312093b60e33f1835c44f1934ff83ab79cf516655e285"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532791931-d95a8d96-76bd-4859-a59c-70e5254a4bce.json",
+      "bytes": 576153,
+      "sha256": "64cccb28f73870c69b9e6b40a020bac18009af407bb3b1432bb17c5f637981ab"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532792008-97a2c733-3c73-47f8-95e1-5c8df979d76f.json",
+      "bytes": 207458,
+      "sha256": "4ddcbe8a5f3bdfe60fca3d85bb4ffcb7793cd67919404c14ac6210e81d7e6a47"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532792776-4afb0aeb-204d-4a35-8d4a-2c2bad230973.json",
+      "bytes": 599210,
+      "sha256": "5ec2d3e6069124c1ae0c1ed6b48e07a1ace2c6c326d6c05680fa91512ac1bbf5"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532795015-bde87eaa-6a7b-40c1-bb7b-591e6cc5b0f0.json",
+      "bytes": 317544,
+      "sha256": "6b6c6e75c1ce543495032fd21139a26c08d9dd8cece9780eca0e8592bdd39b6d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532796623-1092bf73-4070-4f66-bb5e-6424fb64f3b4.json",
+      "bytes": 335487,
+      "sha256": "a64885421cbef43a88dd1bf52dd0421fe3ee4224c764c5223cb6bab8a0f21942"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532797396-f0c2ea13-7ca5-47d4-a255-a663b8002b12.json",
+      "bytes": 637634,
+      "sha256": "8935121fcc4b2772a96666147fd9de87746949919198226b2ce8abbb9203f945"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532800379-9c37391c-ff5c-48e4-bf3c-2af7b4db268e.json",
+      "bytes": 716989,
+      "sha256": "f3d69a768aee04afe816c163251d7746b93bdb4fcede9db3d2d8518e9319e771"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532800384-f13db679-8857-4fe3-a6b3-e662dd8d9360.json",
+      "bytes": 245862,
+      "sha256": "47fdbf3c604d66c50cb17f2f4a28798f7a0d0ddce9459f455a90036be0c9eae9"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532801925-f7a70406-0283-4af9-8df5-1addae55b3af.json",
+      "bytes": 724679,
+      "sha256": "0b0065839645d13762528b5d2e7fdc982e79b9dd8b9f676a75992be0025c6896"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532802741-b22655de-3648-4ace-a61d-3b45ccdf693b.json",
+      "bytes": 199743,
+      "sha256": "0dd51983c2eae964fd39ed37167fffffbd8bcdc6c7c0f1c7f8a35d5810bc2b48"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532804255-52ce2bbf-dcce-4453-aa33-c65778fd8b2a.json",
+      "bytes": 430227,
+      "sha256": "dfefdfb87f1c1a79e8b8d7111a9163adb7272f3c223a631e162c9c2087423fbe"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532804402-ad077cf4-e809-417e-82b4-faffc7f69361.json",
+      "bytes": 217691,
+      "sha256": "8f518a5ae5b5074c2de8d565e3ac0e8c3fbb1d01979dc39b3106dbf970a938e1"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532806108-257eca25-2f26-40ea-9f03-502eb49dbfbe.json",
+      "bytes": 348263,
+      "sha256": "973a000ee48563d5c416b7b9b21e46392d9b6fb283233f28cb79e722ce3796b9"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532807735-5cf8a4c4-760c-428d-bdb2-95d452ef1c03.json",
+      "bytes": 343160,
+      "sha256": "0aa9785a5a74c124e5d70ac587bed99bf452129aeade2c9534829420c45eebe4"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532808786-45b98642-a4aa-41f3-b896-f00aad0e78aa.json",
+      "bytes": 660664,
+      "sha256": "5ed4e2df2fa8211995a02defc2d185bdc3ff76b676b67fd966ce74e40f415ecd"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532808811-1fdd17ff-a15f-4381-a83a-acc8cebdeca0.json",
+      "bytes": 256082,
+      "sha256": "e62a4255b40fb3514f091ca85ac02095486c0b3b70bb7cc2a993e5a60ab6b49e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532810579-6f199162-bd6d-4a34-9a80-67d5cbc5843b.json",
+      "bytes": 302194,
+      "sha256": "51e06c7412fdd628d584d55c54bd5ee75654a767ef0bb73c13e6ab8e89e025bd"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532812020-70e3eb55-ec8d-4527-8ee7-291b140daf54.json",
+      "bytes": 294498,
+      "sha256": "ac37617363b0e681cd2441bb2c64ff915d00972871fa6fdc9274db68f41c7c0a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532812835-e1361b5c-adf8-4639-827e-3402b80d458d.json",
+      "bytes": 504478,
+      "sha256": "9724c7916609fe0a7600a457874ed2437e948889e69e113873fda83dd6145f5f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532814021-e7a378e5-e136-4ecb-96ec-0d68c6264fbc.json",
+      "bytes": 350858,
+      "sha256": "569d2049f8fa095c331f72d080bf30cc0463b4cc45f9eb68020a86854aadcdf4"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532815351-c76732af-0521-4c30-a63d-ec953014e300.json",
+      "bytes": 230472,
+      "sha256": "f950cb92bb47c16b4392a6501ad416a95cbe140d20f42322b13a15fd59627b6c"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532816448-ac265627-d79c-4260-8e7c-c654dfe1db89.json",
+      "bytes": 437908,
+      "sha256": "a92ddbd190f9c83d08f74ff96c4a1bd656ef9a0239e09fd823dd6b047298efdf"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532818741-dacbe1af-bc72-4ed9-b665-fbfb8d1aef61.json",
+      "bytes": 199776,
+      "sha256": "32c30be5210c8c1b3d4d1bd3aed54b4e6bcdc834474d9d12ed0792e90cc047b8"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532819496-d8d30173-586c-49dd-adad-d0920d181bad.json",
+      "bytes": 601763,
+      "sha256": "a596d08c7bc03046a56adad121c22fe048b64b4b69484c92c80947f51d060a82"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532821694-4536a4b9-6f0d-4204-9830-a0bef67dee03.json",
+      "bytes": 207425,
+      "sha256": "a0c5cb9935c34db8d6b6f7e366a68c027f975d5a55d5046a139d6ad8e007c204"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532823207-bc589a52-186d-4df2-b8c5-9387b364759b.json",
+      "bytes": 637618,
+      "sha256": "767984f678ddefa52d0cc8d00a4e1663d6d27c26925d09ed57a93f1739cd9456"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532823570-32effd16-c627-42f5-8957-0d4b84106a52.json",
+      "bytes": 496770,
+      "sha256": "1c826fe12f2a4d24b05410b46b5eb7808f0713b11e8ae77246060b8aaddc342a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532825758-87e678b3-6ff3-42f2-b673-af25b47a97a0.json",
+      "bytes": 258650,
+      "sha256": "b9509f6bd3ebaa703f5131b4a54e1b6320a3812d82c6754ad585aae0b7e4f1b8"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532827395-69cabb66-a9c0-488d-84aa-2e50e53af986.json",
+      "bytes": 419987,
+      "sha256": "e5eeae190367dc99482f9571e8945ecf14d1495561915e33b55f4d482a7441d9"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532829624-0af8cc7b-b90d-4e92-a238-59965d9a67ae.json",
+      "bytes": 186960,
+      "sha256": "32a0676c674d1552e8cb45e3a6ff20eb6e42275a8c7c61d1b0dbe70d4b2c8b06"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532830065-6c0e326c-bb08-48d7-b9a2-f1f094c664c6.json",
+      "bytes": 540301,
+      "sha256": "0afc77017887a60023b10fdf6e1e7620ff017ef1e09836682a8ddef23d69fd11"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532831954-f48b19e0-952f-4320-83ce-7816b340a20d.json",
+      "bytes": 181815,
+      "sha256": "23c158a553aea86e95ee307d294780a1404057c5d634d1151ffb429fcc4f00e8"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532833196-698b4755-474b-4137-b3bc-e8da5d168316.json",
+      "bytes": 412302,
+      "sha256": "df9f3336f77acf819d245feafb752ec2741e36a9ed92d52b2efcc3024997d5a7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532834245-57c1312b-96de-46a7-9d66-24a4840b2cc3.json",
+      "bytes": 583846,
+      "sha256": "b82fd69ff2d9095da001d34dfaa2ef1675dc3b994cc483833a7c9460df135dce"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532835571-4baa8fcc-808a-42bb-b54b-33e412a80217.json",
+      "bytes": 448115,
+      "sha256": "850f5e2a36044963f5b9439c6c5a4b5f3a6a4c5987e96f90be26f106de5c87c2"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532837310-d5d21306-ac83-4420-9ba3-c0b962e851bc.json",
+      "bytes": 445593,
+      "sha256": "25b45d02198fca207f34e27d78136f6a6f806fa8b06f32b1f9db10047d60289c"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532838727-45366e9e-aedd-4c60-979a-062d20342926.json",
+      "bytes": 501901,
+      "sha256": "fa20d838dbd2e956c03a00c0e8b54cbca3b9cded6289769a936e43ebf4696998"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532839914-cfccb19d-60e7-4362-81d9-14623a96d704.json",
+      "bytes": 130636,
+      "sha256": "ae3d9edde757bb2a69722d82c7d8baacde4a859295121258f64dba30fbb3e4ab"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532840143-cf0a8abc-9509-4876-8efa-8d42f3f86cf7.json",
+      "bytes": 522391,
+      "sha256": "35e2d711e366696f08de225b78af6e6ccf3f96191060c277ce06dc5b2def9a9b"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532842713-662adaa1-cf22-4ab7-bf3c-19974661c8a5.json",
+      "bytes": 128050,
+      "sha256": "ca3c725a0d68e0f97f8efe5cc8ed5752de8c1f101e60fbb67a0cc36e95496913"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532843924-7009e678-66e9-48fa-bcf3-e9db6908cea2.json",
+      "bytes": 568458,
+      "sha256": "bccec35bf3ccbcd740bad04c893dfb7b4c4dea448c18d161bb79836b73828c05"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532844018-fab52381-e1de-4f9e-a72e-4e174f56eb92.json",
+      "bytes": 496805,
+      "sha256": "7f993bd1b4bae415688ca596b9cfd26abfd1a6721336aae8c93f665019b1dca7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532846216-450c212d-5b39-47ce-acf7-6f9b5a5a4616.json",
+      "bytes": 209988,
+      "sha256": "6e2ddc93b79fd919ba1bfea2864855c614b8e6411185b44741fee5cb2222da7f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532846549-1a7a105e-e896-4163-a1ed-74e3150301d1.json",
+      "bytes": 432770,
+      "sha256": "6ac1e3d22bf203ba10c408acb4dbe4e96f1133596a864874ade6f81a388c9973"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532847970-62107446-5cb2-44ab-9c80-292b4d4f47d8.json",
+      "bytes": 430226,
+      "sha256": "d906305b737b157e4617bb71fc3f2df06e578ddf4ec9dfcd7995f889c0ef61bf"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532850009-caaa6944-4e84-4645-9959-03c1dde4285f.json",
+      "bytes": 378996,
+      "sha256": "b799c8d61370af2c076a4648da2052fe4a440a8fed396075743816e86451ff2e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532851686-be238cba-1b3b-49df-b564-1d0728610788.json",
+      "bytes": 640168,
+      "sha256": "bfd645e787a6a5cec11bcaa92932993118c030b733555a50fb38b5719a92475b"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532853075-bcd38a0e-b6e5-4886-a18a-ac600a1f2b3b.json",
+      "bytes": 553118,
+      "sha256": "8d3bb92cf62f27b24b9ffed7732c37cb781401e7a63fc8df6d79a888f0d36f2a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532854695-8ddd6399-2c5a-49c7-805b-064b45cf103b.json",
+      "bytes": 517246,
+      "sha256": "6cdb16e6ea52e7302ef6c33283ace7974c109502a3f5534114de86e21ece9c29"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532855091-c1063c11-e6ba-4ced-9f83-071bd7677b36.json",
+      "bytes": 212546,
+      "sha256": "475546251e126d7503e2329e6e719fcd3ff627fddd3fbf3776ed95faa212c493"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532857428-4f419eb1-8f29-40f1-8c06-dd5b3700b006.json",
+      "bytes": 563370,
+      "sha256": "5d4f46c4d328594d5fee4a0b9b89c6f8528bb7163b55c16703c3153aff6d5bff"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532858765-7ad0bf84-5691-4b66-ab2c-7cc899800e45.json",
+      "bytes": 343155,
+      "sha256": "8964d96e640c0e738fcb18379435e6e14c78183f113377204eccd5be21156eba"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532859144-38fa03af-e25b-480d-b351-7887291be62a.json",
+      "bytes": 547981,
+      "sha256": "34f8f5926473f2a4bacca3ee869ef58841be966f3823ca25ad2f2407c47f97e9"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532861079-712c8980-1241-4f22-8c52-f54b0cdf3ee8.json",
+      "bytes": 379015,
+      "sha256": "2567a924c52b6ff1307df590bac192c3dcb807a906f5f3fe398a52d992050adf"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532862964-23627e1e-acc0-48e4-a2f5-b54c0557f4e7.json",
+      "bytes": 581267,
+      "sha256": "44c90170e05d386f7cc414b210de4ac1bc9a42aa26abc19ba60b52327c72efcd"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532863126-e388af8f-04dc-4c32-b64b-64e4fbe1bca4.json",
+      "bytes": 412275,
+      "sha256": "6e5f5add981bc4273b8389034f8cbd4ea3846ce151cd21b418e72aa0635f9ee3"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532865325-401add13-1e9b-418e-8701-f7ec7522f75c.json",
+      "bytes": 522407,
+      "sha256": "311c9c7e9ce3b57db07825fc65a06e300b5f898de7af73e8c60d5981b1e359b1"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532866647-b5c7d3f4-8557-45e2-ad58-f5e81ad6571b.json",
+      "bytes": 437886,
+      "sha256": "d1a1f8b8ea5ad29255c87ff54a292afe2d3ffbc72b54aa0d97c865d8df80d9fc"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532867258-e20c8607-dacd-4a66-b7c3-a8b4ce85796e.json",
+      "bytes": 527501,
+      "sha256": "8ce23544c55b20b57fd0f2f44150142fc9fc0605f3a673e16182fdffe0f9d823"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532870509-9d935ec3-b24e-4559-a4e8-005dbe888e2e.json",
+      "bytes": 355958,
+      "sha256": "14bbc31034fb3fbc6d13bcc117de97433b387b5262a129d84d93ed72b42b7160"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532872382-0b6c1f60-aa6d-4060-a687-d4ef9b312cf9.json",
+      "bytes": 645289,
+      "sha256": "2bacf47ad4b5480962f31b582bc40dc9861a824bc0779e60e8138f1722639a0d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532872388-f9cea216-5869-448b-829d-98ecf1f4d024.json",
+      "bytes": 742614,
+      "sha256": "85b9ebcbf323d3e3abb3988114b1c8d6ecf81a69871a9acef0e2e0e52395e869"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532874864-3dd7c2ba-16fc-41ba-9519-8e19abe35fcd.json",
+      "bytes": 212564,
+      "sha256": "8291846b46031f2de51f26894ecf5f096eaf59bf79c4be9ffb509a3f98b5d244"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532875235-812e42c4-4310-4608-a2a7-06d9d184f945.json",
+      "bytes": 266314,
+      "sha256": "d81f7a926cc0bb7272eca9983fbd102e657acd6d3bc8d93daa91897a337861f6"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532875441-d4a2381a-d5b9-4b6f-ba49-b3657a37b0f9.json",
+      "bytes": 302206,
+      "sha256": "bbc2afab0cdc3bcecc3353c0bbcd2ac5b9178a1bf86f8c55330253ac65a21a9f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532878950-ba2c8d03-d14d-4602-bfe5-e942bc806334.json",
+      "bytes": 353398,
+      "sha256": "8b09a9218bde6cd6753e41596be33f90b3b758213f4e0921e275ee453050b3b5"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532879128-08f65701-45c1-4a15-a5fa-fa01a631e0a3.json",
+      "bytes": 496805,
+      "sha256": "5c5105e30c5c4638a988822b1112331e0dc4a100715865c7018b4a1798645361"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532879321-65d47348-2f3b-4b12-938d-97e5c8d26a63.json",
+      "bytes": 386699,
+      "sha256": "586e4e212f18cf7906b13806f37bf8fd032327af205fa72fc4b0732344708f31"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532883063-08b5b07a-c19b-4bc9-b2f6-8d9ffb17e2d5.json",
+      "bytes": 350826,
+      "sha256": "e065dabb0a6f55ceed20963de0017c72a7e835dcd85f792068df3d3c9fceff0d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532884990-8c5ef4e0-9a33-445d-8dce-3b7565128d88.json",
+      "bytes": 427667,
+      "sha256": "e70e6b8ac6b290b77da1fe987deef8bcf79b19d48bf14d62d76b4e3d34f084d0"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532887005-906ad92b-0bc1-4bdd-91fe-5710d599fdad.json",
+      "bytes": 855272,
+      "sha256": "fe4602c21e0d56bb560e367380e311b242fe494ed54853da1ded9ac3a024fdc7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532887940-0956495b-6152-49cb-a1f6-d2e63dece60f.json",
+      "bytes": 166454,
+      "sha256": "1158f481ce46dfa9a0b8e8348d204747b3cbd05c6da6a4c7eaceefb01897c35a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532890733-d62a3d2a-356f-4249-a27e-0b979cadc3d9.json",
+      "bytes": 481428,
+      "sha256": "766beadf0618da2afd3ec030ccfd82de485b37641a50d98d9447380e3bc48d37"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532890868-1c8dbf90-f9c0-4a11-bedc-02de75e44d34.json",
+      "bytes": 307295,
+      "sha256": "7ddea7059c310c86021501c326cf8d3a6bccc550479f534946f983b6fb6a5001"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532892410-0cca178d-4626-4bab-8440-b28f6c123f70.json",
+      "bytes": 448132,
+      "sha256": "c89ca843ab9ab9992caf3c58c1f5e09d74efb24f7aa48787135d3dc8c8a5190c"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532894741-7f5b1279-6b1d-400f-97bb-e9c859dc3310.json",
+      "bytes": 478864,
+      "sha256": "5fccb822ce82db2e26ee9bb5b71fd78cf8d3d9fb65560a334ebb0033d77a5cd7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532895168-7043ff53-c239-425b-a436-0288a677495a.json",
+      "bytes": 427657,
+      "sha256": "91e3e369575dd93ee853f79675a65989a060f2d20ab5f7a185ca2f67390eb89e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532897880-7c6cab35-f78f-4bc3-97b7-7c12c2567044.json",
+      "bytes": 788685,
+      "sha256": "3e60840ba113c460ee8e94b7e2617312ecb82227e40d346ce25bf94236987c82"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532898114-c66079ad-72d3-4411-9957-9866be1f4e89.json",
+      "bytes": 348288,
+      "sha256": "a9961463092c2efa25bbeb770ab9dde0919416a91716c8f18320e530553e6e57"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532900058-f458051d-f7ca-44bf-ae7a-94d595677685.json",
+      "bytes": 734914,
+      "sha256": "51c95fa69eb1d80641afd0dba3cacfd38398fc3f18b86cbe496493ac11238f9c"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532901357-68dd3be1-c8b0-4c99-bd59-21ea9a93e155.json",
+      "bytes": 402036,
+      "sha256": "96ac05eadd5e855ff438d2429e74526d93e62941b0f658cf79e151532e6413d2"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532903504-83ba8cce-2eca-445e-83e6-c7fbb6265f33.json",
+      "bytes": 640187,
+      "sha256": "e9d6150d3a744fc69443ce9c7e3f9cebdeb19dc1840f2f4a23b5bef15d53210e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532904547-9ff6f661-9f4f-4617-b103-0261cb4c4adb.json",
+      "bytes": 622289,
+      "sha256": "1f5d7e4d95325172cc577f8c1456ed5c138e318bbaeabf54dafd151f82607358"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532905295-4be66bc1-23cb-47a3-bf12-53faeb5e7087.json",
+      "bytes": 373863,
+      "sha256": "352b39c6df251d3b3bf380bdce279671677fce03937183ffbc2f0d1ebb2cb6d7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532907163-db745524-c9b1-4403-ae38-657477d715e4.json",
+      "bytes": 274035,
+      "sha256": "a96c049efeda5707d396c6da321e28fa4ba6dbdfbc26266ddaaacdb968317ab7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532909343-f2647b58-4ec0-45f2-ab1e-89de8a976202.json",
+      "bytes": 760525,
+      "sha256": "bf6d7bc588f76d85281e7d80a7d9a622c568ae31312086b1c7f2262c5dc45d64"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532910286-adadee8a-c996-4309-9bb8-771a1cf5c2e8.json",
+      "bytes": 668323,
+      "sha256": "929891104210985648824c8b0f98c32763582fee2375526860a138cfa34ff617"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532910798-81f50de3-9938-4f4d-8604-3ff7d846c9d7.json",
+      "bytes": 404617,
+      "sha256": "171d6877e85725b097bff188a686495d8d5aee8760a2ff811a401f0d78fb592a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532912745-89a8f337-523d-48f9-9572-1bac3f527012.json",
+      "bytes": 348293,
+      "sha256": "d246842615ebb325d1f938c95ed05c4a50346fcd801f9eb6be1eaab4f06f0dc7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532914864-d3c4d3c5-2559-4074-af1f-3cbef5dbee9a.json",
+      "bytes": 642734,
+      "sha256": "d04419f5b09904721d9187a47424fb936d5bde41b4b9b0a0fc36d660048fefc4"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532916322-e8307c53-c62c-4106-a83d-9dcf61646b03.json",
+      "bytes": 686283,
+      "sha256": "2badcf7ca19d5a55f7ccc60786e924659c59e272b121a648c4cd0c8cbcb64927"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532917090-bec52135-c08b-4d72-8bc4-f58fed84b89f.json",
+      "bytes": 443020,
+      "sha256": "652ee512bfa9fdd43b88a692bf422b8e44c33834a8b3debc455b0c7d9628eaf6"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532918092-fe16e50d-5dd7-4aae-9abe-1cada1766281.json",
+      "bytes": 240716,
+      "sha256": "5b64f42ef37b7588e1b4a20a46a8bc26c5ce8594eb73f7427102e0751fa8a69e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532920388-958f7c1a-2c2f-4ba3-920b-92f17767cc1b.json",
+      "bytes": 455828,
+      "sha256": "71b3767a894dd6ec43798003de893df433127623da135714e93ae059c66c2d24"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532921354-9c6661cd-d8a7-4dec-b142-e28114fd262f.json",
+      "bytes": 348270,
+      "sha256": "46ea26316301574acc196935d798b9bec160d238b9a53c5d7ee47bfa2a645fbc"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532922607-887e69c7-dc2a-4150-8329-7c285aebe50d.json",
+      "bytes": 870626,
+      "sha256": "46fdcea1bad0dd0c635222963097b5e07adcf3d6d5f6e6c378f0558c719e452b"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532923691-9cb9455c-4ad9-4772-aefe-bb7201db0cc0.json",
+      "bytes": 386696,
+      "sha256": "e0ee153e15b849617a0c32db575dcfeaa843f28deb5049a4c0654c1b7118e950"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532925907-6e525f0e-e4f4-4478-bb11-90a4816701fc.json",
+      "bytes": 307308,
+      "sha256": "5a7b8e9fba6222982034a96a165bb95b4619573e4faa9b05e89ceefc6bf9e304"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532926050-bfab08c0-37df-4f7a-8ff5-ccc66b72475c.json",
+      "bytes": 535196,
+      "sha256": "86849e8e36d0cd6130028c8c1e4d9b4add0f9282ece6c3bb12b26b3df4ecdf60"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532929428-1b3e1355-4ac8-4510-9ae1-cecfd4f1979c.json",
+      "bytes": 250943,
+      "sha256": "3cbd612d0b07fbd6798998201883bb4b27d10b63d4338531f636fb49be88e700"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532929784-8ce548c3-230e-4ec9-8271-4af29a92bf02.json",
+      "bytes": 353393,
+      "sha256": "00b3a6a3a1d62dd65c851544da8ce0ea34395ec57a66d2c35e4f5d9d45b8872f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532929995-a709e05e-3dd8-49c3-a1b8-c96ee76aefa6.json",
+      "bytes": 379012,
+      "sha256": "b0343047d31fce482547121cce0a7acc129ec56336f580840d5c7455e443602c"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532932942-a6596ce8-cd50-419f-8abc-abf8a6dfc4e1.json",
+      "bytes": 343144,
+      "sha256": "7148e6a1eeeb39c8b85fc2afc3977e20ec65fe36b5a19fb14bc7ee20b9a7a765"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532934887-24b1fd5c-df22-4f41-a9dd-c6aa5afabe19.json",
+      "bytes": 332928,
+      "sha256": "24741ee8210ea67069af2f2203617d058350c234fe157b6199614f3e34755406"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532934892-83c590ad-7f78-4d19-b8ad-442e98efee06.json",
+      "bytes": 442997,
+      "sha256": "fdd836de04f4272102b422dd5154d5bbee7233ff8cbe802bcb5f48d9af405819"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532937260-5bb6c21a-9de7-4c4b-a4be-6f7b344dd4b8.json",
+      "bytes": 174166,
+      "sha256": "83843c84f1e921d0e777d416f5c7fb7b726222f893c72b8f51b8355992299946"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532937899-4a4c2f4d-d0e9-4df4-8977-8b6476f5f952.json",
+      "bytes": 304741,
+      "sha256": "ea569d989a6a3b48b0b93e6782f441982978d62b30d77a78808c1f1a5cb2542b"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532937985-a2553dfb-d76d-42d3-8d23-459dcae597a1.json",
+      "bytes": 332919,
+      "sha256": "de3afd8f160f7d30dbe24fe7b4d28ecc2a4d7a6ae97497caf9631de1411b5711"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532940894-ce1f8d0b-31be-4ca5-a3ca-85855b150ab1.json",
+      "bytes": 463523,
+      "sha256": "6119e91987bd70b0a7393ae70c1c126202b02a02ca1d7bc6b1f8d5cdb3d841b4"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532942681-2d8f31db-59f9-4496-babf-1d1f67d73d8e.json",
+      "bytes": 683687,
+      "sha256": "0d8ff6f3d3428459b220494e73b701169f04485cb38958b3477e0e70c924a7be"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532942787-47bc42d7-5b54-4b04-861b-d5150e510dc8.json",
+      "bytes": 699081,
+      "sha256": "d809c2d83c47f7991c9ed729146b619002eea1737345e7e545a7000ef4adb2e5"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532944924-9813680c-e94e-4db6-b8c8-c6e60266894b.json",
+      "bytes": 274031,
+      "sha256": "3ccf8aede8bf321a21d8cd9233e5a03df7dfe2a21fac1b6962bfcd0053c93aa4"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532946938-8a2b15b0-a17c-45ec-b9cf-9a7473a0938b.json",
+      "bytes": 530078,
+      "sha256": "a5ce7f06caacab2b3f93c9a780f3ed9715d3c9f059754191a7ee366286cb9ccd"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532947689-d2bd7fc3-158b-4398-b22d-aab58af94003.json",
+      "bytes": 281715,
+      "sha256": "55c4f32435c93e3151803cc81a77c86766c1569aaea806aafd12eb395b489f9e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532947927-9b56cc0e-415d-4bdf-9dfa-30179adb1d4f.json",
+      "bytes": 796339,
+      "sha256": "99254dcdebe979d7b54acfc8f499bbd28007d922d7f26221353a7a6c7570dc42"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532950645-68e67d8b-757b-4e14-90d2-c797b7ddfe4b.json",
+      "bytes": 284277,
+      "sha256": "6536e8a5572ccb6141096cf3102287cb442f2a9ac797fb85c51eb3e60981ac0f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532950988-f98e7c3f-fa47-46c2-be18-e10db0131d8f.json",
+      "bytes": 547998,
+      "sha256": "fad745d84a096815bbde9fa2888989e8fa5afe163efee8d164308e8f641d46a2"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532953633-301b93ac-7600-48e8-b228-7b6d60012186.json",
+      "bytes": 338027,
+      "sha256": "8b702d531c8d838a36b84ed7094c163ff9e8117fe552616ad18e903c2ec850f9"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532953701-96cabcc0-25b7-46f4-ab15-a5a4431437a4.json",
+      "bytes": 312445,
+      "sha256": "d22f9e4a0b75b95fac13de58e323c7f801e4a75e4c825fd952e18e907a21f9cd"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532956014-6d9240ce-0a78-409a-951e-46d57db98669.json",
+      "bytes": 138293,
+      "sha256": "e0a3fd0a66de49b25222f874a3c232b7ca15509f2da3a99bb807d6eb29d4e093"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532957048-f5f1fcc2-431b-4e34-bad7-03be7845cb57.json",
+      "bytes": 343171,
+      "sha256": "d819d081beaf70756563e5db26bcb8d23d3e7370486978adcc6e2a0b9f62796e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532957408-fd95eb58-86b9-45bd-b816-bf88948f59bc.json",
+      "bytes": 402033,
+      "sha256": "5e2bf10a1d7160a2e98f042a5b808cba78ef8094e63a41e8ac2f1a1f268db9e3"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532959812-91bdf379-257c-459b-8431-ad0b499c6a43.json",
+      "bytes": 473734,
+      "sha256": "6a450499c8106a04bdbdfa7c3269cb96d84e28690d5be863a016930f2e869069"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532961190-894e5897-2275-4130-9091-cc03febcdae2.json",
+      "bytes": 542886,
+      "sha256": "fb51a70d919e4e0c2a511f882b85b601c00e85e6094657da08c656c54b65de36"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532962218-a1977613-2d30-4296-9e88-5c68af605d3e.json",
+      "bytes": 663213,
+      "sha256": "c0c9cdeff9b24b916a9885a3b6c6dedd35531087bbbbfe49125b9c6dc5f926de"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532962703-fc1b5dc7-cb3b-4bb9-bd03-bbc492a2a378.json",
+      "bytes": 220235,
+      "sha256": "0a425ca99df6137d71bb440b2dfb04fa0d0b222b4576c7147d7348fd0870505a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532965229-5acb3ffc-33cf-4eb8-8780-014e40bc2d4e.json",
+      "bytes": 225349,
+      "sha256": "34b586da10c8719c7ee56bbe7837881287fec859a874f5f0014b806313cbbc6c"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532965682-8a924ad4-0cc7-4b30-8909-8af7f92d0ad2.json",
+      "bytes": 545441,
+      "sha256": "296adac2f555fc022d5eb86ed9015974ea144aa9fb63a9200384249face5ab12"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532966813-e671a6ab-7db5-4d26-abe5-72447c682cfc.json",
+      "bytes": 291921,
+      "sha256": "19dbae0518419fb5ddea0d8188de602f049fa8bb58296010223a0062239dda7a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532968592-af251f19-1e7b-4127-b642-b834f951b384.json",
+      "bytes": 243282,
+      "sha256": "f595d930a73090cdb06759bb247a90b4b1c861eac37355cc369994fd214239da"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532970437-9b674188-7d84-42b1-803b-44083fa7f60a.json",
+      "bytes": 373861,
+      "sha256": "9c17d8e7e334758430740738c82fbf6049f7cd25612ea174676735f2fe31b5f8"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532971394-49d2ff3a-7f2e-47e9-8017-929d2a12234c.json",
+      "bytes": 276576,
+      "sha256": "dc7ad4ce9a9cb2ef1e06dd9f4a8c842f5185564b4ea5a3fe488761e4aa9cf43d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532974470-91fbcd8c-6ebd-43e8-8423-94f20a277ab2.json",
+      "bytes": 345700,
+      "sha256": "97e2ac1a6a1a7f39f47946af8afd0be2cc1f5073d70f37e915ccd2129f3e1199"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532974685-d0ca7b10-514c-4073-b02e-35dda7910529.json",
+      "bytes": 317547,
+      "sha256": "0517c5594a1e4eea3edc1244f911a8823c90e436bcba10555b3559033d9fb503"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532977999-3629ed85-d673-4ce6-a1c1-c7d2340eb682.json",
+      "bytes": 271444,
+      "sha256": "ff79b7b9d9a09c5077b940644a9f8a52ab6013f4df73f73f3cd60625144d9408"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532979269-b41bd152-970e-40b0-aabf-a82c97189b9a.json",
+      "bytes": 486541,
+      "sha256": "7773929f2f854514790930fb1433ba73872a17079def1cdffff2e19c8601a438"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532982309-0a47a2c4-2818-4a40-9554-94fee94473a8.json",
+      "bytes": 611995,
+      "sha256": "4b15bb10c21c0f57e499b3ac0d0b5e621c6848c00cc134fe4712d3cf97df9e63"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532983282-8f82f59b-a0f2-4ac9-8ded-5ca31bd6084a.json",
+      "bytes": 483976,
+      "sha256": "cbeaae7ebb1c30527dec423705d3fc61aa531e93104b08e827113d51a17f36f4"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532987038-319fc218-33ec-41d2-93d8-f850758d14ea.json",
+      "bytes": 471166,
+      "sha256": "d42496659bd506771ee6d6dacc120c65f246415d33c3661a00524bea0dcc4ef2"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791532991050-7f4728e2-cca1-4540-b3f9-78daf47b1d6e.json",
+      "bytes": 496776,
+      "sha256": "e47650ded8542adeb57e51657da770b89024d82a91a861cde9f9ecef8cf3a519"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533010755-709ead22-7c6d-4df3-8b1c-3dafab309d3f.json",
+      "bytes": 528997,
+      "sha256": "d3f93601b155aef9aea1489a8f5cea5098a8d75fc4628947a4d651d26142295f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533023959-6fc24112-0860-4e03-b6c5-b400529895e9.json",
+      "bytes": 512499,
+      "sha256": "c5b7b3e12d4afc11318f2a3844e872011c5b84e8c9cea981a92ba3300d4761a2"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533062974-39da9a6a-8c78-4311-9490-d15774958afd.json",
+      "bytes": 512643,
+      "sha256": "a778d701ede378051ec93e636a2343de4c000931decb1f992be87e04ee6e4a6b"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533077222-9564f900-28db-45a3-821b-f01e620a2356.json",
+      "bytes": 472987,
+      "sha256": "cb35b996b3e552bc1e7bca828a88b494b01c5cfb7a1982a5a4287b42cd4b42cb"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533090804-c3a02bd0-c57b-43c8-8394-6eb241b26960.json",
+      "bytes": 517724,
+      "sha256": "8cbdc8dca1ea20c638a42e6e38fb608f17b1d5fbe0870826e8cbbeef107a1233"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533105384-28eb11a9-4c15-40f2-9ce1-3901da98c8c4.json",
+      "bytes": 495693,
+      "sha256": "336f24e4e5f9cc0b5373b02ea777baf3b4bc7d49a6a54fb695c3bb33881567c9"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533117799-01e33ded-f498-4de7-8709-648d65e446dc.json",
+      "bytes": 520362,
+      "sha256": "6a9bba0844152f776469221eaf404d5d4dc6c3625e283b02b4f999fdeeed9d40"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533132047-f64944dc-1c95-4103-a8e7-47730103dd18.json",
+      "bytes": 463150,
+      "sha256": "87b68a1815cd575ff52bf1d42acde12400c773420c510839f2f114bea658ee9a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533166675-cd3fe9a0-88f3-481e-a8a2-29a6fc727510.json",
+      "bytes": 631479,
+      "sha256": "7355d2471a27ac5128a885d048f45b2ed8e66f4d1444d4de91293fd5df5ab736"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533176749-d8fb6428-d724-4cdf-be37-cdfa466d129e.json",
+      "bytes": 581420,
+      "sha256": "7f01daafe6fd3f83bbff7f8b6db32ab31a9935079a59bc5d803fc794b4fe2154"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533196440-951f3776-102c-4318-b687-02afecf433b8.json",
+      "bytes": 287915,
+      "sha256": "c74aa556d4ad9131d83f34d457b4363bd643683b2c22373d2d71164ead9e17c7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533211748-ae1b34b5-3117-4659-9c0f-5c767853f11f.json",
+      "bytes": 256692,
+      "sha256": "4e059e6f06d13edd8510b71dbd13457eb9201f21b6d00c48a8e541c6b007d96d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533219857-3ab8298d-544b-4c17-bc30-ac077a7ee86a.json",
+      "bytes": 491925,
+      "sha256": "0ad2041de7dfd990f88db1d5f377e8cb1b77b561c9b71e7d5a8ab25dfd82a29f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533226127-43d8e03e-4cb3-4f44-8433-852d8bfabe30.json",
+      "bytes": 491410,
+      "sha256": "7f2d4cbe20d2afbd40020005c69a876a360dfd9078ef705018e80bf08e0500e8"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533238439-635b44ea-998d-4c3f-8b6e-d54d10f06d33.json",
+      "bytes": 1342760,
+      "sha256": "17012880c9674a4671cc67dccb3e8da40c9b6416a11ecb854ec4b0377572c966"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533246413-c9a944aa-0bfb-4533-bea4-b35176d0bf27.json",
+      "bytes": 1546223,
+      "sha256": "ca7a03cdb0deac48cc0e2f12fe3a8b7321df73d72d0fac2470073956995fa93b"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533252251-d1512271-d4d9-463f-802c-b840da714259.json",
+      "bytes": 458546,
+      "sha256": "84ebc242ee765d1afd994c449b63a70ab656f79e190d067ef3bd675dc19988b6"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533260864-3dff02d8-8e2e-4a5e-9f47-61955646efcb.json",
+      "bytes": 459330,
+      "sha256": "4d4d908a22d367f1e06271fa0c440a4ce3c74e69accdb07279f4df2f3f27f62b"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533268906-e8b08b9f-85d0-4cda-9094-a8968e43ae8d.json",
+      "bytes": 601093,
+      "sha256": "bab1385c3da847d9c3fd6d0d6f84cdc77417a7f0bab604293126b5a0faec1279"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791533274623-fbe1211b-67e9-4fe8-b188-f18ed563e00e.json",
+      "bytes": 1093383,
+      "sha256": "2e6e7b77c180ff1271783d93cff6e8eb82d5cf089bf8b616426b355f06f83d30"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534277372-b660dacf-59c6-4fa6-8d40-a2a6f4111732.json",
+      "bytes": 617303,
+      "sha256": "4d716873933e8ced50b35868b288fad03790faefb566731b0aebd07403a4bec3"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534281918-44f40027-1282-4718-8274-f08f18a2ddf4.json",
+      "bytes": 612182,
+      "sha256": "ca9c707017ee10ab0cd07505bb9d030658ca84630b2e02cb36b896967c72419d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534287165-1a1962a9-9731-4cb2-b905-6137a6ff936d.json",
+      "bytes": 791383,
+      "sha256": "4b349b7fa6da7f697cc9266822e6d852233dbc1a11a3621f58aa4825f86b087d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534292532-fbb75d38-aa7a-41df-8496-bbf8e0fd05d3.json",
+      "bytes": 712038,
+      "sha256": "a1e45fe8ac9f0f3381bd8e83142af428f026d0ab007ce99fa310c9dd4ba8e24c"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534298490-ebe01dcc-3b13-443d-b455-7bb6abb66f1d.json",
+      "bytes": 724826,
+      "sha256": "f3dfd2c295f7b9aa6511e97466b155c849f28bab0761ca4bf78400a930c7fd0e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534303954-e74cf814-44a6-4fec-82f5-eb6a11e6f736.json",
+      "bytes": 837513,
+      "sha256": "8e1f50196184ee9fe37f87b5d8011a0670c884e9d4ef6e732c7abcdb36ff153d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534311722-5777cbd6-b0e6-475e-acde-3cc74372dcdf.json",
+      "bytes": 571216,
+      "sha256": "3d25b767717e7a6a79ef49859498891430ad3ec7069198c39ef6d625d52d91c6"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534316121-94e51b82-0c44-423f-9782-58c32a5d9eef.json",
+      "bytes": 548178,
+      "sha256": "49910f0122c03b0305f928c010e9d7e02c2248047550cee38fedaaf8445224a6"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534321171-5d2bea85-1f78-49f5-9475-c9c3a7cb63c0.json",
+      "bytes": 655700,
+      "sha256": "abf701d097b1cc3e384630d206fd5b1d610379482d3bfd223f18bf230ca998dd"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534326153-aef7460e-d916-411a-b3aa-b7f883c1f8b5.json",
+      "bytes": 627535,
+      "sha256": "8177ecf2478c0c9de3e1e36eccb7eb943ada5373977966ec4234bfda65e316b1"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534330315-666f2857-1908-4078-954d-66a7fe1bf7a4.json",
+      "bytes": 617296,
+      "sha256": "033206649a0329825f609d64a7b9978cb4af9c3776704b734fc0a22d75856942"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534335697-ab382de9-f381-4ff6-9475-5a24bb8ab14f.json",
+      "bytes": 806788,
+      "sha256": "004b855297becd2979718c45c4aa02ff8cd2da7a5cfd9fdec072e4f3898413df"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534486738-5e89b209-29bf-4984-bbdb-2cf17c63c433.json",
+      "bytes": 1099764,
+      "sha256": "7e6b232977f97413c47882e168334e2febe8afb02f5a8b9e78007632aa204555"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534492605-f6db3782-b217-440b-ae07-1c3c3559168d.json",
+      "bytes": 317840,
+      "sha256": "057887b2cacd48486f9dcae7c339f3fa5ebf0b4883bb751717a0c045e3e8710c"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534499329-512a5b96-6c92-49b3-b7e4-d351b2824b69.json",
+      "bytes": 317701,
+      "sha256": "bbca726063f32e2200f21f0ef5180d6381789677d174474da89a4c7e629b64cc"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534507251-9fefafaf-fcab-42e9-9f73-6ccde117d0ea.json",
+      "bytes": 805379,
+      "sha256": "1c493a5f2f85a64bc2b0e3b7d7812e6eb9b855eee985753fbd717819d3329d2e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534514741-bf2451b7-2255-4bc2-aa46-d2ded3ef0f5b.json",
+      "bytes": 1065455,
+      "sha256": "158134d97a56c3099ac022245ff73e4cabf6b82b3a3113cdb537d31204b4069f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534520989-d662fc76-d055-495b-aab4-b365b9a12736.json",
+      "bytes": 406972,
+      "sha256": "be07e70f7b6d92d0f0fd94e0a1058741de8beb64eeec3f519f21cdda0312905f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534531287-16f1d3d7-8c6c-4f3c-8ef7-ececda9ea191.json",
+      "bytes": 408347,
+      "sha256": "7e8888e2dd8eff5a675f7971700ae36b8da2fcecebb1e23fab651f961ea5335d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534539682-229bb50e-629f-4813-8032-c3c7ba035e03.json",
+      "bytes": 931197,
+      "sha256": "0746425211e0d57d50205cd8c6a597fb95ee6d88f8b670785b88dddc788d3983"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534553594-43dd82c3-7583-4d5f-8228-0a15e69bdb99.json",
+      "bytes": 1138040,
+      "sha256": "b4377b8027e9a1776598fa64e4eb75b2a172e945ecd2312c24b6d4b3012e94a3"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534560225-c1c1faee-6206-4888-a4ab-393d10f9ad86.json",
+      "bytes": 302248,
+      "sha256": "2e9cbca46087ba0678d5b46107e5ac5f6f87ca0849b12f90ab079cfc214b1f67"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534567395-44b3c77f-38df-463b-8fea-208d054ca30f.json",
+      "bytes": 474226,
+      "sha256": "a0df7e9a6b86ccdf8dc969f830389060c28309e9f1930c3510d0b094afde0c8e"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534579610-173a6736-f104-4f0f-a652-04ac131c09f3.json",
+      "bytes": 1115914,
+      "sha256": "c5b45b2dfa0277a1fcfdc75f9427cf1d88e451365f6e5e57e29da3ef53e0dfeb"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534587716-4f85d6c0-51cf-48f4-b321-35d36bb8a60c.json",
+      "bytes": 1081891,
+      "sha256": "1739803f4d6be1efb268a02a8587d92db0da9f44d544955013a80ebc1de6e650"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534597280-1b97c2bb-b9ae-42c4-b0ab-d07b0adf8d2b.json",
+      "bytes": 1087005,
+      "sha256": "f8e301d7a9c2dab7a7b242a927b9bae4952ffd9d2dd55936d5a5246f217558b0"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534604473-5f65dec0-57c7-4e9b-9b87-b5b8d4bcde32.json",
+      "bytes": 314726,
+      "sha256": "d65771b779cd4f2ae157348ffccac268c42d2ebad05283517e55e74481b762f6"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534612907-cafdc9cd-1a4a-4d70-8bae-81901c0254a4.json",
+      "bytes": 315635,
+      "sha256": "5ad15580c7e55d6be66b09998da9cfdfa02fddbbb99e58b51308a2e36ec7ab3c"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534622324-a5c124fc-37a9-4542-a8ba-e4d945dd4b84.json",
+      "bytes": 1136803,
+      "sha256": "856d50e88474b66512551d16c8a4541cbe04763df497cfa944f7ce2577b6048f"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534631622-97c14d6c-4688-4c9d-a822-a294cfe8606b.json",
+      "bytes": 952585,
+      "sha256": "2b7248177bc3d4160858845ab9908369d4253bc1f6cfda68754b571c67a7361d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534643083-9687a831-c5a5-48b8-979e-6c0c40741895.json",
+      "bytes": 613876,
+      "sha256": "e371b5900cfea33063f063e5a96c507ec492319c86873e132d6a076c32cda2d6"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534650364-3cfac7fe-270e-49ae-9584-10dcec85fb49.json",
+      "bytes": 612905,
+      "sha256": "348a4e3d0250e3fee349cd48b2254106f9cf4cf772a15bc94771f7ded2de8e07"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534657991-e9de4599-bc64-4a68-83c9-d66f5f151e61.json",
+      "bytes": 1233693,
+      "sha256": "de1720d7dadba121e620d34fd2526be540d9be874da54343959c12a2a7ff8af0"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534675102-b961e326-c799-4fca-8f2a-b142b6f64615.json",
+      "bytes": 1645872,
+      "sha256": "b485ba32ee5620e501e6f934a7eb062fa15642ea40912a04adb5e0dce997714a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534682840-408712f1-c67e-451a-913a-e41b953872c5.json",
+      "bytes": 443867,
+      "sha256": "df4eebdd0335c299592395756c255eaa7d6e606617f7f27bc56743ab43ef6420"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534688839-eb333c1c-6c92-44ef-b107-541c2b0cf6d1.json",
+      "bytes": 443602,
+      "sha256": "29309a52aaf651da329f9228737f1891672ce788a0579024efe2842a14c53e61"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534695335-bfb9a9e4-b4cd-47a6-8fe2-233c5e0b117f.json",
+      "bytes": 1240782,
+      "sha256": "1883a67db95ef12cf8797aa15f64f9c3ab7d761cea2c37f21ab9a5668159979d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534702560-987a8931-cb9c-4c61-a759-3b0285c0733b.json",
+      "bytes": 1248990,
+      "sha256": "99853701a9af11e5cd5ea1aa69e457bd2bb104daa05636e46721f7d92da671f0"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534709413-d9460b52-be7b-4b41-bea2-4f20ace28e7d.json",
+      "bytes": 468911,
+      "sha256": "3b8a121b608b5b2a0aad2ad05dc33b5d5af9ac6727a1c1d9c73b7064bb4430d5"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534718107-ecb0583c-ee8a-408a-b672-b2721059d59b.json",
+      "bytes": 469812,
+      "sha256": "e050bb55d189e4c7f49d0cf13b34d87d44b2aa25373f766a38727ded47cbde0b"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534727297-55e9c18d-7eb7-468b-a118-1aa1b744f6bb.json",
+      "bytes": 525487,
+      "sha256": "9d1a4221e79b7b7f54cdae370a70e0fc2cadf020f997db2675d9548a8062e193"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534733588-2f3f725f-dbbc-4340-8fcf-c6d924d3d233.json",
+      "bytes": 979508,
+      "sha256": "91de0c5235187c33dcdd3da0e86510404c1f44297188c32aa2bc7b0ac388dcb7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534740363-6f1e04fc-c539-4518-bdc7-007c202624a5.json",
+      "bytes": 337828,
+      "sha256": "2f0a3606ce5d01d4cb18ad66645787b3bd44881b1b1dc31ed8031a044c7a8c2a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534745250-57ea5ce0-6e5c-4824-8da6-ecf14aac91df.json",
+      "bytes": 337347,
+      "sha256": "aaf028be9ca32ebf18c7ffdbd59515439e0ec923ad2834c41c4bf2384a4eae5d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534753188-499258f5-8d81-4060-8d27-634ad49530b9.json",
+      "bytes": 555531,
+      "sha256": "1d61e37a5f43354421e53ab966321983f01a5eb78ab38249a4e1af9be38fed74"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534761601-4e35c8b4-5478-42f0-acc5-8ff3f75e8b23.json",
+      "bytes": 1108186,
+      "sha256": "873437009ab2488c1fe1e24dc2bf2408530d6ce6c75e739787f39209a631de9d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534768049-b0fbb8c3-40f6-45a6-add0-6640e452fdd7.json",
+      "bytes": 442867,
+      "sha256": "76450797fb22ecb7630bf42d2c0b562a87296f49b27e421a97b5a45f9d5816e0"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534774339-1f9d6a08-1446-44e4-824e-ba734b41be01.json",
+      "bytes": 442584,
+      "sha256": "a27222ccd81e15cbb9f57acf48a13bb91bf4cf6469b8a670bb88f2e7045cb254"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534784443-e646e63e-97fa-4b15-835c-feb9728b0880.json",
+      "bytes": 817620,
+      "sha256": "bf7a214a9f1d955585a02a7ab16a70ab926a7efc0fe94dee4d730afbd0787664"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534791182-c0020d90-b064-4ad5-966a-1dbe1b11093d.json",
+      "bytes": 987200,
+      "sha256": "10b2e94327e9b8b4d460e5411a7411f537bc69e6f71f7adf5b7f3a4999af0be8"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534796744-7edbb034-8c0f-4bc6-b7de-f8e410c1d6e6.json",
+      "bytes": 245445,
+      "sha256": "bc8be056ca3204e8cd124dca17353c8fba91dd6012a3163831d83f0f5604abe0"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534803438-11154964-f098-44ae-94d8-2718c9217bc0.json",
+      "bytes": 438027,
+      "sha256": "a05974d813de5b5152f4e2f610e51671be3b912b7a7cc9227d9161316ed294a6"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534811482-43141ec0-36c2-46ba-a019-38a24860bf72.json",
+      "bytes": 1138977,
+      "sha256": "2f3e5bbf399412f6027d1cb42b9fb9d190a070e563c91ee55e27847c502be30d"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534818916-197451e7-3830-4c75-9490-e260734a5963.json",
+      "bytes": 977259,
+      "sha256": "8a0ff10dd104ccd0d0007e861c0074c4a0b1ad0a09c9963976f5e664dd3f67ca"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534825893-23db0542-1e74-4aa6-8c7a-06d658b24315.json",
+      "bytes": 253692,
+      "sha256": "1e2bcf41f24c0b558083b41485a61f8a8f29209da01d304590a892fd866cedf7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534834678-6998657f-b985-47d3-973a-9e94af4236ab.json",
+      "bytes": 253852,
+      "sha256": "0f0ad173c2b10bec0d71cf9c702d6f77d346284982d16cbabaca389330585faf"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534839860-084a3a07-fdd1-4e3c-86c4-3760ee83a247.json",
+      "bytes": 1073466,
+      "sha256": "dcf26971db4b42362381a872b49388f884409fdc44ed6f0a290a8b604af617c7"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534850360-1e370b35-edbd-42b5-91fd-372f9f99514f.json",
+      "bytes": 1395296,
+      "sha256": "8fc44ad124cd1d41a152f590b22050fafa57c44b85cf047782e617688387acc3"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534856019-5337cb4a-1377-47d8-9e21-3e8f5dc85a02.json",
+      "bytes": 565918,
+      "sha256": "1b994fccb02a4640669c6146664a1721e339a4044bb173b69037a590ed1a2991"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534863392-be5e5b7f-3a5f-4a46-9347-323ec35ed255.json",
+      "bytes": 566816,
+      "sha256": "05f46afd6ebeacc7c4497b05ffe2d689a4e1e1ef858c16b26a62ba142ba7bc37"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534871757-8a0068f2-adb9-4279-bb3f-891a9fd046a4.json",
+      "bytes": 1123809,
+      "sha256": "c86388a5d722c5e4cfbc6ebc64c9b55fb032a695328bf8bdea3a89ae95bf226a"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791534886336-7ee23bd3-30f9-4261-9e2f-caa293790e39.json",
+      "bytes": 1511599,
+      "sha256": "4f817af464b32efd83439e544744cf32eb9f82bb961c491589a489cc57962ad6"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791535494025-d0eae78c-7080-42e8-93dc-5cca49f55abe.json",
+      "bytes": 4415129,
+      "sha256": "c2b25eb49e1e6e85ac885b35c626795378ad2d17ce4b084d97ebfac08b3596e8"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791535511929-133a9ca7-2890-444b-ab90-e33115dd6955.json",
+      "bytes": 3950268,
+      "sha256": "0ae230a29008c42323a2a962c2bedac1377651bf7152ab85b2895a69f82f86fb"
+    },
+    {
+      "member": ".preview/lesson184-raw/1791535521402-c1e3d29c-f363-4fad-8a65-006de279f863.json",
+      "bytes": 1081891,
+      "sha256": "78a97845ecaaad4046388a22cd5e1b9c64da54bc2e1222c340ca1fc8f2d623f1"
+    },
+    {
+      "member": ".preview/lesson184-source/cdc-exposure-excerpt.txt",
+      "bytes": 712,
+      "sha256": "c3e17498ca396448e69f1fa7d472adc82b21fefe5cb98885c793c9c07abefcc7"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-69.txt",
+      "bytes": 426,
+      "sha256": "45bebab628399f0742db2710e1676fdf4251596228eca0acaa740810913de2d8"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-70.txt",
+      "bytes": 476,
+      "sha256": "e3daa84ef1615d19aa7fa02544b5ffd0a3ffe3c2aa3c8cc1ea725bb273d5da0e"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-71.txt",
+      "bytes": 475,
+      "sha256": "2523054c89d0e7932cedc663e1bdf359c040dc1b3d609b69a3b651e2240807f7"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-72.txt",
+      "bytes": 379,
+      "sha256": "071e98c507902dd3cfb04218f6091f4aecb34732f03843c8c5d0f3dafd0700fa"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-73.txt",
+      "bytes": 803,
+      "sha256": "3d5bf14f832036997f0b20adbd8e6e02714599b3853f7f407ddd9952d57391a4"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-74.txt",
+      "bytes": 946,
+      "sha256": "27119f7689d3adc0864ca70d0aa0cb1bd9c143f0a5bed324387cde2a59c71016"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-75.txt",
+      "bytes": 690,
+      "sha256": "62730418050154b697a65fb6f9fe5988a2957c6370d6ed8e3d242dfa33b10a9a"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-76.txt",
+      "bytes": 425,
+      "sha256": "6a22a1781d98379b1ee420d00fcf699c7fb327f575852c29ee7fcfcaedffdded"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-77.txt",
+      "bytes": 388,
+      "sha256": "fb143e235b6c96705a1a5c1efdaea97a52e06fa3725a00b50a64547b16d76064"
+    },
+    {
+      "member": ".preview/lesson184-source/deck-78.txt",
+      "bytes": 54,
+      "sha256": "4d157fe6755222b37ffe6d5cee838fe3905d3089eb8e89f61a3bf02246510ba6"
+    },
+    {
+      "member": ".preview/lesson184-source/facilitator-19.png",
+      "bytes": 160831,
+      "sha256": "f580ed0e92c15c00ef3e9d0efa184dd023679f9a1e838d2892c665f5602b25e0"
+    },
+    {
+      "member": ".preview/lesson184-source/facilitator-19.txt",
+      "bytes": 215,
+      "sha256": "8490f626034aa19f8d4a24bec63b10d128f49fac538a8d539c39fe01e8b88a68"
+    },
+    {
+      "member": ".preview/lesson184-source/facilitator-30.txt",
+      "bytes": 1603,
+      "sha256": "ea1d36b29d88815d948ad0aa13c0a1243a7095a73259771e8a3abc7ceb835f11"
+    },
+    {
+      "member": ".preview/lesson184-source/manual-21.txt",
+      "bytes": 633,
+      "sha256": "ba38b8dbb282b7c518aed27f4cd399fdc80827b46e17c486e787684763d5436b"
+    },
+    {
+      "member": ".preview/lesson184-source/manual-22.png",
+      "bytes": 347686,
+      "sha256": "8a8ce6011633b4002313a53c6ba26a94976d60ccb1cd5adcd5362aa4aac813be"
+    },
+    {
+      "member": ".preview/lesson184-source/manual-22.txt",
+      "bytes": 157,
+      "sha256": "5537e928cb47335efd47224f636698b6fcd588c7592e0826f86afa3e62446c27"
+    },
+    {
+      "member": ".preview/lesson184-source/manual-23.png",
+      "bytes": 323226,
+      "sha256": "a49dc7b2e6526ec0197129ffcad8dd2c406dfbee486a9cbd7f2ac35514b812cf"
+    },
+    {
+      "member": ".preview/lesson184-source/manual-23.txt",
+      "bytes": 3,
+      "sha256": "238903180cc104ec2c5d8b3f20c5bc61b389ec0a967df8cc208cdc7cd454174f"
+    },
+    {
+      "member": ".preview/lesson184-source/tesda-29.txt",
+      "bytes": 1457,
+      "sha256": "3e5fc4e9b542aa0180f01483af21e72a6ed4c1720a6c114ce3913abcf93220d5"
+    },
+    {
+      "member": ".preview/lesson184-source/tesda-30.txt",
+      "bytes": 1764,
+      "sha256": "67b8d680111f5a6594df882f42d44272a0cbf2efaca9268a498c3e6f8f043d85"
+    },
+    {
+      "member": ".preview/lesson184-source/tesda-32.txt",
+      "bytes": 1243,
+      "sha256": "4c30244339c3a9604f7dd5bf16f2250eb355032e53fc2ebb538f072b9be27a4a"
+    },
+    {
+      "member": ".preview/lesson184-source/who-8.txt",
+      "bytes": 4832,
+      "sha256": "22ed00964587560efdc9ca3e2af32529e578615fb83b0bf1f1fd27a6b2ce377e"
+    },
+    {
+      "member": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/competency.json",
+      "bytes": 1973,
+      "sha256": "57bcc97ef3e2ae9796a228099c520ce5f01a75b306ae9724538f8857e3386d1f"
+    },
+    {
+      "member": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.en.md",
+      "bytes": 10021,
+      "sha256": "bcda265bed32cdbbff7f5163e15dd1b5d75885bd089471b8bdbe378562207a5d"
+    },
+    {
+      "member": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.fil.md",
+      "bytes": 9998,
+      "sha256": "c8e55e720a46855ef6218c90c917695b03c56ec7b59c516eb8fd4e4ff32e47eb"
+    },
+    {
+      "member": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+      "bytes": 16934,
+      "sha256": "56d8419a6f85dc8d2c2e3b1a0184eb36d6bb689fe1ee9aa2b38c885dee13855c"
+    },
+    {
+      "member": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.en.md",
+      "bytes": 5690,
+      "sha256": "d77997a12190cc26de9b7f0014d23d138be434c28f607f11e2c20977ee6054af"
+    },
+    {
+      "member": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.fil.md",
+      "bytes": 6174,
+      "sha256": "e40118da4a2757aa57c3719c2a66f97c58f97e8e448c49f4430d4d734b2048a5"
+    },
+    {
+      "member": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/slides.json",
+      "bytes": 17124,
+      "sha256": "86581c92d1e71baca3f06d5b0be5f7fbba0a0403854ff1dfd233b9062be28c20"
+    },
+    {
+      "member": "content/training/day1-basic-competencies/narration.json",
+      "bytes": 5304470,
+      "sha256": "eb243955f03d0ed9a108b3434fc7dc609320e016fa14d76227cd2fcd4e906fa7"
+    },
+    {
+      "member": "docs/lesson-18-apple-continuity.md",
+      "bytes": 4566,
+      "sha256": "dac25f0e3d1fd14d48084bd846e3e89817b41b8754056cb559b0394e74732d6a"
+    },
+    {
+      "member": "docs/lesson-18-apple-reference.json",
+      "bytes": 1524,
+      "sha256": "7733be251decc59f8ab4cb5c2dc76aa188fb9821e08fbfcbb59f4cc3f3d9ee29"
+    },
+    {
+      "member": "docs/lesson-184-audio-focus.json",
+      "bytes": 179013,
+      "sha256": "a39e65ee6f5e320ea0cf4c27da737264a09380ba4ef3f502b2489c5f60e7ffbc"
+    },
+    {
+      "member": "docs/lesson-184-audio-review-notes.json",
+      "bytes": 2381,
+      "sha256": "bd76a35b8afbf6e8d4057ea87d5b9d59359b231fa5373b9fe55c37f56342f3ee"
+    },
+    {
+      "member": "docs/lesson-184-audio-review.json",
+      "bytes": 54202,
+      "sha256": "109bdd36fd554ad9b3ea0d5a7951ef4fb449cb3d1fd279a4b15117fd98b1173f"
+    },
+    {
+      "member": "docs/lesson-184-authored-screens.json",
+      "bytes": 12427,
+      "sha256": "132f373cee7ac793d51b42d5bd184782577b9bdcbe4a9ca770a401b50f997f9c"
+    },
+    {
+      "member": "docs/lesson-184-enhancement-handoff.md",
+      "bytes": 17216,
+      "sha256": "352b36fdc8c7abf33f3cd3713adeda94fd85bf4ecb4d45c1921f0a9ed446e76c"
+    },
+    {
+      "member": "docs/lesson-184-evidence-generation-origins.json",
+      "bytes": 1243,
+      "sha256": "969cd549643fa22c61c00fcef164ac014d47312208f235e2567b4a703f6a6c9c"
+    },
+    {
+      "member": "docs/lesson-184-evidence-origins.json",
+      "bytes": 1386,
+      "sha256": "48423e53981df9d8d620a49470389f5e66589e64c9bc8a5f66db3a8d001d7c1d"
+    },
+    {
+      "member": "docs/lesson-184-execution-status.json",
+      "bytes": 3007,
+      "sha256": "c789e89573f468885e62f647c1ca70c23fc1c8d45c068c4b372f875d3af4ebb6"
+    },
+    {
+      "member": "docs/lesson-184-handoff-baseline.json",
+      "bytes": 58297,
+      "sha256": "3486e52f7c4f24a3ca2f8d866bf87b5e914d5d5d2ef78dfb5a52260339bdc713"
+    },
+    {
+      "member": "docs/lesson-184-initial-audio-focus.json",
+      "bytes": 22601,
+      "sha256": "b6ad1340f6d12da3950973e301b61fa7477fbd7a99c17507c83f83f901ddafa7"
+    },
+    {
+      "member": "docs/lesson-184-initial-audio-review.json",
+      "bytes": 46293,
+      "sha256": "14331272028251af8040aee7b1917781ac91fdd487c6374b5deda758cfe2ba4c"
+    },
+    {
+      "member": "docs/lesson-184-initial-media-generation.json",
+      "bytes": 431,
+      "sha256": "065d9d58cc3df451d46d38bbf65c83941b38c232eb3503be42542f447bafccca"
+    },
+    {
+      "member": "docs/lesson-184-main-integration.json",
+      "bytes": 734,
+      "sha256": "9bd57a97fac72b354400df5d1107cbc51a59835d6b8e0adf282b4be33c024b28"
+    },
+    {
+      "member": "docs/lesson-184-media-generation.json",
+      "bytes": 1733,
+      "sha256": "d65b4bac38c92e936c096791aba4ccea6dad5fe9fae3ed1316d52f18dbbeedd3"
+    },
+    {
+      "member": "docs/lesson-184-practice-kit.en.md",
+      "bytes": 5683,
+      "sha256": "2afc2fe0141c0d08d451798c2a9c23841dd2fb8f37dc0db17d6ab8dcf346eb48"
+    },
+    {
+      "member": "docs/lesson-184-practice-kit.fil.md",
+      "bytes": 5810,
+      "sha256": "81aa22dcd18dd191bf230fe236af64db32cf2ace32301bf0845fbae8577332c6"
+    },
+    {
+      "member": "docs/lesson-184-preservation.json",
+      "bytes": 1433,
+      "sha256": "9635f343c9e180cdd994ca7c6501aac8fd7bf1ada055365a78a6cb116b72483a"
+    },
+    {
+      "member": "docs/lesson-184-proposal-receipt.json",
+      "bytes": 5740541,
+      "sha256": "c1d13e739923c47ae4d3ac7e7436b47cefb6e0e286f5ed5fc76095b85dabc2c4"
+    },
+    {
+      "member": "docs/lesson-184-registry.json",
+      "bytes": 3195,
+      "sha256": "b5578e0bdbb57b3aed6ab3be6dd20a5bf425fab15d5a2479ecbfcd26de6af9b3"
+    },
+    {
+      "member": "docs/lesson-184-scene-brief.json",
+      "bytes": 8344,
+      "sha256": "823bd5998c10bfedb35146bdbbf6e90d48a6c6895cb856f2f05d0f15d734b827"
+    },
+    {
+      "member": "docs/lesson-184-source-audit.json",
+      "bytes": 8825,
+      "sha256": "075f16e006c195dda994e0acc6108589af9b2b3dcb37751baa49e83b1af8c7a6"
+    },
+    {
+      "member": "docs/lesson-184-story-generation-audio-focus.json",
+      "bytes": 175701,
+      "sha256": "534df3177d56b197a14e552325d5b9475433d4decc4c528c9df74188d3c6829b"
+    },
+    {
+      "member": "lesson-184-published-snapshot.json",
+      "bytes": 108817,
+      "sha256": "c578715caca83b7c89873c21f59e07799bee23bb35525d622f539cbe800cb486"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/care-before-paperwork.en.28f2d5858c65.mp3",
+      "bytes": 337607,
+      "sha256": "df5319a33ae9d61a2df38d50f78e13542b7a8ea81af353fa8d78e6d2530371fd"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/care-before-paperwork.fil.35cc188d6292.mp3",
+      "bytes": 383060,
+      "sha256": "ef198cb9064b16ff2ec067c9d63c39f113ac96aa675b5aac4da7e524ff6b1624"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/check.en.0cf29e8ec51b.mp3",
+      "bytes": 74397,
+      "sha256": "857d0ed72d7879046ace6f442074ca7ad13235ebcf4326e97a9013b6a8c31307"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/check.en.b9eda6b430f5.mp3",
+      "bytes": 183171,
+      "sha256": "722adaa41df6a1f383bab081306162de8d5fe9787ba330a93c52d74a990155a3"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/check.fil.0870dc230055.mp3",
+      "bytes": 91533,
+      "sha256": "58a76881740f0f7cc3b7e57f3a869489167fc06ea30a850c3650ec1a90df00aa"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/check.fil.d5d395d85991.mp3",
+      "bytes": 205427,
+      "sha256": "f1dbb03deee4544416301f722c26cdf525395daf4498acd59a1ce6c2b8264791"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/exposure.en.817018dd492c.mp3",
+      "bytes": 214309,
+      "sha256": "069584f6ed7dbe3c417e1b239d9bb3eae7f6a4ee48c896d20f09d7124bb0850a"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/exposure.en.fce8f3350f77.mp3",
+      "bytes": 376581,
+      "sha256": "c84670bd11f997c3fd970da212d4b532f15046d669183f430387eb618851e524"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/exposure.fil.a076f871e193.mp3",
+      "bytes": 388075,
+      "sha256": "b276f925bbd85170828ad1b02c04bb97cbee5973e4cab662a7d0fd97eca34586"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/exposure.fil.aef03183a129.mp3",
+      "bytes": 235102,
+      "sha256": "e78ee84c94fe0a78930bb753ca77d0178aa006298354a32db023504b75508b72"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/near-miss.en.15e998c8345d.mp3",
+      "bytes": 154227,
+      "sha256": "a749abc38eefc92f3ff2f1754e5786c180c942e48362bd0dfac7c90698c7f371"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/near-miss.en.3ebfd5f8c53f.mp3",
+      "bytes": 363833,
+      "sha256": "97342722087451bc50292b1cbd43adc6219d259e94e596b812a101542b1aefd0"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/near-miss.fil.0dbe1b2b2e31.mp3",
+      "bytes": 176170,
+      "sha256": "38f2eab322d757f3e63f99f8c3e3f3ff87a0c419bee4082eb3ca78d7b07f117a"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/near-miss.fil.e2591d978fa4.mp3",
+      "bytes": 380552,
+      "sha256": "77390adbb24f25041911139d35fe42380176d8cefd49a2fb7b72b07f47054769"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/practice.en.a8305424dff4.mp3",
+      "bytes": 188709,
+      "sha256": "a3c05a782db12ee3b890010b0093ef496e516a794e4e739ff6c61f386d325ccc"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/practice.en.ac145598944f.mp3",
+      "bytes": 428931,
+      "sha256": "26504cea06115a9374302400eaced44d9b33cbd753bdba05fb9c808e67d1b329"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/practice.fil.acfa67494170.mp3",
+      "bytes": 465189,
+      "sha256": "6a64251661f813e8bbf3805093e809a5dfe7cc96bc7b02453bc5536d98593e41"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/practice.fil.c79b620d9987.mp3",
+      "bytes": 213891,
+      "sha256": "c374bb826dbb70fbd135568c98683f1809e9f3dbf5bfbfd70f827b5984e1b65b"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/return-demo.en.68ffd783c3cd.mp3",
+      "bytes": 166034,
+      "sha256": "02e28eed8f41f52f74a731feb7793a498aa3e206894f67733816c930ff2b9d10"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/return-demo.en.f279b3edd187.mp3",
+      "bytes": 346384,
+      "sha256": "7b0fb557b8d7fd8c21212ef9be298257238bfd2d2c4f912559cbe4f14afdfbb6"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/return-demo.fil.351367ca5925.mp3",
+      "bytes": 374700,
+      "sha256": "d23747d2a92df2a6406979c0b86fffd46062feaa027b404f44c7de59f4174298"
+    },
+    {
+      "member": "public/training/audio/08-osh/safety-demonstrate/return-demo.fil.6930aea81878.mp3",
+      "bytes": 173976,
+      "sha256": "e673fb141e68d5dbcf5ac08ef0e84575765afd9aa4b52bde8d25748bdd53d429"
+    },
+    {
+      "member": "public/training/bhw-1-8/demonstrate-care-before-paperwork-791865eaf620.png",
+      "bytes": 2168232,
+      "sha256": "791865eaf620f8d9c7b661e41e89449070a5e5dc98b122de9f6d02db3bc1fb13"
+    },
+    {
+      "member": "public/training/bhw-1-8/demonstrate-check-7c6af2f2702e.png",
+      "bytes": 1953592,
+      "sha256": "7c6af2f2702ed6ddef5eb8f95c4743b65f8b020aa4b5ef332b275d51f79ab34d"
+    },
+    {
+      "member": "public/training/bhw-1-8/demonstrate-exposure-480b217d2239.png",
+      "bytes": 2018169,
+      "sha256": "480b217d22392c2cc8278e9b9188f86a67ab8582616d8f5ce4d60f44829d2cdf"
+    },
+    {
+      "member": "public/training/bhw-1-8/demonstrate-near-miss-1ab640aa9c44.png",
+      "bytes": 2117899,
+      "sha256": "1ab640aa9c4449a4909b09b0988b2b890e03d81eaae9352491cb9cb8be1c6967"
+    },
+    {
+      "member": "public/training/bhw-1-8/demonstrate-practice-dd627386cef1.png",
+      "bytes": 2183820,
+      "sha256": "dd627386cef17afac4270669115b87c543974916c180508dbe0ba982e161cf54"
+    },
+    {
+      "member": "public/training/bhw-1-8/demonstrate-return-demo-f3d265df4a04.png",
+      "bytes": 2124009,
+      "sha256": "f3d265df4a0478336e63b9109a45f1550057bd1ede070e9187feaa1a78dbb9ec"
+    },
+    {
+      "member": "public/training/bhw-1-8/safety-demonstrate-gemini-en-546aef95a7a4.mp4",
+      "bytes": 931362,
+      "sha256": "546aef95a7a4b00b282f539d4f2aa97522784448cadef8381d322fcd3ae140b7"
+    },
+    {
+      "member": "public/training/bhw-1-8/safety-demonstrate-gemini-en-90c256fcb3a4-poster.jpg",
+      "bytes": 51151,
+      "sha256": "90c256fcb3a42b5cb2c5928dc9636eedc7bf790691f1329105e8851f128cbe5e"
+    },
+    {
+      "member": "public/training/bhw-1-8/safety-demonstrate-gemini-en-a02729532ff4.vtt",
+      "bytes": 998,
+      "sha256": "a02729532ff40abfd50697331d4012c3d5ea017076a85f19d4953167c98e95d9"
+    },
+    {
+      "member": "public/training/bhw-1-8/safety-demonstrate-gemini-fil-2cf20801fff8.mp4",
+      "bytes": 1031868,
+      "sha256": "2cf20801fff87211cc24ee7a384c443784c219ec0fccb6eb7fe0658a00012cba"
+    },
+    {
+      "member": "public/training/bhw-1-8/safety-demonstrate-gemini-fil-4e162dea4914-poster.jpg",
+      "bytes": 55115,
+      "sha256": "4e162dea4914757e4c76c965b8457103f7919b871f207f64a9c0d0cb76db6bf8"
+    },
+    {
+      "member": "public/training/bhw-1-8/safety-demonstrate-gemini-fil-622246cfe40b.vtt",
+      "bytes": 1054,
+      "sha256": "622246cfe40b77a054f22a70a34b0a2ec24a7178a15dd29a6e3ab824fb309f01"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/apple-reference.png",
+      "bytes": 2109867,
+      "sha256": "80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/care-before-paperwork.png",
+      "bytes": 2168232,
+      "sha256": "791865eaf620f8d9c7b661e41e89449070a5e5dc98b122de9f6d02db3bc1fb13"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/check.png",
+      "bytes": 1953592,
+      "sha256": "7c6af2f2702ed6ddef5eb8f95c4743b65f8b020aa4b5ef332b275d51f79ab34d"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/exposure.png",
+      "bytes": 2018169,
+      "sha256": "480b217d22392c2cc8278e9b9188f86a67ab8582616d8f5ce4d60f44829d2cdf"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/narration-en.json",
+      "bytes": 2044,
+      "sha256": "b5044dc477c06548868e02e50aa7b9fadb37ad7f66cf31ee6d5169cf21aa23d6"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/narration-en.mp3",
+      "bytes": 241476,
+      "sha256": "c9e72d1bad843b95fccb19802397c852d6d5e5acb98ee9a9a6a7e3d11473a73d"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/narration-fil.json",
+      "bytes": 2100,
+      "sha256": "d574a80c7635f2293ff03a434c37f6331cb8d7718b6f840ac31e4898f718aa9a"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/narration-fil.mp3",
+      "bytes": 270733,
+      "sha256": "5382db4fbcb49a990e0d8b3483360294cc5b71d69faa15b7a3f81caf2d531f9e"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/near-miss.png",
+      "bytes": 2117899,
+      "sha256": "1ab640aa9c4449a4909b09b0988b2b890e03d81eaae9352491cb9cb8be1c6967"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/practice.png",
+      "bytes": 2183820,
+      "sha256": "dd627386cef17afac4270669115b87c543974916c180508dbe0ba982e161cf54"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/return-demo.png",
+      "bytes": 2124009,
+      "sha256": "f3d265df4a0478336e63b9109a45f1550057bd1ede070e9187feaa1a78dbb9ec"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/shipped-aac-en.wav",
+      "bytes": 2953330,
+      "sha256": "11c386289d2ca8a72c190fea1b11048e5d31b403149d98bd299482bc5e75a9e5"
+    },
+    {
+      "member": "remotion/public/safety-demonstrate/shipped-aac-fil.wav",
+      "bytes": 3303538,
+      "sha256": "f215d9f730a67379e4fdf618693d2e02e1a8c5f6dfef581064f37a614e6256e3"
+    },
+    {
+      "member": "remotion/src/Root.tsx",
+      "bytes": 25918,
+      "sha256": "c58f509439215038e33fb0d8e2328c480202b8adef0be56d7a06fcf651cecfac"
+    },
+    {
+      "member": "remotion/src/safety-demonstrate/SafetyDemonstrateStory.tsx",
+      "bytes": 5198,
+      "sha256": "27a2c92a57156a78fa90c189351c2affaf7aea6c619fba406541d55a5679e61c"
+    },
+    {
+      "member": "remotion/src/safety-demonstrate/narration.ts",
+      "bytes": 3252,
+      "sha256": "bf9c3f4e70a72e87652d2657a59592227615bab292aa07b0965f79de46699c5c"
+    },
+    {
+      "member": "scripts/lesson-184-audio-focus.mjs",
+      "bytes": 9958,
+      "sha256": "3ae72c820547c285fe870a5c0f05d1b9678e39483ca31084c80ed1c54305540a"
+    },
+    {
+      "member": "scripts/lesson-184-audio-review.mjs",
+      "bytes": 7120,
+      "sha256": "036c5468c622064bb0b9949fd46e6a79dded479590f489245fea1299d00a9224"
+    },
+    {
+      "member": "scripts/lesson-184-browser-verify.mjs",
+      "bytes": 11060,
+      "sha256": "29aca789e1b593a4ced3b45e8f1817fb431522e0feffd014809cbdb1afa6ec09"
+    },
+    {
+      "member": "scripts/lesson-184-media-build.mjs",
+      "bytes": 5148,
+      "sha256": "48f82d0774e851613e0f26c952ef0792bf2069491b240772a6f790620486f5ba"
+    },
+    {
+      "member": "scripts/lesson-184-package.py",
+      "bytes": 4361,
+      "sha256": "4da48e88aa6bf50ee0f44f8bbb0c40a8d6aa2f93f056f4a12f083f4229a235c8"
+    },
+    {
+      "member": "scripts/lesson-184-pin-proposal.mjs",
+      "bytes": 1258,
+      "sha256": "f38f153345a919d2f7a5f9fa669401d8df97b6861f1ed2ae0640d072cfe25ac1"
+    },
+    {
+      "member": "scripts/lesson-184-preservation.mjs",
+      "bytes": 3428,
+      "sha256": "5500fb8d399e9b3e6c4bf2e50565d5cf56c6164607dd98849b0fda1f4aee43d2"
+    },
+    {
+      "member": "scripts/lesson-184-print-kit.mjs",
+      "bytes": 2311,
+      "sha256": "ec16bb930293b2218a268f6ddad70327d7f786919200184ee173744659c5256d"
+    },
+    {
+      "member": "scripts/lesson-184-print-verify.py",
+      "bytes": 857,
+      "sha256": "03c2faa77ab8cd034426287ce2ba9f6e3c0265584ae23fd88da7df0c5d17a0f8"
+    },
+    {
+      "member": "scripts/lesson-184-published-snapshot.mjs",
+      "bytes": 2144,
+      "sha256": "d49b4784358463e30de75c195cf5d4557114ac560567e7d8499a8a72bf327be2"
+    },
+    {
+      "member": "scripts/lesson-184-record-fetch.mjs",
+      "bytes": 1682,
+      "sha256": "483277914bfcb5b1c8359743018c9f0b4f7ca9c8c3cd8e95c1497a9149ee3405"
+    },
+    {
+      "member": "scripts/lesson-184-review-build.mjs",
+      "bytes": 8846,
+      "sha256": "00e8e26edba67ab3a803b77804ec1365c99828d75c34573091cd403723e11bef"
+    },
+    {
+      "member": "scripts/lesson-184-source-evidence.py",
+      "bytes": 4991,
+      "sha256": "fc7baebe4e408eafef4cff3d3f0537056b0b8f449d83fea51c7adddd93dd9f88"
+    },
+    {
+      "member": "scripts/lib/lesson-184-integration.mjs",
+      "bytes": 1247,
+      "sha256": "d091ffea6a5be2350ce91d5d4ff1a184da3456a1b04e7387a6748d4222eece71"
+    },
+    {
+      "member": "scripts/remotion-safety-demonstrate-narrate.mjs",
+      "bytes": 4549,
+      "sha256": "61010c9a307577a799bc0bf6e62c3290ae2d4e8118705e0e0a4db54590e44e47"
+    },
+    {
+      "member": "scripts/tests/lesson-184.test.mjs",
+      "bytes": 5953,
+      "sha256": "931acf435705bd6eebe7d0b6447b62f500caffd0ab1822adc8579e7675510b41"
+    },
+    {
+      "member": "src/components/elearning/reference-lessons.tsx",
+      "bytes": 65562,
+      "sha256": "6f53b7d67cbf56bffe35550b406c07139f6a883df433a07ec0741d41f8f34b55"
+    }
+  ],
+  "zip_bytes": 208446594,
+  "zip_sha256": "af6118fad821268ab63d29b3faaee1b095b87ec86f9117c216bee9b3d72e3d3f",
+  "safe_unique_paths": true,
+  "CRC_checked": true
+}

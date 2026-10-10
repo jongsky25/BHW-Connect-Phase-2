@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Natural Philippine English educational narration, stable adult female narrator Kore. Warm clear conversational pacing, preserve all negation and qualifications. Apple is the character's name; no invented dialogue.",
+  "durationSeconds": 64.052,
+  "beats": [
+    {
+      "zone": "station-preparation",
+      "index": 0,
+      "text": "Apple prepares a mock station. Soap is missing and the entrance is slippery. Pause affected work; use dummy equipment only.",
+      "start_ms": 0,
+      "end_ms": 8680
+    },
+    {
+      "zone": "field-preparation",
+      "index": 1,
+      "text": "A threat is reported at fictional Bridge A. Another route is unconfirmed. Check route, water, shade, rest, contact and return time.",
+      "start_ms": 8980,
+      "end_ms": 19300
+    },
+    {
+      "zone": "combined-hazards",
+      "index": 2,
+      "text": "Heat, queues and missing protection combine. Apple asks: “What pauses, what can safely change, and what needs your decision?”",
+      "start_ms": 19600,
+      "end_ms": 29720
+    },
+    {
+      "zone": "verify-readiness",
+      "index": 3,
+      "text": "The follow-up card confirms soap and a dry entrance. Visit route and contact remain unknown. Unverified conditions are not ready.",
+      "start_ms": 30020,
+      "end_ms": 38620
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Complete five fields. Brief the pause, alternative and unknowns. Get specific feedback, correct and retry. Peer feedback is practice.",
+      "start_ms": 38920,
+      "end_ms": 49880
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "In the role-play, a mock briefing is agreed; the unsafe visit is deferred. Route, contact and protection remain visibly unresolved. Verify before starting. Do not assume the threat vanished.",
+      "start_ms": 50180,
+      "end_ms": 63980
+    }
+  ],
+  "audio_sha256": "4a98a04ad6e0c2f0fd5ef90ba450eec324812e232cd1c47094d68c70bb5c3dec"
+}

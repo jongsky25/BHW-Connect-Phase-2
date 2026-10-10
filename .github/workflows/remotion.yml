@@ -53,27 +53,41 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # Check this draft's exact head; other branches keep their standard checkout.
-          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-172-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff') && github.event.pull_request.head.sha || github.sha }}
+          ref: ${{ (github.head_ref == 'codex/lesson-151-malou-proposal' || github.head_ref == 'codex/lesson-152-malou-proposal' || github.head_ref == 'codex/lesson-154-malou-proposal' || github.head_ref == 'codex/lesson-156-malou-proposal' || github.head_ref == 'codex/lesson-161-enhancement-handoff' || github.head_ref == 'codex/lesson-162-enhancement-handoff' || github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.head_ref == 'codex/lesson-164-enhancement-handoff' || github.head_ref == 'codex/lesson-165-enhancement-handoff' || github.head_ref == 'codex/lesson-171-carole-handoff' || github.head_ref == 'codex/lesson-172-carole-handoff' || github.head_ref == 'codex/lesson-174-carole-handoff' || github.head_ref == 'codex/lesson-181-apple-handoff' || github.head_ref == 'codex/lesson-182-apple-handoff' || github.head_ref == 'codex/lesson-183-apple-handoff') && github.event.pull_request.head.sha || github.sha }}
+
+      - name: Wait for this draft's measured story timings
+        id: scope
+        run: |
+          if [ "${{ github.head_ref }}" = "codex/lesson-182-apple-handoff" ] && ! test -f docs/lesson-182-final-evidence-origins.json; then
+            echo "render=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "render=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - uses: actions/setup-node@v4
+        if: steps.scope.outputs.render == 'true'
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: remotion/package-lock.json
 
       - name: Install Remotion project
+        if: steps.scope.outputs.render == 'true'
         working-directory: remotion
         run: npm ci
 
       - name: Lint and typecheck
+        if: steps.scope.outputs.render == 'true'
         working-directory: remotion
         run: npm run lint
 
       - name: Install Remotion's headless browser
+        if: steps.scope.outputs.render == 'true'
         working-directory: remotion
         run: npx remotion browser ensure
 
       - name: Render every composition
+        if: steps.scope.outputs.render == 'true'
         env:
           RENDER_SHARD: ${{ matrix.shard }}
         run: |
@@ -94,6 +108,7 @@ jobs:
           fi
 
       - uses: actions/upload-artifact@v4
+        if: steps.scope.outputs.render == 'true'
         with:
           name: remotion-renders-${{ matrix.shard }}
           path: remotion/out/

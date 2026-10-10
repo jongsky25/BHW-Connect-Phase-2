@@ -1,0 +1,59 @@
+name: Lesson 1.8.3 draft story
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/lesson183-story.yml'
+      - 'remotion/src/safety-prepare/**'
+      - 'scripts/remotion-safety-prepare-narrate.mjs'
+permissions:
+  contents: read
+concurrency:
+  group: lesson183-story-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  story:
+    if: github.head_ref == 'codex/lesson-183-apple-handoff' && github.event.pull_request.draft
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Generate and render actual bilingual story
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LESSON183_RAW_EVIDENCE: '1'
+          NODE_OPTIONS: '--import=${{ github.workspace }}/scripts/lesson-183-record-fetch.mjs'
+        run: |
+          if ! test -f docs/lesson-183-story-generation.json; then
+            node scripts/remotion-safety-prepare-narrate.mjs fil
+            node scripts/remotion-safety-prepare-narrate.mjs en
+            node scripts/lesson-183-story-build.mjs
+          fi
+          node scripts/lesson-183-audio-review.mjs --story-only
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson183-draft-story
+          include-hidden-files: true
+          retention-days: 30
+          path: |
+            content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json
+            remotion/src/Root.tsx
+            remotion/public/safety-prepare/
+            public/training/bhw-1-8/
+            docs/lesson-183-story-generation.json
+            docs/lesson-183-story-audio-review.json
+            .preview/lesson183-audio/
+            .preview/lesson183-raw/

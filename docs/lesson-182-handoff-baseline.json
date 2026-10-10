@@ -1,0 +1,1000 @@
+{
+  "status": "handoff only; no proposed lesson change",
+  "main_commit": "f4bf3c25ec498cabac0b6e851337b312ff6333e7",
+  "lesson_number": "1.8.2",
+  "lesson_key": "safety-controls",
+  "lesson_id": "22444fea-f028-4801-8c45-ce8baf8d4949",
+  "module_id": "ffd36ec0-f8f9-4c7a-bf34-2ab821ac95ec",
+  "course_id": "73e0edda-6c28-420f-9c35-05a29563abd3",
+  "character": {
+    "name": "Apple",
+    "pronouns": "she/her",
+    "reference_status": "No supplied or generated likeness; coordinate one fictional reference during implementation"
+  },
+  "manifest": {
+    "lesson_key": "safety-controls",
+    "position": 1,
+    "title_fil": "Panganib at proteksyon",
+    "title_en": "Match hazards and protection",
+    "objectives_fil": [
+      "Ipagpares ang limang hazard group sa angkop na kontrol at ipaliwanag kung kailan ihihinto at ipapaayos ang hindi ligtas na gawain."
+    ],
+    "objectives_en": [
+      "Match five hazard groups with appropriate controls and explain when to pause work and obtain correction."
+    ],
+    "required": true
+  },
+  "anchors": [
+    {
+      "id": "sharps",
+      "concept_ids": [
+        "m8.sharps"
+      ]
+    },
+    {
+      "id": "infection",
+      "concept_ids": [
+        "m8.infection",
+        "m8.vectors"
+      ]
+    },
+    {
+      "id": "body",
+      "concept_ids": [
+        "m8.ergonomics"
+      ]
+    },
+    {
+      "id": "workload",
+      "concept_ids": [
+        "m8.stress"
+      ]
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m8.sharps",
+        "m8.infection",
+        "m8.vectors",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ]
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m8.sharps",
+        "m8.infection",
+        "m8.vectors",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ]
+    }
+  ],
+  "slide_anchors": [
+    {
+      "id": "slide-sharps",
+      "concept_ids": [
+        "m8.sharps"
+      ]
+    },
+    {
+      "id": "slide-infection",
+      "concept_ids": [
+        "m8.infection",
+        "m8.vectors"
+      ]
+    },
+    {
+      "id": "slide-body",
+      "concept_ids": [
+        "m8.ergonomics"
+      ]
+    },
+    {
+      "id": "slide-workload",
+      "concept_ids": [
+        "m8.stress"
+      ]
+    },
+    {
+      "id": "slide-practice",
+      "concept_ids": [
+        "m8.sharps",
+        "m8.infection",
+        "m8.vectors",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ]
+    },
+    {
+      "id": "slide-check",
+      "concept_ids": [
+        "m8.sharps",
+        "m8.infection",
+        "m8.vectors",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m8.sharps",
+      "read_ids": [
+        "sharps",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-sharps",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "who-infections"
+      ]
+    },
+    {
+      "id": "m8.infection",
+      "read_ids": [
+        "infection",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-infection",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "who-infections"
+      ]
+    },
+    {
+      "id": "m8.vectors",
+      "read_ids": [
+        "infection",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-infection",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "who-infections"
+      ]
+    },
+    {
+      "id": "m8.ergonomics",
+      "read_ids": [
+        "body",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-body",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "who-infections"
+      ]
+    },
+    {
+      "id": "m8.stress",
+      "read_ids": [
+        "workload",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-workload",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "who-infections"
+      ]
+    },
+    {
+      "id": "m8.accidents",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "who-infections"
+      ]
+    }
+  ],
+  "original_check": {
+    "prompt_fil": "Halos puno ang sharps box. Ano ang dapat ayusin bago magpatuloy?",
+    "prompt_en": "The sharps box is nearly full. What should be arranged before continuing?",
+    "options": [
+      {
+        "fil": "Siksikin ang laman gamit ang anumang matigas na bagay.",
+        "en": "Compress the contents with a rigid object."
+      },
+      {
+        "fil": "Maglagay muna ng karayom sa ordinaryong basurahan.",
+        "en": "Temporarily put needles in an ordinary bin."
+      },
+      {
+        "fil": "Palitan ayon sa fill line at lokal na protocol bago umapaw.",
+        "en": "Replace it according to the fill line and local protocol before overfilling."
+      }
+    ],
+    "correct_option_index": 2,
+    "feedback_fil": "Ang ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.",
+    "feedback_en": "The third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution."
+  },
+  "guided_minutes": 60,
+  "module_guided_minutes": 240,
+  "target_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/competency.json": "0dd455b8dfd41341cafc661818d4b46e752c7381dfe259c01fb9610aadb82ff7",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.en.md": "75b490224d82166e491f1b1119b4c43e5beeae81738a8fe7ffb8595416d6edeb",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.fil.md": "b7e2bd70d13ff055da1603e9569ed09fd8c034c06fffe696e1eacc9f66eeb809",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json": "1c3c29044a38237688393ef4496dbc53d62c0a25433ee7cc893d289e021b73fb",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.en.md": "35d2df2359aa577e1a12ac7249021ab6fad8dfccc04dcaa0386f832521a6f8f7",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.fil.md": "91be0081e0475a60c2689e929f6340be2ec0d217baf9d1889744ca48b30404ae",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/slides.json": "69dd30daecc53559fd8105a95b8284a18a6b40df61fb946e188db1a13d804887"
+  },
+  "target_files_utf8": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/competency.json": "{\n  \"observation_indicators\": [\n    {\n      \"objective_index\": 0,\n      \"observable_fil\": \"Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps.\",\n      \"observable_en\": \"Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps.\",\n      \"not_yet_fil\": \"Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.\",\n      \"not_yet_en\": \"Suggests recapping, compression, ordinary bins or continuing without essential protection.\",\n      \"levels\": {\n        \"kaya_na_fil\": \"Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps. Nagagawa kahit hindi pinapaalalahanan.\",\n        \"kaya_na_en\": \"Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps. Completes this without prompting.\",\n        \"kailangan_practice_fil\": \"Ligtas ang desisyon ngunit nalilito ang control para sa dalawang hazard; ipares muli at ipaliwanag ang dahilan.\",\n        \"kailangan_practice_en\": \"Makes a safe decision but mixes up controls for two hazards; rematch and explain.\",\n        \"hindi_pa_fil\": \"Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.\",\n        \"hindi_pa_en\": \"Suggests recapping, compression, ordinary bins or continuing without essential protection.\"\n      }\n    }\n  ]\n}\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.en.md": "## [purpose] Purpose\n\nMatch five hazard groups with appropriate controls and explain when to pause work and obtain correction.\n\n## [time-materials] Time and materials\n\n60 minutes of facilitated practice within the subchapter's 4 hours; short Read completion does not replace that training. Use the scenario and checklist below, paper and a pen. No real personal records in practice.\n\n## [prepare] Prepare\n\nPrepare the five practice cards. Confirm PPE and sharps procedures with the local trainer; no real used sharps in the session.\n\n## [opening] Opening\n\nThe sharps box is nearly full. What should be arranged before continuing?\n\n## [steps] Steps\n\nRead the situation. Model one attempt against the Observe checklist. Run the practice in pairs or triads. Give specific feedback and repeat the part needing improvement. Ask the check before revealing the explanation.\n\n## [expected-answers] Expected answers\n\nThe third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution.\n\n## [misconception] Common misconception\n\nSuggests recapping, compression, ordinary bins or continuing without essential protection. Choose controls for the hazard; PPE cannot replace every change needed in the work.\n\n## [practice] Practice activity\n\nMake five hazard-control cards: sharps–proper container; infection–task-appropriate prevention; body pain–work adjustment and breaks; stress–agreed workload and support; accidents–safe route and avoiding threats. Match them and explain why PPE alone is insufficient. In pairs, ask what must pause when protection is missing. Alone, explain each card aloud. Check one control before the next duty.\n\n## [answer-key] Answer key\n\n3. Replace it according to the fill line and local protocol before overfilling.\n\nThe third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution.\n\n## [observe] Observe\n\nMatches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps.\n\nReady: Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps. Completes this without prompting.\n\nNeeds practice: Makes a safe decision but mixes up controls for two hazards; rematch and explain.\n\nNot yet: Suggests recapping, compression, ordinary bins or continuing without essential protection.\n\nMark each criterion done / prompted / not yet and record the exact words or action. Peer feedback is practice; staff observations cover only performances actually observed. One demonstration does not establish that everyone is ready.\n\n## [support] Support\n\nMakes a safe decision but mixes up controls for two hazards; rematch and explain. Allow spoken or written responses and reading assistance. Use the participant’s preferred language while keeping the same criteria.\n\n## [sources-review] Sources and review notes\n\nDraft for review. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23; WHO — Occupational infections (https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections). The five hazard groups span both source-table pages. A local clinical trainer must review demonstrations and referral pathways. Immediate needlestick evaluation was checked against CDC on 25 September 2026. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.fil.md": "## [purpose] Layunin\n\nIpagpares ang limang hazard group sa angkop na kontrol at ipaliwanag kung kailan ihihinto at ipapaayos ang hindi ligtas na gawain.\n\n## [time-materials] Oras at kagamitan\n\n60 minuto para sa pinadali na pagsasanay. Bahagi ito ng 4 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.\n\n## [prepare] Ihanda\n\nIhanda ang limang card sa practice. Tiyakin sa local trainer ang PPE at sharps protocol; walang tunay na used sharps sa session.\n\n## [opening] Pambungad\n\nHalos puno ang sharps box. Ano ang dapat ayusin bago magpatuloy?\n\n## [steps] Mga hakbang\n\nBasahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserbahan. Ipagawa ang pagsasanay sa pares o tatluhan. Magbigay ng tiyak na feedback at ipaulit ang bahaging kailangan pang ayusin. Ibigay ang check bago ipakita ang paliwanag.\n\n## [expected-answers] Inaasahang sagot\n\nAng ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.\n\n## [misconception] Karaniwang pagkakamali\n\nNagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon. Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.\n\n## [practice] Gawaing pagsasanay\n\nGumawa ng limang hazard-control card: sharps–tamang lalagyan; infection–task-appropriate prevention; body pain–ayos ng gawain at pahinga; stress–agreed workload at support; aksidente–ligtas na ruta at pag-iwas sa banta. Ipares at ipaliwanag kung bakit hindi sapat ang PPE lamang. Sa pares, magtanong kung anong gawain ang dapat ihinto kapag kulang ang proteksyon. Kung mag-isa, sabihin ang paliwanag sa bawat card. I-check ang isang kontrol bago ang susunod na duty.\n\n## [answer-key] Susi sa sagot\n\n3. Palitan ayon sa fill line at lokal na protocol bago umapaw.\n\nAng ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.\n\n## [observe] Obserbahan\n\nTama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps.\n\nKaya na: Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps. Nagagawa kahit hindi pinapaalalahanan.\n\nKailangan pang magsanay: Ligtas ang desisyon ngunit nalilito ang control para sa dalawang hazard; ipares muli at ipaliwanag ang dahilan.\n\nHindi pa: Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.\n\nMarkahan bawat pamantayan ng nagawa / may tulong / hindi pa. Magtala ng eksaktong sinabi o ginawa. Ang feedback ng kapareha ay pagsasanay lamang; ang staff observation ay para lamang sa aktuwal na naobserbahan. Huwag markahang lahat ay kaya na dahil may isang nagpakita.\n\n## [support] Tulong\n\nLigtas ang desisyon ngunit nalilito ang control para sa dalawang hazard; ipares muli at ipaliwanag ang dahilan. Maaaring magsalita, magsulat o magpatulong magbasa. Gumamit ng wikang komportable ang kalahok. Panatilihin ang parehong pamantayan.\n\n## [sources-review] Sanggunian at tala sa pagsusuri\n\nDraft para sa pagsusuri. DOH Facilitator Guide: PDF 30; BHW Reference Manual: PDF 21, 22, 23; WHO — Occupational infections (https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections). Ang limang hazard group ay mula sa dalawang pahina ng source table. Suriin ng lokal na clinical trainer ang demo at referral pathway. Ang agarang needlestick evaluation ay sinuri sa CDC noong 25 Setyembre 2026. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json": "{\n  \"manifest\": {\n    \"lesson_key\": \"safety-controls\",\n    \"position\": 1,\n    \"title_fil\": \"Panganib at proteksyon\",\n    \"title_en\": \"Match hazards and protection\",\n    \"objectives_fil\": [\n      \"Ipagpares ang limang hazard group sa angkop na kontrol at ipaliwanag kung kailan ihihinto at ipapaayos ang hindi ligtas na gawain.\"\n    ],\n    \"objectives_en\": [\n      \"Match five hazard groups with appropriate controls and explain when to pause work and obtain correction.\"\n    ],\n    \"required\": true\n  },\n  \"sections\": [\n    {\n      \"id\": \"sharps\",\n      \"concept_ids\": [\n        \"m8.sharps\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang ligtas na pagtatapon ng sharps ay nangangailangan ng tamang lalagyan at sinanay na paghawak.\",\n      \"takeaway_en\": \"Safe sharps disposal requires the right container and trained handling.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"infection\",\n      \"concept_ids\": [\n        \"m8.infection\",\n        \"m8.vectors\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang infection prevention ay kombinasyon ng tamang gawain, kagamitan at kapaligiran.\",\n      \"takeaway_en\": \"Infection prevention combines appropriate practices, equipment and surroundings.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"body\",\n      \"concept_ids\": [\n        \"m8.ergonomics\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang ligtas na posisyon, pahinga at tamang pagdadala ay bahagi ng paghahanda sa trabaho.\",\n      \"takeaway_en\": \"Safer posture, breaks and sensible carrying are part of work preparation.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"workload\",\n      \"concept_ids\": [\n        \"m8.stress\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Ang pag-uulat ng sobrang workload at pagtakda ng hangganan ay bahagi ng kaligtasan sa trabaho.\",\n      \"takeaway_en\": \"Reporting excessive workload and setting boundaries are part of workplace safety.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"practice\",\n      \"concept_ids\": [\n        \"m8.sharps\",\n        \"m8.infection\",\n        \"m8.vectors\",\n        \"m8.ergonomics\",\n        \"m8.stress\",\n        \"m8.accidents\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.\",\n      \"takeaway_en\": \"Choose controls for the hazard; PPE cannot replace every change needed in the work.\",\n      \"check\": null\n    },\n    {\n      \"id\": \"check\",\n      \"concept_ids\": [\n        \"m8.sharps\",\n        \"m8.infection\",\n        \"m8.vectors\",\n        \"m8.ergonomics\",\n        \"m8.stress\",\n        \"m8.accidents\"\n      ],\n      \"asset_ids\": [],\n      \"takeaway_fil\": \"Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.\",\n      \"takeaway_en\": \"Choose controls for the hazard; PPE cannot replace every change needed in the work.\",\n      \"check\": {\n        \"prompt_fil\": \"Halos puno ang sharps box. Ano ang dapat ayusin bago magpatuloy?\",\n        \"prompt_en\": \"The sharps box is nearly full. What should be arranged before continuing?\",\n        \"options\": [\n          {\n            \"fil\": \"Siksikin ang laman gamit ang anumang matigas na bagay.\",\n            \"en\": \"Compress the contents with a rigid object.\"\n          },\n          {\n            \"fil\": \"Maglagay muna ng karayom sa ordinaryong basurahan.\",\n            \"en\": \"Temporarily put needles in an ordinary bin.\"\n          },\n          {\n            \"fil\": \"Palitan ayon sa fill line at lokal na protocol bago umapaw.\",\n            \"en\": \"Replace it according to the fill line and local protocol before overfilling.\"\n          }\n        ],\n        \"correct_option_index\": 2,\n        \"feedback_fil\": \"Ang ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.\",\n        \"feedback_en\": \"The third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution.\"\n      }\n    }\n  ],\n  \"coverage\": [\n    {\n      \"id\": \"m8.sharps\",\n      \"read_ids\": [\n        \"sharps\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-sharps\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"who-infections\"\n      ]\n    },\n    {\n      \"id\": \"m8.infection\",\n      \"read_ids\": [\n        \"infection\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-infection\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"who-infections\"\n      ]\n    },\n    {\n      \"id\": \"m8.vectors\",\n      \"read_ids\": [\n        \"infection\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-infection\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"who-infections\"\n      ]\n    },\n    {\n      \"id\": \"m8.ergonomics\",\n      \"read_ids\": [\n        \"body\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-body\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"who-infections\"\n      ]\n    },\n    {\n      \"id\": \"m8.stress\",\n      \"read_ids\": [\n        \"workload\",\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-workload\",\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"who-infections\"\n      ]\n    },\n    {\n      \"id\": \"m8.accidents\",\n      \"read_ids\": [\n        \"practice\",\n        \"check\"\n      ],\n      \"slide_ids\": [\n        \"slide-practice\",\n        \"slide-check\"\n      ],\n      \"source_ids\": [\n        \"facilitator\",\n        \"manual\",\n        \"who-infections\"\n      ]\n    }\n  ],\n  \"sources\": [\n    {\n      \"id\": \"facilitator\",\n      \"title\": \"DOH Facilitator Guide\",\n      \"pdf_pages\": [\n        30\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md\"\n    },\n    {\n      \"id\": \"manual\",\n      \"title\": \"BHW Reference Manual\",\n      \"pdf_pages\": [\n        21,\n        22,\n        23\n      ],\n      \"url\": \"https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md\"\n    },\n    {\n      \"id\": \"who-infections\",\n      \"title\": \"WHO — Occupational infections\",\n      \"url\": \"https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections\"\n    }\n  ],\n  \"assets\": []\n}\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.en.md": "## [sharps] A needle is not ordinary waste\n\nThe trained user places a used needle or lancet directly into the proper sharps container at the point of use. Do not recap, bend or hand-pass it. Keep it out of ordinary bins and never compress a nearly full container’s contents. Follow its fill line and local replacement procedure. If loose sharps are found, keep others away and obtain trained assistance; do not pick them up by hand.\n\n## [infection] Choose controls for the hazard\n\nInfections do not all spread through the same route. During client contact, follow hand hygiene, respiratory hygiene, ventilation and task-appropriate PPE under local protocols. Gloves do not replace hand hygiene. Mosquito exposure calls for bite prevention and attention to breeding sites. Keep the area clean and handle waste safely. Do not mix cleaning chemicals or invent dilutions; follow labels and facility instructions.\n\n## [body] Protect the body during work\n\nAna walks far and often stands for long periods. Plan breaks and changes of position, use comfortable footwear and a supportive chair. Arrange supplies to reduce repeated bending and heavy carrying; ask for lifting assistance. Report pain to the supervisor and seek assessment when needed. Enduring pain is not proof of dedication.\n\n## [workload] Time and capacity have limits\n\nAna is asked to make an extra evening visit while already exhausted. Explain what can be done within agreed hours and what needs reassignment. Ask the midwife or coordinator for support and arrange rest. Clear goals and boundaries for volunteer duties help prevent overload. Reporting risk and asking for help are compatible with caring for others.\n\n## [practice] Try it, then repeat\n\nMake five hazard-control cards: sharps–proper container; infection–task-appropriate prevention; body pain–work adjustment and breaks; stress–agreed workload and support; accidents–safe route and avoiding threats. Match them and explain why PPE alone is insufficient. In pairs, ask what must pause when protection is missing. Alone, explain each card aloud. Check one control before the next duty.\n\n## [check] Choose the next step\n\nChoose an answer and explain why before viewing the feedback. Then compare it with your own practice attempt.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.fil.md": "## [sharps] Ang karayom ay hindi ordinaryong basura\n\nAng ginamit na karayom o lancet ay inilalagay agad ng sinanay na gumagamit sa tamang sharps container sa lugar ng paggamit. Huwag ibalik ang takip, baluktutin o ipasa nang kamay sa iba. Huwag ilagay sa ordinaryong basurahan o siksikin ang laman ng halos punong container. Sundin ang fill line at lokal na pagpapalit ng lalagyan. Kung may nakitang nakakalat na sharps, ilayo ang iba at humingi ng sinanay na tulong; huwag damputin nang kamay.\n\n## [infection] Piliin ang kontrol ayon sa panganib\n\nHindi pare-pareho ang ruta ng impeksyon. Sa pakikisalamuha sa kliyente, sundin ang hand hygiene, respiratory hygiene, bentilasyon at task-appropriate PPE ayon sa lokal na protocol. Ang gloves ay hindi kapalit ng paglilinis ng kamay. Sa lamok, mahalaga ang pag-iwas sa kagat at mga lugar na pinamumugaran. Panatilihing malinis ang lugar at ligtas ang waste handling. Huwag paghaluin ang cleaning chemicals o mag-imbento ng dilution; sundin ang label at facility instructions.\n\n## [body] Alagaan ang katawan habang nagtatrabaho\n\nMahaba ang lakad ni Ana at madalas siyang nakatayo. Magplano ng pahinga at pagbabago ng posisyon, gumamit ng komportableng sapatos at maayos na upuang may sandalan. Ayusin ang mga gamit upang hindi paulit-ulit yumuko o magdala nang mabigat; humingi ng tulong sa pagbuhat. Kung may pananakit, sabihin sa supervisor at magpasuri kung kailangan. Hindi kailangang tiisin ang sakit upang patunayang masipag.\n\n## [workload] May hangganan ang oras at kapasidad\n\nMay humiling kay Ana ng dagdag na lakad sa gabi kahit pagod na siya. Ipaalam kung anong trabaho ang kaya sa napagkasunduang oras at alin ang kailangang muling italaga. Humingi ng suporta sa midwife o coordinator at magtakda ng pahinga. Ang malinaw na layunin at hangganan ng boluntaryong gawain ay nakakatulong sa pag-iwas sa sobrang pagod. Hindi kabawasan sa malasakit ang pagsasabi ng panganib o paghingi ng tulong.\n\n## [practice] Subukan, saka ulitin\n\nGumawa ng limang hazard-control card: sharps–tamang lalagyan; infection–task-appropriate prevention; body pain–ayos ng gawain at pahinga; stress–agreed workload at support; aksidente–ligtas na ruta at pag-iwas sa banta. Ipares at ipaliwanag kung bakit hindi sapat ang PPE lamang. Sa pares, magtanong kung anong gawain ang dapat ihinto kapag kulang ang proteksyon. Kung mag-isa, sabihin ang paliwanag sa bawat card. I-check ang isang kontrol bago ang susunod na duty.\n\n## [check] Piliin ang susunod na hakbang\n\nPiliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback. Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.\n",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/slides.json": "[\n  {\n    \"id\": \"slide-sharps\",\n    \"concept_ids\": [\n      \"m8.sharps\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Ang karayom ay hindi ordinaryong basura\",\n    \"heading_en\": \"A needle is not ordinary waste\",\n    \"display_fil\": \"Trained user → tamang sharps box sa point of use. Walang recapping, bending o hand-passing. Sundin ang fill line; huwag siksikin. Sa loose sharps, ilayo ang iba at humingi ng trained assistance.\",\n    \"display_en\": \"Trained user → correct sharps container at point of use. No recapping, bending or hand-passing. Respect the fill line; never compress contents. For loose sharps, keep others away and get trained assistance.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-infection\",\n    \"concept_ids\": [\n      \"m8.infection\",\n      \"m8.vectors\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Piliin ang kontrol ayon sa panganib\",\n    \"heading_en\": \"Choose controls for the hazard\",\n    \"display_fil\": \"Hand hygiene, respiratory hygiene, bentilasyon at PPE ayon sa gawain. Hindi kapalit ng hand hygiene ang gloves. Sa lamok: iwas-kagat at breeding sites. Sundin ang label at facility instruction sa cleaning chemicals.\",\n    \"display_en\": \"Use hand and respiratory hygiene, ventilation and task-specific PPE. Gloves do not replace hand hygiene. For mosquitoes, prevent bites and address breeding sites. Follow labels and facility instructions for cleaning chemicals.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-body\",\n    \"concept_ids\": [\n      \"m8.ergonomics\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Alagaan ang katawan habang nagtatrabaho\",\n    \"heading_en\": \"Protect the body during work\",\n    \"display_fil\": \"Ayusin ang upuan at gamit; bawasan ang paulit-ulit na pagyuko at mabigat na dala. Magpahinga at magpalit ng posisyon. Humingi ng tulong sa pagbubuhat at iulat ang pananakit.\",\n    \"display_en\": \"Arrange seating and supplies to reduce repeated bending and heavy carrying. Take breaks and change position. Ask for lifting assistance and report pain.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-workload\",\n    \"concept_ids\": [\n      \"m8.stress\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"May hangganan ang oras at kapasidad\",\n    \"heading_en\": \"Time and capacity have limits\",\n    \"display_fil\": \"Pagod na si Ana ngunit may dagdag na evening visit. Sabihin ang kaya sa napagkasunduang oras; hilingin ang reassignment at pahinga. Ang limitasyon sa trabaho ay proteksyon din.\",\n    \"display_en\": \"Ana is exhausted but receives an extra evening visit. Explain capacity within agreed hours; request reassignment and rest. Workload limits are protection too.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-practice\",\n    \"concept_ids\": [\n      \"m8.sharps\",\n      \"m8.infection\",\n      \"m8.vectors\",\n      \"m8.ergonomics\",\n      \"m8.stress\",\n      \"m8.accidents\"\n    ],\n    \"layout\": \"process\",\n    \"heading_fil\": \"Subukan, saka ulitin\",\n    \"heading_en\": \"Try it, then repeat\",\n    \"display_fil\": \"Ipares ang limang hazard sa kontrol. Isama ang ligtas na ruta para sa aksidente. Kapag kulang ang mahalagang proteksyon, ihinto at humingi ng tulong.\",\n    \"display_en\": \"Match five hazards to controls, including a safe route for accidents. If essential protection is missing, pause and seek assistance.\",\n    \"asset_ids\": [],\n    \"check\": null\n  },\n  {\n    \"id\": \"slide-check\",\n    \"concept_ids\": [\n      \"m8.sharps\",\n      \"m8.infection\",\n      \"m8.vectors\",\n      \"m8.ergonomics\",\n      \"m8.stress\",\n      \"m8.accidents\"\n    ],\n    \"layout\": \"decision\",\n    \"heading_fil\": \"Piliin ang susunod na hakbang\",\n    \"heading_en\": \"Choose the next step\",\n    \"display_fil\": \"Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.\",\n    \"display_en\": \"Choose controls for the hazard; PPE cannot replace every change needed in the work.\",\n    \"asset_ids\": [],\n    \"check\": {\n      \"prompt_fil\": \"Halos puno ang sharps box. Ano ang dapat ayusin bago magpatuloy?\",\n      \"prompt_en\": \"The sharps box is nearly full. What should be arranged before continuing?\",\n      \"options\": [\n        {\n          \"fil\": \"Siksikin ang laman gamit ang anumang matigas na bagay.\",\n          \"en\": \"Compress the contents with a rigid object.\"\n        },\n        {\n          \"fil\": \"Maglagay muna ng karayom sa ordinaryong basurahan.\",\n          \"en\": \"Temporarily put needles in an ordinary bin.\"\n        },\n        {\n          \"fil\": \"Palitan ayon sa fill line at lokal na protocol bago umapaw.\",\n          \"en\": \"Replace it according to the fill line and local protocol before overfilling.\"\n        }\n      ],\n      \"correct_option_index\": 2,\n      \"feedback_fil\": \"Ang ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.\",\n      \"feedback_en\": \"The third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution.\"\n    }\n  }\n]\n"
+  },
+  "sibling_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/competency.json": "a082c90db70837d7b21d33c62b44191a3ef767c16307038547b6ff07654c2fe4",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.en.md": "c342d5b0f35444a3ec4d43d9976e4fa7b35fb79b5b927dbaf8e84aea3d56d27b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/facilitator.fil.md": "b56b7b7fe4475e5a3fc337a06393d6bcf8e5ffbcf0cd46a86bf5186f8b346340",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json": "4a3dc79df78b737df53fb18fbf56c97a786fc454a358cea54c44dc775242a59e",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.en.md": "8df2159348482659d9b895a87e6392ae3f1415e08148a234380d58479aa1c36d",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/read.fil.md": "3fb99726ff80bea59b0a8054b1779a418bf33e55394c444c1d8ad09d5adfc027",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/slides.json": "f1a3b14af5e925c91a11b983ad71db2d6045201dca1bd5feda61eef18d4fc6cf",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/competency.json": "816f911e781bfacb9382c0fe8c74a5623931ec82a146446a5c77daf95b60415e",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.en.md": "fbb018c7c22c93252dc7fd38adf341c8b2d3176676ad939ac9880755c3048d3b",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/facilitator.fil.md": "120daea8442d5e46343e73e8710f156e402ee921cab138bb58138df8c9f348cd",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json": "da547084f728cbf926a335aa45a89e0b4d919abfab7f1b929abb57a57d7a9f69",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.en.md": "bb15c2fb0a8fa6c79a95078aaed555399d8188bc95edebb87b878af949e3f871",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/read.fil.md": "0d48728ca253308c04466b5a998d09fcc78d0b5fd3e8667e1793bd7ad8dcdffd",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/slides.json": "eb84aadacd14496d30767d0a3c5b3d5ba9e0c10aad1d13c15edc26c4ae2cada5",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/competency.json": "62fa9525b19906f2f3b2e8ccc7a5c19f5320b8f75b156a3881136fdcfc5546f9",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.en.md": "81c86df92b96e36651720ad9c31320a6e4f11c0f9eb44ce4aba93afb3145e269",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/facilitator.fil.md": "19d39bb8d4a02afccda2b44e7c101f03a2dc0cc2ea23d4e62bb2c1360e669614",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json": "4a9c35f208a616e2f2674e22a4b6db2308e230c65969f220337de90589bb3108",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.en.md": "a78d0f1cf47873a3750edb756e5a8397ed07254745d1d40ebc7f04937e2e4ed2",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/read.fil.md": "5ea3e366bcb7130d7a917c96a40105b8a2fb06406ad7e0554d92968df1e5d2c9",
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/slides.json": "47eafa47a4fb2a54776e925cf235497a27865079d777e87b88f634a688282374"
+  },
+  "shared_files_sha256": {
+    "content/training/day1-basic-competencies/modules/08-osh/module.json": "708671d7fdb33f27dd5dc34ab1e6c2310160d46ec47e7349f3015328019817b4",
+    "content/training/day1-basic-competencies/narration.json": "48e8a49c85578accd15f1bcb771565add70d9861d05ab881a7c76dc1c14899e5",
+    "content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json": "d81281f36cb0d0ab4569b06d4a03b6073c87510f3c627dfa1ca8b0da9fbaea2b",
+    "remotion/src/Root.tsx": "e80a544e762c1298f30cf6fa57ac0cc94c9196cccaa09f83c6994529c5a68c69",
+    "src/components/elearning/reference-lessons.tsx": "7fe32058b7d5d52a54e1fa2ca93d042b9ee2798576d6c7b1015be5cb7965355c",
+    "scripts/lib/reference-narration.mjs": "14f8df35198b76b74d610cf9d506a611b0476bfaff211a71e7f384e8b0f88a51",
+    "scripts/lib/reference-load.mjs": "97b0e95f026d4695c8fe59b3197759c2670b03f66fe8b5fea39a3c818cd5bdbd"
+  },
+  "source_files_sha256": {
+    "docs/source-material/day1-basic-competencies/README.md": "c522c42e508747809e076b24e332ca5410c0306c1315b61f5f1241af6bd24060",
+    "docs/source-material/day1-basic-competencies/facilitator-guide.md": "24b6a349a092bf836a9c1f1d6c1ac116b21cee08695b2516df947587c96a865c",
+    "docs/source-material/day1-basic-competencies/bhw-reference-manual.md": "b8a43226eaa2c1a745655486be6a63857ca8125cb7b7983314f92eb862581d4a",
+    "docs/source-material/day1-basic-competencies/day1-part1-presentation.md": "ace1dfb4eadc3c6c1bccbb2f15b8cdb68dc0b8195b4d314ead9cd26538ee3976"
+  },
+  "target_narration": {
+    "module": "08-osh",
+    "sections": {
+      "body": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-controls/body.en.16e8bb1b2f20.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "16e8bb1b2f20ad36063dbe8b898e5103d03542ddb19441c47e3c0ab8b4add933",
+          "sha256": "04f6016f073b5b67bee637f4ea1252f4fbbf6571cb40e20ba3024eedfaf098ca",
+          "duration_seconds": 36.415,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Protect the body during work",
+              "start_ms": 0,
+              "end_ms": 2240
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ana walks far and often stands for long periods.",
+              "start_ms": 2540,
+              "end_ms": 7180
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Plan breaks and changes of position, use comfortable footwear and a supportive chair.",
+              "start_ms": 7480,
+              "end_ms": 13800
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Arrange supplies to reduce repeated bending and heavy carrying; ask for lifting assistance.",
+              "start_ms": 14100,
+              "end_ms": 21100
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Report pain to the supervisor and seek assessment when needed.",
+              "start_ms": 21400,
+              "end_ms": 25920
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Enduring pain is not proof of dedication.",
+              "start_ms": 26220,
+              "end_ms": 29900
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Safer posture, breaks and sensible carrying are part of work preparation.",
+              "start_ms": 30200,
+              "end_ms": 36360
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-controls/body.fil.56d26acc2810.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "56d26acc2810cba0b092c91f1c6d26f7a87c363f3c1a4e86fdfe39dc7a6bd0ae",
+          "sha256": "9269e17f3f00a6fbad3bfb69e872f205dd554a3df429597cb75eb0707331cd9f",
+          "duration_seconds": 44.356,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Alagaan ang katawan habang nagtatrabaho",
+              "start_ms": 0,
+              "end_ms": 3760
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Mahaba ang lakad ni Ana at madalas siyang nakatayo.",
+              "start_ms": 4060,
+              "end_ms": 7940
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Magplano ng pahinga at pagbabago ng posisyon, gumamit ng komportableng sapatos at maayos na upuang may sandalan.",
+              "start_ms": 8240,
+              "end_ms": 16760
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ayusin ang mga gamit upang hindi paulit-ulit yumuko o magdala nang mabigat; humingi ng tulong sa pagbuhat.",
+              "start_ms": 17060,
+              "end_ms": 25380
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Kung may pananakit, sabihin sa supervisor at magpasuri kung kailangan.",
+              "start_ms": 25680,
+              "end_ms": 31360
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Hindi kailangang tiisin ang sakit upang patunayang masipag.",
+              "start_ms": 31660,
+              "end_ms": 36900
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang ligtas na posisyon, pahinga at tamang pagdadala ay bahagi ng paghahanda sa trabaho.",
+              "start_ms": 37200,
+              "end_ms": 44280
+            }
+          ]
+        }
+      },
+      "check": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-controls/check.en.a9a6504952a7.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "a9a6504952a7c7830c94677167eab8bf04ad6f7ec3c5bccc5fd2b099148a0d52",
+          "sha256": "a8c881d14a1756dd010aeefe838a82ea997534fc3cdb8dda0a76c4b02eb9f28d",
+          "duration_seconds": 18.207,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose the next step",
+              "start_ms": 0,
+              "end_ms": 1920
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Choose an answer and explain why before viewing the feedback.",
+              "start_ms": 2220,
+              "end_ms": 6980
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Then compare it with your own practice attempt.",
+              "start_ms": 7280,
+              "end_ms": 10880
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+              "start_ms": 11180,
+              "end_ms": 18140
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-controls/check.fil.3206b2e300b2.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "3206b2e300b24b33482781aa88c65d6387b8949ade44e85148e0a10785a6bca8",
+          "sha256": "e6a1138d1225a095ff0d9c0a9e0950de5edcb8a0824ac9cc6523cede96ff9b17",
+          "duration_seconds": 21.133,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang susunod na hakbang",
+              "start_ms": 0,
+              "end_ms": 2480
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Piliin ang sagot at ipaliwanag kung bakit bago tingnan ang feedback.",
+              "start_ms": 2780,
+              "end_ms": 8180
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Pagkatapos, ihambing sa sarili mong ginawa sa pagsasanay.",
+              "start_ms": 8480,
+              "end_ms": 12920
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
+              "start_ms": 13220,
+              "end_ms": 21060
+            }
+          ]
+        }
+      },
+      "infection": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-controls/infection.en.d7de2fad7a0e.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "d7de2fad7a0ec0e76285528d263e135b0e1523168cb83f99d136d3fc0ee3eb7e",
+          "sha256": "4063eb3ee59a4d185d2cc6eca8805e736e108477fb8dc3dd3cf530c7ee040ece",
+          "duration_seconds": 47.125,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Choose controls for the hazard",
+              "start_ms": 0,
+              "end_ms": 2360
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Infections do not all spread through the same route.",
+              "start_ms": 2660,
+              "end_ms": 6500
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "During client contact, follow hand hygiene, respiratory hygiene, ventilation and task-appropriate PPE under local protocols.",
+              "start_ms": 6800,
+              "end_ms": 18160
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Gloves do not replace hand hygiene.",
+              "start_ms": 18460,
+              "end_ms": 21700
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Mosquito exposure calls for bite prevention and attention to breeding sites.",
+              "start_ms": 22000,
+              "end_ms": 27920
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Keep the area clean and handle waste safely.",
+              "start_ms": 28220,
+              "end_ms": 32380
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Do not mix cleaning chemicals or invent dilutions; follow labels and facility instructions.",
+              "start_ms": 32680,
+              "end_ms": 40200
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Infection prevention combines appropriate practices, equipment and surroundings.",
+              "start_ms": 40500,
+              "end_ms": 47060
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-controls/infection.fil.2c1ff0dcf0d0.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "2c1ff0dcf0d0bf5bad6009afe7eb5e18bdac58dc3e9077215d5e16c97d074d9e",
+          "sha256": "48d0bbb5288d292745de6fcf4bffb4c0d7bd3f30607787aa96a34d4bfc0ffad3",
+          "duration_seconds": 49.607,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Piliin ang kontrol ayon sa panganib",
+              "start_ms": 0,
+              "end_ms": 3200
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Hindi pare-pareho ang ruta ng impeksyon.",
+              "start_ms": 3500,
+              "end_ms": 6380
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Sa pakikisalamuha sa kliyente, sundin ang hand hygiene, respiratory hygiene, bentilasyon at task-appropriate PPE ayon sa lokal na protocol.",
+              "start_ms": 6680,
+              "end_ms": 18760
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ang gloves ay hindi kapalit ng paglilinis ng kamay.",
+              "start_ms": 19060,
+              "end_ms": 23060
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Sa lamok, mahalaga ang pag-iwas sa kagat at mga lugar na pinamumugaran.",
+              "start_ms": 23360,
+              "end_ms": 29080
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Panatilihing malinis ang lugar at ligtas ang waste handling.",
+              "start_ms": 29380,
+              "end_ms": 34220
+            },
+            {
+              "zone": "body",
+              "index": 5,
+              "text": "Huwag paghaluin ang cleaning chemicals o mag-imbento ng dilution; sundin ang label at facility instructions.",
+              "start_ms": 34520,
+              "end_ms": 42560
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang infection prevention ay kombinasyon ng tamang gawain, kagamitan at kapaligiran.",
+              "start_ms": 42860,
+              "end_ms": 49540
+            }
+          ]
+        }
+      },
+      "practice": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-controls/practice.en.b7aecde3ea7b.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "b7aecde3ea7be15c8843375a9cd916916280496fddae93559c0ad619eeb889fa",
+          "sha256": "2aafed694f49311ef5c53f5a8088f3a0b932044195abd5131f6fea14b2214851",
+          "duration_seconds": 46.629,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Try it, then repeat",
+              "start_ms": 0,
+              "end_ms": 2480
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Make five hazard-control cards: sharps–proper container; infection–task-appropriate prevention; body pain–work adjustment and breaks; stress–agreed workload and support; accidents–safe route and avoiding threats.",
+              "start_ms": 2780,
+              "end_ms": 21300
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Match them and explain why PPE alone is insufficient.",
+              "start_ms": 21600,
+              "end_ms": 26760
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "In pairs, ask what must pause when protection is missing.",
+              "start_ms": 27060,
+              "end_ms": 31660
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Alone, explain each card aloud.",
+              "start_ms": 31960,
+              "end_ms": 35280
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Check one control before the next duty.",
+              "start_ms": 35580,
+              "end_ms": 38740
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+              "start_ms": 39040,
+              "end_ms": 46560
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-controls/practice.fil.11368d0d04a2.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "11368d0d04a2f6a42e3c8ea79fb7071741e52f1bfbb7d37e6b96abc07f1a9ff0",
+          "sha256": "5bf91741c53be2e3713c29499922ba7ef80889481503b7fdbce66abafdc8f4e3",
+          "duration_seconds": 53.786,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Subukan, saka ulitin",
+              "start_ms": 0,
+              "end_ms": 2640
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Gumawa ng limang hazard-control card: sharps–tamang lalagyan; infection–task-appropriate prevention; body pain–ayos ng gawain at pahinga; stress–agreed workload at support; aksidente–ligtas na ruta at pag-iwas sa banta.",
+              "start_ms": 2940,
+              "end_ms": 23580
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ipares at ipaliwanag kung bakit hindi sapat ang PPE lamang.",
+              "start_ms": 23880,
+              "end_ms": 29040
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Sa pares, magtanong kung anong gawain ang dapat ihinto kapag kulang ang proteksyon.",
+              "start_ms": 29340,
+              "end_ms": 36340
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Kung mag-isa, sabihin ang paliwanag sa bawat card.",
+              "start_ms": 36640,
+              "end_ms": 40800
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "I-check ang isang kontrol bago ang susunod na duty.",
+              "start_ms": 41100,
+              "end_ms": 44900
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
+              "start_ms": 45200,
+              "end_ms": 53720
+            }
+          ]
+        }
+      },
+      "sharps": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-controls/sharps.en.eb4658dd0980.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "eb4658dd0980e90cf92aa2585d22882b3d11ef37d0d69fb177dfa9982a2aa4f8",
+          "sha256": "c4052cdc11a9cc76422ff8917855b2aa471e107b91d66743f24cff30f58c7e68",
+          "duration_seconds": 41.718,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "A needle is not ordinary waste",
+              "start_ms": 0,
+              "end_ms": 3040
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "The trained user places a used needle or lancet directly into the proper sharps container at the point of use.",
+              "start_ms": 3340,
+              "end_ms": 11380
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Do not recap, bend or hand-pass it.",
+              "start_ms": 11680,
+              "end_ms": 16320
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Keep it out of ordinary bins and never compress a nearly full container’s contents.",
+              "start_ms": 16620,
+              "end_ms": 23420
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Follow its fill line and local replacement procedure.",
+              "start_ms": 23720,
+              "end_ms": 27840
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "If loose sharps are found, keep others away and obtain trained assistance; do not pick them up by hand.",
+              "start_ms": 28140,
+              "end_ms": 35820
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Safe sharps disposal requires the right container and trained handling.",
+              "start_ms": 36120,
+              "end_ms": 41640
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-controls/sharps.fil.e0d3244b4f60.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "e0d3244b4f60cf3adaba196d0bc29957e34bae1af8e190f0011da82ec0632d8b",
+          "sha256": "57fd77792f4e5217e3ac52d1ce0cd4ceb6d8a3a450514fc3ac69f19ba7b39a70",
+          "duration_seconds": 46.341,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Ang karayom ay hindi ordinaryong basura",
+              "start_ms": 0,
+              "end_ms": 3440
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ang ginamit na karayom o lancet ay inilalagay agad ng sinanay na gumagamit sa tamang sharps container sa lugar ng paggamit.",
+              "start_ms": 3740,
+              "end_ms": 12780
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Huwag ibalik ang takip, baluktutin o ipasa nang kamay sa iba.",
+              "start_ms": 13080,
+              "end_ms": 18680
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Huwag ilagay sa ordinaryong basurahan o siksikin ang laman ng halos punong container.",
+              "start_ms": 18980,
+              "end_ms": 25540
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Sundin ang fill line at lokal na pagpapalit ng lalagyan.",
+              "start_ms": 25840,
+              "end_ms": 30280
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Kung may nakitang nakakalat na sharps, ilayo ang iba at humingi ng sinanay na tulong; huwag damputin nang kamay.",
+              "start_ms": 30580,
+              "end_ms": 38780
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang ligtas na pagtatapon ng sharps ay nangangailangan ng tamang lalagyan at sinanay na paghawak.",
+              "start_ms": 39080,
+              "end_ms": 46280
+            }
+          ]
+        }
+      },
+      "workload": {
+        "en": {
+          "src": "/training/audio/08-osh/safety-controls/workload.en.a6a16bc5c26b.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "a6a16bc5c26b7abd2820b6f39db80d13b8c4b604cc5ee58befe982bccd38a435",
+          "sha256": "3b983a9be015b2c8f3dd9ec67e5a8e8a05908ff3c267648647c905c550e2c471",
+          "duration_seconds": 37.669,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "Time and capacity have limits",
+              "start_ms": 0,
+              "end_ms": 3120
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "Ana is asked to make an extra evening visit while already exhausted.",
+              "start_ms": 3420,
+              "end_ms": 8980
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Explain what can be done within agreed hours and what needs reassignment.",
+              "start_ms": 9280,
+              "end_ms": 14680
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Ask the midwife or coordinator for support and arrange rest.",
+              "start_ms": 14980,
+              "end_ms": 19820
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Clear goals and boundaries for volunteer duties help prevent overload.",
+              "start_ms": 20120,
+              "end_ms": 25000
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Reporting risk and asking for help are compatible with caring for others.",
+              "start_ms": 25300,
+              "end_ms": 31300
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Reporting excessive workload and setting boundaries are part of workplace safety.",
+              "start_ms": 31600,
+              "end_ms": 37600
+            }
+          ]
+        },
+        "fil": {
+          "src": "/training/audio/08-osh/safety-controls/workload.fil.3deda125d7cc.mp3",
+          "voice": "gemini:gemini-3.8-flash-tts:Kore",
+          "content_hash": "3deda125d7cc82895e8c3c24c92d5ef852295ce4d44759b4cb2ab06194f7dc8b",
+          "sha256": "05570b801d3c204dcb23f6ca26fcb7fe66ab436145807dea40371f3044e553df",
+          "duration_seconds": 45.584,
+          "timings": [
+            {
+              "zone": "heading",
+              "index": 0,
+              "text": "May hangganan ang oras at kapasidad",
+              "start_ms": 0,
+              "end_ms": 3200
+            },
+            {
+              "zone": "body",
+              "index": 0,
+              "text": "May humiling kay Ana ng dagdag na lakad sa gabi kahit pagod na siya.",
+              "start_ms": 3500,
+              "end_ms": 8860
+            },
+            {
+              "zone": "body",
+              "index": 1,
+              "text": "Ipaalam kung anong trabaho ang kaya sa napagkasunduang oras at alin ang kailangang muling italaga.",
+              "start_ms": 9160,
+              "end_ms": 17200
+            },
+            {
+              "zone": "body",
+              "index": 2,
+              "text": "Humingi ng suporta sa midwife o coordinator at magtakda ng pahinga.",
+              "start_ms": 17500,
+              "end_ms": 23380
+            },
+            {
+              "zone": "body",
+              "index": 3,
+              "text": "Ang malinaw na layunin at hangganan ng boluntaryong gawain ay nakakatulong sa pag-iwas sa sobrang pagod.",
+              "start_ms": 23680,
+              "end_ms": 31480
+            },
+            {
+              "zone": "body",
+              "index": 4,
+              "text": "Hindi kabawasan sa malasakit ang pagsasabi ng panganib o paghingi ng tulong.",
+              "start_ms": 31780,
+              "end_ms": 37940
+            },
+            {
+              "zone": "takeaway",
+              "index": 0,
+              "text": "Ang pag-uulat ng sobrang workload at pagtakda ng hangganan ay bahagi ng kaligtasan sa trabaho.",
+              "start_ms": 38240,
+              "end_ms": 45520
+            }
+          ]
+        }
+      }
+    }
+  },
+  "target_narration_history": null,
+  "production_snapshot_status": "Not captured: handoff preparation makes no production queries",
+  "owner_release_approval": false
+}

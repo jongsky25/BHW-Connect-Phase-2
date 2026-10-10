@@ -1,5 +1,5 @@
 {
-  "status": "implemented reviewable draft; exact verification evidence supplied separately",
+  "status": "owner-authorized release prepared; production publication verified separately",
   "target": "safety-demonstrate",
   "lesson_number": "1.8.4",
   "character": "Apple (she/her); no invented age or biography",
@@ -24,13 +24,12 @@
   "pending": [
     "one focused practice-fil ending model assessment blocked by provider filter; exact failure and excerpt retained",
     "authorized local clinical/procedure review",
-    "human listening including conflicting voice-transition observations",
-    "owner approval"
+    "human listening including conflicting voice-transition observations"
   ],
-  "release_authorized": false,
+  "release_authorized": true,
   "clinical_review": "pending",
   "human_listening": "pending",
-  "owner_review": "pending",
+  "owner_review": "approved. merge and deploy to live",
   "production_writes": "none",
   "preexisting_failure": {
     "test": "committed narration is current for every converted subchapter",
@@ -46,5 +45,5 @@
   "local_e2e_attempt": "Disposable Supabase image pull hit registry rate limit and disk exhaustion; removed only task-downloaded images; verification continues in CI.",
   "verification_reports": "Final frozen-head CI, full-registry render and package integrity reports accompany the review archive; their outcomes are separate from approval.",
   "integrated_main": "7a39a4b1b4a2caa461f9aa14514bd66a747ab8c8",
-  "scope": "Approved 1.7.4 main release integrated without target media changes; no release approval inherited."
+  "scope": "Publish only safety-demonstrate; 1.8.1–1.8.3 released main integrated with immutable historical views."
 }

@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "file": "lesson-183-pause-aid.fil.pdf",
+      "pages": 1,
+      "expected_pages": 1,
+      "text_inside_margins": true,
+      "min_font_points": 12.0
+    },
+    {
+      "file": "lesson-183-print-kit.fil.pdf",
+      "pages": 5,
+      "expected_pages": 5,
+      "text_inside_margins": true,
+      "min_font_points": 9.0
+    },
+    {
+      "file": "lesson-183-print-kit.en.pdf",
+      "pages": 5,
+      "expected_pages": 5,
+      "text_inside_margins": true,
+      "min_font_points": 9.0
+    },
+    {
+      "file": "lesson-183-pause-aid.en.pdf",
+      "pages": 1,
+      "expected_pages": 1,
+      "text_inside_margins": true,
+      "min_font_points": 12.0
+    }
+  ]
+}

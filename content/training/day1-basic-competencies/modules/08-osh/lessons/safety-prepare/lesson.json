@@ -19,7 +19,9 @@
         "m8.prepare",
         "m8.practice"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "safety-prepare-station-preparation"
+      ],
       "takeaway_fil": "Ihanda ang kontrol at kagamitan; iulat ang kulang bago magsagawa ng hindi ligtas na gawain.",
       "takeaway_en": "Prepare controls and equipment; report gaps before undertaking unsafe work.",
       "check": null
@@ -30,7 +32,9 @@
         "m8.accidents",
         "m8.heat"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "safety-prepare-field-preparation"
+      ],
       "takeaway_fil": "Ang ligtas na ruta at malinaw na reporting contact ay kasinghalaga ng listahan ng bibisitahin.",
       "takeaway_en": "A safe route and clear reporting contact matter as much as the visit list.",
       "check": null
@@ -41,9 +45,25 @@
         "m8.prepare",
         "m8.requirements"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "safety-prepare-combined-hazards"
+      ],
       "takeaway_fil": "Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon.",
       "takeaway_en": "Combined hazards may require changing the work and obtaining the appropriate decision.",
+      "check": null
+    },
+    {
+      "id": "verify-readiness",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice",
+        "m8.requirements"
+      ],
+      "asset_ids": [
+        "safety-prepare-verify-readiness"
+      ],
+      "takeaway_fil": "Beripikahin ang kondisyon at pasya; hindi pa ready ang hindi pa nakumpirma.",
+      "takeaway_en": "Verify conditions and the decision; unconfirmed conditions are not ready.",
       "check": null
     },
     {
@@ -55,7 +75,9 @@
         "m8.heat",
         "m8.requirements"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "safety-prepare-practice"
+      ],
       "takeaway_fil": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
       "takeaway_en": "A checklist must support a decision about safe starting conditions, not just list equipment.",
       "check": null
@@ -69,9 +91,11 @@
         "m8.heat",
         "m8.requirements"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
-      "takeaway_en": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+      "asset_ids": [
+        "safety-prepare-check"
+      ],
+      "takeaway_fil": "May ligtas na alternatibong napagkasunduan sa role-play; nakikita pa rin ang hindi pa ready bago magsimula.",
+      "takeaway_en": "The role-play has an agreed safe alternative; conditions that are not ready remain visible before work begins.",
       "check": {
         "prompt_fil": "May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?",
         "prompt_en": "There is a threat on the route but many visits remain. What is safe?",
@@ -90,8 +114,8 @@
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "Ang ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.",
-        "feedback_en": "The second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known."
+        "feedback_fil": "Una: Ang pagtuloy mag-isa ay pagpasok pa rin sa banta; hindi dahilan ang target. Ikalawa: Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor; kailangan pang kumpirmahin ang kondisyon bago umalis. Ikatlo: Ang hindi pagpapaalam ng bagong ruta ay nag-iiwan sa contact na walang tamang impormasyon tungkol sa lokasyon at oras ng balik. Sa kathang-isip na role-play, napagkasunduan ang mock station briefing muna at pagpapaliban ng apektadong visit. Hindi pa nakumpirma ang bagong ruta at visit contact: hindi pa ready ang visit at hindi ipinapalagay na nawala ang banta. Ulitin ang kasunduan at beripikahin bago magsimula.",
+        "feedback_en": "First: Continuing alone still enters the threat; the target does not justify it. Second: Avoid the threat and arrange an alternative with the supervisor; conditions still need confirmation before departure. Third: Not reporting a new route leaves the contact without accurate location and return-time information. In the fictional role-play, the agreed alternative is a mock station briefing and deferral of the affected visit. The new route and visit contact are unconfirmed: the visit is not ready and the threat is not assumed to have vanished. Repeat the agreement and verify before starting."
       }
     }
   ],
@@ -101,12 +125,14 @@
       "read_ids": [
         "station-preparation",
         "combined-hazards",
+        "verify-readiness",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-station-preparation",
         "slide-combined-hazards",
+        "slide-verify-readiness",
         "slide-practice",
         "slide-check"
       ],
@@ -119,11 +145,13 @@
       "id": "m8.practice",
       "read_ids": [
         "station-preparation",
+        "verify-readiness",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-station-preparation",
+        "slide-verify-readiness",
         "slide-practice",
         "slide-check"
       ],
@@ -170,11 +198,13 @@
       "id": "m8.requirements",
       "read_ids": [
         "combined-hazards",
+        "verify-readiness",
         "practice",
         "check"
       ],
       "slide_ids": [
         "slide-combined-hazards",
+        "slide-verify-readiness",
         "slide-practice",
         "slide-check"
       ],
@@ -204,5 +234,112 @@
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "safety-prepare-station-preparation",
+      "path": "/training/bhw-1-8/safety-prepare-station-preparation-f15177181b4f.png",
+      "content_hash": "f15177181b4f32783912db4ec395b81880ad5f29cd62c1f5eca7a98d684f855d",
+      "alt_fil": "Saklaw muna. Suriin ang lugar, supplies, hand hygiene at lokal na PPE. Kulang ang mahalagang proteksyon? Ihinto muna ang apektadong gawain, iulat at beripikahin ang pagwawasto.",
+      "alt_en": "Clarify scope. Check the station, supplies, hand hygiene and local PPE. Missing essential protection? Pause the affected task, report and verify correction.",
+      "caption_fil": "Kathang-isip na adaptasyon: Ihanda ang lugar at kagamitan",
+      "caption_en": "Fictional adaptation: Prepare the area and equipment",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.",
+      "review_status": "approved"
+    },
+    {
+      "id": "safety-prepare-field-preparation",
+      "path": "/training/bhw-1-8/safety-prepare-field-preparation-3defc70f619b.png",
+      "content_hash": "3defc70f619b6685cf47b11fccece0e510ef4e029ec3bda8dff3becc8fdf8f4c",
+      "alt_fil": "Ruta, panahon/init, tubig/lilim/pahinga, contact at balik: kumpirmahin bago umalis. Hindi tiyak ang ligtas na daan? Mag-pause at makipag-ugnayan para sa alternatibo.",
+      "alt_en": "Confirm route, weather/heat, water/shade/rest, contact and return time. Safe route uncertain? Pause and coordinate an alternative.",
+      "caption_fil": "Kathang-isip na adaptasyon: Planuhin ang ligtas na pagbisita",
+      "caption_en": "Fictional adaptation: Plan a safe field visit",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.",
+      "review_status": "approved"
+    },
+    {
+      "id": "safety-prepare-combined-hazards",
+      "path": "/training/bhw-1-8/safety-prepare-combined-hazards-4bbc01f495a9.png",
+      "content_hash": "4bbc01f495a9847f15ae494b45d6d13ef8e37a15e3c0b3012c7e15879d4e4101",
+      "alt_fil": "Kulang na proteksyon: pause. Ligtas na pagbabago: panukala. Kailangan ng pahintulot: supervisor. Isama ang staffing, daloy at pahinga; hindi puro dagdag-oras.",
+      "alt_en": "Missing protection: pause. Safe change: propose. Authorization needed: supervisor. Include staffing, flow and rest; extra hours alone are insufficient.",
+      "caption_fil": "Kathang-isip na adaptasyon: Kapag pinagsama ang mga panganib",
+      "caption_en": "Fictional adaptation: When hazards combine",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.",
+      "review_status": "approved"
+    },
+    {
+      "id": "safety-prepare-verify-readiness",
+      "path": "/training/bhw-1-8/safety-prepare-verify-readiness-173913e4ff5c.png",
+      "content_hash": "173913e4ff5c50312c69275ffa913ba437fcec6284156bf30518c6b1f1e88e01",
+      "alt_fil": "Hiniling ≠ naayos. Itala ang batayan, ready/hindi pa ready at contact. Sa role-play: briefing muna; visit nakahinto habang hindi pa tiyak ang ruta at contact.",
+      "alt_en": "Requested ≠ corrected. Record evidence, ready/not-ready and contact. In the role-play: briefing first; visit paused while route and contact remain unknown.",
+      "caption_fil": "Kathang-isip na adaptasyon: Beripikahin bago magsimula",
+      "caption_en": "Fictional adaptation: Verify before starting",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.",
+      "review_status": "approved"
+    },
+    {
+      "id": "safety-prepare-practice",
+      "path": "/training/bhw-1-8/safety-prepare-practice-2a423b2259f1.png",
+      "content_hash": "2a423b2259f108b9a12c9fe7cd4ecce3adfb145628473afcfb2e25142a7cdd83",
+      "alt_fil": "Limang field → briefing → tiyak na feedback → retry. Tatlong role, 25 minuto. Itala ang hindi pa alam; hindi pasado ang hindi naobserbahan.",
+      "alt_en": "Five fields → briefing → specific feedback → retry. Three roles, 25 minutes. Record unknowns; unobserved attempts are not passed.",
+      "caption_fil": "Kathang-isip na adaptasyon: Subukan, saka ulitin",
+      "caption_en": "Fictional adaptation: Try it, then repeat",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.",
+      "review_status": "approved"
+    },
+    {
+      "id": "safety-prepare-check",
+      "path": "/training/bhw-1-8/safety-prepare-check-2826943927d2.png",
+      "content_hash": "2826943927d2599eae7d82231a68ff1221ec5a6496748734a522c4cf9fc7d417",
+      "alt_fil": "May banta at hindi pa tiyak ang ibang daan. Piliin at ipaliwanag ang ligtas na hakbang bago tingnan ang feedback.",
+      "alt_en": "A threat is reported and another route is unconfirmed. Choose and explain a safe next step before viewing feedback.",
+      "caption_fil": "Kathang-isip na adaptasyon: Piliin ang susunod na hakbang",
+      "caption_en": "Fictional adaptation: Choose the next step",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE.",
+      "review_status": "approved"
+    },
+    {
+      "id": "safety-prepare-story",
+      "alt_fil": "Anim na hakbang ni Apple: paghahanda, ruta, pasya, beripikasyon, retry at alternatibong may hindi pa tiyak.",
+      "alt_en": "Apple’s six steps: preparation, route, decision, verification, retry and an alternative with unresolved conditions.",
+      "caption_fil": "Kathang-isip na role-play: briefing muna; deferred ang visit habang hindi pa ready.",
+      "caption_en": "Fictional role-play: briefing first; visit deferred while conditions remain unready.",
+      "provenance": "Original six-scene Remotion adaptation using hash-pinned shared Apple reference and Gemini Kore narration. Measured beat boundaries and actual final-frame poster. Human listening, clinical and owner reviews pending.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-8/safety-prepare-gemini-fil-41145f0ed082.mp4",
+          "content_hash": "41145f0ed0829b980cbad3f4d2cd27c0b9d116965a1a51a05367375ce886ee59",
+          "duration_s": 72,
+          "poster": {
+            "path": "/training/bhw-1-8/safety-prepare-gemini-fil-457ca5392fa7-poster.jpg",
+            "content_hash": "457ca5392fa72cc7d9ba38dc85eb0c4aac0b9e3ef39bd83dedd149c29234a905"
+          },
+          "captions": {
+            "path": "/training/bhw-1-8/safety-prepare-gemini-fil-3a44b1b1423b.vtt",
+            "content_hash": "3a44b1b1423b51f6ae58d700afa0600ba9202f697aabea3db1ebe93ac0276023"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-8/safety-prepare-gemini-en-0cabcedd0467.mp4",
+          "content_hash": "0cabcedd0467c5ed973ca31ec7e54c2c12b361cee989e4927aa8f67c8db01ea8",
+          "duration_s": 66,
+          "poster": {
+            "path": "/training/bhw-1-8/safety-prepare-gemini-en-6c04da47980b-poster.jpg",
+            "content_hash": "6c04da47980bd726e8be4dfd6869f47b8f2854d6ba0a75568a4e1be7150f3f6f"
+          },
+          "captions": {
+            "path": "/training/bhw-1-8/safety-prepare-gemini-en-ade9dce70e68.vtt",
+            "content_hash": "ade9dce70e68ffafe61e43fa0b4e57ab2dfbd2ab0902e9b245619b4584aebe32"
+          }
+        }
+      },
+      "path": "/training/bhw-1-8/safety-prepare-gemini-fil-457ca5392fa7-poster.jpg",
+      "content_hash": "457ca5392fa72cc7d9ba38dc85eb0c4aac0b9e3ef39bd83dedd149c29234a905"
+    }
+  ],
+  "featured_asset_id": "safety-prepare-story"
 }

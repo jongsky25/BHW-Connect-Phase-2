@@ -4,11 +4,12 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
 import {beforeProposed174} from '../lib/lesson-174-proposal.mjs';
+import {release184View} from '../lib/lesson-184-release-integration.mjs';
 import {beforeLesson184} from '../lib/lesson-184-integration.mjs';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 const base='content/training/day1-basic-competencies/',leaf=base+'modules/08-osh/lessons/safety-demonstrate/';
 const j=p=>JSON.parse(fs.readFileSync(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
-const baseline=j('docs/lesson-184-handoff-baseline.json'),lesson=j(leaf+'lesson.json'),slides=j(leaf+'slides.json');
+const baseline=j('docs/lesson-184-handoff-baseline.json'),lesson=JSON.parse(release184View(leaf+'lesson.json','reviewed184')),slides=j(leaf+'slides.json');
 const ids=['exposure','return-demo','near-miss','care-before-paperwork','practice','check'];
 describe('Apple lesson 1.8.4 draft boundaries',()=>{
  it('validates exact successors before recovering immutable predecessor bytes',()=>{

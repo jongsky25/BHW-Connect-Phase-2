@@ -1,4 +1,4 @@
-import {beforeLesson184} from './lesson-184-integration.mjs';
+import {release181View} from './lesson-181-release-integration.mjs';
 // Exact draft successors are checked before historical guards see pinned main bytes.
 // No public-media/approval predecessor views are permitted.
 import fs from 'node:fs';
@@ -11,7 +11,7 @@ const sha=b=>createHash('sha256').update(b).digest('hex');
 const receipt=JSON.parse(fs.readFileSync(path.join(root,'docs/lesson-174-proposal-receipt.json'),'utf8'));
 const predecessors=new Map();
 export function reviewed174(p,actual=fs.readFileSync(path.join(root,p))){
- actual=beforeLesson184(p,actual);
+ actual=release181View(p,'approvedMain',actual);
  const approval=path.join(root,'docs/lesson-174-owner-approval.json');
  if(p!==leaf+'lesson.json'||!fs.existsSync(approval))return actual;
  const a=JSON.parse(fs.readFileSync(approval));

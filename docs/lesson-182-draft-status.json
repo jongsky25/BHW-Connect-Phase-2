@@ -1,0 +1,28 @@
+{
+  "status": "Complete authored/media draft; exact-head technical acceptance is in the external verification and integrity receipts",
+  "owner_approval": false,
+  "human_listening": "pending",
+  "clinical_review": "pending authorized local trainer",
+  "production_mutations": false,
+  "identity_anchors_original_quiz": "preserved",
+  "guided_minutes": 60,
+  "module_guided_minutes": 240,
+  "selected_read_tracks": 12,
+  "shipped_AAC_stories": 2,
+  "full_automated_reviews": 14,
+  "focused_automated_excerpts": 56,
+  "scene_count": 6,
+  "shared_reference_owner": "lesson 1.8.1; exact imported reference hashes",
+  "preservation_baseline": "Single released-main integration 7a39a4b1b4a2caa461f9aa14514bd66a747ab8c8; original handoff/execution baselines retained",
+  "external_receipts": [
+    "lesson-1.8.2-verification.json",
+    "lesson-182-final-ci.json",
+    "lesson-182-package-integrity.json"
+  ],
+  "release_blockers": [
+    "Human listening must resolve timbre/gender disagreements and Filipino check card/ward ambiguity.",
+    "Authorized local clinical trainer review remains pending.",
+    "Owner approval of the exact package remains pending.",
+    "Inherited non-target problem-prioritize narration freshness failure remains; no guard exclusion or non-target regeneration."
+  ]
+}

@@ -1,0 +1,6 @@
+// Record exact predecessors and successors; never modifies historical approvals.
+import fs from 'node:fs';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
+const b=JSON.parse(fs.readFileSync('docs/lesson-181-execution-baseline.json')),sha=b=>createHash('sha256').update(b).digest('hex');
+const files=execFileSync('git',['diff','--name-only',b.source_commit,'--'],{encoding:'utf8'}).trim().split('\n').filter(Boolean),r={target:'safety-identify',status:'draft',owner_release_approval:false,baseline_commit:b.source_commit,changed_existing_files:{}};
+for(const p of files){let prior;try{prior=execFileSync('git',['show',b.source_commit+':'+p],{stdio:['ignore','pipe','ignore'],maxBuffer:20*1024*1024});}catch{continue;}const actual=fs.readFileSync(p);if(sha(actual)===sha(prior))continue;if(p.startsWith('public/'))throw Error('Immutable old public file changed: '+p);r.changed_existing_files[p]={predecessor_sha256:sha(prior),proposed_sha256:sha(actual),predecessor_utf8:prior.toString('utf8')};}
+fs.writeFileSync('docs/lesson-181-proposal-receipt.json',JSON.stringify(r,null,2)+'\n');console.log('Pinned '+Object.keys(r.changed_existing_files).length+' exact existing-file successors.');

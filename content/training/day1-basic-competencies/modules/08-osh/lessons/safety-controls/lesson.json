@@ -18,7 +18,9 @@
       "concept_ids": [
         "m8.sharps"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-controls-sharps"
+      ],
       "takeaway_fil": "Ang ligtas na pagtatapon ng sharps ay nangangailangan ng tamang lalagyan at sinanay na paghawak.",
       "takeaway_en": "Safe sharps disposal requires the right container and trained handling.",
       "check": null
@@ -29,7 +31,9 @@
         "m8.infection",
         "m8.vectors"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-controls-infection"
+      ],
       "takeaway_fil": "Ang infection prevention ay kombinasyon ng tamang gawain, kagamitan at kapaligiran.",
       "takeaway_en": "Infection prevention combines appropriate practices, equipment and surroundings.",
       "check": null
@@ -39,7 +43,9 @@
       "concept_ids": [
         "m8.ergonomics"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-controls-body"
+      ],
       "takeaway_fil": "Ang ligtas na posisyon, pahinga at tamang pagdadala ay bahagi ng paghahanda sa trabaho.",
       "takeaway_en": "Safer posture, breaks and sensible carrying are part of work preparation.",
       "check": null
@@ -49,7 +55,9 @@
       "concept_ids": [
         "m8.stress"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-controls-workload"
+      ],
       "takeaway_fil": "Ang pag-uulat ng sobrang workload at pagtakda ng hangganan ay bahagi ng kaligtasan sa trabaho.",
       "takeaway_en": "Reporting excessive workload and setting boundaries are part of workplace safety.",
       "check": null
@@ -64,7 +72,9 @@
         "m8.stress",
         "m8.accidents"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-controls-practice"
+      ],
       "takeaway_fil": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
       "takeaway_en": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
       "check": null
@@ -79,7 +89,9 @@
         "m8.stress",
         "m8.accidents"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "apple-controls-check"
+      ],
       "takeaway_fil": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
       "takeaway_en": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
       "check": {
@@ -100,8 +112,8 @@
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "Ang ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.",
-        "feedback_en": "The third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution."
+        "feedback_fil": "Una: ang pagsiksik ay maaaring makatusok at ilantad ang susunod na handler; hindi ito lumilikha ng ligtas na espasyo. Ikalawa: ang ordinaryong basurahan ay hindi tamang lalagyan ng sharps at naglalagay sa iba sa panganib. Ikatlo: ang pagpapalit ayon sa fill line at lokal na protocol ang tamang pagwawasto bago umapaw. Sa kathang-isip na pagtatapos, pinagtugma ni Apple ang panganib at kontrol at humingi ng awtorisadong pagpapalit. Itutuloy lamang ang apektadong gawain kapag natiyak ang kapalit at pinahintulutang pagwawasto ayon sa lokal na pamamaraan. Kung hindi pa alam ang contact, walang kapalit o kulang ang proteksyon, mananatiling nakahinto ang gawain habang humihingi ng tulong. Hindi natin ipinapahayag na may aktuwal nang pagwawasto o napagkasunduang lokal na patakaran.",
+        "feedback_en": "First: compression can cause puncture and expose the next handler; it does not create safe space. Second: an ordinary bin is not proper sharps containment and endangers others. Third: replacement according to the fill line and local protocol is the proper correction before overfilling. In the fictional ending, Apple matches the hazard to the control and requests authorized replacement. The affected task resumes only when the replacement and authorized correction have been verified under local procedures. If the contact remains unknown, no replacement is available or protection is missing, the task stays paused while assistance is sought. We are not claiming that an actual correction or local policy agreement has occurred."
       }
     }
   ],
@@ -238,5 +250,112 @@
       "url": "https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections"
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "apple-controls-sharps",
+      "path": "/training/bhw-1-8/controls-sharps-e4d5a3f0851d.png",
+      "content_hash": "e4d5a3f0851dd78548e1041df72fde4f8f9a18269ba6b66a35ed5c371f31ff45",
+      "alt_fil": "Itinuturo ni Apple ang fill line ng saradong sharps box habang naghihinto; hindi niya hinahawakan ang laman.",
+      "alt_en": "Apple points to the fill line of a closed sharps box and pauses without touching its contents.",
+      "caption_fil": "Kathang-isip na pagsasanay kasama si Apple.",
+      "caption_en": "Fictional rehearsal with Apple.",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review.",
+      "review_status": "approved"
+    },
+    {
+      "id": "apple-controls-infection",
+      "path": "/training/bhw-1-8/controls-infection-07fcaacfba6d.png",
+      "content_hash": "07fcaacfba6d7e031b1ea254d7ccbb3d791e68a009e45c2f336719758ad85650",
+      "alt_fil": "Inihahambing ni Apple ang mga larawang hand hygiene, bentilasyon, saradong basura at pag-iwas sa lamok.",
+      "alt_en": "Apple compares pictures of hand hygiene, ventilation, closed waste containment and mosquito prevention.",
+      "caption_fil": "Kathang-isip na pagsasanay kasama si Apple.",
+      "caption_en": "Fictional rehearsal with Apple.",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review.",
+      "review_status": "approved"
+    },
+    {
+      "id": "apple-controls-body",
+      "path": "/training/bhw-1-8/controls-body-28ac083243c8.png",
+      "content_hash": "28ac083243c8d58df374e495adc58480cdf9e2c09748df23c761648154b3568c",
+      "alt_fil": "Ibinaba ni Apple ang bag, inayos ang upuan at gamit, at humihingi ng tulong sa pagdadala.",
+      "alt_en": "Apple sets down the bag, arranges the chair and supplies, and asks for carrying assistance.",
+      "caption_fil": "Kathang-isip na pagsasanay kasama si Apple.",
+      "caption_en": "Fictional rehearsal with Apple.",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review.",
+      "review_status": "approved"
+    },
+    {
+      "id": "apple-controls-workload",
+      "path": "/training/bhw-1-8/controls-workload-00403b02c802.png",
+      "content_hash": "00403b02c802c285e9af25091381f2890f9f21546201c653999fd623006c8ed1",
+      "alt_fil": "Kausap ni Apple ang coordinator tungkol sa pagod, workload at hindi pa tiyak na ligtas na ruta.",
+      "alt_en": "Apple speaks with the coordinator about fatigue, workload and a route whose safety is unverified.",
+      "caption_fil": "Kathang-isip na pagsasanay kasama si Apple.",
+      "caption_en": "Fictional rehearsal with Apple.",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review.",
+      "review_status": "approved"
+    },
+    {
+      "id": "apple-controls-practice",
+      "path": "/training/bhw-1-8/controls-practice-2b93cc0b8390.png",
+      "content_hash": "2b93cc0b83908592a14ae70cdd6e0881c7c8ecced1a7c4f7a7c1fe73c0661167",
+      "alt_fil": "Si Apple at dalawang kasama ay nagsasanay gamit ang limang magkakahiwalay na hazard picture card.",
+      "alt_en": "Apple and two peers rehearse using five separate hazard picture cards.",
+      "caption_fil": "Kathang-isip na pagsasanay kasama si Apple.",
+      "caption_en": "Fictional rehearsal with Apple.",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review.",
+      "review_status": "approved"
+    },
+    {
+      "id": "apple-controls-check",
+      "path": "/training/bhw-1-8/controls-check-79628b0a5649.png",
+      "content_hash": "79628b0a56494d3181150dff154f4c4e3164f494b886c11143a6c1073647a89e",
+      "alt_fil": "Nakahinto si Apple habang dinadala ng awtorisadong staff ang saradong kapalit; malayo ang mga kamay niya sa lalagyan.",
+      "alt_en": "Apple stays paused while authorized staff brings a closed replacement; her hands stay away from the containers.",
+      "caption_fil": "Kathang-isip na pagsasanay kasama si Apple.",
+      "caption_en": "Fictional rehearsal with Apple.",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review.",
+      "review_status": "approved"
+    },
+    {
+      "id": "safety-controls-story",
+      "alt_fil": "Anim na beat: pinipili ni Apple ang kontrol at tinitiyak ang awtorisadong pagwawasto bago ituloy ang apektadong gawain.",
+      "alt_en": "Six beats: Apple selects controls and verifies authorized correction before resuming the affected task.",
+      "caption_fil": "Tamang kontrol at pagwawasto bago bumalik.",
+      "caption_en": "Appropriate controls and correction before resuming.",
+      "provenance": "Lesson 1.8.2 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-clinical review.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-8/safety-controls-gemini-fil-28be0111490b.mp4",
+          "content_hash": "28be0111490b5d66fbcb5b3b304422a83411ed7b8b1bb74b7e4ca80fa8be78a1",
+          "duration_s": 71,
+          "captions": {
+            "path": "/training/bhw-1-8/safety-controls-gemini-fil-c5d9a8f51106.vtt",
+            "content_hash": "c5d9a8f5110650b1e4584f589eedac0330e11b96ac3a3ecad6cb68c8a681385c"
+          },
+          "poster": {
+            "path": "/training/bhw-1-8/safety-controls-gemini-fil-6afed3d7ea95-poster.jpg",
+            "content_hash": "6afed3d7ea954e17008dbdb5a69a65d382fefc3412b97c83d4b391864d94f73c"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-8/safety-controls-gemini-en-59a971f6904a.mp4",
+          "content_hash": "59a971f6904a8a5f17de5a8f1f57758db8ef21a96ff0e534535f66ad696e110e",
+          "duration_s": 68,
+          "captions": {
+            "path": "/training/bhw-1-8/safety-controls-gemini-en-b1a15375b20e.vtt",
+            "content_hash": "b1a15375b20e0245c7230367cd9d2f0731bd11cf2bdf92d00d5e25a65fe1dfed"
+          },
+          "poster": {
+            "path": "/training/bhw-1-8/safety-controls-gemini-en-823b968b4e1b-poster.jpg",
+            "content_hash": "823b968b4e1b889e1b1e877d2ec4de433e355aa95a34fd6732a532c1dcbcae6e"
+          }
+        }
+      },
+      "path": "/training/bhw-1-8/safety-controls-gemini-fil-6afed3d7ea95-poster.jpg",
+      "content_hash": "6afed3d7ea954e17008dbdb5a69a65d382fefc3412b97c83d4b391864d94f73c"
+    }
+  ],
+  "featured_asset_id": "safety-controls-story"
 }
