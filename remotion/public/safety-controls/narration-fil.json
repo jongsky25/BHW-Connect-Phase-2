@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural everyday Filipino (Tagalog) as a warm community health trainer. Keep one stable adult female Kore narrator throughout, including dialogue; no character voice acting. Use gentle pitch and pace variation, clearly articulate hazard/control pairs and every negation and condition, and finish the conditional authorized-correction ending without clipping or adding words. Read Apple as written.",
+  "durationSeconds": 70.087,
+  "beats": [
+    {
+      "zone": "sharps",
+      "index": 0,
+      "text": "Kathang-isip na halimbawa: napansin ni Apple ang fill line. Ihihinto ang apektadong gawain; walang pagsiksik o ordinaryong basura.",
+      "start_ms": 0,
+      "end_ms": 10360
+    },
+    {
+      "zone": "infection",
+      "index": 1,
+      "text": "Piliin ang kontrol ayon sa ruta: kamay, bentilasyon, ligtas na basura at iwas-kagat. Hindi kapalit ng hand hygiene ang gloves.",
+      "start_ms": 10660,
+      "end_ms": 21500
+    },
+    {
+      "zone": "body",
+      "index": 2,
+      "text": "Ayusin ang bag, upuan at gamit. Humingi ng tulong, magpahinga at iulat ang sakit; huwag pilitin ang masakit na galaw.",
+      "start_ms": 21800,
+      "end_ms": 31280
+    },
+    {
+      "zone": "workload",
+      "index": 3,
+      "text": "Sabi ni Apple, “Pagod na ako; kailangan ng suporta at ligtas na ruta.” Tiyakin ang alternatibo; hindi dagdag na oras ang default na kontrol.",
+      "start_ms": 31580,
+      "end_ms": 43020
+    },
+    {
+      "zone": "practice",
+      "index": 4,
+      "text": "Limang pares: sharps, infection, katawan, stress at aksidente. Itama ang maling kontrol. Kapag kulang ang mahalagang proteksyon, ihinto at humingi ng pagwawasto.",
+      "start_ms": 43320,
+      "end_ms": 57320
+    },
+    {
+      "zone": "check",
+      "index": 5,
+      "text": "Pinagtugma ni Apple ang panganib at kontrol at humingi ng awtorisadong kapalit. Babalik lamang kapag natiyak ang pagwawasto; kung hindi pa tiyak, manatiling nakahinto.",
+      "start_ms": 57620,
+      "end_ms": 70020
+    }
+  ],
+  "audio_sha256": "99c6c12272914678edc77fa8b6917f8dc05bfa67f9fa47db4bf4ae7295863890"
+}

@@ -303,6 +303,9 @@ export function ReferenceLessons(props: Props) {
   const definitionRevision = lesson?.lesson_key === "problem-define" && lesson.revision.assets.some(asset => asset.id === "define-check");
   const definitionTracks = definitionRevision ? Object.values(lessonNarration ?? {}) : [];
   const definitionMinutes = definitionTracks.length === 6 ? Math.ceil(definitionTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
+  const controlsRevision = lesson?.lesson_key === "safety-controls" && lesson.revision.assets.some(asset => asset.id === "apple-controls-check");
+  const controlsTracks = controlsRevision ? Object.values(lessonNarration ?? {}) : [];
+  const controlsMinutes = controlsTracks.length === 6 ? Math.ceil(controlsTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const actionPlanRevision = lesson?.lesson_key === "problem-action-plan" && lesson.revision.assets.some(asset => asset.id === "action-check");
   const actionPlanTracks = actionPlanRevision ? Object.values(lessonNarration ?? {}) : [];
   const actionPlanMinutes = actionPlanTracks.length === 6 ? Math.ceil(actionPlanTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
@@ -590,7 +593,7 @@ export function ReferenceLessons(props: Props) {
             {((lesson.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork")) || selfManagementRevision || handoffRevision || causesRevision || definitionRevision || recordingRevision || actionPlanRevision || lesson.lesson_key === "communication-explain") && item.check && (
               <p className="mt-3 text-lg">{((en ? item.narration_en : item.narration_fil) ?? "").split(/\n\s*\n/)[0]}</p>
             )}
-            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyIdentifyRevision) && !storyLayout && figures}
+            {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyIdentifyRevision || controlsRevision) && !storyLayout && figures}
             {prioritizationTable}
             {practice}
             {revealSummary && <div
@@ -614,7 +617,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyIdentifyRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
+            {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyIdentifyRevision && !controlsRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
               <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
@@ -788,7 +791,10 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {safetyIdentifyRevision ? (safetyIdentifyMinutes === null ? ui(
+              {controlsRevision ? (controlsMinutes === null ? ui("Hindi pa natiyak ang haba ng salaysay; hiwalay ang 60-minutong guided practice.", "Narration timing is pending; the 60-minute guided practice is separate.") : ui(
+                `Tinatayang ${controlsMinutes}–${controlsMinutes + 3} minuto: aktuwal na salaysay sa wikang ito at 3–6 minutong maikling pagsasanay. Dagdag ang opsyonal na kuwento; hiwalay ang 60-minutong guided practice.`,
+                `Estimated ${controlsMinutes}–${controlsMinutes + 3} minutes: actual narration in this language and 3–6 minutes of brief practice. The optional story is additional; the 60-minute guided practice is separate.`,
+              )) : safetyIdentifyRevision ? (safetyIdentifyMinutes === null ? ui(
                 "Maglaan ng oras sa pagbasa at pagsasanay; hiwalay ang 45-minutong guided practice.",
                 "Allow time for reading and practice; the 45-minute guided practice is separate.",
               ) : ui(

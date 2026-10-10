@@ -1,0 +1,329 @@
+{
+  "status": "Complete actual-byte automated review; human listening and clinical/owner approval pending",
+  "full_reviews": 14,
+  "focused_reviews": 56,
+  "human_listening": "pending",
+  "owner_package_review": "pending",
+  "local_policy_SME_review": "pending",
+  "selected_full_review_sha256": "cf3aa4bb9d7c28e86ad64e1b6d2c745fe5ed87532786d5889279f5790f607820",
+  "selected_focused_review_sha256": "20bcc062f1b89241338706b57fe1fd0b17ecc0acf659a9f1b26aa69ca912a516",
+  "automated_full_findings": "All 14 report audible speech and no clipped ending. This is model assessment only.",
+  "name_pronunciation": "Apple remains displayed and spoken as written; available focused name reports describe standard recognizable pronunciation. No speech alias added.",
+  "corrections": [
+    {
+      "issue": "Body screen ended with language implying resuming unsafe carrying.",
+      "action": "Both Read/Slides bodies now verify assistance and correction, then resume only safe carrying. Both actual body tracks rerecorded; originals retained.",
+      "evidence": "Current body ending focused excerpts and full reports match the corrected wording."
+    },
+    {
+      "issue": "First English story list merged body/stress into body stress in both full/focused transcription.",
+      "action": "English story rerecorded with five explicit groups: sharps injuries; infections; body pain; workload stress; and accidents. First story files/reviews/raw evidence retained as superseded.",
+      "evidence": "Final full story and ending excerpt independently transcribe all five groups; source hashes are bound by verification."
+    }
+  ],
+  "expected_content_observations": [
+    {
+      "record": "read-safety-controls-practice-en",
+      "resolution": "Ten triads is intentional: 30 learners / 3. Gloves for a heavy bag is the deliberately wrong match; infection screen separately teaches hand hygiene. These observations do not establish omissions."
+    },
+    {
+      "generation": "initial Read reviews apple-controls-v1",
+      "resolution": "Broad prompts flagged other-screen topics as absent on single-screen tracks. A versioned full-track rereview clarifies screen scope; original responses retained."
+    }
+  ],
+  "unresolved_concerns": [
+    {
+      "record": "read-check-fil",
+      "kind": "body",
+      "source_sha256": "9bc91bc5db13eb3a4ef162192fd1a48d4b78b8e888762aafb320826f5e1fa5ea",
+      "excerpt_sha256": "54c5090c8deb333239f839d2a0b6ac66f00851498235e53662f96ba5a96a8deb",
+      "excerpt_file": "read-check-fil-body.wav",
+      "start_seconds": 3.14,
+      "end_seconds": 12.3,
+      "focused_observations": {
+        "transcript": "Halos puno ang sharps box sa kathang-isip na ward, hindi pa alam ang awtorisadong contact o kung may kapalit.",
+        "observations": {
+          "pronunciation": "English loanwords ('sharps box', 'ward', 'contact') are articulated clearly and naturally within the Tagalog sentence.",
+          "negation": "The negation 'Hindi pa alam' is spoken distinctly without slurring or hesitation at 00:04.8 - 00:05.6.",
+          "role_distinctions": "Single-speaker educational narrator delivery; no distinct character voices are depicted.",
+          "ending_completeness": "The phrase concludes naturally at 00:08.8 with 'kapalit', exhibiting a proper terminal drop in pitch.",
+          "audible_speech": "Speech is fully audible, clean, and intelligible throughout the excerpt.",
+          "clipped_words": "None detected; word boundaries are intact.",
+          "unexpected_voice_changes": "Tone, tempo, and vocal timbre remain consistent across the recording."
+        },
+        "possible_defects": [],
+        "uncertainty": "Minimal; slight phonetic ambiguity between 'ward' and 'card' at 00:03.5–00:04.2, though hospital context ('sharps box') and auditory cues favor 'ward'."
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "read-check-fil",
+      "kind": "critical",
+      "source_sha256": "9bc91bc5db13eb3a4ef162192fd1a48d4b78b8e888762aafb320826f5e1fa5ea",
+      "excerpt_sha256": "9a05f37e7fe2857f967559e7f8485a645b583c8a6e486e9d087daa7ed7e7890a",
+      "excerpt_file": "read-check-fil-critical.wav",
+      "start_seconds": 3.14,
+      "end_seconds": 16.8,
+      "focused_observations": {
+        "transcript": "Halos puno ang sharps box sa kathang-isip na ward. Hindi pa alam ang awtorisadong kontak o kung may kapalit. Hindi binubuksan o hinahawakan ni Apple ang laman.",
+        "observations": {
+          "audible_speech": "The full spoken excerpt is clear, distinct, and audible from start to finish.",
+          "role_distinctions": "Single narrator voice maintained consistently across the excerpt.",
+          "apple_pronunciation": "The name 'Apple' (around 00:11.8 - 00:12.3) is pronounced clearly following the standard English pronunciation adapted naturally into the Filipino sentence context.",
+          "negation": "Negation terms 'Hindi pa' (00:04.9 - 00:05.4) and 'Hindi' (00:09.5 - 00:09.9) are articulated clearly with proper pauses and emphasis.",
+          "ending_completeness": "The sentence completes naturally with 'ang laman' at 00:12.3 - 00:13.1, with no premature cut-off or missing syllable.",
+          "clipped_words": "No words or syllables are clipped or swallowed.",
+          "unexpected_voice_changes": "Tone, volume, and pacing remain steady and natural for an educational/narrative voice."
+        },
+        "possible_defects": [],
+        "uncertainty": "None"
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "read-infection-fil",
+      "kind": "critical",
+      "source_sha256": "b453f6eec23de1c7a3d716d0c8dbd56f3f40b3048c12b6a77d62a411bf472b99",
+      "excerpt_sha256": "e0e7d95705084bfb09162e58ade3848042d832f76211c43016f20850fb99ac65",
+      "excerpt_file": "read-infection-fil-critical.wav",
+      "start_seconds": 12.72,
+      "end_seconds": 30.7,
+      "focused_observations": {
+        "transcript": "Hindi pare-pareho ang ruta ng impeksyon. Maaaring may pagkakalantad sa dugo o body fluids, respiratory particles, o kagat ng lamok. Piliin ang pag-iwas ayon sa gawain at lokal na protocol. Hindi isang bagay ang sagot sa lahat.",
+        "observations": {
+          "role_distinctions_and_voice_change": "There is a distinct voice transition at approximately 00:10.15 where the speaker changes from an adult male voice (00:00.00–00:10.15) to an adult female voice (00:10.15–00:18.00).",
+          "pronunciation_and_loanwords": "English loan phrases ('body fluids' at 00:05.40–00:06.50 and 'respiratory particles' at 00:06.90–00:08.55) are spoken clearly with natural English phonology adapted into Tagalog cadence.",
+          "negation": "Negation terms ('Hindi pare-pareho' at 00:00.00–00:01.30 and 'Hindi isang bagay' at 00:15.50–00:16.70) are fully pronounced and audible without ambiguity.",
+          "clipped_words": "No clipped beginnings or cut-off word finals detected.",
+          "ending_completeness": "The audio ends naturally with a fully resolved sentence ('ang sagot sa lahat.') followed by ambient silence."
+        },
+        "possible_defects": [
+          {
+            "type": "unexpected_voice_change",
+            "timestamp": "00:10.15",
+            "description": "Sudden speaker switch from male narrator to female narrator mid-excerpt without an acoustic boundary or contextual role marker."
+          }
+        ],
+        "uncertainty": "Low. All lexical tokens and transitions are clearly audible."
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "read-sharps-fil",
+      "kind": "ending",
+      "source_sha256": "1ffb06a5ba2433c76d4b85b222ed0727720e392296b646455ed7fa1d915ce613",
+      "excerpt_sha256": "07981d59cca16444209abcfa4b22d0e3b5972ef7d740081e6ba19a22d72b2998",
+      "excerpt_file": "read-sharps-fil-ending.wav",
+      "start_seconds": 63.68,
+      "end_seconds": 84.45391666666667,
+      "focused_observations": {
+        "transcript": "Sa nakakalat na sharps, ilayo ang iba, at humingi ng sinanay na tulong. Huwag damputin ng kamay. Hindi nagbibigay ng pahintulot ang gloves na magpatuloy nang walang tamang lalagyan. Ang ligtas na pagtatapon ng sharps ay nangangailangan ng tamang lalagyan at sinanay na paghawak.",
+        "observations": [
+          {
+            "timestamp": "00:00 - 00:07.45",
+            "speaker": "Speaker 1 (Female)",
+            "note": "Delivers instructional safety steps regarding scattered sharps clearly with standard Tagalog intonation and clear pronunciation of the English loanword 'sharps'."
+          },
+          {
+            "timestamp": "00:07.45 - 00:13.20",
+            "speaker": "Speaker 2 (Male)",
+            "note": "Voice switches distinctly to a male speaker explaining cautionary advice regarding gloves, articulating negations clearly ('Hindi', 'walang'). English loanword 'gloves' is clearly enunciated."
+          },
+          {
+            "timestamp": "00:13.20 - 00:20.15",
+            "speaker": "Speaker 1 (Female)",
+            "note": "Voice returns to Speaker 1 concluding the educational message. Ending is complete with natural cadence, no clipping observed."
+          }
+        ],
+        "possible_defects": [],
+        "uncertainty": "None"
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "read-workload-fil",
+      "kind": "ending",
+      "source_sha256": "e26a3eacb05eac8ea01aebd5c516b84d6b5ce2c8085489a4cbd3b87117bb060c",
+      "excerpt_sha256": "4ef41432e8f9555f2c75a371f3004ee35d4565266dfd3ebf2c9729eba504433a",
+      "excerpt_file": "read-workload-fil-ending.wav",
+      "start_seconds": 60.72,
+      "end_seconds": 78.83758333333333,
+      "focused_observations": {
+        "transcript": "Hindi default na solusyon ang dagdag na oras ng boluntaryo. Hindi kabawasan sa malasakit ang pag-uulat ng panganib o paghingi ng tulong. Ang pag-uulat ng sobrang workload at pagtakda ng hangganan ay bahagi ng kaligtasan sa trabaho.",
+        "observations": [
+          {
+            "timestamp": "00:00.000 - 00:03.800",
+            "detail": "Spoken by a clear female voice."
+          },
+          {
+            "timestamp": "00:04.200",
+            "detail": "Noticeable voice transition/speaker change to a different female speaker for the remainder of the audio."
+          },
+          {
+            "timestamp": "00:17.500",
+            "detail": "Audio ends cleanly without clipping."
+          }
+        ],
+        "possible_defects": [
+          {
+            "type": "unexpected_voice_change",
+            "timestamp": "00:04.200",
+            "description": "Unannounced shift in speaker voice between the first sentence and the second sentence."
+          }
+        ],
+        "uncertainty": "none"
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "read-body-en",
+      "kind": "ending",
+      "source_sha256": "ed682091860a07937e5251d3000bccadd0f92ec9e3fde649f01b42b7ae52900b",
+      "excerpt_sha256": "8fae2453d13df1eed627ed4526db4d567bc15e2a854d82dbde5d36cbacc35227",
+      "excerpt_file": "read-body-en-ending.wav",
+      "start_seconds": 53.02,
+      "end_seconds": 68.67595833333333,
+      "focused_observations": {
+        "transcript": "Choose changes to the work and surroundings. Verify assistance and the correction, then resume carrying only when it is safe. Safer posture, breaks, and sensible carrying are part of work preparation.",
+        "observations": {
+          "role_distinctions": "There are two distinct voices: Speaker 1 (a lower-pitched instructional voice) speaks from 00:00.00 to 00:08.85, followed by Speaker 2 (a higher-pitched female voice) from 00:09.60 to 00:15.30.",
+          "unexpected_voice_changes": "A clear transition between two different speakers occurs around 00:09.00–00:09.60 without conversational overlap or transition audio.",
+          "apple_pronunciation": "Vowels in TRAP/BATH words such as 'and' and 'carrying' (audible at 00:06.80 and 00:13.20) are produced clearly without abnormal vowel shifting.",
+          "negation": "No negative particles (e.g., 'no', 'not') are present in the excerpt.",
+          "audible_speech": "All spoken words are fully audible and intelligible against a clean background.",
+          "clipped_words": "No onset or coda clipping detected; both the start and ending words are intact.",
+          "ending_completeness": "The audio concludes fully on 'preparation' with natural decay and no premature cutoff."
+        },
+        "possible_defects": [],
+        "uncertainty": "None detected; speech and speaker transitions are clear."
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "read-check-en",
+      "kind": "ending",
+      "source_sha256": "721baa652fe2d8109a58145d6f60c1763ab2eebfde56f6cdeb6ddb8d15097773",
+      "excerpt_sha256": "1a9a128aa7bde2dd43219e41f16eb915178432f12cbb4a490ad86d97fa5b849d",
+      "excerpt_file": "read-check-en-ending.wav",
+      "start_seconds": 21,
+      "end_seconds": 38.582875,
+      "focused_observations": {
+        "transcript": "Choose an answer, and explain why, before viewing feedback. Clicking an answer, does not establish demonstrated competence. Choose controls for the hazard. PPE cannot replace every change needed in the work.",
+        "observations": {
+          "role_distinctions": "The audio features two distinct voices: a male voice speaks the first sentence (00:00 - 00:04), followed by a female voice delivering the remainder of the clip (00:04 - 00:17).",
+          "negation": "Clear negation is present at 00:06 - 00:07 ('does not') and 00:13 - 00:14 ('cannot').",
+          "apple_pronunciation": "No occurrence of the word 'Apple'. 'PPE' is clearly enunciated as an initialism /ˌpiː.piːˈiː/.",
+          "ending_completeness": "The audio ends naturally on the phrase 'in the work.' with full decay and no abrupt cutoff.",
+          "audible_speech": "All words are clearly audible, well-paced, and articulated in an instructional style.",
+          "clipped_words": "None observed.",
+          "unexpected_voice_changes": "A speaker shift occurs at 00:04.8 from a male voice to a female voice."
+        },
+        "possible_defects": [],
+        "uncertainty": "None"
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "read-infection-en",
+      "kind": "ending",
+      "source_sha256": "add2fef037783452eb943885dad250aeec563e6d718a386ec971b3b0d804effb",
+      "excerpt_sha256": "b473381de33fbe9390be39426370e87fb947cd793c32f7bda5ce52a479cc95ea",
+      "excerpt_file": "read-infection-en-ending.wav",
+      "start_seconds": 62.96,
+      "end_seconds": 79.28166666666667,
+      "focused_observations": {
+        "transcript": "If essential protection is missing, or the task exceeds training, pause the affected task, and obtain authorized correction. Infection prevention combines appropriate practices, equipment, and surroundings.",
+        "observations": {
+          "role_distinctions": "There are two distinct female voices present. Speaker 1 speaks from 00:00.00 to approximately 00:09.30, and Speaker 2 speaks from approximately 00:10.10 to 00:15.85 after a brief pause.",
+          "unexpected_voice_changes": "A clear voice transition occurs at 00:09.80 between the first sentence and the second sentence, switching to a different speaker timbre.",
+          "apple_pronunciation": "Words containing the TRAP/æ vowel (such as 'task', 'practices') display standard front-open realizations consistent with Philippine English / General English educational delivery, with no anomalous phoneme distortions.",
+          "negation": "No grammatical negation tokens (e.g., 'not', 'no', 'never') are present in the text.",
+          "clipped_words": "None detected; word onsets and codas are clearly articulated.",
+          "ending_completeness": "The audio concludes fully on the word 'surroundings' with complete terminal decay and no abrupt cutoff."
+        },
+        "possible_defects": [
+          "Unannounced speaker/voice change between 00:09.30 and 00:10.10."
+        ],
+        "uncertainty": "Low. All lexical items and acoustic properties are clearly audible."
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "read-practice-en",
+      "kind": "critical",
+      "source_sha256": "7c96cfe6e9bf241a43fe312986d8810109a761bc4b3113ba1796683fe9be5d89",
+      "excerpt_sha256": "d62acef3a5fdd1de9dc7a9926d4821bbaa0ca8114883255e2f06c238b1013845",
+      "excerpt_file": "read-practice-en-critical.wav",
+      "start_seconds": 76.52,
+      "end_seconds": 86.26,
+      "focused_observations": {
+        "transcript": "Peer feedback or an unobserved attempt is not a staff observed pass. Check one control before the next duty.",
+        "observations": {
+          "apple_pronunciation": "Standard pronunciation throughout; words with the /æ/ vowel like 'attempt', 'staff', and 'pass' are articulated naturally.",
+          "negation": "Clear negation heard at 00:03.4 ('is not').",
+          "role_distinctions": "Distinct speaker roles: female voice speaks from 00:00.00 to 00:05.45, followed by a male voice speaking from 00:05.70 to 00:09.28.",
+          "ending_completeness": "The audio excerpt concludes completely with natural decay on 'duty' and no truncation.",
+          "audible_speech": "All speech is clear, audible, and intelligible against negligible background noise.",
+          "clipped_words": "None detected.",
+          "unexpected_voice_changes": "A planned speaker change occurs at approximately 00:05.55 between sentences; no unexpected mid-phrase vocal shifts detected."
+        },
+        "possible_defects": [],
+        "uncertainty": "None."
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "read-practice-en",
+      "kind": "ending",
+      "source_sha256": "7c96cfe6e9bf241a43fe312986d8810109a761bc4b3113ba1796683fe9be5d89",
+      "excerpt_sha256": "31be75abf9c3f342e0fe9ef135f2f15d1ede95273107f88c5328dbf380bb8f2e",
+      "excerpt_file": "read-practice-en-ending.wav",
+      "start_seconds": 76.52,
+      "end_seconds": 93.70125,
+      "focused_observations": {
+        "transcript": "Peer feedback, or an unobserved attempt, is not a staff-observed pass. Check one control before the next duty. Choose controls for the hazard. PPE cannot replace every change needed in the work.",
+        "observations": {
+          "apple_pronunciation": "The specific word 'apple' does not appear in this excerpt.",
+          "negation": "Negations are clearly enunciated: 'not' at 00:03.55–00:03.80 and 'cannot' at 00:13.50–00:14.05.",
+          "role_distinctions": "There are distinct speaker/voice roles: Speaker 1 delivers the educational guideline (00:00.00–00:05.20), Speaker 2 provides an instructional prompt in a lower register (00:05.80–00:09.35), and Speaker 3 (or Speaker 1 returning) delivers workplace safety rules (00:10.05–00:16.70).",
+          "ending_completeness": "The final sentence concludes completely without truncation; 'in the work.' is fully resolved at 00:16.70.",
+          "audible_speech": "All spoken words are fully audible and intelligible against a clean background.",
+          "clipped_words": "No clipped or cut-off words were detected.",
+          "unexpected_voice_changes": "Audible speaker transitions occur between consecutive instructional segments at approximately 00:05.50 and 00:09.70."
+        },
+        "possible_defects": [],
+        "uncertainty": "Low; all speech segments and words are clear and unambiguous."
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    },
+    {
+      "record": "shipped-story-en",
+      "kind": "critical",
+      "source_sha256": "59a971f6904a8a5f17de5a8f1f57758db8ef21a96ff0e534535f66ad696e110e",
+      "excerpt_sha256": "df897c74b15163d9162f467066e5f83f79521221b4e7a7d942a2134c3a7e5738",
+      "excerpt_file": "shipped-story-en-critical.wav",
+      "start_seconds": 8.9,
+      "end_seconds": 29.08,
+      "focused_observations": {
+        "transcript": "Choose controls for the route: hands, ventilation, safe waste, and bite prevention. Gloves do not replace hand hygiene. Adjust bag, chair, and supplies. Seek help, take breaks, and report pain. Do not force painful movement.",
+        "observations": {
+          "role_distinctions": "There are two distinct speaker voices: a male voice speaking from 00:00 to 00:09.9, followed by a female voice speaking from 00:10.5 to 00:19.8.",
+          "negation": "Negation terms ('do not replace' at 00:07.5-00:08.5 and 'Do not force' at 00:17.4-00:18.5) are clearly articulated.",
+          "ending_completeness": "The audio concludes naturally with no cutoff on the final word 'movement'.",
+          "audible_speech": "All speech is clear, well-enunciated, and completely audible throughout.",
+          "clipped_words": "No clipped words detected.",
+          "unexpected_voice_changes": "A shift in speaker gender/timbre occurs between 00:09.9 and 00:10.5."
+        },
+        "possible_defects": [],
+        "uncertainty": "None"
+      },
+      "resolution": "Pending human listening. Full-track model reports generally describe consistent voice; focused timbre/gender claims are not accepted as proven or silently dismissed."
+    }
+  ],
+  "release_blockers": [
+    "Human listening must resolve timbre/gender disagreements and Filipino check card/ward ambiguity.",
+    "Authorized local clinical trainer review remains pending.",
+    "Owner approval of the exact package remains pending.",
+    "Inherited non-target problem-prioritize narration freshness failure remains; no guard exclusion or non-target regeneration."
+  ]
+}

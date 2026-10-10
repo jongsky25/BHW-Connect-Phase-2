@@ -2,13 +2,13 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps.",
-      "observable_en": "Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps.",
+      "observable_fil": "Ipinapaliwanag ang limang tamang hazard-control pair, bakit kulang ang PPE lamang, at apektadong gawain/contact/pagwawastong dapat tiyakin bago bumalik; itinatama ang dalawang mismatch nang walang unsafe sharps alternative.",
+      "observable_en": "Explains five correct hazard-control pairs, why PPE alone is insufficient, and the affected task/contact/correction to verify before resuming; corrects two mismatches without an unsafe sharps alternative.",
       "not_yet_fil": "Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.",
       "not_yet_en": "Suggests recapping, compression, ordinary bins or continuing without essential protection.",
       "levels": {
-        "kaya_na_fil": "Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps. Nagagawa kahit hindi pinapaalalahanan.",
-        "kaya_na_en": "Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps. Completes this without prompting.",
+        "kaya_na_fil": "Ipinapaliwanag ang limang tamang hazard-control pair, bakit kulang ang PPE lamang, at apektadong gawain/contact/pagwawastong dapat tiyakin bago bumalik; itinatama ang dalawang mismatch nang walang unsafe sharps alternative. Nagagawa nang walang prompt.",
+        "kaya_na_en": "Explains five correct hazard-control pairs, why PPE alone is insufficient, and the affected task/contact/correction to verify before resuming; corrects two mismatches without an unsafe sharps alternative. Completes this without prompting.",
         "kailangan_practice_fil": "Ligtas ang desisyon ngunit nalilito ang control para sa dalawang hazard; ipares muli at ipaliwanag ang dahilan.",
         "kailangan_practice_en": "Makes a safe decision but mixes up controls for two hazards; rematch and explain.",
         "hindi_pa_fil": "Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.",

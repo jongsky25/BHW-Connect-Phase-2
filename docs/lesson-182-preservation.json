@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "source_commit": "05fdff498ca24cbadc67d21d089ff37064a0519c",
+  "protected_entries_verified": 8013,
+  "manifest_anchors_concepts_coverage_quiz_preserved": true,
+  "private_headings_and_bilingual_read_slides_match": true,
+  "non_target_narration_and_history_preserved": true,
+  "target_narration_changed": true,
+  "original_target_selection_in_history": true,
+  "changed_existing_files": {
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/competency.json": {
+      "predecessor_sha256": "0dd455b8dfd41341cafc661818d4b46e752c7381dfe259c01fb9610aadb82ff7",
+      "proposed_sha256": "86d9c2b9ae9daf05db948aa11aa31c182cb98479518999bd6b9aaefddda177ec"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.en.md": {
+      "predecessor_sha256": "75b490224d82166e491f1b1119b4c43e5beeae81738a8fe7ffb8595416d6edeb",
+      "proposed_sha256": "480d432fcf5e8d7772b309ca8beed8c811c71a9c10d486476d1b0ab37ee247cd"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/facilitator.fil.md": {
+      "predecessor_sha256": "b7e2bd70d13ff055da1603e9569ed09fd8c034c06fffe696e1eacc9f66eeb809",
+      "proposed_sha256": "b03750cfd3e104e36f02bd2ef51c1ccd3f7c7cebb769ed28e3d5c3f94dd3b70a"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json": {
+      "predecessor_sha256": "1c3c29044a38237688393ef4496dbc53d62c0a25433ee7cc893d289e021b73fb",
+      "proposed_sha256": "16ee923a9e3f5b115a3ba51ca0fee47013af5ef8315cbbe0d1abb340d36ed8ad"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.en.md": {
+      "predecessor_sha256": "35d2df2359aa577e1a12ac7249021ab6fad8dfccc04dcaa0386f832521a6f8f7",
+      "proposed_sha256": "92d7488ac1c44ea1959727dd6e2f5fe2aa45a9329ebdc697f0a917e97cc915d1"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/read.fil.md": {
+      "predecessor_sha256": "91be0081e0475a60c2689e929f6340be2ec0d217baf9d1889744ca48b30404ae",
+      "proposed_sha256": "e03977776034b1fe10fd62dbb263c0dcb23dad4f903308c4e1cac8da3961d0c7"
+    },
+    "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/slides.json": {
+      "predecessor_sha256": "69dd30daecc53559fd8105a95b8284a18a6b40df61fb946e188db1a13d804887",
+      "proposed_sha256": "1f7e399cf6ecf86d897eb2688fc6e2947dfa4480f3cf9cf15a61b4d1eec6a819"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "draft; clinical trainer verification pending",
+  "hazards": [
+    {"id":"H1","fil":"Sharps: halos puno ang lalagyan; contact at kapalit ay hindi pa alam. Walang bukas o hinahawakang laman.","en":"Sharps: container nearly full; contact and replacement unknown. Contents are not opened or touched."},
+    {"id":"H2","fil":"Infection: kailangang pumili ayon sa ruta/gawain; may lamok sa card. Hindi pa tiyak ang lokal na PPE instruction.","en":"Infection: select for route/task; the card includes mosquitoes. Local PPE instruction is unverified."},
+    {"id":"H3","fil":"Katawan: mabigat na bag, paulit-ulit na pagyuko; hindi pa natiyak ang tulong sa pagdadala.","en":"Body: heavy bag, repeated bending; carrying assistance has not been verified."},
+    {"id":"H4","fil":"Stress: pagod na si Apple; may dagdag na evening visit. Hindi pa napagkasunduan ang reassignment.","en":"Stress: Apple is exhausted; an extra evening visit is requested. Reassignment has not been agreed."},
+    {"id":"H5","fil":"Aksidente: madilim ang ruta; hindi pa natiyak ang ligtas na alternatibo. Kasama sa pagplano ang init at banta.","en":"Accidents: dark route; safer alternative unverified. Planning includes heat and threats."}
+  ],
+  "controls": [
+    {"id":"C1","fil":"Ayusin ang bag/upuan/gamit, bawasan ang dala, humingi ng tulong, magpahinga at iulat ang sakit. Walang masakit na stretching.","en":"Adjust bag/chair/supplies, reduce load, seek help, take breaks and report pain. No painful stretching."},
+    {"id":"C2","fil":"Tamang sharps container, fill line at sinanay na paghawak. Ihinto ang apektadong gawain; tiyakin ang awtorisadong kapalit bago bumalik.","en":"Proper sharps container, fill line and trained handling. Pause affected task; verify authorized replacement before resuming."},
+    {"id":"C3","fil":"Tiyakin ang ligtas na ruta/paraan, iwasan ang banta at planuhin ang pag-iwas sa init. Huwag ituloy ang hindi ligtas na lakad.","en":"Verify a safe route/way, avoid threats and plan heat avoidance. Do not continue an unsafe visit."},
+    {"id":"C4","fil":"Kamay, respiratory hygiene, bentilasyon, ligtas na basura at PPE ayon sa gawain. Iwas-kagat/breeding sites. Hindi kapalit ng kamay ang gloves.","en":"Hands, respiratory hygiene, ventilation, safe waste and task-specific PPE. Bite/breeding-site prevention. Gloves do not replace hand hygiene."},
+    {"id":"C5","fil":"Sabihin ang napagkasunduang workload limit; humingi ng suporta, pahinga at awtorisadong reassignment. Tiyakin ang sagot.","en":"State agreed workload limits; request support, rest and authorized reassignment. Verify the response."}
+  ],
+  "unsafe": [
+    {"fil":"Gloves para sa mabigat na bag. Ano ang mali? Ipares muli at ipaliwanag.","en":"Gloves for a heavy bag. What is wrong? Rematch and explain."},
+    {"fil":"Dagdag na oras para sa pagod na BHW. Ano ang mali? Ipares muli at ipaliwanag.","en":"Extra hours for an exhausted BHW. What is wrong? Rematch and explain."},
+    {"fil":"Siksikin ang sharps box / ordinaryong basurahan / recapping. Ihinto ang simulation; huwag aktuwal na gawin.","en":"Compress sharps contents / ordinary bin / recapping. Stop the simulation; never enact it."},
+    {"fil":"Ituloy kahit kulang ang mahalagang proteksyon. Ano ang ihihinto, contact at pagwawastong titiyakin?",
+     "en":"Continue with essential protection missing. What pauses, which contact and what correction must be verified?"}
+  ],
+  "roles": [
+    {"fil":"BHW: sa 3 minuto, ipaliwanag ang limang pares, bakit kulang ang PPE lamang at ano ang ihihinto/contact/pagwawasto. Itama ang dalawang mismatch sa 2-minutong retry.","en":"BHW: in 3 minutes, explain five pairs, why PPE alone is insufficient, and task/contact/correction. Correct both mismatches in the 2-minute retry."},
+    {"fil":"Contact: sa 2 minuto, itanong: Ano ang ihihinto? Sino ang dapat tiyakin? Ano ang kailangan bago bumalik? Sabihin ang unknowns; huwag mag-imbento ng lokal na patakaran o kasunduan.","en":"Contact: in 2 minutes ask: What pauses? Who must be verified? What is needed before resuming? Retain unknowns; do not invent local rules or agreements."},
+    {"fil":"Observer: sa 1 minuto, itala ang eksaktong sagot at isang tiyak na feedback. Peer practice lamang. Tatlong 8-minute round; lahat magpapalit ng role.","en":"Observer: in 1 minute, record exact words and one specific feedback item. Peer practice only. Three 8-minute rounds; everyone rotates roles."},
+    {"fil":"Solo/reading support: basahin nang malakas o gumamit ng reader. Takpan ang key, sabihin/isulat ang sagot, ihambing at ulitin. Hindi staff observation ang solo o peer feedback.","en":"Solo/reading support: read aloud or use a reader. Cover the key, speak/write, compare and retry. Solo or peer feedback is not staff observation."}
+  ],
+  "checklist": [
+    {"fil":"Limang pares at dahilan; vector control sa infection group.","en":"Five pairs and reasons; vector control within infection."},
+    {"fil":"Bakit hindi sapat ang PPE lamang; dalawang mismatch na itinama.","en":"Why PPE alone is insufficient; two mismatches corrected."},
+    {"fil":"Apektadong gawain na ihihinto; contact/unknowns na titiyakin.","en":"Affected task paused; contact/unknowns to verify."},
+    {"fil":"Awtorisadong pagwawasto bago bumalik; walang unsafe sharps alternative.","en":"Authorized correction before resuming; no unsafe sharps alternative."},
+    {"fil":"I-record: independent / prompted / unsafe / not observed. Eksaktong sagot, feedback at retry. Walang patient data.","en":"Record: independent / prompted / unsafe / not observed. Exact words, feedback and retry. No patient data."},
+    {"fil":"Trainer: hanggang anim na initial performance ang sampol; hindi nasaksihang attempt/retry ay not observed. Clinical checklist pending: sharps, PPE/kamay, prevention, reporting at pause/resume.","en":"Trainer: sample up to six initial performances; unseen attempt/retry is not observed. Clinical checklist pending: sharps, PPE/hands, prevention, reporting and pause/resume."}
+  ],
+  "aid": [
+    {"fil":"PANGANIB → KONTROL: H1–C2 sharps; H2–C4 infection; H3–C1 katawan; H4–C5 stress; H5–C3 aksidente.","en":"HAZARD → CONTROL: H1–C2 sharps; H2–C4 infection; H3–C1 body; H4–C5 stress; H5–C3 accidents."},
+    {"fil":"IHINTO ang apektadong gawain kung kulang ang mahalagang proteksyon o lampas sa pagsasanay.","en":"PAUSE the affected task if essential protection is missing or it exceeds training."},
+    {"fil":"TIYAKIN kung sino ang awtorisadong contact at lokal na pamamaraan. Kung hindi alam, humingi ng paglilinaw; huwag hulaan.","en":"VERIFY the authorized contact and local procedure. If unknown, seek clarification; never guess."},
+    {"fil":"BUMALIK lamang kapag natiyak ang awtorisadong pagwawasto ayon sa lokal na pamamaraan. Walang kapalit? Manatiling nakahinto.","en":"RESUME only after authorized correction is verified under local procedures. No replacement? Keep the task paused."},
+    {"fil":"CHECK: una—pagsiksik ay panganib; ikalawa—ordinaryong bin ay maling lalagyan; ikatlo—palitan ayon sa fill line at protocol. Hindi katumbas ng competence ang click.","en":"CHECK: first—compression is hazardous; second—ordinary bin is improper containment; third—replace per fill line and protocol. A click is not competence."},
+    {"fil":"Sa tunay na exposure, humingi agad ng qualified medical evaluation at sundin ang lokal na reporting. Huwag maghintay ng paperwork. Clinical review pending.","en":"For real exposure, seek immediate qualified medical evaluation and follow local reporting. Do not wait for paperwork. Clinical review pending."}
+  ]
+}
