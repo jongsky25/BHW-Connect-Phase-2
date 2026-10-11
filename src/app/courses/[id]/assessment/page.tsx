@@ -18,7 +18,7 @@ export default async function Chapter1AssessmentPage({ params }: { params: Promi
   const [viewer, flags, locale] = await Promise.all([getViewer(), getRequestFeatureFlags(), getLocale()]);
   if (!flags.elearning) redirect("/home");
   if (!viewer.appUser || viewer.appUser.status !== "active") redirect("/login");
-  if (viewer.role !== "bhw") notFound();
+  if (viewer.role !== "bhw" || viewer.isPreview) notFound();
   const db = await createClient();
   const [{ data: mapping }, { data: progress }, { data: session }, { data: state, error }] = await Promise.all([
     db.from("training_program_chapters").select("program_id,chapter_key,training_programs!inner(content_key,status)")
