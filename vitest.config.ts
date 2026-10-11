@@ -12,6 +12,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      // Next bundles this marker instead of installing it as a dependency.
+      // Route tests explicitly mock it; production keeps Next's boundary.
+      "server-only": path.resolve(__dirname, "./node_modules/next/dist/compiled/server-only/index.js"),
     },
   },
 });

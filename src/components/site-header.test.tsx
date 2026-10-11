@@ -56,6 +56,9 @@ const ALL_FLAGS_OFF: FeatureFlags = {
   ai_external: false,
   ai_gap_draft: false,
   spot_feedback: false,
+  assessor_flow_ui: false,
+  assessor_flow_writes: false,
+  assessor_flow_awards: false,
       chapter1_assessment_v2: false,
 };
 
