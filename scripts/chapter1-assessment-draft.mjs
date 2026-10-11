@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { paired, practiceSituations, practiceSituationsFil } from '../content/training/day1-basic-competencies/learner-assessment-v2/draft-question-seeds.mjs';
+import { paired, pairedDistractorReasons, practiceOverrides, practiceSituations, practiceSituationsFil } from '../content/training/day1-basic-competencies/learner-assessment-v2/draft-question-seeds.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const content = join(root, 'content/training/day1-basic-competencies/learner-assessment-v2');
@@ -31,15 +31,11 @@ const stableId = key => {
   const hex = createHash('sha256').update(`chapter1-draft-item:${key}`).digest('hex');
   return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-4${hex.slice(13, 16)}-a${hex.slice(17, 20)}-${hex.slice(20, 32)}`;
 };
-const distractor = {
-  en: 'This choice skips a needed verification, consent, authority or follow-up step. Review the case against the linked lesson.',
-  fil: 'Nilalaktawan ng pagpiling ito ang kailangang pagtiyak, pahintulot, awtoridad o follow-up. Ihambing ang sitwasyon sa kaugnay na aralin.',
-};
 function item(key, target, slot, stem, seed, lesson) {
   const shift = Number.parseInt(createHash('sha256').update(key).digest('hex').slice(0, 2), 16) % 3;
   const options = seed.options.map((label, i) => ({
     id: `o${i + 1}`, label,
-    ...(i ? { distractor_rationale: distractor } : {}),
+    ...(i ? { distractor_rationale: seed.distractorReasons[i - 1] } : {}),
   }));
   const ordered = [...options.slice(shift), ...options.slice(0, shift)];
   return {
@@ -52,10 +48,11 @@ function item(key, target, slot, stem, seed, lesson) {
       ? { safety_privacy_reviewer: 'pending qualified reviewer' } : {}),
   };
 }
+const answerSets = paired.map((seed, i) => ({ ...seed, distractorReasons: pairedDistractorReasons[i] }));
 const forms = Object.fromEntries(['pretest', 'posttest'].map((phase, phaseIndex) => [phase, {
   editorial_status: 'draft', items: paired.map((seed, i) => {
     const slot = `T${String(i + 1).padStart(2, '0')}`;
-    return item(`${phase}-${slot}`, slot, slot, seed.stems[phaseIndex], seed, primary[slot]);
+    return item(`${phase}-${slot}`, slot, slot, seed.stems[phaseIndex], answerSets[i], primary[slot]);
   }),
 }]));
 // A practice situation uses the most relevant paired seed as a first draft of
@@ -68,7 +65,7 @@ const practiceSlots = [
 const checkpoints = Array.from({ length: 12 }, (_, index) => {
   const key = `G${String(index + 1).padStart(2, '0')}`;
   const items = practiceSituations[index].map((situation, j) => {
-    const seed = paired[practiceSlots[index][j] - 1];
+    const seed = practiceOverrides[`${key}-${j + 1}`] ?? answerSets[practiceSlots[index][j] - 1];
     const stem = {
       en: `${situation} What is the best next step for the BHW?`,
       fil: `${practiceSituationsFil[index][j]} Ano ang pinakamainam na susunod na hakbang ng BHW?`,
@@ -79,7 +76,7 @@ const checkpoints = Array.from({ length: 12 }, (_, index) => {
   });
   return { key, after_lesson_key: group[key].lesson_key, first: items.slice(0, 2), alternates: items.slice(2) };
 });
-if (paired.length !== 30 || checkpoints.length !== 12 || checkpoints.some(checkpoint => checkpoint.first.length !== 2 || checkpoint.alternates.length !== 2))
+if (paired.length !== 30 || pairedDistractorReasons.length !== 30 || checkpoints.length !== 12 || checkpoints.some(checkpoint => checkpoint.first.length !== 2 || checkpoint.alternates.length !== 2))
   throw new Error('Draft item counts do not match the blueprint');
 const bank = { editorial_status: 'draft', blueprint_source: 'docs/chapter-1-assessment-plan/README.md',
   warning: 'Unreviewed authoring draft. Do not import, publish, or treat these keys and alternatives as approved guidance.',

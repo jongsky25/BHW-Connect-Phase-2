@@ -45,9 +45,9 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
     return () => window.removeEventListener("beforeunload", warn);
   }, [pending]);
 
-  const pre = state.attempts.find(a => a.phase === "pretest") ??
+  const pre = state.attempts.find(a => a.phase === "pretest" && a.state === "submitted") ??
     state.final_attempts.find(a => a.phase === "pretest");
-  const post = state.attempts.find(a => a.phase === "posttest") ??
+  const post = state.attempts.find(a => a.phase === "posttest" && a.state === "submitted") ??
     state.final_attempts.find(a => a.phase === "posttest");
   const phase: "pretest" | "posttest" = pre ? "posttest" : "pretest";
   const current = attempt?.items[position];

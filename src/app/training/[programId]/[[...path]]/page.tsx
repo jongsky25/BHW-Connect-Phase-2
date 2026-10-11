@@ -26,7 +26,7 @@ import safety from '../../../../../content/training/day1-basic-competencies/modu
 import practices from '../../../../../content/training/day1-basic-competencies/modules/09-sustainable-practices/module.json';
 import chapter1Orientation from '../../../../../content/training/day1-basic-competencies/learner-assessment-v2/orientation.json';
 import chapter1Checkpoints from '../../../../../content/training/day1-basic-competencies/learner-assessment-v2/checkpoints.json';
-import {NotesMarkdown} from '@/components/elearning/notes-markdown';
+import {Chapter1MajorIntroduction} from '@/components/elearning/chapter1-major-introduction';
 import narrationManifest from '../../../../../content/training/day1-basic-competencies/narration.json';
 import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearning/reference-narration';
 import {translationsForLesson} from '@/lib/elearning/lesson-translations';
@@ -198,6 +198,9 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
       intro=own.length?text('Piliin ang isang maikling aralin.','Choose a short lesson.'):text('Inihahanda pa ang mga aralin para sa subchapter na ito.','Lessons for this subchapter are being prepared.');
       const lesson=path[2]?own.find(l=>l.id===path[2]):null;
       if(path[2] && !lesson)notFound();
+      const chapter1Intro=role==='bhw' && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved'
+        && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
+        ? chapter1Orientation.introductions.find(item=>item.major_lesson===subchapter.position+1) : null;
       if(!lesson) {
         const mine=(await myProgress)?.chapters.find(x=>x.id===chapter.id)?.subchapters.find(x=>x.id===subchapter.id);
         const started=new Map(mine?.lessons.map(l=>[l.id,l.state]));
@@ -212,9 +215,6 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
             {!readOnly && <LessonStatus state={started.get(l.id)??(done.has(l.id)?'completed':'not_started')} locale={loc}/>}
           </p>
         </Link></li>)}</ol>;
-        const chapter1Intro=flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved'
-          && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
-          ? chapter1Orientation.introductions.find(item=>item.major_lesson===subchapter.position+1) : null;
         const hasBaseline=readOnly || ['certified','content_completed','failed_assessment'].includes(progress?.status??'')
           || Boolean((await db.from('course_test_attempts').select('id').eq('course_id',course.id)
             .eq('bhw_user_id',actor.id).eq('phase','pretest').limit(1)).data?.length);
@@ -222,10 +222,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           {guide ? <SubchapterFacilitatorGuide lang={loc} moduleId={subchapter.id} objectives={en?subchapter.objectives_en??[]:subchapter.objectives_fil??[]}
             view={guideView} href={moduleHref} slidesContent={lessonCards} {...guide}/> : <>
             {mine && mine.counts.total>0 && <ProgressBar counts={mine.counts} state={mine.state} locale={loc} label={text(`Progreso sa ${title(subchapter)}`,`Progress in ${title(subchapter)}`)}/>}
-            {chapter1Intro && hasBaseline && <section className="rounded-xl border border-ink/15 p-5" aria-labelledby="major-introduction">
-              <h2 id="major-introduction" className="mb-3 text-xl font-semibold">{text(`Panimula sa Aralin ${chapter1Intro.major_lesson}`,`Introduction to Major Lesson ${chapter1Intro.major_lesson}`)}</h2>
-              <NotesMarkdown markdown={en?chapter1Intro.body_en:chapter1Intro.body_fil}/>
-            </section>}
+            {chapter1Intro && hasBaseline && <Chapter1MajorIntroduction intro={chapter1Intro}
+              courseId={course.id} learnerId={actor.id} language={en?'en':'fil'}/>}
             {lessonCards}
           </>}
         </>;
@@ -266,6 +264,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
         const checkpoint=chapter1Checkpoints.find(group=>group.after_lesson_key===lesson.lesson_key);
         content=<>
+          {chapter1Intro && <Chapter1MajorIntroduction intro={chapter1Intro}
+            courseId={course.id} learnerId={actor.id} language={en?'en':'fil'}/>}
           {facilitator && <nav className="flex flex-wrap gap-2" aria-label={text('Paraan ng pagtingin','View')}>
             <Link prefetch={false} className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
             <Link prefetch={false} className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>

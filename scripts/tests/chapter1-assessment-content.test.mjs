@@ -50,6 +50,10 @@ describe('Chapter 1 release contract', () => {
     expect(items).toHaveLength(108);
     expect(new Set(items.map(item => item.item_id)).size).toBe(108);
     expect(items.every(item => item.review_status === 'draft' && item.stem.en && item.stem.fil)).toBe(true);
+    expect(items.every(item => item.options.filter(option => option.id !== item.correct_option_id)
+      .every(option => option.distractor_rationale?.en && option.distractor_rationale?.fil))).toBe(true);
+    expect(draftBank.checkpoints[6].first[1].options.find(option => option.id === 'o1').label.en)
+      .toContain('school');
     expect(draftBank.checkpoints.map(group => group.key)).toEqual(Object.keys(map.boundaries));
     expect(validateRelease(draftBank, { ...map, orientation: draft })).not.toEqual([]);
   });

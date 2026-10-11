@@ -66,6 +66,7 @@ beforeAll(async () => {
   await db.exec(read('supabase/migrations/20261011024838_chapter1_practice.sql'));
   await db.exec(read('supabase/migrations/20261011025138_chapter1_learning_notes.sql'));
   await db.exec(read('supabase/migrations/20261011030000_chapter1_review_and_reset.sql'));
+  await db.exec(read('supabase/migrations/20261011033000_chapter1_intro_views.sql'));
   await db.query('insert into org_units values($1,$2)', [ids.org, `${ids.org}.`]);
   for (const [id, role] of [[ids.learner, 'bhw'], [ids.stranger, 'bhw'], [ids.admin, 'admin'],
     [ids.reviewer, 'assessor'], [ids.nextReviewer, 'assessor']])
@@ -175,6 +176,18 @@ describe('Chapter 1 private learner attempt contract', () => {
     const notes = (await db.query('select scope_key from learner_assessment_private.reflection_drafts')).rows;
     expect(notes).toEqual([{ scope_key: 'entry' }]);
     expect((await db.query('select count(*)::integer as n from learner_assessment_private.reflection_versions')).rows[0].n).toBe(1);
+  });
+  it('shows each major introduction once per learner and restores it after progress reset', async () => {
+    const open = id => call(id, 'rpc_chapter_intro_open', '$1,$2',
+      [ids.course, 'chapter1-major-1-introduction']);
+    expect((await open(ids.learner)).rows[0].result).toBe(true);
+    expect((await open(ids.learner)).rows[0].result).toBe(false);
+    expect((await open(ids.stranger)).rows[0].result).toBe(true);
+    await db.query('select * from public.rpc_course_progress_reset($1,$2)', [ids.course, ids.learner]);
+    expect((await open(ids.learner)).rows[0].result).toBe(true);
+    expect((await open(ids.stranger)).rows[0].result).toBe(false);
+    await expect(call(ids.learner, 'rpc_chapter_intro_open', '$1,$2', [ids.course, 'other']))
+      .rejects.toThrow(/invalid introduction/);
   });
   it('serves legacy stems without keys while denying the raw bank to learners', async () => {
     const safe = (await call(ids.learner, 'rpc_course_test_question_delivery', '$1', [ids.course])).rows;
