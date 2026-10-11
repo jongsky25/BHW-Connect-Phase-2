@@ -15,6 +15,9 @@ export type FeatureFlagKey =
   | "ai_external"
   | "ai_gap_draft"
   | "spot_feedback"
+  | "assessor_flow_ui"
+  | "assessor_flow_writes"
+  | "assessor_flow_awards"
   | "chapter1_assessment_v2";
 
 export type FeatureFlags = Record<FeatureFlagKey, boolean>;
@@ -51,5 +54,9 @@ export const FLAG_ROLE_SCOPE: Record<FeatureFlagKey, AppRole[]> = {
   ai_external: [],
   ai_gap_draft: [],
   spot_feedback: [],
+  assessor_flow_ui: ["assessor"],
+  assessor_flow_writes: ["assessor"],
+  assessor_flow_awards: ["assessor"],
   chapter1_assessment_v2: ["bhw", "assessor"],
 };
+

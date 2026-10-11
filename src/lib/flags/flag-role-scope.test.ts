@@ -9,7 +9,7 @@ import { FLAG_ROLE_SCOPE, type FeatureFlagKey } from "./types";
 // silently drift apart.
 const MIGRATION_PATH = join(
   __dirname,
-  "../../../supabase/migrations/20261011022752_chapter1_assessment_v2_flag.sql",
+  "../../../supabase/migrations/20261011120608_assessor_briefing_acknowledgement.sql",
 );
 
 function parseFlagRoleScopeSql(sql: string): Record<string, string[]> {
@@ -64,6 +64,9 @@ describe("FLAG_ROLE_SCOPE", () => {
       "ai_external",
       "ai_gap_draft",
       "spot_feedback",
+      "assessor_flow_ui",
+      "assessor_flow_writes",
+      "assessor_flow_awards",
       "chapter1_assessment_v2",
     ];
     for (const key of keys) {
@@ -71,3 +74,4 @@ describe("FLAG_ROLE_SCOPE", () => {
     }
   });
 });
+

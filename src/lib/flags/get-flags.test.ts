@@ -46,6 +46,9 @@ describe("getFeatureFlags", () => {
       ai_external: true,
       ai_gap_draft: true,
       spot_feedback: true,
+      assessor_flow_ui: false,
+      assessor_flow_writes: false,
+      assessor_flow_awards: false,
       chapter1_assessment_v2: true,
     });
   });
@@ -66,6 +69,9 @@ describe("getFeatureFlags", () => {
       ai_external: false,
       ai_gap_draft: false,
       spot_feedback: false,
+  assessor_flow_ui: false,
+  assessor_flow_writes: false,
+  assessor_flow_awards: false,
       chapter1_assessment_v2: false,
     };
     expect(await getFeatureFlags(stubClient([]))).toEqual(expected);
@@ -92,6 +98,9 @@ describe("getFeatureFlags", () => {
       ai_external: false,
       ai_gap_draft: false,
       spot_feedback: false,
+  assessor_flow_ui: false,
+  assessor_flow_writes: false,
+  assessor_flow_awards: false,
       chapter1_assessment_v2: false,
     });
   });
@@ -125,3 +134,4 @@ describe("getFeatureFlags", () => {
     });
   });
 });
+

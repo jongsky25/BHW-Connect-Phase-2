@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "program_key": "bhw-reference-manual",
+  "chapter_key": "chapter-1",
+  "status": "draft",
+  "relation": "supports_partial_component_evidence",
+  "meaning": "These are explicit review proposals, not equivalent rubrics or authority to reuse ratings. Indices below refer only to the legacy module rubric. Lesson indices are local and must never supply this mapping automatically.",
+  "modules": [
+    {
+      "module_key": "01-tungkulin-ng-bhw",
+      "review_note": "Individual role performances contribute to broader role explanation/application. A single role does not establish all three roles or the complete component. Preserve guidance on records, facts and local routes.",
+      "lessons": [
+        { "lesson_key": "bhw-roles-hepo", "legacy_objective_indices": [0, 1] },
+        { "lesson_key": "bhw-health-educator", "legacy_objective_indices": [1, 2] },
+        { "lesson_key": "bhw-community-organizer", "legacy_objective_indices": [1, 2] },
+        { "lesson_key": "bhw-service-provider", "legacy_objective_indices": [1, 2] },
+        { "lesson_key": "bhw-records", "legacy_objective_indices": [3] },
+        { "lesson_key": "bhw-roles-application", "legacy_objective_indices": [1, 2, 3] }
+      ]
+    },
+    {
+      "module_key": "02-uhc-act",
+      "review_note": "Coverage and primary-care tasks jointly support the older combined goal-and-changes indicator. Local factual communication is not automatically a comparison of real implementation. Keep confirmed local information separate from promises.",
+      "lessons": [
+        { "lesson_key": "uhc-coverage", "legacy_objective_indices": [0] },
+        { "lesson_key": "uhc-primary-care", "legacy_objective_indices": [0] },
+        { "lesson_key": "uhc-local-system", "legacy_objective_indices": [1, 2] },
+        { "lesson_key": "uhc-improvement", "legacy_objective_indices": [2, 3] }
+      ]
+    },
+    {
+      "module_key": "03-polisiya-bhs",
+      "review_note": "Resolve memorized law numbers versus applied policy reasons, refusal alternatives versus prohibited workarounds, and combined lesson actions versus the guide's request for separate scores. Do not apply the older cooperation anchor automatically.",
+      "lessons": [
+        { "lesson_key": "bhs-promotions", "legacy_objective_indices": [0] },
+        { "lesson_key": "bhs-support-environment", "legacy_objective_indices": [0, 1] },
+        { "lesson_key": "bhs-decline", "legacy_objective_indices": [2] },
+        { "lesson_key": "bhs-resources", "legacy_objective_indices": [3] },
+        { "lesson_key": "bhs-improvement", "legacy_objective_indices": [3] }
+      ]
+    },
+    {
+      "module_key": "04-ra7883",
+      "review_note": "Use fictional bounded explanations and verification questions. The legacy rubric asks for actual personal accreditation/standing and unaided recall in places; do not infer eligibility or require disclosure from the lesson practice.",
+      "lessons": [
+        { "lesson_key": "bhw-legal-role", "legacy_objective_indices": [0] },
+        { "lesson_key": "bhw-benefits", "legacy_objective_indices": [1] },
+        { "lesson_key": "bhw-eligibility", "legacy_objective_indices": [2] },
+        { "lesson_key": "bhw-accreditation", "legacy_objective_indices": [0] },
+        { "lesson_key": "bhw-follow-up", "legacy_objective_indices": [3] }
+      ]
+    },
+    {
+      "module_key": "05-bhw-at-barangay",
+      "review_note": "A justified contact choice, additional local roles, teamwork and self-management are different evidence units. Neither political influence nor granted resources is a performance criterion. Self-management evidence does not automatically establish the older weekly-plan requirement.",
+      "lessons": [
+        { "lesson_key": "bhw-relationships", "legacy_objective_indices": [0] },
+        { "lesson_key": "bhw-barangay-partners", "legacy_objective_indices": [1] },
+        { "lesson_key": "bhw-local-partners", "legacy_objective_indices": [1] },
+        { "lesson_key": "bhw-right-contact", "legacy_objective_indices": [0] },
+        { "lesson_key": "bhw-teamwork", "legacy_objective_indices": [2] },
+        { "lesson_key": "bhw-self-management", "legacy_objective_indices": [3] }
+      ]
+    },
+    {
+      "module_key": "06-komunikasyon",
+      "review_note": "Clarification and corrected-summary evidence is more specific than the broad legacy listening anchor. Review whether it needs its own criterion. Each lesson's objective 0 is not module objective 0. A combined communication component requires all its approved criteria.",
+      "lessons": [
+        { "lesson_key": "communication-listen", "legacy_objective_indices": [0] },
+        { "lesson_key": "communication-clarify", "legacy_objective_indices": [0] },
+        { "lesson_key": "communication-record", "legacy_objective_indices": [1, 2] },
+        { "lesson_key": "communication-explain", "legacy_objective_indices": [3] },
+        { "lesson_key": "communication-handoff", "legacy_objective_indices": [2] }
+      ]
+    },
+    {
+      "module_key": "07-problema",
+      "review_note": "Lesson criteria expand the corresponding legacy objective with sources, unknowns, feasibility calculations, agreement and a complete outcome-review plan. Stronger lesson requirements must be accepted explicitly rather than imposed via an implicit map.",
+      "lessons": [
+        { "lesson_key": "problem-define", "legacy_objective_indices": [0] },
+        { "lesson_key": "problem-causes", "legacy_objective_indices": [1] },
+        { "lesson_key": "problem-prioritize", "legacy_objective_indices": [2] },
+        { "lesson_key": "problem-action-plan", "legacy_objective_indices": [3] }
+      ]
+    },
+    {
+      "module_key": "08-osh",
+      "review_note": "Control selection, preparation, physical demonstration and reporting are distinct. Review actual local clinical checklists and pause/resume authority. A paper control-selection exercise cannot satisfy physical return-demonstration criteria.",
+      "lessons": [
+        { "lesson_key": "safety-identify", "legacy_objective_indices": [0] },
+        { "lesson_key": "safety-controls", "legacy_objective_indices": [0, 1] },
+        { "lesson_key": "safety-prepare", "legacy_objective_indices": [0, 1] },
+        { "lesson_key": "safety-demonstrate", "legacy_objective_indices": [1, 2, 3] }
+      ]
+    },
+    {
+      "module_key": "09-sustainable-practices",
+      "review_note": "The three lesson tasks contribute to four legacy objectives; baseline, safe savings, agreed routine and quality/workload comparison need explicit evidence coverage. Do not infer complete competency from one resource-saving suggestion.",
+      "lessons": [
+        { "lesson_key": "resources-audit", "legacy_objective_indices": [0, 2] },
+        { "lesson_key": "resources-safe-change", "legacy_objective_indices": [1, 2] },
+        { "lesson_key": "resources-monitor", "legacy_objective_indices": [2, 3] }
+      ]
+    }
+  ]
+}

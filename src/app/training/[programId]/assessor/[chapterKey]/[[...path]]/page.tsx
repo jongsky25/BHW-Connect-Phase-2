@@ -6,6 +6,11 @@ import {getRequestFeatureFlags} from '@/lib/supabase/request';
 import {createClient} from '@/lib/supabase/server';
 import {chapterStudy,studyReaderData,type StudyCompletion,type StudyResume} from '@/lib/assessor/learning';
 import {referenceManualChapter} from '@/lib/assessor/curriculum';
+import {loadAssessorRollout} from '@/lib/assessor/load-rollout';
+import {chapter1BriefingIdentity} from '@/lib/assessor/briefing';
+import {loadBriefingState} from '@/lib/assessor/load-briefing';
+import {preparationQualification} from '@/lib/assessor/preparation-checklist';
+import {AssessorPreparationChecklist} from '@/components/elearning/assessor-preparation-checklist';
 import {ManualLesson} from '@/components/elearning/manual-lesson';
 import {AssessorExam} from '@/components/elearning/assessor-exam';
 import {Breadcrumbs} from '@/components/breadcrumbs';
@@ -32,6 +37,15 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
   ]);
   if(programError||chapterError)throw new Error('Unable to load assessor chapter');
   if(!program||!chapter?.course_id)notFound();
+  const showPreparation=path.length===0;
+  const briefingVisible=chapterKey==='chapter-1' && flags.assessor_flow_ui
+    ? (await loadAssessorRollout(db,flags,chapter1BriefingIdentity(programId),{actor:{
+      id:viewer.appUser.id,role:viewer.appUser.role,active:true,preview:viewer.isPreview,
+    }})).uiVisible : false;
+  if(briefingVisible) {
+    const acknowledgement=await loadBriefingState(db,programId,viewer.appUser.id);
+    if(!acknowledgement?.acknowledgedAt)redirect(`/training/${programId}/assessor/chapter-1/briefing`);
+  }
   const [{data:course,error:courseError},{data:modules,error:moduleError}]=await Promise.all([
     db.from('courses').select('id').eq('id',chapter.course_id).eq('status','published').maybeSingle(),
     db.from('course_modules').select('id,course_id,position,type,title_fil,title_en,objectives_fil,objectives_en').eq('course_id',chapter.course_id).order('position').limit(32),
@@ -59,6 +73,15 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
   if(progressError||resumeError||attemptError||pretestError)throw new Error('Unable to load your candidate progress');
   const study=chapterStudy(chapterKey,modules??[],lessons??[],completed??[],resumes??[]);
   if(!study)notFound();
+  let qualification=null;
+  if(briefingVisible && showPreparation && curriculum) {
+    try {
+      const result=await db.rpc('rpc_assessor_qualification_state',{p_chapter_id:chapter.id});
+      qualification=result.error?null:preparationQualification(result.data,curriculum.requirements.version);
+    } catch {
+      // Unknown status stays unknown; existing study progress is still shown.
+    }
+  }
   const examAvailable=Boolean(curriculum?.requirements.exams.length);
   const currentAttempts=(attempts??[]).filter(a=>a.curriculum_version===curriculum?.requirements.version && a.status==='submitted');
   const pretestDone=Boolean(pretestRecord);
@@ -91,10 +114,15 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
     <Breadcrumbs items={crumbs}/>
     <header><p className="text-sm font-semibold text-primary">{text('Sariling pag-aaral ng assessor','Assessor personal study')}</p>
       <h1 className="mt-2 text-2xl font-semibold">{examPage?(examPhase==='pretest'?text('Diagnostic pretest','Diagnostic pretest'):text('Pangwakas na pagsusulit','Chapter post-test')):lesson?title(lesson):subchapter?title(subchapter):title(chapter)}</h1>
-      <p className="mt-2">{text('Kumpletuhin ang buong kabanata at pumasa sa pagsusulit bago ang oryentasyon sa pagmamarka. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Complete the full chapter and pass its exam before scoring orientation. No practical assessment by another assessor is required.')}</p>
+      <p className="mt-2">{briefingVisible?text('Sundan ang sariling paghahanda sa Kabanata 1. Hiwalay ang pag-aaral, pagmamarka at pagsasanay sa platform.','Follow your personal Chapter 1 preparation. Study, scoring and platform practice are separate steps.'):text('Kumpletuhin ang buong kabanata at pumasa sa pagsusulit bago ang oryentasyon sa pagmamarka. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Complete the full chapter and pass its exam before scoring orientation. No practical assessment by another assessor is required.')}</p>
     </header>
     <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/qualifications`}>{text('Aking mga kwalipikasyon','My qualifications')}</Link>
-    <section className="rounded-xl border border-ink/15 p-4" aria-label={text('Progreso sa pag-aaral','Study progress')}>
+    {briefingVisible && <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`${base}/briefing`}>{text('Mga layunin at responsibilidad sa Kabanata 1','Chapter 1 objectives and responsibilities')}</Link>}
+    {briefingVisible && showPreparation ? <AssessorPreparationChecklist locale={locale} baseHref={base} input={{
+      briefingRecorded:true,pretestRecorded:pretestDone,total:study.total,completed:study.completed,missing:study.missing,
+      nextLessonHref:study.nextLesson && study.entries.some(e=>e.lesson?.id===study.nextLesson?.id&&!e.done)?href(study.nextLesson):null,
+      examAvailable,passingPercent:curriculum?.requirements.exams[0]?.passingPercent??80,attempts:currentAttempts,qualification,
+    }}/> : <section className="rounded-xl border border-ink/15 p-4" aria-label={text('Progreso sa pag-aaral','Study progress')}>
       <p>{text(`${study.completed} sa ${study.total} kinakailangang aralin ang natapos`,`${study.completed} of ${study.total} required lessons completed`)}</p>
       <progress className="mt-2 w-full" max={study.total} value={study.completed} aria-label={text('Mga araling natapos','Lessons completed')}/>
       {study.missing>0 && <p className="mt-2">{text(`${study.missing} kinakailangang aralin ang hindi pa available. Hindi pa kumpleto ang kabanata.`,`${study.missing} required lessons are not yet available. The chapter is incomplete.`)}</p>}
@@ -105,16 +133,27 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       {!examAvailable&&<p className="mt-2">{text('Hindi pa available ang kwalipikadong pagsusulit para sa kabanatang ito.','The qualifying exam for this chapter is not yet available.')}</p>}
       {posttestPassed&&posttestReady&&curriculum?.orientationAvailable&&<Link prefetch={false} className="mt-3 inline-block rounded bg-primary px-4 py-3 text-on-primary" href={`${base}/orientation`}>{text('Simulan ang oryentasyon sa pagmamarka','Start scoring orientation')}</Link>}
       {posttestPassed&&!curriculum?.orientationAvailable&&<p className="mt-2">{text('Pumasa ka sa pagsusulit. Susunod ang oryentasyon sa pagmamarka kapag available na ito.','You passed the exam. Scoring orientation is the next step when available.')}</p>}
-    </section>
+    </section>}
     {examPage?(examPhase==='posttest'&&!posttestReady
       ?<p>{text('Kumpletuhin muna ang diagnostic pretest at lahat ng aralin bago kumuha ng pangwakas na pagsusulit.','Complete the diagnostic pretest and every lesson before taking the post-test.')}</p>
       :<AssessorExam chapterId={chapter.id} phase={examPhase as 'pretest'|'posttest'} locale={en?'en':'fil'} chapterHref={base}/>)
       :examAvailable&&!pretestDone?<p>{text('Kunin muna ang diagnostic pretest bago simulan ang mga aralin.','Take the diagnostic pretest before starting the lessons.')}</p>
-      :reader??<ol className="grid gap-3">{study.entries.filter(e=>!subchapter||e.modulePosition===subchapter.position).map(e=><li key={e.key} className="rounded-xl border border-ink/15 p-4">
+      :reader??(briefingVisible && showPreparation ? <div className="space-y-4">{[...new Set(study.entries.map(e=>e.modulePosition))].map(position=>{
+        const entries=study.entries.filter(e=>e.modulePosition===position);
+        const heading=`study-subchapter-${position}`;
+        return <section key={position} aria-labelledby={heading} className="rounded-xl border border-ink/15 p-4">
+          <h2 id={heading} className="font-semibold">{en?entries[0].moduleTitle.en:entries[0].moduleTitle.fil}</h2>
+          <p className="mt-1 text-sm">{text(`${entries.filter(e=>e.done).length} sa ${entries.length} aralin ang natapos`,`${entries.filter(e=>e.done).length} of ${entries.length} lessons completed`)}</p>
+          <ol className="mt-2 space-y-2">{entries.map(e=><li key={e.key}>
+            {e.lesson?<Link prefetch={false} className="inline-flex min-h-11 items-center py-2 underline" href={href(e.lesson)}>{title(e.lesson)}</Link>:<p className="py-2">{text('Kinakailangang aralin — hindi pa available','Required lesson — not yet available')}</p>}
+            <p className="text-sm">{e.done?text('Natapos · maaaring balikan','Completed · available for review'):e.lesson?text('Hindi pa natatapos','Not completed'):text('Naghihintay ng paglalathala','Awaiting publication')}</p>
+          </li>)}</ol>
+        </section>;
+      })}</div> : <ol className="grid gap-3">{study.entries.filter(e=>!subchapter||e.modulePosition===subchapter.position).map(e=><li key={e.key} className="rounded-xl border border-ink/15 p-4">
       <p className="text-sm text-ink/70">{en?e.moduleTitle.en:e.moduleTitle.fil}</p>
       {e.lesson?<Link prefetch={false} className="mt-1 block py-2 font-medium underline" href={href(e.lesson)}>{title(e.lesson)}</Link>:<p className="mt-2">{text('Kinakailangang aralin — hindi pa available','Required lesson — not yet available')}</p>}
       <p className="text-sm">{e.done?text('Natapos','Completed'):e.lesson?text('Hindi pa natatapos','Not completed'):text('Naghihintay ng paglalathala','Awaiting publication')}</p>
-    </li>)}</ol>}
+    </li>)}</ol>)}
     {currentAttempts.length>0&&<section aria-label={text('Mga nakaraang pagsusulit','Exam history')} className="rounded-xl border border-ink/15 p-4">
       <h2 className="font-semibold">{text('Mga nakaraang pagsusulit','Exam history')}</h2>
       <ol className="mt-2 space-y-1 text-sm">{currentAttempts.map(a=><li key={a.id}>{a.phase==='pretest'?text('Diagnostic pretest','Diagnostic pretest'):text('Pangwakas na pagsusulit','Post-test')}: {a.score_percent}% {a.phase==='posttest'?(a.passed?text('· Pumasa','· Passed'):text('· Hindi pumasa','· Not passed')):''}</li>)}</ol>
