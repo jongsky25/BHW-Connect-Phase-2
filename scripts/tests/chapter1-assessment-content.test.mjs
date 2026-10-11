@@ -6,9 +6,11 @@ import { fullFormHash, loadLessonMap, validateOrientation, validateRelease } fro
 
 const root = new URL('../../', import.meta.url);
 const map = loadLessonMap(new URL('.', root).pathname);
-const draft = JSON.parse(readFileSync(new URL('content/training/day1-basic-competencies/learner-assessment-v2/orientation.json', root)));
+const orientation = JSON.parse(readFileSync(new URL('content/training/day1-basic-competencies/learner-assessment-v2/orientation.json', root)));
+const draft = { ...orientation, editorial_status: 'draft' };
 const draftBank = JSON.parse(readFileSync(new URL('content/training/day1-basic-competencies/learner-assessment-v2/draft-items.json', root)));
-const approvedOrientation = { ...draft, editorial_status: 'approved' };
+const published = JSON.parse(readFileSync(new URL('content/training/day1-basic-competencies/learner-assessment-v2/release.json', root)));
+const approvedOrientation = { ...orientation, editorial_status: 'approved' };
 const text = { en: 'Reviewed English text', fil: 'Nasuring tekstong Filipino' };
 
 function makeItem(target, lessonKey) {
@@ -44,6 +46,13 @@ function release() {
 }
 
 describe('Chapter 1 release contract', () => {
+  it('validates the reviewed release and its pinned curriculum', () => {
+    expect(validateRelease(published, { ...map, orientation })).toEqual([]);
+    expect(published.curriculum_revisions).toHaveLength(42);
+    expect(published.forms.pretest.items).toHaveLength(30);
+    expect(published.forms.posttest.items).toHaveLength(30);
+    expect(published.checkpoints.flatMap(group => [...group.first, ...group.alternates])).toHaveLength(48);
+  });
   it('keeps 108 distinct bilingual working items separate from approved content', () => {
     const items = [...draftBank.forms.pretest.items, ...draftBank.forms.posttest.items,
       ...draftBank.checkpoints.flatMap(group => [...group.first, ...group.alternates])];
