@@ -230,7 +230,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
       } else {
         // Keep the existing pretest gate. Certified learners can review without retaking tests.
         const achieved=['certified','content_completed','failed_assessment'].includes(progress?.status??'');
-        const pretestGate=!readOnly && flags.course_sessions && !achieved;
+        const pretestGate=!readOnly && (flags.course_sessions || (flags.chapter1_assessment_v2 &&
+          program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1')) && !achieved;
         const showGuide=facilitator && view!=='lesson';
         // The pretest check and the lesson content are independent reads, so
         // they share one round trip; the redirect still wins if it applies.

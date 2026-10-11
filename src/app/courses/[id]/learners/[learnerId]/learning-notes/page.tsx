@@ -10,7 +10,7 @@ export default async function LearnerNotesReviewPage({ params }: {
 }) {
   const { id, learnerId } = await params;
   const [viewer, flags, locale] = await Promise.all([getViewer(), getRequestFeatureFlags(), getLocale()]);
-  if (!flags.elearning || !flags.course_sessions) redirect("/home");
+  if (!flags.elearning || !flags.chapter1_assessment_v2) redirect("/home");
   if (!viewer.appUser || viewer.appUser.status !== "active") redirect("/login");
   if (viewer.role !== "assessor" && viewer.role !== "admin") notFound();
   const db = await createClient();
