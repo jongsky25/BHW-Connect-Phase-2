@@ -4,10 +4,10 @@ import TrainingPage from './[programId]/[[...path]]/page';
 import Catalog from '../courses/page';
 import activityCards from '../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/activities.json';
 
-const state=vi.hoisted(()=>({failing:'',role:'bhw',preview:false,status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rpcCalls:[] as string[],rows:{} as Record<string,Array<Record<string,unknown>>>}));
+const state=vi.hoisted(()=>({failing:'',role:'bhw',preview:false,v2:false,status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rpcCalls:[] as string[],rows:{} as Record<string,Array<Record<string,unknown>>>}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIRECT '+url)},notFound:()=>{throw new Error('NOT_FOUND')},useRouter:()=>({push:vi.fn(),refresh:vi.fn()})}));
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations:async()=>((key:string)=>key)}));
-vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true})}));
+vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true,chapter1_assessment_v2:state.v2})}));
 vi.mock('@/lib/supabase/app-user',()=>({getAppUser:async()=>({id:'self',role:state.role,status:'active'}),forwardedAppUser:()=>null,APP_USER_HEADER:'x-app-user',APP_FLAGS_HEADER:'x-app-flags'}));
 vi.mock('next/headers',()=>({headers:async()=>new Headers(state.preview?{'x-app-preview':'1','x-app-effective-role':'bhw'}:{}),cookies:async()=>({get:()=>undefined,getAll:()=>[]})}));
 vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({readOnly,nextLessonHref}:{readOnly:boolean;nextLessonHref?:string})=><div data-next-lesson={nextLessonHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
@@ -26,7 +26,7 @@ vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:asyn
 }})}));
 
 beforeEach(()=>{
-  state.failing='';state.role='bhw';state.preview=false;state.locale='en';state.calls=[];state.rpcCalls=[];
+  state.failing='';state.role='bhw';state.preview=false;state.v2=false;state.locale='en';state.calls=[];state.rpcCalls=[];
   state.rows={
     training_programs:[{id:'manual',content_key:'bhw-reference-manual',status:'published',title_en:'Manual',title_fil:'Manwal'}],
     training_program_chapters:[{id:'ch1',program_id:'manual',chapter_key:'chapter-1',position:0,availability:'available',course_id:'course',title_en:'BHWs and Their Barangay',title_fil:'Ang BHW at Barangay'},
@@ -197,9 +197,12 @@ describe('manual navigation',()=>{
     expect(state.calls.some(c=>c.table==='course_lesson_resume')).toBe(false);
   });
   it('admin viewing as BHW can open Chapter 1 without learner assessment access',async()=>{
-    state.role='admin';state.preview=true;
+    state.role='admin';state.preview=true;state.v2=true;
     render(await page(['chapter-1']));
     expect(screen.getByText('Preview only. Learner progress is not changed.')).toBeInTheDocument();
+    expect(screen.getByRole('heading',{name:'New Chapter 1 learning flow'})).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:'Pre-test'})).toHaveAttribute('href','/courses/course/assessment/preview?phase=pretest');
+    expect(screen.getByRole('link',{name:'Practice checkpoints'})).toHaveAttribute('href','/courses/course/assessment/preview?phase=practice');
     expect(state.rpcCalls).not.toContain('rpc_learner_assessment_state');
     expect(screen.queryByRole('link',{name:'View assessment'})).not.toBeInTheDocument();
     cleanup();

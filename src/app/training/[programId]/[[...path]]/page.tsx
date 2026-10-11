@@ -27,6 +27,7 @@ import practices from '../../../../../content/training/day1-basic-competencies/m
 import chapter1Orientation from '../../../../../content/training/day1-basic-competencies/learner-assessment-v2/orientation.json';
 import chapter1Checkpoints from '../../../../../content/training/day1-basic-competencies/learner-assessment-v2/checkpoints.json';
 import {Chapter1MajorIntroduction} from '@/components/elearning/chapter1-major-introduction';
+import {NotesMarkdown} from '@/components/elearning/notes-markdown';
 import narrationManifest from '../../../../../content/training/day1-basic-competencies/narration.json';
 import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearning/reference-narration';
 import {translationsForLesson} from '@/lib/elearning/lesson-translations';
@@ -135,6 +136,9 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
     const legacyPost=assessmentState?.final_attempts?.find(a=>a.phase==='posttest');
     const assessmentHref=(flags.chapter1_assessment_v2 || v2Attempts.length>0) && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
       ? `/courses/${course.id}/assessment` : `/courses/${course.id}?assessment=1`;
+    const previewChapter1=viewer.isPreview && role==='bhw' && flags.chapter1_assessment_v2
+      && chapter1Orientation.editorial_status==='approved' && program.content_key==='bhw-reference-manual'
+      && chapter.chapter_key==='chapter-1';
     if(!subchapter) {
       const {data:certificate,error:certificateError}=progress?.status==='certified'?await db.from('certificates').select('verification_code')
         .eq('course_id',course.id).eq('bhw_user_id',actor.id).maybeSingle():{data:null,error:null};
@@ -172,6 +176,17 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
                 {text('Tala sa pagkatuto','Learning note')}</Link></li>)}</ul>
           </section>}
         {testItems && <ChapterTestInsights lang={loc} {...testItems}/>}
+        {previewChapter1 && <section className="space-y-3 rounded-xl border border-primary/30 p-5" aria-labelledby="chapter1-preview-heading">
+          <h2 id="chapter1-preview-heading" className="text-lg font-semibold">{text('Bagong daloy ng Kabanata 1','New Chapter 1 learning flow')}</h2>
+          <p>{text('Basahin ang pambungad, pre-test, post-test at mga pagsasanay sa read-only preview. Walang sagot o progreso ang ise-save.','Review the introduction, pre-test, post-test and practice questions in a read-only preview. No answers or progress are saved.')}</p>
+          <nav className="flex flex-wrap gap-x-5 gap-y-2" aria-label={text('Mga bagong bahagi','New sections')}>
+            <Link className="underline" href={`/courses/${course.id}/assessment/preview`}>{text('Panimula at paglalagom','Introduction and recap')}</Link>
+            <Link className="underline" href={`/courses/${course.id}/assessment/preview?phase=pretest`}>{text('Pre-test','Pre-test')}</Link>
+            <Link className="underline" href={`/courses/${course.id}/assessment/preview?phase=posttest`}>{text('Post-test','Post-test')}</Link>
+            <Link className="underline" href={`/courses/${course.id}/assessment/preview?phase=practice`}>{text('Mga pagsasanay','Practice checkpoints')}</Link>
+            <Link className="underline" href={`/courses/${course.id}/assessment/preview?phase=notes`}>{text('Mga tala sa pagkatuto','Learning notes')}</Link>
+          </nav>
+        </section>}
         {program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1' && role==='assessor' &&
           <Link className="underline" href={`/courses/${course.id}/learning-notes/reviewer`}>
             {text('Mga ibinahaging tala ng nakatalagang mag-aaral','Assigned learners’ shared notes')}</Link>}
@@ -198,7 +213,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
       intro=own.length?text('Piliin ang isang maikling aralin.','Choose a short lesson.'):text('Inihahanda pa ang mga aralin para sa subchapter na ito.','Lessons for this subchapter are being prepared.');
       const lesson=path[2]?own.find(l=>l.id===path[2]):null;
       if(path[2] && !lesson)notFound();
-      const chapter1Intro=!readOnly && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved'
+      const chapter1Intro=(!readOnly || viewer.isPreview && role==='bhw') && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved'
         && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
         ? chapter1Orientation.introductions.find(item=>item.major_lesson===subchapter.position+1) : null;
       if(!lesson) {
@@ -222,8 +237,9 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           {guide ? <SubchapterFacilitatorGuide lang={loc} moduleId={subchapter.id} objectives={en?subchapter.objectives_en??[]:subchapter.objectives_fil??[]}
             view={guideView} href={moduleHref} slidesContent={lessonCards} {...guide}/> : <>
             {mine && mine.counts.total>0 && <ProgressBar counts={mine.counts} state={mine.state} locale={loc} label={text(`Progreso sa ${title(subchapter)}`,`Progress in ${title(subchapter)}`)}/>}
-            {chapter1Intro && hasBaseline && <Chapter1MajorIntroduction intro={chapter1Intro}
-              courseId={course.id} learnerId={actor.id} language={en?'en':'fil'}/>}
+            {chapter1Intro && hasBaseline && (viewer.isPreview
+              ? <section className="rounded-xl border border-ink/15 p-5"><h2 className="mb-3 text-xl font-semibold">{text(`Panimula sa Aralin ${chapter1Intro.major_lesson}`,`Introduction to Major Lesson ${chapter1Intro.major_lesson}`)}</h2><NotesMarkdown markdown={en?chapter1Intro.body_en:chapter1Intro.body_fil}/></section>
+              : <Chapter1MajorIntroduction intro={chapter1Intro} courseId={course.id} learnerId={actor.id} language={en?'en':'fil'}/>) }
             {lessonCards}
           </>}
         </>;
@@ -265,8 +281,9 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
         const checkpoint=chapter1Checkpoints.find(group=>group.after_lesson_key===lesson.lesson_key);
         content=<>
-          {chapter1Intro && <Chapter1MajorIntroduction intro={chapter1Intro}
-            courseId={course.id} learnerId={actor.id} language={en?'en':'fil'}/>}
+          {chapter1Intro && (viewer.isPreview
+            ? <section className="rounded-xl border border-ink/15 p-5"><h2 className="mb-3 text-xl font-semibold">{text(`Panimula sa Aralin ${chapter1Intro.major_lesson}`,`Introduction to Major Lesson ${chapter1Intro.major_lesson}`)}</h2><NotesMarkdown markdown={en?chapter1Intro.body_en:chapter1Intro.body_fil}/></section>
+            : <Chapter1MajorIntroduction intro={chapter1Intro} courseId={course.id} learnerId={actor.id} language={en?'en':'fil'}/>) }
           {facilitator && <nav className="flex flex-wrap gap-2" aria-label={text('Paraan ng pagtingin','View')}>
             <Link prefetch={false} className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
             <Link prefetch={false} className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
@@ -289,6 +306,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           {!readOnly && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved' && checkpoint && done.has(lesson.id) &&
             <Link className="block rounded-md border border-ink/20 p-4 underline" href={`/courses/${course.id}/practice/${checkpoint.key}`}>
               {text('Opsyonal na maikling pagsasanay','Optional checkpoint practice')} · {checkpoint.key}</Link>}
+          {previewChapter1 && checkpoint && <Link className="block rounded-md border border-ink/20 p-4 underline" href={`/courses/${course.id}/assessment/preview?phase=practice&group=${checkpoint.key}`}>
+            {text('Silipin ang maikling pagsasanay','Preview checkpoint practice')} · {checkpoint.key}</Link>}
           {!readOnly && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved' &&
             <Link className="block underline" href={`/courses/${course.id}/learning-notes?scope=lesson:${lesson.lesson_key}`}>
               {text('Opsyonal na tala sa araling ito','Optional note for this lesson')}</Link>}

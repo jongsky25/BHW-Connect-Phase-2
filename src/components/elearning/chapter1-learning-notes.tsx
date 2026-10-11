@@ -9,8 +9,8 @@ type Shared = { id: string; scope_key: string; version: number; insight: string;
   language: "en" | "fil"; shared_at: string; reviews: { status: string; reply: string; created_at: string }[] };
 type Notes = { drafts: Draft[]; shared: Shared[]; reviewer: { id: string; name: string } | null };
 
-export function Chapter1LearningNotes({ courseId, chapterHref, locale, initial, initialScope }: {
-  courseId: string; chapterHref: string; locale: string; initial: Notes; initialScope: string;
+export function Chapter1LearningNotes({ courseId, chapterHref, locale, initial, initialScope, readOnly = false }: {
+  courseId: string; chapterHref: string; locale: string; initial: Notes; initialScope: string; readOnly?: boolean;
 }) {
   const lang = locale === "en" ? "en" : "fil";
   const copy = (en: string, fil: string) => lang === "en" ? en : fil;
@@ -81,21 +81,21 @@ export function Chapter1LearningNotes({ courseId, chapterHref, locale, initial, 
         "Wala pang nakatalagang reviewer; makikita ang ibinahaging tala kapag may naitalaga na.")}</p>
     <label className="block space-y-2"><span className="font-medium">{copy("Note context", "Paksa ng tala")}</span>
       <select className="block w-full rounded-md border border-ink/25 p-2" value={scope}
-        onChange={event => selectScope(event.target.value)} disabled={busy || changed}>
+        onChange={event => selectScope(event.target.value)} disabled={readOnly || busy || changed}>
         {[...new Set(["entry", "chapter", initialScope, ...notes.drafts.map(d => d.scope_key)])].map(value =>
           <option key={value} value={value}>{value}</option>)}
       </select></label>
     <label className="block space-y-2"><span className="font-medium">{copy("What did you learn or want to understand?", "Ano ang natutuhan o nais mo pang maunawaan?")}</span>
       <textarea className="min-h-28 w-full rounded-md border border-ink/25 p-3" value={insight} maxLength={1000}
-        onChange={event => setInsight(event.target.value)} disabled={busy} />
+        onChange={event => setInsight(event.target.value)} disabled={readOnly || busy} />
       <span className="block text-xs text-ink/60">{insight.length}/1000</span></label>
     <label className="block space-y-2"><span className="font-medium">{copy("Question or lesson feedback", "Tanong o puna sa aralin")}</span>
       <textarea className="min-h-28 w-full rounded-md border border-ink/25 p-3" value={lessonFeedback} maxLength={1000}
-        onChange={event => setLessonFeedback(event.target.value)} disabled={busy} />
+        onChange={event => setLessonFeedback(event.target.value)} disabled={readOnly || busy} />
       <span className="block text-xs text-ink/60">{lessonFeedback.length}/1000</span></label>
-    <div className="flex flex-wrap gap-3"><button className={button} disabled={busy || !changed && Boolean(current)} onClick={() => void save()}>
+    <div className="flex flex-wrap gap-3"><button className={button} disabled={readOnly || busy || !changed && Boolean(current)} onClick={() => void save()}>
       {copy("Save private draft", "I-save ang pribadong draft")}</button>
-      <button className={button} disabled={busy || changed || !current} onClick={() => void share()}>
+      <button className={button} disabled={readOnly || busy || changed || !current} onClick={() => void share()}>
         {copy("Share saved version", "Ibahagi ang naka-save na bersyon")}</button></div>
     {changed && <p role="status">{copy("Unsaved changes", "May hindi pa na-save na pagbabago")}</p>}
     {message && <p role="status" className="text-success">{message}</p>}
