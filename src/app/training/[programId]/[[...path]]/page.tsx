@@ -43,7 +43,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
   const actor=viewer.appUser;
   if(!actor || actor.status!=='active')redirect('/login');
   const role=viewer.role;
-  const readOnly=role!=='bhw';
+  const readOnly=viewer.isPreview || role!=='bhw';
   // Facilitator guide: private notes, competency and the area's BHWs. RLS
   // limits every guide read to these two roles; designers keep the preview.
   const facilitator=role==='assessor'||role==='admin';
@@ -198,7 +198,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
       intro=own.length?text('Piliin ang isang maikling aralin.','Choose a short lesson.'):text('Inihahanda pa ang mga aralin para sa subchapter na ito.','Lessons for this subchapter are being prepared.');
       const lesson=path[2]?own.find(l=>l.id===path[2]):null;
       if(path[2] && !lesson)notFound();
-      const chapter1Intro=role==='bhw' && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved'
+      const chapter1Intro=!readOnly && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved'
         && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
         ? chapter1Orientation.introductions.find(item=>item.major_lesson===subchapter.position+1) : null;
       if(!lesson) {

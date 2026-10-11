@@ -4,18 +4,16 @@ import TrainingPage from './[programId]/[[...path]]/page';
 import Catalog from '../courses/page';
 import activityCards from '../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/activities.json';
 
-const state=vi.hoisted(()=>({failing:'',role:'bhw',status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rows:{} as Record<string,Array<Record<string,unknown>>>}));
+const state=vi.hoisted(()=>({failing:'',role:'bhw',preview:false,status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rpcCalls:[] as string[],rows:{} as Record<string,Array<Record<string,unknown>>>}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIRECT '+url)},notFound:()=>{throw new Error('NOT_FOUND')},useRouter:()=>({push:vi.fn(),refresh:vi.fn()})}));
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations:async()=>((key:string)=>key)}));
 vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true})}));
 vi.mock('@/lib/supabase/app-user',()=>({getAppUser:async()=>({id:'self',role:state.role,status:'active'}),forwardedAppUser:()=>null,APP_USER_HEADER:'x-app-user',APP_FLAGS_HEADER:'x-app-flags'}));
-// getViewer() (RFT B1) reads the preview headers; no preview is active in
-// these fixtures, so every lookup misses and the real appUser role wins.
-vi.mock('next/headers',()=>({headers:async()=>new Headers(),cookies:async()=>({get:()=>undefined,getAll:()=>[]})}));
+vi.mock('next/headers',()=>({headers:async()=>new Headers(state.preview?{'x-app-preview':'1','x-app-effective-role':'bhw'}:{}),cookies:async()=>({get:()=>undefined,getAll:()=>[]})}));
 vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({readOnly,nextLessonHref}:{readOnly:boolean;nextLessonHref?:string})=><div data-next-lesson={nextLessonHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
 vi.mock('@sentry/nextjs',()=>({captureException:vi.fn()}));
-vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'auth'}}}),getClaims:async()=>({data:{claims:{sub:'auth'}}})},rpc:async(name:string)=>({data:name==='rpc_learner_assessment_state'?{attempts:[],final_attempts:[]}:
-  [...new Set((state.rows.course_test_questions_current??[]).map(row=>row.course_id))].map(course_id=>({course_id})),error:null}),from:(table:string)=>{
+vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'auth'}}}),getClaims:async()=>({data:{claims:{sub:'auth'}}})},rpc:async(name:string)=>{state.rpcCalls.push(name);return {data:name==='rpc_learner_assessment_state'?{attempts:[],final_attempts:[]}:
+  [...new Set((state.rows.course_test_questions_current??[]).map(row=>row.course_id))].map(course_id=>({course_id})),error:state.preview && name==='rpc_learner_assessment_state'?{message:'BHW-only RPC'}:null}},from:(table:string)=>{
   const call={table,columns:'',filters:[] as Array<[string,unknown]>};state.calls.push(call);
   let single=false;
   const q={select:(c:string)=>{call.columns=c;return q},eq:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},is:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},in:()=>q,not:()=>q,order:()=>q,limit:()=>q,returns:()=>q,
@@ -28,7 +26,7 @@ vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:asyn
 }})}));
 
 beforeEach(()=>{
-  state.failing='';state.role='bhw';state.locale='en';state.calls=[];
+  state.failing='';state.role='bhw';state.preview=false;state.locale='en';state.calls=[];state.rpcCalls=[];
   state.rows={
     training_programs:[{id:'manual',content_key:'bhw-reference-manual',status:'published',title_en:'Manual',title_fil:'Manwal'}],
     training_program_chapters:[{id:'ch1',program_id:'manual',chapter_key:'chapter-1',position:0,availability:'available',course_id:'course',title_en:'BHWs and Their Barangay',title_fil:'Ang BHW at Barangay'},
@@ -197,6 +195,17 @@ describe('manual navigation',()=>{
     state.role='admin';render(await page());
     expect(screen.queryByRole('progressbar')).not.toBeInTheDocument();
     expect(state.calls.some(c=>c.table==='course_lesson_resume')).toBe(false);
+  });
+  it('admin viewing as BHW can open Chapter 1 without learner assessment access',async()=>{
+    state.role='admin';state.preview=true;
+    render(await page(['chapter-1']));
+    expect(screen.getByText('Preview only. Learner progress is not changed.')).toBeInTheDocument();
+    expect(state.rpcCalls).not.toContain('rpc_learner_assessment_state');
+    expect(screen.queryByRole('link',{name:'View assessment'})).not.toBeInTheDocument();
+    cleanup();
+    render(await page(['chapter-1','m1','l1']));
+    expect(screen.getByText('Admin preview')).toBeInTheDocument();
+    expect(state.rpcCalls).not.toContain('rpc_learner_assessment_state');
   });
   it('a progress load failure hides progress but keeps the manual',async()=>{
     state.failing='course_test_attempts';render(await page(['chapter-1']));
