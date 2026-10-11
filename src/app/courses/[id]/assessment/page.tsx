@@ -16,7 +16,7 @@ type AssessmentState = {
 export default async function Chapter1AssessmentPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const [viewer, flags, locale] = await Promise.all([getViewer(), getRequestFeatureFlags(), getLocale()]);
-  if (!flags.elearning || !flags.course_sessions) redirect("/home");
+  if (!flags.elearning) redirect("/home");
   if (!viewer.appUser || viewer.appUser.status !== "active") redirect("/login");
   if (viewer.role !== "bhw") notFound();
   const db = await createClient();

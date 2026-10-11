@@ -17,7 +17,7 @@ export default async function LearningNotesPage({ params, searchParams }: {
   const { id } = await params;
   const { scope } = await searchParams;
   const [viewer, flags, locale] = await Promise.all([getViewer(), getRequestFeatureFlags(), getLocale()]);
-  if (!flags.elearning || !flags.course_sessions) redirect("/home");
+  if (!flags.elearning || !flags.chapter1_assessment_v2) redirect("/home");
   if (!viewer.appUser || viewer.appUser.status !== "active") redirect("/login");
   if (viewer.role !== "bhw") notFound();
   const db = await createClient();

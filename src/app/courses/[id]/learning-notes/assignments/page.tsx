@@ -8,7 +8,7 @@ import { createClient } from "@/lib/supabase/server";
 export default async function LearningNotesAssignmentsPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const [viewer, flags, locale] = await Promise.all([getViewer(), getRequestFeatureFlags(), getLocale()]);
-  if (!flags.elearning || !flags.course_sessions) redirect("/home");
+  if (!flags.elearning || !flags.chapter1_assessment_v2) redirect("/home");
   if (!viewer.appUser || viewer.appUser.status !== "active") redirect("/login");
   if (viewer.role !== "admin") notFound();
   const db = await createClient();
