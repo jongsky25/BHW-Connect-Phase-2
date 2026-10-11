@@ -14,7 +14,8 @@ export type FeatureFlagKey =
   | "chat_conversation"
   | "ai_external"
   | "ai_gap_draft"
-  | "spot_feedback";
+  | "spot_feedback"
+  | "chapter1_assessment_v2";
 
 export type FeatureFlags = Record<FeatureFlagKey, boolean>;
 
@@ -50,4 +51,5 @@ export const FLAG_ROLE_SCOPE: Record<FeatureFlagKey, AppRole[]> = {
   ai_external: [],
   ai_gap_draft: [],
   spot_feedback: [],
+  chapter1_assessment_v2: ["bhw", "assessor"],
 };

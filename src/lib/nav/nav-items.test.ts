@@ -18,6 +18,7 @@ const ALL_OFF: FeatureFlags = {
   ai_external: false,
   ai_gap_draft: false,
   spot_feedback: false,
+  chapter1_assessment_v2: false,
 };
 
 const ALL_ON: FeatureFlags = {

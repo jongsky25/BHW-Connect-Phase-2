@@ -1,0 +1,255 @@
+"use client";
+
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { NotesMarkdown } from "@/components/elearning/notes-markdown";
+import { createClient } from "@/lib/supabase/client";
+
+type Text = { en: string; fil: string };
+type Item = { item_id: string; slot: string; stem: Text; options: { id: string; label: Text }[]; lesson_keys: string[] };
+type Response = { item_id: string; kind: "choice" | "unknown"; option_id: string | null; marked: boolean };
+type Attempt = { attempt_id: string; phase: "pretest" | "posttest"; state: "draft" | "submitted";
+  revision: number; position: number; language: "en" | "fil"; items: Item[]; responses: Response[];
+  score_percent: number | null; legacy_attempt_id: string | null };
+type Summary = { attempt_id: string; phase: "pretest" | "posttest"; state: string;
+  score_percent: number | null; legacy_attempt_id: string | null };
+type State = { attempts: Summary[]; final_attempts: { id: string; phase: string; score_percent: number }[] };
+type Orientation = { expectations: Text; overview: Text; recap: Text };
+type Stage = "entry" | "overview" | "recap" | "questions" | "review" | "result";
+
+export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, completed,
+  initialState, orientation, contentApproved }: {
+  courseId: string; chapterHref: string; locale: string; sessionId: string | null;
+  completed: boolean; initialState: State; orientation: Orientation; contentApproved: boolean;
+}) {
+  const lang = locale === "en" ? "en" : "fil";
+  const copy = (en: string, fil: string) => lang === "en" ? en : fil;
+  const [state, setState] = useState(initialState);
+  const [attempt, setAttempt] = useState<Attempt | null>(null);
+  const [stage, setStage] = useState<Stage>("entry");
+  const [position, setPosition] = useState(0);
+  const [pending, setPending] = useState<Response | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [saved, setSaved] = useState(false);
+  const pendingOperation = useRef<{ payload: string; mutationId: string } | null>(null);
+  const questionHeading = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    if (stage === "questions") questionHeading.current?.focus();
+  }, [position, stage]);
+  useEffect(() => {
+    if (!pending) return;
+    const warn = (event: BeforeUnloadEvent) => { event.preventDefault(); event.returnValue = ""; };
+    window.addEventListener("beforeunload", warn);
+    return () => window.removeEventListener("beforeunload", warn);
+  }, [pending]);
+
+  const pre = state.attempts.find(a => a.phase === "pretest" && a.state === "submitted") ??
+    state.final_attempts.find(a => a.phase === "pretest");
+  const post = state.attempts.find(a => a.phase === "posttest" && a.state === "submitted") ??
+    state.final_attempts.find(a => a.phase === "posttest");
+  const phase: "pretest" | "posttest" = pre ? "posttest" : "pretest";
+  const current = attempt?.items[position];
+  const response = pending?.item_id === current?.item_id ? pending :
+    attempt?.responses.find(r => r.item_id === current?.item_id);
+  const responded = new Set(attempt?.responses.map(r => r.item_id));
+  if (pending && attempt) responded.add(pending.item_id);
+  const unanswered = attempt?.items.filter(item => !responded.has(item.item_id)) ?? [];
+
+  async function refreshState() {
+    const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_state", { p_course_id: courseId });
+    if (requestError) throw requestError;
+    setState(data as State);
+  }
+
+  async function resume(id: string) {
+    setBusy(true); setError(null);
+    try {
+      const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_get", { p_attempt_id: id });
+      if (requestError) throw requestError;
+      const next = data as Attempt;
+      setAttempt(next); setPosition(next.position); setPending(null);
+      setStage(next.state === "submitted" ? "result" : "questions");
+    } catch {
+      setError(copy("We could not load your saved assessment. Please try again.", "Hindi makuha ang naka-save na pagtatasa. Subukan muli."));
+    } finally { setBusy(false); }
+  }
+
+  async function start() {
+    if (!contentApproved) return;
+    setBusy(true); setError(null);
+    try {
+      const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_start", {
+        p_course_id: courseId, p_phase: phase, p_session_id: sessionId,
+      });
+      if (requestError) throw requestError;
+      if ((data as { state?: string })?.state === "legacy_submitted") { await refreshState(); setStage("entry"); return; }
+      const next = data as Attempt;
+      setAttempt(next); setPosition(next.position); setStage(next.state === "submitted" ? "result" : "questions");
+      await refreshState();
+    } catch {
+      setError(copy("Assessment is temporarily unavailable. Your previous results remain available.",
+        "Pansamantalang hindi magamit ang pagtatasa. Maaari mo pa ring makita ang dati mong resulta."));
+    } finally { setBusy(false); }
+  }
+
+  async function save(next: Response, nextPosition = position) {
+    if (!attempt || attempt.state !== "draft") return false;
+    setPending(next); setSaved(false); setBusy(true); setError(null);
+    const payload = JSON.stringify({ next, nextPosition, revision: attempt.revision, lang });
+    if (pendingOperation.current?.payload !== payload) pendingOperation.current = { payload, mutationId: crypto.randomUUID() };
+    try {
+      const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_save", {
+        p_attempt_id: attempt.attempt_id, p_expected_revision: attempt.revision,
+        p_mutation_id: pendingOperation.current.mutationId, p_changes: [next],
+        p_position: nextPosition, p_language: lang,
+      });
+      if (requestError) throw requestError;
+      setAttempt(data as Attempt); setPosition(nextPosition); setPending(null); pendingOperation.current = null; setSaved(true);
+      return true;
+    } catch {
+      setError(copy("This change is not saved. Retry, or reload to compare with the saved draft.",
+        "Hindi naka-save ang pagbabagong ito. Subukan muli, o i-reload upang ihambing sa naka-save na draft."));
+      return false;
+    } finally { setBusy(false); }
+  }
+
+  async function move(nextPosition: number) {
+    if (!attempt || busy) return;
+    if (pending) { if (!await save(pending, nextPosition)) return; }
+    else {
+      setBusy(true); setSaved(false); setError(null);
+      try {
+        const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_save", {
+          p_attempt_id: attempt.attempt_id, p_expected_revision: attempt.revision,
+          p_mutation_id: crypto.randomUUID(), p_changes: [], p_position: nextPosition, p_language: lang,
+        });
+        if (requestError) throw requestError;
+        setAttempt(data as Attempt); setPosition(nextPosition); setSaved(true);
+      } catch {
+        setError(copy("Position was not saved. Retry or reload your draft.", "Hindi naka-save ang posisyon. Subukan muli o i-reload ang draft."));
+      } finally { setBusy(false); }
+    }
+  }
+
+  async function submit() {
+    if (!attempt || pending || unanswered.length || busy) return;
+    if (!window.confirm(copy("Submit all 30 answers? You cannot change them afterward.",
+      "Isumite ang lahat ng 30 sagot? Hindi na ito mababago pagkatapos."))) return;
+    setBusy(true); setError(null);
+    const client = createClient();
+    try {
+      const { error: requestError } = await client.rpc("rpc_learner_assessment_submit", {
+        p_attempt_id: attempt.attempt_id, p_expected_revision: attempt.revision,
+        p_mutation_id: crypto.randomUUID(),
+      });
+      if (requestError) throw requestError;
+      const { data, error: getError } = await client.rpc("rpc_learner_assessment_get", { p_attempt_id: attempt.attempt_id });
+      if (getError) throw getError;
+      setAttempt(data as Attempt); setStage("result"); await refreshState();
+    } catch {
+      const { data } = await client.rpc("rpc_learner_assessment_get", { p_attempt_id: attempt.attempt_id });
+      if ((data as Attempt | null)?.state === "submitted") {
+        setAttempt(data as Attempt); setStage("result"); await refreshState();
+      } else {
+        setError(copy("Submission is not confirmed. Your saved draft is still available. Please retry.",
+          "Hindi pa kumpirmado ang pagsusumite. Nariyan pa ang naka-save na draft. Subukan muli."));
+      }
+    } finally { setBusy(false); }
+  }
+
+  const button = "rounded-md border border-ink/20 px-4 py-2 text-sm font-medium focus-visible:outline-2 focus-visible:outline-primary disabled:opacity-50";
+  if (stage === "questions" && attempt && current) return (
+    <section className="space-y-5" aria-label={copy("Assessment questions", "Mga tanong sa pagtatasa")}>
+      <div role="status" aria-live="polite" className="text-sm text-ink/70">
+        {copy(`Section ${Math.floor(position / 10) + 1} of 3 · Question ${position + 1} of 30`,
+          `Bahagi ${Math.floor(position / 10) + 1} sa 3 · Tanong ${position + 1} sa 30`)} · {pending ? copy("Unsaved", "Hindi pa naka-save") : saved ? copy("Saved", "Naka-save") : copy("Saved draft", "Naka-save na draft")}
+      </div>
+      <h1 ref={questionHeading} tabIndex={-1} className="text-xl font-semibold">{current.stem[lang]}</h1>
+      <fieldset disabled={busy} className="space-y-3">
+        <legend className="sr-only">{copy("Choose one answer", "Pumili ng isang sagot")}</legend>
+        {current.options.map(option => <label key={option.id} className="flex min-h-11 items-center gap-3 rounded-md border border-ink/15 p-3">
+          <input type="radio" name={`assessment-${current.item_id}`} checked={response?.kind === "choice" && response.option_id === option.id}
+            onChange={() => void save({ item_id: current.item_id, kind: "choice", option_id: option.id, marked: response?.marked ?? false })} />
+          {option.label[lang]}
+        </label>)}
+        <label className="flex min-h-11 items-center gap-3 rounded-md border border-ink/15 p-3">
+          <input type="radio" name={`assessment-${current.item_id}`} checked={response?.kind === "unknown"}
+            onChange={() => void save({ item_id: current.item_id, kind: "unknown", option_id: null, marked: response?.marked ?? false })} />
+          {copy("I don't know yet", "Hindi ko pa alam")}
+        </label>
+      </fieldset>
+      <button className={button} disabled={busy || !response} onClick={() => response && void save({ ...response, marked: !response.marked })}>
+        {response?.marked ? copy("Remove review mark", "Alisin ang marka") : copy("Mark for review", "Markahan para balikan")}
+      </button>
+      {error && <p role="alert" className="text-danger">{error} {pending && <button className="underline" onClick={() => void save(pending)}>{copy("Retry save", "Subukang i-save muli")}</button>}</p>}
+      <nav className="flex flex-wrap gap-2" aria-label={copy("Question navigation", "Paglipat sa mga tanong")}>
+        <button className={button} disabled={busy || position === 0} onClick={() => void move(position - 1)}>{copy("Previous", "Nakaraan")}</button>
+        <button className={button} disabled={busy || position === 29} onClick={() => void move(position + 1)}>{copy("Next", "Susunod")}</button>
+        <button className={button} disabled={busy || Boolean(pending)} onClick={() => setStage("review")}>{copy("Review all", "Balikan ang lahat")}</button>
+      </nav>
+      <div className="flex flex-wrap gap-1" aria-label={copy("Jump to question", "Pumunta sa tanong")}>
+        {attempt.items.map((item, i) => <button key={item.item_id} className={button} disabled={busy}
+          aria-label={copy(`Question ${i + 1}${responded.has(item.item_id) ? ', answered' : ', unanswered'}`,
+            `Tanong ${i + 1}${responded.has(item.item_id) ? ', may sagot' : ', walang sagot'}`)}
+          aria-current={i === position ? "step" : undefined} onClick={() => void move(i)}>{i + 1}</button>)}
+      </div>
+      <Link className="underline" href={chapterHref} onClick={event => {
+        if (pending) { event.preventDefault(); setError(copy("Retry the unsaved change before leaving.", "Subukang i-save muli ang hindi pa na-save na pagbabago bago umalis.")); }
+      }}>{copy("Save and leave", "I-save at umalis")}</Link>
+    </section>
+  );
+
+  if (stage === "review" && attempt) return <section className="space-y-4">
+    <h1 className="text-2xl font-semibold">{copy("Review before submitting", "Balikan bago isumite")}</h1>
+    <p>{copy(`${unanswered.length} unanswered. Choose an answer or “I don't know yet” for every question.`,
+      `${unanswered.length} ang walang sagot. Pumili ng sagot o “Hindi ko pa alam” sa bawat tanong.`)}</p>
+    <ol className="grid grid-cols-5 gap-2 sm:grid-cols-10">{attempt.items.map((item, i) => {
+      const answer = attempt.responses.find(r => r.item_id === item.item_id);
+      return <li key={item.item_id}><button className={button} onClick={() => { setPosition(i); setStage("questions"); }}>
+        {i + 1}<span className="sr-only">: {answer?.kind === "unknown" ? copy("unknown", "hindi alam") : answer ? copy("answered", "may sagot") : copy("unanswered", "walang sagot")}{answer?.marked ? `, ${copy("marked", "minarkahan")}` : ""}</span>
+      </button></li>;
+    })}</ol>
+    {error && <p role="alert" className="text-danger">{error}</p>}
+    <button className={button} disabled={busy || unanswered.length > 0} onClick={() => void submit()}>{copy("Submit assessment", "Isumite ang pagtatasa")}</button>
+    <button className={button} onClick={() => setStage("questions")}>{copy("Back to questions", "Bumalik sa mga tanong")}</button>
+  </section>;
+
+  if (stage === "result" && attempt) return <section className="space-y-4">
+    <h1 className="text-2xl font-semibold">{copy("Assessment submitted", "Naisumite ang pagtatasa")}</h1>
+    <p>{copy("Score", "Iskor")}: {attempt.score_percent}%</p>
+    {attempt.phase === "pretest" ? <p>{copy("This is your starting point. Study the chapter to see what you can revisit; answer keys are not shown for the baseline.",
+      "Ito ang iyong panimulang punto. Pag-aralan ang kabanata upang makita ang dapat balikan; hindi ipinapakita ang mga tamang sagot sa baseline.")}</p> :
+      attempt.legacy_attempt_id && <Link className="underline" href={`/courses/${courseId}/assessment/review/${attempt.legacy_attempt_id}`}>
+        {copy("Review my post-test", "Balikan ang aking post-test")}</Link>}
+    <Link className="block underline" href={chapterHref}>{copy("Back to chapter", "Bumalik sa kabanata")}</Link>
+  </section>;
+
+  const draft = state.attempts.find(a => a.phase === phase && a.state === "draft");
+  return <section className="space-y-5">
+    <h1 className="text-2xl font-semibold">{copy("Chapter 1 assessment", "Pagtatasa sa Kabanata 1")}</h1>
+    {pre && <p>{copy("Baseline submitted", "Naisumite na ang baseline")}: {pre.score_percent}%</p>}
+    {post && <p>{copy("Post-test submitted", "Naisumite na ang post-test")}: {post.score_percent}%</p>}
+    {state.attempts.filter(a => a.state === "submitted" && a.phase === "posttest" && a.legacy_attempt_id).map(a =>
+      <Link key={a.attempt_id} className="block underline" href={`/courses/${courseId}/assessment/review/${a.legacy_attempt_id}`}>
+        {copy("Review my post-test", "Balikan ang aking post-test")}</Link>)}
+    {state.final_attempts.filter(a => a.phase === "posttest" &&
+      !state.attempts.some(versioned => versioned.legacy_attempt_id === a.id)).map(a =>
+      <Link key={a.id} className="block underline" href={`/courses/${courseId}/assessment/review/${a.id}`}>
+        {copy("Review historical post-test", "Balikan ang dating post-test")}</Link>)}
+    {draft ? <button className={button} disabled={busy} onClick={() => void resume(draft.attempt_id)}>
+      {copy(`Resume ${phase}`, `Ipagpatuloy ang ${phase}`)}</button> : !post && (phase === "pretest" || completed) ? <>
+      {stage === "entry" && !pre && <><NotesMarkdown markdown={orientation.expectations[lang]} />
+        <button className={button} onClick={() => setStage("overview")}>{copy("Continue to chapter overview", "Magpatuloy sa buod ng kabanata")}</button></>}
+      {stage === "overview" && !pre && <><NotesMarkdown markdown={orientation.overview[lang]} />
+        <button className={button} disabled={busy || !contentApproved} onClick={() => void start()}>{copy("Begin baseline", "Simulan ang baseline")}</button></>}
+      {stage === "entry" && pre && <><NotesMarkdown markdown={orientation.recap[lang]} />
+        <button className={button} onClick={() => setStage("recap")}>{copy("Continue to post-test", "Magpatuloy sa post-test")}</button></>}
+      {stage === "recap" && pre && <button className={button} disabled={busy || !contentApproved} onClick={() => void start()}>{copy("Begin post-test", "Simulan ang post-test")}</button>}
+    </> : !post && <p>{copy("Complete the chapter before the post-test.", "Tapusin muna ang kabanata bago ang post-test.")}</p>}
+    {!contentApproved && !draft && !post && <p role="status">{copy("The new assessment content is awaiting review.", "Hinihintay pa ang pagsusuri ng nilalaman ng bagong pagtatasa.")}</p>}
+    {error && <p role="alert" className="text-danger">{error}</p>}
+    <Link className="block underline" href={chapterHref}>{copy("Back to chapter", "Bumalik sa kabanata")}</Link>
+  </section>;
+}

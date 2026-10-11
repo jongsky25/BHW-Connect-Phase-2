@@ -39,6 +39,7 @@ const FLAGS: FeatureFlags = {
   ai_external: false,
   ai_gap_draft: false,
   spot_feedback: false,
+      chapter1_assessment_v2: false,
 };
 
 function show(role: AppUser["role"] = "bhw") {

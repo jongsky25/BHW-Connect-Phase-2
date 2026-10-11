@@ -55,7 +55,7 @@ export async function loadManualProgress(
     courseIds.length
       ? db.from("certificates").select("course_id,verification_code").eq("bhw_user_id", bhwUserId).in("course_id", courseIds)
       : none,
-    courseIds.length ? db.from("course_test_questions_current").select("course_id").in("course_id", courseIds) : none,
+    courseIds.length ? db.rpc("rpc_course_test_bank_available", { p_course_ids: courseIds }) : none,
   ]);
   if (courses.error) fail("chapter courses");
   if (modules.error) fail("subchapters");
@@ -97,7 +97,7 @@ export async function loadManualProgress(
       resumes: resumes.data ?? [],
       attempts: attempts.data ?? [],
       certificates: certificates.data ?? [],
-      questionBankCourseIds: [...new Set((banks.data ?? []).map((b) => b.course_id))],
+      questionBankCourseIds: [...new Set(((banks.data ?? []) as Array<{ course_id: string }>).map((b) => b.course_id))],
     }),
   );
 }

@@ -112,10 +112,10 @@ export function TrainingSessionDetail({
   }, [moduleProgress]);
 
   const attemptsByBhwId = useMemo(() => {
-    const map = new Map<string, { pretest: number | null; posttest: number | null }>();
+    const map = new Map<string, { pretest: SessionTestAttempt | null; posttest: SessionTestAttempt | null }>();
     for (const a of testAttempts) {
       const entry = map.get(a.bhw_user_id) ?? { pretest: null, posttest: null };
-      entry[a.phase] = a.score_percent;
+      entry[a.phase] = a;
       map.set(a.bhw_user_id, entry);
     }
     return map;
@@ -373,8 +373,9 @@ export function TrainingSessionDetail({
                   const progress = progressByBhwId.get(enrollment.bhw_user_id);
                   const completed = progress ? (completedCountByProgressId.get(progress.id) ?? 0) : 0;
                   const scores = attemptsByBhwId.get(enrollment.bhw_user_id) ?? { pretest: null, posttest: null };
-                  const delta =
-                    scores.pretest != null && scores.posttest != null ? scores.posttest - scores.pretest : null;
+                  const delta = scores.pretest && scores.posttest &&
+                    scores.pretest.generation !== "v2" && scores.posttest.generation !== "v2"
+                    ? scores.posttest.score_percent - scores.pretest.score_percent : null;
 
                   return (
                     <tr key={enrollment.id} className="border-b border-ink/10">
@@ -399,9 +400,9 @@ export function TrainingSessionDetail({
                       <td className="px-3 py-3 text-sm text-ink">
                         {completed}/{modules.length}
                       </td>
-                      <td className="px-3 py-3 text-sm text-ink">{scores.pretest != null ? `${scores.pretest}%` : "—"}</td>
+                      <td className="px-3 py-3 text-sm text-ink">{scores.pretest != null ? `${scores.pretest.score_percent}%` : "—"}</td>
                       <td className="px-3 py-3 text-sm text-ink">
-                        {scores.posttest != null ? `${scores.posttest}%` : "—"}
+                        {scores.posttest != null ? `${scores.posttest.score_percent}%` : "—"}
                       </td>
                       <td className="px-3 py-3 text-sm text-ink">
                         {delta != null ? `${delta > 0 ? "+" : ""}${delta}%` : "—"}
@@ -489,6 +490,14 @@ export function TrainingSessionDetail({
         <h2 className="text-lg font-semibold text-ink">{t("summaryHeading")}</h2>
         {cohortSummary.pretestCount === 0 && cohortSummary.posttestCount === 0 ? (
           <p className="text-sm text-ink/60">{t("noScoresYet")}</p>
+        ) : testAttempts.some(a => a.generation === "v2") ? (
+          <div className="space-y-2 text-sm">
+            <p>{locale === "en" ? "Scores are grouped by form. Change is unavailable until the forms are reviewed for comparability." :
+              "Pinangkat ang mga iskor ayon sa form. Hindi pa ipinapakita ang pagbabago hangga't hindi nasusuri ang pagiging maihahambing ng mga form."}</p>
+            <ul className="space-y-1">{cohortSummary.groups.map(group => <li key={`${group.phase}:${group.label}`}>
+              {group.phase === "pretest" ? t("summaryPretestAvgLabel") : t("summaryPosttestAvgLabel")}: {group.label} · {group.average.toFixed(1)}% · n={group.count}
+            </li>)}</ul>
+          </div>
         ) : (
           <dl className="grid grid-cols-1 gap-3 sm:grid-cols-3">
             <div>

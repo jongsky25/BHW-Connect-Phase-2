@@ -28,6 +28,7 @@ describe("getFeatureFlags", () => {
         { key: "ai_external", enabled: true },
         { key: "ai_gap_draft", enabled: true },
         { key: "spot_feedback", enabled: true },
+        { key: "chapter1_assessment_v2", enabled: true },
       ]),
     );
     expect(flags).toEqual({
@@ -45,6 +46,7 @@ describe("getFeatureFlags", () => {
       ai_external: true,
       ai_gap_draft: true,
       spot_feedback: true,
+      chapter1_assessment_v2: true,
     });
   });
 
@@ -64,6 +66,7 @@ describe("getFeatureFlags", () => {
       ai_external: false,
       ai_gap_draft: false,
       spot_feedback: false,
+      chapter1_assessment_v2: false,
     };
     expect(await getFeatureFlags(stubClient([]))).toEqual(expected);
     expect(await getFeatureFlags(stubClient(null))).toEqual(expected);
@@ -89,6 +92,7 @@ describe("getFeatureFlags", () => {
       ai_external: false,
       ai_gap_draft: false,
       spot_feedback: false,
+      chapter1_assessment_v2: false,
     });
   });
 

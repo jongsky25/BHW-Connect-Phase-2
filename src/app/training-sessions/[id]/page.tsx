@@ -107,7 +107,7 @@ export default async function TrainingSessionDetailPage({
   if(activityError) throw new Error("Unable to load session activities");
   const enrolledBhwIds = (enrollments ?? []).map((e) => e.bhw_user_id);
 
-  const [{ data: courseProgress }, { data: testAttempts }, { data: bhwCandidates }] = await Promise.all([
+  const [{ data: courseProgress }, { data: testAttempts }, { data: bhwCandidates }, { data: v2Forms, error: formsError }] = await Promise.all([
     enrolledBhwIds.length > 0
       ? supabase
           .from("course_progress")
@@ -117,7 +117,7 @@ export default async function TrainingSessionDetailPage({
       : Promise.resolve({ data: [] as { id: string; bhw_user_id: string }[] }),
     supabase
       .from("course_test_attempts")
-      .select("bhw_user_id, phase, score_percent")
+      .select("id, bhw_user_id, phase, score_percent")
       .eq("course_id", session.course_id)
       .eq("session_id", id)
       .returns<SessionTestAttempt[]>(),
@@ -128,7 +128,15 @@ export default async function TrainingSessionDetailPage({
       .eq("status", "active")
       .order("full_name")
       .returns<BhwOption[]>(),
+    supabase.rpc("rpc_learner_assessment_session_forms", { p_session_id: id }),
   ]);
+  if (formsError) throw new Error("Unable to load assessment form metadata");
+  const formByAttempt = new Map(((v2Forms ?? []) as Array<{final_attempt_id:string;form_id:string;release_id:string}>).map(row => [row.final_attempt_id, row]));
+  const versionedAttempts = (testAttempts ?? []).map(row => {
+    const form = row.id ? formByAttempt.get(row.id) : undefined;
+    return form ? {...row, generation: "v2" as const, form_id: form.form_id, release_id: form.release_id} :
+      {...row, generation: "legacy" as const};
+  });
 
   const progressIds = (courseProgress ?? []).map((p) => p.id);
   const { data: moduleProgress } =
@@ -153,7 +161,7 @@ export default async function TrainingSessionDetailPage({
       initialActivityRuns={activityRuns ?? []}
       courseProgress={courseProgress ?? []}
       moduleProgress={moduleProgress ?? []}
-      testAttempts={testAttempts ?? []}
+      testAttempts={versionedAttempts}
       bhwCandidates={availableCandidates}
       locale={locale}
     />
