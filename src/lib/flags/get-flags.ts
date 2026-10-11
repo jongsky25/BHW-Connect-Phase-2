@@ -25,6 +25,7 @@ export const DEFAULT_FLAGS: FeatureFlags = {
   ai_external: false,
   ai_gap_draft: false,
   spot_feedback: false,
+  chapter1_assessment_v2: false,
 };
 
 type FlagRow = { key: string; enabled: boolean; disabled_roles?: string[] | null };

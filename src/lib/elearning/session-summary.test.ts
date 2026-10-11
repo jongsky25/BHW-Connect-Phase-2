@@ -42,4 +42,21 @@ describe("computeCohortSummary", () => {
     expect(summary.deltaAverage).toBe(30);
     expect(summary.pairedCount).toBe(1);
   });
+
+  it("keeps mixed legacy and unvalidated v2 forms separate without reporting gain", () => {
+    const summary = computeCohortSummary([
+      { bhw_user_id: "legacy", phase: "pretest", score_percent: 40, generation: "legacy" },
+      { bhw_user_id: "legacy", phase: "posttest", score_percent: 70, generation: "legacy" },
+      { bhw_user_id: "new", phase: "pretest", score_percent: 50, generation: "v2", release_id: "r1", form_id: "pre-r1" },
+      { bhw_user_id: "new", phase: "posttest", score_percent: 80, generation: "v2", release_id: "r1", form_id: "post-r1" },
+    ]);
+    expect(summary.deltaAverage).toBeNull();
+    expect(summary.pretestAverage).toBeNull();
+    expect(summary.posttestAverage).toBeNull();
+    expect(summary.pairedCount).toBe(0);
+    expect(summary.groups).toEqual(expect.arrayContaining([
+      { label: "r1 / pre-r1", phase: "pretest", count: 1, average: 50 },
+      { label: "r1 / post-r1", phase: "posttest", count: 1, average: 80 },
+    ]));
+  });
 });

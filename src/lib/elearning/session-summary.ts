@@ -1,9 +1,13 @@
 import type { TestPhase } from "./types";
 
 export type SessionTestAttempt = {
+  id?: string;
   bhw_user_id: string;
   phase: TestPhase;
   score_percent: number;
+  generation?: "legacy" | "v2";
+  form_id?: string;
+  release_id?: string;
 };
 
 export type CohortSummary = {
@@ -17,6 +21,7 @@ export type CohortSummary = {
   pretestCount: number;
   posttestCount: number;
   pairedCount: number;
+  groups: { label: string; phase: TestPhase; count: number; average: number }[];
 };
 
 // §INC-23 session summary: cohort average pretest vs posttest, computed
@@ -27,24 +32,38 @@ export type CohortSummary = {
 export function computeCohortSummary(attempts: SessionTestAttempt[]): CohortSummary {
   const pretest = attempts.filter((a) => a.phase === "pretest");
   const posttest = attempts.filter((a) => a.phase === "posttest");
+  const containsV2 = attempts.some(a => a.generation === "v2");
 
   const average = (rows: SessionTestAttempt[]) =>
     rows.length === 0 ? null : rows.reduce((sum, r) => sum + r.score_percent, 0) / rows.length;
 
-  const posttestByBhw = new Map(posttest.map((r) => [r.bhw_user_id, r.score_percent]));
+  const posttestByBhw = new Map(posttest.map((r) => [r.bhw_user_id, r]));
   const deltas = pretest
     .map((r) => {
       const post = posttestByBhw.get(r.bhw_user_id);
-      return post === undefined ? null : post - r.score_percent;
+      return post === undefined || r.generation === "v2" || post.generation === "v2"
+        ? null : post.score_percent - r.score_percent;
     })
     .filter((d): d is number => d !== null);
 
+  const grouped = new Map<string, SessionTestAttempt[]>();
+  for (const row of attempts) {
+    const label = row.generation === "v2" ? `${row.release_id ?? "v2"} / ${row.form_id ?? "form unknown"}` : "Legacy form";
+    const key = `${row.phase}:${label}`;
+    grouped.set(key, [...(grouped.get(key) ?? []), row]);
+  }
+  const groups = [...grouped.entries()].map(([key, rows]) => ({
+    label: key.slice(key.indexOf(":") + 1), phase: rows[0].phase, count: rows.length,
+    average: average(rows)!,
+  }));
+
   return {
-    pretestAverage: average(pretest),
-    posttestAverage: average(posttest),
-    deltaAverage: deltas.length === 0 ? null : deltas.reduce((sum, d) => sum + d, 0) / deltas.length,
+    pretestAverage: containsV2 ? null : average(pretest),
+    posttestAverage: containsV2 ? null : average(posttest),
+    deltaAverage: containsV2 || deltas.length === 0 ? null : deltas.reduce((sum, d) => sum + d, 0) / deltas.length,
     pretestCount: pretest.length,
     posttestCount: posttest.length,
-    pairedCount: deltas.length,
+    pairedCount: containsV2 ? 0 : deltas.length,
+    groups,
   };
 }

@@ -102,16 +102,14 @@ export default async function CourseDetailPage({
           .eq("course_id", id)
           .maybeSingle<{ id: string; lesson_density: LessonDensity }>()
       : Promise.resolve({ data: null }),
-    flags.course_sessions
+    flags.course_sessions && appUser.role === "bhw"
       ? supabase
-          .from("course_test_questions_current")
-          .select(
-            "id, course_id, position, prompt_fil, prompt_en, options, correct_option_index",
-          )
-          .eq("course_id", id)
-          .order("position")
-          .returns<CourseTestQuestion[]>()
-      : Promise.resolve({ data: [] as CourseTestQuestion[] }),
+          .rpc("rpc_course_test_question_delivery", { p_course_id: id })
+          .then(({data,error})=>({data:data as CourseTestQuestion[] | null,error}))
+      : flags.course_sessions ? supabase.from("course_test_questions_current")
+          .select("id,course_id,position,prompt_fil,prompt_en,options")
+          .eq("course_id", id).order("position").returns<CourseTestQuestion[]>()
+        : Promise.resolve({ data: [] as CourseTestQuestion[] }),
     flags.course_sessions
       ? supabase
           .from("course_test_attempts")
@@ -131,6 +129,12 @@ export default async function CourseDetailPage({
   ]);
 
   const manualHref=mapping&&program?`/training/${mapping.program_id}/${mapping.chapter_key}`:null;
+  if (mapping?.chapter_key === 'chapter-1' && appUser.role === 'bhw') {
+    const {data:v2State,error:v2Error}=await supabase.rpc('rpc_learner_assessment_state',{p_course_id:id});
+    if(v2Error)throw new Error('Unable to load assessment state');
+    const v2Attempts=(v2State as {attempts?:unknown[]}|null)?.attempts??[];
+    if(flags.chapter1_assessment_v2 || v2Attempts.length>0)redirect(`/courses/${id}/assessment`);
+  }
   if(manualHref && mapping?.chapter_key==='chapter-3')redirect(manualHref);
   if(manualHref && (!assessment || appUser.role!=='bhw'))redirect(manualHref);
 

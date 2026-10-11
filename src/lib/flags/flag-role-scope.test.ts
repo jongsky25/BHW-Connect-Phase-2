@@ -9,7 +9,7 @@ import { FLAG_ROLE_SCOPE, type FeatureFlagKey } from "./types";
 // silently drift apart.
 const MIGRATION_PATH = join(
   __dirname,
-  "../../../supabase/migrations/20261008000000_spot_feedback.sql",
+  "../../../supabase/migrations/20261011022752_chapter1_assessment_v2_flag.sql",
 );
 
 function parseFlagRoleScopeSql(sql: string): Record<string, string[]> {
@@ -19,7 +19,7 @@ function parseFlagRoleScopeSql(sql: string): Record<string, string[]> {
   }
   const body = match[1];
   const scope: Record<string, string[]> = {};
-  const lineRe = /when\s+'([a-z_]+)'\s+then\s+array\[([^\]]*)\]/g;
+  const lineRe = /when\s+'([a-z_0-9]+)'\s+then\s+array\[([^\]]*)\]/g;
   let lineMatch: RegExpExecArray | null;
   while ((lineMatch = lineRe.exec(body))) {
     const [, key, rolesRaw] = lineMatch;
@@ -64,6 +64,7 @@ describe("FLAG_ROLE_SCOPE", () => {
       "ai_external",
       "ai_gap_draft",
       "spot_feedback",
+      "chapter1_assessment_v2",
     ];
     for (const key of keys) {
       expect(FLAG_ROLE_SCOPE[key]).toBeDefined();

@@ -1,0 +1,15 @@
+# Chapter 1 learner assessment source
+
+`orientation.json` contains the complete bilingual opening, overview, nine major-lesson introductions, and recap extracted from the planning package. Its `editorial_status` remains `draft` until a content owner reviews it against the approved published lesson revisions. It is not a released learner asset.
+
+`draft-items.json` is a 108-item working bank generated from `draft-question-seeds.mjs` by `node scripts/chapter1-assessment-draft.mjs`. It has 60 paired form items and 48 checkpoint items, all marked `draft`. The questions, answer choices, keys, translations and explanations need item-by-item editorial review; checkpoint alternatives especially need tailoring to each situation. The generic distractor explanations are placeholders. Do not copy this file into `release.json` or present it to learners as approved guidance.
+
+Approved forms and checkpoints are deliberately absent. The Chapter 1 v2 switch defaults off. Do not activate it or import a form until all 108 distinct bilingual items, 42 pinned lesson revisions, content and policy reviews, and the release manifest have passed `node scripts/chapter1-assessment-check.mjs` and the destination curriculum has been reconciled. The existing `test-questions.json` remains the assessor qualification source and must retain at least 38 questions.
+
+The future `release.json` contract is enforced by `scripts/lib/chapter1-assessment-content.mjs`. It has `release_id`, `blueprint_id`, `source_commit`, fixed `program_key`/`chapter_key`, `publication_status: "approved"`, `comparability_status: "unvalidated"`, a 42-entry `curriculum_revisions` array (`lesson_key`, `revision_id`, `sha256`), two forms under `forms.pretest` and `forms.posttest`, and twelve `checkpoints`.
+
+Each form has a unique `form_id`, 30 ordered `items`, and a SHA-256 `hash` of `JSON.stringify(items)`. Each item has a UUID `item_id`, stable `editorial_key`, integer `version`, `target` slot (`T01`–`T30`), bilingual `stem` and `rationale`, three stable option IDs with bilingual labels and distractor rationales, `correct_option_id`, linked `lesson_keys`, `source`, `reviewer`, and `review_status: "approved"`. A safety or privacy sensitive item sets `safety_privacy_review_required` and names its reviewer. The two forms must use different item IDs. Each checkpoint uses its mapped `G01`–`G12` key, `after_lesson_key`, two `first` items and two `alternates`; checkpoint items follow the same schema with the group as `target`.
+
+The private SQL schema stores immutable forms and exact attempt snapshots. It is not a content approval mechanism. Schema validity cannot establish correct clinical guidance, bilingual meaning, fairness, or form comparability.
+
+The scoped course-progress reset removes v2 assessment attempts, enrollments, in-progress practice, and unshared learning-note drafts. It preserves completed practice and shared note versions with their replies as learner history; a draft with shared versions remains because those versions refer to it. Account deletion follows the existing user foreign-key cascade. No new retention period is introduced.

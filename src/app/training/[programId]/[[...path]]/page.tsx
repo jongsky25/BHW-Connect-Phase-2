@@ -24,6 +24,9 @@ import communication from '../../../../../content/training/day1-basic-competenci
 import problems from '../../../../../content/training/day1-basic-competencies/modules/07-problema/module.json';
 import safety from '../../../../../content/training/day1-basic-competencies/modules/08-osh/module.json';
 import practices from '../../../../../content/training/day1-basic-competencies/modules/09-sustainable-practices/module.json';
+import chapter1Orientation from '../../../../../content/training/day1-basic-competencies/learner-assessment-v2/orientation.json';
+import chapter1Checkpoints from '../../../../../content/training/day1-basic-competencies/learner-assessment-v2/checkpoints.json';
+import {NotesMarkdown} from '@/components/elearning/notes-markdown';
 import narrationManifest from '../../../../../content/training/day1-basic-competencies/narration.json';
 import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearning/reference-narration';
 import {translationsForLesson} from '@/lib/elearning/lesson-translations';
@@ -123,7 +126,15 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
     const done=new Set(completed?.map(p=>p.lesson_id));
     const subchapter=path[1]?modules?.find(m=>m.id===path[1]):null;
     if(path[1] && !subchapter)notFound();
-    const assessmentHref=`/courses/${course.id}?assessment=1`;
+    const v2State=!readOnly && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
+      ? await db.rpc('rpc_learner_assessment_state',{p_course_id:course.id}) : {data:null,error:null};
+    if(v2State.error)throw new Error('Unable to load assessment state');
+    const assessmentState=v2State.data as {attempts?:Array<{phase:string;state:string;legacy_attempt_id:string|null}>;final_attempts?:Array<{id:string;phase:string}>}|null;
+    const v2Attempts=assessmentState?.attempts??[];
+    const v2Post=v2Attempts.find(a=>a.phase==='posttest' && a.state==='submitted' && a.legacy_attempt_id);
+    const legacyPost=assessmentState?.final_attempts?.find(a=>a.phase==='posttest');
+    const assessmentHref=(flags.chapter1_assessment_v2 || v2Attempts.length>0) && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
+      ? `/courses/${course.id}/assessment` : `/courses/${course.id}?assessment=1`;
     if(!subchapter) {
       const {data:certificate,error:certificateError}=progress?.status==='certified'?await db.from('certificates').select('verification_code')
         .eq('course_id',course.id).eq('bhw_user_id',actor.id).maybeSingle():{data:null,error:null};
@@ -151,12 +162,32 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         {program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1' && [communication,problems,safety,practices].filter(m=>!modules?.some(row=>row.position===m.position)).map(m=><div key={m.id} className="rounded-xl border border-ink/15 p-5">
           <h2 className="text-lg font-semibold">1.{m.position+1} {title(m)}</h2><div className="mt-2"><StatusChip state="unavailable" locale={loc}/></div>
         </div>)}</div>
+        {!readOnly && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved' && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1' &&
+          <section className="space-y-3 rounded-xl border border-ink/15 p-5"><h2 className="font-semibold">{text('Opsyonal na pagsasanay','Optional practice')}</h2>
+            <ul className="grid gap-2">{chapter1Checkpoints.filter(group=>{
+              const boundary=lessons?.find(l=>l.lesson_key===group.after_lesson_key);
+              return boundary && done.has(boundary.id);
+            }).map(group=><li key={group.key}><Link className="underline" href={`/courses/${course.id}/practice/${group.key}`}>
+              {group.key} · {group.title_en}</Link> · <Link className="underline" href={`/courses/${course.id}/learning-notes?scope=group:${group.key}`}>
+                {text('Tala sa pagkatuto','Learning note')}</Link></li>)}</ul>
+          </section>}
         {testItems && <ChapterTestInsights lang={loc} {...testItems}/>}
+        {program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1' && role==='assessor' &&
+          <Link className="underline" href={`/courses/${course.id}/learning-notes/reviewer`}>
+            {text('Mga ibinahaging tala ng nakatalagang mag-aaral','Assigned learners’ shared notes')}</Link>}
+        {program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1' && role==='admin' &&
+          <Link className="underline" href={`/courses/${course.id}/learning-notes/assignments`}>
+            {text('Magtalaga ng reviewer sa tala','Assign learning note reviewers')}</Link>}
         {readOnly?<p>{text('Preview lamang. Hindi binabago ang progreso ng mga mag-aaral.','Preview only. Learner progress is not changed.')}</p>:chapter.chapter_key==='chapter-3'?null:
           <section className="rounded-xl border border-ink/15 p-5" aria-label={text('Pagtatasa at sertipiko','Assessment and certificate')}>
             <h2 className="font-semibold">{text('Pagtatasa at sertipiko ng kabanatang ito','This chapter’s assessment and certificate')}</h2>
-            {certificate?<><p className="my-2">{text('Sertipikado ka na. Maaari mong balikan ang mga aralin nang hindi nawawala ang iyong sertipiko.','You are certified. You can review lessons without losing your certificate.')}</p><Link prefetch={false} className="underline" href={`/certificates/${certificate.verification_code}`}>{text('Tingnan ang sertipiko','View certificate')}</Link></>:
+            {certificate?<><p className="my-2">{text('Sertipikado ka na. Maaari mong balikan ang mga aralin nang hindi nawawala ang iyong sertipiko.','You are certified. You can review lessons without losing your certificate.')}</p><Link prefetch={false} className="underline" href={`/certificates/${certificate.verification_code}`}>{text('Tingnan ang sertipiko','View certificate')}</Link>
+              {v2Post && <Link prefetch={false} className="ml-4 underline" href={`/courses/${course.id}/assessment/review/${v2Post.legacy_attempt_id}`}>{text('Balikan ang aking post-test','Review my post-test')}</Link>}
+              {legacyPost && !v2Post && <Link prefetch={false} className="ml-4 underline" href={`/courses/${course.id}/assessment/review/${legacyPost.id}`}>{text('Balikan ang dating post-test','Review historical post-test')}</Link>}</>:
               <Link prefetch={false} className="mt-3 inline-block underline" href={assessmentHref}>{text('Tingnan ang pagtatasa','View assessment')}</Link>}
+            {!certificate && legacyPost && !v2Post && <Link prefetch={false} className="ml-4 underline" href={`/courses/${course.id}/assessment/review/${legacyPost.id}`}>{text('Balikan ang dating post-test','Review historical post-test')}</Link>}
+            {flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved' && <Link className="ml-4 underline" href={`/courses/${course.id}/learning-notes`}>
+              {text('Aking mga tala sa pagkatuto','My learning notes')}</Link>}
           </section>}
       </>;
     } else {
@@ -181,10 +212,20 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
             {!readOnly && <LessonStatus state={started.get(l.id)??(done.has(l.id)?'completed':'not_started')} locale={loc}/>}
           </p>
         </Link></li>)}</ol>;
+        const chapter1Intro=flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved'
+          && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
+          ? chapter1Orientation.introductions.find(item=>item.major_lesson===subchapter.position+1) : null;
+        const hasBaseline=readOnly || ['certified','content_completed','failed_assessment'].includes(progress?.status??'')
+          || Boolean((await db.from('course_test_attempts').select('id').eq('course_id',course.id)
+            .eq('bhw_user_id',actor.id).eq('phase','pretest').limit(1)).data?.length);
         content=<>
           {guide ? <SubchapterFacilitatorGuide lang={loc} moduleId={subchapter.id} objectives={en?subchapter.objectives_en??[]:subchapter.objectives_fil??[]}
             view={guideView} href={moduleHref} slidesContent={lessonCards} {...guide}/> : <>
             {mine && mine.counts.total>0 && <ProgressBar counts={mine.counts} state={mine.state} locale={loc} label={text(`Progreso sa ${title(subchapter)}`,`Progress in ${title(subchapter)}`)}/>}
+            {chapter1Intro && hasBaseline && <section className="rounded-xl border border-ink/15 p-5" aria-labelledby="major-introduction">
+              <h2 id="major-introduction" className="mb-3 text-xl font-semibold">{text(`Panimula sa Aralin ${chapter1Intro.major_lesson}`,`Introduction to Major Lesson ${chapter1Intro.major_lesson}`)}</h2>
+              <NotesMarkdown markdown={en?chapter1Intro.body_en:chapter1Intro.body_fil}/>
+            </section>}
             {lessonCards}
           </>}
         </>;
@@ -196,7 +237,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         // The pretest check and the lesson content are independent reads, so
         // they share one round trip; the redirect still wins if it applies.
         const [bank,attempt,revisionResult,resumeResult,notes,activityNotes]=await Promise.all([
-          pretestGate?db.from('course_test_questions_current').select('id').eq('course_id',course.id).limit(1):Promise.resolve({data:null,error:null}),
+          pretestGate?db.rpc('rpc_course_test_bank_available',{p_course_ids:[course.id]}):Promise.resolve({data:null,error:null}),
           pretestGate?db.from('course_test_attempts').select('id').eq('course_id',course.id).eq('bhw_user_id',actor.id).eq('phase','pretest').maybeSingle():Promise.resolve({data:null,error:null}),
           db.from('course_lesson_revisions').select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,featured_asset_id,created_by,created_at')
             .eq('id',lesson.published_revision_id!).single<CourseLessonRevision>(),
@@ -223,6 +264,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         }:undefined;
         const adjacentHref=(id:string)=>`${moduleHref}/${id}${facilitator&&!showGuide?`?view=lesson${mode==='slides'?'&mode=slides':''}`:''}`;
         const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
+        const checkpoint=chapter1Checkpoints.find(group=>group.after_lesson_key===lesson.lesson_key);
         content=<>
           {facilitator && <nav className="flex flex-wrap gap-2" aria-label={text('Paraan ng pagtingin','View')}>
             <Link prefetch={false} className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
@@ -243,6 +285,12 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           completionMilestone={completionMilestone}
           translations={program.content_key==='bhw-reference-manual'?translationsForLesson({...lesson,revision},readOnly):undefined}
           narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil',revision.read_sections):undefined}/>}
+          {!readOnly && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved' && checkpoint && done.has(lesson.id) &&
+            <Link className="block rounded-md border border-ink/20 p-4 underline" href={`/courses/${course.id}/practice/${checkpoint.key}`}>
+              {text('Opsyonal na maikling pagsasanay','Optional checkpoint practice')} · {checkpoint.key}</Link>}
+          {!readOnly && flags.chapter1_assessment_v2 && chapter1Orientation.editorial_status==='approved' &&
+            <Link className="block underline" href={`/courses/${course.id}/learning-notes?scope=lesson:${lesson.lesson_key}`}>
+              {text('Opsyonal na tala sa araling ito','Optional note for this lesson')}</Link>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
             {own[lessonIndex-1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex-1].id)}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
             {own[lessonIndex+1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex+1].id)}>{text('Susunod na aralin →','Next lesson →')}</Link>}
