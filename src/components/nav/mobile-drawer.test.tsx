@@ -186,4 +186,3 @@ describe("MobileDrawer", () => {
     expect(within(dialog()).getByRole("button", { name: "Sign out" })).toBeDisabled();
   });
 });
-

@@ -129,4 +129,3 @@ describe("getNavItems", () => {
     expect(ids(getNavItems({ role: "assessor", flags: assessorFlags }))).toContain("forum");
   });
 });
-

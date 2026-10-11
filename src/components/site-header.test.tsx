@@ -175,4 +175,3 @@ describe("SiteHeader navigation", () => {
     expect(screen.getByRole("link", { name: "Admin console" })).toBeInTheDocument();
   });
 });
-

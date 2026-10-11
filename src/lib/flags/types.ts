@@ -59,4 +59,3 @@ export const FLAG_ROLE_SCOPE: Record<FeatureFlagKey, AppRole[]> = {
   assessor_flow_awards: ["assessor"],
   chapter1_assessment_v2: ["bhw", "assessor"],
 };
-

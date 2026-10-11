@@ -74,4 +74,3 @@ describe("FLAG_ROLE_SCOPE", () => {
     }
   });
 });
-

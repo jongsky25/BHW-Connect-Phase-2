@@ -61,4 +61,3 @@ export async function getFeatureFlags(supabase: SupabaseClient, role?: AppRole):
   const rows = await fetchFlagRows(supabase);
   return resolveFlags(rows, role);
 }
-
