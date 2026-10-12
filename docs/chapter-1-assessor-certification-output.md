@@ -1,5 +1,7 @@
 # C1AF-08 — My certifications and Chapter 1 certificate output
 
+Implementation: [PR #298](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/298).
+
 Implementation follows [PR #297's handoff](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/297)
 on the C1AF-07 baseline `2225e6fb` (#296). This increment does not authorize
 release, hosted migrations, activation, lifecycle administration or overall issuance.
@@ -90,15 +92,16 @@ and anonymous owner/download rejection, and unchanged award/evidence/audit count
 Fixture disposal alone temporarily disables immutable triggers to remove its own
 local snapshots/awards; application users cannot do that.
 
-No pilot development, seed, E2E, migration, deployment or gate activation is part
+No pilot development, seed, E2E, migration, production deployment or gate activation is part
 of this implementation. C1AF-09 owns new lifecycle mutations; later increments
 own overall issuance and output. Rollback must preserve snapshots, certificate
 identities and earned evidence.
 
 ## Observed local results — 12 October 2026
 
-- Full units: **2,003 passed** (216 files). Certification-focused tests:
-  **47 passed**, including all 25 prior issuance tests.
+- Full units: **2,004 passed** (216 files; final run used two workers without
+  a concurrent build). Certification-focused tests:
+  **48 passed**, including all 25 prior issuance tests.
 - Authenticated local E2E: **6 passed** (award/output, preparation, simulation,
   and three existing BHW course/certificate regressions). The award/output
   journey also passed after extending the issuer/signatory/title fixture.

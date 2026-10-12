@@ -23,6 +23,11 @@ describe('chapter certification cards', () => {
     expect(screen.getByText('Hindi pa available')).toBeVisible();
     expect(screen.queryByRole('link')).toBeNull();
   });
+  it('distinguishes missing approved requirements from unpublished chapter content', () => {
+    render(<AssessorCertificationCard {...props} records={legacy} legacyState={{status: 'unavailable', next_step: 'await_chapter_requirements'}}/>);
+    expect(screen.getByText('Approved exam and orientation requirements are not yet available.')).toBeVisible();
+    expect(screen.queryByText('Required chapter content is not currently published.')).toBeNull();
+  });
   it('does not label a failed read as missing evidence', () => {
     render(<AssessorCertificationCard {...props} readFailed records={legacy}/>);
     expect(screen.getByRole('alert')).toHaveTextContent('Status could not be read');

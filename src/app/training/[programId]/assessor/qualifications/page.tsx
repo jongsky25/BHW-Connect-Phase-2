@@ -42,7 +42,7 @@ export default async function MyQualificationsPage({params}: {params: Promise<{p
       const state = index >= 0 ? states[index] : undefined;
       return <AssessorCertificationCard key={key} chapterKey={key} chapterId={chapter?.id}
         title={chapter ? en ? chapter.title_en : chapter.title_fil : text(`Kabanata ${i + 1}`, `Chapter ${i + 1}`)}
-        chapterHref={`/training/${programId}/assessor/${key}`} published={index >= 0 && state?.data?.status !== 'unavailable'}
+        chapterHref={`/training/${programId}/assessor/${key}`} published={index >= 0}
         readFailed={!!history.error || !!chapterError || !!state?.error} records={records.find(c => c.chapterKey === key)}
         locale={locale} legacyState={state?.data as QualificationState | undefined}/>;
     })}</div>

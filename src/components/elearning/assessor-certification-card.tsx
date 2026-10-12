@@ -9,7 +9,8 @@ export function AssessorCertificationCard({chapterKey, chapterId, title, chapter
   const en = locale === 'en';
   const text = (fil: string, english: string) => en ? english : fil;
   const awards = records?.awards ?? [];
-  const status = certificationCardStatus(chapterKey, published, readFailed, awards);
+  const requirementsUnavailable = published && legacyState?.status === 'unavailable';
+  const status = certificationCardStatus(chapterKey, published && !requirementsUnavailable, readFailed, awards);
   const label = {certified: text('Sertipikado', 'Certified'), in_progress: text('Isinasagawa', 'In progress'),
     unavailable: text('Hindi pa available', 'Not yet available'), read_failed: text('Hindi mabasa ang katayuan', 'Status could not be read'),
     update_required: text('Kailangan ng pag-update', 'Update required'), suspended: text('Sinuspinde', 'Suspended'), revoked: text('Binawi', 'Revoked')}[status];
@@ -18,6 +19,7 @@ export function AssessorCertificationCard({chapterKey, chapterId, title, chapter
     <p className="mt-2 font-medium" role={readFailed ? 'alert' : undefined}>{label}</p>
     {readFailed ? <p className="mt-2 text-sm">{text('Subukan muli. Hindi ito nangangahulugang kulang ang iyong ebidensya.', 'Try again. This does not mean your evidence is incomplete.')}</p> : <>
       {!published && <p className="mt-2 text-sm">{text('Hindi pa nailathala ang kinakailangang nilalaman ng kabanata.', 'Required chapter content is not currently published.')}</p>}
+      {requirementsUnavailable && <p className="mt-2 text-sm">{text('Hindi pa available ang aprubadong pagsusulit at oryentasyon.', 'Approved exam and orientation requirements are not yet available.')}</p>}
       {chapterKey === 'chapter-3' && <p className="mt-2 text-sm">{text('Wala pang aprubadong landas ng sertipikasyon para sa Kabanata 3.', 'Chapter 3 has no approved certification path yet.')}</p>}
       {awards.length > 0 && <><p className="mt-2 text-sm">{text('Tala ng pagkamit; hindi pahintulot na kumilos ngayon.', 'Historical achievement; this does not grant current authority.')}</p>
         <ul className="mt-3 space-y-3">{awards.map(award => <li key={award.certificateId}>
