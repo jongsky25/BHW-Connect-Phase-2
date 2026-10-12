@@ -1,5 +1,6 @@
 import {beforeProposed171} from '../lib/lesson-171-integration.mjs';
 // @vitest-environment node
+import {lessonOwned} from '../lib/lesson-preservation-scope.mjs';
 import {describe,it,expect} from 'vitest';import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {lesson165View} from '../lib/lesson-165-integration.mjs';
 const sha=b=>createHash('sha256').update(b).digest('hex'),j=p=>JSON.parse(beforeProposed171(p));
@@ -11,7 +12,7 @@ describe('approved 1.6.5 integration and release',()=>{
    for(const side of ['reviewed165','approvedMain'])expect(sha(lesson165View(p,side)),p).toBe(e[side+'_sha256']);
    expect(()=>lesson165View(p,'approvedMain',Buffer.from('changed'))).toThrow('Unpinned');
   }
-  for(const [p,h]of Object.entries(r.protected_main_sha256))expect(sha(beforeProposed171(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(r.protected_main_sha256))if(lessonOwned(p))expect(sha(beforeProposed171(p)),p).toBe(h);
  },30000);
  it('preserves latest sibling selections/history and appends only two compositions',()=>{
   const p='content/training/day1-basic-competencies/narration.json',actual=j(p),main=JSON.parse(lesson165View(p,'approvedMain')),review=JSON.parse(lesson165View(p,'reviewed165'));

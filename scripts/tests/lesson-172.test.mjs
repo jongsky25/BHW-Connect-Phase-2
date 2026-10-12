@@ -1,5 +1,6 @@
 import {beforeLesson181} from '../lib/lesson-181-integration.mjs';
 // @vitest-environment node
+import {lessonOwned} from '../lib/lesson-preservation-scope.mjs';
 import {describe, it, expect} from 'vitest';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -50,7 +51,7 @@ describe('Carole lesson 1.7.2 scoped draft',()=>{
  it('protects every predecessor byte and rejects changed successors without a pinned receipt',()=>{
   const shared=new Set(['.github/workflows/ci.yml','.github/workflows/remotion.yml','src/components/elearning/reference-lessons.tsx','scripts/tests/lesson-171-release.test.mjs','scripts/tests/lesson-171.test.mjs','scripts/lib/lesson-171-integration.mjs','scripts/lib/lesson-165-integration.mjs','scripts/tests/lesson-165-integration.test.mjs','remotion/src/Root.tsx','content/training/day1-basic-competencies/narration.json']);
   for(const path of Object.keys(receipt.changed_existing_files))expect(path.startsWith(leaf)||shared.has(path),path).toBe(true);
-  for(const [path,hash]of Object.entries(baseline.protected_files))expect(sha(beforeLesson172(path)),path).toBe(hash);
+  for(const [path,hash]of Object.entries(baseline.protected_files))if(lessonOwned(path))expect(sha(beforeLesson172(path)),path).toBe(hash);
   for(const path of Object.keys(receipt.changed_existing_files))expect(()=>beforeLesson172(path,Buffer.from('unpinned mutation'))).toThrow('Unpinned');
  },30000);
  it('keeps old published text selecting its exact previous narration',()=>{

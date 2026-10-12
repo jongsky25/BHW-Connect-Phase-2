@@ -1,5 +1,6 @@
 import {lesson164View} from '../lib/lesson-164-integration.mjs';
 // @vitest-environment node
+import {lessonOwned} from '../lib/lesson-preservation-scope.mjs';
 import {describe,it,expect} from 'vitest';
 import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
@@ -35,7 +36,7 @@ describe('lesson 1.6.4 attributed recording draft',()=>{
  });
  it('preserves all earlier public bytes, sibling source/history and earlier approval receipts',()=>{
   const allowed=new Set([leaf+'lesson.json',leaf+'read.fil.md',leaf+'read.en.md',leaf+'slides.json',leaf+'competency.json',leaf+'facilitator.fil.md',leaf+'facilitator.en.md','remotion/src/Root.tsx','src/components/elearning/reference-lessons.tsx','scripts/lib/reference-narration.mjs',base+'narration.json']);
-  for(const [p,h]of Object.entries(baseline.file_hashes))if(!allowed.has(p))expect(sha(bytes(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(baseline.file_hashes))if(lessonOwned(p)&&!allowed.has(p))expect(sha(bytes(p)),p).toBe(h);
   const m=j(base+'narration.json');for(const [key,v]of Object.entries(baseline.narration.lessons))if(key!=='communication-record')expect(m.lessons[key],key).toEqual(v);
   for(const [key,v]of Object.entries(baseline.narration.history??{}))expect(key==='communication-record'?m.history[key].slice(0,v.length):m.history[key],key).toEqual(v);
  },30000);

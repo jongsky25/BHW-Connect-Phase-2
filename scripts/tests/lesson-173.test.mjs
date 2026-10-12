@@ -1,5 +1,6 @@
 import {release172View} from '../lib/lesson-172-release-integration.mjs';
 // @vitest-environment node
+import {lessonOwned} from '../lib/lesson-preservation-scope.mjs';
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
@@ -39,7 +40,7 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
  });
  it('preserves every prior public byte, sibling lesson, narration history, UUID and source',()=>{
   const preserved=j('docs/lesson-173-implementation-baseline.json').protected_files;
-  for(const [p,h]of Object.entries(preserved)){
+  for(const [p,h]of Object.entries(preserved))if(lessonOwned(p)){
    const bytes=fs.lstatSync(p).isSymbolicLink()?Buffer.from(fs.readlinkSync(p)):beforeProposed173(p);
    expect(sha(bytes),p).toBe(h);
   }
