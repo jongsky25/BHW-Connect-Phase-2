@@ -4,6 +4,21 @@ import type { LessonAssetVideo, LessonCheck } from "./types";
 
 export type LessonText = (fil: string, en: string) => string;
 export type LessonTranslationLanguage = "ceb" | "hil";
+// Shared navigation copy is independent of each lesson's reviewed content.
+export const storyQuestionUi: Record<LessonTranslationLanguage, Record<string, string>> = {
+  ceb: {
+    "Susunod na tanong": "Sunod nga pangutana",
+    "Magpatuloy sa dulo ng aralin": "Padayon sa kataposan sa leksyon",
+    "Magpatuloy sa tanong": "Padayon sa pangutana",
+    "Pagkatapos ng kuwento, sagutin ang mga tanong para makumpleto ang aralin.": "Human sa sugilanon, tubaga ang mga pangutana aron makompleto ang leksyon.",
+  },
+  hil: {
+    "Susunod na tanong": "Masunod nga pamangkot",
+    "Magpatuloy sa dulo ng aralin": "Magpadayon sa katapusan sang leksyon",
+    "Magpatuloy sa tanong": "Magpadayon sa pamangkot",
+    "Pagkatapos ng kuwento, sagutin ang mga tanong para makumpleto ang aralin.": "Pagkatapos sang istorya, sabta ang mga pamangkot agod makompleto ang leksyon.",
+  },
+};
 type TranslatedCheck = { prompt: string; options: string[]; feedback: string };
 export type LessonTranslation = {
   language: LessonTranslationLanguage;

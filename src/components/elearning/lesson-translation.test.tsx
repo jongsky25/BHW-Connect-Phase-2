@@ -38,12 +38,12 @@ function fixture(language: "ceb" | "hil" = "ceb", lessonDirectory = directory) {
     captions: { path: `/fixture/story.${language}.vtt`, content_hash: `${language}-vtt` } };
   return { lesson, translation };
 }
-function view(preview = true, approved = false, language: "ceb" | "hil" = "ceb") {
+function view(preview = true, approved = false, language: "ceb" | "hil" = "ceb", storyQuestionHandoff = false) {
   const { lesson, translation } = fixture(language);
   if (approved) translation.review_status = "approved";
   const resume = vi.fn().mockResolvedValue(undefined);
   const result = render(<ReferenceLessons title_fil="Manual" title_en="Manual" chapters={[]} lessons={[lesson]} completed={[]} resumes={[]}
-    modules={[]} locale="fil" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly={preview} translations={[translation]}
+    modules={[]} locale="fil" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly={preview} storyQuestionHandoff={storyQuestionHandoff} translations={[translation]}
     onResume={resume} onComplete={vi.fn().mockResolvedValue(undefined)}/>);
   return { ...result, lesson, translation, resume };
 }
@@ -281,4 +281,22 @@ describe.each([
       }
     });
   }
+});
+
+
+describe("translated story handoff", () => {
+  it.each([
+    ["ceb", "Padayon sa pangutana"],
+    ["hil", "Magpadayon sa pamangkot"],
+  ] as const)("opens the question in %s and keeps the navigation localized", (language, label) => {
+    const {container, translation} = view(false, true, language, true);
+    fireEvent.change(screen.getByRole("combobox", {name: "Wika ng aralin"}), {target: {value: language}});
+    fireEvent.click(screen.getByRole("button", {name: translation.ui["Kuwentong may salaysay"]}));
+    expect(screen.getByRole("button", {name: label})).toBeInTheDocument();
+    fireEvent.ended(container.querySelector("video")!);
+    const section = translation.read_sections.find(section => section.check)!;
+    expect(screen.getByRole("heading", {name: section.heading})).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", {name: section.check!.options[0]}));
+    expect(screen.getByRole("button", {name: translation.ui["Markahang tapos ang aralin"]})).toBeEnabled();
+  });
 });

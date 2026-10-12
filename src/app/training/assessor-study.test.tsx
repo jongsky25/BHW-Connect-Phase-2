@@ -8,7 +8,7 @@ vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIREC
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale}));
 vi.mock('@/lib/auth/viewer',()=>({getViewer:async()=>({appUser:{id:'self',role:state.actualRole,status:state.active?'active':'deactivated'},role:state.role,isPreview:state.preview})}));
 vi.mock('@/lib/supabase/request',()=>({getRequestFeatureFlags:async()=>({elearning:state.enabled,assessor_flow_ui:state.ui})}));
-vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({readOnly,assessorChapterId,nextLessonHref}:{readOnly:boolean;assessorChapterId:string;nextLessonHref?:string})=><div data-readonly={String(readOnly)} data-chapter={assessorChapterId} data-next={nextLessonHref}>Study reader</div>}));
+vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({storyQuestionHandoff,readOnly,assessorChapterId,nextLessonHref}:{storyQuestionHandoff?:boolean;readOnly:boolean;assessorChapterId:string;nextLessonHref?:string})=><div data-story-handoff={String(storyQuestionHandoff)} data-readonly={String(readOnly)} data-chapter={assessorChapterId} data-next={nextLessonHref}>Study reader</div>}));
 vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({rpc:async(name:string)=>{state.calls.push(name);return {data:name==='rpc_assessor_flow_policy'?state.policy:name==='rpc_assessor_qualification_state'?state.qualification:state.acknowledgement,error:null}},from:(table:string)=>{
   state.calls.push(table);let single=false;
   const filters:Array<(r:Record<string,unknown>)=>boolean>=[];
@@ -101,6 +101,7 @@ describe('assessor study route',()=>{
     state.rows.assessor_lesson_resume=[{assessor_user_id:'self',chapter_id:'ch1',lesson_id:'l2',revision_id:'r2',updated_at:'2026-09-28'}];
     const {unmount}=render(await page());expect(screen.getByRole('link',{name:'Continue studying'})).toHaveAttribute('href','/training/manual/assessor/chapter-1/m1/l2');unmount();
     render(await page(['m1','l1']));expect(screen.getByText('Study reader')).toHaveAttribute('data-chapter','ch1');expect(screen.getByText('Study reader')).toHaveAttribute('data-readonly','false');
+    expect(screen.getByText('Study reader')).toHaveAttribute('data-story-handoff','true');
     expect(screen.getByText('Study reader')).toHaveAttribute('data-next','/training/manual/assessor/chapter-1/m1/l2');
   });
   it('requires the diagnostic pretest before opening lessons',async()=>{

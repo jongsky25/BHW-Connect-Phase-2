@@ -295,7 +295,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
             </section>}
             <LessonFacilitatorGuide lang={loc} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
               indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/>
-          </> : <ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision}],completed:completed??[],resumes:resumeResult.data??[]}}
+          </> : <ManualLesson storyQuestionHandoff={program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'} data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision}],completed:completed??[],resumes:resumeResult.data??[]}}
           modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
           returnHref={facilitator?`${moduleHref}?view=slides`:undefined}
           initialMode={facilitator && mode==='slides'?'slides':undefined}
