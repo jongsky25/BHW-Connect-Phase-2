@@ -23,6 +23,8 @@ export function AssessorPreparationChecklist({input,baseHref,locale}:{input:Prep
     posttest:['Kunin o ulitin ang pangwakas na pagsusulit','Take or retry the chapter post-test',`${baseHref}/exam/posttest`],
     orientation:['Ipagpatuloy ang oryentasyon sa pagmamarka','Continue scoring orientation',`${baseHref}/orientation`],
     scoring:['Sagutan ang pagsasanay sa pagmamarka','Complete the scoring exercise',`${baseHref}/orientation`],
+    simulation:['Ipagpatuloy ang simulation','Continue platform simulation',`${baseHref}/simulation`],
+    certification_pending:['Naitala ang simulation. Hintayin ang revised certification.','Simulation recorded. Await revised certification.',null],
     simulation_pending:['Hintayin ang pagsasanay sa platform. Maaari mong balikan ang mga aralin at briefing.','Await the platform simulation. You can review lessons and the briefing.',null],
     qualification:['Tingnan ang kasalukuyang kwalipikasyon at katayuan','Review your existing qualification and status',`${baseHref.split('/assessor/')[0]}/assessor/qualifications`],
     status_retry:['Basahin muli ang katayuan ng paghahanda','Reload preparation status',baseHref],
@@ -39,10 +41,11 @@ export function AssessorPreparationChecklist({input,baseHref,locale}:{input:Prep
     {input.missing>0&&<p className="mt-3 text-sm">{text(`${input.missing} sa ${input.total} kinakailangang aralin ang hindi pa available. Mananatili ang buong bilang ng mga aralin.`,`${input.missing} of ${input.total} required lessons are not yet available. The full lesson count stays the same.`)}</p>}
     {!input.qualification&&<p className="mt-3 text-sm" role="status">{text('Hindi makumpirma ang katayuan ng oryentasyon at kwalipikasyon. Nananatili ang iyong naitalang pag-aaral.','Orientation and qualification status could not be confirmed. Your recorded study progress is retained.')}</p>}
     {model.qualificationStatus&&['active','suspended','revoked'].includes(model.qualificationStatus)&&<p className="mt-3 text-sm">{text('May umiiral na rekord ng kwalipikasyon. Tingnan ang katayuan nito; hindi ito awtomatikong ginagawang sertipikasyon sa binagong proseso.','An existing qualification record is on file. Review its status; it is not automatically converted into certification under the revised process.')}</p>}
+    {input.simulation&&<Link prefetch={false} href={`${baseHref}/simulation`} className="mt-3 block underline">{text('Buksan o ulitin ang simulation; mananatili ang naunang completion.','Open or replay the simulation; earlier completion is retained.')}</Link>}
     <div className="mt-4 rounded-lg border border-primary/30 p-4">
       <h3 className="font-semibold">{text('Inirerekomendang susunod na hakbang','Recommended next step')}</h3>
       {action[2]?<Link prefetch={false} href={action[2]} className="mt-2 inline-flex min-h-11 items-center py-2 font-medium text-primary-text underline">{text(action[0],action[1])}</Link>:<p className="mt-2">{text(action[0],action[1])}</p>}
-      <p className="mt-2 text-sm">{text('Hindi pa available ang simulation at bagong pagbibigay ng sertipikasyon. Ang pagkumpleto ng pag-aaral ay hindi pahintulot na magsagawa ng pormal na pagtatasa.','The simulation and revised certification issuance are not yet available. Completing study does not authorize formal assessment.')}</p>
+      <p className="mt-2 text-sm">{text('Hindi pa available ang bagong pagbibigay ng sertipikasyon. Ang pagkumpleto ng pag-aaral ay hindi pahintulot na magsagawa ng pormal na pagtatasa.','Revised certification issuance is not yet available. Completing study does not authorize formal assessment.')}</p>
     </div>
   </section>;
 }
