@@ -13,7 +13,7 @@ export function beforeLesson193(p,actual=fs.readFileSync(p)){
  const r=receipt??=JSON.parse(fs.readFileSync('docs/lesson-193-proposal-receipt.json'));
  if(r.target!=='resources-monitor'||r.owner_release_approval!==false||Object.keys(r.changed_existing_files).some(key=>!key.startsWith(leaf)&&!shared.has(key)))throw Error('Invalid lesson 1.9.3 preservation scope');
  const e=r.changed_existing_files[p];if(!e)return actual;
- if(sha(reviewed193View(p))!==e.proposed_sha256)throw Error('Unpinned integrated successor; Unpinned lesson 1.9.3 successor: '+p);
+ if(sha(reviewed193View(p,beforeCiScope(p)))!==e.proposed_sha256)throw Error('Unpinned integrated successor; Unpinned lesson 1.9.3 successor: '+p);
  // Preserve idempotence of the already approved 1.9.2 predecessor guard.
  const earlier=(earlierReceipt??=JSON.parse(fs.readFileSync('docs/lesson-192-proposal-receipt.json'))).changed_existing_files[p];
  if(earlier&&sha(actual)===earlier.predecessor_sha256&&sha(Buffer.from(earlier.predecessor_utf8))===earlier.predecessor_sha256)return actual;
