@@ -25,6 +25,9 @@ describe('personal preparation guidance',()=>{
     expect(preparationChecklist(input({qualification:{status:'in_progress',next_step:'scoring_exercise'}})).next).toBe('scoring');
     const result=preparationChecklist(input({qualification:{status:'in_progress',next_step:'issue'}}));
     expect(result.next).toBe('simulation_pending');expect(result.steps.slice(-2).every(s=>s.status==='unavailable')).toBe(true);
+    expect(preparationChecklist(input({qualification:{status:'in_progress',next_step:'issue'},simulation:'remaining'})).next).toBe('simulation');
+    const completed=preparationChecklist(input({qualification:{status:'in_progress',next_step:'issue'},simulation:'recorded'}));
+    expect(completed.next).toBe('certification_pending');expect(completed.steps.at(-1)?.status).toBe('unavailable');
   });
   it.each(['active','suspended','revoked'] as const)('preserves the existing %s qualification without converting it',status=>{
     const result=preparationChecklist(input({completed:0,qualification:{status,next_step:status==='active'?'qualified':'contact_admin'}}));

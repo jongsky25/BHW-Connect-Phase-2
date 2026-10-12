@@ -19,6 +19,7 @@ export type PreparationChecklistInput = {
   nextLessonHref:string|null;examAvailable:boolean;passingPercent:number;
   attempts:Array<{phase:string;status:string;score_percent:number|null;passed:boolean|null}>;
   qualification:PreparationQualification|null;
+  simulation?:'remaining'|'recorded';
 };
 export function preparationChecklist(input:PreparationChecklistInput) {
   const studyDone=input.total>0 && input.missing===0 && input.completed===input.total;
@@ -34,10 +35,10 @@ export function preparationChecklist(input:PreparationChecklistInput) {
     {id:'study',status:studyDone?'recorded':input.missing>0?'unavailable':'remaining'},
     {id:'posttest',status:posttestPassed?'recorded':input.examAvailable?'remaining':'unavailable'},
     {id:'orientation',status:!q?'unknown':orientationDone?'recorded':q.status==='unavailable'?'unavailable':'remaining'},
-    {id:'simulation',status:'unavailable'},
+    {id:'simulation',status:input.simulation??'unavailable'},
     {id:'certification',status:'unavailable'},
   ];
-  let next:'briefing'|'pretest'|'study'|'publication'|'posttest'|'orientation'|'scoring'|'simulation_pending'|'qualification'|'status_retry'|'requirements';
+  let next:'briefing'|'pretest'|'study'|'publication'|'posttest'|'orientation'|'scoring'|'simulation_pending'|'simulation'|'certification_pending'|'qualification'|'status_retry'|'requirements';
   if(!input.briefingRecorded)next='briefing';
   else if(q && ['active','suspended','revoked'].includes(q.status))next='qualification';
   else if(!input.pretestRecorded)next=input.examAvailable?'pretest':'requirements';
@@ -45,7 +46,7 @@ export function preparationChecklist(input:PreparationChecklistInput) {
   else if(!posttestPassed)next=input.examAvailable?'posttest':'requirements';
   else if(!q)next='status_retry';
   else if(q.status==='unavailable')next='requirements';
-  else if(ready&&orientationDone)next='simulation_pending';
+  else if(ready&&orientationDone)next=input.simulation==='recorded'?'certification_pending':input.simulation==='remaining'?'simulation':'simulation_pending';
   else if(q.next_step==='scoring_exercise')next='scoring';
   else if(q.next_step==='orientation_lessons')next='orientation';
   else next='status_retry'; // Conflicting live records need a refresh, not optimistic advancement.

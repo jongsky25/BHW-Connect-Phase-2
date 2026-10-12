@@ -1,3 +1,4 @@
+import {parseSimulationState} from '@/lib/assessor/simulation-runner';
 import Link from 'next/link';
 import {notFound,redirect} from 'next/navigation';
 import {getLocale} from 'next-intl/server';
@@ -74,10 +75,16 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
   const study=chapterStudy(chapterKey,modules??[],lessons??[],completed??[],resumes??[]);
   if(!study)notFound();
   let qualification=null;
+  let simulation:'remaining'|'recorded'|undefined;
   if(briefingVisible && showPreparation && curriculum) {
     try {
-      const result=await db.rpc('rpc_assessor_qualification_state',{p_chapter_id:chapter.id});
+      const [result,saved]=await Promise.all([
+        db.rpc('rpc_assessor_qualification_state',{p_chapter_id:chapter.id}),
+        db.rpc('rpc_assessor_simulation_state',{p_program_id:programId}),
+      ]);
       qualification=result.error?null:preparationQualification(result.data,curriculum.requirements.version);
+      const run=saved.error?null:parseSimulationState(saved.data,programId,viewer.appUser.id);
+      if(run)simulation=run.receipt?'recorded':'remaining';
     } catch {
       // Unknown status stays unknown; existing study progress is still shown.
     }
@@ -121,7 +128,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
     {briefingVisible && showPreparation ? <AssessorPreparationChecklist locale={locale} baseHref={base} input={{
       briefingRecorded:true,pretestRecorded:pretestDone,total:study.total,completed:study.completed,missing:study.missing,
       nextLessonHref:study.nextLesson && study.entries.some(e=>e.lesson?.id===study.nextLesson?.id&&!e.done)?href(study.nextLesson):null,
-      examAvailable,passingPercent:curriculum?.requirements.exams[0]?.passingPercent??80,attempts:currentAttempts,qualification,
+      examAvailable,passingPercent:curriculum?.requirements.exams[0]?.passingPercent??80,attempts:currentAttempts,qualification,simulation,
     }}/> : <section className="rounded-xl border border-ink/15 p-4" aria-label={text('Progreso sa pag-aaral','Study progress')}>
       <p>{text(`${study.completed} sa ${study.total} kinakailangang aralin ang natapos`,`${study.completed} of ${study.total} required lessons completed`)}</p>
       <progress className="mt-2 w-full" max={study.total} value={study.completed} aria-label={text('Mga araling natapos','Lessons completed')}/>
