@@ -1,6 +1,7 @@
 # C1AF-07 — combined Chapter 1 issuance
 
-Implements the scope in PR #295 on current main (`c54d323f`). This increment
+Implements the scope in PR #295, started from main `c54d323f` and integrated
+main `89b56f33` (the separately merged CI repair #293) before final validation. This increment
 adds issuance and certificate identity. Certification cards, PDF/print,
 verification and lifecycle administration remain C1AF-08/C1AF-09 work.
 
@@ -99,9 +100,9 @@ and responsive rehearsal UI, source/media fingerprints, scoring and privacy.
 The E2E fixture temporarily disables immutability triggers only to dispose of
 its own local records, after assertions; production code cannot do so.
 
-Observed command results are recorded in the implementation PR. The six known
-main-suite failures remain disclosed; this increment does not skip assertions,
-change scoring, repin hashes or regenerate narration.
+The handoff's six baseline assertion failures were addressed by main's separately
+merged PR #293. Relative to that main, this increment does not skip assertions,
+change scoring, adjust timeouts, repin hashes or regenerate narration.
 
 ### Observed local results (12 October 2026)
 
@@ -109,14 +110,13 @@ change scoring, repin hashes or regenerate narration.
 - Authenticated Playwright: **3 passed** (award, preparation, bilingual simulation),
   including concurrent issuance/recovery, unchanged pass snapshots, axe and overflow.
 - Production build and typecheck passed. Lint passed with the three existing warnings.
-- Full unit run: **1,964 passed / 17 failed**. Serial rerun of all failed files plus
-  the final issuance tests: **163 passed / 8 failed**. The six documented baseline
-  assertions remain (`lesson-152`, `lesson-164`, `lesson-165-integration`,
-  `lesson-172`, `lesson-173`, `reference-narration`), together with unchanged-file
-  timeouts in `lesson-174.test.mjs` (30 seconds) and `chapter2-ipc.test.mjs`
-  (5 seconds). Other transient failures cleared after fetching the recorded
-  historical review commits and rerunning serially. No assertion, timeout,
-  preservation hash, source or media was weakened or changed.
+- Full unit run after integrating main: **1,974 passed / 7 failed**, all failures
+  being timeouts in unchanged tests. Serial rerun of those seven files plus the
+  final issuance tests: **82 passed / 3 failed**. Remaining failures are 5-second
+  timeouts in `chapter2-ipc.test.mjs`, `lesson-152.test.mjs` and
+  `lesson-163.test.mjs`; the prior preservation/narration assertions no longer
+  fail. The final issuance suite passes all 25 cases, including the existing
+  recovery RPC's revised gate. No existing test or timeout was adjusted here.
 - Full fresh local migration replay and seed succeeded on Supabase CLI 2.118.0 /
   PostgreSQL 17.6. The managed environment's VFS disk budget required flattening
   the pinned Postgres/storage image filesystems into local single-layer images.
@@ -132,7 +132,8 @@ The implementation PR remains a draft; these results do not approve release or
 activation. The additional timeouts remain disclosed rather than being counted
 as passes. Full 83-test E2E and production smoke were not run locally.
 
-No hosted migration, merge, deployment or activation is part of this change.
+The implementation PR is unmerged. No hosted migration, production deployment
+or activation was performed.
 Before activation, separately resolve rubric/orientation/checkpoint reviews,
 criterion mapping, component sufficiency, evidence reuse and issuer/signatory/
 award decisions. Review the live migration history to avoid reapplying the

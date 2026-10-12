@@ -160,13 +160,16 @@ describe('C1AF-07 transactional combined award',()=>{
   expect(await rows()).toEqual([]);
   expect((await db.query('select * from assessor_chapter_qualifications')).rows).toEqual([]);
   await expect(ensure()).rejects.toThrow('incomplete');
+  await expect(call(ids.self,'rpc_assessor_qualification_ensure',ids.chapter)).rejects.toThrow('incomplete');
   const run=await simulation();const before=await snapshot();const [award]=await rows();
   expect(award.simulation_receipt).toEqual(run.receipt);
   expect(award.certificate_id).toMatch(/^[a-f0-9-]{36}$/);
   expect(award.evidence_snapshot.study).toHaveLength(42);
   expect(award.evidence_snapshot.orientationLessons).toHaveLength(6);
   expect(award.contract_snapshot.rubric_version).toBe('local-rubric');
-  expect(await ensure()).toBe(award.id);await act({type:'finish'});
+  expect(await ensure()).toBe(award.id);
+  expect((await call(ids.self,'rpc_assessor_qualification_ensure',ids.chapter)).rows[0].result).toBe(award.id);
+  await act({type:'finish'});
   expect(await rows()).toHaveLength(1);expect(await snapshot()).toEqual(before);
   expect((await state()).awards[0]).toMatchObject({awardId:award.id,currentPermission:false});
   await db.exec('savepoint changed_contract');
