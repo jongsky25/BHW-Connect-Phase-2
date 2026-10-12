@@ -9,6 +9,9 @@ assertPilotAllowed(process.env.NEXT_PUBLIC_SUPABASE_URL, "NEXT_PUBLIC_SUPABASE_U
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
+  outputFileTracingIncludes: {
+    "/api/assessor-certificates/*/pdf": ["./src/lib/assessor/fonts/DejaVuSans.ttf"],
+  },
   async headers() {
     return [
       {

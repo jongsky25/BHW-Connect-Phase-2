@@ -41,6 +41,7 @@ async function pass(){
 beforeAll(async()=>{
   db=new PGlite();
   await db.exec(read('scripts/tests/fixtures/assessor-study-platform.sql'));
+  await db.exec("alter table users add column full_name text default 'Fictional Alex Peña'");
   await db.exec('grant select on public.users,public.org_units to authenticated');
   await db.exec('alter table course_modules add column position integer; alter table course_lessons add column lesson_key text,add column required boolean default true;');
   await db.exec(`create table course_test_questions(id uuid primary key,course_id uuid,position integer,prompt_fil text,prompt_en text,options jsonb,correct_option_index integer,active boolean default true);
@@ -65,11 +66,11 @@ beforeAll(async()=>{
     create table course_session_deliveries(id uuid primary key,session_id uuid,module_id uuid,recorded_by uuid);
     create table course_session_activities(id uuid primary key,session_id uuid,module_id uuid,recorded_by uuid);`);
   for(const file of ['20261010145729_assessor_flow_rollout_controls.sql','20261011120608_assessor_briefing_acknowledgement.sql',
-    '20261012051057_assessor_simulation_runner.sql','20261012064708_assessor_combined_chapter_issuance.sql'])await db.exec(read(`supabase/migrations/${file}`));
+    '20261012051057_assessor_simulation_runner.sql','20261012064708_assessor_combined_chapter_issuance.sql','20261012102519_assessor_certificate_output.sql'])await db.exec(read(`supabase/migrations/${file}`));
 
   await db.query('insert into org_units values($1,$3),($2,$4)',[ids.city,ids.away,`${ids.city}.`,`${ids.away}.`]);
   for(const [id,role,status,org] of [[ids.self,'assessor','active',ids.city],[ids.other,'assessor','active',ids.away],[ids.bhw,'bhw','active',ids.city],[ids.inactive,'assessor','deactivated',ids.city],[ids.admin,'admin','active',ids.city],[ids.outsideAdmin,'admin','active',ids.away]])
-    await db.query('insert into users values($1,$1,$2,$3,$4)',[id,role,status,org]);
+    await db.query('insert into users(id,auth_user_id,role,status,org_unit_id) values($1,$1,$2,$3,$4)',[id,role,status,org]);
   await db.query("insert into training_programs values($1,'bhw-reference-manual','published',$2)",[ids.program,ids.city]);
   await db.query("insert into courses values($1,'published',$3),($2,'published',$3)",[ids.course,ids.course2,ids.city]);
   await db.query("insert into training_program_chapters values($1,$3,'chapter-1',$4,'available'),($2,$3,'chapter-2',$5,'available')",[ids.chapter,ids.chapter2,ids.program,ids.course,ids.course2]);
@@ -243,5 +244,79 @@ describe('C1AF-07 transactional combined award',()=>{
   await expect(call(ids.self,'rpc_assessor_chapter_award_ensure',ids.chapter,ids.other,100)).rejects.toThrow();
   expect((await call(ids.other,'rpc_assessor_chapter_award_state',ids.chapter)).rows[0].result.awards).toEqual([]);
   await expect(call(ids.self,'rpc_assessor_chapter_award_ensure',ids.chapter2)).rejects.toThrow('unavailable');
+ });
+});
+
+// Output tests share the unchanged real prerequisite/issuance harness above.
+const ownerCertificate=id=>call(ids.self,'rpc_assessor_certificate_owner',id).then(r=>r.rows[0].result);
+const verifyCertificate=(id,actorId=null)=>call(actorId,'rpc_assessor_certificate_verify',id).then(r=>r.rows[0].result);
+async function earnedCertificate(){await configure();await approve();await pass();await recordedSimulation();return (await rows())[0];}
+describe('C1AF-08 immutable output and minimal verification',()=>{
+ it('captures holder and approved issuer at issuance; reads never mutate evidence or identity',async()=>{
+  const w=await earnedCertificate();const before=await snapshot();
+  const audit=(await db.query('select * from audit_events')).rows;
+  const owner=await ownerCertificate(w.certificate_id);
+  expect(owner).toMatchObject({certificateId:w.certificate_id,holderName:'Fictional Alex Peña',displayVersion:1,currentPermission:false,status:'active',issuerOrganization:'LOCAL TEST ONLY'});
+  await db.query("update users set full_name='Different current name' where id=$1",[ids.self]);
+  expect(await ownerCertificate(w.certificate_id)).toEqual(owner);
+  for(let i=0;i<3;i++){await ownerCertificate(w.certificate_id);await verifyCertificate(w.certificate_id);await call(ids.self,'rpc_assessor_certifications_state',ids.program);}
+  expect(await snapshot()).toEqual(before);expect(await rows()).toEqual([w]);
+  expect((await db.query('select * from audit_events')).rows).toEqual(audit);
+  await expect(db.exec("update assessor_rollout_private.certificate_display_snapshots set holder_name='Replacement'")).rejects.toThrow('immutable');
+ });
+ it('denies foreign, BHW, inactive, admin, anonymous and persona owner access',async()=>{
+  const w=await earnedCertificate();
+  expect((await call(ids.other,'rpc_assessor_certificate_owner',w.certificate_id)).rows[0].result).toBeNull();
+  for(const actorId of [ids.bhw,ids.inactive,ids.admin,null])await expect(call(actorId,'rpc_assessor_certificate_owner',w.certificate_id)).rejects.toThrow();
+  await db.query('insert into super_admin_personas values($1,$2)',[ids.self,ids.admin]);
+  await expect(ownerCertificate(w.certificate_id)).rejects.toThrow('not authorized');
+  await expect(call(ids.self,'rpc_assessor_certifications_state',ids.program)).rejects.toThrow('not authorized');
+ });
+ it('has a default-off public gate and an explicit field allow-list excluding all personal/evidence/approval fields',async()=>{
+  const w=await earnedCertificate();
+  expect(await verifyCertificate(w.certificate_id)).toEqual({available:false});
+  await db.exec('update assessor_rollout_private.certificate_output_control set public_verification_enabled=true');
+  const publicRecord=await verifyCertificate(w.certificate_id);
+  expect(Object.keys(publicRecord).sort()).toEqual(['available','found','certificateType','certificateId','chapterKey','titleFil','titleEn','issuedAt','issuerOrganization','status','currentPermission'].sort());
+  expect(publicRecord).toMatchObject({available:true,found:true,status:'active',currentPermission:false});
+  expect(await verifyCertificate(w.certificate_id,ids.other)).toEqual(publicRecord);
+  for(const bad of ['SAMPLE-Maria','not-a-uuid','',uuid(9999),w.id,null])expect(await verifyCertificate(bad)).toEqual({available:true,found:false});
+ });
+ it('reports live suspension, revocation and material version updates; gates off do not erase history',async()=>{
+  const w=await earnedCertificate();
+  await db.exec('update assessor_rollout_private.certificate_output_control set public_verification_enabled=true');
+  // Fixture-only future version transition; no lifecycle mutation API is added.
+  await db.exec("alter table assessor_flow_cohorts disable trigger preserve_assessor_flow_cutover");
+  await db.query("update assessor_flow_cohorts set requirements_version='chapter-1:new-requirements' where id=$1",[uuid(900)]);
+  expect((await verifyCertificate(w.certificate_id)).status).toBe('update_required');
+  for(const status of ['suspended','revoked']){
+   await db.query('update assessor_rollout_private.chapter_awards set status=$1,status_changed_at=now() where id=$2',[status,w.id]);
+   expect((await verifyCertificate(w.certificate_id)).status).toBe(status);
+   expect((await ownerCertificate(w.certificate_id)).status).toBe(status);
+  }
+  await db.exec("update feature_flags set enabled=false where key='assessor_flow_awards'");
+  expect((await ownerCertificate(w.certificate_id)).certificateId).toBe(w.certificate_id);
+ });
+ it('never backfills old awards from mutable profiles; legacy remains distinct and visible with missing publication',async()=>{
+  await configure(false);await pass();
+  const legacy=(await db.query('select * from assessor_chapter_qualifications')).rows[0];
+  await db.exec("update training_program_chapters set availability='unavailable'");
+  const result=(await call(ids.self,'rpc_assessor_certifications_state',ids.program)).rows[0].result;
+  expect(result.find(c=>c.chapterKey==='chapter-1')).toMatchObject({awards:[],legacy:[{id:legacy.id,status:'active'}]});
+ });
+ it('retains an earned award without a snapshot and returns no public record or synthetic holder',async()=>{
+  await db.exec('alter table assessor_rollout_private.chapter_awards disable trigger capture_certificate_display');
+  const w=await earnedCertificate();
+  await db.exec('alter table assessor_rollout_private.chapter_awards enable trigger capture_certificate_display');
+  expect(await ownerCertificate(w.certificate_id)).toMatchObject({certificateId:w.certificate_id,displayVersion:null,holderName:null});
+  await db.exec('update assessor_rollout_private.certificate_output_control set public_verification_enabled=true');
+  expect(await verifyCertificate(w.certificate_id)).toEqual({available:true,found:false});
+  expect(await rows()).toEqual([w]);
+ });
+ it('protects private tables and internal status helpers from direct use',async()=>{
+  for(const actorId of [ids.self,null])for(const table of ['certificate_display_snapshots','certificate_output_control']){
+   await expect(actor(actorId,()=>db.exec(`select * from assessor_rollout_private.${table}`))).rejects.toThrow('permission denied');
+  }
+  await expect(call(ids.self,'assessor_rollout_private.certificate_current_status',uuid(999))).rejects.toThrow('permission denied');
  });
 });

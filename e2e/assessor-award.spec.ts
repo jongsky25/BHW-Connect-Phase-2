@@ -1,5 +1,8 @@
 import {execFileSync} from 'node:child_process';
 import {randomUUID} from 'node:crypto';
+import {writeFileSync} from 'node:fs';
+import {PDFDocument} from 'pdf-lib';
+import AxeBuilder from '@axe-core/playwright';
 import {expect,test} from '@playwright/test';
 import {STABLE_CITY_ADMIN,createThrowawayAssessor,getAccessToken,onboardThroughLogin,restGet} from './fixtures/auth';
 
@@ -10,7 +13,7 @@ function localSql(sql:string) {
     {input:sql,encoding:'utf8',timeout:15000});
 }
 
-test('combined award validates real authenticated completion and concurrent recovery without changing earned passes',async({page,request})=>{
+test('combined award validates real authenticated completion and concurrent recovery without changing earned passes',async({page,request,browser})=>{
   test.setTimeout(240000);
   const cityToken=await getAccessToken(request,STABLE_CITY_ADMIN.username,STABLE_CITY_ADMIN.password);
   const assessor=await createThrowawayAssessor(request,cityToken,'00000000-0000-0000-0000-000000000004');
@@ -36,6 +39,7 @@ test('combined award validates real authenticated completion and concurrent reco
     await page.goto(`${base}/briefing`);await page.getByRole('checkbox').check();await page.getByRole('button',{name:'Itala ang aking pagkilala'}).click();
     await expect(page.getByRole('link',{name:'Magpatuloy sa aking pag-aaral sa Kabanata 1'})).toBeVisible();
     localSql(`
+      update users set full_name='Fictional Alex Peña with a deliberately long display name for certificate wrapping' where id='${actor.id}';
       do $$ declare r jsonb; m uuid; l uuid; rev uuid; pos integer:=0; begin
       for r in select value from assessor_private.exam_requirements, jsonb_array_elements(required_lessons) where chapter_key='chapter-1' loop
         select id into m from course_modules where course_id='${course}' and position=(r->>'position')::int;
@@ -76,7 +80,7 @@ test('combined award validates real authenticated completion and concurrent reco
     localSql(`insert into assessor_rollout_private.award_contracts values(
       'chapter-1:c1af.draft-1','2026-09-28.1','local-rubric','2026-09-29.1','local-award',
       'chapter-1-maria-communication-storyboard','1.0.0','${JSON.stringify(checkpointIds)}','[1,1,1,1,1,1,1,1,1,1,1]',
-      '${JSON.stringify(approvals)}','{"organization":"LOCAL TEST ONLY","signatory":"Fixture","title":"Test issuer"}',true,true);
+      '${JSON.stringify(approvals)}','{"organization":"LOCAL TEST ONLY — Fictional organization for chapter-scoped certificate layout verification","signatory":"Fictional fixture signatory for certificate layout checks","title":"Fictional local issuer signing this test-only Chapter 1 achievement with a deliberately long display title"}',true,true);
       update assessor_rollout_private.simulation_control set enabled=true;`);
     await page.goto(`${base}/simulation`);
     await expect(page.getByRole('heading',{name:/1\./})).toBeVisible();
@@ -104,6 +108,77 @@ test('combined award validates real authenticated completion and concurrent reco
     expect(localSql(`select count(*) from audit_events where event_type='assessor.chapter_award.issued' and subject_id='${saved.awards[0].awardId}'`).trim()).toBe('1');
     await page.reload();await expect(page.getByRole('status').last()).toContainText('Naitala ang pagkumpleto');
     expect(snapshot()).toBe(before);
+    // C1AF-08: output is read-only across page, print, download and minimal
+    // public verification. All disclosure/status changes are local fixtures.
+    const certificateId=saved.awards[0].certificateId;
+    const awardEvidence=()=>localSql(`select to_jsonb(w)-'status'-'status_changed_at' from assessor_rollout_private.chapter_awards w where certificate_id='${certificateId}'`).trim();
+    const immutableBefore=awardEvidence();
+    for(const locale of ['en','fil'] as const){
+      // The runner's language buttons are rehearsal-local; use the real
+      // account preference for server-rendered certificate routes.
+      const preference=await rpc('rpc_update_settings',{p_language:locale,p_theme:'system',p_font_scale:'md',p_high_contrast:false});
+      expect(preference.ok(),await preference.text()).toBe(true);
+      for(const width of [390,768,1440]){
+        await page.setViewportSize({width,height:960});
+        await page.goto(`/training/${program}/assessor/qualifications`);
+        await expect(page.getByRole('heading',{name:locale==='en'?'My certifications':'Aking mga sertipikasyon',exact:true})).toBeVisible();
+        await expect(page.getByText(locale==='en'?'1/3 current compatible chapter certifications':'1/3 kasalukuyang katugmang sertipikasyon ng kabanata')).toBeVisible();
+        await expect(page.getByRole('heading',{name:locale==='en'?'Chapter 3':'Kabanata 3',exact:true})).toBeVisible();
+        await page.getByRole('link',{name:locale==='en'?'View certificate':'Tingnan ang sertipiko',exact:true}).click();
+        await expect(page.getByRole('heading',{name:/BHW Reference Manual/})).toBeVisible();
+        await expect(page.getByText(/Fictional Alex Peña/)).toBeVisible();
+        expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+        await page.getByRole('button',{name:locale==='en'?'Print certificate':'I-print ang sertipiko'}).focus();
+        await expect(page.getByRole('button',{name:locale==='en'?'Print certificate':'I-print ang sertipiko'})).toBeFocused();
+        const axe=await new AxeBuilder({page}).include('[data-assessor-certificate]').analyze();
+        expect(axe.violations).toEqual([]);
+        await page.screenshot({path:`/tmp/c1af-certificate-${locale}-${width}.png`,fullPage:true});
+      }
+      await page.emulateMedia({media:'print'});
+      await expect(page.locator('.assessor-certificate-actions')).toBeHidden();
+      await expect(page.locator('.assessor-certificate-document')).toBeVisible();
+      await page.screenshot({path:`/tmp/c1af-certificate-print-${locale}.png`,fullPage:true});
+      await page.emulateMedia({media:'screen'});
+      const downloadPromise=page.waitForEvent('download');
+      await page.getByRole('link',{name:locale==='en'?'Download PDF':'I-download ang PDF',exact:true}).click();
+      const download=await downloadPromise;
+      expect(download.suggestedFilename()).toBe(`assessor-chapter-1-${certificateId}.pdf`);
+      await download.saveAs(`/tmp/c1af-earned-${locale}.pdf`);
+      const response=await page.request.get(`/api/assessor-certificates/${certificateId}/pdf`);
+      expect(response.status()).toBe(200);expect(response.headers()['content-type']).toBe('application/pdf');
+      expect(response.headers()['cache-control']).toBe('private, no-store');
+      const pdf=await PDFDocument.load(await response.body());
+      expect(pdf.getSubject()).toContain(certificateId);
+      expect(pdf.getTitle()).toContain(locale==='en'?'Assessor/Facilitator, Chapter 1':'Tagatasa/Tagapagpadaloy, Kabanata 1');
+    }
+    const anonymous=await browser.newContext();const publicPage=await anonymous.newPage();
+    try{
+      await publicPage.goto(`/certificates/assessor/${certificateId}`);
+      await expect(publicPage.getByText('Hindi pa available ang pampublikong verification.')).toBeVisible();
+      localSql('update assessor_rollout_private.certificate_output_control set public_verification_enabled=true');
+      for(const status of ['active','suspended','revoked'] as const){
+        localSql(`update assessor_rollout_private.chapter_awards set status='${status}',status_changed_at=now() where certificate_id='${certificateId}'`);
+        await publicPage.reload();
+        await expect(publicPage.getByText(/Fictional Alex Peña/)).toHaveCount(0);
+        await expect(publicPage.getByText(status==='active'?'Kasalukuyang katayuan: Aktibong tala ng pagkamit':status==='suspended'?'Kasalukuyang katayuan: Sinuspinde':'Kasalukuyang katayuan: Binawi',{exact:true})).toBeVisible();
+        const verification=await request.post(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/rpc/rpc_assessor_certificate_verify`,{headers:{apikey:process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!},data:{p_certificate_id:certificateId}});
+        const record=await verification.json();expect(record.status).toBe(status);
+        expect(Object.keys(record).sort()).toEqual(['available','found','certificateType','certificateId','chapterKey','titleFil','titleEn','issuedAt','issuerOrganization','status','currentPermission'].sort());
+      }
+      await publicPage.goto('/certificates/assessor/SAMPLE');
+      await expect(publicPage.getByText('Walang nakitang sertipiko ng tagatasa/tagapagpadaloy para sa ID na ito.')).toBeVisible();
+      await publicPage.goto(`/assessor-certificates/${certificateId}`);await expect(publicPage).toHaveURL(/\/login/);
+      expect((await anonymous.request.get(`/api/assessor-certificates/${certificateId}/pdf`)).status()).toBe(401);
+      await page.goto(`/assessor-certificates/${certificateId}`);
+      await expect(page.getByText('Kasalukuyang katayuan: Binawi',{exact:true})).toBeVisible();
+      const revokedPdf=await page.request.get(`/api/assessor-certificates/${certificateId}/pdf`);expect(revokedPdf.status()).toBe(200);
+      writeFileSync('/tmp/c1af-earned-revoked.pdf',await revokedPdf.body());
+      // Restore fixture status so C1AF-07's existing gate-off read assertion
+      // still compares the same history rather than our intentional lifecycle change.
+      localSql(`update assessor_rollout_private.chapter_awards set status='active',status_changed_at=null where certificate_id='${certificateId}'`);
+      expect(awardEvidence()).toBe(immutableBefore);expect(snapshot()).toBe(before);
+      expect(localSql(`select count(*) from audit_events where event_type='assessor.chapter_award.issued' and subject_id='${saved.awards[0].awardId}'`).trim()).toBe('1');
+    }finally{await anonymous.close();localSql('update assessor_rollout_private.certificate_output_control set public_verification_enabled=false');}
     localSql("update feature_flags set enabled=false where key='assessor_flow_awards'");
     expect((await rpc('rpc_assessor_chapter_award_ensure',{p_chapter_id:chapter})).ok()).toBe(false);
     expect(await (await rpc('rpc_assessor_chapter_award_state',{p_chapter_id:chapter})).json()).toEqual(saved);
@@ -113,6 +188,9 @@ test('combined award validates real authenticated completion and concurrent reco
       -- Fixture disposal only: immutable content is never altered during the journey.
       alter table course_lesson_revisions disable trigger training_revision_immutable;
       alter table assessor_rollout_private.chapter_awards disable trigger preserve_chapter_award;
+      alter table assessor_rollout_private.certificate_display_snapshots disable trigger preserve_certificate_display;
+      delete from assessor_rollout_private.certificate_display_snapshots where award_id in(select id from assessor_rollout_private.chapter_awards where chapter_id='${chapter}');
+      alter table assessor_rollout_private.certificate_display_snapshots enable trigger preserve_certificate_display;
       delete from assessor_rollout_private.chapter_awards where chapter_id='${chapter}';
       alter table assessor_rollout_private.chapter_awards enable trigger preserve_chapter_award;
       delete from assessor_rollout_private.award_contracts where requirements_version='chapter-1:c1af.draft-1';
