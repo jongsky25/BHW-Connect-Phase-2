@@ -48,7 +48,9 @@ begin
   join public.courses c on c.id = ch.course_id and c.status = 'published'
   where pr.id = p_program_id and pr.content_key = 'bhw-reference-manual'
     and pr.status = 'published' and ch.chapter_key = 'chapter-1'
-    and ch.availability = 'available';
+    and ch.availability = 'available'
+    and public.org_visible_to_actor(pr.org_unit_id)
+    and public.org_visible_to_actor(c.org_unit_id);
   if chapter_course is null then raise exception 'chapter unavailable'; end if;
 
   with matching as (

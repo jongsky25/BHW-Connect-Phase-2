@@ -5,7 +5,8 @@ import {afterAll,beforeAll,describe,expect,it} from 'vitest';
 
 const id = n => `00000000-0000-4000-8000-${String(n).padStart(12,'0')}`;
 const v = {city:id(1),barangay:id(2),second:id(3),away:id(4),assessor:id(5),admin:id(6),
-  inactive:id(7),outsider:id(8),program:id(9),chapter:id(10),course:id(11)};
+  inactive:id(7),outsider:id(8),program:id(9),chapter:id(10),course:id(11),
+  foreignProgram:id(12),foreignChapter:id(13),foreignCourse:id(14)};
 let db;
 async function read(actor,args={}) {
   await db.exec('begin');
@@ -33,8 +34,15 @@ beforeAll(async()=>{
       select u from public.users u where u.id::text=nullif(current_setting('test.actor',true),'')
     $$;
     create table super_admin_personas(persona_user_id uuid primary key);
-    create table training_programs(id uuid primary key,content_key text,status text);
-    create table courses(id uuid primary key,status text);
+    create function org_visible_to_actor(p_org uuid) returns boolean language sql stable security definer
+      set search_path=public as $$
+      select exists(select 1 from org_units target, org_units own, users actor
+        where target.id=p_org and actor.id::text=nullif(current_setting('test.actor',true),'')
+          and own.id=actor.org_unit_id and (target.path like own.path || '%'
+            or own.path like target.path || '%'))
+    $$;
+    create table training_programs(id uuid primary key,content_key text,status text,org_unit_id uuid);
+    create table courses(id uuid primary key,status text,org_unit_id uuid);
     create table training_program_chapters(id uuid primary key,program_id uuid,chapter_key text,
       availability text,course_id uuid);
     create table course_progress(bhw_user_id uuid,course_id uuid,status text);
@@ -49,10 +57,14 @@ beforeAll(async()=>{
     [v.assessor,'assessor','active',v.city,'Assessor'],[v.admin,'admin','active',v.city,'Admin'],
     [v.inactive,'assessor','deactivated',v.city,'Inactive'],[v.outsider,'assessor','active',v.away,'Outsider'],
   ]) await db.query('insert into users values($1,$2,$3,$4,$5)',[person,role,status,unit,name]);
-  await db.query("insert into training_programs values($1,'bhw-reference-manual','published')",[v.program]);
-  await db.query("insert into courses values($1,'published')",[v.course]);
+  await db.query("insert into training_programs values($1,'bhw-reference-manual','published',$2)",[v.program,v.city]);
+  await db.query("insert into courses values($1,'published',$2)",[v.course,v.city]);
   await db.query("insert into training_program_chapters values($1,$2,'chapter-1','available',$3)",
     [v.chapter,v.program,v.course]);
+  await db.query("insert into training_programs values($1,'bhw-reference-manual','published',$2)",[v.foreignProgram,v.away]);
+  await db.query("insert into courses values($1,'published',$2)",[v.foreignCourse,v.away]);
+  await db.query("insert into training_program_chapters values($1,$2,'chapter-1','available',$3)",
+    [v.foreignChapter,v.foreignProgram,v.foreignCourse]);
   for(let n=0;n<23;n++) {
     const person=id(100+n),unit=n%2 ? v.second : v.barangay;
     await db.query('insert into users values($1,\'bhw\',\'active\',$2,$3)',
@@ -93,7 +105,8 @@ describe('C1AF-10 scoped workspace roster',()=>{
     for(const person of [v.admin,v.inactive])
       await expect(read(person)).rejects.toThrow('not authorized');
     await expect(read(v.assessor,{area:v.away})).rejects.toThrow('area outside catchment');
+    await expect(read(v.assessor,{program:v.foreignProgram})).rejects.toThrow('chapter unavailable');
     await expect(read(v.assessor,{status:'anything'})).rejects.toThrow('invalid status filter');
-    expect((await read(v.outsider)).total).toBe(1);
+    await expect(read(v.outsider)).rejects.toThrow('chapter unavailable');
   });
 });
