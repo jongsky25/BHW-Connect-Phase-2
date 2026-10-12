@@ -814,3 +814,13 @@ body {
   margin-inline: auto;
   object-fit: contain;
 }
+
+@media print {
+  body:has([data-assessor-certificate]) * { visibility: hidden; }
+  body:has([data-assessor-certificate]) [data-assessor-certificate],
+  body:has([data-assessor-certificate]) .assessor-certificate-document,
+  body:has([data-assessor-certificate]) .assessor-certificate-document * { visibility: visible; }
+  [data-assessor-certificate] { position: absolute; inset: 0; max-width: none; margin: 0; padding: 1cm; }
+  [data-assessor-certificate] .assessor-certificate-actions { display: none; }
+  .assessor-certificate-document { border: 1px solid #555; border-radius: 0; break-inside: avoid; }
+}

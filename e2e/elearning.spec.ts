@@ -110,6 +110,11 @@ test("admin creates a course, a BHW completes it and passes the quiz, an assesso
   await page.goto(`/certificates/${verificationCode}`);
   await expect(page.getByText("Wastong sertipiko")).toBeVisible();
   await expect(page.getByText("Stable Pilot BHW")).toBeVisible();
+  // Assessor output must preserve the existing BHW verifier/PDF contract.
+  const pdf = await page.request.get(`/api/certificates/${verificationCode}/pdf`);
+  expect(pdf.status()).toBe(200);
+  expect(pdf.headers()["content-type"]).toBe("application/pdf");
+  expect((await pdf.body()).subarray(0, 5).toString()).toBe("%PDF-");
 });
 
 test("a city-level course cascades down to a barangay BHW, and a sibling barangay also sees it", async ({ request }) => {
