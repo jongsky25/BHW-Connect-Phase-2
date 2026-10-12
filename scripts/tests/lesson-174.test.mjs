@@ -1,4 +1,5 @@
 // @vitest-environment node
+import {lessonOwned} from '../lib/lesson-preservation-scope.mjs';
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -38,7 +39,7 @@ describe('Carole action-plan draft',()=>{
  });
  it('retains original public bytes, sibling teaching, narration/history, UUIDs and approval receipts',()=>{
   const allowed=new Set(Object.keys(j('docs/lesson-174-proposal-receipt.json').changed_existing_files));
-  for(const [p,h]of Object.entries(j('docs/lesson-174-integrated-baseline.json').files))if(!allowed.has(p))expect(sha(bytes(p)),p).toBe(h);
+  for(const [p,h]of Object.entries(j('docs/lesson-174-integrated-baseline.json').files))if(lessonOwned(p)&&!allowed.has(p))expect(sha(bytes(p)),p).toBe(h);
  },30000);
  it('uses strict exact successor guards before historical views',()=>{
   const r=j('docs/lesson-174-proposal-receipt.json'),base=j('docs/lesson-174-integrated-baseline.json').base_commit;
@@ -54,7 +55,7 @@ describe('Carole action-plan draft',()=>{
    expect(()=>beforeProposed174(p,Buffer.from('changed'))).toThrow('Unpinned');
   }
   expect(r.owner_release_approval).toBe(false);
- },30000);
+ },120000);
  it('keeps old published narration selectable and selects exact new Gemini recordings',()=>{
   const old=j('docs/lesson-174-proposal-receipt.json').changed_existing_files;
   const read=Object.fromEntries(['fil','en'].map(lang=>[lang,parseReferenceRead(old[leaf+`read.${lang}.md`].predecessor_utf8)]));

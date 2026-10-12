@@ -1,4 +1,5 @@
 import {reviewed193View} from './lesson-193-release-integration.mjs';
+import {beforeCiScope} from './ci-scope-integration.mjs';
 // Hash-bound predecessor view for historical checks only; current loaders use current bytes.
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -7,11 +8,12 @@ const leaf='content/training/day1-basic-competencies/modules/09-sustainable-prac
 const shared=new Set(['content/training/day1-basic-competencies/narration.json','scripts/lib/lesson-191-integration.mjs','scripts/tests/lesson-191-release.test.mjs','scripts/lib/lesson-192-integration.mjs','src/components/elearning/reference-lessons.tsx','remotion/src/Root.tsx','scripts/tests/lesson-192-release.test.mjs']);
 let receipt,earlierReceipt,auditReceipt;
 export function beforeLesson193(p,actual=fs.readFileSync(p)){
+ actual=beforeCiScope(p,actual);
  if(p===leaf+'lesson.json'&&sha(actual)===sha(fs.readFileSync(p)))actual=reviewed193View(p,actual);
  const r=receipt??=JSON.parse(fs.readFileSync('docs/lesson-193-proposal-receipt.json'));
  if(r.target!=='resources-monitor'||r.owner_release_approval!==false||Object.keys(r.changed_existing_files).some(key=>!key.startsWith(leaf)&&!shared.has(key)))throw Error('Invalid lesson 1.9.3 preservation scope');
  const e=r.changed_existing_files[p];if(!e)return actual;
- if(sha(reviewed193View(p))!==e.proposed_sha256)throw Error('Unpinned integrated successor; Unpinned lesson 1.9.3 successor: '+p);
+ if(sha(reviewed193View(p,beforeCiScope(p)))!==e.proposed_sha256)throw Error('Unpinned integrated successor; Unpinned lesson 1.9.3 successor: '+p);
  // Preserve idempotence of the already approved 1.9.2 predecessor guard.
  const earlier=(earlierReceipt??=JSON.parse(fs.readFileSync('docs/lesson-192-proposal-receipt.json'))).changed_existing_files[p];
  if(earlier&&sha(actual)===earlier.predecessor_sha256&&sha(Buffer.from(earlier.predecessor_utf8))===earlier.predecessor_sha256)return actual;

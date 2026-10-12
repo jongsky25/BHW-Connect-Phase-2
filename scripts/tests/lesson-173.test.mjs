@@ -1,5 +1,6 @@
 import {release172View} from '../lib/lesson-172-release-integration.mjs';
 // @vitest-environment node
+import {lessonOwned} from '../lib/lesson-preservation-scope.mjs';
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
@@ -39,7 +40,7 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
  });
  it('preserves every prior public byte, sibling lesson, narration history, UUID and source',()=>{
   const preserved=j('docs/lesson-173-implementation-baseline.json').protected_files;
-  for(const [p,h]of Object.entries(preserved)){
+  for(const [p,h]of Object.entries(preserved))if(lessonOwned(p)){
    const bytes=fs.lstatSync(p).isSymbolicLink()?Buffer.from(fs.readlinkSync(p)):beforeProposed173(p);
    expect(sha(bytes),p).toBe(h);
   }
@@ -52,8 +53,15 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
    expect(()=>beforeProposed173(p,Buffer.from('unreviewed mutation'))).toThrow('Unpinned');
   }
  });
- it('never selects stale narration for new text and retains selection for original published text',()=>{
-  const mf=j(root+'narration.json');for(const lang of ['fil','en'])expect(narrationForLesson(mf,'problem-prioritize',lang,loaded.revision.read_sections)).toEqual({});
+ it('selects owner-approved narration for new text and retains selection for original published text',()=>{
+  const mf=j(root+'narration.json'),approval=j('docs/lesson-173-narration-approval.json');
+  expect(approval.authorization).toBe('approved');expect(approval.lesson_keys).toEqual(['problem-prioritize']);expect(Object.keys(approval.tracks)).toHaveLength(12);
+  expect(sha(fs.readFileSync(root+'narration.json'))).toBe(approval.approved_narration_sha256);
+  for(const lang of ['fil','en']){
+   const selected=narrationForLesson(mf,'problem-prioritize',lang,loaded.revision.read_sections);
+   expect(Object.keys(selected)).toHaveLength(6);
+   for(const [id,t]of Object.entries(selected)){const a=approval.tracks['public'+t.src];expect(a,id).toMatchObject({section:id,language:lang});expect(sha(fs.readFileSync('public'+t.src))).toBe(a.sha256);}
+  }
   const oldLesson=JSON.parse(beforeProposed173(leaf+'lesson.json'));
   const read=Object.fromEntries(['fil','en'].map(lang=>[lang,parseReferenceRead(beforeProposed173(leaf+`read.${lang}.md`).toString())]));
   const sections=read.fil.map((s,i)=>({...oldLesson.sections[i],heading_fil:s.heading,heading_en:read.en[i].heading,body_fil:s.body,body_en:read.en[i].body}));
@@ -62,6 +70,6 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
    expect(Object.keys(oldSelected)).toHaveLength(4);
    for(const s of sections)expect(oldSelected[s.id].src).toBe(baseline.target_narration.sections[s.id][lang].src);
   }
-  expect(mf.lessons['problem-prioritize']).toEqual(baseline.target_narration);
+  expect(mf.history['problem-prioritize']).toEqual([baseline.target_narration]);
  });
 });

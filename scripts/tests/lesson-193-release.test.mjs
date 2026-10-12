@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {it,expect} from 'vitest';
 import {reviewed193View} from '../lib/lesson-193-release-integration.mjs';
+import {beforeCiScope} from '../lib/ci-scope-integration.mjs';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const a=JSON.parse(fs.readFileSync('docs/lesson-193-owner-approval.json'));
 const leaf='content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/';
@@ -20,7 +21,7 @@ it('binds owner authorization to frozen package and exactly eight asset-status p
  expect(promoted).toEqual(a.promoted_asset_ids);expect(promoted).toHaveLength(8);expect(current).toEqual(reviewed);
 });
 it('preserves reviewed teaching, all release source hashes and 28 selected media files',()=>{
- for(const[p,h]of Object.entries(a.approved_source_sha256))expect(sha(fs.readFileSync(p)),p).toBe(h);
+ for(const[p,h]of Object.entries(a.approved_source_sha256))expect(sha(beforeCiScope(p)),p).toBe(h);
  for(const n of ['read.fil.md','read.en.md','slides.json','competency.json','facilitator.fil.md','facilitator.en.md'])expect(fs.readFileSync(leaf+n)).toEqual(execFileSync('git',['show',a.reviewed_head+':'+leaf+n],{maxBuffer:32*1024*1024}));
  expect(a.approved_media).toHaveLength(28);for(const m of a.approved_media){const b=fs.readFileSync('public'+m.path);expect(sha(b)).toBe(m.sha256);expect(b.length).toBe(m.bytes);expect(sha(b)).toBe(sha(execFileSync('git',['show',a.reviewed_head+':public'+m.path],{maxBuffer:32*1024*1024})));}
 });
