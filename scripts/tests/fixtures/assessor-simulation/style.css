@@ -1,0 +1,37 @@
+:root { font: 17px/1.6 system-ui, sans-serif; color: #17342f; background: #f3f6f3; color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1050px; margin: auto; padding: 24px; }
+h1 { line-height: 1.2; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+h2 { line-height: 1.3; }
+header, main > section { margin-bottom: 24px; }
+section, fieldset, aside { border: 1px solid #6a8279; border-radius: 12px; padding: 18px; margin-block: 16px; min-width: 0; }
+section section { background: #e5eee8; }
+button, textarea { font: inherit; color: inherit; border: 1px solid #6a8279; border-radius: 8px; background: #fff; }
+button { padding: 10px 14px; min-height: 44px; cursor: pointer; margin: 4px; text-align: left; }
+button:hover { background: #dbece4; }
+button:disabled { opacity: .55; cursor: default; }
+button[aria-current], button[aria-pressed="true"] { background: #205747; color: #fff; }
+:focus-visible { outline: 3px solid #aa5100; outline-offset: 3px; }
+nav ol { display: flex; flex-wrap: wrap; gap: 4px; list-style: none; padding: 0; }
+nav button { font-size: .9rem; }
+.notice, .sample { border-left: 5px solid #946500; padding: 14px; background: #fff4d4; }
+.evidence { white-space: pre-line; }
+.choices { display: grid; gap: 8px; }
+.fact { display: flex; align-items: start; gap: 12px; padding: 10px 0; }
+input[type="checkbox"] { min-width: 22px; height: 22px; margin-top: 6px; }
+textarea { display: block; width: 100%; min-height: 120px; padding: 12px; }
+dt, legend { font-weight: 650; }
+dd { margin: 4px 0 16px; }
+summary { cursor: pointer; padding: 10px 0; }
+.navigation { display: flex; flex-wrap: wrap; justify-content: space-between; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 450px) { main { padding: 12px; } section, fieldset { padding: 12px; } }
+@media (prefers-color-scheme: dark) {
+  :root { color: #e5eee8; background: #13241f; }
+  section section { background: #213c32; }
+  button, textarea { background: #19352b; }
+  button:hover { background: #315c4d; }
+  .notice, .sample { background: #3f3216; border-color: #e8bd4a; }
+  :focus-visible { outline-color: #ffc55c; }
+}
