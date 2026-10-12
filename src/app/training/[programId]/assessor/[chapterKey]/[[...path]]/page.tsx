@@ -111,7 +111,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
     const available=study.entries.flatMap(e=>e.lesson?[e.lesson]:[]);
     const index=available.findIndex(l=>l.id===lesson.id);
     const next=available[index+1];
-    reader=<ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision}],...studyReaderData(chapter.id,(completed??[]).filter(c=>c.lesson_id===lesson.id),(resumes??[]).filter(r=>r.lesson_id===lesson.id))}}
+    reader=<ManualLesson storyQuestionHandoff={chapterKey==='chapter-1'} data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision}],...studyReaderData(chapter.id,(completed??[]).filter(c=>c.lesson_id===lesson.id),(resumes??[]).filter(r=>r.lesson_id===lesson.id))}}
       modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={`${base}/${subchapter.id}`} returnHref={`${base}/${subchapter.id}`}
       locale={en?'en':'fil'} readOnly={false} assessorChapterId={chapter.id} lessonNumber={study.entries.findIndex(e=>e.lesson?.id===lesson.id)+1} lessonCount={study.total}
       nextLessonHref={next?href(next):undefined}

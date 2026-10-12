@@ -140,3 +140,121 @@ describe('formative lesson completion',()=>{
     expect(screen.getByRole('button',{name:/Listen/})).toBeInTheDocument();
   });
 });
+
+describe('Chapter 1 story handoff',()=>{
+  function storyData() {
+    const d=data();
+    d.lessons[0].revision.read_sections=[part('intro'),part('question-one',true),part('question-two',true),part('end')];
+    const asset={id:'story',path:'/poster.png',alt_en:'Story',alt_fil:'Kuwento',caption_en:'Story',caption_fil:'Kuwento',videos:{en:{path:'/story-en.mp4'},fil:{path:'/story-fil.mp4'}}};
+    d.lessons[0].revision.assets=[asset as typeof d.lessons[0]['revision']['assets'][number]];
+    d.lessons[0].revision.featured_asset_id=asset.id;
+    return d;
+  }
+  function storyView(d=storyData(),complete=vi.fn().mockResolvedValue(undefined),extra={}) {
+    return view(d,complete,{storyQuestionHandoff:true,...extra});
+  }
+  function playStory(container:HTMLElement) {
+    fireEvent.click(screen.getByRole('button',{name:'Narrated story'}));
+    return container.querySelector('video')!;
+  }
+  it('opens and focuses the first unanswered question on ended, then guides through checks and saves',async()=>{
+    const complete=vi.fn().mockResolvedValue(undefined);
+    const {container}=storyView(undefined,complete);
+    fireEvent.ended(playStory(container));
+    expect(screen.getByRole('heading',{name:'question-one'})).toBeInTheDocument();
+    await waitFor(()=>expect(screen.getByRole('group',{name:check.prompt_en})).toHaveFocus());
+    expect(complete).not.toHaveBeenCalled();expect(button()).toBeDisabled();
+    fireEvent.click(screen.getByRole('button',{name:'Guess'}));
+    expect(screen.getByText('Not quite. Try again.')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:'Next question'}));
+    expect(screen.getByRole('heading',{name:'question-two'})).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));
+    fireEvent.click(screen.getByRole('button',{name:'Continue to lesson end'}));
+    expect(button()).toBeEnabled();fireEvent.click(button());
+    await screen.findByRole('button',{name:'Completed'});
+    expect(complete).toHaveBeenCalledTimes(1);
+    expect(screen.getByRole('link',{name:/Next lesson/})).toHaveAttribute('href','/lessons/next');
+  });
+  it('offers a manual handoff before playback ends and preserves previous attempts',()=>{
+    const {container}=storyView();playStory(container);
+    fireEvent.click(screen.getByRole('button',{name:'Continue to question'}));
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));
+    fireEvent.ended(playStory(container));
+    expect(screen.getByRole('heading',{name:'question-two'})).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:'Previous'}));
+    expect(screen.getByRole('button',{name:'Ask'})).toHaveAttribute('aria-pressed','true');
+  });
+  it('keeps Slides selected and does not borrow Read answers',()=>{
+    const {container}=storyView();fireEvent.ended(playStory(container));
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));
+    fireEvent.click(screen.getByRole('button',{name:'Slides'}));
+    fireEvent.ended(playStory(container));
+    expect(screen.getByRole('heading',{name:'slide-check'})).toBeInTheDocument();
+    expect(screen.getByRole('button',{name:'Slides'})).toHaveAttribute('aria-pressed','true');
+    expect(button()).toBeDisabled();
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));expect(button()).toBeEnabled();
+  });
+  it('moves to the final section if all checks have already been attempted',()=>{
+    const {container}=storyView();fireEvent.ended(playStory(container));
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(screen.getByRole('button',{name:'Next question'}));
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));
+    fireEvent.ended(playStory(container));
+    expect(screen.getByRole('heading',{name:'end'})).toBeInTheDocument();expect(button()).toBeEnabled();
+  });
+  it('preserves the three-check story unlock rule',()=>{
+    const d=storyData();d.lessons[0].lesson_key='resources-monitor';
+    d.lessons[0].revision.read_sections=[part('one',true),part('two',true),part('three',true)];
+    storyView(d);
+    expect(screen.getByRole('button',{name:'Narrated story'})).toBeDisabled();
+    for(let i=0;i<3;i++){
+      fireEvent.click(screen.getByRole('button',{name:'Ask'}));
+      if(i<2)fireEvent.click(screen.getByRole('button',{name:'Next question'}));
+    }
+    expect(screen.getByRole('button',{name:'Narrated story'})).toBeEnabled();
+  });
+  it('keeps completion and save retry accessible inside fullscreen',async()=>{
+    const original=Object.getOwnPropertyDescriptor(HTMLDialogElement.prototype,'showModal');
+    Object.defineProperty(HTMLDialogElement.prototype,'showModal',{configurable:true,value:function(this:HTMLDialogElement){this.setAttribute('open','');}});
+    try {
+    const complete=vi.fn().mockRejectedValueOnce(Error('offline')).mockResolvedValue(undefined);
+    const {container}=storyView(undefined,complete);playStory(container);
+    fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
+    const dialog=container.querySelector('dialog')!;
+    fireEvent.ended(dialog.querySelector('video')!);
+    expect(dialog.querySelector('h2')).toHaveTextContent('question-one');
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(screen.getByRole('button',{name:'Next question'}));
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(screen.getByRole('button',{name:'Continue to lesson end'}));
+    expect(dialog.contains(button())).toBe(true);expect(container.querySelectorAll('#lesson-completion-help')).toHaveLength(1);
+    fireEvent.click(button());
+    expect(dialog.contains(await screen.findByRole('alert'))).toBe(true);
+    expect(screen.queryByRole('link',{name:/Next lesson/})).not.toBeInTheDocument();
+    fireEvent.click(button());await screen.findByRole('button',{name:'Completed'});
+    expect(dialog.contains(screen.getByRole('link',{name:/Next lesson/}))).toBe(true);
+    expect(complete).toHaveBeenCalledTimes(2);
+    } finally {
+      if(original)Object.defineProperty(HTMLDialogElement.prototype,'showModal',original);
+      else Reflect.deleteProperty(HTMLDialogElement.prototype,'showModal');
+    }
+  });
+  it('does not redirect replay of an already completed lesson',()=>{
+    const d=storyData();d.completed=[{lesson_id:'lesson'} as typeof d.completed[number]];
+    const {container}=storyView(d);const video=playStory(container);fireEvent.ended(video);
+    expect(container.querySelector('video')).toBe(video);
+    fireEvent.click(screen.getByRole('button',{name:'Continue to lesson end'}));
+    expect(screen.getByRole('button',{name:'Completed'})).toBeDisabled();
+  });
+  it('does not enable the handoff outside Chapter 1',()=>{
+    const {container}=storyView(undefined,undefined,{storyQuestionHandoff:false});
+    const video=playStory(container);fireEvent.ended(video);
+    expect(container.querySelector('video')).toBe(video);
+    expect(screen.queryByRole('button',{name:'Continue to question'})).not.toBeInTheDocument();
+  });
+  it('supports Filipino and read-only preview without saving completion',()=>{
+    const complete=vi.fn();const {container}=storyView(undefined,complete,{locale:'fil',readOnly:true});
+    fireEvent.click(screen.getByRole('button',{name:'Kuwentong may salaysay'}));
+    expect(screen.getByRole('button',{name:'Magpatuloy sa tanong'})).toBeInTheDocument();
+    fireEvent.ended(container.querySelector('video')!);
+    expect(screen.getByRole('heading',{name:'question-one'})).toBeInTheDocument();
+    expect(screen.queryByRole('button',{name:'Markahang tapos ang aralin'})).not.toBeInTheDocument();expect(complete).not.toHaveBeenCalled();
+  });
+});

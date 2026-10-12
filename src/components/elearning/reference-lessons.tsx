@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type Ref } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {useRouter} from "next/navigation";
@@ -22,7 +22,7 @@ import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import { ReferenceReadSection } from "./reference-read-section";
 import { LessonAssetFigure } from "./lesson-asset-figure";
 import { FittedLessonPage } from "./fitted-lesson-page";
-import { translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
+import { storyQuestionUi, translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
 
 type ResumeValue = Omit<CourseLessonResume, "course_progress_id" | "updated_at">;
 const RESUME_SAVE_DELAY_MS = 3000;
@@ -53,6 +53,7 @@ type Props = ReferenceData & {
   lessonBaseHref?: string;
   returnHref?: string;
   readOnly?: boolean;
+  storyQuestionHandoff?: boolean;
   lessonNumber?: number;
   lessonCount?: number;
   nextLessonHref?: string;
@@ -73,9 +74,9 @@ function repeatsCheckPrompt(body: string, prompt: string) {
   return normalize(lastParagraph) === normalize(prompt);
 }
 
-function Practice({ check, en, ui, promptShownInBody, answer, onAnswer }: { check: LessonCheck; en: boolean; ui: LessonText; promptShownInBody: boolean; answer: number | undefined; onAnswer: (answer: number) => void }) {
+function Practice({ check, en, ui, promptShownInBody, answer, onAnswer, questionRef }: { check: LessonCheck; en: boolean; ui: LessonText; promptShownInBody: boolean; answer: number | undefined; onAnswer: (answer: number) => void; questionRef?: Ref<HTMLFieldSetElement> }) {
   return (
-    <fieldset className="mt-5 rounded-lg border border-ink/20 p-4">
+    <fieldset ref={questionRef} tabIndex={-1} className="mt-5 rounded-lg border border-ink/20 p-4">
       <legend className="font-semibold">
         {promptShownInBody ? ui("Pumili ng sagot", "Choose an answer") : en ? check.prompt_en : check.prompt_fil}
       </legend>
@@ -138,6 +139,8 @@ export function ReferenceLessons(props: Props) {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   // Keyed by lesson id, like `answers`, so switching lessons doesn't lose it.
   const heading = useRef<HTMLHeadingElement>(null);
+  const question = useRef<HTMLFieldSetElement>(null);
+  const pendingHandoffFocus = useRef(false);
   const readerDialog = useRef<HTMLDialogElement>(null);
   const fullscreenTarget = useRef<HTMLDivElement>(null);
   const [readerOpen, setReaderOpen] = useState(false);
@@ -159,7 +162,7 @@ export function ReferenceLessons(props: Props) {
     (props.readOnly || translation.review_status === "approved") && translationMatchesLesson(sourceLesson, translation)) : [];
   const translation = availableTranslations.find(value => value.language === translationLanguage);
   const lesson = sourceLesson && translation ? translateLesson(sourceLesson, translation) : sourceLesson;
-  const ui: LessonText = (fil, eng) => translation?.ui[fil] ?? (en ? eng : fil);
+  const ui: LessonText = (fil, eng) => translation?.ui[fil] ?? (translation ? storyQuestionUi[translation.language][fil] : undefined) ?? (en ? eng : fil);
   const lessonNarration = translation ? translation.narration : (lesson ? props.narration?.[lesson.id] : undefined);
   const sourceStoryArt = lesson?.lesson_key === "bhw-roles-hepo"
     ? {
@@ -286,6 +289,7 @@ export function ReferenceLessons(props: Props) {
   const answerKey = (id: string) => `${lesson?.id}:${lesson?.revision.id}:${mode}:${id}`;
   const answer = item ? answers[answerKey(item.id)] : undefined;
   const checksAnswered = items.every(p => !p.check || answers[answerKey(p.id)] !== undefined);
+  const unansweredCheck = items.find(p => p.check && answers[answerKey(p.id)] === undefined);
   const featuredAsset = lesson?.revision.featured_asset_id
     ? lesson.revision.assets.find((a) => a.id === lesson.revision.featured_asset_id)
     : undefined;
@@ -337,6 +341,14 @@ export function ReferenceLessons(props: Props) {
     ? ui("Kuwentong may salaysay", "Narrated story")
     : "Video";
   const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered;
+  useEffect(() => {
+    if (!pendingHandoffFocus.current || videoSelected) return;
+    const target = question.current ?? heading.current;
+    if (!target) return;
+    pendingHandoffFocus.current = false;
+    target.focus();
+    target.scrollIntoView?.({ block: "center", behavior: "instant" });
+  }, [position, mode, videoSelected, readerOpen]);
   const revealSummary = !item?.check || answer !== undefined;
   // Offer full, synchronized speech only when a slide's narration exactly
   // matches a Read section. The normal selector still validates all timings.
@@ -348,8 +360,13 @@ export function ReferenceLessons(props: Props) {
   const promptShownInBody = item && "body_fil" in item && item.check
     ? repeatsCheckPrompt(en ? item.body_en : item.body_fil, en ? item.check.prompt_en : item.check.prompt_fil)
     : false;
-  const practice = item?.check ? <Practice check={item.check} en={en} ui={ui} promptShownInBody={Boolean(promptShownInBody)} answer={answer}
-    onAnswer={value => setAnswers(old => ({...old, [answerKey(item.id)]: value}))}/> : null;
+  const practice = item?.check ? <><Practice check={item.check} en={en} ui={ui} promptShownInBody={Boolean(promptShownInBody)} answer={answer}
+    questionRef={question} onAnswer={value => setAnswers(old => ({...old, [answerKey(item.id)]: value}))}/>
+    {props.storyQuestionHandoff && lesson && !done.has(lesson.id) && answer !== undefined && (unansweredCheck || index < items.length - 1) && <button
+      type="button" className="mt-3 rounded border border-primary px-4 py-3 font-semibold" onClick={continueToQuestion}>
+      {unansweredCheck ? ui("Susunod na tanong", "Next question") : ui("Magpatuloy sa dulo ng aralin", "Continue to lesson end")}
+    </button>}
+  </> : null;
   const figures =
     lesson && item
       ? item.asset_ids.map((id) => {
@@ -475,12 +492,12 @@ export function ReferenceLessons(props: Props) {
     save(l, m, p);
     requestAnimationFrame(() => heading.current?.focus());
   }
-  function move(p: typeof item, m = mode) {
+  function move(p: typeof item, m = mode, focusHeading = true) {
     if (!lesson || !p) return;
     setMode(m);
     setPosition(p.id);
     save(lesson, m, p);
-    requestAnimationFrame(() => heading.current?.focus());
+    if (focusHeading) requestAnimationFrame(() => heading.current?.focus());
   }
   function changeMode(next: LessonModality) {
     if (!lesson || !item) return;
@@ -494,6 +511,16 @@ export function ReferenceLessons(props: Props) {
       ),
       next,
     );
+  }
+  function continueToQuestion() {
+    if (!lesson) return;
+    const target = done.has(lesson.id) ? items.at(-1) : unansweredCheck ?? items.at(-1);
+    if (!target) return;
+    // Media events can run before React commits the new question. Focus it
+    // after the render, including when the fullscreen page is remounted.
+    pendingHandoffFocus.current = true;
+    setVideoSelected(false);
+    move(target, mode, false);
   }
   function openReader() {
     if ((lesson?.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up")) || lesson?.lesson_key === "bhw-accreditation" || lesson?.lesson_key === "bhw-eligibility" || lesson?.lesson_key === "bhw-benefits" || lesson?.lesson_key === "bhw-legal-role" || lesson?.lesson_key === "bhs-support-environment" || lesson?.lesson_key === "bhs-resources" || lesson?.lesson_key === "bhs-improvement") {
@@ -706,9 +733,70 @@ export function ReferenceLessons(props: Props) {
         asset={featuredVideo}
         en={en}
         language={translation?.language}
+        onEnded={props.storyQuestionHandoff && narratedStory && !done.has(lesson.id) ? continueToQuestion : undefined}
       />
+      {props.storyQuestionHandoff && narratedStory && <div className="space-y-3">
+        {!done.has(lesson.id) && <p className="text-sm">{ui("Pagkatapos ng kuwento, sagutin ang mga tanong para makumpleto ang aralin.", "After the story, answer the lesson questions to complete this lesson.")}</p>}
+        <button type="button" className="rounded bg-primary px-4 py-3 font-semibold text-on-primary" onClick={continueToQuestion}>
+          {unansweredCheck && !done.has(lesson.id) ? ui("Magpatuloy sa tanong", "Continue to question") : ui("Magpatuloy sa dulo ng aralin", "Continue to lesson end")}
+        </button>
+      </div>}
     </div>
   );
+
+  const completionControls = lesson && !props.readOnly && <div className="space-y-3">
+    {resourcesMonitorRevision && featuredVideo && !checksAnswered && <p className="text-sm">
+      {ui("Sagutin ang tatlong tanong sa Basahin o Slides para mabuksan ang kuwento at itinamang wakas.", "Answer all three checks in Read or Slides to unlock the story and corrected ending.")}
+    </p>}
+    {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
+      {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
+        ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.",
+          "Reach the end and answer every check in Read or Slides. Your first answer does not have to be correct. After a reload, answer the checks again.")}
+    </p>}
+    <button
+      type="button"
+      className="rounded bg-primary p-3 text-on-primary disabled:opacity-50"
+      disabled={pending || done.has(lesson.id) || !canComplete}
+      aria-describedby={!done.has(lesson.id) ? "lesson-completion-help" : undefined}
+      onClick={complete}
+    >
+      {done.has(lesson.id)
+        ? ui("Natapos", "Completed")
+        : ui("Markahang tapos ang aralin", "Mark lesson complete")}
+    </button>
+    {done.has(lesson.id) && <div
+      role="status"
+      data-celebrating={newlyCompletedLessonId === lesson.id ? "true" : undefined}
+      className="lesson-completion flex items-start gap-3 rounded-xl border border-success/40 bg-success/5 p-4"
+    >
+      <span aria-hidden="true" className="lesson-completion-check flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-success text-xl font-bold text-canvas">✓</span>
+      <div className="min-w-0">
+        <p className="font-semibold">{ui("Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.", "Well done! Lesson complete. Your progress is saved.")}</p>
+        {savedMilestone?.lessonId === lesson.id && (
+          <p className="mt-3 flex items-start gap-2 rounded-lg border border-celebration/60 bg-celebration/20 px-3 py-2 font-medium">
+            <span aria-hidden="true" className="scope-recognition-star text-primary-text">★</span>
+            <span>{savedMilestone.scope === "chapter"
+              ? ui(
+                  `Tapos na ang mga aralin sa Kabanata ${savedMilestone.number}!`,
+                  `Chapter ${savedMilestone.number} lessons complete!`,
+                )
+              : ui(
+                  `Tapos na ang mga aralin sa subchapter ${savedMilestone.number}!`,
+                  `Subchapter ${savedMilestone.number} lessons complete!`,
+                )}</span>
+          </p>
+        )}
+        {props.nextLessonHref ? <Link prefetch={false} className="mt-3 inline-block rounded bg-primary p-3 text-on-primary" href={props.nextLessonHref}>
+          {ui("Susunod na aralin →", "Next lesson →")}
+        </Link> : props.lessonBaseHref ? <Link prefetch={false} className="mt-3 inline-block underline" href={props.returnHref??props.lessonBaseHref}>
+          {ui("Bumalik sa listahan ng mga aralin →", "Return to the lesson list →")}
+        </Link> : siblings[siblings.indexOf(lesson)+1] && <button type="button" className="mt-3 rounded bg-primary p-3 text-on-primary" onClick={()=>open(siblings[siblings.indexOf(lesson)+1])}>
+          {ui("Susunod na aralin →", "Next lesson →")}
+        </button>}
+      </div>
+    </div>}
+  </div>;
+  const errorMessage = error && <div role="alert"><p>{error}</p>{lesson && item && <button className="mt-2 underline" onClick={()=>save(lesson,mode,item,true)}>{ui("Subukang i-save muli", "Retry saving position")}</button>}</div>;
 
   return (
     <section
@@ -949,58 +1037,7 @@ export function ReferenceLessons(props: Props) {
               </button>
             </div>
             {!readerOpen && (videoSelected ? videoContent : <>{readerArticle}{readerPager}</>)}
-            {!props.readOnly && <>
-            {resourcesMonitorRevision && featuredVideo && !checksAnswered && <p className="text-sm">
-              {ui("Sagutin ang tatlong tanong sa Basahin o Slides para mabuksan ang kuwento at itinamang wakas.", "Answer all three checks in Read or Slides to unlock the story and corrected ending.")}
-            </p>}
-            {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
-              {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
-                ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.",
-                  "Reach the end and answer every check in Read or Slides. Your first answer does not have to be correct. After a reload, answer the checks again.")}
-            </p>}
-            <button
-              type="button"
-              className="rounded bg-primary p-3 text-on-primary disabled:opacity-50"
-              disabled={pending || done.has(lesson.id) || !canComplete}
-              aria-describedby={!done.has(lesson.id) ? "lesson-completion-help" : undefined}
-              onClick={complete}
-            >
-              {done.has(lesson.id)
-                ? ui("Natapos", "Completed")
-                : ui("Markahang tapos ang aralin", "Mark lesson complete")}
-            </button>
-            {done.has(lesson.id) && <div
-              role="status"
-              data-celebrating={newlyCompletedLessonId === lesson.id ? "true" : undefined}
-              className="lesson-completion flex items-start gap-3 rounded-xl border border-success/40 bg-success/5 p-4"
-            >
-              <span aria-hidden="true" className="lesson-completion-check flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-success text-xl font-bold text-canvas">✓</span>
-              <div className="min-w-0">
-                <p className="font-semibold">{ui("Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.", "Well done! Lesson complete. Your progress is saved.")}</p>
-                {savedMilestone?.lessonId === lesson.id && (
-                  <p className="mt-3 flex items-start gap-2 rounded-lg border border-celebration/60 bg-celebration/20 px-3 py-2 font-medium">
-                    <span aria-hidden="true" className="scope-recognition-star text-primary-text">★</span>
-                    <span>{savedMilestone.scope === "chapter"
-                      ? ui(
-                          `Tapos na ang mga aralin sa Kabanata ${savedMilestone.number}!`,
-                          `Chapter ${savedMilestone.number} lessons complete!`,
-                        )
-                      : ui(
-                          `Tapos na ang mga aralin sa subchapter ${savedMilestone.number}!`,
-                          `Subchapter ${savedMilestone.number} lessons complete!`,
-                        )}</span>
-                  </p>
-                )}
-                {props.nextLessonHref ? <Link prefetch={false} className="mt-3 inline-block rounded bg-primary p-3 text-on-primary" href={props.nextLessonHref}>
-                  {ui("Susunod na aralin →", "Next lesson →")}
-                </Link> : props.lessonBaseHref ? <Link prefetch={false} className="mt-3 inline-block underline" href={props.returnHref??props.lessonBaseHref}>
-                  {ui("Bumalik sa listahan ng mga aralin →", "Return to the lesson list →")}
-                </Link> : siblings[siblings.indexOf(lesson)+1] && <button type="button" className="mt-3 rounded bg-primary p-3 text-on-primary" onClick={()=>open(siblings[siblings.indexOf(lesson)+1])}>
-                  {ui("Susunod na aralin →", "Next lesson →")}
-                </button>}
-              </div>
-            </div>}
-            </>}
+            {(!readerOpen || !props.storyQuestionHandoff) && completionControls}
             <nav
               className="flex flex-wrap justify-between gap-2"
               aria-label={ui("Mga aralin sa subchapter", "Subchapter lessons")}
@@ -1053,7 +1090,7 @@ export function ReferenceLessons(props: Props) {
           </>
         )
       )}
-      {error && <div role="alert"><p>{error}</p>{lesson && item && <button className="mt-2 underline" onClick={()=>save(lesson,mode,item,true)}>{ui('Subukang i-save muli','Retry saving position')}</button>}</div>}
+      {(!readerOpen || !props.storyQuestionHandoff) && errorMessage}
       <dialog
         ref={readerDialog}
         aria-label={ui("Buong screen na aralin", "Full-screen lesson")}
@@ -1113,6 +1150,10 @@ export function ReferenceLessons(props: Props) {
             maxContentWidth={orientation === "portrait" ? 720 : 1800}
             en={en}
           />)}
+          {readerOpen && props.storyQuestionHandoff && (completionControls || errorMessage) && <div className="max-h-[40dvh] shrink-0 space-y-3 overflow-y-auto border-t border-ink/15 p-4">
+            {completionControls}
+            {errorMessage}
+          </div>}
           </div>
         </div>
       </dialog>

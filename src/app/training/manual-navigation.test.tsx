@@ -10,7 +10,7 @@ vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations
 vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true,chapter1_assessment_v2:state.v2})}));
 vi.mock('@/lib/supabase/app-user',()=>({getAppUser:async()=>({id:'self',role:state.role,status:'active'}),forwardedAppUser:()=>null,APP_USER_HEADER:'x-app-user',APP_FLAGS_HEADER:'x-app-flags'}));
 vi.mock('next/headers',()=>({headers:async()=>new Headers(state.preview?{'x-app-preview':'1','x-app-effective-role':'bhw'}:{}),cookies:async()=>({get:()=>undefined,getAll:()=>[]})}));
-vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({readOnly,nextLessonHref}:{readOnly:boolean;nextLessonHref?:string})=><div data-next-lesson={nextLessonHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
+vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({storyQuestionHandoff,readOnly,nextLessonHref}:{storyQuestionHandoff?:boolean;readOnly:boolean;nextLessonHref?:string})=><div data-story-handoff={String(storyQuestionHandoff)} data-next-lesson={nextLessonHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
 vi.mock('@sentry/nextjs',()=>({captureException:vi.fn()}));
 vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'auth'}}}),getClaims:async()=>({data:{claims:{sub:'auth'}}})},rpc:async(name:string)=>{state.rpcCalls.push(name);return {data:name==='rpc_learner_assessment_state'?{attempts:[],final_attempts:[]}:
   [...new Set((state.rows.course_test_questions_current??[]).map(row=>row.course_id))].map(course_id=>({course_id})),error:state.preview && name==='rpc_learner_assessment_state'?{message:'BHW-only RPC'}:null}},from:(table:string)=>{
@@ -69,9 +69,15 @@ describe('manual navigation',()=>{
     render(await page(['chapter-1','m1']));expect(screen.getByRole('link',{name:/1. HEPO/})).toHaveAttribute('href','/training/manual/chapter-1/m1/l1');
     expect(screen.queryByText('Learner lesson')).not.toBeInTheDocument();
   });
+  it('keeps the story handoff disabled outside Chapter 1',async()=>{
+    state.rows.training_program_chapters[0].chapter_key='chapter-2';
+    render(await page(['chapter-2','m1','l1']));
+    expect(screen.getByText('Learner lesson')).toHaveAttribute('data-story-handoff','false');
+  });
   it('lesson has a stable URL, sibling link, and excludes other subchapter bodies',async()=>{
     render(await page(['chapter-1','m1','l1']));expect(screen.getByText('Learner lesson')).toBeInTheDocument();
     expect(screen.getByRole('link',{name:'Next lesson →'})).toHaveAttribute('href','/training/manual/chapter-1/m1/l2');
+    expect(screen.getByText('Learner lesson')).toHaveAttribute('data-story-handoff','true');
     expect(screen.getByText('Learner lesson')).toHaveAttribute('data-next-lesson','/training/manual/chapter-1/m1/l2');
     expect(state.calls.some(c=>c.table==='course_lesson_facilitator_notes')).toBe(false);
   });

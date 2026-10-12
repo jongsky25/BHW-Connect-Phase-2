@@ -19,3 +19,14 @@ This is a formative **UI progression rule**, not a new certification or anti-tam
 - The browser preview is not a live Supabase test. Signed-in BHW/pretest/posttest/certificate integration, actual screen-reader use and mobile-device audio still require release verification.
 
 The older interrupted 1.2–1.5 content edits were not used: main already includes the subsequent corrections and publication record from PRs #99–#100.
+
+## Chapter 1 narrated-story handoff (12 October 2026)
+
+Chapter 1 learner, preview and assessor-study routes enable `storyQuestionHandoff` on the shared reader. Other chapters retain their existing flow.
+
+- Ending a narrated story opens the first unanswered check in the current Read or Slides mode. “Continue to question” offers the same action before playback ends. Focus moves to the question after React commits the new page, including fullscreen remounts.
+- After an answer and its feedback, “Next question” finds any remaining check. Once all checks are attempted, “Continue to lesson end” opens the final section if necessary. Watching never saves completion automatically.
+- The existing completion controls, saved-state continuation and errors render inside the fullscreen reader. Failed completion retains answers for retry. Completed stories remain available for replay without automatic redirection.
+- The three-check `resources-monitor` story unlock rule, optional video, preview restrictions, revision-scoped attempts and reload behavior remain unchanged. New controls have English, Filipino, Cebuano and Hiligaynon labels.
+
+Verification: the six focused component/route suites pass (147 tests), along with TypeScript and lint on the changed files. `node scripts/story-question-browser-check.mjs` exercises authored single- and multiple-check lessons at desktop, mobile portrait and mobile landscape sizes, including fullscreen Read and Slides. It uses a generated short video to trigger a natural playback-ended event and simulates progress callbacks. Each journey saves once, focuses the question, exposes the next lesson, and passes checks for page errors, horizontal overflow and axe WCAG A/AA violations. This does not verify authenticated production saves or native iOS video fullscreen.
