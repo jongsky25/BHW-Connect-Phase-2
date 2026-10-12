@@ -5,6 +5,10 @@ import {getRequestFeatureFlags} from '@/lib/supabase/request';
 import {createClient} from '@/lib/supabase/server';
 import {AssessorOrientation,type OrientationState} from '@/components/elearning/assessor-orientation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
+import {chapter1OrientationContext} from '@/lib/assessor/orientation-context';
+import {loadAssessorRollout} from '@/lib/assessor/load-rollout';
+import {chapter1BriefingIdentity} from '@/lib/assessor/briefing';
+import {loadBriefingState} from '@/lib/assessor/load-briefing';
 
 export default async function OrientationPage({params}:{params:Promise<{programId:string;chapterKey:string}>}) {
   const [{programId,chapterKey},viewer,flags,locale]=await Promise.all([params,getViewer(),getRequestFeatureFlags(),getLocale()]);
@@ -18,6 +22,14 @@ export default async function OrientationPage({params}:{params:Promise<{programI
   ]);
   if(programError||chapterError)throw new Error('Unable to load assessor orientation');
   if(!program||!chapter)notFound();
+  const revised=chapterKey==='chapter-1' && flags.assessor_flow_ui
+    ? (await loadAssessorRollout(db,flags,chapter1BriefingIdentity(programId),{actor:{
+      id:viewer.appUser.id,role:viewer.appUser.role,active:true,preview:viewer.isPreview,
+    }})).uiVisible : false;
+  if(revised) {
+    const acknowledgement=await loadBriefingState(db,programId,viewer.appUser.id);
+    if(!acknowledgement?.acknowledgedAt)redirect(`/training/${programId}/assessor/chapter-1/briefing`);
+  }
   const {data,error}=await db.rpc('rpc_assessor_orientation_state',{p_chapter_id:chapter.id});
   if(error)throw new Error('Unable to load assessor orientation');
   const state=data as OrientationState;
@@ -25,6 +37,7 @@ export default async function OrientationPage({params}:{params:Promise<{programI
   const chapterLabel=chapterKey==='chapter-1'?{fil:'Kabanata I',en:'Chapter I'}:{fil:'Kabanata II',en:'Chapter II'};
   return <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 py-10 sm:px-6">
     <Breadcrumbs items={[{label:'BHW Reference Manual',href:`/training/${programId}`},{label:chapterLabel[locale==='en'?'en':'fil'],href:chapterHref},{label:locale==='en'?'Scoring orientation':'Oryentasyon sa pagmamarka'}]}/>
-    <AssessorOrientation chapterId={chapter.id} chapterHref={chapterHref} chapterLabel={chapterLabel} locale={locale} initial={state}/>
+    <AssessorOrientation chapterId={chapter.id} chapterHref={chapterHref} chapterLabel={chapterLabel} locale={locale} initial={state}
+      chapter1Context={revised?chapter1OrientationContext(state):undefined}/>
   </main>;
 }

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import {useState, type FormEvent} from 'react';
 import {createClient} from '@/lib/supabase/client';
+import {AssessorEvidenceWalkthrough} from './assessor-evidence-walkthrough';
 
 type Localized = {fil:string;en:string};
 type Rating = 'kaya_na'|'kailangan_practice'|'hindi_pa';
@@ -10,8 +11,9 @@ type Case = {id:string;indicator:string;case:Localized;critical?:boolean};
 type Lesson = {id:string;title:Localized;body:Localized[]};
 export type OrientationState = {
   ready:boolean;passed:boolean;title?:Localized;guide?:Localized[];lessons?:Lesson[];completed_lessons?:string[];cases?:Case[];
-  passing_count?:number;attempts?:number;
+  passing_count?:number;attempts?:number;orientation_version?:string;
 };
+export type OrientationCriterion = {title:Localized;observable:Localized;anchors:Record<Rating,Localized>};
 type Result = {correct_count:number;question_count:number;passed:boolean;critical_correct:boolean;feedback:{id:string;correct:Rating;reason:Localized}[]};
 const ratings: {key:Rating;label:Localized}[] = [
   {key:'kaya_na',label:{fil:'Kaya na',en:'Kaya na (can do)'}},
@@ -19,13 +21,14 @@ const ratings: {key:Rating;label:Localized}[] = [
   {key:'hindi_pa',label:{fil:'Hindi pa',en:'Hindi pa (not yet)'}},
 ];
 
-export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Kabanata I',en:'Chapter I'},locale,initial}:{chapterId:string;chapterHref:string;chapterLabel?:Localized;locale:string;initial:OrientationState}) {
+export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Kabanata I',en:'Chapter I'},locale,initial,chapter1Context}:{chapter1Context?:Record<string,OrientationCriterion>|null;chapterId:string;chapterHref:string;chapterLabel?:Localized;locale:string;initial:OrientationState}) {
   const en=locale==='en';
   const text=(fil:string,english:string)=>en?english:fil;
   const local=(value:Localized)=>value[en?'en':'fil'];
   const [answers,setAnswers]=useState<Record<string,Rating>>({});
   const [completed,setCompleted]=useState<string[]>(initial.completed_lessons??[]);
-  const [selected,setSelected]=useState(0);
+  const [selected,setSelected]=useState(()=>Math.max(0,(initial.lessons??[]).findIndex(lesson=>!initial.completed_lessons?.includes(lesson.id))));
+  const [recoveredPass,setRecoveredPass]=useState(false);
   const [acknowledged,setAcknowledged]=useState(false);
   const [result,setResult]=useState<Result|null>(null);
   const [busy,setBusy]=useState(false);
@@ -35,6 +38,25 @@ export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Ka
   const lessons=initial.lessons??[];
   const allLessonsDone=lessons.length>0 && lessons.every(lesson=>completed.includes(lesson.id));
   const activeLesson=lessons[selected];
+  const passed=initial.passed || recoveredPass || result?.passed;
+  const revised=chapter1Context!==undefined;
+  const contextAvailable=!revised || (chapter1Context!==null && cases.every(item=>chapter1Context[item.id]));
+
+  async function checkSavedProgress() {
+    setBusy(true);setError(null);
+    try {
+      const {data,error:rpcError}=await createClient().rpc('rpc_assessor_orientation_state',{p_chapter_id:chapterId});
+      if(rpcError)throw rpcError;
+      const state=data as OrientationState;
+      if(state?.ready!==true || typeof state.passed!=='boolean' || state.orientation_version!==initial.orientation_version
+        || !Array.isArray(state.completed_lessons) || !state.completed_lessons.every(id=>typeof id==='string'))throw new Error('State unavailable');
+      setCompleted(state.completed_lessons);
+      if(state.passed)setRecoveredPass(true);
+      setSelected(Math.max(0,lessons.findIndex(lesson=>!state.completed_lessons!.includes(lesson.id))));
+    } catch {
+      setError(text('Hindi makumpirma ang na-save na progreso. Mananatili rito ang mga sagot mo; subukang suriin muli o bumalik sa kabanata.', 'Saved progress could not be confirmed. Your answers remain here; check again or return to the chapter.'));
+    } finally {setBusy(false);}
+  }
 
   async function completeLesson() {
     if(!activeLesson)return;
@@ -44,15 +66,18 @@ export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Ka
         p_chapter_id:chapterId,p_lesson_id:activeLesson.id,
       });
       if(rpcError)throw rpcError;
-      setCompleted(prev=>prev.includes(activeLesson.id)?prev:[...prev,activeLesson.id]);
-      if(selected<lessons.length-1)setSelected(selected+1);
-    } catch(cause) {
-      setError(cause instanceof Error?cause.message:text('Hindi naitala ang aralin.','Could not record the lesson.'));
+      const nextCompleted=completed.includes(activeLesson.id)?completed:[...completed,activeLesson.id];
+      setCompleted(nextCompleted);
+      const next=lessons.findIndex(lesson=>!nextCompleted.includes(lesson.id));
+      if(next>=0)setSelected(next);
+    } catch {
+      setError(text('Hindi makumpirma ang pag-save ng aralin. Subukang i-save muli o suriin ang na-save na progreso.', 'Lesson save could not be confirmed. Try saving again or check saved progress.'));
     } finally {setBusy(false);}
   }
 
   async function submit(event:FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if(busy || passed || !allLessonsDone || !contextAvailable)return;
     if(!acknowledged || cases.some(c=>!answers[c.id])){
       setError(text('Basahin ang gabay at markahan ang bawat kaso.','Read the guide and score every case.'));return;
     }
@@ -63,14 +88,17 @@ export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Ka
       });
       if(rpcError)throw rpcError;
       const submitted=data as Result;
-      if(typeof submitted?.correct_count!=='number' || !Array.isArray(submitted.feedback))throw new Error('Orientation result unavailable');
+      if(typeof submitted?.correct_count!=='number' || typeof submitted.question_count!=='number'
+        || typeof submitted.passed!=='boolean' || typeof submitted.critical_correct!=='boolean'
+        || !Array.isArray(submitted.feedback) || !submitted.feedback.every(f=>cases.some(c=>c.id===f.id)
+          && ratings.some(r=>r.key===f.correct) && typeof f.reason?.en==='string' && typeof f.reason?.fil==='string'))throw new Error('Orientation result unavailable');
       setResult(submitted);
-    } catch(cause) {
-      setError(cause instanceof Error?cause.message:text('Hindi naisumite ang mga marka.','Could not submit the ratings.'));
+    } catch {
+      setError(text('Hindi makumpirma ang resulta. Nananatili rito ang mga sagot mo. Suriin muna ang na-save na progreso bago muling magsumite; maaaring naitala na ang attempt.', 'The result could not be confirmed. Your answers remain here. Check saved progress before submitting again; the attempt may already be recorded.'));
     } finally {setBusy(false);}
   }
 
-  if(!initial.ready) return <section className="rounded-xl border border-ink/20 p-5">
+  if(!initial.ready&&!passed) return <section className="rounded-xl border border-ink/20 p-5">
     <p>{text('Kumpletuhin muna ang diagnostic pretest, lahat ng kasalukuyang aralin, at pangwakas na pagsusulit ng kabanata.','Complete the diagnostic pretest, all current lessons, and the chapter post-test first.')}</p>
     <Link prefetch={false} href={chapterHref} className="mt-3 inline-block underline">{text('Bumalik sa kabanata','Back to chapter')}</Link>
   </section>;
@@ -87,10 +115,10 @@ export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Ka
       <div className="mt-4 grid gap-2 sm:grid-cols-3">{ratings.map(r=><p key={r.key} className="rounded border border-ink/15 p-3 font-medium">{local(r.label)}</p>)}</div>
     </section>
     {activeLesson&&<section className="rounded-xl border border-ink/20 p-5" aria-label={text('Mga aralin sa oryentasyon','Orientation lessons')}>
-      <h2 className="text-lg font-semibold">{text(`Mga aralin · ${completed.length} sa ${lessons.length}`,`Lessons · ${completed.length} of ${lessons.length}`)}</h2>
+      <h2 className="text-lg font-semibold">{text(`Mga aralin · ${lessons.filter(lesson=>completed.includes(lesson.id)).length} sa ${lessons.length}`,`Lessons · ${lessons.filter(lesson=>completed.includes(lesson.id)).length} of ${lessons.length}`)}</h2>
       <nav className="mt-3 flex flex-wrap gap-2" aria-label={text('Pumili ng aralin','Choose a lesson')}>
-        {lessons.map((lesson,index)=><button key={lesson.id} type="button" onClick={()=>setSelected(index)} aria-current={selected===index?'step':undefined}
-          className="rounded border border-ink/20 px-3 py-2 text-sm" disabled={busy}>
+        {lessons.map((lesson,index)=><button key={lesson.id} type="button" onClick={()=>setSelected(index)} aria-label={`${index+1}. ${local(lesson.title)} · ${completed.includes(lesson.id)?text('Natapos','Completed'):text('Hindi pa natatapos','Not completed')}`} aria-current={selected===index?'step':undefined}
+          className="min-h-11 min-w-11 rounded border border-ink/20 px-3 py-2 text-sm" disabled={busy}>
           {completed.includes(lesson.id)?'✓ ':'○ '}{index+1}
         </button>)}
       </nav>
@@ -103,19 +131,28 @@ export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Ka
         {busy?text('Itinatala…','Saving…'):text('Tapos na ang araling ito','Mark lesson complete')}
       </button>}
     </section>}
-    {!allLessonsDone&&!initial.passed&&<p className="rounded-xl border border-ink/20 p-4 text-sm" role="status">
+    {!allLessonsDone&&!passed&&<p className="rounded-xl border border-ink/20 p-4 text-sm" role="status">
       {text('Kumpletuhin ang lahat ng aralin para mabuksan ang pagsasanay sa pagmamarka.','Complete every lesson to unlock the scoring practice.')}
     </p>}
-    {initial.passed || result?.passed ? <section role="status" className="rounded-xl border border-primary/40 bg-primary/5 p-5">
+    {revised&&<AssessorEvidenceWalkthrough locale={locale}/>}
+    {revised&&<p className="rounded-xl border border-ink/20 p-4 text-sm">{text('Pagmamarka lamang ang pagsasanay na ito. Hiwalay ang susunod na coached platform competency simulation at hindi pa ito available. Hindi ito nakukumpleto ng scoring pass; hindi pa available ang binagong sertipikasyon.', 'This exercise calibrates scoring only. The later coached platform competency simulation is separate and not yet available. A scoring pass does not complete it; revised certification remains unavailable.')}</p>}
+    {!contextAvailable&&<p role="status">{text('Hindi available ang tugmang gabay sa criterion. Bumalik sa kabanata at buksan muli ang oryentasyon. Mananatili ang anumang naitalang pagpasa.', 'Matching criterion guidance is unavailable. Return to the chapter and reopen orientation. Any recorded pass is retained.')}</p>}
+    {passed ? <section role="status" className="rounded-xl border border-primary/40 bg-primary/5 p-5">
       <h2 className="font-semibold">{text('Natapos ang oryentasyon','Orientation completed')}</h2>
       <p>{text(`Naitala ang iyong pagpasa para sa ${chapterLabel.fil}. Tingnan ang naibigay na kwalipikasyon at katayuan nito.`,`Your ${chapterLabel.en} pass is recorded. Check your issued qualification and its status.`)}</p>
       <Link prefetch={false} href={`${chapterHref.split('/assessor/')[0]}/assessor/qualifications`} className="mt-3 inline-block underline">{text('Tingnan ang aking mga kwalipikasyon','View my qualifications')}</Link>
-    </section> : allLessonsDone&&<form onSubmit={submit} className="flex flex-col gap-5" noValidate>
+    </section> : allLessonsDone&&contextAvailable&&<form onSubmit={submit} className="flex flex-col gap-5" noValidate>
       <h2 className="text-lg font-semibold">{text('Pagsasanay sa pagmamarka','Scoring practice')}</h2>
       {cases.map((item,index)=><fieldset key={item.id} className="rounded-xl border border-ink/20 p-4">
         <legend className="px-1 font-semibold">{text(`Kaso ${index+1}`,`Case ${index+1}`)}{item.critical?` · ${text('Kaligtasan','Safety')}`:''}</legend>
         <p>{local(item.case)}</p>
-        <p className="mt-1 text-xs text-ink/60">{item.indicator}</p>
+        {chapter1Context?.[item.id] ? <div className="mt-3 rounded border border-ink/15 p-3">
+          <p className="text-sm text-ink/70">{local(chapter1Context[item.id].title)}</p>
+          <h3 className="mt-2 font-semibold">{local(chapter1Context[item.id].observable)}</h3>
+          <dl className="mt-3 space-y-3">{ratings.map(r=><div key={r.key}>
+            <dt className="font-medium">{local(r.label)}</dt><dd>{local(chapter1Context[item.id].anchors[r.key])}</dd>
+          </div>)}</dl>
+        </div> : <p className="mt-1 text-xs text-ink/60">{item.indicator}</p>}
         <div className="mt-3 flex flex-col gap-2">{ratings.map(r=><label key={r.key} className="flex min-h-11 items-center gap-2 rounded border border-ink/15 px-3 py-2">
           <input type="radio" name={`case-${item.id}`} value={r.key} checked={answers[item.id]===r.key} disabled={busy}
             onChange={()=>setAnswers(prev=>({...prev,[item.id]:r.key}))}/>{local(r.label)}
@@ -126,8 +163,9 @@ export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Ka
       <button type="submit" disabled={busy} className="self-start rounded bg-primary px-4 py-3 font-medium text-on-primary disabled:opacity-60">
         {busy?text('Isinusumite…','Submitting…'):text('Isumite ang mga marka','Submit ratings')}
       </button>
+      {result&&!result.passed&&<p>{text('Balikan ang feedback sa ibaba, baguhin ang mga marka, at isumite muli. Nananatili sa history ang naunang attempt.', 'Review the feedback below, change your ratings and submit again. The earlier attempt stays in your history.')}</p>}
     </form>}
-    {result && <section role="status" className="rounded-xl border border-info/40 bg-info/5 p-5">
+    {result && !recoveredPass && <section role="status" className="rounded-xl border border-info/40 bg-info/5 p-5">
       <h2 className="font-semibold">{text(`Tamang marka: ${result.correct_count} sa ${result.question_count}`,`Correct ratings: ${result.correct_count} of ${result.question_count}`)}</h2>
       <p>{result.passed?text('Pumasa ka sa pagsasanay.','You passed the practice.'):text('Balikan ang gabay at subukang muli.','Review the guide and try again.')}</p>
       {!result.critical_correct&&<p className="font-medium">{text('Balikan ang mga desisyon sa kasong pangkaligtasan.','Review the safety case decisions.')}</p>}
@@ -136,7 +174,10 @@ export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Ka
         <p>{local(f.reason)}</p>
       </li>)}</ol>
     </section>}
-    {error&&<p role="alert" className="text-sm text-danger">{error}</p>}
+    {error&&<div className="space-y-2">
+      <p role="alert" className="text-sm text-danger">{error}</p>
+      <button type="button" onClick={checkSavedProgress} disabled={busy} className="min-h-11 rounded border border-ink/20 px-3 py-2">{busy?text('Sinusuri…','Checking…'):text('Suriin ang na-save na progreso','Check saved progress')}</button>
+    </div>}
     <Link prefetch={false} href={chapterHref} className="self-start py-2 underline">{text('Bumalik sa kabanata','Back to chapter')}</Link>
   </div>;
 }
