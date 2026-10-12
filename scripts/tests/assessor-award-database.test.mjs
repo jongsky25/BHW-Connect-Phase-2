@@ -66,7 +66,8 @@ beforeAll(async()=>{
     create table course_session_deliveries(id uuid primary key,session_id uuid,module_id uuid,recorded_by uuid);
     create table course_session_activities(id uuid primary key,session_id uuid,module_id uuid,recorded_by uuid);`);
   for(const file of ['20261010145729_assessor_flow_rollout_controls.sql','20261011120608_assessor_briefing_acknowledgement.sql',
-    '20261012051057_assessor_simulation_runner.sql','20261012064708_assessor_combined_chapter_issuance.sql','20261012102519_assessor_certificate_output.sql'])await db.exec(read(`supabase/migrations/${file}`));
+    '20261012051057_assessor_simulation_runner.sql','20261012064708_assessor_combined_chapter_issuance.sql','20261012102519_assessor_certificate_output.sql',
+    '20261012150218_assessor_award_lifecycle.sql'])await db.exec(read(`supabase/migrations/${file}`));
 
   await db.query('insert into org_units values($1,$3),($2,$4)',[ids.city,ids.away,`${ids.city}.`,`${ids.away}.`]);
   for(const [id,role,status,org] of [[ids.self,'assessor','active',ids.city],[ids.other,'assessor','active',ids.away],[ids.bhw,'bhw','active',ids.city],[ids.inactive,'assessor','deactivated',ids.city],[ids.admin,'admin','active',ids.city],[ids.outsideAdmin,'admin','active',ids.away]])
@@ -318,5 +319,83 @@ describe('C1AF-08 immutable output and minimal verification',()=>{
    await expect(actor(actorId,()=>db.exec(`select * from assessor_rollout_private.${table}`))).rejects.toThrow('permission denied');
   }
   await expect(call(ids.self,'assessor_rollout_private.certificate_current_status',uuid(999))).rejects.toThrow('permission denied');
+ });
+});
+
+
+describe('C1AF-09 scoped lifecycle and read-only transition',()=>{
+ it('reports historical qualifications without creating an award',async()=>{
+  await pass();const before=await snapshot();
+  const result=(await call(ids.admin,'rpc_admin_assessor_transition_report',1)).rows[0].result;
+  expect(result[0]).toMatchObject({chapterKey:'chapter-1',category:'policy_unavailable',combinedAwardId:null});
+  expect(result[0].blockers).toContain('accepted_contract_unavailable');
+  expect(await rows()).toEqual([]);expect(await snapshot()).toEqual(before);
+ });
+ const list=id=>call(id,'rpc_admin_assessor_awards',1).then(r=>r.rows[0].result);
+ const report=id=>call(id,'rpc_admin_assessor_transition_report',1).then(r=>r.rows[0].result);
+ const change=(id,w,expected,next,reason='Fictional reviewed reason')=>call(id,'rpc_admin_assessor_award_set_status',w.id,expected,w.status_changed_at,next,reason);
+ it('separates missing evidence, version conflict and restricted history',async()=>{
+  await configure(false);await pass();await approve();
+  const current=async()=>(await call(ids.admin,'rpc_admin_assessor_transition_report',1)).rows[0].result[0];
+  expect(await current()).toMatchObject({category:'missing_evidence'});
+  expect((await current()).blockers).toContain('simulation_missing');
+  await db.exec("update assessor_chapter_qualifications set curriculum_version='old-version'");
+  expect(await current()).toMatchObject({category:'version_conflict'});
+  await db.exec("update assessor_chapter_qualifications set status='suspended'");
+  expect(await current()).toMatchObject({category:'restricted',nextStep:'contact_admin'});
+  expect(await rows()).toEqual([]);
+ });
+ it('keeps mutation off, denies other roles and leaves report reads unchanged',async()=>{
+  const w=await earnedCertificate();const before=await snapshot();
+  expect((await list(ids.admin)).mutationEnabled).toBe(false);
+  expect((await list(ids.admin)).rows[0]).toMatchObject({id:w.id,status:'active'});
+  expect(await report(ids.admin)).toEqual([]);
+  for(const id of [ids.self,ids.bhw,ids.inactive,null]){
+   await expect(list(id)).rejects.toThrow();await expect(report(id)).rejects.toThrow();
+  }
+  expect((await list(ids.outsideAdmin)).rows).toEqual([]);expect(await report(ids.outsideAdmin)).toEqual([]);
+  await expect(change(ids.admin,w,'active','suspended')).rejects.toThrow('not enabled');
+  for(const table of ['award_lifecycle_control','award_lifecycle_events'])
+   await expect(actor(ids.admin,()=>db.exec(`select * from assessor_rollout_private.${table}`))).rejects.toThrow('permission denied');
+  expect(await snapshot()).toEqual(before);
+ });
+ it('records one atomic event per transition and rejects stale, invalid and revoked restoration',async()=>{
+  const w=await earnedCertificate();
+  await db.exec("update assessor_rollout_private.award_lifecycle_control set mutations_enabled=true,policy_reference='LOCAL TEST ONLY'");
+  expect((await change(ids.admin,w,'active','suspended')).rows[0].result).toBe(true);
+  expect((await ownerCertificate(w.certificate_id)).status).toBe('suspended');
+  await expect(change(ids.admin,w,'active','revoked')).rejects.toThrow('stale');
+  let now=(await rows())[0];
+  expect((await change(ids.admin,now,'suspended','suspended')).rows[0].result).toBe(false);
+  await expect(change(ids.admin,now,'suspended','active','short')).rejects.toThrow('reason');
+  expect((await change(ids.admin,now,'suspended','revoked')).rows[0].result).toBe(true);
+  now=(await rows())[0];
+  await expect(change(ids.admin,now,'revoked','active')).rejects.toThrow('not permitted');
+  const history=(await list(ids.admin)).rows[0].history;
+  expect((await call(ids.admin,'rpc_admin_assessor_award_history',w.id,1)).rows[0].result).toHaveLength(2);
+  await expect(call(ids.outsideAdmin,'rpc_admin_assessor_award_history',w.id,1)).rejects.toThrow('out of scope');
+  expect(history.map(e=>[e.previousStatus,e.nextStatus]).sort()).toEqual([['active','suspended'],['suspended','revoked']]);
+  expect((await db.query('select count(*)::integer n from assessor_rollout_private.award_lifecycle_events')).rows[0].n).toBe(2);
+  expect((await ownerCertificate(w.certificate_id)).status).toBe('revoked');
+  await expect(ensure()).rejects.toThrow('incomplete');
+ });
+ it('rechecks course geography for reads, history and writes',async()=>{
+  const w=await earnedCertificate();
+  await db.exec("update assessor_rollout_private.award_lifecycle_control set mutations_enabled=true,policy_reference='LOCAL TEST ONLY'");
+  await db.query('update courses set org_unit_id=$1 where id=$2',[ids.away,ids.course]);
+  expect((await list(ids.admin)).rows).toEqual([]);
+  expect(await report(ids.admin)).toEqual([]);
+  await expect(call(ids.admin,'rpc_admin_assessor_award_history',w.id,1)).rejects.toThrow('out of scope');
+  await expect(change(ids.admin,w,'active','suspended')).rejects.toThrow('out of scope');
+  expect((await rows())[0].status).toBe('active');
+ });
+ it('denies preview and out-of-area admin mutations even with an enabled local gate',async()=>{
+  const w=await earnedCertificate();
+  await db.exec("update assessor_rollout_private.award_lifecycle_control set mutations_enabled=true,policy_reference='LOCAL TEST ONLY'");
+  await expect(change(ids.outsideAdmin,w,'active','suspended')).rejects.toThrow('out of scope');
+  await db.query('insert into super_admin_personas values($1,$2)',[ids.admin,ids.outsideAdmin]);
+  await expect(change(ids.admin,w,'active','suspended')).rejects.toThrow('not authorized');
+  await expect(list(ids.admin)).rejects.toThrow('not authorized');
+  expect((await rows())[0].status).toBe('active');
  });
 });
