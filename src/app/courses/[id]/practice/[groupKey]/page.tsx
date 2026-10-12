@@ -13,12 +13,14 @@ export default async function ChapterPracticePage({ params }: { params: Promise<
   const [viewer, flags, locale] = await Promise.all([getViewer(), getRequestFeatureFlags(), getLocale()]);
   if (!flags.elearning || !flags.chapter1_assessment_v2) redirect("/home");
   if (!viewer.appUser || viewer.appUser.status !== "active") redirect("/login");
-  if (viewer.role !== "bhw" || viewer.isPreview) notFound();
+  if ((viewer.role !== "bhw" && viewer.role !== "assessor") || viewer.isPreview) notFound();
   const db = await createClient();
   const { data: mapping } = await db.from("training_program_chapters").select("program_id,chapter_key")
     .eq("course_id", id).eq("chapter_key", "chapter-1").eq("availability", "available").maybeSingle();
   if (!mapping) notFound();
   return <Chapter1Practice courseId={id} groupKey={groupKey} locale={locale}
-    chapterHref={`/training/${mapping.program_id}/chapter-1`}
+    chapterHref={viewer.role === "assessor"
+      ? `/training/${mapping.program_id}/assessor/chapter-1`
+      : `/training/${mapping.program_id}/chapter-1`}
     contentApproved={orientation.editorial_status === "approved"} />;
 }

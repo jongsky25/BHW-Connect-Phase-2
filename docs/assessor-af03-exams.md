@@ -5,6 +5,7 @@ AF-03 follows assessor personal study in PR #168. It adds a diagnostic pretest, 
 ## Chapter contract
 
 - Chapter I uses the 42 authored required lessons and the reviewed chapter test bank. Its diagnostic pretest has no passing mark. After all current published lesson revisions are complete, the post-test requires **80%**.
+- When `chapter1_assessment_v2` is enabled with an active release, Chapter I assessors use the same 30-item pre-test and 30-item post-test forms, introduction, question UI, and optional checkpoints as BHW learners. The assessor exam ledger still records their own diagnostic and qualifying results; a failed post-test can be retaken. The legacy 38-question bank remains the fallback while the switch is disabled.
 - The current manifest has no required subchapter quizzes. When quizzes are authored and approved, they need their own versioned exam rule before they can become a qualification prerequisite.
 - Chapter II has no authored qualifying bank, so no exam rule is installed and its exam route remains unavailable. Its 55 lesson study path remains available under AF-02.
 - The candidate curriculum remains draft. An exam pass alone confers no assessor qualification; AF-04 orientation and AF-05 issuance remain separate.
