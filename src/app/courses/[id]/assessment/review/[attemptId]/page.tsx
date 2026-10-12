@@ -21,7 +21,7 @@ export default async function Chapter1PostReviewPage({ params }: {
   const { id, attemptId } = await params;
   const viewer = await getViewer();
   if (!viewer.appUser || viewer.appUser.status !== "active") redirect("/login");
-  if (viewer.role !== "bhw") notFound();
+  if (viewer.role !== "bhw" && viewer.role !== "assessor") notFound();
   const db = await createClient();
   const [{ data: mapping }, { data, error }, locale] = await Promise.all([
     db.from("training_program_chapters").select("program_id,chapter_key")
@@ -30,10 +30,14 @@ export default async function Chapter1PostReviewPage({ params }: {
     getLocale(),
   ]);
   if (!mapping) notFound();
-  const legacy = error || !data ? await db.rpc("rpc_legacy_posttest_review", { p_final_attempt_id: attemptId }) : null;
+  const legacy = viewer.role === "bhw" && (error || !data)
+    ? await db.rpc("rpc_legacy_posttest_review", { p_final_attempt_id: attemptId }) : null;
   if ((!data || error) && (!legacy?.data || legacy.error)) notFound();
   const lang = locale === "en" ? "en" : "fil";
   const copy = (en: string, fil: string) => lang === "en" ? en : fil;
+  const chapterHref = viewer.role === "assessor"
+    ? `/training/${mapping.program_id}/assessor/chapter-1`
+    : `/training/${mapping.program_id}/chapter-1`;
   if (legacy?.data) {
     const historical = legacy.data as LegacyReview;
     return <main className="mx-auto w-full max-w-3xl flex-1 space-y-6 px-4 py-10 sm:px-6">
@@ -56,7 +60,7 @@ export default async function Chapter1PostReviewPage({ params }: {
             copy("Your saved choice does not match the stored key.", "Hindi tumutugma ang na-save mong pinili sa naka-save na tamang sagot.")}</p>}
         </li>;
       })}</ol>
-      <Link className="underline" href={`/training/${mapping.program_id}/chapter-1`}>{copy("Back to chapter", "Bumalik sa kabanata")}</Link>
+      <Link className="underline" href={chapterHref}>{copy("Back to chapter", "Bumalik sa kabanata")}</Link>
     </main>;
   }
   const review = data as Review;
@@ -85,12 +89,12 @@ export default async function Chapter1PostReviewPage({ params }: {
         {selected && !matched && selected.distractor_rationale && <p>{selected.distractor_rationale[lang]}</p>}
         <div className="flex flex-wrap gap-3 text-sm">{item.lesson_keys.map(key => {
           const lesson = lessonByKey.get(key);
-          return lesson ? <Link key={key} className="underline" href={`/training/${mapping.program_id}/chapter-1/${lesson.module_id}/${lesson.id}`}>
+          return lesson ? <Link key={key} className="underline" href={`${chapterHref}/${lesson.module_id}/${lesson.id}`}>
             {copy("Review lesson", "Balikan ang aralin")}: {key}</Link> : <span key={key}>{key}</span>;
         })}</div>
       </li>;
     })}</ol>
-    <Link className="underline" href={`/training/${mapping.program_id}/chapter-1`}>
+    <Link className="underline" href={chapterHref}>
       {copy("Back to chapter", "Bumalik sa kabanata")}</Link>
   </main>;
 }

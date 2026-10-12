@@ -14,9 +14,13 @@ import {preparationQualification} from '@/lib/assessor/preparation-checklist';
 import {AssessorPreparationChecklist} from '@/components/elearning/assessor-preparation-checklist';
 import {ManualLesson} from '@/components/elearning/manual-lesson';
 import {AssessorExam} from '@/components/elearning/assessor-exam';
+import {Chapter1Assessment} from '@/components/elearning/chapter1-assessment';
+import {Chapter1MajorIntroduction} from '@/components/elearning/chapter1-major-introduction';
 import {Breadcrumbs} from '@/components/breadcrumbs';
 import type {CourseLesson,CourseLessonRevision,CourseModule} from '@/lib/elearning/types';
 import narrationManifest from '../../../../../../../content/training/day1-basic-competencies/narration.json';
+import chapter1Orientation from '../../../../../../../content/training/day1-basic-competencies/learner-assessment-v2/orientation.json';
+import chapter1Checkpoints from '../../../../../../../content/training/day1-basic-competencies/learner-assessment-v2/checkpoints.json';
 import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearning/reference-narration';
 
 export default async function AssessorStudyPage({params}:{params:Promise<{programId:string;chapterKey:string;path?:string[]}>}) {
@@ -59,7 +63,8 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
     .in('module_id',moduleIds).not('published_revision_id','is',null).order('position').limit(500).returns<CourseLesson[]>():{data:[],error:null};
   if(lessonError)throw new Error('Unable to load study lessons');
   const revisionIds=(lessons??[]).map(l=>l.published_revision_id!);
-  const [{data:completed,error:progressError},{data:resumes,error:resumeError},{data:attempts,error:attemptError},{data:pretestRecord,error:pretestError}]=await Promise.all([
+  const sharedAssessment=chapterKey==='chapter-1' && flags.chapter1_assessment_v2;
+  const [{data:completed,error:progressError},{data:resumes,error:resumeError},{data:attempts,error:attemptError},{data:pretestRecord,error:pretestError},{data:sharedState,error:sharedError}]=await Promise.all([
     revisionIds.length?db.from('assessor_lesson_progress').select('lesson_id,revision_id,completed_at')
       .eq('assessor_user_id',viewer.appUser.id).eq('chapter_id',chapter.id).in('revision_id',revisionIds).limit(500).returns<StudyCompletion[]>():Promise.resolve({data:[],error:null}),
     db.from('assessor_lesson_resume').select('lesson_id,revision_id,modality,language,position_key,concept_id,updated_at')
@@ -70,8 +75,9 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
     curriculum?.requirements.exams.length?db.from('assessor_exam_attempts').select('id').eq('assessor_user_id',viewer.appUser.id)
       .eq('chapter_id',chapter.id).eq('curriculum_version',curriculum.requirements.version).eq('phase','pretest')
       .eq('status','submitted').limit(1).maybeSingle():Promise.resolve({data:null,error:null}),
+    sharedAssessment?db.rpc('rpc_learner_assessment_state',{p_course_id:chapter.course_id}):Promise.resolve({data:null,error:null}),
   ]);
-  if(progressError||resumeError||attemptError||pretestError)throw new Error('Unable to load your candidate progress');
+  if(progressError||resumeError||attemptError||pretestError||sharedError)throw new Error('Unable to load your candidate progress');
   const study=chapterStudy(chapterKey,modules??[],lessons??[],completed??[],resumes??[]);
   if(!study)notFound();
   let qualification=null;
@@ -91,13 +97,24 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
   }
   const examAvailable=Boolean(curriculum?.requirements.exams.length);
   const currentAttempts=(attempts??[]).filter(a=>a.curriculum_version===curriculum?.requirements.version && a.status==='submitted');
-  const pretestDone=Boolean(pretestRecord);
-  const posttestPassed=currentAttempts.some(a=>a.phase==='posttest'&&a.passed);
+  const sharedAttempts=(sharedState as {attempts?:Array<{phase:string;state:string;score_percent:number|null}>}|null)?.attempts??[];
+  const completedLegacyQualification=sharedAssessment&&sharedAttempts.length===0&&
+    currentAttempts.some(a=>a.phase==='posttest'&&a.passed);
+  const pretestDone=sharedAssessment
+    ? completedLegacyQualification||sharedAttempts.some(a=>a.phase==='pretest'&&a.state==='submitted')
+    : Boolean(pretestRecord);
+  const posttestPassed=sharedAssessment
+    ? completedLegacyQualification||sharedAttempts.some(a=>a.phase==='posttest'&&a.state==='submitted'&&(a.score_percent??0)>=80)
+    : currentAttempts.some(a=>a.phase==='posttest'&&a.passed);
   const posttestReady=pretestDone && study.missing===0 && study.completed===study.total;
   const base=`/training/${programId}/assessor/${chapterKey}`;
   const href=(l:CourseLesson)=>`${base}/${l.module_id}/${l.id}`;
   const lesson=!examPage&&path.length===2?study.entries.find(e=>e.lesson?.id===path[1] && e.lesson.module_id===path[0])?.lesson:null;
   const subchapter=!examPage&&path.length?(modules??[]).find(m=>m.id===path[0]):null;
+  const majorIntro=sharedAssessment&&pretestDone&&subchapter
+    ?chapter1Orientation.introductions.find(item=>item.major_lesson===subchapter.position+1):null;
+  const checkpoint=sharedAssessment&&lesson
+    ?chapter1Checkpoints.find(group=>group.after_lesson_key===lesson.lesson_key):null;
   if(!examPage&&path.length && (!subchapter || (path.length===2 && !lesson)))notFound();
   if(!examPage&&examAvailable&&!pretestDone&&path.length)redirect(`${base}/exam/pretest`);
   if(examPage&&!examAvailable)notFound();
@@ -117,12 +134,24 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       nextLessonHref={next?href(next):undefined}
       narration={narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil',revision.read_sections)}/>;
   }
+  if(examPage&&sharedAssessment){
+    if(!sharedState)throw new Error('Unable to load Chapter 1 assessment');
+    return <main className="mx-auto w-full max-w-3xl flex-1 space-y-6 px-4 py-10 sm:px-6">
+      <Chapter1Assessment courseId={chapter.course_id} chapterHref={base}
+        locale={locale} sessionId={null} completed={posttestReady} assessor
+        initialState={sharedState as {attempts:never[];final_attempts:never[]}}
+        orientation={chapter1Orientation} contentApproved={chapter1Orientation.editorial_status==='approved'}/>
+      <Link className="text-sm underline" href={base}>{text('Balangkas ng kabanata','Chapter outline')}</Link>
+    </main>;
+  }
   return <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 py-10 sm:px-6">
     <Breadcrumbs items={crumbs}/>
     <header><p className="text-sm font-semibold text-primary">{text('Sariling pag-aaral ng assessor','Assessor personal study')}</p>
       <h1 className="mt-2 text-2xl font-semibold">{examPage?(examPhase==='pretest'?text('Diagnostic pretest','Diagnostic pretest'):text('Pangwakas na pagsusulit','Chapter post-test')):lesson?title(lesson):subchapter?title(subchapter):title(chapter)}</h1>
       <p className="mt-2">{briefingVisible?text('Sundan ang sariling paghahanda sa Kabanata 1. Hiwalay ang pag-aaral, pagmamarka at pagsasanay sa platform.','Follow your personal Chapter 1 preparation. Study, scoring and platform practice are separate steps.'):text('Kumpletuhin ang buong kabanata at pumasa sa pagsusulit bago ang oryentasyon sa pagmamarka. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Complete the full chapter and pass its exam before scoring orientation. No practical assessment by another assessor is required.')}</p>
     </header>
+    {majorIntro&&<Chapter1MajorIntroduction intro={majorIntro} courseId={chapter.course_id}
+      learnerId={viewer.appUser.id} language={en?'en':'fil'}/>}
     <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/qualifications`}>{text('Aking mga sertipikasyon','My certifications')}</Link>
     {briefingVisible && <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`${base}/briefing`}>{text('Mga layunin at responsibilidad sa Kabanata 1','Chapter 1 objectives and responsibilities')}</Link>}
     {briefingVisible && showPreparation ? <AssessorPreparationChecklist locale={locale} baseHref={base} input={{
@@ -161,6 +190,11 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       {e.lesson?<Link prefetch={false} className="mt-1 block py-2 font-medium underline" href={href(e.lesson)}>{title(e.lesson)}</Link>:<p className="mt-2">{text('Kinakailangang aralin — hindi pa available','Required lesson — not yet available')}</p>}
       <p className="text-sm">{e.done?text('Natapos','Completed'):e.lesson?text('Hindi pa natatapos','Not completed'):text('Naghihintay ng paglalathala','Awaiting publication')}</p>
     </li>)}</ol>)}
+    {checkpoint&&lesson&&(completed??[]).some(row=>row.lesson_id===lesson.id&&row.revision_id===lesson.published_revision_id)&&
+      <Link prefetch={false} className="block rounded-md border border-ink/20 p-4 underline"
+        href={`/courses/${chapter.course_id}/practice/${checkpoint.key}`}>
+        {text('Opsyonal na maikling pagsasanay','Optional checkpoint practice')} · {checkpoint.key}
+      </Link>}
     {currentAttempts.length>0&&<section aria-label={text('Mga nakaraang pagsusulit','Exam history')} className="rounded-xl border border-ink/15 p-4">
       <h2 className="font-semibold">{text('Mga nakaraang pagsusulit','Exam history')}</h2>
       <ol className="mt-2 space-y-1 text-sm">{currentAttempts.map(a=><li key={a.id}>{a.phase==='pretest'?text('Diagnostic pretest','Diagnostic pretest'):text('Pangwakas na pagsusulit','Post-test')}: {a.score_percent}% {a.phase==='posttest'?(a.passed?text('· Pumasa','· Passed'):text('· Hindi pumasa','· Not passed')):''}</li>)}</ol>

@@ -18,9 +18,10 @@ type Orientation = { expectations: Text; overview: Text; recap: Text };
 type Stage = "entry" | "overview" | "recap" | "questions" | "review" | "result";
 
 export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, completed,
-  initialState, orientation, contentApproved }: {
+  initialState, orientation, contentApproved, assessor = false }: {
   courseId: string; chapterHref: string; locale: string; sessionId: string | null;
   completed: boolean; initialState: State; orientation: Orientation; contentApproved: boolean;
+  assessor?: boolean;
 }) {
   const lang = locale === "en" ? "en" : "fil";
   const copy = (en: string, fil: string) => lang === "en" ? en : fil;
@@ -47,8 +48,10 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
 
   const pre = state.attempts.find(a => a.phase === "pretest" && a.state === "submitted") ??
     state.final_attempts.find(a => a.phase === "pretest");
-  const post = state.attempts.find(a => a.phase === "posttest" && a.state === "submitted") ??
+  const post = [...state.attempts].reverse().find(a => a.phase === "posttest" && a.state === "submitted") ??
     state.final_attempts.find(a => a.phase === "posttest");
+  const postPassed = !assessor || Boolean(post && (post.score_percent ?? 0) >= 80);
+  const reviewHref = (id: string) => `/courses/${courseId}/assessment/review/${id}`;
   const phase: "pretest" | "posttest" = pre ? "posttest" : "pretest";
   const current = attempt?.items[position];
   const response = pending?.item_id === current?.item_id ? pending :
@@ -219,10 +222,20 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   if (stage === "result" && attempt) return <section className="space-y-4">
     <h1 className="text-2xl font-semibold">{copy("Assessment submitted", "Naisumite ang pagtatasa")}</h1>
     <p>{copy("Score", "Iskor")}: {attempt.score_percent}%</p>
+    {assessor && attempt.phase === "posttest" && <p>{(attempt.score_percent ?? 0) >= 80
+      ? copy("Passed. You can continue to scoring orientation.", "Pumasa. Maaari ka nang magpatuloy sa oryentasyon sa pagmamarka.")
+      : copy("80% is required before scoring orientation. Review the chapter and retry the post-test.",
+        "Kailangan ang 80% bago ang oryentasyon sa pagmamarka. Balikan ang kabanata at ulitin ang post-test.")}</p>}
     {attempt.phase === "pretest" ? <p>{copy("This is your starting point. Study the chapter to see what you can revisit; answer keys are not shown for the baseline.",
       "Ito ang iyong panimulang punto. Pag-aralan ang kabanata upang makita ang dapat balikan; hindi ipinapakita ang mga tamang sagot sa baseline.")}</p> :
-      attempt.legacy_attempt_id && <Link className="underline" href={`/courses/${courseId}/assessment/review/${attempt.legacy_attempt_id}`}>
+      attempt.legacy_attempt_id && <Link className="underline" href={reviewHref(attempt.legacy_attempt_id)}>
         {copy("Review my post-test", "Balikan ang aking post-test")}</Link>}
+    {assessor && attempt.phase === "posttest" && (attempt.score_percent ?? 0) < 80 &&
+      <button className={button} onClick={() => {setAttempt(null); setStage("entry");}}>
+        {copy("Retry post-test", "Ulitin ang post-test")}</button>}
+    {assessor && attempt.phase === "posttest" && (attempt.score_percent ?? 0) >= 80 &&
+      <Link className="block underline" href={`${chapterHref}/orientation`}>
+        {copy("Continue to scoring orientation", "Magpatuloy sa oryentasyon sa pagmamarka")}</Link>}
     <Link className="block underline" href={chapterHref}>{copy("Back to chapter", "Bumalik sa kabanata")}</Link>
   </section>;
 
@@ -232,14 +245,14 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
     {pre && <p>{copy("Baseline submitted", "Naisumite na ang baseline")}: {pre.score_percent}%</p>}
     {post && <p>{copy("Post-test submitted", "Naisumite na ang post-test")}: {post.score_percent}%</p>}
     {state.attempts.filter(a => a.state === "submitted" && a.phase === "posttest" && a.legacy_attempt_id).map(a =>
-      <Link key={a.attempt_id} className="block underline" href={`/courses/${courseId}/assessment/review/${a.legacy_attempt_id}`}>
+      <Link key={a.attempt_id} className="block underline" href={reviewHref(a.legacy_attempt_id!)}>
         {copy("Review my post-test", "Balikan ang aking post-test")}</Link>)}
     {state.final_attempts.filter(a => a.phase === "posttest" &&
       !state.attempts.some(versioned => versioned.legacy_attempt_id === a.id)).map(a =>
-      <Link key={a.id} className="block underline" href={`/courses/${courseId}/assessment/review/${a.id}`}>
+      <Link key={a.id} className="block underline" href={reviewHref(a.id)}>
         {copy("Review historical post-test", "Balikan ang dating post-test")}</Link>)}
     {draft ? <button className={button} disabled={busy} onClick={() => void resume(draft.attempt_id)}>
-      {copy(`Resume ${phase}`, `Ipagpatuloy ang ${phase}`)}</button> : !post && (phase === "pretest" || completed) ? <>
+      {copy(`Resume ${phase}`, `Ipagpatuloy ang ${phase}`)}</button> : (!post || !postPassed) && (phase === "pretest" || completed) ? <>
       {stage === "entry" && !pre && <><NotesMarkdown markdown={orientation.expectations[lang]} />
         <button className={button} onClick={() => setStage("overview")}>{copy("Continue to chapter overview", "Magpatuloy sa buod ng kabanata")}</button></>}
       {stage === "overview" && !pre && <><NotesMarkdown markdown={orientation.overview[lang]} />

@@ -67,6 +67,27 @@ beforeAll(async () => {
   await db.exec(read('supabase/migrations/20261011025138_chapter1_learning_notes.sql'));
   await db.exec(read('supabase/migrations/20261011030000_chapter1_review_and_reset.sql'));
   await db.exec(read('supabase/migrations/20261011033000_chapter1_intro_views.sql'));
+  await db.exec(`create schema assessor_private;
+    create table public.assessor_exam_attempts(
+      id uuid primary key default gen_random_uuid(), assessor_user_id uuid, chapter_id uuid,
+      curriculum_version text, exam_id text, phase text, status text,
+      question_set_hash text, question_count integer, passing_percent numeric,
+      score_percent numeric, passed boolean, answers jsonb, pretest_late boolean,
+      submitted_at timestamptz, started_at timestamptz default now());
+    create table public.assessor_lesson_progress(assessor_user_id uuid, chapter_id uuid,
+      lesson_id uuid, revision_id uuid);
+    create function assessor_private.exam_context(p_chapter_id uuid)
+    returns table(actor_id uuid,course_id uuid,chapter_key text,curriculum_version text,
+      required_lessons jsonb,minimum_questions integer,passing_percent numeric)
+    language sql security definer set search_path = '' as $$
+      select u.id,ch.course_id,ch.chapter_key,'chapter1-v1'::text,'[]'::jsonb,30,80::numeric
+      from public.current_app_user() u join public.training_program_chapters ch on ch.id=p_chapter_id
+      where u.role='assessor' and u.status='active' $$;
+    create function assessor_private.chapter_lessons_complete(uuid,uuid,uuid,jsonb)
+      returns boolean language sql as $$ select true $$;
+    create function public.rpc_assessor_exam_open(uuid,text)
+      returns jsonb language sql as $$ select '{}'::jsonb $$;`);
+  await db.exec(read('supabase/migrations/20261012152647_assessor_chapter1_shared_assessment.sql'));
   await db.query('insert into org_units values($1,$2)', [ids.org, `${ids.org}.`]);
   for (const [id, role] of [[ids.learner, 'bhw'], [ids.stranger, 'bhw'], [ids.admin, 'admin'],
     [ids.reviewer, 'assessor'], [ids.nextReviewer, 'assessor']])
@@ -97,6 +118,53 @@ beforeEach(async () => { await db.exec('begin'); });
 afterEach(async () => { await db.exec('rollback'); });
 
 describe('Chapter 1 private learner attempt contract', () => {
+  it('serves the identical Chapter 1 form to BHW and assessor and records assessor evidence separately', async () => {
+    const bhw = (await call(ids.learner, 'rpc_learner_assessment_start', '$1,$2', [ids.course, 'pretest'])).rows[0].result;
+    const assessor = (await call(ids.reviewer, 'rpc_learner_assessment_start', '$1,$2', [ids.course, 'pretest'])).rows[0].result;
+    expect(assessor.form_id).toBe(bhw.form_id);
+    expect(assessor.items).toEqual(bhw.items);
+    const changes = assessor.items.map(item => ({item_id:item.item_id,kind:'choice',option_id:'a'}));
+    const saved = (await call(ids.reviewer, 'rpc_learner_assessment_save', '$1,$2,$3,$4::jsonb,$5,$6',
+      [assessor.attempt_id,0,uuid(950),JSON.stringify(changes),29,'en'])).rows[0].result;
+    await call(ids.reviewer, 'rpc_learner_assessment_submit', '$1,$2,$3',
+      [assessor.attempt_id,saved.revision,uuid(951)]);
+    const pre = (await call(ids.reviewer, 'rpc_learner_assessment_get', '$1', [assessor.attempt_id])).rows[0].result;
+    expect(pre.legacy_attempt_id).toBeTruthy();
+    expect((await db.query('select count(*)::integer as n from public.course_test_attempts')).rows[0].n).toBe(0);
+    expect((await db.query('select phase,score_percent::double precision as score_percent from public.assessor_exam_attempts')).rows)
+      .toEqual([{phase:'pretest',score_percent:100}]);
+    await expect(call(ids.reviewer, 'rpc_chapter_practice_start', '$1,$2', [ids.course, 'G01']))
+      .rejects.toThrow(/finish the mapped lesson/);
+    await db.query('insert into course_modules values($1,$2)', [uuid(960), ids.course]);
+    await db.query('insert into course_lessons(id,module_id,published_revision_id,lesson_key) values($1,$2,$3,$4)',
+      [uuid(961),uuid(960),uuid(962),'bhw-roles-hepo']);
+    await db.query('insert into assessor_lesson_progress values($1,$2,$3,$4)',
+      [ids.reviewer,ids.chapter,uuid(961),uuid(962)]);
+    expect((await call(ids.reviewer, 'rpc_chapter_practice_start', '$1,$2', [ids.course, 'G01'])).rows[0].result.group_key)
+      .toBe('G01');
+    const post = (await call(ids.reviewer, 'rpc_learner_assessment_start', '$1,$2', [ids.course, 'posttest'])).rows[0].result;
+    expect(post.form_id).toBe('f-posttest');
+    const postChanges = post.items.map((item, i) => ({item_id:item.item_id,kind:'choice',option_id:i<23?'a':'b'}));
+    const savedPost = (await call(ids.reviewer, 'rpc_learner_assessment_save', '$1,$2,$3,$4::jsonb,$5,$6',
+      [post.attempt_id,0,uuid(952),JSON.stringify(postChanges),29,'en'])).rows[0].result;
+    await call(ids.reviewer, 'rpc_learner_assessment_submit', '$1,$2,$3',
+      [post.attempt_id,savedPost.revision,uuid(953)]);
+    const retry = (await call(ids.reviewer, 'rpc_learner_assessment_start', '$1,$2', [ids.course, 'posttest'])).rows[0].result;
+    expect(retry.attempt_id).not.toBe(post.attempt_id);
+    const retryChanges = retry.items.map((item, i) => ({item_id:item.item_id,kind:'choice',option_id:i<24?'a':'b'}));
+    const savedRetry = (await call(ids.reviewer, 'rpc_learner_assessment_save', '$1,$2,$3,$4::jsonb,$5,$6',
+      [retry.attempt_id,0,uuid(954),JSON.stringify(retryChanges),29,'en'])).rows[0].result;
+    await call(ids.reviewer, 'rpc_learner_assessment_submit', '$1,$2,$3',
+      [retry.attempt_id,savedRetry.revision,uuid(955)]);
+    const result = (await call(ids.reviewer, 'rpc_learner_assessment_get', '$1', [retry.attempt_id])).rows[0].result;
+    expect(result.score_percent).toBe(80);
+    expect((await call(ids.reviewer, 'rpc_learner_assessment_review', '$1', [result.legacy_attempt_id])).rows[0].result.items).toHaveLength(30);
+    await expect(call(ids.nextReviewer, 'rpc_learner_assessment_review', '$1', [result.legacy_attempt_id]))
+      .rejects.toThrow(/authorized/);
+    await expect(call(ids.reviewer, 'rpc_learner_assessment_start', '$1,$2', [ids.course, 'posttest']))
+      .rejects.toThrow(/already passed/);
+    await expect(call(ids.stranger, 'rpc_learner_assessment_get', '$1', [assessor.attempt_id])).rejects.toThrow(/authorized/);
+  });
   it('resumes a draft, hides keys and handles unknown responses and an idempotent final submission', async () => {
     const start = () => call(ids.learner, 'rpc_learner_assessment_start', '$1,$2', [ids.course, 'pretest']);
     const first = (await start()).rows[0].result;
