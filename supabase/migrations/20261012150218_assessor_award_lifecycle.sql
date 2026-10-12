@@ -68,9 +68,11 @@ begin
   select 1 from public.org_units ou where ou.id=target.org_unit_id and ou.path like public.current_org_path()||'%')
   or not exists(select 1 from public.training_program_chapters ch
    join public.training_programs p on p.id=ch.program_id
+   join public.courses course on course.id=ch.course_id
    where ch.id=w.chapter_id and ch.program_id=w.program_id and ch.chapter_key='chapter-1'
     and p.content_key='bhw-reference-manual' and
-    (public.current_org_path() like public.org_unit_path(p.org_unit_id)||'%' or public.org_unit_path(p.org_unit_id) like public.current_org_path()||'%'))
+    (public.current_org_path() like public.org_unit_path(p.org_unit_id)||'%' or public.org_unit_path(p.org_unit_id) like public.current_org_path()||'%')
+    and (public.current_org_path() like public.org_unit_path(course.org_unit_id)||'%' or public.org_unit_path(course.org_unit_id) like public.current_org_path()||'%'))
  then raise exception 'award out of scope'; end if;
  if w.status<>p_expected_status or w.status_changed_at is distinct from p_expected_changed_at then raise exception 'stale award status'; end if;
  if w.status=p_status then return false; end if;
@@ -109,9 +111,11 @@ begin
   join public.org_units ou on ou.id=u.org_unit_id
   join public.training_program_chapters ch on ch.id=w.chapter_id
   join public.training_programs p on p.id=w.program_id
+  join public.courses course on course.id=ch.course_id
   where u.role='assessor' and ou.path like public.current_org_path()||'%'
    and ch.program_id=w.program_id and ch.chapter_key='chapter-1' and p.content_key='bhw-reference-manual'
    and (public.current_org_path() like public.org_unit_path(p.org_unit_id)||'%' or public.org_unit_path(p.org_unit_id) like public.current_org_path()||'%')
+   and (public.current_org_path() like public.org_unit_path(course.org_unit_id)||'%' or public.org_unit_path(course.org_unit_id) like public.current_org_path()||'%')
   order by w.issued_at desc,w.id desc limit 30 offset (p_page-1)*30) s;
  return result;
 end; $$;
@@ -130,10 +134,13 @@ begin
   join public.users u on u.id=w.actor_id join public.org_units ou on ou.id=u.org_unit_id
   join public.training_program_chapters ch on ch.id=w.chapter_id
   join public.training_programs p on p.id=w.program_id
+  join public.courses course on course.id=ch.course_id
   where w.id=p_award_id and u.role='assessor' and ou.path like public.current_org_path()||'%'
    and ch.program_id=w.program_id and ch.chapter_key='chapter-1' and p.content_key='bhw-reference-manual'
    and (public.current_org_path() like public.org_unit_path(p.org_unit_id)||'%'
-    or public.org_unit_path(p.org_unit_id) like public.current_org_path()||'%')) then raise exception 'award out of scope'; end if;
+    or public.org_unit_path(p.org_unit_id) like public.current_org_path()||'%')
+   and (public.current_org_path() like public.org_unit_path(course.org_unit_id)||'%'
+    or public.org_unit_path(course.org_unit_id) like public.current_org_path()||'%')) then raise exception 'award out of scope'; end if;
  select coalesce(jsonb_agg(jsonb_build_object('id',e.id,'operatorId',e.operator_id,
   'previousStatus',e.previous_status,'nextStatus',e.next_status,'reason',e.reason,
   'at',e.created_at) order by e.created_at desc,e.id desc),'[]'::jsonb) into result
@@ -232,6 +239,7 @@ begin
   where u.role='assessor' and ou.path like public.current_org_path()||'%'
    and p.content_key='bhw-reference-manual' and
    (public.current_org_path() like public.org_unit_path(p.org_unit_id)||'%' or public.org_unit_path(p.org_unit_id) like public.current_org_path()||'%')
+   and (public.current_org_path() like public.org_unit_path(course.org_unit_id)||'%' or public.org_unit_path(course.org_unit_id) like public.current_org_path()||'%')
   order by q.issued_at desc,q.id desc limit 30 offset (p_page-1)*30) s;
  return result;
 end; $$;

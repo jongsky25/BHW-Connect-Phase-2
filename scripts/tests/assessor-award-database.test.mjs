@@ -379,6 +379,16 @@ describe('C1AF-09 scoped lifecycle and read-only transition',()=>{
   expect((await ownerCertificate(w.certificate_id)).status).toBe('revoked');
   await expect(ensure()).rejects.toThrow('incomplete');
  });
+ it('rechecks course geography for reads, history and writes',async()=>{
+  const w=await earnedCertificate();
+  await db.exec("update assessor_rollout_private.award_lifecycle_control set mutations_enabled=true,policy_reference='LOCAL TEST ONLY'");
+  await db.query('update courses set org_unit_id=$1 where id=$2',[ids.away,ids.course]);
+  expect((await list(ids.admin)).rows).toEqual([]);
+  expect(await report(ids.admin)).toEqual([]);
+  await expect(call(ids.admin,'rpc_admin_assessor_award_history',w.id,1)).rejects.toThrow('out of scope');
+  await expect(change(ids.admin,w,'active','suspended')).rejects.toThrow('out of scope');
+  expect((await rows())[0].status).toBe('active');
+ });
  it('denies preview and out-of-area admin mutations even with an enabled local gate',async()=>{
   const w=await earnedCertificate();
   await db.exec("update assessor_rollout_private.award_lifecycle_control set mutations_enabled=true,policy_reference='LOCAL TEST ONLY'");
