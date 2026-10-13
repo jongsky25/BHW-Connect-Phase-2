@@ -75,6 +75,14 @@ export default async function TrainingSessionDetailPage({
     returnHref=requested.href;
   }
 
+  if(session.status==='draft'){
+    const {data:runs,error:runError}=await supabase.from('course_session_activities')
+      .select('id,session_id,module_id,activity_id,status,duration_minutes,note,activity_snapshot,recorded_at')
+      .eq('session_id',id).order('recorded_at').limit(100).returns<ActivityRun[]>();
+    if(runError)throw new Error('Unable to load draft activities');
+    return <Chapter1DraftSession id={session.id} lang={locale==='en'?'en':'fil'} returnHref={returnHref} runs={runs??[]}/>;
+  }
+
   const { data: modules } = await supabase
     .from("course_modules")
     .select(
@@ -124,7 +132,6 @@ export default async function TrainingSessionDetailPage({
     .select("id,session_id,module_id,activity_id,status,duration_minutes,note,activity_snapshot,recorded_at")
     .eq("session_id",id).order("recorded_at").returns<ActivityRun[]>();
   if(activityError) throw new Error("Unable to load session activities");
-  if(session.status==='draft')return <Chapter1DraftSession id={session.id} lang={locale==='en'?'en':'fil'} returnHref={returnHref} runs={activityRuns??[]}/>;
   const enrolledBhwIds = (enrollments ?? []).map((e) => e.bhw_user_id);
 
   const [{ data: courseProgress }, { data: testAttempts }, { data: bhwCandidates }, { data: v2Forms, error: formsError }] = await Promise.all([

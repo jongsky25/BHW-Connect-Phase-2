@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import type { FacilitatorActivity, ActivityRun } from "@/lib/elearning/activities";
 
@@ -16,12 +16,15 @@ export function Chapter1ActivityPlan({lang,lessonId,moduleId,activities,sessions
   const [pending,setPending]=useState(false);
   const [error,setError]=useState("");
   const [message,setMessage]=useState("");
+  const loadSequence=useRef(0);
   async function choose(id:string,clear=true) {
-    if(clear){setError("");setMessage("");}setSessionId(id);
+    const sequence=++loadSequence.current;
+    if(clear){setError("");setMessage("");}setSessionId(id);setRuns([]);
     if(!id){setRuns([]);return;}
     const {data,error:e}=await createClient().from("course_session_activities")
       .select("id,session_id,module_id,activity_id,status,duration_minutes,note,activity_snapshot,recorded_at")
       .eq("session_id",id).eq("module_id",moduleId).limit(100).returns<ActivityRun[]>();
+    if(sequence!==loadSequence.current)return;
     if(e){setError(pick("Hindi mabasa ang plano.","Could not load the plan."));return;}
     setRuns(data??[]);
   }
@@ -54,7 +57,7 @@ export function Chapter1ActivityPlan({lang,lessonId,moduleId,activities,sessions
     <p className="text-sm">{pick("Pumili ng sariling bukas na session o gumawa ng draft. Ang pag-save ay plano lamang: walang attendance, delivery, o marka.","Choose your own open session or create a draft. Saving only plans activities: no attendance, delivery, or grade is recorded.")}</p>
     <div className="flex flex-wrap items-end gap-3">
       <label className="grid min-w-48 flex-1 gap-1">{pick("Session","Session")}
-        <select className="min-h-11 rounded border bg-canvas p-2" value={sessionId} onChange={e=>void choose(e.target.value)}>
+        <select className="min-h-11 rounded border bg-canvas p-2" value={sessionId} disabled={pending} onChange={e=>void choose(e.target.value)}>
           <option value="">{pick("Pumili ng session","Choose a session")}</option>
           {options.map(s=><option key={s.id} value={s.id}>{s.status==="draft"?pick("Draft plan","Draft plan"):s.scheduled_at?new Date(s.scheduled_at).toLocaleString(lang==="en"?"en-PH":"fil-PH"):"Session"} · {s.id.slice(0,8)}</option>)}
         </select>
