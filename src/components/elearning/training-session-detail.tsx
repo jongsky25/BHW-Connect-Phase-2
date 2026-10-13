@@ -30,6 +30,7 @@ type ModuleProgressRow = { course_progress_id: string; module_id: string; comple
 
 type Props = {
   session: CourseSession;
+  returnHref?: string;
   modules: CourseModule[];
   visuals: CourseModuleVisual[];
   facilitatorNotes: CourseModuleFacilitatorNotes[];
@@ -48,6 +49,7 @@ const ATTENDANCE: EnrollmentStatus[] = ["enrolled", "attended", "no_show"];
 
 export function TrainingSessionDetail({
   session,
+  returnHref,
   modules,
   visuals,
   facilitatorNotes,
@@ -273,12 +275,14 @@ export function TrainingSessionDetail({
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{courseTitle}</h1>
         <p className="mt-1 text-ink/70">
-          {new Date(session.scheduled_at).toLocaleString(locale === "en" ? "en-PH" : "fil-PH")}
+          {session.scheduled_at&&new Date(session.scheduled_at).toLocaleString(locale === "en" ? "en-PH" : "fil-PH")}
           {session.location_note ? ` · ${session.location_note}` : ""}
           {" · "}
           <span className="font-medium">{t(`status.${status}`)}</span>
         </p>
       </div>
+
+      {returnHref&&<a className="inline-block min-h-11 content-center underline" href={returnHref}>{locale==='en'?'Return to lesson guide':'Bumalik sa gabay ng aralin'}</a>}
 
       {isPreview ? <PreviewNote /> : null}
 

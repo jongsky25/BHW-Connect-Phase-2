@@ -52,7 +52,7 @@ export function TrainingSessionsConsole({ initialSessions, courses, locale }: Pr
                       {locale === "en" ? session.courses?.title_en : session.courses?.title_fil}
                     </p>
                     <p className="text-sm text-ink/70">
-                      {new Date(session.scheduled_at).toLocaleString(locale === "en" ? "en-PH" : "fil-PH")}
+                      {session.scheduled_at?new Date(session.scheduled_at).toLocaleString(locale === "en" ? "en-PH" : "fil-PH"):locale === "en" ? "No date set" : "Wala pang petsa"}
                       {session.location_note ? ` · ${session.location_note}` : ""}
                     </p>
                   </div>
