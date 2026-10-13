@@ -1,7 +1,7 @@
 // A session return points only to a Chapter 1 lesson in the same course.
 // The caller verifies the IDs against the database before using the href.
-export function parseSessionReturn(value:string|undefined) {
-  if(!value || !value.startsWith('/training/'))return null;
+export function parseSessionReturn(value:unknown) {
+  if(typeof value!=='string'||!value.startsWith('/training/'))return null;
   try {
     const url=new URL(value,'https://training.local');
     if(url.origin!=='https://training.local'||url.hash)return null;

@@ -25,7 +25,7 @@ export default async function TrainingSessionDetailPage({
   params,searchParams,
 }: {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{returnTo?:string}>;
+  searchParams: Promise<{returnTo?:string|string[]}>;
 }) {
   const { id } = await params;
   const supabase = await createClient();

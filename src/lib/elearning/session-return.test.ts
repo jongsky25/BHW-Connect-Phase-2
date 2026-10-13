@@ -21,5 +21,6 @@ describe('session return handoff',()=>{
     guide.replace('view=run','view=unknown'),
     `${guide}&next=/home`,
     `${guide}#fragment`,
+    [guide,guide],
   ])('rejects invalid return destination %s',value=>expect(parseSessionReturn(value)).toBeNull());
 });
