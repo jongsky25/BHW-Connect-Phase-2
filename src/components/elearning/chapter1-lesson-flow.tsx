@@ -5,6 +5,7 @@ import {parseFacilitatorNotes} from '@/lib/elearning/facilitator-guide';
 import type {FacilitatorActivity} from '@/lib/elearning/activities';
 import type {ObservationIndicator} from '@/lib/elearning/types';
 import {Chapter1ActivityPlan} from './chapter1-activity-plan';
+import type {ReviewedCriterion} from '@/lib/assessor/lesson-observation';
 
 type Lang = 'fil' | 'en';
 type View = 'prepare' | 'run';
@@ -26,10 +27,11 @@ const cards = {
   ],
 } satisfies Record<View, Array<{source:string;fil:string;en:string}>>;
 
-export function Chapter1LessonFlow({lang,view,baseHref,returnHref,notesMarkdown,objectives,indicators,activities=[],lessonId,moduleId,sessions=[],planningEnabled=false}:{
+export function Chapter1LessonFlow({lang,view,baseHref,returnHref,notesMarkdown,objectives,indicators,activities=[],lessonId,moduleId,sessions=[],planningEnabled=false,reviewedCriteria=[],observeHref}:{
   lang:Lang;view:View;baseHref:string;returnHref?:string;notesMarkdown:string|null;
   objectives:string[];indicators:ObservationIndicator[];activities?:FacilitatorActivity[];lessonId?:string;moduleId?:string;
   sessions?:Array<{id:string;status:string;scheduled_at:string|null}>;planningEnabled?:boolean;
+  reviewedCriteria?:ReviewedCriterion[];observeHref?:string;
 }) {
   const pick=(fil:string,en:string)=>lang==='en'?en:fil;
   const sections=parseFacilitatorNotes(notesMarkdown??'');
@@ -45,13 +47,15 @@ export function Chapter1LessonFlow({lang,view,baseHref,returnHref,notesMarkdown,
         {pick('Ipakita sa BHW','Show BHW presentation')}</Link>
     </nav>
     {returnHref && <Link prefetch={false} className="inline-block min-h-11 content-center underline" href={returnHref}>{pick('Bumalik sa working area','Back to working area')}</Link>}
+    {observeHref&&<Link prefetch={false} className="inline-block min-h-11 content-center rounded-md bg-primary px-4 py-3 font-medium text-on-primary" href={observeHref}>{pick('Obserbahan ang BHW','Observe a BHW')}</Link>}
     {planningEnabled&&lessonId&&moduleId&&<Chapter1ActivityPlan lang={lang} lessonId={lessonId} moduleId={moduleId} activities={activities} sessions={sessions} guideHref={link(view)}/>}
     <div className="rounded-xl border border-primary/30 bg-primary/5 p-4 sm:p-5">
       <h2 className="font-semibold">{pick('Layunin ng 1.6.2','1.6.2 objective')}</h2>
       {objectives.length?<ul className="mt-2 list-disc pl-5">{objectives.map((value,i)=><li key={i}>{value}</li>)}</ul>:<p className="mt-2">{pick('Wala pang inilathalang layunin. Tingnan ang buong gabay.','No published objective. Consult the full guide.')}</p>}
       <h3 className="mt-4 font-semibold">{pick('Eksaktong pamantayan sa obserbasyon','Published observation criterion')}</h3>
-      {criterion?<p className="mt-2">{pick(criterion.observable_fil,criterion.observable_en)}</p>:<p className="mt-2">{pick('Wala pang inilathalang pamantayan. Huwag magbigay ng rating.','No published criterion. Do not rate performance.')}</p>}
-      <p className="mt-2 text-sm text-ink/75">{pick('Gabay sa pagtuturo lamang ito; hindi ito pormal na pagtatasa o pahintulot na magtala.','Teaching guidance only; this is not a formal assessment or permission to record.')}</p>
+      {reviewedCriteria.length?<ul className="mt-2 list-disc pl-5">{reviewedCriteria.map(item=><li key={`${item.id}:${item.version}`}>{item.rubric.observable[lang]}</li>)}</ul>
+        :criterion?<p className="mt-2">{pick(criterion.observable_fil,criterion.observable_en)}</p>:<p className="mt-2">{pick('Wala pang inilathalang pamantayan. Huwag magbigay ng rating.','No published criterion. Do not rate performance.')}</p>}
+      <p className="mt-2 text-sm text-ink/75">{pick('Gabay sa pagtuturo at pagsasanay lamang ito; hindi ito pormal na pagpasa o sertipiko.','This guides teaching and practice only; it does not create a formal pass or certificate.')}</p>
     </div>
     <div className="grid gap-3 sm:grid-cols-2">
       {cards[view].filter(card=>sources.has(card.source)).map((card,i)=><article key={`${card.source}-${i}`} className="rounded-xl border border-ink/15 p-4">

@@ -32,6 +32,9 @@ import {NotesMarkdown} from '@/components/elearning/notes-markdown';
 import narrationManifest from '../../../../../content/training/day1-basic-competencies/narration.json';
 import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearning/reference-narration';
 import {translationsForLesson} from '@/lib/elearning/lesson-translations';
+import {chapter1BriefingIdentity} from '@/lib/assessor/briefing';
+import {loadAssessorRollout} from '@/lib/assessor/load-rollout';
+import {observationHref,parseLessonPracticeContext,selectedWorkspaceLearner} from '@/lib/assessor/lesson-observation';
 
 const card='block rounded-xl border border-ink/15 p-5 hover:bg-ink/5 focus-visible:outline-2 focus-visible:outline-primary';
 
@@ -258,6 +261,16 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           return url.origin==='https://training.local' && url.pathname===workspaceBase ? `${url.pathname}${url.search}` : undefined;
         } catch { return undefined; }})() || undefined;
         const context=returnHref?`&returnTo=${encodeURIComponent(returnHref)}`:'';
+        const selectedLearner=selectedWorkspaceLearner(returnHref,programId);
+        const observationUi=flowView && flags.assessor_flow_ui
+          ?(await loadAssessorRollout(db,flags,chapter1BriefingIdentity(programId),{actor:{
+            id:actor.id,role:actor.role,active:actor.status==='active',preview:viewer.isPreview,
+          }})).uiVisible:false;
+        const observationData=observationUi?await db.rpc('rpc_assessor_lesson_practice_context',{
+          p_program_id:programId,p_lesson_id:lesson.id,p_bhw_user_id:selectedLearner,
+        }):null;
+        const observationContext=observationData&&!observationData.error
+          ?parseLessonPracticeContext(observationData.data,programId,lesson.id,selectedLearner??undefined):null;
         const showGuide=facilitator && view!=='lesson';
         // The pretest check and the lesson content are independent reads, so
         // they share one round trip; the redirect still wins if it applies.
@@ -306,6 +319,9 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           </nav>}
           {flowView ? <Chapter1LessonFlow lang={loc} view={flowView} baseHref={`${moduleHref}/${lesson.id}`} returnHref={returnHref}
             lessonId={lesson.id} moduleId={subchapter.id}
+            reviewedCriteria={observationContext?.criteria??[]}
+            observeHref={observationContext?.learner&&selectedLearner
+              ?observationHref(programId,lesson.id,selectedLearner,`${moduleHref}/${lesson.id}?view=${flowView}${context}`):undefined}
             sessions={(planSessions??[]).filter(s=>s.status==='scheduled'||s.plan_lesson_id===lesson.id)} planningEnabled={flags.course_sessions}
             notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}
             indicators={notes?.observation_indicators??[]} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)}/>
