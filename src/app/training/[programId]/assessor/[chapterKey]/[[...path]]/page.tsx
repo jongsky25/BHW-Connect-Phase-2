@@ -153,6 +153,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
     {majorIntro&&<Chapter1MajorIntroduction intro={majorIntro} courseId={chapter.course_id}
       learnerId={viewer.appUser.id} language={en?'en':'fil'}/>}
     <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/qualifications`}>{text('Aking mga sertipikasyon','My certifications')}</Link>
+    {chapterKey==='chapter-1' && <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/workspace`}>{text('Working area ng Kabanata 1','Chapter 1 working area')}</Link>}
     {briefingVisible && <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`${base}/briefing`}>{text('Mga layunin at responsibilidad sa Kabanata 1','Chapter 1 objectives and responsibilities')}</Link>}
     {briefingVisible && showPreparation ? <AssessorPreparationChecklist locale={locale} baseHref={base} input={{
       briefingRecorded:true,pretestRecorded:pretestDone,total:study.total,completed:study.completed,missing:study.missing,

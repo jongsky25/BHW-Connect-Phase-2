@@ -1,0 +1,155 @@
+import Link from 'next/link';
+import {getLocale} from 'next-intl/server';
+import {notFound, redirect} from 'next/navigation';
+import {Breadcrumbs} from '@/components/breadcrumbs';
+import {getViewer} from '@/lib/auth/viewer';
+import {type ChapterCertifications} from '@/lib/assessor/certifications';
+import {getRequestFeatureFlags} from '@/lib/supabase/request';
+import {createClient} from '@/lib/supabase/server';
+
+type Row = {id:string;full_name:string;barangay:string;area_id:string;learning_status:string};
+type Area = {id:string;name:string};
+type Roster = {rows:Row[];total:number;page:number;pageSize:number;areas:Area[];areasTruncated:boolean};
+type Filters = {q?:string;area?:string;status?:string;page?:string;learner?:string};
+const statuses = ['all','not_started','in_progress','content_completed','certified','failed_assessment'] as const;
+const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+export default async function AssessorWorkspace({params,searchParams}:{
+  params:Promise<{programId:string}>;searchParams:Promise<Filters>;
+}) {
+  const [{programId},query,viewer,flags,locale] = await Promise.all([
+    params,searchParams,getViewer(),getRequestFeatureFlags(),getLocale(),
+  ]);
+  if (!viewer.appUser || viewer.appUser.status !== 'active') redirect('/login');
+  if (!flags.elearning || viewer.role !== 'assessor' || viewer.appUser.role !== 'assessor' || viewer.isPreview) redirect('/home');
+  const en = locale === 'en';
+  const label = (fil:string,english:string) => en ? english : fil;
+  const search = (query.q ?? '').trim().slice(0,80);
+  const area = query.area && uuid.test(query.area) ? query.area : null;
+  const status = statuses.find(value => value === query.status) ?? 'all';
+  const page = Math.min(Math.max(Number.parseInt(query.page ?? '1',10) || 1,1),10000);
+  const db = await createClient();
+  const [{data:program,error:programError},{data:chapter,error:chapterError},rosterResult,certifications] = await Promise.all([
+    db.from('training_programs').select('id,title_fil,title_en').eq('id',programId)
+      .eq('content_key','bhw-reference-manual').eq('status','published').maybeSingle(),
+    db.from('training_program_chapters').select('id,course_id,title_fil,title_en')
+      .eq('program_id',programId).eq('chapter_key','chapter-1').eq('availability','available').maybeSingle(),
+    db.rpc('rpc_assessor_chapter1_workspace', {p_program_id:programId,p_search:search || null,
+      p_area_id:area,p_status:status,p_page:page}),
+    db.rpc('rpc_assessor_certifications_state',{p_program_id:programId}),
+  ]);
+  if (programError || chapterError) throw new Error('Unable to load Chapter 1 workspace');
+  if (!program || !chapter?.course_id) notFound();
+  const base = `/training/${programId}/assessor/workspace`;
+  const href = (changes:Record<string,string|null>) => {
+    const values = new URLSearchParams();
+    if (search) values.set('q',search);
+    if (area) values.set('area',area);
+    if (status !== 'all') values.set('status',status);
+    if (page > 1) values.set('page',String(page));
+    for (const [key,value] of Object.entries(changes)) {
+      if (value) values.set(key,value);
+      else values.delete(key);
+    }
+    const suffix = values.toString();
+    return `${base}${suffix ? `?${suffix}` : ''}`;
+  };
+  const roster = rosterResult.data as Roster | null;
+  const rosterError = !!rosterResult.error || !roster;
+  const records = (certifications.data ?? []) as ChapterCertifications[];
+  const award = records.find(record => record.chapterKey === 'chapter-1')?.awards[0];
+  const selected = query.learner && uuid.test(query.learner)
+    ? roster?.rows.find(row => row.id === query.learner) : undefined;
+  const statusLabel = (value:string) => ({
+    not_started:label('Hindi pa nagsimula','Not started'),
+    in_progress:label('Nag-aaral','Learning in progress'),
+    content_completed:label('Natapos ang nilalaman','Content completed'),
+    certified:label('May naitalang sertipiko','Certificate recorded'),
+    failed_assessment:label('May naitalang hindi naipasang pagtatasa','Assessment outcome recorded'),
+  } as Record<string,string>)[value] ?? label('Hindi matukoy','Unknown');
+  const card = 'rounded-xl border border-ink/15 p-5';
+  return <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-4 py-8 sm:px-6">
+    <Breadcrumbs items={[{label:label('Manwal ng BHW','BHW Reference Manual'),href:`/training/${programId}`},
+      {label:label('Working area ng Kabanata 1','Chapter 1 working area')}]}/>
+    <header>
+      <h1 className="text-2xl font-semibold sm:text-3xl">{label('Working area ng Kabanata 1','Chapter 1 working area')}</h1>
+      <p className="mt-2 text-ink/75">{label('Paghahanda, mga BHW sa iyong lugar, at kasalukuyang gawaing pagtatasa.',
+        'Preparation, BHWs in your area, and current assessment work.')}</p>
+    </header>
+    <nav className="flex flex-wrap gap-3" aria-label={label('Mga bahagi ng working area','Working area sections')}>
+      <a className="rounded-md border px-3 py-2 underline" href="#preparation">{label('Aking paghahanda','My preparation')}</a>
+      <a className="rounded-md border px-3 py-2 underline" href="#roster">{label('Mga BHW na sinusuportahan ko','BHWs I support')}</a>
+      <a className="rounded-md border px-3 py-2 underline" href="#assessment-work">{label('Aking gawaing pagtatasa','My assessment work')}</a>
+    </nav>
+    <section id="preparation" className={card} aria-labelledby="preparation-title">
+      <h2 id="preparation-title" className="text-xl font-semibold">{label('Aking paghahanda','My preparation')}</h2>
+      <p className="mt-2">{label('Maaari mong balikan ang pag-aaral, gabay, oryentasyon at fictional simulation anumang oras.',
+        'You can revisit your study, guides, orientation, and fictional simulation at any time.')}</p>
+      <p className="mt-3 text-sm">{certifications.error
+        ? label('Hindi mabasa ang kasalukuyang sertipikasyon. Subukang muli; bukas pa rin ang paghahanda.',
+          'Current certification could not be read. Try again; preparation remains available.')
+        : award ? `${label('Tala ng Chapter 1 award','Chapter 1 award record')}: ${award.status}. ${label('Hindi ito nag-iisang pahintulot para sa isang opisyal na gawain.',
+          'This record alone is not permission for an official action.')}`
+          : label('Wala pang pinagsamang Chapter 1 award. Tapusin ang kinakailangang paghahanda at tingnan ang My certifications para sa mga kulang.',
+            'No combined Chapter 1 award yet. Complete preparation and check My certifications for blockers.')}</p>
+      <div className="mt-4 flex flex-wrap gap-4">
+        <Link prefetch={false} className="underline" href={`/training/${programId}/assessor/chapter-1`}>{label('Ipagpatuloy ang paghahanda','Continue preparation')}</Link>
+        <Link prefetch={false} className="underline" href={`/training/${programId}/assessor/qualifications`}>{label('Aking mga sertipikasyon','My certifications')}</Link>
+        <Link prefetch={false} className="underline" href={`/training/${programId}/chapter-1`}>{label('Buksan ang gabay ng kabanata','Open chapter guide')}</Link>
+      </div>
+    </section>
+    <section id="roster" className={card} aria-labelledby="roster-title">
+      <h2 id="roster-title" className="text-xl font-semibold">{label('Mga BHW na sinusuportahan ko','BHWs I support')}</h2>
+      <p className="mt-2 text-sm text-ink/75">{label('Mga aktibong BHW lamang sa iyong saklaw. Ang katayuan ng pag-aaral ay hindi pasya sa kahandaan sa pagtatasa.',
+        'Only active BHWs in your catchment. Learning status is not an assessment-readiness decision.')}</p>
+      <form action={base} method="get" className="mt-4 grid gap-3 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)_auto]">
+        <label className="grid gap-1 text-sm">{label('Pangalan o barangay','Name or barangay')}
+          <input className="min-h-11 rounded border bg-canvas px-3" name="q" defaultValue={search} maxLength={80}/></label>
+        <label className="grid gap-1 text-sm">{label('Lugar','Area')}
+          <select className="min-h-11 rounded border bg-canvas px-3" name="area" defaultValue={area ?? ''}>
+            <option value="">{label('Lahat sa aking saklaw','All in my catchment')}</option>
+            {(roster?.areas ?? []).map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
+          </select></label>
+        <label className="grid gap-1 text-sm">{label('Pag-aaral','Learning status')}
+          <select className="min-h-11 rounded border bg-canvas px-3" name="status" defaultValue={status}>
+            {statuses.map(value => <option key={value} value={value}>{value === 'all' ? label('Lahat','All') : statusLabel(value)}</option>)}
+          </select></label>
+        <button className="min-h-11 self-end rounded bg-primary px-4 text-on-primary" type="submit">{label('Hanapin','Search')}</button>
+      </form>
+      {roster?.areasTruncated && <p className="mt-2 text-sm text-ink/70">{label('Ipinapakita ang unang 200 barangay. Maaari ring maghanap ayon sa pangalan ng barangay.',
+        'Showing the first 200 barangays. You can also search by barangay name.')}</p>}
+      {rosterError ? <p role="alert" className="mt-4">{label('Hindi mabasa ang roster. Subukang muli.', 'Roster could not be loaded. Try again.')}</p>
+        : <>
+          <p className="mt-4 text-sm">{label(`${roster.total} tumugma`,`${roster.total} matching BHWs`)}</p>
+          {!roster.rows.length && <p className="mt-3">{search || area || status !== 'all'
+            ? label('Walang tugma sa mga filter. Subukan ang ibang hanap.', 'No BHWs match these filters. Try another search.')
+            : label('Wala pang aktibong BHW sa iyong saklaw.', 'No active BHWs in your catchment yet.')}</p>}
+          {selected && <aside className="mt-4 rounded-md border border-primary/30 bg-primary/5 p-4" aria-label={label('Napiling BHW','Selected BHW')}>
+            <h3 className="font-semibold">{selected.full_name} · {selected.barangay}</h3>
+            <p className="mt-1 text-sm">{statusLabel(selected.learning_status)}</p>
+            <p className="mt-2 text-sm">{label('Tingnan ang mga gabay sa paghahanda bago mag-ayos ng aktuwal na gawain. Hindi sinusuri ng pahinang ito ang pormal na kahandaan.',
+              'Review the preparation guides before arranging actual work. This page does not determine formal readiness.')}</p>
+            <Link prefetch={false} className="mt-3 inline-block underline" href={href({learner:null})}>{label('Bumalik sa listahan','Back to list')}</Link>
+          </aside>}
+          <ul className="mt-4 divide-y rounded-md border border-ink/15">{roster.rows.map(row => <li key={row.id} className="flex flex-wrap items-center justify-between gap-3 p-4">
+            <div><p className="font-medium">{row.full_name} · {row.barangay}</p><p className="text-sm text-ink/70">{statusLabel(row.learning_status)}</p></div>
+            <Link prefetch={false} className="min-h-11 content-center underline" href={href({learner:row.id})}>{label('Tingnan','View')}</Link>
+          </li>)}</ul>
+          <nav className="mt-4 flex items-center gap-4" aria-label={label('Mga pahina ng roster','Roster pages')}>
+            {page > 1 && <Link prefetch={false} className="underline" href={href({page:String(page-1),learner:null})}>{label('Nakaraan','Previous')}</Link>}
+            <span>{label('Pahina','Page')} {page}</span>
+            {page * roster.pageSize < roster.total && <Link prefetch={false} className="underline" href={href({page:String(page+1),learner:null})}>{label('Susunod','Next')}</Link>}
+          </nav>
+        </>}
+    </section>
+    <section id="assessment-work" className={card} aria-labelledby="assessment-title">
+      <h2 id="assessment-title" className="text-xl font-semibold">{label('Aking gawaing pagtatasa','My assessment work')}</h2>
+      <p className="mt-2">{label('Wala pang pormal na Chapter 1 assessment queue sa bagong daloy. Ang pagtingin sa roster ay hindi lumilikha ng gawain o pahintulot na mag-assess.',
+        'The new flow has no formal Chapter 1 assessment queue yet. Viewing the roster creates no task or assessment permission.')}</p>
+      {flags.chapter1_assessment_v2 && <Link prefetch={false} className="mt-3 inline-block underline"
+        href={`/courses/${chapter.course_id}/learning-notes/reviewer`}>
+        {label('Tingnan ang mga nakatalagang ibinahaging learning note','View assigned shared learning notes')}
+      </Link>}
+    </section>
+  </main>;
+}
