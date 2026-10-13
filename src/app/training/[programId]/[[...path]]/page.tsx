@@ -320,7 +320,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           {flowView ? <Chapter1LessonFlow lang={loc} view={flowView} baseHref={`${moduleHref}/${lesson.id}`} returnHref={returnHref}
             lessonId={lesson.id} moduleId={subchapter.id}
             reviewedCriteria={observationContext?.criteria??[]}
-            observeHref={observationContext?.learner&&selectedLearner
+            observeHref={observationContext?.learner&&observationContext.criteria.length>0&&selectedLearner
               ?observationHref(programId,lesson.id,selectedLearner,`${moduleHref}/${lesson.id}?view=${flowView}${context}`):undefined}
             sessions={(planSessions??[]).filter(s=>s.status==='scheduled'||s.plan_lesson_id===lesson.id)} planningEnabled={flags.course_sessions}
             notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}
