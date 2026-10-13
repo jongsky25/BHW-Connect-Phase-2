@@ -56,7 +56,8 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   const current = attempt?.items[position];
   const response = pending?.item_id === current?.item_id ? pending :
     attempt?.responses.find(r => r.item_id === current?.item_id);
-  const responded = new Set(attempt?.responses.map(r => r.item_id));
+  const savedResponses = new Set(attempt?.responses.map(r => r.item_id));
+  const responded = new Set(savedResponses);
   if (pending && attempt) responded.add(pending.item_id);
   const unanswered = attempt?.items.filter(item => !responded.has(item.item_id)) ?? [];
 
@@ -163,6 +164,14 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   }
 
   const button = "rounded-md border border-ink/20 px-4 py-2 text-sm font-medium focus-visible:outline-2 focus-visible:outline-primary disabled:opacity-50";
+  const questionButton = (answered: boolean, active = false) =>
+    `min-h-11 min-w-11 rounded-md border px-3 py-2 text-sm font-semibold text-ink focus-visible:outline-2 focus-visible:outline-primary disabled:opacity-50 ${answered
+      ? "border-success bg-success/15"
+      : "border-warning bg-warning/15"} ${active ? "ring-2 ring-primary ring-offset-2" : ""}`;
+  const questionLegend = <p className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-ink">
+    <span className="flex items-center gap-2"><span aria-hidden="true" className="h-3 w-3 rounded-sm border border-success bg-success/15" />{copy("Answered", "May sagot")}</span>
+    <span className="flex items-center gap-2"><span aria-hidden="true" className="h-3 w-3 rounded-sm border border-warning bg-warning/15" />{copy("Not done", "Wala pang sagot")}</span>
+  </p>;
   if (stage === "questions" && attempt && current) return (
     <section className="space-y-5" aria-label={copy("Assessment questions", "Mga tanong sa pagtatasa")}>
       <div role="status" aria-live="polite" className="text-sm text-ink/70">
@@ -192,10 +201,11 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
         <button className={button} disabled={busy || position === 29} onClick={() => void move(position + 1)}>{copy("Next", "Susunod")}</button>
         <button className={button} disabled={busy || Boolean(pending)} onClick={() => setStage("review")}>{copy("Review all", "Balikan ang lahat")}</button>
       </nav>
+      {questionLegend}
       <div className="flex flex-wrap gap-1" aria-label={copy("Jump to question", "Pumunta sa tanong")}>
-        {attempt.items.map((item, i) => <button key={item.item_id} className={button} disabled={busy}
-          aria-label={copy(`Question ${i + 1}${responded.has(item.item_id) ? ', answered' : ', unanswered'}`,
-            `Tanong ${i + 1}${responded.has(item.item_id) ? ', may sagot' : ', walang sagot'}`)}
+        {attempt.items.map((item, i) => <button key={item.item_id} className={questionButton(savedResponses.has(item.item_id), i === position)} disabled={busy}
+          aria-label={copy(`Question ${i + 1}, ${pending?.item_id === item.item_id ? 'unsaved' : savedResponses.has(item.item_id) ? 'answered' : 'unanswered'}`,
+            `Tanong ${i + 1}, ${pending?.item_id === item.item_id ? 'hindi pa naka-save' : savedResponses.has(item.item_id) ? 'may sagot' : 'walang sagot'}`)}
           aria-current={i === position ? "step" : undefined} onClick={() => void move(i)}>{i + 1}</button>)}
       </div>
       <Link className="underline" href={chapterHref} onClick={event => {
@@ -208,9 +218,10 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
     <h1 className="text-2xl font-semibold">{copy("Review before submitting", "Balikan bago isumite")}</h1>
     <p>{copy(`${unanswered.length} unanswered. Choose an answer or “I don't know yet” for every question.`,
       `${unanswered.length} ang walang sagot. Pumili ng sagot o “Hindi ko pa alam” sa bawat tanong.`)}</p>
+    {questionLegend}
     <ol className="grid grid-cols-5 gap-2 sm:grid-cols-10">{attempt.items.map((item, i) => {
       const answer = attempt.responses.find(r => r.item_id === item.item_id);
-      return <li key={item.item_id}><button className={button} onClick={() => { setPosition(i); setStage("questions"); }}>
+      return <li key={item.item_id}><button className={questionButton(Boolean(answer))} onClick={() => { setPosition(i); setStage("questions"); }}>
         {i + 1}<span className="sr-only">: {answer?.kind === "unknown" ? copy("unknown", "hindi alam") : answer ? copy("answered", "may sagot") : copy("unanswered", "walang sagot")}{answer?.marked ? `, ${copy("marked", "minarkahan")}` : ""}</span>
       </button></li>;
     })}</ol>
