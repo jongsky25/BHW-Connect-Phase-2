@@ -40,6 +40,12 @@ export default async function AssessorWorkspace({params,searchParams}:{
   ]);
   if (programError || chapterError) throw new Error('Unable to load Chapter 1 workspace');
   if (!program || !chapter?.course_id) notFound();
+  const {data:communicationModule,error:moduleError} = await db.from('course_modules').select('id')
+    .eq('course_id',chapter.course_id).eq('position',5).maybeSingle();
+  const {data:clarifyLesson} = communicationModule && !moduleError
+    ? await db.from('course_lessons').select('id').eq('module_id',communicationModule.id)
+      .eq('lesson_key','communication-clarify').not('published_revision_id','is',null).maybeSingle()
+    : {data:null};
   const base = `/training/${programId}/assessor/workspace`;
   const href = (changes:Record<string,string|null>) => {
     const values = new URLSearchParams();
@@ -54,6 +60,8 @@ export default async function AssessorWorkspace({params,searchParams}:{
     const suffix = values.toString();
     return `${base}${suffix ? `?${suffix}` : ''}`;
   };
+  const lessonHref = (returnPath:string) => clarifyLesson && communicationModule
+    ? `/training/${programId}/chapter-1/${communicationModule.id}/${clarifyLesson.id}?${new URLSearchParams({view:'prepare',returnTo:returnPath})}` : null;
   const roster = rosterResult.data as Roster | null;
   const rosterError = !!rosterResult.error || !roster;
   const records = (certifications.data ?? []) as ChapterCertifications[];
@@ -96,6 +104,7 @@ export default async function AssessorWorkspace({params,searchParams}:{
         <Link prefetch={false} className="underline" href={`/training/${programId}/assessor/chapter-1`}>{label('Ipagpatuloy ang paghahanda','Continue preparation')}</Link>
         <Link prefetch={false} className="underline" href={`/training/${programId}/assessor/qualifications`}>{label('Aking mga sertipikasyon','My certifications')}</Link>
         <Link prefetch={false} className="underline" href={`/training/${programId}/chapter-1`}>{label('Buksan ang gabay ng kabanata','Open chapter guide')}</Link>
+        {lessonHref(base) && <Link prefetch={false} className="underline" href={lessonHref(base)!}>{label('Ihanda ang aralin 1.6.2','Prepare lesson 1.6.2')}</Link>}
       </div>
     </section>
     <section id="roster" className={card} aria-labelledby="roster-title">
@@ -129,6 +138,7 @@ export default async function AssessorWorkspace({params,searchParams}:{
             <p className="mt-1 text-sm">{statusLabel(selected.learning_status)}</p>
             <p className="mt-2 text-sm">{label('Tingnan ang mga gabay sa paghahanda bago mag-ayos ng aktuwal na gawain. Hindi sinusuri ng pahinang ito ang pormal na kahandaan.',
               'Review the preparation guides before arranging actual work. This page does not determine formal readiness.')}</p>
+            {lessonHref(href({learner:selected.id})) && <Link prefetch={false} className="mt-3 mr-4 inline-block underline" href={lessonHref(href({learner:selected.id}))!}>{label('Ihanda ang aralin 1.6.2 kasama ang kontekstong ito','Prepare lesson 1.6.2 with this context')}</Link>}
             <Link prefetch={false} className="mt-3 inline-block underline" href={href({learner:null})}>{label('Bumalik sa listahan','Back to list')}</Link>
           </aside>}
           <ul className="mt-4 divide-y rounded-md border border-ink/15">{roster.rows.map(row => <li key={row.id} className="flex flex-wrap items-center justify-between gap-3 p-4">

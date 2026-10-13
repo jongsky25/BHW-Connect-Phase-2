@@ -8,6 +8,7 @@ import {Breadcrumbs} from '@/components/breadcrumbs';
 import {LessonAssetFigure} from '@/components/elearning/lesson-asset-figure';
 import {ManualLesson} from '@/components/elearning/manual-lesson';
 import {ChapterTestInsights,LessonFacilitatorGuide,SubchapterFacilitatorGuide,type SubchapterGuideView} from '@/components/elearning/facilitator-guide';
+import {Chapter1LessonFlow} from '@/components/elearning/chapter1-lesson-flow';
 import {CardProgress,subchapterSegments} from '@/components/progress/card-progress';
 import {ChapterSteps} from '@/components/progress/chapter-steps';
 import {ManualSummary} from '@/components/progress/manual-summary';
@@ -34,8 +35,8 @@ import {translationsForLesson} from '@/lib/elearning/lesson-translations';
 
 const card='block rounded-xl border border-ink/15 p-5 hover:bg-ink/5 focus-visible:outline-2 focus-visible:outline-primary';
 
-export default async function TrainingPage({params,searchParams}:{params:Promise<{programId:string;path?:string[]}>;searchParams?:Promise<{view?:string;mode?:string}>}) {
-  const [{programId,path=[]},{view,mode}]=await Promise.all([params,searchParams??Promise.resolve({view:undefined,mode:undefined})]);
+export default async function TrainingPage({params,searchParams}:{params:Promise<{programId:string;path?:string[]}>;searchParams?:Promise<{view?:string;mode?:string;returnTo?:string}>}) {
+  const [{programId,path=[]},{view,mode,returnTo}]=await Promise.all([params,searchParams??Promise.resolve({view:undefined,mode:undefined,returnTo:undefined})]);
   if(path.length>3)notFound();
   const db=await createClient();
   // Independent reads run together; checks keep their original order.
@@ -248,6 +249,15 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const achieved=['certified','content_completed','failed_assessment'].includes(progress?.status??'');
         const pretestGate=!readOnly && (flags.course_sessions || (flags.chapter1_assessment_v2 &&
           program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1')) && !achieved;
+        const chapter1Flow=facilitator && role==='assessor' && !viewer.isPreview && program.content_key==='bhw-reference-manual'
+          && chapter.chapter_key==='chapter-1' && lesson.lesson_key==='communication-clarify';
+        const flowView=chapter1Flow && view!=='lesson' ? (view==='run'?'run':'prepare') : null;
+        const workspaceBase=`${base}/assessor/workspace`;
+        const returnHref=chapter1Flow && returnTo && (()=>{try {
+          const url=new URL(returnTo,'https://training.local');
+          return url.origin==='https://training.local' && url.pathname===workspaceBase ? `${url.pathname}${url.search}` : undefined;
+        } catch { return undefined; }})() || undefined;
+        const context=returnHref?`&returnTo=${encodeURIComponent(returnHref)}`:'';
         const showGuide=facilitator && view!=='lesson';
         // The pretest check and the lesson content are independent reads, so
         // they share one round trip; the redirect still wins if it applies.
@@ -284,11 +294,14 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           {chapter1Intro && (viewer.isPreview
             ? <section className="rounded-xl border border-ink/15 p-5"><h2 className="mb-3 text-xl font-semibold">{text(`Panimula sa Aralin ${chapter1Intro.major_lesson}`,`Introduction to Major Lesson ${chapter1Intro.major_lesson}`)}</h2><NotesMarkdown markdown={en?chapter1Intro.body_en:chapter1Intro.body_fil}/></section>
             : <Chapter1MajorIntroduction intro={chapter1Intro} courseId={course.id} learnerId={actor.id} language={en?'en':'fil'}/>) }
-          {facilitator && <nav className="flex flex-wrap gap-2" aria-label={text('Paraan ng pagtingin','View')}>
+          {facilitator && !chapter1Flow && <nav className="flex flex-wrap gap-2" aria-label={text('Paraan ng pagtingin','View')}>
             <Link prefetch={false} className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
             <Link prefetch={false} className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
           </nav>}
-          {showGuide ? <>
+          {flowView ? <Chapter1LessonFlow lang={loc} view={flowView} baseHref={`${moduleHref}/${lesson.id}`} returnHref={returnHref}
+            notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}
+            indicators={notes?.observation_indicators??[]} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)}/>
+          : showGuide ? <>
             {featured && <section className="rounded-xl border border-ink/15 p-4 sm:p-6" aria-label={text('Panoorin','Watch')}>
               <p className="mb-1 text-sm font-semibold">{text('Panoorin','Watch')}</p>
               <LessonAssetFigure asset={featured} en={en}/>
@@ -297,7 +310,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
               indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/>
           </> : <ManualLesson storyQuestionHandoff={program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'} data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision}],completed:completed??[],resumes:resumeResult.data??[]}}
           modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
-          returnHref={facilitator?`${moduleHref}?view=slides`:undefined}
+          returnHref={chapter1Flow?`${moduleHref}/${lesson.id}?view=run${context}`:facilitator?`${moduleHref}?view=slides`:undefined}
           initialMode={facilitator && mode==='slides'?'slides':undefined}
           nextLessonHref={own[lessonIndex+1]?adjacentHref(own[lessonIndex+1].id):undefined}
           completionMilestone={completionMilestone}

@@ -13,8 +13,9 @@ vi.mock('@/lib/supabase/request',()=>({getRequestFeatureFlags:async()=>({elearni
 const area='00000000-0000-4000-8000-000000000001';
 const maria='00000000-0000-4000-8000-000000000002';
 vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({
-  from:(table:string)=>{const value=table==='training_programs'?{id:'program'}:{id:'chapter',course_id:'course'};
-    const q={select:()=>q,eq:()=>q,maybeSingle:async()=>({data:value,error:null})};return q;},
+  from:(table:string)=>{const value=table==='training_programs'?{id:'program'}:table==='training_program_chapters'?{id:'chapter',course_id:'course'}:
+    table==='course_modules'?{id:'communication'}:{id:'clarify'};
+    const q={select:()=>q,eq:()=>q,not:()=>q,maybeSingle:async()=>({data:value,error:null})};return q;},
   rpc:state.rpc,
 })}));
 const page=(query:Record<string,string>={})=>Workspace({params:Promise.resolve({programId:'program'}),searchParams:Promise.resolve(query)});
@@ -36,6 +37,7 @@ describe('Chapter 1 working area',()=>{
       p_program_id:'program',p_search:'Maria',p_area_id:area,p_status:'in_progress',p_page:2,
     });
     expect(screen.getByRole('heading',{name:'Maria Santos · Barangay One'})).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:'Prepare lesson 1.6.2 with this context'}).getAttribute('href')).toContain('learner%3D');
     expect(screen.getByRole('link',{name:'Back to list'}).getAttribute('href')).toContain('page=2');
     expect(screen.getByRole('link',{name:'Back to list'}).getAttribute('href')).not.toContain('learner=');
     expect(screen.getByRole('link',{name:'Previous'}).getAttribute('href')).toContain('q=Maria');
