@@ -272,7 +272,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         ]);
         if(activityNotes.error)throw new Error('Unable to load activities');
         const {data:planSessions,error:planSessionsError}=flowView && flags.course_sessions
-          ?await db.from('course_sessions').select('id,status,scheduled_at')
+          ?await db.from('course_sessions').select('id,status,scheduled_at,plan_lesson_id')
             .eq('course_id',course.id).eq('facilitator_user_id',actor.id)
             .in('status',['draft','scheduled']).order('created_at',{ascending:false}).limit(40)
           :{data:[],error:null};
@@ -305,7 +305,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
             <Link prefetch={false} className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
           </nav>}
           {flowView ? <Chapter1LessonFlow lang={loc} view={flowView} baseHref={`${moduleHref}/${lesson.id}`} returnHref={returnHref}
-            lessonId={lesson.id} sessions={planSessions??[]} planningEnabled={flags.course_sessions}
+            lessonId={lesson.id} moduleId={subchapter.id}
+            sessions={(planSessions??[]).filter(s=>s.status==='scheduled'||s.plan_lesson_id===lesson.id)} planningEnabled={flags.course_sessions}
             notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}
             indicators={notes?.observation_indicators??[]} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)}/>
           : showGuide ? <>

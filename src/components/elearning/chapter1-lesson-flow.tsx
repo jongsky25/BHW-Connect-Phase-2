@@ -26,9 +26,9 @@ const cards = {
   ],
 } satisfies Record<View, Array<{source:string;fil:string;en:string}>>;
 
-export function Chapter1LessonFlow({lang,view,baseHref,returnHref,notesMarkdown,objectives,indicators,activities=[],lessonId,sessions=[],planningEnabled=false}:{
+export function Chapter1LessonFlow({lang,view,baseHref,returnHref,notesMarkdown,objectives,indicators,activities=[],lessonId,moduleId,sessions=[],planningEnabled=false}:{
   lang:Lang;view:View;baseHref:string;returnHref?:string;notesMarkdown:string|null;
-  objectives:string[];indicators:ObservationIndicator[];activities?:FacilitatorActivity[];lessonId?:string;
+  objectives:string[];indicators:ObservationIndicator[];activities?:FacilitatorActivity[];lessonId?:string;moduleId?:string;
   sessions?:Array<{id:string;status:string;scheduled_at:string|null}>;planningEnabled?:boolean;
 }) {
   const pick=(fil:string,en:string)=>lang==='en'?en:fil;
@@ -45,7 +45,7 @@ export function Chapter1LessonFlow({lang,view,baseHref,returnHref,notesMarkdown,
         {pick('Ipakita sa BHW','Show BHW presentation')}</Link>
     </nav>
     {returnHref && <Link prefetch={false} className="inline-block min-h-11 content-center underline" href={returnHref}>{pick('Bumalik sa working area','Back to working area')}</Link>}
-    {planningEnabled&&lessonId&&<Chapter1ActivityPlan lang={lang} lessonId={lessonId} activities={activities} sessions={sessions} guideHref={link(view)}/>}
+    {planningEnabled&&lessonId&&moduleId&&<Chapter1ActivityPlan lang={lang} lessonId={lessonId} moduleId={moduleId} activities={activities} sessions={sessions} guideHref={link(view)}/>}
     <div className="rounded-xl border border-primary/30 bg-primary/5 p-4 sm:p-5">
       <h2 className="font-semibold">{pick('Layunin ng 1.6.2','1.6.2 objective')}</h2>
       {objectives.length?<ul className="mt-2 list-disc pl-5">{objectives.map((value,i)=><li key={i}>{value}</li>)}</ul>:<p className="mt-2">{pick('Wala pang inilathalang layunin. Tingnan ang buong gabay.','No published objective. Consult the full guide.')}</p>}

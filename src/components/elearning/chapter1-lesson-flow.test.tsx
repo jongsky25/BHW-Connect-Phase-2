@@ -33,7 +33,7 @@ describe('1.6.2 lesson flow',()=>{
   });
   it.each(['en','fil'] as const)('offers a keyboard accessible plan handoff in %s',lang=>{
     render(<Chapter1LessonFlow {...props} lang={lang} view="run" notesMarkdown={guide(lang)} objectives={[]}
-      lessonId="33333333-3333-4333-8333-333333333333" planningEnabled
+      lessonId="33333333-3333-4333-8333-333333333333" moduleId="22222222-2222-4222-8222-222222222222" planningEnabled
       sessions={[{id:'44444444-4444-4444-8444-444444444444',status:'draft',scheduled_at:null}]}/>);
     expect(screen.getByRole('combobox',{name:'Session'})).toBeInTheDocument();
     expect(screen.getByRole('button',{name:lang==='en'?'Create or open draft':'Gumawa o buksan ang draft'})).toBeInTheDocument();

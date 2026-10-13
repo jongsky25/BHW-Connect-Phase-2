@@ -6,8 +6,8 @@ import { createClient } from "@/lib/supabase/client";
 import type { FacilitatorActivity, ActivityRun } from "@/lib/elearning/activities";
 
 type Option = {id:string; status:string; scheduled_at:string|null};
-export function Chapter1ActivityPlan({lang,lessonId,activities,sessions,guideHref}: {
-  lang:"fil"|"en";lessonId:string;activities:FacilitatorActivity[];sessions:Option[];guideHref:string;
+export function Chapter1ActivityPlan({lang,lessonId,moduleId,activities,sessions,guideHref}: {
+  lang:"fil"|"en";lessonId:string;moduleId:string;activities:FacilitatorActivity[];sessions:Option[];guideHref:string;
 }) {
   const pick=(fil:string,en:string)=>lang==="en"?en:fil;
   const [options,setOptions]=useState(sessions);
@@ -21,7 +21,7 @@ export function Chapter1ActivityPlan({lang,lessonId,activities,sessions,guideHre
     if(!id){setRuns([]);return;}
     const {data,error:e}=await createClient().from("course_session_activities")
       .select("id,session_id,module_id,activity_id,status,duration_minutes,note,activity_snapshot,recorded_at")
-      .eq("session_id",id).limit(100).returns<ActivityRun[]>();
+      .eq("session_id",id).eq("module_id",moduleId).limit(100).returns<ActivityRun[]>();
     if(e){setError(pick("Hindi mabasa ang plano.","Could not load the plan."));return;}
     setRuns(data??[]);
   }
@@ -47,6 +47,8 @@ export function Chapter1ActivityPlan({lang,lessonId,activities,sessions,guideHre
     setPending(false);
   }
   const current=options.find(s=>s.id===sessionId);
+  const available=[...activities,...runs.filter(r=>r.activity_snapshot.lesson_keys?.includes('communication-clarify')
+    && !activities.some(a=>a.id===r.activity_id)).map(r=>r.activity_snapshot)];
   return <section className="rounded-xl border border-primary/30 p-4 sm:p-5 space-y-3" aria-label={pick("Plano ng gawain","Activity plan")}>
     <h2 className="font-semibold">{pick("Plano ng gawain para sa 1.6.2","Activity plan for 1.6.2")}</h2>
     <p className="text-sm">{pick("Pumili ng sariling bukas na session o gumawa ng draft. Ang pag-save ay plano lamang: walang attendance, delivery, o marka.","Choose your own open session or create a draft. Saving only plans activities: no attendance, delivery, or grade is recorded.")}</p>
@@ -61,14 +63,15 @@ export function Chapter1ActivityPlan({lang,lessonId,activities,sessions,guideHre
     </div>
     {current&&<Link prefetch={false} className="inline-block min-h-11 content-center underline" href={`/training-sessions/${current.id}?returnTo=${encodeURIComponent(guideHref)}`}>{pick("Pumunta sa session →","Go to session →")}</Link>}
     {error&&<p role="alert" className="text-danger">{error}</p>}{message&&<p role="status" className="text-success">{message}</p>}
-    <ul className="grid gap-2 sm:grid-cols-2">{activities.map(a=>{
+    <ul className="grid gap-2 sm:grid-cols-2">{available.map(a=>{
       const saved=runs.find(r=>r.activity_id===a.id);
+      const published=activities.some(item=>item.id===a.id);
       return <li className="rounded border p-3" key={a.id}>
         <h3 className="font-medium">{saved?.activity_snapshot.title[lang]??a.title[lang]}</h3>
         <p className="text-sm">{saved?pick(`Naitalang ${saved.status} · bersiyon ${saved.activity_snapshot.version}`,`Recorded as ${saved.status} · version ${saved.activity_snapshot.version}`):pick(`Kasalukuyang bersiyon ${a.version}`,`Current version ${a.version}`)}</p>
-        {saved?.status==='planned'&&saved.activity_snapshot.version!==a.version
+        {saved?.status==='planned'&&published&&saved.activity_snapshot.version!==a.version
           ?<button className="mt-2 min-h-11 rounded border px-3 disabled:opacity-50" disabled={!sessionId||pending} onClick={()=>void save(a,true)}>{pick(`Palitan ng bersiyon ${a.version}`,`Replace with version ${a.version}`)}</button>
-          :<button className="mt-2 min-h-11 rounded border px-3 disabled:opacity-50" disabled={!sessionId||pending||!!saved} onClick={()=>void save(a)}>{saved?pick("Naitala na","Already recorded"):pick("I-save sa plano","Save to plan")}</button>}
+          :<button className="mt-2 min-h-11 rounded border px-3 disabled:opacity-50" disabled={!sessionId||pending||!!saved||!published} onClick={()=>void save(a)}>{saved?pick("Naitala na","Already recorded"):pick("I-save sa plano","Save to plan")}</button>}
       </li>;
     })}</ul>
     <p className="text-sm">{pick("Para sa indibidwal na pagsasanay, buksan ang gawain sa buong gabay. Ang lokal na pagpili ay hindi sine-save.","For individual practice, open an activity in the complete guide. Local selections are not saved.")}</p>
