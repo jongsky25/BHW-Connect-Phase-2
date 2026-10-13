@@ -154,6 +154,8 @@ export default async function AssessorWorkspace({params,searchParams}:{
     </section>
     <section id="assessment-work" className={card} aria-labelledby="assessment-title">
       <h2 id="assessment-title" className="text-xl font-semibold">{label('Aking gawaing pagtatasa','My assessment work')}</h2>
+      {flags.assessor_flow_ui&&<Link prefetch={false} className="mt-3 inline-block min-h-11 content-center underline"
+        href={`/training/${programId}/assessor/followups`}>{label('Mga follow-up sa pagsasanay','Practice follow-ups')}</Link>}
       <p className="mt-2">{label('Wala pang pormal na Chapter 1 assessment queue sa bagong daloy. Ang pagtingin sa roster ay hindi lumilikha ng gawain o pahintulot na mag-assess.',
         'The new flow has no formal Chapter 1 assessment queue yet. Viewing the roster creates no task or assessment permission.')}</p>
       {flags.chapter1_assessment_v2 && <Link prefetch={false} className="mt-3 inline-block underline"
