@@ -31,6 +31,15 @@ describe('1.6.2 lesson flow',()=>{
     expect(screen.getByText('No published criterion. Do not rate performance.')).toBeInTheDocument();
     expect(screen.queryByRole('img')).toBeNull();
   });
+  it('offers the lesson-linked action for a selected learner with reviewed criterion',()=>{
+    render(<Chapter1LessonFlow {...props} lang="en" view="run" notesMarkdown={guide('en')} objectives={[]}
+      reviewedCriteria={[{id:'clarify',version:'v1',requirementsVersion:'req1',rubricVersion:'rubric1',recordable:false,
+        rubric:{observable:{fil:'Linawin',en:'Reviewed clarification anchor'},levels:{
+          kaya_na:{fil:'Kaya',en:'Can do'},kailangan_practice:{fil:'Sanay',en:'Practice'},hindi_pa:{fil:'Hindi',en:'Not yet'},
+        }}}]} observeHref="/training/manual/assessor/observe?learner=selected"/>);
+    expect(screen.getByText('Reviewed clarification anchor')).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:'Observe a BHW'})).toHaveAttribute('href','/training/manual/assessor/observe?learner=selected');
+  });
   it.each(['en','fil'] as const)('offers a keyboard accessible plan handoff in %s',lang=>{
     render(<Chapter1LessonFlow {...props} lang={lang} view="run" notesMarkdown={guide(lang)} objectives={[]}
       lessonId="33333333-3333-4333-8333-333333333333" moduleId="22222222-2222-4222-8222-222222222222" planningEnabled
