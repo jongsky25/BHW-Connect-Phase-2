@@ -180,6 +180,10 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
                 {text('Tala sa pagkatuto','Learning note')}</Link></li>)}</ul>
           </section>}
         {testItems && <ChapterTestInsights lang={loc} {...testItems}/>}
+        {!readOnly && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1' &&
+          <Link prefetch={false} className="inline-block min-h-11 content-center underline" href={`/training/${programId}/practice-feedback`}>
+            {text('Aking feedback at susunod na hakbang','My feedback and next step')}
+          </Link>}
         {previewChapter1 && <section className="space-y-3 rounded-xl border border-primary/30 p-5" aria-labelledby="chapter1-preview-heading">
           <h2 id="chapter1-preview-heading" className="text-lg font-semibold">{text('Bagong daloy ng Kabanata 1','New Chapter 1 learning flow')}</h2>
           <p>{text('Basahin ang pambungad, pre-test, post-test at mga pagsasanay sa read-only preview. Walang sagot o progreso ang ise-save.','Review the introduction, pre-test, post-test and practice questions in a read-only preview. No answers or progress are saved.')}</p>

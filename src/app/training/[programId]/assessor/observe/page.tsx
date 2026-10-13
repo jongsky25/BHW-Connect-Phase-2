@@ -1,10 +1,12 @@
 import {getLocale} from 'next-intl/server';
 import {notFound,redirect} from 'next/navigation';
 import {Chapter1PracticeObservation} from '@/components/elearning/chapter1-practice-observation';
+import {PracticeFollowupManager} from '@/components/elearning/practice-followup-manager';
 import {getViewer} from '@/lib/auth/viewer';
 import {chapter1BriefingIdentity} from '@/lib/assessor/briefing';
 import {loadAssessorRollout} from '@/lib/assessor/load-rollout';
 import {lessonObservationReturn,parseLessonPracticeContext,selectedWorkspaceLearner} from '@/lib/assessor/lesson-observation';
+import {parsePracticeFollowupState} from '@/lib/assessor/practice-followup';
 import {getRequestFeatureFlags} from '@/lib/supabase/request';
 import {createClient} from '@/lib/supabase/server';
 
@@ -36,18 +38,23 @@ export default async function ObserveBhwPage({params,searchParams}:{
     ??`/training/${programId}/chapter-1/${context.moduleId}/${query.lesson}?view=run`;
   const workspaceHref=new URL(backHref,'https://training.local').searchParams.get('returnTo')??undefined;
   const safeWorkspaceHref=selectedWorkspaceLearner(workspaceHref,programId)===query.learner?workspaceHref:undefined;
-  const [historyResult,legacyResult]=await Promise.all([
+  const [historyResult,legacyResult,followupResult]=await Promise.all([
     db.rpc('rpc_practice_evidence_history',{p_bhw_user_id:query.learner,p_page:1}),
     db.from('competency_observations')
       .select('id,observed_at,level,note,indicator_snapshot,objective_index')
       .eq('bhw_user_id',query.learner).eq('module_id',context.moduleId)
       .order('observed_at',{ascending:false}).limit(10),
+    db.rpc('rpc_assessor_practice_followup_state',{p_program_id:programId,p_bhw_user_id:query.learner}),
   ]);
-  if(historyResult.error||legacyResult.error)throw new Error('Unable to load observation history');
+  if(historyResult.error||legacyResult.error||followupResult.error)throw new Error('Unable to load observation history');
+  const followups=parsePracticeFollowupState(followupResult.data);
+  if(!followups)throw new Error('Invalid follow-up state');
   const history=Array.isArray(historyResult.data)?historyResult.data.filter(item=>item?.lessonId===query.lesson):[];
   const lang=locale==='en'?'en':'fil';
   return <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 py-8 sm:px-6">
     <Chapter1PracticeObservation context={context} lang={lang} backHref={backHref}
       workspaceHref={safeWorkspaceHref} history={history} legacy={legacyResult.data??[]}/>
+    <PracticeFollowupManager state={followups} attempts={history} actorId={viewer.appUser.id}
+      canRecord={context.canRecord} lang={lang}/>
   </main>;
 }
