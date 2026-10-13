@@ -10,7 +10,7 @@ vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations
 vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true,chapter1_assessment_v2:state.v2})}));
 vi.mock('@/lib/supabase/app-user',()=>({getAppUser:async()=>({id:'self',role:state.role,status:'active'}),forwardedAppUser:()=>null,APP_USER_HEADER:'x-app-user',APP_FLAGS_HEADER:'x-app-flags'}));
 vi.mock('next/headers',()=>({headers:async()=>new Headers(state.preview?{'x-app-preview':'1','x-app-effective-role':'bhw'}:{}),cookies:async()=>({get:()=>undefined,getAll:()=>[]})}));
-vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({storyQuestionHandoff,readOnly,nextLessonHref}:{storyQuestionHandoff?:boolean;readOnly:boolean;nextLessonHref?:string})=><div data-story-handoff={String(storyQuestionHandoff)} data-next-lesson={nextLessonHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
+vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({storyQuestionHandoff,readOnly,nextLessonHref,returnHref}:{storyQuestionHandoff?:boolean;readOnly:boolean;nextLessonHref?:string;returnHref?:string})=><div data-story-handoff={String(storyQuestionHandoff)} data-next-lesson={nextLessonHref} data-return-href={returnHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
 vi.mock('@sentry/nextjs',()=>({captureException:vi.fn()}));
 vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'auth'}}}),getClaims:async()=>({data:{claims:{sub:'auth'}}})},rpc:async(name:string)=>{state.rpcCalls.push(name);return {data:name==='rpc_learner_assessment_state'?{attempts:[],final_attempts:[]}:
   [...new Set((state.rows.course_test_questions_current??[]).map(row=>row.course_id))].map(course_id=>({course_id})),error:state.preview && name==='rpc_learner_assessment_state'?{message:'BHW-only RPC'}:null}},from:(table:string)=>{
@@ -112,6 +112,9 @@ describe('manual navigation',()=>{
     expect(screen.getByText('Exact criterion')).toBeInTheDocument();
     expect(screen.getByRole('link',{name:'Back to working area'})).toHaveAttribute('href',returnTo);
     expect(screen.getByRole('link',{name:'Show BHW presentation'}).getAttribute('href')).toContain('returnTo=');
+    cleanup();
+    render(await page(['chapter-1','m6','clarify'],'lesson',returnTo));
+    expect(screen.getByText('Admin preview').getAttribute('data-return-href')).toContain('returnTo=');
     cleanup();
     render(await page(['chapter-1','m6','clarify'],'prepare','https://evil.example/'));
     expect(screen.queryByRole('link',{name:'Back to working area'})).toBeNull();
