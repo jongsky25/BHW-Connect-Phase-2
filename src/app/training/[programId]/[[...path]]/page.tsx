@@ -271,6 +271,12 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           showGuide?db.from('course_module_facilitator_notes').select('activities').eq('module_id',subchapter.id).maybeSingle<Pick<CourseModuleFacilitatorNotes,'activities'>>():Promise.resolve({data:null,error:null}),
         ]);
         if(activityNotes.error)throw new Error('Unable to load activities');
+        const {data:planSessions,error:planSessionsError}=flowView && flags.course_sessions
+          ?await db.from('course_sessions').select('id,status,scheduled_at')
+            .eq('course_id',course.id).eq('facilitator_user_id',actor.id)
+            .in('status',['draft','scheduled']).order('created_at',{ascending:false}).limit(40)
+          :{data:[],error:null};
+        if(planSessionsError)throw new Error('Unable to load session plans');
         if(pretestGate){
           if(bank.error||attempt.error)throw new Error('Unable to check assessment eligibility');
           if(bank.data?.length && !attempt.data)redirect(assessmentHref);
@@ -299,6 +305,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
             <Link prefetch={false} className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
           </nav>}
           {flowView ? <Chapter1LessonFlow lang={loc} view={flowView} baseHref={`${moduleHref}/${lesson.id}`} returnHref={returnHref}
+            lessonId={lesson.id} sessions={planSessions??[]} planningEnabled={flags.course_sessions}
             notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}
             indicators={notes?.observation_indicators??[]} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)}/>
           : showGuide ? <>

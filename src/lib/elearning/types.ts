@@ -311,14 +311,15 @@ export type ModuleProgress = {
 // the facilitator-owned wrapper INC-19 added around a course; status starts
 // 'scheduled' (the only status lesson_density stays editable in — see
 // rpc_course_session_set_density) and moves to 'completed'/'cancelled'.
-export type SessionStatus = "scheduled" | "completed" | "cancelled";
+export type SessionStatus = "draft" | "scheduled" | "completed" | "cancelled";
 
 export type CourseSession = {
   id: string;
   course_id: string;
   org_unit_id: string;
   facilitator_user_id: string;
-  scheduled_at: string;
+  scheduled_at: string | null;
+  plan_lesson_id?: string | null;
   location_note: string;
   lesson_density: LessonDensity;
   status: SessionStatus;
