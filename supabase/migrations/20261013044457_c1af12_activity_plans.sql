@@ -1,4 +1,11 @@
 -- C1AF-12: planning is a distinct lifecycle state with no scheduled date.
+-- Supabase's default table grants otherwise let an owner bypass the RPC's
+-- course, catchment and lifecycle checks through PostgREST. All writes use
+-- the existing or new SECURITY DEFINER RPCs; reads keep their RLS policies.
+revoke insert,update,delete on public.course_sessions,public.course_session_enrollments
+  from public,anon,authenticated;
+grant select on public.course_sessions,public.course_session_enrollments to authenticated;
+
 alter table public.course_sessions alter column scheduled_at drop not null;
 alter table public.course_sessions drop constraint course_sessions_status_check;
 alter table public.course_sessions add constraint course_sessions_status_check

@@ -53,6 +53,7 @@ beforeAll(async()=>{
       if u.id is null or u.role<>'assessor' or u.status<>'active' or s.facilitator_user_id<>u.id
         or s.status<>'scheduled' then raise exception 'not authorized';end if;return s;end $$;
   `);
+  await db.exec('grant all on course_sessions,course_session_enrollments to authenticated');
   await db.query('insert into org_units values($1,$2),($3,$4)',[v.org,'city.',v.awayOrg,'away.']);
   for(const [person,role,status,org] of [[v.owner,'assessor','active',v.org],[v.other,'assessor','active',v.org],
     [v.away,'assessor','active',v.awayOrg],[v.inactive,'assessor','inactive',v.org]])
@@ -82,6 +83,8 @@ describe('C1AF-12 draft and activity contracts',()=>{
     await expect(save(v.other,first)).rejects.toThrow();
     await expect(save(v.owner,first,v.otherLesson)).rejects.toThrow();
     await expect(as(v.owner,'insert into course_session_enrollments values($1,$2)',[first,v.other])).rejects.toThrow();
+    await expect(as(v.owner,"update course_sessions set status='completed' where id=$1",[first])).rejects.toThrow(/permission denied/);
+    await expect(as(v.owner,'insert into course_session_enrollments values($1,$2)',[v.scheduled,v.other])).rejects.toThrow(/permission denied/);
   });
   it('keeps one immutable snapshot until explicit replacement, and never records delivery',async()=>{
     const draft=(await create(v.owner)).rows[0].plan_id;

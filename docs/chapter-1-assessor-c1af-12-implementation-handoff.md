@@ -8,11 +8,11 @@ The lesson's Prepare and Run views show owned, open sessions for the lesson's co
 
 The guide-to-session link carries the current Prepare or Run view and validated workspace return URL. The session route accepts the return only when its program, Chapter 1 course, module and lesson match the session. It rejects external and unknown destinations. The workspace URL continues to carry search, area, learning status, page and selected learner.
 
-Draft creation and activity writes still pass the C1AF-09 legacy guard. No flag or cohort is enabled, and this PR adds no attendance, delivery, observation, assessment, progress, award or certificate write on the planning path. Closed sessions cannot be changed or reopened.
+Draft creation and activity writes still pass the C1AF-09 legacy guard. Direct Data API writes to sessions and enrollments are revoked so callers cannot bypass the RPC ownership and catchment checks; their existing RLS-scoped reads remain available. No flag or cohort is enabled, and this PR adds no attendance, delivery, observation, assessment, progress, award or certificate write on the planning path. Closed sessions cannot be changed or reopened.
 
 ## Verification record
 
-- Focused UI and return tests: 16 passed across three files, including Filipino and English plan controls, return URL rejection and a PGlite execution of the exact migration with direct RPC denial, duplicate, lifecycle, stale-version and snapshot cases.
+- Focused UI and return tests: 16 passed across three files, including Filipino and English plan controls, return URL rejection and a PGlite execution of the exact migration with direct Data API/RPC denial, duplicate, lifecycle, stale-version and snapshot cases.
 - `npm run typecheck`, `npm run lint` (three existing warnings, no errors), `npm run assessor:check`, and `npm run build` passed.
 - A full local `supabase start` replay was attempted. The managed Docker daemon reported `failed to register layer: no space left on device` while pulling the Postgres image. Fresh PR CI must complete its disposable Supabase replay before merge. Do not substitute the isolated SQL test for that replay.
 - The C1AF-10 authenticated phone/tablet walkthrough and before/after no-mutation audit remain unevidenced. Complete a phone and tablet keyboard walkthrough and check the six non-plan record families before release; do not count this handoff as that receipt.
