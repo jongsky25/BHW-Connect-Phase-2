@@ -3,13 +3,13 @@ import {afterEach,beforeEach,describe,expect,it,vi} from 'vitest';
 import Workspace from './[programId]/assessor/workspace/page';
 
 const state=vi.hoisted(()=>({role:'assessor',actual:'assessor',active:true,preview:false,locale:'en',
-  rosterError:false,rpc:vi.fn(),learning:true,notes:true}));
+  rosterError:false,rpc:vi.fn(),learning:true,notes:true,readinessUI:false}));
 vi.mock('server-only',()=>({}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error(`REDIRECT ${url}`);},notFound:()=>{throw new Error('NOT_FOUND');}}));
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale}));
 vi.mock('@/components/breadcrumbs',()=>({Breadcrumbs:()=>null}));
 vi.mock('@/lib/auth/viewer',()=>({getViewer:async()=>({appUser:{id:'self',role:state.actual,status:state.active?'active':'deactivated'},role:state.role,isPreview:state.preview})}));
-vi.mock('@/lib/supabase/request',()=>({getRequestFeatureFlags:async()=>({elearning:state.learning,chapter1_assessment_v2:state.notes})}));
+vi.mock('@/lib/supabase/request',()=>({getRequestFeatureFlags:async()=>({elearning:state.learning,chapter1_assessment_v2:state.notes,assessor_flow_ui:state.readinessUI})}));
 const area='00000000-0000-4000-8000-000000000001';
 const maria='00000000-0000-4000-8000-000000000002';
 vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({
@@ -20,7 +20,7 @@ vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({
 })}));
 const page=(query:Record<string,string>={})=>Workspace({params:Promise.resolve({programId:'program'}),searchParams:Promise.resolve(query)});
 beforeEach(()=>{
-  Object.assign(state,{role:'assessor',actual:'assessor',active:true,preview:false,locale:'en',rosterError:false,learning:true,notes:true});
+  Object.assign(state,{role:'assessor',actual:'assessor',active:true,preview:false,locale:'en',rosterError:false,learning:true,notes:true,readinessUI:false});
   state.rpc.mockReset().mockImplementation(async(name:string)=>name==='rpc_assessor_chapter1_workspace'
     ? {data:{rows:[{id:maria,full_name:'Maria Santos',barangay:'Barangay One',area_id:area,learning_status:'in_progress'}],
       total:21,page:2,pageSize:20,areas:[{id:area,name:'Barangay One'}],areasTruncated:false},error:state.rosterError?{message:'offline'}:null}
@@ -48,6 +48,24 @@ describe('Chapter 1 working area',()=>{
     expect(screen.getByRole('alert')).toHaveTextContent('Roster could not be loaded');
     expect(screen.getByRole('link',{name:'Continue preparation'})).toBeInTheDocument();
     expect(screen.queryByText('No active BHWs in your catchment yet.')).toBeNull();
+  });
+  it('shows selected learner component blockers without creating an assessment',async()=>{
+    state.readinessUI=true;
+    state.rpc.mockImplementation(async(name:string)=>name==='rpc_assessor_chapter1_workspace'
+      ?{data:{rows:[{id:maria,full_name:'Maria Santos',barangay:'Barangay One',area_id:area,learning_status:'in_progress'}],
+        total:1,page:1,pageSize:20,areas:[],areasTruncated:false},error:null}
+      :name==='rpc_assessor_component_readiness'
+        ?{data:[{moduleId:'module',titleFil:'Bahagi',titleEn:'Component',learnerReady:false,actorAuthorized:false,canArrange:false,
+          learnerBlockers:['required_lessons_incomplete'],authorityBlockers:['chapter_award_required'],
+          missingLessonIds:[],staleLessonIds:[],missingTestPhases:[]}],error:null}
+        :{data:[],error:null});
+    render(await page({learner:maria}));
+    expect(state.rpc).toHaveBeenCalledWith('rpc_assessor_component_readiness',{
+      p_program_id:'program',p_bhw_user_id:maria,
+    });
+    expect(screen.getByText('Required lessons remain incomplete.')).toBeInTheDocument();
+    expect(screen.getByText('An active Chapter 1 assessor award is required.')).toBeInTheDocument();
+    expect(screen.queryByRole('link',{name:/start formal assessment/i})).toBeNull();
   });
   it('shows Filipino section labels and an honest empty state',async()=>{
     state.locale='fil';state.rpc.mockImplementation(async(name:string)=>name==='rpc_assessor_chapter1_workspace'
