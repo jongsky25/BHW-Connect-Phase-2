@@ -6,6 +6,7 @@ import type {FacilitatorActivity} from '@/lib/elearning/activities';
 import type {ObservationIndicator} from '@/lib/elearning/types';
 import {Chapter1ActivityPlan} from './chapter1-activity-plan';
 import type {ReviewedCriterion} from '@/lib/assessor/lesson-observation';
+import {chapter1Terms} from '@/lib/assessor/chapter1-workflow-parity';
 
 type Lang = 'fil' | 'en';
 type View = 'prepare' | 'run';
@@ -42,12 +43,12 @@ export function Chapter1LessonFlow({lang,view,baseHref,returnHref,notesMarkdown,
     <nav className="grid grid-cols-2 gap-2 sm:flex" aria-label={pick('Mga view ng aralin','Lesson views')}>
       {(['prepare','run'] as const).map(next=><Link key={next} prefetch={false} href={link(next)} aria-current={view===next?'page':undefined}
         className={`min-h-11 rounded-md border px-4 py-3 text-center font-medium focus-visible:outline-2 focus-visible:outline-primary ${view===next?'border-primary bg-primary text-on-primary':'border-ink/20'}`}>
-        {next==='prepare'?pick('Ihanda','Prepare'):pick('Patakbuhin','Run')}</Link>)}
+        {chapter1Terms[next][lang]}</Link>)}
       <Link prefetch={false} href={link('lesson')} className="col-span-2 min-h-11 rounded-md border border-ink/20 px-4 py-3 text-center underline focus-visible:outline-2 focus-visible:outline-primary">
-        {pick('Ipakita sa BHW','Show BHW presentation')}</Link>
+        {chapter1Terms.bhwView[lang]}</Link>
     </nav>
     {returnHref && <Link prefetch={false} className="inline-block min-h-11 content-center underline" href={returnHref}>{pick('Bumalik sa working area','Back to working area')}</Link>}
-    {observeHref&&<Link prefetch={false} className="inline-block min-h-11 content-center rounded-md bg-primary px-4 py-3 font-medium text-on-primary" href={observeHref}>{pick('Obserbahan ang BHW','Observe a BHW')}</Link>}
+    {observeHref&&<Link prefetch={false} className="inline-block min-h-11 content-center rounded-md bg-primary px-4 py-3 font-medium text-on-primary" href={observeHref}>{chapter1Terms.observe[lang]}</Link>}
     {planningEnabled&&lessonId&&moduleId&&<Chapter1ActivityPlan lang={lang} lessonId={lessonId} moduleId={moduleId} activities={activities} sessions={sessions} guideHref={link(view)}/>}
     <div className="rounded-xl border border-primary/30 bg-primary/5 p-4 sm:p-5">
       <h2 className="font-semibold">{pick('Layunin ng 1.6.2','1.6.2 objective')}</h2>

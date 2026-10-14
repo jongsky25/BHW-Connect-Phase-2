@@ -5,6 +5,7 @@ import {useRouter} from 'next/navigation';
 import {useEffect,useRef,useState,type FormEvent, type MouseEvent} from 'react';
 import {createClient} from '@/lib/supabase/client';
 import type {LessonPracticeContext} from '@/lib/assessor/lesson-observation';
+import {chapter1Terms} from '@/lib/assessor/chapter1-workflow-parity';
 
 type Lang='fil'|'en';
 type Sufficiency='not_observed'|'insufficient'|'sufficient';
@@ -88,7 +89,7 @@ export function Chapter1PracticeObservation({context,lang,backHref,workspaceHref
       {workspaceHref&&<Link prefetch={false} className="min-h-11 content-center underline" href={workspaceHref} onClick={leave}>{pick('Bumalik sa working area','Back to working area')}</Link>}
     </nav>
     <section className="rounded-xl border border-primary/30 bg-primary/5 p-4 sm:p-6">
-      <h1 className="text-xl font-semibold">{pick('Obserbahan ang BHW · pagsasanay','Observe a BHW · practice')}</h1>
+      <h1 className="text-xl font-semibold">{chapter1Terms.observe[lang]} · {pick('pagsasanay','practice')}</h1>
       <p className="mt-2">{context.learner?.name} · {context.learner?.barangay} · {pick('Aralin 1.6.2','Lesson 1.6.2')}</p>
       <p className="mt-2 text-sm">{pick('Ang pagsasanay ay hindi pormal na pagpasa o sertipiko.','Practice does not create a formal pass or certificate.')}</p>
     </section>
@@ -113,20 +114,20 @@ export function Chapter1PracticeObservation({context,lang,backHref,workspaceHref
           <div className="mt-2 grid gap-2 sm:grid-cols-3">{([
             ['not_observed',pick('Hindi nasaksihan','Not observed')],
             ['insufficient',pick('Hindi sapat ang ebidensiya','Insufficient evidence')],
-            ['sufficient',pick('May sapat na direktang ebidensiya','Sufficient direct evidence')],
+            ['sufficient',chapter1Terms.sufficiency[lang]],
           ] as const).map(([value,label])=><label key={value} className="flex min-h-11 items-center gap-2 rounded-md border border-ink/20 p-3"><input type="radio" name="sufficiency" checked={sufficiency===value} onChange={()=>{setSufficiency(value);setRating(null);change();}}/>{label}</label>)}</div>
         </fieldset>
-        <label className="block font-medium">{sufficiency==='not_observed'?pick('Dahilan kung bakit hindi nasaksihan','Why it was not observed'):pick('Eksaktong nasaksihang kilos at salita','Exact actions and words observed')}
+        <label className="block font-medium">{sufficiency==='not_observed'?pick('Dahilan kung bakit hindi nasaksihan','Why it was not observed'):chapter1Terms.facts[lang]}
           <textarea className={`${field} mt-1 min-h-28`} maxLength={4000} value={facts} onChange={event=>{setFacts(event.target.value);change();}} required minLength={10}/>
         </label>
         {sufficiency==='sufficient'&&<><fieldset><legend className="font-medium">{pick('Suporta habang ginagawa','Support during attempt')}</legend>
-          <div className="mt-2 flex flex-wrap gap-4">{(['independent','prompted'] as const).map(value=><label key={value} className="flex min-h-11 items-center gap-2"><input type="radio" name="support" checked={support===value} onChange={()=>{setSupport(value);if(value==='independent')setPrompts('');change();}}/>{value==='independent'?pick('Walang prompt','Independent'):pick('May prompt','Prompted')}</label>)}</div>
+          <div className="mt-2 flex flex-wrap gap-4">{(['independent','prompted'] as const).map(value=><label key={value} className="flex min-h-11 items-center gap-2"><input type="radio" name="support" checked={support===value} onChange={()=>{setSupport(value);if(value==='independent')setPrompts('');change();}}/>{value==='independent'?pick('Walang prompt','Independent'):chapter1Terms.prompted[lang]}</label>)}</div>
         </fieldset>{support==='prompted'&&<label className="block font-medium">{pick('Anong prompt ang ibinigay?','What prompt was given?')}<textarea className={`${field} mt-1 min-h-24`} maxLength={2000} value={prompts} onChange={event=>{setPrompts(event.target.value);change();}} required/></label>}
           {facts.trim().length>=10&&<fieldset><legend className="font-medium">{pick('Rating ayon sa inaprubahang anchor','Rating against the reviewed anchor')}</legend><div className="mt-2 grid gap-2 sm:grid-cols-3">{(['kaya_na','kailangan_practice','hindi_pa'] as const).map(level=><label key={level} className="flex min-h-11 items-start gap-2 rounded-md border border-ink/20 p-3"><input type="radio" name="rating" checked={rating===level} onChange={()=>{setRating(level);change();}}/><span>{criterion.rubric.levels[level][lang]}</span></label>)}</div></fieldset>}
         </>}
-        <div className="grid gap-4 sm:grid-cols-2"><label className="block font-medium">{pick('Pribadong tala ng assessor','Private assessor notes')}<textarea className={`${field} mt-1 min-h-24`} maxLength={2000} value={privateNotes} onChange={event=>{setPrivateNotes(event.target.value);change();}}/></label>
-          <label className="block font-medium">{pick('Feedback para sa BHW','Feedback for the BHW')}<textarea className={`${field} mt-1 min-h-24`} maxLength={2000} value={feedback} onChange={event=>{setFeedback(event.target.value);change();}}/></label></div>
-        <label className="block font-medium">{pick('Susunod na hakbang','Next step')}<textarea className={`${field} mt-1 min-h-20`} maxLength={1000} minLength={3} required value={nextStep} onChange={event=>{setNextStep(event.target.value);change();}}/></label>
+        <div className="grid gap-4 sm:grid-cols-2"><label className="block font-medium">{chapter1Terms.privateNotes[lang]}<textarea className={`${field} mt-1 min-h-24`} maxLength={2000} value={privateNotes} onChange={event=>{setPrivateNotes(event.target.value);change();}}/></label>
+          <label className="block font-medium">{chapter1Terms.learnerFeedback[lang]}<textarea className={`${field} mt-1 min-h-24`} maxLength={2000} value={feedback} onChange={event=>{setFeedback(event.target.value);change();}}/></label></div>
+        <label className="block font-medium">{chapter1Terms.nextStep[lang]}<textarea className={`${field} mt-1 min-h-20`} maxLength={1000} minLength={3} required value={nextStep} onChange={event=>{setNextStep(event.target.value);change();}}/></label>
         <label className="flex min-h-11 items-center gap-2"><input type="checkbox" checked={release} onChange={event=>{setRelease(event.target.checked);change();}}/>{pick('Ibahagi ang feedback at susunod na hakbang sa BHW kapag naitala','Release feedback and next step to the BHW when saved')}</label>
         {release&&<p className="rounded-md border border-primary/20 p-3 text-sm"><strong>{pick('Makikita ng BHW:','BHW will see:')}</strong> {feedback||pick('Wala pang feedback','No feedback yet')} · {nextStep||pick('Wala pang susunod na hakbang','No next step yet')}</p>}
         {error&&<p role="alert" className="text-danger">{error}</p>}

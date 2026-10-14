@@ -22,13 +22,13 @@ try {
     if (locale === 'fil') await page.getByRole('button', {name: 'Filipino', exact: true}).click();
     const next = page.getByRole('button', {name: locale === 'en' ? 'Next scene' : 'Susunod na scene', exact: true});
     const answers = [1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1];
-    const guide = page.getByRole('button', {name: locale === 'en' ? 'Open guide / return to guide' : 'Buksan ang gabay / bumalik sa gabay'});
+    const guide = page.getByRole('button', {name: locale === 'en' ? 'Open / return to Prepare' : 'Buksan / bumalik sa Ihanda'});
     for (let i = 0; i < answers.length; i++) {
       await expect(page.locator('#story-scene-title')).toContainText(`${i + 1}.`);
       if (i > 0) await expect(page.locator('#story-scene-title')).toBeFocused();
       if (i === 1) {
         await guide.click();
-        await page.getByRole('button', {name: locale === 'en' ? 'Switch to Maria’s view' : 'Lumipat sa view ni Maria'}).click();
+        await page.getByRole('button', {name: locale === 'en' ? 'Show BHW presentation' : 'Ipakita sa BHW'}).click();
         await guide.click();
       }
       if (i === 3) {

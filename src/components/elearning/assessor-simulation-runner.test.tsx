@@ -12,7 +12,7 @@ beforeEach(()=>rpc.mockReset());
 describe('saved simulation runner',()=>{
  it('disables skipping and sends only a structured choice, never a completion flag or learner RPC',async()=>{
   rpc.mockResolvedValue({data:{...initial,revision:1,next:1,attempts:{'find-maria':['maria']}},error:null});
-  render(<AssessorSimulationRunner initial={initial} locale="en" chapterHref="/preparation"/>);
+  render(<AssessorSimulationRunner initial={initial} locale="en" chapterHref="/preparation" workspaceHref="/workspace"/>);
   expect(screen.getByRole('button',{name:/2. Prepare with both views/})).toBeDisabled();
   fireEvent.click(screen.getByRole('button',{name:storyScenes[0].choices[1].text.en}));
   await waitFor(()=>expect(rpc).toHaveBeenCalledTimes(1));
@@ -22,7 +22,7 @@ describe('saved simulation runner',()=>{
  });
  it('preserves unsaved note and facts through failed save and read-only recovery',async()=>{
   const state={...initial,next:3};rpc.mockRejectedValueOnce(new Error('network')).mockResolvedValueOnce({data:state,error:null});
-  render(<AssessorSimulationRunner initial={state} locale="en" chapterHref="/preparation"/>);
+  render(<AssessorSimulationRunner initial={state} locale="en" chapterHref="/preparation" workspaceHref="/workspace"/>);
   const note=screen.getByRole('textbox');fireEvent.change(note,{target:{value:'Fictional note retained'}});
   fireEvent.click(screen.getAllByRole('checkbox')[0]);
   fireEvent.click(screen.getByRole('button',{name:'Save evidence / pause'}));
@@ -33,9 +33,21 @@ describe('saved simulation runner',()=>{
   expect(note).toHaveValue('Fictional note retained');expect(screen.getAllByRole('checkbox')[0]).toBeChecked();
  });
  it('renders Filipino and resumes the first unfinished checkpoint',()=>{
-  render(<AssessorSimulationRunner initial={{...initial,next:6}} locale="fil" chapterHref="/preparation"/>);
+  render(<AssessorSimulationRunner initial={{...initial,next:6}} locale="fil" chapterHref="/preparation" workspaceHref="/workspace"/>);
   expect(screen.getByRole('heading',{level:2,name:`7. ${storyScenes[6].title.fil}`})).toBeInTheDocument();
   expect(screen.getByRole('button',{name:'Tingnan ang na-save na status'})).toBeInTheDocument();
+  expect(rpc).not.toHaveBeenCalled();
+ });
+ it('shows the real workspace transition only after the server receipt',()=>{
+  const {unmount}=render(<AssessorSimulationRunner initial={initial} locale="en" chapterHref="/preparation" workspaceHref="/workspace"/>);
+  expect(screen.queryByRole('link',{name:/Open the real Chapter 1 working area/})).not.toBeInTheDocument();
+  const receipt={id:'receipt',actorId:'actor',programInstanceId:'program',programKey:'bhw-reference-manual' as const,
+   chapterKey:'chapter-1' as const,requirementsVersion:simulationContract.requirementsVersion,
+   scenarioId:simulationContract.id,version:simulationContract.version,checkpointIds:storyScenes.map(s=>s.id),
+   checkpointVersions:storyScenes.map(s=>s.checkpointVersion),serverValidated:true as const,completedAt:new Date().toISOString()};
+  unmount();
+  render(<AssessorSimulationRunner initial={{...initial,next:11,receipt}} locale="en" chapterHref="/preparation" workspaceHref="/workspace"/>);
+  expect(screen.getByRole('link',{name:/Open the real Chapter 1 working area/})).toHaveAttribute('href','/workspace');
   expect(rpc).not.toHaveBeenCalled();
  });
 });

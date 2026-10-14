@@ -4,6 +4,7 @@ import {useRouter} from 'next/navigation';
 import {useRef,useState} from 'react';
 import {createClient} from '@/lib/supabase/client';
 import {type FormalEvidence,type FormalState} from '@/lib/assessor/formal-attempt';
+import {chapter1Terms} from '@/lib/assessor/chapter1-workflow-parity';
 
 const field='min-h-11 w-full rounded border border-ink/30 bg-canvas px-3 py-2';
 export function FormalAttemptEditor({state,lang}:{state:FormalState;lang:'fil'|'en'}){
@@ -56,7 +57,7 @@ export function FormalAttemptEditor({state,lang}:{state:FormalState;lang:'fil'|'
     <p>{label('Ang kasunduan lamang ay hindi pormal na pasya. Simulan nang tahasan ang pagtatasa kapag handa na.',
       'An arrangement alone is not a formal decision. Explicitly start the assessment when ready.')}</p>
     {state.canStart?<button onClick={start} disabled={busy} className="mt-4 min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">
-      {label('Simulan ang pormal na pagtatasa','Start formal assessment')}</button>
+      {chapter1Terms.start[lang]}</button>
       :<p role="status" className="mt-3">{label('Hindi pa maaaring simulan. Suriin ang kahandaan, pagtatalaga, at pahintulot.',
         'Cannot start yet. Check readiness, assignment, and authority.')}</p>}
     {message&&<p role="alert" className="mt-3">{message}</p>}
@@ -107,7 +108,7 @@ export function FormalAttemptEditor({state,lang}:{state:FormalState;lang:'fil'|'
       </fieldset>;
     })}
     <div className="flex flex-wrap gap-3"><button disabled={busy} onClick={save}
-      className="min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">{label('I-save ang draft','Save draft')}</button>
+      className="min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">{chapter1Terms.draft[lang]}</button>
       <button disabled={busy||dirty} onClick={()=>setReview(true)} className="min-h-11 rounded border px-4 disabled:opacity-50">
         {label('Suriin para isumite','Review for submission')}</button></div>
     {dirty&&<p className="text-sm">{label('I-save muna ang mga pagbabago bago suriin.','Save changes before review.')}</p>}
@@ -119,7 +120,7 @@ export function FormalAttemptEditor({state,lang}:{state:FormalState;lang:'fil'|'
       <p className="mt-3 text-sm">{label('Dapat may paliwanag at susunod na hakbang ang bawat pamantayan. Ang pag-submit ay pinal at hindi nagbibigay ng sertipiko.',
         'Every criterion needs facts or an explanation and a next step. Submission is final and does not issue a certificate.')}</p>
       <button disabled={busy} onClick={submit} className="mt-3 min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">
-        {label('Isumite ang pormal na pagtatasa','Submit formal assessment')}</button>
+        {chapter1Terms.submit[lang]}</button>
     </div>}
     {message&&<p role="status" className="text-sm">{message}</p>}
   </section>;

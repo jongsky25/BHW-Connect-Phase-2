@@ -56,9 +56,10 @@ The personal preparation checklist displays remaining/recorded simulation and an
 open/replay link only when admitted. The debrief returns to the candidate's current
 preparation resolver. Existing qualification/status guidance retains priority.
 Revised certification remains unavailable with no issuance button. C1AF-07 owns
-issuance; the legacy orientation-pass trigger is unchanged. C1AF-20b must compare
-the eleven explicit fictional adapters with the eventual real screens, including
-field/action parity, evidence/privacy, changed authority and error recovery.
+issuance; the legacy orientation-pass trigger is unchanged. C1AF-20b compares
+the eleven fictional adapters with the delivered real screens, including
+field/action parity, evidence/privacy, changed authority and error recovery;
+see [the parity handoff](chapter-1-assessor-c1af-20b-implementation-handoff.md).
 
 ## Preservation and release boundary
 

@@ -108,6 +108,11 @@ test('combined award validates real authenticated completion and concurrent reco
     expect(localSql(`select count(*) from audit_events where event_type='assessor.chapter_award.issued' and subject_id='${saved.awards[0].awardId}'`).trim()).toBe('1');
     await page.reload();await expect(page.getByRole('status').last()).toContainText('Naitala ang pagkumpleto');
     expect(snapshot()).toBe(before);
+    await page.getByRole('link',{name:/Buksan ang tunay na working area ng Kabanata 1/}).click();
+    await expect(page).toHaveURL(`/training/${program}/assessor/workspace`);
+    await expect(page.getByRole('heading',{name:'Working area ng Kabanata 1'})).toBeVisible();
+    await expect(page.getByRole('heading',{name:'Mga BHW na sinusuportahan ko'})).toBeVisible();
+    expect(snapshot()).toBe(before);
     // C1AF-08: output is read-only across page, print, download and minimal
     // public verification. All disclosure/status changes are local fixtures.
     const certificateId=saved.awards[0].certificateId;
