@@ -17,13 +17,13 @@ export function parseComponentRequestQueue(value:unknown):ComponentRequestQueueI
 }
 
 export type BhwComponentRequest={id:string;moduleTitleFil:string;moduleTitleEn:string;
-  status:'pending'|'assigned'|'arranged'|'cancelled'|'released';
+  status:'pending'|'assigned'|'arranged'|'assessed'|'cancelled'|'released';
   purposeFil:string;purposeEn:string;criteria:{fil:string;en:string}[];
   assessorName:string|null;agreedAt:string|null;location:string|null;note:string|null};
 export function parseBhwComponentRequests(value:unknown):BhwComponentRequest[]|null{
   if(!Array.isArray(value)||value.length>20||!value.every(v=>object(v)&&string(v.id)
     &&string(v.moduleTitleFil)&&string(v.moduleTitleEn)
-    &&['pending','assigned','arranged','cancelled','released'].includes(String(v.status))
+    &&['pending','assigned','arranged','assessed','cancelled','released'].includes(String(v.status))
     &&string(v.purposeFil)&&string(v.purposeEn)&&Array.isArray(v.criteria)
     &&v.criteria.every((c:unknown)=>object(c)&&string(c.fil)&&string(c.en))
     &&nullableString(v.assessorName)&&nullableString(v.agreedAt)
