@@ -4,6 +4,8 @@ export type NotificationType =
   | "course.published"
   | "assessment.decided"
   | "assessment.arrangement"
+  | "assessment.formal_feedback"
+  | "assessment.chapter_review"
   | "forum.reply"
   | "flipchart.reviewed"
   | "user.transferred"

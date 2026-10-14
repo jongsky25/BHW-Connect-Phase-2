@@ -1,0 +1,23 @@
+# C1AF-19 implementation handoff — reassessment and BHW Chapter 1 review
+
+## Scope
+
+This PR starts from C1AF-18 on `main` (`46bd5770`) and adds an explicit Chapter 1 review path. The owner of a submitted component attempt may release bilingual feedback and its criterion evidence to that BHW. After a released `needs_practice` or `insufficient_evidence` outcome, an authorized assessor may document further practice and open one linked reassessment request. A later C1AF-13 practice attempt can optionally be linked only if it belongs to the same BHW, module and approved criterion and was recorded after the prior formal submission. The new formal attempt starts with an empty checklist; no earlier formal or practice rating is copied into it. The old submitted attempt, feedback and any historical certificate remain readable.
+
+The Chapter 1 review screen shows every course component, current learner prerequisite blockers, approved rubric/version status, latest formal criterion evidence, release status and any linked practice note. The server derives `insufficient_evidence` whenever any component or required prerequisite is missing, stale, unreleased or insufficient. Otherwise any `needs_practice` component keeps the chapter at `needs_practice`; only all current, released `complete` components produce `complete`. The assessor supplies a bilingual summary and explicitly releases that review. Pending and practice outcomes leave `course_progress` unchanged and issue no certificate. They do not use the assessor qualifying exam policy.
+
+A `complete` review uses one locked, idempotent database transaction to record the BHW Chapter 1 decision, an existing-format passed assessment, one `public.certificates` certificate, and certified course progress. If a certificate already exists for that learner/course, the decision links to the historical certificate instead of issuing another. The cutover guard has a narrow INSERT exception only while that private complete review is being issued by its actual reviewer; ordinary legacy assessment/certificate writes remain blocked for cutover members. BHWs see only released component feedback and chapter summaries, including the existing certificate link when issued.
+
+This migration creates no approved component mapping, award contract, cohort member, cutover or enabled flag. The pilot's component registry is empty and writes remain closed. C1AF-20 must finish inventorying and closing all other Chapter 1 legacy write paths before activation.
+
+## Verification
+
+- `scripts/tests/c1af19-chapter-review-database.test.mjs` executes the exact C1AF-16 through C1AF-19 migrations in isolated PGlite. It covers closed writes/private reads, mixed outcomes, unreleased feedback visibility, changed write authority, later practice source validation, fresh reassessment evidence, latest attempt precedence, changed rubric and lesson versions, direct legacy INSERT denial, repeated decisions from two reviewers, one new certificate and retained historical certificate.
+- The BHW route test checks released evidence and the certificate link; existing workspace and C1AF-18 tests cover navigation and formal submission. Run focused tests, `npm run typecheck`, `npm run lint`, `npm run assessor:check`, `npm run build`, and the PR's disposable full Supabase replay and browser smoke. Do not run development or E2E against the pilot.
+- The advisory transaction lock and unique issued-review index protect concurrent final decisions for the same learner and chapter. The exact migration test verifies repeated decisions; the disposable full PostgreSQL replay is the migration gate.
+
+## Release boundary
+
+After review and approval, follow `docs/deploy-runbook.md`: check pilot Disk IO; apply this single migration once; verify the new private tables, RLS, RPC grants and public assessment link; then squash merge and let Vercel deploy. Verify component requirements, requests, assignments, formal attempts, chapter reviews and awards remain empty. Keep `assessor_flow_writes`, cohort writes and persisted cutover off. Confirm the existing BHW certificate count has not changed. Smoke the manual, assessor working area, BHW request/result empty state and protected routes.
+
+Live activation still needs reviewed component mappings, lesson revisions, rubric anchors, BHW test release comparability and a decision on what documented further practice must contain. The optional C1AF-13 link is provenance, not reused formal evidence. Before opening writes, C1AF-20 must close the remaining legacy bypasses and exercise the complete end-to-end path with real approved contracts. Do not infer a chapter pass from one component or from practice ratings.
