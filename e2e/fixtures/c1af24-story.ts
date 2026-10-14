@@ -188,11 +188,16 @@ export async function rehearseChapterOne({page,request,browser,localSql,cityToke
 export function cleanupChapterOneRehearsal(localSql:Sql,{program,chapter,course,cohort}:Fixture){
   localSql(`begin;
     update public.feature_flags set enabled=false where key='assessor_flow_writes';
+    -- Disposal of synthetic records is not a staff action under the live cutover.
+    alter table public.assessments disable trigger assessor_flow_legacy_guard;
+    alter table public.certificates disable trigger assessor_flow_legacy_guard;
     update assessor_rollout_private.bhw_chapter_reviews set state='issuing',certificate_id=null,
       assessment_id=null where program_id='${program}' and outcome='complete';
     update public.assessments set formal_chapter_review_id=null where course_id='${course}';
     delete from public.certificates where course_id='${course}';
     delete from public.assessments where course_id='${course}';
+    alter table public.assessments enable trigger assessor_flow_legacy_guard;
+    alter table public.certificates enable trigger assessor_flow_legacy_guard;
     delete from assessor_rollout_private.bhw_chapter_reviews where program_id='${program}';
     delete from assessor_rollout_private.formal_reassessments where next_request_id in
       (select id from assessor_rollout_private.component_requests where program_id='${program}');
