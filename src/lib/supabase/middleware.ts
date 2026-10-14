@@ -1,7 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { isPreviewableRole, type AppRole } from "../auth/roles";
-import { fetchFlagRows, resolveFlags } from "../flags/get-flags";
+import { resolveFlags, tryFetchFlagRows } from "../flags/get-flags";
 import type { FeatureFlags } from "../flags/types";
 import { PREVIEW_COOKIE } from "../preview/cookies";
 import { APP_FLAGS_HEADER, APP_USER_HEADER, getAppUser, type AppUser } from "./app-user";
@@ -20,6 +20,45 @@ const LAST_ACTIVITY_COOKIE = "bhw_last_activity";
 // changes the number the same user sees on their own bell.
 const NOTIF_COOKIE = "bhw_notif_unread";
 const NOTIF_TTL_MS = 60 * 1000;
+
+// Vercel kills a middleware that has not answered within 25 s. When the
+// database is slow (27 Sep and 14 Oct: Supabase calls took 5-15 s under load),
+// each read below gets its own budget so one slow call degrades the page
+// instead of hanging the request until it is killed. Worst case is about
+// max(profile, flags) + unread count + claims, well inside 25 s.
+const PROFILE_TIMEOUT_MS = 8_000;
+const FLAGS_TIMEOUT_MS = 6_000;
+const NOTIF_TIMEOUT_MS = 3_000;
+
+// The last flag rows this instance read. If the flags read fails or times out
+// these are used rather than the defaults, which would hide e-learning etc.
+// from everyone until the database recovers. Per-instance and best effort.
+let lastFlagRows: Awaited<ReturnType<typeof tryFetchFlagRows>> = null;
+
+async function loadFlagRows(supabase: Parameters<typeof tryFetchFlagRows>[0]) {
+  const rows = await tryFetchFlagRows(supabase, AbortSignal.timeout(FLAGS_TIMEOUT_MS));
+  if (rows) lastFlagRows = rows;
+  return rows ?? lastFlagRows ?? [];
+}
+
+// Shown instead of signing the visitor out when their profile could not be
+// read in time. Retries itself; the session cookie is untouched.
+function busyResponse(pathname: string) {
+  if (isApiPath(pathname)) {
+    return NextResponse.json({ error: "busy" }, { status: 503, headers: { "Retry-After": "5" } });
+  }
+  return new NextResponse(
+    '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="5"><title>BHW Connect</title></head>' +
+      '<body style="font-family:system-ui,sans-serif;max-width:32rem;margin:4rem auto;padding:0 1rem">' +
+      "<h1>Sandali lang po / One moment</h1>" +
+      "<p>Maraming gumagamit ngayon. Susubukan ulit ito nang kusa sa loob ng ilang segundo.</p>" +
+      "<p>Many people are online right now. This page will retry automatically in a few seconds.</p></body></html>",
+    {
+      status: 503,
+      headers: { "Content-Type": "text/html; charset=utf-8", "Retry-After": "5", "Cache-Control": "no-store" },
+    },
+  );
+}
 
 const PUBLIC_PATHS = new Set(["/", "/privacy", "/login", "/offline"]);
 
@@ -115,8 +154,17 @@ export async function updateSession(request: NextRequest) {
   // unread count), so they skip both reads entirely. The rows can't be
   // resolved into role-effective flags until effectiveRole is known below
   // (docs/role-feature-toggles-plan.md §5 A2), so this reads rows, not flags.
-  const flagRowsPromise = isApiPath(pathname) ? null : fetchFlagRows(supabase);
-  const appUser = await getAppUser(supabase, authUserId);
+  const flagRowsPromise = isApiPath(pathname) ? null : loadFlagRows(supabase);
+  let appUser: AppUser | null;
+  try {
+    appUser = await getAppUser(supabase, authUserId, {
+      signal: AbortSignal.timeout(PROFILE_TIMEOUT_MS),
+      throwOnError: true,
+    });
+  } catch {
+    // Slow or failing database, not a missing account: keep the session.
+    return busyResponse(pathname);
+  }
 
   if (!appUser || appUser.status !== "active") {
     await supabase.auth.signOut();
@@ -217,16 +265,23 @@ export async function updateSession(request: NextRequest) {
     if (cached !== null && !pathname.startsWith("/notifications")) {
       notifUnreadCount = cached;
     } else {
-      const { count } = await supabase
+      const { count, error } = await supabase
         .from("notifications")
         .select("id", { count: "exact", head: true })
-        .gt("created_at", since);
-      notifUnreadCount = count ?? 0;
-      response.cookies.set(NOTIF_COOKIE, [appUser.id, since, Date.now(), notifUnreadCount].join("~"), {
-        httpOnly: true,
-        sameSite: "lax",
-        path: "/",
-      });
+        .gt("created_at", since)
+        .abortSignal(AbortSignal.timeout(NOTIF_TIMEOUT_MS));
+      // Display-only: on a timeout show the last cached number (or 0) and
+      // leave the cookie alone, so the next request tries again.
+      if (error) {
+        notifUnreadCount = cached ?? 0;
+      } else {
+        notifUnreadCount = count ?? 0;
+        response.cookies.set(NOTIF_COOKIE, [appUser.id, since, Date.now(), notifUnreadCount].join("~"), {
+          httpOnly: true,
+          sameSite: "lax",
+          path: "/",
+        });
+      }
     }
   }
 

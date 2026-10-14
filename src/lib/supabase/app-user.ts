@@ -42,15 +42,25 @@ export function forwardedAppUser(headers: Headers, authUserId: string): AppUser 
 const APP_USER_COLUMNS =
   "id, auth_user_id, username, full_name, role, org_unit_id, status, must_change_password, consented_at, language, a11y_settings, onboarding_progress, onboarding_completed_at, notifications_last_read_at, org_units(level)";
 
+export type GetAppUserOptions = {
+  /** Abort the read after this signal fires (middleware's time budget). */
+  signal?: AbortSignal;
+  /**
+   * Throw on a failed read instead of returning null, so the caller can tell
+   * "database busy" from "no such user". Middleware needs this: null signs
+   * the visitor out, which is wrong when the only problem is a slow database.
+   */
+  throwOnError?: boolean;
+};
+
 export async function getAppUser(
   supabase: SupabaseClient,
   authUserId: string,
+  options: GetAppUserOptions = {},
 ): Promise<AppUser | null> {
-  const { data, error } = await supabase
-    .from("users")
-    .select(APP_USER_COLUMNS)
-    .eq("auth_user_id", authUserId)
-    .maybeSingle();
+  let query = supabase.from("users").select(APP_USER_COLUMNS).eq("auth_user_id", authUserId);
+  if (options.signal) query = query.abortSignal(options.signal);
+  const { data, error } = await query.maybeSingle();
 
   // A failed fetch here (e.g. a schema mismatch from a migration that
   // hasn't run yet) used to look identical to "no such user" and silently
@@ -58,6 +68,7 @@ export async function getAppUser(
   // is visible instead of presenting as an app-wide, unexplained login break.
   if (error) {
     console.error("getAppUser: failed to load app user", error);
+    if (options.throwOnError) throw error;
     return null;
   }
 

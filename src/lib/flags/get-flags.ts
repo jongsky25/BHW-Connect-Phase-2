@@ -38,6 +38,24 @@ export async function fetchFlagRows(supabase: SupabaseClient): Promise<FlagRow[]
   return data ?? [];
 }
 
+// Like fetchFlagRows, but a failed or timed-out read is null, not an empty
+// list: [] resolves every flag to its default, which hides shipped features
+// (e-learning, notifications) from everyone while the database is merely slow.
+// Middleware uses this so it can fall back to the last rows it saw instead.
+export async function tryFetchFlagRows(
+  supabase: SupabaseClient,
+  signal?: AbortSignal,
+): Promise<FlagRow[] | null> {
+  try {
+    let query = supabase.from("feature_flags").select("key, enabled, disabled_roles");
+    if (signal) query = query.abortSignal(signal);
+    const { data, error } = await query;
+    return error || !data ? null : data;
+  } catch {
+    return null;
+  }
+}
+
 // Pure so it's easy to unit test against fixture rows and to reuse from
 // middleware, which reads the rows itself (docs/role-feature-toggles-plan.md
 // §5 A2). With no role, or with "admin", every flag resolves to its master
