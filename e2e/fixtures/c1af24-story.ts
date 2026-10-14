@@ -139,7 +139,7 @@ export async function rehearseChapterOne({page,request,browser,localSql,cityToke
     expect(count().certificates).toBe(0);
     await learnerPage.goto(`/training/${program}/assessment-requests`);
     await expect(learnerPage.getByRole('heading',{name:'Aking mga kahilingan sa pagtatasa'})).toBeVisible();
-    await expect(learnerPage.getByText('Observed the task. Continue guided work.')).toBeVisible();
+    await expect(learnerPage.getByText('Nakita ang gawain. Ipagpatuloy ang gabay.')).toBeVisible();
     const retry=await rpc('rpc_assessor_formal_retry_request',{p_key:randomUUID(),p_prior_attempt_id:conflict,
       p_practice_note:'The learner repeated the fictional communication exercise with supervision.'}) as string;
     await rpc('rpc_assessor_component_request_claim',{p_key:randomUUID(),p_request_id:retry});
