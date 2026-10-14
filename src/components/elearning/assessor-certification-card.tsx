@@ -10,6 +10,7 @@ export function AssessorCertificationCard({chapterKey, chapterId, title, chapter
   const text = (fil: string, english: string) => en ? english : fil;
   const awards = records?.awards ?? [];
   const requirementsUnavailable = published && legacyState?.status === 'unavailable';
+  const chapterPathAvailable = published && !requirementsUnavailable;
   const status = certificationCardStatus(chapterKey, published && !requirementsUnavailable, readFailed, awards);
   const label = {certified: text('Sertipikado', 'Certified'), in_progress: text('Isinasagawa', 'In progress'),
     unavailable: text('Hindi pa available', 'Not yet available'), read_failed: text('Hindi mabasa ang katayuan', 'Status could not be read'),
@@ -35,12 +36,12 @@ export function AssessorCertificationCard({chapterKey, chapterId, title, chapter
           {text('Kurikulum', 'Curriculum')}: {q.curriculumVersion} · {text('Oryentasyon', 'Orientation')}: {q.orientationVersion}
         </li>)}</ul>
       </div>}
-      {published && chapterKey !== 'chapter-3' && chapterId && legacyState && !records?.revisedPath && awards.length === 0 && <div className="mt-4">
+      {chapterPathAvailable && chapterId && legacyState && !records?.revisedPath && awards.length === 0 && <div className="mt-4">
         <p className="mb-2 text-sm">{text('Landas ng naunang kwalipikasyon — hindi pinagsamang sertipikasyon', 'Legacy qualification path — separate from combined certification')}</p>
         <AssessorQualificationCard chapterId={chapterId} chapterTitle={text('Pag-aaral at oryentasyon', 'Study and orientation')} chapterHref={chapterHref} locale={locale} state={legacyState}/>
       </div>}
       {records?.revisedPath && awards.length === 0 && <p className="mt-3 text-sm">{text('Chini-check ng pinagsamang landas ang pag-aaral, pagsusulit, oryentasyon, at simulation. Walang award na ipinapalagay mula sa naunang kwalipikasyon.', 'The combined path checks study, exams, orientation, and simulation. A legacy qualification is not treated as a combined award.')}</p>}
-      {published && chapterKey !== 'chapter-3' && <Link prefetch={false} className="mt-3 inline-block underline" href={chapterHref}>{text('Buksan ang kabanata', 'Open chapter')}</Link>}
+      {chapterPathAvailable && <Link prefetch={false} className="mt-3 inline-block underline" href={chapterHref}>{text('Buksan ang kabanata', 'Open chapter')}</Link>}
     </>}
   </article>;
 }
