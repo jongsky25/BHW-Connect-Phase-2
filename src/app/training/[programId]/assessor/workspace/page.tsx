@@ -150,6 +150,9 @@ export default async function AssessorWorkspace({params,searchParams}:{
             <p className="mt-2 text-sm">{label('Tingnan ang mga gabay sa paghahanda bago mag-ayos ng aktuwal na gawain. Hindi sinusuri ng pahinang ito ang pormal na kahandaan.',
               'Review the preparation guides before arranging actual work. This page does not determine formal readiness.')}</p>
             {lessonHref(href({learner:selected.id})) && <Link prefetch={false} className="mt-3 mr-4 inline-block underline" href={lessonHref(href({learner:selected.id}))!}>{label('Ihanda ang aralin 1.6.2 kasama ang kontekstong ito','Prepare lesson 1.6.2 with this context')}</Link>}
+            {flags.assessor_flow_ui&&<Link prefetch={false} className="mt-3 mr-4 inline-block underline"
+              href={`/training/${programId}/assessor/review?learner=${selected.id}`}>
+              {label('Suriin ang ebidensya ng Kabanata 1','Review Chapter 1 evidence')}</Link>}
             <Link prefetch={false} className="mt-3 inline-block underline" href={href({learner:null})}>{label('Bumalik sa listahan','Back to list')}</Link>
           </aside>}
           {selected&&flags.assessor_flow_ui&&<section className="mt-4 rounded-md border border-ink/20 p-4" aria-label={label('Kahandaan ng mga bahagi','Component readiness')}>

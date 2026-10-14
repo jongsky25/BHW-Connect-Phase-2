@@ -66,6 +66,8 @@ describe('Chapter 1 working area',()=>{
     });
     expect(screen.getByText('Required lessons remain incomplete.')).toBeInTheDocument();
     expect(screen.getByText('An active Chapter 1 assessor award is required.')).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:'Review Chapter 1 evidence'}).getAttribute('href'))
+      .toContain(`learner=${maria}`);
     expect(screen.queryByRole('link',{name:/start formal assessment/i})).toBeNull();
   });
   it('shows an explicit request action and pending claim without a formal outcome action',async()=>{
