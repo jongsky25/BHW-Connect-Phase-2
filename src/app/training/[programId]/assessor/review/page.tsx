@@ -18,10 +18,14 @@ export default async function ChapterReviewPage({params,searchParams}:{
   if(!viewer.appUser||viewer.appUser.status!=='active')redirect('/login');
   if(viewer.role!=='assessor'||viewer.appUser.role!=='assessor'||viewer.isPreview
     ||!flags.elearning||!flags.assessor_flow_ui)redirect('/home');
+  if(process.env.CI)console.error('C1AF24 review uuid',uuid.test(programId),!!learner&&uuid.test(learner));
   if(!uuid.test(programId)||!learner||!uuid.test(learner))notFound();
   const {data,error}=await (await createClient()).rpc('rpc_assessor_chapter_review_state',{
     p_program_id:programId,p_bhw_user_id:learner});
-  if(error){console.error('Chapter 1 review state failed',error.code,error.message);notFound();}
+  if(error){
+    if(process.env.CI)throw new Error(`C1AF24 review RPC ${error.code}: ${error.message}`);
+    console.error('Chapter 1 review state failed',error.code,error.message);notFound();
+  }
   const state=parseChapterReviewState(data);
   if(!state||state.programId!==programId||state.learnerId!==learner)
     throw new Error('Invalid Chapter 1 review state');
