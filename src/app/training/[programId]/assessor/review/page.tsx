@@ -18,7 +18,7 @@ export default async function ChapterReviewPage({params,searchParams}:{
   if(!uuid.test(programId)||!learner||!uuid.test(learner))notFound();
   const {data,error}=await (await createClient()).rpc('rpc_assessor_chapter_review_state',{
     p_program_id:programId,p_bhw_user_id:learner});
-  if(error)notFound();
+  if(error){console.error('Chapter 1 review state failed',error.code,error.message);notFound();}
   const state=parseChapterReviewState(data);
   if(!state||state.programId!==programId||state.learnerId!==learner)
     throw new Error('Invalid Chapter 1 review state');
