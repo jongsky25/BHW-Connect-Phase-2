@@ -31,6 +31,7 @@ let appUserRow: {
   org_unit_level: string | null;
 };
 let flagRows: FlagRow[];
+let profileReadFails = false;
 
 function resetFixtures() {
   authUser = { id: "auth-1" };
@@ -52,6 +53,7 @@ function resetFixtures() {
     org_unit_level: null,
   };
   flagRows = [];
+  profileReadFails = false;
 }
 resetFixtures();
 
@@ -62,13 +64,16 @@ vi.mock("@supabase/ssr", () => ({
       signOut: async () => undefined,
     },
     from: () => ({
-      select: () => ({ eq: () => ({ gt: () => ({ count: 0 }) }) }),
+      select: () => ({ eq: () => ({ gt: () => ({ abortSignal: () => ({ count: 0 }) }) }) }),
     }),
   }),
 }));
 
 vi.mock("./app-user", () => ({
-  getAppUser: async () => appUserRow,
+  getAppUser: async () => {
+    if (profileReadFails) throw new Error("timeout");
+    return appUserRow;
+  },
   APP_USER_HEADER: "x-app-user",
   APP_FLAGS_HEADER: "x-app-flags",
 }));
@@ -77,7 +82,7 @@ vi.mock("../flags/get-flags", async (importOriginal) => {
   const actual = await importOriginal<typeof import("../flags/get-flags")>();
   return {
     ...actual,
-    fetchFlagRows: async () => flagRows,
+    tryFetchFlagRows: async () => flagRows,
   };
 });
 
@@ -158,5 +163,24 @@ describe("updateSession preview write-blocking (RFT B2)", () => {
     const response = await updateSession(makeRequest("/api/chat", undefined, "POST"));
 
     expect(response.status).not.toBe(403);
+  });
+});
+
+describe("updateSession when the database is too slow", () => {
+  it("answers 503 and keeps the session instead of signing the visitor out", async () => {
+    profileReadFails = true;
+    const response = await updateSession(makeRequest("/home"));
+
+    expect(response.status).toBe(503);
+    expect(response.headers.get("retry-after")).toBe("5");
+    expect(response.headers.get("location")).toBeNull();
+  });
+
+  it("answers 503 JSON for /api/*", async () => {
+    profileReadFails = true;
+    const response = await updateSession(makeRequest("/api/chat", undefined, "POST"));
+
+    expect(response.status).toBe(503);
+    expect(await response.json()).toEqual({ error: "busy" });
   });
 });
