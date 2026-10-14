@@ -3,9 +3,11 @@ import {getLocale} from 'next-intl/server';
 import {notFound, redirect} from 'next/navigation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
 import {ComponentReadinessList} from '@/components/elearning/component-readiness-list';
+import {ComponentRequestManager} from '@/components/elearning/component-request-manager';
 import {getViewer} from '@/lib/auth/viewer';
 import {type ChapterCertifications} from '@/lib/assessor/certifications';
 import {parseComponentReadiness} from '@/lib/assessor/component-readiness';
+import {parseComponentRequestQueue} from '@/lib/assessor/component-requests';
 import {getRequestFeatureFlags} from '@/lib/supabase/request';
 import {createClient} from '@/lib/supabase/server';
 
@@ -74,6 +76,9 @@ export default async function AssessorWorkspace({params,searchParams}:{
     ?await db.rpc('rpc_assessor_component_readiness',{p_program_id:programId,p_bhw_user_id:selected.id})
     :null;
   const readiness=readinessResult&&!readinessResult.error?parseComponentReadiness(readinessResult.data):null;
+  const queueResult=flags.assessor_flow_ui
+    ?await db.rpc('rpc_assessor_component_request_queue',{p_program_id:programId}):null;
+  const queue=queueResult&&!queueResult.error?parseComponentRequestQueue(queueResult.data):null;
   const statusLabel = (value:string) => ({
     not_started:label('Hindi pa nagsimula','Not started'),
     in_progress:label('Nag-aaral','Learning in progress'),
@@ -168,8 +173,10 @@ export default async function AssessorWorkspace({params,searchParams}:{
       <h2 id="assessment-title" className="text-xl font-semibold">{label('Aking gawaing pagtatasa','My assessment work')}</h2>
       {flags.assessor_flow_ui&&<Link prefetch={false} className="mt-3 inline-block min-h-11 content-center underline"
         href={`/training/${programId}/assessor/followups`}>{label('Mga follow-up sa pagsasanay','Practice follow-ups')}</Link>}
-      <p className="mt-2">{label('Wala pang pormal na Chapter 1 assessment queue sa bagong daloy. Ang pagtingin sa roster ay hindi lumilikha ng gawain o pahintulot na mag-assess.',
-        'The new flow has no formal Chapter 1 assessment queue yet. Viewing the roster creates no task or assessment permission.')}</p>
+      {flags.assessor_flow_ui&&(queue?<ComponentRequestManager programId={programId}
+        learnerId={selected?.id??null} readiness={readiness} queue={queue} lang={en?'en':'fil'}/>
+        :<p role="alert" className="mt-2">{label('Hindi mabasa ang mga kahilingan ngayon.','Assessment requests could not be loaded.')}</p>)}
+      {!flags.assessor_flow_ui&&<p className="mt-2">{label('Hindi pa bukas ang bagong daloy ng pagtatasa.','The new assessment flow is not open yet.')}</p>}
       {flags.chapter1_assessment_v2 && <Link prefetch={false} className="mt-3 inline-block underline"
         href={`/courses/${chapter.course_id}/learning-notes/reviewer`}>
         {label('Tingnan ang mga nakatalagang ibinahaging learning note','View assigned shared learning notes')}

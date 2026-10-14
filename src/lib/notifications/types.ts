@@ -3,6 +3,7 @@ export type NotificationType =
   | "survey.published"
   | "course.published"
   | "assessment.decided"
+  | "assessment.arrangement"
   | "forum.reply"
   | "flipchart.reviewed"
   | "user.transferred"

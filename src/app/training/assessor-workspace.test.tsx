@@ -5,7 +5,8 @@ import Workspace from './[programId]/assessor/workspace/page';
 const state=vi.hoisted(()=>({role:'assessor',actual:'assessor',active:true,preview:false,locale:'en',
   rosterError:false,rpc:vi.fn(),learning:true,notes:true,readinessUI:false}));
 vi.mock('server-only',()=>({}));
-vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error(`REDIRECT ${url}`);},notFound:()=>{throw new Error('NOT_FOUND');}}));
+vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error(`REDIRECT ${url}`);},
+  notFound:()=>{throw new Error('NOT_FOUND');},useRouter:()=>({refresh:vi.fn()})}));
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale}));
 vi.mock('@/components/breadcrumbs',()=>({Breadcrumbs:()=>null}));
 vi.mock('@/lib/auth/viewer',()=>({getViewer:async()=>({appUser:{id:'self',role:state.actual,status:state.active?'active':'deactivated'},role:state.role,isPreview:state.preview})}));
@@ -66,6 +67,24 @@ describe('Chapter 1 working area',()=>{
     expect(screen.getByText('Required lessons remain incomplete.')).toBeInTheDocument();
     expect(screen.getByText('An active Chapter 1 assessor award is required.')).toBeInTheDocument();
     expect(screen.queryByRole('link',{name:/start formal assessment/i})).toBeNull();
+  });
+  it('shows an explicit request action and pending claim without a formal outcome action',async()=>{
+    state.readinessUI=true;
+    state.rpc.mockImplementation(async(name:string)=>name==='rpc_assessor_chapter1_workspace'
+      ?{data:{rows:[{id:maria,full_name:'Maria Santos',barangay:'Barangay One',area_id:area,learning_status:'in_progress'}],
+        total:1,page:1,pageSize:20,areas:[],areasTruncated:false},error:null}
+      :name==='rpc_assessor_component_readiness'
+        ?{data:[{moduleId:'module',titleFil:'Bahagi',titleEn:'Component',learnerReady:true,actorAuthorized:true,canArrange:true,
+          learnerBlockers:[],authorityBlockers:[],missingLessonIds:[],staleLessonIds:[],missingTestPhases:[]}],error:null}
+        :name==='rpc_assessor_component_request_queue'
+          ?{data:[{id:'request',moduleId:'module',moduleTitleFil:'Bahagi',moduleTitleEn:'Component',
+            learnerName:'Maria Santos',status:'pending',agreedAt:null,location:null,assignedToMe:false,
+            requestedByMe:true,assignedUnavailable:false}],error:null}
+          :{data:[],error:null});
+    render(await page({learner:maria}));
+    expect(screen.getByRole('button',{name:'Request assessment'})).toBeInTheDocument();
+    expect(screen.getByRole('button',{name:'Claim request'})).toBeInTheDocument();
+    expect(screen.queryByRole('button',{name:/complete assessment|record result/i})).toBeNull();
   });
   it('shows Filipino section labels and an honest empty state',async()=>{
     state.locale='fil';state.rpc.mockImplementation(async(name:string)=>name==='rpc_assessor_chapter1_workspace'
