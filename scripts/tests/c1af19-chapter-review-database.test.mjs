@@ -53,6 +53,13 @@ beforeAll(async()=>{
     create table course_modules(id uuid primary key,course_id uuid,position int,title_fil text,title_en text);
     create table course_lessons(id uuid primary key,module_id uuid,published_revision_id uuid);
     create table course_progress(id uuid primary key,course_id uuid,bhw_user_id uuid,status text default 'in_progress');
+    create table course_sessions(id uuid primary key,course_id uuid,facilitator_user_id uuid,status text);
+    create table course_session_enrollments(id uuid primary key,session_id uuid,bhw_user_id uuid,status text);
+    create table course_session_deliveries(id uuid primary key,session_id uuid,module_id uuid,recorded_by uuid);
+    create table course_session_activities(id uuid primary key,session_id uuid,module_id uuid,recorded_by uuid);
+    create table competency_observations(id uuid primary key,bhw_user_id uuid,observer_user_id uuid,module_id uuid);
+    create table assessor_chapter_qualifications(id uuid primary key,assessor_user_id uuid,chapter_id uuid,
+      status text,status_changed_at timestamptz);
     create table course_lesson_progress(course_progress_id uuid,lesson_id uuid,revision_id uuid);
     create table assessor_flow_cohorts(id uuid primary key,program_id uuid,chapter_key text,
       requirements_version text,ui_enabled boolean,writes_enabled boolean,authority_cutover_at timestamptz);
@@ -71,17 +78,27 @@ beforeAll(async()=>{
     create table certificates(id uuid primary key default gen_random_uuid(),assessment_id uuid references assessments(id),
       course_id uuid,bhw_user_id uuid,verification_code text unique,bhw_full_name_snapshot text,
       course_title_fil_snapshot text,course_title_en_snapshot text,issued_at timestamptz default now());
-    create function assessor_rollout_private.assert_legacy_allowed(p_course uuid,p_subjects uuid[]) returns void
+    create function assessor_rollout_private.assert_legacy_allowed(p_course_id uuid,p_subjects uuid[]) returns void
       language plpgsql security definer set search_path='' as $$ begin
       if exists(select 1 from public.training_program_chapters ch
         join public.assessor_flow_cohorts c on c.program_id=ch.program_id
-        where ch.course_id=p_course and c.authority_cutover_at is not null) then
+        where ch.course_id=p_course_id and c.authority_cutover_at is not null) then
         raise exception 'revised assessor authority required'; end if; end $$;
     create function assessor_rollout_private.legacy_guard() returns trigger
       language plpgsql security definer set search_path='' as $$ begin return new; end $$;
     create trigger assessor_flow_legacy_guard before insert or update or delete on assessments
       for each row execute function assessor_rollout_private.legacy_guard();
     create trigger assessor_flow_legacy_guard before insert or update or delete on certificates
+      for each row execute function assessor_rollout_private.legacy_guard();
+    create trigger assessor_flow_legacy_guard before insert or update or delete on course_sessions
+      for each row execute function assessor_rollout_private.legacy_guard();
+    create trigger assessor_flow_legacy_guard before insert or update or delete on course_session_enrollments
+      for each row execute function assessor_rollout_private.legacy_guard();
+    create trigger assessor_flow_legacy_guard before insert or update or delete on course_session_deliveries
+      for each row execute function assessor_rollout_private.legacy_guard();
+    create trigger assessor_flow_legacy_guard before insert or update or delete on course_session_activities
+      for each row execute function assessor_rollout_private.legacy_guard();
+    create trigger assessor_flow_legacy_guard before insert or update or delete on competency_observations
       for each row execute function assessor_rollout_private.legacy_guard();
     create table learner_assessment_private.releases(id text primary key,status text,
       comparability_status text,program_key text,chapter_key text);
@@ -243,5 +260,107 @@ describe('C1AF-19 exact reassessment and chapter review migration',()=>{
     expect((await db.query('select verification_code from certificates where id=$1',[id(951)])).rows[0].verification_code).toBe('HISTORICAL1');
     expect((await db.query('select status from course_progress where id=$1',[v.progress])).rows[0].status).toBe('certified');
     expect((await as(v.maria,'select rpc_bhw_formal_results($1) result',[v.program])).reviews[0].verificationCode).toBeTruthy();
+  });
+  it('C1AF-20 shares live award scope across legacy writes and closes binary awards',async()=>{
+    await db.exec(readFileSync(new URL('../../supabase/migrations/20261014044033_c1af20_legacy_authorization.sql',import.meta.url),'utf8'));
+    const session=id(970),awaySession=id(971),otherCourse=id(972);
+    expect(await asOwner(v.alex,'select assessor_rollout_private.chapter_write_scope($1,$2,$3) result',
+      [v.course,v.alex,v.maria])).toBe(true);
+    expect(await asOwner(v.alex,'select assessor_rollout_private.chapter_write_scope($1,$2,$3) result',
+      [v.course,v.alex,v.away])).toBe(false);
+    await expect(asOwner(v.other,'insert into course_sessions values($1,$2,$3,$4)',
+      [id(969),v.course,v.alex,'scheduled'])).rejects.toThrow(/session owner required/);
+    await asOwner(v.alex,'insert into course_sessions values($1,$2,$3,$4)',
+      [session,v.course,v.alex,'scheduled']);
+    await asOwner(v.alex,'insert into course_session_enrollments values($1,$2,$3,$4)',
+      [id(973),session,v.maria,'enrolled']);
+    await expect(asOwner(v.alex,'insert into course_session_enrollments values($1,$2,$3,$4)',
+      [id(974),session,v.away,'enrolled'])).rejects.toThrow(/revised assessor authority required/);
+    // Historical or imported rosters must be checked in full on later writes.
+    await db.query('alter table course_session_enrollments disable trigger assessor_flow_legacy_guard');
+    await db.query('insert into course_session_enrollments values($1,$2,$3,$4)',
+      [id(974),session,v.away,'enrolled']);
+    await db.query('alter table course_session_enrollments enable trigger assessor_flow_legacy_guard');
+    await expect(asOwner(v.alex,'insert into course_session_deliveries values($1,$2,$3,$4)',
+      [id(985),session,v.module,v.alex])).rejects.toThrow(/revised assessor authority required/);
+    await db.query('alter table course_session_enrollments disable trigger assessor_flow_legacy_guard');
+    await db.query('delete from course_session_enrollments where id=$1',[id(974)]);
+    await db.query('alter table course_session_enrollments enable trigger assessor_flow_legacy_guard');
+    await asOwner(v.alex,'insert into course_session_deliveries values($1,$2,$3,$4)',
+      [id(975),session,v.module,v.alex]);
+    await asOwner(v.alex,'insert into competency_observations values($1,$2,$3,$4)',
+      [id(976),v.maria,v.alex,v.module]);
+    await expect(asOwner(v.alex,'insert into competency_observations values($1,$2,$3,$4)',
+      [id(977),v.away,v.alex,v.module])).rejects.toThrow(/revised assessor authority required/);
+    await db.query("update assessor_rollout_private.chapter_awards set status='revoked' where actor_id=$1",[v.alex]);
+    await expect(asOwner(v.alex,'insert into course_session_activities values($1,$2,$3,$4)',
+      [id(978),session,v.module,v.alex])).rejects.toThrow(/revised assessor authority required/);
+    await db.query("update assessor_rollout_private.chapter_awards set status='active' where actor_id=$1",[v.alex]);
+    await db.query("update users set status='inactive' where id=$1",[v.maria]);
+    await expect(asOwner(v.alex,'insert into course_session_activities values($1,$2,$3,$4)',
+      [id(979),session,v.module,v.alex])).rejects.toThrow(/revised assessor authority required/);
+    await db.query("update users set status='active' where id=$1",[v.maria]);
+    await db.query('insert into assessor_chapter_qualifications values($1,$2,$3,$4,null)',
+      [id(980),v.alex,v.chapter,'revoked']);
+    await expect(asOwner(v.alex,'insert into course_session_activities values($1,$2,$3,$4)',
+      [id(981),session,v.module,v.alex])).rejects.toThrow(/revised assessor authority required/);
+    await db.query('delete from assessor_chapter_qualifications where id=$1',[id(980)]);
+    await db.query('insert into super_admin_personas values($1)',[v.alex]);
+    await expect(asOwner(v.alex,'insert into course_session_activities values($1,$2,$3,$4)',
+      [id(982),session,v.module,v.alex])).rejects.toThrow(/revised assessor authority required/);
+    await db.query('delete from super_admin_personas where persona_user_id=$1',[v.alex]);
+    await db.query('alter table assessments disable trigger assessor_flow_legacy_guard');
+    await db.query("insert into assessments(id,course_id,bhw_user_id,org_unit_id,status) values($1,$2,$3,$4,'pending')",
+      [id(983),v.course,v.maria,v.org]);
+    await db.query('alter table assessments enable trigger assessor_flow_legacy_guard');
+    await expect(asOwner(v.alex,"update assessments set status='assigned',assessor_user_id=$1 where id=$2",
+      [v.alex,id(983)])).rejects.toThrow(/Chapter 1 decision requires formal review/);
+    await expect(asOwner(v.alex,"update assessments set status='passed' where id=$1",
+      [id(983)])).rejects.toThrow(/Chapter 1 decision requires formal review/);
+    await expect(asOwner(v.alex,"insert into certificates(id,assessment_id,course_id,bhw_user_id) values($1,$2,$3,$4)",
+      [id(984),id(983),v.course,v.maria])).rejects.toThrow(/Chapter 1 decision requires formal review/);
+    await expect(asOwner(v.alex,"update course_progress set status='failed_assessment' where id=$1",
+      [v.progress])).rejects.toThrow(/Chapter 1 progress requires formal review/);
+    await expect(asOwner(v.alex,"update course_progress set status='in_progress' where id=$1",
+      [v.progress])).rejects.toThrow(/Chapter 1 progress requires formal review/);
+    await expect(asOwner(v.alex,'update course_progress set course_id=$1 where id=$2',
+      [otherCourse,v.progress])).rejects.toThrow(/Chapter 1 progress binding is immutable/);
+    await db.query("insert into courses values($1,'published','Gabay','Gabay')",[otherCourse]);
+    await asOwner(v.alex,'insert into course_sessions values($1,$2,$3,$4)',
+      [awaySession,otherCourse,v.alex,'scheduled']);
+    await asOwner(v.alex,"insert into assessments(id,course_id,bhw_user_id,org_unit_id,status) values($1,$2,$3,$4,'pending')",
+      [id(988),otherCourse,v.maria,v.org]);
+    await asOwner(v.alex,"update assessments set status='passed',assessor_user_id=$1 where id=$2",
+      [v.alex,id(988)]);
+    await asOwner(v.alex,"insert into certificates(id,assessment_id,course_id,bhw_user_id,verification_code) values($1,$2,$3,$4,'GABAY1')",
+      [id(989),id(988),otherCourse,v.maria]);
+    const learner=id(986),progress=id(987);
+    await db.query("insert into users values($1,'bhw','active',$2,'Second learner')",[learner,v.org]);
+    await db.query('insert into assessor_flow_cohort_members values($1,$2)',[v.cohort,learner]);
+    await db.query('insert into course_progress values($1,$2,$3)',[progress,v.course,learner]);
+    await db.query('insert into course_lesson_progress values($1,$2,$3),($1,$4,$5)',
+      [progress,v.lesson,v.revision,v.otherLesson,v.otherRevision]);
+    for(const [module,criterion,key] of [[v.module,'clarify',990],[v.otherModule,'refer',1000]]){
+      const req=await create(v.alex,id(key),learner,module);
+      await claim(v.alex,req,id(key+1));
+      await arrange(v.alex,req,id(key+2));
+      const att=await as(v.alex,'select rpc_assessor_formal_start($1,$2) result',[id(key+3),req]);
+      if(key===990){
+        await db.query("update assessor_rollout_private.chapter_awards set status='revoked' where actor_id=$1",[v.alex]);
+        await expect(as(v.alex,'select rpc_assessor_formal_save($1,0,$2::jsonb) result',
+          [att,JSON.stringify(criterionEvidence(criterion))])).rejects.toThrow(/unavailable/);
+        await db.query("update assessor_rollout_private.chapter_awards set status='active' where actor_id=$1",[v.alex]);
+      }
+      await as(v.alex,'select rpc_assessor_formal_save($1,0,$2::jsonb) result',
+        [att,JSON.stringify(criterionEvidence(criterion))]);
+      await as(v.alex,'select rpc_assessor_formal_submit($1,$2,1) result',[id(key+4),att]);
+      await release(att,id(key+5));
+    }
+    const issued=await as(v.alex,'select rpc_assessor_chapter_review_decide($1,$2,$3,$4,$5) result',
+      [id(1010),v.program,learner,'Napatunayan ang lahat ng bahagi ng kabanata.',
+        'All chapter components have been verified.']);
+    expect(issued).toBeTruthy();
+    expect((await db.query('select status from course_progress where id=$1',[progress])).rows[0].status).toBe('certified');
+    expect((await db.query('select count(*)::int n from certificates')).rows[0].n).toBe(4);
   });
 });
