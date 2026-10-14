@@ -326,6 +326,10 @@ describe('C1AF-19 exact reassessment and chapter review migration',()=>{
     await expect(asOwner(v.alex,'update course_progress set course_id=$1 where id=$2',
       [otherCourse,v.progress])).rejects.toThrow(/Chapter 1 progress binding is immutable/);
     await db.query("insert into courses values($1,'published','Gabay','Gabay')",[otherCourse]);
+    await db.query("insert into course_modules values($1,$2,0,'Gabay bahagi','Gabay component')",
+      [id(995),otherCourse]);
+    await expect(asOwner(v.alex,'insert into course_session_activities values($1,$2,$3,$4)',
+      [id(996),session,id(995),v.alex])).rejects.toThrow(/session module must belong to course/);
     await asOwner(v.alex,'insert into course_sessions values($1,$2,$3,$4)',
       [awaySession,otherCourse,v.alex,'scheduled']);
     await asOwner(v.alex,"insert into assessments(id,course_id,bhw_user_id,org_unit_id,status) values($1,$2,$3,$4,'pending')",

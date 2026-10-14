@@ -159,6 +159,9 @@ begin
       if tg_table_name in ('course_session_deliveries','course_session_activities')
         and (v_row->>'recorded_by')::uuid is distinct from v_actor
         then raise exception 'session recorder required'; end if;
+      if tg_table_name in ('course_session_deliveries','course_session_activities')
+        and v_module_course is distinct from v_course
+        then raise exception 'session module must belong to course'; end if;
       if tg_table_name='assessor_chapter_qualifications'
         then raise exception 'Chapter 1 qualification requires reviewed award'; end if;
     end if;
