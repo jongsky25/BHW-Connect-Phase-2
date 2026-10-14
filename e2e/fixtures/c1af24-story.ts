@@ -164,12 +164,15 @@ export async function rehearseChapterOne({page,request,browser,localSql,cityToke
       p_program_id:program,p_bhw_user_id:learner.id});
     expect(ready.suggestedOutcome).toBe('complete');
     await page.setViewportSize({width:1440,height:960});
-    await page.goto(`/training/${program}/assessor/review?learner=${learner.id}`);
-    await expect(page.getByText('Kasalukuyang resulta:')).toContainText('Kumpleto');
+    const reviewPage=await page.goto(`/training/${program}/assessor/review?learner=${learner.id}`);
+    expect(reviewPage?.status()).toBe(200);
+    await expect(page.getByRole('heading',{name:/Pagsusuri ng Kabanata 1|Chapter 1 review/}).first()).toBeVisible();
+    await expect(page.locator('p').filter({hasText:/Kasalukuyang resulta:|Current outcome:/}))
+      .toContainText(/Kumpleto|Complete/);
     await page.getByRole('textbox',{name:'Buod sa Filipino'}).last().fill('Natapos ang siyam na bahagi batay sa bagong ebidensiya.');
     await page.getByRole('textbox',{name:'Summary in English'}).last().fill('All nine components are complete with fresh evidence.');
-    await page.getByRole('button',{name:'Ilabas ang pagsusuri ng Kabanata 1'}).click();
-    await expect(page.getByText('May naitalang isang sertipiko ng Kabanata 1.')).toBeVisible();
+    await page.getByRole('button',{name:/Ilabas ang pagsusuri ng Kabanata 1|Release Chapter 1 review/}).click();
+    await expect(page.getByText(/May naitalang isang sertipiko ng Kabanata 1|One Chapter 1 certificate is recorded/)).toBeVisible();
     await learnerPage.reload();
     await expect(learnerPage.getByRole('link',{name:'Tingnan ang sertipiko'})).toBeVisible();
     await learnerPage.getByRole('link',{name:'Tingnan ang sertipiko'}).click();
