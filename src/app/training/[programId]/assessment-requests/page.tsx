@@ -22,7 +22,8 @@ export default async function AssessmentRequestsPage({params}:{params:Promise<{p
   const status=(value:string)=>({pending:pick('Naghihintay ng assessor','Waiting for an assessor'),
     assigned:pick('May nakatalagang assessor','Assessor assigned'),
     arranged:pick('May napagkasunduang pagtatasa','Assessment arranged'),
-    cancelled:pick('Kinansela','Cancelled'),released:pick('Ibinalik sa queue','Claim released')})[value as 'pending'|'assigned'|'arranged'|'cancelled'|'released'];
+    assessed:pick('Naitala ang pagtatasa; naghihintay ng paglabas ng resulta','Assessment recorded; outcome pending release'),
+    cancelled:pick('Kinansela','Cancelled'),released:pick('Ibinalik sa queue','Claim released')})[value as 'pending'|'assigned'|'arranged'|'assessed'|'cancelled'|'released'];
   return <main className="mx-auto flex w-full max-w-3xl flex-col gap-5 px-4 py-8 sm:px-6">
     <Link prefetch={false} href={`/training/${programId}/chapter-1`} className="min-h-11 w-fit content-center underline">{pick('Bumalik sa Kabanata 1','Back to Chapter 1')}</Link>
     <header><h1 className="text-2xl font-semibold">{pick('Aking mga kahilingan sa pagtatasa','My assessment requests')}</h1>

@@ -1,6 +1,7 @@
 'use client';
 
 import {useRouter} from 'next/navigation';
+import Link from 'next/link';
 import {useRef,useState,type FormEvent} from 'react';
 import {createClient} from '@/lib/supabase/client';
 import {type ComponentReadiness} from '@/lib/assessor/component-readiness';
@@ -26,7 +27,7 @@ function RequestButton({programId,learnerId,moduleId,lang}:{programId:string;lea
     {message&&<p role="status" className="mt-2 text-sm">{message}</p>}</div>;
 }
 
-function QueueAction({item,lang}:{item:ComponentRequestQueueItem;lang:Lang}){
+function QueueAction({item,lang,programId}:{item:ComponentRequestQueueItem;lang:Lang;programId:string}){
   const router=useRouter();const key=useRef<string|null>(null);const lastAction=useRef<string|null>(null);
   const [date,setDate]=useState('');const [location,setLocation]=useState(item.location??'');
   const [note,setNote]=useState('');const [busy,setBusy]=useState(false);const [message,setMessage]=useState('');
@@ -50,6 +51,10 @@ function QueueAction({item,lang}:{item:ComponentRequestQueueItem;lang:Lang}){
     finally{setBusy(false);}
   }
   return <div className="mt-3 space-y-3">
+    {item.assignedToMe&&item.status==='arranged'&&<Link prefetch={false}
+      href={`/training/${programId}/assessor/formal?request=${item.id}`}
+      className="inline-block min-h-11 content-center rounded bg-primary px-4 text-on-primary">
+      {en?'Open formal assessment':'Buksan ang pormal na pagtatasa'}</Link>}
     {item.status==='pending'&&<div className="flex flex-wrap gap-3">
       <button disabled={busy} onClick={()=>act('claim')} className="min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">{en?'Claim request':'Akuin ang kahilingan'}</button>
       {item.requestedByMe&&<button disabled={busy} onClick={()=>act('cancel')} className="min-h-11 underline disabled:opacity-50">{en?'Cancel request':'Kanselahin ang kahilingan'}</button>}
@@ -89,7 +94,7 @@ export function ComponentRequestManager({programId,learnerId,readiness,queue,lan
         <p className="text-sm">{item.status==='pending'?(en?'Pending claim':'Naghihintay ng assessor')
           :item.status==='arranged'?(en?'Arranged':'May kasunduan'):(en?'Claimed':'May assessor')}</p>
         {item.agreedAt&&<p className="text-sm">{new Date(item.agreedAt).toLocaleString(en?'en-PH':'fil-PH')}{item.location&&` · ${item.location}`}</p>}
-        <QueueAction item={item} lang={lang}/>
+        <QueueAction item={item} lang={lang} programId={programId}/>
       </li>)}</ul>}
     <p className="text-sm text-ink/70">{en?'Claiming or scheduling does not complete a formal assessment.':'Ang pag-ako o pag-iskedyul ay hindi pagkumpleto ng pormal na pagtatasa.'}</p>
   </div>;
