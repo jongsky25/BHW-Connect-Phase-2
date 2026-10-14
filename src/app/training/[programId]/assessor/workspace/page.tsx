@@ -2,8 +2,10 @@ import Link from 'next/link';
 import {getLocale} from 'next-intl/server';
 import {notFound, redirect} from 'next/navigation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
+import {ComponentReadinessList} from '@/components/elearning/component-readiness-list';
 import {getViewer} from '@/lib/auth/viewer';
 import {type ChapterCertifications} from '@/lib/assessor/certifications';
+import {parseComponentReadiness} from '@/lib/assessor/component-readiness';
 import {getRequestFeatureFlags} from '@/lib/supabase/request';
 import {createClient} from '@/lib/supabase/server';
 
@@ -68,6 +70,10 @@ export default async function AssessorWorkspace({params,searchParams}:{
   const award = records.find(record => record.chapterKey === 'chapter-1')?.awards[0];
   const selected = query.learner && uuid.test(query.learner)
     ? roster?.rows.find(row => row.id === query.learner) : undefined;
+  const readinessResult=selected&&flags.assessor_flow_ui
+    ?await db.rpc('rpc_assessor_component_readiness',{p_program_id:programId,p_bhw_user_id:selected.id})
+    :null;
+  const readiness=readinessResult&&!readinessResult.error?parseComponentReadiness(readinessResult.data):null;
   const statusLabel = (value:string) => ({
     not_started:label('Hindi pa nagsimula','Not started'),
     in_progress:label('Nag-aaral','Learning in progress'),
@@ -141,6 +147,12 @@ export default async function AssessorWorkspace({params,searchParams}:{
             {lessonHref(href({learner:selected.id})) && <Link prefetch={false} className="mt-3 mr-4 inline-block underline" href={lessonHref(href({learner:selected.id}))!}>{label('Ihanda ang aralin 1.6.2 kasama ang kontekstong ito','Prepare lesson 1.6.2 with this context')}</Link>}
             <Link prefetch={false} className="mt-3 inline-block underline" href={href({learner:null})}>{label('Bumalik sa listahan','Back to list')}</Link>
           </aside>}
+          {selected&&flags.assessor_flow_ui&&<section className="mt-4 rounded-md border border-ink/20 p-4" aria-label={label('Kahandaan ng mga bahagi','Component readiness')}>
+            <h3 className="text-lg font-semibold">{label('Kahandaan ni','Readiness for')} {selected.full_name}</h3>
+            {readiness?<ComponentReadinessList components={readiness} lang={en?'en':'fil'}/>
+              :<p role="alert" className="mt-2">{label('Hindi mabasa ang kahandaan ngayon. Subukang muli.',
+                'Readiness could not be loaded. Try again.')}</p>}
+          </section>}
           <ul className="mt-4 divide-y rounded-md border border-ink/15">{roster.rows.map(row => <li key={row.id} className="flex flex-wrap items-center justify-between gap-3 p-4">
             <div><p className="font-medium">{row.full_name} · {row.barangay}</p><p className="text-sm text-ink/70">{statusLabel(row.learning_status)}</p></div>
             <Link prefetch={false} className="min-h-11 content-center underline" href={href({learner:row.id})}>{label('Tingnan','View')}</Link>
