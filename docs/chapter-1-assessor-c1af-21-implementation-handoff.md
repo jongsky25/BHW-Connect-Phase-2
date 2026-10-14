@@ -1,0 +1,19 @@
+# C1AF-21 implementation handoff — overall award eligibility and issuance
+
+## Bounded scope
+
+This PR starts from `main` at `a169e78e` (C1AF-20b). It adds a private, versioned overall award contract for one recognized program instance. The contract pins exactly `chapter-1`, `chapter-2`, and `chapter-3` to a specific chapter award type and version: a revised combined award names its requirements and chapter award-rule versions; a legacy chapter qualification names its curriculum, rubric, and orientation versions. Contract installation and enablement are separate reviewed release decisions. This migration installs **no contract**, enables no feature flag or cohort, changes no Chapter 1 permission, and creates no production award.
+
+An overall award stores the actor, program, rule version, issue time, and three immutable source references. The issuer checks one active, compatible source for each distinct chapter in the same published program, requires all three chapters and courses to be available and published, and refuses any suspended or revoked source for that chapter. The final qualifying chapter insert calls the issuer within its transaction. The actor row lock and unique actor/program/rule key serialize final completions and retries. Earlier eligible records require the explicit `rpc_assessor_overall_award_ensure` mutation; a state read never issues. A repeated recovery returns the existing ID and cannot reactivate a suspended or revoked overall award.
+
+Current status is computed from the pinned source records and current rule. An underlying suspension or revocation makes the overall award noncurrent while leaving the other chapter awards independent. A revised chapter's own `certificate_current_status` of `update_required` blocks overall issuance and current validity. A newer overall rule makes the historical overall award `update_required`. A missing or unpublished chapter makes it `unavailable`. An explicit overall status takes precedence and is never cleared by restoring a chapter source. The owner state RPC exposes only IDs, rule versions, issue times, and statuses; C1AF-22 owns certificate output and verification.
+
+## Verification
+
+`scripts/tests/c1af21-overall-award-database.test.mjs` applies the exact migration to an isolated PGlite schema. Synthetic fixtures cover no contract; zero, one, two, and three qualifying chapters; automatic final-insert issuance; explicit recovery and repeated recovery; duplicate Chapter 2, wrong actor/program/version, unavailable Chapter 3; underlying and explicit overall status changes; revised chapter update-required status; new overall rule; actor-scoped reads; and malformed rules. The database lock order plus the unique constraint supply the concurrent final-completion invariant. The local full-stack replay could not finish because the Postgres Docker image exhausted the workspace disk during extraction; PR CI must replay the migration against its disposable Supabase stack before merge. No test writes to the pilot.
+
+## Release boundary and next increment
+
+At approved merge, follow `docs/deploy-runbook.md`: check pilot health and Disk IO, apply this single migration once, squash merge, and allow Vercel's Git integration to deploy `main`. Confirm the migration is present and the pilot's overall contracts, awards, and source rows are empty. Recheck Chapter 1 simulation and global/cohort write and award gates, cutover, and the existing component/request/attempt/review emptiness. Smoke the live login and protected routes. There is no policy approval, production Chapter 3 pathway, synthetic credential, or activation in this PR.
+
+C1AF-22 is next: all-three progress, an overall certificate view/PDF/verification, and links to the three chapter awards, with current status and scope communicated consistently. Actual overall awards remain unavailable until all three real chapter certification pathways and a compatible overall rule are reviewed and enabled.
