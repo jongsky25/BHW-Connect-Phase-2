@@ -3,6 +3,7 @@
 import {useRef, useState} from 'react';
 import lessonRubric from '../../../content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/competency.json';
 import {chapterComponents, modelNote, practiceFacts, preparation, simulationStory, storyScenes, type StoryText} from '../../lib/assessor/simulation-storyboard';
+import {chapter1Terms,checkpointParity} from '../../lib/assessor/chapter1-workflow-parity';
 
 /** Review-only component, mounted by the local fixture. No app route, storage, identity or RPC. */
 export function AssessorSimulationStoryboard() {
@@ -21,6 +22,7 @@ export function AssessorSimulationStoryboard() {
   const text = (value: StoryText) => value[locale];
   const label = (en: string, fil: string) => locale === 'en' ? en : fil;
   const current = storyScenes[index];
+  const parity = checkpointParity[current.id as keyof typeof checkpointParity];
   const complete = (id: string) => storyScenes.find(s => s.id === id)!.choices.some(c => c.correct && (attempts[id] ?? []).includes(c.id));
   const count = storyScenes.filter(s => complete(s.id)).length;
   const last = current.choices.find(c => c.id === attempts[current.id]?.at(-1));
@@ -61,11 +63,15 @@ export function AssessorSimulationStoryboard() {
     <p>{label('Local review checklist', 'Lokal na checklist ng review')}: {count}/{storyScenes.length}. {label('Scene navigation does not complete checkpoints.', 'Hindi natatapos ang checkpoints sa paglipat lamang ng scene.')}</p>
     <section aria-labelledby="story-scene-title">
       <h2 ref={heading} tabIndex={-1} id="story-scene-title">{index + 1}. {text(current.title)}</h2>
-      <p className="notice">{label('Fictional screen adapter — illustrates a planned workflow, not a live platform screen.', 'Kathang-isip na screen adapter — nagpapakita ng planong workflow, hindi live na platform screen.')}</p>
+      <p className="notice">{label('Fictional screen adapter. The working flow below describes current screens; no real learner data is opened here.', 'Kathang-isip na screen adapter. Inilalarawan sa ibaba ang kasalukuyang working flow; walang tunay na learner data na binubuksan dito.')}</p>
+      <section aria-label={label('Current working flow','Kasalukuyang working flow')}>
+        <h3>{text(parity.surface)}</h3><p>{text(parity.state)}</p>
+        <p>{label('Controls and fields:','Mga control at field:')} {parity.actions.map(action=>text(action)).join(' → ')}</p>
+      </section>
       <p className="evidence">{text(current.evidence)}</p>
       {needsGuide && <section aria-label={label('Preparation views', 'Mga view sa paghahanda')}>
-        <button type="button" aria-pressed={guide === 'guide'} onClick={() => {setGuide('guide'); setGuideVisited(true); if (learnerVisited) setReturned(true);}}>{label('Open guide / return to guide', 'Buksan ang gabay / bumalik sa gabay')}</button>
-        <button type="button" disabled={!guideVisited} aria-pressed={guide === 'learner'} onClick={() => {setGuide('learner'); setLearnerVisited(true);}}>{label('Switch to Maria’s view', 'Lumipat sa view ni Maria')}</button>
+        <button type="button" aria-pressed={guide === 'guide'} onClick={() => {setGuide('guide'); setGuideVisited(true); if (learnerVisited) setReturned(true);}}>{label('Open / return to Prepare', 'Buksan / bumalik sa Ihanda')}</button>
+        <button type="button" disabled={!guideVisited} aria-pressed={guide === 'learner'} onClick={() => {setGuide('learner'); setLearnerVisited(true);}}>{text(chapter1Terms.bhwView)}</button>
         {guide === 'guide' && <p>{text(preparation.guide)}</p>}
         {guide === 'learner' && <p>{text(preparation.learner)}</p>}
       </section>}
@@ -81,7 +87,7 @@ export function AssessorSimulationStoryboard() {
       {needsEvidence && <fieldset>
         <legend>{label('Select the observed facts, including the prompt', 'Piliin ang nasaksihang katotohanan, kasama ang prompt')}</legend>
         {practiceFacts.map((fact, i) => <label className="fact" key={i}><input type="checkbox" checked={facts.includes(i)} onChange={event => setFacts(previous => event.target.checked ? [...previous, i] : previous.filter(value => value !== i))} />{text(fact)}</label>)}
-        <label htmlFor="private-story-note">{label('Private practice note — fictional information only', 'Pribadong practice note — kathang-isip na impormasyon lamang')}</label>
+        <label htmlFor="private-story-note">{label('Fictional observed facts note — no real learner details', 'Kathang-isip na tala ng nasaksihan — walang tunay na detalye ng BHW')}</label>
         <textarea id="private-story-note" maxLength={1200} value={note} onChange={event => setNote(event.target.value)} />
         <details><summary>{label('Compare with a model note', 'Ihambing sa modelong tala')}</summary><p>{text(modelNote)}</p></details>
         <p>{label('The check requires selected facts and a nonempty note; it does not judge the meaning or quality of your writing. Compare your note with the model.', 'Kailangan sa check ang napiling katotohanan at talang may laman; hindi nito hinuhusgahan ang kahulugan o kalidad ng iyong sulat. Ihambing ang tala sa modelo.')}</p>

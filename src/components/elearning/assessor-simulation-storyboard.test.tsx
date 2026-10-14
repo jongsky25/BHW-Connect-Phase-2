@@ -13,9 +13,9 @@ describe('local Maria storyboard', () => {
     go(1);
     fireEvent.click(screen.getByRole('button', {name: storyScenes[1].choices[0].text.en}));
     expect(screen.getByRole('status')).toHaveTextContent('First inspect');
-    fireEvent.click(screen.getByRole('button', {name: 'Open guide / return to guide'}));
-    fireEvent.click(screen.getByRole('button', {name: 'Switch to Maria’s view'}));
-    fireEvent.click(screen.getByRole('button', {name: 'Open guide / return to guide'}));
+    fireEvent.click(screen.getByRole('button', {name: 'Open / return to Prepare'}));
+    fireEvent.click(screen.getByRole('button', {name: 'Show BHW presentation'}));
+    fireEvent.click(screen.getByRole('button', {name: 'Open / return to Prepare'}));
     fireEvent.click(screen.getByRole('button', {name: storyScenes[1].choices[0].text.en}));
     expect(screen.getByRole('status')).toHaveTextContent('Checkpoint reviewed');
     go(3);
@@ -44,9 +44,9 @@ describe('local Maria storyboard', () => {
     for (let i = 0; i < storyScenes.length; i++) {
       go(i, locale);
       if (i === 1) {
-        const guide = locale === 'en' ? 'Open guide / return to guide' : 'Buksan ang gabay / bumalik sa gabay';
+        const guide = locale === 'en' ? 'Open / return to Prepare' : 'Buksan / bumalik sa Ihanda';
         fireEvent.click(screen.getByRole('button', {name: guide}));
-        fireEvent.click(screen.getByRole('button', {name: locale === 'en' ? 'Switch to Maria’s view' : 'Lumipat sa view ni Maria'}));
+        fireEvent.click(screen.getByRole('button', {name: locale === 'en' ? 'Show BHW presentation' : 'Ipakita sa BHW'}));
         fireEvent.click(screen.getByRole('button', {name: guide}));
       }
       if (i === 3) {

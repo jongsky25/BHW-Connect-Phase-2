@@ -51,10 +51,10 @@ these draft identifiers are not inserted into the live requirements registry.
 | `chapter-gap` | Identify missing 1.9 and arrange its evidence; no chapter award | Chapter review; C1AF-19 |
 | `final-review` | Inspect separately labelled complete fixture; SAMPLE only | Chapter decision/certificate preview; C1AF-19 |
 
-All screen adapters are explicitly fictional. They illustrate planned actions, not
-parity with screens already delivered. C1AF-20b must compare each adapter's fields,
-labels, evidence states, privacy, error recovery, prerequisites and outcomes with
-the eventual real workflow, including changed authority between opening and saving.
+All screen adapters are explicitly fictional. C1AF-20b compares their fields,
+labels, evidence states, privacy, prerequisites and outcomes with the delivered
+working flow; see [the parity handoff](chapter-1-assessor-c1af-20b-implementation-handoff.md).
+The real server still rechecks changed authority between opening and saving.
 No simulation choice calls a production mutation or changes fixture eligibility
 outside the supplied narrative. The updated eligible state and complete chapter
 record are explicit author-supplied assumptions, never automatic upgrades.

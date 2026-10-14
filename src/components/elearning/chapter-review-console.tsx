@@ -4,6 +4,7 @@ import {useRouter} from 'next/navigation';
 import {useRef,useState} from 'react';
 import {type ChapterReviewComponent,type ChapterReviewState} from '@/lib/assessor/chapter-review';
 import {createClient} from '@/lib/supabase/client';
+import {chapter1Terms} from '@/lib/assessor/chapter1-workflow-parity';
 
 const field='min-h-11 w-full rounded border border-ink/30 bg-canvas px-3 py-2';
 const outcomeText=(value:string,en:boolean)=>({
@@ -124,7 +125,7 @@ export function ChapterReviewConsole({state,lang}:{state:ChapterReviewState;lang
       <ComponentActions item={item} en={en}/>
     </section>)}
     <section className="rounded-xl border border-primary/30 p-5">
-      <h2 className="text-lg font-semibold">{en?'Final Chapter 1 review':'Pinal na pagsusuri ng Kabanata 1'}</h2>
+      <h2 className="text-lg font-semibold">{chapter1Terms.review[lang]}</h2>
       <p className="mt-2">{en?'Current outcome:':'Kasalukuyang resulta:'} <strong>{outcomeText(state.suggestedOutcome,en)}</strong></p>
       <p className="mt-2 text-sm">{en?'The server recalculates this from all components when you release the review. Insufficient evidence stays pending; practice needs do not count as a pass.':
         'Muling susuriin ng server ang lahat ng bahagi sa paglabas ng pasya. Ang kulang na ebidensya ay pending; ang kailangan ng pagsasanay ay hindi pass.'}</p>
@@ -142,7 +143,7 @@ export function ChapterReviewConsole({state,lang}:{state:ChapterReviewState;lang
             onChange={event=>{setEnglish(event.target.value);key.current=null;}}/></label>
         <button disabled={busy||fil.trim().length<10||english.trim().length<10} onClick={decide}
           className="mt-3 min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">
-          {en?'Release Chapter 1 review':'Ilabas ang pagsusuri ng Kabanata 1'}</button>
+          {chapter1Terms.release[lang]}</button>
       </div>}
       {!state.canDecide&&<p className="mt-3 text-sm">{en?'Review is not available until at least one formal attempt and current authority are present.':
         'Hindi pa maaaring magpasya hangga’t walang pormal na pagtatasa at kasalukuyang pahintulot.'}</p>}

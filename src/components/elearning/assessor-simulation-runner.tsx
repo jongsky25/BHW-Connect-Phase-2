@@ -4,9 +4,10 @@ import {useRef,useState} from 'react';
 import {createClient} from '@/lib/supabase/client';
 import {parseSimulationState,type SimulationState,type SimulationAction} from '@/lib/assessor/simulation-runner';
 import {storyScenes,preparation,practiceFacts,modelNote,chapterComponents,type StoryText} from '@/lib/assessor/simulation-storyboard';
+import {chapter1Terms,checkpointParity} from '@/lib/assessor/chapter1-workflow-parity';
 import lessonRubric from '../../../content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/competency.json';
 
-export function AssessorSimulationRunner({initial,locale:initialLocale,chapterHref}:{initial:SimulationState;locale:string;chapterHref:string}) {
+export function AssessorSimulationRunner({initial,locale:initialLocale,chapterHref,workspaceHref}:{initial:SimulationState;locale:string;chapterHref:string;workspaceHref:string}) {
  const [state,setState]=useState(initial);
  const [locale,setLocale]=useState<'en'|'fil'>(initialLocale==='en'?'en':'fil');
  const [index,setIndex]=useState(Math.min(initial.next,10));
@@ -19,6 +20,7 @@ export function AssessorSimulationRunner({initial,locale:initialLocale,chapterHr
  const pending=useRef(false);
  const heading=useRef<HTMLHeadingElement>(null);
  const current=storyScenes[index];
+ const parity=checkpointParity[current.id as keyof typeof checkpointParity];
  const label=(en:string,fil:string)=>locale==='en'?en:fil;
  const text=(value:StoryText)=>value[locale];
  const needsGuide=current.id==='prepare';
@@ -56,12 +58,17 @@ export function AssessorSimulationRunner({initial,locale:initialLocale,chapterHr
   <nav aria-label={label('Checkpoints','Mga checkpoint')} className="flex flex-wrap gap-2">{storyScenes.map((s,i)=><button className={button} key={s.id} disabled={busy||i>state.next} aria-current={i===index?'step':undefined} onClick={()=>navigate(i)}>{i+1}. {text(s.title)}{i<state.next?' ✓':''}</button>)}</nav>
   <section className="space-y-4" aria-labelledby="runner-scene">
    <h2 id="runner-scene" ref={heading} tabIndex={-1} className="text-xl font-semibold">{index+1}. {text(current.title)}</h2>
-   <p>{label('Fictional screen adapter — planned workflow, not a live learner screen.','Kathang-isip na screen adapter — planong workflow, hindi live na learner screen.')}</p>
+   <p>{label('Fictional screen adapter. The working flow below describes current screens; no real learner data is opened here.','Kathang-isip na screen adapter. Inilalarawan sa ibaba ang kasalukuyang working flow; walang tunay na learner data na binubuksan dito.')}</p>
+   <aside className="rounded-xl border border-primary/30 bg-primary/5 p-4" aria-label={label('Current working flow','Kasalukuyang working flow')}>
+    <h3 className="font-semibold">{text(parity.surface)}</h3>
+    <p className="mt-2 text-sm">{text(parity.state)}</p>
+    <p className="mt-2 text-sm"><strong>{label('Controls and fields:','Mga control at field:')}</strong> {parity.actions.map(action=>text(action)).join(' → ')}</p>
+   </aside>
    <p>{text(current.evidence)}</p>
    {needsGuide&&<section aria-label={label('Preparation views','Mga preparation view')}>
-    <button className={button} disabled={busy||!editable||state.viewStep===2||state.viewStep===3} onClick={()=>void request({type:'view',value:'guide'})}>{label('Open guide','Buksan ang gabay')}</button>
-    <button className={button} disabled={busy||!editable||state.viewStep!==1} onClick={()=>void request({type:'view',value:'learner'})}>{label('Switch to Maria’s view','Lumipat sa view ni Maria')}</button>
-    <button className={button} disabled={busy||!editable||state.viewStep!==2} onClick={()=>void request({type:'view',value:'return'})}>{label('Return to guide','Bumalik sa gabay')}</button>
+    <button className={button} disabled={busy||!editable||state.viewStep===2||state.viewStep===3} onClick={()=>void request({type:'view',value:'guide'})}>{label('Open Prepare','Buksan ang Ihanda')}</button>
+    <button className={button} disabled={busy||!editable||state.viewStep!==1} onClick={()=>void request({type:'view',value:'learner'})}>{text(chapter1Terms.bhwView)}</button>
+    <button className={button} disabled={busy||!editable||state.viewStep!==2} onClick={()=>void request({type:'view',value:'return'})}>{label('Back to Prepare','Bumalik sa Ihanda')}</button>
     {guide==='guide'&&<p>{text(preparation.guide)}</p>}{guide==='learner'&&<p>{text(preparation.learner)}</p>}
    </section>}
       {(needsGuide && guide === 'guide' || needsEvidence || current.id === 'formal') && <section aria-label={label('Source lesson criterion', 'Source criterion ng aralin')}>
@@ -76,7 +83,7 @@ export function AssessorSimulationRunner({initial,locale:initialLocale,chapterHr
       {needsEvidence && <fieldset disabled={busy||!editable}>
         <legend>{label('Select the observed facts, including the prompt', 'Piliin ang nasaksihang katotohanan, kasama ang prompt')}</legend>
         {practiceFacts.map((fact, i) => <label className="flex min-h-11 items-start gap-3 py-2" key={i}><input type="checkbox" checked={facts.includes(i)} onChange={event => setFacts(previous => event.target.checked ? [...previous, i] : previous.filter(value => value !== i))} />{text(fact)}</label>)}
-        <label htmlFor="private-story-note">{label('Private practice note — fictional information only', 'Pribadong practice note — kathang-isip na impormasyon lamang')}</label>
+        <label htmlFor="private-story-note">{label('Fictional observed facts note — no real learner details', 'Kathang-isip na tala ng nasaksihan — walang tunay na detalye ng BHW')}</label>
         <textarea className="block min-h-28 w-full rounded border border-ink/30 p-3" id="private-story-note" maxLength={1200} value={note} onChange={event => setNote(event.target.value)} />
         <details><summary>{label('Compare with a model note', 'Ihambing sa modelong tala')}</summary><p>{text(modelNote)}</p></details>
         <p>{label('The check requires selected facts and a nonempty note; it does not judge the meaning or quality of your writing. Compare your note with the model.', 'Kailangan sa check ang napiling katotohanan at talang may laman; hindi nito hinuhusgahan ang kahulugan o kalidad ng iyong sulat. Ihambing ang tala sa modelo.')}</p>
@@ -104,6 +111,7 @@ export function AssessorSimulationRunner({initial,locale:initialLocale,chapterHr
    {state.receipt&&<p role="status">{label('Personal familiarization completion recorded. Revised certification remains unavailable. Existing qualifications and their status are unchanged.','Naitala ang pagkumpleto ng sariling pagsasanay. Hindi pa available ang revised certification. Hindi nagbabago ang umiiral na kwalipikasyon at katayuan nito.')} {state.receipt.completedAt}</p>}
    {state.next===11&&state.receipt&&<button className={button} disabled={busy} onClick={()=>void request({type:'replay'})}>{label('Replay without resetting completion','Ulitin nang hindi binubura ang completion')}</button>}
    <Link prefetch={false} href={chapterHref} className="block underline">{label('Return to my preparation and current next step','Bumalik sa aking paghahanda at kasalukuyang susunod na hakbang')}</Link>
+   {state.receipt&&<Link prefetch={false} href={workspaceHref} className="block underline">{label('Open the real Chapter 1 working area — current authority will be checked','Buksan ang tunay na working area ng Kabanata 1 — susuriin ang kasalukuyang awtoridad')}</Link>}
   </section>
  </article>;
 }

@@ -8,6 +8,7 @@ import {getViewer} from '@/lib/auth/viewer';
 import {type ChapterCertifications} from '@/lib/assessor/certifications';
 import {parseComponentReadiness} from '@/lib/assessor/component-readiness';
 import {parseComponentRequestQueue} from '@/lib/assessor/component-requests';
+import {chapter1Terms} from '@/lib/assessor/chapter1-workflow-parity';
 import {getRequestFeatureFlags} from '@/lib/supabase/request';
 import {createClient} from '@/lib/supabase/server';
 
@@ -89,9 +90,9 @@ export default async function AssessorWorkspace({params,searchParams}:{
   const card = 'rounded-xl border border-ink/15 p-5';
   return <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-4 py-8 sm:px-6">
     <Breadcrumbs items={[{label:label('Manwal ng BHW','BHW Reference Manual'),href:`/training/${programId}`},
-      {label:label('Working area ng Kabanata 1','Chapter 1 working area')}]}/>
+      {label:chapter1Terms.workspace[en?'en':'fil']}]}/>
     <header>
-      <h1 className="text-2xl font-semibold sm:text-3xl">{label('Working area ng Kabanata 1','Chapter 1 working area')}</h1>
+      <h1 className="text-2xl font-semibold sm:text-3xl">{chapter1Terms.workspace[en?'en':'fil']}</h1>
       <p className="mt-2 text-ink/75">{label('Paghahanda, mga BHW sa iyong lugar, at kasalukuyang gawaing pagtatasa.',
         'Preparation, BHWs in your area, and current assessment work.')}</p>
     </header>
@@ -119,7 +120,7 @@ export default async function AssessorWorkspace({params,searchParams}:{
       </div>
     </section>
     <section id="roster" className={card} aria-labelledby="roster-title">
-      <h2 id="roster-title" className="text-xl font-semibold">{label('Mga BHW na sinusuportahan ko','BHWs I support')}</h2>
+      <h2 id="roster-title" className="text-xl font-semibold">{chapter1Terms.roster[en?'en':'fil']}</h2>
       <p className="mt-2 text-sm text-ink/75">{label('Mga aktibong BHW lamang sa iyong saklaw. Ang katayuan ng pag-aaral ay hindi pasya sa kahandaan sa pagtatasa.',
         'Only active BHWs in your catchment. Learning status is not an assessment-readiness decision.')}</p>
       <form action={base} method="get" className="mt-4 grid gap-3 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)_auto]">

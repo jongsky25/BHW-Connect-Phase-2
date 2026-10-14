@@ -16,5 +16,6 @@ export default async function SimulationPage({params}:{params:Promise<{programId
  const initial=error?null:parseSimulationState(data,programId,viewer.appUser.id);
  const chapterHref=`/training/${programId}/assessor/chapter-1`;
  if(!initial)redirect(chapterHref);
- return <AssessorSimulationRunner initial={initial} locale={locale} chapterHref={chapterHref}/>;
+ return <AssessorSimulationRunner initial={initial} locale={locale} chapterHref={chapterHref}
+  workspaceHref={`/training/${programId}/assessor/workspace`}/>;
 }

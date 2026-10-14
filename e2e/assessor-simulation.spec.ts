@@ -40,7 +40,14 @@ test('simulation validates authenticated saves, recovers, resumes and retains on
     'study',(select jsonb_agg(to_jsonb(p) order by lesson_id) from assessor_lesson_progress p where chapter_id='${chapter}'),
     'exam',(select jsonb_agg(to_jsonb(p) order by id) from assessor_exam_attempts p where chapter_id='${chapter}'),
     'orientation',(select jsonb_agg(to_jsonb(p) order by id) from assessor_orientation_attempts p where chapter_id='${chapter}'),
-    'qualification',(select jsonb_agg(to_jsonb(p) order by id) from assessor_chapter_qualifications p where chapter_id='${chapter}'));`).trim();
+    'qualification',(select jsonb_agg(to_jsonb(p) order by id) from assessor_chapter_qualifications p where chapter_id='${chapter}'),
+    'practice',(select count(*) from assessor_rollout_private.practice_attempts where chapter_id='${chapter}'),
+    'requests',(select count(*) from assessor_rollout_private.component_requests where program_id='${program}'),
+    'formal',(select count(*) from assessor_rollout_private.formal_attempts where program_id='${program}'),
+    'reviews',(select count(*) from assessor_rollout_private.bhw_chapter_reviews where program_id='${program}'),
+    'assessments',(select count(*) from public.assessments where course_id='${course}'),
+    'certificates',(select count(*) from public.certificates where course_id='${course}'),
+    'notifications',(select count(*) from public.notifications));`).trim();
   try {
     await onboardThroughLogin(page,assessor.username,assessor.tempPassword,'AssessorPrepPw2026!');
     const base=`/training/${program}/assessor/chapter-1`;
@@ -93,7 +100,7 @@ test('simulation validates authenticated saves, recovers, resumes and retains on
           await expect(page.getByRole('alert').filter({hasText:'Save/status'})).toHaveCount(0);
         }
         if(i===1){
-          for(const name of locale==='en'?['Open guide','Switch to Maria’s view','Return to guide']:['Buksan ang gabay','Lumipat sa view ni Maria','Bumalik sa gabay'])await page.getByRole('button',{name,exact:true}).click();
+          for(const name of locale==='en'?['Open Prepare','Show BHW presentation','Back to Prepare']:['Buksan ang Ihanda','Ipakita sa BHW','Bumalik sa Ihanda'])await page.getByRole('button',{name,exact:true}).click();
         }
         if(i===3){
           for(const box of await page.getByRole('checkbox').all())await box.check();
@@ -134,6 +141,7 @@ test('simulation validates authenticated saves, recovers, resumes and retains on
       await page.screenshot({path:`/tmp/c1af-runner-${locale}.png`,fullPage:true});
     }
     expect(learnerWrites).toEqual([]);expect(snapshot()).toBe(preserved);
+    await expect(page.getByRole('link',{name:/Open the real Chapter 1 working area|Buksan ang tunay na working area ng Kabanata 1/})).toHaveAttribute('href',`/training/${program}/assessor/workspace`);
     const saved=JSON.parse(localSql(`select state from assessor_rollout_private.simulation_runs where actor_id='${actor.id}' and program_id='${program}';`).trim());
     expect(saved.receipt.checkpointIds).toEqual(storyScenes.map(s=>s.id));
     expect(saved.attempts.observe).toEqual(['independent','prompted','independent','prompted']);

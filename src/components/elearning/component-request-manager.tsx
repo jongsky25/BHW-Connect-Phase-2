@@ -6,6 +6,7 @@ import {useRef,useState,type FormEvent} from 'react';
 import {createClient} from '@/lib/supabase/client';
 import {type ComponentReadiness} from '@/lib/assessor/component-readiness';
 import {type ComponentRequestQueueItem} from '@/lib/assessor/component-requests';
+import {chapter1Terms} from '@/lib/assessor/chapter1-workflow-parity';
 
 type Lang='fil'|'en';
 const field='min-h-11 w-full rounded border border-ink/30 bg-canvas px-3 py-2';
@@ -23,7 +24,7 @@ function RequestButton({programId,learnerId,moduleId,lang}:{programId:string;lea
     finally{setBusy(false);}
   }
   return <div className="mt-2"><button type="button" disabled={busy} onClick={create}
-    className="min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">{en?'Request assessment':'Humiling ng pagtatasa'}</button>
+    className="min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">{chapter1Terms.request[lang]}</button>
     {message&&<p role="status" className="mt-2 text-sm">{message}</p>}</div>;
 }
 
@@ -56,7 +57,7 @@ function QueueAction({item,lang,programId}:{item:ComponentRequestQueueItem;lang:
       className="inline-block min-h-11 content-center rounded bg-primary px-4 text-on-primary">
       {en?'Open formal assessment':'Buksan ang pormal na pagtatasa'}</Link>}
     {item.status==='pending'&&<div className="flex flex-wrap gap-3">
-      <button disabled={busy} onClick={()=>act('claim')} className="min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">{en?'Claim request':'Akuin ang kahilingan'}</button>
+      <button disabled={busy} onClick={()=>act('claim')} className="min-h-11 rounded bg-primary px-4 text-on-primary disabled:opacity-50">{chapter1Terms.claim[lang]}</button>
       {item.requestedByMe&&<button disabled={busy} onClick={()=>act('cancel')} className="min-h-11 underline disabled:opacity-50">{en?'Cancel request':'Kanselahin ang kahilingan'}</button>}
     </div>}
     {item.assignedToMe&&<>
@@ -64,7 +65,7 @@ function QueueAction({item,lang,programId}:{item:ComponentRequestQueueItem;lang:
         <label className="text-sm">{en?'Agreed date and time':'Napagkasunduang petsa at oras'}<input required type="datetime-local" className={field} value={date} onChange={e=>{setDate(e.target.value);reset();}}/></label>
         <label className="text-sm">{en?'Place or agreed channel':'Lugar o napagkasunduang paraan'}<input required maxLength={200} className={field} value={location} onChange={e=>{setLocation(e.target.value);reset();}}/></label>
         <label className="text-sm sm:col-span-2">{en?'Additional arrangement (optional)':'Dagdag na kasunduan (opsyonal)'}<input maxLength={1000} className={field} value={note} onChange={e=>{setNote(e.target.value);reset();}}/></label>
-        <button disabled={busy} className="min-h-11 w-fit rounded bg-primary px-4 text-on-primary disabled:opacity-50">{item.status==='arranged'?(en?'Reschedule':'Baguhin ang iskedyul'):(en?'Save arrangement':'Itala ang kasunduan')}</button>
+        <button disabled={busy} className="min-h-11 w-fit rounded bg-primary px-4 text-on-primary disabled:opacity-50">{item.status==='arranged'?(en?'Reschedule':'Baguhin ang iskedyul'):chapter1Terms.arrange[lang]}</button>
       </form>
       <div className="flex gap-3"><button disabled={busy} onClick={()=>act('release')} className="min-h-11 underline disabled:opacity-50">{en?'Release claim':'Bitawan ang pagtatalaga'}</button>
         <button disabled={busy} onClick={()=>act('cancel')} className="min-h-11 underline disabled:opacity-50">{en?'Cancel request':'Kanselahin ang kahilingan'}</button></div>
