@@ -24,9 +24,16 @@ describe('chapter certification cards', () => {
     expect(screen.queryByRole('link')).toBeNull();
   });
   it('distinguishes missing approved requirements from unpublished chapter content', () => {
-    render(<AssessorCertificationCard {...props} records={legacy} legacyState={{status: 'unavailable', next_step: 'await_chapter_requirements'}}/>);
+    render(<AssessorCertificationCard {...props} chapterKey="chapter-3" records={legacy} legacyState={{status: 'unavailable', next_step: 'await_chapter_requirements'}}/>);
     expect(screen.getByText('Approved exam and orientation requirements are not yet available.')).toBeVisible();
     expect(screen.queryByText('Required chapter content is not currently published.')).toBeNull();
+    expect(screen.queryByRole('link', {name: 'Open chapter'})).toBeNull();
+    expect(screen.queryByText('Study and orientation')).toBeNull();
+  });
+  it('exposes the generic Chapter 3 legacy path once chapter-specific requirements are ready', () => {
+    render(<AssessorCertificationCard {...props} chapterKey="chapter-3" records={legacy} legacyState={{status: 'in_progress', next_step: 'pretest'}}/>);
+    expect(screen.getByRole('link', {name: 'Open chapter'})).toHaveAttribute('href', props.chapterHref);
+    expect(screen.getByText('Study and orientation')).toBeVisible();
   });
   it('does not label a failed read as missing evidence', () => {
     render(<AssessorCertificationCard {...props} readFailed records={legacy}/>);
