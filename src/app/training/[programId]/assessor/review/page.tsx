@@ -7,7 +7,7 @@ import {parseChapterReviewState} from '@/lib/assessor/chapter-review';
 import {getRequestFeatureFlags} from '@/lib/supabase/request';
 import {createClient} from '@/lib/supabase/server';
 
-const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 export default async function ChapterReviewPage({params,searchParams}:{
   params:Promise<{programId:string}>;searchParams:Promise<{learner?:string}>}){
   const [{programId},{learner},viewer,flags,locale]=await Promise.all([

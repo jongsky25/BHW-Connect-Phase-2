@@ -5,6 +5,7 @@ import {PDFDocument} from 'pdf-lib';
 import AxeBuilder from '@axe-core/playwright';
 import {expect,test} from '@playwright/test';
 import {STABLE_CITY_ADMIN,createThrowawayAssessor,getAccessToken,onboardThroughLogin,restGet} from './fixtures/auth';
+import {rehearseChapterOne,cleanupChapterOneRehearsal} from './fixtures/c1af24-story';
 
 function localSql(sql:string) {
   const url=new URL(process.env.NEXT_PUBLIC_SUPABASE_URL??'');
@@ -14,7 +15,7 @@ function localSql(sql:string) {
 }
 
 test('combined award validates real authenticated completion and concurrent recovery without changing earned passes',async({page,request,browser})=>{
-  test.setTimeout(240000);
+  test.setTimeout(600000);
   const cityToken=await getAccessToken(request,STABLE_CITY_ADMIN.username,STABLE_CITY_ADMIN.password);
   const assessor=await createThrowawayAssessor(request,cityToken,'00000000-0000-0000-0000-000000000004');
   const [actor]=await restGet(request,cityToken,`users?select=id&username=eq.${assessor.username}`) as Array<{id:string}>;
@@ -187,11 +188,14 @@ test('combined award validates real authenticated completion and concurrent reco
       expect(awardEvidence()).toBe(immutableBefore);expect(snapshot()).toBe(before);
       expect(localSql(`select count(*) from audit_events where event_type='assessor.chapter_award.issued' and subject_id='${saved.awards[0].awardId}'`).trim()).toBe('1');
     }finally{await anonymous.close();localSql('update assessor_rollout_private.certificate_output_control set public_verification_enabled=false');}
+    await rehearseChapterOne({page,request,browser,localSql,cityToken,assessorToken:token,
+      program,chapter,course,cohort});
     localSql("update feature_flags set enabled=false where key='assessor_flow_awards'");
     expect((await rpc('rpc_assessor_chapter_award_ensure',{p_chapter_id:chapter})).ok()).toBe(false);
     expect(await (await rpc('rpc_assessor_chapter_award_state',{p_chapter_id:chapter})).json()).toEqual(saved);
 
   } finally {
+    cleanupChapterOneRehearsal(localSql,{program,chapter,course,cohort});
     localSql(`begin;
       -- Fixture disposal only: immutable content is never altered during the journey.
       alter table course_lesson_revisions disable trigger training_revision_immutable;
