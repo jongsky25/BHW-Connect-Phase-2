@@ -8,4 +8,6 @@
 
 **Task findings:** The automated rehearsal measures state changes and accessible controls; it cannot establish that a human assessor can complete the story without coaching. Record real task failures, misunderstood labels and unnecessary navigation during a supervised local walkthrough with a representative assessor before C1AF-25. File bounded follow-up work for any findings. Do not substitute this synthetic approval registry for a reviewed live mapping.
 
+The local integration run found two previously hidden route defects and this PR fixes them: the review state RPC was marked stable despite calling the locked C1AF-20 authority check, and the review page's UUID pattern rejected valid IDs.
+
 **Release boundary:** Review this one PR and its CI first. Merge requires separate approval. The migration changes function declarations only and must be rehearsed through the full local migration chain in CI. A merge can deploy the migration, test and handoff through the normal `main` pipeline but must leave production Chapter 1 write controls and cohort cutover unchanged. C1AF-25 may begin only after live mapping approval, local migration rehearsal and the limited pilot release review in the flow plan.
