@@ -16,18 +16,9 @@ export type PublicCertificate = Pick<Certificate, 'certificateId' | 'chapterKey'
 export type CertificationCardStatus = 'certified' | 'in_progress' | 'unavailable' | 'read_failed' | 'update_required' | 'suspended' | 'revoked';
 export function certificationCardStatus(chapterKey: string, published: boolean, readFailed: boolean, awards: AwardSummary[]): CertificationCardStatus {
   if (readFailed) return 'read_failed';
-  // Chapter 3 has no approved path. Historical awards elsewhere still display
-  // their current lifecycle even when content is no longer published.
-  if (chapterKey === 'chapter-3') return 'unavailable';
   const latest = awards[0];
   if (latest) return latest.status === 'active' ? 'certified' : latest.status;
   return published ? 'in_progress' : 'unavailable';
-}
-export function overallProgress(chapters: ChapterCertifications[], readFailed: boolean) {
-  if (readFailed) return null;
-  // Count distinct, current chapter scopes in this program, never legacy rows.
-  // Chapter 3 stays unavailable; overall issuance is a later increment.
-  return CHAPTERS.filter(key => key !== 'chapter-3' && chapters.find(c => c.chapterKey === key)?.awards[0]?.status === 'active').length;
 }
 export function certificateStatusText(status: CertificateStatus, en: boolean) {
   return ({active: ['Aktibong tala ng pagkamit', 'Active achievement record'], suspended: ['Sinuspinde', 'Suspended'], revoked: ['Binawi', 'Revoked'], update_required: ['Kailangan ng pag-update', 'Update required']} as const)[status][en ? 1 : 0];
