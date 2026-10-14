@@ -127,7 +127,10 @@ test('combined award validates real authenticated completion and concurrent reco
         await page.setViewportSize({width,height:960});
         await page.goto(`/training/${program}/assessor/qualifications`);
         await expect(page.getByRole('heading',{name:locale==='en'?'My certifications':'Aking mga sertipikasyon',exact:true})).toBeVisible();
-        await expect(page.getByText(locale==='en'?'1/3 current compatible chapter certifications':'1/3 kasalukuyang katugmang sertipikasyon ng kabanata')).toBeVisible();
+        // A chapter award exists, but no approved overall compatibility rule
+        // is installed in this disposable rehearsal.
+        await expect(page.getByText(locale==='en'?'0/3 current compatible chapter certifications':'0/3 kasalukuyang katugmang sertipikasyon ng kabanata')).toBeVisible();
+        await expect(page.getByText(locale==='en'?'No approved overall award rule is active yet.':'Hindi pa aktibo ang aprubadong tuntunin para sa pangkalahatang award.')).toBeVisible();
         await expect(page.getByRole('heading',{name:locale==='en'?'Chapter 3':'Kabanata 3',exact:true})).toBeVisible();
         await page.getByRole('link',{name:locale==='en'?'View certificate':'Tingnan ang sertipiko',exact:true}).click();
         await expect(page.getByRole('heading',{name:/BHW Reference Manual/})).toBeVisible();
