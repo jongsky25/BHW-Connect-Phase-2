@@ -165,7 +165,7 @@ export async function rehearseChapterOne({page,request,browser,localSql,cityToke
     expect(ready.suggestedOutcome).toBe('complete');
     await page.setViewportSize({width:1440,height:960});
     const reviewPage=await page.goto(`/training/${program}/assessor/review?learner=${learner.id}`);
-    expect(reviewPage?.status()).toBe(200);
+    expect(reviewPage?.status(),`${page.url()} · ${(await page.locator('body').innerText()).slice(0,500)}`).toBe(200);
     await expect(page.getByRole('heading',{name:/Pagsusuri ng Kabanata 1|Chapter 1 review/}).first()).toBeVisible();
     await expect(page.locator('p').filter({hasText:/Kasalukuyang resulta:|Current outcome:/}))
       .toContainText(/Kumpleto|Complete/);

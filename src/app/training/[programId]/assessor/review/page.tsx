@@ -12,6 +12,9 @@ export default async function ChapterReviewPage({params,searchParams}:{
   params:Promise<{programId:string}>;searchParams:Promise<{learner?:string}>}){
   const [{programId},{learner},viewer,flags,locale]=await Promise.all([
     params,searchParams,getViewer(),getRequestFeatureFlags(),getLocale()]);
+  if(process.env.CI)console.error('C1AF24 review entry',{
+    programId,learner,role:viewer.role,appRole:viewer.appUser?.role,
+    preview:viewer.isPreview,elearning:flags.elearning,assessorFlowUi:flags.assessor_flow_ui});
   if(!viewer.appUser||viewer.appUser.status!=='active')redirect('/login');
   if(viewer.role!=='assessor'||viewer.appUser.role!=='assessor'||viewer.isPreview
     ||!flags.elearning||!flags.assessor_flow_ui)redirect('/home');
