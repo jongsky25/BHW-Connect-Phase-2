@@ -1,0 +1,2328 @@
+{
+  "schema_version": 1,
+  "status": "proposal_for_owner_review",
+  "ready_for_activation": false,
+  "program_key": "bhw-reference-manual",
+  "chapter_key": "chapter-1",
+  "curriculum_version": "2026-09-28.1",
+  "proposed_requirements_version": "chapter-1:c1af25.pilot-1",
+  "proposed_rubric_version": "chapter-1:c1af25.rubric-1",
+  "proposed_award_rule_version": "c1af25.combined-1",
+  "approval_references": null,
+  "issuer_snapshot": null,
+  "source_rule": "Only the exact bilingual anchors and lesson revisions referenced below can be approved. Local objective indices never map ratings to legacy indicators.",
+  "formal_rule_proposal": {
+    "required_criteria": "All 42 current lesson criteria are required, grouped into nine components. Each required criterion needs fresh sufficient formal evidence rated kaya_na for a complete component.",
+    "practice_evidence": "Practice records and legacy module observations remain context; neither counts as fresh formal evidence.",
+    "insufficient": "Unseen or insufficient evidence stays unrated and blocks completion. An observed hindi_pa or kailangan_practice requires a new assessed attempt after feedback.",
+    "required_test_phases_per_component": [
+      "pretest",
+      "posttest"
+    ],
+    "test_phase_meaning": "Current validated learner release and a submitted attempt in each phase. Component readiness does not apply a test score threshold.",
+    "prior_bhw_evidence_reuse": false
+  },
+  "staff_award_proposal": {
+    "briefing_version": "chapter-1:briefing.v1",
+    "current_study": "All 42 published required lessons at current revisions",
+    "pretest": "Submitted diagnostic; no pass threshold",
+    "posttest": "Passed current Chapter 1 form at its 80 percent threshold",
+    "orientation_version": "2026-09-29.1",
+    "orientation": "Six lessons, seven of eight cases correct including the mandatory safety case",
+    "simulation": {
+      "id": "chapter-1-maria-communication-storyboard",
+      "version": "1.0.0",
+      "checkpoint_ids": [
+        "find-maria",
+        "prepare",
+        "brief",
+        "observe",
+        "feedback",
+        "missing",
+        "readiness",
+        "arrange",
+        "formal",
+        "chapter-gap",
+        "final-review"
+      ],
+      "checkpoint_versions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source": {
+        "path": "src/lib/assessor/simulation-storyboard.ts",
+        "sha256_lf": "781a086173f21d8020a69a7ae0d0f60b920d0833f0a48de4468e625e09c16b73"
+      }
+    },
+    "prior_staff_evidence_reuse": "Explicit recovery only: preserve old qualification ID and status; recheck unchanged current study, exams and orientation; require the new briefing and simulation receipt. No mass conversion.",
+    "issuer": "Owner must supply organization, signatory and title before contract approval."
+  },
+  "conflict_decisions_proposed": {
+    "1.3-refusal": "Keep the current one combined bhs-decline lesson criterion. Kaya na requires all three observed actions without prompts: clear respectful refusal, correct policy reason and firm boundary with no workaround, and factual supervisor handover without patient data. Do not count this task as the separate policy-recall criterion. Any safe alternative is allowed only when the applicable policy permits it.",
+    "1.6.2-clarification": "Require the current communication-clarify criterion separately: open invitation, neutral clarification, room for correction and confirmation of the corrected summary. It contributes partial evidence to legacy listening but is never equated with legacy indicator 1 or satisfied by a listening score alone.",
+    "1.8-safety": "Require an observed safe dummy demonstration against the current local critical-step checklist, with no real used sharps. A paper control-selection answer is insufficient. The local checklist and escalation contact must be confirmed before pilot use."
+  },
+  "components": [
+    {
+      "module_key": "01-tungkulin-ng-bhw",
+      "component_id": "chapter-1:01-tungkulin-ng-bhw",
+      "title": {
+        "fil": "Ang mga Tungkulin ng Isang BHW",
+        "en": "The Roles of a BHW"
+      },
+      "review_note": "Individual role performances contribute to broader role explanation/application. A single role does not establish all three roles or the complete component. Preserve guidance on records, facts and local routes.",
+      "required_test_phases": [
+        "pretest",
+        "posttest"
+      ],
+      "required_lessons": [
+        {
+          "lesson_key": "bhw-roles-hepo",
+          "title": {
+            "fil": "Ang BHW at ang HEPO",
+            "en": "The BHW and HEPO"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-hepo/lesson.json",
+            "sha256_lf": "1fd0bc4a2f99d80c5f65ee91b5c13d7b9565d5f2a25d4f1f2203182234369561"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:01-tungkulin-ng-bhw:indicator-1",
+            "chapter-1:01-tungkulin-ng-bhw:indicator-2"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:lesson:bhw-roles-hepo:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-hepo/competency.json",
+                "sha256_lf": "3aa56c6523f067e4e5c153c515ab663298a6b43a6714083595bd3631dece0a20"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Maipaliwanag kung paano nagsasama ang pagtuturo, pag-oorganisa, at pagtulong sa serbisyo sa papel ng BHW.",
+                  "en": "Explain how education, organizing, and service support work together in the BHW role."
+                },
+                "not_yet": {
+                  "fil": "Hindi pa maipaliwanag ang sagot sa sitwasyon.",
+                  "en": "Cannot yet explain the response to the scenario."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipaliwanag nang wasto at walang gabay.",
+                    "en": "Explains accurately without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Naipaliwanag sa tulong ng tanong.",
+                    "en": "Explains with prompts."
+                  },
+                  "hindi_pa": {
+                    "fil": "Kailangan pang ipakita at pagsanayan.",
+                    "en": "Needs further demonstration and practice."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-health-educator",
+          "title": {
+            "fil": "Bilang Health Educator",
+            "en": "As a Health Educator"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-health-educator/lesson.json",
+            "sha256_lf": "a8b74131e7f5f099448c5dfc2153446296024a27fb2530fe0808de6c90f9c55d"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:01-tungkulin-ng-bhw:indicator-2",
+            "chapter-1:01-tungkulin-ng-bhw:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:lesson:bhw-health-educator:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-health-educator/competency.json",
+                "sha256_lf": "10e4511a8109b9da22bdad0fae414f39931cae35d9d9e0cc3da078098248f744"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Matukoy ang angkop na gawaing pang-edukasyon para sa iba’t ibang sektor at yugto ng buhay.",
+                  "en": "Identify education suited to different community groups and life stages."
+                },
+                "not_yet": {
+                  "fil": "Hindi pa maipaliwanag ang sagot sa sitwasyon.",
+                  "en": "Cannot yet explain the response to the scenario."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipaliwanag nang wasto at walang gabay.",
+                    "en": "Explains accurately without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Naipaliwanag sa tulong ng tanong.",
+                    "en": "Explains with prompts."
+                  },
+                  "hindi_pa": {
+                    "fil": "Kailangan pang ipakita at pagsanayan.",
+                    "en": "Needs further demonstration and practice."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-community-organizer",
+          "title": {
+            "fil": "Bilang Community Organizer",
+            "en": "As a Community Organizer"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-community-organizer/lesson.json",
+            "sha256_lf": "f3564fde672f8e62e7dd4813d8da812a8086d6c21869fc2740e3c810e5d2805f"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:01-tungkulin-ng-bhw:indicator-2",
+            "chapter-1:01-tungkulin-ng-bhw:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:lesson:bhw-community-organizer:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-community-organizer/competency.json",
+                "sha256_lf": "4c7a637d2a73a91981318b6176be74c83cf703d5e4117933e24e96df9be9ea75"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Sa pagsasanay ng magkapares, nagbigay ng paanyaya ang BHW, umangkop sa tugon ng residente, nagsabi ng tiyak na obserbasyon nang walang hinalang sanhi, at pinangalanan ang lalapitan sa lokal na pagpaplano.",
+                  "en": "In the paired role-play, the BHW invited participation, adapted to the resident's response, reported a specific observation without claiming a cause, and named whom to approach through local planning."
+                },
+                "not_yet": {
+                  "fil": "Hindi pa nakapagbigay ng paanyayang may puwang sa tugon ng residente o nakapaghiwalay ng nakita sa hinala.",
+                  "en": "Has not yet made an invitation that allows a resident to respond or separated what was seen from an assumption."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Nagawa ang paanyaya, pagtugon, pag-uulat ng nakita, at pagtukoy ng lokal na lalapitan nang walang gabay.",
+                    "en": "Invites, responds, reports what was seen, and names the local contact without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Nagawa ang mga hakbang matapos tanungin kung ano ang nakita, kailan maaari ang residente, o kanino lalapit.",
+                    "en": "Completes the steps after prompts about what was seen, when the resident is available, or whom to approach."
+                  },
+                  "hindi_pa": {
+                    "fil": "Nag-anunsyo lamang, hindi tumugon, naghahayag ng hinalang sanhi, o nangangako ng pondo kahit may gabay.",
+                    "en": "Only announces, does not respond, claims an unverified cause, or promises funding despite prompts."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-service-provider",
+          "title": {
+            "fil": "Bilang Health Service Provider",
+            "en": "As a Health Service Provider"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-service-provider/lesson.json",
+            "sha256_lf": "01a661cb3a728a57ef6a4d68d9262dc8b27b659af4937d0f0defcc34862a489b"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:01-tungkulin-ng-bhw:indicator-2",
+            "chapter-1:01-tungkulin-ng-bhw:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:lesson:bhw-service-provider:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-service-provider/competency.json",
+                "sha256_lf": "a616582cac39fce316b1516f7d8cbd3a3cdb7b983290e61564b5edef08ccd02f"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Matanong ang pangangailangan, maituro ang angkop na health worker at susunod na hakbang, humingi ng gabay kapag lampas sa pagsasanay, at masabi ang follow-up at pag-uulat.",
+                  "en": "Ask about the need, identify an appropriate health worker and next step, seek guidance beyond training, and state follow-up and reporting."
+                },
+                "not_yet": {
+                  "fil": "Nagbibigay ng payong lampas sa pagsasanay o hindi makapagbigay ng malinaw na susunod na hakbang kahit may gabay.",
+                  "en": "Gives advice beyond training or cannot give a clear next step even with prompting."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Nagagawa ang lahat ng hakbang nang walang gabay.",
+                    "en": "Performs all steps without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Nagagawa ang paggabay ngunit kailangan ng paalala sa saklaw o follow-up.",
+                    "en": "Guides appropriately but needs prompting about scope or follow-up."
+                  },
+                  "hindi_pa": {
+                    "fil": "Kailangan pang ipakita at pagsanayan ang ligtas na paggabay.",
+                    "en": "Needs demonstration and practice in safe guidance."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-records",
+          "title": {
+            "fil": "Mga talaan at impormasyon",
+            "en": "Records and Information"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-records/lesson.json",
+            "sha256_lf": "7a9a03a0402b4735e3ac77c7870f7683b98142ed9d4e14b69241bbb7d57ee557"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:01-tungkulin-ng-bhw:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:lesson:bhw-records:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-records/competency.json",
+                "sha256_lf": "0bb79064b6231aaefbda3cb2f2b2f4018611ab0df9c617ece668cf04d5c26118"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Maitugma ang apat na tala sa tanong na sinasagot ng bawat isa; masuri ang hindi tiyak na entry at maipaliwanag ang tamang tatanggap at paraan ng pagpapasa.",
+                  "en": "Match four records to the questions they answer; check an uncertain entry and explain the recipient and approved handoff route."
+                },
+                "not_yet": {
+                  "fil": "Napagpapalit ang master list at registry o nanghuhula ng kulang na detalye kahit may gabay.",
+                  "en": "Confuses the master list with the registry or guesses missing details even with prompting."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naitutugma ang lahat at nailalarawan ang ligtas na pagpapasa nang walang gabay.",
+                    "en": "Matches all four and describes a safe handoff without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tama ang pagtutugma ngunit kailangan ng paalala sa paglinaw o tatanggap.",
+                    "en": "Matches the records but needs a prompt about verification or recipient."
+                  },
+                  "hindi_pa": {
+                    "fil": "Kailangan pang ipakita at pagsanayan ang pagpili at paglinaw ng tala.",
+                    "en": "Needs demonstration and practice in choosing and checking a record."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-roles-application",
+          "title": {
+            "fil": "Gamitin ang mga tungkulin",
+            "en": "Apply the Roles"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-application/lesson.json",
+            "sha256_lf": "379d3a4f79930c9540f59172b87aba0ea682fda3a84e914854eb68cc0d6d84cf"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:01-tungkulin-ng-bhw:indicator-2",
+            "chapter-1:01-tungkulin-ng-bhw:indicator-3",
+            "chapter-1:01-tungkulin-ng-bhw:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:lesson:bhw-roles-application:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-application/competency.json",
+                "sha256_lf": "3b4762e58f492a4bc04cf8bb97bcb1ef173534db17bd97b8c461b200fe6ce610"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Naipapaliwanag ang tatlong tungkuling ginamit, nasusunod ang tagubilin, at naibibigay ang handover na may nakita, aktwal na ginawa, at kailangan pang aksyon nang walang imbentong konklusyon.",
+                  "en": "Explains the three roles used, follows the instruction, and gives a handover with observation, actual action, and remaining need without an invented conclusion."
+                },
+                "not_yet": {
+                  "fil": "Nagdaragdag ng hindi napatunayang sanhi o diagnosis, o hindi maihiwalay ang nakita, ginawa, at kailangan kahit may gabay.",
+                  "en": "Adds an unverified cause or diagnosis, or cannot separate observation, action, and need even with support."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Walang gabay naipapaliwanag ang tatlong tungkulin at pagsunod sa tagubilin; tugma ang tala at kumpletong handover, at tama ang tatanggap.",
+                    "en": "Without prompts, explains the three roles and how the instruction was followed; the record and complete handover agree and reach the appropriate recipient."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Wasto ang pangunahing ulat ngunit may kulang na bahagi o tungkulin; nakukumpleto matapos ang tanong o gabay.",
+                    "en": "The report is sound but misses a part or role; completes it after a question or prompt."
+                  },
+                  "hindi_pa": {
+                    "fil": "Hindi maihiwalay ang obserbasyon sa hinala, o hindi masunod ang tagubilin kahit may gabay; kailangan ng demonstrasyon at muling pagsasanay.",
+                    "en": "Cannot separate observation from assumption or follow the instruction even with prompts; needs demonstration and further practice."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_key": "02-uhc-act",
+      "component_id": "chapter-1:02-uhc-act",
+      "title": {
+        "fil": "Ang UHC Act of 2019",
+        "en": "The UHC Act of 2019"
+      },
+      "review_note": "Coverage and primary-care tasks jointly support the older combined goal-and-changes indicator. Local factual communication is not automatically a comparison of real implementation. Keep confirmed local information separate from promises.",
+      "required_test_phases": [
+        "pretest",
+        "posttest"
+      ],
+      "required_lessons": [
+        {
+          "lesson_key": "uhc-coverage",
+          "title": {
+            "fil": "Layunin at saklaw ng UHC",
+            "en": "UHC purpose and coverage"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-coverage/lesson.json",
+            "sha256_lf": "354cba8e7d97ac68c8a9c551f0edd3b0f17b086f2ff58340ad91991a5c37217c"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:02-uhc-act:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:02-uhc-act:lesson:uhc-coverage:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-coverage/competency.json",
+                "sha256_lf": "e6a9d25f55b866e4116dbcf6e1e00427a674cb61223717949e82f98d8a40c02f"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Naipapaliwanag sa residente ang layunin ng UHC at awtomatikong NHIP inclusion, at natutukoy ang benepisyo, provider, at hakbang na dapat tiyakin bago mangakong walang bayad.",
+                  "en": "Explains UHC's aim and automatic NHIP inclusion to a resident, and names the benefit, provider, and steps to check before promising no charge."
+                },
+                "not_yet": {
+                  "fil": "Ipinapangakong libre ang lahat o hindi maipaliwanag ang dapat tiyakin.",
+                  "en": "Promises that everything is free or cannot explain what needs checking."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipapaliwanag ang dalawang punto at ang susunod na hakbang nang walang untag.",
+                    "en": "Explains both points and the next step without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tama ang direksiyon ngunit kailangan ng gabay upang tukuyin ang dapat tiyakin.",
+                    "en": "Has the right direction but needs prompting to name what to check."
+                  },
+                  "hindi_pa": {
+                    "fil": "Hindi pa tumpak ang paliwanag o nangangako nang walang pagtitiyak.",
+                    "en": "The explanation is inaccurate or promises coverage without checking."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "uhc-primary-care",
+          "title": {
+            "fil": "Primary care at referral",
+            "en": "Primary care and referral"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-primary-care/lesson.json",
+            "sha256_lf": "f5706fe7313d13d1d828103d08b05de20ffe3e312be450564b3e5e3d957ed8a5"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:02-uhc-act:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:02-uhc-act:lesson:uhc-primary-care:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-primary-care/competency.json",
+                "sha256_lf": "f0700f40ea23aa358d4323822c4961be1d4a7352e7997d5a99dd3a94729450e6"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Sa usapan kay Mang Ernesto, malinaw na tinatanong ng BHW ang napiling clinic, benepisyo at proseso, at lokal na referral contact kung irekomenda ng clinician.",
+                  "en": "In the Mang Ernesto scenario, the BHW clearly checks the chosen clinic, benefit and process, and local referral contact if a clinician recommends referral."
+                },
+                "not_yet": {
+                  "fil": "Naghuhula ng clinic o referral destination, nangangako ng serbisyo, o gumagawa ng klinikal na pasya.",
+                  "en": "Guesses a clinic or referral destination, promises a service, or makes a clinical decision."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Nasasabi ang tatlong dapat tiyakin at malinaw ang hangganan ng papel ng BHW nang walang tulong.",
+                    "en": "Names all three things to confirm and the BHW role boundary without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Alam na dapat magtanong sa health team ngunit kailangan ng gabay sa kung ano ang itatanong.",
+                    "en": "Knows to ask the health team but needs prompting about what to ask."
+                  },
+                  "hindi_pa": {
+                    "fil": "Nagbibigay ng tiyak na clinic o referral na walang kumpirmasyon, o nagpapasya para sa clinician.",
+                    "en": "Names an unconfirmed clinic or referral, or decides for the clinician."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "uhc-local-system",
+          "title": {
+            "fil": "Health board at health promotion",
+            "en": "Health boards and health promotion"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-local-system/lesson.json",
+            "sha256_lf": "7a61e91af0826f56a0f69732d877477e59ee367fcb33cfb9edd068cfd4ae5c9e"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:02-uhc-act:indicator-2",
+            "chapter-1:02-uhc-act:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:02-uhc-act:lesson:uhc-local-system:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-local-system/competency.json",
+                "sha256_lf": "ef8a8bc55e540270d44d43bd8390466072acfcf009214ebc28c219c19491c999"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Malinaw ang buod at maingat sa personal na detalye. Nasuri ang health-promotion response at sinusuri ang pagkaunawa. Tiyak ang tanong sa nakumpirmang lokal na contact, malinaw ang awtoridad at may follow-up.",
+                  "en": "Gives a factual summary and protects resident details. Gives a checked health-promotion response and checks understanding. Asks a specific question of a locally confirmed contact, respects decision authority and names follow-up."
+                },
+                "not_yet": {
+                  "fil": "Nag-iimbento ng dahilan o naglalantad ng makikilalang health detail. Inuulit bilang tiyak ang hindi pa kumpirmadong impormasyon. Nagpapahayag ng patakaran/approval nang walang awtoridad o nag-iimbento ng ruta sa board.",
+                  "en": "Invents causes or discloses identifying health details. Repeats unconfirmed activity information as fact. Announces unauthorised policy/approval or promises an invented board route."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Nasasabi ang tanong, panahon at hindi pa tiyak nang walang gabay; walang di-kailangang makikilalang detalye. Gumagamit ng nasuring materyal o nagsasabing tiyakin pa; payak ang paliwanag at pinasasabi ang pagkaunawa. Tinutukoy ang makapagkukumpirma at tatanggap; tinatanong ang may pasya at paano/kailan ang tugon nang walang gabay.",
+                    "en": "States the recurring question, timing and uncertainty without prompting; omits unnecessary identifying details. Uses team-checked material or clearly says details need confirmation; explains simply and asks the resident to describe understanding. Identifies who can confirm and receive the suggestion; asks who can decide and how/when feedback will arrive without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Kailangan ng gabay upang ihiwalay ang fakta sa hinala o paikliin ang buod. Kailangan ng gabay sa materyal, payak na paliwanag o pagsuri sa pagkaunawa. Alam na magtatanong sa team ngunit kailangan ng gabay sa contact, tanong o follow-up.",
+                    "en": "Needs a prompt to separate facts from guesses or shorten the summary. Needs prompting to check material, explain simply or check understanding. Knows to ask the team but needs prompts for the contact, specific question or follow-up."
+                  },
+                  "hindi_pa": {
+                    "fil": "Nag-iimbento ng dahilan o naglalantad ng makikilalang health detail. Inuulit bilang tiyak ang hindi pa kumpirmadong impormasyon. Nagpapahayag ng patakaran/approval nang walang awtoridad o nag-iimbento ng ruta sa board.",
+                    "en": "Invents causes or discloses identifying health details. Repeats unconfirmed activity information as fact. Announces unauthorised policy/approval or promises an invented board route."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "uhc-improvement",
+          "title": {
+            "fil": "Maliit na hakbang sa pagpapabuti",
+            "en": "One practical improvement"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-improvement/lesson.json",
+            "sha256_lf": "fac85f423354704270c6711eba97bfc041feeb7b68520e3ef1bafcfda5eccb84"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:02-uhc-act:indicator-3",
+            "chapter-1:02-uhc-act:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:02-uhc-act:lesson:uhc-improvement:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-improvement/competency.json",
+                "sha256_lf": "816ccd16b1a1ca53cd6555f15fbb668937e27e5157da9f23d4734d880d5910c6"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Sa hindi nagpapakilalang lokal na halimbawa, nagmumungkahi ang BHW ng isang maliit na pagpapabuti: obserbasyon, kumpirmasyon at pahintulot, konkretong unang hakbang, kayang oras/gamit, at pagbabalik gamit ang feedback.",
+                  "en": "In a non-identifying local example, the BHW proposes a small improvement with an observation, confirmation and agreement, a concrete first step, feasible time/materials, and a review using feedback."
+                },
+                "not_yet": {
+                  "fil": "Nangangako ng hindi kumpirmadong benepisyo, nagpapalit ng serbisyo/patakaran nang mag-isa, o walang konkretong unang hakbang at paraan ng pagbabalik.",
+                  "en": "Promises an unconfirmed benefit, changes services/policy alone, or gives no concrete first step and review method."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Walang prompt: inilalarawan ang obserbasyon, pinatutunayan sa tamang contact ang impormasyon at pahintulot, at nagsasaad ng maliit na gawain, responsable, kayang oras/gamit, petsa at palatandaang babalikan; binabago ang plano ayon sa feedback.",
+                    "en": "Without prompting: describes the observation, checks information and agreement with the responsible contact, and states a small action, owner, feasible time/materials, review date and indicator; revises the plan using feedback."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Nais makipag-usap at maliit ang mungkahi, ngunit kailangan ng prompt upang tukuyin ang pahintulot, responsable, oras/gamit o palatandaang babalikan.",
+                    "en": "Wants to discuss a small proposal but needs prompts to specify agreement, responsibility, time/materials or the review indicator."
+                  },
+                  "hindi_pa": {
+                    "fil": "Nangangako ng hindi kumpirmadong benepisyo, nagpapalit ng serbisyo/patakaran nang mag-isa, o walang konkretong unang hakbang at paraan ng pagbabalik.",
+                    "en": "Promises an unconfirmed benefit, changes services/policy alone, or gives no concrete first step and review method."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_key": "03-polisiya-bhs",
+      "component_id": "chapter-1:03-polisiya-bhs",
+      "title": {
+        "fil": "Mga Polisiya sa Barangay Health Station",
+        "en": "Policies at the Barangay Health Station"
+      },
+      "review_note": "Resolve memorized law numbers versus applied policy reasons, refusal alternatives versus prohibited workarounds, and combined lesson actions versus the guide's request for separate scores. Do not apply the older cooperation anchor automatically.",
+      "required_test_phases": [
+        "pretest",
+        "posttest"
+      ],
+      "required_lessons": [
+        {
+          "lesson_key": "bhs-promotions",
+          "title": {
+            "fil": "Pagkilala sa alok ng kumpanya",
+            "en": "Recognizing a company offer"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-promotions/lesson.json",
+            "sha256_lf": "aff0150bfbf7dc454d2e48aa49b16777bf99b76e82472ff9c689275d7799509c"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:03-polisiya-bhs:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:03-polisiya-bhs:lesson:bhs-promotions:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-promotions/competency.json",
+                "sha256_lf": "1fd7a862630827114b58843b370983522f181a9d1d8f4e3c8009ea6b13e5fd65"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Sa unbranded offer, natutukoy ang produkto, promosyon, lugar/kausap at insentibo; naihihiwalay ang polisiya, humihinto at idinudulog ang factual na detalye sa namamahala.",
+                  "en": "In an unbranded offer, identifies product, promotion, place/audience and inducement; distinguishes policy topics, pauses and routes factual details to the supervisor."
+                },
+                "not_yet": {
+                  "fil": "Tumatanggap, nagpapaskil o namimigay, nag-aapruba nang mag-isa, o hindi tinitingnan ang saklaw at detalye.",
+                  "en": "Accepts, displays or distributes, approves independently, or fails to check scope and details."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Natutukoy ang apat na detalye at tamang koordinasyon nang walang prompt; malinaw ang hangganan ng BHW.",
+                    "en": "Identifies all four details and correct coordination without prompting; clearly respects the BHW role boundary."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Nakikilala ang concern ngunit kailangan ng prompt sa saklaw, kausap o unang pagdulog.",
+                    "en": "Recognizes the concern but needs prompts about scope, audience or the first coordination step."
+                  },
+                  "hindi_pa": {
+                    "fil": "Tumatanggap o nag-aapruba nang mag-isa, o pinapantay ang lahat ng alok nang walang pagsusuri.",
+                    "en": "Accepts or approves independently, or treats all offers as identical without checking."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhs-support-environment",
+          "title": {
+            "fil": "Breastfeeding at kapaligiran",
+            "en": "Breastfeeding and the environment"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-support-environment/lesson.json",
+            "sha256_lf": "a02fcc065efaaa6f936908a926ea57ee2b6210930421cc97127bdccd437b3c56"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:03-polisiya-bhs:indicator-1",
+            "chapter-1:03-polisiya-bhs:indicator-2"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:03-polisiya-bhs:lesson:bhs-support-environment:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-support-environment/competency.json",
+                "sha256_lf": "5e10eed3d45c6c4551d9c57875b9531a01c2ffbde18ca6c5d02a792957cd8136"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Sa dalawang role-play, nakikinig nang magalang at may privacy, kinukumpirma ang sinanay na contact at lugar, ipinapasa sa supervisor ang non-clinical na alternatibo, at pinoprotektahan ang sterile at kinakailangang clinical supplies.",
+                  "en": "In both role-plays, listens respectfully with privacy, confirms the trained contact and space, asks the supervisor about the non-clinical alternative, and protects sterile and necessary clinical supplies."
+                },
+                "not_yet": {
+                  "fil": "Nangangako ng hindi kumpirmadong pasilidad o contact, pinipilit ang feeding choice, o nag-aalis o nagre-reuse ng clinical supplies nang kusa.",
+                  "en": "Promises an unconfirmed facility or contact, imposes a feeding choice, or independently removes or reuses clinical supplies."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipapakita ang lahat ng hakbang sa dalawang sitwasyon nang walang prompt at malinaw ang hangganan ng BHW at institusyon.",
+                    "en": "Demonstrates every step in both scenarios without prompting and distinguishes BHW and institution responsibilities."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Magalang at nakikilala ang safety boundary ngunit kailangan ng prompt sa privacy, contact, lugar o supervisor confirmation.",
+                    "en": "Uses respectful language and recognizes the safety boundary but needs a prompt on privacy, contact, space or supervisor confirmation."
+                  },
+                  "hindi_pa": {
+                    "fil": "May hindi kumpirmadong pangako, pamimilit o sariling pagbabago sa clinical supplies; kailangan munang itama bago ulitin ang role-play.",
+                    "en": "Makes an unconfirmed promise, imposes a choice or changes clinical supplies independently; needs correction before repeating the role-play."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhs-decline",
+          "title": {
+            "fil": "Magalang na pagtanggi",
+            "en": "Declining respectfully"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-decline/lesson.json",
+            "sha256_lf": "9a2bd5914bbf7c9caf826addd3595dbe4f730623151671ecb4a42c417aa6b29f"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:03-polisiya-bhs:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:03-polisiya-bhs:lesson:bhs-decline:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-decline/competency.json",
+                "sha256_lf": "4a504af465a238b0fd7c27d683fdafc03daeeb52a11f050c7a30078719afc3cc"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "1. Gumagamit ng magalang na tono at malinaw na tinutukoy ang hindi tatanggapin, ipapaskil o ipamimigay. 2. Itinutugma ang dahilan sa formula o prescription samples at inuulit ang hangganan nang walang workaround o pangakong exception. 3. Nagbibigay ng factual na handover sa natiyak na namamahala, kasama ang sariling tugon, walang datos ng pasyente.",
+                  "en": "1. Uses a respectful tone and explicitly names what will not be accepted, displayed or distributed. 2. Matches the reason to formula or prescription samples and repeats the boundary without a workaround or promised exception. 3. Gives a factual handover to the confirmed supervisor, including their response, without patient data."
+                },
+                "not_yet": {
+                  "fil": "1. Malabo ang pagtanggi o tinatanggap pa rin ang mga bagay. 2. Maling polisiya ang gamit o pumapayag sa alternatibong promosyon. 3. Walang pag-ulat o haka-haka at personal na datos ang ulat.",
+                  "en": "1. Refusal is ambiguous or the items are still accepted. 2. Uses the wrong policy or agrees to alternative promotion. 3. Omits reporting or includes speculation and patient data."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipapakita ang tatlong kilos nang walang prompt: malinaw na pagtanggi, tamang dahilan/matatag na hangganan, factual na ulat.",
+                    "en": "Demonstrates all three without prompting: clear refusal, accurate reason/firm boundary, factual report."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tamang direksiyon ngunit kailangan ng prompt sa isa o higit pang kilos.",
+                    "en": "Correct direction but needs a prompt for one or more actions."
+                  },
+                  "hindi_pa": {
+                    "fil": "Tumatanggap, may workaround, maling dahilan, o walang factual na ulat.",
+                    "en": "Accepts, arranges a workaround, gives a wrong reason, or omits factual reporting."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhs-resources",
+          "title": {
+            "fil": "Polisiya at paggamit ng rekurso",
+            "en": "Policies and resource use"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-resources/lesson.json",
+            "sha256_lf": "b8dbc2a7da3e7454b4c201f766bd88a292183fa33485337eaeaf9446dd2db224"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:03-polisiya-bhs:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:03-polisiya-bhs:lesson:bhs-resources:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-resources/competency.json",
+                "sha256_lf": "9a99342e7cdfa09b58c7e44d647ff477d0c3be69dc92436ca1157e57482d7e1f"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Sa dalawang card: (1) inilalarawan ang tiyak na resource concern nang factual; (2) tinutukoy ang polisiya, responsable at service/safety needs na dapat tiyakin; (3) ipinapaalam ang angkop na unang hakbang bago pagbabago, walang sariling cut, paglilipat o repair.",
+                  "en": "In both cards: (1) describes the specific resource concern factually; (2) identifies the policy, responsible person and service/safety needs to check; (3) communicates an appropriate first step before changes, without independent cuts, reallocation or repairs."
+                },
+                "not_yet": {
+                  "fil": "Kumikilos bago tiyakin ang requirements, nagtatabi ng supplies nang kusa, nag-iimbento ng savings o hindi matukoy ang contact at tuntunin.",
+                  "en": "Acts before checking requirements, sets supplies aside independently, invents savings or cannot identify the contact and rule."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipapakita ang tatlong kilos sa dalawang card nang walang prompt at malinaw ang hangganan ng tungkulin.",
+                    "en": "Demonstrates all three actions in both cards without prompts and explains role limits."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tamang direksiyon ngunit kailangan ng prompt sa factual na tala, requirements o pakikipag-ugnayan bago pagbabago.",
+                    "en": "Appropriate direction but needs prompts for the factual record, requirements or coordination before changes."
+                  },
+                  "hindi_pa": {
+                    "fil": "May sariling pagbabago o unsupported cut, o hindi matukoy ang dapat tiyakin; itama at ulitin bago masabing kaya na.",
+                    "en": "Makes an independent change or unsupported cut, or cannot identify what to check; correct and repeat before rating proficient."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhs-improvement",
+          "title": {
+            "fil": "Isang mungkahing maisasagawa",
+            "en": "One workable suggestion"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-improvement/lesson.json",
+            "sha256_lf": "c3d7783380457be72c686b7b40afc913429f64bd4046bd5bea25e92eb537094d"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:03-polisiya-bhs:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:03-polisiya-bhs:lesson:bhs-improvement:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-improvement/competency.json",
+                "sha256_lf": "340eb463a25f9a0639a00775cabf1c940848bdaef1ac36be09eb313f8d60bd1a"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Gamitin ang apat na linyang cue card: obserbasyon → panukala at dahilan → checks/contact → napagkasunduang follow-up. Magmodelo ng panukala. Palitan ang pangkalahatang reklamo ng tiyak na concern, saka tukuyin ang kilos na walang pahintulot o unsupported promise. Ulitin sa gustong wika, bawasan ang prompt, at muling obserbahan ang dalawang card matapos ang feedback. Kung hindi alam ang contact, kumpirmahin sa health team at magkasundo sa practice follow-up; huwag mag-imbento ng pahintulot.",
+                  "en": "Use a four-line cue card: observation → proposal and reason → checks/contact → agreed follow-up. Model one proposal. Have the learner replace a general complaint with a specific concern, then identify any unauthorized action or unsupported promise. Let them repeat in their preferred language, fade prompts, and re-observe both cards after feedback. If a local contact is unknown, help confirm it through the health team and agree a practice follow-up; do not invent authority."
+                },
+                "not_yet": {
+                  "fil": "Nagpapatupad bago may pahintulot, nangangako ng approval o savings, o walang tiyak na panukala at follow-up.",
+                  "en": "Implements before permission, promises approval or savings, or cannot state a specific proposal and follow-up."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipapakita ang tatlong kilos sa dalawang card nang walang prompt at malinaw ang hangganan ng tungkulin.",
+                    "en": "Demonstrates all three actions on both cards without prompts and explains role limits."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Praktikal ang panukala ngunit kailangan ng prompt sa concern, checks o napagkasunduang follow-up.",
+                    "en": "Proposal is feasible but needs prompts for the concern, checks or agreed follow-up."
+                  },
+                  "hindi_pa": {
+                    "fil": "May kilos na walang pahintulot o unsupported promise, o hindi makabuo ng tiyak na panukala; itama at ulitin.",
+                    "en": "Makes an unauthorized change or unsupported promise, or cannot form a specific proposal; correct and repeat."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_key": "04-ra7883",
+      "component_id": "chapter-1:04-ra7883",
+      "title": {
+        "fil": "RA 7883: Benepisyo, Karapatan, Akreditasyon",
+        "en": "RA 7883: Benefits, Rights, Accreditation"
+      },
+      "review_note": "Use fictional bounded explanations and verification questions. The legacy rubric asks for actual personal accreditation/standing and unaided recall in places; do not infer eligibility or require disclosure from the lesson practice.",
+      "required_test_phases": [
+        "pretest",
+        "posttest"
+      ],
+      "required_lessons": [
+        {
+          "lesson_key": "bhw-legal-role",
+          "title": {
+            "fil": "Legal na batayan ng tungkulin",
+            "en": "The legal basis of the role"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/lesson.json",
+            "sha256_lf": "cd57b666f5139ca7e5c5ce7cadcd2f6adcec6446731f91762cbe927f477fcb72"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:04-ra7883:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:04-ra7883:lesson:bhw-legal-role:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/competency.json",
+                "sha256_lf": "82ea9e2cd95ca6a8846c7b99be2454a8a3df3c0895705f6b29a596df3d1ba38b"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Sa dalawang fictional case, ipinaliliwanag ang pagsasanay, boluntaryong primary health care at akreditasyon ayon sa RA 7883; pinapangalanan ang local health board at inihihiwalay ang support; pumipili ng contact/ebidensiya sa pag-verify nang walang unsupported claim.",
+                  "en": "On both fictional cases, explains training, voluntary community primary health care and accreditation under RA 7883; identifies the local health board and distinguishes support; chooses a contact/evidence verification step without unsupported claims."
+                },
+                "not_yet": {
+                  "fil": "Ginagawang akreditasyon ang karanasan o nangangako ng benepisyo/appointment; kulang ang batayan, awtoridad o pag-verify.",
+                  "en": "Treats experience as accreditation or promises benefits/appointment; lacks the legal basis, authority or verification."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipapaliwanag ang tatlong legal na bahagi, tamang awtoridad at hakbang sa pag-verify sa dalawang kaso nang walang prompt.",
+                    "en": "Explains all three legal elements, the proper authority and verification step on both cases without prompts."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tama ang direksiyon ngunit kailangan ng prompt sa legal na bahagi, awtoridad o contact/ebidensiya.",
+                    "en": "Direction is sound but needs prompts for legal elements, authority or contact/evidence."
+                  },
+                  "hindi_pa": {
+                    "fil": "Ipinapalagay ang katayuan o benepisyo nang walang ebidensiya, o hindi maipaliwanag ang batayan/awtoridad; itama at ulitin.",
+                    "en": "Assumes status or benefits without evidence, or cannot explain basis/authority; correct and repeat."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-benefits",
+          "title": {
+            "fil": "Benepisyo at mga kondisyon",
+            "en": "Benefits and conditions"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/lesson.json",
+            "sha256_lf": "69dc06f5b78420837afd2f2c2f056fcb97522ba9edde9a03859873dac94af53e"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:04-ra7883:indicator-2"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:04-ra7883:lesson:bhw-benefits:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/competency.json",
+                "sha256_lf": "4bd1fd476d26acdf9c9d31648cb932175e42c6c6b131eee2b65e940d503c3b42"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Naipapangalan at naipapaliwanag ang anim na kategorya gamit ang listahan; naihihiwalay ang katayuan/rehistrasyon at specific conditions; nakapipili ng verification sa tamang awtoridad/contact nang walang garantiya, imbentong quota o pagsisi.",
+                  "en": "Names and explains the six categories using the reference list; distinguishes status/registration and specific conditions; chooses verification with the proper authority/contact without guarantees, invented quotas or blame."
+                },
+                "not_yet": {
+                  "fil": "Nangangako pa rin ng awtomatikong pantay na bayad o credential-only entitlement, nag-iimbento ng quota o naninisi, o hindi maiugnay ang benepisyo sa verification.",
+                  "en": "Still promises automatic equal payment or credential-only entitlement, invents quotas or blames non-recipients, or cannot connect the benefit with verification."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Tamang kategorya, shared at specific conditions, at tiyak na verification nang walang untag o pangako.",
+                    "en": "Accurate categories, shared and specific conditions, and specific verification without prompts or promises."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tama ang direksiyon ngunit kailangan ng untag sa kondisyon, provider o ebidensiya.",
+                    "en": "Correct direction but needs prompts for conditions, provider or evidence."
+                  },
+                  "hindi_pa": {
+                    "fil": "Hindi pa maiugnay ang benepisyo sa kondisyon at verification, o nagpapatuloy ang garantiya, imbentong quota o pagsisi.",
+                    "en": "Cannot yet connect benefits with conditions and verification, or persists with guarantees, invented quotas or blame."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-eligibility",
+          "title": {
+            "fil": "Pag-unawa sa BHWE",
+            "en": "Understanding BHWE"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/lesson.json",
+            "sha256_lf": "fd8f47dfbda6b555c0d2d607561b37558128d69a63c41299fae23eb96cf8f17c"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:04-ra7883:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:04-ra7883:lesson:bhw-eligibility:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/competency.json",
+                "sha256_lf": "336ea19b4df0a47bb1128d574d8f73107e935d68add7431fd6266041b7339a0f"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Naipapaliwanag ang apat na pangkat ng BHWE conditions, naihihiwalay ang kabuuang serbisyo sa qualifying accredited service, at nakabubuo ng tiyak na CSC verification question tungkol sa ebidensiya/uncertainty nang walang pangako ng eligibility o appointment.",
+                  "en": "Explains the four BHWE condition groups, distinguishes total service from qualifying accredited service, and forms a specific CSC question about evidence/uncertainty without promising eligibility or appointment."
+                },
+                "not_yet": {
+                  "fil": "Itinuturing pa rin na sapat ang accreditation, total years o JO/COS label, o nangangako ng BHWE/trabaho nang walang kondisyon at verification.",
+                  "en": "Still treats accreditation, total years or a JO/COS label as sufficient, or promises BHWE/a job without conditions and verification."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Tamang kondisyon, accredited-service count at uncertainty, at tiyak na CSC verification nang walang untag o pangako.",
+                    "en": "Accurate conditions, accredited-service count and uncertainty, and specific CSC verification without prompts or promises."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tama ang direksiyon ngunit kailangan ng untag sa edukasyon, service period, arrangement o ebidensiya/contact.",
+                    "en": "Correct direction but needs prompts for education, service period, arrangement or evidence/contact."
+                  },
+                  "hindi_pa": {
+                    "fil": "Hindi pa naihihiwalay ang kondisyon at serbisyo, nagpapasya mula sa label, o nagpapatuloy ang pangako ng approval/appointment.",
+                    "en": "Cannot yet distinguish conditions and service, decides from a label, or persists with promises of approval/appointment."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-accreditation",
+          "title": {
+            "fil": "Proseso ng akreditasyon",
+            "en": "The accreditation process"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/lesson.json",
+            "sha256_lf": "1996c43e4c285426109739bb6bbe17d28b6d08a462073959ee761fa8cc8a92dd"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:04-ra7883:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:04-ra7883:lesson:bhw-accreditation:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/competency.json",
+                "sha256_lf": "aa73beae0c1639f4686ad31519645bcbf3349580ffc4c991d8922512ce8301f6"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Naipapaliwanag at nailalapat ang papel ng board at komite sa kathang sitwasyon, naihihiwalay ang alam sa kulang na pasya/tala, at nakabubuo ng tiyak na lokal na tanong tungkol sa proseso at susunod na hakbang nang walang pag-aangkin ng akreditasyon.",
+                  "en": "Explains and applies board and committee roles in a fictional situation, separates known facts from a missing decision/record, and forms a specific local process/next-step question without asserting accreditation."
+                },
+                "not_yet": {
+                  "fil": "Itinuturing na automatic approval ang rekomendasyon o credential, hindi natutukoy ang kulang na impormasyon, o nangangako ng akreditasyon mula sa card lamang.",
+                  "en": "Treats a recommendation or credential as automatic approval, cannot identify missing information, or promises accreditation from the card alone."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Tamang papel, alam/kulang na impormasyon at tiyak na tanong sa opisyal na pasya/tala at susunod na hakbang, nang walang untag o pag-aangkin ng status.",
+                    "en": "Accurate roles, known/missing information and a specific question about the official decision/record and next step, without prompts or status claims."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tama ang direksiyon ngunit kailangan ng untag upang ihiwalay ang rekomendasyon sa pasya, tukuyin ang kulang o gawing tiyak ang lokal na tanong.",
+                    "en": "Correct direction but needs prompts to distinguish recommendation from decision, identify the gap or make the local question specific."
+                  },
+                  "hindi_pa": {
+                    "fil": "Hindi pa naihihiwalay ang papel at pasya, nagpapasya mula sa label o rekomendasyon, o hindi pa matukoy ang kulang at tamang tanong.",
+                    "en": "Cannot yet distinguish roles and decisions, decides from a label or recommendation, or cannot identify the gap and appropriate question."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-follow-up",
+          "title": {
+            "fil": "Maayos na follow-up",
+            "en": "Following up constructively"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/lesson.json",
+            "sha256_lf": "e7f3ce456602b33aea3888b8e7c110713c1cf82d5792eb5f10c99ec95e116e3f"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:04-ra7883:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:04-ra7883:lesson:bhw-follow-up:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/competency.json",
+                "sha256_lf": "25876de02f5611f3cb5ecd2a3e235d8dc2c40995a9244245e4365577f57832ee"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Ihiwalay ang alam sa unknown, bumuo ng specific question sa tamang contact, ulitin at linawin ang sagot, at tukuyin ang bounded next step.",
+                  "en": "Distinguish facts from unknowns, form a specific question through the appropriate contact, repeat and clarify the response, and identify a bounded next step."
+                },
+                "not_yet": {
+                  "fil": "Patuloy na ipinapalagay ang approval o sanhi, o wala pang specific question at clarification matapos ang suporta; magmodelo at ulitin.",
+                  "en": "Still assumes approval or cause, or cannot yet form a specific question and clarification after support; model and repeat."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipapakita ang lahat ng kilos sa dalawang staff card nang walang prompt.",
+                    "en": "Demonstrates every action on two staff cards without prompts."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tamang direksiyon, may prompt sa facts, question, clarification o next step.",
+                    "en": "Sound direction, with prompts for facts, question, clarification or next step."
+                  },
+                  "hindi_pa": {
+                    "fil": "May unconfirmed assumption o kulang na question/clarification matapos ang suporta; kailangan ng model at re-practice.",
+                    "en": "An unconfirmed assumption or missing question/clarification remains after support; needs modelling and re-practice."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_key": "05-bhw-at-barangay",
+      "component_id": "chapter-1:05-bhw-at-barangay",
+      "title": {
+        "fil": "Ang BHW at ang Kanyang Barangay",
+        "en": "The BHW and Their Barangay"
+      },
+      "review_note": "A justified contact choice, additional local roles, teamwork and self-management are different evidence units. Neither political influence nor granted resources is a performance criterion. Self-management evidence does not automatically establish the older weekly-plan requirement.",
+      "required_test_phases": [
+        "pretest",
+        "posttest"
+      ],
+      "required_lessons": [
+        {
+          "lesson_key": "bhw-relationships",
+          "title": {
+            "fil": "Apat na ugnayan",
+            "en": "Four working relationships"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/lesson.json",
+            "sha256_lf": "d2d088b5dfad39821655f2b0b73ca7365032ffea6e366c8846f3d0196471a374"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:05-bhw-at-barangay:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:05-bhw-at-barangay:lesson:bhw-relationships:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/competency.json",
+                "sha256_lf": "d100767af61d22cedc1a203dee8d0d5b6d25297761522cfe0b2542eef550507b"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Naipapaliwanag ang layunin at hangganan ng apat na ugnayan; pumipili ng angkop na contact sa kathang-isip na sitwasyon, nagbibigay ng dahilan at tanong na maglilinaw ng papel, habang iginagalang ang nais ng residente.",
+                  "en": "Explains the purpose and limit of all four relationships; chooses an appropriate contact in a fictional situation, gives a reason and a role-clarifying question, while respecting the resident’s preferences."
+                },
+                "not_yet": {
+                  "fil": "Hindi pa maihiwalay ang propesyonal na tanong sa praktikal na suporta, o nagpapasya para sa residente nang hindi nagtatanong.",
+                  "en": "Cannot yet distinguish professional questions from practical support, or decides for the resident without asking."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Nang walang untag, naipapaliwanag ang apat na papel at hangganan, pumipili ayon sa alalahanin, nagbibigay ng dahilan at tanong upang tiyakin ang papel, at kinikilala ang nais ng residente.",
+                    "en": "Without prompting, explains all four roles and limits, chooses by the concern, gives a reason and role-verification question, and recognizes the resident’s preferences."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Angkop ang direksiyon ngunit kailangan ng untag sa isang papel, hangganan o tanong na maglilinaw.",
+                    "en": "Sound direction but needs a prompt for a role, boundary or clarification question."
+                  },
+                  "hindi_pa": {
+                    "fil": "Matapos ang suporta, hindi pa angkop ang paliwanag o pagpili; ipinapalit ang posisyon o karanasan sa propesyonal na pagtatasa. Magmodelo at magsanay muli.",
+                    "en": "After support, explanation or choice remains inappropriate; substitutes rank or peer experience for professional assessment. Model and practise again."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-barangay-partners",
+          "title": {
+            "fil": "Mga katuwang sa barangay",
+            "en": "Barangay partners"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-barangay-partners/lesson.json",
+            "sha256_lf": "741abdbbd2ba59020a16f3a2adf22e1bdc4fb306b3f122cfe15a6ace8640f47e"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:05-bhw-at-barangay:indicator-2"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:05-bhw-at-barangay:lesson:bhw-barangay-partners:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-barangay-partners/competency.json",
+                "sha256_lf": "43d18fe2b48a4205b7bf46cd4d45f30907f78f2ee8cf0682a283d395e486da47"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Naipapaliwanag ang papel ng barangay partners, nagbibigay ng angkop na dahilan at malinaw na kahilingan, at nagtatanong upang tiyakin ang lokal na proseso at suporta.",
+                  "en": "Explains barangay partners’ roles, gives a justified choice and clear request, and asks how to confirm local process and support."
+                },
+                "not_yet": {
+                  "fil": "Hindi pa tugma ang papel at kailangan, o nangangako ng suporta nang walang kumpirmasyon.",
+                  "en": "Does not yet match role and need, or promises support without confirmation."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Nang walang untag, ipinapaliwanag ang mga papel at hangganan, nagbibigay ng malinaw na kahilingan at tanong na maglilinaw ng proseso.",
+                    "en": "Without prompting, explains roles and limits, gives a clear request and a question to clarify the process."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Angkop ang direksiyon ngunit kailangan ng untag sa papel, kahilingan o pagtitiyak.",
+                    "en": "Sound direction but needs a prompt about the role, request or verification."
+                  },
+                  "hindi_pa": {
+                    "fil": "Matapos ang suporta, hindi pa tugma ang papel o nangangako ng hindi kumpirmadong suporta. Magmodelo at magsanay muli.",
+                    "en": "After support, still mismatches the role or promises unconfirmed support. Model and practise again."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-local-partners",
+          "title": {
+            "fil": "Mga katuwang sa lungsod o munisipyo",
+            "en": "City or municipal partners"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/lesson.json",
+            "sha256_lf": "92dd2ab3b62314359c5709bd0739a51342bcb9e6bab7279617ba9b568a5606ac"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:05-bhw-at-barangay:indicator-2"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:05-bhw-at-barangay:lesson:bhw-local-partners:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/competency.json",
+                "sha256_lf": "9582e24d5062c32c6e5433daab7472f4bb8933d5bc10692dd0a1598b517acf18"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Sa isang sitwasyon, naipapaliwanag ang angkop na city o municipal contact, nasasabi ang unang hakbang sa lokal na pagtiyak at pahintulot, at iniiwasan ang di-awtorisadong pangako o labis na pagbabahagi.",
+                  "en": "In a scenario, explains the appropriate city or municipal contact, states a first step to verify the local route and consent, and avoids unauthorized promises or excessive disclosure."
+                },
+                "not_yet": {
+                  "fil": "Hindi pa natutukoy ang angkop na contact o nangangako at nagbabahagi nang walang pagtiyak.",
+                  "en": "Cannot yet identify a suitable contact or promises and discloses without checking."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Tamang contact, pahintulot, lokal na pagtiyak at minimum na impormasyon nang walang gabay.",
+                    "en": "Appropriate contact, consent, local verification and minimum information without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tamang direksiyon ngunit kailangang ipaalaala ang pahintulot o pagtiyak.",
+                    "en": "Sound direction but needs a reminder about consent or verification."
+                  },
+                  "hindi_pa": {
+                    "fil": "Maling contact, walang pagtiyak, o may pangakong hindi saklaw.",
+                    "en": "Wrong contact, no verification, or a promise beyond the role."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-teamwork",
+          "title": {
+            "fil": "Mabuting pagtutulungan",
+            "en": "Working well as a team"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/lesson.json",
+            "sha256_lf": "801bdf59abccb0481de63442ada80aec4143d8fc9c27bdd727e35dc02e9002df"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:05-bhw-at-barangay:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:05-bhw-at-barangay:lesson:bhw-teamwork:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/competency.json",
+                "sha256_lf": "a4896fb21601294e2f28a70c0229b990c3d0c7ec152614fbeab3d1c19af301ca"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Sa kathang-isip na sitwasyon, naipapaliwanag at naipakikita ang hindi bababa sa tatlo sa limang gawi: nililinaw ang layunin at sariling tungkulin, maagang nakikipag-usap nang magalang, at tinitiyak ang pahintulot, pagtanggap at pagbalita sa pagtatapos ng pagpasa ng gawain.",
+                  "en": "In a fictional situation, explains and demonstrates at least three of the five practices: clarifies the purpose and own role, communicates early and respectfully, and confirms permission, acceptance and a completion update during a handoff."
+                },
+                "not_yet": {
+                  "fil": "Hindi pa malinaw ang kasunduan, o kumikilos nang lampas sa awtorisasyon o nagbubunyag ng pribadong detalye.",
+                  "en": "The agreement remains unclear, or the learner acts beyond authorization or discloses private details."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naipapakita nang walang untag ang hindi bababa sa tatlong gawi at kumpletong ligtas na kasunduan: gawain, tatanggap, oras, kinakailangang pahintulot at pagbalita.",
+                    "en": "Without prompting, demonstrates at least three practices and a complete safe agreement: task, recipient, time, required permission and update."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Magalang at ligtas ang direksiyon ngunit kailangan ng untag upang makumpleto ang tungkulin, pagtanggap o pagbalita; ulitin ang pagsasanay.",
+                    "en": "The approach is respectful and safe but needs prompting to complete the role, acceptance or update; repeat the practice."
+                  },
+                  "hindi_pa": {
+                    "fil": "Hindi pa naipapakita ang tatlong gawi o nananatiling hindi ligtas ang tugon matapos ang suporta; magmodelo at muling magsanay.",
+                    "en": "Does not yet demonstrate three practices or the response remains unsafe after support; model the response and practise again."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-self-management",
+          "title": {
+            "fil": "Pamamahala sa sarili",
+            "en": "Managing your own work"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/lesson.json",
+            "sha256_lf": "0158c06b56a1b6e44e722d15eadc6b42557935dca543a04324b3c3b6b8890bae"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:05-bhw-at-barangay:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:05-bhw-at-barangay:lesson:bhw-self-management:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/competency.json",
+                "sha256_lf": "949ac85dbb1ce10a8b3b0ba12609d1e68e2f5390660881527bde2651b44b50df"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Pangalanan ang anim na kasanayan; piliin at ipaliwanag ang tapat at makatotohanang tugon sa pagbabago; gumawa ng isang SMART goal at oras ng pagrepaso.",
+                  "en": "Names all six skills; chooses and explains an honest, realistic response to change; creates one SMART goal and a review time."
+                },
+                "not_yet": {
+                  "fil": "Itinuturing na pagiging maaasahan ang pag-ako sa lahat o maling pag-ulat; hindi pa mailapat ang anim na kasanayan o masabi kung paano susukatin ang layunin.",
+                  "en": "Treats taking on everything or inaccurate reporting as reliability; cannot yet apply the six skills or explain how the goal will be measured."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Anim na kasanayan, angkop na tugon na may paliwanag, at layuning may kilos, sukatan at petsa nang walang untag.",
+                    "en": "Names six skills, explains the appropriate response and gives a goal with action, measure and date without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Angkop ang tugon ngunit kailangan ng untag sa isang kasanayan o sa sukatan at petsa ng layunin.",
+                    "en": "Chooses appropriately but needs a prompt for a skill or the goal’s measure and date."
+                  },
+                  "hindi_pa": {
+                    "fil": "Pinipili ang pagtatago ng hadlang o maling ulat, o walang tiyak na kilos at pagrepaso sa layunin.",
+                    "en": "Chooses hiding difficulties or an inaccurate report, or gives no specific action and review for the goal."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "bhw-right-contact",
+          "title": {
+            "fil": "Piliin ang tamang lalapitan",
+            "en": "Choose the right contact"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-right-contact/lesson.json",
+            "sha256_lf": "d6e416e70fb5442a974a6874cbc918a56113d982d8abc89066c3edc0753e2cf0"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:05-bhw-at-barangay:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:05-bhw-at-barangay:lesson:bhw-right-contact:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-right-contact/competency.json",
+                "sha256_lf": "9c7fbc9df46ce3394809b67b46195835a1cf79eedd4b78e14f1fe59b03b616ad"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Tinutukoy ang pangangailangan at pagkaapurahan, pinipili ang angkop na contact sa loob ng saklaw, at ipinapaliwanag ang pagtitiyak at follow-up nang hindi inaantala ang agarang tulong.",
+                  "en": "Identifies need and urgency, chooses an appropriate contact within scope, and explains verification and follow-up without delaying immediate help."
+                },
+                "not_yet": {
+                  "fil": "Hindi pa naitutugma ang contact sa pangangailangan o ipinagpapaliban ang agarang tulong.",
+                  "en": "Does not yet match the contact to the need or delays immediate help."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Malayang naitutugma ang pangangailangan, contact, pagtitiyak at follow-up; pinananatili ang propesyonal na hangganan at agarang tulong.",
+                    "en": "Independently matches need, contact, verification and follow-up; maintains professional boundaries and timely help."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Tama ang direksiyon ngunit kailangan ng tanong upang linawin ang saklaw, alternatibong contact o follow-up.",
+                    "en": "Direction is appropriate but prompting is needed to clarify scope, an alternative contact or follow-up."
+                  },
+                  "hindi_pa": {
+                    "fil": "Hindi angkop ang contact o hakbang, nangangako ng hindi kumpirmadong suporta, o pinaghihintay ang agarang tulong.",
+                    "en": "Contact or action is inappropriate, promises unconfirmed support, or makes immediate help wait."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_key": "06-komunikasyon",
+      "component_id": "chapter-1:06-komunikasyon",
+      "title": {
+        "fil": "Epektibong Komunikasyon",
+        "en": "Effective Communication"
+      },
+      "review_note": "Clarification and corrected-summary evidence is more specific than the broad legacy listening anchor. Review whether it needs its own criterion. Each lesson's objective 0 is not module objective 0. A combined communication component requires all its approved criteria.",
+      "required_test_phases": [
+        "pretest",
+        "posttest"
+      ],
+      "required_lessons": [
+        {
+          "lesson_key": "communication-listen",
+          "title": {
+            "fil": "Makinig nang may respeto",
+            "en": "Listen with respect"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json",
+            "sha256_lf": "29ead2806a679d570c3732c12a18a035b0470b7f92f8bddf5340bb34df366097"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:06-komunikasyon:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:06-komunikasyon:lesson:communication-listen:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/competency.json",
+                "sha256_lf": "27124c791fb4602cdebdb0202b2bf00e9af8f670b356465cc79a0ada6ff4b4f5"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Humihingi ng pahintulot; tinatanong ang gustong wika at lugar; hindi sumasabat; ibinabalik ang concern sa sariling salita at tinatanong kung tama.",
+                  "en": "Asks permission; checks language and setting; allows the person to finish; paraphrases the concern and asks whether it is accurate."
+                },
+                "not_yet": {
+                  "fil": "Kinukumpleto ang profile mula sa hula o sagot ng iba nang hindi kinakausap si Liza.",
+                  "en": "Completes the profile from guesses or another person’s answers without consulting Liza."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Humihingi ng pahintulot; tinatanong ang gustong wika at lugar; hindi sumasabat; ibinabalik ang concern sa sariling salita at tinatanong kung tama. Nagagawa kahit hindi pinapaalalahanan.",
+                    "en": "Asks permission; checks language and setting; allows the person to finish; paraphrases the concern and asks whether it is accurate. Completes this without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Nakikinig ngunit nalilimutan ang pahintulot o pagtiyak sa buod; ipakita ang apat na hakbang at ipaulit.",
+                    "en": "Listens but misses permission or checking the summary; show the four steps and repeat."
+                  },
+                  "hindi_pa": {
+                    "fil": "Kinukumpleto ang profile mula sa hula o sagot ng iba nang hindi kinakausap si Liza.",
+                    "en": "Completes the profile from guesses or another person’s answers without consulting Liza."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "communication-clarify",
+          "title": {
+            "fil": "Magtanong at maglinaw",
+            "en": "Ask and clarify"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+            "sha256_lf": "66045f6eee1bc0d3acba05fca6ab0d52f0cc9883dfb791ae64bd7e7f074a3b74"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:06-komunikasyon:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:06-komunikasyon:lesson:communication-clarify:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/competency.json",
+                "sha256_lf": "c23f71dd46321eaaee92ea305d37661ed62760ce6cacddad8098b7b9fb095c56"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Nagbibigay ng bukas na paanyaya, nagtatanong ng isang kaugnay na neutral na paglilinaw, naghihintay at tumatanggap ng pagwawasto, at ipinakukumpirma ang inayos na buod.",
+                  "en": "Gives an open invitation, asks one relevant neutral clarification, allows an answer and correction, and confirms the corrected summary."
+                },
+                "not_yet": {
+                  "fil": "Sa nasaksihang attempt, ipinipilit ang motibo o unang interpretasyon at hindi ipinakukumpirma ang inayos na buod.",
+                  "en": "In an observed attempt, insists on a motive or first interpretation and does not confirm the corrected summary."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Independent na naipakita ang buong sequence, kabilang ang pagtanggap at pagkumpirma ng pagwawasto, nang walang prompt.",
+                    "en": "Independently demonstrates the complete sequence, including accepting and confirming a correction, without prompts."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Naipakita ang sequence nang may prompt sa neutral na tanong o pagwawasto ng buod; ulitin para sa independent na demonstration.",
+                    "en": "Demonstrates the sequence with prompts for a neutral question or corrected summary; retry for independent demonstration."
+                  },
+                  "hindi_pa": {
+                    "fil": "Sa aktuwal na attempt, patuloy na ipinipilit ang motibo o maling buod kahit may prompt. Kung walang direktang nasaksihan, markahang not observed, hindi antas na ito.",
+                    "en": "In an actual attempt, continues to insist on a motive or incorrect summary despite prompts. If no performance was directly observed, mark not observed rather than this level."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "communication-explain",
+          "title": {
+            "fil": "Empathy at malinaw na paliwanag",
+            "en": "Empathy and clear explanations"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+            "sha256_lf": "7b3f165c79588f5201ed37cc0c3ec1208bed017040435099a81d0386514020fa"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:06-komunikasyon:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:06-komunikasyon:lesson:communication-explain:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/competency.json",
+                "sha256_lf": "0fd9f7e8f94d45d254f2b4a2d5b94d402af4a359fb354ca6b71a39589dbfc273"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Kinikilala ang concern nang walang paninisi; nagbibigay ng isang tamang hakbang sa saklaw ng BHW; nagtatanong ng sariling paliwanag; inaayos ang maling pagkaunawa at muling sinusuri; sinasabi ang hindi pa kumpirmado.",
+                  "en": "Acknowledges the concern without blame; gives one correct step within the BHW role; invites an explanation in the person’s own words; repairs misunderstanding and checks again; states what is unconfirmed."
+                },
+                "not_yet": {
+                  "fil": "Walang direktang ebidensiya ng pagtatangka, o nagbibigay ng diagnosis, paggamot o garantiyang serbisyo, o inaantala ang agarang tulong. Itala ang eksaktong kulang o hindi ligtas; ipamodel at ipaulit.",
+                  "en": "No direct evidence of an attempt, or gives a diagnosis, treatment or guaranteed service, or delays immediate help. Record the missing or unsafe action; model and retry."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Kinikilala ang concern nang walang paninisi; nagbibigay ng isang tamang hakbang sa saklaw ng BHW; nagtatanong ng sariling paliwanag; inaayos ang maling pagkaunawa at muling sinusuri; sinasabi ang hindi pa kumpirmado. Nagagawa nang walang prompt sa direktang naobserbahang pagtatangka.",
+                    "en": "Acknowledges the concern without blame; gives one correct step within the BHW role; invites an explanation in the person’s own words; repairs misunderstanding and checks again; states what is unconfirmed. Performs without prompting in a directly observed attempt."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Angkop ang hakbang ngunit kailangan ng prompt sa teach-back, repair o recheck; halimbawa, pagtango lamang ang unang check. Itala ang tulong at ipaulit nang malaya.",
+                    "en": "The step is appropriate but teach-back, repair or recheck needs prompting; for example, initially checks only for a nod. Record support and arrange an independent retry."
+                  },
+                  "hindi_pa": {
+                    "fil": "Walang direktang ebidensiya ng pagtatangka, o nagbibigay ng diagnosis, paggamot o garantiyang serbisyo, o inaantala ang agarang tulong. Itala ang eksaktong kulang o hindi ligtas; ipamodel at ipaulit.",
+                    "en": "No direct evidence of an attempt, or gives a diagnosis, treatment or guaranteed service, or delays immediate help. Record the missing or unsafe action; model and retry."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "communication-record",
+          "title": {
+            "fil": "Suriin at itala ang impormasyon",
+            "en": "Assess and record information"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+            "sha256_lf": "495c540197127bdf33fbbaf0408cb29486516e5972aabb067cfca93408b3bd12"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:06-komunikasyon:indicator-2",
+            "chapter-1:06-komunikasyon:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:06-komunikasyon:lesson:communication-record:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/competency.json",
+                "sha256_lf": "b53b7148981b1fa10f75208f1656379fe8f5b87e574550127246df86bbf2f045"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Iniuugnay ang bawat ulat sa pinagmulan, inihihiwalay ang direktang nakita sa hula, tapat na minamarkahan ang kulang, pumipili lamang ng kaugnay na detalye at tumutukoy ng angkop na beripikasyon.",
+                  "en": "Attributes each report, separates direct observation from inference, marks the gap honestly, selects only relevant details and names a suitable verification step."
+                },
+                "not_yet": {
+                  "fil": "Walang naobserbahang pagtatangka, o itinatala pa rin ang hula/opinyon bilang katotohanan kahit may tulong. Kung hindi nasaksihan, markahang hindi naobserbahan at magtakda ng direktang obserbasyon.",
+                  "en": "No attempt is observed, or guesses/opinions are still recorded as fact despite support. If not witnessed, mark not observed and arrange direct observation."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Iniuugnay ang bawat ulat sa pinagmulan, inihihiwalay ang direktang nakita sa hula, tapat na minamarkahan ang kulang, pumipili lamang ng kaugnay na detalye at tumutukoy ng angkop na beripikasyon. Nagagawa nang mag-isa at naitatala ang pinagmulan ng pagwawasto.",
+                    "en": "Attributes each report, separates direct observation from inference, marks the gap honestly, selects only relevant details and names a suitable verification step. Performs independently and retains the correction’s source."
+                  },
+                  "kailangan_practice": {
+                    "fil": "May pagtatangka; naihihiwalay ang ilang detalye ngunit kailangan ng prompt sa pinagmulan, kawalan ng katiyakan, kaugnayan o beripikasyon. Ulitin ang bahaging iyon.",
+                    "en": "Attempts the task and separates some details but needs prompts for attribution, uncertainty, relevance or verification. Repeat that part."
+                  },
+                  "hindi_pa": {
+                    "fil": "Walang naobserbahang pagtatangka, o itinatala pa rin ang hula/opinyon bilang katotohanan kahit may tulong. Kung hindi nasaksihan, markahang hindi naobserbahan at magtakda ng direktang obserbasyon.",
+                    "en": "No attempt is observed, or guesses/opinions are still recorded as fact despite support. If not witnessed, mark not observed and arrange direct observation."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "communication-handoff",
+          "title": {
+            "fil": "Ibahagi ang mahalagang impormasyon",
+            "en": "Share relevant information"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+            "sha256_lf": "ccedaec7e72abc55da249f953dec56a927b8703abb116ea43942e8cdfb68dafc"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:06-komunikasyon:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:06-komunikasyon:lesson:communication-handoff:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/competency.json",
+                "sha256_lf": "df5ebb8a67c4bc0189e93b9b6ddaad4f74fcd2462414fbff8be7137ff87c3ead"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Tinutukoy ang awtorisadong tatanggap; malinaw ang concern, pinagmulan at hindi pa tiyak; humihingi ng aksyon sa loob ng tungkulin ng BHW; pinipili ang natiyak na ligtas na paraan; kinukumpirma ang pagtanggap at kung sino ang gagawa ng ano at kailan o paano susundan.",
+                  "en": "Identifies the authorized recipient; reports the concern, source and uncertainty clearly; requests action within the BHW role; selects a verified secure method; confirms receipt and who will do what and when or how to follow up."
+                },
+                "not_yet": {
+                  "fil": "Walang direktang ebidensya pa, o naglalantad ng pribadong form, nag-iimbento ng katiyakan o pangakong serbisyo; hindi naipapakita ang ligtas na ulat at kumpirmasyon.",
+                  "en": "No direct evidence yet, or exposes a private form, invents certainty or promises a service; does not demonstrate a secure handoff and confirmation."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Tinutukoy ang awtorisadong tatanggap; malinaw ang concern, pinagmulan at hindi pa tiyak; humihingi ng aksyon sa loob ng tungkulin ng BHW; pinipili ang natiyak na ligtas na paraan; kinukumpirma ang pagtanggap at kung sino ang gagawa ng ano at kailan o paano susundan. Nagagawa nang walang paalala; itinatama nang tapat ang kulang na detalye.",
+                    "en": "Identifies the authorized recipient; reports the concern, source and uncertainty clearly; requests action within the BHW role; selects a verified secure method; confirms receipt and who will do what and when or how to follow up. Does this independently and honestly corrects missing details."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Nagbibigay ng kaugnay na ulat sa tulong ng prompt ngunit kulang ang pinagmulan, ligtas na paraan o may-ari at oras/paraan ng follow-up. Ulitin ang kulang na bahagi bago muling obserbahan.",
+                    "en": "Gives a relevant report with prompts but omits a source, secure method or follow-up owner and time/method. Retry the missing part before another observation."
+                  },
+                  "hindi_pa": {
+                    "fil": "Walang direktang ebidensya pa, o naglalantad ng pribadong form, nag-iimbento ng katiyakan o pangakong serbisyo; hindi naipapakita ang ligtas na ulat at kumpirmasyon.",
+                    "en": "No direct evidence yet, or exposes a private form, invents certainty or promises a service; does not demonstrate a secure handoff and confirmation."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_key": "07-problema",
+      "component_id": "chapter-1:07-problema",
+      "title": {
+        "fil": "Pagkilala sa Problema at Pagpaplano ng Solusyon",
+        "en": "Identifying Problems and Planning Solutions"
+      },
+      "review_note": "Lesson criteria expand the corresponding legacy objective with sources, unknowns, feasibility calculations, agreement and a complete outcome-review plan. Stronger lesson requirements must be accepted explicitly rather than imposed via an implicit map.",
+      "required_test_phases": [
+        "pretest",
+        "posttest"
+      ],
+      "required_lessons": [
+        {
+          "lesson_key": "problem-define",
+          "title": {
+            "fil": "Linawin ang problema",
+            "en": "Define the problem"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json",
+            "sha256_lf": "c1925706639f25eb9dc60addddd87b3e92f820253899acd1ac83cf2a6dfd194e"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:07-problema:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:07-problema:lesson:problem-define:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/competency.json",
+                "sha256_lf": "de00ae3b4f06d066b43e27b38d9983b45fe5440cefc5cd82145ab5e82fb83328"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Isinusulat ang tiyak na pangyayari at saklaw; tinutukoy ang pinagmulan; pinapangalanan ang isang kulang na impormasyon; walang paninisi.",
+                  "en": "States the event and scope, identifies the source, names one information gap and avoids blame."
+                },
+                "not_yet": {
+                  "fil": "Husga sa pamilya o napiling solusyon ang ipinapalit sa problema.",
+                  "en": "Substitutes a judgment about families or a chosen solution for the problem."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Isinusulat at winawasto nang mag-isa ang pangyayari/saklaw, pinagmulan at isang kulang, nang walang paninisi; naiuugnay ang pagwawasto sa nagsabi.",
+                    "en": "Independently writes and revises event/scope, source and one gap without blame; attributes the correction."
+                  },
+                  "kailangan_practice": {
+                    "fil": "May nasaksihang attempt ngunit kailangan ng prompt sa pangyayari/saklaw, pinagmulan, kulang o pag-alis ng paninisi; ulitin pagkatapos ng feedback.",
+                    "en": "A witnessed attempt needs a prompt for event/scope, source, gap or removing blame; retry after feedback."
+                  },
+                  "hindi_pa": {
+                    "fil": "Sa nasaksihang attempt, husga o solusyon pa rin ang ipinapalit sa problema kahit may tulong. Ang hindi nasaksihan ay hiwalay na hindi naobserbahan.",
+                    "en": "In a witnessed attempt, judgment or solution still replaces the problem despite support. Unwitnessed work is separately not observed."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "problem-causes",
+          "title": {
+            "fil": "Hanapin ang mga sanhi",
+            "en": "Investigate causes"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/lesson.json",
+            "sha256_lf": "c2ef49777b95d37f1a13f226f6f1d7955c990530d24d038f44293d9ea674251c"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:07-problema:indicator-2"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:07-problema:lesson:problem-causes:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/competency.json",
+                "sha256_lf": "124ef2410693af652953e53457de1d88e6c2dd7879ce06eeff8987c8270ab8da"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Gumagawa ng dalawang posibleng sangay na may pinagmulan at status; nagtatanong o pumipili ng tao/awtorisadong rekord sa bawat sangay; isinasama ang pananaw ng residente at itinatama ang arrow na walang suporta nang hindi gumagawa ng katiyakan.",
+                  "en": "Builds two plausible branches with sources and status; asks a verification question or identifies a person/authorized record for each; includes the resident’s perspective and corrects an unsupported arrow without inventing certainty."
+                },
+                "not_yet": {
+                  "fil": "Patuloy na itinuturing na tiyak ang mapanising arrow o hindi makagawa ng dalawang sangay matapos suportahan.",
+                  "en": "Persists in a blaming unsupported arrow or cannot produce two branches after support."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Gumagawa ng dalawang posibleng sangay na may pinagmulan at status; nagtatanong o pumipili ng tao/awtorisadong rekord sa bawat sangay; isinasama ang pananaw ng residente at itinatama ang arrow na walang suporta nang hindi gumagawa ng katiyakan. Nagagawa nang walang paalala.",
+                    "en": "Builds two plausible branches with sources and status; asks a verification question or identifies a person/authorized record for each; includes the resident’s perspective and corrects an unsupported arrow without inventing certainty. Completes this independently."
+                  },
+                  "kailangan_practice": {
+                    "fil": "May dalawang sangay ngunit kulang ang pinagmulan, status, beripikasyon o pagwawasto; nagagawa ang kulang matapos ang tiyak na paalala at pag-ulit.",
+                    "en": "Draws two branches but misses a source, status, verification step or correction; completes the gap after specific prompts and retry."
+                  },
+                  "hindi_pa": {
+                    "fil": "Patuloy na itinuturing na tiyak ang mapanising arrow o hindi makagawa ng dalawang sangay matapos suportahan.",
+                    "en": "Persists in a blaming unsupported arrow or cannot produce two branches after support."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "problem-prioritize",
+          "title": {
+            "fil": "Piliin ang uunahin",
+            "en": "Choose a priority"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/lesson.json",
+            "sha256_lf": "ed4a1d92b240f2b06e535352c769e6188e0bae10bcd058058054b9b114a52e9d"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:07-problema:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:07-problema:lesson:problem-prioritize:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/competency.json",
+                "sha256_lf": "8afedbb5def93d98bb5b1810846be527e28aa170cea229d940fea836a0662403"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Kwentahin ang tatlong total na 19/17/16, ipaliwanag ang apat na pamantayan at mas mataas na feasibility, humingi ng ebidensya at markahan ang hindi pa alam, bigyang-katwiran ang tie decision kasama ang partner, at sabihin na hindi naghihintay sa ranking ang agarang referral.",
+                  "en": "Calculates the three totals 19/17/16, explains the four criteria and higher feasibility, requests evidence and marks unknowns, justifies a tie decision with a partner, and states that urgent referral does not wait for ranking."
+                },
+                "not_yet": {
+                  "fil": "Hindi pa nagagawa kahit may scaffold, o ipinagpapaliban ang urgent care dahil sa ranking. Kung hindi nakita ang pagtatangka, markahang hindi naobserbahan; huwag gawing pasado o bagsak.",
+                  "en": "Cannot yet perform despite scaffolding, or delays urgent care because of ranking. An unseen attempt is not observed; do not treat it as a pass or failure."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Kwentahin ang tatlong total na 19/17/16, ipaliwanag ang apat na pamantayan at mas mataas na feasibility, humingi ng ebidensya at markahan ang hindi pa alam, bigyang-katwiran ang tie decision kasama ang partner, at sabihin na hindi naghihintay sa ranking ang agarang referral. Nagagawa nang walang prompt.",
+                    "en": "Calculates the three totals 19/17/16, explains the four criteria and higher feasibility, requests evidence and marks unknowns, justifies a tie decision with a partner, and states that urgent referral does not wait for ranking. Performs without prompts."
+                  },
+                  "kailangan_practice": {
+                    "fil": "May pagtatangka ngunit kailangan ng prompt sa arithmetic, ebidensya, feasibility o tie decision. Itala ang prompt at obserbahan ang retry.",
+                    "en": "Attempts the task but needs a prompt for arithmetic, evidence, feasibility or the tie decision. Record the prompt and observe the retry."
+                  },
+                  "hindi_pa": {
+                    "fil": "Hindi pa nagagawa kahit may scaffold, o ipinagpapaliban ang urgent care dahil sa ranking. Kung hindi nakita ang pagtatangka, markahang hindi naobserbahan; huwag gawing pasado o bagsak.",
+                    "en": "Cannot yet perform despite scaffolding, or delays urgent care because of ranking. An unseen attempt is not observed; do not treat it as a pass or failure."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "problem-action-plan",
+          "title": {
+            "fil": "Magplano ng aksyon",
+            "en": "Plan an action"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json",
+            "sha256_lf": "ca4dcc30ca64c0e06fd38abdda184be5ef92038de802dd096ff33cfe06f75263"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:07-problema:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:07-problema:lesson:problem-action-plan:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/competency.json",
+                "sha256_lf": "8948d0f54292d007ee43147c2a2c03b2b271a53804743abf7705d79bc845d282"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Inihahambing ang dalawang solusyon sa natiyak na sanhi; nagbibigay ng pitong-bahaging plano at hiwalay na kumpirmado/hinihintay na ambag; humihingi ng pagsang-ayon sa may tungkulin; inihahambing ang attendance sa invitations at nirerebisa ang plano nang walang hindi awtorisadong pangako.",
+                  "en": "Compares two solutions against the verified cause; presents a seven-field plan and separate confirmed/pending contributions; seeks agreement from responsible partners; compares attendance with invitations and revises without unauthorized promises."
+                },
+                "not_yet": {
+                  "fil": "Nangangako pa rin ng schedule o pondo nang walang pahintulot, o meeting count lamang ang resulta kahit may tulong. Kung walang nasaksihang pagtatangka, markahang hindi naobserbahan at magtakda ng direktang obserbasyon; huwag ipalagay na pasado o bagsak.",
+                  "en": "Still promises schedules or funding without agreement, or treats meeting count as the outcome despite support. If no attempt was witnessed, mark not observed and arrange direct observation; do not infer a pass or failure."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Inihahambing ang dalawang solusyon sa natiyak na sanhi; nagbibigay ng pitong-bahaging plano at hiwalay na kumpirmado/hinihintay na ambag; humihingi ng pagsang-ayon sa may tungkulin; inihahambing ang attendance sa invitations at nirerebisa ang plano nang walang hindi awtorisadong pangako. Nagagawa nang mag-isa.",
+                    "en": "Compares two solutions against the verified cause; presents a seven-field plan and separate confirmed/pending contributions; seeks agreement from responsible partners; compares attendance with invitations and revises without unauthorized promises. Performs independently."
+                  },
+                  "kailangan_practice": {
+                    "fil": "May pagtatangka ngunit kailangan ng prompt sa isang field, agreement status o sukatan ng resulta. Ibigay ang tiyak na feedback at ulitin ang bahaging iyon.",
+                    "en": "Attempts the task but needs a prompt for a field, agreement status or outcome measure. Give specific feedback and repeat that part."
+                  },
+                  "hindi_pa": {
+                    "fil": "Nangangako pa rin ng schedule o pondo nang walang pahintulot, o meeting count lamang ang resulta kahit may tulong. Kung walang nasaksihang pagtatangka, markahang hindi naobserbahan at magtakda ng direktang obserbasyon; huwag ipalagay na pasado o bagsak.",
+                    "en": "Still promises schedules or funding without agreement, or treats meeting count as the outcome despite support. If no attempt was witnessed, mark not observed and arrange direct observation; do not infer a pass or failure."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_key": "08-osh",
+      "component_id": "chapter-1:08-osh",
+      "title": {
+        "fil": "Occupational Safety and Health",
+        "en": "Occupational Safety and Health"
+      },
+      "review_note": "Control selection, preparation, physical demonstration and reporting are distinct. Review actual local clinical checklists and pause/resume authority. A paper control-selection exercise cannot satisfy physical return-demonstration criteria.",
+      "required_test_phases": [
+        "pretest",
+        "posttest"
+      ],
+      "required_lessons": [
+        {
+          "lesson_key": "safety-identify",
+          "title": {
+            "fil": "Kilalanin ang panganib",
+            "en": "Identify hazards"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json",
+            "sha256_lf": "e347d3014dbae60048004d949c0775b624d327bcdf416685e67fc93bb60d1946"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:08-osh:indicator-1"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:08-osh:lesson:safety-identify:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/competency.json",
+                "sha256_lf": "9f1699fe351d143dbddaa0ded66a148718f86952ba7c93b81c34d64808b309cc"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Natutukoy ang limang hazard group at halimbawa; sa isang ulat, may panganib, pinsala, ligtas na tiyak na kontrol, contact o paraan ng pagkumpirma at follow-up.",
+                  "en": "Names five hazard groups and examples; reports one hazard with harm, specific safe control, contact or verification route, and follow-up."
+                },
+                "not_yet": {
+                  "fil": "Hindi makita ang hazard, mag-ingat lang, inimbentong contact/pagwawasto o unsafe action.",
+                  "en": "Misses the hazard, gives only be careful, invents a contact/correction or proposes unsafe action."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Natutukoy ang limang hazard group at halimbawa; sa isang ulat, may panganib, pinsala, ligtas na tiyak na kontrol, contact o paraan ng pagkumpirma at follow-up. Nagagawa nang walang prompt.",
+                    "en": "Names five hazard groups and examples; reports one hazard with harm, specific safe control, contact or verification route, and follow-up. Completes independently."
+                  },
+                  "kailangan_practice": {
+                    "fil": "May hazard ngunit kulang ang grupo, aksyon, contact o follow-up; punan ang kulang at ulitin.",
+                    "en": "Names a hazard but omits a group, action, contact or follow-up; complete the missing field and retry."
+                  },
+                  "hindi_pa": {
+                    "fil": "Hindi makita ang hazard, mag-ingat lang, inimbentong contact/pagwawasto o unsafe action.",
+                    "en": "Misses the hazard, gives only be careful, invents a contact/correction or proposes unsafe action."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "safety-controls",
+          "title": {
+            "fil": "Panganib at proteksyon",
+            "en": "Match hazards and protection"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json",
+            "sha256_lf": "97f33a740f8143d659d8e30b478518249a2c61c042e7157e1196e0f22bba5d86"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:08-osh:indicator-1",
+            "chapter-1:08-osh:indicator-2"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:08-osh:lesson:safety-controls:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/competency.json",
+                "sha256_lf": "86d9c2b9ae9daf05db948aa11aa31c182cb98479518999bd6b9aaefddda177ec"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Ipinapaliwanag ang limang tamang hazard-control pair, bakit kulang ang PPE lamang, at apektadong gawain/contact/pagwawastong dapat tiyakin bago bumalik; itinatama ang dalawang mismatch nang walang unsafe sharps alternative.",
+                  "en": "Explains five correct hazard-control pairs, why PPE alone is insufficient, and the affected task/contact/correction to verify before resuming; corrects two mismatches without an unsafe sharps alternative."
+                },
+                "not_yet": {
+                  "fil": "Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.",
+                  "en": "Suggests recapping, compression, ordinary bins or continuing without essential protection."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Ipinapaliwanag ang limang tamang hazard-control pair, bakit kulang ang PPE lamang, at apektadong gawain/contact/pagwawastong dapat tiyakin bago bumalik; itinatama ang dalawang mismatch nang walang unsafe sharps alternative. Nagagawa nang walang prompt.",
+                    "en": "Explains five correct hazard-control pairs, why PPE alone is insufficient, and the affected task/contact/correction to verify before resuming; corrects two mismatches without an unsafe sharps alternative. Completes this without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Ligtas ang desisyon ngunit nalilito ang control para sa dalawang hazard; ipares muli at ipaliwanag ang dahilan.",
+                    "en": "Makes a safe decision but mixes up controls for two hazards; rematch and explain."
+                  },
+                  "hindi_pa": {
+                    "fil": "Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.",
+                    "en": "Suggests recapping, compression, ordinary bins or continuing without essential protection."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "safety-prepare",
+          "title": {
+            "fil": "Paghahanda sa ligtas na gawain",
+            "en": "Prepare for safe work"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json",
+            "sha256_lf": "c3109934fdc5f5c3319ff2263517e3126950cd55e9db9c329a5bc986e4c9c65a"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:08-osh:indicator-1",
+            "chapter-1:08-osh:indicator-2"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:08-osh:lesson:safety-prepare:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/competency.json",
+                "sha256_lf": "147c956d2062a67ed7d8c7b0bfe9df3ec1dd0bd2b04716e93ec49ce77a722dfe"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Kumpleto ang limang field; natutukoy ang apektadong gawain na ihihinto, ligtas na alternatibo at awtorisadong contact; kasama ang heat, ruta at balik; may batayan ng ready/hindi pa ready at tapat na hindi pa nakumpirma; inuulit ang briefing matapos ang feedback.",
+                  "en": "Completes five fields; identifies the affected work to pause, safe alternative and authorized contact; includes heat, route and return time; records evidence for ready/not-ready and honest unknowns; repeats the briefing after feedback."
+                },
+                "not_yet": {
+                  "fil": "Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.",
+                  "en": "Continues an unsafe route or unprotected task simply to finish the target."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Kumpleto ang limang field; natutukoy ang apektadong gawain na ihihinto, ligtas na alternatibo at awtorisadong contact; kasama ang heat, ruta at balik; may batayan ng ready/hindi pa ready at tapat na hindi pa nakumpirma; inuulit ang briefing matapos ang feedback. Nagagawa nang walang prompt; hindi minamarkahang ready ang hindi pa beripikado.",
+                    "en": "Completes five fields; identifies the affected work to pause, safe alternative and authorized contact; includes heat, route and return time; records evidence for ready/not-ready and honest unknowns; repeats the briefing after feedback. Does this without prompting; never marks an unverified condition ready."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Ligtas ang pause decision ngunit kulang ang field, contact o batayan ng beripikasyon. Punan sa tulong ng prompt at ulitin ang briefing.",
+                    "en": "Makes a safe pause decision but misses a field, contact or verification evidence. Complete it with prompting and repeat the briefing."
+                  },
+                  "hindi_pa": {
+                    "fil": "Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.",
+                    "en": "Continues an unsafe route or unprotected task simply to finish the target."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "safety-demonstrate",
+          "title": {
+            "fil": "Ipakita ang ligtas na paraan",
+            "en": "Demonstrate safe practice"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+            "sha256_lf": "9aefa109b57d562c9e57e21e236ac7df737a2d34bf353cbe755e44a434d0f7de"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:08-osh:indicator-2",
+            "chapter-1:08-osh:indicator-3",
+            "chapter-1:08-osh:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:08-osh:lesson:safety-demonstrate:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/competency.json",
+                "sha256_lf": "57bcc97ef3e2ae9796a228099c520ce5f01a75b306ae9724538f8857e3386d1f"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Nasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation.",
+                  "en": "Follows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation."
+                },
+                "not_yet": {
+                  "fil": "Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.",
+                  "en": "Uses real used sharps in practice, misses a critical safety step or delays medical evaluation."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Naobserbahan ng trainer ang lahat ng reviewed critical step sa ligtas na dummy demo, container placement/replacement cue, hand hygiene/PPE at agarang simulated report/evaluation bago documentation; walang prompt at tapat ang verification ng unknown contact/route.",
+                    "en": "The trainer observes every reviewed critical step in safe dummy demonstration, container placement/replacement cue, hand hygiene/PPE and immediate simulated reporting/evaluation before documentation; no prompting and honest verification of unknown contacts/routes."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Ligtas ang attempt ngunit may prompt o kulang na clarification sa contact/route o checklist; itala ang tiyak na correction at obserbahan ang bagong retry.",
+                    "en": "The attempt is safe but needs prompting or clarification of contact/route or checklist; record a specific correction and observe a fresh retry."
+                  },
+                  "hindi_pa": {
+                    "fil": "Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.",
+                    "en": "Uses real used sharps in practice, misses a critical safety step or delays medical evaluation."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_key": "09-sustainable-practices",
+      "component_id": "chapter-1:09-sustainable-practices",
+      "title": {
+        "fil": "Mabisang Gawi sa Lugar ng Trabaho",
+        "en": "Efficient and Sustainable Practices at Work"
+      },
+      "review_note": "The three lesson tasks contribute to four legacy objectives; baseline, safe savings, agreed routine and quality/workload comparison need explicit evidence coverage. Do not infer complete competency from one resource-saving suggestion.",
+      "required_test_phases": [
+        "pretest",
+        "posttest"
+      ],
+      "required_lessons": [
+        {
+          "lesson_key": "resources-audit",
+          "title": {
+            "fil": "Saan nasasayang ang resources?",
+            "en": "Where are resources wasted?"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json",
+            "sha256_lf": "9db9257a991da280c4d51c69332aa4e3afbfbb6ce6ccba0614a7e5524c42aed5"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:09-sustainable-practices:indicator-1",
+            "chapter-1:09-sustainable-practices:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:09-sustainable-practices:lesson:resources-audit:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/competency.json",
+                "sha256_lf": "9c1103a938c191ad10f5987c5babff05c2dc41a769bb2603734e9d46c89d5f11"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon.",
+                  "en": "Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions."
+                },
+                "not_yet": {
+                  "fil": "Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.",
+                  "en": "Orders from guesses or uses expired or incorrect material simply to save resources."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon. Nagagawa kahit hindi pinapaalalahanan.",
+                    "en": "Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions. Completes this without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Nakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin.",
+                    "en": "Identifies waste but gives no evidence or routine owner; complete the audit row and repeat."
+                  },
+                  "hindi_pa": {
+                    "fil": "Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.",
+                    "en": "Orders from guesses or uses expired or incorrect material simply to save resources."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "resources-safe-change",
+          "title": {
+            "fil": "Pumili ng ligtas na pagbabago",
+            "en": "Choose a safe change"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json",
+            "sha256_lf": "5585cb6745a745142ddd2ca3613b3c11355c0c2ef8e4a645e215d12aca7fd079"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:09-sustainable-practices:indicator-2",
+            "chapter-1:09-sustainable-practices:indicator-3"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:09-sustainable-practices:lesson:resources-safe-change:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/competency.json",
+                "sha256_lf": "d460091f13bf82cc64f24bdafd01edd9fd8390f7890021d1f1bdbe33e6f9b1ce"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon.",
+                  "en": "Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option."
+                },
+                "not_yet": {
+                  "fil": "Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.",
+                  "en": "Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon. Nagagawa kahit hindi pinapaalalahanan.",
+                    "en": "Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option. Completes this without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Ligtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong tanong sa practice at ipaulit.",
+                    "en": "Makes a safe choice but cannot explain the safeguard; use the three practice questions and repeat."
+                  },
+                  "hindi_pa": {
+                    "fil": "Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.",
+                    "en": "Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings."
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "lesson_key": "resources-monitor",
+          "title": {
+            "fil": "Subukan at subaybayan",
+            "en": "Try and monitor"
+          },
+          "lesson_source": {
+            "path": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json",
+            "sha256_lf": "688502a0ca9d0c514cc18140a6017112165ad2aecfe62238650f86e7c58558ff"
+          },
+          "relation_to_legacy": "supports_partial_component_evidence",
+          "proposed_legacy_indicator_ids": [
+            "chapter-1:09-sustainable-practices:indicator-3",
+            "chapter-1:09-sustainable-practices:indicator-4"
+          ],
+          "criteria": [
+            {
+              "id": "chapter-1:09-sustainable-practices:lesson:resources-monitor:criterion-1",
+              "proposed_version": "1",
+              "source_objective_index": 0,
+              "source": {
+                "path": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/competency.json",
+                "sha256_lf": "0325dd0c78508ceaeecbafc61f84345e23bb79ad7b06a269552fb9712f7e08a8"
+              },
+              "rubric": {
+                "observable": {
+                  "fil": "May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover.",
+                  "en": "Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover."
+                },
+                "not_yet": {
+                  "fil": "Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.",
+                  "en": "Declares lower totals a success despite reduced or canceled services."
+                },
+                "levels": {
+                  "kaya_na": {
+                    "fil": "May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover. Nagagawa kahit hindi pinapaalalahanan.",
+                    "en": "Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover. Completes this without prompting."
+                  },
+                  "kailangan_practice": {
+                    "fil": "Kumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat session o bawat 100 pahina.",
+                    "en": "Completes the plan but compares raw totals only; prompt for per-session or per-100-page measures."
+                  },
+                  "hindi_pa": {
+                    "fil": "Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.",
+                    "en": "Declares lower totals a success despite reduced or canceled services."
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
