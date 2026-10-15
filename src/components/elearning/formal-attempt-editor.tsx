@@ -82,9 +82,13 @@ export function FormalAttemptEditor({state,lang}:{state:FormalState;lang:'fil'|'
       'Record only directly observed work. Unseen or insufficient evidence has no rating. Save the draft before review and submission.')}</p>
     {attempt.criteria.map(criterion=>{
       const entry=entryFor(criterion.id);const sufficient=entry.sufficiency==='sufficient';
+      const localSafetyDemo=criterion.id==='chapter-1:08-osh:lesson:safety-demonstrate:criterion-1';
       return <fieldset key={criterion.id} className="rounded-xl border border-ink/20 p-5">
         <legend className="px-1 font-semibold">{en?criterion.en:criterion.fil}</legend>
         <p className="mt-2 text-sm">{en?criterion.rubric.observable.en:criterion.rubric.observable.fil}</p>
+        {localSafetyDemo&&<p className="mt-3 rounded border border-primary/30 bg-primary/5 p-3 text-sm">{label(
+          'Gamitin ang blangkong lokal na setup card para sa LGU at session na ito. Kumpirmahin kasama ng awtorisadong lokal na clinical trainer ang checklist, pangunahing reporting contact, backup at agarang ruta sa qualified evaluation bago ang physical dummy demonstration. Kung may hindi pa kumpirmado, ihinto ang demonstration at piliin ang Hindi naobserbahan. Hindi sapat ang paper rehearsal para pumasa.',
+          'Use the blank local setup card for this LGU and session. With the authorized local clinical trainer, confirm the checklist, primary reporting contact, backup and immediate qualified evaluation route before the physical dummy demonstration. If any are unconfirmed, pause the demonstration and choose Not observed. A paper rehearsal cannot pass this criterion.')}</p>}
         <label className="mt-3 block text-sm">{label('Sapat ba ang ebidensya?','Evidence sufficiency')}
           <select className={field} value={entry.sufficiency} onChange={event=>update(criterion.id,{
             sufficiency:event.target.value as FormalEvidence['sufficiency'],rating:null})}>

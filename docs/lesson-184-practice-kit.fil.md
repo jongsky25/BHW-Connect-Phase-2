@@ -16,6 +16,9 @@ Reporting contact / kunwaring role: __________
 Backup kung hindi maabot: __________
 Agarang qualified evaluation route: __________
 Lokal na pause/resume procedure: __________
+Kukumpirmahin ng assessor at awtorisadong lokal na clinical trainer ang mga ito
+para sa LGU at session bago ang physical demonstration. Sadyang walang
+nakatalagang contact o facility ang shared template.
 Isulat ang “hindi pa kumpirmado” sa bawat unknown. Huwag mag-imbento ng number o agreement.
 Kung kulang ang clinical review o critical condition, paper reporting rehearsal muna at ihinto ang physical practice.
 
@@ -24,6 +27,10 @@ Kung kulang ang clinical review o critical condition, paper reporting rehearsal 
 Practice ID: __________  Attempt/retry: __________
 Authorized clinical trainer ang maglalagay/aapruba ng lokal na items bago gamitin.
 Local checklist/version/petsa: __________
+Gamitin ito kasama ng locally verified na setup card para sa session. Kung hindi
+kumpirmado ang contact, backup, route o reviewed critical steps, itala ang
+physical demonstration bilang HINDI NAOBSERBAHAN; maaaring ituloy ang paper
+reporting rehearsal.
 
 Bawat item: DONE / PROMPTED / NOT YET / HINDI NAOBSERBAHAN.
 1. Tinitiyak ang ligtas na dummy-only station: __________

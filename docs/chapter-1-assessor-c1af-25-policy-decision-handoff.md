@@ -16,7 +16,7 @@ in this PR.
 | BHW tests | Require submitted pretest and posttest attempts from a current validated Chapter 1 learner test release for each component. The existing readiness contract checks submission, not a passing score; no new component score threshold is proposed. Review this distinction explicitly. |
 | Historical BHW evidence | Preserve old observations and assessments under their original identity and version. Do not convert them into the 42 revised formal criteria. |
 | Staff Chapter 1 award | Keep current study of 42 published lessons, submitted pretest, passed posttest at 80%, six orientation lessons, 7/8 orientation cases including the mandatory safety case, and a server-validated 11-checkpoint Maria simulation. A new briefing and simulation receipt must name the approved requirements version. An existing legacy qualification may be linked only by explicit recovery after all unchanged current evidence is rechecked; no mass conversion or automatic award from historical status. |
-| Issuer | The authorized program owner must supply the real organization, signatory and title. The proposal does not invent a government seal or accreditation claim. |
+| Issuer | The owner supplied `DOH`, `Ray Justin Ventura`, and `Chief Health Program Officer` for the forthcoming contract. Keep the proposal's `issuer_snapshot` null until a separate release package installs and reviews that exact snapshot. No government seal or accreditation claim is inferred. |
 
 The draft lesson-to-legacy links in the JSON remain marked
 `supports_partial_component_evidence`. A lesson's local `objective_index` is
@@ -41,8 +41,13 @@ source with its published lesson revision before installing registry rows.
   guidance but is not equivalent to the legacy listening rating.
 - **1.8 safety:** use an observed safe dummy demonstration against the current
   local critical-step checklist, never real used sharps. A written control
-  selection is insufficient. Confirm that checklist and the local reporting
-  contact before the pilot; they are not supplied by this repository.
+  selection is insufficient. The shared [English](lesson-184-practice-kit.en.md)
+  and [Filipino](lesson-184-practice-kit.fil.md) setup cards keep contact fields
+  blank. For each LGU and assessment session, the assessor and authorized local
+  clinical trainer confirm the checklist, primary reporting contact, backup,
+  and immediate qualified evaluation route before physical demonstration. An
+  unconfirmed field pauses physical demonstration and remains not observed;
+  paper reporting rehearsal cannot pass the demonstration criterion.
 
 The nine component review notes in the earlier
 [mapping audit](chapter-1-assessor-mapping-audit.md) remain part of this
@@ -68,6 +73,16 @@ organization/signatory/title. That GitHub review can become the nonblank
 reference for the separate requirements, mapping, evidence, orientation,
 simulation, issuer and award approval fields. A broad “approved” response
 without those exact contents would leave the database registry empty.
+
+## Owner clarification after proposal merge
+
+On 15 October 2026, the owner supplied the issuer values above, approved the
+existing Chapter 1.8 dummy demonstration checklist, and directed that the
+shared template leave reporting contacts blank because LGUs differ. Each
+assessor uses the verified local context for that LGU and session. This is a
+review instruction for the next implementation package; it does not assert
+that a local clinical trainer has approved a particular LGU's procedure or
+that any real reporting contact or evaluation route has been confirmed.
 
 ## Implementation handoff after policy review
 
