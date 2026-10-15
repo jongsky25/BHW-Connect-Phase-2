@@ -13,6 +13,15 @@ const props = {locale:'en',programId:'manual',actorId:'alex',chapterHref:'/train
 beforeEach(() => {rpc.mockReset().mockResolvedValue({data:saved,error:null});});
 afterEach(cleanup);
 describe('explicit briefing acknowledgement and recovery', () => {
+  it('saves the cohort pilot version rather than the draft default', async () => {
+    const pilot={...state,requirementsVersion:'chapter-1:c1af25.pilot-1'};
+    rpc.mockResolvedValue({data:{...pilot,acknowledgedAt:saved.acknowledgedAt},error:null});
+    const user=userEvent.setup();render(<AssessorBriefingAcknowledgement {...props} initial={pilot}/>);
+    await user.click(screen.getByRole('checkbox'));
+    await user.click(screen.getByRole('button',{name:'Save my acknowledgement'}));
+    expect(rpc).toHaveBeenCalledWith('rpc_assessor_briefing_acknowledge',expect.objectContaining({p_requirements_version:pilot.requirementsVersion}));
+    expect(screen.getByRole('link')).toBeInTheDocument();
+  });
   it.each(['en','fil'])('requires explicit confirmation and enables study only after a valid saved receipt (%s)', async locale => {
     const user = userEvent.setup();render(<AssessorBriefingAcknowledgement {...props} locale={locale}/>);
     const name = locale==='en'?'Save my acknowledgement':'Itala ang aking pagkilala';

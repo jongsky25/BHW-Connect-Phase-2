@@ -1,4 +1,4 @@
-import {CHAPTER1_REQUIREMENTS_VERSION} from './briefing';
+import {CHAPTER1_REQUIREMENTS_VERSION, isChapter1RequirementsVersion} from './briefing';
 import {storyScenes, simulationStory} from './simulation-storyboard';
 
 /** Story approval recorded in PR #292; no rubric, sufficiency or award approval. */
@@ -25,7 +25,7 @@ export function parseSimulationState(value:unknown, programId:string, actorId:st
   const s=value as SimulationState;
   const identity=(x:SimulationState|SimulationReceipt)=>x.actorId===actorId&&x.programInstanceId===programId
     &&x.programKey==='bhw-reference-manual'&&x.chapterKey==='chapter-1'
-    &&x.requirementsVersion===simulationContract.requirementsVersion&&x.scenarioId===simulationContract.id&&x.version===simulationContract.version;
+    &&isChapter1RequirementsVersion(x.requirementsVersion)&&x.scenarioId===simulationContract.id&&x.version===simulationContract.version;
   if(!identity(s)||!Number.isSafeInteger(s.revision)||s.revision<0||!Number.isInteger(s.next)||s.next<0||s.next>11
     ||!Number.isInteger(s.viewStep)||s.viewStep<0||s.viewStep>3||typeof s.note!=='string'||s.note.length>1200
     ||Array.isArray(s.attempts)||!Array.isArray(s.facts)||s.facts.some(n=>![0,1,2].includes(n))||!s.attempts||typeof s.attempts!=='object')return null;
@@ -35,7 +35,7 @@ export function parseSimulationState(value:unknown, programId:string, actorId:st
   }
   if(s.receipt!==null) {
     const r=s.receipt;
-    if(!r||!identity(r)||!r.id||r.serverValidated!==true||!Number.isFinite(Date.parse(r.completedAt))
+    if(!r||!identity(r)||r.requirementsVersion!==s.requirementsVersion||!r.id||r.serverValidated!==true||!Number.isFinite(Date.parse(r.completedAt))
       ||JSON.stringify(r.checkpointIds)!==JSON.stringify(simulationContract.checkpoints.map(c=>c.id))
       ||JSON.stringify(r.checkpointVersions)!==JSON.stringify(simulationContract.checkpoints.map(c=>c.version)))return null;
   }
