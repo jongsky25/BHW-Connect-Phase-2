@@ -20,6 +20,15 @@ function client(data: unknown, error: unknown = null) {
 }
 
 describe('default-off independent rollout controls', () => {
+  it('loads the authenticated pilot cohort version while retaining foreign identity rejection', async () => {
+    const pilot={...policy(),requirementsVersion:'chapter-1:c1af25.pilot-1',writesEnabled:false,awardsEnabled:false,authorityCutoverAt:null};
+    expect(await loadAssessorRollout(client(pilot).supabase,flags,identity,{actor}))
+      .toMatchObject({uiVisible:true,writesEnabled:false,awardsEnabled:false});
+    for(const changed of [{requirementsVersion:'unknown'},{programInstanceId:'foreign'},{actorId:'other'}]){
+      expect(await loadAssessorRollout(client({...pilot,...changed}).supabase,flags,identity,{actor}))
+        .toMatchObject({uiVisible:false,writesEnabled:false,awardsEnabled:false});
+    }
+  });
   it('does not expose any new capability from missing flag rows or policy', () => {
     expect(assessorRollout(DEFAULT_FLAGS, identity, {actor}, policy())).toMatchObject({uiVisible: false, writesEnabled: false, awardsEnabled: false, legacyWritesAllowed: false});
     expect(assessorRollout(flags, identity, {actor}, null)).toMatchObject({uiVisible: false, writesEnabled: false, awardsEnabled: false, legacyWritesAllowed: false});

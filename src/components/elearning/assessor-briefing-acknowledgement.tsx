@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import {useId, useRef, useState, type FormEvent} from 'react';
 import {createClient} from '@/lib/supabase/client';
-import {CHAPTER1_BRIEFING_VERSION, CHAPTER1_REQUIREMENTS_VERSION, parseBriefingState, type BriefingState} from '@/lib/assessor/briefing';
+import {CHAPTER1_BRIEFING_VERSION, parseBriefingState, type BriefingState} from '@/lib/assessor/briefing';
 
 export function AssessorBriefingAcknowledgement({locale, programId, actorId, chapterHref, initial}: {
   locale: string; programId: string; actorId: string; chapterHref: string; initial: BriefingState | null;
@@ -21,7 +21,7 @@ export function AssessorBriefingAcknowledgement({locale, programId, actorId, cha
     try {
       const {data, error: rpcError} = await createClient().rpc(save ? 'rpc_assessor_briefing_acknowledge' : 'rpc_assessor_briefing_state', {
         p_program_id: programId,
-        ...(save ? {p_expected_actor_id: actorId, p_requirements_version: CHAPTER1_REQUIREMENTS_VERSION, p_briefing_version: CHAPTER1_BRIEFING_VERSION,
+        ...(save ? {p_expected_actor_id: actorId, p_requirements_version: state!.requirementsVersion, p_briefing_version: CHAPTER1_BRIEFING_VERSION,
           p_acknowledged: true, p_language: locale === 'en' ? 'en' : 'fil'} : {}),
       });
       const result = rpcError ? null : parseBriefingState(data, programId, actorId);

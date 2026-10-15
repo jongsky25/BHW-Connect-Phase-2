@@ -18,4 +18,11 @@ describe('accepted familiarization contract',()=>{
   expect(sql).toContain(JSON.stringify(storyScenes.map(s=>s.choices.map(c=>c.id))));
   expect(simulationContract.rubricSha256Lf).toBe('c23f71dd46321eaaee92ea305d37661ed62760ce6cacddad8098b7b9fb095c56');
  });
+ it('accepts the pilot requirements while rejecting a receipt from the draft version',()=>{
+  const pilot={...state,requirementsVersion:'chapter-1:c1af25.pilot-1'};
+  expect(parseSimulationState(pilot,'p','self')).toEqual(pilot);
+  expect(parseSimulationState({...pilot,receipt:{...state,id:'old',serverValidated:true,
+   completedAt:'2026-10-15',checkpointIds:simulationContract.checkpoints.map(c=>c.id),
+   checkpointVersions:simulationContract.checkpoints.map(c=>c.version)}},'p','self')).toBeNull();
+ });
 });
