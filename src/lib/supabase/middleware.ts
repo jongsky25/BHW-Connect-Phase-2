@@ -34,10 +34,26 @@ const NOTIF_TIMEOUT_MS = 3_000;
 // these are used rather than the defaults, which would hide e-learning etc.
 // from everyone until the database recovers. Per-instance and best effort.
 let lastFlagRows: Awaited<ReturnType<typeof tryFetchFlagRows>> = null;
+let lastFlagRowsAt = 0;
+
+// Flags change when an admin flips a toggle, not per request, but every page
+// request used to read the table (one of the two reads in every 504 burst on
+// 15 Oct). Rows younger than this are reused without a query. A toggle
+// reaches each instance within this window.
+const FLAGS_TTL_MS = 30 * 1000;
+
+export function resetFlagRowsCache() {
+  lastFlagRows = null;
+  lastFlagRowsAt = 0;
+}
 
 async function loadFlagRows(supabase: Parameters<typeof tryFetchFlagRows>[0]) {
+  if (lastFlagRows && Date.now() - lastFlagRowsAt < FLAGS_TTL_MS) return lastFlagRows;
   const rows = await tryFetchFlagRows(supabase, AbortSignal.timeout(FLAGS_TIMEOUT_MS));
-  if (rows) lastFlagRows = rows;
+  if (rows) {
+    lastFlagRows = rows;
+    lastFlagRowsAt = Date.now();
+  }
   return rows ?? lastFlagRows ?? [];
 }
 
