@@ -16,6 +16,9 @@ Reporting contact / simulated role: __________
 Backup if unavailable: __________
 Immediate qualified evaluation route: __________
 Local pause/resume procedure: __________
+The assessor and authorized local clinical trainer verify these fields for this
+LGU and session before physical demonstration. The shared template intentionally
+supplies no central contact or facility.
 Write “not confirmed” for every unknown. Do not invent a number or agreement.
 If clinical review or critical conditions are missing, pause physical practice and use paper reporting rehearsal only.
 
@@ -24,6 +27,10 @@ If clinical review or critical conditions are missing, pause physical practice a
 Practice ID: __________  Attempt/retry: __________
 Authorized clinical trainer completes/approves local items before use.
 Local checklist/version/date: __________
+Use this checklist with the locally verified setup card for this session. If
+the contact, backup, route or reviewed critical steps are unconfirmed, record
+the physical demonstration as NOT OBSERVED; paper reporting rehearsal may
+continue.
 
 For each item record DONE / PROMPTED / NOT YET / NOT OBSERVED.
 1. Confirms safe dummy-only station: __________

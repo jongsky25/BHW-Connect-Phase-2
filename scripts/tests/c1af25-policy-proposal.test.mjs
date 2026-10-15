@@ -41,4 +41,12 @@ describe('C1AF-25 owner decision package', () => {
     expect(proposal.formal_rule_proposal.prior_bhw_evidence_reuse).toBe(false);
     expect(proposal.formal_rule_proposal.practice_evidence).toContain('neither counts');
   });
+
+  it('requires local safety context for each assessment without a central contact', () => {
+    const rule = buildPolicyProposal(root).conflict_decisions_proposed['1.8-safety'];
+    expect(rule).toContain('Keep the shared setup card blank');
+    expect(rule).toContain('for each LGU and assessment session');
+    expect(rule).toContain('primary reporting contact, backup and immediate qualified evaluation route');
+    expect(rule).toContain('record it as not observed');
+  });
 });
