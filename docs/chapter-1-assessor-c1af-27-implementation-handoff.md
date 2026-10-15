@@ -54,8 +54,9 @@ and version-binding tests, lint, typecheck, and full PR CI including the entire
 migration chain and local browser story. Review CI before merge. The PGlite
 rehearsal verifies atomic drift/membership rejection, exact disabled counts,
 app-role denial, immutable archival and legacy qualification retention.
-`node scripts/c1af27-local-rehearsal.mjs` runs after the full migration chain in
-CI, loads all 42 real authored lesson packages into a throwaway course inside
+The `e2e/c1af27-registry.spec.ts` test runs
+`node scripts/c1af27-local-rehearsal.mjs` after the full migration chain in CI,
+loads all 42 real authored lesson packages into a throwaway course inside
 one rolled-back transaction, invokes the private installer against the real
 schema, and checks the disabled counts and unchanged legacy qualifications.
 The workspace's direct `supabase start` attempt could not unpack the Postgres
