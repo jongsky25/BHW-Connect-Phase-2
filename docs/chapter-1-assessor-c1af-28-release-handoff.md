@@ -40,9 +40,11 @@ DOH / Ray Justin Ventura / Chief Health Program Officer remains the issuer.
 The approved dummy checklist and per-LGU/session local contact verification
 remain required; centrally blank contacts are intentional.
 
-The pre-release read found 52 actual active assessors, 26 active BHWs and zero
-revised awards. Ten additional assessor accounts are administrative personas
-and are excluded. All 18 pending/assigned legacy Chapter 1 assessments remain
+The initial preparation cohort contained 52 assessors. The release account
+report confirmed 62 active assessor accounts (one administrative persona) and
+26 active BHW accounts (one administrative persona). All 61 actual assessors
+and 25 actual BHWs are enrolled; both personas are excluded. Zero eligible
+accounts are missing, and activation created no revised awards. All 18 pending/assigned legacy Chapter 1 assessments remain
 stored; after cutover, only an assessor with earned revised authority may
 continue official writes. No automatic conversion, completion, certificate or
 qualification is created. No legacy observations, exams or awards are erased.
@@ -69,3 +71,20 @@ Rollback disables global/cohort write and award controls and registry enablement
 Do not clear cutover, reassign members, delete earned evidence or restore the
 legacy authorization path. New preparation can remain visible during a write
 pause. A future public launch is outside this all-user pilot release.
+
+## Activation receipt — 16 October 2026
+
+PR #327 merged as `0e38b1bfe8645c1ca29a09db4ae37560380be459`.
+CI run `38831375338` passed 2,136 unit tests and 86 browser tests, including
+the full migration chain and release rehearsal. The one migration was applied
+once, with permanent cutover at `2026-10-16T00:55:44.163337Z`. All five release
+flags are enabled, alongside 42 criteria, nine components and one award contract.
+The 27 historical qualifications and 19 historical assessment rows have identical
+before/after fingerprints (18 assessments remain pending/assigned).
+
+`node scripts/c1af28-release-report.mjs` emits a read-only scoped SQL report for
+repeatable verification. It distinguishes eligible active accounts from personas,
+reports missing members, and detects accidental persona membership. It never
+connects to or writes to a database. Run its output through the authorized SQL
+connection. The original estimate of ten additional assessor personas was
+incorrect; the role/persona join above is the authoritative account breakdown.
