@@ -91,7 +91,7 @@ begin
  update assessor_rollout_private.award_contracts set enabled=true where requirements_version=v_req;
  update assessor_rollout_private.simulation_control set enabled=true;
  update public.feature_flags set enabled=true,disabled_roles=array_remove(array_remove(coalesce(disabled_roles,'{}'::text[]),'assessor'),'bhw')
- where key in ('elearning','assessor_flow_ui','assessor_flow_writes','assessor_flow_awards');
+ where key in ('elearning','course_sessions','assessor_flow_ui','assessor_flow_writes','assessor_flow_awards');
  update public.assessor_flow_cohorts set requirements_version=v_req,ui_enabled=true,writes_enabled=true,awards_enabled=true,
  authority_cutover_at=now(),authority_cutover_by=null,authority_cutover_decision_id='c1af28-all-pilot-2026-10-16',updated_at=now()
  where id=v_cohort;

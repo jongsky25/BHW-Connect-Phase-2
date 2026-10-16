@@ -76,7 +76,7 @@ do $$ begin
  or (select count(*) from assessor_rollout_private.component_requirements where chapter_id='${chapter}' and enabled)<>9
  or not exists(select 1 from assessor_rollout_private.award_contracts where requirements_version='${p.requirements_version}' and enabled)
  then raise exception 'registry not enabled'; end if;
- if (select count(*) from public.feature_flags where key in ('elearning','assessor_flow_ui','assessor_flow_writes','assessor_flow_awards') and enabled)<>4 then raise exception 'global gates not enabled'; end if;
+ if (select count(*) from public.feature_flags where key in ('elearning','course_sessions','assessor_flow_ui','assessor_flow_writes','assessor_flow_awards') and enabled)<>5 then raise exception 'global gates not enabled'; end if;
  if not exists(select 1 from public.assessor_flow_cohorts where program_id='${program}' and requirements_version='${p.requirements_version}'
  and ui_enabled and writes_enabled and awards_enabled and authority_cutover_at is not null
  and authority_cutover_by is null and authority_cutover_decision_id='c1af28-all-pilot-2026-10-16') then raise exception 'cutover identity/gates wrong'; end if;

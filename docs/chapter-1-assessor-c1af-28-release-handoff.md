@@ -28,7 +28,7 @@ hashes/revisions, 42 criteria, nine components, membership counts and issuer
 contract. Drift aborts atomically. It archives existing draft simulations with
 all request payloads before retargeting the single preparation cohort to
 `chapter-1:c1af25.pilot-1`. Old briefing acknowledgements cannot satisfy the new
-version. It enables the reviewed registry, simulation, UI, write and award
+version. It enables the reviewed registry, simulation, training-session UI, write and award
 controls and permanently records authority cutover. Future account enrollment
 runs only for the released program and organization.
 
