@@ -60,7 +60,7 @@ do $$ declare rev uuid; lesson uuid; begin
 end $$;
 select assessor_rollout_private.release_chapter1_pilot('${chapter}');
 insert into public.users(id,auth_user_id,username,full_name,role,org_unit_id,status)
-select '${future}','${futureAuth}','c1af28.future','Future BHW','bhw',org_unit_id,'invited' from public.users where username='admin.city.stable';
+select '${future}','${futureAuth}','c1af28.future','Future BHW','bhw',org_unit_id,'invited' from public.users where username='bhw.stable';
 do $$ begin
  if exists(select 1 from public.assessor_flow_cohort_members where user_id='${future}') then raise exception 'inactive account enrolled'; end if;
 end $$;
