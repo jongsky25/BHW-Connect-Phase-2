@@ -229,6 +229,42 @@ local check, not a fresh live query. It passes, along with all nine targeted UHC
 lesson/assessment-content tests. The seven tracker entries now link their exact
 finding and next action. Ten FB-2.1 assignments remain outside this first slice.
 
+Release receipt: [PR #332](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/332)
+merged as `95f997be999753dae3b014ac1cdbc20980cc2e2c` after CI run
+`40039631246` passed checks and isolated E2E.
+
+## FB-2.2a — versioned UHC assessment proposal
+
+The [bilingual review packet](../../content/training/day1-basic-competencies/learner-assessment-v2/proposals/fb-2.2a-uhc/REVIEW.md)
+contains two new version-2 T05 questions, with every option, proposed answer and
+rationale, plus an unscored provider terminology note. The source JSON links
+all four remaining UHC wording requests and the official sources. T05 retains
+its coverage objective with a linked secondary primary-care source; T06's
+referral items are unchanged. Reviewers are unassigned, and the package is draft.
+
+The local builder verifies the exact approved baseline, requires new release,
+form and item identities, and exports a full draft candidate. The other 58 form
+items, 48 checkpoint items and 42 lesson pins remain exact copies. Existing
+enrollments remain on the original release for both phases, existing drafts
+finish their pinned forms, and historical answers/scores are retained. There
+is no import or activation operation, and the unchanged approved-release
+validator rejects the draft.
+
+Run `node scripts/feedback-uhc-proposal.mjs` for the candidate summary, `--review`
+for the exact review packet, or `--output /tmp/fb-2.2a-candidate.json` for an
+explicit local export. Exports refuse source-folder destinations and existing
+files. The checked-in review copy is tested against the JSON proposal.
+Sixteen new tests cover identity/version reuse, blueprint drift, translations,
+claimed approvals, review-copy consistency, draft continuity and export/import
+boundaries. The four tracker entries now point to this draft; feedback remains
+open pending review and release.
+
+Validation: all 2,175 tests in 247 files pass, including the 16 new proposal
+cases. TypeScript and lint pass (the same four unrelated script warnings
+remain). The current approved-release contract, recorded publication/hash
+check and `git diff --check` pass. No active release, approval record, lesson
+content, migration or learner record was changed.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
@@ -237,8 +273,9 @@ finding and next action. Ten FB-2.1 assignments remain outside this first slice.
 3. Finish signed-in verification of FB-1.2a; identify the original blocked lessons before
    closing the two reports submitted on `/feedback`.
 4. Finish signed-in verification of FB-1.3a for admin location scopes and both interface languages.
-5. Prepare the FB-2.2a versioned assessment proposal described in the UHC audit,
-   and continue source review of the ten remaining FB-2.1 assignments.
+5. Review the FB-2.2a bilingual questions, rationales and terminology note, then
+   prepare a separate controlled content release with real reviewer identities.
+   Continue source review of the ten remaining FB-2.1 assignments.
 
 The remaining increments keep their proposed assignments until reproduction or
 content review establishes an implementation-ready task. Mandatory question

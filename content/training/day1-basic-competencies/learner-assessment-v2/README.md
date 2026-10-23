@@ -12,4 +12,25 @@ Each form has a unique `form_id`, 30 ordered `items`, and a SHA-256 `hash` of `J
 
 The private SQL schema stores immutable forms and exact attempt snapshots. It is not a content approval mechanism. Schema validity cannot establish correct clinical guidance, bilingual meaning, fairness, or form comparability.
 
+## FB-2.2a UHC proposal
+
+`proposals/fb-2.2a-uhc/proposal.json` is a draft overlay against the exact
+reviewed release, with two new version-2 T05 items and an unscored provider
+terminology note. Its [review packet](proposals/fb-2.2a-uhc/REVIEW.md) shows the
+current and proposed bilingual stems, every option, proposed keys, rationales
+and official-source links. Reviewer identities remain unassigned.
+
+`node scripts/feedback-uhc-proposal.mjs` validates the overlay and reports new
+draft form hashes. `--review` prints the review packet. An explicit `--output`
+exports a complete draft candidate outside this source folder, without
+overwriting existing files. The command has no import/activation operation.
+The ordinary approved-release validator still rejects the exported draft.
+
+The active `release.json`, its approval record, T06 referral questions, the
+other 58 form items, 48 checkpoint items and 42 curriculum pins are unchanged.
+Existing enrollments retain the original release for both phases, drafts finish
+their pinned forms and submitted answers/scores remain historical. A separate
+reviewed publication and activation change is required; this proposal does not
+establish comparability or claim new approvals.
+
 The scoped course-progress reset removes v2 assessment attempts, enrollments, in-progress practice, unshared learning-note drafts, and major-introduction view markers. It preserves completed practice and shared note versions with their replies as learner history; a draft with shared versions remains because those versions refer to it. Account deletion follows the existing user foreign-key cascade. No new retention period is introduced.
