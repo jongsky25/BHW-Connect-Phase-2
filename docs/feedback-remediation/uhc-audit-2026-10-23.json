@@ -1,0 +1,157 @@
+{
+  "audit_id": "FB-2.1a-uhc-2026-10-23",
+  "observed_at": "2026-10-23T23:23:35.723854+00:00",
+  "base_commit": "693962a0962b521f5f546424fa71a185aa022ee4",
+  "project_id": "ltzicxyefizxoqhfuuzc",
+  "scope": "Current English/Filipino UHC coverage and primary-care teaching, and Chapter 1 assessment slots T05/T06. Source review only; no independent clinical/legal approval or user-facing release.",
+  "source_access": "Official URLs read with the web connector. Direct executor PDF downloads were denied by the network proxy; no byte-level PDF hashes are claimed.",
+  "sources": [
+    {
+      "id": "ra11223",
+      "url": "https://www.philhealth.gov.ph/about_us/RA11223_UHC.pdf",
+      "locators": [
+        "section 4(s)",
+        "section 5",
+        "section 6(c)-(d)"
+      ],
+      "supports": "Automatic NHIP inclusion; provider definition includes an appropriately certified worker or licensed/certified institution; provider choice and coordinated referral."
+    },
+    {
+      "id": "selection",
+      "url": "https://www.philhealth.gov.ph/circulars/2025/PC2025-0017.pdf",
+      "locators": [
+        "IV.C-I",
+        "V.A.1",
+        "V.B",
+        "V.D"
+      ],
+      "supports": "YAKAP clinic choice, registration, first patient encounter and empanelment are distinct steps; beneficiary choice is central."
+    },
+    {
+      "id": "rights",
+      "url": "https://www.philhealth.gov.ph/advisories/2026/PA2026-0003.pdf",
+      "locators": [
+        "member rights 1-3"
+      ],
+      "supports": "Covered YAKAP service rights depend on clinic/empanelment context; do not convert benefit verification into a blanket suggestion that covered public-clinic services may be charged."
+    },
+    {
+      "id": "digital-yes",
+      "url": "https://www.philhealth.gov.ph/advisories/2026/PA2026-0029.pdf",
+      "locators": [
+        "A-D"
+      ],
+      "supports": "Digital YES process includes FPE verification and beneficiary consent; detailed future guidance must account for this issuance."
+    },
+    {
+      "id": "fixed-clinics",
+      "url": "https://www.philhealth.gov.ph/advisories/2026/PA2026-0023.pdf",
+      "locators": [
+        "II policy clarifications"
+      ],
+      "supports": "Clinic accreditation and empanelment requirements cannot be replaced by an unaccredited outreach event. Web PDF metadata reports one page; current manifest cites pages 1,2,3 and needs citation review."
+    },
+    {
+      "id": "manual",
+      "path": "docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+      "locators": [
+        "PDF page 65"
+      ],
+      "supports": "BHW coordination and local referral knowledge; comprehensive patient guidance is assigned to doctor, nurse or midwife. This is the project-provided transcription, not a newly retrieved original."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_key": "uhc-coverage",
+      "lesson_id": "9dfa3c3d-ec75-4143-8fa2-302e4273f829",
+      "revision_id": "5d28c239-c4a2-4cda-a719-e8959a19ae91",
+      "content_hash": "4b82aa20c75ff944adf326932408fd64ca126ac0dea951d53da264f00a639326"
+    },
+    {
+      "lesson_key": "uhc-primary-care",
+      "lesson_id": "e3abb325-3ccc-47e4-95de-94be7d9735ac",
+      "revision_id": "26890d6e-e706-4fdd-b92e-f7e8d9f55211",
+      "content_hash": "f1e5f3d6f66142a5e39ee5723743bf717101af6b7d6948bf3d33fc623fe452f3"
+    }
+  ],
+  "assessment_release_id": "chapter1-2026-10-11-v1",
+  "assessment_release_status": "active",
+  "forms": [
+    {
+      "phase": "pretest",
+      "form_id": "chapter1-2026-10-11-v1-pretest",
+      "form_hash": "e02c09ed21d241f697b299c40004385e6c6def977911b4cf73238b5bc14706b5",
+      "item_count": 30,
+      "audited_items": {
+        "pretest-T05": "9b6aaa98-885e-43bd-a13f-ec37ffbca982",
+        "pretest-T06": "9315efa0-794e-48df-ac72-324e5f7d9caa"
+      }
+    },
+    {
+      "phase": "posttest",
+      "form_id": "chapter1-2026-10-11-v1-posttest",
+      "form_hash": "ba35e8ec20253a4014a708711f26f453e6264ab9b9e61045756df1032e9cc6ae",
+      "item_count": 30,
+      "audited_items": {
+        "posttest-T05": "1f24b979-a459-401a-a094-95e122efd6ce",
+        "posttest-T06": "80bf7a60-96ba-43e5-a515-d2961da68bd3"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "feedback_id": "292ee595-9ce4-4fac-8916-9e57f036b392",
+      "status": "current_text_addresses_concern",
+      "evidence": "uhc-primary-care referral/local sections and slides leave clinical decisions to the clinician and limit BHW action to coordination. Manual PDF p65 supports the distinction. Original user comprehension and narrated media still need signed-in/reviewer verification."
+    },
+    {
+      "feedback_id": "9edcb313-09d3-45dc-870b-a900ded1e99b",
+      "status": "current_text_addresses_concern",
+      "evidence": "uhc-coverage verify section names PhilHealth/RHU/health team confirmation before assurances. Current T05/T06 also require verified local process. Do not close without checking the reported presentation mode."
+    },
+    {
+      "feedback_id": "293ee4e6-f031-46c1-8095-6bb3f570b978",
+      "status": "current_text_addresses_concern",
+      "evidence": "RA11223 section5 establishes automatic NHIP inclusion. Current coverage included/verify and primary-care provider sections distinguish inclusion from clinic selection/registration. Keep both concepts; do not replace statutory inclusion with registration-required membership."
+    },
+    {
+      "feedback_id": "83961db6-def1-408b-ab53-22c1b4c15b8c",
+      "status": "assessment_editorial_followup",
+      "evidence": "RA11223 section4(s) permits a qualifying worker or institution. Active T06 assesses referral process, not the old definition question. An RHU-only or place-only answer would be narrower than the law. Clarify terminology in a versioned item/teaching proposal; do not rewrite historical attempts."
+    },
+    {
+      "feedback_id": "bd816c4e-e414-4e3d-9306-e24cf96d9c52",
+      "status": "assessment_editorial_followup",
+      "evidence": "Current Filipino lesson names YAKAP and clinic-selection steps. Active T05/T06 use generic coverage/referral scenarios and do not explicitly assess YAKAP empanelment. A new item must distinguish inclusion, registration, selection, FPE and current empanelment requirements, with rights preserved."
+    },
+    {
+      "feedback_id": "b7f3a267-fd4a-4328-80b9-09a498308662",
+      "status": "assessment_editorial_followup",
+      "evidence": "Suggested RHU/facility-only wording must preserve public/private provider choice and the statutory worker-or-institution definition. Old requested option is not present in the active T05/T06 forms; hold for versioned editorial review."
+    },
+    {
+      "feedback_id": "10df2cd2-7a41-4a8f-ae84-d4959e225c3b",
+      "status": "assessment_editorial_followup",
+      "evidence": "YAKAP is named in the current lesson but absent by name from the active pretest form. The specific request to assess YAKAP remains open; develop a source-linked counterpart item without modifying pinned attempts."
+    }
+  ],
+  "additional_followups": [
+    {
+      "id": "FB-2.1a-CITE-01",
+      "file": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-primary-care/lesson.json",
+      "source_id": "philhealth-yakap-clinics",
+      "current_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "action": "Verify the official one-page advisory citation and correct its page range during the next controlled lesson revision. Even a source-only edit changes the published hash; include completion/assessment compatibility checks."
+    }
+  ],
+  "limitations": [
+    "No independent clinical or legal SME approval asserted.",
+    "No audio/video or Cebuano/Hiligaynon audit in this slice.",
+    "No new content publication, grading change, historical-attempt mutation, feedback reply or status mutation.",
+    "Live hashes are a point-in-time observation; the checker verifies local files against this record and does not query the live project."
+  ]
+}
