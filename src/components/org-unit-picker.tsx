@@ -134,6 +134,7 @@ export function OrgUnitPicker({
               value={chain[depth]?.id ?? ""}
               onChange={(event) => choose(depth, event.target.value)}
               disabled={disabled || !list}
+              aria-describedby={level === "provincial" ? `${id}-hint` : undefined}
               className={selectClass}
             >
               <option value="">{list ? stopLabel : t("loading")}</option>
@@ -143,6 +144,7 @@ export function OrgUnitPicker({
                 </option>
               ))}
             </select>
+            {level === "provincial" ? <p id={`${id}-hint`} className="text-xs text-ink/70">{t("independentCityHint")}</p> : null}
           </div>
         );
       })}

@@ -5,10 +5,12 @@ export function Field({
   label,
   htmlFor,
   children,
+  error,
 }: {
   label: string;
   htmlFor: string;
   children: React.ReactNode;
+  error?: string;
 }) {
   return (
     <div className="flex flex-col gap-1">
@@ -16,6 +18,7 @@ export function Field({
         {label}
       </label>
       {children}
+      {error ? <p id={`${htmlFor}-error`} className="text-sm text-danger">{error}</p> : null}
     </div>
   );
 }
