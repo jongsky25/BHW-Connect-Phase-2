@@ -10,9 +10,9 @@ import { fullFormHash } from './lib/chapter1-assessment-content.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = path => JSON.parse(readFileSync(join(root, path), 'utf8'));
 const audit = read('docs/feedback-remediation/uhc-audit-2026-10-23.json');
-const module = loadReferenceModule(join(root, 'content/training/day1-basic-competencies/modules/02-uhc-act'), join(root, 'public'));
+const referenceModule = loadReferenceModule(join(root, 'content/training/day1-basic-competencies/modules/02-uhc-act'), join(root, 'public'));
 for (const observed of audit.lessons) {
-  const lesson = module.lessons.find(l => l.manifest.lesson_key === observed.lesson_key);
+  const lesson = referenceModule.lessons.find(l => l.manifest.lesson_key === observed.lesson_key);
   assert(lesson, `Missing lesson ${observed.lesson_key}`);
   assert.equal(contentHash(lesson), observed.content_hash, `${observed.lesson_key}: differs from the observed publication`);
 }
