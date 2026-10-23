@@ -108,8 +108,13 @@ all three failures. `git diff --check` passes. No test assertions were relaxed.
 The CSV validation confirms exactly 214 unique feedback IDs, with no omitted
 submissions and an increment, owner role and next action for each.
 
-Status: implemented and locally verified; not deployed. Full pilot/browser
-verification and feedback closure remain pending.
+Release receipt: [PR #329](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/329)
+merged as `1be8fb18ed2ffda4935d02b2c438c730ddebada0` after CI run
+`39986459735` passed checks and isolated E2E. Vercel production deployment
+`dpl_715DYm4BKTSoK354F8M91x1J1fqh` is READY for that exact SHA, with
+`bhw-connect-phase-2.vercel.app` assigned. A public `/login` smoke returned
+HTTP 200 and BHW application content. Signed-in pilot verification and feedback
+closure remain pending; CI browser evidence is from the disposable database.
 
 Release verification still required: signed-in browser checks for BHW and
 assessor, mobile review navigation, leaving/reopening an attempt, and the exact
@@ -117,12 +122,48 @@ My Feedback/browser-back scenario. The managed environment has no configured
 signed-in test credentials. Do not run write-based E2E against the pilot; use
 the repository's isolated test environment/CI.
 
+## FB-1.2a — lesson progression across subchapters
+
+Related feedback: `2f7a7fb6-89f9-4a3a-bf67-42bf09a49add` asks for a direct next
+lesson option. The two blocked reports submitted on `/feedback` remain open
+until their exact lesson/prerequisite context is established.
+
+Confirmed gap: the BHW lesson route calculates its next destination only from
+lessons in the current subchapter. Its final lesson therefore has no next link
+even when another published subchapter follows. The assessor personal-study
+route also hides Continue studying on lesson pages, including completed ones.
+This increment builds on the approach in the older open PR #193 and adapts it
+to the current routes and their lesson, preview and slide behavior.
+
+The fix derives the next lesson from the current chapter's published non-quiz
+modules in delivery order. It supplies the same destination to the completion
+panel and route navigation, skips empty/unpublished destinations, retains
+facilitator slide mode and read-only preview, and leaves the final chapter
+lesson without an invented next destination. The assessor continuation appears
+on completed/reviewed lesson pages when another unfinished published lesson
+exists; it does not point back to the current lesson or a completed bookmark.
+Existing pretest, completion and qualification rules remain in force.
+
+Nine new navigation cases cover English/Filipino transitions, empty/unpublished
+and quiz gaps, the last chapter lesson, admin/assessor slide previews, completed
+assessor lessons, self-links and completed bookmarks. Six regressions failed
+before the fix; all 54 focused route tests pass afterward. The test query
+adapter now honors the production query's non-null published-revision filter.
+The tracker retains all 214 IDs and marks only the directly related next-lesson
+report as partially fixed locally. Its line endings are normalized for future
+tracker updates.
+
+Validation: full lint and TypeScript checks pass, and all 2,151 unit tests in
+244 files pass. `git diff --check` and the 214-unique-ID tracker check pass.
+Status: implemented locally, awaiting PR checks and release verification.
+
 ## Next work
 
-1. Finish release verification of FB-1.1a and the original feedback-return path.
+1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
 2. Confirm the progress display using the reporter's correct account/persona and
    chapter, then disposition the historical mismatch based on evidence.
-3. Identify and reproduce the blocked lessons for FB-1.2.
+3. Release and verify FB-1.2a; identify the original blocked lessons before
+   closing the two reports submitted on `/feedback`.
 4. Reproduce the Puerto Princesa selection and field-error reports for FB-1.3.
 5. Start authoritative-source review for FB-2.1 while engineering proceeds.
 

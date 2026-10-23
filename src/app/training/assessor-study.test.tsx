@@ -104,6 +104,25 @@ describe('assessor study route',()=>{
     expect(screen.getByText('Study reader')).toHaveAttribute('data-story-handoff','true');
     expect(screen.getByText('Study reader')).toHaveAttribute('data-next','/training/manual/assessor/chapter-1/m1/l2');
   });
+  it('keeps continuation visible while reviewing a completed lesson',async()=>{
+    state.rows.assessor_lesson_progress=[{assessor_user_id:'self',chapter_id:'ch1',lesson_id:'l1',revision_id:'r1'}];
+    render(await page(['m1','l1']));
+    expect(screen.getByRole('link',{name:'Continue studying'})).toHaveAttribute('href','/training/manual/assessor/chapter-1/m1/l2');
+  });
+  it('does not offer continuation to the same unfinished lesson',async()=>{
+    render(await page(['m1','l1']));
+    expect(screen.queryByRole('link',{name:'Continue studying'})).not.toBeInTheDocument();
+  });
+  it('does not recommend an already completed bookmark when remaining lessons are unpublished',async()=>{
+    state.rows.assessor_lesson_progress=[
+      {assessor_user_id:'self',chapter_id:'ch1',lesson_id:'l1',revision_id:'r1'},
+      {assessor_user_id:'self',chapter_id:'ch1',lesson_id:'l2',revision_id:'r2'},
+    ];
+    state.rows.assessor_lesson_resume=[{assessor_user_id:'self',chapter_id:'ch1',lesson_id:'l2',revision_id:'r2',updated_at:'2026-10-23'}];
+    render(await page(['m1','l1']));
+    expect(screen.queryByRole('link',{name:'Continue studying'})).not.toBeInTheDocument();
+    expect(screen.getByText(/40 required lessons are not yet available/)).toBeInTheDocument();
+  });
   it('requires the diagnostic pretest before opening lessons',async()=>{
     state.rows.assessor_exam_attempts=[];
     render(await page());
