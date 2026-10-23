@@ -73,7 +73,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
       const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_get", { p_attempt_id: id });
       if (requestError) throw requestError;
       const next = data as Attempt;
-      setAttempt(next); setPosition(next.position); setPending(null);
+      setAttempt(next); setPosition(next.position); setPending(null); pendingOperation.current = null;
       setStage(next.state === "submitted" ? "result" : "questions");
     } catch {
       setError(copy("We could not load your saved assessment. Please try again.", "Hindi makuha ang naka-save na pagtatasa. Subukan muli."));
@@ -90,7 +90,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
       if (requestError) throw requestError;
       if ((data as { state?: string })?.state === "legacy_submitted") { await refreshState(); setStage("entry"); return; }
       const next = data as Attempt;
-      setAttempt(next); setPosition(next.position); setStage(next.state === "submitted" ? "result" : "questions");
+      setAttempt(next); setPosition(next.position); pendingOperation.current = null; setStage(next.state === "submitted" ? "result" : "questions");
       await refreshState();
     } catch {
       setError(copy("Assessment is temporarily unavailable. Your previous results remain available.",
@@ -101,7 +101,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   async function save(next: Response, nextPosition = position) {
     if (!attempt || attempt.state !== "draft") return false;
     setPending(next); setSaved(false); setBusy(true); setError(null);
-    const payload = JSON.stringify({ next, nextPosition, revision: attempt.revision, lang });
+    const payload = JSON.stringify({ attemptId: attempt.attempt_id, changes: [next], nextPosition, revision: attempt.revision, lang });
     if (pendingOperation.current?.payload !== payload) pendingOperation.current = { payload, mutationId: crypto.randomUUID() };
     try {
       const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_save", {
@@ -120,19 +120,25 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   }
 
   async function move(nextPosition: number) {
-    if (!attempt || busy) return;
-    if (pending) { if (!await save(pending, nextPosition)) return; }
+    if (!attempt || busy) return false;
+    if (pending) return save(pending, nextPosition);
     else {
       setBusy(true); setSaved(false); setError(null);
+      // A lost response may follow a committed save. Retry the same mutation
+      // so the server returns its receipt instead of rejecting a stale revision.
+      const payload = JSON.stringify({ attemptId: attempt.attempt_id, changes: [], nextPosition, revision: attempt.revision, lang });
+      if (pendingOperation.current?.payload !== payload) pendingOperation.current = { payload, mutationId: crypto.randomUUID() };
       try {
         const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_save", {
           p_attempt_id: attempt.attempt_id, p_expected_revision: attempt.revision,
-          p_mutation_id: crypto.randomUUID(), p_changes: [], p_position: nextPosition, p_language: lang,
+          p_mutation_id: pendingOperation.current.mutationId, p_changes: [], p_position: nextPosition, p_language: lang,
         });
         if (requestError) throw requestError;
-        setAttempt(data as Attempt); setPosition(nextPosition); setSaved(true);
+        setAttempt(data as Attempt); setPosition(nextPosition); pendingOperation.current = null; setSaved(true);
+        return true;
       } catch {
         setError(copy("Position was not saved. Retry or reload your draft.", "Hindi naka-save ang posisyon. Subukan muli o i-reload ang draft."));
+        return false;
       } finally { setBusy(false); }
     }
   }
@@ -209,7 +215,8 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
           aria-current={i === position ? "step" : undefined} onClick={() => void move(i)}>{i + 1}</button>)}
       </div>
       <Link className="underline" href={chapterHref} onClick={event => {
-        if (pending) { event.preventDefault(); setError(copy("Retry the unsaved change before leaving.", "Subukang i-save muli ang hindi pa na-save na pagbabago bago umalis.")); }
+        if (busy) { event.preventDefault(); setError(copy("Wait for the current save before leaving.", "Hintaying matapos ang pag-save bago umalis.")); }
+        else if (pending) { event.preventDefault(); setError(copy("Retry the unsaved change before leaving.", "Subukang i-save muli ang hindi pa na-save na pagbabago bago umalis.")); }
       }}>{copy("Save and leave", "I-save at umalis")}</Link>
     </section>
   );
@@ -221,13 +228,15 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
     {questionLegend}
     <ol className="grid grid-cols-5 gap-2 sm:grid-cols-10">{attempt.items.map((item, i) => {
       const answer = attempt.responses.find(r => r.item_id === item.item_id);
-      return <li key={item.item_id}><button className={questionButton(Boolean(answer))} onClick={() => { setPosition(i); setStage("questions"); }}>
+      return <li key={item.item_id}><button className={questionButton(Boolean(answer))} disabled={busy} onClick={async () => {
+        if (await move(i)) setStage("questions");
+      }}>
         {i + 1}<span className="sr-only">: {answer?.kind === "unknown" ? copy("unknown", "hindi alam") : answer ? copy("answered", "may sagot") : copy("unanswered", "walang sagot")}{answer?.marked ? `, ${copy("marked", "minarkahan")}` : ""}</span>
       </button></li>;
     })}</ol>
     {error && <p role="alert" className="text-danger">{error}</p>}
     <button className={button} disabled={busy || unanswered.length > 0} onClick={() => void submit()}>{copy("Submit assessment", "Isumite ang pagtatasa")}</button>
-    <button className={button} onClick={() => setStage("questions")}>{copy("Back to questions", "Bumalik sa mga tanong")}</button>
+    <button className={button} disabled={busy} onClick={() => setStage("questions")}>{copy("Back to questions", "Bumalik sa mga tanong")}</button>
   </section>;
 
   if (stage === "result" && attempt) return <section className="space-y-4">
