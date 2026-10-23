@@ -1,4 +1,4 @@
-# Feedback remediation — pilot baseline and first increment
+# Feedback remediation — pilot baseline and delivery record
 
 ## Baseline: 23 October 2026
 
@@ -199,7 +199,35 @@ Validation: all 2,159 tests in 246 files pass; TypeScript and lint pass (lint
 reports four pre-existing unused-variable warnings in unrelated scripts).
 English/Filipino user-management and picker translation keys match. The tracker
 retains 214 unique feedback IDs, and `git diff --check` passes.
-Status: implemented locally; PR checks and release verification pending.
+Release receipt: [PR #331](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/331)
+merged as `693962a0962b521f5f546424fa71a185aa022ee4` after CI run
+`39990532029` passed checks and isolated E2E. Vercel production deployment
+`dpl_3hcAk8s7KStya8SA3s6CU3uUQJfU` is READY for that exact SHA, with the
+production domain assigned. Signed-in field-error and scoped picker verification
+remain pending before feedback closure.
+
+## FB-2.1a — source accuracy and current publication audit
+
+The [UHC audit](uhc-audit-2026-10-23.md) covers seven source-accuracy submissions,
+two published lessons and the active assessment's coverage/referral slots.
+Read-only pilot observations match the locally computed lesson and form hashes.
+Official PhilHealth copies of the UHC Act, selection circular and 2026 YAKAP
+advisories were checked alongside the project's Reference Manual transcription.
+
+Current English/Filipino teaching addresses three reported concerns: official
+benefit confirmation, inclusion versus clinic registration, and BHW coordination
+versus clinical decisions. Four assessment/editorial requests remain open,
+including explicit YAKAP assessment and the statutory provider definition.
+An advisory page-range citation also needs verification in the next controlled
+lesson revision. This slice records evidence and acceptance criteria for the
+next versioned assessment proposal; it does not alter published content, mark
+feedback resolved or assert independent clinical/legal approval.
+
+Run `node scripts/feedback-policy-audit.mjs` to check local lessons/forms against
+the recorded publication observation and retain all 214 feedback IDs. This is a
+local check, not a fresh live query. It passes, along with all nine targeted UHC
+lesson/assessment-content tests. The seven tracker entries now link their exact
+finding and next action. Ten FB-2.1 assignments remain outside this first slice.
 
 ## Next work
 
@@ -208,8 +236,9 @@ Status: implemented locally; PR checks and release verification pending.
    chapter, then disposition the historical mismatch based on evidence.
 3. Finish signed-in verification of FB-1.2a; identify the original blocked lessons before
    closing the two reports submitted on `/feedback`.
-4. Release and verify FB-1.3a for admin location scopes and both interface languages.
-5. Start authoritative-source review for FB-2.1 while engineering proceeds.
+4. Finish signed-in verification of FB-1.3a for admin location scopes and both interface languages.
+5. Prepare the FB-2.2a versioned assessment proposal described in the UHC audit,
+   and continue source review of the ten remaining FB-2.1 assignments.
 
 The remaining increments keep their proposed assignments until reproduction or
 content review establishes an implementation-ready task. Mandatory question
