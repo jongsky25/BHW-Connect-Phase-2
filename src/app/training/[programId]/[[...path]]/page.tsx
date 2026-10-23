@@ -309,12 +309,17 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const revision=revisionResult.data;
         const featured=revision.featured_asset_id?revision.assets.find(a=>a.id===revision.featured_asset_id):undefined;
         const lessonIndex=own.findIndex(l=>l.id===lesson.id);
+        const orderedLessons=(modules??[]).filter(m=>m.type!=='quiz')
+          .flatMap(m=>(lessons??[]).filter(l=>l.module_id===m.id));
+        const chapterLessonIndex=orderedLessons.findIndex(l=>l.id===lesson.id);
+        const nextLesson=chapterLessonIndex<0?undefined:orderedLessons[chapterLessonIndex+1];
         const completionScope=readOnly?null:completionMilestoneOnSave(lesson,lessons??[],modules??[],done);
         const subchapterNumber=(modules??[]).filter(m=>m.type!=='quiz').findIndex(m=>m.id===subchapter.id)+1;
         const completionMilestone=completionScope?{
           scope:completionScope,
           number:completionScope==='chapter'?String(chapter.position+1):`${chapter.position+1}.${subchapterNumber}`,
         }:undefined;
+        const lessonHref=(target:CourseLesson)=>`${chapterHref}/${target.module_id}/${target.id}${facilitator&&!showGuide?`?view=lesson${mode==='slides'?'&mode=slides':''}`:''}`;
         const adjacentHref=(id:string)=>`${moduleHref}/${id}${facilitator&&!showGuide?`?view=lesson${mode==='slides'?'&mode=slides':''}`:''}`;
         const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
         const checkpoint=chapter1Checkpoints.find(group=>group.after_lesson_key===lesson.lesson_key);
@@ -345,7 +350,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
           returnHref={chapter1Flow?`${moduleHref}/${lesson.id}?view=run${context}`:facilitator?`${moduleHref}?view=slides`:undefined}
           initialMode={facilitator && mode==='slides'?'slides':undefined}
-          nextLessonHref={own[lessonIndex+1]?adjacentHref(own[lessonIndex+1].id):undefined}
+          nextLessonHref={nextLesson?lessonHref(nextLesson):undefined}
           completionMilestone={completionMilestone}
           translations={program.content_key==='bhw-reference-manual'?translationsForLesson({...lesson,revision},readOnly):undefined}
           narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil',revision.read_sections):undefined}/>}
@@ -359,7 +364,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
               {text('Opsyonal na tala sa araling ito','Optional note for this lesson')}</Link>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
             {own[lessonIndex-1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex-1].id)}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
-            {own[lessonIndex+1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex+1].id)}>{text('Susunod na aralin →','Next lesson →')}</Link>}
+            {nextLesson && <Link prefetch={false} className="rounded border p-3" href={lessonHref(nextLesson)}>{text('Susunod na aralin →','Next lesson →')}</Link>}
           </nav></>;
       }
     }
@@ -376,3 +381,4 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
     {content}
   </div>;
 }
+
