@@ -17,10 +17,11 @@ vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:asyn
   [...new Set((state.rows.course_test_questions_current??[]).map(row=>row.course_id))].map(course_id=>({course_id})),error:state.preview && name==='rpc_learner_assessment_state'?{message:'BHW-only RPC'}:null}},from:(table:string)=>{
   const call={table,columns:'',filters:[] as Array<[string,unknown]>};state.calls.push(call);
   let single=false;
-  const q={select:(c:string)=>{call.columns=c;return q},eq:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},is:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},in:()=>q,not:()=>q,order:()=>q,limit:()=>q,returns:()=>q,
+  const nonNull:string[]=[];
+  const q={select:(c:string)=>{call.columns=c;return q},eq:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},is:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},in:()=>q,not:(k:string,_op:string,v:unknown)=>{if(v===null)nonNull.push(k);return q},order:()=>q,limit:()=>q,returns:()=>q,
     maybeSingle:()=>{single=true;return q},single:()=>{single=true;return q},then:(resolve:(v:unknown)=>void)=>{
       let rows=state.rows[table]??[];
-      rows=rows.filter(r=>call.filters.every(([k,v])=>r[k]===v));
+      rows=rows.filter(r=>call.filters.every(([k,v])=>r[k]===v)&&nonNull.every(k=>r[k]!=null));
       if(table===state.failing)return resolve({data:null,error:{message:'boom'}});
       resolve({data:single?rows[0]??null:rows,error:null});
     }};return q;
@@ -41,7 +42,7 @@ beforeEach(()=>{
   };
 });
 afterEach(cleanup);
-const page=(path:string[]=[],view?:string,returnTo?:string)=>TrainingPage({params:Promise.resolve({programId:'manual',path}),searchParams:Promise.resolve({view,returnTo})});
+const page=(path:string[]=[],view?:string,returnTo?:string,mode?:string)=>TrainingPage({params:Promise.resolve({programId:'manual',path}),searchParams:Promise.resolve({view,returnTo,mode})});
 const guideTables=['course_lesson_facilitator_notes','course_module_facilitator_notes','competency_observations','users'];
 describe('manual navigation',()=>{
   it('facilitator lesson shows only activity cards mapped to its lesson key',async()=>{
@@ -81,6 +82,47 @@ describe('manual navigation',()=>{
     expect(screen.getByText('Learner lesson')).toHaveAttribute('data-story-handoff','true');
     expect(screen.getByText('Learner lesson')).toHaveAttribute('data-next-lesson','/training/manual/chapter-1/m1/l2');
     expect(state.calls.some(c=>c.table==='course_lesson_facilitator_notes')).toBe(false);
+  });
+  it.each(['en','fil'])('continues to the next subchapter from its final lesson (%s)',async locale=>{
+    state.locale=locale;
+    state.rows.course_lessons.push({id:'l3',module_id:'m2',position:0,required:true,title_en:'UHC basics',title_fil:'UHC',published_revision_id:'r3'});
+    state.rows.course_lesson_revisions.push({id:'r2'});
+    render(await page(['chapter-1','m1','l2']));
+    const next='/training/manual/chapter-1/m2/l3';
+    expect(screen.getByText('Learner lesson')).toHaveAttribute('data-next-lesson',next);
+    expect(screen.getByRole('link',{name:locale==='en'?'Next lesson →':'Susunod na aralin →'})).toHaveAttribute('href',next);
+  });
+  it('skips empty, quiz and unpublished lesson destinations',async()=>{
+    state.rows.course_modules.push(
+      {id:'quiz',course_id:'course',position:2,type:'quiz',title_en:'Quiz',title_fil:'Quiz'},
+      {id:'empty',course_id:'course',position:3,type:'text',title_en:'Empty',title_fil:'Wala'},
+      {id:'later',course_id:'course',position:4,type:'text',title_en:'Later',title_fil:'Susunod'},
+    );
+    state.rows.course_lessons.push(
+      {id:'draft',module_id:'m2',position:0,required:true,published_revision_id:null},
+      {id:'quiz-lesson',module_id:'quiz',position:0,published_revision_id:'quiz-revision'},
+      {id:'l3',module_id:'later',position:0,required:true,title_en:'Published',title_fil:'Aralin',published_revision_id:'r3'},
+    );
+    state.rows.course_lesson_revisions.push({id:'r2'});
+    render(await page(['chapter-1','m1','l2']));
+    expect(screen.getByRole('link',{name:'Next lesson →'})).toHaveAttribute('href','/training/manual/chapter-1/later/l3');
+    expect(screen.getByText('Learner lesson')).toHaveAttribute('data-next-lesson','/training/manual/chapter-1/later/l3');
+  });
+  it('does not invent a next lesson after the final published chapter lesson',async()=>{
+    state.rows.course_lesson_revisions.push({id:'r2'});
+    render(await page(['chapter-1','m1','l2']));
+    expect(screen.getByText('Learner lesson')).not.toHaveAttribute('data-next-lesson');
+    expect(screen.queryByRole('link',{name:'Next lesson →'})).not.toBeInTheDocument();
+  });
+  it.each(['admin','assessor'])('retains read-only facilitator slide view across subchapters for %s',async role=>{
+    state.role=role;
+    state.rows.course_lessons.push({id:'l3',module_id:'m2',position:0,required:true,title_en:'UHC basics',title_fil:'UHC',published_revision_id:'r3'});
+    state.rows.course_lesson_revisions.push({id:'r2'});
+    render(await page(['chapter-1','m1','l2'],'lesson',undefined,'slides'));
+    const next='/training/manual/chapter-1/m2/l3?view=lesson&mode=slides';
+    expect(screen.getByText('Admin preview')).toHaveAttribute('data-next-lesson',next);
+    expect(screen.getByRole('link',{name:'Next lesson →'})).toHaveAttribute('href',next);
+    expect(state.rpcCalls).not.toContain('rpc_course_lesson_complete');
   });
   it('admin sees preview and never someone else’s certificate',async()=>{
     state.role='admin';render(await page(['chapter-1','m1','l1'],'lesson'));expect(screen.getByText('Admin preview')).toBeInTheDocument();
