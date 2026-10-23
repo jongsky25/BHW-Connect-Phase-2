@@ -9,6 +9,10 @@ import { createClient } from "@/lib/supabase/client";
 import { Field, inputClass } from "./form-field";
 
 type Role = "bhw" | "admin" | "assessor" | "designer";
+type FormField = "username" | "fullName" | "email" | "placement";
+type FieldErrors = Partial<Record<FormField, string>>;
+const fieldClass = `${inputClass} aria-[invalid=true]:border-danger aria-[invalid=true]:focus:border-danger aria-[invalid=true]:focus:ring-danger/30`;
+const fieldIds: Record<FormField, string> = { username: "new-username", fullName: "new-full-name", email: "new-email", placement: "new-placement" };
 
 type Props = {
   /** The admin's own org unit: the widest place they can put a user. */
@@ -27,6 +31,19 @@ export function CreateUserForm({ rootOrgUnit, onCreated }: Props) {
   const [address, setAddress] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<FieldErrors>({});
+
+  function clearFieldError(field: FormField) {
+    setFieldErrors(current => ({ ...current, [field]: undefined }));
+    setError(null);
+  }
+
+  function reportFieldErrors(errors: FieldErrors) {
+    setFieldErrors(errors);
+    setError(t("checkFieldsError"));
+    const first = (Object.keys(fieldIds) as FormField[]).find(field => errors[field]);
+    if (first) document.getElementById(fieldIds[first])?.focus();
+  }
 
   // Assessors get a catchment (region / province / city-municipality); BHWs a
   // barangay, or their city-municipality to pick the barangay themselves.
@@ -41,7 +58,16 @@ export function CreateUserForm({ rootOrgUnit, onCreated }: Props) {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!placementValid) return;
+    if (loading) return;
+    const errors: FieldErrors = {};
+    if (!username.trim()) errors.username = t("usernameRequiredError");
+    if (!fullName.trim()) errors.fullName = t("fullNameRequiredError");
+    if (email.trim() && event.currentTarget.querySelector<HTMLInputElement>("#new-email")?.validity.typeMismatch) {
+      errors.email = t("emailInvalidError");
+    }
+    if (placementError) errors.placement = placementError;
+    if (Object.keys(errors).length) { reportFieldErrors(errors); return; }
+    setFieldErrors({});
     setError(null);
     setLoading(true);
 
@@ -58,7 +84,13 @@ export function CreateUserForm({ rootOrgUnit, onCreated }: Props) {
       });
 
       if (rpcError) {
-        setError(t(mapAdminRpcError(rpcError.message)));
+        const key = mapAdminRpcError(rpcError.message);
+        if (key === "usernameRequiredError") reportFieldErrors({ username: t(key) });
+        else if (rpcError.code === "23505" && /users_username_key|users_email_partial_key/.test(rpcError.message)) {
+          reportFieldErrors({ username: t("usernameTakenError") });
+        } else if (["outOfScopeError", "assessorLevelError", "bhwLevelError"].includes(key)) {
+          reportFieldErrors({ placement: t(key) });
+        } else setError(t(key));
         return;
       }
 
@@ -90,22 +122,26 @@ export function CreateUserForm({ rootOrgUnit, onCreated }: Props) {
       <h2 className="text-lg font-semibold text-ink">{t("createHeading")}</h2>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <Field label={t("usernameLabel")} htmlFor="new-username">
+        <Field label={t("usernameLabel")} htmlFor="new-username" error={fieldErrors.username}>
           <input
             id="new-username"
             required
             value={username}
-            onChange={(event) => setUsername(event.target.value)}
-            className={inputClass}
+            onChange={(event) => { setUsername(event.target.value); clearFieldError("username"); }}
+            aria-invalid={Boolean(fieldErrors.username)}
+            aria-describedby={fieldErrors.username ? "new-username-error" : undefined}
+            className={fieldClass}
           />
         </Field>
-        <Field label={t("fullNameLabel")} htmlFor="new-full-name">
+        <Field label={t("fullNameLabel")} htmlFor="new-full-name" error={fieldErrors.fullName}>
           <input
             id="new-full-name"
             required
             value={fullName}
-            onChange={(event) => setFullName(event.target.value)}
-            className={inputClass}
+            onChange={(event) => { setFullName(event.target.value); clearFieldError("fullName"); }}
+            aria-invalid={Boolean(fieldErrors.fullName)}
+            aria-describedby={fieldErrors.fullName ? "new-full-name-error" : undefined}
+            className={fieldClass}
           />
         </Field>
         <Field label={t("roleLabel")} htmlFor="new-role">
@@ -115,6 +151,7 @@ export function CreateUserForm({ rootOrgUnit, onCreated }: Props) {
             onChange={(event) => {
               setRole(event.target.value as Role);
               setOrgUnit(rootOrgUnit);
+              clearFieldError("placement");
             }}
             className={inputClass}
           >
@@ -124,7 +161,9 @@ export function CreateUserForm({ rootOrgUnit, onCreated }: Props) {
             <option value="designer">{t("roleDesigner")}</option>
           </select>
         </Field>
-        <fieldset className="flex flex-col gap-2 sm:col-span-2">
+        <fieldset id="new-placement" tabIndex={-1} aria-invalid={Boolean(fieldErrors.placement)}
+          aria-describedby={fieldErrors.placement || placementError ? "new-placement-error" : undefined}
+          className={`flex flex-col gap-2 sm:col-span-2 ${fieldErrors.placement ? "rounded-md border border-danger p-3 focus:outline-danger" : ""}`}>
           <legend className="text-sm font-medium text-ink">
             {role === "assessor" ? t("catchmentLabel") : t("orgUnitLabel")}
           </legend>
@@ -133,9 +172,9 @@ export function CreateUserForm({ rootOrgUnit, onCreated }: Props) {
             key={role}
             root={rootOrgUnit}
             maxLevel={role === "assessor" ? "city_municipal" : "barangay"}
-            onChange={setOrgUnit}
+            onChange={unit => { setOrgUnit(unit); clearFieldError("placement"); }}
           />
-          {placementError ? <p className="text-xs text-danger">{placementError}</p> : null}
+          {fieldErrors.placement || placementError ? <p id="new-placement-error" className="text-xs text-danger">{fieldErrors.placement ?? placementError}</p> : null}
         </fieldset>
         <Field label={t("contactLabel")} htmlFor="new-contact">
           <input
@@ -145,13 +184,15 @@ export function CreateUserForm({ rootOrgUnit, onCreated }: Props) {
             className={inputClass}
           />
         </Field>
-        <Field label={t("emailLabel")} htmlFor="new-email">
+        <Field label={t("emailLabel")} htmlFor="new-email" error={fieldErrors.email}>
           <input
             id="new-email"
             type="email"
             value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            className={inputClass}
+            onChange={(event) => { setEmail(event.target.value); clearFieldError("email"); }}
+            aria-invalid={Boolean(fieldErrors.email)}
+            aria-describedby={fieldErrors.email ? "new-email-error" : undefined}
+            className={fieldClass}
           />
         </Field>
         <Field label={t("addressLabel")} htmlFor="new-address">
@@ -172,7 +213,7 @@ export function CreateUserForm({ rootOrgUnit, onCreated }: Props) {
 
       <button
         type="submit"
-        disabled={loading || !placementValid}
+        disabled={loading}
         className="self-start rounded-md bg-primary px-4 py-2 font-medium text-on-primary transition-opacity disabled:opacity-60"
       >
         {loading ? t("creating") : t("createSubmit")}

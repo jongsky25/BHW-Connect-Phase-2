@@ -155,16 +155,60 @@ tracker updates.
 
 Validation: full lint and TypeScript checks pass, and all 2,151 unit tests in
 244 files pass. `git diff --check` and the 214-unique-ID tracker check pass.
-Status: implemented locally, awaiting PR checks and release verification.
+Release receipt: [PR #330](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/330)
+merged as `34313dcf2a20bae296f715f00d8df2fb918b8ba1` after CI run
+`39988428200` passed checks and isolated E2E. Vercel production deployment
+`dpl_Gd8oinC2uaMyjKxyTZfvewS6u8MF` is READY for that exact SHA and has the
+production domain assigned. The public login fetch returned HTTP 200 and BHW application
+content. Signed-in navigation verification and feedback closure remain pending.
+
+## FB-1.3a — identify create-user errors and independent-city placement
+
+Related feedback: `716bd5c2-a758-4449-9596-24c40f90c3bb` asks for highlighted
+fields requiring correction, and `f278d210-3a87-4dfa-9368-72fbd6a02b78` reports
+Puerto Princesa missing from the city options.
+
+The create-user form disabled native validation without adding client validation
+or field-specific messages. It now validates whitespace-only required username
+and full name, uses native email validity for the optional email, and identifies
+invalid placement. Errors add red borders, `aria-invalid`, linked descriptions,
+a form-level summary and focus on the first invalid field. Correcting a field
+clears its error. Known duplicate username constraints and server placement
+errors point to the corresponding field; other failures remain form-level.
+Entered values are preserved after failure, and successful creation still uses
+the existing RPC and normalization. Submit remains available for invalid
+placement so users can receive the explanation and focus; invalid data is stopped
+before the RPC.
+
+A read-only pilot query confirmed the existing MIMAROPA hierarchy:
+`City of Puerto Princesa (HUC)` is a provincial-level group, containing the
+city-municipal `City of Puerto Princesa (Capital)`. It is separate from Palawan.
+The picker now labels that level Province / independent city and explains the
+city-group path in both supported interface languages. This preserves all IDs,
+hierarchy, placement rules and organization boundaries.
+
+Eight new component cases cover blank fields and city selection in English and
+Filipino, invalid email, duplicate username and successful retry, generic failure
+and location correction. Seven failed against the old implementation; all eight
+pass with the fix. The focused run including existing error mapping passes all
+16 tests. Both feedback IDs are marked partially fixed locally in the tracker;
+the 214 original IDs remain present. Signed-in create-user and scoped city-picker
+verification are required after release; no test users were created on the pilot.
+
+Validation: all 2,159 tests in 246 files pass; TypeScript and lint pass (lint
+reports four pre-existing unused-variable warnings in unrelated scripts).
+English/Filipino user-management and picker translation keys match. The tracker
+retains 214 unique feedback IDs, and `git diff --check` passes.
+Status: implemented locally; PR checks and release verification pending.
 
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
 2. Confirm the progress display using the reporter's correct account/persona and
    chapter, then disposition the historical mismatch based on evidence.
-3. Release and verify FB-1.2a; identify the original blocked lessons before
+3. Finish signed-in verification of FB-1.2a; identify the original blocked lessons before
    closing the two reports submitted on `/feedback`.
-4. Reproduce the Puerto Princesa selection and field-error reports for FB-1.3.
+4. Release and verify FB-1.3a for admin location scopes and both interface languages.
 5. Start authoritative-source review for FB-2.1 while engineering proceeds.
 
 The remaining increments keep their proposed assignments until reproduction or
