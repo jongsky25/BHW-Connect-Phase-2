@@ -9,7 +9,8 @@ const cache=new Map();
 export function beforeFeedbackCsc(path, actual = fs.readFileSync(path)) {
   const r = receipt ??= JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-2.3-preservation.json'));
   if (r.target !== 'bhw-eligibility' || Object.keys(r.changed_existing_files).some(p =>
-    ![...['lesson.json', 'read.en.md', 'read.fil.md', 'slides.json'].map(f => leaf + f), narration,'scripts/tests/lesson-173.test.mjs'].includes(p)))
+    ![...['lesson.json', 'read.en.md', 'read.fil.md', 'slides.json'].map(f => leaf + f), narration,
+      ...['144','145','173'].map(n=>`scripts/tests/lesson-${n}.test.mjs`)].includes(p)))
     throw Error('Invalid FB-2.3 preservation scope');
   const e = r.changed_existing_files[path]; if (!e) return actual;
   const stat=fs.statSync(path,{bigint:true}),signature=`${stat.ino}:${stat.size}:${stat.mtimeNs}:${stat.ctimeNs}`;
