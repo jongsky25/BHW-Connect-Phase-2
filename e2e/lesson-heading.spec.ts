@@ -84,10 +84,11 @@ test("lesson headings and reading tools preserve context, readability and zoom c
           }
           expect((await new AxeBuilder({ page }).include("[data-lesson-heading]").include('aside[aria-labelledby="lesson-reading-tools-heading"]').analyze()).violations).toEqual([]);
         }
+        // Chromium cannot resize its window while native fullscreen is active.
+        await page.setViewportSize({ width: 320, height: 844 });
         await page.getByRole("button", { name: locale === "en" ? "Full screen" : "Buong screen", exact: true }).click();
         const dialog = page.getByRole("dialog", { name: locale === "en" ? "Full-screen lesson" : "Buong screen na aralin", exact: true });
         await expect(dialog).toBeVisible();
-        await page.setViewportSize({ width: 320, height: 844 });
         const zoomIn = dialog.getByRole("button", { name: locale === "en" ? "Zoom in" : "Lakihan", exact: true });
         await expect(zoomIn).toContainText(locale === "en" ? "Zoom in" : "Lakihan");
         expect(await zoomIn.locator("..").evaluate(element => element.scrollWidth <= element.clientWidth)).toBe(true);
@@ -99,6 +100,7 @@ test("lesson headings and reading tools preserve context, readability and zoom c
         expect((await new AxeBuilder({ page }).include("dialog[open]").analyze()).violations).toEqual([]);
         await dialog.getByRole("button", { name: locale === "en" ? "Close" : "Isara", exact: true }).click();
         await expect(dialog).not.toBeVisible();
+        await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
         await page.getByRole("group", { name: locale === "en" ? "Content mode" : "Uri ng nilalaman", exact: true })
           .getByRole("button", { name: "Slides", exact: true }).click();
         await expect(page.locator('[data-reading-layout] > section > article[data-layout="takeaway"]')).toHaveCSS("max-inline-size", "none");
