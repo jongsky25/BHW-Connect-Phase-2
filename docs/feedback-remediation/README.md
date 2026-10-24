@@ -448,6 +448,22 @@ rewriting the active forms, keys, lesson revisions, criterion pins or saved
 scores. The four reports remain open for live comments and any exact-item or
 presentation check still needed. CI/merge/deployment evidence is in the PR.
 
+## FB-2.6 owner approval; FB-3.1 finish guidance
+
+The owner approved the live clarification increment and directed continuation.
+[The approval receipt](fb-2.6-owner-approval-2026-10-24.json) pins the deployed
+artifacts at `2407f5667cdddc4fe224a7936e790bf019bdda16`; PR #340 was already
+merged. Approval does not claim that original questions were edited or that
+all remaining presentation/context concerns are resolved.
+
+The next [FB-3.1 slice](fb-3.1-assessment-finish-guidance.md) addresses the two
+reports about unclear review-before-submit and the missing next step after the
+last answer. Chapter 1 now explains the finish sequence, distinguishes saved
+choice/unknown/unanswered/marked counts, emphasizes Review all at the end and
+provides review shortcuts. Failed saves cannot claim completion. Existing
+navigation, confirmation, scoring, answer visibility and saved records remain
+intact. The PR carries CI, merge and exact production deployment evidence.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.

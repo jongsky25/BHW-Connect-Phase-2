@@ -1,0 +1,28 @@
+{
+  "approval_id": "FB-2.6-owner-2026-10-24",
+  "approval_type": "owner_approval_of_live_clarification_increment",
+  "authorization": "approved. merge then do what is next?",
+  "authorization_source": "Owner instruction in chat",
+  "approved_date": "2026-10-24",
+  "approved_live_commit": "2407f5667cdddc4fe224a7936e790bf019bdda16",
+  "prior_merged_pr": "https://github.com/jongsky25/BHW-Connect-Phase-2/pull/340",
+  "live_route": "/content-clarifications",
+  "approved_scope": "The live four-topic bilingual supplemental clarification increment described in chat; existing lessons, exam questions and scores are unchanged.",
+  "approved_artifacts": [
+    {
+      "path": "src/lib/elearning/content-clarifications.ts",
+      "sha256": "ae373bb7f71e77bfa0292d361618032fe501f21c86c04113df823d933d303b41"
+    },
+    {
+      "path": "src/components/elearning/content-clarification-library.tsx",
+      "sha256": "3db9ae96810ef1b30543ed3723e9bf19dd7adc80fc9c6b05f0c18919389eaeeb"
+    },
+    {
+      "path": "docs/feedback-remediation/fb-2.6-live-clarifications.md",
+      "sha256": "64b81cad1795dd4e9375bae65b8ba86744fb97e4ed50858ce997af2b6c769748"
+    }
+  ],
+  "independent_specialist_review": "not_claimed",
+  "feedback_closure_authorized": false,
+  "next_increment": "FB-3.1 assessment review/finish guidance"
+}
