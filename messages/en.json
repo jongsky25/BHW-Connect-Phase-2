@@ -83,6 +83,22 @@
     "genericError": "Couldn't record your consent. Please try again.",
     "bodyFeedback": "Page feedback is optional. It may include a screenshot only when you choose to attach one; comments and screenshots are retained for up to 24 months."
   },
+  "destinations": {
+    "heading": "Explore BHW Connect",
+    "intro": "Choose a section below to see what it contains. These destinations are also available in your menu.",
+    "chat": "Ask a question and find published guidance.",
+    "kb": "Read published health references by topic.",
+    "courses": "Open training chapters, lessons and learning progress.",
+    "assessments": "Review learner requests and record assessments.",
+    "training-sessions": "Plan and review scheduled training sessions.",
+    "announcements": "Read updates shared with your area.",
+    "surveys": "Open available surveys and submit responses.",
+    "forum": "Read and join community discussions.",
+    "flipcharts": "Open visual aids for health discussions.",
+    "designer-flipcharts": "Create and manage your own flipcharts.",
+    "settings": "Change language, text size and display preferences.",
+    "admin-users": "Manage users, content and system settings."
+  },
   "authHome": {
     "heading": "Welcome, {name}!",
     "body": "You're logged in to BHW Connect.",
@@ -195,6 +211,8 @@
   "kb": {
     "browseHeading": "Knowledge Base",
     "browseIntro": "Browse published health topics by category.",
+    "collectionHelp": "Each collection has its own module numbers. Browse general health topics by title.",
+    "openCourses": "Find training courses and lessons",
     "browseEmpty": "No categories have been published yet.",
     "categoryEmpty": "No published content in this category yet.",
     "tryChatCta": "Try the Chat Guide instead"

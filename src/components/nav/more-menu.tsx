@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { DestinationLink } from "./destination-link";
 import { usePathname } from "next/navigation";
 import { useId } from "react";
 import type { NavItem } from "@/lib/nav/nav-items";
@@ -12,12 +12,13 @@ type Props = {
   /** Translated label for each item, keyed by NavItem.id. */
   labels: Record<string, string>;
   triggerLabel: string;
+  descriptions?: Record<string, string>;
 };
 
 // A disclosure dropdown (button + conditionally-rendered panel), per WAI-ARIA
 // guidance for site menus — not role="menu"/role="menuitem", which expects
 // arrow-key navigation this component doesn't implement.
-export function MoreMenu({ items, labels, triggerLabel }: Props) {
+export function MoreMenu({ items, labels, triggerLabel, descriptions }: Props) {
   const { open, setOpen, containerRef, triggerRef } = useDisclosure<HTMLDivElement, HTMLButtonElement>();
   const pathname = usePathname();
   const panelId = useId();
@@ -40,22 +41,14 @@ export function MoreMenu({ items, labels, triggerLabel }: Props) {
       {open ? (
         <div
           id={panelId}
-          className="absolute right-0 top-full z-50 mt-2 min-w-48 rounded-md border border-ink/10 bg-canvas py-1 shadow-lg"
+          className="absolute right-0 top-full z-50 mt-2 max-h-[70dvh] w-72 max-w-[calc(100vw-2rem)] overflow-y-auto rounded-md border border-ink/10 bg-canvas py-1 shadow-lg"
         >
           {items.map((item) => {
             const active = isNavItemActive(pathname, item);
             return (
-              <Link prefetch={false}
-                key={item.id}
-                href={item.href}
-                aria-current={active ? "page" : undefined}
-                onClick={() => setOpen(false)}
-                className={`block px-4 py-2 text-sm ${
-                  active ? "font-medium text-primary-text" : "text-ink/80 hover:bg-ink/5"
-                }`}
-              >
-                {labels[item.id]}
-              </Link>
+              <DestinationLink key={item.id} href={item.href} label={labels[item.id]} description={descriptions?.[item.id]}
+                idPrefix={`${panelId}-${item.id}`} active={active} onClick={() => setOpen(false)}
+                className={`block min-h-11 break-words px-4 py-3 text-sm ${active ? "text-primary-text" : "text-ink hover:bg-ink/5"}`} />
             );
           })}
         </div>

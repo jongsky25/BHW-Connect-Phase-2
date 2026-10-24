@@ -11,6 +11,7 @@ import type { A11ySettings } from "@/lib/settings/types";
 import { useDisplaySettings } from "@/lib/settings/use-display-settings";
 import type { AppUser } from "@/lib/supabase/app-user";
 import { isNavItemActive } from "./nav-link";
+import { DestinationLink } from "./destination-link";
 import { QuickDisplayControls } from "./quick-display-controls";
 
 type Props = {
@@ -18,6 +19,7 @@ type Props = {
   items: NavItem[];
   /** Translated label for each item, keyed by NavItem.id. */
   labels: Record<string, string>;
+  descriptions?: Record<string, string>;
   initialA11y: A11ySettings;
 };
 
@@ -28,7 +30,7 @@ const ITEM_CLASS =
 // A native <dialog> opened with showModal() gives the focus trap, Escape
 // handling and inert background for free, and returns focus to the ☰ button
 // when it closes.
-export function MobileDrawer({ account, items, labels, initialA11y }: Props) {
+export function MobileDrawer({ account, items, labels, descriptions, initialA11y }: Props) {
   const t = useTranslations("common");
   const tNav = useTranslations("authHome");
   const tFooter = useTranslations("footer");
@@ -85,14 +87,9 @@ export function MobileDrawer({ account, items, labels, initialA11y }: Props) {
     const active = isNavItemActive(pathname, item);
     return (
       <li key={item.id}>
-        <Link prefetch={false}
-          href={item.href}
-          aria-current={active ? "page" : undefined}
-          onClick={close}
-          className={`${ITEM_CLASS} ${active ? "font-semibold text-primary-text" : "text-ink hover:bg-ink/5"}`}
-        >
-          {labels[item.id]}
-        </Link>
+        <DestinationLink href={item.href} label={labels[item.id]} description={descriptions?.[item.id]}
+          idPrefix={`drawer-nav-${item.id}`} active={active} onClick={close}
+          className={`block min-h-12 break-words rounded-md px-3 py-2 text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${active ? "text-primary-text" : "text-ink hover:bg-ink/5"}`} />
       </li>
     );
   }
