@@ -378,6 +378,34 @@ execution; and preservation of original evidence/progress. The approved release
 rebuild, retained C1AF registry check, baseline policy audit and whitespace check
 pass. No development or E2E was run against the pilot.
 
+## FB-2.4 publication and FB-2.5 inventory
+
+The owner directed publication of the prepared FB-2.4 packet with “do it”.
+[The review record](fb-2.4-review-2026-10-24.md) documents the fresh statute
+checks, bilingual assessment review, owner approval and specialist-review limit.
+The exact original proposal remains unchanged. The separate approved v4
+snapshot replaces only four T08/T09 shared-form items, retaining the other 56
+form items, all 48 checkpoints and 42 curriculum pins from CSC v3. The guarded
+publisher preserves legacy keys, enrolled release assignments, historical
+snapshots, responses and scores. No lesson, media or criterion changes occur.
+The release PR records the final CI, publication, integrity and production
+receipt; signed-in confirmation and report closure are not implied.
+
+Continuation on [FB-2.5](fb-2.5-plant-aid-review.md) inventories 72 bilingual
+practice files across twelve plant lessons and the two current published
+process-diagram assets. Practice scenario cards are not verified botanical
+reference cards. The draft defines the local clinical/training ownership,
+provenance/version register, access/print checks, uncertainty stop rule and
+consultation handoff. No named local owner or actual approved card is invented,
+and no plant guidance is published. This report remains open for that local
+handoff. The four FB-2.6 context/comprehension cases remain separately assigned.
+
+Validation: all eleven focused proposal/publication tests pass, including
+unchanged approved copy, drift refusal, failed-pin rollback, unexpected-active
+release refusal, idempotence and preservation of pinned snapshots/scores.
+Full repository and CI results are recorded in the release PR. Feedback statuses
+remain in_review and no notifications or replies are sent.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
@@ -388,7 +416,8 @@ pass. No development or E2E was run against the pilot.
 4. Finish signed-in verification of FB-1.3a for admin location scopes and both interface languages.
 5. Retain the pending signed-in FB-2.2b check despite owner-directed report
    closure. Verify the approved FB-2.3 release in a signed-in new-enrollment
-   journey and review the prepared FB-2.4 bilingual packet.
+   journey and verify the approved FB-2.4 release. Continue FB-2.5 with the named
+   local owner and actual approved plant aids; then handle FB-2.6 context checks.
 
 The remaining increments keep their proposed assignments until reproduction or
 content review establishes an implementation-ready task. Mandatory question

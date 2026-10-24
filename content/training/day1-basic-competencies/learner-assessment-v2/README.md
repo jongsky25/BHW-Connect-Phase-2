@@ -147,3 +147,22 @@ rollback if a different successor is active. Keep the new immutable revision,
 criterion, forms and all learner history. V3 enrollments already assigned must
 remain pinned to their forms for both phases. Record the rollback in the audit
 trail; do not delete or rewrite assessment or practice evidence.
+
+## Approved FB-2.4 gift/conflict and lactation release
+
+The owner directed publication of the prepared FB-2.4 packet with “do it”.
+[The review record](../../../../docs/feedback-remediation/fb-2.4-review-2026-10-24.md)
+records the source checks and limits. The exact draft remains historical;
+`releases/chapter1-feedback-gifts-lactation-v4/` holds its separate approval and
+approved snapshot. Four new T08/T09 identities address formula-promotion
+inducements and suitable lactation facilities. The other 56 form items, 48
+checkpoint items and all 42 lesson pins are retained from CSC v3. Legacy keys,
+existing enrollment pins, saved snapshots and scores remain unchanged.
+
+Run `node scripts/feedback-gifts-lactation-publication.mjs` to reproduce and
+validate the release; `--sql` prints a guarded transaction without connecting.
+Merge after CI before controlled publication, then verify live hashes and
+history fingerprints. The transaction makes v4 active and v3 draft for pinned
+learners. Comparability remains unvalidated. This release changes no lesson,
+media, criterion, schema or permission. See the review record for rollback;
+publication does not itself close feedback or claim signed-in confirmation.
