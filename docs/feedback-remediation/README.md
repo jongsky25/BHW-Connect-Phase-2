@@ -287,8 +287,34 @@ data release, with no schema or application route changes.
 
 The final activation receipt and live hash verification are recorded in
 [PR #333](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/333).
-The original feedback reports remain open until signed-in confirmation of the
-reported experience; content publication alone does not verify every report.
+On 24 October the owner explicitly requested closure of the four related UHC
+reports. They are now resolved; signed-in confirmation remains outstanding.
+The closure receipt is in the [remaining content audit](remaining-content-audit-2026-10-24.md).
+
+## FB-2.1b — remaining ten assignments reviewed
+
+[The review](remaining-content-audit-2026-10-24.md) covers exactly the ten
+previously unreviewed content assignments, with findings, mappings, acceptance
+checks and source/access limits. The system now records four UHC reports as
+resolved on owner instruction and these ten as in_review. Automated closure
+leaves resolved_by null; it does not impersonate an application administrator
+or claim the pending signed-in journey was completed. No notifications or
+replies were sent.
+
+Five reports support wording improvements, one needs a local plant-aid protocol,
+two are substantially addressed by current text, and two need original-item
+context or reporter intent. Eight Chapter 1 lesson hashes match publication.
+The two plant lessons were checked against actual published bilingual Read and
+Slides because their whole draft hashes differ; copy matches excluding media
+references. Exact legacy gift/lactation questions are identified separately
+from active shared forms. No learning content, answer key, enrollment, attempt,
+response or score changed in this increment.
+
+The next proposed increment is FB-2.3: clearer accreditation recommendation
+scenarios plus CSC naming/application precision. FB-2.4 handles legacy question
+explanations, FB-2.5 defines accessible plant aids and local ownership, and
+FB-2.6 recovers context and checks current wording. These are review outcomes,
+not approved or published content edits.
 
 ## Next work
 
@@ -298,8 +324,8 @@ reported experience; content publication alone does not verify every report.
 3. Finish signed-in verification of FB-1.2a; identify the original blocked lessons before
    closing the two reports submitted on `/feedback`.
 4. Finish signed-in verification of FB-1.3a for admin location scopes and both interface languages.
-5. Verify the published FB-2.2b questions and terminology feedback with a new
-   enrollment, then continue source review of the ten remaining FB-2.1 assignments.
+5. Retain the pending signed-in FB-2.2b check despite owner-directed report
+   closure. Prepare the FB-2.3 draft from the completed ten-assignment review.
 
 The remaining increments keep their proposed assignments until reproduction or
 content review establishes an implementation-ready task. Mandatory question
