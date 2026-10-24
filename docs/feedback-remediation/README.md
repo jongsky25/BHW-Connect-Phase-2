@@ -610,3 +610,9 @@ The remaining increments keep their proposed assignments until reproduction or
 content review establishes an implementation-ready task. Mandatory question
 sequence, lesson locks, answer-key visibility and course-length changes must
 follow the existing approved learning policy and explicit product decisions.
+
+## FB-4.1e — follow-up question, response and contact visuals
+
+[Delivery record](fb-4.1e-follow-up-visuals.md) documents three bilingual diagrams
+in Following up constructively, retained opening scene and assessment, exact
+revision binding, responsive accessibility checks and the live review boundary.
