@@ -579,6 +579,19 @@ intact. This is on-screen context, not regenerated speech. Both reports remain
 open for live comments and later spoken-story/placement review. The release PR
 records CI and exact production evidence.
 
+## FB-4.1d relationship learning visuals
+
+The owner directed [four relationship visuals and the follow-up image review](fb-4.1d-relationship-visuals.md).
+The four text-only positions now have bilingual native-text role/limit cards,
+known/unknown comparison, parallel concern/contact rows and neutral practice
+cards. Every slide has an existing image or a new diagram; approved summary
+lines are reflowed where appropriate. The revision-bound graphics retain
+practice-response gates and all source/media/history/grade contracts. The
+Following up constructively scene was inspected: it fits the opening, while
+later question-comparison and next-contact concepts merit distinct visuals.
+That remains a separate follow-up. Reports stay open for live comments; CI
+and exact production evidence are in the release PR.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.

@@ -25,6 +25,8 @@ import { LessonAssetFigure } from "./lesson-asset-figure";
 import { AiVisualLabel } from './ai-visual-label';
 import { StoryCaseContext } from './story-case-context';
 import { communicationStorySupplement } from '@/lib/elearning/communication-story-context';
+import { RelationshipLearningVisual } from './relationship-learning-visual';
+import { relationshipLearningVisual } from '@/lib/elearning/relationship-learning-visuals';
 import { FittedLessonPage } from "./fitted-lesson-page";
 import { storyQuestionUi, translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
 
@@ -602,6 +604,7 @@ export function ReferenceLessons(props: Props) {
       setPending(false);
     }
   }
+  const relationshipVisual = lesson && item ? relationshipLearningVisual(lesson, item.id, en) : null;
   const readerArticle = lesson && item && (
       <article
         className={storyLayout ? "reference-story" : "rounded-xl border border-ink/15 p-4 sm:p-6"}
@@ -637,8 +640,9 @@ export function ReferenceLessons(props: Props) {
             {(listeningRevision || clarificationRevision || recordingRevision || handoffRevision || causesRevision || definitionRevision || prioritizationRevision || actionPlanRevision || safetyPrepareRevision || safetyIdentifyRevision || controlsRevision || demonstrationRevision || resourcesAuditRevision || resourcesSafeChangeRevision || resourcesMonitorRevision) && !storyLayout && figures}
             {resourcesAuditRevision && item.check && <p className="mt-3 text-lg">{en ? item.display_en : item.display_fil}</p>}
             {prioritizationTable}
+            {relationshipVisual && <RelationshipLearningVisual visual={relationshipVisual}/>}
             {practice}
-            {revealSummary && !(resourcesAuditRevision && item.check) && <div
+            {revealSummary && !(resourcesAuditRevision && item.check) && relationshipVisual?.kind !== 'roles' && relationshipVisual?.kind !== 'contacts' && <div
               className={storyLayout ? "reference-story-lines" :
                 ["comparison", "relationship-map", "scene"].includes(
                   item.layout,
@@ -692,6 +696,7 @@ export function ReferenceLessons(props: Props) {
           >
             {!storyLayout && figures}
             {prioritizationTable}
+            {relationshipVisual && <RelationshipLearningVisual visual={relationshipVisual}/>}
             {practice}
             {!revealSummary && lessonNarration?.[item.id] && <p className="mt-3 text-sm">
               {ui("Sagutin muna ang tanong para mapakinggan ang audio na may buod.", "Answer the check to unlock this section’s audio, which includes the takeaway.")}

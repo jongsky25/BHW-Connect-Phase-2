@@ -1,0 +1,29 @@
+{
+  "purpose": "Bind native relationship learning visuals to the exact shared reader while retaining historical source views.",
+  "base_commit": "13051140fdb45c9732df4a3b5a4653cd7071bedf",
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "be8eda9cf52c4f0ebc14e86479d8674ad575e83a727003f9146ba3d9b899e2b6",
+  "successor_sha256": "4c47a36c8e6755938988454edf9513bc6c867c2b42cb70874ad228ca49ff19b1",
+  "replacements": [
+    {
+      "predecessor_utf8": "import { communicationStorySupplement } from '@/lib/elearning/communication-story-context';",
+      "current_utf8": "import { communicationStorySupplement } from '@/lib/elearning/communication-story-context';\nimport { RelationshipLearningVisual } from './relationship-learning-visual';\nimport { relationshipLearningVisual } from '@/lib/elearning/relationship-learning-visuals';",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "  const readerArticle = lesson && item && (",
+      "current_utf8": "  const relationshipVisual = lesson && item ? relationshipLearningVisual(lesson, item.id, en) : null;\n  const readerArticle = lesson && item && (",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "            {prioritizationTable}\n            {practice}",
+      "current_utf8": "            {prioritizationTable}\n            {relationshipVisual && <RelationshipLearningVisual visual={relationshipVisual}/>}\n            {practice}",
+      "count": 2
+    },
+    {
+      "predecessor_utf8": "            {revealSummary && !(resourcesAuditRevision && item.check) && <div",
+      "current_utf8": "            {revealSummary && !(resourcesAuditRevision && item.check) && relationshipVisual?.kind !== 'roles' && relationshipVisual?.kind !== 'contacts' && <div",
+      "count": 1
+    }
+  ]
+}
