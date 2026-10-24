@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "proposal_id": "FB-2.3-accreditation-csc",
+  "editorial_status": "draft",
+  "reviewer": null,
+  "approval_status": "pending",
+  "feedback_ids": [
+    "03108bf6-dbcf-442d-941f-4b316ce0e94f",
+    "c42f690b-8758-4937-9c52-841c8b8f04e8",
+    "5d06c8cd-44c0-486e-b904-4c6e4fb99cfb"
+  ],
+  "base_release_id": "chapter1-feedback-uhc-v2",
+  "base_release_sha256": "b8f657c3035224257607cb2c3538fd46c9dc5f80ed7552ebc2aa5df0017f5a13",
+  "base_lesson_hash": "10756a7a4d1cbd6459aa5c6982adc9c51bc94c83b2cafcf748f6ab0427243a1e",
+  "base_lesson_revision_id": "57f3cb9c-1bdc-44ef-ac81-991166e9ed3e",
+  "proposed_release_id": "chapter1-feedback-accreditation-csc-v3",
+  "proposed_form_ids": {
+    "pretest": "chapter1-feedback-accreditation-csc-v3-pretest",
+    "posttest": "chapter1-feedback-accreditation-csc-v3-posttest"
+  },
+  "sources": [
+    {
+      "id": "csc",
+      "url": "https://csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility",
+      "locators": [
+        "Where to file",
+        "Modes of filing A-D",
+        "Personal appearance and certificate receipt note"
+      ],
+      "status": "Official guidance read on 2026-10-24."
+    },
+    {
+      "id": "ra7883",
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html",
+      "locators": [
+        "3-4"
+      ],
+      "status": "Statute mirror reviewed in FB-2.1b."
+    },
+    {
+      "id": "committee-guidance",
+      "url": "https://www.dilg.gov.ph/PDF_File/issuances/joint_circulars/dilg-joincircular-2023829_8a3dec8214.pdf",
+      "locators": [
+        "III.C",
+        "V.C",
+        "VI.D"
+      ],
+      "status": "Existing approved accreditation-lesson citation; fresh PDF retrieval timed out on 2026-10-24. Reconfirm the citation during content review; the examples explicitly establish a local committee, not a nationwide mandatory committee."
+    }
+  ],
+  "replacements": [
+    {
+      "phase": "pretest",
+      "slot": "T11",
+      "replaces_item_id": "57da8421-acf8-4c01-a986-e252c9a2aa8f",
+      "source_ids": [
+        "ra7883",
+        "committee-guidance"
+      ],
+      "item": {
+        "item_id": "9336265d-6948-57ee-82f1-097dffd61058",
+        "editorial_key": "pretest-T11-v2",
+        "version": 2,
+        "target": "T11",
+        "slot": "T11",
+        "stem": {
+          "en": "In this example, the BHW Registration and Accreditation Committee recommended that the Local Health Board approve Ana's application. The board has not recorded a decision, and a required document is missing. What should Ana do next?",
+          "fil": "Sa halimbawang ito, iminungkahi ng BHW Registration and Accreditation Committee sa Local Health Board na aprubahan ang aplikasyon ni Ana. Wala pang naitalang pasya ang board at kulang ang isang kailangang dokumento. Ano ang susunod na gagawin ni Ana?"
+        },
+        "options": [
+          {
+            "id": "o2",
+            "label": {
+              "en": "Use the committee recommendation as proof that her accreditation is complete.",
+              "fil": "Gamitin ang rekomendasyon ng committee bilang patunay na tapos na ang kaniyang accreditation."
+            },
+            "distractor_rationale": {
+              "en": "A committee recommendation is not the Local Health Board decision.",
+              "fil": "Hindi pasya ng Local Health Board ang rekomendasyon ng committee."
+            }
+          },
+          {
+            "id": "o1",
+            "label": {
+              "en": "Ask the proper local contact how to complete the document and verify the board decision.",
+              "fil": "Itanong sa tamang lokal na contact kung paano kukumpletuhin ang dokumento at titiyakin ang pasya ng board."
+            }
+          },
+          {
+            "id": "o3",
+            "label": {
+              "en": "Use a training certificate instead of the required document and board decision.",
+              "fil": "Gumamit ng training certificate bilang kapalit ng kailangang dokumento at pasya ng board."
+            },
+            "distractor_rationale": {
+              "en": "A training certificate does not replace the required evidence or the board decision.",
+              "fil": "Hindi kapalit ng kailangang ebidensiya o pasya ng board ang training certificate."
+            }
+          }
+        ],
+        "correct_option_id": "o1",
+        "rationale": {
+          "en": "A recommendation is a proposal from the committee to the board. The committee assists with screening; the Local Health Board makes and records the accreditation decision. Ana should ask the locally confirmed RHU, health office or board contact about the missing document and official decision.",
+          "fil": "Ang rekomendasyon ay mungkahi ng committee sa board. Tumutulong ang committee sa screening; ang Local Health Board ang nagpapasya at nagtatala ng pasya sa accreditation. Dapat magtanong si Ana sa kumpirmadong lokal na RHU, health office o contact ng board tungkol sa kulang na dokumento at opisyal na pasya."
+        },
+        "lesson_keys": [
+          "bhw-accreditation"
+        ],
+        "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/read.en.md",
+        "reviewer": null,
+        "review_status": "draft",
+        "safety_privacy_review_required": true,
+        "safety_privacy_reviewer": null
+      }
+    },
+    {
+      "phase": "posttest",
+      "slot": "T11",
+      "replaces_item_id": "fb33e30e-02c7-44d5-ac13-93c10b8e10f8",
+      "source_ids": [
+        "ra7883",
+        "committee-guidance"
+      ],
+      "item": {
+        "item_id": "c3eab24b-abce-50ab-b4b7-4aecc9cacb44",
+        "editorial_key": "posttest-T11-v2",
+        "version": 2,
+        "target": "T11",
+        "slot": "T11",
+        "stem": {
+          "en": "A local committee recommended that the Local Health Board approve Bea's BHW accreditation application. Bea then submitted a missing document. A colleague says she is now accredited. What should Bea do before making that claim?",
+          "fil": "Iminungkahi ng lokal na committee na aprubahan ng Local Health Board ang aplikasyon ni Bea para sa BHW accreditation. Pagkatapos, isinumite ni Bea ang kulang na dokumento. Sinabi ng kasama na accredited na siya. Ano ang dapat gawin ni Bea bago sabihin iyon?"
+        },
+        "options": [
+          {
+            "id": "o3",
+            "label": {
+              "en": "Treat submission of the additional document as proof of completed accreditation.",
+              "fil": "Ituring ang pagsumite ng dagdag na dokumento bilang patunay na tapos na ang accreditation."
+            },
+            "distractor_rationale": {
+              "en": "Submitting a document does not by itself establish a board decision.",
+              "fil": "Hindi patunay ng pasya ng board ang pagsumite lamang ng dokumento."
+            }
+          },
+          {
+            "id": "o1",
+            "label": {
+              "en": "Verify the Local Health Board's recorded accreditation decision through the proper local contact.",
+              "fil": "Tiyakin sa tamang lokal na contact ang naitalang pasya ng Local Health Board sa accreditation."
+            }
+          },
+          {
+            "id": "o2",
+            "label": {
+              "en": "Treat the committee recommendation as the final accreditation decision.",
+              "fil": "Ituring ang rekomendasyon ng committee bilang pinal na pasya sa accreditation."
+            },
+            "distractor_rationale": {
+              "en": "The committee recommendation does not replace the board decision.",
+              "fil": "Hindi kapalit ng pasya ng board ang rekomendasyon ng committee."
+            }
+          }
+        ],
+        "correct_option_id": "o1",
+        "rationale": {
+          "en": "A recommendation and submission of a document do not establish completed accreditation. Bea should verify the official Local Health Board decision through the proper local contact. The BHW does not grant accreditation to herself or another worker.",
+          "fil": "Hindi patunay ng natapos na accreditation ang rekomendasyon at pagsumite ng dokumento. Dapat tiyakin ni Bea sa tamang lokal na contact ang opisyal na pasya ng Local Health Board. Hindi ang BHW ang nagbibigay ng accreditation sa sarili o sa ibang worker."
+        },
+        "lesson_keys": [
+          "bhw-accreditation"
+        ],
+        "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/read.en.md",
+        "reviewer": null,
+        "review_status": "draft",
+        "safety_privacy_review_required": true,
+        "safety_privacy_reviewer": null
+      }
+    }
+  ],
+  "lesson_changes": {
+    "lesson_key": "bhw-eligibility",
+    "source_ids": [
+      "csc"
+    ],
+    "replace_section": {
+      "id": "section-4",
+      "body": {
+        "en": "RA 7883 section six, paragraph d, provides the statutory basis for second-grade eligibility after five years of continuous service. The Civil Service Commission (CSC) sets more detailed implementing conditions. Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record. Accreditation must precede the qualifying service. Service before 20 February 1995 is not counted. Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.",
+        "fil": "Ang seksiyon 6(d) ng RA 7883 ay nagbibigay ng batayan para sa second-grade eligibility matapos ang limang taong tuloy-tuloy na serbisyo. May mas detalyadong implementing conditions ang Civil Service Commission (CSC). Gamitin ang apat na pangkat na ito: akreditasyon ng Local Health Board; hindi bababa sa dalawang taon sa kolehiyo tungo sa isang degree; hindi bababa sa limang taong tuloy-tuloy, aktibo, full-time at boluntaryong serbisyo bilang accredited BHW; at satisfactory service record. Dapat accredited na bago magsimula ang qualifying service. Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995. Hindi sapat ang akreditasyon lamang; kailangang matugunan at mapatunayan ang naaangkop na kondisyon, at CSC ang nagpapasya sa application."
+      },
+      "display": {
+        "en": "Civil Service Commission (CSC)\nFour groups: accreditation • education • qualifying service • satisfactory record\nAccredited before service starts; no counting before 20 February 1995.",
+        "fil": "Civil Service Commission (CSC)\nApat na pangkat: akreditasyon • edukasyon • qualifying service • satisfactory record\nAccredited na bago magsimula; walang bilang bago20 Pebrero 1995."
+      }
+    },
+    "insert_after": "bhwe-verification",
+    "read_section": {
+      "id": "bhwe-filing-receipt",
+      "concept_ids": [
+        "m4.bhwe"
+      ],
+      "asset_ids": [],
+      "check": null,
+      "heading_en": "Filing and receiving the certificate",
+      "heading_fil": "Pag-file at pagtanggap ng certificate",
+      "body_en": "CSC guidance permits filing in person, through an authorized representative, through a conduit CSC office (an intermediary office), or by mail, subject to its requirements. Check current instructions with the CSC office responsible for the barangay of service. Filing is not approval. If approved, the applicant must appear personally before CSC for issuance and acceptance of the Certificate of Eligibility; a representative cannot receive it for the applicant. Completing this lesson grants neither BHWE nor a government appointment.",
+      "body_fil": "Ayon sa gabay ng CSC, maaaring mag-file nang personal, sa pamamagitan ng awtorisadong kinatawan, sa pamamagitan ng conduit CSC office (tanggapang tagapamagitan), o sa koreo, alinsunod sa mga kinakailangan nito. Tiyakin ang kasalukuyang gabay sa CSC office na may sakop sa barangay ng serbisyo. Hindi approval ang pag-file. Kung aprubado, kailangang personal na humarap ang aplikante sa CSC para sa pag-isyu at pagtanggap ng Certificate of Eligibility; hindi ito maaaring tanggapin ng kinatawan para sa aplikante. Hindi nagbibigay ng BHWE o government appointment ang pagtatapos ng araling ito.",
+      "takeaway_en": "Filing is not approval; personal certificate receipt follows approval.",
+      "takeaway_fil": "Hindi approval ang pag-file; personal na pagtanggap ng certificate ang kasunod kung aprubado."
+    },
+    "slide": {
+      "id": "slide-bhwe-filing-receipt",
+      "concept_ids": [
+        "m4.bhwe"
+      ],
+      "asset_ids": [],
+      "check": null,
+      "layout": "process",
+      "heading_en": "Filing and receiving the certificate",
+      "heading_fil": "Pag-file at pagtanggap ng certificate",
+      "narration_en": "CSC guidance permits filing in person, through an authorized representative, through a conduit CSC office (an intermediary office), or by mail, subject to its requirements. Check current instructions with the CSC office responsible for the barangay of service. Filing is not approval. If approved, the applicant must appear personally before CSC for issuance and acceptance of the Certificate of Eligibility; a representative cannot receive it for the applicant. Completing this lesson grants neither BHWE nor a government appointment.",
+      "narration_fil": "Ayon sa gabay ng CSC, maaaring mag-file nang personal, sa pamamagitan ng awtorisadong kinatawan, sa pamamagitan ng conduit CSC office (tanggapang tagapamagitan), o sa koreo, alinsunod sa mga kinakailangan nito. Tiyakin ang kasalukuyang gabay sa CSC office na may sakop sa barangay ng serbisyo. Hindi approval ang pag-file. Kung aprubado, kailangang personal na humarap ang aplikante sa CSC para sa pag-isyu at pagtanggap ng Certificate of Eligibility; hindi ito maaaring tanggapin ng kinatawan para sa aplikante. Hindi nagbibigay ng BHWE o government appointment ang pagtatapos ng araling ito.",
+      "display_en": "Filing: in person, authorized representative, conduit CSC office or mail, under CSC requirements.\nApproval is separate.\nIf approved: the applicant personally receives the certificate.",
+      "display_fil": "Pag-file: personal, awtorisadong kinatawan, conduit CSC office o koreo, ayon sa CSC requirements.\nHiwalay ang approval.\nKung aprubado: aplikante ang personal na tatanggap ng certificate."
+    }
+  },
+  "continuity": {
+    "existing_enrollments": "remain_on_original_release_for_both_phases",
+    "existing_drafts": "finish_pinned_form",
+    "submitted_attempts": "retain_snapshot_answers_and_scores",
+    "comparability": "unvalidated_no_automatic_cross_release_gain_comparison"
+  },
+  "release_requirements": {
+    "lesson_revision": "pending_reviewed_publication",
+    "curriculum_pins": "refresh_after_approved_lesson_revision",
+    "media": "reconcile_narration_captions_and_optional_story_before_publication",
+    "activation": "separate_approved_release_only",
+    "review_status": "pending",
+    "bilingual_reviewer": null,
+    "policy_reviewer": null,
+    "assessment_reviewer": null
+  },
+  "review_checks": [
+    "Review both T11 scenarios, every option and rationale in English and Filipino. Confirm committee/board responsibilities against the cited guidance.",
+    "Check reading load and whether the options test accreditation rather than general test-taking cues.",
+    "Check agency naming, all four filing routes and personal certificate receipt against current CSC guidance; retain the existing qualification and JO/COS boundaries.",
+    "Review the proposed Read/Slides together; reconcile changed narration, captions and optional story media before publication.",
+    "Publish an approved lesson revision first and pin its actual revision/hash in a separately approved assessment release; draft hashes are not published revision IDs."
+  ]
+}
