@@ -35,9 +35,11 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   const [saved, setSaved] = useState(false);
   const pendingOperation = useRef<{ payload: string; mutationId: string } | null>(null);
   const questionHeading = useRef<HTMLHeadingElement>(null);
+  const reviewHeading = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
     if (stage === "questions") questionHeading.current?.focus();
+    if (stage === "review") reviewHeading.current?.focus();
   }, [position, stage]);
   useEffect(() => {
     if (!pending) return;
@@ -60,6 +62,15 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   const responded = new Set(savedResponses);
   if (pending && attempt) responded.add(pending.item_id);
   const unanswered = attempt?.items.filter(item => !responded.has(item.item_id)) ?? [];
+  const responseByItem = new Map(attempt?.responses.map(r => [r.item_id, r]));
+  const savedUnanswered = attempt?.items.filter(item => !responseByItem.has(item.item_id)) ?? [];
+  const choiceCount = attempt?.items.filter(item => responseByItem.get(item.item_id)?.kind === "choice").length ?? 0;
+  const unknownCount = attempt?.items.filter(item => responseByItem.get(item.item_id)?.kind === "unknown").length ?? 0;
+  const marked = attempt?.items.filter(item => responseByItem.get(item.item_id)?.marked) ?? [];
+  const total = attempt?.items.length ?? 30;
+  const responsesSaved = choiceCount + unknownCount;
+  const atLastQuestion = position === total - 1;
+  const allResponsesSaved = responsesSaved === total && !pending;
 
   async function refreshState() {
     const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_state", { p_course_id: courseId });
@@ -169,7 +180,13 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
     } finally { setBusy(false); }
   }
 
-  const button = "rounded-md border border-ink/20 px-4 py-2 text-sm font-medium focus-visible:outline-2 focus-visible:outline-primary disabled:opacity-50";
+  async function openQuestion(itemId: string) {
+    if (!attempt) return;
+    const index = attempt.items.findIndex(item => item.item_id === itemId);
+    if (index >= 0 && await move(index)) setStage("questions");
+  }
+
+  const button = "min-h-11 rounded-md border border-ink/20 px-4 py-2 text-sm font-medium focus-visible:outline-2 focus-visible:outline-primary disabled:opacity-50";
   const questionButton = (answered: boolean, active = false) =>
     `min-h-11 min-w-11 rounded-md border px-3 py-2 text-sm font-semibold text-ink focus-visible:outline-2 focus-visible:outline-primary disabled:opacity-50 ${answered
       ? "border-success bg-success/15"
@@ -178,12 +195,27 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
     <span className="flex items-center gap-2"><span aria-hidden="true" className="h-3 w-3 rounded-sm border border-success bg-success/15" />{copy("Answered", "May sagot")}</span>
     <span className="flex items-center gap-2"><span aria-hidden="true" className="h-3 w-3 rounded-sm border border-warning bg-warning/15" />{copy("Not done", "Wala pang sagot")}</span>
   </p>;
+  const responseSummary = <p className="text-sm text-ink/80">
+    {copy(`${choiceCount} answered · ${unknownCount} don't know yet · ${savedUnanswered.length} unanswered · ${marked.length} marked for review`,
+      `${choiceCount} may sagot · ${unknownCount} hindi pa alam · ${savedUnanswered.length} walang sagot · ${marked.length} minarkahang balikan`)}
+  </p>;
+  const finishInstructions = <aside aria-label={copy("How to finish", "Paano tapusin")} className="rounded-lg border border-primary/25 bg-primary/5 p-4">
+    <p className="font-semibold">{copy("How to finish", "Paano tapusin")}</p>
+    <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">
+      <li>{copy("Choose an answer or “I don't know yet” for every question. You can move between questions.", "Pumili ng sagot o “Hindi ko pa alam” sa bawat tanong. Maaari kang lumipat sa mga tanong.")}</li>
+      <li>{copy("Choose “Review all” to check your saved responses and any questions marked for review.", "Piliin ang “Balikan ang lahat” upang suriin ang naka-save na sagot at mga tanong na minarkahang balikan.")}</li>
+      <li>{copy("Choose “Submit assessment”, then confirm. Reaching the last question does not submit your answers.", "Piliin ang “Isumite ang pagtatasa”, saka kumpirmahin. Hindi pa naipapasa ang mga sagot pagdating sa huling tanong.")}</li>
+    </ol>
+  </aside>;
   if (stage === "questions" && attempt && current) return (
     <section className="space-y-5" aria-label={copy("Assessment questions", "Mga tanong sa pagtatasa")}>
       <div role="status" aria-live="polite" className="text-sm text-ink/70">
         {copy(`Section ${Math.floor(position / 10) + 1} of 3 · Question ${position + 1} of 30`,
-          `Bahagi ${Math.floor(position / 10) + 1} sa 3 · Tanong ${position + 1} sa 30`)} · {pending ? copy("Unsaved", "Hindi pa naka-save") : saved ? copy("Saved", "Naka-save") : copy("Saved draft", "Naka-save na draft")}
+          `Bahagi ${Math.floor(position / 10) + 1} sa 3 · Tanong ${position + 1} sa 30`)} · {pending ? copy("Unsaved", "Hindi pa naka-save") : saved ? copy("Saved", "Naka-save") : copy("Saved draft", "Naka-save na draft")} · {copy(`${responsesSaved}/${total} responses saved`, `${responsesSaved}/${total} sagot ang naka-save`)}
       </div>
+      <p className="text-sm">{copy("Answer questions → Review all → Submit and confirm. You can change saved answers before submitting.", "Sagutan ang mga tanong → Balikan ang lahat → Isumite at kumpirmahin. Maaari pang baguhin ang naka-save na sagot bago isumite.")}</p>
+      <progress aria-label={copy("Saved responses", "Mga naka-save na sagot")} className="h-3 w-full accent-primary" max={total} value={responsesSaved} />
+      {responseSummary}
       <h1 ref={questionHeading} tabIndex={-1} className="text-xl font-semibold">{current.stem[lang]}</h1>
       <fieldset disabled={busy} className="space-y-3">
         <legend className="sr-only">{copy("Choose one answer", "Pumili ng isang sagot")}</legend>
@@ -202,10 +234,15 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
         {response?.marked ? copy("Remove review mark", "Alisin ang marka") : copy("Mark for review", "Markahan para balikan")}
       </button>
       {error && <p role="alert" className="text-danger">{error} {pending && <button className="underline" onClick={() => void save(pending)}>{copy("Retry save", "Subukang i-save muli")}</button>}</p>}
+      {(atLastQuestion || allResponsesSaved) && <p className="rounded-lg border border-primary/25 bg-primary/5 p-4">
+        {allResponsesSaved
+          ? copy(`All ${total} responses are saved. Choose “Review all” to check them before submitting.`, `Naka-save na ang lahat ng ${total} sagot. Piliin ang “Balikan ang lahat” upang suriin bago isumite.`)
+          : copy("You have reached the last question. Choose “Review all” to find questions that still need a response before submitting.", "Nasa huling tanong ka na. Piliin ang “Balikan ang lahat” upang makita ang mga kailangan pang sagutan bago isumite.")}
+      </p>}
       <nav className="flex flex-wrap gap-2" aria-label={copy("Question navigation", "Paglipat sa mga tanong")}>
         <button className={button} disabled={busy || position === 0} onClick={() => void move(position - 1)}>{copy("Previous", "Nakaraan")}</button>
-        <button className={button} disabled={busy || position === 29} onClick={() => void move(position + 1)}>{copy("Next", "Susunod")}</button>
-        <button className={button} disabled={busy || Boolean(pending)} onClick={() => setStage("review")}>{copy("Review all", "Balikan ang lahat")}</button>
+        {!atLastQuestion && <button className={button} disabled={busy} onClick={() => void move(position + 1)}>{copy("Next", "Susunod")}</button>}
+        <button className={`${button} ${atLastQuestion || allResponsesSaved ? "border-primary bg-primary text-on-primary" : ""}`} disabled={busy || Boolean(pending)} onClick={() => setStage("review")}>{copy("Review all", "Balikan ang lahat")}</button>
       </nav>
       {questionLegend}
       <div className="flex flex-wrap gap-1" aria-label={copy("Jump to question", "Pumunta sa tanong")}>
@@ -222,9 +259,15 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   );
 
   if (stage === "review" && attempt) return <section className="space-y-4">
-    <h1 className="text-2xl font-semibold">{copy("Review before submitting", "Balikan bago isumite")}</h1>
+    <h1 ref={reviewHeading} tabIndex={-1} className="text-2xl font-semibold">{copy("Review before submitting", "Balikan bago isumite")}</h1>
     <p>{copy(`${unanswered.length} unanswered. Choose an answer or “I don't know yet” for every question.`,
       `${unanswered.length} ang walang sagot. Pumili ng sagot o “Hindi ko pa alam” sa bawat tanong.`)}</p>
+    {responseSummary}
+    {savedUnanswered.length === 0 && <p className="rounded-lg border border-primary/25 bg-primary/5 p-4">{copy("Every question has a saved response. Check any review marks, then choose “Submit assessment” when ready. You will be asked to confirm.", "May naka-save na sagot na ang bawat tanong. Suriin ang mga markang babalikan, saka piliin ang “Isumite ang pagtatasa” kapag handa na. Hihingan ka ng kumpirmasyon.")}</p>}
+    <div className="flex flex-wrap gap-2">
+      {savedUnanswered[0] && <button className={button} disabled={busy} onClick={() => void openQuestion(savedUnanswered[0].item_id)}>{copy("Go to first unanswered", "Pumunta sa unang walang sagot")}</button>}
+      {marked[0] && <button className={button} disabled={busy} onClick={() => void openQuestion(marked[0].item_id)}>{copy("Go to first review mark", "Pumunta sa unang minarkahan")}</button>}
+    </div>
     {questionLegend}
     <ol className="grid grid-cols-5 gap-2 sm:grid-cols-10">{attempt.items.map((item, i) => {
       const answer = attempt.responses.find(r => r.item_id === item.item_id);
@@ -235,7 +278,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
       </button></li>;
     })}</ol>
     {error && <p role="alert" className="text-danger">{error}</p>}
-    <button className={button} disabled={busy || unanswered.length > 0} onClick={() => void submit()}>{copy("Submit assessment", "Isumite ang pagtatasa")}</button>
+    <button className={`${button} border-primary bg-primary text-on-primary`} disabled={busy || unanswered.length > 0} onClick={() => void submit()}>{copy("Submit assessment", "Isumite ang pagtatasa")}</button>
     <button className={button} disabled={busy} onClick={() => setStage("questions")}>{copy("Back to questions", "Bumalik sa mga tanong")}</button>
   </section>;
 
@@ -262,6 +305,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   const draft = state.attempts.find(a => a.phase === phase && a.state === "draft");
   return <section className="space-y-5">
     <h1 className="text-2xl font-semibold">{copy("Chapter 1 assessment", "Pagtatasa sa Kabanata 1")}</h1>
+    {finishInstructions}
     {pre && <p>{copy("Baseline submitted", "Naisumite na ang baseline")}: {pre.score_percent}%</p>}
     {post && <p>{copy("Post-test submitted", "Naisumite na ang post-test")}: {post.score_percent}%</p>}
     {state.attempts.filter(a => a.state === "submitted" && a.phase === "posttest" && a.legacy_attempt_id).map(a =>
