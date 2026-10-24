@@ -1,0 +1,21 @@
+{
+  "purpose": "Bind case context and literal story transcript to an exact shared-reader successor while preserving historical audit views.",
+  "base_commit": "24cb086538f612745195a6ab774092524dabad0e",
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "1d1e0bf5e49623a981a164b1dd25891f1ec63b712e130cff0c2559e9e116c681",
+  "successor_sha256": "be8eda9cf52c4f0ebc14e86479d8674ad575e83a727003f9146ba3d9b899e2b6",
+  "replacements": [
+    {
+      "predecessor_utf8": "import { AiVisualLabel } from './ai-visual-label';",
+      "current_utf8": "import { AiVisualLabel } from './ai-visual-label';\nimport { StoryCaseContext } from './story-case-context';\nimport { communicationStorySupplement } from '@/lib/elearning/communication-story-context';"
+    },
+    {
+      "predecessor_utf8": "  const videoContent = featuredVideo && lesson && (",
+      "current_utf8": "  const storySupplement = lesson && featuredVideo ? communicationStorySupplement(lesson, featuredVideo, en) : null;\n  const videoContent = featuredVideo && lesson && ("
+    },
+    {
+      "predecessor_utf8": "      <LessonAssetFigure\n        asset={featuredVideo}",
+      "current_utf8": "      {storySupplement && <StoryCaseContext cases={storySupplement.cases} en={en}/>}\n      <LessonAssetFigure\n        asset={featuredVideo}\n        transcript={storySupplement?.transcript}"
+    }
+  ]
+}

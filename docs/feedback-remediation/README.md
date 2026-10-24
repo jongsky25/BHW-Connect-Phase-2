@@ -566,6 +566,19 @@ assessment and completion rules remain intact. Three earlier built-in scenes
 still need stronger provenance; the report remains open for that follow-up and
 live comments. The release PR records CI and production evidence.
 
+## FB-4.1c story case context and literal transcript
+
+The owner directed the [story/context comparison and focused fix](fb-4.1c-story-context.md).
+The current recording already identifies Liza's childcare concern, but omits
+Jo/Ben/Ramon's situations while summarizing how to respond. The story view now
+introduces all four people using approved Read excerpts and replaces its generic
+Steps as text fallback with the exact bilingual caption transcript. Revision,
+video/caption identity and excerpt checks prevent stale supplements. Existing
+media, questions, grades, completion rules and historical approval hashes remain
+intact. This is on-screen context, not regenerated speech. Both reports remain
+open for live comments and later spoken-story/placement review. The release PR
+records CI and exact production evidence.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.

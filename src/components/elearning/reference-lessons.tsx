@@ -23,6 +23,8 @@ import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import { ReferenceReadSection } from "./reference-read-section";
 import { LessonAssetFigure } from "./lesson-asset-figure";
 import { AiVisualLabel } from './ai-visual-label';
+import { StoryCaseContext } from './story-case-context';
+import { communicationStorySupplement } from '@/lib/elearning/communication-story-context';
 import { FittedLessonPage } from "./fitted-lesson-page";
 import { storyQuestionUi, translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
 
@@ -725,14 +727,17 @@ export function ReferenceLessons(props: Props) {
         </button>
       </nav>
   );
+  const storySupplement = lesson && featuredVideo ? communicationStorySupplement(lesson, featuredVideo, en) : null;
   const videoContent = featuredVideo && lesson && (
     <div className="reference-story-player rounded-xl border border-ink/15 p-4 sm:p-6" data-lesson={lesson.lesson_key}>
       <p className="mb-1 text-sm font-semibold">{narratedStory ? videoLabel : ui("Panoorin", "Watch")}</p>
       {narratedStory && <p className="text-sm">
         {ui("Pindutin ang Play para marinig ang salaysay sa napiling wika.", "Press Play to hear the story in your selected language.")}
       </p>}
+      {storySupplement && <StoryCaseContext cases={storySupplement.cases} en={en}/>}
       <LessonAssetFigure
         asset={featuredVideo}
+        transcript={storySupplement?.transcript}
         en={en}
         language={translation?.language}
         onEnded={props.storyQuestionHandoff && narratedStory && !done.has(lesson.id) ? continueToQuestion : undefined}

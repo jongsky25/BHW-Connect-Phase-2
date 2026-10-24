@@ -17,12 +17,14 @@ export function LessonAssetFigure({
   en,
   language,
   onEnded,
+  transcript,
 }: {
   asset: LessonAsset;
   en: boolean;
   language?: LessonTranslationLanguage;
   // Optional callback for a caller that needs to react when playback ends.
   onEnded?: () => void;
+  transcript?: {title: string; paragraphs: string[]};
 }) {
   const textId = useId();
   const alt = en ? a.alt_en : a.alt_fil;
@@ -73,8 +75,8 @@ export function LessonAssetFigure({
       </video>
       <figcaption className="text-sm">{caption}<AiVisualLabel path={a.path} contentHash={a.content_hash} video={video} en={en}/></figcaption>
       <details className="mt-1 text-sm">
-        <summary className="cursor-pointer">{language === "hil" ? "Mga tikang bilang teksto" : language === "ceb" ? "Mga lakang isip teksto" : en ? "Steps as text" : "Mga hakbang bilang teksto"}</summary>
-        {a.text_steps?.length ? <div id={textId}>
+        <summary className="cursor-pointer">{transcript?.title ?? (language === "hil" ? "Mga tikang bilang teksto" : language === "ceb" ? "Mga lakang isip teksto" : en ? "Steps as text" : "Mga hakbang bilang teksto")}</summary>
+        {transcript ? <div id={textId} className="mt-2 space-y-3">{transcript.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div> : a.text_steps?.length ? <div id={textId}>
           <p>{alt}</p>
           <ol className="mt-3 space-y-3">
             {a.text_steps.map(step => <li key={step.id}><h3 className="font-semibold">{step.title}</h3><p>{step.text}</p></li>)}
