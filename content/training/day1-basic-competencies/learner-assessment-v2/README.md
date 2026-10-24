@@ -67,3 +67,28 @@ and after. Do not run development or E2E against the pilot database. Rollback
 changes only assignment: in one transaction set v2 to `draft`, then v1 to
 `active`. Keep both immutable releases and all enrollment pins. New v2
 assignments already created must finish on v2, even after rollback.
+
+## FB-2.3 accreditation and CSC proposal
+
+[The bilingual review packet](proposals/fb-2.3-accreditation-csc/REVIEW.md)
+contains two proposed version-2 T11 items, an agency-name expansion in the
+existing BHWE conditions section, and an unscored Read/Slides section separating
+filing from certificate receipt. All choices, rationales, displays and narration
+copy are included. The proposal pins the approved UHC v2 assessment and the
+published `bhw-eligibility` source hash; neither source is edited.
+
+Run `node scripts/feedback-accreditation-csc-proposal.mjs` to validate the draft,
+`--review` to reproduce its review copy, or
+`--output /tmp/fb-2.3-candidate.json` for the full local bundle. Exports require a
+new file outside the repository. The command has no database/import/activation
+operation. The assessment remains draft and fails the ordinary import approval
+contract. The candidate's 42 old lesson pins are baseline references only: the
+CSC lesson must be reviewed, its narration/captions and optional story reconciled,
+and a real approved lesson revision published before future assessment pins can
+be refreshed. A draft hash cannot stand in for that published revision.
+
+The other 58 test items (including both approved UHC T05 items), all 48 practice
+items and current lesson content remain unchanged. The draft keeps comparability
+unvalidated and existing enrollment/attempt continuity. No reviewer approval or
+new media generation is claimed. The cited DILG committee guidance could not be
+freshly retrieved; the packet records that limit for content review.

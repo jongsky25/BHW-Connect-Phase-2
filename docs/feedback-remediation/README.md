@@ -316,6 +316,35 @@ explanations, FB-2.5 defines accessible plant aids and local ownership, and
 FB-2.6 recovers context and checks current wording. These are review outcomes,
 not approved or published content edits.
 
+## FB-2.3a — accreditation and CSC draft prepared
+
+[The review packet](../../content/training/day1-basic-competencies/learner-assessment-v2/proposals/fb-2.3-accreditation-csc/REVIEW.md)
+provides the exact proposed English and Filipino copy for the three FB-2.3
+reports. T11 names a local recommending committee and keeps the board decision
+separate. The Filipino stems use plain wording for the recommendation, and
+feedback explains its meaning. Both paired questions use new identities;
+all other test/practice items, including the approved UHC update, are retained.
+
+The CSC lesson proposal expands Civil Service Commission (CSC) in Read and
+Slides while preserving the current qualification conditions. A separate
+unscored section explains authorized filing channels and personal certificate
+receipt after approval, without inventing fees, approval or appointment promises.
+Its Read, display and narration copy are in the same review packet.
+
+The local builder pins the assessment/lesson baselines, validates both draft
+structures and refuses claimed approvals, reused item identities or changed
+continuity. Exports never overwrite files and must be outside the repository.
+The candidate has explicit publication blockers: content review, media
+reconciliation, a real approved lesson revision, refreshed curriculum pins and
+separate assessment activation. Existing media and live learner content have
+not been edited or regenerated. The three system reports remain in_review.
+
+Validation: all 2,195 tests across 249 files pass, including 17 new draft
+contract/export cases. TypeScript and lint pass, with the four existing
+unrelated script warnings. The approved-release validator, immutable UHC
+release reconstruction, baseline policy audit, tracker identity check and
+`git diff --check` pass. No development or E2E was run against the pilot.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
@@ -325,7 +354,8 @@ not approved or published content edits.
    closing the two reports submitted on `/feedback`.
 4. Finish signed-in verification of FB-1.3a for admin location scopes and both interface languages.
 5. Retain the pending signed-in FB-2.2b check despite owner-directed report
-   closure. Prepare the FB-2.3 draft from the completed ten-assignment review.
+   closure. Review the prepared FB-2.3 bilingual packet, then prepare its separate
+   versioned content release after approval and media/pin reconciliation.
 
 The remaining increments keep their proposed assignments until reproduction or
 content review establishes an implementation-ready task. Mandatory question
