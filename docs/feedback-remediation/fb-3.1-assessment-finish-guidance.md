@@ -22,7 +22,8 @@ question shortcuts.
 
 ## Changed behavior
 
-The entry screen now gives three English/Filipino finish instructions. The
+The entry screen now gives three English/Filipino finish instructions, including
+after completion so pilot reviewers can inspect them without a new attempt. The
 question view repeats the sequence briefly, shows a saved-response progress
 bar, and separates choice, unknown, unanswered and marked counts. Counts come
 from persisted responses, not an unsaved optimistic selection.
@@ -45,7 +46,7 @@ scores, submission confirmation and historical records are unchanged.
 
 ## Verification and release
 
-Six new component cases cover both languages, final-question handoff, focus,
+Seven new component cases cover completed-user guide access, both languages, final-question handoff, focus,
 confirmation cancellation, the four response counts, unanswered/marked shortcuts,
 failed navigation and unsaved final-question changes in both incomplete and
 previously complete drafts. Existing navigation/resume cases remain passing.

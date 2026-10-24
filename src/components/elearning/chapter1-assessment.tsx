@@ -305,7 +305,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   const draft = state.attempts.find(a => a.phase === phase && a.state === "draft");
   return <section className="space-y-5">
     <h1 className="text-2xl font-semibold">{copy("Chapter 1 assessment", "Pagtatasa sa Kabanata 1")}</h1>
-    {(!post || !postPassed) && finishInstructions}
+    {finishInstructions}
     {pre && <p>{copy("Baseline submitted", "Naisumite na ang baseline")}: {pre.score_percent}%</p>}
     {post && <p>{copy("Post-test submitted", "Naisumite na ang post-test")}: {post.score_percent}%</p>}
     {state.attempts.filter(a => a.state === "submitted" && a.phase === "posttest" && a.legacy_attempt_id).map(a =>

@@ -32,6 +32,16 @@ beforeEach(() => {
 });
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
+it("keeps the finish guide available for pilot review after both tests are complete", () => {
+  render(<Chapter1Assessment {...props} initialState={{ attempts: [], final_attempts: [
+    { id: "pre", phase: "pretest", score_percent: 50 },
+    { id: "post", phase: "posttest", score_percent: 80 },
+  ] }} />);
+  expect(screen.getByRole("complementary", { name: "How to finish" })).toBeInTheDocument();
+  expect(screen.queryByRole("button", { name: /Begin|Resume/ })).toBeNull();
+  expect(mock.rpc).not.toHaveBeenCalled();
+});
+
 it.each(["en", "fil"])("explains the finish steps and hands the last question to review in %s", async locale => {
   render(<Chapter1Assessment {...props} locale={locale} />);
   expect(screen.getByRole("complementary", { name: locale === "en" ? "How to finish" : "Paano tapusin" })).toBeInTheDocument();
