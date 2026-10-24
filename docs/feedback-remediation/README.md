@@ -430,6 +430,24 @@ pending for operational use; the current deliverable is explicitly a pilot for
 review. No learner history, assessed lesson, rubric, release or feedback status
 is rewritten. The release PR records final CI and production verification.
 
+## FB-2.6 live clarifications
+
+The owner directed continuation with the four remaining concerns. The
+[review and implementation record](fb-2.6-live-clarifications.md) maps each
+original report to a bilingual explanation and fictional unscored practice
+case at `/content-clarifications`. Courses links to the page; the five relevant
+BHW and assessor lesson routes link directly to their topic. The explanations
+clarify the BHW's verification role, source-example ranking versus local causal
+evidence, provider networks versus referrals, and benefit-specific conditions.
+The existing page-comment feature supports feedback on particular sentences.
+
+Current questions already preserve several of these boundaries, and the
+network/benefits reports do not establish a specific historical scoring error.
+The increment therefore supplies explicit learning clarifications without
+rewriting the active forms, keys, lesson revisions, criterion pins or saved
+scores. The four reports remain open for live comments and any exact-item or
+presentation check still needed. CI/merge/deployment evidence is in the PR.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
