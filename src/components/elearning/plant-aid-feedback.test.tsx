@@ -16,7 +16,7 @@ it("submits feedback on a particular pilot card through the existing feature", a
     <PlantAidLibrary initialLanguage="en" feedbackAvailable />
     <SpotFeedbackWidget />
   </NextIntlClientProvider>);
-  const heading = screen.getByRole("heading", { name: "Lagundi", exact: true });
+  const heading = screen.getByRole("heading", { name: "Lagundi" });
   document.elementFromPoint = () => heading;
   fireEvent.click(screen.getByRole("button", { name: "Comment on this page" }));
   fireEvent.click(heading);
