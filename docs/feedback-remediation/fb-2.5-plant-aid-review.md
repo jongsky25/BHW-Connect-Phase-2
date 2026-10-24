@@ -10,6 +10,18 @@ assignment; it does not claim Ray personally supplied clinical sign-off. Actual
 reference aids and their clinical review remain pending; no learner content is
 published by this approval.
 
+## Pilot-first implementation update
+
+The owner clarified that the immediate goal is a live preview to inspect and
+comment on, and authorized the assistant to prepare it autonomously. Local
+reference-aid collection is therefore not a prerequisite for this pilot review.
+[The pilot preview](fb-2.5-pilot-preview.md) adds ten bilingual source-linked
+cards at `/plant-aids`, reachable from Courses, with search, printing, a practice
+case and existing page feedback. Ray Justin Ventura remains training owner.
+Clinical verification and a local contact remain pending for operational use;
+they do not block collecting comments on this clearly labeled prototype.
+The earlier inventory and approval receipt remain historical evidence.
+
 ## Inventory and access findings
 
 The [inventory](fb-2.5-plant-aid-inventory-2026-10-24.json) records the repository
