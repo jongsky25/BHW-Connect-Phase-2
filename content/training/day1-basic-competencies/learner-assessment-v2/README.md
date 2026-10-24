@@ -12,4 +12,58 @@ Each form has a unique `form_id`, 30 ordered `items`, and a SHA-256 `hash` of `J
 
 The private SQL schema stores immutable forms and exact attempt snapshots. It is not a content approval mechanism. Schema validity cannot establish correct clinical guidance, bilingual meaning, fairness, or form comparability.
 
+## FB-2.2a UHC proposal
+
+`proposals/fb-2.2a-uhc/proposal.json` is a draft overlay against the exact
+reviewed release, with two new version-2 T05 items and an unscored provider
+terminology note. Its [review packet](proposals/fb-2.2a-uhc/REVIEW.md) shows the
+current and proposed bilingual stems, every option, proposed keys, rationales
+and official-source links. Reviewer identities remain unassigned.
+
+`node scripts/feedback-uhc-proposal.mjs` validates the overlay and reports new
+draft form hashes. `--review` prints the review packet. An explicit `--output`
+exports a complete draft candidate outside this source folder, without
+overwriting existing files. The command has no import/activation operation.
+The ordinary approved-release validator still rejects the exported draft.
+
+The active `release.json`, its approval record, T06 referral questions, the
+other 58 form items, 48 checkpoint items and 42 curriculum pins are unchanged.
+Existing enrollments retain the original release for both phases, drafts finish
+their pinned forms and submitted answers/scores remain historical. A separate
+reviewed publication and activation change is required; this proposal does not
+establish comparability or claim new approvals.
+
 The scoped course-progress reset removes v2 assessment attempts, enrollments, in-progress practice, unshared learning-note drafts, and major-introduction view markers. It preserves completed practice and shared note versions with their replies as learner history; a draft with shared versions remains because those versions refer to it. Account deletion follows the existing user foreign-key cascade. No new retention period is introduced.
+
+## Approved feedback release
+
+The owner approved the exact FB-2.2a review packet with “approved contents then
+publish”. The receipt is in
+[releases/chapter1-feedback-uhc-v2/approval-record.json](releases/chapter1-feedback-uhc-v2/approval-record.json).
+It pins the proposal hash and reviewed commit and records owner approval;
+independent specialist sign-off and pilot usability validation are not claimed.
+The original proposal and v1 release remain immutable historical artifacts.
+
+The approved snapshot at `releases/chapter1-feedback-uhc-v2/release.json` contains
+both new T05 items and the approved unscored terminology text, appended verbatim
+to the post-test T05 rationale. The existing submitted-review route displays it;
+it is excluded from in-progress assessment payloads and does not affect scoring.
+All other questions, checkpoints and curriculum revisions are unchanged.
+
+`node scripts/feedback-uhc-publication.mjs` verifies the approval/proposal binding,
+rebuilds the exact snapshot and runs the unchanged release validator. `--sql`
+prints a transaction for deliberate publication; the command never connects to
+a database. The transaction verifies the expected baseline and all 42 live
+curriculum pins, rejects identity/content conflicts, imports new immutable
+forms/checkpoints and atomically switches the active release. It can be rerun
+without duplicating records. It does not update enrollments, attempts, responses
+or scores. The old release becomes `draft`, which remains usable by pinned
+enrollments; `withdrawn` would block them. New enrollments use the active v2
+release. Form comparability remains unvalidated.
+
+Before executing the transaction, run the publication tests and normal checks,
+merge the release PR after CI, and record the live release/form hashes before
+and after. Do not run development or E2E against the pilot database. Rollback
+changes only assignment: in one transaction set v2 to `draft`, then v1 to
+`active`. Keep both immutable releases and all enrollment pins. New v2
+assignments already created must finish on v2, even after rollback.
