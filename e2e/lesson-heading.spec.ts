@@ -60,12 +60,12 @@ test("lesson headings and reading tools preserve context, readability and zoom c
         const article = page.locator('[data-reading-layout] > section > article[data-layout="read"]');
         await page.setViewportSize({ width: 1280, height: 844 });
         await expect(comfortable).toHaveAttribute("aria-pressed", "true");
-        const originalText = await article.innerText();
+        const originalText = await article.textContent();
         const comfortableWidth = (await article.boundingBox())!.width;
         await standard.click();
         expect((await article.boundingBox())!.width).toBeGreaterThan(comfortableWidth);
         await comfortable.click();
-        await expect(article).toHaveText(originalText);
+        await expect.poll(() => article.textContent()).toBe(originalText);
         await page.getByText(locale === "en" ? "How to use the lesson controls" : "Paano gamitin ang mga kontrol ng aralin", { exact: true }).click();
         for (const theme of ["light", "dark"]) {
           for (const scale of ["md", "xl"]) {
