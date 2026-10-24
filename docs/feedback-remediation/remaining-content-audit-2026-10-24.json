@@ -1,0 +1,434 @@
+{
+  "audit_id": "FB-2.1b-remaining-content-2026-10-24",
+  "observed_at": "2026-10-24T00:56:35.599272+00:00",
+  "base_commit": "05b0c3b3f78ddb688c7d812a197a1db16098f34f",
+  "project_id": "ltzicxyefizxoqhfuuzc",
+  "scope": "Review of exactly ten previously unreviewed FB-2.1 assignments; no learner-content or answer-key publication.",
+  "review_type": "source_and_published_payload_review",
+  "independent_specialist_approval": false,
+  "signed_in_learner_verification": false,
+  "uhc_closure": {
+    "authorized_by": "Owner instruction in chat: do number 3 then continue reviewing the 10 remaining content feedback assignments",
+    "resolved_at": "2026-10-24T00:52:38.68952+00:00",
+    "feedback_ids": [
+      "83961db6-def1-408b-ab53-22c1b4c15b8c",
+      "b7f3a267-fd4a-4328-80b9-09a498308662",
+      "bd816c4e-e414-4e3d-9306-e24cf96d9c52",
+      "10df2cd2-7a41-4a8f-ae84-d4959e225c3b"
+    ],
+    "status": "resolved",
+    "basis": "Owner-requested closure after approved, hash-verified publication in PR #333. Signed-in confirmation remains outstanding.",
+    "resolved_by": null,
+    "resolver_attribution": "Automated privileged maintenance on owner instruction; no application-user identity was impersonated.",
+    "notifications_or_replies_sent": false
+  },
+  "sources": [
+    {
+      "id": "csc-bhwe",
+      "url": "https://csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility",
+      "locators": [
+        "Qualification and evidence",
+        "Where to file",
+        "Modes of filing A-D and personal appearance note"
+      ],
+      "access": "Official page opened and relevant passage read."
+    },
+    {
+      "id": "ra7883",
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html",
+      "locators": [
+        "3-4",
+        "6-7"
+      ],
+      "access": "Statute mirror read; official PCW/Supreme Court pages were indexed but direct reads failed."
+    },
+    {
+      "id": "eo51",
+      "url": "https://lawphil.net/executive/execord/eo1986/eo_51_1986.html",
+      "locators": [
+        "6(b)",
+        "7(b)-(c)",
+        "8(c)-(d)"
+      ],
+      "access": "Statute mirror read; PCW direct read failed."
+    },
+    {
+      "id": "ra10028",
+      "url": "https://lawphil.net/statutes/repacts/ra2010/ra_10028_2010.html",
+      "locators": [
+        "6 adding section 11"
+      ],
+      "access": "Statute mirror read; Supreme Court page timed out."
+    },
+    {
+      "id": "nnc-breastfeeding",
+      "url": "https://nnc.gov.ph/mindanao-region/breastfeeding-in-the-workplace/",
+      "locators": [
+        "Lactation stations and marketing restrictions"
+      ],
+      "access": "Official guidance corroborates the facility distinction."
+    },
+    {
+      "id": "pitahc-herbs",
+      "url": "https://pitahc.gov.ph/herbs-directory/",
+      "locators": [
+        "Directory introduction and botanical identities"
+      ],
+      "access": "Official directory read; it does not establish a national mandatory BHW card protocol."
+    },
+    {
+      "id": "manual-problems",
+      "path": "docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+      "locators": [
+        "PDF pages 20-21; printed 12-13"
+      ],
+      "access": "Repository transcription read. The embedded causal diagram and narrated media were not independently inspected."
+    }
+  ],
+  "published_evidence": {
+    "lessons": [
+      {
+        "lesson_id": "83ae2910-d953-4ce1-a2da-c47dd838920a",
+        "lesson_key": "bhs-improvement",
+        "revision_id": "11e382fe-5872-4b63-9f85-9a78e32aeb9c",
+        "content_hash": "b3b856d651b4f7bf9bbc17d786d9f88dfde0b6d26ba6f7e0b62288248444f7bc",
+        "local_content_hash": "b3b856d651b4f7bf9bbc17d786d9f88dfde0b6d26ba6f7e0b62288248444f7bc",
+        "module_root": "content/training/day1-basic-competencies/modules/03-polisiya-bhs",
+        "exact_local_hash_match": true
+      },
+      {
+        "lesson_id": "03132db5-003e-409c-986a-0361c83219d0",
+        "lesson_key": "bhs-promotions",
+        "revision_id": "7e59d63b-be51-488a-a1fe-353dfb606e78",
+        "content_hash": "e4904dad63ae91afed1ef9046123f5e39e71052fcd00d478007a406267d4f9d7",
+        "local_content_hash": "e4904dad63ae91afed1ef9046123f5e39e71052fcd00d478007a406267d4f9d7",
+        "module_root": "content/training/day1-basic-competencies/modules/03-polisiya-bhs",
+        "exact_local_hash_match": true
+      },
+      {
+        "lesson_id": "724b190b-38bb-4ec3-b87b-c73fc657f6c7",
+        "lesson_key": "bhs-support-environment",
+        "revision_id": "d768258f-912b-49ab-be91-a4647b631585",
+        "content_hash": "9c3ff8755423c094af0bd5514c41b8ba685940e2597e5e91561568b9a48bd92a",
+        "local_content_hash": "9c3ff8755423c094af0bd5514c41b8ba685940e2597e5e91561568b9a48bd92a",
+        "module_root": "content/training/day1-basic-competencies/modules/03-polisiya-bhs",
+        "exact_local_hash_match": true
+      },
+      {
+        "lesson_id": "648d2168-74dd-4451-958c-e4e5d8724a17",
+        "lesson_key": "bhw-accreditation",
+        "revision_id": "2d68608f-2912-4080-ab5e-4de2d073edc2",
+        "content_hash": "16f8f729d3971969540d35f551cada4ee0d328ba35c003898812a5141d58d47f",
+        "local_content_hash": "16f8f729d3971969540d35f551cada4ee0d328ba35c003898812a5141d58d47f",
+        "module_root": "content/training/day1-basic-competencies/modules/04-ra7883",
+        "exact_local_hash_match": true
+      },
+      {
+        "lesson_id": "84abb8a8-9d6b-4e09-8936-998738d3ff37",
+        "lesson_key": "bhw-benefits",
+        "revision_id": "2bf6aaf1-3c70-431f-996e-04866144d1a7",
+        "content_hash": "e752f4f342bd75badfec60d392a19fa09f40bcb43fd6aa077f052f6871898236",
+        "local_content_hash": "e752f4f342bd75badfec60d392a19fa09f40bcb43fd6aa077f052f6871898236",
+        "module_root": "content/training/day1-basic-competencies/modules/04-ra7883",
+        "exact_local_hash_match": true
+      },
+      {
+        "lesson_id": "f1f527f1-aec9-48a8-933b-79fecf63bfb4",
+        "lesson_key": "bhw-eligibility",
+        "revision_id": "57f3cb9c-1bdc-44ef-ac81-991166e9ed3e",
+        "content_hash": "10756a7a4d1cbd6459aa5c6982adc9c51bc94c83b2cafcf748f6ab0427243a1e",
+        "local_content_hash": "10756a7a4d1cbd6459aa5c6982adc9c51bc94c83b2cafcf748f6ab0427243a1e",
+        "module_root": "content/training/day1-basic-competencies/modules/04-ra7883",
+        "exact_local_hash_match": true
+      },
+      {
+        "lesson_id": "b73d7759-8cc2-412a-9387-ae1967da3927",
+        "lesson_key": "plant-integrated-practice",
+        "revision_id": "434f1c6b-d68b-4294-ab75-151c91c832c3",
+        "content_hash": "6243fffaaecd2c638aa3b5882f575f5f5868eebfb3468a6c1b880c1477a0f3a9",
+        "local_content_hash": "187e6e496b421be1681f31493f52739c91cb3b8281f41733d14aa41e63d92e45",
+        "module_root": "content/training/chapter2-common-competencies/drafts/05-medicinal-plants",
+        "exact_local_hash_match": false,
+        "read_slides_copy_match_excluding_asset_references": true
+      },
+      {
+        "lesson_id": "8ecf970a-ba76-465b-a4ef-6683bf37be27",
+        "lesson_key": "plant-scope-identification",
+        "revision_id": "cdf4182a-ce9c-4625-a1f7-231e3a018b58",
+        "content_hash": "dc43f63c412fe5fd52f24eadc2c2406654f6521b90be29336890344615b8e381",
+        "local_content_hash": "8d38d29e76ff68ee75477c4f498b215d0682c139566fc58b551f6724c90a4a90",
+        "module_root": "content/training/chapter2-common-competencies/drafts/05-medicinal-plants",
+        "exact_local_hash_match": false,
+        "read_slides_copy_match_excluding_asset_references": true
+      },
+      {
+        "lesson_id": "9d468901-a2be-4805-afbd-be798136918b",
+        "lesson_key": "problem-causes",
+        "revision_id": "ac8a72c7-e254-42d1-8ba1-eae367f3d7a7",
+        "content_hash": "2ccf379d4f15be4dc85226fd7bb4e79df03b1876a27426315a18edb62869fcb0",
+        "local_content_hash": "2ccf379d4f15be4dc85226fd7bb4e79df03b1876a27426315a18edb62869fcb0",
+        "module_root": "content/training/day1-basic-competencies/modules/07-problema",
+        "exact_local_hash_match": true
+      },
+      {
+        "lesson_id": "9b959b18-f9e4-4b2f-a7ef-569d5992963d",
+        "lesson_key": "problem-prioritize",
+        "revision_id": "41f73c43-9655-45d1-9a88-94772bc51f01",
+        "content_hash": "ca5834ca03409c356d8f4b0b9d2a3187db7d3753f16e58cdaa24e2863c77c5f9",
+        "local_content_hash": "ca5834ca03409c356d8f4b0b9d2a3187db7d3753f16e58cdaa24e2863c77c5f9",
+        "module_root": "content/training/day1-basic-competencies/modules/07-problema",
+        "exact_local_hash_match": true
+      }
+    ],
+    "observed_at": "2026-10-24T00:56:35.599272+00:00",
+    "active_release": {
+      "id": "chapter1-feedback-uhc-v2",
+      "content_hash": "b8f657c3035224257607cb2c3538fd46c9dc5f80ed7552ebc2aa5df0017f5a13"
+    },
+    "shared_assessment_flag": {
+      "enabled": true,
+      "disabled_roles": []
+    }
+  },
+  "plant_comparison_limit": "Whole authored hashes differ from live revisions. Directly compared both languages of published Read/Slides against compiled local copies excluding asset_ids: equal. Release code filters non-live media. No claim of whole-release hash equality for these two lessons.",
+  "legacy_items": [
+    {
+      "id": "b9bded9e-0230-42fa-873d-3b9b66c8783c",
+      "topic": "gift explanation",
+      "correct_option_index": 1
+    },
+    {
+      "id": "22c61748-7a49-4d8d-ac42-85d90989b5e7",
+      "topic": "RA 10028 contrastive question",
+      "correct_option_index": 0
+    }
+  ],
+  "findings": [
+    {
+      "feedback_id": "03108bf6-dbcf-442d-941f-4b316ce0e94f",
+      "topic": "Meaning of an accreditation recommendation",
+      "disposition": "wording_change_candidate",
+      "priority": 1,
+      "targets": [
+        "pretest T11",
+        "posttest T11",
+        "bhw-accreditation"
+      ],
+      "mapping": "Current pretest still contains the reported recommendation scenario.",
+      "finding": "The lesson distinguishes a committee recommendation from a Local Health Board decision, but T11 does not identify who recommends what. Its paired answer also introduces an invitation not established in the pretest scenario.",
+      "next_action": "Draft paired T11 items naming the recommending committee and pending board decision; explain the suggestion without giving away the key in the stem. Remove unrelated invitation wording where not supported.",
+      "acceptance": "Both languages identify the actor and decision; every option fits the scenario; retain the accreditation objective and create new item/form/release identities.",
+      "source_ids": [
+        "ra7883"
+      ],
+      "live_status": "in_review"
+    },
+    {
+      "feedback_id": "c42f690b-8758-4937-9c52-841c8b8f04e8",
+      "topic": "CSC naming in Filipino",
+      "disposition": "wording_change_candidate",
+      "priority": 2,
+      "targets": [
+        "bhw-eligibility Read and Slides"
+      ],
+      "mapping": "Original lesson ID maps exactly to bhw-eligibility; local lesson hash matches publication.",
+      "finding": "The current Read and Slides use CSC, which avoids the reported translated agency name, but the learner copy should expand the agency name on first use. The general concept civil service eligibility should remain distinct from the agency name.",
+      "next_action": "Use Civil Service Commission (CSC) at first mention in both languages, then CSC consistently. Review narration and captions during the eventual content release.",
+      "acceptance": "Agency name is explicit and consistent across Read, Slides and released media; do not replace the legal eligibility concept everywhere with an acronym.",
+      "source_ids": [
+        "csc-bhwe"
+      ],
+      "live_status": "in_review"
+    },
+    {
+      "feedback_id": "5d06c8cd-44c0-486e-b904-4c6e4fb99cfb",
+      "topic": "BHWE application and personal appearance",
+      "disposition": "wording_change_candidate",
+      "priority": 1,
+      "targets": [
+        "bhw-eligibility bhwe-verification"
+      ],
+      "mapping": "Original lesson ID maps exactly to bhw-eligibility; local lesson hash matches publication.",
+      "finding": "The current lesson explains conditions and CSC approval but omits the filing-versus-certificate-receipt distinction. The suggested rule that everyone must file personally would be too restrictive.",
+      "next_action": "Add a short bilingual application note separating authorized filing channels from the required personal appearance for issuance/acceptance after approval. Link current CSC instructions rather than copy fees or promise approval.",
+      "acceptance": "Preserve the representative, conduit and mail channels described by CSC; separate filing, approval and receipt; retain education and accredited-service conditions.",
+      "source_ids": [
+        "csc-bhwe"
+      ],
+      "live_status": "in_review"
+    },
+    {
+      "feedback_id": "78171de2-0082-475b-bb57-ddcbe32f9114",
+      "topic": "Gifts and conflict-of-interest explanation",
+      "disposition": "wording_change_candidate",
+      "priority": 2,
+      "targets": [
+        "legacy question b9bded9e-0230-42fa-873d-3b9b66c8783c",
+        "bhs-promotions",
+        "current T08 related objective"
+      ],
+      "mapping": "The element label exactly matches the legacy gift question option; this is not the current T08 stem.",
+      "finding": "The proposed conflict-of-interest explanation is useful teaching feedback. The legacy key remains option index 1; the current shared assessment instead asks about handling samples/posters. The Milk Code also imposes specific restrictions, beyond a generic ethics explanation.",
+      "next_action": "Draft a rationale explaining actual or apparent influence and the applicable prohibition. Keep milk-product and medicine-promotion rules separate; scope any medicine example to its applicable source. Do not add another accepted key to historical attempts.",
+      "acceptance": "Original saved scores and keys remain intact; future questions/rationales receive reviewed versioned identities and do not imply supervisor discretion can override a prohibition.",
+      "source_ids": [
+        "eo51"
+      ],
+      "live_status": "in_review"
+    },
+    {
+      "feedback_id": "393ef24f-3b97-41bc-b52d-1977ee5ae32c",
+      "topic": "RA 10028 and Milk Code question clarity",
+      "disposition": "wording_change_candidate",
+      "priority": 2,
+      "targets": [
+        "legacy question 22c61748-7a49-4d8d-ac42-85d90989b5e7",
+        "bhs-support-environment"
+      ],
+      "mapping": "Exact legacy stem matched locally and in the live bank; it is absent from the active shared 30-item form.",
+      "finding": "The legacy key about breastfeeding support and a lactation station is consistent with the source, but the contrastive stem unnecessarily combines different policies. Current teaching explains the lactation-station requirement; the new assessment uses different scenarios.",
+      "next_action": "Draft a direct scenario asking which facility supports breastfeeding, with comparable choices and a precise rationale. Treat changes to the retained fallback bank as a separate versioning task, not an in-place historical key repair.",
+      "acceptance": "Both languages test one objective; distinguish supportive facilities from marketing restrictions; preserve old responses and scores.",
+      "source_ids": [
+        "ra10028",
+        "nnc-breastfeeding"
+      ],
+      "live_status": "in_review"
+    },
+    {
+      "feedback_id": "5bedf6bc-fe03-4feb-a48e-1ddc17313492",
+      "topic": "Standardized medicinal-plant identification aid",
+      "disposition": "partially_addressed_protocol_definition_needed",
+      "priority": 1,
+      "targets": [
+        "plant-scope-identification",
+        "plant-integrated-practice",
+        "FB-5.3"
+      ],
+      "mapping": "Report was submitted at Chapter 2 orientation, not a specific plant screen. Both published plant lesson payloads were inspected directly.",
+      "finding": "Published Read and Slides already use a current PITAHC card, reject identification from a name or picture alone, withhold preparation when uncertain, and require consultation. The exercise includes worksheets/observation aids, but the reviewed published copy does not establish a downloadable approved identification-card set, issuing authority or local sign-off process.",
+      "next_action": "Inventory the actual trainer-approved reference cards; specify provenance/version, botanical identity, plant part, uncertainty stop rule, consultation route and observed verification. Confirm local clinical/training ownership before calling any card mandatory or official.",
+      "acceptance": "A learner can access the approved aid in both languages; uncertainty triggers non-use and consultation; card completion is not prescribing authority, identification certification or authorization to dispense.",
+      "source_ids": [
+        "pitahc-herbs"
+      ],
+      "live_status": "in_review"
+    },
+    {
+      "feedback_id": "f19d1f41-092f-494e-be70-b39968445848",
+      "topic": "BHWE question appears to address a supervisor",
+      "disposition": "current_text_addresses_role_concern",
+      "priority": 3,
+      "targets": [
+        "pretest T13",
+        "posttest T13",
+        "bhw-eligibility"
+      ],
+      "mapping": "Related current objective identified; the original served attempt/item identity was not recorded in the feedback.",
+      "finding": "Current T13 describes a BHW's service evidence and asks the next BHWE question. It does not ask the learner to act as supervisor, certify service or grant eligibility.",
+      "next_action": "Keep the present role boundary. Check comprehension of the current Filipino question before proposing another wording change; retain historical context as unverified.",
+      "acceptance": "BHW readers identify a verification/CSC next step rather than a power to approve status; no historical attempt is rewritten.",
+      "source_ids": [
+        "csc-bhwe"
+      ],
+      "live_status": "in_review"
+    },
+    {
+      "feedback_id": "9fd44126-dd5f-4a91-b1a0-6c7f2332e57c",
+      "topic": "Problem ranking overlooks access and structural barriers",
+      "disposition": "current_text_addresses_concern",
+      "priority": 3,
+      "targets": [
+        "problem-causes manual-example",
+        "problem-prioritize worked-scores"
+      ],
+      "mapping": "Original lesson ID maps to problem-causes; both relevant lesson hashes match publication.",
+      "finding": "Current cause analysis explicitly includes water, income, transport, information and access, warns against blaming families and separates source examples from verified local causes. The worked training/water scores are labelled fictional examples, not universal priorities.",
+      "next_action": "Retain these safeguards and check the original narrated presentation during comprehension review. Do not invent a causal claim that training or household knowledge explains every diarrhoeal death.",
+      "acceptance": "Learners identify evidence and structural barriers before local prioritization; urgent referral is not delayed by a score.",
+      "source_ids": [
+        "manual-problems"
+      ],
+      "live_status": "in_review"
+    },
+    {
+      "feedback_id": "ba47555c-ba35-4d35-b160-70683ff67357",
+      "topic": "Provider network versus referral question",
+      "disposition": "original_item_context_needed",
+      "priority": 2,
+      "targets": [
+        "current T06 related objective"
+      ],
+      "mapping": "No item ID, element label or screenshot was recorded; exam-route context alone cannot identify the original question.",
+      "finding": "Current T06 concerns verifying a local clinic/referral process; that does not establish whether the reporter was asking about a provider network or a particular historical item.",
+      "next_action": "Recover the original question/attempt if available or ask for the exact wording at the next review. If the current T06 is intended, assess whether the stem needs clearer navigation context before drafting.",
+      "acceptance": "Record an exact item/release mapping before a content edit or closure; preserve the distinction between network structure and clinical referral decisions.",
+      "source_ids": [],
+      "live_status": "in_review"
+    },
+    {
+      "feedback_id": "9196422d-0ac4-42db-8033-b1ef4244d656",
+      "topic": "Automatic and uniform BHW benefits question",
+      "disposition": "reporter_intent_unclear_current_policy_consistent",
+      "priority": 2,
+      "targets": [
+        "pretest T12",
+        "posttest T12",
+        "bhw-benefits"
+      ],
+      "mapping": "Feedback quotes a benefits question but states no requested correction; current T12 has the same objective.",
+      "finding": "Current T12 correctly asks learners to verify the named benefit's eligibility, source, process and amount. Current teaching distinguishes benefit conditions, registration and local review.",
+      "next_action": "Clarify whether the concern is translation, reading load, answer choices or policy accuracy; keep the current key pending that evidence.",
+      "acceptance": "A specific concern and target are recorded; any revised wording preserves benefit-specific conditions and avoids promising identical automatic payments.",
+      "source_ids": [
+        "ra7883"
+      ],
+      "live_status": "in_review"
+    }
+  ],
+  "next_increments": [
+    {
+      "id": "FB-2.3",
+      "scope": "Draft T11 accreditation clarity and CSC naming/application precision",
+      "feedback_ids": [
+        "03108bf6-dbcf-442d-941f-4b316ce0e94f",
+        "c42f690b-8758-4937-9c52-841c8b8f04e8",
+        "5d06c8cd-44c0-486e-b904-4c6e4fb99cfb"
+      ],
+      "release_rule": "Future reviewed lesson and assessment revisions; preserve existing attempts and enrollment versions."
+    },
+    {
+      "id": "FB-2.4",
+      "scope": "Draft gift/conflict and direct lactation-facility explanations; distinguish legacy fallback from active forms",
+      "feedback_ids": [
+        "78171de2-0082-475b-bb57-ddcbe32f9114",
+        "393ef24f-3b97-41bc-b52d-1977ee5ae32c"
+      ],
+      "release_rule": "No retroactive accepted-key additions or in-place historical form edits."
+    },
+    {
+      "id": "FB-2.5",
+      "scope": "Define accessible, provenance-tracked medicinal-plant aids and local protocol ownership",
+      "feedback_ids": [
+        "5bedf6bc-fe03-4feb-a48e-1ddc17313492"
+      ],
+      "release_rule": "Do not infer national card mandates, identity certification or prescribing authority from teaching aids."
+    },
+    {
+      "id": "FB-2.6",
+      "scope": "Verify current wording for the two addressed concerns and recover intent/item context for the remaining two",
+      "feedback_ids": [
+        "f19d1f41-092f-494e-be70-b39968445848",
+        "9fd44126-dd5f-4a91-b1a0-6c7f2332e57c",
+        "ba47555c-ba35-4d35-b160-70683ff67357",
+        "9196422d-0ac4-42db-8033-b1ef4244d656"
+      ],
+      "release_rule": "No automatic closure of these ten reports based on source review alone."
+    }
+  ],
+  "status_verification": {
+    "verified_at": "2026-10-24T00:58:27Z",
+    "resolved": 4,
+    "in_review": 10
+  }
+}
