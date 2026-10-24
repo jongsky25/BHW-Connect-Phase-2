@@ -1,9 +1,14 @@
-# FB-2.5 — plant-aid access and local ownership draft
+# FB-2.5 — approved plant-aid plan and training ownership
 
 Related report: `5bedf6bc-fe03-4feb-a48e-1ddc17313492`.
-This increment inventories existing material and defines the next reviewable
-deliverable. It publishes no clinical advice, plant-identification card or
-mandatory protocol. A named local clinical/training owner has not been supplied.
+The owner approved this inventory, implementation plan and proposed bilingual
+wording, and assigned **Ray Justin Ventura as training owner**, on 24 October
+2026. The [approval record](fb-2.5-owner-approval-2026-10-24.json) pins the
+reviewed files and exact instruction. Ray will coordinate the remaining aid,
+review, consultation-route and access deliverables. This records the owner’s
+assignment; it does not claim Ray personally supplied clinical sign-off. Actual
+reference aids and their clinical review remain pending; no learner content is
+published by this approval.
 
 ## Inventory and access findings
 
@@ -27,10 +32,11 @@ non-use when uncertain, and consultation. Their published Read/Slides copy was
 compared in the preceding audit. Whole draft hashes differ because publication
 filters media; do not replace the live revisions with the draft wholesale.
 
-## Proposed local register and approval handoff
+## Approved local register and owner handoff
 
-The clinical/training owner should supply the actual aid for each plant and
-approve its scope. Record these fields for each accepted aid:
+Ray Justin Ventura, as training owner, will coordinate supply of the actual aid
+for each plant and obtain the appropriate clinical review of its scope. Record
+these fields for each accepted aid:
 
 | Field | Required evidence |
 | --- | --- |
@@ -38,7 +44,7 @@ approve its scope. Record these fields for each accepted aid:
 | Source and provenance | Issuing authority, source URL/page, image rights and limits |
 | Identity and part | Reviewer-verified botanical identity and intended plant part, with ambiguity/look-alike limits |
 | English and Filipino text | Equivalent wording reviewed with local BHW readers; text remains legible when printed |
-| Clinical/training owner | Actual name/role and dated scope approval; no placeholder approval |
+| Training owner and clinical review | Ray Justin Ventura coordinates training delivery; record the actual clinical reviewer and dated scope approval for each aid |
 | Consultation route | Locally supplied responsible person/service and fallback route |
 | Access | Stable learner link to the approved version and a printable copy; superseded copies clearly marked |
 
@@ -48,7 +54,7 @@ observed card exercise does not certify a plant, authorize treatment, or confer
 prescribing/dispensing powers. No dose, preparation instruction or new botanical
 identity is proposed here.
 
-## Proposed learner wording for owner review
+## Owner-approved learner wording for future implementation
 
 **English:** Use the current reference aid provided by your local training or
 clinical team. Check its version, botanical identity and plant part. If the aid
@@ -63,16 +69,16 @@ paghahanda o paggamit; kumonsulta sa kinauukulang clinician o supervisor sa loka
 na paraan. Hindi sapat ang larawan o pamilyar na pangalan upang makumpirma ang
 pagkakakilanlan.
 
-This is draft wording, not a new requirement or published lesson. Replace the
-generic local route with a verified route before adoption; do not invent a
-phone number or reviewer. Preserve urgent-referral guidance and avoid delaying
-care while locating an aid.
+The owner approved this wording for the future workflow. It is not yet a
+published lesson or a new mandatory protocol. Ray Justin Ventura will coordinate
+a verified local consultation route before adoption. Preserve urgent-referral
+guidance and avoid delaying care while locating an aid.
 
 ## Next implementation and acceptance checks
 
-1. Have the named local clinical/training owner review the inventory, supply the
-   actual aids and consultation route, and decide whether the two teaching cards
-   in the scope exercise need new material or an existing approved attachment.
+1. Ray Justin Ventura will coordinate review of the inventory, supply of the
+   actual aids and consultation route, and the decision on whether the two
+   teaching cards need new material or an existing approved attachment.
 2. Review both languages, provenance and identification limits for the actual
    documents. Test uncertain/missing-aid cases with fictional practice details.
 3. Add the approved documents to the existing lesson asset flow with versioned
