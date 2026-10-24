@@ -1,4 +1,5 @@
 import {release172View} from '../lib/lesson-172-release-integration.mjs';
+import {beforeFeedbackCsc} from '../lib/feedback-csc-preservation.mjs';
 // @vitest-environment node
 import {lessonOwned} from '../lib/lesson-preservation-scope.mjs';
 import {describe,it,expect} from 'vitest';
@@ -56,7 +57,7 @@ describe('1.7.3 draft preserves released content and scoring boundaries',()=>{
  it('selects owner-approved narration for new text and retains selection for original published text',()=>{
   const mf=j(root+'narration.json'),approval=j('docs/lesson-173-narration-approval.json');
   expect(approval.authorization).toBe('approved');expect(approval.lesson_keys).toEqual(['problem-prioritize']);expect(Object.keys(approval.tracks)).toHaveLength(12);
-  expect(sha(fs.readFileSync(root+'narration.json'))).toBe(approval.approved_narration_sha256);
+  expect(sha(beforeFeedbackCsc(root+'narration.json'))).toBe(approval.approved_narration_sha256);
   for(const lang of ['fil','en']){
    const selected=narrationForLesson(mf,'problem-prioritize',lang,loaded.revision.read_sections);
    expect(Object.keys(selected)).toHaveLength(6);

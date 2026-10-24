@@ -74,6 +74,16 @@
       "check": null
     },
     {
+      "id": "bhwe-filing-receipt",
+      "concept_ids": [
+        "m4.bhwe"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Hindi approval ang pag-file; personal na pagtanggap ng certificate ang kasunod kung aprubado.",
+      "takeaway_en": "Filing is not approval; personal certificate receipt follows approval.",
+      "check": null
+    },
+    {
       "id": "bhwe-application-check",
       "concept_ids": [
         "m4.bhwe"
@@ -115,6 +125,7 @@
         "service-count",
         "evidence-and-scope",
         "bhwe-verification",
+        "bhwe-filing-receipt",
         "bhwe-application-check"
       ],
       "slide_ids": [
@@ -123,6 +134,7 @@
         "slide-service-count",
         "slide-evidence-and-scope",
         "slide-bhwe-verification",
+        "slide-bhwe-filing-receipt",
         "slide-bhwe-application-check"
       ],
       "source_ids": [
@@ -197,8 +209,8 @@
       "id": "bhw-eligibility-story",
       "alt_fil": "Kuwentong may salaysay: ipinaliliwanag ni Demi ang BHWE conditions, accredited-service count at tiyak na CSC verification.",
       "alt_en": "Narrated story: Demi distinguishes BHWE conditions and accredited-service counts and asks a specific CSC question.",
-      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
-      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "caption_fil": "Opsyonal na kuwento tungkol sa mga kondisyon ng BHWE. Basahin sa aralin ang pag-file at pagtanggap ng certificate.",
+      "caption_en": "Optional story about BHWE qualification conditions. See the lesson for filing and certificate receipt.",
       "provenance": "Original Remotion animation for lesson 1.4.3; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed media on 5 October 2026; independent policy SME review is not claimed. Owner approved the exact reviewed package on 5 October 2026; hashes in docs/lesson-143-owner-approval.json. No human listening or independent policy SME approval is inferred.",
       "review_status": "approved",
       "videos": {

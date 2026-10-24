@@ -36,6 +36,13 @@ export function buildApprovedUhcRelease(base, proposal, approval, context) {
 export function publishUhcSql(base, release) {
   assert.equal(base.release_id, 'chapter1-2026-10-11-v1');
   assert.equal(release.release_id, 'chapter1-feedback-uhc-v2');
+  return activateAssessmentSql(base, release);
+}
+
+/** Shared guarded activation for explicitly approved immutable successors. */
+export function activateAssessmentSql(base, release) {
+  assert(/^[a-z0-9-]+$/.test(base.release_id) && /^[a-z0-9-]+$/.test(release.release_id));
+  assert.notEqual(base.release_id, release.release_id);
   const imported = draftImportSql(release);
   const guard = `
 select pg_advisory_xact_lock(hashtextextended('chapter1-assessment-publication', 0));

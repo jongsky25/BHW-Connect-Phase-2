@@ -345,6 +345,39 @@ unrelated script warnings. The approved-release validator, immutable UHC
 release reconstruction, baseline policy audit, tracker identity check and
 `git diff --check` pass. No development or E2E was run against the pilot.
 
+## FB-2.3b — approved CSC/accreditation publication; FB-2.4 drafted
+
+The owner approved the exact FB-2.3 packet and directed continuation. The
+approval receipt pins reviewed commit `a38f98c2383dfdebbdc869a06f8ac9348c3f6cd8`
+and proposal hash. Release `chapter1-feedback-accreditation-csc-v3` contains the
+new T11 pair and real new CSC lesson identity; its transaction publishes the
+lesson and assessment atomically with all curriculum pins checked. Existing
+learner records and earlier releases are retained. The publication PR carries
+the final live activation receipt and record-integrity verification.
+
+Narration rendering was rejected with HTTP 403. Five unchanged section tracks
+remain usable; mismatched/new section tracks are withheld, with prior recordings
+retained in history. Read and Slides include the full approved copy. The
+optional qualification story's VTT was checked and its scope caption points to
+the new filing section. New audio was not generated and no listening approval
+is claimed. Historical test views remain hash-bound to their original bytes;
+new release tests inspect the current source and audio selection.
+
+[FB-2.4](../../content/training/day1-basic-competencies/learner-assessment-v2/proposals/fb-2.4-gifts-lactation/REVIEW.md)
+now supplies exact bilingual T08/T09 proposals for gift/conflict and lactation
+facility concerns. It separates the policy objectives, scopes the inducement
+examples to infant formula, and preserves original legacy keys. It is an
+unapproved authoring packet, with no import/activation capability. No further
+feedback closures are claimed from approval/publication alone.
+
+Validation: all 2,208 tests in 252 files pass, including 13 new publication,
+continuity, preservation and next-draft cases. Lint and TypeScript pass with
+the four existing unrelated script warnings. The database rehearsal verifies
+rollback of lesson, criterion binding and assessment together; idempotent
+execution; and preservation of original evidence/progress. The approved release
+rebuild, retained C1AF registry check, baseline policy audit and whitespace check
+pass. No development or E2E was run against the pilot.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
@@ -354,8 +387,8 @@ release reconstruction, baseline policy audit, tracker identity check and
    closing the two reports submitted on `/feedback`.
 4. Finish signed-in verification of FB-1.3a for admin location scopes and both interface languages.
 5. Retain the pending signed-in FB-2.2b check despite owner-directed report
-   closure. Review the prepared FB-2.3 bilingual packet, then prepare its separate
-   versioned content release after approval and media/pin reconciliation.
+   closure. Verify the approved FB-2.3 release in a signed-in new-enrollment
+   journey and review the prepared FB-2.4 bilingual packet.
 
 The remaining increments keep their proposed assignments until reproduction or
 content review establishes an implementation-ready task. Mandatory question

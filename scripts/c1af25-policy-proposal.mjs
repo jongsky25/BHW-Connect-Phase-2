@@ -3,6 +3,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import {auditChapter1Assessor} from './lib/chapter1-assessor-audit.mjs';
+import {beforeFeedbackCsc} from './lib/feedback-csc-preservation.mjs';
 
 const root = process.cwd();
 const outputPath = path.join(root, 'docs/chapter-1-assessor-c1af-25-policy-proposal.json');
@@ -12,7 +13,12 @@ const checkpointIds = [
 ];
 
 export function buildPolicyProposal(repository = root) {
-  const audit = auditChapter1Assessor(repository);
+  // This is the frozen C1AF-25 owner package, not a new policy activation.
+  // The general assessor auditor still reads current source by default.
+  const audit = auditChapter1Assessor(repository, {readSource(full, encoding) {
+    const bytes=beforeFeedbackCsc(path.relative(repository,full),readFileSync(full));
+    return encoding?bytes.toString(encoding):bytes;
+  }});
   if (audit.summary.modules !== 9 || audit.summary.required_lessons !== 42
     || audit.summary.proposed_lesson_criteria !== 42 || audit.summary.legacy_indicators !== 36) {
     throw new Error('Chapter 1 inventory changed; review the proposed policy before regenerating');

@@ -4,7 +4,7 @@ Demi hears that accreditation or long BHW service automatically brings BHWE and 
 
 ## [section-4] BHWE conditions
 
-RA 7883 section six, paragraph d, provides the statutory basis for second-grade eligibility after five years of continuous service. CSC implementing conditions are more detailed. Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record. Accreditation must precede the qualifying service. Service before 20 February 1995 is not counted. Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.
+RA 7883 section six, paragraph d, provides the statutory basis for second-grade eligibility after five years of continuous service. The Civil Service Commission (CSC) sets more detailed implementing conditions. Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record. Accreditation must precede the qualifying service. Service before 20 February 1995 is not counted. Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.
 
 ## [service-count] Which service can be counted?
 
@@ -17,6 +17,10 @@ The two college years must lead toward a degree. Voluntary BHW service means no 
 ## [bhwe-verification] A specific question for CSC
 
 Using a blank planning sheet, Demi asks, ‘For this fictional record, which accredited-service period and education and service evidence should be verified, including the JO/COS arrangement?’ The RHU and Local Health Board help identify records and contacts; they do not replace CSC approval. Ask the CSC Regional or Field Office with jurisdiction over the barangay of service. BHWE takes effect on approval by the responsible CSC Regional Office. Confirm current documentary and form guidance there; this practice submits no actual application or private record.
+
+## [bhwe-filing-receipt] Filing and receiving the certificate
+
+CSC guidance permits filing in person, through an authorized representative, through a conduit CSC office (an intermediary office), or by mail, subject to its requirements. Check current instructions with the CSC office responsible for the barangay of service. Filing is not approval. If approved, the applicant must appear personally before CSC for issuance and acceptance of the Certificate of Eligibility; a representative cannot receive it for the applicant. Completing this lesson grants neither BHWE nor a government appointment.
 
 ## [bhwe-application-check] Choose a careful explanation
 

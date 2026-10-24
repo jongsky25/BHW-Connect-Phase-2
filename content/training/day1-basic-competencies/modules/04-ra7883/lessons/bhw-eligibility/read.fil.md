@@ -4,7 +4,7 @@ May narinig si Demi: kapag accredited o matagal nang BHW, may BHWE at trabaho na
 
 ## [section-4] Mga kondisyon ng BHWE
 
-Ang seksiyon 6(d) ng RA 7883 ay nagbibigay ng batayan para sa second-grade eligibility matapos ang limang taong tuloy-tuloy na serbisyo. May mas detalyadong implementing conditions ang CSC. Gamitin ang apat na pangkat na ito: akreditasyon ng Local Health Board; hindi bababa sa dalawang taon sa kolehiyo tungo sa isang degree; hindi bababa sa limang taong tuloy-tuloy, aktibo, full-time at boluntaryong serbisyo bilang accredited BHW; at satisfactory service record. Dapat accredited na bago magsimula ang qualifying service. Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995. Hindi sapat ang akreditasyon lamang; kailangang matugunan at mapatunayan ang naaangkop na kondisyon, at CSC ang nagpapasya sa application.
+Ang seksiyon 6(d) ng RA 7883 ay nagbibigay ng batayan para sa second-grade eligibility matapos ang limang taong tuloy-tuloy na serbisyo. May mas detalyadong implementing conditions ang Civil Service Commission (CSC). Gamitin ang apat na pangkat na ito: akreditasyon ng Local Health Board; hindi bababa sa dalawang taon sa kolehiyo tungo sa isang degree; hindi bababa sa limang taong tuloy-tuloy, aktibo, full-time at boluntaryong serbisyo bilang accredited BHW; at satisfactory service record. Dapat accredited na bago magsimula ang qualifying service. Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995. Hindi sapat ang akreditasyon lamang; kailangang matugunan at mapatunayan ang naaangkop na kondisyon, at CSC ang nagpapasya sa application.
 
 ## [service-count] Aling serbisyo ang mabibilang?
 
@@ -17,6 +17,10 @@ Dapat tungo sa degree ang dalawang taon sa kolehiyo. Sa buong limang-taong servi
 ## [bhwe-verification] Isang tiyak na tanong sa CSC
 
 Gumawa si Demi ng tanong gamit ang blankong planning sheet: ‘Para sa kathang-isip na record na ito, aling panahon ng accredited service at anong education at service evidence ang dapat tiyakin, kasama ang JO/COS arrangement?’ Tumutulong ang RHU at Local Health Board sa records at contact; hindi nila pinapalitan ang CSC approval. Magtanong sa CSC Regional o Field Office na may sakop sa barangay ng serbisyo. Ang effectivity ng BHWE ay nakabatay sa approval ng kaukulang CSC Regional Office. Tiyakin doon ang kasalukuyang documentary at form guidance; walang tunay na application o pribadong record na isusumite sa practice na ito.
+
+## [bhwe-filing-receipt] Pag-file at pagtanggap ng certificate
+
+Ayon sa gabay ng CSC, maaaring mag-file nang personal, sa pamamagitan ng awtorisadong kinatawan, sa pamamagitan ng conduit CSC office (tanggapang tagapamagitan), o sa koreo, alinsunod sa mga kinakailangan nito. Tiyakin ang kasalukuyang gabay sa CSC office na may sakop sa barangay ng serbisyo. Hindi approval ang pag-file. Kung aprubado, kailangang personal na humarap ang aplikante sa CSC para sa pag-isyu at pagtanggap ng Certificate of Eligibility; hindi ito maaaring tanggapin ng kinatawan para sa aplikante. Hindi nagbibigay ng BHWE o government appointment ang pagtatapos ng araling ito.
 
 ## [bhwe-application-check] Piliin ang maingat na paliwanag
 

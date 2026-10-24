@@ -92,3 +92,58 @@ items and current lesson content remain unchanged. The draft keeps comparability
 unvalidated and existing enrollment/attempt continuity. No reviewer approval or
 new media generation is claimed. The cited DILG committee guidance could not be
 freshly retrieved; the packet records that limit for content review.
+
+## Approved FB-2.3 release and FB-2.4 next draft
+
+The owner approved FB-2.3 with “approved then do next”. Its immutable approval,
+original lesson snapshot, new lesson identity and approved assessment snapshot
+are under `releases/chapter1-feedback-accreditation-csc-v3/`. The source lesson
+now matches the approved seven-section Read/Slides copy. The new assessment
+changes only the paired T11 items and the CSC lesson pin; it retains UHC T05,
+the other 58 test items and all 48 checkpoints.
+
+`node scripts/feedback-accreditation-csc-publication.mjs` reproduces and validates
+the exact approved artifacts. `--sql` prints a single guarded transaction for
+deliberate execution: it creates the immutable lesson/notes, publishes the
+module's revised pointer, verifies all 42 curriculum pins, imports immutable
+forms/checkpoints and switches new-enrollment assignment. The designated
+`training.loader` automation account records publication and the explicit owner
+approval is included in the audit event. No new schema or permissions are needed.
+Existing enrollments, attempt snapshots, answers, scores and lesson progress are
+not updated. Both prior assessment releases remain available to pinned users.
+
+Replacement narration could not be rendered: the public read-aloud endpoint
+returned HTTP 403. Matching audio remains for the five unchanged sections;
+changed `section-4` and new `bhwe-filing-receipt` use the approved text/transcript.
+Original recordings remain in manifest history for old revisions. The existing
+optional story's English/Filipino VTT still matches its unchanged qualification
+examples; a scope caption directs learners to the separate filing guidance.
+No new audio or owner listening approval is claimed. The small hash-bound
+preservation receipt reconstructs the original bytes for historical audit tests;
+current loaders and new tests continue to read the actual current source.
+
+The next [FB-2.4 packet](proposals/fb-2.4-gifts-lactation/REVIEW.md) is draft only.
+It proposes four T08/T09 items, scoped to infant-formula promotional inducements
+and lactation facilities, and changes no retained legacy key. Run
+`node scripts/feedback-gifts-lactation-proposal.mjs --review` for its exact copy.
+Its candidate is rejected by the approved-release contract; its command cannot
+import or activate anything. All 56 other form items and curriculum pins are
+retained from approved CSC v3. It awaits its own content review.
+
+The active assessor flow also pins its practice criterion to a lesson revision.
+Publication therefore creates immutable criterion version 2 for the new CSC
+revision, retaining the exact existing rubric, source fingerprint, requirements
+and rubric version. Only that component's criterion mapping changes. Original
+criterion version 1 and all old practice/formal evidence, qualifications and
+awards remain intact; no old evidence is retargeted or automatically credited.
+The external owner decision is stored separately from application-user identity.
+The historical C1AF-25/27 package builders continue reproducing their original
+approved package, while the general source auditor reads current content.
+
+If a rollback is required, lock the same module and in one transaction restore
+CSC revision `57f3cb9c-1bdc-44ef-ac81-991166e9ed3e`, restore its component mapping
+to criterion version 1, set CSC v3 to `draft` and UHC v2 to `active`. Refuse the
+rollback if a different successor is active. Keep the new immutable revision,
+criterion, forms and all learner history. V3 enrollments already assigned must
+remain pinned to their forms for both phases. Record the rollback in the audit
+trail; do not delete or rewrite assessment or practice evidence.

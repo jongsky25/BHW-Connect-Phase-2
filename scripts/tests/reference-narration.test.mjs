@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { NARRATION_MANIFEST, narratedModules } from "../lib/narration-sources.mjs";
-import { loadReferenceModule } from "../lib/reference-content.mjs";
+import { loadReferenceModule, contentHash } from "../lib/reference-content.mjs";
 import {
   assembleNarration,
   buildManifest,
@@ -115,7 +115,7 @@ test("plan renders new or edited sections and skips unchanged ones", () => {
 // sections have current audio in both languages, and every file matches its
 // manifest hash. Editing lesson text without `npm run training:narrate --
 // --apply` fails here instead of silently hiding the player for learners.
-test("committed narration is current for every converted subchapter", () => {
+test("committed narration is current except the exact documented unavailable CSC tracks", () => {
   const manifest = JSON.parse(readFileSync(NARRATION_MANIFEST, "utf8"));
   const modules = narratedModules(".").map(({ key, dir }) => ({ key, lessons: loadReferenceModule(dir, "public").lessons }));
   // The page looks narration up by lesson key alone, across chapters.
@@ -124,9 +124,18 @@ test("committed narration is current for every converted subchapter", () => {
   const file = (src) => path.join("public", src.slice(1));
   const items = planReferenceNarration(modules, manifest, (src) => (existsSync(file(src)) ? sha256(readFileSync(file(src))) : null));
   const stale = items.filter((i) => i.action !== "skip").map((i) => `${i.lessonKey}/${i.sectionId}/${i.language}`);
-  assert.deepEqual(stale, [], "run `npm run training:narrate -- --apply`");
-  assert.equal(referencedSources({ lessons: manifest.lessons }).size, items.length, "no current manifest entries beyond the converted lessons");
-  for (const item of items) {
+  const releaseRoot='content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-accreditation-csc-v3/';
+  const approval=JSON.parse(readFileSync(releaseRoot+'approval-record.json','utf8'));
+  const identity=JSON.parse(readFileSync(releaseRoot+'lesson-identity.json','utf8'));
+  assert.equal(approval.media_status.narration_render,'unavailable_http_403');
+  assert.deepEqual(approval.media_status.withheld_current_sections,['section-4','bhwe-filing-receipt']);
+  const lesson=modules.flatMap(m=>m.lessons).find(l=>l.manifest.lesson_key==='bhw-eligibility');
+  assert.equal(contentHash(lesson),identity.content_hash,'Audio deferral is bound to the exact approved source');
+  const withheld=['section-4','bhwe-filing-receipt'].flatMap(id=>['fil','en'].map(lang=>`bhw-eligibility/${id}/${lang}`));
+  assert.deepEqual(stale.sort(),withheld.sort(),'No other narration may be missing or stale');
+  for(const id of ['section-4','bhwe-filing-receipt'])assert.equal(manifest.lessons['bhw-eligibility'].sections[id],undefined,'Stale audio must be withheld, not played');
+  assert.equal(referencedSources({ lessons: manifest.lessons }).size, items.length-withheld.length, "no current manifest entries beyond narrated lessons");
+  for (const item of items.filter(i=>i.action==='skip')) {
     const frames = mp3AudioFrames(readFileSync(file(item.src)));
     const seconds = frames.reduce((n, f) => n + f.samples / f.sampleRate, 0);
     assert.ok(Math.abs(seconds - item.existing.duration_seconds) < 0.01, `${item.src} duration`);

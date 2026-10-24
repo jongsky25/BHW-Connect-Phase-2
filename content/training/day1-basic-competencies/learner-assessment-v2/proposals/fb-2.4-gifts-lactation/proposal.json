@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "proposal_id": "FB-2.4-gifts-lactation",
+  "editorial_status": "draft",
+  "reviewer": null,
+  "approval_status": "pending",
+  "feedback_ids": [
+    "78171de2-0082-475b-bb57-ddcbe32f9114",
+    "393ef24f-3b97-41bc-b52d-1977ee5ae32c"
+  ],
+  "base_release_id": "chapter1-feedback-accreditation-csc-v3",
+  "base_release_sha256": "06b1ad0babca6423f7f5af664573f2e667a2db5c8efef75bc2535ad5a514cc93",
+  "proposed_release_id": "chapter1-feedback-gifts-lactation-v4",
+  "sources": [
+    {
+      "id": "eo51",
+      "url": "https://lawphil.net/executive/execord/eo1986/eo_51_1986.html",
+      "locators": [
+        "6(b)",
+        "7(b)-(c)",
+        "8(c)-(d)"
+      ]
+    },
+    {
+      "id": "ra10028",
+      "url": "https://lawphil.net/statutes/repacts/ra2010/ra_10028_2010.html",
+      "locators": [
+        "3(p)",
+        "6 adding section 11"
+      ]
+    },
+    {
+      "id": "nnc",
+      "url": "https://nnc.gov.ph/mindanao-region/breastfeeding-in-the-workplace/",
+      "locators": [
+        "Lactation station and marketing restrictions"
+      ]
+    }
+  ],
+  "legacy_context": [
+    {
+      "feedback_id": "78171de2-0082-475b-bb57-ddcbe32f9114",
+      "question_id": "b9bded9e-0230-42fa-873d-3b9b66c8783c",
+      "stored_correct_option_index": 1
+    },
+    {
+      "feedback_id": "393ef24f-3b97-41bc-b52d-1977ee5ae32c",
+      "question_id": "22c61748-7a49-4d8d-ac42-85d90989b5e7",
+      "stored_correct_option_index": 0
+    }
+  ],
+  "scope_note": "Future shared forms only. The retained legacy question keys and all historical attempts remain unchanged. Gift examples are limited to inducements for infant-formula promotion; pharmaceutical promotion needs its own source review.",
+  "replacements": [
+    {
+      "phase": "pretest",
+      "slot": "T08",
+      "replaces_item_id": "7a09817e-3e75-4523-ab06-c88f6a37760a",
+      "source_ids": [
+        "eo51"
+      ],
+      "item": {
+        "item_id": "f900e633-6cb4-5334-a801-d5f36bc7e41c",
+        "editorial_key": "pretest-T08-v2",
+        "version": 2,
+        "target": "T08",
+        "slot": "T08",
+        "stem": {
+          "en": "An infant-formula company offers BHW Mia a gift if she promotes its formula during a health-station session. What should Mia do?",
+          "fil": "Nag-alok ang kompanya ng infant formula ng regalo kay BHW Mia kapalit ng pag-promote nito sa isang session sa health station. Ano ang dapat gawin ni Mia?"
+        },
+        "options": [
+          {
+            "id": "o2",
+            "label": {
+              "en": "Accept the gift but keep the company name out of her spoken advice.",
+              "fil": "Tanggapin ang regalo pero huwag banggitin ang pangalan ng kompanya sa kaniyang payo."
+            },
+            "distractor_rationale": {
+              "en": "Hiding the company name does not remove the inducement or make the promotion permissible.",
+              "fil": "Hindi nawawala ang inducement o nagiging pinahihintulutan ang promotion dahil itinago ang pangalan ng kompanya."
+            }
+          },
+          {
+            "id": "o1",
+            "label": {
+              "en": "Decline the gift and promotion, and bring the offer to the responsible local channel.",
+              "fil": "Tanggihan ang regalo at promotion, at ipaalam ang alok sa kinauukulang lokal na contact."
+            }
+          },
+          {
+            "id": "o3",
+            "label": {
+              "en": "Accept because a free gift cannot affect advice given at the health station.",
+              "fil": "Tanggapin dahil hindi makaaapekto ang libreng regalo sa payo sa health station."
+            },
+            "distractor_rationale": {
+              "en": "A gift can create actual or apparent influence; being free is not permission.",
+              "fil": "Maaaring magdulot ng aktuwal o nakikitang impluwensiya ang regalo; hindi pahintulot ang pagiging libre."
+            }
+          }
+        ],
+        "correct_option_id": "o1",
+        "rationale": {
+          "en": "A gift or benefit tied to promotion can influence, or appear to influence, health advice and services. The Milk Code also restricts inducements, infant-formula promotion and sample distribution in the health-care setting. Declining this promotional offer protects independent advice; report it through the responsible local channel.",
+          "fil": "Maaaring maimpluwensiyahan, o magmukhang naimpluwensiyahan, ng regalo o benepisyong kapalit ng promotion ang payo at serbisyong pangkalusugan. May mga pagbabawal din ang Milk Code sa inducement, promotion ng infant formula at pamamahagi ng sample sa health-care setting. Tanggihan ang alok na ito upang mapangalagaan ang malayang payo, at ipaalam ito sa kinauukulang lokal na channel."
+        },
+        "lesson_keys": [
+          "bhs-promotions"
+        ],
+        "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-promotions/read.en.md",
+        "reviewer": null,
+        "review_status": "draft",
+        "safety_privacy_review_required": true,
+        "safety_privacy_reviewer": null
+      }
+    },
+    {
+      "phase": "posttest",
+      "slot": "T08",
+      "replaces_item_id": "fcaa6917-2fea-46e1-afc6-1a54325ae37b",
+      "source_ids": [
+        "eo51"
+      ],
+      "item": {
+        "item_id": "9db64ff0-8383-55c7-ba8a-6074f3c2d181",
+        "editorial_key": "posttest-T08-v2",
+        "version": 2,
+        "target": "T08",
+        "slot": "T08",
+        "stem": {
+          "en": "An infant-formula supplier offers to pay for BHW Jo's phone load if she recommends its formula to families at a barangay health-station session. What should Jo do?",
+          "fil": "Nag-alok ang supplier ng infant formula na sagutin ang phone load ni BHW Jo kung irerekomenda niya ang formula nito sa mga pamilya sa session sa barangay health station. Ano ang dapat gawin ni Jo?"
+        },
+        "options": [
+          {
+            "id": "o3",
+            "label": {
+              "en": "Accept the phone load because it is not a cash payment.",
+              "fil": "Tanggapin ang phone load dahil hindi naman cash ang ibibigay."
+            },
+            "distractor_rationale": {
+              "en": "A noncash benefit can still be an inducement tied to product promotion.",
+              "fil": "Maaari pa ring maging inducement para sa promotion ang benepisyong hindi cash."
+            }
+          },
+          {
+            "id": "o1",
+            "label": {
+              "en": "Decline the inducement and product promotion, and report the offer through the proper channel.",
+              "fil": "Tanggihan ang inducement at product promotion, at ipaalam ang alok sa tamang channel."
+            }
+          },
+          {
+            "id": "o2",
+            "label": {
+              "en": "Accept if the supplier promises that the advice will still be independent.",
+              "fil": "Tanggapin kung mangangako ang supplier na mananatiling malaya ang payo."
+            },
+            "distractor_rationale": {
+              "en": "The supplier cannot authorize its own inducement or remove the conflict by a promise.",
+              "fil": "Hindi maaaring pahintulutan ng supplier ang sarili nitong inducement o alisin ang conflict sa pamamagitan ng pangako."
+            }
+          }
+        ],
+        "correct_option_id": "o1",
+        "rationale": {
+          "en": "A gift or benefit tied to promotion can influence, or appear to influence, health advice and services. The Milk Code also restricts inducements, infant-formula promotion and sample distribution in the health-care setting. Declining this promotional offer protects independent advice; report it through the responsible local channel.",
+          "fil": "Maaaring maimpluwensiyahan, o magmukhang naimpluwensiyahan, ng regalo o benepisyong kapalit ng promotion ang payo at serbisyong pangkalusugan. May mga pagbabawal din ang Milk Code sa inducement, promotion ng infant formula at pamamahagi ng sample sa health-care setting. Tanggihan ang alok na ito upang mapangalagaan ang malayang payo, at ipaalam ito sa kinauukulang lokal na channel."
+        },
+        "lesson_keys": [
+          "bhs-promotions"
+        ],
+        "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-promotions/read.en.md",
+        "reviewer": null,
+        "review_status": "draft",
+        "safety_privacy_review_required": true,
+        "safety_privacy_reviewer": null
+      }
+    },
+    {
+      "phase": "pretest",
+      "slot": "T09",
+      "replaces_item_id": "998d3b04-d179-4bdd-ad51-74c5e237fe34",
+      "source_ids": [
+        "ra10028",
+        "nnc"
+      ],
+      "item": {
+        "item_id": "e2d1ba8b-2c43-55a2-879d-42f4d38df4c0",
+        "editorial_key": "pretest-T09-v2",
+        "version": 2,
+        "target": "T09",
+        "slot": "T09",
+        "stem": {
+          "en": "Ella's team is considering places where mothers can breastfeed or express milk at a barangay health station. Which proposal should she bring to the responsible team?",
+          "fil": "Pinag-iisipan ng pangkat ni Ella ang lugar sa barangay health station kung saan maaaring magpasuso o mag-express ng gatas ang mga ina. Aling mungkahi ang dapat niyang dalhin sa kinauukulang pangkat?"
+        },
+        "options": [
+          {
+            "id": "o2",
+            "label": {
+              "en": "Use the toilet because it already has water and a door for privacy.",
+              "fil": "Gamitin ang palikuran dahil may tubig at pinto na para sa privacy."
+            },
+            "distractor_rationale": {
+              "en": "The lactation station must not be located in a toilet.",
+              "fil": "Hindi dapat nasa palikuran ang lactation station."
+            }
+          },
+          {
+            "id": "o3",
+            "label": {
+              "en": "Use the open waiting area without arranging privacy or checking facilities.",
+              "fil": "Gamitin ang bukas na waiting area nang walang privacy o pagsusuri ng facilities."
+            },
+            "distractor_rationale": {
+              "en": "An open waiting area does not establish the required privacy or facilities.",
+              "fil": "Hindi natitiyak ng bukas na waiting area ang kailangang privacy o facilities."
+            }
+          },
+          {
+            "id": "o1",
+            "label": {
+              "en": "Identify a private, clean, ventilated area outside the toilet and verify required facilities with the team.",
+              "fil": "Tukuyin ang pribado, malinis at maaliwalas na lugar sa labas ng palikuran at tiyakin sa pangkat ang kailangang facilities."
+            }
+          }
+        ],
+        "correct_option_id": "o1",
+        "rationale": {
+          "en": "RA 10028 requires lactation stations with the applicable facilities and excludes toilet locations. Privacy, cleanliness and ventilation matter, but they do not replace the full facility requirements. The BHW raises the proposal with the responsible team; she does not certify compliance, authorize construction or commit funds.",
+          "fil": "Itinatakda ng RA 10028 ang lactation station na may angkop na facilities at hindi nasa palikuran. Mahalaga ang privacy, kalinisan at bentilasyon, ngunit hindi kapalit ang mga ito ng buong facility requirements. Inihaharap ng BHW ang mungkahi sa kinauukulang pangkat; hindi siya ang nagse-certify ng compliance, nagpapahintulot ng construction o nangangako ng pondo."
+        },
+        "lesson_keys": [
+          "bhs-support-environment"
+        ],
+        "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-support-environment/read.en.md",
+        "reviewer": null,
+        "review_status": "draft",
+        "safety_privacy_review_required": true,
+        "safety_privacy_reviewer": null
+      }
+    },
+    {
+      "phase": "posttest",
+      "slot": "T09",
+      "replaces_item_id": "7a780ef7-95c5-47fe-ab8f-2d22e938bb40",
+      "source_ids": [
+        "ra10028",
+        "nnc"
+      ],
+      "item": {
+        "item_id": "a7974811-b6ea-5bbd-8d19-552680d64e42",
+        "editorial_key": "posttest-T09-v2",
+        "version": 2,
+        "target": "T09",
+        "slot": "T09",
+        "stem": {
+          "en": "At a planning meeting, a BHW is asked to comment on a proposed lactation station inside the health-station toilet. What should the BHW recommend?",
+          "fil": "Sa planning meeting, hiningan ng puna ang isang BHW tungkol sa mungkahing lactation station sa loob ng palikuran ng health station. Ano ang dapat niyang imungkahi?"
+        },
+        "options": [
+          {
+            "id": "o1",
+            "label": {
+              "en": "Identify a suitable private area outside the toilet and confirm required facilities through the team.",
+              "fil": "Tukuyin ang angkop na pribadong lugar sa labas ng palikuran at tiyakin sa pangkat ang kailangang facilities."
+            }
+          },
+          {
+            "id": "o2",
+            "label": {
+              "en": "Keep the toilet location if it is clean and well ventilated.",
+              "fil": "Ituloy ang lokasyon sa palikuran kung malinis at maaliwalas ito."
+            },
+            "distractor_rationale": {
+              "en": "Cleanliness and ventilation do not remove the prohibition on a toilet location.",
+              "fil": "Hindi inaalis ng kalinisan at maayos na bentilasyon ang pagbabawal sa lokasyon sa palikuran."
+            }
+          },
+          {
+            "id": "o3",
+            "label": {
+              "en": "Keep the toilet location if all mothers agree to use it.",
+              "fil": "Ituloy ang lokasyon sa palikuran kung pumayag ang lahat ng ina na gamitin ito."
+            },
+            "distractor_rationale": {
+              "en": "Agreement does not replace the facility requirements or authorize a toilet lactation station.",
+              "fil": "Hindi kapalit ng facility requirements o pahintulot sa lactation station sa palikuran ang pagsang-ayon."
+            }
+          }
+        ],
+        "correct_option_id": "o1",
+        "rationale": {
+          "en": "RA 10028 requires lactation stations with the applicable facilities and excludes toilet locations. Privacy, cleanliness and ventilation matter, but they do not replace the full facility requirements. The BHW raises the proposal with the responsible team; she does not certify compliance, authorize construction or commit funds.",
+          "fil": "Itinatakda ng RA 10028 ang lactation station na may angkop na facilities at hindi nasa palikuran. Mahalaga ang privacy, kalinisan at bentilasyon, ngunit hindi kapalit ang mga ito ng buong facility requirements. Inihaharap ng BHW ang mungkahi sa kinauukulang pangkat; hindi siya ang nagse-certify ng compliance, nagpapahintulot ng construction o nangangako ng pondo."
+        },
+        "lesson_keys": [
+          "bhs-support-environment"
+        ],
+        "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-support-environment/read.en.md",
+        "reviewer": null,
+        "review_status": "draft",
+        "safety_privacy_review_required": true,
+        "safety_privacy_reviewer": null
+      }
+    }
+  ],
+  "continuity": {
+    "existing_enrollments": "remain_on_original_release_for_both_phases",
+    "existing_drafts": "finish_pinned_form",
+    "submitted_attempts": "retain_snapshot_answers_and_scores",
+    "comparability": "unvalidated_no_automatic_cross_release_gain_comparison"
+  },
+  "release_requirements": {
+    "approval": "pending_bilingual_policy_assessment_review",
+    "activation": "separate_approved_release_only",
+    "bilingual_reviewer": null,
+    "policy_reviewer": null,
+    "assessment_reviewer": null
+  }
+}

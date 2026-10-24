@@ -2,7 +2,7 @@
 import {execFileSync} from 'node:child_process';
 import {randomUUID} from 'node:crypto';
 import {loadReferenceModule,contentHash} from './lib/reference-content.mjs';
-import {registryPackage} from './c1af27-registry.mjs';
+import {registryPackage,registryLesson} from './c1af27-registry.mjs';
 const url=new URL(process.env.NEXT_PUBLIC_SUPABASE_URL??'http://127.0.0.1:54321');
 if(!['127.0.0.1','localhost'].includes(url.hostname)||url.port!=='54321')throw Error('Disposable local Supabase required');
 const q=v=>"'"+String(v).replaceAll("'","''")+"'";
@@ -21,7 +21,7 @@ for(const folder of new Set(p.lessons.map(l=>l.module_key))){
  const m=loadReferenceModule('content/training/day1-basic-competencies/modules/'+folder,'public');
  const moduleId=randomUUID();
  sql.push(`insert into public.course_modules(id,course_id,position,type,title_fil,title_en) values('${moduleId}','${course}',${modulePosition++},'text','LOCAL C1AF-27','LOCAL C1AF-27');`);
- for(const l of m.lessons){const lesson=randomUUID(),revision=randomUUID();
+ for(const current of m.lessons){const l=registryLesson(current),lesson=randomUUID(),revision=randomUUID();
   sql.push(`insert into public.course_lessons(id,module_id,lesson_key,position,title_fil,title_en,objectives_fil,objectives_en,required)
  values('${lesson}','${moduleId}',${q(l.manifest.lesson_key)},${l.manifest.position},${q(l.manifest.title_fil)},${q(l.manifest.title_en)},
  array[${l.manifest.objectives_fil.map(q)}],array[${l.manifest.objectives_en.map(q)}],true);
