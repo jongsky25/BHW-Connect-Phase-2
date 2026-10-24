@@ -1,0 +1,951 @@
+{
+  "purpose": "Evidence for exact assets labeled as AI-generated illustrations. AI narration alone is not visual evidence.",
+  "assets": [
+    {
+      "path": "/training/bhw-1-1/roles-application-328d2317d8fd.png",
+      "source": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-application/lesson.json",
+      "asset_id": "roles-application-illustration",
+      "provenance": "Original AI-generated educational image, built-in imagegen, 2026-10-03. Existing community-organizer illustration used as a fictional Riza/midwife character and style reference. Blank notebook; no legible patient data, logos, or clinical procedures. Fictional handover at a barangay health station. Prompt recorded in docs/lesson-116-layout-review.md."
+    },
+    {
+      "path": "/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png",
+      "source": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-coverage/lesson.json",
+      "asset_id": "vlanche-ernesto",
+      "provenance": "Original AI-generated illustration for lesson 1.2.1, 2026-10-02. Fictional people and blank notebook; no logos, readable forms, or service claim. Generated with built-in image tool; owner review approved on 2026-10-02."
+    },
+    {
+      "path": "/training/bhw-1-2/uhc-purpose-vlanche-fil-2b094d54f279-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-coverage/lesson.json",
+      "asset_id": "uhc-purpose-story",
+      "provenance": "Original code-authored Remotion animation (remotion/src/uhc-purpose) for lesson 1.2.1. Fictional scenario and original AI-generated illustration; no service price or benefit guarantee. Filipino and English expressive narration generated with Gemini 3.8 Flash TTS (Kore), with measured beat timings in remotion/public/uhc-purpose. Owner approved the replacement audio and video on 2026-10-02. No independent policy/SME approval recorded."
+    },
+    {
+      "path": "/training/bhw-1-2/uhc-improvement-gemini-fil-5f255ee7327c-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-improvement/lesson.json",
+      "asset_id": "uhc-improvement-story",
+      "provenance": "Original six-beat Remotion animation for lesson 1.2.4, rendered 2026-10-04. Original built-in imagegen art generated 2026-10-03. Gemini TTS model gemini-3.8-flash-tts, voice Kore; shared UHC_IMPROVEMENT_STORY_STYLES with adapted English video performance directions. Actual decoded sample counts determine speech/scene timings; authored words preserved in captions. Owner approved this reviewed package for live release on 2026-10-04 (reviewed head e8977cf37f05d86aa3e488ec37b0abcc5882dcff); no independent clinical or policy SME approval recorded."
+    },
+    {
+      "path": "/training/bhw-1-2/improvement-planning-f1afe0f4a1e5.png",
+      "source": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-improvement/lesson.json",
+      "asset_id": "improvement-planning",
+      "provenance": "Original built-in imagegen illustration, 2026-10-03. Fictional Vlanche, midwife and Ernesto; identity/style references: vlanche-ernesto-7e4e35141628.png and primary-care-next-step-a67521f903c0.png. Blank cards are learning cues, not official forms. Owner approved this reviewed package for live release on 2026-10-04 (reviewed head e8977cf37f05d86aa3e488ec37b0abcc5882dcff); no independent SME approval. Prompt: Use case: illustration-story. Asset type: original landscape learning illustration for lesson 1.2.4, One practical improvement. Input images: the two attached images are character identity and visual style references only, not edit targets. Create a NEW photorealistic educational scene of BHW Vlanche, the midwife, and Mang Ernesto planning one small next-week improvement around an unbranded wooden table in a modest Filipino barangay community room. Preserve their recognizable identities: Vlanche is a Filipina around 40 with short softly wavy black hair, teal polo and dark trousers; midwife has tied-back black hair and light blue scrubs; elderly Filipino Ernesto has gray hair and a cream collared shirt. Vlanche thoughtfully arranges THREE blank cream note cards, midwife calmly contributes with one open hand, Ernesto listens and asks a question. Natural anatomically correct hands, relaxed respectful expressions, warm daylight, lived-in Philippine surroundings. Frame all three faces and the table clearly with comfortable margin, landscape composition suited to contained mobile and desktop display. No readable text, no personal information, no logos, no official-looking forms or campaign material, no medical procedure, no benefit promise. Keep the reference's natural photographic warmth and skin tones, but use a distinct composition and planning action; do not recreate the primary-care encounter.\n"
+    },
+    {
+      "path": "/training/bhw-1-2/local-system-observation-13c689fa5226.png",
+      "source": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-local-system/lesson.json",
+      "asset_id": "local-system-observation-art",
+      "provenance": "Original built-in imagegen illustration generated 2026-10-03 for lesson 1.2.3. Fictional Vlanche, Mang Ernesto and midwife identity/style reference: /training/bhw-1-2/primary-care-next-step-a67521f903c0.png, with continuity from /training/bhw-1-2/vlanche-ernesto-7e4e35141628.png. Blank note is a teaching cue, not an official record. Exact generation prompt: Use case: illustration-story. Create a NEW landscape educational story illustration for BHW Connect lesson 1.2.3, Health boards and health promotion. Input image is solely a fictional character identity and photographic style reference from lesson 1.2.2: retain recognizable Vlanche, Ernesto and midwife but compose a different scene and camera angle. In a simple Philippine barangay health station, Vlanche, a Filipina around 40 with short softly wavy black hair wearing teal polo and dark trousers, stands beside elderly Filipino Mang Ernesto with gray hair and cream collared shirt; the Filipina midwife with tied-back hair and light blue scrubs stands across a small table. They listen attentively and discuss a BLANK observation note about recurring community questions. Vlanche holds one clean unmarked note at waist height, midwife gestures naturally with an open hand, Ernesto listens. In background a small unbranded visual poster with simple silhouettes of a community gathering and speech bubbles suggests health education, with absolutely no writing or logos. Warm daylight, natural realistic Filipino faces, candid human atmosphere matching reference. Medium-wide 16:9 frame, all three faces and natural hands clearly visible, comfortable margins at sides and top, useful for contained desktop and phone lesson framing. No identifiable health records, legible writing, real officials, board meeting, medical procedure, medicines, emblems or watermarks. Do not reproduce the prior seated clinic conversation unchanged. Program owner approved this lesson 1.2.3 package and scoped release on 2026-10-04 (Asia/Manila); reviewed media hashes recorded in docs/lesson-123-owner-approval.json. No independent policy/clinical SME approval is claimed."
+    },
+    {
+      "path": "/training/bhw-1-2/uhc-local-system-gemini-fil-d02e2b385c81-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-local-system/lesson.json",
+      "asset_id": "local-system-story",
+      "provenance": "Original Remotion animation for lesson 1.2.3; original built-in imagegen illustration generated 2026-10-03 with fictional Vlanche/Mang Ernesto/midwife continuity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Boundaries measured from decoded PCM sample counts; authored script/timing text preserved and captions derived from timings. Program owner approved this lesson 1.2.3 package and scoped release on 2026-10-04 (Asia/Manila); reviewed media hashes recorded in docs/lesson-123-owner-approval.json. No independent policy/clinical SME approval is claimed."
+    },
+    {
+      "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-1256e7284882-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-primary-care/lesson.json",
+      "asset_id": "uhc-primary-care-story",
+      "provenance": "Original Remotion animation for lesson 1.2.2. New lesson-specific image generated with built-in imagegen on 2026-10-03, referencing the 1.2.1 fictional Vlanche/Mang Ernesto image. Gemini TTS model gemini-3.8-flash-tts, voice Kore; expressive scene audio regenerated on 2026-10-03 under the shared YAKAP pronunciation rule: speak the Tagalog word for hug, never its letters. Authored bilingual scripts unchanged; captions and scene durations use newly measured audio boundaries. Owner approved the revised content, illustration, Gemini Read narration, posters and videos on 2026-10-03 with the instruction: approve the content and publish to live. This includes the shared YAKAP Tagalog-word pronunciation correction. No independent policy or clinical SME approval recorded."
+    },
+    {
+      "path": "/training/bhw-1-2/primary-care-next-step-a67521f903c0.png",
+      "source": "content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-primary-care/lesson.json",
+      "asset_id": "primary-care-next-step",
+      "provenance": "Original built-in imagegen image generated 2026-10-03, Asia/Manila. Fictional Vlanche and Mang Ernesto identity/style reference: /training/bhw-1-2/vlanche-ernesto-7e4e35141628.png. Blank note and midwife support a primary-care next-step conversation; no clinical procedure or provider guarantee. Owner approved this revised illustration and lesson package on 2026-10-03 and requested live publication. Generation prompt: Original landscape educational story image for lesson 1.2.2, Primary care and referral. Reference: vlanche-ernesto-7e4e35141628.png for fictional character identity and natural visual style. Preserve Vlanche: Filipina around 40, short softly wavy black hair, teal polo and dark trousers. Preserve Ernesto: elderly Filipino man with gray hair, warm weathered face and cream short-sleeved collared shirt. New scene: they sit with a Filipina midwife in plain light-blue scrubs at a small table in an airy unbranded barangay health station. Vlanche listens supportively with a blank notebook; the midwife gestures to a blank sheet; Ernesto asks a question. Warm Philippine daylight, leafy background, realistic photographic illustrative style, medium waist-up landscape framing. Group all three near the center for desktop and phone views. Natural hands and bodies. No legible text, personal data, logos, provider names, medicine, clinical procedure, treatment equipment, guarantees or watermarks. Prompt: Use case: illustration-story. Create an original landscape 1536x1024 educational story image for BHW Connect lesson 1.2.2, Primary care and referral. Input image is ONLY a character identity and natural visual-style reference: preserve fictional BHW Vlanche's appearance (Filipina woman around 40, short softly wavy black hair, teal polo, dark trousers) and Mang Ernesto's appearance (elderly Filipino man, gray hair, warm weathered face, cream short-sleeved collared shirt). New scene: Vlanche and Mang Ernesto sit with a Filipina midwife/health-team member in plain light-blue scrubs at a small table in an airy unbranded barangay health station. They are calmly confirming the next step for his primary care consultation. Vlanche listens supportively and holds a small blank notebook while the midwife gestures gently to a blank sheet on the table, Ernesto is engaged and asking a question. Warm natural Philippine daylight, leafy background, realistic photographic illustrative style matching reference, respectful and reassuring. Composition: tightly group all three people near the central 65% of the landscape with every face inside the middle 60%, useful for desktop wide and phone crops, faces prominent, medium waist-up framing, no disconnected composite panels. The blank paper is a simple visual cue for clinic choice, applicable benefit, and locally confirmed instructions; no legible text. Keep hands and bodies natural. No personal data, no official logos, no provider or hospital names, no medication, no clinical procedure, no medical equipment suggesting treatment, no guarantees, no watermarks. This is a new image, not an edit of the reference scene."
+    },
+    {
+      "path": "/training/bhw-1-3/mimi-respectful-refusal-7f71c23bc4bb.png",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-decline/lesson.json",
+      "asset_id": "mimi-respectful-refusal",
+      "provenance": "Original built-in imagegen, 2026-10-04 Asia/Manila; model identifier not returned by tool. Identity/style reference: approved lesson 1.3.1 Mimi image b9623263a1881f26b6eb4aeb5b153ceb68b003c61d861f87636e3d2c1c96cc01. Owner approved this scene and package on 4 October 2026, Asia/Manila. No independent policy SME approval. The following exact generation prompt retains its original draft wording. Exact prompt: Use case: illustration-story. Asset type: new original landscape educational illustration for BHW Connect lesson 1.3.3, Declining respectfully. The attached image is an identity and visual-style REFERENCE only, not an edit target. Preserve the fictional Filipina BHW Mimi's recognizable face, approximately 50 years old, straight shoulder-length black hair, lavender polo and navy trousers. Create a distinct later moment at the same modest unbranded airy Philippine barangay health station: Mimi is speaking a clear respectful refusal to the generic beige-shirt Filipino visitor. Mimi stands upright with one relaxed open hand near her chest and her other hand indicating a blank clipboard on the table, conveying a firm boundary and factual reporting. The visitor has lowered the CLOSED unbranded blank box and rolled blank sheet to his own side, is listening respectfully, and is not handing anything to Mimi. No gift exchange. New composition and poses; medium waist-up landscape, both faces inside central 60 percent, main gestures clearly visible, natural anatomy and hands. Warm daylight and leafy background, realistic photographic illustrative style consistent with reference. No patient, clinical procedure, text, letters, logos, brands, exposed medicines/formula, personal data, official seal, watermark, threat, or villain caricature. This new lesson-specific scene is draft for owner review; Mimi's identity was previously approved."
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-decline-gemini-fil-626a300cfbbb-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-decline/lesson.json",
+      "asset_id": "bhs-decline-story",
+      "provenance": "Original Remotion animation for lesson 1.3.3; original built-in imagegen illustration generated 2026-10-04, using the previously approved fictional Mimi identity as reference. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved these media and package on 4 October 2026, Asia/Manila. No independent policy SME approval."
+    },
+    {
+      "path": "/training/bhw-1-3/mimi-workable-suggestion-8e880add36c1.png",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-improvement/lesson.json",
+      "asset_id": "mimi-workable-suggestion",
+      "provenance": "Original built-in imagegen, 2026-10-04 Asia/Manila. Approved fictional Mimi identity used only as reference; new scene approved by owner on 2026-10-04; exact reviewed package/media hashes: docs/lesson-135-owner-approval.json. Model identifier not returned. Exact prompt: Create an ORIGINAL photorealistic training illustration, landscape 3:2, continuation scene for lesson 1.3.5 One workable suggestion. Use the referenced image ONLY for fictional Mimi's identity: Filipina barangay health worker about 50, identical recognizable face, shoulder-length straight black hair, lavender polo, navy trousers. NEW scene: Mimi sits at a simple wooden desk in the nonclinical meeting area of a modest Philippine barangay health station, calmly discussing ONE proposed meeting-end room checklist with a Filipino female local room coordinator about 40 in a plain muted teal blouse. Both seated, friendly attentive expressions, Mimi gestures gently with an open hand toward a blank single-page checklist on the desk; coordinator listens with a pen resting on the table. Wall clock, simple chairs and a fan in background, daytime warm natural light, subtle local plants. No clinical equipment, no patients, no repair work, no switching electrical controls, no promises of savings, no company representative or gifts. Keep both complete heads and all visible hands clearly inside frame, anatomically realistic fingers, clean uncluttered desk with only notebook paper and pen; no phones. No text, logos, badges, captions, or watermarks. Comfortable centered composition suitable for contained responsive display with room around the faces. This depicts discussing a proposal before authorization, not carrying out an approved change."
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-improvement-gemini-fil-3810cde3e1d2-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-improvement/lesson.json",
+      "asset_id": "bhs-improvement-story",
+      "provenance": "Original Remotion animation for lesson 1.3.5; original built-in imagegen illustration generated 2026-10-04, using the previously approved fictional Mimi identity as reference. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed package on 2026-10-04; exact hashes: docs/lesson-135-owner-approval.json. No independent policy SME approval is claimed."
+    },
+    {
+      "path": "/training/bhw-1-3/mimi-company-offer-b9623263a188.png",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-promotions/lesson.json",
+      "asset_id": "mimi-company-offer",
+      "provenance": "Original built-in imagegen illustration, generated 2026-10-03 Asia/Manila. Owner-approved fictional Mimi identity; no existing approved target-specific reference found on main 7ce98d68. Owner renamed the fictional character to Mimi throughout 1.3 on 2026-10-04; unchanged illustration pixels contain no name. Owner approved this reviewed illustration and package for live release on 2026-10-04 Asia/Manila; media hashes are recorded in docs/lesson-131-owner-approval.json. No independent policy/clinical SME approval is recorded. Exact original generation prompt (character was then called Corazon): Use case: illustration-story. Asset type: original landscape educational illustration for BHW Connect lesson 1.3.1, Recognizing a company offer. Create a realistic photographic illustrative scene in warm Philippine daylight at the entrance/table of an airy, modest, unbranded barangay health station with leafy background. Fictional BHW Corazon is a Filipina woman around 50, shoulder-length straight black hair, light lavender polo, navy trousers; calm, respectful, attentive. A generic Filipino company representative in a plain beige collared shirt carries a CLOSED plain blank sample box and a rolled blank promotional sheet. Corazon is listening and gently raises one relaxed open hand to pause acceptance; she does not take the box or gift. Place a small blank gift bag beside the representative. Both adults are ordinary, respectful people, no villain caricature. Medium waist-up landscape framing, both faces within the central 60%, natural anatomically correct hands, all main props visible, useful for desktop and contained phone framing. No text, letters, logos, actual formula or medicine brands, exposed products, clinical procedure, patient, personal data, watermark or official seal. This is a proposed Corazon identity for owner review, not a previously approved character."
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-promotions-gemini-fil-ae41b39cf61b-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-promotions/lesson.json",
+      "asset_id": "bhs-promotions-story",
+      "provenance": "Original Remotion animation for lesson 1.3.1; original built-in imagegen illustration generated 2026-10-03, with fictional Mimi identity renamed by owner on 2026-10-04. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed media and package for live release on 2026-10-04 Asia/Manila; exact hashes are recorded in docs/lesson-131-owner-approval.json. No independent policy SME approval is recorded."
+    },
+    {
+      "path": "/training/bhw-1-3/mimi-resource-use-86ce5a9071e0.png",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-resources/lesson.json",
+      "asset_id": "mimi-resource-use",
+      "provenance": "Original built-in imagegen, 2026-10-04 Asia/Manila. Approved 1.3.1 Mimi identity/style reference; new scene approved by owner on 2026-10-04 for the reviewed 1.3.4 package. Exact approved media hashes: docs/lesson-134-owner-approval.json. Model identifier not returned by tool. Exact prompt: Use case: illustration-story. Create a NEW original landscape educational illustration for BHW Connect lesson 1.3.4 Policies and resource use. The supplied image is an approved identity/style reference ONLY. Preserve Mimi, fictional Filipina BHW about 50, straight shoulder-length black hair, lavender polo, navy trousers, recognizable face. At an unbranded airy barangay health station, Mimi holds a blank clipboard and calmly discusses a resource-use concern with a generic female facility supervisor in a plain teal blouse. An orderly nonclinical stationery shelf is behind them; a sunlit empty meeting corner is visible. Mimi is observing and communicating, supervisor listens and indicates the blank clipboard. Distinct composition from reference: medium waist-up landscape, both faces and gestures inside central 60 percent, natural hands/anatomy. Warm daylight, realistic photographic illustrative style matching reference. No boxes being offered, gift, patient, clinical procedure, hazardous material, equipment controls or repairs, discarding supplies, text, letters, brands, seals or personal information. Draft new artwork for owner review."
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-resources-gemini-fil-072d3a1c5425-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-resources/lesson.json",
+      "asset_id": "bhs-resources-story",
+      "provenance": "Original Remotion animation for lesson 1.3.4; original built-in imagegen illustration generated 2026-10-04, using the previously approved fictional Mimi identity as reference. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed 1.3.4 package on 2026-10-04; exact approved media hashes are recorded in docs/lesson-134-owner-approval.json. No independent policy SME approval is claimed."
+    },
+    {
+      "path": "/training/bhw-1-3/mimi-support-environment-d1e6bcec9846.png",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-support-environment/lesson.json",
+      "asset_id": "mimi-support-environment",
+      "provenance": "Original built-in imagegen generation, 2026-10-03, Asia/Manila. Fictional Mimi design: Filipina around 50, shoulder-length straight black hair, lavender polo and navy trousers. No approved Mimi visual reference found on audited main 7ce98d68. All people clothed; screened seating and reusable lunch container are illustrative, not confirmed local facilities. Owner approved this lesson package and authorized merge/publication on 2026-10-04, Asia/Manila. No independent clinical/policy SME approval is recorded. SHA-256 d1e6bcec984656959b07b8bc32f50b902e2039740a105d8e34502418cfe1d3e3. Owner requested character name Mimi on 2026-10-04. The existing no-text image is retained; its original prompt used the proposed name Corazon. Exact original generation prompt: Use case: illustration-story. Create an original landscape educational image for BHW Connect lesson 1.3.2, Breastfeeding and the environment. Natural photographic illustrative style, warm Philippine daylight in an airy, modest, unbranded barangay health station. Main character: fictional BHW Corazon, Filipina around 50, shoulder-length straight black hair, light lavender polo shirt and navy trousers, calm, respectful and attentive. She gently welcomes and listens to a fully clothed Filipina parent around 30 holding a fully clothed infant in a safe natural supported hold. Both adults' faces and the baby's face are visible. Behind them is a simple discreet screened seating nook, an illustrative support-area cue rather than a guarantee of any local facility. A separate modest table to one side has one plain reusable lunch container as a non-clinical waste-reduction cue; no medical supplies. Frame the two adults and infant together centrally, waist-up, with principal faces in central 60 percent; landscape 1536x1024. Natural anatomically correct hands, warm but realistic expressions, clean composition. No exposed feeding, no clinical procedure, no branding, no official signage, no readable text or personal forms, no milk or medicine products, no unsafe medical reuse, no shaming contrasts, no logos or watermark. Proposed Corazon identity for owner review; no existing approved visual reference was found on audited main.\n"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-support-environment-gemini-fil-326f2479b875-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-support-environment/lesson.json",
+      "asset_id": "bhs-support-environment-story",
+      "provenance": "Original lesson 1.3.2 Remotion animation generated 2026-10-04; original built-in imagegen illustration generated 2026-10-03, renamed Mimi by owner on 2026-10-04. Gemini gemini-3.8-flash-tts / Kore with shared expressive style. Scene boundaries measured from real audio samples; authored bilingual scripts and exact timing-derived WebVTT. Owner approved this lesson package and authorized merge/publication on 2026-10-04, Asia/Manila. No independent clinical/policy SME approval is recorded."
+    },
+    {
+      "path": "/training/bhw-1-4/demi-accreditation-question-b2dfcb212dff.png",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/lesson.json",
+      "asset_id": "demi-accreditation-question",
+      "provenance": "Original built-in image_gen.imagegen scene, 5 October 2026; approved1.4.1 Demi identity input SHA256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. Exact prompt: Use case: illustration-story. Create a genuinely NEW original landscape 16:9 educational scene for BHW Connect lesson 1.4.4, Demi and the accreditation process. Input Image 1 is ONLY the approved 1.4.1 identity and visual style reference. Demi is the adult Filipina on the LEFT in that reference, with medium-brown skin, the same recognizable face, eyes and nose, short wavy dark bob, and a plain teal collared blouse. Preserve her fictional identity closely, but create a distinct new scene, camera framing, poses and environment. Scene: a quiet, modest Philippine rural health unit consultation corner. A wider camera shows Demi seated at the LEFT end of a simple discussion table, looking thoughtfully toward a supportive adult Filipina staff member on the RIGHT in a plain pale terracotta blouse. Demi holds one edge of an open, entirely blank manila folder resting on the table, and gently gestures with her other hand while asking a question. The staff member points at two separate blank cream process cards with one hand, with her other hand relaxed on the table. This illustrates preparing a question about the responsible office and the official decision record; it does not depict approval or certify anyone. A plain mint wall, modest window, simple shelf and small unlettered bulletin board create a NEW clinic setting; no old framed village picture. Exactly two main participants, no other people or human pictures. Match the reference's warm, natural, softly rendered editorial realism, credible Philippine adult faces, natural proportions and clean textures. Generous breathing room: the entire heads, faces, shoulders, all four hands, folder and cards must remain within at least 12 percent safe margins on every side, suitable for object-fit contain on phones. Pull the camera back; no cropped hair or fingertips. Blank folder and blank cards only. No words, numbers, seals, badges, logos, watermarks, credential/certificate/form text, private records, approval stamp, appointment promise or official status claim. Natural anatomy with no extra fingers, hands or limbs. Calm, respectful and welcoming atmosphere. Demi remains the focal participant on the left.. No model identifier returned. New asset remains draft pending separate1.4.4 owner approval."
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-accreditation-gemini-fil-d079df44be22-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-accreditation/lesson.json",
+      "asset_id": "bhw-accreditation-story",
+      "provenance": "Original Remotion animation for lesson 1.4.4; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. New media are draft; no owner or independent policy SME approval."
+    },
+    {
+      "path": "/training/bhw-1-4/demi-benefits-conditions-2f0be96fe3d8.png",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/lesson.json",
+      "asset_id": "demi-benefits-conditions",
+      "provenance": "Original built-in image_gen illustration, 5 October 2026, derived from the owner-approved fictional Demi reference with SHA-256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. Exact prompt: Use case: identity-preserve. Create an original landscape draft educational illustration for lesson 1.4.2 Benefits and conditions. Input image is an approved identity and style reference. Preserve Demi, the woman on the left: fictional Filipina adult about 35, medium brown skin, oval face, short slightly wavy dark bob tucked behind ears, plain teal collared blouse, dark trousers, no badge. Preserve her recognizable face and natural proportions. Create a different moment of the same nonclinical discussion: Demi thoughtfully gestures with an open hand toward two separate entirely blank question/planning sheets on a wooden table while the adult Filipina colleague in a cream blouse listens. Show both complete faces and all visible hands fully inside frame with generous margins. Airy Philippine community meeting room, daylight, modest shelves and plants, realistic painterly educational illustration matching reference. Wide composition suitable for contained phone display. No certificates, actual payments, coins, cash, readable forms, records, logos, official seals, badges, signs, text, watermark or clinical procedure. This is a planning question; accreditation and entitlement remain unverified. Owner approved the exact reviewed package on 5 October 2026; exact hashes in docs/lesson-142-owner-approval.json. No human listening or independent policy SME approval is asserted."
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-benefits-gemini-fil-cf79ce818f0c-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-benefits/lesson.json",
+      "asset_id": "bhw-benefits-story",
+      "provenance": "Original Remotion animation for lesson 1.4.2; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed media on 5 October 2026; independent policy SME review is not claimed. Owner approved the exact reviewed package on 5 October 2026; exact hashes in docs/lesson-142-owner-approval.json. No human listening or independent policy SME approval is asserted."
+    },
+    {
+      "path": "/training/bhw-1-4/demi-bhwe-discussion-cce21d6a934d.png",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/lesson.json",
+      "asset_id": "demi-bhwe-discussion",
+      "provenance": "Original built-in image_gen.imagegen illustration,5 October2026, using owner-approved1.4.1 Demi identity reference SHA256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. No model identifier returned. Exact prompt: Create a genuinely NEW original landscape 16:9 educational illustration for BHW Connect lesson1.4.3, Demi and understanding Barangay Health Worker Eligibility (BHWE). Use the attached approved1.4.1 illustration ONLY as the explicit visual identity and style reference for Demi: the adult Filipina woman on the LEFT with medium-brown skin, recognizable same face and eyes/nose, short wavy dark bob and plain teal collared blouse. Preserve that fictional identity closely. New scene and poses: Demi sits at a simple community health discussion table, thoughtfully pointing with one hand at blank cream question sheets and three blank colored practice cards, while a calm adult Filipina facilitator in a plain warm coral blouse listens with open, supportive posture. This is a fictional planning conversation about what must be verified with CSC, not a credential or application approval. Show exactly two people, natural adult anatomy/proportions, complete faces, heads and all four visible hands clearly and safely inside the image; no cropped faces/hands, no extra fingers or limbs. Place the whole tabletop and both participants within generous12percent safe margins on every side for phone containment. Clear separate silhouettes; Demi remains the focal person on the left, facilitator on the right. Warm hand-painted editorial illustration, softly textured clean shapes, attractive muted teal/cream/coral palette, gentle afternoon light, modest uncluttered barangay health-room background, small potted plant and blank wall. New visual composition, not a relabel of the reference. All sheets/cards MUST be blank, no legible text, no letters/numbers/labels. No certificate, ID, seal, official logo, flag, filled form, school transcript, appointment, uniform, payment, eligibility approval or government-job guarantee. No speech bubbles or infographic text. Opaque background. Leave generous breathing room around the people and their hands; use containment-friendly composition. Owner approved the exact reviewed package on 5 October 2026; hashes in docs/lesson-143-owner-approval.json. No human listening or independent policy SME approval is inferred."
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-eligibility-gemini-fil-7ae68197f709-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/lesson.json",
+      "asset_id": "bhw-eligibility-story",
+      "provenance": "Original Remotion animation for lesson 1.4.3; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed media on 5 October 2026; independent policy SME review is not claimed. Owner approved the exact reviewed package on 5 October 2026; hashes in docs/lesson-143-owner-approval.json. No human listening or independent policy SME approval is inferred."
+    },
+    {
+      "path": "/training/bhw-1-4/demi-follow-up-d1babc774185.png",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/lesson.json",
+      "asset_id": "demi-follow-up",
+      "provenance": "Original built-in imagegen, 5 October 2026. Supplied approved 1.4.1 Demi identity reference SHA256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. New scene; model identifier not returned. Exact prompt/input/output evidence: docs/lesson-145-art-provenance.json. Owner approval recorded in docs/lesson-145-owner-approval.json."
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-64fc42b84db7-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-follow-up/lesson.json",
+      "asset_id": "bhw-follow-up-story",
+      "provenance": "Original Remotion animation for lesson 1.4.5; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approval recorded in docs/lesson-145-owner-approval.json; independent policy SME approval remains unverified."
+    },
+    {
+      "path": "/training/bhw-1-4/demi-legal-basis-032a985f9c33.png",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/lesson.json",
+      "asset_id": "demi-legal-basis",
+      "provenance": "Original built-in imagegen, 5 October 2026 Asia/Manila. New fictional Demi identity; owner approved on 2026-10-05; exact reviewed hashes: docs/lesson-141-owner-approval.json. Model identifier not returned. Exact prompt: Use case: illustration-story. Asset type: original fictional character reference and lesson scene for Philippine BHW training lesson 1.4.1. Create a warm polished editorial illustration, landscape 3:2. Demi is a fictional adult Filipina around 35, medium brown skin, oval face, short slightly wavy dark bob hair tucked behind ears, teal plain collared blouse, dark trousers, no badge. She sits at a modest barangay health station desk in a nonclinical discussion with an adult Filipina health-team support person in a plain cream blouse. Demi asks an attentive thoughtful question, one hand open in a natural gesture; the support person listens. A blank learning sheet and pencil on desk. Spacious bright clean room with window and simple shelving, warm daylight, natural believable anatomy. Frame both entire faces, upper bodies and all visible hands with safe margins. No patients, clinical actions, medicines, certificate presentation, seal, official credential, name tag, readable text, logos or watermarks. Demi must be a new distinctive face, not a renamed prior character. Calm supportive learning mood, clear readable faces, tasteful teal and warm sand palette. This is a draft fictional educational illustration."
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-5cf40e107789-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role/lesson.json",
+      "asset_id": "bhw-legal-role-story",
+      "provenance": "Original Remotion animation for lesson 1.4.1; original built-in imagegen illustration generated 2026-10-05, establishing a new fictional Demi identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed package on 2026-10-05; exact hashes: docs/lesson-141-owner-approval.json. No independent policy SME approval is claimed."
+    },
+    {
+      "path": "/training/bhw-1-5/malou-meeting-7adc8aacd4e1.png",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-barangay-partners/lesson.json",
+      "asset_id": "malou-meeting",
+      "provenance": "Built-in imagegen, 6 October 2026, with approved Malou courtyard PNG as preserve-person reference. Fictional neutral meeting; New scene approved by owner for lesson 1.5.2; receipt: docs/lesson-152-owner-approval.json."
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-barangay-partners-gemini-fil-5dca963001b3-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-barangay-partners/lesson.json",
+      "asset_id": "bhw-barangay-partners-story",
+      "provenance": "Original lesson1.5.2 Remotion animation with new built-in imagegen meeting scene preserving approved151Malou identity via reference PNG. New scene and selected media approved by owner for lesson 1.5.2; receipt: docs/lesson-152-owner-approval.json. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Reframed meeting view and animated role/limit cards. No actual local procedure, funding guarantee, human listening or policy SME approval claimed."
+    },
+    {
+      "path": "/training/bhw-1-5/malou-local-coordination-f4a63e007784.jpg",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/lesson.json",
+      "asset_id": "malou-local-coordination",
+      "provenance": "Built-in imagegen identity-preserving edit of approved Malou courtyard, 2026-10-06; reference SHA256 f6b2d754af3988cd42c29ba9628212758096dc83e8ae2eb19b1140daefbe6545; generated PNG SHA256 4fee94a71c7662fa4d8080905544a91b6c81d1d7523e2c6c8d8b8b6ecd366334, optimised JPEG SHA256 f4a63e007784c43bee9c4cc0e6e60f5299732cafb623d41b7b6af6d47700c72e; model ID unavailable. Fictional RHU desk, no actual official or readable forms."
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-local-partners-gemini-fil-4b97f512a36c-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners/lesson.json",
+      "asset_id": "bhw-local-partners-story",
+      "provenance": "Lesson 1.5.3 Remotion animation with built-in imagegen RHU coordination scene preserving Malou identity. Gemini TTS gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. No actual local procedure, funding guarantee, human listening or policy SME approval claimed."
+    },
+    {
+      "path": "/training/bhw-1-5/malou-courtyard-f6b2d754af39.png",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/lesson.json",
+      "asset_id": "malou-courtyard",
+      "provenance": "Original built-in imagegen artwork, 6 October2026, no reference inputs. New fictional Malou identity; exact prompt/hash and review limits recorded in docs/lesson-151-malou-series-brief.json. Model identifier absent (null). No real patients or official procedure depicted. Owner-approved package; authorization recorded in docs/lesson-151-owner-approval.json."
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-relationships-gemini-fil-c1ee816f8d22-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-relationships/lesson.json",
+      "asset_id": "bhw-relationships-story",
+      "provenance": "Original Remotion animation for lesson1.5.1 using genuinely new built-in imagegen Malou courtyard artwork generated6 October2026 without reference inputs. This fictional identity is owner-approved; authorization recorded in docs/lesson-151-owner-approval.json. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries and captions derive from actual synthesis timings. One original illustration is reframed between conversation, coordination and wide views, with animated role cards. No actual local procedure, human listening or independent policy SME approval is claimed."
+    },
+    {
+      "path": "/training/bhw-1-5/malou-contact-421ede029814.png",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-right-contact/lesson.json",
+      "asset_id": "malou-contact",
+      "provenance": "Built-in imagegen, 2026-10-06, preserving approved Malou courtyard identity. No patient or actual official. Owner approved release on 2026-10-08."
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-right-contact-gemini-fil-4206b4e8c385-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-right-contact/lesson.json",
+      "asset_id": "bhw-right-contact-story",
+      "provenance": "Original lesson1.5.6 Remotion animation with new built-in imagegen coordination desk scene preserving approved151Malou identity via reference PNG. Scene and media approved by owner for release on 2026-10-08. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Six reframed coordination desk views with animated contact-choice labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed."
+    },
+    {
+      "path": "/training/bhw-1-5/malou-self-priorities-b11b6907d8d9.png",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/lesson.json",
+      "asset_id": "malou-self-priorities",
+      "provenance": "Original built-in imagegen scene, 2026-10-08, using approved Malou teamwork image as identity reference. Fictional people and blank learning materials; no real patient data. See docs/lesson-155-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-5/malou-self-adjust-cb75caa004f4.png",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/lesson.json",
+      "asset_id": "malou-self-adjust",
+      "provenance": "Original built-in imagegen scene, 2026-10-08, using approved Malou teamwork image as identity reference. Fictional people and blank learning materials; no real patient data. See docs/lesson-155-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-self-management-gemini-fil-9e3c6b3e8f6e-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-self-management/lesson.json",
+      "asset_id": "bhw-self-management-story",
+      "provenance": "Original lesson1.5.5 self-management story using new built-in imagegen scene with approved Malou identity as input. Gemini gemini-3.8-flash-tts Kore; measured encoded audio boundaries, varied framing and animated task labels. No real records, human listening, owner approval or SME signoff claimed."
+    },
+    {
+      "path": "/training/bhw-1-5/malou-teamwork-d4d912a21b22.png",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/lesson.json",
+      "asset_id": "malou-teamwork",
+      "provenance": "Built-in imagegen with approved Malou identity reference; original teamwork scene, no real officials or personal records. See docs/lesson-154-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-5/bhw-teamwork-gemini-fil-fc715e2554e6-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-teamwork/lesson.json",
+      "asset_id": "bhw-teamwork-story",
+      "provenance": "Original lesson1.5.4 teamwork story using new built-in imagegen scene with approved Malou identity as input. Gemini gemini-3.8-flash-tts Kore; measured encoded audio boundaries, varied framing and animated task labels. No real records, human listening, owner approval or SME signoff claimed."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+      "asset_id": "gibs-portrait",
+      "provenance": "New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-clarify-open-question-d5839d9b594c.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+      "asset_id": "clarify-open-question",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-clarify-clarify-detail-6a08f5de2ab0.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+      "asset_id": "clarify-clarify-detail",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-clarify-barriers-ce8d0dba1592.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+      "asset_id": "clarify-barriers",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-clarify-confirm-summary-83530b1d8d03.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+      "asset_id": "clarify-confirm-summary",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-clarify-practice-ef68ebd8a556.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+      "asset_id": "clarify-practice",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-clarify-check-800ef249584b.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+      "asset_id": "clarify-check",
+      "provenance": "Built-in image_gen.imagegen; six new distinct fictional teaching actions, character references hash-pinned in docs/lesson-162-scene-brief.json; model undisclosed. Draft, no real resident data."
+    },
+    {
+      "path": "/training/bhw-1-6/communication-clarify-gemini-fil-c59590ab9a97-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-clarify/lesson.json",
+      "asset_id": "communication-clarify-story",
+      "provenance": "Original lesson1.6.2 Remotion animation with new built-in imagegen six distinct clarification scenes preserving new male Gibs identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Six distinct illustrated clarification actions with animated labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+      "asset_id": "gibs-portrait",
+      "provenance": "New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-teach-back-f44d4b1a0871.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+      "asset_id": "explain-teach-back",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-family-planning-939ad0e4c694.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+      "asset_id": "explain-family-planning",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-distress-c36d80b575e7.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+      "asset_id": "explain-distress",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-smoking-471b7ed9fe69.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+      "asset_id": "explain-smoking",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-practice-0633085623b7.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+      "asset_id": "explain-practice",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-explain-check-1ee8dcd6c46f.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+      "asset_id": "explain-check",
+      "provenance": "Built-in image_gen.imagegen, 8 October 2026, new fictional teaching action using approved Gibs reference; model undisclosed. No actual resident or record. Draft pending owner review. See lesson-163-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-6/communication-explain-gemini-fil-4d1b8e88c0ec-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-explain/lesson.json",
+      "asset_id": "communication-explain-story",
+      "provenance": "Lesson 1.6.3 original authored six-beat Remotion story with built-in imagegen scenes preserving approved Gibs and Liza identities. Gemini Kore narration, measured encoded audio sample boundaries. All new media draft; owner listening and local policy/SME review pending."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+      "asset_id": "gibs-portrait",
+      "provenance": "New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-handoff-fab52bab526f.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+      "asset_id": "handoff-handoff",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-audience-f2e4d35b26ca.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+      "asset_id": "handoff-audience",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-meeting-0e0758dee3d2.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+      "asset_id": "handoff-meeting",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-confirm-next-step-f88f7d93bb46.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+      "asset_id": "handoff-confirm-next-step",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-practice-e422855db886.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+      "asset_id": "handoff-practice",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-handoff-check-c1216adf038a.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+      "asset_id": "handoff-check",
+      "provenance": "Built-in image_gen.imagegen; fictional Gibs identity from approved portrait; scene and tool receipt in docs/lesson-165-scene-provenance.json; model undisclosed."
+    },
+    {
+      "path": "/training/bhw-1-6/communication-handoff-gemini-fil-f19e0c88ba25-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-handoff/lesson.json",
+      "asset_id": "communication-handoff-story",
+      "provenance": "Original lesson1.6.5 Remotion animation with new built-in imagegen six distinct handoff scenes preserving new male Gibs identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Distinct illustrated handoff actions with animated labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-liza-0b433575765c.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json",
+      "asset_id": "gibs-liza",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-permission-ac9bcc90f9f7.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json",
+      "asset_id": "gibs-permission",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-listen-b385842fd8e0.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json",
+      "asset_id": "gibs-listen",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-profile-37d8a009bbc6.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json",
+      "asset_id": "gibs-profile",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-practice-c746e090e23b.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json",
+      "asset_id": "gibs-practice",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-check-348430167a69.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json",
+      "asset_id": "gibs-check",
+      "provenance": "Original built-in imagegen fictional listening scene, 8 October 2026; male Gibs reference and corrected Liza identity. No real resident or record. Distinct scene action, not a crop."
+    },
+    {
+      "path": "/training/bhw-1-6/communication-listen-gemini-fil-973e2f8cd8d7-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-listen/lesson.json",
+      "asset_id": "communication-listen-story",
+      "provenance": "Original lesson1.6.1 Remotion animation with new built-in imagegen six distinct listening scenes preserving new male Gibs identity via reference PNG. New scene and media draft pending separate review. Gemini model gemini-3.8-flash-tts voice Kore; encoded MP3 samples set timing and six scene boundaries. Six distinct illustrated listening actions with animated labels. No actual local procedure, funding guarantee, human listening or policy SME approval claimed."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-portrait-0e78ae41b8ed.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+      "asset_id": "gibs-portrait",
+      "provenance": "New built-in imagegen fictional male character reference, 8 October 2026, requested by owner. No real person or patient record."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-sources-ba56fae568d9.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+      "asset_id": "record-sources",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-relevant-detail-cbaca2677899.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+      "asset_id": "record-relevant-detail",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-conflicting-accounts-cfeb4564637f.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+      "asset_id": "record-conflicting-accounts",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-verify-gap-f09e88737873.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+      "asset_id": "record-verify-gap",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-practice-9b5ba7813e7e.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+      "asset_id": "record-practice",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record."
+    },
+    {
+      "path": "/training/bhw-1-6/gibs-record-check-745369cea069.png",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+      "asset_id": "record-check",
+      "provenance": "Built-in image_gen.imagegen, 2026-10-08; two approved Gibs/Liza identity reference PNGs, new distinct teaching scene. Model undisclosed. No real person or resident record."
+    },
+    {
+      "path": "/training/bhw-1-6/communication-record-gemini-fil-4f4c14d18266-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/06-komunikasyon/lessons/communication-record/lesson.json",
+      "asset_id": "communication-record-story",
+      "provenance": "Lesson 1.6.4 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-compare-solutions-1070fb62d278.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json",
+      "asset_id": "action-compare-solutions",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-plan-889b61e22a25.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json",
+      "asset_id": "action-plan",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-partners-418b249f3645.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json",
+      "asset_id": "action-partners",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-review-ea7dba5253fd.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json",
+      "asset_id": "action-review",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-practice-f23b1bb93a16.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json",
+      "asset_id": "action-practice",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-action-check-83656d4deab1.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json",
+      "asset_id": "action-check",
+      "provenance": "Built-in imagegen, pinned Carole reference 6e2b1c5044d7. Distinct scene adapted from generated concept sheet; not source photography. Owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/problem-action-plan-encoded-final-fil-50558786dbc5.jpg",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-action-plan/lesson.json",
+      "asset_id": "problem-action-plan-story",
+      "provenance": "Lesson 1.7.4 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-whys-d0dcdd0642e7.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/lesson.json",
+      "asset_id": "carole-causes-whys",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-manual-example-f4ec0cefe587.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/lesson.json",
+      "asset_id": "carole-causes-manual-example",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-rosario-ae9a2987d80d.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/lesson.json",
+      "asset_id": "carole-causes-rosario",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-verify-branch-7230a15abc18.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/lesson.json",
+      "asset_id": "carole-causes-verify-branch",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-practice-cba43c94470a.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/lesson.json",
+      "asset_id": "carole-causes-practice",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/carole-causes-check-22d181948593.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-causes/lesson.json",
+      "asset_id": "carole-causes-check",
+      "provenance": "Built-in image_gen using pinned Carole reference; fictional teaching scene, owner review pending."
+    },
+    {
+      "path": "/training/bhw-1-7/define-missed-visits-e5e97739a8c7.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json",
+      "asset_id": "define-missed-visits",
+      "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. e5e97739a8c7b86fc351c5c9b8c0ec80ad89ee255990c73bad4d45948a06f819"
+    },
+    {
+      "path": "/training/bhw-1-7/define-worked-example-c6fe62ee1a9c.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json",
+      "asset_id": "define-worked-example",
+      "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. c6fe62ee1a9c648319371af52589fc11d37e67e6685ad958df6c0baa3e7ce741"
+    },
+    {
+      "path": "/training/bhw-1-7/define-source-gap-448fed1ca7d4.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json",
+      "asset_id": "define-source-gap",
+      "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. 448fed1ca7d4046e71a2e8cef65a17938f5b7d2c32a58a2e0470571e92bc5d1b"
+    },
+    {
+      "path": "/training/bhw-1-7/define-resident-perspective-da8342dfebfd.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json",
+      "asset_id": "define-resident-perspective",
+      "provenance": "Built-in imagegen from pinned Carole reference; distinct action scene. No real patient data. da8342dfebfdb7d1a6dc689e4c1748069c8f0c37f694b0f1fcef1135c9883366"
+    },
+    {
+      "path": "/training/bhw-1-7/define-practice-058d2aefe3ce.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json",
+      "asset_id": "define-practice",
+      "provenance": "Built-in imagegen, pinned Carole and resident-perspective references; revised action scene. No real records. 058d2aefe3cea78015e268fb3a4c9c3a5274b3ae1864c31da37260c9c15e10eb"
+    },
+    {
+      "path": "/training/bhw-1-7/define-check-4e11ff99283b.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json",
+      "asset_id": "define-check",
+      "provenance": "Built-in imagegen, pinned Carole and resident-perspective references; revised action scene. No real records. 4e11ff99283b80894c680ce100db3bc15e7ef9ea781dc6f093593a9d574a022e"
+    },
+    {
+      "path": "/training/bhw-1-7/problem-define-gemini-fil-790c964b2119-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-define/lesson.json",
+      "asset_id": "problem-define-story",
+      "provenance": "Lesson 1.7.1 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review."
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/lesson.json",
+      "asset_id": "prioritize-criteria",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved."
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-worked-scores-cc9155c91031.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/lesson.json",
+      "asset_id": "prioritize-worked-scores",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved."
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-score-evidence-45506987ed45.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/lesson.json",
+      "asset_id": "prioritize-score-evidence",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved."
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-tie-and-urgent-care-78194688954e.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/lesson.json",
+      "asset_id": "prioritize-tie-and-urgent-care",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved."
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-practice-bc604b9d65c5.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/lesson.json",
+      "asset_id": "prioritize-practice",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved."
+    },
+    {
+      "path": "/training/bhw-1-7/prioritize-check-2d6ef146fafe.png",
+      "source": "content/training/day1-basic-competencies/modules/07-problema/lessons/problem-prioritize/lesson.json",
+      "asset_id": "prioritize-check",
+      "provenance": "Built-in imagegen using the pinned derived Carole reference 6e2b1c5044d7b0cde3f893a8358c062c1689a4200ba0611203642cda57d1544c. Scene action and exact generation history in docs/lesson-173-media-generation.json. Draft; not owner approved."
+    },
+    {
+      "path": "/training/bhw-1-8/controls-sharps-e4d5a3f0851d.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json",
+      "asset_id": "apple-controls-sharps",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review."
+    },
+    {
+      "path": "/training/bhw-1-8/controls-infection-07fcaacfba6d.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json",
+      "asset_id": "apple-controls-infection",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review."
+    },
+    {
+      "path": "/training/bhw-1-8/controls-body-28ac083243c8.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json",
+      "asset_id": "apple-controls-body",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review."
+    },
+    {
+      "path": "/training/bhw-1-8/controls-workload-00403b02c802.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json",
+      "asset_id": "apple-controls-workload",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review."
+    },
+    {
+      "path": "/training/bhw-1-8/controls-practice-2b93cc0b8390.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json",
+      "asset_id": "apple-controls-practice",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review."
+    },
+    {
+      "path": "/training/bhw-1-8/controls-check-79628b0a5649.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json",
+      "asset_id": "apple-controls-check",
+      "provenance": "Built-in image_gen, shared fictional Apple reference; outfit is artistic continuity, not required PPE. Draft pending owner/local clinical review."
+    },
+    {
+      "path": "/training/bhw-1-8/safety-controls-gemini-fil-6afed3d7ea95-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json",
+      "asset_id": "safety-controls-story",
+      "provenance": "Lesson 1.8.2 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-clinical review."
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-exposure-480b217d2239.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+      "asset_id": "demonstrate-exposure",
+      "provenance": "Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement."
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-return-demo-f3d265df4a04.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+      "asset_id": "demonstrate-return-demo",
+      "provenance": "Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement."
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-near-miss-1ab640aa9c44.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+      "asset_id": "demonstrate-near-miss",
+      "provenance": "Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement."
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-care-before-paperwork-791865eaf620.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+      "asset_id": "demonstrate-care-before-paperwork",
+      "provenance": "Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement."
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-practice-dd627386cef1.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+      "asset_id": "demonstrate-practice",
+      "provenance": "Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement."
+    },
+    {
+      "path": "/training/bhw-1-8/demonstrate-check-7c6af2f2702e.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+      "asset_id": "demonstrate-check",
+      "provenance": "Built-in imagegen using coordinated Apple reference SHA-256 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627; exact prompt/output in docs/lesson-184-scene-brief.json. Outfit is artistic continuity, not clinical requirement."
+    },
+    {
+      "path": "/training/bhw-1-8/safety-demonstrate-gemini-fil-4e162dea4914-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-demonstrate/lesson.json",
+      "asset_id": "safety-demonstrate-story",
+      "provenance": "Six built-in imagegen actions using the coordinated Apple reference; Gemini Kore narration, measured encoded samples; draft pending owner, clinical and human-listening review."
+    },
+    {
+      "path": "/training/bhw-1-8/apple-ana-7eb585b52c44.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json",
+      "asset_id": "apple-ana",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review."
+    },
+    {
+      "path": "/training/bhw-1-8/apple-inspect-897192f83ca3.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json",
+      "asset_id": "apple-inspect",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review."
+    },
+    {
+      "path": "/training/bhw-1-8/apple-scope-and-contact-584fe1d96b90.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json",
+      "asset_id": "apple-scope-and-contact",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review."
+    },
+    {
+      "path": "/training/bhw-1-8/apple-five-hazards-f3264a3b21ad.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json",
+      "asset_id": "apple-five-hazards",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review."
+    },
+    {
+      "path": "/training/bhw-1-8/apple-practice-9f915e4d85a7.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json",
+      "asset_id": "apple-practice",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review."
+    },
+    {
+      "path": "/training/bhw-1-8/apple-check-7b81d7b13618.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json",
+      "asset_id": "apple-check",
+      "provenance": "Built-in image generator, pinned fictional Apple reference; exact prompt and hashes in docs/lesson-181-scene-brief.json. Draft pending owner and clinical/local review."
+    },
+    {
+      "path": "/training/bhw-1-8/safety-identify-gemini-fil-3e7a0b516a9e-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-identify/lesson.json",
+      "asset_id": "safety-identify-story",
+      "provenance": "Lesson 1.8.1 six distinct built-in imagegen scenes, Gemini Kore narration; encoded samples determine beat boundaries. Draft pending owner, human listening and local-policy review."
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-station-preparation-f15177181b4f.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json",
+      "asset_id": "safety-prepare-station-preparation",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE."
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-field-preparation-3defc70f619b.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json",
+      "asset_id": "safety-prepare-field-preparation",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE."
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-combined-hazards-4bbc01f495a9.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json",
+      "asset_id": "safety-prepare-combined-hazards",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE."
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-verify-readiness-173913e4ff5c.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json",
+      "asset_id": "safety-prepare-verify-readiness",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE."
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-practice-2a423b2259f1.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json",
+      "asset_id": "safety-prepare-practice",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE."
+    },
+    {
+      "path": "/training/bhw-1-8/safety-prepare-check-2826943927d2.png",
+      "source": "content/training/day1-basic-competencies/modules/08-osh/lessons/safety-prepare/lesson.json",
+      "asset_id": "safety-prepare-check",
+      "provenance": "Original built-in image generation using shared pinned Apple reference 80cbd601d01854e32f083722855a05c8c98f0e7423495f343f6da1709a5fa627. Exact prompt and hashes in docs/lesson-183-scene-provenance.json. Outfit is artistic continuity, not a required uniform or PPE."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-elena-827200d5a541.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json",
+      "asset_id": "audit-elena",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-inventory-ce95f730fd2f.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json",
+      "asset_id": "audit-inventory",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-seven-s-9b59a4cd02d3.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json",
+      "asset_id": "audit-seven-s",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-evidence-before-order-bd485cd2b439.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json",
+      "asset_id": "audit-evidence-before-order",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-practice-a09ea9c3d960.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json",
+      "asset_id": "audit-practice",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-audit-check-4a7dc50aea44.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json",
+      "asset_id": "audit-check",
+      "provenance": "Built-in imagegen using the shared fictional Charlaine reference; exact prompts and hashes in docs/lesson-191-scene-brief.json."
+    },
+    {
+      "path": "/training/bhw-1-9/resources-audit-final-frame-fil-dbc84bc64533.jpg",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-audit/lesson.json",
+      "asset_id": "resources-audit-story",
+      "provenance": "Six built-in imagegen actions using the coordinated Charlaine reference; Gemini Kore narration, measured encoded samples; draft pending owner, facility and human-listening review."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-trial-cca1983eac3e.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json",
+      "asset_id": "monitor-trial",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-compare-f543a30986fb.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json",
+      "asset_id": "monitor-compare",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-communicate-617a9b934a50.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json",
+      "asset_id": "monitor-communicate",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-workload-95621d5688a0.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json",
+      "asset_id": "monitor-workload",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-handover-8c007c23d23e.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json",
+      "asset_id": "monitor-handover",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-practice-1c2e1fa6bcd1.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json",
+      "asset_id": "monitor-practice",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-monitor-check-103407be75bd.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json",
+      "asset_id": "monitor-check",
+      "provenance": "Built-in imagegen using shared Charlaine reference SHA-256 0319cd43e3965c34159cafcb72873fd13d4e9b94a8f202ba77eadacda714bb00; exact prompt/output receipt: docs/lesson-193-image-prompts.json. Owner approval pending."
+    },
+    {
+      "path": "/training/bhw-1-9/resources-monitor-gemini-fil-3bf026606946-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-monitor/lesson.json",
+      "asset_id": "resources-monitor-story",
+      "provenance": "Shared draft Charlaine reference; seven built-in imagegen scenes; Gemini Kore audio with measured encoded boundaries; owner/facility/human listening review pending."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-utilities-9267e7b9668d.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json",
+      "asset_id": "charlaine-utilities",
+      "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-materials-1a4d26dbdf84.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json",
+      "asset_id": "charlaine-materials",
+      "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-workflow-26aa1c3665f3.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json",
+      "asset_id": "charlaine-workflow",
+      "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-worked-example-4443b63ec47c.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json",
+      "asset_id": "charlaine-worked-example",
+      "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-practice-8078c21abbd8.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json",
+      "asset_id": "charlaine-practice",
+      "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform."
+    },
+    {
+      "path": "/training/bhw-1-9/charlaine-safe-change-check-1e8b80d530c8.png",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json",
+      "asset_id": "charlaine-check",
+      "provenance": "Built-in imagegen using the pinned shared fictional Charlaine reference; exact prompt/output receipt in docs/lesson-192-scene-provenance.json. Artistic outfit, not an official uniform."
+    },
+    {
+      "path": "/training/bhw-1-9/resources-safe-change-gemini-fil-1fe386aea8e3-poster.jpg",
+      "source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/lessons/resources-safe-change/lesson.json",
+      "asset_id": "resources-safe-change-story",
+      "provenance": "Pinned built-in imagegen Charlaine scenes with measured Gemini Kore narration, H.264/AAC and six matching WebVTT cues; exact package remains draft."
+    },
+    {
+      "path": "/training/bhw-1-1/health-educator-c9c658e97d1e.png",
+      "source": "docs/lesson-112-layout-review.md",
+      "provenance": "It was generated for this lesson with the built-in image tool"
+    },
+    {
+      "path": "/training/bhw-1-1/scene-8cdb1498a723.png",
+      "source": "https://github.com/jongsky25/BHW-Connect-Phase-2/pull/196",
+      "provenance": "The new fictional barangay illustration was generated with built-in Imagegen for this lesson"
+    }
+  ]
+}
