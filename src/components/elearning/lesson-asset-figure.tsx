@@ -2,6 +2,8 @@
 import { useEffect, useId, useRef } from "react";
 import type { LessonAsset } from "@/lib/elearning/types";
 import type { LessonTranslationLanguage } from "@/lib/elearning/lesson-translation";
+import {localPartnerVisual, localPartnerScenePurpose} from '@/lib/elearning/local-partner-visuals';
+import {LocalPartnerLearningVisual} from './local-partner-learning-visual';
 import { AiVisualLabel } from './ai-visual-label';
 
 // One reference-lesson asset: a static image, or (INC-28 tier 2) a Remotion
@@ -35,13 +37,16 @@ export function LessonAssetFigure({
     const player = videoRef.current;
     return () => { if (player && !player.paused) player.pause(); };
   }, [video?.path]);
+  const localVisual = language ? null : localPartnerVisual(a, en);
+  const scenePurpose = language ? null : localPartnerScenePurpose(a, en);
+  if (localVisual) return <LocalPartnerLearningVisual visual={localVisual}/>;
   if (!video)
     return (
       <figure className="my-4">
         {/* Public static assets; text alternatives remain visible if an image fails. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={a.path} width={720} height={360} loading="lazy" alt={alt} className="h-auto w-full rounded-lg" />
-        <figcaption className="text-sm">{caption}<AiVisualLabel path={a.path} contentHash={a.content_hash} en={en}/></figcaption>
+        <figcaption className="text-sm">{caption}<AiVisualLabel path={a.path} contentHash={a.content_hash} en={en}/>{scenePurpose && <span className="mt-2 block" data-local-partner-scene-purpose>{scenePurpose}</span>}</figcaption>
       </figure>
     );
   return (
