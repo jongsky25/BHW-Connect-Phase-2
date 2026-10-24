@@ -1,0 +1,18 @@
+{
+  "purpose": "Bind the FB-4.1a mode-switch fix to an exact successor and preserve the complete prior reader for historical release guards. No historical approval hash is changed.",
+  "base_commit": "dc26728129fcd18aa5d5c437e2390f28bdd024c3",
+  "authorization": "User directed implementation, testing, merge and live publication of the next FB-4.1 increment with do it.",
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "a50f04c1919edb829b525f54e664c1197874ea8a3d92eea0ce858ae3a2f55cf9",
+  "successor_sha256": "2b68d15eec8446d403f9f3434c334716c8ab178581a7668db921a83808737435",
+  "replacements": [
+    {
+      "predecessor_utf8": "  lessonPosition,\n",
+      "current_utf8": "  lessonPosition,\n  switchLessonPosition,\n"
+    },
+    {
+      "predecessor_utf8": "      lessonPosition(\n        lesson,\n        next,\n        resumes.find((r) => r.lesson_id === lesson.id && r.modality === next),\n        item.concept_ids[0],\n",
+      "current_utf8": "      switchLessonPosition(\n        lesson,\n        next,\n        item,\n        resumes.find((r) => r.lesson_id === lesson.id && r.modality === next),\n"
+    }
+  ]
+}

@@ -540,6 +540,20 @@ state, content, narration, gates and progress APIs remain intact. The three
 reports stay open; broad illustration/subchapter-copy requests remain separate.
 The PR records CI and exact production evidence.
 
+## FB-4.1a section continuity across Read and Slides
+
+The owner directed the [first confirmed presentation mismatch fix](fb-4.1a-mode-continuity.md).
+The review covers all 15 FB-4.1 assignments (correcting the earlier count of 14),
+12 published lessons and 46 available referenced image paths. Two educator
+reports lead to a reproduced shared-concept/stale-resume section jump. Explicit
+format changes now prefer the unique matching section while lesson reopening
+retains existing saved-position behavior. Bilingual inline/full-screen tests
+cover reordered slides and fallback cases. Authored lessons, media, assessments,
+completion rules and historical approval hashes remain intact. An exact shared
+reader successor preserves the prior source for historical guards. All reports
+remain open; the review records each visual, story, disclosure or rendering
+follow-up. CI and production receipts are in the release PR.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.

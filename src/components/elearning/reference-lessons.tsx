@@ -15,6 +15,7 @@ import type {
 import {
   continueLesson,
   lessonPosition,
+  switchLessonPosition,
   type PublishedLesson,
 } from "@/lib/elearning/reference-navigation";
 import type { LessonNarration } from "@/lib/elearning/reference-narration";
@@ -503,11 +504,11 @@ export function ReferenceLessons(props: Props) {
     if (!lesson || !item) return;
     setVideoSelected(false);
     move(
-      lessonPosition(
+      switchLessonPosition(
         lesson,
         next,
+        item,
         resumes.find((r) => r.lesson_id === lesson.id && r.modality === next),
-        item.concept_ids[0],
       ),
       next,
     );
