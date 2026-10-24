@@ -481,6 +481,18 @@ records database/access/UI tests, migration integrity and production evidence.
 No reports are automatically closed and broader pre-test answer disclosure
 remains a separate policy request.
 
+## FB-3.3a mobile header and search
+
+The owner directed the next mobile/wayfinding increment. The
+[review of all 11 assignments](fb-3.3a-mobile-header.md) identifies the first
+cohesive slice: consistent mobile control targets/alignment, compact accessible
+search, wrapping brand text and a viewport-bounded search panel anchored below
+its trigger. Explicit bilingual close and Escape return focus to search;
+clicking another control dismisses the panel. Existing role/flag navigation and
+search behavior remain. Lesson hierarchy, chapter/KB labels, destination
+descriptions and preferred greetings retain their separate follow-ups. CI and
+production evidence are recorded in the PR; no report is automatically closed.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.

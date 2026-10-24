@@ -57,7 +57,7 @@ export function UserMenu({ account }: Props) {
         aria-controls={panelId}
         aria-label={accessibleName}
         onClick={() => setOpen((value) => !value)}
-        className="flex items-center gap-1.5 rounded-full transition-opacity hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        className="flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-full transition-opacity hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       >
         <span
           aria-hidden="true"

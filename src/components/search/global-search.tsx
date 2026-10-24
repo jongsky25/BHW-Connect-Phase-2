@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useDisclosure } from "@/components/nav/use-disclosure";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
@@ -10,7 +11,7 @@ export function GlobalSearch() {
   const t = useTranslations("search");
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
-  const [open, setOpen] = useState(false);
+  const { open, setOpen, containerRef, triggerRef } = useDisclosure<HTMLDivElement, HTMLButtonElement>();
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
@@ -50,12 +51,19 @@ export function GlobalSearch() {
     setFailed(false);
   }
 
-  return <div className="relative">
-    <button type="button" onClick={() => setOpen((value) => !value)} aria-label={t("triggerLabel")} aria-expanded={open}
-      aria-controls="global-search-panel" className="rounded-md border border-ink/20 px-3 py-2 text-sm font-medium text-ink hover:bg-ink/5">
-      <span aria-hidden="true">⌕ </span>{t("button")}
+  return <div ref={containerRef} className="relative">
+    <button ref={triggerRef} type="button" onClick={() => setOpen((value) => !value)} aria-label={t("triggerLabel")} aria-expanded={open}
+      aria-controls="global-search-panel" className="inline-flex min-h-11 min-w-11 items-center justify-center gap-2 rounded-md border border-ink/20 px-3 text-sm font-medium text-ink hover:bg-ink/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2">
+        <circle cx="10.5" cy="10.5" r="6.5" /><path strokeLinecap="round" d="m16 16 4 4" />
+      </svg><span className="hidden md:inline">{t("button")}</span>
     </button>
-    {open ? <div id="global-search-panel" className="fixed inset-x-3 top-28 z-50 rounded-xl border border-ink/20 bg-canvas p-3 shadow-xl sm:absolute sm:-left-64 sm:right-0 sm:top-full sm:mt-3 sm:w-96">
+    {open ? <div id="global-search-panel" className="absolute left-0 top-full z-50 mt-2 max-h-[min(32rem,calc(100dvh-10rem))] w-[min(24rem,calc(100vw-2rem))] overflow-y-auto rounded-xl border border-ink/20 bg-canvas p-3 shadow-xl md:left-auto md:right-0">
+      <div className="mb-2 flex items-center justify-between gap-2">
+        <p className="font-semibold">{t("button")}</p>
+        <button type="button" onClick={() => { setOpen(false); triggerRef.current?.focus(); }}
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md px-2 text-sm underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">{t("closeLabel")}</button>
+      </div>
       <form action="/search" role="search" onSubmit={() => setOpen(false)}>
         <label htmlFor="global-search-query" className="sr-only">{t("label")}</label>
         <input ref={inputRef} id="global-search-query" name="q" type="search" autoComplete="off"
@@ -63,7 +71,7 @@ export function GlobalSearch() {
           maxLength={80} value={query} placeholder={t("placeholder")}
           onChange={(event) => updateQuery(event.target.value)}
           onKeyDown={(event) => {
-            if (event.key === "Escape") { setOpen(false); return; }
+            if (event.key === "Escape") return; // Shared disclosure restores focus to the trigger.
             if (event.key === "ArrowDown") { event.preventDefault(); setActive((value) => Math.min(value + 1, results.length - 1)); }
             if (event.key === "ArrowUp") { event.preventDefault(); setActive((value) => Math.max(value - 1, -1)); }
             if (event.key === "Enter" && active >= 0 && results[active]) {
