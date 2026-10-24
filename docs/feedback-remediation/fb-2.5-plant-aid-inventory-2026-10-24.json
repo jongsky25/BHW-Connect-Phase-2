@@ -2,7 +2,7 @@
   "inventory_id": "FB-2.5-plant-aids-2026-10-24",
   "feedback_id": "5bedf6bc-fe03-4feb-a48e-1ddc17313492",
   "source_commit": "d8042e63fe264d73d83824c8a02a46d09dc948c4",
-  "status": "owner_approved_plan_awaiting_reference_aids",
+  "status": "pilot_preview_prepared_for_live_review",
   "clinical_training_owner": "Ray Justin Ventura",
   "clinical_approval": null,
   "published_card_access_verified": false,
@@ -596,5 +596,20 @@
     "next_acceptance": "Named local clinical/training owner approves versioned reference aids and consultation route; learner can reach the actual current aid in English/Filipino and print it; uncertainty causes non-use and consultation."
   },
   "owner_role": "training owner",
-  "owner_approval_record": "docs/feedback-remediation/fb-2.5-owner-approval-2026-10-24.json"
+  "owner_approval_record": "docs/feedback-remediation/fb-2.5-owner-approval-2026-10-24.json",
+  "pilot_preview": {
+    "route": "/plant-aids",
+    "entry_point": "Courses",
+    "training_owner": "Ray Justin Ventura",
+    "version": "pilot-1 · 2026-10-24",
+    "card_count": 10,
+    "languages": [
+      "en",
+      "fil"
+    ],
+    "clinical_verification": "pending",
+    "operational_local_contact": "pending",
+    "implementation_record": "docs/feedback-remediation/fb-2.5-pilot-preview.md",
+    "owner_direction": "Publish a visible pilot preview for comments without requiring local document collection first."
+  }
 }

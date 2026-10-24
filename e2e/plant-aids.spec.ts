@@ -1,0 +1,30 @@
+import { expect, test } from "@playwright/test";
+import { STABLE_BHW } from "./fixtures/auth";
+
+test("a BHW opens pilot cards from Courses, changes language and prints a filtered mobile view", async ({ page }) => {
+  await page.goto("/login");
+  await page.getByLabel("Username").fill(STABLE_BHW.username);
+  await page.getByLabel("Password").fill(STABLE_BHW.password);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/courses");
+  await page.getByRole("link", { name: /reference aid.*pilot/i }).click();
+  await expect(page).toHaveURL("/plant-aids");
+  await expect(page.getByRole("article")).toHaveCount(10);
+  await page.getByRole("button", { name: "English", exact: true }).click();
+  await page.getByRole("searchbox").fill("Carmona");
+  await expect(page.getByRole("article")).toHaveCount(1);
+  await expect(page.getByRole("heading", { name: "Tsaang-gubat", exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "PITAHC: Tsaang-gubat" })).toHaveAttribute("href", "https://pitahc.gov.ph/herbs-directory/#tsaang-gubat");
+  await page.getByText("Show a possible response", { exact: true }).click();
+  await expect(page.getByText(/The card lists Carmona retusa/)).toBeVisible();
+  await page.getByRole("button", { name: "Filipino", exact: true }).click();
+  await expect(page.getByText("Dahon", { exact: true })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.emulateMedia({ media: "print" });
+  await expect(page.getByRole("article")).toBeVisible();
+  await expect(page.getByRole("searchbox")).toBeHidden();
+  await expect(page.getByRole("heading", { name: "Ano ang dapat pagbutihin?" })).toBeHidden();
+  await expect(page.getByText("Ray Justin Ventura", { exact: true })).toBeVisible();
+});

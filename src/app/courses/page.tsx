@@ -64,6 +64,11 @@ export default async function CoursesPage() {
         <p className="mt-1 text-ink/70">{t("intro")}</p>
       </div>
 
+      <Link href="/plant-aids" className="rounded-lg border border-secondary/30 bg-secondary/5 p-4 hover:bg-secondary/10">
+        <span className="font-semibold">{locale === "en" ? "Plant reference aids · pilot" : "Mga reference aid sa halaman · pilot"}</span>
+        <span className="mt-1 block text-sm text-ink/70">{locale === "en" ? "Review ten bilingual cards, try a practice case, and give feedback." : "Suriin ang sampung bilingual card, subukan ang practice case, at magbigay ng puna."}</span>
+      </Link>
+
       {rows.length === 0 && !programs?.length ? (
         <EmptyState message={t("empty")} />
       ) : (

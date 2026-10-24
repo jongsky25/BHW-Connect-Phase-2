@@ -418,6 +418,18 @@ consultation route and bilingual/mobile/print access checks. This does not
 attribute clinical sign-off to him or publish an absent aid. The report remains
 open until the recorded access and local-route acceptance checks are met.
 
+## FB-2.5 pilot-first review experience
+
+The owner clarified that a live pilot to inspect and comment on is the immediate
+goal; local document collection should not block showing a prototype. The
+[implementation record](fb-2.5-pilot-preview.md) describes the ten bilingual,
+source-linked cards at `/plant-aids`, catalog entry, name search, printing,
+fictional practice case and existing page feedback. Ray Justin Ventura remains
+training owner. Clinical verification and a local consultation contact stay
+pending for operational use; the current deliverable is explicitly a pilot for
+review. No learner history, assessed lesson, rubric, release or feedback status
+is rewritten. The release PR records final CI and production verification.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
