@@ -14,7 +14,7 @@ export function LessonPageHeading({ title, context, locale, eyebrow, intro }: {
 }) {
   const en = locale === "en";
   return <header className="min-w-0 space-y-3 rounded-xl border border-primary/25 bg-primary/5 p-4 sm:p-6" data-lesson-heading>
-    {eyebrow && <p className="text-sm font-semibold text-primary-text">{eyebrow}</p>}
+    {eyebrow && <p className="text-sm font-semibold text-ink">{eyebrow}</p>}
     <div className="min-w-0 space-y-2 break-words [overflow-wrap:anywhere]">
       <p className="text-sm font-medium">
         <Link prefetch={false} href={context.chapterHref} className="block min-h-11 py-2 underline">
