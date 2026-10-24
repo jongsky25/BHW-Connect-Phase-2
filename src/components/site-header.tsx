@@ -39,10 +39,10 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
         <div className={`flex items-center gap-2 md:gap-6 ${signedIn && account ? "w-full justify-between md:w-auto md:justify-start" : "w-full min-[560px]:w-auto"}`}>
           <Link prefetch={false}
             href={signedIn ? "/home" : "/"}
-            className="flex items-center gap-2 whitespace-nowrap rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="flex min-w-0 items-center gap-2 rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <EquityMark size="sm" decorative />
-            {t("appName")}
+            <span className="min-w-0 break-words">{t("appName")}</span>
           </Link>
           {signedIn && account ? (
             <MobileDrawer
@@ -67,8 +67,9 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
             </nav>
           ) : null}
         </div>
-        <div className="flex w-full items-center justify-end gap-2 md:w-auto md:gap-3">
+        <div className="flex w-full items-center gap-2 md:w-auto md:justify-end md:gap-3">
           {signedIn && account ? <GlobalSearch /> : null}
+          <div className="ml-auto flex shrink-0 items-center gap-2 md:ml-0 md:gap-3">
           {notificationsEnabled ? <NotificationBell unreadCount={notifUnreadCount} /> : null}
           {/* Mobile gets the same controls inline in the drawer's "Display"
               section instead (see MobileDrawer) — a separate popover there
@@ -77,6 +78,7 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
             <QuickDisplayPopover initialA11y={initialA11y} signedIn={signedIn} />
           </div>
           {signedIn && account ? <UserMenu account={account} /> : <LanguageToggle signedIn={signedIn} compact />}
+          </div>
         </div>
       </div>
     </header>

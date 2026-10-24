@@ -13,7 +13,7 @@ export function NotificationBell({ unreadCount }: Props) {
     <Link prefetch={false}
       href="/notifications"
       aria-label={label}
-      className="relative rounded-md p-2 text-ink hover:bg-ink/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      className="relative inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-md p-2 text-ink hover:bg-ink/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
