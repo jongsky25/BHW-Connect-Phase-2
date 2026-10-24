@@ -73,8 +73,12 @@ fullscreen rendering, one player, no autoplay or read-only progress writes,
 and refusal after lesson, revision, video, caption, asset or excerpt drift.
 Existing reader, completion, media-label and historical checks remain.
 
-The disposable Chapter 2 fixture adds the exact authored lesson/media payload
-under temporary identities. Browser coverage checks both languages and training/
+The disposable fixture retains Chapter 2 heading checks and adds the exact
+authored story payload under temporary Chapter 1/module 1.6 identities.
+For this reader journey, qualification/rollout flags are snapshotted, temporarily
+disabled in the disposable database and restored in cleanup; a supported legacy
+pretest receipt admits the assessor. Qualification/rollout flows keep their
+separate suites. Browser coverage checks both languages and training/
 assessor study, context and the six-paragraph transcript, one non-autoplaying
 captioned player, native fullscreen, 320px/XL light/dark accessibility, and the
 existing layout/zoom/mode-continuity checks. No write-based test touches the

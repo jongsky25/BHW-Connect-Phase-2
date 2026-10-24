@@ -17,7 +17,8 @@ test("lesson headings and reading tools preserve context, readability, zoom and 
   const assessor = await createThrowawayAssessor(request, admin, "00000000-0000-0000-0000-000000000004");
   const [actor] = await restGet(request, admin, `users?select=id&username=eq.${assessor.username}`) as { id: string }[];
   expect(actor.id).toMatch(/^[a-f0-9-]{36}$/);
-  const [course, program, chapter, module, lesson, revision, contextLesson, contextRevision] = Array.from({ length: 8 }, () => randomUUID());
+  const [course, program, chapter, module, lesson, revision, contextLesson, contextRevision, contextCourse, contextChapter, contextModule] = Array.from({ length: 11 }, () => randomUUID());
+  const readerFlags = JSON.parse(localSql("select json_agg(json_build_object('key',key,'enabled',enabled)) from feature_flags where key in ('chapter1_assessment_v2','assessor_flow_ui');")) as {key:string;enabled:boolean}[];
   const contextSource = loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon', 'public').lessons.find(l => l.manifest.lesson_key === 'communication-explain')!;
   const jsonSql = (value: unknown) => `'${JSON.stringify(value).replaceAll("'", "''")}'::jsonb`;
   localSql(`
@@ -36,14 +37,22 @@ test("lesson headings and reading tools preserve context, readability, zoom and 
         '[{"id":"intro","concept_ids":["practice-topic"],"heading_fil":"Pagsasanay","heading_en":"Practice","body_fil":"Halimbawa lamang.","body_en":"Fictional example only.","asset_ids":["ai-illustration"],"takeaway_fil":"Maghanda.","takeaway_en":"Prepare.","check":null},{"id":"follow-up","concept_ids":["practice-topic"],"heading_fil":"Susunod na hakbang","heading_en":"Next step","body_fil":"Linawin ang susunod na hakbang.","body_en":"Clarify the next step.","asset_ids":["ai-illustration"],"takeaway_fil":"Linawin.","takeaway_en":"Clarify.","check":null}]',
         '[{"id":"slide-intro","concept_ids":["practice-topic"],"layout":"takeaway","heading_fil":"Pagsasanay","heading_en":"Practice","display_fil":"Maghanda.","display_en":"Prepare.","asset_ids":["ai-illustration"],"check":null},{"id":"slide-follow-up","concept_ids":["practice-topic"],"layout":"takeaway","heading_fil":"Susunod na hakbang","heading_en":"Next step","display_fil":"Linawin.","display_en":"Clarify.","asset_ids":["ai-illustration"],"check":null}]','[]','[]','[{"id":"ai-illustration","path":"/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png","content_hash":"7e4e351416282cb78a0d8b17c80fba7a4367291f9d46f2586baaa90cd66dcaea","alt_en":"Fictional health discussion","alt_fil":"Kathang-isip na talakayan","caption_en":"Fictional example","caption_fil":"Kathang-isip na halimbawa","provenance":"Original AI-generated illustration; disposable fixture.","review_status":"approved"}]','${actor.id}');
     update course_lessons set published_revision_id='${revision}' where id='${lesson}';
+    insert into courses(id,org_unit_id,author_user_id,title_fil,title_en,status)
+      values('${contextCourse}','00000000-0000-0000-0000-000000000006','${actor.id}','E2E story','E2E story','published');
+    insert into training_program_chapters(id,program_id,chapter_key,position,title_fil,title_en,course_id,availability)
+      values('${contextChapter}','${program}','chapter-1',0,'BHW sa barangay','BHW in the barangay','${contextCourse}','available');
+    insert into course_modules(id,course_id,position,type,title_fil,title_en)
+      values('${contextModule}','${contextCourse}',5,'text','Komunikasyon','Communication');
     insert into course_lessons(id,module_id,lesson_key,position,title_fil,title_en,objectives_fil,objectives_en)
-      values('${contextLesson}','${module}','communication-explain',1,'Pag-unawa at malinaw na paliwanag','Empathy and clear explanations',array['Pagsasanay'],array['Practice']);
+      values('${contextLesson}','${contextModule}','communication-explain',2,'Pag-unawa at malinaw na paliwanag','Empathy and clear explanations',array['Pagsasanay'],array['Practice']);
     insert into course_lesson_revisions(id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,featured_asset_id,created_by)
       values('${contextRevision}','${contextLesson}','e2e-story-context','${contentHash(contextSource)}',
       ${jsonSql(contextSource.revision.read_sections)},${jsonSql(contextSource.revision.slides)},${jsonSql(contextSource.revision.coverage)},${jsonSql(contextSource.revision.sources)},${jsonSql(contextSource.revision.assets)},'communication-explain-story','${actor.id}');
     update course_lessons set published_revision_id='${contextRevision}' where id='${contextLesson}';
     insert into assessor_exam_attempts(assessor_user_id,chapter_id,curriculum_version,exam_id,phase,status,question_set_hash,question_count,score_percent,passed,answers,submitted_at)
       values('${actor.id}','${chapter}','2026-09-28.1','chapter-2:pretest','pretest','submitted',repeat('0',32),1,0,false,'[]',now());
+    insert into assessor_exam_attempts(assessor_user_id,chapter_id,curriculum_version,exam_id,phase,status,question_set_hash,question_count,score_percent,passed,answers,submitted_at)
+      values('${actor.id}','${contextChapter}','2026-09-28.1','chapter-1:pretest','pretest','submitted',repeat('0',32),1,0,false,'[]',now());
   `);
   try {
     const password = "LessonHeadingPw2026!";
@@ -137,15 +146,19 @@ test("lesson headings and reading tools preserve context, readability, zoom and 
         await expect(page.locator('[data-reading-layout] > section > article').getByRole("heading", { name: sectionHeading, exact: true })).toBeVisible();
       }
     }
+    // This journey exercises the reader; qualification/rollout gates have their
+    // own suites. Use the supported legacy pretest fixture and restore both flags.
+    localSql("update feature_flags set enabled=false where key in ('chapter1_assessment_v2','assessor_flow_ui');");
     for (const locale of ['en', 'fil']) {
       const settings = await request.post(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/rpc/rpc_update_settings`, {
         headers: {apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, Authorization: `Bearer ${token}`},
         data: {p_language: locale, p_theme: 'light', p_font_scale: 'xl', p_high_contrast: false},
       });
       expect(settings.ok()).toBe(true);
-      for (const base of [`/training/${program}/chapter-2`, `/training/${program}/assessor/chapter-2`]) {
+      for (const base of [`/training/${program}/chapter-1`, `/training/${program}/assessor/chapter-1`]) {
         await page.setViewportSize({width: 320, height: 844});
-        await page.goto(`${base}/${module}/${contextLesson}?view=lesson`);
+        await page.goto(`${base}/${contextModule}/${contextLesson}?view=lesson`);
+        await expect(page.locator('[data-lesson-heading]')).toBeVisible();
         await page.getByRole('button', {name: locale === 'en' ? 'Narrated story' : 'Kuwentong may salaysay', exact:true}).click();
         const contextName = locale === 'en' ? 'Before you watch' : 'Bago manood';
         const context = page.getByRole('region', {name: contextName, exact:true});
@@ -178,18 +191,19 @@ test("lesson headings and reading tools preserve context, readability, zoom and 
     await page.goto("/home");
   } finally {
     localSql(`begin;
-      delete from assessor_lesson_resume where chapter_id='${chapter}';
-      delete from assessor_lesson_progress where chapter_id='${chapter}';
-      delete from assessor_exam_attempts where chapter_id='${chapter}';
+      ${readerFlags.map(flag=>`update feature_flags set enabled=${flag.enabled?'true':'false'} where key='${flag.key}';`).join('\n')}
+      delete from assessor_lesson_resume where chapter_id in ('${chapter}','${contextChapter}');
+      delete from assessor_lesson_progress where chapter_id in ('${chapter}','${contextChapter}');
+      delete from assessor_exam_attempts where chapter_id in ('${chapter}','${contextChapter}');
       update course_lessons set published_revision_id=null where id in ('${lesson}','${contextLesson}');
       alter table course_lesson_revisions disable trigger training_revision_immutable;
       delete from course_lesson_revisions where id in ('${revision}','${contextRevision}');
       alter table course_lesson_revisions enable trigger training_revision_immutable;
       delete from course_lessons where id in ('${lesson}','${contextLesson}');
-      delete from course_modules where id='${module}';
-      delete from training_program_chapters where id='${chapter}';
+      delete from course_modules where id in ('${module}','${contextModule}');
+      delete from training_program_chapters where id in ('${chapter}','${contextChapter}');
       delete from training_programs where id='${program}';
-      delete from courses where id='${course}';
+      delete from courses where id in ('${course}','${contextCourse}');
       commit;`);
   }
 });
