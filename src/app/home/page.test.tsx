@@ -5,19 +5,19 @@ import fil from "../../../messages/fil.json";
 import { FLAG_ROLE_SCOPE } from "@/lib/flags/types";
 import { getNavItems } from "@/lib/nav/nav-items";
 import HomePage from "./page";
-const state = vi.hoisted(() => ({ locale: "en", role: "bhw", enabled: true }));
+const state = vi.hoisted(() => ({ locale: "en", role: "bhw", enabled: true, preview: false, preferredName: null as string | null, preferenceError: false }));
 vi.mock("next/navigation", () => ({ redirect: (url: string) => { throw Error(url); } }));
 vi.mock("next-intl/server", () => ({ getLocale: async () => state.locale, getTranslations: async (namespace: string) => {
   const messages = (state.locale === "en" ? en : fil) as unknown as Record<string, Record<string, string>>;
-  return (key: string) => messages[namespace][key];
+  return (key: string, values?: Record<string, string>) => Object.entries(values ?? {}).reduce((message, [name, value]) => message.replace(`{${name}}`, value), messages[namespace][key]);
 } }));
-vi.mock("@/lib/auth/viewer", () => ({ getViewer: async () => ({ role: state.role, appUser: { id: "self", full_name: "Fictional Rosa", onboarding_completed_at: "2026-10-01" } }) }));
+vi.mock("@/lib/auth/viewer", () => ({ getViewer: async () => ({ role: state.role, isPreview: state.preview, appUser: { id: "self", full_name: "Fictional Rosa", onboarding_completed_at: "2026-10-01" } }) }));
 vi.mock("@/lib/supabase/request", () => ({ getRequestFeatureFlags: async () => ({ elearning: state.enabled }) }));
-vi.mock("@/lib/supabase/server", () => ({ createClient: async () => ({}) }));
+vi.mock("@/lib/supabase/server", () => ({ createClient: async () => ({ rpc: async () => ({ data: state.preferredName, error: state.preferenceError ? { message: "Unavailable" } : null }) }) }));
 vi.mock("@/lib/progress/load-manual-progress", () => ({ loadManualProgress: async () => [] }));
 vi.mock("@/components/sign-out-button", () => ({ SignOutButton: () => <button>Sign out</button> }));
 afterEach(cleanup);
-beforeEach(() => Object.assign(state, { locale: "en", role: "bhw", enabled: true }));
+beforeEach(() => Object.assign(state, { locale: "en", role: "bhw", enabled: true, preview: false, preferredName: null, preferenceError: false }));
 
 it.each(["en", "fil"])("describes visible destinations while retaining their concise accessible names (%s)", async locale => {
   state.locale = locale; const messages = locale === "en" ? en : fil;
@@ -40,5 +40,17 @@ it("provides bilingual explanations for every role-allowed navigation destinatio
     for (const item of getNavItems({ role, flags })) for (const messages of [en, fil]) {
       expect(messages.destinations[item.id as keyof typeof messages.destinations]).toBeTruthy();
     }
+  }
+});
+
+it.each(["en", "fil"])("greets the user by their saved preference (%s)", async locale => {
+  state.locale = locale; state.preferredName = "RJ"; render(await HomePage());
+  expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(locale === "en" ? "Welcome, RJ!" : "Maligayang pagdating, RJ!");
+});
+it("uses the official name when the preference is unset, unavailable or in preview", async () => {
+  for (const scenario of ["unset", "unavailable", "preview"]) {
+    state.preferredName = scenario === "unset" ? null : "Private preference";
+    state.preferenceError = scenario === "unavailable"; state.preview = scenario === "preview";
+    render(await HomePage()); expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Welcome, Fictional Rosa!"); cleanup();
   }
 });

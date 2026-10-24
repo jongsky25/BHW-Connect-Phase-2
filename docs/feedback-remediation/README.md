@@ -517,6 +517,17 @@ Stored category names, content, URLs, visibility and lesson/progress rules remai
 intact. Both linked reports remain open for live comments; CI and exact production
 verification are recorded in the PR.
 
+## FB-3.3d preferred greeting name
+
+The owner directed the [preferred-greeting slice](fb-3.3d-preferred-greeting-name.md).
+Settings now offers a saved personal Home greeting name, with explicit save and
+blank reset. Home uses it when available and otherwise retains the full name.
+A private, owner-checked preference store leaves official names, certificates,
+grades and existing auth/settings contracts intact. Preview does not fetch or
+edit the preference. Database, UI and fresh-session browser tests are recorded
+in the PR with migration integrity and exact production receipts. The linked
+report remains open for live comments.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.

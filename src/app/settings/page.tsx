@@ -1,3 +1,7 @@
+import { getViewer } from "@/lib/auth/viewer";
+import { createClient } from "@/lib/supabase/server";
+import { readGreetingName } from "@/lib/settings/greeting-name";
+import { PreferredNameForm } from "@/components/settings/preferred-name-form";
 import { getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
@@ -19,6 +23,8 @@ export default async function SettingsPage() {
     redirect("/login");
   }
 
+  const viewer = await getViewer();
+  const greeting = viewer.isPreview ? null : await readGreetingName(await createClient());
   const t = await getTranslations("settings");
   const tCrumbs = await getTranslations("breadcrumbs");
 
@@ -29,6 +35,7 @@ export default async function SettingsPage() {
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
         <p className="mt-1 text-ink/70">{t("intro")}</p>
       </div>
+      {!viewer.isPreview && <PreferredNameForm key={greeting?.failed ? "failed" : "ready"} initialName={greeting?.name ?? null} loadFailed={greeting?.failed} />}
       <SettingsForm initialLanguage={appUser.language} initialA11y={parseA11ySettings(appUser.a11y_settings)} />
     </div>
   );
