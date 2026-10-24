@@ -1,0 +1,38 @@
+{
+  "approval_id": "FB-2.5-owner-2026-10-24",
+  "approval_type": "owner_plan_wording_and_training_owner_assignment",
+  "authorization": "approved and make ray justin ventura as the training owner. merge after",
+  "approved_date": "2026-10-24",
+  "reviewed_source_commit": "d43f6d59322e92e926c0c2c459eae1a0dfef843f",
+  "reviewed_files": [
+    {
+      "path": "docs/feedback-remediation/fb-2.5-plant-aid-review.md",
+      "sha256": "e99fd6f792f58a39ad9608dbb96de1ccb9ea530b1d57a4c7dd99860b77b2ae62"
+    },
+    {
+      "path": "docs/feedback-remediation/fb-2.5-plant-aid-inventory-2026-10-24.json",
+      "sha256": "49d8fd214f9369bd1b2044beb5ffa9b9ca6b32326b2390f4be2d7f21be370213"
+    }
+  ],
+  "training_owner": {
+    "name": "Ray Justin Ventura",
+    "role": "training owner",
+    "assignment_basis": "Explicit owner instruction in chat"
+  },
+  "approved_scope": [
+    "FB-2.5 inventory and implementation/acceptance plan",
+    "Proposed English and Filipino learner wording for the future aid-access workflow",
+    "Training ownership assigned to Ray Justin Ventura"
+  ],
+  "pending_deliverables": [
+    "Actual versioned reference aids with provenance and clinical review",
+    "Verified local consultation route",
+    "Bilingual/mobile/print learner access and uncertainty fallback verification",
+    "Separate immutable lesson/asset publication after deliverables are reviewed"
+  ],
+  "clinical_approval": null,
+  "reference_aids_approved": false,
+  "learner_content_published": false,
+  "feedback_closed": false,
+  "attribution_note": "Owner approval and assignment recorded from chat; this is not a statement that Ray Justin Ventura personally reviewed or signed off the clinical aids."
+}

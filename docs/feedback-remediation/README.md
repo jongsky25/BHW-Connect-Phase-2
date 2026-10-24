@@ -406,6 +406,18 @@ release refusal, idempotence and preservation of pinned snapshots/scores.
 Full repository and CI results are recorded in the release PR. Feedback statuses
 remain in_review and no notifications or replies are sent.
 
+## FB-2.5 owner approval and training assignment
+
+The owner approved the plant-aid inventory, implementation plan and proposed
+bilingual wording, and named **Ray Justin Ventura as training owner**. The
+[approval record](fb-2.5-owner-approval-2026-10-24.json) pins the reviewed files
+at commit `d43f6d59322e92e926c0c2c459eae1a0dfef843f` and preserves the exact
+instruction. The inventory and current review packet now record this assignment.
+Ray coordinates the actual reference aids, appropriate clinical review, local
+consultation route and bilingual/mobile/print access checks. This does not
+attribute clinical sign-off to him or publish an absent aid. The report remains
+open until the recorded access and local-route acceptance checks are met.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
@@ -417,7 +429,8 @@ remain in_review and no notifications or replies are sent.
 5. Retain the pending signed-in FB-2.2b check despite owner-directed report
    closure. Verify the approved FB-2.3 release in a signed-in new-enrollment
    journey and verify the approved FB-2.4 release. Continue FB-2.5 with the named
-   local owner and actual approved plant aids; then handle FB-2.6 context checks.
+   training owner Ray Justin Ventura to obtain the actual approved plant aids and
+   consultation route; then handle FB-2.6 context checks.
 
 The remaining increments keep their proposed assignments until reproduction or
 content review establishes an implementation-ready task. Mandatory question

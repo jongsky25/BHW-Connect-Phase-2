@@ -2,8 +2,8 @@
   "inventory_id": "FB-2.5-plant-aids-2026-10-24",
   "feedback_id": "5bedf6bc-fe03-4feb-a48e-1ddc17313492",
   "source_commit": "d8042e63fe264d73d83824c8a02a46d09dc948c4",
-  "status": "draft_local_protocol_and_access_review",
-  "clinical_training_owner": null,
+  "status": "owner_approved_plan_awaiting_reference_aids",
+  "clinical_training_owner": "Ray Justin Ventura",
   "clinical_approval": null,
   "published_card_access_verified": false,
   "local_offline_cards_checked": false,
@@ -594,5 +594,7 @@
     "repository_preview": "scripts/chapter2-preview.mjs includes participant cards, worksheet and observer sheet in printable facilitator/participant previews. This does not establish signed-in learner access to an approved botanical card.",
     "live_scope": "Read-only inspection of the two current published lesson asset arrays; no assertion about local printed aids or every external asset.",
     "next_acceptance": "Named local clinical/training owner approves versioned reference aids and consultation route; learner can reach the actual current aid in English/Filipino and print it; uncertainty causes non-use and consultation."
-  }
+  },
+  "owner_role": "training owner",
+  "owner_approval_record": "docs/feedback-remediation/fb-2.5-owner-approval-2026-10-24.json"
 }
