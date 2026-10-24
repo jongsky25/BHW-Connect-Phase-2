@@ -2,6 +2,7 @@
 import { useEffect, useId, useRef } from "react";
 import type { LessonAsset } from "@/lib/elearning/types";
 import type { LessonTranslationLanguage } from "@/lib/elearning/lesson-translation";
+import { AiVisualLabel } from './ai-visual-label';
 
 // One reference-lesson asset: a static image, or (INC-28 tier 2) a Remotion
 // clip whose poster is its final all-steps frame. A narrated clip (`videos`)
@@ -38,7 +39,7 @@ export function LessonAssetFigure({
         {/* Public static assets; text alternatives remain visible if an image fails. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={a.path} width={720} height={360} loading="lazy" alt={alt} className="h-auto w-full rounded-lg" />
-        <figcaption className="text-sm">{caption}</figcaption>
+        <figcaption className="text-sm">{caption}<AiVisualLabel path={a.path} contentHash={a.content_hash} en={en}/></figcaption>
       </figure>
     );
   return (
@@ -70,7 +71,7 @@ export function LessonAssetFigure({
           />
         )}
       </video>
-      <figcaption className="text-sm">{caption}</figcaption>
+      <figcaption className="text-sm">{caption}<AiVisualLabel path={a.path} contentHash={a.content_hash} video={video} en={en}/></figcaption>
       <details className="mt-1 text-sm">
         <summary className="cursor-pointer">{language === "hil" ? "Mga tikang bilang teksto" : language === "ceb" ? "Mga lakang isip teksto" : en ? "Steps as text" : "Mga hakbang bilang teksto"}</summary>
         {a.text_steps?.length ? <div id={textId}>

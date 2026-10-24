@@ -22,6 +22,7 @@ import type { LessonNarration } from "@/lib/elearning/reference-narration";
 import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import { ReferenceReadSection } from "./reference-read-section";
 import { LessonAssetFigure } from "./lesson-asset-figure";
+import { AiVisualLabel } from './ai-visual-label';
 import { FittedLessonPage } from "./fitted-lesson-page";
 import { storyQuestionUi, translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
 
@@ -615,7 +616,7 @@ export function ReferenceLessons(props: Props) {
             alt={storyArt.alt}
             priority
           />
-          <figcaption>{storyArt.caption}</figcaption>
+          <figcaption>{storyArt.caption}<AiVisualLabel path={storyArt.src} en={en}/></figcaption>
         </figure>}
         <div className={storyLayout ? "reference-story-copy" : undefined}>
         {storyVideoPrompt && <button type="button"

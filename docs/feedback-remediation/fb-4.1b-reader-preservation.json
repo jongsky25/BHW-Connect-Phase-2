@@ -1,0 +1,17 @@
+{
+  "purpose": "Bind visible provenance labels to an exact reader successor; preserve the complete prior source for historical guards without changing approval hashes.",
+  "base_commit": "dab3b01a98e45ae1a0a5be41a4e667a91d38eb54",
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "2b68d15eec8446d403f9f3434c334716c8ab178581a7668db921a83808737435",
+  "successor_sha256": "1d1e0bf5e49623a981a164b1dd25891f1ec63b712e130cff0c2559e9e116c681",
+  "replacements": [
+    {
+      "predecessor_utf8": "import { LessonAssetFigure } from \"./lesson-asset-figure\";",
+      "current_utf8": "import { LessonAssetFigure } from \"./lesson-asset-figure\";\nimport { AiVisualLabel } from './ai-visual-label';"
+    },
+    {
+      "predecessor_utf8": "<figcaption>{storyArt.caption}</figcaption>",
+      "current_utf8": "<figcaption>{storyArt.caption}<AiVisualLabel path={storyArt.src} en={en}/></figcaption>"
+    }
+  ]
+}

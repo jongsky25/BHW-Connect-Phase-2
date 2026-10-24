@@ -554,6 +554,18 @@ reader successor preserves the prior source for historical guards. All reports
 remain open; the review records each visual, story, disclosure or rendering
 follow-up. CI and production receipts are in the release PR.
 
+## FB-4.1b AI illustration disclosure
+
+The owner directed [visible visual-provenance labels](fb-4.1b-ai-visual-disclosure.md).
+English/Filipino captions now identify verified AI illustrations and distinguish
+animations that include them. A registry binds 155 exact asset identities to
+source evidence and complete media hashes; it avoids classifying unknown media,
+code-authored schematics, photographs or AI narration alone. The reported UHC
+scene is covered in Read, Slides and fullscreen. Existing text, media, controls,
+assessment and completion rules remain intact. Three earlier built-in scenes
+still need stronger provenance; the report remains open for that follow-up and
+live comments. The release PR records CI and production evidence.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.

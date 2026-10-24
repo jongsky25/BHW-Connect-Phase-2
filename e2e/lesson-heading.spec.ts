@@ -28,10 +28,10 @@ test("lesson headings and reading tools preserve context, readability, zoom and 
       values('${module}','${course}',0,'text','Paghahanda sa mahirap na sitwasyon','Preparing for difficult situations');
     insert into course_lessons(id,module_id,lesson_key,position,title_fil,title_en,objectives_fil,objectives_en)
       values('${lesson}','${module}','prepare-a-response',0,'Paghahanda ng malinaw na tugon sa isang mahirap na sitwasyon sa komunidad','Preparing a clear response to a difficult situation in the community',array['Pagsasanay'],array['Practice']);
-    insert into course_lesson_revisions(id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,created_by)
+    insert into course_lesson_revisions(id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by)
       values('${revision}','${lesson}','e2e-heading',repeat('0',64),
-        '[{"id":"intro","concept_ids":["practice-topic"],"heading_fil":"Pagsasanay","heading_en":"Practice","body_fil":"Halimbawa lamang.","body_en":"Fictional example only.","asset_ids":[],"takeaway_fil":"Maghanda.","takeaway_en":"Prepare.","check":null},{"id":"follow-up","concept_ids":["practice-topic"],"heading_fil":"Susunod na hakbang","heading_en":"Next step","body_fil":"Linawin ang susunod na hakbang.","body_en":"Clarify the next step.","asset_ids":[],"takeaway_fil":"Linawin.","takeaway_en":"Clarify.","check":null}]',
-        '[{"id":"slide-intro","concept_ids":["practice-topic"],"layout":"takeaway","heading_fil":"Pagsasanay","heading_en":"Practice","display_fil":"Maghanda.","display_en":"Prepare.","asset_ids":[],"check":null},{"id":"slide-follow-up","concept_ids":["practice-topic"],"layout":"takeaway","heading_fil":"Susunod na hakbang","heading_en":"Next step","display_fil":"Linawin.","display_en":"Clarify.","asset_ids":[],"check":null}]','[]','[]','${actor.id}');
+        '[{"id":"intro","concept_ids":["practice-topic"],"heading_fil":"Pagsasanay","heading_en":"Practice","body_fil":"Halimbawa lamang.","body_en":"Fictional example only.","asset_ids":["ai-illustration"],"takeaway_fil":"Maghanda.","takeaway_en":"Prepare.","check":null},{"id":"follow-up","concept_ids":["practice-topic"],"heading_fil":"Susunod na hakbang","heading_en":"Next step","body_fil":"Linawin ang susunod na hakbang.","body_en":"Clarify the next step.","asset_ids":["ai-illustration"],"takeaway_fil":"Linawin.","takeaway_en":"Clarify.","check":null}]',
+        '[{"id":"slide-intro","concept_ids":["practice-topic"],"layout":"takeaway","heading_fil":"Pagsasanay","heading_en":"Practice","display_fil":"Maghanda.","display_en":"Prepare.","asset_ids":["ai-illustration"],"check":null},{"id":"slide-follow-up","concept_ids":["practice-topic"],"layout":"takeaway","heading_fil":"Susunod na hakbang","heading_en":"Next step","display_fil":"Linawin.","display_en":"Clarify.","asset_ids":["ai-illustration"],"check":null}]','[]','[]','[{"id":"ai-illustration","path":"/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png","content_hash":"7e4e351416282cb78a0d8b17c80fba7a4367291f9d46f2586baaa90cd66dcaea","alt_en":"Fictional health discussion","alt_fil":"Kathang-isip na talakayan","caption_en":"Fictional example","caption_fil":"Kathang-isip na halimbawa","provenance":"Original AI-generated illustration; disposable fixture.","review_status":"approved"}]','${actor.id}');
     update course_lessons set published_revision_id='${revision}' where id='${lesson}';
     insert into assessor_exam_attempts(assessor_user_id,chapter_id,curriculum_version,exam_id,phase,status,question_set_hash,question_count,score_percent,passed,answers,submitted_at)
       values('${actor.id}','${chapter}','2026-09-28.1','chapter-2:pretest','pretest','submitted',repeat('0',32),1,0,false,'[]',now());
@@ -60,6 +60,8 @@ test("lesson headings and reading tools preserve context, readability, zoom and 
         const previous = inlineReader.getByRole("button", { name: locale === "en" ? "Previous" : "Nakaraan", exact: true });
         if (await previous.isEnabled()) await previous.click();
         await expect(inlineReader.getByRole("heading", { name: locale === "en" ? "Practice" : "Pagsasanay", exact: true })).toBeVisible();
+        const aiLabel = locale === "en" ? "AI-generated illustration" : "Ilustrasyong ginawa gamit ang AI";
+        await expect(inlineReader.getByText(aiLabel, {exact:true})).toBeVisible();
         await page.getByText(locale === "en" ? "Reading tools" : "Mga tulong sa pagbasa", { exact: true }).click();
         const comfortable = page.getByRole("button", { name: locale === "en" ? "Comfortable" : "Maluwag", exact: true });
         const standard = page.getByRole("button", { name: locale === "en" ? "Standard" : "Karaniwan", exact: true });
@@ -88,13 +90,14 @@ test("lesson headings and reading tools preserve context, readability, zoom and 
               expect(layout.titleScroll).toBeLessThanOrEqual(layout.titleWidth);
             }
           }
-          expect((await new AxeBuilder({ page }).include("[data-lesson-heading]").include('aside[aria-labelledby="lesson-reading-tools-heading"]').analyze()).violations).toEqual([]);
+          expect((await new AxeBuilder({ page }).include("[data-lesson-heading]").include('aside[aria-labelledby="lesson-reading-tools-heading"]').include('figcaption').analyze()).violations).toEqual([]);
         }
         // Chromium cannot resize its window while native fullscreen is active.
         await page.setViewportSize({ width: 320, height: 844 });
         await page.getByRole("button", { name: locale === "en" ? "Full screen" : "Buong screen", exact: true }).click();
         const dialog = page.getByRole("dialog", { name: locale === "en" ? "Full-screen lesson" : "Buong screen na aralin", exact: true });
         await expect(dialog).toBeVisible();
+        await expect(dialog.getByText(aiLabel, {exact:true})).toBeVisible();
         const zoomIn = dialog.getByRole("button", { name: locale === "en" ? "Zoom in" : "Lakihan", exact: true });
         await expect(zoomIn).toContainText(locale === "en" ? "Zoom in" : "Lakihan");
         expect(await zoomIn.locator("..").evaluate(element => element.scrollWidth <= element.clientWidth)).toBe(true);
@@ -118,6 +121,7 @@ test("lesson headings and reading tools preserve context, readability, zoom and 
         await page.getByRole("group", { name: locale === "en" ? "Content mode" : "Uri ng nilalaman", exact: true })
           .getByRole("button", { name: "Slides", exact: true }).click();
         await expect(page.locator('[data-reading-layout] > section > article[data-layout="takeaway"]')).toHaveCSS("max-inline-size", "none");
+        await expect(inlineReader.getByText(aiLabel, {exact:true})).toBeVisible();
         await expect(page.locator('[data-reading-layout] > section > article').getByRole("heading", { name: sectionHeading, exact: true })).toBeVisible();
         await page.getByRole("group", { name: locale === "en" ? "Content mode" : "Uri ng nilalaman", exact: true })
           .getByRole("button", { name: locale === "en" ? "Read" : "Basahin", exact: true }).click();
