@@ -27,6 +27,8 @@ import { StoryCaseContext } from './story-case-context';
 import { communicationStorySupplement } from '@/lib/elearning/communication-story-context';
 import { RelationshipLearningVisual } from './relationship-learning-visual';
 import { relationshipLearningVisual } from '@/lib/elearning/relationship-learning-visuals';
+import {isHepoPresentation, hepoSlideDisplay} from '@/lib/elearning/hepo-presentation';
+import {HepoPresentationGuide} from './hepo-presentation-guide';
 import { FittedLessonPage } from "./fitted-lesson-page";
 import { storyQuestionUi, translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
 
@@ -279,7 +281,8 @@ export function ReferenceLessons(props: Props) {
       : lesson?.lesson_key === "bhs-resources"
         ? {src: "/training/bhw-1-3/mimi-resource-use-86ce5a9071e0.png", alt: ui("Tinatalakay ni Mimi ang resource concern sa namamahala.", "Mimi discusses the resource concern with the supervisor."), caption: ui("Obserbasyon · Tuntunin · Pakikipag-ugnayan", "Observation · Rule · Coordination")}
       : null;
-  const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
+  const hepoPresentation = !translation && isHepoPresentation(lesson);
+  const storyArt = hepoPresentation && mode === "slides" ? null : sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
   const items = lesson
     ? mode === "read"
@@ -377,7 +380,7 @@ export function ReferenceLessons(props: Props) {
     lesson && item
       ? item.asset_ids.map((id) => {
           const a = lesson.revision.assets.find((a) => a.id === id);
-          return a ? <LessonAssetFigure key={a.id} asset={a} en={en} language={translation?.language} /> : null;
+          return a ? <LessonAssetFigure key={a.id} asset={a} en={en} language={translation?.language} compact={hepoPresentation && mode === "slides"} /> : null;
         })
       : null;
   const prioritizationTable = prioritizationRevision && (item?.id === "worked-scores" || item?.id === "slide-worked-scores") ? (
@@ -529,7 +532,7 @@ export function ReferenceLessons(props: Props) {
     move(target, mode, false);
   }
   function openReader() {
-    if ((lesson?.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up")) || lesson?.lesson_key === "bhw-accreditation" || lesson?.lesson_key === "bhw-eligibility" || lesson?.lesson_key === "bhw-benefits" || lesson?.lesson_key === "bhw-legal-role" || lesson?.lesson_key === "bhs-support-environment" || lesson?.lesson_key === "bhs-resources" || lesson?.lesson_key === "bhs-improvement") {
+    if (hepoPresentation || (lesson?.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up")) || lesson?.lesson_key === "bhw-accreditation" || lesson?.lesson_key === "bhw-eligibility" || lesson?.lesson_key === "bhw-benefits" || lesson?.lesson_key === "bhw-legal-role" || lesson?.lesson_key === "bhs-support-environment" || lesson?.lesson_key === "bhs-resources" || lesson?.lesson_key === "bhs-improvement") {
       setOrientation(window.matchMedia?.("(orientation: landscape)")?.matches ? "landscape" : "portrait");
     }
     setReaderOpen(true);
@@ -624,8 +627,9 @@ export function ReferenceLessons(props: Props) {
           <figcaption>{storyArt.caption}<AiVisualLabel path={storyArt.src} en={en}/></figcaption>
         </figure>}
         <div className={storyLayout ? "reference-story-copy" : undefined}>
-        {storyVideoPrompt && <button type="button"
-          className="mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold text-primary-text hover:bg-primary/20"
+        {hepoPresentation && <HepoPresentationGuide position={item.id} index={index} count={items.length} slides={mode === "slides"} en={en}/>}
+        {storyVideoPrompt && !(hepoPresentation && mode === "slides") && <button type="button"
+          className={`mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold ${hepoPresentation ? "text-ink" : "text-primary-text"} hover:bg-primary/20`}
           onClick={() => setVideoSelected(true)}>
           {ui("▶ Panoorin ang animadong kuwento na may salaysay", "▶ Watch the animated narrated story")}
         </button>}
@@ -651,7 +655,7 @@ export function ReferenceLessons(props: Props) {
                   : "my-5 flex flex-col gap-3"
               }
             >
-              {(en ? item.display_en : item.display_fil)
+              {(hepoPresentation ? hepoSlideDisplay(item.id, en ? item.display_en : item.display_fil, en) : en ? item.display_en : item.display_fil)
                 .split("\n")
                 .filter(Boolean)
                 .map((line, i) => (
@@ -1118,7 +1122,7 @@ export function ReferenceLessons(props: Props) {
         <div ref={fullscreenTarget} className="relative h-dvh w-dvw overflow-hidden bg-canvas text-ink">
           <div data-orientation={orientation} className="lesson-reader-surface flex h-dvh flex-col overflow-hidden bg-canvas text-ink">
           <div className="lesson-reader-toolbar grid grid-cols-[1fr_auto] items-center gap-2 border-b border-ink/15 px-3 py-2">
-            <div className="col-start-1 row-start-1 flex gap-2" role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
+            <div className={hepoPresentation ? "col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2" : "col-start-1 row-start-1 flex gap-2"} role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
               {(["read", "slides"] as const).map((m) => (
                 <button key={m} type="button" aria-pressed={!videoSelected && mode === m} onClick={() => changeMode(m)}
                   className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">

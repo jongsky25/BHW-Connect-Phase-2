@@ -624,3 +624,11 @@ symbol/bar clarity gap, six bilingual labeled replacements, the retained fiction
 scene and its background chart, and the private screenshot access boundary.
 Assessment and historical lesson/media sources remain intact; the report stays
 open for live comments.
+
+## FB-4.1g — BHW and HEPO slide presentation
+
+[Review and delivery](fb-4.1g-hepo-presentation.md) records the supported Slides
+clarity gap, authored presentation layouts/assets, section focus, viewing guidance
+and Filipino clarification while retaining Listen, original media and assessment.
+Existing concrete story examples were verified; the photograph request is
+excluded as already addressed according to the owner.

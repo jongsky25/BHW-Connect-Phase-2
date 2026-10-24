@@ -20,6 +20,7 @@ export function LessonAssetFigure({
   language,
   onEnded,
   transcript,
+  compact = false,
 }: {
   asset: LessonAsset;
   en: boolean;
@@ -27,6 +28,7 @@ export function LessonAssetFigure({
   // Optional callback for a caller that needs to react when playback ends.
   onEnded?: () => void;
   transcript?: {title: string; paragraphs: string[]};
+  compact?: boolean;
 }) {
   const textId = useId();
   const alt = en ? a.alt_en : a.alt_fil;
@@ -45,7 +47,7 @@ export function LessonAssetFigure({
       <figure className="my-4">
         {/* Public static assets; text alternatives remain visible if an image fails. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={a.path} width={720} height={360} loading="lazy" alt={alt} className="h-auto w-full rounded-lg" />
+        <img src={a.path} width={720} height={360} loading="lazy" alt={alt} className={compact ? "h-auto max-h-48 w-full rounded-lg object-contain" : "h-auto w-full rounded-lg"} />
         <figcaption className="text-sm">{caption}<AiVisualLabel path={a.path} contentHash={a.content_hash} en={en}/>{scenePurpose && <span className="mt-2 block" data-local-partner-scene-purpose>{scenePurpose}</span>}</figcaption>
       </figure>
     );
