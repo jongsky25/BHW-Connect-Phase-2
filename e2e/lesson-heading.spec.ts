@@ -10,7 +10,7 @@ function localSql(sql: string) {
   return execFileSync("docker", ["exec", "-i", "supabase_db_bhw-connect-phase-2", "psql", "-U", "postgres", "-d", "postgres", "-v", "ON_ERROR_STOP=1", "-At"], { input: sql, encoding: "utf8", timeout: 15_000 });
 }
 
-test("lesson headings retain chapter context and wrap on phones in both study routes", async ({ page, request }) => {
+test("lesson headings and reading tools preserve context, readability and zoom controls", async ({ page, request }) => {
   test.setTimeout(120_000);
   const admin = await getAccessToken(request, STABLE_CITY_ADMIN.username, STABLE_CITY_ADMIN.password);
   const assessor = await createThrowawayAssessor(request, admin, "00000000-0000-0000-0000-000000000004");
@@ -54,6 +54,19 @@ test("lesson headings retain chapter context and wrap on phones in both study ro
         await expect(heading.getByRole("link").first()).toHaveAttribute("href", base);
         await expect(heading.getByRole("link").nth(1)).toHaveAttribute("href", `${base}/${module}`);
         await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
+        await page.getByText(locale === "en" ? "Reading tools" : "Mga tulong sa pagbasa", { exact: true }).click();
+        const comfortable = page.getByRole("button", { name: locale === "en" ? "Comfortable" : "Maluwag", exact: true });
+        const standard = page.getByRole("button", { name: locale === "en" ? "Standard" : "Karaniwan", exact: true });
+        const article = page.locator('[data-reading-layout] > section > article[data-layout="read"]');
+        await page.setViewportSize({ width: 1280, height: 844 });
+        await expect(comfortable).toHaveAttribute("aria-pressed", "true");
+        const originalText = await article.textContent();
+        const comfortableWidth = (await article.boundingBox())!.width;
+        await standard.click();
+        expect((await article.boundingBox())!.width).toBeGreaterThan(comfortableWidth);
+        await comfortable.click();
+        await expect.poll(() => article.textContent()).toBe(originalText);
+        await page.getByText(locale === "en" ? "How to use the lesson controls" : "Paano gamitin ang mga kontrol ng aralin", { exact: true }).click();
         for (const theme of ["light", "dark"]) {
           for (const scale of ["md", "xl"]) {
             await page.locator("html").evaluate((html, attrs) => {
@@ -69,8 +82,28 @@ test("lesson headings retain chapter context and wrap on phones in both study ro
               expect(layout.titleScroll).toBeLessThanOrEqual(layout.titleWidth);
             }
           }
-          expect((await new AxeBuilder({ page }).include("[data-lesson-heading]").analyze()).violations).toEqual([]);
+          expect((await new AxeBuilder({ page }).include("[data-lesson-heading]").include('aside[aria-labelledby="lesson-reading-tools-heading"]').analyze()).violations).toEqual([]);
         }
+        // Chromium cannot resize its window while native fullscreen is active.
+        await page.setViewportSize({ width: 320, height: 844 });
+        await page.getByRole("button", { name: locale === "en" ? "Full screen" : "Buong screen", exact: true }).click();
+        const dialog = page.getByRole("dialog", { name: locale === "en" ? "Full-screen lesson" : "Buong screen na aralin", exact: true });
+        await expect(dialog).toBeVisible();
+        const zoomIn = dialog.getByRole("button", { name: locale === "en" ? "Zoom in" : "Lakihan", exact: true });
+        await expect(zoomIn).toContainText(locale === "en" ? "Zoom in" : "Lakihan");
+        expect(await zoomIn.locator("..").evaluate(element => element.scrollWidth <= element.clientWidth)).toBe(true);
+        await expect(dialog.locator('article[data-layout="read"]')).toHaveCSS("max-inline-size", "none");
+        await zoomIn.click();
+        await expect(dialog.locator("output")).toHaveText("1.25×");
+        await dialog.getByRole("button", { name: locale === "en" ? "Fit to screen" : "I-akma sa screen", exact: true }).click();
+        await expect(dialog.locator("output")).toHaveText("1×");
+        expect((await new AxeBuilder({ page }).include("dialog[open]").analyze()).violations).toEqual([]);
+        await dialog.getByRole("button", { name: locale === "en" ? "Close" : "Isara", exact: true }).click();
+        await expect(dialog).not.toBeVisible();
+        await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
+        await page.getByRole("group", { name: locale === "en" ? "Content mode" : "Uri ng nilalaman", exact: true })
+          .getByRole("button", { name: "Slides", exact: true }).click();
+        await expect(page.locator('[data-reading-layout] > section > article[data-layout="takeaway"]')).toHaveCSS("max-inline-size", "none");
       }
     }
     await page.goto("/home");

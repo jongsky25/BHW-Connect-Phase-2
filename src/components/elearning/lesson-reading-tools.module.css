@@ -1,0 +1,18 @@
+/* Only the inline Read article, a direct child of the existing reader section.
+   Full-screen pages, illustrated presenters, Slides and saved content stay outside this selector. */
+.comfortable > section > article[data-layout="read"]:not([class~="reference-story"]) {
+  inline-size: 100%;
+  max-inline-size: 68ch;
+  margin-inline: auto;
+  border-inline-start: 4px solid var(--color-primary);
+  background: var(--color-canvas);
+  overflow-wrap: anywhere;
+}
+
+.comfortable > section > article[data-layout="read"]:not([class~="reference-story"]) p {
+  line-height: 1.75;
+}
+
+.comfortable > section > article[data-layout="read"]:not([class~="reference-story"]) p + p {
+  margin-block-start: 0.75rem;
+}

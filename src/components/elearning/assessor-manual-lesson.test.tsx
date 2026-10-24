@@ -11,6 +11,16 @@ beforeEach(()=>{state.rpc.mockReset().mockResolvedValue({error:null});state.refr
 afterEach(()=>{cleanup();vi.useRealTimers();});
 const reader=(assessorChapterId?:string,readOnly=false)=><ManualLesson data={data} modules={[]} locale="en" lessonId="lesson" baseHref="/study" readOnly={readOnly} lessonNumber={1} lessonCount={42} assessorChapterId={assessorChapterId}/>;
 describe('assessor study persistence in existing reader',()=>{
+  it('changes layout/help without calling resume or completion APIs',()=>{
+    render(reader('chapter'));state.rpc.mockClear();
+    fireEvent.click(screen.getByText('Reading tools'));
+    fireEvent.click(screen.getByRole('button',{name:'Standard'}));
+    fireEvent.click(screen.getByRole('button',{name:'Comfortable'}));
+    fireEvent.click(screen.getByText('How to use the lesson controls'));
+    expect(state.rpc).not.toHaveBeenCalled();expect(state.refresh).not.toHaveBeenCalled();
+    expect(screen.getByText('Short content')).toBeInTheDocument();
+  });
+
   it('saves debounced positions only to the assessor chapter API',async()=>{
     vi.useFakeTimers({shouldAdvanceTime:true});render(reader('chapter'));
     fireEvent.click(screen.getByRole('button',{name:'Next'}));
