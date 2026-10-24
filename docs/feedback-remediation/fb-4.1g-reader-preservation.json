@@ -1,0 +1,54 @@
+{
+  "purpose": "Bind the HEPO authored slide presentation and viewing guidance while reconstructing the complete approved shared reader.",
+  "base_commit": "c9926025e154afabff31b476dbbe9f36a0a4abfb",
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "4c47a36c8e6755938988454edf9513bc6c867c2b42cb70874ad228ca49ff19b1",
+  "successor_sha256": "4db3e166ed7d2382674abd1ac3c9e578c9c5ca3936c2cb9d9c104d0367e24bb0",
+  "replacements": [
+    {
+      "predecessor_utf8": "return a ? <LessonAssetFigure key={a.id} asset={a} en={en} language={translation?.language} /> : null;",
+      "current_utf8": "return a ? <LessonAssetFigure key={a.id} asset={a} en={en} language={translation?.language} compact={hepoPresentation && mode === \"slides\"} /> : null;",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "    if ((lesson?.lesson_key === \"bhw-follow-up\"",
+      "current_utf8": "    if (hepoPresentation || (lesson?.lesson_key === \"bhw-follow-up\"",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "            <div className=\"col-start-1 row-start-1 flex gap-2\" role=\"group\"",
+      "current_utf8": "            <div className={hepoPresentation ? \"col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2\" : \"col-start-1 row-start-1 flex gap-2\"} role=\"group\"",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "          className=\"mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold text-primary-text hover:bg-primary/20\"",
+      "current_utf8": "          className={`mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold ${hepoPresentation ? \"text-ink\" : \"text-primary-text\"} hover:bg-primary/20`}",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "{storyVideoPrompt && <button type=\"button\"",
+      "current_utf8": "{storyVideoPrompt && !(hepoPresentation && mode === \"slides\") && <button type=\"button\"",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "import { relationshipLearningVisual } from '@/lib/elearning/relationship-learning-visuals';",
+      "current_utf8": "import { relationshipLearningVisual } from '@/lib/elearning/relationship-learning-visuals';\nimport {isHepoPresentation, hepoSlideDisplay} from '@/lib/elearning/hepo-presentation';\nimport {HepoPresentationGuide} from './hepo-presentation-guide';",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "  const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;",
+      "current_utf8": "  const hepoPresentation = !translation && isHepoPresentation(lesson);\n  const storyArt = hepoPresentation && mode === \"slides\" ? null : sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "        <div className={storyLayout ? \"reference-story-copy\" : undefined}>",
+      "current_utf8": "        <div className={storyLayout ? \"reference-story-copy\" : undefined}>\n        {hepoPresentation && <HepoPresentationGuide position={item.id} index={index} count={items.length} slides={mode === \"slides\"} en={en}/>}",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "              {(en ? item.display_en : item.display_fil)\n                .split(\"\\n\")",
+      "current_utf8": "              {(hepoPresentation ? hepoSlideDisplay(item.id, en ? item.display_en : item.display_fil, en) : en ? item.display_en : item.display_fil)\n                .split(\"\\n\")",
+      "count": 1
+    }
+  ]
+}

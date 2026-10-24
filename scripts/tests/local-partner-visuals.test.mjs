@@ -1,5 +1,6 @@
 // @vitest-environment node
 import fs from 'node:fs';
+import {beforeFeedbackHepoPresentation} from '../lib/feedback-hepo-preservation.mjs';
 import {execFileSync} from 'node:child_process';
 import {expect,it} from 'vitest';
 import {loadReferenceModule,contentHash} from '../lib/reference-content.mjs';
@@ -19,7 +20,7 @@ it('binds the six replacements to reviewed assets and their approved bilingual t
  }
  const scene=lesson.revision.assets.find(a=>a.id===d.scene.id);expect(d.scene.path).toBe(scene.path);expect(d.scene.content_hash).toBe(scene.content_hash);
 });
-it('retains the complete shared reader and approved lesson/media sources unchanged',()=>{
- const path='src/components/elearning/reference-lessons.tsx';expect(fs.readFileSync(path)).toEqual(execFileSync('git',['show','f2016a228c9d7b65ce58e9c65cc853c5bd00a4d3:'+path]));
+it('retains the exact predecessor reader and unchanged approved lesson/media sources',()=>{
+ const path='src/components/elearning/reference-lessons.tsx';expect(beforeFeedbackHepoPresentation(path)).toEqual(execFileSync('git',['show','f2016a228c9d7b65ce58e9c65cc853c5bd00a4d3:'+path]));
  expect(execFileSync('git',['diff','f2016a228c9d7b65ce58e9c65cc853c5bd00a4d3','--','content/training/day1-basic-competencies/modules/05-bhw-at-barangay/lessons/bhw-local-partners','public/training/bhw-1-5'])).toHaveLength(0);
 });

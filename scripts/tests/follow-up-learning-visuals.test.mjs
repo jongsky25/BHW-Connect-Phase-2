@@ -1,5 +1,6 @@
 // @vitest-environment node
 import fs from 'node:fs';
+import {beforeFeedbackHepoPresentation} from '../lib/feedback-hepo-preservation.mjs';
 import {execFileSync} from 'node:child_process';
 import {expect,it} from 'vitest';
 import {loadReferenceModule,contentHash} from '../lib/reference-content.mjs';
@@ -18,7 +19,7 @@ it('traces every diagram to approved Read and Slides without inferring a timelin
   else {expect(v.caption).toContain(body.split('\n\n')[0]);expect(v.caption).toContain(lang==='en'?'Use no private details or patient record.':'Walang pribadong detalye o patient record.');}
  }
 });
-it('leaves the complete approved shared reader unchanged',()=>{
+it('retains the exact approved shared reader as a historical predecessor',()=>{
  const path='src/components/elearning/reference-lessons.tsx';
- expect(fs.readFileSync(path)).toEqual(execFileSync('git',['show','dc7a8d90ba64134de3623e8778bbc2545a650917:'+path]));
+ expect(beforeFeedbackHepoPresentation(path)).toEqual(execFileSync('git',['show','dc7a8d90ba64134de3623e8778bbc2545a650917:'+path]));
 });
