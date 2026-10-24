@@ -1,6 +1,6 @@
 import * as Sentry from "@sentry/nextjs";
 import { getLocale, getTranslations } from "next-intl/server";
-import Link from "next/link";
+import { DestinationLink } from "@/components/nav/destination-link";
 import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
 import { MyTrainingCard } from "@/components/progress/my-training-card";
@@ -23,6 +23,7 @@ export default async function HomePage() {
   const role = viewer.role;
 
   const t = await getTranslations("authHome");
+  const tDest = await getTranslations("destinations");
   const flags = await getRequestFeatureFlags();
   const locale = (await getLocale()) === "en" ? "en" : "fil";
   const navItems = getNavItems({ role, flags });
@@ -55,22 +56,19 @@ export default async function HomePage() {
         <MyTrainingCard key={progress.programId} progress={progress} locale={locale} />
       ))}
 
-      <div className="flex flex-wrap gap-3">
-        {navItems.map((item) => (
-          <Link prefetch={false}
-            key={item.id}
-            href={item.href}
-            className={
-              item.variant === "primary"
-                ? "rounded-md bg-primary px-6 py-3 font-medium text-on-primary"
-                : "rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-            }
-          >
-            {t(item.labelKey)}
-          </Link>
-        ))}
-        <SignOutButton />
-      </div>
+      <nav aria-labelledby="home-destinations-heading" className="w-full space-y-3">
+        <h2 id="home-destinations-heading" className="text-xl font-semibold">{tDest("heading")}</h2>
+        <p className="text-ink/80">{tDest("intro")}</p>
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {navItems.map((item) => <li key={item.id} className="min-w-0">
+            <DestinationLink href={item.href} label={t(item.labelKey)} description={tDest(item.id)} idPrefix={`home-nav-${item.id}`}
+              className={`block h-full min-h-11 break-words rounded-lg px-4 py-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                item.variant === "primary" ? "bg-primary text-on-primary" : "border border-ink/20 text-ink hover:bg-ink/5"
+              }`} />
+          </li>)}
+        </ul>
+      </nav>
+      <SignOutButton />
     </div>
   );
 }

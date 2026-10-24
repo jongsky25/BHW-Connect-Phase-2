@@ -136,6 +136,7 @@ describe("SiteHeader navigation", () => {
     // the flag-gated items inside it should be missing.
     await user.click(screen.getByRole("button", { name: "More" }));
     expect(screen.getByRole("link", { name: "Settings" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Settings" })).toHaveAccessibleDescription(en.destinations.settings);
     expect(screen.queryByRole("link", { name: "Announcements" })).not.toBeInTheDocument();
     expect(screen.queryByRole("link", { name: "Admin console" })).not.toBeInTheDocument();
   });

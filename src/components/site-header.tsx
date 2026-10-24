@@ -26,6 +26,7 @@ type Props = {
 export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnreadCount, flags, initialA11y }: Props) {
   const t = useTranslations("common");
   const tNav = useTranslations("authHome");
+  const tDest = useTranslations("destinations");
 
   // Signed-out visitors never see the app's feature nav — only the app name
   // and the language toggle, unchanged from before this increment.
@@ -49,6 +50,7 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
               account={account}
               items={navItems}
               labels={Object.fromEntries(navItems.map((item) => [item.id, tNav(item.labelKey)]))}
+              descriptions={Object.fromEntries(navItems.map((item) => [item.id, tDest(item.id)]))}
               initialA11y={initialA11y}
             />
           ) : null}
@@ -61,6 +63,7 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
                 <MoreMenu
                   items={moreItems}
                   labels={Object.fromEntries(moreItems.map((item) => [item.id, tNav(item.labelKey)]))}
+                  descriptions={Object.fromEntries(moreItems.map((item) => [item.id, tDest(item.id)]))}
                   triggerLabel={t("moreLabel")}
                 />
               ) : null}

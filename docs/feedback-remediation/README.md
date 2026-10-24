@@ -505,6 +505,18 @@ checked on disposable fixtures. No learning content, grades or policy changes;
 linked reports remain open for live comments. The PR records final CI and
 production verification.
 
+## FB-3.3c destination descriptions and reference collections
+
+The owner directed the [navigation and KB-label slice](fb-3.3c-navigation-and-kb-collections.md).
+Home cards and expanded menus now explain each destination, using the same
+existing role/flag-filtered item list and concise accessible names. KB browse
+and category pages show exact source-collection context: Reference Manual
+Chapter 1 modules, separate HHP+/PhilPEN modules, PhilHealth guidance and
+additional reference topics. General topics receive no invented course sequence.
+Stored category names, content, URLs, visibility and lesson/progress rules remain
+intact. Both linked reports remain open for live comments; CI and exact production
+verification are recorded in the PR.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.

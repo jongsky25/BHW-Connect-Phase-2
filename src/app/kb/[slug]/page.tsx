@@ -1,3 +1,4 @@
+import { kbTopicIdentity, kbTopicTitle } from "@/lib/kb/collections";
 import { getLocale, getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
 import { ArticleViewer } from "@/components/kb/article-viewer";
@@ -97,11 +98,12 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
           items={[
             { label: tCrumbs("home"), href: "/home" },
             { label: t("browseHeading"), href: "/kb" },
-            { label: locale === "en" ? category.name_en : category.name_fil },
+            { label: kbTopicTitle(locale === "en" ? category.name_en : category.name_fil) },
           ]}
         />
-        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-          {locale === "en" ? category.name_en : category.name_fil}
+        <p className="mt-3 text-sm font-medium">{kbTopicIdentity(category.slug, locale)}</p>
+        <h1 className="mt-2 break-words text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+          {kbTopicTitle(locale === "en" ? category.name_en : category.name_fil)}
         </h1>
       </div>
 
