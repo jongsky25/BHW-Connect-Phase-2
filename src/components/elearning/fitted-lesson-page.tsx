@@ -94,17 +94,17 @@ export function FittedLessonPage({
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
-      <div className="flex shrink-0 items-center justify-center gap-2 border-b border-ink/15 px-2 py-1">
+      <div className="flex shrink-0 flex-wrap items-center justify-center gap-2 border-b border-ink/15 px-2 py-1">
         <button type="button" aria-label={en ? "Zoom out" : "Liitan"} disabled={zoom <= 1}
           onClick={() => changeZoom(Math.max(1, zoom - 0.25))}
-          className="rounded border border-ink/25 px-3 py-1 disabled:opacity-40">−</button>
+          className="min-h-11 min-w-11 rounded border border-ink/25 px-3 py-2 text-sm disabled:opacity-40"><span aria-hidden="true">− </span>{en ? "Zoom out" : "Liitan"}</button>
         <output aria-live="polite" className="min-w-14 text-center text-sm">{zoom}×</output>
         <button type="button" aria-label={en ? "Zoom in" : "Lakihan"} disabled={zoom >= 3}
           onClick={() => changeZoom(Math.min(3, zoom + 0.25))}
-          className="rounded border border-ink/25 px-3 py-1 disabled:opacity-40">+</button>
+          className="min-h-11 min-w-11 rounded border border-ink/25 px-3 py-2 text-sm disabled:opacity-40"><span aria-hidden="true">+ </span>{en ? "Zoom in" : "Lakihan"}</button>
         <button type="button" onClick={() => changeZoom(1)}
-          className="rounded border border-ink/25 px-3 py-1 text-sm">
-          {en ? "Fit" : "I-akma"}
+          className="min-h-11 rounded border border-ink/25 px-3 py-2 text-sm">
+          {en ? "Fit to screen" : "I-akma sa screen"}
         </button>
       </div>
       <div ref={viewport} data-reader-viewport className={`min-h-0 flex-1 px-3 py-2 sm:px-6 ${zoom > 1 ? "overflow-auto" : "flex flex-col justify-center overflow-hidden"}`}>

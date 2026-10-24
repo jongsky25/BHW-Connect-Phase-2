@@ -89,7 +89,7 @@ describe('route lesson viewer',()=>{
       expect(within(dialog).getByRole('img',{name:/BHW Riza talks with residents/})).toBeInTheDocument();
       expect(within(dialog).getByText('Short content')).toBeInTheDocument();
       expect(dialog.querySelector('[data-reader-viewport]')).not.toBeInTheDocument();
-      expect(within(dialog).queryByRole('button',{name:'Fit'})).not.toBeInTheDocument();
+      expect(within(dialog).queryByRole('button',{name:'Fit to screen'})).not.toBeInTheDocument();
       fireEvent.click(within(dialog).getByRole('button',{name:'Next'}));
       expect(within(dialog).getByRole('heading',{name:'second'})).toBeInTheDocument();
       fireEvent.click(within(dialog).getByRole('button',{name:'Slides'}));
@@ -201,7 +201,7 @@ describe('route lesson viewer',()=>{
       expect(within(dialog).getByRole('button',{name:'Zoom out'})).toBeDisabled();
       fireEvent.click(within(dialog).getByRole('button',{name:'Zoom in'}));
       expect(within(dialog).getByText('1.25×')).toBeInTheDocument();
-      fireEvent.click(within(dialog).getByRole('button',{name:'Fit'}));
+      fireEvent.click(within(dialog).getByRole('button',{name:'Fit to screen'}));
       expect(within(dialog).getByText('1×')).toBeInTheDocument();
       fireEvent.click(within(dialog).getByRole('button',{name:'Landscape'}));
       expect(within(dialog).getByRole('button',{name:'Landscape'})).toHaveAttribute('aria-pressed','true');

@@ -528,6 +528,18 @@ edit the preference. Database, UI and fresh-session browser tests are recorded
 in the PR with migration integrity and exact production receipts. The linked
 report remains open for live comments.
 
+## FB-3.3e reading tools and labeled zoom controls
+
+The owner directed the [lesson-control/readability slice](fb-3.3e-reading-tools.md).
+Manual lesson pages now offer a bilingual local Comfortable/Standard layout and
+collapsed help for existing controls. Regular inline Read pages gain a narrower
+column and more paragraph space; authored story layouts, Slides and full-screen
+fitting retain their existing presentation. The fit toolbar displays Zoom out,
+Zoom in and Fit to screen with wrapping touch targets. Reader identity, answer
+state, content, narration, gates and progress APIs remain intact. The three
+reports stay open; broad illustration/subchapter-copy requests remain separate.
+The PR records CI and exact production evidence.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
