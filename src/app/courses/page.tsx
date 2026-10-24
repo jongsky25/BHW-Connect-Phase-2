@@ -69,6 +69,11 @@ export default async function CoursesPage() {
         <span className="mt-1 block text-sm text-ink/70">{locale === "en" ? "Review ten bilingual cards, try a practice case, and give feedback." : "Suriin ang sampung bilingual card, subukan ang practice case, at magbigay ng puna."}</span>
       </Link>
 
+      <Link prefetch={false} href="/content-clarifications" className="rounded-lg border border-secondary/30 bg-secondary/5 p-4 hover:bg-secondary/10">
+        <span className="font-semibold">{locale === "en" ? "Content clarifications · pilot" : "Mga paglilinaw sa aralin · pilot"}</span>
+        <span className="mt-1 block text-sm text-ink/70">{locale === "en" ? "Explore BHW roles, problem analysis, networks/referrals and benefits. Try four practice cases and comment." : "Linawin ang papel ng BHW, pagsusuri ng problema, network/referral at benepisyo. Subukan ang apat na practice case at magkomento."}</span>
+      </Link>
+
       {rows.length === 0 && !programs?.length ? (
         <EmptyState message={t("empty")} />
       ) : (

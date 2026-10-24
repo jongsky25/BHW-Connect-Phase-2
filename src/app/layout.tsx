@@ -10,6 +10,7 @@ import { PreviewProvider } from "@/components/preview/preview-provider";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { SpotFeedbackWidget } from "@/components/spot-feedback/spot-feedback-widget";
+import { LessonClarificationLink } from "@/components/elearning/lesson-clarification-link";
 import { PersonaBar } from "@/components/super-admin/persona-bar";
 import { SUPER_ADMIN_PERSONAS_COOKIE } from "@/lib/super-admin/cookies";
 import { parsePersonaSnapshot } from "@/lib/super-admin/types";
@@ -115,6 +116,7 @@ export default async function RootLayout({
             {persona ? <PersonaBar currentUserId={persona.userId} snapshot={persona.snapshot} /> : null}
             {preview ? <PreviewBar role={preview.role} /> : null}
             <main id="main" tabIndex={-1} className="flex flex-1 flex-col focus:outline-none">
+              {signedIn && flags.elearning ? <LessonClarificationLink locale={locale} /> : null}
               {children}
             </main>
             <SiteFooter />
