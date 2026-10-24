@@ -498,7 +498,7 @@ production evidence are recorded in the PR; no report is automatically closed.
 The owner directed the [heading and chapter-label slice](fb-3.3b-lesson-headings.md).
 Lesson/subchapter pages in training and assessor personal study now share a
 visible chapter/subchapter block, route-appropriate outline links and a stronger
-responsive H1. The reader's existing position/title label also gains emphasis.
+responsive H1. The historically pinned shared reader remains unchanged.
 Numbering comes from existing delivery metadata, and existing lesson sequence
 scopes remain intact. Long-title wrapping and light/dark accessibility are
 checked on disposable fixtures. No learning content, grades or policy changes;

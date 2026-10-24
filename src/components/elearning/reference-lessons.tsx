@@ -884,7 +884,7 @@ export function ReferenceLessons(props: Props) {
             >
               {ui("← Bumalik sa mga subchapter", "← Back to subchapters")}
             </button>}
-            <p className="break-words rounded-lg border-l-4 border-primary bg-primary/5 px-4 py-3 text-lg font-semibold [overflow-wrap:anywhere]">
+            <p>
               {ui("Aralin", "Lesson")}{" "}
               {props.lessonNumber ?? siblings.findIndex((l) => l.id === lesson.id) + 1} /{" "}
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}

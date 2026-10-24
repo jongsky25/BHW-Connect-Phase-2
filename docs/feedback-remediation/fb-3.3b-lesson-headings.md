@@ -6,8 +6,8 @@ read-only against the pilot on 24 October 2026; all remain `new`.
 
 | Report | Scope and disposition |
 | --- | --- |
-| `da776b71-4996-4498-95f4-187052b280ed` | Emphasize lesson titles: stronger bold page headings inside a lightly tinted, bordered context block; the reader's existing lesson label also gains emphasis. |
-| `79778c0e-c6bb-45d9-a449-c3f9250e29e4` | Larger/bolder lesson titles: consistent responsive page-title styling and a larger reader label, preserving the user's text-size setting. |
+| `da776b71-4996-4498-95f4-187052b280ed` | Emphasize lesson titles: stronger bold page headings inside a lightly tinted, bordered context block. |
+| `79778c0e-c6bb-45d9-a449-c3f9250e29e4` | Larger/bolder lesson titles: consistent responsive page-title styling preserving the user's text-size setting. |
 | `45487cf0-a461-476b-a4ab-415d07c8110b` | Indicate the chapter: visible chapter number/title and subchapter links immediately above the page title, independent of breadcrumb scrolling. |
 | `2f1f2eca-6a10-4c5b-a8cd-775d88103a83` | Font/background suggestion: the heading treatment addresses part of the visual hierarchy concern; illustration coverage and the broader lesson visual design remain separate. |
 
@@ -17,8 +17,8 @@ Existing route H1s were already semibold; this was not a missing-heading bug.
 The general training route included chapter numbering in its horizontally
 scrolling breadcrumb. Assessor personal study used the chapter's title in that
 breadcrumb without an explicit numeric label. Neither supplied a consistently
-visible chapter/subchapter block at a lesson's title. The shared reader repeated
-the lesson title and position in an unstyled paragraph.
+visible chapter/subchapter block at a lesson's title. The shared reader repeats
+the lesson title and position; its approved source remains unchanged.
 
 A shared server component now presents chapter number/title and subchapter
 context on lesson and subchapter pages in both general training and assessor
@@ -29,7 +29,6 @@ published chapter/module/lesson metadata. The new component fetches nothing.
 It preserves one H1, displays the full title with wrapping, and uses existing
 light/dark color tokens and a restrained border/tint. Links return to the
 appropriate general or personal-study outline. Breadcrumbs remain available.
-The reader's existing position/title label receives a larger semibold style.
 No new lesson sequence or denominator is introduced: existing reader numbering
 continues to use its current route scope.
 
@@ -60,3 +59,8 @@ represented as an authenticated production-browser check.
 
 All linked reports remain open for live review. Broader visual/illustration
 requests are not claimed as fully delivered by this heading slice.
+
+CI initially rejected a cosmetic shared-reader source edit because earlier
+release preservation checks pin that component. The edit was removed. Only
+the route-owned heading block changes presentation; historical pins and the
+shared reader remain untouched.
