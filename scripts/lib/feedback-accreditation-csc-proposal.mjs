@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { join } from 'node:path';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { contentHash, loadReferenceModule, validateReferenceLesson } from './reference-content.mjs';
 import { fullFormHash, loadLessonMap, validateRelease } from './chapter1-assessment-content.mjs';
 import { releaseHash } from './feedback-uhc-proposal.mjs';
@@ -11,8 +11,12 @@ export function loadAccreditationCscInputs(root) {
   return {
     base: read('releases/chapter1-feedback-uhc-v2/release.json'),
     proposal: read('proposals/fb-2.3-accreditation-csc/proposal.json'),
-    lesson: loadReferenceModule(join(root, 'content/training/day1-basic-competencies/modules/04-ra7883'), join(root, 'public'))
-      .lessons.find(l => l.manifest.lesson_key === 'bhw-eligibility'),
+    // Once the approved successor changes source, reproduce this historical
+    // proposal from its frozen, hash-checked original lesson.
+    lesson: existsSync(join(dir, 'releases/chapter1-feedback-accreditation-csc-v3/base-lesson.json'))
+      ? read('releases/chapter1-feedback-accreditation-csc-v3/base-lesson.json')
+      : loadReferenceModule(join(root, 'content/training/day1-basic-competencies/modules/04-ra7883'), join(root, 'public'))
+        .lessons.find(l => l.manifest.lesson_key === 'bhw-eligibility'),
     context: { ...loadLessonMap(root), orientation: read('orientation.json') },
   };
 }

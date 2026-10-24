@@ -1,0 +1,29 @@
+{
+  "release_id": "chapter1-feedback-accreditation-csc-v3",
+  "proposal_sha256": "253c91c592c12aea0f1ab4c838c5fb40bb83b8dc90b8fc288a06d79d507a9ff6",
+  "authorization": "approved then do next",
+  "approval_type": "owner_content_and_publication",
+  "reviewer": "jongsky25",
+  "recorded_at": "2026-10-24T01:42:23.882Z",
+  "source_commit": "a38f98c2383dfdebbdc869a06f8ac9348c3f6cd8",
+  "independent_specialist_review": "not_claimed",
+  "base_lesson_hash": "10756a7a4d1cbd6459aa5c6982adc9c51bc94c83b2cafcf748f6ab0427243a1e",
+  "media_plan": "Regenerate changed Read/Slides narration; retain the qualification-only optional story with a scope caption after VTT review. If rendering is unavailable, withhold stale narration while retaining historical recordings.",
+  "media_status": {
+    "narration_render": "unavailable_http_403",
+    "withheld_current_sections": [
+      "section-4",
+      "bhwe-filing-receipt"
+    ],
+    "historical_narration_preserved": true,
+    "optional_story": "Existing English/Filipino VTT reviewed against unchanged qualification teaching; caption now identifies the story scope and directs learners to the filing/receipt lesson."
+  },
+  "publication_account": "training.loader",
+  "criterion_baseline_sha256": "526390ca061aa3759ce1b294747aec8e81e9de9ec09295e19d3ebb836b9270c3",
+  "criterion_binding": {
+    "old_version": "1",
+    "new_version": "2",
+    "owner_decision_id": "fb-2.3-owner-2026-10-24",
+    "scope": "Same existing BHWE rubric, source fingerprint, requirements and rubric version; new immutable lesson revision binding only. No old evidence, qualifications or awards are rewritten."
+  }
+}

@@ -3,6 +3,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {buildPolicyProposal} from './c1af25-policy-proposal.mjs';
 import {loadReferenceModule,contentHash} from './lib/reference-content.mjs';
+import {beforeFeedbackCsc} from './lib/feedback-csc-preservation.mjs';
 const root=process.cwd();
 const migration='supabase/migrations/20261015143503_c1af27_disabled_chapter1_registry.sql';
 export function registryPackage(){
@@ -13,7 +14,11 @@ export function registryPackage(){
  for(const folder of readdirSync('content/training/day1-basic-competencies/modules')){
   if(!modules.has(folder))continue;
   const m=loadReferenceModule(path.join('content/training/day1-basic-competencies/modules',folder),'public');
-  for(const lesson of m.lessons){
+  for(let lesson of m.lessons){
+   if(lesson.manifest.lesson_key==='bhw-eligibility'){
+    for(const file of ['lesson.json','read.en.md','read.fil.md','slides.json'])beforeFeedbackCsc('content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-eligibility/'+file);
+    lesson=JSON.parse(readFileSync('content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-accreditation-csc-v3/base-lesson.json'));
+   }
    const proposal=modules.get(folder).required_lessons.find(l=>l.lesson_key===lesson.manifest.lesson_key);
    const published=receipt.rows.find(r=>r.lesson_key===lesson.manifest.lesson_key);
    const hash=contentHash(lesson);

@@ -4,7 +4,7 @@ import {approved154HistoricalMapping} from './lesson-154-release-compat.mjs';
 import {describe,expect,it} from 'vitest';
 import {createHash} from 'node:crypto';
 import path from 'node:path';
-import {loadReferenceModule,parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
+import {parseReferenceRead,FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
 import {planReferenceNarration,mp3AudioFrames} from '../lib/reference-narration.mjs';
 import {BHW_ELIGIBILITY_STORY_STYLES} from '../lib/tts-providers/gemini.mjs';
 import {BHW_ELIGIBILITY_BEATS} from '../../remotion/src/bhw-eligibility/narration.ts';
@@ -16,7 +16,9 @@ const root=path.resolve(import.meta.dirname,'../..'),dir=path.join(root,'content
 const json=p=>JSON.parse(read155(p,'utf8')),sha=b=>createHash('sha256').update(b).digest('hex');
 const bytes=src=>read155(path.join(root,'public',src.slice(1))),fileHash=src=>sha(bytes(src));
 const source=json(path.join(lessonDir,'lesson.json')),manifest=json(path.join(root,'content/training/day1-basic-competencies/narration.json'));
-const authored=loadReferenceModule(dir,path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhw-eligibility'),modules=[{key:'04-ra7883',lessons:[authored]}];
+// The original 1.4.3 approval remains historical after approved FB-2.3.
+// Current Read/Slides and withheld audio are covered by publication tests.
+const authored=json(path.join(root,'content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-accreditation-csc-v3/base-lesson.json')),modules=[{key:'04-ra7883',lessons:[authored]}];
 const ids=["bhwe-question","section-4","service-count","evidence-and-scope","bhwe-verification","bhwe-application-check"];
 describe('lesson 1.4.3 Demi BHWE conditions',()=>{
  it('preserves immutable single-objective manifest, old IDs and full bilingual narration parity',()=>{
