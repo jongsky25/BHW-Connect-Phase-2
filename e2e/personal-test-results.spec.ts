@@ -15,6 +15,8 @@ test("a BHW finds personal test history from Courses on mobile", async ({ page }
   await page.getByRole("link", { name: /My test results|Aking mga resulta sa pagsusulit/ }).click();
   await expect(page).toHaveURL("/my-results");
   await expect(page.getByRole("heading", { name: /My test results|Aking mga resulta sa pagsusulit/ })).toBeVisible();
-  await expect(page.getByRole("alert")).toHaveCount(0);
+  // Next.js also renders a route announcer with role="alert". Check the results panel specifically.
+  await expect(page.locator('section[role="alert"]')).toHaveCount(0);
+  await expect(page.getByRole("region", { name: /My test results|Aking mga resulta sa pagsusulit/ })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
 });
