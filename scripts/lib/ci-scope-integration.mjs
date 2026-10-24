@@ -2,15 +2,16 @@
 // guards see the exact bytes they pinned, current tests run current bytes.
 import fs from 'node:fs';
 import {beforeFeedbackCsc} from './feedback-csc-preservation.mjs';
+import {beforeFeedbackReader} from './feedback-reader-preservation.mjs';
 import {createHash} from 'node:crypto';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const NARRATION='content/training/day1-basic-competencies/narration.json';
 let receipt,approval;
 export function beforeCiScope(p,actual=fs.readFileSync(p)){
- actual=beforeFeedbackCsc(p,actual);
+ actual=beforeFeedbackCsc(p,beforeFeedbackReader(p,actual));
  const r=receipt??=JSON.parse(fs.readFileSync('docs/ci-preservation-scope-receipt.json'));
  const e=r.changed_existing_files[p];if(!e)return actual;
- const disk=sha(beforeFeedbackCsc(p));
+ const disk=sha(beforeFeedbackCsc(p,beforeFeedbackReader(p)));
  if(disk!==e.proposed_sha256&&disk!==e.predecessor_sha256)throw Error('Unpinned integrated successor (CI preservation scope): '+p);
  // Older historical views pass through for the earlier guards to verify.
  if(sha(actual)!==e.proposed_sha256)return actual;

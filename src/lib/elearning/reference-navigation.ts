@@ -7,6 +7,25 @@ import type {
 } from "./types";
 
 export type PublishedLesson = CourseLesson & { revision: CourseLessonRevision };
+
+/** Switching format follows the current authored section, rather than resuming
+ * a separately saved page. Both published slide ID conventions are supported;
+ * a pair must be unique and share a concept. Unpaired lessons retain resume fallback.
+ */
+export function switchLessonPosition(
+  lesson: PublishedLesson,
+  mode: LessonModality,
+  current: { id: string; concept_ids: string[] },
+  saved?: CourseLessonResume,
+) {
+  const positions = mode === "read" ? lesson.revision.read_sections : lesson.revision.slides;
+  const ids = mode === "slides"
+    ? [current.id, `slide-${current.id}`, `${current.id}-slide`]
+    : [current.id, current.id.replace(/^slide-/, ""), current.id.replace(/-slide$/, "")];
+  const pairs = positions.filter(p => ids.includes(p.id) && p.concept_ids.some(id => current.concept_ids.includes(id)));
+  return pairs.length === 1 ? pairs[0] : lessonPosition(lesson, mode, saved, current.concept_ids[0]);
+}
+
 export function continueLesson(
   lessons: PublishedLesson[],
   completed: CourseLessonProgress[],

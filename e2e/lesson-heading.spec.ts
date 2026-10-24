@@ -10,7 +10,7 @@ function localSql(sql: string) {
   return execFileSync("docker", ["exec", "-i", "supabase_db_bhw-connect-phase-2", "psql", "-U", "postgres", "-d", "postgres", "-v", "ON_ERROR_STOP=1", "-At"], { input: sql, encoding: "utf8", timeout: 15_000 });
 }
 
-test("lesson headings and reading tools preserve context, readability and zoom controls", async ({ page, request }) => {
+test("lesson headings and reading tools preserve context, readability, zoom and mode continuity", async ({ page, request }) => {
   test.setTimeout(120_000);
   const admin = await getAccessToken(request, STABLE_CITY_ADMIN.username, STABLE_CITY_ADMIN.password);
   const assessor = await createThrowawayAssessor(request, admin, "00000000-0000-0000-0000-000000000004");
@@ -30,8 +30,8 @@ test("lesson headings and reading tools preserve context, readability and zoom c
       values('${lesson}','${module}','prepare-a-response',0,'Paghahanda ng malinaw na tugon sa isang mahirap na sitwasyon sa komunidad','Preparing a clear response to a difficult situation in the community',array['Pagsasanay'],array['Practice']);
     insert into course_lesson_revisions(id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,created_by)
       values('${revision}','${lesson}','e2e-heading',repeat('0',64),
-        '[{"id":"intro","concept_ids":[],"heading_fil":"Pagsasanay","heading_en":"Practice","body_fil":"Halimbawa lamang.","body_en":"Fictional example only.","asset_ids":[],"takeaway_fil":"Maghanda.","takeaway_en":"Prepare.","check":null}]',
-        '[{"id":"intro","concept_ids":[],"layout":"takeaway","heading_fil":"Pagsasanay","heading_en":"Practice","display_fil":"Maghanda.","display_en":"Prepare.","asset_ids":[],"check":null}]','[]','[]','${actor.id}');
+        '[{"id":"intro","concept_ids":["practice-topic"],"heading_fil":"Pagsasanay","heading_en":"Practice","body_fil":"Halimbawa lamang.","body_en":"Fictional example only.","asset_ids":[],"takeaway_fil":"Maghanda.","takeaway_en":"Prepare.","check":null},{"id":"follow-up","concept_ids":["practice-topic"],"heading_fil":"Susunod na hakbang","heading_en":"Next step","body_fil":"Linawin ang susunod na hakbang.","body_en":"Clarify the next step.","asset_ids":[],"takeaway_fil":"Linawin.","takeaway_en":"Clarify.","check":null}]',
+        '[{"id":"slide-intro","concept_ids":["practice-topic"],"layout":"takeaway","heading_fil":"Pagsasanay","heading_en":"Practice","display_fil":"Maghanda.","display_en":"Prepare.","asset_ids":[],"check":null},{"id":"slide-follow-up","concept_ids":["practice-topic"],"layout":"takeaway","heading_fil":"Susunod na hakbang","heading_en":"Next step","display_fil":"Linawin.","display_en":"Clarify.","asset_ids":[],"check":null}]','[]','[]','${actor.id}');
     update course_lessons set published_revision_id='${revision}' where id='${lesson}';
     insert into assessor_exam_attempts(assessor_user_id,chapter_id,curriculum_version,exam_id,phase,status,question_set_hash,question_count,score_percent,passed,answers,submitted_at)
       values('${actor.id}','${chapter}','2026-09-28.1','chapter-2:pretest','pretest','submitted',repeat('0',32),1,0,false,'[]',now());
@@ -54,6 +54,12 @@ test("lesson headings and reading tools preserve context, readability and zoom c
         await expect(heading.getByRole("link").first()).toHaveAttribute("href", base);
         await expect(heading.getByRole("link").nth(1)).toHaveAttribute("href", `${base}/${module}`);
         await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
+        // The assessor's prior-language visit may have saved the second section.
+        const inlineReader = page.locator('[data-reading-layout] > section');
+        await inlineReader.getByRole("button", { name: locale === "en" ? "Read" : "Basahin", exact: true }).click();
+        const previous = inlineReader.getByRole("button", { name: locale === "en" ? "Previous" : "Nakaraan", exact: true });
+        if (await previous.isEnabled()) await previous.click();
+        await expect(inlineReader.getByRole("heading", { name: locale === "en" ? "Practice" : "Pagsasanay", exact: true })).toBeVisible();
         await page.getByText(locale === "en" ? "Reading tools" : "Mga tulong sa pagbasa", { exact: true }).click();
         const comfortable = page.getByRole("button", { name: locale === "en" ? "Comfortable" : "Maluwag", exact: true });
         const standard = page.getByRole("button", { name: locale === "en" ? "Standard" : "Karaniwan", exact: true });
@@ -98,12 +104,24 @@ test("lesson headings and reading tools preserve context, readability and zoom c
         await dialog.getByRole("button", { name: locale === "en" ? "Fit to screen" : "I-akma sa screen", exact: true }).click();
         await expect(dialog.locator("output")).toHaveText("1×");
         expect((await new AxeBuilder({ page }).include("dialog[open]").analyze()).violations).toEqual([]);
+        // Both sections share a concept: a format change must follow the exact section.
+        await dialog.getByRole("button", { name: locale === "en" ? "Next" : "Susunod", exact: true }).click();
+        const sectionHeading = locale === "en" ? "Next step" : "Susunod na hakbang";
+        await expect(dialog.getByRole("heading", { name: sectionHeading, exact: true })).toBeVisible();
+        await dialog.getByRole("button", { name: "Slides", exact: true }).click();
+        await expect(dialog.getByRole("heading", { name: sectionHeading, exact: true })).toBeVisible();
+        await dialog.getByRole("button", { name: locale === "en" ? "Read" : "Basahin", exact: true }).click();
+        await expect(dialog.getByRole("heading", { name: sectionHeading, exact: true })).toBeVisible();
         await dialog.getByRole("button", { name: locale === "en" ? "Close" : "Isara", exact: true }).click();
         await expect(dialog).not.toBeVisible();
         await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
         await page.getByRole("group", { name: locale === "en" ? "Content mode" : "Uri ng nilalaman", exact: true })
           .getByRole("button", { name: "Slides", exact: true }).click();
         await expect(page.locator('[data-reading-layout] > section > article[data-layout="takeaway"]')).toHaveCSS("max-inline-size", "none");
+        await expect(page.locator('[data-reading-layout] > section > article').getByRole("heading", { name: sectionHeading, exact: true })).toBeVisible();
+        await page.getByRole("group", { name: locale === "en" ? "Content mode" : "Uri ng nilalaman", exact: true })
+          .getByRole("button", { name: locale === "en" ? "Read" : "Basahin", exact: true }).click();
+        await expect(page.locator('[data-reading-layout] > section > article').getByRole("heading", { name: sectionHeading, exact: true })).toBeVisible();
       }
     }
     await page.goto("/home");
