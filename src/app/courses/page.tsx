@@ -62,6 +62,7 @@ export default async function CoursesPage() {
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
         <p className="mt-1 text-ink/70">{t("intro")}</p>
+        {(appUser.role === "bhw" || appUser.role === "assessor") && <Link prefetch={false} href="/my-results" className="mt-3 inline-flex min-h-[44px] items-center rounded-md border border-primary/30 bg-primary/5 px-4 py-2 font-medium underline">{locale === "en" ? "My test results" : "Aking mga resulta sa pagsusulit"}</Link>}
       </div>
 
       <Link href="/plant-aids" className="rounded-lg border border-secondary/30 bg-secondary/5 p-4 hover:bg-secondary/10">

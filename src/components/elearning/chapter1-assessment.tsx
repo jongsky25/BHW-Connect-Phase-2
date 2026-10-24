@@ -285,6 +285,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   if (stage === "result" && attempt) return <section className="space-y-4">
     <h1 className="text-2xl font-semibold">{copy("Assessment submitted", "Naisumite ang pagtatasa")}</h1>
     <p>{copy("Score", "Iskor")}: {attempt.score_percent}%</p>
+    <Link prefetch={false} href="/my-results" className="inline-flex min-h-11 items-center font-medium underline">{copy("View my test results and history", "Tingnan ang aking mga resulta at history")}</Link>
     {assessor && attempt.phase === "posttest" && <p>{(attempt.score_percent ?? 0) >= 80
       ? copy("Passed. You can continue to scoring orientation.", "Pumasa. Maaari ka nang magpatuloy sa oryentasyon sa pagmamarka.")
       : copy("80% is required before scoring orientation. Review the chapter and retry the post-test.",
@@ -305,6 +306,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   const draft = state.attempts.find(a => a.phase === phase && a.state === "draft");
   return <section className="space-y-5">
     <h1 className="text-2xl font-semibold">{copy("Chapter 1 assessment", "Pagtatasa sa Kabanata 1")}</h1>
+    <Link prefetch={false} href="/my-results" className="inline-flex min-h-11 items-center font-medium underline">{copy("View my test results and history", "Tingnan ang aking mga resulta at history")}</Link>
     {finishInstructions}
     {pre && <p>{copy("Baseline submitted", "Naisumite na ang baseline")}: {pre.score_percent}%</p>}
     {post && <p>{copy("Post-test submitted", "Naisumite na ang post-test")}: {post.score_percent}%</p>}
