@@ -13,6 +13,7 @@ const reader=(assessorChapterId?:string,readOnly=false)=><ManualLesson data={dat
 describe('assessor study persistence in existing reader',()=>{
   it('changes layout/help without calling resume or completion APIs',()=>{
     render(reader('chapter'));state.rpc.mockClear();
+    fireEvent.click(screen.getByText('Reading tools'));
     fireEvent.click(screen.getByRole('button',{name:'Standard'}));
     fireEvent.click(screen.getByRole('button',{name:'Comfortable'}));
     fireEvent.click(screen.getByText('How to use the lesson controls'));

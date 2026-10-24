@@ -20,7 +20,8 @@ left the action unexplained to sighted users.
 ## Delivered behavior
 
 ManualLesson, used by BHW/general training reading and assessor personal study,
-now wraps its existing reader in a small bilingual Reading tools panel. A
+now wraps its existing reader in a collapsed bilingual Reading tools panel,
+keeping lesson content close to the top on phones and XL text. A
 Comfortable/Standard toggle changes only local presentation on the current
 page. Comfortable is the initial layout; Standard restores the original inline
 Read width/spacing. A collapsed guide explains the existing Read/Slides,

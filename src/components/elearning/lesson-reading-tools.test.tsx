@@ -11,6 +11,7 @@ function ReaderState() {
 it.each(["en", "fil"])("offers labeled layout/help controls and preserves reader state (%s)", async locale => {
   const user = userEvent.setup();
   const view = render(<LessonReadingTools locale={locale}><ReaderState /></LessonReadingTools>);
+  await user.click(screen.getByText(locale === "en" ? "Reading tools" : "Mga tulong sa pagbasa", { exact: true }));
   const comfortable = screen.getByRole("button", { name: locale === "en" ? "Comfortable" : "Maluwag" });
   const standard = screen.getByRole("button", { name: locale === "en" ? "Standard" : "Karaniwan" });
   expect(comfortable).toHaveAttribute("aria-pressed", "true");

@@ -10,8 +10,9 @@ export function LessonReadingTools({ locale, children }: { locale: string; child
   const copy = (english: string, fil: string) => en ? english : fil;
   return <div className={`min-w-0 space-y-4 ${comfortable ? styles.comfortable : ""}`} data-reading-layout={comfortable ? "comfortable" : "standard"}>
     <aside aria-labelledby="lesson-reading-tools-heading" className="min-w-0 space-y-3 rounded-xl border border-ink/20 bg-canvas p-4">
-      <h2 id="lesson-reading-tools-heading" className="text-lg font-semibold">{copy("Reading tools", "Mga tulong sa pagbasa")}</h2>
-      <fieldset className="space-y-2">
+      <details>
+      <summary id="lesson-reading-tools-heading" className="min-h-11 cursor-pointer content-center text-lg font-semibold">{copy("Reading tools", "Mga tulong sa pagbasa")}</summary>
+      <fieldset className="mt-3 space-y-2">
         <legend className="text-sm font-medium">{copy("Read layout on this page", "Ayos ng pagbasa sa pahinang ito")}</legend>
         <div className="flex flex-wrap gap-2">
           {[true, false].map(value => <button key={String(value)} type="button" aria-pressed={comfortable === value}
@@ -22,7 +23,7 @@ export function LessonReadingTools({ locale, children }: { locale: string; child
         </div>
         <p className="text-sm text-ink/80">{copy("Comfortable uses a narrower column and more paragraph space on regular Read pages. Illustrated pages and full screen use their own layout.", "Mas makitid ang kolum at mas maluwag ang pagitan ng mga talata sa karaniwang Basahin. May sariling ayos ang mga pahinang may ilustrasyon at ang buong screen.")}</p>
       </fieldset>
-      <details className="rounded-md border border-ink/15 px-3 py-1">
+      <details className="mt-3 rounded-md border border-ink/15 px-3 py-1">
         <summary className="min-h-11 cursor-pointer content-center font-medium">{copy("How to use the lesson controls", "Paano gamitin ang mga kontrol ng aralin")}</summary>
         <dl className="space-y-3 pb-3 text-sm leading-relaxed">
           <div><dt className="font-semibold">{copy("Read / Slides", "Basahin / Slides")}</dt>
@@ -32,6 +33,7 @@ export function LessonReadingTools({ locale, children }: { locale: string; child
           <div><dt className="font-semibold">{copy("Previous / Next", "Nakaraan / Susunod")}</dt>
             <dd>{copy("Move through the current lesson sections. Use Mark lesson complete at the end when it becomes available.", "Lumipat sa mga bahagi ng kasalukuyang aralin. Gamitin ang Markahang tapos ang aralin sa dulo kapag maaari na ito.")}</dd></div>
         </dl>
+      </details>
       </details>
     </aside>
     {children}

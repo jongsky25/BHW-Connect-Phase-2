@@ -54,6 +54,7 @@ test("lesson headings and reading tools preserve context, readability and zoom c
         await expect(heading.getByRole("link").first()).toHaveAttribute("href", base);
         await expect(heading.getByRole("link").nth(1)).toHaveAttribute("href", `${base}/${module}`);
         await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
+        await page.getByText(locale === "en" ? "Reading tools" : "Mga tulong sa pagbasa", { exact: true }).click();
         const comfortable = page.getByRole("button", { name: locale === "en" ? "Comfortable" : "Maluwag", exact: true });
         const standard = page.getByRole("button", { name: locale === "en" ? "Standard" : "Karaniwan", exact: true });
         const article = page.locator('[data-reading-layout] > section > article[data-layout="read"]');
