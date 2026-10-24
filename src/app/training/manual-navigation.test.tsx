@@ -45,6 +45,16 @@ afterEach(cleanup);
 const page=(path:string[]=[],view?:string,returnTo?:string,mode?:string)=>TrainingPage({params:Promise.resolve({programId:'manual',path}),searchParams:Promise.resolve({view,returnTo,mode})});
 const guideTables=['course_lesson_facilitator_notes','course_module_facilitator_notes','competency_observations','users'];
 describe('manual navigation',()=>{
+  it.each(['en','fil'])('shows visible published chapter/subchapter context on lessons (%s)',async(locale)=>{
+    state.locale=locale;render(await page(['chapter-1','m1','l1']));
+    const heading=screen.getByRole('heading',{level:1,name:'HEPO'}).closest('header')!;
+    expect(heading).toHaveTextContent(locale==='en'?'Chapter 1':'Kabanata 1');
+    expect(heading).toHaveTextContent(locale==='en'?'Subchapter: Roles':'Bahagi ng kabanata: Tungkulin');
+    expect(heading.querySelector('a[href="/training/manual/chapter-1"]')).not.toBeNull();
+    expect(heading.querySelector('a[href="/training/manual/chapter-1/m1"]')).not.toBeNull();
+    expect(screen.getAllByRole('heading',{level:1})).toHaveLength(1);
+  });
+
   it('facilitator lesson shows only activity cards mapped to its lesson key',async()=>{
     state.role='assessor';
     state.rows.course_lessons[0].lesson_key='bhw-roles-application';

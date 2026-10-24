@@ -1,3 +1,4 @@
+import {LessonPageHeading} from '@/components/elearning/lesson-page-heading';
 import {parseSimulationState} from '@/lib/assessor/simulation-runner';
 import Link from 'next/link';
 import {notFound,redirect} from 'next/navigation';
@@ -38,7 +39,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
   const title=(item:{title_fil:string;title_en:string})=>en?item.title_en:item.title_fil;
   const [{data:program,error:programError},{data:chapter,error:chapterError}]=await Promise.all([
     db.from('training_programs').select('id,title_fil,title_en').eq('id',programId).eq('content_key','bhw-reference-manual').eq('status','published').maybeSingle(),
-    db.from('training_program_chapters').select('id,course_id,title_fil,title_en').eq('program_id',programId).eq('chapter_key',chapterKey).eq('availability','available').maybeSingle(),
+    db.from('training_program_chapters').select('id,course_id,position,title_fil,title_en').eq('program_id',programId).eq('chapter_key',chapterKey).eq('availability','available').maybeSingle(),
   ]);
   if(programError||chapterError)throw new Error('Unable to load assessor chapter');
   if(!program||!chapter?.course_id)notFound();
@@ -146,10 +147,16 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
   }
   return <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 py-10 sm:px-6">
     <Breadcrumbs items={crumbs}/>
-    <header><p className="text-sm font-semibold text-primary">{text('Sariling pag-aaral ng assessor','Assessor personal study')}</p>
+    {!examPage&&subchapter ? <LessonPageHeading
+      title={lesson?title(lesson):title(subchapter)} locale={locale}
+      eyebrow={text('Sariling pag-aaral ng assessor','Assessor personal study')}
+      context={{chapterNumber:chapter.position+1,chapterTitle:title(chapter),chapterHref:base,
+        subchapterTitle:title(subchapter),subchapterHref:`${base}/${subchapter.id}`}}
+      intro={briefingVisible?text('Sundan ang sariling paghahanda sa Kabanata 1. Hiwalay ang pag-aaral, pagmamarka at pagsasanay sa platform.','Follow your personal Chapter 1 preparation. Study, scoring and platform practice are separate steps.'):text('Kumpletuhin ang buong kabanata at pumasa sa pagsusulit bago ang oryentasyon sa pagmamarka. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Complete the full chapter and pass its exam before scoring orientation. No practical assessment by another assessor is required.')}
+    /> : <header><p className="text-sm font-semibold text-primary">{text('Sariling pag-aaral ng assessor','Assessor personal study')}</p>
       <h1 className="mt-2 text-2xl font-semibold">{examPage?(examPhase==='pretest'?text('Diagnostic pretest','Diagnostic pretest'):text('Pangwakas na pagsusulit','Chapter post-test')):lesson?title(lesson):subchapter?title(subchapter):title(chapter)}</h1>
       <p className="mt-2">{briefingVisible?text('Sundan ang sariling paghahanda sa Kabanata 1. Hiwalay ang pag-aaral, pagmamarka at pagsasanay sa platform.','Follow your personal Chapter 1 preparation. Study, scoring and platform practice are separate steps.'):text('Kumpletuhin ang buong kabanata at pumasa sa pagsusulit bago ang oryentasyon sa pagmamarka. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Complete the full chapter and pass its exam before scoring orientation. No practical assessment by another assessor is required.')}</p>
-    </header>
+    </header>}
     {majorIntro&&<Chapter1MajorIntroduction intro={majorIntro} courseId={chapter.course_id}
       learnerId={viewer.appUser.id} language={en?'en':'fil'}/>}
     <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/qualifications`}>{text('Aking mga sertipikasyon','My certifications')}</Link>

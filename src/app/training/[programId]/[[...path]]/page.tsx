@@ -1,3 +1,4 @@
+import {LessonPageHeading,type LessonHeadingContext} from '@/components/elearning/lesson-page-heading';
 import * as Sentry from '@sentry/nextjs';
 import Link from 'next/link';
 import { lessonActivities } from '@/lib/elearning/activities';
@@ -77,6 +78,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
   if(path.length && (!chapter || chapter.availability!=='available' || !chapter.course_id))notFound();
   let content:React.ReactNode;
   let heading=manualTitle;
+  let headingContext:LessonHeadingContext|undefined;
   let intro=text('Piliin ang kabanatang nais mong pag-aralan.','Choose a chapter to explore.');
   if(!chapter) {
     const mine=await myProgress;
@@ -222,6 +224,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
       const moduleHref=`${chapterHref}/${subchapter.id}`;
       crumbs.push({label:title(subchapter),...(path.length>2?{href:facilitator?`${moduleHref}?view=slides`:moduleHref}:{})});
       heading=title(subchapter);
+      headingContext={chapterNumber:chapter.position+1,chapterTitle:title(chapter),chapterHref,
+        subchapterTitle:title(subchapter),subchapterHref:moduleHref};
       const own=lessons?.filter(l=>l.module_id===subchapter.id)??[];
       intro=own.length?text('Piliin ang isang maikling aralin.','Choose a short lesson.'):text('Inihahanda pa ang mga aralin para sa subchapter na ito.','Lessons for this subchapter are being prepared.');
       const lesson=path[2]?own.find(l=>l.id===path[2]):null;
@@ -370,7 +374,9 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
     }
   }
   return <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
-    <Breadcrumbs items={crumbs}/><header><h1 className="text-2xl font-semibold sm:text-3xl">{heading}</h1>{intro&&<p className="mt-2 text-ink/70">{intro}</p>}</header>
+    <Breadcrumbs items={crumbs}/>{headingContext
+      ?<LessonPageHeading title={heading} context={headingContext} locale={loc} intro={intro}/>
+      :<header><h1 className="text-2xl font-semibold sm:text-3xl">{heading}</h1>{intro&&<p className="mt-2 text-ink/70">{intro}</p>}</header>}
     {role==='assessor' && !viewer.isPreview && program.content_key==='bhw-reference-manual' && <aside className="rounded-xl border border-primary/30 p-4">
       <h2 className="font-semibold">{text('Pag-aaral para maging assessor','Study to become an assessor')}</h2>
       <p className="mt-1 text-sm">{text('Aralin ang buong kabanata at i-save ang sarili mong progreso. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Study the full chapter and save your own progress. No practical assessment by another assessor is required.')}</p>

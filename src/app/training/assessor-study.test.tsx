@@ -23,7 +23,7 @@ beforeEach(()=>{
   state.qualification={status:'in_progress',next_step:'study',curriculum_version:manifest.version};
   state.acknowledgement={actorId:'self',programInstanceId:'manual',chapterKey:'chapter-1',requirementsVersion:'chapter-1:c1af.draft-1',briefingVersion:'chapter-1:briefing.v1',acknowledgedAt:'2026-10-11T00:00:00Z'};
   state.rows={training_programs:[{id:'manual',content_key:'bhw-reference-manual',status:'published',title_en:'Manual',title_fil:'Manwal'}],
-    training_program_chapters:[{id:'ch1',program_id:'manual',chapter_key:'chapter-1',course_id:'course',availability:'available',title_en:'Chapter I',title_fil:'Kabanata I'}],
+    training_program_chapters:[{id:'ch1',program_id:'manual',chapter_key:'chapter-1',position:0,course_id:'course',availability:'available',title_en:'Chapter I',title_fil:'Kabanata I'}],
     courses:[{id:'course',status:'published'}],course_modules:[{id:'m1',course_id:'course',position:0,title_en:'Roles',title_fil:'Tungkulin'}],
     course_lessons:[{id:'l1',module_id:'m1',lesson_key:'bhw-roles-hepo',position:0,published_revision_id:'r1',title_en:'HEPO',title_fil:'HEPO'},
       {id:'l2',module_id:'m1',lesson_key:'bhw-health-educator',position:1,published_revision_id:'r2',title_en:'Educator',title_fil:'Tagapagturo'}],
@@ -33,6 +33,16 @@ beforeEach(()=>{
 afterEach(cleanup);
 const page=(path:string[]=[],chapterKey='chapter-1')=>StudyPage({params:Promise.resolve({programId:'manual',chapterKey,path})});
 describe('assessor study route',()=>{
+  it.each(['en','fil'])('shows personal-study chapter context and real outline links (%s)',async(locale)=>{
+    state.locale=locale;render(await page(['m1','l1']));
+    const heading=screen.getByRole('heading',{level:1,name:'HEPO'}).closest('header')!;
+    expect(heading).toHaveTextContent(locale==='en'?'Chapter 1':'Kabanata 1');
+    expect(heading).toHaveTextContent(locale==='en'?'Subchapter: Roles':'Bahagi ng kabanata: Tungkulin');
+    expect(heading.querySelector('a[href="/training/manual/assessor/chapter-1"]')).not.toBeNull();
+    expect(heading.querySelector('a[href="/training/manual/assessor/chapter-1/m1"]')).not.toBeNull();
+    expect(screen.getAllByRole('heading',{level:1})).toHaveLength(1);
+  });
+
   const enable=()=>{state.ui=true;state.policy={programInstanceId:'manual',programKey:'bhw-reference-manual',chapterKey:'chapter-1',requirementsVersion:'chapter-1:c1af.draft-1',actorId:'self',cohortId:'group',uiEnabled:true,writesEnabled:false,awardsEnabled:false,authorityCutoverAt:null};};
   it('shows one recommendation, full inventory and subchapter groups for the revised cohort',async()=>{
     enable();render(await page());
