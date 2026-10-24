@@ -616,3 +616,11 @@ follow the existing approved learning policy and explicit product decisions.
 [Delivery record](fb-4.1e-follow-up-visuals.md) documents three bilingual diagrams
 in Following up constructively, retained opening scene and assessment, exact
 revision binding, responsive accessibility checks and the live review boundary.
+
+## FB-4.1f — local-partner visual purpose
+
+[Delivery record](fb-4.1f-local-partner-visual-purpose.md) explains the current
+symbol/bar clarity gap, six bilingual labeled replacements, the retained fictional
+scene and its background chart, and the private screenshot access boundary.
+Assessment and historical lesson/media sources remain intact; the report stays
+open for live comments.

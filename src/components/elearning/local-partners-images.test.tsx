@@ -1,7 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {cleanup,fireEvent,render,screen} from '@testing-library/react';
+import {cleanup,fireEvent,render,screen,within} from '@testing-library/react';
 import {afterEach,describe,expect,it,vi} from 'vitest';
+import {localPartnerVisual} from '@/lib/elearning/local-partner-visuals';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
 afterEach(()=>cleanup());
@@ -20,14 +21,16 @@ function view(locale:'en'|'fil'){
  return render(<ReferenceLessons {...data as unknown as ReferenceData} modules={[]} locale={locale} initialLessonId="lesson-153-fixture" initialMode="slides" lessonBaseHref="/lessons" onResume={vi.fn().mockResolvedValue(undefined)} onComplete={vi.fn().mockResolvedValue(undefined)}/>);
 }
 describe('lesson 1.5.3 actual slide renderer',()=>{
- for(const locale of ['en','fil'] as const)it(`shows both relevant pictures on all six ${locale} slides, including the unanswered check`,()=>{
+ for(const locale of ['en','fil'] as const)it(`shows the retained scene and labeled diagram on all six ${locale} slides, including the unanswered check`,()=>{
   view(locale);
   for(let i=0;i<6;i++){
-   const images=screen.getAllByRole('img');
-   for(const id of slides[i].asset_ids){
-    const asset=source.assets.find((a:{id:string})=>a.id===id);
-    expect(images.some(img=>img.getAttribute('alt')===asset[`alt_${locale}`])).toBe(true);
-   }
+   const scene=source.assets.find((a:{id:string})=>a.id===slides[i].asset_ids[0]);
+   expect(screen.getByRole('img',{name:scene[`alt_${locale}`]})).toHaveAttribute('src',scene.path);
+   const asset=source.assets.find((a:{id:string})=>a.id===slides[i].asset_ids[1]);
+   const visual=localPartnerVisual(asset,locale==='en')!;
+   const diagram=screen.getByRole('figure',{name:visual.title});
+   expect(within(diagram).getAllByRole('listitem')).toHaveLength(visual.cards.length);
+   expect(screen.queryByRole('img',{name:asset[`alt_${locale}`]})).not.toBeInTheDocument();
    if(i<5)fireEvent.click(screen.getByRole('button',{name:locale==='en'?'Next':'Susunod'}));
   }
   expect(screen.getByRole('button',{name:source.sections.at(-1).check.options[0][locale]})).toBeInTheDocument();
