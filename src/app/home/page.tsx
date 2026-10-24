@@ -1,3 +1,4 @@
+import { readGreetingName } from "@/lib/settings/greeting-name";
 import * as Sentry from "@sentry/nextjs";
 import { getLocale, getTranslations } from "next-intl/server";
 import { DestinationLink } from "@/components/nav/destination-link";
@@ -27,6 +28,8 @@ export default async function HomePage() {
   const flags = await getRequestFeatureFlags();
   const locale = (await getLocale()) === "en" ? "en" : "fil";
   const navItems = getNavItems({ role, flags });
+  const greetingRead = viewer.isPreview ? Promise.resolve(null)
+    : createClient().then(readGreetingName).then(result => result.name).catch(() => null);
 
   // "My training" is a convenience: if progress cannot load, the rest of
   // home still renders and the manual itself remains reachable via Courses.
@@ -41,10 +44,11 @@ export default async function HomePage() {
     }
   }
 
+  const greeting = await greetingRead;
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
-      <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-        {t("heading", { name: appUser.full_name })}
+      <h1 className="max-w-full break-words text-3xl font-semibold tracking-tight text-ink [overflow-wrap:anywhere] sm:text-4xl">
+        {t("heading", { name: greeting || appUser.full_name })}
       </h1>
       <p className="max-w-xl text-lg text-ink/70">{t("body")}</p>
 
