@@ -493,6 +493,18 @@ search behavior remain. Lesson hierarchy, chapter/KB labels, destination
 descriptions and preferred greetings retain their separate follow-ups. CI and
 production evidence are recorded in the PR; no report is automatically closed.
 
+## FB-3.3b lesson headings and chapter context
+
+The owner directed the [heading and chapter-label slice](fb-3.3b-lesson-headings.md).
+Lesson/subchapter pages in training and assessor personal study now share a
+visible chapter/subchapter block, route-appropriate outline links and a stronger
+responsive H1. The reader's existing position/title label also gains emphasis.
+Numbering comes from existing delivery metadata, and existing lesson sequence
+scopes remain intact. Long-title wrapping and light/dark accessibility are
+checked on disposable fixtures. No learning content, grades or policy changes;
+linked reports remain open for live comments. The PR records final CI and
+production verification.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.
