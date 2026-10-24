@@ -464,6 +464,23 @@ provides review shortcuts. Failed saves cannot claim completion. Existing
 navigation, confirmation, scoring, answer visibility and saved records remain
 intact. The PR carries CI, merge and exact production deployment evidence.
 
+## FB-3.2 personal results and completed-test review
+
+The owner directed implementation of [the seven results/history reports](fb-3.2-personal-test-results.md).
+A personal `/my-results` page links from Courses, the assessor queue and Chapter
+1 assessment screens. It shows completed pre/post results, dates, form versions
+and supported post-test review links, with exact raw counts only when complete
+frozen evidence agrees with stored grades. Older/inconsistent records keep
+percentages without guessed counts. Review can filter questions needing work
+while retaining original numbers; scoring orientation uses labeled colors.
+
+An additive owner-checked read-only history function returns safe aggregates,
+never keys or item-level baseline correctness. Existing baseline restrictions,
+post-test authorization, learner histories and grading remain intact. The PR
+records database/access/UI tests, migration integrity and production evidence.
+No reports are automatically closed and broader pre-test answer disclosure
+remains a separate policy request.
+
 ## Next work
 
 1. Finish signed-in verification of FB-1.1a and the original feedback-return path.

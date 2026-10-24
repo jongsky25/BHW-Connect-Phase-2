@@ -20,6 +20,11 @@ const ratings: {key:Rating;label:Localized}[] = [
   {key:'kailangan_practice',label:{fil:'Kailangan pa ng practice',en:'Kailangan pa ng practice (needs practice)'}},
   {key:'hindi_pa',label:{fil:'Hindi pa',en:'Hindi pa (not yet)'}},
 ];
+const ratingStyle: Record<Rating,string> = {
+  kaya_na:'border-success/50 bg-success/10',
+  kailangan_practice:'border-warning/60 bg-warning/15',
+  hindi_pa:'border-danger/50 bg-danger/10',
+};
 
 export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Kabanata I',en:'Chapter I'},locale,initial,chapter1Context}:{chapter1Context?:Record<string,OrientationCriterion>|null;chapterId:string;chapterHref:string;chapterLabel?:Localized;locale:string;initial:OrientationState}) {
   const en=locale==='en';
@@ -112,7 +117,8 @@ export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Ka
     <section className="rounded-xl border border-ink/20 p-5" aria-label={text('Gabay sa pagmamarka','Scoring guide')}>
       <h2 className="text-lg font-semibold">{text('Gabay sa pagmamarka','Scoring guide')}</h2>
       <ol className="mt-3 list-decimal space-y-3 pl-5">{initial.guide?.map((item,i)=><li key={i}>{local(item)}</li>)}</ol>
-      <div className="mt-4 grid gap-2 sm:grid-cols-3">{ratings.map(r=><p key={r.key} className="rounded border border-ink/15 p-3 font-medium">{local(r.label)}</p>)}</div>
+      <div className="mt-4 grid gap-2 sm:grid-cols-3">{ratings.map(r=><p key={r.key} className={`rounded border p-3 font-medium ${ratingStyle[r.key]}`}>{local(r.label)}</p>)}</div>
+      <p className="mt-3 text-sm text-ink/70">{text('Gabay lamang ang kulay. Ibatay ang marka sa naobserbahang ebidensya at sa criterion ng gawain.','Color is a visual guide. Base the rating on observed evidence and the task criterion.')}</p>
     </section>
     {activeLesson&&<section className="rounded-xl border border-ink/20 p-5" aria-label={text('Mga aralin sa oryentasyon','Orientation lessons')}>
       <h2 className="text-lg font-semibold">{text(`Mga aralin · ${lessons.filter(lesson=>completed.includes(lesson.id)).length} sa ${lessons.length}`,`Lessons · ${lessons.filter(lesson=>completed.includes(lesson.id)).length} of ${lessons.length}`)}</h2>
@@ -150,10 +156,10 @@ export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Ka
           <p className="text-sm text-ink/70">{local(chapter1Context[item.id].title)}</p>
           <h3 className="mt-2 font-semibold">{local(chapter1Context[item.id].observable)}</h3>
           <dl className="mt-3 space-y-3">{ratings.map(r=><div key={r.key}>
-            <dt className="font-medium">{local(r.label)}</dt><dd>{local(chapter1Context[item.id].anchors[r.key])}</dd>
+            <dt className={`rounded border px-2 py-1 font-medium ${ratingStyle[r.key]}`}>{local(r.label)}</dt><dd>{local(chapter1Context[item.id].anchors[r.key])}</dd>
           </div>)}</dl>
         </div> : <p className="mt-1 text-xs text-ink/60">{item.indicator}</p>}
-        <div className="mt-3 flex flex-col gap-2">{ratings.map(r=><label key={r.key} className="flex min-h-11 items-center gap-2 rounded border border-ink/15 px-3 py-2">
+        <div className="mt-3 flex flex-col gap-2">{ratings.map(r=><label key={r.key} className={`flex min-h-11 items-center gap-2 rounded border px-3 py-2 ${ratingStyle[r.key]} ${answers[item.id]===r.key?'ring-2 ring-primary ring-offset-1':''}`}>
           <input type="radio" name={`case-${item.id}`} value={r.key} checked={answers[item.id]===r.key} disabled={busy}
             onChange={()=>setAnswers(prev=>({...prev,[item.id]:r.key}))}/>{local(r.label)}
         </label>)}</div>

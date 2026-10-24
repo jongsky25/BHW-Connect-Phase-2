@@ -12,6 +12,15 @@ const state:OrientationState={orientation_version:'test-v1',ready:true,passed:fa
 const props={chapterId:'chapter-1-id',chapterHref:'/training/manual/assessor/chapter-1',locale:'en'};
 
 describe('assessor orientation',()=>{
+  it('keeps labeled green, amber and red rating guidance available after completion',()=>{
+    render(<AssessorOrientation {...props} initial={{...state,passed:true}}/>);
+    const guide=within(screen.getByRole('region',{name:'Scoring guide'}));
+    expect(guide.getByText('Kaya na (can do)')).toHaveClass('bg-success/10');
+    expect(guide.getByText('Kailangan pa ng practice (needs practice)')).toHaveClass('bg-warning/15');
+    expect(guide.getByText('Hindi pa (not yet)')).toHaveClass('bg-danger/10');
+    expect(guide.getByText(/Base the rating on observed evidence/)).toBeInTheDocument();
+    expect(rpc).not.toHaveBeenCalled();
+  });
   it('shows Chapter II and requires every safety case',()=>{
     render(<AssessorOrientation {...props} chapterLabel={{fil:'Kabanata II',en:'Chapter II'}} initial={{...state,passed:true,
       cases:state.cases!.map((item,index)=>({...item,critical:index<2}))}}/>);
