@@ -1,0 +1,152 @@
+{
+  "lesson_key": "bhw-legal-role",
+  "content_hash": "7a4880da236ea31a78647bb447ba6ff66eb7be701eb442059c3fabf77eddc57e",
+  "scene": {
+    "id": "demi-legal-basis",
+    "path": "/training/bhw-1-4/demi-legal-basis-032a985f9c33.png",
+    "content_hash": "032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2"
+  },
+  "source": {
+    "id": "ra7883-definition",
+    "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html"
+  },
+  "panels": {
+    "section-1": {
+      "en": {
+        "title": "Who is helping Demi?",
+        "cards": [
+          {
+            "label": "Demi",
+            "text": "Instead of guessing, she asks the health team about the legal basis and how to verify her training and accreditation.",
+            "source_section": "section-1"
+          },
+          {
+            "label": "Health-team support person · fictional",
+            "text": "A supervisor or RHU can identify the current local contact and process.",
+            "source_section": "roles-and-authority"
+          }
+        ],
+        "caption": "The support person is a fictional learning character. Check the legal rule in the cited law and Demi’s status through the appropriate local records."
+      },
+      "fil": {
+        "title": "Sino ang tumutulong kay Demi?",
+        "cards": [
+          {
+            "label": "Demi",
+            "text": "Sa halip na manghula, nagtanong siya sa health team kung ano ang legal na batayan at paano matitiyak ang kaniyang pagsasanay at akreditasyon.",
+            "source_section": "section-1"
+          },
+          {
+            "label": "Health-team support person · kathang-isip",
+            "text": "Maaaring ituro ng supervisor o RHU ang kasalukuyang lokal na contact at proseso.",
+            "source_section": "roles-and-authority"
+          }
+        ],
+        "caption": "Kathang-isip na tauhan sa pag-aaral ang support person. Tiyakin ang legal na batayan sa binanggit na batas at ang katayuan ni Demi sa tamang lokal na rekord."
+      }
+    },
+    "section-2": {
+      "en": {
+        "title": "Check the legal source",
+        "cards": [
+          {
+            "label": "RA 7883 · section 3",
+            "text": "Republic Act 7883 is the Barangay Health Workers’ Benefits and Incentives Act of 1995. Section 3 defines a BHW as a person who has undergone training programs under an accredited government or nongovernment organization. The person voluntarily provides primary health care services in the community after accreditation to function as a BHW by the local health board, following Department of Health guidelines.",
+            "source_section": "section-2"
+          }
+        ],
+        "caption": "This is a plain-language explanation of the definition, not a direct quotation."
+      },
+      "fil": {
+        "title": "Tingnan ang batayang batas",
+        "cards": [
+          {
+            "label": "RA 7883 · seksiyon 3",
+            "text": "Ang Republic Act 7883 ay ang Barangay Health Workers’ Benefits and Incentives Act of 1995. Sa seksiyon 3, ang BHW ay taong dumaan sa mga programang pagsasanay sa ilalim ng akreditadong organisasyong pampamahalaan o di-pampamahalaan. Boluntaryo siyang nagbibigay ng primary health care services sa komunidad matapos ma-akreditang gumanap bilang BHW ng local health board, ayon sa mga gabay ng Department of Health.",
+            "source_section": "section-2"
+          }
+        ],
+        "caption": "Payak na paliwanag ito ng depinisyon, hindi direktang sipi."
+      }
+    },
+    "roles-and-authority": {
+      "en": {
+        "title": "Guidance and accreditation are different roles",
+        "cards": [
+          {
+            "label": "Training provider",
+            "text": "A training provider can help clarify the training record.",
+            "source_section": "roles-and-authority"
+          },
+          {
+            "label": "Supervisor or RHU",
+            "text": "A supervisor or RHU can identify the current local contact and process.",
+            "source_section": "roles-and-authority"
+          },
+          {
+            "label": "Local health board",
+            "text": "Section 3, however, identifies the local health board as the accreditation authority under DOH guidelines.",
+            "source_section": "roles-and-authority"
+          }
+        ],
+        "caption": "Demi does not accredit herself. A fellow BHW’s agreement or a supervisor’s invitation is insufficient proof of a board decision."
+      },
+      "fil": {
+        "title": "Magkaiba ang paggabay at pag-aakredita",
+        "cards": [
+          {
+            "label": "Training provider",
+            "text": "Maaaring tulungan ng training provider na linawin ang rekord ng pagsasanay.",
+            "source_section": "roles-and-authority"
+          },
+          {
+            "label": "Supervisor o RHU",
+            "text": "Maaaring ituro ng supervisor o RHU ang kasalukuyang lokal na contact at proseso.",
+            "source_section": "roles-and-authority"
+          },
+          {
+            "label": "Local health board",
+            "text": "Ngunit ang local health board ang tinutukoy ng seksiyon 3 bilang awtoridad sa akreditasyon, alinsunod sa mga gabay ng DOH.",
+            "source_section": "roles-and-authority"
+          }
+        ],
+        "caption": "Hindi inaakreditahan ni Demi ang sarili. Hindi rin sapat ang pagsang-ayon ng kapwa BHW o ang paanyaya ng supervisor bilang patunay ng desisyon ng board."
+      }
+    }
+  },
+  "story": {
+    "id": "bhw-legal-role-story",
+    "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-5cf40e107789-poster.jpg",
+    "content_hash": "5cf40e107789fbcfec55b0fa90458e175093017b4ce2ba6e0529b6a989e35b88",
+    "videos": {
+      "fil": {
+        "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-41631ff8f4fd.mp4",
+        "content_hash": "41631ff8f4fdc2b3f3108bf9153f9b98c3af2ea5dc7cb6ab62cafecdb7d367fa",
+        "duration_s": 79,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-ad668b8cda77.vtt",
+          "content_hash": "ad668b8cda77033cde29d0e83f043bd7ff5ae6e6374b5aff0da0a77e70de6247"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-legal-role-gemini-fil-5cf40e107789-poster.jpg",
+          "content_hash": "5cf40e107789fbcfec55b0fa90458e175093017b4ce2ba6e0529b6a989e35b88"
+        }
+      },
+      "en": {
+        "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-66fe85800653.mp4",
+        "content_hash": "66fe858006535aff9fb53da30b8278db51cfbf77f4ef0cfc83aec22841d8e027",
+        "duration_s": 73,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-a6dae5eba731.vtt",
+          "content_hash": "a6dae5eba731a534b70907c383b431b778b811e49d70063a86128244bad10be3"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-legal-role-gemini-en-8bfa7ba565fc-poster.jpg",
+          "content_hash": "8bfa7ba565fc7f7247b83ae088bb55bcbee54f5012261d69bdda9c9cb9c9773c"
+        }
+      }
+    },
+    "en": "Demi and the health-team support person are fictional learning characters. The health team helps with the verification route; accreditation is the local health board’s role under DOH guidelines.",
+    "fil": "Kathang-isip na tauhan sa pag-aaral sina Demi at ang health-team support person. Tumutulong ang health team sa pag-alam ng tamang daan sa pag-verify; tungkulin ng local health board ang akreditasyon ayon sa gabay ng DOH."
+  }
+}
