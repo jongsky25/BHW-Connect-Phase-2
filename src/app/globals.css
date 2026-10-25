@@ -824,3 +824,8 @@ body {
   [data-assessor-certificate] .assessor-certificate-actions { display: none; }
   .assessor-certificate-document { border: 1px solid #555; border-radius: 0; break-inside: avoid; }
 }
+
+/* Keep the definition lesson's slash-separated practice phrases in the reader. */
+article[data-lesson="problem-define"] {
+  overflow-wrap: anywhere;
+}
