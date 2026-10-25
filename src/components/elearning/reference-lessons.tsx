@@ -30,6 +30,8 @@ import { relationshipLearningVisual } from '@/lib/elearning/relationship-learnin
 import {isHepoPresentation, hepoSlideDisplay} from '@/lib/elearning/hepo-presentation';
 import {HepoPresentationGuide} from './hepo-presentation-guide';
 import {enterNarrationScope} from '@/lib/elearning/narration-preferences';
+import {prioritizationNarratedLesson} from '@/lib/elearning/prioritization-narrated-lesson';
+import {NarrationAccessGuide} from './narration-access-guide';
 import { FittedLessonPage } from "./fitted-lesson-page";
 import { storyQuestionUi, translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
 
@@ -308,7 +310,8 @@ export function ReferenceLessons(props: Props) {
   const featuredAsset = lesson?.revision.featured_asset_id
     ? lesson.revision.assets.find((a) => a.id === lesson.revision.featured_asset_id)
     : undefined;
-  const featuredVideo = featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined;
+  const illustratedNarration = lesson && !translation ? prioritizationNarratedLesson(lesson, lessonNarration, en) : null;
+  const featuredVideo = (featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined) ?? illustratedNarration?.asset;
   const narratedStory = Boolean(featuredVideo?.videos);
   const selfManagementRevision = lesson?.lesson_key === "bhw-self-management" && lesson.revision.assets.some(asset => asset.id === "malou-self-priorities");
   const selfManagementTracks = selfManagementRevision ? Object.values(props.narration?.[lesson.id] ?? {}) : [];
@@ -352,7 +355,7 @@ export function ReferenceLessons(props: Props) {
   const handoffTracks = handoffRevision ? Object.values(lessonNarration ?? {}) : [];
   const handoffMinutes = handoffTracks.length === 6 ? Math.ceil(handoffTracks.reduce((sum, track) => sum + track.duration_seconds, 0) / 60 + 3) : null;
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item) && (!resourcesMonitorRevision || checksAnswered);
-  const videoLabel = narratedStory
+  const videoLabel = illustratedNarration ? ui("Araling may larawan at salaysay", "Illustrated narrated lesson") : narratedStory
     ? ui("Kuwentong may salaysay", "Narrated story")
     : "Video";
   const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered;
@@ -633,11 +636,12 @@ export function ReferenceLessons(props: Props) {
           <figcaption>{storyArt.caption}<AiVisualLabel path={storyArt.src} en={en}/></figcaption>
         </figure>}
         <div className={storyLayout ? "reference-story-copy" : undefined}>
+        <NarrationAccessGuide lesson={lesson} position={item.id} narration={lessonNarration} en={en} slides={mode === "slides"} translated={!!translation} illustrated={!!illustratedNarration}/>
         {hepoPresentation && <HepoPresentationGuide position={item.id} index={index} count={items.length} slides={mode === "slides"} en={en}/>}
         {storyVideoPrompt && !(hepoPresentation && mode === "slides") && <button type="button"
-          className={`mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold ${hepoPresentation ? "text-ink" : "text-primary-text"} hover:bg-primary/20`}
+          className={`mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold ${hepoPresentation || illustratedNarration ? "text-ink" : "text-primary-text"} hover:bg-primary/20`}
           onClick={() => setVideoSelected(true)}>
-          {ui("▶ Panoorin ang animadong kuwento na may salaysay", "▶ Watch the animated narrated story")}
+          {illustratedNarration ? ui("▶ Panoorin ang araling may larawan at salaysay", "▶ Watch the illustrated narrated lesson") : ui("▶ Panoorin ang animadong kuwento na may salaysay", "▶ Watch the animated narrated story")}
         </button>}
         {"display_fil" in item ? (
           <>
@@ -753,7 +757,7 @@ export function ReferenceLessons(props: Props) {
       {storySupplement && <StoryCaseContext cases={storySupplement.cases} en={en}/>}
       <LessonAssetFigure
         asset={featuredVideo}
-        transcript={storySupplement?.transcript}
+        transcript={storySupplement?.transcript ?? illustratedNarration?.transcript}
         en={en}
         language={translation?.language}
         onEnded={props.storyQuestionHandoff && narratedStory && !done.has(lesson.id) ? continueToQuestion : undefined}

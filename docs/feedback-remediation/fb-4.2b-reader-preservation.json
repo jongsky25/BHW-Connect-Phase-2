@@ -1,0 +1,44 @@
+{
+  "purpose": "Bind the derived five-section narrated lesson and audio discovery guide; preserve the complete prior reader and all old approval receipts.",
+  "base_commit": "2b65e3292069b150167124c5bb1741439a4b665f",
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "48e0332c3716fcf1bd455398273d6271a986a14998ba160517eb0c58f65963c7",
+  "successor_sha256": "55cc819b8771e80f70b5a08567cf117cd8f4f648476f4286215cb896252bb40f",
+  "replacements": [
+    {
+      "predecessor_utf8": "import {enterNarrationScope} from '@/lib/elearning/narration-preferences';",
+      "current_utf8": "import {enterNarrationScope} from '@/lib/elearning/narration-preferences';\nimport {prioritizationNarratedLesson} from '@/lib/elearning/prioritization-narrated-lesson';\nimport {NarrationAccessGuide} from './narration-access-guide';",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "  const featuredVideo = featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined;",
+      "current_utf8": "  const illustratedNarration = lesson && !translation ? prioritizationNarratedLesson(lesson, lessonNarration, en) : null;\n  const featuredVideo = (featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined) ?? illustratedNarration?.asset;",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "  const videoLabel = narratedStory\n",
+      "current_utf8": "  const videoLabel = illustratedNarration ? ui(\"Araling may larawan at salaysay\", \"Illustrated narrated lesson\") : narratedStory\n",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "        {hepoPresentation && <HepoPresentationGuide",
+      "current_utf8": "        <NarrationAccessGuide lesson={lesson} position={item.id} narration={lessonNarration} en={en} slides={mode === \"slides\"} translated={!!translation} illustrated={!!illustratedNarration}/>\n        {hepoPresentation && <HepoPresentationGuide",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "{ui(\"\u25b6 Panoorin ang animadong kuwento na may salaysay\", \"\u25b6 Watch the animated narrated story\")}",
+      "current_utf8": "{illustratedNarration ? ui(\"\u25b6 Panoorin ang araling may larawan at salaysay\", \"\u25b6 Watch the illustrated narrated lesson\") : ui(\"\u25b6 Panoorin ang animadong kuwento na may salaysay\", \"\u25b6 Watch the animated narrated story\")}",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "        transcript={storySupplement?.transcript}",
+      "current_utf8": "        transcript={storySupplement?.transcript ?? illustratedNarration?.transcript}",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "${hepoPresentation ? \"text-ink\" : \"text-primary-text\"}",
+      "current_utf8": "${hepoPresentation || illustratedNarration ? \"text-ink\" : \"text-primary-text\"}",
+      "count": 1
+    }
+  ]
+}

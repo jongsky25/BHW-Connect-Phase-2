@@ -1,0 +1,106 @@
+{
+  "fil": {
+    "video": {
+      "path": "/training/narrated-lessons/problem-prioritize/prioritize-illustrated-fil-ed028845ac42.mp4",
+      "content_hash": "ed028845ac42bc3e0168f2f75848f103478e0689e2dc54f8f5bd70b17947de40",
+      "duration_s": 523.337,
+      "poster": {
+        "path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+        "content_hash": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf"
+      },
+      "captions": {
+        "path": "/training/narrated-lessons/problem-prioritize/prioritize-illustrated-fil-36291f7d7fbd.vtt",
+        "content_hash": "36291f7d7fbd08db403b676e0fc1acd002d2796e05acbf1a04f9731ea5b9ce04"
+      }
+    },
+    "bytes": 6086297,
+    "codecs": [
+      "h264",
+      "aac"
+    ],
+    "dimensions": [
+      854,
+      480
+    ],
+    "audio_hz": 24000,
+    "audio_channels": 1,
+    "rms_db": -17.197495,
+    "peak_db": -0.315997,
+    "all_five_scene_matches": [
+      {
+        "section": "criteria",
+        "ssim": 0.976578
+      },
+      {
+        "section": "worked-scores",
+        "ssim": 0.982912
+      },
+      {
+        "section": "score-evidence",
+        "ssim": 0.982571
+      },
+      {
+        "section": "tie-and-urgent-care",
+        "ssim": 0.981939
+      },
+      {
+        "section": "practice",
+        "ssim": 0.982675
+      }
+    ],
+    "fast_start": true,
+    "final_check_excluded": true
+  },
+  "en": {
+    "video": {
+      "path": "/training/narrated-lessons/problem-prioritize/prioritize-illustrated-en-81f072265188.mp4",
+      "content_hash": "81f072265188730c29469b23321a50b53a3e24670fee673675535c7b89340361",
+      "duration_s": 477.916667,
+      "poster": {
+        "path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+        "content_hash": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf"
+      },
+      "captions": {
+        "path": "/training/narrated-lessons/problem-prioritize/prioritize-illustrated-en-3840ecdb0403.vtt",
+        "content_hash": "3840ecdb0403fd59b4a15a493f58768c2d88bb441e7c44860df50fc72080848c"
+      }
+    },
+    "bytes": 5519572,
+    "codecs": [
+      "h264",
+      "aac"
+    ],
+    "dimensions": [
+      854,
+      480
+    ],
+    "audio_hz": 24000,
+    "audio_channels": 1,
+    "rms_db": -17.611265,
+    "peak_db": -0.046543,
+    "all_five_scene_matches": [
+      {
+        "section": "criteria",
+        "ssim": 0.976578
+      },
+      {
+        "section": "worked-scores",
+        "ssim": 0.982912
+      },
+      {
+        "section": "score-evidence",
+        "ssim": 0.982571
+      },
+      {
+        "section": "tie-and-urgent-care",
+        "ssim": 0.981939
+      },
+      {
+        "section": "practice",
+        "ssim": 0.982675
+      }
+    ],
+    "fast_start": true,
+    "final_check_excluded": true
+  }
+}
