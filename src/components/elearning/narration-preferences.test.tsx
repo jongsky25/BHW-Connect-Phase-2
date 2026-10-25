@@ -114,3 +114,10 @@ it('ignores an old section play rejection after navigating to the next player',a
   expect(screen.queryByRole('status')).not.toBeInTheDocument();
   second.unmount();render(section());expect(HTMLMediaElement.prototype.play).toHaveBeenCalledTimes(3);
 });
+
+it('retains the speed for this visit when storage can be read but writes are rejected',()=>{
+  vi.spyOn(Storage.prototype,'setItem').mockImplementation(()=>{throw Error('QuotaExceededError');});
+  const view=render(section());fireEvent.change(screen.getByLabelText('Speed'),{target:{value:'1.25'}});
+  expect(view.container.querySelector('audio')!.playbackRate).toBe(1.25);
+  view.unmount();render(section('another-lesson'));expect(screen.getByLabelText('Speed')).toHaveValue('1.25');
+});

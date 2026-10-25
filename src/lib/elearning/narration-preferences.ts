@@ -7,6 +7,7 @@ export type NarrationSpeed = (typeof NARRATION_SPEEDS)[number];
 export const NARRATION_SPEED_KEY = "bhw:narration-speed:v1";
 const CHANGE = "bhw:narration-preferences";
 let fallbackSpeed: NarrationSpeed = 1;
+let storageWriteFailed = false;
 // Listening intent lives only in this tab's current lesson, never in storage.
 let continuation = { scope: "", enabled: false, armed: false };
 
@@ -23,6 +24,7 @@ function validSpeed(value: number): value is NarrationSpeed {
   return NARRATION_SPEEDS.some(speed => speed === value);
 }
 function readSpeed(): NarrationSpeed {
+  if (storageWriteFailed) return fallbackSpeed;
   try {
     const stored = window.localStorage.getItem(NARRATION_SPEED_KEY);
     return stored !== null && validSpeed(Number(stored)) ? Number(stored) as NarrationSpeed : 1;
@@ -32,7 +34,10 @@ function readSpeed(): NarrationSpeed {
 export function setNarrationSpeed(speed: number) {
   if (!validSpeed(speed)) return;
   fallbackSpeed = speed;
-  try { window.localStorage.setItem(NARRATION_SPEED_KEY, String(speed)); } catch { /* Optional storage. */ }
+  try {
+    window.localStorage.setItem(NARRATION_SPEED_KEY, String(speed));
+    storageWriteFailed = false;
+  } catch { storageWriteFailed = true; }
   notify();
 }
 export function useNarrationSpeed() {
