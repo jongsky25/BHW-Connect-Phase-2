@@ -146,8 +146,10 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
     el.playbackRate = speed;
     setFailed(false);
     el.play()?.catch?.(() => {
-      pauseNarrationContinuation();
-      setFailed(true);
+      if (!leaving.current) {
+        pauseNarrationContinuation();
+        setFailed(true);
+      }
     });
   }
 

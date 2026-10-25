@@ -101,3 +101,16 @@ it('never renders playback controls or starts stale audio',()=>{
   expect(screen.queryByRole('checkbox')).not.toBeInTheDocument();expect(screen.queryByRole('button')).not.toBeInTheDocument();
   expect(HTMLMediaElement.prototype.play).toHaveBeenCalledTimes(1);
 });
+
+it('ignores an old section play rejection after navigating to the next player',async()=>{
+  let rejectOld!:(reason:Error)=>void;
+  vi.mocked(HTMLMediaElement.prototype.play).mockImplementationOnce(function(this:HTMLMediaElement){
+    fireEvent.play(this);
+    return new Promise<void>((_resolve,reject)=>{rejectOld=reject;});
+  });
+  const first=render(section());enable();play();first.unmount();
+  const second=render(section());
+  await act(async()=>{rejectOld(Error('AbortError: old audio removed'));});
+  expect(screen.queryByRole('status')).not.toBeInTheDocument();
+  second.unmount();render(section());expect(HTMLMediaElement.prototype.play).toHaveBeenCalledTimes(3);
+});
