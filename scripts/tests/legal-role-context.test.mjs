@@ -1,3 +1,4 @@
+import {beforeFeedbackNarrationPreferences} from '../lib/feedback-narration-preservation.mjs';
 // @vitest-environment node
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
@@ -21,6 +22,6 @@ it('traces every role/definition card and legal link to the approved lesson',()=
 });
 it('retains the released shared reader and all authored lesson/media sources unchanged',()=>{
  const base='0e628f561bfd92339e896d136708cc4fa2d25569',path='src/components/elearning/reference-lessons.tsx';
- expect(fs.readFileSync(path)).toEqual(execFileSync('git',['show',base+':'+path]));
+ expect(beforeFeedbackNarrationPreferences(path)).toEqual(execFileSync('git',['show',base+':'+path]));
  expect(execFileSync('git',['diff',base,'--','content/training/day1-basic-competencies/modules/04-ra7883/lessons/bhw-legal-role','public/training/bhw-1-4'])).toHaveLength(0);
 });

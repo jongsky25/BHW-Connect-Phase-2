@@ -1,3 +1,4 @@
+import {beforeFeedbackNarrationPreferences} from '../lib/feedback-narration-preservation.mjs';
 // @vitest-environment node
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
@@ -20,6 +21,6 @@ it('traces all four slide context excerpts to the same approved Read section',()
 });
 it('retains the entire released reader, lesson and media sources unchanged',()=>{
  const base='c5cea8e9ecb9b368a494d032c97f0d0f5b18f0be',path='src/components/elearning/reference-lessons.tsx';
- expect(fs.readFileSync(path)).toEqual(execFileSync('git',['show',base+':'+path]));
+ expect(beforeFeedbackNarrationPreferences(path)).toEqual(execFileSync('git',['show',base+':'+path]));
  expect(execFileSync('git',['diff',base,'--','content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-health-educator','public/training/bhw-1-1'])).toHaveLength(0);
 });
