@@ -1,4 +1,4 @@
-import {cleanup,render,screen} from '@testing-library/react';
+import {cleanup,render,screen,within} from '@testing-library/react';
 import {afterEach,beforeEach,describe,expect,it,vi} from 'vitest';
 import StudyPage from './[programId]/assessor/[chapterKey]/[[...path]]/page';
 import manifest from '../../../content/assessor/bhw-reference-manual.v1.json';
@@ -11,6 +11,7 @@ vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale}));
 vi.mock('@/lib/auth/viewer',()=>({getViewer:async()=>({appUser:{id:'self',role:state.actualRole,status:state.active?'active':'deactivated'},role:state.role,isPreview:state.preview})}));
 vi.mock('@/lib/supabase/request',()=>({getRequestFeatureFlags:async()=>({elearning:state.enabled,assessor_flow_ui:state.ui})}));
 vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({storyQuestionHandoff,readOnly,assessorChapterId,nextLessonHref}:{storyQuestionHandoff?:boolean;readOnly:boolean;assessorChapterId:string;nextLessonHref?:string})=><div data-story-handoff={String(storyQuestionHandoff)} data-readonly={String(readOnly)} data-chapter={assessorChapterId} data-next={nextLessonHref}>Study reader</div>}));
+vi.mock('@/components/elearning/assessor-exam',()=>({AssessorExam:()=> <div>Existing exam</div>}));
 vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({rpc:async(name:string)=>{state.calls.push(name);return {data:name==='rpc_assessor_flow_policy'?state.policy:name==='rpc_assessor_qualification_state'?state.qualification:state.acknowledgement,error:null}},from:(table:string)=>{
   state.calls.push(table);let single=false;
   const filters:Array<(r:Record<string,unknown>)=>boolean>=[];
@@ -36,6 +37,42 @@ beforeEach(()=>{
 afterEach(cleanup);
 const page=(path:string[]=[],chapterKey='chapter-1')=>StudyPage({params:Promise.resolve({programId:'manual',chapterKey,path})});
 describe('assessor study route',()=>{
+  it.each(['en','fil'])('offers a refresher over only personally completed current revisions (%s)',async locale=>{
+    state.locale=locale;
+    state.rows.assessor_lesson_progress.push({assessor_user_id:'self',chapter_id:'ch1',lesson_id:'l1',revision_id:'r1'});
+    render(await page());
+    const review=screen.getByRole('region',{name:locale==='en'?'Optional refresher review':'Opsyonal na balik-aral'});
+    expect(within(review).getByText(locale==='en'?'Review completed lessons (1)':'Balikan ang natapos na mga aralin (1)')).toBeInTheDocument();
+    expect(review.querySelectorAll('a')).toHaveLength(1);
+    expect(review.querySelector('a')).toHaveAttribute('href','/training/manual/assessor/chapter-1/m1/l1');
+    expect(screen.getByRole('link',{name:locale==='en'?'Continue studying':'Magpatuloy sa pag-aaral'})).toHaveAttribute('href','/training/manual/assessor/chapter-1/m1/l2');
+    expect(review).toHaveAttribute('tabindex','-1');
+    expect(state.calls.filter(n=>n.startsWith('rpc_'))).toEqual([]);
+  });
+  it('does not count another assessor, old revisions or unpublished lessons as refresher completion',async()=>{
+    state.rows.assessor_lesson_progress.push({assessor_user_id:'self',chapter_id:'ch1',lesson_id:'l2',revision_id:'old'});
+    state.rows.course_lessons.push({id:'unpublished',module_id:'m1',lesson_key:'bhw-roles-application',position:2,published_revision_id:null,title_en:'Draft'});
+    state.rows.assessor_lesson_progress.push({assessor_user_id:'self',chapter_id:'ch1',lesson_id:'unpublished',revision_id:'old'});
+    render(await page());
+    const review=screen.getByRole('region',{name:'Optional refresher review'});
+    expect(review.querySelector('a')).toBeNull();
+    expect(within(review).getByText(/Completed lessons will appear here/)).toBeInTheDocument();
+  });
+  it('keeps refresher navigation behind existing pretest requirements and out of exams',async()=>{
+    state.rows.assessor_exam_attempts=[];
+    const first=render(await page());
+    expect(screen.queryByRole('link',{name:'Refresher review and study pace'})).toBeNull();
+    expect(screen.queryByRole('region',{name:'Optional refresher review'})).toBeNull();first.unmount();
+    render(await page(['exam','pretest']));
+    expect(screen.queryByRole('link',{name:'Refresher review and study pace'})).toBeNull();
+    expect(screen.queryByRole('region',{name:'Optional refresher review'})).toBeNull();
+  });
+  it('links a lesson back to the chapter refresher without adding another list or qualification read',async()=>{
+    render(await page(['m1','l1']));
+    expect(screen.getByRole('link',{name:'Refresher review and study pace'})).toHaveAttribute('href','/training/manual/assessor/chapter-1#assessor-refresher-review');
+    expect(screen.queryByRole('region',{name:'Optional refresher review'})).toBeNull();
+    expect(state.calls).not.toContain('rpc_assessor_qualification_state');
+  });
   it.each(['en','fil'])('shows personal-study chapter context and real outline links (%s)',async(locale)=>{
     state.locale=locale;render(await page(['m1','l1']));
     const heading=screen.getByRole('heading',{level:1,name:'HEPO'}).closest('header')!;
@@ -202,6 +239,7 @@ it('keeps the progress shortcut on a nested Chapter 2 lesson in its own chapter'
  state.rows.course_lessons[0].lesson_key=manifest.chapters.find(c=>c.chapter_key==='chapter-2')!.modules[0].required_lesson_keys[0];
  render(await page(['m1','l1'],'chapter-2'));
  expect(screen.getByRole('link',{name:'Study progress and lesson list'})).toHaveAttribute('href','/training/manual/assessor/chapter-2#assessor-study-progress');
+ expect(screen.getByRole('link',{name:'Refresher review and study pace'})).toHaveAttribute('href','/training/manual/assessor/chapter-2#assessor-refresher-review');
  expect(screen.queryByRole('link',{name:'Chapter 1 working area'})).toBeNull();
  expect(state.calls).not.toContain('rpc_assessor_qualification_ensure');
 });

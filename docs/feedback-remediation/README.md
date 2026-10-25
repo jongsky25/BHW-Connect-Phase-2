@@ -714,3 +714,7 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 ## FB-5.1b — assessor guide access and assessment eligibility
 
 [Review and delivery](fb-5.1b-assessor-guide-access.md) assesses the request to lock a facilitator subchapter before training. The accepted flow permits reference access during preparation; installed formal-start functions separately check current authority, assignment and BHW readiness. Adds an explicit bilingual explanation and current-chapter preparation/certification links without a blanket guide lock. Disposable tests verify missing authority still blocks an otherwise arranged formal assessment, and opening the guide leaves personal evidence unchanged. Original feedback stays open for live comments; CI and production receipts are in the release PR.
+
+## FB-5.1c — optional assessor refresher review and study pace
+
+[Review and delivery](fb-5.1c-assessor-refresher-review.md) assesses refresher-course and daily/time-limit requests. Adds a clear optional review entry point over personally completed current-revision chapter lessons and explains self-paced study versus agreed formal assessment schedules. Existing prerequisites, completion and certification remain; no arbitrary cap, deadline, separate curriculum or renewal qualification is introduced. Original feedback stays open for live comments; CI and production receipts are in the release PR.

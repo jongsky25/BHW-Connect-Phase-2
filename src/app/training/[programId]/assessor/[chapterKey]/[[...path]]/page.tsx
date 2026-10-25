@@ -1,5 +1,6 @@
 import {LessonPageHeading} from '@/components/elearning/lesson-page-heading';
 import {AssessorStudyProgressLink, ASSESSOR_STUDY_PROGRESS_ID} from '@/components/elearning/assessor-progress-navigation';
+import {AssessorRefresherLink,AssessorRefresherReview} from '@/components/elearning/assessor-refresher-review';
 import {parseSimulationState} from '@/lib/assessor/simulation-runner';
 import Link from 'next/link';
 import {notFound,redirect} from 'next/navigation';
@@ -164,6 +165,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       learnerId={viewer.appUser.id} language={en?'en':'fil'}/>}
     <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/qualifications`}>{text('Aking mga sertipikasyon','My certifications')}</Link>
     {!examPage && <AssessorStudyProgressLink chapterHref={base} locale={locale}/>}
+    {!examPage && pretestDone && <AssessorRefresherLink chapterHref={base} locale={locale}/>}
     {chapterKey==='chapter-1' && <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/workspace`}>{text('Working area ng Kabanata 1','Chapter 1 working area')}</Link>}
     {briefingVisible && <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`${base}/briefing`}>{text('Mga layunin at responsibilidad sa Kabanata 1','Chapter 1 objectives and responsibilities')}</Link>}
     <div id={ASSESSOR_STUDY_PROGRESS_ID} tabIndex={-1} className="scroll-mt-40 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary md:scroll-mt-28">
@@ -184,6 +186,8 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       {posttestPassed&&!curriculum?.orientationAvailable&&<p className="mt-2">{text('Pumasa ka sa pagsusulit. Susunod ang oryentasyon sa pagmamarka kapag available na ito.','You passed the exam. Scoring orientation is the next step when available.')}</p>}
     </section>}
     </div>
+    {!examPage && showPreparation && pretestDone && <AssessorRefresherReview locale={locale}
+      lessons={study.entries.flatMap(e=>e.done&&e.lesson?[{href:href(e.lesson),title:title(e.lesson)}]:[])}/>}
     {examPage?(examPhase==='posttest'&&!posttestReady
       ?<p>{text('Kumpletuhin muna ang diagnostic pretest at lahat ng aralin bago kumuha ng pangwakas na pagsusulit.','Complete the diagnostic pretest and every lesson before taking the post-test.')}</p>
       :<AssessorExam chapterId={chapter.id} phase={examPhase as 'pretest'|'posttest'} locale={en?'en':'fil'} chapterHref={base}/>)

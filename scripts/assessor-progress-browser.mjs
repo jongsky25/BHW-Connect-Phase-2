@@ -21,6 +21,26 @@ try{
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!['GET','HEAD'].includes(r.method()))requests.push(r.method()+' '+r.url());});
   const name=(eng,fil)=>lang==='en'?eng:fil;
   const open=state=>page.goto(`${server.resolvedUrls.local[0]}?lang=${lang}&theme=${theme}&state=${state}`);
+  for(const state of ['refresher','refresher-empty']){
+   await open(state);
+   await page.getByRole('link',{name:name('Refresher review and study pace','Balik-aral at bilis ng pag-aaral')}).click();
+   const review=page.getByRole('region',{name:name('Optional refresher review','Opsyonal na balik-aral')});
+   await expect(review).toBeFocused();
+   const reviewClearance=await review.evaluate(n=>({top:n.getBoundingClientRect().top,header:document.querySelector('[data-fixture-header]').getBoundingClientRect().bottom}));
+   expect(reviewClearance.top).toBeGreaterThanOrEqual(reviewClearance.header);
+   if(state==='refresher'){
+    const summary=review.locator('summary');await summary.focus();await page.keyboard.press('Enter');
+    await expect(review.getByRole('link')).toHaveCount(2);
+    await page.keyboard.press('Tab');await expect(review.getByRole('link').first()).toBeFocused();
+    await expect(review.getByRole('link').first()).toHaveAttribute('href','/training/manual/assessor/chapter-1/module/lesson-1');
+    const targets=await review.locator('summary,a').evaluateAll(nodes=>nodes.map(n=>({w:n.getBoundingClientRect().width,h:n.getBoundingClientRect().height})));
+    expect(targets.every(b=>b.h>=44&&b.w<=254)).toBe(true);
+   }else{await expect(review.locator('summary,a')).toHaveCount(0);}
+   expect((await new AxeBuilder({page}).include('main').analyze()).violations).toEqual([]);
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);
+   if(state==='refresher'&&process.env.ASSESSOR_PROGRESS_SCREENSHOTS){fs.mkdirSync(process.env.ASSESSOR_PROGRESS_SCREENSHOTS,{recursive:true});await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:join(process.env.ASSESSOR_PROGRESS_SCREENSHOTS,`refresher-${lang}-${theme}.png`),fullPage:true});}
+   cases++;
+  }
   await open('guide');
   const guideNav=page.getByRole('navigation',{name:name('My assessor preparation and requirements','Aking paghahanda at mga kailangan bilang assessor')});
   const guideLinks=guideNav.getByRole('link');

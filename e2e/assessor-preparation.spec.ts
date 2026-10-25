@@ -21,7 +21,7 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
   const assessor=await createThrowawayAssessor(request,cityToken,'00000000-0000-0000-0000-000000000004');
   const [actor]=await restGet(request,cityToken,`users?select=id&username=eq.${assessor.username}`) as Array<{id:string}>;
   expect(actor.id).toMatch(/^[a-f0-9-]{36}$/);
-  const course=randomUUID(),program=randomUUID(),chapter=randomUUID(),cohort=randomUUID(),guideModuleId=randomUUID();
+  const course=randomUUID(),program=randomUUID(),chapter=randomUUID(),cohort=randomUUID(),guideModuleId=randomUUID(),reviewLessonId=randomUUID(),reviewRevisionId=randomUUID();
   localSql(`
     insert into public.courses(id,org_unit_id,author_user_id,title_fil,title_en,status)
       select '${course}','00000000-0000-0000-0000-000000000006',id,'E2E assessor chapter','E2E assessor chapter','published' from public.users where username='admin.city.stable';
@@ -70,6 +70,7 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     const checklist=page.getByRole('region',{name:'Aking paghahanda sa Kabanata 1'});
     await expect(checklist).toBeVisible();
     await expect(checklist.getByRole('link',{name:'Kunin ang diagnostic pretest'})).toBeVisible();
+    await expect(page.getByRole('link',{name:'Balik-aral at bilis ng pag-aaral'})).toHaveCount(0);
     localSql(`insert into public.assessor_exam_attempts(assessor_user_id,chapter_id,curriculum_version,exam_id,phase,status,question_set_hash,question_count,score_percent,passed,answers,submitted_at)
       values('${actor.id}','${chapter}','2026-09-28.1','chapter-1:pretest','pretest','submitted',repeat('0',32),1,0,false,'[]',now());`);
     await page.reload();
@@ -89,11 +90,48 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     await expect(page).toHaveURL(`${base}#assessor-study-progress`);
     await expect(checklist.getByText('Sariling pag-aaral · 0 sa 42 aralin')).toBeVisible();
     expect(guideEvidence()).toBe(beforeNavigation);
+    await page.getByRole('link',{name:'Balik-aral at bilis ng pag-aaral'}).click();
+    await expect(page).toHaveURL(`${base}#assessor-refresher-review`);
+    const refresher=page.getByRole('region',{name:'Opsyonal na balik-aral'});
+    await expect(refresher.getByText(/Makikita rito ang mga natapos na aralin/)).toBeVisible();
+    expect(guideEvidence()).toBe(beforeNavigation);
+    // One clearly fictional, completed lesson in the disposable stack exercises
+    // reopening through the real reader. No assessment/award is issued.
+    localSql(`
+      insert into course_lessons(id,module_id,lesson_key,position,title_fil,title_en,objectives_fil,objectives_en)
+        values('${reviewLessonId}','${guideModuleId}','bhw-roles-hepo',0,'E2E refresher lesson','E2E refresher lesson',array['Kathang-isip na pagsasanay'],array['Fictional practice']);
+      insert into course_lesson_revisions(id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,created_by)
+        values('${reviewRevisionId}','${reviewLessonId}','e2e-refresher',repeat('0',64),
+          '[{"id":"intro","concept_ids":["fixture"],"heading_fil":"Kathang-isip na pagsasanay","heading_en":"Fictional practice","body_fil":"Halimbawa lamang para sa pagsusuri.","body_en":"Example for verification only.","asset_ids":[],"takeaway_fil":"Balikan ang aralin.","takeaway_en":"Review the lesson.","check":null}]',
+          '[{"id":"intro","concept_ids":["fixture"],"layout":"takeaway","heading_fil":"Pagsasanay","heading_en":"Practice","display_fil":"Halimbawa lamang.","display_en":"Example only.","asset_ids":[],"check":null}]','[]','[]','${actor.id}');
+      update course_lessons set published_revision_id='${reviewRevisionId}' where id='${reviewLessonId}';
+      insert into assessor_lesson_progress(assessor_user_id,chapter_id,lesson_id,revision_id)
+        values('${actor.id}','${chapter}','${reviewLessonId}','${reviewRevisionId}');
+    `);
+    const beforeReview=guideEvidence();
+    await page.reload();
+    const completedReview=refresher.locator('summary');
+    await expect(completedReview).toHaveText('Balikan ang natapos na mga aralin (1)');
+    await completedReview.click();
+    await refresher.getByRole('link',{name:'E2E refresher lesson'}).click();
+    await expect(page.getByRole('heading',{level:1,name:'E2E refresher lesson'})).toBeVisible();
+    await page.getByRole('link',{name:'Balik-aral at bilis ng pag-aaral'}).click();
+    await expect(page).toHaveURL(`${base}#assessor-refresher-review`);
+    await expect(refresher).toBeVisible();
+    const reviewClearance=await refresher.evaluate(n=>({target:n.getBoundingClientRect().top,header:document.querySelector('header.sticky')!.getBoundingClientRect().bottom}));
+    expect(reviewClearance.target).toBeGreaterThanOrEqual(reviewClearance.header);
+    expect(guideEvidence()).toBe(beforeReview);
+    await expect(checklist.getByText('Sariling pag-aaral · 1 sa 42 aralin')).toBeVisible();
     expect(localSql(`select count(*) from public.assessor_briefing_acknowledgements where assessor_user_id='${actor.id}' and program_id='${program}';`).trim()).toBe('1');
     expect(localSql(`select count(*) from public.audit_events where actor_user_id='${actor.id}' and event_type='assessor_briefing.acknowledged';`).trim()).toBe('1');
   } finally {
     localSql(`update public.feature_flags set enabled=false where key='assessor_flow_ui';
       delete from public.assessor_exam_attempts where chapter_id='${chapter}';
+      delete from public.assessor_lesson_resume where chapter_id='${chapter}';
+      delete from public.assessor_lesson_progress where chapter_id='${chapter}';
+      update public.course_lessons set published_revision_id=null where id='${reviewLessonId}';
+      delete from public.course_lesson_revisions where id='${reviewRevisionId}';
+      delete from public.course_lessons where id='${reviewLessonId}';
       delete from public.assessor_briefing_acknowledgements where program_id='${program}';
       delete from public.assessor_flow_cohort_members where cohort_id='${cohort}';
       delete from public.assessor_flow_cohorts where id='${cohort}';
