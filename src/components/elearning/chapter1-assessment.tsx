@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import {AssessmentLanguageNotice} from "./assessment-language-notice";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { NotesMarkdown } from "@/components/elearning/notes-markdown";
 import { createClient } from "@/lib/supabase/client";
 
@@ -72,6 +72,15 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   const responsesSaved = choiceCount + unknownCount;
   const atLastQuestion = position === total - 1;
   const allResponsesSaved = responsesSaved === total && !pending;
+  const sectionStart = Math.floor(position / 10) * 10;
+  const sectionEnd = Math.min(sectionStart + 10, total);
+  const sectionSaved = attempt?.items.slice(sectionStart, sectionEnd).filter(item => responseByItem.has(item.item_id)).length ?? 0;
+  const atPausePoint = (position + 1) % 10 === 0 && position < total - 1;
+
+  function leaveAssessment(event: MouseEvent<HTMLAnchorElement>) {
+    if (busy) { event.preventDefault(); setError(copy("Wait for the current save before leaving.", "Hintaying matapos ang pag-save bago umalis.")); }
+    else if (pending) { event.preventDefault(); setError(copy("Retry the unsaved change before leaving.", "Subukang i-save muli ang hindi pa na-save na pagbabago bago umalis.")); }
+  }
 
   async function refreshState() {
     const { data, error: requestError } = await createClient().rpc("rpc_learner_assessment_state", { p_course_id: courseId });
@@ -240,6 +249,15 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
           ? copy(`All ${total} responses are saved. Choose “Review all” to check them before submitting.`, `Naka-save na ang lahat ng ${total} sagot. Piliin ang “Balikan ang lahat” upang suriin bago isumite.`)
           : copy("You have reached the last question. Choose “Review all” to find questions that still need a response before submitting.", "Nasa huling tanong ka na. Piliin ang “Balikan ang lahat” upang makita ang mga kailangan pang sagutan bago isumite.")}
       </p>}
+      {atPausePoint && <aside aria-label={copy("Optional pause point", "Opsyonal na pahinga")} className="space-y-2 rounded-lg border border-ink/20 bg-canvas p-4">
+        <p className="font-semibold">{copy("You can take a break", "Maaari kang magpahinga")}</p>
+        <p>{copy(`This set: ${sectionSaved} of ${sectionEnd - sectionStart} responses saved.`, `Sa bahaging ito: ${sectionSaved} sa ${sectionEnd - sectionStart} sagot ang naka-save.`)}</p>
+        <p>{copy("Continue with Next, or pause and return later. There is no countdown. You can also save and leave after any question.", "Magpatuloy gamit ang Susunod, o magpahinga at bumalik mamaya. Walang countdown. Maaari ring mag-save at umalis pagkatapos ng alinmang tanong.")}</p>
+        {(busy || pending) && <p role="note">{copy("Wait for saving to finish, and retry any unsaved change before leaving.", "Hintaying matapos ang pag-save, at subukang muli ang hindi pa na-save na pagbabago bago umalis.")}</p>}
+        <Link className="inline-flex min-h-11 items-center underline" href={chapterHref} aria-disabled={busy || Boolean(pending)} onClick={leaveAssessment}>
+          {copy("Pause and return to chapter", "Magpahinga at bumalik sa kabanata")}
+        </Link>
+      </aside>}
       <nav className="flex flex-wrap gap-2" aria-label={copy("Question navigation", "Paglipat sa mga tanong")}>
         <button className={button} disabled={busy || position === 0} onClick={() => void move(position - 1)}>{copy("Previous", "Nakaraan")}</button>
         {!atLastQuestion && <button className={button} disabled={busy} onClick={() => void move(position + 1)}>{copy("Next", "Susunod")}</button>}
@@ -252,10 +270,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
             `Tanong ${i + 1}, ${pending?.item_id === item.item_id ? 'hindi pa naka-save' : savedResponses.has(item.item_id) ? 'may sagot' : 'walang sagot'}`)}
           aria-current={i === position ? "step" : undefined} onClick={() => void move(i)}>{i + 1}</button>)}
       </div>
-      <Link className="underline" href={chapterHref} onClick={event => {
-        if (busy) { event.preventDefault(); setError(copy("Wait for the current save before leaving.", "Hintaying matapos ang pag-save bago umalis.")); }
-        else if (pending) { event.preventDefault(); setError(copy("Retry the unsaved change before leaving.", "Subukang i-save muli ang hindi pa na-save na pagbabago bago umalis.")); }
-      }}>{copy("Save and leave", "I-save at umalis")}</Link>
+      <Link className="underline" href={chapterHref} aria-disabled={busy || Boolean(pending)} onClick={leaveAssessment}>{copy("Save and leave", "I-save at umalis")}</Link>
     </section>
   );
 
@@ -309,6 +324,10 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
     <h1 className="text-2xl font-semibold">{copy("Chapter 1 assessment", "Pagtatasa sa Kabanata 1")}</h1>
     {stage === "entry" && <AssessmentLanguageNotice en={lang === "en"}/>}
     <Link prefetch={false} href="/my-results" className="inline-flex min-h-11 items-center font-medium underline">{copy("View my test results and history", "Tingnan ang aking mga resulta at history")}</Link>
+    <aside aria-label={copy("Assessment length and breaks", "Haba ng pagtatasa at pahinga")} className="space-y-2 rounded-lg border border-ink/20 bg-canvas p-4">
+      <p className="font-semibold">{copy("30 questions in 3 sets of 10. No countdown.", "30 tanong sa 3 bahaging tig-10. Walang countdown.")}</p>
+      <p>{copy("You can take breaks. On a question screen, wait for Saved, then choose Save and leave. Resume opens your saved question and responses; pausing does not submit the test.", "Maaari kang magpahinga. Sa pahina ng tanong, hintaying lumabas ang Naka-save, saka piliin ang I-save at umalis. Ibabalik ng Ipagpatuloy ang naka-save na tanong at mga sagot; hindi isinusumite ng pagpapahinga ang pagsusulit.")}</p>
+    </aside>
     {finishInstructions}
     {pre && <p>{copy("Baseline submitted", "Naisumite na ang baseline")}: {pre.score_percent}%</p>}
     {post && <p>{copy("Post-test submitted", "Naisumite na ang post-test")}: {post.score_percent}%</p>}

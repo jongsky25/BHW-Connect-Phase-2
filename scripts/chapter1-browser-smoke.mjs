@@ -40,6 +40,7 @@ try {
 
   await page.goto(url);
   await expect(page.getByLabel('How to finish')).toBeVisible();
+  await expect(page.getByLabel('Assessment length and breaks')).toContainText('30 questions in 3 sets of 10. No countdown.');
   await page.getByRole('button', { name: 'Continue to chapter overview' }).click();
   await page.getByRole('button', { name: 'Begin baseline' }).click();
   await expect(page.getByRole('heading', { name: 'Question 1' })).toBeVisible();
@@ -63,6 +64,15 @@ try {
   for (let i = 2; i <= 30; i++) {
     await page.getByRole('radio', { name: 'Option a' }).check();
     await expect(page.getByRole('status')).toContainText('Saved');
+    if (i === 10 || i === 20) {
+      await expect(page.getByLabel('Optional pause point')).toContainText('This set: 10 of 10 responses saved.');
+      await page.getByRole('link', { name: 'Pause and return to chapter' }).click();
+      await page.goto(url);
+      await page.getByRole('button', { name: 'Resume pretest' }).click();
+      await expect(page.getByRole('heading', { name: `Question ${i}` })).toBeVisible();
+      await expect(page.getByRole('radio', { name: 'Option a' })).toBeChecked();
+      await expect(page.getByLabel('Optional pause point')).toBeVisible();
+    }
     if (i < 30) await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await expect(page.getByText('All 30 responses are saved.', { exact: false })).toBeVisible();
@@ -86,6 +96,7 @@ try {
   for (let i = 1; i <= 30; i++) {
     await page.getByRole('radio', { name: 'Option a' }).check();
     await expect(page.getByRole('status')).toContainText('Saved');
+    if (i === 10 || i === 20) await expect(page.getByLabel('Optional pause point')).toContainText('This set: 10 of 10 responses saved.');
     if (i < 30) await page.getByRole('button', { name: 'Next', exact: true }).click();
   }
   await page.getByRole('button', { name: 'Review all' }).click();
@@ -93,7 +104,7 @@ try {
   await page.getByRole('button', { name: 'Submit assessment' }).click();
   await expect(page.getByRole('link', { name: 'Review my post-test' })).toBeVisible();
   if (pageErrors.length) throw new Error(pageErrors.join('\n'));
-  process.stdout.write('Browser journey passed: finish guidance, incomplete review, question shortcuts, save/resume, unknown/marked responses, final-question handoff, confirmation, pretest and posttest.\n');
+  process.stdout.write('Browser journey passed: finish guidance, optional breaks at 10/20 with saved-draft resume, incomplete review, question shortcuts, save/resume, unknown/marked responses, final-question handoff, confirmation, pretest and posttest.\n');
 } finally {
   await browser?.close();
   await server.close();

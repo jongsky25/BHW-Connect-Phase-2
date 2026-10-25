@@ -55,6 +55,15 @@ try {
           expect(geometry).toEqual({document: true, panels: true, question: pixels * 1.25,
             legacy: pixels * 1.25, choice: pixels, radios: true});
         }
+        for (const boundary of [9, 19]) {
+          await jump.nth(boundary).click();
+          const pause = page.getByRole('complementary', {name: lang === 'en' ? 'Optional pause point' : 'Opsyonal na pahinga'});
+          await expect(pause).toBeVisible();
+          expect(await pause.evaluate(e => e.scrollWidth <= e.clientWidth + 1 && document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+          const link = pause.getByRole('link');
+          await expect(link).toHaveAttribute('aria-disabled', 'false');
+          expect(await link.evaluate(e => e.getBoundingClientRect().height >= 44)).toBe(true);
+        }
         await page.getByRole('button', {name: lang === 'en' ? 'Review all' : 'Balikan ang lahat', exact: true}).click();
         await expect(page.locator('[data-assessment] ol button')).toHaveCount(30);
         expect(await page.locator('[data-assessment] ol').evaluate(e => {
