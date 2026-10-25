@@ -125,18 +125,22 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     expect(localSql(`select count(*) from public.assessor_briefing_acknowledgements where assessor_user_id='${actor.id}' and program_id='${program}';`).trim()).toBe('1');
     expect(localSql(`select count(*) from public.audit_events where actor_user_id='${actor.id}' and event_type='assessor_briefing.acknowledged';`).trim()).toBe('1');
   } finally {
-    localSql(`update public.feature_flags set enabled=false where key='assessor_flow_ui';
+    localSql(`begin;
+      update public.feature_flags set enabled=false where key='assessor_flow_ui';
       delete from public.assessor_exam_attempts where chapter_id='${chapter}';
       delete from public.assessor_lesson_resume where chapter_id='${chapter}';
       delete from public.assessor_lesson_progress where chapter_id='${chapter}';
       update public.course_lessons set published_revision_id=null where id='${reviewLessonId}';
+      alter table public.course_lesson_revisions disable trigger training_revision_immutable;
       delete from public.course_lesson_revisions where id='${reviewRevisionId}';
+      alter table public.course_lesson_revisions enable trigger training_revision_immutable;
       delete from public.course_lessons where id='${reviewLessonId}';
       delete from public.assessor_briefing_acknowledgements where program_id='${program}';
       delete from public.assessor_flow_cohort_members where cohort_id='${cohort}';
       delete from public.assessor_flow_cohorts where id='${cohort}';
       delete from public.training_program_chapters where id='${chapter}';
       delete from public.training_programs where id='${program}';
-      delete from public.courses where id='${course}';`);
+      delete from public.courses where id='${course}';
+      commit;`);
   }
 });
