@@ -23,6 +23,7 @@ import narrationManifest from '../../../../../../../content/training/day1-basic-
 import chapter1Orientation from '../../../../../../../content/training/day1-basic-competencies/learner-assessment-v2/orientation.json';
 import chapter1Checkpoints from '../../../../../../../content/training/day1-basic-competencies/learner-assessment-v2/checkpoints.json';
 import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearning/reference-narration';
+import {translationsForLesson} from '@/lib/elearning/lesson-translations';
 
 export default async function AssessorStudyPage({params}:{params:Promise<{programId:string;chapterKey:string;path?:string[]}>}) {
   const [{programId,chapterKey,path=[]},viewer,flags,locale]=await Promise.all([params,getViewer(),getRequestFeatureFlags(),getLocale()]);
@@ -133,6 +134,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={`${base}/${subchapter.id}`} returnHref={`${base}/${subchapter.id}`}
       locale={en?'en':'fil'} readOnly={false} assessorChapterId={chapter.id} lessonNumber={study.entries.findIndex(e=>e.lesson?.id===lesson.id)+1} lessonCount={study.total}
       nextLessonHref={next?href(next):undefined}
+      translations={translationsForLesson({...lesson,revision},false)}
       narration={narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil',revision.read_sections)}/>;
   }
   if(examPage&&sharedAssessment){

@@ -32,6 +32,7 @@ import {HepoPresentationGuide} from './hepo-presentation-guide';
 import {enterNarrationScope} from '@/lib/elearning/narration-preferences';
 import {prioritizationNarratedLesson} from '@/lib/elearning/prioritization-narrated-lesson';
 import {NarrationAccessGuide} from './narration-access-guide';
+import {LessonLanguagePanel} from './lesson-language-panel';
 import { FittedLessonPage } from "./fitted-lesson-page";
 import { storyQuestionUi, translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
 
@@ -541,7 +542,7 @@ export function ReferenceLessons(props: Props) {
     move(target, mode, false);
   }
   function openReader() {
-    if (hepoPresentation || (lesson?.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up")) || lesson?.lesson_key === "bhw-accreditation" || lesson?.lesson_key === "bhw-eligibility" || lesson?.lesson_key === "bhw-benefits" || lesson?.lesson_key === "bhw-legal-role" || lesson?.lesson_key === "bhs-support-environment" || lesson?.lesson_key === "bhs-resources" || lesson?.lesson_key === "bhs-improvement") {
+    if (hepoPresentation || availableTranslations.length > 0 || (lesson?.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up")) || lesson?.lesson_key === "bhw-accreditation" || lesson?.lesson_key === "bhw-eligibility" || lesson?.lesson_key === "bhw-benefits" || lesson?.lesson_key === "bhw-legal-role" || lesson?.lesson_key === "bhs-support-environment" || lesson?.lesson_key === "bhs-resources" || lesson?.lesson_key === "bhs-improvement") {
       setOrientation(window.matchMedia?.("(orientation: landscape)")?.matches ? "landscape" : "portrait");
     }
     setReaderOpen(true);
@@ -1027,14 +1028,7 @@ export function ReferenceLessons(props: Props) {
                 <li key={o}>{o}</li>
               ))}
             </ul>
-            {availableTranslations.length > 0 && <label className="flex flex-wrap items-center gap-2 text-sm font-medium">
-              {ui("Wika ng aralin", "Lesson language")}
-              <select className="min-h-[44px] rounded border border-ink/20 bg-canvas px-3"
-                value={translation?.language ?? ""} onChange={event => setTranslationLanguage(event.target.value || null)}>
-                <option value="">{en ? "English" : "Filipino"}</option>
-                {availableTranslations.map(value => <option key={value.language} value={value.language}>{value.label}</option>)}
-              </select>
-            </label>}
+            <LessonLanguagePanel en={en} options={availableTranslations} current={translation} onSelect={setTranslationLanguage}/>
             {translation?.review_status === "draft" && <p role="status" className="rounded border border-ink/20 px-3 py-2 text-sm">
               {ui("Draft para sa pagsusuri ng salin at pagbigkas.", "Draft for translation and pronunciation review.")}
             </p>}
@@ -1133,7 +1127,7 @@ export function ReferenceLessons(props: Props) {
         <div ref={fullscreenTarget} className="relative h-dvh w-dvw overflow-hidden bg-canvas text-ink">
           <div data-orientation={orientation} className="lesson-reader-surface flex h-dvh flex-col overflow-hidden bg-canvas text-ink">
           <div className="lesson-reader-toolbar grid grid-cols-[1fr_auto] items-center gap-2 border-b border-ink/15 px-3 py-2">
-            <div className={hepoPresentation || illustratedNarration ? "col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2" : "col-start-1 row-start-1 flex gap-2"} role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
+            <div className={hepoPresentation || illustratedNarration || availableTranslations.length > 0 ? "col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2" : "col-start-1 row-start-1 flex gap-2"} role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
               {(["read", "slides"] as const).map((m) => (
                 <button key={m} type="button" aria-pressed={!videoSelected && mode === m} onClick={() => changeMode(m)}
                   className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
@@ -1145,6 +1139,7 @@ export function ReferenceLessons(props: Props) {
                 {videoLabel}
               </button>}
             </div>
+            {readerOpen && lesson && <LessonLanguagePanel en={en} options={availableTranslations} current={translation} onSelect={setTranslationLanguage} compact/>}
             <div className="lesson-reader-orientation col-span-2 row-start-2 flex justify-center gap-2" role="group" aria-label={ui("Oryentasyon", "Orientation")}>
               {(["portrait", "landscape"] as const).map((value) => (
                 <button key={value} type="button" aria-pressed={orientation === value} onClick={() => void chooseOrientation(value)}

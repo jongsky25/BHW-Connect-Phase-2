@@ -666,3 +666,10 @@ changes and locked self-checks retain learner control. Slides audio remains manu
 narrated lesson for Prioritize using five approved recordings/scenes. The final
 self-check remains separate. Legal-basis recordings already match current teaching;
 scoped Read/Slides guidance makes the available audio easier to find.
+
+## FB-4.3 — language availability
+
+[Review and delivery](fb-4.3-language-availability.md) restores approved Cebuano
+and Hiligaynon to assessor study, adds inline/fullscreen language selection and
+shows pending translation coverage. Formal chapter assessments clearly retain
+English/Filipino. No content, media, scoring or completion policy change.
