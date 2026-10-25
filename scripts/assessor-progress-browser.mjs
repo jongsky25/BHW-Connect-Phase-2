@@ -21,6 +21,19 @@ try{
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!['GET','HEAD'].includes(r.method()))requests.push(r.method()+' '+r.url());});
   const name=(eng,fil)=>lang==='en'?eng:fil;
   const open=state=>page.goto(`${server.resolvedUrls.local[0]}?lang=${lang}&theme=${theme}&state=${state}`);
+  await open('guide');
+  const guideNav=page.getByRole('navigation',{name:name('My assessor preparation and requirements','Aking paghahanda at mga kailangan bilang assessor')});
+  const guideLinks=guideNav.getByRole('link');
+  await expect(guideLinks).toHaveCount(2);
+  await expect(guideLinks.nth(0)).toHaveAttribute('href','/training/manual/assessor/chapter-1');
+  await expect(guideLinks.nth(1)).toHaveAttribute('href','/training/manual/assessor/qualifications#chapter-1');
+  await guideLinks.nth(0).focus();await page.keyboard.press('Tab');await expect(guideLinks.nth(1)).toBeFocused();
+  const guideTargets=await guideLinks.evaluateAll(nodes=>nodes.map(n=>({w:n.getBoundingClientRect().width,h:n.getBoundingClientRect().height})));
+  expect(guideTargets.every(b=>b.h>=44&&b.w<=254)).toBe(true);
+  expect((await new AxeBuilder({page}).include('main').analyze()).violations).toEqual([]);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);
+  if(process.env.ASSESSOR_PROGRESS_SCREENSHOTS){fs.mkdirSync(process.env.ASSESSOR_PROGRESS_SCREENSHOTS,{recursive:true});await page.screenshot({path:join(process.env.ASSESSOR_PROGRESS_SCREENSHOTS,`guide-access-${lang}-${theme}.png`)});}
+  cases++;
   await open('complete_chapter-2');
   const action=page.getByRole('link',{name:name('Open Chapter 2 study progress','Buksan ang progreso sa pag-aaral sa Kabanata 2')});
   await expect(action).toHaveAttribute('href','/training/manual/assessor/chapter-2#assessor-study-progress');
