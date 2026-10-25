@@ -15,7 +15,7 @@ export function AssessorCertificationCard({chapterKey, chapterId, title, chapter
   const label = {certified: text('Sertipikado', 'Certified'), in_progress: text('Isinasagawa', 'In progress'),
     unavailable: text('Hindi pa available', 'Not yet available'), read_failed: text('Hindi mabasa ang katayuan', 'Status could not be read'),
     update_required: text('Kailangan ng pag-update', 'Update required'), suspended: text('Sinuspinde', 'Suspended'), revoked: text('Binawi', 'Revoked')}[status];
-  return <article id={chapterKey} className="rounded-xl border border-ink/15 p-5">
+  return <article id={chapterKey} tabIndex={-1} className="scroll-mt-40 rounded-xl border border-ink/15 p-5 md:scroll-mt-28">
     <h2 className="text-lg font-semibold">{title}</h2>
     <p className="mt-2 font-medium" role={readFailed ? 'alert' : undefined}>{label}</p>
     {readFailed ? <p className="mt-2 text-sm">{text('Subukan muli. Hindi ito nangangahulugang kulang ang iyong ebidensya.', 'Try again. This does not mean your evidence is incomplete.')}</p> : <>

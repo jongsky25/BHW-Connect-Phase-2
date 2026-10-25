@@ -4,15 +4,19 @@ import {expect,test} from '@playwright/test';
 import {STABLE_CITY_ADMIN,createThrowawayAssessor,getAccessToken,onboardThroughLogin,restGet} from './fixtures/auth';
 
 // Fixture SQL can only reach the disposable local stack. Never the pilot or a hosted preview.
-function localSql(sql:string) {
+function assertLocalSupabase() {
   const url=new URL(process.env.NEXT_PUBLIC_SUPABASE_URL??'');
   if(!['127.0.0.1','localhost'].includes(url.hostname)||url.port!=='54321')throw new Error('Local Supabase required');
+}
+function localSql(sql:string) {
+  assertLocalSupabase();
   return execFileSync('docker',['exec','-i','supabase_db_bhw-connect-phase-2','psql','-U','postgres','-d','postgres','-v','ON_ERROR_STOP=1','-At'],
     {input:sql,encoding:'utf8',timeout:15000});
 }
 
 test('assessor briefing explicitly saves once, survives replay/reload and opens the personal checklist',async({page,request})=>{
   test.setTimeout(120000);
+  assertLocalSupabase();
   const cityToken=await getAccessToken(request,STABLE_CITY_ADMIN.username,STABLE_CITY_ADMIN.password);
   const assessor=await createThrowawayAssessor(request,cityToken,'00000000-0000-0000-0000-000000000004');
   const [actor]=await restGet(request,cityToken,`users?select=id&username=eq.${assessor.username}`) as Array<{id:string}>;
@@ -58,6 +62,24 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     await expect(checklist.getByText('Sariling pag-aaral · 0 sa 42 aralin')).toBeVisible();
     await expect(page.locator('section[aria-labelledby^="study-subchapter-"]')).toHaveCount(9);
     await expect(checklist.getByRole('link',{name:'Kunin ang diagnostic pretest'})).toHaveCount(0);
+    const evidenceSnapshot=()=>localSql(`select jsonb_build_object(
+      'study',(select jsonb_agg(to_jsonb(p)) from assessor_lesson_progress p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
+      'attempts',(select jsonb_agg(to_jsonb(p)) from assessor_exam_attempts p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
+      'qualifications',(select jsonb_agg(to_jsonb(p)) from assessor_chapter_qualifications p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
+      'awards',(select jsonb_agg(to_jsonb(p)) from assessor_rollout_private.chapter_awards p where actor_id='${actor.id}' and chapter_id='${chapter}'));`).trim();
+    const beforeNavigation=evidenceSnapshot();
+    await page.getByRole('link',{name:'Progreso sa pag-aaral at listahan ng mga aralin'}).click();
+    await expect(page).toHaveURL(`${base}#assessor-study-progress`);
+    await expect(page.locator('#assessor-study-progress')).toBeVisible();
+    const progressClearance=await page.evaluate(()=>({target:document.getElementById('assessor-study-progress')!.getBoundingClientRect().top,header:document.querySelector('header.sticky')!.getBoundingClientRect().bottom}));
+    expect(progressClearance.target).toBeGreaterThanOrEqual(progressClearance.header);
+    await page.getByRole('link',{name:'Aking mga sertipikasyon',exact:true}).click();
+    await expect(page.getByRole('heading',{name:'Saan makikita ang progreso at susunod na hakbang?'})).toBeVisible();
+    const personal=page.getByRole('navigation',{name:'Progreso sa pag-aaral ayon sa kabanata'});
+    await personal.getByRole('link',{name:'Kabanata I',exact:true}).click();
+    await expect(page).toHaveURL(`${base}#assessor-study-progress`);
+    await expect(checklist.getByText('Sariling pag-aaral · 0 sa 42 aralin')).toBeVisible();
+    expect(evidenceSnapshot()).toBe(beforeNavigation);
     expect(localSql(`select count(*) from public.assessor_briefing_acknowledgements where assessor_user_id='${actor.id}' and program_id='${program}';`).trim()).toBe('1');
     expect(localSql(`select count(*) from public.audit_events where actor_user_id='${actor.id}' and event_type='assessor_briefing.acknowledged';`).trim()).toBe('1');
   } finally {
