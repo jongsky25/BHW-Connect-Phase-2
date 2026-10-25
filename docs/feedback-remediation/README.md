@@ -706,3 +706,7 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 ## FB-5.2c — focused reading and lesson outline
 
 [Review and delivery](fb-5.2c-focused-reading.md) assesses the Deepstash-style suggestion against the published UHC lesson. Short paged sections, Slides, narration and takeaways already exist; no further shortening is supported. Adds an inline heading-only outline to discover/revisit sections through existing resume callbacks, retains check/completion gates and approved translated headings, and fixes measured UHC story-button contrast. Curriculum, content/media and fullscreen behavior remain intact. Original feedback stays open for live comments; release PR contains exact CI/production receipts.
+
+## FB-1.2b — assessor progress and next-step guidance
+
+[Review and delivery](fb-1.2b-assessor-progress-guidance.md) verifies existing personal study progress and certification records, adds an explicit current-chapter progress/list shortcut, explains their distinct purposes, and connects trusted next-step text to supported study or record destinations. Read failures get recovery rather than guessed requirements; Chapter 3 does not get an invented study route. Existing briefing, preparation and certification rules remain. Original reports stay open for live comments; final CI/production receipts are in the release PR.

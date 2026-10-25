@@ -187,3 +187,21 @@ it('loads only approved matching lesson translations for assessor personal study
  expect(translationCalls[0]).toMatchObject({preview:false,lesson:{id:'l1',lesson_key:'bhw-roles-hepo',revision:{id:'r1'}}});
  expect(screen.getByText('Study reader')).toHaveAttribute('data-readonly','false');
 });
+
+it.each(['en','fil'])('offers a progress shortcut with a real focusable target on the chapter dashboard (%s)',async locale=>{
+ state.locale=locale;const{container}=render(await page());
+ expect(screen.getByRole('link',{name:locale==='en'?'Study progress and lesson list':'Progreso sa pag-aaral at listahan ng mga aralin'})).toHaveAttribute('href','/training/manual/assessor/chapter-1#assessor-study-progress');
+ const target=container.querySelector('#assessor-study-progress');expect(target).not.toBeNull();expect(target).toHaveAttribute('tabindex','-1');
+ expect(target).toHaveTextContent(locale==='en'?'0 of 42 required lessons completed':'0 sa 42 kinakailangang aralin ang natapos');
+});
+it('keeps the progress shortcut on a nested Chapter 2 lesson in its own chapter',async()=>{
+ state.rows.training_program_chapters[0]={...state.rows.training_program_chapters[0],chapter_key:'chapter-2',position:1};
+ // Chapter 2 requires its own submitted diagnostic record before a lesson opens.
+ const curriculum=(await import('@/lib/assessor/curriculum')).referenceManualChapter('chapter-2')!;
+ state.rows.assessor_exam_attempts[0].curriculum_version=curriculum.requirements.version;
+ state.rows.course_lessons[0].lesson_key=manifest.chapters.find(c=>c.chapter_key==='chapter-2')!.modules[0].required_lesson_keys[0];
+ render(await page(['m1','l1'],'chapter-2'));
+ expect(screen.getByRole('link',{name:'Study progress and lesson list'})).toHaveAttribute('href','/training/manual/assessor/chapter-2#assessor-study-progress');
+ expect(screen.queryByRole('link',{name:'Chapter 1 working area'})).toBeNull();
+ expect(state.calls).not.toContain('rpc_assessor_qualification_ensure');
+});
