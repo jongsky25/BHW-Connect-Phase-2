@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: "jsdom",
+    // Full historical media-view/hash checks exceed 5s on shared CI runners.
+    // Keep every assertion; give these synchronous audits time to finish.
+    testTimeout: 20_000,
     setupFiles: ["./vitest.setup.ts"],
     include: ["src/**/*.test.{ts,tsx}", "scripts/**/*.test.mjs"],
   },

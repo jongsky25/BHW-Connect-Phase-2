@@ -10,7 +10,11 @@ import {
 import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import type { ReferenceNarrationEntry } from "@/lib/elearning/reference-narration";
 
-const SPEEDS = [0.75, 1, 1.25, 1.5] as const;
+import {
+  NARRATION_SPEEDS as SPEEDS, useNarrationSpeed, setNarrationSpeed,
+  useNarrationContinuation, enterNarrationScope, setNarrationContinuation,
+  armNarrationContinuation, pauseNarrationContinuation, shouldContinueNarration,
+} from "@/lib/elearning/narration-preferences";
 
 // Authors mark emphasis with **bold** in Read bodies; show it as bold rather
 // than literal asterisks. The narration loader strips the markers from speech.
@@ -65,18 +69,21 @@ type Props = {
   takeaway: string;
   narration?: ReferenceNarrationEntry;
   en: boolean;
+  continuationScope?: string;
   text?: (fil: string, en: string) => string;
   headingRef?: Ref<HTMLHeadingElement>;
   // Rendered between the body and the takeaway (the section's figures).
   children?: ReactNode;
 };
 
-export function ReferenceReadSection({ heading, body, takeaway, narration, en, text, headingRef, children }: Props) {
+export function ReferenceReadSection({ heading, body, takeaway, narration, en, text, headingRef, children, continuationScope }: Props) {
   const ui = text ?? ((fil: string, eng: string) => (en ? eng : fil));
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const frame = useRef<number | null>(null);
   const [playing, setPlaying] = useState(false);
-  const [speed, setSpeed] = useState<(typeof SPEEDS)[number]>(1);
+  const speed = useNarrationSpeed();
+  const automatic = useNarrationContinuation(continuationScope);
+  const leaving = useRef(false);
   const [active, setActive] = useState(-1);
   const [failed, setFailed] = useState(false);
 
@@ -85,16 +92,37 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
   const zones = matched ? buildNarrationZones({ heading, body, takeaway }) : [];
   const layout = paragraphSentences(body);
 
-  useEffect(
-    () => {
-      const audio = audioRef.current;
-      return () => {
-        if (audio && !audio.paused) audio.pause();
-        if (frame.current !== null) cancelAnimationFrame(frame.current);
-      };
-    },
-    [],
-  );
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) audio.playbackRate = speed;
+  }, [speed, narration?.src, matched]);
+
+  useEffect(() => {
+    leaving.current = false;
+    enterNarrationScope(continuationScope);
+    const audio = audioRef.current;
+    // A locked check has no player on mount. Revealing its answer never starts
+    // audio automatically; the learner still chooses Listen after responding.
+    if (audio && shouldContinueNarration(continuationScope)) {
+      audio.play()?.catch?.(() => {
+        if (!leaving.current) {
+          pauseNarrationContinuation();
+          setFailed(true);
+        }
+      });
+    }
+    return () => {
+      leaving.current = true;
+      if (frame.current !== null) cancelAnimationFrame(frame.current);
+    };
+  }, [continuationScope]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    return () => {
+      if (audio && !audio.paused) audio.pause();
+    };
+  }, [matched, narration?.src]);
 
   function tick() {
     const el = audioRef.current;
@@ -111,12 +139,18 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
     const el = audioRef.current;
     if (!el) return;
     if (playing) {
+      pauseNarrationContinuation();
       el.pause();
       return;
     }
     el.playbackRate = speed;
     setFailed(false);
-    el.play()?.catch?.(() => setFailed(true));
+    el.play()?.catch?.(() => {
+      if (!leaving.current) {
+        pauseNarrationContinuation();
+        setFailed(true);
+      }
+    });
   }
 
   const headingIndex = zones[0]?.zone === "heading" ? 0 : -1;
@@ -165,10 +199,12 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
             src={narration.src}
             preload="none"
             onPlay={() => {
+              armNarrationContinuation(continuationScope);
               setPlaying(true);
               frame.current = requestAnimationFrame(tick);
             }}
             onPause={() => {
+              if (!leaving.current && !audioRef.current?.ended) pauseNarrationContinuation();
               setPlaying(false);
               stopTicking();
             }}
@@ -177,7 +213,12 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
               setActive(-1);
               stopTicking();
             }}
-            onError={() => setFailed(true)}
+            onError={() => {
+              pauseNarrationContinuation();
+              setPlaying(false);
+              stopTicking();
+              setFailed(true);
+            }}
           />
           <button
             type="button"
@@ -194,7 +235,7 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
               value={speed}
               onChange={(event) => {
                 const next = Number(event.target.value) as (typeof SPEEDS)[number];
-                setSpeed(next);
+                setNarrationSpeed(next);
                 if (audioRef.current) audioRef.current.playbackRate = next;
               }}
               className="min-h-[44px] rounded-md border border-ink/20 bg-transparent px-1"
@@ -206,6 +247,12 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
               ))}
             </select>
           </label>
+          {continuationScope && <label className="flex min-h-[44px] items-center gap-2 text-sm">
+            <input type="checkbox" checked={automatic} onChange={event =>
+              setNarrationContinuation(continuationScope, event.target.checked, playing)
+            } />
+            {ui("Awtomatikong pakinggan ang mga susunod na bahagi", "Play next sections automatically")}
+          </label>}
           <span className="text-sm text-ink/70">{formatTime(narration.duration_seconds)}</span>
           {failed && (
             <span role="status" className="text-sm">

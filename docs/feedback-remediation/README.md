@@ -653,3 +653,9 @@ remain intact; the report stays open for live comments.
 scene images, adds numbered slide guidance and fixes the confirmed Filipino
 practice-text overflow. Original teaching, recordings and final-check gates remain.
 The preceding two missing-image checks are recorded as owner-confirmed done.
+
+## FB-4.2a — narration preferences
+
+[Review and delivery](fb-4.2a-narration-preferences.md) remembers narration speed
+across sections/lessons and adds opt-in Read continuation. Pause, format/language
+changes and locked self-checks retain learner control. Slides audio remains manual.

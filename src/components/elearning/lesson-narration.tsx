@@ -11,7 +11,7 @@ import {
 import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import type { CourseModuleAudio } from "@/lib/elearning/types";
 
-const SPEEDS = [0.75, 1, 1.25, 1.5] as const;
+import { NARRATION_SPEEDS as SPEEDS, useNarrationSpeed, setNarrationSpeed } from "@/lib/elearning/narration-preferences";
 
 // INC-28: how far playback has reached, for a visual that builds up as the
 // narration names each part of it (see LessonVisual's data-scene-step
@@ -48,7 +48,7 @@ export function LessonNarration({ audio, heading, body, takeaway, visual }: Prop
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const rafRef = useRef<number | null>(null);
   const [playing, setPlaying] = useState(false);
-  const [speed, setSpeed] = useState<(typeof SPEEDS)[number]>(1);
+  const speed = useNarrationSpeed();
   const [activeIndex, setActiveIndex] = useState(-1);
 
   const matches = timingsMatchSection(audio.timings, { heading, body, takeaway });
@@ -64,6 +64,10 @@ export function LessonNarration({ audio, heading, body, takeaway, visual }: Prop
       if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
     };
   }, []);
+
+  useEffect(() => {
+    if (audioRef.current) audioRef.current.playbackRate = speed;
+  }, [speed, audio.audio_url, matches]);
 
   function tick() {
     const el = audioRef.current;
@@ -84,7 +88,7 @@ export function LessonNarration({ audio, heading, body, takeaway, visual }: Prop
   }
 
   function handleSpeedChange(next: (typeof SPEEDS)[number]) {
-    setSpeed(next);
+    setNarrationSpeed(next);
     if (audioRef.current) audioRef.current.playbackRate = next;
   }
 
