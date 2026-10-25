@@ -1,6 +1,6 @@
 import {randomUUID} from 'node:crypto';
 import {expect, test, type Page} from '@playwright/test';
-import {OTHER_BARANGAY_BHW, STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet} from './fixtures/auth';
+import {OTHER_BARANGAY_BHW, STABLE_CITY_ADMIN, STABLE_BHW, getAccessToken, restGet} from './fixtures/auth';
 
 // No pilot writes. Enforce the exact disposable endpoint before signing in
 // or creating any records, in addition to the suite's global pilot guard.
@@ -16,15 +16,17 @@ async function login(page: Page, account: {username: string; password: string}) 
 }
 
 test('a real saved question reopens after reload; history is personal even for admins and paginates stored messages', async ({page, request, browser}) => {
-  await login(page, STABLE_BHW);
+  // chat-guide.spec deliberately exhausts the stable BHW rate limit.
+  // Use the other BHW so this real send is independent of that flood.
+  await login(page, OTHER_BARANGAY_BHW);
   const question = 'What is hypertension?';
   const answerResponse = await page.request.post('/api/chat', {data: {question}});
   expect(answerResponse.ok(), await answerResponse.text()).toBe(true);
   const answer = await answerResponse.json();
   expect(answer.session_id).toBeTruthy();
   const id = answer.session_id as string;
-  const bhwToken = await getAccessToken(request, STABLE_BHW.username, STABLE_BHW.password);
-  const [owner] = await restGet(request, bhwToken, `users?username=eq.${STABLE_BHW.username}&select=id`) as Array<{id: string}>;
+  const bhwToken = await getAccessToken(request, OTHER_BARANGAY_BHW.username, OTHER_BARANGAY_BHW.password);
+  const [owner] = await restGet(request, bhwToken, `users?username=eq.${OTHER_BARANGAY_BHW.username}&select=id`) as Array<{id: string}>;
   const saved = await restGet(request, bhwToken, `chat_messages?session_id=eq.${id}&select=id,sender,text,created_at,kind,route&order=created_at.asc`);
   expect(saved).toHaveLength(2);
   await page.goto('/chat');
@@ -40,7 +42,7 @@ test('a real saved question reopens after reload; history is personal even for a
   // Reopening never appends a turn or rewrites the stored answer.
   expect(await restGet(request, bhwToken, `chat_messages?session_id=eq.${id}&select=id,sender,text,created_at,kind,route&order=created_at.asc`)).toEqual(saved);
 
-  for (const account of [STABLE_ADMIN, OTHER_BARANGAY_BHW]) {
+  for (const account of [STABLE_CITY_ADMIN, STABLE_BHW]) {
     const context = await browser.newContext();
     try {
       const other = await context.newPage(); await login(other, account);
