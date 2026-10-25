@@ -639,3 +639,10 @@ excluded as already addressed according to the owner.
 sections with a bilingual learning path and Riza transitions. Slides quote the
 matching Read passage. Current story completeness and heading parity are verified;
 original audio, self-check and historical reader/source bytes remain intact.
+
+## FB-4.1i — Legal-basis sources and helper roles
+
+[Review and delivery](fb-4.1i-legal-source-and-roles.md) makes the existing
+fictional helper, approved role distinctions and cited statute visible in
+Read/Slides and the story view. The scene, recordings, timed text and assessment
+remain intact; the report stays open for live comments.

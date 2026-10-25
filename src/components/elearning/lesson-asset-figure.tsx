@@ -4,6 +4,7 @@ import type { LessonAsset } from "@/lib/elearning/types";
 import type { LessonTranslationLanguage } from "@/lib/elearning/lesson-translation";
 import {localPartnerVisual, localPartnerScenePurpose} from '@/lib/elearning/local-partner-visuals';
 import {LocalPartnerLearningVisual} from './local-partner-learning-visual';
+import {legalStoryContext} from '@/lib/elearning/legal-role-context';
 import { AiVisualLabel } from './ai-visual-label';
 
 // One reference-lesson asset: a static image, or (INC-28 tier 2) a Remotion
@@ -41,6 +42,7 @@ export function LessonAssetFigure({
   }, [video?.path]);
   const localVisual = language ? null : localPartnerVisual(a, en);
   const scenePurpose = language ? null : localPartnerScenePurpose(a, en);
+  const legalStory = language ? null : legalStoryContext(a, en);
   if (localVisual) return <LocalPartnerLearningVisual visual={localVisual}/>;
   if (!video)
     return (
@@ -53,6 +55,9 @@ export function LessonAssetFigure({
     );
   return (
     <figure className="my-4">
+      {legalStory && <aside data-legal-story-context aria-label={en?'Story roles and legal source':'Mga papel sa kuwento at batayang batas'} className="mb-3 rounded-lg border border-ink/20 bg-canvas p-3 text-sm leading-relaxed text-ink">
+        <p>{legalStory.text}</p><a className="mt-2 inline-block underline underline-offset-2" href={legalStory.sourceUrl} target="_blank" rel="noreferrer">{en?'Read RA 7883, sections 3–4':'Basahin ang RA 7883, seksiyon 3–4'}</a>
+      </aside>}
       <video
         ref={videoRef}
         // Keyed by file so switching language loads the other render.

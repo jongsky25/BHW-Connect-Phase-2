@@ -1,9 +1,11 @@
+import {legalRoleContext} from './legal-role-context';
 import {educatorSectionContext} from './educator-section-context';
 import {followUpLearningVisual} from './follow-up-learning-visuals';
 import data from './relationship-learning-visuals.json';
 import type {PublishedLesson} from './reference-navigation';
 
 export function relationshipLearningVisual(lesson: PublishedLesson, position: string, en: boolean) {
+  if (lesson.lesson_key === 'bhw-legal-role') return legalRoleContext(lesson, position, en);
   if (lesson.lesson_key === 'bhw-health-educator') return educatorSectionContext(lesson, position, en);
   if (lesson.lesson_key !== data.lesson_key) return followUpLearningVisual(lesson, position, en);
   if (lesson.revision.content_hash !== data.content_hash) return null;
