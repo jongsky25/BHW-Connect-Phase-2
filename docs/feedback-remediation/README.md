@@ -673,3 +673,10 @@ scoped Read/Slides guidance makes the available audio easier to find.
 and Hiligaynon to assessor study, adds inline/fullscreen language selection and
 shows pending translation coverage. Formal chapter assessments clearly retain
 English/Filipino. No content, media, scoring or completion policy change.
+
+## FB-3.3f — assessment readability on phones
+
+[Review and delivery](fb-3.3f-assessment-readability.md) fixes enlarged-text
+review-grid and display-control overflow, and brings legacy exam question/choice
+text up to Chapter 1 sizes. Native radio/save behavior and all assessment content
+and policy remain. Test-length feedback stays open.

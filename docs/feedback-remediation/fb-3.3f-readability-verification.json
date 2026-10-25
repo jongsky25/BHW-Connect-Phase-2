@@ -1,0 +1,56 @@
+{
+  "baseline_commit": "e0355e60babe7e40438ded3f2029cfa2988a4987",
+  "checked_at": "2026-10-25",
+  "scope": "Actual components/application CSS with local RPC fixtures; no pilot writes or authenticated production interaction",
+  "matrix": {
+    "languages": [
+      "en",
+      "fil"
+    ],
+    "phases": [
+      "pretest",
+      "posttest"
+    ],
+    "widths": [
+      320,
+      360,
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "font_scales": [
+      "sm",
+      "md",
+      "lg",
+      "xl"
+    ],
+    "cases": 96
+  },
+  "baseline": {
+    "question_choice_overflow_cases": 0,
+    "review_overflow_cases": 8,
+    "full_font_control_overflow_cases": 44,
+    "quick_display_overflow_cases": 12
+  },
+  "after": {
+    "question_choice_overflow_cases": 0,
+    "review_overflow_cases": 0,
+    "full_font_control_overflow_cases": 0,
+    "quick_display_overflow_cases": 0,
+    "page_errors": 0,
+    "targeted_question_axe_scans": 8,
+    "axe_violations": 0
+  },
+  "default_typography_px": {
+    "chapter1_question": 20,
+    "chapter1_choice": 16,
+    "legacy_question_before": 14,
+    "legacy_question_after": 20,
+    "legacy_choice_before": 14,
+    "legacy_choice_after": 16
+  },
+  "ci_regression_cases": 32,
+  "boundary": "Next navigation is shimmed and RPCs are fixtures. Browser fallback font; no claim about downloaded production fonts or remote settings persistence. Existing full CI covers settings sessions and assessment flows."
+}
