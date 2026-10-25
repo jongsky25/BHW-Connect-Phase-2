@@ -1,6 +1,7 @@
 "use client";
 
 import {useRouter} from 'next/navigation';
+import {TrainingConnectionNotice} from './training-connection-notice';
 import {LessonReadingTools} from './lesson-reading-tools';
 import {ReferenceLessons, type ReferenceData} from './reference-lessons';
 import type {CourseModule,LessonModality} from '@/lib/elearning/types';
@@ -17,7 +18,7 @@ export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,r
   translations?:LessonTranslation[];
 }) {
   const router=useRouter();
-  return <LessonReadingTools key={lessonId} locale={locale}><ReferenceLessons key={lessonId} {...data} modules={modules} initialLessonId={lessonId}
+  return <><TrainingConnectionNotice locale={locale} readOnly={readOnly}/><LessonReadingTools key={lessonId} locale={locale}><ReferenceLessons key={lessonId} {...data} modules={modules} initialLessonId={lessonId}
     lessonBaseHref={baseHref} returnHref={returnHref} locale={locale} readOnly={readOnly} lessonNumber={lessonNumber} lessonCount={lessonCount} initialMode={initialMode}
     nextLessonHref={nextLessonHref} completionMilestone={completionMilestone} storyQuestionHandoff={storyQuestionHandoff}
     narration={narration?{[lessonId]:narration}:undefined}
@@ -36,5 +37,5 @@ export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,r
       const {error}=await createClient().rpc(assessorChapterId?'rpc_assessor_lesson_complete':'rpc_course_lesson_complete',{...(assessorChapterId?{p_chapter_id:assessorChapterId}:{}),p_lesson_id:lesson.id,p_revision_id:lesson.revision.id});
       if(error)throw error;
       router.refresh();
-    }}/></LessonReadingTools>
+    }}/></LessonReadingTools></>
 }

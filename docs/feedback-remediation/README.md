@@ -688,3 +688,11 @@ and policy remain. Test-length feedback stays open.
 and fixes missing upfront length and ten-question pause guidance. Save/resume
 guards and all assessment content/policy stay intact. Further shortening remains
 an evidence-based versioned-content decision; the reports are not closed.
+
+## FB-5.2a — slow/interrupted connection recovery
+
+[Review and delivery](fb-5.2a-connection-recovery.md) fixes guarded submission
+confirmation after network failure, retains confirmed results through a history
+refresh error, and adds advisory connection/loading feedback. Real HTTP outages
+verify saved answers, position, receipt retries and completion. Offline writes
+remain unsupported. The owner declined the too-many-lessons report as won't fix.

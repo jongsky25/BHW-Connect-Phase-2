@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import {TrainingConnectionNotice} from "./training-connection-notice";
 import {AssessmentLanguageNotice} from "./assessment-language-notice";
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { NotesMarkdown } from "@/components/elearning/notes-markdown";
@@ -177,15 +178,22 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
       });
       if (requestError) throw requestError;
       const { data, error: getError } = await client.rpc("rpc_learner_assessment_get", { p_attempt_id: attempt.attempt_id });
-      if (getError) throw getError;
-      setAttempt(data as Attempt); setStage("result"); await refreshState();
+      if (getError || (data as Attempt | null)?.state !== "submitted") throw getError ?? new Error("Submission not confirmed");
+      setAttempt(data as Attempt); setStage("result");
+      // A failed history refresh must not undo a confirmed submission receipt.
+      await refreshState().catch(() => {});
     } catch {
-      const { data } = await client.rpc("rpc_learner_assessment_get", { p_attempt_id: attempt.attempt_id });
-      if ((data as Attempt | null)?.state === "submitted") {
-        setAttempt(data as Attempt); setStage("result"); await refreshState();
+      let receipt: Attempt | null = null;
+      try {
+        const { data, error: getError } = await client.rpc("rpc_learner_assessment_get", { p_attempt_id: attempt.attempt_id });
+        if (!getError && (data as Attempt | null)?.state === "submitted") receipt = data as Attempt;
+      } catch { /* The confirmation request can lose its connection too. */ }
+      if (receipt) {
+        setAttempt(receipt); setStage("result");
+        await refreshState().catch(() => {});
       } else {
-        setError(copy("Submission is not confirmed. Your saved draft is still available. Please retry.",
-          "Hindi pa kumpirmado ang pagsusumite. Nariyan pa ang naka-save na draft. Subukan muli."));
+        setError(copy("Submission is not confirmed. Your saved responses are retained. Reconnect and retry to confirm the result.",
+          "Hindi pa kumpirmado ang pagsusumite. Nananatili ang mga naka-save na sagot. Kumonekta muli at subukan ulit upang makumpirma ang resulta."));
       }
     } finally { setBusy(false); }
   }
@@ -219,9 +227,10 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   </aside>;
   if (stage === "questions" && attempt && current) return (
     <section className="space-y-5" aria-label={copy("Assessment questions", "Mga tanong sa pagtatasa")}>
+      <TrainingConnectionNotice locale={locale} assessment/>
       <div role="status" aria-live="polite" className="text-sm text-ink/70">
         {copy(`Section ${Math.floor(position / 10) + 1} of 3 · Question ${position + 1} of 30`,
-          `Bahagi ${Math.floor(position / 10) + 1} sa 3 · Tanong ${position + 1} sa 30`)} · {pending ? copy("Unsaved", "Hindi pa naka-save") : saved ? copy("Saved", "Naka-save") : copy("Saved draft", "Naka-save na draft")} · {copy(`${responsesSaved}/${total} responses saved`, `${responsesSaved}/${total} sagot ang naka-save`)}
+          `Bahagi ${Math.floor(position / 10) + 1} sa 3 · Tanong ${position + 1} sa 30`)} · {pending ? (busy ? copy("Saving…", "Nagse-save…") : copy("Unsaved", "Hindi pa naka-save")) : saved ? copy("Saved", "Naka-save") : copy("Saved draft", "Naka-save na draft")} · {copy(`${responsesSaved}/${total} responses saved`, `${responsesSaved}/${total} sagot ang naka-save`)}
       </div>
       <p className="text-sm">{copy("Answer questions → Review all → Submit and confirm. You can change saved answers before submitting.", "Sagutan ang mga tanong → Balikan ang lahat → Isumite at kumpirmahin. Maaari pang baguhin ang naka-save na sagot bago isumite.")}</p>
       <progress aria-label={copy("Saved responses", "Mga naka-save na sagot")} className="h-3 w-full accent-primary" max={total} value={responsesSaved} />
@@ -275,6 +284,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   );
 
   if (stage === "review" && attempt) return <section className="space-y-4">
+    <TrainingConnectionNotice locale={locale} assessment/>
     <h1 ref={reviewHeading} tabIndex={-1} className="text-2xl font-semibold">{copy("Review before submitting", "Balikan bago isumite")}</h1>
     <p>{copy(`${unanswered.length} unanswered. Choose an answer or “I don't know yet” for every question.`,
       `${unanswered.length} ang walang sagot. Pumili ng sagot o “Hindi ko pa alam” sa bawat tanong.`)}</p>
@@ -299,6 +309,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   </section>;
 
   if (stage === "result" && attempt) return <section className="space-y-4">
+    <TrainingConnectionNotice locale={locale} assessment/>
     <h1 className="text-2xl font-semibold">{copy("Assessment submitted", "Naisumite ang pagtatasa")}</h1>
     <p>{copy("Score", "Iskor")}: {attempt.score_percent}%</p>
     <Link prefetch={false} href="/my-results" className="inline-flex min-h-11 items-center font-medium underline">{copy("View my test results and history", "Tingnan ang aking mga resulta at history")}</Link>
@@ -321,6 +332,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
 
   const draft = state.attempts.find(a => a.phase === phase && a.state === "draft");
   return <section className="space-y-5">
+    <TrainingConnectionNotice locale={locale} assessment/>
     <h1 className="text-2xl font-semibold">{copy("Chapter 1 assessment", "Pagtatasa sa Kabanata 1")}</h1>
     {stage === "entry" && <AssessmentLanguageNotice en={lang === "en"}/>}
     <Link prefetch={false} href="/my-results" className="inline-flex min-h-11 items-center font-medium underline">{copy("View my test results and history", "Tingnan ang aking mga resulta at history")}</Link>
