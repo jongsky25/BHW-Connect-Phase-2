@@ -1,0 +1,266 @@
+{
+  "checked_at": "2026-10-25T08:20:00.855Z",
+  "method": "Read-only published lesson comparison with the existing approved pilot packages",
+  "published_lessons": [
+    {
+      "id": "6aa6a9ec-b8fd-48ce-a874-6449ed3c2ce5",
+      "key": "bhw-health-educator",
+      "revision": "c8e57cba-b0a6-4f7a-90a0-2c9d0888e7b9",
+      "content_hash": "3182461ab00fde831c751323ad6bf55914be5dde256de2ff813787e43a0b9043",
+      "sections": 5
+    },
+    {
+      "id": "24771587-9bd0-4f6c-acb0-ade791a24f45",
+      "key": "bhw-community-organizer",
+      "revision": "1647e366-8904-47b7-91e9-bf20422c5c8e",
+      "content_hash": "26c06ec1ac211c14bb6578de7097a1d3d129b791c48e197a483fc23a06c44ec3",
+      "sections": 6
+    },
+    {
+      "id": "9dfa3c3d-ec75-4143-8fa2-302e4273f829",
+      "key": "uhc-coverage",
+      "revision": "5d28c239-c4a2-4cda-a719-e8959a19ae91",
+      "content_hash": "4b82aa20c75ff944adf326932408fd64ca126ac0dea951d53da264f00a639326",
+      "sections": 6
+    },
+    {
+      "id": "37b0491a-efc5-466a-8447-41711c875ab6",
+      "key": "bhw-service-provider",
+      "revision": "ea27993d-d277-41ef-acb3-cb11d8bd47e5",
+      "content_hash": "b25a8e88e561ffe1c0a4c7c0aa77bbdc5c2fd56f9f39535b26fa79300654eb68",
+      "sections": 6
+    },
+    {
+      "id": "e3abb325-3ccc-47e4-95de-94be7d9735ac",
+      "key": "uhc-primary-care",
+      "revision": "26890d6e-e706-4fdd-b92e-f7e8d9f55211",
+      "content_hash": "f1e5f3d6f66142a5e39ee5723743bf717101af6b7d6948bf3d33fc623fe452f3",
+      "sections": 6
+    },
+    {
+      "id": "def4612a-a2af-4764-a735-7c2dec8a20c4",
+      "key": "uhc-local-system",
+      "revision": "90f3fc1a-1021-4c41-b0b4-fe76bc096232",
+      "content_hash": "89220f57d9aaa4e148167431a11f2cab812453e901f9d69c15ead6401b400e0e",
+      "sections": 6
+    },
+    {
+      "id": "d23d3ff0-64b0-4823-8c23-710b728a59d2",
+      "key": "uhc-improvement",
+      "revision": "3685cd44-7d8d-4de3-b555-2caad146c4c4",
+      "content_hash": "27de891c2207d1e6f5e1774500b0426d5c50838e873d28e57ebcf7c1fffa4771",
+      "sections": 6
+    },
+    {
+      "id": "45105887-464d-46a0-b410-3d2f7d69be4a",
+      "key": "bhw-records",
+      "revision": "b11de2da-d76c-4404-9464-05e5fcdf4239",
+      "content_hash": "cc1933a880a7eda36a3e0c2b28b635e9b0d565be836384a23f8aa96b2e828be6",
+      "sections": 6
+    },
+    {
+      "id": "df6ebece-5e81-4163-b8be-d71dba45d773",
+      "key": "bhw-roles-application",
+      "revision": "2897e8f8-7c63-4307-b7b3-bd01ad50fade",
+      "content_hash": "1bbbef559c76bf08af42d25fe8e05460d3c90ec6b3be102dd8862b160ab362b4",
+      "sections": 6
+    },
+    {
+      "id": "7ec7a016-ddac-495e-a2df-f7aa135dfa9c",
+      "key": "bhw-roles-hepo",
+      "revision": "04a0fc9b-9dca-4b84-8504-533bd9785922",
+      "content_hash": "88cf770c7b81b869cc73e684e2ee6eb2bdc105d189f76c2d7e4c406f61c69990",
+      "sections": 5
+    }
+  ],
+  "translations": [
+    {
+      "key": "bhw-health-educator",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 5,
+      "recordings": 5,
+      "video": true
+    },
+    {
+      "key": "bhw-health-educator",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 5,
+      "recordings": 5,
+      "video": true
+    },
+    {
+      "key": "bhw-community-organizer",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "bhw-community-organizer",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "uhc-coverage",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "uhc-coverage",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "bhw-service-provider",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "bhw-service-provider",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "uhc-primary-care",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "uhc-primary-care",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "uhc-local-system",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "uhc-local-system",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "uhc-improvement",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "uhc-improvement",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "bhw-records",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "bhw-records",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "bhw-roles-application",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "bhw-roles-application",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 6,
+      "recordings": 6,
+      "video": true
+    },
+    {
+      "key": "bhw-roles-hepo",
+      "language": "ceb",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 5,
+      "recordings": 5,
+      "video": true
+    },
+    {
+      "key": "bhw-roles-hepo",
+      "language": "hil",
+      "approved": true,
+      "matchesPublished": true,
+      "sections": 5,
+      "recordings": 5,
+      "video": true
+    }
+  ],
+  "matching_approved_packages": 20,
+  "matching_recordings": 116,
+  "local_videos": 20,
+  "assessment_languages": [
+    "en",
+    "fil"
+  ],
+  "assessment_ceb_hil": "not available; no questions translated by this increment"
+}

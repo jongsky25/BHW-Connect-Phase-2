@@ -3,6 +3,8 @@ import {afterEach,beforeEach,describe,expect,it,vi} from 'vitest';
 import StudyPage from './[programId]/assessor/[chapterKey]/[[...path]]/page';
 import manifest from '../../../content/assessor/bhw-reference-manual.v1.json';
 const state=vi.hoisted(()=>({role:'assessor',actualRole:'assessor',active:true,preview:false,enabled:true,ui:false,policy:null as unknown,acknowledgement:null as unknown,qualification:null as unknown,locale:'en',failing:'',calls:[] as string[],rows:{} as Record<string,Record<string,unknown>[]>}));
+const translationCalls=vi.hoisted(()=>[] as {lesson:Record<string,unknown>;preview:boolean}[]);
+vi.mock('@/lib/elearning/lesson-translations',()=>({translationsForLesson:(lesson:Record<string,unknown>,preview:boolean)=>{translationCalls.push({lesson,preview});return[];}}));
 vi.mock('server-only',()=>({}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIRECT '+url)},notFound:()=>{throw new Error('NOT_FOUND')}}));
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale}));
@@ -19,6 +21,7 @@ vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({rpc:async(name:str
     }};return q;
 }})}));
 beforeEach(()=>{
+  translationCalls.length=0;
   Object.assign(state,{role:'assessor',actualRole:'assessor',active:true,preview:false,enabled:true,ui:false,policy:null,locale:'en',failing:'',calls:[]});
   state.qualification={status:'in_progress',next_step:'study',curriculum_version:manifest.version};
   state.acknowledgement={actorId:'self',programInstanceId:'manual',chapterKey:'chapter-1',requirementsVersion:'chapter-1:c1af.draft-1',briefingVersion:'chapter-1:briefing.v1',acknowledgedAt:'2026-10-11T00:00:00Z'};
@@ -176,4 +179,11 @@ describe('assessor study route',()=>{
   it('renders Filipino study guidance',async()=>{
     state.locale='fil';render(await page());expect(screen.getByText('Sariling pag-aaral ng assessor')).toBeInTheDocument();expect(screen.getByRole('link',{name:'Magpatuloy sa pag-aaral'})).toBeInTheDocument();
   });
+});
+
+it('loads only approved matching lesson translations for assessor personal study',async()=>{
+ render(await page(['m1','l1']));
+ expect(translationCalls).toHaveLength(1);
+ expect(translationCalls[0]).toMatchObject({preview:false,lesson:{id:'l1',lesson_key:'bhw-roles-hepo',revision:{id:'r1'}}});
+ expect(screen.getByText('Study reader')).toHaveAttribute('data-readonly','false');
 });

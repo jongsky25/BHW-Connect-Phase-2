@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import {AssessmentLanguageNotice} from './assessment-language-notice';
 import {useRouter} from 'next/navigation';
 import {useState, type FormEvent} from 'react';
 import {createClient} from '@/lib/supabase/client';
@@ -69,6 +70,7 @@ export function AssessorExam({chapterId,phase,locale,chapterHref}:{chapterId:str
       </Link>}
       {result.pretest_late && <p className="text-sm">{text('Naitala ito matapos magsimula ang pag-aaral.','This diagnostic was recorded after study had begun.')}</p>}
     </div>}
+    {!attempt && <AssessmentLanguageNotice en={locale === 'en'}/>}
     {!attempt && <div className="flex flex-wrap items-center gap-3">
       {(phase==='pretest'?!result:!result?.passed) && <button type="button" disabled={busy} onClick={open}
         className="rounded bg-primary px-4 py-3 font-medium text-on-primary disabled:opacity-60">

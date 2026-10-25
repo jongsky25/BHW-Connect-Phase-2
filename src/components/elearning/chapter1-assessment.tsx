@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import {AssessmentLanguageNotice} from "./assessment-language-notice";
 import { useEffect, useRef, useState } from "react";
 import { NotesMarkdown } from "@/components/elearning/notes-markdown";
 import { createClient } from "@/lib/supabase/client";
@@ -306,6 +307,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
   const draft = state.attempts.find(a => a.phase === phase && a.state === "draft");
   return <section className="space-y-5">
     <h1 className="text-2xl font-semibold">{copy("Chapter 1 assessment", "Pagtatasa sa Kabanata 1")}</h1>
+    {stage === "entry" && <AssessmentLanguageNotice en={lang === "en"}/>}
     <Link prefetch={false} href="/my-results" className="inline-flex min-h-11 items-center font-medium underline">{copy("View my test results and history", "Tingnan ang aking mga resulta at history")}</Link>
     {finishInstructions}
     {pre && <p>{copy("Baseline submitted", "Naisumite na ang baseline")}: {pre.score_percent}%</p>}

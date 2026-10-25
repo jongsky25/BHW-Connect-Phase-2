@@ -1,0 +1,34 @@
+{
+  "purpose": "Expose approved lesson-language options in inline/fullscreen study while reconstructing the complete preceding reader.",
+  "base_commit": "629daa83acd4687dee1139dbeba3f81edfb7a6fa",
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "f320c36847427b286b51704bc55937540974aa35335160ddbd56a19b69b66182",
+  "successor_sha256": "79a74ed6f2bac4fc15c0304e6112df54a921ad542855033d053c1a0949941614",
+  "replacements": [
+    {
+      "predecessor_utf8": "import {NarrationAccessGuide} from './narration-access-guide';",
+      "current_utf8": "import {NarrationAccessGuide} from './narration-access-guide';\nimport {LessonLanguagePanel} from './lesson-language-panel';",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "            {availableTranslations.length > 0 && <label className=\"flex flex-wrap items-center gap-2 text-sm font-medium\">\n              {ui(\"Wika ng aralin\", \"Lesson language\")}\n              <select className=\"min-h-[44px] rounded border border-ink/20 bg-canvas px-3\"\n                value={translation?.language ?? \"\"} onChange={event => setTranslationLanguage(event.target.value || null)}>\n                <option value=\"\">{en ? \"English\" : \"Filipino\"}</option>\n                {availableTranslations.map(value => <option key={value.language} value={value.language}>{value.label}</option>)}\n              </select>\n            </label>}",
+      "current_utf8": "            <LessonLanguagePanel en={en} options={availableTranslations} current={translation} onSelect={setTranslationLanguage}/>",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "className={hepoPresentation || illustratedNarration ? \"col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2\"",
+      "current_utf8": "className={hepoPresentation || illustratedNarration || availableTranslations.length > 0 ? \"col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2\"",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "    if (hepoPresentation || (lesson?.lesson_key === \"bhw-follow-up\"",
+      "current_utf8": "    if (hepoPresentation || availableTranslations.length > 0 || (lesson?.lesson_key === \"bhw-follow-up\"",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "            <div className=\"lesson-reader-orientation col-span-2 row-start-2",
+      "current_utf8": "            {readerOpen && lesson && <LessonLanguagePanel en={en} options={availableTranslations} current={translation} onSelect={setTranslationLanguage} compact/>}\n            <div className=\"lesson-reader-orientation col-span-2 row-start-2",
+      "count": 1
+    }
+  ]
+}
