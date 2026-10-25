@@ -646,3 +646,10 @@ original audio, self-check and historical reader/source bytes remain intact.
 fictional helper, approved role distinctions and cited statute visible in
 Read/Slides and the story view. The scene, recordings, timed text and assessment
 remain intact; the report stays open for live comments.
+
+## FB-4.1j — Define the problem slide clarity
+
+[Review and delivery](fb-4.1j-definition-slide-clarity.md) bounds the six reviewed
+scene images, adds numbered slide guidance and fixes the confirmed Filipino
+practice-text overflow. Original teaching, recordings and final-check gates remain.
+The preceding two missing-image checks are recorded as owner-confirmed done.

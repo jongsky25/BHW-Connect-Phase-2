@@ -1,3 +1,4 @@
+import {DefinitionSlideGuide} from './definition-slide-guide';
 import {LegalRoleContext} from './legal-role-context';
 import {EducatorSectionContext} from './educator-section-context';
 import {FollowUpLearningVisual} from './follow-up-learning-visual';
@@ -17,6 +18,7 @@ function CardIcon({index, kind}: {index: number; kind: string}) {
 
 /** Native-text diagrams; the four roles are peers in a teaching organizer. */
 export function RelationshipLearningVisual({visual}: {visual: RelationshipVisual}) {
+  if (visual.kind === 'definition-slide-guide') return <DefinitionSlideGuide guide={visual}/>;
   if (visual.kind === 'legal-role-context') return <LegalRoleContext context={visual}/>;
   if (visual.kind === 'educator-context') return <EducatorSectionContext context={visual}/>;
   if (visual.kind === 'questions' || visual.kind === 'response' || visual.kind === 'plan') return <FollowUpLearningVisual visual={visual}/>;
