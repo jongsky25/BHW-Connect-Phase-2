@@ -69,3 +69,10 @@ CI initially passed 2,436 tests with four historical full-view media/hash checks
 timing out at the default five seconds (1.6.3, 1.6.4, 1.8.1 and 1.8.2). The
 Vitest default is now twenty seconds to accommodate these synchronous audits on
 shared runners. No test source, assertion, hash, receipt, filter or skip changed.
+
+The first disposable browser attempt exposed a test locator error: exact label
+matching included the nested select option text, so it waited for a nonexistent
+“Speed” label. The same selector failure was reproduced against the actual
+offline reader. The fixture now selects the single native combobox inside the
+named narration control group, as in the passing offline browser review.
+No playback implementation was changed for this test correction.

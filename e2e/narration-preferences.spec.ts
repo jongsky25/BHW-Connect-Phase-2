@@ -47,7 +47,8 @@ test('Narration speed persists and opt-in listening respects pause, checks and m
         const next=reader.getByRole('button',{name:locale==='en'?'Next':'Susunod',exact:true});
         for(let i=0;i<6&&await previous.isEnabled();i++)await previous.click();
         const audio=reader.locator('audio');
-        const speed=reader.getByLabel(locale==='en'?'Speed':'Bilis',{exact:true});
+        const controls=reader.getByRole('group',{name:locale==='en'?'Listen to this section':'Pakinggan ang bahaging ito'});
+        const speed=controls.getByRole('combobox');
         const automatic=reader.getByRole('checkbox',{name:locale==='en'?'Play next sections automatically':'Awtomatikong pakinggan ang mga susunod na bahagi'});
         await speed.selectOption('1.5');
         await expect.poll(()=>audio.evaluate(el=>(el as HTMLAudioElement).playbackRate)).toBe(1.5);
@@ -66,7 +67,6 @@ test('Narration speed persists and opt-in listening respects pause, checks and m
         await expect(reader.locator('article')).toHaveAttribute('data-scene','source-gap');
         expect(await audio.evaluate(el=>(el as HTMLAudioElement).paused)).toBe(true);
         await expect(speed).toHaveValue('1.5');
-        const controls=reader.getByRole('group',{name:locale==='en'?'Listen to this section':'Pakinggan ang bahaging ito'});
         expect(await controls.evaluate(el=>el.scrollWidth<=el.clientWidth+1)).toBe(true);
         for(const theme of ['light','dark']){
           await page.locator('html').evaluate((html,t)=>html.setAttribute('data-theme',t),theme);
