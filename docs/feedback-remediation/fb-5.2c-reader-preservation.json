@@ -1,0 +1,24 @@
+{
+  "purpose": "Add an inline heading-only outline through the existing move/save callback and improve the reported UHC story CTA contrast while reconstructing the complete preceding reader.",
+  "base_commit": "92abe86bf9db3bb3369e35700dc5e923d49280b4",
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "79a74ed6f2bac4fc15c0304e6112df54a921ad542855033d053c1a0949941614",
+  "successor_sha256": "d4fc4e73ae386a56c3f91df4f2d2945726cace7825f97972ef3357eaccf67014",
+  "replacements": [
+    {
+      "predecessor_utf8": "import {LessonLanguagePanel} from './lesson-language-panel';",
+      "current_utf8": "import {LessonLanguagePanel} from './lesson-language-panel';\nimport {LessonSectionOutline} from './lesson-section-outline';",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "            {!readerOpen && (videoSelected ? videoContent : <>{readerArticle}{readerPager}</>)}",
+      "current_utf8": "            {!readerOpen && (videoSelected ? videoContent : <><LessonSectionOutline items={items} currentId={item.id} en={en} language={translation?.language} onSelect={id => {\n              const target = items.find(section => section.id === id);\n              if (target && target.id !== item.id) move(target);\n              else requestAnimationFrame(() => heading.current?.focus());\n            }}/>{readerArticle}{readerPager}</>)}",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "          className={`mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold ${hepoPresentation || illustratedNarration ? \"text-ink\" : \"text-primary-text\"} hover:bg-primary/20`}",
+      "current_utf8": "          className={`mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold ${hepoPresentation || illustratedNarration || lesson.lesson_key === \"uhc-coverage\" ? \"text-ink\" : \"text-primary-text\"} hover:bg-primary/20`}",
+      "count": 1
+    }
+  ]
+}

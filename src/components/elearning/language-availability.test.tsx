@@ -75,3 +75,18 @@ it.each(['en','fil']as const)('shows legacy assessment coverage before entry and
  expect(container.querySelector('[data-assessment-language-notice]')).toBeNull();
  expect(mock.rpc).toHaveBeenCalledWith('rpc_assessor_exam_open',{p_chapter_id:'chapter',p_phase:'pretest'});
 });
+
+it.each(['ceb','hil']as const)('the outline uses approved %s headings and revisits their actual translated section',language=>{
+ vi.spyOn(HTMLMediaElement.prototype,'pause').mockImplementation(()=>{});
+ const l=lesson(),options=translationsForLesson(l,false),selected=options.find(t=>t.language===language)!;
+ const{container}=render(<ReferenceLessons title_en="Manual" title_fil="Manual" chapters={[]} modules={[]} lessons={[l]} completed={[]} resumes={[]}
+  initialLessonId="lesson" locale="en" readOnly translations={options} onResume={vi.fn()} onComplete={vi.fn()}/>);
+ fireEvent.change(within(container.querySelector('[data-lesson-language-panel]')! as HTMLElement).getByRole('combobox'),{target:{value:language}});
+ const summary=screen.getByText(/^Sections in this lesson ·/);fireEvent.click(summary);summary.closest('details')!.open=true;
+ const target=selected.read_sections[2];
+ const choice=within(screen.getByRole('navigation',{name:'Sections in this lesson'})).getByRole('button',{name:target.heading});
+ expect(within(choice).getByText(target.heading)).toHaveAttribute('lang',language);
+ fireEvent.click(choice);
+ expect(screen.getByRole('heading',{name:target.heading})).toBeInTheDocument();
+ expect(container.querySelector('article')).toHaveAttribute('lang',language);
+});
