@@ -56,7 +56,7 @@ Selection requires the exact lesson key/hash, all five approved image identities
 and the five current-language recordings matching their current Read text.
 A future authored featured asset takes priority. Translated variants, unknown
 revisions, changed text/assets or missing tracks do not receive this derived
-presentation. The complete previous reader is reconstructed with seven exact
+presentation. The complete previous reader is reconstructed with eight exact
 replacement groups for historical guards. No old receipt or approval rewritten.
 
 No lesson revision/guide/assessment/source change, migration, database publication,
@@ -99,3 +99,10 @@ had zero axe violations and no horizontal overflow. Screenshots of mobile
 Filipino/dark and desktop English/light were inspected. Framework navigation
 and image components were shimmed; local media serving implements HTTP ranges
 like the deployed player. These checks are not authenticated production tests.
+
+The new longer video-tab label wraps inside the fullscreen control group for
+this derived presentation; other lesson controls keep their existing layout.
+
+Additional native fullscreen browser review passed both languages at 320px XL: the
+video controls fit, captions and all scene seeks worked, and actual playback end
+opened the original question with its answer audio still locked until response.

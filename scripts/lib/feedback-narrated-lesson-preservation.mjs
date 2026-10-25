@@ -8,7 +8,7 @@ let receipt;
 export function beforeFeedbackNarratedLesson(path, actual = fs.readFileSync(path)) {
   if (path !== target) return actual;
   const r = receipt ??= JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-4.2b-reader-preservation.json'));
-  if (r.path !== target || r.replacements.length !== 7) throw Error('Invalid FB-4.2b reader scope');
+  if (r.path !== target || r.replacements.length !== 8) throw Error('Invalid FB-4.2b reader scope');
   const disk = sha(fs.readFileSync(path));
   if (![r.predecessor_sha256, r.successor_sha256].includes(disk)) throw Error('Unpinned integrated successor (FB-4.2b): ' + path);
   if (sha(actual) !== r.successor_sha256) return actual;

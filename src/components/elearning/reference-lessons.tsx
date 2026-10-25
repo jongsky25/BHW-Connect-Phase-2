@@ -1133,7 +1133,7 @@ export function ReferenceLessons(props: Props) {
         <div ref={fullscreenTarget} className="relative h-dvh w-dvw overflow-hidden bg-canvas text-ink">
           <div data-orientation={orientation} className="lesson-reader-surface flex h-dvh flex-col overflow-hidden bg-canvas text-ink">
           <div className="lesson-reader-toolbar grid grid-cols-[1fr_auto] items-center gap-2 border-b border-ink/15 px-3 py-2">
-            <div className={hepoPresentation ? "col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2" : "col-start-1 row-start-1 flex gap-2"} role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
+            <div className={hepoPresentation || illustratedNarration ? "col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2" : "col-start-1 row-start-1 flex gap-2"} role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
               {(["read", "slides"] as const).map((m) => (
                 <button key={m} type="button" aria-pressed={!videoSelected && mode === m} onClick={() => changeMode(m)}
                   className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">

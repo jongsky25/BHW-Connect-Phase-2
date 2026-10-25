@@ -3,7 +3,7 @@
   "base_commit": "2b65e3292069b150167124c5bb1741439a4b665f",
   "path": "src/components/elearning/reference-lessons.tsx",
   "predecessor_sha256": "48e0332c3716fcf1bd455398273d6271a986a14998ba160517eb0c58f65963c7",
-  "successor_sha256": "55cc819b8771e80f70b5a08567cf117cd8f4f648476f4286215cb896252bb40f",
+  "successor_sha256": "f320c36847427b286b51704bc55937540974aa35335160ddbd56a19b69b66182",
   "replacements": [
     {
       "predecessor_utf8": "import {enterNarrationScope} from '@/lib/elearning/narration-preferences';",
@@ -38,6 +38,11 @@
     {
       "predecessor_utf8": "${hepoPresentation ? \"text-ink\" : \"text-primary-text\"}",
       "current_utf8": "${hepoPresentation || illustratedNarration ? \"text-ink\" : \"text-primary-text\"}",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "className={hepoPresentation ? \"col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2\"",
+      "current_utf8": "className={hepoPresentation || illustratedNarration ? \"col-start-1 row-start-1 flex min-w-0 flex-wrap gap-2\"",
       "count": 1
     }
   ]

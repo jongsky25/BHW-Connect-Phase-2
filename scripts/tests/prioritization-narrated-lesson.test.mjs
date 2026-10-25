@@ -28,7 +28,7 @@ it('uses five approved scenes and recordings, with no final check or new teachin
  }
 });
 it('reconstructs all previous reader bytes, retains every old source/media byte and adds only four pinned media files',()=>{
- const r=JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-4.2b-reader-preservation.json'));expect(r.replacements).toHaveLength(7);
+ const r=JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-4.2b-reader-preservation.json'));expect(r.replacements).toHaveLength(8);
  expect(beforeFeedbackNarratedLesson(r.path)).toEqual(execFileSync('git',['show',r.base_commit+':'+r.path]));
  expect(execFileSync('git',['diff',r.base_commit,'--','content/training/','remotion/','docs/lesson-*'])).toHaveLength(0);
  expect(execFileSync('git',['diff','--diff-filter=MDR',r.base_commit,'--','public/training/'])).toHaveLength(0);
