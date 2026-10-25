@@ -29,16 +29,16 @@ export function SegmentedRadioGroup<T>({
   disabled?: boolean;
 }) {
   return (
-    <fieldset disabled={disabled} className="flex flex-col gap-2">
+    <fieldset disabled={disabled} className="flex min-w-0 flex-col gap-2">
       <legend className="text-sm font-medium text-ink">{legend}</legend>
-      <div className="inline-flex w-fit overflow-hidden rounded-full border border-ink/15">
+      <div className="flex w-fit max-w-full flex-wrap gap-1 rounded-xl border border-ink/15 p-1">
         {options.map((option, index) => {
           const checked = value === option;
           return (
             <label
               key={index}
               aria-label={ariaLabelFor?.(option)}
-              className={`relative flex min-h-11 min-w-11 cursor-pointer items-center justify-center px-4 text-sm font-medium transition-colors focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 ${
+              className={`relative flex min-h-11 min-w-11 max-w-full cursor-pointer items-center justify-center rounded-lg px-4 py-2 text-center text-sm font-medium transition-colors focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 ${
                 checked ? "bg-ink text-canvas" : "bg-transparent text-ink hover:bg-ink/5"
               }`}
             >

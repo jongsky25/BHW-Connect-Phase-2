@@ -79,11 +79,11 @@ export function TestQuestionFields({questions, locale, answers, onAnswer, disabl
 }) {
   return questions.map(question => (
     <fieldset key={question.id} disabled={disabled} className="flex flex-col gap-2">
-      <legend className="text-sm font-medium text-ink">{locale === 'en' ? question.prompt_en : question.prompt_fil}</legend>
+      <legend className="text-xl font-semibold leading-relaxed text-ink">{locale === 'en' ? question.prompt_en : question.prompt_fil}</legend>
       <div className="flex flex-col gap-1">
         {question.options.map((option, index) => (
-          <label key={index} className="flex min-h-[44px] items-center gap-2 text-sm text-ink">
-            <input type="radio" name={`${namePrefix}-${question.id}`} checked={answers[question.id] === index}
+          <label key={index} className="flex min-h-[44px] items-center gap-3 py-2 text-base leading-relaxed text-ink">
+            <input type="radio" className="shrink-0" name={`${namePrefix}-${question.id}`} checked={answers[question.id] === index}
               onChange={() => onAnswer(question.id, index)} />
             {locale === 'en' ? option.en : option.fil}
           </label>

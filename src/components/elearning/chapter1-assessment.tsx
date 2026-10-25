@@ -270,9 +270,9 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
       {marked[0] && <button className={button} disabled={busy} onClick={() => void openQuestion(marked[0].item_id)}>{copy("Go to first review mark", "Pumunta sa unang minarkahan")}</button>}
     </div>
     {questionLegend}
-    <ol className="grid grid-cols-5 gap-2 sm:grid-cols-10">{attempt.items.map((item, i) => {
+    <ol className="grid max-w-[32rem] grid-cols-[repeat(auto-fit,minmax(2.75rem,1fr))] gap-2">{attempt.items.map((item, i) => {
       const answer = attempt.responses.find(r => r.item_id === item.item_id);
-      return <li key={item.item_id}><button className={questionButton(Boolean(answer))} disabled={busy} onClick={async () => {
+      return <li key={item.item_id}><button className={`${questionButton(Boolean(answer))} w-full`} disabled={busy} onClick={async () => {
         if (await move(i)) setStage("questions");
       }}>
         {i + 1}<span className="sr-only">: {answer?.kind === "unknown" ? copy("unknown", "hindi alam") : answer ? copy("answered", "may sagot") : copy("unanswered", "walang sagot")}{answer?.marked ? `, ${copy("marked", "minarkahan")}` : ""}</span>
