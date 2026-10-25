@@ -1,5 +1,10 @@
 # C1AF-06a — Maria storyboard for owner review
 
+**Released and owner-approved:** PR #291 was merged/deployed on 12 October 2026.
+Continue with the [C1AF-06b next-chat handoff](chapter-1-assessor-simulation-runner-next-chat.md).
+The draft review language below records the original authoring state; storyboard
+approval does not approve the remaining rubric, sufficiency or award decisions.
+
 Based on current main `a951b012` (PR #289), using the next-chat handoff from
 [open PR #290](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/290).
 This implementation does not merge or depend on that documentation branch.
