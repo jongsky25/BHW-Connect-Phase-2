@@ -3,7 +3,7 @@
   "base_commit": "23198eaf91097c76ecf5d7e76a33e5d773e639d7",
   "path": "src/components/elearning/reference-lessons.tsx",
   "predecessor_sha256": "4db3e166ed7d2382674abd1ac3c9e578c9c5ca3936c2cb9d9c104d0367e24bb0",
-  "successor_sha256": "35bb752e604e2ef297b581aea956e796059f8475dcc18be4c65c3a655eb7ebf5",
+  "successor_sha256": "48e0332c3716fcf1bd455398273d6271a986a14998ba160517eb0c58f65963c7",
   "replacements": [
     {
       "predecessor_utf8": "import {HepoPresentationGuide} from './hepo-presentation-guide';",
@@ -12,7 +12,7 @@
     },
     {
       "predecessor_utf8": "  const lessonNarration = translation ? translation.narration : (lesson ? props.narration?.[lesson.id] : undefined);",
-      "current_utf8": "  const lessonNarration = translation ? translation.narration : (lesson ? props.narration?.[lesson.id] : undefined);\n  const narrationScope = !videoSelected && mode === \"read\" && lesson ? `${lesson.id}:${lesson.revision.id}:${props.locale}:${translation?.language ?? \"\"}` : undefined;\n  useEffect(() => { enterNarrationScope(narrationScope); }, [narrationScope]);",
+      "current_utf8": "  const lessonNarration = translation ? translation.narration : (lesson ? props.narration?.[lesson.id] : undefined);\n  const narrationScope = !videoSelected && mode === \"read\" && lesson ? `${lesson.id}:${lesson.revision.id}:${props.locale}:${translation?.language ?? \"\"}` : undefined;\n  useEffect(() => {\n    enterNarrationScope(narrationScope);\n    return () => enterNarrationScope();\n  }, [narrationScope]);",
       "count": 1
     },
     {

@@ -174,7 +174,10 @@ export function ReferenceLessons(props: Props) {
   const ui: LessonText = (fil, eng) => translation?.ui[fil] ?? (translation ? storyQuestionUi[translation.language][fil] : undefined) ?? (en ? eng : fil);
   const lessonNarration = translation ? translation.narration : (lesson ? props.narration?.[lesson.id] : undefined);
   const narrationScope = !videoSelected && mode === "read" && lesson ? `${lesson.id}:${lesson.revision.id}:${props.locale}:${translation?.language ?? ""}` : undefined;
-  useEffect(() => { enterNarrationScope(narrationScope); }, [narrationScope]);
+  useEffect(() => {
+    enterNarrationScope(narrationScope);
+    return () => enterNarrationScope();
+  }, [narrationScope]);
   const sourceStoryArt = lesson?.lesson_key === "bhw-roles-hepo"
     ? {
         src: "/training/bhw-1-1/scene-8cdb1498a723.png",
