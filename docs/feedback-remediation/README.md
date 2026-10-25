@@ -659,3 +659,10 @@ The preceding two missing-image checks are recorded as owner-confirmed done.
 [Review and delivery](fb-4.2a-narration-preferences.md) remembers narration speed
 across sections/lessons and adds opt-in Read continuation. Pause, format/language
 changes and locked self-checks retain learner control. Slides audio remains manual.
+
+## FB-4.2b — narrated lesson availability
+
+[Review and delivery](fb-4.2b-narration-availability.md) adds a bilingual illustrated
+narrated lesson for Prioritize using five approved recordings/scenes. The final
+self-check remains separate. Legal-basis recordings already match current teaching;
+scoped Read/Slides guidance makes the available audio easier to find.

@@ -1,0 +1,176 @@
+{
+  "lesson_key": "problem-prioritize",
+  "content_hash": "ca5834ca03409c356d8f4b0b9d2a3187db7d3753f16e58cdaa24e2863c77c5f9",
+  "sections": [
+    "criteria",
+    "worked-scores",
+    "score-evidence",
+    "tie-and-urgent-care",
+    "practice"
+  ],
+  "assets": [
+    {
+      "id": "prioritize-criteria",
+      "path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+      "content_hash": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf"
+    },
+    {
+      "id": "prioritize-worked-scores",
+      "path": "/training/bhw-1-7/prioritize-worked-scores-cc9155c91031.png",
+      "content_hash": "cc9155c910314c93bf47dc85801ce0888f415d419c3cf75feac1ac05e821e906"
+    },
+    {
+      "id": "prioritize-score-evidence",
+      "path": "/training/bhw-1-7/prioritize-score-evidence-45506987ed45.png",
+      "content_hash": "45506987ed45527a3a22f6a85442907ba63a44f88a499c52be2f9597dd7e7b6a"
+    },
+    {
+      "id": "prioritize-tie-and-urgent-care",
+      "path": "/training/bhw-1-7/prioritize-tie-and-urgent-care-78194688954e.png",
+      "content_hash": "78194688954e2ae7c061ad430db4b8b470220d1cae36340075c18e104b86b7f1"
+    },
+    {
+      "id": "prioritize-practice",
+      "path": "/training/bhw-1-7/prioritize-practice-bc604b9d65c5.png",
+      "content_hash": "bc604b9d65c5cf1f1a6ea1f87113897395b39c64b32280a744554d2a15faa791"
+    }
+  ],
+  "languages": {
+    "fil": {
+      "video": {
+        "path": "/training/narrated-lessons/problem-prioritize/prioritize-illustrated-fil-ed028845ac42.mp4",
+        "content_hash": "ed028845ac42bc3e0168f2f75848f103478e0689e2dc54f8f5bd70b17947de40",
+        "duration_s": 523.337,
+        "poster": {
+          "path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+          "content_hash": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf"
+        },
+        "captions": {
+          "path": "/training/narrated-lessons/problem-prioritize/prioritize-illustrated-fil-36291f7d7fbd.vtt",
+          "content_hash": "36291f7d7fbd08db403b676e0fc1acd002d2796e05acbf1a04f9731ea5b9ce04"
+        }
+      },
+      "clips": [
+        {
+          "section_id": "criteria",
+          "asset_id": "prioritize-criteria",
+          "image_path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+          "image_sha256": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf",
+          "src": "/training/audio/07-problema/problem-prioritize/criteria.fil.a89f346e4aec.mp3",
+          "sha256": "f1c938eb27983d982639f4bba4959529e2a1833a5c26523c5393e68c681c25f5",
+          "start_seconds": 0,
+          "duration_seconds": 94.929
+        },
+        {
+          "section_id": "worked-scores",
+          "asset_id": "prioritize-worked-scores",
+          "image_path": "/training/bhw-1-7/prioritize-worked-scores-cc9155c91031.png",
+          "image_sha256": "cc9155c910314c93bf47dc85801ce0888f415d419c3cf75feac1ac05e821e906",
+          "src": "/training/audio/07-problema/problem-prioritize/worked-scores.fil.106b4437139f.mp3",
+          "sha256": "f58d6a85deecfc1485eb73137ec431dd69e3a6db0bea351c16275fc1cf178173",
+          "start_seconds": 94.929,
+          "duration_seconds": 108.48654166666667
+        },
+        {
+          "section_id": "score-evidence",
+          "asset_id": "prioritize-score-evidence",
+          "image_path": "/training/bhw-1-7/prioritize-score-evidence-45506987ed45.png",
+          "image_sha256": "45506987ed45527a3a22f6a85442907ba63a44f88a499c52be2f9597dd7e7b6a",
+          "src": "/training/audio/07-problema/problem-prioritize/score-evidence.fil.7ec6f7c9820b.mp3",
+          "sha256": "45063876eb10243a99a8cf56e3bea0e6228f4c02a0d26a1d4d4ada7f6ca7e7da",
+          "start_seconds": 203.41554166666668,
+          "duration_seconds": 104.986125
+        },
+        {
+          "section_id": "tie-and-urgent-care",
+          "asset_id": "prioritize-tie-and-urgent-care",
+          "image_path": "/training/bhw-1-7/prioritize-tie-and-urgent-care-78194688954e.png",
+          "image_sha256": "78194688954e2ae7c061ad430db4b8b470220d1cae36340075c18e104b86b7f1",
+          "src": "/training/audio/07-problema/problem-prioritize/tie-and-urgent-care.fil.d03ac9310cc9.mp3",
+          "sha256": "a7652a25620a898b9d986d62b9e7cf536455031f2228658e7a0c14311bf11583",
+          "start_seconds": 308.4016666666667,
+          "duration_seconds": 102.55675
+        },
+        {
+          "section_id": "practice",
+          "asset_id": "prioritize-practice",
+          "image_path": "/training/bhw-1-7/prioritize-practice-bc604b9d65c5.png",
+          "image_sha256": "bc604b9d65c5cf1f1a6ea1f87113897395b39c64b32280a744554d2a15faa791",
+          "src": "/training/audio/07-problema/problem-prioritize/practice.fil.59f8ec7feb70.mp3",
+          "sha256": "c7b8ef29771617877d68145b198497312aed4872024cf0707c0692f1f84b57bd",
+          "start_seconds": 410.9584166666667,
+          "duration_seconds": 112.37879166666667
+        }
+      ],
+      "audio_pcm_sha256": "c05bf1bb3fa257ba861a4298bc6b4dead710959a788418e69a2944c050161e84"
+    },
+    "en": {
+      "video": {
+        "path": "/training/narrated-lessons/problem-prioritize/prioritize-illustrated-en-81f072265188.mp4",
+        "content_hash": "81f072265188730c29469b23321a50b53a3e24670fee673675535c7b89340361",
+        "duration_s": 477.916667,
+        "poster": {
+          "path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+          "content_hash": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf"
+        },
+        "captions": {
+          "path": "/training/narrated-lessons/problem-prioritize/prioritize-illustrated-en-3840ecdb0403.vtt",
+          "content_hash": "3840ecdb0403fd59b4a15a493f58768c2d88bb441e7c44860df50fc72080848c"
+        }
+      },
+      "clips": [
+        {
+          "section_id": "criteria",
+          "asset_id": "prioritize-criteria",
+          "image_path": "/training/bhw-1-7/prioritize-criteria-789d2c5741ff.png",
+          "image_sha256": "789d2c5741ff2c864117932aa48eed687e20da630c52aa57b3b833187c8998bf",
+          "src": "/training/audio/07-problema/problem-prioritize/criteria.en.73f3d1b100dd.mp3",
+          "sha256": "b748b7959a5b86d45cf05622c6eb52bb44ecc55138f85b164f12e89bd97e3ad0",
+          "start_seconds": 0,
+          "duration_seconds": 81.00575
+        },
+        {
+          "section_id": "worked-scores",
+          "asset_id": "prioritize-worked-scores",
+          "image_path": "/training/bhw-1-7/prioritize-worked-scores-cc9155c91031.png",
+          "image_sha256": "cc9155c910314c93bf47dc85801ce0888f415d419c3cf75feac1ac05e821e906",
+          "src": "/training/audio/07-problema/problem-prioritize/worked-scores.en.c82c452e627e.mp3",
+          "sha256": "0bf531e45cb7429d8ade988cf927c7a7f03021247a232b2d95153e514698a8a2",
+          "start_seconds": 81.00575,
+          "duration_seconds": 100.83266666666667
+        },
+        {
+          "section_id": "score-evidence",
+          "asset_id": "prioritize-score-evidence",
+          "image_path": "/training/bhw-1-7/prioritize-score-evidence-45506987ed45.png",
+          "image_sha256": "45506987ed45527a3a22f6a85442907ba63a44f88a499c52be2f9597dd7e7b6a",
+          "src": "/training/audio/07-problema/problem-prioritize/score-evidence.en.483d94928a31.mp3",
+          "sha256": "f4c1f5fff6723ae1f149e33213cbf5f93cac1b0f5da6b6838f115806dc65b548",
+          "start_seconds": 181.83841666666666,
+          "duration_seconds": 101.38125
+        },
+        {
+          "section_id": "tie-and-urgent-care",
+          "asset_id": "prioritize-tie-and-urgent-care",
+          "image_path": "/training/bhw-1-7/prioritize-tie-and-urgent-care-78194688954e.png",
+          "image_sha256": "78194688954e2ae7c061ad430db4b8b470220d1cae36340075c18e104b86b7f1",
+          "src": "/training/audio/07-problema/problem-prioritize/tie-and-urgent-care.en.11747d64e14c.mp3",
+          "sha256": "8b5b0a7ea49eb647374abd94c2da12ae21adc2bd69073d65bb65a103c6e154bc",
+          "start_seconds": 283.2196666666666,
+          "duration_seconds": 93.727375
+        },
+        {
+          "section_id": "practice",
+          "asset_id": "prioritize-practice",
+          "image_path": "/training/bhw-1-7/prioritize-practice-bc604b9d65c5.png",
+          "image_sha256": "bc604b9d65c5cf1f1a6ea1f87113897395b39c64b32280a744554d2a15faa791",
+          "src": "/training/audio/07-problema/problem-prioritize/practice.en.230420a4b52f.mp3",
+          "sha256": "d8580a430de8abe997c54279ff9d5b24e7655eb7f473d9b76f826f818115dd0f",
+          "start_seconds": 376.9470416666666,
+          "duration_seconds": 100.93716666666667
+        }
+      ],
+      "audio_pcm_sha256": "338d12ebbe9a4497508a31d5d461ab42ed969d1f73cf4445be0bdf89856d8a2b"
+    }
+  }
+}
