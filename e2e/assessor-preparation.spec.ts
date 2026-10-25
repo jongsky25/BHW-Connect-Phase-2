@@ -71,6 +71,8 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     await page.getByRole('link',{name:'Progreso sa pag-aaral at listahan ng mga aralin'}).click();
     await expect(page).toHaveURL(`${base}#assessor-study-progress`);
     await expect(page.locator('#assessor-study-progress')).toBeVisible();
+    const progressClearance=await page.evaluate(()=>({target:document.getElementById('assessor-study-progress')!.getBoundingClientRect().top,header:document.querySelector('header.sticky')!.getBoundingClientRect().bottom}));
+    expect(progressClearance.target).toBeGreaterThanOrEqual(progressClearance.header);
     await page.getByRole('link',{name:'Aking mga sertipikasyon',exact:true}).click();
     await expect(page.getByRole('heading',{name:'Saan makikita ang progreso at susunod na hakbang?'})).toBeVisible();
     const personal=page.getByRole('navigation',{name:'Progreso sa pag-aaral ayon sa kabanata'});

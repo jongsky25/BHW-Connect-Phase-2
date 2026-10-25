@@ -9,6 +9,8 @@ import AxeBuilder from '@axe-core/playwright';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..'),fixture=join(root,'scripts/tests/fixtures/assessor-progress-browser');
 const server=await createServer({configFile:false,root:fixture,resolve:{alias:[
  {find:'next/link',replacement:join(root,'scripts/tests/fixtures/assessment-readability-browser/link.tsx')},
+ {find:'next/navigation',replacement:join(root,'scripts/tests/fixtures/training-connection-browser/navigation.ts')},
+ {find:'@/lib/supabase/client',replacement:join(root,'scripts/tests/fixtures/chat-history-browser/client.ts')},
  {find:/^@\//,replacement:join(root,'src')+'/'},
 ]},esbuild:{jsx:'automatic'},server:{host:'127.0.0.1',port:0},logLevel:'error'});
 let browser,cases=0;
@@ -33,7 +35,9 @@ try{
   cases++;
   await open('review_chapter-1');
   await page.getByRole('link',{name:name('Review Chapter 1 record below','Suriin ang tala sa Kabanata 1 sa ibaba')}).click();
-  await expect(page.locator('#chapter-1')).toBeFocused();cases++;
+  await expect(page.locator('#chapter-1')).toBeFocused();
+  const clearance=await page.evaluate(()=>({target:document.getElementById('chapter-1').getBoundingClientRect().top,header:document.querySelector('[data-fixture-header]').getBoundingClientRect().bottom}));
+  expect(clearance.target).toBeGreaterThanOrEqual(clearance.header);cases++;
   await open('complete_chapter-3');
   await expect(page.getByRole('link',{name:name('Review Chapter 3 record below','Suriin ang tala sa Kabanata 3 sa ibaba')})).toHaveAttribute('href','#chapter-3');
   await expect(page.locator('a[href*="/assessor/chapter-3"]')).toHaveCount(0);cases++;

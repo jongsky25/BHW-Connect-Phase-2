@@ -166,7 +166,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
     {!examPage && <AssessorStudyProgressLink chapterHref={base} locale={locale}/>}
     {chapterKey==='chapter-1' && <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/workspace`}>{text('Working area ng Kabanata 1','Chapter 1 working area')}</Link>}
     {briefingVisible && <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`${base}/briefing`}>{text('Mga layunin at responsibilidad sa Kabanata 1','Chapter 1 objectives and responsibilities')}</Link>}
-    <div id={ASSESSOR_STUDY_PROGRESS_ID} tabIndex={-1} className="scroll-mt-6 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">
+    <div id={ASSESSOR_STUDY_PROGRESS_ID} tabIndex={-1} className="scroll-mt-40 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary md:scroll-mt-28">
     {briefingVisible && showPreparation ? <AssessorPreparationChecklist locale={locale} baseHref={base} input={{
       briefingRecorded:true,pretestRecorded:pretestDone,total:study.total,completed:study.completed,missing:study.missing,
       nextLessonHref:study.nextLesson && study.entries.some(e=>e.lesson?.id===study.nextLesson?.id&&!e.done)?href(study.nextLesson):null,
