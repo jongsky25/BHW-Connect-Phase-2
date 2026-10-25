@@ -64,3 +64,8 @@ recordings and verified playback, 1.5× on the next section, pause, bounded
 controls and zero control-region axe violations. Mobile Filipino/dark and
 desktop English/light screenshots were inspected. Framework navigation and
 image components were shimmed; this is not authenticated production testing.
+
+CI initially passed 2,436 tests with four historical full-view media/hash checks
+timing out at the default five seconds (1.6.3, 1.6.4, 1.8.1 and 1.8.2). The
+Vitest default is now twenty seconds to accommodate these synchronous audits on
+shared runners. No test source, assertion, hash, receipt, filter or skip changed.
