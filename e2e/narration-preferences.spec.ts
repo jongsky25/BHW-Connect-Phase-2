@@ -92,8 +92,13 @@ test('Narration speed persists and opt-in listening respects pause, checks and m
         // A full reload retains speed but never starts audio.
         await page.reload();
         await expect(page.locator('[data-lesson-heading]')).toBeVisible();
+        // Assessor study may restore Slides; speed persistence is independent
+        // of its initial format. Choose Read without changing the saved speed.
+        await reader.getByRole('button',{name:locale==='en'?'Read':'Basahin',exact:true}).click();
         for(let i=0;i<6&&await previous.isEnabled();i++)await previous.click();
+        await expect(reader.locator('article')).toHaveAttribute('data-scene','missed-visits');
         await expect(speed).toHaveValue('1.5');
+        await expect(automatic).not.toBeChecked();
         expect(await audio.evaluate(el=>(el as HTMLAudioElement).paused)).toBe(true);
       }
     }

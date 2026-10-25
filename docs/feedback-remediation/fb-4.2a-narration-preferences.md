@@ -76,3 +76,11 @@ matching included the nested select option text, so it waited for a nonexistent
 offline reader. The fixture now selects the single native combobox inside the
 named narration control group, as in the passing offline browser review.
 No playback implementation was changed for this test correction.
+
+The full CI trace then verified playback/pause/mode/check steps and exposed a
+second fixture assumption: assessor reload may restore Slides. The reload test
+now explicitly selects Read, returns to the first section, and checks retained
+speed and paused/off continuation without selecting speed again. The trace
+confirmed Slides was active; application format/resume behavior is unchanged.
+Additional offline actual-reader review passed the complete Read → Slides →
+Read → locked check → response → reload flow in both languages.
