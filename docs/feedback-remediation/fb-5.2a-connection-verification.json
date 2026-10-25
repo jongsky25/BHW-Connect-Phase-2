@@ -1,0 +1,50 @@
+{
+  "baseline_commit": "b3f6dabad7575ab0c522c5c0cfbd3d0685f01ff2",
+  "date": "2026-10-25",
+  "read_only_pilot_flags": {
+    "offline_pwa": true,
+    "chapter1_assessment_v2": true,
+    "assessor_flow_ui": true
+  },
+  "baseline_reproduction": {
+    "failed_tests": 2,
+    "unhandled_confirmation_rejections": 2,
+    "languages": [
+      "en",
+      "fil"
+    ]
+  },
+  "focused_tests": 52,
+  "new_component_tests": 8,
+  "interrupted_http_cases": 10,
+  "browser": {
+    "width": 320,
+    "font_scale": "xl",
+    "languages": [
+      "en",
+      "fil"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "actual_components": true,
+    "transport": "real HTTP to an in-memory localhost endpoint",
+    "pilot_writes": 0,
+    "lost_response_save_commits": 1,
+    "lost_response_submission_commits": 1,
+    "completion_retry_commits": 1,
+    "axe_scans": 2,
+    "axe_violations": 0,
+    "horizontal_overflow": 0
+  },
+  "retained_boundaries": [
+    "No offline assessment write queue",
+    "No new persistent answer storage",
+    "No service-worker/cache policy change",
+    "No question/content/grade/threshold/history change",
+    "No shared-reader source change",
+    "Existing SQL receipt and authorization guards remain"
+  ],
+  "owner_declined_feedback": "b7900504-80c4-48a6-943d-0e3beee64f7a"
+}
