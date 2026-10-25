@@ -253,7 +253,25 @@
     "celebrationMessage": "🎉 Great! You got your first answer from the Chat Guide.",
     "rateLimitError": "You're asking questions quickly. Please wait {seconds} seconds and try again.",
     "questionRequiredError": "Type a question first.",
-    "genericError": "Something went wrong. Please try again."
+    "genericError": "Something went wrong. Please try again.",
+    "history": {
+      "heading": "My chat history",
+      "browse": "Browse published questions",
+      "description": "Reopen saved conversations without changing your current chat.",
+      "back": "Back to conversations",
+      "archiveNote": "Read only. Saved answers and prompts are in English. Options and measurement details may be missing. Past guidance may not apply now.",
+      "transcript": "Saved conversation",
+      "you": "You",
+      "guide": "Chat Guide · saved text",
+      "conversations": "Your saved conversations",
+      "conversation": "Conversation",
+      "loading": "Loading chat history…",
+      "error": "Chat history could not be loaded. Check your connection and try again.",
+      "retry": "Retry history",
+      "empty": "No saved conversations yet.",
+      "emptyTranscript": "No saved messages remain in this conversation.",
+      "more": "Load more"
+    }
   },
   "admin": {
     "nav": {

@@ -3,6 +3,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { useRef, useState, type FormEvent } from "react";
 import { EmptyState } from "@/components/empty-state";
+import { ChatHistory } from "@/components/chat/chat-history";
 import { PreviewNote } from "@/components/preview/preview-note";
 import { usePreview } from "@/components/preview/preview-provider";
 import { normalizeText } from "@/lib/chat/normalize";
@@ -197,6 +198,8 @@ export function ChatGuide() {
         {t("disclaimer")}
       </p>
 
+      <ChatHistory />
+
       <div role="log" aria-live="polite" aria-relevant="additions" className="flex flex-1 flex-col gap-4">
         {exchanges.length === 0 ? <EmptyState message={t("emptyState")} /> : null}
         {exchanges.map((exchange) => (
@@ -226,7 +229,7 @@ export function ChatGuide() {
             onChange={(event) => setInput(event.target.value)}
             placeholder={t("inputPlaceholder")}
             disabled={isPreview}
-            className="min-h-[48px] flex-1 rounded-md border border-ink/20 bg-canvas px-3 py-2 text-ink outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/30 disabled:opacity-60"
+            className="min-h-[48px] min-w-0 flex-1 rounded-md border border-ink/20 bg-canvas px-3 py-2 text-ink outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/30 disabled:opacity-60"
           />
           <button
             type="submit"

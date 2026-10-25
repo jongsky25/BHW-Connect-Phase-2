@@ -696,3 +696,9 @@ confirmation after network failure, retains confirmed results through a history
 refresh error, and adds advisory connection/loading feedback. Real HTTP outages
 verify saved answers, position, receipt retries and completion. Offline writes
 remain unsupported. The owner declined the too-many-lessons report as won't fix.
+
+## FB-5.2b — personal chat history and published questions
+
+Confirmed `/chat` saved messages but offered no reopening UI after navigation/reload. Adds bilingual read-only personal history above the live chat, preserves current conversation/input, pages existing sessions/messages, retries failed reads and explicitly scopes admin reads to their own records. Stored English text is labelled; missing options and measurement details are not reconstructed. No database or cache-policy changes.
+
+The FAQ suggestion was reviewed separately: published Q&A already exists in 11 KB categories (222 visible entries at the read-only audit). A direct browse link improves access without duplicating the library or claiming popularity. See [FB-5.2b evidence](fb-5.2b-chat-history.md). Original pilot feedback stays unchanged and open for live comments; release PR contains final CI/deployment receipts.
