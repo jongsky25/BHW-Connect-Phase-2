@@ -43,6 +43,12 @@ test('a real saved question reopens after reload; history is personal even for a
   expect(await restGet(request, bhwToken, `chat_messages?session_id=eq.${id}&select=id,sender,text,created_at,kind,route&order=created_at.asc`)).toEqual(saved);
 
   for (const account of [STABLE_CITY_ADMIN, STABLE_BHW]) {
+    if (account === STABLE_CITY_ADMIN) {
+      // Prove the admin really has wider operational RLS access, so the
+      // personal endpoint's 404 demonstrates its additional owner filter.
+      const token = await getAccessToken(request, account.username, account.password);
+      expect(await restGet(request, token, `chat_messages?session_id=eq.${id}&select=id`)).toHaveLength(2);
+    }
     const context = await browser.newContext();
     try {
       const other = await context.newPage(); await login(other, account);
