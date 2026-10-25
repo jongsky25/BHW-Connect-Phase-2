@@ -14,6 +14,7 @@ function localSql(sql:string){
 
 for(const target of [{key:'problem-prioritize',module:'07-problema',position:6},{key:'bhw-legal-role',module:'04-ra7883',position:3}])test(`Narration availability in training and assessor study: ${target.key}`,async({page,request})=>{
   test.setTimeout(180000);
+  localSql('select 1;'); // Refuse pilot URLs before even creating a fixture account.
   const admin=await getAccessToken(request,STABLE_CITY_ADMIN.username,STABLE_CITY_ADMIN.password);
   const assessor=await createThrowawayAssessor(request,admin,'00000000-0000-0000-0000-000000000004');
   const [actor]=await restGet(request,admin,`users?select=id&username=eq.${assessor.username}`) as {id:string}[];
