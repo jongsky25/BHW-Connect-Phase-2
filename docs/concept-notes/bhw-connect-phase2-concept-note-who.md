@@ -22,6 +22,13 @@
   Capiz are outside entirely. Year-1 cohort here is the whole region, 23,813, at ₱14.98M =
   ₱629/BHW, falling to ₱50/BHW nationally. If any of these move they all move together —
   §3, §13, §15, §20 and pitch/bhw-connect-who.html.
+
+  FUNDING TIERS (§13.2). ₱14.98M is the value and does not move; the funding mix does. Tier 2
+  is ₱5.98M cash (≈₱6.0M) with ₱9.00M absorbed as direct support and counterpart; the two
+  columns sum to ₱14.98M exactly and the apportioned contingency halves (0.44 + 0.67) sum to
+  the original 1.11. The Tier 2 split is labelled an ESTIMATE because it is a negotiation, not
+  a finding. Never present ₱6.0M as a cheaper or narrower Year 1 — the scope is identical
+  across all three tiers. Matching slide: "Scope, Coverage & Year-1 Cost" in the deck.
 -->
 
 # CONCEPT NOTE
@@ -46,7 +53,7 @@ Bureau of Local Health Systems Development, Department of Health, Republic of th
 | Training Package Footprint | Iloilo province (10,519), Iloilo City (309), Guimaras (705) = 11,533 — 48.4% of Region VI by geography; 360–1,200 reached by direct training |
 | Year-1 BHW Cohort | **23,813 — all of Western Visayas**, including the 12,280 in Aklan, Antique and Capiz the training package does not reach |
 | Duration | 12 months — Year 1 of a proposed phased programme |
-| Year-1 Contribution Sought | **₱14,980,000 (≈ US$258,000)** — built bottom-up from the workplan (see Section 13); ₱629 per BHW reached |
+| Year-1 Contribution Sought | **₱14,980,000 (≈ US$258,000)** — built bottom-up from the workplan (see Section 13); ₱629 per BHW reached. Reducible to **≈ ₱6,000,000** in cash where WHO provides equipment, evaluation and clinical validation as direct support, or deliverable inside existing HHP+ support with no new instrument — same scope in all three cases (see Section 13.2) |
 | Government Counterpart | Platform ownership, the delivered Phase 1 registry, the completed Phase 2 design and architecture funded at BLHSD's own cost, hosting pathway, content approval authority, field structures, supervision and post-project sustainment |
 | Date | **[TO CONFIRM]** |
 
@@ -98,6 +105,8 @@ The **HHP+ community NCD screening curriculum** is proposed as the Year 1 flagsh
 > **₱14,980,000 (≈ US$258,000) over 12 months**, built bottom-up from the workplan: engineering to construct the platform, content authoring and clinical validation, bilingual video production, instructional design and QA, infrastructure, equipment, region-wide rollout and certification support, independent monitoring and evaluation, and governance work — itemized in Section 13. That is **₱629 per Barangay Health Worker reached**.
 >
 > This does not include training-delivery costs, travel or per diem, or other programme implementation expenses. Those are counterpart contributions or funded separately.
+>
+> **₱14,980,000 is the value of Year 1, not a precondition for it.** The scope does not change; the funding mix can. Three tiers are on the table, and they are set out in Section 13.2: the full envelope financed in cash; approximately **₱6,000,000** in cash where WHO provides equipment, evaluation and clinical validation as direct support and DOH, CHD VI and LGUs carry rollout and management; or delivery inside the support WHO is already providing to HHP+, with no separate instrument and a longer runway.
 >
 > Ownership of the platform, its code, its data and its published content remains with DOH throughout, subject to a Memorandum of Agreement executed before implementation.
 
@@ -417,6 +426,38 @@ Lines are marked *fixed* where the cost does not change with the size of the coh
 Between twenty and sixty-six times the reach, for a price that is knowable in advance and falls as it scales. Every Barangay Health Worker added after Year 1 is an onboarding cost, not a construction cost — the build is paid once.
 
 **Excluded from this envelope**, and provided as counterpart contributions or funded separately: training-delivery costs, travel and per diem, and other programme implementation expenses. Equipment disposition at closeout, and the eligibility of capital items under the chosen instrument, to be settled in the MOA.
+
+### 13.2 Three funding tiers for the same scope
+
+The ₱14,980,000 above is the honest full value of Year 1 and is what the work costs to deliver. It is not, however, the only shape the contribution can take. Several of its lines can be carried as direct support or counterpart rather than as cash through a financing instrument, and doing so reduces the instrument without reducing the scope. In all three tiers the deliverable is identical: the platform built, the HHP+ curriculum authored, clinically validated and DOH-approved, and all 23,813 Barangay Health Workers in Western Visayas onboarded and certified.
+
+| Tier | Cash instrument | Structure |
+|---|---|---|
+| **1 — Full value** | **₱14,980,000** (≈ US$258,000) | WHO finances the whole Year-1 envelope. Nothing waits on counterpart capacity; fastest to contract and fastest to field. |
+| **2 — With direct support** | **≈ ₱5,980,000** (≈ US$103,000) — *estimate* | WHO procures equipment directly, commissions the independent evaluation, and provides clinical validation through its own technical officers; DOH/BLHSD, CHD VI and LGUs carry rollout and certification support, project management and governance work. |
+| **3 — Inside existing support** | No new instrument | The platform is delivered against the support WHO already provides to HHP+, staged over a period longer than twelve months. Slower, and still worth doing. |
+
+**Tier 2, line by line.** The split below is an estimate offered as a starting point for discussion, not a settled allocation — which lines direct support can absorb depends on WHO's own instruments and on BLHSD's and CHD VI's confirmed capacity, and the ₱6,000,000 figure moves with that conversation.
+
+| Line | Cash (₱) | Absorbed as direct support / counterpart (₱) |
+|---|---|---|
+| Engineering — build, harden, provision | 2,460,000 | — |
+| Infrastructure & tooling | 1,400,000 | — |
+| Content authoring | 900,000 | — |
+| Instructional design & QA | 780,000 | — |
+| Rollout & certification, region-wide | — | 2,800,000 |
+| Independent M&E | — | 1,400,000 |
+| Equipment | — | 1,200,000 |
+| Video & bilingual content production | — | 1,150,000 |
+| Project management | — | 780,000 |
+| Clinical validation | — | 600,000 |
+| Governance & institutionalization | — | 400,000 |
+| Contingency — 8%, apportioned | 440,000 | 670,000 |
+| **Total** | **5,980,000** | **9,000,000** |
+
+The two columns sum to ₱14,980,000. Content authoring and clinical validation, shown as a single ₱1,500,000 line in Section 13, are separated here because the authoring is contracted work and the clinical validation is a technical review WHO is well placed to provide in kind.
+
+**What does not change across the tiers.** The scope, the cohort of 23,813, DOH ownership of the platform, its source code, its data and its published content, the deliverable-based payment structure with go/no-go gates, and the results framework in Section 12. What changes is the instrument and, in Tier 3, the timeline.
 
 ## 14. Year-1 Success Milestones
 
