@@ -21,7 +21,7 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
   const assessor=await createThrowawayAssessor(request,cityToken,'00000000-0000-0000-0000-000000000004');
   const [actor]=await restGet(request,cityToken,`users?select=id&username=eq.${assessor.username}`) as Array<{id:string}>;
   expect(actor.id).toMatch(/^[a-f0-9-]{36}$/);
-  const course=randomUUID(),program=randomUUID(),chapter=randomUUID(),cohort=randomUUID();
+  const course=randomUUID(),program=randomUUID(),chapter=randomUUID(),cohort=randomUUID(),guideModuleId=randomUUID();
   localSql(`
     insert into public.courses(id,org_unit_id,author_user_id,title_fil,title_en,status)
       select '${course}','00000000-0000-0000-0000-000000000006',id,'E2E assessor chapter','E2E assessor chapter','published' from public.users where username='admin.city.stable';
@@ -29,6 +29,8 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
       select '${program}','bhw-reference-manual','00000000-0000-0000-0000-000000000006',id,'E2E assessor manual','E2E assessor manual','published' from public.users where username='admin.city.stable';
     insert into public.training_program_chapters(id,program_id,chapter_key,position,title_fil,title_en,course_id,availability)
       values('${chapter}','${program}','chapter-1',0,'Kabanata I','Chapter I','${course}','available');
+    insert into public.course_modules(id,course_id,position,type,title_fil,title_en)
+      values('${guideModuleId}','${course}',0,'text','Gabay para sa paghahanda','Preparation guide');
     insert into public.assessor_flow_cohorts(id,program_id,chapter_key,cohort_key,requirements_version,ui_enabled,writes_enabled,awards_enabled)
       values('${cohort}','${program}','chapter-1','e2e-preparation','chapter-1:c1af.draft-1',true,false,false);
     insert into public.assessor_flow_cohort_members(program_id,chapter_key,user_id,cohort_id)
@@ -38,7 +40,19 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
   try {
     await onboardThroughLogin(page,assessor.username,assessor.tempPassword,'AssessorPrepPw2026!');
     const base=`/training/${program}/assessor/chapter-1`;
-    await page.goto(base);
+    // Candidates may inspect the guide before training. That read creates no
+    // progress/qualification and links into the existing briefing gate.
+    const guideEvidence=()=>localSql(`select jsonb_build_object(
+      'study',(select jsonb_agg(to_jsonb(p)) from assessor_lesson_progress p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
+      'attempts',(select jsonb_agg(to_jsonb(p)) from assessor_exam_attempts p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
+      'qualifications',(select jsonb_agg(to_jsonb(p)) from assessor_chapter_qualifications p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
+      'awards',(select jsonb_agg(to_jsonb(p)) from assessor_rollout_private.chapter_awards p where actor_id='${actor.id}' and chapter_id='${chapter}'));`).trim();
+    const beforeGuide=guideEvidence();
+    await page.goto(`/training/${program}/chapter-1/${guideModuleId}`);
+    await expect(page.getByRole('heading',{name:'Pagbukas ng gabay at pahintulot sa pagtatasa'})).toBeVisible();
+    await expect(page.getByRole('link',{name:'Tingnan ang mga kailangan sa aking sertipikasyon'})).toHaveAttribute('href',`/training/${program}/assessor/qualifications#chapter-1`);
+    expect(guideEvidence()).toBe(beforeGuide);
+    await page.getByRole('link',{name:'Buksan ang sarili kong paghahanda sa kabanata'}).click();
     await expect(page).toHaveURL(`${base}/briefing`);
     const save=page.getByRole('button',{name:'Itala ang aking pagkilala'});
     await expect(save).toBeDisabled();
@@ -62,12 +76,7 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     await expect(checklist.getByText('Sariling pag-aaral · 0 sa 42 aralin')).toBeVisible();
     await expect(page.locator('section[aria-labelledby^="study-subchapter-"]')).toHaveCount(9);
     await expect(checklist.getByRole('link',{name:'Kunin ang diagnostic pretest'})).toHaveCount(0);
-    const evidenceSnapshot=()=>localSql(`select jsonb_build_object(
-      'study',(select jsonb_agg(to_jsonb(p)) from assessor_lesson_progress p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
-      'attempts',(select jsonb_agg(to_jsonb(p)) from assessor_exam_attempts p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
-      'qualifications',(select jsonb_agg(to_jsonb(p)) from assessor_chapter_qualifications p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
-      'awards',(select jsonb_agg(to_jsonb(p)) from assessor_rollout_private.chapter_awards p where actor_id='${actor.id}' and chapter_id='${chapter}'));`).trim();
-    const beforeNavigation=evidenceSnapshot();
+    const beforeNavigation=guideEvidence();
     await page.getByRole('link',{name:'Progreso sa pag-aaral at listahan ng mga aralin'}).click();
     await expect(page).toHaveURL(`${base}#assessor-study-progress`);
     await expect(page.locator('#assessor-study-progress')).toBeVisible();
@@ -79,7 +88,7 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     await personal.getByRole('link',{name:'Kabanata I',exact:true}).click();
     await expect(page).toHaveURL(`${base}#assessor-study-progress`);
     await expect(checklist.getByText('Sariling pag-aaral · 0 sa 42 aralin')).toBeVisible();
-    expect(evidenceSnapshot()).toBe(beforeNavigation);
+    expect(guideEvidence()).toBe(beforeNavigation);
     expect(localSql(`select count(*) from public.assessor_briefing_acknowledgements where assessor_user_id='${actor.id}' and program_id='${program}';`).trim()).toBe('1');
     expect(localSql(`select count(*) from public.audit_events where actor_user_id='${actor.id}' and event_type='assessor_briefing.acknowledged';`).trim()).toBe('1');
   } finally {

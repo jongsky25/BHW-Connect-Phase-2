@@ -1,4 +1,5 @@
 import {LessonPageHeading,type LessonHeadingContext} from '@/components/elearning/lesson-page-heading';
+import {AssessorGuideAccessNotice} from '@/components/elearning/assessor-guide-access-notice';
 import * as Sentry from '@sentry/nextjs';
 import Link from 'next/link';
 import { lessonActivities } from '@/lib/elearning/activities';
@@ -380,6 +381,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
     {role==='assessor' && !viewer.isPreview && program.content_key==='bhw-reference-manual' && <aside className="rounded-xl border border-primary/30 p-4">
       <h2 className="font-semibold">{text('Pag-aaral para maging assessor','Study to become an assessor')}</h2>
       <p className="mt-1 text-sm">{text('Aralin ang buong kabanata at i-save ang sarili mong progreso. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Study the full chapter and save your own progress. No practical assessment by another assessor is required.')}</p>
+      {chapter && <AssessorGuideAccessNotice programId={programId} chapterKey={chapter.chapter_key} locale={loc}/>}
       <div className="mt-3 flex flex-wrap gap-3">{chapters?.filter(c=>c.availability==='available' && c.course_id && ['chapter-1','chapter-2'].includes(c.chapter_key)).map(c=><Link key={c.id} prefetch={false} className="rounded border px-4 py-3 underline" href={`${base}/assessor/${c.chapter_key}`}>{text('Pag-aralan: ','Study: ')}{title(c)}</Link>)}</div>
       {chapters?.some(c=>c.chapter_key==='chapter-1' && c.availability==='available' && c.course_id) &&
         <Link prefetch={false} className="mt-3 inline-block rounded border border-primary px-4 py-3 underline" href={`${base}/assessor/workspace`}>{text('Working area ng Kabanata 1','Chapter 1 working area')}</Link>}

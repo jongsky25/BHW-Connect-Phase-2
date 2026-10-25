@@ -132,6 +132,12 @@ describe('C1AF-18 exact formal attempt migration',()=>{
     await claim(v.alex,request);
     await expect(start()).rejects.toThrow(/start unavailable/);
     await arrange(v.alex,request);
+    // A fully arranged, ready BHW request cannot substitute for the assessor's
+    // own chapter authority. Opening the guide must never create that award.
+    await db.query('delete from assessor_rollout_private.chapter_awards where actor_id=$1',[v.alex]);
+    await expect(start()).rejects.toThrow(/start unavailable/);
+    expect((await db.query('select count(*)::int n from assessor_rollout_private.formal_attempts')).rows[0].n).toBe(0);
+    await db.query("insert into assessor_rollout_private.chapter_awards values($1,$2,'req1','active')",[v.alex,v.chapter]);
     attempt=await start();
     expect(await start()).toBe(attempt);
     expect((await state()).attempt).toMatchObject({id:attempt,status:'draft',revision:0});

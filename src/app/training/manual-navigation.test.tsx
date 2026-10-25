@@ -45,6 +45,28 @@ afterEach(cleanup);
 const page=(path:string[]=[],view?:string,returnTo?:string,mode?:string)=>TrainingPage({params:Promise.resolve({programId:'manual',path}),searchParams:Promise.resolve({view,returnTo,mode})});
 const guideTables=['course_lesson_facilitator_notes','course_module_facilitator_notes','competency_observations','users'];
 describe('manual navigation',()=>{
+  it.each(['en','fil'])('explains guide access without granting preparation credit on the reported subchapter shape (%s)',async locale=>{
+    state.role='assessor';state.locale=locale;
+    render(await page(['chapter-1','m1']));
+    expect(screen.getByRole('heading',{name:locale==='en'?'Guide access and assessment eligibility':'Pagbukas ng gabay at pahintulot sa pagtatasa'})).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:locale==='en'?'Open my chapter preparation':'Buksan ang sarili kong paghahanda sa kabanata'})).toHaveAttribute('href','/training/manual/assessor/chapter-1');
+    expect(screen.getByRole('link',{name:locale==='en'?'Check my certification requirements':'Tingnan ang mga kailangan sa aking sertipikasyon'})).toHaveAttribute('href','/training/manual/assessor/qualifications#chapter-1');
+    expect(screen.getByText(locale==='en'?/Reading it does not save/:/Hindi nito sine-save/)).toBeInTheDocument();
+    expect(state.rpcCalls.every(name=>name==='rpc_learner_assessment_state')).toBe(true);
+  });
+  it.each(['chapter-2','chapter-3'])('keeps guide requirements in %s without inventing personal study support',async chapterKey=>{
+    state.role='assessor';state.rows.training_program_chapters[0].chapter_key=chapterKey;
+    render(await page([chapterKey,'m1']));
+    expect(screen.getByRole('link',{name:'Check my certification requirements'})).toHaveAttribute('href',`/training/manual/assessor/qualifications#${chapterKey}`);
+    const study=screen.queryByRole('link',{name:'Open my chapter preparation'});
+    if(chapterKey==='chapter-2')expect(study).toHaveAttribute('href','/training/manual/assessor/chapter-2');
+    else expect(study).not.toBeInTheDocument();
+  });
+  it.each(['bhw','admin','preview'])('does not show assessor preparation guidance to %s',async role=>{
+    state.role=role==='preview'?'admin':role;state.preview=role==='preview';
+    render(await page(['chapter-1','m1']));
+    expect(screen.queryByRole('heading',{name:'Guide access and assessment eligibility'})).not.toBeInTheDocument();
+  });
   it.each(['en','fil'])('shows visible published chapter/subchapter context on lessons (%s)',async(locale)=>{
     state.locale=locale;render(await page(['chapter-1','m1','l1']));
     const heading=screen.getByRole('heading',{level:1,name:'HEPO'}).closest('header')!;
