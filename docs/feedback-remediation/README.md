@@ -632,3 +632,10 @@ clarity gap, authored presentation layouts/assets, section focus, viewing guidan
 and Filipino clarification while retaining Listen, original media and assessment.
 Existing concrete story examples were verified; the photograph request is
 excluded as already addressed according to the owner.
+
+## FB-4.1h — Health Educator section connections
+
+[Review and delivery](fb-4.1h-educator-connections.md) connects the four teaching
+sections with a bilingual learning path and Riza transitions. Slides quote the
+matching Read passage. Current story completeness and heading parity are verified;
+original audio, self-check and historical reader/source bytes remain intact.
