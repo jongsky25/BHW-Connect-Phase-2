@@ -680,3 +680,11 @@ English/Filipino. No content, media, scoring or completion policy change.
 review-grid and display-control overflow, and brings legacy exam question/choice
 text up to Chapter 1 sizes. Native radio/save behavior and all assessment content
 and policy remain. Test-length feedback stays open.
+
+## FB-5.1a — assessment length and optional breaks
+
+[Review and delivery](fb-5.1a-assessment-length-and-breaks.md) checks all current
+30-item forms and the old test-length reports, finds no exact repeated stems,
+and fixes missing upfront length and ten-question pause guidance. Save/resume
+guards and all assessment content/policy stay intact. Further shortening remains
+an evidence-based versioned-content decision; the reports are not closed.

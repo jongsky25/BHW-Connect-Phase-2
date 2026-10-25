@@ -1,0 +1,272 @@
+{
+  "checked_at": "2026-10-25T11:18:50.652Z",
+  "baseline_commit": "ede9de2fac4da4e46f027fdf97f58670f7014dd8",
+  "flags": [
+    {
+      "key": "chapter1_assessment_v2",
+      "enabled": true
+    },
+    {
+      "key": "assessor_flow_ui",
+      "enabled": true
+    }
+  ],
+  "releases": [
+    {
+      "id": "chapter1-2026-10-11-v1",
+      "status": "draft",
+      "comparability_status": "unvalidated",
+      "phase": "posttest",
+      "form_hash": "ba35e8ec20253a4014a708711f26f453e6264ab9b9e61045756df1032e9cc6ae",
+      "item_count": 30,
+      "enrollment_count": 23
+    },
+    {
+      "id": "chapter1-2026-10-11-v1",
+      "status": "draft",
+      "comparability_status": "unvalidated",
+      "phase": "pretest",
+      "form_hash": "e02c09ed21d241f697b299c40004385e6c6def977911b4cf73238b5bc14706b5",
+      "item_count": 30,
+      "enrollment_count": 23
+    },
+    {
+      "id": "chapter1-feedback-uhc-v2",
+      "status": "draft",
+      "comparability_status": "unvalidated",
+      "phase": "posttest",
+      "form_hash": "97ce0d574de5b499d89b4a7a68a6419f085da68610eee81e041db08704dbe41e",
+      "item_count": 30,
+      "enrollment_count": 0
+    },
+    {
+      "id": "chapter1-feedback-uhc-v2",
+      "status": "draft",
+      "comparability_status": "unvalidated",
+      "phase": "pretest",
+      "form_hash": "c349761fdb8ffa679e6c3070ec006e39a70f6906e8e0f2f585104cc58097c0a9",
+      "item_count": 30,
+      "enrollment_count": 0
+    },
+    {
+      "id": "chapter1-feedback-accreditation-csc-v3",
+      "status": "draft",
+      "comparability_status": "unvalidated",
+      "phase": "posttest",
+      "form_hash": "dd0334f24e7fb292279042e10dd8e0d2410b855f30da9750391eb3a009a10674",
+      "item_count": 30,
+      "enrollment_count": 0
+    },
+    {
+      "id": "chapter1-feedback-accreditation-csc-v3",
+      "status": "draft",
+      "comparability_status": "unvalidated",
+      "phase": "pretest",
+      "form_hash": "6a23bb50c450e81c973f0346d55e2506df0d54f50ad420490d9aea2410f710e5",
+      "item_count": 30,
+      "enrollment_count": 0
+    },
+    {
+      "id": "chapter1-feedback-gifts-lactation-v4",
+      "status": "active",
+      "comparability_status": "unvalidated",
+      "phase": "posttest",
+      "form_hash": "93097d2b5d2d8c3c608d08a22a74bed866fc0c7f61691c8a2e37a8d712e88950",
+      "item_count": 30,
+      "enrollment_count": 0
+    },
+    {
+      "id": "chapter1-feedback-gifts-lactation-v4",
+      "status": "active",
+      "comparability_status": "unvalidated",
+      "phase": "pretest",
+      "form_hash": "8db4bcf15fdd645117318c36c308e637dfb889c7c5f075ee57fc844902311909",
+      "item_count": 30,
+      "enrollment_count": 0
+    }
+  ],
+  "analysis": {
+    "forms": [
+      {
+        "phase": "posttest",
+        "hash": "93097d2b5d2d8c3c608d08a22a74bed866fc0c7f61691c8a2e37a8d712e88950",
+        "count": 30,
+        "uniqueIds": 30,
+        "slots": [
+          "T01",
+          "T02",
+          "T03",
+          "T04",
+          "T05",
+          "T06",
+          "T07",
+          "T08",
+          "T09",
+          "T10",
+          "T11",
+          "T12",
+          "T13",
+          "T14",
+          "T15",
+          "T16",
+          "T17",
+          "T18",
+          "T19",
+          "T20",
+          "T21",
+          "T22",
+          "T23",
+          "T24",
+          "T25",
+          "T26",
+          "T27",
+          "T28",
+          "T29",
+          "T30"
+        ],
+        "duplicates": {
+          "en": [],
+          "fil": []
+        },
+        "words": {
+          "en": {
+            "total": 1631,
+            "median": 53.5,
+            "min": 44,
+            "max": 80
+          },
+          "fil": {
+            "total": 1811,
+            "median": 58,
+            "min": 45,
+            "max": 94
+          }
+        }
+      },
+      {
+        "phase": "pretest",
+        "hash": "8db4bcf15fdd645117318c36c308e637dfb889c7c5f075ee57fc844902311909",
+        "count": 30,
+        "uniqueIds": 30,
+        "slots": [
+          "T01",
+          "T02",
+          "T03",
+          "T04",
+          "T05",
+          "T06",
+          "T07",
+          "T08",
+          "T09",
+          "T10",
+          "T11",
+          "T12",
+          "T13",
+          "T14",
+          "T15",
+          "T16",
+          "T17",
+          "T18",
+          "T19",
+          "T20",
+          "T21",
+          "T22",
+          "T23",
+          "T24",
+          "T25",
+          "T26",
+          "T27",
+          "T28",
+          "T29",
+          "T30"
+        ],
+        "duplicates": {
+          "en": [],
+          "fil": []
+        },
+        "words": {
+          "en": {
+            "total": 1657,
+            "median": 52,
+            "min": 41,
+            "max": 82
+          },
+          "fil": {
+            "total": 1817,
+            "median": 58.5,
+            "min": 41,
+            "max": 96
+          }
+        }
+      }
+    ],
+    "highestWithinFormOverlap": [
+      {
+        "lang": "en",
+        "phase": "pretest",
+        "a": "T25",
+        "b": "T27",
+        "jaccard": 0.34782608695652173
+      },
+      {
+        "lang": "fil",
+        "phase": "posttest",
+        "a": "T23",
+        "b": "T30",
+        "jaccard": 0.34615384615384615
+      },
+      {
+        "lang": "en",
+        "phase": "posttest",
+        "a": "T23",
+        "b": "T30",
+        "jaccard": 0.3333333333333333
+      },
+      {
+        "lang": "fil",
+        "phase": "posttest",
+        "a": "T06",
+        "b": "T10",
+        "jaccard": 0.32
+      },
+      {
+        "lang": "fil",
+        "phase": "pretest",
+        "a": "T06",
+        "b": "T16",
+        "jaccard": 0.32
+      },
+      {
+        "lang": "fil",
+        "phase": "pretest",
+        "a": "T06",
+        "b": "T18",
+        "jaccard": 0.3076923076923077
+      },
+      {
+        "lang": "fil",
+        "phase": "pretest",
+        "a": "T25",
+        "b": "T27",
+        "jaccard": 0.30434782608695654
+      },
+      {
+        "lang": "fil",
+        "phase": "pretest",
+        "a": "T22",
+        "b": "T23",
+        "jaccard": 0.2916666666666667
+      }
+    ],
+    "exactCrossFormStemMatches": [
+      {
+        "lang": "en",
+        "count": 0
+      },
+      {
+        "lang": "fil",
+        "count": 0
+      }
+    ]
+  }
+}
