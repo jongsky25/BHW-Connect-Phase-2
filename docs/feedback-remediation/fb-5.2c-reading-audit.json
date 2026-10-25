@@ -1,0 +1,68 @@
+{
+  "feedback_id": "efdf3000-7998-4cd2-8d76-4258c175131b",
+  "audited_on": "2026-10-25",
+  "access": "read-only pilot",
+  "lesson_id": "9dfa3c3d-ec75-4143-8fa2-302e4273f829",
+  "lesson_key": "uhc-coverage",
+  "revision_id": "5d28c239-c4a2-4cda-a719-e8959a19ae91",
+  "content_hash": "4b82aa20c75ff944adf326932408fd64ca126ac0dea951d53da264f00a639326",
+  "read_sections": [
+    {
+      "id": "section-1",
+      "heading_en": "Mang Ernesto's question",
+      "heading_fil": "Ang tanong ni Mang Ernesto",
+      "body_words_en": 74,
+      "body_words_fil": 73,
+      "check": false
+    },
+    {
+      "id": "section-2",
+      "heading_en": "What is UHC trying to achieve?",
+      "heading_fil": "Ano ang layunin ng UHC?",
+      "body_words_en": 76,
+      "body_words_fil": 81,
+      "check": false
+    },
+    {
+      "id": "included",
+      "heading_en": "What does automatic inclusion mean?",
+      "heading_fil": "Ano ang ibig sabihin ng awtomatikong kasama?",
+      "body_words_en": 62,
+      "body_words_fil": 72,
+      "check": false
+    },
+    {
+      "id": "benefit",
+      "heading_en": "Included, but which service is covered?",
+      "heading_fil": "Kasama, pero ano ang sakop na serbisyo?",
+      "body_words_en": 69,
+      "body_words_fil": 84,
+      "check": false
+    },
+    {
+      "id": "verify",
+      "heading_en": "What will Vlanche do next?",
+      "heading_fil": "Ano ang susunod na gagawin ni Vlanche?",
+      "body_words_en": 89,
+      "body_words_fil": 86,
+      "check": false
+    },
+    {
+      "id": "check",
+      "heading_en": "Answer the resident",
+      "heading_fil": "Sagutin ang residente",
+      "body_words_en": 27,
+      "body_words_fil": 29,
+      "check": true
+    }
+  ],
+  "slide_ids": [
+    "slide-section-1",
+    "slide-section-2",
+    "slide-included",
+    "slide-benefit",
+    "slide-verify",
+    "slide-check"
+  ],
+  "finding": "Existing Read already pages six sections; first five teaching bodies contain 62–89 English words / 72–86 Filipino words. Existing Slides, narration, takeaways and comfortable layout already support focused reading. Missing inline heading overview/revisit navigation; no evidence supporting curriculum shortening or infinite scrolling."
+}

@@ -1,15 +1,17 @@
 // Exact predecessor view for historical release guards. The application uses
 // current source; no lesson, release or historical approval hash is rewritten.
 import fs from 'node:fs';
+import {beforeFeedbackSectionOutline} from './feedback-section-outline-preservation.mjs';
 import {createHash} from 'node:crypto';
 const target = 'src/components/elearning/reference-lessons.tsx';
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 let receipt;
 export function beforeFeedbackLanguageAvailability(path, actual = fs.readFileSync(path)) {
+  actual = beforeFeedbackSectionOutline(path, actual);
   if (path !== target) return actual;
   const r = receipt ??= JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-4.3-reader-preservation.json'));
   if (r.path !== target || r.replacements.length !== 5) throw Error('Invalid FB-4.3 reader scope');
-  const disk = sha(fs.readFileSync(path));
+  const disk = sha(beforeFeedbackSectionOutline(path));
   if (![r.predecessor_sha256, r.successor_sha256].includes(disk)) throw Error('Unpinned integrated successor (FB-4.3): ' + path);
   if (sha(actual) !== r.successor_sha256) return actual;
   let previous = actual.toString('utf8');

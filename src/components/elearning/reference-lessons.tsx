@@ -33,6 +33,7 @@ import {enterNarrationScope} from '@/lib/elearning/narration-preferences';
 import {prioritizationNarratedLesson} from '@/lib/elearning/prioritization-narrated-lesson';
 import {NarrationAccessGuide} from './narration-access-guide';
 import {LessonLanguagePanel} from './lesson-language-panel';
+import {LessonSectionOutline} from './lesson-section-outline';
 import { FittedLessonPage } from "./fitted-lesson-page";
 import { storyQuestionUi, translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
 
@@ -640,7 +641,7 @@ export function ReferenceLessons(props: Props) {
         <NarrationAccessGuide lesson={lesson} position={item.id} narration={lessonNarration} en={en} slides={mode === "slides"} translated={!!translation} illustrated={!!illustratedNarration}/>
         {hepoPresentation && <HepoPresentationGuide position={item.id} index={index} count={items.length} slides={mode === "slides"} en={en}/>}
         {storyVideoPrompt && !(hepoPresentation && mode === "slides") && <button type="button"
-          className={`mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold ${hepoPresentation || illustratedNarration ? "text-ink" : "text-primary-text"} hover:bg-primary/20`}
+          className={`mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold ${hepoPresentation || illustratedNarration || lesson.lesson_key === "uhc-coverage" ? "text-ink" : "text-primary-text"} hover:bg-primary/20`}
           onClick={() => setVideoSelected(true)}>
           {illustratedNarration ? ui("▶ Panoorin ang araling may larawan at salaysay", "▶ Watch the illustrated narrated lesson") : ui("▶ Panoorin ang animadong kuwento na may salaysay", "▶ Watch the animated narrated story")}
         </button>}
@@ -1057,7 +1058,11 @@ export function ReferenceLessons(props: Props) {
                 {ui("Buong screen", "Full screen")}
               </button>
             </div>
-            {!readerOpen && (videoSelected ? videoContent : <>{readerArticle}{readerPager}</>)}
+            {!readerOpen && (videoSelected ? videoContent : <><LessonSectionOutline items={items} currentId={item.id} en={en} language={translation?.language} onSelect={id => {
+              const target = items.find(section => section.id === id);
+              if (target && target.id !== item.id) move(target);
+              else requestAnimationFrame(() => heading.current?.focus());
+            }}/>{readerArticle}{readerPager}</>)}
             {(!readerOpen || !props.storyQuestionHandoff) && completionControls}
             <nav
               className="flex flex-wrap justify-between gap-2"
