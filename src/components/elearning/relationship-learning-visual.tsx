@@ -1,3 +1,4 @@
+import {EducatorSectionContext} from './educator-section-context';
 import {FollowUpLearningVisual} from './follow-up-learning-visual';
 import type {RelationshipVisual} from '@/lib/elearning/relationship-learning-visuals';
 
@@ -15,6 +16,7 @@ function CardIcon({index, kind}: {index: number; kind: string}) {
 
 /** Native-text diagrams; the four roles are peers in a teaching organizer. */
 export function RelationshipLearningVisual({visual}: {visual: RelationshipVisual}) {
+  if (visual.kind === 'educator-context') return <EducatorSectionContext context={visual}/>;
   if (visual.kind === 'questions' || visual.kind === 'response' || visual.kind === 'plan') return <FollowUpLearningVisual visual={visual}/>;
   return <figure aria-label={visual.title} data-relationship-visual={visual.kind} className="my-4 min-w-0 rounded-xl border border-ink/20 bg-canvas p-3 text-ink sm:p-4">
     <figcaption className="mb-3 space-y-1"><p className="font-semibold">{visual.title}</p><p className="text-sm leading-relaxed">{visual.caption}</p></figcaption>
