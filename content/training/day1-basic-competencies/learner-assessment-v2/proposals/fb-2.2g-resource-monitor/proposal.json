@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "proposal_id": "FB-2.2g-resource-monitor",
+  "base_release_id": "chapter1-feedback-stock-count-v5",
+  "base_release_sha256": "c8fcfee9dab193d4421fea7653fb9556b0394bed60b21897075791842442d6da",
+  "proposed_release_id": "chapter1-feedback-resource-monitor-v6",
+  "phase": "pretest",
+  "slot": "T30",
+  "replaces_item_id": "8529067e-cd6c-412e-a537-b968b5c3fbb9",
+  "new_item_id": "a1c75b0b-afed-4cc1-8538-96f07beb5ef3",
+  "correct_option_id": "o1",
+  "stem": {
+    "en": "A health station used fewer supplies this month but also served fewer people. What should the BHW do before claiming improved resource use?",
+    "fil": "Mas kaunting gamit ang nagamit ng health station ngayong buwan, ngunit mas kaunti rin ang napagsilbihan. Ano ang dapat gawin ng BHW bago sabihing bumuti ang paggamit ng mga gamit?"
+  },
+  "continuity": {
+    "existing_enrollments": "remain_on_original_release_for_both_phases",
+    "existing_drafts": "finish_pinned_form",
+    "submitted_attempts": "retain_snapshot_answers_and_scores",
+    "comparability": "unvalidated_no_automatic_cross_release_gain_comparison"
+  }
+}
