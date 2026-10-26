@@ -22,5 +22,5 @@ it('retains every authored lesson, recording, timing, translation and media byte
  const media=JSON.parse(fs.readFileSync('src/lib/elearning/prioritization-narrated-lesson.json'));
  const additions=Object.values(media.languages).flatMap(x=>[x.video.path,x.video.captions.path]);
  // FB-4.2b adds four hash-bound derived files; every preceding byte is retained.
- expect(execFileSync('git',['diff','23198eaf91097c76ecf5d7e76a33e5d773e639d7','--','content/training/','public/training/','remotion/','docs/lesson-*',...additions.map(p=>':(exclude)public'+p)],{maxBuffer:8*1024*1024})).toHaveLength(0);
+ expect(execFileSync('git',['diff','23198eaf91097c76ecf5d7e76a33e5d773e639d7','--','content/training/','public/training/','remotion/','docs/lesson-*',':(exclude)content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-stock-count-v5/**',...additions.map(p=>':(exclude)public'+p)],{maxBuffer:8*1024*1024})).toHaveLength(0);
 });

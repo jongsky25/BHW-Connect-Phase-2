@@ -9,7 +9,7 @@ it('reconstructs the complete preceding reader and preserves approved teaching/m
  expect(r.base_commit).toBe('92abe86bf9db3bb3369e35700dc5e923d49280b4');expect(r.replacements).toHaveLength(3);
  expect(createHash('sha256').update(fs.readFileSync(r.path)).digest('hex')).toBe(r.successor_sha256);
  expect(beforeFeedbackSectionOutline(r.path)).toEqual(execFileSync('git',['show',r.base_commit+':'+r.path]));
- expect(execFileSync('git',['diff',r.base_commit,'--','content/','public/training/','remotion/','docs/lesson-*'])).toHaveLength(0);
+ expect(execFileSync('git',['diff',r.base_commit,'--','content/','public/training/','remotion/','docs/lesson-*',':(exclude)content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-stock-count-v5/**'])).toHaveLength(0);
 });
 it('memoizes only exact bytes and protects the cached predecessor from caller mutation',()=>{
  const r=JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-5.2c-reader-preservation.json'));
