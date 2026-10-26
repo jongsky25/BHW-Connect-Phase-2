@@ -24,6 +24,8 @@ that also praises the material remains actionable.
 
 The current Chapter II assessment slice is [FB-2.2c](fb-2.2c-chapter2-exam-context.md): five reports identify two repeated prompt pairs in the published assessor exam. Four approved bilingual lesson transfer checks replace those positions for new attempts, while old question IDs and exam snapshots remain intact. Keep the reports open for live review.
 
+[FB-2.2d](fb-2.2d-chapter1-checklist-review.md) maps six assessor Chapter I reports to one historical checklist item that the enabled shared assessment no longer serves. It also records a separate current pretest T28 stem/choice mismatch and exact bilingual correction proposed for editorial approval. No bank, score or feedback status changed in this review.
+
 | ID | Outcome | Responsible role |
 | --- | --- | --- |
 | FB-0.1 | Reproduce, consolidate and disposition every report | Triage lead with QA |
