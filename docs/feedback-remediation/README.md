@@ -734,3 +734,7 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 ## FB-1.2c — remaining lesson-navigation verification
 
 [Review and delivery](fb-1.2c-lesson-navigation-verification.md) maps the two reported personal-study lessons and two location-free blocked reports against current navigation. Adds real assessor/BHW journeys in both languages for checks, failed completion/retry, saved reload, view-specific resume, same-module and cross-subchapter continuation, Back and reopening from the lesson list. Preserves existing learning/authority rules and avoids claiming an unidentified historical blocker is resolved. Original feedback stays open; exact CI and release receipts are in the PR.
+
+## FB-2.3a — Milk Code term and benefits explanation
+
+[Review and delivery](fb-2.3a-terminology-and-benefits-review.md) checks three reports against the currently published BHS promotion and BHW benefits lessons. “Teats” is the correct Milk Code term but needed an inline bilingual definition; the reader now explains it in Read and Slides without changing immutable content or approved audio. The current benefits revision already groups and separates the six benefit categories and conditions, so two broad older comments need live comprehension evidence before another rewrite. Feedback statuses stay open.
