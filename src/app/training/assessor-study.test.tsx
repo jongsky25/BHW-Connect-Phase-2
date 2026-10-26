@@ -37,6 +37,20 @@ beforeEach(()=>{
 afterEach(cleanup);
 const page=(path:string[]=[],chapterKey='chapter-1')=>StudyPage({params:Promise.resolve({programId:'manual',chapterKey,path})});
 describe('assessor study route',()=>{
+  it.each(['en','fil'])('opens the exact lesson and subchapter group guides without loading private notes in personal study (%s)',async locale=>{
+    state.locale=locale;render(await page(['m1','l1']));
+    const nav=screen.getByRole('navigation',{name:locale==='en'?'Group learning guides':'Mga gabay sa pag-aaral ng pangkat'});
+    expect(within(nav).getAllByRole('link').map(link=>link.getAttribute('href'))).toEqual(['/training/manual/chapter-1/m1/l1','/training/manual/chapter-1/m1?view=run']);
+    expect(state.calls).not.toContain('course_lesson_facilitator_notes');
+    expect(state.calls).not.toContain('course_module_facilitator_notes');
+    expect(state.calls.filter(n=>n.startsWith('rpc_'))).toEqual([]);
+  });
+  it('keeps lesson-specific group guidance off chapter roots and exam pages',async()=>{
+    const first=render(await page());
+    expect(screen.queryByRole('navigation',{name:'Group learning guides'})).toBeNull();first.unmount();
+    render(await page(['exam','pretest']));
+    expect(screen.queryByRole('navigation',{name:'Group learning guides'})).toBeNull();
+  });
   it.each(['en','fil'])('offers a refresher over only personally completed current revisions (%s)',async locale=>{
     state.locale=locale;
     state.rows.assessor_lesson_progress.push({assessor_user_id:'self',chapter_id:'ch1',lesson_id:'l1',revision_id:'r1'});
@@ -240,6 +254,7 @@ it('keeps the progress shortcut on a nested Chapter 2 lesson in its own chapter'
  render(await page(['m1','l1'],'chapter-2'));
  expect(screen.getByRole('link',{name:'Study progress and lesson list'})).toHaveAttribute('href','/training/manual/assessor/chapter-2#assessor-study-progress');
  expect(screen.getByRole('link',{name:'Refresher review and study pace'})).toHaveAttribute('href','/training/manual/assessor/chapter-2#assessor-refresher-review');
+ expect(screen.getByRole('link',{name:'Facilitator guide for this lesson'})).toHaveAttribute('href','/training/manual/chapter-2/m1/l1');
  expect(screen.queryByRole('link',{name:'Chapter 1 working area'})).toBeNull();
  expect(state.calls).not.toContain('rpc_assessor_qualification_ensure');
 });

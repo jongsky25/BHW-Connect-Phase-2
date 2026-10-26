@@ -1,6 +1,7 @@
 import {LessonPageHeading} from '@/components/elearning/lesson-page-heading';
 import {AssessorStudyProgressLink, ASSESSOR_STUDY_PROGRESS_ID} from '@/components/elearning/assessor-progress-navigation';
 import {AssessorRefresherLink,AssessorRefresherReview} from '@/components/elearning/assessor-refresher-review';
+import {GroupLearningGuideLinks} from '@/components/elearning/group-learning-guide-links';
 import {parseSimulationState} from '@/lib/assessor/simulation-runner';
 import Link from 'next/link';
 import {notFound,redirect} from 'next/navigation';
@@ -161,6 +162,9 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       <h1 className="mt-2 text-2xl font-semibold">{examPage?(examPhase==='pretest'?text('Diagnostic pretest','Diagnostic pretest'):text('Pangwakas na pagsusulit','Chapter post-test')):lesson?title(lesson):subchapter?title(subchapter):title(chapter)}</h1>
       <p className="mt-2">{briefingVisible?text('Sundan ang sariling paghahanda sa Kabanata 1. Hiwalay ang pag-aaral, pagmamarka at pagsasanay sa platform.','Follow your personal Chapter 1 preparation. Study, scoring and platform practice are separate steps.'):text('Kumpletuhin ang buong kabanata at pumasa sa pagsusulit bago ang oryentasyon sa pagmamarka. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Complete the full chapter and pass its exam before scoring orientation. No practical assessment by another assessor is required.')}</p>
     </header>}
+    {lesson&&subchapter&&<GroupLearningGuideLinks locale={locale}
+      moduleHref={`/training/${programId}/${chapterKey}/${subchapter.id}`}
+      lessonHref={`/training/${programId}/${chapterKey}/${subchapter.id}/${lesson.id}`}/>}
     {majorIntro&&<Chapter1MajorIntroduction intro={majorIntro} courseId={chapter.course_id}
       learnerId={viewer.appUser.id} language={en?'en':'fil'}/>}
     <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/qualifications`}>{text('Aking mga sertipikasyon','My certifications')}</Link>

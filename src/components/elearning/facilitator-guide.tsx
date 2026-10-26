@@ -25,7 +25,7 @@ function Section({ id, title, open = false, children }: { id: string; title: str
         <span>{title}</span>
         <span aria-hidden className="text-ink/50 transition-transform group-open:rotate-90">›</span>
       </summary>
-      <div className="mt-4 flex flex-col gap-4">{children}</div>
+      <div id={`${id}-content`} tabIndex={-1} className="mt-4 flex scroll-mt-40 flex-col gap-4 focus-visible:outline-2 focus-visible:outline-primary md:scroll-mt-28">{children}</div>
     </details>
   );
 }
@@ -171,8 +171,13 @@ export function SubchapterFacilitatorGuide({
 
       {view === "activities" && <ActivityLibrary activities={notes?.activities ?? []} lang={lang}/>}
       {view === "run" && <Section id="guide-run" title={pick(lang, "3. Paano patakbuhin ang subchapter", "3. How to run this subchapter")} open>
-        {script ? <NotesMarkdown markdown={script} /> : <p className="text-sm text-ink/60">{pick(lang, "Wala pang tala ng facilitator.", "No facilitator notes authored yet.")}</p>}
-        <p className="text-sm text-ink/70">{pick(lang, "May sariling hakbang-hakbang na gabay ang bawat aralin — buksan ang aralin sa itaas.", "Each lesson has its own step-by-step guide — open a lesson above.")}</p>
+        {script ? <NotesMarkdown markdown={script} /> : <p className="text-sm text-ink/75">{pick(lang, "Wala pang tala ng facilitator.", "No facilitator notes authored yet.")}</p>}
+        {lessons.length>0 && <nav aria-label={pick(lang,"Mga gabay ng facilitator sa bawat aralin","Lesson facilitation guides")}>
+          <h3 className="font-semibold">{pick(lang,"Buksan ang gabay sa bawat aralin","Open a lesson’s facilitator guide")}</h3>
+          <ul className="mt-2 space-y-2">{lessons.map(lesson=><li key={lesson.id}>
+            <Link prefetch={false} className="inline-flex min-h-11 items-center wrap-anywhere py-2 underline" href={lesson.href}>{lesson.title}</Link>
+          </li>)}</ul>
+        </nav>}
         <div>
           <p className="font-medium">{pick(lang, "Mga huling pagtuturo nito sa iyong lugar", "Recent runs in your area")}</p>
           {deliveries.length ? (
@@ -187,7 +192,7 @@ export function SubchapterFacilitatorGuide({
               ))}
             </ul>
           ) : (
-            <p className="mt-1 text-sm text-ink/60">{pick(lang, "Wala pang naitalang pagtuturo ng subchapter na ito. Itala ito sa iyong training session.", "No logged runs of this subchapter yet. Log them from your training session.")}</p>
+            <p className="mt-1 text-sm text-ink/75">{pick(lang, "Wala pang naitalang pagtuturo ng subchapter na ito. Itala ito sa iyong training session.", "No logged runs of this subchapter yet. Log them from your training session.")}</p>
           )}
         </div>
       </Section>}
@@ -219,6 +224,7 @@ export function LessonFacilitatorGuide({
   objectives: string[];
 }) {
   const sections = notesMarkdown ? parseFacilitatorNotes(notesMarkdown) : [];
+  const groupSections=sections.filter(s=>['opening','steps','expected-answers','practice','support'].includes(s.id));
   return (
     <section aria-labelledby="lesson-guide" className="flex flex-col gap-4">
       <div className="rounded-xl border border-secondary/30 bg-secondary/5 p-5">
@@ -228,6 +234,15 @@ export function LessonFacilitatorGuide({
           <ul className="mt-3 list-disc pl-5">{objectives.map((o, i) => <li key={i}>{o}</li>)}</ul>
         )}
       </div>
+      {groupSections.length>0 && <nav aria-labelledby="group-learning-steps-title" className="space-y-3 rounded-xl border border-ink/20 p-4">
+        <h3 id="group-learning-steps-title" className="font-semibold">{pick(lang,"Talakayan, pagsasanay at follow-up","Discussion, practice and follow-up")}</h3>
+        <p className="text-sm">{pick(lang,
+          "Gamitin ang presentasyon ng BHW para sa pangkat, saka huminto para sa talakayan at pagsasanay. Hiwalay ang pakikilahok at online self-check sa pagpapakita ng kakayahan.",
+          "Use the BHW presentation with the group, then pause for discussion and practice. Participation and an online self-check are separate from demonstrating competence.")}</p>
+        <ul className="flex flex-wrap gap-x-5 gap-y-2">{groupSections.map(section=><li key={section.id}>
+          <a className="inline-flex min-h-11 items-center wrap-anywhere py-2 underline" href={`#lesson-guide-${section.id}-content`}>{section.heading}</a>
+        </li>)}</ul>
+      </nav>}
       <ActivityLibrary activities={activities} lang={lang}/>
       {sections.length ? (
         sections.map((s, i) => (

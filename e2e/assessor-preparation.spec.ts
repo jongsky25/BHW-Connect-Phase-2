@@ -105,6 +105,9 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
           '[{"id":"intro","concept_ids":["fixture"],"heading_fil":"Kathang-isip na pagsasanay","heading_en":"Fictional practice","body_fil":"Halimbawa lamang para sa pagsusuri.","body_en":"Example for verification only.","asset_ids":[],"takeaway_fil":"Balikan ang aralin.","takeaway_en":"Review the lesson.","check":null}]',
           '[{"id":"intro","concept_ids":["fixture"],"layout":"takeaway","heading_fil":"Pagsasanay","heading_en":"Practice","display_fil":"Halimbawa lamang.","display_en":"Example only.","asset_ids":[],"check":null}]','[]','[]','${actor.id}');
       update course_lessons set published_revision_id='${reviewRevisionId}' where id='${reviewLessonId}';
+      insert into course_lesson_facilitator_notes(revision_id,notes_fil,notes_en)
+        values('${reviewRevisionId}',E'## [opening] Pambungad\n\nKathang halimbawa lamang.\n\n## [steps] Mga hakbang\n\nTalakayin ang halimbawa.\n\n## [practice] Pagsasanay ng pangkat\n\nSubukang muli na may suporta.\n\n## [support] Follow-up\n\nBalikan ang paliwanag.',
+          E'## [opening] Opening\n\nFictional example only.\n\n## [steps] Steps\n\nDiscuss the example.\n\n## [practice] Group practice\n\nTry again with support.\n\n## [support] Follow-up\n\nRevisit the explanation.');
       insert into assessor_lesson_progress(assessor_user_id,chapter_id,lesson_id,revision_id)
         values('${actor.id}','${chapter}','${reviewLessonId}','${reviewRevisionId}');
     `);
@@ -115,6 +118,23 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     await completedReview.click();
     await refresher.getByRole('link',{name:'E2E refresher lesson'}).click();
     await expect(page.getByRole('heading',{level:1,name:'E2E refresher lesson'})).toBeVisible();
+    const studyLesson=`${base}/${guideModuleId}/${reviewLessonId}`;
+    await page.getByRole('navigation',{name:'Mga gabay sa pag-aaral ng pangkat'}).getByRole('link',{name:'Gabay ng facilitator sa araling ito'}).click();
+    await expect(page).toHaveURL(`/training/${program}/chapter-1/${guideModuleId}/${reviewLessonId}`);
+    const groupSteps=page.getByRole('navigation',{name:'Talakayan, pagsasanay at follow-up'});
+    await expect(page.locator('#lesson-guide-practice')).toHaveJSProperty('open',false);
+    await groupSteps.getByRole('link',{name:'Pagsasanay ng pangkat'}).click();
+    await expect(page.locator('#lesson-guide-practice')).toHaveJSProperty('open',true);
+    await expect(page.locator('#lesson-guide-practice-content')).toBeFocused();
+    await expect(page.locator('#lesson-guide-practice-content')).toHaveText('Subukang muli na may suporta.');
+    expect(guideEvidence()).toBe(beforeReview);
+    await page.goto(studyLesson);
+    await page.getByRole('navigation',{name:'Mga gabay sa pag-aaral ng pangkat'}).getByRole('link',{name:'Paano patakbuhin ang subchapter'}).click();
+    await expect(page).toHaveURL(`/training/${program}/chapter-1/${guideModuleId}?view=run`);
+    await page.getByRole('navigation',{name:'Mga gabay ng facilitator sa bawat aralin'}).getByRole('link',{name:'E2E refresher lesson'}).click();
+    await expect(page.getByRole('heading',{name:'Gabay ng facilitator sa araling ito',exact:true})).toBeVisible();
+    expect(guideEvidence()).toBe(beforeReview);
+    await page.goto(studyLesson);
     await page.getByRole('link',{name:'Balik-aral at bilis ng pag-aaral'}).click();
     await expect(page).toHaveURL(`${base}#assessor-refresher-review`);
     await expect(refresher).toBeVisible();
@@ -131,6 +151,9 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
       delete from public.assessor_lesson_resume where chapter_id='${chapter}';
       delete from public.assessor_lesson_progress where chapter_id='${chapter}';
       update public.course_lessons set published_revision_id=null where id='${reviewLessonId}';
+      alter table public.course_lesson_facilitator_notes disable trigger training_notes_immutable;
+      delete from public.course_lesson_facilitator_notes where revision_id='${reviewRevisionId}';
+      alter table public.course_lesson_facilitator_notes enable trigger training_notes_immutable;
       alter table public.course_lesson_revisions disable trigger training_revision_immutable;
       delete from public.course_lesson_revisions where id='${reviewRevisionId}';
       alter table public.course_lesson_revisions enable trigger training_revision_immutable;

@@ -230,6 +230,9 @@ describe('manual navigation',()=>{
     cleanup();state.calls=[];
     render(await page(['chapter-1','m1'],'run'));
     expect(screen.getByRole('cell',{name:'30 min'})).toBeInTheDocument();
+    const lessonGuides=screen.getByRole('navigation',{name:'Lesson facilitation guides'});
+    expect(lessonGuides.querySelector('a')).toHaveAttribute('href','/training/manual/chapter-1/m1/l1');
+    expect(state.calls.some(c=>c.table==='users')).toBe(false);
     cleanup();state.calls=[];
     render(await page(['chapter-1','m1'],'bhws'));
     expect(screen.getByText('Rosa Cruz')).toBeInTheDocument();expect(screen.getByText('Lito Reyes')).toBeInTheDocument();
