@@ -32,6 +32,8 @@ The owner approved that exact T28 correction. [FB-2.2e](fb-2.2e-stock-count-publ
 
 [FB-2.2g](fb-2.2g-chapter1-resource-and-recording-review.md) maps five Chapter I pretest wording reports to two historical legacy questions. The enabled v5 form no longer serves either legacy item. A separate current pretest T30 stem/choice mismatch has an exact bilingual correction proposed for owner review; the live form and historical scores have not changed in this review packet.
 
+The owner approved that exact T30 correction. [FB-2.2g publication](fb-2.2g-resource-monitor-publication.md) records the immutable v6 release plan, one new pretest item identity, publication guards and preservation checks for existing learners.
+
 | ID | Outcome | Responsible role |
 | --- | --- | --- |
 | FB-0.1 | Reproduce, consolidate and disposition every report | Triage lead with QA |

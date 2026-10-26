@@ -1,0 +1,13 @@
+# FB-2.2g — approved Chapter I pretest T30 publication
+
+The owner approved the exact bilingual T30 wording in the [review packet](fb-2.2g-chapter1-resource-and-recording-review.md) on 26 October 2026 with “Approve exact wording.” The review packet was merged in [PR #380](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/380) at `7f0350ffc45a6e329db5693973235a71c2422f46`. The [approval record](../../content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-resource-monitor-v6/approval-record.json) binds that exact proposal hash and source commit. Independent specialist sign-off is not claimed.
+
+`chapter1-feedback-resource-monitor-v6` replaces only pretest T30 with a new item identity and approved stem, asking what the BHW should do before claiming better resource use. All three bilingual choices, their order, the correct `o1` key, rationales, source and lesson target remain unchanged. The other 59 form items, 48 checkpoint items and 42 curriculum pins match v5. The unchanged posttest form receives a new form ID under v6, with the same item hash. Comparability across releases remains unvalidated.
+
+The guarded publication SQL checks the exact v5 active-release lineage, reviewed v5 hash and form hashes, and the 42 live lesson pins. It imports immutable v6 forms and checkpoints, then assigns v6 to new enrollments only. Existing enrollments stay on their pinned release for both phases; drafts, responses, snapshots, answer keys and scores are not updated. A failed guard rolls back the whole transaction. The local script generates SQL without connecting to the pilot.
+
+The read-only admin BHW preview points to the approved v6 packet at `/courses/73e0edda-6c28-420f-9c35-05a29563abd3/assessment/preview?phase=pretest&part=3`. It does not create an enrollment or save an answer. It is a preview of the released copy, not a substitute for an authenticated learner journey.
+
+Read-only pilot baseline before publication: v5 is active with content hash `c8fcfee9dab193d4421fea7653fb9556b0394bed60b21897075791842442d6da`, pretest form hash `350cc4ad6e41cb60559fccc749d03783b6c8d6195721a3472a1638d4c53d68a8` and posttest form hash `93097d2b5d2d8c3c608d08a22a74bed866fc0c7f61691c8a2e37a8d712e88950`. All 23 existing Chapter I enrollments are pinned to v1. Their attempts are 22 submitted and one draft pretest, plus 21 submitted and one draft posttest; submitted score sums are 1950.2 and 1993.4. Do not create a pilot enrollment merely to test the new release.
+
+The five historical reports in the review packet remain open for authenticated pilot review. This release addresses the separate current T30 mismatch found while reviewing them; it does not rewrite or close those reports.

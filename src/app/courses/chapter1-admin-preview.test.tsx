@@ -41,9 +41,10 @@ describe("Chapter 1 admin content preview", () => {
     expect(screen.getByRole("link", { name: "Learning notes" })).toHaveAttribute("href", "/courses/course/assessment/preview?phase=notes");
   });
 
-  it("shows the approved stock-verification wording in read-only section three", async () => {
+  it("shows the approved stock and resource wording in read-only section three", async () => {
     render(await page("pretest", "3"));
     expect(screen.getByText(/What should the BHW do before deciding how many usable copies remain\?/)).toBeInTheDocument();
+    expect(screen.getByText(/What should the BHW do before claiming improved resource use\?/)).toBeInTheDocument();
   });
 
   it("shows learning notes in read-only mode", async () => {
