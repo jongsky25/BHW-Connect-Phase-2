@@ -34,7 +34,7 @@ The owner approved that exact T28 correction. [FB-2.2e](fb-2.2e-stock-count-publ
 
 The owner approved that exact T30 correction. [FB-2.2g publication](fb-2.2g-resource-monitor-publication.md) records the immutable v6 release plan, one new pretest item identity, publication guards and preservation checks for existing learners.
 
-[FB-2.2h](fb-2.2h-chapter1-communication-pretest-review.md) reviews four Chapter I communication-pretest reports against the active v6 form. Two quoted legacy issues are no longer served. The current T18 keyed choice remains abstract despite a question asking what the BHW should say; an exact bilingual conversational option is proposed for owner review. The report about obvious choices remains open pending item-level evidence.
+[FB-2.2h](fb-2.2h-chapter1-communication-pretest-review.md) reviews four Chapter I communication-pretest reports against the then-active v6 form. Two quoted legacy issues are no longer served. The owner-approved bilingual T18 choice was later published in [v7](fb-2.2h-communication-clarify-publication.md). The report about obvious choices remains open pending item-level evidence.
 
 | ID | Outcome | Responsible role |
 | --- | --- | --- |
@@ -754,3 +754,5 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 [Review and delivery](fb-2.3a-terminology-and-benefits-review.md) checks three reports against the currently published BHS promotion and BHW benefits lessons. “Teats” is the correct Milk Code term but needed an inline bilingual definition; the reader now explains it in Read and Slides without changing immutable content or approved audio. The current benefits revision already groups and separates the six benefit categories and conditions, so two broad older comments need live comprehension evidence before another rewrite. Feedback statuses stay open.
 
 The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](fb-2.2h-chapter1-communication-pretest-review.md). [FB-2.2h publication](fb-2.2h-communication-clarify-publication.md) records the immutable v7 packet, continuity checks and live publication evidence.
+
+[FB-2.3b](fb-2.3b-ambiguous-terms-review.md) verifies three published Chapter I terms (“papel,” “clinical licence” and “fields”) against the original reports and adds bilingual, revision-gated reader explanations. The original reports stay open for live review; immutable lessons and history are unchanged.

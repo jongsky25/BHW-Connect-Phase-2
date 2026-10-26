@@ -9,6 +9,35 @@ const reviewed={
 export function NarrationAccessGuide({lesson,position,narration,en,slides,translated,illustrated}:{
   lesson:PublishedLesson;position:string;narration?:LessonNarration;en:boolean;slides:boolean;translated:boolean;illustrated:boolean;
 }){
+  const termHelp={
+    'bhw-barangay-partners':{
+      hash:'4751c8f2e136581fe65913f6bf1da83615bb679caa0fb1c1d62072acc2625a3e',
+      read:'section-5',slide:'slide-section-5',term:'papel ng katuwang',
+      en:'In the Filipino heading, “papel” means a partner’s role or responsibility in health work, not a sheet of paper.',
+      fil:'Dito, ang “papel” ay gampanin o tungkulin ng katuwang sa gawaing pangkalusugan, hindi papel na sinusulatan.',
+    },
+    'bhw-legal-role':{
+      hash:'7a4880da236ea31a78647bb447ba6ff66eb7be701eb442059c3fabf77eddc57e',
+      read:'status-and-other-processes',slide:'slide-status-and-other-processes',term:'clinical licence',
+      en:'Here “clinical licence” means a professional licence for clinical practice. BHW accreditation alone does not grant one.',
+      fil:'Dito, ang “clinical licence” ay propesyonal na lisensiya para sa gawaing klinikal. Hindi ito awtomatikong ibinibigay ng akreditasyon bilang BHW.',
+    },
+    'bhw-records':{
+      hash:'cc1933a880a7eda36a3e0c2b28b635e9b0d565be836384a23f8aa96b2e828be6',
+      read:'household-profile',slide:'household-profile-slide',term:'fields',
+      en:'“Fields” here means the spaces for information on a form, not outdoor areas.',
+      fil:'Dito, ang “fields” ay mga puwang na lalagyan ng impormasyon sa form, hindi lugar na pupuntahan.',
+    },
+  }[lesson.lesson_key as 'bhw-barangay-partners'|'bhw-legal-role'|'bhw-records'];
+  if(!translated&&termHelp&&lesson.revision.content_hash===termHelp.hash&&position===(slides?termHelp.slide:termHelp.read)){
+    const section=lesson.revision.read_sections.find(s=>s.id===termHelp.read);
+    const slide=lesson.revision.slides.find(s=>s.id===termHelp.slide);
+    const readText=[section?.heading_fil,section?.body_fil].join(' ');
+    const slideText=[slide?.heading_fil,slide?.display_fil,slide?.narration_fil].join(' ');
+    if(readText.includes(termHelp.term)&&(!slides||slideText.includes(termHelp.term)))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?termHelp.en:termHelp.fil}
+    </p>;
+  }
   if(!translated&&lesson.lesson_key==='bhs-promotions'&&position===(slides?'slide-':'')+'section-2'){
     const read=lesson.revision.read_sections.find(s=>s.id==='section-2');
     const slide=lesson.revision.slides.find(s=>s.id==='slide-section-2');
