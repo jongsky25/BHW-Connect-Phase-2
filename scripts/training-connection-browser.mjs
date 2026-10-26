@@ -155,6 +155,16 @@ try {
     await expect(page.getByRole('status')).toContainText(name('Loading training…', 'Binubuksan ang pagsasanay…'));
     await screenshot(page.getByRole('status'), `loading-${lang}.png`);
     await expect(page.getByRole('heading', {name: name('first section', 'Bahagi: first')})).toBeVisible();
+    const help=page.getByText(name('How to finish and save this lesson','Paano tapusin at i-save ang araling ito'),{exact:true});
+    const callsBeforeHelp=lesson.calls.length;
+    await help.focus();await page.keyboard.press('Enter');
+    await expect(page.getByText(name('You can browse ahead','Maaari kang tumingin sa susunod'),{exact:false})).toBeVisible();
+    expect(lesson.calls).toHaveLength(callsBeforeHelp);
+    expect(lesson.completionCommits).toBe(0);
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);
+    expect((await new AxeBuilder({page}).include('main').analyze()).violations).toEqual([]);
+    await screenshot(help.locator('..'),`lesson-completion-guide-${lang}.png`);
+    await help.press('Enter');
     await context.setOffline(true);
     await page.getByRole('button', {name: name('Next', 'Susunod'), exact: true}).click();
     await expect(page.getByRole('heading', {name: name('second section', 'Bahagi: second')})).toBeVisible();
