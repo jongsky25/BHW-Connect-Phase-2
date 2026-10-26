@@ -758,3 +758,5 @@ The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](f
 [FB-2.3b](fb-2.3b-ambiguous-terms-review.md) verifies three published Chapter I terms (“papel,” “clinical licence” and “fields”) against the original reports and adds bilingual, revision-gated reader explanations. The original reports stay open for live review; immutable lessons and history are unchanged.
 
 [FB-2.3c](fb-2.3c-filipino-clarity-review.md) reviews three Filipino-clarity reports against current UHC and safety lessons. Revision-gated bilingual notes complete the abbreviated UHC inclusion slide and explain safety terms in Read and Slides. The broad module-level report remains open for an exact live example.
+
+[FB-2.3d](fb-2.3d-response-prompt-review.md) reviews the Chapter II “Pinakamainam na tugon” suggestion against both currently published practice prompts. The first asks for an opening question and the second for a plan; their existing wording fits their choices and objectives. No change is warranted without a more specific example, and the report remains open.
