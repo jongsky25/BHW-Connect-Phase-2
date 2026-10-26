@@ -730,3 +730,7 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 ## FB-3.3g — subchapter competency readability
 
 [Review and delivery](fb-3.3g-competency-readability.md) reproduces low-contrast competency captions and dense phone presentation. Adds clear objective/observation blocks, readable text, optional full-rubric disclosures and focusable indicator shortcuts while retaining every authored criterion and existing private-guide access. Lesson-guide comparisons remain unchanged; no content/media rewrite or claim that broad illustration coverage is complete. Original feedback remains open for live comments; exact CI and production receipts are in the release PR.
+
+## FB-1.2c — remaining lesson-navigation verification
+
+[Review and delivery](fb-1.2c-lesson-navigation-verification.md) maps the two reported personal-study lessons and two location-free blocked reports against current navigation. Adds real assessor/BHW journeys in both languages for checks, failed completion/retry, saved reload, view-specific resume, same-module and cross-subchapter continuation, Back and reopening from the lesson list. Preserves existing learning/authority rules and avoids claiming an unidentified historical blocker is resolved. Original feedback stays open; exact CI and release receipts are in the PR.
