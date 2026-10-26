@@ -28,6 +28,8 @@ The current Chapter II assessment slice is [FB-2.2c](fb-2.2c-chapter2-exam-conte
 
 The owner approved that exact T28 correction. [FB-2.2e](fb-2.2e-stock-count-publication.md) records the immutable v5 release, one new pretest item identity, publication guards and preservation checks for existing learners.
 
+[FB-2.2f](fb-2.2f-chapter2-plant-exam-context.md) reviews one nonspecific Chapter II pretest repetition report and identifies two current medicinal-plant questions missing their published lesson situations. Two bilingual question identities supply those cases and distinct published lesson-check choices for new attempts; the historical report remains open for authenticated review.
+
 | ID | Outcome | Responsible role |
 | --- | --- | --- |
 | FB-0.1 | Reproduce, consolidate and disposition every report | Triage lead with QA |
