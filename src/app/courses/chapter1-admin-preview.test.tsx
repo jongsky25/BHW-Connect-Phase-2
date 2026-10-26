@@ -25,9 +25,9 @@ vi.mock("@/components/elearning/chapter1-learning-notes", () => ({
   Chapter1LearningNotes: ({ readOnly }: { readOnly: boolean }) => <p>Notes read only: {String(readOnly)}</p>,
 }));
 
-const page = (phase?: string) => Chapter1AdminPreview({
+const page = (phase?: string, part?: string) => Chapter1AdminPreview({
   params: Promise.resolve({ id: "course" }),
-  searchParams: Promise.resolve({ phase }),
+  searchParams: Promise.resolve({ phase, part }),
 });
 
 beforeEach(() => { state.role = "admin"; state.effectiveRole = "bhw"; state.preview = true; });
@@ -39,6 +39,11 @@ describe("Chapter 1 admin content preview", () => {
     expect(screen.getByRole("heading", { name: /Section 1 of 3/ })).toBeInTheDocument();
     expect(screen.getAllByRole("listitem").length).toBeGreaterThan(10);
     expect(screen.getByRole("link", { name: "Learning notes" })).toHaveAttribute("href", "/courses/course/assessment/preview?phase=notes");
+  });
+
+  it("shows the approved stock-verification wording in read-only section three", async () => {
+    render(await page("pretest", "3"));
+    expect(screen.getByText(/What should the BHW do before deciding how many usable copies remain\?/)).toBeInTheDocument();
   });
 
   it("shows learning notes in read-only mode", async () => {
