@@ -756,3 +756,5 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](fb-2.2h-chapter1-communication-pretest-review.md). [FB-2.2h publication](fb-2.2h-communication-clarify-publication.md) records the immutable v7 packet, continuity checks and live publication evidence.
 
 [FB-2.3b](fb-2.3b-ambiguous-terms-review.md) verifies three published Chapter I terms (“papel,” “clinical licence” and “fields”) against the original reports and adds bilingual, revision-gated reader explanations. The original reports stay open for live review; immutable lessons and history are unchanged.
+
+[FB-2.3c](fb-2.3c-filipino-clarity-review.md) reviews three Filipino-clarity reports against current UHC and safety lessons. Revision-gated bilingual notes complete the abbreviated UHC inclusion slide and explain safety terms in Read and Slides. The broad module-level report remains open for an exact live example.

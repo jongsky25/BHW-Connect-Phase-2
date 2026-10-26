@@ -9,6 +9,19 @@ const reviewed={
 export function NarrationAccessGuide({lesson,position,narration,en,slides,translated,illustrated}:{
   lesson:PublishedLesson;position:string;narration?:LessonNarration;en:boolean;slides:boolean;translated:boolean;illustrated:boolean;
 }){
+  if(!translated&&slides&&lesson.lesson_key==='uhc-coverage'&&lesson.revision.content_hash==='4b82aa20c75ff944adf326932408fd64ca126ac0dea951d53da264f00a639326'&&position==='slide-included'){
+    const slide=lesson.revision.slides.find(s=>s.id==='slide-included');
+    if(slide?.display_fil.includes('Sinasagot nito kung sino ang kasama sa programa.'))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'Automatic inclusion says who belongs to PhilHealth. It does not confirm that this consultation is free at the chosen facility; check the specific benefit first.':'Ang awtomatikong pagsama ay nagsasabi kung sino ang kasama sa PhilHealth. Hindi pa nito tiyak kung libre ang konsultang ito sa napiling pasilidad; alamin muna ang sakop na benepisyo.'}
+    </p>;
+  }
+  if(!translated&&lesson.lesson_key==='safety-identify'&&lesson.revision.content_hash==='ac7ab4b403d1a7d18699b2be524b02381f018ea639ddc92a98fb9cb0fdbc408e'&&position===(slides?'slide-ana':'ana')){
+    const read=lesson.revision.read_sections.find(s=>s.id==='ana');
+    const slide=lesson.revision.slides.find(s=>s.id==='slide-ana');
+    if(read?.body_fil.includes('fill line')&&read.body_fil.includes('agarang kontrol')&&(!slides||slide?.display_fil.includes('fill line')))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'A “sharps box” holds used needles and other sharp medical items. Its “fill line” marks how full it may safely be. An “immediate control” is a safe first step to reduce risk while the responsible staff is informed; do not handle the box contents.':'Ang “sharps box” ay lalagyan ng gamit na karayom at iba pang matutulis na gamit. Ang “fill line” ang hangganan ng pagpuno nito. Ang “agarang kontrol” ay unang ligtas na hakbang para mabawasan ang panganib habang inaabisuhan ang tamang staff; huwag hawakan ang laman ng lalagyan.'}
+    </p>;
+  }
   const termHelp={
     'bhw-barangay-partners':{
       hash:'4751c8f2e136581fe65913f6bf1da83615bb679caa0fb1c1d62072acc2625a3e',
