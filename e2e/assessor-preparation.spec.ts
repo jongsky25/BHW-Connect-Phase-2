@@ -31,6 +31,13 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
       values('${chapter}','${program}','chapter-1',0,'Kabanata I','Chapter I','${course}','available');
     insert into public.course_modules(id,course_id,position,type,title_fil,title_en)
       values('${guideModuleId}','${course}',0,'text','Gabay para sa paghahanda','Preparation guide');
+    insert into public.course_module_facilitator_notes(module_id,competency_statement_fil,competency_statement_en,observation_indicators)
+      select '${guideModuleId}','Kathang-isip na pamantayan para sa pagsusuri lamang.','Fictional criteria for verification only.',jsonb_agg(jsonb_build_object(
+        'objective_index',i,'observable_fil','Kathang halimbawa '||(i+1)::text,'observable_en','Fictional example '||(i+1)::text,
+        'not_yet_fil','Kailangan pa ng halimbawa.','not_yet_en','An example is still needed.',
+        'levels',jsonb_build_object('kaya_na_fil','Kusang halimbawa.','kaya_na_en','Unprompted example.',
+          'kailangan_practice_fil','Halimbawa na may tulong.','kailangan_practice_en','Example with help.',
+          'hindi_pa_fil','Wala pang halimbawa.','hindi_pa_en','No example yet.')) order by i) from generate_series(0,1) i;
     insert into public.assessor_flow_cohorts(id,program_id,chapter_key,cohort_key,requirements_version,ui_enabled,writes_enabled,awards_enabled)
       values('${cohort}','${program}','chapter-1','e2e-preparation','chapter-1:c1af.draft-1',true,false,false);
     insert into public.assessor_flow_cohort_members(program_id,chapter_key,user_id,cohort_id)
@@ -43,6 +50,7 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     // Candidates may inspect the guide before training. That read creates no
     // progress/qualification and links into the existing briefing gate.
     const guideEvidence=()=>localSql(`select jsonb_build_object(
+      'observations',(select jsonb_agg(to_jsonb(p)) from competency_observations p where observer_user_id='${actor.id}' and module_id='${guideModuleId}'),
       'study',(select jsonb_agg(to_jsonb(p)) from assessor_lesson_progress p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
       'attempts',(select jsonb_agg(to_jsonb(p)) from assessor_exam_attempts p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
       'qualifications',(select jsonb_agg(to_jsonb(p)) from assessor_chapter_qualifications p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
@@ -51,6 +59,17 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     await page.goto(`/training/${program}/chapter-1/${guideModuleId}`);
     await expect(page.getByRole('heading',{name:'Pagbukas ng gabay at pahintulot sa pagtatasa'})).toBeVisible();
     await expect(page.getByRole('link',{name:'Tingnan ang mga kailangan sa aking sertipikasyon'})).toHaveAttribute('href',`/training/${program}/assessor/qualifications#chapter-1`);
+    expect(guideEvidence()).toBe(beforeGuide);
+    await page.getByRole('navigation',{name:'Mga bahagi ng gabay'}).getByRole('link',{name:'Kakayahang hahanapin',exact:true}).click();
+    await expect(page).toHaveURL(`/training/${program}/chapter-1/${guideModuleId}?view=competency`);
+    await page.getByRole('navigation',{name:'Pumunta sa indicator'}).getByRole('link',{name:'Indicator 2',exact:true}).click();
+    const criterion=page.locator('#competency-indicator-2');
+    await expect(criterion).toBeFocused();
+    await expect(criterion.getByText('Kathang halimbawa 2',{exact:true})).toBeVisible();
+    const comparison=criterion.getByText('Ihambing ang tatlong antas',{exact:true});
+    await expect(comparison.locator('..')).toHaveJSProperty('open',false);
+    await comparison.focus();await comparison.press('Enter');
+    await expect(criterion.getByText('Halimbawa na may tulong.',{exact:true})).toBeVisible();
     expect(guideEvidence()).toBe(beforeGuide);
     await page.getByRole('link',{name:'Buksan ang sarili kong paghahanda sa kabanata'}).click();
     await expect(page).toHaveURL(`${base}/briefing`);

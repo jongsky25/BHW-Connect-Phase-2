@@ -226,6 +226,10 @@ describe('manual navigation',()=>{
     cleanup();state.calls=[];
     render(await page(['chapter-1','m1'],'competency'));
     expect(screen.getByText('Participate in workplace communication')).toBeInTheDocument();
+    expect(screen.getByRole('heading',{name:'Indicator 1'})).toBeVisible();
+    expect(screen.getByText('Compare the three levels').closest('details')).not.toHaveAttribute('open');
+    expect(state.calls.some(c=>['users','competency_observations'].includes(c.table))).toBe(false);
+    expect(state.rpcCalls.some(name=>name.includes('observation_record'))).toBe(false);
     expect(screen.queryByText('HEPO is the umbrella')).not.toBeInTheDocument();
     cleanup();state.calls=[];
     render(await page(['chapter-1','m1'],'run'));

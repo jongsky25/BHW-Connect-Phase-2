@@ -4,6 +4,8 @@ import { NotesMarkdown } from "./notes-markdown";
 import { FacilitatorRoster } from "./facilitator-roster";
 import { LessonFacilitatorGuide, SubchapterFacilitatorGuide } from "./facilitator-guide";
 import activityCards from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/activities.json";
+import competency from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/competency.json";
+import moduleContent from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/module.json";
 import type { FacilitatorActivity } from "@/lib/elearning/activities";
 import type { CourseModuleFacilitatorNotes } from "@/lib/elearning/types";
 
@@ -30,6 +32,42 @@ describe("SubchapterFacilitatorGuide", () => {
     href: "/training/program/chapter/module-1",
     slidesContent: <p>Mga slide ng aralin</p>,
   };
+
+  it.each(['en','fil'] as const)('keeps every authored criterion and level while making rubric comparisons optional (%s)',lang=>{
+    const notes={...competency,id:'n',module_id:'module-1',notes_en:'',notes_fil:''};
+    const objectives=lang==='en'?moduleContent.objectives_en:moduleContent.objectives_fil;
+    const {container}=render(<SubchapterFacilitatorGuide {...shared} lang={lang} objectives={objectives} notes={notes} view="competency"/>);
+    expect(screen.getByText(competency[`competency_statement_${lang}`])).toBeVisible();
+    const nav=screen.getByRole('navigation',{name:lang==='en'?'Jump to an indicator':'Pumunta sa indicator'});
+    expect(within(nav).getAllByRole('link')).toHaveLength(4);
+    for(const [i,indicator] of competency.observation_indicators.entries()){
+      const card=container.querySelector(`#competency-indicator-${i+1}`)! as HTMLElement;
+      expect(within(nav).getByRole('link',{name:`Indicator ${i+1}`})).toHaveAttribute('href',`#competency-indicator-${i+1}`);
+      expect(card).toHaveAttribute('tabindex','-1');
+      expect(within(card).getByRole('heading',{name:`Indicator ${i+1}`})).toBeVisible();
+      expect(within(card).getByText(objectives[indicator.objective_index])).toBeVisible();
+      expect(within(card).getByText(indicator[`observable_${lang}`])).toBeVisible();
+      expect(within(card).getByText(indicator[`not_yet_${lang}`])).toBeVisible();
+      const summary=within(card).getByText(lang==='en'?'Compare the three levels':'Ihambing ang tatlong antas');
+      expect(summary.closest('details')).not.toHaveAttribute('open');
+      fireEvent.click(summary);
+      for(const key of ['kaya_na','kailangan_practice','hindi_pa'] as const){
+        expect(within(card).getByText(indicator.levels[`${key}_${lang}`])).toBeVisible();
+      }
+    }
+    expect(state.rpc).not.toHaveBeenCalled();expect(state.refresh).not.toHaveBeenCalled();
+    expect(new Set([...container.querySelectorAll('[id]')].map(n=>n.id)).size).toBe(container.querySelectorAll('[id]').length);
+  });
+  it('handles missing notes and objectives without fabricated criteria or shortcuts',()=>{
+    const {rerender}=render(<SubchapterFacilitatorGuide {...shared} lang="en" view="competency"/>);
+    expect(screen.getByText('No indicators authored for this subchapter yet.')).toBeVisible();
+    expect(screen.queryByRole('navigation',{name:'Jump to an indicator'})).toBeNull();
+    const notes={...competency,observation_indicators:[competency.observation_indicators[0]],id:'n',module_id:'module-1',notes_en:'',notes_fil:''};
+    rerender(<SubchapterFacilitatorGuide {...shared} lang="en" notes={notes} view="competency"/>);
+    expect(screen.queryByRole('navigation',{name:'Jump to an indicator'})).toBeNull();
+    expect(screen.queryByText('Objective')).toBeNull();
+    expect(screen.getByText(competency.observation_indicators[0].observable_en)).toBeVisible();
+  });
 
   it("shows one selected subpage and keeps BHW Slides inside the guide card", () => {
     render(<SubchapterFacilitatorGuide {...shared} view="slides" />);

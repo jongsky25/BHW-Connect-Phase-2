@@ -18,9 +18,9 @@ import type { CourseModuleFacilitatorNotes, CourseSessionDelivery, ObservationIn
 type Lang = "fil" | "en";
 const pick = (lang: Lang, fil: string, en: string) => (lang === "en" ? en : fil);
 
-function Section({ id, title, open = false, children }: { id: string; title: string; open?: boolean; children: ReactNode }) {
+function Section({ id, title, open = false, compact = false, children }: { id: string; title: string; open?: boolean; compact?:boolean; children: ReactNode }) {
   return (
-    <details id={id} open={open} className="group rounded-xl border border-ink/15 p-5 [&_summary::-webkit-details-marker]:hidden">
+    <details id={id} open={open} className={`group rounded-xl border border-ink/15 ${compact?'p-3 sm:p-5':'p-5'} [&_summary::-webkit-details-marker]:hidden`}>
       <summary className="flex min-h-[44px] cursor-pointer list-none items-center justify-between gap-4 font-semibold">
         <span>{title}</span>
         <span aria-hidden className="text-ink/50 transition-transform group-open:rotate-90">›</span>
@@ -30,25 +30,39 @@ function Section({ id, title, open = false, children }: { id: string; title: str
   );
 }
 
-export function IndicatorCard({ indicator, objective, lang, index }: { indicator: ObservationIndicator; objective?: string; lang: Lang; index: number }) {
+export function IndicatorCard({ indicator, objective, lang, index, id, collapsibleLevels=false }: { indicator: ObservationIndicator; objective?: string; lang: Lang; index: number; id?:string; collapsibleLevels?:boolean }) {
   const levels: Array<[string, string, string]> = [
     [pick(lang, "Kaya na", "Kaya na (can do)"), pick(lang, indicator.levels.kaya_na_fil, indicator.levels.kaya_na_en), "bg-success/10"],
     [pick(lang, "Kailangan pa ng practice", "Needs practice"), pick(lang, indicator.levels.kailangan_practice_fil, indicator.levels.kailangan_practice_en), "bg-celebration/40"],
     [pick(lang, "Hindi pa", "Not yet"), pick(lang, indicator.levels.hindi_pa_fil, indicator.levels.hindi_pa_en), "bg-danger/10"],
   ];
+  const rubric=<dl className={`mt-3 grid grid-cols-1 ${collapsibleLevels?'gap-3 lg:grid-cols-3':'gap-2 sm:grid-cols-3'}`}>
+    {levels.map(([label, text, tone]) => (
+      <div key={label} className={`rounded-md ${collapsibleLevels?'min-w-0 p-3':'p-2'} ${tone}`}>
+        <dt className={collapsibleLevels?'font-semibold text-ink':'text-xs font-semibold uppercase tracking-wide text-ink/70'}>{label}</dt>
+        <dd className={collapsibleLevels?'mt-2 leading-relaxed text-ink':'mt-1 text-sm text-ink/85'}>{text}</dd>
+      </div>
+    ))}
+  </dl>;
   return (
-    <li className="rounded-md border border-ink/10 p-4">
+    <li id={id} tabIndex={id?-1:undefined} className={`rounded-md border ${collapsibleLevels?'min-w-0 scroll-mt-40 space-y-4 border-ink/20 p-3 text-base leading-relaxed wrap-anywhere focus-visible:outline-2 focus-visible:outline-primary sm:p-4 md:scroll-mt-28':'border-ink/10 p-4'}`}>
+      {collapsibleLevels?<>
+        <h3 className="text-lg font-semibold">{`Indicator ${index+1}`}</h3>
+        {objective&&<div><p className="font-semibold">{pick(lang,'Layunin','Objective')}</p><p className="mt-1">{objective}</p></div>}
+        <dl className="space-y-4">
+          <div className="border-l-4 border-success pl-3"><dt className="font-semibold">{pick(lang,'Nakikita — kaya na','What you see when they can')}</dt><dd className="mt-1">{pick(lang,indicator.observable_fil,indicator.observable_en)}</dd></div>
+          <div className="border-l-4 border-danger pl-3"><dt className="font-semibold">{pick(lang,'Hindi pa sapat','Not yet')}</dt><dd className="mt-1">{pick(lang,indicator.not_yet_fil,indicator.not_yet_en)}</dd></div>
+        </dl>
+        <details className="rounded-md border border-ink/20 p-3">
+          <summary className="min-h-11 cursor-pointer content-center font-semibold">{pick(lang,'Ihambing ang tatlong antas','Compare the three levels')}</summary>
+          {rubric}
+        </details>
+      </>:<>
       <p className="text-sm text-ink/60">{pick(lang, `Indicator ${index + 1}`, `Indicator ${index + 1}`)}{objective ? ` · ${objective}` : ""}</p>
       <p className="mt-2 font-medium text-success">{pick(lang, "Nakikita — kaya na: ", "What you see when they can: ")}{pick(lang, indicator.observable_fil, indicator.observable_en)}</p>
       <p className="mt-1 font-medium text-danger">{pick(lang, "Hindi pa sapat: ", "Not yet: ")}{pick(lang, indicator.not_yet_fil, indicator.not_yet_en)}</p>
-      <dl className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-3">
-        {levels.map(([label, text, tone]) => (
-          <div key={label} className={`rounded-md p-2 ${tone}`}>
-            <dt className="text-xs font-semibold uppercase tracking-wide text-ink/70">{label}</dt>
-            <dd className="mt-1 text-sm text-ink/85">{text}</dd>
-          </div>
-        ))}
-      </dl>
+      {rubric}
+      </>}
     </li>
   );
 }
@@ -153,19 +167,22 @@ export function SubchapterFacilitatorGuide({
         </ol>
       </Section>}
 
-      {view === "competency" && <Section id="guide-competency" title={pick(lang, "2. Kakayahang hahanapin sa BHW", "2. Competency to look for")} open>
+      {view === "competency" && <Section id="guide-competency" title={pick(lang, "2. Kakayahang hahanapin sa BHW", "2. Competency to look for")} open compact>
+        {indicators.length>1&&<nav aria-label={pick(lang,'Pumunta sa indicator','Jump to an indicator')} className="flex flex-wrap gap-2">
+          {indicators.map((_,i)=><a key={i} href={`#competency-indicator-${i+1}`} className="inline-flex min-h-11 items-center rounded-md border border-ink/25 px-3 py-2 underline">{`Indicator ${i+1}`}</a>)}
+        </nav>}
         {statement && (
-          <p className="rounded-md border border-secondary/30 bg-secondary/5 p-3">
-            <span className="text-sm font-semibold uppercase tracking-wide text-secondary">{pick(lang, "Pahayag ng kakayahan", "Competency statement")}</span>
-            <br />{statement}
-          </p>
+          <div className="rounded-md border border-secondary/30 bg-secondary/5 p-3 leading-relaxed wrap-anywhere">
+            <p className="font-semibold">{pick(lang, "Pahayag ng kakayahan", "Competency statement")}</p>
+            <p className="mt-2">{statement}</p>
+          </div>
         )}
         {indicators.length ? (
           <ul className="flex flex-col gap-3">
-            {indicators.map((ind, i) => <IndicatorCard key={i} index={i} indicator={ind} lang={lang} objective={objectives[ind.objective_index]} />)}
+            {indicators.map((ind, i) => <IndicatorCard key={i} id={`competency-indicator-${i+1}`} collapsibleLevels index={i} indicator={ind} lang={lang} objective={objectives[ind.objective_index]} />)}
           </ul>
         ) : (
-          <p className="text-sm text-ink/60">{pick(lang, "Wala pang indicator para sa subchapter na ito.", "No indicators authored for this subchapter yet.")}</p>
+          <p className="text-ink/85">{pick(lang, "Wala pang indicator para sa subchapter na ito.", "No indicators authored for this subchapter yet.")}</p>
         )}
       </Section>}
 
