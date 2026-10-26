@@ -22,6 +22,8 @@ that also praises the material remains actionable.
 
 ## Delivery increments
 
+The current Chapter II assessment slice is [FB-2.2c](fb-2.2c-chapter2-exam-context.md): five reports identify two repeated prompt pairs in the published assessor exam. Four approved bilingual lesson transfer checks replace those positions for new attempts, while old question IDs and exam snapshots remain intact. Keep the reports open for live review.
+
 | ID | Outcome | Responsible role |
 | --- | --- | --- |
 | FB-0.1 | Reproduce, consolidate and disposition every report | Triage lead with QA |
