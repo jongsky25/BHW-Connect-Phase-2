@@ -47,6 +47,11 @@ describe("Chapter 1 admin content preview", () => {
     expect(screen.getByText(/What should the BHW do before claiming improved resource use\?/)).toBeInTheDocument();
   });
 
+  it("shows the approved communication choice in read-only section two", async () => {
+    render(await page("pretest", "2"));
+    expect(screen.getByText("Ask the resident, ‘What do you mean by “too late”?’ and listen to the answer.")).toBeInTheDocument();
+  });
+
   it("shows learning notes in read-only mode", async () => {
     render(await page("notes"));
     expect(screen.getByText("Notes read only: true")).toBeInTheDocument();

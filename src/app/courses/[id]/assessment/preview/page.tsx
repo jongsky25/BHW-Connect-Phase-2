@@ -8,7 +8,7 @@ import { getRequestFeatureFlags } from "@/lib/supabase/request";
 import { createClient } from "@/lib/supabase/server";
 import orientation from "../../../../../../content/training/day1-basic-competencies/learner-assessment-v2/orientation.json";
 import checkpoints from "../../../../../../content/training/day1-basic-competencies/learner-assessment-v2/checkpoints.json";
-import release from "../../../../../../content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-resource-monitor-v6/release.json";
+import release from "../../../../../../content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-communication-clarify-v7/release.json";
 
 type Section = "overview" | "pretest" | "posttest" | "practice" | "notes";
 

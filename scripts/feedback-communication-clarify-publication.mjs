@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
+import { loadLessonMap } from './lib/chapter1-assessment-content.mjs';
+import { buildApprovedCommunicationClarifyRelease, publishCommunicationClarifySql } from './lib/feedback-communication-clarify-publication.mjs';
+import { releaseHash } from './lib/feedback-uhc-proposal.mjs';
+
+const root = fileURLToPath(new URL('../', import.meta.url));
+const dir = join(root, 'content/training/day1-basic-competencies/learner-assessment-v2');
+const target = 'releases/chapter1-feedback-communication-clarify-v7';
+const read = path => JSON.parse(readFileSync(join(root, path), 'utf8'));
+const base = read('content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-resource-monitor-v6/release.json');
+const proposal = read('docs/feedback-remediation/proposals/fb-2.2h-communication-clarify.json');
+const approval = read(`content/training/day1-basic-competencies/learner-assessment-v2/${target}/approval-record.json`);
+const reviewed = readFileSync(join(root, approval.review_record), 'utf8');
+for (const language of ['en', 'fil']) assert(reviewed.includes(proposal.replacement_label[language]), 'Approved review copy drift');
+const release = buildApprovedCommunicationClarifyRelease(base, proposal, approval,
+  { ...loadLessonMap(root), orientation: JSON.parse(readFileSync(join(dir, 'orientation.json'), 'utf8')) });
+assert.deepEqual(release, read(`content/training/day1-basic-competencies/learner-assessment-v2/${target}/release.json`), 'Approved release snapshot drift');
+assert(process.argv.slice(2).every(arg => arg === '--sql'), 'Only --sql is supported; no database connection is made');
+process.stdout.write(process.argv.includes('--sql') ? publishCommunicationClarifySql(base, release) :
+  `Approved ${release.release_id}; SHA-256 ${releaseHash(release)}\n` +
+  'One new pretest T18 identity; 59 other form items, 48 checkpoint items and 42 curriculum pins unchanged.\n' +
+  'Existing enrollments and historical attempts remain pinned; comparability unvalidated.\n');
