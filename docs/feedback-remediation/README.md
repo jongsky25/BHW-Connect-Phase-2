@@ -752,3 +752,5 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 ## FB-2.3a — Milk Code term and benefits explanation
 
 [Review and delivery](fb-2.3a-terminology-and-benefits-review.md) checks three reports against the currently published BHS promotion and BHW benefits lessons. “Teats” is the correct Milk Code term but needed an inline bilingual definition; the reader now explains it in Read and Slides without changing immutable content or approved audio. The current benefits revision already groups and separates the six benefit categories and conditions, so two broad older comments need live comprehension evidence before another rewrite. Feedback statuses stay open.
+
+The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](fb-2.2h-chapter1-communication-pretest-review.md). [FB-2.2h publication](fb-2.2h-communication-clarify-publication.md) records the immutable v7 packet, continuity checks and live publication evidence.
