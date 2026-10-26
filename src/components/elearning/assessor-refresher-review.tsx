@@ -3,10 +3,12 @@ import Link from 'next/link';
 export const ASSESSOR_REFRESHER_ID='assessor-refresher-review';
 
 export function AssessorRefresherLink({chapterHref,locale}:{chapterHref:string;locale:string}) {
-  return <Link prefetch={false} className="inline-flex min-h-11 self-start items-center rounded-md border border-ink/25 px-4 py-3 underline"
+  // A document link preserves the exact fragment when returning to a chapter
+  // previously visited at this anchor through the client router.
+  return <a className="inline-flex min-h-11 self-start items-center rounded-md border border-ink/25 px-4 py-3 underline"
     href={`${chapterHref}#${ASSESSOR_REFRESHER_ID}`}>
     {locale==='en'?'Refresher review and study pace':'Balik-aral at bilis ng pag-aaral'}
-  </Link>;
+  </a>;
 }
 
 /** Navigation over current, personally completed lessons; never new evidence. */
