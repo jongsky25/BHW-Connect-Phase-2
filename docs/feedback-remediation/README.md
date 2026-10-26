@@ -726,3 +726,7 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 ## FB-5.1e — lesson completion and progression review
 
 [Review and delivery](fb-5.1e-lesson-completion-guidance.md) assesses the three question/topic/playback lock requests. Existing formative UI completion requires all checks in the selected view, its final section and a successful save. Adds discoverable bilingual finish/save help to writable lesson readers, including why browsing and playback do not count as completion. Retains accessible review paths and existing formal-test policy; no sequential lock or persisted-answer validation is introduced. Original reports remain open for live comments; exact CI and production receipts are in the release PR.
+
+## FB-3.3g — subchapter competency readability
+
+[Review and delivery](fb-3.3g-competency-readability.md) reproduces low-contrast competency captions and dense phone presentation. Adds clear objective/observation blocks, readable text, optional full-rubric disclosures and focusable indicator shortcuts while retaining every authored criterion and existing private-guide access. Lesson-guide comparisons remain unchanged; no content/media rewrite or claim that broad illustration coverage is complete. Original feedback remains open for live comments; exact CI and production receipts are in the release PR.
