@@ -34,6 +34,8 @@ The owner approved that exact T28 correction. [FB-2.2e](fb-2.2e-stock-count-publ
 
 The owner approved that exact T30 correction. [FB-2.2g publication](fb-2.2g-resource-monitor-publication.md) records the immutable v6 release plan, one new pretest item identity, publication guards and preservation checks for existing learners.
 
+[FB-2.2h](fb-2.2h-chapter1-communication-pretest-review.md) reviews four Chapter I communication-pretest reports against the active v6 form. Two quoted legacy issues are no longer served. The current T18 keyed choice remains abstract despite a question asking what the BHW should say; an exact bilingual conversational option is proposed for owner review. The report about obvious choices remains open pending item-level evidence.
+
 | ID | Outcome | Responsible role |
 | --- | --- | --- |
 | FB-0.1 | Reproduce, consolidate and disposition every report | Triage lead with QA |
