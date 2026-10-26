@@ -722,3 +722,7 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 ## FB-5.1d — group-learning guide navigation
 
 [Review and delivery](fb-5.1d-group-learning-navigation.md) verifies that the reported lesson already has group discussion, examples, practice and follow-up. Adds exact-lesson/subchapter guide links from assessor study, native shortcuts into existing closed guide sections and missing lesson links on the run view. Private notes, learning model and formal assessment remain unchanged. Records the owner's deferral of plant identification and the historical progress mismatch. Original feedback stays open for live comments; CI and production receipts are in the release PR.
+
+## FB-5.1e — lesson completion and progression review
+
+[Review and delivery](fb-5.1e-lesson-completion-guidance.md) assesses the three question/topic/playback lock requests. Existing formative UI completion requires all checks in the selected view, its final section and a successful save. Adds discoverable bilingual finish/save help to writable lesson readers, including why browsing and playback do not count as completion. Retains accessible review paths and existing formal-test policy; no sequential lock or persisted-answer validation is introduced. Original reports remain open for live comments; exact CI and production receipts are in the release PR.

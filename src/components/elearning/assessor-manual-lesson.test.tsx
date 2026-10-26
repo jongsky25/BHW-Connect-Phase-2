@@ -11,6 +11,22 @@ beforeEach(()=>{state.rpc.mockReset().mockResolvedValue({error:null});state.refr
 afterEach(()=>{cleanup();vi.useRealTimers();});
 const reader=(assessorChapterId?:string,readOnly=false)=><ManualLesson data={data} modules={[]} locale="en" lessonId="lesson" baseHref="/study" readOnly={readOnly} lessonNumber={1} lessonCount={42} assessorChapterId={assessorChapterId}/>;
 describe('assessor study persistence in existing reader',()=>{
+  it.each(['en','fil'])('opens completion guidance without saving or resetting an answer (%s)',locale=>{
+    const check={prompt_en:'Choose a response',prompt_fil:'Pumili ng sagot',options:[{en:'Ask',fil:'Magtanong'},{en:'Guess',fil:'Hulaan'}],correct_option_index:0,feedback_en:'Ask the team',feedback_fil:'Magtanong sa team'};
+    const first={...data.lessons[0].revision.read_sections[0],takeaway_en:'Ask the team',takeaway_fil:'Magtanong sa team',check};
+    const checked:ReferenceData={...data,lessons:data.lessons.map(l=>({...l,revision:{...l.revision,read_sections:[first,l.revision.read_sections[1]]}}))};
+    render(<ManualLesson data={checked} modules={[]} locale={locale} lessonId="lesson" baseHref="/study" readOnly={false} lessonNumber={1} lessonCount={42} assessorChapterId="chapter"/>);
+    fireEvent.click(screen.getByRole('button',{name:locale==='en'?'Guess':'Hulaan'}));
+    state.rpc.mockClear();
+    const summary=screen.getByText(locale==='en'?'How to finish and save this lesson':'Paano tapusin at i-save ang araling ito');
+    expect(summary.closest('details')).not.toHaveAttribute('open');
+    fireEvent.click(summary);
+    expect(summary.closest('details')).toHaveAttribute('open');
+    expect(screen.getByText(locale==='en'?/You can browse ahead/:/Maaari kang tumingin sa susunod/)).toBeVisible();
+    expect(screen.getByRole('button',{name:locale==='en'?'Guess':'Hulaan'})).toHaveAttribute('aria-pressed','true');
+    expect(state.rpc).not.toHaveBeenCalled();expect(state.refresh).not.toHaveBeenCalled();
+    expect(screen.getByRole('button',{name:locale==='en'?'Mark lesson complete':'Markahang tapos ang aralin'})).toBeDisabled();
+  });
   it('changes layout/help without calling resume or completion APIs',()=>{
     render(reader('chapter'));state.rpc.mockClear();
     fireEvent.click(screen.getByText('Reading tools'));
@@ -39,6 +55,7 @@ describe('assessor study persistence in existing reader',()=>{
     const {unmount}=render(reader());fireEvent.click(screen.getByRole('button',{name:'Next'}));fireEvent.click(screen.getByRole('button',{name:'Mark lesson complete'}));
     await waitFor(()=>expect(state.rpc).toHaveBeenCalledWith('rpc_course_lesson_complete',{p_lesson_id:'lesson',p_revision_id:'revision'}));
     unmount();state.rpc.mockClear();render(reader('chapter',true));
+    expect(screen.queryByText('How to finish and save this lesson')).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button',{name:'Next'}));
     expect(screen.queryByRole('button',{name:'Mark lesson complete'})).not.toBeInTheDocument();
     expect(state.rpc).not.toHaveBeenCalled();

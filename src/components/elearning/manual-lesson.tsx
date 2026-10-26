@@ -3,6 +3,7 @@
 import {useRouter} from 'next/navigation';
 import {TrainingConnectionNotice} from './training-connection-notice';
 import {LessonReadingTools} from './lesson-reading-tools';
+import {LessonCompletionGuide} from './lesson-completion-guide';
 import {ReferenceLessons, type ReferenceData} from './reference-lessons';
 import type {CourseModule,LessonModality} from '@/lib/elearning/types';
 import type {LessonNarration} from '@/lib/elearning/reference-narration';
@@ -18,7 +19,7 @@ export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,r
   translations?:LessonTranslation[];
 }) {
   const router=useRouter();
-  return <><TrainingConnectionNotice locale={locale} readOnly={readOnly}/><LessonReadingTools key={lessonId} locale={locale}><ReferenceLessons key={lessonId} {...data} modules={modules} initialLessonId={lessonId}
+  return <><TrainingConnectionNotice locale={locale} readOnly={readOnly}/>{!readOnly&&<LessonCompletionGuide locale={locale}/>}<LessonReadingTools key={lessonId} locale={locale}><ReferenceLessons key={lessonId} {...data} modules={modules} initialLessonId={lessonId}
     lessonBaseHref={baseHref} returnHref={returnHref} locale={locale} readOnly={readOnly} lessonNumber={lessonNumber} lessonCount={lessonCount} initialMode={initialMode}
     nextLessonHref={nextLessonHref} completionMilestone={completionMilestone} storyQuestionHandoff={storyQuestionHandoff}
     narration={narration?{[lessonId]:narration}:undefined}
