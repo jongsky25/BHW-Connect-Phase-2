@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "proposal_id": "FB-2.2h-communication-clarify",
+  "base_release_id": "chapter1-feedback-resource-monitor-v6",
+  "base_release_sha256": "493c7513d2fe99ac9071977e3af1bfcdd477cf143cb389eda46064aaed2aa645",
+  "proposed_release_id": "chapter1-feedback-communication-clarify-v7",
+  "phase": "pretest",
+  "slot": "T18",
+  "replaces_item_id": "2c711c5f-ba40-40b6-a5bc-d0b3b647cdd9",
+  "new_item_id": "e052b06e-a842-44cb-a6b0-8bdb12233dcf",
+  "correct_option_id": "o1",
+  "replace_option_id": "o1",
+  "replacement_label": {
+    "en": "Ask the resident, ‘What do you mean by “too late”?’ and listen to the answer.",
+    "fil": "Itanong sa residente, ‘Ano po ang ibig ninyong sabihin sa “huli na”?’ at pakinggan ang sagot."
+  },
+  "continuity": {
+    "existing_enrollments": "remain_on_original_release_for_both_phases",
+    "existing_drafts": "finish_pinned_form",
+    "submitted_attempts": "retain_snapshot_answers_and_scores",
+    "comparability": "unvalidated_no_automatic_cross_release_gain_comparison"
+  }
+}
