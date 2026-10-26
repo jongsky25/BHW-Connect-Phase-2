@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "release_id": "chapter1-feedback-stock-count-v5",
+  "authorization": "Approve exact wording",
+  "authorization_context": "Owner approved the exact English and Filipino pretest T28 stems in the FB-2.2d review packet for a new assessment version serving new enrollments.",
+  "approval_type": "owner_content_and_publication",
+  "reviewer": "jongsky25",
+  "approved_date": "2026-10-26",
+  "source_commit": "808908f78af9afbc0f8c97ad879cd46c5ae355b7",
+  "proposal_sha256": "0432a4d7dc0ae1f000c3f3630398641c48f1687e241810d68297abe47ba59044",
+  "independent_specialist_review": "not_claimed",
+  "review_record": "docs/feedback-remediation/fb-2.2d-chapter1-checklist-review.md",
+  "continuity": {
+    "existing_enrollments": "remain_on_original_release_for_both_phases",
+    "existing_drafts": "finish_pinned_form",
+    "submitted_attempts": "retain_snapshot_answers_and_scores",
+    "comparability": "unvalidated_no_automatic_cross_release_gain_comparison"
+  },
+  "scope": "Future pretest T28 stem only. New item identity and immutable release; all options, answer key, rationales, posttest items, checkpoints, lesson pins, legacy bank and history unchanged."
+}

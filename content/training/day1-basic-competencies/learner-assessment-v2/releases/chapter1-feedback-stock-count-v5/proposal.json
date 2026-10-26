@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "proposal_id": "FB-2.2d-stock-count",
+  "base_release_id": "chapter1-feedback-gifts-lactation-v4",
+  "base_release_sha256": "8dd4439dbb737ad5c0b0b0436c9d37695a8b57728a773870c6cad32f5593ba77",
+  "proposed_release_id": "chapter1-feedback-stock-count-v5",
+  "phase": "pretest",
+  "slot": "T28",
+  "replaces_item_id": "c47eafde-997e-4d38-a5a4-991f8c3ef511",
+  "new_item_id": "9c2f1de9-01e4-4376-b192-58cdbb0b0aef",
+  "correct_option_id": "o1",
+  "stem": {
+    "en": "A stock list shows ten teaching leaflets, but some copies cannot be found and others are outdated. What should the BHW do before deciding how many usable copies remain?",
+    "fil": "Sampung leaflet ang nasa stock list, ngunit may hindi makita at may luma na. Ano ang dapat gawin ng BHW bago magpasya kung ilan ang magagamit?"
+  },
+  "continuity": {
+    "existing_enrollments": "remain_on_original_release_for_both_phases",
+    "existing_drafts": "finish_pinned_form",
+    "submitted_attempts": "retain_snapshot_answers_and_scores",
+    "comparability": "unvalidated_no_automatic_cross_release_gain_comparison"
+  }
+}

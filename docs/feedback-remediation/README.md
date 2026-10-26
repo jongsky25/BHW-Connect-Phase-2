@@ -26,6 +26,8 @@ The current Chapter II assessment slice is [FB-2.2c](fb-2.2c-chapter2-exam-conte
 
 [FB-2.2d](fb-2.2d-chapter1-checklist-review.md) maps six assessor Chapter I reports to one historical checklist item that the enabled shared assessment no longer serves. It also records a separate current pretest T28 stem/choice mismatch and exact bilingual correction proposed for editorial approval. No bank, score or feedback status changed in this review.
 
+The owner approved that exact T28 correction. [FB-2.2e](fb-2.2e-stock-count-publication.md) records the immutable v5 release, one new pretest item identity, publication guards and preservation checks for existing learners.
+
 | ID | Outcome | Responsible role |
 | --- | --- | --- |
 | FB-0.1 | Reproduce, consolidate and disposition every report | Triage lead with QA |
