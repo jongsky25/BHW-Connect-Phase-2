@@ -619,9 +619,6 @@ export function ReferenceLessons(props: Props) {
     }
   }
   const relationshipVisual = lesson && item ? relationshipLearningVisual(lesson, item.id, en) : null;
-  const explainTeats = lesson?.lesson_key === "bhs-promotions" && !translation && item &&
-    (item.id === "section-2" || item.id === "slide-section-2") &&
-    (("body_en" in item ? item.body_en : item.narration_en) ?? "").includes("feeding bottles and teats");
   const readerArticle = lesson && item && (
       <article
         className={storyLayout ? "reference-story" : "rounded-xl border border-ink/15 p-4 sm:p-6"}
@@ -722,14 +719,6 @@ export function ReferenceLessons(props: Props) {
               {ui("Sagutin muna ang tanong para mapakinggan ang audio na may buod.", "Answer the check to unlock this section’s audio, which includes the takeaway.")}
             </p>}
           </ReferenceReadSection>
-        )}
-        {explainTeats && (
-          <p role="note" className="mt-4 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
-            {ui(
-              "Sa Milk Code, ang “teats” ay mga tsupon ng feeding bottle; hindi ito “treats” o gamot.",
-              "In the Milk Code, “teats” means the nipples fitted to feeding bottles; it does not mean “treats” or medicines.",
-            )}
-          </p>
         )}
         </div>
       </article>

@@ -9,6 +9,13 @@ const reviewed={
 export function NarrationAccessGuide({lesson,position,narration,en,slides,translated,illustrated}:{
   lesson:PublishedLesson;position:string;narration?:LessonNarration;en:boolean;slides:boolean;translated:boolean;illustrated:boolean;
 }){
+  if(!translated&&lesson.lesson_key==='bhs-promotions'&&position===(slides?'slide-':'')+'section-2'){
+    const read=lesson.revision.read_sections.find(s=>s.id==='section-2');
+    const slide=lesson.revision.slides.find(s=>s.id==='slide-section-2');
+    if(read?.body_en.includes('feeding bottles and teats')&&slide?.narration_en?.includes('feeding bottles and teats'))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'In the Milk Code, “teats” means the nipples fitted to feeding bottles; it does not mean “treats” or medicines.':'Sa Milk Code, ang “teats” ay mga tsupon ng feeding bottle; hindi ito “treats” o gamot.'}
+    </p>;
+  }
   if(translated||!Object.hasOwn(reviewed,lesson.lesson_key))return null;
   const expected=reviewed[lesson.lesson_key as keyof typeof reviewed];
   const section=lesson.revision.read_sections.find(s=>s.id===expected.first),track=narration?.[expected.first];
