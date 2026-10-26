@@ -8,7 +8,8 @@ it('retains every authored translation, teaching, assessment item, recording and
  const r=JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-4.3-reader-preservation.json'));
  expect(r.base_commit).toBe('629daa83acd4687dee1139dbeba3f81edfb7a6fa');expect(r.replacements).toHaveLength(5);
  expect(beforeFeedbackLanguageAvailability(r.path)).toEqual(execFileSync('git',['show',r.base_commit+':'+r.path]));
- expect(execFileSync('git',['diff',r.base_commit,'--','content/','public/training/','remotion/','docs/lesson-*'])).toHaveLength(0);
+ // The new immutable v5 artifact has its own exact-copy and continuity test.
+ expect(execFileSync('git',['diff',r.base_commit,'--','content/','public/training/','remotion/','docs/lesson-*',':(exclude)content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-stock-count-v5/**'])).toHaveLength(0);
 });
 it('all twenty approved packages retain matching recordings and exact video/caption bytes',()=>{
  const paths=fs.readdirSync(root,{recursive:true}).filter(p=>/pilot\.(ceb|hil)\.json$/.test(p));expect(paths).toHaveLength(20);let tracks=0,videos=0;
