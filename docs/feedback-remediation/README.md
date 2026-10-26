@@ -718,3 +718,7 @@ The FAQ suggestion was reviewed separately: published Q&A already exists in 11 K
 ## FB-5.1c — optional assessor refresher review and study pace
 
 [Review and delivery](fb-5.1c-assessor-refresher-review.md) assesses refresher-course and daily/time-limit requests. Adds a clear optional review entry point over personally completed current-revision chapter lessons and explains self-paced study versus agreed formal assessment schedules. Existing prerequisites, completion and certification remain; no arbitrary cap, deadline, separate curriculum or renewal qualification is introduced. Original feedback stays open for live comments; CI and production receipts are in the release PR.
+
+## FB-5.1d — group-learning guide navigation
+
+[Review and delivery](fb-5.1d-group-learning-navigation.md) verifies that the reported lesson already has group discussion, examples, practice and follow-up. Adds exact-lesson/subchapter guide links from assessor study, native shortcuts into existing closed guide sections and missing lesson links on the run view. Private notes, learning model and formal assessment remain unchanged. Records the owner's deferral of plant identification and the historical progress mismatch. Original feedback stays open for live comments; CI and production receipts are in the release PR.

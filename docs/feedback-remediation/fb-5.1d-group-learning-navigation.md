@@ -1,0 +1,29 @@
+# FB-5.1d — finding and using group-learning guidance
+
+Report `dafc96db-a118-48e2-8eea-d501799b003c` recommends RHU-facilitated group sessions, discussions, examples and follow-up instead of relying on individual playback and simple questions. It points to the assessor's personal-study **Records and Information** lesson (`45105887-464d-46a0-b410-3d2f7d69be4a`, key `bhw-records`). A read-only pilot query on 26 October 2026 confirms no screenshot, unchanged `new` status and facilitator notes attached to published revision `b11de2da-d76c-4404-9464-05e5fcdf4239`.
+
+## Merit and existing support
+
+The request has merit as a need to find and use facilitated practice. The existing lesson guide already has an opening question, six teaching/discussion steps, responses to misconceptions, a three-person fictional four-card activity, observation prompts and follow-up support. It explicitly separates the online self-check from observing skill. Existing activity cards, BHW presentation, private guide, working-area and session tools also support guided delivery. Playback alone is not demonstrated competence under the existing assessment flow.
+
+Two access gaps were confirmed in code: personal study only links back to the broad chapter guide, and a subchapter's **How to run it** view tells the facilitator to open a lesson “above” while its lesson list is available only in another view. The lesson guide's closed practice/support sections are also hard to reach quickly during a group session.
+
+This increment improves those paths. It does not replace the blended learning model with mandatory RHU-only attendance, create a training-hour policy, author new examples or change qualification. Existing notes and their review caveats remain unchanged; navigation does not assert independent clinical or pedagogical sign-off. Ray Justin Ventura remains training owner.
+
+## Visible changes
+
+- An assessor personal-study **lesson** now has a bilingual **Facilitate group learning** panel with links to that exact lesson's facilitator guide and its subchapter's run view. Chapter 2 retains its own route. Chapter roots and exams do not receive lesson-specific links. Personal study loads no private notes for this panel and retains its role, preview, briefing and pretest checks.
+- Existing private lesson guides get **Discussion, practice and follow-up** navigation over authored, nonempty `opening`, `steps`, `expected-answers`, `practice` and `support` sections only. Labels come from each existing guide. Legacy/unstructured or absent notes get no invented steps. Normal same-page fragment links target focusable bodies inside the disclosures: the browser reveals the closed section and scrolls it below the sticky header. Existing section IDs, notes, activities, keys and presentation controls remain.
+- The subchapter run view now displays the actual published lesson-guide links it promises. No missing/unpublished destination is fabricated, and no extra roster read is added. Two existing empty-state messages in this view measured 4.01:1 contrast; increasing their ink opacity fixes the measured contrast failure.
+- Guidance explains using the BHW presentation with the group, pausing for discussion/practice and keeping participation/self-check separate from demonstrated competence. Private notes remain on existing assessor/admin paths; the BHW presentation and learner routes retain their existing data boundaries.
+
+No new queries/RPCs, database/migration, curriculum/media/reader change, progress or assessment write, attendance/completion credit, certificate, timer, deadline, notification or feedback reply. Original feedback stays open for live comments; repository disposition is partial fix pending live review.
+
+The owner explicitly deferred plant-identification report `84696eb6-57e6-4da4-81c3-19cc21923187` and historical progress report `edd80e67-6710-494a-aee1-4176f1ca274f`. Their tracker entries retain earlier evidence and now record `owner_deferred`; do not resume them without a new request. The existing plant-aid pilot is not removed.
+
+## Verification
+
+- 98 focused tests across private guide, Chapter 1 lesson flow, personal-study route and general manual navigation pass. Ten new cases cover bilingual exact destinations and authored-section targets, missing/legacy guides and lessons, root/exam exclusions and no extra private-note/RPC reads. Existing BHW/designer privacy, role/preview checks, mapped activities and specialized Prepare/Run behavior remain covered. The real run-route test now checks lesson links and no roster query.
+- `scripts/group-learning-browser.mjs`: eight actual-component/app-CSS cases at 320px/XL across English/Filipino × light/dark. All five native section targets reveal/focus their content, including initially closed practice, and clear the 128px sticky header. Checks 44px targets, long-title wrapping, no overflow/page errors/non-GET requests, eight clean main-region axe scans and four inspected screenshots. This Vite fixture is separate from Next/auth/database verification.
+- Disposable-Supabase preparation E2E now opens the exact facilitator guide from a personal lesson, reveals a closed fictional practice section, follows the subchapter run view's lesson link, and returns to personal study/refresher. Exact completion, exam, qualification and award snapshots remain unchanged; normal reader resume is separate. Fictional notes exist only in the localhost fixture. Existing localhost guard runs before account creation and SQL; immutable fixture notes/revisions are cleaned within the existing transaction pattern. No pilot write tests.
+- TypeScript and lint pass (four pre-existing unrelated script warnings); `git diff --check` and all 214 unique feedback IDs are preserved. Final full CI, exact merge, READY production/canonical-alias and public smoke receipts are recorded in the release PR. No authenticated production walkthrough is claimed.

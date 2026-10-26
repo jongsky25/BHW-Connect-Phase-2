@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-li
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { NotesMarkdown } from "./notes-markdown";
 import { FacilitatorRoster } from "./facilitator-roster";
-import { SubchapterFacilitatorGuide } from "./facilitator-guide";
+import { LessonFacilitatorGuide, SubchapterFacilitatorGuide } from "./facilitator-guide";
 import activityCards from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/activities.json";
 import type { FacilitatorActivity } from "@/lib/elearning/activities";
 import type { CourseModuleFacilitatorNotes } from "@/lib/elearning/types";
@@ -45,6 +45,34 @@ describe("SubchapterFacilitatorGuide", () => {
     render(<SubchapterFacilitatorGuide {...shared} notes={notes} view="activities" />);
     expect(screen.getByRole("link", { name: /Mga gawain/ })).toHaveAttribute("aria-current", "page");
     expect(screen.getByRole("heading", { name: "Mga gawaing maaari mong gawin" })).toBeInTheDocument();
+  });
+  it.each(['en','fil'] as const)('provides the lesson links promised by the run view (%s)',lang=>{
+    render(<SubchapterFacilitatorGuide {...shared} lang={lang} view="run" lessons={[{id:'records',href:'/training/program/chapter/module-1/records',title:'Records',objectives:[],takeaways:[]}]}/>);
+    const nav=screen.getByRole('navigation',{name:lang==='en'?'Lesson facilitation guides':'Mga gabay ng facilitator sa bawat aralin'});
+    expect(within(nav).getByRole('link',{name:'Records'})).toHaveAttribute('href','/training/program/chapter/module-1/records');
+    expect(state.rpc).not.toHaveBeenCalled();
+  });
+  it('does not invent lesson guide links when no published lessons are available',()=>{
+    render(<SubchapterFacilitatorGuide {...shared} view="run"/>);
+    expect(screen.queryByRole('navigation',{name:'Mga gabay ng facilitator sa bawat aralin'})).not.toBeInTheDocument();
+  });
+});
+
+describe('lesson group-learning navigation',()=>{
+  it.each(['en','fil'] as const)('links only available authored group sections to their real focusable bodies (%s)',lang=>{
+    const notes='## [opening] Opening prompt\n\nAsk what is known.\n\n## [practice] Group practice\n\nTry the fictional example.\n\n## [support] Follow up\n\nRepeat with support.\n\n## [sources-review] Source\n\nKeep this source.';
+    const {container}=render(<LessonFacilitatorGuide lang={lang} notesMarkdown={notes} indicators={[]} objectives={[]}/>);
+    const nav=screen.getByRole('navigation',{name:lang==='en'?'Discussion, practice and follow-up':'Talakayan, pagsasanay at follow-up'});
+    expect(within(nav).getAllByRole('link').map(n=>n.getAttribute('href'))).toEqual(['#lesson-guide-opening-content','#lesson-guide-practice-content','#lesson-guide-support-content']);
+    for(const link of within(nav).getAllByRole('link'))expect(container.querySelector(link.getAttribute('href')!)).toHaveAttribute('tabindex','-1');
+    expect(container.textContent).toContain('Keep this source.');
+    expect(within(nav).queryByRole('link',{name:'Source'})).toBeNull();
+    expect(state.rpc).not.toHaveBeenCalled();
+  });
+  it.each([null,'Legacy notes without structured headings'])('retains missing/legacy notes without invented workflow links: %s',notes=>{
+    render(<LessonFacilitatorGuide lang="en" notesMarkdown={notes} indicators={[]} objectives={[]}/>);
+    expect(screen.queryByRole('navigation',{name:'Discussion, practice and follow-up'})).toBeNull();
+    expect(screen.getByText(notes??'No guide authored for this lesson yet.')).toBeInTheDocument();
   });
 });
 
