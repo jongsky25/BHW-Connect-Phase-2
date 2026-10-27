@@ -9,6 +9,15 @@ const reviewed={
 export function NarrationAccessGuide({lesson,position,narration,en,slides,translated,illustrated}:{
   lesson:PublishedLesson;position:string;narration?:LessonNarration;en:boolean;slides:boolean;translated:boolean;illustrated:boolean;
 }){
+  const finalRead=lesson.revision.read_sections.at(-1);
+  const finalSlide=lesson.revision.slides.at(-1);
+  if(!translated&&lesson.revision.read_sections.length===7&&lesson.revision.slides.length===7&&
+    finalRead?.id==='next-step'&&finalSlide?.id==='slide-next-step'&&
+    finalRead.heading_en==='On Monday, try this'&&finalRead.heading_fil==='Sa Lunes, gawin ito'&&
+    finalSlide.heading_en==='On Monday, try this'&&finalSlide.heading_fil==='Sa Lunes, gawin ito'&&
+    position===(slides?'slide-next-step':'next-step'))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'Why Monday? This is a prompt to practise the lesson’s next step, not a deadline. If your next training or workday is different, plan the safe step with your facilitator or local team for that day and confirm local procedures first.':'Bakit Lunes? Paalala ito na sanayin ang susunod na hakbang ng aralin, hindi takdang araw. Kung iba ang susunod mong araw ng pagsasanay o trabaho, planuhin ang ligtas na hakbang kasama ang facilitator o lokal na team sa araw na iyon at tiyakin muna ang lokal na patakaran.'}
+    </p>;
   if(!translated&&lesson.lesson_key==='resources-safe-change'&&lesson.revision.content_hash==='569fd058a90394940f91c6725f9f3076c225d0acafb81320d8d6b63ed81a6b15'&&position===(slides?'slide-utilities':'utilities')){
     const read=lesson.revision.read_sections.find(s=>s.id==='utilities');
     const slide=lesson.revision.slides.find(s=>s.id==='slide-utilities');
