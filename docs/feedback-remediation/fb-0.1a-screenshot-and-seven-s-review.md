@@ -1,6 +1,6 @@
 # FB-0.1a — private screenshot and paired 7S reports
 
-Read-only pilot review on 27 October 2026 covered three `new` Spot Feedback reports. This record updates triage findings only; it does not change the live reports, replies, lesson versions, or completion records.
+Read-only pilot review on 27 October 2026 covered three initially `new` Spot Feedback reports. The subsequent owner-directed status change is recorded below. No reply, lesson version, or completion record changed.
 
 | Feedback ID | Original evidence | Finding and disposition |
 | --- | --- | --- |
@@ -8,4 +8,8 @@ Read-only pilot review on 27 October 2026 covered three `new` Spot Feedback repo
 | `b0461a11-135b-4a23-9a5f-66e1200347ad` | Same reporter and page, 14 October 08:00:28 UTC: “Ah okay..complete na ang 7s.” No screenshot. | Confirms that the earlier observation was corrected 47 seconds later. The active bilingual Read and Slides content still contains all seven. Mark the local tracker as verified acknowledgement; no content change. |
 | `9cfb86dd-89f4-4626-8657-803b20388e79` | BHW Chapter I `bhw-barangay-partners` lesson, 14 October 13:01 UTC. Message: “Gusto mo bang amagikkm”; later reply: “Wala.” Captured element: “Susunod na aralin →”. A 52,404-byte PNG exists in the private `spot-feedback` bucket. | The text and reply do not identify a requested change or failure. The next lesson in this module, `City or municipal partners`, is published, and the current route builds a next-lesson link from published lesson order. The screenshot bytes are not exposed by the read-only database connector; the bucket is private and its read policy requires the uploader or a scoped admin. Its visual contents therefore remain unverified. Keep this report pending a legitimate authenticated screenshot review or a specific current pilot comment. Do not infer a navigation failure from the element anchor. |
 
-The exact published `seven-s-improvement` revision is `b30f94ac-db0b-4d66-bcfd-39bababda05a` (`54bb147956190b011b4289ae94092ac549d718e20bbc43689e563fe9faa51358`). No fix is warranted for the verified 7S pair. The screenshot report remains evidence-limited; no attempt was made to bypass private Storage access. No live status or reply was changed.
+The exact published `seven-s-improvement` revision is `b30f94ac-db0b-4d66-bcfd-39bababda05a` (`54bb147956190b011b4289ae94092ac549d718e20bbc43689e563fe9faa51358`). No fix is warranted for the verified 7S pair. The screenshot report remains evidence-limited; no attempt was made to bypass private Storage access.
+
+## Owner-directed live disposition, 27 October 2026
+
+After reviewing the evidence above, the owner directed closure of the two 7S reports with an explanation while retaining the separate screenshot report. Both 7S reports were set to `dismissed` at `2026-10-27 22:35:37.912387+00`. The reason is that the lesson already contains all seven categories across two sections in each language and view, and the reporter corrected their first observation in the paired message. The automation left `resolved_by` null rather than attributing the action to an application user. The reply table requires a signed-in author identity, which this read-only/management connection does not provide; no in-app reply or notification was sent. This audit entry holds the explanation. Verification found the screenshot report still `new` and the live totals at 198 `new`, 10 `in_review`, 4 `resolved`, 2 `dismissed`.
