@@ -3,9 +3,10 @@
 ## Baseline: 23 October 2026
 
 Initial triage covers all 214 Spot Feedback submissions from 29 September to
-23 October 2026. A read-only live count confirmed the export is still current;
-all 214 live statuses are `new`. This work has not changed feedback statuses or
-sent replies. The implementation baseline is `9c2a2cd4`.
+23 October 2026. All 214 were `new` at that snapshot. As of 27 October 2026,
+the live count remains 214: 198 `new`, 10 `in_review`, 4 `resolved` and 2
+`dismissed`; the delivery records below explain the later status changes.
+The implementation baseline is `9c2a2cd4`.
 
 [`triage-2026-10-23.csv`](triage-2026-10-23.csv) maps every feedback UUID to
 increment IDs, responsible roles, a proposed disposition, related reports and
@@ -15,10 +16,11 @@ feedback system and the separately exported private snapshot.
 
 Initial triage is complete; verification of the full backlog is still open.
 The 31 N/A/no-comment submissions are proposed no-action dispositions, not
-resolved bugs. There is one unclear submission requiring screenshot inspection,
-one acknowledgement paired with an apparently retracted 7S report, and one
-candidate exact duplicate of a blocked-navigation report. Readability feedback
-that also praises the material remains actionable.
+resolved bugs. One unclear submission still requires private screenshot review;
+the paired 7S acknowledgement and corrected report were verified and dismissed
+on owner instruction. One candidate exact duplicate of a blocked-navigation
+report remains open. Readability feedback that also praises the material
+remains actionable.
 
 ## Delivery increments
 
@@ -80,8 +82,8 @@ open until each accepted issue has a disposition.
   signed-in display check is still required; do not rewrite completion data.
 - The two “Cannot proceed” reports were submitted on `/feedback`. Establish the
   blocked lesson and prerequisite state before attributing a cause.
-- The 4S report is followed 47 seconds later by the same reporter confirming all
-  7S are present. Verify and disposition the pair together.
+- The 4S report was followed 47 seconds later by the same reporter confirming all
+  7S are present. The pair was verified and dismissed together on 27 October.
 
 ## FB-1.1a — reliable Chapter 1 question resume
 
@@ -811,4 +813,4 @@ The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](f
 
 [FB-3.1b](fb-3.1b-question-wayfinding.md) reviews five remaining question-navigation reports against the enabled shared Chapter I assessment. Numbered jump buttons, green saved status and free Previous/Next movement already exist. The focused question heading gains a visible number and Previous/Next gain directional arrows; the requested mandatory sequence lock is declined under the pilot's self-paced rule. The reports remain open for authenticated pilot comments.
 
-[FB-0.1a](fb-0.1a-screenshot-and-seven-s-review.md) verifies the paired “4S” and “all 7S” reports against the pre-existing published bilingual Read and Slides lesson: all seven are present across two sections, so no content fix is warranted. A separate unclear Chapter I comment anchors to Next lesson, but its private screenshot cannot be viewed through the read-only database connection; it remains pending legitimate image review or a specific live report. No live feedback status or reply changed.
+[FB-0.1a](fb-0.1a-screenshot-and-seven-s-review.md) verifies the paired “4S” and “all 7S” reports against the pre-existing published bilingual Read and Slides lesson: all seven are present across two sections, so no content fix is warranted. The owner then directed closure; both are now `dismissed` with the explanation and exact receipt in the audit packet. A separate unclear Chapter I comment anchors to Next lesson, but its private screenshot cannot be viewed through the read-only database connection; it remains `new` pending legitimate image review or a specific live report. No in-app reply was sent without a signed-in author identity.
