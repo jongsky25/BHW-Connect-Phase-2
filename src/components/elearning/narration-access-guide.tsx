@@ -38,6 +38,13 @@ export function NarrationAccessGuide({lesson,position,narration,en,slides,transl
       {en?'A “sharps box” holds used needles and other sharp medical items. Its “fill line” marks how full it may safely be. An “immediate control” is a safe first step to reduce risk while the responsible staff is informed; do not handle the box contents.':'Ang “sharps box” ay lalagyan ng gamit na karayom at iba pang matutulis na gamit. Ang “fill line” ang hangganan ng pagpuno nito. Ang “agarang kontrol” ay unang ligtas na hakbang para mabawasan ang panganib habang inaabisuhan ang tamang staff; huwag hawakan ang laman ng lalagyan.'}
     </p>;
   }
+  if(!translated&&lesson.lesson_key==='safety-prepare'&&lesson.revision.content_hash==='8a11e4d0539e9db0e7c0dc7792c2974c50734eb2df100c2dac16732af0a828c2'&&position===(slides?'slide-field-preparation':'field-preparation')){
+    const read=lesson.revision.read_sections.find(s=>s.id==='field-preparation');
+    const slide=lesson.revision.slides.find(s=>s.id==='slide-field-preparation');
+    if(read?.body_fil.includes('Kumpirmahin ang ruta, reporting contact at inaasahang oras ng balik.')&&(!slides||slide?.display_fil.includes('contact at balik: kumpirmahin bago umalis')))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'Who should know the route? Before departure, tell the locally designated reporting contact your confirmed route and expected return time. This may be the supervisor if locally assigned. If you do not know the contact or a safe route, pause the affected visit and confirm both with the supervisor first.':'Kanino ipapaalam ang ruta? Bago umalis, ipaalam sa itinalagang reporting contact ang nakumpirmang ruta at inaasahang oras ng balik. Maaaring ang supervisor ito kung siya ang itinalaga sa lugar. Kung hindi alam ang contact o ligtas na ruta, ihinto muna ang apektadong pagbisita at tiyakin ang dalawa sa supervisor.'}
+    </p>;
+  }
   if(!translated&&lesson.lesson_key==='communication-clarify'&&lesson.revision.content_hash==='26c6c781e7c76dfd4a911d20eafe49ff65d4e252224f8bcbf2544373ab4eaefe'){
     const read=lesson.revision.read_sections.find(s=>s.id==='open-question');
     const slide=lesson.revision.slides.find(s=>s.id==='slide-open-question');
