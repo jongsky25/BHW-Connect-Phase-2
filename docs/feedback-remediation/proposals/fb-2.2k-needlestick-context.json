@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "proposal_id": "FB-2.2k-needlestick-context",
+  "base_release_id": "chapter1-feedback-communication-clarify-v7",
+  "base_release_sha256": "5658f71c8a502a3110f91b0080b28cdb245a55ab9e1ddc586242a4bf835c3142",
+  "proposed_release_id": "chapter1-feedback-needlestick-context-v8",
+  "phase": "pretest",
+  "slot": "T27",
+  "replaces_item_id": "591c4066-c40d-42d4-a097-e1dfacadcac9",
+  "new_item_id": "3d38f15a-5936-4b27-ae70-a54b89bea172",
+  "correct_option_id": "o1",
+  "stem": {
+    "en": "After a needlestick injury from a used needle at the health station, a BHW has no symptoms. What should the BHW do immediately?",
+    "fil": "Pagkatapos matusok ng ginamit na karayom sa health station, wala pang sintomas ang BHW. Ano ang dapat niyang gawin agad?"
+  },
+  "continuity": {
+    "existing_enrollments": "remain_on_original_release_for_both_phases",
+    "existing_drafts": "finish_pinned_form",
+    "submitted_attempts": "retain_snapshot_answers_and_scores",
+    "comparability": "unvalidated_no_automatic_cross_release_gain_comparison"
+  }
+}
