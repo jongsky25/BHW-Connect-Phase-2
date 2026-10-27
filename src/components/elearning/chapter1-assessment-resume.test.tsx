@@ -40,7 +40,7 @@ afterEach(cleanup);
 
 async function open() {
   fireEvent.click(screen.getByRole('button', { name: 'Resume pretest' }));
-  await screen.findByRole('heading', { name: 'Prompt 1' });
+  await screen.findByRole('heading', { name: '1. Prompt 1' });
 }
 
 it.each([false, true])('resumes the question selected from review with saved answers (assessor=%s)', async assessor => {
@@ -48,14 +48,14 @@ it.each([false, true])('resumes the question selected from review with saved ans
   await open();
   fireEvent.click(screen.getByRole('button', { name: 'Review all' }));
   fireEvent.click(screen.getByRole('button', { name: '12: unanswered' }));
-  await screen.findByRole('heading', { name: 'Prompt 12' });
+  await screen.findByRole('heading', { name: '12. Prompt 12' });
   expect(mock.rpc).toHaveBeenCalledWith('rpc_learner_assessment_save', expect.objectContaining({
     p_attempt_id: 'draft', p_position: 11, p_changes: [], p_expected_revision: 0,
   }));
   view.unmount();
   render(<Chapter1Assessment {...props} assessor={assessor} />);
   fireEvent.click(screen.getByRole('button', { name: 'Resume pretest' }));
-  await screen.findByRole('heading', { name: 'Prompt 12' });
+  await screen.findByRole('heading', { name: '12. Prompt 12' });
   expect(screen.getByRole('button', { name: 'Question 1, answered' })).toBeInTheDocument();
 });
 
@@ -69,7 +69,7 @@ it('stays on review if saving the selected question fails, then allows retry', a
   expect(screen.getByRole('heading', { name: 'Review before submitting' })).toBeInTheDocument();
   expect(stored.position).toBe(0);
   fireEvent.click(screen.getByRole('button', { name: '12: unanswered' }));
-  await screen.findByRole('heading', { name: 'Prompt 12' });
+  await screen.findByRole('heading', { name: '12. Prompt 12' });
 });
 
 it('reuses the position mutation receipt when the server saved but the response was lost', async () => {
@@ -92,9 +92,9 @@ it('reuses the position mutation receipt when the server saved but the response 
   });
   fireEvent.click(screen.getByRole('button', { name: 'Next' }));
   await screen.findByRole('alert');
-  expect(screen.getByRole('heading', { name: 'Prompt 1' })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: '1. Prompt 1' })).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Next' }));
-  await screen.findByRole('heading', { name: 'Prompt 2' });
+  await screen.findByRole('heading', { name: '2. Prompt 2' });
   expect(stored.revision).toBe(1);
   expect(screen.queryByRole('alert')).not.toBeInTheDocument();
 });
@@ -109,5 +109,5 @@ it('blocks competing review navigation while a position save is in flight', asyn
   expect(screen.getByRole('button', { name: '13: unanswered' })).toBeDisabled();
   expect(screen.getByRole('button', { name: 'Back to questions' })).toBeDisabled();
   finish({ data: { ...stored, position: 11, revision: 1 }, error: null });
-  await waitFor(() => expect(screen.getByRole('heading', { name: 'Prompt 12' })).toBeInTheDocument());
+  await waitFor(() => expect(screen.getByRole('heading', { name: '12. Prompt 12' })).toBeInTheDocument());
 });
