@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "release_id": "chapter1-feedback-needlestick-context-v8",
+  "authorization": "yes",
+  "authorization_context": "Owner approved the exact English and Filipino pretest T27 stems in the FB-2.2k review packet for a new assessment version serving new enrollments on 27 October 2026.",
+  "approval_type": "owner_content_and_publication",
+  "reviewer": "jongsky25",
+  "approved_date": "2026-10-27",
+  "source_commit": "903b190cfb7c04affd54279e8d6e6e8fb1f7db59",
+  "proposal_sha256": "8abfd6db765bb08669c576c67d25f1ebdbaeebf016c7c9e2a368604c67a1fce4",
+  "independent_specialist_review": "not_claimed",
+  "review_record": "docs/feedback-remediation/fb-2.2k-late-pretest-scenarios-review.md",
+  "continuity": {
+    "existing_enrollments": "remain_on_original_release_for_both_phases",
+    "existing_drafts": "finish_pinned_form",
+    "submitted_attempts": "retain_snapshot_answers_and_scores",
+    "comparability": "unvalidated_no_automatic_cross_release_gain_comparison"
+  },
+  "curriculum_pin_updates": [
+    {
+      "lesson_key": "bhw-roles-application",
+      "base_revision_id": "2897e8f8-7c63-4307-b7b3-bd01ad50fade",
+      "base_sha256": "1bbbef559c76bf08af42d25fe8e05460d3c90ec6b3be102dd8862b160ab362b4",
+      "revision_id": "7582aca1-9635-4df5-956d-8ea3d49c3425",
+      "sha256": "68c16ccf0e7790566ef551c1b5fab55597cd10cf35d3ce3323c5cfb29b34a154",
+      "release_record": "content/training/day1-basic-competencies/lesson-releases/bhw-roles-application-fb-2.2i-v2/approval-record.json"
+    },
+    {
+      "lesson_key": "safety-identify",
+      "base_revision_id": "0d3b81b9-ca07-4c79-94f6-8acc203ce911",
+      "base_sha256": "ac7ab4b403d1a7d18699b2be524b02381f018ea639ddc92a98fb9cb0fdbc408e",
+      "revision_id": "9c331609-401c-4f56-ba53-9dce6c37c96b",
+      "sha256": "f4ddc98beedc20f35572f5d6c270d32a551a63ea6d55bebb093af96ecbab8a8d",
+      "release_record": "content/training/day1-basic-competencies/lesson-releases/safety-identify-fb-2.3o-v2/approval-record.json"
+    }
+  ],
+  "scope": "New immutable pretest T27 stem in English and Filipino for new enrollments; same options, key, rationales and posttest. The two already-approved live lesson revisions replace stale curriculum pins; the other 40 pins, checkpoints, legacy bank and history are unchanged."
+}
