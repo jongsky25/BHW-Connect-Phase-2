@@ -57,7 +57,19 @@ export function NarrationAccessGuide({lesson,position,narration,en,slides,transl
       en:'“Fields” here means the spaces for information on a form, not outdoor areas.',
       fil:'Dito, ang “fields” ay mga puwang na lalagyan ng impormasyon sa form, hindi lugar na pupuntahan.',
     },
-  }[lesson.lesson_key as 'bhw-barangay-partners'|'bhw-legal-role'|'bhw-records'];
+    'bhs-resources':{
+      hash:'50d1cc9c7ca02df872f15e50a6cb90a14dd0307b0a7fde3f08d88a96edcabf31',
+      read:'section-5',slide:'slide-section-5',term:'rekurso',
+      en:'“Resources” here means the electricity, water and supplies available at the BHS. Check what the service needs and the local rules before suggesting a reduction.',
+      fil:'Ang “rekurso” dito ay mga magagamit sa BHS, gaya ng kuryente, tubig at suplay. Alamin muna ang kailangan ng serbisyo at ang lokal na tuntunin bago magmungkahi ng pagbabawas.',
+    },
+    'bhs-support-environment':{
+      hash:'9c3ff8755423c094af0bd5514c41b8ba685940e2597e5e91561568b9a48bd92a',
+      read:'facility-roles',slide:'slide-facility-roles',term:'nagtatatag',
+      en:'“Establish” here means arrange a lactation station that meets the requirements. The institution is responsible; the BHW checks the suitable space and trained contact with the midwife or supervisor.',
+      fil:'Ang “nagtatatag” dito ay paglalaan at paghahanda ng lactation station ayon sa mga tuntunin. Institusyon ang may pananagutan; itatanong ng BHW sa midwife o supervisor ang angkop na lugar at sinanay na contact.',
+    },
+  }[lesson.lesson_key as 'bhw-barangay-partners'|'bhw-legal-role'|'bhw-records'|'bhs-resources'|'bhs-support-environment'];
   if(!translated&&termHelp&&lesson.revision.content_hash===termHelp.hash&&position===(slides?termHelp.slide:termHelp.read)){
     const section=lesson.revision.read_sections.find(s=>s.id===termHelp.read);
     const slide=lesson.revision.slides.find(s=>s.id===termHelp.slide);

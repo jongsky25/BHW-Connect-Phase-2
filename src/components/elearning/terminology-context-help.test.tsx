@@ -9,6 +9,8 @@ const cases=[
   {module:'05-bhw-at-barangay',key:'bhw-barangay-partners',read:'section-5',slide:'slide-section-5',fil:'gampanin o tungkulin',en:'partner’s role'},
   {module:'04-ra7883',key:'bhw-legal-role',read:'status-and-other-processes',slide:'slide-status-and-other-processes',fil:'propesyonal na lisensiya',en:'professional licence'},
   {module:'01-tungkulin-ng-bhw',key:'bhw-records',read:'household-profile',slide:'household-profile-slide',fil:'mga puwang',en:'spaces for information'},
+  {module:'03-polisiya-bhs',key:'bhs-resources',read:'section-5',slide:'slide-section-5',fil:'kuryente, tubig at suplay',en:'electricity, water and supplies'},
+  {module:'03-polisiya-bhs',key:'bhs-support-environment',read:'facility-roles',slide:'slide-facility-roles',fil:'paglalaan at paghahanda',en:'arrange a lactation station'},
 ] as const;
 for(const item of cases){
   const source=loadReferenceModule(`content/training/day1-basic-competencies/modules/${item.module}`,'public').lessons.find(l=>l.manifest.lesson_key===item.key)!;

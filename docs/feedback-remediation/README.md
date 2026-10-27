@@ -768,3 +768,5 @@ The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](f
 [FB-2.3g](fb-2.3g-midwife-pretest-grammar-review.md) compares the “i-review kasama nang midwife” grammar report with its captured legacy option and the active Chapter I v7 pretest. The captured option already uses “kasama ang midwife,” and v7 does not serve it. No current correction is warranted; the report stays open for a specific live sentence.
 
 [FB-2.3h](fb-2.3h-home-assessment-label-review.md) checks the requested Home rename from “Mga Pagtatasa” to “Mga Pagsusulit.” The link opens the assessor's request and decision queue, so “Pagsusulit” would misdescribe it. No UI change is warranted; the report remains open for a specific current screen.
+
+[FB-2.3i](fb-2.3i-bhs-terms-review.md) checks “rekurso” and “nagtatatag” against the current BHS resources and lactation-station lessons. Short bilingual notes explain both terms beside their Read sections and Slides narration without changing approved revisions or historical records. The private screenshot files could not be viewed through the read-only connection; both reports remain open for pilot comments.
