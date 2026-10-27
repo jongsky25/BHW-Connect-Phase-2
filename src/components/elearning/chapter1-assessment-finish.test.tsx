@@ -46,7 +46,7 @@ it.each(["en", "fil"])("explains the finish steps and hands the last question to
   render(<Chapter1Assessment {...props} locale={locale} />);
   expect(screen.getByRole("complementary", { name: locale === "en" ? "How to finish" : "Paano tapusin" })).toBeInTheDocument();
   fireEvent.click(screen.getByRole("button", { name: locale === "en" ? "Resume pretest" : "Ipagpatuloy ang pretest" }));
-  await screen.findByRole("heading", { name: locale === "en" ? "Prompt 30" : "Tanong 30" });
+  await screen.findByRole("heading", { name: locale === "en" ? "30. Prompt 30" : "30. Tanong 30" });
   expect(screen.queryByRole("button", { name: locale === "en" ? "Next" : "Susunod" })).toBeNull();
   expect(screen.getByRole("progressbar")).toHaveAttribute("value", "30");
   const review = screen.getByRole("button", { name: locale === "en" ? "Review all" : "Balikan ang lahat" });
@@ -65,12 +65,12 @@ it("separates choice/unknown/blank/marked counts and returns to the first missin
   stored.responses = stored.responses.filter(r => r.item_id !== "q5");
   render(<Chapter1Assessment {...props} assessor />);
   fireEvent.click(screen.getByRole("button", { name: "Resume pretest" }));
-  await screen.findByRole("heading", { name: "Prompt 30" });
+  await screen.findByRole("heading", { name: "30. Prompt 30" });
   expect(screen.getByText("28 answered · 1 don't know yet · 1 unanswered · 1 marked for review")).toBeInTheDocument();
   fireEvent.click(screen.getByRole("button", { name: "Review all" }));
   expect(screen.getByRole("button", { name: "Submit assessment" })).toBeDisabled();
   fireEvent.click(screen.getByRole("button", { name: "Go to first unanswered" }));
-  await screen.findByRole("heading", { name: "Prompt 5" });
+  await screen.findByRole("heading", { name: "5. Prompt 5" });
   expect(stored.position).toBe(4);
   expect(mock.rpc).toHaveBeenCalledWith("rpc_learner_assessment_save", expect.objectContaining({ p_changes: [], p_position: 4 }));
   expect(stored.responses).toHaveLength(29);
@@ -79,7 +79,7 @@ it("separates choice/unknown/blank/marked counts and returns to the first missin
 it("keeps review open after a failed marked-question jump, then retries without changing answers", async () => {
   render(<Chapter1Assessment {...props} />);
   fireEvent.click(screen.getByRole("button", { name: "Resume pretest" }));
-  await screen.findByRole("heading", { name: "Prompt 30" });
+  await screen.findByRole("heading", { name: "30. Prompt 30" });
   fireEvent.click(screen.getByRole("button", { name: "Review all" }));
   const before = structuredClone(stored.responses);
   mock.rpc.mockResolvedValueOnce({ data: null, error: new Error("offline") });
@@ -88,7 +88,7 @@ it("keeps review open after a failed marked-question jump, then retries without 
   expect(screen.getByRole("heading", { name: "Review before submitting" })).toBeInTheDocument();
   expect(stored.position).toBe(29);
   fireEvent.click(screen.getByRole("button", { name: "Go to first review mark" }));
-  await screen.findByRole("heading", { name: "Prompt 8" });
+  await screen.findByRole("heading", { name: "8. Prompt 8" });
   expect(stored.responses).toEqual(before);
 });
 
@@ -97,7 +97,7 @@ it.each([false, true])("does not claim completion while a last-question change i
   else stored.responses = stored.responses.map(r => r.item_id === "q30" ? { ...r, kind: "unknown", option_id: null } : r);
   render(<Chapter1Assessment {...props} />);
   fireEvent.click(screen.getByRole("button", { name: "Resume pretest" }));
-  await screen.findByRole("heading", { name: "Prompt 30" });
+  await screen.findByRole("heading", { name: "30. Prompt 30" });
   mock.rpc.mockResolvedValueOnce({ data: null, error: new Error("offline") });
   fireEvent.click(screen.getByRole("radio", { name: "Answer" }));
   await screen.findByRole("alert");

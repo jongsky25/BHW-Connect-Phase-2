@@ -38,7 +38,7 @@ beforeEach(() => {
 afterEach(cleanup);
 async function open(locale = 'en') {
   fireEvent.click(screen.getByRole('button', {name: locale === 'en' ? 'Resume pretest' : 'Ipagpatuloy ang pretest'}));
-  await screen.findByRole('heading', {name: locale === 'en' ? `Prompt ${stored.position + 1}` : `Tanong ${stored.position + 1}`});
+  await screen.findByRole('heading', {name: locale === 'en' ? `${stored.position + 1}. Prompt ${stored.position + 1}` : `${stored.position + 1}. Tanong ${stored.position + 1}`});
 }
 
 it.each(['en', 'fil'])('shows length and optional saved-draft breaks before starting in %s', locale => {
@@ -62,7 +62,7 @@ it.each([{locale: 'en', position: 9}, {locale: 'en', position: 19}, {locale: 'fi
     view.unmount(); render(<Chapter1Assessment {...props} locale={locale}/>); await open(locale);
     expect(screen.getByRole('radio', {name: locale === 'en' ? "I don't know yet" : 'Hindi ko pa alam'})).toBeChecked();
     fireEvent.click(screen.getByRole('button', {name: locale === 'en' ? 'Next' : 'Susunod'}));
-    await screen.findByRole('heading', {name: locale === 'en' ? `Prompt ${position + 2}` : `Tanong ${position + 2}`});
+    await screen.findByRole('heading', {name: locale === 'en' ? `${position + 2}. Prompt ${position + 2}` : `${position + 2}. Tanong ${position + 2}`});
     expect(stored.responses).toEqual(before.responses);
     expect(mock.rpc).toHaveBeenLastCalledWith('rpc_learner_assessment_save', expect.objectContaining({p_position: position + 1, p_changes: []}));
   });

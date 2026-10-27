@@ -235,7 +235,7 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
       <p className="text-sm">{copy("Answer questions → Review all → Submit and confirm. You can change saved answers before submitting.", "Sagutan ang mga tanong → Balikan ang lahat → Isumite at kumpirmahin. Maaari pang baguhin ang naka-save na sagot bago isumite.")}</p>
       <progress aria-label={copy("Saved responses", "Mga naka-save na sagot")} className="h-3 w-full accent-primary" max={total} value={responsesSaved} />
       {responseSummary}
-      <h1 ref={questionHeading} tabIndex={-1} className="text-xl font-semibold">{current.stem[lang]}</h1>
+      <h1 ref={questionHeading} tabIndex={-1} aria-label={`${position + 1}. ${current.stem[lang]}`} className="text-xl font-semibold"><span className="mr-2 text-primary">{position + 1}.</span> {current.stem[lang]}</h1>
       <fieldset disabled={busy} className="space-y-3">
         <legend className="sr-only">{copy("Choose one answer", "Pumili ng isang sagot")}</legend>
         {current.options.map(option => <label key={option.id} className="flex min-h-11 items-center gap-3 rounded-md border border-ink/15 p-3">
@@ -268,8 +268,8 @@ export function Chapter1Assessment({ courseId, chapterHref, locale, sessionId, c
         </Link>
       </aside>}
       <nav className="flex flex-wrap gap-2" aria-label={copy("Question navigation", "Paglipat sa mga tanong")}>
-        <button className={button} disabled={busy || position === 0} onClick={() => void move(position - 1)}>{copy("Previous", "Nakaraan")}</button>
-        {!atLastQuestion && <button className={button} disabled={busy} onClick={() => void move(position + 1)}>{copy("Next", "Susunod")}</button>}
+        <button className={button} disabled={busy || position === 0} onClick={() => void move(position - 1)}><span aria-hidden="true">← </span>{copy("Previous", "Nakaraan")}</button>
+        {!atLastQuestion && <button className={button} disabled={busy} onClick={() => void move(position + 1)}>{copy("Next", "Susunod")}<span aria-hidden="true"> →</span></button>}
         <button className={`${button} ${atLastQuestion || allResponsesSaved ? "border-primary bg-primary text-on-primary" : ""}`} disabled={busy || Boolean(pending)} onClick={() => setStage("review")}>{copy("Review all", "Balikan ang lahat")}</button>
       </nav>
       {questionLegend}
