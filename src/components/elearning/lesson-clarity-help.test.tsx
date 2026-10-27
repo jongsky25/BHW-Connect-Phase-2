@@ -17,6 +17,7 @@ const coverage=lesson('02-uhc-act','uhc-coverage');
 const safety=lesson('08-osh','safety-identify');
 const safetyPrepare=lesson('08-osh','safety-prepare');
 const safeChange=lesson('09-sustainable-practices','resources-safe-change');
+const resourcesMonitor=lesson('09-sustainable-practices','resources-monitor');
 const firstAidKit=chapter2Lesson('04-first-aid','first-aid-kit');
 const hazards=chapter2Lesson('07-disaster-preparedness','hazards-capacities');
 const show=(item:PublishedLesson,position:string,en:boolean,slides:boolean,translated=false)=>render(
@@ -52,6 +53,16 @@ for(const en of [true,false]){
     cleanup();show(safeChange,'slide-utilities',en,true);
     expect(screen.getByRole('note')).toHaveTextContent(en?'sample records and choices':'sample na tala at pagpipilian');
     cleanup();show(safeChange,'slide-worked-example',en,true);
+    expect(screen.queryByRole('note')).not.toBeInTheDocument();
+  });
+  it(`explains each print run in ${en?'English':'Filipino'} Read and Slides`,()=>{
+    for(const [position,slides] of [['trial',false],['slide-trial',true]] as const){
+      show(resourcesMonitor,position,en,slides);
+      expect(screen.getByRole('note')).toHaveTextContent(en?'before printing a batch':'bago ang bawat batch ng pag-print');
+      expect(screen.getByRole('note')).toHaveTextContent(en?'still needs approval':'kailangan pa rin ng pahintulot');
+      cleanup();
+    }
+    show({...resourcesMonitor,revision:{...resourcesMonitor.revision,content_hash:'future'}},'trial',en,false);
     expect(screen.queryByRole('note')).not.toBeInTheDocument();
   });
   it(`explains the recurring Monday step in two Chapter II lessons (${en?'English':'Filipino'})`,()=>{
