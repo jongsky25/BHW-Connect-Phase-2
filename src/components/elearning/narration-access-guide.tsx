@@ -45,6 +45,13 @@ export function NarrationAccessGuide({lesson,position,narration,en,slides,transl
       {en?'Who should know the route? Before departure, tell the locally designated reporting contact your confirmed route and expected return time. This may be the supervisor if locally assigned. If you do not know the contact or a safe route, pause the affected visit and confirm both with the supervisor first.':'Kanino ipapaalam ang ruta? Bago umalis, ipaalam sa itinalagang reporting contact ang nakumpirmang ruta at inaasahang oras ng balik. Maaaring ang supervisor ito kung siya ang itinalaga sa lugar. Kung hindi alam ang contact o ligtas na ruta, ihinto muna ang apektadong pagbisita at tiyakin ang dalawa sa supervisor.'}
     </p>;
   }
+  if(!translated&&lesson.lesson_key==='resources-monitor'&&lesson.revision.content_hash==='f7fdbf134d5ee125d9648fd58557a5a512cb9fbfeea985c79736fd7287857ff6'&&position===(slides?'slide-trial':'trial')){
+    const read=lesson.revision.read_sections.find(s=>s.id==='trial');
+    const slide=lesson.revision.slides.find(s=>s.id==='slide-trial');
+    if(read?.body_fil.includes('bago bawat print run')&&(!slides||slide?.narration_fil?.includes('bago bawat print run')))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'“Before each print run” means check the approved handout and version before printing a batch; it does not mean that phrase refers to every physical page. If another handout or version is printed, check that one too. Follow the local document-control procedure; this proposed routine still needs approval.':'Ang “bago bawat print run” ay bago ang bawat batch ng pag-print: tiyakin muna ang aprubadong handout at bersyon. Hindi bawat pahina ng iisang batch ang tinutukoy ng parirala. Kung ibang handout o bersyon ang ipi-print, tiyakin din iyon. Sundin ang lokal na document-control procedure; kailangan pa rin ng pahintulot para sa mungkahing routine na ito.'}
+    </p>;
+  }
   if(!translated&&lesson.lesson_key==='communication-clarify'&&lesson.revision.content_hash==='26c6c781e7c76dfd4a911d20eafe49ff65d4e252224f8bcbf2544373ab4eaefe'){
     const read=lesson.revision.read_sections.find(s=>s.id==='open-question');
     const slide=lesson.revision.slides.find(s=>s.id==='slide-open-question');
