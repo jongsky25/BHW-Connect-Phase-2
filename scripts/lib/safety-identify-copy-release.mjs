@@ -1,6 +1,7 @@
 import {readFileSync} from 'node:fs';
 import {contentHash,validateReferenceLesson} from './reference-content.mjs';
 import {applyBhwRolesTransferRelease} from './bhw-roles-transfer-release.mjs';
+import {applyBhwAccreditationCheckRelease} from './bhw-accreditation-check-release.mjs';
 
 const approval=JSON.parse(readFileSync('content/training/day1-basic-competencies/lesson-releases/safety-identify-fb-2.3o-v2/approval-record.json'));
 
@@ -24,5 +25,6 @@ export function applySafetyIdentifyCopyRelease(lesson){
 export function applyApprovedReferenceReleases(module){
   if(module.module_key==='08-osh')return {...module,lessons:module.lessons.map(applySafetyIdentifyCopyRelease)};
   if(module.module_key==='01-tungkulin-ng-bhw')return {...module,lessons:module.lessons.map(applyBhwRolesTransferRelease)};
+  if(module.module_key==='04-ra7883')return {...module,lessons:module.lessons.map(applyBhwAccreditationCheckRelease)};
   return module;
 }
