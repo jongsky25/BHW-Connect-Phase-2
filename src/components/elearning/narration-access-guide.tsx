@@ -31,7 +31,7 @@ export function NarrationAccessGuide({lesson,position,narration,en,slides,transl
       {en?'Automatic inclusion says who belongs to PhilHealth. It does not confirm that this consultation is free at the chosen facility; check the specific benefit first.':'Ang awtomatikong pagsama ay nagsasabi kung sino ang kasama sa PhilHealth. Hindi pa nito tiyak kung libre ang konsultang ito sa napiling pasilidad; alamin muna ang sakop na benepisyo.'}
     </p>;
   }
-  if(!translated&&lesson.lesson_key==='safety-identify'&&lesson.revision.content_hash==='ac7ab4b403d1a7d18699b2be524b02381f018ea639ddc92a98fb9cb0fdbc408e'&&position===(slides?'slide-ana':'ana')){
+  if(!translated&&lesson.lesson_key==='safety-identify'&&['ac7ab4b403d1a7d18699b2be524b02381f018ea639ddc92a98fb9cb0fdbc408e','f4ddc98beedc20f35572f5d6c270d32a551a63ea6d55bebb093af96ecbab8a8d'].includes(lesson.revision.content_hash)&&position===(slides?'slide-ana':'ana')){
     const read=lesson.revision.read_sections.find(s=>s.id==='ana');
     const slide=lesson.revision.slides.find(s=>s.id==='slide-ana');
     if(read?.body_fil.includes('fill line')&&read.body_fil.includes('agarang kontrol')&&(!slides||slide?.display_fil.includes('fill line')))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">

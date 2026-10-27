@@ -32,6 +32,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, renameSync } from "
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadReferenceModule } from "./lib/reference-content.mjs";
+import { applyApprovedReferenceReleases } from "./lib/safety-identify-copy-release.mjs";
 import { planReferenceLoad, applyReferenceLoad, referenceReport, stageReferenceHierarchy } from "./lib/reference-load.mjs";
 import { renderAnswer, reviewDueOn } from "./lib/kb-content.mjs";
 import { DEFAULT_COURSE, loadTrainingCourse } from "./lib/training-content.mjs";
@@ -357,7 +358,7 @@ async function syncQaEntries(client, content, categoryIds, ctx, plan) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const referenceModules = args.mode === 'lessons' ? args.modules.map(id =>
-    loadReferenceModule(path.join(contentDir(args.course),'modules',id),path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../public'))) : null;
+    applyApprovedReferenceReleases(loadReferenceModule(path.join(contentDir(args.course),'modules',id),path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../public')))) : null;
   const content = referenceModules || args.mode === 'hierarchy' ? {reviewFlags:[]} : loadTrainingCourse(args.course);
   const hierarchy = args.mode === 'hierarchy' ? JSON.parse(readFileSync(path.join(contentDir(args.course),'program.json'),'utf8')) : null;
   if (!referenceModules && !hierarchy && args.modules?.some(id => !content.modules.some(m => m.id === id))) throw new Error('unknown selected module');

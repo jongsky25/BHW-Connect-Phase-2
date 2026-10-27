@@ -1,6 +1,7 @@
 import {cleanup,render,screen} from '@testing-library/react';
 import {afterEach,expect,it} from 'vitest';
 import {loadReferenceModule,contentHash} from '../../../scripts/lib/reference-content.mjs';
+import {applySafetyIdentifyCopyRelease} from '../../../scripts/lib/safety-identify-copy-release.mjs';
 import type {PublishedLesson} from '@/lib/elearning/reference-navigation';
 import {NarrationAccessGuide} from './narration-access-guide';
 
@@ -15,6 +16,9 @@ function chapter2Lesson(module:string,key:string){
 }
 const coverage=lesson('02-uhc-act','uhc-coverage');
 const safety=lesson('08-osh','safety-identify');
+const safetySource=loadReferenceModule('content/training/day1-basic-competencies/modules/08-osh','public').lessons.find(l=>l.manifest.lesson_key==='safety-identify')!;
+const releasedSafety=applySafetyIdentifyCopyRelease(safetySource);
+const safetyV2={...releasedSafety.manifest,id:'lesson',revision:{...releasedSafety.revision,id:'revision',content_hash:contentHash(releasedSafety)}} as PublishedLesson;
 const safetyPrepare=lesson('08-osh','safety-prepare');
 const safeChange=lesson('09-sustainable-practices','resources-safe-change');
 const resourcesMonitor=lesson('09-sustainable-practices','resources-monitor');
@@ -31,11 +35,14 @@ for(const en of [true,false]){
     expect(screen.queryByRole('note')).not.toBeInTheDocument();
   });
   it(`defines the safety terms in ${en?'English':'Filipino'} Read and Slides`,()=>{
-    show(safety,'ana',en,false);
-    expect(screen.getByRole('note')).toHaveTextContent(en?'sharps box':'lalagyan ng gamit na karayom');
-    expect(screen.getByRole('note')).toHaveTextContent(en?'do not handle the box contents':'huwag hawakan ang laman');
-    cleanup();show(safety,'slide-ana',en,true);
-    expect(screen.getByRole('note')).toHaveTextContent('fill line');
+    for(const version of [safety,safetyV2]){
+      show(version,'ana',en,false);
+      expect(screen.getByRole('note')).toHaveTextContent(en?'sharps box':'lalagyan ng gamit na karayom');
+      expect(screen.getByRole('note')).toHaveTextContent(en?'do not handle the box contents':'huwag hawakan ang laman');
+      cleanup();show(version,'slide-ana',en,true);
+      expect(screen.getByRole('note')).toHaveTextContent('fill line');
+      cleanup();
+    }
   });
   it(`names the route reporting contact in ${en?'English':'Filipino'} Read and Slides`,()=>{
     for(const [position,slides] of [['field-preparation',false],['slide-field-preparation',true]] as const){
