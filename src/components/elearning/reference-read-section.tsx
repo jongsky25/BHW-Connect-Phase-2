@@ -16,6 +16,17 @@ import {
   armNarrationContinuation, pauseNarrationContinuation, shouldContinueNarration,
 } from "@/lib/elearning/narration-preferences";
 
+// This approved records paragraph ends with a training-data disclaimer. Keep
+// its exact text and narration, but set the final sentence apart visually.
+const recordsFictionBody = {
+  en: "After speaking with Aling Nena, BHW Riza returns to the health station. She has a fictional note about the conversation, but she will not put it into just any list. She asks the midwife, “What information is needed, and what will it be used for?” Accurate records help the health team understand community needs and plan programs. Every example in this lesson is fictional; it contains no real personal data or official form.",
+  fil: "Pagkatapos kausapin si Aling Nena, bumalik si BHW Riza sa health station. May kathang-isip siyang tala ng napag-usapan, ngunit hindi niya ito basta ilalagay sa kahit aling listahan. Tinanong niya ang midwife: “Anong impormasyon ang kailangan, at para saan ito gagamitin?” Mahalaga ang wastong tala sa pag-unawa sa pangangailangan ng komunidad at sa pagpaplano ng programa. Ang lahat ng halimbawa sa araling ito ay kathang-isip; wala itong tunay na personal na datos o opisyal na form.",
+};
+const recordsFictionSentence = {
+  en: "Every example in this lesson is fictional; it contains no real personal data or official form.",
+  fil: "Ang lahat ng halimbawa sa araling ito ay kathang-isip; wala itong tunay na personal na datos o opisyal na form.",
+};
+
 // Authors mark emphasis with **bold** in Read bodies; show it as bold rather
 // than literal asterisks. The narration loader strips the markers from speech.
 function Emphasis({ text }: { text: string }) {
@@ -72,12 +83,16 @@ type Props = {
   continuationScope?: string;
   text?: (fil: string, en: string) => string;
   headingRef?: Ref<HTMLHeadingElement>;
+  // Present an existing final sentence as a note without changing narrated text.
+  noteSentence?: string;
   // Rendered between the body and the takeaway (the section's figures).
   children?: ReactNode;
 };
 
-export function ReferenceReadSection({ heading, body, takeaway, narration, en, text, headingRef, children, continuationScope }: Props) {
+export function ReferenceReadSection({ heading, body, takeaway, narration, en, text, headingRef, children, continuationScope, noteSentence }: Props) {
   const ui = text ?? ((fil: string, eng: string) => (en ? eng : fil));
+  const displayedNote = noteSentence ?? (body === recordsFictionBody[en ? "en" : "fil"] &&
+    heading === (en ? "After the visit" : "Pagkatapos ng pagbisita") ? recordsFictionSentence[en ? "en" : "fil"] : undefined);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const frame = useRef<number | null>(null);
   const [playing, setPlaying] = useState(false);
@@ -162,7 +177,12 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
     const paragraphs = body.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
     bodyNode = paragraphs.map((p, i) => (
       <p key={i} className="whitespace-pre-wrap">
-        <Emphasis text={p} />
+        {displayedNote && p.endsWith(displayedNote) ? <>
+          <Emphasis text={p.slice(0, -displayedNote.length).trimEnd()} />
+          <span role="note" className="mt-3 block rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+            <span aria-hidden="true">ⓘ </span><Emphasis text={displayedNote} />
+          </span>
+        </> : <Emphasis text={p} />}
       </p>
     ));
   } else {
@@ -173,8 +193,10 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
         {sentences.map((sentence, s) => {
           const index = cursor++;
           return (
-            <span key={s}>
-              {s ? " " : ""}
+            <span key={s} role={sentence === displayedNote ? "note" : undefined}
+              className={sentence === displayedNote ? "mt-3 block rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm" : undefined}>
+              {s && sentence !== displayedNote ? " " : ""}
+              {sentence === displayedNote && <span aria-hidden="true">ⓘ </span>}
               <Spoken text={sentence} active={active === index} playing={playing} />
             </span>
           );

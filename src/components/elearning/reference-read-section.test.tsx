@@ -22,6 +22,13 @@ const narration: ReferenceNarrationEntry = {
 };
 
 describe("ReferenceReadSection", () => {
+  it("sets an existing final sentence apart while keeping synchronized narration", () => {
+    render(<ReferenceReadSection heading={heading} body={body} takeaway={takeaway} narration={narration} en={false} noteSentence="Ikalawang talata." />);
+    expect(screen.getByRole("note")).toHaveTextContent("Ikalawang talata.");
+    expect(screen.getByRole("group", { name: "Pakinggan ang bahaging ito" })).toBeInTheDocument();
+    expect(screen.getAllByText("Ikalawang talata.")).toHaveLength(1);
+  });
+
   it("offers narration when the recorded text matches, keeping paragraphs and emphasis", () => {
     const { container } = render(
       <ReferenceReadSection heading={heading} body={body} takeaway={takeaway} narration={narration} en={false} />,
