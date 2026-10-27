@@ -1,6 +1,8 @@
 import {cleanup,render,screen} from '@testing-library/react';
 import {afterEach,expect,it,vi} from 'vitest';
 import {loadReferenceModule,contentHash} from '../../../scripts/lib/reference-content.mjs';
+import manifest from '../../../content/training/day1-basic-competencies/narration.json';
+import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearning/reference-narration';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
 
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
@@ -11,10 +13,12 @@ const base={title_en:'Manual',title_fil:'Manual',chapters:[],modules:[],complete
 
 for(const locale of ['en','fil'] as const){
   it(`sets the fictional-record disclaimer apart in ${locale} Read`,()=>{
-    render(<ReferenceLessons {...base} lessons={[lesson]} locale={locale} initialLessonId="lesson" initialMode="read"/>);
+    const narration=narrationForLesson(manifest as ReferenceNarrationManifest,lesson.lesson_key,locale,lesson.revision.read_sections);
+    render(<ReferenceLessons {...base} lessons={[lesson]} narration={{lesson:narration}} locale={locale} initialLessonId="lesson" initialMode="read"/>);
     const sentence=locale==='en'?'Every example in this lesson is fictional; it contains no real personal data or official form.':'Ang lahat ng halimbawa sa araling ito ay kathang-isip; wala itong tunay na personal na datos o opisyal na form.';
     expect(screen.getByRole('note')).toHaveTextContent(sentence);
     expect(screen.getAllByText(sentence)).toHaveLength(1);
+    expect(screen.getByRole('group',{name:locale==='en'?'Listen to this section':'Pakinggan ang bahaging ito'})).toBeInTheDocument();
   });
   it(`leaves a changed ${locale} paragraph intact`,()=>{
     const future={...lesson,revision:{...lesson.revision,content_hash:'future',read_sections:lesson.revision.read_sections.map(section=>section.id==='record-purpose'?{
