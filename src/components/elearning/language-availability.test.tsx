@@ -62,7 +62,7 @@ it.each(['en','fil'])('shows assessment coverage at shared entry, without alteri
  const{container}=render(<Chapter1Assessment courseId="course" chapterHref="/chapter" locale={locale} sessionId={null} completed={false} contentApproved initialState={{attempts:[{attempt_id:'draft',phase:'pretest',state:'draft',score_percent:null,legacy_attempt_id:null}],final_attempts:[]}} orientation={{expectations:{en:'',fil:''},overview:{en:'',fil:''},recap:{en:'',fil:''}}}/>);
  expect(container.querySelector('[data-assessment-language-notice]')).not.toBeNull();expect(mock.rpc).not.toHaveBeenCalled();
  fireEvent.click(screen.getByRole('button',{name:locale==='en'?'Resume pretest':'Ipagpatuloy ang pretest'}));
- await screen.findByRole('heading',{name:locale==='en'?'Original question':'Orihinal na tanong'});
+ await screen.findByRole('heading',{name:locale==='en'?'1. Original question':'1. Orihinal na tanong'});
  expect(container.querySelector('[data-assessment-language-notice]')).toBeNull();
  expect(mock.rpc).toHaveBeenCalledWith('rpc_learner_assessment_get',{p_attempt_id:'draft'});
 });
