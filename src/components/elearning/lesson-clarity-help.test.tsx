@@ -15,6 +15,7 @@ function chapter2Lesson(module:string,key:string){
 }
 const coverage=lesson('02-uhc-act','uhc-coverage');
 const safety=lesson('08-osh','safety-identify');
+const safetyPrepare=lesson('08-osh','safety-prepare');
 const safeChange=lesson('09-sustainable-practices','resources-safe-change');
 const firstAidKit=chapter2Lesson('04-first-aid','first-aid-kit');
 const hazards=chapter2Lesson('07-disaster-preparedness','hazards-capacities');
@@ -34,6 +35,16 @@ for(const en of [true,false]){
     expect(screen.getByRole('note')).toHaveTextContent(en?'do not handle the box contents':'huwag hawakan ang laman');
     cleanup();show(safety,'slide-ana',en,true);
     expect(screen.getByRole('note')).toHaveTextContent('fill line');
+  });
+  it(`names the route reporting contact in ${en?'English':'Filipino'} Read and Slides`,()=>{
+    for(const [position,slides] of [['field-preparation',false],['slide-field-preparation',true]] as const){
+      show(safetyPrepare,position,en,slides);
+      expect(screen.getByRole('note')).toHaveTextContent(en?'locally designated reporting contact':'itinalagang reporting contact');
+      expect(screen.getByRole('note')).toHaveTextContent(en?'confirm both with the supervisor':'tiyakin ang dalawa sa supervisor');
+      cleanup();
+    }
+    show({...safetyPrepare,revision:{...safetyPrepare.revision,content_hash:'future'}},'field-preparation',en,false);
+    expect(screen.queryByRole('note')).not.toBeInTheDocument();
   });
   it(`identifies the practice case once at the opening of ${en?'English':'Filipino'} Read and Slides`,()=>{
     show(safeChange,'utilities',en,false);
