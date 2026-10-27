@@ -9,6 +9,13 @@ const reviewed={
 export function NarrationAccessGuide({lesson,position,narration,en,slides,translated,illustrated}:{
   lesson:PublishedLesson;position:string;narration?:LessonNarration;en:boolean;slides:boolean;translated:boolean;illustrated:boolean;
 }){
+  if(!translated&&lesson.lesson_key==='bhs-decline'&&lesson.revision.content_hash==='7cb6adc492551052091fa523d59249c9350cf64a4cf32307d8cbc4229a3898b3'&&position===(slides?'slide-section-4':'section-4')){
+    const read=lesson.revision.read_sections.find(s=>s.id==='section-4');
+    const slide=lesson.revision.slides.find(s=>s.id==='slide-section-4');
+    if(read?.body_en.includes('The company representative returns to the BHS')&&(!slides||slide?.narration_en?.includes('The company representative returns to the BHS')))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'In this example, a visitor offers infant-formula samples, a product poster and a gift in return for promotion. Their job title gives no special permission at the BHS. Assess the offer under the Milk Code.':'Sa halimbawang ito, may bisitang nag-aalok ng infant-formula samples, product poster at regalo kapalit ng promosyon. Hindi nagbibigay ng espesyal na pahintulot sa BHS ang kaniyang titulo. Suriin ang alok ayon sa Milk Code.'}
+    </p>;
+  }
   const finalRead=lesson.revision.read_sections.at(-1);
   const finalSlide=lesson.revision.slides.at(-1);
   if(!translated&&lesson.revision.read_sections.length===7&&lesson.revision.slides.length===7&&

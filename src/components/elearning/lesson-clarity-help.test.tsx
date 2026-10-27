@@ -22,12 +22,25 @@ const safetyV2={...releasedSafety.manifest,id:'lesson',revision:{...releasedSafe
 const safetyPrepare=lesson('08-osh','safety-prepare');
 const safeChange=lesson('09-sustainable-practices','resources-safe-change');
 const resourcesMonitor=lesson('09-sustainable-practices','resources-monitor');
+const bhsDecline=lesson('03-polisiya-bhs','bhs-decline');
 const firstAidKit=chapter2Lesson('04-first-aid','first-aid-kit');
 const hazards=chapter2Lesson('07-disaster-preparedness','hazards-capacities');
 const show=(item:PublishedLesson,position:string,en:boolean,slides:boolean,translated=false)=>render(
   <NarrationAccessGuide lesson={item} position={position} en={en} slides={slides} translated={translated} illustrated={false}/>);
 
 for(const en of [true,false]){
+  it(`explains the BHS visitor's role in ${en?'English':'Filipino'} Read and Slides`,()=>{
+    for(const [position,slides] of [['section-4',false],['slide-section-4',true]] as const){
+      show(bhsDecline,position,en,slides);
+      expect(screen.getByRole('note')).toHaveTextContent(en?'a visitor offers infant-formula samples':'may bisitang nag-aalok ng infant-formula samples');
+      expect(screen.getByRole('note')).toHaveTextContent(en?'job title gives no special permission':'titulo');
+      cleanup();
+    }
+    show({...bhsDecline,revision:{...bhsDecline.revision,content_hash:'future'}},'section-4',en,false);
+    expect(screen.queryByRole('note')).not.toBeInTheDocument();
+    cleanup();show(bhsDecline,'slide-section-4',en,true,true);
+    expect(screen.queryByRole('note')).not.toBeInTheDocument();
+  });
   it(`completes the UHC slide's meaning in ${en?'English':'Filipino'} without changing Read`,()=>{
     show(coverage,'slide-included',en,true);
     expect(screen.getByRole('note')).toHaveTextContent(en?'does not confirm that this consultation is free':'Hindi pa nito tiyak kung libre ang konsultang ito');
