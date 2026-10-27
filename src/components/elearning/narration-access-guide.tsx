@@ -9,6 +9,13 @@ const reviewed={
 export function NarrationAccessGuide({lesson,position,narration,en,slides,translated,illustrated}:{
   lesson:PublishedLesson;position:string;narration?:LessonNarration;en:boolean;slides:boolean;translated:boolean;illustrated:boolean;
 }){
+  if(!translated&&lesson.lesson_key==='resources-safe-change'&&lesson.revision.content_hash==='569fd058a90394940f91c6725f9f3076c225d0acafb81320d8d6b63ed81a6b15'&&position===(slides?'slide-utilities':'utilities')){
+    const read=lesson.revision.read_sections.find(s=>s.id==='utilities');
+    const slide=lesson.revision.slides.find(s=>s.id==='slide-utilities');
+    if(read?.body_en.includes('Charlaine is a BHW in this fictional story.')&&(!slides||slide?.narration_en?.includes('Charlaine is a BHW in this fictional story.')))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'Practice case: Charlaine and the sample records and choices in this lesson are fictional. For real work, follow current facility procedures and confirm decisions with the authorized person.':'Kaso para sa pagsasanay: kathang-isip si Charlaine at ang mga sample na tala at pagpipilian sa araling ito. Para sa tunay na gawain, sundin ang kasalukuyang patakaran ng pasilidad at kumpirmahin ang desisyon sa awtorisadong tao.'}
+    </p>;
+  }
   if(!translated&&slides&&lesson.lesson_key==='uhc-coverage'&&lesson.revision.content_hash==='4b82aa20c75ff944adf326932408fd64ca126ac0dea951d53da264f00a639326'&&position==='slide-included'){
     const slide=lesson.revision.slides.find(s=>s.id==='slide-included');
     if(slide?.display_fil.includes('Sinasagot nito kung sino ang kasama sa programa.'))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
