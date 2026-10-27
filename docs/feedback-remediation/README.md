@@ -764,3 +764,5 @@ The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](f
 [FB-2.3e](fb-2.3e-fictional-case-context.md) adds one bilingual lesson-level fictional-case note to the current “Choose a safe change” revision in Read and Slides. Specific dummy-record and safety labels remain where they carry separate meaning. The original report stays open for pilot review.
 
 [FB-2.3f](fb-2.3f-monday-transfer-prompt.md) verifies that all 55 published Chapter II lessons share a seventh “On Monday” transfer section. A bilingual note now explains the cue and how to plan the next safe practice day without treating Monday as a deadline. Lesson revisions, narration and individual actions remain unchanged; the report stays open.
+
+[FB-2.3g](fb-2.3g-midwife-pretest-grammar-review.md) compares the “i-review kasama nang midwife” grammar report with its captured legacy option and the active Chapter I v7 pretest. The captured option already uses “kasama ang midwife,” and v7 does not serve it. No current correction is warranted; the report stays open for a specific live sentence.
