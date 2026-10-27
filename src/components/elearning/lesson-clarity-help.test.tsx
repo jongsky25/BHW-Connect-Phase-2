@@ -11,6 +11,7 @@ function lesson(module:string,key:string){
 }
 const coverage=lesson('02-uhc-act','uhc-coverage');
 const safety=lesson('08-osh','safety-identify');
+const safeChange=lesson('09-sustainable-practices','resources-safe-change');
 const show=(item:PublishedLesson,position:string,en:boolean,slides:boolean,translated=false)=>render(
   <NarrationAccessGuide lesson={item} position={position} en={en} slides={slides} translated={translated} illustrated={false}/>);
 
@@ -28,11 +29,21 @@ for(const en of [true,false]){
     cleanup();show(safety,'slide-ana',en,true);
     expect(screen.getByRole('note')).toHaveTextContent('fill line');
   });
+  it(`identifies the practice case once at the opening of ${en?'English':'Filipino'} Read and Slides`,()=>{
+    show(safeChange,'utilities',en,false);
+    expect(screen.getByRole('note')).toHaveTextContent(en?'Practice case: Charlaine':'Kaso para sa pagsasanay: kathang-isip si Charlaine');
+    cleanup();show(safeChange,'slide-utilities',en,true);
+    expect(screen.getByRole('note')).toHaveTextContent(en?'sample records and choices':'sample na tala at pagpipilian');
+    cleanup();show(safeChange,'slide-worked-example',en,true);
+    expect(screen.queryByRole('note')).not.toBeInTheDocument();
+  });
 }
 
 it('does not attach these notes to translated or future lesson revisions',()=>{
   show(coverage,'slide-included',false,true,true);
   expect(screen.queryByRole('note')).not.toBeInTheDocument();
   cleanup();show({...safety,revision:{...safety.revision,content_hash:'future'}},'ana',false,false);
+  expect(screen.queryByRole('note')).not.toBeInTheDocument();
+  cleanup();show({...safeChange,revision:{...safeChange.revision,content_hash:'future'}},'slide-utilities',false,true);
   expect(screen.queryByRole('note')).not.toBeInTheDocument();
 });

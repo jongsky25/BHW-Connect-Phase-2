@@ -760,3 +760,5 @@ The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](f
 [FB-2.3c](fb-2.3c-filipino-clarity-review.md) reviews three Filipino-clarity reports against current UHC and safety lessons. Revision-gated bilingual notes complete the abbreviated UHC inclusion slide and explain safety terms in Read and Slides. The broad module-level report remains open for an exact live example.
 
 [FB-2.3d](fb-2.3d-response-prompt-review.md) reviews the Chapter II “Pinakamainam na tugon” suggestion against both currently published practice prompts. The first asks for an opening question and the second for a plan; their existing wording fits their choices and objectives. No change is warranted without a more specific example, and the report remains open.
+
+[FB-2.3e](fb-2.3e-fictional-case-context.md) adds one bilingual lesson-level fictional-case note to the current “Choose a safe change” revision in Read and Slides. Specific dummy-record and safety labels remain where they carry separate meaning. The original report stays open for pilot review.
