@@ -1,0 +1,7 @@
+# FB-2.3h — Home assessment label
+
+Read-only pilot review on 27 October 2026 of feedback `ff53b29c-ffbe-4bed-9c3d-0a836195d2f6` (`new`). The report says “from pagtatasa sa pagsusulit” on `/home`; its captured element label is “Mga Pagtatasa.” There is no screenshot. The historical selector locates a Home destination link, but its ordinal alone does not identify a stable route because Home links vary by role and feature flags.
+
+The current Home navigation maps `assessmentsCta` (“Mga Pagtatasa” / “Assessments”) to `/assessments` for assessors. Home describes that destination as reviewing learner requests and recording assessments. The route accepts only assessors and renders an assessment queue where they claim requests, record observations or notes, and decide an outcome. It is not the learner's quiz or Chapter I pretest. The current Filipino label matches that destination; “Mga Pagsusulit” would imply a narrower quiz page and obscure the assessor's role. The separate quiz translation already uses “Pagsusulit.”
+
+Finding: no current wording defect is established for this label. Acceptance check: an assessor's Home “Mga Pagtatasa” link opens the assessor assessment queue, while a signed-out visit to `/assessments` redirects to `/login` (public production check: HTTP 307 on 27 October 2026). This does not establish a signed-in production journey. No UI, assessment content, score, feedback status, or reply was changed. Keep the report open if the commenter identifies a different test link or a confusing current screen.
