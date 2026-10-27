@@ -1,0 +1,33 @@
+{
+  "release_key": "bhw-roles-application-fb-2.2i-v2",
+  "feedback_id": "82b0310f-d60e-470d-b5ea-eb6a61903e24",
+  "decision": "Owner approved the exact bilingual replacement and progress effect in chat on 27 October 2026",
+  "review_packet_commit": "ef926ee74dc7d11becbcb540aa6dc96fa125a2cf",
+  "review_packet_sha256": "3e60104ba5ee5021192ea531e9b501dd4e855192947e7680e1e25581414f206b",
+  "lesson_key": "bhw-roles-application",
+  "base_content_hash": "1bbbef559c76bf08af42d25fe8e05460d3c90ec6b3be102dd8862b160ab362b4",
+  "base_revision_id": "2897e8f8-7c63-4307-b7b3-bd01ad50fade",
+  "scope": "Final formative check in Read and Slides; other content, media, key index and formal assessment unchanged",
+  "approved_check": {
+    "prompt_en": "During a visit, BHW Lani sees that the handwashing station has no soap. The midwife asks her to record what she sees, ask residents what help they need, check with the agreed supply contact, and report what still needs follow-up. Which handover follows the instruction?",
+    "prompt_fil": "Sa pagbisita, nakita ni BHW Lani na walang sabon sa hugasan ng kamay. Inutusan siya ng midwife na itala ang nakita, itanong sa mga residente kung anong tulong ang kailangan nila, makipag-ugnayan sa napagkasunduang tagapamahala ng gamit, at iulat ang kailangan pang asikasuhin. Aling ulat ang sumusunod sa tagubilin?",
+    "options": [
+      {
+        "en": "The handwashing station has no soap. I recorded that, asked residents what help they needed, and checked with the agreed supply contact. The refill plan still needs confirmation.",
+        "fil": "Walang sabon sa hugasan ng kamay. Itinala ko ito, tinanong ang mga residente kung anong tulong ang kailangan nila, at kinausap ang napagkasunduang tagapamahala ng gamit. Kailangan pang tiyakin ang plano sa paglalagay ng sabon."
+      },
+      {
+        "en": "The handwashing station has no soap. I recorded it and told residents the contact would refill it today, although I have not checked with that contact.",
+        "fil": "Walang sabon sa hugasan ng kamay. Itinala ko ito at sinabi sa mga residente na lalagyan ito ng sabon ngayong araw, kahit hindi ko pa nakausap ang tagapamahala ng gamit."
+      },
+      {
+        "en": "The handwashing station has no soap. I asked the contact to refill it and reported the problem solved, although I have not checked whether soap arrived or asked residents what help they needed.",
+        "fil": "Walang sabon sa hugasan ng kamay. Nakiusap ako sa tagapamahala na lagyan ito ng sabon at iniulat na ayos na ang problema, kahit hindi ko pa natiyak kung may sabon na o naitanong sa mga residente kung anong tulong ang kailangan nila."
+      }
+    ],
+    "correct_option_index": 0,
+    "feedback_en": "The first report records the observation, asks residents, checks with the agreed contact, and names what remains unconfirmed. The second promises a refill without checking. The third reports the problem solved without confirming the refill and omits the residents' needs. Give your own handover and explain the roles you used; practical assessment is separate.",
+    "feedback_fil": "Ang unang ulat ay nagtala ng nakita, nagtanong sa mga residente, nakipag-ugnayan sa napagkasunduang tagapamahala, at nagsabi ng hindi pa tiyak. Ang ikalawa ay nangako ng paglalagay ng sabon nang hindi pa nagtatanong sa tagapamahala. Iniulat ng ikatlo na ayos na ang problema nang hindi tinitiyak ang sabon at hindi itinatanong ang pangangailangan ng mga residente. Magbigay ng sarili mong ulat at ipaliwanag ang mga tungkuling ginamit; hiwalay ang praktikal na assessment."
+  },
+  "new_content_hash": "68c16ccf0e7790566ef551c1b5fab55597cd10cf35d3ce3323c5cfb29b34a154"
+}
