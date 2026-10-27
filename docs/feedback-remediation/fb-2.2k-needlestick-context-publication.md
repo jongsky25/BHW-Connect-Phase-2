@@ -10,4 +10,12 @@ The review packet anticipated all 42 curriculum pins would remain unchanged. Rea
 
 Guarded SQL verifies the active v7 release/hash and both form hashes, all 42 published curriculum revisions and absence of conflicting or withdrawn v8 data. It inserts immutable v8 forms and checkpoints, then activates v8 only for new enrollments. A failed guard rolls back. All 23 current Chapter I enrollments are pinned to v1 and retain both phases, drafts, responses, snapshots and scores. The original Spot Feedback reports remain open for authenticated pilot comments.
 
-Publication and production receipts will be added after CI, merge and the pilot transaction.
+## Publication and verification — 27 October 2026
+
+[PR #425](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/425) merged at `66c6bf5d2d2db857a1416c42e378eba187c7a7f3` after [CI run 40489769096](https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/40489769096) passed repository checks and all 116 browser tests on a disposable test stack. The production deployment `dpl_5FetWLWEhtMH85BdWKzGRMUHaxwc` became READY for that merge commit and received the canonical `bhw-connect-phase-2.vercel.app` alias.
+
+Read-only pilot checks immediately before activation found active v7 at content hash `5658f71c8a502a3110f91b0080b28cdb245a55ab9e1ddc586242a4bf835c3142`, both expected v7 form hashes, and all 42 v8 pins matching current published lesson revisions. The generated guarded transaction completed successfully. A post-transaction query found v8 active at content hash `121e28f7e492c472e3aa6a268373eefd3a57b13237fa4c6068b11f047b1b1665` and v7 retained as draft for historical access. The v8 pretest form hash is `fb60dc95c5b451ef93b30454015b9f90bdcb4fd658a84e842f3bafeec726222e`; the posttest hash remains `93097d2b5d2d8c3c608d08a22a74bed866fc0c7f61691c8a2e37a8d712e88950`.
+
+The stored T27 item `3d38f15a-5936-4b27-ae70-a54b89bea172` has the exact approved stems, unchanged `o1` key, choices and rationales. Exactly two curriculum pins differ from v7. Historical pilot counts matched the pre-transaction baseline: 23 enrollments (all v1), 45 attempts, 1,294 responses and a submitted score sum of 3,943.6. No feedback status or reply changed.
+
+Public production smoke returned `/login` 200 and a signed-out pretest preview redirect to `/login` (307). This confirms route availability and access control, not an authenticated pilot rendering of the new form. The authenticated assessment preview route is `/courses/73e0edda-6c28-420f-9c35-05a29563abd3/assessment/preview?phase=pretest&part=3`; a new assessment enrollment is needed to see v8 in the learner journey. Existing enrolled learners remain on their pinned version.
