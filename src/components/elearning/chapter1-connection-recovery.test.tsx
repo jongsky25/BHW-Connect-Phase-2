@@ -21,7 +21,7 @@ afterEach(() => {cleanup(); vi.restoreAllMocks();});
 async function review(locale: string) {
   render(<Chapter1Assessment {...props} locale={locale}/>);
   fireEvent.click(screen.getByRole('button', {name: locale === 'en' ? 'Resume pretest' : 'Ipagpatuloy ang pretest'}));
-  await screen.findByRole('heading', {name: locale === 'en' ? 'Question 30' : 'Tanong 30'});
+  await screen.findByRole('heading', {name: locale === 'en' ? '30. Question 30' : '30. Tanong 30'});
   fireEvent.click(screen.getByRole('button', {name: locale === 'en' ? 'Review all' : 'Balikan ang lahat'}));
 }
 
