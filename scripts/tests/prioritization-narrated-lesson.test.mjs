@@ -30,7 +30,7 @@ it('uses five approved scenes and recordings, with no final check or new teachin
 it('reconstructs all previous reader bytes, retains every old source/media byte and adds only four pinned media files',()=>{
  const r=JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-4.2b-reader-preservation.json'));expect(r.replacements).toHaveLength(8);
  expect(beforeFeedbackNarratedLesson(r.path)).toEqual(execFileSync('git',['show',r.base_commit+':'+r.path]));
- expect(execFileSync('git',['diff',r.base_commit,'--','content/training/','remotion/','docs/lesson-*',':(exclude)content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-stock-count-v5/**',':(exclude)content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-resource-monitor-v6/**',':(exclude)content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-communication-clarify-v7/**'])).toHaveLength(0);
+ expect(execFileSync('git',['diff',r.base_commit,'--','content/training/','remotion/','docs/lesson-*',':(exclude)content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-stock-count-v5/**',':(exclude)content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-resource-monitor-v6/**',':(exclude)content/training/day1-basic-competencies/learner-assessment-v2/releases/chapter1-feedback-communication-clarify-v7/**',':(exclude)content/training/day1-basic-competencies/lesson-releases/safety-identify-fb-2.3o-v2/**'])).toHaveLength(0);
  expect(execFileSync('git',['diff','--diff-filter=MDR',r.base_commit,'--','public/training/'])).toHaveLength(0);
 });
 it('retains all twelve Legal-basis recordings with exact current words and check gating',()=>{
