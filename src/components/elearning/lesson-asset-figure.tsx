@@ -44,6 +44,29 @@ export function LessonAssetFigure({
   const localVisual = language ? null : localPartnerVisual(a, en);
   const scenePurpose = language ? null : localPartnerScenePurpose(a, en);
   const legalStory = language ? null : legalStoryContext(a, en);
+  // The published diagram's Filipino final step suggests delegating a task,
+  // while its English step and lesson require acting only within one's role.
+  const ipcSequence = !language && a.id === "action-sequence"
+    && a.path === "/training/chapter2-draft/bhs-ipc-policies-7873481bb8d2.svg"
+    && a.content_hash === "7873481bb8d2a0fbfc02a8912b7441d877cf1853ed0ef9d802e7a0fe916306c3";
+  if (ipcSequence) return (
+    <figure className="my-4">
+      <ol aria-label={en ? "BHS IPC policy sequence" : "Mga hakbang sa patakaran sa IPC ng BHS"}
+        className="mx-auto flex max-w-sm flex-col gap-2 rounded-xl bg-primary/5 p-4">
+        {[
+          ["Hanapin", "Locate"],
+          ["Kumpirmahin", "Confirm"],
+          ["Sundin ayon sa tungkulin", "Use within role"],
+        ].map(([fil, eng], index) => (
+          <li key={fil} className="rounded-lg bg-primary px-4 py-3 text-center text-on-primary">
+            <span className="block font-semibold">{index + 1}. {en ? eng : fil}</span>
+            <span className="block text-sm">{en ? fil : eng}</span>
+          </li>
+        ))}
+      </ol>
+      <figcaption className="text-sm">{caption}</figcaption>
+    </figure>
+  );
   if (localVisual) return <LocalPartnerLearningVisual visual={localVisual}/>;
   if (!video)
     return (

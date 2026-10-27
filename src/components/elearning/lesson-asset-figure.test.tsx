@@ -26,6 +26,25 @@ const clip: LessonAsset = {
 };
 
 describe("LessonAssetFigure", () => {
+  it("clarifies the current IPC sequence in both languages without changing future assets", () => {
+    const ipc: LessonAsset = {
+      ...image,
+      id: "action-sequence",
+      path: "/training/chapter2-draft/bhs-ipc-policies-7873481bb8d2.svg",
+      content_hash: "7873481bb8d2a0fbfc02a8912b7441d877cf1853ed0ef9d802e7a0fe916306c3",
+      alt_fil: "Tatlong kahon: Hanapin, Kumpirmahin, Ipasagawa nang tama.",
+      alt_en: "Three boxes: Locate, Confirm, Use within role.",
+    };
+    const { rerender } = render(<LessonAssetFigure asset={ipc} en={false} />);
+    expect(screen.getByRole("list", { name: "Mga hakbang sa patakaran sa IPC ng BHS" })).toHaveTextContent("Sundin ayon sa tungkulin");
+    expect(screen.queryByText("Ipasagawa nang tama")).not.toBeInTheDocument();
+    expect(screen.queryByRole("img")).not.toBeInTheDocument();
+    rerender(<LessonAssetFigure asset={ipc} en />);
+    expect(screen.getByRole("list", { name: "BHS IPC policy sequence" })).toHaveTextContent("Use within role");
+    rerender(<LessonAssetFigure asset={{ ...ipc, content_hash: "future" }} en={false} />);
+    expect(screen.getByRole("img", { name: ipc.alt_fil })).toBeInTheDocument();
+  });
+
   it("renders a plain asset as a lazy image", () => {
     render(<LessonAssetFigure asset={image} en />);
     const img = screen.getByRole("img", { name: "Three boxes" });
