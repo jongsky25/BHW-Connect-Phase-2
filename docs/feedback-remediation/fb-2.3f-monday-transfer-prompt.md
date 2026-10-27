@@ -7,3 +7,9 @@ The repetition is confirmed across the current Chapter II course: all 55 publish
 The current reader now adds a bilingual note at that last section in Read and Slides: “Monday” cues practice, is not a deadline, and the safe step can be planned for the learner’s next training or workday with the facilitator/local team after confirming local procedures. The note appears only when the exact seven-part bilingual heading/section pattern is present; a future revised heading will not inherit the note. It does not rewrite the 55 approved lesson revisions, narration, final actions or learner history. In particular, it does not turn simulated tasks into real clinical work or create a mandatory Monday schedule.
 
 Acceptance: the note is visible in English and Filipino at the final Read/Slides section of current Chapter II lessons, absent from preceding sections and lessons without this pattern. The original report remains open for authenticated pilot comments. No live feedback status or reply was changed.
+
+## Release receipt — 27 October 2026
+
+[PR #393](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/393) passed [CI run 40429154533](https://github.com/jongsky25/BHW-Connect-Phase-2/actions/runs/40429154533), including repository checks and the browser job on disposable Supabase. Local lint and typecheck passed; full Vitest passed 314 files and 2,627 tests. PR #393 merged at `b968d94f7a62b7432c2f9455f91c0c8d9a95b412`. Production deployment `dpl_EwEjT8gDDnRM36i3pGZDPceCoUVq` is READY and owns `bhw-connect-phase-2.vercel.app` for that exact commit.
+
+Read-only pilot verification after merge confirmed the `first-aid-kit` revision/hash above unchanged and the original feedback still `new`. Public smoke returned `/login` 200 and signed-out original lesson route 307 to `/login`. These checks do not establish an authenticated production lesson observation; the report remains open for that pilot check.
