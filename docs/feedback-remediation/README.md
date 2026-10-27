@@ -798,3 +798,5 @@ The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](f
 [FB-2.2i](fb-2.2i-chapter1-transfer-check-review.md) reviews four Chapter I assessment/context comments. Three lack an item anchor and remain open. The roles-application formative check repeats the preceding worked example; the packet gives an exact bilingual transfer case and new-version acceptance checks. The review itself changed no lesson, formal assessment, or feedback status.
 
 [FB-2.2i release](fb-2.2i-transfer-check-publication.md) records the owner's approval and guarded immutable successor for the roles-application formative check, with current-revision completion impact and publication evidence.
+
+[FB-2.2j](fb-2.2j-legacy-pretest-context-review.md) traces three September Chapter I pretest comments to the old question-6 sentence and context-free scoring item. The active v7 form replaces both with situated questions, while the prioritization lesson retains calculation practice. No new assessment version is warranted; the reports remain open for live examples.
