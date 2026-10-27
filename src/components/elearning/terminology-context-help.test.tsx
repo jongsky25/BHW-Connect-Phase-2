@@ -29,3 +29,18 @@ for(const item of cases){
     });
   }
 }
+
+const communicationSource=loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public').lessons.find(l=>l.manifest.lesson_key==='communication-clarify')!;
+const communication={...communicationSource.manifest,id:'lesson',revision:{...communicationSource.revision,id:'revision',content_hash:contentHash(communicationSource)}} as PublishedLesson;
+for(const en of [true,false])for(const item of [
+  {read:'open-question',slide:'slide-open-question',text:en?'not tomorrow':'hindi kinabukasan'},
+  {read:'barriers',slide:'slide-barriers',text:en?'Rosario is a child':'si Rosario ay bata'},
+])it(`explains communication ${item.read} in ${en?'English':'Filipino'} only for the reviewed revision`,()=>{
+  for(const [position,slides] of [[item.read,false],[item.slide,true]] as const){
+    render(<NarrationAccessGuide lesson={communication} position={position} en={en} slides={slides} translated={false} illustrated={false}/>);
+    expect(screen.getByRole('note')).toHaveTextContent(item.text);
+    cleanup();
+  }
+  render(<NarrationAccessGuide lesson={{...communication,revision:{...communication.revision,content_hash:'future'}}} position={item.read} en={en} slides={false} translated={false} illustrated={false}/>);
+  expect(screen.queryByRole('note')).not.toBeInTheDocument();
+});

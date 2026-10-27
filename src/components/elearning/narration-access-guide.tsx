@@ -38,6 +38,18 @@ export function NarrationAccessGuide({lesson,position,narration,en,slides,transl
       {en?'A “sharps box” holds used needles and other sharp medical items. Its “fill line” marks how full it may safely be. An “immediate control” is a safe first step to reduce risk while the responsible staff is informed; do not handle the box contents.':'Ang “sharps box” ay lalagyan ng gamit na karayom at iba pang matutulis na gamit. Ang “fill line” ang hangganan ng pagpuno nito. Ang “agarang kontrol” ay unang ligtas na hakbang para mabawasan ang panganib habang inaabisuhan ang tamang staff; huwag hawakan ang laman ng lalagyan.'}
     </p>;
   }
+  if(!translated&&lesson.lesson_key==='communication-clarify'&&lesson.revision.content_hash==='26c6c781e7c76dfd4a911d20eafe49ff65d4e252224f8bcbf2544373ab4eaefe'){
+    const read=lesson.revision.read_sections.find(s=>s.id==='open-question');
+    const slide=lesson.revision.slides.find(s=>s.id==='slide-open-question');
+    if(position===(slides?'slide-open-question':'open-question')&&read?.heading_fil==='Bukas muna, saka linawin'&&(!slides||slide?.heading_fil==='Bukas muna, saka linawin'))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'Stay open first, then seek clarity: invite the person to tell their story in their own words, then clarify one detail. “Bukas” means open to their answer, not tomorrow.':'Maging bukas muna, hanapin ang linaw: pakinggan ang kuwento ng kausap sa sarili niyang salita, saka maglinaw ng isang detalye. Ang “bukas” dito ay pagiging bukas sa sagot, hindi kinabukasan.'}
+    </p>;
+    const barriers=lesson.revision.read_sections.find(s=>s.id==='barriers');
+    const barriersSlide=lesson.revision.slides.find(s=>s.id==='slide-barriers');
+    if(position===(slides?'slide-barriers':'barriers')&&barriers?.body_fil.includes('Sa kasong Rosario sa Modyul 7')&&(!slides||barriersSlide?.narration_fil?.includes('Sa kasong Rosario sa Modyul 7')))return <p role="note" className="my-3 rounded-lg border border-ink/20 bg-ink/5 p-3 text-sm">
+      {en?'Coming up in Module 7: Rosario is a child in a historical case study. Her family faced poverty, misinformation and gaps in health services. The case is used to examine connected barriers without blaming the family; the full story comes later.':'Sa susunod na Modyul 7: si Rosario ay bata sa isang makasaysayang case study. Nakaharap ang pamilya niya sa kahirapan, maling impormasyon at kakulangan sa serbisyong pangkalusugan. Ginagamit ang kaso upang suriin ang magkakaugnay na hadlang nang hindi sinisisi ang pamilya; susunod pa ang buong kuwento.'}
+    </p>;
+  }
   const termHelp={
     'bhw-barangay-partners':{
       hash:'4751c8f2e136581fe65913f6bf1da83615bb679caa0fb1c1d62072acc2625a3e',
