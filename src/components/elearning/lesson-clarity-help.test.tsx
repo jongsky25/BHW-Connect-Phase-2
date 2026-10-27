@@ -9,9 +9,15 @@ function lesson(module:string,key:string){
   const source=loadReferenceModule(`content/training/day1-basic-competencies/modules/${module}`,'public').lessons.find(l=>l.manifest.lesson_key===key)!;
   return {...source.manifest,id:'lesson',revision:{...source.revision,id:'revision',content_hash:contentHash(source)}} as PublishedLesson;
 }
+function chapter2Lesson(module:string,key:string){
+  const source=loadReferenceModule(`content/training/chapter2-common-competencies/drafts/${module}`,'public').lessons.find(l=>l.manifest.lesson_key===key)!;
+  return {...source.manifest,id:'lesson',revision:{...source.revision,id:'revision',content_hash:contentHash(source)}} as PublishedLesson;
+}
 const coverage=lesson('02-uhc-act','uhc-coverage');
 const safety=lesson('08-osh','safety-identify');
 const safeChange=lesson('09-sustainable-practices','resources-safe-change');
+const firstAidKit=chapter2Lesson('04-first-aid','first-aid-kit');
+const hazards=chapter2Lesson('07-disaster-preparedness','hazards-capacities');
 const show=(item:PublishedLesson,position:string,en:boolean,slides:boolean,translated=false)=>render(
   <NarrationAccessGuide lesson={item} position={position} en={en} slides={slides} translated={translated} illustrated={false}/>);
 
@@ -37,6 +43,13 @@ for(const en of [true,false]){
     cleanup();show(safeChange,'slide-worked-example',en,true);
     expect(screen.queryByRole('note')).not.toBeInTheDocument();
   });
+  it(`explains the recurring Monday step in two Chapter II lessons (${en?'English':'Filipino'})`,()=>{
+    for(const item of [firstAidKit,hazards])for(const [position,slides] of [['next-step',false],['slide-next-step',true]] as const){
+      show(item,position,en,slides);
+      expect(screen.getByRole('note')).toHaveTextContent(en?'not a deadline':'hindi takdang araw');
+      cleanup();
+    }
+  });
 }
 
 it('does not attach these notes to translated or future lesson revisions',()=>{
@@ -45,5 +58,9 @@ it('does not attach these notes to translated or future lesson revisions',()=>{
   cleanup();show({...safety,revision:{...safety.revision,content_hash:'future'}},'ana',false,false);
   expect(screen.queryByRole('note')).not.toBeInTheDocument();
   cleanup();show({...safeChange,revision:{...safeChange.revision,content_hash:'future'}},'slide-utilities',false,true);
+  expect(screen.queryByRole('note')).not.toBeInTheDocument();
+  cleanup();show(firstAidKit,'slide-practice',false,true);
+  expect(screen.queryByRole('note')).not.toBeInTheDocument();
+  cleanup();show({...firstAidKit,revision:{...firstAidKit.revision,slides:firstAidKit.revision.slides.map(slide=>slide.id==='slide-next-step'?{...slide,heading_en:'Next practice'}:slide)}},'slide-next-step',false,true);
   expect(screen.queryByRole('note')).not.toBeInTheDocument();
 });
