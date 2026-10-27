@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "proposal_id": "FB-2.2l-accreditation-check",
+  "feedback_id": "091f2171-3087-401a-862e-e9b6ea58c214",
+  "lesson_key": "bhw-accreditation",
+  "base_revision_id": "2d68608f-2912-4080-ab5e-4de2d073edc2",
+  "base_content_hash": "16f8f729d3971969540d35f551cada4ee0d328ba35c003898812a5141d58d47f",
+  "base_check_sha256": "e04ef36b03f45b0136d552b92b236c66eae3646a9a8b64965ea6c2bea4a64830",
+  "read_section_id": "accreditation-application-check",
+  "slide_id": "slide-accreditation-application-check",
+  "proposed_check": {
+    "prompt_fil": "Sa Card B, may rekomendasyon ng komite ngunit walang natiyak na opisyal na pasya. Ano ang pinakamainam na paliwanag at susunod na tanong ni Demi?",
+    "prompt_en": "Card B has a committee recommendation but no verified official decision. What is Demi’s best explanation and next question?",
+    "options": [
+      {
+        "fil": "Pantulong ang rekomendasyon. Tiyakin sa tamang lokal na contact kung may pasya na ang board, saan ito makukumpirma at ano ang susunod na hakbang.",
+        "en": "The recommendation is a supporting step. Ask the proper local contact whether the board has decided, where it can be verified and what comes next."
+      },
+      {
+        "fil": "Itala ang rekomendasyon ng komite bilang pansamantalang akreditasyon habang hinihintay ang opisyal na pasya ng board.",
+        "en": "Record the committee recommendation as provisional accreditation while waiting for the board’s official decision."
+      },
+      {
+        "fil": "Dahil walang kalakip na pasya ng board sa Card B, sabihin kay Demi na tinanggihan ang aplikasyon at kailangan niyang magsimula muli.",
+        "en": "Because no board decision is attached to Card B, tell Demi the application was rejected and must be started again."
+      }
+    ],
+    "correct_option_index": 0,
+    "feedback_fil": "Una: tama. Pantulong ang rekomendasyon ng komite; tiyakin sa tamang lokal na contact kung may opisyal na pasya ang board, saan ito makukumpirma at ano ang susunod na hakbang. Ikalawa: mali. Hindi nagiging pansamantalang akreditasyon ang rekomendasyon habang wala pang natiyak na pasya. Ikatlo: mali. Hindi patunay ng pagtanggi ang kawalan ng kalakip na pasya sa kathang-isip na card; hindi rin nito pinatutunayang may aplikasyon si Demi. Tiyakin muna ang opisyal na tala at kasalukuyang lokal na proseso. Hindi nagbibigay ng akreditasyon ang pagkumpleto sa online lesson.",
+    "feedback_en": "First: correct. A committee recommendation is a supporting step; ask the proper local contact whether the board has made an official decision, where it can be verified and what comes next. Second: incorrect. A recommendation does not become provisional accreditation while a decision is unverified. Third: incorrect. A missing attached decision on the fictional card does not prove rejection or even establish that Demi has an application. Verify the official record and current local process first. Completing the online lesson does not grant accreditation."
+  },
+  "continuity": {
+    "published_lesson": "new_immutable_revision_after_approval",
+    "previous_completion_records": "preserved_but_previous_revision_no_longer_current",
+    "formal_assessment": "no_form_or_score_change",
+    "feedback_status": "remain_open"
+  }
+}
