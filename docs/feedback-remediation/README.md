@@ -4,7 +4,7 @@
 
 Initial triage covers all 214 Spot Feedback submissions from 29 September to
 23 October 2026. All 214 were `new` at that snapshot. As of 27 October 2026,
-the live count remains 214: 167 `new`, 10 `in_review`, 4 `resolved` and 33
+the live count remains 214: 50 `new`, 5 `in_review`, 94 `resolved` and 65
 `dismissed`; the delivery records below explain the later status changes.
 The implementation baseline is `9c2a2cd4`.
 
@@ -817,3 +817,5 @@ The owner approved the exact bilingual T18 clarification choice from [FB-2.2h](f
 [FB-0.1a](fb-0.1a-screenshot-and-seven-s-review.md) verifies the paired “4S” and “all 7S” reports against the pre-existing published bilingual Read and Slides lesson: all seven are present across two sections, so no content fix is warranted. The owner then directed closure; both are now `dismissed` with the explanation and exact receipt in the audit packet. A separate unclear Chapter I comment anchors to Next lesson, but its private screenshot cannot be viewed through the read-only database connection; it remains `new` pending legitimate image review or a specific live report. No in-app reply was sent without a signed-in author identity.
 
 [FB-0.1b](fb-0.1b-no-comment-dismissal.md) verifies and dismisses the 31 N/A/no-comment reports on owner instruction. The exact guarded live receipt and status totals are in the audit packet. The separate screenshot report remains open; the canonical production alias continues to serve the latest merged app build.
+
+[The 27 October backlog reconciliation](backlog-reconciliation-2026-10-27.md) records the owner's direction to treat fully released concerns as done without claiming an authenticated production journey. It resolves 90, dismisses 32, and retains 55 with an [ID-level decision map](backlog-reconciliation-2026-10-27.csv) and grouped reasons. Live status totals are reflected above; historical tracker snapshot values remain unchanged.
