@@ -22,12 +22,19 @@ both owner-deferred reports, and zero new open reports outside the baseline.
 The exact first-nine release, publication IDs and per-item count receipts are
 linked above; re-read live status before acting.
 
-Item 10 is now **fixed/resolved**. The final disposition and release/live-count
+Item 10 was **fixed/resolved**. The final disposition and release/live-count
 receipt are in [the item 10 packet](feedback-item-10-competency-visuals-2026-10-28.md).
-The queue is **10/55 reviewed and closed, 45 awaiting review**. The fresh live
-count after item 10 is **45 open (40 new, 5 in_review)**, including the two
-owner-deferred reports and zero new open IDs outside the baseline. Start the
-next “next” command at **item 11**; re-read live status before acting.
+After item 10, the queue had **10/55 reviewed and closed, 45 awaiting review**;
+the live count was **45 open (40 new, 5 in_review)**.
+
+Item 11 is **will_not_fix/dismissed**. The original praise for six distinct
+hazard scenes remains valid; a universal unique-picture rule for every other
+lesson was declined for the specific reasons in
+[the item 11 packet](feedback-item-11-visual-variety-2026-10-28.md). The queue
+is now **11/55 reviewed and closed, 44 awaiting review**. The fresh live count
+after item 11 is **44 open (39 new, 5 in_review)**, including both owner-deferred
+reports and zero new open IDs outside the baseline. Start the next “next”
+command at **item 12**; re-read live status before acting.
 
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
