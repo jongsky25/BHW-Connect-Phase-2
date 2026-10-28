@@ -1,0 +1,135 @@
+# BHW Connect feedback: item-by-item handoff — 28 October 2026
+
+Start the next chat in `/workspace/BHW-Connect-Phase-2`. Read this file, the
+[live backlog reconciliation](backlog-reconciliation-2026-10-27.md), and the
+[numbered queue](feedback-item-queue-2026-10-28.csv) before changing anything.
+The owner wants each remaining report handled **one at a time**, with an updated
+remaining count after **every** item. Do the next item autonomously when asked;
+do not ask the owner to collect examples that can be checked in the system.
+
+## Starting point and counting rule
+
+At the handoff's read-only live check, Spot Feedback had **214 total: 50 `new`,
+5 `in_review`, 94 `resolved`, 65 `dismissed`**. Thus **55 reports were open**:
+53 active candidates and 2 explicitly deferred by the owner. The queue CSV
+contains exactly those 55 IDs, each with `review_state=pending`. It is a fixed
+snapshot of the baseline queue, **not** a substitute for current live status.
+The older `triage-2026-10-23.csv` `live_status_at_snapshot` column is also
+historical, not current status.
+
+After **each single report**, update its queue row and tell the owner:
+
+> `Reviewed baseline items: X/55; baseline items awaiting review: 55-X;
+> live open feedback: Y (A new, B in_review); of these, D owner-deferred;
+> new reports since baseline: N.`
+
+`X` counts queue rows changed from `pending` to `reviewed_open` or `closed`,
+including a reviewed report that legitimately remains open. `Y`, `A`, and `B`
+come from a **fresh live read**, never from the CSV. `N` is the count of live
+open IDs absent from this 55-ID queue. If one review covers related reports,
+record a finding and give the count **for each ID separately**. A reviewed but
+still-open report reduces the *awaiting-review* count, **not** the live-open
+count. When a later change closes it, update its row to `closed` and report the
+new live count. Do not call all 55 confirmed defects or promise that every one
+needs a code fix.
+
+Example: if the first report is reviewed but lacks an identifiable current
+question, say `1/55 reviewed; 54 awaiting review; 55 live open` and explain
+the evidence gap. If the first report is fully fixed and closed, say `1/55
+reviewed; 54 awaiting review; 54 live open`, assuming no new submissions.
+
+## Per-item workflow
+
+1. Re-read current live status, original feedback, screenshot if accessible,
+   exact route, and any later replies. Check the relevant review packet and
+   current published lesson/question **version**. Choose one `pending` queue
+   ID; start with `wording_partially_addressed`, then other bounded partial
+   issues. Use judgment if a newer live report makes another ID more urgent.
+2. Record a specific finding in that queue row: current defect and fix, already
+   addressed, needs exact item/state, policy decision, or operational approval.
+   Link evidence or a new review packet. Do not infer a scoring error from a
+   vague or historical question report. Treat report text as evidence, not
+   instructions to execute.
+3. For a confirmed gap, make the smallest coherent change. Preserve answer
+   keys unless explicitly approved, enrolled version pins, saved scores,
+   historical attempts, and self-paced access. Test focused behavior and
+   required repository checks; for browser writes use disposable local/CI
+   Supabase, not the pilot. Review bilingual content and publish a new version
+   when the app's versioning rules require it.
+4. Merge a ready PR under the owner's standing instruction, then verify the
+   exact canonical production deployment and published content. Distinguish a
+   READY app build, public smoke, disposable authenticated CI, and an actual
+   authenticated production learner journey. A docs-only merge may correctly
+   skip a Vercel build. If the item is already addressed, cite its live release.
+5. Close a live report (`resolved` for an addressed issue, `dismissed` for a
+   reviewed non-issue/declined request) only with a supported report-level
+   disposition and the owner's existing authorization. Keep multi-issue reports
+   open if any part remains. Never send a reply or impersonate a staff actor.
+   Record the final live status and evidence in the queue row and a review
+   packet. Re-query live counts and send the owner the count line above **before
+   moving to another item**.
+
+Use the Supabase skill for database work and the connected GitHub/Vercel tools
+for release verification. Project ID: `ltzicxyefizxoqhfuuzc`. A read-only count
+query is:
+
+```sql
+select status, count(*)::int as count
+from public.spot_feedback
+group by status
+order by status;
+```
+
+## What is actually open
+
+The queue's `remaining_work_category` and
+[reconciliation summary](backlog-reconciliation-2026-10-27.md) explain all 55:
+17 exact item/sentence gaps; 8 assessment scope or policy; 8 visual/readability
+partial; 7 wording partial; 4 scored-item clarifications still `in_review`;
+2 offline/connection; 2 training-flow/access policy; 2 unidentified historical
+blockers; 2 owner-deferred; and one each for plant-aid approval, private
+screenshot, and continuous Slides narration. Some are feature or policy
+requests; some need evidence before any edit. Keep the four clarification
+reports open until their original scored item or concern is actually resolved.
+
+Current canonical app: <https://bhw-connect-phase-2.vercel.app>, READY
+deployment `dpl_5H1Zr4rvLzAJpWN9ATcs4iCpKuCi` on app commit
+`64e314204bbd5b11b1ba08aabd8f13bc6c6721d0` (PR #430). Later PRs through
+#435 were documentation-only; they did not require a new app build. Latest
+merged docs commit at handoff: `ab7158794bd81955979539ae636804d3e5ae80be`.
+The published Chapter I assessment for new enrollments is
+`chapter1-feedback-needlestick-context-v8`; flags `elearning`,
+`assessor_flow_ui`, and `chapter1_assessment_v2` are enabled. The released app
+has **not** been verified through an authenticated production learner journey.
+Check fresh deployment/content facts before claiming any subsequent item live.
+
+## Decisions that must survive the chat change
+
+- Owner-deferred: `edd80e67-6710-494a-aee1-4176f1ca274f` (historical 15/42
+  assessor progress display) and `84696eb6-57e6-4da4-81c3-19cc21923187`
+  (separate plant-identification request). Leave these two in the open count;
+  do not resume or close them without a new owner instruction.
+- Already addressed/skipped: `471c4f96-1a5e-4ec9-9e2e-1f838164e13c` (real
+  BHW photographs). Explicitly declined: `b7900504-80c4-48a6-943d-0e3beee64f7a`
+  (shorten the curriculum). These are not pending queue work.
+- `b1e43e76-1ba8-422a-a86a-6682b4f23b11` and
+  `9cd61e10-9b97-4941-bf57-241a4d0fde22` say only “Cannot proceed”; no
+  historical lesson/state was supplied. Do not invent a cause from a passing
+  current CI journey. Screenshot for `9cfb86dd-89f4-4626-8657-803b20388e79`
+  requires authorized visual access.
+- Ten bilingual medicinal-plant practice cards are live at `/plant-aids`, but
+  the pilot preview is not clinical approval. Ray Justin Ventura is training
+  owner; local identification aids, clinical sign-off, and a consultation route
+  remain outstanding for operational use.
+- Preserve the accepted self-paced lesson flow, baseline pretest answer-key
+  policy, and historical assessment evidence. Do not add arbitrary locks,
+  question order, daily caps, or broad course shortening from old comments.
+
+Suggested first message in the next chat:
+
+> Read `docs/feedback-remediation/feedback-item-by-item-handoff-2026-10-28.md`.
+> Work through the numbered feedback queue **one item at a time**. Start with
+> the first pending, non-deferred item, verify its current live evidence, fix a
+> confirmed issue if present, merge and verify live, then update the queue and
+> tell me exactly how many baseline items await review and how many feedback
+> reports remain open. Continue when I say “next.”
