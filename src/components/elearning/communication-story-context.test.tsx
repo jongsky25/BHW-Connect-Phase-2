@@ -3,10 +3,11 @@ import {afterEach, expect, it, vi} from 'vitest';
 import {loadReferenceModule,contentHash} from '../../../scripts/lib/reference-content.mjs';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
 import {communicationStorySupplement} from '@/lib/elearning/communication-story-context';
+import {applyApprovedReferenceReleases} from '../../../scripts/lib/safety-identify-copy-release.mjs';
 
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
 afterEach(cleanup);
-const authored=loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public').lessons.find(l=>l.manifest.lesson_key==='communication-explain')!;
+const authored=applyApprovedReferenceReleases(loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public')).lessons.find((l: {manifest: {lesson_key: string}})=>l.manifest.lesson_key==='communication-explain')!;
 const lesson={...authored.manifest,id:'lesson',revision:{...authored.revision,id:'revision',content_hash:contentHash(authored)}} as ReferenceData['lessons'][number];
 const asset=lesson.revision.assets.find(a=>a.id===lesson.revision.featured_asset_id)!;
 

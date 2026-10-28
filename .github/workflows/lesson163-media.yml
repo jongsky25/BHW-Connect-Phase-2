@@ -165,12 +165,19 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
+          # The original authored source stays unchanged in git. This isolated
+          # media job compiles the successor through the original composition.
+          cp remotion/src/communication-explain/narration-context.ts remotion/src/communication-explain/narration.ts
           node scripts/remotion-communication-explain-narrate.mjs fil
           node scripts/remotion-communication-explain-narrate.mjs en
       - name: Render revised six-scene clips and measured captions
         run: |
           node scripts/remotion-render.mjs CommunicationExplainStoryFil communication-explain-context-fil --public training/bhw-1-6 --with-audio --captions communication-explain/narration-fil.json
           node scripts/remotion-render.mjs CommunicationExplainStoryEn communication-explain-context-en --public training/bhw-1-6 --with-audio --captions communication-explain/narration-en.json
+          cp remotion/public/communication-explain/narration-fil.mp3 remotion/public/communication-explain/narration-context-fil.mp3
+          cp remotion/public/communication-explain/narration-fil.json remotion/public/communication-explain/narration-context-fil.json
+          cp remotion/public/communication-explain/narration-en.mp3 remotion/public/communication-explain/narration-context-en.mp3
+          cp remotion/public/communication-explain/narration-en.json remotion/public/communication-explain/narration-context-en.json
       - name: Review actual spoken audio against revised source
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -180,10 +187,10 @@ jobs:
         with:
           name: feedback-item-12-story-media
           path: |
-            remotion/public/communication-explain/narration-fil.mp3
-            remotion/public/communication-explain/narration-fil.json
-            remotion/public/communication-explain/narration-en.mp3
-            remotion/public/communication-explain/narration-en.json
+            remotion/public/communication-explain/narration-context-fil.mp3
+            remotion/public/communication-explain/narration-context-fil.json
+            remotion/public/communication-explain/narration-context-en.mp3
+            remotion/public/communication-explain/narration-context-en.json
             public/training/bhw-1-6/communication-explain-context-*
             docs/feedback-remediation/feedback-item-12-audio-review.json
           if-no-files-found: error
