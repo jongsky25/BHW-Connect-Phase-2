@@ -52,3 +52,7 @@ Only item 5 changes in this increment; the first four remain reviewed_open.
 Reviewed baseline items: **5/55**; baseline items awaiting review: **50**;
 live open feedback: **55** (**50 new, 5 in_review**); of these, **2 owner-deferred**;
 new reports since baseline: **0**.
+
+## Final disposition — 28 October 2026
+
+Superseded by the [fix-or-decline receipt](first-nine-fix-or-decline-2026-10-28.md#item-5): **will_not_fix**, live **dismissed**. No additional unspecified curriculum rewrite: retain the released HEPO layouts, learning focus, viewing guidance and Filipino clarification. The mixed praise/readability report supplies no further difficult passage. The separately identified exact sentence is handled as item 6.

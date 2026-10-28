@@ -49,3 +49,7 @@ dismissed. All 55 open IDs are in the baseline, including both deferred IDs.
 Reviewed baseline items: **7/55**; baseline items awaiting review: **48**;
 live open feedback: **55** (**50 new, 5 in_review**); of these, **2 owner-deferred**;
 new reports since baseline: **0**.
+
+## Final disposition — 28 October 2026
+
+Superseded by the [fix-or-decline receipt](first-nine-fix-or-decline-2026-10-28.md#item-7): **fixed**, live **resolved**. Published Maging bukas muna, hanapin ang linaw as both Filipino Read and Slides headings, with matching timed Filipino narration.

@@ -66,3 +66,7 @@ reviewed_open and the other 52 rows remain pending.
 Reviewed baseline items: **3/55**; baseline items awaiting review: **52**;
 live open feedback: **55** (**50 new, 5 in_review**); of these, **2 owner-deferred**;
 new reports since baseline: **0**.
+
+## Final disposition — 28 October 2026
+
+Superseded by the [fix-or-decline receipt](first-nine-fix-or-decline-2026-10-28.md#item-3): **fixed**, live **resolved**. Published visitor/bisita in place of company representative/kinatawan ng kumpanya in the exact Read and Slides narration, with matching English and Filipino audio. Preserved the offer, Milk Code refusal and answer keys.

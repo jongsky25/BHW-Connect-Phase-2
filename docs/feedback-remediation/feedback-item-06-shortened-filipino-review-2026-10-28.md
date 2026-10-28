@@ -53,3 +53,7 @@ remain reviewed_open. Fresh live counts: 50 new, 5 in_review, 94 resolved and
 Reviewed baseline items: **6/55**; baseline items awaiting review: **49**;
 live open feedback: **55** (**50 new, 5 in_review**); of these, **2 owner-deferred**;
 new reports since baseline: **0**.
+
+## Final disposition — 28 October 2026
+
+Superseded by the [fix-or-decline receipt](first-nine-fix-or-decline-2026-10-28.md#item-6): **fixed**, live **resolved**. Published the requested fuller Filipino HEPO role sentence in the Read source, with matching Filipino narration. Preserved the lesson examples and all check choices and keys.
