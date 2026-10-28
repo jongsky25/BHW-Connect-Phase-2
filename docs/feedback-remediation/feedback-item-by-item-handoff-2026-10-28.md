@@ -16,11 +16,18 @@ of the first nine queue items. Their correction and final decisions are in
 
 That correction is complete: **items 1, 3, 6 and 7 are fixed/resolved; items
 2, 4, 5, 8 and 9 are tagged will_not_fix/dismissed**, with individual reasons.
-The queue now has **9/55 reviewed and closed, 46 awaiting review**. Fresh live
-counts after the correction were **46 open (41 new, 5 in_review)**, including
+After that correction, the queue had **9/55 reviewed and closed, 46 awaiting review**. Fresh live
+counts at that point were **46 open (41 new, 5 in_review)**, including
 both owner-deferred reports, and zero new open reports outside the baseline.
-Start the next “next” command at **item 10**. The exact release, publication IDs
-and per-item count receipts are linked above; re-read live status before acting.
+The exact first-nine release, publication IDs and per-item count receipts are
+linked above; re-read live status before acting.
+
+Item 10 is now **fixed/resolved**. The final disposition and release/live-count
+receipt are in [the item 10 packet](feedback-item-10-competency-visuals-2026-10-28.md).
+The queue is **10/55 reviewed and closed, 45 awaiting review**. The fresh live
+count after item 10 is **45 open (40 new, 5 in_review)**, including the two
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 11**; re-read live status before acting.
 
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
