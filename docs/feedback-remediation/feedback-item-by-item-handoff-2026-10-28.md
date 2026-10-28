@@ -111,6 +111,16 @@ owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 19**; re-read
 live status before acting.
 
+Item 19 was **fixed/resolved by the existing Chapter 1 assessment releases**.
+The reported assessor pretest now uses 30 situational items, saves each selected
+answer to a resumable draft, and offers untimed breaks. The historical anchored
+distractor is absent from the active form. The evidence and live-count receipt
+are in [the item 19 packet](feedback-item-19-pretest-length-save-context-2026-10-28.md).
+The queue is now **19/55 reviewed and closed, 36 awaiting review**. The fresh
+live count after item 19 is **36 open (31 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 20**; re-read live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
