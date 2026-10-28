@@ -4,11 +4,11 @@ import TrainingPage from './[programId]/[[...path]]/page';
 import Catalog from '../courses/page';
 import activityCards from '../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/activities.json';
 
-const state=vi.hoisted(()=>({failing:'',role:'bhw',preview:false,v2:false,status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rpcCalls:[] as string[],rows:{} as Record<string,Array<Record<string,unknown>>>}));
+const state=vi.hoisted(()=>({failing:'',role:'bhw',preview:false,v2:false,offline:false,status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rpcCalls:[] as string[],rows:{} as Record<string,Array<Record<string,unknown>>>}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIRECT '+url)},notFound:()=>{throw new Error('NOT_FOUND')},useRouter:()=>({push:vi.fn(),refresh:vi.fn()})}));
 vi.mock('@/lib/assessor/load-rollout',()=>({loadAssessorRollout:async()=>({uiVisible:false})}));
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations:async()=>((key:string)=>key)}));
-vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true,chapter1_assessment_v2:state.v2})}));
+vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true,chapter1_assessment_v2:state.v2,offline_pwa:state.offline})}));
 vi.mock('@/lib/supabase/app-user',()=>({getAppUser:async()=>({id:'self',role:state.role,status:'active'}),forwardedAppUser:()=>null,APP_USER_HEADER:'x-app-user',APP_FLAGS_HEADER:'x-app-flags'}));
 vi.mock('next/headers',()=>({headers:async()=>new Headers(state.preview?{'x-app-preview':'1','x-app-effective-role':'bhw'}:{}),cookies:async()=>({get:()=>undefined,getAll:()=>[]})}));
 vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({storyQuestionHandoff,readOnly,nextLessonHref,returnHref}:{storyQuestionHandoff?:boolean;readOnly:boolean;nextLessonHref?:string;returnHref?:string})=><div data-story-handoff={String(storyQuestionHandoff)} data-next-lesson={nextLessonHref} data-return-href={returnHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
@@ -28,7 +28,7 @@ vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:asyn
 }})}));
 
 beforeEach(()=>{
-  state.failing='';state.role='bhw';state.preview=false;state.v2=false;state.locale='en';state.calls=[];state.rpcCalls=[];
+  state.failing='';state.role='bhw';state.preview=false;state.v2=false;state.offline=false;state.locale='en';state.calls=[];state.rpcCalls=[];
   state.rows={
     training_programs:[{id:'manual',content_key:'bhw-reference-manual',status:'published',title_en:'Manual',title_fil:'Manwal'}],
     training_program_chapters:[{id:'ch1',program_id:'manual',chapter_key:'chapter-1',position:0,availability:'available',course_id:'course',title_en:'BHWs and Their Barangay',title_fil:'Ang BHW at Barangay'},
@@ -92,6 +92,17 @@ describe('manual navigation',()=>{
   it('manual opens chapters, with unavailable chapters not linked',async()=>{
     render(await page());expect(screen.getByRole('link',{name:/BHWs and Their Barangay/})).toHaveAttribute('href','/training/manual/chapter-1');
     expect(screen.queryByRole('link',{name:/First Responders/})).not.toBeInTheDocument();expect(screen.queryByText('Roles')).not.toBeInTheDocument();
+  });
+  it.each(['en','fil'])('answers the offline-version question without promising offline saves (%s)',async locale=>{
+    state.locale=locale;state.offline=true;
+    render(await page());
+    expect(screen.getByRole('heading',{name:locale==='en'?'Is there an offline version?':'May offline na bersyon ba?'})).toBeInTheDocument();
+    expect(screen.getByText(locale==='en'?/There is no complete offline version yet/:/Wala pang kumpletong offline na bersyon/)).toHaveTextContent(locale==='en'?/saving progress or assessment answers, still need internet/:/ma-save ang progreso at mga sagot sa pagtatasa/);
+  });
+  it('does not promise cached reading when offline PWA is disabled',async()=>{
+    render(await page());
+    expect(screen.getByText(/There is no offline version yet/)).toBeInTheDocument();
+    expect(screen.queryByText(/pages already opened may remain readable/)).not.toBeInTheDocument();
   });
   it('chapter shows subchapters and only the actor certificate; never long content',async()=>{
     render(await page(['chapter-1']));expect(screen.getByRole('link',{name:/1.1 Roles/})).toHaveAttribute('href','/training/manual/chapter-1/m1');
