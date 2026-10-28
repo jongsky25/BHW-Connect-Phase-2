@@ -1,5 +1,10 @@
 # Feedback remediation — pilot baseline and delivery record
 
+For continued one-report-at-a-time review, use the
+[28 October handoff](feedback-item-by-item-handoff-2026-10-28.md) and its
+[55-ID queue](feedback-item-queue-2026-10-28.csv). The handoff requires a fresh
+live open count after every item.
+
 ## Baseline: 23 October 2026
 
 Initial triage covers all 214 Spot Feedback submissions from 29 September to
