@@ -85,6 +85,14 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
     const mine=await myProgress;
     content=<>
       {mine && mine.counts.total>0 && <ManualSummary progress={mine} title={manualTitle} locale={loc}/>}
+      {program.content_key==='bhw-reference-manual' && <section className="rounded-xl border border-ink/15 p-5" aria-labelledby="manual-offline-heading">
+        <h2 id="manual-offline-heading" className="font-semibold">{text('May offline na bersyon ba?','Is there an offline version?')}</h2>
+        <p className="mt-2 text-sm">{flags.offline_pwa
+          ? text('Wala pang kumpletong offline na bersyon. Buksan muna online ang mga araling nais basahin; maaaring mabasa pa sa device na ito ang mga pahinang nabuksan na. Kailangan pa rin ng internet para sa mga bagong pahina o media, at para ma-save ang progreso at mga sagot sa pagtatasa. Tiyaking kumpirmado ang pag-save bago umalis.',
+            'There is no complete offline version yet. Open the lessons you want to read while online; pages already opened may remain readable on this device. New pages or media, and saving progress or assessment answers, still need internet. Confirm that saves have completed before leaving.')
+          : text('Wala pang offline na bersyon. Kailangan ng internet para magbukas ng mga aralin at mag-save ng progreso at mga sagot sa pagtatasa.',
+            'There is no offline version yet. You need internet to open lessons and save progress or assessment answers.')}</p>
+      </section>}
       {/* List links skip prefetch: each one is a full server render with its own
           database reads, and a chapter view used to fire one per link at once. */}
       <div className="grid gap-4">{chapters?.map(c=>{
