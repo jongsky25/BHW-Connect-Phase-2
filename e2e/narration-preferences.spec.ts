@@ -12,7 +12,7 @@ function localSql(sql:string){
 }
 
 test('Narration speed persists and opt-in listening respects pause, checks and mode changes',async({page,request})=>{
-  test.setTimeout(120000);
+  test.setTimeout(240000);
   const admin=await getAccessToken(request,STABLE_CITY_ADMIN.username,STABLE_CITY_ADMIN.password);
   const assessor=await createThrowawayAssessor(request,admin,'00000000-0000-0000-0000-000000000004');
   const [actor]=await restGet(request,admin,`users?select=id&username=eq.${assessor.username}`) as {id:string}[];
@@ -89,6 +89,36 @@ test('Narration speed persists and opt-in listening respects pause, checks and m
         await reader.getByRole('button',{name:check.options[0][locale],exact:true}).click();
         await expect(audio).toHaveCount(1);
         expect(await audio.evaluate(el=>(el as HTMLAudioElement).paused)).toBe(true);
+        // Slides use the matching full Read recording only after an explicit
+        // opt-in inside the visible panel. The next Slide opens that panel.
+        await reader.getByRole('button',{name:'Slides',exact:true}).click();
+        for(let i=0;i<6&&await previous.isEnabled();i++)await previous.click();
+        const slidePanel=reader.locator('details').filter({hasText:locale==='en'?'Full narration and audio':'Buong salaysay at audio'});
+        const slideAudio=slidePanel.locator('audio');
+        await expect(slidePanel).not.toHaveAttribute('open','');
+        await slidePanel.locator('summary').click();
+        const slideAutomatic=slidePanel.getByRole('checkbox',{name:locale==='en'?'Play next Slides automatically':'Awtomatikong pakinggan ang mga susunod na Slide'});
+        await slideAutomatic.check();
+        expect(await slideAudio.evaluate(el=>(el as HTMLAudioElement).paused)).toBe(true);
+        await slidePanel.getByRole('button',{name:locale==='en'?'Listen':'Pakinggan',exact:true}).click();
+        await expect.poll(()=>slideAudio.evaluate(el=>(el as HTMLAudioElement).paused)).toBe(false);
+        await next.click();
+        await expect(slidePanel).toHaveAttribute('open','');
+        await expect.poll(()=>slideAudio.evaluate(el=>(el as HTMLAudioElement).paused)).toBe(false);
+        await expect.poll(()=>slideAudio.evaluate(el=>(el as HTMLAudioElement).playbackRate)).toBe(1.5);
+        await slidePanel.getByRole('button',{name:locale==='en'?'Pause':'I-pause',exact:true}).click();
+        await next.click();
+        await expect(slidePanel).not.toHaveAttribute('open','');
+        await slidePanel.locator('summary').click();
+        expect(await slideAudio.evaluate(el=>(el as HTMLAudioElement).paused)).toBe(true);
+        await slidePanel.getByRole('button',{name:locale==='en'?'Listen':'Pakinggan',exact:true}).click();
+        for(let i=0;i<3;i++)await next.click();
+        await expect(reader.locator('article')).toHaveAttribute('data-scene','slide-check');
+        await expect(slidePanel).toHaveCount(0);
+        const slideCheck=source.revision.slides.at(-1)!.check!;
+        await reader.getByRole('button',{name:slideCheck.options[0][locale],exact:true}).click();
+        await expect(slidePanel).not.toHaveAttribute('open','');
+        expect(await slideAudio.evaluate(el=>(el as HTMLAudioElement).paused)).toBe(true);
         // A full reload retains speed but never starts audio.
         await page.reload();
         await expect(page.locator('[data-lesson-heading]')).toBeVisible();

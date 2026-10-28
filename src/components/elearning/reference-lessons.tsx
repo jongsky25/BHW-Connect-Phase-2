@@ -29,7 +29,7 @@ import { RelationshipLearningVisual } from './relationship-learning-visual';
 import { relationshipLearningVisual } from '@/lib/elearning/relationship-learning-visuals';
 import {isHepoPresentation, hepoSlideDisplay} from '@/lib/elearning/hepo-presentation';
 import {HepoPresentationGuide} from './hepo-presentation-guide';
-import {enterNarrationScope} from '@/lib/elearning/narration-preferences';
+import {enterNarrationScope, pauseNarrationContinuation, shouldContinueNarration} from '@/lib/elearning/narration-preferences';
 import {prioritizationNarratedLesson} from '@/lib/elearning/prioritization-narrated-lesson';
 import {NarrationAccessGuide} from './narration-access-guide';
 import {LessonLanguagePanel} from './lesson-language-panel';
@@ -177,7 +177,7 @@ export function ReferenceLessons(props: Props) {
   const lesson = sourceLesson && translation ? translateLesson(sourceLesson, translation) : sourceLesson;
   const ui: LessonText = (fil, eng) => translation?.ui[fil] ?? (translation ? storyQuestionUi[translation.language][fil] : undefined) ?? (en ? eng : fil);
   const lessonNarration = translation ? translation.narration : (lesson ? props.narration?.[lesson.id] : undefined);
-  const narrationScope = !videoSelected && mode === "read" && lesson ? `${lesson.id}:${lesson.revision.id}:${props.locale}:${translation?.language ?? ""}` : undefined;
+  const narrationScope = !videoSelected && lesson ? `${lesson.id}:${lesson.revision.id}:${props.locale}:${translation?.language ?? ""}${mode === "slides" ? ":slides" : ""}` : undefined;
   useEffect(() => {
     enterNarrationScope(narrationScope);
     return () => enterNarrationScope();
@@ -300,6 +300,10 @@ export function ReferenceLessons(props: Props) {
       : lesson.revision.slides
     : [];
   const item = items.find((p) => p.id === position) ?? items[0];
+  useEffect(() => {
+    // A check must never start its newly unlocked full narration on answer.
+    if (mode === "slides" && item?.check) enterNarrationScope();
+  }, [mode, item?.id, item?.check]);
   const index = item ? items.findIndex((p) => p.id === item.id) : 0;
   const done = new Set(completed.map((p) => p.lesson_id));
   const required = lessons.filter((l) => l.required);
@@ -681,9 +685,14 @@ export function ReferenceLessons(props: Props) {
             </div>}
             {!storyLayout && !listeningRevision && !clarificationRevision && !recordingRevision && !handoffRevision && !causesRevision && !definitionRevision && !prioritizationRevision && !actionPlanRevision && !safetyPrepareRevision && !safetyIdentifyRevision && !controlsRevision && !demonstrationRevision && !resourcesAuditRevision && !resourcesSafeChangeRevision && !resourcesMonitorRevision && (revealSummary || selfManagementRevision || lesson.lesson_key === "communication-explain" || lesson?.lesson_key === "bhw-right-contact" || lesson?.lesson_key === "bhw-local-partners" || (lesson?.lesson_key === "bhw-teamwork" && item.asset_ids.includes("malou-teamwork"))) && figures}
             {revealSummary && slideReadSection && lessonNarration?.[slideReadSection.id] && (
-              <details key={lesson.id + item.id + props.locale} className="mt-5 rounded-lg border border-ink/15 p-3"
+              <details key={lesson.id + item.id + props.locale} ref={element => {
+                if (element && !item.check && shouldContinueNarration(narrationScope)) element.open = true;
+              }} className="mt-5 rounded-lg border border-ink/15 p-3"
                 onToggle={event => {
-                  if (!event.currentTarget.open) event.currentTarget.querySelector("audio")?.pause();
+                  if (!event.currentTarget.open) {
+                    pauseNarrationContinuation();
+                    event.currentTarget.querySelector("audio")?.pause();
+                  }
                 }}>
                 <summary className="min-h-[44px] cursor-pointer font-semibold">
                   {ui("Buong salaysay at audio", "Full narration and audio")}
@@ -694,6 +703,8 @@ export function ReferenceLessons(props: Props) {
                   body={en ? slideReadSection.body_en : slideReadSection.body_fil}
                   takeaway={(en ? slideReadSection.takeaway_en : slideReadSection.takeaway_fil) ?? ""}
                   narration={lessonNarration[slideReadSection.id]}
+                  continuationScope={!item.check ? narrationScope : undefined}
+                  continuationKind="slides"
                   en={en} text={ui}
                 />
               </details>

@@ -1,0 +1,39 @@
+{
+  "purpose": "Add explicit same-lesson Slides narration continuation without changing authored media, answer gates or historical reader releases.",
+  "base_commit": "92370cae86d0f3255af1b8b177b8265496e32a86",
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "d4fc4e73ae386a56c3f91df4f2d2945726cace7825f97972ef3357eaccf67014",
+  "successor_sha256": "2f017df690aa96b7b875266b0ec1f9c2b14e702e963cfae8b5171e381f1ad2d1",
+  "replacements": [
+    {
+      "predecessor_utf8": "import {enterNarrationScope} from '@/lib/elearning/narration-preferences';",
+      "current_utf8": "import {enterNarrationScope, pauseNarrationContinuation, shouldContinueNarration} from '@/lib/elearning/narration-preferences';",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "  const narrationScope = !videoSelected && mode === \"read\" && lesson ? `${lesson.id}:${lesson.revision.id}:${props.locale}:${translation?.language ?? \"\"}` : undefined;",
+      "current_utf8": "  const narrationScope = !videoSelected && lesson ? `${lesson.id}:${lesson.revision.id}:${props.locale}:${translation?.language ?? \"\"}${mode === \"slides\" ? \":slides\" : \"\"}` : undefined;",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "  const item = items.find((p) => p.id === position) ?? items[0];",
+      "current_utf8": "  const item = items.find((p) => p.id === position) ?? items[0];\n  useEffect(() => {\n    // A check must never start its newly unlocked full narration on answer.\n    if (mode === \"slides\" && item?.check) enterNarrationScope();\n  }, [mode, item?.id, item?.check]);",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "              <details key={lesson.id + item.id + props.locale} className=\"mt-5 rounded-lg border border-ink/15 p-3\"",
+      "current_utf8": "              <details key={lesson.id + item.id + props.locale} ref={element => {\n                if (element && !item.check && shouldContinueNarration(narrationScope)) element.open = true;\n              }} className=\"mt-5 rounded-lg border border-ink/15 p-3\"",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "                  if (!event.currentTarget.open) event.currentTarget.querySelector(\"audio\")?.pause();",
+      "current_utf8": "                  if (!event.currentTarget.open) {\n                    pauseNarrationContinuation();\n                    event.currentTarget.querySelector(\"audio\")?.pause();\n                  }",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "                  narration={lessonNarration[slideReadSection.id]}",
+      "current_utf8": "                  narration={lessonNarration[slideReadSection.id]}\n                  continuationScope={!item.check ? narrationScope : undefined}\n                  continuationKind=\"slides\"",
+      "count": 1
+    }
+  ]
+}

@@ -15,10 +15,10 @@ it('pins only three listening-scope additions and reconstructs the full released
  expect(createHash('sha256').update(beforeFeedbackNarratedLesson(r.path)).digest('hex')).toBe(r.successor_sha256);
  expect(beforeFeedbackNarrationPreferences(r.path)).toEqual(execFileSync('git',['show',r.base_commit+':'+r.path]));
  const reader=fs.readFileSync(r.path,'utf8');
- expect(reader).toContain('!videoSelected && mode === "read" && lesson');
+ expect(reader).toContain('!videoSelected && lesson');
  expect(reader).toContain('continuationScope={narrationScope}');
  expect(reader).toContain('narration={revealSummary ? lessonNarration?.[item.id] : undefined}');
- expect(reader.match(/continuationScope=/g)).toHaveLength(1);
+ expect(reader.match(/continuationScope=/g)).toHaveLength(2);
 });
 it('retains every authored lesson, recording, timing, translation and media byte',()=>{
  const media=JSON.parse(fs.readFileSync('src/lib/elearning/prioritization-narrated-lesson.json'));

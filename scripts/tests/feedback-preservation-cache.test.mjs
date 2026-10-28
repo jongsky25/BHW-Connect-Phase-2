@@ -28,7 +28,7 @@ it('rechecks disk after both caches warm, rejects mutation and accepts restored 
   fs.mkdirSync(directory+'/src/components/elearning',{recursive:true});
   fs.mkdirSync(directory+'/docs/feedback-remediation',{recursive:true});
   fs.copyFileSync(path,directory+'/'+path);
-  for(const file of ['fb-5.2c-reader-preservation.json','fb-4.3-reader-preservation.json','fb-4.2b-reader-preservation.json'])
+  for(const file of ['feedback-item-16-reader-preservation.json','fb-5.2c-reader-preservation.json','fb-4.3-reader-preservation.json','fb-4.2b-reader-preservation.json'])
    fs.copyFileSync('docs/feedback-remediation/'+file,directory+'/docs/feedback-remediation/'+file);
   const script=`import fs from 'node:fs';import assert from 'node:assert/strict';
    import {beforeFeedbackLanguageAvailability as language} from ${JSON.stringify(language)};
