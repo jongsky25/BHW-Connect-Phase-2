@@ -7,6 +7,39 @@ The owner wants each remaining report handled **one at a time**, with an updated
 remaining count after **every** item. Do the next item autonomously when asked;
 do not ask the owner to collect examples that can be checked in the system.
 
+## Owner clarification — 28 October 2026
+
+The owner explicitly clarified: **“per item to review, fix if applicable, or
+tag will not fix. not just review.”** This overrides the review-only treatment
+of the first nine queue items. Their correction and final decisions are in
+[the first-nine fix-or-decline receipt](first-nine-fix-or-decline-2026-10-28.md).
+
+That correction is complete: **items 1, 3, 6 and 7 are fixed/resolved; items
+2, 4, 5, 8 and 9 are tagged will_not_fix/dismissed**, with individual reasons.
+The queue now has **9/55 reviewed and closed, 46 awaiting review**. Fresh live
+counts after the correction were **46 open (41 new, 5 in_review)**, including
+both owner-deferred reports, and zero new open reports outside the baseline.
+Start the next “next” command at **item 10**. The exact release, publication IDs
+and per-item count receipts are linked above; re-read live status before acting.
+
+“Next” means complete one item's disposition: investigate, implement and release
+a supported fix, or explicitly decline the remaining request as `will_not_fix`
+with a concrete reason. Do not stop after locating an actionable source gap or
+creating another future-work review packet. Mark an addressed report `resolved`
+and an explicitly declined request `dismissed`, with the final decision in the
+queue's `disposition` column and its reason in `finding`. A contextual note is
+not a completed direct source replacement when the report specifically asks
+for the original wording to change. Keep the existing terminal decisions on
+later “next” commands; start at the next pending item.
+
+Use `reviewed_open` only for an actual unresolved blocker that prevents a safe
+disposition, document the blocker, and explain it plainly. An unspecified
+additional rewrite or optional design preference can receive a reasoned
+`will_not_fix` decision rather than remain indefinitely open for examples.
+The two explicit owner deferrals below remain deferred; do not resume or close
+them under this clarification. Continue reporting both baseline-review and fresh
+live-open counts after every individual report.
+
 ## Starting point and counting rule
 
 At the handoff's read-only live check, Spot Feedback had **214 total: 50 `new`,
@@ -92,7 +125,7 @@ screenshot, and continuous Slides narration. Some are feature or policy
 requests; some need evidence before any edit. Keep the four clarification
 reports open until their original scored item or concern is actually resolved.
 
-Current canonical app: <https://bhw-connect-phase-2.vercel.app>, READY
+Canonical app at the original handoff (historical): <https://bhw-connect-phase-2.vercel.app>, READY
 deployment `dpl_5H1Zr4rvLzAJpWN9ATcs4iCpKuCi` on app commit
 `64e314204bbd5b11b1ba08aabd8f13bc6c6721d0` (PR #430). Later PRs through
 #435 were documentation-only; they did not require a new app build. Latest

@@ -65,3 +65,7 @@ both owner-deferred IDs remain open.
 Reviewed baseline items: **1/55**; baseline items awaiting review: **54**;
 live open feedback: **55** (**50 new, 5 in_review**); of these, **2 owner-deferred**;
 new reports since baseline: **0**.
+
+## Final disposition — 28 October 2026
+
+Superseded by the [fix-or-decline receipt](first-nine-fix-or-decline-2026-10-28.md#item-1): **fixed**, live **resolved**. Published the Filipino lisensiya para sa gawaing klinikal replacement in Read and Slides narration, with matching Filipino audio. Retained valid British English licence in English.

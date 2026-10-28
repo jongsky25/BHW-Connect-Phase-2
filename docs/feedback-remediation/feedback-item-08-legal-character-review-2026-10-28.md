@@ -58,3 +58,7 @@ All 55 open IDs belong to the baseline, including both owner-deferred IDs.
 Reviewed baseline items: **8/55**; baseline items awaiting review: **47**;
 live open feedback: **55** (**50 new, 5 in_review**); of these, **2 owner-deferred**;
 new reports since baseline: **0**.
+
+## Final disposition — 28 October 2026
+
+Superseded by the [fix-or-decline receipt](first-nine-fix-or-decline-2026-10-28.md#item-8): **will_not_fix**, live **dismissed**. Decline an additional official-character/story rewrite. Retain the approved fictional health-team helper, role/authority cards and visible statute links; legal legitimacy is established through the source and proper records rather than a character's title.

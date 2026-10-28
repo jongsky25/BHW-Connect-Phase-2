@@ -47,3 +47,7 @@ Only item 4 changes in this increment; the first three remain reviewed_open.
 Reviewed baseline items: **4/55**; baseline items awaiting review: **51**;
 live open feedback: **55** (**50 new, 5 in_review**); of these, **2 owner-deferred**;
 new reports since baseline: **0**.
+
+## Final disposition — 28 October 2026
+
+Superseded by the [fix-or-decline receipt](first-nine-fix-or-decline-2026-10-28.md#item-4): **will_not_fix**, live **dismissed**. No broad additional translation rewrite: the released glossary and clearer approved wet-floor choice address the identified issues, and this report names no further mistranslated sentence.

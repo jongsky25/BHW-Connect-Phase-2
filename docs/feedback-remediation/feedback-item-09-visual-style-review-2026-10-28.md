@@ -55,3 +55,7 @@ baseline, including both owner-deferred IDs.
 Reviewed baseline items: **9/55**; baseline items awaiting review: **46**;
 live open feedback: **55** (**50 new, 5 in_review**); of these, **2 owner-deferred**;
 new reports since baseline: **0**.
+
+## Final disposition — 28 October 2026
+
+Superseded by the [fix-or-decline receipt](first-nine-fix-or-decline-2026-10-28.md#item-9): **will_not_fix**, live **dismissed**. Decline an additional font/background redesign from the general more-lively preference. Retain the released visual hierarchy, authored HEPO Slides, focus panels and contrast correction, and preserve the established themes and readability.

@@ -1,0 +1,254 @@
+{
+  "verification": {
+    "counts": {
+      "new": 41,
+      "resolved": 98,
+      "dismissed": 70,
+      "in_review": 5
+    },
+    "attempts": 45,
+    "responses": 1294,
+    "score_sum": 3943.6,
+    "checked_at": "2026-10-28T02:18:20.335235+00:00",
+    "enrollments": 23,
+    "history_hashes": {
+      "attempts": "c8596c5938144f69bcbef78dec643019",
+      "responses": "36f9eab6e36af857825dec1eedd90815",
+      "enrollments": "4cde5d3a916622139115c10a061a4834"
+    },
+    "bhw_completions": 786,
+    "assessor_completions": 2922
+  },
+  "receipts": [
+    {
+      "number": 1,
+      "detail": {
+        "number": 1,
+        "id": "17c08e60-1a43-415f-ad54-d04de8e1cfa7",
+        "disposition": "fixed",
+        "status": "resolved",
+        "reason": "Published the Filipino lisensiya para sa gawaing klinikal replacement in Read and Slides narration, with matching Filipino audio. Retained valid British English licence in English.",
+        "revision_id": "ac99a005-8262-4897-9dd4-9e58b33eed8c",
+        "hash": "b308c59307f5dfc09c77f1137fc4d675b11d268c918adb3efa4187a23ab0bce9"
+      },
+      "live": {
+        "checked_at": "2026-10-28T02:15:25.523251+00:00",
+        "counts": {
+          "new": 49,
+          "resolved": 95,
+          "dismissed": 65,
+          "in_review": 5
+        },
+        "live_open": 54,
+        "new_since_baseline": 0,
+        "deferred": 2
+      }
+    },
+    {
+      "number": 2,
+      "detail": {
+        "number": 2,
+        "id": "2f32b6c8-ee2c-4ea2-8d3b-56f92a4713fc",
+        "disposition": "will_not_fix",
+        "status": "dismissed",
+        "reason": "No further speculative rewrite: the current UHC Read/narration and released slide qualification explain inclusion versus covered services; the report identifies no other sentence."
+      },
+      "live": {
+        "checked_at": "2026-10-28T02:15:49.426372+00:00",
+        "counts": {
+          "new": 48,
+          "resolved": 95,
+          "dismissed": 66,
+          "in_review": 5
+        },
+        "live_open": 53,
+        "new_since_baseline": 0,
+        "deferred": 2
+      }
+    },
+    {
+      "number": 3,
+      "detail": {
+        "number": 3,
+        "id": "68679ddc-37cc-4797-ad99-093ebdd6994b",
+        "disposition": "fixed",
+        "status": "resolved",
+        "reason": "Published visitor/bisita in place of company representative/kinatawan ng kumpanya in the exact Read and Slides narration, with matching English and Filipino audio. Preserved the offer, Milk Code refusal and answer keys.",
+        "revision_id": "bc1091b3-910d-4e1a-b759-4b8e6e6443a7",
+        "hash": "b57ed597db2633581d612eae7685d46aa3224dc2d43d31bee49e7912288a5f5d"
+      },
+      "live": {
+        "checked_at": "2026-10-28T02:16:11.340284+00:00",
+        "counts": {
+          "new": 47,
+          "resolved": 96,
+          "dismissed": 66,
+          "in_review": 5
+        },
+        "live_open": 52,
+        "new_since_baseline": 0,
+        "deferred": 2
+      }
+    },
+    {
+      "number": 4,
+      "detail": {
+        "number": 4,
+        "id": "8b4fa4bb-84f0-46f8-9d15-351d72f65c54",
+        "disposition": "will_not_fix",
+        "status": "dismissed",
+        "reason": "No broad additional translation rewrite: the released glossary and clearer approved wet-floor choice address the identified issues, and this report names no further mistranslated sentence."
+      },
+      "live": {
+        "checked_at": "2026-10-28T02:16:21.626174+00:00",
+        "counts": {
+          "new": 46,
+          "resolved": 96,
+          "dismissed": 67,
+          "in_review": 5
+        },
+        "live_open": 51,
+        "new_since_baseline": 0,
+        "deferred": 2
+      }
+    },
+    {
+      "number": 5,
+      "detail": {
+        "number": 5,
+        "id": "8f542eb0-9432-4b7c-9664-3972f1a51b13",
+        "disposition": "will_not_fix",
+        "status": "dismissed",
+        "reason": "No additional unspecified curriculum rewrite: retain the released HEPO layouts, learning focus, viewing guidance and Filipino clarification. The mixed praise/readability report supplies no further difficult passage. The separately identified exact sentence is handled as item 6."
+      },
+      "live": {
+        "checked_at": "2026-10-28T02:16:34.001225+00:00",
+        "counts": {
+          "new": 45,
+          "resolved": 96,
+          "dismissed": 68,
+          "in_review": 5
+        },
+        "live_open": 50,
+        "new_since_baseline": 0,
+        "deferred": 2
+      }
+    },
+    {
+      "number": 6,
+      "detail": {
+        "number": 6,
+        "id": "b3f93679-5973-43fc-bb14-6b309c3779d4",
+        "disposition": "fixed",
+        "status": "resolved",
+        "reason": "Published the requested fuller Filipino HEPO role sentence in the Read source, with matching Filipino narration. Preserved the lesson examples and all check choices and keys.",
+        "revision_id": "bc9331ba-e21c-4e52-943e-09b34b5f0de3",
+        "hash": "71f85fe16b606e4d3d806e78a28518ee1444d0fab4842dd43f719be500a15da3"
+      },
+      "live": {
+        "checked_at": "2026-10-28T02:17:00.241446+00:00",
+        "counts": {
+          "new": 44,
+          "resolved": 97,
+          "dismissed": 68,
+          "in_review": 5
+        },
+        "live_open": 49,
+        "new_since_baseline": 0,
+        "deferred": 2
+      }
+    },
+    {
+      "number": 7,
+      "detail": {
+        "number": 7,
+        "id": "b54209d3-cfd6-471d-94c5-2421698a7cc1",
+        "disposition": "fixed",
+        "status": "resolved",
+        "reason": "Published Maging bukas muna, hanapin ang linaw as both Filipino Read and Slides headings, with matching timed Filipino narration.",
+        "revision_id": "1929bbec-5a77-474f-8c3c-a09ba45f630c",
+        "hash": "866eb828d42c12f36121a713ab2a88c4e56c2bbc12f95459e0429ff093a74813"
+      },
+      "live": {
+        "checked_at": "2026-10-28T02:17:28.465148+00:00",
+        "counts": {
+          "new": 43,
+          "resolved": 98,
+          "dismissed": 68,
+          "in_review": 5
+        },
+        "live_open": 48,
+        "new_since_baseline": 0,
+        "deferred": 2
+      }
+    },
+    {
+      "number": 8,
+      "detail": {
+        "number": 8,
+        "id": "28d88de9-89d3-4a9a-a877-bc624030fd2c",
+        "disposition": "will_not_fix",
+        "status": "dismissed",
+        "reason": "Decline an additional official-character/story rewrite. Retain the approved fictional health-team helper, role/authority cards and visible statute links; legal legitimacy is established through the source and proper records rather than a character's title."
+      },
+      "live": {
+        "checked_at": "2026-10-28T02:17:38.265374+00:00",
+        "counts": {
+          "new": 42,
+          "resolved": 98,
+          "dismissed": 69,
+          "in_review": 5
+        },
+        "live_open": 47,
+        "new_since_baseline": 0,
+        "deferred": 2
+      }
+    },
+    {
+      "number": 9,
+      "detail": {
+        "number": 9,
+        "id": "2f1f2eca-6a10-4c5b-a8cd-775d88103a83",
+        "disposition": "will_not_fix",
+        "status": "dismissed",
+        "reason": "Decline an additional font/background redesign from the general more-lively preference. Retain the released visual hierarchy, authored HEPO Slides, focus panels and contrast correction, and preserve the established themes and readability."
+      },
+      "live": {
+        "checked_at": "2026-10-28T02:17:46.965119+00:00",
+        "counts": {
+          "new": 41,
+          "resolved": 98,
+          "dismissed": 70,
+          "in_review": 5
+        },
+        "live_open": 46,
+        "new_since_baseline": 0,
+        "deferred": 2
+      }
+    }
+  ],
+  "merge_sha": "da86308aa1349d0081e51cb9e0e997a162c128bb",
+  "deployment_id": "dpl_EKbLUUb1YgkBYAcSTFuEHQ763wsm",
+  "published": [
+    {
+      "number": 1,
+      "revision_id": "ac99a005-8262-4897-9dd4-9e58b33eed8c",
+      "hash": "b308c59307f5dfc09c77f1137fc4d675b11d268c918adb3efa4187a23ab0bce9"
+    },
+    {
+      "number": 3,
+      "revision_id": "bc1091b3-910d-4e1a-b759-4b8e6e6443a7",
+      "hash": "b57ed597db2633581d612eae7685d46aa3224dc2d43d31bee49e7912288a5f5d"
+    },
+    {
+      "number": 6,
+      "revision_id": "bc9331ba-e21c-4e52-943e-09b34b5f0de3",
+      "hash": "71f85fe16b606e4d3d806e78a28518ee1444d0fab4842dd43f719be500a15da3"
+    },
+    {
+      "number": 7,
+      "revision_id": "1929bbec-5a77-474f-8c3c-a09ba45f630c",
+      "hash": "866eb828d42c12f36121a713ab2a88c4e56c2bbc12f95459e0429ff093a74813"
+    }
+  ]
+}
