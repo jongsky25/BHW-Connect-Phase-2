@@ -43,6 +43,13 @@ for(const r of wordingReleases){
       await db.query('insert into public.course_lesson_facilitator_notes values($1,$2,$3,$4)',[r.base_revision_id,'{}','{}','[]']);
       await db.query("insert into assessor_rollout_private.practice_criteria values($1,'criterion','1',$2,$3,true,null)",[actor,r.lesson_id,r.base_revision_id]);
       await db.query('insert into public.protected_history values(1,$1,87.5)',[r.base_revision_id]);
+      const e=r.edits[0];
+      const drift=structuredClone(rev[e.collection]);
+      delete drift.find(s=>s.id===e.id)[e.field];
+      await db.query('update public.course_lesson_revisions set '+e.collection+'=$1 where id=$2',[JSON.stringify(drift),r.base_revision_id]);
+      await expect(db.exec(sql)).rejects.toThrow(/source wording drift/);
+      await db.exec('rollback;');
+      await db.query('update public.course_lesson_revisions set '+e.collection+'=$1 where id=$2',[JSON.stringify(rev[e.collection]),r.base_revision_id]);
       // A historical practice attempt must stop publication, not rewrite its pin.
       await db.query("insert into assessor_rollout_private.practice_attempts values($1,'criterion','1')",[actor]);
       await expect(db.exec(sql)).rejects.toThrow(/Practice criterion/);

@@ -29,7 +29,7 @@ begin
   for edit in select value from jsonb_array_elements('[{"collection":"read_sections","id":"section-4","field":"body_fil","old":"Bumalik ang kinatawan ng kumpanya sa BHS.","new":"Bumalik ang isang bisita sa BHS."},{"collection":"slides","id":"slide-section-4","field":"narration_fil","old":"Bumalik ang kinatawan ng kumpanya sa BHS.","new":"Bumalik ang isang bisita sa BHS."},{"collection":"read_sections","id":"section-4","field":"body_en","old":"The company representative returns to the BHS","new":"A visitor returns to the BHS"},{"collection":"slides","id":"slide-section-4","field":"narration_en","old":"The company representative returns to the BHS","new":"A visitor returns to the BHS"}]'::jsonb) loop
     sections=case edit->>'collection' when 'read_sections' then next_read when 'slides' then next_slides else null end;
     select ordinality::integer-1 into strict idx from jsonb_array_elements(sections) with ordinality where value->>'id'=edit->>'id';
-    if (length(sections->idx->>(edit->>'field'))-length(replace(sections->idx->>(edit->>'field'),edit->>'old','')))/length(edit->>'old')<>1 then raise exception 'Exact source wording drift'; end if;
+    if coalesce((length(sections->idx->>(edit->>'field'))-length(replace(sections->idx->>(edit->>'field'),edit->>'old','')))/length(edit->>'old'),0)<>1 then raise exception 'Exact source wording drift'; end if;
     sections=jsonb_set(sections,array[idx::text,edit->>'field'],to_jsonb(replace(sections->idx->>(edit->>'field'),edit->>'old',edit->>'new')),false);
     if edit->>'collection'='read_sections' then next_read=sections; else next_slides=sections; end if;
   end loop;

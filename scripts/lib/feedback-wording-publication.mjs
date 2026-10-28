@@ -35,7 +35,7 @@ begin
   for edit in select value from jsonb_array_elements(${literal(JSON.stringify(r.edits))}::jsonb) loop
     sections=case edit->>'collection' when 'read_sections' then next_read when 'slides' then next_slides else null end;
     select ordinality::integer-1 into strict idx from jsonb_array_elements(sections) with ordinality where value->>'id'=edit->>'id';
-    if (length(sections->idx->>(edit->>'field'))-length(replace(sections->idx->>(edit->>'field'),edit->>'old','')))/length(edit->>'old')<>1 then raise exception 'Exact source wording drift'; end if;
+    if coalesce((length(sections->idx->>(edit->>'field'))-length(replace(sections->idx->>(edit->>'field'),edit->>'old','')))/length(edit->>'old'),0)<>1 then raise exception 'Exact source wording drift'; end if;
     sections=jsonb_set(sections,array[idx::text,edit->>'field'],to_jsonb(replace(sections->idx->>(edit->>'field'),edit->>'old',edit->>'new')),false);
     if edit->>'collection'='read_sections' then next_read=sections; else next_slides=sections; end if;
   end loop;
