@@ -8,4 +8,6 @@ The revised media was generated from commit `7ec8e86be4c78aed2a15e8900703f7a777b
 
 The release manifest `src/lib/elearning/feedback-item-12-story-release.json` pins the predecessor lesson and story hashes, each successor media hash, and the new lesson hash. The compiled loader selects only the successor video and captions in a new revision. The guarded SQL in `scripts/lib/feedback-item-12-story-publication.mjs` creates that revision, moves the published pointer, and repoints the one unused practice criterion after checking for attempts. It preserves existing revisions and scores.
 
+The context panel and transcript are matched to both the previous and successor revision hashes. Learners pinned to the previous revision retain its original panel and transcript; the successor receives the new literal spoken text.
+
 Publication and report closure receipt: pending deployment and live verification.
