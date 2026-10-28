@@ -42,8 +42,7 @@ The final release and live-count receipt are in
 [the item 12 packet](feedback-item-12-spoken-story-context-2026-10-28.md).
 The queue is now **12/55 reviewed and closed, 43 awaiting review**. The fresh
 live count after item 12 is **43 open (38 new, 5 in_review)**, including both
-owner-deferred reports and zero new open IDs outside the baseline. Start the
-next “next” command was **item 13**.
+owner-deferred reports and zero new open IDs outside the baseline.
 
 Item 13 is **will_not_fix/dismissed**. The story text accordion now provides an
 exact bilingual transcript beside its video, while Read has the full lesson
@@ -54,6 +53,16 @@ The queue is now **13/55 reviewed and closed, 42 awaiting review**. The fresh
 live count after item 13 is **42 open (37 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 14**; re-read live status before acting.
+
+Item 14 is **will_not_fix/dismissed**. The report names no specific unfriendly
+option or icon and anchors the whole lesson main area. The released header and
+reader controls already have bilingual help, visible zoom labels, and accessible
+touch targets; an additional unspecified redesign was declined for the reasons
+in [the item 14 packet](feedback-item-14-lesson-controls-2026-10-28.md).
+The queue is now **14/55 reviewed and closed, 41 awaiting review**. The fresh
+live count after item 14 is **41 open (36 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 15**; re-read live status before acting.
 
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
