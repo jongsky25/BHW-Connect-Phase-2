@@ -2,6 +2,10 @@ name: Lesson 1.6.3 draft evidence and media
 on:
   workflow_dispatch:
     inputs:
+      story_context_fix:
+        description: Generate the two revised item 12 story recordings and clips
+        type: boolean
+        default: false
       package:
         description: Build final package after exact-head CI and registry pass
         type: boolean
@@ -23,7 +27,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   draft:
-    if: (github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.event_name == 'workflow_dispatch') && !contains(github.event.pull_request.title, 'Approved release')
+    if: (github.head_ref == 'codex/lesson-163-enhancement-handoff' || github.event_name == 'workflow_dispatch') && inputs.story_context_fix != true && !contains(github.event.pull_request.title, 'Approved release')
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
@@ -141,3 +145,46 @@ jobs:
           include-hidden-files: true
           if-no-files-found: error
           retention-days: 30
+
+  item12_context_media:
+    if: github.event_name == 'workflow_dispatch' && inputs.story_context_fix == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Generate exact revised Filipino and English narration
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node scripts/remotion-communication-explain-narrate.mjs fil
+          node scripts/remotion-communication-explain-narrate.mjs en
+      - name: Render revised six-scene clips and measured captions
+        run: |
+          node scripts/remotion-render.mjs CommunicationExplainStoryFil communication-explain-context-fil --public training/bhw-1-6 --with-audio --captions communication-explain/narration-fil.json
+          node scripts/remotion-render.mjs CommunicationExplainStoryEn communication-explain-context-en --public training/bhw-1-6 --with-audio --captions communication-explain/narration-en.json
+      - name: Review actual spoken audio against revised source
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/feedback-item-12-audio-review.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: feedback-item-12-story-media
+          path: |
+            remotion/public/communication-explain/narration-fil.mp3
+            remotion/public/communication-explain/narration-fil.json
+            remotion/public/communication-explain/narration-en.mp3
+            remotion/public/communication-explain/narration-en.json
+            public/training/bhw-1-6/communication-explain-context-*
+            docs/feedback-remediation/feedback-item-12-audio-review.json
+          if-no-files-found: error
+          retention-days: 14

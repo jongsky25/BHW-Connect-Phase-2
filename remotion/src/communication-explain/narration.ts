@@ -10,8 +10,8 @@ export const COMMUNICATION_EXPLAIN_BEATS = [
   },
   {
     "id": "family-planning",
-    "fil": "Kay Jo, pakinggan ang takot at igalang ang pagpili. Kung gusto niya, alamin sa health team ang kwalipikadong contact. Hindi si Gibs ang pipili ng paraan.",
-    "en": "With Jo, hear her concern and respect choice. If she wants, identify a qualified contact through the health team. Gibs does not choose a method.",
+    "fil": "Nababahala si Jo sa narinig tungkol sa family planning at gusto niyang siya ang pumili. Pakinggan siya. Kung gusto niya, alamin ang kwalipikadong contact sa health team. Hindi si Gibs ang pipili ng paraan.",
+    "en": "Jo is worried by something she heard about family planning and wants to choose for herself. Hear her concern. If she wants, identify a qualified contact through the health team. Gibs does not choose a method.",
     "title_fil": "May sariling pagpili",
     "title_en": "Respect choice",
     "detail_fil": "Alamin ang contact",
@@ -19,8 +19,8 @@ export const COMMUNICATION_EXPLAIN_BEATS = [
   },
   {
     "id": "distress",
-    "fil": "Kay Ben, makinig nang walang diagnosis. Alamin ang kwalipikadong contact; hindi pa kumpirmado ang oras. Sa tunay na agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.",
-    "en": "With Ben, listen without diagnosing. Identify a qualified contact; the time is unconfirmed. In real immediate danger, do not delay help for an ordinary interview.",
+    "fil": "Ilang linggo nang malungkot si Ben at gusto niyang may makausap. Makinig nang walang diagnosis. Alamin ang kwalipikadong contact; hindi pa kumpirmado ang oras. Sa tunay na agarang panganib, huwag antalahin ang tulong para sa ordinaryong interview.",
+    "en": "Ben has felt low for weeks and wants someone to talk to. Listen without diagnosing. Identify a qualified contact; the time is unconfirmed. In real immediate danger, do not delay help for an ordinary interview.",
     "title_fil": "Makinig, huwag mag-diagnose",
     "title_en": "Listen without diagnosing",
     "detail_fil": "Tulong ayon sa lokal na procedure",
@@ -28,8 +28,8 @@ export const COMMUNICATION_EXPLAIN_BEATS = [
   },
   {
     "id": "smoking",
-    "fil": "Kay Ramon, humingi ng pahintulot at pakinggan ang layunin. Hindi magbibigay o pipili ng gamot si Gibs. Alamin muna ang contact sa health team at suriin ang pagkaunawa.",
-    "en": "With Ramon, ask permission and hear his goal. Gibs does not give or choose medicine. First identify the health-team contact and check understanding.",
+    "fil": "Gustong bawasan ni Ramon ang paninigarilyo; hadlang ang stress. Humingi ng pahintulot at makinig. Hindi magbibigay o pipili ng gamot si Gibs. Alamin muna ang contact sa health team at suriin ang pagkaunawa.",
+    "en": "Ramon wants to cut down smoking; stress gets in the way. Ask permission and hear his goal. Gibs does not give or choose medicine. First identify the health-team contact and check understanding.",
     "title_fil": "Walang paninisi",
     "title_en": "Without blame",
     "detail_fil": "Layunin → isang hakbang",
