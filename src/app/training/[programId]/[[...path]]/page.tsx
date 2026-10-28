@@ -239,7 +239,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const started=new Map(mine?.lessons.map(l=>[l.id,l.state]));
         const guideView:SubchapterGuideView=view==='competency'||view==='activities'||view==='run'||view==='bhws'||view==='slides'?view:'learning';
         const guide=facilitator?await loadSubchapterGuide(db,{courseId:course.id,moduleId:subchapter.id,lessons:own,lang:loc,
-          lessonHref:id=>`${moduleHref}/${id}`,includeRoster:guideView==='bhws'}):null;
+          lessonHref:id=>`${moduleHref}/${id}`,includeRoster:guideView==='bhws',
+          includeVisuals:guideView==='competency' && subchapter.id==='5a915215-7237-4211-a189-8d75664d05b6'}):null;
         if(guide)intro=text('Pumili ng bahagi ng gabay o buksan ang BHW Slides.','Choose a guide section or open BHW Slides.');
         const lessonCards=<ol className="grid gap-3">{own.map((l,i)=><li key={l.id}><Link className={card} prefetch={false} href={guide?`${moduleHref}/${l.id}?view=lesson&mode=slides`:`${moduleHref}/${l.id}`}>
           <h2 className="font-semibold">{i+1}. {title(l)}</h2>

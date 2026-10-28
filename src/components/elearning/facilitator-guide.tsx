@@ -10,6 +10,8 @@ import {
 } from "@/components/elearning/facilitator-roster";
 import { parseFacilitatorNotes, type CompetencyObservation, type TestItemStat } from "@/lib/elearning/facilitator-guide";
 import type { CourseModuleFacilitatorNotes, CourseSessionDelivery, ObservationIndicator } from "@/lib/elearning/types";
+import type { CourseModuleVisual } from "@/lib/elearning/types";
+import { sanitizeSvgMarkup } from "@/lib/elearning/svg-allowlist";
 
 // Facilitator guide for the manual's subchapter and lesson pages. Server
 // components only; rendered only for assessor/admin viewers, from notes RLS
@@ -90,6 +92,7 @@ export function SubchapterFacilitatorGuide({
   view,
   href,
   slidesContent,
+  visuals = [],
 }: {
   lang: Lang;
   lessons: GuideLesson[];
@@ -103,6 +106,7 @@ export function SubchapterFacilitatorGuide({
   view: SubchapterGuideView;
   href: string;
   slidesContent: ReactNode;
+  visuals?: CourseModuleVisual[];
 }) {
   const indicators = notes?.observation_indicators ?? [];
   const rosterIndicators: RosterIndicator[] = indicators.map((i) => ({
@@ -184,6 +188,22 @@ export function SubchapterFacilitatorGuide({
         ) : (
           <p className="text-ink/85">{pick(lang, "Wala pang indicator para sa subchapter na ito.", "No indicators authored for this subchapter yet.")}</p>
         )}
+        {visuals.length > 0 && <section aria-label={pick(lang, "Mga dayagram bilang sanggunian", "Reference diagrams")} className="space-y-3 border-t border-ink/15 pt-4">
+          <h3 className="text-lg font-semibold">{pick(lang, "Mga dayagram bilang sanggunian", "Reference diagrams")}</h3>
+          <p>{pick(lang,
+            "Ipinapakita ng mga dayagram ang mga tungkulin at daloy ng talaan. Gamitin ang buong pamantayan sa itaas sa pagmamasid at pagmamarka.",
+            "These diagrams show the roles and record flow. Use the full criteria above when observing and rating a BHW.")}</p>
+          <div className="grid gap-3 lg:grid-cols-3">{visuals.map(visual => {
+            const svg = visual.svg_markup ? sanitizeSvgMarkup(visual.svg_markup) : null;
+            const alt = pick(lang, visual.alt_text_fil, visual.alt_text_en);
+            return (svg || visual.image_url) && <figure key={visual.id} className="min-w-0 space-y-2 rounded-lg border border-ink/15 p-3">
+              {svg ? <div role="img" aria-label={alt} className="overflow-x-auto" dangerouslySetInnerHTML={{__html:svg}} />
+                // eslint-disable-next-line @next/next/no-img-element
+                : <img src={visual.image_url!} alt={alt} className="w-full" />}
+              <figcaption>{pick(lang, visual.caption_fil, visual.caption_en)}</figcaption>
+            </figure>;
+          })}</div>
+        </section>}
       </Section>}
 
       {view === "activities" && <ActivityLibrary activities={notes?.activities ?? []} lang={lang}/>}

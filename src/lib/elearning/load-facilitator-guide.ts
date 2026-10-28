@@ -11,6 +11,7 @@ import type {
   CourseLesson,
   CourseLessonFacilitatorNotes,
   CourseModuleFacilitatorNotes,
+  CourseModuleVisual,
   CourseSessionDelivery,
   StableLessonSection,
 } from "@/lib/elearning/types";
@@ -30,17 +31,18 @@ type AttemptRow = { bhw_user_id: string; phase: "pretest" | "posttest"; score_pe
 
 export async function loadSubchapterGuide(
   db: SupabaseClient,
-  { courseId, moduleId, lessons, lang, lessonHref, includeRoster }: {
+  { courseId, moduleId, lessons, lang, lessonHref, includeRoster, includeVisuals = false }: {
     courseId: string;
     moduleId: string;
     lessons: CourseLesson[];
     lang: Lang;
     lessonHref: (lessonId: string) => string;
     includeRoster: boolean;
+    includeVisuals?: boolean;
   },
 ) {
   const revisionIds = lessons.map((l) => l.published_revision_id).filter((id): id is string => Boolean(id));
-  const [notes, revisions, users, progress, attempts, observations, deliveries] = await Promise.all([
+  const [notes, revisions, users, progress, attempts, observations, deliveries, visuals] = await Promise.all([
     db.from("course_module_facilitator_notes").select("*").eq("module_id", moduleId).maybeSingle<CourseModuleFacilitatorNotes>(),
     revisionIds.length
       ? db.from("course_lesson_revisions").select("id,read_sections").in("id", revisionIds)
@@ -59,8 +61,12 @@ export async function loadSubchapterGuide(
     // Where this subchapter has been run in the viewer's area (RLS-scoped).
     db.from("course_session_deliveries").select("id,session_id,module_id,duration_minutes,notes,recorded_at")
       .eq("module_id", moduleId).order("recorded_at", { ascending: false }).limit(5).returns<CourseSessionDelivery[]>(),
+    includeVisuals ? db.from("course_module_visuals")
+      .select("id,module_id,position,primitive,svg_markup,image_url,caption_fil,caption_en,alt_text_fil,alt_text_en,tier")
+      .eq("module_id", moduleId).order("position").returns<CourseModuleVisual[]>()
+      : Promise.resolve({ data: [] as CourseModuleVisual[], error: null }),
   ]);
-  for (const result of [notes, revisions, users, progress, attempts, observations, deliveries]) {
+  for (const result of [notes, revisions, users, progress, attempts, observations, deliveries, visuals]) {
     if (result.error) throw new Error("Unable to load the facilitator guide");
   }
 
@@ -102,6 +108,7 @@ export async function loadSubchapterGuide(
     rosterTruncated: all.length > ROSTER_LIMIT,
     observations: observations.data ?? [],
     deliveries: deliveries.data ?? [],
+    visuals: visuals.data ?? [],
   };
 }
 

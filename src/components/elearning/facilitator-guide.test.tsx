@@ -6,8 +6,10 @@ import { LessonFacilitatorGuide, SubchapterFacilitatorGuide } from "./facilitato
 import activityCards from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/activities.json";
 import competency from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/competency.json";
 import moduleContent from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/module.json";
+import visualContent from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/visuals/visuals.json";
+import { readFileSync } from "node:fs";
 import type { FacilitatorActivity } from "@/lib/elearning/activities";
-import type { CourseModuleFacilitatorNotes } from "@/lib/elearning/types";
+import type { CourseModuleFacilitatorNotes, CourseModuleVisual } from "@/lib/elearning/types";
 
 const state = vi.hoisted(() => ({ rpc: vi.fn(), refresh: vi.fn() }));
 vi.mock("next/navigation", () => ({ useRouter: () => ({ refresh: state.refresh }) }));
@@ -20,6 +22,15 @@ beforeEach(() => {
 afterEach(cleanup);
 
 describe("SubchapterFacilitatorGuide", () => {
+  const sourceVisuals: CourseModuleVisual[] = visualContent.visuals.map((visual, index) => ({
+    ...visual,
+    id: `visual-${index}`,
+    module_id: "module-1",
+    primitive: visual.primitive as CourseModuleVisual["primitive"],
+    tier: visual.tier as CourseModuleVisual["tier"],
+    svg_markup: readFileSync(`content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/visuals/${visual.file}`, "utf8"),
+    image_url: null,
+  }));
   const shared = {
     lang: "fil" as const,
     lessons: [],
@@ -57,6 +68,18 @@ describe("SubchapterFacilitatorGuide", () => {
     }
     expect(state.rpc).not.toHaveBeenCalled();expect(state.refresh).not.toHaveBeenCalled();
     expect(new Set([...container.querySelectorAll('[id]')].map(n=>n.id)).size).toBe(container.querySelectorAll('[id]').length);
+  });
+  it.each(['en','fil'] as const)('shows the three approved HEPO diagrams as references without changing the rubric (%s)',lang=>{
+    const notes={...competency,id:'n',module_id:'module-1',notes_en:'',notes_fil:''};
+    render(<SubchapterFacilitatorGuide {...shared} lang={lang} notes={notes} view="competency" visuals={sourceVisuals}/>);
+    const references=screen.getByRole('region',{name:lang==='en'?'Reference diagrams':'Mga dayagram bilang sanggunian'});
+    expect(within(references).getAllByRole('img')).toHaveLength(3);
+    for(const visual of visualContent.visuals){
+      expect(within(references).getByRole('img',{name:visual[`alt_text_${lang}`]})).toBeVisible();
+      expect(within(references).getByText(visual[`caption_${lang}`])).toBeVisible();
+    }
+    expect(screen.getAllByText(lang==='en'?'Compare the three levels':'Ihambing ang tatlong antas')).toHaveLength(4);
+    expect(state.rpc).not.toHaveBeenCalled();
   });
   it('handles missing notes and objectives without fabricated criteria or shortcuts',()=>{
     const {rerender}=render(<SubchapterFacilitatorGuide {...shared} lang="en" view="competency"/>);
