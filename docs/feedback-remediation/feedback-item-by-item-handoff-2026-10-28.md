@@ -87,6 +87,18 @@ live count after item 16 is **39 open (34 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 17**; re-read live status before acting.
 
+Item 17 was **fixed/resolved** as an offline-availability information gap. The
+published manual entry now answers the question in Filipino and English: there
+is no complete offline version; pages opened online may remain readable on the
+same device while the pilot PWA flag is enabled, but new content, media and
+saves still need internet. The release and live-count receipt are in
+[the item 17 packet](feedback-item-17-offline-manual-availability-2026-10-28.md).
+The queue is now **17/55 reviewed and closed, 38 awaiting review**. The fresh
+live count after item 17 is **38 open (33 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 18**; re-read
+live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
