@@ -33,8 +33,17 @@ lesson was declined for the specific reasons in
 [the item 11 packet](feedback-item-11-visual-variety-2026-10-28.md). The queue
 is now **11/55 reviewed and closed, 44 awaiting review**. The fresh live count
 after item 11 is **44 open (39 new, 5 in_review)**, including both owner-deferred
-reports and zero new open IDs outside the baseline. Start the next “next”
-command at **item 12**; re-read live status before acting.
+reports and zero new open IDs outside the baseline.
+
+Item 12 was **fixed/resolved**. The published spoken Lesson 1.6.3 story now
+names Jo’s, Ben’s and Ramon’s situations in both languages, with matching
+captions. Its previous revision and media remain available for pinned learners.
+The final release and live-count receipt are in
+[the item 12 packet](feedback-item-12-spoken-story-context-2026-10-28.md).
+The queue is now **12/55 reviewed and closed, 43 awaiting review**. The fresh
+live count after item 12 is **43 open (38 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 13**; re-read live status before acting.
 
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
