@@ -197,7 +197,7 @@ export function SubchapterFacilitatorGuide({
             const svg = visual.svg_markup ? sanitizeSvgMarkup(visual.svg_markup) : null;
             const alt = pick(lang, visual.alt_text_fil, visual.alt_text_en);
             return (svg || visual.image_url) && <figure key={visual.id} className="min-w-0 space-y-2 rounded-lg border border-ink/15 p-3">
-              {svg ? <div role="img" aria-label={alt} className="overflow-x-auto" dangerouslySetInnerHTML={{__html:svg}} />
+              {svg ? <div role="img" aria-label={alt} className="text-ink [&_svg]:block [&_svg]:h-auto [&_svg]:w-full" dangerouslySetInnerHTML={{__html:svg}} />
                 // eslint-disable-next-line @next/next/no-img-element
                 : <img src={visual.image_url!} alt={alt} className="w-full" />}
               <figcaption>{pick(lang, visual.caption_fil, visual.caption_en)}</figcaption>
