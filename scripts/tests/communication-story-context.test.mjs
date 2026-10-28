@@ -4,12 +4,13 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {expect,it} from 'vitest';
 import {loadReferenceModule,contentHash} from '../lib/reference-content.mjs';
-import {COMMUNICATION_EXPLAIN_BEATS} from '../../remotion/src/communication-explain/narration.ts';
+import {COMMUNICATION_EXPLAIN_BEATS} from '../../remotion/src/communication-explain/narration-context.ts';
 import {beforeFeedbackStoryContext} from '../lib/feedback-story-preservation.mjs';
+import {applyApprovedReferenceReleases} from '../lib/safety-identify-copy-release.mjs';
 
 it('binds case excerpts to approved Read and literal transcript paragraphs to the unchanged captions and narration script',()=>{
  const data=JSON.parse(fs.readFileSync('src/lib/elearning/communication-story-context.json'));
- const lesson=loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public').lessons.find(l=>l.manifest.lesson_key===data.lesson_key);
+ const lesson=applyApprovedReferenceReleases(loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public')).lessons.find(l=>l.manifest.lesson_key===data.lesson_key);
  expect(contentHash(lesson)).toBe(data.content_hash);
  const asset=lesson.revision.assets.find(a=>a.id===data.story_asset_id);
  const sha=b=>createHash('sha256').update(b).digest('hex');

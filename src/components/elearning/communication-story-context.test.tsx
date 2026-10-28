@@ -3,12 +3,22 @@ import {afterEach, expect, it, vi} from 'vitest';
 import {loadReferenceModule,contentHash} from '../../../scripts/lib/reference-content.mjs';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
 import {communicationStorySupplement} from '@/lib/elearning/communication-story-context';
+import {applyApprovedReferenceReleases} from '../../../scripts/lib/safety-identify-copy-release.mjs';
 
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
 afterEach(cleanup);
-const authored=loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public').lessons.find(l=>l.manifest.lesson_key==='communication-explain')!;
+const authored=applyApprovedReferenceReleases(loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public')).lessons.find((l: {manifest: {lesson_key: string}})=>l.manifest.lesson_key==='communication-explain')!;
 const lesson={...authored.manifest,id:'lesson',revision:{...authored.revision,id:'revision',content_hash:contentHash(authored)}} as ReferenceData['lessons'][number];
 const asset=lesson.revision.assets.find(a=>a.id===lesson.revision.featured_asset_id)!;
+
+it('keeps the audited context and transcript for learners pinned to the predecessor',()=>{
+  const prior=loadReferenceModule('content/training/day1-basic-competencies/modules/06-komunikasyon','public').lessons.find((l: {manifest: {lesson_key: string}})=>l.manifest.lesson_key==='communication-explain')!;
+  const pinned={...prior.manifest,id:'old-lesson',revision:{...prior.revision,id:'old-revision',content_hash:contentHash(prior)}} as ReferenceData['lessons'][number];
+  const priorAsset=pinned.revision.assets.find(a=>a.id===pinned.revision.featured_asset_id)!;
+  const supplement=communicationStorySupplement(pinned,priorAsset,true);
+  expect(supplement?.cases.map(c=>c.name)).toEqual(['Liza','Jo','Ben','Ramon']);
+  expect(supplement?.transcript.paragraphs[1]).toContain('With Jo, hear her concern');
+});
 
 it.each([true,false])('introduces the actual cases and caption transcript only in the story view, including fullscreen (en=%s)',en=>{
   const show=HTMLDialogElement.prototype.showModal,close=HTMLDialogElement.prototype.close;

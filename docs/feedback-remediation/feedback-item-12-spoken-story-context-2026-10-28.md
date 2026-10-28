@@ -1,0 +1,13 @@
+# Feedback queue item 12 — spoken story case context
+
+Feedback `74fc1ea8-8f4b-476f-81f2-22717abb68c1` says the narrated Lesson 1.6.3 story disconnects Liza, Jo, Ben, and Ramon from the choices that follow. The earlier FB-4.1c release added a "Before you watch" panel and transcript, but the selected spoken story still did not name Jo's family-planning worry and wish to choose, Ben's weeks of low mood and wish to talk, or Ramon's smoking goal and stress barrier. This report therefore needs a direct narration replacement.
+
+The successor retains all six scenes and the approved visual treatment. New Filipino and English recordings name the missing case context in the spoken beats and measured captions. The Liza beat still says that asking the midwife about scheduling is the first step and that no appointment is promised. The other beats preserve choice, qualified contact, no diagnosis, immediate-danger help, no medicine selection, and teach-back repair/recheck. Read, Slides, answer keys, facilitator notes, and all earlier public video/caption files remain unchanged.
+
+The revised media was generated from commit `7ec8e86be4c78aed2a15e8900703f7a777b44071` in workflow run `40634521177`. The generated MP3 files are 80.849 seconds (Filipino) and 80.196 seconds (English). [The model audio review](feedback-item-12-audio-review.json) compared actual MP3 bytes to each six-beat script: both were audible through the end with zero omissions; its noted Filipino contractions and English pronunciation do not change the meaning. This is model-assisted listening, not a human or clinical approval claim. The media job is reproducible without changing the checked-in predecessor narration: it temporarily compiles the successor source in CI and exports the resulting audio under `narration-context-*` names.
+
+The release manifest `src/lib/elearning/feedback-item-12-story-release.json` pins the predecessor lesson and story hashes, each successor media hash, and the new lesson hash. The compiled loader selects only the successor video and captions in a new revision. The guarded SQL in `scripts/lib/feedback-item-12-story-publication.mjs` creates that revision, moves the published pointer, and repoints the one unused practice criterion after checking for attempts. It preserves existing revisions and scores.
+
+The context panel and transcript are matched to both the previous and successor revision hashes. Learners pinned to the previous revision retain its original panel and transcript; the successor receives the new literal spoken text.
+
+Publication and report closure receipt: pending deployment and live verification.
