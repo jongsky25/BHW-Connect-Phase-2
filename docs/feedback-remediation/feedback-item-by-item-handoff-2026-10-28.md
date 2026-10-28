@@ -43,7 +43,17 @@ The final release and live-count receipt are in
 The queue is now **12/55 reviewed and closed, 43 awaiting review**. The fresh
 live count after item 12 is **43 open (38 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
-next “next” command at **item 13**; re-read live status before acting.
+next “next” command was **item 13**.
+
+Item 13 is **will_not_fix/dismissed**. The story text accordion now provides an
+exact bilingual transcript beside its video, while Read has the full lesson
+explanations. Moving that text alternative into Read was declined for the
+report-specific reasons in
+[the item 13 packet](feedback-item-13-story-transcript-placement-2026-10-28.md).
+The queue is now **13/55 reviewed and closed, 42 awaiting review**. The fresh
+live count after item 13 is **42 open (37 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 14**; re-read live status before acting.
 
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
