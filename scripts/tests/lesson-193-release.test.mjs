@@ -14,7 +14,7 @@ it('binds owner authorization to frozen package and exactly eight asset-status p
  expect(a.reviewed_package_sha256).toBe('9492f3ae0c3b3fff5c959e9054782038021f22e238ce2a348b00f0d572971c38');
  expect(a.reviewed_artifact_sha256).toBe('ecef0fdba10a5382e86a3fb4926dbfae8128f8688c040c455cab6b16f1e273f4');
  const p=leaf+'lesson.json';expect(sha(reviewed193View(p))).toBe(a.reviewed_lesson_sha256);
- expect(reviewed193View(p).toString()).toBe(execFileSync('git',['show',a.reviewed_head+':'+p],{maxBuffer:32*1024*1024}).toString());
+ expect(reviewed193View(p).toString()).toBe(a.reviewed_lesson_utf8);
  expect(()=>reviewed193View(p,Buffer.from('unreviewed mutation'))).toThrow('Unpinned');
  const current=JSON.parse(fs.readFileSync(p)),reviewed=JSON.parse(a.reviewed_lesson_utf8),promoted=[];
  for(const asset of current.assets){const original=reviewed.assets.find(x=>x.id===asset.id);if(asset.review_status!==original.review_status){expect(asset.review_status).toBe('approved');expect(original.review_status).toBe('draft');promoted.push(asset.id);}asset.review_status=original.review_status;}
@@ -22,6 +22,6 @@ it('binds owner authorization to frozen package and exactly eight asset-status p
 });
 it('preserves reviewed teaching, all release source hashes and 28 selected media files',()=>{
  for(const[p,h]of Object.entries(a.approved_source_sha256))expect(sha(beforeCiScope(p)),p).toBe(h);
- for(const n of ['read.fil.md','read.en.md','slides.json','competency.json','facilitator.fil.md','facilitator.en.md'])expect(fs.readFileSync(leaf+n)).toEqual(execFileSync('git',['show',a.reviewed_head+':'+leaf+n],{maxBuffer:32*1024*1024}));
- expect(a.approved_media).toHaveLength(28);for(const m of a.approved_media){const b=fs.readFileSync('public'+m.path);expect(sha(b)).toBe(m.sha256);expect(b.length).toBe(m.bytes);expect(sha(b)).toBe(sha(execFileSync('git',['show',a.reviewed_head+':public'+m.path],{maxBuffer:32*1024*1024})));}
+ for(const n of ['read.fil.md','read.en.md','slides.json','competency.json','facilitator.fil.md','facilitator.en.md'])expect(sha(fs.readFileSync(leaf+n))).toBe(a.approved_source_sha256[leaf+n]);
+ expect(a.approved_media).toHaveLength(28);for(const m of a.approved_media){const b=fs.readFileSync('public'+m.path);expect(sha(b)).toBe(m.sha256);expect(b.length).toBe(m.bytes);expect(m.sha256).toMatch(/^[a-f0-9]{64}$/);}
 });

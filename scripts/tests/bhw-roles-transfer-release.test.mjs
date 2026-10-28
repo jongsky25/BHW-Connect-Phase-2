@@ -4,6 +4,7 @@ import {test,expect} from 'vitest';
 import {contentHash,loadReferenceModule} from '../lib/reference-content.mjs';
 import {applyBhwRolesTransferRelease} from '../lib/bhw-roles-transfer-release.mjs';
 import {applyApprovedReferenceReleases} from '../lib/safety-identify-copy-release.mjs';
+import {applyFeedbackWordingRelease} from '../lib/feedback-wording-release.mjs';
 
 const root='content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw';
 const packet='docs/feedback-remediation/fb-2.2i-chapter1-transfer-check-review.md';
@@ -39,7 +40,7 @@ test('approved transfer check replaces only the final Read and Slides checks',()
   const released=applyApprovedReferenceReleases(source);
   for(const lesson of source.lessons){
     const actual=released.lessons.find(l=>l.manifest.lesson_key===lesson.manifest.lesson_key);
-    expect(actual).toEqual(lesson.manifest.lesson_key===approval.lesson_key?next:lesson);
+    expect(actual).toEqual(lesson.manifest.lesson_key===approval.lesson_key?next:applyFeedbackWordingRelease(lesson));
   }
 });
 

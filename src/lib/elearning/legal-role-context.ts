@@ -1,9 +1,10 @@
 import data from './legal-role-context.json';
 import type {LessonAsset} from './types';
 import type {PublishedLesson} from './reference-navigation';
+import {presentationSourceHash} from './feedback-wording-release';
 
 export function legalRoleContext(lesson: PublishedLesson, position: string, en: boolean) {
-  if (lesson.lesson_key !== data.lesson_key || lesson.revision.content_hash !== data.content_hash) return null;
+  if (lesson.lesson_key !== data.lesson_key || presentationSourceHash(lesson.lesson_key,lesson.revision.content_hash) !== data.content_hash) return null;
   const slides = position.startsWith('slide-');
   const section = slides ? position.slice(6) : position;
   if (!Object.hasOwn(data.panels, section)) return null;

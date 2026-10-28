@@ -9,7 +9,7 @@ it('binds owner approval to the exact reviewed Apple package and only seven stat
  const p='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/lesson.json',actual=JSON.parse(fs.readFileSync(p));expect(actual.assets).toHaveLength(7);
  for(const asset of actual.assets){expect(asset.review_status).toBe('approved');asset.review_status='draft';}expect(actual).toEqual(JSON.parse(a.reviewed_lesson_utf8));expect(hash(Buffer.from(a.reviewed_lesson_utf8))).toBe(a.reviewed_lesson_sha256);
  for(const [p,h]of Object.entries(a.approved_source_sha256))expect(hash(release183View(p,'approvedMain')),p).toBe(h);
- for(const name of ['slides.json','read.fil.md','read.en.md','facilitator.fil.md','facilitator.en.md','competency.json']){const path='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/'+name;expect(fs.readFileSync(path).equals(execFileSync('git',['show',a.reviewed_head+':'+path])),path).toBe(true);}
+ for(const name of ['slides.json','read.fil.md','read.en.md','facilitator.fil.md','facilitator.en.md','competency.json']){const path='content/training/day1-basic-competencies/modules/08-osh/lessons/safety-controls/'+name;expect(fs.readFileSync(path).equals(Buffer.from(JSON.parse(fs.readFileSync('docs/lesson-182-release-integration.json')).files[path].reviewed182_utf8)),path).toBe(true);}
  expect(a.approved_media).toHaveLength(24);for(const m of a.approved_media){const b=fs.readFileSync('public'+m.path);expect(hash(b),m.path).toBe(m.sha256);expect(b.length).toBe(m.bytes);}
 });
 it('preserves current released siblings, all old public media and registry order',()=>{
