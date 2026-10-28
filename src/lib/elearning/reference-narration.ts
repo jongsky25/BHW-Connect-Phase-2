@@ -8,6 +8,7 @@
 
 import type { LessonAudioTiming, NarrationLanguage, StableLessonSection } from "./types";
 import { timingsMatchSection } from "./narration-zones";
+import wordingNarration from './feedback-wording-narration.json';
 
 export type ReferenceNarrationEntry = {
   src: string;
@@ -40,7 +41,8 @@ export function narrationForLesson(
   for (const sectionId of ids) {
     const current = sections[sectionId]?.[language];
     const published = publishedSections?.find(section => section.id === sectionId);
-    const candidates = [current, ...(manifest.history?.[lessonKey] ?? []).map(version => version.sections[sectionId]?.[language])];
+    const wording = (wordingNarration as ReferenceNarrationManifest).lessons[lessonKey]?.sections[sectionId]?.[language];
+    const candidates = [wording, current, ...(manifest.history?.[lessonKey] ?? []).map(version => version.sections[sectionId]?.[language])];
     const entry = published ? candidates.find(candidate => candidate && timingsMatchSection(candidate.timings, {
       heading: published[`heading_${language}`], body: published[`body_${language}`], takeaway: published[`takeaway_${language}`],
     })) : current;

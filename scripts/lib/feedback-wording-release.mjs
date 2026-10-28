@@ -1,7 +1,7 @@
 import {readFileSync} from 'node:fs';
 import {contentHash,validateReferenceLesson} from './reference-content.mjs';
 
-export const wordingReleases=JSON.parse(readFileSync('docs/feedback-remediation/first-nine-wording-releases.json'));
+export const wordingReleases=JSON.parse(readFileSync('src/lib/elearning/feedback-wording-releases.json'));
 
 export function applyFeedbackWordingRelease(lesson){
   const release=wordingReleases.find(r=>r.lesson_key===lesson.manifest.lesson_key);

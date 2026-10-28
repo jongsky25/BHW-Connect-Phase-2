@@ -1,14 +1,16 @@
 import {timingsMatchSection} from '@/lib/elearning/narration-zones';
 import type {LessonNarration} from '@/lib/elearning/reference-narration';
 import type {PublishedLesson} from '@/lib/elearning/reference-navigation';
+import {presentationSourceHash} from '@/lib/elearning/feedback-wording-release';
 
 const reviewed={
   'bhw-legal-role':{hash:'7a4880da236ea31a78647bb447ba6ff66eb7be701eb442059c3fabf77eddc57e',first:'section-1'},
   'problem-prioritize':{hash:'ca5834ca03409c356d8f4b0b9d2a3187db7d3753f16e58cdaa24e2863c77c5f9',first:'criteria'},
 };
-export function NarrationAccessGuide({lesson,position,narration,en,slides,translated,illustrated}:{
+export function NarrationAccessGuide({lesson:publishedLesson,position,narration,en,slides,translated,illustrated}:{
   lesson:PublishedLesson;position:string;narration?:LessonNarration;en:boolean;slides:boolean;translated:boolean;illustrated:boolean;
 }){
+  const lesson={...publishedLesson,revision:{...publishedLesson.revision,content_hash:presentationSourceHash(publishedLesson.lesson_key,publishedLesson.revision.content_hash)}};
   if(!translated&&lesson.lesson_key==='bhs-decline'&&lesson.revision.content_hash==='7cb6adc492551052091fa523d59249c9350cf64a4cf32307d8cbc4229a3898b3'&&position===(slides?'slide-section-4':'section-4')){
     const read=lesson.revision.read_sections.find(s=>s.id==='section-4');
     const slide=lesson.revision.slides.find(s=>s.id==='slide-section-4');

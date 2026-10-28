@@ -1,8 +1,9 @@
 import type {PublishedLesson} from './reference-navigation';
+import {presentationSourceHash} from './feedback-wording-release';
 
 export const HEPO_PRESENTATION_HASH = '88cf770c7b81b869cc73e684e2ee6eb2bdc105d189f76c2d7e4c406f61c69990';
 export function isHepoPresentation(lesson?: PublishedLesson) {
-  return lesson?.lesson_key === 'bhw-roles-hepo' && lesson.revision.content_hash === HEPO_PRESENTATION_HASH;
+  return lesson?.lesson_key === 'bhw-roles-hepo' && presentationSourceHash(lesson.lesson_key,lesson.revision.content_hash) === HEPO_PRESENTATION_HASH;
 }
 const goals = {
   morning: ['Explain how one BHW can teach, organize and help people reach services.', 'Ipaliwanag kung paano nagtuturo, nag-oorganisa at gumagabay sa serbisyo ang iisang BHW.'],

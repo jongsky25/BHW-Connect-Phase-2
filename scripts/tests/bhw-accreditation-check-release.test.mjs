@@ -4,6 +4,7 @@ import {test,expect} from 'vitest';
 import {contentHash,loadReferenceModule} from '../lib/reference-content.mjs';
 import {applyBhwAccreditationCheckRelease} from '../lib/bhw-accreditation-check-release.mjs';
 import {applyApprovedReferenceReleases} from '../lib/safety-identify-copy-release.mjs';
+import {applyFeedbackWordingRelease} from '../lib/feedback-wording-release.mjs';
 
 const root='content/training/day1-basic-competencies';
 const approval=JSON.parse(readFileSync(`${root}/lesson-releases/bhw-accreditation-fb-2.2l-v2/approval-record.json`));
@@ -36,7 +37,7 @@ test('the exact owner-approved bilingual check replaces only two distractors and
   const released=applyApprovedReferenceReleases(source);
   expect(released.lessons.find(l=>l.manifest.lesson_key===approval.lesson_key)).toEqual(next);
   for(const lesson of source.lessons.filter(l=>l.manifest.lesson_key!==approval.lesson_key))
-    expect(released.lessons.find(l=>l.manifest.lesson_key===lesson.manifest.lesson_key)).toEqual(lesson);
+    expect(released.lessons.find(l=>l.manifest.lesson_key===lesson.manifest.lesson_key)).toEqual(applyFeedbackWordingRelease(lesson));
 });
 
 test('the release rejects changes to the reviewed source',()=>{

@@ -2,7 +2,7 @@ name: Feedback first-nine wording narration
 on:
   push:
     branches: [fix/feedback-first-nine-dispositions]
-    paths: [.github/workflows/feedback-wording-media.yml, scripts/feedback-wording-media.mjs, docs/feedback-remediation/first-nine-wording-releases.json]
+    paths: [.github/workflows/feedback-wording-media.yml, scripts/feedback-wording-media.mjs, src/lib/elearning/feedback-wording-releases.json]
   workflow_dispatch:
 permissions:
   contents: read
