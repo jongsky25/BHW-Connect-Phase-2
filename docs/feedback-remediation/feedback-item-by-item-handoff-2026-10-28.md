@@ -121,6 +121,16 @@ live count after item 19 is **36 open (31 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 20**; re-read live status before acting.
 
+Item 20 is **will_not_fix/dismissed**. The accepted diagnostic baseline policy
+withholds item-level correctness and rationales until the posttest; current
+personal results show aggregate pretest data, and the review RPC enforces
+posttest-only access. The evidence and live-count receipt are in
+[the item 20 packet](feedback-item-20-baseline-answer-review-2026-10-28.md).
+The queue is now **20/55 reviewed and closed, 35 awaiting review**. The fresh
+live count after item 20 is **35 open (30 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 21**; re-read live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
