@@ -1,6 +1,7 @@
 // Exact preceding reader for historical release guards; old receipts stay immutable.
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
+import {beforeFeedbackItem16} from './feedback-item-16-preservation.mjs';
 const target='src/components/elearning/reference-lessons.tsx';
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 let receipt,successor,predecessor;
@@ -16,12 +17,13 @@ function pinSuccessor(bytes,r){
 }
 export function beforeFeedbackSectionOutline(path,actual=fs.readFileSync(path)) {
   if(path!==target)return actual;
+  actual=beforeFeedbackItem16(path,actual);
   const r=receipt??=JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-5.2c-reader-preservation.json'));
   if(r.path!==target||r.replacements.length!==3)throw Error('Invalid FB-5.2c reader scope');
   // Read and compare ALL current bytes on every call. Only the pure exact
   // reconstruction is memoized: any disk/input change misses these equality
   // checks and must satisfy the same SHA-256 allowlist as before.
-  const disk=fs.readFileSync(path);
+  const disk=beforeFeedbackItem16(path,fs.readFileSync(path),true);
   if(!disk.equals(successor??Buffer.alloc(0))&&!disk.equals(predecessor??Buffer.alloc(0))){
     const hash=sha(disk);
     if(hash===r.successor_sha256)pinSuccessor(disk,r);

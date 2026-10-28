@@ -81,6 +81,7 @@ type Props = {
   narration?: ReferenceNarrationEntry;
   en: boolean;
   continuationScope?: string;
+  continuationKind?: "read" | "slides";
   text?: (fil: string, en: string) => string;
   headingRef?: Ref<HTMLHeadingElement>;
   // Present an existing final sentence as a note without changing narrated text.
@@ -89,7 +90,7 @@ type Props = {
   children?: ReactNode;
 };
 
-export function ReferenceReadSection({ heading, body, takeaway, narration, en, text, headingRef, children, continuationScope, noteSentence }: Props) {
+export function ReferenceReadSection({ heading, body, takeaway, narration, en, text, headingRef, children, continuationScope, continuationKind = "read", noteSentence }: Props) {
   const ui = text ?? ((fil: string, eng: string) => (en ? eng : fil));
   const displayedNote = noteSentence ?? (body === recordsFictionBody[en ? "en" : "fil"] &&
     heading === (en ? "After the visit" : "Pagkatapos ng pagbisita") ? recordsFictionSentence[en ? "en" : "fil"] : undefined);
@@ -273,7 +274,9 @@ export function ReferenceReadSection({ heading, body, takeaway, narration, en, t
             <input type="checkbox" checked={automatic} onChange={event =>
               setNarrationContinuation(continuationScope, event.target.checked, playing)
             } />
-            {ui("Awtomatikong pakinggan ang mga susunod na bahagi", "Play next sections automatically")}
+            {continuationKind === "slides"
+              ? ui("Awtomatikong pakinggan ang mga susunod na Slide", "Play next Slides automatically")
+              : ui("Awtomatikong pakinggan ang mga susunod na bahagi", "Play next sections automatically")}
           </label>}
           <span className="text-sm text-ink/70">{formatTime(narration.duration_seconds)}</span>
           {failed && (

@@ -1,6 +1,7 @@
 import {cleanup,fireEvent,render,screen,waitFor} from '@testing-library/react';
 import {afterEach,describe,expect,it,vi} from 'vitest';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
+import {enterNarrationScope,setNarrationSpeed} from '@/lib/elearning/narration-preferences';
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
 afterEach(()=>{cleanup();vi.restoreAllMocks();document.documentElement.removeAttribute('data-motion');});
 const check={prompt_en:'What would you do?',prompt_fil:'Ano ang gagawin mo?',options:[{en:'Ask',fil:'Magtanong'},{en:'Guess',fil:'Hulaan'}],correct_option_index:0,feedback_en:'Ask the team.',feedback_fil:'Magtanong sa team.'};
@@ -9,6 +10,32 @@ function data():ReferenceData{return {title_fil:'Manual',title_en:'Manual',chapt
 const button=()=>screen.getByRole('button',{name:'Mark lesson complete'});
 function view(d=data(),complete=vi.fn().mockResolvedValue(undefined),extra={}) {return render(<ReferenceLessons {...d} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" nextLessonHref="/lessons/next" onResume={vi.fn().mockResolvedValue(undefined)} onComplete={complete} {...extra}/>);}
 describe('formative lesson completion',()=>{
+  it('continues opted-in Slide narration after Next, then stops at a check',()=>{
+    enterNarrationScope();setNarrationSpeed(1);
+    const play=vi.spyOn(HTMLMediaElement.prototype,'play').mockImplementation(function(this:HTMLMediaElement){fireEvent.play(this);return Promise.resolve();});
+    vi.spyOn(HTMLMediaElement.prototype,'pause').mockImplementation(function(this:HTMLMediaElement){fireEvent.pause(this);});
+    const d=data();
+    const first=part('first'),second=part('second'),last=part('last',true);
+    d.lessons[0].revision.read_sections=[first,second,last];
+    d.lessons[0].revision.slides=[first,second,last].map((read,i)=>({...read,id:`slide-${read.id}`,display_en:'Summary',display_fil:'Buod',narration_en:read.body_en,narration_fil:read.body_fil,layout:'scene',check:i===2?check:null}));
+    const narration={lesson:Object.fromEntries([first,second,last].map(read=>[read.id,{src:`/${read.id}.mp3`,duration_seconds:3,timings:[{zone:'heading',index:0,text:read.heading_en,start_ms:0,end_ms:1000},{zone:'body',index:0,text:read.body_en,start_ms:1000,end_ms:2000},{zone:'takeaway',index:0,text:read.takeaway_en,start_ms:2000,end_ms:3000}]}]))};
+    view(d,vi.fn(),{narration,initialMode:'slides'});
+    let panel=screen.getByText('Full narration and audio').closest('details')!;
+    expect(panel.open).toBe(false);expect(play).not.toHaveBeenCalled();
+    panel.open=true;fireEvent(panel,new Event('toggle'));
+    fireEvent.click(screen.getByRole('checkbox',{name:'Play next Slides automatically'}));
+    expect(play).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole('button',{name:'Listen'}));
+    fireEvent.click(screen.getByRole('button',{name:'Next'}));
+    panel=screen.getByText('Full narration and audio').closest('details')!;
+    expect(panel.open).toBe(true);expect(play).toHaveBeenCalledTimes(2);
+    fireEvent.click(screen.getByRole('button',{name:'Next'}));
+    expect(screen.queryByText('Full narration and audio')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));
+    panel=screen.getByText('Full narration and audio').closest('details')!;
+    expect(panel.open).toBe(false);expect(play).toHaveBeenCalledTimes(2);
+    enterNarrationScope();
+  });
   it('offers full Slide speech only for exact Read wording and pauses when it is closed',()=>{
     const pause=vi.spyOn(HTMLMediaElement.prototype,'pause').mockImplementation(()=>{});
     const d=data();const read=part('first');

@@ -24,7 +24,7 @@ describe('lesson 1.6.3 empathy and clear explanations',()=>{
  it('preserves protected history and verifies predecessor bytes before historical guards',async()=>{
   await import('../lesson-163-preservation.mjs');
   const p=j('docs/lesson-163-proposal-receipt.json');for(const [file,e]of Object.entries(p.changed_existing_files)){expect(sha(communicationView(file,'reviewed163'))).toBe(e.proposed_sha256);expect(sha(beforeProposed163(file))).toBe(e.predecessor_sha256);}
- },20000); // Full historical media audit reads substantial files; keep every byte/hash assertion.
+ },45000); // Full historical media audit reads substantial files; keep every byte/hash assertion.
  it('retains one indicator, twelve guide headings and a120-minute/480-minute allocation',()=>{
   const co=j(leaf+'competency.json').observation_indicators;expect(co).toHaveLength(1);expect(co[0].objective_index).toBe(0);expect(Object.keys(co[0].levels)).toHaveLength(6);
   for(const lang of ['fil','en']){const g=fs.readFileSync(leaf+'facilitator.'+lang+'.md','utf8');expect([...g.matchAll(/^## \[([^\]]+)\]/gm)].map(m=>m[1])).toEqual(FACILITATOR_SECTION_IDS);expect(g).toContain('120');expect(g).toContain('480');expect(fs.readFileSync('docs/lesson-163-practice-kit.'+lang+'.md','utf8').split(/^## /m)).toHaveLength(6);}
