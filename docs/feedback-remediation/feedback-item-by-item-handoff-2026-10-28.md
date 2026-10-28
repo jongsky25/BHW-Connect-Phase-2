@@ -76,6 +76,17 @@ live count after item 15 is **40 open (35 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 16**; re-read live status before acting.
 
+Item 16 is **fixed/resolved**. The learner can opt into continuous full narration
+inside the visible Slides audio panel; manually moving to the next Slide opens
+its panel and plays matching audio at the saved speed. Pause, panel close, mode,
+language or lesson change, and practice-check gates stop continuation. The
+release and live-count receipt are in
+[the item 16 packet](feedback-item-16-slides-narration-continuation-2026-10-28.md).
+The queue is now **16/55 reviewed and closed, 39 awaiting review**. The fresh
+live count after item 16 is **39 open (34 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 17**; re-read live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
