@@ -64,6 +64,18 @@ live count after item 14 is **41 open (36 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 15**; re-read live status before acting.
 
+Item 15 is **fixed/resolved** by the existing FB-4.1h release. The published
+Health Educator lesson has paired Read and Slides sections, and each of its
+first four positions now shows a bilingual learning path and a transition; each
+Slide also quotes its corresponding Read section. The life-stage transition
+explicitly connects that section to Riza's Health Educator role. The release and
+live-count receipt are in
+[the item 15 packet](feedback-item-15-health-educator-continuity-2026-10-28.md).
+The queue is now **15/55 reviewed and closed, 40 awaiting review**. The fresh
+live count after item 15 is **40 open (35 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 16**; re-read live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
