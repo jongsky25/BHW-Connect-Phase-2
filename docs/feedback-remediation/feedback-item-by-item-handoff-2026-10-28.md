@@ -99,6 +99,18 @@ owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 18**; re-read
 live status before acting.
 
+Item 18 is **will_not_fix/dismissed** for a further unspecified workload or
+connectivity change. Existing saved-draft breaks and connection/save-retry
+guidance mitigate the concern, while the report names no current failed state
+or bounded fix; the app cannot guarantee internet or time away from duties.
+The evidence and live-count receipt are in
+[the item 18 packet](feedback-item-18-connectivity-and-duties-2026-10-28.md).
+The queue is now **18/55 reviewed and closed, 37 awaiting review**. The fresh
+live count after item 18 is **37 open (32 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 19**; re-read
+live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
