@@ -9,20 +9,20 @@ do not ask the owner to collect examples that can be checked in the system.
 
 ## Current checkpoint for the next chat — 29 October 2026
 
-**Next pending queue item is 39** (`580a7d79-8e5d-445f-a7d2-b75e8f87aeb2`).
-Item 38 is **fixed / resolved** by the existing shared Chapter I replacement.
-Its [receipt](feedback-item-38-sentence-construction-2026-10-29.md) verifies the
-reporter's frozen sixth question and captured choice, then the active bilingual
-T06 replacement without the awkward historical construction.
+**Next pending queue item is 40** (`82b0310f-d60e-470d-b5ea-eb6a61903e24`).
+Item 39 is **fixed / resolved** by the released Chapter II duplicate-prompt
+and context work. Its [receipt](feedback-item-39-repeated-questions-2026-10-29.md)
+confirms both repeated pairs in the reporter's saved attempt, and verifies
+14 distinct active prompts in each language with separate replacement cases.
 
 Item 34 remains **reviewed_open / in_review** for authorized visual access to
 its private screenshot; its [receipt](feedback-item-34-private-screenshot-2026-10-29.md)
 records the recovery path. Do not claim it fixed or declined. The two
 owner-deferred reports remain open.
 
-The fixed baseline queue has **38/55 reviewed: 37 closed and 1 reviewed_open;
-17 await review**. A fresh pilot read after item 38 found **214 total:
-17 `new`, 1 `in_review`, 113 `resolved`, 83 `dismissed`**, so **18 reports
+The fixed baseline queue has **39/55 reviewed: 38 closed and 1 reviewed_open;
+16 await review**. A fresh pilot read after item 39 found **214 total:
+16 `new`, 1 `in_review`, 114 `resolved`, 83 `dismissed`**, so **17 reports
 remain open live**. Both owner-deferred IDs remain `new`; no open ID falls
 outside the baseline queue. Re-query before and after the next disposition.
 Handle one item only and stop until the owner says “next” or “do it.”
@@ -440,7 +440,7 @@ Check fresh deployment/content facts before claiming any subsequent item live.
 Suggested first message in the next chat:
 
 > Read `docs/feedback-remediation/feedback-item-by-item-handoff-2026-10-28.md`.
-> Start at **item 39** in `docs/feedback-remediation/feedback-item-queue-2026-10-28.csv`.
+> Start at **item 40** in `docs/feedback-remediation/feedback-item-queue-2026-10-28.csv`.
 > Handle **one report only**: inspect the live report and current release,
 > implement and publish a supported fix or tag `will_not_fix` with a concrete
 > reason, update its live status and queue row, and tell me both how many of the
