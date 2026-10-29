@@ -196,6 +196,17 @@ live count after item 26 is **29 open (24 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 27**; re-read live status before acting.
 
+Item 27 is **will_not_fix/dismissed** for a further benefits-question or key
+edit. The report paraphrases the question without identifying a defect; the
+active T12, published benefits lesson and approved bilingual clarification all
+preserve benefit-specific conditions and verification. The evidence and
+live-count receipt are in
+[the item 27 packet](feedback-item-27-benefits-question-2026-10-29.md).
+The queue is now **27/55 reviewed and closed, 28 awaiting review**. The fresh
+live count after item 27 is **28 open (24 new, 4 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 28**; re-read live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
