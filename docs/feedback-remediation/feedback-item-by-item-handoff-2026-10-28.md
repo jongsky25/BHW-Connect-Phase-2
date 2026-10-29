@@ -131,6 +131,16 @@ live count after item 20 is **35 open (30 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 21**; re-read live status before acting.
 
+Item 21 was **fixed/resolved**. The reported duplicate Chapter 2 diagnostic
+prompt had already been replaced, and three remaining Chapter 2 stems that
+assumed lesson context now give the learner a self-contained situation before
+the lesson. The final migration, production release and live-count receipt are
+in [the item 21 packet](feedback-item-21-chapter2-diagnostic-context-2026-10-29.md).
+The queue is now **21/55 reviewed and closed, 34 awaiting review**. The fresh
+live count after item 21 is **34 open (29 new, 5 in_review)**, including both
+owner-deferred reports. Start the next “next” command at **item 22**; re-read
+live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
