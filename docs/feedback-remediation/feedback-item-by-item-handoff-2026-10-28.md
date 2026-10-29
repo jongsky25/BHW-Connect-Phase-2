@@ -9,24 +9,27 @@ do not ask the owner to collect examples that can be checked in the system.
 
 ## Current checkpoint for the next chat — 29 October 2026
 
-**Next pending queue item is 53** (`b1e43e76-1ba8-422a-a86a-6682b4f23b11`).
-Item 52 is **will_not_fix / dismissed** for an additional speculative navigation
-or prerequisite change. Its [receipt](feedback-item-52-unidentified-navigation-2026-10-29.md)
-records the reporter's historical saves, successful actor-filtered API logs and
-current cross-subchapter continuation without inventing the original failure.
-The candidate duplicate at item 53 remains untouched and `new`.
+**No non-deferred pending queue items remain.** Items 54 and 55 are the two
+explicit owner deferrals; leave both pending and open unless the owner explicitly
+lifts the relevant deferral. A generic “next” or “do it” does not override the
+standing instruction to keep them deferred.
+
+Item 53 is **will_not_fix / dismissed** for a separate speculative navigation
+or prerequisite change. Its [receipt](feedback-item-53-duplicate-navigation-2026-10-29.md)
+verifies the repeated report, historical actor API outcomes and current deployed
+continuation without claiming the unidentified browser symptom fixed.
 
 Item 34 remains **reviewed_open / in_review** for authorized visual access to
 its private screenshot; its [receipt](feedback-item-34-private-screenshot-2026-10-29.md)
 records the recovery path. Do not claim it fixed or declined. The two
 owner-deferred reports remain open.
 
-The fixed baseline queue has **52/55 reviewed: 51 closed and 1 reviewed_open;
-3 await review**. A fresh pilot read after item 52 found **214 total:
-3 `new`, 1 `in_review`, 117 `resolved`, 93 `dismissed`**, so **4 reports
-remain open live**. Both owner-deferred IDs remain `new`; no open ID falls
-outside the baseline queue. Re-query before and after the next disposition.
-Handle one item only and stop until the owner says “next” or “do it.”
+The fixed baseline queue has **53/55 reviewed: 52 closed and 1 reviewed_open;
+2 await review**, both owner-deferred. A fresh pilot read after item 53 found
+**214 total: 2 `new`, 1 `in_review`, 117 `resolved`, 94 `dismissed`**, so
+**3 reports remain open live**. The only open IDs are the two owner-deferred
+reports (`new`) and item 34 (`in_review`); no open ID falls outside the baseline.
+Stop after item 53. Do not resume either deferral or claim queue completion.
 
 The owner clarified that “next” requires a **complete disposition**: verify
 the report and current release, fix and publish if applicable or explicitly
@@ -441,10 +444,9 @@ Check fresh deployment/content facts before claiming any subsequent item live.
 Suggested first message in the next chat:
 
 > Read `docs/feedback-remediation/feedback-item-by-item-handoff-2026-10-28.md`.
-> Start at **item 53** in `docs/feedback-remediation/feedback-item-queue-2026-10-28.csv`.
-> Handle **one report only**: inspect the live report and current release,
-> implement and publish a supported fix or tag `will_not_fix` with a concrete
-> reason, update its live status and queue row, and tell me both how many of the
-> original 55 items still await review and how many reports remain open live.
-> Keep the two owner-deferred IDs open. Continue only when I say “next” or
-> “do it.”
+> Items 1–53 have been reviewed; only owner-deferred items 54 and 55 remain pending.
+> Keep both deferred reports open unless explicitly instructed to lift a deferral.
+> Item 34 remains reviewed_open for authorized access to its private screenshot.
+> Re-query the baseline-awaiting and live-open counts before reporting them.
+> A generic “next” or “do it” does not lift an owner deferral. Do not start a
+> deferred report or claim that all reports are closed.
