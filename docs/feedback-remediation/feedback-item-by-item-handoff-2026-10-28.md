@@ -9,27 +9,30 @@ do not ask the owner to collect examples that can be checked in the system.
 
 ## Current checkpoint for the next chat — 29 October 2026
 
-**No non-deferred pending queue items remain.** Items 54 and 55 are the two
-explicit owner deferrals; leave both pending and open unless the owner explicitly
-lifts the relevant deferral. A generic “next” or “do it” does not override the
-standing instruction to keep them deferred.
+**No non-deferred work remains.** The owner explicitly deferred item 34 on
+29 October 2026 as well as the existing deferrals at items 54 and 55. Keep all
+three reports open and do not resume them unless the owner explicitly lifts the
+relevant deferral. A generic “next” or “do it” does not lift these deferrals.
 
-Item 53 is **will_not_fix / dismissed** for a separate speculative navigation
-or prerequisite change. Its [receipt](feedback-item-53-duplicate-navigation-2026-10-29.md)
-verifies the repeated report, historical actor API outcomes and current deployed
-continuation without claiming the unidentified browser symptom fixed.
-
-Item 34 remains **reviewed_open / in_review** for authorized visual access to
-its private screenshot; its [receipt](feedback-item-34-private-screenshot-2026-10-29.md)
-records the recovery path. Do not claim it fixed or declined. The two
-owner-deferred reports remain open.
+Item 34 remains **reviewed_open / in_review**, now **deferred_owner**. Its
+[receipt](feedback-item-34-private-screenshot-2026-10-29.md) preserves the private
+screenshot evidence blocker; no visual review, fix or dismissal is claimed.
+Items 54 and 55 remain pending and `new`.
 
 The fixed baseline queue has **53/55 reviewed: 52 closed and 1 reviewed_open;
-2 await review**, both owner-deferred. A fresh pilot read after item 53 found
-**214 total: 2 `new`, 1 `in_review`, 117 `resolved`, 94 `dismissed`**, so
-**3 reports remain open live**. The only open IDs are the two owner-deferred
-reports (`new`) and item 34 (`in_review`); no open ID falls outside the baseline.
-Stop after item 53. Do not resume either deferral or claim queue completion.
+2 await review**, both owner-deferred. A fresh pilot read after the additional
+deferral found **214 total: 2 `new`, 1 `in_review`, 117 `resolved`, 94 `dismissed`**,
+so **3 reports remain open live**, all owner-deferred. No open ID falls outside
+the baseline. The deferral is recorded in the repository because the live status
+enum has no deferred value; item 34's live `in_review` status stays unchanged.
+
+**Replies are separate from dispositions.** A fresh live reply audit found two
+reply rows on two of 214 reports, both authored by the original reporters, and
+**212 reports with no reply**. No other-author reply exists. This remediation
+workflow has updated statuses and receipts without sending responses or
+notifications. Do not claim that feedback submitters have received staff replies.
+The owner asked whether replies were complete; that question does not authorize
+sending messages. Stop here unless new work is explicitly requested.
 
 The owner clarified that “next” requires a **complete disposition**: verify
 the report and current release, fix and publish if applicable or explicitly
@@ -432,7 +435,7 @@ Check fresh deployment/content facts before claiming any subsequent item live.
   `9cd61e10-9b97-4941-bf57-241a4d0fde22` say only “Cannot proceed”; no
   historical lesson/state was supplied. Do not invent a cause from a passing
   current CI journey. Screenshot for `9cfb86dd-89f4-4626-8657-803b20388e79`
-  requires authorized visual access.
+  requires authorized visual access and is now owner-deferred as well.
 - Ten bilingual medicinal-plant practice cards are live at `/plant-aids`, but
   the pilot preview is not clinical approval. Ray Justin Ventura is training
   owner; local identification aids, clinical sign-off, and a consultation route
@@ -445,8 +448,8 @@ Suggested first message in the next chat:
 
 > Read `docs/feedback-remediation/feedback-item-by-item-handoff-2026-10-28.md`.
 > Items 1–53 have been reviewed; only owner-deferred items 54 and 55 remain pending.
-> Keep both deferred reports open unless explicitly instructed to lift a deferral.
-> Item 34 remains reviewed_open for authorized access to its private screenshot.
+> The owner also deferred item 34; keep all three reports open.
+> Item 34 remains reviewed_open / in_review with its screenshot evidence blocker.
 > Re-query the baseline-awaiting and live-open counts before reporting them.
 > A generic “next” or “do it” does not lift an owner deferral. Do not start a
 > deferred report or claim that all reports are closed.
