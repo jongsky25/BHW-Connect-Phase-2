@@ -21,6 +21,11 @@ it("preserves legacy percentages without inventing raw counts or explanations", 
   expect(screen.getByRole("link", { name: "Tingnan ang mga dating naitalang sagot" })).toHaveAttribute("href", "/courses/course/assessment/review/old");
   expect(screen.getByRole("link", { name: "Mas bagong resulta" })).toHaveAttribute("href", "/my-results?page=1");
 });
+it("links an assessor's frozen historical post-test without promising rationales", () => {
+  render(<PersonalTestResults locale="en" history={{ items: [{ ...result, generation: "legacy_assessor", phase: "posttest", correct_count: null, question_count: 38, review_attempt_id: "assessor-old" }], has_more: false }} />);
+  expect(screen.getByRole("link", { name: "View historical responses" })).toHaveAttribute("href", "/courses/course/assessment/review/assessor-old");
+  expect(screen.queryByRole("link", { name: "Review answers and explanations" })).toBeNull();
+});
 it("handles accounts without completed results", () => {
   render(<PersonalTestResults locale="en" history={{ items: [], has_more: false }} />);
   expect(screen.getByText(/No completed tests on this page/)).toBeInTheDocument();
