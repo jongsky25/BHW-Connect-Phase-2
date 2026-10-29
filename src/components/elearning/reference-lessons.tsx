@@ -292,7 +292,7 @@ export function ReferenceLessons(props: Props) {
         ? {src: "/training/bhw-1-3/mimi-resource-use-86ce5a9071e0.png", alt: ui("Tinatalakay ni Mimi ang resource concern sa namamahala.", "Mimi discusses the resource concern with the supervisor."), caption: ui("Obserbasyon · Tuntunin · Pakikipag-ugnayan", "Observation · Rule · Coordination")}
       : null;
   const hepoPresentation = !translation && isHepoPresentation(lesson);
-  const storyArt = hepoPresentation && mode === "slides" ? null : sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
+  const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
   const items = lesson
     ? mode === "read"
@@ -643,8 +643,8 @@ export function ReferenceLessons(props: Props) {
         </figure>}
         <div className={storyLayout ? "reference-story-copy" : undefined}>
         <NarrationAccessGuide lesson={lesson} position={item.id} narration={lessonNarration} en={en} slides={mode === "slides"} translated={!!translation} illustrated={!!illustratedNarration}/>
-        {hepoPresentation && <HepoPresentationGuide position={item.id} index={index} count={items.length} slides={mode === "slides"} en={en}/>}
-        {storyVideoPrompt && !(hepoPresentation && mode === "slides") && <button type="button"
+        {hepoPresentation && mode === "read" && <HepoPresentationGuide position={item.id} index={index} count={items.length} slides={false} en={en}/>}
+        {storyVideoPrompt && <button type="button"
           className={`mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold ${hepoPresentation || illustratedNarration || lesson.lesson_key === "uhc-coverage" ? "text-ink" : "text-primary-text"} hover:bg-primary/20`}
           onClick={() => setVideoSelected(true)}>
           {illustratedNarration ? ui("▶ Panoorin ang araling may larawan at salaysay", "▶ Watch the illustrated narrated lesson") : ui("▶ Panoorin ang animadong kuwento na may salaysay", "▶ Watch the animated narrated story")}

@@ -11,7 +11,7 @@ function localSql(sql:string){
   return execFileSync('docker',['exec','-i','supabase_db_bhw-connect-phase-2','psql','-U','postgres','-d','postgres','-v','ON_ERROR_STOP=1','-At'],{input:sql,encoding:'utf8',timeout:15000});
 }
 
-test('HEPO authored slides, viewing guidance and section focus preserve assessment boundaries in training and assessor study',async({page,request})=>{
+test('Riza story slides preserve summaries and assessment boundaries in training and assessor study',async({page,request})=>{
   test.setTimeout(120000);
   const admin=await getAccessToken(request,STABLE_CITY_ADMIN.username,STABLE_CITY_ADMIN.password);
   const assessor=await createThrowawayAssessor(request,admin,'00000000-0000-0000-0000-000000000004');
@@ -53,10 +53,12 @@ test('HEPO authored slides, viewing guidance and section focus preserve assessme
         const next=reader.getByRole('button',{name:locale==='en'?'Next':'Susunod',exact:true});
         for(const [index,slide]of source.revision.slides.entries()){
           if(index)await next.click();
-          await expect(reader.locator('[data-hepo-position]')).toHaveText(`Slide ${index+1} ${locale==='en'?'of':'sa'} 5`);
-          await expect(reader.locator('article.reference-story')).toHaveCount(0);
+          await expect(reader.locator('article h2')).toHaveText(slide['heading_'+locale]);
+          await expect(reader.locator('article.reference-story')).toBeVisible();
+          await expect(reader.locator('.reference-story-art img')).toBeVisible();
+          await expect(reader.locator('[data-hepo-presentation-guide]')).toHaveCount(0);
           await expect(reader.locator('article')).toHaveAttribute('data-scene',slide.id);
-          for(const id of slide.asset_ids){const asset=source.revision.assets.find((a:{id:string})=>a.id===id)!;await expect(reader.getByRole('img',{name:asset['alt_'+locale],exact:true})).toBeVisible();}
+
           for(const theme of ['light','dark']){
             await page.locator('html').evaluate((html,t)=>html.setAttribute('data-theme',t),theme);
             expect((await new AxeBuilder({page}).include('article').analyze()).violations).toEqual([]);
@@ -64,14 +66,20 @@ test('HEPO authored slides, viewing guidance and section focus preserve assessme
         }
         const check=source.revision.slides.at(-1)!.check!;
         await expect(reader.locator('.reference-check-feedback')).toHaveCount(0);
-        const guide=reader.locator('[data-hepo-presentation-guide]');
-        for(const option of check.options)await expect(guide).not.toContainText(option[locale]);
+        for(const option of check.options)await expect(reader.getByRole('button',{name:option[locale],exact:true})).toBeVisible();
         await page.getByRole('button',{name:locale==='en'?'Full screen':'Buong screen',exact:true}).click();
         const dialog=page.getByRole('dialog',{name:locale==='en'?'Full-screen lesson':'Buong screen na aralin',exact:true});
-        await expect(dialog.locator('[data-reader-viewport]')).toBeVisible();
+        await expect(dialog.locator('.reference-story-presenter')).toBeVisible();
+        await expect(dialog.locator('[data-reader-viewport]')).toHaveCount(0);
         await expect(dialog.locator('.lesson-reader-surface')).toHaveAttribute('data-orientation','portrait');
-        await expect.poll(()=>dialog.locator('button').evaluateAll(buttons=>buttons.every(button=>{const b=button.getBoundingClientRect();return b.left>=-1&&b.right<=innerWidth+1&&b.top>=-1&&b.bottom<=innerHeight+1;}))).toBe(true);
-        await expect(dialog.locator('[data-hepo-position]')).toHaveText(`Slide 5 ${locale==='en'?'of':'sa'} 5`);
+        await expect.poll(()=>dialog.locator('.lesson-reader-toolbar button, .reference-story-presenter-pager button').evaluateAll(buttons=>buttons.every(button=>{const b=button.getBoundingClientRect();return b.left>=-1&&b.right<=innerWidth+1&&b.top>=-1&&b.bottom<=innerHeight+1;}))).toBe(true);
+        await expect(dialog.locator('article')).toHaveAttribute('data-scene','check-slide');
+        for(const option of check.options){
+          const answer=dialog.getByRole('button',{name:option[locale],exact:true});
+          await answer.scrollIntoViewIfNeeded();
+          await expect(answer).toBeInViewport();
+        }
+        expect(await dialog.locator('article').evaluate(article=>article.scrollWidth<=article.clientWidth+1)).toBe(true);
         await expect(dialog.locator('.reference-check-feedback')).toHaveCount(0);
         expect((await new AxeBuilder({page}).include('dialog[open]').analyze()).violations).toEqual([]);
         await dialog.getByRole('button',{name:locale==='en'?'Read':'Basahin',exact:true}).click();
@@ -84,7 +92,7 @@ test('HEPO authored slides, viewing guidance and section focus preserve assessme
         await expect(reader.locator('[data-hepo-presentation-guide]')).toHaveCount(0);
         await reader.getByRole('button',{name:'Slides',exact:true}).click();
         await expect(reader.locator('video')).toHaveCount(0);
-        await expect(reader.locator('[data-hepo-position]')).toHaveText(`Slide 5 ${locale==='en'?'of':'sa'} 5`);
+        await expect(reader.locator('article')).toHaveAttribute('data-scene','check-slide');
       }
     }
     await page.goto('/home');
