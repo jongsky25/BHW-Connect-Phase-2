@@ -141,6 +141,17 @@ live count after item 21 is **34 open (29 new, 5 in_review)**, including both
 owner-deferred reports. Start the next “next” command at **item 22**; re-read
 live status before acting.
 
+Item 22 is **will_not_fix/dismissed**. Showing the Chapter 1 pretest answer key
+on or immediately after the diagnostic would disclose answers before the
+approved baseline and study sequence is complete. The released personal
+results show the pretest score, while item-level review follows the submitted
+posttest. The evidence and live-count receipt are in
+[the item 22 packet](feedback-item-22-pretest-answer-key-2026-10-29.md).
+The queue is now **22/55 reviewed and closed, 33 awaiting review**. The fresh
+live count after item 22 is **33 open (28 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 23**; re-read live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
