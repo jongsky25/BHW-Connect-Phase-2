@@ -1,4 +1,4 @@
-# BHW Connect feedback: item-by-item handoff — 28 October 2026
+# BHW Connect feedback: item-by-item handoff — 28 October 2026 (updated 29 October)
 
 Start the next chat in `/workspace/BHW-Connect-Phase-2`. Read this file, the
 [live backlog reconciliation](backlog-reconciliation-2026-10-27.md), and the
@@ -6,6 +6,32 @@ Start the next chat in `/workspace/BHW-Connect-Phase-2`. Read this file, the
 The owner wants each remaining report handled **one at a time**, with an updated
 remaining count after **every** item. Do the next item autonomously when asked;
 do not ask the owner to collect examples that can be checked in the system.
+
+## Current checkpoint for the next chat — 29 October 2026
+
+**Start with queue item 33** (`5bedf6bc-fe03-4feb-a48e-1ddc17313492`,
+`plant_approval`, currently `in_review`). It is separate from the
+owner-deferred plant-identification item 54. Investigate item 33's exact
+request, published plant-aid status and approval boundary before choosing a
+supported fix or `will_not_fix` disposition. Do **one item only** when the
+owner says “next” or “do it”; stop after its disposition, queue update and
+both fresh counts.
+
+The fixed baseline queue has **32/55 reviewed and closed; 23 await review**.
+A fresh pilot Spot Feedback read found **214 total: 22 `new`, 1 `in_review`,
+110 `resolved`, 81 `dismissed`**, so **23 reports remain open live**. Both
+owner-deferred IDs remain `new`; no open ID falls outside the baseline queue.
+These are the counts after item 32, not a promise about the next chat's live
+state. Re-query before item 33 and after its disposition. The latest merged
+queue/handoff update is [item 32's receipt](feedback-item-32-assessor-guide-access-2026-10-29.md)
+in PR #476, main commit `87cc6f9bfbad1b914ef44d3fb8b04fa539ec15f9`.
+
+The owner clarified that “next” requires a **complete disposition**: verify
+the report and current release, fix and publish if applicable or explicitly
+record `will_not_fix` with a reason, update the live status and queue, then
+report both baseline-awaiting and live-open numbers. A review-only pass is not
+completion. Existing decisions for items 1–32 are final unless new evidence
+specifically warrants revisiting them.
 
 ## Owner clarification — 28 October 2026
 
@@ -295,8 +321,9 @@ live-open counts after every individual report.
 At the handoff's read-only live check, Spot Feedback had **214 total: 50 `new`,
 5 `in_review`, 94 `resolved`, 65 `dismissed`**. Thus **55 reports were open**:
 53 active candidates and 2 explicitly deferred by the owner. The queue CSV
-contains exactly those 55 IDs, each with `review_state=pending`. It is a fixed
-snapshot of the baseline queue, **not** a substitute for current live status.
+originally contained exactly those 55 IDs, each with `review_state=pending`.
+It is a fixed baseline queue, **not** a substitute for current live status;
+the current checkpoint above supersedes these original counts.
 The older `triage-2026-10-23.csv` `live_status_at_snapshot` column is also
 historical, not current status.
 
@@ -363,7 +390,7 @@ group by status
 order by status;
 ```
 
-## What is actually open
+## Original backlog classification (historical)
 
 The queue's `remaining_work_category` and
 [reconciliation summary](backlog-reconciliation-2026-10-27.md) explain all 55:
@@ -372,8 +399,9 @@ partial; 7 wording partial; 4 scored-item clarifications still `in_review`;
 2 offline/connection; 2 training-flow/access policy; 2 unidentified historical
 blockers; 2 owner-deferred; and one each for plant-aid approval, private
 screenshot, and continuous Slides narration. Some are feature or policy
-requests; some need evidence before any edit. Keep the four clarification
-reports open until their original scored item or concern is actually resolved.
+requests; some need evidence before any edit. Items 27–30 have since received
+individual dispositions, so these original categories do not describe the
+current 23 open reports.
 
 Canonical app at the original handoff (historical): <https://bhw-connect-phase-2.vercel.app>, READY
 deployment `dpl_5H1Zr4rvLzAJpWN9ATcs4iCpKuCi` on app commit
@@ -411,8 +439,10 @@ Check fresh deployment/content facts before claiming any subsequent item live.
 Suggested first message in the next chat:
 
 > Read `docs/feedback-remediation/feedback-item-by-item-handoff-2026-10-28.md`.
-> Work through the numbered feedback queue **one item at a time**. Start with
-> the first pending, non-deferred item, verify its current live evidence, fix a
-> confirmed issue if present, merge and verify live, then update the queue and
-> tell me exactly how many baseline items await review and how many feedback
-> reports remain open. Continue when I say “next.”
+> Start at **item 33** in `docs/feedback-remediation/feedback-item-queue-2026-10-28.csv`.
+> Handle **one report only**: inspect the live report and current release,
+> implement and publish a supported fix or tag `will_not_fix` with a concrete
+> reason, update its live status and queue row, and tell me both how many of the
+> original 55 items still await review and how many reports remain open live.
+> Keep the two owner-deferred IDs open. Continue only when I say “next” or
+> “do it.”
