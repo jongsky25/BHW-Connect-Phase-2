@@ -11,7 +11,7 @@ type Item = { item_id: string; slot: string; stem: Text; rationale: Text;
   options: { id: string; label: Text; distractor_rationale?: Text }[] };
 type Review = { score_percent: number; form_id: string; release_id: string;
   items: Item[]; responses: { item_id: string; kind: "choice" | "unknown"; option_id: string | null }[] };
-type LegacyReview = { generation: "legacy"; score_percent: number; form_membership_known: false;
+type LegacyReview = { generation: "legacy" | "legacy_assessor"; score_percent: number; form_membership_known: boolean;
   entries: { question_id: string | null; status: string; prompt_fil: string | null; prompt_en: string | null;
     options: Text[] | null; selected_option_index: number | null; correct_option_index: number | null;
     matches_stored_key: boolean | null }[] };
@@ -32,8 +32,9 @@ export default async function Chapter1PostReviewPage({ params, searchParams }: {
     getLocale(),
   ]);
   if (!mapping) notFound();
-  const legacy = viewer.role === "bhw" && (error || !data)
-    ? await db.rpc("rpc_legacy_posttest_review", { p_final_attempt_id: attemptId }) : null;
+  const legacy = (error || !data)
+    ? await db.rpc(viewer.role === "assessor" ? "rpc_legacy_assessor_posttest_review" : "rpc_legacy_posttest_review",
+      { p_final_attempt_id: attemptId }) : null;
   if ((!data || error) && (!legacy?.data || legacy.error)) notFound();
   const lang = locale === "en" ? "en" : "fil";
   const copy = (en: string, fil: string) => lang === "en" ? en : fil;
@@ -46,7 +47,9 @@ export default async function Chapter1PostReviewPage({ params, searchParams }: {
       <h1 className="text-2xl font-semibold">{copy("Historical post-test review", "Pagsuri sa dating post-test")}</h1>
       <Link prefetch={false} href="/my-results" className="inline-flex min-h-[44px] items-center underline">{copy("← My test results", "← Aking mga resulta sa pagsusulit")}</Link>
       <p>{copy("Stored final score", "Naka-save na huling iskor")}: {historical.score_percent}%</p>
-      <p className="rounded-md border border-ink/20 p-4">{copy(
+      <p className="rounded-md border border-ink/20 p-4">{historical.form_membership_known ? copy(
+        "These questions come from your saved post-test form. Your recorded choices and the stored keys are shown below. Authored explanations were not saved for this older form; your stored score is unchanged.",
+        "Mula sa naka-save mong post-test form ang mga tanong na ito. Nasa ibaba ang naitala mong mga sagot at ang naka-save na mga tamang sagot. Walang na-save na paliwanag para sa lumang form na ito; hindi nagbago ang naka-save mong iskor.") : copy(
         "The original served form and scoring membership were not saved. The entries below show recoverable recorded responses and the stored key. Missing entries cannot be counted as wrong, and a key match does not prove that the response contributed to the stored score. Explanations for these historical items are not available yet.",
         "Hindi naitala ang orihinal na form at kung aling mga tanong ang kasama sa pagmamarka. Ipinapakita sa ibaba ang mga naitalang sagot na mababawi at ang naka-save na tamang sagot. Hindi maaaring ituring na mali ang mga nawawalang tala, at ang pagtugma sa tamang sagot ay hindi patunay na naisama ito sa naka-save na iskor. Wala pang paliwanag para sa mga dating tanong na ito.")}</p>
       <ol className="space-y-4">{historical.entries.map((entry, i) => {

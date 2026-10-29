@@ -33,3 +33,16 @@ it("retains historical percentages and provenance limits without fabricating raw
   expect(screen.getByText(/original served form and scoring membership were not saved/)).toBeInTheDocument();
   expect(screen.queryByText(/\d+\/\d+ correct/)).toBeNull();
 });
+it("shows a saved assessor post-test key with a clear limit on historical explanations", async () => {
+  state.rpc.mockImplementation(async name => name === "rpc_legacy_assessor_posttest_review" ? { data: {
+    generation: "legacy_assessor", score_percent: 100, form_membership_known: true,
+    entries: [{ question_id: "q", status: "recoverable", prompt_en: "A field question", prompt_fil: "Tanong",
+      options: [{ en: "Safe", fil: "Ligtas" }, { en: "Unsafe", fil: "Di ligtas" }],
+      selected_option_index: 0, correct_option_index: 0, matches_stored_key: true }],
+  }, error: null } : { data: null, error: new Error("old") });
+  render(await page());
+  expect(state.rpc).toHaveBeenCalledWith("rpc_legacy_assessor_posttest_review", { p_final_attempt_id: "final" });
+  expect(screen.getByText(/questions come from your saved post-test form/)).toBeInTheDocument();
+  expect(screen.getByText(/Authored explanations were not saved/)).toBeInTheDocument();
+  expect(screen.getByText(/Stored key/)).toHaveTextContent("Safe");
+});

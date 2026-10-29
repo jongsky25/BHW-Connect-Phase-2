@@ -20,7 +20,7 @@ export function PersonalTestResults({ history, locale, page = 1 }: { history: Pe
         {row.correct_count === null && <p className="text-sm text-ink/70">{text("An exact raw count cannot be verified for this record. The saved percentage is retained.", "Hindi matiyak ang eksaktong raw count para sa talang ito. Pinananatili ang naka-save na porsiyento.")}</p>}
         {row.form_id && <p className="break-words text-xs text-ink/60">{text("Form", "Form")}: {row.form_id}</p>}
         {row.review_attempt_id && <Link prefetch={false} href={`/courses/${row.course_id}/assessment/review/${row.review_attempt_id}`} className="inline-flex min-h-[44px] items-center font-medium underline">
-          {row.generation === "legacy_bhw" ? text("View historical responses", "Tingnan ang mga dating naitalang sagot") : text("Review answers and explanations", "Balikan ang mga sagot at paliwanag")}
+          {row.generation !== "versioned" ? text("View historical responses", "Tingnan ang mga dating naitalang sagot") : text("Review answers and explanations", "Balikan ang mga sagot at paliwanag")}
         </Link>}
       </li>)}</ol>}
     <nav aria-label={text("Results pages", "Mga pahina ng resulta")} className="flex flex-wrap gap-4">
