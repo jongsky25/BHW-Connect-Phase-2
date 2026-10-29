@@ -259,6 +259,19 @@ live count after item 31 is **24 open (23 new, 1 in_review)**, including both
 owner-deferred reports. Start the next “next” command at **item 32**; re-read
 live status before acting.
 
+Item 32 is **will_not_fix/dismissed** for a blanket pretraining lock on the
+facilitator guide. Flow contract D06 permits reference-guide reading during
+preparation; formal assessment separately requires current authority and BHW
+readiness. The earlier FB-5.1b release added a bilingual notice and direct
+preparation/certification links to the reported guide, without turning reading
+into study progress or assessment permission. The evidence and live-count
+receipt are in
+[the item 32 packet](feedback-item-32-assessor-guide-access-2026-10-29.md).
+The queue is now **32/55 reviewed and closed, 23 awaiting review**. The fresh
+live count after item 32 is **23 open (22 new, 1 in_review)**, including both
+owner-deferred reports. Start the next “next” command at **item 33**; re-read
+live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
