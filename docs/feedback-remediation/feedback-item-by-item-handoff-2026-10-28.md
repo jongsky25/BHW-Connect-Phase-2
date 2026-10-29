@@ -22,8 +22,8 @@ A fresh pilot Spot Feedback read found **214 total: 22 `new`, 1 `in_review`,
 110 `resolved`, 81 `dismissed`**, so **23 reports remain open live**. Both
 owner-deferred IDs remain `new`; no open ID falls outside the baseline queue.
 These are the counts after item 32, not a promise about the next chat's live
-state. Re-query before item 33 and after its disposition. The latest merged
-queue/handoff update is [item 32's receipt](feedback-item-32-assessor-guide-access-2026-10-29.md)
+state. Re-query before item 33 and after its disposition. The latest completed
+item disposition is [item 32's receipt](feedback-item-32-assessor-guide-access-2026-10-29.md)
 in PR #476, main commit `87cc6f9bfbad1b914ef44d3fb8b04fa539ec15f9`.
 
 The owner clarified that “next” requires a **complete disposition**: verify
