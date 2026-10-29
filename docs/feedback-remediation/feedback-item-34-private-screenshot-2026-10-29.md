@@ -1,5 +1,15 @@
 # Feedback item 34 — private screenshot evidence blocker
 
+## Final owner-directed closure — 29 October 2026
+
+The owner later explicitly instructed “rcventura, close all deferred too”.
+This supersedes the deferral below. Item 34 is now **closed / dismissed**, with
+**will_not_fix** for further screenshot investigation, at
+`2026-10-29T13:12:47.74989+00:00`. The explanatory reply was posted as `rcventura`
+and its standard in-app notification created. The image remains unseen; this
+closure does not claim that its screen was verified or fixed. See the
+[final reply and closure receipt](feedback-final-replies-and-closure-2026-10-29.md).
+
 ## Owner deferral — 29 October 2026
 
 After item 53, the owner said “defer it too” about this report. Its current
