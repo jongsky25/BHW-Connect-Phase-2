@@ -152,6 +152,16 @@ live count after item 22 is **33 open (28 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 23**; re-read live status before acting.
 
+Item 23 was **fixed/resolved by the released shared Chapter 1 assessment and
+pacing work**. The anchored legacy distractor is absent from the active v8
+pretest; focused questions and jump controls are numbered, and the 30-item form
+supports saved progress and optional breaks. The evidence and live-count receipt
+are in [the item 23 packet](feedback-item-23-pretest-clarity-numbers-length-2026-10-29.md).
+The queue is now **23/55 reviewed and closed, 32 awaiting review**. The fresh
+live count after item 23 is **32 open (27 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 24**; re-read live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
