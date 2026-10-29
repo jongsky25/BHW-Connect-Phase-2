@@ -162,6 +162,18 @@ live count after item 23 is **32 open (27 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 24**; re-read live status before acting.
 
+Item 24 is **will_not_fix/dismissed for further scored-form translation or an
+arbitrary item cut**. Released readability work enlarged assessment text and
+controls; the 30-item test has saved progress and breaks. Approved Cebuano and
+Hiligaynon lesson translations are available, but the formal scored forms have
+only reviewed English and Filipino content, with an explicit entry notice. The
+evidence and live-count receipt are in
+[the item 24 packet](feedback-item-24-assessment-text-length-language-2026-10-29.md).
+The queue is now **24/55 reviewed and closed, 31 awaiting review**. The fresh
+live count after item 24 is **31 open (26 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 25**; re-read live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
