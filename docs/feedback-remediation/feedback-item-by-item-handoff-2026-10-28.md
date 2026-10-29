@@ -9,22 +9,19 @@ do not ask the owner to collect examples that can be checked in the system.
 
 ## Current checkpoint for the next chat — 29 October 2026
 
-**Start with queue item 33** (`5bedf6bc-fe03-4feb-a48e-1ddc17313492`,
-`plant_approval`, currently `in_review`). It is separate from the
-owner-deferred plant-identification item 54. Investigate item 33's exact
-request, published plant-aid status and approval boundary before choosing a
-supported fix or `will_not_fix` disposition. Do **one item only** when the
-owner says “next” or “do it”; stop after its disposition, queue update and
-both fresh counts.
+**Start with queue item 34** (`9cfb86dd-89f4-4626-8657-803b20388e79`,
+`private_screenshot`, last verified `new`). Item 33 is complete:
+**will_not_fix/dismissed** for mandatory official-card protocol enforcement.
+Its [receipt](feedback-item-33-plant-protocol-2026-10-29.md) distinguishes this
+decline from still-pending clinical approval, locally approved aids and the
+consultation route. The two owner-deferred reports remain open.
 
-The fixed baseline queue has **32/55 reviewed and closed; 23 await review**.
-A fresh pilot Spot Feedback read found **214 total: 22 `new`, 1 `in_review`,
-110 `resolved`, 81 `dismissed`**, so **23 reports remain open live**. Both
+The fixed baseline queue has **33/55 reviewed and closed; 22 await review**.
+A fresh pilot read after item 33 found **214 total: 22 `new`, 0 `in_review`,
+110 `resolved`, 82 `dismissed`**, so **22 reports remain open live**. Both
 owner-deferred IDs remain `new`; no open ID falls outside the baseline queue.
-These are the counts after item 32, not a promise about the next chat's live
-state. Re-query before item 33 and after its disposition. The latest completed
-item disposition is [item 32's receipt](feedback-item-32-assessor-guide-access-2026-10-29.md)
-in PR #476, main commit `87cc6f9bfbad1b914ef44d3fb8b04fa539ec15f9`.
+Re-query before and after the next disposition. Handle one item only and stop
+until the owner says “next” or “do it.”
 
 The owner clarified that “next” requires a **complete disposition**: verify
 the report and current release, fix and publish if applicable or explicitly
@@ -439,7 +436,7 @@ Check fresh deployment/content facts before claiming any subsequent item live.
 Suggested first message in the next chat:
 
 > Read `docs/feedback-remediation/feedback-item-by-item-handoff-2026-10-28.md`.
-> Start at **item 33** in `docs/feedback-remediation/feedback-item-queue-2026-10-28.csv`.
+> Start at **item 34** in `docs/feedback-remediation/feedback-item-queue-2026-10-28.csv`.
 > Handle **one report only**: inspect the live report and current release,
 > implement and publish a supported fix or tag `will_not_fix` with a concrete
 > reason, update its live status and queue row, and tell me both how many of the
