@@ -186,6 +186,16 @@ live count after item 25 is **30 open (25 new, 5 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 26**; re-read live status before acting.
 
+Item 26 was **fixed/resolved by the released shorter Chapter 1 assessment and
+pacing work**. The reporter was in a historical 38-question assessor pretest;
+the active shared pretest has 30 questions, saved progress and optional breaks.
+The evidence and live-count receipt are in
+[the item 26 packet](feedback-item-26-test-length-2026-10-29.md).
+The queue is now **26/55 reviewed and closed, 29 awaiting review**. The fresh
+live count after item 26 is **29 open (24 new, 5 in_review)**, including both
+owner-deferred reports and zero new open IDs outside the baseline. Start the
+next “next” command at **item 27**; re-read live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
