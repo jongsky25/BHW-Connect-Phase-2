@@ -220,6 +220,19 @@ live count after item 28 is **27 open (24 new, 3 in_review)**, including both
 owner-deferred reports. Start the next “next” command at **item 29**; re-read
 live status before acting.
 
+Item 29 is **will_not_fix/dismissed** for an unidentified pretest question or
+key edit. The report asks whether a question means provider network or referral,
+but its whole-page exam anchor and the reporter's attempt history do not locate
+the question. The current T06 asks how to verify the local clinic/referral
+process, and the approved bilingual clarification explains the distinction
+between a provider network and a person's referral. The evidence and live-count
+receipt are in
+[the item 29 packet](feedback-item-29-network-versus-referral-2026-10-29.md).
+The queue is now **29/55 reviewed and closed, 26 awaiting review**. The fresh
+live count after item 29 is **26 open (24 new, 2 in_review)**, including both
+owner-deferred reports. Start the next “next” command at **item 30**; re-read
+live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
