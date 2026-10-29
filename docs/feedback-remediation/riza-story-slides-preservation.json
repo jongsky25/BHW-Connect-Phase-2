@@ -1,0 +1,17 @@
+{
+  "path": "src/components/elearning/reference-lessons.tsx",
+  "predecessor_sha256": "2f017df690aa96b7b875266b0ec1f9c2b14e702e963cfae8b5171e381f1ad2d1",
+  "successor_sha256": "f6624e4da17d6b861afb8a37038b6799db4b9a01ac9f31488be85e7dc548b7df",
+  "replacements": [
+    {
+      "predecessor_utf8": "  const storyArt = hepoPresentation && mode === \"slides\" ? null : sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;\n",
+      "current_utf8": "  const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;\n",
+      "count": 1
+    },
+    {
+      "predecessor_utf8": "        {hepoPresentation && <HepoPresentationGuide position={item.id} index={index} count={items.length} slides={mode === \"slides\"} en={en}/>}\n        {storyVideoPrompt && !(hepoPresentation && mode === \"slides\") && <button type=\"button\"\n",
+      "current_utf8": "        {hepoPresentation && mode === \"read\" && <HepoPresentationGuide position={item.id} index={index} count={items.length} slides={false} en={en}/>}\n        {storyVideoPrompt && <button type=\"button\"\n",
+      "count": 1
+    }
+  ]
+}
