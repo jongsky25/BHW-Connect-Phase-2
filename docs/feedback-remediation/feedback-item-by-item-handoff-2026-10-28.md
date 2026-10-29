@@ -233,6 +233,19 @@ live count after item 29 is **26 open (24 new, 2 in_review)**, including both
 owner-deferred reports. Start the next “next” command at **item 30**; re-read
 live status before acting.
 
+Item 30 is **fixed/resolved by the existing Chapter 1 assessment and bilingual
+clarification**. The report quotes a historical question that seemed to assign
+the learner a supervisor role. The active T13 asks about verifying a BHW's
+accredited-service evidence and CSC requirements, and the clarification says
+the learner is a BHW who cannot certify service or approve eligibility. The
+historical served-item identity remains unverified. The evidence and live-count
+receipt are in
+[the item 30 packet](feedback-item-30-bhw-versus-supervisor-2026-10-29.md).
+The queue is now **30/55 reviewed and closed, 25 awaiting review**. The fresh
+live count after item 30 is **25 open (24 new, 1 in_review)**, including both
+owner-deferred reports. Start the next “next” command at **item 31**; re-read
+live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
