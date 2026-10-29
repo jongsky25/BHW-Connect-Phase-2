@@ -207,6 +207,19 @@ live count after item 27 is **28 open (24 new, 4 in_review)**, including both
 owner-deferred reports and zero new open IDs outside the baseline. Start the
 next “next” command at **item 28**; re-read live status before acting.
 
+Item 28 is **will_not_fix/dismissed** for an additional edit to the example
+ranking. The published cause and prioritization lessons present the deck's
+scores as fictional practice, explicitly separate them from local findings,
+and require investigation of water access, income, transport and service
+barriers. The approved bilingual clarification reinforces that distinction.
+The report names no erroneous score or requested replacement wording. The
+evidence and live-count receipt are in
+[the item 28 packet](feedback-item-28-diarrhoea-ranking-2026-10-29.md).
+The queue is now **28/55 reviewed and closed, 27 awaiting review**. The fresh
+live count after item 28 is **27 open (24 new, 3 in_review)**, including both
+owner-deferred reports. Start the next “next” command at **item 29**; re-read
+live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
