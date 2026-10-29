@@ -1,5 +1,22 @@
 # Feedback item 34 — private screenshot evidence blocker
 
+## Owner deferral — 29 October 2026
+
+After item 53, the owner said “defer it too” about this report. Its current
+disposition is **deferred_owner**; it remains **reviewed_open / in_review**.
+Do not resume screenshot investigation or close this report unless the owner
+explicitly lifts its deferral. The earlier evidence and recovery boundary below
+remain preserved as historical findings, not a current instruction to proceed.
+No live status, resolution fields, screenshot access or user message changed.
+
+Fresh live counts remain **214 total: 2 new, 1 in_review, 117 resolved,
+94 dismissed; 3 open**, now all owner-deferred. The queue remains **53/55
+reviewed: 52 closed, 1 reviewed_open; 2 pending**, both previously deferred.
+A separate reply audit found **2 replies on 2 reports, both original-reporter
+follow-ups; 212 reports have no reply**. No staff reply or notification was sent
+by this workflow. Status dispositions do not constitute replies to submitters.
+
+
 Report `9cfb86dd-89f4-4626-8657-803b20388e79` remains **reviewed_open / in_review**, not fixed or declined. This is the handoff's actual-evidence-blocker exception: the attached image cannot be visually inspected through the available authorized tools, and the remaining text does not identify a requested change. A safe terminal disposition is still blocked.
 
 ## Fresh report and release evidence
