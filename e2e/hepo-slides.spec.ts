@@ -11,7 +11,7 @@ function localSql(sql:string){
   return execFileSync('docker',['exec','-i','supabase_db_bhw-connect-phase-2','psql','-U','postgres','-d','postgres','-v','ON_ERROR_STOP=1','-At'],{input:sql,encoding:'utf8',timeout:15000});
 }
 
-test('HEPO authored slides, viewing guidance and section focus preserve assessment boundaries in training and assessor study',async({page,request})=>{
+test('Riza story slides preserve summaries and assessment boundaries in training and assessor study',async({page,request})=>{
   test.setTimeout(120000);
   const admin=await getAccessToken(request,STABLE_CITY_ADMIN.username,STABLE_CITY_ADMIN.password);
   const assessor=await createThrowawayAssessor(request,admin,'00000000-0000-0000-0000-000000000004');
@@ -72,8 +72,14 @@ test('HEPO authored slides, viewing guidance and section focus preserve assessme
         await expect(dialog.locator('.reference-story-presenter')).toBeVisible();
         await expect(dialog.locator('[data-reader-viewport]')).toHaveCount(0);
         await expect(dialog.locator('.lesson-reader-surface')).toHaveAttribute('data-orientation','portrait');
-        await expect.poll(()=>dialog.locator('button').evaluateAll(buttons=>buttons.every(button=>{const b=button.getBoundingClientRect();return b.left>=-1&&b.right<=innerWidth+1&&b.top>=-1&&b.bottom<=innerHeight+1;}))).toBe(true);
+        await expect.poll(()=>dialog.locator('.lesson-reader-toolbar button, .reference-story-presenter-pager button').evaluateAll(buttons=>buttons.every(button=>{const b=button.getBoundingClientRect();return b.left>=-1&&b.right<=innerWidth+1&&b.top>=-1&&b.bottom<=innerHeight+1;}))).toBe(true);
         await expect(dialog.locator('article')).toHaveAttribute('data-scene','check-slide');
+        for(const option of check.options){
+          const answer=dialog.getByRole('button',{name:option[locale],exact:true});
+          await answer.scrollIntoViewIfNeeded();
+          await expect(answer).toBeInViewport();
+        }
+        expect(await dialog.locator('article').evaluate(article=>article.scrollWidth<=article.clientWidth+1)).toBe(true);
         await expect(dialog.locator('.reference-check-feedback')).toHaveCount(0);
         expect((await new AxeBuilder({page}).include('dialog[open]').analyze()).violations).toEqual([]);
         await dialog.getByRole('button',{name:locale==='en'?'Read':'Basahin',exact:true}).click();
