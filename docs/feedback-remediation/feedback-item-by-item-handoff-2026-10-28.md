@@ -246,6 +246,19 @@ live count after item 30 is **25 open (24 new, 1 in_review)**, including both
 owner-deferred reports. Start the next “next” command at **item 31**; re-read
 live status before acting.
 
+Item 31 is **fixed/resolved by the released FB-5.1d group-learning navigation**.
+The reported Records lesson has facilitator-led discussion, examples, a
+three-person practice activity, observation and follow-up. PR #369 made its
+guide and the subchapter run view directly reachable from assessor study and
+added shortcuts into the guide's authored sections. Online self-check remains
+separate from observed skill; RHU-only mandatory attendance was not adopted.
+The evidence and live-count receipt are in
+[the item 31 packet](feedback-item-31-group-learning-2026-10-29.md).
+The queue is now **31/55 reviewed and closed, 24 awaiting review**. The fresh
+live count after item 31 is **24 open (23 new, 1 in_review)**, including both
+owner-deferred reports. Start the next “next” command at **item 32**; re-read
+live status before acting.
+
 “Next” means complete one item's disposition: investigate, implement and release
 a supported fix, or explicitly decline the remaining request as `will_not_fix`
 with a concrete reason. Do not stop after locating an actionable source gap or
