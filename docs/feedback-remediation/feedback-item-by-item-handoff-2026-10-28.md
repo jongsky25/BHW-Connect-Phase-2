@@ -9,21 +9,21 @@ do not ask the owner to collect examples that can be checked in the system.
 
 ## Current checkpoint for the next chat — 29 October 2026
 
-**Next pending queue item is 52** (`9cd61e10-9b97-4941-bf57-241a4d0fde22`).
-Item 51 is **will_not_fix / dismissed** for a further unsupported rewrite of
-the retired sharps-container question or an unspecified current item. Its
-[receipt](feedback-item-51-pretest-scenario-2026-10-29.md) verifies the reporter's
-snapshot and current scenario-first safety questions without attributing the
-separate T27 needlestick fix to this report.
+**Next pending queue item is 53** (`b1e43e76-1ba8-422a-a86a-6682b4f23b11`).
+Item 52 is **will_not_fix / dismissed** for an additional speculative navigation
+or prerequisite change. Its [receipt](feedback-item-52-unidentified-navigation-2026-10-29.md)
+records the reporter's historical saves, successful actor-filtered API logs and
+current cross-subchapter continuation without inventing the original failure.
+The candidate duplicate at item 53 remains untouched and `new`.
 
 Item 34 remains **reviewed_open / in_review** for authorized visual access to
 its private screenshot; its [receipt](feedback-item-34-private-screenshot-2026-10-29.md)
 records the recovery path. Do not claim it fixed or declined. The two
 owner-deferred reports remain open.
 
-The fixed baseline queue has **51/55 reviewed: 50 closed and 1 reviewed_open;
-4 await review**. A fresh pilot read after item 51 found **214 total:
-4 `new`, 1 `in_review`, 117 `resolved`, 92 `dismissed`**, so **5 reports
+The fixed baseline queue has **52/55 reviewed: 51 closed and 1 reviewed_open;
+3 await review**. A fresh pilot read after item 52 found **214 total:
+3 `new`, 1 `in_review`, 117 `resolved`, 93 `dismissed`**, so **4 reports
 remain open live**. Both owner-deferred IDs remain `new`; no open ID falls
 outside the baseline queue. Re-query before and after the next disposition.
 Handle one item only and stop until the owner says “next” or “do it.”
@@ -441,7 +441,7 @@ Check fresh deployment/content facts before claiming any subsequent item live.
 Suggested first message in the next chat:
 
 > Read `docs/feedback-remediation/feedback-item-by-item-handoff-2026-10-28.md`.
-> Start at **item 52** in `docs/feedback-remediation/feedback-item-queue-2026-10-28.csv`.
+> Start at **item 53** in `docs/feedback-remediation/feedback-item-queue-2026-10-28.csv`.
 > Handle **one report only**: inspect the live report and current release,
 > implement and publish a supported fix or tag `will_not_fix` with a concrete
 > reason, update its live status and queue row, and tell me both how many of the
