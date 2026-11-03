@@ -1,10 +1,25 @@
 # Session handoff — pilot-stage working agreement
 
-Read this before starting work on BHW Connect Phase 2. It is not a plan (that
-is `docs/training-modules-plan.md`); it is how to work, and the live state of
-the pilot project, so a new session does not re-discover either the hard way.
+## Current entry point — 3 November 2026
 
-Last updated: 27 September 2026.
+Start with `AGENTS.md`, `docs/working-strategy.md`, `CLAUDE.md` and
+`docs/work-register.md`. The working strategy is the current collaboration
+agreement: mobile-first updates, completed materials reviewed on the live pilot,
+no separate review preview site, and one coordinator for parallel integration
+and pilot mutations. Development and E2E continue using disposable databases.
+
+Project skills live in `.agents/skills/bhw-parallel-development/` and
+`.agents/skills/bhw-live-release/`, with Claude discovery links in `.claude/skills/`.
+Read the relevant feature handoff rather than every document in this repository.
+
+## Historical handoff and feature pointers
+
+The entries below were accumulated in September 2026. They preserve reasoning
+and feature pointers, **not verified current deployment, credentials, tool
+availability or outstanding work**. Their earlier approval and sandbox claims
+are historical observations; inspect current access and task scope. The current
+working strategy governs collaboration where older text differs. Preserve the
+database protections in `CLAUDE.md` and `docs/deploy-runbook.md`.
 
 **Handrub clip (Chapter 2.3, Remotion) work:** read
 `docs/handrub-clip-enhancement-handoff.md`. It covers moving the clip off

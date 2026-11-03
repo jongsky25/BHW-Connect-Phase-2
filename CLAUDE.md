@@ -1,5 +1,10 @@
 # BHW Connect Phase 2: working rules
 
+Read `AGENTS.md` and `docs/working-strategy.md` first for the current mobile-first
+collaboration agreement, live-site review preference and project skills. These
+technical rules remain in force. For concurrent work, check
+`docs/work-register.md`; one coordinator owns integration and pilot mutations.
+
 Next.js 16 on Vercel (Hobby, `hnd1`) with Supabase (free plan, Tokyo). Both run
 on free tiers, and on 27 Sep 2026 CI and dev traffic used up the pilot
 database's Disk IO budget and took it down for hours. These rules exist to

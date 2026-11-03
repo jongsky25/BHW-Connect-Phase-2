@@ -13,6 +13,9 @@ set -euo pipefail
 
 cd "${CLAUDE_PROJECT_DIR:-$(dirname "$0")/../..}"
 
+echo "BHW Connect Phase 2: read AGENTS.md, docs/working-strategy.md and docs/work-register.md."
+echo "Review destination: live pilot. Parallel tasks use isolated checkouts and one release coordinator."
+
 if [ "${CLAUDE_CODE_REMOTE:-}" = "true" ]; then
   if [ ! -d node_modules ]; then
     echo "Installing dependencies..."

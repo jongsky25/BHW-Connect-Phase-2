@@ -1,5 +1,15 @@
 # Deploy runbook
 
+## Review workflow (3 November 2026)
+
+The user reviews completed changes and materials on the **live pilot site** from
+mobile. Do not create or require a separate preview site for review. Follow
+`docs/working-strategy.md` and `.agents/skills/bhw-live-release/SKILL.md` for the
+release handoff. Automated testing still uses disposable local databases.
+During parallel development, one named coordinator owns merges, pilot migrations,
+content loads and shared flag changes. Existing hosting preview configuration is
+not evidence that a separate user review step is needed.
+
 ## Normal deploy
 
 1. Open a PR against `main`. CI (`.github/workflows/ci.yml`) runs lint,
