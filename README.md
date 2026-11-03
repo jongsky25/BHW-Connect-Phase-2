@@ -4,6 +4,11 @@ A web app for Barangay Health Workers (BHWs) in the Philippines. See `docs/` for
 the product vision, the increment-by-increment build contract, and the free-AI
 leverage plan — start there before touching code.
 
+**Development sessions:** start with [AGENTS.md](AGENTS.md) and the current
+[working strategy](docs/working-strategy.md). They cover mobile communication,
+live pilot review, project skills and coordinated parallel development. Check
+the [work register](docs/work-register.md) before assigning concurrent tasks.
+
 Training content quality: `docs/content-assessment-2026-09.md` (multi-perspective
 review of the Day 1 package) and `docs/capacity-building-content-standard.md`
 (the proposed standard for all future training materials).
