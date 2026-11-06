@@ -13,7 +13,7 @@ export function MyAssessorTrainingCard({ progress, locale }: { progress: Assesso
   const complete = progress.counts.total > 0 && progress.counts.done === progress.counts.total;
   return <section aria-labelledby={`assessor-training-${progress.programId}`} className="w-full max-w-2xl overflow-hidden rounded-2xl border border-ink/15 shadow-sm">
     <div className="space-y-4 bg-celebration/10 p-5 sm:p-6">
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
         <ProgressRing counts={progress.counts} state={studyState(progress.counts)} locale={locale} label={text("Progreso sa sariling pag-aaral ng assessor", "Assessor personal study progress")} />
         <div className="min-w-0 space-y-2 break-words">
           <h2 id={`assessor-training-${progress.programId}`} className="text-sm font-semibold text-ink">{text("Ang aking pagsasanay bilang assessor", "My assessor training")}</h2>
