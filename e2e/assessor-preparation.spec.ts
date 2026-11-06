@@ -56,6 +56,12 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
       'qualifications',(select jsonb_agg(to_jsonb(p)) from assessor_chapter_qualifications p where assessor_user_id='${actor.id}' and chapter_id='${chapter}'),
       'awards',(select jsonb_agg(to_jsonb(p)) from assessor_rollout_private.chapter_awards p where actor_id='${actor.id}' and chapter_id='${chapter}'));`).trim();
     const beforeGuide=guideEvidence();
+    await page.goto('/home');
+    const homeProgress=page.locator(`section[aria-labelledby="assessor-training-${program}"]`);
+    await expect(homeProgress.getByRole('progressbar').first()).toHaveAttribute('aria-valuenow','0');
+    await homeProgress.getByRole('link',{name:'Magpatuloy sa pag-aaral · Kabanata 1'}).click();
+    await expect(page).toHaveURL(`${base}/briefing`);
+    expect(guideEvidence()).toBe(beforeGuide);
     await page.goto(`/training/${program}/chapter-1/${guideModuleId}`);
     await expect(page.getByRole('heading',{name:'Pagbukas ng gabay at pahintulot sa pagtatasa'})).toBeVisible();
     await expect(page.getByRole('link',{name:'Tingnan ang mga kailangan sa aking sertipikasyon'})).toHaveAttribute('href',`/training/${program}/assessor/qualifications#chapter-1`);
@@ -131,7 +137,12 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
         values('${actor.id}','${chapter}','${reviewLessonId}','${reviewRevisionId}');
     `);
     const beforeReview=guideEvidence();
+    await page.goto('/home');
+    await expect(homeProgress.getByRole('progressbar').first()).toHaveAttribute('aria-valuetext',/1\/42/);
     await page.reload();
+    await expect(homeProgress.getByRole('progressbar').first()).toHaveAttribute('aria-valuetext',/1\/42/);
+    expect(guideEvidence()).toBe(beforeReview);
+    await page.goto(`${base}#assessor-refresher-review`);
     const completedReview=refresher.locator('summary');
     await expect(completedReview).toHaveText('Balikan ang natapos na mga aralin (1)');
     await completedReview.click();

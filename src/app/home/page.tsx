@@ -5,6 +5,8 @@ import { DestinationLink } from "@/components/nav/destination-link";
 import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
 import { MyTrainingCard } from "@/components/progress/my-training-card";
+import { MyAssessorTrainingCard } from "@/components/progress/my-assessor-training-card";
+import { loadAssessorProgress, type AssessorStudyProgress } from "@/lib/progress/load-assessor-progress";
 import { SignOutButton } from "@/components/sign-out-button";
 import { getViewer } from "@/lib/auth/viewer";
 import { getNavItems } from "@/lib/nav/nav-items";
@@ -44,6 +46,17 @@ export default async function HomePage() {
     }
   }
 
+  let assessorTraining: AssessorStudyProgress[] = [];
+  let assessorProgressFailed = false;
+  if (flags.elearning && role === "assessor" && appUser.role === "assessor" && appUser.status === "active" && !viewer.isPreview) {
+    try {
+      assessorTraining = await loadAssessorProgress(await createClient(), appUser.id);
+    } catch (error) {
+      assessorProgressFailed = true;
+      Sentry.captureException(error);
+    }
+  }
+
   const greeting = await greetingRead;
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
@@ -59,6 +72,12 @@ export default async function HomePage() {
       {training.map((progress) => (
         <MyTrainingCard key={progress.programId} progress={progress} locale={locale} />
       ))}
+      {assessorTraining.map((progress) => (
+        <MyAssessorTrainingCard key={progress.programId} progress={progress} locale={locale} />
+      ))}
+      {assessorProgressFailed && <p role="status" className="w-full max-w-2xl rounded-xl border border-ink/20 p-4">
+        {locale === "en" ? "Your study progress could not be loaded. Reload this page to try again, or open Courses to continue studying." : "Hindi ma-load ang iyong progreso sa pag-aaral. I-reload ang pahina para subukang muli, o buksan ang Mga kurso para magpatuloy."}
+      </p>}
 
       <nav aria-labelledby="home-destinations-heading" className="w-full space-y-3">
         <h2 id="home-destinations-heading" className="text-xl font-semibold">{tDest("heading")}</h2>

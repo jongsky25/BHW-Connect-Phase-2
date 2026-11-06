@@ -5,19 +5,21 @@ import fil from "../../../messages/fil.json";
 import { FLAG_ROLE_SCOPE } from "@/lib/flags/types";
 import { getNavItems } from "@/lib/nav/nav-items";
 import HomePage from "./page";
-const state = vi.hoisted(() => ({ locale: "en", role: "bhw", enabled: true, preview: false, preferredName: null as string | null, preferenceError: false }));
+const state = vi.hoisted(() => ({ locale: "en", role: "bhw", enabled: true, preview: false, preferredName: null as string | null, preferenceError: false, actualRole: "bhw", status: "active" }));
 vi.mock("next/navigation", () => ({ redirect: (url: string) => { throw Error(url); } }));
 vi.mock("next-intl/server", () => ({ getLocale: async () => state.locale, getTranslations: async (namespace: string) => {
   const messages = (state.locale === "en" ? en : fil) as unknown as Record<string, Record<string, string>>;
   return (key: string, values?: Record<string, string>) => Object.entries(values ?? {}).reduce((message, [name, value]) => message.replace(`{${name}}`, value), messages[namespace][key]);
 } }));
-vi.mock("@/lib/auth/viewer", () => ({ getViewer: async () => ({ role: state.role, isPreview: state.preview, appUser: { id: "self", full_name: "Fictional Rosa", onboarding_completed_at: "2026-10-01" } }) }));
+vi.mock("@/lib/auth/viewer", () => ({ getViewer: async () => ({ role: state.role, isPreview: state.preview, appUser: { id: "self", role: state.actualRole, status: state.status, full_name: "Fictional Rosa", onboarding_completed_at: "2026-10-01" } }) }));
 vi.mock("@/lib/supabase/request", () => ({ getRequestFeatureFlags: async () => ({ elearning: state.enabled }) }));
 vi.mock("@/lib/supabase/server", () => ({ createClient: async () => ({ rpc: async () => ({ data: state.preferredName, error: state.preferenceError ? { message: "Unavailable" } : null }) }) }));
 vi.mock("@/lib/progress/load-manual-progress", () => ({ loadManualProgress: async () => [] }));
 vi.mock("@/components/sign-out-button", () => ({ SignOutButton: () => <button>Sign out</button> }));
+const assessorLoader = vi.hoisted(() => vi.fn(async () => []));
+vi.mock("@/lib/progress/load-assessor-progress", () => ({ loadAssessorProgress: assessorLoader }));
 afterEach(cleanup);
-beforeEach(() => Object.assign(state, { locale: "en", role: "bhw", enabled: true, preview: false, preferredName: null, preferenceError: false }));
+beforeEach(() => { assessorLoader.mockReset().mockResolvedValue([]); Object.assign(state, { locale: "en", role: "bhw", enabled: true, preview: false, preferredName: null, preferenceError: false, actualRole: "bhw", status: "active" }); });
 
 it.each(["en", "fil"])("describes visible destinations while retaining their concise accessible names (%s)", async locale => {
   state.locale = locale; const messages = locale === "en" ? en : fil;
@@ -53,4 +55,29 @@ it("uses the official name when the preference is unset, unavailable or in previ
     state.preferenceError = scenario === "unavailable"; state.preview = scenario === "preview";
     render(await HomePage()); expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Welcome, Fictional Rosa!"); cleanup();
   }
+});
+
+
+it("loads the assessor's own study only for an active real assessor", async () => {
+  state.role = state.actualRole = "assessor";
+  render(await HomePage());
+  expect(assessorLoader).toHaveBeenCalledWith(expect.anything(), "self");
+});
+it.each(["preview", "inactive", "disabled", "admin-preview", "bhw"])("does not load assessor progress for %s", async scenario => {
+  state.role = state.actualRole = "assessor";
+  if (scenario === "preview") state.preview = true;
+  if (scenario === "inactive") state.status = "inactive";
+  if (scenario === "disabled") state.enabled = false;
+  if (scenario === "admin-preview") state.actualRole = "admin";
+  if (scenario === "bhw") state.role = state.actualRole = "bhw";
+  render(await HomePage());
+  expect(assessorLoader).not.toHaveBeenCalled();
+});
+it("keeps destinations accessible and reports a progress read failure", async () => {
+  state.role = state.actualRole = "assessor";
+  assessorLoader.mockRejectedValueOnce(new Error("offline"));
+  render(await HomePage());
+  expect(screen.getByRole("status")).toHaveTextContent("could not be loaded");
+  expect(screen.getByRole("link", { name: en.authHome.coursesCta })).toBeInTheDocument();
+  expect(screen.queryByRole("progressbar")).not.toBeInTheDocument();
 });
