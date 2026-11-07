@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { updateSession } from "./middleware";
+import { resetFlagRowsCache, updateSession } from "./middleware";
 
 // RFT B1 (docs/role-feature-toggles-plan.md §6 B1): only an admin's own
 // `bhw_view_as` preview cookie is ever honoured, and the role it resolves
@@ -82,9 +82,14 @@ vi.mock("../flags/get-flags", async (importOriginal) => {
   const actual = await importOriginal<typeof import("../flags/get-flags")>();
   return {
     ...actual,
-    tryFetchFlagRows: async () => flagRows,
+    tryFetchFlagRows: async () => {
+      flagReads += 1;
+      return flagRows;
+    },
   };
 });
+
+let flagReads = 0;
 
 function makeRequest(pathname: string, cookieHeader?: string, method = "GET") {
   return new NextRequest(`http://localhost${pathname}`, {
@@ -95,6 +100,8 @@ function makeRequest(pathname: string, cookieHeader?: string, method = "GET") {
 
 beforeEach(() => {
   resetFixtures();
+  resetFlagRowsCache();
+  flagReads = 0;
 });
 
 describe("updateSession preview cookie (RFT B1)", () => {
@@ -182,5 +189,14 @@ describe("updateSession when the database is too slow", () => {
 
     expect(response.status).toBe(503);
     expect(await response.json()).toEqual({ error: "busy" });
+  });
+});
+
+describe("updateSession flag rows cache", () => {
+  it("reads feature_flags once for back-to-back page requests", async () => {
+    appUserRow.role = "bhw";
+    await updateSession(makeRequest("/home"));
+    await updateSession(makeRequest("/home"));
+    expect(flagReads).toBe(1);
   });
 });
