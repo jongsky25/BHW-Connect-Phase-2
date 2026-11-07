@@ -1,5 +1,9 @@
 # Next-chat handoff: Chapter 1 assessor preparation
 
+**Superseded for new work:** C1AF-06 was released in PR #289. Start with
+[the C1AF-06a simulation next-chat handoff](chapter-1-assessor-simulation-next-chat.md).
+The release notes below describe the earlier PR #288 starting point.
+
 Release PR: https://github.com/jongsky25/BHW-Connect-Phase-2/pull/288
 
 This handoff was prepared during release. Check the PR's final status, exact merge
