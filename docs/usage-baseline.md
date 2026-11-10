@@ -96,7 +96,16 @@ once and return early when the actor can't qualify. On a pilot-shaped local
 dataset (162 lessons, 43,753 org units), the lesson list drops from 1,102 to
 323 buffer hits and from 3.2 to 0.5 ms. The visible-module helper drops from
 2.3 to 0.17 ms per call, and the admin helper for a BHW from 0.83 to
-0.02 ms.
+0.02 ms. Applied to the pilot on 10 Nov at 11:58 UTC; all 141 users' visible
+sets were identical before and after.
+
+Third fix (`20261110150000_lesson_resume_cost.sql`):
+`training_lesson_visible` is now PL/pgSQL, 2.2 to 0.09 ms per call. It is used
+by both resume RPCs, both completion RPCs and the assessor exam bank.
+`rpc_course_lesson_resume` skips the write when the bookmark is unchanged and
+the lesson is already the learner's most recent. Before this, all 4,809
+updates on the pilot were non-HOT because the indexed `updated_at` changed on
+every call. An unchanged save drops from 1.2 to 0.26 ms and writes nothing.
 
 ## Queries used
 
