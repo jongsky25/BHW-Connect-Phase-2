@@ -51,7 +51,8 @@ describe('Carole action-plan draft',()=>{
   for(const [p,e]of Object.entries(r.changed_existing_files)){
    expect(sha(bytes(p))).toBe(e.proposed_sha256);
    expect(sha(beforeProposed174(p))).toBe(e.predecessor_sha256);
-   expect(beforeProposed174(p)).toEqual(originals.get(p));
+   // Exact byte comparison; Vitest's toEqual walks Buffers element by element (~25 s here).
+   const previous=beforeProposed174(p);expect(Buffer.isBuffer(previous)&&previous.equals(originals.get(p)),p).toBe(true);
    expect(()=>beforeProposed174(p,Buffer.from('changed'))).toThrow('Unpinned');
   }
   expect(r.owner_release_approval).toBe(false);
