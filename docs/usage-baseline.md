@@ -106,6 +106,15 @@ by both resume RPCs, both completion RPCs and the assessor exam bank.
 the lesson is already the learner's most recent. Before this, all 4,809
 updates on the pilot were non-HOT because the indexed `updated_at` changed on
 every call. An unchanged save drops from 1.2 to 0.26 ms and writes nothing.
+Applied to the pilot on 10 Nov at 12:32 UTC; all 141 users x 162 lessons were
+identical before and after.
+
+Fourth fix (`20261110160000_assessment_save_receipts.sql`): an assessment
+answer save now stores a ~60-byte receipt instead of a ~17 KB copy of the full
+state. A retry rebuilds the response from the attempt. Submitting clears the
+attempt's receipts, and the migration drops the receipts of submitted
+attempts. `mutation_receipts` was 96 MB on 10 Nov (88 MB that morning). It
+needs a one-off `vacuum full` after the apply to hand the space back.
 
 ## Queries used
 
