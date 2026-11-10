@@ -10,7 +10,10 @@ it('reconstructs exact predecessor bytes within the bounded CSC source and histo
   for(const [path,e]of Object.entries(receipt.changed_existing_files)){
     const disk=readFileSync(path),previous=beforeFeedbackCsc(path,disk);
     expect(sha(disk)).toBe(e.proposed_sha256);expect(sha(previous)).toBe(e.predecessor_sha256);
-    expect(beforeFeedbackCsc(path,previous)).toEqual(previous);
+    // Exact byte comparison. Vitest's toEqual walks a Buffer element by
+    // element and took ~25 s here, which pushed this test into its timeout.
+    const again=beforeFeedbackCsc(path,previous);
+    expect(Buffer.isBuffer(again)&&again.equals(previous),path).toBe(true);
     if(path.endsWith('narration.json')){
       const old=JSON.parse(previous),current=JSON.parse(disk);
       for(const key of Object.keys(old.lessons))if(key!=='bhw-eligibility')expect(current.lessons[key]).toEqual(old.lessons[key]);

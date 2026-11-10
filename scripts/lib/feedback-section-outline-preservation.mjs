@@ -2,6 +2,8 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {beforeFeedbackItem16} from './feedback-item-16-preservation.mjs';
+import {memoDiskView} from './disk-view-memo.mjs';
+const diskItem16 = memoDiskView((path, raw) => beforeFeedbackItem16(path, raw, true));
 const target='src/components/elearning/reference-lessons.tsx';
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 let receipt,successor,predecessor;
@@ -23,7 +25,7 @@ export function beforeFeedbackSectionOutline(path,actual=fs.readFileSync(path)) 
   // Read and compare ALL current bytes on every call. Only the pure exact
   // reconstruction is memoized: any disk/input change misses these equality
   // checks and must satisfy the same SHA-256 allowlist as before.
-  const disk=beforeFeedbackItem16(path,fs.readFileSync(path),true);
+  const disk=diskItem16(path);
   if(!disk.equals(successor??Buffer.alloc(0))&&!disk.equals(predecessor??Buffer.alloc(0))){
     const hash=sha(disk);
     if(hash===r.successor_sha256)pinSuccessor(disk,r);
