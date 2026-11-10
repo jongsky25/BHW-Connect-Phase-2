@@ -88,6 +88,8 @@ beforeAll(async () => {
     create function public.rpc_assessor_exam_open(uuid,text)
       returns jsonb language sql as $$ select '{}'::jsonb $$;`);
   await db.exec(read('supabase/migrations/20261012152647_assessor_chapter1_shared_assessment.sql'));
+  await db.exec(read('supabase/migrations/20261110160000_assessment_save_receipts.sql'));
+  await db.exec(read('supabase/migrations/20261110160100_assessment_receipts_cleanup.sql'));
   await db.query('insert into org_units values($1,$2)', [ids.org, `${ids.org}.`]);
   for (const [id, role] of [[ids.learner, 'bhw'], [ids.stranger, 'bhw'], [ids.admin, 'admin'],
     [ids.reviewer, 'assessor'], [ids.nextReviewer, 'assessor']])
@@ -199,6 +201,58 @@ describe('Chapter 1 private learner attempt contract', () => {
     expect(legacy[0]).toMatchObject({ response_kind: 'unknown', selected_option_index: null });
   });
 
+  it('keeps save receipts compact, replays them from the attempt and clears them on submit', async () => {
+    const first = (await call(ids.learner, 'rpc_learner_assessment_start', '$1,$2', [ids.course, 'pretest'])).rows[0].result;
+    const receipts = async () => (await db.query(
+      'select mutation_id, result, pg_column_size(result) as bytes from learner_assessment_private.mutation_receipts where attempt_id=$1 order by mutation_id',
+      [first.attempt_id])).rows;
+    const one = [{ item_id: first.items[0].item_id, kind: 'choice', option_id: 'b' }];
+    const save = (revision, mutation, changes, position) => call(ids.learner, 'rpc_learner_assessment_save',
+      '$1,$2,$3,$4::jsonb,$5,$6', [first.attempt_id, revision, mutation, JSON.stringify(changes), position, 'en']);
+    const saved = (await save(0, uuid(900), one, 1)).rows[0].result;
+    expect(saved.revision).toBe(1);
+    const [receipt] = await receipts();
+    expect(receipt.result).toEqual({ replay_from_attempt: true, revision: 1 });
+    expect(receipt.bytes).toBeLessThan(200);
+    // A lost response is retried with the same mutation: same state, no second save.
+    expect((await save(0, uuid(900), one, 1)).rows[0].result).toEqual(saved);
+    await expect(save(0, uuid(900), [], 1)).rejects.toThrow(/different payload/);
+    // A receipt written before this migration still replays its stored result.
+    await db.query('insert into learner_assessment_private.mutation_receipts values($1,$2,$3,$4)',
+      [first.attempt_id, uuid(901), 'legacy-hash', JSON.stringify({ legacy: true })]);
+    await db.query("update learner_assessment_private.mutation_receipts set payload_hash=md5(concat_ws('|','1','[]','2','en')) where mutation_id=$1", [uuid(901)]);
+    expect((await save(1, uuid(901), [], 2)).rows[0].result).toEqual({ legacy: true });
+    // Submitting clears every save receipt; a retried submit still gets the same final result.
+    const all = first.items.map(item => ({ item_id: item.item_id, kind: 'choice', option_id: 'a' }));
+    await save(1, uuid(902), all, 29);
+    const submit = () => call(ids.learner, 'rpc_learner_assessment_submit', '$1,$2,$3', [first.attempt_id, 2, uuid(903)]);
+    const final = (await submit()).rows[0].result;
+    expect((await receipts()).map(r => r.mutation_id)).toEqual([uuid(903)]);
+    expect((await submit()).rows[0].result).toEqual(final);
+    await expect(save(1, uuid(902), all, 29)).rejects.toThrow(/not a draft/);
+  });
+  it('cleans up pre-migration receipts: drops submitted attempts, compacts drafts, keeps their replay', async () => {
+    const start = phase => call(ids.learner, 'rpc_learner_assessment_start', '$1,$2', [ids.course, phase]);
+    const draft = (await start('pretest')).rows[0].result;
+    const all = draft.items.map(item => ({ item_id: item.item_id, kind: 'choice', option_id: 'a' }));
+    await call(ids.learner, 'rpc_learner_assessment_save', '$1,$2,$3,$4::jsonb,$5,$6',
+      [draft.attempt_id, 0, uuid(910), JSON.stringify(all), 29, 'en']);
+    await call(ids.learner, 'rpc_learner_assessment_submit', '$1,$2,$3', [draft.attempt_id, 1, uuid(911)]);
+    await db.query("insert into course_progress values($1,$2,$3,'completed')", [uuid(912), ids.course, ids.learner]);
+    const open = (await start('posttest')).rows[0].result;
+    await call(ids.learner, 'rpc_learner_assessment_save', '$1,$2,$3,$4::jsonb,$5,$6',
+      [open.attempt_id, 0, uuid(913), JSON.stringify(all.slice(0, 1)), 1, 'en']);
+    // Make every receipt look like a pre-migration one: full stored results.
+    await db.query("update learner_assessment_private.mutation_receipts set result = jsonb_build_object('old_full_result', true)");
+    await db.query("insert into learner_assessment_private.mutation_receipts values($1,$2,'h',$3)",
+      [draft.attempt_id, uuid(914), JSON.stringify({ old_full_result: true })]);
+    await db.exec(read('supabase/migrations/20261110160100_assessment_receipts_cleanup.sql'));
+    const rows = (await db.query('select attempt_id, mutation_id, result from learner_assessment_private.mutation_receipts order by mutation_id')).rows;
+    expect(rows).toEqual([{ attempt_id: open.attempt_id, mutation_id: uuid(913), result: { replay_from_attempt: true, revision: 1 } }]);
+    const replay = (await call(ids.learner, 'rpc_learner_assessment_save', '$1,$2,$3,$4::jsonb,$5,$6',
+      [open.attempt_id, 0, uuid(913), JSON.stringify(all.slice(0, 1)), 1, 'en'])).rows[0].result;
+    expect(replay).toMatchObject({ attempt_id: open.attempt_id, revision: 1, state: 'draft' });
+  });
   it('denies foreign draft reads and duplicate or invalid saved responses', async () => {
     const first = (await call(ids.learner, 'rpc_learner_assessment_start', '$1,$2', [ids.course, 'pretest'])).rows[0].result;
     await expect(call(ids.stranger, 'rpc_learner_assessment_get', '$1', [first.attempt_id])).rejects.toThrow(/authorized/);
