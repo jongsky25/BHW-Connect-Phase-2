@@ -142,19 +142,31 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
     const done=new Set(completed?.map(p=>p.lesson_id));
     const subchapter=path[1]?modules?.find(m=>m.id===path[1]):null;
     if(path[1] && !subchapter)notFound();
-    const v2State=!readOnly && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
-      ? await db.rpc('rpc_learner_assessment_state',{p_course_id:course.id}) : {data:null,error:null};
-    if(v2State.error)throw new Error('Unable to load assessment state');
-    const assessmentState=v2State.data as {attempts?:Array<{phase:string;state:string;legacy_attempt_id:string|null}>;final_attempts?:Array<{id:string;phase:string}>}|null;
-    const v2Attempts=assessmentState?.attempts??[];
-    const v2Post=v2Attempts.find(a=>a.phase==='posttest' && a.state==='submitted' && a.legacy_attempt_id);
-    const legacyPost=assessmentState?.final_attempts?.find(a=>a.phase==='posttest');
-    const assessmentHref=(flags.chapter1_assessment_v2 || v2Attempts.length>0) && program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1'
+    // rpc_learner_assessment_state is one of the costliest calls on the pilot
+    // (~130 ms each). Only the chapter page shows its results; subchapter and
+    // lesson pages need it at most for the pretest redirect target, so load it
+    // on demand instead of on every lesson view.
+    type AssessmentState={attempts?:Array<{phase:string;state:string;legacy_attempt_id:string|null}>;final_attempts?:Array<{id:string;phase:string}>};
+    const chapter1Manual=program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1';
+    let assessmentStateLoad:Promise<AssessmentState|null>|undefined;
+    const loadAssessmentState=()=>assessmentStateLoad??=!readOnly && chapter1Manual
+      ? Promise.resolve(db.rpc('rpc_learner_assessment_state',{p_course_id:course.id})).then(({data,error})=>{
+        if(error)throw new Error('Unable to load assessment state');
+        return data as AssessmentState|null;
+      }) : Promise.resolve(null);
+    const assessmentHrefFor=(state:AssessmentState|null)=>(flags.chapter1_assessment_v2 || (state?.attempts?.length??0)>0) && chapter1Manual
       ? `/courses/${course.id}/assessment` : `/courses/${course.id}?assessment=1`;
+    // With the v2 flag on, the target does not depend on the learner's attempts.
+    const loadAssessmentHref=async()=>assessmentHrefFor(flags.chapter1_assessment_v2 || !chapter1Manual ? null : await loadAssessmentState());
     const previewChapter1=viewer.isPreview && role==='bhw' && flags.chapter1_assessment_v2
       && chapter1Orientation.editorial_status==='approved' && program.content_key==='bhw-reference-manual'
       && chapter.chapter_key==='chapter-1';
     if(!subchapter) {
+      const assessmentState=await loadAssessmentState();
+      const v2Attempts=assessmentState?.attempts??[];
+      const v2Post=v2Attempts.find(a=>a.phase==='posttest' && a.state==='submitted' && a.legacy_attempt_id);
+      const legacyPost=assessmentState?.final_attempts?.find(a=>a.phase==='posttest');
+      const assessmentHref=assessmentHrefFor(assessmentState);
       const {data:certificate,error:certificateError}=progress?.status==='certified'?await db.from('certificates').select('verification_code')
         .eq('course_id',course.id).eq('bhw_user_id',actor.id).maybeSingle():{data:null,error:null};
       if(certificateError)throw new Error('Unable to load your certificate');
@@ -297,9 +309,21 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const showGuide=facilitator && view!=='lesson';
         // The pretest check and the lesson content are independent reads, so
         // they share one round trip; the redirect still wins if it applies.
-        const [bank,attempt,revisionResult,resumeResult,notes,activityNotes]=await Promise.all([
-          pretestGate?db.rpc('rpc_course_test_bank_available',{p_course_ids:[course.id]}):Promise.resolve({data:null,error:null}),
-          pretestGate?db.from('course_test_attempts').select('id').eq('course_id',course.id).eq('bhw_user_id',actor.id).eq('phase','pretest').maybeSingle():Promise.resolve({data:null,error:null}),
+        // The learner's own pretest attempt is a cheap indexed read and settles
+        // the gate for almost every lesson view, so the costly question-bank
+        // RPC (~100 ms) runs only for learners who have not taken the pretest.
+        const pretestRedirect=async():Promise<string|null>=>{
+          if(!pretestGate)return null;
+          const attempt=await db.from('course_test_attempts').select('id').eq('course_id',course.id)
+            .eq('bhw_user_id',actor.id).eq('phase','pretest').maybeSingle();
+          if(attempt.error)throw new Error('Unable to check assessment eligibility');
+          if(attempt.data)return null;
+          const bank=await db.rpc('rpc_course_test_bank_available',{p_course_ids:[course.id]});
+          if(bank.error)throw new Error('Unable to check assessment eligibility');
+          return bank.data?.length?loadAssessmentHref():null;
+        };
+        const [redirectTo,revisionResult,resumeResult,notes,activityNotes]=await Promise.all([
+          pretestRedirect(),
           db.from('course_lesson_revisions').select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,featured_asset_id,created_by,created_at')
             .eq('id',lesson.published_revision_id!).single<CourseLessonRevision>(),
           progress?db.from('course_lesson_resume').select('*').eq('course_progress_id',progress.id).eq('lesson_id',lesson.id).returns<CourseLessonResume[]>():Promise.resolve({data:[],error:null}),
@@ -313,10 +337,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
             .in('status',['draft','scheduled']).order('created_at',{ascending:false}).limit(40)
           :{data:[],error:null};
         if(planSessionsError)throw new Error('Unable to load session plans');
-        if(pretestGate){
-          if(bank.error||attempt.error)throw new Error('Unable to check assessment eligibility');
-          if(bank.data?.length && !attempt.data)redirect(assessmentHref);
-        }
+        if(redirectTo)redirect(redirectTo);
         crumbs.push({label:title(lesson)});
         heading=title(lesson); intro=readOnly&&!showGuide?text('Preview lamang — hindi sine-save ang progreso.','Preview only — progress is not saved.'):'';
         if(revisionResult.error || resumeResult.error || !revisionResult.data)throw new Error('Unable to load lesson');
