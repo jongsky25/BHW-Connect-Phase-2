@@ -44,6 +44,7 @@ const LEVEL_TONE: Record<ObservationLevel, string> = {
 
 function errorText(lang: Lang, message: string) {
   if (/not authorized/.test(message)) return pick(lang, "Wala kang pahintulot na magtala para sa BHW na ito.", "You are not allowed to record for this BHW.");
+  if (/revised assessor authority required|observation owner required/.test(message)) return pick(lang, "Wala ka pang Chapter 1 na kwalipikasyon para magtala ng obserbasyon. Makipag-ugnayan sa iyong admin.", "You are not yet qualified for Chapter 1, so you cannot record observations. Please contact your admin.");
   if (/indicator not found/.test(message)) return pick(lang, "Hindi na makita ang indicator. I-refresh ang pahina.", "That indicator no longer exists. Refresh the page.");
   if (/note too long/.test(message)) return pick(lang, "Masyadong mahaba ang tala (hanggang 1000 titik).", "The note is too long (1000 characters maximum).");
   return pick(lang, "Hindi naitala. Subukang muli.", "Could not save. Please try again.");
