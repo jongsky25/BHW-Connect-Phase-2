@@ -97,7 +97,8 @@ for(const role of ['assessor','bhw'] as const)test(`${role} saves checks, revisi
       await page.reload();await expect(button('Slides','Slides')).toHaveAttribute('aria-pressed','true');
       await expect(reader.getByRole('heading',{name:text('Fictional check-two','Kathang check-two'),exact:true})).toBeVisible();
       await button('Check the source','Suriin ang sanggunian').click();await previous();
-      await expect(button('Check the source','Suriin ang sanggunian')).toHaveAttribute('aria-pressed','false');
+      // Practice answers now survive a reload, so the earlier check is still answered.
+      await expect(button('Check the source','Suriin ang sanggunian')).toHaveAttribute('aria-pressed','true');
       await button('Check the source','Suriin ang sanggunian').click();await next();await next();
       await mark().click();await expect(button('Completed','Natapos')).toBeVisible();expect(count(1)).toBe(1);
       await expect(nextLesson()).toHaveAttribute('href',href(2));

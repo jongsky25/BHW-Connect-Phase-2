@@ -41,6 +41,7 @@ for(const target of [{key:'problem-prioritize',module:'07-problema',position:6},
       expect((await request.post(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/rpc/rpc_update_settings`,{headers:{apikey:process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,Authorization:`Bearer ${token}`},data:{p_language:locale,p_theme:'light',p_font_scale:'xl',p_high_contrast:false}})).ok()).toBe(true);
       for(const base of [`/training/${program}/chapter-1`,`/training/${program}/assessor/chapter-1`]){
         await page.setViewportSize({width:320,height:844});
+        await page.evaluate(()=>{try{window.sessionStorage.removeItem('bhw-reference-check-answers-v1')}catch{}}); // Each locale starts with unanswered checks.
         await page.goto(`${base}/${module}/${lesson}?view=lesson`);
         await expect(page.locator('[data-lesson-heading]')).toBeVisible();
         const reader=page.locator('[data-reading-layout] > section');
