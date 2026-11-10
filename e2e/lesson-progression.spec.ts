@@ -66,6 +66,7 @@ for(const role of ['assessor','bhw'] as const)test(`${role} saves checks, revisi
       const settings=await request.post(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/rpc/rpc_update_settings`,{headers:{apikey:process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,Authorization:`Bearer ${token}`},data:{p_language:lang,p_theme:'light',p_font_scale:'xl',p_high_contrast:false}});
       expect(settings.ok()).toBe(true);await page.setViewportSize({width:320,height:844});
       const text=(en:string,fil:string)=>lang==='en'?en:fil;
+      await page.evaluate(()=>{try{window.sessionStorage.removeItem('bhw-reference-check-answers-v1')}catch{}}); // Locally stored answers are reset like the study rows above.
       await page.goto(href(0));
       const reader=page.getByRole('region',{name:text('Chapter I lessons','Mga aralin sa Kabanata I'),exact:true});
       const button=(en:string,fil:string)=>reader.getByRole('button',{name:text(en,fil),exact:true});
@@ -97,7 +98,8 @@ for(const role of ['assessor','bhw'] as const)test(`${role} saves checks, revisi
       await page.reload();await expect(button('Slides','Slides')).toHaveAttribute('aria-pressed','true');
       await expect(reader.getByRole('heading',{name:text('Fictional check-two','Kathang check-two'),exact:true})).toBeVisible();
       await button('Check the source','Suriin ang sanggunian').click();await previous();
-      await expect(button('Check the source','Suriin ang sanggunian')).toHaveAttribute('aria-pressed','false');
+      // Practice answers now survive a reload, so the earlier check is still answered.
+      await expect(button('Check the source','Suriin ang sanggunian')).toHaveAttribute('aria-pressed','true');
       await button('Check the source','Suriin ang sanggunian').click();await next();await next();
       await mark().click();await expect(button('Completed','Natapos')).toBeVisible();expect(count(1)).toBe(1);
       await expect(nextLesson()).toHaveAttribute('href',href(2));

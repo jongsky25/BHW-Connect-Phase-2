@@ -126,6 +126,8 @@ function Practice({ check, en, ui, promptShownInBody, answer, onAnswer, question
   );
 }
 
+const CHECK_ANSWERS_KEY = "bhw-reference-check-answers-v1";
+
 export function ReferenceLessons(props: Props) {
   const { lessons, modules, onResume, onComplete } = props,
     en = props.locale === "en";
@@ -150,6 +152,24 @@ export function ReferenceLessons(props: Props) {
   // Practice is formative, not a scored assessment. Keep attempts across
   // section/mode changes, but never carry them into a different revision.
   const [answers, setAnswers] = useState<Record<string, number>>({});
+  // Answers are formative and live only in this tab's sessionStorage (no
+  // database write), so a reload no longer wipes them and re-locks the lesson.
+  // Keys already carry lesson, revision and mode, so stale entries are inert.
+  const answersHydrated = useRef(false);
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(window.sessionStorage.getItem(CHECK_ANSWERS_KEY) ?? "{}") as Record<string, unknown>;
+      const valid = Object.fromEntries(Object.entries(saved).filter(([, v]) => Number.isInteger(v))) as Record<string, number>;
+      // Hydrating after mount avoids a server/client markup mismatch.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      if (Object.keys(valid).length) setAnswers(old => ({ ...valid, ...old }));
+    } catch { /* Storage can be blocked; answers then stay in memory. */ }
+    answersHydrated.current = true;
+  }, []);
+  useEffect(() => {
+    if (!answersHydrated.current) return;
+    try { window.sessionStorage.setItem(CHECK_ANSWERS_KEY, JSON.stringify(answers)); } catch { /* ignore */ }
+  }, [answers]);
   // Keyed by lesson id, like `answers`, so switching lessons doesn't lose it.
   const heading = useRef<HTMLHeadingElement>(null);
   const question = useRef<HTMLFieldSetElement>(null);
@@ -790,8 +810,8 @@ export function ReferenceLessons(props: Props) {
     </p>}
     {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
       {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
-        ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.",
-          "Reach the end and answer every check in Read or Slides. Your first answer does not have to be correct. After a reload, answer the checks again.")}
+        ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot.",
+          "Reach the end and answer every check in Read or Slides. Your first answer does not have to be correct.")}
     </p>}
     <button
       type="button"

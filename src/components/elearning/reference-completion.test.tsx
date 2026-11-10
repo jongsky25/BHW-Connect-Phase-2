@@ -3,7 +3,7 @@ import {afterEach,describe,expect,it,vi} from 'vitest';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
 import {enterNarrationScope,setNarrationSpeed} from '@/lib/elearning/narration-preferences';
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
-afterEach(()=>{cleanup();vi.restoreAllMocks();document.documentElement.removeAttribute('data-motion');});
+afterEach(()=>{cleanup();window.sessionStorage.clear();vi.restoreAllMocks();document.documentElement.removeAttribute('data-motion');});
 const check={prompt_en:'What would you do?',prompt_fil:'Ano ang gagawin mo?',options:[{en:'Ask',fil:'Magtanong'},{en:'Guess',fil:'Hulaan'}],correct_option_index:0,feedback_en:'Ask the team.',feedback_fil:'Magtanong sa team.'};
 const part=(id:string,hasCheck=false)=>({id,concept_ids:[id],asset_ids:[],heading_en:id,heading_fil:id,body_en:'Teaching text',body_fil:'Aralin',takeaway_en:'Takeaway '+id,takeaway_fil:'Buod '+id,check:hasCheck?check:null});
 function data():ReferenceData{return {title_fil:'Manual',title_en:'Manual',chapters:[],completed:[],resumes:[],lessons:[{id:'lesson',module_id:'module',required:true,title_fil:'Aralin',title_en:'Lesson',objectives_fil:[],objectives_en:[],revision:{id:'revision',read_sections:[part('first',true),part('last',true)],slides:[{...part('slide-first'),display_en:'First teaching slide',display_fil:'Una',layout:'scene'},{...part('slide-check',true),display_en:'Revealing slide summary',display_fil:'Buod sa slide',layout:'takeaway'}],assets:[],sources:[]}}]} as unknown as ReferenceData;}
@@ -106,10 +106,12 @@ describe('formative lesson completion',()=>{
     rerender(<ReferenceLessons {...newer} modules={[]} locale="en" initialLessonId="lesson" onResume={vi.fn()} onComplete={vi.fn()}/>);
     expect(screen.queryByText('Takeaway first')).not.toBeInTheDocument();expect(screen.getByRole('button',{name:'Ask'})).toHaveAttribute('aria-pressed','false');
   });
-  it('restores position but requires a fresh check attempt after reload',()=>{
+  it('restores position and keeps check answers after reload',()=>{
     const d=data();d.resumes=[{lesson_id:'lesson',revision_id:'revision',course_progress_id:'p',modality:'slides',language:'en',position_key:'slide-check',concept_id:'slide-check',updated_at:'2026-09-25'}];
-    view(d);expect(screen.getByRole('heading',{name:'slide-check'})).toBeInTheDocument();expect(button()).toBeDisabled();
+    const first=view(d);expect(screen.getByRole('heading',{name:'slide-check'})).toBeInTheDocument();expect(button()).toBeDisabled();
     fireEvent.click(screen.getByRole('button',{name:'Ask'}));expect(button()).toBeEnabled();
+    first.unmount();view(d);
+    expect(screen.getByRole('heading',{name:'slide-check'})).toBeInTheDocument();expect(button()).toBeEnabled();
   });
   it('preserves historical completion and returns to the list after the last lesson',()=>{
     const d=data();d.completed=[{lesson_id:'lesson',revision_id:'old',course_progress_id:'p',completed_at:'2026-09-24',completion_basis:'legacy_equivalence',legacy_module_id:'module',migration_batch:'batch'}];

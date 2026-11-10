@@ -1,5 +1,6 @@
 // Restore the exact pre-item-16 reader before historical release guards run.
 import fs from 'node:fs';
+import {beforeCheckAnswersPersistence} from './check-answers-persistence-preservation.mjs';
 import {beforeRizaStorySlides} from './riza-story-slides-preservation.mjs';
 import {createHash} from 'node:crypto';
 
@@ -8,7 +9,7 @@ const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 let receipt, predecessor;
 
 export function beforeFeedbackItem16(path,actual=fs.readFileSync(path),strict=false) {
-  actual=beforeRizaStorySlides(path,actual);
+  actual=beforeRizaStorySlides(path,beforeCheckAnswersPersistence(path,actual));
   if(path!==target)return actual;
   receipt??=JSON.parse(fs.readFileSync('docs/feedback-remediation/feedback-item-16-reader-preservation.json'));
   if(receipt.path!==target||receipt.replacements.length!==6)throw Error('Invalid item 16 reader scope');
