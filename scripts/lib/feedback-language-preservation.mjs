@@ -2,6 +2,8 @@
 // current source; no lesson, release or historical approval hash is rewritten.
 import fs from 'node:fs';
 import {beforeFeedbackSectionOutline} from './feedback-section-outline-preservation.mjs';
+import {memoDiskView} from './disk-view-memo.mjs';
+const diskBeforeFeedbackSectionOutline = memoDiskView(beforeFeedbackSectionOutline);
 import {createHash} from 'node:crypto';
 const target = 'src/components/elearning/reference-lessons.tsx';
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -25,7 +27,7 @@ export function beforeFeedbackLanguageAvailability(path, actual = fs.readFileSyn
   if (path !== target) return actual;
   const r = receipt ??= JSON.parse(fs.readFileSync('docs/feedback-remediation/fb-4.3-reader-preservation.json'));
   if (r.path !== target || r.replacements.length !== 5) throw Error('Invalid FB-4.3 reader scope');
-  const disk = beforeFeedbackSectionOutline(path);
+  const disk = diskBeforeFeedbackSectionOutline(path);
   if (!disk.equals(successor ?? Buffer.alloc(0)) && !disk.equals(predecessor ?? Buffer.alloc(0))) {
     const hash = sha(disk);
     if (hash === r.successor_sha256) pinSuccessor(disk, r);
