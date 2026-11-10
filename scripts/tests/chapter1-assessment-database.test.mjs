@@ -89,6 +89,7 @@ beforeAll(async () => {
       returns jsonb language sql as $$ select '{}'::jsonb $$;`);
   await db.exec(read('supabase/migrations/20261012152647_assessor_chapter1_shared_assessment.sql'));
   await db.exec(read('supabase/migrations/20261110160000_assessment_save_receipts.sql'));
+  await db.exec(read('supabase/migrations/20261110160100_assessment_receipts_cleanup.sql'));
   await db.query('insert into org_units values($1,$2)', [ids.org, `${ids.org}.`]);
   for (const [id, role] of [[ids.learner, 'bhw'], [ids.stranger, 'bhw'], [ids.admin, 'admin'],
     [ids.reviewer, 'assessor'], [ids.nextReviewer, 'assessor']])
@@ -245,8 +246,7 @@ describe('Chapter 1 private learner attempt contract', () => {
     await db.query("update learner_assessment_private.mutation_receipts set result = jsonb_build_object('old_full_result', true)");
     await db.query("insert into learner_assessment_private.mutation_receipts values($1,$2,'h',$3)",
       [draft.attempt_id, uuid(914), JSON.stringify({ old_full_result: true })]);
-    const sql = read('supabase/migrations/20261110160000_assessment_save_receipts.sql');
-    await db.exec(sql.slice(sql.lastIndexOf('$$;') + 3));
+    await db.exec(read('supabase/migrations/20261110160100_assessment_receipts_cleanup.sql'));
     const rows = (await db.query('select attempt_id, mutation_id, result from learner_assessment_private.mutation_receipts order by mutation_id')).rows;
     expect(rows).toEqual([{ attempt_id: open.attempt_id, mutation_id: uuid(913), result: { replay_from_attempt: true, revision: 1 } }]);
     const replay = (await call(ids.learner, 'rpc_learner_assessment_save', '$1,$2,$3,$4::jsonb,$5,$6',

@@ -19,11 +19,11 @@
 --    submit receipt. Once an attempt is submitted no save on it can be
 --    retried, and a retried submit is still answered by its receipt or by the
 --    existing already-submitted branch.
--- 3. One-time cleanup: drop receipts of submitted attempts and compact the
---    rest. Learner answers live in learner_assessment_private.responses and
---    course_test_attempts, not here. Deleting rows does not shrink the file;
---    run `vacuum full learner_assessment_private.mutation_receipts` once,
---    outside class hours, to hand the space back.
+-- 3. The one-time cleanup of existing receipts is a separate migration,
+--    20261110160100_assessment_receipts_cleanup.sql. Its DELETE needs a
+--    confirmation that the MCP apply cannot show here, so it is applied on its
+--    own. Until it runs, old receipts stay; with this change no new large ones
+--    are written.
 
 create or replace function public.rpc_learner_assessment_save(
   p_attempt_id uuid, p_expected_revision bigint, p_mutation_id uuid,
@@ -201,13 +201,3 @@ begin
   return v_result;
 end;
 $$;
-
-
-delete from learner_assessment_private.mutation_receipts m
-  using learner_assessment_private.attempts a
-  where a.id = m.attempt_id and a.state <> 'draft';
-
-update learner_assessment_private.mutation_receipts m
-  set result = jsonb_build_object('replay_from_attempt', true, 'revision', a.revision)
-  from learner_assessment_private.attempts a
-  where a.id = m.attempt_id and not (m.result ? 'replay_from_attempt');
