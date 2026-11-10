@@ -221,4 +221,13 @@ describe("FacilitatorRoster", () => {
     expect(await screen.findByRole("alert")).toHaveTextContent("Wala kang pahintulot");
     expect(state.refresh).not.toHaveBeenCalled();
   });
+
+  it("explains a missing Chapter 1 qualification", async () => {
+    state.rpc.mockResolvedValue({ error: { message: "revised assessor authority required" } });
+    render(<FacilitatorRoster lang="en" moduleId="m1" rows={rows} indicators={indicators} observations={[]} lessonCount={2} />);
+    fireEvent.click(screen.getByRole("button", { name: "Record observation" }));
+    fireEvent.click(screen.getByRole("radio", { name: /Kaya na/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Save" }));
+    expect(await screen.findByRole("alert")).toHaveTextContent("not yet qualified for Chapter 1");
+  });
 });
