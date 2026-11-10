@@ -85,9 +85,18 @@ Total PostgREST requests (the `set_config` preamble): **413,247**.
 - **Dashboard load:** Supabase's Query Performance query ran 7 times in the
   incident hours, at 13–19 s each. Don't open it during class hours.
 
-First fix (this PR): lesson and subchapter pages no longer call
+First fix (#508): lesson and subchapter pages no longer call
 `rpc_learner_assessment_state`. Lesson pages call
 `rpc_course_test_bank_available` only for learners without a pretest attempt.
+
+Second fix (`20261110120000_training_visibility_helpers_plpgsql.sql`): the
+training visibility helpers behind the `course_lessons` and
+`course_lesson_revisions` read policies are now PL/pgSQL. They read the actor
+once and return early when the actor can't qualify. On a pilot-shaped local
+dataset (162 lessons, 43,753 org units), the lesson list drops from 1,102 to
+323 buffer hits and from 3.2 to 0.5 ms. The visible-module helper drops from
+2.3 to 0.17 ms per call, and the admin helper for a BHW from 0.83 to
+0.02 ms.
 
 ## Queries used
 
