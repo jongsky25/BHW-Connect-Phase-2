@@ -51,6 +51,44 @@ Total PostgREST requests (the `set_config` preamble): **413,247**.
   (INFO), 20 unused indexes (INFO).
 - Vercel: 39 deployments in about 21 h (27–28 Sep).
 
+## 2026-11-10 07:50 UTC (real-use saturation during a cohort day)
+
+`pg_stat_statements` covers 28 Sep 03:57 → 10 Nov. No reset after this snapshot.
+
+- **Statement timeouts during class hours:** 10 (02:00 UTC), 32 (05:00) and 47
+  (07:00). They hit trivial statements, such as a single `users` select,
+  `current_org_path()` startup and a one-row resume upsert, so the database as
+  a whole was starved; no single query was the cause.
+- **Traffic is real use, not a leak.** About 20 active users made ~77k API
+  requests (00:00–07:50 UTC): `node` 47k, Vercel Edge 24k, browser 6k.
+  - `node` traffic comes from AWS Tokyo, Vercel's `hnd1` function region. It
+    is the deployed app's server renders, not dev servers or CI. (The 28 Sep
+    entry read `node` as non-Vercel; that applied to that day's sandbox and CI
+    traffic only.)
+  - Middleware runs on Vercel Edge in Singapore. Browsers connect from PH ISPs.
+- **Writes are not the IO driver.** WAL since 19 Sep is only 673 MB. Reads are
+  all buffer hits (`blks_read` ≈ 4k against 229M hits). The load is CPU and
+  buffer work per render.
+- **Top DB time per statement since the reset:**
+
+  | Statement | Calls | Mean | Total |
+  |---|---|---|---|
+  | `course_lessons` list | 20,061 | 68 ms | 1,357 s |
+  | `rpc_learner_assessment_state` | 9,427 | 133 ms | 1,249 s |
+  | `rpc_course_lesson_resume` | 5,957 | 182 ms | 1,084 s |
+  | `rpc_learner_assessment_save` | 5,006 | 179 ms | 896 s (104 MB WAL) |
+  | `rpc_course_test_bank_available` | 7,856 | 106 ms | 836 s |
+
+- **Storage:** DB 177 MB. `learner_assessment_private.mutation_receipts` is
+  88 MB (TOAST, ~17 KB of result jsonb per receipt). 4,808 of its 5,075 rows
+  belong to submitted attempts.
+- **Dashboard load:** Supabase's Query Performance query ran 7 times in the
+  incident hours, at 13–19 s each. Don't open it during class hours.
+
+First fix (this PR): lesson and subchapter pages no longer call
+`rpc_learner_assessment_state`. Lesson pages call
+`rpc_course_test_bank_available` only for learners without a pretest attempt.
+
 ## Queries used
 
 Top statements (Supabase MCP `execute_sql`):
