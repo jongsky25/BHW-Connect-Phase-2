@@ -116,6 +116,40 @@ attempt's receipts, and the migration drops the receipts of submitted
 attempts. `mutation_receipts` was 96 MB on 10 Nov (88 MB that morning). It
 needs a one-off `vacuum full` after the apply to hand the space back.
 
+## 2026-11-11 12:10 UTC (first class day after the 10 Nov fixes)
+
+`pg_stat_statements` was reset right after this snapshot (12:56:15 UTC on
+11 Nov), so the next snapshot measures only the fixed code.
+
+| | 10 Nov (before fixes) | 11 Nov (after) |
+|---|---|---|
+| Active users | ~20 | 21 |
+| Statement timeouts, class hours | 10 / 32 / 47 per hour | **0** |
+| 5xx responses | some | 0 |
+| API requests 00:00–07:50 UTC | ~77,000 | ~20,500 |
+| Requests per active user | ~3,800 | ~980 |
+| Peak hour | ~19,000 | ~6,900 |
+
+Measured on a quiet pilot (10 calls each, as real users through RLS):
+
+| Call | Cumulative mean (28 Sep–11 Nov) | Quiet-database cost |
+|---|---|---|
+| `course_lessons` list | 65 ms | 2.8 ms |
+| `course_lesson_revisions` read | 117 ms | 6.4 ms |
+| `rpc_learner_assessment_state` | 126 ms | 1.6–1.8 ms |
+| `rpc_course_test_bank_available` (all chapters) | 104 ms | 1.2 ms |
+| `assessor_private.study_context` | (inside the 61 ms resume) | 5.0 ms |
+| `training_lesson_visible` | — | 0.18 ms |
+
+The 60–180 ms means were mostly queueing on a starved Nano instance during
+class, not each statement's own cost. With the load removed, none of these is
+worth another migration. Watch the clean post-reset means instead.
+
+`mutation_receipts` is still 96 MB (5,230 receipts of submitted attempts):
+`20261110160100_assessment_receipts_cleanup.sql` has not been run yet. Run it
+alone in the SQL Editor, then `vacuum full learner_assessment_private.mutation_receipts;`
+as a separate query.
+
 ## Queries used
 
 Top statements (Supabase MCP `execute_sql`):

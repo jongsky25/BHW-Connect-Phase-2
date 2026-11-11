@@ -144,6 +144,21 @@ at the time.
 
 ## Migration history notes
 
+### #513 (`20261110160000_assessment_save_receipts.sql`): applied from the SQL Editor, 2026-11-10
+
+Supabase's MCP `apply_migration` asks for a confirmation whenever the SQL
+contains `delete`, including inside function bodies, and the client used for
+pilot releases cannot show that prompt. The apply timed out three times and
+changed nothing (each time verified). The owner then ran the file in the
+dashboard SQL Editor at about 21:40 UTC, so there is **no
+`supabase_migrations.schema_migrations` row** for it. Verified afterwards: both
+functions carry the new bodies, grants are unchanged (`anon` no,
+`authenticated` yes), and the learner response and attempt fingerprints
+matched the 21:08 UTC baseline. The one-time cleanup,
+`20261110160100_assessment_receipts_cleanup.sql`, is also SQL Editor only.
+Future migrations with `delete` in them need the same route, or a session that
+can show the prompt.
+
 ### INC-29 (`20260920000000_inc29_course_progress_reset.sql`) — applied late, 2026-09-25
 
 Noticed 2026-09-24 while deploying the versioned test bank: neither project's
