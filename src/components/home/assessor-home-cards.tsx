@@ -28,8 +28,10 @@ function ClipboardCheckIcon() {
 const cardClass = "flex h-full min-w-0 flex-col gap-3 rounded-2xl border p-5 shadow-sm sm:p-6";
 const buttonClass = "mt-auto inline-flex min-h-12 w-full items-center justify-center rounded-lg px-5 py-3 text-center font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2";
 
-export function AssessorHomeCards({ locale, progress, progressFailed }: {
+export function AssessorHomeCards({ locale, progress, progressFailed, studyHref }: {
   locale: Locale;
+  /** The assessor's own study page; /courses when it is unknown. */
+  studyHref: string;
   /** Own study progress; null when it was not loaded (e.g. preview). */
   progress: Counts | null;
   progressFailed: boolean;
@@ -54,13 +56,13 @@ export function AssessorHomeCards({ locale, progress, progressFailed }: {
         </div> : progressFailed ? <p role="status" className="text-sm">
           {text("Hindi ma-load ang iyong progreso. I-reload ang pahina, o buksan ang Mga Kurso para magpatuloy.", "Your study progress could not be loaded. Reload this page, or open Courses to continue studying.")}
         </p> : <p className="text-sm text-ink/70">{text("Wala pang maipapakitang progreso.", "No study progress to show yet.")}</p>}
-        <Link prefetch={false} href="/courses" className={`${buttonClass} bg-primary text-on-primary focus-visible:outline-primary`}>
+        <Link prefetch={false} href={studyHref} className={`${buttonClass} bg-primary text-on-primary focus-visible:outline-primary`}>
           {text("Pumunta sa Mga Kurso", "Go to Courses")} <span aria-hidden="true">&nbsp;→</span>
         </Link>
       </section>
     </li>
     <li className="min-w-0">
-      <section aria-labelledby="assessor-home-assessments" className={`${cardClass} border-info/25 bg-info/10`}>
+      <section aria-labelledby="assessor-home-assessments" className={`${cardClass} border-info/30 bg-assess-surface`}>
         <span className="text-info"><ClipboardCheckIcon /></span>
         <h2 id="assessor-home-assessments" className="text-xl font-semibold uppercase tracking-wide">{text("Pagtatasa sa mga BHW", "BHW Assessments")}</h2>
         <p className="text-ink/80">{text("Magsagawa ng return demonstration at suriin ang kakayahan ng mga Barangay Health Worker.",
@@ -70,7 +72,7 @@ export function AssessorHomeCards({ locale, progress, progressFailed }: {
           <p className="text-sm">{text("Pumili ng kabanata at subchapter, saka itala ang obserbasyon sa mga BHW sa iyong lugar.",
             "Choose a chapter and subchapter, then record observations for BHWs in your area.")}</p>
         </div>
-        <Link prefetch={false} href="/assessments" className={`${buttonClass} bg-info-fill text-on-primary focus-visible:outline-info`}>
+        <Link prefetch={false} href="/assessments" className={`${buttonClass} bg-assess-fill text-on-primary focus-visible:outline-info`}>
           {text("Pumunta sa Pagtatasa", "Go to Assessments")} <span aria-hidden="true">&nbsp;→</span>
         </Link>
       </section>

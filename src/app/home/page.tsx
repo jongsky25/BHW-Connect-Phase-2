@@ -66,6 +66,10 @@ export default async function HomePage() {
     const total = assessorTraining.reduce((n, p) => n + p.counts.total, 0);
     return { done, total, percent: total ? Math.round(done / total * 100) : 0 };
   })() : null;
+  // Straight into the assessor's own study: the first chapter with lessons
+  // left, else the first available chapter (finished study stays reviewable).
+  const studyChapters = assessorTraining.flatMap(p => p.chapters).filter(c => c.href);
+  const studyHref = (studyChapters.find(c => c.counts.done < c.counts.total) ?? studyChapters[0])?.href ?? "/courses";
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
       <h1 className="max-w-full break-words text-3xl font-semibold tracking-tight text-ink [overflow-wrap:anywhere] sm:text-4xl">
@@ -82,7 +86,7 @@ export default async function HomePage() {
       {training.map((progress) => (
         <MyTrainingCard key={progress.programId} progress={progress} locale={locale} />
       ))}
-      {assessorHome ? <AssessorHomeCards locale={locale} progress={studyCounts} progressFailed={assessorProgressFailed} /> :
+      {assessorHome ? <AssessorHomeCards locale={locale} progress={studyCounts} progressFailed={assessorProgressFailed} studyHref={studyHref} /> :
       <nav aria-labelledby="home-destinations-heading" className="w-full space-y-3">
         <h2 id="home-destinations-heading" className="text-xl font-semibold">{tDest("heading")}</h2>
         <p className="text-ink/80">{tDest("intro")}</p>
