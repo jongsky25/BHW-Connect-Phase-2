@@ -57,9 +57,13 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
       'awards',(select jsonb_agg(to_jsonb(p)) from assessor_rollout_private.chapter_awards p where actor_id='${actor.id}' and chapter_id='${chapter}'));`).trim();
     const beforeGuide=guideEvidence();
     await page.goto('/home');
-    const homeProgress=page.locator(`section[aria-labelledby="assessor-training-${program}"]`);
-    await expect(homeProgress.getByRole('progressbar').first()).toHaveAttribute('aria-valuenow','0');
-    await homeProgress.getByRole('link',{name:'Magpatuloy sa pag-aaral · Kabanata 1'}).click();
+    // Home's Assessor Courses card opens the assessor's own study. Other specs
+    // may leave their own manual programs visible, so match the route shape,
+    // then confirm this program's study still gates on the briefing.
+    const homeCourses=page.locator('section[aria-labelledby="assessor-home-courses"]');
+    await expect(homeCourses.getByRole('progressbar')).toHaveAttribute('aria-valuenow','0');
+    await expect(homeCourses.getByRole('link',{name:/Pumunta sa Mga Kurso/})).toHaveAttribute('href',/^\/training\/[0-9a-f-]{36}\/assessor\/chapter-1$/);
+    await page.goto(base);
     await expect(page).toHaveURL(`${base}/briefing`);
     expect(guideEvidence()).toBe(beforeGuide);
     await page.goto(`/training/${program}/chapter-1/${guideModuleId}`);
@@ -138,9 +142,9 @@ test('assessor briefing explicitly saves once, survives replay/reload and opens 
     `);
     const beforeReview=guideEvidence();
     await page.goto('/home');
-    await expect(homeProgress.getByRole('progressbar').first()).toHaveAttribute('aria-valuetext',/1\/42/);
+    await expect(homeCourses.getByRole('progressbar')).toHaveAttribute('aria-valuetext',/^1\/\d+ aralin$/);
     await page.reload();
-    await expect(homeProgress.getByRole('progressbar').first()).toHaveAttribute('aria-valuetext',/1\/42/);
+    await expect(homeCourses.getByRole('progressbar')).toHaveAttribute('aria-valuetext',/^1\/\d+ aralin$/);
     expect(guideEvidence()).toBe(beforeReview);
     await page.goto(`${base}#assessor-refresher-review`);
     const completedReview=refresher.locator('summary');

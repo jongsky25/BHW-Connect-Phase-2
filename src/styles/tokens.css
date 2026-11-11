@@ -58,6 +58,12 @@
   --color-warning: #8f5a08;
   --color-danger: #c53a3a;
   --color-info: #2c6fa6;
+  /* Assessment blue (assessor home "BHW Assessments" card). The fill carries
+     --color-on-primary text and is fixed across themes like --color-primary
+     (4.98:1); the surface is a light-blue card background that darkens in
+     dark mode. Text accents on it use --color-info (>=4.5:1 both themes). */
+  --color-assess-fill: #2c6fa6;
+  --color-assess-surface: #e4eef7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -70,6 +76,7 @@
     --color-warning: #ba750a;
     --color-danger: #d67575;
     --color-info: #448fcd;
+    --color-assess-surface: #1e2a35;
   }
 }
 
@@ -85,6 +92,7 @@
   --color-warning: #8f5a08;
   --color-danger: #c53a3a;
   --color-info: #2c6fa6;
+  --color-assess-surface: #e4eef7;
 }
 
 :root[data-theme="dark"] {
@@ -97,6 +105,7 @@
   --color-warning: #ba750a;
   --color-danger: #d67575;
   --color-info: #448fcd;
+  --color-assess-surface: #1e2a35;
 }
 
 /* Font-size setting (INC-7): scales root rem sizing everywhere, since all

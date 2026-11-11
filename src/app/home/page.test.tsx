@@ -73,11 +73,43 @@ it.each(["preview", "inactive", "disabled", "admin-preview", "bhw"])("does not l
   render(await HomePage());
   expect(assessorLoader).not.toHaveBeenCalled();
 });
-it("keeps destinations accessible and reports a progress read failure", async () => {
+it("keeps both assessor destinations and reports a progress read failure", async () => {
   state.role = state.actualRole = "assessor";
   assessorLoader.mockRejectedValueOnce(new Error("offline"));
   render(await HomePage());
   expect(screen.getByRole("status")).toHaveTextContent("could not be loaded");
-  expect(screen.getByRole("link", { name: en.authHome.coursesCta })).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /Go to Courses/ })).toHaveAttribute("href", "/courses");
+  expect(screen.getByRole("link", { name: /Go to Assessments/ })).toHaveAttribute("href", "/assessments");
   expect(screen.queryByRole("progressbar")).not.toBeInTheDocument();
+});
+const chapter = (key: string, done: number, total: number) => ({ id: key, number: 1, title_fil: key, title_en: key, href: `/training/p1/assessor/${key}`, counts: { done, total, percent: 0 }, missing: 0 });
+const study = (programId: string, done: number, total: number, chapters = [chapter("chapter-1", done, total)]) => ({ programId, chapters, counts: { done, total, percent: 0 } });
+it.each(["en", "fil"])("shows assessors only the two primary cards with saved study progress (%s)", async locale => {
+  state.locale = locale; state.role = state.actualRole = "assessor";
+  const english = locale === "en"; const messages = english ? en : fil;
+  assessorLoader.mockResolvedValueOnce([study("p1", 30, 70, [chapter("chapter-1", 20, 20), chapter("chapter-2", 10, 50)]), study("p2", 12, 27, [])] as never);
+  render(await HomePage());
+  expect(screen.getAllByRole("heading", { level: 2 }).map(h => h.textContent)).toEqual(
+    english ? ["Assessor Courses", "BHW Assessments"] : ["Mga Kurso ng Assessor", "Pagtatasa sa mga BHW"]);
+  expect(screen.getByText("43%")).toBeInTheDocument();
+  expect(screen.getByText(english ? "42 of 97 lessons completed" : "42 sa 97 aralin ang natapos")).toBeInTheDocument();
+  expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", "42");
+  expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuetext", english ? "42/97 lessons" : "42/97 aralin");
+  expect(screen.getByRole("link", { name: english ? /Go to Courses/ : /Pumunta sa Mga Kurso/ })).toHaveAttribute("href", "/training/p1/assessor/chapter-2");
+  expect(screen.getByRole("link", { name: english ? /Go to Assessments/ : /Pumunta sa Pagtatasa/ })).toHaveAttribute("href", "/assessments");
+  expect(screen.queryByRole("link", { name: messages.authHome.kbBrowseCta })).not.toBeInTheDocument();
+});
+it("sends finished study back to the first chapter for review", async () => {
+  state.role = state.actualRole = "assessor";
+  assessorLoader.mockResolvedValueOnce([study("p1", 70, 70, [chapter("chapter-1", 20, 20), chapter("chapter-2", 50, 50)])] as never);
+  render(await HomePage());
+  expect(screen.getByRole("link", { name: /Go to Courses/ })).toHaveAttribute("href", "/training/p1/assessor/chapter-1");
+});
+it("keeps the destination grid for BHWs and admins", async () => {
+  for (const role of ["bhw", "admin"]) {
+    state.role = state.actualRole = role; render(await HomePage());
+    expect(screen.getByRole("link", { name: en.authHome.kbBrowseCta })).toBeInTheDocument();
+    expect(screen.queryByRole("link", { name: /Go to Assessments/ })).not.toBeInTheDocument();
+    cleanup();
+  }
 });

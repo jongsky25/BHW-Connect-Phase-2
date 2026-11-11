@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
 import { PreviewNote } from "@/components/preview/preview-note";
@@ -14,13 +14,15 @@ import { createClient } from "@/lib/supabase/client";
 type Props = {
   initialQueue: Assessment[];
   initialMine: Assessment[];
+  /** Chapter → subchapter entry into BHW assessment work, rendered above the queue. */
+  hub?: ReactNode;
 };
 
 const indicators = ["ask_sort", "explain", "stay_in_role", "direct", "flipchart", "teach_back"] as const;
 type Rating = "observed" | "needs_practice" | "not_seen";
 type Observation = Partial<Record<(typeof indicators)[number], Rating>>;
 
-export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
+export function AssessmentsConsole({ initialQueue, initialMine, hub }: Props) {
   const t = useTranslations("assessments");
   const tCrumbs = useTranslations("breadcrumbs");
   const isPreview = usePreview();
@@ -99,6 +101,7 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
     <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-4 py-10 sm:px-6">
       <Breadcrumbs items={[{ label: tCrumbs("home"), href: "/home" }, { label: t("heading") }]} />
       <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
+      {hub}
       <Link prefetch={false} href="/my-results" className="inline-flex min-h-[44px] items-center self-start rounded-md border border-primary/30 bg-primary/5 px-4 py-3 font-medium underline">{t("myResultsAction")}</Link>
       <p className="text-sm text-ink/70">{t("myResultsHelp")}</p>
 
