@@ -5,7 +5,7 @@ import { DestinationLink } from "@/components/nav/destination-link";
 import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
 import { MyTrainingCard } from "@/components/progress/my-training-card";
-import { MyAssessorTrainingCard } from "@/components/progress/my-assessor-training-card";
+import { AssessorHomeCards } from "@/components/home/assessor-home-cards";
 import { loadAssessorProgress, type AssessorStudyProgress } from "@/lib/progress/load-assessor-progress";
 import { SignOutButton } from "@/components/sign-out-button";
 import { getViewer } from "@/lib/auth/viewer";
@@ -58,12 +58,22 @@ export default async function HomePage() {
   }
 
   const greeting = await greetingRead;
+  // Assessors get two primary destinations instead of the destination grid;
+  // every other page stays reachable from the header, More menu and drawer.
+  const assessorHome = flags.elearning && role === "assessor";
+  const studyCounts = assessorTraining.length ? (() => {
+    const done = assessorTraining.reduce((n, p) => n + p.counts.done, 0);
+    const total = assessorTraining.reduce((n, p) => n + p.counts.total, 0);
+    return { done, total, percent: total ? Math.round(done / total * 100) : 0 };
+  })() : null;
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
       <h1 className="max-w-full break-words text-3xl font-semibold tracking-tight text-ink [overflow-wrap:anywhere] sm:text-4xl">
         {t("heading", { name: greeting || appUser.full_name })}
       </h1>
-      <p className="max-w-xl text-lg text-ink/70">{t("body")}</p>
+      <p className="max-w-xl text-lg text-ink/70">{assessorHome
+        ? (locale === "en" ? "Welcome to the BHW Connect Assessor Portal." : "Maligayang pagdating sa Assessor Portal ng BHW Connect.")
+        : t("body")}</p>
 
       {role === "bhw" && !appUser.onboarding_completed_at ? (
         <OnboardingChecklist progress={parseOnboardingProgress(appUser.onboarding_progress)} />
@@ -72,13 +82,7 @@ export default async function HomePage() {
       {training.map((progress) => (
         <MyTrainingCard key={progress.programId} progress={progress} locale={locale} />
       ))}
-      {assessorTraining.map((progress) => (
-        <MyAssessorTrainingCard key={progress.programId} progress={progress} locale={locale} />
-      ))}
-      {assessorProgressFailed && <p role="status" className="w-full max-w-2xl rounded-xl border border-ink/20 p-4">
-        {locale === "en" ? "Your study progress could not be loaded. Reload this page to try again, or open Courses to continue studying." : "Hindi ma-load ang iyong progreso sa pag-aaral. I-reload ang pahina para subukang muli, o buksan ang Mga kurso para magpatuloy."}
-      </p>}
-
+      {assessorHome ? <AssessorHomeCards locale={locale} progress={studyCounts} progressFailed={assessorProgressFailed} /> :
       <nav aria-labelledby="home-destinations-heading" className="w-full space-y-3">
         <h2 id="home-destinations-heading" className="text-xl font-semibold">{tDest("heading")}</h2>
         <p className="text-ink/80">{tDest("intro")}</p>
@@ -90,7 +94,7 @@ export default async function HomePage() {
               }`} />
           </li>)}
         </ul>
-      </nav>
+      </nav>}
       <SignOutButton />
     </div>
   );
