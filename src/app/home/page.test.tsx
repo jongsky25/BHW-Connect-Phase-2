@@ -94,6 +94,7 @@ it.each(["en", "fil"])("shows assessors only the two primary cards with saved st
   expect(screen.getByText("43%")).toBeInTheDocument();
   expect(screen.getByText(english ? "42 of 97 lessons completed" : "42 sa 97 aralin ang natapos")).toBeInTheDocument();
   expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", "42");
+  expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuetext", english ? "42/97 lessons" : "42/97 aralin");
   expect(screen.getByRole("link", { name: english ? /Go to Courses/ : /Pumunta sa Mga Kurso/ })).toHaveAttribute("href", "/training/p1/assessor/chapter-2");
   expect(screen.getByRole("link", { name: english ? /Go to Assessments/ : /Pumunta sa Pagtatasa/ })).toHaveAttribute("href", "/assessments");
   expect(screen.queryByRole("link", { name: messages.authHome.kbBrowseCta })).not.toBeInTheDocument();

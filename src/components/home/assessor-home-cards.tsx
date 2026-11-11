@@ -48,6 +48,7 @@ export function AssessorHomeCards({ locale, progress, progressFailed, studyHref 
           <p className="text-3xl font-semibold text-primary-text">{progress.percent}%</p>
           <p className="text-sm">{text(`${progress.done} sa ${progress.total} aralin ang natapos`, `${progress.done} of ${progress.total} lessons completed`)}</p>
           <div role="progressbar" aria-valuemin={0} aria-valuemax={progress.total} aria-valuenow={progress.done}
+            aria-valuetext={`${progress.done}/${progress.total} ${text("aralin", "lessons")}`}
             aria-label={text("Progreso sa sariling pag-aaral", "Personal study progress")}
             className="h-2.5 w-full overflow-hidden rounded-full bg-ink/10">
             <div className="h-full rounded-full bg-primary" style={{ width: `${progress.percent}%` }} />
