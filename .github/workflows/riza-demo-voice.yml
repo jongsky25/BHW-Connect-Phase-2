@@ -1,4 +1,4 @@
-name: Riza demo voice sample
+name: Riza approved demo narration
 on:
   push:
     branches: [codex/riza-demo-voice-sample]
@@ -8,7 +8,7 @@ permissions:
 jobs:
   voice:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,10 +19,11 @@ jobs:
       - name: Render approved Gemini Kore voice
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node mockups/riza-demo/voice-sample.mjs
+        run: node mockups/riza-demo/produce-audio.mjs
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: riza-gemini-kore-sample
-          path: riza-voice-output/
+          name: riza-production-audio
+          path: riza-production-audio/
           retention-days: 14
           if-no-files-found: error
