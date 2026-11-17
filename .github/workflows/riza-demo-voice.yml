@@ -1,0 +1,28 @@
+name: Riza demo voice sample
+on:
+  push:
+    branches: [codex/riza-demo-voice-sample]
+    paths: [mockups/riza-demo/**, .github/workflows/riza-demo-voice.yml]
+permissions:
+  contents: read
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Render approved Gemini Kore voice
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node mockups/riza-demo/voice-sample.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riza-gemini-kore-sample
+          path: riza-voice-output/
+          retention-days: 14
+          if-no-files-found: error
