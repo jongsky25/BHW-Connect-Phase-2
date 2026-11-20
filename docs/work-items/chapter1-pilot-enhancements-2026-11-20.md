@@ -1,6 +1,7 @@
 # Chapter 1 first — November pilot enhancement plan
 
-Status: planning complete; implementation and live verification pending.
+Status: planning complete; C1-PE-0 baseline reconciled; C1-PE-1 reference reading implemented;
+release verification and signed-in usability evidence tracked in phase handoffs.
 Updated: 20 November 2026 (UTC).
 Task prefix: C1-PE. Branch: `plan/chapter1-pilot-enhancements-2026-11-20`.
 Planning base: `44ba7477057c1495256b729d5f5d4fd13beb2c01` (origin/main).
@@ -22,7 +23,8 @@ Planning base: `44ba7477057c1495256b729d5f5d4fd13beb2c01` (origin/main).
   from both the scope and the basis for this plan.
 - Preserve self-paced learning, repeat access to completed lessons, existing
   learner progress, historical attempts, scores and certification records.
-- This PR is a durable implementation plan, not implementation or deployment.
+- This PR began as a durable plan; its continuation includes the C1-PE-1
+  reference-reading increment. Actual delivery state is in the phase handoff.
 
 These explicit owner decisions govern this enhancement over older planning
 assumptions. In particular, the source-material README's historical prohibition
@@ -68,6 +70,15 @@ below expresses dependencies; it does not promise dates or staffing.
 
 ### C1-PE-0 — Establish the current Chapter 1 baseline
 
+Continuation evidence: [C1-PE-0 baseline](c1-pe-0/README.md),
+[42-lesson source map](c1-pe-0/lesson-source-map.csv) and
+[publication receipt](c1-pe-0/publication-baseline.json). The read-only pilot
+inventory confirms 42 lessons across nine modules and the active v8 assessment
+forms. Eight raw-source differences are intentional approved overlays; the effective
+loader matches all 42 published hashes. Focused local recovery tests and the
+isolated browser assessment journey passed. Signed-in usability and full network
+fault testing remain distinct outstanding evidence.
+
 Deliverables:
 
 1. Inventory every published Chapter 1 lesson and major section, BHW and assessor
@@ -87,6 +98,10 @@ assessment-policy clarification. Check current repository and deployment evidenc
 separately; use authorized read-only access for pilot inspection.
 
 ### C1-PE-1 — Manual reference sections and simpler language
+
+Implementation: [reference-reading increment and release record](c1-pe-1.md).
+All 42 lessons map to 11 shared complete passages, with original table images
+and reflowed text. Broader authored-language review remains separate follow-up.
 
 Depends on C1-PE-0's source map.
 
@@ -267,12 +282,13 @@ Suggested request:
 4. Update the work register at task/release boundaries. Link evidence here or in
    the phase handoff; do not mark planned capabilities implemented or live.
 
-## Planning delivery record
+## Original planning delivery record
 
 - Changed: this plan, the session-handoff entry point and work-register pointer.
 - Validation: documentation whitespace and relative-link checks; application
   tests are not applicable to this documentation-only change.
-- Runtime/database/content mutations: none. Implementation remains pending.
+- At planning time: no runtime/database/content mutations. Implementation was
+  pending; the phase handoffs above now track subsequent work.
 - Delivery identity: use this branch's Git history and GitHub PR for the exact
   commit and review status; do not infer merge/deployment from this document.
 - Next action: C1-PE-0 baseline and source mapping.
