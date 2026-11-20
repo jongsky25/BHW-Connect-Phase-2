@@ -101,6 +101,11 @@ release overlays. No database restoration is required.
   warnings, no errors (before final fixture-only checks).
 - Full local suite: **333 files / 2,728 tests passed**. Final focused excerpt
   checks: six tests passed. Final fixture lint passed with no added warnings.
+- First remote CI exposed four historical no-change audits that also covered
+  new files (the initial local run preceded staging those additions). Added exact
+  SHA-256 allowances for the new manifest and five figures; all pre-existing
+  source/media paths remain protected. All 12 tests across the four affected
+  audits and reference coverage pass with the additions tracked.
 - Delivery: bundled implementation and baseline continuation pushed together
   on PR #515; exact commit is the branch head. CI/deployment state must be
   checked from the PR; this record does not claim a completed release.
