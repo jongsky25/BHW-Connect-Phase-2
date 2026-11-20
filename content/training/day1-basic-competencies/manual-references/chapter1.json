@@ -1,0 +1,1046 @@
+{
+  "version": "2022-c1-v1",
+  "source": {
+    "title": "Barangay Health Workers’ Reference Manual",
+    "edition": "2022",
+    "publisher": "Department of Health — Bureau of Local Health Systems Development, with WHO Philippines",
+    "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view",
+    "sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+    "reviewedOn": "2026-11-20"
+  },
+  "lessons": {
+    "bhw-roles-hepo": {
+      "sections": [
+        "roles"
+      ],
+      "partialSupport": false
+    },
+    "bhw-health-educator": {
+      "sections": [
+        "roles"
+      ],
+      "partialSupport": false
+    },
+    "bhw-community-organizer": {
+      "sections": [
+        "roles"
+      ],
+      "partialSupport": false
+    },
+    "bhw-service-provider": {
+      "sections": [
+        "roles"
+      ],
+      "partialSupport": false
+    },
+    "bhw-records": {
+      "sections": [
+        "roles"
+      ],
+      "partialSupport": false
+    },
+    "bhw-roles-application": {
+      "sections": [
+        "roles"
+      ],
+      "partialSupport": false
+    },
+    "uhc-coverage": {
+      "sections": [
+        "uhc"
+      ],
+      "partialSupport": false
+    },
+    "uhc-primary-care": {
+      "sections": [
+        "uhc"
+      ],
+      "partialSupport": false
+    },
+    "uhc-local-system": {
+      "sections": [
+        "uhc"
+      ],
+      "partialSupport": false
+    },
+    "uhc-improvement": {
+      "sections": [
+        "uhc"
+      ],
+      "partialSupport": false
+    },
+    "bhs-promotions": {
+      "sections": [
+        "policies"
+      ],
+      "partialSupport": false
+    },
+    "bhs-support-environment": {
+      "sections": [
+        "policies"
+      ],
+      "partialSupport": false
+    },
+    "bhs-decline": {
+      "sections": [
+        "policies"
+      ],
+      "partialSupport": false
+    },
+    "bhs-resources": {
+      "sections": [
+        "policies"
+      ],
+      "partialSupport": false
+    },
+    "bhs-improvement": {
+      "sections": [
+        "policies"
+      ],
+      "partialSupport": false
+    },
+    "bhw-legal-role": {
+      "sections": [
+        "roles",
+        "benefits"
+      ],
+      "partialSupport": false
+    },
+    "bhw-benefits": {
+      "sections": [
+        "roles",
+        "benefits"
+      ],
+      "partialSupport": false
+    },
+    "bhw-eligibility": {
+      "sections": [
+        "roles",
+        "benefits"
+      ],
+      "partialSupport": false
+    },
+    "bhw-accreditation": {
+      "sections": [
+        "roles",
+        "benefits"
+      ],
+      "partialSupport": false
+    },
+    "bhw-follow-up": {
+      "sections": [
+        "roles",
+        "benefits"
+      ],
+      "partialSupport": false
+    },
+    "bhw-relationships": {
+      "sections": [
+        "partners"
+      ],
+      "partialSupport": false
+    },
+    "bhw-barangay-partners": {
+      "sections": [
+        "partners"
+      ],
+      "partialSupport": false
+    },
+    "bhw-local-partners": {
+      "sections": [
+        "partners"
+      ],
+      "partialSupport": false
+    },
+    "bhw-teamwork": {
+      "sections": [
+        "teamwork"
+      ],
+      "partialSupport": false
+    },
+    "bhw-self-management": {
+      "sections": [
+        "self-management"
+      ],
+      "partialSupport": false
+    },
+    "bhw-right-contact": {
+      "sections": [
+        "partners"
+      ],
+      "partialSupport": false
+    },
+    "communication-listen": {
+      "sections": [
+        "communication"
+      ],
+      "partialSupport": false
+    },
+    "communication-clarify": {
+      "sections": [
+        "communication"
+      ],
+      "partialSupport": false
+    },
+    "communication-explain": {
+      "sections": [
+        "communication"
+      ],
+      "partialSupport": false
+    },
+    "communication-record": {
+      "sections": [
+        "roles",
+        "communication"
+      ],
+      "partialSupport": false
+    },
+    "communication-handoff": {
+      "sections": [
+        "communication"
+      ],
+      "partialSupport": false
+    },
+    "problem-define": {
+      "sections": [
+        "problems"
+      ],
+      "partialSupport": false
+    },
+    "problem-causes": {
+      "sections": [
+        "problems"
+      ],
+      "partialSupport": false
+    },
+    "problem-prioritize": {
+      "sections": [
+        "problems"
+      ],
+      "partialSupport": false
+    },
+    "problem-action-plan": {
+      "sections": [
+        "problems"
+      ],
+      "partialSupport": false
+    },
+    "safety-identify": {
+      "sections": [
+        "safety"
+      ],
+      "partialSupport": false
+    },
+    "safety-controls": {
+      "sections": [
+        "safety"
+      ],
+      "partialSupport": false
+    },
+    "safety-prepare": {
+      "sections": [
+        "safety"
+      ],
+      "partialSupport": false
+    },
+    "safety-demonstrate": {
+      "sections": [
+        "safety"
+      ],
+      "partialSupport": false
+    },
+    "resources-audit": {
+      "sections": [
+        "plastics"
+      ],
+      "partialSupport": true
+    },
+    "resources-safe-change": {
+      "sections": [
+        "plastics"
+      ],
+      "partialSupport": true
+    },
+    "resources-monitor": {
+      "sections": [
+        "plastics"
+      ],
+      "partialSupport": true
+    }
+  },
+  "sections": [
+    {
+      "id": "roles",
+      "title": "ANG MGA TUNGKULIN NG ISANG BHW",
+      "pdfPages": [
+        11,
+        12
+      ],
+      "printedPages": [
+        3,
+        4
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Ang mga barangay health workers o BHW ay importanteng parte ng health system ng Pilipinas sa pagtulong na madala ang mga serbisyo at impormasyong pangkalusugan sa mga barangay, at pagsusulong ng aktibong partisipasyon ng mga komunidad sa mga programang pangkalusugan. Naaayon sa devolution ng health services sa mga local government, ang mga BHWs ay nasa pangangasiwa ng mga local government unit (barangay, munisipyo/syudad) at nakabase sa mga primary care facilities tulad ng rural health units (RHUs), o barangay health stations (BHS). Ayon sa Republic Act 7883, o ang BHWs’ Benefits and Incentives Act of 1995, ang mga BHWs ay dapat nakapagtapos ng training program sa ilalim ng kahit anong accredited government o non-government organization at boluntaryong nagbibigay ng serbisyong primary care sa komunidad pagkatapos ma-accredit ng local health board na naaayon sa guidelines ng Department of Health. Dahil naman sa pagkakapasa ng Republic Act 11223, o ang Universal Health Care (UHC) Act of 2019, may mga mahahalagang reporma sa sistema ng pagbibigay ng serbisyong kalusugan ang maaasahan, kung saan mas pinapahalagahan ang primary health care upang magkaroon ng mabuting kalusugan ang mga Pilipino. Inaasahan ang malaking kontribusyon ng mga BHWs upang maabot ang pangkalahatang pakay ng UHC Act, lalo na sa pagsusulong ng kaalaman tungkol sa kalusugan sa mga komunidad, at pagtulong sa local health workers sa pagdadala ng mga serbisyong pangkalusugan."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang mga papel at tungkulin ng mga BHW ay ang mga sumusunod:"
+        },
+        {
+          "kind": "heading",
+          "text": "Barangay-level Health Education and Promotion Officer (HEPO)"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Dahil sa pagpapaigting ng UHC Act sa health promotion, inaasahan ang mga BHW na maghatid ng mga impormasyong pangkalusugan sa kanilang mga pamayanan upang magkaroon ng kaalaman ang mga miyembro nito sa kanilang kalusugan, at upang magkaroon sila ng malusog na pamumuhay. Para matugunan ang papel na ito, kinakailangang may sapat na kaalaman ang bawat BHW tungkol sa mga prayoridad na programa at problemang pangkalusugan na kanila namang ibabahagi sa kanilang mga kasama sa barangay. Dagdag pa rito, kailangang pagtuunan ng pansin ang iba pang mga papel ng BHW na nakasaad sa BHWs’ Benefits and Incentives Act of 1995, gaya ng mga sumusunod:"
+        },
+        {
+          "kind": "heading",
+          "text": "Health Educator"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Mahalaga ang papel ng mga BHW sa pagkakaroon ng magandang pag-uugali ang mga miyembro ng komunidad sa kanilang kalusugan. Kasama dito ang pagbibigay ng kaalaman sa mga tao kung paano nila mapapanatili ang kalusugan ng kanilang katawan at ang kanilang kapaligiran. Bilang BHW, tungkulin nilang patuloy na turuan ang mga tao tungkol sa kanilang kalusugan, at ihanda sila sa mga sakit, aksidente, at mga risk factors sa bawat parte ng buhay."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Upang magkaroon ng magandang pag-uugali ang mga tao sa kanilang kalusugan, tungkulin ng mga BHW na magbigay ng mga impormasyon, kaalaman, at pagsasanay sa bawat sektor ng komunidad, mula sa mga bata hanggang sa kanilang paglaki bilang binata at dalaga, at sa kanilang pagtanda."
+        },
+        {
+          "kind": "heading",
+          "text": "Community organizers"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Pinapanatili ng mga BHW ang magandang relasyon at komunikasyon sa mga lider at miyembro ng komunidad, pati na din sa mga health staff ng lungsod/munisipyo upang mas matagumpay na makapagsulong ng mga gawain at adbokasiya sa barangay. Magagawa ito sa pamamagitan ng pag-organisa ng mga miyembro ng komunidad, at ang pag-eengganyo ng kanilang pakikilahok. Ang mga BHW ay bahagi din ng barangay planning team for health, at dahil dito, importante ang kanilang papel sa pagtulong sa mga lider ng komunidad na maintindihan ang sariling mga problemang pangkalusugan ng barangay, at aksyunan ang mga problemang ito upang mapangalagaan at maisulong ang kalusugan ng mga nasasakupan nito."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Dagdag pa dito, dahil sa UHC Act, kinikilala ng bawat Local Investment Plan for Health (LIPH) ng bawat lungsod o probinsya ang kahalagahan ng kontribusyon ng mga barangay at munisipyo sa pagpaplano ng mga gawaing pangkalusugan. Inaasahan na magkakaroon din ng partisipasyon at kontribusyon ang mga BHW sa mga lokal na pagpaplanong pangkalusugan."
+        },
+        {
+          "kind": "heading",
+          "text": "Health service provider"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang mga BHW ay parte ng primary care team ng lungsod o munisipyo na tumutulong sa mga midwives sa barangay sa pagbibigay ng mga serbisyong pangkalusugan. Sila ang mga unang contact ng mga miyembro ng komunidad kung kinakailangan ng mga ito ng serbisyong pangkalusugan. Sila ay maituturing na mga frontline health workers na unang tumutugon sa mga pangangailangan ng mga tao. Ang mga BHW din ang gumagabay sa mga tao kung saan sila dapat pumunta upang matugunan ang kanilang mga pangangailangang pangkalusugan. Habang ginagabayan ang kanilang mga kasama, inaasahang nagbibigay din ang mga BHW ng mga simple at paunang serbisyong medikal, gaya ng pag-i-interview, pagsukat ng vital signs, pagre-record, paggawa ng household profile, at pagbibigay ng paunang lunas. Bukod dito, inaasahan din ang mga BHW na magpatuloy ng pangangalaga sa kanilang mga kasama sa komunidad sa pamamagitan ng pagmo-monitor sa kanilang mga kalusugan."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Tumutulong ang mga BHW sa pagkolekta at pangangalaga ng mga datos at records mula sa mga kabahayan na kanilang nasasakupan. Ang mga impormasyon mula sa mga datos na ito ay mahalaga upang magabayan ang mga programang pangkalusugan sa pagpapatupad ng mga gawain at istratehiya nito. Kabilang sa mga tungkulin ng BHW ang paggawa ng household profiles, paggawa ng mga master list ng iba’t ibang grupo ng mga tao sa komunidad, pagpapanatili ng mga records at registries ng mga taong binibigyan ng serbisyong pangkalusugan, at pagsagot sa iba pang mga forms ng gobyerno, ng DOH, o lokal na pamahalaan na maaaring ipagawa sa kanila ng nurse, midwife, o doktor ng health center."
+        }
+      ]
+    },
+    {
+      "id": "uhc",
+      "title": "MGA POLISIYA SA BARANGAY HEALTH STATION — R.A. 11223 o Universal Health Care Act of 2019",
+      "pdfPages": [
+        13
+      ],
+      "printedPages": [
+        5
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "May mga polisiya at batas ang Department of Health at ang gobyerno na kailangang malaman at sundin ng mga BHW sa BHS at sa komunidad. Ang ilan sa mga ito ay ang mga sumusunod:"
+        },
+        {
+          "kind": "heading",
+          "text": "1. R.A. 11223 o Universal Health Care Act of 2019"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Naisabatas noong Pebrero ng taong 2019 ang Republic Act 11223, o mas kilala bilang Universal Health Care (UHC) Act of 2019. Ito ang simula ng malaking pagbabago sa sektor ng pangkalusugan ng bansa, na naglalayong siguraduhin na ang bawat Pilipino ay may access sa abot-kaya at dekalidad na serbisyong pangkalusugan, kailanman nya kailanganin, na hindi kailangan maghirap dahil sa gastusin."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ilan sa mga pagbabago na dala ng UHC Act na mararamdaman ng mga BHW bilang parte ng health system ay ang mga sumusunod:"
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "lahat ng Pilipino ay covered na ng Philhealth",
+            "abot-kayang serbisyong pangkalusugan",
+            "pagpapataas ng antas ng kasanayan ng mga BHW",
+            "mas pinaigting na health promotion sa mga komunidad",
+            "pagsasaayos ng hiwa-hiwalay na mga programang pangkalusugan ng DOH",
+            "pagtatalaga ng personal na primary care provider sa bawat Pilipino",
+            "pagcover sa outpatient consult ng Philhealth",
+            "mas maayos na referral system",
+            "pagtatalaga ng provincial at city health board bilang isang kaagapay sa pag-aayos at pamamahala ng health system sa probinsya"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "policies",
+      "title": "MGA POLISIYA SA BARANGAY HEALTH STATION — Iba pang polisiya",
+      "pdfPages": [
+        13,
+        14
+      ],
+      "printedPages": [
+        5,
+        6
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "May mga polisiya at batas ang Department of Health at ang gobyerno na kailangang malaman at sundin ng mga BHW sa BHS at sa komunidad. Ang ilan sa mga ito ay ang mga sumusunod:"
+        },
+        {
+          "kind": "heading",
+          "text": "a. Pagbabawal sa pag-promote ng milk substitutes sa mga health facilities"
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Ayon sa Executive Order 51 o ang Philippine Milk Code of 1986, pinagbabawalan ang pag-a-advertise ng mga milk formula o milk substitute sa mga health facilities. Bawal din ang pagtanggap ng anumang pera mula sa mga milk companies kapalit ng pagpropromote ng mga milk products. Inaasahan na ang mga BHWs ay nagpropromote ng breastfeeding sa mga nanay sa komunidad."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "b. Pagkakaroon ng lactation station at polisiya sa pagpapasuso sa mga healthcare facilities"
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Ayon sa Republic Act 10028 o ang Expanded Breastfeeding Promotion Act of 2009, inaatasan ang lahat ng mga workplaces, kasama ang mga healthcare facilities gaya ng health center at barangay health stations, ang pagsusulong ng breastfeeding sa mga sanggol at ang pagkakaroon ng mga breastfeeding stations."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "c. Pagbabawal sa pagpromote ng mga gamot sa health facilities"
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Ayon sa DOH Administrative Order No. 2015-0053 o The Implementing Guidelines on the Promotion and Marketing of Prescription Pharmaceutical Products and Medical Devices, pinagbabawalan din ang pag-promote, pag-sponsor, at iba pang marketing activities ng mga kumpanya ng gamot sa mga health facilities. Pinagbabawalan din ang mga health workers na mag-promote ng kahit anong gamot o produktong nakakagamot. Ito ay para maiwasan na maimpluwensyahan ng mga kumpanya ang paraan ng paggagamot o pagbibigay ng serbisyo ng health center."
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "d. Pagbabawal sa paggamit ng single-use plastics sa mga health facilities"
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Ayon sa DOH Department Circular 2021-0486, inaanyayahan ang lahat ng mga health facilities na ipagbawal ang paggamit ng mga single-use plastic simula 2022. Bilang parte ng health sector, kasama dapat ang BHW sa adbokasiyang bawasan ang dami ng basura na nagiging sanhi ng polusyon, sakit, at sakuna. Kabilang sa mga single-use plastic na ito ay ang mga sumusunod:"
+          ]
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "plastic cups (mas manipis sa 0.2 mm)",
+            "plastic drinking straws",
+            "plastic coffee stirrers",
+            "plastic na kutsara, tinidor, at kutsilyo",
+            "plastic “labo”’ at mga sando bags"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "benefits",
+      "title": "MGA POLISIYA SA BARANGAY HEALTH STATION — R.A. 7883; BHWE",
+      "pdfPages": [
+        13
+      ],
+      "printedPages": [
+        5
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "May mga polisiya at batas ang Department of Health at ang gobyerno na kailangang malaman at sundin ng mga BHW sa BHS at sa komunidad. Ang ilan sa mga ito ay ang mga sumusunod:"
+        },
+        {
+          "kind": "heading",
+          "text": "2. R.A. 7883 o ang Barangay Health Workers’ Benefits and Incentives Act of 1995"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang kontribusyon ng BHWs sa sistema ng kalusugan sa Pilipinas ay kinikilala sa BHWs’ Benefits and Incentives Act (Republic Act 7883) of 1995. Ayon sa batas na ito, ang BHW ay maaaring mabigyan ng hazard allowances, subsistence allowance, training education at career enrichment programs, civil service eligibility, libreng legal services, at priority access sa mga loan o pautang. Upang maging eligible ang mga BHWs sa mga benepisyong ito, kailangang rehistrado sila sa local health board ng lungsod o munisipyo kung saan sila nagbibigay ng serbisyo. Ang kabuuang bilang ng BHWs ay hindi dapat lumampas ng isang porsiyento (1%) ng kabuuang bilang ng mga tao sa komunidad."
+        },
+        {
+          "kind": "heading",
+          "text": "3. Ang Barangay Health Worker Eligibility (BHWE) sa Civil Service"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang barangay health worker eligibility (BHWE) ay ipinagkakaloob ng Civil Service Commission sa mga BHW na accredited ng local health board at nakakumpleto ng minimum na dalawang (2) taon sa kolehiyo, aktibong boluntaryong naglilingkod ng tuloy-tuloy sa loob ng limang (5) taon o higit pa, at may satisfactory service bilang accredited BHW sa komunidad."
+        }
+      ]
+    },
+    {
+      "id": "partners",
+      "title": "ANG BHW AT ANG KANYANG BARANGAY",
+      "pdfPages": [
+        15,
+        16,
+        17
+      ],
+      "printedPages": [
+        7,
+        8,
+        9
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Ang mga BHW ay bahagi ng health sector, at napakahalagang maunawaan ang mga tungkulin at responsibilidad ng mga tao na may kaugnayan sa kanilang gawain. Mahalagang maintindihan ito upang malaman ang tamang daloy ng komunikasyon bilang pag respeto sa mga responsibilidad at mandato ng iba pang kasama sa barangay at komunidad."
+        },
+        {
+          "kind": "heading",
+          "text": "Ang Punong Barangay"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang mga BHW ay ka-partner ng mga barangay sa pagpapatupad ng mandato nitong magbigay ng basic health services sa mga nasasakupan nito. Habang ang mga midwives ang gumaganap na supervisor, ang punong barangay ay nangangasiwa sa mga BHW. Bilang lider ng komunidad, siya ay may impluwensiya sa kanyang nasasakupan, kaya’t maaaring siyang maging epektibong health advocate. Siya din ang nagdedesisyon kung paano gagamitin ang budget ng barangay, kasama ang pagbibigay ng honorarium para sa BHWs."
+        },
+        {
+          "kind": "heading",
+          "text": "Ang Sangguniang Barangay Kagawad sa Kalusugan"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang kagawad sa kalusugan ang tagapagtaguyod sa konseho ng barangay ng mga polisiya at resolusyong pangkalusugan. Miyembro din ang kagawad sa kalusugan ng barangay planning team for health. Sa ibang barangay, maaari silang italaga para pangasiwaan ang mga gawaing pangkalusugan sa barangay, kasama ang pangangasiwa sa mga BHWs. Dapat na alam niya ang mga problemang pangkalusugan sa kanyang barangay. Ang kagawad sa kalusugan din ang inaasahang magsusulong ng budget para sa mga gawain, pasilidad, at materyales na may kinalaman sa kalusugan sa barangay, kaya siya ay isang mahalagang kakampi ng mga BHW."
+        },
+        {
+          "kind": "heading",
+          "text": "City/ Municipal Health Officer (CHO/MHO)"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang CHO o MHO ang pangkalahatang namamahala sa kalusugan ng buong lungsod o bayan. Siya ang nangangasiwa sa pagpapatupad ng public health programs sa lokalidad. Bilang doktor, tumitingin din sya ng mga pasyente sa konsultasyon, tumitingin sa mga emergency cases, at nagbibigay ng medico-legal na serbisyo sa mga nasasakupan. Siya ang pangkalahatang supervisor ng mga health workers at volunteers sa mga LGU, kasama ang mga BHWs. Sa ibang LGUs na may mahigit sa isang doktor, maaaring may italaga na isang doktor bilang supervisor ng lahat ng BHWs."
+        },
+        {
+          "kind": "heading",
+          "text": "Midwives/Komadrona"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang mga midwives o rural health midwives ay nasa ilalim ng pangangasiwa ng city/municipal health officers, at kadalasan ay naitatalaga sa mga barangay health stations para mamahala sa pagpapatupad ng mga programang pangkalusugan at mangasiwa sa pagbibigay ng basic health services dito. Sila ang nagtatakda ng mga gawain ng mga BHWs, gaya ng recording, reporting, at pag-oorganisa ng mga gawain sa barangay. Ang anumang concerns na may kinalaman sa kalusugan ng isang komunidad ay ipinapaalam sa mga midwives, bilang kanilang technical supervisor."
+        },
+        {
+          "kind": "heading",
+          "text": "Public Health Nurse (PHN)"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang PHN ay nasa ilalim ng city/municipal health office at namamahala sa pagpapatupad ng mga public health programs. Sila ang nangangasiwa sa mga midwives sa barangay. Sa ibang local government, ang nurse ay inaatasan bilang supervisor ng lahat ng BHWs sa buong lungsod o munisipalidad. Bilang kinatawan ng city/municipal health officer, siya rin ang pangkalahatang namamahala ng BHW performances at pagsusulong ng insentibo para sa kanila mula sa lokal na pamahalaan."
+        },
+        {
+          "kind": "heading",
+          "text": "Health Education and Promotion Officers (HEPOs)"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang mga HEPOs ay nasa pangangasiwa ng city o municipal health officers na siyang namamahala sa pagbibigay ng pampopulasyong serbisyong pangkalusugan kasama ang pagpaplano at pagsasagawa ng mga polisiya at aktibidad na pang-health promotion. Sila din ang may responsibilidad na i-monitor ang kasanayan ng mga BHWs sa pagsusulong ng kalusugan sa kanilang mga komunidad. Kasama dito ang pagbibigay ng kaukulang training sa kanila depende sa pangangailangan."
+        },
+        {
+          "kind": "heading",
+          "text": "City/municipal local health board"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang local health board ang nagbibigay ng rekomendasyong pangkalusugan sa local government, kasama ang pagtatakda ng budget ng city/municipal health office at paggawa ng mga committees on health kung kinakailangan. Ito din ang namamahala sa registration at accreditation ng mga BHWS, kasama na ang pag-apruba sa BHW registry, pagbibigay ng mga benepisyo sa mga BHWs, at pagsisiguradong protektado ang mga BHW sa anumang politikal na impluwensya o interes. Ang local health board ay binubuo ng mga sumusunod:"
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Mayor bilang chairperson",
+            "City/municipal health officer bilang vice-chairperson",
+            "Sangguniang Panglungsod/Bayan Committee Chairperson on Health bilang miyembro",
+            "Kinatawan ng pribadong sektor o NGO bilang miyembro",
+            "DOH Representative bilang miyembro",
+            "Kinatawan ng mga katutubo o indigenous people, kung mayroon"
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "Alkalde/Mayor"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Siya ang overall chief executive ng mga city o municipality. Siya ang namamahala sa pagtitiyak ng mabuting kalusugan ng mga nasasakupan. Siya ang direct supervisor ng city o municipal health officer."
+        },
+        {
+          "kind": "heading",
+          "text": "BHW President / Pangulo ng BHW"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Nahalal o itinalagang lider ng lahat ng mga BHWs sa isang lungsod o bayan. Maaari siyang umupo na miyembro ng local health board bilang kinatawan ng pribadong sektor o NGO. Tumutulong sya sa pag-update ng BHW registry, at sa pagbibigay impormasyon sa kanyang kapwa BHW tungkol sa iba’t ibang oportunidad at impormasyo para sa kanila."
+        },
+        {
+          "kind": "heading",
+          "text": "Municipal social work and development officer"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Namamahala sa pagtugon sa social needs sa lungsod o munisipalidad. Ang kanilang tanggapan ang nangangasiwa ng financial assistance sa mga constituents na nangangailangan ng tulong medikal, na tinatawag na “Aid to Individuals in Crisis Situation” or AICS."
+        },
+        {
+          "kind": "heading",
+          "text": "Sanitation Inspectors"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang sanitary inspectors ay nasa ilalim ng pamamahala ng municipal o city health office, at ang nangunguna sa mga promosyon at adbokasiya ng kalinisan"
+        },
+        {
+          "kind": "paragraph",
+          "text": "sa kanyang nasasakupan. Ang mga sanitary inspector ay nagtataguyod ng magandang pakikipagtrabaho sa mga BHWs para mapadali ang paghahanap at koordinasyon ng mga kabahayan na nangangailangan ng environmental sanitation interventions. Ang BHWs ang nilalapitan ng sanitary inspector upang matukoy at maitala ang mga kabahayan sa komunidad na walang access sa ligtas na tubig (safe water), sanitary toilet, at solid waste management."
+        }
+      ]
+    },
+    {
+      "id": "teamwork",
+      "title": "Team Work",
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        9
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Kadalasan ay may higit sa isang BHW ang isang barangay, at kasama ang iba pang stakeholders, sila ay nagtatrabaho bilang isang team o grupo upang tiyakin na maayos na naihahatid ang mga pangunahing serbisyong pangkalusugan sa mga tao. Subalit ang mga tao ay may iba’t ibang personalidad na maaaring pagsimulan ng hindi pagkakaunawaan kapag nagtatrabaho ng magkakasama."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang teamwork o pagtatrabaho ng sama-sama ay napakahalaga upang makabuo ng isang magandang relasyon sa mga katrabaho, na nakakatulong para masigurado din na magiging epektibo at mabisa ang pagganap sa mga tungkulin bilang BHWs. Ang ilang mga rekomendasyon upang magkaroon ng maayos na pakikipagtrabaho sa mga ibang kasamang BHW ay ang mga sumusunod:"
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Dapat malinaw sa mga miyembro ng team ang layunin kung bakit sila ay nag-volunteer bilang BHWs sa barangay, at ito ay para mapabuti ang kalusugan sa komunidad.",
+            "Maganda kung malalaman at malilinaw sa lahat ang mga tungkulin at responsibilidad ng bawat kasamahang miyembro ng team. Halimbawa, sino ang naka-assign sa partikular na purok o sitio, o sino ang assigned na leader sa isang programang pangkalusugan.",
+            "Maging bukas sa lahat ng miyembro ng team, kahit ito ay personal na problema na maaaring makaapekto sa pagtatrabaho ng lahat. Anumang isyu sa mga kasamahan ay kinakailangan na maagap na napag-uusapan upang hindi na lumalim pa ang hindi pagkakaunawaan.",
+            "Maging bukas sa mga opinyon at pagpuna. Maaaring may makuhang mga opinyon o pamumuna mula sa mga kasamahan o maging sa komunidad na pinaglilingkuran. Isipin na ang mga komentong ito ay makakatulong para mas mapabuti ang pagganap sa mga tungkulin bilang BHW.",
+            "Bumuo ng maayos na ugnayan sa mga kasamahan, maging sa labas ng trabaho. Ang mabuting pakikipagtrabaho ay kadalasang gumaganda kung ang bawat kasapi ay nagbabahaginan at nag-eenjoy ng kanilang oras sa labas ng trabaho na may respeto sa kani-kanilang personal na pamumuhay. Ang pagkain sa labas o pagbibiyahe na magkakasama ay nakakatulong din upang mapabuti ang bonding sa mga kasamahan sa trabaho."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "self-management",
+      "title": "SELF MANAGEMENT",
+      "pdfPages": [
+        17,
+        18
+      ],
+      "printedPages": [
+        9,
+        10
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Ang mga self-management skills ay nagbibigay-daan sa mga BHW na kontrolin ang kanilang mga iniisip, emosyon, at damdamin upang makapokus sa kanilang target performance at makaiwas sa mga bagay na makakasagabal sa kanilang paggawa. Gamit ang mga kasanayang ito, maipapakita ng mga BHW ang kanilang pagiging health leader at volunteer sa kanilang mga komunidad."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang mga self-management skills na dapat taglayin ng mga BHW ay ang sumusunod:"
+        },
+        {
+          "kind": "list",
+          "ordered": true,
+          "items": [
+            "Maaasahan – kakayahang makapaghatid ng mabuting serbisyo na inaasahan sa kanila",
+            "Stress management – pagiging kalmado at tutok sa trabaho sa kabila ng matinding tensyon o stress sa kapaligiran.",
+            "Time management – nagagawang unahin ang mga bagay na mas importanteng gawin upang matapos sa takdang oras at makaiwas sa anumang pagkaantala",
+            "Mapagkakatiwalaan – may prinsipyo at pagpapahalaga sa trabaho, at palaging sumusunod sa pamantayang moral.",
+            "Adaptability – handang tumanggap at makisabay sa mga pagbabago",
+            "Matapat at maingat – maalalahanin sa sinasabi at kung paano tinatrato ang ibang tao."
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Upang mapagbuti ang mga self-management skills, maaaring gawin ang sumusunod:"
+        },
+        {
+          "kind": "list",
+          "ordered": true,
+          "items": [
+            "Pangangalaga sa sarili. Ang pagiging stressed sa trabaho ay nagreresulta sa pagbaba ng performance sa trabaho, lalo na kung ang isang BHW ay hindi mabuti ang pakiramdam o kung sila ay may mga personal na problema.",
+            "Sanayin ang sarili na maging matiyaga at pasensyoso. Ang bawat tao ay may kanya-kanyang timeline at oras na maaaring hindi tumugma sa oras na gusto ng BHW.",
+            "Sanayin ang sarili na tapusin ang isang gawain sa isang pagkakataon. Ang multitasking, salungat sa paniniwala ng iba, ay hindi nagreresulta sa pagkumpleto ng maraming gawain. Sa pamamagitan ng pagbibigay-prayoridad sa isang gawain, mas malamang na matapos ang mga gawaing inaasahan mula sa kanila.",
+            "Pagnilayan ang mga sariling kakayahan. Ang mga kakayahan ng isang tao ay mapapabuti pa kung makikilala ang mga ito.",
+            "Magtakda ng mga target na gawain na tiyak, nasusukat, naaabot, makatotohanan, at may hangganan sa oras.",
+            "Magplano para sa bawat linggo ng pagtatrabaho. Isulat ang mga gawaing kailangang tapusin.",
+            "Palaging dumalo sa mga pulong o meeting na handa. Hingin ang agenda at basahin ang mga relevant materials bago pumunta sa mga pagpupulong.",
+            "Mag-isip muna bago magsalita. Subukang salain ang mga salita upang maihatid ang mensahe na hindi nakakasakit sa ibang tao."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "title": "EPEKTIBONG PAKIKIPAGKOMUNIKASYON",
+      "pdfPages": [
+        18,
+        19
+      ],
+      "printedPages": [
+        10,
+        11
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Ang epektibong pakikipagkomunikasyon ay mahalaga sa pagbuo ng magandang relasyon sa mga miyembro ng komunidad upang masigurado na ang kanilang mga pangangailangang pangkalusugan ay naipaparating sa kinauukulan, at ang mga impormasyong isinusulong ng mga BHW ay naiintindihan ng mga tao. Ilan sa mga maaaring gawin upang maging epektibo ang komunikasyon ng mga BHW ay ang mga sumusunod:"
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Gawin ang pakikipag-usap sa lugar kung saan komportable ang kausap.",
+            "Magkaroon ng eye contact sa kausap.",
+            "Panatilihing ang usapan ay tungkol sa concern ng pasyente. Iwasang putulin ang kanilang pagsasalita."
+          ]
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Huwag hayaang maramdaman ng kausap na minamadali ang diskusyon.",
+            "Makinig ng mabuti sa kausap. Magtanong kung may gustong linawin sa sinabi niya.",
+            "Magpakita ng empathy at emotional support sa kausap. Iparamdam na ang kanilang nararamdaman ay naiintindihan. Ang mga BHW ay nasa parehong komunidad ng kanilang kausap, kaya inaasahang mas naiintindihan nila ang kalagayan ng mga tao.",
+            "Magpakita ng respeto at iwasang maging mapanghusga sa pasyente habang nakikipag-usap.",
+            "Gumamit ng mga magagalang at malumanay na mga salita, at iwasan ang mga salitang makaka-offend o makakasakit sa kausap.",
+            "Gumamit ng mga open-ended na tanong, o mga tanong na hindi nililimitahan sa “oo” at “hindi” ang maaaring isagot ng kausap. Ilan sa halimbawa ay ang mga sumusunod:"
+          ]
+        },
+        {
+          "kind": "table",
+          "caption": "Open questions / Closed questions",
+          "headers": [
+            "OPEN QUESTIONS",
+            "CLOSED QUESTIONS"
+          ],
+          "rows": [
+            [
+              "“Kumusta ka ngayon?”",
+              "“Malungkot ka ba?”"
+            ],
+            [
+              "“Paano mo ilalarawan ang pagtulog mo?”",
+              "“May problema ka ba sa pagtulog?”"
+            ],
+            [
+              "“Paano nakakaapekto ang sakit mo sa trabaho mo?”",
+              "“Nakakapagtrabaho ka pa ba?”"
+            ]
+          ],
+          "figure": {
+            "src": "/training/manual-2022/communication-questions-4f91035253d7.png",
+            "sha256": "4f91035253d7c8defcd778f362970d0ff2fba8b85cf2d74ea773c3eb84b8147c",
+            "width": 680,
+            "height": 422,
+            "pdfPage": 19
+          }
+        }
+      ]
+    },
+    {
+      "id": "problems",
+      "title": "PAGKILALA SA MGA PROBLEMA AT PAGPAPLANO NG MGA SOLUSYON",
+      "pdfPages": [
+        19,
+        20,
+        21
+      ],
+      "printedPages": [
+        11,
+        12,
+        13
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Ang mga problemang pangkalusugan sa komunidad ay kadalasang lumalabas kahit na may ilang mga pagtatangka upang matugunan ang mga ito. Ang mga problemang ito ay karaniwang resulta ng mas malalim na problema. Ang pagkakaroon ng mas malalim na pag-unawa sa mga problemang ito ay makakatulong sa pag-iisip ng mga solusyon sa ugat ng mga ito."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ang isa sa mga paraan upang magkaroon ng mas malalim na pag-unawa sa isang problema ay ang prosesong tinatawag na \"Five Why's\", o pagtatanong ng \"bakit\" ng limang beses. Mahalaga na sa paggawa nito, may mga kasamang tao mula sa iba't ibang background at pananaw. Kapag natukoy na ang mga problema, dapat mag-isip ang mga BHW ng mga paraan kung paano maiiwasan ang mga ito na mangyari muli."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Halimbawa ng Five Why’s: May batang nagtatae na namatay. Bakit namatay ang bata?"
+        },
+        {
+          "kind": "table",
+          "caption": "Halimbawa ng Five Why’s",
+          "headers": [
+            "LIMANG BAKIT?",
+            "POSIBLENG DAHILAN",
+            "POSIBLENG DAHILAN"
+          ],
+          "rows": [
+            [
+              "Bakit?",
+              "Pagtatae",
+              "Nakainom ng maruming tubig"
+            ],
+            [
+              "Bakit?",
+              "Hindi alam ng ina kung paano ang wastong pagpapakulo ng tubig",
+              "Hindi naitinuro ng mga BHW sa komunidad kung paano magpakulo ng tubig"
+            ],
+            [
+              "Bakit?",
+              "Pagtatae",
+              "Kulang sa training ang mga BHW kung paano maiwasan ang diarrhea sa komunidad."
+            ],
+            [
+              "Bakit?",
+              "Hindi komunsulta agad sa health center",
+              "Walang pera para sa pamasahe"
+            ],
+            [
+              "Bakit?",
+              "Walang permanenteng trabaho ang ama",
+              "Hindi nakatapos ng elementary ang Ama"
+            ]
+          ],
+          "figure": {
+            "src": "/training/manual-2022/five-whys-7ff5ccc5cc17.png",
+            "sha256": "7ff5ccc5cc172b54f872516d1da67c7af886290c4a26f22a9514a777f8292741",
+            "width": 996,
+            "height": 604,
+            "pdfPage": 20
+          }
+        },
+        {
+          "kind": "paragraph",
+          "text": "Sa ganitong proseso, maaaring lumabas ang madaming problema sa komunidad, ngunit sa limitadong budget, oras, at mga taong magsasagawa ng solusyon, kailangang piliin kung alin sa mga problemang ito ang gagawing prayoridad. Sa pagpili ng mga pangunahing problema, maaari lang magbigay ng marka ng 1 hanggang 5 batay sa mga sumusunod:"
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Laki ng problema (Magnitude of the problem). Ilan sa komunidad ang dumaranas ng problema?",
+            "Kabigatan ng problema (Seriousness of the problem). Gaano kabigat ang problema?",
+            "Kakayahang malutas ang problema (Feasibility of solving the problem). Gaano kadali o kahirap lutasin ang problema?",
+            "Pagkamadalian ng problema (Urgency of the problem). Kailangan ba itong lutasin ngayon, o maaari ba itong pansamantalang ipagpaliban?"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Para sa nabanggit na halimbawa, ang sumusunod ay maaaring maging pangunahing problema. Tandaan na ang mga pangunahing problema ay maaaring magkaiba mula sa isang barangay sa isa pa, depende sa konteksto at sa kakayahan ng mga komunidad."
+        },
+        {
+          "kind": "table",
+          "caption": "Mga problema at prayoridad",
+          "headers": [
+            "MGA PROBLEMA",
+            "MAGNITUDE?",
+            "SERIOUS?",
+            "FEASIBLE?",
+            "URGENT?",
+            "SCORE",
+            "PRIORITY"
+          ],
+          "rows": [
+            [
+              "Hindi alam ng ina kung paano ang wastong pagpapakulo ng tubig",
+              "3",
+              "3",
+              "5",
+              "5",
+              "16",
+              "3"
+            ],
+            [
+              "Hindi naitinuro ng mga BHW sa komunidad kung paano magpakulo ng tubig.",
+              "4",
+              "3",
+              "5",
+              "5",
+              "17",
+              "2"
+            ],
+            [
+              "Kulang sa training ang mga BHW",
+              "4",
+              "5",
+              "5",
+              "5",
+              "19",
+              "1"
+            ],
+            [
+              "Walang pera ang pamilya para sa pamasahe",
+              "5",
+              "3",
+              "3",
+              "4",
+              "15",
+              "4"
+            ],
+            [
+              "Walang permanenteng trabaho ang ama",
+              "5",
+              "3",
+              "2",
+              "2",
+              "12",
+              "5"
+            ],
+            [
+              "Hindi nakatapos ng pag-aaral ang ama.",
+              "4",
+              "3",
+              "2",
+              "1",
+              "10",
+              "6"
+            ]
+          ],
+          "figure": {
+            "src": "/training/manual-2022/priority-table-240812e8b826.png",
+            "sha256": "240812e8b826f97495918290e5a3ab9f3c90dfd991968bfa0e7efd89005ba13c",
+            "width": 996,
+            "height": 880,
+            "pdfPage": 21
+          }
+        },
+        {
+          "kind": "paragraph",
+          "text": "Batay sa halimbawa sa itaas, ang pangunahing problema ay ang kawalan ng pagsasanay ng mga BHW at ang kawalan ng kakayahan ng mga BHW na turuan ang komunidad kung paano magpakulo ng tubig para inumin. Batay dito, maaari nang simulan ang pagtukoy ng mga solusyon sa mga problema."
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "OCCUPATIONAL SAFETY AND HEALTH",
+      "pdfPages": [
+        21,
+        22,
+        23
+      ],
+      "printedPages": [
+        13,
+        14,
+        15
+      ],
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Bilang health workers ng komunidad, laging may posibilidad na magkaroon ng mga panganib sa paggawa ng kanilang mga tungkulin. Mahalagang matukoy ang mga panganib o hazards na ito, at maalis o makontrol ang mga ito sa lugar na pinagtatrabahuan at sa komunidad upang maisagawa ng ligtas ang mga gawain bilang BHW."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ilan sa mga karaniwang panganib sa trabaho na maaaring maranasan ng mga BHWs, at kung paano maiiwasan o matutugunan ang mga ito, ay ang mga sumusunod:"
+        },
+        {
+          "kind": "table",
+          "caption": "Mga panganib sa BHW workplace (1)",
+          "headers": [
+            "MGA PANGANIB SA BHW WORKPLACE",
+            "POSIBLENG EPEKTO SA KATAWAN AT KALUSUGAN",
+            "PAANO IWASAN"
+          ],
+          "rows": [
+            [
+              "Needlestick injuries / Pagkatusok ng karayom ng heringgilya",
+              "Ang mga needles o karayom ng heringgilya na ginamit sa pasyente na may mga nakakahawang sakit tulad ng HIV at hepatitis B ay maaaring makatusok sa mga BHWs na puwedeng maging dahilan ng pagkahawa ng mga ito.",
+              "Itapon kaagad ang anumang karayom, syringe, o hiringgilya sa tamang container / safety collector box pagkatapos gamitin.\n\nIwasan ang pagtatapon ng karayom o hiringgilya kasama ang ibang basura. Ihiwalay ang pagtatapon ng mga ito.\n\nI-report kaagad sa midwife o health center staff ang anumang kaso ng needlestick injury."
+            ],
+            [
+              "Pagkahawa sa mga sakit ng pasyente",
+              "Ang mga BHWs ay maaaring mahawa sa kanilang pakikisalamuha sa pasyente na may infectious diseases tulad ng tuberculosis, COVID-19, at influenza.\n\nAng mga BHWs ay maaari ring makakuha ng vector-borne diseases, gaya ng dengue, malaria, chikungunya, at filariasis sa paggawa ng kanilang mga tungkulin sa komunidad.",
+              "Alamin kung paano maaaring makuha ang mga nakakahawang sakit.\n\nSundin ang mga polisiya at hakbang sa pag-iwas sa mga sakit.\n\nTiyakin ang magandang bentilasyon ng BHS at sa mga lugar kung saan nakakasalamuha ang mga kasapi ng komunidad.\n\nTiyakin ang sapat na supply ng PPEs (face masks) at disinfectants (70% alcohol at povidone iodine).\n\nIwasan ang vectors na maaaring magdala ng diseases. Halimbawa, para maiwasan ang kagat ng lamok, maaaring magsuot ng mahahabang damit na natatakpan ang kanilang mga braso at binti.\n\nMaghugas ng kamay bago at pagkatapos hawakan ang isang pasyente."
+            ],
+            [
+              "Ngalay at pananakit ng mga kalamnan",
+              "Dulot ng matagal na paglalakad, pagtayo, at paggawa ng mga tungkulin bilang BHW.",
+              "Iwasan ang matagal na pagtayo o pag-upo.\n\nGumamit ng angkop na upuan na may magandang sandalan para maiwasan ang pananakit ng likod.\n\nGumamit ng komportableng sapatos, footwear, at pananamit tuwing may house visits.\n\nRegular na mag-ehersisyo."
+            ]
+          ],
+          "figure": {
+            "src": "/training/manual-2022/safety-table-1-8008b60af5c8.png",
+            "sha256": "8008b60af5c8dc400d6f519695c4d90d87cdf55fd6e3e415e26fe696fe35e91d",
+            "width": 996,
+            "height": 1364,
+            "pdfPage": 22
+          }
+        },
+        {
+          "kind": "table",
+          "caption": "Mga panganib sa BHW workplace (2)",
+          "headers": [
+            "MGA PANGANIB SA BHW WORKPLACE",
+            "POSIBLENG EPEKTO SA KATAWAN AT KALUSUGAN",
+            "PAANO IWASAN"
+          ],
+          "rows": [
+            [
+              "Stress sa mahaba at boluntaryong pagtatrabaho",
+              "Nangyayari kapag ang ipinapagawa at inaasahan sa trabaho ay sobra sa kapasidad, kakayanan, at inilaang oras ng BHW. Ang stress ay maaaring makaapekto sa kanilang performance.",
+              "Magtakda ng boundaries sa pagitan ng personal na buhay at sa buhay bilang BHW. Ang mga BHW, kahit na nakakatanggap ng insentibo at honorarium, ay ikinokonsiderang volunteers at hindi bayad na empleyado.\n\nMas nakakabawas ng stress kung naiintindihan ang dahilan ng bakit kinakailangan pagpaguran at gawin ang mga inaatas na trabaho. Magandang alamin kung para saan at paano makakabuti sa komunidad ang bawat ipinapagawa ng mga gawain."
+            ],
+            [
+              "Mga disgrasya at aksidente habang nagtatrabaho",
+              "Mga sakit at pinsala (injuries) habang ginagawa ang trabaho bilang BHW. Ilan sa mga halimbawa nito ay:\n\n· Kagat ng aso o ibang hayop\n· Aksidente tulad ng pagkadulas at pagkahulog\n· Sunburn o pagkasunog ng balat sa matagal na pagbibilad sa araw\n· Heat stroke\n· Pisikal na atake ng ibang tao",
+              "Tukuyin ang mga karaniwang panganib (hazards) sa komunidad at magsagawa ng mga pagplano kung paano maiwasan ang mga ito.\n\nIpagbigay-alam agad sa kapitan ng barangay at sa health center sa pamamagitan ng midwife kung sakaling nagkaroon ng sakit o aksidente habang ginagawa ang trabaho bilang BHW.\n\nLaging maghanda ng mga impormasyon sa social insurance (SSS/GSIS, Philhealth, private insurance) at contact information ng health facilities na magagamit sa oras na magkaroon ng injuries at sakit.\n\nHumingi ng tulong sa health center staff o kapwa BHWs na maaaring magsagawa ng first aid.\n\nIwasan ang mabilad sa sikat ng araw at manatili sa mga lugar na malilim. Magsuot ng mahabang damit, magpahid ng sunscreen, at gumamit ng payong.\n\nMagbaon at regular na uminom ng tubig.\n\nTiyakin na malinis at organisado ang lugar ng pinagtatrabahuan."
+            ]
+          ],
+          "figure": {
+            "src": "/training/manual-2022/safety-table-2-03e7ebfea21f.png",
+            "sha256": "03e7ebfea21fe5a7d17e2140168253d1f875dc056b5cefc02d8acece39efd969",
+            "width": 996,
+            "height": 1482,
+            "pdfPage": 23
+          }
+        }
+      ]
+    },
+    {
+      "id": "plastics",
+      "title": "Pagbabawal sa paggamit ng single-use plastics sa mga health facilities",
+      "pdfPages": [
+        14
+      ],
+      "printedPages": [
+        6
+      ],
+      "blocks": [
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "Ayon sa DOH Department Circular 2021-0486, inaanyayahan ang lahat ng mga health facilities na ipagbawal ang paggamit ng mga single-use plastic simula 2022. Bilang parte ng health sector, kasama dapat ang BHW sa adbokasiyang bawasan ang dami ng basura na nagiging sanhi ng polusyon, sakit, at sakuna. Kabilang sa mga single-use plastic na ito ay ang mga sumusunod:"
+          ]
+        },
+        {
+          "kind": "list",
+          "ordered": false,
+          "items": [
+            "plastic cups (mas manipis sa 0.2 mm)",
+            "plastic drinking straws",
+            "plastic coffee stirrers",
+            "plastic na kutsara, tinidor, at kutsilyo",
+            "plastic “labo”’ at mga sando bags"
+          ]
+        }
+      ]
+    }
+  ]
+}

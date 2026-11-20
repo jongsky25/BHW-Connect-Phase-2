@@ -48,3 +48,19 @@ Blockers and next action:
 Keep credentials and personal learner information out of these records. A new
 session taking over must check actual git/PR/deployment state and acknowledge the
 handoff; an old timestamp alone is not permission to take another task's scope.
+
+## Next enhancement sequence — Chapter 1 first
+
+The [C1-PE phased plan](work-items/chapter1-pilot-enhancements-2026-11-20.md)
+records the owner's November pilot scope and the next-session entry point.
+Planning branch: `plan/chapter1-pilot-enhancements-2026-11-20`.
+Status: C1-PE-0 effective loader/publication parity verified (42/42), with local
+recovery tests passed. C1-PE-1 reference reading implemented for all 42 lessons.
+Owner and release coordinator: current Codex session, PR #515; no parallel batch.
+Scope: static reference content, lesson entry points, focused checks and handoffs.
+Evidence: [C1-PE-0 baseline](work-items/c1-pe-0/README.md) and
+[C1-PE-1 implementation/release record](work-items/c1-pe-1.md).
+No pilot database, content loader or flag mutation is required for this increment.
+Signed-in usability and broader authored-language review remain outstanding.
+All phases apply to Chapter 1 before expansion; Waray and TESDA alignment are
+excluded. Consult remote PR state before resuming an unmerged planning branch.
