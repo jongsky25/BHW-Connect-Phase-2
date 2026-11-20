@@ -131,6 +131,8 @@ manual passage, document the gap rather than inventing a quotation or citation.
 
 ### C1-PE-2 — BHW navigation, assessor steps and simulation
 
+Implementation and baseline reconciliation: [simulation guidance increment](c1-pe-2.md).
+
 Depends on the baseline; coordinate reference entry points with C1-PE-1.
 
 - After lesson completion, clearly show completion state, the next valid action,
