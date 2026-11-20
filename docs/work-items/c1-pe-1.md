@@ -4,9 +4,12 @@ Owner / release coordinator: current Codex session, single-session work.
 Branch / PR: `plan/chapter1-pilot-enhancements-2026-11-20`, [#515](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/515).
 Base: `44ba7477057c1495256b729d5f5d4fd13beb2c01`.
 Updated: 20 November 2026 UTC.
-Status: reference-reading increment implemented and locally checked; remote
-delivery/deployment evidence follows below. Broader authored-language review and
-representative signed-in usability remain outstanding, not silently marked done.
+Status: reference-reading increment merged in PR #515 and deployed as main
+`202eb69b33ce73de34cfb5820c7f1edf91ccad08`, production
+`dpl_EweR9tpSoBnGzHJ2CFXw9Ne6yAG1` (READY). Required CI passed, including
+118 browser tests. All five live figures matched their source hashes. Signed-in
+pilot usability remains unverified. The [Filipino reading-support continuation](c1-pe-1-language/README.md)
+records the subsequent terminology review and its separate delivery status.
 
 ## Outcome and boundaries
 
@@ -106,9 +109,9 @@ release overlays. No database restoration is required.
   SHA-256 allowances for the new manifest and five figures; all pre-existing
   source/media paths remain protected. All 12 tests across the four affected
   audits and reference coverage pass with the additions tracked.
-- Delivery: bundled implementation and baseline continuation pushed together
-  on PR #515; exact commit is the branch head. CI/deployment state must be
-  checked from the PR; this record does not claim a completed release.
+- Delivery: PR #515 merged and deployed; exact identities appear above. Its PR
+  body contains the final CI, deployment and public-asset receipt. Authenticated
+  pilot verification was not established.
 
 Signed-in pilot access was not established in this workspace. Local browser
 checks are not an authenticated production walkthrough or representative-user

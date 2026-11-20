@@ -101,7 +101,9 @@ separately; use authorized read-only access for pilot inspection.
 
 Implementation: [reference-reading increment and release record](c1-pe-1.md).
 All 42 lessons map to 11 shared complete passages, with original table images
-and reflowed text. Broader authored-language review remains separate follow-up.
+and reflowed text. The [language-support continuation](c1-pe-1-language/README.md)
+records a 42-lesson terminology screening and separate plain-language explanations.
+Representative signed-in usability remains outstanding.
 
 Depends on C1-PE-0's source map.
 

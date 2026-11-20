@@ -11,6 +11,22 @@ beforeEach(()=>{state.rpc.mockReset().mockResolvedValue({error:null});state.refr
 afterEach(()=>{cleanup();vi.useRealTimers();});
 const reader=(assessorChapterId?:string,readOnly=false)=><ManualLesson data={data} modules={[]} locale="en" lessonId="lesson" baseHref="/study" readOnly={readOnly} lessonNumber={1} lessonCount={42} assessorChapterId={assessorChapterId}/>;
 describe('assessor study persistence in existing reader',()=>{
+  it.each([undefined,'chapter'])('offers scoped reading help without saving or completing a lesson (%s)',assessorChapterId=>{
+    const scoped:ReferenceData={...data,lessons:data.lessons.map(l=>({...l,lesson_key:'communication-record'}))};
+    const props={data:scoped,modules:[],locale:'fil',lessonId:'lesson',baseHref:'/study',readOnly:true,lessonNumber:1,lessonCount:42,assessorChapterId};
+    const {rerender}=render(<ManualLesson {...props}/>);
+    expect(screen.queryByText('Mga salitang gamit sa aralin')).not.toBeInTheDocument();
+    rerender(<ManualLesson {...props} showManualReference/>);
+    state.rpc.mockClear();
+    fireEvent.click(screen.getByText('Mga salitang gamit sa aralin'));
+    expect(screen.getByText(/Pangkat na may tatlong tao/)).toBeVisible();
+    expect(screen.getByText(/hiwalay ang mga ito sa sipi/)).toBeVisible();
+    expect(screen.queryByRole('button',{name:'Markahang tapos ang aralin'})).not.toBeInTheDocument();
+    expect(state.rpc).not.toHaveBeenCalled();
+    expect(state.refresh).not.toHaveBeenCalled();
+    rerender(<ManualLesson {...props}/>);
+    expect(screen.queryByText('Mga salitang gamit sa aralin')).not.toBeInTheDocument();
+  });
   it.each(['en','fil'])('opens completion guidance without saving or resetting an answer (%s)',locale=>{
     const check={prompt_en:'Choose a response',prompt_fil:'Pumili ng sagot',options:[{en:'Ask',fil:'Magtanong'},{en:'Guess',fil:'Hulaan'}],correct_option_index:0,feedback_en:'Ask the team',feedback_fil:'Magtanong sa team'};
     const first={...data.lessons[0].revision.read_sections[0],takeaway_en:'Ask the team',takeaway_fil:'Magtanong sa team',check};

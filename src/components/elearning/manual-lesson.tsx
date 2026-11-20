@@ -3,6 +3,7 @@
 import {useRouter} from 'next/navigation';
 import {TrainingConnectionNotice} from './training-connection-notice';
 import {Chapter1ManualReference} from './chapter1-manual-reference';
+import {Chapter1ReadingSupport} from './chapter1-reading-support';
 import {LessonReadingTools} from './lesson-reading-tools';
 import {LessonCompletionGuide} from './lesson-completion-guide';
 import {ReferenceLessons, type ReferenceData} from './reference-lessons';
@@ -22,7 +23,10 @@ export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,r
 }) {
   const router=useRouter();
   const referenceLesson = showManualReference ? data.lessons.find(lesson => lesson.id === lessonId) : undefined;
-  return <><TrainingConnectionNotice locale={locale} readOnly={readOnly}/>{referenceLesson&&<Chapter1ManualReference key={lessonId} lessonKey={referenceLesson.lesson_key} locale={locale}/>}{!readOnly&&<LessonCompletionGuide locale={locale}/>}<LessonReadingTools key={lessonId} locale={locale}><ReferenceLessons key={lessonId} {...data} modules={modules} initialLessonId={lessonId}
+  return <><TrainingConnectionNotice locale={locale} readOnly={readOnly}/>{referenceLesson&&<>
+    <Chapter1ReadingSupport key={`words-${lessonId}`} lessonKey={referenceLesson.lesson_key} locale={locale}/>
+    <Chapter1ManualReference key={lessonId} lessonKey={referenceLesson.lesson_key} locale={locale}/>
+  </>}{!readOnly&&<LessonCompletionGuide locale={locale}/>}<LessonReadingTools key={lessonId} locale={locale}><ReferenceLessons key={lessonId} {...data} modules={modules} initialLessonId={lessonId}
     lessonBaseHref={baseHref} returnHref={returnHref} locale={locale} readOnly={readOnly} lessonNumber={lessonNumber} lessonCount={lessonCount} initialMode={initialMode}
     nextLessonHref={nextLessonHref} completionMilestone={completionMilestone} storyQuestionHandoff={storyQuestionHandoff}
     narration={narration?{[lessonId]:narration}:undefined}
