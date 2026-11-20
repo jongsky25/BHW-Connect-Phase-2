@@ -100,13 +100,24 @@ test('simulation validates authenticated saves, recovers, resumes and retains on
           await expect(page.getByRole('alert').filter({hasText:'Save/status'})).toHaveCount(0);
         }
         if(i===1){
-          for(const name of locale==='en'?['Open Prepare','Show BHW presentation','Back to Prepare']:['Buksan ang Ihanda','Ipakita sa BHW','Bumalik sa Ihanda'])await page.getByRole('button',{name,exact:true}).click();
+          const choice=page.getByRole('button',{name:scene.choices.find(c=>c.correct)!.text[locale],exact:true});
+          for(const name of locale==='en'?['Open Prepare','Show BHW presentation','Back to Prepare']:['Buksan ang Ihanda','Ipakita sa BHW','Bumalik sa Ihanda']){
+            await expect(choice).toBeDisabled();
+            await page.getByRole('button',{name,exact:true}).click();
+          }
         }
         if(i===3){
+          const choice=page.getByRole('button',{name:scene.choices.find(c=>c.correct)!.text[locale],exact:true});
+          await expect(choice).toBeDisabled();
           for(const box of await page.getByRole('checkbox').all())await box.check();
           await page.getByRole('textbox').fill('Fictional P1: neutral clarification needed a prompt.');
+          await expect(page.getByText(locale==='en'?'Changes not saved. Save before leaving or answering.':'Hindi pa naka-save ang mga pagbabago. I-save bago umalis o sumagot.')).toBeVisible();
+          await expect(choice).toBeDisabled();
           await page.getByRole('button',{name:locale==='en'?'Save evidence / pause':'I-save ang ebidensya / huminto'}).click();
           await expect(page.getByRole('button',{name:scene.choices.find(c=>c.correct)!.text[locale],exact:true})).toBeEnabled();
+          await expect(page.getByText(locale==='en'?'Your note and selected facts match the saved record.':'Tugma sa naka-save na tala ang iyong isinulat at piniling pangyayari.')).toBeVisible();
+          expect((await new AxeBuilder({page}).include('main').analyze()).violations).toEqual([]);
+          expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
           await page.reload();
           await page.getByRole('button',{name:locale==='en'?'English':'Filipino',exact:true}).click();
           await expect(page.getByRole('textbox')).toHaveValue('Fictional P1: neutral clarification needed a prompt.');
@@ -171,4 +182,10 @@ test('simulation validates authenticated saves, recovers, resumes and retains on
       alter table course_lesson_revisions enable trigger training_revision_immutable;
       commit;`);
   }
+});
+
+test('simulation guidance reflows at 200% text in both languages and themes',()=>{
+  test.setTimeout(130000);
+  const output=execFileSync(process.execPath,['scripts/simulation-guidance-browser.mjs'],{encoding:'utf8',timeout:120000});
+  expect(output).toContain('PASS: preparation, evidence and finish guidance');
 });
