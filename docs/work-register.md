@@ -56,11 +56,15 @@ records the owner's November pilot scope and the next-session entry point.
 Planning branch: `plan/chapter1-pilot-enhancements-2026-11-20`.
 Status: C1-PE-0 effective loader/publication parity verified (42/42), with local
 recovery tests passed. C1-PE-1 reference reading implemented for all 42 lessons.
-Owner and release coordinator: current Codex session, PR #515; no parallel batch.
-Scope: static reference content, lesson entry points, focused checks and handoffs.
+PR #515 merged/deployed at main `202eb69b`; authenticated usability unverified.
+Current increment: [Filipino reading support](work-items/c1-pe-1-language/README.md),
+branch `feat/c1-pe-1-filipino-reading-support`. Owner/release coordinator: current
+Codex session, no parallel batch. Scope: separate editorial term explanations,
+Chapter 1 reader integration, focused verification and handoffs.
 Evidence: [C1-PE-0 baseline](work-items/c1-pe-0/README.md) and
 [C1-PE-1 implementation/release record](work-items/c1-pe-1.md).
 No pilot database, content loader or flag mutation is required for this increment.
-Signed-in usability and broader authored-language review remain outstanding.
+Terminology screening covers all 42 readings, with separate help for 21 selected
+terms in 24 lessons. Signed-in participant usability remains outstanding.
 All phases apply to Chapter 1 before expansion; Waray and TESDA alignment are
 excluded. Consult remote PR state before resuming an unmerged planning branch.
