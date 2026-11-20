@@ -12,6 +12,16 @@ Project skills live in `.agents/skills/bhw-parallel-development/` and
 `.agents/skills/bhw-live-release/`, with Claude discovery links in `.claude/skills/`.
 Read the relevant feature handoff rather than every document in this repository.
 
+## Chapter 1 pilot enhancement plan — 20 November 2026
+
+For the next enhancement round, read the
+[Chapter 1 first phased plan](work-items/chapter1-pilot-enhancements-2026-11-20.md).
+Apply all enhancements to Chapter 1 first. Use the 2022 BHW Reference Manual,
+preserve scenarios, and add complete relevant manual passages per lesson.
+Waray and TESDA alignment are outside this round. Start with C1-PE-0 to verify
+existing capabilities; assessment disclosure/retake changes remain conditional
+on the applicable assessment policy. This is a plan, not a live release.
+
 ## Historical handoff and feature pointers
 
 The entries below were accumulated in September 2026. They preserve reasoning

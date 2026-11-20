@@ -48,3 +48,13 @@ Blockers and next action:
 Keep credentials and personal learner information out of these records. A new
 session taking over must check actual git/PR/deployment state and acknowledge the
 handoff; an old timestamp alone is not permission to take another task's scope.
+
+## Next enhancement sequence — Chapter 1 first
+
+The [C1-PE phased plan](work-items/chapter1-pilot-enhancements-2026-11-20.md)
+records the owner's November pilot scope and the next-session entry point.
+Planning branch: `plan/chapter1-pilot-enhancements-2026-11-20`.
+Status: repository-only plan; no implementation batch assigned or live changes.
+Next: assign C1-PE-0 baseline verification and 2022 manual source mapping.
+All phases apply to Chapter 1 before expansion; Waray and TESDA alignment are
+excluded. Consult remote PR state before resuming an unmerged planning branch.
