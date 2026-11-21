@@ -27,6 +27,11 @@ try {
     if(next===3){
       await page.getByRole('textbox').fill('Fictional note');
       await expect(page.getByText(locale==='en'?'Changes not saved. Save before leaving or answering.':'Hindi pa naka-save ang mga pagbabago. I-save bago umalis o sumagot.')).toBeVisible();
+      page.once('dialog',dialog=>{expect(dialog.type()).toBe('confirm');return dialog.dismiss();});
+      await page.getByRole('link',{name:locale==='en'?'Return to my preparation and current next step':'Bumalik sa aking paghahanda at kasalukuyang susunod na hakbang',exact:true}).click();
+      await expect(page.getByRole('textbox')).toHaveValue('Fictional note');
+      // Leaving this visual fixture is deliberate; the next iteration starts fresh.
+      page.once('dialog',dialog=>{expect(dialog.type()).toBe('beforeunload');return dialog.accept();});
     }
   }
   await page.goto(`${server.resolvedUrls.local[0]}?locale=fil&theme=dark&next=3`);

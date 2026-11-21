@@ -113,7 +113,30 @@ test('simulation validates authenticated saves, recovers, resumes and retains on
           await page.getByRole('textbox').fill('Fictional P1: neutral clarification needed a prompt.');
           await expect(page.getByText(locale==='en'?'Changes not saved. Save before leaving or answering.':'Hindi pa naka-save ang mga pagbabago. I-save bago umalis o sumagot.')).toBeVisible();
           await expect(choice).toBeDisabled();
-          await page.getByRole('button',{name:locale==='en'?'Save evidence / pause':'I-save ang ebidensya / huminto'}).click();
+          if(locale==='en'){
+            page.once('dialog',dialog=>dialog.dismiss());
+            await page.getByRole('link',{name:'Return to my preparation and current next step',exact:true}).click();
+            await expect(page).toHaveURL(`${base}/simulation`);
+            await expect(page.getByRole('textbox')).toHaveValue('Fictional P1: neutral clarification needed a prompt.');
+            const readStored=()=>JSON.parse(localSql(`select state from assessor_rollout_private.simulation_runs where actor_id='${actor.id}' and program_id='${program}';`).trim());
+            const before=readStored();
+            await page.route('**/rpc/rpc_assessor_simulation_act',route=>route.abort(),{times:1});
+            await page.getByRole('button',{name:'Save evidence / pause',exact:true}).click();
+            await expect(page.getByRole('alert').filter({hasText:'Save/status'})).toBeVisible();
+            expect(readStored()).toEqual(before);
+            await page.getByRole('button',{name:'Check saved status',exact:true}).click();
+            await expect(page.getByRole('alert').filter({hasText:'Save/status'})).toHaveCount(0);
+            await expect(choice).toBeDisabled();
+            await page.route('**/rpc/rpc_assessor_simulation_act',async route=>{await route.fetch();await route.abort();},{times:1});
+            await page.getByRole('button',{name:'Save evidence / pause',exact:true}).click();
+            await expect(page.getByRole('alert').filter({hasText:'Save/status'})).toBeVisible();
+            expect(readStored().revision).toBe(before.revision+1);
+            await page.getByRole('button',{name:'Check saved status',exact:true}).click();
+            await expect(page.getByRole('alert').filter({hasText:'Save/status'})).toHaveCount(0);
+            expect(readStored().revision).toBe(before.revision+1);
+          }else{
+            await page.getByRole('button',{name:'I-save ang ebidensya / huminto',exact:true}).click();
+          }
           await expect(page.getByRole('button',{name:scene.choices.find(c=>c.correct)!.text[locale],exact:true})).toBeEnabled();
           await expect(page.getByText(locale==='en'?'Your note and selected facts match the saved record.':'Tugma sa naka-save na tala ang iyong isinulat at piniling pangyayari.')).toBeVisible();
           expect((await new AxeBuilder({page}).include('main').analyze()).violations).toEqual([]);

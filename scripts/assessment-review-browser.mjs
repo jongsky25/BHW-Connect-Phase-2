@@ -24,6 +24,9 @@ try {
     await expect(page.getByText(locale==='en'?'Why your choice was incorrect:':'Bakit mali ang iyong pinili:')).toBeVisible();
     await page.getByText(locale==='en'?'Read the Reference Manual':'Basahin ang Reference Manual',{exact:true}).click();
     await expect(page.getByText(/Printed pages|Pahina sa aklat/).first()).toBeVisible();
+    await context.setOffline(true);
+    await expect(page.getByText(/Printed pages|Pahina sa aklat/).first()).toBeVisible();
+    await context.setOffline(false);
     expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);
     expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa']).analyze()).violations).toEqual([]);
   }
