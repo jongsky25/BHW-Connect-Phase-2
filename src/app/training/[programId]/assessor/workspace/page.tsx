@@ -1,3 +1,4 @@
+import {LearnerTrainingMonitoring, TrainingPageSummary, type TrainingMonitoring} from '@/components/elearning/chapter1-training-monitoring';
 import Link from 'next/link';
 import {getLocale} from 'next-intl/server';
 import {notFound, redirect} from 'next/navigation';
@@ -12,7 +13,7 @@ import {chapter1Terms} from '@/lib/assessor/chapter1-workflow-parity';
 import {getRequestFeatureFlags} from '@/lib/supabase/request';
 import {createClient} from '@/lib/supabase/server';
 
-type Row = {id:string;full_name:string;barangay:string;area_id:string;learning_status:string};
+type Row = {id:string;full_name:string;barangay:string;area_id:string;learning_status:string;training?:TrainingMonitoring};
 type Area = {id:string;name:string};
 type Roster = {rows:Row[];total:number;page:number;pageSize:number;areas:Area[];areasTruncated:boolean};
 type Filters = {q?:string;area?:string;status?:string;page?:string;learner?:string};
@@ -142,6 +143,7 @@ export default async function AssessorWorkspace({params,searchParams}:{
       {rosterError ? <p role="alert" className="mt-4">{label('Hindi mabasa ang roster. Subukang muli.', 'Roster could not be loaded. Try again.')}</p>
         : <>
           <p className="mt-4 text-sm">{label(`${roster.total} tumugma`,`${roster.total} matching BHWs`)}</p>
+          {roster.rows.length > 0 && <TrainingPageSummary rows={roster.rows} locale={locale}/>}
           {!roster.rows.length && <p className="mt-3">{search || area || status !== 'all'
             ? label('Walang tugma sa mga filter. Subukan ang ibang hanap.', 'No BHWs match these filters. Try another search.')
             : label('Wala pang aktibong BHW sa iyong saklaw.', 'No active BHWs in your catchment yet.')}</p>}
@@ -163,7 +165,7 @@ export default async function AssessorWorkspace({params,searchParams}:{
                 'Readiness could not be loaded. Try again.')}</p>}
           </section>}
           <ul className="mt-4 divide-y rounded-md border border-ink/15">{roster.rows.map(row => <li key={row.id} className="flex flex-wrap items-center justify-between gap-3 p-4">
-            <div><p className="font-medium">{row.full_name} · {row.barangay}</p><p className="text-sm text-ink/70">{statusLabel(row.learning_status)}</p></div>
+            <div className="min-w-0 w-full"><p className="font-medium">{row.full_name} · {row.barangay}</p><p className="text-sm text-ink/70">{statusLabel(row.learning_status)}</p><LearnerTrainingMonitoring data={row.training} locale={locale}/></div>
             <Link prefetch={false} className="min-h-11 content-center underline" href={href({learner:row.id})}>{label('Tingnan','View')}</Link>
           </li>)}</ul>
           <nav className="mt-4 flex items-center gap-4" aria-label={label('Mga pahina ng roster','Roster pages')}>

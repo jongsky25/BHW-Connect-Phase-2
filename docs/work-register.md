@@ -62,11 +62,14 @@ including 119 browser tests. Authenticated participant usability remains unverif
 PR #517 simulation guidance merged/deployed at main `7cd1e1ca`; required CI and
 post-merge main CI passed, including 120 browser tests. Signed-in live usability
 remains unverified.
-Current increment: [C1-PE-3 saved review explanations](work-items/c1-pe-3.md), branch
-`feat/c1-pe-3-assessment-review`. Owner/release coordinator: current Codex session,
-no parallel batch. Scope: saved wrong-choice explanations, clearly separated manual
-reading and preserved disclosure/retake policy. One reviewed read-only RPC migration
-is required at merge time; no content load or flag change. See the PR release
-receipt before treating this increment as deployed.
+PR #518 review explanations/manual reading merged/deployed at main `0cf15e8d`.
+Required CI passed (2,738 unit tests; 121 browser tests), as did post-merge main CI.
+RPC migration applied once; see PR #518 for exact receipts. Signed-in usability
+remains unverified; disclosure/retake policy was preserved.
+Current increment: [C1-PE-4 training monitoring](work-items/c1-pe-4.md), branch
+`feat/c1-pe-4-training-monitoring`. Owner/release coordinator: current Codex session,
+no parallel batch. Scope: bounded assessor roster progress/results and saved-topic
+follow-up counts. One read-only RPC migration is required at merge; no content load,
+flags, learner writes or policy change. Check the PR release receipt for live state.
 All phases apply to Chapter 1 before expansion; Waray and TESDA alignment are
 excluded. Consult remote PR state before resuming an unmerged planning branch.
