@@ -1,3 +1,5 @@
+import { Chapter1ManualReference } from "@/components/elearning/chapter1-manual-reference";
+import { chapter1ManualReference } from "@/lib/elearning/chapter1-manual-reference";
 import Link from "next/link";
 import { getLocale } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
@@ -8,7 +10,7 @@ import { reviewRawScore } from "@/lib/elearning/test-results";
 type Text = { en: string; fil: string };
 type Item = { item_id: string; slot: string; stem: Text; rationale: Text;
   correct_option_id: string; lesson_keys: string[];
-  options: { id: string; label: Text; distractor_rationale?: Text }[] };
+  options: { id: string; label: Text; distractor_rationale?: Text | null }[] };
 type Review = { score_percent: number; form_id: string; release_id: string;
   items: Item[]; responses: { item_id: string; kind: "choice" | "unknown"; option_id: string | null }[] };
 type LegacyReview = { generation: "legacy" | "legacy_assessor"; score_percent: number; form_membership_known: boolean;
@@ -43,7 +45,7 @@ export default async function Chapter1PostReviewPage({ params, searchParams }: {
     : `/training/${mapping.program_id}/chapter-1`;
   if (legacy?.data) {
     const historical = legacy.data as LegacyReview;
-    return <main className="mx-auto w-full max-w-3xl flex-1 space-y-6 px-4 py-10 sm:px-6">
+    return <main className="mx-auto w-full max-w-3xl flex-1 space-y-6 break-words px-4 py-10 sm:px-6">
       <h1 className="text-2xl font-semibold">{copy("Historical post-test review", "Pagsuri sa dating post-test")}</h1>
       <Link prefetch={false} href="/my-results" className="inline-flex min-h-[44px] items-center underline">{copy("← My test results", "← Aking mga resulta sa pagsusulit")}</Link>
       <p>{copy("Stored final score", "Naka-save na huling iskor")}: {historical.score_percent}%</p>
@@ -66,7 +68,7 @@ export default async function Chapter1PostReviewPage({ params, searchParams }: {
             copy("Your saved choice does not match the stored key.", "Hindi tumutugma ang na-save mong pinili sa naka-save na tamang sagot.")}</p>}
         </li>;
       })}</ol>
-      <Link className="underline" href={chapterHref}>{copy("Back to chapter", "Bumalik sa kabanata")}</Link>
+      <Link prefetch={false} className="underline" href={chapterHref}>{copy("Back to chapter", "Bumalik sa kabanata")}</Link>
     </main>;
   }
   const review = data as Review;
@@ -79,9 +81,9 @@ export default async function Chapter1PostReviewPage({ params, searchParams }: {
   const filtered = (await searchParams)?.view === "needs-review";
   const { data: lessons } = await db.from("course_lessons")
     .select("id,module_id,lesson_key,course_modules!inner(course_id)")
-    .eq("course_modules.course_id", id).in("lesson_key", review.items.flatMap(item => item.lesson_keys));
+    .eq("course_modules.course_id", id).in("lesson_key", [...new Set(review.items.flatMap(item => item.lesson_keys))]).limit(60);
   const lessonByKey = new Map((lessons ?? []).map(lesson => [lesson.lesson_key, lesson]));
-  return <main className="mx-auto w-full max-w-3xl flex-1 space-y-6 px-4 py-10 sm:px-6">
+  return <main className="mx-auto w-full max-w-3xl flex-1 space-y-6 break-words px-4 py-10 sm:px-6">
     <h1 className="text-2xl font-semibold">{copy("My Chapter 1 post-test review", "Pagsuri sa aking post-test sa Kabanata 1")}</h1>
     <Link prefetch={false} className="inline-flex min-h-[44px] items-center underline" href="/my-results">{copy("← My test results", "← Aking mga resulta sa pagsusulit")}</Link>
     {raw && <p className="text-xl font-semibold">{copy(`${raw.correct}/${raw.total} correct`, `${raw.correct}/${raw.total} tama`)}</p>}
@@ -99,6 +101,7 @@ export default async function Chapter1PostReviewPage({ params, searchParams }: {
       const correct = item.options.find(option => option.id === item.correct_option_id);
       const selected = item.options.find(option => option.id === response?.option_id);
       const matched = response?.kind === "choice" && response.option_id === item.correct_option_id;
+      const manualKeys = [...new Set(item.lesson_keys)].filter(key => chapter1ManualReference(key));
       return <li id={`review-item-${item.item_id}`} value={i + 1} key={item.item_id} className="space-y-3 rounded-lg border border-ink/15 p-5">
         <h2 className="font-semibold">{i + 1}. {item.stem[lang]}</h2>
         <p className="font-medium">{matched ? copy("Correct", "Tama") : response?.kind === "unknown" ?
@@ -106,16 +109,22 @@ export default async function Chapter1PostReviewPage({ params, searchParams }: {
         <p>{copy("Your response", "Iyong sagot")}: {response?.kind === "unknown" ? copy("I don't know yet", "Hindi ko pa alam") :
           selected?.label[lang] ?? copy("No recorded response", "Walang naitalang sagot")}</p>
         <p>{copy("Correct response", "Tamang sagot")}: {correct?.label[lang]}</p>
-        <p>{item.rationale[lang]}</p>
-        {selected && !matched && selected.distractor_rationale && <p>{selected.distractor_rationale[lang]}</p>}
+        <p><strong>{copy("Saved explanation", "Naka-save na paliwanag")}: </strong>{item.rationale[lang]}</p>
+        {selected && !matched && selected.distractor_rationale && <p><strong>{copy("Why your choice was incorrect", "Bakit mali ang iyong pinili")}: </strong>{selected.distractor_rationale[lang]}</p>}
         <div className="flex flex-wrap gap-3 text-sm">{item.lesson_keys.map(key => {
           const lesson = lessonByKey.get(key);
-          return lesson ? <Link key={key} className="underline" href={`${chapterHref}/${lesson.module_id}/${lesson.id}`}>
+          return lesson ? <Link prefetch={false} key={key} className="underline" href={`${chapterHref}/${lesson.module_id}/${lesson.id}`}>
             {copy("Review lesson", "Balikan ang aralin")}: {key}</Link> : <span key={key}>{key}</span>;
         })}</div>
+        {manualKeys.length > 0 && <aside className="space-y-3">
+          <p className="text-sm text-ink/70">{copy(
+            "Additional reading from the 2022 Reference Manual. These references were added later using the lesson links saved with your question; they are not part of your original test or score.",
+            "Karagdagang babasahin mula sa Reference Manual 2022. Idinagdag ang mga sangguniang ito sa kalaunan gamit ang mga araling naka-save sa iyong tanong; hindi sila bahagi ng orihinal mong pagsusulit o iskor.")}</p>
+          {manualKeys.map(key => <Chapter1ManualReference key={key} lessonKey={key} locale={lang} />)}
+        </aside>}
       </li>;
     })}</ol>
-    <Link className="underline" href={chapterHref}>
+    <Link prefetch={false} className="underline" href={chapterHref}>
       {copy("Back to chapter", "Bumalik sa kabanata")}</Link>
   </main>;
 }
