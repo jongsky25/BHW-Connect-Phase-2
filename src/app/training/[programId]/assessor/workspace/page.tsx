@@ -1,3 +1,4 @@
+import {AssessorConnectionPractice} from '@/components/elearning/assessor-connection-practice';
 import {LearnerTrainingMonitoring, TrainingPageSummary, type TrainingMonitoring} from '@/components/elearning/chapter1-training-monitoring';
 import Link from 'next/link';
 import {getLocale} from 'next-intl/server';
@@ -119,6 +120,7 @@ export default async function AssessorWorkspace({params,searchParams}:{
         <Link prefetch={false} className="underline" href={`/training/${programId}/chapter-1`}>{label('Buksan ang gabay ng kabanata','Open chapter guide')}</Link>
         {lessonHref(base) && <Link prefetch={false} className="underline" href={lessonHref(base)!}>{label('Ihanda ang aralin 1.6.2','Prepare lesson 1.6.2')}</Link>}
       </div>
+      <AssessorConnectionPractice programId={programId} locale={locale}/>
     </section>
     <section id="roster" className={card} aria-labelledby="roster-title">
       <h2 id="roster-title" className="text-xl font-semibold">{chapter1Terms.roster[en?'en':'fil']}</h2>

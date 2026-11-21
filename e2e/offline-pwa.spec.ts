@@ -52,7 +52,15 @@ test("offline_pwa on: manifest, theme-color, and the service worker register", a
       const registration = await navigator.serviceWorker.getRegistration();
       return !!registration;
     });
+    await page.waitForFunction(() => !!navigator.serviceWorker.controller);
+    await page.context().setOffline(true);
+    await page.goto('/training/unvisited-connection-exercise');
+    await expect(page.getByRole('heading', {name: 'Offline ka'})).toBeVisible();
+    await page.context().setOffline(false);
+    await page.getByRole('link', {name: 'Subukan muli'}).click();
+    await expect(page.getByRole('heading', {name: 'Offline ka'})).toHaveCount(0);
   } finally {
+    await page.context().setOffline(false);
     await setOfflinePwaFlag(request, false);
   }
 });

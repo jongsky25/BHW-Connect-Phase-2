@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import {useRef,useState} from 'react';
+import {useEffect,useRef,useState} from 'react';
 import {createClient} from '@/lib/supabase/client';
 import {parseSimulationState,type SimulationState,type SimulationAction} from '@/lib/assessor/simulation-runner';
 import {storyScenes,preparation,practiceFacts,modelNote,chapterComponents,type StoryText} from '@/lib/assessor/simulation-storyboard';
@@ -28,7 +28,27 @@ export function AssessorSimulationRunner({initial,locale:initialLocale,chapterHr
  const guide=state.viewStep===2?'learner':state.viewStep>0?'guide':'closed';
  const rubric=lessonRubric.observation_indicators[0];
  const editable=index===state.next;
- const evidenceChanged=note!==state.note||JSON.stringify(facts)!==JSON.stringify(state.facts);
+ const evidenceChanged=note!==state.note||JSON.stringify([...facts].sort())!==JSON.stringify([...state.facts].sort());
+ const protectLeaving=evidenceChanged||busy||error;
+ useEffect(()=>{
+  if(!protectLeaving)return;
+  const warn=(event:BeforeUnloadEvent)=>{event.preventDefault();event.returnValue='';};
+  const guardLink=(event:MouseEvent)=>{
+   if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+   const link=event.target instanceof Element?event.target.closest('a[href]'):null;
+   if(!(link instanceof HTMLAnchorElement)||link.target==='_blank'||link.hasAttribute('download'))return;
+   const destination=new URL(link.href,window.location.href);
+   if(destination.origin===location.origin&&destination.pathname===location.pathname&&destination.search===location.search&&destination.hash)return;
+   if(!window.confirm(locale==='en'
+    ?'Your changes or latest save are not confirmed. Stay here to save or check saved status. Leave anyway?'
+    :'Hindi pa kumpirmado ang mga pagbabago o huling pag-save. Manatili upang mag-save o tingnan ang na-save na status. Aalis pa rin ba?')){
+    event.preventDefault();event.stopImmediatePropagation();
+   }
+  };
+  window.addEventListener('beforeunload',warn);
+  document.addEventListener('click',guardLink,true);
+  return()=>{window.removeEventListener('beforeunload',warn);document.removeEventListener('click',guardLink,true);};
+ },[protectLeaving,locale]);
  const evidenceReady=facts.length===practiceFacts.length&&note.trim().length>0;
  const choiceBlocked=(needsGuide&&state.viewStep!==3)||(needsEvidence&&(evidenceChanged||!evidenceReady));
  const nextInstruction=state.next===11
@@ -67,6 +87,8 @@ export function AssessorSimulationRunner({initial,locale:initialLocale,chapterHr
   <details><summary className="min-h-11 cursor-pointer py-2 underline">{label('About this practice','Tungkol sa pagsasanay na ito')}</summary><p>{label('Story approved for rehearsal. Criterion mapping, component sufficiency, evidence reuse and issuer approval remain unresolved.','Aprubado ang kuwento para sa pagsasanay. Hindi pa aprubado ang criterion mapping, sapat na ebidensya ng component, muling paggamit ng ebidensya at issuer.')}</p></details>
   <div role="group" aria-label={label('Language','Wika')}><button className={button} aria-pressed={locale==='en'} onClick={()=>setLocale('en')}>English</button> <button className={button} aria-pressed={locale==='fil'} onClick={()=>setLocale('fil')}>Filipino</button></div>
   <p>{label('Hints and retries are unlimited and unpenalized. Later scenes offer guidance on request. Save your note before pausing.','Walang limitasyon o parusa ang hints at retries. Makikita ang gabay sa mga huling scene kapag hiniling. I-save ang tala bago huminto.')}</p>
+  <p className="text-sm">{label('Keep this page open until saving is confirmed. Unsaved notes are not stored for offline recovery; closing the tab or app may lose them. After an interruption, reconnect and check saved status before retrying.',
+   'Panatilihing bukas ang pahinang ito hanggang makumpirma ang pag-save. Hindi nakaimbak ang mga hindi pa na-save na tala para sa offline recovery; maaaring mawala ang mga ito kapag isinara ang tab o app. Pagkatapos ng pagkaantala, kumonekta muli at tingnan ang na-save na status bago subukang muli.')}</p>
   {error&&<p role="alert">{label('Save/status could not be confirmed. Your edits are retained. Check saved status before retrying; the request may already have succeeded.','Hindi makumpirma ang save/status. Nananatili ang mga pagbabago. Tingnan ang na-save na status bago ulitin; maaaring matagumpay na ang request.')}</p>}
   <button className={button} disabled={busy} onClick={()=>void request()}>{label('Check saved status','Tingnan ang na-save na status')}</button>
   <section aria-labelledby="simulation-next-step" className="space-y-3 rounded-xl border border-primary/30 bg-canvas p-4">
