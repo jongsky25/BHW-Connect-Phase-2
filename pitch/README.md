@@ -6,7 +6,23 @@ app — open directly in any browser, or view the hosted Artifact link.
 | File | Audience | Year-1 flagship module |
 |---|---|---|
 | `bhw-connect-who.html` | **WHO Philippines** | HHP+ / PhilPEN 2025 community NCD screening, Western Visayas (Region VI) |
+| `bhw-connect-who-3slide.html` | **WHO Philippines + BLHSD** (technical staff) | Three-slide brief, then a live demo of the pilot |
 | `koica-bhw-connect.html` | World Vision–KOICA | *(narrative deck only — superseded by the WHO deck)* |
+
+## `bhw-connect-who-3slide.html`
+
+**3 slides**: (1) why traditional BHW capacity building cannot reach everyone: five problems
+(cost, stale material, never goes national, retention, third-hand information) set against
+₱1.8B for one three-day training and 300,000 BHWs; (2) one material, many functions
+(self-paced courses, app, knowledge base, chat guide) anchored by on-site RHU assessment, with
+each old problem shown closed; (3) the ask: a joint WHO–BLHSD working group for the
+mainstreaming framework and standards, and co-sponsoring HHP+ as the first national-grade
+material. Same palette and problem/solution registers as the full deck. `N` toggles speaker notes.
+
+**Readiness wording differs from the 21-slide deck on purpose:** this one says *a working,
+piloted tool, ready to launch the first materials*. It claims no field results or usage numbers.
+The only figures are ₱1.8B and 300,000; keep everything else general. Never reintroduce ttCF,
+Eastern Visayas or Region VIII.
 
 ## `bhw-connect-who.html`
 
