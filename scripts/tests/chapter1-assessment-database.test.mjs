@@ -90,6 +90,7 @@ beforeAll(async () => {
   await db.exec(read('supabase/migrations/20261012152647_assessor_chapter1_shared_assessment.sql'));
   await db.exec(read('supabase/migrations/20261110160000_assessment_save_receipts.sql'));
   await db.exec(read('supabase/migrations/20261110160100_assessment_receipts_cleanup.sql'));
+  await db.exec(read('supabase/migrations/20261121011608_chapter1_review_saved_explanations.sql'));
   await db.query('insert into org_units values($1,$2)', [ids.org, `${ids.org}.`]);
   for (const [id, role] of [[ids.learner, 'bhw'], [ids.stranger, 'bhw'], [ids.admin, 'admin'],
     [ids.reviewer, 'assessor'], [ids.nextReviewer, 'assessor']])
@@ -102,7 +103,7 @@ beforeAll(async () => {
   const items = Array.from({ length: 30 }, (_, i) => ({
     item_id: uuid(100 + i), slot: `T${String(i + 1).padStart(2, '0')}`,
     stem: { en: `Question ${i + 1}`, fil: `Tanong ${i + 1}` },
-    options: [{ id: 'a', label: { en: 'A', fil: 'A' } }, { id: 'b', label: { en: 'B', fil: 'B' } },
+    options: [{ id: 'a', label: { en: 'A', fil: 'A' } }, { id: 'b', label: { en: 'B', fil: 'B' }, distractor_rationale: { en: 'B misses the safe action', fil: 'Hindi ligtas ang B' } },
       { id: 'c', label: { en: 'C', fil: 'C' } }],
     correct_option_id: 'a', rationale: { en: 'Because A', fil: 'Dahil A' },
     accidental_key: 'never send me', lesson_keys: ['bhw-roles-hepo'],
@@ -173,8 +174,10 @@ describe('Chapter 1 private learner attempt contract', () => {
     expect(first.items).toHaveLength(30);
     expect(first.items[0]).not.toHaveProperty('correct_option_id');
     expect(first.items[0]).not.toHaveProperty('rationale');
+    expect(first.items[0].options[1]).not.toHaveProperty('distractor_rationale');
     expect(first.items[0]).not.toHaveProperty('accidental_key');
     expect((await start()).rows[0].result.attempt_id).toBe(first.attempt_id);
+    await expect(call(ids.learner, 'rpc_learner_assessment_review', '$1', [first.attempt_id])).rejects.toThrow(/unavailable/);
     const changes = first.items.map((item, i) => ({ item_id: item.item_id, kind: i === 0 ? 'unknown' : 'choice',
       ...(i === 0 ? {} : { option_id: 'a' }) }));
     const mutation = uuid(999);
@@ -193,8 +196,22 @@ describe('Chapter 1 private learner attempt contract', () => {
       [post.attempt_id, 0, uuid(997), JSON.stringify(changes), 29, 'en']);
     const postFinal = (await call(ids.learner, 'rpc_learner_assessment_submit', '$1,$2,$3',
       [post.attempt_id, 1, uuid(996)])).rows[0].result;
+    await db.exec(`update learner_assessment_private.releases set status='withdrawn' where id='r1';
+      insert into learner_assessment_private.releases(id,blueprint_id,source_commit,program_key,chapter_key,curriculum_revisions,content_hash,status)
+      select 'r2',blueprint_id,'later-commit',program_key,chapter_key,curriculum_revisions,repeat('c',64),'active'
+      from learner_assessment_private.releases where id='r1';
+      insert into learner_assessment_private.forms(id,release_id,phase,items,form_hash)
+      select 'f-later-'||phase,'r2',phase,jsonb_set(items,'{0,options,1,distractor_rationale,en}','"Changed later"'::jsonb),repeat('d',64)
+      from learner_assessment_private.forms where release_id='r1';`);
     const review = (await call(ids.learner, 'rpc_learner_assessment_review', '$1', [postFinal.legacy_attempt_id])).rows[0].result;
     expect(review.items[0].correct_option_id).toBe('a');
+    expect(review.items[0].options[1].distractor_rationale).toEqual({ en: 'B misses the safe action', fil: 'Hindi ligtas ang B' });
+    expect(review.items[0].options[0].distractor_rationale).toBeNull();
+    expect(review.score_percent).toBe(postFinal.score_percent);
+    expect(review.release_id).toBe('r1');
+    await expect(call(ids.stranger, 'rpc_learner_assessment_review', '$1', [postFinal.legacy_attempt_id])).rejects.toThrow(/not authorized/);
+    await expect(call(ids.learner, 'rpc_learner_assessment_review', '$1', [final.legacy_attempt_id])).rejects.toThrow(/unavailable/);
+    await expect(call(null, 'rpc_learner_assessment_review', '$1', [postFinal.legacy_attempt_id])).rejects.toThrow(/permission denied/);
     expect(review.items[0]).not.toHaveProperty('accidental_key');
     expect(review.responses[0].kind).toBe('unknown');
     const legacy = (await db.query("select answers from course_test_attempts where phase='pretest'")).rows[0].answers;

@@ -59,10 +59,14 @@ recovery tests passed. C1-PE-1 reference reading implemented for all 42 lessons.
 PR #515 merged/deployed at main `202eb69b`; authenticated usability unverified.
 PR #516 reading support merged/deployed at main `9153a983`; required CI passed,
 including 119 browser tests. Authenticated participant usability remains unverified.
-Current increment: [C1-PE-2 simulation guidance](work-items/c1-pe-2.md), branch
-`feat/c1-pe-2-simulation-guidance`. Owner/release coordinator: current Codex session,
-no parallel batch. Scope: simulation next-step guidance and save-state clarity,
-existing BHW/assessor navigation verification, mobile checks and handoffs.
-No pilot database, content loader or flag mutation is required.
+PR #517 simulation guidance merged/deployed at main `7cd1e1ca`; required CI and
+post-merge main CI passed, including 120 browser tests. Signed-in live usability
+remains unverified.
+Current increment: [C1-PE-3 saved review explanations](work-items/c1-pe-3.md), branch
+`feat/c1-pe-3-assessment-review`. Owner/release coordinator: current Codex session,
+no parallel batch. Scope: saved wrong-choice explanations, clearly separated manual
+reading and preserved disclosure/retake policy. One reviewed read-only RPC migration
+is required at merge time; no content load or flag change. See the PR release
+receipt before treating this increment as deployed.
 All phases apply to Chapter 1 before expansion; Waray and TESDA alignment are
 excluded. Consult remote PR state before resuming an unmerged planning branch.
